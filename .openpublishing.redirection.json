@@ -39063,6 +39063,31 @@
     "source_path": "learn-pr/wwl-azure/integrate-azure-pipelines/8-summary.md",
     "redirect_url": "/training/modules/integrate-azure-pipelines/9-summary",
     "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-blue-green-deployment-feature-toggles/4-exercise-set-up-blue-green-deployment.md",
+    "redirect_url": "/training/modules/implement-blue-green-deployment-feature-toggles/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-blue-green-deployment-feature-toggles/5-introduction-feature-toggles.md",
+    "redirect_url": "/training/modules/implement-blue-green-deployment-feature-toggles/4-introduction-feature-toggles",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-blue-green-deployment-feature-toggles/6-describe-feature-toggle-maintenance.md",
+    "redirect_url": "/training/modules/implement-blue-green-deployment-feature-toggles/5-describe-feature-toggle-maintenance",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-blue-green-deployment-feature-toggles/7-knowledge-check.md",
+    "redirect_url": "/training/modules/implement-blue-green-deployment-feature-toggles/6-knowledge-check",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-blue-green-deployment-feature-toggles/8-summary.md",
+    "redirect_url": "/training/modules/implement-blue-green-deployment-feature-toggles/7-summary",
+    "redirect_document_id": false
     }
   ]
 }
