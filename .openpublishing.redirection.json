@@ -39088,6 +39088,26 @@
     "source_path": "learn-pr/wwl-azure/implement-blue-green-deployment-feature-toggles/8-summary.md",
     "redirect_url": "/training/modules/implement-blue-green-deployment-feature-toggles/7-summary",
     "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-test-progressive-exposure-deployment/2-what-a-b-testing.md",
+    "redirect_url": "/training/modules/implement-test-progressive-exposure-deployment/2-what-ab-testing",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-test-progressive-exposure-deployment/4-exercise-ring-based-deployment.md",
+    "redirect_url": "/training/modules/implement-test-progressive-exposure-deployment/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-test-progressive-exposure-deployment/5-knowledge-check.md",
+    "redirect_url": "/training/modules/implement-test-progressive-exposure-deployment/4-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-test-progressive-exposure-deployment/6-summary.md",
+    "redirect_url": "/training/modules/implement-test-progressive-exposure-deployment/5-summary",
+    "redirect_document_id": false
     }
   ]
 }
