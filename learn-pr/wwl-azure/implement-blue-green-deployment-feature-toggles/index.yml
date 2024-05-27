@@ -3,7 +3,7 @@ uid: learn.wwl.implement-blue-green-deployment-feature-toggles
 metadata:
   title: Implement blue-green deployment and feature toggles
   description: "Implement blue-green deployment and feature toggles"
-  ms.date: 05/26/2024
+  ms.date: 05/27/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module-standard-task-based
