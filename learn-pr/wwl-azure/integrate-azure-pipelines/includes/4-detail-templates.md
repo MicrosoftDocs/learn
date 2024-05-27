@@ -1,4 +1,3 @@
-
 ## Template references
 
 You can export reusable sections of your pipeline to a separate file. These individual files are known as templates.

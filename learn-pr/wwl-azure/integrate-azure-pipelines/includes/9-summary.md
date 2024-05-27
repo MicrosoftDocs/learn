@@ -1,4 +1,3 @@
-
 This module detailed Azure Pipelines anatomy and structure, templates, YAML resources, and how to use multiple repositories in your pipeline. Also, it explored communication to deploy using Azure Pipelines to target servers.
 
 You learned how to describe the benefits and usage of:
