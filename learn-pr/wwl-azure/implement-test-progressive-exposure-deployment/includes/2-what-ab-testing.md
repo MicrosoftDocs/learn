@@ -4,7 +4,7 @@ A/B testing is mainly an experiment where two or more page variants are shown to
 
 Also, statistical analysis is used to determine which variation works better for a given conversion goal.
 
-:::image type="content" source="../media/a-b-test-1e548a4c.png" alt-text="A B testing.":::
+:::image type="content" source="../media/a-b-test-1e548a4c.png" alt-text="Diagram of A B testing.":::
 
 
 A/B testing isn't part of continuous delivery or a pre-requisite for continuous delivery. It's more the other way around.
