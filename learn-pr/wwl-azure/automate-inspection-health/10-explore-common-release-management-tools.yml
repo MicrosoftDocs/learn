@@ -4,12 +4,12 @@ title: Explore common release management tools
 metadata:
   title: Explore common release management tools
   description: "Explore common release management tools"
-  ms.date: 06/28/2023
+  ms.date: 05/28/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-    - devx-track-jenkins
+  - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/11-explore-common-release-management-tools.md)]
+  [!include[](includes/10-explore-common-release-management-tools.md)]

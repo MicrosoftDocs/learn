@@ -39223,6 +39223,51 @@
     "source_path": "learn-pr/wwl-azure/create-release-pipeline-devops/9-explore-build-release-tasks.md",
     "redirect_url": "/training/modules/create-release-pipeline-devops/7-explore-build-release-tasks",
     "redirect_document_id": false
+    },
+      {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/10-examine-considerations-for-choosing-release-management-tools.md",
+    "redirect_url": "/training/modules/automate-inspection-health/9-examine-considerations-for-choosing-release-management-tools",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/11-explore-common-release-management-tools.md",
+    "redirect_url": "/training/modules/automate-inspection-health/10-explore-common-release-management-tools",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/12-knowledge-check.md",
+    "redirect_url": "/training/modules/automate-inspection-health/11-knowledge-check",
+    "redirect_document_id": false
+    },
+      {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/13-summary.md",
+    "redirect_url": "/training/modules/automate-inspection-health/12-summary",
+    "redirect_document_id": false
+    },
+      {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/5-exercise-set-up-service-hooks-to-monitor-pipeline.md",
+    "redirect_url": "/training/modules/automate-inspection-health/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/6-configure-azure-devops-notifications.md",
+    "redirect_url": "/training/modules/automate-inspection-health/5-configure-azure-devops-notifications",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/7-configure-github-notifications.md",
+    "redirect_url": "/training/modules/automate-inspection-health/6-configure-github-notifications",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/8-explore-how-to-measure-quality-of-your-release-process.md",
+    "redirect_url": "/training/modules/automate-inspection-health/7-explore-how-to-measure-quality-of-your-release-process",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/9-examine-release-notes-documentation.md",
+    "redirect_url": "/training/modules/automate-inspection-health/8-examine-release-notes-documentation",
+    "redirect_document_id": false
     }
   ]
 }

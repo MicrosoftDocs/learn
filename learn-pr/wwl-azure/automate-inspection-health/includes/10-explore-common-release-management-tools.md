@@ -1,4 +1,3 @@
-
 The following tools are mainstream in the current ecosystem. You'll find links to the product websites to explore the product and see if it fits the needs we described in the previous chapter.
 
  -  What Artifacts and Artifact sources does the tool support?
