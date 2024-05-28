@@ -1,4 +1,3 @@
-
 This module described Azure Pipelines capabilities, build and release tasks, and multi-configuration and multi-agent differences.
 
 You learned how to describe the benefits and usage of:
