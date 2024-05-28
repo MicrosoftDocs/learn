@@ -4,7 +4,7 @@ title: Validate the Microsoft Purview scan
 metadata:
   title: Validate the Microsoft Purview scan
   description: "One of the main features of this data stack, is an end to end lineage of data movement through the data estate. We can see that our data is in container storage. We can also see that it moved through CluedIn and back out to the same container storage, but in a different folder."
-  ms.date: 11/29/2023
+  ms.date: 05/28/2024
   author: whhender
   ms.author: whhender
   ms.topic: unit

@@ -22,9 +22,9 @@ Notice in the data, that we have 10 rows of data containing a list of different 
 
 :::image type="content" source="../media/companies-csv-sample-inline.png" alt-text="Screenshot of sample data in Companies.csv." lightbox="../media/companies-csv-sample.png" :::
 
-Notice that the addresses of many of the companies are similar. For example, "188, Quuen St Brisbane" and "188 queen street brisbane". These addresses are fictitious, but we can clearly see that there's a data quality issue that we're hoping to fix.
+Notice that the addresses of many of the companies are similar. For example, *188, Quuen St Brisbane* and *188 queen street brisbane*. These addresses are fictitious, but we can clearly see that there's a data quality issue that we're hoping to fix.
 
-The "person_id" column is referring to the identifier of an Employee, which is somewhere within one of the other files. Hence, we create what CluedIn calls **Edges** or **Relationships** between this column and the column of another Domain.
+The **person_id** column is referring to the identifier of an Employee, which is somewhere within one of the other files. Hence, we create what CluedIn calls **Edges** or **Relationships** between this column and the column of another Domain.
 
 ### Contacts.csv
 
@@ -44,7 +44,7 @@ This file contains more employees, but contains some of the same data quality is
 
 ### Products.csv
 
-In this file, we have 10 rows of data containing 10 fictitious products. We have columns for a SKU, Name, and Size. As you look across the other Products.csv files from YellowSystems (under the YellowSystems folder), you notice that there's no Identifier that can be used to uniquely stitch the products together. The lack of a unique identifier, is why we need to use a fuzzy merging approach later in the exercise.
+In this file, we have 10 rows of data containing 10 fictitious products. We have columns for a SKU, Name, and Size. As you look across the other Products.csv files from YellowSystems (under the YellowSystems folder), you notice that there's no Identifier that can be used to uniquely stitch the products together. The lack of a unique identifier is why we need to use a fuzzy merging approach later in the exercise.
 
 :::image type="content" source="../media/navision-products-csv-sample-inline.png" alt-text="Screenshot of sample data in Products.csv." lightbox="../media/navision-products-csv-sample.png":::
 
@@ -64,13 +64,13 @@ We can also see that the names of the columns, are similar to the column names i
 
 ### Persons.csv
 
-Finally, notice in the file that we have the same 10 employees however we once again have different identifiers, column names, and details. We have columns for ID, First, Last, Email, Full_Name, Gender, IP_Address, and PID.
+Finally, notice in the file that we have the same 10 employees however we once again have different identifiers, column names, and details. We have columns for **id**, **first**, **last**, **email**, **full_Name**, **gender**, **ip_address**, and **pid**.
 
 :::image type="content" source="../media/xero-persons-csv-sample-inline.png" alt-text="Screenshot of sample data in Persons.csv." lightbox="../media/xero-persons-csv-sample.png" :::
 
-Once again, if we look at Lorain, we can see that this time the email ends with "yahoo.com". However we can see that she does have an identifier of "1" and a column called "pid" that has a value that we did see in the Employees.csv file. It's most likely that we could use different identifiers from each file to stitch this value together - however on the surface that would be quite a tricky SQL statement or Python script to create.
+Once again, if we look at Lorain, we can see that this time the email ends with *yahoo.com*. However we can see that there's an identifier of *1* and a column called **pid** that has a value that we did see in the Employees.csv file. It's most likely that we could use different identifiers from each file to stitch this value together - however on the surface that would be quite a tricky SQL statement or Python script to create.
 
-## Upload the data to the ADLS Gen2
+## Upload the data to the Azure Data Lake Storage (ADLS) Gen2
 
 1. Navigate to the Storage Account that you created in the earlier part of the module.
 1. Navigate to your Container Storage in the left menu, and either select an existing Container, or create a new one called **cluedintrial**.
@@ -161,7 +161,7 @@ Now we create the secure credentials that Microsoft Purview and Azure Data Facto
 
     :::image type="content" source="../media/purview-azure-data-factory.png" alt-text="Screenshot of a data factory connection in Microsoft Purview.":::
 
-    This connection allows Microsoft Purview to create automated lineage for you based off the ADF scheduled pipelines you have for regularly pulling in the data from the source systems into the raw folder. Also, it allows the lineage that CluedIn creates during data processing.
+    This connection allows Microsoft Purview to create automated lineage for you. The lineage is based off of the Azure Data Factory (ADF) scheduled pipelines that you have for regularly pulling in the data from the source systems to the raw folder. Also, it allows the lineage that CluedIn creates during data processing.
 
 ### Flagging assets that can sync with CluedIn
 
@@ -223,10 +223,10 @@ Next, we provide CluedIn with the credentials of our Azure Data Factory so Clued
 1. In the Azure portal, open your Data Factory instance and select **Access Control IAM**. Grant your service principal the **Data Factory Contributor** role to allow it to create pipelines and triggers.
 
 1. In your CluedIn Studio, select the **Settings** section, under **Administration**. Fill in the Azure Data Factory details:
-    1. Purview : Azure Data Factory Base Url - is formatted like: `https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.DataFactory/factories/{factoryName}/`
-    1. Purview : Azure Data Factory Client ID - the Application (client) ID from your service principal
-    1. Purview : Azure Data Factory Client Secret - the client secret value from setting up your service principal.
-    1. Purview: Azure Data Factory Tenant ID- the Azure Tenant ID where your Azure Data Factory account lives.
+    1. **Purview : Azure Data Factory Base Url** - is formatted like: `https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.DataFactory/factories/{factoryName}/`
+    1. **Purview : Azure Data Factory Client ID** - the Application (client) ID from your service principal
+    1. **Purview : Azure Data Factory Client Secret** - the client secret value from setting up your service principal.
+    1. **Purview: Azure Data Factory Tenant ID** - the Azure Tenant ID that is home to your Azure Data Factory account.
 
 1. Toggle on the setting for **Purview : Azure Data Factory Pipeline Automation**. This setting uses our Azure Data Factory instance to copy our data into CluedIn.
 

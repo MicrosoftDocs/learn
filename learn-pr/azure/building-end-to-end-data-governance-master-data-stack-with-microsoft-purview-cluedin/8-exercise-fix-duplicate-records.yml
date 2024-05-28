@@ -4,7 +4,7 @@ title: Fix duplicate records
 metadata:
   title: Fix duplicate records
   description: "Create golden records by resolving duplicate records in CluedIn. Golden records have the most accurate and up to date values for any one piece of data. They can be a source of truth for your data estate."
-  ms.date: 11/29/2023
+  ms.date: 05/28/2024
   author: whhender
   ms.author: whhender
   ms.topic: unit
