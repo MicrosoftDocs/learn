@@ -1,78 +1,60 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+In this exercise, you configure the Microsoft Sentinel plugin and run some test prompts to confirm that Copilot is using the plugin.
 
-    Goal: briefly summarize the key skill this unit will teach
+> [!NOTE]
+> The environment for this exercise is based on a simulation, generated from pre-determined screen captures of the actual product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script are not be supported.
 
-    Heading: none
+### Exercise
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+> [!NOTE]
+> It is recommended that you open the exercise environment in a separate browser window so that you can simultaneously view the instructions and the exercise environment.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Using the exercise environment, follow the exercise steps that are listed.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+[![Button to launch exercise environment.](../media/security-copilot-launch-exercise-button-v2.png)]()
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+#### Task: Test a Microsoft Sentinel prompt
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+When working with technology, it's not  uncommon to try use a feature and then realize, after some trouble-shooting, that you forgot to enable that feature. In this first task, you test a Microsoft Sentinel prompt with the Microsoft Sentinel plugin disabled. You go through this task so that you can get exposure to the information provided in the process log that helps you troubleshoot the issue.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+1. From the prompt bar, enter the prompt **Summarize the Microsoft Sentinel incident 30342**. You can use the right arrow key to prepopulate the prompt bar. Then select the run icon.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+1. The Copilot process log shows that it can't complete your request. Expand the items in the process log for more detailed information.
 
-    Goal: State concisely what's covered in this unit
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+#### Task: Configure and enable the Microsoft Sentinel plugin
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+In this task, you'll configure the Sentinel plugin. To do this, you need to access the Azure portal to obtain the necessary information.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+1. From prompt bar, select the sources icon.
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+1. From the manage sources page, expand the view for the Microsoft plugins and scroll down until Microsoft Sentinel is visible.
 
-    Heading: none
--->
-TODO: add a visual element
+1. Select the settings icon and note the parameters that need to be configured. Select the information icon next to any of the parameters. Keep this browser tab open, you'll come back to this page for each parameter to be configured.
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+1. Open the browser page for the Azure portal.
+    1. Select **Log Analytics workspaces**, it should be displayed as an icon under Azure services.
+    1. Select the workspace associated with your Sentinel deployment. For this exercise, select **Woodgrove-LogAnalyticsWorkspace**.
+    1. You should be on the overview page, if not select it now. From here you copy the information required to configure the Sentinel plugin. 
+    1. Recall that the first parameter listed on the Microsoft Sentinel settings page is the Default workspace name. **Hover over the workspace name**, until the clipboard icon is displayed. Select **Copy to clipboard**.
+    1. Keep this browser tab open as you'll be referring to the information on this page for each parameter to be configured.
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+1. Switch back to the Copilot browser tab. Place your mouse cursor in the workspace name field and right-click to paste the contents of the clipboard to the clipboard. The workspace name is added to the field.
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+1. Repeat the steps until you have configured the remaining two fields. Once the all the fields are populated, select **Save**.
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+1. Make sure toggle switch for the Sentinel plugin is enabled, then close the manage sources window.
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+#### Task: Retest the Microsoft Sentinel prompt
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+Now that the Sentinel plugin is enabled, you'll run the prompt you tried earlier. With the prompt successfully executed, you'll save the prompt to the pinboard and get a link to the session so you can share it with a colleague.
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+1. From the prompt bar, enter the prompt **Summarize the Microsoft Sentinel incident 30342**. You can use the right arrow key to prepopulate the prompt bar. Then select the run icon.
 
-<!-- Do not add a unit summary or references/links -->
+1. The Copilot process log shows that the prompt executed successfully by displaying green check marks.
+1. Select the box next to the prompt response, then select the pin icon.
+1. Select the pin board icon ![prompt icon](../media/pinboard-icon.png) to open the pin board.
+1. From the top of the page, select Export to view available options. Exporting to Word or Mail results in a summary document or email that you can immediately send to your stakeholders.
+
+#### Review
+
+In this exercise, you ran a prompt that requires the Microsoft Sentinel plugin to be enabled. The first time you ran the prompt, Copilot wasn't able to complete the request. The process log provided the information to help you troubleshoot the issue. You then configured and enabled the plugin. With the plugin enabled you were able successfully run the prompt.

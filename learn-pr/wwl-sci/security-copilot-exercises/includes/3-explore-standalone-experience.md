@@ -116,3 +116,7 @@ At the bottom right corner of the window is the help icon where you can easily a
     1. Select **Help**.
         1. Anyone with access to Copilot for Security can access the self help widget by selecting the help icon then selecting the Help tab. Here you can find solutions to common problems by entering something about the problem. Select the right arrow key on your keyboard to prepopulate the prompt bar then select the arrow in the blue box or press enter.
         1. Users with a minimum role of Service Support Administrator or Helpdesk Administrator role can submit a support case to the Microsoft support team. If you have this role, you see a headset icon. Close the contact support page.
+
+#### Review
+
+In this exercise, you explored Microsoft Copilot for Security standalone experience. You explored the key landmarks of Copilot landing page including the owner settings, your past sessions, prompts and promptbooks, and the help option.

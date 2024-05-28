@@ -1,4 +1,4 @@
-The organization you work for wants to increase the efficiency and capabilities of its security analyst to improve security outcomes. In support of that objective, the office of the CISO determined that deploying Microsoft Copilot for Security is a key step towards that objective. As the Security administrator for your organization, you are tasked with setting up Copilot.
+The organization you work for wants to increase the efficiency and capabilities of its security analyst to improve security outcomes. In support of that objective, the office of the CISO determined that deploying Microsoft Copilot for Security is a key step towards that objective. As the Security administrator for your organization, you're tasked with setting up Copilot.
 
 In this exercise, you'll walk through the first run experience. 
 
@@ -26,7 +26,7 @@ Before users can start using Copilot, admins need to provision and allocate capa
 
 In this task, you walk through the process of ensuring you have the appropriate role permissions. This starts by enabling access management for Azure resources.
 
-Why is this needed? As a Global Administrator in Microsoft Entra ID, you might not have access to all subscriptions and management groups in your directory. Microsoft Entra ID and Azure resources are secured independently from one another. That is, Microsoft Entra role assignments don't grant access to Azure resources, and Azure role assignments don't grant access to Microsoft Entra ID. When you elevate your access, you are assigned the User Access Administrator role in Azure at root scope (/). This allows you to view all resources and assign access in any subscription or management group in the directory. For details, see [Elevate access to manage all Azure subscriptions and management groups.](/azure/role-based-access-control/elevate-access-global-admin).
+Why is this needed? As a Global Administrator in Microsoft Entra ID, you might not have access to all subscriptions and management groups in your directory. Microsoft Entra ID and Azure resources are secured independently from one another. That is, Microsoft Entra role assignments don't grant access to Azure resources, and Azure role assignments don't grant access to Microsoft Entra ID. When you elevate your access, you're assigned the User Access Administrator role in Azure at root scope (/). This allows you to view all resources and assign access in any subscription or management group in the directory. For details, see [Elevate access to manage all Azure subscriptions and management groups.](/azure/role-based-access-control/elevate-access-global-admin).
 
 Once you have user access, you can then assign yourself the necessary access to provision SCUs for Copilot.
 
@@ -79,5 +79,7 @@ For this exercise, you provision capacity through Copilot for Security. When you
 1. The next screen is where you can select options to help improve Copilot. You can select the toggle based on your preferences.
 1. In the next page, you're informed of the default roles that can access Copilot (you’ll add users in a subsequent exercise). Select continue.
 1. You're now ready to explore and start using Copilot. The next unit will focus on exploring the core functionality of the standalone experience.
+
+#### Review
 
 In this exercise, you successfully provisioned Copilot for Security.
