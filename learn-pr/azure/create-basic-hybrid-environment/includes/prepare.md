@@ -39,12 +39,12 @@ This article covers the first two tasks. These tasks allow you to prepare to run
 
 This module uses PowerShell scripts to accomplish the goals of quickly setting up an on-premises environment. These scripts include hardcoded paths to specific files. You need to use either of the following approaches:
 
-- Change the paths to ones that reflect your environment. For example: *$VHDPath = 'D:\\VM\\DC1\\DC1.vhdx'* might become *$VHDPath = 'C:\\VM\\DC1\\DC1.vhdx'* if you move the VM folder to the *C:\\* drive.
+- Change the paths to ones that reflect your environment. For example: *$VHDPath = 'D:\\VM\\DC1\\DC1.vhdx'* might become *$VHDPath = 'C:\\VM\\DC1\\DC1.vhdx'* if you move the *VM* folder to the *C:\\* drive.
 - Recreate the folder structure that is used in the scripts using the following table.
 
 | Name    | Location | Description |
 |:--------|:---------|:------------|
-| ISO     | D:\      | Used to store the .iso images used for this module. |
+| ISO     | D:\      | Used to store the ISO images used for this module. |
 | VM      | D:\      | Target location for the creation of the virtual machine used in this module. |
 | Scripts | D:\      | Used to store the initial PowerShell script used to create the VM. |
 
@@ -52,9 +52,9 @@ This module uses PowerShell scripts to accomplish the goals of quickly setting u
 
 This module uses PowerShell scripts so that you can create the environment in the quickest amount of time. Each of the scripts uses variables that are declared at the beginning of the scripts. These variables are explained in tables that introduce the exercise. You can change the variables to reflect your environment.
 
-Versions of the PowerShell scripts that are used in this module are available on GitHub under [learn-module-basic-ad-azure-ad-scripts](https://github.com/billmath/learn-module-basic-ad-azure-ad-scripts). You should download the zip files and the .iso image.
+Versions of the PowerShell scripts that are used in this module are available on GitHub in [learn-module-basic-ad-azure-ad-scripts](https://github.com/billmath/learn-module-basic-ad-azure-ad-scripts). You should download the zip files and the ISO image.
 
-The following table describes each of the PowerShell scripts contained both the .ISO file and the .zip file.
+The following table describes each of the PowerShell scripts contained both the *.iso* file and the *.zip* file.
 
 | Script Name | Description |
 |:------------|-------------|
@@ -63,6 +63,6 @@ The following table describes each of the PowerShell scripts contained both the 
 | 3_InstallAD_LEARN.ps1  | Install Active Directory on the server and setups the *contoso.com* domain. |
 | 4_CreateUser_LEARN.ps1 | Creates a test user that can be used in various scenarios. |
 
-Download the .zip file and extract the contents to the *D:\Scripts* folder. Download the .iso image to the *D:\ISO* folder.
+Download the *.zip* file and extract the contents to the *D:\Scripts* folder. Download the *.iso* image to the *D:\ISO* folder.
 
 > [!VIDEO https://msit.microsoftstream.com/embed/video/8e890840-98dc-b478-2c31-f1ecf1b0a78a?autoplay=false&amp;showinfo=true]

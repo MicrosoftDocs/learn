@@ -1,5 +1,3 @@
-## Create and configure your virtual machine
-
 In this exercise, you create and configure a virtual machine (VM). This virtual machine represents your on-premises Windows Server Active Directory environment.
 
 :::image type="content" source="../media/3-exercise-1.png" alt-text="Diagram shows progression of this module with the first exercise highlighted.":::

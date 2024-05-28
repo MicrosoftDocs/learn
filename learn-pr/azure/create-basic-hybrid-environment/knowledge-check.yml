@@ -13,7 +13,7 @@ durationInMinutes: 1
 quiz:
   title: Check your knowledge
   questions:
-  - content: How do you install Hyper-V?"
+  - content: "How do you install Hyper-V?"
     choices:
     - content: "Using Device Manager."
       explanation: "Incorrect, you use Turn Windows features on or off to install Hyper-V."

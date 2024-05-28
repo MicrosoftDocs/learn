@@ -1,13 +1,10 @@
-
-## Install Active Directory and create a test user
-
 In this exercise, you install Windows Server Active Directory and create a user. This user can be used for testing purposes.
 
 :::image type="content" source="../media/4-exercise-1.png" alt-text="Diagram shows progression of this module with the second exercise highlighted.":::
 
 ## Change the ISO file in Hyper-V
 
-Now that you have the virtual machine (VM) up and the operating system installed, you want to change the .iso file that VM is using. You're taking this action so that you can run the remaining scripts from within the virtual machine. To change the .iso file, do the following tasks:
+Now that you have the virtual machine (VM) up and the operating system installed, you want to change the *.iso* file that VM is using. You're taking this action so that you can run the remaining scripts from within the virtual machine. To change the *.iso* file, do the following tasks:
 
 1. In Hyper-V, right-click **DC1** and select **Settings**.
 1. On the left, select **DVD Drive**.

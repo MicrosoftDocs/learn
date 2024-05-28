@@ -1,7 +1,5 @@
 <a name='create-an-azure-ad-tenant-and-a-global-administrator'></a>
 
-## Create a Microsoft Entra tenant and a global administrator
-
 In this exercise, you create a Microsoft Entra tenant and a global administrator. This unit completes the basic hybrid environment.
 
 :::image type="content" source="../media/5-exercise-1.png" alt-text="Diagram shows progression of this module with the third exercise highlighted.":::
