@@ -6,9 +6,9 @@ If you have experience with SQL Server, you find that row-level security shares 
 
 ## Protect your data
 
-Row-Level Security (RLS) works by associating a function, known as a security predicate, with a table. This function is defined to return *true* or *false* based on certain conditions, typically involving the values of one or more columns in the table. When a user attempts to access data in the table, the security predicate function is invoked. If the function returns *true*, the row is accessible to the user; if it returns *false*, the row is effectively invisible to the user. 
+Row-Level Security (RLS) works by associating a function, known as a security predicate, with a table. This function is defined to return *true* or *false* based on certain conditions, typically involving the values of one or more columns in the table. When a user attempts to access data in the table, the security predicate function is invoked. If the function returns *true*, the row is accessible to the user; if it returns *false*, the row doesn't show up in the query results.
 
-Depending on the business requirements, RLS can be as simple as `WHERE CustomerId = 29` or as complex as required.
+Depending on the business requirements, an RLS predicate can be as simple as `WHERE CustomerId = 29` or as complex as required.
 
 This process is transparent to the user and is enforced automatically by SQL Server, ensuring consistent application of security rules. 
 
@@ -36,7 +36,7 @@ The T-SQL commands below demonstrate how to use RLS in a scenario where user acc
 CREATE TABLE [Sales] (SalesID INT, 
     ProductID INT, 
     TenantName NVARCHAR(10), 
-    OrderQtd INT, 
+    OrderQty INT, 
     UnitPrice MONEY)
 GO
 
@@ -78,7 +78,7 @@ The *tenantAdmin@contoso.com* user should see all the rows. The *tenant1@contoso
 If you alter the security policy with `WITH (STATE = OFF);`, you notice that users see all the rows.
 
 >[!NOTE]
-> There is a risk of information leakage if an attacker writes a query with a specially crafted `WHERE` clause and, for example, a divide-by-zero error, to force an exception if the `WHERE` condition is true. This is known as a *side-channel attack*. It is wise to limit the ability of users to run ad hoc queries when using row-level security.
+> There is a risk of information leakage if an attacker writes a query with a specially crafted `WHERE` clause and, for example, a divide-by-zero error, to force an exception if the `WHERE` condition is true. This is known as a *side-channel attack*.
 
 ## Explore use cases
 

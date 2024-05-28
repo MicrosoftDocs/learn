@@ -20,7 +20,7 @@ Column-level security can help ensure that sensitive health information is only 
 
 ## Configure column-level security
 
-In our previous example, the syntax to use for implementing column-level security might look as follows:
+In the scenario we've recently explored, the syntax to use for implementing column-level security might look as follows:
 
 ```sql
 -- Create roles
