@@ -4,10 +4,10 @@ title: Integrate Azure Key Vault with Azure DevOps
 metadata:
   title: Integrate Azure Key Vault with Azure DevOps
   description: "Integrate Azure Key Vault with Azure DevOps"
-  ms.date: 06/30/2023
+  ms.date: 05/28/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 40
 content: |
-  [!include[](includes/11-integrate-azure-key-vault-with-azure-devops.md)]
+  [!include[](includes/12-integrate-azure-key-vault-with-azure-devops.md)]

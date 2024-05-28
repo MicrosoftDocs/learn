@@ -4,10 +4,10 @@ title: Examine Key-value pairs
 metadata:
   title: Examine Key-value pairs
   description: "Examine Key-value pairs"
-  ms.date: 06/30/2023
+  ms.date: 05/28/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-examine-key-value-pairs.md)]
+  [!include[](includes/7-examine-key-value-pairs.md)]

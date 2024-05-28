@@ -1,4 +1,3 @@
-
 While you can store configuration and secrets together, it violates our separation of concern principle, so the recommendation is to use a different store for persisting secrets.
 
 It allows a secure channel for sensitive configuration data, such as ConnectionStrings.
