@@ -4,10 +4,10 @@ title: Examine DevOps inner and outer loop
 metadata:
   title: Examine DevOps inner and outer loop
   description: "Examine DevOps inner and outer loop"
-  ms.date: 06/30/2023
+  ms.date: 05/28/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/10-examine-devops-inner-outer-loop.md)]
+  [!include[](includes/11-examine-devops-inner-outer-loop.md)]

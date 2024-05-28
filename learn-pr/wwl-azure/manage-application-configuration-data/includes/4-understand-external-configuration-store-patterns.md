@@ -1,4 +1,3 @@
-
 These patterns store the configuration information in an external location and provide an interface that can be used to quickly and efficiently read and update configuration settings.
 
 The type of external store depends on the hosting and runtime environment of the application.
@@ -17,7 +16,7 @@ Depending on the type of backing store used and its latency, it might be helpful
 
 For more information, see the Caching Guidance. The figure illustrates an overview of the External Configuration Store pattern with optional local cache.
 
-:::image type="content" source="../media/applications-accessing-external-configuration-ef278b40.png" alt-text="Applications are accessing the external configuration store, which is accessing cloud storage, or databases.":::
+:::image type="content" source="../media/applications-accessing-external-configuration-ef278b40.png" alt-text="Diagram shows applications are accessing the external configuration store, which is accessing cloud storage, or databases.":::
 
 
 This pattern is helpful for:
