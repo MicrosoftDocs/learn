@@ -101,4 +101,18 @@ At the bottom center of the page is the promptbar.  The promptbar includes the p
     1. The sources icon opens the manage sources window. From here you can access Plugins or Files. Let's start by selecting **Plugins**.
         1. Select whether you want to all plugins, those that are enabled (on), or those that are disabled (off).
         1. Expand/collapse list of Microsoft, non-Microsoft, and custom plugins.
-        1. Some plugins require configuring parameters. Select the settings icon for the Microsoft Sentinel plugin.  You'll explore 
+        1. Some plugins require configuring parameters. Select the settings icon for the Microsoft Sentinel plugin, to view the settings window.  Select **cancel** to close the settings window. In a separate exercise you'll configure the plugin.
+    1. You should still be in the Manage sources window. Select **Files**.
+        1. Review the description.
+        1. Note that files can be deleted by selecting the trash bin icon and the toggle switch enables and disables access to the file.
+        1. Select **X** to close the manage sources window.
+
+#### Task:  Explore the help feature
+
+At the bottom right corner of the window is the help icon where you can easily access documentation and find solutions to common problems.  From the help icon, you also submit a support case to the Microsoft support team if you have the appropriate role permissions.
+
+1. Select the **Help (?)** icon.
+    1. Select **Documentation**.  This opens a new browser tab to the Microsoft Copilot for Security documentation.  Return to the Microsoft Copilot for Security browser tab.
+    1. Select **Help**.
+        1. Anyone with access to Copilot for Security can access the self help widget by selecting the help icon then selecting the Help tab.  Here you can find solutions to common problems by entering something about the problem. Select the right arrow key on your keyboard to pre-populate the promptbar with a topic then select the arrow in the blue box or press enter.
+        1. Users with With A headset icon appears on the top of the window and a contact support button appears at the bottom of the window.  Only users with a minimum role of Service Support Administrator OR Helpdesk Administrator role can submit a support case to the Microsoft support team.  If you have this role, you will see the a headset icon.  Close the contact support page.
