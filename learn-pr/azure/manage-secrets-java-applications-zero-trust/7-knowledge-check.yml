@@ -6,7 +6,7 @@ metadata:
   description: Check your knowledge of managing secrets in a Java application.
   author: judubois
   ms.author: judubois
-  ms.date: 02/20/2024
+  ms.date: 05/28/2024
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates
@@ -38,7 +38,7 @@ quiz:
           explanation: "Incorrect. Storing secrets in the application source is a bad practice."
         - content: "All applications have automatic access to the Azure Key Vault instances stored in their resource group"
           isCorrect: false
-          explanation: "Incorrect. Applications don't have access to any Azure Key Vault instance, unless they've been granted that access."
+          explanation: "Incorrect. Applications don't have access to any Azure Key Vault instance, unless they're granted that access."
         - content: "An IT Operator needs to grant the application access to Azure Key Vault"
           isCorrect: true
           explanation: "You're correct. An IT Operator needs to grant access permission, before the Java application can access the secrets."
