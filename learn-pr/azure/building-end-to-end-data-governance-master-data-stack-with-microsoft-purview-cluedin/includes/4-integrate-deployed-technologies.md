@@ -18,7 +18,7 @@ Download the following files to your local drive. There are seven files represen
 
 ### Companies.csv
 
-Notice in the data, that we have 10 rows of data containing a list of different companies. We have columns for an ID, Name, Website, Address, and a Person_Id.
+Notice in the data, that we have 10 rows of data containing a list of different companies. We have columns for an **id**, **name**, **website**, **address**, and a **person_Id**.
 
 :::image type="content" source="../media/companies-csv-sample-inline.png" alt-text="Screenshot of sample data in Companies.csv." lightbox="../media/companies-csv-sample.png" :::
 
@@ -28,7 +28,7 @@ The **person_id** column is referring to the identifier of an Employee, which is
 
 ### Contacts.csv
 
-Notice in the data, that we have 10 rows of data containing 10 fictitious employees. We have columns for an ID, First_Name, Last_Name, Full_Name, Email, Job.
+Notice in the data, that we have 10 rows of data containing 10 fictitious employees. We have columns for an **id**, **first_name**, **last_name**, **full_name**, **email**, and **job**.
 
 :::image type="content" source="../media/contacts-csv-sample-inline.png" alt-text="Screenshot of sample data in Contacts.csv." lightbox="../media/contacts-csv-sample.png" :::
 
@@ -56,7 +56,7 @@ Notice that we have 10 rows of data containing the same 10 fictitious products m
 
 ### Employees.csv
 
-Notice in this file that we have the same 10 employees. However, we do have different identifiers, column names, and details. We have columns for FName, LName, Full, Email, Person_Id. If we take a look at Lorain Andrzej in this file, we don't have an Identifier of "1" or an email that ends in "wtb.gov.au". Rather, we could assume that the email column and the person_id column could both be used to uniquely identify these employees.
+Notice in this file that we have the same 10 employees. However, we do have different identifiers, column names, and details. We have columns for **fname**, **lname**, **full**, **email**, and **person_id**. If we take a look at Lorain Andrzej in this file, we don't have an Identifier of *1* or an email that ends in *wtb.gov.au*. Rather, we could assume that the **email** column and the **person_id** column could both be used to uniquely identify these employees.
 
 :::image type="content" source="../media/salesforce-employees-csv-sample-inline.png" alt-text="Screenshot of sample data in Employees.csv." lightbox="../media/salesforce-employees-csv-sample.png":::
 
@@ -64,7 +64,7 @@ We can also see that the names of the columns, are similar to the column names i
 
 ### Persons.csv
 
-Finally, notice in the file that we have the same 10 employees however we once again have different identifiers, column names, and details. We have columns for **id**, **first**, **last**, **email**, **full_Name**, **gender**, **ip_address**, and **pid**.
+Finally, notice in the file that we have the same 10 employees however we once again have different identifiers, column names, and details. We have columns for **id**, **first**, **last**, **email**, **full_name**, **gender**, **ip_address**, and **pid**.
 
 :::image type="content" source="../media/xero-persons-csv-sample-inline.png" alt-text="Screenshot of sample data in Persons.csv." lightbox="../media/xero-persons-csv-sample.png" :::
 
