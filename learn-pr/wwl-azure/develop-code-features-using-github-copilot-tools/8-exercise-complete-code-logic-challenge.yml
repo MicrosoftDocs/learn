@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-code-features-using-github-copilot-tools.exercise-complete-code-logic-challenge
+title: Exercise - Complete the "code logic" challenge
+metadata:
+  title: Exercise - Complete the "code logic" challenge
+  description: "Exercise - Complete the \"code logic\" challenge"
+  ms.date: 05/22/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 16
+content: |
+  [!include[](includes/8-exercise-complete-code-logic-challenge.md)]

@@ -2,9 +2,9 @@
 uid: learn.wwl.query-data-kql-database-microsoft-fabric.get-started-with-kql-queries
 title: Get started with KQL queries
 metadata:
-  title: Get started with KQL queries
-  description: "Get started with KQL queries"
-  ms.date: 04/24/2024
+  title: Get started with KQL (Kusto Query Language) queries
+  description: "Get started with KQL (Kusto Query Language) queries."
+  ms.date: 05/14/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit

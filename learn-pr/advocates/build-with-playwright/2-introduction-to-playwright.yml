@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.build-with-playwright.introduction-to-playwright
+title: What is Playwright?
+metadata:
+  title: What is Playwright?
+  description: In this module, you learn about Playwright, a library that enables you to automate web browsers. You learn how to set up Playwright, create a new Playwright project, and write your first Playwright test.
+  ms.date: 05/08/2024
+  author: japhletnwamu
+  ms.author: japhletnwamu
+  ms.topic: unit
+  ms.custom: team=cloud_advocates
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-introduction-to-playwright.md)]

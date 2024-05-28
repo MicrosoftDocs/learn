@@ -4,12 +4,12 @@ title: Understand server response time degradation
 metadata:
   title: Understand server response time degradation
   description: "Understand server response time degradation"
-  ms.date: 11/06/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.custom:
+  - N/A
+durationInMinutes: 2
 content: |
   [!include[](includes/6-understand-server-response-time-degradation.md)]
