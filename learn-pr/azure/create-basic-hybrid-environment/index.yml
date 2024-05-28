@@ -4,7 +4,7 @@ metadata:
   moduleType: guided-project
   title: Create a basic hybrid environment
   description: "Learn how to create an Active Directory and Microsoft Entra tenant environment that you can use in subsequent learn modules."
-  ms.date: 05/24/2024
+  ms.date: 05/28/2024
   author: billmath
   ms.author: billmath
   ms.topic: module

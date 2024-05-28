@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title:  Prepare for the basic hybrid environment
   description: "Learn about the setup requirements for a Windows Server Active Directory and Microsoft Entra ID hybrid configuration."
-  ms.date: 05/24/2024
+  ms.date: 05/28/2024
   author: billmath
   ms.author: billmath
   ms.topic: unit

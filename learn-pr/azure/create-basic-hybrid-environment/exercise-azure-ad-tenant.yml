@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Create a Microsoft Entra tenant
   description: "Learn how you can create a Microsoft Entra tenant as part of your Windows Server Active Directory hybrid configuration."
-  ms.date: 05/24/2024
+  ms.date: 05/28/2024
   author: billmath
   ms.author: billmath
   ms.topic: unit

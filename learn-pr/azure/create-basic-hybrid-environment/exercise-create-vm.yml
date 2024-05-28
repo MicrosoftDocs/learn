@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Install Hyper-V and create a VM
   description: "Learn how to install Hyper-V and create a virtual machine as part of a hybrid configuration of Windows Server Active Directory and Microsoft Entra ID."
-  ms.date: 05/24/2024
+  ms.date: 05/28/2024
   author: billmath
   ms.author: billmath
   ms.topic: unit
