@@ -1,4 +1,3 @@
-
 Github.com notifications provide updates about the activity that you've subscribed to. You can use the notifications inbox to customize, triage, and manage your updates.
 
 You can choose to subscribe to notifications for:
@@ -33,6 +32,8 @@ By default, you automatically watch all repositories you create and own by your 
     
     :::image type="content" source="../media/github-notification-settings-eba2d746.png" alt-text="Screenshot of GitHub notifications configuration.":::
     
+
+Note that, from this page, you can configure notifications for GitHub Actions using GitHub and email channels. By default, they are generated for failed workflows only, but you have the option of including successful ones or disabling them altogether.
 
 For more information, see:
 

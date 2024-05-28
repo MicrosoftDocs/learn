@@ -4,10 +4,12 @@ title: Examine release notes and documentation
 metadata:
   title: Examine release notes and documentation
   description: "Examine release notes and documentation"
-  ms.date: 06/28/2023
+  ms.date: 05/28/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/9-examine-release-notes-documentation.md)]
+  [!include[](includes/8-examine-release-notes-documentation.md)]
