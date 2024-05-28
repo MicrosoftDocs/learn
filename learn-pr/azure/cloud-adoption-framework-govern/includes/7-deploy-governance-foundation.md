@@ -54,4 +54,15 @@ To apply a policy, see the [tutorial to assign a policy](/azure/governance/polic
 > [!IMPORTANT]
 > On step 9, set **Policy enforcement** to **Disabled**. When you disable this setting, you can audit your environment without making any changes, and you don't block future deployments.
 
+## Tailwind Traders example
+
+To enforce their new policy "Avoid overspending," Tailwind Traders can:
+
+- Define clear spending limits for each individual or team in the organization.
+
+- Create a budget in Microsoft Cost Management to track spending.
+- Create alerts for overspending.
+- Put aside extra funds for unexpected costs.
+- Optimize resource usage.
+
 These exercises help demonstrate a starting point or foundation for governance. In the next unit, you'll build on this foundation to 
