@@ -3,23 +3,27 @@ uid: learn.wwl.use-data-factory-pipelines-fabric
 metadata:
   title: Use Data Factory pipelines in Microsoft Fabric
   description: "Use Data Factory pipelines in Microsoft Fabric"
-  ms.date: 01/31/2024
+  ms.date: 05/08/2024
   author: wwlpublish
-  ms.author: anrudduc
-  ms.topic: module-standard-task-based
+  ms.author: shlindsay
+  ms.topic: module
   ms.custom:
-    - build-2023
-  ms.service: fabric
+  - build-2023
+  ms.service: azure
+  ai-usage: human-only
 title: Use Data Factory pipelines in Microsoft Fabric
 summary: Microsoft Fabric includes Data Factory capabilities, including the ability to create pipelines that orchestrate data ingestion and transformation tasks.
 abstract: |
-  In this module, you'll learn how to:
-  - Describe pipeline capabilities in Microsoft Fabric
-  - Use the Copy Data activity in a pipeline
-  - Create pipelines based on predefined templates
-  - Run and monitor pipelines
-prerequisites: |
-  Before starting this module, you should be familiar with Microsoft Fabric and data orchestration.
+  In this module, you learn how to:
+
+  -   Describe pipeline capabilities in Microsoft Fabric.
+
+  -   Use the Copy Data activity in a pipeline.
+
+  -   Create pipelines based on predefined templates.
+
+  -   Run and monitor pipelines.
+prerequisites: Before starting this module, you should be familiar with Microsoft Fabric and data orchestration.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner

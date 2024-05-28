@@ -40,7 +40,7 @@ Take a moment to think about your community and some of the challenges being fac
 
 An example of an idea generated from a problem affecting community.
 
-- The rampant human-wildlife conflicts resulted in loss of lives & destruction of property for communities that live close to wildlife conservancies. [Rhions Lab Limited](https://rhions.co/) used IoT and AI to track wildlife and send timely alerts to rangers
+- The rampant human-wildlife conflicts resulted in loss of lives & destruction of property for communities that live close to wildlife conservancies. [Rhions Lab Limited](https://www.rhions.co/) used IoT and AI to track wildlife and send timely alerts to rangers
 
 ### Personal Productivity
 When you think about your day to day activities, what are some of the tasks that you would rather not do? How to apply the power of Artificial Intelligence to make you more productive?

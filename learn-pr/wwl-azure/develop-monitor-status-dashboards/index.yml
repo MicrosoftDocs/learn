@@ -2,22 +2,28 @@
 uid: learn.wwl.develop-monitor-status-dashboards
 metadata:
   title: Develop monitor and status dashboards
-  description: Develop monitor and status dashboards
-  ms.date: 01/26/2023
+  description: "Develop monitor and status dashboards"
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Develop monitor and status dashboards
 summary: This module explains steps to develop monitoring with Azure Dashboards, work with View Designer and Azure Monitor, and create Azure Monitor Workbooks. Also, explore tools to supports monitoring with Power BI.
 abstract: |
   By the end of this module, you'll be able to:
-  *   Configure Azure Dashboards
-  *   Work with View Designer in Azure Monitor
-  *   Create Azure Monitor Workbooks
-  *   Monitor with Power BI
-prerequisites: |
-  None
+
+  -   Configure Azure Dashboards
+
+  -   Work with View Designer in Azure Monitor
+
+  -   Create Azure Monitor Workbooks
+
+  -   Monitor with Power BI
+prerequisites: None
 iconUrl: /training/achievements/3-develop-monitoring-and-status-dashboards.svg
 levels:
 - advanced
@@ -44,11 +50,14 @@ subjects:
 - it-management-monitoring
 units:
 - learn.wwl.develop-monitor-status-dashboards.introduction
+- learn.wwl.develop-monitor-status-dashboards.configure-monitoring-github
 - learn.wwl.develop-monitor-status-dashboards.explore-azure-dashboards
-- learn.wwl.develop-monitor-status-dashboards.examine-view-designer-azure-monitor
 - learn.wwl.develop-monitor-status-dashboards.explore-azure-monitor-workbooks
 - learn.wwl.develop-monitor-status-dashboards.explore-power-bi
 - learn.wwl.develop-monitor-status-dashboards.build-your-own-custom-application
+- learn.wwl.develop-monitor-status-dashboards.monitor-pipeline-health-include-failure-rate-duration
+- learn.wwl.develop-monitor-status-dashboards.optimize-pipeline-cost-time-performance-reliability
+- learn.wwl.develop-monitor-status-dashboards.optimize-pipeline-concurrency-performance
 - learn.wwl.develop-monitor-status-dashboards.knowledge-check
 - learn.wwl.develop-monitor-status-dashboards.summary
 badge:
