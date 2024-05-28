@@ -39128,6 +39128,56 @@
     "source_path": "learn-pr/wwl-azure/integrate-identity-management-systems/6-summary.md",
     "redirect_url": "/training/modules/integrate-identity-management-systems/8-summary",
     "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/10-examine-devops-inner-outer-loop.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/11-examine-devops-inner-outer-loop",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/11-integrate-azure-key-vault-with-azure-devops.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/12-integrate-azure-key-vault-with-azure-devops",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/12-enable-dynamic-configuration-feature-flags.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/13-enable-dynamic-configuration-feature-flags",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/13-knowledge-check.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/14-knowledge-check",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/14-summary.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/15-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/5-introduction-to-azure-app-configuration.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/6-introduction-to-azure-app-configuration",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/6-examine-key-value-pairs.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/7-examine-key-value-pairs",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/7-examine-app-configuration-feature-management.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/8-examine-app-configuration-feature-management",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/8-integrate-azure-key-vault-azure-pipelines.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/9-integrate-azure-key-vault-azure-pipelines",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/9-manage-secrets-tokens-certificates.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/10-manage-secrets-tokens-certificates",
+    "redirect_document_id": false
     }
   ]
 }

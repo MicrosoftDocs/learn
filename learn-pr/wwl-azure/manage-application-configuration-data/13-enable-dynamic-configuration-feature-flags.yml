@@ -4,10 +4,10 @@ title: Enable Dynamic Configuration and Feature Flags
 metadata:
   title: Enable Dynamic Configuration and Feature Flags
   description: "Enable Dynamic Configuration and Feature Flags"
-  ms.date: 06/30/2023
+  ms.date: 05/28/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 60
 content: |
-  [!include[](includes/12-enable-dynamic-configuration-feature-flags.md)]
+  [!include[](includes/13-enable-dynamic-configuration-feature-flags.md)]

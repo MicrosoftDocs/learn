@@ -1,4 +1,3 @@
-
 Azure Key Vault helps solve the following problems:
 
  -  **Secrets management** \- Azure Key Vault can be used to store securely and tightly control access to tokens, passwords, certificates, API keys, and other secrets.
@@ -6,7 +5,7 @@ Azure Key Vault helps solve the following problems:
  -  **Certificate management** \- Azure Key Vault is also a service that lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with Azure. And your internal connected resources.
  -  **Store secrets backed by hardware security modules** \- The secrets and keys can be protected by software or FIPS 140-2 Level 2 validates HSMs.
 
-    :::image type="content" source="../media/use-azure-key-vault-a9cc1c77.png" alt-text="Using Azure Key Vault.":::
+    :::image type="content" source="../media/use-azure-key-vault-a9cc1c77.png" alt-text="Diagram of using Azure Key Vault.":::
 
 
 ## Why use Azure Key Vault?
@@ -35,7 +34,7 @@ Access to a key vault requires proper authentication and authorization before a 
 
 Authentication establishes the identity of the caller, while authorization determines the operations that they can do.
 
-Authentication is done via Microsoft Entra ID. Authorization may be done via role-based access control (RBAC) or Key Vault access policy.
+Authentication is done via Azure Active Directory. Authorization may be done via role-based access control (RBAC) or Key Vault access policy.
 
 RBAC is used when dealing with the management of the vaults, and a key vault access policy is used when attempting to access data stored in a vault.
 
