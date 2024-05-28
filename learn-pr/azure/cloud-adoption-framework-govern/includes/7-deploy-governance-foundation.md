@@ -33,8 +33,8 @@ To accommodate long-term governance needs, apply a hierarchical governance model
 Define a tagging and naming strategy to provide a structured framework for resource categorization, cost management, security, and compliance across the cloud environment. Tag resources to set up your environment so that you can take advantage of automated tools. Consider the following suggested tags for workloads:
 
 - Workload or application
-- Data sensitivity, see [examples](/azure/cloud-adoption-framework/govern/policy-compliance/data-classification)
-- Mission criticality, see [examples](/azure/cloud-adoption-framework/manage/considerations/criticality)
+- Data sensitivity, see [data sensitivity examples](/azure/cloud-adoption-framework/govern/policy-compliance/data-classification)
+- Mission criticality, see [mission criticality examples](/azure/cloud-adoption-framework/manage/considerations/criticality)
 - Owner
 - Department, such as cost center
 - Environment

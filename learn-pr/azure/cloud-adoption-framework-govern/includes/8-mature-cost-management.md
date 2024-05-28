@@ -1,23 +1,25 @@
-Cost management often is the first discipline that customers choose to mature in any governance engagement. This unit outlines the outcomes, tools, processes, and a reference implementation to mature your cost discipline.
+## Monitor cloud governance
 
-## Objective
+After your policies are in place and you align your organization's processes and procedures with the policies, you must monitor your cloud governance compliance. Use monitoring to determine areas that lack compliance and make changes to reduce noncompliance problems.
 
-The Cost Management discipline builds confidence in your ability to control costs and respond to the following triggers:
+Add examples of the Tailwind story
 
-- Address concerns about budgets
-- Define cost allocation across business units
-- Implement cost guardrails
-- Analyze workload costs
-- Apply operational best practices across your portfolio
-- Create accountability for cost best practices with each workload team
+Use monitoring tools
 
-## Cost management best practices
+Use compliance dashboards
+Determine compliance
 
-The objective of this discipline is to apply these cost-management best practices:
+Configure alerts
+define noncompliance
+route alerts
 
-- Align teams and accountability
-- Manage best practices centrally
-- Establish best practices for workload levels
+Develop a remediation plan
+
+
+
+
+
+
 
 ### Best practices by team and accountability
 
@@ -54,23 +56,15 @@ Before making architectural changes, consult the technical lead for the workload
 - **Autoscale**: Enable autoscale on all app services for a burstable number of smaller VMs. Enabling autoscale has the same idempotent requirement, which requires an understanding of the workload architecture. The workload and supporting assets must be approved for horizontal scaling and autoscaling by the cloud-adoption team before any operational changes are made.
 - **Implement serverless technologies**: VM workloads often are migrated as-is to avoid downtime. Often, VMs host tasks that are intermittent, tasks that take a short period to run, or tasks that run for many hours. Examples are VMs that run scheduled tasks, like Windows task scheduler or PowerShell scripts. When these tasks aren't running, you're still paying for the VMs and disk storage. After migration, consider rearchitecting layers of the workload as serverless technologies like Azure Functions or Azure Batch jobs.
 
-## Cost management process
-
-The best practices described here are actionable, but how and when do you apply them? The Cost Management discipline is a continuous effort that involves multiple processes and roles.
-
-:::image type="content" source="../media/cost-management-process.png" alt-text="Diagram of the Cost Management discipline as a continuous process." border="false":::
-
-*Figure 1: The Cost Management discipline as a continuous process.*
-
-Work with the central operations and workload teams to ensure proper ownership of each Cost Management discipline best practice that's shown in Figure 1 (optimization, visibility, accountability). Depending on how you manage workloads in your environment, some best practices might move between teams. Although some organizations place all the cost-management burden on central IT and neglect accountability for the workload team, other organizations place all the cost management burden on the workload team. Most organizations fall somewhere between these two extremes. At Tailwind Traders, central IT serves only a reporting and budget-management function.
-
-After you align roles, establish recurring processes to meet and hold each other accountable for this important recurring task.
-
 ## Microsoft Cost Management
 
 Microsoft Cost Management is your default tool in Azure to bring together all the data for managing your cost strategy.
 
 Microsoft Cost Management brings together resource organization, Azure Advisor alerts, and your governance foundation to meet your cost management needs.
+
+Monitor resource optimization. Use Azure Advisor to monitor Azure resources for reliability, security, operational excellence, performance, and cost. Set alerts for any new Advisor recommendations.
+
+Configure cost alerts
 
 ### Exercise: Create a budget
 
@@ -80,7 +74,7 @@ To get started with Microsoft Cost Management, create your first budget with the
 
 If you have existing deployments in your Azure environment, you likely have recommendations in the Azure portal that might affect your overall spending. Complete the [Optimize costs from recommendations](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations) tutorial to view recommendations from Azure Advisor and other recommendations that might reduce your costs. The recommendations identify opportunities to apply the operational best practices described in this unit.
 
-### Exercise: Limit cost risks by using Azure Policy
+### Exercise: Use Azure Policy to prevent cost risks
 
 To proactively limit unexpected costs, you can use Azure Policy to create guardrails that affect the ability of any role to overspend. The two most common cost risks come from misunderstood decisions:
 

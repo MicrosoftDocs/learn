@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-release-pipeline.explore-build-release-tasks
+title: Explore build and release tasks
+metadata:
+  title: Explore build and release tasks
+  description: "Explore build and release tasks"
+  ms.date: 05/28/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-explore-build-release-tasks.md)]
