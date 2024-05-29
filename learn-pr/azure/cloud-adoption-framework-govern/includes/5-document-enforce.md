@@ -1,6 +1,6 @@
 ## Incorporate cloud governance policies
 
-After you identify business risks, you must incorporate policies to mitigate them, regardless of the cloud platform that your organization uses. Healthy cloud governance strategy begins with sound corporate policy. 
+After you identify business risks, you must incorporate or update policies to mitigate them, regardless of the cloud platform that your organization uses. Healthy cloud governance strategy begins with sound corporate policy. 
 
 Corporate policies establish the requirements, standards, and goals that your IT staff and automated systems must align with. Individual policy statements are guidelines that you can use to address specific risks that you identify during your risk assessment process.
 
@@ -28,7 +28,7 @@ To effectively document your cloud governance policies:
 
 The cloud provides guardrails to help reduce human overhead due to recurring processes. You can use these guardrails to help align with the policies that you incorporate.
 
-Tailwind Traders incorporate new policies including:
+Tailwind Traders is incorporating new policies including:
 
 - Avoid overspending.
 
@@ -49,7 +49,7 @@ The following table outlines triggers and actions that can address the risks tha
 | Unauthorized access that compromises systems or data | Assets are configured without proper role assignments or elevated privileges. | Notify the IT security team and automatically resolve the deviation, when possible. |
 | Immature processes or lack of team skills, which creates inconsistent governance | Identified assets aren't included in required governance processes. | Notify the IT governance team and automatically resolve the deviation, when possible. |
 
-You can use Azure governance tools to automate each of these triggers and actions. Other cloud providers might require a more manual approach, but the defined policies are still applicable. Don't define policies that lock you into using a specific vendor so that you don't have to repeat this process in the future.
+You can use Azure governance tools to automate notifications for each of these triggers. Other cloud providers might require a more manual approach, but the defined policies are still applicable. Don't define policies that lock you into using a specific vendor so that you don't have to repeat this process in the future.
 
 After you establish your cloud policy statements and draft a design guide, you need to create a strategy to ensure that your cloud deployment remains compliant with your policy requirements. This strategy must encompass your cloud governance team's ongoing review and communication processes and establish criteria for when policy violations require action. It must also define the requirements for automated monitoring and compliance systems that detect violations and trigger remediation actions.
 

@@ -1,6 +1,4 @@
-Governance seeks to mitigate tangible risks through corporate policy. The policies establish the proper scope of corporate actions.
-
-Poor governance policies can create unnecessary constraints, and they might not provide protection. This unit describes how to create proper, actionable corporate policies.
+Governance seeks to mitigate tangible risks through corporate policy. The policies establish the proper scope of corporate actions. Poor governance policies can create unnecessary constraints, and they might not provide protection. This unit describes how to create proper, actionable corporate policies.
 
 ## Blocked by current policy
 
@@ -31,7 +29,7 @@ The remaining units in this module demonstrate the Govern methodology's approach
 
 ## Assess cloud risks
 
-To effectively assess risks in the cloud:
+Before you create new policies or update existing policies, you need to assess cloud risks to help define the new or updated policy. To effectively assess risks in the cloud:
 
 - **Identify risks** and catalog them. Use Azure tools to list cloud assets and discover cloud risks.
 

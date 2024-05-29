@@ -16,57 +16,57 @@ quiz:
   questions:
   - content: To address the risks and concerns the Tailwind Traders CIO raises in the customer narrative, which of the following steps would you start with?
     choices:
-    - content: Implement a governance foundation in Azure.
+    - content: Use Azure tools to automate notifications for triggers.
       isCorrect: false
       explanation: Incorrect. Governance tools can't address poorly defined corporate policy.
-    - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
+    - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
       isCorrect: true
-      explanation: Correct! Starting with sound corporate policy makes all downstream implementations smoother.
-    - content: Deploy cost management controls and processes.
+      explanation: Correct! Rank the risks to determine which ones are most critical to address first.
+    - content: Distribute your policies to inform everyone who needs to adhere to cloud governance.
       isCorrect: false
-      explanation: Incorrect. It's hard to address cost management without a clear set of policies and a governance foundation.
-    - content: Deploy security baseline controls and processes.
+      explanation: Incorrect. You must first perform a risk analysis to determine the most critical risks to address.
+    - content: Define the cloud governance policy, including a policy statement, risk ID, policy ID, and policy scope.
       isCorrect: false
-      explanation: Incorrect. It's hard to address a security baseline without a clear set of policies and a governance foundation.
+      explanation: Incorrect. You must first know the risks before you can define the policies that address them.
   - content: Which would you address second?
     choices:
-    - content: Implement a governance foundation in Azure.
+    - content: Use Azure tools to automate notifications for triggers.
+      isCorrect: false
+      explanation: Incorrect. Governance tools can't address poorly defined corporate policy.
+    - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
+      isCorrect: false
+      explanation: Incorrect. Risk analysis should be at the top of a list of things to address.
+    - content: Distribute your policies to inform everyone who needs to adhere to cloud governance.
+      isCorrect: false
+      explanation: Incorrect. You must first establish the policies before you can distribute them.
+    - content: Define the cloud governance policy, including a policy statement, risk ID, policy ID, and policy scope.
       isCorrect: true
-      explanation: Correct! A governance foundation implements tools and references to begin building cloud governance solutions.
-    - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
-      isCorrect: false
-      explanation: Incorrect. Corporate policy should be at the top of a list of things to address.
-    - content: Deploy cost management controls and processes.
-      isCorrect: false
-      explanation: Incorrect. It's hard to address cost management without a clear set of policies and a governance foundation.
-    - content: Deploy security baseline controls and processes.
-      isCorrect: false
-      explanation: Incorrect. It's hard to address a security baseline without a clear set of policies and a governance foundation.
-  - content: Which step delivers the most visible improvement based on existing corporate policy?
+      explanation: Correct! After you know the risks, you can define the policies that address them.
+  - content: Which step helps to align Tailwind Traders' cloud governance with the new policy and also removes manual processes to improve efficiency?
     choices:
-    - content: Implement a governance foundation in Azure.
-      isCorrect: false
-      explanation: Incorrect. Implementing governance through Azure is one of the coolest tech accomplishments, but it doesn't show much value beyond the hands-on team that creates it.
-    - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
-      isCorrect: false
-      explanation: Incorrect. Corporate policy is important, but few see the value of this exercise initially.
-    - content: Deploy cost management controls and processes.
-      isCorrect: false
-      explanation: Incorrect. Although important, cost management doesn't help with the security concerns.
-    - content: Deploy security baseline controls and processes.
+    - content: Use Azure tools to automate notifications for triggers.
       isCorrect: true
-      explanation: Correct! In the customer narrative, the visible pain points can be addressed through an automated security baseline to reduce security risks.
-  - content: Which step increases confidence for the CIO?
+      explanation: Correct! Governance tools help to enforce the policies that you put in place, and automation improves efficiency.
+    - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
+      isCorrect: false
+      explanation: Incorrect. Risks are determined before you can align the organization with a new policy.
+    - content: Distribute your policies to inform everyone who needs to adhere to cloud governance.
+      isCorrect: false
+      explanation: Incorrect. Distributing policies helps align cloud governance with the new policy, but it doesn't replace manual processes.
+    - content: Define the cloud governance policy, including a policy statement, risk ID, policy ID, and policy scope.
+      isCorrect: false
+      explanation: Incorrect. You must define the policy before you can align the organization's cloud governance with it.
+  - content: Which step includes a governance compliance checklist for the members of Tailwind Traders?
     choices:
-    - content: Implement a governance foundation in Azure.
+    - content: Use Azure tools to automate notifications for triggers.
       isCorrect: false
-      explanation: Incorrect. Implementing governance through Azure is one of the coolest tech accomplishments, but it doesn't show much value beyond the hands-on team that creates it.
-    - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
+      explanation: Incorrect. But you might include information about automation for triggers in a governance compliance checklist.
+    - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
       isCorrect: false
-      explanation: Incorrect. Corporate policy is important, but these aspects of governance don't address the concerns the CIO raises in the customer narrative.
-    - content: Deploy cost management controls and processes.
+      explanation: Incorrect. You need to know the risks before you create a governance compliance checklist.
+    - content: Distribute your policies to inform everyone who needs to adhere to cloud governance.
       isCorrect: true
-      explanation: Correct! In this narrative, the CIO expresses concerns with cost. Addressing those concerns by adding cost management controls builds confidence.
-    - content: Deploy security baseline controls and processes.
+      explanation: Correct! When you include a governance compliance checklist, everyone in your organization can understand their role in governance.
+    - content: Define the cloud governance policy, including a policy statement, risk ID, policy ID, and policy scope.
       isCorrect: false
-      explanation: Incorrect. The CIO added cost risks and concerns to the list, and the existing policy had nothing to do with cost. It's also a message that the CIO shares throughout the narrative.
+      explanation: Incorrect. But you might include information about the policy in a governance compliance checklist.

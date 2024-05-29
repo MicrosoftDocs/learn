@@ -1,5 +1,3 @@
-## Monitor cloud governance
-
 After your policies are in place and you align your organization's processes and procedures with the policies, you must monitor your cloud governance compliance. Use monitoring to determine areas that lack compliance and make changes to reduce noncompliance problems.
 
 **Use monitoring tools** to ensure that you have visibility into your cloud governance. You must be able to promptly detect and resolve noncompliance and monitor the health and performance of your cloud resources.

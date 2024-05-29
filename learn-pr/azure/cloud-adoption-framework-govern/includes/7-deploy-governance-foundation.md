@@ -1,5 +1,3 @@
-## Enforce cloud governance policies
-
 Cloud governance enforcement refers to the controls and procedures you use to align cloud use to the cloud governance policies. The cloud governance team must delegate enforcement responsibilities so that each team or individual can enforce cloud governance policies within their area of responsibility.
 
 To effectively enforce cloud governance policies:
