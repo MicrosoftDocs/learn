@@ -31,7 +31,6 @@ subjects:
 units:
 - learn.wwl.configure-azure-dns.verify-custom-domain-names
 - learn.wwl.configure-azure-dns.plan-for-private-dns-zones
-- learn.wwl.configure-azure-dns.knowledge-check
 - learn.wwl.configure-azure-dns.summary-resources
 badge:
   uid: learn.wwl.configure-azure-dns.badge
