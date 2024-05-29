@@ -39423,6 +39423,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-dns/9-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/host-domain-azure-dns/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-dns/7-plan-for-private-dns-zones.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/host-domain-azure-dns/",
+      "redirect_document_id": false
     }
   ]
 }
