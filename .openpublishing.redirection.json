@@ -39448,6 +39448,11 @@
       "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/6-configure-backups.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-backup/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/2-describe-azure-backup-benefits.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-backup/",
+      "redirect_document_id": false
     }
   ]
 }
