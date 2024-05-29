@@ -37,7 +37,6 @@ subjects:
 - identity-access
 units:
 - learn.wwl.configure-azure-active-directory.introduction
-- learn.wwl.configure-azure-active-directory.describe-benefits-features
 - learn.wwl.configure-azure-active-directory.select-editions
 - learn.wwl.configure-azure-active-directory.implement-self-service-password-reset
 - learn.wwl.configure-azure-active-directory.knowledge-check
