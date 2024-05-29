@@ -3,11 +3,13 @@ uid: learn.wwl.implement-disaster-recovery-for-sap-workloads-azure.explore-disas
 title: Explore disaster recovery of SAP workloads
 metadata:
   title: Explore disaster recovery of SAP workloads
-  description: "Explore disaster recovery of SAP workloads"
-  ms.date: 10/18/2023
+  description: "Explore disaster recovery of SAP workloads, covering Application servers, Central Services servers, and Database servers."
+  ms.date: 05/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/2-explore-disaster-recovery-sap-workloads.md)]

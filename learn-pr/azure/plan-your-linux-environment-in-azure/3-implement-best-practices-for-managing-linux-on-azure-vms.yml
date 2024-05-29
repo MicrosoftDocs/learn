@@ -5,8 +5,8 @@ metadata:
   title: Manage Azure Linux VMs
   description: Learn how to implement best practices for managing Linux on Azure virtual machines, such as boot diagnostics and serial console.
   ms.date: 10/16/2023
-  author: chasecrum
-  ms.author: chasecrum
+  author: fossygirl
+  ms.author: carols
   ms.topic: unit
   ms.custom: linux-related-content
 durationInMinutes: 5

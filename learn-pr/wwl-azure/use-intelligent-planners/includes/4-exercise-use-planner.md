@@ -27,7 +27,7 @@ For these exercises, a starter project is available for you to use. Use the foll
 
     You should see a "Program.cs" file.
 
-1. Open the **Program.cs** file and update the following variables with your Azure Open AI Services deployment name, API key, endpoint.
+1. Open the **Program.cs** file and update the following variables with your Azure OpenAI Services deployment name, API key, endpoint.
 
     ```csharp
     string yourDeploymentName = "";
@@ -181,7 +181,7 @@ Now you're ready to begin the exercise. Good luck!
 
     Try tweaking your prompt and location to see what other results you can generate.
 
-The Handlebars planner us useful when you have several steps required to accomplish a task. It can't run LLM prompts on its own, so you'll need to consider the different tasks a user might want to accomplish in your application.
+The Handlebars planner is useful when you have several steps required to accomplish a task. It can't run LLM prompts on its own, so you'll need to consider the different tasks a user might want to accomplish in your application.
 
 > [!IMPORTANT]
 > Be sure not to delete any of the code you wrote so far since it's needed for the next exercise.
