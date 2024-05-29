@@ -29,7 +29,6 @@ roles:
 products:
 - azure-bot-service
 units:
-- learn.wwl.create-bot-with-bot-framework-composer.introduction
 - learn.wwl.create-bot-with-bot-framework-composer.understand-dialogs
 - learn.wwl.create-bot-with-bot-framework-composer.user-experience
 - learn.wwl.create-bot-with-bot-framework-composer.knowledge-check
