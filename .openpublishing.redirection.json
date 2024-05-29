@@ -39283,6 +39283,56 @@
     "source_path": "learn-pr/wwl-azure/introduction-to-devops/7-summary.md",
     "redirect_url": "/training/modules/introduction-to-devops/15-summary",
     "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/create-conversational-ai-solutions/index.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/index.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/4-activity-handlers-and-dialogs.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/3-bot-framework.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/5-deploy-bot.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/6-exercise-create-a-bot.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/2-bot-design-principles.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/1-introduction.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/7-knowledge-check.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/8-summary.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
     }
   ]
 }
