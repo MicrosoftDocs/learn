@@ -39458,6 +39458,11 @@
       "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/3-implement-azure-backup-center.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-backup/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/7-interactive-lab-simulation.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-backup/",
+      "redirect_document_id": false
     }
   ]
 }
