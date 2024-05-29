@@ -4,7 +4,7 @@ title: Debug performance bottlenecks
 metadata:
   title: Debug performance bottlenecks
   description: Learn about preparing to run a large and tightly coupled HPC application, how to check if an HPC application is underperforming, and how to correct underperformance.
-  ms.date: 05/09/2023
+  ms.date: 05/29/2024
   author: garvct
   ms.author: cogarvey
   ms.topic: unit
