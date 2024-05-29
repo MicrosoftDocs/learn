@@ -3383,3 +3383,8 @@ achievements:
   title: Configure Microsoft Entra ID
   summary: Learn how to configure Microsoft Entra ID, including features like Microsoft Entra ID join and self-service password reset.
   iconUrl: /training/achievements/azure-active-directory.svg
+- uid: learn.wwl.configure-azure-dns.badge
+  type: badge
+  title: Configure Azure DNS
+  summary: Learn how to configure Azure DNS including custom domain names and record sets.
+  iconUrl: /training/achievements/azure-dns-configure.svg
