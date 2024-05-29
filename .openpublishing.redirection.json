@@ -39473,6 +39473,11 @@
       "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/8-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-backup/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/5-mars-backup-agent.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-backup/",
+      "redirect_document_id": false
     }
   ]
 }
