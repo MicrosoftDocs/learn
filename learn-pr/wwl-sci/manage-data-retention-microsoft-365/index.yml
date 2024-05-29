@@ -7,12 +7,12 @@ metadata:
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
-  ms.service: microsoft-purview
+  ms.service: purview
   ai-usage: ai-assisted
 title: Manage data retention and deletion in Microsoft 365 workloads
 summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Describe the retention features in Microsoft 365 workloads.
   - Configure retention settings in Microsoft Teams, Viva Engage, and SharePoint Online.
   - Recover content protected by retention settings.
