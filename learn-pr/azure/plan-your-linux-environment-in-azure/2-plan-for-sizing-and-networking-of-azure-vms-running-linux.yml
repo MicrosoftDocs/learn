@@ -5,8 +5,8 @@ metadata:
   title: Plan for sizing and networking
   description: Understand and plan for resource dependencies, sizing, networking, and remote access for Azure Linux virtual machines.
   ms.date: 10/16/2023
-  author: chasecrum
-  ms.author: chasecrum
+  author: fossygirl
+  ms.author: carols
   ms.topic: unit
   ms.custom: linux-related-content
 durationInMinutes: 10
