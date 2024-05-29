@@ -29,6 +29,5 @@ roles:
 products:
 - azure-bot-service
 units:
-- learn.wwl.create-bot-with-bot-framework-composer.user-experience
 badge:
   uid: learn.wwl.create-bot-with-bot-framework-composer.badge
