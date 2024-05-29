@@ -3,11 +3,13 @@ uid: learn.wwl.explore-azure-functions
 metadata:
   title: Explore Azure Functions
   description: "Learn how Azure Functions can be a great solution for data processing, systems integration, and building simple APIs and microservices."
-  ms.date: 02/06/2023
+  ms.date: 11/02/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure-functions
 title: Explore Azure Functions
 summary: Learn how Azure Functions can be a great solution for data processing, systems integration, and building simple APIs and microservices.
 abstract: |
@@ -28,7 +30,7 @@ products:
 - azure-functions
 - dotnet
 subjects:
-- serverless-compute
+- serverless-computing
 units:
 - learn.wwl.explore-azure-functions.introduction
 - learn.wwl.explore-azure-functions.discover

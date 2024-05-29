@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-operational-excellence.embrace-devops-culture
+title: Embrace DevOps culture
+metadata:
+  title: Embrace DevOps culture
+  description: Learn how embracing DevOps culture can improve your operational excellence.
+  ms.date: 12/07/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-embrace-devops-culture.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of the following is a benefit of operations and development teams using a common set of tools?'
+    choices:
+    - content: 'Using a common toolset reduces the need for monitoring and alerting.'
+      isCorrect: false
+      explanation: 'Incorrect. Using a common toolset doesn’t reduce the need for monitoring and alerting.'
+    - content: 'Using a common toolset can reduce collaboration and communication issues.'
+      isCorrect: true
+      explanation: 'Correct. Using a common toolset can make it easier to share knowledge and collaborate by reducing the number of communication and collaboration methods.'
+    - content: 'Using a common toolset reduces the need for automation.'
+      isCorrect: false
+      explanation: "Incorrect. Using a common toolset doesn’t reduce the need for automation. Automation is a key component of DevOps culture and is used to reduce the amount of manual work required to deploy and manage applications."
+    - content: 'Using a common toolset can reduce the amount of security controls required.'
+      isCorrect: false
+      explanation: "Incorrect. Using a common toolset doesn’t reduce the amount of security controls required. Security controls are a key component of DevOps culture and are used to ensure that applications are secure and compliant."
+  - content: 'Which of the following is an example of building a continuous learning and experimentation mindset?'
+    choices:
+    - content: 'Conducting blameless postmortems after incidents.' 
+      isCorrect: true
+      explanation: 'Correct. Blameless postmortems are a key component of DevOps culture and are used to learn from incidents and improve processes.'
+    - content: 'Separating document repositories for operations and development teams.'
+      isCorrect: false
+      explanation: 'Incorrect. Separating document repositories for operations and development teams can make it harder for teams to collaborate and share knowledge efficiently.'
+    - content: 'Making code reviews optional for all deployments.'
+      isCorrect: false
+      explanation: "Incorrect. Making code reviews optional for all deployments can lead to a lack of quality control and can make it harder to identify and fix issues."
+    - content: 'Letting new hires choose whether they would like to go through onboarding or not.'
+      isCorrect: false
+      explanation: "Incorrect. Letting new hires choose whether they would like to go through onboarding or not can lead to a lack of knowledge sharing and can make it harder for new hires to get up to speed."
+  - content: 'True or false: Contoso suffered from a lack of standardization in their toolset.'
+    choices:
+    - content: 'False'
+      isCorrect: false
+      explanation: 'Incorrect. Contoso suffered from a lack of standardization in their toolset. This affected productivity and quality.'
+    - content: 'True'
+      isCorrect: true
+      explanation: 'Correct. Contoso suffered from a lack of standardization in their toolset. This affected productivity and quality.'
+ 

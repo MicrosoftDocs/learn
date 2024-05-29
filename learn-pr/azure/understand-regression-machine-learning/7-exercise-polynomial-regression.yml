@@ -4,11 +4,10 @@ title: Exercise - Polynomial regression
 metadata:
   title: Exercise - Polynomial regression
   description: Exercise unit learning about polynomial regression in machine learning
-  ms.date: 05/25/2021
+  ms.date: 04/20/2023
   author: TomReidNZ
   ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 12
 sandbox: true
 notebook: notebooks/4-7-exercise-polynomial-regression.ipynb

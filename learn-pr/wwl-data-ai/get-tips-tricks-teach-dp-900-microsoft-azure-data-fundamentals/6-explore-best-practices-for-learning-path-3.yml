@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals.explore-best-practices-for-learning-path-3
+title: Explore the best practices for DP-900 Microsoft Azure Data Fundamentals Learning Path 3
+metadata:
+  title: Explore the best practices for DP-900 Microsoft Azure Data Fundamentals Learning Path 3
+  description: "Explore best practices for learning path 3"
+  ms.date: 12/14/2023
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-explore-best-practices-for-learning-path-3.md)]

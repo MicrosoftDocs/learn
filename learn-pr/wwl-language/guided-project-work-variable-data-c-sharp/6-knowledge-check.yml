@@ -3,12 +3,13 @@ uid: learn.wwl.guided-project-work-variable-data-c-sharp.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 04/25/2023
+  description: "Check what you learn in this module."
+  ms.date: 05/09/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -18,10 +19,10 @@ quiz:
     - content: "To split sentences into words stored in an array."
       isCorrect: false
       explanation: "Incorrect. `TryParse()` doesn't split sentences into words."
-    - content: "To safely test a cast operation"
+    - content: "To safely test a cast operation."
       isCorrect: true
       explanation: "Correct. `TryParse()` returns a `bool` if (true or false) indicating if a cast can be completed."
-    - content: "To find a substring in a larger string"
+    - content: "To find a substring in a larger string."
       isCorrect: false
       explanation: "Incorrect. `TryParse()` doesn't find a substring in a larger string."
   - content: "For the code `decimal.TryParse(numberString, out myConvert))` when the type of `numberString` is a String. Which best describes the value type for `myConvert` when the `TryParse()` is successful?"

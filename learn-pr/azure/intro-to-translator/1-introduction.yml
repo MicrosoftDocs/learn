@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Introduction to Azure Translator
-  ms.date: 03/14/2021
+  ms.date: 02/06/2024
   author: laujan
   ms.author: lajanuar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!INCLUDE[](includes/1-introduction.md)]

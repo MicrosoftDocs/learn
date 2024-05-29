@@ -1,39 +1,39 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.2-full-stack-monitoring
 metadata:
-  title: Introduction to full-stack monitoring in Azure
+  title: Full-stack monitoring in Azure
   description: Introduction to full-stack monitoring in Azure
-  ms.date: 03/22/2021
+  ms.date: 11/13/2023
   author: kayodeprinceMS
   ms.author: kaprince
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Introduction to full stack monitoring in Azure
+  ms.topic: unit
+title: Full-stack monitoring in Azure
 durationInMinutes: 5
 content: |
   [!include[](includes/2-full-stack-monitoring.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: Where should DevOps teams implement application monitoring to improve application health and performance?
+  - content: At what point should DevOps teams implement application monitoring for optimal application health and performance?
     choices:
     - content: During development only 
       isCorrect: false
-      explanation: Incorrect. Monitoring only during development limits problematic code from being deployed but doesn't provide visibility when the app is live in production.
+      explanation: Monitoring only during development limits problematic code from being deployed, but doesn't provide visibility when the app is live in production.
     - content: In production only
       isCorrect: false
-      explanation: Incorrect. Monitoring only during production provides visibility in to live issues but doesn't reveal problems and errors during development, QA, and test phases.
+      explanation: Monitoring only during production provides visibility into live issues, but doesn't reveal problems and errors during development, QA, and test phases.
     - content: During development and while in production
       isCorrect: true
-      explanation: Correct! Monitoring applications in development prevent errors and exceptions later in production. By monitoring applications in production, you'll promptly identify problems and risks that affect users.
-  - content: Which Azure capability offers operations teams a pre-defined monitoring experience across multiple resources?
+      explanation: Monitoring applications in development prevent errors and exceptions later in production. By monitoring applications in production, you identify problems and risks that affect users.
+  - content: What's the term for a monitoring strategy that takes a complete approach to monitoring, triaging, and diagnosing application, infrastructure, and security issues?
     choices:
-    - content: Azure Monitor Application Insights
+    - content: Full-stack monitoring
       isCorrect: true
-      explanation: Correct! Several Azure resources have dedicated Insights, which offer curated monitoring experiences with pre-defined visualizations of usage and performance across multiple subscriptions, resource groups and resources for the specific resource type.
-    - content: Key Vaults
+      explanation: Full-stack monitoring includes telemetry collection, tracking key performance indicators, isolating problems, and analyzing root causes.
+    - content: Insights
       isCorrect: false
-      explanation: Incorrect. Key vaults are used to safeguard cryptographic keys and other secrets used by cloud apps and services.
-    - content: Azure Monitor Logs
+      explanation: Azure Monitor insights offer predefined monitoring experiences for certain resource types, and are a useful component of a full-stack monitoring solution.
+    - content: Platform monitoring
       isCorrect: false
-      explanation: Incorrect. You can analyze and address issues such as exceptions, failures, and availability problems.
+      explanation: As part of a full-stack monitoring solution, you can use Azure's built-in capabilities to monitor your Azure platform resources.
+      

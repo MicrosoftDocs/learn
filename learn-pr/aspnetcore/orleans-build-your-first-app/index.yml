@@ -1,21 +1,22 @@
 ### YamlMime:Module
 uid: learn.orleans-build-first-app
 metadata:
-  title: Build your first Orleans app with ASP.NET Core 7.0
-  description: Learn how to build cloud native, distributed apps with Orleans.
-  ms.date: 11/15/2022
+  title: Build your first Orleans app with ASP.NET Core 8.0
+  description: Learn how to build cloud-native, distributed apps with Orleans.
+  ms.date: 04/05/2024
   author: alexwolfmsft
   ms.author: alexwolf
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
-title: Build your first Orleans app with ASP.NET Core 7.0
-summary: Learn how to build cloud native, distributed apps with Orleans.
+  ms.topic: module-build-your-first
+  ms.service: aspnet-core
+  manager: mcleans
+title: Build your first Orleans app with ASP.NET Core 8.0
+summary: Learn how to build cloud-native, distributed apps with Orleans.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Create and set up a project to use Orleans
-  - Work with core Orleans components such as grains and silo
-  - Integrate Orleans into web service endpoints
-  - Persist and manage state with Orleans
+  By the end of this module, you're able to:
+  - Use Orleans to create and set up a project.
+  - Work with core Orleans components such as grains and silo.
+  - Integrate Orleans into web service endpoints.
+  - Persist and manage state with Orleans.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
@@ -25,10 +26,9 @@ roles:
 products:
 - azure-app-service
 - dotnet-orleans
-subjects:
-  - development-tools
+- dotnet
 prerequisites: |
-  - A local installation of the [.NET SDK](https://dotnet.microsoft.com/download)
+  - A local installation of the [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
   - [Visual Studio Code](https://code.visualstudio.com) with the Azure development workload installed
 units:
 - learn.orleans-build-first-app.introduction

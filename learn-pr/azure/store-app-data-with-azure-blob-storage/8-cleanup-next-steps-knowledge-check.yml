@@ -4,11 +4,10 @@ title: Summary, clean up and knowledge check
 metadata:
   title: Clean up and knowledge check
   description: Clean up and knowledge check
-  ms.date: 03/23/2023
+  ms.date: 10/23/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/8-cleanup-next-steps-knowledge-check.md)]

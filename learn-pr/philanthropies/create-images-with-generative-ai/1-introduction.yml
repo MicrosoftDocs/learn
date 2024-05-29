@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.create-images-with-generative-ai.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is a part of the 'Create images with generative AI' module.
+  ms.date: 02/29/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

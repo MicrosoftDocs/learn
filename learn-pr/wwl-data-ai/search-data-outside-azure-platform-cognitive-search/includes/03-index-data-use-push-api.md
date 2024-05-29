@@ -1,10 +1,10 @@
-The REST API is the most flexible way to push data into an Azure Cognitive Search index. You can use any programming language or interactively with any app that can post JSON requests to an endpoint. 
+The REST API is the most flexible way to push data into an Azure AI Search index. You can use any programming language or interactively with any app that can post JSON requests to an endpoint.
 
 Here, you'll see how to use the REST API effectively and explore the available operations. Then you'll look at .NET Core code and see how to optimize adding large amounts of data through the API.
 
 ### Supported REST API operations
 
-There are two supported REST APIs provided by cognitive search. Search and management APIs. This module focuses on the search REST APIs that provide operations on five features of search:
+There are two supported REST APIs provided by AI Search. Search and management APIs. This module focuses on the search REST APIs that provide operations on five features of search:
 
 |Feature     |Operations |
 |------------|------------|
@@ -25,7 +25,7 @@ To find the endpoint, api-version, and api-key go to the Azure portal.
 
 :::image type="content" source="../media/endpoint-api-version.png" alt-text="A screenshot of search explorer and finding the endpoint and api version." lightbox="../media/endpoint-api-version.png":::
 
-In the portal, navigate to your search service, then select **Search explorer**. The REST API endpoint is in the **Request URL** field. The first part of the URL is the endpoint (for example https://cog-search-with-adf.search.windows.net), and the query string shows the `api-version` (for example api-version=2021-04-30-Preview).
+In the portal, navigate to your search service, then select **Search explorer**. The REST API endpoint is in the **Request URL** field. The first part of the URL is the endpoint (for example https://azsearchtest.search.windows.net), and the query string shows the `api-version` (for example api-version=2023-07-01-Preview).
 
 :::image type="content" source="../media/search-api-keys.png" alt-text="A screenshot of the keys section of a search service." lightbox="../media/search-api-keys.png":::
 
@@ -61,7 +61,7 @@ The JSON must be in this format:
 
 |Action  |Description  |
 |---------|---------|
-|**upload**   | Similar to an upsert, the document will be created or replaced.        |
+|**upload**   | Similar to an upsert in SQL, the document will be created or replaced.        |
 |**merge**     | Merge updates an existing document with the specified fields. Merge will fail if no document can be found.       |
 |**mergeOrUpload**     |  Merge updates an existing document with the specified fields, and uploads it if the document doesn't exist.        |
 |**delete**     | Deletes the whole document, you only need to specify the key_field_name.    |
@@ -70,7 +70,7 @@ The JSON must be in this format:
 If your request is successful, the API will return a 200 status code.
 
 > [!NOTE]
-> For a full list of all the response codes and error messages, see [Add, Update or Delete Documents (Azure Cognitive Search REST API)](/rest/api/searchservice/addupdate-or-delete-documents#response)
+> For a full list of all the response codes and error messages, see [Add, Update or Delete Documents (Azure AI Search REST API)](/rest/api/searchservice/addupdate-or-delete-documents#response)
 
 This example JSON uploads the customer record in the previous unit:
 
@@ -116,7 +116,7 @@ You can add as many documents in the value array as you want. However, for optim
 For best performance use the latest `Azure.Search.Document` client library, currently version 11. You can install the client library with NuGet:
 
 ```powershell
-dotnet add package Azure.Search.Documents --version 11.3.0
+dotnet add package Azure.Search.Documents --version 11.4.0
 ```
 
 How your index performs is based on six key factors:

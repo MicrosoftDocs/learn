@@ -4,11 +4,10 @@ title: What is GitHub Pages?
 metadata:
   title: What is GitHub Pages?
   description: Learn how GitHub Pages enables you to create and edit web sites hosted directly from your repo.
-  ms.date: 06/26/2020
+  ms.date: 12/06/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/2-what-is-github-pages.md)]

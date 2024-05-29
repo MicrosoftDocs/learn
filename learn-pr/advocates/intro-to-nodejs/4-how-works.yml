@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-nodejs.3-how-works
+title: How Node.js works
+metadata:
+  title: How Node.js works
+  description: Get a high-level overview of all the essential components of the Node.js JavaScript runtime.
+  ms.date: 01/05/2024
+  author: diberry
+  ms.author: diberry
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - team=cloud_advocates
+    - devx-track-js
+  ms.contributors: wachegha-11052021
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-how-works.md)]

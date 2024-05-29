@@ -1,10 +1,10 @@
-In the previous scenario, you decided to use an expression made up of several Azure Resource Manager (ARM) template functions to create a unique name for the Azure storage account. This flexibility will ensure that all your customers will be able to use the ARM template for their deployments. But you notice that adding this expression in several places will be a problem for maintaining the template. You decide to use a variable for the storage account name expression so you can define the expression in one place and reuse it throughout the template. 
+In the previous scenario, you decided to use an expression made up of several Azure Resource Manager (ARM) template functions to create a unique name for the Azure storage account. This flexibility ensures that all your customers are able to use the ARM template for their deployments. But you notice that adding this expression in several places is a problem for maintaining the template. You decide to use a variable for the storage account name expression so you can define the expression in one place and reuse it throughout the template. 
 
 ## What is an ARM template variable?
 
 An ARM template variable is a construct that holds a value for later use. Variables are best used when a value needs to be specified in several places in a template. Wherever the variable is used in the template, Resource Manager replaces it with the resolved value.
 
-For example, you have an expression that defines a value for a resource location. Several of the resources that you've defined in your template require a location. You can create a variable to hold the location expression and then use the variable wherever a location is required.
+For example, you have an expression that defines a value for a resource location. Several of the resources that you defined in your template require a location. You can create a variable to hold the location expression and then use the variable wherever a location is required.
 
 ### Advantages to using ARM template variables
 

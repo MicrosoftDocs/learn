@@ -4,7 +4,8 @@ Since the main job of a computer is to compute, the main "brain" (called a micro
 
 All computers need at least one CPU--even a smartwatch. Modern CPUs are built to think about billions of commands per second. This gives them a lot of power to do really hard things in less than a second.
 
-![Illustration of a CPU like brain.](../media/central-processing-unit-brain.png)
+:::image type="content" source="../media/central-processing-unit-brain-b189d811.png" alt-text="Illustration of a CPU like brain.":::
+
 
 ### How a Computer Thinks
 
@@ -22,7 +23,8 @@ While the CPU is the main brain in a modern computer, there's another rising sta
 
 GPUs were first designed to create all those wonderful things you see on the screen. Because it had to handle graphic processing, which is very complex, the GPU had to be very fast. So scientists came up with new chips to handle graphics. When things get fast, they also tend to cost more money. This means that graphics chips are used only for special jobs.
 
-![Illustration of scientists working on a hard problem like climate or genetics in a lab.](../media/scientific.jpeg)
+:::image type="content" source="../media/scientific-4f423a47.jpeg" alt-text="Illustration of scientists working on a hard problem like climate or genetics in a lab.":::
+
 
 Though the GPU had this one job to do at first, scientists started seeing other uses for the GPU. Because of its speed, some people started using the GPU for very complex math problems. Mining something like Bitcoin has been a primary use, but scientists are using GPUs to solve complex problems about the weather, for example.
 

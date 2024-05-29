@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-hdinsight-aks.5-knowledge-check  
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 11/24/2023 
+  author: sairamyeturi
+  ms.author: sairamyeturi 
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What is the purpose of cluster pools in HDInsight on AKS?
+    choices:
+    - content: To manage network resources for individual clusters
+      isCorrect: false
+      explanation: Incorrect. Cluster pools remove the overhead of network management and resource planning.
+    - content: To create individual compute workloads
+      isCorrect: false
+      explanation: Incorrect. Clusters are individual compute workloads, not cluster pools.
+    - content: To provide rapid and cost-effective access to all the cluster types created on-demand and at scale
+      isCorrect: true
+      explanation: Correct. Cluster pools allow enterprises to have the clusters in the same virtual network and build robust interoperability across multiple cluster types.
+  - content: What is the default file system for clusters in HDInsight on AKS?
+    choices:
+    - content: Azure Cosmos DB
+      isCorrect: false
+      explanation: Incorrect. Azure Cosmos DB is a globally distributed, multi-model database service.
+    - content: Azure Blob Storage
+      isCorrect: false
+      explanation: Incorrect. Azure Data Lake Storage Gen2 (ADLS Gen 2) is the default file system for the clusters.
+    - content: Azure Data Lake Storage Gen2 (ADLS Gen 2)
+      isCorrect: true
+      explanation: Correct. ADLS Gen 2 is the default file system for the clusters in HDInsight on AKS and can seamlessly integrate with Azure Storage.
+  - content: What is the role of managed identities (MSI) in HDInsight on AKS?
+    choices:
+    - content: Managed identities are used for authorization in HDInsight on AKS.
+      isCorrect: false
+      explanation: Incorrect. Managed identities are used for authentication in HDInsight on AKS.
+    - content: Managed identities are used to secure cluster access to files in Azure Data Lake Storage Gen2 and allow enterprise employees to sign into the cluster nodes by using their domain credentials.
+      isCorrect: true
+      explanation: Correct. Managed identities are used to secure cluster access to files in Azure Data Lake Storage Gen2 and allow enterprise employees to sign into the cluster nodes by using their domain credentials.
+    - content: Managed identities are used for encryption in HDInsight on AKS.
+      isCorrect: false
+      explanation: Incorrect. Managed identities are used for authentication in HDInsight on AKS.
+

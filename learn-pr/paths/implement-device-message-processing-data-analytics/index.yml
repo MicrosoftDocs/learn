@@ -1,36 +1,35 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-device-message-processing-data-analytics
 metadata:
-  title: Implement device message processing and data analytics
-  description: Implement device message processing and data analytics
-  ms.date: 12/21/2021
-  author: wwlpublish
-  ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Implement device message processing and data analytics
+  title: Implement message processing for data storage and analytics by using Azure IoT Hub
+  description: You'll learn about the message processing and data analytics capabilities that must be implemented within your IoT solution by using IoT Hub, and the storage options that are often configured as part of your solution.
+  ms.date: 03/15/2024
+  author: asergaz
+  ms.author: sergaz
+  ms.topic: learning-path
+title: Implement message processing for data storage and analytics by using Azure IoT Hub
 prerequisites: |
-  Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
-  - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
+  - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT Hub instance.
   - Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
 summary: |
-  You will learn about the message processing and data analytics capabilities that must be implemented within your Azure IoT solution, and the storage options that are often configured as part of your solution.
+  You'll learn about the message processing and data analytics capabilities that must be implemented within your Azure IoT solution by using Azure IoT Hub, and the storage options that are often configured as part of your solution.
 iconUrl: /training/achievements/message-device-processing.svg
 levels:
 - intermediate
 roles:
 - developer
+- administrator
+- solution-architect
 products:
 - azure
-- azure-blob-storage
-- azure-clis
+- azure-iot
 - azure-iot-hub
 - azure-iot-sdk
 - azure-storage
 - azure-stream-analytics
 subjects:
-- data-analytics
+- iot
 modules:
 - learn.wwl.examine-iot-hub-message-routing
 - learn.wwl.consider-message-processing-options-constraints

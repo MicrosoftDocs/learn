@@ -1,24 +1,19 @@
-Welcome aboard your spaceship!
 
-![Figure of the crew spaceship.](../media/spaceship-core.svg)
+In this module, you write your first quantum program by using the Azure Quantum Development Kit (QDK). The QDK enables you to write your quantum programs, then test them with a simulator, and finally run them on real quantum hardware.
 
-In this module, you'll write your first quantum program by using the Quantum Development Kit (QDK). The QDK enables you to write and test your quantum programs locally, with a simulator, on standard hardware. You can, when it's generally available, run the same quantum program on quantum hardware through the Azure Quantum service.
-
-The first thing you'll do before using your quantum computer is to sign in to the system. You want to generate a truly random password so no galactic hacker can jeopardize space fleet security.
-
-In this module, you'll write a quantum program to generate random numbers. A random number generator isn't only easy to write, but it will help you understand the basics of quantum computing.
+You write a quantum program to generate random numbers. A quantum random number generator is a perfect introduction to quantum computing because it illustrates quantum behavior and requires only a few lines of code. You will also review the basic structure of a Q# program.
 
 ## Learning objectives
 
-After completing this module, you'll be able to:
+After completing this module, you're able to:
 
-- Prepare your development environment for writing quantum programs in Q#.
-- Understand how Q# programs are structured.
-- Work with qubits and superposition to build a quantum random number generator.
-- Learn how Azure Quantum enables you to run your programs on quantum hardware.
+- Allocate qubits and apply quantum operations to them.
+- Create and run Q# programs in Visual Studio Code.
+- Explain how Q# programs are structured.
 
 ## Prerequisites
 
-- Install the latest version of [.NET SDK 6.0](https://dotnet.microsoft.com/download?azure-portal=true).
-- Install [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true).
-- Install the [Quantum Development Kit for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode) extension. 
+- A basic understanding of quantum computing concepts.
+- Basic knowledge of classical programming concepts.
+- The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code on the Web](https://vscode.dev/quantum).
+- The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension.

@@ -164,7 +164,7 @@ After the **TcpPing** is complete, stop the network trace on the destination. If
 
 - API Management (uses Basic ILB SKU)
 
-- Azure AD DS (uses Basic ILB SKU)
+- Microsoft Entra Domain Services (uses Basic ILB SKU)
 
 For more information, see the [requirements and constraints](/azure/virtual-network/virtual-network-peering-overview) of global peering.
 
@@ -201,4 +201,3 @@ Tracing route to myvmprivate.q04q2hv50taerlrtdyjz5nza1f.bx.internal.cloudapp.net
 Trace complete.
 
 ```
-

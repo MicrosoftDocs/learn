@@ -4,18 +4,17 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: In this unit, you'll consider a scenario and whether you should use Azure Cloud Shell to address the issues.
-  ms.date: 08/05/2022
+  description: In this unit, you consider a scenario and whether you should use Azure Cloud Shell to address the issues.
+  ms.date: 04/09/2024
   author: vrapolinario
   ms.author: viniap
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
 durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following methods can you use to access Azure Cloud Shell from a computer running Windows 11?"
+  - content: "Which of these methods can you use to access Azure Cloud Shell from a computer running Windows 11?"
     choices:
     - content: "Install Windows Subsystem for Linux and make an SSH connection to Azure."
       isCorrect: false
@@ -23,36 +22,36 @@ quiz:
     - content: "Make a Remote Desktop Protocol connection to Azure."
       isCorrect: false
       explanation: "Incorrect. You can't establish a Remote Desktop Connection to Azure Cloud Shell."
-    - content: "Use the Edge Browser to log into an Azure Subscription."
+    - content: "Use the Microsoft Edge Browser to log into an Azure Subscription."
       isCorrect: true
       explanation: "Correct. You open Azure Cloud Shell once logged into your Azure subscription with a web browser."
-  - content: "You need to perform routine checks on your Azure Kubernetes Cluster via kubectl. Which of the following is a way to achieve this?"
+  - content: "You need to perform routine checks on your Azure Kubernetes Cluster via kubectl. Which of the following solutions should you use?"
     choices:
-    - content: "Install kubectl and the Azure CLI on your machine, download the kube config, and establish a connection."
+    - content: "Install kubectl and the Azure CLI on your machine, download the kubectl config file, and establish a connection."
       isCorrect: false
       explanation: "Incorrect. This solution assumes you're using a terminal on your own machine."
-    - content: "Open Azure Cloud Shell, use `az aks get-credentials` to download the kube config file to the Cloud Shell session and establish a connection."
+    - content: "Open Azure Cloud Shell, and use `az aks get-credentials` to download the kubectl config file to the Cloud Shell session and establish a connection."
       isCorrect: true
-      explanation: "Correct. Kubectl is native to Azure Cloud Shell. You can simply retrieve the connection file using `az aks get-credential` and connect your cluster."
-    - content: "Create a new Azure VM, download kubectl, and establish a new connection."
+      explanation: "Correct. Kubectl is native to Azure Cloud Shell. You can retrieve the connection file using `az aks get-credential` and connect your cluster."
+    - content: "Create a new Azure virtual machine (VM), download kubectl, and establish a new connection."
       isCorrect: false
       explanation: "Incorrect. Azure Cloud Shell is available on any supported internet browser, so there's no need to install a new VM."
-  - content: "You want to store a script that you constantly use for operations on Azure resources. This script needs to be rapidly available when you open a new Azure Cloud Shell session. Which of the following is the best way to do this?"
+  - content: "You want to store a script that you constantly use for operations on Azure resources. This script needs to be rapidly available when you open a new Azure Cloud Shell session. Which of these procedures should you use?"
     choices:
     - content: "Upload the script to your CloudDrive on an Azure Cloud Shell session."
       isCorrect: true
       explanation: "Correct. Azure Cloud Shell provides access to CloudDrive natively from inside the Cloud Shell session."
     - content: "Create a new script and store it on an Azure Storage Blob."
       isCorrect: false
-      explanation: "Incorrect. Newly created Azure Storage Blobs won't be automatically visible from the Cloud Shell session."
+      explanation: "Incorrect. Newly created Azure Storage Blobs aren't automatically visible from the Cloud Shell session."
     - content: "Use Cloud Shell editor to create and edit the script you want to use."
       isCorrect: false
-      explanation: "Incorrect. If you have an existing script, you can simply upload it to CloudDrive, there's no need to recreate it from the Editor."
-  - content: "You have a script stored on the Cloud Shell storage. You constantly use this script for resource management, but you need to perform small changes to it. Which of the following is the best way to handle this?"
+      explanation: "Incorrect. If you have an existing script, you can upload it to CloudDrive, there's no need to recreate it from the Editor."
+  - content: "You have a script stored on the Cloud Shell storage. You constantly use this script for resource management, but you need to perform small changes to it. Which of these solutions is the best way to handle the situation?"
     choices:
     - content: "Download the script from the Azure Cloud Shell session, edit the script, and upload it back before using it."
       isCorrect: false
-      explanation: "Incorrect. You can reduce the overhead of download and upload by simply using the native Editor from the Cloud Shell session."
+      explanation: "Incorrect. You can reduce the overhead of download and upload by using the native Editor from the Cloud Shell session."
     - content: "Push the script to GitHub and run it from the Azure Cloud Shell session."
       isCorrect: false
       explanation: "Incorrect. GitHub is a great source control for DevOps scenarios, but a simple script can be stored on the CloudDrive for administrative purposes."

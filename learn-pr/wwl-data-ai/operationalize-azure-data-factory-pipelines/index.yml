@@ -3,11 +3,11 @@ uid: learn.wwl.operationalize-your-azure-data-factory-pipelines
 metadata:
   title: Operationalize your Azure Data Factory or Azure Synapse Pipeline
   description: "Operationalize your Azure Data Factory or Azure Synapse Pipeline"
-  ms.date: 05/16/2022
+  ms.date: 05/16/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: data-factory
 title: Operationalize your Azure Data Factory or Azure Synapse Pipeline
 summary: In this module, you will learn how you can publish your Azure Data Factory work between different environments.
 abstract: |

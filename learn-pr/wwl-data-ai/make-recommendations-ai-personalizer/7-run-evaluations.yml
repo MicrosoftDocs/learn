@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.make-recommendations-ai-personalizer.run-evaluations
+title: Run evaluations
+metadata:
+  title: Run evaluations
+  description: "Learn how to run offline evaluations and feature evaluations."
+  ms.date: 9/27/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-run-evaluations.md)]

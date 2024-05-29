@@ -6,10 +6,9 @@ metadata:
   title: Introduction
   description: "Create a web app, which can be used for voice calling with Azure Communication Services."
   ms.date: 04/20/2022
-  author: ProbablePrime
-  ms.author: rifox
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

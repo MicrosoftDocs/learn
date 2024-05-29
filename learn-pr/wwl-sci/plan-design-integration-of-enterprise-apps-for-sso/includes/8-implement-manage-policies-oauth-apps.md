@@ -2,21 +2,21 @@ In addition to the existing investigation of OAuth apps connected to your enviro
 
 ## Create a new OAuth app policy
 
-1. Launch **Microsoft Defender for Cloud Apps** at [https://www.cloudappsecurity.com](https://www.cloudappsecurity.com).
-1. Under **Investigate**, select **OAuth apps**.
-1. Filter the apps according to your needs.
+1.  Launch **Microsoft Defender for Cloud Apps** at [https://www.cloudappsecurity.com](https://www.cloudappsecurity.com).
+2.  Under **Investigate**, select **OAuth apps**.
+3.  Filter the apps according to your needs.
     
     
      -  For example, you can view all apps that request Permission to Modify calendars in your mailbox.
-1. Select the **New policy** from search button.
+4.  Select the **New policy** from search button.
     
     :::image type="content" source="../media/oauth-policy-dialog-dd3bedc7.png" alt-text="Screenshot of the Microsoft Defender for Cloud Apps site with the create OAuth Policy dialog open.":::
     
-1. You can use the **Community use** filter to get information on whether allowing permission to this app is common, uncommon, or rare.
+5.  You can use the **Community use** filter to get information on whether allowing permission to this app is common, uncommon, or rare.
     
     
      -  This filter can be helpful if you have an app that's rare and requests permission that has a high severity level or requests permission from many users.
-1. You can set the policy based on the group memberships of the users who authorized the apps.
+6.  You can set the policy based on the group memberships of the users who authorized the apps.
     
     
      -  For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the Administrators group.

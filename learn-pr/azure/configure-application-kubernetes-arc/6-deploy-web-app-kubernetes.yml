@@ -7,8 +7,9 @@ metadata:
   ms.date: 05/01/2021
   author: mijacobs
   ms.author: mijacobs
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-js
 durationInMinutes: 10
 content: |
   [!include[](includes/6-deploy-web-app-kubernetes.md)]

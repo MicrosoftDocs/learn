@@ -4,12 +4,13 @@ title: Create files and directories
 metadata:
   title: Create files and directories
   description: Create files and directories
-  ms.date: 06/18/2020
-  author: burkeholland
-  ms.author: buhollan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.date: 03/22/2023
+  author: diberry
+  ms.author: diberry
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-js
   ms.contributors: buhollan-09022020
 durationInMinutes: 4
 content: |

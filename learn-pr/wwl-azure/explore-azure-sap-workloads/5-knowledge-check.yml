@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/23/2023
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -19,13 +18,13 @@ quiz:
     choices:
     - content: "Hyper-V snapshot support"
       isCorrect: false
-      explanation: "Incorrect. Hyper-V snapshot support is not one of the benefits of running SAP applications on Azure."
-    - content: "Guaranteed 100% uptime"
+      explanation: "Incorrect. Hyper-V snapshot support isn't one of the benefits of running SAP applications on Azure."
+    - content: "Guaranteed 100 percent uptime"
       isCorrect: false
-      explanation: "Incorrect. Running SAP applications on Azure doesn't guarantee 100% uptime."
+      explanation: "Incorrect. Running SAP applications on Azure doesn't guarantee 100 percent uptime."
     - content: "Lower TCO"
       isCorrect: true
-      explanation: "Correct. Azure provides for a 60% cost reduction when compared to traditional, on-premises storage systems. By using SAP technologies on Azure, customers can realize 40-75% TCO cost savings in Dev and Test environments."
+      explanation: "Correct. Azure provides for a 60 percent cost reduction when compared to traditional, on-premises storage systems. By using SAP technologies on Azure, customers can realize 40-75 percent TCO cost savings in Dev and Test environments."
   - content: "Which Microsoft technology is used to build advanced pipelines to automate data movement and transformation in SAP on Azure environments?"
     choices:
     - content: "Azure Data Lake"

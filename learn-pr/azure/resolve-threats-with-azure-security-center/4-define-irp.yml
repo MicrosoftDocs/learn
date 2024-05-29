@@ -4,11 +4,10 @@ title: Define a security incident response plan
 metadata:
   title: Define a security incident response plan
   description: Define a security incident response plan
-  ms.date: 09/30/2019
+  ms.date: 12/19/2022
   author: elazark
-  ms.author: memildin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: elkrieger
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/4-define-irp.md)]

@@ -4,7 +4,7 @@ Communication is of ever-growing importance within our modern world. Keeping con
 
 ## Example scenario
 
-Let's start with an example scenario that'll help you understand the potential of Azure Communication Services. Imagine that you work on the engineering/product team of a household appliance producer (Contoso Appliances) that offers many appliances for the household such as refrigerators, washers, and dryers. As a company, you've been struggling with contacting and communicating with your customers when it comes to support, sales, and maintenance.
+Let's start with an example scenario that can help you understand the potential of Azure Communication Services. Imagine that you work on the engineering/product team of a household appliance producer (Contoso Appliances) that offers many appliances for the household such as refrigerators, washers, and dryers. As a company, you've been struggling with contacting and communicating with your customers when it comes to support, sales, and maintenance.
 
 This situation has led to several problems in the business, such as:
 
@@ -16,12 +16,12 @@ This situation has led to several problems in the business, such as:
 
  You and your team have been tasked to fix this issue. The team has come up with some ideas and features, such as:
 
-- Live Chat on the website
+- Live chat on the website
 - Video support and maintenance calls
 - Streamlined maintenance booking and appointments
 - SMS reminders of maintenance & installation appointments
 
-However, the team is unsure how to proceed. Do they use open source WebRTC components and build communication capabilities using low-level infrastructure? How do they get phone numbers? As software developers, getting phone numbers for programmatic SMS access is not trivial. Budgets are tight, as is time. Your company wants this problem to be solved as quickly as possible.
+However, the team is unsure how to proceed. Do they use open source WebRTC components and build communication capabilities using low-level infrastructure? How do they get phone numbers? As software developers, getting phone numbers for programmatic SMS access isn't trivial. Budgets are tight, as is time. Your company wants this problem to be solved as quickly as possible.
 
 This scenario is exactly what Azure Communication Services can help with.
 
@@ -35,4 +35,4 @@ In this module, you'll:
 
 ## What's the main goal?
 
-By the end of this session, you'll be able to evaluate Azure Communication Services for its suitability to make sure it is the right choice for your business.
+By the end of this session, you'll be able to evaluate Azure Communication Services for its suitability to make sure it's the right choice for your business.

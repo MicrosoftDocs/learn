@@ -4,11 +4,10 @@ title: Achieve compliance obligations in the public sector
 metadata:
   title: Achieve compliance obligations in the public sector
   description: Introduction to how Microsoft Azure helps government agencies comply with data regulations.
-  ms.date: 02/23/2021
-  author: Adriamen
-  ms.author: micrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 02/15/2023
+  author: TerryLanfear
+  ms.author: terrylan
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/3-transparency-public-sector.md)] 

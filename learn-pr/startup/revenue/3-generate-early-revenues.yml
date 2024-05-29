@@ -4,11 +4,10 @@ title: Generate early revenues
 metadata:
   title: Generate early revenues
   description: Find out how to start generating revenue with your startup. Learn about ideal first customers and early adopters. See how to find and convert customers.
-  ms.date: 02/11/2022
+  ms.date: 12/29/2022
   author: ryanmesches
   ms.author: ryanmesches
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-generate-early-revenues.md)]

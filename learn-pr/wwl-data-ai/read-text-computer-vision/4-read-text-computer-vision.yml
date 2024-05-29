@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.read-text-computer-vision.exercise
+title: Exercise - Read text in Vision Studio
+metadata:
+  title: Exercise - Read text in Vision Studio
+  description: "Exercise - Read text in Vision Studio"
+  ms.date: 03/05/2024
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-read-text-computer-vision.md)]

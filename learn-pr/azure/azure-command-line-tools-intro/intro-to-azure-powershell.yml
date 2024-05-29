@@ -4,11 +4,12 @@ metadata:
   title: Introduction to Azure PowerShell
   description: Overview of using Azure PowerShell to manage and provision Azure resources
   ms.published: 02/27/2023
-  ms.date: 02/27/2023
+  ms.date: 04/03/2024
   author: mikefrobbins
   ms.author: mirobb
-  ms.topic: module-choose-best-product
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurepowershell
 title: Introduction to Azure PowerShell
 durationInMinutes: 3
 content: |

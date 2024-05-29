@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This article references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
+
 As Contoso migrates its workloads, you must determine the different VM generation versions that exist in your organization and what Hyper-V functionality you want to utilize. Your organization might need to run different VM generation versions to use specific features, so it's important to understand and identify the existing generation versions and future required functionality so you can determine requirements for your VM deployments.
 
 When you create a new VM, one of the options presented is whether to create a Generation 1 or Generation 2 VM.

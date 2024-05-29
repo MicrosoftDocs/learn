@@ -4,10 +4,11 @@ metadata:
   title: Introduction to Windows 10 development
   description: Get acquainted with Windows 10 development, install essential tools, and find out about the Windows Insider Program.
   ms.date: 03/03/2023
-  author: JohnKennedy
-  ms.author: jken
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  author: alvinashcraft
+  ms.author: aashcraft
+  ms.topic: module
+  ms.service: windows-10
+  manager: jken
 title: Introduction to Windows 10 development
 summary: Learn the basics of Windows 10 development, and get your computer ready for writing Windows apps.
 abstract:  |
@@ -25,7 +26,7 @@ products:
 - windows
 subjects:
 - devops
-- development-tools
+- frontend-development
 units:
 - learn-windows.introduction-w10-dev.1-introduction-to-windows-10-development
 - learn-windows.introduction-w10-dev.2-installing-tools-automatically

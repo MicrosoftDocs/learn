@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/03/2023
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/12-knowledge-check.md)]
@@ -24,10 +23,10 @@ quiz:
       explanation: "Incorrect. Although managing multifactor authentication is a component of Conditional Access, it encompasses all of the policies used to analyze signals and enforce organizational access policies."
     - content: "It analyzes signals such as user, device, and location to enforce organizational access policies."
       isCorrect: true
-      explanation: "Correct. Conditional Access is the tool used by Azure Active Directory to bring signals together, make decisions, and enforce organizational policies. Conditional Access is at the heart of the new identity-driven control plane."
+      explanation: "Correct. Conditional Access is the tool used by Microsoft Entra ID to bring signals together, make decisions, and enforce organizational policies. Conditional Access is at the heart of the new identity-driven control plane."
     - content: "It monitors and logs all access attempts."
       isCorrect: false
-      explanation: "Incorrect. Conditional Access is the tool used by Azure Active Directory to bring signals together, make decisions, and enforce organizational policies. Conditional Access is at the heart of the new identity-driven control plane."
+      explanation: "Incorrect. Conditional Access is the tool used by Microsoft Entra ID to bring signals together, make decisions, and enforce organizational policies. Conditional Access is at the heart of the new identity-driven control plane."
   - content: "When would you use Mobile Application Management (MAM) without enrollment to protect sensitive data in a work or school-related app?"
     choices:
     - content: "Bring-your-own-device (BYOD) scenarios"

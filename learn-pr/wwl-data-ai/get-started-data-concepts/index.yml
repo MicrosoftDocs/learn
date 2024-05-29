@@ -2,12 +2,12 @@
 uid: learn.wwl.get-started-data-concepts
 metadata:
   title: Get started with data concepts
-  description: "Businesses rely on data. Understanding data is key to many business operations. This module covers what data is, when to sort and filter data and when to calculate derived values from data."
+  description: Businesses rely on data. Understanding data is key to many business operations. This module covers what data is, when to sort and filter data and when to calculate derived values from data.
   ms.date: 03/01/2023
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: excel
 title: Get started with data concepts
 summary: Businesses rely on data. Understanding data is key to many business operations. This module covers what data is, when to sort and filter data, and when to calculate derived values from data.
 abstract: |
@@ -32,7 +32,7 @@ products:
 - azure-sqlserver-vm
 - sql-server
 subjects:
-- database
+- databases
 units:
 - learn.wwl.get-started-data-concepts.introduction
 - learn.wwl.get-started-data-concepts.get-started-data

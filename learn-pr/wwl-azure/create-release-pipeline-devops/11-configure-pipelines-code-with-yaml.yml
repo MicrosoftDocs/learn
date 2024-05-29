@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-release-pipeline.configure-pipelines-code-with-yaml
+title: Configure Pipelines as Code with YAML
+metadata:
+  title: Configure Pipelines as Code with YAML
+  description: "Configure Pipelines as Code with YAML"
+  ms.date: 05/28/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 60
+content: |
+  [!include[](includes/11-configure-pipelines-code-with-yaml.md)]

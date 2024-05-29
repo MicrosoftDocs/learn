@@ -1,7 +1,3 @@
-
-
-
-
 In App Service, app settings are variables passed as environment variables to the application code. For Linux apps and custom containers, App Service passes app settings to the container using the `--env` flag to set the environment variable in the container.
 
 Application settings can be accessed by navigating to your app's management page and selecting **Configuration > Application Settings**.

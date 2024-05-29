@@ -4,7 +4,7 @@ The final step is to test the application gateway and verify that it implements 
 
 ## Test load balancing for the vehicle registration web app
 
-1. In the Cloud Shell, run the following command to generate the root URL your Application Gateway.
+1. In the Cloud Shell, run the following command to generate the root URL your Application Gateway:
 
     ```azurecli
     echo http://$(az network public-ip show \
@@ -54,13 +54,13 @@ Now let's test out the path-based routing. Recall that URLs to the root of the s
 
 You just confirmed that routing to the root page works, as you were able to pull up the vehicle registration page. Let's try the other routes to confirm they work.
 
-1. Now click **Register a Vehicle** in the application gateway page. This should bring up the Vehicle Registration page for the vehicle registration site. With **/VehicleRegistration/** in the URL, this routes to the **vmPool** where our vehicle registration site is running.
+1. Now select **Register a Vehicle** in the application gateway page. This should bring up the Vehicle Registration page for the vehicle registration site. With **/VehicleRegistration/** in the URL, this routes to the **vmPool** where our vehicle registration site is running.
 
-    :::image type="content" source="../media/6-vehicle-registration.png" alt-text="Screenshot showing a vehicle registration web app." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/6-vehicle-registration.png" alt-text="Screenshot showing a vehicle-registration web app." loc-scope="other"::: <!-- no-loc -->
 
-1. Now visit `http://<vehicleAppGateway>/LicenseRenewal/Create`. This should take you to the license renewal page running on App Service. With **/LicenseRenewal/** in the URL, this routes to the **appServicePool** where our license renewal site is running.
+1. Now visit `http://<vehicleAppGateway>/LicenseRenewal/Create`. This should take you to the license-renewal page running on App Service. With **/LicenseRenewal/** in the URL, this routes to the **appServicePool** where our license renewal site is running.
 
-    :::image type="content" source="../media/6-license-renewal.png" alt-text="Screenshot showing an image of the license renewal web app." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/6-license-renewal.png" alt-text="Screenshot showing an image of the license-renewal web app." loc-scope="other"::: <!-- no-loc -->
 
 With this configuration, we can direct all users for both sites through our Application Gateway, giving them one root URL to remember. We can add additional sites as we expand our web presence.
 

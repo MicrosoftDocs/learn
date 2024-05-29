@@ -1,10 +1,10 @@
-When an administrator adds a custom domain name to an Azure Active Directory instance, the custom domain name is initially in an _unverified_ state. Azure AD won't allow any directory resources to use a custom domain name that's unverified.
+When an administrator adds a custom domain name to a Microsoft Entra instance, the custom domain name is initially in an _unverified_ state. Microsoft Entra ID won't allow any directory resources to use a custom domain name that's unverified.
 
-Before you can use a custom domain name for your Azure AD instance, your custom domain name must be _verified_.
+Before you can use a custom domain name for your Microsoft Entra instance, your custom domain name must be _verified_.
 
 ## How to verify your custom domain name
 
-After you add a custom domain name for your Azure AD instance in the Azure portal, you must verify ownership of your custom domain name.
+After you add a custom domain name for your Microsoft Entra instance in the Azure portal, you must verify ownership of your custom domain name.
 
 You initiate the verification process by adding a **DNS record** for your custom domain name. The DNS record type can be `MX` or `TXT`, as shown in the following image:
 
@@ -17,4 +17,4 @@ After you add a DNS record to your custom domain name, Azure queries the DNS dom
 > [!Note]
 > The Azure verification process can take several minutes or hours.
 
-After Azure verifies the presence of the DNS record for your custom domain name, Azure adds your new custom domain name to your subscription for the Azure AD instance.
+After Azure verifies the presence of the DNS record for your custom domain name, Azure adds your new custom domain name to your subscription for the Microsoft Entra instance.

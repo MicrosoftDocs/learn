@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.investigate-container-for-use-with-ai-services
+metadata:
+  title: Deploy Azure AI services in containers
+  description: "Learn to deploy Azure AI services in containers"
+  ms.date: 09/11/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: module-standard-task-based
+  ms.service: azure-ai-services	
+title: Deploy Azure AI services in containers
+summary: Learn about Container support in Azure AI services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
+abstract: |
+  After completing this module, learners will be able to:
+  - Create containers for reuse
+  - Deploy to a container and secure a container
+  - Consume Azure AI services from a container
+prerequisites: |
+  - Learners should have an Azure account and be familiar with navigating the Azure portal.
+  - Learners should also have experience with Docker and containers.
+iconUrl: /training/achievements/investigate-container-for-use-with-cognitive-services.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+- devops-engineer
+- solution-architect
+- student
+products:
+- ai-services
+- azure-container-instances
+subjects:
+- containers
+- artificial-intelligence
+units:
+- learn.wwl.investigate-container-for-use-with-ai-services.introduction-to-containerization-of
+- learn.wwl.investigate-container-for-use-with-ai-services.understand-containers
+- learn.wwl.investigate-container-for-use-with-ai-services.use-ai-services-containers
+- learn.wwl.investigate-container-for-use-with-ai-services.exercise-use-container
+- learn.wwl.investigate-container-for-use-with-ai-services.knowledge-check
+- learn.wwl.investigate-container-for-use-with-ai-services.summary
+badge:
+  uid: learn.wwl.investigate-container-for-use-with-ai-services.badge

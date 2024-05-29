@@ -5,10 +5,10 @@ metadata:
   unitType: introduction  
   title: Introduction
   description: Learn how to upgrade your Azure Kubernetes Service clusters to the latest supported version. 
-  ms.date: 07/15/2021
+  ms.date: 10/05/2023
   ms.author: mixie 
   ms.product: learning-azure
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   author: microsoftmichelle
 durationInMinutes: 2
 content: |

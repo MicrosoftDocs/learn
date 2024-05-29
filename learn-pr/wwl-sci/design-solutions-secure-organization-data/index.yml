@@ -6,10 +6,12 @@ metadata:
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: module
+  ms.service: security
+  ai-usage: ai-assisted
 title: Design solutions for securing an organization's data
-summary: "You learn about designing solutions that secure an organization's data using capabilities like Microsoft Purview, Defender for SQL, Defender for Storage."
+summary: |
+  You learn about designing solutions that secure an organization's data using capabilities like Microsoft Purview, Defender for SQL, Defender for Storage.
 abstract: |
   By the end of this module, you are able to:
   - Design a solution for data discovery and classification using Microsoft Purview
@@ -21,7 +23,7 @@ abstract: |
 prerequisites: |
   - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   - Experience with hybrid and cloud implementations.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/design-solutions-for-securing-an-organizations-data.svg
 levels:
 - advanced
 roles:

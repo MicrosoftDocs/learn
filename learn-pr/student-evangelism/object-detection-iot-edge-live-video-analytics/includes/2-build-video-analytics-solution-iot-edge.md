@@ -42,7 +42,7 @@ You'll use the following components in the design of the solution:
 
 - **Azure IoT Edge virtual machine:** The runtime installs the Azure IoT Edge virtual machine. In this module, you'll open network port 8181 to enable communication between your virtual machine and web application.
 
-- **Live Video Analytics on IoT Edge:** An [IoT Edge module](https://azure.microsoft.com/blog/introducing-live-video-analytics-on-iot-edge-now-in-preview/) that has the functionality to be combined with other Azure edge modules such as Stream Analytics on IoT Edge, Cognitive Services on IoT Edge and Azure services in the cloud such as Media Services, Event Hub, Cognitive Services.
+- **Live Video Analytics on IoT Edge:** An [IoT Edge module](https://azure.microsoft.com/blog/introducing-live-video-analytics-on-iot-edge-now-in-preview/) that has the functionality to be combined with other Azure edge modules such as Stream Analytics on IoT Edge, Azure AI services on IoT Edge and Azure services in the cloud such as Media Services and Event Hub.
 
 - **Custom Vision Service:** Custom Vision lets you build, deploy, and improve your image classifiers. An image classifier is an AI service that applies labels (representing classes) to images based on their visual characteristics.
 

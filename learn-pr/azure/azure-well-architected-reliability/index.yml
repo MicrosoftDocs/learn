@@ -2,22 +2,25 @@
 uid: learn.azure-well-architected-reliability
 metadata:
   title: Microsoft Azure Well-Architected Framework - Reliability
-  description: Learn how to recover from infrastructure and service failure, loss of data, and disasters by incorporating reliability into your architecture.
-  ms.date: 10/13/2022
+  description: Apply reliability guidance in your architecture to improve your workload's availability and resilience.
+  ms.date: 12/18/2023
   author: martinekuan
   ms.author: martinek
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: waf
+  ms.subservice: waf-pillar-reliability
 title: Microsoft Azure Well-Architected Framework - Reliability
-summary: Learn how to handle infrastructure and service failure, recover from the loss of data, and recover from a disaster by incorporating reliability into your architecture.
+summary: Apply reliability guidance in your architecture to improve your workload's availability and resilience.
 abstract: |
-  By the end of this module, you will be able to:
-    - Design a highly available application by leveraging Azure services
-    - Incorporate Azure disaster recovery capabilities into your architecture
-    - Protect your application from data loss or corruption
+  By the end of this module, you'll understand the five principles of the Reliability pillar and learn three approaches for each of the following:
+  - Determine the reliability requirements from the business and apply those requirements to your workload design.
+  - Design your workload to be fault-tolerant and able to degrade gracefully.
+  - Design your workload to recover from malfunctions ranging from component-level faults to disasters.
+  - Build observability and testing into your workload design and operations practices.
+  - Design your workload with a focus on simplicity to minimize risks.
 prerequisites: |
-  - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking
-  - Experience building or operating technology systems to solve business problems
+  - Experience with core infrastructure technologies such as data storage, computing, and networking.
+  - Experience building or operating technology systems to solve business problems.
 iconUrl: /training/achievements/azure-well-architected-reliability.svg
 levels:
 - intermediate
@@ -39,9 +42,11 @@ subjects:
 - architecture
 units:
 - learn.azure-well-architected-reliability.1-introduction
-- learn.azure-well-architected-reliability.2-high-availability
-- learn.azure-well-architected-reliability.3-disaster-recovery
-- learn.azure-well-architected-reliability.4-backup-restore
-- learn.azure-well-architected-reliability.5-summary
+- learn.azure-well-architected-reliability.design-for-business-requirements
+- learn.azure-well-architected-reliability.design-for-resilience
+- learn.azure-well-architected-reliability.design-for-recovery
+- learn.azure-well-architected-reliability.design-for-operations
+- learn.azure-well-architected-reliability.keep-it-simple
+- learn.azure-well-architected-reliability.summary
 badge:
   uid: learn.azure-well-architected-reliability.badge

@@ -4,6 +4,8 @@ You have an on-premises datacenter that you plan to keep, but you want to use Az
 
 **Azure virtual networks** enable Azure resources, such as virtual machines, web apps, and databases, to communicate with: each other, users on the internet, and on-premises client computers. You can think of an Azure network as a set of resources that links other Azure resources.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6b5b138e-8406-406e-8b34-40bdadf9fc6d]
+
 Azure virtual networks provide key networking capabilities:
 
 - Isolation and segmentation
@@ -13,10 +15,7 @@ Azure virtual networks provide key networking capabilities:
 - Route network traffic
 - Filter network traffic
 - Connect virtual networks
- 
-#### Network configurations for virtual machines
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEve]
 
 ### Isolation and segmentation
 
@@ -91,7 +90,7 @@ You can create and configure Azure virtual networks from the Azure portal, Azure
 
 When you create an Azure virtual network, you configure many basic settings. You can also configure advanced settings, such as multiple subnets, distributed denial of service (DDoS) protection, and service endpoints.
 
-![Screenshot of the Azure portal showing an example of the Create virtual network pane fields.](../media/2-create-virtual-network.PNG)
+:::image type="content" source="../media/2-create-virtual-network.PNG" alt-text="Screenshot of the Azure portal showing an example of the Create virtual network pane fields.":::
 
 You'll configure the following settings for a basic virtual network:
 
@@ -153,13 +152,13 @@ After creating a virtual network, you can then define further settings. These se
 
 You can also amend the service endpoints.
 
-![Screenshot of the Azure portal showing an example pane for editing virtual network settings.](../media/2-virtual-network-additional-settings.PNG)
+:::image type="content" source="../media/2-virtual-network-additional-settings.PNG" alt-text="Screenshot of the Azure portal showing an example pane for editing virtual network settings.":::
 
 ### Configure virtual networks
 
 When you've created a virtual network, you can change any further settings from the **Virtual Networks** pane in the Azure portal. Alternatively, you can use PowerShell commands or commands in Cloud Shell to make changes.
 
-![Screenshot of the Azure portal showing an example pane for configuring a virtual network.](../media/2-configure-virtual-network.PNG)
+:::image type="content" source="../media/2-configure-virtual-network.PNG" alt-text="Screenshot of the Azure portal showing an example pane for configuring a virtual network.":::
 
 You can then review and change settings in further subpanes. These settings include:
 

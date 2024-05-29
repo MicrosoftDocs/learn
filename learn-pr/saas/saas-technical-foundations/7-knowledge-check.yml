@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.saas-technical-foundations.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Learn from Microsoft about SaaS (Software-as-a-Service) architecture foundations, such as tenancy models, deployment SaaS models, monolithic and microservices architecture, and authentication in SaaS."
+  ms.date: 2/9/2024
+  author: kostinams
+  ms.author: irkostin
+  ms.topic: unit
+  ms.service: architecture-center
+durationInMinutes: 10
+
+content: |
+quiz:
+  questions:
+  - content: "Name disadvantages of a multitenant architecture?"
+    choices:
+    - content: "Infrastructure cost is lower."
+      isCorrect: false
+      explanation: "Because infrastructure is shared between multiple tenants, the cost of infrastructure is lower."
+    - content: "Faster time to market."
+      isCorrect: false
+      explanation: "Since there's no need to deploy separate infrastructure for each tenant, the time to market is faster."
+    - content: "Low level of isolation."
+      isCorrect: true
+      explanation: "A multitenant architecture provides low level of isolation between tenants, both in terms of data isolation, and compute isolation."
+  - content: "Typical core control plane responsibilities include:"
+    choices:
+    - content: "Authentication and authorization."
+      isCorrect: false
+      explanation: "Control plane isn't responsible for authentication and authorization."
+    - content: "Storing and managing tenant configurations."
+      isCorrect: true
+      explanation: "Core control plane is responsible for storing and managing tenant configurations, such as tenant settings, tenant preferences, tenant metadata, etc."
+    - content: "Control plane is responsible for performance management of SaaS application."
+      isCorrect: false
+      explanation: "Control plane isn't responsible for performance management of SaaS application."
+  - content: "Common benefit of microservices approach is:"
+    choices:
+    - content: "Data and schema isolation."
+      isCorrect: true
+      explanation: "Schema updates are simpler, affecting only one microservice. Monolithic apps face challenges due to shared data."
+    - content: "Easy troubleshooting and debugging."
+      isCorrect: false
+      explanation: "Services are decoupled, but debugging and troubleshooting are more complex due to distributed nature of microservices."
+    - content: "Data Consistency."
+      isCorrect: false
+      explanation: "Microservices approach assumes individual data stores per microservice, and individual data persistence leads to data integrity challenges. Embracing eventual consistency is key."
+  - content: "The on-behalf-of (OBO) flow is used in the following scenario:"
+    choices:
+    - content: "Avoiding user consent prompt during authorization."
+      isCorrect: false
+      explanation: "To avoid user consent prompt during authorization, the client application (App registration) should use Application permissions."
+    - content: "Restrict access to data and functionality protected by an API."
+      isCorrect: false
+      explanation: "Scopes are used to restrict access to data and functionality protected by an API."
+    - content: "A web API using an identity other than its own to call another web API."
+      isCorrect: true
+      explanation: " Referred to as delegation in OAuth, the intent is to pass a user's identity and permissions through the request chain."

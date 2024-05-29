@@ -1,7 +1,7 @@
 In this module, you learned:
 
 - How to identify unhealthy high-performance computing (HPC) VMs by running several specific VM health checks.
-- How a single unhealthy VM can cause a tightly coupled HPC application to fail or run more slowly than expected. 
+- How a single unhealthy VM can cause a tightly coupled HPC application to fail or run more slowly than expected.
 - How to prepare to run a tightly coupled HPC parallel application optimally.
 - How to troubleshoot HPC applications that run slowly.
 

@@ -1,4 +1,3 @@
-
 In this module, you learned how to:
 
 * Explain the benefits of using Microsoft Graph

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-design-object-oriented-structure.exercise-add-exception-ants-out-of-field
+title: Exercise - Add an 'out of field' exception
+metadata:
+  title: Exercise - Add an 'out of field' exception
+  description: "This unit describes adding exception handling when an ant goes out of field"
+  ms.date: 03/19/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/05-exercise-add-exception-ants-out-of-field.md)]

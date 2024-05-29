@@ -2,35 +2,49 @@
 uid: learn.wwl.guided-project-work-variable-data-c-sharp
 metadata:
   title: Guided project - Work with variable data in C#
-  description: "Guided project - Work with variable data in C#"
-  ms.date: 04/25/2023
+  description: "Complete a guided project to apply knowledge of variable data in C#."
+  ms.date: 05/09/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-guided-project
+  ms.custom:
+  - N/A
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
+  ms.devlang: csharp
+  ai-usage: ai-assisted
 title: Guided project - Work with variable data in C#
 summary: Demonstrate your ability to develop a console app that implements data formatting and using arrays to deliver a search feature.
 abstract: |
-  *   Apply iteration statements to gather data input
-  *   Use data processing
-  *   Format data output
-  *   Choose the correct data types and safely convert data types
-  *   Manipulate number, string and character arrays, as well as add, remove, and sort data
-  *   Modify and build complex strings from multiple data sources, and format data for display across regions
+  -   Apply iteration statements to gather data input.
+
+  -   Use data processing.
+
+  -   Format data output.
+
+  -   Choose the correct data types and safely convert data types.
+
+  -   Manipulate number, string and character arrays, as well as add, remove, and sort data.
+
+  -   Modify and build complex strings from multiple data sources, and format data for display across regions.
 prerequisites: |
-  - Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes
-  - Experience using C# code to evaluate conditional expressions and manage variable scope inside and outside of code blocks
-  - Experience using if-elseif-else and switch-case statements in C# to match a variable or expression against several possible outcomes
-  - Experience using foreach and for statements in C# to loop through a block of code and access elements of array variables
+  -   Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
+
+  -   Experience using C# code to evaluate conditional expressions and manage variable scope inside and outside of code blocks.
+
+  -   Experience using if-elseif-else and switch-case statements in C# to match a variable or expression against several possible outcomes.
+
+  -   Experience using foreach and for statements in C# to loop through a block of code and access elements of array variables.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
 - k-12-educator
 - student
 products:
-- dotnet-framework
+- dotnet
 - vs-code
 units:
 - learn.wwl.guided-project-work-variable-data-c-sharp.introduction

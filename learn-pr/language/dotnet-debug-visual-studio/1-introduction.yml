@@ -4,12 +4,13 @@ title: Introduction
 metadata:
   title: Introduction
   description: Learn how to efficiently debug your .NET app by using Visual Studio to fix your bugs quickly.
-  ms.date: 3/16/2022
+  ms.date: 11/29/2022
   author: alexwolfmsft
   ms.author: alexwolf
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

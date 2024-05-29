@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/03/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'AZ-305: Design business continuity solutions'
 prerequisites: |
   - Working experience with designing highly available architectures.
@@ -24,7 +23,7 @@ roles:
 products:
 - azure
 subjects:
-- business-continuity
+- site-reliability-engineering
 - devops
 modules:
 - learn.wwl.describe-high-availability-disaster-recovery-strategies

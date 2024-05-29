@@ -6,8 +6,6 @@ One solution is to find bilingual, or even multilingual, people to translate bet
 
 Early attempts at machine translation applied *literal* translations.  A literal translation is where each word is translated to the corresponding word in the target language.  This approach presents some issues. For one case, there may not be an equivalent word in the target language. Another case is where literal translation can change the meaning of the phrase or not get the context correct.
 
-For example, the French phrase "*éteindre la lumière*" can be translated to English as "*turn off the light*". However, in French you might also say "*fermer la lumiere*" to mean the same thing. The French verb *fermer* literally means to "*close*", so a literal translation based only on the words would indicate, in English, "*close the light*"; which for the average English speaker, doesn't really make sense, so to be useful, a translation service should take into account the semantic context and return an English translation of "*turn off the light*".
-
 Artificial intelligence systems must be able to understand, not only the words, but also the *semantic* context in which they are used.  In this way, the service can return a more accurate translation of the input phrase or phrases. The grammar rules, formal versus informal, and colloquialisms all need to be considered.
 
 ## Text and speech translation

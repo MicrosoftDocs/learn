@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: A knowledge check for Safeguard data with public sector with Azure.
-  ms.date: 02/23/2021
-  author: Adriamen
-  ms.author: micrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/25/2023
+  author: TerryLanfear
+  ms.author: terrylan
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/9-knowledge-check.md)] 
@@ -20,10 +19,10 @@ quiz:
     - content: "All Azure services enable the customer to specify the region into which the service will be deployed."
       isCorrect: false
       explanation: "Incorrect. Non-regional Azure services don't enable the customer to specify the region where the services will be deployed."
-    - content: "Azure Active Directory deployments in the United States will store all Active Directory data in the United States."
+    - content: "Microsoft Entra deployments in the United States will store all Active Directory data in the United States."
       isCorrect: true
       explanation: "Correct. All Active Directory data for deployments in the United States are stored in the United States."
-    - content: "Azure Active Directory deployments in Europe will store all Active Directory data in Europe."
+    - content: "Microsoft Entra deployments in Europe will store all Active Directory data in Europe."
       isCorrect: false
       explanation: "Incorrect. Most Active Directory data for deployments in Europe are stored in Europe, but some are stored in the United States."
     - content: "Data sovereignty is another term that describes data residency."

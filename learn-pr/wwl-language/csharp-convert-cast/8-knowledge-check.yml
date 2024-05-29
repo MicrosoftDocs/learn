@@ -3,12 +3,13 @@ uid: learn.languages.csharp-convert-cast.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 04/26/2023
+  description: "Check what you learn in this module."
+  ms.date: 04/12/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 quiz:
   title: "Check your knowledge"
@@ -23,7 +24,7 @@ quiz:
       explanation: "Incorrect. Using `TryParse` is a valid technique."
     - content: "`(decimal)`"
       isCorrect: true
-      explanation: "Correct. You can't cast a `string` into a `decimal`."
+      explanation: "Correct. It isn't possible to cast a `string` into a `decimal`."
   - content: "What type of action is being performed when changing a `float` into an `int`?"
     choices:
     - content: "A narrowing conversion."
@@ -34,4 +35,4 @@ quiz:
       explanation: "Incorrect. Changing a `float` into an `int` isn't a widening conversion because `float` can store more precision data than an `int` can store."
     - content: "An illegal conversion."
       isCorrect: false
-      explanation: "Incorrect. Changing a `float` into an `int` isn't an illegal conversion. You can accomplish this, buy it's with the loss of precision data."
+      explanation: "Incorrect. Changing a `float` into an `int` isn't an illegal conversion. It can be accomplished, but it's with the loss of precision data."

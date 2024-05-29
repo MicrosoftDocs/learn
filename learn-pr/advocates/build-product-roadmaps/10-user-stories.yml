@@ -5,10 +5,9 @@ metadata:
   title: User stories
   description: This unit teaches how to write user stories.
   author: czhu89
-  ms.date: 04/16/2019
+  ms.date: 04/24/2023
   ms.author: cazh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-startups
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/10-user-stories.md)]

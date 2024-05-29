@@ -4,11 +4,10 @@ title: What is mixed reality?
 metadata:
   title: What is mixed reality?
   description: Learn how to define mixed reality as a concept, understand the types of interactions it supports, and understand its surrounding historical context.
-  ms.date: 11/17/2020
+  ms.date: 05/20/2023
   author: Sean-Kerawala
   ms.author: sekerawa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-what.md)]

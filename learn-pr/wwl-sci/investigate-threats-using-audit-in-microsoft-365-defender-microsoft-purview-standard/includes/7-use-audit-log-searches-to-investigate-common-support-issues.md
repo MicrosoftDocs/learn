@@ -20,7 +20,7 @@ Here's how to configure an audit log search query for this scenario:
  -  **Activities**. If relevant to your case, select a specific activity to search for. For troubleshooting compromised accounts, consider selecting the User signed in to mailbox activity under Exchange mailbox activities. This returns auditing records showing the IP address that was use when signing in to the mailbox. Otherwise, leave this field blank to return audit records for all activities.
     
     > [!TIP]
-    > Leaving this field blank will return UserLoggedIn activities, which is an Azure Active Directory activity that indicates that someone has signed into a user account. Use filtering in the search results to display the UserLoggedIn audit records.
+    > Leaving this field blank will return UserLoggedIn activities, which is a Microsoft Entra activity that indicates that someone has signed into a user account. Use filtering in the search results to display the UserLoggedIn audit records.
  -  **Start date and End date**. Select a date range that's applicable to your investigation.
  -  **Users**. If you're investigating a compromised account, select the user whose account was compromised. This returns audit records for activities performed by that user account.
  -  **File, folder, or site**. Leave this field blank.
@@ -127,7 +127,7 @@ After you run the search, any audit records for this activity are displayed in t
 
 ### Issue: Investigate why there was a successful sign-in by a user outside your organization
 
-When an organization reviews audit records in the audit log, it may see records that indicate an external user was authenticated by Azure Active Directory and successfully signed in to its Microsoft 365 tenant. For example:
+When an organization reviews audit records in the audit log, it may see records that indicate an external user was authenticated by Microsoft Entra ID and successfully signed in to its Microsoft 365 tenant. For example:
 
  -  An admin in contoso.onmicrosoft.com may see an audit record showing that a user from a different organization (for example, fabrikam.onmicrosoft.com) successfully signed into contoso.onmicrosoft.com.
  -  Similarly, the admin may see audit records that indicate users with a Microsoft Account (MSA), such as an Outlook.com or Live.com, successfully signed into contoso.onmicrosoft.com.
@@ -135,23 +135,23 @@ When an organization reviews audit records in the audit log, it may see records 
 > [!NOTE]
 > In these situations, the audited activity is **User logged In**.
 
-This behavior is by design. Azure Active Directory (Azure AD), the directory service, allows something called **pass-through authentication** when an external user tries to access a SharePoint site or a OneDrive location in an organization. When the external user tries to sign-in, they're prompted to enter their credentials. Azure AD uses the credentials to authenticate the user, meaning only Azure AD verifies the user is who they say they are.
+This behavior is by design. Microsoft Entra ID, the directory service, allows something called **pass-through authentication** when an external user tries to access a SharePoint site or a OneDrive location in an organization. When the external user tries to sign-in, they're prompted to enter their credentials. Microsoft Entra ID uses the credentials to authenticate the user, meaning only Microsoft Entra ID verifies the user is who they say they are.
 
-The indication of the successful sign-in in the audit record is the result of Azure AD authenticating the user. The successful sign-in doesn't mean the user was able to access any resources or complete any other actions in the organization. It only indicates the user was authenticated by Azure AD. For a pass-through user to access SharePoint or OneDrive resources, an internal user in the organization would have to explicitly share a resource with the external user by sending them a sharing invitation or anonymous sharing link.
+The indication of the successful sign-in in the audit record is the result of Microsoft Entra authenticating the user. The successful sign-in doesn't mean the user was able to access any resources or complete any other actions in the organization. It only indicates the user was authenticated by Microsoft Entra ID. For a pass-through user to access SharePoint or OneDrive resources, an internal user in the organization would have to explicitly share a resource with the external user by sending them a sharing invitation or anonymous sharing link.
 
 > [!NOTE]
-> Azure AD allows pass-through authentication only for **first-party applications**, such as SharePoint Online and OneDrive for Business. It isn't allowed for other third-party applications.
+> Microsoft Entra ID allows pass-through authentication only for **first-party applications**, such as SharePoint Online and OneDrive for Business. It isn't allowed for other third-party applications.
 
 The following screenshot shows an example and descriptions of relevant properties in an audit record for a **User logged In** event that's a result of pass-through authentication. Select the audit record to display the **Details** flyout page, and then select **More information**.
 
 :::image type="content" source="../media/pass-through-authentication-1-2e6b71ec.png" alt-text="Screenshot of an Audit record for a successful pass-thru authentication and with selected fields highlighted.":::
 
 
- -  **A. Actor ID**. This field indicates the user who attempted to access a resource in your organization wasn't found in your organization's Azure AD.
+ -  **A. Actor ID**. This field indicates the user who attempted to access a resource in your organization wasn't found in your organization's Microsoft Entra ID.
  -  **B. Actor UPN**. This field displays the UPN of the external user who attempted to access a resource in your organization. This user ID is also identified in the **User** and **UserId** properties in the audit record.
  -  **C. ApplicationId**. This property identifies the application that triggered the sign-in request. The value of 00000003-0000-0ff1-ce00-000000000000 displayed in the **ApplicationId** property in this audit record indicates SharePoint Online. OneDrive for Business also has this same **ApplicationId**.
- -  **D. ExtendedProperties**. This field indicates that the pass-through authentication was successful. In other words, the user was successfully authenticated by Azure AD.
- -  **E. RecordType**. Value of 15 indicates the audited activity (**UserLoggedIn**) is a Secure Token Service (STS) sign-in event in Azure AD.
+ -  **D. ExtendedProperties**. This field indicates that the pass-through authentication was successful. In other words, the user was successfully authenticated by Microsoft Entra ID.
+ -  **E. RecordType**. Value of 15 indicates the audited activity (**UserLoggedIn**) is a Secure Token Service (STS) sign-in event in Microsoft Entra ID.
 
 The following examples are scenarios that would result in a successful **User logged in** audit activity because of pass-through authentication:
 

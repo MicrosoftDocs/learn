@@ -6,9 +6,8 @@ metadata:
   description: "Knowledge check 2"
   ms.date: 12/13/2021
   author: wwlpublish
-  ms.author: v-anwarr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: tonyj
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -17,9 +16,9 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When planning to implement Azure AD DS, which of the following statements are true?"
+  - content: "When planning to implement Microsoft Entra Domain Services, which of the following statements are true?"
     choices:
-    - content: "It's possible to extend the schema for the Azure AD DS domain."
+    - content: "It's possible to extend the schema for the Microsoft Entra Domain Services domain."
       isCorrect: false
       explanation: "That's incorrect. It is not possible to extend the schema in AD DS."
     - content: "Nested OUs are supported."
@@ -28,22 +27,22 @@ quiz:
     - content: "It's not possible to target OUs with built-in GPOs."
       isCorrect: true
       explanation: "That's correct. Additionally, you cannot use WMI filters or security-group filtering."
-  - content: "Which role from the following groups in an Azure AD DS domain can administer DNS on the managed domain, create and administer custom OUs on the managed domain, and administer computers joined to the managed domain?"
+  - content: "Which role from the following groups in a Microsoft Entra Domain Services domain can administer DNS on the managed domain, create and administer custom OUs on the managed domain, and administer computers joined to the managed domain?"
     choices:
     - content: "AAD DC Administrators."
       isCorrect: true
-      explanation: "That's correct. Members of the AAD DC Administrators group are granted administrator privileges on the Azure AD DS–managed domain."
+      explanation: "That's correct. Members of the AAD DC Administrators group are granted administrator privileges on the Microsoft Entra Domain Services–managed domain."
     - content: "Enterprise Admins."
       isCorrect: false
-      explanation: "That's incorrect. Only members of the AAD DC Administrators group are granted administrator privileges on the Azure AD DS–managed domain."
+      explanation: "That's incorrect. Only members of the AAD DC Administrators group are granted administrator privileges on the Microsoft Entra Domain Services–managed domain."
     - content: "Administrators."
       isCorrect: false
-      explanation: "That's incorrect. Only members of the AAD DC Administrators group  are granted administrator privileges on the Azure AD DS–managed domain."
-  - content: "Which of the following tasks can Azure AD DS domain administrators perform?"
+      explanation: "That's incorrect. Only members of the AAD DC Administrators group  are granted administrator privileges on the Microsoft Entra Domain Services–managed domain."
+  - content: "Which of the following tasks can Microsoft Entra Domain Services domain administrators perform?"
     choices:
     - content: "Add domain controllers to the managed domain."
       isCorrect: false
-      explanation: "That's incorrect. This action is not possible with Azure AD DS."
+      explanation: "That's incorrect. This action is not possible with Microsoft Entra Domain Services."
     - content: "Configure the built-in GPO for the AADDC Computers and AADDC Users containers in the managed domain."
       isCorrect: true
       explanation: "That's correct. Administrators, that is, members of the AAD DC Administrators group, can also create and administer custom OUs on both the managed domain and administer computers joined to the managed domain."

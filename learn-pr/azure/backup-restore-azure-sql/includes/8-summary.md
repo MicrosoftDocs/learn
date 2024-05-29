@@ -6,5 +6,5 @@ In this module, you learned about Azure backups and retention policies, and how 
 
 Visit the following articles for more information on backups for Azure SQL Database.
 
-- [Automated backups](/azure/sql-database/sql-database-automated-backups)
-- [Store Azure SQL Database backups for up to 10 years](/azure/sql-database/sql-database-long-term-retention)
+- [Automated backups in Azure SQL Database](/azure/azure-sql/database/automated-backups-overview)
+- [Long-term retention - Azure SQL Database and Azure SQL Managed Instance](/azure/azure-sql/database/long-term-retention-overview)

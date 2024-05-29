@@ -10,7 +10,7 @@ To meet these objectives, you'll:
 >
 > - Set up a GitHub repository for this module.
 > - Clone the repository to your computer.
-> - Create a workload identity in Azure Active Directory.
+> - Create a workload identity in Microsoft Entra ID.
 > - Create a secret in GitHub.
 
 ## Get the GitHub repository

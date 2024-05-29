@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-deploy-sensor.describe-the-deployment-phase
+title: Describe the deployment phase for Defender for IoT
+metadata:
+  title: Describe the deployment phase for Defender for IoT
+  description: "Describe the deployment phase for Defender for IoT"
+  ms.date: 4/15/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-describe-the-deployment-phase.md)]

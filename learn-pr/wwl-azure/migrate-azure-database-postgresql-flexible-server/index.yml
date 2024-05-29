@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-azure-database-postgresql-flexible-server
+metadata:
+  title: Migrate to Azure Database for PostgreSQL flexible server
+  description: "Azure Database for PostgreSQL Flexible Server supports effective data migration from PostgreSQL servers. This module covers both online and offline migration methods and tools, helping you choose the right approach for your scenario. Learn practical techniques for managing migrations efficiently, ideal for minimizing downtime and maintaining productivity."
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: postgresql
+  ai-usage: human-only
+title: Migrate to Azure Database for PostgreSQL flexible server
+summary: Azure Database for PostgreSQL Flexible Server supports data migration from PostgreSQL servers. This module covers online and offline migration tools and methods, helping you choose the right approach for your scenario.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Understand the different online and offline migration options.
+
+  -   Identify the different migration tools available.
+
+  -   Select the appropriate migration tool for your specific scenario.
+prerequisites: |
+  -   Demonstrate an understanding of relational databases.
+
+  -   Demonstrate an understanding of basic SQL.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+products:
+- azure-database-postgresql
+subjects:
+- databases
+units:
+- learn.wwl.migrate-azure-database-postgresql-flexible-server.introduction
+- learn.wwl.migrate-azure-database-postgresql-flexible-server.compare-online-offline-migration
+- learn.wwl.migrate-azure-database-postgresql-flexible-server.identify-migration-tool-options
+- learn.wwl.migrate-azure-database-postgresql-flexible-server.analyze-decision-criteria-tool-selection-migration-model
+- learn.wwl.migrate-azure-database-postgresql-flexible-server.exercise-postgresql-offline-migration
+- learn.wwl.migrate-azure-database-postgresql-flexible-server.exercise-postgresql-online-migration
+- learn.wwl.migrate-azure-database-postgresql-flexible-server.knowledge-check
+- learn.wwl.migrate-azure-database-postgresql-flexible-server.summary
+badge:
+  uid: learn.wwl.migrate-azure-database-postgresql-flexible-server.badge

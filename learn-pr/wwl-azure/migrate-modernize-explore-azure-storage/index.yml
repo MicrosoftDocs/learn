@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-modernize-explore-azure-storage
+metadata:
+  title: Modernize and explore Azure for SAP storage
+  description: "This module explores the use of the Azure storage component to design scalable, performant, and resilient SAP deployments in Azure. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.service: azure
+title: Modernize and explore Azure for SAP storage
+summary: This module explores the use of Azure storage components to design scalable, performant, and resilient certified SAP deployments in Azure.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore Azure Storage types.
+  - Explore Azure Files.
+  - Examine Azure virtual machine disks.
+  - Explore managed and unmanaged disks.
+  - Examine Azure virtual machine storage considerations.
+  - Explore Azure virtual machine NFS storage.
+  - Examine SAP HANA Azure virtual machine storage configurations.
+  - Explore NFS v4.1 volumes on Azure NetApp Files.
+prerequisites: |
+  Before taking this training, you should complete:
+  *   Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam.
+  *   SAP HANA or NetWeaver training.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.migrate-modernize-explore-azure-storage.introduction
+- learn.wwl.migrate-modernize-explore-azure-storage.explore-azure-storage-types
+- learn.wwl.migrate-modernize-explore-azure-storage.explore-azure-files
+- learn.wwl.migrate-modernize-explore-azure-storage.examine-azure-virtual-machines-disks
+- learn.wwl.migrate-modernize-explore-azure-storage.explore-managed-unmanaged-disks
+- learn.wwl.migrate-modernize-explore-azure-storage.examine-azure-virtual-machines-storage-considerations
+- learn.wwl.migrate-modernize-explore-azure-storage.explore-azure-virtual-machine-network-file-system-storage
+- learn.wwl.migrate-modernize-explore-azure-storage.examine-sap-hana-azure-virtual-machines-storage-configurations
+- learn.wwl.migrate-modernize-explore-azure-storage.explore-network-file-system-v-4-1-volumes-azure-netapp-files
+- learn.wwl.migrate-modernize-explore-azure-storage.knowledge-check
+- learn.wwl.migrate-modernize-explore-azure-storage.summary
+badge:
+  uid: learn.wwl.migrate-modernize-explore-azure-storage.badge

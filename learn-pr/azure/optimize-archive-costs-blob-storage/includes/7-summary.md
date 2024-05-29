@@ -6,9 +6,9 @@ In this module, you learned about using storage tiers to help manage data saved 
 
 Managing access tiers using C#(.NET) apps:
 
-* [BlobClient.SetAccessTier Method](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.setaccesstier)
+* [BlobBaseClient.SetAccessTier Method](/dotnet/api/azure.storage.blobs.specialized.blobbaseclient.setaccesstier)
 
-* [AccessTier Enum](/dotnet/api/azure.storage.blobs.models.accesstier)
+* [AccessTier Struct](/dotnet/api/azure.storage.blobs.models.accesstier)
 
 Managing access tiers using REST API:
 

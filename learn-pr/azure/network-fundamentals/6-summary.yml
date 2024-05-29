@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: Review what you've learned about the fundamental principles of computer networking.
-  ms.date: 01/09/2020
+  ms.date: 05/11/2023
   author: cryophobia
   ms.author: chrvaw
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

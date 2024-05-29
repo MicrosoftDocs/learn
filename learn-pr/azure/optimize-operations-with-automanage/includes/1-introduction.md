@@ -1,6 +1,6 @@
-Azure Automanage offers a unified solution to simplify IT operations. With point-and-click simplicity, Azure Automanage lets you automate management tasks and apply consistent best practices across the entire lifecycle of Windows Server and Linux servers in Azure or in hybrid environments enabled by Azure Arc.
+Azure Automanage offers a unified solution to simplify IT operations. With point-and-click simplicity, Azure Automanage lets you automate management tasks and apply consistent best practices across the entire lifecycle of Windows Server and Linux servers in Azure. Azure Automanage can even be used in hybrid environments enabled by Azure Arc.
 
-Contoso, Ltd. is a midsize financial services company in London with a branch office in New York City. Contoso has deployed numerous virtual machines in Azure across both Windows Server and Linux server environments. Given their infrastructure workload, you've been tasked by management to learn about Azure Automanage to see if it can help alleviate their day-to-day operational tasks.
+Contoso, Ltd. is a midsize financial services company in London with a branch office in New York City. Contoso has numerous virtual machines deployed in Azure across both Windows Server and Linux server environments. Given their infrastructure workload, management wants you to learn about Azure Automanage to see if it can help alleviate their day-to-day operational tasks.
 
 ## Learning objectives
 

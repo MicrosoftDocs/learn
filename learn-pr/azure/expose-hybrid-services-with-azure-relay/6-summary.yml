@@ -2,12 +2,11 @@
 uid: learn.expose-hybrid-services-with-azure-relay.6-summary
 metadata:
   title: Summary
-  description: In this unit, you'll review what you've learned about Azure Relay.
-  ms.date: 04/04/2023
+  description: In this unit, you review what you learned about Azure Relay.
+  ms.date: 05/21/2024
   author: spelluru
   ms.author: spelluru
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |

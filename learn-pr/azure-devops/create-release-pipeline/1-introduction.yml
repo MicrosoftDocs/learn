@@ -5,11 +5,10 @@ metadata:
   title: Introduction
   description: Introduction
   ms.custom: devdivchpfy22, engagement-fy23
-  ms.date: 08/19/2022
+  ms.date: 08/14/2023
   author: ramiMSFT
   ms.author: rabououn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

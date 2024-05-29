@@ -1,4 +1,4 @@
-An easy way to track important events in your Microsoft Azure DevOps project is to create a dashboard. A dashboard enables team members and observers to understand and track build trends at a glance.
+An easy way to track important events in your Microsoft Azure DevOps project is to create a dashboard. A dashboard allows team members and observers to understand and track build trends at a glance.
 
 In this unit, you'll set up a dashboard and add widgets to track your build history.
 
@@ -15,20 +15,21 @@ Andy is putting together a report of the progress the team is making. He's in th
 ## What's the dashboard?
 
 The dashboard is a customizable area in Azure DevOps where you can add widgets and extensions to help you visualize areas of your DevOps solution. For example, you can add a widget to:
+
 * Show the history of your builds over time.
 * Give you a *burn down* view of the work in progress.
 * Show you the current pull requests.
 
 ## Add a build history widget to the dashboard
 
-1. In Azure DevOps, select **Overview** and then select **Dashboards**.
+1. In Azure DevOps, select **Overview**, then select **Dashboards**.
 
     :::image type="content" source="../media/7-menu-dashboards.png" alt-text="Screenshot of Azure Pipelines showing the location of the Dashboards menu item.":::
 
 1. Select **Add a widget**.
 1. In the **Add widget** pane, search for **Build History**.
 1. Drag the **Build History** tile to the canvas.
-1. Select the gear icon to configure the widget.
+1. Select the **Gear** icon to configure the widget.
 
     1. Keep the **Build History** title.
     1. In the **Pipeline** drop-down list, select your pipeline.

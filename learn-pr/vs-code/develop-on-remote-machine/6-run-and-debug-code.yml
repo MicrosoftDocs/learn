@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-on-remote-machine.run-and-debug-code
+title: Run and debug code
+metadata:
+  title: Run and debug code
+  description: "When connected to a remote machine using SSH in Visual Studio Code, editing, running, and debugging code is the same experience as if you were developing locally."
+  ms.date: 01/22/2024
+  author: olguzzar
+  ms.author: olguzzar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-run-and-debug-code.md)]

@@ -4,11 +4,12 @@ title: Create and run a Batch job using the .NET client library
 metadata:
   title: Create and run a Batch job using the .NET client library
   description: Define the missing the features that need to be added to your app, and see how the client libraries will help.
-  ms.date: 06/01/2019
+  ms.date: 02/14/2024
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jushiman
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 5
 content: |
   [!include[](includes/7-create-and-run-a-batch-job-using-the-dotnet-client-library.md)]

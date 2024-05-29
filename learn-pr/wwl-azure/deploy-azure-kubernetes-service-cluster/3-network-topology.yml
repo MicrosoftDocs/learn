@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-azure-kubernetes-service-cluster.network-topology
+title: Network topology
+metadata:
+  title: Network topology
+  description: "Network topology"
+  ms.date: 03/08/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-network-topology.md)]

@@ -5,11 +5,10 @@ title: How Azure Kubernetes Service works
 metadata:
   title: How Azure Kubernetes Service works
   description: How Azure Kubernetes Service works
-  ms.date: 6/25/2019
+  ms.date: 10/17/2023
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 5
 content: |

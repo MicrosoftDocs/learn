@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.modernize-explore-azure-network.explore-saprouter
+title: Explore SAProuter
+metadata:
+  title: Explore SAProuter
+  description: "Explore SAProuter"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-explore-saprouter.md)]

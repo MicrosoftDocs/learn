@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-security-posture.microsoft-defender-for-cloud-secure-score
+title: Add custom initiatives to Microsoft Defender for Cloud
+metadata:
+  title: Add custom initiatives to Microsoft Defender for Cloud
+  description: "Configure Microsoft Defender for Cloud policies"
+  ms.date: 05/21/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-microsoft-defender-for-cloud-secure-score.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.governance-security.create-key-vault-use-azure-portal
+title: Create and configure an Azure Key Vault
+metadata:
+  title: Create and configure an Azure Key Vault
+  description: "Create and configure an Azure Key Vault"
+  ms.date: 04/30/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-create-key-vault-use-azure-portal.md)]

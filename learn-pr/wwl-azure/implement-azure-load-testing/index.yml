@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.implement-azure-load-testing
+metadata:
+  title: Implement Azure Load Testing
+  description: "Learn how to optimize application performance by simulating real-world loads with Azure Load Testing service. Learn how to automate load testing with GitHub Actions to ensure consistent application performance and scalability."
+  ms.date: 05/13/2024
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: load-testing
+  ai-usage: human-only
+title: Implement Azure Load Testing
+summary: Learn how to&nbsp;optimize application performance by simulating real-world loads with Azure Load Testing service. Learn how to&nbsp;automate load testing&nbsp;with GitHub Actions to ensure consistent application performance and scalability.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Understand the components of Azure Load Testing.
+
+  -   Create an Azure Load Testing resource.
+
+  -   Configure service authentication to allow GitHub Actions to connect to your Azure load testing resource.
+
+  -   Add load test input files to your repository.
+
+  -   Update the GitHub Action definition to invoke Azure Load Testing.
+prerequisites: |
+  -   Experience with GitHub and an understanding of pull requests, code merges, and other repository management practices.
+
+  -   Experience creating resources in Azure.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-app-service
+- github
+- azure-load-testing
+subjects:
+- automation
+units:
+- learn.wwl.implement-azure-load-testing.introduction
+- learn.wwl.implement-azure-load-testing.load-test
+- learn.wwl.implement-azure-load-testing.create-tests
+- learn.wwl.implement-azure-load-testing.configure-file
+- learn.wwl.implement-azure-load-testing.fail-criteria
+- learn.wwl.implement-azure-load-testing.variables-load-testing
+- learn.wwl.implement-azure-load-testing.exercise-github-load-test
+- learn.wwl.implement-azure-load-testing.knowledge-check
+- learn.wwl.implement-azure-load-testing.summary
+badge:
+  uid: learn.wwl.implement-azure-load-testing.badge

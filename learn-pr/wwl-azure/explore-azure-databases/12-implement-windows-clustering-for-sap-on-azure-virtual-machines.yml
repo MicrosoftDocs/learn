@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-databases.implement-windows-clustering
-title: Lab - Implement Windows clustering for SAP on Azure virtual machines
+title: Lab - Implement Windows clustering for SAP on Azure Virtual Machines
 metadata:
-  title: Lab - Implement Windows clustering for SAP on Azure virtual machines
-  description: "Lab - Implement Windows clustering for SAP on Azure virtual machines"
-  ms.date: 04/23/2023
+  title: Lab - Implement Windows clustering for SAP on Azure Virtual Machines
+  description: "Lab - Implement Windows clustering for SAP on Azure Virtual Machines"
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 120
 content: |
   [!include[](includes/12-implement-windows-clustering-for-sap-on-azure-virtual-machines.md)]

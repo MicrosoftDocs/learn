@@ -1,9 +1,9 @@
 
-In this exercise you'll learn how to create a simple C\# function that responds to HTTP requests. After creating and testing the code locally in Visual Studio Code you will deploy to Azure.
+In this exercise, you learn how to create a C\# function that responds to HTTP requests. After creating and testing the code locally in Visual Studio Code, you'll deploy to Azure.
 
 ## Prerequisites
 
-Before you begin make sure you have the following requirements in place:
+Before you begin, make sure you have the following requirements in place:
 
 * An **Azure account** with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free).
 
@@ -19,7 +19,7 @@ Before you begin make sure you have the following requirements in place:
 
 ## Create your local project
 
-In this section, you use Visual Studio Code to create a local Azure Functions project in C#. Later in this exercise, you'll publish your function code to Azure.
+In this section, you use Visual Studio Code to create a local Azure Functions project in C#. Later in this exercise, you publish your function code to Azure.
 
 1. Choose the Azure icon in the Activity bar, then in the **Workspace** area, select **Add...**. Finally, select **Create Function...**.
 
@@ -93,7 +93,7 @@ In this section, you create the Azure resources you need to deploy your local fu
     * **Select a location for new resources**:  For better performance, choose a region near you.
     * **Select subscription**: Choose the subscription to use. *You won't see this if you only have one subscription.*
 
-    The extension shows the status of individual resources as they are being created in Azure in the **AZURE: ACTIVITY LOG** area of the terminal window.
+    The extension shows the status of individual resources as they're being created in Azure in the **AZURE: ACTIVITY LOG** area of the terminal window.
     
 1. When completed, the following Azure resources are created in your subscription, using names based on your function app name:
 

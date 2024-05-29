@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-text-with-text-analytics-service.exercise
+title: Exercise - Analyze text with Language Studio
+metadata:
+  title: Exercise - Analyze text with Language Studio
+  description: "Exercise - Analyze text with Language Studio"
+  ms.date: 11/02/2023
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-exercise.md)]

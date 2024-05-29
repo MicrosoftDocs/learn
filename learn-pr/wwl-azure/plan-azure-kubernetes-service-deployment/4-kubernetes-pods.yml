@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-azure-kubernetes-service-deployment.kubernetes-pods
+title: Azure Kubernetes Service pods
+metadata:
+  title: Azure Kubernetes Service pods
+  description: "Azure Kubernetes Service pods"
+  ms.date: 04/23/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-kubernetes-pods.md)]

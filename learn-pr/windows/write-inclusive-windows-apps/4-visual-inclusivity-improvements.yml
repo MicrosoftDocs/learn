@@ -5,10 +5,9 @@ metadata:
   title: Visual inclusivity improvements
   description: Modify your app's UI to work better with Windows inclusivity options.
   ms.date: 5/24/2019
-  author: PeterTurcan
-  ms.author: v-pettur
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  author: Karl-Bridge-Microsoft
+  ms.author: kbridge
+  ms.topic: unit
   
 durationInMinutes: 15
 content: |

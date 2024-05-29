@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-implement-events.prepare
+title: Prepare
+metadata:
+  title: Prepare
+  description: "This prepare file sets up the code for the events guided project."
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-prepare.md)]

@@ -1,22 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-git-branches-workflows
 metadata:
-  title: Manage Git branches and workflows
-  description: "Manage Git branches and workflows"
-  ms.date: 12/09/2022
+  title: Design and implement branch strategies and workflows
+  description: "Design and implement branch strategies and workflows"
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Manage Git branches and workflows
+  ms.topic: module
+  ms.service: azure
+  ai-usage: human-only
+title: Design and implement branch strategies and workflows
 summary: This module explores Git branching types, concepts, and models for the continuous delivery process. It helps companies defining their branching strategy and organization.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Describe Git branching workflows
-  - Implement feature branches
-  - Implement GitHub Flow
-  - Fork a repo
-prerequisites: ""
+  By the end of this module, you're able to:
+
+  -   Describe Git branching workflows
+
+  -   Implement feature branches
+
+  -   Implement GitHub Flow
+
+  -   Fork a repo
+prerequisites: None
 iconUrl: /training/achievements/2-manage-git-branches-and-workflows.svg
 levels:
 - advanced
@@ -48,6 +53,7 @@ units:
 - learn.wwl.manage-git-branches-workflows.explore-git-branch-model-for-continuous-delivery
 - learn.wwl.manage-git-branches-workflows.explore-github-flow
 - learn.wwl.manage-git-branches-workflows.explore-fork-workflow
+- learn.wwl.manage-git-branches-workflows.implement-branch-merging-restrictions
 - learn.wwl.manage-git-branches-workflows.version-control-git-azure-repos
 - learn.wwl.manage-git-branches-workflows.knowledge-check
 - learn.wwl.manage-git-branches-workflows.summary

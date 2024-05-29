@@ -4,12 +4,10 @@ title: What is Azure Network Watcher?
 metadata:
   title: What is Azure Network Watcher?
   description: Learn what Azure Network Watcher does and how your organization can use it.
-  ms.date: 02/09/2022
-  author: Orin-Thomas
-  ms.author: orthomas
-  ms.custom: team=cloud_advocates
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/31/2024
+  author: halkazwini
+  ms.author: halkazwini
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/2-what-is-azure-network-watcher.md)]

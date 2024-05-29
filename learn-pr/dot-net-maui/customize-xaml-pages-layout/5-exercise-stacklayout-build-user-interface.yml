@@ -4,11 +4,12 @@ title: Exercise - Use StackLayout to build a user interface
 metadata:
   title: Exercise - Use StackLayout to build a user interface
   description: Complete a user interface by adding and configuring a StackLayout.
-  ms.date: 04/29/2022
+  ms.date: 11/07/2023
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
+  ms.service: azure
 durationInMinutes: 10
 azureSandbox: false
 content: |

@@ -55,36 +55,34 @@ Traffic Manager offers the several key features.
   :::column-end:::
 :::row-end:::
 
-
 ## How Traffic Manager works
 
 Azure Traffic Manager enables you to control the distribution of traffic across your application endpoints. An endpoint is any Internet-facing service hosted inside or outside of Azure.
 
 Traffic Manager provides two key benefits:
 
- -  Distribution of traffic according to one of several **traffic-routing methods**
- -  Continuous **monitoring of endpoint** health and automatic failover when endpoints fail
+- Distribution of traffic according to one of several **traffic-routing methods**
+- Continuous **monitoring of endpoint** health and automatic failover when endpoints fail
 
 When a client attempts to connect to a service, it must first resolve the DNS name of the service to an IP address. The client then connects to that IP address to access the service.
 
-Traffic Manager uses DNS to direct clients to specific service endpoints based on the rules of the traffic-routing method. Clients connect to the selected endpoint directly. Traffic Manager is not a proxy or a gateway. Traffic Manager does not see the traffic passing between the client and the service.
+Traffic Manager uses DNS to direct clients to specific service endpoints based on the rules of the traffic-routing method. Clients connect to the selected endpoint directly. Traffic Manager isn't a proxy or a gateway. Traffic Manager doesn't see the traffic passing between the client and the service.
 
 **Traffic Manager works at the DNS level which is at the Application layer (Layer-7).**
 
 ### Traffic Manager example deployment
 
-Contoso Corp have developed a new partner portal. The URL for this portal is https://partners.contoso.com/login.aspx.
+Contoso Corp have developed a new partner portal. The URL for this portal is `https://partners.contoso.com/login.aspx`.
 
 The application is hosted in three regions of Azure. To improve availability and maximize global performance, they use Traffic Manager to distribute client traffic to the closest available endpoint.
 
 To achieve this configuration, they complete the following steps:
 
-1.  Deploy three instances of their service. The DNS names of these deployments are contoso-us.cloudapp.net, contoso-eu.cloudapp.net, and contoso-asia.cloudapp.net.
-2.  Create a Traffic Manager profile, named contoso.trafficmanager.net, and configure it to use the 'Performance' traffic-routing method across the three endpoints.
-3.  Configure their vanity domain name, partners.contoso.com, to point to contoso.trafficmanager.net, using a DNS CNAME record.
+1. Deploy three instances of their service. The DNS names of these deployments are contoso-us.cloudapp.net, contoso-eu.cloudapp.net, and contoso-asia.cloudapp.net.
+1. Create a Traffic Manager profile, named contoso.trafficmanager.net, and configure it to use the 'Performance' traffic-routing method across the three endpoints.
+1. Configure their vanity domain name, partners.contoso.com, to point to contoso.trafficmanager.net, using a DNS CNAME record.
 
 :::image type="content" source="../media/traffic-manager-dns-configuration-a2d2df7f.png" alt-text="Diagram illustrating Contoso's DNS configuration of Traffic Manager":::
-
 
 ### Traffic Manager example client usage
 
@@ -93,18 +91,17 @@ Following on from the deployment example above; when a client requests the page 
 :::image type="content" source="../media/traffic-manager-client-usage-flow-ae1d8619.png" alt-text="Diagram illustrating client usage flow in Traffic Manager":::
 
 
-1.  The client sends a DNS query to its configured recursive DNS service to resolve the name 'partners.contoso.com'. A recursive DNS service, sometimes called a 'local DNS' service, does not host DNS domains directly. Rather, the client off-loads the work of contacting the various authoritative DNS services across the Internet needed to resolve a DNS name.
-2.  To resolve the DNS name, the recursive DNS service finds the name servers for the 'contoso.com' domain. It then contacts those name servers to request the 'partners.contoso.com' DNS record. The contoso.com DNS servers return the CNAME record which points to contoso.trafficmanager.net.
-3.  Next, the recursive DNS service finds the name servers for the 'trafficmanager.net' domain, which are provided by the Azure Traffic Manager service. It then sends a request for the 'contoso.trafficmanager.net' DNS record to those DNS servers.
-4.  The Traffic Manager name servers receive the request. They choose an endpoint based on:
-    
-     -  The configured state of each endpoint (disabled endpoints are not returned)
-     -  The current health of each endpoint, as determined by the Traffic Manager health checks.
-     -  The chosen traffic-routing method.
-5.  The chosen endpoint is returned as another DNS CNAME record. In this case, let us suppose contoso-eu.cloudapp.net is returned.
-6.  Next, the recursive DNS service finds the name servers for the 'cloudapp.net' domain. It contacts those name servers to request the 'contoso-eu.cloudapp.net' DNS record. A DNS 'A' record containing the IP address of the EU-based service endpoint is returned.
-7.  The recursive DNS service consolidates the results and returns a single DNS response to the client.
-8.  The client receives the DNS results and connects to the given IP address. The client connects to the application service endpoint directly, not through Traffic Manager. Since it is an HTTPS endpoint, the client performs the necessary SSL/TLS handshake, and then makes an HTTP GET request for the '/login.aspx' page.
+1. The client sends a DNS query to its configured recursive DNS service to resolve the name 'partners.contoso.com'. A recursive DNS service, sometimes called a 'local DNS' service, doesn't host DNS domains directly. Rather, the client off-loads the work of contacting the various authoritative DNS services across the Internet needed to resolve a DNS name.
+1. To resolve the DNS name, the recursive DNS service finds the name servers for the 'contoso.com' domain. It then contacts those name servers to request the 'partners.contoso.com' DNS record. The contoso.com DNS servers return the CNAME record that points to contoso.trafficmanager.net.
+1. Next, the recursive DNS service finds the name servers for the 'trafficmanager.net' domain, which are provided by the Azure Traffic Manager service. It then sends a request for the 'contoso.trafficmanager.net' DNS record to those DNS servers.
+1. The Traffic Manager name servers receive the request. They choose an endpoint based on:
+    - The configured state of each endpoint (disabled endpoints aren't returned)
+    - The current health of each endpoint, as determined by the Traffic Manager health checks.
+    - The chosen traffic-routing method.
+1. The chosen endpoint is returned as another DNS CNAME record. In this case, let us suppose contoso-eu.cloudapp.net is returned.
+1. Next, the recursive DNS service finds the name servers for the 'cloudapp.net' domain. It contacts those name servers to request the 'contoso-eu.cloudapp.net' DNS record. A DNS 'A' record containing the IP address of the EU-based service endpoint is returned.
+1. The recursive DNS service consolidates the results and returns a single DNS response to the client.
+1. The client receives the DNS results and connects to the given IP address. The client connects to the application service endpoint directly, not through Traffic Manager. Since it's an HTTPS endpoint, the client performs the necessary SSL/TLS handshake, and then makes an HTTP GET request for the '/login.aspx' page.
 
 The recursive DNS service caches the DNS responses it receives. The DNS resolver on the client device also caches the result. Caching enables subsequent DNS queries to be answered more quickly by using data from the cache rather than querying other name servers. The duration of the cache is determined by the 'time-to-live' (TTL) property of each DNS record. Shorter values result in faster cache expiry and thus more round-trips to the Traffic Manager name servers. Longer values mean that it can take longer to direct traffic away from a failed endpoint. Traffic Manager allows you to configure the TTL used in Traffic Manager DNS responses to be as low as 0 seconds and as high as 2,147,483,647 seconds (the maximum range compliant with RFC-1035), enabling you to choose the value that best balances the needs of your application.
 
@@ -171,13 +168,11 @@ The following traffic routing methods are available in Traffic Manager:
   :::column-end:::
 :::row-end:::
 
-
 ### Routing method examples
 
 This is an example of the **Priority** routing method.
 
 :::image type="content" source="../media/routing-method-priority-175227cf.png" alt-text="Diagram illustrating the 'Priority' routing method":::
-
 
 For more information, see [Priority traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods).
 
@@ -185,13 +180,11 @@ This is an example of the **Weighted** routing method.
 
 :::image type="content" source="../media/routing-method-weighted-2d93e136.png" alt-text="Diagram illustrating the 'Weighted' routing method":::
 
-
 For more information, see [Weighted traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods).
 
 This is an example of the **Performance** routing method.
 
 :::image type="content" source="../media/routing-method-performance-0c0e1e30.png" alt-text="Diagram illustrating the 'Performance' routing method":::
-
 
 For more information, see [Performance traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods).
 
@@ -199,12 +192,11 @@ This is an example of the **Geographic** routing method.
 
 :::image type="content" source="../media/routing-method-geographic-c04c1141.png" alt-text="Diagram illustrating the 'Geographic' routing method":::
 
-
 For more information, see [Geographic traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods).
 
 ### Traffic Manager profiles
 
-Within a Traffic Manager profile, you can only configure one traffic routing method at a time. You can select a different traffic routing method for your profile at any time. Your changes will be applied within a minute without any downtime.
+Within a Traffic Manager profile, you can only configure one traffic routing method at a time. You can select a different traffic routing method for your profile at any time. Your changes are applied within a minute without any downtime.
 
 **All Traffic Manager profiles have health monitoring and automatic failover of endpoints.**
 
@@ -214,23 +206,21 @@ As mentioned earlier, each Traffic Manager profile can only specify one traffic-
 
 The example and diagrams below illustrate the combining of the **Performance** and **Weighted** traffic-routing methods in nested profiles.
 
-### Example: combining 'performance' and 'weighted' traffic routing methods using nested profiles
+### Example: Combining 'performance' and 'weighted' traffic routing methods using nested profiles
 
 Suppose that you deployed an application in the following Azure regions: West US, West Europe, and East Asia. You use the **Performance** traffic-routing method to distribute traffic to the region closest to the user.
 
 :::image type="content" source="../media/nested-traffic-manager-profiles-1-40f78a12.png" alt-text="Diagram illustrating nested Traffic Manager profiles using the Performance routing method":::
 
-
 But what if you wanted to test an update to your service before rolling it out more widely, and you wanted to use the **Weighted** traffic-routing method to direct a small percentage of traffic to your test deployment?
 
 You would set up the test deployment alongside the existing production deployment in West Europe.
 
-As you just learned, you cannot combine both the **Weighted** and **Performance** traffic-routing methods in a single profile. Therefore, to support this scenario, you would create a Traffic Manager profile using the two West Europe endpoints and the **Weighted** traffic-routing method. Then you would add this child profile as an endpoint to the parent profile. The parent profile would still use the **Performance** traffic-routing method and would contain the other global deployments as endpoints.
+As you just learned, you can't combine both the **Weighted** and **Performance** traffic-routing methods in a single profile. Therefore, to support this scenario, you would create a Traffic Manager profile using the two West Europe endpoints and the **Weighted** traffic-routing method. Then you would add this child profile as an endpoint to the parent profile. The parent profile would still use the **Performance** traffic-routing method and would contain the other global deployments as endpoints.
 
 The diagram below illustrates this example scenario:
 
 :::image type="content" source="../media/nested-traffic-manager-profiles-2-fb05f0d1.png" alt-text="Diagram illustrating nested Traffic Manager profiles using both the Performance and Weighted routing methods":::
-
 
 With the above configuration, traffic directed via the parent profile (using the **Performance** routing method) distributes traffic across regions normally. While, within West Europe, the nested child profile (using the **Weighted** routing method) distributes traffic to the production and test endpoints according to the weights assigned.
 
@@ -244,9 +234,9 @@ Azure Traffic Manager enables you to control how network traffic is distributed 
 
 Traffic Manager supports three types of endpoints:
 
- -  **Azure endpoints** \- Use this type of endpoint to load-balance traffic to a cloud service, web app, or public IP address in the same subscription within Azure.
- -  **External endpoints** \- Use this type of endpoint to load balance traffic for IPv4/IPv6 addresses, FQDNs, or for services hosted outside Azure. These services can either be on-premises or with a different hosting provider.
- -  **Nested endpoints** \- Use this type of endpoint to combine Traffic Manager profiles to create more flexible traffic-routing schemes to support the needs of larger, more complex deployments. With Nested endpoints, a child profile is added as an endpoint to a parent profile. Both the child and parent profiles can contain other endpoints of any type, including other nested profiles.
+- **Azure endpoints** \- Use this type of endpoint to load-balance traffic to a cloud service, web app, or public IP address in the same subscription within Azure.
+- **External endpoints** \- Use this type of endpoint to load balance traffic for IPv4/IPv6 addresses, FQDNs, or for services hosted outside Azure. These services can either be on-premises or with a different hosting provider.
+- **Nested endpoints** \- Use this type of endpoint to combine Traffic Manager profiles to create more flexible traffic-routing schemes to support the needs of larger, more complex deployments. With Nested endpoints, a child profile is added as an endpoint to a parent profile. Both the child and parent profiles can contain other endpoints of any type, including other nested profiles.
 
 There are no restrictions on how different endpoints types can be combined in a single Traffic Manager profile; each profile can contain any mix of endpoint types.
 
@@ -258,72 +248,24 @@ For more information, visit [Traffic Manager endpoints](/azure/traffic-manager/t
 
 This example shows how to create and configure a new Traffic Manager profile to direct client traffic based on endpoint priority.
 
-From the Azure portal home page, select **Create a resource**. In the search box, query for 'Traffic Manager profile', and then click **Traffic Manager profile**.
+From the Azure portal home page, From the Azure portal home page, navigate to the Global Search bar and search **Traffic Manager profile**. Then select **Traffic Manager profiles**.
 
-:::image type="content" source="../media/create-traffic-manager-profile-1-1eb497fc.png" alt-text="Selecting 'Traffic Manager profile' from the 'Create a resource' page":::
+:::image type="content" source="../media/create-traffic-manager-profile-1-1eb497fc.png" alt-text="Screenshot of Selecting 'Traffic Manager profile' from the 'Create a resource' page.":::
 
+Select **+ Create** or the **Create traffic manager profile** button.
 
-Click **Create**.
+You need to enter the following information on the **Create Traffic Manager profile** page:
 
-:::image type="content" source="../media/create-traffic-manager-profile-2-7ebe79cf.png" alt-text="Create Traffic Manager profile":::
+| Field | Information |
+| --- | --- |
+| Name | Enter a unique name for the Traffic Manager profile. |
+| Routing method | Select the routing method to use in this profile. |
+| Subscription | Select the subscription from the list that you want this profile to be applied to. |
+| Resource group | Select the appropriate resource group from the list or create a new one. |
 
-
-You need to enter the following information on the **Create Traffic Manager profile** page.
-
-:::row:::
-  :::column:::
-    **Field**
-  :::column-end:::
-  :::column:::
-    **Information**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Name
-  :::column-end:::
-  :::column:::
-    Enter a unique name for the Traffic Manager profile.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Routing method
-  :::column-end:::
-  :::column:::
-    Select the routing method to use in this profile.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Subscription
-  :::column-end:::
-  :::column:::
-    Select the subscription from the list that you want this profile to be applied to.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Resource group
-  :::column-end:::
-  :::column:::
-    Select the appropriate resource group from the list or create a new one.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Resource group location
-  :::column-end:::
-  :::column:::
-    The Azure Traffic Manager service is global and not bound to a location. This setting refers to the location of the selected resource group and has no impact on the runtime availability of your Traffic Manager profile.
-  :::column-end:::
-:::row-end:::
-
-
-Click **Create** to create the profile.
+Select **Create** to create the profile.
 
 :::image type="content" source="../media/create-traffic-manager-profile-3-73a1ba4b.png" alt-text="Create Traffic Manager profile - Create":::
-
 
 The next step is to add endpoints to the Traffic Manager profile.
 
@@ -331,13 +273,11 @@ From the Azure portal home page, select **All resources**, then select the Traff
 
 :::image type="content" source="../media/add-traffic-manager-endpoints-1-83055d44.png" alt-text="Select the Traffic Manager profile from the list of resources":::
 
-
-On the Traffic manager profile page, under **Settings**, select **Endpoints**, then click **Add**.
+On the Traffic manager profile page, under **Settings**, select **Endpoints**, then select **Add**.
 
 :::image type="content" source="../media/add-traffic-manager-endpoints-2-b3c932c6.png" alt-text="Traffic Manager profile - Endpoints - Add":::
 
-
-You then enter the required information on the **Add endpoint** page.
+You then enter the required information on the **Add endpoint** page:
 
 :::row:::
   :::column:::
@@ -352,7 +292,7 @@ You then enter the required information on the **Add endpoint** page.
     Type
   :::column-end:::
   :::column:::
-    Select the type of endpoint to add. You can select from the following endpoint types: **Azure endpoints** **External endpoints** **Nested endpoints** Depending on which endpoint type you select here, the remaining options will differ.
+    Select the type of endpoint to add. You can select from the following endpoint ttypes: <br>**Azure endpoints** <br>**External endpoints** <br>**Nested endpoints** <br>Depending on which endpoint type you select here, the remaining options differ.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -376,12 +316,12 @@ You then enter the required information on the **Add endpoint** page.
     Target resource **(for Azure and Nested endpoints only)**
   :::column-end:::
   :::column:::
-    Select the appropriate target service, IP address, or profile from the list. The available options will differ depending on which endpoint type and target resource type are selected above.
+    Select the appropriate target service, IP address, or profile from the list. The available options differ depending on which endpoint type and target resource type are selected above.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    Fully-qualified domain name (FQDN) or IP **(for External endpoints only)**
+    fully qualified domain name (FQDN) or IP **(for External endpoints only)**
   :::column-end:::
   :::column:::
     Specify the FQDN or IP address for the external endpoint.
@@ -400,7 +340,7 @@ You then enter the required information on the **Add endpoint** page.
     Minimum child endpoints **(for Nested endpoints only)**
   :::column-end:::
   :::column:::
-    Specify the minimum number of endpoints that must be available in the *child* Traffic Manager profile for it to receive traffic. If the available endpoints in the child profile falls below this threshold, this endpoint will be considered as degraded.
+    Specify the minimum number of endpoints that must be available in the *child* Traffic Manager profile for it to receive traffic. If the available-endpoints number in the child profile falls below this threshold, this endpoint is considered as degraded.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -408,7 +348,7 @@ You then enter the required information on the **Add endpoint** page.
     Custom Header setting **(optional setting)**
   :::column-end:::
   :::column:::
-    You can configure custom headers for your endpoint, using the following paired formatting: *host:contoso.com,customheader:contoso* The maximum number of supported pairs is 8, and they are applicable for both the HTTP and HTTPS protocols. These endpoint Custom Header settings override the settings configured in a profile.
+    You can configure custom headers for your endpoint, using the following paired formatting: <br>*host:contoso.com,customheader:contoso* <br>The maximum number of supported pairs is 8, and they're applicable for both the HTTP and HTTPS protocols. These endpoint Custom Header settings override the settings configured in a profile.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -420,26 +360,21 @@ You then enter the required information on the **Add endpoint** page.
   :::column-end:::
 :::row-end:::
 
-
-Click **Add** to add the endpoint to the Traffic Manager profile.
+Select **Add** to add the endpoint to the Traffic Manager profile.
 
 :::image type="content" source="../media/add-traffic-manager-endpoints-3-70a73133.png" alt-text="Add endpoint - Add":::
 
-
-If you are adding a failover endpoint for another Azure region, then you would add another endpoint for that region. This would point to the application target resource in the other region and would have a priority setting of **2**.
+If you're adding a failover endpoint for another Azure region, then you would add another endpoint for that region. This would point to the application target resource in the other region and would have a priority setting of **2**.
 
 :::image type="content" source="../media/add-traffic-manager-endpoints-4-13808876.png" alt-text="Add failover endpoint - Add":::
 
-
-When you add endpoints to a Traffic Manager profile, their status will be checked.
+When you add endpoints to a Traffic Manager profile, their status is checked.
 
 :::image type="content" source="../media/add-traffic-manager-endpoints-5-b15e6985.png" alt-text="View list of endpoints in Traffic Manager profile":::
-
 
 Once they have been checked their **Monitor status** changes to Online.
 
 :::image type="content" source="../media/add-traffic-manager-endpoints-6-bcd9457e.png" alt-text="View list of endpoints in Traffic Manager profile - 'Monitoring status' highlighted":::
-
 
 ## Configuring endpoint monitoring
 
@@ -486,7 +421,7 @@ Then, under the **Endpoint monitor settings** section, you specify the following
     Custom Header settings
   :::column-end:::
   :::column:::
-    This configuration setting helps you add specific HTTP headers to the health checks that Traffic Manager sends to endpoints under a profile. The custom headers can be specified at a profile level to be applicable for all endpoints in that profile and / or at an endpoint level applicable only to that endpoint. You can use custom headers for health checks of endpoints in a multi-tenant environment. That way it can be routed correctly to their destination by specifying a host header. You can also use this setting by adding unique headers that can be used to identify Traffic Manager originated HTTP(S) requests and processes them differently. You can specify up to eight *header:value* pairs separated by a comma. Example - header1:value1, header2:value2
+    This configuration setting helps you add specific HTTP headers to the health checks that Traffic Manager sends to endpoints under a profile. The custom headers can be specified at a profile level to be applicable for all endpoints in that profile and / or at an endpoint level applicable only to that endpoint. You can use custom headers for health checks of endpoints in a multitenant environment. That way it can be routed correctly to their destination by specifying a host header. You can also use this setting by adding unique headers that can be used to identify Traffic Manager originated HTTP(S) requests and processes them differently. You can specify up to eight *header:value* pairs separated by a comma. Example - header1:value1, header2:value2
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -522,11 +457,9 @@ Then, under the **Endpoint monitor settings** section, you specify the following
   :::column-end:::
 :::row-end:::
 
-
-Click **Save** when you have finished endpoint monitor configuration.
+Select **Save** when you have finished endpoint monitor configuration.
 
 :::image type="content" source="../media/configure-endpoint-monitoring-1-d25bad62.png" alt-text="Traffic Manager - Endpoint configuration - Save":::
-
 
 ### How endpoint monitoring works
 

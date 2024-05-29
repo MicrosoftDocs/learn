@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-on-remote-machine.exercise-run-and-debug-code
+title: Exercise - Run and debug code
+metadata:
+  title: Exercise - Run and debug code
+  description: "Learn how to use familiar code editing features when connected to a remote machine using SSH in Visual Studio Code."
+  ms.date: 01/22/2024
+  author: olguzzar
+  ms.author: olguzzar
+  ms.topic: unit
+  ms.custom: devx-track-js
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-exercise-run-and-debug-code.md)]

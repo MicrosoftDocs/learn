@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-prepare-deployment.examine-network-diagram
+title: Examine your network diagram
+metadata:
+  title: Examine your network diagram
+  description: "Describes the network diagram preparing process and where the OT network exists on the Purdue model."
+  ms.date: 03/04/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+  ms.service: defender-for-iot
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-examine-network-diagram.md)]
+
+quiz:
+
+  questions:
+  - content: "Figure one depicts a sample network diagram. Where might you place a sensor to mirror communication from PLCs and HMIs?"
+    choices:
+    - content: "Point C"
+      isCorrect: false
+      explanation: "Point C is a good place to mirror industrial perimeter network data, not PLC and HMI information."
+    - content: "Point D"
+      isCorrect: false
+      explanation: "While you can mirror PLC and HMI information from point D, point E allows you to mirror PLC and HMI information from both zones at once."
+    - content: "Point E"
+      isCorrect: true
+      explanation: "Point E allows you to mirror PLC and HMI information from both Zone 1 and Zone 2 rather than just one of the two zones."  
+
+  - content: "What can your network diagram help you determine?"
+    choices:
+    - content: "The most interesting traffic for security and operational risks."
+      isCorrect: true
+      explanation: "The most interesting traffic is one among many things your network diagram can help you determine."
+    - content: "The most popular devices in your network."
+      isCorrect: false
+      explanation: "While you might be able to determine the most popular devices in your network, your network diagram is intended to help you figure out where to install Defender for IoT sensors."
+    - content: "The ideal temperature to run a subnet."
+      isCorrect: false
+      explanation: "Your network diagram is intended to help you determine where to implement your Defender for IoT sensors."  
+
+  - content: "Where on the Purdue model would be a likely place to place your Defender for IoT sensor?"
+    choices:
+    - content: "Between levels four and five."
+      isCorrect: false
+      explanation: "Level four and five on the Purdue model represents IT resources. You want to monitor OT traffic."
+    - content: "Between levels two and three."
+      isCorrect: true 
+      explanation: "You're trying to monitor OT traffic so your sensor should be placed where you can see all or most of your OT traffic."
+    - content: "Between levels one and two."
+      isCorrect: false
+      explanation: "Defenders for IoT sensors are typically placed where they can collect a greater amount of interesting traffic. Placing the sensor between level one and two wouldn't allow the sensor to collect necessary interesting traffic."

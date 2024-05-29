@@ -10,7 +10,7 @@ VMs are usually the starting point for *lift and shift*, which is the process to
 
 ## Containers
 
-- **Azure Kubernetes Service** (AKS) is a managed Kubernetes service. Kubernetes is the de facto standard to orchestrate your containerized applications. It's perfect for microservices and for midsized applications. AKS comes with service discovery, autoscaling, and monitoring. Microsoft is a collaborator in Kubernetes projects, such as Virtual Kubelet, Dapr, and Open Application Model.
+- **Azure Kubernetes Service** (AKS) is a managed Kubernetes service. Kubernetes is the *de facto* standard to orchestrate your containerized applications. It's perfect for microservices and for midsized applications. AKS comes with service discovery, autoscaling, and monitoring. Microsoft is a collaborator in Kubernetes projects such as Virtual Kubelet, Dapr, and Open Application Model.
 
 - **Azure Red Hat OpenShift** is the Red Hat-managed variety of Kubernetes.
 
@@ -29,7 +29,8 @@ Azure Spring Apps is integrated into the Azure ecosystem and is ready to tackle 
 ## Functions
 
 You can deploy your Java code as Azure functions. You'll benefit from great tooling and integration with other Azure services.
-Sample scenarios for functions are:
+
+Here are sample scenarios for functions:
 
 - Web, mobile and Internet of Things (IoT)-connected back ends
 - Bot or real-time file and stream processing

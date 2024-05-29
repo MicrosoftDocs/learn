@@ -4,11 +4,10 @@ title: Examine multi-SID 3-tier SAP NetWeaver high availability AnyDB deployment
 metadata:
   title: Examine multi-SID 3-tier SAP NetWeaver high availability AnyDB deployment
   description: "Examine multi-SID 3-tier SAP NetWeaver high availability AnyDB deployment"
-  ms.date: 04/23/2023
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/4-examine-multi-sid-3-tier-sap-netweaver-high-availability-anydb-deployment.md)]

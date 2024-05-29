@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-approaches-to-device-management-at-scale.examine-device-configuration-best-practices
+title: Examine device configuration best practices for Azure IoT Hub
+metadata:
+  title: Examine device configuration best practices for Azure IoT Hub
+  description: This content is part of Examine approaches to device management at scale using Azure IoT Hub
+  ms.date: 10/01/2023
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-device-configuration-best-practices.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.monitor-protection-of-workloads-in-azure-backup.built-in-azure-monitor-alerts-for-azure-backup
+title: Built-in Azure Monitor alerts for Azure Backup
+metadata:
+  title: Built-in Azure Monitor alerts for Azure Backup
+  description: Learn how to switch to built-in Azure Monitor alerts and notifications.
+  ms.date: 12/01/2023
+  author: AbhishekMallick-MS
+  ms.author: v-abhmallick
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-built-in-azure-monitor-alerts-for-azure-backup.md)]
+
