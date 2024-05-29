@@ -40,8 +40,8 @@ roles:
 languages:
   - bicep
 products:
-- azure
-- azure-resource-manager
+  - azure
+  - azure-resource-manager
 subjects:
   - cloud-computing
   - devops
