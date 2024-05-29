@@ -39333,6 +39333,11 @@
       "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/8-summary.md",
       "redirect_url": "/training/paths/work-power-virtual-agents/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-active-directory/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-azure-active-directory/",
+      "redirect_document_id": false
     }
   ]
 }
