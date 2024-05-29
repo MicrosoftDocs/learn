@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.plan-your-linux-environment-in-azure
 metadata:
-  ms.author: chasecrum
-  author: chasecrum
+  ms.author: carols
+  author: fossygirl
   ms.date: 10/16/2023
   title: Plan your Linux environment in Azure
   description: Learn about standards and practices for planning, deploying, managing, and optimizing Linux VMs in Azure.
