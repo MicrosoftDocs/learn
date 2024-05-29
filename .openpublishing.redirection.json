@@ -39438,6 +39438,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-dns/3-verify-custom-domain-names.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/host-domain-azure-dns/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-backup/",
+      "redirect_document_id": false
     }
   ]
 }
