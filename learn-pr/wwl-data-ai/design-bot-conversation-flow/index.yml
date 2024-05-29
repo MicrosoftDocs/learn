@@ -33,6 +33,5 @@ products:
 subjects:
 - chatbots
 units:
-- learn.wwl.design-bot-conversation-flow.summary
 badge:
   uid: learn.wwl.design-bot-conversation-flow.badge
