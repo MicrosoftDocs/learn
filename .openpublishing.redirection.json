@@ -39373,6 +39373,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-active-directory/5-select-editions.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/understand-azure-active-directory/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-active-directory/8-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-azure-active-directory/",
+      "redirect_document_id": false
     }
   ]
 }
