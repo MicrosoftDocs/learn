@@ -48,7 +48,7 @@ What operations can be performed on deployment stacks? You're able to create, li
 
 Creating and deploying a deployment stack and its resources is nearly identical to a standard Azure deployment and it uses the same ARM JSON templates, Bicep files, or template specs you're used to. For example:
 
-The Azure CLI command to deploy a bicep file to a resource group is:
+The Azure CLI command to deploy a Bicep file to a resource group is:
 
 ```azurecli
 az deployment group create \
@@ -63,7 +63,7 @@ az stack group create \
     --name stack-deposits \
     --resource-group rg-depositsApplication \
     --template-file ./main.bicep \
-    --action-on-unmanage deleteAll \
+    --action-on-unmanage detachAll \
     --deny-settings-mode none
 ```
 
@@ -75,7 +75,7 @@ The Azure CLI command to delete a deployment stack at the resource group scope a
 az stack group delete \
     --name stack-deposits \
     --resource-group rg-depositsApplication \
-    --action-on-unmanage deleteAll
+    --action-on-unmanage detachAll
 ```
 
 > [!NOTE]
