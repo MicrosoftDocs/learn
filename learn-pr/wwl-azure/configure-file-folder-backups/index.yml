@@ -32,6 +32,5 @@ products:
 subjects:
 - site-reliability-engineering
 units:
-- learn.wwl.configure-file-folder-backups.summary-resources
 badge:
   uid: learn.wwl.configure-file-folder-backups.badge
