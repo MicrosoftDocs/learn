@@ -3666,6 +3666,136 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/00-accessibility-checker.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/01-word.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/02-powerpoint.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/03-excel.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/04-outlook.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/05-knowledge-check.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/06-summary-resources.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessible-content-m365/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/00-windows-10-accessibility.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/01-gaming-features-and-tools.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/02-microsoft-365-features.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/03-knowledge-check.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/04-summary-resources.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/accessibility-features/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/00-what-is-accessibility.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/01-language-and-etiquette.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/02-what-is-inclusion.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/03-knowledge-check.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/04-summary-and-resources.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/00-web-development.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/01-app-development.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/02-knowledge-check.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/03-summary-and-resources.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/accessibility-fundamentals/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/index.md",
       "redirect_url": "/training/modules/transcribe-speech-input-text",
       "redirect_document_id": false
@@ -6218,6 +6348,111 @@
     {
       "source_path": "learn-pr/azure/create-azure-db-for-postgresql-server/index.md",
       "redirect_url": "/training/modules/intro-to-postgres/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/introduction-to-azure-postgres/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/2-what-is-azure-database-postgresql.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/3-how-azure-database-postgres-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/4-when-to-use-azure-database-postgres.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/2-create-database-azure-database-postgresql.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/3-exercise-create-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/4-connect-develop-your-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/5-exercise-create-basic-schema.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/6-connect-app-to-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/7-exercise-use-database-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-connect-to-postgres/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.azure.azure-database-for-postgresql.trophy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.azure.create-and-connect-to-azure-database-postgresql.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.create-azure-db-for-postgresql.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
       "redirect_document_id": false
     },
     {
@@ -16596,16 +16831,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/wwl-azure/software-composition-analysis/9-knowledge-check.md",
-      "redirect_url": "/training/modules/software-composition-analysis/10-knowledge-check",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/software-composition-analysis/10-summary.md",
-      "redirect_url": "/training/modules/software-composition-analysis/11-summary",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "learn-pr/wwl-azure/static-analyzers/4-knowledge-check.md",
       "redirect_url": "/training/modules/static-analyzers/5-knowledge-check",
       "redirect_document_id": true
@@ -18447,37 +18672,37 @@
     },
     {
       "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/index.md",
-      "redirect_url": "https://learn.microsoft.com/dotnet/maui/tutorials/notes-mvvm",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/dotnet/maui/tutorials/notes-mvvm",
+      "redirect_url": "training/modules/design-mvvm-viewmodel/1-introduction",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/2-what-is-mvvm.md",
-      "redirect_url": "https://learn.microsoft.com/dotnet/maui/tutorials/notes-mvvm",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/2-what-is-mvvm",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/3-use-a-viewmodel.md",
-      "redirect_url": "https://learn.microsoft.com/dotnet/maui/tutorials/notes-mvvm",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/3-use-viewmodel",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/4-exercise-manage-selection-with-a-viewmodel.md",
-      "redirect_url": "https://learn.microsoft.com/dotnet/maui/tutorials/notes-mvvm",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/4-exercise-manage-selection-with-viewmodel",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/5-use-commands-in-a-viewmodel.md",
-      "redirect_url": "https://learn.microsoft.com/dotnet/maui/tutorials/notes-mvvm",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/5-use-commands-viewmodel",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/6-summary.md",
-      "redirect_url": "https://learn.microsoft.com/dotnet/maui/tutorials/notes-mvvm",
+      "redirect_url": "/training/modules/design-mvvm-viewmodel/7-summary",
       "redirect_document_id": false
     },
     {
@@ -25651,16 +25876,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-azure/integrate-azure-pipelines/8-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-azure-pipelines/7-knowledge-check",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/integrate-azure-pipelines/9-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-azure-pipelines/8-summary",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/wwl-azure/share-knowledge-within-teams/5-integrate-azure-devops-teams.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/share-knowledge-within-teams/",
       "redirect_document_id": false
@@ -26777,11 +26992,6 @@
   {
     "source_path": "learn-pr/paths/recommend-security-best-practices/index.yml",
     "redirect_url": "/training/paths/sc-100-design-solutions-best-practices-priorities/index.yml",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/wwl-azure/design-container-build-strategy/6-examine-considerations-multiple-stage-builds.md",
-    "redirect_url": "https://learn.microsoft.com/training/modules/design-container-build-strategy/6-examine-considerations-for-multiple-stage-builds",
     "redirect_document_id": false
   },
   {
@@ -29881,21 +30091,6 @@
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/10-exercise-create-run-workflow-runbook.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-automation-devops/11-exercise-create-run-workflow-runbook",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/11-examine-checkpoint-parallel-processing.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-automation-devops/12-examine-checkpoint-parallel-processing",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/12-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-automation-devops/13-knowledge-check",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/13-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-automation-devops/14-summary",
       "redirect_document_id": false
     },
     {
@@ -37909,15 +38104,1185 @@
       "redirect_url": "/training/modules/identify-technical-debt/10-summary",
       "redirect_document_id": true
     },
-     {
+    {
       "source_path": "learn-pr/wwl-azure/design-processes-automate-application-analytics/5-knowledge-check.md",
       "redirect_url": "/training/modules/design-processes-automate-application-analytics/6-knowledge-check",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "learn-pr/wwl-azure/design-processes-automate-application-analytics/6-summary.md",
       "redirect_url": "/training/modules/design-processes-automate-application-analytics/7-summary",
       "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/wwl-azure/explore-package-dependencies/2-what-dependency-management.md",
+      "redirect_url": "/training/modules/explore-package-dependencies/2-what-is-dependency-management",
+      "redirect_document_id": false
+    }, 
+    {
+    "source_path": "learn-pr/paths/azure-cosmos-db-for-postgresql/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/2-classify-tables-based-on-processing.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+     "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/3-exercise-create-tables.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/4-scaffold-data-for-distribution.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/5-exercise-create-scaffolding.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/6-partition-timeseries-data.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/7-exercise-create-timeseries-partitions.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/8-alter-scaffolding-in-a-distributed-environment.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/9-exercise-alter-scaffolding.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/10-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/model-data-azure-cosmos-db-postgresql/11-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/2-load-data.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/3-exercise-load-data.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/4-data-distribution.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/5-exercise-data-distribution.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/6-query-execution.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/7-query-distributed-tables.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/8-query-anti-patterns.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/9-exercise-query-data.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/10-unsupported-features.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/11-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/ingest-query-data-using-azure-cosmos-db-for-postgresql/12-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/2-citus.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/3-exercise-explore-citus.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/4-apply-extensions.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/5-azure-storage.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/6-exercise-azure-storage.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/7-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/8-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/2-scale-and-rebalance-data.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/3-exercise-scale-and-rebalance-data.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/4-work-with-read-replicas.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/5-exercise-manage-read-replicas.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/6-configure-high-availability.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/7-exercise-configure-high-availability.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/8-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/manage-performance-availability-azure-cosmos-db-postgresql/9-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/2-use-cases-for-single-node.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/3-exercise-create-single-node-cluster.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/4-understand-architecture.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/5-exercise-scale-nodes.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/6-address-schema-concerns.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/7-distribute-tables.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/8-exercise-distribute-tables.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/9-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql/10-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/2-prep-tables-for-multi-tenant-data-architecture.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/3-exercise-prep-tables-for-distribution.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/4-distribute-tables-with-minimal-app-disruption.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/5-exercise-distribute-multi-tenant-tables.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/6-monitor-tenants.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/7-isolate-tenants.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/8-exercise-isolate-tenant.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/9-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql/10-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/postgresql",
+    "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/2-explore-azure-dashboards.md",
+      "redirect_url": "/training/modules/develop-monitor-status-dashboards/3-explore-azure-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/3-examine-view-designer-azure-monitor.md",
+      "redirect_url": "/training/modules/develop-monitor-status-dashboards/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/7-knowledge-check.md",
+      "redirect_url": "/training/modules/develop-monitor-status-dashboards/10-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/develop-monitor-status-dashboards/8-summary.md",
+      "redirect_url": "/training/modules/develop-monitor-status-dashboards/11-summary",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/understand-concurrency-postgresql/3-describe-isolation-levels.md",
+      "redirect_url": "/training/modules/understand-concurrency-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-concurrency-postgresql/4-understand-lock.md",
+      "redirect_url": "/training/modules/understand-concurrency-postgresql/4-understand-locking",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-concurrency-postgresql/5-exercise-understand-lock.md",
+      "redirect_url": "/training/modules/understand-concurrency-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/index.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/1-introduction.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/2-lesson-authentication.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/3-exercise-authentication.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/4-lesson-publish.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/5-exercise-publish.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/6-lesson-clone.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/7-exercise-clone.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/8-knowledge-check.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/introduction-to-github-visual-studio-code/9-summary.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/get-started-github-and-visual-studio-code/index.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/understand-write-ahead-logging/2-describe.md",
+      "redirect_url": "/training/modules/understand-write-ahead-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-write-ahead-logging/3-describe-replication-logical-decode.md",
+      "redirect_url": "/training/modules/understand-write-ahead-logging/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/2-create-stored-procedure-azure-database-for-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/2-create-stored-procedure-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/3-call-stored-procedure-azure-database-for-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/3-call-stored-procedure-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/4-create-use-function-azure-database-for-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/4-create-function-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/procedures-functions-postgresql/5-exercise-create-stored-procedure-azure-database-for-postgresql.md",
+      "redirect_url": "/training/modules/procedures-functions-postgresql/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/secure-azure-database-for-postgresql/7-exercise-configure-permissions.md",
+      "redirect_url": "/training/modules/secure-azure-database-for-postgresql/6-exercise-configure-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-azure-database-for-postgresql/8-knowledge-check.md",
+      "redirect_url": "/training/modules/secure-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-azure-database-for-postgresql/9-summary.md",
+      "redirect_url": "/training/modules/secure-azure-database-for-postgresql/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-postgresql-query-process/4-exercise-practice-explain.md",
+      "redirect_url": "/training/modules/understand-postgresql-query-process/",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/wwl-azure/understand-client-server-communication-postgresql/4-exercise-explore-data-studio.md",
+      "redirect_url": "/training/modules/understand-client-server-communication-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/10-knowledge-check.md",
+      "redirect_url": "/training/modules/software-composition-analysis/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/11-summary.md",
+      "redirect_url": "/training/modules/software-composition-analysis/10-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/4-integrate-whitesource-azure-devops-pipeline.md",
+      "redirect_url": "/training/modules/software-composition-analysis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/5-implement-github-dependabot-alerts-security-updates.md",
+      "redirect_url": "/training/modules/software-composition-analysis/4-implement-github-dependabot-alerts-security-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/6-integrate-software-composition-analysis-checks-into-pipelines.md",
+      "redirect_url": "/training/modules/software-composition-analysis/5-integrate-software-composition-analysis-checks-into-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/7-examine-tools-for-assess-package-security-license-rate.md",
+      "redirect_url": "/training/modules/software-composition-analysis/6-examine-tools-for-assess-package-security-license-rate",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/software-composition-analysis/9-implement-security-compliance-azure-pipeline.md",
+      "redirect_url": "/training/modules/software-composition-analysis/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-and-governance/10-understand-microsoft-defender-identity.md",
+      "redirect_url": "/training/modules/security-monitoring-and-governance/9-understand-microsoft-defender-identity",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-and-governance/11-knowledge-check.md",
+      "redirect_url": "/training/modules/security-monitoring-and-governance/12-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-and-governance/12-summary.md",
+      "redirect_url": "/training/modules/security-monitoring-and-governance/13-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-monitoring-and-governance/9-explore-azure-blueprints.md",
+      "redirect_url": "/training/modules/security-monitoring-and-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/security-ops-sentinel/index.yml",
+      "redirect_url": "/training/paths/sc-200-configure-azure-sentinel-environment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/index.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/1-introduction.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/2-deployment-options.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/3-permissions-roles.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/4-connect-data-sources.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/5-data-connection-methods.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/6-manage-logs.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sentinel-deploy-configure/8-summary.yml",
+      "redirect_url": "/training/modules/create-manage-azure-sentinel-workspaces/",
+      "redirect_document_id": false
+    },      
+      {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/10-summary.md",
+      "redirect_url": "/training/modules/explore-release-strategy-recommendations/9-summary",
+      "redirect_document_id": false
+    },
+       {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/3-exercise-select-your-delivery-deployment-cadence.md",
+      "redirect_url": "/training/modules/explore-release-strategy-recommendations/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/4-explore-release-approvals.md",
+      "redirect_url": "/training/modules/explore-release-strategy-recommendations/3-explore-release-approvals",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/5-exercise-set-up-manual-approvals.md",
+      "redirect_url": "/training/modules/explore-release-strategy-recommendations/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/6-explore-release-gates.md",
+      "redirect_url": "/training/modules/explore-release-strategy-recommendations/4-explore-release-gates",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/7-use-release-gates-to-protect-quality.md",
+      "redirect_url": "/training/modules/explore-release-strategy-recommendations/5-use-release-gates-to-protect-quality",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/8-control-deployments-using-release-gates.md",
+      "redirect_url": "/training/modules/explore-release-strategy-recommendations/7-control-deployments-using-release-gates",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/9-knowledge-check.md",
+      "redirect_url": "/training/modules/explore-release-strategy-recommendations/8-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/3-exercise-create-manage-task-groups.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/4-explore-variables-release-pipelines.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/3-explore-variables-release-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/5-understand-variable-groups.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/6-exercise-create-manage-variable-groups.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/7-knowledge-check.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-modularize-tasks-templates/8-summary.md",
+      "redirect_url": "/training/modules/manage-modularize-tasks-templates/6-summary",
+      "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/introduction-to-secure-devops/8-exercise-threat-modeling.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-secure-devops",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-azure-resources-using-azure-resource-manager-templates/7-azure-deployment-using-resource-manager-templates.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/create-azure-resources-using-azure-resource-manager-templates",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-azure-resources-using-azure-resource-manager-templates/8-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/create-azure-resources-using-azure-resource-manager-templates/7-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-azure-resources-using-azure-resource-manager-templates/9-summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/create-azure-resources-using-azure-resource-manager-templates/8-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-azure-resources-by-using-azure-cli/4-exercise-run-templates-using-azure-cli.md",
+    "redirect_url": "/training/modules/create-azure-resources-by-using-azure-cli/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-azure-resources-by-using-azure-cli/5-knowledge-check.md",
+    "redirect_url": "/training/modules/create-azure-resources-by-using-azure-cli/4-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-azure-resources-by-using-azure-cli/6-summary.md",
+    "redirect_url": "/training/modules/create-azure-resources-by-using-azure-cli/5-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/11-exercise-create-run-workflow-runbook.md",
+    "redirect_url": "/training/modules/explore-azure-automation-devops",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/12-examine-checkpoint-parallel-processing.md",
+    "redirect_url": "/training/modules/explore-azure-automation-devops/11-examine-checkpoint-parallel-processing",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/13-knowledge-check.md",
+    "redirect_url": "/training/modules/explore-azure-automation-devops/12-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/explore-azure-automation-devops/14-summary.md",
+    "redirect_url": "/training/modules/explore-azure-automation-devops/13-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/10-knowledge-check.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/7-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/11-summary.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/8-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/6-exercise-import-compile.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/7-exercise-onboard-machines-for-management.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/8-explore-hybrid-management.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-desired-state-configuration-dsc/9-implement-dsc-linux-automation-azure.md",
+    "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/6-implement-dsc-linux-automation-azure",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-bicep/8-knowledge-check.md",
+    "redirect_url": "/training/modules/implement-bicep/9-knowledge-check",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-bicep/9-summary.md",
+    "redirect_url": "/training/modules/implement-bicep/10-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/15-explore-best-practices-dp-100-learning-path-12.md",
+    "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/16-bring-it-all-together.md",
+    "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/15-bring-it-all-together",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/17-knowledge-check.md",
+    "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/16-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/18-summary.md",
+    "redirect_url": "/training/modules/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/17-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/describe-pipelines-concurrency/7-knowledge-check.md",
+    "redirect_url": "/training/modules/describe-pipelines-concurrency/8-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/describe-pipelines-concurrency/8-summary.md",
+    "redirect_url": "/training/modules/describe-pipelines-concurrency/9-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-tools-track-usage-flow/8-exercise-add-application-insights-asp-net-core-application.md",
+    "redirect_url": "/training/modules/implement-tools-track-usage-flow/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/share-knowledge-within-teams/4-integrate-azure-boards.md",
+    "redirect_url": "/training/modules/share-knowledge-within-teams/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-versioning-strategy/10-summary.md",
+    "redirect_url": "/training/modules/implement-versioning-strategy/8-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-versioning-strategy/6-exercise-promote-package.md",
+    "redirect_url": "/training/modules/implement-versioning-strategy/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-versioning-strategy/7-explore-best-practices-for-versioning.md",
+    "redirect_url": "/training/modules/implement-versioning-strategy/6-explore-best-practices-for-versioning",
+    "redirect_document_id": false
+    },
+       {
+    "source_path": "learn-pr/wwl-azure/implement-versioning-strategy/8-exercise-push-from-pipeline.md",
+    "redirect_url": "/training/modules/implement-versioning-strategy/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-versioning-strategy/9-knowledge-check.md",
+    "redirect_url": "/training/modules/implement-versioning-strategy/7-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-branches-workflows/7-version-control-git-azure-repos.md",
+    "redirect_url": "/training/modules/manage-git-branches-workflows/8-version-control-git-azure-repos",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-branches-workflows/8-knowledge-check.md",
+    "redirect_url": "/training/modules/manage-git-branches-workflows/9-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-branches-workflows/9-summary.md",
+    "redirect_url": "/training/modules/manage-git-branches-workflows/10-summary",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/collaborate-pull-requests-azure-repos/4-examine-github-mobile-for-pull-request-approvals.md",
+    "redirect_url": "/training/modules/collaborate-pull-requests-azure-repos/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/collaborate-pull-requests-azure-repos/5-knowledge-check.md",
+    "redirect_url": "/training/modules/collaborate-pull-requests-azure-repos/4-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/collaborate-pull-requests-azure-repos/6-summary.md",
+    "redirect_url": "/training/modules/collaborate-pull-requests-azure-repos/5-summary",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/manage-git-repositories/3-purge-repository-data.md",
+    "redirect_url": "/training/modules/manage-git-repositories/7-purge-repository-data",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-repositories/4-manage-releases-github-repos.md",
+    "redirect_url": "/training/modules/manage-git-repositories/8-manage-releases-github-repos",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-repositories/5-automate-release-notes-github.md",
+    "redirect_url": "/training/modules/manage-git-repositories/9-automate-release-notes-github",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-repositories/6-knowledge-check.md",
+    "redirect_url": "/training/modules/manage-git-repositories/14-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-git-repositories/7-summary.md",
+    "redirect_url": "/training/modules/manage-git-repositories/15-summary",
+    "redirect_document_id": false
+    },
+      {
+    "source_path": "learn-pr/wwl-azure/plan-agile-github-projects-azure-boards/10-knowledge-check.md",
+    "redirect_url": "/training/modules/plan-agile-github-projects-azure-boards/13-knowledge-check",
+    "redirect_document_id": false
+    },
+         {
+    "source_path": "learn-pr/wwl-azure/plan-agile-github-projects-azure-boards/11-summary.md",
+    "redirect_url": "/training/modules/plan-agile-github-projects-azure-boards/14-summary",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/plan-agile-github-projects-azure-boards/4-link-github-to-azure-boards.md",
+    "redirect_url": "/training/modules/plan-agile-github-projects-azure-boards/5-link-github-to-azure-boards",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/plan-agile-github-projects-azure-boards/5-configure.yml",
+    "redirect_url": "/training/modules/plan-agile-github-projects-azure-boards/6-configure",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/plan-agile-github-projects-azure-boards/6-manage-work-github-project-boards.md",
+    "redirect_url": "/training/modules/plan-agile-github-projects-azure-boards/7-manage-work-github-project-boards",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/plan-agile-github-projects-azure-boards/7-customize-project-views.md",
+    "redirect_url": "/training/modules/plan-agile-github-projects-azure-boards/8-customize-project-views",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/plan-agile-github-projects-azure-boards/8-collaborate-using-team-discussions.md",
+    "redirect_url": "/training/modules/plan-agile-github-projects-azure-boards/9-collaborate-using-team-discussions",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/plan-agile-github-projects-azure-boards/9-agile-plan-portfolio-management-azure-boards.md",
+    "redirect_url": "/training/modules/plan-agile-github-projects-azure-boards/12-agile-plan-portfolio-management-azure-boards",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/design-container-build-strategy/6-examine-considerations-for-multiple-stage-builds.md",
+    "redirect_url": "/training/modules/design-container-build-strategy/6-examine-considerations-multiple-stage-builds",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-pipeline-strategy/3-implement-multi-agent-builds.md",
+    "redirect_url": "/training/modules/implement-pipeline-strategy/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-pipeline-strategy/4-explore-source-control-types-supported-by-azure-pipelines.md",
+    "redirect_url": "/training/modules/implement-pipeline-strategy/8-explore-source-control-types-supported-by-azure-pipelines",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-pipeline-strategy/5-knowledge-check.md",
+    "redirect_url": "/training/modules/implement-pipeline-strategy/9-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-pipeline-strategy/6-summary.md",
+    "redirect_url": "/training/modules/implement-pipeline-strategy/10-summary",
+    "redirect_document_id": false
+    },
+        {
+    "source_path": "learn-pr/wwl-azure/integrate-azure-pipelines/7-knowledge-check.md",
+    "redirect_url": "/training/modules/integrate-azure-pipelines/8-knowledge-check",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/integrate-azure-pipelines/8-summary.md",
+    "redirect_url": "/training/modules/integrate-azure-pipelines/9-summary",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-blue-green-deployment-feature-toggles/4-exercise-set-up-blue-green-deployment.md",
+    "redirect_url": "/training/modules/implement-blue-green-deployment-feature-toggles/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-blue-green-deployment-feature-toggles/5-introduction-feature-toggles.md",
+    "redirect_url": "/training/modules/implement-blue-green-deployment-feature-toggles/4-introduction-feature-toggles",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-blue-green-deployment-feature-toggles/6-describe-feature-toggle-maintenance.md",
+    "redirect_url": "/training/modules/implement-blue-green-deployment-feature-toggles/5-describe-feature-toggle-maintenance",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-blue-green-deployment-feature-toggles/7-knowledge-check.md",
+    "redirect_url": "/training/modules/implement-blue-green-deployment-feature-toggles/6-knowledge-check",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/implement-blue-green-deployment-feature-toggles/8-summary.md",
+    "redirect_url": "/training/modules/implement-blue-green-deployment-feature-toggles/7-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-test-progressive-exposure-deployment/2-what-a-b-testing.md",
+    "redirect_url": "/training/modules/implement-test-progressive-exposure-deployment/2-what-ab-testing",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-test-progressive-exposure-deployment/4-exercise-ring-based-deployment.md",
+    "redirect_url": "/training/modules/implement-test-progressive-exposure-deployment/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-test-progressive-exposure-deployment/5-knowledge-check.md",
+    "redirect_url": "/training/modules/implement-test-progressive-exposure-deployment/4-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/implement-test-progressive-exposure-deployment/6-summary.md",
+    "redirect_url": "/training/modules/implement-test-progressive-exposure-deployment/5-summary",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/integrate-identity-management-systems/3-explore-service-principals.md",
+    "redirect_url": "/training/modules/integrate-identity-management-systems/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/integrate-identity-management-systems/4-explore-managed-identity.md",
+    "redirect_url": "/training/modules/integrate-identity-management-systems/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/integrate-identity-management-systems/5-knowledge-check.md",
+    "redirect_url": "/training/modules/integrate-identity-management-systems/7-knowledge-check",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/integrate-identity-management-systems/6-summary.md",
+    "redirect_url": "/training/modules/integrate-identity-management-systems/8-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/10-examine-devops-inner-outer-loop.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/11-examine-devops-inner-outer-loop",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/11-integrate-azure-key-vault-with-azure-devops.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/12-integrate-azure-key-vault-with-azure-devops",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/12-enable-dynamic-configuration-feature-flags.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/13-enable-dynamic-configuration-feature-flags",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/13-knowledge-check.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/14-knowledge-check",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/14-summary.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/15-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/5-introduction-to-azure-app-configuration.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/6-introduction-to-azure-app-configuration",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/6-examine-key-value-pairs.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/7-examine-key-value-pairs",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/7-examine-app-configuration-feature-management.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/8-examine-app-configuration-feature-management",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/8-integrate-azure-key-vault-azure-pipelines.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/9-integrate-azure-key-vault-azure-pipelines",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/9-manage-secrets-tokens-certificates.md",
+    "redirect_url": "/training/modules/manage-application-configuration-data/10-manage-secrets-tokens-certificates",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/create-release-pipeline-devops/10-explore-custom-build-release-tasks.md",
+    "redirect_url": "/training/modules/create-release-pipeline-devops/8-explore-custom-build-release-tasks",
+    "redirect_document_id": false
+    },
+      {
+    "source_path": "learn-pr/wwl-azure/create-release-pipeline-devops/11-explore-release-jobs.md",
+    "redirect_url": "/training/modules/create-release-pipeline-devops/9-explore-release-jobs",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-release-pipeline-devops/12-configure-pipelines-code-with-yaml.md",
+    "redirect_url": "/training/modules/create-release-pipeline-devops/11-configure-pipelines-code-with-yaml",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-release-pipeline-devops/13-knowledge-check.md",
+    "redirect_url": "/training/modules/create-release-pipeline-devops/12-knowledge-check",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-release-pipeline-devops/14-summary.md",
+    "redirect_url": "/training/modules/create-release-pipeline-devops/13-summary",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-release-pipeline-devops/6-exercise-select-artifact-source.yml",
+    "redirect_url": "/training/modules/create-release-pipeline-devops/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-release-pipeline-devops/7-examine-considerations-for-deployment-to-stages.md",
+    "redirect_url": "/training/modules/create-release-pipeline-devops/6-examine-considerations-for-deployment-to-stages",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-release-pipeline-devops/8-exercise-set-up-stages.md",
+    "redirect_url": "/training/modules/create-release-pipeline-devops/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/create-release-pipeline-devops/9-explore-build-release-tasks.md",
+    "redirect_url": "/training/modules/create-release-pipeline-devops/7-explore-build-release-tasks",
+    "redirect_document_id": false
+    },
+      {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/10-examine-considerations-for-choosing-release-management-tools.md",
+    "redirect_url": "/training/modules/automate-inspection-health/9-examine-considerations-for-choosing-release-management-tools",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/11-explore-common-release-management-tools.md",
+    "redirect_url": "/training/modules/automate-inspection-health/10-explore-common-release-management-tools",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/12-knowledge-check.md",
+    "redirect_url": "/training/modules/automate-inspection-health/11-knowledge-check",
+    "redirect_document_id": false
+    },
+      {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/13-summary.md",
+    "redirect_url": "/training/modules/automate-inspection-health/12-summary",
+    "redirect_document_id": false
+    },
+      {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/5-exercise-set-up-service-hooks-to-monitor-pipeline.md",
+    "redirect_url": "/training/modules/automate-inspection-health/",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/6-configure-azure-devops-notifications.md",
+    "redirect_url": "/training/modules/automate-inspection-health/5-configure-azure-devops-notifications",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/7-configure-github-notifications.md",
+    "redirect_url": "/training/modules/automate-inspection-health/6-configure-github-notifications",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/8-explore-how-to-measure-quality-of-your-release-process.md",
+    "redirect_url": "/training/modules/automate-inspection-health/7-explore-how-to-measure-quality-of-your-release-process",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-azure/automate-inspection-health/9-examine-release-notes-documentation.md",
+    "redirect_url": "/training/modules/automate-inspection-health/8-examine-release-notes-documentation",
+    "redirect_document_id": false
+    },
+      {
+    "source_path": "learn-pr/wwl-azure/introduction-to-devops/5-explore-shared-goals-define-timelines.md",
+    "redirect_url": "/training/modules/introduction-to-devops/6-explore-shared-goals-define-timelines",
+    "redirect_document_id": false
+    },
+       {
+    "source_path": "learn-pr/wwl-azure/introduction-to-devops/6-knowledge-check.md",
+    "redirect_url": "/training/modules/introduction-to-devops/14-knowledge-check",
+    "redirect_document_id": false
+    },
+     {
+    "source_path": "learn-pr/wwl-azure/introduction-to-devops/7-summary.md",
+    "redirect_url": "/training/modules/introduction-to-devops/15-summary",
+    "redirect_document_id": false
     }
   ]
 }

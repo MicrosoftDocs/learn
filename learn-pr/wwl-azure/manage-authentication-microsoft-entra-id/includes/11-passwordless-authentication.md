@@ -54,6 +54,7 @@ The prerequisites are determined by your selected passwordless authentication me
 | Windows 10 version 1809 or higher using a supported browser like Microsoft Edge or Mozilla Firefox (version 67 or higher). Microsoft recommends version 1903 or higher for native support.                                                      |                             | √                       |
 | Compatible security keys. Ensure that you're using a [Microsoft-tested and verified FIDO2 security key](/entra/identity/authentication/concept-authentication-passwordless), or other compatible FIDO2 security key. |                             | √                       |
 
+|
 
 ### Windows Hello for Business
 
