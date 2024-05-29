@@ -1,8 +1,8 @@
-Governance seeks to mitigate tangible risks through corporate policy. The policies establish the proper scope of corporate actions. Poor governance policies can create unnecessary constraints, and they might not provide protection. This unit describes how to create proper, actionable corporate policies.
+Governance seeks to mitigate tangible risks through corporate policy. The policies establish the proper scope of corporate actions. Poor governance policies can create unnecessary constraints, and they might not provide protection. This unit describes Tailwind Trader's noncompliant policy and describes how to assess risks.
 
-## Blocked by current policy
+## Blocked by a current policy
 
-Tailwind Traders has policies already in place. A current policy states that "Customer and financial data can only be hosted in a specific network segment of the *existing datacenters*, referred to as protected assets." The policy is problematic, because the business plans to move its on-premises datacenters to the cloud.
+Tailwind Traders has existing policies in place. A current policy states that "Customer and financial data can only be hosted in a specific network segment of the *existing datacenters*, referred to as protected assets." The policy is problematic, because the business plans to move its on-premises datacenters to the cloud.
 
 Corporate policies are designed to instruct teams on the best way to address tangible risks that the organization deems intolerable. Corporate policies aren't designed to require a specific technical implementation.
 
@@ -10,9 +10,9 @@ The CIO is working to change the policy, but the central operations and infrastr
 
 - Control costs to deliver on the promised savings as adoption scales
 
-- Adhere to security and third-party compliance requirements
-- Configure asset management to prepare all workloads to be ready for operations management
-- Apply and meet identity and access-management requirements
+- Adhere to security and partner compliance requirements
+- Configure asset management to prepare all workloads for operations management
+- Apply and meet identity and access management requirements
 - Follow a path to ensure that all these controls are consistently applied to all workloads while acknowledging the scale and learning curve challenges across the technology teams
 
 To give the CIO confidence that the team is ready to migrate more complex, higher-risk workloads to the cloud. They must demonstrate that these controls are in place. It also provides the required governance balance.
@@ -87,4 +87,3 @@ When you evaluate existing corporate policies to apply them to the cloud or to a
 
 The Tailwind Traders' policy on protected data fails to answer these questions. Other sources, such as policy handbooks, might address some of these questions. But Tailwind Traders doesn't have an answer for the final technology-focused question. The existing policy doesn't mitigate risks. It actually introduces long-term risks because it confines Tailwind Traders to a single solution.
 
-<!--Change the second question here-->

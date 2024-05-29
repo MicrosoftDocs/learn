@@ -53,8 +53,8 @@ units:
 - learn.azure.cloud-adoption-framework-govern.4-corporate-policies
 - learn.azure.cloud-adoption-framework-govern.5-document-enforce
 - learn.azure.cloud-adoption-framework-govern.6-knowledge-check
-- learn.azure.cloud-adoption-framework-govern.7-deploy-governance-foundation
-- learn.azure.cloud-adoption-framework-govern.8-mature-cost-management
+- learn.azure.cloud-adoption-framework-govern.7-enforce-policies
+- learn.azure.cloud-adoption-framework-govern.8-monitor-cloud-governance
 - learn.azure.cloud-adoption-framework-govern.9-summary
 badge:
   uid: learn.azure.cloud-adoption-framework-govern.badge

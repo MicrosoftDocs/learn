@@ -63,4 +63,3 @@ To enforce their new policy "Avoid overspending," Tailwind Traders can:
 - Put aside extra funds for unexpected costs.
 - Optimize resource usage.
 
-These exercises help demonstrate a starting point or foundation for governance. In the next unit, you'll build on this foundation to 

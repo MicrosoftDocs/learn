@@ -17,15 +17,18 @@ After your policies are in place and you align your organization's processes and
 
 **Develop a remediation plan** to automatically remediate violations quickly. Prioritize high-risk violations. Use manual remediation where you can't implement automated processes. After remediation, update governance policies and enforcement mechanisms to prevent future violations.
 
-
-Add examples of the Tailwind story
-
-
 ## Use Microsoft Cost Management
 
 Use Microsoft Cost Management to monitor your cost data and manage cloud governance cost. Cost Management combines data about your resource organization, Azure Advisor alerts, and your governance foundation.
 
 Monitor resource optimization to help reduce costs. You can use Azure Advisor to monitor Azure resource costs, and configure alerts for new Azure Advisor recommendations. You can also configure anomaly alerts in Cost Management to notify you when an unexpected cost occurs.
+
+Tailwind Traders created a cost budget to enforce new policy "Avoid overspending." To incorporate monitoring, they can:
+
+- Use Cost Management to monitor their spending and ensure that they stay within the budget. 
+
+- Configure alerts to notify the billing unit leader when spending exceeds the budget.
+- Develop a plan to block certain expenses or limit expenses to certain roles if violations occur.
 
 ### Exercise: Create a budget
 

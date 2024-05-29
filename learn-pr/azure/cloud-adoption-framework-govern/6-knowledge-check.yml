@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Test your knowledge of the Govern methodology.
-  ms.date: 08/08/2023
+  ms.date: 05/29/2024
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
@@ -12,9 +12,8 @@ durationInMinutes: 10
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: Which comes first? What matters most?
   questions:
-  - content: To address the risks and concerns the Tailwind Traders CIO raises in the customer narrative, which of the following steps would you start with?
+  - content: To address the risks and concerns that the Tailwind Traders CIO raises in the customer narrative, which of the following steps would you start with?
     choices:
     - content: Use Azure tools to automate notifications for triggers.
       isCorrect: false
@@ -28,7 +27,7 @@ quiz:
     - content: Define the cloud governance policy, including a policy statement, risk ID, policy ID, and policy scope.
       isCorrect: false
       explanation: Incorrect. You must first know the risks before you can define the policies that address them.
-  - content: Which would you address second?
+  - content: Which step would you address second?
     choices:
     - content: Use Azure tools to automate notifications for triggers.
       isCorrect: false

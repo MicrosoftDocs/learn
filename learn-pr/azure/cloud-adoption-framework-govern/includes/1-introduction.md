@@ -1,6 +1,4 @@
-Your organization can use the Govern methodology of the Cloud Adoption Framework for Azure to help address tangible risks when you adopt the cloud.
-
-Technical changes can introduce risk to your environment. Use cloud-native tools in Azure to help mitigate risks and adopt the cloud with confidence.
+Your organization can use the Govern methodology of the Cloud Adoption Framework for Azure to help address tangible risks when you adopt the cloud. Technical changes can introduce risk to your environment. Use cloud-native tools in Azure to help mitigate risks and adopt the cloud with confidence.
 
 This module demonstrates how to evaluate and respond to risks and implement guardrails to help keep your environment safe when you adopt the cloud.
 
@@ -18,4 +16,4 @@ In this module, you'll:
 ## Prerequisites
 
 - A foundational understanding of IT governance processes
-- An understanding of your organization's governance requirements and how they affect your cloud-adoption plan
+- An understanding of your organization's governance requirements and how they affect your cloud adoption plan

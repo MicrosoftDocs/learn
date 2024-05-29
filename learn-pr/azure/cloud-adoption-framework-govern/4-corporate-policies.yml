@@ -21,15 +21,15 @@ quiz:
       explanation: Incorrect. The policy creates solution dependence and doesn't outline the actual concerns or risks.
     - content: "No"
       isCorrect: true
-      explanation: Correct! This policy isn't well structured and would create many issues during cloud adoption.
+      explanation: Correct! This policy isn't well structured and would create many problems during cloud adoption.
   - content: What should be the first step in addressing the existing policy?
     choices:
     - content: Deploy a governance foundation to set up governance tools in Azure.
       isCorrect: false
       explanation: Incorrect. The tools can be used to create a similar policy or to learn about Azure governance, but they might not solve the deeper issue.
-    - content: Enforce cloud governance policies.
+    - content: Enforce cloud governance policy.
       isCorrect: false
       explanation: Incorrect. Before new policies can be enforced, the policy needs to be updated.
-    - content: Update the corporate policy to address the risks and concerns in nontechnical terms.
+    - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
       isCorrect: true
-      explanation: Correct! Learning the tools and enforcing the policies are both important. But no amount of automated tooling can overcome poorly aligned corporate policies.
+      explanation: Correct! Learning the tools and enforcing the policy are both important. But you must first analyze risks so that you can define a policy to mitigate those risks.
