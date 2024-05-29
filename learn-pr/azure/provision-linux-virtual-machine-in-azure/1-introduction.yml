@@ -9,6 +9,7 @@ metadata:
   ms.author: carols
   ms.topic: unit
   ms.custom: linux-related-content
+  ms.service: azure
 durationInMinutes: 7
 content: |
   [!include[](includes/1-introduction.md)]
