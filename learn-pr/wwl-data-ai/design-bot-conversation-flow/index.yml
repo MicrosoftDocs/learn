@@ -36,7 +36,6 @@ units:
 - learn.wwl.design-bot-conversation-flow.introduction
 - learn.wwl.design-bot-conversation-flow.introduce-principles-of-bot-design
 - learn.wwl.design-bot-conversation-flow.bot-framework-sdk
-- learn.wwl.design-bot-conversation-flow.activity-handlers-and-dialogs
 - learn.wwl.design-bot-conversation-flow.deploy-bot
 - learn.wwl.design-bot-conversation-flow.exercise-create-a-bot
 - learn.wwl.design-bot-conversation-flow.knowledge-check
