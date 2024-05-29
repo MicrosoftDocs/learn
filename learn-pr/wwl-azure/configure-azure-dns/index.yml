@@ -32,7 +32,6 @@ units:
 - learn.wwl.configure-azure-dns.introduction
 - learn.wwl.configure-azure-dns.identify-domains-custom-domains
 - learn.wwl.configure-azure-dns.verify-custom-domain-names
-- learn.wwl.configure-azure-dns.delegate-dns-domains
 - learn.wwl.configure-azure-dns.plan-for-private-dns-zones
 - learn.wwl.configure-azure-dns.determine-private-zone-scenarios
 - learn.wwl.configure-azure-dns.interactive-simulation-domain-names
