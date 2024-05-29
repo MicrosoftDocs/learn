@@ -4,7 +4,7 @@
 2.  Scan and Ingest
 3.  Classify
 
-Labeling in the Microsoft Purview Data Map is currently in PREVIEW.
+Labeling in the Microsoft Purview Data Map is currently inPREVIEW.
 
 ### Supplemental Terms of Use for Microsoft Azure Previews
 
