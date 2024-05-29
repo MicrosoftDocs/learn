@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.saas-foundations.introduction
-title: Foundations of SaaS
+title: Introduction
 metadata:
-  title: Foundations of SaaS
-  description: Learn about Software as a Service (SaaS), including differences from traditional software, service-level agreement (SLA) and service-level objective (SLO), security, and privacy.
+  title: Introduction
+  description: Learn about Software as a Service (SaaS), including differences from traditional software, service-level agreement (SLA), service-level objectives (SLO), security, and privacy.
   ms.date: 05/28/2024
   author: kostinams
   ms.author: irkostin

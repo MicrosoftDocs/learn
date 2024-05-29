@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.saas-foundations.security-and-privacy
-title: SaaS compliance and security considerations
+title: SaaS compliance and security
 metadata:
-  title: SaaS compliance and security considerations
-  description: Learn about region-based compliance regulations and security considerations for SaaS providers.
+  title: SaaS compliance and security
+  description: Learn about security considerations and region-based compliance regulations for SaaS providers.
   ms.date: 05/28/2024
   author: kostinams
   ms.author: irkostin

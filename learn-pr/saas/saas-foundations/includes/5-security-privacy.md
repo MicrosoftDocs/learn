@@ -4,11 +4,11 @@ When you switch from a traditional transactional business model to SaaS, you hav
 
 Here are several regulations you need to be aware of, depending on the regions where your customers reside and where you provide services.
 
-- GDPR (General Data Protection Regulation, for companies whose customers reside in EU)
-- CCPA (California Consumer Privacy Act)
-- LGPD (Brazil's Lei Geral de Proteçao de Dados)
+- General Data Protection Regulation (GDPR), for companies whose customers reside in the EU
+- California Consumer Privacy Act (CCPA)
+- Brazil's Lei Geral de Proteçao de Dados (LGPD)
 - Canadian Digital Charter Implementation Act
-- PIPL (Personal Information Protection Law in China)
+- Personal Information Protection Law (PIPL) in China
 
 There are many other regulations, depending on the region.
 
@@ -18,10 +18,10 @@ Besides making sure to comply with regulations, it's important to implement requ
 
 The SDL consists of a set of practices that support security assurance and compliance requirements. The SDL helps developers build more secure software by reducing the number and severity of software vulnerabilities, while reducing development cost. For more information about the practices Microsoft defines as part of the SDL, see [Microsoft Security Development Lifecycle Practices](https://www.microsoft.com/securityengineering/sdl/practices).
 
-When you use Microsoft Azure as a cloud provider for your solution, you can benefit from the work Microsoft is already doing to protect your and your customers' data and comply with the latest regulations. You can find more information about Data Protection, Privacy, and the GDPR in the [Microsoft Trust Center](https://www.microsoft.com/trust-center).
+When you use Microsoft Azure as a cloud provider for your solution, you can benefit from the work Microsoft already does to protect your and your customers' data and comply with the latest regulations. You can find more information about data protection, privacy, and the GDPR in the [Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
-Azure offers many out-of-the box services for protection of workloads. For more information about Azure security capabilities, see [Strengthen your security posture with Azure](https://azure.microsoft.com/explore/security).
+Azure offers many out-of-the-box services for protection of workloads. For more information about Azure security capabilities, see [Strengthen your security posture with Azure](https://azure.microsoft.com/explore/security).
 
 ## Contoso scenario
 
-Contoso must comply with the UK GDPR regulation, because they decided to focus on serving the UK market. When they grow and start providing services in other regions, Contoso must make sure to comply with required regional regulations.
+Contoso must comply with the UK GDPR regulation, because they decided to focus on serving the UK market. When they grow and start providing services in other regions, Contoso must make sure to comply with all required regional regulations.

@@ -2,8 +2,8 @@
 uid: learn.saas-foundations.summary
 title: Summary
 metadata:
-  title: summary
-  description: "Learn from Microsoft about SaaS (Software-as-a-Service), what is the difference from traditional software company, what is SLA and SLO, things to consider regarding security and privacy."
+  title: Summary
+  description: Review what you learned about Software as a Service (SaaS), including service-level agreement (SLA), service-level objectives (SLO), security, and privacy.
   ms.date: 05/28/2024
   author: kostinams
   ms.author: irkostin

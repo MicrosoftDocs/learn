@@ -32,23 +32,23 @@ quiz:
     - content: "The SLA consists of several different SLOs."
       isCorrect: false
       explanation: "SLA describes the software provider's commitments for uptime and connectivity. SLOs are measurable goals for key customer-centric service level indicators (SLIs)."
-    - content: "The SLA is a legal agreement, while an SLO is a goal that a development team can use."
+    - content: "The SLA is a legal agreement, while an SLO is a goal to use for development."
       isCorrect: true
       explanation: "An SLO can guide the direction of tech teams, while an SLA is a contract with customers about terms for provided services."
   - content: "Who's responsible for security and privacy when you build a SaaS solution on Azure?"
     choices:
     - content: "The SaaS provider and Microsoft."
       isCorrect: true
-      explanation: "Microsoft makes sure that Azure services are secure and compliant with required regulations, but it's the SaaS provider's responsibility to comply with regulations and make sure their developed software is up to the latest security standards."
+      explanation: "Microsoft makes sure that Azure services are secure and compliant with required regulations. It's the SaaS provider's responsibility to comply with regulations and make sure their developed software is up to the latest security standards."
     - content: "Microsoft only."
       isCorrect: false
-      explanation: "Microsoft makes sure that Azure is secure and compliant with all required regulations, but it's the SaaS provider's responsibility to comply with regulations and make sure their developed software is up to the latest security standards."
+      explanation: "Microsoft makes sure that Azure is secure and compliant with all required regulations. It's the SaaS provider's responsibility to comply with regulations and make sure their developed software is up to the latest security standards."
     - content: "The SaaS provider only."
       isCorrect: false
       explanation: "When SaaS providers build products on Azure, they utilize Azure services and data storage. Azure services are compliant with all required regulations and provide a secure platform for development."
   - content: "Why is adoption at the core of the SaaS consumption model?"
     choices:
-    - content: "There's no chance for expansion if the product isn't adopted."
+    - content: "There can be expansion and renewal only if the product is adopted."
       isCorrect: true
       explanation: "Without customers adopting the product, it's impossible to upsell new features or functionality."
     - content: "Adoption increases churn rate."

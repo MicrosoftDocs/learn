@@ -7,10 +7,11 @@ metadata:
   author: kostinams
   ms.author: irkostin
   ms.topic: module
+  ms.service: azure
 
 title: Foundations of SaaS
 
-summary: Learn about Software as a Service (SaaS), including differences from traditional software, service-level agreement (SLA) and service-level objective (SLO), security, and privacy.
+summary: Learn about Software as a Service (SaaS), including differences from traditional software, service-level agreement (SLA) and service-level objectives (SLO), security, and privacy.
 
 abstract: |
   After you finish this module, you can:

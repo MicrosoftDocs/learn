@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.saas-foundations.new-consumption-model
-title: New consumption model
+title: SaaS vs. traditional software
 metadata:
-  title: New consumption model
-  description: "Subscription or consumption model is at the core of SaaS. Learn about importance of adoption of the product by your customers and which role it plays."
+  title: SaaS vs. traditional software
+  description: Learn about the differences between the traditional, transactional license-based software model and SaaS.
   ms.date: 05/28/2024
   author: kostinams
   ms.author: irkostin

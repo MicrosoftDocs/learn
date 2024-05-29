@@ -1,6 +1,4 @@
-## Introduction
-
-*Software as a service (SaaS)* lets you connect to and use cloud-based apps over the internet. Common SaaS examples are email, calendars, and office tools like Microsoft Office 365. This training module provides SaaS foundations that give you a solid basis for creating your own organization's SaaS solutions.
+Software as a service (SaaS) helps you connect to and use cloud-based apps over the internet. Common SaaS examples are email, calendars, and office tools like Microsoft Office 365. This training module provides foundations that give you a solid basis for creating your own organization's SaaS solutions.
 
 ## Learning objectives
 

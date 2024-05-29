@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.saas-foundations.why-saas
-title: Why build SaaS? 
+title: Why build SaaS?
 metadata:
   title: Why build SaaS?
-  description: "why SaaS is the most popular model and software providers build subscription based businesses? Why customers prefer SaaS?"
+  description: Learn why SaaS is a popular model and why software providers and customers prefer SaaS.
   ms.date: 05/28/2024
   author: kostinams
   ms.author: irkostin
