@@ -1,74 +1,56 @@
-## Service-Level-Agreement (SLA)
-Since SaaS is not only software, but primarily a service, one of the differences of SaaS compared to traditional software products is Service-Level-Agreements (SLAs).
+This unit discusses Service-Level Agreements (SLAs) and Service-Level Objectives (SLOs).
 
-SLAs describe software provider's commitments for uptime and connectivity. If software provider doesn't achieve and maintain the Service Levels for each Service as described in this SLA, then customers are eligible for compensation.
+## Service-Level Agreement (SLA)
 
-An SLA penalty towards software provider depends on industry and type of business. The two most common scenarios are Financial Penalty and Service Credits. In case of Service Credits customers may be eligible for a credit towards a portion of customers’ monthly service fees. 
-Here you can find the inspiration on how Microsoft defined SLA for one of our products -Microsoft Entra ID: [SLA for Microsoft Entra ID | Microsoft Azure](https://azure.microsoft.com/support/legal/sla/active-directory/v1_1/)
+Since SaaS isn't only software but is primarily a service, one difference between SaaS and traditional software products is SLA. The SLA is an agreement between a SaaS provider and a client that describes the provider's commitments for uptime and connectivity. If the SaaS provider doesn't achieve and maintain the service levels for each service as described in the SLA, customers may be eligible for compensation.
 
-Since SLA is an agreement between you as SaaS provider and a client, you can define 100%  uptime for your service. However, it's hard to achieve 100% availability for complex systems, so many software companies tie their SLA to availability they can provide. If SLA states 100% uptime, it only means that if there were outages, customers will get compensation according to agreement, but it doesn't guarantee 100% availability.
+SLA compensation and penalties for software providers depend on industry and type of business. The two most common scenarios are financial penalty and service credits. For service credits, customers may be eligible for a credit toward their monthly service fees.
 
-**It is purely engineering task to build highly available systems which provide 100% uptime, while SLA is a way to legally protect your company for the outages.** 
+Although you can define 100% uptime for your service, it's hard to achieve 100% availability for complex systems. Most SLAs are tied to the availability they can provide.
 
+If the SLA specifies 100% uptime, it might mean that if there are outages, customers get compensation according to agreement, but not guarantee 100% availability. It's an engineering task to build highly available systems, while SLA is a way to legally protect a company for outages.
 
+For examples of Microsoft SLAs, see [Service Level Agreements (SLA) for Online Services](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).
 
+## Service-Level Objectives (SLOs)
 
-## Service-Level-Objectives (SLO)
-Service level objectives (SLOs) are measurable goals set on a few of key customer-centric service level indicators (SLIs). They measure your customer's experience of a business or infrastructure workload.
+SLOs are measurable goals set on key customer-centric service level indicators (SLIs). SLOs measure your customer's experience of a business or infrastructure workload.
 
-SLOs determine whether you, as the businesses service provider, are meeting the promises made to them in a formally negotiated service level agreement (SLA). SLO/SLIs should be defined early in the design of any cloud business or infrastructure workload. 
-
-In Azure, service level management is more lightweight, as the interfaces and functionality are predefined, and metrics are predefined by Microsoft. Consumers need to manage their service delivery expectations when utilizing cloud workloads.
-
-#### Example
-
-For example, here's a simplified example of an SLO for an internal time tracking web-based application:
-
-*Requests in the last 5 minutes are served in under 1000 milliseconds at the 99th percentile.*
-
-The metrics are aggregations of time series data, called Service Level Indicators (SLIs). Where the SLIs are gathered matters a lot. In the above example, if the customer interacts with the service using an API, then measuring system latency and time to process requests are accurate SLIs. However, if the customer interacts with the service using a web portal, then the total time to service the request should also include the JavaScript performance of the web page.
+SLOs determine whether the SaaS provider is meeting the commitments made in a formally negotiated SLA. SLOs and SLIs should be defined early in the design of any cloud business or infrastructure workload.
 
 The focus for service owners is to determine:
-* Which scenarios are critical indicators of service health from the perspective of the customer
-*	Where to gather the SLIs so that they are as close to the customer experience as possible, and
-*	What the SLOs should be for these SLIs.
 
+- Which scenarios are critical indicators of service health from the customer perspective.
+- How to gather SLIs so they're as close as possible to the customer experience.
+- What the SLOs should be for the SLIs.
 
-If you look across the industry, there are two types of SLOs:
-*	Service-centric SLOs - These SLOs are tactical goals that teams define to gradually improve the quality of their service over time. They are designed to be pragmatic goals that are achievable in an engineering milestone.
-For example, if a service is currently achieving 99.7% availability, the team could set a goal to reach 99.9% availability in the next quarter.
-*	Customer-centric SLOs - These SLOs define the ideal future state or goal at which point further investments in quality would be deemed unnecessary, because you are fully meeting the customers' expectations.
+There are two types of SLOs in the software industry:
 
+- **Service-centric SLOs** are tactical goals that teams define to gradually improve the quality of their service over time.
 
+  These SLOs are pragmatic goals that are achievable in an engineering milestone. For example, if a service is currently achieving 99.7% availability, the team could set a goal to reach 99.9% availability in the next quarter.
+- **Customer-centric SLOs** define the ideal future state or goal beyond which further investments in quality are unnecessary, because the customers' expectations are fully met.
+
+SLOs are important in cloud workload development and operations, and serve different purposes compared to SLAs. An SLO indicates the state and direction of tech teams, while SLA is a contract with customers about terms for provided services and compensation.
+
+In Azure, service level management is lightweight, as the interfaces, functionality, and metrics are predefined by Microsoft. Consumers need to manage their service delivery expectations when they use cloud workloads.
 
 ## Contoso scenario
 
-A simple SLA agreement which Contoso could create for their users, could be something similar to the example shared above for Microsoft Entra ID. 
+A simple SLA agreement between Contoso and their users first defines the guaranteed service levels and SLIs, such as:
 
-First, Contoso would define, what Service Levels are guaranteed, such as:
+- Users are able to access and sign in to the system, generate designs, and use other available functionality in the system.
+- Contoso provides 99.99% availability for their services that cover the preceding scenarios.
+- Requests in the last five minutes are served in under 1000 milliseconds at 99%.
 
-* Users are able to access and login into the system, generate designs and use other available functionality  within the system
+The SLIs are aggregations of time series data. How the SLIs are gathered is important. If the customer interacts with the service by using an API, measuring system latency and time to process requests are accurate SLIs. But if the customer interacts with the service by using a web portal, the total time to service the request should also include the JavaScript performance of the web page.
 
-* Contoso provides 99.99% availability for their services and covers the scenarios mentioned above 
+The SLA must also define downtime and the compensation for customers facing downtime. For example, there could be a compensation structure of uptime percentage correlated with percentage of monthly credits received, or a system of flat compensation for each minute of downtime.
 
-  
+Regarding SLOs, Contoso can start by defining:
 
-Also, Contoso will have to define, what is considered Downtime, and what compensation do they offer when customers are facing the downtime. 
+- Quality of Service (QoS): New design ideas should be generated by the AI model within 3 minutes after a user request.
+- Availability: 99.99% over a monthly period.
+- Capacity: Target percentage utilization for CPU, storage, memory, latency, throughput, and scaling.
+- Product adoption: Rate of acceptance of proposed design ideas should be above 20%.
 
-For example, Contoso could take inspiration from Microsoft Entra compensation structure (uptime percentage correlated with % of monthly credits received) or create a system of flat compensation for each minute of downtime. 
-
-
-
-Regarding the SLOs, Contoso get can start with simple definition of:
-
-* QoS: New design ideas should be generated by AI model within 3 mins after user request
-
-* Availability: 99.99% over a monthly period
-
-* Capacity: % Utilization (CPU, storage, memory, latency, throughput, scaling)
-
-* Product adoption: rate of acceptance of proposed design ideas should be above 20%
-
-  
-
-SLOs serve many important purposes in the development and operations of cloud workloads, and thus serve different purpose compared to SLA. SLO is indicating the state and direction of tech team, while SLA is a contract with customers about terms for provided services and compensation in situations when these terms are not met.as 

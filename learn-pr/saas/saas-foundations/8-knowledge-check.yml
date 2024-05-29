@@ -3,8 +3,8 @@ uid: learn.saas-foundations.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Learn from Microsoft about SaaS (Software-as-a-Service), what is the difference from traditional software company, what is SLA and SLO, things to consider regarding security and privacy."
-  ms.date: 2/6/2023
+  description: Test your knowledge.
+  ms.date: 05/28/2024
   author: kostinams
   ms.author: irkostin
   ms.topic: unit
@@ -13,47 +13,47 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "Why customers prefer SaaS model?"
+  - content: "What's one reason that customers prefer a SaaS model?"
     choices:
-    - content: "No upfront investments in the infrastructure"
+    - content: "No upfront investments in infrastructure."
       isCorrect: true
-      explanation: "SaaS consumption model provides customers with more freedom and the ability to pay only for what and how much they use."
+      explanation: "The SaaS consumption model provides customers with more freedom and the ability to pay only for what and how much they use."
     - content: "Control over versioning."
       isCorrect: false
-      explanation: "When consuming SaaS, customers normally do not have control over versioning and latest features."
+      explanation: "SaaS customers normally have no control over versioning and latest features."
     - content: "Pay per license."
       isCorrect: false
-      explanation: "SaaS consumption model provides customers with more freedom and the ability to pay only for what and how much they use, as appose to traditional software where customers pay per license."
-  - content: "What is the difference between Service-Level-Agreement(SLA) and Service-Level-Objective(SLO)?"
+      explanation: "The SaaS consumption model lets customers pay only for what and how much they use, compared to traditional software where customers pay per license."
+  - content: "What's the difference between Service-Level Agreement (SLA) and Service-Level Objective (SLO)?"
     choices:
-    - content: "Service-Level-Agreement is the same as Service-Level-Objective."
+    - content: "SLA is the same as SLO."
       isCorrect: false
-      explanation: "SLA describes software provider's commitments for uptime and connectivity. If software provider doesn't achieve and maintain the Service Levels for each Service as described in this SLA, then customers are eligible for compensation. Service level objectives (SLO) are measurable goals set on a few of key customer-centric service level indicators (SLIs). They measure your customer's experience of a business or infrastructure workload."
-    - content: "Service-Level-Agreement consists of different Service-Level-Objectives."
+      explanation: "SLA describes the software provider's commitments for uptime and connectivity. SLOs are measurable goals for key customer-centric service level indicators (SLIs)."
+    - content: "The SLA consists of several different SLOs."
       isCorrect: false
-      explanation: "SLA describes software provider's commitments for uptime and connectivity. If software provider doesn't achieve and maintain the Service Levels for each Service as described in this SLA, then customers are eligible for compensation. Service level objectives (SLO) are measurable goals set on a few of key customer-centric service level indicators (SLIs). They measure your customer's experience of a business or infrastructure workload."
-    - content: "SLA is a legal agreement, while SLO is a goal which is used by development team."
+      explanation: "SLA describes the software provider's commitments for uptime and connectivity. SLOs are measurable goals for key customer-centric service level indicators (SLIs)."
+    - content: "The SLA is a legal agreement, while an SLO is a goal that a development team can use."
       isCorrect: true
-      explanation: "SLA describes software provider's commitments for uptime and connectivity. If software provider doesn't achieve and maintain the Service Levels for each Service as described in this SLA, then customers are eligible for compensation. Service level objectives (SLO) are measurable goals set on a few of key customer-centric service level indicators (SLIs). They measure your customer's experience of a business or infrastructure workload."
-  - content: "Who is responsible for security and privacy when building SaaS solution on Azure?"
+      explanation: "An SLO can guide the direction of tech teams, while an SLA is a contract with customers about terms for provided services."
+  - content: "Who's responsible for security and privacy when you build a SaaS solution on Azure?"
     choices:
-    - content: "SaaS provider and Microsoft."
+    - content: "The SaaS provider and Microsoft."
       isCorrect: true
-      explanation: "While Microsoft makes sure that Azure services are secure and compliant with all required regulations, it's also SaaS provider's responsibility to comply with required regulations and make sure that developed software is upto the latest security standards."
+      explanation: "Microsoft makes sure that Azure services are secure and compliant with required regulations, but it's the SaaS provider's responsibility to comply with regulations and make sure their developed software is up to the latest security standards."
     - content: "Microsoft only."
       isCorrect: false
-      explanation: "While Microsoft makes sure that Azure is secure and compliant with all required regulations, it's SaaS provider's responsibility to comply with required regulations and make sure that developed software is upto the latest security standards."
-    - content: "SaaS provider only."
+      explanation: "Microsoft makes sure that Azure is secure and compliant with all required regulations, but it's the SaaS provider's responsibility to comply with regulations and make sure their developed software is up to the latest security standards."
+    - content: "The SaaS provider only."
       isCorrect: false
-      explanation: "When SaaS providers build products on Azure, they utilize Azure services and store data. Azure services are compliant with all required regulations and provide secure platform for development."
-  - content: "Why adoption is in the core of SaaS?"
+      explanation: "When SaaS providers build products on Azure, they utilize Azure services and data storage. Azure services are compliant with all required regulations and provide a secure platform for development."
+  - content: "Why is adoption at the core of the SaaS consumption model?"
     choices:
-    - content: "No chance for expansion if the product isn't adopted."
+    - content: "There's no chance for expansion if the product isn't adopted."
       isCorrect: true
-      explanation: "Without customers adopting the product, it's impossible to up-sell them new features or functionality."
-    - content: "Adoption does not reduce churn."
+      explanation: "Without customers adopting the product, it's impossible to upsell new features or functionality."
+    - content: "Adoption increases churn rate."
       isCorrect: false
-      explanation: "The higher adoption, the lower churn rates. Low churn and high adoption contribute to revenue growth which directly impacts financial results of the company."
-    - content: "Adoption creates more leads on the Land phase in LAER model."
+      explanation: "The higher the adoption, the lower the churn rate. Low churn and high adoption contribute to revenue growth."
+    - content: "Adoption creates more leads during the Land phase of the LAER model."
       isCorrect: false
-      explanation: "Adoption comes into play starting from Adopt phase in the LAER model."
+      explanation: "Adoption comes into play starting from the Adopt phase in the LAER model."
