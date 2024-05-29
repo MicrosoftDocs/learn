@@ -39468,6 +39468,11 @@
       "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-backup/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-backup/",
+      "redirect_document_id": false
     }
   ]
 }
