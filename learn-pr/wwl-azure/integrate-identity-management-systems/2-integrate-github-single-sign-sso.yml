@@ -4,12 +4,12 @@ title: Integrate GitHub with single sign-on (SSO)
 metadata:
   title: Integrate GitHub with single sign-on (SSO)
   description: "Integrate GitHub with single sign-on (SSO)"
-  ms.date: 11/01/2022
+  ms.date: 05/27/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.custom:
+  - N/A
+durationInMinutes: 1
 content: |
   [!include[](includes/2-integrate-github-single-sign-sso.md)]
