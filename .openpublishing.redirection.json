@@ -39285,21 +39285,6 @@
     "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/wwl-azure/introduction-to-devops/5-explore-shared-goals-define-timelines.md",
-    "redirect_url": "/training/modules/introduction-to-devops/6-explore-shared-goals-define-timelines",
-    "redirect_document_id": false
-    },
-    {
-    "source_path": "learn-pr/wwl-azure/introduction-to-devops/6-knowledge-check.md",
-    "redirect_url": "/training/modules/introduction-to-devops/14-knowledge-check",
-    "redirect_document_id": false
-    },
-    {
-    "source_path": "learn-pr/wwl-azure/introduction-to-devops/7-summary.md",
-    "redirect_url": "/training/modules/introduction-to-devops/15-summary",
-    "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/cloud-adoption-framework-govern/5-governance-disciplines.yml",
       "redirect_url": "/training/modules/cloud-adoption-framework-govern/5-document-enforce",
       "redirect_document_id": false
