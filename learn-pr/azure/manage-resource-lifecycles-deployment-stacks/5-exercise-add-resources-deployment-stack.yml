@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-resource-lifecycles-deployment-stacks.exercise-add-resources-deployment-stack
+title: Exercise - Add resources to a deployment stack
+metadata:
+  title: Exercise - Add resources to a deployment stack
+  description: Learn how to add managed resources to a deployment stack.
+  ms.date: 08/01/2023
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: unit
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 1
+content: | 
+  [!include[](includes/5-exercise-add-resources-deployment-stack.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-resource-lifecycles-deployment-stacks.exercise-detach-delete-resources-deployment-stack
+title: Exercise - Detach and delete managed resources from a deployment stack
+metadata:
+  title: Exercise - Detach and delete managed resources from a deployment stack
+  description: Learn how to detach and delete managed resources from a deployment stack.
+  ms.date: 08/01/2023
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: unit
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 1
+content: | 
+  [!include[](includes/7-exercise-detach-delete-resources-deployment-stack.md)]

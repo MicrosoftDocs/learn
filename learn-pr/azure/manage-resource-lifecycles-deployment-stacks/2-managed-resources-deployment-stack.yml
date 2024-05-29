@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-resource-lifecycles-deployment-stacks.managed-resources-deployment-stack
+title: Deployment stack managed resources
+metadata:
+  title: Deployment stack managed resources
+  description: Learn about managed resources in a deployment stack.
+  ms.date: 08/01/2023
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: unit
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 1
+content: | 
+  [!include[](includes/2-managed-resources-deployment-stack.md)]

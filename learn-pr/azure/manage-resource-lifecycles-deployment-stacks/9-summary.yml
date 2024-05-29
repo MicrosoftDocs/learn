@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-resource-lifecycles-deployment-stacks.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary.
+  ms.date: 08/01/2023
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: unit
+durationInMinutes: 1
+content: | 
+  [!include[](includes/9-summary.md)]

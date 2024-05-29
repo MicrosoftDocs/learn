@@ -1,0 +1,77 @@
+{
+  "actionOnUnmanage": {
+    "managementGroups": "delete",
+    "resourceGroups": "delete",
+    "resources": "delete"
+  },
+  "debugSetting": null,
+  "deletedResources": [],
+  "denySettings": {
+    "applyToChildScopes": false,
+    "excludedActions": null,
+    "excludedPrincipals": null,
+    "mode": "none"
+  },
+  "deploymentId": "/subscriptions/./resourceGroups/rg-depositsApplication/./././stack-deposits-2405160351ewk",
+  ".cope": null,
+  "description": null,
+  "detachedResources": [],
+  "duration": "PT2M17.202945S",
+  "error": null,
+  "failedResources": [],
+  "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././deploymentStacks/stack-deposits",
+  "location": null,
+  "name": "stack-deposits",
+  "outputs": null,
+  "parameters": {
+    "sqlServerAdminPassword": {
+      "type": "securestring",
+      "value": ""
+    },
+    "sqlServerAdminUserName": {
+      "type": "string",
+      "value": "sqladmin"
+    }
+  },
+  "parametersLink": null,
+  "provisioningState": "succeeded",
+  "resourceGroup": "rg-depositsApplication",
+  "resources": [
+    {
+      "denyStatus": "none",
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././serverfarms/plan-deposits",
+      "resourceGroup": "rg-depositsApplication",
+      "status": "managed"
+    },
+    {
+      "denyStatus": "none",
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././sites/webapp-eque2jlrboltq",
+      "resourceGroup": "rg-depositsApplication",
+      "status": "managed"
+    },
+    {
+      "denyStatus": "none",
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././servers/sql-eque2jlrboltq",
+      "resourceGroup": "rg-depositsApplication",
+      "status": "managed"
+    },
+    {
+      "denyStatus": "none",
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././servers/sql-eque2jlrboltq/databases/sqldb-eque2jlrboltq",
+      "resourceGroup": "rg-depositsApplication",
+      "status": "managed"
+    }
+  ],
+  "systemData": {
+    "createdAt": "2024-01-01T00:00:01.000000+00:00",
+    "createdBy": "depositsapplication@contoso.com",
+    "createdByType": "User",
+    "lastModifiedAt": "2024-01-01T00:00:01.000000+00:00",
+    "lastModifiedBy": "depositsapplication@contoso.com",
+    "lastModifiedByType": "User"
+  },
+  "tags": {},
+  "template": null,
+  "templateLink": null,
+  "type": "./deploymentStacks"
+}

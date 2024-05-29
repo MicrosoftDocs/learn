@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-resource-lifecycles-deployment-stacks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 08/01/2023
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: unit
+durationInMinutes: 1
+content: | 
+quiz:
+  questions:
+  - content: TBD
+    choices:
+    - content: TBD
+      isCorrect: true
+      explanation: TBD
+    - content: TBD
+      isCorrect: false
+      explanation: TBD
+    - content: TBD
+      isCorrect: false
+      explanation: TBD
+  - content: TBD
+    choices:
+    - content: TBD
+      isCorrect: true
+      explanation: TBD
+    - content: TBD
+      isCorrect: false
+      explanation: TBD
+    - content: TBD
+      isCorrect: false
+      explanation: TBD
+  - content: TBD
+    choices:
+    - content: TBD
+      isCorrect: true
+      explanation: TBD
+    - content: TBD
+      isCorrect: false
+      explanation: TBD
+    - content: TBD
+      isCorrect: false
+      explanation: TBD
