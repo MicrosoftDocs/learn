@@ -38,7 +38,6 @@ subjects:
 units:
 - learn.wwl.configure-azure-active-directory.introduction
 - learn.wwl.configure-azure-active-directory.select-editions
-- learn.wwl.configure-azure-active-directory.implement-self-service-password-reset
 - learn.wwl.configure-azure-active-directory.knowledge-check
 - learn.wwl.configure-azure-active-directory.summary-resources
 badge:
