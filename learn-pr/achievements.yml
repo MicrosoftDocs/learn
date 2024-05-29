@@ -3378,3 +3378,23 @@ achievements:
   title: Create a bot with the Bot Framework SDK
   summary: Learn how to build a bot by using the Microsoft Bot Framework SDK.
   iconUrl: /training/achievements/design-a-bot-conversation-flow.svg
+- uid: learn.wwl.configure-azure-active-directory.badge
+  type: badge
+  title: Configure Microsoft Entra ID
+  summary: Learn how to configure Microsoft Entra ID, including features like Microsoft Entra ID join and self-service password reset.
+  iconUrl: /training/achievements/azure-active-directory.svg
+- uid: learn.wwl.configure-azure-dns.badge
+  type: badge
+  title: Configure Azure DNS
+  summary: Learn how to configure Azure DNS including custom domain names and record sets.
+  iconUrl: /training/achievements/azure-dns-configure.svg
+- uid: learn.wwl.configure-file-folder-backups.badge
+  type: badge
+  title: Configure file and folder backups
+  summary: Learn how to configure backup and restore policies that meet your company's regulatory needs.
+  iconUrl: /training/achievements/file-folder-backups.svg
+- uid: learn.wwl.create-bot-with-bot-framework-composer.badge
+  type: badge
+  title: Create a Bot with the Bot Framework Composer
+  summary: User the Bot Framework Composer to quickly and easily build sophisticated conversational bots without writing code.
+  iconUrl: /training/achievements/create-a-bot-with-the-bot-framework-composer.svg

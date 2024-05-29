@@ -69,7 +69,6 @@ products:
 subjects:
 - cloud-computing
 modules:
-- learn.wwl.configure-file-folder-backups
 - learn.wwl.configure-virtual-machine-backups
 - learn.wwl.configure-azure-monitor
 - learn.wwl.configure-log-analytics

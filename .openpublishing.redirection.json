@@ -39333,6 +39333,211 @@
       "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/8-summary.md",
       "redirect_url": "/training/paths/work-power-virtual-agents/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-active-directory/index.md",
+      "redirect_url": "/training/modules/understand-azure-active-directory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-active-directory/4-compare-active-directory-domain-services.md",
+      "redirect_url": "/training/modules/understand-azure-active-directory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-active-directory/3-describe-azure-active-directory-concepts.md",
+      "redirect_url": "/training/modules/understand-azure-active-directory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-active-directory/2-describe-benefits-features.md",
+      "redirect_url": "/training/modules/understand-azure-active-directory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-active-directory/6-implement-self-service-password-reset.md",
+      "redirect_url": "/training/modules/understand-azure-active-directory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-active-directory/1-introduction.md",
+      "redirect_url": "/training/modules/understand-azure-active-directory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-active-directory/7-knowledge-check.md",
+      "redirect_url": "/training/modules/understand-azure-active-directory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-active-directory/5-select-editions.md",
+      "redirect_url": "/training/modules/understand-azure-active-directory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-active-directory/8-summary-resources.md",
+      "redirect_url": "/training/modules/understand-azure-active-directory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-dns/index.md",
+      "redirect_url": "/training/modules/host-domain-azure-dns/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-dns/6-add-dns-record-sets.md",
+      "redirect_url": "/training/modules/host-domain-azure-dns/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-dns/4-create-zones.md",
+      "redirect_url": "/training/modules/host-domain-azure-dns/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-dns/5-delegate-dns-domains.md",
+      "redirect_url": "/training/modules/host-domain-azure-dns/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-dns/8-determine-private-zone-scenarios.md",
+      "redirect_url": "/training/modules/host-domain-azure-dns/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-dns/2-identify-domains-custom-domains.md",
+      "redirect_url": "/training/modules/host-domain-azure-dns/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-dns/8a-simulation-domain-names.md",
+      "redirect_url": "/training/modules/host-domain-azure-dns/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-dns/1-introduction.md",
+      "redirect_url": "/training/modules/host-domain-azure-dns/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-dns/9-knowledge-check.md",
+      "redirect_url": "/training/modules/host-domain-azure-dns/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-dns/7-plan-for-private-dns-zones.md",
+      "redirect_url": "/training/modules/host-domain-azure-dns/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-dns/10-summary-resources.md",
+      "redirect_url": "/training/modules/host-domain-azure-dns/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-dns/3-verify-custom-domain-names.md",
+      "redirect_url": "/training/modules/host-domain-azure-dns/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/index.md",
+      "redirect_url": "/training/modules/intro-to-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/6-configure-backups.md",
+      "redirect_url": "/training/modules/intro-to-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/2-describe-azure-backup-benefits.md",
+      "redirect_url": "/training/modules/intro-to-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/3-implement-azure-backup-center.md",
+      "redirect_url": "/training/modules/intro-to-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/7-interactive-lab-simulation.md",
+      "redirect_url": "/training/modules/intro-to-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/1-introduction.md",
+      "redirect_url": "/training/modules/intro-to-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/8-knowledge-check.md",
+      "redirect_url": "/training/modules/intro-to-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/5-mars-backup-agent.md",
+      "redirect_url": "/training/modules/intro-to-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/4-setup-recovery-service-vault-backup-options.md",
+      "redirect_url": "/training/modules/intro-to-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/9-summary-resources.md",
+      "redirect_url": "/training/modules/intro-to-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/index.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/5-adaptive-flow.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/2-bot-authoring-methods.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/3-bot-composer.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/7-exercise-create-a-bot.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/1-introduction.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/9-knowledge-check.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/10-summary.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/4-dialogs.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/6-user-experience.md",
+      "redirect_url": "/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
     }
   ]
 }
