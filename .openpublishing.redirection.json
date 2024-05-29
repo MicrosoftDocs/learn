@@ -39493,6 +39493,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/work-power-virtual-agents/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/5-adaptive-flow.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
     }
   ]
 }
