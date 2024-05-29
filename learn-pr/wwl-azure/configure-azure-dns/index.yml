@@ -29,7 +29,6 @@ products:
 subjects:
 - networking
 units:
-- learn.wwl.configure-azure-dns.introduction
 - learn.wwl.configure-azure-dns.verify-custom-domain-names
 - learn.wwl.configure-azure-dns.plan-for-private-dns-zones
 - learn.wwl.configure-azure-dns.knowledge-check
