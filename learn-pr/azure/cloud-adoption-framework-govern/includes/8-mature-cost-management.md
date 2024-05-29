@@ -27,7 +27,7 @@ Add examples of the Tailwind story
 
 Use Microsoft Cost Management to monitor your cost data and manage cloud governance cost. Cost Management combines data about your resource organization, Azure Advisor alerts, and your governance foundation.
 
-Monitor resource optimization to help reduce costs. You can use Azure Advisor to monitor Azure resource costs. Configure alerts for new Azure Advisor recommendations. You can also configure anomaly alerts in Cost Management to notify people when an unexpected cost occurs.
+Monitor resource optimization to help reduce costs. You can use Azure Advisor to monitor Azure resource costs, and configure alerts for new Azure Advisor recommendations. You can also configure anomaly alerts in Cost Management to notify you when an unexpected cost occurs.
 
 ### Exercise: Create a budget
 

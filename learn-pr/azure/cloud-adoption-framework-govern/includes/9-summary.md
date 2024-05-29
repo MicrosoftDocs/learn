@@ -5,4 +5,4 @@ In this module, you learned about governance theory, corporate policies, and gov
 
 ## Next steps
 
-To learn more about cloud governance, check out the [Govern methodology overview](/azure/cloud-adoption-framework/govern). This article guides you through four steps to develop cloud governance.
+For more information about cloud governance, see the [Govern methodology overview](/azure/cloud-adoption-framework/govern). This article guides you through four steps to develop cloud governance.
