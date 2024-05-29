@@ -37,7 +37,6 @@ subjects:
 - identity-access
 units:
 - learn.wwl.configure-azure-active-directory.select-editions
-- learn.wwl.configure-azure-active-directory.knowledge-check
 - learn.wwl.configure-azure-active-directory.summary-resources
 badge:
   uid: learn.wwl.configure-azure-active-directory.badge
