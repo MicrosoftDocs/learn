@@ -3378,3 +3378,8 @@ achievements:
   title: Create a bot with the Bot Framework SDK
   summary: Learn how to build a bot by using the Microsoft Bot Framework SDK.
   iconUrl: /training/achievements/design-a-bot-conversation-flow.svg
+- uid: learn.wwl.configure-azure-active-directory.badge
+  type: badge
+  title: Configure Microsoft Entra ID
+  summary: Learn how to configure Microsoft Entra ID, including features like Microsoft Entra ID join and self-service password reset.
+  iconUrl: /training/achievements/azure-active-directory.svg
