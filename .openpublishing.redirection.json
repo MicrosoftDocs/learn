@@ -39303,6 +39303,11 @@
       "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/3-bot-framework.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/work-power-virtual-agents/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/5-deploy-bot.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
     }
   ]
 }
