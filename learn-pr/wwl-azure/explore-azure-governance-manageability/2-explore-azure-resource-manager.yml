@@ -4,11 +4,11 @@ title: Explore Azure Resource Manager
 metadata:
   title: Explore Azure Resource Manager
   description: "Explore Azure Resource Manager"
-  ms.date: 04/21/2023
+  ms.date: 11/08/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-arm-template
 durationInMinutes: 7
 content: |
   [!include[](includes/2-explore-azure-resource-manager.md)]

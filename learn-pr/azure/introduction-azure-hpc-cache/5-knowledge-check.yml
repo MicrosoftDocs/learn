@@ -5,11 +5,10 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: A knowledge check that reviews the core concepts of the module.
-  ms.date: 06/21/2021
+  ms.date: 03/21/2023
   author: ronhogue
   ms.author: rohogue
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
 quiz:

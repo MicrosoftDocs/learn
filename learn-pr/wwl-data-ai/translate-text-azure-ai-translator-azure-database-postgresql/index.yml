@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql
+metadata:
+  title: Translate Text with Azure AI Translator and Azure Database for PostgreSQL
+  description: "Learn how to translate Text with Azure AI Translator and Azure Database for PostgreSQL."
+  ms.date: 04/26/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: module
+  ms.service: postgresql
+  ms.subservice: flexible-server
+  ai-usage: human-only
+title: Translate Text with Azure AI Translator and Azure Database for PostgreSQL
+summary: This module guides you through translating textual data in Azure Database for PostgreSQL - Flexible Server using the Azure AI Translator service. You'll load data into PostgreSQL and translate it into multiple languages.
+abstract: |
+  - Learn how to translate documents using the Azure AI Translator.
+
+  - Learn how the Azure AI extension enables seamless interaction between Azure Database for PostgreSQL - Flexible Server and Azure AI Translator.
+
+  - Understand one way to translate documents automatically as part of record insertion.
+prerequisites: '- Before starting this module, you should have experience working with the PL/pgSQL language.'
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-database-postgresql
+- ai-services
+subjects:
+- artificial-intelligence
+- databases
+units:
+- learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.introduction
+- learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.azure-ai-translation
+- learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.translate-postgresql-data
+- learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.exercise-translate-text
+- learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.knowledge-check
+- learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.summary
+badge:
+  uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.badge

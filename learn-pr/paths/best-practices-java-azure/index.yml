@@ -6,8 +6,7 @@ metadata:
   ms.date: 11/29/2021
   author: bmitchell287
   ms.author: brendm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Best practices for Java apps on Azure
 summary: |
   Start here and learn how you can:
@@ -57,9 +56,8 @@ roles:
 - technology-manager
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-app-service
-- azure-app-service-web
 # - azure-application-insights
 #- azure-automation
 - azure-cache-redis
@@ -68,7 +66,6 @@ products:
 - azure-database-mysql
 #- azure-devops
 - azure-spring-apps
-- azure-web-apps
 - msal-java
 - azure-service-bus
 subjects:

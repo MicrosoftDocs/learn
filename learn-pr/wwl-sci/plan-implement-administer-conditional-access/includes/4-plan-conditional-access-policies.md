@@ -2,12 +2,12 @@ Planning your Conditional Access deployment is critical to achieving your organi
 
 In a mobile-first, cloud-first world, your users access your organization's resources from anywhere using various devices and apps. As a result, focusing on who can access a resource is no longer enough. You also need to consider where the user is, the device being used, the resource being accessed, and more.
 
-Azure AD Conditional Access (CA) analyzes signals, such as user, device, and location, to automate decisions and enforce organizational access policies for resource. You can use CA policies to apply access controls like multifactor authentication (MFA). CA policies allow you to prompt users for MFA when needed for security and to stay out of users’ way when not needed.
+Microsoft Entra Conditional Access (CA) analyzes signals, such as user, device, and location, to automate decisions and enforce organizational access policies for resource. You can use CA policies to apply access controls like multifactor authentication (MFA). CA policies allow you to prompt users for MFA when needed for security and to stay out of users’ way when not needed.
 
 :::image type="content" source="../media/conditional-access-overview-how-it-works-b5356a16.png" alt-text="Diagram of how Conditional Access works. Centralize identity provider verifies rules before access is granted.":::
 
 
-Although security defaults ensure a basic level of security, your organization may need more flexibility than security defaults offer. You can use CA to customize security defaults with more granularity and to configure new policies that meet your requirements.
+Although security defaults ensure a basic level of security, your organization needs more flexibility than security defaults offer. You can use CA to customize security defaults with more granularity and to configure new policies that meet your requirements.
 
 ### Benefits
 
@@ -16,7 +16,7 @@ The benefits of deploying CA are:
  -  Increase productivity. Only interrupt users with a sign-in condition like MFA when one or more signals warrants it. CA policies allow you to control when users are prompted for MFA, when access is blocked, and when they must use a trusted device.
  -  Manage risk. Automating risk assessment with policy conditions means risky sign-ins are at once identified and remediated or blocked. Coupling Conditional Access with Identity Protection, which detects anomalies and suspicious events, allows you to target when access to resources is blocked or gated.
  -  Address compliance and governance. CA enables you to audit access to applications, present terms of use for consent, and restrict access based on compliance policies.
- -  Manage cost. Moving access policies to Azure AD reduces the reliance on custom or on-premises solutions for CA and their infrastructure costs.
+ -  Manage cost. Moving access policies to Microsoft Entra ID reduces the reliance on custom or on-premises solutions for CA and their infrastructure costs.
  -  Zero trust. Conditional Access helps you move toward a zero-trust environment.
 
 ## Understand Conditional Access policy components
@@ -33,7 +33,7 @@ Some common questions about assignments, access controls, and session controls:
  -  Users and Groups: Which users and groups will be included in or excluded from the policy? Does this policy include all users, specific group of users, directory roles, or external users?
  -  Cloud apps or actions: What application(s) will the policy apply to? What user actions will be subject to this policy?
  -  Conditions: Which device platforms will be included in or excluded from the policy? What are the organization’s trusted locations?
- -  Access controls: Do you want to grant access to resources by implementing requirements such as MFA, devices marked as compliant, or hybrid Azure AD joined devices?
+ -  Access controls: Do you want to grant access to resources by implementing requirements such as MFA, devices marked as compliant, or Microsoft Entra hybrid joined devices?
  -  Session controls: Do you want to control access to cloud apps by implementing requirements such as app enforced permissions or Conditional Access App Control?
 
 ### Access token issuance
@@ -74,7 +74,7 @@ Report-only mode allows administrators to evaluate the CA policies before enabli
 
 ### Exclude countries from which you never expect a sign-in
 
-Azure active directory allows you to create named locations. Create a named location that includes all of the countries from which you would never expect a sign-in to occur. Then create a policy for all apps that blocks sign in from that named location. **Be sure to exempt your administrators from this policy**.
+Microsoft Entra ID allows you to create named locations. Create a named location that includes all of the countries from which you would never expect a sign-in to occur. Then create a policy for all apps that blocks sign in from that named location. **Be sure to exempt your administrators from this policy**.
 
 ## Common policies
 
@@ -84,7 +84,7 @@ When planning your CA policy solution, assess whether you need to create policie
  -  **Respond to potentially compromised accounts.** Three default policies can be enabled: require all users to register for MFA, require a password change for users who are high-risk, and require MFA for users with medium or high sign-in risk.
  -  **Require managed devices.** The proliferation of supported devices to access your cloud resources helps to improve the productivity of your users. You probably don't want certain resources in your environment to be accessed by devices with an unknown protection level. For those resources, require that users can only access them using a managed device.
  -  **Require approved client applications.** Employees use their mobile devices for both personal and work tasks. For BYOD scenarios, you must decide whether to manage the entire device or just the data on it. If managing only data and access, you can require approved cloud apps that can protect your corporate data.
- -  **Block access.** Blocking access overrides all other assignments for a user and has the power to block your entire organization from signing on to your tenant. It can be used, for example, when you are migrating an app to Azure AD, but you aren't ready for anyone to sign in to it yet. You can also block certain network locations from accessing your cloud apps or block apps using legacy authentication from accessing your tenant resources.
+ -  **Block access.** Blocking access overrides all other assignments for a user and has the power to block your entire organization from signing on to your tenant. It can be used, for example, when you are migrating an app to Microsoft Entra ID, but you aren't ready for anyone to sign in to it yet. You can also block certain network locations from accessing your cloud apps or block apps using legacy authentication from accessing your tenant resources.
     
     > [!IMPORTANT]
     > If you create a policy to block access for all users, be sure to exclude emergency access accounts and consider excluding all administrators from the policy.
@@ -122,7 +122,7 @@ The test plan is important to have a comparison between the expected results and
 
 ## License requirements
 
- -  Free Azure AD - No Conditional Access
+ -  Free Microsoft Entra ID - No Conditional Access
  -  Free Office 365 subscription - No Conditional Access
- -  Azure AD Premium 1 (or Microsoft 365 E3 and up) - Conditional access work based on standard rules
- -  Azure AD Premium 2 - Conditional Access, and you get the ability to use Risky sign-in, Risky Users, and risk-based sign-in options as well (from Identity Protection)
+ -  Microsoft Entra ID Premium 1 (or Microsoft 365 E3 and up) - Conditional access work based on standard rules
+ -  Microsoft Entra ID Premium 2 - Conditional Access, and you get the ability to use Risky sign-in, Risky Users, and risk-based sign-in options as well (from Identity Protection)

@@ -3,20 +3,25 @@ uid: learn.wwl.explore-azure-pipelines
 metadata:
   title: Explore Azure Pipelines
   description: "Explore Azure Pipelines"
-  ms.date: 10/08/2022
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
+  ai-usage: human-only
 title: Explore Azure Pipelines
 summary: This module introduces Azure Pipelines concepts and explains key terms and components of the tool, helping you decide your pipeline strategy and responsibilities.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Describe Azure Pipelines
-  - Explain the role of Azure Pipelines and its components
-  - Decide Pipeline automation responsibility
-  - Understand Azure Pipeline key terms
-prerequisites: ""
+  By the end of this module, you're able to:
+
+  -   Describe Azure Pipelines
+
+  -   Explain the role of Azure Pipelines and its components
+
+  -   Decide Pipeline automation responsibility
+
+  -   Understand Azure Pipeline key terms
+prerequisites: None
 iconUrl: /training/achievements/1-explore-azure-pipelines.svg
 levels:
 - advanced

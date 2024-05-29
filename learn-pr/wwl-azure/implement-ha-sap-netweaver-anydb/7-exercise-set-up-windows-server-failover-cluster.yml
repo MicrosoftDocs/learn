@@ -4,11 +4,10 @@ title: Set up a Windows Server failover cluster for an SAP ASCS-SCS instance
 metadata:
   title: Set up a Windows Server failover cluster for an SAP ASCS-SCS instance
   description: "Set up a Windows Server failover cluster for an SAP ASCS-SCS instance"
-  ms.date: 04/23/2023
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-set-up-windows-server-failover-cluster.md)]

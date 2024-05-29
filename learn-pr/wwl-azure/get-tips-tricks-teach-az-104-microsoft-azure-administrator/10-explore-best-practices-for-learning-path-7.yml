@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-az-104-microsoft-azure-administrator.explore-best-practices-for-module-7
+title: Explore best practices for learning path 7
+metadata:
+  title: Explore best practices for learning path 7
+  description: "Explore best practices for learning path 7"
+  ms.date: 04/01/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 11
+content: |
+  [!include[](includes/10-explore-best-practices-for-learning-path-7.md)]

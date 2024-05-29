@@ -1,0 +1,6 @@
+![Screenshot of Microsoft Fabric logo.](../media/fabric-icon.png)
+
+Scalable analytics with PaaS services can be complex, fragmented, and expensive. With [Microsoft Fabric](https://www.microsoft.com/microsoft-fabric), you don't have to spend all of your time combining various services and implementing interfaces through which business users can access them. Instead, you can use a single product that is easy to understand, set up, create, and manage. Fabric is a unified software-as-a-service (SaaS) offering, with all your data stored in a single open format in OneLake.
+
+OneLake is Fabric's lake-centric architecture that provides a single, integrated environment for data professionals and the business to collaborate on data projects. Think of it like OneDrive for data; OneLake combines storage locations across different regions and clouds into a single logical lake, without moving or duplicating data.  Data can be stored in any file format in OneLake and can be structured or unstructured. For tabular data, the analytical engines in Fabric will write data in delta format when writing to OneLake. All engines will know how to read this format and treat delta files as tables no matter which engine writes it.
+

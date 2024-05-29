@@ -2,6 +2,9 @@ In the previous exercises, you implemented a pipeline that builds the *Space Gam
 
 In this exercise, you'll use a template to define build tasks that can build any configuration defined in the project file. Templates let you define your logic one time and then reuse it several times. Templates combine the content of multiple YAML files into a single pipeline.
 
+> [!TIP]
+> This step in the module is optional. If you don't want to learn about templates at this time, proceed to the next step, [Clean up your Azure DevOps environment](../9-clean-up-environment.yml). For more information about templates, see [Template types & usage](/azure/devops/pipelines/process/templates).
+
 Let's begin by checking in with Mara and Amita.
 
 ## The demo

@@ -1,24 +1,29 @@
 ### YamlMime:Module
 uid: learn.advocates.azure-functions-and-signalr
 metadata:
-  title: Enable automatic updates in a web application using Azure Functions and SignalR Service
-  description: Update a web app's notification mechanism from polling to push-based architecture with SignalR Service, Azure Cosmos DB and Azure Functions. Use Vue.js and JavaScript to use SignalR using Visual Studio Code.
-  ms.date: 05/31/2019
+  title: Enable real-time updates in a web application using Azure Functions and SignalR Service
+  description: Change a JavaScript web app update mechanism from polling to real-time push-based architecture with SignalR Service, Azure Cosmos DB and Azure Functions. Use Vue.js and JavaScript to use SignalR using Visual Studio Code.
+  ms.date: 03/27/2024
   author: craigshoemaker
   ms.author: cshoe
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Enable automatic updates in a web application using Azure Functions and SignalR Service
-summary: Update a web app's notification mechanism from polling to push-based architecture with SignalR Service, Azure Cosmos DB and Azure Functions.
+  ms.topic: module-standard-task-based
+  ms.service: azure-functions
+  manager: mijacobs
+title: Enable real-time updates in a web application using Azure Functions and SignalR Service
+summary: Change a JavaScript web app update mechanism from polling to push-based architecture with SignalR Service, Azure Cosmos DB and Azure Functions.
 abstract: |
   In this module, you will:
-    - Evaluate an existing project that implements polling
-    - Update an application architecture to support push technologies with SignalR Service and Azure Functions
-    - Host a static website in an Azure Storage account
-    - Modify a Vue.js and JavaScript web application to use SignalR
+    - Evaluate an existing project with polling updates
+    - Change serverless architecture to support push technologies with SignalR Service
+    - Change client architecture to use SignalR
+    - Host a static website in an Azure Static Web app
 prerequisites: |
   - Knowledge of JavaScript
-  - Familiarity with Azure Functions, Azure Cosmos DB and Visual Studio Code
+  - Familiarity with serverless APIs, databases
+  - Installation of Node.js LTS (such as 20) 
+  - Installation of Visual Studio Code
+  - Installation of Azure CLI
+  - An [Azure subscription](https://azure.microsoft.com/free)
 levels:
 - beginner
 roles:

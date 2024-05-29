@@ -1,4 +1,3 @@
-
 In this exercise you learn how to perform the following actions:
 
 * Create a resource group for the container
@@ -38,10 +37,10 @@ You create a container by providing a name, a Docker image, and an Azure resourc
 1. Run the following `az container create` command to start a container instance. Be sure to replace the `<myLocation>` with the region you specified earlier. It takes a few minutes for the operation to complete.
 
     ```bash
-    az container create --resource-group az204-aci-rg 
-        --name mycontainer 
-        --image mcr.microsoft.com/azuredocs/aci-helloworld 
-        --ports 80 
+    az container create --resource-group az204-aci-rg \
+        --name mycontainer \
+        --image mcr.microsoft.com/azuredocs/aci-helloworld \
+        --ports 80 \
         --dns-name-label $DNS_NAME_LABEL --location <myLocation> 
     ```
 
@@ -52,9 +51,9 @@ You create a container by providing a name, a Docker image, and an Azure resourc
 1. When the `az container create` command completes, run `az container show` to check its status.
 
     ```bash
-    az container show --resource-group az204-aci-rg 
-        --name mycontainer 
-        --query "{FQDN:ipAddress.fqdn,ProvisioningState:provisioningState}" 
+    az container show --resource-group az204-aci-rg \
+        --name mycontainer \
+        --query "{FQDN:ipAddress.fqdn,ProvisioningState:provisioningState}" \
         --out table 
     ```
 
@@ -78,3 +77,5 @@ When no longer needed, you can use the `az group delete` command to remove the r
 ```bash
 az group delete --name az204-aci-rg --no-wait
 ```
+
+

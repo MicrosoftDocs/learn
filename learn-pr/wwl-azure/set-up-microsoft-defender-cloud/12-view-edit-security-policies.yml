@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.set-up-microsoft-defender-cloud.view-edit-security-policies
+title: View and edit security policies
+metadata:
+  title: View and edit security policies
+  description: "View and edit security policies"
+  ms.date: 04/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/12-view-edit-security-policies.md)]

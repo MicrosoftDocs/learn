@@ -4,11 +4,10 @@ title: Describe human diversity factors
 metadata:
   title: Describe human diversity factors
   description: Describe the human diversity factors that have an impact on inclusive design
-  ms.date: 04/16/2020
+  ms.date: 03/31/2023
   author: asajohnson
   ms.author: asjohnso
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/4-human-diversity-factors.md)]

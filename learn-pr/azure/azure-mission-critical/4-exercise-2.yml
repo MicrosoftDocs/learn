@@ -8,8 +8,7 @@ metadata:
   ms.date: 09/22/2022
   author: PageWriter-MSFT
   ms.author: msimecek
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 30
 content: |
   [!include[](includes/4-exercise-2.md)]

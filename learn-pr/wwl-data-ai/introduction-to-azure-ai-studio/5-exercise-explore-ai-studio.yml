@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-azure-ai-studio.exercise-explore-ai-studio
+title: Exercise - Explore Azure AI Studio
+metadata:
+  title: Exercise - Explore Azure AI Studio
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 05/08/2024
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+  ms.custom:
+    - ignite-2023
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-explore-ai-studio.md)]

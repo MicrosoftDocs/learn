@@ -41,4 +41,4 @@ The overall module steps are:
 
 5. Monitor the solution
 
-After completing the module, your Linux computer will act as an IoT Edge device, and it will be configured to the IoT Hub. You'll have the modules deployed on the edge device. The resulting solution will perform image classification using Cognitive Services for the self-checkout scenario.
+After completing the module, your Linux computer will act as an IoT Edge device, and it will be configured to the IoT Hub. You'll have the modules deployed on the edge device. The resulting solution will perform image classification using Azure AI services for the self-checkout scenario.

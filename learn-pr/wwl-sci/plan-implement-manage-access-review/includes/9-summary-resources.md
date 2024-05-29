@@ -15,7 +15,7 @@ Use these resources to discover more.
 
  -  [What are Access Reviews?](/azure/active-directory/governance/access-reviews-overview)
  -  [Manage user and guest access with Access Reviews](/azure/active-directory/governance/manage-access-review)
- -  [Manage guest access with Azure AD Access Reviews](/azure/active-directory/governance/manage-guest-access-with-access-reviews)
- -  [Review your access to resources with Azure AD Access Reviews](/azure/active-directory/governance/self-access-review)
+ -  [Manage guest access with Microsoft Entra Access Reviews](/azure/active-directory/governance/manage-guest-access-with-access-reviews)
+ -  [Review your access to resources with Microsoft Entra Access Reviews](/azure/active-directory/governance/self-access-review)
  -  [Access review API overview](/graph/accessreviews-overview)
- -  [New Azure AD access reviews feature in Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/retrieving-azure-ad-access-reviews/)
+ -  [New Microsoft Entra access reviews feature in Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/retrieving-azure-ad-access-reviews/)

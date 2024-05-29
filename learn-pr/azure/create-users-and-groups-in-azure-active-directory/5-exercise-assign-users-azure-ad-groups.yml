@@ -1,17 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-users-and-groups-in-azure-active-directory.exercise-assign-users-azure-ad-groups
-title: Exercise - Assign users to Azure Active Directory groups
+title: Exercise - Assign users to Microsoft Entra groups
 metadata:
-  title: Exercise - Assign users to Azure Active Directory groups
-  description: Exercise - Assign users to Azure Active Directory groups
-  ms.date: 03/21/2023
+  title: Exercise - Assign users to Microsoft Entra groups
+  description: Exercise - Assign users to Microsoft Entra groups
+  ms.date: 07/27/2023
   author: shlipsey3
   ms.author: sarahlipsey
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.manager: amycollanino
-  ms.service: active-directory
-  ms.subservice: fundamentals
 durationInMinutes: 5
 content: |
   [!include[](includes/5-exercise-assign-users-azure-ad-groups.md)]

@@ -2,18 +2,18 @@
 uid: learn.wwl.describe-device-based-threats-security-controls
 metadata:
   title: Describe device-based threats and security controls
-  description: "Describe device-based threats and security controls"
-  ms.date: 12/06/2022
+  description: "Describe device-based threats and security controls."
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: security
 title: Describe device-based threats and security controls
 summary: Internet connected devices are everywhere, and users and organizations depend on them for pretty much every facet of daily life and business use. Throughout this module, you'll learn about device threats and mitigation techniques.
 abstract: |
-  - Describe what your device knows about you
-  - Describe how devices and become cybersecurity threats
-  - Describe how to mitigate against device-related threats
+  - Describe what your device knows about you.
+  - Describe how devices and become cybersecurity threats.
+  - Describe how to mitigate against device-related threats.
 prerequisites: ""
 iconUrl: /training/achievements/5-describe-device-based-threats-and-security-controls.svg
 levels:

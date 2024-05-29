@@ -2,12 +2,13 @@
 uid: learn.chain-azure-functions-data-using-input-output-bindings
 metadata:
   title: Chain Azure Functions together by using input and output bindings
-  description: In this module, we'll learn how to integrate your Azure Function with various data sources by using bindings.
-  ms.date: 02/18/2022
+  description: In this module, we learn how to integrate your Azure Function with various data sources by using bindings.
+  ms.date: 10/16/2023
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-functions
+  manager: mijacobs
 title: Chain Azure Functions together using input and output bindings
 summary: Azure Functions makes it easy for your function code to integrate with data and services. Through the power of bindings, you declare the data sources to read and write, and let Azure Functions take care of the rest.
 abstract: |
@@ -30,7 +31,7 @@ products:
 languages:
 - powershell
 subjects:
-- container
+- containers
 units:
 - learn.chain-azure-functions-data-using-input-output-bindings.1-introduction
 - learn.chain-azure-functions-data-using-input-output-bindings.2-explore-input-and-output-binding-types-portal-lesson

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.introduction-to-github.3-introduction-to-github
+title:  Exercise - A guided tour of GitHub
+metadata:
+  title:  Exercise - A guided tour of GitHub
+  description: Learn to use key GitHub features, including issues, notifications, branches, commits, and pull requests.
+  ms.date: 10/27/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 58
+content: |
+  [!include[](includes/6-guided-tour-of-github.md)]

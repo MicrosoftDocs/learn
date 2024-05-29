@@ -1,6 +1,6 @@
 The example web app in this module is based on part of an e-commerce system. The app enables a warehouse employee to update the details of products sold by the system and maintain the current stock levels.
 
-In this unit, you download and test the app locally and then create the resources that are needed to deploy the app to Azure and configure it later in this module.
+In this unit, you download and test the app locally. Then, you create the resources that are needed to deploy the app to Azure. Later in the module, you configure the app.
  
 ## Download and test the sample web app locally
 
@@ -23,12 +23,12 @@ In this unit, you download and test the app locally and then create the resource
     > [!div class="mx-imgBorder"]
     > ![Image of the Visual Studio 2019 "Open Project/Solution" window and the "eShopLegacyWebForms" solution](..\media\2-open-solution.png)
 
-    The **Solution Explorer** window opens. If you're prompted to install additional components, select **Install**, as shown here:
-    
+    The **Solution Explorer** window opens. If you're prompted to install extra components, select **Install**, as shown here:
+
     > [!div class="mx-imgBorder"]
     > ![Image of the Solution Explorer window in Visual Studio. The user is being prompted to install additional components to support Visual Studio.**](..\media\2-install-components.png)
-    
-1. This project currently uses v2.0.1 of the *Microsoft.CodeDom.Providers.DotNetCompilerPlatform* assembly, which has an issue that requires restarting Visual Studio to refresh a cached value. Do the following:
+
+1. This project currently uses v2.0.1 of the *Microsoft.CodeDom.Providers.DotNetCompilerPlatform* assembly, which has an issue that requires restarting Visual Studio to refresh a cached value. So, do the following steps:
 
     a. Restart Visual Studio.  
     b. Open the **eShopLegacyWebForms** solution and then, in the **Build** list, select **Rebuild Solution**.
@@ -38,7 +38,7 @@ In this unit, you download and test the app locally and then create the resource
     > [!div class="mx-imgBorder"]
     > ![Image of the Solution Explorer window and the "Web.config" file](..\media\2-open-web-config.png).
 
-1. In the *Web.config* file, in the **\<appSettings\>** section, set the value of the **UseMockData** key to *false*. This setting causes the app to use data that's stored in a local SQL Server database:
+1. In the *Web.config* file, in the **\<appSettings\>** section, set the value of the **UseMockData** key to *false*. This setting causes the app to use the data stored in a local SQL Server database:
 
     ```xml
     ...
@@ -65,9 +65,9 @@ In this unit, you download and test the app locally and then create the resource
 1. In the Azure Cloud Shell window on the right, run the following commands to define the following PowerShell variables. 
 
     The commands that create the Azure resources in subsequent steps use these variables to name the resources. 
-    
+
     Replace `<your-initials-with-suffix>` with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials from using the same alias. 
-    
+
     Replace `<your-password>` with a password of your choosing. This password is used by the instance of Azure SQL Database that the app connects to.  
 
     > [!NOTE]
@@ -85,7 +85,7 @@ In this unit, you download and test the app locally and then create the resource
     $resourcegroupname = "<rgn>[sandbox resource group name]</rgn>"
     ```
 
-1. To define additional variables to be used to create the resources in this module, run the following commands:
+1. To define more variables to be used to create the resources in this module, run the following commands:
 
     ```PowerShell
     $location = "eastus"
@@ -104,6 +104,7 @@ In this unit, you download and test the app locally and then create the resource
         -ResourceGroup $resourcegroupname `
         -Location $location
     ```
+
 1. To create a web app by using the App Service plan, run the following PowerShell command:
 
     ```PowerShell
@@ -114,7 +115,7 @@ In this unit, you download and test the app locally and then create the resource
         -Location $location
     ```
 
-1. To assign a managed identity to the web app, run the following PowerShell command. You'll require this identity later.
+1. Run the following PowerShell command to assign a managed identity to the web app. This identity is required later in the module.
 
     ```PowerShell
     Set-AzWebApp `
@@ -137,6 +138,7 @@ In this unit, you download and test the app locally and then create the resource
             -String $serveradminpassword `
             -AsPlainText -Force))
     ```
+
 1. To open the SQL Database instance firewall to allow access to services hosted in Azure, run the following PowerShell command:
 
     ```PowerShell
@@ -148,7 +150,7 @@ In this unit, you download and test the app locally and then create the resource
         -EndIpAddress "0.0.0.0"
     ```
 
-1. To create a database in SQL Database, run the following PowerShell command. The database will be populated later, when you migrate the web app.
+1. To create a database in SQL Database, run the following PowerShell command. The database is populated later, when you migrate the web app.
 
     ```PowerShell
     New-AzSqlDatabase  `

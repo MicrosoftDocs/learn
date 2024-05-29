@@ -3,18 +3,17 @@ uid: learn.hub-and-spoke-network-architecture
 metadata:
   title: Centralize your core services by using hub and spoke Azure virtual network architecture
   description: Design a network architecture in Azure that allows for growth and flexibility, secure isolation of critical resources, low administrative overhead, and communication with on-premises network resources.
-  ms.date: 10/21/2019
-  author: KumudD
-  ms.author: kumud
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 02/19/2024
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: module
 title: Centralize your core services by using hub and spoke Azure virtual network architecture
 summary: Design a network architecture in Azure that allows for growth and flexibility, secure isolation of critical resources, low administrative overhead, and communication with on-premises network resources.
 abstract: | 
   In this module, you will:
-  - Identify the requirements and components for a hub and spoke network in Azure
-  - Identify the components and limitations for connectivity to on-premises networks
-  - Identify methods to secure connectivity in a hub and spoke network
+  - Identify the requirements and components for a hub and spoke network in Azure.
+  - Identify the components and limitations for connectivity to on-premises networks.
+  - Identify methods to secure connectivity in a hub and spoke network.
 prerequisites: | 
   - Basic understanding of networking concepts in traditional and cloud networks
 iconUrl: /training/achievements/hub-and-spoke-network-architecture.svg

@@ -10,7 +10,7 @@ Azure Resource Manager is the service that's used to deploy and manage resources
 
 As you begin your cloud journey with Resource Manager, it's important to understand some terms and concepts:
 
-- **Resource**: A manageable item that is available on the Azure platform. Virtual networks, virtual machines, storage accounts, web apps, and databases are examples of resources.
+- **Resource**: A manageable item that's available on the Azure platform. Virtual networks, virtual machines, storage accounts, web apps, and databases are examples of resources.
 
 - **Resource group**: A logical container that holds related resources for an Azure solution. The resource group includes resources you want to manage as a group. Most Azure resources are contained in a resource group. You decide which resources belong in a resource group based on what makes the most sense for your solution.
 
@@ -42,7 +42,7 @@ For example, you use a control plane operation to create a virtual machine, but 
 
 When you send a request from any of the Azure tools, APIs, or SDKs, Resource Manager receives, authenticates, and authorizes the request. Then, it sends the request to the Azure resource provider, which takes the requested action. Because all requests are handled through the same API, you see consistent results and capabilities in all the different tools that are available in Azure.
 
-The following image shows the role Resource Manager plays in handling Azure requests:
+The following image shows the role that Resource Manager plays in handling Azure requests:
 
 :::image type="content" source="../../includes/media/azure-resource-manager.png" alt-text="Diagram that shows how Azure Resource Manager accepts requests from all Azure clients and libraries." border="false" :::
 
@@ -56,7 +56,7 @@ The control plane understands which resources need to be created and which resou
 
 #### Data plane
 
-When a data plane operation starts, the requests are sent to a specific endpoint in your Azure subscription. For example, the Detect Language operation in Cognitive Services is a data plane operation because the request URL is:
+When a data plane operation starts, the requests are sent to a specific endpoint in your Azure subscription. For example, the Detect Language operation in Azure AI services is a data plane operation because the request URL is:
 
 ```http
 POST https://eastus.api.cognitive.microsoft.com/text/analytics/v2.0/languages
@@ -66,17 +66,17 @@ Resource Manager features like access control and locks don't always apply to da
 
 ## What are ARM templates?
 
-ARM templates are files that define the infrastructure and configuration for your deployment. When you write an ARM template, you take a declarative approach to your resource provisioning. These templates describe each resource in the deployment, but they don't describe how to deploy the resources. When you submit a template to Resource Manager for deployment, the control plane can deploy the defined resources in an organized and consistent manner. In the preceding unit, you learned about the differences between imperative code and declarative code.
+Azure Resource Manager templates are files that define the infrastructure and configuration for your deployment. When you write an ARM template, you take a declarative approach to your resource provisioning. These templates describe each resource in the deployment, but they don't describe how to deploy the resources. When you submit a template to Resource Manager for deployment, the control plane can deploy the defined resources in an organized and consistent manner. In the preceding unit, you learned about the differences between imperative code and declarative code.
 
 ### Why use ARM templates?
 
-There are many benefits to using ARM templates, both JSON and Bicep, for your resource provisioning:
+There are many benefits to using ARM templates, either JSON or Bicep, for your resource provisioning.
 
 - **Repeatable results**:  ARM templates are idempotent, which means that you can repeatedly deploy the same template and get the same result. The template doesn't duplicate resources.
 
 - **Orchestration**:  When a template deployment is submitted to Resource Manager, the resources in the template are deployed in parallel. This process allows deployments to finish faster. Resource Manager orchestrates these deployments in the correct order if one resource depends on another.
 
-- **Preview**:  The what-if tool, available in Azure PowerShell and Azure CLI, allows you to preview changes to your environment before template deployment. This tool will detail any creations, modification, and deletions that will be made by your template.
+- **Preview**:  The what-if tool, available in Azure PowerShell and Azure CLI, allows you to preview changes to your environment before template deployment. This tool details any creations, modification, and deletions that will be made by your template.
 
 - **Testing and Validation**:  You can use tools like the Bicep linter to check the quality of your templates before deployment. ARM templates submitted to Resource Manager are validated before the deployment process. This validation alerts you to any errors in your template before resource provisioning.
 

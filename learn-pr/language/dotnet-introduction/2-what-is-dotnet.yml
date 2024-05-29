@@ -4,11 +4,13 @@ title: What is .NET?
 metadata:
   title: What is .NET?
   description: A comprehensive overview of the .NET ecosystem, tools, technologies, and processes.
-  ms.date: 10/12/2020
+  ms.date: 10/12/2023
   author: camsoper
   ms.author: casoper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 7
 azureSandbox: false
 content: |

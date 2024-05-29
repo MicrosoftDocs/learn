@@ -4,11 +4,10 @@ title: What about Inclusive Marketing?
 metadata:
   title: What about Inclusive Marketing?
   description: You learn about Inclusive Marketing.
-  ms.date: 02/24/2020
-  author: PhilStollery
-  ms.author: tinaes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/30/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-inclusive-market.md)]

@@ -1,15 +1,14 @@
-You can use Microsoft Intune to manage the apps that your company's workforce uses on their devices. This functionality is called mobile application management (MAM). MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it's used with personal devices, only organization-related access and data are managed.
+You can use Microsoft Intune to manage the apps that your company's workforce uses on their devices. This functionality is called mobile application management (MAM). MAM in Intune protects organization data at the application level, including custom apps and store apps. You can use app management on organization-owned devices and personal devices. When it's used with personal devices, you can manage only organization-related access and data.
 
 ## Video - Interactive guide to managing devices
 
-The following interactive guide steps you through the Microsoft Intune admin center to show you how to manage and protect devices.
+The following interactive guide steps you through the Microsoft Intune admin center to show you how to manage and protect mobile and desktop applications.
 
-</p>
-<div align=”center”>
-<iframe allowfullscreen width="95%" height="450" src="https://mslearn.cloudguides.com/guides/Manage%20and%20protect%20mobile%20and%20desktop%20applications%20with%20Microsoft%20Endpoint%20Manager" frameborder="0" scrolling="no" loading="lazy"/></iframe>
-</div>
 
-Suppose that you're the administrator of a company with several thousand employees. Your company uses Microsoft Office to create and share information internally and externally. Your company allows employees to use their own devices. You must implement the rules that are enforced when employees attempts to access, move, or copy corporate data using managed apps.
+> [!VIDEO https://mslearn.cloudguides.com/guides/Manage%20and%20protect%20mobile%20and%20desktop%20applications%20with%20Microsoft%20Endpoint%20Manager]
+
+
+Suppose you're the administrator of a company with several thousand employees. Your company uses Microsoft Office to create and share information internally and externally. Your company allows employees to use their own devices. You must implement the rules that are enforced when employees attempts to access, move, or copy corporate data using managed apps.
 
 Microsoft Intune supports two MAM configurations:
 

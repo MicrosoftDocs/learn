@@ -3,20 +3,22 @@ uid: learn.wwl.configure-azure-dns
 metadata:
   title: Configure Azure DNS
   description: "Learn how to configure Azure DNS including custom domain names and record sets."
-  ms.date: 01/10/2023
+  ms.date: 11/20/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: dns
+  ai-usage: ai-assisted
 title: Configure Azure DNS
-summary: Learn how to configure Azure DNS including custom domain names and record sets.
+summary: |
+  Learn how to configure Azure DNS including custom domain names and record sets.
 abstract: |
   In this module, you learn how to:
   - Identify features and usage cases for domains, custom domains, and private zones.
   - Verify custom domain names by using DNS records.
   - Implement DNS zones, DNS delegation, and DNS record sets.
 prerequisites: |
-  None
+  -  Familiarity with DNS including record sets, delegation, and zones.
 iconUrl: /training/achievements/azure-dns-configure.svg
 levels:
 - intermediate
@@ -35,6 +37,7 @@ units:
 - learn.wwl.configure-azure-dns.add-dns-record-sets
 - learn.wwl.configure-azure-dns.plan-for-private-dns-zones
 - learn.wwl.configure-azure-dns.determine-private-zone-scenarios
+- learn.wwl.configure-azure-dns.interactive-simulation-domain-names
 - learn.wwl.configure-azure-dns.knowledge-check
 - learn.wwl.configure-azure-dns.summary-resources
 badge:

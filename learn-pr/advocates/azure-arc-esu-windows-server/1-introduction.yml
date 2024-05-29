@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-windows-server-extended-security-updates-using-azure-arc.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: An introduction to using Azure Arc to enable Windows Server Extended Security Updates.
+  ms.date: 01/03/2024
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ms.service: windows-server
+  ms.custom: team=cloud_advocates
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

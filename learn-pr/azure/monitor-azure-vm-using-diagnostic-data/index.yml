@@ -1,24 +1,24 @@
 ### YamlMime:Module
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data
 metadata:
-  title: Monitor the health of your Azure virtual machine by using Azure Metrics Explorer and metric alerts
-  description: Learn how to monitor the health of your Azure VMs by using Azure Metrics Explorer and metric alerts. 
-  ms.date: 02/03/2023
-  author: cwatson-cat
-  ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  title: Monitor your Azure virtual machines with Azure Monitor
+  description: Learn how to monitor your Azure VMs by using Azure Monitor to collect and analyze VM host and client metrics and logs.
+  ms.date: 11/06/2023
+  author: guywi-ms
+  ms.author: guywild
+  ms.topic: module
   ms.custom: engagement-fy23
-title: Monitor the health of your Azure virtual machine by using Azure Metrics Explorer and metric alerts
-summary: Evaluate monitoring options for an Azure virtual machine (VM). Enable diagnostics to get data about your VM. View VM metrics in Azure Metrics Explorer. Create a metric alert to monitor performance.
+  ms.service: virtual-machines
+title: Monitor your Azure virtual machines with Azure Monitor
+summary: Learn how to monitor your Azure VMs by using Azure Monitor to collect and analyze VM host and client metrics and logs.
 abstract: | 
-  In this module, you will:
-  - Identify metrics and diagnostic data that you can collect for virtual machines
-  - Configure monitoring for a virtual machine
-  - Use monitoring data to diagnose problems
+  - Understand which monitoring data you need to collect from your VM.
+  - Enable and view recommended alerts and diagnostics.
+  - Use Azure Monitor to collect and analyze VM host metrics data.
+  - Use Azure Monitor Agent to collect VM client performance metrics and event logs.
 prerequisites: | 
-  - An Azure account with an [active subscription](https://azure.microsoft.com/free)
-  - Familiarity with virtualization and Azure virtual machines
+  - At least **Contributor** role access to an Azure subscription
+  - Familiarity with virtualization and Azure VMs
 iconUrl: /training/achievements/monitor-azure-vm-using-diagnostic-data.svg
 levels:
 - beginner
@@ -36,10 +36,8 @@ units:
 - learn.azure.monitor-azure-vm-using-diagnostic-data.monitor-vm-health
 - learn.azure.monitor-azure-vm-using-diagnostic-data.exercise-create-virtual-machine
 - learn.azure.monitor-azure-vm-using-diagnostic-data.view-host-metrics
-- learn.azure.monitor-azure-vm-using-diagnostic-data.configure-azure-diagnostic-extension
-- learn.azure.monitor-azure-vm-using-diagnostic-data.exercise-configure-azure-diagnostic-extension
-- learn.azure.monitor-azure-vm-using-diagnostic-data.use-diagnostic-data
-- learn.azure.monitor-azure-vm-using-diagnostic-data.exercise-use-diagnostic-data
+- learn.azure.monitor-azure-vm-using-diagnostic-data.enable-vm-insights
+- learn.azure.monitor-azure-vm-using-diagnostic-data.collect-log-data
 - learn.azure.monitor-azure-vm-using-diagnostic-data.summary
 badge:
   uid: learn.azure.monitor-azure-vm-using-diagnostic-data.badge

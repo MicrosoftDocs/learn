@@ -2,31 +2,48 @@
 uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure
 metadata:
   title: Deploy and manage Azure IaaS Active Directory domain controllers in Azure
-  description: "Deploy and manage Azure IaaS Active Directory domain controllers in Azure"
-  ms.date: 05/05/2022
+  description: "Learn to deploy and manage Azure IaaS Active Directory domain controllers in Azure."
+  ms.date: 04/19/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: active-directory
+  ms.subservice: aad-general
+  ai-usage: human-only
 title: Deploy and manage Azure IaaS Active Directory domain controllers in Azure
-summary: In this module, you’ll learn how to extend an existing Active Directory environment into Azure by placing IaaS VMs configured as domain controllers onto a specially configured Azure virtual network (VNet) subnet.
+summary: In this module, you learn how to extend an existing Active Directory environment into Azure by placing IaaS VMs configured as domain controllers onto a specially configured Azure virtual network (VNet) subnet.
 abstract: |
-  After completing this module, you will be able to:
-  - Select an option to implement directory and identity services by using Active Directory Domain Services (AD DS) in Azure.
-  - Deploy and configure AD DS domain controllers in Azure VMs.
-  - Install a replica AD DS domain controller in an Azure VM.
-  - Install a new AD DS forest on an Azure VNet.
+  After completing this module, you'll be able to:
+
+  -   Select an option to implement directory and identity services by using Active Directory Domain Services (AD DS) in Azure.
+
+  -   Deploy and configure AD DS domain controllers in Azure VMs.
+
+  -   Install a replica AD DS domain controller in an Azure VM.
+
+  -   Install a new AD DS forest on an Azure VNet.
 prerequisites: |
   In order to get the best learning experience from this module, it's important that you have knowledge and experience of the following:
-  - Managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including Active Directory Domain Services (AD DS), Domain Name System (DNS), the Distributed File System (DFS), Hyper-V, and file and storage services.
-  - Common Windows Server management tools.
-  - Core Microsoft compute, storage, networking, and virtualization technologies.
-  - On-premises resiliency Windows Server-based compute and storage technologies.
-  - Implementing and managing IaaS services in Microsoft Azure.
-  - Azure Active Directory (Azure AD).
-  - Security-related technologies (firewalls, encryption, multi-factor authentication).
-  - Windows PowerShell scripting.
-  - Automation and monitoring.
+
+  -   Managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including Active Directory Domain Services (AD DS), Domain Name System (DNS), the Distributed File System (DFS), Hyper-V, and file and storage services.
+
+  -   Common Windows Server management tools.
+
+  -   Core Microsoft compute, storage, networking, and virtualization technologies.
+
+  -   On-premises resiliency Windows Server-based compute and storage technologies.
+
+  -   Implementing and managing IaaS services in Microsoft Azure.
+
+  -   Microsoft Entra ID.
+
+  -   Security-related technologies (firewalls, encryption, multifactor authentication).
+
+  -   Windows PowerShell scripting.
+
+  -   Automation and monitoring.
 iconUrl: /training/achievements/deploy-and-manage-azure-iaas-active-directory-domain-controllers-in-azure.svg
 levels:
 - intermediate
@@ -36,7 +53,7 @@ roles:
 - technology-manager
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines

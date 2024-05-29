@@ -1,6 +1,6 @@
 We'll start out with some design principles.
 
-<!--[](https://learn.microsoft.com/azure/architecture/guide/security/conditional-access-design#conditional-access-as-a-zero-trust-policy-engine)-->
+<!--[](/azure/architecture/guide/security/conditional-access-design#conditional-access-as-a-zero-trust-policy-engine)-->
 
 ### Conditional Access as a Zero Trust policy engine
 
@@ -30,9 +30,9 @@ Based on the preceding information, here's a summary of suggested principles. Mi
 
 |  Zero Trust Principle | Conditional Access Principle
 |---|---|
-| **Verify explicitly**  | - Move the control plane to the cloud. Integrate apps with Azure AD and protect them by using Conditional Access.<br>- Consider all clients to be external.  |
-|  **Use least privileged access** | - Evaluate access based on compliance and risk, including user risk, sign-in risk, and device risk.<br>-   Use these access priorities:<br>-   Access the resource directly, using Conditional Access for protection.<br>-   Publish access to the resource by using Azure AD Application Proxy, using Conditional Access for protection.<br>-   Use Conditional Access—based VPN to access the resource. Restrict access to the level of the app or DNS name.  |
-| **Assume breach**  | -   Segment network infrastructure.<br>- Minimize use of enterprise PKI.<br>- Migrate single sign-on (SSO) from AD FS to password hash synchronization (PHS).<br>-   Minimize dependencies on DCs by using Kerberos KDC in Azure AD.<br>- Move the management plane to the cloud. Manage devices by using Microsoft Endpoint Manager.  |
+| **Verify explicitly**  | - Move the control plane to the cloud. Integrate apps with Microsoft Entra ID and protect them by using Conditional Access.<br>- Consider all clients to be external.  |
+|  **Use least privileged access** | - Evaluate access based on compliance and risk, including user risk, sign-in risk, and device risk.<br>-   Use these access priorities:<br>-   Access the resource directly, using Conditional Access for protection.<br>-   Publish access to the resource by using Microsoft Entra application proxy, using Conditional Access for protection.<br>-   Use Conditional Access—based VPN to access the resource. Restrict access to the level of the app or DNS name.  |
+| **Assume breach**  | -   Segment network infrastructure.<br>- Minimize use of enterprise PKI.<br>- Migrate single sign-on (SSO) from AD FS to password hash synchronization (PHS).<br>-   Minimize dependencies on DCs by using Kerberos KDC in Microsoft Entra ID.<br>- Move the management plane to the cloud. Manage devices by using Microsoft Endpoint Manager.  |
 
 Here are some more detailed principles and recommended practices for Conditional Access:
 

@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.recognize-synthesize-speech.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/21/2023
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 2
+quiz:
+  title: ""
+  questions:
+  - content: "You plan to build an application that uses Azure AI Speech to transcribe audio recordings of phone calls into text, and then submit the transcribed text to Azure AI Language to extract key phrases. You want to manage access and billing for the application services with a single Azure resource. Which type of Azure resource should you create?"
+    choices:
+    - content: "Speech"
+      isCorrect: false
+      explanation: "Incorrect. This resource would support speech transcription, but not key phrase extraction."
+    - content: "Language"
+      isCorrect: false
+      explanation: "Incorrect. This resource would support key phrase extraction, but not speech transcription."
+    - content: "Azure AI services"
+      isCorrect: true
+      explanation: "Correct. This resource would support both the Azure AI Speech and Azure AI Language services."
+  - content: "You want to use Azure AI Speech service to build an application that reads incoming email message subjects aloud. Which API should you use?"
+    choices:
+    - content: "Speech to text"
+      isCorrect: false
+      explanation: "Incorrect. The Speech to text API converts audible speech to text."
+    - content: "Text to speech"
+      isCorrect: true
+      explanation: "Correct. The Text to speech API converts text to audible speech."
+    - content: "Translator"
+      isCorrect: false
+      explanation: "Incorrect. The Translator API translates speech from one language to another."

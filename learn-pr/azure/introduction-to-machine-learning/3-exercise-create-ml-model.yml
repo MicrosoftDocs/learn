@@ -4,11 +4,10 @@ title: Exercise - Create a machine learning model
 metadata:
   title: Exercise - Create a machine learning model
   description: Learn how to build a simple model.
-  ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/05/2023
+  author: msakande
+  ms.author: mopeakande
+  ms.topic: unit
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/1-3-exercise-create-ml-model.ipynb

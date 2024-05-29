@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-code-to-cloud.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Multiple-choice questions.
+  ms.date: 09/04/2023
+  author: juliamuiruri4
+  ms.author: juliamuiruri
+  ms.topic: unit
+  ms.service: azure
+  ms.custom: team=nextgen
+durationInMinutes: 1
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'What are the benefits of using Code to Cloud for your project?'
+    choices:
+    - content: "Saves set up and deployment time"
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "Simplified management"
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "Both Option 1 and 2"
+      isCorrect: true
+      explanation: "Code to Cloud handles deployment pipeline for you by relying on GitHub actions to deploy saving on setup and deployment time. Code to Cloud also shows a consolidated view of your application making it easier to manage your components"
+  - content: 'What are the instances available in the "Monitoring" section of Code to Cloud?'
+    choices:
+    - content: "Application Insights"
+      isCorrect: true
+      explanation: "Correct"
+    - content: "Web apps"
+      isCorrect: false
+      explanation: "Web apps are managed in the hosting section of Code to Cloud"
+    - content: "API endpoints"
+      isCorrect: false
+      explanation: "Web apis are managed in the hosting section of Code to Cloud"
+  - content: 'How can you view your deployment workflow after deploying to Code to Cloud?'
+    choices:
+    - content: "It isn't possible to view the deployment workflow once it has been deployed"
+      isCorrect: false
+      explanation: "With Code to cloud, you can monitor your deployment workflow during and after deployment"
+    - content: "Click on the workflow file in GitHub Actions"
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "Click on the workflow file in the Azure portal"
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "Both Option 2 and 3"
+      isCorrect: true
+      explanation: "With Code to cloud, you can monitor your deployment workflow during and after deployment both on the Azure portal and on GitHub actions"

@@ -4,11 +4,10 @@ title: Measure in MR and filter in Power Apps
 metadata:
   title:  Measure in MR and filter in Power Apps
   description:  Measure in MR component allows the users to measure distance, area, and volume in the real world
-  ms.date: 10/19/2021
+  ms.date: 04/23/2024
   author: "Sean-Kerawala"
-  ms.author: "sekerawa"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.author: "vinnietieto"
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/6-measure-mr-filter.md)]

@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.security-private-access-azure-resources
+metadata:
+  title: Plan and implement security for private access to Azure resources
+  description: "This module focuses on equipping administrators with the knowledge and skills required to plan and implement robust security measures for private access to Azure resources, safeguarding sensitive data and enhancing network integrity."
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: module-intro-to-product
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Plan and implement security for private access to Azure resources
+summary: This module focuses on equipping administrators with the knowledge and skills required to plan and implement robust security measures for private access to Azure resources, safeguarding sensitive data and enhancing network integrity.
+abstract: |
+  -   Develop security strategies for private access to Azure resources to protect sensitive data.
+
+  -   Utilize virtual network Service Endpoints and Private Endpoints for secure Azure service access.
+
+  -   Manage Private Link services for secure resource exposure and integrate Azure App Service and Functions with virtual networks.
+
+  -   Configure network security for App Service Environment and Azure SQL Managed Instance to safeguard web applications and databases.
+prerequisites: '-   None'
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure-app-service
+- azure-functions
+- azure-virtual-network
+subjects:
+- security
+units:
+- learn.wwl.security-private-access-azure-resources.introduction
+- learn.wwl.security-private-access-azure-resources.virtual-network-service-endpoints
+- learn.wwl.security-private-access-azure-resources.private-endpoints
+- learn.wwl.security-private-access-azure-resources.azure-private-link-services
+- learn.wwl.security-private-access-azure-resources.integrate-your-app-with-azure-virtual-network
+- learn.wwl.security-private-access-azure-resources.network-security-configurations-app-service-environment
+- learn.wwl.security-private-access-azure-resources.network-security-configurations-azure-sql-managed-instance
+- learn.wwl.security-private-access-azure-resources.knowledge-check
+- learn.wwl.security-private-access-azure-resources.summary
+badge:
+  uid: learn.wwl.security-private-access-azure-resources.badge

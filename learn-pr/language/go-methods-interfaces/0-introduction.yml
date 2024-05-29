@@ -3,11 +3,10 @@ uid: learn.language.go-methods-interfaces.0-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 01/20/2021
+  ms.date: 01/27/2023
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Introduction
 durationInMinutes: 1

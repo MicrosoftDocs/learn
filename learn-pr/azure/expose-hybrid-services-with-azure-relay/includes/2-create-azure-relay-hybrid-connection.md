@@ -18,7 +18,7 @@ Azure Relay addresses these kinds of problems by providing a point in the cloud 
 
 Azure Relay establishes a connection between two components, such as an Azure function and an on-premises service. When the connection is established, requests and responses can be exchanged through the relay, as if there were a direct connection. You can make two types of connections in Azure Relay:
 
-- **Hybrid connections**: Hybrid connections are two-way streams of binary data that use either WebSocket or HTTP standards. Because these connections are based on open standards, you can use them from almost any language or coding framework. For example, you could use them to connect an on-premises Node.js server to an Azure web job that's written in C# and the .NET Framework.
+- **Hybrid connections**: Hybrid connections are two-way streams of binary data that use either WebSocket or HTTP standards. Because these connections are based on open standards, you can use them from almost any language or coding framework. For example, you could use them to connect an on-premises Node.js server to an Azure web job written in C# and the .NET Framework.
 - **WCF connections**: Some developers use Windows Communication Foundation (WCF) to enable remote procedure calls. WCF was commonly used for network communications with older versions of the .NET Framework. WCF is now considered a legacy protocol, but it remains in common use in older applications. Because Azure Relay supports WCF, you can use it with existing .NET Framework components that use this standard, without having to rewrite them. 
 
 Use hybrid connections unless you're supporting existing .NET Framework components that use WCF.
@@ -27,8 +27,8 @@ Use hybrid connections unless you're supporting existing .NET Framework componen
 
 Hybrid connections can use one of these protocols:
 
-- **HTTP**: This stateless protocol consists of requests such as GET and POST, and it's used to transfer webpages between web servers and browsers. Usually, HTTP uses TCP port 80 or 443 when the request is secured with Secure Sockets Layer. This protocol is widely supported and easy to code for. However, because this protocol is stateless, it's less efficient for persistent communications.
-- **WebSocket**: This protocol creates a full duplex communication channel over port 80 or 443, which is more efficient than the stateless HTTP protocol. A WebSocket connection is especially efficient when the communication consists of many messages, not just a single request and response.
+- **HTTP**: This stateless protocol consists of requests such as GET and POST, and is used to transfer webpages between web servers and browsers. Usually, HTTP uses Transmission Control Protocol (TCP) port 80 or 443 when the request is secured with Secure Sockets Layer. This protocol is widely supported and easy to code for. However, because this protocol is stateless, it's less efficient for persistent communications.
+- **WebSocket**: This protocol creates a full duplex communication channel over port 80 or 443, which is more efficient than the stateless HTTP protocol. A WebSocket connection is especially efficient when the communication consists of many messages, and isn't just a single request and response.
 
 In this module, because the process is a simple request for a credit check, followed by a single response, you use a hybrid connection and the HTTP protocol.
 
@@ -40,15 +40,15 @@ The following diagram shows how the connection is made:
 
 :::image type="content" source="../media/2-how-relay-works.png" alt-text="Diagram showing how Azure Relay exchanges messages.":::
 
-1. A listener requests a connection to Azure Relay. The request is sent to a relay gateway by Azure Load Balancer.
-1. The gateway creates an Azure relay in the gateway store. At this point, the listener is ready to receive messages.
-1. A sender requests a connection, which might be received by a different gateway.
-1. The gateway obtains information for the relay from the gateway store.
-1. The sender's gateway sends the connection request to the listener's gateway.
-1. The listener's gateway forwards the connection request to the listener. This request includes the identity of the sender's gateway.
-1. The listener makes a connection to the sender's gateway. At this point, the sender and listener can exchange messages.
-1. The sender's gateway forwards messages from the listener to the sender.
-1. The sender's gateway also forwards messages from the sender to the listener. 
+1. Listening client sends a listening request to the Azure Relay service. The Azure load balancer routes the request to one of the gateway nodes. 
+2. The Azure Relay service creates a relay in the gateway store. 
+3. Sending client sends a request to connect to the listening service. 
+4. The gateway that receives the request looks up for the relay in the gateway store. 
+5. The gateway forwards the connection request to the right gateway mentioned in the gateway store. 
+6. The gateway sends a request to the listening client for it to create a temporary channel to the gateway node that's closest to the sending client. 
+7. The listening client creates a temporary channel to the gateway that's closest to the sending client. Now that the connection is established between clients via a gateway, the clients can exchange messages with each other. 
+8. The gateway forwards any messages from the listening client to the sending client. 
+9. The gateway forwards any messages from the sending client to the listening client.  
 
 ## How to create a relay
 

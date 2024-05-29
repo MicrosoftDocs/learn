@@ -4,11 +4,10 @@ title: Map your data
 metadata:
   title: Map your data
   description: "Now that the data has been onboarded into CluedIn in a staging area, we have to map the data from its current form into the new desired state. For this, we'll map the data in the CluedIn Studio."
-  ms.date: 03/28/2023
+  ms.date: 11/29/2023
   author: whhender
   ms.author: whhender
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/5-map-data.md)]

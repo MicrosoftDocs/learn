@@ -1,4 +1,3 @@
-
 Arrays can be used to store multiple values of the same type in a single variable. The values stored in an array are generally related. For example, a list of student names could be stored in a string array named `students`.
 
 Your work in the security department is focused on finding a pattern for fraudulent orders. You want your code to review past customer orders and identify markers associated with fraudulent orders. Your company hopes the markers can be used to identify potential fraudulent purchase orders in the future before they're processed. Since you don't always know in advance how many orders you need to review, you can't create individual variables to hold each Order ID. How can you create a data structure to hold multiple related values?
@@ -15,7 +14,7 @@ An array is a special type of variable that can hold multiple values of the same
 
 ### Prepare your coding environment
 
-This module includes hands-on activities that guide you through the process of building and running sample code. You're encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities helps you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
+This module includes activities that guide you through the process of building and running sample code. You're encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities helps you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
 
 1. Open Visual Studio Code.
 
@@ -239,7 +238,7 @@ The elements of an array are just like any other variable value. You can assign,
 
 ### Initialize an array
 
-You can initialize an array during declaration just like would a regular variable. However, to initialize the elements of the array, you use a special syntax featuring curly braces.
+You can initialize an array during declaration just like you would a regular variable. However, to initialize the elements of the array, you use a special syntax featuring curly braces.
 
 1. Comment out the lines where you declare the `fraudulentOrderIDs` variable.
 

@@ -4,13 +4,12 @@ title: Create Azure policies
 metadata:
   title: Create Azure policies
   description: "Create Azure policies"
-  ms.date: 04/06/2023
+  ms.date: 05/20/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/4-create-azure-policies.md)]

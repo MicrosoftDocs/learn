@@ -2,7 +2,7 @@ Unit testing is a fundamental part of an Agile methodology. Visual Studio provid
 
 In the luxury watch online website scenario, your development team has a policy to achieve at least 80% code coverage in unit testing. You would like to implement the same policy for Azure Functions.
 
-In this unit, you'll see how to use the `xUnit` test framework with Visual Studio to test Azure Functions.
+Here, you see how to use the `xUnit` test framework with Visual Studio to test Azure Functions.
 
 ## Create a unit test project
 
@@ -14,7 +14,7 @@ The first step is to create a project that contains your unit tests, and add it 
 
 1. In the **Add a new project** window, scroll down, select the **xUnit Test Project** *C#+* icon template, and then select **Next**.
 
-    :::image type="content" source="../media/6-add-xunit-project.png" alt-text="Screenshot of Add New Project window. The user has selected the xUnit Test Project template." loc-scope="vs":::
+    :::image type="content" source="../media/6-add-xunit-project.png" alt-text="Screenshot of the Add New Project window. The xUnit Test Project template is selected." loc-scope="vs":::
 
 1. The **Configure your new project** window appears. In the **Project name** field, enter *WatchFunctionsTests*. Aside the **Location** field, select the browse icon, and then select the **WatchPortalFunction** folder.
 
@@ -24,7 +24,7 @@ The first step is to create a project that contains your unit tests, and add it 
 
 1. Select **Create**.
 
-1. When the project has been added, right-click the **WatchFunctionTests** project in the **Solution Explorer** window, and then select **Manage NuGet Packages**.
+1. When the project is added, right-click the **WatchFunctionTests** project in the **Solution Explorer** window, and then select **Manage NuGet Packages**.
 
 1. In the **NuGet: WatchFunctionTests** window, select the **Browse** tab. In the **Search** box, enter *Microsoft.AspNetCore.Mvc*. Select the **Microsoft.AspNetCore.Mvc** package, and then select **Install**.
 
@@ -35,7 +35,7 @@ The first step is to create a project that contains your unit tests, and add it 
 
 1. Wait while the package is installed. If the **Preview Changes** message box appears, select **OK**. In the **License Acceptance** message box, select **I Accept**.
 
-1. After the package has been added, in the **Solution Explorer** window, under the **WatchFunctionsTests** project, right-click the **UnitTest1.cs** file, and then select **Rename**. Change the name of the file to *WatchFunctionUnitTests.cs*. In the message box that appears, to rename all references of **UnitTest1** to **WatchFunctionUnitTests**, select **Yes**.
+1. After the package is added, in the **Solution Explorer** window, under the **WatchFunctionsTests** project, right-click the **UnitTest1.cs** file, and then select **Rename**. Change the name of the file to *WatchFunctionUnitTests.cs*. In the message box that appears, to rename all references of **UnitTest1** to **WatchFunctionUnitTests**, select **Yes**.
 
 1. In the **Solution Explorer** window, under the **WatchFunctionsTests** project, right-click **Dependencies**, and then select **Add Project Reference**.
 
@@ -45,7 +45,7 @@ The first step is to create a project that contains your unit tests, and add it 
 
 You can now add unit tests to the test project. In the luxury watch scenario, you want to ensure the **WatchInfo** function always returns an *OK* response when a model is provided in the query string of a request, and a *Bad* response if the query string is empty or doesn't contain the `model` parameter.
 
-To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctionsTests**.
+To verify this behavior, you add a pair of *Fact* tests to the **WatchFunctionsTests**.
 
 1. In the **Solution Explorer** window, to display the WatchPortalFunction in the code window, double-click the **WatchFunctionUnitTests.cs** file.
 
@@ -211,8 +211,8 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
     string model = req.Query["modelll"];
     ```
 
-1. On the top menu bar, under **Test**, select **Run All Tests**. This time, the **TestWatchFunctionSuccess** test should fail. This failure occurs because the **WatchInfo** function hasn't found the parameter named `modelll` in the query string, and so the function has returned a *Bad* response.
+1. On the top menu bar, under **Test**, select **Run All Tests**. This time, the **TestWatchFunctionSuccess** test should fail. This failure occurs because the **WatchInfo** function doesn't find the parameter named `modelll` in the query string, and so the function returns a *Bad* response.
 
     :::image type="content" source="../media/6-test-failure.png" alt-text="Screenshot of the Team Explorer window. The TestWatchFunctionSuccess test failed." loc-scope="vs":::
 
-You've now seen how to create a unit test project, and implement unit tests for an Azure Function.
+IN this unit, you saw how to create a unit test project, and implement unit tests for an Azure Function.

@@ -218,7 +218,7 @@ Here you create App Service instances for the three stages that you'll deploy to
 
     You see this page in each environment:
 
-    :::image type="content" source="../../shared/media/app-service-default.png" alt-text="Screenshot of the default home page in Azure App Service.":::
+    :::image type="content" source="../media/3-app-service-default-tailspin.png" alt-text="Screenshot of the default home page in Azure App Service.":::
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/training/modules/manage-release-cadence/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.

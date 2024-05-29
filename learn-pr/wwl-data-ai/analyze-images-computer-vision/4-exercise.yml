@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-images-computer-vision.exercise
+title: Exercise - Analyze images in Vision Studio
+metadata:
+  title: Exercise - Analyze images in Vision Studio
+  description: "Exercise - Analyze images in Vision Studio"
+  ms.date: 02/22/2024
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-exercise.md)]

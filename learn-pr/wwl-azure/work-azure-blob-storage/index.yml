@@ -3,11 +3,13 @@ uid: learn.wwl.work-azure-blob-storage
 metadata:
   title: Work with Azure Blob storage
   description: "Learn how to use the Azure Blob storage client library to create and update Blob storage resources."
-  ms.date: 04/26/2023
+  ms.date: 11/02/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: azure-blob-storage
 title: Work with Azure Blob storage
 summary: Learn how to use the Azure Blob storage client library to create and update Blob storage resources.
 abstract: |

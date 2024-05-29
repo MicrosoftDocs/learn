@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Learn why you need to protect your organization's endpoints using Microsoft Intune. 
-  ms.date: 10/15/2020
+  ms.date: 09/29/2023
   author: ErikRe
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]

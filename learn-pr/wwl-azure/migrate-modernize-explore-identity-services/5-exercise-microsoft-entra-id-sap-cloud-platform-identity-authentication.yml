@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-identity-services.exercise-microsoft-entra-id-sap-cloud-platform-identity-authentication
+title: Integrate Microsoft Entra ID with SAP Cloud Platform Identity Authentication
+metadata:
+  title: Integrate Microsoft Entra ID with SAP Cloud Platform Identity Authentication
+  description: "Integrate Microsoft Entra ID with SAP Cloud Platform Identity Authentication"
+  ms.date: 01/10/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-exercise-microsoft-entra-id-sap-cloud-platform-identity-authentication.md)]

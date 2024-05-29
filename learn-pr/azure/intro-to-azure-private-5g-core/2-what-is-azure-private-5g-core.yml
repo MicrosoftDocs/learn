@@ -4,11 +4,10 @@ title: What is Azure Private 5G Core?
 metadata:
   title: What is Azure Private 5G Core?
   description: "Provides a high-level picture of Azure Private 5G Core."
-  ms.date: 10/10/2022
-  author: michael-weizhong-shan
-  ms.author: michaelshan
-  ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  ms.date: 05/16/2024
+  author: lnyswonger
+  ms.author: joemarshall
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-azure-private-5g-core.md)]

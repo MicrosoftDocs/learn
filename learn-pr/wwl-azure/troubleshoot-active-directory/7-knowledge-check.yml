@@ -7,8 +7,7 @@ metadata:
   ms.date: 06/08/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -39,14 +38,14 @@ quiz:
     - content: "Infrastructure master."
       isCorrect: false
       explanation: "Incorrect. This role handles group references between domains."
-  - content: "An administrator has established synchronization between their AD DS and Azure AD environments. Users whose accounts are synced appear able to sign in, but none seem to be able to access cloud resources. What's the likely problem?"
+  - content: "An administrator has established synchronization between their AD DS and Microsoft Entra environments. Users whose accounts are synced appear able to sign in, but none seem to be able to access cloud resources. What's the likely problem?"
     choices:
     - content: "The users don't have licenses assigned for cloud apps. The administrator must select the option to sync licenses across."
       isCorrect: false
-      explanation: "Incorrect. Azure AD Connect doesn't sync licenses."
+      explanation: "Incorrect. Microsoft Entra Connect doesn't sync licenses."
     - content: "The users don't have licenses assigned for cloud apps. These users cannot be synced."
       isCorrect: false
-      explanation: "Incorrect. Users can be synced, but Azure AD Connect doesn't sync licenses."
-    - content: "The users don't have licenses assigned for cloud apps. Azure AD Connect doesn't sync licenses, and the administrator must manage these licenses manually."
+      explanation: "Incorrect. Users can be synced, but Microsoft Entra Connect doesn't sync licenses."
+    - content: "The users don't have licenses assigned for cloud apps. Microsoft Entra Connect doesn't sync licenses, and the administrator must manage these licenses manually."
       isCorrect: true
       explanation: "Correct. Each user must have a license assigned for cloud apps they want to access."

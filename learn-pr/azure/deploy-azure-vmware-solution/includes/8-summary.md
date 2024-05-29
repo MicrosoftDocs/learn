@@ -15,6 +15,6 @@ Now you know how to build and configure Azure VMware Solution successfully. You'
 ## Learn more
 
 - [Azure VMware Solution documentation](/azure/azure-vmware/)
-- [Create and configure a virtual network gateway for ExpressRoute](/azure/expressroute/expressroute-howto-add-gateway-portal-resource-manager)
+- [Configure a virtual network gateway for ExpressRoute using the Azure portal](/azure/expressroute/expressroute-howto-add-gateway-portal-resource-manager)
 - [ExpressRoute Global Reach](/azure/expressroute/expressroute-global-reach)
-- [Configure network segments in NSX-T Manager](/azure/azure-vmware/tutorial-nsx-t-network-segment)
+- [Add an NSX-T Data Center network segment in Azure VMware Solution](/azure/azure-vmware/tutorial-nsx-t-network-segment)

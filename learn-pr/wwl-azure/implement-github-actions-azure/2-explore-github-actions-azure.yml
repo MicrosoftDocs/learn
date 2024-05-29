@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-github-actions-azure.explore-github-actions-azure
+title: Explore GitHub Actions for Azure
+metadata:
+  title: Explore GitHub Actions for Azure
+  description: "Explore GitHub Actions for Azure"
+  ms.date: 05/07/2024
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-explore-github-actions-azure.md)]

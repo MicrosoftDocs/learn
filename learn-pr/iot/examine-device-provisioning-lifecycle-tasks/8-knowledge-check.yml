@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-device-provisioning-lifecycle-tasks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/08/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A company will be using X.509 certificates during the provisioning process. Under what conditions would they need to roll device certificates?"
+    choices:
+    - content: "The company knows that they need to reprovision a device."
+      isCorrect: false
+      explanation: "Incorrect. Reprovisioning a device doesn't require rolling the device certificates."
+    - content: "The company knows that a certificate is about to expire."
+      isCorrect: true
+      explanation: "Correct. It's appropriate to roll device certificates before they expire."
+    - content: "The company knows that they'll be moving a device between hubs."
+      isCorrect: false
+      explanation: "Incorrect. Moving a device between hubs doesn't require rolling the device certificates."
+  - content: "A company is in the process of deploying 700 devices when their plans change. Device enrollments have already been completed for all 700 devices. There are 500 devices that have been provisioned, but those devices must be moved to a different Azure IoT Hub. The other 200 devices won't be provisioned due to a change in business requirements. Which of the following answer choices describes the initial actions that must be taken?"
+    choices:
+    - content: "Disenroll the devices that haven't been provisioned. Leave the other enrollments unchanged."
+      isCorrect: false
+      explanation: "Incorrect. This solution doesn't take any steps toward moving the 500 already-provisioned devices to another Azure IoT hub. This solution leaves the 500 devices enrolled to the wrong Azure IoT hub."
+    - content: "Disenroll and deregister all 700 devices."
+      isCorrect: false
+      explanation: "Incorrect. You can't deregister devices that haven't been provisioned. There are 200 devices haven't been provisioned. These 200 devices can't be deregistered."
+    - content: "Disenroll all 700 devices. Deregister the 500 provisioned devices."
+      isCorrect: true
+      explanation: "Correct. This solution takes the step to correct enrollment and removes the devices that are registered to the wrong Azure IoT hub."

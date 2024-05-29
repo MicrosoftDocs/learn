@@ -3,11 +3,10 @@ uid: learn.connect-on-premises-network-with-expressroute.5-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 07/17/2019
+  ms.date: 10/18/2023
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Summary
 durationInMinutes: 5
 content: |

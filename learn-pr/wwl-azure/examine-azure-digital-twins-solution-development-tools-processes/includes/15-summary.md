@@ -1,1 +1,0 @@
-Your team will be responsible for extending the company's the IoT solution to include business data from various sources by implementing Azure Digital Twins. Your understanding of the development tools and processes used to implement Azure Digital Twins graphs, queries, and data input/output will help the team to work efficiently during the development phase.

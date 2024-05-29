@@ -1,4 +1,3 @@
-
 EFS is a built-in file encryption tool for Windows-based systems. EFS is a component of the NTFS file system, and it uses advanced, standard cryptographic algorithms to allow transparent file encryption and decryption. Through the Windows Information Protection functionality of Windows, EFS functionality is also simulated on volumes that use the FAT32 file system. Any individual or app that doesn't have access to a certificate store that holds an appropriate cryptographic key cannot read encrypted data. You can protect encrypted files even from those who gain physical possession of a computer on which files are stored. Even people who have the authorization to access a computer and its file system cannot view the encrypted data.
 
 Encryption is a powerful addition to any defensive plan. However, you must use additional defensive strategies, because encryption isn’t the correct countermeasure for every threat. Furthermore, every defensive weapon has the potential to harm your data, if you use it incorrectly. When you implement EFS, the most important task is to properly manage EFS certificates for users. Encryption provided by EFS is based on user certificates, and their public and private keys. Without proper certificate management, you can easily get into a situation where encrypted data isn't accessible.
@@ -9,7 +8,7 @@ EFS uses public key cryptography to encrypt files. EFS obtains the keys from a u
 
 Users need asymmetric key pairs to encrypt data, and they can obtain these keys:
 
- -  **From a certification authority (CA)**. An internal or third-party CA can issue EFS certificates. This method provides central management and backup of keys. This is recommended way to issue and manage EFS certificates as it allows you to restore user certificate if it's lost.
+ -  **From a certification authority (CA)**. An internal or third-party CA can issue EFS certificates. This method provides central management and back up of keys. This is recommended way to issue and manage EFS certificates as it allows you to restore user certificate if it's lost.
  -  **By generating them**. If a CA is unavailable, Windows will generate a key pair. These keys have a lifespan of 100 years. This method is more difficult than using a CA because there's no centralized management, and users become responsible for managing their own keys. Additionally, recovery is more difficult to manage. However, it’s still a popular method because it requires no setup.
 
 Users can make encrypted files accessible to other users’ EFS certificates. If you grant access to another user’s EFS certificate, that user may make those files available to yet another user’s EFS certificates.
@@ -22,7 +21,7 @@ You can issue EFS certificates only to individual users. You cannot issue EFS ce
 
 #### CAs can archive and recover CA-issued EFS certificates
 
-If you use CA to issue EFS certificates, you can configure archiving of user’s private key. You should configure this before you start to issue EFS certificates for users. If you don’t use this functionality, users must backup their self-generated EFS certificates and private keys manually. To do this, they can export the certificate and private key to a Personal Exchange File (.pfx), which is password-protected during the export process. This password is required to import the certificate into a user’s certificate store. In Windows, you can also use built-in tool to manage and backup user certificates used for EFS. It is recommended that each user that uses EFS, use this tool to backup his or her certificate, with a private key, to external protected location.
+If you use CA to issue EFS certificates, you can configure archiving of user’s private key. You should configure this before you start to issue EFS certificates for users. If you don’t use this functionality, users must back up their self-generated EFS certificates and private keys manually. To do this, they can export the certificate and private key to a Personal Exchange File (.pfx), which is password-protected during the export process. This password is required to import the certificate into a user’s certificate store. In Windows, you can also use built-in tool to manage and back up user certificates used for EFS. It is recommended that each user that uses EFS, use this tool to back up his or her certificate, with a private key, to external protected location.
 
 #### Export the client EFS certificate without the private key
 

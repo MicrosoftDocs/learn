@@ -1,0 +1,67 @@
+### YamlMime:Module
+uid: learn.saas-technical-foundations
+metadata:
+  title: Technical foundations of SaaS            # Do not edit: title must be "Introduction to (product)"
+  description: "Learn from Microsoft about SaaS (Software-as-a-Service) architecture foundations, such as tenancy models, deployment SaaS models, monolithic and microservices architecture, and authentication in SaaS."               # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 2/9/2024               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  author: kostinams        # GitHub ID of the Microsoft employee either authoring or project-managing this content
+  ms.author: irkostin             # Alias     of the Microsoft employee either authoring or project-managing this content
+  ms.topic: module
+  ms.service: architecture-center
+
+title: Technical foundations of SaaS
+
+summary: "Outline the technical aspects for SaaS solution. Choose between single or multitenant architecture, deployment models, how to handle identity and data in SaaS solution."
+
+abstract: |
+  By the end of this module, you'll be able to:
+    - Identify most suitable tenancy model
+    - Identify most suitable deployment model
+    - Describe the difference between monolithic and microservices architectures
+    - Describe the most common Azure services for SaaS and microservices architectures
+    - Describe how to handle authentication and authorization in SaaS solution and in microservices architecture
+ 
+prerequisites: |
+  - Basic familiarity with IT terms and concepts
+
+###########################################################################
+###
+### Do not edit: will be replaced by the module icon when available
+###
+iconUrl: /learn/achievements/generic-badge.svg
+###########################################################################
+###
+### Do not edit: level must be 'beginner'
+###
+levels:
+  - beginner
+###########################################################################
+###
+### Specify the target roles.
+### Use value(s) from the role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
+###
+roles:
+  - developer
+  - startup-founder
+  - student
+  - solution-architect
+  - technology-manager
+
+products:
+- azure
+
+subjects:
+  - cloud-computing
+
+units:
+- learn.saas-technical-foundations.introduction
+- learn.saas-technical-foundations.tenancy-models
+- learn.saas-technical-foundations.multitenant-model
+- learn.saas-technical-foundations.monolith-vs-microservices
+- learn.saas-technical-foundations.microservices-on-azure
+- learn.saas-technical-foundations.authentication-and-authorization
+- learn.saas-technical-foundations.knowledge-check
+- learn.saas-technical-foundations.summary
+
+badge:
+  uid: learn.saas-technical-foundations.badge

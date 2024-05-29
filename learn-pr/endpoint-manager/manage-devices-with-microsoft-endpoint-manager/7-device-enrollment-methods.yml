@@ -4,11 +4,10 @@ title: Understand device enrollment methods
 metadata:
   title: Understand device enrollment methods
   description: Learn about methods used to enroll devices using Microsoft Intune.
-  ms.date: 10/23/2020
+  ms.date: 05/08/2023
   author: Erikre
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/7-device-enrollment-methods.md)]

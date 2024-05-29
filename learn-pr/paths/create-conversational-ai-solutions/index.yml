@@ -5,9 +5,8 @@ metadata:
   description: Create conversational AI solutions
   ms.date: 04/05/2021
   author: wwlpublish
-  ms.author: gerryo
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: nitinme
+  ms.topic: learning-path
 title: Create conversational AI solutions
 prerequisites: |
   Before starting this learning path, you'll need
@@ -24,8 +23,7 @@ roles:
 products:
 - azure
 - azure-bot-service
-- azure-cognitive-services
-- azure-language-understanding
+- ai-services
 - azure-sdks
 subjects:
 - artificial-intelligence

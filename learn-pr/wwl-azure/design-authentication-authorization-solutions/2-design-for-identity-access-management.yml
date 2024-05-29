@@ -4,13 +4,12 @@ title: Design for identity and access management (IAM)
 metadata:
   title: Design for identity and access management (IAM)
   description: "Design for identity and access management (IAM)"
-  ms.date: 03/24/2023
+  ms.date: 03/06/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/2-design-for-identity-access-management.md)]

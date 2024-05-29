@@ -4,11 +4,10 @@ title: Explore cross-premises connectivity
 metadata:
   title: Explore cross-premises connectivity
   description: "Explore cross-premises connectivity"
-  ms.date: 04/21/2023
+  ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/17-explore-cross-premises-connectivity.md)]

@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/29/2021
+  ms.date: 03/13/2023
   author: gerryo
-  ms.author: gerryo
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: nitinme
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 10
 quiz:

@@ -1,32 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search
 metadata:
-  title: Build a Form Recognizer custom skill for Azure Cognitive Search
-  description: "Learn how to use an Azure Form Recognizer solution as a custom skill to enrich content in an Azure Cognitive Search pipeline."
-  ms.date: 11/01/2022
+  title: Build a Document Intelligence custom skill for Azure AI Search
+  description: "Build a Document intelligence custom skill for Azure AI search"
+  ms.date: 03/12/2024
   author: wwlpublish
-  ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Build a Form Recognizer custom skill for Azure Cognitive Search
-summary: Learn how to use an Azure Form Recognizer solution as a custom skill to enrich content in an Azure Cognitive Search pipeline.
+  ms.author: berryivor
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Build a Document intelligence custom skill for Azure AI search
+summary: Learn how to use an Azure Document Intelligence solution as a custom skill to enrich content in an Azure AI Search pipeline.
 abstract: |
   In this module, you'll learn to:
-  -	Describe how a custom skill can enrich content passed through an Azure Cognitive Search pipeline.
-  -	Build a custom skill that calls an Azure Forms Analyzer solution to obtain data from forms.
-prerequisites: |
-  - Basic understanding of Azure Cognitive Search
+
+  -   Describe how a custom skill can enrich content passed through an Azure AI Search pipeline.
+
+  -   Build a custom skill that calls an Azure Forms Analyzer solution to obtain data from forms.
+prerequisites: '-   Basic understanding of Azure AI Search'
 iconUrl: /training/achievements/build-form-recognizer-custom-skill-for-azure-cognitive-search.svg
 levels:
 - intermediate
 roles:
 - ai-engineer
 products:
-- azure-cognitive-services
-- azure-form-recognizer
+- ai-services
 subjects:
 - artificial-intelligence
-- data-ai
 units:
 - learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.introduction
 - learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.understand-enrichment-pipelines

@@ -4,11 +4,10 @@ title: Exercise - Identify a queue
 metadata:
   title: Exercise - Identify a queue
   description: Exercise - Identify a queue
-  ms.date: 04/04/2023
+  ms.date: 11/13/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 interactive: bash
 azureSandbox: true
 durationInMinutes: 5

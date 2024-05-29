@@ -1,4 +1,4 @@
-The back-end part of the application is deployed and now you need to deploy the front-end portion. You already know you're going to need a ConfigMap. So let's start by creating one.
+You deployed the application back end, and now you need to deploy the application front end using a ConfigMap.
 
 <!--
 
@@ -17,59 +17,9 @@ The back-end part of the application is deployed and now you need to deploy the 
 
 [!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
 
-Let's assume an AKS cluster is already created and running. Before creating a new cluster, run the following commands to be sure there's no other clusters or resources already created:
-
-```azurecli-interactive
-export RESOURCE_GROUP=rg-ship-manager
-export CLUSTER_NAME=ship-manager-cluster
-```
-
-```azurecli-interactive
-az aks show -n $CLUSTER_NAME -g $RESOURCE_GROUP
-```
-
-If the list is empty, proceed to create your AKS cluster, running the following commands in Cloud Shell:
-
-```azurecli-interactive
-az aks create \
- -g $RESOURCE_GROUP \
- -n $CLUSTER_NAME \
- --node-count 1 \
- --node-vm-size Standard_B2s \
- --generate-ssh-keys \
- --enable-addons http_application_routing
-```
-
-After the previous command runs, or if the list isn't empty (the cluster is already created), get the administration config:
-
-```azurecli-interactive
-az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
-```
-
-The complete cluster creation can take up to five minutes.
-
-> [!IMPORTANT]
-> Make a note of the `RESOURCE_GROUP` and `CLUSTER_NAME` variables for later use.
-
 ## Create a ConfigMap
 
-1. In your Azure Cloud Shell. Get the DNS zone that has been made available with the HTTP application routing add-on:
-
-    ```azurecli-interactive
-    az aks show \
-      -g $RESOURCE_GROUP \
-      -n $CLUSTER_NAME \
-      -o tsv \
-      --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
-    ```
-
-    Copy the output. You can also use the same value from the previous Ingress you created for the back-end application.
-
-1. Create a new file called `configmap.yaml`.
-
-1. Open the file for changes running `code configmap.yaml`.
-
-1. Paste the following YAML definition for the ConfigMap:
+1. Create a new YAML file named `configmap.yaml` and paste in the following code to create the ConfigMap spec:
 
     ```yaml
     apiVersion: v1
@@ -81,18 +31,22 @@ The complete cluster creation can take up to five minutes.
       config.js: |
         const config = (() => {
           return {
-            'VUE_APP_BACKEND_BASE_URL': 'http://ship-manager-backend.{yourdns-zone}.aksapp.io',
+            'VUE_APP_BACKEND_BASE_URL': 'http://ship-manager-backend.{your-dns-zone}.aksapp.io',
           }
         })()
     ```
 
-    Replace the DNS zone by the value you copied in the first step.
+1. Replace `{your-dns-zone}` with the value of the ZONE_NAME variable you created earlier.
 
 1. Save and close the file.
 
-1. Apply the changes to the cluster by running `kubectl apply -f configmap.yaml`.
+1. Apply the changes to your cluster using the `kubectl apply` command.
 
-1. Check your work by querying the created ConfigMap:
+    ```azurecli-interactive
+    kubectl apply -f configmap.yaml
+    ```
+
+1. Check the result by querying for the ConfigMap using the `kubectl get configmap` command.
 
     ```azurecli-interactive
     kubectl get configmap ship-manager-config
@@ -100,9 +54,7 @@ The complete cluster creation can take up to five minutes.
 
 ## Create the application
 
-1. Create a new file called `frontend.yaml`.
-
-1. In this file, paste the following contents:
+1. Create a new YAML file named `frontend.yaml` and paste in the following code to create the Deployment spec:
 
     ```yaml
     apiVersion: apps/v1
@@ -137,9 +89,9 @@ The complete cluster creation can take up to five minutes.
     ---
     ```
 
-    Notice how we're mounting the ConfigMap in the Deployment object. We're not specifying any keys, which means we need to specify a `subPath` key. The `subpath` is the filename inside the container.
+    Notice how the ConfigMap is mounted in the Deployment object. We don't specify any keys, which means we need to specify a `subPath` key. The `subpath` is the filename inside the container.
 
-1. Continue to edit the file by adding the following lines below the last three dashes (`---`):
+1. Below the three dashes, paste in the following code to create the Service and Ingress specs:
 
     ```yaml
     apiVersion: v1
@@ -161,7 +113,7 @@ The complete cluster creation can take up to five minutes.
       name: contoso-ship-manager-frontend
       namespace: default
       annotations:
-        kubernetes.io/ingress.class: addon-http-application-routing
+        spec.ingressClassName: webapprouting.kubernetes.azure.com
     spec:
       rules:
         - host: contoso-ship-manager.{your-dns-zone}.aksapp.io
@@ -176,25 +128,23 @@ The complete cluster creation can take up to five minutes.
                       name: http
     ```
 
-    Change the DNS zone present in the Ingress to match the DNS you copied from the first step.
+1. Replace `{your-dns-zone}` in the Ingress with the value of the ZONE_NAME variable you created earlier.
 
 1. Save and close the file.
 
-1. Deploy the application by running the following command:
+1. Deploy the application using the `kubectl apply` command.
 
-    ```bash
+    ```azurecli-interactive
     kubectl apply -f frontend.yaml
     ```
 
-1. Check your work by querying the Kubernetes API:
+1. Check the result by querying the Kubernetes API using the `kubectl get deployment` command.
 
     ```azurecli-interactive
-    kubectl get deploy contoso-ship-manager-frontend
+    kubectl get deployment contoso-ship-manager-frontend
     ```
 
-    The DNS propagation may take up to five minutes to complete.
-
-    When the API is available, you should get an output similar to:
+    When the API is available, you should get an output similar to the following example:
 
     ```output
     NAME                           READY   UP-TO-DATE   AVAILABLE   AGE

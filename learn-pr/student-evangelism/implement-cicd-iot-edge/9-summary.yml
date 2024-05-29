@@ -5,10 +5,9 @@ metadata:
   title: Summary
   description: In this section, we summarize the key ideas in the module and emphasize ideas to ensure learning retention.
   ms.date: 6/21/2020
-  author: leestott
-  ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
+  author: PatAltimore
+  ms.author: patricka
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 2
 content: |

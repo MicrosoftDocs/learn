@@ -2,12 +2,12 @@
 uid: learn.wwl.owasp-and-dynamic-analyzers
 metadata:
   title: OWASP and Dynamic Analyzers
-  description: "OWASP and Dynamic Analyzers"
+  description: OWASP and Dynamic Analyzers
   ms.date: 10/27/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: OWASP and Dynamic Analyzers
 summary: This module explores OWASP and Dynamic Analyzers for penetration testing, results, and bugs.
 abstract: |
@@ -40,7 +40,6 @@ products:
 - azure-test-plans
 - github
 subjects:
-- development-tools
 - devops
 units:
 - learn.wwl.owasp-and-dynamic-analyzers.introduction

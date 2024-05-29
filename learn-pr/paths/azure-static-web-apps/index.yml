@@ -7,8 +7,7 @@ metadata:
   ms.date: 11/30/2020
   author: johnpapa
   ms.author: jopapa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Azure Static Web Apps
 summary: |
   Azure Static Web Apps is a modern web app service that offers streamlined full-stack development from source code to global high availability.
@@ -34,7 +33,7 @@ roles:
 products:
   - azure
   - azure-app-service
-  - azure-app-service-static
+  - static-web-apps
 subjects:
 - cloud-computing
 modules:
@@ -42,6 +41,5 @@ modules:
 - learn.azure.publish-static-web-app-api-preview-url
 - learn.azure.publish-static-web-app-authentication
 - learn.azure.publish-static-web-app-and-api-dotnet
-- learn.static-apps-gatsby
 trophy:
   uid: learn.azure-static-web-apps.trophy

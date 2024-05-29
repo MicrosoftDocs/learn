@@ -19,7 +19,7 @@ The following code generates the HTML element `<img src="./media/sample.jpg">`.
     <img v-bind:src="imageSource" />
 </div>
 
-<script src="https://unpkg.com/vue@next"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script>
     Vue.createApp({
         data() {
@@ -80,7 +80,7 @@ Here's how you can switch out the static value `centered active` for a different
     <div :class="classObject">Hello, Vue!</div>
 </div>
 
-<script src="https://unpkg.com/vue@next"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script>
     Vue.createApp({
         data() {
@@ -111,7 +111,7 @@ For example, to set the background color (`background-color`) of an HTML element
     <div :style="styleObject">Hello, Vue!</div>
 </div>
 
-<script src="https://unpkg.com/vue@next"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script>
     Vue.createApp({
         data() {

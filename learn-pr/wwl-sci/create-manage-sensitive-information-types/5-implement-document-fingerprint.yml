@@ -4,13 +4,10 @@ title: Implement document fingerprinting
 metadata:
   title: Implement document fingerprinting
   description: "Implement document fingerprinting"
-  ms.date: 04/18/2023
+  ms.date: 10/04/2023
   author: wwlpublish
-  ms.author: bneeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-azureSandbox: false
-labModal: false
-durationInMinutes: 5
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 7
 content: |
   [!include[](includes/5-implement-document-fingerprint.md)]

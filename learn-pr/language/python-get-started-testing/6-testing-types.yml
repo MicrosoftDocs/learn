@@ -7,9 +7,10 @@ metadata:
   ms.date: 02/03/2023
   author: alfredodeza
   ms.author: alfredodeza
-  ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-language # Edit as appropriate for your portfolio area
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-testing-types.md)]

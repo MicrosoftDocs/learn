@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.gh-dotnet-connectfour
 metadata:
-  title: Build Connect Four game with Blazor
+  title: Build a Connect Four game with Blazor
   description: Learn how to build a web app with Blazor.
   ms.date: 03/15/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Build Connect Four game with Blazor
+  ms.topic: module
+  ms.service: dotnet
+title: Build a Connect Four game with Blazor
 summary: In this module, you learn the fundamentals of Blazor while building a "Connect Four" game.
 abstract: |
   In this module you will:
@@ -23,7 +23,8 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - dotnet
+  - blazor
 prerequisites: None
 units:
   - learn.dotnet-connect-four.introduction

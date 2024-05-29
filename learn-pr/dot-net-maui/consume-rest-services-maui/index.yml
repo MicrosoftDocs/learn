@@ -3,21 +3,24 @@ uid: learn.dotnet-maui.consume-rest-services
 metadata:
   moduleType: standard
   title: "Consume REST web services in .NET MAUI apps"
-  description: "Consume a REST web service by using HttpClient and perform basic CRUD operations. You will detect when your device is connected to the internet to provide a good user experience and take advantage of the native networking stacks to get top performance."
-  ms.date: 04/29/2022
+  description: "Consume a REST web service by using HttpClient and perform basic CRUD operations. You'll detect when your device is connected to the internet to provide a good user experience and take advantage of the native networking stacks to get top performance."
+  ms.date: 10/31/2023
   author: codemillmatt 
-  ms.author: masoucou 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.author: masoucou
+  ms.manager: markl
+  ms.topic: module
+  ms.service: dotnet-mobile
+  ms.subservice: dotnet-maui
 title: Consume REST web services in .NET MAUI apps
-summary: "Consume a REST web service by using HttpClient and perform basic CRUD operations. You will detect when your device is connected to the internet to provide a good user experience and take advantage of the native networking stacks to get top performance." 
+summary: "Consume a REST web service by using HttpClient and perform basic CRUD operations. You'll detect when your device is connected to the internet to provide a good user experience and take advantage of the native networking stacks to get top performance." 
 abstract: | 
   In this module, you will:
-  - Detect if your device is connected to the internet
-  - Consume a REST web service by using HttpClient
-  - Take advantage of the native networking stacks while using HttpClient
-prerequisites: | 
-  - Visual Studio 2022 with the .NET MAUI workload installed
+  - Detect if your device is connected to the internet.
+  - Consume a REST web service by using HttpClient.
+  - Take advantage of the native networking stacks while using HttpClient.
+prerequisites: |
+  - [Visual Studio 2022](https://www.visualstudio.com) with the .NET MAUI workload.
+  - Optional: Local installations [Visual Studio Code](https://code.visualstudio.com), the [.NET SDK](https://dotnet.microsoft.com/download) with .NET MAUI workload, and the [.NET MAUI Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-maui)
   - Familiarity with C# and .NET
   - Basic knowledge of REST
 iconUrl: /training/achievements/consume-rest-web-services-dotnet-maui-app.svg

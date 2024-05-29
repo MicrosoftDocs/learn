@@ -4,11 +4,10 @@ title: Exercise - Terminate a misbehaving process
 metadata:
   title: Exercise - Terminate a misbehaving process
   description: Learn how to identify and terminate troublesome processes.
-  ms.date: 03/19/2021
+  ms.date: 04/06/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-bash
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 10
 interactive: bash

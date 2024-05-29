@@ -3,19 +3,23 @@ uid: learn.azure-create-long-running-serverless-workflow-with-durable-functions
 metadata:
   title: Create a long-running serverless workflow with Durable Functions
   description: Learn how to orchestrate a long-running workflow as a set of activities using scalable and cost-effective Durable Functions.
-  ms.date: 04/24/2019
+  ms.date: 10/19/2023
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-functions
+  ms.subservice: durable
+  manager: mijacobs
 title: Create a long-running serverless workflow with Durable Functions
 summary: Learn how to orchestrate a long-running workflow as a set of activities using Durable Functions. 
 abstract: |
   In this module, you will:
-  - Explore Durable Functions
-  - Design a long-running approval process workflow
-  - Implement a long-running approval process workflow using Durable Functions
-prerequisites: None
+  - Explore Durable Functions.
+  - Design a long-running approval process workflow.
+  - Implement a long-running approval process workflow using Durable Functions.
+prerequisites: |
+  - Experience with Azure Functions
+  - Experience with the Azure portal
 iconUrl: /training/achievements/azure-create-long-running-serverless-workflow-with-durable-functions.svg
 levels: 
 - beginner
@@ -25,7 +29,7 @@ products:
 - azure
 - azure-functions
 subjects:
-- serverless-compute
+- serverless-computing
 units:
 - learn.azure-create-long-running-serverless-workflow-with-durable-functions.1-introduction
 - learn.azure-create-long-running-serverless-workflow-with-durable-functions.2-what-is-durable-functions

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.exercise-translate-text
+title: Exercise-Translate text
+metadata:
+  title: Exercise-Translate text
+  description: "Exercise-Translate text"
+  ms.date: 04/26/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-exercise-translate-text.md)]

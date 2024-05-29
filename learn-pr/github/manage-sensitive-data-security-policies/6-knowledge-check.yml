@@ -4,12 +4,11 @@ title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also
 metadata:
   unitType: knowledge_check
   title: Knowledge check - Manage sensitive data and security policies 
-  description: Knowledge check - Manage sensitive data and security policies module
-  ms.date: 09/13/2021
-  author: sterling463
-  ms.author: csterling
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Check what you learned - Manage sensitive data and security policies module
+  ms.date: 05/03/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:
@@ -21,49 +20,49 @@ quiz:
       explanation: "The SECURITY.md file is the primary document for communicating security information, which is a Markdown file present in a repository's root, docs, or .github folder."
     - content: "CONTRIBUTING.md"
       isCorrect: false
-      explanation: "GitHub supports other types of community health documentation that a user may add at the organization level or in their user account"
+      explanation: "GitHub supports other types of community health documentation that a user might add at the organization level or in their user account."
     - content: "SUPPORT.md"
       isCorrect: false
-      explanation: "GitHub supports other types of community health documentation that a user may add at the organization level or in their user account"
+      explanation: "GitHub supports other types of community health documentation that a user might add at the organization level or in their user account."
   - content: "What tool should you use to automate part of your security process?"
     choices:
-    - content: "Add Dependabot to your code base"
+    - content: "Add Dependabot to your code base."
       isCorrect: true
       explanation: "Documentation and advisories require the most significant manual interaction, but applying Dependabot to your code base automates parts of the security process, up to and including updating dependencies."
-    - content: "Add access restrictions to your enterprise"
+    - content: "Add access restrictions to your enterprise."
       isCorrect: false
-      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but don't automate your security process"
-    - content: "Create security documentation"
+      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but don't automate your security process."
+    - content: "Create security documentation."
       isCorrect: false
-      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but don't automate your security process"
-    - content: "Add advisories for your users"
+      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but don't automate your security process."
+    - content: "Add advisories for your users."
       isCorrect: false
-      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but don't automate your security process"
+      explanation: "Access restrictions, security documentation, advisories are available for all repositories, but don't automate your security process."
   - content: "Which two pieces of information should be included in a security advisory?"
     choices:
-    - content: "Product affected and severity"
+    - content: "Product affected and severity."
       isCorrect: true
-      explanation: "A security advisory should be comprehensive, including the following information: Product and versions affected, Severity, Types of security weaknesses addressed by the project owners' actions, Impact, status of patches, and workarounds"
-    - content: "Severity and exposure list"
+      explanation: "A security advisory should be comprehensive, including the following information: product and versions affected, severity, types of security weaknesses addressed by the project owners' actions, impact, status of patches, and workarounds."
+    - content: "Severity and exposure list."
       isCorrect: false
       explanation: "Exposure list research can help to determine if the vulnerability you're patching matches an existing entry, but not needed for the security advisory."
-    - content: "Administrator name and severity"
+    - content: "Administrator name and severity."
       isCorrect: false
-      explanation: "The administrator name would be unneeded and a security risk if provided publicly.Exposure list research can help to determine if the vulnerability you're patching matches an existing entry, but not needed for the security advisory."
-    - content: "Exposures list and administrator name"
+      explanation: "The administrator name would be unneeded and a security risk if provided publicly. Exposure list research can help to determine if the vulnerability you're patching matches an existing entry, but not needed for the security advisory."
+    - content: "Exposures list and administrator name."
       isCorrect: false
-      explanation: "Exposure list research can help to determine if the vulnerability you're patching matches an existing entry, but not needed for the security advisory.The administrator name would be unneeded and a security risk if provided publicly."
-  - content: "What two pieces of information are included in your organization’s log?"
+      explanation: "Exposure list research can help to determine if the vulnerability you're patching matches an existing entry, but not needed for the security advisory. The administrator name would be unneeded and a security risk if provided publicly."
+  - content: "Which two pieces of information are included in your organization's log?"
     choices:
-    - content: "The user that performed the action and the date and time of the action"
+    - content: "The user that performed the action and the date and time of the action."
       isCorrect: true
       explanation: "The log is available to organization owners, and records information about actions that affect the organization including: which repository an action was performed in, the user that performed the action, the action that was performed, which country/region the action took place in, and the date and time the action occurred"
-    - content: "The date and time of the action and changes in permissions"
+    - content: "The date and time of the action and changes in permissions."
       isCorrect: false
-      explanation: "The GraphQL API is available for organizations using GitHub Enterprise, and can retrieve information about actions up to 120 days ago. It can monitor: access to your organization or repository settings, changes in permissions, added or removed users in an organization, repository, or team, users being promoted to admin, and changes to permissions of a GitHub App"
-    - content: "Changes in permissions and users being promoted to administrators"
+      explanation: "The GraphQL API is available for organizations using GitHub Enterprise, and can retrieve information about actions up to 120 days ago. It can monitor: access to your organization or repository settings, changes in permissions, added or removed users in an organization, repository, or team, users being promoted to admin, and changes to permissions of a GitHub App."
+    - content: "Changes in permissions and users being promoted to administrators."
       isCorrect: false
-      explanation: "The GraphQL API is available for organizations using GitHub Enterprise, and can retrieve information about actions up to 120 days ago. It can monitor: access to your organization or repository settings, changes in permissions, added or removed users in an organization, repository, or team, users being promoted to admin, and changes to permissions of a GitHub App"
-    - content: "Users being promoted to administrators and the user that performed the action"
+      explanation: "The GraphQL API is available for organizations using GitHub Enterprise, and can retrieve information about actions up to 120 days ago. It can monitor: access to your organization or repository settings, changes in permissions, added or removed users in an organization, repository, or team, users being promoted to admin, and changes to permissions of a GitHub App."
+    - content: "Users being promoted to administrators and the user that performed the action."
       isCorrect: false
-      explanation: "The GraphQL API is available for organizations using GitHub Enterprise, and can retrieve information about actions up to 120 days ago. It can monitor: access to your organization or repository settings, changes in permissions, added or removed users in an organization, repository, or team, users being promoted to admin, and changes to permissions of a GitHub App"
+      explanation: "The GraphQL API is available for organizations using GitHub Enterprise, and can retrieve information about actions up to 120 days ago. It can monitor: access to your organization or repository settings, changes in permissions, added or removed users in an organization, repository, or team, users being promoted to admin, and changes to permissions of a GitHub App."

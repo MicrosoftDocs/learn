@@ -21,3 +21,15 @@ In this module, you'll create a Razor class library to accomplish the following 
 ## What is the main goal?
 
 By the end of the module, you'll be able to design a modal window component that you can share and customize across other Blazor applications.
+
+## Prerequisites
+
+- Familiarity with HTML, CSS, and JavaScript web development.
+- Novice ability to write C# code.
+- The [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) installed.
+- An integrated development environment (IDE). This module uses [Visual Studio Code](https://code.visualstudio.com).
+
+> [!NOTE]
+> This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows) or continued development using Visual Studio Code (Windows, Linux, and macOS).
+
+[!include[](../../../includes/dotnet8-sdk-version.md)]

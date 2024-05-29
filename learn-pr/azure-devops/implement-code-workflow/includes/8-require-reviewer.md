@@ -1,4 +1,4 @@
-In this unit, you'll set up a rule on GitHub that requires a reviewer to approve changes before they can be merged into the `main` branch. As a bonus, you'll also fix the typing error on the _Space Game_ website's home page.
+In this unit, you'll set up a rule on GitHub that requires a reviewer to approve changes before they can be merged into the `main` branch. As a bonus, you'll also fix the typing error on the *Space Game* website's home page.
 
 Currently, the team allows anyone who makes a pull request to merge the code into the `main` branch. Because no review is required, it's possible for incorrect or unstable code to creep in.
 
@@ -18,17 +18,18 @@ Mara looks up.
 
 ## Set up approvals
 
-In this section, you set up a rule on GitHub that requires at least one reviewer to approve a pull request before it can be merged into the `main` branch. You set up the rule and then verify that it works by pushing up a fix to the typing error that Mara made earlier.
+In this section, you'll set up a rule on GitHub that requires at least one reviewer to approve a pull request before it can be merged into the `main` branch. You'll then verify that the rule works by pushing up a fix to the typing error that Mara made earlier.
 
 ### Add the rule
 
 1. In GitHub, go to your _Space Game_ project repository.
 1. Select the **Settings** tab near the top of the page.
-1. On the menu, select **Branches**.
+1. On the left menu, select **Branches**.
 1. Make sure that **main** is selected as your default branch.
 1. Select **Add branch protection rule**.
 1. Under **Branch name pattern**, enter **main**.
-1. Select the **Require pull request reviews before merging** check box.
+1. Select the **Require a pull request before merging** check box.
+1. Select the **Require approvals** check box.
 1. Keep the **Required approving reviews** value at **1**.
 1. Select **Create**.
 1. Select **Save changes**.
@@ -67,20 +68,20 @@ In this section, you submit a fix to the typing error on the home page. Remember
     ```
 
 1. In File Explorer, open **Index.cshtml**.
-1. Locate the error.
+1. Locate the error:
 
     ```html
     <p>Welcome to the oficial Space Game site!</p>
     ```
 
-1. Change the line to correct the error.
+1. Change the line to correct the error:
 
     ```html
     <p>Welcome to the official Space Game site!</p>
     ```
 
 1. Save the file.
-1. In the terminal, stage and commit the change.
+1. In the terminal, stage and commit the change:
 
     ```bash
     git status
@@ -88,7 +89,7 @@ In this section, you submit a fix to the typing error on the home page. Remember
     git commit -m "Fix typing error on the home page"
     ```
 
-    In practice, you would ordinarily build and run the site locally to verify the change. In this unit, for the sake of brevity, let's skip that step.
+    In practice, you'd ordinarily build and run the site locally to verify the change. In this unit, for the sake of brevity, let's skip that step.
 1. Push the branch to GitHub.
 
     ```bash
@@ -112,10 +113,10 @@ In this section, you submit a fix to the typing error on the home page. Remember
 
     :::image type="content" source="../media/8-github-review-required.png" alt-text="Screenshot of a pull request on GitHub showing that a review is required in order to merge.":::
 
-    In practice, you would assign a team member to review your change. In this unit, for learning purposes, you merge your own pull request.
+    In practice, you'd assign a team member to review your change. In this unit, you can merge your own pull request for learning purposes.
 
-1. To merge the pull request, select **Merge pull request**.
-1. Select the **Use your Administrator privileges to merge this pull request** check box, and then select **Confirm merge**.
+1. Select the **Merge without waiting for requirements to be met (bypass branch protections)** check box, and then select **Merge pull request**.
+1. Select **Confirm merge**.
 
    Your change is merged.
 1. To delete the `bugfix/home-page-typo` branch, select **Delete branch**.

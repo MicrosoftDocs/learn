@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.philanthropies.use-copilot-to-create-training-materials
+metadata:
+  title: Use Microsoft Copilot to create training materials
+  description: Discover how Microsoft Copilot can enhance your training materials and resources. From content generation to image creation, experience a new era of engaging and effective learning.
+  ms.date: 03/06/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: module
+  ms.service: artificial-intelligence
+title: Use Microsoft Copilot to create training materials
+summary: This module focuses on practical demonstration of how Microsoft Copilot can serve as a training assistant. From content creation to helping you provide support to learners in various tasks such as writing a resume, working on professional growth, finding a new hobby, learning a new language, or even preparing for a test. The possibilities are vast and exciting with Microsoft Copilot.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Discover the primary purpose of using Microsoft Copilot in the creation of training materials, understanding that it is used to assist in various steps of material creation.
+  - Critically evaluate the AI-generated content produced by Microsoft Copilot, reflecting on its relevance and accuracy to ensure the quality of the training materials.
+  - Critique the process of using Microsoft Copilot for creating new training materials and tailor the process to your own personal needs.
+iconUrl: /training/achievements/use-copilot-to-create-training-materials.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- business-user
+- higher-ed-educator
+- data-engineer
+- school-leader
+products:
+- ai-services
+- azure-machine-learning
+- azure-machine-learning-designer
+- m365-apps
+- azure-translator-text
+- azure-translator-speech
+- ms-copilot
+- language-service
+subjects:
+- artificial-intelligence
+units:
+- learn.philanthropies.use-copilot-to-create-training-materials.introduction
+- learn.philanthropies.use-copilot-to-create-training-materials.design-training-materials-using-microsoft-copilot
+- learn.philanthropies.use-copilot-to-create-training-materials.use-microsoft-copilot-as-your-personal-tutor
+- learn.philanthropies.use-copilot-to-create-training-materials.knowledge-check
+- learn.philanthropies.use-copilot-to-create-training-materials.summary
+badge:
+  uid: learn.philanthropies.use-copilot-to-create-training-materials.badge

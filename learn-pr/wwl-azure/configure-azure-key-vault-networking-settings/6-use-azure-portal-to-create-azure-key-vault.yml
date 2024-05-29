@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-key-vault-networking-settings.use-azure-portal-to-create-azure-key-vault
+title: Exercise - Configure Key Vault firewall and virtual networks
+metadata:
+  title: Exercise - Configure Key Vault firewall and virtual networks
+  description: "Exercise - Configure Key Vault firewall and virtual networks"
+  ms.date: 04/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-use-azure-portal-to-create-azure-key-vault.md)]

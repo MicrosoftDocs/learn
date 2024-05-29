@@ -4,13 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/06/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/11-knowledge-check.md)]
@@ -39,7 +36,7 @@ quiz:
     - content: "Windows Authorization Access Group"
       isCorrect: false
       explanation: "Incorrect. The security groups used by Windows Hello for Business are the KeyCredential Admins security group and the Windows Hello for Business Users security group."
-  - content: "Which is the recommended mode to start with when deploying Azure AD Password Protection?"
+  - content: "Which is the recommended mode to start with when deploying Microsoft Entra Password Protection?"
     choices:
     - content: "Audit mode"
       isCorrect: true

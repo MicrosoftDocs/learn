@@ -4,12 +4,11 @@ uid: learn-windows.introducing-visual-studio.5-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 11/30/2018
-  author: QuinnRadich
-  ms.author: quradic
+  ms.date: 04/19/2023
+  author: alvinashcraft
+  ms.author: aashcraft
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.topic: unit
   
 durationInMinutes: 10
 content: |

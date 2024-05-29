@@ -2,9 +2,9 @@
 
 Examples include:
 
-- System reveals sensitive data through error messages
-- Users access unauthorized documents and folders with weak security controls
-- Users access data flowing through an unsecured network
+- System reveals sensitive data through error messages.
+- Users access unauthorized documents and folders with weak security controls.
+- Users access data flowing through an unsecured network.
 
 ## Elements and interactions at risk from information disclosure
 
@@ -31,10 +31,10 @@ Examples include:
 
 Examples include:
 
-- Applying access-control lists to ensure the right users can access the right data
-- Encrypting data at rest, in transit, and in use
-- Enforcing SSL/TLS to secure transmission
-- Using IPSec tunnels to secure communication across endpoints
+- Applying access-control lists to ensure the right users can access the right data.
+- Encrypting data at rest, in transit, and in use.
+- Enforcing SSL/TLS to secure transmission.
+- Using IPSec tunnels to secure communication across endpoints.
 
 ### Common security controls to reduce or eliminate risk
 

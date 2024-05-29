@@ -4,11 +4,10 @@ title: Use voice commands
 metadata:
   title:  Use voice commands
   description: Introduction for Use voice commands
-  ms.date: 09/09/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/6-4-voice-commands.md)]

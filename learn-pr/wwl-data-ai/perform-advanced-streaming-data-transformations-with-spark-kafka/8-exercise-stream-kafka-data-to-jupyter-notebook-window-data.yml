@@ -4,11 +4,12 @@ title: Exercise - Stream Kafka data to a Jupyter notebook and window the data
 metadata:
   title: Exercise - Stream Kafka data to a Jupyter notebook and window the data
   description: "Exercise - Stream Kafka data to a Jupyter notebook and window the data"
-  ms.date: 01/05/2022
+  ms.date: 04/07/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-python
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

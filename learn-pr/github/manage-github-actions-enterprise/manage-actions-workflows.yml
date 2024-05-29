@@ -4,11 +4,10 @@ title: Manage actions and workflows
 metadata:
   title: Manage actions and workflows
   description: Explore the different tools and strategies available to you in GitHub Enterprise Cloud and GitHub Enterprise Server in order to share and manage GitHub actions and workflows within your enterprise.
-  ms.date: 06/09/2021
+  ms.date: 04/07/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/manage-actions-workflows.md)]

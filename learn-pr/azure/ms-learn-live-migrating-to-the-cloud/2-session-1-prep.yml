@@ -19,8 +19,7 @@ metadata:
   # Your Microsoft alias
   ms.author: renrup
 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: true
 
 # Estimate the time needed to complete the preparation document including the creation of resources on Azure. 

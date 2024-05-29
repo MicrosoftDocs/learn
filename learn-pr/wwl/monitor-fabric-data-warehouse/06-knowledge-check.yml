@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-fabric-data-warehouse.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/02/2024
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You want to monitor capacity unit consumption in your Fabric data warehouse. What tools should you use?"
+    choices:
+    - content: "Microsoft Azure Monitor"
+      isCorrect: false
+      explanation: "Incorrect. Azure monitor does not provide details of Fabric capacity unit consumption."
+    - content: "Microsoft Fabric Capacity Metrics app"
+      isCorrect: true
+      explanation: "Correct. Microsoft Fabric Capacity Metrics app is the tool used to monitor capacity consumption."
+    - content: "Microsoft Azure Data Studio."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Azure Data Studio does not provide details of Fabric capacity unit consumption."
+  - content: "Which dynamic management view provides details about SQL commands running in the data warehouse?"
+    choices:
+    - content: "sys.dm_exec_requests"
+      isCorrect: true
+      explanation: "Correct. The sys.dm_exec_requests view contains details of active commands."
+    - content: "sys.dm_exec_connections"
+      isCorrect: false
+      explanation: "Incorrect. The sys.dm_exec_connections view contains details of active connections, not commands."
+    - content: "sys.dm_exec_sessions"
+      isCorrect: false
+      explanation: "Incorrect. The sys.dm_exec_sessions view contains details of active sessions, not commands."
+  - content: "Which view should you use to identify commonly run commands in your data warehouse?"
+    choices:
+    - content: "queryinsights.exec_requests_history"
+      isCorrect: false
+      explanation: "Incorrect. The exec_requests_history provides metrics for all queries that have been run."
+    - content: "queryinsights.long_running_queries"
+      isCorrect: false
+      explanation: "Incorrect. The long_running_queries view provides aggregated details of queries based on their run duration."
+    - content: "queryinsights.frequently_run_queries"
+      isCorrect: true
+      explanation: "Correct. The frequently_run_queries view provides details of commonly run commands."

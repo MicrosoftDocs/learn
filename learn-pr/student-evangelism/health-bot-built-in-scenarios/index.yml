@@ -6,9 +6,9 @@ metadata:
   ms.date: 03/09/2023
   author: Dwitrisha
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
+  ms.service: healthbot
 title: Azure Health Bot built-in scenarios
 summary: Azure Health Bot supports many built-in scenarios. Examples include triaging a medical condition, finding information about a disease or types of drugs, and getting user consent.
 abstract: |

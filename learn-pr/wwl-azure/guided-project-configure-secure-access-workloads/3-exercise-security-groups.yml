@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-configure-secure-access-workloads.exercise2
+title: Exercise - Control the network traffic to and from the web application
+metadata:
+  title: Exercise - Control the network traffic to and from the web application
+  description: "Exercise - Control the network traffic to and from the web application"
+  ms.date: 03/08/2024
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-exercise-security-groups.md)]

@@ -5,10 +5,9 @@ metadata:
   title: Introduction
   description: In this introductory unit, we discuss the field of natural language processing, and focus on typical problems that are solved by NLP neural network models.
   author: shwars
-  ms.author: dmitryso
-  ms.date: 04/14/2020
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.author: chnoring
+  ms.date: 06/04/2020
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 2
 content: |

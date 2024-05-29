@@ -3,12 +3,13 @@ uid: learn.languages.csharp-convert-cast.solution
 title: 'Review a solution for combining string array values as strings and as integers challenge '
 metadata:
   title: Review a solution for combining string array values as strings and as integers challenge
-  description: "Review a solution for combining string array values as strings and as integers challenge"
-  ms.date: 04/26/2023
+  description: "Review a solution for combining string array values as strings and as integers challenge."
+  ms.date: 04/12/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/5-solution.md)]

@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Validate your understanding of the key concepts covered in this module.
+  ms.date: 05/09/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: What is the purpose of the Precision metric?
+    choices:
+    - content: To measure the total volume of harmful content identified by the model.
+      isCorrect: false
+      explanation: Precision doesn't measure the total volume of harmful content, it focuses on the accuracy of identification.
+    - content: To measure how much of the content identified as harmful is actually harmful.
+      isCorrect: true
+      explanation: The Precision metric in Content Safety Studio evaluates the accuracy of the model by measuring how much of the content identified as harmful is indeed harmful. It helps in understanding the effectiveness of the model in accurately identifying harmful content.
+    - content: To measure the model's ability to identify actual harmful content.
+      isCorrect: false
+      explanation: Precision doesn't directly measure the model's ability to identify actual harmful content; rather, it assesses the accuracy of the identified harmful content.
+    - content: To measure the speed at which the model detects harmful content.
+      isCorrect: false
+      explanation: Precision doesn't measure the speed of detection; it solely focuses on the accuracy of identification.
+  - content: Which feature of the Azure AI Content Safety Studio is responsible for detecting and blocking incorrect information in model outputs?
+    choices:
+    - content: Text Moderation
+      isCorrect: false
+      explanation: Text Moderation detects harmful content in text.
+    - content: Prompt Shields
+      isCorrect: false
+      explanation: Prompt Shields analyze LLM inputs to detect user Prompt attacks and Document attacks.
+    - content: Image Moderation
+      isCorrect: false
+      explanation: Image Moderation analyzes images to identify and block offensive content.
+    - content: Groundedness Detection
+      isCorrect: true
+      explanation:  Groundedness Detection is the feature responsible for detecting and blocking incorrect information in model outputs, ensuring that the text responses are factual and accurate based on the provided source materials.
+  - content: What is the purpose of the F1 Score metric?
+    choices:
+    - content: To measure the total volume of harmful content identified by the model.
+      isCorrect: false
+      explanation: F1 Score doesn't measure the total volume of harmful content; it evaluates the balance between Precision and Recall.
+    - content: To measure the balance between Precision and Recall.
+      isCorrect: true
+      explanation: The F1 Score metric in Content Safety Studio is a function of Precision and Recall. It is used when there's a need to balance between Precision (accuracy of identified harmful content) and Recall (model's ability to identify actual harmful content).
+    - content: To measure the speed at which the model detects harmful content.
+      isCorrect: false
+      explanation: F1 Score doesn't measure the speed of detection; it focuses on the balance between Precision and Recall.
+    - content: To measure the model's ability to identify actual harmful content.
+      isCorrect: false
+      explanation:  F1 Score doesn't directly measure the model's ability to identify actual harmful content; it balances Precision and Recall.

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-ai-services.identify-keys-endpoints
+title: Identify endpoints and keys
+metadata:
+  title: Identify endpoints and keys
+  description: "Identify endpoints and keys."
+  ms.date: 09/28/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-identify-keys-endpoints.md)]

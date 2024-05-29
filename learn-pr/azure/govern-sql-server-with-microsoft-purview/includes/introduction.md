@@ -1,10 +1,10 @@
-Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multicloud, and Software-as-a-Service (SaaS) data. 
+Microsoft Purview is a unified data governance service that helps you manage and govern your on-premises, multicloud, and Software-as-a-Service (SaaS) data. 
 
 ## Module scenario
 
 Suppose you work as a data analyst for a financial institution that needs to analyze, process, and govern a large amount of data stored in different sources. Your organization uses cloud optimization, storing significant amounts of data in Microsoft Azure and Amazon Web Services (AWS) cloud solutions. However, because of legal regulations, a large amount of data remains in on-premises datacenters. Additionally, your company must follow compliance requirements that require a complete understanding of your organization’s data estate.
 
-You spend considerable time manually annotating, cataloging, and finding trusted sources because you don’t have an end-to-end data lineage across your infrastructure. This affects your data consumers, who must spend time identifying the root cause of problems created by upstream data pipelines that other teams own. Your chief data officer (CDO) is struggling to map and control sensitive data, such as customer content (PII), that is stored in multiple data sources.
+You spend considerable time manually annotating, cataloging, and finding trusted sources because you don’t have an end-to-end data lineage across your infrastructure. This affects your data consumers, who must spend time identifying the root cause of problems created by upstream data pipelines that other teams own. Your chief data officer (CDO) is struggling to map and control sensitive data, such as personal data, that is stored in multiple data sources.
 
 
 Your CDO plans to enable a central location in which to register data sources to help improve data security and business processes. You must evaluate whether Microsoft Purview can help you enable a unified data-governance service, including data stored on-premises and in multiple cloud-storage solutions. You must also create an enterprise data catalog so the users who manage the data can easily discover and

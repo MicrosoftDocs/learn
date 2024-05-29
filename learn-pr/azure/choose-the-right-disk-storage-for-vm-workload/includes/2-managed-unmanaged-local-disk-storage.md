@@ -2,7 +2,7 @@ You can choose whether to let Azure manage the storage infrastructure for your v
 
 Suppose you have a variety of virtual machines running healthcare workloads in your on-premises network that you want to migrate to Azure. You want to maximize performance while minimizing administrative effort.
 
-In this unit, you'll learn about disk roles and ephemeral disks. You'll also learn about the differences between managed and unmanaged disks.
+In this unit, you'll learn about disk roles, ephemeral OS disks, and managed disks.
 
 ## Disk roles
 
@@ -34,21 +34,3 @@ Virtual hard disks in Azure are stored as page blobs in an Azure Storage account
 - **Support for Azure Backup**: Azure Backup natively supports managed disks, which includes encrypted disks.
 - **Granular access control**: You can use Azure role-based access control (RBAC) to grant access to specific user accounts for specific operations on a managed disk. For example, you could ensure that only an administrator can delete a disk.
 - **Support for encryption**: To protect sensitive data on a managed disk from unauthorized access, you can encrypt it by using Azure Storage Service Encryption (SSE), which is provided with Azure Storage accounts. Alternatively, you can use Azure Disk Encryption (ADE), which uses BitLocker for Windows virtual machines and DM-Crypt for Linux virtual machines.
-
-Because of all these features, you should use managed disks by default.
-
-## Unmanaged disks
-
-An unmanaged disk, like a managed disk, is stored as a page blob in an Azure Storage account. The difference is that with unmanaged disks, you create and maintain this storage account manually. This requirement means that you have to keep track of IOPS limits within a storage account and ensure that you don't overprovision throughput of your storage account. You must also manage the security and RBAC access at the storage-account level, instead of at each individual disk like with managed disks.
-
-Because unmanaged disks don't support all of the scalability and management features that you've seen for managed disks, they're no longer widely used. Consider using them only if you want to manually set up and manage the data for your virtual machine in the storage account.
-
-To use unmanaged disks in the Azure portal, expand the **Advanced** section on the **Disks** page of the **Create a virtual machine** wizard.
-
-![Screenshot of using unmanaged disks in the Azure portal.](../media/2-using-unmanaged-disks.png)
-
-Originally, all virtual hard disks in Azure were unmanaged. If you're running an old virtual machine, it might have unmanaged disks. You can convert those unmanaged disks to managed disks by using the `ConvertTo-AzureRmVmManagedDisk` PowerShell cmdlet:
-
-```PowerShell
-ConvertTo-AzureRmVMManagedDisk -ResourceGroupName MyResourceGroup -VMName WebVm
-```

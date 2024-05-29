@@ -3,11 +3,10 @@ uid: learn.language.go-control-flow.4-use-defer-statement
 metadata:
   title: Control with defer, panic, and recover functions
   description: Learn about less-common control flows in Go - the defer, panic, and recover functions.
-  ms.date: 06/20/2021
+  ms.date: 01/25/2023
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Control with defer, panic, and recover functions
 durationInMinutes: 7

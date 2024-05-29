@@ -1,8 +1,8 @@
-Microsoft Intune supports several device platforms. The available platforms that can be managed by Intune include iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types. Each platform offers sightly different enrollment methods, devices settings, protection policy settings, configuration policy settings, custom policy settings, and remote actions.
+Microsoft Intune supports several device platforms. The available platforms that Intune can manage include iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types. Each platform offers sightly different enrollment methods, devices settings, protection policy settings, configuration policy settings, custom policy settings, and remote actions.
 
-![Microsoft Intune supported platforms.](../media/intro-to-endpoint-manager-08.png)
+![Diagram of Microsoft Intune supported platforms.](../media/intro-to-endpoint-manager-08.png)
 
-When you create your endpoint management design, you need to determine the platforms that must be supported in your endpoint environment. Once you know the platforms you need to support, you must verify whether each platform is supported by Intune.
+When you create your endpoint-management design, you need to determine the platforms that must be supported in your endpoint environment. Once you know the platforms you need to support, you must verify whether each platform is supported by Intune.
 
 ## Intune supported operating systems
 
@@ -10,13 +10,13 @@ You can manage devices running the following operating systems:
 
 ### Apple
 
-- Apple iOS 13.0 and later
-- Apple iPadOS 13.0 and later
-- macOS X 10.15 and later
+- Apple iOS 14.0 and later
+- Apple iPadOS 14.0 and later
+- macOS X 11.0 and later
 
 ### Google
 
-- Android 8.0 and later (including Samsung KNOX Standard 2.4 and higher)
+- Android 8.0 and later (including Samsung KNOX Standard 3.0 and higher)
 - Android Enterprise
 
 ### Microsoft
@@ -48,6 +48,5 @@ Configuration Manager supports several dozen OS versions for clients and devices
 - Windows Embedded computers (*several variations available*)
 - Windows 10 IoT Mobile Enterprise
 - Windows 10 Team for Surface Hub
-- Mac computers (*several variations available*)
 
 For more information about Configuration Manager supported devices, servers, platforms, and operating systems, see [Supported OS versions for clients and devices for Configuration Manager](/mem/configmgr/core/plan-design/configs/supported-operating-systems-for-clients-and-devices?azure-portal=true).

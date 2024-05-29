@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authorization-microsoft-entra-id.assign-azure-role-permissions
+title: Assign Azure role permissions for management groups, subscriptions, resource groups, and resources
+metadata:
+  title: Assign Azure role permissions for management groups, subscriptions, resource groups, and resources
+  description: "Assign Azure role permissions for management groups, subscriptions, resource groups, and resources"
+  ms.date: 04/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-assign-azure-role-permissions.md)]

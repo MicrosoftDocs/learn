@@ -3,11 +3,10 @@ uid: learn.hub-and-spoke-network-architecture.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 10/21/2019
-  author: KumudD
-  ms.author: kumud
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 02/19/2024
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 2
 content: |

@@ -1,0 +1,69 @@
+{
+    "redirections": [
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/security-copilot-describe-core-features/5-describe-embedded-experience.md",
+        "redirect_url": "/training/modules/security-copilot-embedded-experiences/2-copilot-for-defender",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/1-introduction.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/introduction",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/2-apply-sensitivity-labels-to-microsoft-teams.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/apply-sensitivity-labels-to-microsoft-365-services",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/3-plan-on-premises-labeling.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/plan-on-premises-labeling",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/4-configure-on-premises-labeling-for-unified-labeling-scanner.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/configure-on-premises-labeling-for-unified-labeling-scanner",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/5-apply-protections-restrictions-to-email-files.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/apply-protections-restrictions-to-email-files",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/6-monitor-label-usage-using-label-analytics.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/monitor-label-usage-using-label-analytics",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/7-knowledge-check.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/knowledge-check",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/8-summary-resources.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/summary-resources",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/monitor-label-usage-using-label-analytics.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/apply-manage-sensitivity-labels/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/configure-on-premises-labeling-for-unified-labeling-scanner.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/apply-manage-sensitivity-labels/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/plan-on-premises-labeling.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/apply-manage-sensitivity-labels/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/apply-protections-restrictions-to-email-files.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/apply-manage-sensitivity-labels/",
+        "redirect_document_id": false
+      }
+    ]
+}

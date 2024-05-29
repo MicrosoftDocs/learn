@@ -2,23 +2,31 @@
 uid: learn.wwl.work-with-cosmos-db
 metadata:
   title: Work with Azure Cosmos DB
-  description: "Learn how to develop client and server-side programming solutions on Azure Cosmos DB."
-  ms.date: 04/25/2023
+  description: "Work with Azure Cosmos DB"
+  ms.date: 03/06/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: cosmos-db
+  ai-usage: human-only
 title: Work with Azure Cosmos DB
 summary: Learn how to develop client and server-side programming solutions on Azure Cosmos DB.
 abstract: |
   After completing this module, you'll be able to:
-  * Identify classes and methods used to create resources
-  * Create resources by using the Azure Cosmos DB .NET v3 SDK
-  * Write stored procedures, triggers, and user-defined functions by using JavaScript
+
+  -   Identify classes and methods used to create resources
+
+  -   Create resources by using the Azure Cosmos DB .NET v3 SDK
+
+  -   Write stored procedures, triggers, and user-defined functions by using JavaScript
 prerequisites: |
-  * You should be familiar with developer concepts and terminology.
-  * Experience working with data solutions.
-  * An understanding of cloud computing and some experience with the Azure portal.
+  -   You should be familiar with developer concepts and terminology.
+
+  -   Experience working with data solutions.
+
+  -   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/3-work-with-azure-cosmos-db.svg
 levels:
 - intermediate
@@ -30,7 +38,7 @@ products:
 subjects:
 - cloud-computing
 - data-engineering
-- database
+- databases
 units:
 - learn.wwl.work-with-cosmos-db.introduction
 - learn.wwl.work-with-cosmos-db.cosmos-db-dotnet-overview

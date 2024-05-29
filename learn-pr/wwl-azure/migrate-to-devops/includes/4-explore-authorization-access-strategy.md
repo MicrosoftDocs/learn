@@ -2,13 +2,13 @@ Azure DevOps Services uses enterprise-grade authentication. To protect and secur
 
  -  Microsoft account.
  -  GitHub account.
- -  Azure Active Directory (Azure AD).
+ -  Microsoft Entra ID.
 
-Tools like Visual Studio and Azure DevOps natively support the use of Microsoft Accounts and Azure AD. Eclipse can also support this form of authentication if you install a Team Explorer Everywhere plug-in.
+Tools like Visual Studio and Azure DevOps natively support the use of Microsoft Accounts and Microsoft Entra ID. Eclipse can also support this form of authentication if you install a Team Explorer Everywhere plug-in.
 
 ## Personal access tokens
 
-Use personal access tokens (PAT) for tools that don't directly support Microsoft accounts or Azure AD for authentication. You can use it if you want them to integrate with Azure DevOps.
+Use personal access tokens (PAT) for tools that don't directly support Microsoft accounts or Microsoft Entra ID for authentication. You can use it if you want them to integrate with Azure DevOps.
 
 For example, tools like:
 
@@ -30,7 +30,7 @@ Default permissions are assigned to the default security groups. You can also co
 
 In the organization settings in Azure DevOps, you can configure app access policies. Based on your security policies, you might allow alternate authentication methods, enable third-party applications to access via OAuth, or even allow anonymous access to some projects.
 
-For even tighter control, you can use Conditional Access policies. These offer simple ways to help secure resources such as Azure DevOps when using Azure Active Directory for authentication.
+For even tighter control, you can use Conditional Access policies. These offer simple ways to help secure resources such as Azure DevOps when using Microsoft Entra ID for authentication.
 
 ## Multifactor authentication
 

@@ -5,11 +5,12 @@ metadata:
   unitType: exercise
   title: Exercise - Create websites
   description: Create a virtual network and virtual machines for hosting the vehicle registration web app, and an App Service for hosting the license renewal web app
-  ms.date: 06/08/2022
+  ms.date: 10/16/2023
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-create-web-sites.md)]

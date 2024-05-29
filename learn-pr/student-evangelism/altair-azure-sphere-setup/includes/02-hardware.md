@@ -2,9 +2,8 @@ Three hardware configurations are supported for the Altair emulator on Azure Sph
 
 ## Standard Altair 8800 experience on Azure Sphere
 
-For the standard Altair 8800 experience on Azure Sphere, the emulator supports the following Azure Sphere boards:
+For the standard Altair 8800 experience on Azure Sphere, the emulator supports the following Azure Sphere board:
 
-* [Avnet Azure Sphere MT3620 Starter Kit Rev 1](https://www.avnet.com/shop/us/products/avnet-engineering-services/aes-ms-mt3620-sk-g-3074457345636825680?azure-portal=true) or [Avnet Azure Sphere MT3620 Starter Kit Rev 2](https://www.avnet.com/wps/portal/us/products/new-product-introductions/npi/azure-sphere-mt3620-starter-kit-2-0?azure-portal=true)
 * [Seeed Studio Azure Sphere MT3620 Development Kit](https://www.seeedstudio.com/Azure-Sphere-MT3620-Development-Kit-US-Version-p-3052.html?azure-portal=true)
 
 ## Enhanced Altair 8800 experience on Azure Sphere

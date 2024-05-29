@@ -6,9 +6,8 @@ metadata:
   description: "Exercise: Use tools to optimize Power BI performance"
   ms.date: 01/16/2023
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: anrudduc
+  ms.topic: unit
 azureSandbox: false
 labId: 124450
 labModal: true

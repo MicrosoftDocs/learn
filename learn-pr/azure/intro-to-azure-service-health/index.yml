@@ -4,11 +4,11 @@ metadata:
   moduleType: introduction        
   title: Introduction to Azure Service Health 
   description: Introduction to Azure Service Health and how to get information from Azure Platform health.             # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 05/04/2022   
-  author: ricmmartins  
-  ms.author: ricmart   
-  ms.topic: interactive-tutorial  
-  ms.prod: learning-azure 
+  ms.date: 02/26/2024   
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: module-standard-task-based
+  ms.service: service-health
 
 title: Intro to Azure Service Health
 
@@ -41,7 +41,7 @@ products:
 subjects:
 - cloud-computing
 - device-management
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.intro-to-azure-service-health.introduction
 - learn.intro-to-azure-service-health.what-is-azure-service-health

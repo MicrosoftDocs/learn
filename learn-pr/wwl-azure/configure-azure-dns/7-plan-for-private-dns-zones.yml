@@ -4,13 +4,12 @@ title: Plan for Azure Private DNS zones
 metadata:
   title: Plan for Azure Private DNS zones
   description: "Plan for working with Azure Private DNS zone records."
-  ms.date: 01/10/2023
+  ms.date: 11/20/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/7-plan-for-private-dns-zones.md)]

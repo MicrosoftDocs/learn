@@ -4,12 +4,12 @@ title: Exercise advanced modeling patterns
 metadata:
   title: Exercise advanced modeling patterns
   description: "Exercise advanced modeling patterns"
-  ms.date: 10/17/2022
+  ms.date: 04/16/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 labId: 107587
 labModal: true
 durationInMinutes: 25

@@ -4,13 +4,12 @@ title: Visualize data
 metadata:
   title: Visualize data
   description: "Visualize data"
-  ms.date: 03/01/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/4-visualize-data.md)]

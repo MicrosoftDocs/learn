@@ -6,8 +6,8 @@ metadata:
   ms.date: 4/4/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: module
+  ms.service: security
 title: "Case study: Design security solutions for infrastructure"
 summary: "Apply your cybersecurity architect skills on a real business scenario in the area of infrastructure security. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
 abstract: |
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   -   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
   -   Experience with hybrid and cloud implementations.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/case-study-design-security-solutions-infrastructure.svg
 levels: 
   - advanced
 roles:
@@ -26,10 +26,7 @@ roles:
   - solution-architect
 products: 
   - entra
-  - azure-active-directory
-  - azure-active-directory-connect
-  - azure-active-directory-domain
-  - azure-active-directory-pass-through-authentication
+  - entra-id
 subjects: 
   - security
   - cloud-security

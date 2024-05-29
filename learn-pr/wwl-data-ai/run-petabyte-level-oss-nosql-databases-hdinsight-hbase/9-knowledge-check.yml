@@ -4,21 +4,20 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/05/2022
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Contoso is migrating an on-premise HBase cluster to HDInsight and is concerned around possible Write latency issues with HBase and is looking to improve write performance on HBase. Which solution from the below list would you look to offer?"
+  - content: "Contoso is migrating an on-premises HBase cluster to HDInsight and is concerned around possible Write latency issues with HBase and is looking to improve write performance on HBase. Which solution from the below list would you look to offer?"
     choices:
     - content: "Migrate to HBase on IaaS on Azure."
       isCorrect: false
-      explanation: "Incorrect. This would require a lot of effort, and cost to implement and may not even meet the same performance levels as HDInsight HBase with Accelerated Writes."
+      explanation: "Incorrect. This would require much effort, and cost to implement and may not even meet the same performance levels as HDInsight HBase with Accelerated Writes."
     - content: "Migrate to HDInsight HBase with Accelerated Writes."
       isCorrect: true
       explanation: "Correct. HDInsight HBase with Accelerated Writes attaches a Premium SSD Managed disk to every HBase Region Server (Worker Node) during cluster deployment."
@@ -29,21 +28,21 @@ quiz:
     choices:
     - content: "Use faster networking."
       isCorrect: false
-      explanation: "Incorrect. The root cause of performance will likely be affected by disk access"
+      explanation: "Incorrect. The root cause of performance likely affected by disk access."
     - content: "Use Azure Page Blobs."
       isCorrect: false
       explanation: "Incorrect. Azure Page Blobs By default, HDInsight HBase provisions a storage account of type Storage (general purpose v1)."
     - content: "Use Premium Block Blobs."
       isCorrect: true
-      explanation: "Correct. Premium Block Blobs provides high performance disk access to improve Read performance of HDInsight HBase clusters"
+      explanation: "Correct. Premium Block Blobs provides high performance disk access to improve Read performance of HDInsight HBase clusters."
   - content: "Contoso’s business continuity strategy calls for enabling Azure cross region asynchronous replication between HDInsight HBase clusters. What solution would you recommend?"
     choices:
     - content: "Import Export."
       isCorrect: false
-      explanation: "Incorrect. The Import Export feature exports selected tables to the local storage that is attached to the cluster. Post export the tables can then me imported from the target cluster."
-    - content: "hbase folder copy."
+      explanation: "Incorrect. The Import Export feature exports selected tables to the local storage that is attached to the cluster. Post export the tables imported from the target cluster."
+    - content: "HBase folder copy."
       isCorrect: false
-      explanation: "Incorrect. The hbase folder copy does not enable Azure cross region asynchronous replication between HDInsight HBase clusters, it is used to manually move data."
+      explanation: "Incorrect. The HBase folder copy doesn't enable Azure cross region asynchronous replication between HDInsight HBase clusters, it's used to manually move data."
     - content: "HBase replication."
       isCorrect: true
       explanation: "Correct. HBase replication enables Azure cross region asynchronous replication between HDInsight HBase clusters."

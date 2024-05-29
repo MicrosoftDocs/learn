@@ -3,13 +3,13 @@ uid: learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.using-log-
 title: Use Log Analytics
 metadata:
   title: Use Log Analytics
-  description: "Use Log Analytics"
-  ms.date: 03/09/2021
+  description: "Use Log Analytics to process data and return results in easy-to-read plain text."
+  ms.date: 03/28/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/5-use-log-analytics.md)]
