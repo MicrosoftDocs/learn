@@ -39488,6 +39488,11 @@
       "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/9-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-backup/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
     }
   ]
 }
