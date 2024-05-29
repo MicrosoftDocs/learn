@@ -33,7 +33,6 @@ subjects:
 - site-reliability-engineering
 units:
 - learn.wwl.configure-file-folder-backups.introduction
-- learn.wwl.configure-file-folder-backups.implement-azure-backup-center
 - learn.wwl.configure-file-folder-backups.setup-recovery-service-vault-backup-options
 - learn.wwl.configure-file-folder-backups.manage-azure-recovery-services-agent
 - learn.wwl.configure-file-folder-backups.inteactive-lab-simulation-files
