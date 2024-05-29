@@ -3393,3 +3393,8 @@ achievements:
   title: Configure file and folder backups
   summary: Learn how to configure backup and restore policies that meet your company's regulatory needs.
   iconUrl: /training/achievements/file-folder-backups.svg
+- uid: learn.wwl.create-bot-with-bot-framework-composer.badge
+  type: badge
+  title: Create a Bot with the Bot Framework Composer
+  summary: User the Bot Framework Composer to quickly and easily build sophisticated conversational bots without writing code.
+  iconUrl: /training/achievements/create-a-bot-with-the-bot-framework-composer.svg
