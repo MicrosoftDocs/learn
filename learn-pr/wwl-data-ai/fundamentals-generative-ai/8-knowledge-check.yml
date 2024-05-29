@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "This knowledge check is based on content about generative AI, large language models, and copilots."
-  ms.date: 6/27/2023
+  ms.date: 5/15/2024
   author: sherzyang
   ms.author: sheryang
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 3
 content: |
 quiz:
   questions:
@@ -23,36 +23,25 @@ quiz:
     - content: "Models that use deep learning to process and understand natural language on a massive scale."
       isCorrect: true
       explanation: "Correct. Large language models use deep learning to process and understand natural language on a massive scale."
-  - content: "What is an example of a potential task a generative AI application can help solve?"
+  - content: "Which Microsoft Copilot should a customer support agent use to research and resolve a support issue?"
     choices:
-    - content: "Monitoring the temperature in a manufacturing facility."
+    - content: "Microsoft Copilot for Microsoft Edge"
       isCorrect: false
-      explanation: "Anomaly detection is an AI task, but not a generative AI task."
-    - content: "Creating a draft for an email."
+      explanation: "Microsoft Copilot for Microsoft Edge best used to create content based on web content, not customer data."
+    - content: "Microsoft Copilot for Dynamics 365 Customer Service"
       isCorrect: true
-      explanation: "Creating a draft for an email is a generative AI task."
-    - content: "Collecting real time data and storing it in a database."
+      explanation: "Customer service agents can use Copilot in Dynamics 365 Customer Service to analyze support tickets, research similar issues, find resolutions, and communicate them to users with only a few clicks and prompts."
+    - content: "Microsoft Copilot for Security"
       isCorrect: false
-      explanation: "Real-time data can be used to support AI tasks, but the storage of real-time data isn't in itself a generative AI task."
-  - content: "What is the purpose of vector-based embeddings?"
+      explanation: "Microsoft Copilot for Security is best used to the assess, mitigate, and respond to security threats."
+  - content: "Which tool should a professional developer use to build a custom copilot and deploy it as a service endpoint in Azure?"
     choices:
-    - content: "To represent semantic meaning of text tokens."
+    - content: "Microsoft Copilot for Azure"
+      isCorrect: false
+      explanation: "Copilot for Azure is integrated into the Azure portal and can assist infrastructure administrators as they work with Azure cloud services."
+    - content: "Microsoft Copilot Studio"
+      isCorrect: false
+      explanation: "Copilot Studio is designed to work well for low-code development scenarios."
+    - content: "Microsoft Azure AI Studio"
       isCorrect: true
-      explanation: "Correct. The embedding for each token consists of multiple numeric elements. Each element indicates the location of the word along a particular dimension, like coordinates on a map."
-    - content: "To create tokens that include multiple representations of a word in different languages."
-      isCorrect: false
-      explanation: "Incorrect. Embeddings don't store multiple language definitions of a token."
-    - content: "To correct misspellings in the training data."
-      isCorrect: false
-      explanation: "Incorrect. Embeddings aren't used to correct misspellings in training data."
-  - content: "What is the potential impact of copilots?"
-    choices:
-    - content: "Copilots only impact applications used in professional settings."
-      isCorrect: false
-      explanation: "Incorrect. Copilots can be built for a multitude of applications that are used at work and in day-to-day life."
-    - content: "Copilots can help with first drafts, information synthesis, strategic planning, and much more."
-      isCorrect: true
-      explanation: "Correct. Copilots have the potential to revolutionize the way we work"
-    - content: "Copilots can only be used for certain natural language tasks like summarizing text."
-      isCorrect: false
-      explanation: "Incorrect. Copilots can be built on large language models that have a multitude of capabilities, from text to code to image generation and beyond."
+      explanation: "Microsoft Azure AI Studio is designed as a unified development portal for professional software developers to allow for full customization of language models."

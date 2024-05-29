@@ -23,7 +23,7 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. Select **Create** on the **Functions** tab. The **Create function** pane appears.
 
-1. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The Overview pane for the **HttpTrigger3** function appears.
+1. Under the **Select a template** section, select **HTTP trigger**, then select **Next**. Accept the defaults on the **Template details** tab and select **Create**. The Overview pane for the **HttpTrigger3** function appears.
 
 ## Add an Azure Cosmos DB input binding
 

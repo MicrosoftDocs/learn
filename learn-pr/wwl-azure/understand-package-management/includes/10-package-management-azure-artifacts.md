@@ -1,7 +1,4 @@
-
 **Estimated time:** 40 minutes.
-
-**Lab files:** none.
 
 ## Scenario
 
@@ -30,4 +27,4 @@ During this lab, you'll complete the following exercises:
  -  Exercise 1: Working with Azure Artifacts.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button which will take you to the lab.":::
-](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M08_L15_Package_Management_with_Azure_Artifacts.html)
+](https://go.microsoft.com/fwlink/?linkid=2270305)

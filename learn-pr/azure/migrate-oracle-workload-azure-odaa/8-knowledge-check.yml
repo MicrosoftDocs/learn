@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-oracle-workload-azure-odaa.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge.
+  ms.date: 05/01/2024
+  author: jjaygbay1
+  ms.author: jacobjaygbay
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following options is the primary factor that allows Oracle Database@Azure to have extremely low latency with Azure-hosted workloads?"
+    choices:
+    - content: "Oracle Database@Azure offers full Exadata database support."
+      isCorrect: false
+      explanation: "Incorrect. Oracle Database@Azure delivers low latency because it runs on hardware colocated in the same datacenters as your Azure workloads."
+    - content: "Oracle Database@Azure runs on dedicated hardware physically colocated in Azure datacenters."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Oracle Database@Azure can be managed using the Azure portal."
+      isCorrect: false
+      explanation: "Incorrect. Oracle Database@Azure delivers low latency because it runs on hardware colocated in the same datacenters as your Azure workloads."
+  - content: "Which of the following scenarios is a reason to migrate using Oracle Database@Azure?"
+    choices:
+    - content: "You want to manually configure the Oracle software hosting your databases."
+      isCorrect: false
+      explanation: "Incorrect. Oracle Database@Azure manages the deployment of the Exadata infrastructure and VM clusters you'll use to host your databases."
+    - content: "Your workload requires Exadata performance and database capabilities. "
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "You want to switch to a non-Oracle hosting technology."
+      isCorrect: false
+      explanation: "Incorrect. While collocated at Azure datacenters, Oracle Database@Azure runs on fully dedicated Oracle hardware using Oracle server technology."
+  - content: "Which of the following options do you configure when provisioning your Exadata infrastructure?"
+    choices:
+    - content: "The operating system your VMs will run."
+      isCorrect: false
+      explanation: "Incorrect. Oracle Database@Azure manages the operating systems and software needed to host your databases."
+    - content: "The total number of databases your infrastructure will support."
+      isCorrect: false
+      explanation: "Incorrect. Oracle Database@Azure allows you to dynamically add databases to (or remove them from) your infrastructure as needed."
+    - content: "The total number of CPUs and storage capacity to make available."
+      isCorrect: true
+      explanation: "Correct!"

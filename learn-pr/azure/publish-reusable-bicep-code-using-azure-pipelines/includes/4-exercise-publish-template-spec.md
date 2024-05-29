@@ -1,4 +1,4 @@
-Your team has built some security-hardened Bicep files that are compliant with your company's new governance model. One of the hardened Bicep files deploys a Linux-based Azure App Service app. In this exercise, you'll use a deployment pipeline to publish the Bicep file as a template spec.
+Your team has some security-hardened Bicep files that are compliant with your company's new governance model. One of the hardened Bicep files deploys a Linux-based Azure App Service app. In this exercise, you use a deployment pipeline to publish the Bicep file as a template spec.
 
 During the process, you'll:
 

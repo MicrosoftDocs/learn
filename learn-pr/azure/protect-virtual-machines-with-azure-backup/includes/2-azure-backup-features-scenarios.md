@@ -32,7 +32,7 @@ Traditional backup solutions, such as disk and tape, don't offer the highest lev
 
 - **No internet connectivity required**: When using Azure VMs, all the data transfer happens only on the Azure backbone network without needing to access your virtual network. So no access to any IPs or FQDNs is required.
 
-- **Soft delete**: With soft delete, the backup data is retained for 14 more days even after the deletion of the backup item. This protects against accidental deletion or malicious deletion scenarios, allowing the recovery of those backups with no data loss.
+- **Soft delete**: With soft delete, the backup data is retained for 14 more days even after the deletion of the backup item. This protects against accidental deletion or malicious deletion scenarios, allowing the recovery of those backups with no data loss. Azure Backup also provides **Enhanced soft delete** that enables you to retain a deleted item in the *soft deleted* state for a longer duration.
 
 Azure Backup also offers the ability to back up VMs encrypted with Azure Disk Encryption.
 
