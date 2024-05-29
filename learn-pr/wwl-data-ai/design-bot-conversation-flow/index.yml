@@ -35,7 +35,6 @@ subjects:
 units:
 - learn.wwl.design-bot-conversation-flow.introduction
 - learn.wwl.design-bot-conversation-flow.introduce-principles-of-bot-design
-- learn.wwl.design-bot-conversation-flow.deploy-bot
 - learn.wwl.design-bot-conversation-flow.exercise-create-a-bot
 - learn.wwl.design-bot-conversation-flow.knowledge-check
 - learn.wwl.design-bot-conversation-flow.summary
