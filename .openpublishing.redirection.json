@@ -39358,6 +39358,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-active-directory/6-implement-self-service-password-reset.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/understand-azure-active-directory/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-active-directory/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-azure-active-directory/",
+      "redirect_document_id": false
     }
   ]
 }
