@@ -103,7 +103,7 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
     :::image type="content" source="../media/add-file-gitignore-a59fa521-82e51d96-856ec323.png" alt-text="Screenshot of add file to .gitignore action.":::
     
     
-    Open your .gitignore, remove the file name from the path, and leave the folder with a slash, for example,*.VS Code/\**.
+    Open your .gitignore, remove the file name from the path, and leave the folder with a slash, for example, *.VS Code/\**.
     
     :::image type="content" source="../media/gitignore-0eac5553-d1ca4ff7-3fd1e0b2.png" alt-text="Screenshot of add vscode folder to .gitignore action.":::
     
@@ -180,7 +180,7 @@ The easiest way to understand the outcome of the steps done earlier is to check 
     
 3.  To investigate the actual changes in the commit, you can run the command `git log -p`
     
-    :::image type="content" source="../media/command-line-showing-git-log-output-c8e1eec2-2144654f-b8c78288.png" alt-text="Screenshot of the command line-showing git log -p output with file the changes.":::
+    :::image type="content" source="../media/command-line-showing-git-log-output-c8e1eec2-2144654f-b8c78288.png" alt-text="Screenshot of the command line-showing git log -p output with the file changes.":::
     
 
 ## There is more

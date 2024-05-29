@@ -17,7 +17,7 @@ You'll learn the following:
  -  Implement a deployment pattern.
  -  Optimize feedback mechanisms.
 
-Plan before your act. This module will help you understand what DevOps is and how to plan for a DevOps transformation journey.
+Plan before you act. This module will help you understand what DevOps is and how to plan for a DevOps transformation journey.
 
 ## What is the DevOps transformation journey?
 
