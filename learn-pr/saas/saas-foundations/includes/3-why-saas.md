@@ -8,7 +8,7 @@ This unit focuses on the main motivational drives for the SaaS model from both t
 
 - #### Lower Total Cost of Ownership (TCO)
   
-  By purchasing SaaS, customers don't need to invest in their own hardware, internal resources, IT, and operations, since the software provider takes care of the underlying infrastructure and operations.
+  By purchasing SaaS, customers don't need to invest in their own hardware, internal resources, IT, and operations, because the software provider takes care of the underlying infrastructure and operations.
   
 - #### Flexible purchase model
   
@@ -22,7 +22,7 @@ This unit focuses on the main motivational drives for the SaaS model from both t
 
 - #### High market demand
 
-  Customers prefer SaaS models, so software providers are pressured to provide consumption-based software.
+  Customers prefer SaaS models, so software providers want to provide consumption-based software.
 
 - #### Greater financial impact
 
@@ -36,7 +36,7 @@ This unit focuses on the main motivational drives for the SaaS model from both t
 
   Software providers sell copies of software, similar to traditional manufacturing where the same type of item is produced with high volume that brings the price per unit down.
 
-  With software, the more users are on the platform, the higher the margins are. Providers don't sell only the software copies, but the whole service, including the underlying infrastructure costs.
+  With software, the more users are on the platform, the higher the margins are. The product isn't only software copies, but the whole service, including the underlying infrastructure costs.
 
 ## Mutual motivations for the SaaS model
 

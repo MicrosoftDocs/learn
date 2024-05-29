@@ -29,17 +29,17 @@ This model is significantly different from the transactional model, where it did
 
 ## Importance of adoption
 
-Low adoption rates lead to high customer churn rates. Investments in sales and marketing don't pay off if customers don't realize the value of the service.
+Low adoption rates lead to high customer churn rates. Investments in sales and marketing don't pay off if customers don't use and realize the value of the service.
 
 - Adoption reduces churn.
 - Churn reduces revenue growth.
-- There's opportunity for expansion only if the product is adopted.
+- Expansion is possible only if the product is adopted.
 
 The following diagram illustrates the impact of potential customer churn on the Adoption and Renew stages of the LAER model.
 
   ![Diagram that illustrates the impact of potential customer churn on the Adoption and Renew stages of the LAER model.](../media/laer-churn.png)
 
-As you can see, in order for the LAER cycle to function, you need to make sure that the level of churn is low and level of adoption is high. Improving adoption improves revenue growth, and predictable revenue growth improves company financial results and evolution. Adoption plays a very important part in SaaS.
+As you can see, in order for the LAER cycle to function, you need to make sure that the level of churn is low and level of adoption is high. Improving adoption improves revenue growth, and predictable revenue growth improves company financial results and valuation. Adoption plays a very important part in SaaS.
 
 ![This diagram illustrates how adoption connects to financial results by impacting revenue growth.](../media/adoption-revenue.png)
 

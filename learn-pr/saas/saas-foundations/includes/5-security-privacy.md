@@ -24,4 +24,4 @@ Azure offers many out-of-the-box services for protection of workloads. For more 
 
 ## Contoso scenario
 
-Contoso must comply with the UK GDPR regulation, because they decided to focus on serving the UK market. When they grow and start providing services in other regions, Contoso must make sure to comply with all required regional regulations.
+Contoso must comply with the UK GDPR regulation, because they decided to focus on the UK market. When they grow and start providing services in other regions, Contoso must make sure to comply with all required regional regulations.

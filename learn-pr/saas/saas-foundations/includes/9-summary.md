@@ -7,10 +7,10 @@ In this training module, you learned the following SaaS fundamentals:
 
 To get started with your SaaS business, first make your business-level decisions.
 
-- What problem are you trying to solve? 
-- How do you plan to solve the problem?
-- What is your pricing model?
-- Who are your customers and how will they interact with your solution?
+- What's the purpose of your product?
+- How do you plan to achieve that purpose?
+- What's your pricing model?
+- Who are your customers, and how are they going to interact with your product?
 
 The answers to these questions provide the requirements for your SaaS solution, as when defining the target market segment for the Contoso SaaS solution.
 

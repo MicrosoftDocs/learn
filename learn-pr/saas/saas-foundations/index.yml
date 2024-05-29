@@ -2,7 +2,7 @@
 uid: learn.saas-foundations
 metadata:
   title: Foundations of SaaS
-  description: Learn about Software as a Service (SaaS), including differences from traditional software, service-level agreement (SLA) and service-level objective (SLO), security, and privacy.
+  description: Learn about Software as a Service (SaaS), service-level agreement (SLA) and service-level objectives (SLO), security and compliance, and pricing.
   ms.date: 05/28/2024
   author: kostinams
   ms.author: irkostin
@@ -11,13 +11,13 @@ metadata:
 
 title: Foundations of SaaS
 
-summary: Learn about Software as a Service (SaaS), including differences from traditional software, service-level agreement (SLA) and service-level objectives (SLO), security, and privacy.
+summary: Learn about Software as a Service (SaaS), including differences from traditional software, service-level agreement (SLA) and service-level objectives (SLO), security and compliance, and pricing models.
 
 abstract: |
   After you finish this module, you can:
     - Identify the most common benefits of a SaaS model and solutions.
     - Describe the differences between license-based software and SaaS.
-    - Compare SaaS pricing models, and determine a suitable pricing model for your SaaS solution.
+    - Compare SaaS pricing models and determine a suitable pricing model for your SaaS solution.
     - Explain SLA and SLOs, and define basic SLOs for your solution.
 
 prerequisites: |
