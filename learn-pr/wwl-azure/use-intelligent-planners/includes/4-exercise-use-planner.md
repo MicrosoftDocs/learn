@@ -27,7 +27,7 @@ For these exercises, a starter project is available for you to use. Use the foll
 
     You should see a "Program.cs" file.
 
-1. Open the **Program.cs** file and update the following variables with your Azure Open AI Services deployment name, API key, endpoint.
+1. Open the **Program.cs** file and update the following variables with your Azure OpenAI Services deployment name, API key, endpoint.
 
     ```csharp
     string yourDeploymentName = "";
