@@ -29,6 +29,5 @@ products:
 subjects:
 - networking
 units:
-- learn.wwl.configure-azure-dns.verify-custom-domain-names
 badge:
   uid: learn.wwl.configure-azure-dns.badge
