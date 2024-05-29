@@ -1,4 +1,4 @@
-You're on sprint 2 for the new deposits application. You want to test updating the deployment stack by defining an Azure SQL database in the bicep file. You want to verify that the stack is managing the newly defined resources.
+You're on sprint 2 for the new deposits application. You want to test updating the deployment stack by defining an Azure SQL database in the Bicep file. You want to verify that the stack is managing the newly defined resources.
 
 In this exercise, you update the Bicep file you previously created to include new resources. You also update and delete the deployment stack that manages your resources.
 

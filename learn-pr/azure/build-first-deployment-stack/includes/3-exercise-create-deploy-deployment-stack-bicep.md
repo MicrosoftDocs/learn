@@ -1,18 +1,18 @@
-You are on sprint 1 for the new deposits application. You want to test the process of creating a deployment stack with managed resources in a development subscription. In this exercise, you create a deployment stack scoped to a resource group that references a bicep file. The file defines an Azure app service plan and an Azure app service.
+You are on sprint 1 for the new deposits application. You want to test the process of creating a deployment stack with managed resources in a development subscription. In this exercise, you create a deployment stack scoped to a resource group that references a Bicep file. The file defines an Azure app service plan and an Azure app service.
 
 During the process, you'll:
 
 > [!div class="checklist"]
 >
-> - Create a bicep file that defines your initial architecture
-> - Create a deployment stack scoped to a resource group using your bicep file.
+> - Create a Bicep file that defines your initial architecture
+> - Create a deployment stack scoped to a resource group using your Bicep file.
 > - Review the configuration of your deployment stack and managed resources
 
 [!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
 ## Create the Bicep file
 
-Our first step is to create a bicep file that defines our resources to use with the deployment stack.
+Our first step is to create a Bicep file that defines our resources to use with the deployment stack.
 
 1. Open Visual Studio Code.
 
@@ -77,7 +77,7 @@ az stack group create \
     --name stack-deposits \
     --resource-group rg-depositsApplication \
     --template-file ./main.bicep \
-    --action-on-unmanage deleteAll \
+    --action-on-unmanage detachAll \
     --deny-settings-mode none
 ```
 
@@ -90,7 +90,7 @@ New-AzResourceGroupDeploymentStack `
     -Name stack-deposits `
     -ResourceGroupName rg-depositsApplication `
     -TemplateFile ./main.bicep `
-    -ActionOnUnmanage DeleteAll `
+    -ActionOnUnmanage DetachAll `
     -DenySettingsMode None
 ```
 
@@ -110,7 +110,7 @@ az stack group show \
 
 The results include the properties of the deployment stack and the status of the managed resources. The json output should appear familiar to the following image:
 
-:::code language="json" source="code/2-json.json" range="1-39, 52-77":::
+:::code language="json" source="code/2-json.json" range="1-27, 40-43, 56-81":::
 
 Take notice of the resources section of the output. For each resource, it shows its status as "managed," its resource group, its resource id, and its deny settings.
 
@@ -128,7 +128,7 @@ Get-AzResourceGroupDeploymentStack `
 
 The results include the properties of the deployment stack and the status of the managed resources. The PowerShell output should appear familiar to the following image:
 
-:::code language="powershell" source="code/3-powershell.ps1" range="1-10":::
+:::code language="powershell" source="code/3-powershell.ps1" range="1-12":::
 
 Take notice of the resources section of the output. It defines the resources managed by the deployment stack. You see the full resource ID of each resource.
 

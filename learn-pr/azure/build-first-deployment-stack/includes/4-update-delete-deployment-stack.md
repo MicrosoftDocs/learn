@@ -27,7 +27,7 @@ az stack group create \
     --name stack-deposits \
     --resource-group rg-depositsApplication \
     --template-file ./main.bicep \
-    --action-on-unmanage deleteAll \
+    --action-on-unmanage detachAll \
     --deny-settings-mode none
 ```
 
@@ -46,7 +46,7 @@ az stack group show \
     --name stack-deposits
 ```
 
-:::code language="json" source="code/2-json.json" range="1-77" highlight="40-51":::
+:::code language="json" source="code/2-json.json" range="1-81" highlight="44-55":::
 
 The highlighted code shows the new Azure SQL server and Azure SQL database as managed by the deployment stack.
 
@@ -61,7 +61,7 @@ Set-AzResourceGroupDeploymentStack `
     -Name stack-deposits `
     -ResourceGroupName rg-depositsApplication `
     -TemplateFile ./main.bicep `
-    -ActionOnUnmanage DeleteAll `
+    -ActionOnUnmanage DetachAll `
     -DenySettingsMode None
 ```
 
@@ -73,7 +73,7 @@ Get-AzResourceGroupDeploymentStack `
     -Name stack-deposits
 ```
 
-:::code language="json" source="code/3-powershell.ps1" range="1-17" highlight="11-12":::
+:::code language="json" source="code/3-powershell.ps1" range="1-19" highlight="13-14":::
 
 The highlighted code shows the new Azure SQL server and Azure SQL database as managed by the deployment stack.
 
@@ -84,6 +84,9 @@ In the next module, you work on managing resource lifecycles, including adding, 
 ## Deleting a deployment stack
 
 Reliable resource cleanup is a key feature of deployment stacks. When you delete a deployment stack, you can also delete the managed resources, resource groups, and management groups. Using a single API call eliminates the need to understand dependencies. As with creating and updating deployment stacks, the _action on unmanage_ parameter determines how Azure handles detached resources.
+
+> [!NOTE]
+> In this module, we are working with resrouce group scoped deployment stacks. In this situation, the resource group is not managed by the stack. > The 'delete all' value for the _action on unmanage_ parameter doesn't detele the resource group where the stack exists. It is necessary to delete the resource group after the stack and its resources are deleted.
 
 ::: zone pivot="cli"
 

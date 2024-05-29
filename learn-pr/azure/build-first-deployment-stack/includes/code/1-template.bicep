@@ -23,7 +23,7 @@ param webApplicationName string = 'webapp-${uniqueString(resourceGroup().id)}'
 var appServicePlanName = 'plan-deposits'
 
 // Resource - App Service Plan
-resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
+resource appServicePlan 'Microsoft.Web/serverfarms@2023-12-01' = {
   name: appServicePlanName
   location: location
   sku: {
@@ -33,7 +33,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
 }
 
 // Resource - Web App
-resource webApplication 'Microsoft.Web/sites@2022-03-01' = {
+resource webApplication 'Microsoft.Web/sites@2023-12-01' = {
   name: webApplicationName
   location: location
   properties: {

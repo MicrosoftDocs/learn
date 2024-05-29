@@ -18,7 +18,7 @@ Think of deployment stacks as a series of pointers that groups your application'
 
 Deployment stacks support the use of Bicep files, ARM JSON templates, or template specs for defining resources in a stack. When creating a deployment stack using the Azure CLI or Azure PowerShell, you're able to point to the specific template file (Bicep file or ARM JSON template) or template spec. It isn't necessary to change how you define your resources.
 
-We use the following bicep file for our first deployment stack. The file defines an app service plan and a web app. These resources become managed resources when we create the deployment stack.
+We use the following Bicep file for our first deployment stack. The file defines an app service plan and a web app. These resources become managed resources when we create the deployment stack.
 
 :::code language="bicep" source="code/1-template.bicep" range="1-4, 18-42":::
 
@@ -31,7 +31,7 @@ Creating and deploying a deployment stack and its resources is nearly identical 
 
 ::: zone pivot="cli"
 
-The Azure CLI command to deploy a bicep file to a resource group is:
+The Azure CLI command to deploy a Bicep file to a resource group is:
 
 ```azurecli
 az deployment group create \
@@ -46,7 +46,7 @@ az stack group create \
     --name stack-deposits \
     --resource-group rg-depositsApplication \
     --template-file ./main.bicep \
-    --action-on-unmanage deleteAll \
+    --action-on-unmanage detachAll \
     --deny-settings-mode none
 ```
 
@@ -59,12 +59,12 @@ Notice that the only changes in the command are the words `deployment` and `stac
 
 ::: zone pivot="powershell"
 
-The Azure PowerShell command to deploy a bicep file to a resource group is:
+The Azure PowerShell command to deploy a Bicep file to a resource group is:
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
     -ResourceGroupName rg-depositsApplication `
-    --TemplateFile eastus
+    -TemplateFile ./main.bicep
 ```
 
 The Azure PowerShell command to create a deployment stack at the resource group scope is:
@@ -74,7 +74,7 @@ New-AzResourceGroupDeploymentStack `
     -Name stack-deposits `
     -ResourceGroupName rg-depositsApplication `
     -TemplateFile ./main.bicep `
-    -ActionOnUnmanage DeleteAll `
+    -ActionOnUnmanage DetachAll `
     -DenySettingsMode None
 ```
 
@@ -102,7 +102,7 @@ az stack group create \
     --name stack-deposits \
     --resource-group rg-depositsApplication \
     --template-file ./main.bicep \
-    --action-on-unmanage deleteAll \
+    --action-on-unmanage detachAll \
     --deny-settings-mode none
 ```
 
@@ -123,7 +123,7 @@ New-AzResourceGroupDeploymentStack `
     -Name stack-deposits `
     -ResourceGroupName rg-depositsApplication `
     -TemplateFile ./main.bicep `
-    -ActionOnUnmanage DeleteAll `
+    -ActionOnUnmanage DetachAll `
     -DenySettingsMode None
 ```
 
@@ -145,7 +145,7 @@ az stack group show \
 
 The results include the properties of the deployment stack and the status of the managed resources. The output should appear familiar to the following section:
 
-:::code language="json" source="code/2-json.json" range="1-39, 52-77":::
+:::code language="json" source="code/2-json.json" range="1-27, 40-43, 56-81":::
 
 Take notice of the resources section of the output. For each resource, it shows its status as `managed`, its resource group, its resource id, and its deny settings.
 
@@ -163,7 +163,7 @@ Get-AzResourceGroupDeploymentStack `
 
 The results include the properties of the deployment stack and the status of the managed resources. The output should appear familiar to the following section:
 
-:::code language="powershell" source="code/3-powershell.ps1" range="1-10":::
+:::code language="powershell" source="code/3-powershell.ps1" range="1-12":::
 
 Take notice of the resources section of the output. It defines the resources managed by the deployment stack. You see the full resource ID of each resource.
 
