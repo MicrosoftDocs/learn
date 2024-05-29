@@ -3368,3 +3368,13 @@ achievements:
   title: Deploy Microsoft Sentinel and connect data sources
   summary: In this course you'll learn how to deploy Microsoft Sentinel and connect it to data sources. You'll also learn how to use Azure and AI to provide analysis of security alerts.
   iconUrl:  /training/achievements/deploy-azure-sentinel-and-connect-data-sources.svg
+- uid: learn.wwl.create-conversational-ai-solutions.trophy
+  type: trophy
+  title: Create conversational AI solutions
+  summary: Conversational AI solutions are based on interactions between human users and AI agents called _bots_. In this learning path, you'll learn how to build bots that can be delivered on Microsoft Azure.
+  iconUrl: /training/achievements/create-conversational-ai-solutions.svg
+- uid: learn.wwl.design-bot-conversation-flow.badge
+  type: badge
+  title: Create a bot with the Bot Framework SDK
+  summary: Learn how to build a bot by using the Microsoft Bot Framework SDK.
+  iconUrl: /training/achievements/design-a-bot-conversation-flow.svg
