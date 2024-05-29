@@ -3,11 +3,13 @@ uid: learn.wwl.implement-disaster-recovery-for-sap-workloads-azure.combine-avail
 title: Combine availability within one region and across regions
 metadata:
   title: Combine availability within one region and across regions
-  description: "Combine availability within one region and across regions"
-  ms.date: 10/18/2023
+  description: "Combine availability within one region and across regions."
+  ms.date: 05/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/4-combine-availability-within-one-region-across-regions.md)]

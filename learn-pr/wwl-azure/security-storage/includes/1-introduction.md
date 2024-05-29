@@ -19,3 +19,4 @@ By the end of this module, you will be able to:
 ## Goals
 
 The module aims to equip you with the knowledge and expertise necessary to design, implement, and manage a comprehensive security strategy for Azure storage resources. Participants will be able to secure data at rest and in transit, manage access control effectively, and implement encryption and data protection measures to ensure the security of critical data assets.
+
