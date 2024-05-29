@@ -35,7 +35,6 @@ units:
 - learn.wwl.configure-file-folder-backups.introduction
 - learn.wwl.configure-file-folder-backups.setup-recovery-service-vault-backup-options
 - learn.wwl.configure-file-folder-backups.manage-azure-recovery-services-agent
-- learn.wwl.configure-file-folder-backups.inteactive-lab-simulation-files
 - learn.wwl.configure-file-folder-backups.knowledge-check
 - learn.wwl.configure-file-folder-backups.summary-resources
 badge:
