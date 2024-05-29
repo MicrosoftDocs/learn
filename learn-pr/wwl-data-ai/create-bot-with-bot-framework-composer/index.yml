@@ -31,6 +31,5 @@ products:
 units:
 - learn.wwl.create-bot-with-bot-framework-composer.understand-dialogs
 - learn.wwl.create-bot-with-bot-framework-composer.user-experience
-- learn.wwl.create-bot-with-bot-framework-composer.summary
 badge:
   uid: learn.wwl.create-bot-with-bot-framework-composer.badge
