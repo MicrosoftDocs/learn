@@ -39508,6 +39508,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/3-bot-composer.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/work-power-virtual-agents/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/7-exercise-create-a-bot.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
     }
   ]
 }
