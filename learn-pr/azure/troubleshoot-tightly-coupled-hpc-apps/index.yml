@@ -7,6 +7,7 @@ metadata:
   author: garvct
   ms.author: cogarvey
   ms.topic: module
+  ms.service: azure-virtual-machines
 title: Troubleshoot tightly coupled HPC applications on HBv2, HC, and HB series virtual machines
 summary: Provide guidance on troubleshooting runtime failures and performance bottlenecks in tightly coupled HPC applications.
 abstract: |
