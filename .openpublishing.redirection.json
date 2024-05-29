@@ -39393,6 +39393,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-dns/4-create-zones.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/host-domain-azure-dns/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-dns/5-delegate-dns-domains.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/host-domain-azure-dns/",
+      "redirect_document_id": false
     }
   ]
 }
