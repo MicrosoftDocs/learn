@@ -39408,6 +39408,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-dns/2-identify-domains-custom-domains.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/host-domain-azure-dns/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-dns/8a-simulation-domain-names.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/host-domain-azure-dns/",
+      "redirect_document_id": false
     }
   ]
 }
