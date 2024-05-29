@@ -1,6 +1,8 @@
+To implement disaster recovery for SAP deployments across Azure regions with Azure Site Recovery, you need to follow these steps:
+
 ## Replicate virtual machines
 
-To start replicating Azure VMs to the Azure region serving as the disaster recovery site, follow the guidance in [Tutorial: Set up disaster recovery for Azure VMs](/azure/site-recovery/azure-to-azure-walkthrough-enable-replication).
+To start replicating Azure Virtual Machines to the Azure region serving as the disaster recovery site, follow the guidance in [Tutorial: Set up disaster recovery for Azure Virtual Machines](/azure/site-recovery/azure-to-azure-walkthrough-enable-replication).
 
 - For guidance on protecting Active Directory and DNS, refer to [Set up disaster recovery for Active Directory and DNS](/azure/site-recovery/site-recovery-active-directory).
 - For guidance on protecting database tier running on SQL server, refer to [Set up disaster recovery for SQL Server](/azure/site-recovery/site-recovery-sql).
@@ -15,13 +17,13 @@ A recovery plan supports the sequencing of various tiers in a multi-tier applica
 
 ### Add virtual machines to failover groups
 
-Create a recovery plan by adding the application server, web dispatcher, and SAP Central services VMs.
+Create a recovery plan by adding the application server, web dispatcher, and SAP Central services virtual machines.
 
 ### Add scripts to the recovery plan
 
-For your applications to function correctly, you might need to perform some operations on the Azure VMs after the failover or during a test failover. You can automate some post-failover operations. For example, you can update the DNS entry and change bindings and connections by adding corresponding scripts to the recovery plan. You can deploy the most commonly used Azure Site Recovery scripts into an Automation account.
+For your applications to function correctly, you might need to perform some operations on the Azure Virtual Machines after the failover or during a test failover. You can automate some post-failover operations. For example, you can update the DNS entry and change bindings and connections by adding corresponding scripts to the recovery plan. You can deploy the most commonly used Azure Site Recovery scripts into an Automation account.
 
-For example, you should add a pre-action script to a facilitate failover SQL Availability group. Similarly, you should add a post-action script to attach a load balancer on the failed over Azure VMs.
+For example, you should add a pre-action script to a facilitate failover SQL Availability group. Similarly, you should add a post-action script to attach a load balancer on the failed over Azure Virtual Machines.
 
 ## Run a test failover
 
