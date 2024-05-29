@@ -4,6 +4,7 @@ metadata:
   ms.author: carols
   author: fossygirl
   ms.date: 10/30/2023
+  ms.service: azure
   title: Provisioning a Linux virtual machine in Microsoft Azure
   description: Learn about different methods of provisioning Linux virtual machines in Microsoft Azure.
   ms.topic: module
