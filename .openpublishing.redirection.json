@@ -39283,6 +39283,11 @@
     "source_path": "learn-pr/wwl-azure/introduction-to-devops/7-summary.md",
     "redirect_url": "/training/modules/introduction-to-devops/15-summary",
     "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/create-conversational-ai-solutions/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/work-power-virtual-agents/",
+      "redirect_document_id": false
     }
   ]
 }
