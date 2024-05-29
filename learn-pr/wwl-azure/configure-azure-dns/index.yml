@@ -30,6 +30,5 @@ subjects:
 - networking
 units:
 - learn.wwl.configure-azure-dns.verify-custom-domain-names
-- learn.wwl.configure-azure-dns.summary-resources
 badge:
   uid: learn.wwl.configure-azure-dns.badge
