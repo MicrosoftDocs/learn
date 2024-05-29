@@ -1,4 +1,4 @@
-In this moudle, you learned how to troubleshoot and debug ASP.NET Core applications running on Azure App Service using Visual Studio. You explored how Visual Studio can provide a debugging experience similar to local development for remote apps, which can be useful for tracking down difficult issues. Troubleshooting issues directly with the debugger can often provide faster results than browsing logs or using monitoring tools. Along the way, you also learned about debugging symbols and basic considerations around environment configurations.
+In this module, you learned how to troubleshoot and debug ASP.NET Core applications running on Azure App Service using Visual Studio. You explored how Visual Studio can provide a debugging experience similar to local development for remote apps, which can be useful for tracking down difficult issues. Troubleshooting issues directly with the debugger can often provide faster results than browsing logs or using monitoring tools. Along the way, you also learned about debugging symbols and basic considerations around environment configurations.
 
 In this module, you learned how to:
 
@@ -12,7 +12,7 @@ The sandbox environment you activated will dispose of resources automatically. H
 
 Follow these steps in the Azure portal to delete the resource group:
 
-1. In the Azure portal search bar, search for the `mslearn-github-browser` resource group you created and select it from the results.
+1. In the Azure portal search bar, search for the `mslearn-github-browser` resource group you created, then select it from the results.
 1. On the `mslearn-github-browser` resource group Overview page, select the **Delete resource group** button at the top.
 1. Enter the resource group name `mslearn-github-browser` in the confirmation dialog and select **Delete**.
 1. Select **Delete** again to confirm deletion.

@@ -174,7 +174,7 @@ Next, you need to deploy the app to Azure so others can use it to browse reposit
    > [!NOTE]
    > For the sandbox environment, you might need to wait while Visual Studio loads the subscription information. This may take some time.
 
-    :::image type="content" source="../media/visual-studio-remote-debug-loading-subscriptions.png" alt-text="A screenshot of loading subscription info in the create app service workflow.":::
+    :::image type="content" source="../media/visual-studio-remote-debug-loading-subscriptions.png" alt-text="A screenshot of loading subscription info in the Create app service workflow.":::
 
 8. In the new app service dialog, enter or verify the following values:
 
@@ -183,7 +183,7 @@ Next, you need to deploy the app to Azure so others can use it to browse reposit
     | **Name** |  Enter `GitHubBrowser123`, where `123` are three random numbers of your choosing to ensure your App Service name and domain is unique across Azure. |
     | **Subscription name** | If you're using the Learn sandbox environment, select the `Concierge Subscription`; otherwise, select your own. |
     | **Resource group** | Choose the default <rgn>[sandbox resource group name]</rgn> resource group if you're using the sandbox, or select **New...** to create your own new group with a name such as `mslearn-github-browser`. |
-    | **Hosting plan** | If you;re using the Learn sandbox, leave the default value. If you're using your own subscription, select **New...** and enter a name of `mslearn-github-browser-plan` and choose your instance size. |
+    | **Hosting plan** | If you're using the Learn sandbox, leave the default value. If you're using your own subscription, select **New...** and enter a name of `mslearn-github-browser-plan` and choose your instance size. |
 
     > [!TIP]
     > If you're using the Learn sandbox and the default hosting plan doesn't appear, switch the resource group to a new group, then switch back to the default group.)
