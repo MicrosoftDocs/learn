@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-integrate-analytics-agent-defender-cloud.configure-integration-with-the-log-analytics-agent
-title: Exercise - Collect data from your workloads with the Log Analytics agent
+title: Exercise - Configure and integrate a Log Analytics agent and workspace agent in Defender for Cloud
 metadata:
-  title: Exercise - Collect data from your workloads with the Log Analytics agent
-  description: "Exercise - Collect data from your workloads with the Log Analytics agent"
-  ms.date: 04/30/2024
+  title: Exercise - Configure and integrate a Log Analytics agent and workspace agent in Defender for Cloud
+  description: "Exercise - Configure and integrate a Log Analytics agent and workspace agent in Defender for Cloud"
+  ms.date: 05/30/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

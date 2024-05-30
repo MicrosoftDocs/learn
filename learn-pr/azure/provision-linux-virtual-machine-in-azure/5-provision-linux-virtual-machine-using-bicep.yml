@@ -5,8 +5,8 @@ metadata:
   title: Provision a Linux virtual machine by using Bicep
   description: Learn how to provision by using Bicep.
   ms.date: 10/30/2023
-  author: chasecrum
-  ms.author: chasecrum
+  author: fossygirl
+  ms.author: carols
   ms.topic: unit
   ms.custom: devx-track-bicep, linux-related-content
 durationInMinutes: 17
