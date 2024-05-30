@@ -43,7 +43,6 @@ products:
 subjects:
 - devops
 units:
-- learn.wwl.choose-right-project.introduction
 - learn.wwl.choose-right-project.knowledge-check
 - learn.wwl.choose-right-project.summary
 badge:
