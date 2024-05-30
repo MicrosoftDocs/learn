@@ -3,23 +3,22 @@ uid: learn.wwl.explore-real-time-analytics-microsoft-fabric
 metadata:
   title: Implement Real-Time Intelligence with Microsoft Fabric
   description: Implement Real-Time Intelligence with Microsoft Fabric
-  ms.date: 05/15/2024
+  ms.date: 05/30/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: learning-path
-  ms.service: azure
 title: Implement Real-Time Intelligence with Microsoft Fabric
 prerequisites: |
   The student should be able to:
-  -   Log into the Azure portal
-  -   Explain and create resource groups
-  -   Understand the concept of streaming data
+  -   Log in to the Azure portal.
+  -   Explain and create resource groups.
+  -   understand the concept of streaming data.
 summary: |
   In this learning path, the student is exposed to various ways to:
-  -   Source streaming data sources into Microsoft Fabric
-  -   Use Real-Time Eventstream in Microsoft Fabric
-  -   Query data in a KQL database in Microsoft Fabric
-  -   Create Real-Time Dashboards in Microsoft Fabric
+  -   Source streaming data sources into Microsoft Fabric.
+  -   Use real time Eventstream in Microsoft Fabric.
+  -   Query data in a KQL database in Microsoft Fabric.
+  -   Create real time dashboards in Microsoft Fabric.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
