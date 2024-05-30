@@ -11,7 +11,7 @@ Mitigation of potential harms in a generative AI solution involves a layered app
 
 ## 1: The *model* layer
 
-The model layer consists of the generative AI model(s) at the heart of your solution. For example, your solution may be built around a model such as GPT-4.
+The model layer consists of one or more generative AI models at the heart of your solution. For example, your solution may be built around a model such as GPT-4.
 
 Mitigations you can apply at the model layer include:
 
@@ -34,7 +34,7 @@ The metaprompt and grounding layer focuses on the construction of prompts that a
 
 ## 4: The *user experience* layer
 
-The user experience layer includes the software application through which users interact with the generative AI model as well as documentation or other user collateral that describes the use of the solution to its users and stakeholders.
+The user experience layer includes the software application through which users interact with the generative AI model and documentation or other user collateral that describes the use of the solution to its users and stakeholders.
 
 Designing the application user interface to constrain inputs to specific subjects or types, or applying input and output validation can mitigate the risk of potentially harmful responses.
 
