@@ -43,7 +43,6 @@ products:
 subjects:
 - devops
 units:
-- learn.wwl.describe-team-structures.select-tools-processes-for-agile-practices
 - learn.wwl.describe-team-structures.summary
 badge:
   uid: learn.wwl.describe-team-structures.badge
