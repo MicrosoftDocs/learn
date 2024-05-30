@@ -9,4 +9,4 @@ Launch the exercise and follow the instructions.
 > To continue your learning journey, open the exercise in a new browser tab or window while staying on this page. To do this, right-click the Launch Exercise button and select Open link in new tab or Open link in new window.
 
 [:::image type="content" source="../media/launch-exercise-162c1d6a.png" alt-text="Screenshot showing an icon for the Launch Exercise button.":::
-](https://microsoftlearning.github.io/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/Instructions/Labs/LAB_05a_Configure%20Azure%20Key%20Vault%20networking%20settings.html)
+](https://github.com/MicrosoftLearning/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/blob/master/Instructions/Labs/LAB_06a_Configure%20Azure%20Key%20Vault%20networking%20settings.md)
