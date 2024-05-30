@@ -3,8 +3,8 @@ uid: learn.azure.cloud-adoption-framework-govern.7-enforce-policies
 title: Enforce cloud governance policies
 metadata:
   title: Enforce cloud governance policies
-  description: Work through a series of exercises to develop your initial governance foundation.
-  ms.date: 05/29/2024
+  description: Learn how to enforce cloud governance policies and work through an exercise to name and tag resources.
+  ms.date: 05/30/2024
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit

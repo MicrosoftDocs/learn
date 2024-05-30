@@ -3,7 +3,7 @@ uid: learn.azure.cloud-adoption-framework-govern
 metadata:
   title: Address tangible risks with the Govern methodology of the Cloud Adoption Framework for Azure
   description: Learn about how technical change introduces risk in your cloud environment and how to evaluate risks and implement guardrails to help keep you safe as you adopt the cloud.
-  ms.date: 05/22/2024
+  ms.date: 05/30/2024
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: module

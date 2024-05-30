@@ -3,8 +3,8 @@ uid: learn.azure.cloud-adoption-framework-govern.8-monitor-cloud-governance
 title: Monitor cloud governance
 metadata:
   title: Monitor cloud governance
-  description: After establishing a governance foundation, use that foundation to govern costs at scale.
-  ms.date: 08/08/2023
+  description: Learn how to monitor the compliance of your cloud governance, especially the compliance related to cost.
+  ms.date: 05/30/2024
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit

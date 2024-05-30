@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-adoption-framework-govern.4-corporate-policies
-title: Corporate policies
+title: Corporate policies and risks
 metadata:
-  title: Corporate policies
-  description: Learn how to validate and define corporate policies that drive actionable governance.
-  ms.date: 08/08/2023
+  title: Corporate policies and risks
+  description: Learn how to analyze corporate policies and risks to incorporate actionable governance.
+  ms.date: 05/30/2024
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit

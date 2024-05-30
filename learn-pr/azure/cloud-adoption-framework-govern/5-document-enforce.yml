@@ -3,8 +3,8 @@ uid: learn.azure.cloud-adoption-framework-govern.5-document-policies
 title: Incorporate cloud governance policies
 metadata:
   title: Incorporate cloud governance policies
-  description: Learn how to document and enforce policies to incorporate actionable governance.
-  ms.date: 05/29/2024
+  description: Learn how to document policies and incorporate guardrails to align your cloud environment with your policies.
+  ms.date: 05/30/2024
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
