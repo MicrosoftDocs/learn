@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.build-web-app-blazor-webassembly-vscode.6-csharp-razor-binding
+title: Data binding and events
+metadata:
+  title: Data binding and events
+  description: Learn how to handle events and use data binding from Blazor components.
+  ms.date: 01/26/2024
+  author: danroth27
+  ms.author: daroth
+  ms.manager: markl
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-data-binding.md)]
+  

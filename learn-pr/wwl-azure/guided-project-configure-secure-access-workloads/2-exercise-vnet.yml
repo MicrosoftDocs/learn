@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-configure-secure-access-workloads.exercise1
+title: Exercise - Provide network isolation and segmentation for the web application
+metadata:
+  title: Exercise - Provide network isolation and segmentation for the web application
+  description: "Exercise - Provide network isolation and segmentation for the web application"
+  ms.date: 03/08/2024
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-exercise-vnet.md)]

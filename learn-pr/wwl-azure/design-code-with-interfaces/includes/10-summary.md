@@ -1,0 +1,1 @@
+In this module, you explored tightly coupled code and SOLID design principles. You learned about the challenges faced by developers on large projects, and how interfaces can be used to enforce code standards for flexible and maintainable code. The hands-on experience you completed will help you create robust software systems that are adaptable to change.

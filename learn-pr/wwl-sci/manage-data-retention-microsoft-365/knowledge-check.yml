@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-retention-microsoft-365.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Where are modified or deleted documents preserved in SharePoint Online to maintain compliance?"
+    choices:
+    - content: "First-stage Recycle Bin."
+      isCorrect: false
+      explanation: "Incorrect: The First-stage Recycle Bin is for user-deleted items but not specifically for compliance preservation."
+    - content: "Preservation Hold Library."
+      isCorrect: true
+      explanation: "Correct: The Preservation Hold Library is used to store edited or deleted documents for compliance."
+    - content: "User's original document library."
+      isCorrect: false
+      explanation: "Incorrect: The original document library doesn't serve the purpose of preserving compliance-related data."
+  - content: "What types of content are covered under Microsoft Teams retention policies?"
+    choices:
+    - content: "Chat messages, video clips, embedded images, and links."
+      isCorrect: true
+      explanation: "Correct: This content is explicitly included in the comprehensive retention policies."
+    - content: "Only chat messages."
+      isCorrect: false
+      explanation: "Incorrect: Teams retention policies cover more than just chat messages."
+    - content: "Code snippets and voice memos."
+      isCorrect: false
+      explanation: "Incorrect: Code snippets and voice memos aren't retained under these policies."
+  - content: "What happens to Copilot interactions when an employee leaves the organization?"
+    choices:
+    - content: "They're deleted immediately."
+      isCorrect: false
+      explanation: "Incorrect: Immediate deletion would violate compliance requirements."
+    - content: "They're moved to the user's OneDrive."
+      isCorrect: false
+      explanation: "Incorrect: OneDrive isn't used for storing Copilot interactions post-departure."
+    - content: "They're stored in an inactive mailbox for compliance."
+      isCorrect: true
+      explanation: "Correct: This action ensures data remains accessible for eDiscovery and compliance."
+  - content: "What is the main purpose of Litigation Holds in Microsoft 365?"
+    choices:
+    - content: "To prevent any email deletion indefinitely."
+      isCorrect: false
+      explanation: "Incorrect: Litigation Holds can be set for specific periods, not necessarily indefinitely."
+    - content: "To preserve mailbox content for a specified period for compliance."
+      isCorrect: true
+      explanation: "Correct: Litigation Holds ensure data is retained for legal and compliance purposes."
+    - content: "To archive old emails for future reference."
+      isCorrect: false
+      explanation: "Incorrect: Archiving for future reference isn't the primary purpose of Litigation Holds."
+  - content: "What tool is used for complex recoveries of deleted email messages?"
+    choices:
+    - content: "Microsoft Purview compliance portal eDiscovery tools."
+      isCorrect: true
+      explanation: "Correct: eDiscovery tools are designed for detailed audits and complex recoveries."
+    - content: "OneDrive Recycle Bin."
+      isCorrect: false
+      explanation: "Incorrect: OneDrive Recycle Bin isn't used for recovering Exchange messages."
+    - content: "Exchange Admin Center (EAC)."
+      isCorrect: false
+      explanation: "Incorrect: EAC is used for straightforward recovery tasks, not complex ones."

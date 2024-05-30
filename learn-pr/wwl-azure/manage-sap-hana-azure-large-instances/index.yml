@@ -6,8 +6,8 @@ metadata:
   ms.date: 12/08/2021
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Manage SAP HANA on Azure (Large Instances)
 summary: Explore methods to connect to and manage SAP HANA on Azure (Large Instances).
 abstract: |

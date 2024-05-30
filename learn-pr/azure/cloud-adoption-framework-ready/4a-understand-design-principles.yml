@@ -6,10 +6,9 @@ metadata:
   title: Design principles for Azure landing zones
   description: Learn about the core set of design principles for the Azure landing zone conceptual architecture.
   ms.date: 5/12/2022
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4a-understand-design-principles.md)]

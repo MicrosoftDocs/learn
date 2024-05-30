@@ -3,11 +3,11 @@ uid: learn.azure.automate-virtual-machine-software-installation-configuration
 metadata:
   title: Automate the installation and configuration of software in your Virtual Machines
   description: Learn how to automate the installation and configuration of software in your Azure Virtual Machines.
-  ms.date: 05/15/2020
-  author: cynthn
-  ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/04/2024
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: module-standard-task-based
+  ms.service: virtual-machines
 title: Automate the installation and configuration of software in your Virtual Machines
 summary: Learn how to use the cross-platform Azure CLI to create a virtual machine in Azure, and use a custom script to install and configure a web server. Automate the installation of PHP and the creation of a dynamic home page, then use a web browser to test your installation.
 abstract: | 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.exercise-mongodb-native-tools
+title: 'Exercise: Migrate to vCore-based Azure Cosmos DB for MongoDB with MongoDB native tools'
+metadata:
+  title: 'Exercise: Migrate to vCore-based Azure Cosmos DB for MongoDB with MongoDB native tools'
+  description: "Exercise: Migrate to vCore-based Azure Cosmos DB for MongoDB with MongoDB native tools"
+  ms.date: 04/08/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labId: 163229
+labModal: true
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise-mongodb-native-tools.md)]

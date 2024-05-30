@@ -4,11 +4,12 @@ title: Choose variable names that follow rules and conventions
 metadata:
   title: Choose variable names that follow rules and conventions
   description: "Choose variable names that follow rules and conventions"
-  ms.date: 02/24/2023
+  ms.date: 05/27/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/2-choose-variable-names.md)]
@@ -19,7 +20,7 @@ quiz:
     choices:
     - content: "UserOption."
       isCorrect: false
-      explanation: "Incorrect. In camel case formatting the first letter is lower case."
+      explanation: "Incorrect. In camel case formatting, the first letter is lower case."
     - content: "user Option."
       isCorrect: false
       explanation: "Incorrect. All variable names must have consecutive letters, no spaces."

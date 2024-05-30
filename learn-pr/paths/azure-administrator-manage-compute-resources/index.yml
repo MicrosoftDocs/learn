@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/11/2022
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Deploy and manage compute resources for Azure administrators
 summary: |
   Learn how to deploy and configure virtual machines, containers, and Web Apps in Azure. 
@@ -72,7 +71,8 @@ products:
 subjects:
 - data-engineering
 modules:
-- learn.create-linux-vm-in-azure
+- learn.plan-your-linux-environment-in-azure
+- learn.provision-linux-virtual-machine-in-azure
 - learn.create-a-windows-vm-in-azure
 - learn.manage-vms-with-azure-cli
 - learn.add-and-size-disks-in-azure-virtual-machines

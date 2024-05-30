@@ -16,7 +16,7 @@ The solution uses:
 
 - Azure Storage Blob
 
-- Azure Cognitive Services (Computer Vision API)
+- Azure AI Vision
 
 - Cosmos DB database
 

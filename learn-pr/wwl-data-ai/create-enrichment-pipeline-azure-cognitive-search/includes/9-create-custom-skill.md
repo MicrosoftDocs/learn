@@ -1,4 +1,4 @@
-Your custom skill must implement the expected schema for input and output data that is expected by skills in an Azure Cognitive Search skillset.
+Your custom skill must implement the expected schema for input and output data that is expected by skills in an Azure AI Search skillset.
 
 ## Input Schema
 
@@ -32,7 +32,7 @@ The input schema for a custom skill defines a JSON structure containing a record
 
 ## Output schema
 
-The schema for the results returned by your custom skill reflects the input schema. It is assumed that the output will contain a record for each input record, with either the results produced by the skill or details of any errors that occurred.
+The schema for the results returned by your custom skill reflects the input schema. It is assumed that the output contains a record for each input record, with either the results produced by the skill or details of any errors that occurred.
 
 ```JSON
 {
@@ -62,4 +62,4 @@ The schema for the results returned by your custom skill reflects the input sche
 }
 ```
 
-The output value in this schema is a *property bag* that can contain any JSON structure, reflecting the fact that index fields are not necessarily simple data values, but can contain complex types.
+The output value in this schema is a *property bag* that can contain any JSON structure, reflecting the fact that index fields aren't necessarily simple data values, but can contain complex types.

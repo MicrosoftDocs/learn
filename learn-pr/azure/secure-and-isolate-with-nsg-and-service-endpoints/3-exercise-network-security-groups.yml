@@ -3,11 +3,12 @@ uid: learn.secure-and-isolate-with-nsg-and-service-endpoints.3-exercise-network-
 metadata:
   title: Exercise - Create and manage network security groups
   description: Exercise - Create and manage network security groups
-  ms.date: 04/25/2019
-  author: KumudD
-  ms.author: kumud
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/11/2023
+  author: asudbring
+  ms.author: allensu
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 title: Exercise - Create and manage network security groups
 durationInMinutes: 15
 sandbox: true

@@ -1,6 +1,6 @@
 Azure offers several ways to automate processes. Azure Functions and Logic Apps are both Azure services that enable serverless workloads. Both services create workflows that are a collection of steps to execute complex tasks. For example, a Logic App can be created to populate a table in an Azure SQL Database when an entry is made in a SharePoint list. A full explanation of these services is beyond the scope of this course.
 
-For more complete control and granularity of your automation, Azure Automation allows for process automation, configuration management, full integration with Azure platform options (such as role-based access control and Azure AD) and can manage Azure and on-premises resources.
+For more complete control and granularity of your automation, Azure Automation allows for process automation, configuration management, full integration with Azure platform options (such as role-based access control and Microsoft Entra ID) and can manage Azure and on-premises resources.
 
 One of the unique benefits of Azure Automation is that it can manage resources within Azure or on-premises VMs. For example, if you have a VM that is normally kept in a down state for cost savings (except when it needs to be used), you have the ability within Azure Automation, using a feature called hybrid runbooks, to execute a script to start the VM, then kick off a SQL Server backup from within the VM, and finally shut down the VM.
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-device-connections-communication.troubleshoot-device-message-routing
+title: Examine message routing troubleshooting
+metadata:
+  title: Examine message routing troubleshooting
+  description: "Examine message routing troubleshooting"
+  ms.date: 12/06/2023
+  author: kgremban
+  ms.author: kgremban
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+  ms.service: iot-hub 
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-troubleshoot-device-message-routing.md)]

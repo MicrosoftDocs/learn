@@ -5,13 +5,12 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 4/19/2022
+  ms.date: 4/26/2023
   author: whhender
   ms.author: whhender
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
   - event-tier1-build-2022
-  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/knowledge-check.md)]
@@ -36,9 +35,9 @@ quiz:
     - content: "SQL authentication"
       isCorrect: true
       explanation: "Correct. SQL authentication can be configured for a credential object used to scan the data source for an Azure SQL Managed Instance."
-    - content: "Authentication using an Azure AD user."
+    - content: "Authentication using a Microsoft Entra user."
       isCorrect: false
-      explanation: "Incorrect. Authentication using a user from Azure AD can't be used to set up proper credentials for authenticating the Azure SQL Managed Instance."
+      explanation: "Incorrect. Authentication using a user from Microsoft Entra ID can't be used to set up proper credentials for authenticating the Azure SQL Managed Instance."
   - content: "To govern the Azure SQL Database that's integrated using a private endpoint with a virtual network, the decision is made to use self-hosted integration runtime. Where can the self-hosted integration runtime be deployed?"
     choices:
     - content: "As a container instance"
@@ -47,7 +46,7 @@ quiz:
     - content: "In an Azure VM"
       isCorrect: true
       explanation: "A self-hosted integration runtime can be deployed in any Azure VM residing in Azure virtual network as long as there's a peering or virtual private network (VPN) between the self-hosted integration runtime VM and data sources and purview private endpoints."
-    - content: "In Azure AD"
+    - content: "In Microsoft Entra ID"
       isCorrect: false
-      explanation: "Incorrect. Azure AD is the Microsoft enterprise identity and access management solution for the cloud and isn't the correct location to deploy the self-hosted integration runtime."
+      explanation: "Incorrect. Microsoft Entra ID is the Microsoft enterprise identity and access management solution for the cloud and isn't the correct location to deploy the self-hosted integration runtime."
   

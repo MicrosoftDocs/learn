@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.cela-accessibility.introduction-to-accessibility
+metadata:
+  title: Introduction to accessibility
+  description: Explore definitions of accessibility and disability, an assistive technology overview, and why accessibility is important for people with disabilities.
+  ms.date: 04/10/2024
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: module
+  ms.service: microsoft-365
+title: Introduction to accessibility
+summary: This module presents the core ideas and definitions needed to understand accessibility concepts. You'll learn what accessibility means, why it's important for technology to be accessible to everyone, and about different assistive technologies.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Define accessibility. 
+  - Define disability and the different types of disabilities - permanent, temporary, and situational.
+  - Describe how assistive technology enhances accessibility and independence for people with disabilities.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - student
+products:
+  - m365
+subjects:
+  - accessibility
+units:
+  - learn.cela-accessibility.introduction-to-accessibility.introduction
+  - learn.cela-accessibility.introduction-to-accessibility.what-is-disability
+  - learn.cela-accessibility.introduction-to-accessibility.what-is-accessibility
+  - learn.cela-accessibility.introduction-to-accessibility.assistive-technology
+  - learn.cela-accessibility.introduction-to-accessibility.knowledge-check
+  - learn.cela-accessibility.introduction-to-accessibility.summary
+badge:
+  uid: learn.cela-accessibility.introduction-to-accessibility.badge

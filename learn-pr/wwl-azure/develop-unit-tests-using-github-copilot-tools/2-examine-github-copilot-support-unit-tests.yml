@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-unit-tests-using-github-copilot-tools.examine-github-copilot-support-unit-tests
+title: Examine the unit testing tools and environment
+metadata:
+  title: Examine the unit testing tools and environment
+  description: "Examine the unit testing tools and environment"
+  ms.date: 05/20/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-examine-github-copilot-support-unit-tests.md)]

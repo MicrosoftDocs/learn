@@ -7,12 +7,12 @@ Query Store isn't enabled by default, but can be turned on globally or on a per-
 1. Go to the Azure portal and select your Azure Database for PostgreSQL server.
 1. Select **Server parameters** and navigate to the **pg_qs.query_capture_mode** setting.
 1. Select **TOP**.
-    
-    :::image type="content" source="../media/3-settings-turn-query-store-on.png" alt-text="Screenshot of settings to turn Query Store on." lightbox="../media/3-settings-turn-query-store-on.png":::
+
+    :::image type="content" source="../media/3-settings-turn-query-store-on.png" alt-text="Screenshot of settings to turn on the Query Store." lightbox="../media/3-settings-turn-query-store-on.png":::
 
 1. Navigate to **pgms_wait_sampling.query_capture_mode**, select **ALL**, and select **Save**.
-    
-    :::image type="content" source="../media/3-query-capture-mode.png" alt-text="Screenshot of settings to turn pgms_wait_sampling.query_capture_mode on." lightbox="../media/3-query-capture-mode.png":::
+
+    :::image type="content" source="../media/3-query-capture-mode.png" alt-text="Screenshot of settings to turn on pgms_wait_sampling.query_capture_mode." lightbox="../media/3-query-capture-mode.png":::
 
 ## Access information in the Query Store
 

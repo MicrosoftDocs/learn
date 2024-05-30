@@ -4,12 +4,12 @@ title: Introduction
 metadata:
   title: Introduction
   description: In this section, we help the learner decide if the product meets their needs by explaining when to use the product and how it works.
-  ms.date: 03/17/2023
-  author: leestott
+  ms.date: 11/28/2023
+  author: PatAltimore
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
+  ms.topic: unit
   ms.custom: team=nextgen
+  ms.service: iot-edge
 durationInMinutes: 6 # dummy number at present
 content: |
   [!include[](includes/1-introduction.md)]

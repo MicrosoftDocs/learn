@@ -4,11 +4,10 @@ title: Execute commands using Azure speech recognition
 metadata:
   title: Execute commands using Azure speech recognition
   description: Introduction to Execute commands using Azure speech recognition
-  ms.date: 09/13/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.date: 01/17/2024
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/4-add-offline-mode-local-speech-to-text-translation.md)]

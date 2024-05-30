@@ -1,20 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.describe-capabilities-of-microsoft-identity-access-management-solutions
 metadata:
-  title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft Azure Active Directory, part of Microsoft Entra'
-  description: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft Azure Active Directory, part of Microsoft Entra'
+  title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft Entra'
+  description: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft Entra'
   ms.date: 08/08/2022
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft Azure Active Directory, part of Microsoft Entra'
+  ms.topic: learning-path
+title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft Entra'
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
   - General understanding of Microsoft Azure and Microsoft 365.
 summary: |
-  Azure Active Directory is the tool for identity and access management in the Microsoft Cloud.  Learn about Azure AD services and identity principals, secure authentication, access management capabilities, as well as identity protection and governance.
+  Microsoft Entra ID is Microsoft's cloud-based identity and access management solution.  Learn about Microsoft Entra services and identity principals, secure authentication, access management capabilities, as well as identity protection and governance.
   
   Here are all the learning paths in preparation for the SC-900 exam: Microsoft Security, Compliance, and Identity Fundamentals.
   :::row:::
@@ -24,9 +23,9 @@ summary: |
     [Part 1: Describe the concepts of security, compliance, and identity](../describe-concepts-of-security-compliance-identity/index.yml)
   :::column-end:::
   :::column:::
-    <img src="/training/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg" width="101" alt="Screenshot of the trophy for the Describe the capabilities of Microsoft Azure Active Directory, part of Microsoft Entra learning path." role="presentation"></img>
+    <img src="/training/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg" width="101" alt="Screenshot of the trophy for the Describe the capabilities of Microsoft Entra learning path." role="presentation"></img>
     
-    Part 2: Describe the capabilities of Microsoft Azure Active Directory, part of Microsoft Entra
+    Part 2: Describe the capabilities of Microsoft Entra
   :::column-end:::
   :::row-end:::
   :::row:::
@@ -50,9 +49,6 @@ summary: |
     Primer: [Describe the basic concepts of cybersecurity](../describe-basic-concepts-of-cybersecurity/index.yml)
   :::column-end:::
   :::row-end:::  
-video:
-  title: "Introduction video: Describe the capabilities of Microsoft Azure Active Directory, part of Microsoft Entra"
-  url: https://www.microsoft.com/videoplayer/embed/RE4XQ3g
 iconUrl: /training/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg
 levels:
 - beginner
@@ -60,7 +56,7 @@ roles:
 - business-user
 - student
 products:
-- azure-active-directory
+- entra-id
 subjects:
 - compliance
 - identity-access

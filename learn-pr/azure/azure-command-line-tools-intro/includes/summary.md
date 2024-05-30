@@ -1,10 +1,9 @@
-In this module, you've explored the different Azure command line tool options that allow you to
-automate the provisioning of Azure resources at scale. You've learned the basic concepts of
+In this module, you explored the Azure command-line tools that allow you to
+automate the provisioning of Azure resources at scale. You learned the basic concepts of
 infrastructure as code and the key differences between the Azure CLI, Azure PowerShell, Bicep, and
 Terraform.
 
-Knowing the capabilities and seeing the syntax for each Azure command line tool empowers you to be
-able to make an informed decision about which tools best meet the needs of your requirements.
+Knowing the capabilities and seeing the syntax for each Azure command-line tool can help you make an informed decision about which tools best meet your requirements.
 
 ## Additional resources
 

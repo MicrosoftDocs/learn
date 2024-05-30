@@ -1,5 +1,3 @@
-
-
 Now you have:
 
 - Planned for implementing SAP solutions.
@@ -28,13 +26,13 @@ Now you have:
 - [SAP Standard Application Benchmarks](https://www.sap.com/dmc/exp/2018-benchmark-directory/)
 - [SAP benchmark sizing](https://www.sap.com/about/benchmark/sizing.html)
 - [High availability of SAP HANA on Azure VMs on Red Hat Enterprise Linux](/azure/virtual-machines/workloads/sap/sap-hana-high-availability-rhel)
-- [SAP Note \#2388694](https://launchpad.support.sap.com/#/notes/2388694)
+- [SAP Note \#2388694](https://me.sap.com/notes/2388694)
 - [Setting up Pacemaker on Red Hat Enterprise Linux in Azure](/azure/virtual-machines/workloads/sap/high-availability-guide-rhel-pacemaker)
-- [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533)
-- [SAP Note \#1872170 – Suite on HANA – S/4 sizing report](https://launchpad.support.sap.com/#/notes/1872170)
-- [SAP Note \#1995209 – Suite on HANA memory Sizing report – Advanced correction 1](https://launchpad.support.sap.com/#/notes/1995209)
-- [SAP Note \#2062017 – Suite on HANA memory Sizing report – Advanced correction 2](https://launchpad.support.sap.com/#/notes/2062017)
-- [SAP Note \#2080648 – Suite on HANA memory Sizing report – Advanced correction 3](https://launchpad.support.sap.com/#/notes/2080648)
-- [SAP Note \#2175150 – Suite on HANA memory Sizing report – Advanced correction 4](https://launchpad.support.sap.com/#/notes/2175150)
-- [SAP Note \#2213586 – Suite on HANA memory Sizing report – Advanced correction 5](https://launchpad.support.sap.com/#/notes/2213586)
-- [SAP Note \#2303847 – Suite on HANA memory Sizing report – Advanced correction 6](https://launchpad.support.sap.com/#/notes/2303847)
+- [SAP Note \#1928533](https://me.sap.com/notes/1928533)
+- [SAP Note \#1872170 – Suite on HANA – S/4 sizing report](https://me.sap.com/notes/1872170)
+- [SAP Note \#1995209 – Suite on HANA memory Sizing report – Advanced correction 1](https://me.sap.com/notes/1995209)
+- [SAP Note \#2062017 – Suite on HANA memory Sizing report – Advanced correction 2](https://me.sap.com/notes/2062017)
+- [SAP Note \#2080648 – Suite on HANA memory Sizing report – Advanced correction 3](https://me.sap.com/notes/2080648)
+- [SAP Note \#2175150 – Suite on HANA memory Sizing report – Advanced correction 4](https://me.sap.com/notes/2175150)
+- [SAP Note \#2213586 – Suite on HANA memory Sizing report – Advanced correction 5](https://me.sap.com/notes/2213586)
+- [SAP Note \#2303847 – Suite on HANA memory Sizing report – Advanced correction 6](https://me.sap.com/notes/2303847) 

@@ -4,8 +4,8 @@ Modern cloud computing made both the hardware and software more modular. Program
 
 Specifically, this module explored the following areas:
 
-- A brief history of computing from mainframes to the modern cloud
-- How programs changed. They went from large applications that were difficult to update to nimble apps that require less maintenance by users
-- How the internet empowered computer developers to more with less overhead
+ -  A brief history of computing from mainframes to the modern cloud
+ -  How programs changed. They went from large applications that were difficult to update to nimble apps that require less maintenance by users
+ -  How the internet empowered computer developers to more with less overhead
 
 It's an exciting time to be a software developer. The cloud and modern tools open up a lot of opportunities. Computers are at the center of modern life. The engineers that build the software and hardware make the modern home and office possible.

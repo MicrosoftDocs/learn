@@ -3,15 +3,15 @@ uid: learn.azure-well-architected-operational-excellence
 metadata:
   title: Microsoft Azure Well-Architected Framework - Operational excellence
   description: Learn how to design an Azure architecture that uses modern practices and gives you full visibility into what's happening in your environment.
-  ms.date: 11/01/2022
+  ms.date: 06/27/2023
   author: martinekuan
   ms.author: martinek
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: waf
 title: Microsoft Azure Well-Architected Framework - Operational excellence
 summary: Learn how to design an Azure architecture that uses modern practices and gives you full visibility into what's happening in your environment.
 abstract:  | 
-  By the end of this module, you will be able to:
+  By the end of this module, you're able to:
     - Apply modern practices to design, build, and orchestrate resources on Azure
     - Gain operational insights by using monitoring and analytics
     - Reduce effort and error by using automation
@@ -31,10 +31,12 @@ subjects:
 - architecture
 units:
 - learn.azure-well-architected-operational-excellence.1-introduction
-- learn.azure-well-architected-operational-excellence.2-design-build-orchestrate
-- learn.azure-well-architected-operational-excellence.3-use-monitoring-and-analytics-to-gain-operational-insights
-- learn.azure-well-architected-operational-excellence.4-use-automation-to-reduce-effort-and-error
-- learn.azure-well-architected-operational-excellence.5-test-strategies
-- learn.azure-well-architected-operational-excellence.6-summary
+- learn.azure-well-architected-operational-excellence.embrace-devops-culture
+- learn.azure-well-architected-operational-excellence.establish-development-standards
+- learn.azure-well-architected-operational-excellence.evolve-operations-with-observability
+- learn.azure-well-architected-operational-excellence.deploy-with-confidence
+- learn.azure-well-architected-operational-excellence.automate-for-efficiency
+- learn.azure-well-architected-operational-excellence.adopt-safe-deployment-practices
+- learn.azure-well-architected-operational-excellence.summary
 badge:
   uid: learn.azure-well-architected-operational-excellence.badge

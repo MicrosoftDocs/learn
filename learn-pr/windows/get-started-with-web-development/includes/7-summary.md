@@ -7,7 +7,7 @@ In this module, you set up a working environment for web development. You also c
 * You added JavaScript to enable custom interaction with the page and switching between themes.
 * You learned how to create and use console messages to peek inside your code.
 
-You're gathering tools and building a foundation as a web developer. You can reuse your website as a template for future projects. As your skills and knowledge grow, you'll be able to fulfill more of the vision you have for your website. It's also empowering to see an idea come to life.
+You're gathering tools and building a foundation as a web developer. You can reuse your website as a template for future projects. As your skills and knowledge grow, you're able to fulfill more of the vision you have for your website. It's also empowering to see an idea come to life.
 
 ## Learn more
 

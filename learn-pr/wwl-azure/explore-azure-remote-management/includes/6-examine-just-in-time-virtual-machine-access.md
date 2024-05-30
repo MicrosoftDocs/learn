@@ -1,5 +1,3 @@
-
-
-When a user requests access to a VM, Security Center checks that the user has Azure role-based access control (Azure RBAC) permissions for that VM. If the request is approved, Security Center configures the NSGs and Azure Firewall to allow inbound traffic to the selected ports from the relevant IP address (or range), for the amount of time that was specified. After the time has expired, Security Center restores the NSGs to their previous states. Connections that are already established are not interrupted.
+When a user requests access to a VM, Security Center checks that the user has Azure role-based access control (Azure RBAC) permissions for that VM. If the request is approved, Security Center configures the NSGs and Azure Firewall to allow inbound traffic to the selected ports from the relevant IP address (or range), for the amount of time that was specified. After the time has expired, Security Center restores the NSGs to their previous states. Connections that are already established aren't interrupted.
 
 :::image type="content" source="../media/jit-logic-flow-01790dbc.png" alt-text="Diagram illustrating Just-in-time (J I T) virtual machine logic flow.":::

@@ -4,11 +4,10 @@ title: When to use Azure DNS
 metadata:
   title: When to use Azure DNS
   description: When to use Azure DNS
-  ms.date: 12/10/2021
+  ms.date: 01/31/2024
   author: Orin-Thomas
   ms.author: orthomas
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: orthomas-12162021
 durationInMinutes: 5

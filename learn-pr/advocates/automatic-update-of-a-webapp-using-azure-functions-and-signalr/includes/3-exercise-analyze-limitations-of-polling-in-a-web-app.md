@@ -1,149 +1,157 @@
-Before you begin, make sure you have the following software installed on your machine:
+Before you change the prototype, you need to run it to validate the assumptions. The prototype is in a source code repository on GitHub.  
 
-- [Node.js](https://nodejs.org/download/)
-- [Visual Studio Code](https://code.visualstudio.com/download)
-- [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) (min. version 2.6.666)
-- [Azure Functions extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
-- [Azure Storage extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestorage)
+## Create Azure resources
 
-## Download sample app code
+1. In a separate browser tab or window, fork the sample repository on GitHub with the following link: [mslearn-advocates.azure-functions-and-signalr](https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr/fork). This allows you to push your changes to your own version of the source code. This is a required step in order to deploy the source code to Azure later in the module.
 
-1. Run the following command in Azure Cloud Shell from the portal to clone the app from GitHub.
+1. In the terminal, clone the repository. In the following command, replace `MicrosoftDocs` with your account:
 
     ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr.git serverless-demo
+    git clone https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr stock-prototype
     ```
 
-    > [!IMPORTANT]
-    > Do not run `npm install` until you have completed the steps that update the *local.settings.json*. A post-install script is included to set up your database and add some data to the database.
-
-1. Run the following command to go to the new folder into which you cloned the repo:
+1. Install the dependencies in the **setup-resources** folder.
 
     ```bash
-    cd serverless-demo
+    cd stock-prototype/setup-resources && npm install
     ```
 
-1. The beginning state of the app is located in the **start** folder. Make sure you are in that folder for the rest of this module. Run the following command to open the *start* folder in Visual Studio Code:
+    If you receive warnings about `EBADENGINE`,  you can ignore them.
+
+1. Sign in to Azure with the Azure CLI.
 
     ```bash
-    code start
+    az login
     ```
 
-    For your reference, the finished solution is available in the folder called **end**.
+1. View your subscriptions and set your default Azure subscription.
 
-## Create a Storage account
-
-Azure Functions requires a storage account, and you'll need it when you deploy the web app to the cloud later in the module.
-
-1. Run the following command in Cloud Shell to define a name for your Azure Storage account.
+    View the subscriptions.
 
     ```bash
-    export STORAGE_ACCOUNT_NAME=mslsigrstorage$(openssl rand -hex 5)
-    echo "Storage Account Name: $STORAGE_ACCOUNT_NAME"
+    az account list --output json | jq -r '.[] | .name' | sort
     ```
 
-    Keep note of  this  account name for the remainder of the module.
-
-1. Run the following `az storage account create` command to create a storage account for your function and static website.
+    To set the default subscription, replace `YOUR-SUBSCRIPTION-ID` with a subscription ID from the previous Azure CLI output.
 
     ```bash
-    az storage account create \
-      --name $STORAGE_ACCOUNT_NAME \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --kind StorageV2 \
-      --sku Standard_LRS
+    az account set --subscription <YOUR-SUBSCRIPTION-ID>
     ```
 
-    It can take a few minutes to create a storage account. Wait for this step to finish before proceeding.
+    This default subscription is used to create the Azure resources.
 
-## Create an Azure Cosmos DB account
-
-You store stock prices in an Azure Cosmos DB database, so you'll set that up in the sandbox account.
-
-1. Run the following `az cosmosdb create` command in Cloud Shell to create a new Azure Cosmos DB account in your sandbox resource group.
+1. Create the Azure resources and upload the sample data to the database. The process may take a few minutes to complete.
 
     ```bash
-    az cosmosdb create  \
-      --name msl-sigr-cosmos-$(openssl rand -hex 5) \
-      --resource-group <rgn>[sandbox resource group name]</rgn>
+    bash create-start-resources.sh "<YOUR-SUBSCRIPTION-NAME>"
     ```
 
-    It can take a few minutes to create an Azure Cosmos DB account. Wait for this step to finish before proceeding.
+    Make sure you wrap the name in double quotes.
 
-## Update local settings
+1. Copy the required information, you'll need these to run the prototype. 
 
-For the app to run, you need to add the connection settings for your cloud services to the local settings file.
+    | Resource Type | Environment variable |
+    |--|--|
+    |Azure Cosmos DB|Referred to as COSMOSDB_CONNECTION_STRING|
+    |Azure Storage|Referred to as STORAGE_CONNECTION_STRING|
+    |Resource Group|Referred to as RESOURCE_GROUP_NAME.|
 
-1. Run the following commands in Cloud Shell to get the connection strings for the resources we created in this exercise.
-
-    ```bash
-    STORAGE_CONNECTION_STRING=$(az storage account show-connection-string \
-    --name $(az storage account list \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --query [0].name -o tsv) \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --query "connectionString" -o tsv)
-
-    COSMOSDB_ACCOUNT_NAME=$(az cosmosdb list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --query [0].name -o tsv)
-
-    COSMOSDB_CONNECTION_STRING=$(az cosmosdb list-connection-strings  \
-      --name $COSMOSDB_ACCOUNT_NAME \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" -o tsv)
-
-    COSMOSDB_MASTER_KEY=$(az cosmosdb list-keys \
-    --name $COSMOSDB_ACCOUNT_NAME \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --query primaryMasterKey -o tsv)
-
-    printf "\n\nReplace <STORAGE_CONNECTION_STRING> with:\n$STORAGE_CONNECTION_STRING\n\nReplace <COSMOSDB_CONNECTION_STRING> with:\n$COSMOSDB_CONNECTION_STRING\n\nReplace <COSMOSDB_MASTER_KEY> with:\n$COSMOSDB_MASTER_KEY\n\n"
-    ```
-
-1. Go to where you cloned the application, and open the **start** folder in Visual Studio Code. Open **local.settings.json** in the editor so you can update the file.
-
-1. In **local.settings.json**, update the variables `AzureWebJobsStorage`, `AzureCosmosDBConnectionString`, and `AzureCosmosDBMasterKey` with the values listed in the Cloud Shell and save the file. The *local.settings.json* file should only exist on your local computer.
-
-## Run the application
-
-1. In the Visual Studio Code terminal window, run the following command to install dependencies and set up the database:
-
-    ```bash
-    npm install
-    ```
-
-    > [!NOTE]
-    > If a problem arises during the install process and the database is not correctly setup, you can run `npm run setup` to manually seed the database.
-
-1. Press <kbd>F5</kbd> to start debugging the function app. The function app startup is shown in a terminal window.
-
-1. To run the web application on your machine, open a second integrated terminal instance and run the following command to start the web app.
+1. Use a Node.js script to upload sample data into the database with the following command.
 
     ```bash
     npm start
     ```
 
-1. The script automatically opens the browser and goes to http://localhost:8080. If the browser fails to open automatically, you can go to http://localhost:8080 manually.
-
-    ![Beginning state of serverless web app.](../media/serverless-app-beginning-state.png)
-
-1. Return to Visual Studio Code, open a third terminal instance, and enter the following command to update the stock prices. Immediately return to the browser and observe that the values for stock ABC change within a few seconds.
+1. In the terminal, navigate to the **root** folder.
 
     ```bash
-    npm run update-data
+    cd ..
     ```
 
-When you're done, stop the running processes.
+## Install dependencies and run the prototype
 
-- To stop the web server, select the **kill process** (trash can icon) on the terminal window that is running the web server.
+1. Install the dependencies.
 
-- To stop the functions app, select **Stop** or press <kbd>Shift+F5</kbd>.
+    ```bash
+    cd start/client && npm install && cd ../..
+    cd start/server && npm install && cd ../..
+    ```
 
-<!--
-    REVIEW:
-    I would add in an instruction here to tell the learner how to update the  ABC stock price or add another one to the database, so we can see an update happening. I might be tempted to increase the polling delay so we can really see how polling has the potential to delay updates reaching the client.
+1. If the notification asks you to select an Azure functions app for the workspace, select `start/server`. This is the function app that you'll use to run the server-side code. 
 
-    CONCLUSION:
-    Added two more records in database seed.
--->
+1. If you receive a notification about installing the latest Azure Functions Core Tools, select **Install**.
+
+## Get the client and server URLs
+
+When running locally, the client and server applications need to know where to find each other. The URLs are:
+
+- **Client**: http://localhost:3000
+- **Server**: http://localhost:7071
+
+
+## Update local settings for the Azure Functions app
+
+Add the connection strings to the prototype's Azure Functions app. 
+
+1. Create the **./start/server/local.settings.json** file and paste in the following. This file has the configuration settings for the local functions project. 
+
+    :::code language="json" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/start/server/sample.local.settings.json" :::
+    
+
+1. Update the following variables with values you copied from above.
+
+    |Property|Value|
+    |--|--|
+    |AzureWebJobsStorage|Replace with the Storage connection string.|
+    |COSMOSDB_CONNECTION_STRING|Replace with the Cosmos DB connection string.|
+
+    Now the Functions app can receive requests from the client, then connect to the database and correctly manage the timer trigger.
+
+## Add local settings for the Client app
+
+Add the server URL to the prototype's client application.
+
+Open **./start/client** and create a `.env` file with the following contents. 
+
+```
+BACKEND_URL=http://localhost:7071
+```
+
+## Run the server application
+
+1. In the terminal, start the Azure Functions application.
+
+    ```bash
+    cd start/server && npm start
+    ```
+
+1. Wait until the terminal displays the API endpoints.
+
+    ```console
+    Functions:
+    
+            getStocks: [GET] http://localhost:7071/api/getStocks
+    
+            setPrice: timerTrigger
+    ```
+
+## Run the client application
+
+1. In a new terminal, start the client application.
+
+    ```bash
+    cd start/client && npm start
+
+1. When the notification displays that the application is running, select **Open in Browser** to use the prototype.
+
+    :::image type="content" source="../media/visual-studio-code-notification-open-browser-3000.png" alt-text="Screenshot of Visual Studio Code notification to open the browser.":::
+
+1. Arrange your browser windows so you can see the terminal and the prototype of the stock prices at the same time.
+1. In the prototype browser window, open the browser's developer tools. Notice the browser is making a request to the API every 5 seconds for all the data, even though the data hasn't changed.
+1. In the browser window, watch the output for the Azure Functions app. A single stock price changes every minute. When the price in the API changes, the next client fetch of all data includes that change. 
+
+    :::image type="content" source="../media/visual-studio-code-terminal-output-stock-change.png" alt-text="Screenshot of Visual Studio Code terminal showing console output of the stock price change.":::
+
+1. In both the start-client and start server terminals, stop the applications with <kbd>Ctrl</kbd> + <kbd>C</kbd> or kill the terminal by selecting the trashcan icon.
+
+In this unit, you ran the prototype. While the client does run successfully, it isn't efficient. While each individual client may not notice this with such a small number of stocks, that will change as the number of stocks grows and the number of clients pull from the server. The prototype can be improved. Let's learn how in the next unit.

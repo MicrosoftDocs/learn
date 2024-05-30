@@ -7,8 +7,7 @@ metadata:
   ms.date: 02/17/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -17,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "The default data retention period in Microsoft 365 Defender for Endpoint is?"
+  - content: "The default data retention period in Microsoft Defender XDR for Endpoint is?"
     choices:
     - content: "One month"
       isCorrect: false
@@ -28,7 +27,7 @@ quiz:
     - content: "Three months"
       isCorrect: false
       explanation: "Incorrect.  The default is six months."
-  - content: "Which of the following options is a valid Microsoft 365 Defender for Endpoint onboarding option for Windows 10 devices?"
+  - content: "Which of the following options is a valid Microsoft Defender XDR for Endpoint onboarding option for Windows 10 devices?"
     choices:
     - content: "Group policy"
       isCorrect: true

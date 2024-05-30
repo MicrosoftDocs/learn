@@ -4,13 +4,10 @@ title: Analyze reports
 metadata:
   title: Analyze reports
   description: "Analyze reports"
-  ms.date: 02/27/2023
+  ms.date: 01/24/2024
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/12-analyze-reports.md)]

@@ -19,20 +19,20 @@ IoT Edge devices have the IoT Edge runtime installed on them. The Azure "IoT Edg
 
 The **IoT Edge runtime** is a collection of programs that turn a device into an IoT Edge device. Collectively, the IoT Edge runtime components enable IoT Edge devices to receive code to run at the edge and communicate the results with an IoT Hub.
 
-* **IoT Edge security daemon:** starts each time an IoT Edge device boots and bootstraps the device by running the IoT Edge agent.
+* **IoT Edge module runtime:** starts each time an IoT Edge device boots and bootstraps the device by running the IoT Edge agent.
 * **IoT Edge agent:** facilitates deployment and monitoring of modules on the IoT Edge device, including the IoT Edge hub.
 * **IoT Edge hub:** manages communications between modules on the IoT Edge device and between the device and IoT Hub. 
 
 ## Create an IoT Hub
 
-Azure IoT Hub enables the communication between the virtual device and the cloud. To create a new Azure IoT Hub with the Azure CLI, you'll use the `az IoT hub create` command set.
+Azure IoT Hub enables the communication between the virtual device and the cloud. To create a new Azure IoT Hub with the Azure CLI, you'll use the `az iot hub create` command set.
 
 > [!NOTE]
 > Only one **free** IoT hub instance is allowed in a subscription. The free level of IoT Hub works for this exercise. If you've used IoT Hub in the past and already have a free hub created, you can use that IoT hub.
 
 ## Register the IoT Edge device to IoT Hub
 
-1. Use the `az IoT hub device-identity create` command to create a device identity for your Edge device on Azure. The device identity enables you to communicate with your IoT Hub.
+1. Use the `az iot hub device-identity create` command to create a device identity for your Edge device on Azure. The device identity enables you to communicate with your IoT Hub.
 1. Retrieve the connection string with the `az iot hub device-identity connection-string show` command. Every device identity uses a unique device connection string to associate it with a physical device.
 1. Set up the connection string on the IoT Edge device so it can connect to the IoT Hub. You can do this remotely without connection to the virtual machine by running a script on the device. Use the `az vm run-command` to invoke a script on the edge device and pass the connection string as a parameter.  
 

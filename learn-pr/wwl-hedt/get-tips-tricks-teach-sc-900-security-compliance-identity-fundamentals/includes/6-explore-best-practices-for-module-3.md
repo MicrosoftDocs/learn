@@ -4,14 +4,14 @@ SC-900: Module 3 Describe the capabilities of Microsoft Security Solutions
 
 Module 3 Overview
 
-As you prepare to teach this module, get familiar with what the students learn during the module. In this module, students learn about security capabilities in Microsoft. Topics covered include network and platform capabilities of Azure, Azure security management, and Sentinel. You'll learn about threat protection with Microsoft 365 Defender, Microsoft 365 security management, and endpoint security.
+As you prepare to teach this module, get familiar with what the students learn during the module. In this module, students learn about security capabilities in Microsoft. Topics covered include network and platform capabilities of Azure, Azure security management, and Sentinel. You'll learn about threat protection with Microsoft Defender XDR, Microsoft 365 security management, and endpoint security.
 
 This module consists of four lessons:
 
 - Lesson 1 – Describe basic security capabilities in Azure
 - Lesson 2 – Describe security management capabilities of Azure
 - Lesson 3 – Describe security capabilities of Microsoft Sentinel
-- Lesson 4 – Describe threat protection with Microsoft 365 Defender
+- Lesson 4 – Describe threat protection with Microsoft Defender XDR
  
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXeRx]  
 
@@ -28,7 +28,7 @@ Module 3 Demos
 - Demo 3.2: [Microsoft Defender for the cloud](https://github.com/MicrosoftLearning/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals/blob/master/Instructions/Demos/DEMO_05_explore_defender_cloud.md)
 - Demo 3.3: [Microsoft Sentinel](https://github.com/MicrosoftLearning/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals/blob/master/Instructions/Demos/DEMO_06_explore_sentinel.md)
 - Demo 3.4: [Microsoft Defender for cloud apps](https://github.com/MicrosoftLearning/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals/blob/master/Instructions/Demos/DEMO_07_explore_defender_apps.md)
-- Demo 3.5: [The Microsoft 365 Defender portal](https://github.com/MicrosoftLearning/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals/blob/master/Instructions/Demos/DEMO_08_explore_m365_defender_portal.md)
+- Demo 3.5: [The Microsoft Defender portal](https://github.com/MicrosoftLearning/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals/blob/master/Instructions/Demos/DEMO_08_explore_m365_defender_portal.md)
 
 Module 3 Labs (optional)
 

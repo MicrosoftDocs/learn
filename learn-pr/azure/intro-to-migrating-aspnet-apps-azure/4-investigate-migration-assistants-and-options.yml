@@ -4,11 +4,10 @@ title: Investigate migration assistants
 metadata:
   title: Investigate migration assistants
   description: Content
-  ms.date: 01/16/2021
+  ms.date: 01/26/2024
   author: wadepickett
   ms.author: wpickett
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/4-investigate-migration-assistants-and-options.md)]

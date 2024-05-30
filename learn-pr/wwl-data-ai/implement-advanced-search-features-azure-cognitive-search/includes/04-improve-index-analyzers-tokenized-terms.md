@@ -1,18 +1,19 @@
-Cognitive Search is configured by default to analyze text and identify tokens that will be helpful in your index. The right tokens ensure that users can find the documents they need quickly. In most cases, the default configuration produces an optimal index. However, when you have unusual or unique fields, you might want to configure exactly how text is analyzed.
+
+Azure AI Search is configured by default to analyze text and identify tokens that will be helpful in your index. The right tokens ensure that users can find the documents they need quickly. In most cases, the default configuration produces an optimal index. However, when you have unusual or unique fields, you might want to configure exactly how text is analyzed.
 
 Here, you'll learn how to define a custom analyzer to control how the content of a field is split into tokens for inclusion in the index.
 
-## Analyzers in Cognitive Search
+## Analyzers in AI Search
 
-When Cognitive Search indexes your content, it retrieves text. To build a useful index, with terms that help users locate documents, that text needs processing. For example:
+When AI Search indexes your content, it retrieves text. To build a useful index, with terms that help users locate documents, that text needs processing. For example:
 
 - The text should be broken into words, often by using whitespace and punctuation characters as delimiters.
 - Stopwords, such as "the" and "it", should be removed because users don't search for them.
 - Words should be reduced to their root form. For example, past tense words, such as "ran", should be replaced with present tense words, such as "run".
 
-In Cognitive Search, this kind of processing is performed by analyzers. If you don't specify an analyzer for a field, the default Lucene analyzer is used. The default Lucene analyzer is a good choice for most fields because it can process many languages and return useful tokens for your index. 
+In AI Search, this kind of processing is performed by analyzers. If you don't specify an analyzer for a field, the default Lucene analyzer is used. The default Lucene analyzer is a good choice for most fields because it can process many languages and return useful tokens for your index. 
 
-Alternatively, you can specify one of the analyzers that are built into Cognitive Search. Built-in analyzers are of two types:
+Alternatively, you can specify one of the analyzers that are built into AI Search. Built-in analyzers are of two types:
 
 - **Language analyzers.** If you need advanced capabilities for specific languages, such as lemmatization, word decompounding, and entity recognition, use a built-in language analyzer. Microsoft provides 50 analyzers for different languages.
 - **Specialized analyzers.** These analyzers are language-agnostic and used for specialized fields such as zip codes or product IDs. You can, for example, use the **PatternAnalyzer** and specify a regular expression to match token separators.
@@ -55,7 +56,7 @@ There are 13 different tokenizers to choose from. These tokenizers include:
 - **whitespace.** This tokenizer divides text wherever there's white space.
 
 > [!NOTE]
-> For a full list of tokenizers, see **Add custom analyzers to string fields in an Azure Cognitive Search index** in the **Learn more** section below.
+> For a full list of tokenizers, see **Add custom analyzers to string fields in an Azure AI Search index** in the **Learn more** section below.
 
 ### Token filters
 
@@ -69,7 +70,7 @@ Once the tokenizer has divided the incoming text into tokens, you might want to 
 - **trim.** This filter removes any leading and trailing white space from tokens.
 
 > [!NOTE]
-> For a full list of token filters, see **Add custom analyzers to string fields in an Azure Cognitive Search index** in the **Learn more** section below.
+> For a full list of token filters, see **Add custom analyzers to string fields in an Azure AI Search index** in the **Learn more** section below.
 
 ## Create a custom analyzer
 
@@ -127,10 +128,10 @@ POST https://<search service name>.search.windows.net/indexes/<index name>/analy
 
 In this request:
 
-- Replace `<search service name>` with the name of your Cognitive Search resource.
+- Replace `<search service name>` with the name of your AI Search resource.
 - Replace `<index name>` with the name of the index that includes the custom analyzer.
 - Replace `<api-version>` with the version number of the REST API.
-- Replace `<api-key>` with the access key for your Cognitive Search resource. You can obtain this key from the Azure portal.
+- Replace `<api-key>` with the access key for your AI Search resource. You can obtain this key from the Azure portal.
 
 Your request must also include a JSON body like this:
 

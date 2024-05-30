@@ -70,11 +70,11 @@ For brevity, here you commit the changes to your branch, push your branch to Git
 
 ## Revert the change
 
-Let's say that you deployed a change that you want to revert. At this point, you could roll back the change by swapping the *production* slot and *swap* slot again. For example, you could swap the slots manually through the Azure portal. Or instead of rolling back the changes, you could roll forward by pushing another change through the pipeline.
+Let's say that you deployed a change that you want to revert. At this point, you could roll back the change by swapping the *production* slot and *swap* slot again. For example, you could swap the slots manually through the Azure portal. Or, instead of rolling back the changes, you could roll forward by pushing another change through the pipeline.
 
 That's what you'll do here. You'll revert your latest code changes and push another change through the pipeline. To do so, you use the `git revert` command. 
 
-In Git, you seldom remove commits from a file's history. Unlike the "undo" operation in a text editor, the `git revert` command creates a new commit that's essentially the opposite of the specified set of commits. To see the commits, you also run the `git log` command to trace your commit history during the revert process.
+In Git, you seldom remove commits from a file's history. Unlike the "undo" operation in a text editor, the `git revert` command creates a new commit that's essentially the opposite of the specified set of commits. To see the commits, you first run the `git log` command to trace your commit history during the revert process.
 
 1. In your terminal, run the following `git log` command to view your commit history.
 
@@ -82,7 +82,7 @@ In Git, you seldom remove commits from a file's history. Unlike the "undo" opera
     git --no-pager log --oneline
     ```
 
-    Your output resembles the following code example. In your output, you see additional commits and different commit IDs.
+    Your output resembles the following code example. In your output, you'll see additional commits and different commit IDs.
 
     ```output
     d6130b0 (HEAD -> blue-green, origin/blue-green) Change text and colors on the home page

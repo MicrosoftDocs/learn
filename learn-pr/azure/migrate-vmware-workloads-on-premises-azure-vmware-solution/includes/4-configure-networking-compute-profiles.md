@@ -1,17 +1,17 @@
-After VMware HCX (HCX) Connector is installed on-premises, link it to HCX Cloud in Azure VMware Solution. This unit and the next one go over the steps involved in this task.
+After VMware HCX Connector is installed on-premises, link it to VMware HCX Cloud in Azure VMware Solution. This unit and the next one go over the steps involved in this task.
 
 ## What is a site pair?  
 
-The first step involves creating a *site pair*. A site pair provides network connectivity needed for management, authentication, and orchestration of VMware's HCX migration services across a source and destination VMware environment. In your scenario, the source is the on-premises VMware environment and the destination is Azure VMware Solution. The following table provides additional details:
+The first step involves creating a *site pair*. A site pair provides network connectivity needed for management, authentication, and orchestration of VMware's HCX migration services across a source and destination VMware vSphere environment. In your scenario, the source is the on-premises VMware vSphere environment and the destination is Azure VMware Solution. The following table provides additional details:
 
 | Component| Notes |
 | :------- | :----- |
 | HCX Connector (source) | - Deployed in the on-premises vSphere environment after Azure VMware Solution deploys. <br>- Creates a unidirectional site pairing to Azure VMware Solution. <br>- Starts migrations to Azure VMware Solution.
-| HCX Cloud (destination) | - Provisioned with Azure VMware Solution when the private cloud deploys in Azure. <br>- Generally the destination for HCX site pairing. <br>- HCX Cloud site is always a software-defined datacenter. <br>- Supports network extension at layer 2 in the networking stack, which is optional.
+| HCX Cloud (destination) | - Provisioned with Azure VMware Solution when the private cloud deploys in Azure. <br>- Generally the destination for VMware HCX site pairing. <br>- VMware HCX Cloud site is always a software-defined datacenter. <br>- Supports network extension at layer 2 in the networking stack, which is optional.
 
 ## Add a site pair
 
-1. Sign in to the on-premises vCenter.
+1. Sign in to the on-premises vCenter Server.
 
 1. Under **Menu**, select **HCX**.
 
@@ -31,17 +31,17 @@ The first step involves creating a *site pair*. A site pair provides network con
 
     :::image type="content" source="../media/4-connect-to-hcx-cloud-manager.png" alt-text="Screenshot of how to connect to the remote HCX URL from the on-premises HCX Connector.":::
 
-1. For the connection to work, HCX Connector needs to route to the HCX Cloud Manager IP over port 443. Use Azure ExpressRoute, which you deployed on-premises.
+1. For the connection to work, VMware HCX Connector needs to route to the VMware HCX Cloud Manager IP over port 443. Use Azure ExpressRoute, which you deployed on-premises.
 
-1. You get a screen showing that HCX Cloud Manager in Azure VMware Solution and the on-premises VMware HCX Connector are connected, or paired.
+1. You get a screen showing that VMware HCX Cloud Manager in Azure VMware Solution and the on-premises VMware HCX Connector are connected, or paired.
 
     :::image type="content" source="../media/4-site-pairing-complete.png" alt-text="Screenshot when site pairing is complete in the on-premises VMware environment.":::
 
 ## Create network profiles
 
-VMware HCX Connector on-premises deploys a set of automated virtual appliances that require multiple IP segments. You need to first configure network profiles. You'll create these network profiles for each network intended for use with HCX. When you create network profiles, you'll use the IP segments identified during the HCX deployment planning phase.
+VMware HCX Connector on-premises deploys a set of automated virtual appliances that require multiple IP segments. You need to first configure network profiles. You'll create these network profiles for each network intended for use with VMware HCX. When you create network profiles, you'll use the IP segments identified during the VMware HCX deployment planning phase.
 
-1. Sign in to the on-premises HCX Connector.
+1. Sign in to the on-premises VMware HCX Connector.
 
 1. Create four network profiles:
 
@@ -60,7 +60,7 @@ VMware HCX Connector on-premises deploys a set of automated virtual appliances t
 
 ## Create a compute profile
 
-After the network profiles are created, you'll need to create a compute profile. The compute profile contains the compute, storage, and network settings that HCX uses to configure the *service mesh*. The service mesh is what allows VM migrations from on-premises into Azure VMware Solution.
+After the network profiles are created, you'll need to create a compute profile. The compute profile contains the compute, storage, and network settings that VMware HCX uses to configure the *service mesh*. The service mesh is what allows VM migrations from on-premises into Azure VMware Solution.
 
 1. Under **Infrastructure**, select **Interconnect** > **Compute Profiles** > **Create Compute Profile**.
 
@@ -70,9 +70,9 @@ After the network profiles are created, you'll need to create a compute profile.
 
     :::image type="content" source="../media/4-name-compute-profile.png" alt-text="Screenshot that shows the entry of a compute profile name and the Continue button in HCX Connector on-premises.":::
 
-1. On the next screen, you have services set for activation. Recall that HCX Advanced deploys with Azure VMware Solution. If you need HCX Enterprise, you must open a ticket with support.
+1. On the next screen, you have services set for activation. Recall that VMware HCX Enterprise deploys with Azure VMware Solution. If you need HCX Enterprise, you must open a ticket with support.
 
-1. Leave all default services checked that can be enabled with the HCX Advanced key and select **Continue**.
+1. Leave all default services checked that can be enabled with the HCX Enterprise key and select **Continue**.
 
     :::image type="content" source="../media/4-select-services-activated.png" alt-text="Screenshot of the services selected for activation with HCX Connector on-premises.":::
 
@@ -114,4 +114,4 @@ After the network profiles are created, you'll need to create a compute profile.
 
 :::image type="content" source="../media/4-finished-compute-profile.png" alt-text="Screenshot showing the compute profile completely configured in the on-premises HCX Connector.":::
 
-In the next unit, we'll cover how to set up a service mesh to complete the on-premises configuration of HCX Connector.
+In the next unit, we'll cover how to set up a service mesh to complete the on-premises configuration of VMware HCX Connector.

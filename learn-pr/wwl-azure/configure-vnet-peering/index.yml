@@ -3,20 +3,28 @@ uid: learn.wwl.configure-vnet-peering
 metadata:
   title: Configure Azure Virtual Network peering
   description: "Learn to configure an Azure Virtual Network peering connection and address transit and connectivity concerns."
-  ms.date: 03/27/2023
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: virtual-network
+  ai-usage: ai-assisted
 title: Configure Azure Virtual Network peering
 summary: Learn to configure an Azure Virtual Network peering connection and address transit and connectivity concerns.
 abstract: |
   In this module, you learn how to:
-  - Identify usage cases and product features of Azure Virtual Network peering.
-  - Configure your network to implement Azure VPN Gateway for transit connectivity.
-  - Extend peering by using a hub and spoke network with user-defined routes and service chaining.
+
+  -   Identify usage cases and product features of Azure Virtual Network peering.
+
+  -   Configure your network to implement Azure VPN Gateway for transit connectivity.
+
+  -   Extend peering by using a hub and spoke network with user-defined routes and service chaining.
 prerequisites: |
-  None
+  -   Basic understanding of cloud networking including virtual networks and virtual machines.
+
+  -   Familiarity with the command line connectivity testing tools.
 iconUrl: /training/achievements/vnet-configure-peering.svg
 levels:
 - intermediate

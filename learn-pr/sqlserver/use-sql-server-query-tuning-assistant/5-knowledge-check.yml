@@ -1,180 +1,95 @@
 ### YamlMime:ModuleUnit
 uid: learn-sqlserver.use-sql-server-query-tuning-assistant.5-knowledge-check
-title: Knowledge check - Use the SQL Server Query Tuning Assistant
+title: Knowledge check - Use the SQL Server Query Tuning Assistant (QTA)
 metadata:
-  title: Knowledge check - Use the SQL Server Query Tuning Assistant
-  description: Knowledge check - Use the SQL Server Query Tuning Assistant
-  ms.date: 01/31/2019
+  title: Knowledge check - Use the SQL Server Query Tuning Assistant (QTA)
+  description: Knowledge check - Use the SQL Server Query Tuning Assistant (QTA).
+  ms.date: 01/19/2024
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.topic: unit
 durationInMinutes: 10
 quiz:
   title: Check your knowledge
   questions:
-  - content: "On which version of SQL Server was Query Store first implemented?"
+  - content: "Which versions of SQL Server support the Query Store?"
     choices:
-    - content: "SQL Server 2008 R2"
+    - content: "Any version after SQL Server 2005."
       isCorrect: false
-      explanation: "That's incorrect. The Query Store was first implemented on SQL Server 2016."
-    - content: "SQL Server 2012"
-      isCorrect: false
-      explanation: "That's incorrect. The Query Store was first implemented on SQL Server 2016."
-    - content: "SQL Server 2014"
-      isCorrect: false
-      explanation: "That's incorrect. The Query Store was first implemented on SQL Server 2016."
-    - content: "SQL Server 2016"
+      explanation: "The Query Store wasn't introduced until SQL Server 2016, so it isn't available in earlier server versions."
+    - content: "SQL Server 2016 and later."
       isCorrect: true
-      explanation: "That's correct. The Query Store was first implemented on SQL Server 2016."
-    - content: "SQL Server 2017"
+      explanation: "Any database running on SQL Server 2016 or later can use the Query Store, regardless of the database compatibility level."
+    - content: "Only SQL Server 2022."
       isCorrect: false
-      explanation: "That's incorrect. The Query Store was first implemented on SQL Server 2016."
-  - content: "Which of the following tools predict how many rows a query is likely to return?"
+      explanation: "The Query Store was introduced in SQL Server 2016, so any SQL Server 2016 or later instance can use the Query Store."
+  - content: "Which feature predicts how many rows a query is likely to return?"
     choices:
-    - content: "Cardinality Estimator"
+    - content: "The cardinality estimator."
       isCorrect: true
-      explanation: "That's correct. Cardinality Estimator predicts how many rows a query is likely to return."
-    - content: "Query Predictor"
+      explanation: "The cardinality estimator predicts how many rows a query is likely to return, so a cost-based query optimizer can select the best query plan."
+    - content: "The Query Tuning Assistant (QTA)."
       isCorrect: false
-      explanation: "That's incorrect. Cardinality Estimator predicts how many rows a query is likely to return."
-    - content: "Result Definer"
+      explanation: "The QTA experiments with different query plans, but doesn't predict how many rows a query is likely to return."
+    - content: "The Query Store."
       isCorrect: false
-      explanation: "That's incorrect. Cardinality Estimator predicts how many rows a query is likely to return."
-    - content: "Output Reckoner"
-      isCorrect: false
-      explanation: "That's incorrect. Cardinality Estimator predicts how many rows a query is likely to return."
-    - content: "Row Outputter"
-      isCorrect: false
-      explanation: "That's incorrect. Cardinality Estimator predicts how many rows a query is likely to return."
-  - content: "Which of the following statements about Automatic Plan Correction are true?"
+      explanation: "The Query Store collects query statistics, but doesn't predict how many rows a query is likely to return."
+  - content: "Which of the following statements about automatic plan correction is true?"
     choices:
-    - content: "Removes the need for manual processing of queries"
-      isCorrect: true
-      explanation: "That's correct. Automatic Plan Correction removes the need for manual processing of queries, instructs SQL Server to use the last good plan if regression is found, and uses the version of the Cardinality Estimator mapped to the current compatibility level."
-    - content: "Set at Server level"
+    - content: "It's set at the server level."
       isCorrect: false
-      explanation: "That's incorrect. Automatic Plan Correction removes the need for manual processing of queries, instructs SQL Server to use the last good plan if regression is found, and uses the version of the Cardinality Estimator mapped to the current compatibility level."
-    - content: "Instructs SQL Server to use the last good plan if regression is found"
-      isCorrect: false 
-      explanation: "That's incorrect. Automatic Plan Correction removes the need for manual processing of queries, instructs SQL Server to use the last good plan if regression is found, and uses the version of the Cardinality Estimator mapped to the current compatibility level."
-    - content: "Uses the current plan when regression is found"
+      explanation: "Automatic plan correction is set at the database level."
+    - content: "It can change the execution plan of an individual query to use an earlier cardinality estimator."
+      isCorrect: true 
+      explanation: "Automatic plan correction instructs SQL Server to use the last good plan if regression is found, and can mean rolling back to an earlier cardinality estimator."
+    - content: "It always uses the cardinality estimator that's mapped to the target compatibility level."
       isCorrect: false
-      explanation: "That's incorrect. Automatic Plan Correction removes the need for manual processing of queries, instructs SQL Server to use the last good plan if regression is found, and uses the version of the Cardinality Estimator mapped to the current compatibility level."
-    - content: "Uses the version of the Cardinality Estimator mapped to the current compatibility level"
-      isCorrect: false 
-      explanation: "That's incorrect. Automatic Plan Correction removes the need for manual processing of queries, instructs SQL Server to use the last good plan if regression is found, and uses the version of the Cardinality Estimator mapped to the current compatibility level."
-  - content: "When might you use Query Store to carry out A/B testing?"
+      explanation: "Unlike the QTA, automatic plan correction can mean rolling back to an earlier cardinality estimator."
+  - content: "What does the Query Tuning Assistant (QTA) do?"
     choices:
-    - content: "When you need to compare the before and after effects of applying a single change"
+    - content: "Collects data to monitor queries or measure the effects of a single change."
+      isCorrect: false
+      explanation: "The Query Store collects data, which the QTA can then use to identify and help fix regressing queries."
+    - content: "Predicts how many rows a query is likely to return."
+      isCorrect: false
+      explanation: "The cardinality estimator, not the QTA, predicts how many rows a query is likely to return based on compatibility level."
+    - content: "Finds queries that are beginning to regress and experiments to find solutions."
       isCorrect: true
-      explanation: "That's correct. You might use Query Store to carry out A/B testing when updating an application, when you need to compare the before and after effects of applying a single change, and when adding new hardware."
-    - content: "When migrating from SQL Server 2008 to SQL Server 2019"
-      isCorrect: false
-      explanation: "That's incorrect. You might use Query Store to carry out A/B testing when updating an application, when you need to compare the before and after effects of applying a single change, and when adding new hardware."
-    - content: "When changing compatibility levels"
-      isCorrect: false
-      explanation: "That's incorrect. You might use Query Store to carry out A/B testing when updating an application, when you need to compare the before and after effects of applying a single change, and when adding new hardware."
-  - content: "How long would you typically let Query Store run to gather workload information on a database? "
+      explanation: "The QTA uses Query Store data to find underperforming queries and automatically seek solutions to speed them up."
+  - content: "How long should the Query Store run to gather sufficient workload information on a database?"
     choices:
-    - content: "A minute"
-      isCorrect: false
-      explanation: "That's incorrect. You would typically let Query Store run for a day to gather workload information on a database."
-    - content: "An hour"
-      isCorrect: false
-      explanation: "That's incorrect. You would typically let Query Store run for a day to gather workload information on a database."
-    - content: "A day"
+    - content: "Long enough for the Query Store to capture a typical cycle of business activity."
       isCorrect: true
-      explanation: "That's correct. You would typically let Query Store run for a day to gather workload information on a database."
-    - content: "A week"
+      explanation: "Let the Query Store capture a typical cycle of business activity, including business hours, nightly processing, maintenance windows, and other activities. You should seek to understand the user usage patterns and capture an entire cycle of activity."
+    - content: "One week."
       isCorrect: false
-      explanation: "That's incorrect. You would typically let Query Store run for a day to gather workload information on a database."
-    - content: "A month"
+      explanation: "The Query Store should capture a typical business cycle of actual user activity before making significant changes. A typical business cycle of reporting, user interaction, and bulk operations may be daily, biweekly, monthly, or even quarterly."
+    - content: "It depends on the Query Store version."
       isCorrect: false
-      explanation: "That's incorrect. You would typically let Query Store run for a day to gather workload information on a database."
-    - content: "Depends on the Query Store version"
-      isCorrect: false
-      explanation: "That's incorrect. You would typically let Query Store run for a day to gather workload information on a database."
-  - content: |
-      For the Query Tuning Assistant to function correctly, you must apply the following steps in the correct order. Select the answer that places those steps in that correct order.
-      A. Leave the compatibility level unchanged (at the previous SQL Server version).
-      B. Migrate the database to SQL Server 2019.
-      C. Make the database live so Query Store can gather baseline metrics on the queries.
-      D. Enable Query Store on the database.
-      E. Use QTA to find regressing queries.
-      F. Continue to use Query Store to gather post-upgrade query performance.
-      G. Upgrade the compatibility level.
+      explanation: "The Query Store should capture a typical business cycle of actual user activity before making significant changes. A typical business cycle of reporting, user interaction, and bulk operations may be daily, biweekly, monthly, or even quarterly."
+  - content: "What's the correct order of steps for using the QTA to evaluate query regressions caused by upgrading a database from SQL Server 2012 to SQL Server 2022?"
     choices:
-    - content: "DABCEGF"
+    - content: "Migrate the database to SQL Server 2022 and upgrade the compatibility level. Enable the Query Store and collect statistics on the database after the upgrade, and use the QTA to investigate regressing queries."
       isCorrect: false
-      explanation: "That's incorrect. For the Query Tuning Assistant to function correctly, you must apply the steps in the order BADCGFE, based on the list in the question."
-    - content: "ACFGDEB"
+      explanation: "For the QTA to function correctly, you must collect baseline Query Store statistics before you upgrade the compatibility level, and compare them to results after the upgrade."
+    - content: "Enable the Query Store and collect baseline query statistics. Migrate the database to SQL Server 2022 and upgrade the compatibility level. Collect Query Store statistics after the upgrade, and use the QTA to investigate regressing queries."
       isCorrect: false
-      explanation: "That's incorrect. For the Query Tuning Assistant to function correctly, you must apply the steps in the order BADCGFE, based on the list in the question."
-    - content: "BADCGFE"
+      explanation: "The Query Store wasn't introduced until SQL Server 2016, so you must migrate the database to at least a SQL Server 2016 instance before you can enable the Query Store and collect baseline statistics."
+    - content: "Migrate the database to SQL Server 2022. Enable the Query Store on the database and collect baseline statistics. Upgrade the compatibility level, continue to collect Query Store statistics, and use the QTA to investigate regressing queries."
       isCorrect: true
-      explanation: "That's correct. For the Query Tuning Assistant to function correctly, you must apply the steps in the order BADCGFE, based on the list in the question."
-    - content: "ABGFEDC"
-      isCorrect: false
-      explanation: "That's incorrect. For the Query Tuning Assistant to function correctly, you must apply the steps in the order BADCGFE, based on the list in the question."
-    - content: "CFECDBA"
-      isCorrect: false
-      explanation: "That's incorrect. For the Query Tuning Assistant to function correctly, you must apply the steps in the order BADCGFE, based on the list in the question."
-    - content: "BDCAFGE"
-      isCorrect: false
-      explanation: "That's incorrect. For the Query Tuning Assistant to function correctly, you must apply the steps in the order BADCGFE, based on the list in the question."
-  - content: "Which of the following tools enables you to automate the process of testing the workload of your current database on a target server? "
-    choices:
-    - content: "Database Evaluation Application"
-      isCorrect: false
-      explanation: "That's incorrect. Database Experimentation Assistant enables you to automate the process of testing the workload of your current database on a target server.? Select one answer."
-    - content: "Database Environment Analyzer"
-      isCorrect: false
-      explanation: "That's incorrect. Database Experimentation Assistant enables you to automate the process of testing the workload of your current database on a target server? Select one answer."
-    - content: " Database Engine Attendant"
-      isCorrect: false
-      explanation: "That's incorrect. Database Experimentation Assistant enables you to automate the process of testing the workload of your current database on a target server? Select one answer."
-    - content: "Database Export Agent"
-      isCorrect: false
-      explanation: "That's incorrect. Database Experimentation Assistant enables you to automate the process of testing the workload of your current database on a target server? Select one answer."
-    - content: "Database Experimentation Assistant"
-      isCorrect: true
-      explanation: "That's correct. Database Experimentation Assistant enables you to automate the process of testing the workload of your current database on a target server? Select one answer."
-  - content: "Which of the following are valid settings for Query Store in SQL Server 2019?"
+      explanation: "For the QTA to function correctly, you should collect Query Store statistics both before and after upgrading the compatibility level. Then use the QTA to compare the two sets of statistics and investigate regressing queries."
+  - content: "Which of the following choices isn't a valid setting for Query Store in SQL Server 2022?"
     choices:
     - content: "Off"
-      isCorrect: true
-      explanation: "That's correct. Off, Read only, and Read write are valid settings for Query Store in SQL Server 2019."
-    - content: "Passive"
       isCorrect: false
-      explanation: "That's incorrect. Off, Read only, and Read write are valid settings for Query Store in SQL Server 2019."
+      explanation: "Off, Read only, and Read write are valid settings for Query Store in SQL Server 2022."
     - content: "Active"
-      isCorrect: false
-      explanation: "That's incorrect. Off, Read only, and Read write are valid settings for Query Store in SQL Server 2019."
+      isCorrect: true
+      explanation: "Off, Read only, and Read write are the only valid settings for Query Store in SQL Server 2022."
     - content: "Read only"
       isCorrect: false 
-      explanation: "That's incorrect. Off, Read only, and Read write are valid settings for Query Store in SQL Server 2019."
+      explanation: "Off, Read only, and Read write are valid settings for Query Store in SQL Server 2022."
     - content: "Read write"
       isCorrect: false 
-      explanation: "That's incorrect. Off, Read only, and Read write are valid settings for Query Store in SQL Server 2019."
-  - content: "On which version of SQL Server was Automatic query tuning first implemented?"
-    choices:
-    - content: "SQL Server 2008 R2"
-      isCorrect: false
-      explanation: "That's incorrect. It was a different version."
-    - content: "SQL Server 2012"
-      isCorrect: false
-      explanation: "That's incorrect. It was a different version."
-    - content: "SQL Server 2014"
-      isCorrect: false
-      explanation: "That's incorrect. It was a different version."
-    - content: "SQL Server 2016"
-      isCorrect: false
-      explanation: "That's incorrect. It was a different version."
-    - content: "SQL Server 2017"
-      isCorrect: true
-      explanation: "That's correct. Automatic query tuning was first implemented on SQL Server 2017."
-    - content: "SQL Server 2019"
-      isCorrect: false
-      explanation: "That's incorrect. It was a different version."
+      explanation: "Off, Read only, and Read write are valid settings for Query Store in SQL Server 2022."

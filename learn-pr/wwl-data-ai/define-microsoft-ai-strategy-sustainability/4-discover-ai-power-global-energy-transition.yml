@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-sustainability.discover-ai-power-global-energy-transition
+title: Discover how Microsoft AI powers the global energy transition – An EDP success story
+metadata:
+  title: Discover how Microsoft AI powers the global energy transition – An EDP success story
+  description: "Discover how Microsoft AI powers the global energy transition – An EDP success story"
+  ms.date: 05/22/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-discover-ai-power-global-energy-transition.md)]

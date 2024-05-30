@@ -3,11 +3,10 @@ uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.10-add-stat
 metadata:
   title: Exercise - Add PER stats to the web app
   description: Add PER stats to the web app
-  ms.date: 03/10/2021
+  ms.date: 10/12/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Exercise - Add PER stats to the web app
 durationInMinutes: 5

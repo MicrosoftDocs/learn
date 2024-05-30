@@ -5,10 +5,9 @@ metadata:
   title: Generate text with recurrent networks
   description: In this unit, we learn how to use recurrent networks to generate text, by using the output at each network layer.
   author: shwars
-  ms.author: dmitryso
-  ms.date: 04/14/2020
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.author: chnoring
+  ms.date: 06/04/2020
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 8
 sandbox: true

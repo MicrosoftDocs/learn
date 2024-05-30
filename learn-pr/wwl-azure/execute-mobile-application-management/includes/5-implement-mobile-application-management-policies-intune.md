@@ -1,4 +1,5 @@
 
+
 App protection policies can be applied to apps running on devices that may or may not be managed by Intune. In many organizations, it’s common to allow end users to use both Intune MDM managed devices, such as corporate owned devices, and un-managed devices protected with only Intune app protection policies, such as bring your own devices (BYOD).
 
 Because Intune app protection policies are targeted to a user’s identity, the protection settings for a user typically apply to both enrolled (MDM managed) and non-enrolled devices (no MDM). Therefore, you can target an Intune app protection policy to either Intune enrolled or un-enrolled iOS and Android devices. You can create one protection policy for un-managed devices in which strict data loss prevention (DLP) controls are in place, and a separate protection policy for MDM managed devices, where the DLP controls may be a little more relaxed.
@@ -7,7 +8,7 @@ Because Intune app protection policies are targeted to a user’s identity, the 
 
 Use the following steps to create an app protection policy:
 
-1.  In the Endpoint Manager admin center, in the navigation pane, select **Apps**.
+1.  In the Microsoft Intune admin center, in the navigation pane, select **Apps**.
 2.  In the **Policy** section, select **App protection policies**.
 3.  Select **+ Create Policy** and select a platform.
 

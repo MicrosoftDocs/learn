@@ -4,11 +4,10 @@ title: Explore basic concepts in Django
 metadata:
   title: Explore basic concepts in Django
   description: Explore basic concepts in Django.
-  ms.date: 02/25/2021
+  ms.date: 12/30/2022
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 2
 content: |

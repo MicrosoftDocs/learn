@@ -4,11 +4,10 @@ title: Support multiple ways of task completion
 metadata:
   title: Support multiple ways of task completion
   description: This content is part of the accessibility best practices for games and platforms module.
-  ms.date: 11/23/2021
+  ms.date: 04/30/2023
   author: kaitlynjones
   ms.author: kaitlynjones
-  ms.topic: interactive-tutorial
-  ms.prod: learning-gaming-accessibility
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/03-task-completion.md)]

@@ -2,12 +2,13 @@
 uid: learn.languages.csharp-basic-formatting
 metadata:
   title: Perform basic string formatting in C#
-  description: "Perform basic string formatting in C#"
-  ms.date: 04/13/2023
+  description: "Combine literal and variable text data that contain special characters, formatting, and Unicode into meaningful messages for the end user."
+  ms.date: 02/20/2024
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
+  ms.devlang: csharp
 title: Perform basic string formatting in C#
 summary: Combine literal and variable text data that contain special characters, formatting, and Unicode into meaningful messages for the end user.
 abstract: |
@@ -24,10 +25,11 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
+- student
 products:
 - dotnet
-subjects:
-- development-tools
 units:
 - learn.languages.csharp-basic-formatting.introduction
 - learn.languages.csharp-basic-formatting.exercise-character-escape-sequences

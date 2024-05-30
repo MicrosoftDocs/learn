@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-generative-ai-copilot-bing.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/01/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What conversation style in Copilot in Bing is best for more imaginative output?"
+    choices:
+    - content: "More Precise."
+      isCorrect: false
+      explanation: "That's incorrect.  This option is best for a concise and straightforward chat."
+    - content: "More Balanced."
+      isCorrect: false
+      explanation: "That's incorrect. This option is ideal for friendly and informative chats."
+    - content: "More Creative."
+      isCorrect: true
+      explanation: "That's correct. Selecting the more creative option at the beginning of your chat conversation leads to more inventive responses."
+  - content: "What is the main benefit of using the multimodal capabilities in Copilot in Bing?"
+    choices:
+    - content: "It allows the copilot to understand images and videos shared in the chat."
+      isCorrect: true
+      explanation: "That's correct. Multimodal capabilities enable the copilot to interpret and answer questions about images and videos, as well as provide visual responses."
+    - content: "It allows the copilot to search the web for web related content based on the chat history."
+      isCorrect: false
+      explanation: "That's  incorrect. This speaks more to the features of Copilot in Bing."
+    - content: "It allows the copilot to perform actions and tasks within the chat without leaving the browser."
+      isCorrect: false
+      explanation: "That's incorrect. This speaks more to the features or benefits of Copilot in Bing."
+  - content: "What is the main difference between few-shot prompting and zero-shot prompting in generative AI?"
+    choices:
+    - content: "Few-shot prompting sends many paragraphs where a zero-shot prompt is just a sentence."
+      isCorrect: false
+      explanation: "That's incorrect. A few-shot prompt has an example in the prompt to guide the desired output, where a zero-shot prompt does not."
+    - content: "Few-shot prompting uses examples of the desired output, while zero-shot prompting uses none."
+      isCorrect: true
+      explanation: "That's  correct. A few-shot prompt provides an example."
+    - content: "Few shot prompting provides better results."
+      isCorrect: false
+      explanation: "That's incorrect. Both zero-shot and few-shot prompting can produce good results. Your choice depends on the model, the task, and the prompt."

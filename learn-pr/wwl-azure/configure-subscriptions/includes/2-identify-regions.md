@@ -32,7 +32,7 @@ You've reviewed the important considerations about regions and regional pairs. N
 
 - **Consider service support by region**. Research region and service availability. Some services or Azure Virtual Machines features are available only in certain regions, such as specific Virtual Machines sizes or storage types.
 
-- **Consider services that don't require regions**. Identify services that don't need region support. Some global Azure services that don't require you to select a region. These services include Azure Active Directory, Microsoft Azure Traffic Manager, and Azure DNS.
+- **Consider services that don't require regions**. Identify services that don't need region support. Some global Azure services that don't require you to select a region. These services include Microsoft Entra ID, Microsoft Azure Traffic Manager, and Azure DNS.
 
 - **Consider exceptions to region pairing**. Check the Azure website for current region availability and exceptions. If you plan to support the Brazil South region, note this region is paired with a region outside its geography. The Singapore region also has an exception to standard regional pairing.
 
@@ -40,7 +40,7 @@ You've reviewed the important considerations about regions and regional pairs. N
 
 ## Find regions for your business geography
 
-Visit the Azure global infrastructure website to find supported regions for your business geography. You can search by country name or by Microsoft product. A list of supported region pairs and exceptions is also available.
+Visit the Azure global infrastructure website to find supported regions for your business geography. You can search by country/region name or by Microsoft product. A list of supported region pairs and exceptions is also available.
 
 :::image type="content" source="../media/azure-geographies.png" alt-text="Screenshot of the Azure global infrastructure and Azure geographies website." border="false":::
 

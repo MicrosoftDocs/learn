@@ -4,12 +4,11 @@ title: Exercise - Create a new ASP.NET Core app
 metadata:
   title: Exercise - Create a new ASP.NET Core app
   description: Create a new ASP.NET Core app
-  ms.date: 05/02/2020
+  ms.date: 09/27/2023
   author: mikejo5000
   ms.author: mikejo
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-a-new-aspnet-app.md)]

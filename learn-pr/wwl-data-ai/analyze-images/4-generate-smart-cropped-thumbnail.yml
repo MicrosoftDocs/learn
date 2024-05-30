@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-images.generate-smart-cropped-thumbnail
-title: Generate a smart-cropped thumbnail
+title: Generate a smart-cropped thumbnail and remove background
 metadata:
-  title: Generate a smart-cropped thumbnail
-  description: "Generate a smart-cropped thumbnail"
-  ms.date: 07/13/2022
+  title: Generate a smart-cropped thumbnail and remove background
+  description: "Generate a smart-cropped thumbnail and remove background of an image using Azure AI Vision."
+  ms.date: 02/05/2024
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/4-generate-smart-cropped-thumbnail.md)]

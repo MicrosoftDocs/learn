@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/03/2023
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -25,7 +24,7 @@ quiz:
       explanation: "Incorrect. This feature can be used in conjunction with the correct answer. Try again."
     - content: "Delivery Optimization"
       isCorrect: true
-      explanation: "Correct. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization can accomplish this because it is a self-organizing distributed cache that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based servers."
+      explanation: "Correct. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization can accomplish this because it's a self-organizing distributed cache that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based servers."
   - content: "Fabrikam experienced an application compatibility issue with its oldest legacy application. Unfortunately, all of its mitigation efforts have failed. What final mitigation method should Fabrikam implement so that it can continue to run this app?"
     choices:
     - content: "Run the app in compatibility mode"

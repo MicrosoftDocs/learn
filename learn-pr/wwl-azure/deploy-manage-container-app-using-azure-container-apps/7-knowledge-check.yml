@@ -1,0 +1,82 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-manage-container-app-using-azure-container-apps.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/29/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the principle of least privilege?"
+    choices:
+    - content: "Limiting access to only one resource in a system."
+      isCorrect: false
+      explanation: "Incorrect. This is too restrictive and does not provide enough access for users to complete their tasks."
+    - content: "Giving users access to all resources in a system."
+      isCorrect: false
+      explanation: "Incorrect. This violates the principle of least privilege by giving users more access than they need."
+    - content: "Limiting access to only the resources necessary to complete a user's task."
+      isCorrect: true
+      explanation: "Correct. The principle of least privilege ensures that users only have access to the resources they need to complete their tasks, reducing the risk of unauthorized access or accidental damage to other resources."
+  - content: "What is the purpose of configuring a continuous integration environment for Container Apps?"
+    choices:
+    - content: "To create a new container registry instance that contains one image."
+      isCorrect: false
+      explanation: "Incorrect. A container registry instance must already exist with at least one image."
+    - content: "To deploy a container app from an image in the Azure Container Registry to the Azure Container Apps platform manually."
+      isCorrect: false
+      explanation: "Incorrect. This process is automated through continuous integration."
+    - content: "To automate and validate the deployment of a container image from a container registry to a container app using a self-hosted agent pool."
+      isCorrect: true
+      explanation: "Correct. Continuous integration automates and validates the deployment of a container image from a container registry to a container app using a self-hosted agent pool."
+  - content: "What is the purpose of setting the revision management to multiple in Azure Container Apps?"
+    choices:
+    - content: "To allow several revisions to be active simultaneously."
+      isCorrect: true
+      explanation: "Correct. Setting the revision management to multiple allows several revisions to be active simultaneously, which is necessary for configuring traffic splitting."
+    - content: "To configure traffic splitting between two labeled revisions."
+      isCorrect: false
+      explanation: "Incorrect. Setting the revision management to multiple is not related to configuring traffic splitting."
+    - content: "To deploy a new revision of the container app."
+      isCorrect: false
+      explanation: "Incorrect. Setting the revision management to multiple allows several revisions to be active simultaneously."
+  - content: "As part of the setup process for the Azure Container Apps deployment, what tool should be installed to enable the creation and management of container images?"
+    choices:
+    - content: "Install Docker Desktop."
+      isCorrect: true
+      explanation: "Correct. Docker Desktop is a tool that enables the creation and management of container images."
+    - content: "Install Azure CLI with `container app` extension"
+      isCorrect: false
+      explanation: "Incorrect. Azure CLI with `container app` extension is used for managing Azure Container Apps, not for creating and managing container images."
+    - content: "Install Visual Studio Code."
+      isCorrect: false
+      explanation: "Incorrect. Visual Studio Code is used for developing and deploying applications, not for creating and managing container images."
+  - content: "What is the purpose of configuring a user-assigned managed identity in this guided project module?"
+    choices:
+    - content: "To enable the container registry to use the managed identity to pull artifacts."
+      isCorrect: true
+      explanation: "Correct. Configuring a user-assigned managed identity allows the container registry to use the managed identity to pull artifacts."
+    - content: "To configure a private endpoint connection for the container registry."
+      isCorrect: false
+      explanation: "Incorrect. Configuring a user-assigned managed identity is a separate task from configuring a private endpoint connection."
+    - content: "To create a new Azure subscription."
+      isCorrect: false
+      explanation: "Incorrect. Configuring a user-assigned managed identity does not involve creating a new Azure subscription."
+  - content: "What is the purpose of configuring `Pipeline 1` to use the self-hosted agent pool?"
+    choices:
+    - content: "To verify the configuration of the continuous integration environment for Container Apps."
+      isCorrect: false
+      explanation: "Incorrect. The purpose of configuring `Pipeline 1` to use the self-hosted agent pool is not related to verifying the configuration."
+    - content: "To deploy a container image from the Azure Container Registry to the Azure Container Apps platform."
+      isCorrect: false
+      explanation: "Incorrect. This is the purpose of configuring `Pipeline 1` with an Azure Container Apps deployment task."
+    - content: "To enable `Pipeline 1` to deploy a container image from the container registry to the container app using a self-hosted agent pool."
+      isCorrect: true
+      explanation: "Correct. Configuring `Pipeline 1` to use the self-hosted agent pool enables it to deploy a container image from the container registry to the container app."

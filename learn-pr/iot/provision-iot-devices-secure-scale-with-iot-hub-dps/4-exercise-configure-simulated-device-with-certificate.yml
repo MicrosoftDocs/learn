@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-group-enrollment-tasks.exercise-configure-simulated-device-with-certificate
+title: Exercise - Configure simulated device with X.509 certificate
+metadata:
+  title: Exercise - Configure simulated device with X.509 certificate
+  description: "Generate a device certificate using the root certificate, then configure a simulated device that connects by using the certificate."
+  ms.date: 10/11/2023
+  sandbox: true
+  interactive: bash
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: unit
+  ms.service: iot-dps
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-exercise-configure-simulated-device-with-certificate.md)]

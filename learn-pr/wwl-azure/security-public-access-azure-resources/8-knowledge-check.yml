@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-public-access-azure-resources.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of implementing Transport Layer Security (TLS) in Azure applications?"
+    choices:
+    - content: "To increase the storage capacity of Azure Blob Storage."
+      isCorrect: false
+      explanation: "TLS focuses on security measures, specifically on encrypting data in transit to enhance communications security, not on expanding storage capabilities."
+    - content: "To decrease the loading time of web applications."
+      isCorrect: false
+      explanation: "While performance is crucial, TLS primarily secures data transmission, not directly improving loading times."
+    - content: "To secure communications between clients and servers by encrypting data in transit."
+      isCorrect: true
+      explanation: "TLS provides encryption for data in transit, enhancing the security of communications between clients and servers, making it essential for protecting sensitive information."
+  - content: "How does Azure Firewall contribute to the security of Azure resources?"
+    choices:
+    - content: "By providing physical security controls for Azure data centers."
+      isCorrect: false
+      explanation: "Azure Firewall is a network security service that manages and logs network traffic, not a measure for physical security."
+    - content: "By managing and logging all inbound and outbound network traffic according to firewall policies."
+      isCorrect: true
+      explanation: "Azure Firewall centralizes the management of network traffic rules, providing enhanced logging and threat intelligence for inbound and outbound traffic."
+    - content: "By automatically upgrading software applications to the latest version."
+      isCorrect: false
+      explanation: "Software updates are important but fall outside Azure Firewall's scope, which focuses on network traffic management."
+  - content: "What is the primary function of Azure Application Gateway?"
+    choices:
+    - content: "To provide application-level routing and load balancing services."
+      isCorrect: true
+      explanation: "Azure Application Gateway offers advanced routing and load balancing, optimizing web traffic delivery and increasing application security."
+    - content: "To offer dedicated virtual machine hosting services."
+      isCorrect: false
+      explanation: "Application Gateway focuses on managing web traffic, not on providing hosting services."
+    - content: "To act as a distributed denial-of-service (DDoS) protection service."
+      isCorrect: false
+      explanation: "While DDoS protection is crucial, Application Gateway's main role is in routing and load balancing, not direct DDoS mitigation."
+  - content: "Which Azure service provides protection against Distributed Denial of Service (DDoS) attacks?"
+    choices:
+    - content: "Azure Application Gateway."
+      isCorrect: false
+      explanation: "Incorrect because Azure Application Gateway primarily offers application delivery control, not DDoS protection."
+    - content: "Azure DDoS Protection."
+      isCorrect: true
+      explanation: "Correct because Azure DDoS Protection offers enhanced DDoS mitigation features to protect Azure resources from DDoS attacks."
+    - content: "Azure Blob Storage."
+      isCorrect: false
+      explanation: "Incorrect because Azure Blob Storage is a service for storing large amounts of unstructured object data, such as text or binary data, and is not related to DDoS protection."
+  - content: "Why integrate a Web Application Firewall (WAF) with Azure services?"
+    choices:
+    - content: "To automate the deployment of new virtual machines."
+      isCorrect: false
+      explanation: "WAF focuses on application security, whereas VM deployment automation is handled by different Azure services."
+    - content: "To enhance the search engine optimization (SEO) of web applications."
+      isCorrect: false
+      explanation: "While SEO is important for web visibility, WAF's role is to improve security, not SEO."
+    - content: "To protect web applications from common web vulnerabilities and attacks."
+      isCorrect: true
+      explanation: "WAF is designed to safeguard applications against web-based attacks and exploits, such as SQL injection and cross-site scripting, enhancing application security."

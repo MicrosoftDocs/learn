@@ -4,11 +4,12 @@ title: Determine gateway transit and connectivity
 metadata:
   title: Determine gateway transit and connectivity
   description: "Determine gateway transit and connectivity"
-  ms.date: 03/27/2023
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/3-determine-gateway-transit-connectivity.md)]

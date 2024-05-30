@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-github-actions-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/07/2024
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of a workflow in GitHub Actions?"
+    choices:
+    - content: "A workflow is a packaged script that automates software development tasks."
+      isCorrect: false
+      explanation: "Incorrect. A workflow is made up of individual actions, which are the packaged scripts that automate tasks."
+    - content: "A workflow is used to store code and collaborate on pull requests and issues."
+      isCorrect: false
+      explanation: "Incorrect. While GitHub is used for storing code and collaborating, a workflow specifically refers to an automated process set up in a GitHub repository."
+    - content: "A workflow is an automated process that you set up in your GitHub repository to build, test, package, release, or deploy any project."
+      isCorrect: true
+      explanation: "Correct. In GitHub Actions, a workflow is an automated process for tasks like building, testing, packaging, releasing, or deploying projects."
+  - content: "What is the purpose of a service principal in Microsoft Entra tenant?"
+    choices:
+    - content: "It is used to track usage and billing information for the tenant."
+      isCorrect: false
+      explanation: "Incorrect. Service principals are not directly related to usage tracking or billing."
+    - content: "It defines the access policy and permissions for the user/application in the Microsoft Entra tenant."
+      isCorrect: true
+      explanation: "Correct. A service principal represents the access policy and permissions for an application in a tenant."
+    - content: "It provides a unique identifier for each user in the tenant."
+      isCorrect: false
+      explanation: "Incorrect. While a service principal does provide an identity, it is not specifically for users but for applications."

@@ -4,11 +4,11 @@ title: Exercise - Create an Azure Resource using scripts in Azure PowerShell
 metadata:
   title: Exercise - Create an Azure Resource using scripts in Azure PowerShell
   description: Exercise - Create an Azure Resource using scripts in Azure PowerShell
-  ms.date: 09/24/2018
+  ms.date: 09/05/2023
   author: mikefrobbins
   ms.author: mirobb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-azurepowershell, linux-related-content
 durationInMinutes: 15
 interactive: powershell
 azureSandbox: true

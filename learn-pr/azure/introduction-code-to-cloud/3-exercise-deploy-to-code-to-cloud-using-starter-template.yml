@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-code-to-cloud.exercise-deploy-to-code-to-cloud-using-starter-template
+title: Exercise - Deploy to Code to Cloud using a starter template
+metadata:
+  title: Exercise - Deploy to Code to Cloud using a starter template
+  description: Exercise - Use a starter template with Code-to-Cloud
+  ms.date: 09/04/2023
+  author: juliamuiruri4
+  ms.author: juliamuiruri
+  ms.topic: unit
+  ms.service: azure
+  ms.custom: team=nextgen
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-exercise-deploy-to-code-to-cloud-using-starter-template.md)]

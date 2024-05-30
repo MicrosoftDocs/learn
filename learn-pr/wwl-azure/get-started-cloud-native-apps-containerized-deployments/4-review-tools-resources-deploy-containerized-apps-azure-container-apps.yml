@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-cloud-native-apps-containerized-deployments.review-tools-resources-deploy-containerized-apps-azure-container-apps
+title: Review an Azure Container Apps solution architecture and resources
+metadata:
+  title: Review an Azure Container Apps solution architecture and resources
+  description: "Review an Azure Container Apps solution architecture and resources"
+  ms.date: 02/26/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-review-tools-resources-deploy-containerized-apps-azure-container-apps.md)]

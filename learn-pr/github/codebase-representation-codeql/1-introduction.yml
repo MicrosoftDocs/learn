@@ -4,12 +4,11 @@ title: Introduction
 metadata:
   unitType: Introduction 
   title: Introduction
-  description: Introduction to the CodeQL module 
-  ms.date: 02/10/2022
-  author: sterling463
-  ms.author: csterling
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Learn how to use CodeQL to identify security vulnerabilities in your codebase.
+  ms.date: 05/01/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

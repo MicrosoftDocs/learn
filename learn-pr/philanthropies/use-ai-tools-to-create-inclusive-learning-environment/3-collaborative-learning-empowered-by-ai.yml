@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.use-ai-tools-to-create-inclusive-learning-environment.collaborative-learning-empowered-by-ai
+title: Collaborative learning empowered by AI
+metadata:
+  title: Collaborative learning empowered by AI
+  description: This content is a part of the 'Use AI tools to create an inclusive learning environment' module.
+  ms.date: 03/11/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-collaborative-learning-empowered-by-ai.md)]

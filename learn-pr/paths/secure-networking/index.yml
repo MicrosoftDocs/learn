@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.wwl.secure-networking
+metadata:
+  title: 'AZ-500: Secure networking'
+  description: 'AZ-500: Secure networking'
+  ms.date: 03/12/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: learning-path
+title: 'AZ-500: Secure networking'
+prerequisites: |
+  It is beneficial to have a solid infrastructure background in networking and servers.
+summary: |
+  Master the intricacies of securing Azure networks, encompassing virtual networks, encryption, firewall setup, private access, and DDoS protection, with this comprehensive training.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure-container-instances
+- azure-container-registry
+- azure-ddos-protection
+- azure-disk-encryption
+- azure-expressroute
+- azure-firewall
+- azure-firewall-manager
+- azure-front-door
+- azure-kubernetes-service
+- azure-web-application-firewall
+- update-manager
+subjects:
+- information-protection-governance
+modules:
+- learn.wwl.security-virtual-networks
+- learn.wwl.security-private-access-azure-resources
+- learn.wwl.security-public-access-azure-resources
+trophy:
+  uid: learn.wwl.secure-networking.trophy

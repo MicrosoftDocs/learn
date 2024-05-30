@@ -1,25 +1,24 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-ad.2-overview
 metadata:
-  title: Azure Active Directory overview
-  description: Azure Active Directory overview
-  ms.date: 02/25/2020
+  title: Microsoft Entra overview
+  description: Microsoft Entra overview
+  ms.date: 12/18/2023
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Azure Active Directory overview
+  ms.topic: unit
+title: Microsoft Entra overview
 durationInMinutes: 10
 content: |
   [!include[](includes/2-overview.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: What is a tenant in Azure AD?
+  - content: What is a tenant in Microsoft Entra ID?
     choices:
     - content: A tenant represents an entire organization.
       isCorrect: true
-      explanation: You create a tenant for your organization so that your internal users can be managed by Azure AD.
+      explanation: You create a tenant for your organization so that Microsoft Entra ID can manage your internal users.
     - content: A tenant represents a user in an organization.
       isCorrect: false
       explanation: A tenant represents an organization.
@@ -33,7 +32,7 @@ quiz:
       explanation: An identity security score indicates how well your security aligns with Microsoft best practices.
     - content: It's a percentage between 1 and 100 that indicates how aligned your security is with Microsoft best practices.
       isCorrect: true
-      explanation: Use an identity security score to see how secure your Azure AD instance is. 
+      explanation: Use an identity security score to see how secure your Microsoft Entra instance is. 
     - content: It's a percentage between 1 and 100 that indicates how well your organization's tenants align with each other.
       isCorrect: false
       explanation: An identity security score indicates how aligned your security is with Microsoft best practices.

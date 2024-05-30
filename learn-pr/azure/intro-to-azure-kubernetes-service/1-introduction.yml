@@ -5,11 +5,10 @@ title: Introduction
 metadata:
   title: Introduction to Azure Kubernetes Service
   description: Introduction
-  ms.date: 6/25/2019
+  ms.date: 10/17/2023
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 1
 content: |

@@ -1,4 +1,3 @@
-
 Administrators sometimes need to troubleshoot virtual networks that they didn't help to create. They might not be fully aware of all the aspects of the infrastructure and configuration.
 
 Azure Network Watcher provides a network monitoring **topology** tool to help administrators visualize and understand infrastructure. The following image shows an example topology diagram for a virtual network in Network Watcher.
@@ -16,3 +15,4 @@ Review the following characteristics of the network topology capability in Azure
 - You can view subnets, virtual machines, network interfaces, public IP addresses, network security groups, route tables, and more.
 
 - To generate a topology, you need an Azure Network Watcher instance in the same region as the virtual network.
+

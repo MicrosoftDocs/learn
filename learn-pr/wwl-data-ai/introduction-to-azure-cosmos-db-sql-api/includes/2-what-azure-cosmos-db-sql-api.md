@@ -19,7 +19,7 @@ Generally, NoSQL databases don't enforce relational constraints or put locks on 
 
 While there are many NoSQL data models, four broad data model families are commonly used when modeling data in a NoSQL database:
 
-![Diagram showing various NoSQL models including; a key-value, document, graph, and column-family store](../media/2-nosql-db.png)
+![Diagram showing various NoSQL models including; a key-value, document, graph, and column-family store.](../media/2-nosql-db.png)
 
 Moving forward, we focus on the data model supported by Azure Cosmos DB for NoSQL: The *document* data model.
 
@@ -27,7 +27,7 @@ Moving forward, we focus on the data model supported by Azure Cosmos DB for NoSQ
 
 The document data model breaks data down into individual **document** entities. A document can be any structured data type, but JSON is commonly used as the data format. The Azure Cosmos DB for NoSQL supports JSON natively.
 
-![Illustration of a hierarchical document data model that includes parent entities, child entities, and lines connecting them](../media/2-document-db.png)
+![Illustration of a hierarchical document data model that includes parent entities, child entities, and lines connecting them.](../media/2-document-db.png)
 
 A document is an atomic entity and can have its own data form, regardless of what is stored in other documents in the same database. Because of this flexibility, there's no need for a predefined schema making it easier to build new applications rapidly. Additionally, this flexibility enables scenarios where different types of data can be stored together and where models can evolve over the lifetime of an application.
 
@@ -56,7 +56,7 @@ As you can see, JSON is a relatively readable data format that clearly exposes i
 
 Azure Cosmos DB for NoSQL is a fast NoSQL database service that offers rich querying over diverse data. It helps deliver configurable and reliable performance, is globally distributed, and enables rapid development.
 
-![Illustration of a world map with four globally distributed nodes that are connected via lines](../media/2-azure-cosmos-db.png)
+![Illustration of a world map with four globally distributed nodes that are connected via lines.](../media/2-azure-cosmos-db.png)
 
 The NoSQL API is the core or native API for working with documents. The NoSQL API supports fast, flexible development utilizing JSON documents, a query language with a familiar syntax, and client libraries for popular programming languages. Azure Cosmos DB provides other APIs, such as Mongo, Gremlin, and Cassandra. These APIs offer compatibility with each database ecosystem, while still mapping to the same underlying infrastructure of the native NoSQL API.
 

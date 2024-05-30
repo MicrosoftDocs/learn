@@ -4,12 +4,12 @@ title: What is minimal API?
 metadata:
   title: What is minimal API?
   description: Learn what minimal API is and how to create a project with it.
-  ms.date: 10/26/2021
+  ms.date: 12/22/2022
   author: softchris
   ms.author: chnoring
+  ms.manager: markl
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/2-what-is-minimal-api.md)]

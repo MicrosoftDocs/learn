@@ -4,11 +4,12 @@ title: Arrange views with Grid
 metadata:
   title: Arrange views with Grid
   description: Use a Grid layout panel to create flexible user interfaces with many elements that work on multiple device types.
-  ms.date: 04/29/2022
+  ms.date: 11/07/2023
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/6-arrange-views-grid.md)]
@@ -17,12 +18,12 @@ quiz:
   questions:
   - content: "What is the purpose of the `Star GridUnitType`?"
     choices:
-    - content: "Fixed sizing of a column or row. The size is determined by the number specified."
+    - content: "Fixed sizing of a column or row. The number that you specify determines the size."
       isCorrect: false
-      explanation: "This is absolute sizing and is indicated by putting a number into the `Height` or `Width` field for a `Row` or `Column` respectively."
-    - content: "Proportional sizing of a column or a row. The size is determined by the total available space and the ratio that each row or column asks for."
+      explanation: "This answer describes `Absolute` sizing, where the size is indicated by putting a number into the `Height` or `Width` field for a `Row` or `Column` respectively."
+    - content: "Proportional sizing of a column or a row. The total available space and the ratio that each row or column asks for, determines the size."
       isCorrect: true
-      explanation: "This is correct. The star or `*` indicates to use proportional sizing."
+      explanation: "Correct. The star or `*` indicates proportional sizing."
     - content: "Automatically allow the `Grid` to determine the size of the row or column based on the child view it contains."
       isCorrect: false
-      explanation: "This is `Auto` sizing and the `Grid` will determine the row's height or column's width based on the space available."
+      explanation: "This answer describes `Auto` sizing, where the `Grid` determines the row's height or column's width based on the space available."

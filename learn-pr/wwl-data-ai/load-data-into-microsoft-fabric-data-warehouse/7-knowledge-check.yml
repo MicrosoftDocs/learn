@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/01/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+durationInMinutes: 8
+quiz:
+  questions:
+  - content: What are the four data ingestion options available in Microsoft Fabric for loading data into a data warehouse?
+    choices:
+    - content: COPY (Transact-SQL) statement, data pipelines, dataflows, and cross-warehouse.
+      isCorrect: true
+      explanation: Correct. COPY (Transact-SQL) statement, data pipelines, dataflows, and cross-warehouse are the four data ingestion options available in Microsoft Fabric for loading data into a data warehouse.
+    - content: COPY (Transact-SQL) statement, data pipelines, dataflows, and Data Wrangler.
+      isCorrect: false
+      explanation: Incorrect. Data Wrangler is a tool used to preprocess data.
+    - content: COPY (Transact-SQL) statement, data pipelines, dataflows, and cross-platform ingestion.
+      isCorrect: false
+      explanation: Incorrect. The fourth option is cross-warehouse, not cross-platform ingestion.
+  - content: What are the supported data sources and file formats for the COPY (Transact-SQL) statement in Warehouse?
+    choices:
+    - content: Azure Data Lake Storage (ADLS) Gen2 and Azure Blob Storage, with PARQUET and CSV file formats.
+      isCorrect: true
+      explanation: Correct. The COPY (Transact-SQL) statement currently supports the PARQUET and CSV file formats, and Azure Data Lake Storage (ADLS) Gen2 and Azure Blob Storage as data sources.
+    - content: Azure Data Lake Storage (ADLS) Gen1 and Azure Blob Storage, with PARQUET and CSV file formats.
+      isCorrect: false
+      explanation: Incorrect. The supported data source is Azure Data Lake Storage (ADLS) Gen2, not Gen1.
+    - content: Azure Data Lake Storage (ADLS) Gen2 and Azure Blob Storage, with ORC and CSV file formats.
+      isCorrect: false
+      explanation: Incorrect. The supported file formats are PARQUET and CSV, not ORC and CSV.
+  - content: What is the recommended minimum file size when working with external data on files in Microsoft Fabric?
+    choices:
+    - content: At least 4 MB.
+      isCorrect: true
+      explanation: Correct. When working with external data on files, we recommend that files are at least 4 MB in size.
+    - content: At least 1 MB.
+      isCorrect: false
+      explanation: Incorrect. The recommended minimum file size is 4 MB, not 1 MB.
+    - content: At least 10 MB.
+      isCorrect: false
+      explanation: Incorrect. The recommended minimum file size is 4 MB, not 10 MB.

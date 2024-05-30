@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-private-access-azure-resources.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of Azure App Service?"
+    choices:
+    - content: "To host web and mobile applications"
+      isCorrect: true
+      explanation: "Correct. Azure App Service is a fully managed platform for building, deploying, and scaling web and mobile applications."
+    - content: "To provide additional storage for virtual machines"
+      isCorrect: false
+      explanation: "Incorrect. Azure App Service isn't used to provide additional storage for virtual machines."
+    - content: "To enable automatic scaling of virtual networks"
+      isCorrect: false
+      explanation: "Incorrect. Azure App Service isn't used to enable automatic scaling of virtual networks."
+  - content: "A company wants to route traffic for their custom containers through virtual network integration. What must they ensure is configured in addition to the routing setting?"
+    choices:
+    - content: "Any firewall or Network Security Group configured on traffic from the subnet allow traffic to port 443 and 445."
+      isCorrect: true
+      explanation: "Correct. In addition to configuring the routing, the company must also ensure that any firewall or Network Security Group configured on traffic from the subnet allow traffic to port 443 and 445 in order to route traffic for their custom containers through virtual network integration."
+    - content: "Database backup is supported over the virtual network integration."
+      isCorrect: false
+      explanation: "Incorrect. Database backup is not supported over the virtual network integration."
+    - content: "Firewall or Network Security Group configured on traffic from the subnet allow traffic to port 80 and 443."
+      isCorrect: false
+      explanation: "Incorrect. This answer refers to allowing traffic to ports 80 and 443, which is not relevant to routing traffic for custom containers through virtual network integration."
+  - content: "A company wants to deploy a web application on Azure. They want to ensure that the application is highly available and can handle sudden spikes in traffic. Which of the following Azure services should they use?"
+    choices:
+    - content: "Azure App Service"
+      isCorrect: true
+      explanation: "Correct. Azure App Service is a fully managed platform for building, deploying, and scaling web and mobile applications. It provides automatic scaling and high availability features."
+    - content: "Azure Virtual Machines"
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual Machines provides infrastructure as a service (IaaS) and require manual scaling."
+    - content: "Azure Functions"
+      isCorrect: false
+      explanation: "Incorrect. Azure Functions is event-driven and is not suitable for hosting web applications."
+  - content: "A company wants to create a Private Link service in Azure. What is the purpose of an alias in a Private Link service?"
+    choices:
+    - content: "To restrict access to the service to a limited set of trusted subscriptions."
+      isCorrect: false
+      explanation: "Incorrect. This is the purpose of the 'Restricted by subscription' visibility setting, not the alias."
+    - content: "To provide a globally unique name for the service that can be shared with customers and used to request a connection to the service."
+      isCorrect: true
+      explanation: "Correct. The alias is a globally unique name for the service that can be shared with customers and used to request a connection to the service. It helps mask the customer data for the service and creates an easy-to-share name for the service."
+    - content: "To restrict access to the service based on role-based access control only."
+      isCorrect: false
+      explanation: "Incorrect. This is the purpose of the 'Role based access control only' visibility setting, not the alias."
+  - content: "A company wants to securely connect to an Azure service using a private IP address. Which of the following options should they use?"
+    choices:
+    - content: "Virtual network interface"
+      isCorrect: false
+      explanation: "Incorrect. A virtual network interface does not provide a private IP address for connecting to an Azure service."
+    - content: "Public endpoint"
+      isCorrect: false
+      explanation: "Incorrect. A public endpoint is not a secure way to connect to an Azure service."
+    - content: "Private endpoint"
+      isCorrect: true
+      explanation: "Correct. A private endpoint provides a private and secure connection to an Azure service using a private IP address from the virtual network."

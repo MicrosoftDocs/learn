@@ -11,8 +11,8 @@ Designing an automated smoke-testing strategy provides many benefits.
 
 - Deploying to virtual IoT devices is cheaper than deploying to physical IoT devices.
 - A successful smoke test ensures that the program is ready for further testing.
-- Automated smoke testing avoids expensive rework for more sophisticated tests
-- Optimizing the time for your developer and the test teams
+- Automated smoke testing avoids expensive rework for more sophisticated tests.
+- Optimizing the time for your developer and the test teams.
 
 To implement this solution, you'll create a smoke test as a subset of your main functionality. The test should be self-scoring, automated, and able to run on virtual IoT devices. Also, the test should incorporate the principles of DevOps (continuous integration and continuous delivery) for IoT Edge devices.
 

@@ -4,13 +4,10 @@ title: Explore file storage
 metadata:
   title: Explore file storage
   description: "Explore file storage"
-  ms.date: 03/15/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-file-storage.md)]

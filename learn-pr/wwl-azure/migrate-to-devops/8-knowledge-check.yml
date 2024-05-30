@@ -7,8 +7,7 @@ metadata:
   ms.date: 11/18/2022
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4
@@ -41,12 +40,12 @@ quiz:
       explanation: "Correct. Azure DevOps provides both on-premises and cloud options, named Azure DevOps Server (on-premises) and Azure DevOps Services (SaaS). Also, the same applies to GitHub with GitHub (SaaS) and GitHub Enterprise (On-premises and Cloud)."
   - content: "Which of the following choices does Azure DevOps Services enterprise-grade authentication support?"
     choices:
-    - content: "Microsoft Account, Azure Active Directory (Azure AD), GitHub Account."
+    - content: "Microsoft Account, Microsoft Entra ID, GitHub Account."
       isCorrect: true
-      explanation: "Correct. To protect and secure your data, Azure DevOps support: Microsoft Account, GitHub Account and Azure Active Directory (Azure AD)."
-    - content: "Microsoft Account, Azure Active Directory (Azure AD)."
+      explanation: "Correct. To protect and secure your data, Azure DevOps support: Microsoft Account, GitHub Account and Microsoft Entra ID."
+    - content: "Microsoft Account, Microsoft Entra ID."
       isCorrect: false
-      explanation: "Incorrect. To protect and secure your data, Azure DevOps support: Microsoft Account, GitHub Account and Azure Active Directory (Azure AD)."
+      explanation: "Incorrect. To protect and secure your data, Azure DevOps support: Microsoft Account, GitHub Account and Microsoft Entra ID."
     - content: "GitHub Account."
       isCorrect: false
-      explanation: "Incorrect. To protect and secure your data, Azure DevOps support: Microsoft Account, GitHub Account and Azure Active Directory (Azure AD)."
+      explanation: "Incorrect. To protect and secure your data, Azure DevOps support: Microsoft Account, GitHub Account and Microsoft Entra ID."

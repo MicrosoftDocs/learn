@@ -1,5 +1,3 @@
-
-
 Code challenges reinforce what you've learned, and help you gain some confidence before continuing on.
 
 The focus of this challenge is to modify code so that it is reusable and can be executed at any time.

@@ -4,12 +4,13 @@ title: Exercise - Add a dev container to an existing project
 metadata:
   title: Exercise - Add a dev container to an existing project
   description: Use the Dev Containers extension to add a development container to an existing Python project.
-  ms.date: 11/13/2020
+  ms.date: 04/28/2023
   author: bamurtaugh
   ms.author: brmurtau
-  ms.topic: interactive-tutorial
-  ms.prod: learning-vs-code
-  ms.custom: devdivchpfy22
+  ms.topic: unit
+  ms.custom:
+    - devdivchpfy22
+    - devx-track-python
 durationInMinutes: 4
 content: |
   [!include[](includes/4-exercise-add-development-container.md)]

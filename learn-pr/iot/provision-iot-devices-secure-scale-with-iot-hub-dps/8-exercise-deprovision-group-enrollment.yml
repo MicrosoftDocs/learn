@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-group-enrollment-tasks.exercise-deprovision-group-enrollment
+title: Exercise - Deprovision the group enrollment
+metadata:
+  title: Exercise - Deprovision the group enrollment
+  description: "Disenroll the enrollment from the Device Provisioning Service and deregister the devices from IoT Hub."
+  ms.date: 10/11/2023
+  sandbox: true
+  interactive: bash
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.custom: engagement-fy23, devx-track-azurecli
+  ms.topic: unit
+  ms.service: iot-dps
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-exercise-deprovision-group-enrollment.md)]

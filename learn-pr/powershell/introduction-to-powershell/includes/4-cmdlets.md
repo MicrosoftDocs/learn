@@ -1,6 +1,6 @@
-A *cmdlet* (pronounced "command-let") is a compiled command. A cmdlet can be developed in .NET or .NET Core and invoked as a command within PowerShell. Thousands of cmdlets are available in your PowerShell installation. The challenge lies in discovering what they are and what they can do for you.
+A *cmdlet* (pronounced "command-let") is a compiled command. A cmdlet can be developed in .NET or .NET Core and invoked as a command within PowerShell. Thousands of cmdlets are available in your PowerShell installation. The challenge lies in discovering what the cmdlets are and what they can do for you.
 
-Cmdlets are named according to a verb-noun naming standard. This pattern can help you to understand what they do and how to search for them. It also helps cmdlet developers create consistent names. You can see the list of approved verbs by using the `Get-Verb` cmdlet. Verbs are organized by activity type and function.
+Cmdlets are named according to a verb-noun naming standard. This pattern can help you to understand what they do and how to search for them. It also helps cmdlet developers create consistent names. You can see the list of approved verbs by using the `Get-Verb` cmdlet. Verbs are organized according to activity type and function.
 
 Here's a part of the output from running `Get-Verb`:
 
@@ -27,18 +27,18 @@ To filter the list, keep in mind the verb-noun naming standard for cmdlets. For 
 
 These examples show how to use flags to filter a command list:
 
-- **-Noun**: The `-Noun` flag targets the part of the command name that's related to the noun. That is, it targets everything after the hyphen (`-`). Here's a typical search for a command name:
+- **-Noun**: The `-Noun` flag targets the part of the command name that's related to the noun. Here's a typical search for a command name using *alias* as the noun for which we're searching:
 
    ```powershell
-   Get-Command -Noun a-noun*
+   Get-Command -Noun alias*
    ```
 
-   This command searches for all cmdlets whose noun part starts with `a-noun`.
+   This command searches for all cmdlets whose noun part starts with `alias`.
 
 - **-Verb**: The `-Verb` flag targets the part of the command name that's related to the verb. You can combine the `-Noun` flag and the `-Verb` flag to create an even more detailed search query and type. Here's an example:
 
    ```powershell
-   Get-Command -Verb Get -Noun a-noun*
+   Get-Command -Verb Get -Noun alias*
    ```
 
-   Now you've narrowed the search to specify that the verb part needs to match `Get`, and the noun part needs to match `a-noun`.
+   Now you've narrowed the search to specify that the verb part needs to match `Get`, and the noun part needs to match `alias`.

@@ -4,11 +4,11 @@ title: Exercise - Move Azure Storage blobs using the .NET Storage Client
 metadata:
   title: Exercise - Move Azure Storage blob using the .NET Storage Client
   description: Exercise - Move Azure Storage blobs using the .NET Storage Client
-  ms.date: 04/20/2023
+  ms.date: 05/20/2024
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-dotnet, devx-track-azurecli
 durationInMinutes: 6
 interactive: bash
 azureSandbox: true

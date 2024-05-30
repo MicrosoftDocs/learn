@@ -4,11 +4,11 @@ title: What is CIEM?
 metadata:
   title: What is CIEM?
   description: What is CIEM?
-  ms.date: 12/16/2022
+  ms.date: 03/15/2023
   author: jenniferf-skc 
   ms.author: jfields
-  ms.topic: interactive-tutorial
-  ms.prod: learning-entra-permissions-management
+  ms.topic: unit
+  ms.service: multicloud-permissions-management
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-is-ciem.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.choose-the-best-azure-quantum.use-azure-portal
+title: Exercise - Use the Azure portal to run a quantum program
+metadata:
+  title: Exercise - Use the Azure portal to run a quantum program
+  description: Run a quantum program using the hosted notebook in the Azure portal
+  ms.date: 12/13/2023
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-use-azure-portal.md)]

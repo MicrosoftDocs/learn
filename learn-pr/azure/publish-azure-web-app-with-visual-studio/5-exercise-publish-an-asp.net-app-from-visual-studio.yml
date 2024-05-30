@@ -4,12 +4,11 @@ title: Exercise - Publish an ASP.NET app from Visual Studio
 metadata:
   title: Exercise - Publish an ASP.NET Core app from Visual Studio
   description: Publish an ASP.NET Core app from Visual Studio
-  ms.date: 05/02/2020
+  ms.date: 09/27/2023
   author: mikejo5000
   ms.author: mikejo
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: true
 durationInMinutes: 10
 content: |

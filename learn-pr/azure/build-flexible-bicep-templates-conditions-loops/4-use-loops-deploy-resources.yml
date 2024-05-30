@@ -5,11 +5,12 @@ metadata:
   unitType: learning-content
   title: Deploy multiple resources by using loops
   description: Learn how to use loops to deploy multiple instances of resources.
-  ms.date: 07/25/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
+  ms.date: 11/14/2023
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 4
 content: |
   [!include[](includes/4-use-loops-deploy-resources.md)]

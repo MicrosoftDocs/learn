@@ -2,12 +2,12 @@
 uid: learn.wwl.explore-azure-defender-for-iot-implementation
 metadata:
   title: Explore Microsoft Defender for IoT implementation
-  description: "This module provides you with experience configuring Azure Defender for IoT and implementing Azure Defender for IoT security agents to enhance your awareness of device-level security concerns."
-  ms.date: 07/14/2022
+  description: This module provides you with experience configuring Azure Defender for IoT and implementing Azure Defender for IoT security agents to enhance your awareness of device-level security concerns.
+  ms.date: 10/09/2023
   author: wwlpublish
-  ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: serlingdavis
+  ms.topic: module
+  ms.service: defender-for-iot
 title: Explore Microsoft Defender for IoT implementation
 summary: This module provides you with experience configuring Microsoft Defender for IoT and implementing Microsoft Defender for IoT security agents to enhance your awareness of device-level security concerns.
 abstract: |
@@ -23,14 +23,13 @@ prerequisites: |
   - Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
   - Describe the Azure IoT Edge runtime support for custom code development, the IoT Edge coding tools, and the IoT Edge coding and debugging processes.
   - Describe Azure Defender for IoT security agent options, authentication methods, and built-in security agent alerts.
-iconUrl: /training/achievements/azure-defender-iot-implementation.svg
+iconUrl: /learn/achievements/azure-defender-iot-implementation.svg
 levels:
 - intermediate
 roles:
 - developer
 products:
 - azure
-- azure-defender-iot
 - azure-iot-edge
 - azure-iot-hub
 - azure-iot-sdk

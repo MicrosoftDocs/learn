@@ -1,4 +1,4 @@
-A role definition consists of sets of permissions that are defined in a JSON file. Each permission set has a name, such as _Actions_ or _NotActions_ that describes the purpose of the permissions. Some examples of permission sets include:
+A role definition consists of sets of permissions that are defined in a JSON file. Each permission set has a name, such as _Actions_ or _NotActions_ that describe the permissions. Some examples of permission sets include:
 
 - _Actions_ permissions identify what actions are allowed.
 
@@ -8,7 +8,7 @@ A role definition consists of sets of permissions that are defined in a JSON fil
 
 - _AssignableScopes_ permissions list the scopes where a role definition can be assigned. 
 
-The following diagram shows details for the _Contributor_ role in Azure RBAC, which has three sets of permissions.
+The following diagram shows details for the _Contributor_ role in Azure RBAC.
 
 :::image type="content" source="../media/role-definition-bf297cac.png" alt-text="Diagram that shows built-in roles in Azure RBAC and custom roles. Permission sets are shown for the built-in Contributor role, including Actions, Not Actions, and Data Actions." border="false":::
 
@@ -18,23 +18,10 @@ The _Actions_ permissions show the _Contributor_ role has all action privileges.
 - `Authorization/*/Write`: Not authorized to write or change for "all."
 - `Authorization/elevateAccess/Action`: Not authorized to increase the level or scope of access privileges.
 
-The _Contributor_ role also has two _DataActions_ permissions to specify how data can be affected:
+The _Contributor_ role also has two permissions to specify how data can be affected:
 
 - `"NotDataActions": []`: No specific actions are listed. Therefore, all actions can affect the data.
 - `"AssignableScopes": ["/"]`: The role can be assigned for all scopes that affect data. 
-
-Here's another example of a role definition in PowerShell:
-
-```PowerShell
-Name: Owner
-ID: 01010101-2323-4545-6767-987453021523
-IsCustom: False
-Description: Manage everything, including access to resources
-Actions: {*}             # All actions allowed
-NotActions: {}           # No actions denied
-AssignableScopes: {/}    # Role can be assigned to all scopes
-
-```
 
 ### Things to know about role definitions
 
@@ -56,9 +43,9 @@ The following table shows how the _Actions_ or _NotActions_ permissions are used
 
 | Role&nbsp;name| Description | Actions&nbsp;permissions | NotActions&nbsp;permissions |
 | --- | --- | --- | --- |
-| _Owner_ | Allow all actions | `*` | n/a |
-| _Contributor_ | Allow all actions, except write or delete role assignment | `*` | - `Microsoft.Authorization/*/Delete` <br> - `Microsoft.Authorization/*/Write` <br> - `Microsoft.Authorization/elevateAccess/Action` |
-| _Reader_ | Allow all read actions | `/*/read` | n/a |
+| _Owner_ | Grants full access to manage all resources, including the ability to assign roles in Azure RBAC. | `*` | n/a |
+| _Contributor_ | Grants full access to manage all resources, but does not allow you to assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries. | `*` | - `Microsoft.Authorization/*/Delete` <br> - `Microsoft.Authorization/*/Write` <br> - `Microsoft.Authorization/elevateAccess/Action` |
+| _Reader_ | View all resources, but does not allow you to make any changes. | `/*/read` | n/a |
 
 ### Role scopes
 
@@ -80,7 +67,7 @@ After you define the role permissions, you use the _AssignableScopes_ permission
 
 Consider the following points about creating role definitions in Azure RBAC:
 
-- **Consider using built-in roles**. Review the list of [built-in role definitions](/azure/role-based-access-control/built-in-roles) in Azure RBAC. There are over 100 pre-defined role definitions to choose from, such as _Owner_, _Backup Operator_, _Website Contributor_, and _SQL Security Manager_. Built-in roles are defined for several categories of services, tasks, and users, including General, Networking, Storage, Databases, and more.
+- **Consider using built-in roles**. Review the list of [built-in role definitions](/azure/role-based-access-control/built-in-roles) in Azure RBAC. There are over 100 predefined role definitions to choose from, such as _Owner_, _Backup Operator_, _Website Contributor_, and _SQL Security Manager_. Built-in roles are defined for several categories of services, tasks, and users, including General, Networking, Storage, Databases, and more.
 
 - **Consider creating custom definitions**. Define your own [custom roles](/azure/role-based-access-control/custom-roles) to meet specific business scenarios for your organization. You can modify the permissions for a built-in role to meet the specific requirements for your organization. You can also create custom role definitions from scratch.
 

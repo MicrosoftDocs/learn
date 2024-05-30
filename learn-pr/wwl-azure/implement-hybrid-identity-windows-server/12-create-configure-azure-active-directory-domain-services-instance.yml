@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-hybrid-identity-with-windows-server.create-configure-azure-active-directory-domain-services-instance
-title: Create and configure an Azure Active Directory Domain Services instance
+title: Create and configure a Microsoft Entra Domain Services instance
 metadata:
-  title: Create and configure an Azure Active Directory Domain Services instance
-  description: "Create and configure an Azure Active Directory Domain Services instance"
+  title: Create and configure a Microsoft Entra Domain Services instance
+  description: "Create and configure a Microsoft Entra Domain Services instance"
   ms.date: 12/13/2021
   author: wwlpublish
-  ms.author: v-anwarr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: tonyj
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

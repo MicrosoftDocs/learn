@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.make-recommendations-ai-personalize.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your knowledge"
+  ms.date: 9/27/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "How can you view the average reward of your application’s default business logic? "
+    choices:
+    - content: "In the Azure portal, go to the Monitor page for your AI Personalizer resource, and view the Personalizer average reward."
+      isCorrect: false
+      explanation: "Incorrect. This value represents the average of total reward your AI Personalizer could potentially have reached."
+    - content: "In the Azure portal, go to the Monitor page for your AI Personalizer resource, and view the Baseline average reward."
+      isCorrect: true
+      explanation: "Correct. Use this value when evaluating apprentice mode."
+    - content: "In the Azure portal, go to the Monitor page for your AI Personalizer resource, and view the Reward achievement ratio."
+      isCorrect: false
+      explanation: "Incorrect. This is a ratio that represents the Baseline and Personalizer reward."
+  - content: "How can you ensure a reward is set, in case no reward call is received by AI Personalizer during the reward wait time period for a Rank call?"
+    choices:
+    - content: "Change the reward aggregation"
+      isCorrect: false
+      explanation: "Incorrect. Changing the reward aggregation won't set a reward."
+    - content: "Set default reward"
+      isCorrect: true
+      explanation: "Correct. If Azure AI Personalizer receives no reward call during the reward wait time period for a Rank call, AI Personalizer assigns the default reward."
+    - content: "Increase the reward wait time "
+      isCorrect: false
+      explanation: "Incorrect. Increasing the reward time won't guarantee a reward is set."
+  - content: "What update frequency will you set when want to carry out debugging and testing on Azure AI Personalizer?"
+    choices:
+    - content: "One minute"
+      isCorrect: true
+      explanation: "Correct. This is the recommended frequency for scenarios involving debugging or testing Azure AI Personalizer."
+    - content: "15 minutes"
+      isCorrect: false
+      explanation: "Incorrect. Use frequency if to closely track changes in user behavior. For example, in the case of an app that has a live bidding process that needs to be tracked."
+    - content: "One hour or more"
+      isCorrect: false
+      explanation: "Incorrect. This is the recommended frequency for most scenarios, except for debugging and testing."

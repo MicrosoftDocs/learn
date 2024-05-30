@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.apply-responsible-ai-principles.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the 'Apply responsible AI principles in learning environments' module.
+  ms.date: 03/25/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 5 
+content: |
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "Why is it important to evaluate an AI system's fairness with real-world data?"
+      choices:
+        - content: "To confirm, the AI system's performance is consistent with its training data."
+          isCorrect: false
+          explanation: "Incorrect. While consistency with training data is important, the key reason for evaluation with real-world data is to ensure the system performs fairly across all demographic groups."
+        - content: "To ensure the AI system does not require any updates or improvements."
+          isCorrect: false
+          explanation: "Incorrect. Evaluation with real-world data is crucial precisely because it helps identify areas where the AI system may need updates or improvements to ensure fairness."
+        - content: "To verify the AI system performs equitably for different demographic groups."
+          isCorrect: true
+          explanation: "Correct. Evaluating real-world data is essential to ensure that the AI system's error rates are fair and do not disproportionately affect any demographic group."
+    - content: "How does Microsoft's responsible AI standard promote accessibility?"
+      choices:
+        - content: "By requiring AI systems to be accessible through traditional interaction methods."
+          isCorrect: false
+          explanation: "Incorrect. This is incorrect because Microsoft's standard promotes full global inclusion by offering alternative modes of interaction, not just traditional methods."
+        - content: "By ensuring AI systems are accessible regardless of any disability through features like voice control and screen readers."
+          isCorrect: true
+          explanation: "Correct. This is correct as Microsoft's standard requires AI systems to provide various modes of interaction to accommodate all users."
+        - content: "By suggesting that AI systems should prioritize advanced features over accessibility."
+          isCorrect: false
+          explanation: "Incorrect. This is incorrect because the standard emphasizes accessibility for all users, not just the implementation of advanced features."
+    - content: "How do role-based access controls contribute to the security of AI systems?"
+      choices:
+        - content: "By allowing all users equal access to sensitive data within the AI system."
+          isCorrect: false
+          explanation: "Incorrect. This is incorrect because role-based access controls restrict access to sensitive data based on the user's role."
+        - content: "By ensuring that every user must have access to all functionalities of the AI system."
+          isCorrect: false
+          explanation: "Incorrect. This is incorrect as role-based access controls limit access to certain functionalities based on the user's role to enhance security."
+        - content: "By protecting learners' confidential data when transferred to third parties."
+          isCorrect: true
+          explanation: "Correct. This is correct because role-based access controls are part of a secure design that protects confidential data during transfers."

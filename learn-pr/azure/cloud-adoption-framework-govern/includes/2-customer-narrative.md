@@ -2,7 +2,7 @@ In earlier Microsoft Learn modules for the Cloud Adoption Framework, we shared t
 
 ## Tailwind Traders' balancing act
 
-Like most businesses, Tailwind Traders is attempting to balance two competing business drivers: digital transformation and risk mitigation.
+Tailwind Traders, like most businesses, must attempt to balance two competing business drivers: digital transformation and risk mitigation.
 
 :::image type="content" source="../media/balance.png" alt-text="Image that demonstrates balancing transformation and risk mitigation." border="false":::
 
@@ -21,7 +21,7 @@ To balance digital transformation efforts, the central operations and infrastruc
 - Apply security posture consistently
 - Remain agile to support scale and transformation
 
-Before Tailwind Traders adopted the cloud, governance was delivered by a series of manual processes of review, acceptance, and change control. The employees, processes, and tools that delivered governance functions in the on-premises environment aren't scaling to consistently govern cloud deployments.
+Before Tailwind Traders adopted the cloud, governance was delivered in a series of manual processes of review, acceptance, and change control. The employees, processes, and tools that delivered governance functions in the on-premises environment aren't scaling to consistently govern cloud deployments.
 
 ## Blocked by current policies
 
@@ -35,13 +35,13 @@ The CIO is working to change the policy, but the central operations and infrastr
 - Apply and meet identity and access-management requirements
 - Follow a path to ensure that all these controls are consistently applied to all workloads while acknowledging the scale and learning curve challenges across the technology teams
 
-Demonstrating that these controls are in place will give the CIO confidence that the team is ready to migrate more complex, higher-risk workloads to the cloud. It also will provide the required governance balance.
+To give the CIO confidence that the team is ready to migrate more complex, higher-risk workloads to the cloud. They must demonstrate that these controls are in place. It also provides the required governance balance.
 
-Unfortunately, the "existing datacenters" governance requirement was discovered only as the team prepared to deploy its first mission-critical workload to production. The policy has frozen the effort to migrate the company's current datacenters. More foresight would've helped the team address this policy sooner as they moved lower-risk workloads to production.
+Unfortunately, the governance requirement for the "existing datacenters" was discovered only as the team prepared to deploy its first mission-critical workload to production. The policy has frozen the effort to migrate the company's current datacenters. More foresight would have helped the team address this policy sooner as they moved lower-risk workloads to production.
 
-The retail innovation team currently isn't affected by the governance policy, and it has been delivering new innovations in the cloud faster than expected. However, the same challenges will soon block the following teams and efforts:
+Currently, the governance policy hasn't affected the retail innovation team, and it has been delivering new innovations in the cloud faster than expected. However, the same challenges can block the following teams and efforts:
 
-- The application development teams are working in a dev/test capacity to learn about cloud-native capabilities
-- The business intelligence team is experimenting with big data in the cloud and curing data on new platforms
+- The application development teams are working in a dev/test capacity to learn about cloud-native capabilities.
+- The business intelligence team is experimenting with big data in the cloud and curing data on new platforms.
 
-The remaining units in this module will demonstrate the Govern methodology's approach to meeting Tailwind Traders' governance needs, preferably in parallel to cloud-adoption efforts to avoid unexpected project interruptions.
+The remaining units in this module demonstrate the Govern methodology's approach to meeting Tailwind Traders' governance needs, preferably in parallel to cloud-adoption efforts to avoid unexpected project interruptions.

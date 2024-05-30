@@ -1,4 +1,3 @@
-
 Here, you'll write KQL queries to retrieve and transform data from the `Heartbeat` table to obtain insights about the status of machines in your environment.  
 
 ## 1. Set goals
@@ -12,7 +11,12 @@ To determine which machines have stopped sending data, you need information abou
 
 ## 2. Assess logs
 
-Azure Monitor uses Azure Monitor Agent to collect data about activities and operating system processes running inside virtual machines. Some of the older machines in your environment still use the legacy Log Analytics Windows and Linux agents, which Azure Monitor is deprecating. Azure Monitor Agent and Log Analytics Agent send virtual machine health data to the `Heartbeat` table once a minute.
+Azure Monitor uses Azure Monitor Agent to collect data about activities and operating system processes running inside virtual machines. 
+
+> [!NOTE] 
+> Some of the older machines in your environment still use the legacy Log Analytics Windows and Linux agents, which Azure Monitor is deprecating. 
+
+Azure Monitor Agent and Log Analytics Agent send virtual machine health data to the `Heartbeat` table once a minute.
 
 Let's run a simple `take 10` query on the `Heartbeat` table to see the type of data each one of its columns holds:
 
@@ -92,7 +96,7 @@ Write a query that lists the machines that have been active in the past 48 hours
 
     For example, you can organize the logs by time generated - from the oldest to the newest - to see which computers have gone the longest time without logging data. 
 
-    The `Direct Agent` value in the AgentType column tells you that the Log Analytics Agent is running on the machine. Since the Log Analytics Agent for Windows is also called OMS and for Linux the agent is also call MMS, renaming the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines simplifies the results and facilitates further analysis, such as filtering.
+    The `Direct Agent` value in the AgentType column tells you that the Log Analytics Agent is running on the machine. Since the Log Analytics Agent for Windows is also called OMS and for Linux the agent is also called MMS, renaming the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines simplifies the results and facilitates further analysis, such as filtering.
 
     <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA61Ty27bMBC89ysWPjmAglxSIIeqQOCi6aFGgNpAj8VaWksMSK5Krmyr6KG%252F0d%252Frl3RJqUpS55gTxcfOzM6OPhEG2REKXF3BtiUQ3FmCgfs%252Fv34Hgu89hcH45s1POLakB1vj6I48BRSq4T02vLy%252BaS9yuV5BQN8Q7DmAtFM5XILxujURKoxUgOUmQjOD5EuCDqPA9Q203IcIShh75zCYHwQOT8tnxBewG2DFruuFQnGrWLIdOipXetlwGAq436SDJOsLSTB0oJhZbGIJVHGon0hQNMKqhWqCBPQ1dIEPptY647Ufh2LYA%252B64l%252FldAZi4QZSryEXcJUh1DOIQhdxsnPbw7bl57yC599Zl8z4aq3gR8IgDoLWTxhd8yh3szUEhjVcRUSnoJKTkj0aAMfvlvIWyhMUHo5AyvllkrZNHZbn4anzNx7goYLFe3%252Boyl2ZxqzZNdTTwEfSAttdRB3b%252FgwuPODkHE7YaULXGv4rcz9r4KYm9X29eRWzCyWIz8lOpOgONg%252BbjfH4Yq8S34SBRxxV7q%252BuLLzMtW82SJDpPR%252F1ScE3Ygyq5DDTSnFUW5xkvJhvGaHNo0OsvMrY7ovBe82l75%252BO%252FyIziIJL8BYai7E7wAwAA/timespan/P1D" target="_blank">Click to run query in Log Analytics demo environment</a>
 

@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.connect-microsoft-services-to-azure-sentinel.connect-azure-active-directory-connector
-title: Connect the Azure Active Directory connector
+title: Connect the Microsoft Entra connector
 metadata:
-  title: Connect the Azure Active Directory connector
-  description: "Connect the Azure Active Directory connector"
+  title: Connect the Microsoft Entra connector
+  description: "Connect the Microsoft Entra connector"
   ms.date: 07/11/2022
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

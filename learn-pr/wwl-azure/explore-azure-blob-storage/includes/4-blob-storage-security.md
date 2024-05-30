@@ -1,10 +1,9 @@
-
 Azure Storage provides a comprehensive set of security capabilities that together enable developers to build secure applications:
 
 * All data (including metadata) written to Azure Storage is automatically encrypted using Storage Service Encryption (SSE).
-* Azure Active Directory (Azure AD) and Role-Based Access Control (RBAC) are supported for Azure Storage for both resource management operations and data operations, as follows:
-    * You can assign RBAC roles scoped to the storage account to security principals and use Azure AD to authorize resource management operations such as key management.
-    * Azure AD integration is supported for blob and queue data operations. You can assign RBAC roles scoped to a subscription, resource group, storage account, or an individual container or queue to a security principal or a managed identity for Azure resources.
+* Microsoft Entra ID and Role-Based Access Control (RBAC) are supported for Azure Storage for both resource management operations and data operations, as follows:
+    * You can assign RBAC roles scoped to the storage account to security principals and use Microsoft Entra ID to authorize resource management operations such as key management.
+    * Microsoft Entra integration is supported for blob and queue data operations. You can assign RBAC roles scoped to a subscription, resource group, storage account, or an individual container or queue to a security principal or a managed identity for Azure resources.
 * Data can be secured in transit between an application and Azure by using Client-Side Encryption, HTTPS, or SMB 3.0.
 * OS and data disks used by Azure virtual machines can be encrypted using Azure Disk Encryption.
 * Delegated access to the data objects in Azure Storage can be granted using a shared access signature.
@@ -28,7 +27,7 @@ You can rely on Microsoft-managed keys for the encryption of your storage accoun
 
 The following table compares key management options for Azure Storage encryption.
 
-|  | Microsoft-managed keys | Customer-managed keys | Customer-provided keys |
+| -- | Microsoft-managed keys | Customer-managed keys | Customer-provided keys |
 |--|--|--|--|
 | Encryption/decryption operations | Azure | Azure | Azure |
 | Azure Storage services supported | All | Blob storage, Azure Files | Blob storage |
@@ -36,4 +35,3 @@ The following table compares key management options for Azure Storage encryption
 | Key rotation responsibility | Microsoft | Customer | Customer |
 | Key usage | Microsoft | Azure portal, Storage Resource Provider REST API, Azure Storage management libraries, PowerShell, CLI | Azure Storage REST API (Blob storage), Azure Storage client libraries |
 | Key access | Microsoft only | Microsoft, Customer | Customer only |
-

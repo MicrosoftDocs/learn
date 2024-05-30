@@ -4,11 +4,10 @@ title: Cloud Services
 metadata:
   title: Cloud Services
   description: Cloud Services
-  ms.date: 08/15/2019
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 13
 content: |
@@ -32,7 +31,7 @@ quiz:
         isCorrect: false
         explanation: "Incorrect. Compute, networking, and storage are core cloud services."
 
-    - content: "Azure Active Directory simplifies the task of building applications that authenticate users using third-party identity providers such as Facebook and Google. What is the primary motivation for using trusted third-party identity providers rather than authenticating users yourself?"
+    - content: "Microsoft Entra ID simplifies the task of building applications that authenticate users using third-party identity providers such as Facebook and Google. What is the primary motivation for using trusted third-party identity providers rather than authenticating users yourself?"
       choices:
       - content: "It speeds the development process by reducing the amount of code you have to write."
         isCorrect: false

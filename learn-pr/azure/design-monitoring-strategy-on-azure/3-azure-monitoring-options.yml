@@ -1,39 +1,38 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.3-azure-monitoring-options
 metadata:
-  title: Monitoring options available in Azure
+  title: Monitoring options in Azure
   description: Explore the monitoring options available in Azure.
-  ms.date: 03/22/2021
+  ms.date: 11/13/2023
   author: kayodeprinceMS
   ms.author: kaprince
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Monitoring options available in Azure
+  ms.topic: unit
+title: Monitoring options in Azure
 durationInMinutes: 5
 content: |
   [!include[](includes/3-azure-monitoring-options.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which Azure service incorporates threat intelligence for detection and investigation in their enterprise environment?
+  - content: Which Azure service incorporates threat intelligence for detection and investigation in enterprise environments?
     choices:
     - content: Azure Monitor
       isCorrect: false
-      explanation: Azure monitor is the monitoring service used to track availability, health, and performance of applications and infrastructure.
+      explanation: Azure Monitor is the monitoring service used to track availability, health, and performance of applications and infrastructure.
     - content: Microsoft Sentinel
       isCorrect: true
       explanation: Microsoft Sentinel includes built-in threat intelligence for detection and investigation that can help reduce false positives.
-    - content: Azure Monitor Application Insights
+    - content: Application Insights
       isCorrect: false
-      explanation: Application Insights is a feature of Azure Monitor that focuses on application layer availability and performance of apps deployed on Azure on on-premises.
-  - content: What is the shared underlying logging data platform for Microsoft Sentinel and Microsoft Defender for Cloud?
+      explanation: Application Insights is a feature of Azure Monitor that focuses on application layer availability and performance of apps deployed on Azure or on-premises.
+  - content: What's the shared underlying logging data platform for Microsoft Sentinel and Microsoft Defender for Cloud?
     choices:
-    - content: Diagnostic Setting
+    - content: Azure Monitor Metrics
       isCorrect: false
-      explanation: Diagnostic settings are used to send platform metrics and platform logs to Azure Monitor Log Analytics, storage account or Event Hubs.
+      explanation: Azure Monitor Metrics collects numerical time-series values, not resource logs.
     - content: Azure Monitor Logs
       isCorrect: true
-      explanation: Several services in Azure including Sentinel and Defender for Cloud use Azure Monitor Logs as their underlying logging data platform.
-    - content: Activity Logs
+      explanation: Several Azure services, including Microsoft Sentinel and Defender for Cloud, use Azure Monitor Logs as their underlying logging data platform.
+    - content: Azure Event Hubs
       isCorrect: false
-      explanation: The Activity log is an Azure platform log that provides insight into subscription-level events.
+      explanation: You can use Azure Event Hubs to export Azure Monitor log data, but Event Hubs isn't involved in logging the data.

@@ -4,29 +4,26 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/15/2022
+  ms.date: 09/27/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
-content: |
-  [!include[](includes/05-knowledge-check.md)]
 quiz:
   questions:
-  - content: "Which of the following options is the only supported endpoint for use with Azure Cognitive Search custom AML skill?"
+  - content: "Which of the following options is the only supported endpoint for use with Azure AI Search custom AML skill?"
     choices:
     - content: "Real-time endpoint."
       isCorrect: false
-      explanation: "Incorrect. You can create a real-time endpoint in AML studio, but it can't be used by the AmlSkill."
+      explanation: "Incorrect. You can create a real-time endpoint in Azure AI Machine Learning Studio, but it can't be used by the AmlSkill."
     - content: "Web service."
       isCorrect: true
       explanation: "Correct. The AmlSkill can use a web service as an endpoint."
     - content: "Batch endpoint."
       isCorrect: false
-      explanation: "Incorrect. You can create a batch endpoint in AML studio, but it can't be used by the AmlSkill."
+      explanation: "Incorrect. You can create a batch endpoint in Azure AI Machine Learning Studio, but it can't be used by the AmlSkill."
   - content: "Which is the correct custom skill you need to use to connect to an Azure Machine Learning model?"
     choices:
     - content: "#Microsoft.Skills.Vision.ImageAnalysisSkill."

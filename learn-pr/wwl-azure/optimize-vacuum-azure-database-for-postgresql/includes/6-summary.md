@@ -7,4 +7,4 @@ Now that you've completed this module, you can:
 
 For more information about the topics covered in this module, see:
 
-[Autovacuum Tuning in Azure Database for PostgreSQL - Flexible Server](https://learn.microsoft.com/azure/postgresql/flexible-server/how-to-autovacuum-tuning)
+[Autovacuum Tuning in Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/how-to-autovacuum-tuning)

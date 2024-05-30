@@ -3,21 +3,29 @@ uid: learn.wwl.explore-azure-automation-devops
 metadata:
   title: Explore Azure Automation with DevOps
   description: "Explore Azure Automation with DevOps"
-  ms.date: 03/18/2022
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Explore Azure Automation with DevOps
-summary: This module describes Azure Automation with Azure DevOps, using runbooks, webhooks, and PowerShell workflows. You'll learn how to create and manage automation for your environment.
+summary: This module describes Azure Automation with Azure DevOps, using runbooks, webhooks, and PowerShell workflows. You learn how to create and manage automation for your environment.
 abstract: |
-  By the end of this module, you'll be able to:
-  *   Implement automation with Azure DevOps
-  *   Create and manage runbooks
-  *   Create webhooks
-  *   Create and run a workflow runbook and PowerShell workflows
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  *   Implement automation with Azure DevOps.
+
+  *   Create and manage runbooks.
+
+  *   Create webhooks.
+
+  *   Create and run a workflow runbook and PowerShell workflows.
+
+  *   Plan for hybrid management.
+prerequisites: None
 iconUrl: /training/achievements/4-explore-azure-automation-with-devops.svg
 levels:
 - advanced
@@ -45,14 +53,14 @@ subjects:
 units:
 - learn.wwl.explore-azure-automation-devops.introduction
 - learn.wwl.explore-azure-automation-devops.create-automation-accounts
-- learn.wwl.explore-azure-automation-devops.what-is-runbook
+- learn.wwl.explore-azure-automation-devops.what-runbook
 - learn.wwl.explore-azure-automation-devops.understand-automation-shared-resources
 - learn.wwl.explore-azure-automation-devops.explore-runbook-gallery
 - learn.wwl.explore-azure-automation-devops.examine-webhooks
 - learn.wwl.explore-azure-automation-devops.explore-source-control-integration
 - learn.wwl.explore-azure-automation-devops.explore-powershell-workflows
 - learn.wwl.explore-azure-automation-devops.create-workflow
-- learn.wwl.explore-azure-automation-devops.exercise-create-run-workflow-runbook
+- learn.wwl.explore-azure-automation-devops.explore-hybrid-management
 - learn.wwl.explore-azure-automation-devops.examine-checkpoint-parallel-processing
 - learn.wwl.explore-azure-automation-devops.knowledge-check
 - learn.wwl.explore-azure-automation-devops.summary

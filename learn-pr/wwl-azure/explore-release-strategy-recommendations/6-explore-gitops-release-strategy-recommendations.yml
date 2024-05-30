@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-release-strategy-recommendations.explore-gitops-release-strategy-recommendations
+title: Explore GitOps release strategy and recommendations
+metadata:
+  title: Explore GitOps release strategy and recommendations
+  description: "Explore GitOps release strategy and recommendations"
+  ms.date: 05/21/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-explore-gitops-release-strategy-recommendations.md)]

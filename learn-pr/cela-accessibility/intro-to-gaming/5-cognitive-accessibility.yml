@@ -4,11 +4,10 @@ title: Cognitive accessibility fundamentals
 metadata:
   title: Cognitive accessibility fundamentals
   description: This content is part of the Introduction to Gaming and Disability module.
-  ms.date: 11/01/2021
+  ms.date: 04/30/2023
   author: kaitlynjones
   ms.author: kaitlynjones
-  ms.topic: interactive-tutorial
-  ms.prod: learning-gaming-accessibility
+  ms.topic: unit
 durationInMinutes: 13
 content: |
   [!include[](includes/5-cognitive-accessibility.md)]
