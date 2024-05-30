@@ -34,10 +34,11 @@ The first step in training a transformer model is to decompose the training text
 
 For example, consider the following sentence:
 
-*I heard a dog bark loudly at a cat*
+:::no-loc text="*I heard a dog bark loudly at a cat*":::
 
 To tokenize this text, you can identify each discrete word and assign token IDs to them. For example:
 
+```
 - I (1)
 - heard (2)
 - a (3)
@@ -47,6 +48,7 @@ To tokenize this text, you can identify each discrete word and assign token IDs 
 - at (7)
 - *("a" is already tokenized as 3)*
 - cat (8)
+```
 
 The sentence can now be represented with the tokens: *{1 2 3 4 5 6 7 3 8}*. Similarly, the sentence "I heard a cat" could be represented as *{1 2 3 8}*.
 
