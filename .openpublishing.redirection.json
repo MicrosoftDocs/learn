@@ -39633,6 +39633,11 @@
       "source_path": "learn-pr/wwl-azure/describe-team-structures/7-select-tools-processes-for-agile-practices.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-team-structures/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
     }
   ]
 }
