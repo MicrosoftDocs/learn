@@ -3403,3 +3403,8 @@ achievements:
   title: 'AZ-400: Get started on a DevOps transformation journey'
   summary: This learning path helps you understand what DevOps is and how to plan for a DevOps transformation journey.
   iconUrl: /training/achievements/az-400-get-started-on-a-devops-transformation-journey.svg
+- uid: learn.wwl.choose-right-project.badge
+  type: badge
+  title: Choose the right project
+  summary: This module helps organizations decide the projects to start applying the DevOps process and tools to minimize initial resistance.
+  iconUrl: /training/achievements/2-choose-the-right-project.svg
