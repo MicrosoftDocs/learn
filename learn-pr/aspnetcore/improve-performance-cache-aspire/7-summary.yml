@@ -5,7 +5,7 @@ metadata:
   title: Summary
   description: In this unit, you'll review what you've learned about Redis caching in .NET Aspire cloud-native applications.
   ms.date: 03/31/2024
-  author: camsopser
+  author: camsoper
   ms.author: casoper
   ms.topic: unit
 durationInMinutes: 5
