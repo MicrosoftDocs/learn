@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-performance-cache-aspire.summary
+title: Summary
+metadata:
+  title: Summary
+  description: In this unit, you'll review what you've learned about Redis caching in .NET Aspire cloud-native applications.
+  ms.date: 03/31/2024
+  author: camsopser
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-summary.md)]
