@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-adoption-framework-govern.5-document-enforce
-title: Document and enforce policies
+title: Incorporate cloud governance policies
 metadata:
-  title: Document and enforce policies
+  title: Incorporate cloud governance policies
   description: Learn how to document and enforce policies to incorporate actionable governance.
-  ms.date: 08/08/2023
+  ms.date: 05/29/2024
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
