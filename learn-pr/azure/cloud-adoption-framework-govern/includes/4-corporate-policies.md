@@ -41,11 +41,11 @@ During your cloud risk assessment, you must determine which risks are a top prio
 
 | &nbsp; | &nbsp; |
 |--|--|
-| <br> :::image type="content" source="../media/cost-management-icon.png" alt-text="Cost management icon." border="false"::: | <br> **Cost management**: Cost is a primary concern for cloud users. Develop policies for cost control for all cloud platforms. |
-| <br> :::image type="content" source="../media/security-baseline-icon.png" alt-text="Security baseline icon." border="false"::: | <br> **Security**: Security is a complex subject that's unique to each company. After you establish security requirements, use cloud governance policies and enforcement to apply those requirements across network, data, and asset configurations.|
-| <br> :::image type="content" source="../media/identity-baseline-icon.png" alt-text="Identity baseline icon." border="false"::: | <br> **Identity**: To mitigate the risk of breach, ensure that you consistently apply identity requirements across cloud adoption efforts. |
-| <br> :::image type="content" source="../media/resource-consistency-icon.png" alt-text="Resource consistency icon." border="false"::: | <br> **Resource consistency**: Cloud operations depend on consistent resource configuration. Through governance tooling, you can consistently configure resources to manage risks that are related to onboarding, drift, discoverability, and recovery. |
-| <br> :::image type="content" source="../media/deployment-acceleration-icon.png" alt-text="Deployment acceleration icon." border="false"::: | <br> **Deployment acceleration**: A centralized, standardized, and consistent deployment and configuration approach improves governance practices. Use cloud-based governance tooling to accelerate deployment activities. |
+| **Cost management** | Cost is a primary concern for cloud users. Develop policies for cost control for all cloud platforms. |
+| **Security** | Security is a complex subject that's unique to each company. After you establish security requirements, use cloud governance policies and enforcement to apply those requirements across network, data, and asset configurations.|
+| **Identity** | To mitigate the risk of breach, ensure that you consistently apply identity requirements across cloud adoption efforts. |
+| **Resource consistency** | Cloud operations depend on consistent resource configuration. Through governance tooling, you can consistently configure resources to manage risks that are related to onboarding, drift, discoverability, and recovery. |
+| **Deployment acceleration** | A centralized, standardized, and consistent deployment and configuration approach improves governance practices. Use cloud-based governance tooling to accelerate deployment activities. |
 
 Risk is relative. A small company with a few IT assets in a building that's offline has low risk. If it adds users and an internet connection with access to those assets, the risk intensifies. When that small company grows to Fortune 500 status, the risks are exponentially greater. As revenue, business processes, employee counts, and IT assets accumulate, risks increase and coalesce. IT assets help generate revenue. An outage might stop that revenue stream. Every moment of downtime equates to loss. As data accumulates, the risk for customers also grows.
 
