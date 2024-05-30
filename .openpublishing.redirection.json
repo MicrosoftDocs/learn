@@ -39558,6 +39558,11 @@
       "source_path": "learn-pr/wwl-azure/choose-right-project/4-decide-when-to-use-systems-of-record-versus-systems-of-engagement.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/choose-right-project/2-explore-greenfield-brownfield-projects.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
     }
   ]
 }
