@@ -54,9 +54,6 @@ On a device details page, select the Recommendations tab to view a list of secur
 
 For example:
 
-:::image type="content" source="../media/recommendations-device-details-e5426aa5.png" alt-text="Screenshot showing how to review the programmable logic controller recommendations page.":::
-
-
 ## Supported security recommendations
 
 The following recommendations are displayed for OT devices in the Azure portal:

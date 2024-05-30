@@ -5,9 +5,9 @@ This overview introduces the key concepts around securing a typical Azure IoT so
 
 You can divide security in an IoT solution into the following three areas:
 
-1.  **Device security**: Secure the IoT device while it's deployed in the wild.
-2.  **Connection security**: Ensure all data transmitted between the IoT device and the IoT cloud services is confidential and tamper-proof.
-3.  **Cloud security**: Secure your data while it moves through, and is stored in the cloud.
+ -  **Device security**: Secure the IoT device while it's deployed in the wild.
+ -  **Connection security**: Ensure all data transmitted between the IoT device and the IoT cloud services is confidential and tamper-proof.
+ -  **Cloud security**: Secure your data while it moves through, and is stored in the cloud.
 
 Implementing the recommendations in this article helps you meet the security obligations described in the [shared responsibility model](/azure/security/fundamentals/shared-responsibility).
 
