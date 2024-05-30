@@ -54,8 +54,8 @@ For a list of the Windows and Linux operating system versions that are supported
 
 The following table lists the types of data you can configure a Log Analytics workspace to collect from all connected agents.
 
-| **Data Source**                                                                                                | **Description**                                                                               |
-| -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| **Data Source**                                                                                          | **Description**                                                                               |
+| -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | [Windows Event logs](/azure/azure-monitor/agents/data-sources-windows-events) | Information sent to the Windows event logging system                                          |
 | [Syslog](/azure/azure-monitor/agents/data-sources-syslog)                     | Information sent to the Linux event logging system                                            |
 | [Performance](/azure/azure-monitor/agents/data-sources-performance-counters)  | Numerical values measuring performance of different aspects of operating system and workloads |
