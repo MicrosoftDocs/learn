@@ -3,7 +3,8 @@ Suppose you're a developer who likes to support the local community. You and som
 In completing this coding project, you apply your C# data knowledge and skills in:
 
 - Choosing the correct data types and safely converting data types.
-- Manipulating number, string and character arrays, as well as adding, removing, and sorting data.
+- Create two dimensional arrays of numbers and strings.
+- Search data in arrays to display or update data.
 - Modifying and building complex strings from multiple data sources, and formatting data for display across regions.
 
 Your team has found that it's important to search the pet data to identify animals with possible matches based on characteristics provided by potential owners. Further, the team wants to include a fundraising feature to include suggested donation data and to present the pet data with fewer lines of output.

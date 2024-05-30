@@ -65,7 +65,6 @@ products:
 subjects:
 - identity-access
 modules:
-- learn.wwl.configure-azure-active-directory
 - learn.wwl.configure-user-group-accounts
 - learn.wwl.configure-subscriptions
 - learn.wwl.configure-azure-policy
