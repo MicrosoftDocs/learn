@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.examine-security-fundamentals-for-iot.iot-security-best-practices
+uid: learn.wwl.examine-security-fundamentals-for-iot.depth-strategy
 title: Examine a security-in-depth strategy
 metadata:
   title: Examine a security-in-depth strategy
@@ -10,8 +10,6 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
-  zone_pivot_groups: azure-interface
 durationInMinutes: 7
 content: |
   [!include[](includes/4-iot-security-best-practices.md)]
-interactive: bash

@@ -44,10 +44,10 @@ subjects:
 - iot
 units:
 - learn.wwl.examine-security-fundamentals-for-iot.introduction
-- learn.wwl.examine-security-fundamentals-for-iot.security-recommendations-for-azure-iot-deployments
-- learn.wwl.examine-security-fundamentals-for-iot.iot-security-from-ground-up
-- learn.wwl.examine-security-fundamentals-for-iot.iot-security-best-practices
-- learn.wwl.examine-security-fundamentals-for-iot.iot-security-architecture-threat-modeling
+- learn.wwl.examine-security-fundamentals-for-iot.review-security-recommendations
+- learn.wwl.examine-security-fundamentals-for-iot.examine-iot-security-infrastructure-from-ground-up
+- learn.wwl.examine-security-fundamentals-for-iot.depth-strategy
+- learn.wwl.examine-security-fundamentals-for-iot.examine-threat-modeling-mitigation-techniques
 - learn.wwl.examine-security-fundamentals-for-iot.knowledge-check
 - learn.wwl.examine-security-fundamentals-for-iot.summary
 badge:

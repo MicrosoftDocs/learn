@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.examine-security-fundamentals-for-iot.iot-security-architecture-threat-modeling
+uid: learn.wwl.examine-security-fundamentals-for-iot.examine-threat-modeling-mitigation-techniques
 title: Examine threat modeling and mitigation techniques
 metadata:
   title: Examine threat modeling and mitigation techniques
@@ -10,8 +10,6 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
-  zone_pivot_groups: azure-interface
 durationInMinutes: 7
 content: |
   [!include[](includes/5-iot-security-architecture-threat-modeling.md)]
-interactive: bash

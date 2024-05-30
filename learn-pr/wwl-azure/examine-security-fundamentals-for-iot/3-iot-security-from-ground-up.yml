@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.examine-security-fundamentals-for-iot.iot-security-from-ground-up
+uid: learn.wwl.examine-security-fundamentals-for-iot.examine-iot-security-infrastructure-from-ground-up
 title: Examine IoT security infrastructure from the ground up
 metadata:
   title: Examine IoT security infrastructure from the ground up
@@ -10,8 +10,6 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
-  zone_pivot_groups: azure-interface
 durationInMinutes: 7
 content: |
   [!include[](includes/3-iot-security-from-ground-up.md)]
-interactive: bash
