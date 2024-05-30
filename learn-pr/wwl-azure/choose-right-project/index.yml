@@ -43,6 +43,5 @@ products:
 subjects:
 - devops
 units:
-- learn.wwl.choose-right-project.summary
 badge:
   uid: learn.wwl.choose-right-project.badge
