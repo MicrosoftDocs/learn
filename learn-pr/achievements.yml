@@ -3413,3 +3413,18 @@ achievements:
   title: Describe team structures
   summary: This module explores agile development practices and helps to define and to configure teams and tools for collaboration.
   iconUrl: /training/achievements/3-describe-team-structures.svg
+- uid: learn.deploy-microsoft-purview-scan-data-resources.badge
+  type: badge
+  title: Deploy Microsoft Purview and scan an Azure Data Lake resource using the Azure portal
+  summary: "Microsoft Purview is a data governance service that allows you to understand and manage data in your business by answering questions like: What kind of data do I have? Where is my sensitive data? Where did my data come from? This guide will help you get started with Microsoft Purview by deploying a Microsoft Purview account through the Azure portal, and registering an Azure Storage data source."
+  iconUrl: /training/achievements/microsoft-purview-deployment.svg
+- uid: learn-pr.azure.govern-azure-databases-with-microsoft-purview.badge
+  type: badge
+  title: Govern data from Azure databases with Microsoft Purview
+  summary: Govern data from Azure SQL and Azure SQL Managed instance databases using Microsoft Purview.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn-pr.azure.govern-sql-server-with-microsoft-purview.badge
+  type: badge
+  title: Govern multicloud relational databases using Microsoft Purview
+  summary: Govern your relational databases where they're using Microsoft Purview.
+  iconUrl: /training/achievements/generic-badge.svg
