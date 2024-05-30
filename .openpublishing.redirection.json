@@ -33996,6 +33996,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/intro-to-event-hubs/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-event-hubs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-event-hubs/2-what-is-event-hubs.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-event-hubs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-event-hubs/3-how-event-hubs-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-event-hubs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-event-hubs/4-when-to-use-event-hubs.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-event-hubs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-event-hubs/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-event-hubs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-event-hubs/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-event-hubs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-event-hubs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-event-hubs/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/enterprise-scale-architecture/index.yml" ,
       "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
       "redirect_document_id": false
