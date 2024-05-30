@@ -3408,3 +3408,8 @@ achievements:
   title: Choose the right project
   summary: This module helps organizations decide the projects to start applying the DevOps process and tools to minimize initial resistance.
   iconUrl: /training/achievements/2-choose-the-right-project.svg
+- uid: learn.wwl.describe-team-structures.badge
+  type: badge
+  title: Describe team structures
+  summary: This module explores agile development practices and helps to define and to configure teams and tools for collaboration.
+  iconUrl: /training/achievements/3-describe-team-structures.svg
