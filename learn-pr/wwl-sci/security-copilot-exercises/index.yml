@@ -42,6 +42,7 @@ units:
 - learn.security-copilot-exercises.first-run-experience
 - learn.security-copilot-exercises.explore-standalone-experience
 - learn.security-copilot-exercises.configure-plugin
+- learn.security-copilot-exercises.enable-custom-plugin
 - learn.security-copilot-exercises.explore-knowledge-base-file-upload
 - learn.security-copilot-exercises.create-custom-playbook
 - learn.security-copilot-exercises.explore-embedded-defender-xdr
