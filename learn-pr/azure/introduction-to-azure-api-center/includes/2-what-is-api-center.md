@@ -7,8 +7,8 @@ Azure API Center is a new service on Azure that offers a structured and centrali
 | Customer problem| Benefits of API Center |
 |----------|----------|
 | **Poor API discoverability and reuse**   | **Ease of API discoverability and consumption.** API managers can view a complete inventory of all APIs in the Azure portal. API consumers can use the web-based API Center portal to discover and consume APIs, or use the API Center extension for Visual Studio Code to build, discover, and consume APIs.     |
-| **Isolated and Abandoned APIs**    | **Centralized inventory of APIs.** API Center allows organizations to build a central repository of APIs from different teams and departments that act as a consolidated source of truth and trust for all APIs.    |
-| **Potential security threats**    | **Ease of API governance.** With APIs consolidated in one location, governing these APIs to enforce organization security policies becomes easier for administrators.    |
+| **Shadow, ungoverned APIs**    | **Centralized inventory of APIs.** API Center allows organizations to build a central repository of APIs from different teams and departments that act as a consolidated source of truth and trust for all APIs.    |
+| **Potential security threats**    | **Ease of API governance.** With APIs consolidated in one location, governing these APIs to enforce organization security policies becomes easier for API platform teams.    |
 | **Inconsistent API design**   | **Automated API design conformance checks.** API Center allows admins to enforce design standards across all APIs and implements a linting workflow that checks APIs against a defined style guide and generates an API compliance report accessible in your API Center.    |
 
 ## API Ecosystem roles & responsibilities
@@ -32,18 +32,19 @@ An organization's API ecosystem often consists of different roles with diverse r
 
     API consumers need to ensure that they quickly discover the most suitable APIs for their workloads to avoid wasting valuable development resources and efforts on duplications. To achieve this, it's important that they receive quality and easy to use documentation to validate the APIs that solve their respective needs and that they can seamlessly integrate into their applications.
 
-1. **Product managers** - Product managers care about releasing secure, reliable, and compliant product experiences. Some of their tasks may include:
-    - Creating plans to centralize all API operations
-    - Enforce API best practices across product engineering teams for API design, security, and lifecycle
-    - Enforce monitoring, analysis, and reporting for API governance
-    - Facilitate collaboration and feedback between API producers and consumers
-    - Driving successful product adoption
+1. **API Platform Team** - API Platform engineers care about creating and maintaining scalable, secure, and highly performant API architectures for their organization. Some of their tasks may include:
+    - API Architecture design and development
+    - Establish and enforce API best practices and design standards across the organization
+    - Enforce monitoring, analysis, and reporting to generate actionable insights
+    - Implement and manage API security through authentication, authorization, and encryption protocols
+    - Facilitate collaboration and feedback between product managers, API producers and consumers to align on API strategies
+    - Assist with API integration & troubleshooting both internally and externally
 
-Product managers and IT Administrators at Contoso work together to roll out an easy-to-adopt strategy that will prevent the organization from experiencing API sprawl.
+API Platform engineers at Contoso work together to roll out an easy-to-adopt strategy that will prevent the organization from experiencing API sprawl.
 
 ## How API Center works
 
-Product managers and IT Administrators in an organization  need a fast and easy way to configure a centralized repository of all their APIs (both internal and external) along with any other metadata such as API versions, definitions, and more.
+API Platform engineers in an organization need a fast and easy way to configure a centralized repository of all their APIs (both internal and external) along with any other metadata such as API versions, definitions, and more.
 With API Center, you can create a catalog of APIs hosted and managed on different API management solutions and manage them across their different design, development, testing, and production lifecycles.
 
 :::image type="content" source="../media/2-contoso-apic.png" alt-text="Screenshot showing an overview of API Center components":::
