@@ -30,6 +30,9 @@ Each zone is separated by a *trust boundary*, shown as the dotted red line in th
 
 To learn more, see the [STRIDE model](/azure/security/develop/threat-modeling-tool-threats#stride-model)
 
+:::image type="content" source="../media/back-end-services-a4126a5a.png" alt-text="Diagram showing an example of the STRIDE model.":::
+
+
 You can use STRIDE to model the threats to each component within each zone. The following sections elaborate on each of the components and specific security concerns and solutions that should be put into place.
 
 The remainder of this article discusses the threats and mitigations for these zones and components in more detail.
@@ -88,10 +91,13 @@ As you explore the interaction patterns, look at *device control* and *device da
 
 This section uses the [Azure IoT reference architecture](/azure/architecture/reference-architectures/iot) to demonstrate how to think about threat modeling for IoT and how to address the threats identified:
 
-:::image type="content" source="../media/presentation-and-business-connectivity-reference-304827bf.png" alt-text="Diagram showing an example of Threat modeling for the Azure Internet of Things reference architecture.":::
+:::image type="content" source="../media/application-back-end-3b2bd0fe.png" alt-text="Diagram showing an example of Threat modeling for the Azure Internet of Things reference architecture.":::
 
 
 The following diagram provides a simplified view of the reference architecture by using a data flow diagram model:
+
+:::image type="content" source="../media/internet-of-things-security-architecture-data-flow-f8d47aa5.png" alt-text="Diagram showing an example of the reference architecture by using a data flow.":::
+
 
 The architecture separates the device and field gateway capabilities. This approach enables you to use more secure field gateway devices. Field gateway devices can communicate with the cloud gateway using secure protocols, which typically require greater processing power than a simple device, such as a thermostat, could provide on its own. In the Azure Services Zone in the diagram, the Azure IoT Hub service is the cloud gateway.
 
