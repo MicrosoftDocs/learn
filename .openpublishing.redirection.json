@@ -33961,6 +33961,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/aks-monitor/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-manage-monitor-wincontainers-aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-monitor/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-manage-monitor-wincontainers-aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-monitor/2-enable-container-insights-aks-cluster.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-manage-monitor-wincontainers-aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-monitor/3-exercise-enable-container-insights.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-manage-monitor-wincontainers-aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-monitor/4-monitor-cluster-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-manage-monitor-wincontainers-aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-monitor/5-exercise-monitor-cluster-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-manage-monitor-wincontainers-aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-monitor/6-create-container-insights-alert-rules.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-manage-monitor-wincontainers-aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-monitor/7-exercise-create-container-insights-alert-rules.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-manage-monitor-wincontainers-aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-monitor/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-manage-monitor-wincontainers-aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-monitor/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/deploy-manage-monitor-wincontainers-aks/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/automate-deployments-github-actions-azure/index.yml" ,
       "redirect_url": "https://learn.microsoft.com/training/modules/github-actions-cd",
       "redirect_document_id": false
