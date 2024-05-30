@@ -359,6 +359,13 @@ az apic environment create -g contoso -s contoso-apis --title "Contoso Productio
 
 ::: zone-end
 
+::: zone pivot="vs-code"
+
+> [!NOTE]
+> Creating environments is currently not supported on VS Code. Please use the Azure CLI or the Azure portal option for this step.
+
+::: zone-end
+
 ### Deployments
 
 A unique location (address) for users to interact with your API is provided for each API runtime in a given environment. This location is called a deployment, and a single API version could have two deployments - a staging and a production deployment.
@@ -397,6 +404,6 @@ az apic api deployment create -g contoso-corporation -s contoso-api-center --dep
 ::: zone pivot="vs-code"
 
 > [!NOTE]
-> Creating environments and deployments is currently not supported on VS Code. Please use the Azure CLI or the Azure portal option for this step.
+> Creating deployments is currently not supported on VS Code. Please use the Azure CLI or the Azure portal option for this step.
 
 ::: zone-end
