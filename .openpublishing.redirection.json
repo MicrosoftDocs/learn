@@ -39568,6 +39568,11 @@
       "source_path": "learn-pr/wwl-azure/choose-right-project/5-identify-groups-to-minimize-initial-resistance.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/choose-right-project/6-identify-project-metrics-key-performance-indicators-kpis.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
     }
   ]
 }
