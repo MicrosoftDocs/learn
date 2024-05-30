@@ -3368,3 +3368,33 @@ achievements:
   title: Deploy Microsoft Sentinel and connect data sources
   summary: In this course you'll learn how to deploy Microsoft Sentinel and connect it to data sources. You'll also learn how to use Azure and AI to provide analysis of security alerts.
   iconUrl:  /training/achievements/deploy-azure-sentinel-and-connect-data-sources.svg
+- uid: learn.wwl.create-conversational-ai-solutions.trophy
+  type: trophy
+  title: Create conversational AI solutions
+  summary: Conversational AI solutions are based on interactions between human users and AI agents called _bots_. In this learning path, you'll learn how to build bots that can be delivered on Microsoft Azure.
+  iconUrl: /training/achievements/create-conversational-ai-solutions.svg
+- uid: learn.wwl.design-bot-conversation-flow.badge
+  type: badge
+  title: Create a bot with the Bot Framework SDK
+  summary: Learn how to build a bot by using the Microsoft Bot Framework SDK.
+  iconUrl: /training/achievements/design-a-bot-conversation-flow.svg
+- uid: learn.wwl.configure-azure-active-directory.badge
+  type: badge
+  title: Configure Microsoft Entra ID
+  summary: Learn how to configure Microsoft Entra ID, including features like Microsoft Entra ID join and self-service password reset.
+  iconUrl: /training/achievements/azure-active-directory.svg
+- uid: learn.wwl.configure-azure-dns.badge
+  type: badge
+  title: Configure Azure DNS
+  summary: Learn how to configure Azure DNS including custom domain names and record sets.
+  iconUrl: /training/achievements/azure-dns-configure.svg
+- uid: learn.wwl.configure-file-folder-backups.badge
+  type: badge
+  title: Configure file and folder backups
+  summary: Learn how to configure backup and restore policies that meet your company's regulatory needs.
+  iconUrl: /training/achievements/file-folder-backups.svg
+- uid: learn.wwl.create-bot-with-bot-framework-composer.badge
+  type: badge
+  title: Create a Bot with the Bot Framework Composer
+  summary: User the Bot Framework Composer to quickly and easily build sophisticated conversational bots without writing code.
+  iconUrl: /training/achievements/create-a-bot-with-the-bot-framework-composer.svg
