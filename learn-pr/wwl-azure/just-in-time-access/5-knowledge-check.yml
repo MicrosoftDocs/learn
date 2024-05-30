@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.just-in-time-access.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/30/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A system administrator needs to reduce the attack surface of their virtual machines by limiting open ports. They decide to use Microsoft Defender for Cloud's Just in Time (JIT) feature. What does JIT do?"
+    choices:
+    - content: "JIT permanently closes all management ports on the virtual machines."
+      isCorrect: false
+      explanation: "Incorrect. JIT does not permanently close all management ports, it restricts access and allows connections when needed."
+    - content: "JIT automatically detects and blocks any attempted attacks on the virtual machines."
+      isCorrect: false
+      explanation: "Incorrect. While JIT does help reduce the attack surface, it does not automatically detect and block attacks."
+    - content: "JIT locks down the inbound traffic to the VMs, reducing exposure to attacks while providing easy access to connect to VMs when needed."
+      isCorrect: true
+      explanation: "Correct. JIT restricts inbound traffic to VMs, only allowing connections when necessary, thus reducing the attack surface."
+  - content: "A system administrator needs to secure a virtual machine in Azure. They decide to use Just In Time (JIT) VM access. What is the primary purpose of using JIT VM access?"
+    choices:
+    - content: "To increase the processing speed of the virtual machine"
+      isCorrect: false
+      explanation: "Incorrect. JIT VM access does not directly affect the processing speed of the virtual machine."
+    - content: "To provide permanent access to the virtual machine for all users"
+      isCorrect: false
+      explanation: "Incorrect. JIT VM access is used to provide temporary, controlled access to virtual machines, not permanent access."
+    - content: "To control and limit access to the virtual machine by opening necessary ports only when needed"
+      isCorrect: true
+      explanation: "Correct. JIT VM access is used to enhance security by limiting exposure to attacks by opening necessary ports only when needed and automatically closing them after a set time."
+  - content: "A system administrator is tasked with securing the company's virtual machines in Azure and AWS. They need to address the risks associated with open management ports on these virtual machines. What should they implement to lock down these ports, allowing temporary access only to authorized users?"
+    choices:
+    - content: "Using multifactor authentication"
+      isCorrect: false
+      explanation: "Incorrect. Multifactor authentication enhances user security but does not directly address the issue of open management ports."
+    - content: "Implementing a firewall"
+      isCorrect: false
+      explanation: "Incorrect. While a firewall can help secure a network, it does not provide the specific functionality of just-in-time VM access."
+    - content: "Implementing Just In Time (JIT) VM access using Microsoft Defender for Cloud"
+      isCorrect: true
+      explanation: "Correct. JIT VM access locks down the management ports, allowing temporary access only to authorized users, thus reducing the attack surface."
+  - content: "A system administrator is configuring Microsoft Defender for Cloud's Just in Time (JIT) access to protect Azure virtual machines from unauthorized network access. What is the primary function of this JIT access?"
+    choices:
+    - content: "It automatically patches security vulnerabilities in the virtual machines"
+      isCorrect: false
+      explanation: "Incorrect. JIT access does not patch security vulnerabilities, it controls access to virtual machines."
+    - content: "It provides real-time threat intelligence and attack analytics"
+      isCorrect: false
+      explanation: "Incorrect. While Microsoft Defender does provide threat intelligence, this is not the primary function of JIT access."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. JIT access primarily controls and limits access to virtual machines to enhance security."
