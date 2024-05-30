@@ -3398,3 +3398,8 @@ achievements:
   title: Create a Bot with the Bot Framework Composer
   summary: User the Bot Framework Composer to quickly and easily build sophisticated conversational bots without writing code.
   iconUrl: /training/achievements/create-a-bot-with-the-bot-framework-composer.svg
+- uid: learn.wwl.az-400-get-started-devops-transformation-journey.trophy
+  type: trophy
+  title: 'AZ-400: Get started on a DevOps transformation journey'
+  summary: This learning path helps you understand what DevOps is and how to plan for a DevOps transformation journey.
+  iconUrl: /training/achievements/az-400-get-started-on-a-devops-transformation-journey.svg
