@@ -45,5 +45,5 @@ You can use the cloud governance assessment to get personalized recommendations 
 
 Azure has a suite of governance tools that are built on top of the Azure Resource Manager platform. As you progress through the units of this module, you learn how to apply some of these tools to solve governance challenges.
 
-:::image type="content" source="../media/3-tdd-in-azure.png" alt-text="Image of the Azure Resource Manager tools that support governance, with a focus on Azure Policy and Azure Blueprints." border="false":::
+:::image type="content" source="../media/3-tdd-in-azure.png" alt-text="Image of the Azure Resource Manager tools that support governance." border="false" lightbox="../media/3-tdd-in-azure.png":::
 

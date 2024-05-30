@@ -51,7 +51,7 @@ units:
 - learn.azure.cloud-adoption-framework-govern.2-customer-narrative
 - learn.azure.cloud-adoption-framework-govern.3-methodology
 - learn.azure.cloud-adoption-framework-govern.4-corporate-policies
-- learn.azure.cloud-adoption-framework-govern.5-document-enforce
+- learn.azure.cloud-adoption-framework-govern.5-document-policies
 - learn.azure.cloud-adoption-framework-govern.6-knowledge-check
 - learn.azure.cloud-adoption-framework-govern.7-enforce-policies
 - learn.azure.cloud-adoption-framework-govern.8-monitor-cloud-governance

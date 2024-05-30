@@ -24,12 +24,12 @@ quiz:
       explanation: Correct! This policy isn't well structured and would create many problems during cloud adoption.
   - content: What should be the first step in addressing the existing policy?
     choices:
-    - content: Deploy a governance foundation to set up governance tools in Azure.
+    - content: Assign a naming and tagging strategy.
       isCorrect: false
-      explanation: Incorrect. The tools can be used to create a similar policy or to learn about Azure governance, but they might not solve the deeper issue.
+      explanation: Incorrect. A naming and tagging strategy helps to organize and automate resources. You need to update the policy first before applying a naming and tagging strategy.
     - content: Enforce cloud governance policy.
       isCorrect: false
-      explanation: Incorrect. Before new policies can be enforced, the policy needs to be updated.
+      explanation: Incorrect. Before you can enforce new policies, you need to update the policy.
     - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
       isCorrect: true
       explanation: Correct! Learning the tools and enforcing the policy are both important. But you must first analyze risks so that you can define a policy to mitigate those risks.

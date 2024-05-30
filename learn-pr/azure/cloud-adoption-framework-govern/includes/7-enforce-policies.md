@@ -2,18 +2,18 @@ Cloud governance enforcement refers to the controls and procedures that you inco
 
 To effectively enforce cloud governance policies:
 
-- **Define an approach for enforcing policies**: Delegate governance responsibilities, adopt an inheritance model for policies, apply tagging and naming conventions to the resources in the inheritance model, and implement a monitor-first approach to ensure a smooth transition to enforcement.
+**Define an approach for enforcing policies.** Delegate governance responsibilities, adopt an inheritance model for policies, apply tagging and naming conventions to the resources in the inheritance model, and implement a monitor-first approach to ensure a smooth transition to enforcement.
 
-- **Automate cloud governance**: Use cloud governance tools to automate compliance on a small set of policies and then add more policies. Incorporate infrastructure as code (IaC) tools or custom scripts or applications. Automate areas of governance such as:  
-   - AI
-   - Cost
-   - Data
-   - Operations
-   - Regulatory compliance
-   - Resource management
-   - Security
+**Automate cloud governance.** Use cloud governance tools to automate compliance on a small set of policies and then add more policies. Incorporate infrastructure as code (IaC) tools or custom scripts or applications. Automate areas of governance such as:  
+ - AI
+ - Cost
+ - Data
+ - Operations
+ - Regulatory compliance
+ - Resource management
+ - Security
 
-- **Review and update enforcement mechanisms**: Keep cloud governance policy enforcement aligned with your current needs, including developer, architect, workload, platform, and business requirements. Track changes in regulations and standards to ensure compliance. 
+**Review and update enforcement mechanisms.** Keep cloud governance policy enforcement aligned with your current needs, including developer, architect, workload, platform, and business requirements. Track changes in regulations and standards to ensure compliance. 
 
 ## Governance design consideration
 
@@ -31,11 +31,13 @@ To accommodate long-term governance needs, apply a hierarchical governance model
 Define a tagging and naming strategy to provide a structured framework for resource categorization, cost management, security, and compliance across the cloud environment. Tag resources to set up your environment so that you can take advantage of automated tools. Consider the following suggested tags for workloads:
 
 - Workload or application
-- Data sensitivity, see [data sensitivity examples](/azure/cloud-adoption-framework/govern/policy-compliance/data-classification)
-- Mission criticality, see [mission criticality examples](/azure/cloud-adoption-framework/manage/considerations/criticality)
+- Data sensitivity
+- Mission criticality
 - Owner
 - Department, such as cost center
 - Environment
+
+For more information and examples, see [Define your tagging strategy](/azure/cloud-adoption-framework/ready/azure-best-practices/resource-tagging).
 
 ### Exercise: Assign a tagging policy
 
@@ -55,7 +57,6 @@ On steps 6 and 7 of the tutorial, select one of the built-in policies related to
 To enforce their new policy "Avoid overspending," Tailwind Traders can:
 
 - Define clear spending limits for each individual or team in the organization.
-
 - Create a budget in Microsoft Cost Management to track spending.
 - Create alerts for overspending.
 - Put aside extra funds for unexpected costs.
