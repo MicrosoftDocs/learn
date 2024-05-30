@@ -39538,6 +39538,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/6-user-experience.md",
       "redirect_url": "/training/paths/work-power-virtual-agents/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/az-400-get-started-devops-transformation-journey/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
     }
   ]
 }
