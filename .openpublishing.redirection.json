@@ -39608,6 +39608,11 @@
       "source_path": "learn-pr/wwl-azure/describe-team-structures/2-explore-agile-development-practices.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-team-structures/5-explore-ideal-devops-team-members.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
     }
   ]
 }
