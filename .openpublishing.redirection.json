@@ -39538,6 +39538,106 @@
       "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/6-user-experience.md",
       "redirect_url": "/training/paths/work-power-virtual-agents/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/az-400-get-started-devops-transformation-journey/index.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/choose-right-project/index.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/choose-right-project/3-decide-when-to-use-greenfield-brownfield-projects.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/choose-right-project/4-decide-when-to-use-systems-of-record-versus-systems-of-engagement.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/choose-right-project/2-explore-greenfield-brownfield-projects.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/choose-right-project/5-identify-groups-to-minimize-initial-resistance.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/choose-right-project/6-identify-project-metrics-key-performance-indicators-kpis.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/choose-right-project/1-introduction.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/choose-right-project/7-knowledge-check.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/choose-right-project/8-summary.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-team-structures/index.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-team-structures/4-define-organization-structure-for-agile-practices.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-team-structures/6-enable-team-cross-team-collaboration.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-team-structures/2-explore-agile-development-practices.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-team-structures/5-explore-ideal-devops-team-members.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-team-structures/3-explore-principles-of-agile-development.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-team-structures/1-introduction.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-team-structures/8-knowledge-check.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-team-structures/7-select-tools-processes-for-agile-practices.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-team-structures/9-summary.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
     }
   ]
 }
