@@ -50,7 +50,7 @@ To tokenize this text, you can identify each discrete word and assign token IDs 
 - cat (8)
 ```
 
-The sentence can now be represented with the tokens: *{1 2 3 4 5 6 7 3 8}*. Similarly, the sentence "I heard a cat" could be represented as *{1 2 3 8}*.
+The sentence can now be represented with the tokens: :::no-loc text="*{1 2 3 4 5 6 7 3 8}*":::. Similarly, the sentence :::no-loc text=""I heard a cat""::: could be represented as :::no-loc text="*{1 2 3 8}*":::.
 
 As you continue to train the model, each new token in the training text is added to the vocabulary with appropriate token IDs:
 
