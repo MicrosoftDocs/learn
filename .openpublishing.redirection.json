@@ -39284,11 +39284,6 @@
     "redirect_url": "/training/modules/introduction-to-devops/15-summary",
     "redirect_document_id": false
     },
-    {
-      "source_path": "learn-pr/azure/cloud-adoption-framework-govern/5-governance-disciplines.yml",
-      "redirect_url": "/training/modules/cloud-adoption-framework-govern/5-document-enforce",
-      "redirect_document_id": false
-    },
     {  
       "source_path": "learn-pr/paths/create-conversational-ai-solutions/index.md",
       "redirect_url": "/training/paths/work-power-virtual-agents/",

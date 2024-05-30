@@ -13,7 +13,7 @@ content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
-  - content: To address the risks and concerns that the Tailwind Traders CIO raises in the customer narrative, which of the following steps would you start with?
+  - content: To address the Tailwind Traders CIO's risks and concerns, which of the following steps would you start with?
     choices:
     - content: Use Azure tools to automate notifications for triggers.
       isCorrect: false
@@ -23,10 +23,10 @@ quiz:
       explanation: Correct! Rank the risks to determine which ones are most critical to address first.
     - content: Distribute your policies to inform everyone who needs to adhere to cloud governance.
       isCorrect: false
-      explanation: Incorrect. You must first perform a risk analysis to determine the most critical risks to address.
+      explanation: Incorrect. To create your policies, you must first perform a risk analysis to determine the most critical risks to address.
     - content: Define the cloud governance policy, including a policy statement, risk ID, policy ID, and policy scope.
       isCorrect: false
-      explanation: Incorrect. You must first know the risks before you can define the policies that address them.
+      explanation: Incorrect. You must first analyze the risks before you can define the policies that address them.
   - content: Which step would you address second?
     choices:
     - content: Use Azure tools to automate notifications for triggers.
@@ -48,7 +48,7 @@ quiz:
       explanation: Correct! Governance tools help to enforce the policies that you put in place, and automation improves efficiency.
     - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
       isCorrect: false
-      explanation: Incorrect. Risks are determined before you can align the organization with a new policy.
+      explanation: Incorrect. You analyze risks before you align your organization with a new policy.
     - content: Distribute your policies to inform everyone who needs to adhere to cloud governance.
       isCorrect: false
       explanation: Incorrect. Distributing policies helps align cloud governance with the new policy, but it doesn't replace manual processes.

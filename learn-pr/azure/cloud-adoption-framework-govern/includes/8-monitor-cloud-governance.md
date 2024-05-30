@@ -1,13 +1,12 @@
-After your policies are in place and you align your organization's processes and procedures with the policies, you must monitor your cloud governance compliance. Use monitoring to determine areas that lack compliance and make changes to reduce noncompliance problems.
+After your policies are in place and you align your organization's processes and procedures with the policies, you must monitor your cloud governance. Use monitoring to determine areas that lack compliance and make changes to reduce noncompliance problems.
 
 **Use monitoring tools** to ensure that you have visibility into your cloud governance. You must be able to promptly detect and resolve noncompliance and monitor the health and performance of your cloud resources.
 
-**Use compliance dashboards,** like the Azure portal, to view the state of compliance in your environment. You can see data like noncompliant initiatives, policies, and resources. You can also view your cloud governance compliance for each specific policy.
+**Use compliance dashboards,** like the Azure portal, to view the state of compliance in your environment. You can view data like noncompliant initiatives, policies, and resources. You can also view how compliant your environment is related to each specific policy.
 
 **Determine the reason for noncompliance.** For example, a resource might show as noncompliant if it's deployed:
 
 - Before the policy is in place.
-
 - By a user who doesn't have the necessary permissions.
 - In a region that doesn't align with the policy.
 - With a SKU that doesn't align with the policy.
@@ -21,22 +20,21 @@ After your policies are in place and you align your organization's processes and
 
 Use Microsoft Cost Management to monitor your cost data and manage cloud governance cost. Cost Management combines data about your resource organization, Azure Advisor alerts, and your governance foundation.
 
-Monitor resource optimization to help reduce costs. You can use Azure Advisor to monitor Azure resource costs, and configure alerts for new Azure Advisor recommendations. You can also configure anomaly alerts in Cost Management to notify you when an unexpected cost occurs.
+You can use Advisor to monitor Azure resource costs, and configure alerts for new Advisor recommendations. You can also configure anomaly alerts in Cost Management to notify you when an unexpected cost occurs.
 
-Tailwind Traders created a cost budget to enforce new policy "Avoid overspending." To incorporate monitoring, they can:
+To help enforce Tailwind Trader's new "Avoid overspending" policy, they created a budget. To monitor their environment and ensure that their organization aligns with the new policy, they can:
 
 - Use Cost Management to monitor their spending and ensure that they stay within the budget. 
-
 - Configure alerts to notify the billing unit leader when spending exceeds the budget.
 - Develop a plan to block certain expenses or limit expenses to certain roles if violations occur.
 
 ### Exercise: Create a budget
 
-To get started with Cost Management, create your first budget with the [Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) tutorial.
+To get started with Cost Management, create your first budget with the [Create and manage Azure budgets tutorial](/azure/cost-management-billing/costs/tutorial-acm-create-budgets).
 
 ### Exercise: Find opportunities to optimize
 
-If you have existing deployments in your Azure environment, you likely have recommendations in the Azure portal that might affect your overall spending. Complete the [Optimize costs from recommendations](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations) tutorial to view recommendations from Azure Advisor and other recommendations that might reduce your costs. The recommendations identify opportunities to apply cost management best practices.
+If you have existing deployments in your Azure environment, you likely have recommendations in the Azure portal that might affect your overall spending. Complete the [Optimize costs from recommendations tutorial](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations) to view recommendations from Advisor and other recommendations that might reduce your costs. The recommendations identify opportunities to apply cost management best practices.
 
 ### Exercise: Use Azure Policy to prevent cost risks
 
@@ -44,7 +42,7 @@ To proactively limit unexpected costs, you can use Azure Policy to create guardr
 
 - **Azure regions**: Asset costs vary between Azure regions. When possible, you can use Azure Policy to limit deploying resources across regions.
 
-- **Azure SKUs**: The SKU that you select during deployment directly affects costs. To limit unexpected budget overrun, you can minimize the use of expensive resources in self-service or workload-owned subscriptions.
+- **Azure SKUs**: The SKU that you select during deployment directly affects costs. To limit unexpected budget overrun, you can use self-service or workload-owned subscriptions to minimize the use of expensive resources.
 
 To help prevent these risks:
 

@@ -1,10 +1,10 @@
-Cloud governance enforcement refers to the controls and procedures you use to align cloud use to the cloud governance policies. The cloud governance team must delegate enforcement responsibilities so that each team or individual can enforce cloud governance policies within their area of responsibility.
+Cloud governance enforcement refers to the controls and procedures that you incorporate to align cloud use to your cloud governance policies. Your cloud governance team must delegate enforcement responsibilities so that each team or individual in your organization can enforce cloud governance policies within their area of responsibility.
 
 To effectively enforce cloud governance policies:
 
 - **Define an approach for enforcing policies**: Delegate governance responsibilities, adopt an inheritance model for policies, apply tagging and naming conventions to the resources in the inheritance model, and implement a monitor-first approach to ensure a smooth transition to enforcement.
 
-- **Automate cloud governance**: Use cloud governance tools to automate compliance on a small set of policies and expand out. Incorporate infrastructure as code (IaC) tools or custom scripts or applications. Automate areas of governance such as:  
+- **Automate cloud governance**: Use cloud governance tools to automate compliance on a small set of policies and then add more policies. Incorporate infrastructure as code (IaC) tools or custom scripts or applications. Automate areas of governance such as:  
    - AI
    - Cost
    - Data
@@ -39,15 +39,13 @@ Define a tagging and naming strategy to provide a structured framework for resou
 
 ### Exercise: Assign a tagging policy
 
-You can apply Azure policies to all subscriptions in a management group. To understand the role of policy in your governance foundation, apply a policy to one of your management groups.
+You can apply Azure policies to all subscriptions in a management group. To understand the role of policy in your governance foundation, follow the [tutorial to assign a policy](/azure/governance/policy/tutorials/create-and-manage#assign-a-policy) to one of your management groups.
 
 :::image type="content" source="../media/select-assign-policy.png" alt-text="Screenshot that shows the assign policy button in the Azure portal." lightbox="../media/select-assign-policy.png":::
 
-To apply a policy, see the [tutorial to assign a policy](/azure/governance/policy/tutorials/create-and-manage#assign-a-policy).
+On step 4 of the tutorial, select a management group to ensure that you apply the policies to all subscriptions in the management group.
 
-- On step 4, select a management group to ensure that you apply the policies to all subscriptions in the management group.
-
-- On steps 6 and 7, select one of the built-in policies related to [tagging](/azure/governance/policy/samples/built-in-policies#tags). Specifically, the policy that requires a [tag on all resources](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F1e30110a-5ceb-460c-a204-c1c3969c6d62) helps establish a governance foundation.
+On steps 6 and 7 of the tutorial, select one of the built-in policies related to [tagging](/azure/governance/policy/samples/built-in-policies#tags). Specifically, the policy that requires a [tag on all resources](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F1e30110a-5ceb-460c-a204-c1c3969c6d62) helps establish a governance foundation.
 
 > [!IMPORTANT]
 > On step 9, set **Policy enforcement** to **Disabled**. When you disable this setting, you can audit your environment without making any changes, and you don't block future deployments.
