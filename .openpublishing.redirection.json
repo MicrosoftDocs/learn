@@ -39638,6 +39638,11 @@
       "source_path": "learn-pr/wwl-azure/describe-team-structures/9-summary.md",
       "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-key-vault-networking-settings/4-azure-key-vault-security.md",
+      "redirect_url": "/training/modules/configure-azure-key-vault-networking-settings/",
+      "redirect_document_id": false
     }
   ]
 }
