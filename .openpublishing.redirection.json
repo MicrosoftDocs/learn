@@ -39548,6 +39548,11 @@
       "source_path": "learn-pr/wwl-azure/choose-right-project/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/choose-right-project/3-decide-when-to-use-greenfield-brownfield-projects.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
     }
   ]
 }
