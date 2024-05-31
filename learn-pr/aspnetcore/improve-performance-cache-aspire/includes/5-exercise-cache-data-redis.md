@@ -94,7 +94,7 @@ Install the .NET Aspire workload using the .NET CLI:
     dotnet workload list
     ```
 
-    You should see the details of the aspire workload.
+    You should see the details of the `aspire` workload.
 
     ```console
     Installed Workload Id      Manifest Version      Installation Source
@@ -134,7 +134,7 @@ Let's use `git` to obtain a sample .NET Aspire app. The app doesn't yet have cac
 1. If the **Start Docker Desktop** dialog appears, select **Yes**.
 1. When the **eShop** .NET Aspire dashboard appears, for the **webapp** resource, select one of the endpoints:
 
-    :::image type="content" source="../media/dashboard-select-webapp.png" lightbox="../media/dashboard-select-webapp.png" alt-text="Screenshot showing where to start the webapp in the .NET Aspire dashboard.":::
+    :::image type="content" source="../media/dashboard-select-web-app.png" lightbox="../media/dashboard-select-web-app.png" alt-text="Screenshot showing where to start the webapp in the .NET Aspire dashboard.":::
 
 1. The endpoint displays the Northern Mountains homepage. Including the time on the server:
 
@@ -270,7 +270,7 @@ Output caching is now implemented in the Northern Mountains homepage. Let's test
 1. In Visual Studio, to start the app, press <kbd>F5</kbd> or select **Debug > Start Debugging**.
 1. When the **eShop** .NET Aspire dashboard appears, for the **webapp** resource, select one of the endpoints:
 
-    :::image type="content" source="../media/dashboard-select-webapp.png" lightbox="../media/dashboard-select-webapp.png" alt-text="Screenshot showing where to start the webapp in the .NET Aspire dashboard.":::
+    :::image type="content" source="../media/dashboard-select-web-app.png" lightbox="../media/dashboard-select-web-app.png" alt-text="Screenshot showing where to start the webapp in the .NET Aspire dashboard.":::
 
 1. The endpoint displays the Northern Mountains homepage, including the time on the server.
 1. Press <kbd>F5</kbd> to refresh the page. Because the page is cached for 10 seconds, the time displayed changes only when it's more than 10 seconds after the cached request.

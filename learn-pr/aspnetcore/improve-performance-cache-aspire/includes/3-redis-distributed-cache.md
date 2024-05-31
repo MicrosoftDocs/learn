@@ -14,7 +14,7 @@ To use distributed caching, changes are required in both the app host project an
 
 ### Configure the app host
 
-In you solution's app host project, start by installing the distributed caching hosting component:
+In your solution's app host project, start by installing the distributed caching hosting component:
 
 ```dotnetcli 
 dotnet add package Aspire.Hosting.Redis --prerelease
@@ -43,7 +43,7 @@ To install the .NET Aspire Distributed Cache component in a microservice, use a 
 dotnet add package Aspire.StackExchange.Redis.DistributedCache --prerelease
 ```
 
-Again, you can alternatively choose to use the NuGut package manager to install the component:
+Again, you can alternatively choose to use the NuGet package manager to install the component:
 
 :::image type="content" source="../media/install-caching-component.png" lightbox="../media/install-caching-component.png" alt-text="Screenshot showing the NuGet package manager in Visual Studio displaying .NET Aspire Redis caching components.":::
 
