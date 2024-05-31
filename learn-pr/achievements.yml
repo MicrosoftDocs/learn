@@ -3418,3 +3418,8 @@ achievements:
   title: Describe types of source control systems
   summary: This module describes different source control systems such Git and TFVC and helps with the initial steps for Git utilization.
   iconUrl: /training/achievements/6-describe-types-of-source-control-systems.svg
+- uid: learn.wwl.introduction-to-source-control.badge
+  type: badge
+  title: Introduction to source control
+  summary: This module introduces you to the basics of source control, exploring benefits and best practices.
+  iconUrl: /training/achievements/5-introduction-to-source-control.svg
