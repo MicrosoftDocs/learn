@@ -39763,6 +39763,11 @@
       "source_path": "learn-pr/wwl-azure/structure-your-git-repo/5-summary.md",
       "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/connect-azure-server-private-endpoint-using-azure-portal/4-connect-to-an-azure-sql-server-using-an-azure-private-endpoint-using-the-azure-portal.md",
+      "redirect_url": "/training/modules/connect-azure-server-private-endpoint-using-azure-portal",
+      "redirect_document_id": false
     }
   ]
 }
