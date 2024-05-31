@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.improve-performance-cache-aspire
+metadata:
+  title: Improve performance with a cache in a .NET Aspire app
+  description: In this module, you'll learn about caches in a .NET Aspire cloud-native app and how to use them to optimize the performance of your microservices.
+  ms.date: 03/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: module
+  ms.service: dotnet-aspire
+  ms.custom:
+  - team=cloud_advocates
+title: Improve performance with a cache in a .NET Aspire app
+summary: Learn about using Redis caching to increase performance in a cloud-native application. You'll also discover how .NET Aspire makes it easy to access Redis caching services from your microservices. 
+abstract: |
+  By the end of this module, you'll be able to:
+
+  - Choose a type of Redis caching for a specific performance optimization requirement.
+  - Use a Redis distributed cache to increase performance in a .NET Aspire app.
+  - Use a Redis output cache to complete HTML responses in a .NET Aspire app.
+ratingEnabled: true
+iconUrl: /training/achievements/dotnet-aspiresvg
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+products:
+- dotnet
+- vs
+- vs-code
+subjects:
+- custom-app-development
+units:
+- learn.improve-performance-cache-aspire.introduction
+- learn.improve-performance-cache-aspire.caches-redis
+- learn.improve-performance-cache-aspire.redis-distributed-cache
+- learn.improve-performance-cache-aspire.redis-output-cache
+- learn.improve-performance-cache-aspire.exercise-cache-data-redis
+- learn.improve-performance-cache-aspire.knowledge-check
+- learn.improve-performance-cache-aspire.summary
+badge:
+  uid: learn.improve-performance-cache-aspire.badge

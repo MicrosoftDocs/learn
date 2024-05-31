@@ -10,7 +10,7 @@ The Azure Quantum Development Kit (QDK) extension for Visual Studio Code allows 
     - An Azure Quantum workspace.
 
     > [!TIP]
-    > If you have an Azure Quantum workspace, you can benefit from **free $500 USD** in Azure Quantum Credits when you submit your Q# programs to Azure Quantum.
+    > If you have an Azure Quantum workspace, you can benefit from **USD500 free** in Azure Quantum Credits when you submit your Q# programs to Azure Quantum.
 
 ## Create and run a Q# program in Visual Studio Code
 
@@ -45,8 +45,8 @@ The QDK includes a set of Q# samples that you can use to learn more about Q# and
 
 ### Explore the Q# code
 
-1. Hover over `H` operation to see a short summary of the definition. 
-1. Place your cursor in front of the `H` operation, right-click and select **Go to Definition**.  This opens a read-only view of the standard library code for the function.
+1. Hover over the `H` operation to see a short summary of the definition. 
+1. Place your cursor in front of the `H` operation, right-click, and select **Go to Definition**.  This opens a read-only view of the standard library code for the function.
 
 ### Run the program locally
 
@@ -73,6 +73,6 @@ The QDK allows you to create Azure Quantum notebooks in VS Code. Azure Quantum n
 
 To create an Azure Quantum notebook:
 
-1. In VS Code open the **View** menu, and select **Command Palette**.
+1. In VS Code, open the **View** menu and select **Command Palette**.
 1. Type **Q#: Create an Azure Quantum notebook**.
 1. A Jupyter Notebook opens in a new tab. The notebook includes a code cell that imports the required packages for the sample, connects to the Azure Quantum service, and runs a Q# program.
