@@ -39643,6 +39643,126 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-key-vault-networking-settings/4-azure-key-vault-security.md",
       "redirect_url": "/training/modules/configure-azure-key-vault-networking-settings/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/index.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/7-describe-working-git-locally.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/5-examine-choose-git.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/4-explore-git-team-foundation-version-control.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/1-introduction.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/8-knowledge-check.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/9-summary.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/2-understand-centralized.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/3-understand-distributed.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/6-understand-objections-to-using-git.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-source-control/index.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-source-control/4-explore-benefits-of.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-source-control/5-explore-best-practices-for.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-source-control/2-explore-devops-foundational-practices.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-source-control/1-introduction.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-source-control/6-knowledge-check.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-source-control/7-summary.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-source-control/3-what-source-control.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/structure-your-git-repo/index.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/structure-your-git-repo/2-explore-monorepo-versus-multiple-repos.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/structure-your-git-repo/3-implement-change-log.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/structure-your-git-repo/1-introduction.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/structure-your-git-repo/4-knowledge-check.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/structure-your-git-repo/5-summary.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
     }
   ]
 }
