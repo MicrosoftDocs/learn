@@ -1,6 +1,6 @@
 The Azure security baseline for API Management applies guidance from Microsoft's Cloud Security Benchmark version 1.0 to API Management. The Microsoft cloud security benchmark provides recommendations on how you can secure your cloud solutions on Azure. The content is grouped by the security controls defined by the Microsoft cloud security benchmark and the related guidance applicable to API Management.
 
-You can monitor this security baseline and its recommendations using Microsoft Defender for Cloud. Azure Policy definitions will be listed in the Regulatory Compliance section of the Microsoft Defender for Cloud portal page.<br>
+You can monitor this security baseline and its recommendations using Microsoft Defender for Cloud. Azure Policy definitions will be listed in the Regulatory Compliance section of the Microsoft Defender for Cloud portal page.
 
 When a feature has relevant Azure Policy Definitions, they're listed in this baseline to help you measure compliance with the Microsoft cloud security benchmark controls and recommendations. Some recommendations might require a paid Microsoft Defender plan to enable certain security scenarios.
 
@@ -14,9 +14,13 @@ Description: Service supports deployment into customer's private Virtual Network
 
 Configuration Guidance: Deploy Azure API Management inside an Azure Virtual Network (VNET), so it can access backend services within the network. The developer portal and API Management gateway can be configured to be accessible either from the Internet (External) or only within the Vnet (Internal).
 
- -  External: the API Management gateway and developer portal are accessible from the public internet via an external load balancer. The gateway can access resources within the virtual network.<br>
+ -  External: the API Management gateway and developer portal are accessible from the public internet via an external load balancer. The gateway can access resources within the virtual network.
+    
+    
      -  External Virtual Network Configuration
  -  Internal: the API Management gateway and developer portal are accessible only from within the virtual network via an internal load balancer. The gateway can access resources within the virtual network.
+    
+    
      -  Internal Virtual Network Configuration
 
 Feature: Network Security Group Support
@@ -46,7 +50,7 @@ Description: Service supports disabling public network access either through usi
 Configuration Guidance: Disable public network access either using the IP ACL filtering rule on the NSGs assigned to the service's subnets or a toggling switch for public network access.
 
 > [!NOTE]
-> API Management supports deployments into a virtual network, as well as locking down non-network-based deployments with a private endpoint and disabling public network access.<br>
+> API Management supports deployments into a virtual network, as well as locking down non-network-based deployments with a private endpoint and disabling public network access.
 
 **Feature**: Microsoft Defender for Cloud monitoring
 
@@ -57,11 +61,11 @@ Azure Policy built-in definitions - Microsoft.ApiManagement:
 | API Management services should use a virtual network                                       | Azure Virtual Network deployment provides enhanced security, isolation and allows you to place your API Management service in a non-internet routable network that you control access to. These networks can then be connected to your on-premises networks using various VPN technologies, which enables access to your backend services within the network and/or on-premises. The developer portal and API gateway can be configured to be accessible either from the Internet or only within the virtual network. | Audit, Deny, Disabled      | 1.0.2               |
 | API Management should disable public network access to the service configuration endpoints | To improve the security of API Management services, restrict connectivity to service configuration endpoints, like direct access management API, Git configuration management endpoint, or self-hosted gateways configuration endpoint.                                                                                                                                                                                                                                                                               | AuditIfNotExists, Disabled | 1.0.1               |
 
- **NS-6**: **Deploy web application firewall**
+**NS-6**: **Deploy web application firewall**
 
 Other guidance for NS-6: To protect critical Web/HTTP APIs configure API Management within a Virtual Network (VNET) in internal mode and configure an Azure Application Gateway. Application Gateway is a PaaS service. It acts as a reverse-proxy and provides L7 load balancing, routing, web application firewall (WAF), and other services. Learn more.
 
-Combining API Management provisioned in an internal VNET with the Application Gateway frontend enables the following scenarios:<br>
+Combining API Management provisioned in an internal VNET with the Application Gateway frontend enables the following scenarios:
 
  -  Use a single API Management resource for exposing all APIs to both internal consumers and external consumers.<br>
  -  Use a single API Management resource for exposing a subset of APIs to external consumers.
@@ -86,11 +90,11 @@ Description: Local authentications methods supported for data plane access, such
 
 Feature notes: Avoid the usage of local authentication methods or accounts, these should be disabled wherever possible. Instead use Azure AD to authenticate where possible.
 
-Configuration Guidance: Restrict the use of local authentication methods for data plane access, maintain inventory of API Management user accounts and reconcile access as needed. In API Management, developers are the consumers of the APIs that exposed with API Management. By default, newly created developer accounts are Active, and associated with the Developers group. Developer accounts that are in an active state can be used to access all of the APIs for which they have subscriptions.<br>
+Configuration Guidance: Restrict the use of local authentication methods for data plane access, maintain inventory of API Management user accounts and reconcile access as needed. In API Management, developers are the consumers of the APIs that exposed with API Management. By default, newly created developer accounts are Active, and associated with the Developers group. Developer accounts that are in an active state can be used to access all of the APIs for which they have subscriptions.
 
-Also, Azure API Management subscriptions are one means of securing access to APIs and come with a pair of generated subscription keys which support rotation.<br>
+Also, Azure API Management subscriptions are one means of securing access to APIs and come with a pair of generated subscription keys which support rotation.
 
-Instead of using other auth methods, where possible use Azure Active Directory (Azure AD) as the default authentication method to control your data plane access.<br>
+Instead of using other auth methods, where possible use Azure Active Directory (Azure AD) as the default authentication method to control your data plane access.
 
 ### IM-3: Manage application identities securely and automatically
 
@@ -110,7 +114,7 @@ Configuration Guidance: There's no current Microsoft guidance for this feature c
 
 Other guidance for IM-5: Azure API Management can be configured to leverage Azure Active Directory (Azure AD) as an identity provider for authenticating users on the Developer Portal in order to benefit from the SSO capabilities offered by Azure AD. Once configured, new Developer Portal users can choose to follow the out-of-the-box sign-up process by first authenticating through Azure AD and then completing the sign-up process on the portal once authenticated.
 
-Alternatively, the sign-in/sign-up process can be further customized through delegation. Delegation allows you to use your existing website for handling developer sign in/sign up and subscription to products, as opposed to using the built-in functionality in the developer portal. It enables your website to own the user data and perform the validation of these steps in a custom way.<br>
+Alternatively, the sign-in/sign-up process can be further customized through delegation. Delegation allows you to use your existing website for handling developer sign in/sign up and subscription to products, as opposed to using the built-in functionality in the developer portal. It enables your website to own the user data and perform the validation of these steps in a custom way.
 
 ### IM-7: Restrict resource access based on conditions
 
@@ -138,7 +142,7 @@ Description: Service has the concept of a local administrative account.
 
 Feature notes: Avoid the usage of local authentication methods or accounts, these should be disabled wherever possible. Instead use Azure AD to authenticate where possible.
 
-Configuration Guidance: If not required for routine administrative operations, disable or restrict any local admin accounts for only emergency use.<br>
+Configuration Guidance: If not required for routine administrative operations, disable or restrict any local admin accounts for only emergency use.
 
 > [!NOTE]
 > API Management allows creation of local user account. Instead of creating these local accounts, enable Azure Active Directory (Azure AD) authentication only, and assign permissions to these Azure AD accounts.
@@ -155,7 +159,7 @@ Configuration Guidance: Use Azure role-based access control (Azure RBAC) for con
 
 Feature: Customer Lockbox
 
-Description: Customer Lockbox can be used for Microsoft support access.<br>
+Description: Customer Lockbox can be used for Microsoft support access.
 
 Configuration Guidance: In support scenarios where Microsoft needs to access your data, use Customer Lockbox to review, then approve or reject each of Microsoft's data access requests.
 
@@ -191,7 +195,7 @@ Other guidance for DP-3: Management plane calls are made through Azure Resource 
 
 Feature: Key Management in Azure Key Vault
 
-Description: The service supports Azure Key Vault integration for any customer keys, secrets, or certificates.<br>
+Description: The service supports Azure Key Vault integration for any customer keys, secrets, or certificates.
 
 Configuration Guidance: Set up integration of API Management with Azure Key Vault. Ensure that keys used by API Management are stored an Azure Key Vault so they can be securely accessed and updated.
 

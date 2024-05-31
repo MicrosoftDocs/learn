@@ -1,14 +1,14 @@
 The Azure Container Registry service supports a set of built-in Azure roles that provide different levels of permissions to an Azure container registry. Use Azure role-based access control (Azure RBAC) to assign specific permissions to users, service principals, or other identities that need to interact with a registry, for example to pull or push container images. You can also define custom roles with fine-grained permissions to a registry for different operations.
 
-| **Role/Permission** | **Access Resource Manager** | **Create/delete registry** | **Push image** | **Pull image** | **Delete image data** | **Change policies** |  **Sign images** |
-| ------------------- | --------------------------- | -------------------------- | -------------- | -------------- | --------------------- | ------------------- | ---------------- |
-| Owner               | X                           | X                          | X              | X              | X                     | X                   |                  |
-| Contributor         | X                           | X                          | X              | X              | X                     | X                   |                  |
-| Reader              | X                           |                            |                | X              |                       |                     |                  |
-| AcrPush             |                             |                            | X              | X              |                       |                     |                  |
-| AcrPull             |                             |                            |                | X              |                       |                     |                  |
-| AcrDelete           |                             |                            |                |                | X                     |                     |                  |
-| AcrImageSigner      |                             |                            |                |                |                       |                     | X                |
+| **Role/Permission** | **Access Resource Manager** | **Create/delete registry** | **Push image** | **Pull image** | **Delete image data** | **Change policies** | **Sign images** |
+| ------------------- | --------------------------- | -------------------------- | -------------- | -------------- | --------------------- | ------------------- | --------------- |
+| Owner               | X                           | X                          | X              | X              | X                     | X                   |                 |
+| Contributor         | X                           | X                          | X              | X              | X                     | X                   |                 |
+| Reader              | X                           |                            |                | X              |                       |                     |                 |
+| AcrPush             |                             |                            | X              | X              |                       |                     |                 |
+| AcrPull             |                             |                            |                | X              |                       |                     |                 |
+| AcrDelete           |                             |                            |                |                | X                     |                     |                 |
+| AcrImageSigner      |                             |                            |                |                |                       |                     | X               |
 
 ## Assign roles
 
