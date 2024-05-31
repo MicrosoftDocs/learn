@@ -1,11 +1,11 @@
 
-Classical computers don't produce random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates a deterministic sequence of numbers based on some initial value, called a _seed_. To better approximate random values, this seed is often the current time from the CPU's clock.
+Classical computers don't produce random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates a deterministic sequence of numbers based on some initial value (called a _seed_). To better approximate random values, this seed is often the current time from the CPU's clock.
 
 Quantum computers, on the other hand, can generate truly random numbers. This is because the measurement of a qubit in superposition is a probabilistic process. The result of the measurement is random, and there's no way to predict the outcome. This is the basic principle of quantum random number generators.
 
 ## Define the QRNG problem
 
-You start by taking a qubit in a basis state, for example zero. The first step of the QRNG is to use an `H` operation to put the qubit into an equal superposition. The measurement of this state results in a zero or a one with 50% probability of each outcome. The value of this bit is truly random, there's no way of knowing what you will get after the measurement. But how can you use this behavior to generate larger random numbers?
+You start by taking a qubit in a basis state, such as zero. The first step of the QRNG is to use an `H` operation to put the qubit into an equal superposition. The measurement of this state results in a zero or a one with 50% probability of each outcome. The value of this bit is truly random, there's no way of knowing what you will get after the measurement. But how can you use this behavior to generate larger random numbers?
 
 Let's say you repeat the process four times, generating this sequence of binary digits:
 
@@ -65,11 +65,11 @@ To do so, you:
 ## Explore the Q# code
 
 1. Hover over the `H` operation to see a short summary of the definition.
-1. Place your cursor in front of the `H` operation, right-click and select **Go to Definition**.  This opens a read-only view of the standard library code for the function.
+1. Place your cursor in front of the `H` operation, right-click and select **Go to Definition**. This opens a read-only view of the standard library code for the function.
 
 ## Run the program locally
 
-1. Open a new terminal, **Terminal > New Terminal**. 
+1. Open a new terminal by selecting **Terminal > New Terminal**. 
 1. To test run your program locally on the built-in simulator, click on **Run** from the list of commands below `@EntryPoint()`, or press **Ctrl+F5**. Your output will appear in the debug console.
 1. Run the program again to see a different result.
 
