@@ -4,7 +4,7 @@ title: Validate ASP.NET Core SignalR refactoring
 metadata:
   unitType: knowledge_check
   title: Validate ASP.NET Core SignalR refactoring
-  description: "In this unit, you'll validate ASP.NET Core SignalR refactoring to ensure that the source is functionally equivalent."
+  description: "In this unit, you validate ASP.NET Core SignalR refactoring to ensure that the source is functionally equivalent."
   ms.date: 11/09/2021
   author: IEvangelist
   ms.author: dapine
@@ -25,7 +25,7 @@ quiz:
           explanation: "Incorrect. The `HubConnection` is a client-side concept."
         - content: "It's an implementation of `Hub`."
           isCorrect: false
-          explanation: "Incorrect. Although this is partially true, the hub implements the strongly typed `Hub<TClient>`."
+          explanation: "Incorrect. Although this statement is partially true, the hub implements the strongly typed `Hub<TClient>`."
 
     - content: "Why was SignalR a preferred alternative to client-side polling?"
       choices:
@@ -35,7 +35,7 @@ quiz:
         - content: "At peak business hours, orders were lost because the server was flooded with requests."
           isCorrect: true
           explanation: "Correct! With SignalR, changes are broadcast to clients only as needed."
-        - content: "It's a personal preference, client-side polling isn't a preferred alternative."
+        - content: "It's a personal preference. Client-side polling isn't a preferred alternative."
           isCorrect: false
           explanation: "Incorrect. Although the two are functionally equivalent, with SignalR, changes are broadcast to clients only as needed."
 

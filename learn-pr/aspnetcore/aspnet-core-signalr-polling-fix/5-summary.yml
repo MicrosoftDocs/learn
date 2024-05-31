@@ -4,7 +4,7 @@ title: Summary
 metadata:
   unitType: summary
   title: Summary
-  description: This unit summarizes ASP.NET Core SignalR refactoring and provides links to resources and additional references.
+  description: This unit summarizes ASP.NET Core SignalR refactoring and provides links to resources and other references.
   ms.date: 11/09/2021
   author: IEvangelist
   ms.author: dapine
