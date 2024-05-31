@@ -9,4 +9,4 @@ Launch the exercise and follow the instructions.
 > To continue your learning journey, open the exercise in a new browser tab or window while staying on this page. To do this, right-click the Launch Exercise button and select Open link in new tab or Open link in new window.
 
 [:::image type="content" source="../media/launch-exercise-162c1d6a.png" alt-text="Screenshot showing an icon for the Launch Exercise button.":::
-](https://microsoftlearning.github.io/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/Instructions/Labs/LAB_05b_Perform%20soft-delete%20and%20purge%20protection%20key%20vault%20recovery.html)
+](https://github.com/MicrosoftLearning/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/blob/master/Instructions/Labs/LAB_06b_Perform%20soft-delete%20and%20purge%20protection%20key%20vault%20recovery.md)
