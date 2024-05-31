@@ -40,7 +40,6 @@ products:
 - azure-test-plans
 - github
 units:
-- learn.wwl.introduction-to-source-control.introduction
 - learn.wwl.introduction-to-source-control.what-source-control
 - learn.wwl.introduction-to-source-control.knowledge-check
 - learn.wwl.introduction-to-source-control.summary
