@@ -24,7 +24,7 @@ Azure supports accelerated networking for most general-purpose and compute-optim
 
 Every Azure Linux VM has at least the following two virtual disks:
 
-- The OS disk, labeled as `/dev/sda`, has a maximum capacity of 4 tebibytes (TiB) for disks in the Master Boot Record (MBR) format or 2 TiB for disks in the GUID Partition Table (GPT) format. The image you use to provision the Azure VM determines the default size.
+- The OS disk, labeled as `/dev/sda`, has a maximum capacity of 2 tebibytes (TiB) for disks in the Master Boot Record (MBR) format or 4 TiB for disks in the GUID Partition Table (GPT) format. The image you use to provision the Azure VM determines the default size.
 
   Avoid storing data and installing applications on the OS disk, because it's optimized for fast boot rather than running non-OS workloads.
 

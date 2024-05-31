@@ -34046,6 +34046,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/intro-to-event-hubs/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-event-hubs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-event-hubs/2-what-is-event-hubs.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-event-hubs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-event-hubs/3-how-event-hubs-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-event-hubs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-event-hubs/4-when-to-use-event-hubs.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-event-hubs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-event-hubs/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-event-hubs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-event-hubs/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-event-hubs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-event-hubs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-event-hubs/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/enterprise-scale-architecture/index.yml" ,
       "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone",
       "redirect_document_id": false
@@ -34583,6 +34618,96 @@
     {
       "source_path": "learn-pr/wwl-azure/enterprise-governance/4-azure-hierarchy.md",
       "redirect_url": "/training/paths/manage-identity-access-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/expose-hybrid-services-with-azure-relay/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-relay/relay-hybrid-connections-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/expose-hybrid-services-with-azure-relay/2-create-azure-relay-hybrid-connection.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-relay/relay-hybrid-connections-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/expose-hybrid-services-with-azure-relay/3-exercise-create-azure-relay-hybrid-connection.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-relay/relay-hybrid-connections-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/expose-hybrid-services-with-azure-relay/4-send-requests-through-relay.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-relay/relay-hybrid-connections-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/expose-hybrid-services-with-azure-relay/5-exercise-send-requests-through-relay.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-relay/relay-hybrid-connections-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/expose-hybrid-services-with-azure-relay/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-relay/relay-hybrid-connections-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/expose-hybrid-services-with-azure-relay/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-relay/relay-hybrid-connections-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/2-stream-analytics-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/3-create-stream-analytics-job.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/4-configure-job-input.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/5-configure-job-output.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/6-write-transformation-query.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/7-start-job.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/8-view-job-result.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/9-monitor-and-troubleshoot.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
       "redirect_document_id": false
     },
     {
@@ -39692,6 +39817,131 @@
     {
       "source_path": "learn-pr/wwl-azure/configure-azure-key-vault-networking-settings/4-azure-key-vault-security.md",
       "redirect_url": "/training/modules/configure-azure-key-vault-networking-settings/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/index.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/7-describe-working-git-locally.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/5-examine-choose-git.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/4-explore-git-team-foundation-version-control.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/1-introduction.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/8-knowledge-check.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/9-summary.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/2-understand-centralized.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/3-understand-distributed.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/6-understand-objections-to-using-git.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-source-control/index.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-source-control/4-explore-benefits-of.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-source-control/5-explore-best-practices-for.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-source-control/2-explore-devops-foundational-practices.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-source-control/1-introduction.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-source-control/6-knowledge-check.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-source-control/7-summary.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-source-control/3-what-source-control.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/structure-your-git-repo/index.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/structure-your-git-repo/2-explore-monorepo-versus-multiple-repos.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/structure-your-git-repo/3-implement-change-log.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/structure-your-git-repo/1-introduction.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/structure-your-git-repo/4-knowledge-check.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/structure-your-git-repo/5-summary.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/connect-azure-server-private-endpoint-using-azure-portal/4-connect-to-an-azure-sql-server-using-an-azure-private-endpoint-using-the-azure-portal.md",
+      "redirect_url": "/training/modules/connect-azure-server-private-endpoint-using-azure-portal",
       "redirect_document_id": false
     }
   ]
