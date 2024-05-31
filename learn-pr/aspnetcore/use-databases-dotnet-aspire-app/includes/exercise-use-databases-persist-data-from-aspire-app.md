@@ -418,7 +418,7 @@ The **Basket.API** project is now ready to use the MongoDB database. Let's test 
 1. Select the **Adventurer GPS Watch** from the home page.
 1. Select **Add to shopping bag**, you should see an exception:
 
-    :::image type="content" source="../media/r-p-c-exception.png" alt-text="A screenshot showing the RpcException.":::
+    :::image type="content" source="../media/exception.png" alt-text="A screenshot showing the RpcException.":::
 
 ### Debug the app
 
