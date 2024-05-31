@@ -40,6 +40,5 @@ products:
 - azure-test-plans
 - github
 units:
-- learn.wwl.introduction-to-source-control.what-source-control
 badge:
   uid: learn.wwl.introduction-to-source-control.badge
