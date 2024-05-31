@@ -11,22 +11,22 @@
       "redirect_document_id": false
     }, 
     {
-      "source_path": "learn-certs-pr/training/credentials/index.yml",
+      "source_path_from_root": "/learn-pr/credentials/index.yml",
       "redirect_url": "/credentials",
       "redirect_document_id": false
    },  
    {
-      "source_path": "learn-certs-pr/training/certifications/index.yml",
+      "source_path_from_root": "/learn-pr/certifications/index.yml",
       "redirect_url": "/credentials",
       "redirect_document_id": false
    },  
    {
-      "source_path": "learn-certs-pr/training/courses/index.yml",
+      "source_path_from_root": "/learn-pr/courses/index.yml",
       "redirect_url": "/training/browse/?resource_type=course",
       "redirect_document_id": false
    },  
    {
-      "source_path": "learn-certs-pr/training/courses/browse/index.yml",
+      "source_path_from_root": "/learn-pr/courses/browse/index.yml",
       "redirect_url": "/training/browse/?resource_type=course",
       "redirect_document_id": false
    },   
