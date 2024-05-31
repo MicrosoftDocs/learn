@@ -44,7 +44,6 @@ subjects:
 - devops
 units:
 - learn.wwl.structure-your-git-repo.introduction
-- learn.wwl.structure-your-git-repo.explore-monorepo-versus-multiple-repos
 - learn.wwl.structure-your-git-repo.implement-change-log
 - learn.wwl.structure-your-git-repo.knowledge-check
 - learn.wwl.structure-your-git-repo.summary
