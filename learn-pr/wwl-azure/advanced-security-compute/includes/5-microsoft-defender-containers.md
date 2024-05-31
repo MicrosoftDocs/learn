@@ -1,6 +1,6 @@
 Microsoft Defender for Containers is a cloud-native solution to improve, monitor, and maintain the security of your containerized assets (Kubernetes clusters, Kubernetes nodes, Kubernetes workloads, container registries, container images and more), and their applications, across multicloud and on-premises environments.
 
-Defender for Containers assists you with four core domains of container security:
+Defender for Containers assists you with four core domains of container security:<br>
 
  -  Security posture management - performs continuous monitoring of cloud APIs, Kubernetes APIs, and Kubernetes workloads to discover cloud resources, provide comprehensive inventory capabilities, detect misconfigurations and provide guidelines to mitigate them, provide contextual risk assessment, and empowers users to perform enhanced risk hunting capabilities through the Defender for Cloud security explorer.<br>
  -  Vulnerability assessment - provides agentless vulnerability assessment for Azure, AWS, and GCP with remediation guidelines, zero configuration, daily rescans, coverage for OS and language packages, and exploitability insights.<br>
@@ -26,23 +26,23 @@ You can use the resource filter to review the outstanding recommendations for yo
 
 **Kubernetes data plane hardening** \- To protect the workloads of your Kubernetes containers with best practice recommendations, you can install the Azure Policy for Kubernetes.
 
-With the add-on on your Kubernetes cluster, every request to the Kubernetes API server is monitored against the predefined set of best practices before being persisted to the cluster. You can then configure it to enforce the best practices and mandate them for future workloads.
+With the add-on on your Kubernetes cluster, every request to the Kubernetes API server is monitored against the predefined set of best practices before being persisted to the cluster. You can then configure it to enforce the best practices and mandate them for future workloads.<br>
 
-For example, you can mandate that privileged containers shouldn't be created, and any future requests to do so are blocked.
+For example, you can mandate that privileged containers shouldn't be created, and any future requests to do so are blocked.<br>
 
 ## Vulnerability assessment<br>
 
 Defender for Containers scans the container images in Azure Container Registry (ACR) and Amazon AWS Elastic Container Registry (ECR) to provide vulnerability reports for your container images, providing details for each vulnerability detected, remediation guidance, real-world exploit insights, and more.
 
-There are two solutions for vulnerability assessment in Azure, one powered by Microsoft Defender Vulnerability Management and one powered by Qualys.
+There are two solutions for vulnerability assessment in Azure, one powered by Microsoft Defender Vulnerability Management and one powered by Qualys.<br>
 
 ## Run-time protection for Kubernetes nodes and clusters
 
 Defender for Containers provides real-time threat protection for supported containerized environments and generates alerts for suspicious activities. You can use this information to quickly remediate security issues and improve the security of your containers.
 
-Threat protection at the cluster level is provided by the Defender agent and analysis of the Kubernetes audit logs. This means that security alerts are only triggered for actions and deployments that occur after you've enabled Defender for Containers on your subscription.
+Threat protection at the cluster level is provided by the Defender agent and analysis of the Kubernetes audit logs. This means that security alerts are only triggered for actions and deployments that occur after you've enabled Defender for Containers on your subscription.<br>
 
-Examples of security events that Microsoft Defenders for Containers monitors include:
+Examples of security events that Microsoft Defenders for Containers monitors include:<br>
 
  -  Exposed Kubernetes dashboards<br>
  -  Creation of high privileged roles
@@ -53,13 +53,13 @@ You can view security alerts by selecting the Security alerts tile at the top of
 :::image type="content" source="../media/defender-for-cloud-alerts-page-6029c1e5.png" alt-text="Screenshot showing how to view security alerts in Defender for Cloud.":::
 
 
-The security alerts page opens:
+The security alerts page opens:<br>
 
 :::image type="content" source="../media/alerts-for-runtime-workload-091200c3.png" alt-text="Screenshot showing security alerts for runtime workload in the clusters.":::
 
 
 Security alerts for runtime workload in the clusters can be recognized by the `K8S.NODE_` prefix of the alert type.
 
-Defender for Containers also includes host-level threat detection with over 60 Kubernetes-aware analytics, AI, and anomaly detections based on your runtime workload.
+Defender for Containers also includes host-level threat detection with over 60 Kubernetes-aware analytics, AI, and anomaly detections based on your runtime workload.<br>
 
 Defender for Cloud monitors the attack surface of multicloud Kubernetes deployments based on the MITRE ATT&CK matrix for Containers, a framework developed by the Center for Threat-Informed Defense in close partnership with Microsoft.

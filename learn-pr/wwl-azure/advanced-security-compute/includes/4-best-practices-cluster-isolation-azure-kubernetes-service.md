@@ -4,12 +4,8 @@ As you manage clusters in Azure Kubernetes Service (AKS), you often need to isol
 
 Kubernetes lets you logically isolate teams and workloads in the same cluster. The goal is to provide the least number of privileges scoped to the resources each team needs. A Kubernetes Namespace creates a logical isolation boundary. Other Kubernetes features and considerations for isolation and multi-tenancy include the following areas:
 
- -  Best practices for cluster isolation in Azure Kubernetes Service (AKS)
-    
-    
+ -  Best practices for cluster isolation in Azure Kubernetes Service (AKS)<br>
      -  Design clusters for multi-tenancy
-        
-        
          -  Scheduling
          -  Networking
          -  Authentication and authorization
@@ -21,7 +17,7 @@ Kubernetes lets you logically isolate teams and workloads in the same cluster. T
 
 *Scheduling* uses basic features like resource quotas and pod disruption budgets.
 
-More advanced scheduler features include:
+More advanced scheduler features include:<br>
 
  -  Taints and tolerations.<br>
  -  Node selectors.
@@ -58,13 +54,13 @@ With logical isolation, you can use a single AKS cluster for multiple workloads,
 :::image type="content" source="../media/logical-isolation-7e3f58e3.png" alt-text="Diagram showing an example of logically isolated clusters.":::
 
 
-Logical separation of clusters usually provides a higher pod density than physically isolated clusters, with less excess compute capacity sitting idle in the cluster. When combined with the Kubernetes cluster autoscaler, you can scale the number of nodes up or down to meet demands. This best practice approach minimizes costs by running only the required number of nodes.
+Logical separation of clusters usually provides a higher pod density than physically isolated clusters, with less excess compute capacity sitting idle in the cluster. When combined with the Kubernetes cluster autoscaler, you can scale the number of nodes up or down to meet demands. This best practice approach minimizes costs by running only the required number of nodes.<br>
 
-Kubernetes environments aren't entirely safe for hostile multitenant usage. In a multitenant environment, multiple tenants work on a shared infrastructure. If all tenants can't be trusted, you need extra planning to prevent tenants from impacting the security and service of others.
+Kubernetes environments aren't entirely safe for hostile multitenant usage. In a multitenant environment, multiple tenants work on a shared infrastructure. If all tenants can't be trusted, you need extra planning to prevent tenants from impacting the security and service of others.<br>
 
-Other security features, like Kubernetes RBAC for nodes, efficiently block exploits. For true security when running hostile multitenant workloads, you should only trust a hypervisor. The security domain for Kubernetes becomes the entire cluster and not an individual node.
+Other security features, like Kubernetes RBAC for nodes, efficiently block exploits. For true security when running hostile multitenant workloads, you should only trust a hypervisor. The security domain for Kubernetes becomes the entire cluster and not an individual node.<br>
 
-For these types of hostile multitenant workloads, you should use physically isolated clusters.
+For these types of hostile multitenant workloads, you should use physically isolated clusters.<br>
 
 ## Physically isolated clusters
 
@@ -75,4 +71,4 @@ Physically separating AKS clusters is a common approach to cluster isolation. In
 :::image type="content" source="../media/physical-isolation-24ce5695.png" alt-text="Diagram showing an example of physically isolated clusters.":::
 
 
-Physically isolated clusters usually have a low pod density. Since each team or workload has their own AKS cluster, the cluster is often over-provisioned with compute resources. Often, a few pods are scheduled on those nodes. Unclaimed node capacity can't be used for applications or services in development by other teams. These excess resources contribute to the extra costs in physically isolated clusters.
+Physically isolated clusters usually have a low pod density. Since each team or workload has their own AKS cluster, the cluster is often over-provisioned with compute resources. Often, a few pods are scheduled on those nodes. Unclaimed node capacity can't be used for applications or services in development by other teams. These excess resources contribute to the extra costs in physically isolated clusters.<br>

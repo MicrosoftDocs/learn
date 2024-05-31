@@ -39,9 +39,9 @@ You need to have a means of mapping vulnerabilities identified in container imag
 
 There’s enough change and volatility in a container ecosystem without allowing unknown containers as well. Allow only approved container images. Have tools and processes in place to monitor for and prevent the use of unapproved container images.
 
-An effective way of reducing the attack surface and preventing developers from making critical security mistakes is to control the flow of container images into your development environment. For example, you might sanction a single Linux distribution as a base image, preferably one that is lean (Alpine or CoreOS rather than Ubuntu), to minimize the surface for potential attacks.
+An effective way of reducing the attack surface and preventing developers from making critical security mistakes is to control the flow of container images into your development environment. For example, you might sanction a single Linux distribution as a base image, preferably one that is lean (Alpine or CoreOS rather than Ubuntu), to minimize the surface for potential attacks.<br>
 
-Image signing or fingerprinting can provide a chain of custody that enables you to verify the integrity of the containers. For example, Azure Container Registry supports Docker's content trust model, which allows image publishers to sign images that are pushed to a registry, and image consumers to pull only signed images.
+Image signing or fingerprinting can provide a chain of custody that enables you to verify the integrity of the containers. For example, Azure Container Registry supports Docker's content trust model, which allows image publishers to sign images that are pushed to a registry, and image consumers to pull only signed images.<br>
 
 ## Permit only approved registries
 
@@ -70,9 +70,9 @@ You can also minimize the potential attack surface by removing any unused or unn
 
 Reducing the number of variables or unknowns helps you maintain a stable, reliable environment. Limiting containers so they can access or run only preapproved or safe listed files and executables is a proven method of limiting exposure to risk.
 
-It’s a lot easier to manage a safe list when it’s implemented from the beginning. A safe list provides a measure of control and manageability as you learn what files and executables are required for the application to function correctly.
+It’s a lot easier to manage a safe list when it’s implemented from the beginning. A safe list provides a measure of control and manageability as you learn what files and executables are required for the application to function correctly.<br>
 
-A safe list not only reduces the attack surface but can also provide a baseline for anomalies and prevent the use cases of the "noisy neighbor" and container breakout scenarios.
+A safe list not only reduces the attack surface but can also provide a baseline for anomalies and prevent the use cases of the "noisy neighbor" and container breakout scenarios.<br>
 
 ## Enforce network segmentation on running containers
 
