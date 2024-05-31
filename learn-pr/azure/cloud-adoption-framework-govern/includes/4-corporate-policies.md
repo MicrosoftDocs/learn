@@ -4,9 +4,9 @@ Governance seeks to mitigate tangible risks through corporate policy. The polici
 
 Tailwind Traders has existing policies in place. A current policy states that "Customer and financial data can only be hosted in a specific network segment of the *existing datacenters*, referred to as protected assets." The policy is problematic, because the business plans to move its on-premises datacenters to the cloud.
 
-Corporate policies are designed to instruct teams on the best way to address tangible risks that the organization deems intolerable. Corporate policies aren't designed to require a specific technical implementation.
+Corporate policies are designed to instruct teams about the best way to address tangible risks that the organization deems intolerable. Corporate policies aren't designed to require a specific technical implementation.
 
-Unfortunately, the governance requirement for the "existing datacenters" was discovered only as the team prepared to deploy its first mission-critical workload to production. The policy has frozen the effort to migrate the company's current datacenters. More foresight would have helped the team address this policy sooner as they moved lower-risk workloads to production.
+Unfortunately, the governance requirement for the "existing datacenters" was discovered as the team prepared to deploy its first mission-critical workload to production and not earlier. The policy has frozen the effort to migrate the company's current datacenters. More foresight would have helped the team address this policy sooner as they moved lower-risk workloads to production.
 
 Currently, the governance policy hasn't affected the retail innovation team, and it has been delivering new innovations in the cloud faster than expected. However, the same datacenter challenges can block the following teams and efforts:
 
@@ -29,7 +29,7 @@ Before you create new policies or update existing policies, you need to assess c
 
 ## Example risks and high-risk areas
 
-As your workload gets larger, risk often increases. Consider the following examples of risk levels at various points of your adoption effort:
+Risk often increases as your workload expands. Consider the following examples of risk levels at various points of your adoption effort:
 
 - During early experimentation, you deploy a few assets that have little to no relevant data. The risk is small.
 
@@ -47,7 +47,7 @@ During your cloud risk assessment, you must determine which risks are a top prio
 | **Resource consistency** | Cloud operations depend on consistent resource configuration. Through governance tooling, you can consistently configure resources to manage risks that are related to onboarding, drift, discoverability, and recovery. |
 | **Deployment acceleration** | A centralized, standardized, and consistent deployment and configuration approach improves governance practices. Use cloud-based governance tooling to accelerate deployment activities. |
 
-Risk is relative. A small company with a few IT assets in a building that's offline has low risk. If it adds users and an internet connection with access to those assets, the risk intensifies. When that small company grows to Fortune 500 status, the risks are exponentially greater. As revenue, business processes, employee counts, and IT assets accumulate, risks increase and coalesce. IT assets help generate revenue. An outage might stop that revenue stream. Every moment of downtime equates to loss. As data accumulates, the risk for customers also grows.
+Risk is relative. A small company with a few IT assets in a building that's offline has low risk. If the company adds users and an internet connection with access to those assets, the risk intensifies. If that small company grows to Fortune 500 status, the risks are exponentially greater. Risks increase and coalesce as revenue, business processes, employee counts, and IT assets accumulate. IT assets help generate revenue. An outage might stop that revenue stream. Every moment of downtime results in loss. As data accumulates, the risk for customers also grows.
 
 ## Tailwind Trader's risks
 
