@@ -37,7 +37,7 @@ In this example, the `open` directive tells the Q# compiler to look for the `Mes
 
 ## Allocating qubits
 
-In Q#, to obtain a qubit you use the `use` keyword. Every qubit you allocate with the `use` keyword starts in the |0〉 state.
+In Q#, to obtain a qubit, you use the `use` keyword. Every qubit you allocate with the `use` keyword starts in the |0〉 state.
 
 You can allocate one or many qubits at a time. Here's an example that allocates one and five qubits:
 
@@ -61,7 +61,7 @@ operation SayHelloQ() : Unit {
 
 Here, `SayHelloQ` is the name of the operation. It takes zero arguments as its input and returns type `Unit`, which means that the operation returns no information.
 
-Q# libraries also provide operations that you can use in your programs. One operation you'll use later is the `H` operation. Given a qubit in Z-basis, the `H` operation puts the qubit into an *even* superposition. Once in superposition, the qubit has a 50% chance of being measured as zero or one.
+Q# libraries also provide operations that you can use in your programs. One operation you'll use later is the `H` operation. Given a qubit in Z-basis, the `H` operation puts the qubit into an *even* superposition. After it's in superposition, the qubit has a 50% chance of being measured as zero or one.
 
 ## Types
 
@@ -71,12 +71,12 @@ In this module, you'll work with the `Result` type. A `Result` represents the re
 
 ## Measuring qubits
 
-In Q#, Pauli measurements are done by applying the `Measure` operation, which performs a joint measurement of one or more qubits in the specified Pauli bases. The `Measure` operation returns a `Result` type, that is either `One` or `Zero`.
+In Q#, Pauli measurements are done by applying the `Measure` operation, which performs a joint measurement of one or more qubits in the specified Pauli bases. The `Measure` operation returns a `Result` type that is either `One` or `Zero`.
 
 > [!NOTE]
-> If the basis array and qubit array are different lengths, then the `Measure` operation will fail.
+> If the basis array and qubit array are different lengths, the `Measure` operation will fail.
 
-To implement a measurement in the computational basis {|0〉 ,|1〉} you can also use the `M` operation, which performs a measurement of a single qubit in the Pauli Z basis. Therefore the `M` operation is equivalent to applying `Measure([PauliZ], [qubit])`.
+To implement a measurement in the computational basis {|0〉 ,|1〉} you can also use the `M` operation, which performs a measurement of a single qubit in the Pauli Z basis. Therefore, the `M` operation is equivalent to applying `Measure([PauliZ], [qubit])`.
 
 A simple example is the following program, which allocates one qubit in the |0〉 state, then applies a Hadamard operation `H` to it and measures the result in the `PauliZ` basis.
 
