@@ -3413,6 +3413,16 @@ achievements:
   title: Describe team structures
   summary: This module explores agile development practices and helps to define and to configure teams and tools for collaboration.
   iconUrl: /training/achievements/3-describe-team-structures.svg
+- uid: learn.expose-hybrid-services-with-azure-relay.badge
+  type: badge
+  title: Expose hybrid services securely with Azure Relay
+  summary: Learn how Azure Relay lets you securely expose services that run in your on-premises network to clients in the cloud. Connect services across network boundaries, without having to open a port on your firewall or make intrusive changes to your corporate network infrastructure.
+  iconUrl: /training/achievements/expose-hybrid-services-with-azure-relay.svg
+- uid: learn.data-ai.transform-data-with-azure-stream-analytics.badge
+  type: badge
+  title: Transform data by using Azure Stream Analytics
+  summary: Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and return results.
+  iconUrl: /learn/achievements/data-ai/transform-data-with-azure-stream-analytics-badge.svg
 - uid: learn.wwl.describe-types-of-source-control-systems.badge
   type: badge
   title: Describe types of source control systems
