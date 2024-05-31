@@ -1,25 +1,23 @@
 ### YamlMime:Module
 uid: learn.azure.azure-container-instances-sidecar
 metadata:
-  title: Secure your apps by using the sidecar configuration in Azure Container Instances
-  description: Roll out Azure Container Instances into an Azure Virtual Network. You will evolve a basic container group into a more sophisticated configuration leveraging sidecar and initialization containers, as well as use private link to access other Azure PaaS resources.
-  ms.date: 04/27/2022
+  title: Use Azure Container Instances sidecar containers and private addressing
+  description: Learn to use YAML to define container instances, add functionality with sidecar and initialization containers, and use Azure Private Link for greater security.
+  ms.date: 10/12/2023
   author: erjosito
   ms.author: jomore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Secure your apps by using the sidecar configuration in Azure Container Instances
-summary: Roll out Azure Container Instances into an Azure Virtual Network. You will evolve a basic container group into a more sophisticated configuration leveraging sidecar and initialization containers, as well as use private link to access other Azure PaaS resources.
+  ms.topic: module
+  ms.service: container-instances
+title: Use Azure Container Instances sidecar containers and private addressing
+summary: Learn to use YAML to define container instances, add functionality with sidecar and initialization containers, and use Azure Private Link for greater security.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Deploy Azure Container Instances in Azure Virtual Networks
-  - Configure the Azure Container Instances using YAML (Yet Another Markup Language)
-  - Include sidecar containers in the YAML definition
-  - Include initialization containers in the YAML definition
-  - Integrate with an Azure PaaS service using Private Link
+  - Deploy Container Instances in Azure Virtual Networks by using Azure CLI.
+  - Learn to define containers with YAML for greater flexibility.
+  - Enhance an existing application with a sidecar container.
+  - Use Azure Private Link to privately address Azure platform-as-a-service (PaaS) resources.
+  - Use initialization containers to do initialization tasks.
 prerequisites: |
-  - Ability to deploy Azure Container Instances in Azure with a basic configuration
-  - Access to an Azure subscription with permissions to create resources
+  - Access to an Azure subscription with resource creation and role assignment permissions.
 iconUrl: /training/achievements/secure-apps-azure-container-instances-sidecar.svg
 levels:
 - intermediate
@@ -29,7 +27,7 @@ roles:
 products:
 - azure-container-instances
 subjects:
-- container
+- containers
 units:
 - learn.azure.azure-container-instances-sidecar.introduction
 - learn.azure.azure-container-instances-sidecar.deploy-into-virtual-network

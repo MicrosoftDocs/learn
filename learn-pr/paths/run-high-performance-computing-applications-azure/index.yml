@@ -5,9 +5,8 @@ metadata:
   description: Azure HPC is a purpose-built cloud capability for HPC & AI workload, using leading-edge processors and HPC-class InfiniBand interconnect, to deliver the best application performance, scalability, and value. Azure HPC enables users to unlock innovation, productivity, and business agility, through a highly available range of HPC & AI technologies that can be dynamically allocated as your business and technical needs change. This learning path is a series of modules that help you get started on Azure HPC - you can choose topics you are most interested in or progress through each of them one by one.
   ms.date: 07/16/2021
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jushiman
+  ms.topic: learning-path
 title: Run high-performance computing (HPC) applications on Azure
 prerequisites: |
   - Basic familiarity with Azure compute services
@@ -33,7 +32,7 @@ products:
 - azure-netapp-files
 subjects:
 - cloud-computing
-- high-performance-computing
+- infrastructure
 modules:
 - learn.intro-to-hpc
 - learn.azure.create-batch-account-using-azure-portal

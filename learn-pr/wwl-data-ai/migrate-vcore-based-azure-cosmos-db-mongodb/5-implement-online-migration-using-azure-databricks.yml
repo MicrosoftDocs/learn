@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.implement-online-migration-using-azure-databricks
+title: Migrate Data from MongoDB to vCore-based Azure Cosmos DB for MongoDB using Azure Databricks
+metadata:
+  title: Migrate Data from MongoDB to vCore-based Azure Cosmos DB for MongoDB using Azure Databricks
+  description: "Migrate Data from MongoDB to vCore-based Azure Cosmos DB for MongoDB using Azure Databricks"
+  ms.date: 04/08/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-implement-online-migration-using-azure-databricks.md)]

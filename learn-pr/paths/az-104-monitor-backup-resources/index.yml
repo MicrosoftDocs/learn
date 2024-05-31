@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/12/2022
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'AZ-104: Monitor and back up Azure resources'
 prerequisites: |
   - [Microsoft Azure Fundamentals: Describe cloud concepts](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
@@ -63,7 +62,6 @@ roles:
 - administrator
 products:
 - azure
-- azure-application-insights
 - azure-backup
 - azure-monitor
 - azure-site-recovery
@@ -71,14 +69,12 @@ products:
 subjects:
 - cloud-computing
 modules:
-- learn.wwl.configure-file-folder-backups
 - learn.wwl.configure-virtual-machine-backups
 - learn.wwl.configure-azure-monitor
-- learn.wwl.configure-azure-alerts
 - learn.wwl.configure-log-analytics
 - learn.wwl.configure-network-watcher
 - learn.incident-response-with-alerting-on-azure
 - learn.analyze-infrastructure-with-azure-monitor-logs
-- learn.monitor-vm-performance-using-azure-monitor-for-vms
+- learn.azure.monitor-azure-vm-using-diagnostic-data
 trophy:
   uid: learn.az-104-monitor-backup-resources.trophy

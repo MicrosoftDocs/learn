@@ -4,11 +4,14 @@ title: Exercise - Deploy your code to App Service
 metadata:
   title: Exercise - Deploy your code to App Service
   description: Exercise - Deploy your code to App Service
-  ms.date: 12/01/2020
+  ms.date: 05/03/2024
   author: cephalin
   ms.author: cephalin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-extended-java
+    - devx-track-python
   zone_pivot_groups: dev-lang-csharp-java-node-python
 interactive: bash
 azureSandbox: true

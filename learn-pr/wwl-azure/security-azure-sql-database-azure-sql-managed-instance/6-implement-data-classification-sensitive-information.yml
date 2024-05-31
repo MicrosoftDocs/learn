@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance.implement-data-classification-sensitive-information
+title: Implement data classification of sensitive information by using the Microsoft Purview governance portal
+metadata:
+  title: Implement data classification of sensitive information by using the Microsoft Purview governance portal
+  description: "Implement data classification of sensitive information by using the Microsoft Purview governance portal"
+  ms.date: 05/29/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-implement-data-classification-sensitive-information.md)]

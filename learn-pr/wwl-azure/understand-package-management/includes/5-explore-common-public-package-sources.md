@@ -14,73 +14,13 @@ It doesn't have to be open-source, although it is in most cases.
 
 Public and free package sources that offer feeds at no expense will usually require that you make the packages you store publically available as well.
 
-:::row:::
-  :::column:::
-    **Package type**
-  :::column-end:::
-  :::column:::
-    **Package source**
-  :::column-end:::
-  :::column:::
-    **URL**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    NuGet
-  :::column-end:::
-  :::column:::
-    NuGet Gallery
-  :::column-end:::
-  :::column:::
-    [https://nuget.org](https://nuget.org)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    NPM
-  :::column-end:::
-  :::column:::
-    NPMjs
-  :::column-end:::
-  :::column:::
-    [https://npmjs.org](https://npmjs.org)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Maven
-  :::column-end:::
-  :::column:::
-    Maven
-  :::column-end:::
-  :::column:::
-    [https://search.maven.org](https://search.maven.org)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Docker
-  :::column-end:::
-  :::column:::
-    Docker Hub
-  :::column-end:::
-  :::column:::
-    [https://hub.docker.com](https://hub.docker.com)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Python
-  :::column-end:::
-  :::column:::
-    Python Package Index
-  :::column-end:::
-  :::column:::
-    [https://pypi.org](https://pypi.org)
-  :::column-end:::
-:::row-end:::
-
+| **Package type** | **Package source**   | **URL**                                              |
+| ---------------- | -------------------- | ---------------------------------------------------- |
+| NuGet            | NuGet Gallery        | [https://nuget.org](https://nuget.org)               |
+| npm              | npmjs                | [https://npmjs.org](https://npmjs.org)               |
+| Maven            | Maven                | [https://search.maven.org](https://search.maven.org) |
+| Docker           | Docker Hub           | [https://hub.docker.com](https://hub.docker.com)     |
+| Python           | Python Package Index | [https://pypi.org](https://pypi.org)                 |
 
 The table above doesn't contain an extensive list of all public sources available.
 

@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: Review what you've learned about issue prioritization and a layered security approach based on security control type and function
-  ms.date: 02/28/2020
+  ms.date: 08/01/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/5-summary.md)]

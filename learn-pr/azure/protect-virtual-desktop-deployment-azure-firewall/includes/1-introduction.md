@@ -2,7 +2,7 @@ You can use Azure Firewall to protect the network traffic for Azure services lik
 
 ## Example scenario
 
-Suppose you work at a large accounting firm where you've deployed a host pool on Azure Virtual Desktop. Your organization is using Azure Virtual Desktop to provide your workforce access to virtualized desktops and apps, including some legacy apps. Because of the sensitive data with which your organization works and your organization's network security requirements, network security is very important to you. You can't have any unauthorized network traffic in your Azure Virtual Desktop environment. You want to start by limiting outbound network traffic for Azure Virtual Desktop by using Azure Firewall.
+Suppose you work at a large accounting firm, where you've deployed a host pool on Azure Virtual Desktop. Your organization is using Azure Virtual Desktop to provide your workforce access to virtualized desktops and apps, including some legacy apps. Because of the sensitive data with which your organization works and your organization's network-security requirements, network security is very important to you. You can't have any unauthorized network traffic in your Azure Virtual Desktop environment. You want to start by limiting outbound network traffic for Azure Virtual Desktop by using Azure Firewall.
 
 ## What will we be doing?
 

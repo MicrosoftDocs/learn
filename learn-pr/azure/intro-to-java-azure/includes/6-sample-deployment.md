@@ -26,20 +26,20 @@ When you open the example in the browser, it should like this:
 
 In the src folder, you'll find object, controller, and repository classes.
 
-Because Java is platform independent, you're free to choose the OS. But the Java version is important for the deployment. You find the version in the pom.xml file.
+Because Java is platform independent, you're free to choose the OS, but the Java version is important for the deployment. You can find the Java version in the pom.xml file.
 
 ```xml
 <properties>
-    <java.version>1.8</java.version>
+    <java.version>17</java.version>
 </properties>
 ```
 
-The example uses Java 8. So our Azure App Service instance, whether Linux or Windows, should also use Java 8. Because the platform doesn't matter, we'll use Linux for our example.
+The example uses Java 8, so our Azure App Service instance, whether Linux or Windows, should also use Java 8. Because the platform doesn't matter, we'll use Linux for our example.
 
-We have to add some Azure dependencies to the pom.xml file. Adding the dependencies can happen automatically if you run the following command.
+We have to add some Azure dependencies to the pom.xml file. Adding the dependencies can happen automatically if you run the following command:
 
 ```bash
-mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
+mvn com.microsoft.azure:azure-webapp-maven-plugin:2.11.1:config
 ```
 
 The output of that command asks for some options to be specified. Those options will be stored automatically in pom.xml.
@@ -89,7 +89,7 @@ The pom.xml file has now added the required plug-in for the automatic Maven-base
  <plugin>
     <groupId>com.microsoft.azure</groupId>  
         <artifactId>azure-webapp-maven-plugin</artifactId>  
-        <version>1.12.0</version>  
+        <version>2.11.1</version>  
         <configuration>
           <schemaVersion>V2</schemaVersion>  
           <subscriptionId>XXX-XXX-XXX</subscriptionId>  

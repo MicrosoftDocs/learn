@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/30/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of a network security group in Azure?"
+    choices:
+    - content: "Enables the creation of virtual machines in Azure"
+      isCorrect: false
+      explanation: "Incorrect. A network security group doesn't enable the creation of virtual machines in Azure."
+    - content: "Provides storage for Azure resources"
+      isCorrect: false
+      explanation: "Incorrect. A network security group doesn't provide storage for Azure resources."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. A network security group is used to filter inbound and outbound network traffic to and from Azure resources in an Azure virtual network, helping to deliver secure and stable application hosting platforms."
+  - content: "Which of the following methods would associate an NSG with an Azure resource?"
+    choices:
+    - content: "During the creation of the Azure resource"
+      isCorrect: false
+      explanation: "Incorrect. NSG association isn't typically done during resource creation."
+    - content: "By modifying the virtual network settings"
+      isCorrect: true
+      explanation: "Correct. To associate a Network Security Group (NSG) with an Azure resource, you need to modify the virtual network settings and associate the NSG with the desired subnet or network interface."
+    - content: "By using Azure PowerShell commands"
+      isCorrect: false
+      explanation: "Incorrect. While possible, it isn't the primary method for associating NSGs with resources."
+  - content: "What happens to network traffic that doesn't match any NSG rules?"
+    choices:
+    - content: "It's allowed by default"
+      isCorrect: false
+      explanation: "Incorrect. Allowing traffic by default would pose a security risk."
+    - content: "It's denied by default"
+      isCorrect: true
+      explanation: "Correct. By default, network traffic that doesn't match any Network Security Group (NSG) rules is denied. This ensures that any traffic not explicitly allowed is blocked and helps maintain a secure network environment."
+    - content: "It's logged for analysis"
+      isCorrect: false
+      explanation: "Incorrect. NSGs don't log traffic by default, but logging can be enabled for further analysis."
+  - content: "How do Application Security Groups (ASGs) enhance network security within Azure Virtual Networks?"
+    choices:
+    - content: "By grouping virtual machines according to their functions to streamline network security rules application."
+      isCorrect: true
+      explanation: "Correct because ASGs allow administrators to group VMs based on their roles or functions, enabling more efficient and targeted security rule application, thus improving overall security posture and management efficiency."
+    - content: "By encrypting virtual network traffic"
+      isCorrect: false
+      explanation: "Incorrect because ASGs don't encrypt network traffic; encryption is managed through other mechanisms like Azure VPN Gateway or Azure ExpressRoute for securing network traffic."
+    - content: "By automatically applying antivirus software to all virtual machines within a group"
+      isCorrect: false
+      explanation: "Incorrect because ASGs don't deal with antivirus software; their purpose is to simplify network security management by grouping VMs for security rule application."

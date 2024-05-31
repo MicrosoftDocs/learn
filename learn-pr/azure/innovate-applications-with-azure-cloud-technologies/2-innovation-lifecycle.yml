@@ -4,10 +4,9 @@ metadata:
   title: Follow the innovation lifecycle
   description: The build, measure, and learn phases of the innovation lifecycle.
   ms.date: 04/14/2023
-  author: jomore
-  ms.author: jomore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Follow the innovation lifecycle
 durationInMinutes: 5
 content: |

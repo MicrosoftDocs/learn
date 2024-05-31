@@ -6,7 +6,8 @@ Computers were not always as small and mobile as they are now. Today's computers
 
 The first powerful computers were the size of a room and many of them did a single task. The British Colossus code-breaking computer of the 1940s is a good example. Another is the IBM 7094. These big computers were used in the Mercury and Gemini space programs in the United States.
 
-![Diagram showing a large cabinet, mainframe computer.](../media/mainframe-computer.png)
+:::image type="content" source="../media/mainframe-computer-1489577d.png" alt-text="Diagram showing a large cabinet, mainframe computer.":::
+
 
 These huge machines were called "mainframes" because of the cabinets (or frames) they were stored in. Some mainframes were programmed with switches. Others were fed tape that told them what to compute. In most cases, these machines did complex math to help humans save time. Programming in early computer science was difficult and time-consuming.
 
@@ -20,7 +21,8 @@ As computers became an essential part of life, a problem arose. If something on 
 
 In the early days of modern computing, this happened frequently. So people started making backups. Backups are copies of the data on a computer so it can be put on another computer if needed. Businesses (and some homes) began using multiple computers too, in case one failed.
 
-![Diagram showing tape backup disks.](../media/tape-backup.png)
+:::image type="content" source="../media/tape-backup-ec57aad6.png" alt-text="Diagram showing tape backup disks.":::
+
 
 Today's modern computers are much more resilient. New approaches to programming also make computing less prone to fail. For example, many modern programs automatically save work as it's being created. If the computer program fails, the data isn't lost.
 

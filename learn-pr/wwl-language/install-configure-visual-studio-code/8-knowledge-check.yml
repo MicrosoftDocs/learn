@@ -4,26 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/13/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following choices provides the best description of an Integrated Development Environment (IDE)?"
-    choices:
-    - content: "Visual Studio Code is an Integrated Development Environment."
-      isCorrect: false
-      explanation: "Incorrect. While it's true that Visual Studio Code is an IDE, this doesn't describe what an IDE is."
-    - content: "An Integrated Development Environment is tool that makes it easier to write code."
-      isCorrect: false
-      explanation: "Incorrect. While it's true that an IDE makes it easier to write code, an IDE also supports testing, versioning, and even code retirement processes."
-    - content: "An IDE is a suite of tools that supports the full software development lifecycle."
-      isCorrect: true
-      explanation: "Correct! An IDE is a suite of tools that supports the full software development lifecycle."
   - content: "Which area of the Visual Studio Code user interface is used to write code?"
     choices:
     - content: "Explorer."
@@ -40,9 +30,9 @@ quiz:
     - content: "Visual Studio Code."
       isCorrect: false
       explanation: "Incorrect. The Visual Studio Code integrated Terminal panel does support running command line interface commands, but other command line tools could be used."
-    - content: "The OmniSharp extension for C#."
+    - content: "C# Dev Kit."
       isCorrect: false
-      explanation: "Incorrect. The OmniSharp extension for C# provides editing support (including Syntax Highlighting, IntelliSense), but doesn't help with the `dotnet` commands."
+      explanation: "Incorrect. The C# Dev Kit and associated extensions published by Microsoft provide support developing and debugging C# projects, but they don't enable running the `dotnet` CLI commands."
     - content: "The .NET SDK."
       isCorrect: true
       explanation: "Correct! The .NET SDK is required in order to run .NET command line interface commands such as `dotnet run`."

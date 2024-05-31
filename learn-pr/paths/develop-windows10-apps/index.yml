@@ -6,8 +6,7 @@ metadata:
   ms.date: 12/10/2018
   author: QuinnRadich
   ms.author: quradic
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.topic: learning-path
 title: Develop Windows 10 applications
 summary: Learn how to develop, test, and deploy Windows 10 applications.
 prerequisites:  |
@@ -22,11 +21,9 @@ products:
 - windows
 subjects:
 - devops
-- development-tools
 modules:
 - learn-windows.introduction-w10-dev
 - learn-windows.introducing-visual-studio
 - learn-windows.writing-windows-10-apps
-- learn-windows.building-connected-windows-apps
 trophy:
   uid: learn-windows.develop-windows-apps.trophy

@@ -4,11 +4,10 @@ title: Improve search experience by ordering results by distance from a given re
 metadata:
   title: Improve search experience by ordering results by distance from a given reference point
   description: "Improve search experience by ordering results by distance from a given reference point"
-  ms.date: 09/21/2022
+  ms.date: 09/27/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

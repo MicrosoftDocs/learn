@@ -4,11 +4,10 @@ title: Create and subscribe to a Content Moderator resource
 metadata:
   title: Create and subscribe to a Content Moderator resource
   description: Learn how to create and subscribe to a Content Moderator resource in the Azure portal.
-  ms.date: 1/28/2019
+  ms.date: 12/19/2022
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/3-exercise-create-moderator-service.md)]

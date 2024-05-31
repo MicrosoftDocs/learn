@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.learn-learning-path-best-practices
+title: Learn learning path best practices
+metadata:
+  title: Learn learning path best practices
+  description: "Learn learning path best practices"
+  ms.date: 03/22/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-learn-learning-path-best-practices.md)]

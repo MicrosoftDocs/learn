@@ -4,11 +4,10 @@ title: "Characteristics and lifecycle of an incident"
 metadata:
   title: "Characteristics and lifecycle of an incident"
   description: "Characteristics and lifecycle of an incident"
-  ms.date: 05/07/2020
+  ms.date: 02/28/2024
   author: dnblankedelman
   ms.author: dnb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 durationInMinutes: 4
@@ -20,13 +19,13 @@ quiz:
 
   - content: 'Which of these can be considered the "pulse" of your system?'
     choices:
-    - content: 'monitoring'
+    - content: 'Monitoring'
       isCorrect: false
       explanation: 'Monitoring is a way we can check and report on a system.'
-    - content: 'a service ticketing system.'
+    - content: 'A service ticketing system'
       isCorrect: false
       explanation: 'A ticket system might be a useful place to keep details about incidents, but does not offer a pulse.'
-    - content: 'incidents'
+    - content: 'Incidents'
       isCorrect: true
       explanation: 'Correct, incidents do provide a pulse for you.'
 
@@ -40,7 +39,7 @@ quiz:
       explanation: 'Response is the second phase of an incident.'
     - content: 'Communication'
       isCorrect: true
-      explanation: 'Correct, communication is important but is not a phase of an incident.'
+      explanation: 'Correct, communication is important, but not a phase of an incident.'
     - content: 'Remediation'
       isCorrect: false
       explanation: 'Remediation is the third phase of an incident.'

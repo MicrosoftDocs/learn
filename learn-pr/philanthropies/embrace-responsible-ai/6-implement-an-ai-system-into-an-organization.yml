@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.embrace-responsible-ai.implement-an-ai-system-into-an-organization
+title: Exercise - Implement an AI system into an organization
+metadata:
+  title: Exercise - Implement an AI system into an organization
+  description: This content is a part of the 'Guided project - Embrace responsible AI' module. 
+  ms.date: 03/28/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-implement-an-ai-system-into-an-organization.md)]

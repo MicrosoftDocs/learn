@@ -1,21 +1,20 @@
 ### YamlMime:Module
 uid: learn.azure.using-eyetracking-and-voice-commands-mrtk
 metadata:
-  title: Enable eye-tracking and voice commands for objects on the HoloLens 2
-  description: This course provides the user an overall understanding on how to use eye-tracking and voice commands
-  ms.date: 09/09/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
-title: Enable eye-tracking and voice commands for objects on the HoloLens 2
-summary: Use eye-tracking and voice commands in your unity project and enhance user experience
+  title: Enable eye tracking and voice commands for objects on the HoloLens 2
+  description: This course provides the user an overall understanding on how to use eye tracking and voice commands
+  ms.date: 01/04/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: module
+title: Enable eye tracking and voice commands for objects on the HoloLens 2
+summary: In this module, you'll use eye tracking and voice commands in your Unity project and enhance user experience.
 abstract: |
-  By the end of this module you will be able to:
-  - Learn how to enable eye-tracking for HoloLens 2
-  - Learn how to use eye-tracking to trigger action
-  - Learn how to create speech commands
-  - Learn how to control speech commands globally and locally
+  By the end of this module, you'll be able to:
+  - Learn how to enable eye tracking for HoloLens 2.
+  - Learn how to use eye tracking to trigger action.
+  - Learn how to create speech commands.
+  - Learn how to control speech commands globally and locally.
 
 iconUrl: /training/achievements/using-eyetracking-and-voice-commands-mrtk.svg
 levels:
@@ -30,11 +29,11 @@ products:
 - azure
 - mrtk
 prerequisites: |
-  - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
+  - A Windows 10 or 11 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
   - (Optional) A HoloLens 2 device configured for development
-  - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
-  - [Set up a mixed reality project in Unity module](/training/modules/mixed-reality-toolkit-project-unity)
+  - Unity Hub with Unity 2021.3 or later installed and the Universal Windows Platform Build Support module added
+  - [Complete the previous modules](/training/modules/get-started-with-object-interaction)
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
   - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
 

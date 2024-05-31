@@ -4,11 +4,10 @@ title: Check your knowledge
 metadata:
   title: Check your knowledge
   description: Check your knowledge
-  ms.date: 04/16/2020
+  ms.date: 03/31/2023
   author: asajohnson
   ms.author: asjohnso
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 quiz:
   title: Check your knowledge

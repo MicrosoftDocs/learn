@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
 title: Virtualize I/O
 summary: Learn about how computer input/output is virtualized. Covers I/O basics and a case study of virtualizing I/O.

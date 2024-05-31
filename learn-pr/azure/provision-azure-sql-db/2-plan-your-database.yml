@@ -4,12 +4,11 @@ title: Plan your Azure SQL database
 metadata:
   title: Plan your Azure SQL database
   description: Plan your Azure SQL database
-  ms.date: 09/24/2018
+  ms.date: 10/17/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-plan-your-database.md)]

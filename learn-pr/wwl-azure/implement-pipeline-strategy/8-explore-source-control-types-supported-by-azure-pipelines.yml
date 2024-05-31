@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-pipeline-strategy.explore-source-control-types-supported-by-azure-pipelines
+title: Explore source control types supported by Azure Pipelines
+metadata:
+  title: Explore source control types supported by Azure Pipelines
+  description: "Explore source control types supported by Azure Pipelines"
+  ms.date: 05/26/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-explore-source-control-types-supported-by-azure-pipelines.md)]

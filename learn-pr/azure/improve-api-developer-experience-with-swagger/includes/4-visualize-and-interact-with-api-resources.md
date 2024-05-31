@@ -1,4 +1,4 @@
-The Swagger UI lets you interact and visualize an API's resources without requiring access to the source code. The graphical representation of your API is automatically generated from your OpenAPI specification, and makes it easier for other developers to build apps that consume your APIs.
+The Swagger UI lets you interact with and visualize an API's resources without requiring access to the source code. The graphical representation of your API is automatically generated from your OpenAPI specification, and makes it easier for other developers to build apps that consume your APIs.
 
 The Swagger UI visualizes operations and methods clearly, as shown in the following image.
 
@@ -39,13 +39,13 @@ Here's the XML nodes in use:
 - param: A parameter to the method, and what it represents.
 - returns: A description of what the method returns.
 
-The Swashbuckle tooling will automatically include your XML documentation comments in the OpenAPI documentation, and allow you to view it in Swagger UI.
+Once you [enable XML comments](/aspnet/core/tutorials/getting-started-with-swashbuckle#xml-comments), the Swashbuckle tooling can include your XML documentation comments in the OpenAPI documentation, and allows you to view it in Swagger UI.
 
 :::image type="content" source="../media/Swagger_UI_XML.png" alt-text="Image showing Swagger UI and added XML Comments." loc-scope="third-party":::
 
 ## Data annotations
 
-It's the same with data annotations. Just add an annotation to your model, and Swagger will extend the API documentation to include it.
+It's the same with data annotations. Just add an annotation to your model, and Swagger extends the API documentation to include it.
 
 For example, if you add the following annotation to a controller:
 
@@ -53,7 +53,7 @@ For example, if you add the following annotation to a controller:
 [Produces("application/json")]
 ```
 
-... you'll see the added information in Swagger UI:
+... you see the added information in Swagger UI:
 
 :::image type="content" source="../media/Swagger_UI_annotations.png" alt-text="Image showing Swagger UI with added content type added to annotations." loc-scope="third-party":::
 
@@ -61,7 +61,7 @@ For example, if you add the following annotation to a controller:
 
 There are several data annotations you should use when describing your API.
 
-- Identify which `content-types` your API handles on requests and responses. The following attribute specifies the only content type your API should use in both directions is `application/json`.
+- Identify which `content-types` your API handles on requests and responses. The following attributes specify that the API should only use the `application/json` content type in both directions.
 
     ```csharp
     [Produces("application/json")]
@@ -74,7 +74,7 @@ There are several data annotations you should use when describing your API.
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     ```
 
-    Your API may produce a standard set of response codes, in that case you can use the following attribute to specify 200, 400, and 404 instead of specifying each individually. Learn more on [using web API conventions](/aspnet/core/web-api/advanced/conventions).
+    Your API might produce a standard set of response codes, in that case you can use the following attribute to specify 200, 400, and 404 instead of specifying each individually. Learn more on [using web API conventions](/aspnet/core/web-api/advanced/conventions).
 
     ```csharp
     [ApiConventionMethod(typeof(DefaultApiConventions))]

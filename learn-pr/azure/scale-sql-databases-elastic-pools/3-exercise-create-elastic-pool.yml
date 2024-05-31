@@ -2,13 +2,15 @@
 uid: learn.azure-scale-azure-sql-databases-elastic-pools.exercise-create-elastic-pool
 metadata:
   title: Exercise - Create a SQL elastic pool
-  description: Exercise - Create a SQL elastic pool
-  ms.date: 5/03/2019
+  description: Use this exercise to create an Azure SQL elastic pool.
+  ms.date: 12/15/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Exercise - Create a SQL elastic pool
 interactive: bash
 azureSandbox: true

@@ -3,28 +3,28 @@ uid: learn.azure.deploy-templates-command-line-github-actions
 metadata:
   title: Automate the deployment of JSON ARM templates by using GitHub Actions
   description: Learn how to deploy JSON Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and GitHub Actions.
-  ms.date: 12/06/2022
+  ms.date: 03/13/2024
   author: pierreroman
   ms.author: pierrer
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: pierrer-06212021
+  ms.service: azure
 title: Automate the deployment of JSON ARM templates by using GitHub Actions
 summary: Learn how to deploy JSON Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and GitHub Actions. Use linked templates to break down complex templates into templates that are more modular. 
 abstract: |
-  After completing this module, you'll be able to:
+  After completing this module, you're able to:
 
   - Choose the best way to deploy JSON ARM templates, based on your needs.
   - Modularize your templates by using linked templates.
-  - Create GitHub Actions to deploy templates.
+  - Deploy templates from a GitHub Actions workflow.
 prerequisites: |
   - Ability to go to the Azure the portal
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-  - [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true)
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true&preserve-view=true)
+  - [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true&preserve-view=true)
   - Either:
-    - The latest version of the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest)
-    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azure-cli-latest)
+    - The latest version of the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest&preserve-view=true)
+    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azure-cli-latest&preserve-view=true)
   - A [GitHub](https://github.com?azure-portal=true) account
   - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
 iconUrl: /training/achievements/deploy-templates-command-line-github-actions.svg

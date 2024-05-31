@@ -4,12 +4,11 @@ title: When to use Azure Cache for Redis
 metadata:
   unitType: learning-content  
   title: When to use Azure Cache for Redis
-  description: How you can determine if Azure Cache for Redis is a suitable caching solution for your organization
-  ms.date: 04/09/2021  
+  description: How you can determine if Azure Cache for Redis is a suitable caching solution for your organization.
+  ms.date: 04/04/2024  
   author: tchristiani
   ms.author: terrychr
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/4-when-to-use-azure-cache-for-redis.md)]

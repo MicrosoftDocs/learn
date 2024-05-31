@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/13-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of these three main high availability scenarios for Azure VMs offers the highest uptime SLA?"
+    choices:
+    - content: "Single Azure VMs"
+      isCorrect: false
+      explanation: "Incorrect. Two or more VMs in different Availability Zones in the same Azure region offer a 99.99% uptime SLA."
+    - content: "Two or more VMs in the same Availability Set"
+      isCorrect: false
+      explanation: "Incorrect. Two or more VMs in different Availability Zones in the same Azure region offer a 99.99% uptime SLA."
+    - content: "Two or more VMs in different Availability Zones in the same Azure region"
+      isCorrect: true
+      explanation: "Correct. Two or more VMs in different Availability Zones in the same Azure region offer a 99.99% uptime SLA."
+  - content: "Can availability sets be deployed in Azure Availability Zones?"
+    choices:
+    - content: "No, they can't."
+      isCorrect: true
+      explanation: "Correct. It isn't possible to deploy Azure availability sets within an Azure Availability Zone. Choose one or the other as a deployment framework for virtual machines."
+    - content: "Yes, they can."
+      isCorrect: false
+      explanation: "Incorrect. It isn't possible to deploy Azure availability sets within an Azure Availability Zone. Choose one or the other as a deployment framework for virtual machines."
+    - content: "Yes, they have to be."
+      isCorrect: false
+      explanation: "Incorrect. It isn't possible to deploy Azure availability sets within an Azure Availability Zone. Choose one or the other as a deployment framework for virtual machines."
+  - content: "If the database and application components are installed on the same Azure VM, what type of architecture is being used?"
+    choices:
+    - content: "2-tier"
+      isCorrect: true
+      explanation: "Correct. In 2-tier configurations, you install the database and NetWeaver components on the same Azure VM to avoid network contention. In 3-tier configurations, database and application components are installed on separate Azure VMs."
+    - content: "3-tier"
+      isCorrect: false
+      explanation: "Incorrect. In 2-tier configurations, you install the database and NetWeaver components on the same Azure VM to avoid network contention. In 3-tier configurations, database and application components are installed on separate Azure VMs."
+    - content: "Single VM"
+      isCorrect: false
+      explanation: "Incorrect. In 2-tier configurations, you install the database and NetWeaver components on the same Azure VM to avoid network contention. In 3-tier configurations, database and application components are installed on separate Azure VMs."

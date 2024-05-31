@@ -4,11 +4,10 @@ title: The Cost Management discipline
 metadata:
   title: The Cost Management discipline
   description: After establishing a governance foundation, use that foundation to govern costs at scale.
-  ms.date: 09/22/2020
-  author: BrianBlanchard
-  ms.author: jumcn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/08/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/8-mature-cost-management.md)]

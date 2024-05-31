@@ -9,8 +9,7 @@ metadata:
   ms.reviewer: mimckitt
   author: Orin-Thomas
   ms.author: orthomas
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
 quiz:

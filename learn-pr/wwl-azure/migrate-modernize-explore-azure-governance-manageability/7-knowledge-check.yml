@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-azure-governance-manageability.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/11/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "In Azure Resource Manager, can the same resource be added to multiple resource groups simultaneously?"
+    choices:
+    - content: "Yes"
+      isCorrect: false
+      explanation: "Incorrect. A resource group is a logical container that simplifies managing multiple resources. Every resource exists in one, and only one, resource group."
+    - content: "No"
+      isCorrect: true
+      explanation: "Correct. A resource group is a logical container that simplifies managing multiple resources. Every resource exists in one, and only one, resource group."
+    - content: "Yes, but deleting the resource from one resource group deletes it from the other group(s)."
+      isCorrect: false
+      explanation: "Incorrect. A resource group is a logical container that simplifies managing multiple resources. Every resource exists in one, and only one, resource group."
+  - content: "Which Azure service allows enforcement of rules overresources, so those resources stay compliant with corporate standards and service level agreements?"
+    choices:
+    - content: "Management groups"
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy is the service in Azure to create, assign, and manage policies."
+    - content: "Azure Resource Manager"
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy is the service in Azure to create, assign, and manage policies."
+    - content: "Azure Policy"
+      isCorrect: true
+      explanation: "Correct. Azure Policy is the service in Azure to create, assign, and manage policies."
+  - content: "Which feature of Defender for Cloud is central to helping to understand a current security situation?"
+    choices:
+    - content: "Secure score"
+      isCorrect: true
+      explanation: "Correct. Defender for Cloud continually assesses resources, subscriptions, and organization for security issues. It then aggregates all the findings into a single \"secure score\" of a security situation: the higher the score, the lower the identified risk level."
+    - content: "Security recommendations"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Cloud continually assesses resources, subscriptions, and organization for security issues. It then aggregates all the findings into a single \"secure score\" of a security situation: the higher the score, the lower the identified risk level."
+    - content: "Security alerts"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Cloud continually assesses resources, subscriptions, and organization for security issues. It then aggregates all the findings into a single \"secure score\" of a security situation: the higher the score, the lower the identified risk level."

@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content
   title: Deploy Elastic on Azure virtual machines
   description: "This unit describes the steps for deploying Elastic on Azure virtual machines."
-  ms.date: 6/15/2021
+  ms.date: 01/10/2023
   author: yenchiho
   ms.author: yenchiho
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/2-deploy.md)]

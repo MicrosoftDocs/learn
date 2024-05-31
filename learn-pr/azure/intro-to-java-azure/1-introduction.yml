@@ -3,13 +3,13 @@ uid: learn.azure.intro-to-java-azure.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 11/16/2020
+  ms.date: 05/01/2023
   author: SandraAhlgrimm
   ms.author: sakriema
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors:
   - sakriema-11172020
 title: Introduction

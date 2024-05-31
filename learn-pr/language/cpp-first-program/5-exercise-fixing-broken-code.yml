@@ -6,9 +6,8 @@ metadata:
   description: Practice fixing broken C++ code and solving programming errors.
   author: saifeemustafaq
   ms.author: chnoring
-  ms.date: 11/18/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/04/2023
+  ms.topic: unit
   ms.custom: nextgen
 durationInMinutes: 7
 azureSandbox: true

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-intelligent-planners.exercise-automatically-invoke-functions
+title: Exercise - Automatically invoke functions
+metadata:
+  title: Exercise - Automatically invoke functions
+  description: "Exercise - Automatically invoke functions"
+  ms.date: 05/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-exercise-automatically-invoke-functions.md)]

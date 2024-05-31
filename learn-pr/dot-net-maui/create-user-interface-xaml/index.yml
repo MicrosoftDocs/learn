@@ -3,23 +3,26 @@ uid: learn.dotnet-maui.create-user-interface-xaml
 metadata:
   moduleType: standard
   title: "Create a UI in a .NET MAUI app by using XAML"
-  description: "Learn how to design a UI for a .NET MAUI app using XAML"
-  ms.date: 04/29/2022
+  description: "Learn how to design a UI for a .NET MAUI app using XAML."
+  ms.date: 10/04/2023
   author: codemillmatt 
-  ms.author: masoucou 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.author: masoucou
+  ms.manager: markl
+  ms.topic: module
+  ms.service: dotnet-mobile
+  ms.subservice: dotnet-maui
 title: Create a UI in a .NET MAUI app by using XAML
 summary: "Learn how to design a UI for a .NET MAUI app using XAML"
 abstract: |
   By the end of this module, you'll be able to describe:
-  - The benefits of using XAML over defining the UI for a .NET MAUI app in C#  
-  - The types available for defining a .NET MAUI app using XAML, and the properties these types expose
-  - How to handle UI events and wire them up in XAML
-  - How to create and use XAML mark-up extensions
-  - How to set platform-specific values in XAML mark-up
+  - The benefits of using XAML over defining the UI for a .NET MAUI app in C#.
+  - The types available for defining a .NET MAUI app using XAML, and the properties these types expose.
+  - How to handle UI events and wire them up in XAML.
+  - How to create and use XAML markup extensions.
+  - How to set platform-specific values in XAML markup.
 prerequisites: |
-  - Visual Studio 2022 with the .NET MAUI workload installed
+  - [Visual Studio 2022](https://www.visualstudio.com?azure-portal=true) with the .NET MAUI workload
+  - Optional: Local installations [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true), the [.NET SDK](https://dotnet.microsoft.com/download?azure-portal=true) with .NET MAUI workload, and the [.NET MAUI Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-maui?azure-portal=true)
   - Familiarity with C# and .NET
 iconUrl: /training/achievements/create-user-interface-xaml.svg
 levels:

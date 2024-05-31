@@ -1,4 +1,4 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.azure-vmware-solution.exercise-establish-outbound-internet
 title: Exercise - establish outbound internet connectivity
 metadata:
@@ -7,8 +7,7 @@ metadata:
   ms.date: 03/23/2023
   author: Mahesh-MSFT
   ms.author: maksh
-  ms.topic: interactive-tutorial
-  ms.prod: azure-vmware-solution
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/11-exercise-establish-outbound-internet.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authentication-microsoft-entra-id.configure-microsoft-entra-single-sign-on
+title: Implement single sign-on (SSO)
+metadata:
+  title: Implement single sign-on (SSO)
+  description: "Implement single sign-on (SSO)"
+  ms.date: 05/29/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/14-configure-microsoft-entra-single-sign-on.md)]

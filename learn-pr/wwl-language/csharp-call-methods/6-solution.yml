@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-call-methods.solution
-title: Review the solution to the discover and implement a method call challenge activity
+title: Review the solution to discover and implement a method call challenge activity
 metadata:
-  title: Review the solution to the discover and implement a method call challenge activity
-  description: "Review the solution to the discover and implement a method call challenge activity"
-  ms.date: 02/24/2023
+  title: Review the solution to discover and implement a method call challenge activity
+  description: "Review the solution to discover and implement a method call challenge activity"
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-solution.md)]

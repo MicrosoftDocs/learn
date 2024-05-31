@@ -5,11 +5,10 @@ metadata:
   title: Exercise - Set up your environment
   description: Create your Azure DevOps project and Azure resources.
   ms.custom: devdivchpfy22, engagement-fy23
-  ms.date: 08/19/2022
+  ms.date: 08/14/2023
   author: ramiMSFT
   ms.author: rabououn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/4-set-up-environment.md)]

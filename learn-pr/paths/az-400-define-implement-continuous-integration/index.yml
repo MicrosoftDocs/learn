@@ -4,11 +4,10 @@ metadata:
   title: "Define and implement continuous integration"
   description: "Create automated pipelines that continuously build, test, and deploy your applications and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
   brand: azure
-  ms.date: 06/25/2020
+  ms.date: 04/02/2024
   author: steved0x
   ms.author: sdanie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: "Define and implement continuous integration"
 summary: |
   Create automated pipelines that continuously build, test, package, and deploy your applications.

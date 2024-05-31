@@ -4,13 +4,12 @@ title: Use Azure Network Watcher to help diagnose network problems
 metadata:
   title: Use Azure Network Watcher to help diagnose network problems
   description: "Use Azure Network Watcher to help diagnose network problems"
-  ms.date: 06/08/2022
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/7-use-azure-network-watcher-to-help-diagnose-network-problems.md)]

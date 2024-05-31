@@ -4,12 +4,11 @@ uid: learn-windows.introducing-visual-studio.2-debugging
 metadata:
   title: The basics of debugging in Visual Studio
   description: An introduction to debugging.
-  ms.date: 08/23/2022
-  author: JohnKennedy
-  ms.author: jken
+  ms.date: 04/19/2023
+  author: alvinashcraft
+  ms.author: aashcraft
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.topic: unit
   
 durationInMinutes: 15
 content: |

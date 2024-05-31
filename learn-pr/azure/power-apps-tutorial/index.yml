@@ -6,10 +6,10 @@ metadata:
   ms.date: 01/01/2022
   author: "Sean-Kerawala"
   ms.author: "vinnietieto"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: powerapps
 title: Build a 3D mobile app with Power Apps in mixed reality
-summary: Learn about the foundational elements required to build a mixed reality application in the Power Apps low-code rapid development environment. Build a sales-oriented 3D mobile mixed reality application using Power Apps in mixed reality.
+summary: In this module, you'll learn about the foundational elements required to build a mixed reality application in the Power Apps low-code rapid development environment. You'll also build a sales-oriented 3D mobile mixed reality application using Power Apps in mixed reality.
 abstract: |
   By the end of this module you'll be able to:
   - Understand Power Apps in Mixed Reality and its use cases.
@@ -25,13 +25,13 @@ products:
 - windows-mixed-reality
 - power-apps
 prerequisites: |
-  - Microsoft organization credentials.
-  - Power Apps account.
-  - Mixed reality-supported iOS mobile device (iOS 13 or later) or Android mobile device (Android 7 or later).
-  - A Windows 8.1 or later PC.
-  - A supported browser to run [canvas apps](/powerapps/maker/canvas-apps/limits-and-config).
-  - Familiarity with OneDrive, SharePoint, and Excel.
-  - Power Apps application installed in a mobile device.
+  - Microsoft organization credentials
+  - Power Apps account
+  - Mixed reality-supported iOS mobile device (iOS 13 or later) or Android mobile device (Android 7 or later)
+  - A Windows 8.1 or later PC
+  - A supported browser to run [canvas apps](/powerapps/maker/canvas-apps/limits-and-config)
+  - Familiarity with OneDrive, SharePoint, and Excel
+  - Power Apps application installed in a mobile device
   
 subjects:
 - mixed-reality

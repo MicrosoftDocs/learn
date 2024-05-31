@@ -3,11 +3,10 @@ uid: learn.language.rust-create-program.3-basic-data-types
 metadata:
   title: Explore data types for numbers, text, and true/false values
   description: Review primary data types in Rust. Explore how integers, floating point numbers characters, and text strings are defined. Discover how true or false boolean values are used.
-  ms.date: 09/20/2021
+  ms.date: 12/05/2022
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Explore data types for numbers, text, and true/false values
 durationInMinutes: 7

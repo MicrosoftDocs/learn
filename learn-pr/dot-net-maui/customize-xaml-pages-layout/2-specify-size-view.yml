@@ -4,11 +4,14 @@ title: Specify the size of a view
 metadata:
   title: Specify the size of a view
   description: Learn how a layout and views enable you to build a user interface in a .NET MAUI application.
-  ms.date: 04/29/2022
+  ms.date: 11/07/2023
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
+  ms.service: azure
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 7
 content: |
   [!include[](includes/2-specify-size-view.md)]
@@ -19,10 +22,10 @@ quiz:
     choices:
     - content: "Holds a collection of child views and determines their size and position."
       isCorrect: true
-      explanation: "Correct. Multiple panels in .NET MAUI inherit from `LayoutPanel`. Each layout their child views differently."
+      explanation: "Correct. Multiple panels in .NET MAUI inherit from `LayoutPanel`. Each panel manages its child views differently."
     - content: "Arrange its child views in a single row or column."
       isCorrect: false
-      explanation: "This is incorrect. A `StackLayout`, arranges its child views in a single row or column."
+      explanation: "Incorrect. A `StackLayout`, arranges its child views in a single row or column."
     - content: "Encapsulates the layout options, such as `LayoutAlignment` and `Expands`."
       isCorrect: false
-      explanation: "This is incorrect. The `LayoutOptions` type encapsulates those two values which are related to positioning."
+      explanation: "Incorrect. The `LayoutOptions` type encapsulates those two values, which are related to positioning."

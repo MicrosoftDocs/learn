@@ -1,7 +1,19 @@
 ![Deploy to static website.](../media/serverless-app-static-concept.png)
 
-Now that we've tested the application on your local machine, it's time to publish it to the cloud. There are two aspects of your application that require attention before publishing. First, you need to deploy the local functions into Azure and then you need to make the static HTML and JavaScript files available on the web.
+Now that we've tested the application on your local machine, and deployed the API, it's time to deploy the client. 
 
-Azure Storage includes a feature where you can place files in a specific storage container, which makes them available for HTTP requests. This feature, known as static website support makes hosting publicly available web pages a simple process.
+## Client SignalR architecture 
 
-When you copy files to a storage container named `$web`, those files are available to web browsers via a secure server using the `https://<ACCOUNT_NAME>.<ZONE_NAME>.web.core.windows.net/<FILE_NAME>`  URI scheme.
+When the web page loads, the client application:
+
+* Gets the current list of stocks from the `/api/getStocks` HTTP endpoint. 
+* Connects to the SignalR endpoint. The connection is made to the `/api/negotiate` HTTP endpoint. 
+* Listens for the stock changes from the `/api` connection from the SignalR endpoint. When the event is received, the client updates the stock price in the UI. These updates aren't seen in the network tab of the browser because the connection is persistent. .
+
+
+## Deploy the client to Azure Static Web Apps
+
+To host the client, we'll use Azure Static Web Apps. Azure Static Web Apps is a service that automatically builds and deploys web apps to Azure from a code repository.
+
+The client needs to be built with the cloud API URL. The client build process, using WebPack, will replace the API URL with the cloud API URL. The URL is fetched from the .env file locally. To get this value in the GitHub Action, we need to set it as a secret in the GitHub repository.
+

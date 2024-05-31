@@ -1,63 +1,14 @@
-Spot user node pools allow you to access unused Azure compute capacity at lower prices but still support high-performance computing scenarios.
+Spot user node pools allow you to access unused Azure compute capacity at lower prices with support for high-performance computing scenarios.
 
-In the previous exercise, you created a standard user node pool, used the cluster autoscaler to manage the creation of nodes, and scaled the node count manually.
+In the previous exercise, you created a standard user node pool, used the cluster autoscaler to manage node creation, and scaled the node count manually.
 
-Here, you'll add a spot user node pool with automatic scaling to reduce your cluster's operational costs where usage still varies but isn't as predictable. You'll also deploy a workload with node affinity enabled so that the pod is scheduled on nodes in the spot node pool.
-
-## Enable preview features on your subscription
-
-1. Sign in to Azure Cloud Shell with your Azure account. Select the Bash version of Cloud Shell.
-
-    >[!div class="nextstepaction"]
-    >[Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
-
-    >[!CAUTION]
-    >
-    >This exercise uses preview features. After you enable some preview features in Azure, defaults might be used for all Azure Kubernetes Service (AKS) clusters created in the subscription. Test any preview features in non-production subscriptions to avoid unforeseen side effects in production deployments.
-
-1. Register the **spotpoolpreview** flag by running the `az feature register` command. This command takes two parameters: *namespace* identifies the resource provider you're registering the feature with, and *name* identifies the feature.
-
-    ```azurecli
-    az feature register --namespace "Microsoft.ContainerService" --name "spotpoolpreview"
-    ```
-
-1. Check that the registration is successful by querying the feature list table. Run the `az feature list` command to run the query. The feature's registration can take several minutes to finish, so you'll have to check the result periodically.
-
-    ```azurecli
-    az feature list -o table --query "[?contains(name, 'Microsoft.ContainerService/spotpoolpreview')].{Name:name,State:properties.state}"
-    ```
-
-1. When the feature registration is complete, run the `az provider register` command with the `--namespace` parameter to update the registration:
-
-    ```azurecli
-    az provider register --namespace Microsoft.ContainerService
-    ```
-
-## Install the Azure CLI preview extensions
-
-1. To work with this preview, you must use the aks-preview Azure CLI preview extension for AKS. Install version 0.4.0 of the Azure CLI preview extension by running the `az extension add` command:
-
-    ```azurecli
-    az extension add --name aks-preview
-    ```
-
-    You can check the installed version of the extension if you've already installed the preview version. Run the `az extension show` command to query the extension version:
-
-    ```azurecli
-    az extension show --name aks-preview --query [version]
-    ```
-
-    You can update the extension by running the `az extension update` command if you've previously installed the extension and need to update it to a newer version:
-
-    ```azurecli
-    az extension update --name aks-preview
-    ```
+The next step is for you to add a spot user node pool with automatic scaling to reduce your cluster's operational costs. Cluster usage varies based on resources needed and isn't predictable, so you set up rules to capture the spikes and dips. The workload is deployed with node affinity enabled so that the pod is scheduled on nodes in the spot node pool.
 
 ## Create a spot node pool
 
-You want to create a separate node pool that supports the batch-processing service. This node pool is a spot node pool that uses the Delete eviction policy and a spot maximum price of -1.
+You need to create a separate node pool that supports the batch-processing service. This node pool is a spot node pool that uses the Delete eviction policy and a spot maximum price of -1.
 
-1. Run the same `az aks nodepool add` command as in the previous exercise to add a new spot node pool to your cluster. You'll need to change the node pool name and add a few more parameters to identify this node pool as a spot node pool.
+1. Run the same `az aks nodepool add` command as in the previous exercise to add a new spot node pool to your cluster. You need to change the node pool name and add a few more parameters to identify this node pool as a spot node pool.
 
     Enter the following values to set the node pool's parameters:
 
@@ -157,7 +108,7 @@ You want to create a separate node pool that supports the batch-processing servi
     kubectl create namespace costsavings
     ```
 
-    You'll see a confirmation that the namespace was created:
+    Here's the output from the preceding command:
 
     ```output
     namespace/costsavings created
@@ -208,7 +159,7 @@ The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure
                 - "spot"
     ```
 
-1. Press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to close the editor.
+1. Press <kbd>Ctrl+S</kbd> to save the file, then press <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Run the `kubectl apply` command to apply the configuration and deploy the application in the `costsavings` namespace:
 
@@ -218,7 +169,7 @@ The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure
     -f spot-node-deployment.yaml
     ```
 
-    You'll see output like this example:
+      Here's the output from the preceding command:
 
     ```output
     pod/nginx created
@@ -230,7 +181,7 @@ The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure
     kubectl get pods --namespace costsavings -o wide
     ```
 
-    You'll see output like this example:
+    The output should resemble the following:
 
     ```output
     NAME    READY   STATUS    RESTARTS   AGE   IP           NODE                                   NOMINATED NODE   READINESS GATES

@@ -7,8 +7,7 @@ metadata:
   ms.date: 01/18/2023
   author: ArchanaUpadhyaya
   ms.author: archanau
-  ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Introduction
-  author: saifeemustafaq
-  ms.author: msaifee
-  ms.date: 04/14/2020
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: ggailey777
+  ms.author: glenga
+  ms.date: 03/18/2024
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

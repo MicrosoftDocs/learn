@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-implement-asynchronous-scenarios.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check."
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Why use a boolean flag to know when a Task has started?"
+    choices:
+    - content: "A boolean flag provides a simple and efficient way to signal the state of the Task to other parts of the code."
+      isCorrect: true
+      explanation: "Correct. A boolean flag provides an efficient way that tells you if a Task is running."
+    - content: "A boolean flag is used to pause a Task."
+      isCorrect: false
+      explanation: "Incorrect. A boolean flag is not used to pause a Task."
+    - content: "To enclose code that may throw an exception."
+      isCorrect: false
+      explanation: "Incorrect. A boolean flag is not used to enclose code that might throw an exception."
+  - content: "What is the difference between I/O bound and compute bound operations in C#?"
+    choices:
+    - content: "I/O bound operations involve waiting for external devices to exchange information, while compute bound operations involve calculations."
+      isCorrect: true
+      explanation: "Correct. I/O bound operations are for waiting for external operations to finish and compute bound operations involve calculations."
+    - content: "I/O bound operations involve calculations, while compute bound operations involve waiting for external devices to exchange information."
+      isCorrect: false
+      explanation: "Incorrect. I/O bound operations are for waiting for external operations to finish and compute bound operations involve calculations."
+    - content: "I/O bound operations involve waiting for user input, while compute bound operations involve waiting for external devices to exchange information."
+      isCorrect: false
+      explanation: "Incorrect. I/O bound operations are for waiting for external operations to finish. Compute bound operations involve calculations."
+  - content: "What is the purpose of the `Task.Factory.StartNew` method in the code?"
+    choices:
+    - content: "It starts a new task that runs the code within a Lambda expression."
+      isCorrect: true
+      explanation: "Correct. `Task.Factory.StartNew` starts a new task that runs within a Lambda expression."
+    - content: "It creates a new thread to run the code within the Lambda expression."
+      isCorrect: false
+      explanation: "Incorrect. `Task.Factory.StartNew` starts a new Task. It doesn't create a new Thread."
+    - content: "It starts a new process to run the code within the Lambda expression."
+      isCorrect: false
+      explanation: "Incorrect. `Task.Factory.StartNew` doesn't start a new process."

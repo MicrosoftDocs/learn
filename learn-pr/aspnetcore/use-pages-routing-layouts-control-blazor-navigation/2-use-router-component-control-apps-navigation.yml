@@ -8,8 +8,8 @@ metadata:
   ms.date: 8/24/2021
   author: csharpfritz
   ms.author: jefritz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-blazor
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-use-router-component-control-apps-navigation.md)]

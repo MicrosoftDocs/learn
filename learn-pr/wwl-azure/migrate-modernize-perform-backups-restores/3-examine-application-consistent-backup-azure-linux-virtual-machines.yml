@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-perform-backups-restores.examine-application-consistent-backup-azure-linux-virtual-machines
+title: Examine application-consistent backup of Azure Linux virtual machines
+metadata:
+  title: Examine application-consistent backup of Azure Linux virtual machines
+  description: "Examine application-consistent backup of Azure Linux virtual machines"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom: linux-related-content
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-examine-application-consistent-backup-azure-linux-virtual-machines.md)]

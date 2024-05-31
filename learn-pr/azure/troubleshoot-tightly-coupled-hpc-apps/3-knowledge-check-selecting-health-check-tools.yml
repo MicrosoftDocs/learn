@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 03/01/2021
+  ms.date: 05/09/2023
   author: garvct
   ms.author: cogarvey
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/3-knowledge-check-selecting-health-check-tools.md)]

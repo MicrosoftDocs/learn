@@ -3,11 +3,10 @@ uid: learn.optimize-costs-data-analysis-powerbi.analyze-costs-power-bi
 metadata:
   title: Analyze costs in the Microsoft Cost Management Power BI app to optimize costs
   description: Analyze costs in the Microsoft Cost Management Power BI app to optimize costs
-  ms.date: 11/01/2021
+  ms.date: 07/07/2023
   author: bandersmsft
   ms.author: banders
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Analyze costs in the Microsoft Cost Management Power BI app to optimize costs
 durationInMinutes: 5
 content: |

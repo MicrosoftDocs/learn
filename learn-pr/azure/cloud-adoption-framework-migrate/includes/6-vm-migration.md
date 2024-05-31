@@ -2,7 +2,7 @@ In this unit, you review Azure Migrate and how to use it to migrate specific wor
 
 ## Virtual machine replication
 
-You can add Server Migration to your Azure Migrate dashboard, which carries over machines and insights from the assessment completed during the Cloud Adoption Framework planning module. You can begin your replication by selecting **Replicate** in the tool window.
+You can add migration and modernization to your Azure Migrate dashboard, which carries over machines and insights from the assessment completed during the Cloud Adoption Framework planning module. You can begin your replication by selecting **Replicate** in the tool window.
 
 Azure Migrate performs concurrent replication for up to 500 virtual machines (VMs) and can manage up to 200 concurrent migrations. If you need to do more, we recommend that you create multiple batches. Times for replication vary based on the number and size of VMs, along with connection speeds between your datacenter and Azure.
 
@@ -12,7 +12,7 @@ Also at this stage, you're asked to specify the subscription, resource group, an
 
 After you start the replication, you can track and monitor the replication of each of your VMs.
 
-:::image type="content" source="../media/6-vm-replication.png" alt-text="Screenshot of the Azure Migrate Server Migration page in the Azure admin center." border="false":::
+:::image type="content" source="../media/6-vm-replication.png" alt-text="Screenshot of the Azure Migrate servers, databases and web apps page in the Azure portal." border="false":::
 
 *Figure 1: The Azure Migrate - Servers page in the Azure admin center.*
 
@@ -20,7 +20,7 @@ After you start the replication, you can track and monitor the replication of ea
 
 After all your targeted VMs are replicated and migrated into Azure, and before you migrate them into production, you can test them to ensure that everything works. The process runs a prerequisite check, prepares for the test, creates a new test VM, and starts the test. This process takes a few minutes.
 
-The test migration functionality in Server Migration runs without affecting on-premises machines. It allows you to test the migration process, perform any app testing, and address any issues before a full migration.
+The test migration functionality in Azure Migrate runs without affecting on-premises machines. It allows you to test the migration process, perform any app testing, and address any issues before a full migration.
 
 Testing your migration is a great feature that helps you become comfortable with the migration process. It also helps you understand any tasks that should happen after migration. You can carry out this test migration as many times as you need in order to refine the process and confirm the steps.
 
@@ -37,9 +37,9 @@ Terminating the source machine is an important step, but you should evaluate whi
 
 Because this step might affect production systems, migration should be completed during off-peak hours to minimize disruption to the business.
 
-:::image type="content" source="../media/6-vm-machines.png" alt-text="Screenshot of the Server Migration page for replicating machines in the Azure admin center." border="false":::
+:::image type="content" source="../media/6-vm-machines.png" alt-text="Screenshot of Azure Migrate replicating machines in the Azure portal." border="false":::
 
-Now, Server Migration runs through the production migration process. You can check the status as it validates the prerequisites, prepares for migration, creates the Azure VM, and starts the Azure VM.
+Now, Azure Migrate runs through the production migration process. You can check the status as it validates the prerequisites, prepares for migration, creates the Azure VM, and starts the Azure VM.
 
 ## Release tasks
 

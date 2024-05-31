@@ -2,20 +2,19 @@
 uid: learn.azure.azure-cyclecloud-high-performance-computing
 metadata:
   moduleType: standard
-  title: Create, customize and manage an HPC cluster in Azure with Azure CycleCloud
-  description: This module explains how to use Azure CycleCloud for high-performance computing. It explains how to install and configure Azure CycleCloud to work with your Azure subscription as well as how to integrate a third-party scheduler. Finally, it covers how to create and deploy a basic HPC cluster on Azure.
-  ms.date: 06/07/2021
+  title: Create, customize, and manage an HPC cluster in Azure with Azure CycleCloud
+  description: Learn how to use Azure CycleCloud to create, customize, and manage high-performance computing (HPC) clusters in Azure.
+  ms.date: 04/17/2024
   author: anhoward
   ms.author: anhoward
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Create, customize and manage an HPC cluster in Azure with Azure CycleCloud
-summary: Azure CycleCloud is an application that provides a simple, secure, and scalable way to create, customize, and manage HPC clusters in Azure. 
+  ms.topic: module
+  ms.service: cyclecloud
+title: Create, customize, and manage an HPC cluster in Azure with Azure CycleCloud
+summary: Azure CycleCloud is an application that provides a simple, secure, and scalable way to create, customize, and manage high-performance computing (HPC) clusters in Azure.
 abstract: |
   By the end of this module, you'll be able to:
-
   - Install and configure Azure CycleCloud to work with your Azure subscription.
-  - Integrate a third-party scheduler.
+  - Integrate a non-Microsoft scheduler.
   - Create and deploy a basic HPC cluster on Azure.
 prerequisites: |
   - An Azure subscription

@@ -5,11 +5,10 @@ title: How Docker containers work
 metadata:
   title: How Docker containers work
   description: In this unit, we explore how Docker containers work and how to run containers. We also discuss the life cycle of a Docker container.
-  ms.date: 03/24/2023
+  ms.date: 09/16/2023
   author: rayoef
   ms.author: rayoflores
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 10
 content: |

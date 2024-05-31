@@ -3,38 +3,45 @@ uid: learn.wwl.install-configure-visual-studio-code
 metadata:
   title: Install and configure Visual Studio Code
   description: "Learn how to configure Visual Studio Code for C# and how to use this professional IDE to create and run console applications."
-  ms.date: 04/13/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: dotnet-csharp
+  ai-usage: human-only
 title: Install and configure Visual Studio Code
 summary: Learn how to configure Visual Studio Code for C# and how to use this professional IDE to create and run console applications.
 abstract: |
   In this module, you will:
-  - Configure Visual Studio Code and your development environment for programming in C#.
-  - Explore the Visual Studio Code user interface.
-  - Create, edit, build, and run a console application using Visual Studio Code.
-prerequisites: |
-  - Experience creating simple C# console applications.
-iconUrl: /training/achievements/generic-badge.svg
+
+  -   Configure Visual Studio Code and your development environment for programming in C#.
+
+  -   Explore the Visual Studio Code user interface.
+
+  -   Create, edit, build, and run a console application using Visual Studio Code.
+prerequisites: '-   Experience creating simple C# console applications.'
+iconUrl: /training/achievements/install-configure-visual-studio-code.svg
 levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
 - student
 products:
 - dotnet
 - vs-code
 subjects:
-- development-tools
+- app-development
 units:
 - learn.wwl.install-configure-visual-studio-code.introduction
 - learn.wwl.install-configure-visual-studio-code.exercise-download-install-visual-studio-code
+- learn.wwl.install-configure-visual-studio-code.exercise-install-dotnet
 - learn.wwl.install-configure-visual-studio-code.examine-visual-studio-code-user-interface
 - learn.wwl.install-configure-visual-studio-code.exercise-explore-visual-studio-code-user-interface
 - learn.wwl.install-configure-visual-studio-code.exercise-configure-visual-studio-code
-- learn.wwl.install-configure-visual-studio-code.exercise-install-dotnet
 - learn.wwl.install-configure-visual-studio-code.exercise-create-build-run-app
 - learn.wwl.install-configure-visual-studio-code.knowledge-check
 - learn.wwl.install-configure-visual-studio-code.summary

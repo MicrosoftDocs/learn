@@ -6,9 +6,8 @@ metadata:
   description: Challenge your biases and assumptions, and learn how they affect your actions in the workplace.
   ms.date: 09/03/2021
   author: interurban
-  ms.author: jadenyer
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |

@@ -20,7 +20,7 @@ With SSO, you need to remember only one ID and one password. Access across appli
 > [!IMPORTANT]
 > Single sign-on is only as secure as the initial authenticator because the subsequent connections are all based on the security of the initial authenticator.
 
-## What’s Multifactor Authentication?
+## What’s multifactor authentication?
 
 Multifactor authentication is the process of prompting a user for an extra form (or factor) of identification during the sign-in process. MFA helps protect against a password compromise in situations where the password was compromised but the second factor wasn't.
 
@@ -36,9 +36,11 @@ Multifactor authentication increases identity security by limiting the impact of
 
 Compare multifactor authentication with single-factor authentication. Under single-factor authentication, an attacker would need only a username and password to authenticate. Multifactor authentication should be enabled wherever possible because it adds enormous benefits to security.
 
-### What's Azure AD Multi-Factor Authentication?
+<a name='whats-azure-ad-multi-factor-authentication'></a>
 
-Azure AD Multi-Factor Authentication is a Microsoft service that provides multifactor authentication capabilities. Azure AD Multi-Factor Authentication enables users to choose an additional form of authentication during sign-in, such as a phone call or mobile app notification.
+### What's Microsoft Entra multifactor authentication?
+
+Microsoft Entra multifactor authentication is a Microsoft service that provides multifactor authentication capabilities. Microsoft Entra multifactor authentication enables users to choose an additional form of authentication during sign-in, such as a phone call or mobile app notification.
 
 ## What’s passwordless authentication?
 
@@ -46,7 +48,7 @@ Features like MFA are a great way to secure your organization, but users often g
 
 Passwordless authentication needs to be set up on a device before it can work. For example, your computer is something you have. Once it’s been registered or enrolled, Azure now knows that it’s associated with you. Now that the computer is known, once you provide something you know or are (such as a PIN or fingerprint), you can be authenticated without using a password.
 
-Each organization has different needs when it comes to authentication. Microsoft global Azure and Azure Government offer the following three passwordless authentication options that integrate with Azure Active Directory (Azure AD):
+Each organization has different needs when it comes to authentication. Microsoft global Azure and Azure Government offer the following three passwordless authentication options that integrate with Microsoft Entra ID:
 
  -  Windows Hello for Business
  -  Microsoft Authenticator app
@@ -58,7 +60,7 @@ Windows Hello for Business is ideal for information workers that have their own 
 
 ### Microsoft Authenticator App
 
-You can also allow your employee's phone to become a passwordless authentication method. You may already be using the Microsoft Authenticator App as a convenient multi-factor authentication option in addition to a password. You can also use the Authenticator App as a passwordless option.
+You can also allow your employee's phone to become a passwordless authentication method. You may already be using the Microsoft Authenticator App as a convenient multifactor authentication option in addition to a password. You can also use the Authenticator App as a passwordless option.
 
 The Authenticator App turns any iOS or Android phone into a strong, passwordless credential. Users can sign-in to any platform or browser by getting a notification to their phone, matching a number displayed on the screen to the one on their phone, and then using their biometric (touch or face) or PIN to confirm. Refer to Download and install the Microsoft Authenticator app for installation details.
 

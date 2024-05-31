@@ -2,14 +2,14 @@ Determining a starting point in the implementation of best practices can prove d
 
 One of those foundational concepts is customizable experiences. When customization options are provided across all aspects of a game experience, more players can enjoy the same game in a way that's optimized for their specific needs and preferences. Regardless of the general game mechanic, element, or component, the concept of customization applies throughout.
 
-In this unit, you'll be introduced to some game and platform examples where the concept of customizable experiences is implemented across:
+In this unit, you're introduced to some game and platform examples where the concept of customizable experiences is implemented across:
 
 - Visual settings.
 - Audio settings.
 - Game difficulty settings.
 - Notification and visual distraction settings.
 - Input controls and mapping.
-- Additional mechanics and game elements.
+- Other mechanics and game elements.
 
 ## Customize visual elements
 
@@ -77,9 +77,15 @@ By providing players the ability to adjust overall game difficulty, you can supp
 
 ### Difficulty of individual mechanics and components
 
-Individual game mechanics can also influence overall difficulty. In addition to overall game difficulty customization, players should be able to customize individual game mechanics that contribute to overall difficulty. This type of customization supports players who generally prefer a certain difficulty level but are blocked by a specific mechanic or factor.
+Individual game mechanics can also influence overall difficulty. In addition to overall game difficulty customization, players should be able to customize individual game mechanics that contribute to overall difficulty. This type of customization supports players who generally prefer a certain difficulty level but a specific mechanic or factor blocks their progress.
 
-The survival game Don't Starve, for example, imposes challenges related to gathering food and resources, protecting characters from dangerous weather, and staying safe from enemies. In the following image of the Don't Starve Together World Generation customization menu, players can customize the amount of available food and resources, the presence of each individual enemy in the game, and the length and duration of each weather "season." Customization allows players to eliminate or lessen enemies so they can focus on gathering resources or any combination of supports and challenges they prefer.
+The survival game Don't Starve, for example, imposes challenges related to gathering food and resources, protecting characters from dangerous weather, and staying safe from enemies. In the following image of the Don't Starve Together World Generation customization menu, players can customize:
+
+- The amount of available food and resources.
+- The presence of each individual enemy in the game.
+- The length and duration of each weather "season."
+
+With customization, players can eliminate or lessen enemies so that they can focus on gathering resources or any combination of supports and challenges they prefer.
 
 :::image type="content" source="../media/dont-starve-difficulty.png" alt-text="Screenshot that shows the Custom presets menu in Don't Starve Together. The Forest tab is selected.":::
 
@@ -89,7 +95,7 @@ Allow players to customize aspects of the experience that might cause distractio
 
 ### Notification customization
 
-Allow players to customize the amount of time and location in which notifications are shown. The following images show the Xbox preferences settings for notifications. Players can choose which types of notifications they want to receive onscreen alerts for, how long those alerts will remain on their screen, and the area of the screen where they'll appear.
+Allow players to customize the amount of time and location in which notifications are shown. The following images show the Xbox preferences settings for notifications. Players can choose which types of notifications they want to receive onscreen alerts for, how long those alerts remain on their screen, and the area of the screen where they appear.
 
 :::image type="content" source="../media/platform-notification-timing.png" alt-text="Screenshot that shows the Notification timing preferences screen on Xbox. The option Choose how long your banner notification pops up for is highlighted and 30 seconds is selected.":::
 

@@ -3,11 +3,12 @@ uid: learn.load-balance-web-traffic-with-application-gateway.5-exercise-create-c
 metadata:
   title: Exercise - Create and configure Application Gateway
   description: Create Application Gateway for the two virtual machines hosting the vehicle registration web app
-  ms.date: 05/02/2019
-  author: vhorne
-  ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/31/2024
+  author: greg-lindsay
+  ms.author: greglin
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 title: Exercise - Create and configure an Application Gateway
 durationInMinutes: 45
 content: |

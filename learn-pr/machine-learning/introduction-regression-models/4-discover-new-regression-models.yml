@@ -4,11 +4,10 @@ title: Discover new regression models
 metadata:
   title: Discover new regression models
   description: In this unit, you'll discover new regression models.
-  ms.date: 03/10/2022
+  ms.date: 05/16/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-discover-new-regression-models.md)]

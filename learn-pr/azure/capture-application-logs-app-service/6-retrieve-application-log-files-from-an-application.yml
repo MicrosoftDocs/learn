@@ -4,11 +4,10 @@ title: Retrieve application log files
 metadata:
   title: Retrieve application log files
   description: Retrieve application log files
-  ms.date: 03/20/2019
+  ms.date: 08/15/2023
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/6-retrieve-application-log-files-from-an-application.md)]

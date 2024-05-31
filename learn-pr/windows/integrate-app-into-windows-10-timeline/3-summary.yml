@@ -4,12 +4,11 @@ uid: learn-windows.integrating-app-into-windows-10-timeline.3-summary
 metadata:
   title: Summary and knowledge check
   description: This knowledge check tests your knowledge of how to include an adaptive card in Windows 10 Timeline.
-  ms.date: 1/10/2019
+  ms.date: 02/28/2019
   displayType: one-Column
-  author: PeterTurcan
-  ms.author: v-pettur
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  author: alvinashcraft
+  ms.author: aashcraft
+  ms.topic: unit
   
 durationInMinutes: 5
 content: |

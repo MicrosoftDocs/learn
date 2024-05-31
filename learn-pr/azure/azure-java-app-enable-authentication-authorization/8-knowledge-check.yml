@@ -4,46 +4,47 @@ title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: Knowledge check
-  ms.date: 06/11/2021
-  author: navyasric
-  ms.author: nacanuma
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/21/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
   - content: "What is authentication in an application?"
     choices:
-    - content: "It is the process of ensuring that application has the permission to perform some operation or access some data."
+    - content: "It's the process of ensuring that application has the permission to perform some operation or access some data."
       isCorrect: false
-      explanation: "No. This process is known as authorization"
-    - content: "It is the process of verifying the identity of the end user who is accessing an application."
+      explanation: "No. This process is known as authorization."
+    - content: "It's the process of verifying the identity of the end user who is accessing an application."
       isCorrect: true
-      explanation: "This answer is correct"
-    - content: "It is the process of requesting credentials from the user of an application."
+      explanation: "This answer is correct."
+    - content: "It's the process of requesting credentials from the user of an application."
       isCorrect: false
-      explanation: "No. Requesting credentials is one of the means of authentication and maybe a step in the authentication process"
-  - content: "What capabilities are supported by the Microsoft Authentication Library (MSAL)?"
+      explanation: "No. Requesting credentials is one of the means of authentication and maybe a step in the authentication process."
+  - content: "What capabilities does the Microsoft Authentication Library (MSAL)? support"
     choices:
-    - content: "MSAL provides the ability to register an applications with Azure Active Directory programmatically."
+    - content: "MSAL provides the ability to register an application with Microsoft Entra ID programmatically."
       isCorrect: false
       explanation: "No. MSAL is an authentication and authorization library. The Microsoft Graph API and SDK can be used to register an application programmatically."
     - content: "MSAL provides methods for applications to call the Microsoft Graph API."
       isCorrect: false
-      explanation: "No. MSAL is an authentication and authorization library which can be used to request access tokens from Azure Active Directory to authorize access to any Microsoft API. The Microsoft Graph SDK provides methods to call the Microsoft Graph API."
-    - content: "MSAL allows applications to request Azure Active Directory to provide ID tokens for the authenticated user and access tokens to make authorized calls to APIs."
+      explanation: "No. MSAL is an authentication and authorization library which can be used to request access tokens from Microsoft Entra ID to authorize access to any Microsoft API. The Microsoft Graph SDK provides methods to call the Microsoft Graph API."
+    - content: "MSAL allows applications to request Microsoft Entra ID to provide ID tokens for the authenticated user and access tokens to make authorized calls to APIs."
       isCorrect: true
-      explanation: "This answer is correct"
-  - content: "What does **scopes** refer to when using the Microsoft Authentication Library (MSAL)?"
+      explanation: "This answer is correct."
+  - content: "To what does **scopes** refer when using the Microsoft Authentication Library (MSAL)?"
     choices:
-    - content: "It is the list of strings that declare the desired permissions and the resources requested by the application."
+    - content: "It's the list of strings that declare the desired permissions and the resources requested by the application."
       isCorrect: true
-      explanation: "This answer is correct"
-    - content: "It is a URL that indicates a directory that MSAL can request authentication tokens from."
+      explanation: "This answer is correct."
+    - content: "It's a URL that indicates a directory that MSAL can request authentication tokens from."
       isCorrect: false
-      explanation: "No. The URL to request tokens from is called the **Authority**. It is composed of the identity provider instance and sign-in audience for the app."
-    - content: "It is the URL the identity provider will send the security tokens back to."
+      explanation: "No. The URL to request tokens from is called the **Authority**. It's composed of the identity provider instance and sign-in audience for the app."
+    - content: "It's the URL the identity provider will send the security tokens back to."
       isCorrect: false
       explanation: "No. The URL where the identity provider will send the tokens to is the **Redirect URI**."
       

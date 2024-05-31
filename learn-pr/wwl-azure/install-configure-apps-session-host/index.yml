@@ -2,12 +2,12 @@
 uid: learn.wwl.install-configure-apps-session-host
 metadata:
   title: Install and configure apps on a session host
-  description: "Install and configure apps on a session host"
+  description: Install and configure apps on a session host
   ms.date: 08/04/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Install and configure apps on a session host
 summary: MSIX app attach is a way to deliver MSIX applications to both physical and virtual machines. MSIX app attach is different from regular MSIX because it’s specifically for Azure Virtual Desktop.
 abstract: |
@@ -18,7 +18,7 @@ abstract: |
   *  Use the OneDrive sync app on Azure Virtual Desktops.
   *  Use Microsoft Teams on Azure Virtual Desktop.
   *  Publish built-in apps in Azure Virtual Desktop.
-prerequisites: ""
+prerequisites: ''
 iconUrl: /training/achievements/3-install-and-configure-apps-on-a-session-host.svg
 levels:
 - intermediate

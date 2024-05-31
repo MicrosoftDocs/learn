@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-private-access-azure-resources.virtual-network-service-endpoints
+title: Plan and implement virtual network Service Endpoints
+metadata:
+  title: Plan and implement virtual network Service Endpoints
+  description: "Plan and implement virtual network Service Endpoints"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-virtual-network-service-endpoints.md)]

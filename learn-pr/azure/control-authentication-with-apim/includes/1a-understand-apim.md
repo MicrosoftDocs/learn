@@ -1,8 +1,8 @@
-Azure API Management (APIM) helps organizations unlock the potential of their data and services by publishing APIs to external partners, and internal developers. Businesses are extending their operations as a digital platform by creating new channels, finding new customers, and driving deeper engagement with existing ones. APIM provides the core competencies to ensure a successful API program through developer engagement, business insights, analytics, security, and protection. You can use APIM to take any backend and launch a full-fledged API program based on it.
+Azure API Management helps organizations unlock the potential of their data and services by publishing APIs to external partners, and internal developers. Businesses are extending their operations as a digital platform by creating new channels, finding new customers, and driving deeper engagement with existing ones. API Management provides the core competencies to ensure a successful API program through developer engagement, business insights, analytics, security, and protection. You can use API Management to take any backend and launch a full-fledged API program based on it.
 
-To use APIM, administrators define _APIs_ in the portal. Each API consists of one or more operations, and can be added to one or more products. To use an API, developers subscribe to a product that contains that API, and then call the API's operation, subject to any usage policies that might be in effect. Common scenarios include:
+To use API Management, administrators define _APIs_ in the portal. Each API consists of one or more operations, and can be added to one or more products. To use an API, developers subscribe to a product that contains that API, and then call the API's operations, subject to any usage policies that might be in effect. Common scenarios include:
 
-* Securing mobile infrastructure by gating access with API keys, preventing denial of service attacks (DoS) by using throttling, or using advanced security policies like JSON Web Token (JWT) validation.
+* Securing mobile infrastructure by gating access with API keys, preventing distributed denial of service (DDoS) attacks by using throttling, or using advanced security policies like JSON web token (JWT) validation.
 
 * Offering fast partner onboarding through the developer portal to independent software vendor (ISV) partner ecosystems. Enabling them to build an API facade to decouple from internal implementations that aren't ready for partner consumption.
 
@@ -10,7 +10,7 @@ To use APIM, administrators define _APIs_ in the portal. Each API consists of on
 
 ## Components of API Management
 
-APIM is made up of the following components:
+API Management is made up of the following components:
 
 ### API gateway
 
@@ -35,7 +35,7 @@ The Azure portal is the administrative interface where you set up your API progr
 
 ### Developer portal
 
-The Developer portal serves as the main web presence for developers. From here they can:
+The developer portal serves as the main web presence for developers. From here they can:
 
 * Read API documentation.
 * Try out an API via the interactive console.

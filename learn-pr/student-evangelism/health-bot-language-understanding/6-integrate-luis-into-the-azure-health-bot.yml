@@ -6,9 +6,8 @@ metadata:
   description: Learn how to integrate your LUIS app into Azure Health Bot.
   author: nrd26
   ms.author: chnoring
-  ms.date: 07/27/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/10/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5
 content: |

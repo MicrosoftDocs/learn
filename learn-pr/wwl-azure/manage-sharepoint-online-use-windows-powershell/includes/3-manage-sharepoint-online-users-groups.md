@@ -32,14 +32,14 @@ Set-SPOSiteGroup -Site https://adatum.sharepoint.com/sites/Marketing -Group Mark
 
 ## Managing site users
 
-To give permissions to Azure AD users, you must make them members of a SharePoint group. You can add members to a SharePoint group by using the **Add-SPOUser** cmdlet as depicted in the following example. You need to specify the site URL along with the group name:
+To give permissions to Microsoft Entra users, you must make them members of a SharePoint group. You can add members to a SharePoint group by using the **Add-SPOUser** cmdlet as depicted in the following example. You need to specify the site URL along with the group name:
 
 ```powershell
 Add-SPOUser -Site https://adatum.sharepoint.com/sites/Marketing -Group MarketingUsers -LoginName AbbieP@adatum.com
 ```
 
 > [!NOTE]
-> You can also add security groups from Azure AD as members of SharePoint groups by using the **Add-SPOUser** cmdlet.
+> You can also add security groups from Microsoft Entra ID as members of SharePoint groups by using the **Add-SPOUser** cmdlet.
 
 The **Remove-SPOUser** cmdlet has similar syntax to the **Add-SPOUser** cmdlet but removes a user from the specified SharePoint group. If you don't specify a group, then the user is removed from all SharePoint groups in the site.
 

@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/12/2022
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'AZ-104: Manage identities and governance in Azure'
 prerequisites: |
   - [Microsoft Azure Fundamentals: Describe cloud concepts](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
@@ -15,7 +14,7 @@ prerequisites: |
   - [Azure Fundamentals: Describe Azure management and governance](/training/paths/describe-azure-management-governance/)
   - [AZ-104: Prerequisites for Azure administrators](/training/paths/az-104-administrator-prerequisites/)
 summary: |
-  Learn how to manage Azure Active Directory objects, role-based access control (RBAC), subscriptions, and governance in Azure. 
+  Learn how to manage Microsoft Entra objects, role-based access control (RBAC), subscriptions, and governance in Azure. 
   
   Here are the learning paths in the AZ-104 Azure Administrator series:
   :::row:::
@@ -59,14 +58,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cost-management
 - azure-rbac
 - azure-resource-manager
 subjects:
 - identity-access
 modules:
-- learn.wwl.configure-azure-active-directory
 - learn.wwl.configure-user-group-accounts
 - learn.wwl.configure-subscriptions
 - learn.wwl.configure-azure-policy

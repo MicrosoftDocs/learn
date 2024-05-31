@@ -6,9 +6,8 @@ metadata:
   description: Learn how our partners located in the Middle East and Europe are using the Azure Health Bot service to build bots that address a wide range of healthcare-specific use cases.
   author: rodanthi-alexiou
   ms.author: chnoring 
-  ms.date: 07/27/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/09/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |

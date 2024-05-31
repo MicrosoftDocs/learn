@@ -1,5 +1,3 @@
-
-
 MLflow uses the MLModel format to store all relevant model assets in a folder or directory. One essential file in the directory is the `MLmodel` file. The `MLmodel` file is the single source of truth about how the model should be loaded and used.
 
 ## Explore the MLmodel file format
@@ -47,7 +45,7 @@ The most important things to set are the **flavor** and the **signature**.
 
 A **flavor** is the machine learning library with which the model was created. 
 
-For example, to create an image classification model to detect breast cancer you're using `fastai`. Fastai is a flavor in MLflow that tells how you how a model should be persisted and loaded. Because each model flavor indicates how they want to persist and load models, the MLModel format doesn't enforce a single serialization mechanism that all the models need to support. Such a decision allows each flavor to use the methods that provide the best performance or best support according to their best practices - without compromising compatibility with the MLModel standard. 
+For example, to create an image classification model to detect breast cancer you're using `fastai`. Fastai is a flavor in MLflow that tells you how a model should be persisted and loaded. Because each model flavor indicates how they want to persist and load models, the MLModel format doesn't enforce a single serialization mechanism that all the models need to support. Such a decision allows each flavor to use the methods that provide the best performance or best support according to their best practices - without compromising compatibility with the MLModel standard. 
 
 `Python function` flavor is the *default* model interface for models created from an MLflow run. Any MLflow python model can be loaded as a `python_function` model, which allows for workflows like deployment to work with any python model regardless of which framework was used to produce the model. This interoperability is immensely powerful as it reduces the time to operationalize in multiple environments.
 

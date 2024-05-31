@@ -1,5 +1,3 @@
-
-
 Now it's your chance to explore loading and updating data into a relational data warehouse for yourself. In this exercise, you'll create and update fact and dimension tables into a dedicated SQL pool using the various techniques described in this module.
 
 > [!NOTE]

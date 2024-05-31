@@ -5,49 +5,50 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 12/01/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/19/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 4
 content: |
 quiz:
   questions:
-  - content: "You need to convert an existing JSON template to Bicep by using built-in tooling. What command do you run from the terminal?"
+  - content: "You need to convert an existing JSON template to Bicep by using built-in tooling. Which command do you run from the terminal?"
     choices:
-    - content: "`bicep build 'path/to/file.json'`"
+    - content: "`bicep build 'path/file.json'`"
       isCorrect: false
       explanation: "`bicep build` is the command you use to convert a Bicep template to a JSON template."
-    - content: "`az bicep decompile 'path/to/file.json'`"
+    - content: "`az bicep decompile 'path/file.json'`"
       isCorrect: true
       explanation: "You can use either `bicep decompile` or `az bicep decompile` to convert your JSON templates to Bicep templates."
-    - content: "`bicep convert 'path/to/file.json'`"
+    - content: "`bicep convert 'path/file.json'`"
       isCorrect: false
       explanation: "The `convert` command is not recognized in the Bicep tooling."
   - content: "You need to export a deployed Azure resource to an ARM template. What steps do you take to complete this task?"
     choices:
-    - content: "In the Azure portal, go to the resource you want to export, select **Export template**, and then select **Download** to save a copy of the template."
+    - content: "In the Azure portal, go to the resource that you want to export, select **Export template**, and then select **Download** to save a copy of the template."
       isCorrect: true
       explanation: "You can export resources from the Azure portal by completing these steps."
-    - content: "In the Azure portal, go to the resource group you want to export, select **Export template**, and then select **Download** to save a copy of the template."
+    - content: "In the Azure portal, go to the resource group that you want to export, select **Export template**, and then select **Download** to save a copy of the template."
       isCorrect: false
       explanation: "The **Export template** option under a resource group exports the entire resource group, not a single resource."
     - content: "In the Azure portal, select **Create a resource**, enter **template** in the search box, and then select **Template deployment** from Azure Marketplace."
       isCorrect: false
       explanation: "You use a template deployment in Azure Marketplace to create and deploy an existing template into Azure, not to create a template."
-  - content: "What is a true statement about exporting templates in the Azure portal?"
+  - content: "Which of the following statements about exporting templates in the Azure portal is true?"
     choices:
     - content: "You can use the export template function to create a complete export of any Azure resource, and you can use it to redeploy resources."
       isCorrect: false
-      explanation: "Some Azure resources you can't completely export by using the Azure portal."
+      explanation: "Some Azure resources can't be exported completely via the Azure portal."
     - content: "You can use the export template function to export the entire contents of your Azure subscription."
       isCorrect: false
       explanation: "In Azure, you can't export the entire contents of your subscription by using a single command."
     - content: "The export template function doesn't always perform a complete export of an Azure resource. It should be used as a reference point when you build your templates."
       isCorrect: true
       explanation: "Use the export template function as a reference point to help you build your templates."
-  - content: "What is a true statement about the ARM template what-if operation?"
+  - content: "Which of the following statements is true?"
     choices:
     - content: "The ARM template what-if operation deploys a template to your Azure environment in a temporary state."
       isCorrect: false
@@ -57,4 +58,4 @@ quiz:
       explanation: "The ARM template what-if operation shows you how resources will change if you deploy a template."
     - content: "You access the ARM template what-if operation in the Azure portal, and you use it to deploy templates to management groups."
       isCorrect: false
-      explanation: "You use the ARM template what-if operation at the command line and not in the Azure portal."
+      explanation: "You use the ARM template what-if operation at the command line, not in the Azure portal."

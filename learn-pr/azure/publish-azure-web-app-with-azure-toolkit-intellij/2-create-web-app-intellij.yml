@@ -4,11 +4,12 @@ title: Build a web app in IntelliJ IDEA
 metadata:
   title: Build a web app in IntelliJ IDEA
   description: In this unit, you'll learn how the Azure Toolkit for IntelliJ makes it easy to create and deploy web apps to Azure App Service.
-  ms.date: 03/01/2020
+  ms.date: 03/18/2024
   author: bmitchell287
   ms.author: brendm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
 durationInMinutes: 7
 content: |
   [!include[](includes/2-create-web-app-intellij.md)]

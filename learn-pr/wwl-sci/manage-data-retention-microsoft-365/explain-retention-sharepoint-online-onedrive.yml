@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-retention-microsoft-365.explain-retention-sharepoint-online-onedrive
+title: Explain retention in SharePoint Online and OneDrive
+metadata:
+  title: Explain retention in SharePoint Online and OneDrive
+  description: "Explain retention in SharePoint Online and OneDrive"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/explain-retention-sharepoint-online-onedrive.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How does the retention of OneNote content work in SharePoint and OneDrive?"
+    choices:
+    - content: "Each page within a section is treated as an individual file under retention policies."
+      isCorrect: true
+      explanation: "Correct: OneNote notebooks consist of multiple sections, and each section is treated as an individual file under retention policies. This ensures that all pages within sections are retained or deleted together."
+    - content: "Entire notebooks are retained or deleted as single units."
+      isCorrect: false
+      explanation: "Incorrect: Retention is applied to sections within a notebook, not to entire notebooks as single units."
+    - content: "The Modified date of the notebook determines retention decisions."
+      isCorrect: false
+      explanation: "Incorrect: The Modified date of the notebook doesn't influence retention decisions in Microsoft 365."

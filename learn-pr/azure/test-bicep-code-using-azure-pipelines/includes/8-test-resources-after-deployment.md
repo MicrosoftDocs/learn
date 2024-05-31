@@ -9,7 +9,7 @@ When you define resources in a Bicep file, your goal isn't just to create resour
 For example, imagine that you deploy a new Azure SQL logical server by using a Bicep deployment pipeline. Your Bicep definition for the server is valid, so it passes the linter and preflight validation stages. The what-if command shows that a server will be created, which is what you expect. The deployment also finishes successfully. But at the end of the deployment process, you still might not have a working database server that's ready to use. Reasons might include:
 
 - You haven't configured firewall rules to allow network traffic to reach your server.
-- You've enabled Azure Active Directory authentication on your server when you shouldn't have, or vice versa.
+- You've enabled Microsoft Entra authentication on your server when you shouldn't have, or vice versa.
 
 Even when you're just deploying basic Bicep files, it's worth considering how you can validate that the resources you deploy actually work and meet your requirements. Here are examples of how you can apply this principle:
 

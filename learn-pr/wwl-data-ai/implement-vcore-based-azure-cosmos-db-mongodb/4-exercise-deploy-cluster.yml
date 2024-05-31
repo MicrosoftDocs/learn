@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.exercise-deploy-cluster
+title: 'Exercise: Deploy a vCore-based Azure Cosmos DB for MongoDB cluster'
+metadata:
+  title: 'Exercise: Deploy a vCore-based Azure Cosmos DB for MongoDB cluster'
+  description: "Exercise: Deploy a vCore-based Azure Cosmos DB for MongoDB cluster"
+  ms.date: 04/08/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labId: 163179
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-exercise-deploy-cluster.md)]

@@ -3,34 +3,46 @@ uid: learn.languages.csharp-readable-code
 metadata:
   title: Create readable code with conventions, whitespace, and comments in C#
   description: "Write code that is easier to read, update and support using naming conventions, comments and whitespace."
-  ms.date: 02/24/2023
+  ms.date: 05/27/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: dotnet-csharp
+  ms.devlang: csharp
+  ai-usage: human-only
 title: Create readable code with conventions, whitespace, and comments in C#
 summary: Write code that is easier to read, update and support using naming conventions, comments and whitespace.
 abstract: |
   In this module, you will:
-  *   Choose descriptive names for variables that describe their purpose and intent.
-  *   Use code comments to temporarily instruct the compiler to ignore lines of code.
-  *   Use code comments to describe higher-level requirements or purpose for a passage of code.
-  *   Write code that effectively uses whitespace to convey the relationship of lines of code.
+
+  -   Choose descriptive names for variables that describe their purpose and intent.
+
+  -   Use code comments to temporarily instruct the compiler to ignore lines of code.
+
+  -   Use code comments to describe higher-level requirements or purpose for a passage of code.
+
+  -   Write code that effectively uses whitespace to convey the relationship of lines of code.
 prerequisites: |
-  *   Experience declaring variables using common data types.
-  *   Experience using Console.WriteLine() to output messages to a console.
-  *   Experience using the if and else if statement.
+  -   Experience declaring variables using common data types.
+
+  -   Experience using Console.WriteLine() to output messages to a console.
+
+  -   Experience using the if and else if statement.
 iconUrl: /training/achievements/csharp-readable-code.svg
 levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
 - student
 products:
 - dotnet
 - vs-code
 subjects:
-- development-tools
+- app-development
 units:
 - learn.languages.csharp-readable-code.introduction
 - learn.languages.csharp-readable-code.choose-variable-names

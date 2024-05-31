@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.create-network-security-group
+title: How network security groups filter network traffic
+metadata:
+  title: How network security groups filter network traffic
+  description: "How network security groups filter network traffic"
+  ms.date: 05/30/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-create-network-security-group.md)]
+interactive: bash

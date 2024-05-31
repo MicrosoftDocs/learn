@@ -4,13 +4,10 @@ title: Mark releases with Git tags
 metadata:
   title: Mark releases with Git tags
   description: "Mark releases with Git tags"
-  ms.date: 01/12/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.topic: unit
+durationInMinutes: 2
 content: |
   [!include[](includes/7-mark-releases-git-tags.md)]

@@ -7,8 +7,12 @@ metadata:
   ms.date: 4/5/2023
   author: ivorb
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
+  ms.custom:
+    - devx-track-python
 durationInMinutes: 30
+azureSandbox: false
+labId: 152392
+labModal: true
 content: |
   [!include[](includes/5-exercise.md)]

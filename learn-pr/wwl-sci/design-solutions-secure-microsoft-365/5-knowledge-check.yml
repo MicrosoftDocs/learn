@@ -7,8 +7,7 @@ metadata:
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 5
 ###########################################################################
 ###
@@ -31,21 +30,21 @@ quiz:
       choices:
         - content: "It provides protection against malware and viruses in Office 365 email and documents."
           isCorrect: true
-          explanation: "Microsoft Defender for Office 365 provides protection against malware and viruses in Office 365 email and documents."
+          explanation: "Microsoft Defender for Collaboration provides protection against malware and viruses in Office 365 email and documents."
         - content: "It protects against physical security threats to the Office 365 infrastructure."
           isCorrect: false
           explanation: "Physical security threats to the Office 365 infrastructure are not within the scope of Microsoft Defender for Office 365."
         - content: "It ensures compliance with industry-specific regulations for Office 365 data."
           isCorrect: false
-          explanation: "While compliance is important, Microsoft Defender for Office 365 is not specifically focused on ensuring compliance with industry-specific regulations for Office 365 data."
+          explanation: "While compliance is important, Microsoft Defender for Collaboration is not specifically focused on ensuring compliance with industry-specific regulations for Office 365 data."
         - content: "It provides endpoint protection for devices outside of the organization's network."
           isCorrect: false
           explanation: "Endpoint protection for devices outside of the organization's network is not within the scope of Microsoft Defender for Office 365."
     - content: "What is the purpose of Microsoft Secure Score?"
       choices:
-      - content: "To measure the level of user engagement with Microsoft 365 Defender."
+      - content: "To measure the level of user engagement with Microsoft Defender XDR."
         isCorrect: false
-        explanation: "Microsoft Secure Score is used to measure an organization's security posture and provide recommendations to improve it. It is not related to user engagement with Microsoft 365 Defender."
+        explanation: "Microsoft Secure Score is used to measure an organization's security posture and provide recommendations to improve it. It is not related to user engagement with Microsoft Defender XDR."
       - content: "To provide recommendations to improve an organization's security posture."
         isCorrect: true
         explanation: "Microsoft Secure Score is used to measure an organization's security posture and provide recommendations to improve it."
@@ -56,20 +55,20 @@ quiz:
         isCorrect: false
         explanation: "Microsoft Secure Score is not used to track the performance of specific Microsoft Defender products."
 
-    - content: "What is Microsoft 365 Defender?"
+    - content: "What is Microsoft Defender XDR?"
       choices:
       - content: "An email filtering solution that protects against phishing and malware."
         isCorrect: false
-        explanation: "Microsoft Defender for Office 365 is the email filtering solution that protects against phishing and malware. Microsoft 365 Defender is a suite of services that includes Microsoft Defender for Office 365 as well as other products for endpoint, identity, and application protection."
+        explanation: "Microsoft Defender for Collaboration is the email filtering solution that protects against phishing and malware. Microsoft Defender XDR is a suite of services that includes Microsoft Defender for Collaboration as well as other products for endpoint, identity, and application protection."
       - content: "A suite of services that provides protection for endpoint, identity, and application."
         isCorrect: true
-        explanation: "Microsoft 365 Defender is a suite of services that includes Microsoft Defender for Office 365 as well as other products for endpoint, identity, and application protection."
+        explanation: "Microsoft Defender XDR is a suite of services that includes Microsoft Defender for Collaboration as well as other products for endpoint, identity, and application protection."
       - content: "A service that provides advanced threat protection for Microsoft 365 workloads."
         isCorrect: false
-        explanation: "Microsoft Defender for Office 365 is the service that provides advanced threat protection for Microsoft 365 workloads. Microsoft 365 Defender is a suite of services that includes Microsoft Defender for Office 365 as well as other products for endpoint, identity, and application protection."
+        explanation: "Microsoft Defender for Collaboration is the service that provides advanced threat protection for Microsoft 365 workloads. Microsoft Defender XDR is a suite of services that includes Microsoft Defender for Collaboration as well as other products for endpoint, identity, and application protection."
       - content: "A security posture assessment tool for Microsoft 365 environments."
         isCorrect: false
-        explanation: "Microsoft 365 Defender is not a security posture assessment tool, but rather a suite of services that includes products for endpoint, identity, and application protection."
+        explanation: "Microsoft Defender XDR is not a security posture assessment tool, but rather a suite of services that includes products for endpoint, identity, and application protection."
     - content: "What is the recommended first step for implementing Zero Trust security in Microsoft 365?"
       choices:
         - content: "Creating a network segmentation plan"

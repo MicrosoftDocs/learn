@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.permissions-management.explore-features-of-permissions-management.act-on-your-findings-with-remediation-tab
+title: Act on your findings with the Permissions Management Remediation tab
+metadata:
+  title: Act on your findings with the Permissions Management Remediation tab
+  description: Permissions Management offers a host of remediation features that allow you to easily right-size and manage permissions in your multicloud environments.
+  ms.date: 09/27/2023
+  author: jenniferf-skc
+  ms.author: jfields
+  ms.topic: unit
+  ms.service: multicloud-permissions-management
+durationInMinutes: 6
+content: |
+  [!include[](includes/9-act-on-your-findings-with-remediation-tab.md)]

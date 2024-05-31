@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-kubernetes-service-cluster.assign-policy-definition-azure-kubernetes-cluster
+title: Try-This exercise - Assign a policy definition to an Azure Kubernetes cluster
+metadata:
+  title: Try-This exercise - Assign a policy definition to an Azure Kubernetes cluster
+  description: "Try-This exercise - Assign a policy definition to an Azure Kubernetes cluster"
+  ms.date: 03/08/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-assign-policy-definition-azure-kubernetes-cluster.md)]

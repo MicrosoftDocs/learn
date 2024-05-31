@@ -7,8 +7,9 @@ metadata:
   ms.date: 05/16/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

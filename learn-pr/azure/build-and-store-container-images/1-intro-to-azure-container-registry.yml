@@ -3,11 +3,10 @@ uid: learn.azure-container-registry.introduction
 metadata:
   title: Introduction to Azure Container Registry
   description: Introduction to Azure Container Registry
-  ms.date: 09/24/2018
+  ms.date: 11/09/2023
   author: tejaswikolli
   ms.author: tejaswikolli
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Introduction to Azure Container Registry
 durationInMinutes: 2
 content: |

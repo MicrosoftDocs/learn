@@ -4,11 +4,10 @@ title: Cloud journey phases
 metadata:
   title: Cloud journey phases 
   description: Learn how to validate and define corporate policies that drive actionable governance.
-  ms.date: 02/12/2021
-  author: jamcneil
-  ms.author: jumcn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 05/15/2023
+  author: sgsneha
+  ms.author: sudhirsneha
+  ms.topic: unit
 durationInMinutes: 20
 content: |
   [!include[](includes/4-cloud-journey-phases.md)]

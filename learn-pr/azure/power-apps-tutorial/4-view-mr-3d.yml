@@ -4,11 +4,10 @@ title: View in MR and View in 3D
 metadata:
   title: View in MR and View in 3D
   description: The View in MR is the chief feature in the application that allows the user to view images and 3D models in the natural-world environment.
-  ms.date: 10/19/2021
+  ms.date: 04/23/2024
   author: "Sean-Kerawala"
-  ms.author: "sekerawa"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.author: "vinnietieto"
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-view-mr-3d.md)]

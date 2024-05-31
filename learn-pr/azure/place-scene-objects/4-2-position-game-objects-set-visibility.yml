@@ -3,12 +3,11 @@ uid: learn.azure.place-scene-objects-tutorials-mrtk.4-2-position-game-objects-se
 title: Position game objects and set visibility
 metadata:
   title:  Position game objects and set visibility
-  description: Introduction to position game objects and set visibility
-  ms.date: 09/09/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  description: Introduction to positioning game objects and setting visibility
+  ms.date: 11/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-2-position-game-objects-set-visibility.md)]

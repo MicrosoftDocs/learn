@@ -1,13 +1,10 @@
-
-
-
 Code challenges throughout these modules reinforce what you've learned, and help you gain some confidence before continuing on.
 
 The focus of this challenge is to create correct methods with the proper parameters and return types.
 
 ## Dice mini-game challenge
 
-Your challenge is to design a mini-game. The game should select a target number that is a random number between one and five (inclusive). The player must roll a six-sided die. To win, the player must roll a number greater than the target number. At the end of each round, the player should be asked if they would like to play again, and the game should continue or terminate accordingly.
+Your challenge is to design a mini-game. The game should select a target number that is a random number between one and five (inclusive). The player must roll a six-sided dice. To win, the player must roll a number greater than the target number. At the end of each round, the player should be asked if they would like to play again, and the game should continue or terminate accordingly.
 
 In this challenge, you're given some starting code. You must determine what methods to create, their parameters, and their return types.
 

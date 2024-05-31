@@ -4,11 +4,10 @@ title: Test Azure Arc-enabled servers capabilities using Azure VMs
 metadata:
   title: Test Azure Arc-enabled servers capabilities using Azure VMs
   description: Walkthrough of how to prepare and onboard a Windows VM on Azure to Azure Arc-enabled servers.
-  ms.date: 09/21/2021
+  ms.date: 03/22/2023
   author: aurnovcy
   ms.author: aurnovc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 10
 content: |

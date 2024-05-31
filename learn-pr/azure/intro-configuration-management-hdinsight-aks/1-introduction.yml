@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-configuration-management-hdinsight-aks.1-introduction  
+title: Introduction
+metadata:
+  unitType: introduction  
+  title: Introduction
+  description: In this section, we'll provide an overview of the key concepts, goals, and prerequisites for successfully setting up and handling HDInsight within the AKS environment.
+  ms.date: 01/24/2024  
+  author: sairamyeturi
+  ms.author: sairamyeturi
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

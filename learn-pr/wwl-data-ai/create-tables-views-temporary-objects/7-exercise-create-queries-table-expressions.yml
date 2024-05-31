@@ -4,12 +4,10 @@ title: 'Exercise: Create queries with table expressions'
 metadata:
   title: 'Exercise: Create queries with table expressions'
   description: "Exercise: Create queries with table expressions"
-  ms.date: 04/12/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
+  ms.topic: unit
 labId: 105115
 labModal: true
 durationInMinutes: 30
