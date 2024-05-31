@@ -34571,6 +34571,96 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/expose-hybrid-services-with-azure-relay/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-relay/relay-hybrid-connections-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/expose-hybrid-services-with-azure-relay/2-create-azure-relay-hybrid-connection.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-relay/relay-hybrid-connections-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/expose-hybrid-services-with-azure-relay/3-exercise-create-azure-relay-hybrid-connection.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-relay/relay-hybrid-connections-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/expose-hybrid-services-with-azure-relay/4-send-requests-through-relay.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-relay/relay-hybrid-connections-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/expose-hybrid-services-with-azure-relay/5-exercise-send-requests-through-relay.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-relay/relay-hybrid-connections-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/expose-hybrid-services-with-azure-relay/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-relay/relay-hybrid-connections-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/expose-hybrid-services-with-azure-relay/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-relay/relay-hybrid-connections-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/2-stream-analytics-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/3-create-stream-analytics-job.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/4-configure-job-input.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/5-configure-job-output.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/6-write-transformation-query.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/7-start-job.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/8-view-job-result.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/9-monitor-and-troubleshoot.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/transform-data-with-azure-stream-analytics/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-data-streaming/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/enterprise-governance/5-azure-policies.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-identity-access-new/",
       "redirect_document_id": false
