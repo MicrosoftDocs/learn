@@ -39653,6 +39653,11 @@
       "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/7-describe-working-git-locally.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-types-of-source-control-systems/5-examine-choose-git.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
     }
   ]
 }
