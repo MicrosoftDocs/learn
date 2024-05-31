@@ -41,7 +41,6 @@ products:
 - azure-test-plans
 - github
 units:
-- learn.wwl.describe-types-of-source-control-systems.introduction
 - learn.wwl.describe-types-of-source-control-systems.understand-centralized
 - learn.wwl.describe-types-of-source-control-systems.understand-distributed
 - learn.wwl.describe-types-of-source-control-systems.understand-objections-to-using-git
