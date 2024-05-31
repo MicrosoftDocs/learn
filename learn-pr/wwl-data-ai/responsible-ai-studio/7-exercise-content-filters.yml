@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.responsible-ai-studio.exercise-content-filters
+title: Exercise - Explore content filters in Azure AI Studio
+metadata:
+  title: Exercise - Explore content filters in Azure AI Studio
+  description: "Hands-on exercise to explore content filters in Azure AI Studio."
+  ms.date: 5/30/2024
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/7-exercise-content-filters.md)]

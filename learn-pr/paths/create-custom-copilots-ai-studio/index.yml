@@ -28,5 +28,6 @@ modules:
 - learn.wwl.introduction-to-azure-ai-studio
 - learn.get-started-prompt-flow-ai-studio
 - learn.wwl.build-copilot-ai-studio
+- learn.wwl.responsible-ai-studio
 trophy:
   uid: learn.wwl.create-custom-copilots-ai-studio.trophy
