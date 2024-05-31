@@ -10,7 +10,7 @@ Azure Private Link Service enables you to access Azure Key Vault and Azure hoste
 
 ## Transport layer security (TLS) and Hypertext transfer protocol secure (HTTPS)
 
- -  The Key Vault front end (data plane) is a multi-tenant server. This means that key vaults from different customers can share the same public IP address. In order to achieve isolation, each HTTP request is authenticated and authorized independently of other requests.
+ -  The Key Vault front end (data plane) is a multitenant server. This means that key vaults from different customers can share the same public IP address. In order to achieve isolation, each HTTP request is authenticated and authorized independently of other requests.
  -  You may identify older versions of TLS to report vulnerabilities but because the public IP address is shared, it is not possible for key vault service team to disable old versions of TLS for individual key vaults at transport level.
  -  The HTTPS protocol allows the client to participate in TLS negotiation. Clients can enforce the most recent version of TLS, and whenever a client does so, the entire connection will use the corresponding level protection. Applications that are communicating with or authenticating against Microsoft Entra ID might not work as expected if they are NOT able to use TLS 1.2 or recent version to communicate.
  -  Despite known vulnerabilities in TLS protocol, there is no known attack that would allow a malicious agent to extract any information from your key vault when the attacker initiates a connection with a TLS version that has vulnerabilities. The attacker would still need to authenticate and authorize itself, and as long as legitimate clients always connect with recent TLS versions, there is no way that credentials could have been leaked from vulnerabilities at old TLS versions.
@@ -29,7 +29,7 @@ The model of a single mechanism for authentication to both planes has several be
 
  -  Organizations can control access centrally to all key vaults in their organization.<br>
  -  If a user leaves, they instantly lose access to all key vaults in the organization.
- -  Organizations can customize authentication by using the options in Microsoft Entra ID, such as to enable multi-factor authentication for added security.
+ -  Organizations can customize authentication by using the options in Microsoft Entra ID, such as to enable multifactor authentication for added security.
 
 ## Access model overview
 

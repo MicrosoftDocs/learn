@@ -114,7 +114,7 @@ You can create a [branch protection rule](https://docs.github.com/repositories/c
 
 You can use the workflows that protect the branch to:
 
-- Run a build to verify the code changes can be build
+- Run a build to verify the code changes can be built
 - Run a linter to check for typos and conformation to the internal coding conventions
 - Run automated tests to check for any behavior changes of the code
 - And so on
