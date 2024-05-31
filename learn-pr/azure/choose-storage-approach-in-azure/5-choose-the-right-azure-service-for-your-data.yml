@@ -4,8 +4,8 @@ metadata:
   title: Choose a storage solution in Azure
   description: Choose a storage solution in Azure.
   ms.date: 06/05/2022
-  author: tamram
-  ms.author: tamram
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
 title: Choose a storage solution on Azure
 durationInMinutes: 7
