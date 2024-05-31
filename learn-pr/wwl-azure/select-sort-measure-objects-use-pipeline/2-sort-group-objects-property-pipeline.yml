@@ -4,10 +4,12 @@ title: Sort and group objects by property in the pipeline
 metadata:
   title: Sort and group objects by property in the pipeline
   description: "Sort and group objects by property in the pipeline"
-  ms.date: 01/29/2024
+  ms.date: 05/30/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/2-sort-group-objects-property-pipeline.md)]
