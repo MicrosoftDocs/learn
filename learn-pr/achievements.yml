@@ -3413,3 +3413,8 @@ achievements:
   title: Describe team structures
   summary: This module explores agile development practices and helps to define and to configure teams and tools for collaboration.
   iconUrl: /training/achievements/3-describe-team-structures.svg
+- uid: learn.wwl.describe-types-of-source-control-systems.badge
+  type: badge
+  title: Describe types of source control systems
+  summary: This module describes different source control systems such Git and TFVC and helps with the initial steps for Git utilization.
+  iconUrl: /training/achievements/6-describe-types-of-source-control-systems.svg
