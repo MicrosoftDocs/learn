@@ -43,7 +43,6 @@ products:
 subjects:
 - devops
 units:
-- learn.wwl.structure-your-git-repo.knowledge-check
 - learn.wwl.structure-your-git-repo.summary
 badge:
   uid: learn.wwl.structure-your-git-repo.badge
