@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.just-in-time-access
 metadata:
-  title: Explore just-in-time VM access
+  title: Explore just-in-time virtual machine access
   description: "Discover how to leverage Microsoft Defender for Cloud through the Azure portal to ensure the security of your Azure services and workloads, offering continuous threat detection and prevention."
   ms.date: 05/31/2024
   author: wwlpublish
@@ -11,7 +11,7 @@ metadata:
   - N/A
   ms.service: azure
   ai-usage: human-only
-title: Explore just-in-time VM access
+title: Explore just-in-time virtual machine access
 summary: In this module, we'll focus on the risk of open management ports on virtual machines and how JIT VM access in Microsoft Defender for Cloud mitigates this threat.
 abstract: |
   By the end of this training module, participants will:
