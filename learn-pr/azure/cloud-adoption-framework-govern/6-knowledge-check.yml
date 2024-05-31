@@ -41,11 +41,11 @@ quiz:
     - content: Define the cloud governance policy, including a policy statement, risk ID, policy ID, and policy scope.
       isCorrect: true
       explanation: Correct! After you know the risks, you can define the policies that address them.
-  - content: Which step helps to align Tailwind Traders' cloud governance with the new policy and also removes manual processes to improve efficiency?
+  - content: Which step helps align Tailwind Traders' cloud governance with the new policy and also removes manual processes to improve efficiency?
     choices:
     - content: Use Azure tools to automate notifications for triggers.
       isCorrect: true
-      explanation: Correct! Governance tools help to enforce the policies that you put in place, and automation improves efficiency.
+      explanation: Correct! Governance tools help enforce the policies that you put in place, and automation improves efficiency.
     - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
       isCorrect: false
       explanation: Incorrect. You analyze risks before you align your organization with a new policy.

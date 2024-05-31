@@ -1,8 +1,8 @@
-After your policies are in place and you align your organization's processes and procedures with the policies, you must monitor your cloud governance. Use monitoring to determine areas that lack compliance and make changes to reduce noncompliance problems.
+After your policies are in place and you align your organization's processes and procedures to the policies, you must monitor your cloud governance. Use monitoring to determine areas that lack compliance and make changes to reduce noncompliance problems.
 
 **Use monitoring tools** to ensure that you have visibility into your cloud governance. You must be able to promptly detect and resolve noncompliance and monitor the health and performance of your cloud resources.
 
-**Use compliance dashboards,** like the Azure portal, to view the state of compliance in your environment. You can view data like noncompliant initiatives, policies, and resources. You can also view how compliant your environment is related to each specific policy.
+**Use compliance dashboards**, like the Azure portal, to view the state of compliance in your environment. You can view data like noncompliant initiatives, policies, and resources. You can also view how compliant your environment is related to each specific policy.
 
 **Determine the reason for noncompliance.** For example, a resource might show as noncompliant if it's deployed:
 
@@ -40,7 +40,7 @@ If you have existing deployments in your Azure environment, you likely have reco
 
 To proactively limit unexpected costs, you can use Azure Policy to create guardrails so that specific roles can't overspend. The two most common cost risks occur because of decisions related to:
 
-- **Azure regions**: Asset costs vary between Azure regions. When possible, you can use Azure Policy to limit deploying resources across regions.
+- **Azure regions**: Asset costs vary between Azure regions. When possible, you can use Azure Policy to limit the deployment of resources across regions.
 
 - **Azure SKUs**: The SKU that you select during deployment directly affects costs. To limit unexpected budget overrun, you can use self-service or workload-owned subscriptions to minimize the use of expensive resources.
 

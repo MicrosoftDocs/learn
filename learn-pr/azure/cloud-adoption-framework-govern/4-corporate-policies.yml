@@ -22,11 +22,11 @@ quiz:
     - content: "No"
       isCorrect: true
       explanation: Correct! This policy isn't well structured and would create many problems during cloud adoption.
-  - content: What should be the first step in addressing the existing policy?
+  - content: What should be the first step to address the existing policy?
     choices:
     - content: Assign a naming and tagging strategy.
       isCorrect: false
-      explanation: Incorrect. A naming and tagging strategy helps to organize and automate resources. You need to update the policy first before applying a naming and tagging strategy.
+      explanation: Incorrect. A naming and tagging strategy helps to organize and automate resources. You need to first update the policy before you apply a naming and tagging strategy.
     - content: Enforce cloud governance policy.
       isCorrect: false
       explanation: Incorrect. Before you can enforce new policies, you need to update the policy.

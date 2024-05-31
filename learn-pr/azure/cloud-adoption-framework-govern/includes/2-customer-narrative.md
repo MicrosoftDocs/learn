@@ -4,7 +4,7 @@ Earlier Microsoft Learn modules for the Cloud Adoption Framework establish the n
 
 Tailwind Traders, like most businesses, must attempt to balance two competing business drivers: digital transformation and risk mitigation.
 
-:::image type="content" source="../media/balance.png" alt-text="Image that demonstrates balancing transformation and risk mitigation." border="false":::
+:::image type="content" source="../media/balance.png" alt-text="Diagram that shows a scale balancing transformation and risk mitigation." border="false":::
 
 The *Getting started with Microsoft Cloud Adoption Framework for Azure* module describes a few objectives that Tailwind Traders included in its cloud adoption plan. Most relevant to this module is its effort to migrate out of two leased datacenters in the next 24 months and use the cloud as a replacement datacenter. 
 

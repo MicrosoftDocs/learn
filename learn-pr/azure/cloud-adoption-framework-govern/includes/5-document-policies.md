@@ -8,7 +8,7 @@ The following examples describe proper corporate policies that help guide adopti
 
   **Design consideration:** In Azure, an organization can control budget with [Microsoft Cost Management](/azure/cost-management-billing/). And [Azure Advisor](/azure/advisor/advisor-cost-recommendations) can provide optimization recommendations to reduce spending for each asset.
 
-- **Policy:** *Secure sensitive data.* Assets that interact with sensitive data might not receive sufficient protections, which leads to potential data leaks or business disruptions. A security team must identify and review all assets that interact with sensitive data to ensure that proper levels of protection are in place.
+- **Policy**: *Secure sensitive data.* Assets that interact with sensitive data might not receive sufficient protections, which leads to potential data leaks or business disruptions. A security team must identify and review all assets that interact with sensitive data to ensure that proper levels of protection are in place.
 
   **Design consideration:** In Azure, an organization must tag all deployed assets with proper data classification levels. A cloud governance team and application owner must review the classifications before deployment to the cloud.
 
@@ -28,7 +28,7 @@ To mitigate the CIO's concerns, Tailwind Traders incorporates new policies inclu
 
 - Fulfill all organizational security and compliance requirements.
 - Ensure that systems and data are secure.
-- Regularly test and validate processes to ensure that they remain consistent and effective.
+- Test and validate processes regularly to ensure that they remain consistent and effective.
 
 ## Align with cloud governance policies
 
@@ -38,7 +38,7 @@ The following table outlines triggers and actions that can address the risks tha
 
 | Risk | Sample trigger | Sample action |
 |-----------------------------|----------------|---------------|
-| Overspending in the cloud | Monthly cloud spending is 20% higher than expected. | Notify the billing unit leader so they can review resource usage. |
+| Overspending in the cloud | Monthly cloud spending is 20% higher than expected. | Notify the billing unit leader so that they can review resource usage. |
 | Overspending in the cloud | Deployed assets don't use the allocated CPU or memory. | Notify the billing unit leader and automatically resize to fit actual usage, when possible. |
 | Not meeting organizational security or compliance requirements | Deviations from defined security or compliance requirements. | Notify the IT security team and automate remediation, when possible. |
 | Asset configurations create operations management problems or oversights | CPU usage for a workload is higher than 90%. | Notify the IT operations team, and scale out more resources to handle the load. |
@@ -49,4 +49,4 @@ The following table outlines triggers and actions that can address the risks tha
 
 You can use Azure governance tools to automate notifications for each of these triggers. Other cloud providers might require a more manual approach, but the defined policies still apply. Don't define policies that lock you into using a specific vendor so that you don't have to repeat this process in the future.
 
-After you establish your cloud policy statements and draft a design guide, you need to create a strategy to ensure that your cloud deployment remains compliant with your policy requirements. This strategy must encompass your cloud governance team's ongoing review and communication processes and establish criteria for when policy violations require action. It must also define the requirements for automated monitoring and compliance systems that detect violations and trigger remediation actions.
+After you establish your cloud policy statements and draft a design guide, you need to create a strategy to ensure that your cloud deployment remains compliant with your policy requirements. This strategy must encompass your cloud governance team's ongoing review and communication processes and establish criteria for when policy violations require action. This strategy must also define the requirements for automated monitoring and compliance systems that detect violations and trigger remediation actions.

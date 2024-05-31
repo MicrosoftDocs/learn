@@ -21,7 +21,7 @@ To accommodate long-term governance needs, apply a hierarchical governance model
 
 :::image type="content" source="../media/management-group-hierarchy.png" alt-text="Diagram that shows the management group hierarchy." border="false" lightbox="../media/management-group-hierarchy.png":::
 
-- **Management groups**: Such as business unit, geography, or environment
+- **Management groups**: Such as a business unit, geography, or environment
 
 - **Subscriptions**: For each application category, such as preproduction, development, and production environments
 - **Resource groups**: For each application
