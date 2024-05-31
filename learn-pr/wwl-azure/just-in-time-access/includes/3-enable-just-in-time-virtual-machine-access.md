@@ -64,26 +64,20 @@ You can use Defender for Cloud or you can programmatically enable JIT VM access 
 
 From Defender for Cloud, you can enable and configure the JIT VM access.
 
-1. Open the **Workload protections** and, in the advanced protections, select Just-in-time VM access.
-
-2. In the **Not configured** virtual machines tab, mark the VMs to protect with JIT and select Enable JIT on VMs. The JIT VM access page opens listing the ports that Defender for Cloud recommends protecting:
-
- -  22 - SSH
- -  3389 - RDP
- -  5985 - WinRM
- -  5986 - WinRM
-
-3. To customize the JIT access:
-
- -  Select **Add**.
- -  Select one of the ports in the list to edit it or enter other ports. For each port, you can set the:
-     -  **Protocol** \- The protocol that is allowed on this port when a request is approved
-     -  **Allowed source IPs** \- The IP ranges that are allowed on this port when a request is approved
-     -  **Maximum request time** \- The maximum time window during which a specific port can be opened
-
-4. Select **OK**.
-
-5. To save the port configuration, select **Save**.
+1.  Open the **Workload protections** and, in the advanced protections, select Just-in-time VM access.
+2.  In the **Not configured** virtual machines tab, mark the VMs to protect with JIT and select Enable JIT on VMs. The JIT VM access page opens listing the ports that Defender for Cloud recommends protecting:
+     -  22 - SSH
+     -  3389 - RDP
+     -  5985 - WinRM
+     -  5986 - WinRM
+3.  To customize the JIT access:
+     -  Select **Add**.
+     -  Select one of the ports in the list to edit it or enter other ports. For each port, you can set the:
+         -  **Protocol** \- The protocol that is allowed on this port when a request is approved
+         -  **Allowed source IPs** \- The IP ranges that are allowed on this port when a request is approved
+         -  **Maximum request time** \- The maximum time window during which a specific port can be opened
+4.  Select **OK**.
+5.  To save the port configuration, select **Save**.
 
 ## Edit the JIT configuration on a JIT-enabled VM using Defender for Cloud
 
@@ -100,21 +94,16 @@ To edit the existing JIT rules for a VM:
 
 When a VM has a JIT enabled, you have to request access to connect to it. You can request access in any of the supported ways, regardless of how you enabled JIT.
 
-1. From the **Just-in-time VM access** page, select the **Configured** tab.
-
-2. Select the VMs you want to access:<br>
-
- -  The icon in the **Connection Details** column indicates whether JIT is enabled on the network security group or firewall. If it's enabled on both, only the firewall icon appears.<br>
- -  The **Connection Details** column shows the user and ports that can access the VM.<br>
-
-3. Select **Request access**. The **Request access** window opens.<br>
-
-4. Under **Request access**, select the ports that you want to open for each VM, the source IP addresses that you want the port opened on, and the time window to open the ports.<br>
-
-5. Select **Open ports**.<br>
-
-> [!NOTE]
-> If a user who is requesting access is behind a proxy, you can enter the IP address range of the proxy.
+1.  From the **Just-in-time VM access** page, select the **Configured** tab.
+2.  Select the VMs you want to access:<br>
+     -  The icon in the **Connection Details** column indicates whether JIT is enabled on the network security group or firewall. If it's enabled on both, only the firewall icon appears.<br>
+     -  The **Connection Details** column shows the user and ports that can access the VM.<br>
+3.  Select **Request access**. The **Request access** window opens.<br>
+4.  Under **Request access**, select the ports that you want to open for each VM, the source IP addresses that you want the port opened on, and the time window to open the ports.<br>
+5.  Select **Open ports**.<br>
+    
+    > [!NOTE]
+    > If a user who is requesting access is behind a proxy, you can enter the IP address range of the proxy.
 
 ## Other ways to work with JIT VM access
 
@@ -159,20 +148,18 @@ You can enable JIT on a VM from the Azure virtual machines pages of the Azure po
 
 When a VM has a JIT enabled, you have to request access to connect to it. You can request access in any of the supported ways, regardless of how you enabled JIT.
 
-:::image type="content" source="../media/virtual-machine-request-page-06df36f7.png" alt-text="Screenshot showing how to request access to a just in time enabled virtual machine from the connect page.":::
+:::image type="content" source="../media/virtual-machine-test-page-51cfa082.png" alt-text="Screenshot showing how to request access to a just in time enabled virtual machine from the connect page.":::
 
 
 To request access from Azure virtual machines:
 
-1. In the Azure portal, open the virtual machines pages.
-
-2. Select the VM to which you want to connect, and open the Connect page. Azure checks to see if JIT is enabled on that VM.
-
- -  If JIT isn't enabled for the VM, you're prompted to enable it.
- -  If JIT is enabled, select Request access to pass an access request with the requesting IP, time range, and ports that were configured for that VM.
-
-> [!NOTE]
-> After a request is approved for a VM protected by Azure Firewall, Defender for Cloud provides the user with the proper connection details (the port mapping from the DNAT table) to use to connect to the VM.
+1.  In the Azure portal, open the virtual machines pages.
+2.  Select the VM to which you want to connect, and open the Connect page. Azure checks to see if JIT is enabled on that VM.
+     -  If JIT isn't enabled for the VM, you're prompted to enable it.
+     -  If JIT is enabled, select Request access to pass an access request with the requesting IP, time range, and ports that were configured for that VM.
+    
+    > [!NOTE]
+    > After a request is approved for a VM protected by Azure Firewall, Defender for Cloud provides the user with the proper connection details (the port mapping from the DNAT table) to use to connect to the VM.
 
 ### PowerShell
 

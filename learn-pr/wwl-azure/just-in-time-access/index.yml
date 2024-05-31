@@ -3,7 +3,7 @@ uid: learn.wwl.just-in-time-access
 metadata:
   title: Explore just-in-time VM access
   description: "Discover how to leverage Microsoft Defender for Cloud through the Azure portal to ensure the security of your Azure services and workloads, offering continuous threat detection and prevention."
-  ms.date: 05/30/2024
+  ms.date: 05/31/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-standard-task-based
@@ -54,8 +54,8 @@ subjects:
 - virtual-machine
 units:
 - learn.wwl.just-in-time-access.introduction
-- learn.wwl.just-in-time-access.just-in-time-access-to-protect-azure-vms
-- learn.wwl.just-in-time-access.enable-just-in-time-access
+- learn.wwl.just-in-time-access.just-in-time-access-to-protect-azure-virtual-machines
+- learn.wwl.just-in-time-access.enable-just-in-time-virtual-machine-access
 - learn.wwl.just-in-time-access.activate-just-in-time-access-on-your-virtual-machines-from-azure-portal
 - learn.wwl.just-in-time-access.knowledge-check
 - learn.wwl.just-in-time-access.summary

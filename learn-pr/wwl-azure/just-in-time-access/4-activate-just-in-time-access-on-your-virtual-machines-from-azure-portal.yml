@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.just-in-time-access.activate-just-in-time-access-on-your-virtual-machines-from-azure-portal
-title: Exercise - Enable just-in-time access on Virtual Machines
+title: Exercise - Enable just-in-time access on virtual machines
 metadata:
-  title: Exercise - Enable just-in-time access on Virtual Machines
-  description: "Exercise - Enable just-in-time access on Virtual Machines"
-  ms.date: 05/30/2024
+  title: Exercise - Enable just-in-time access on virtual machines
+  description: "Exercise - Enable just-in-time access on virtual machines"
+  ms.date: 05/31/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
