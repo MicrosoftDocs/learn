@@ -3428,6 +3428,11 @@ achievements:
   title: Govern multicloud relational databases using Microsoft Purview
   summary: Govern your relational databases where they're using Microsoft Purview.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.intro-to-event-hubs.badge
+  type: badge
+  title: Introduction to Event Hubs 
+  summary: Azure Event Hubs connects events from any source to your software systems. This acts as a buffer to provide modular solutions that avoid overwhelming your system during traffic spikes, while still enabling near real-time data pipelines. Event Hubs is fast to set up and designed to allow you to focus on drawing insights from data instead of managing infrastructure. Able to process millions of events per second with low latency, Event Hubs is a modern big data message and event ingestion service that can be seamlessly integrated with other Azure and Microsoft services, such as Stream Analytics, Power BI, and Event Grids, along with outside services like Apache Spark.
+  iconUrl: /training/achievements/3-describe-team-structures.svg
 - uid: learn.expose-hybrid-services-with-azure-relay.badge
   type: badge
   title: Expose hybrid services securely with Azure Relay

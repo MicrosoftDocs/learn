@@ -4,10 +4,10 @@ You can use any of them to explore quantum computing and quantum programming. Bu
 
 ## What is the Azure Quantum website?
 
-The [Azure Quantum website](https://quantum.microsoft.com/) allows you to learn and explore quantum computing and quantum programming. You can discover the latest quantum breakthroughs, and create and run quantum programs with the help of the Copilot.
+The [Azure Quantum website](https://quantum.microsoft.com/) allows you to learn and explore quantum computing and quantum programming. You can discover the latest quantum breakthroughs and create and run quantum programs with the help of Copilot.
 
-- **Copilot in Azure Quantum** - AI meets the world of quantum. With a built-in code window and Q# compiler, the Copilot in Azure Quantum can not only run your code, but also generate Q# code from your prompts, and engage in conversations about quantum computing.
-- **Quantum Elements** - One of the most important applications of quantum computing will be in the field of chemistry. Quantum Elements uses the Copilot in Azure Quantum to design, code, and render molecular models.
+- **Copilot in Azure Quantum** - AI meets the world of quantum. With a built-in code window and Q# compiler, Copilot in Azure Quantum can not only run your code, but also generate Q# code from your prompts and engage in conversations about quantum computing.
+- **Quantum Elements** - One of the most important applications of quantum computing will be in the field of chemistry. Quantum Elements uses Copilot in Azure Quantum to design, code, and render molecular models.
 - **Quantum Katas** - Hands-on tutorials that teach quantum computing concepts and the Q# programming language.
 - **Code samples** - The Azure Quantum code library is a rich set of samples using Q#, Python, and Qiskit code to demonstrate quantum scenarios.
 - **Quantum concepts** - From the basics of quantum theory to advanced techniques of quantum computing, the Concepts library is a crash course to bring you up to speed on quantum computing. 
@@ -19,7 +19,7 @@ The [Azure Quantum website](https://quantum.microsoft.com/) allows you to learn 
 
 If you are a quantum enthusiast and want to learn by doing, the Azure Quantum website is for you.
 
-:::image type="content" source="../media/copilot.png" alt-text="Screenshot of the Copilot in Azure Quantum showing a sample and the answer of Copilot to a question for generating new code.":::
+:::image type="content" source="../media/copilot.png" alt-text="Screenshot of Copilot in Azure Quantum showing a sample and the answer of Copilot to a question for generating new code.":::
 
 ### Is the Azure Quantum website the right tool for me?
 
@@ -32,12 +32,12 @@ The following table might help you decide if you want to use the Azure Quantum w
 
 ## What is the Azure Quantum Development Kit (QDK) extension?
 
-The Azure Quantum Development Kit (QDK) extension is a software development kit for quantum computing. It is an extension for Visual Studio Code, a free, open source code editor from Microsoft.
+The Azure QDK extension is a software development kit for quantum computing. It is an extension for Visual Studio Code, a free, open-source code editor from Microsoft.
 
 > [!NOTE]
-> The QDK extension is available both in Visual Studio Code and in [VS Code for the Web](https://vscode.dev/quantum).
+> The QDK extension is available both in Visual Studio Code and [VS Code for the Web](https://vscode.dev/quantum).
 
-With the QDK extension, you can create Q# programs or load the pre-installed Q# samples, and take advantage of features such as improved error messaging, Q# syntax highlighting, and integrated debugging in a local development environment. 
+With the QDK extension, you can create Q# programs, load pre-installed Q# samples, and take advantage of features such as improved error messaging, Q# syntax highlighting, and integrated debugging in a local development environment. 
 
 You can also estimate the resources of your Q# programs using the Azure Quantum Resource Estimator. The Resource Estimator is a tool that allows you to estimate the number of qubits and the number of operations required to run your Q# programs on quantum computers.
 
@@ -50,7 +50,7 @@ You don't need an Azure account to use the QDK in Visual Studio Code, but if you
 
 ### Is the QDK in VS Code the right tool for me?
 
-You can use this table as a quick reference of the features of the QDK in VS Code. Typically, you'll use different Azure Quantum options together, for example write Q# in VS Code with the QDK while managing your quantum workspace in the Azure Quantum portal.
+You can use this table as a quick reference to the features of the QDK in VS Code. Typically, you'll use different Azure Quantum options together, such as writing Q# in VS Code with the QDK while managing your quantum workspace in the Azure Quantum portal.
 
 | Use it if you want to: | You need: | You can't: |
 | --- | --- | --- |
@@ -60,10 +60,10 @@ You can use this table as a quick reference of the features of the QDK in VS Cod
 
 The [Azure portal](https://portal.azure.com) is the main interface of the Microsoft Azure cloud computing platform. Azure provides a wealth of cloud-based services like remote storage, database hosting, and centralized account management.
 
-In the Azure Quantum portal, you can create a quantum workspace. A quantum workspace is a container for your quantum programs and quantum jobs. In a quantum workspace you can select the quantum computing providers you want to use. You can also select the Azure Quantum storage account where your quantum jobs will be stored.
+In the Azure Quantum portal, you can create a quantum workspace. A quantum workspace is a container for your quantum programs and quantum jobs. In a quantum workspace, you can select the quantum computing providers you want to use. You can also select the Azure Quantum storage account where your quantum jobs will be stored.
 
 > [!TIP]
-> When you create an Azure Quantum workspace for the first time, you get **free USD500 in Azure Quantum Credits** for use in each of the quantum computing providers. That's right, you can spend $500 USD in each of them to run your quantum programs.
+> When you create an Azure Quantum workspace for the first time, you get **USD500 free in Azure Quantum Credits** for use in each of the quantum computing providers. That's right, you can spend USD500 in each of them to run your quantum programs.
 
 The Azure portal allows you to manage your subscriptions and workspaces. You can grant a group of users, like your team members or students, access to your Azure Quantum workspace. You can also manage your quantum jobs, credits consumption, and quotas.
 
