@@ -7,8 +7,7 @@ metadata:
   ms.date: 2/28/2020
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Threat Modeling Security Fundamentals
 summary: This learning path takes you through the four main phases of threat modeling, explains the differences between each data-flow diagram element, walks you through the threat modeling framework, recommends different tools and gives you a step-by-step guide on creating proper data-flow diagrams.
 prerequisites: None
@@ -23,8 +22,8 @@ roles:
 - solution-architect
 - security-engineer
 products:
-- azure-iot-security-center
-- azure-iot-security-center
+- azure
+- azure
 subjects:
 - threat-protection
 modules:

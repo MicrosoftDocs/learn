@@ -4,11 +4,12 @@ title: Exercise - Use Azure Resource Manager variables to store expressions
 metadata:
   title: Exercise - Use Azure Resource Manager variables to store expressions
   description: Use an Azure Resource Manager variable to store your Azure Storage account unique name expressions for ease of reuse.
-  ms.date: 07/10/2020
+  ms.date: 01/30/2024
   author: tfitzmac
   ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
   zone_pivot_groups: azure-shell-interface
 azureSandbox: true
 durationInMinutes: 5

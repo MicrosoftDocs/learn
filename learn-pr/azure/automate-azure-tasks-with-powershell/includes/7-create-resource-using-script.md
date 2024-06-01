@@ -1,22 +1,22 @@
 Complex or repetitive tasks often take a great deal of administrative time. Organizations prefer to automate these tasks to reduce costs and avoid errors.
 
-Automation is important in the Customer Relationship Management (CRM) company example. There, you're testing your software on multiple Linux Virtual Machines (VMs) that you need to continuously delete and recreate. You want to use a PowerShell script to automate the creation of the VMs versus creating them manually each time.
+Automation is important in the Customer Relationship Management (CRM) company example. There, you're testing your software on multiple Linux Virtual Machines (VMs) that you need to continuously delete and re-create. You want to use a PowerShell script to automate VM creation versus creating them manually each time.
 
 Beyond the core operation of creating a VM, you have a few more requirements for your script:
 
-- You'll create multiple VMs, so you want to put the creation inside a loop
-- You need to create VMs in three different resource groups, so the name of the resource group should be passed to the script as a parameter
+- You'll create multiple VMs, so you want to put the creation inside a loop.
+- You need to create VMs in three different resource groups, so the name of the resource group should be passed to the script as a parameter.
 
 In this section, you'll see how to write and execute an Azure PowerShell script that meets these requirements.
 
 ## What is a PowerShell script?
 
-A PowerShell script is a text file containing commands and control constructs. The commands are invocations of cmdlets. The control constructs are programming features like loops, variables, parameters, comments, etc., supplied by PowerShell.
+A PowerShell script is a text file containing commands and control constructs. The commands are invocations of cmdlets. The control constructs are programming features like loops, variables, parameters, comments, and so on supplied by PowerShell.
 
 PowerShell script files have a `.ps1` file extension. You can create and save these files with any text editor.
 
 > [!TIP]
-> If you’re writing PowerShell scripts under Windows, you can use the Windows PowerShell Integrated Scripting Environment (ISE). This editor provides features such as syntax coloring and a list of available cmdlets.
+> If you’re writing PowerShell scripts in Windows, you can use the Windows PowerShell Integrated Scripting Environment (ISE). This editor provides features such as syntax coloring and a list of available cmdlets.
 >
 The following screenshot shows the Windows PowerShell Integrated Scripting Environment (ISE) with a sample script to connect to Azure and create a virtual machine in Azure.
 
@@ -34,7 +34,7 @@ PowerShell has many features found in typical programming languages. You can def
 
 ### Variables
 
-In the last unit, you saw that PowerShell supports variables. Use `$` to declare a variable and `=` to assign a value. For example:
+In the previous unit, you saw that PowerShell supports variables. Use `$` to declare a variable and `=` to assign a value. For example:
 
 ```powershell
 $loc = "East US"
@@ -56,9 +56,9 @@ New-AzResourceGroup -Name "MyResourceGroup" -Location $loc
 
 ### Loops
 
-PowerShell has several loop structures, including `For`, `Do...While`, and `For...Each`. The `For` loop is the best match for our needs because we'll execute a cmdlet a fixed number of times.
+PowerShell has several loop structures, including `For`, `Do...While`, and `For...Each`. The `For` loop is the best match for our needs, because we'll execute a cmdlet a fixed number of times.
 
-The following example shows the core syntax. The example runs for two iterations and prints the value of **i** each time. The comparison operators are written `-lt` for "less than", `-le` for "less than or equal", `-eq` for "equal", `-ne` for "not equal", etc.
+The following example shows the core syntax. The example runs for two iterations and prints the value of **i** each time. The comparison operators are written `-lt` for "less than," `-le` for "less than or equal," `-eq` for "equal," `-ne` for "not equal," etc.
 
 ```powershell
 For ($i = 1; $i -lt 3; $i++)

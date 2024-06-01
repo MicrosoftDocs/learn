@@ -7,8 +7,7 @@ metadata:
   ms.date: 09/16/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Get started with the Linux command line and the Shell
 summary: |
   The command line is something you will interact with often when using Linux, both as a developer and admin. Knowing how it works and what commands you can use can greatly increase your productivity. 
@@ -31,8 +30,6 @@ roles:
 products:
 - azure-devops
 - azure
-subjects:
-- development-tools
 modules:
 - learn.student-evangelism.bash-introduction
 - learn.student-evangelism.unix-shell-wrangle-data

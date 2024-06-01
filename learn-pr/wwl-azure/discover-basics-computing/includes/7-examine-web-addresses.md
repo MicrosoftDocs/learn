@@ -16,7 +16,8 @@ When you type in a domain name, how does your browser know where to go? How does
 
 Each router on the internet is assigned a special IP address so the internet knows where to find resources. The set of computers (called web servers) that run a company's website have routers with IP addresses. Thankfully, you don't have to know what those IP addresses are. You can simply type in `microsoft.com` and get to where you need to go.
 
-![Diagram showing a lookup table, address book, phone book or similar idea of having to look something up.](../media/phone-book.jpeg)
+:::image type="content" source="../media/phone-book-6340cf7e.jpeg" alt-text="Diagram showing a lookup table, address book, phone book or similar idea of having to look something up.":::
+
 
 This is because there's a big address book that links the domain name you type into your browser with the IP address of the company. This address book is called the Domain Name System, or DNS for short.
 

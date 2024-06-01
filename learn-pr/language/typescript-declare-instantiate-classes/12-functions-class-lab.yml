@@ -7,9 +7,10 @@ metadata:
   ms.date: 02/11/2021
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-js
 durationInMinutes: 20
 content: |
   [!include[](includes/12-functions-class-lab.md)]

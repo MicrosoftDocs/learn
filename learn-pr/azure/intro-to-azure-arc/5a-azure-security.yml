@@ -3,13 +3,12 @@ uid: learn.azure.intro-to-azure-arc.5a-azure-security
 metadata:
   title: Describe Azure Arc security solutions
   description: Describe Azure Arc security solutions
-  ms.date: 04/10/2023
+  ms.date: 12/07/2023
   author: johnmarco
   ms.author: johnmarc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Describe Azure Arc security solutions
-durationInMinutes: 8
+durationInMinutes: 4
 content: |
   [!include[](includes/5a-azure-security.md)]

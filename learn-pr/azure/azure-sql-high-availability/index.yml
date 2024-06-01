@@ -3,21 +3,22 @@ uid: learn.azure-sql-high-availability
 metadata:
   title: Deploy highly available solutions by using Azure SQL
   description: In this module, you'll learn how to deploy highly available solutions by using Azure SQL. You'll also look at architectures and how they affect availability.
-  ms.date: 03/15/2023
+  ms.date: 11/29/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: sql-db-mi
+  ms.subservice: high-availability
 title: Deploy highly available solutions by using Azure SQL
 summary: Whatever SLA, RTO, and RPO your business requires, Azure SQL has the options and built-in capabilities to meet that availability. In this module, you'll learn how to translate your knowledge of backup and restore, failover cluster instances, and Always On availability groups to the options for business continuity in Azure SQL. You'll also peek under the hood at the architectures and how they affect availability.
 abstract: | 
   In this module, you'll learn how to:
-  - Create a backup and restore strategy for your organization
-  - Evaluate the architectures associated with each service tier
-  - Compare options for getting higher availability
-  - Describe how availability and consistency apply to Azure SQL
-  - Configure and monitor availability
+  - Create a backup and restore strategy for your organization.
+  - Evaluate the architectures associated with each service tier.
+  - Compare options for getting higher availability.
+  - Describe how availability and consistency apply to Azure SQL.
+  - Configure and monitor availability.
 prerequisites: | 
   - Experience working with, maintaining, and developing with SQL Server
   - Experience with Azure, such as deploying and managing resources
@@ -34,7 +35,7 @@ products:
 - azure-sql-database
 - azure-sql-managed-instance
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.azure-sql-high-availability.1-introduction
 - learn.azure-sql-high-availability.2-backup-restore

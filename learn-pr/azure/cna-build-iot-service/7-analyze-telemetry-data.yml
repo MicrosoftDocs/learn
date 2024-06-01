@@ -4,11 +4,10 @@ title: Analyze telemetry data
 metadata:
   title: Analyze telemetry data
   description: Analyze telemetry data
-  ms.date: 04/29/2021
-  author: mpolicht
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 02/22/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/7-analyze-telemetry-data.md)]

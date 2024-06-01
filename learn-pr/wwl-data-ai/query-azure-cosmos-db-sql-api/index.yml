@@ -6,8 +6,8 @@ metadata:
   ms.date: 11/04/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: cosmos-db
 title: Query the Azure Cosmos DB for NoSQL
 summary: Author queries for Azure Cosmos DB for NoSQL using the SQL query language.
 abstract: |
@@ -26,7 +26,7 @@ products:
 - azure-cosmos-db
 subjects:
 - cloud-computing
-- database
+- databases
 units:
 - learn.wwl.query-azure-cosmos-db-sql-api.introduction
 - learn.wwl.query-azure-cosmos-db-sql-api.understand-sql-query-language

@@ -5,11 +5,12 @@ metadata:
   unitType: introduction
   title: Introduction to Razor class libraries
   description: "By using Razor class libraries, you can share user-interface components between ASP.NET Core and Blazor applications. You package the components by using NuGet, and they can be easily referenced by other applications."
-  ms.date: 10/13/2021
+  ms.date: 01/26/2024
   author: csharpfritz
   ms.author: jefritz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

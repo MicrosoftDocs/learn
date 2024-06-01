@@ -2,13 +2,14 @@
 uid: learn.wwl.analyze-images.analyze-image
 title: Analyze an image
 metadata:
+  zone_pivot_groups: dev-lang-csharp-python
   title: Analyze an image
   description: "Analyze an image"
-  ms.date: 07/13/2022
+  ms.date: 02/05/2024
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: unit
+  ms.custom: devx-track-python
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

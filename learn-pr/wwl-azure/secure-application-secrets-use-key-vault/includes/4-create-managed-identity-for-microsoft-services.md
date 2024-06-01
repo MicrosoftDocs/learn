@@ -1,6 +1,6 @@
-In this unit, you'll connect your Key Vault to your Spring Petclinic microservices using a managed identity. The managed identity will be assigned to your application. The process will also create a Service Principal for your application in Azure Active Directory.
+In this unit, you'll connect your Key Vault to your Spring Petclinic microservices using a managed identity. The managed identity will be assigned to your application. The process will also create a Service Principal for your application in Microsoft Entra ID.
 
-The apps deployed as the Spring Petclinic microservices will connect to the newly created Key Vault using a managed identity. The process of creating a managed identity will automatically create an Azure Active Directory service principal for your application. Managed identities minimize the overhead associated with managing service principals, since their secrets used for authentication are automatically rotated. The procedure below assigns a managed identity to a Spring Apps service application.
+The apps deployed as the Spring Petclinic microservices will connect to the newly created Key Vault using a managed identity. The process of creating a managed identity will automatically create a Microsoft Entra service principal for your application. Managed identities minimize the overhead associated with managing service principals, since their secrets used for authentication are automatically rotated. The procedure below assigns a managed identity to a Spring Apps service application.
 
 You'll assign an identity to the microservices used by the database:
 

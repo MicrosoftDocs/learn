@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-center-sap-solutions.examine-prerequisites-azure-center-sap-solutions
+title: Examine prerequisites for Azure Center for SAP solutions
+metadata:
+  title: Examine prerequisites for Azure Center for SAP solutions
+  description: "Explore the prerequisites needed to use Azure Center for SAP solutions."
+  ms.date: 03/26/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-examine-prerequisites-azure-center-sap-solutions.md)]

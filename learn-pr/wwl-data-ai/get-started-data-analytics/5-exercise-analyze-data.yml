@@ -4,13 +4,12 @@ title: 'Exercise: Analyze data'
 metadata:
   title: 'Exercise: Analyze data'
   description: "Exercise: Analyze data"
-  ms.date: 03/01/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-analyze-data.md)]

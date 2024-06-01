@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.procedures-functions-postgresql.exercise-create-stored-procedure-azure-database-for-postgresql
+title: Exercise - Create a stored procedure in Azure Database for PostgreSQL
+metadata:
+  title: Exercise - Create a stored procedure in Azure Database for PostgreSQL
+  description: "Exercise - Create a stored procedure in Azure Database for PostgreSQL."
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-create-stored-procedure-azure-database-postgresql.md)]

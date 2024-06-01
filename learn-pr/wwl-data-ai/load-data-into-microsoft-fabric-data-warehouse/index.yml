@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse
+metadata:
+  title: Load data into a Microsoft Fabric data warehouse
+  description: Explore the process of loading data into a warehouse in Microsoft Fabric.
+  ms.date: 12/01/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: module
+  ms.custom:
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
+  ms.service: azure
+title: Load data into a Microsoft Fabric data warehouse
+summary: Data warehouse in Microsoft Fabric is a comprehensive platform for data and analytics, featuring advanced query processing and full transactional T-SQL capabilities for easy data management and analysis.
+abstract: |
+  In this module, you'll:
+  - Learn different strategies to load data into a data warehouse in Microsoft Fabric.
+  - Learn how to build a data pipeline to load a warehouse in Microsoft Fabric.
+  - Learn how to load data in a warehouse using T-SQL.
+  - Learn how to load and transform data with dataflow (Gen 2).
+prerequisites: |
+  Before starting this module, you should be familiar with the basic principles of a data warehouse.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+products:
+- fabric
+subjects:
+- data-management
+- machine-learning
+units:
+- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.introduction
+- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.explore-data-load-strategies
+- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.load-data-using-data-pipeline
+- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.load-data-using-tsql
+- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.load-data-using-dataflow
+- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.exercise-load-data-into-warehouse
+- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.knowledge-check
+- learn-wwl.load-data-into-microsoft-fabric-data-warehouse.summary
+badge:
+  uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse.badge

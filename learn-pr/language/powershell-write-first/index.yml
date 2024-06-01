@@ -2,12 +2,11 @@
 uid: learn.languages.powershell-write-first
 metadata:
   title: Write your first PowerShell code
-  description: In this module, you begin learning the basics of programming by writing and running code in PowerShell.
-  ms.date: 12/08/2022
+  description: Learn the basics of programming by writing and running code in PowerShell.
+  ms.date: 10/04/2023
   author: michaeltlombardi
   ms.author: mlombardi
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Write your first PowerShell code
 summary: In this module, you begin learning the basics of programming by writing and running code in PowerShell.
 abstract: |
@@ -27,8 +26,6 @@ products:
 - dotnet
 languages:
 - powershell
-subjects:
-- development-tools
 units:
 - learn.languages.powershell-write-first.introduction
 - learn.languages.powershell-write-first.exercise-hello-world

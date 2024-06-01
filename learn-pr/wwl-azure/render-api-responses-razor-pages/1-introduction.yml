@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.render-api-responses-razor-pages.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 03/18/2024
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

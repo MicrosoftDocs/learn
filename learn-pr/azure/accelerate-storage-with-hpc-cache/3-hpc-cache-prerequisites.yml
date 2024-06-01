@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content  
   title: Identify the requirements for HPC Cache
   description: Prerequisites for Azure HPC Cache
-  ms.date: 05/06/2021
+  ms.date: 08/15/2023
   author: ronhogue  
   ms.author: rohogue  
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-hpc-cache-prerequisites.md)]

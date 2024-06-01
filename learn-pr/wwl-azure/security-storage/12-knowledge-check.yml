@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-storage.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/29/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/12-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the recommended way to manage and rotate your Azure storage account access keys?"
+    choices:
+    - content: "Use Azure Key Vault to manage and rotate your keys"
+      isCorrect: true
+      explanation: "Correct. Azure Key Vault makes it easy to rotate your keys without interruption to your applications and provides secure management of your access keys."
+    - content: "Save access keys in plain text accessible to others"
+      isCorrect: false
+      explanation: "Incorrect. This isn't a secure way to manage your access keys."
+    - content: "Hard code access keys in your application code"
+      isCorrect: false
+      explanation: "Incorrect. This isn't a secure way to manage your access keys."
+  - content: "What is the purpose of using Azure Key Vault to manage storage account access keys?"
+    choices:
+    - content: "To limit access to the data stored in the storage account"
+      isCorrect: false
+      explanation: "Incorrect. While access keys do provide access to both the configuration and data of a storage account, the purpose of using Azure Key Vault is to manage and rotate these keys securely."
+    - content: "To generate new access keys for each storage account"
+      isCorrect: false
+      explanation: "Incorrect. Azure Key Vault doesn't generate new access keys, but it can be used to manage and rotate existing ones."
+    - content: "To manage and rotate existing access keys securely"
+      isCorrect: true
+      explanation: "Correct. Azure Key Vault provides a secure way to manage and rotate storage account access keys, which should be done regularly to maintain security."
+  - content: "What is the recommended way to authorize access to data in Azure Storage?"
+    choices:
+    - content: "Using either Microsoft Entra ID or a shared access signature SAS"
+      isCorrect: true
+      explanation: "Correct. Microsoft recommends that clients use either Microsoft Entra ID or a shared access signature SAS to authorize access to data in Azure Storage."
+    - content: "Using Shared Key authorization"
+      isCorrect: false
+      explanation: "Incorrect. Shared Key authorization isn't recommended as it may be less secure."
+    - content: "Using access keys and connection strings for all apps accessing production or sensitive data"
+      isCorrect: false
+      explanation: "Incorrect. Use of access keys and connection strings should be limited to initial proof of concept apps or development prototypes that don't access production or sensitive data."
+  - content: "What is the purpose of authorizing access to resources in Azure Storage?"
+    choices:
+    - content: "To restrict access to resources only to users with Microsoft Entra Domain Services authorization"
+      isCorrect: false
+      explanation: "Incorrect. While Microsoft Entra Domain Services is one option for authorization, it isn't the only option and restricting access only to users with Microsoft Entra Domain Services authorization would limit access to resources."
+    - content: "To make resources public and accessible to any user"
+      isCorrect: false
+      explanation: "Incorrect. This would allow anonymous read access and isn't a secure way to manage access to resources."
+    - content: "To ensure that resources are accessible only when authorized and only to those users or applications to whom access is granted"
+      isCorrect: true
+      explanation: "Correct. Authorization ensures that resources are secure and only accessible to authorized users or applications."
+  - content: "What is the purpose of Bring Your Own Key (BYOK) in Azure Key Vault?"
+    choices:
+    - content: "To transfer a key from Azure Key Vault to an on-premises Hardware Security Module (HSM)"
+      isCorrect: false
+      explanation: "Incorrect. BYOK is used to transfer a key from an on-premises HSM to Azure Key Vault."
+    - content: "To securely transfer a key from an on-premises Hardware Security Module (HSM) outside Azure, into the HSM backing Azure Key Vault"
+      isCorrect: true
+      explanation: "Correct. BYOK is used to securely transfer an existing key from an on-premises HSM to Azure Key Vault for secure storage and management."
+    - content: "To generate a new key in Azure Key Vault for use in an on-premises HSM"
+      isCorrect: false
+      explanation: "Incorrect. BYOK is used to transfer an existing key from an on-premises HSM to Azure Key Vault, not to generate a new key."

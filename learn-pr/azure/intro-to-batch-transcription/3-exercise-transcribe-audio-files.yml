@@ -4,13 +4,14 @@ title: Exercise - Transcribe audio files
 metadata:
   title: Exercise - Transcribe audio files
   description: Exercise - Transcribe audio files
-  ms.date: 03/14/2021
+  ms.date: 03/09/2023
   author: eric-urban
   ms.author: eur
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 5
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/3-exercise-transcribe-audio-files.md)]
+  [!INCLUDE[](includes/3-exercise-transcribe-audio-files.md)]

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse.load-data-using-data-pipeline
+title: Use data pipelines to load a warehouse
+metadata:
+  title: Use data pipelines to load a warehouse
+  description: "Learn how data pipelines work in Microsoft Fabric and how it can be used for loading purposes."
+  ms.date: 12/01/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-load-data-using-data-pipeline.md)]

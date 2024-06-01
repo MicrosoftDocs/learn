@@ -4,50 +4,49 @@ title: Cluster scalability concepts
 metadata:
   type: knowledge_check
   title: Cluster scalability concepts
-  description: Learn what is cluster scalability, why it's important and how AKS helps you solve this problem
-  ms.date: 04/27/2021
+  description: Learn about cluster scalability, why it's important, and how AKS can help with it.
+  ms.date: 11/08/2023
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-concepts-cluster-scaling.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "How is the cluster autoscaler different from the HorizontalPodAutoscaler?"
+  - content: "How is the cluster autoscaler different from the HPA?"
     choices:
-    - content: "None, they're both the same resource, just with different names."
+    - content: "They're both the same resource with different names."
       isCorrect: false
-      explanation: "Incorrect. Pod autoscalers are meant to live within the cluster and scale pods."
-    - content: "The cluster autoscaler monitors pods in order to scale the number of nodes in a cluster."
+      explanation: "Incorrect. Pod autoscalers, like the HPA, are meant to live within the cluster and scale pods."
+    - content: "The cluster autoscaler monitors pods to scale the number of nodes in a cluster."
       isCorrect: true
-      explanation: "Correct. The cluster autoscaler will scale the number of nodes, while pod autoscalers will scale pods."
-    - content: "The pod autoscaler scales the number of pods, while the cluster autoscaler is intended for multi-cluster usage."
+      explanation: "Correct. The cluster autoscaler scales nodes, while the HPA scale pods."
+    - content: "The HPA scales the number of pods, while the cluster autoscaler is intended for multi-cluster usage."
       isCorrect: false
       explanation: "Incorrect. The cluster autoscaler works in a single cluster."
 
-  - content: "Why is the cluster autoscaler necessary?"
+  - content: "Why is the cluster autoscaler necessary in a production environment?"
     choices:
-    - content: "To avoid the work of someone having to manually scale the cluster."
+    - content: "So you can avoid the work of manually scaling the cluster."
       isCorrect: true
-      explanation: "Correct. This is the job of the cluster autoscaler."
-    - content: "The cluster autoscaler is not necessary in the cluster and it should not be used in production."
+      explanation: "Correct. The cluster autoscaler is a tool that you configure to perform automatic scaling on your workloads."
+    - content: "The cluster autoscaler isn't necessary in the cluster and shouldn't be used in production."
       isCorrect: false
       explanation: "Incorrect. It's a good practice to use the cluster autoscaler in production."
     - content: "The cluster autoscaler makes sure all the pods are working right."
       isCorrect: false
-      explanation: "Incorrect. Cluster autoscalers will affect the cluster, not pods."
+      explanation: "Incorrect. Cluster autoscalers affect the cluster, not pods."
 
-  - content: "In which of these situations will the cluster fail to remove a node?"
+  - content: "In which of these situations does the cluster fail to remove a node?"
     choices:
-    - content: "When a pod is managed by a replica set"
+    - content: "When a replica set manages the pod."
       isCorrect: false
       explanation: "Incorrect. All managed pods are removed."
-    - content: "If there's a PDB and this PDB is too restrictive with the minimum number of pods in the cluster."
+    - content: "If there's a PDB and the PDB is too restrictive with the minimum number of pods in the cluster."
       isCorrect: true
-      explanation: "Correct. Among others, this is one of the situations the autoscaler won't remove a node."
-    - content: "When the node runs Windows containers"
+      explanation: "Correct. Among others, this situation is one in which the autoscaler doesn't remove a node."
+    - content: "When the node runs Windows containers."
       isCorrect: false
-      explanation: "Incorrect. The underlying Operating System isn't a factor."
+      explanation: "Incorrect. The underlying operating system isn't a factor."

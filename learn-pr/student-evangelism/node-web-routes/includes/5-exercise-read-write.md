@@ -1,83 +1,57 @@
-The online retailer is impressed with your first web application. Now it wants you to create an API that you can read and write from. The data might be stored in a database and might contain millions of records. For that reason, the retailer wants to see an app that uses techniques that limit how much data is asked for.
+Tailwind Traders is impressed with your APIs, which return existing products. Now you need to create an API that can insert and update products. The data is typically stored in a database and contain millions of records. For that reason, you need to use techniques that limit how much data is passed into the API and returned from the API.
 
-## Implement support to read and write data
+## Implement support to write data
 
-It's common to construct an API with many resources. Each resource can have several operations available on it to read and write. Organizing by resource and by operations like read/write is called *create*, *read*, *update*, *delete* (CRUD). Implement the CRUD API on the `products` resource:
+Implement the CRUD API on the `products` resource:
 
-1. Clone the [node-essentials repo](https://github.com/MicrosoftDocs/node-essentials) by running the following command.
+This starter project at `nodejs-route\exercise-express-routing\reading-writing`contains the product files and some starter application code. All you need to do is fill in the missing parts.
 
-   > [!NOTE]
-   > If you completed this step in the earlier exercise, you don't need to do it again.
-
-   ```bash
-   git clone https://github.com/MicrosoftDocs/node-essentials
-   ```
-
-   This starter project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
-
-1. To inspect the repo that you cloned and go to the files that you need, run this command:
-
-   ```bash
-   cd node-essentials/nodejs-http/exercise-express-routing/reading-writing
-   ```
-
-   The outline of the directory should look like this:
-
-   ```bash
-   -| app.js
-   -| client-get.js
-   -| client-post.js
-   -| client-put.js
-   -| client-delete.js
-   -| client-delete-route.js
-   -| package.json
-   ```
-
-1. The *package.json* file contains an `express` dependency. In the terminal, run the following command to install it:
+1. Right-click the **reading-writing** folder name and select **Open in integrated terminal**. 
+1. In the terminal, run the following command to install it:
 
    ```bash
    npm install
    ```
 
-   `npm` reads from the `dependencies` section in *package.json*.
-
 1. Open *app.js* to inspect it. The file should look like this:
 
    ```javascript
-   const express = require('express')
-   const app = express()
-   const port = 3000
-
-   let bodyParser = require('body-parser');
-   app.use(bodyParser.json());
-
-   let products = [];
-
-   app.post('/products', function(req, res) {
-     // implement
-   });
-
-   app.put('/products', function(req, res) {
-     // implement
-   });
-
-   app.delete('/products/:id', function(req, res) {
-     // implement
-   });
-
-   app.get('/products', (req, res) => {
-     // implement
-   })
-   app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+    const express = require('express');
+    const app = express();
+    const port = 3000;
+    
+    app.use(express.json());
+    
+    let products = [];
+    
+    app.post('/products', function (req, res) {
+      // implement
+    });
+    
+    app.put('/products', function (req, res) {
+      // implement
+    });
+    
+    app.delete('/products/:id', function (req, res) {
+      // implement
+    });
+    
+    app.get('/products', (req, res) => {
+      // implement
+    });
+    
+    app.listen(port, () =>
+      console.log(`Example app listening at http://localhost:${port}`),
+    );
    ```
 
-   The *app.js* file shows a skeleton of a program. Your next job is to implement the routes.
+   The *app.js* file shows the skeleton of a program. Your next job is to implement the routes.
 
-## Implement routes
+## Implement route to read data
 
-To implement routes, add a little code and then test it. Do this method by method until you have a fully functional API.
+To implement routes, the process is to add a little code and then test it. Continue adding each route's method until you have a fully functional API. Make your changes in the *app.js* file in the *reading-writing* directory. All files that start with `client` are client applications that you can use to test your API.
 
-1. Support reading from the API. Locate the part of the code that looks like this:
+1. To support reading from the API, locate the part of the code that looks like this:
 
    ```javascript
    app.get('/products', (req, res) => {
@@ -93,13 +67,13 @@ To implement routes, add a little code and then test it. Do this method by metho
    })
    ```
 
-1. To check that the code works, start the API by running this command:
+1. To check that the code works, start the Node application by running this command:
 
    ```bash
    node app.js
    ```
 
-1. In a separate terminal, run this command:
+1. In a separate terminal for the same folder, **reading-writing**, run the following command. It's important to have two terminal open because you need to run the server and the client at the same time.
 
    ```javascript
    node client-get.js
@@ -112,15 +86,17 @@ To implement routes, add a little code and then test it. Do this method by metho
    Connection closed
    ```
 
-The API responds with an empty array because you haven't written any data to it yet. Let's change that next.
+   The API responds with an empty array because you haven't written any data to it yet. Let's change that next.
 
-## Implement writing
+1. In the first terminal, select Ctrl+C to stop the application.
 
-1. To implement writing, locate this code:
+## Implement route to write data
+
+1. To implement writing data to in-memory database, locate this code:
 
    ```javascript
-   app.post('/products', function(req, res) {
-     // implement
+   app.post('/products', function (req, res) {
+      // implement
    });
    ```
 
@@ -134,7 +110,7 @@ The API responds with an empty array because you haven't written any data to it 
    });
    ```
 
-   The new code reads incoming data from `req.body` and constructs a JavaScript object from it. Next, it's added to the `products` array. Finally, the new product is returned to the user.
+   The new code reads incoming data from `req.body` and constructs a JavaScript object from it. Next, it's added to the `products` in-memory database array. Finally, the new product is returned to the user.
 
 1. To test the code, run the server program by running this command:
 
@@ -142,7 +118,7 @@ The API responds with an empty array because you haven't written any data to it 
    node app.js
    ```
 
-1. In a separate terminal, run this command:
+1. In a separate terminal for the same folder, **reading-writing**, run the following command. It's important to have two terminal open because you need to run the server and the client at the same time.
 
    ```bash
    node client-post.js
@@ -168,14 +144,22 @@ The API responds with an empty array because you haven't written any data to it 
    Connection closed
    ```
 
-   The response tells you that when you ran *client-post.js*, you wrote data to the API. Also, you ran *client-get.js* to query the API for data. The API responded with the data that you just wrote to it.
+    Your requests so far:
+    
+    * **client-post.js**: The response tells you that when you ran *client-post.js*, you wrote data to the API. 
+    * **client-get.js**: You ran *client-get.js* to query the API for data. The API responded with the data that you just wrote to it.
 
-## Implement the ability to update data
+1. In the first terminal, select Ctrl+C to stop the application.
+
+
+## Implement route to update data
 
 1. To implement the ability to update your data, locate the code that looks like this:
 
    ```javascript
-   app.put('/products', function(req, res) {});
+   app.put('/products', function (req, res) {
+     // implement
+   });
    ```
 
    Replace it with this code:
@@ -194,7 +178,7 @@ The API responds with an empty array because you haven't written any data to it 
    });
    ```
 
-   The new code locates the record in the `products` array that matches the `id` property, and it updates that record.
+   The new code locates the record in the `products` in-memory database array that matches the `id` property, and updates that record.
 
 1. To test the code, start the server application:
 
@@ -234,12 +218,17 @@ The API responds with an empty array because you haven't written any data to it 
    Connection closed
    ```
 
-## Implement deleting
+1. In the first terminal, select Ctrl+C to stop the application.
+
+
+## Implement route to delete data
 
 1. To implement deleting, locate the code that looks like this:
 
    ```javascript
-   app.delete('/products/:id', function(req, res) {});
+   app.delete('/products/:id', function (req, res) {
+     // implement
+   });
    ```
 
    Replace it with this code:
@@ -252,7 +241,7 @@ The API responds with an empty array because you haven't written any data to it 
    });
    ```
 
-   The new code finds the product item to be deleted. Then it filters out that item from the `products` array and responds with a filtered version of `products`.
+   The new code finds the product to be deleted. Then it filters out that item from the `products` in-memory database array and returns the deleted product.
 
 1. To test the code, start the server application:
 
@@ -275,8 +264,8 @@ The API responds with an empty array because you haven't written any data to it 
    You should see the following output:
 
    ```output
-   Received data {"name":"product","id":1}
-   Connection closed
+   response {"name":"product","id":1}
+   Closed connection
    ```
   
 1. To check the code, run this command:
@@ -292,84 +281,40 @@ The API responds with an empty array because you haven't written any data to it 
    Connection closed
    ```
 
-   Congratulations! You've implemented a `products` resource by using a full CRUD.
+   Congratulations! You've implemented a `products` resource by using a full CRUD (create, read, update, delete actions).
 
-## Implement CRUD
+1. In the first terminal, select Ctrl+C to stop the application.
 
-Implementing CRUD for a resource is a common task. Express has a `route()` method just for this purpose. When you use the `route()` method, your code is grouped so that it's easier to read.
+## Cleanup development container
 
-1. To implement CRUD, replace the code in *app.js* with this code:
+After completing the project, you may wish to clean up your development environment or return it to its typical state.
 
-   ```javascript
-   const express = require('express')
-   const app = express()
-   const port = 3000
+### [Remote development (browser)](#tab/github-codespaces)
 
-   let bodyParser = require('body-parser');
-   app.use(bodyParser.json());
+Deleting the GitHub Codespaces environment ensures that you can maximize the amount of free core hours entitlement you get for your account.
 
-   let products = [];
+> [!IMPORTANT]
+> For more information about your GitHub account's entitlements, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
 
-   app.route('/products')
-    .get((req, res) => {
-      res.json(products);
-    })
-    .post((req, res) => {
-      const newProduct = { ...req.body, id: products.length + 1 }
-      products = [...products, newProduct]
-      res.json(newProduct);
-    })
-   .put((req, res) => {
-      let updatedProduct;
-      products = products.map(p => {
-        if (p.id === req.body.id) {
-          updatedProduct = { ...p, ...req.body };
-          return updatedProduct;
-        }
-        return p;
-      })
-      res.json(updatedProduct);
-    })
-    .delete((req, res) => {
-      const deletedProduct = products.find(p => p.id === +req.body.id);
-      products = products.filter(p => p.id !== +req.body.id);
-      res.json(deletedProduct);
-    })
+1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
 
-   app.listen(port, () => console.log(`Example app listening on port ${port}!`))
-   ```
+1. Locate your currently running Codespaces sourced from the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository.
 
-1. To test this new implementation, restart the server by running this command:
+    :::image type="content" source="../media/codespaces/codespace-dashboard.png" alt-text="Screenshot of all the running Codespaces including their status and templates.":::
 
-   ```bash
-   node app.js
-   ```
+1. Open the context menu for the codespace and select **Delete**.
 
-1. In a separate terminal window, run this command:
+    :::image type="content" source="../media/codespaces/codespace-delete.png" alt-text="Screenshot of the context menu for a single codespace with the delete option highlighted.":::
 
-   ```bash
-   node client-post.js
-   ```
+#### [Local development (Docker)](#tab/visual-studio-code)
 
-1. Run this command to delete the record:
+You aren't necessarily required to clean up your local environment, but you can stop the running development container and return to running Visual Studio Code in the context of a local workspace.
 
-   ```bash
-   node client-delete-route.js
-   ```
+1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen Folder Locally**.
 
-1. To check that the record is removed, run this command:
+    :::image type="content" source="../media/codespaces/reopen-local-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within your local environment.":::
 
-   ```bash
-   node client-get.js
-   ```
+> [!TIP]
+> Visual Studio Code will stop the running development container, but the container still exists in Docker in a stopped state. You always have the option to deleting the container instance, container image, and volumes from Docker to free up more space on your local machine.
 
-   You should see the following output:
-
-   ```output
-   Received data []
-   Connection closed
-   ```
-
-You used *client-delete-route.js* instead of *client-delete.js* in the previous exercise. The difference lies in how the route is implemented. The first version of *app.js* relies on deletions being done toward a route like `/products/<id>`, with the unique identifier being sent as a route parameter.
-
-When you use the `route()` method, it implements the deletion route differently. It wants you to send unique identifier through the body instead of as a route parameter. There's no right or wrong way to implement a deletion route.
+---

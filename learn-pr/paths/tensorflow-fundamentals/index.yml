@@ -8,8 +8,7 @@ metadata:
   ms.date: 04/09/2021
   author: cassiebreviu
   ms.author: cassieb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
@@ -28,8 +27,6 @@ roles:
 - student
 products: 
 - azure-machine-learning
-subjects:
-- development-tools
 modules:
 - learn.tensorflow.intro-machine-learning-keras
 - learn.tensorflow.intro-computer-vision

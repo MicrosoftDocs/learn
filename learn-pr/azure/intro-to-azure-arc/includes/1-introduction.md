@@ -1,14 +1,12 @@
-Microsoft Azure Arc can help you manage Windows Server instances, Linux instances, Kubernetes clusters, and connected data sources.
+Azure Arc provides a centralized way to manage Windows Server instances, Linux instances, Kubernetes clusters, and connected data sources. By projecting non-Azure and/or on-premises resources into Azure Resource Manager, hybrid environments can be managed efficiently and consistently.
 
-Contoso, Ltd. is a midsize financial services company in London with a branch office in New York City. Most of the Contoso, Ltd. compute environment runs on-premises on Windows Server, and includes virtualized workloads on Windows Server 2012 R2 hosts. Contoso IT staff members are migrating Contoso servers to Windows Server 2019.
+Contoso, Ltd. is a midsize financial services company in London with a branch office in New York City. Most of the Contoso, Ltd. compute environment runs on-premises on Windows Server.
 
-Contoso's IT director realizes that Contoso has an outdated operational model with limited automation and reliance on dated technology. The Contoso IT Engineering team has started exploring Azure capabilities. It wants to determine whether Azure services might help with modernizing the current operational model through automation and virtualization.
+Contoso's IT director realizes that Contoso has an outdated operational model with limited automation and reliance on dated technology. The Contoso IT Engineering team has started exploring Azure capabilities and plans to migrate some workloads to Azure. However, Contoso will continue to operate an on-premises environment for some time, so their ability to apply Azure policies to on-premises Windows Server workloads is important, as well as to review these on-premises Windows Server instances alongside Azure VMs in the Azure portal. It's also important that administrators can use the Azure portal to manage the various distributions of Kubernetes clusters that Contoso uses today.
 
-As part of the initial design, the Contoso IT team asked you, as the lead system engineer and server administrator, to set up a proof-of-concept environment. This environment must verify whether Azure services can help modernize the IT infrastructure and meet business goals.
+As Contoso moves to a modern cloud computing environment, it wants to understand how Azure services might help with modernizing the current operational model through automation and virtualization, even though they'll need to maintain some on-premises resources.
 
-Contoso will continue to operate an on-premises environment for some time after it begins migrating workloads to Azure infrastructure as a service (IaaS) virtual machines (VMs). So, their ability to apply Azure policies to on-premises Windows Server workloads is important. Additionally, administrators need to review on-premises Windows Server instances in the Azure portal. It's also important that administrators can use the Azure portal to review Kubernetes clusters.
-
-Using Arc enables Contoso's on-premises IT administrators to familiarize themselves with the Azure management space. Azure Arc also enables Contoso's administrators that are already using Azure APIs to manage Azure resources to also manage on-premises resources.
+As part of the initial design, the Contoso IT team asked you, as the lead system engineer and server administrator, to evaluate how Azure services can help modernize Contoso's IT infrastructure and meet business goals, including the use of Azure Arc.
 
 ## Learning objectives
 

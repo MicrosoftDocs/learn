@@ -26,13 +26,7 @@ Azure file shares can be used in two ways. You can directly mount serverless Azu
 
 #### Choose your performance level
 
-Because Azure Files stores files in a storage account, you can [choose your performance level](/azure/storage/files/storage-files-scale-targets). The following table summaries the support differences between the standard and premium account levels.
-
-| Support | Standard account | Premium account |
-| --- | --- | --- |
-| **Latency** | Double-digit milliseconds | Single-digit milliseconds | 
-| **IOPS** | 20,000 IOPS | 100,000 IOPS |
-| **Bandwidth** | 300 MiB/s | 10 GiB/s |
+Because Azure Files stores files in a storage account, you can [choose your performance level](/azure/storage/files/storage-files-scale-targets). Performance metrics differ between standard and premium storage account levels. Premium accounts offer lower latency and higher IOPS and bandwidth.
 
 Standard performance accounts use HDD to store data. With HDD, the costs are lower but so is the performance. SSD arrays back the premium storage account's performance, which comes with higher costs. Currently, premium accounts can only use file storage accounts with ZRS storage in a limited number of regions.
 

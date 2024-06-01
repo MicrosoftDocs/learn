@@ -4,11 +4,10 @@ title: Implement a highly available NFS share
 metadata:
   title: Implement a highly available NFS share
   description: "Implement a highly available NFS share"
-  ms.date: 04/23/2023
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/9-implement-highly-available-nfs-share.md)]

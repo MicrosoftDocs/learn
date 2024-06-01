@@ -4,11 +4,10 @@ title: Risk management in startup teams
 metadata:
   title: Risk management in startup teams
   description: Learn how to manage conflict between startup cofounders. See how to protect your startup by using founder vesting.
-  ms.date: 02/11/2022
+  ms.date: 12/30/2022
   author: ryanmesches
   ms.author: ryanmesches
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-risk-management.md)]

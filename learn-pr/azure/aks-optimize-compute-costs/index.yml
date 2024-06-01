@@ -3,18 +3,18 @@ uid: learn.aks-optimize-compute-costs
 metadata:
   title: Optimize compute costs on Azure Kubernetes Service (AKS)
   description: Explore strategies that you can use on Azure to optimize your cloud-native application-development process by using Azure Kubernetes Service (AKS).
-  ms.date: 03/16/2022
+  ms.date: 12/20/2023
   author: Nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-kubernetes-service
 title: Optimize compute costs on Azure Kubernetes Service (AKS)
 summary: Explore cost-optimization strategies to use on Azure for your cloud-native application-development process. Azure Kubernetes Service (AKS) offers features that you can use to manage compute costs on your AKS cluster. These features include node autoscaling, AKS spot node pools, and Azure Policy.
 abstract: |
   In this module, you will:
-  - Optimize costs on AKS by using zero-scaled node pools
-  - Optimize costs on AKS by using autoscaled spot node pools
-  - Manage costs with Azure Policy on AKS
+  - Optimize costs on AKS by using zero-scaled node pools.
+  - Optimize costs on AKS by using autoscaled spot node pools.
+  - Manage costs with Azure Policy on AKS.
 prerequisites: |
   - Access to an Azure subscription
   - Basic knowledge of executing commands by using the Azure CLI

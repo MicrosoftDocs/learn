@@ -1,0 +1,1 @@
+In this module, you learned about the purpose of the Semantic Kernel SDK. You learned how it can be used to create a customized copilot experience. You also set up your Azure Open AI resource and built your Semantic Kernel project. Great work!

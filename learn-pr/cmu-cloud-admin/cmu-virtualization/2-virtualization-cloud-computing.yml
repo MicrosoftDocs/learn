@@ -4,11 +4,10 @@ title: Understanding virtualization
 metadata:
   title: Understanding virtualization
   description: Take a deep dive into how virtualization works and it's benefits.
-  ms.date: 08/15/2019
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 11
 content: |

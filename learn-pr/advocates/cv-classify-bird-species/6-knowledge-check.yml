@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 01/19/2021
+  ms.date: 12/22/2022
   author: cassiebreviu
   ms.author: cassieb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen, team=cloud_advocates
   ms.contributors: cassieb-09032021
 durationInMinutes: 2
@@ -27,7 +26,7 @@ quiz:
       choices:
         - content: "A confusion matrix"
           isCorrect: true
-          explanation: "Correct! A confusion matrix is a valid metric, but it isn't provided by Azure Cognitive Services Custom Vision."
+          explanation: "Correct! A confusion matrix is a valid metric, but it isn't provided by Azure AI Custom Vision."
         - content: "Recall"
           isCorrect: false
           explanation: "Incorrect. The recall metric is provided."

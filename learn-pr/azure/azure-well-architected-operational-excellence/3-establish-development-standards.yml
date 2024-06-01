@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-operational-excellence.establish-development-standards
+title: Establish development standards
+metadata:
+  title: Establish development standards
+  description: Learn how to establish development standards to improve your operational excellence.
+  ms.date: 12/05/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-establish-development-standards.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of the following is an example of an industry-standard tool for maintaining a backlog?'
+    choices:
+    - content: 'Microsoft Excel'
+      isCorrect: false
+      explanation: 'Incorrect. Microsoft Excel isn’t a good tool for maintaining a backlog.'
+    - content: 'Azure DevOps Boards'
+      isCorrect: true
+      explanation: 'Correct. Azure DevOps Boards is an industry-standard tool for maintaining a backlog.'
+    - content: 'Azure DevOps Pipelines'
+      isCorrect: false
+      explanation: "Incorrect. Azure DevOps Pipelines is a tool for managing a CI/CD pipeline, not for maintaining a backlog."
+    - content: 'Azure SQL Database'
+      isCorrect: false
+      explanation: "Incorrect. Azure SQL Database is a relational database service, not a tool for maintaining a backlog."
+  - content: 'Which of the following strategies can help you improve your development velocity and efficiency?'
+    choices:
+    - content: 'Performing all QA testing at the end of the development cycle'
+      isCorrect: false
+      explanation: 'Incorrect. Performing all QA testing at the end of the development cycle can lead to a large number of bugs that are expensive to fix.'
+    - content: 'Relying on customer reports to identify bugs'
+      isCorrect: false
+      explanation: 'Incorrect. Relying on customer reports to identify bugs can lead to a poor customer experience and a loss of customer confidence.'
+    - content: 'Deploying large and infrequent changes'
+      isCorrect: false
+      explanation: "Incorrect. Deploying large and infrequent changes is an inefficient approach. Deploying frequent, small changes is a more efficient approach."
+    - content: 'Testing early and often in the development cycle'
+      isCorrect: true
+      explanation: "Correct. Testing early and often helps development efficiency by catching bugs early and reducing the cost of fixing them."
+  - content: 'How was Contoso able to identify which of their recent process changes were most effective in improving their quality and efficiency?'
+    choices:
+    - content: 'They used the reporting features in Azure DevOps to measure their velocity.'
+      isCorrect: true
+      explanation: 'Correct. Azure DevOps provides reporting features that can help you measure your velocity and identify areas for improvement.'
+    - content: 'They timed how long it took to complete each step in their development process.'
+      isCorrect: false
+      explanation: 'Incorrect. This is an inefficient approach to measuring velocity.'
+    - content: 'They asked their customers to rate their satisfaction with the product.'
+      isCorrect: false
+      explanation: "Incorrect. While customer satisfaction is important, it doesn't provide a good measure of development velocity."
+    - content: 'They took an internal survey to see how their developers felt about the changes.'
+      isCorrect: false
+      explanation: "Incorrect. While internal surveys can be useful, they don't provide a good measure of development velocity."

@@ -3,13 +3,14 @@ uid: learn.azure-spring-cloud-workshop.4-build-spring-boot-microservice
 title: Build a Spring Boot microservice
 metadata:
   title: Build a Spring Boot microservice
-  description: Build a Spring Boot microservice
+  description: Learn how to build a Spring Boot microservice.
   author: judubois
   ms.author: judubois
-  ms.date: 03/04/2020
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.date: 11/10/2023
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-azurecli
   ms.contributors: judubois-02152021
 durationInMinutes: 10
 content: |
@@ -18,28 +19,28 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'To deploy a Spring Boot microservice to Azure Spring Apps, what do you need to change in your application?'
+  - content: "To deploy a Spring Boot microservice to Azure Spring Apps, what do you need to change in your application?"
     choices:
-    - content: 'Code a specific Spring bean'
+    - content: "Code a specific Spring bean."
       isCorrect: false
-      explanation: 'You do not need to add or change any code in your application.'
-    - content: 'Add a specific Maven dependency'
+      explanation: "You don't need to add or change any code in your application."
+    - content: 'Add a specific Maven dependency.'
       isCorrect: false
-      explanation: 'Azure Spring Apps requires no Azure-specific dependency in your application.'
-    - content: 'Set up some specific environment variables'
+      explanation: "Azure Spring Apps requires no Azure-specific dependency in your application."
+    - content: "Set up some specific environment variables."
       isCorrect: false
-      explanation: 'You do not need to set up some specific environment variables.'
-    - content: 'None of the above'
+      explanation: "You don't need to set up some specific environment variables."
+    - content: 'None of the above.'
       isCorrect: true
-      explanation: 'Migrate your Spring Cloud apps to Azure Spring Apps is seamless without vendor lock-in.'
-  - content: 'By default, how can you access your microservice once it is deployed?'
+      explanation: "Migrate your Spring Cloud apps to Azure Spring Apps is seamless without vendor lock-in."
+  - content: "By default, how can you access your microservice once it's deployed?"
     choices:
-    - content: 'There is a specific, secured endpoint, where the application is published'
+    - content: "There's a specific, secured endpoint, where the application is published."
       isCorrect: true
-      explanation: 'By default, a secured endpoint is set up. You can configure your cluster not to expose it, for increased security.'
-    - content: 'There is a publicly available endpoint'
+      explanation: "By default, a secured endpoint is set up. You can configure your cluster not to expose it, for increased security."
+    - content: "There's a publicly available endpoint."
       isCorrect: false
-      explanation: 'It is possible to assign a public address to the microservice endpoint, but it is not enabled by default for security reasons.'
-    - content: 'The endpoint is not available at all on the Internet, you must use a private network to access it'
+      explanation: "It's possible to assign a public address to the microservice endpoint, but it's not enabled by default for security reasons."
+    - content: "The endpoint isn't available at all on the internet, so you must use a private network to access it."
       isCorrect: false
-      explanation: 'By default, it is available on the Internet, using a secure token.'
+      explanation: "By default, it's available on the internet, using a secure token."

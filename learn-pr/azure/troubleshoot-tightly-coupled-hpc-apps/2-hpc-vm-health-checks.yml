@@ -4,11 +4,10 @@ title: Health checks for HPC virtual machines
 metadata:
   title: Health checks for HPC virtual machines
   description: Learn what type of health checks to run, how to run the tests, and how to interpret the results.
-  ms.date: 03/01/2021
+  ms.date: 05/09/2023
   author: garvct
   ms.author: cogarvey
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-hpc-vm-health-checks.md)]

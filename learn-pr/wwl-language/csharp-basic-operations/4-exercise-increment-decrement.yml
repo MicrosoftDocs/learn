@@ -4,11 +4,10 @@ title: Exercise - Increment and decrement values
 metadata:
   title: Exercise - Increment and decrement values
   description: "Exercise - Increment and decrement values"
-  ms.date: 04/25/2023
+  ms.date: 02/19/2024
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-increment-decrement.md)]

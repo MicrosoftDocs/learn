@@ -6,8 +6,8 @@ metadata:
   ms.date: 04/11/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: windows-server 
 title: Perform post-installation configuration of Windows Server
 summary: Learn to perform post-installation configuration of Windows Server by using several methods and tools.
 abstract: |

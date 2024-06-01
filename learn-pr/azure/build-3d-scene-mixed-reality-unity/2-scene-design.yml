@@ -4,11 +4,10 @@ title: Consider scene design
 metadata:
   title: Consider scene design
   description: Overview of Unity scene design considerations and wind farm example used throughout the module.
-  ms.date: 05/12/2021
+  ms.date: 03/12/2024
   author: JBrentJ
   ms.author: jejacks 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/2-scene-design.md)]

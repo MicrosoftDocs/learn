@@ -6,8 +6,7 @@ metadata:
   ms.date: 12/30/2022
   author: ryanmesches
   ms.author: ryanmesches
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  ms.topic: module
 title: Build your team
 summary: >
   This module gives practical advice on how to build your startup team, including how to find cofounders and recruit your first employees and contractors.
@@ -30,7 +29,7 @@ roles:
 products:
 - consumer
 subjects:
-- modern-work
+- business-applications
 units:
 - learn.startups.build-team.introduction
 - learn.startups.build-team.ideal-startup-team

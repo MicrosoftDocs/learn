@@ -4,45 +4,44 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/25/2023
+  ms.date: 02/19/2024
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
   - content: "What does the following code accomplish? `var value = (int) dividend / (int) divisor;`"
     choices:
-    - content: "Casts the operands to truncate the result"
+    - content: "Casts the operands to truncate the result."
       isCorrect: true
-      explanation: "Correct. The operands are casted to the int data type that will create an implicitly typed int result"
-    - content: "Declares an explicitly typed int variable"
+      explanation: "Correct. The operands are casted to the int data type that will create an implicitly typed int result."
+    - content: "Declares an explicitly typed int variable."
       isCorrect: false
-      explanation: "Incorrect. The var keyword creates an implicitly typed variable"
-    - content: "Casts the operands to prevent truncating the result"
+      explanation: "Incorrect. The var keyword creates an implicitly typed variable."
+    - content: "Casts the operands to prevent truncating the result."
       isCorrect: false
-      explanation: "Incorrect. The operands are casted to the int data type that will truncate the result"
-  - content: "Why does the tab appear to be a space in the output of the following code? `Console.WriteLine(\"Student\\tGrade\");`"
+      explanation: "Incorrect. The operands are casted to the int data type that will truncate the result."
+  - content: "What does the `$` symbol do when used in a string in C#?"
     choices:
-    - content: "The tab escape sequence is incorrect"
-      isCorrect: false
-      explanation: "Incorrect. `\\t` is the correct escape sequence for tab"
-    - content: "The next tab stop after `Student` is simply one space wide"
+    - content: "It allows you to use string interpolation to include variables in the string."
       isCorrect: true
-      explanation: "Correct. Printing a tab fills variable length whitespace until a position divisible by 4 is reached"
-    - content: "The tab escape sequence needs to be doubled (`\\t\\t`) to work"
+      explanation: "Correct! The `$` symbol allows you to use string interpolation to include variables in the string."
+    - content: "It indicates that the string is a regular expression."
       isCorrect: false
-      explanation: "Incorrect. A single `t` will display a tab correctly"
+      explanation: "Incorrect. The `$` symbol doesn't indicate a regular expression."
+    - content: "It indicates that the string is a verbatim string literal."
+      isCorrect: false
+      explanation: "Incorrect. The `$` symbol doesn't indicate a verbatim string literal."
   - content: "What is wrong with the following code? `int sophiaSum; Console.WriteLine(\"Sophia: \" + sophiaSum);`"
     choices:
-    - content: "`sophiaSum` is not initialized before use"
+    - content: "`sophiaSum` isn't initialized before use."
       isCorrect: true
-      explanation: "Correct. You must set a variable to a value before you can reference the value from the variable"
-    - content: "`sophiaSum` is not implicitly typed to a string"
+      explanation: "Correct. You must set a variable to a value before you can reference the value from the variable."
+    - content: "`sophiaSum` isn't implicitly typed to a string."
       isCorrect: false
-      explanation: "Incorrect. Using Console.WriteLine will implicitly convert variables into strings"
-    - content: "`sophiaSum` should use the var keyword"
+      explanation: "Incorrect. Using Console.WriteLine will implicitly convert variables into strings."
+    - content: "`sophiaSum` should use the var keyword."
       isCorrect: false
-      explanation: "Incorrect. var variables need to be initialized immediately"
+      explanation: "Incorrect. var variables need to be initialized immediately."

@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-authentication-authorization-solutions.design-for-azure-ad-b2b
-title: Design for Azure Active Directory business-to-business (B2B)
+title: Design for Microsoft Entra business-to-business (B2B)
 metadata:
-  title: Design for Azure Active Directory business-to-business (B2B)
-  description: "Design for Azure Active Directory business-to-business (B2B)"
-  ms.date: 03/24/2023
+  title: Design for Microsoft Entra business-to-business (B2B)
+  description: "Design for Microsoft Entra business-to-business (B2B)"
+  ms.date: 03/06/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/4-design-business-business.md)]

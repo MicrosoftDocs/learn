@@ -3,14 +3,13 @@ uid: learn.azure-sql-deploy-configure.8-exercise-load-data
 metadata:
   title: Exercise - Load data into Azure SQL Database
   description: Exercise - Load data into Azure SQL Database
-  ms.date: 03/15/2023
+  ms.date: 10/16/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Load data into Azure SQL Database
 durationInMinutes: 10
-azureSandbox: true
+azureSandbox: false
 interactive: bash
 content: |
   [!include[](includes/8-exercise-load-data.md)]

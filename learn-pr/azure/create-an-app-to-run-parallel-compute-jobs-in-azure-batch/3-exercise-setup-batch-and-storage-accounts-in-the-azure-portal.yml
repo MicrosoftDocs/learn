@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.exercise-setup-batch-and-storage-accounts-in-the-azure-portal
-title: Exercise - Setup Batch and Storage accounts in the Azure portal
+title: Exercise - Set up Batch and Storage accounts in the Azure portal
 metadata:
-  title: Exercise - Setup Batch and Storage accounts in the Azure portal
-  description: In this hands-on exercise, you'll setup Batch and Storage accounts in the Azure portal.
-  ms.date: 06/01/2019
+  title: Exercise - Set up Batch and Storage accounts in the Azure portal
+  description: In this hands-on exercise, you'll set up Batch and Storage accounts in the Azure portal.
+  ms.date: 02/14/2024
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jushiman
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-setup-batch-and-storage-accounts-in-the-azure-portal.md)]

@@ -33,7 +33,7 @@ The tracking portal uses the following services to support code, cache, and inte
 
 | Service | Description |
 | ---| ---|
-| **Azure Active Directory** | Users access the tracking portal using Azure AD accounts. The directory and account are automatically replicated globally. |
+| **Microsoft Entra ID** | Users access the tracking portal using Microsoft Entra accounts. The directory and account are automatically replicated globally. |
 | **Azure App Service** | The tracking portal uses two Azure App Services. The first runs a set of dynamic web pages, and the second a web API. |
 | **Azure Function Apps** | The tracking portal uses Azure Function Apps to run all background tasks. Some of these tasks run on a regular schedule, and other tasks operate on the messages in a queue. |
 | **Azure Storage Queues** | The tracking portal uses Azure Storage Queues with Azure Function Apps. The tracking portal places generated messages onto the queue from where the Function apps process these messages.  |
@@ -70,7 +70,7 @@ These events are unusual occurrences, and many companies feel they can sustain t
 
 Most Azure services offer a Service Level Agreement (SLA) or a guarantee of uptime. When we design an application architecture consisting of multiple Azure services, we calculate the overall SLA for the app as a composite of all other services SLAs.
 
-You calculate this SLA by multiplying together the SLAs of the component services. For example, assume our app consists of Azure App Service (99.95% SLA), and Azure Active Directory (99.9% SLA). The final calculated SLA is 99.85%.
+You calculate this SLA by multiplying together the SLAs of the component services. For example, assume our app consists of Azure App Service (99.95% SLA), and Microsoft Entra ID (99.9% SLA). The final calculated SLA is 99.85%.
 
 If this percentage uptime isn't enough for our application, we can arrange for the application to fail over onto another region.
 
@@ -89,7 +89,7 @@ The following table shows which components are global, regional, and configurabl
 | Azure DNS | Global | No changes are necessary. |
 | Application Gateway | Regional | Each instance of Application Gateway is located in a single region. |
 | Azure CDN | Global | No changes are necessary, content is cached globally by default. |
-| Azure Active Directory | Global | No changes are necessary. |
+| Microsoft Entra ID | Global | No changes are necessary. |
 | Azure App Service | Regional | Each instance of the app is located in a single region. |
 | Azure Function Apps | Regional | Each instance of the function app is located in a single region. |
 | Azure Storage Queues | Configurable | You can choose to replicate an Azure Storage account to multiple regions. |
@@ -118,7 +118,7 @@ When we create an Azure Application Gateway, we assign the service to a single r
 
 ### Application services
 
-Azure AD is a global system, and needs no modification.
+Microsoft Entra ID is a global system, and needs no modification.
 
 Azure Storage accounts can be configured to replicate content to multiple regions. We use one of the geo-redundant storage options to change our configuration.
 

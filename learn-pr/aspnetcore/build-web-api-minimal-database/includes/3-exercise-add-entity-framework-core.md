@@ -3,7 +3,7 @@ You're a developer for a company, and you and your company have heard about the 
 > [!NOTE]
 > This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
 
-[!include[](../../../includes/dotnet6-sdk-version.md)]
+[!include[](../../../includes/dotnet8-sdk-version.md)]
 
 ## Set up the project
 
@@ -12,7 +12,7 @@ First, you need to create a project. You've installed .NET 6 and you're ready to
 1. In a terminal, create a web API by running `dotnet new`:
 
    ```dotnetcli
-   dotnet new web -o PizzaStore -f net6.0
+   dotnet new web -o PizzaStore -f net8.0
    ```
 
    You should see the _PizzaStore_ directory.
@@ -26,7 +26,7 @@ First, you need to create a project. You've installed .NET 6 and you're ready to
 1. Install the Swashbuckle package:
 
    ```dotnetcli
-   dotnet add package Swashbuckle.AspNetCore --version 6.2.3
+   dotnet add package Swashbuckle.AspNetCore --version 6.5.0
    ```
 
 1. Open the project in Visual Studio Code.
@@ -48,7 +48,7 @@ First, you need to create a project. You've installed .NET 6 and you're ready to
 
 1. Open _Program.cs_ and add the highlighted code:
 
-   :::code language="csharp" source="../code/ef-core-setup.cs" highlight="1, 5-12, 15-19":::
+   :::code language="csharp" source="../code/ef-core-setup.cs" highlight="1, 5-12, 15-22":::
 
    You might receive a prompt from Visual Studio Code to add assets to debug the project. Select `Yes` in the dialog.
 
@@ -59,7 +59,7 @@ To store the items in the to-do list, install the `EntityFrameworkCore.InMemory`
 1. Press **Ctrl+\`** to open a terminal in Visual Studio Code. In the new terminal, enter the following code to add the EF Core InMemory package:
 
    ```console
-   dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 6.0
+   dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 8.0
    ```
 
 1. Add `using Microsoft.EntityFrameworkCore;` to the top of your _Program.cs_ and _Pizza.cs_ files.

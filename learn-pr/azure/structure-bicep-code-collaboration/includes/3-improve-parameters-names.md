@@ -1,6 +1,6 @@
 Parameters are the most common way that your colleagues will interact with your template. When they deploy your template, they need to specify values for the parameters. After it's created, a resource's name provides important information about its purpose to anyone who looks at your Azure environment. 
 
-In this unit, you learn about some key considerations when you're planning the parameters for Bicep files, and the names you give your resources.
+In this unit, you'll learn about some key considerations when you're planning the parameters for Bicep files and the names you give your resources.
 
 ## How understandable are the parameters?
 
@@ -17,7 +17,7 @@ Bicep can also help to validate the input that users provide through _parameter 
 
 - **Descriptions** provide human-readable information about the purpose of the parameter and the effects of setting its value.
 
-- **Value constraints** enforce limits on what users can enter for the parameter's value. You can specify a list of specific, permitted values by using the `@allowed()` decorator. You can use the `@minValue()` and `@maxValue()` decorators to enforce the minimum and maximum values for numeric parameters. And you can use the `@minLength()` and `@maxLength()` decorators to enforce the length of string and array parameters.
+- **Value constraints** enforce limits on what users can enter for the parameter's value. You can specify a list of specific, permitted values by using the `@allowed()` decorator. You can use the `@minValue()` and `@maxValue()` decorators to enforce the minimum and maximum values for numeric parameters, and you can use the `@minLength()` and `@maxLength()` decorators to enforce the length of string and array parameters.
 
   > [!TIP]
   > Be careful when you use the `@allowed()` parameter decorator to specify SKUs. Azure services often add new SKUs, and you don't want your template to unnecessarily prohibit their use. Consider using Azure Policy to enforce the use of specific SKUs, and use the `@allowed()` decorator with SKUs only when there are functional reasons why your template's users shouldn't select a specific SKU. For example, the features that your template needs might not be available in that SKU. Explain this by using a `@description()` decorator or comment that makes the reasons clear to anyone in future.
@@ -26,12 +26,12 @@ Bicep can also help to validate the input that users provide through _parameter 
 
 ## How flexible should a Bicep file be?
 
-One of the goals of defining your infrastructure as code is to make your templates reusable and flexible. You don't want to create single-purpose templates that have a hard-coded configuration. On the other hand, it doesn't make sense to expose all resource properties as parameters. Create templates that work for your specific business problem or solution, not generic templates that need to work for every situation. You also don't want to have so many parameters that it takes a long time to enter the values before the template can be deployed. This is particularly important when you configure the SKUs and instance counts of resources.
+One of the goals of defining your infrastructure as code is to make your templates reusable and flexible. You don't want to create single-purpose templates that have a hard-coded configuration. On the other hand, it doesn't make sense to expose all resource properties as parameters. Create templates that work for your specific business problem or solution, not generic templates that need to work for every situation. You also don't want to have so many parameters that it takes a long time to enter the values before you can deploy the template. This is particularly important when you configure the SKUs and instance counts of resources.
 
 When you're planning a template, consider how you'll balance flexibility with simplicity. There are two common ways to provide parameters in templates:
 
-- Provide free-form configuration options.
-- Use predefined configuration sets.
+- Provide free-form configuration options
+- Use predefined configuration sets
 
 Let's consider both approaches by using an example Bicep file that deploys a storage account and an Azure App Service plan.
 
@@ -39,7 +39,7 @@ Let's consider both approaches by using an example Bicep file that deploys a sto
 
 Both the App Service plan and the storage account require that you specify their SKUs. You might consider creating a set of parameters to control each of the SKUs and instance counts for the resources:
 
-:::image type="icon" source="../media/3-free-form-configuration.png" border="false":::
+:::image type="content" source="../media/3-free-form-configuration.png" alt-text="Diagram of the parameters controlling an app service plan and a storage account." border="false":::
 
 Here's how this looks in Bicep:
 
@@ -65,13 +65,13 @@ This format provides the most flexibility, because anyone who uses the template 
 
 Alternatively, you could provide a _configuration set_: a single parameter, whose value is a restricted list of allowed values, such as a list of environment types. When users deploy your template, they need to select a value for only this one parameter. When they select a value for the parameter, the deployment automatically inherits a set of configuration:
 
-:::image type="icon" source="../media/3-configuration-map.png" border="false":::
+:::image type="content" source="../media/3-configuration-map.png" alt-text="Diagram of a configuration set controlling an app service plan and a storage account." border="false":::
 
 The parameter definition looks like this:
 
 ::: code language="bicep" source="code/3-configuration-map.bicep" range="5-9" :::
 
-Configuration sets offer lower flexibility, because people who deploy your template can't specify sizes for individual resources. But it means that you can validate each set of configurations and ensure that they fit your requirements. Using configuration sets reduces the need for your template's users to understand all the different options available for each resource, and it becomes easier to support, test, and troubleshoot your templates.
+Configuration sets offer lower flexibility, because people who deploy your template can't specify sizes for individual resources, but you can validate each set of configurations and ensure that they fit your requirements. Using configuration sets reduces the need for your template's users to understand all the different options available for each resource, and it becomes easier to support, test, and troubleshoot your templates.
 
 When you work with configuration sets, you create a _map_ variable to define the specific properties to set on various resources, based on the parameter value:
 
@@ -98,19 +98,19 @@ In Bicep, it's important to give your resources meaningful names. Resources in B
 
 It's important to think about the symbolic names you apply to your resources. Imagine that you have colleagues who need to modify the template. Will they understand what each resource is for?
 
-For example, suppose you want to define a storage account that will contain product manuals for users to download from your website. You could give the resource a symbolic name of, for example, `storageAccount`, but if it's in a Bicep file that contains a lot of other resources, and maybe even other storage accounts, that name isn't sufficiently descriptive. So you could instead give it a symbolic name that includes some information about its purpose, such as `productManualStorageAccount`.
+For example, suppose you want to define a storage account that will contain product manuals for users to download from your website. You could give the resource a symbolic name of (for example) `storageAccount`, but if it's in a Bicep file that contains a lot of other resources, and maybe even other storage accounts, that name isn't sufficiently descriptive. Instead, you could give it a symbolic name that includes some information about its purpose, such as `productManualStorageAccount`.
 
 In Bicep, you ordinarily use _camelCase_ capitalization style for the names of parameters, variables, and resource symbolic names. This means that you use a lowercase first letter for the first word, and then capitalize the first letter of the other words (as in the preceding example, `productManualStorageAccount`). You're not required to use camelCase. If you choose to use a different style, it's important to agree on one standard within your team and use it consistently.
 
 ### Resource names
 
-Every Azure resource has a name. Names make up a part of the resource's identifier. In many cases, they also are represented as the hostnames that you use to access the resource. For example, when you create an App Service app named `myapp`, the hostname you use to access the app will be `myapp.azurewebsites.net`. Resources can't be renamed after they're deployed.
+Every Azure resource has a name. Names make up a part of the resource's identifier. In many cases, they're also represented as the hostnames that you use to access the resource. For example, when you create an App Service app named `myapp`, the hostname you use to access the app will be `myapp.azurewebsites.net`. You can't rename resources after they're deployed.
 
-It's important to consider how you name your Azure resources. Many organizations define their own resource naming convention. [Cloud Adoption Framework for Azure has specific guidance](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) that can help you define yours. The purpose of a resource naming convention is to help everyone in your organization understand what each resource is for.
+It's important to consider how you name your Azure resources. Many organizations define their own resource-naming convention. [Cloud Adoption Framework for Azure has specific guidance](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) that can help you define yours. The purpose of a resource naming convention is to help everyone in your organization understand what each resource is for.
 
 Additionally, every Azure resource has certain naming [rules and restrictions](/azure/azure-resource-manager/management/resource-name-rules?azure-portal=true). For example, there are restrictions around the length of names, the characters they can include, and whether names have to be globally unique or just unique within a resource group.
 
-It can be complex to follow all of the naming conventions for your organization as well as the naming requirements for Azure. A well-written Bicep template should hide this complexity from its users and determine the names for resources automatically. One example of an approach to follow is:
+It can be complex to follow all of the naming conventions for your organization as well as the naming requirements for Azure. A well-written Bicep template should hide this complexity from its users and determine the names for resources automatically. Here's one example of an approach to follow:
 
 - Add a parameter that's used to create a _uniqueness suffix_. This helps to ensure that your resources have unique names. It's a good idea to use the `uniqueString()` function to generate a default value. People who deploy your template can override this with a specific value if they want to have a meaningful name. Be sure to use the `@maxLength()` decorator to limit the length of this suffix so that your resource names won't exceed their maximum lengths.
 
@@ -118,5 +118,6 @@ It can be complex to follow all of the naming conventions for your organization 
   > It's better to use uniqueness suffixes rather than prefixes. This approach makes it easier to sort and to quickly scan your resource names. Also, some Azure resources have restrictions about the first character of the name, and randomly generated names can sometimes violate these restrictions.
 
 - Use variables to construct resource names dynamically. Your Bicep code can ensure that the names it generates follow your organization's naming convention as well as Azure requirements. Include the uniqueness suffix as part of the resource name.
+
   > [!NOTE]
-  > Not every resource requires a globally unique name. Consider whether you include the uniqueness suffix in the names of every resource, or just those that need it.
+  > Not every resource requires a globally unique name. Consider whether you include the uniqueness suffix in the names of every resource or just those that need it.

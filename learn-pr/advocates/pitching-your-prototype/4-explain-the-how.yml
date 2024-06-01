@@ -5,10 +5,9 @@ metadata:
   title: Explain how your business will work
   description: This unit teaches you how to share your business model.
   author: czhu89
-  ms.date: 04/25/2019
+  ms.date: 04/04/2023
   ms.author: cazh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-startups
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/4-explain-the-how.md)]

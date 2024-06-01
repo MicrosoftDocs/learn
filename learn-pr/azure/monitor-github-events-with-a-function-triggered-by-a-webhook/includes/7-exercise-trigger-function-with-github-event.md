@@ -28,7 +28,7 @@ In this exercise, you'll update your function to parse information from the GitH
     }
     ```
 
-    This code retrieves the event type from the request header, the title field, and action field from the message body. This information indicates that page has changed, and whether it has been edited or newly created. The code constructs a response that summarizes the action. Here's what the JavaScript should look like:
+    This code retrieves the event type from the request header, and the title and action fields from the message body. This information indicates that page has changed, and whether it has been edited or newly created. The code then constructs a response that summarizes the action. Here's what the JavaScript should look like:
 
     ```JavaScript
     module.exports = async function (context, req) {

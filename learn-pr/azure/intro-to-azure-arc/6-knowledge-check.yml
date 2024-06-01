@@ -3,67 +3,54 @@ uid: learn.azure.intro-to-azure-arc.6-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 04/10/2023
+  ms.date: 12/07/2023
   author: JnHs
   ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Knowledge check
-durationInMinutes: 4
+durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
 
-  - content: "What must an administrator do to register Windows Server with Azure Arc?"
+  - content: "What must an administrator do to connect an on-premises machine running Windows Server to Azure Arc?"
     choices:
-    - content: "Install the Log Analytics agent on the server for onboarding."
+    - content: "Install the Log Analytics agent on the server."
       isCorrect: false
-      explanation: "Incorrect. Installing the Log Analytics agent is an optional step."
-    - content: "Install Helm 3 on the server for onboarding."
+      explanation: "Incorrect. Installing the Log Analytics agent is not required to connect a machine to Azure Arc."
+    - content: "Create a Kubernetes cluster on the server, then connect that cluster to Azure Arc."
       isCorrect: false
-      explanation: "Incorrect. This step is required for onboarding Kubernetes clusters."
-    - content: "The administrator must install the Azure Connected Machine agent on the server for onboarding."
+      explanation: "Incorrect. You don't have to create a Kubernetes cluster in order to use Arc-enabled servers."
+    - content: "Install the Azure Connected Machine agent on the server."
       isCorrect: true
-      explanation: "Correct. The Azure Connected Machine agent enables you to manage both Windows and Linux computers that you host on-premises or with another cloud provider."
+      explanation: "Correct. The Azure Connected Machine agent enables you to manage on-premises computers in Azure."
 
 
-  - content: "Which of these Azure services must an organization implement to manage and evaluate compliance of its on-premises Windows Server computers?"
+  - content: "Which of these services enables threat detection and security incident response for Arc-enabled servers?"
     choices:
     - content: "Azure Policy."
       isCorrect: false
-      explanation: "Incorrect. Azure Policy can be used only with on-premises servers that are onboarded to Azure Arc."
-    - content: "Azure Arc."
+      explanation: "Incorrect. Azure Policy helps organizations manage and evaluate compliance by enforcing policies."
+    - content: "Microsoft Sentinel."
       isCorrect: true
-      explanation: "Correct. Azure Arc provides a centralized, unified, and self-service approach to managing on-premises Windows Server computers."
+      explanation: "Correct. Microsoft Sentinel delivers threat intelligence, providing a single solution for attack detection, proactive hunting, and threat response."
     - content: "Azure Monitor."
       isCorrect: false
-      explanation: "Incorrect. Azure Monitor enables administrators to monitor their resources, such as onboarded servers."
+      explanation: "Incorrect. Azure Monitor enables administrators to monitor their resources, such as onboarded servers or Kubernetes clusters."
 
 
-  - content: "Which of the following functions can an administrator use Azure Policy for when auditing Azure Arc resources?"
+  - content: "Which Kubernetes distributions are supported by Azure Arc?"
     choices:
-    - content: "Configuring the time zone on the Windows operating system."
+    - content: "AKS on Azure Stack HCI only."
       isCorrect: false
-      explanation: "Incorrect. Azure Policy can help audit the time zone configuration, but can't change it."
-    - content: "Validating settings such as configuration of the operating system, applications, and environment settings."
+      explanation: "Incorrect. Azure Arc lets you connect any CNCF-certified Kubernetes cluster to Azure."
+    - content: "Any Cloud Native Computing Foundation (CNCF) certified Kubernetes cluster."
       isCorrect: true
-      explanation: "Correct. You can use Azure Policy with Azure Arc resources to perform this function."
-    - content: "Restricting access to Log Analytics data based on the permissions to the corresponding Azure resource."
+      explanation: "Correct. Azure Arc lets you connect any CNCF-certified Kubernetes cluster to Azure."
+    - content: "Amazon Web Services	EKS and Google Cloud Platform	GKE only."
       isCorrect: false
-      explanation: "Incorrect. Controlling this access is a function of RBAC permissions in Azure Arc."
+      explanation: "Incorrect. Azure Arc lets you connect any CNCF-certified Kubernetes cluster to Azure."
 
-  
-  - content: "Which Windows Server extension could an administrator use through Azure Arc to enable Azure Monitor Insights on servers?"
-    choices:
-    - content: "CustomScriptExtension."
-      isCorrect: false
-      explanation: "Incorrect. This extension downloads and runs scripts on servers."
-    - content: "Log Analytics agent."
-      isCorrect: false
-      explanation: "Incorrect. This extension installs the Log Analytics agent on servers and enrolls the servers into an existing Log Analytics workspace."
-    - content: "Microsoft Dependency Agent."
-      isCorrect: true
-      explanation: "Correct. This extension installs the Dependency Agent to enable Azure Monitor Insights on servers."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-public-access-azure-resources.front-door-content-development-network
+title: Plan and implement an Azure Front Door, including Content Delivery Network (CDN)
+metadata:
+  title: Plan and implement an Azure Front Door, including Content Delivery Network (CDN)
+  description: "Plan and implement an Azure Front Door, including Content Delivery Network (CDN)"
+  ms.date: 04/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-front-door-content-development-network.md)]

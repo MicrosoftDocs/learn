@@ -4,13 +4,12 @@ title: Determine network security group rules
 metadata:
   title: Determine network security group rules
   description: "Determine network security group rules"
-  ms.date: 02/21/2023
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
 content: |
   [!include[](includes/3-determine-network-security-groups-rules.md)]

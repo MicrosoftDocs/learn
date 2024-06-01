@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-activator-microsoft-fabric.get-data-from-power-bi-reports-eventstreams-data-activator
+title: Get data from Power BI Reports and EventStreams with Data Activator
+metadata:
+  title: Get data from Power BI Reports and EventStreams with Data Activator
+  description: "Get data from Power BI Reports and EventStreams with Data Activator."
+  ms.date: 05/14/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-get-data-from-power-bi-reports-eventstreams-data-activator.md)]

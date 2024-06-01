@@ -21,7 +21,7 @@ The following Bash script, for example, uses the Azure CLI's `az` command to cre
 az group create --name cmu-rg --location eastus
 
 az vm create --resource-group cmu-rg \
-  --name cmu-vm --image UbuntuLTS \
+  --name cmu-vm --image Ubuntu2204 \
   --admin-username cmu-admin \
   --admin-password Micr0s0ft** \
   --location eastus
@@ -47,7 +47,7 @@ New-AzResourceGroup -Name cmu-rg -Location EastUS
 New-AzVm -ResourceGroupName "cmu-rg" `
   -Name "cmu-vm" `
   -Location "East US" `
-  -Image UbuntuLTS `
+  -image Ubuntu2204 `
   -Credential $Cred
 ```
 
@@ -87,7 +87,7 @@ The following Bash commands, typed one by one into the Azure CLI or Cloud Shell,
 az group create --name cmu-rg --location eastus
 
 az vm create --resource-group cmu-rg \
---name cmu-lamp-vm --image UbuntuLTS \
+--name cmu-lamp-vm --image Ubuntu2204 \
 --admin-username lamp-admin \
 --generate-ssh-keys \
 --location eastus
@@ -115,7 +115,7 @@ The script doesn't merely recite the commands an operator would type at the cons
 az group create --name cmu-rg --location eastus
 
 az vm create --resource-group cmu-rg \
---name cmu-lamp-vm --image UbuntuLTS \
+--name cmu-lamp-vm --image Ubuntu2204 \
 --admin-username lamp-admin \
 --generate-ssh-keys
 

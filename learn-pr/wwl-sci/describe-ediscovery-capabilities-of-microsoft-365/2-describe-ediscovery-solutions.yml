@@ -4,11 +4,10 @@ title: Describe the eDiscovery solutions in Microsoft Purview
 metadata:
   title: Describe the eDiscovery solutions in Microsoft Purview
   description: "Describe the eDiscovery solutions in Microsoft Purview"
-  ms.date: 02/09/2023
+  ms.date: 09/09/2023
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/2-describe-ediscovery-solutions.md)]

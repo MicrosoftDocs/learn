@@ -1,25 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-virtual-desktop
 metadata:
-  title: MD-102 5-Manage Azure virtual desktop
+  title: MD-102 5-Manage Azure Virtual Desktop
   description: "Learn to manage Azure Virtual Desktop, a cloud-based VDI solution providing personalized, secure Windows 10 experiences. Understand key features, management, security, and deployment options for optimizing your environment."
-  ms.date: 04/05/2023
+  ms.date: 05/14/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Manage Azure virtual desktop
+  ms.topic: module
+  ms.service: cloud-platform-system
+  ai-usage: human-only
+title: Manage Azure Virtual Desktop
 summary: Learn to manage Azure Virtual Desktop, a cloud-based VDI solution providing personalized, secure Windows 11 experiences. Understand key features, management, security, and deployment options for optimizing your environment.
 abstract: |
   After completing this module, you should be able to:
-  - Describe the key features of Azure Virtual Desktop
-  - Describe the Azure Virtual Desktop management experience
-  - Describe the Azure Virtual Desktop security model
-  - Describe the Azure Virtual Desktop deployment options
+
+  -   Describe the key features of Azure Virtual Desktop
+
+  -   Describe the Azure Virtual Desktop management experience
+
+  -   Describe the Azure Virtual Desktop security model
+
+  -   Describe the Azure Virtual Desktop deployment options
 prerequisites: |
-  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
-  - Strong understanding of computer networking, client security, and application concepts
-  - Experience using Active Directory Domain Services
+  -   Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+
+  -   Strong understanding of computer networking, client security, and application concepts
+
+  -   Experience using Active Directory Domain Services
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

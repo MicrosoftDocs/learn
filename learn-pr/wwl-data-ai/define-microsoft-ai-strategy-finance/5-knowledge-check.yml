@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-finance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/22/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which are the main goals for financial organizations to implement AI solutions?"
+    choices:
+    - content: "Generative AI adoption and compliance."
+      isCorrect: false
+      explanation: "Incorrect. It’s true that compliance is a priority. However, adopting generative AI isn’t the objective by itself, but a powerful tool to achieve the main goals."
+    - content: "Legacy hardware and software."
+      isCorrect: false
+      explanation: "Incorrect. Deprecated technologies are a challenge for AI adoption, not a goal for AI to solve."
+    - content: "Data privacy and protection, compliance, and automation."
+      isCorrect: true
+      explanation: "Correct. Finance professionals work with extremely confidential data, and AI can help them secure this data even further. Besides, many data processes can be automated, saving costs."
+  - content: "Which Microsoft AI products enable each finance use case?"
+    choices:
+    - content: "Microsoft Dynamics 365 Copilot enables hyper-customized product recommendation."
+      isCorrect: true
+      explanation: "Correct. Your agents can use Dynamics 365 Copilot to approach clients with personalized offers."
+    - content: "Azure AI Document Intelligence empowers analysts to anticipate customer behavior."
+      isCorrect: false
+      explanation: "Incorrect. While it’s true that Microsoft AI enables customer behavior predictions, you’ll need Azure Machine Learning, Power BI, and Azure OpenAI Services to achieve it."
+    - content: "Business workers can use Microsoft 365 to summarize underwriting opportunities, help detect fraud, and predict default."
+      isCorrect: false
+      explanation: "Incorrect. It’s true that these use cases are possible thanks to Microsoft AI. However, Microsoft 365 isn’t powerful enough on its own to carry them out. You’ll need other tools, such as Azure OpenAI Services."
+  - content: "What’s the value of each Microsoft AI product for the Swift success story?"
+    choices:
+    - content: "Azure Kubernetes Services is used to keep the data confidential."
+      isCorrect: false
+      explanation: "Incorrect. While AKS has features for protecting data, this use case requires even more thorough protection. Azure Confidential Computing and Microsoft Purview fully ensure data privacy."
+    - content: "In Microsoft Purview, you can train a model with several datasets, even if they’re kept separate."
+      isCorrect: false
+      explanation: "Incorrect. It’s true that distributed learning is a key feature for the project and that Microsoft Purview plays a role in enabling it. However, training happens in Azure Machine Learning. Microsoft Purview ensures these separate datasets remain confidential."
+    - content: "Azure Machine Learning enables a distributed architecture for training models, so the banks don’t need to share their private datasets."
+      isCorrect: true
+      explanation: "Correct. Yes, that’s what data scientists call “distributed learning” and it’s key for the use case, since this kind of data is extremely confidential and can’t be shared."

@@ -4,14 +4,12 @@ title: Create and manage groups
 metadata:
   title: Create and manage groups
   description: Create and manage groups
-  ms.date: 03/21/2023
+  ms.date: 11/08/2023
   author: shlipsey3
   ms.author: sarahlipsey
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.manager: amycollanino
-  ms.service: active-directory
-  ms.subservice: fundamentals
+  ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 durationInMinutes: 8
 content: |
   [!include[](includes/4-groups.md)]

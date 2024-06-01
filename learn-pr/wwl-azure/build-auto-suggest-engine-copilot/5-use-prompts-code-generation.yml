@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-auto-suggest-engine-copilot.use-prompts-code-generation
+title: Exercise - Prompt Copilot to generate code
+metadata:
+  title: Exercise - Prompt Copilot to generate code
+  description: "Exercise - Prompt Copilot to generate code"
+  ms.date: 03/19/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-use-prompts-code-generation.md)]

@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.philanthropies.create-images-with-generative-ai
+metadata:
+  title: Create images with generative AI
+  description: Discover AI-powered image generators. Learn about image creation tools like Microsoft Image Creator. Understand their potential applications in the workplace and training settings and discover best practices for optimal results. Enhance your skills and transform your creative process with AI-powered image generators.
+  ms.date: 02/29/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: module
+  ms.service: artificial-intelligence
+title: Create images with generative AI
+summary: This module introduces you to AI-powered image generators, including their potential applications within the workplace and training sessions and best practices to follow.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand how AI-generated images can enhance training programs.
+  - Analyze the impact of the quality of the prompt on the AI-generated image.
+  - Evaluate the recommended actions when an AI-generated image doesn't align with your expectations.
+iconUrl: /training/achievements/create-images-with-generative-ai.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- business-user
+- higher-ed-educator
+- data-engineer
+- school-leader
+products:
+- ai-services
+- azure-machine-learning
+- azure-machine-learning-designer
+- m365-apps
+- azure-translator-text
+- azure-translator-speech
+- ms-copilot
+- language-service
+subjects:
+- artificial-intelligence
+units:
+- learn.philanthropies.create-images-with-generative-ai.introduction
+- learn.philanthropies.create-images-with-generative-ai.enhance-trainings-using-ai-powered-image-generators
+- learn.philanthropies.create-images-with-generative-ai.microsoft-image-creator-your-training-ai-assistant
+- learn.philanthropies.create-images-with-generative-ai.use-a-prompt-that-paints-a-clear-picture
+- learn.philanthropies.create-images-with-generative-ai.generate-different-image-styles
+- learn.philanthropies.create-images-with-generative-ai.knowledge-check
+- learn.philanthropies.create-images-with-generative-ai.summary
+badge:
+  uid: learn.philanthropies.create-images-with-generative-ai.badge
+  

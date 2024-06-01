@@ -77,3 +77,4 @@ The following table provides a general timeline of the major PowerShell releases
 > Throughout this module, topics will relate to both the latest Windows PowerShell and PowerShell versions (5.1 and 7.2). Most cmdlets will work using either platform. However, there'll be a note if a specific feature is only supported or relates to one specific platform.
 
 > **Additional reading:** To support more recent versions of PowerShell on down-level operating systems, you might need to install the latest version of the Windows Management Framework. For more information, refer to [Install and Configure WMF 5.1](https://aka.ms/install-and-configure-WMF-5.1).
+

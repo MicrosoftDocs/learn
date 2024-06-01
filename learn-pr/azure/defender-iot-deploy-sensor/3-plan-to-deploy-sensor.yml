@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-deploy-sensor.plan-to-deploy-sensor
+title: Plan to deploy an operational technology (OT) sensor
+metadata:
+  title: Plan to deploy an operational technology (OT) sensor
+  description: "Plan to deploy an operational technology (OT) sensor"
+  ms.date: 4/15/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-plan-to-deploy-sensor.md)]

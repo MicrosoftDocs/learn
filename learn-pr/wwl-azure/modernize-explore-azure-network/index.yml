@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.modernize-explore-azure-network
+metadata:
+  title: Modernize and explore Azure network for SAP
+  description: "This module explores the use of Azure network components to design scalable, performant, and resilient SAP deployments in Azure. This module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.service: azure
+title: Modernize and explore Azure network for SAP
+summary: This module explores the use of Azure network components to design Virtual networks with other networking components for scalable, performant, and resilient SAP deployments in Azure.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore Azure virtual networks.
+  - Consider IP addressing.
+  - Explore name resolution.
+  - Explore Azure load balancer.
+  - Examine Azure virtual machine networking considerations.
+  - Explore Azure Traffic Manager.
+  - Explore Azure Front Door.
+  - Explore virtual network connectivity.
+  - Explore SAProuter.
+prerequisites: |
+  Before taking this training, you should complete:
+  *   Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam.
+  *   SAP HANA or NetWeaver training.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.modernize-explore-azure-network.introduction
+- learn.wwl.modernize-explore-azure-network.explore-azure-virtual-networks
+- learn.wwl.modernize-explore-azure-network.consider-internet-protocol-address
+- learn.wwl.modernize-explore-azure-network.explore-name-resolution
+- learn.wwl.modernize-explore-azure-network.explore-azure-load-balancer
+- learn.wwl.modernize-explore-azure-network.examine-azure-virtual-machine-network-considerations
+- learn.wwl.modernize-explore-azure-network.explore-azure-traffic-manager
+- learn.wwl.modernize-explore-azure-network.explore-azure-front-door
+- learn.wwl.modernize-explore-azure-network.explore-virtual-network-connectivity
+- learn.wwl.modernize-explore-azure-network.explore-saprouter
+- learn.wwl.modernize-explore-azure-network.knowledge-check
+- learn.wwl.modernize-explore-azure-network.summary
+badge:
+  uid: learn.wwl.modernize-explore-azure-network.badge

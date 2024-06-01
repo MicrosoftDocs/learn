@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.philanthropies.ai-toolbox-for-trainers
+title: An AI toolbox for trainers
+metadata:
+  title: An AI toolbox for trainers
+  description: In today's fast-paced digital era, artificial intelligence (AI) is changing the way we train and educate. This learning path is designed to equip you with an understanding of how AI tools can transform a learning environment. Throughout this learning path, you'll explore how AI can elevate the training experience, build engaging content, and foster a more inclusive training environment. You'll also explore the advantages of integrating AI-powered productivity tools into your daily educational practices. By the end of this learning path, you'll be equipped to design and implement training ecosystems that apply AI tools to enhance the training process.
+  ms.date: 03/14/2024
+  author: yoosunee 
+  ms.author: andreapark
+  ms.topic: learning-path
+summary: In today's fast-paced digital era, artificial intelligence (AI) is changing the way we train and educate. This learning path is designed to equip you with an understanding of how AI tools can transform a learning environment. Throughout this learning path, you'll explore how AI can elevate the training experience, build engaging content, and foster a more inclusive training environment. You'll also explore the advantages of integrating AI-powered productivity tools into your daily educational practices. By the end of this learning path, you'll be equipped to design and implement training ecosystems that apply AI tools to enhance the training process.
+prerequisites: None
+iconUrl: /training/achievements/ai-toolbox-for-trainers.svg
+levels: 
+  - beginner
+roles:
+  - k-12-educator
+  - business-user
+  - higher-ed-educator
+  - data-engineer
+  - school-leader
+products:
+  - ai-services
+  - azure-machine-learning
+  - azure-machine-learning-designer
+  - m365-apps
+  - azure-translator-text
+  - azure-translator-speech
+  - ms-copilot
+  - language-service
+subjects:
+  - artificial-intelligence
+modules:
+  - learn.philanthropies.implement-ai-tools-into-training-environment
+  - learn.philanthropies.streamline-training-plans-with-ai-tools
+  - learn.philanthropies.use-ai-tools-to-create-inclusive-learning-environment
+  - learn.philanthropies.training-with-ai-tools
+trophy:
+    uid: learn.philanthropies.ai-toolbox-for-trainers.trophy

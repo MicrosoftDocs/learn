@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.student-introduction-to-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your knowledge."
+  ms.date: 9/11/2023
+  author: v-regandowner
+  ms.author: chnoring
+  ms.topic: unit
+  ms.custom: team=nextgen
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Which of the following is an example of a way to use GitHub?"
+    choices:
+    - content: "For collaboration on a project, sharing and managing repositories, and tracking changes and issues."
+      isCorrect: true
+      explanation: "Correct! Collaboration is easier than ever with GitHub."
+    - content: "As a social media platform where users can share and discover code snippets, tutorials, and open-source projects."
+      isCorrect: false
+      explanation: "Incorrect. GitHub isn't a social media platform."
+    - content: "As an online marketplace for buying and selling software applications and tools."
+      isCorrect: false
+      explanation: "Incorrect. Applications and tools can't be bought or sold by using GitHub."
+  - content: "Which of the following isn't a feature of Visual Studio Code?"
+    choices:
+    - content: "Built-in Git integration."
+      isCorrect: false
+      explanation: "Incorrect. Git integration is a feature of Visual Studio Code."
+    - content: "IntelliSense code completion."
+      isCorrect: false
+      explanation: "Incorrect. IntelliSense code completion is a feature of Visual Studio Code."
+    - content: "Native support for Java development."
+      isCorrect: true
+      explanation: "Correct! Visual Studio Code doesn't offer native support for Java development."

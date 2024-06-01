@@ -3,11 +3,10 @@ uid: learn.reactors.blockchain-learning-solidity.2-what-is-solidity
 metadata:
   title: Learn about Solidity
   description: Learn what Solidity is all about.
-  ms.date: 10/05/2020
+  ms.date: 02/10/2022
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: What is Solidity
 durationInMinutes: 5

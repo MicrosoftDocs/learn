@@ -3,11 +3,10 @@ uid: learn.design-ip-addressing-for-azure.4-plan-design-ip-addressing
 metadata:
   title: Plan IP addressing for your networks
   description: Plan IP addressing for your networks
-  ms.date: 03/01/2022
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/28/2023
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 title: Plan IP addressing for your networks
 durationInMinutes: 7
 content: |

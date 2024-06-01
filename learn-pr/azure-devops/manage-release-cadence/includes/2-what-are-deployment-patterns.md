@@ -10,7 +10,7 @@ But there is, as always, a problem. Let's drop in on the team meeting, where Tim
 
 **Tim:** It's so hard to keep everyone happy. Irwin thinks it takes too long to release new features. I can't do anything until management approves the release and, right now, there's no smooth way to roll out the features after they give the OK. The process isn't only long but messy. It's manual, and there's downtime. The whole process can take five days. I know that's too long, but what am I supposed to do? Maybe if I just drink more coffee the solution will come to me.
 
-**Andy:** Coffee is essential to all effective problem solving, no doubt.
+**Andy:** Coffee is essential to effective problem solving, no doubt.
 
 I think the solution we need is a good deployment pattern. A deployment pattern is an automated way to do the cutover. It's how we move the software from the final pre-production stage to live production.
 
@@ -45,7 +45,7 @@ A _canary release_ is a way to identify potential problems early without exposin
 
 :::image type="content" source="../media/2-canary-deployment.png" alt-text="Diagram of a load balancer sending traffic to a canary version.":::
 
-In a canary release, we monitor what happens when we release the feature. If the release has problems, then we apply a fix. After the canary release is known to be stable, we move it to the actual production environment.
+In a canary release, we monitor what happens when we release the feature. If the release has problems, then we apply a fix. After the canary release is known to be stable, then we move it to the actual production environment.
 
 ## Feature toggles
 
@@ -69,7 +69,7 @@ Those users don't know they're testing the feature for us. We don't even highlig
 
 ## A/B testing
 
-_A/B testing_ compares two versions of a webpage or app to determine which one performs better. A/B testing is like an experiment.
+_A/B testing_ compares two versions of a webpage or app to determine which one performs better. A/B testing is like a classical experiment.
 
 :::image type="content" source="../media/2-a-b-testing.png" alt-text="Diagram of two apps and their analytics.":::
 
@@ -79,7 +79,7 @@ In A/B testing, we randomly show users two or more variations of a page. Then we
 
 _Progressive-exposure deployment_ is sometimes called _ring-based deployment_. It's another way to limit how changes affect users while making sure those changes are valid in a production environment.
 
-Rings are basically an extension of the canary stage. The canary release, releases to a stage to measure effect. Adding another ring is essentially the same idea.
+Rings are basically an extension of the canary stage. The canary release itself releases to a stage to measure effect. Adding another ring is essentially the same idea.
 
 :::image type="content" source="../media/2-progressive-exposure-deployment.png" alt-text="Diagram of a progression of larger groups.":::
 
@@ -129,4 +129,4 @@ Imagine that your team is working in the central development branch of a bank ap
 
 In this scenario, a feature flag might be a good solution. You can change the code so that users who don't have the feature flag set can keep using the original interest calculation code. Meanwhile, your team does have the feature flag set, so they can see the code that they're changing.
 
-Another type of feature flag is a release flag. Imagine that after you complete the work on the interest calculation code, you want to try it out before you release it publicly. You have a group of users who are well positioned to deal with new code and any possible issues. You'll let them try the feature first. You change the configuration so that they also have the feature flag set and can test the new code. If problems happen, then you can quickly disable the flag.
+Another type of feature flag is a *release flag*. Imagine that after you complete the work on the interest calculation code, you want to try it out before you release it publicly. You have a group of users who are well positioned to deal with new code and any possible issues. You'll let them try the feature first. You change the configuration so that they also have the feature flag set and can test the new code. If problems happen, then you can quickly disable the flag.

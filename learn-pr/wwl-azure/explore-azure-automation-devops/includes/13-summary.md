@@ -1,4 +1,4 @@
-This module described Azure automation with Azure DevOps, using runbooks, webhooks, and PowerShell workflows. You learned how to create and manage automation for your environment.
+This module described Azure Automation with Azure DevOps, using runbooks, webhooks, and PowerShell workflows. You learned how to create and manage automation for your environment.
 
 You learned how to describe the benefits and usage of:
 
@@ -9,7 +9,7 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Manage runbooks in Azure Automation](/azure/automation/manage-runbooks).
- -  [Use source control integration](/azure/automation/source-control-integration).
- -  [Webhooks](/azure/devops/service-hooks/services/webhooks).
- -  [Learn PowerShell Workflow for Azure Automation](/azure/automation/automation-powershell-workflow).
+ -  [Manage runbooks in Azure Automation \| Microsoft Docs](/azure/automation/manage-runbooks).
+ -  [Use source control integration in Azure Automation \| Microsoft Docs](/azure/automation/source-control-integration).
+ -  [Webhooks with Azure DevOps - Azure DevOps \| Microsoft Docs](/azure/devops/service-hooks/services/webhooks).
+ -  [Learn PowerShell Workflow for Azure Automation \| Microsoft Docs](/azure/automation/automation-powershell-workflow).

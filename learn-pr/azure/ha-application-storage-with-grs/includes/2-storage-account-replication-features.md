@@ -1,4 +1,4 @@
-As part of the project to make your healthcare application highly available, you need to create and configure an Azure storage account. Recall that your application will allow doctors and consultants in the field to upload images from visits with patients. These images contain essential clinical information, and they must be available even if an Azure region fails.
+As part of the project to make your healthcare application highly available, you need to create and configure an Azure storage account. Recall that your application allows doctors and consultants in the field to upload images from visits with patients. These images contain essential clinical information, and they must be available even if an Azure region fails.
 
 Let's see how an Azure storage account is configured to allow for replication and high availability of data.
 
@@ -77,7 +77,7 @@ Read-access geo-zone-redundant storage (RA-GZRS) uses the same replication metho
 
 ## When to use each type of redundant storage
 
-We'll summarize the most appropriate use of each type of redundant storage in the following table:
+We can summarize the most appropriate use of each type of redundant storage with the following table:
 
 |Replication type  |Copies  | Use case  |
 |---------|---------|---------|

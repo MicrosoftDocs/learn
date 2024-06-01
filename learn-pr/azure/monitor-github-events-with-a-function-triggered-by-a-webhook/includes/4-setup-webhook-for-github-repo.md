@@ -4,7 +4,7 @@ In this unit, you'll learn how to set up a webhook that listens for a change eve
 
 ## Set up a webhook
 
-Setting up a webhook is a two-step process. You specify how you want your webhook to behave through GitHub and what events it should listen to. Then you set up your function in Azure Functions to receive and manage the payload received from the webhook. In the example scenario, we're setting up a webhook for a specific repository.
+Setting up a webhook is a two-step process. First, you specify in GitHub how you want your webhook to behave and which events it will listen to. Second, you set up your function in Azure Functions to receive and manage the payload received from the webhook. In the example scenario, we're setting up a webhook for a specific repository.
 
 To set up the webhook, in the GitHub portal, select **Settings** from the top menu bar. The **Settings** page appears, with the name of your repository. In the left menu, select **Webhooks**, and then select **Add webhook**. You can also build and manage a webhook through the Webhooks API, which is not covered in this module.
 
@@ -21,7 +21,7 @@ Each event type has a specific payload format. That payload contains information
 Webhooks can be delivered using two different content types:
 
 - The *application/json* content type delivers the JSON payload directly as the body of a POST request.
-- The *application/x-www-form-urlencoded* content type sends the JSON payload as a form parameter, called *payload*.
+- The *application/x-www-form-urlencoded* content type sends the JSON payload as a form parameter, named *payload*.
 
 > [!NOTE]
 > The **Add webhook** page also enables you to specify how to protect the information sent by the webhook by using a *Secret*. This topic is covered later in this module.

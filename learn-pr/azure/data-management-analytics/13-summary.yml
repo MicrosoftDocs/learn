@@ -8,8 +8,7 @@ metadata:
   ms.date: 1/28/2022
   author: lapate
   ms.author: lapate
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[Summary](includes/13-summary.md)]

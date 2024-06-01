@@ -4,11 +4,10 @@ title: How to use sensitivity labels to classify and protect data
 metadata:
   title: How to use sensitivity labels to classify and protect data
   description: How to use sensitivity labels to classify and protect data
-  ms.date: 03/25/2021
+  ms.date: 08/08/2023
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/4-use-sensitivity-labels-classify-protect-data.md)]

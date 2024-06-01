@@ -4,10 +4,10 @@ Once you enable Container insights on a cluster, you can monitor the performance
 
 The **Monitored clusters** tab presents the following information for each of your monitored clusters:
 
-- Custer status summary, showing a count of clusters for each status.
-- Whether all of the AKS deployments are healthy.
-- How many nodes and user and system pods are deployed per cluster.
-- How much disk space is available and if there's a capacity issue.
+- Custer status summary, showing a count of clusters for each status
+- Whether all of the AKS deployments are healthy
+- How many nodes and user and system pods are deployed per cluster
+- How much disk space is available and if there's a capacity issue
 
 The health statuses included are:
 

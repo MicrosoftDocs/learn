@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-azure-stream-analytics-azure-functions.examine-asa-reference-data-input
+title: Examine Azure Stream Analytics reference data input
+metadata:
+  title: Examine Azure Stream Analytics reference data input
+  description: This content is part of Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions.
+  ms.date: 03/13/2024
+  author: asergaz
+  ms.author: sergaz
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-azure-stream-analytics-reference-data-input.md)]

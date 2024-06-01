@@ -4,11 +4,14 @@ title: Exercise - Create a new app to work with Azure storage
 metadata:
   title: Exercise - Create a new app to work with Azure storage
   description: Exercise - Create a new app to work with Azure storage
-  ms.date: 03/24/2023
+  ms.date: 09/19/2023
   author: tamram
   ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
+    - devx-track-extended-java
+    - devx-track-js
   zone_pivot_groups: dev-lang-csharp-javascript
 interactive: bash
 azureSandbox: true

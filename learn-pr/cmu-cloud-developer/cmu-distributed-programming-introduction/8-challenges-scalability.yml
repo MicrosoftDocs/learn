@@ -4,11 +4,10 @@ title: 'Cloud challenges: Scalability'
 metadata:
   title: 'Cloud challenges: Scalability'
   description: Learn about scalability challenges in building cloud programs.
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
   show_latex: true
 durationInMinutes: 7

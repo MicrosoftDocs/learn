@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-public-access-azure-resources.plan-implement-transport-layer-security
+title: Plan and implement Transport Layer Security (TLS) to applications, including Azure App Service and API Management
+metadata:
+  title: Plan and implement Transport Layer Security (TLS) to applications, including Azure App Service and API Management
+  description: "Plan and implement Transport Layer Security (TLS) to applications, including Azure App Service and API Management"
+  ms.date: 04/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-plan-implement-transport-layer-security.md)]

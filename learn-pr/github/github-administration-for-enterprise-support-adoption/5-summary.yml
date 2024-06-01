@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content
   title: Summary
   description: Review of module contents
-  ms.date: 10/08/2021
+  ms.date: 03/11/2024
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/5-summary.md)]

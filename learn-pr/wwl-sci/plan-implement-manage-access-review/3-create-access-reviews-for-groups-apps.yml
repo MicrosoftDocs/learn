@@ -4,13 +4,10 @@ title: Create access reviews for groups and apps
 metadata:
   title: Create access reviews for groups and apps
   description: "Create access reviews for groups and apps"
-  ms.date: 02/07/2023
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/3-create-access-reviews-for-groups-apps.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-cloud-native-apps-containerized-deployments.examine-cloud-navite-apps
+title: Examine cloud-native apps
+metadata:
+  title: Examine cloud-native apps
+  description: "Examine cloud-native apps"
+  ms.date: 02/26/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-examine-cloud-navite-apps.md)]

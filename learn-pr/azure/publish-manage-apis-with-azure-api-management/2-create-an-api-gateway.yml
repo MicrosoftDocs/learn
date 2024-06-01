@@ -4,11 +4,10 @@ title: Create an API gateway
 metadata:
   title: Create an API gateway
   description: Create an API gateway
-  ms.date: 05/02/2019
+  ms.date: 10/30/2023
   author: dlepow
   ms.author: danlep
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-create-an-api-gateway.md)]

@@ -1,6 +1,6 @@
 [!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-As part of your team's application deployment process, you need to create a storage account and stage a file in blob storage for the application to read. Up to this point, you've been manually copying the file every time a new environment has been set up. You decide to use a deployment script to automate this step as part of your environment creation process.
+As part of your team's application-deployment process, you need to create a storage account and stage a file in blob storage for the application to read. Up to this point, you've been manually copying the file every time a new environment has been set up. You decide to use a deployment script to automate this step as part of your environment-creation process.
 
 In this exercise, you'll take an existing Azure Resource Manager (ARM) template and add a new deployment script.
 
@@ -34,9 +34,9 @@ You start with an existing template that your team has been using. The template 
 
 1. Create a new file called *azuredeploy.json*.
 
-1. Save the empty file so that Visual Studio Code loads the ARM template tooling. 
- 
-   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
+1. Save the empty file so that Visual Studio Code loads the ARM template tooling.
+
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder in which to save it.
 
 1. Copy the following starting template into *azuredeploy.json*.
 
@@ -53,7 +53,7 @@ You start with an existing template that your team has been using. The template 
 1. Create a new file called *main.bicep*.
 
 1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
- 
+
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. Copy the following starting template into *main.bicep*.
@@ -259,7 +259,7 @@ New-AzResourceGroup -Location eastus -Name $resourceGroupName
 ::: zone-end
 
 > [!NOTE]
-> If you use a different name for your resource group, you'll need to make sure you update the script. Later in this module you'll see how to avoid hard-coding resource group names in your scripts.
+> If you use a different name for your resource group, you'll need to make sure you update the script. Later in this module, you'll see how to avoid hard-coding resource group names in your scripts.
 
 ### Deploy the template to Azure
 

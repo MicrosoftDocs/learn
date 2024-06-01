@@ -1,17 +1,17 @@
 To deploy the "Simulated Temperature Sensor" module from the Azure Marketplace, use the following steps:
 
-1. In the Azure portal, enter "Simulated Temperature Sensor" into the search and open the **Marketplace** result.
+1. In the Azure portal, enter **Simulated Temperature Sensor** into the search and open the **Marketplace** result.
 
 1. Choose an IoT Edge device to receive this module. On the "Target Devices for IoT Edge Module" page, provide the following information:
     * **Subscription:** Select the subscription containing the IoT hub you're using
     * **IoT Hub:** Select the name of the IoT hub you're using
     * **IoT Edge Device Name:** As selected before  
 
-1. Click "Create".
+1. Select **Create**.
 
 1. Using the three-step wizard, define precisely how to deploy the module.
-    * **Add Modules**: The "Simulated Temperature Sensor" module should be auto-populated.
-    * **Specify Routes**: Define how messages are passed between modules and to IoT Hub. If this setting isn't auto-populated to `$upstream`, add the following code:
+    * **Add Modules**: The *Simulated Temperature Sensor* module should be autopopulated.
+    * **Specify Routes**: Define how messages are passed between modules and to IoT Hub. If this setting isn't autopopulated to `$upstream`, add the following code:
 
     ```JSON
     {

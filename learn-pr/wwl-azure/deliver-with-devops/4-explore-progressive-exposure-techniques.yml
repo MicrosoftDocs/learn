@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deliver-with-devops.explore-progressive-exposure-techniques
+title: 'Explore progressive exposure techniques'
+metadata:
+  title: 'Explore progressive exposure techniques'
+  description: "In this unit, learn about progressive exposure techniques that enhance resiliency and mitigate operational challenges."
+  ms.date: 02/06/2024
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-explore-progressive-exposure-techniques.md)]

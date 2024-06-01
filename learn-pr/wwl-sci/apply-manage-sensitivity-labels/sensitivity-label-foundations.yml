@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-manage-sensitivity-labels.sensitivity-label-foundations
+title: Foundations of sensitivity label integration in Microsoft 365
+metadata:
+  title: Foundations of sensitivity label integration in Microsoft 365
+  description: "Foundations of sensitivity label integration in Microsoft 365."
+  ms.date: 04/10/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/sensitivity-label-foundations.md)]
+
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Imagine a team is starting a project that uses important client information, like financial details. The team needs to keep this information safe in tools like SharePoint, Teams, and Outlook. What's the first important step to protect this information?"
+    choices:
+    - content: "Stop all sharing of files outside the company in the settings."
+      isCorrect: false
+      explanation: "Incorrect: If you prevent any sharing outside the company, it can hinder your team's ability to work with clients and partners. It protects your data but also makes it inaccessible when you need to collaborate."
+    - content: "Use sensitivity labels on files, emails, and sites with important information."
+      isCorrect: true
+      explanation: "Correct: Sensitivity labels help you classify and protect data based on its sensitivity level. They can be applied to emails, documents, and other content across Microsoft 365 and other platforms."
+    - content: "Start using an extra service outside of Microsoft 365 to encrypt emails and files."
+      isCorrect: false
+      explanation: "Incorrect: Adding an extra service for encrypting emails and files might help, but it's not the first step you need with Microsoft 365. The system already has tools, like sensitivity labels, to help keep information safe without needing anything extra."

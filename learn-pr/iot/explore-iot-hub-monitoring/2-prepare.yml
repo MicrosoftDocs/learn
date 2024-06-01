@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-iot-hub-monitoring.prepare
+title: Prepare
+metadata:
+  title: Prepare
+  description: "Prepare"
+  ms.date: 11/05/2023
+  author: kgremban
+  ms.author: kgremban
+  ms.custom: engagement-fy23
+  ms.topic: unit
+  ms.service: iot-hub
+azureSandbox: true
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-prepare.md)]

@@ -1,4 +1,3 @@
-
 In this exercise you learn how to perform the following actions:
 
 * Register an application with the Microsoft identity platform
@@ -9,12 +8,13 @@ In this exercise you learn how to perform the following actions:
 
 * An **Azure account** with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free)
 * **Visual Studio Code**: You can install Visual Studio Code from [https://code.visualstudio.com](https://code.visualstudio.com/).
+* A version of the .NET SDK [https://dotnet.microsoft.com/download/dotnet](https://dotnet.microsoft.com/en-us/download/dotnet) (6.0, 7.0, or 8.0) 
 
 ## Register a new application
 
 1. Sign in to the portal: [https://portal.azure.com](https://portal.azure.com) 
 
-1. Search for and select **Azure Active Directory**. 
+1. Search for and select **Microsoft Entra ID**. 
 
 1. Under **Manage**, select **App registrations** > **New registration**.
 
@@ -28,7 +28,7 @@ In this exercise you learn how to perform the following actions:
 
 1. Select **Register**.
 
-Azure Active Directory assigns a unique application (client) ID to your app, and you're taken to your application's **Overview** page. 
+Microsoft Entra ID assigns a unique application (client) ID to your app, and you're taken to your application's **Overview** page. 
 
 ## Set up the console application
 

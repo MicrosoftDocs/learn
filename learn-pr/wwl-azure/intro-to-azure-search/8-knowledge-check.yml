@@ -3,19 +3,18 @@ uid: learn.azure-introduction-to-azure-search.8-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Test your knowledge by answering questions about skills you learned in this module."
-  ms.date: 09/02/2022
+  description: "Knowledge check"
+  ms.date: 12/07/2023
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which data format is accepted by Azure Cognitive Search when you're pushing data to the index?"
+  - content: "Which data format is accepted by Azure AI Search when you're pushing data to the index?"
     choices:
     - content: "CSV."
       isCorrect: false
@@ -25,7 +24,7 @@ quiz:
       explanation: "Incorrect. SQL data isn't supported natively. You can either convert it to JSON or use an indexer that serializes the content for you."
     - content: "JSON."
       isCorrect: true
-      explanation: "Correct. Cognitive Search can index JSON documents. JSON is also used to define index schemas, indexers, and data source objects."
+      explanation: "Correct. Azure AI Search can index JSON documents. JSON is also used to define index schemas, indexers, and data source objects."
   - content: "Which explanation best describes an indexer and an index?"
     choices:
     - content: "An indexer converts documents into JSON and forwards them to a search engine for indexing."
@@ -44,7 +43,7 @@ quiz:
       explanation: "Incorrect. Detecting the sentiment in content requires a skillset that includes the Sentiment Analysis skill."
     - content: "Text content."
       isCorrect: true
-      explanation: "Correct. Cognitive Search is used for full text search over indexes containing alphanumeric content."
+      explanation: "Correct. Azure AI Search is used for full text search over indexes containing alphanumeric content."
     - content: "Image captions."
       isCorrect: false
       explanation: "Incorrect. Creating captions for images requires a skillset that includes the Image Analysis skill."

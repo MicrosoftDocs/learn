@@ -4,11 +4,11 @@ title: Exercise - Install Azure PowerShell
 metadata:
   title: Exercise - Install PowerShell
   description: Exercise - Install PowerShell
-  ms.date: 09/24/2018
+  ms.date: 09/05/2023
   author: mikefrobbins
   ms.author: mirobb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-azurepowershell, linux-related-content
   zone_pivot_groups: platform
 durationInMinutes: 10
 content: |

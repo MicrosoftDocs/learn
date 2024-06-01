@@ -4,11 +4,11 @@ title: Understand the value proposition
 metadata:
   title: Understand the value proposition
   description: Learn about the strategy and core principles of Azure Space.
-  ms.date: 09/16/2022
+  ms.date: 03/31/2023
   author: meaghanlewis
   ms.author: mosagie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: eliotgra
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-understand-value-proposition.md)]

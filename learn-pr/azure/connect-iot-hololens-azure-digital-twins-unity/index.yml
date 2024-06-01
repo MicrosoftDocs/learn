@@ -1,32 +1,32 @@
 ### YamlMime:Module
 uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity
 metadata:
-  title: Connect IoT data to mixed reality with Azure Digital Twin and Unity
-  description: Stream simulated operational telemetry data from physical assets to Azure Digital Twin and visualize data in Unity and mixed reality. Learn how to use an ARM template, create a user interface in Unity, and identify performance events before deploying to a HoloLens 2.
-  ms.date: 5/4/2021
+  title: Connect IoT data to mixed reality with Azure Digital Twins and Unity
+  description: Stream simulated operational telemetry data from physical assets to Azure Digital Twins and visualize data in Unity and mixed reality. Learn how to use an ARM template, create a user interface in Unity, and identify performance events before deploying to a HoloLens 2.
+  ms.date: 10/10/2023
   author: JBrentJ
   ms.author: jejacks
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Connect IoT data to mixed reality with Azure Digital Twin and Unity
-summary: Stream simulated operational telemetry data from physical assets to Azure Digital Twin and visualize data in Unity and mixed reality.
+  ms.topic: module
+  ms.service: digital-twins
+title: Connect IoT data to mixed reality with Azure Digital Twins and Unity
+summary: Stream simulated operational telemetry data from physical assets to Azure Digital Twins and visualize data in Unity and mixed reality.
 abstract: |
   By the end of this module, you'll be able to:
 
-  -	Connect to a Digital Twin data source on Azure
-  -	Stream telemetry data to assets in your Unity Scene, using Azure services, including ADT
-  -	Visualize the data in mixed reality via SignalR
-  -	Send data updates from mixed reality app back to Azure Digital Twin
+  -	Connect to a digital twin data source on Azure
+  -	Stream telemetry data to assets in your Unity scene, using Azure services, including Azure Digital Twins
+  -	Visualize the data in mixed reality by using Azure SignalR Service
+  -	Send data updates from mixed-reality app back to Azure Digital Twins
 prerequisites: |
-  - Set up a mixed reality project for Azure Digital Twins in Unity Module
-  - Build a 3D Scene in Unity with Maps SDK Module
-  - Configure 3D assets in a Unity scene Module
-  - Azure service creation and configuration
-  - Domain User Azure Active Directory (i.e., not Guest)
   - An Azure subscription
-  - [Install the Azure CLI for Windows](/cli/azure/install-azure-cli-windows?tabs=azure-cli)
+  - A mixed-reality project for Azure Digital Twins in a Unity module
+  - A 3D scene in Unity that uses the Bing Maps SDK module
+  - Configured 3D assets in a Unity scene module
+  - Azure service creation and configuration knowledge
+  - [The Azure CLI for Windows](/cli/azure/install-azure-cli-windows?tabs=azure-cli)
+  - Domain User Microsoft Entra ID (not Guest)
   - Basic Azure CLI knowledge
-  - Basic PowerShell knowledge
+  - Basic Azure PowerShell knowledge
   - Desktop Development with C++ workload installed in Visual Studio
 iconUrl: /training/achievements/connect-iot-hololens-azure-digital-twins-unity.svg
 levels:
@@ -39,7 +39,7 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- azure-cognitive-services
+- ai-services
 - azure-digital-twins
 - azure-iot
 - azure-iot-hub

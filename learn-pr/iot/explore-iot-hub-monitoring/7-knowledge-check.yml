@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-iot-hub-monitoring.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/05/2023
+  author: kgremban
+  ms.author: kgremban
+  ms.custom: engagement-fy23
+  ms.topic: unit
+  ms.service: iot-hub
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What does Azure Monitor do to help manage an IoT solution?"
+    choices:
+    - content: "It monitors the IoT devices."
+      isCorrect: false
+      explanation: "Incorrect. Azure Monitor doesn't monitor IoT devices, it monitors Azure services like IoT Hub."
+    - content: "It monitors the IoT device telemetry."
+      isCorrect: false
+      explanation: "Incorrect. Azure Monitor doesn't monitor IoT device telemetry, it monitors Azure services like IoT Hub."
+    - content: "It monitors the IoT hub."
+      isCorrect: true
+      explanation: "Correct. Azure Monitor is used to monitor Azure services like IoT Hub."
+  - content: "Which of the following statements about IoT Hub metrics is correct?"
+    choices:
+    - content: "IoT Hub metrics help to assess the overall health of the IoT Hub service."
+      isCorrect: true
+      explanation: "Correct. IoT Hub metrics help to assess the overall health of the IoT Hub service."
+    - content: "IoT Hub metrics help to assess the overall health of the devices connected to your IoT Hub."
+      isCorrect: false
+      explanation: "Incorrect. IoT Hub metrics help to assess the overall health of the IoT Hub service, not devices."
+    - content: "IoT Hub metrics are disabled by default."
+      isCorrect: false
+      explanation: "Incorrect. IoT Hub metrics are enabled by default."

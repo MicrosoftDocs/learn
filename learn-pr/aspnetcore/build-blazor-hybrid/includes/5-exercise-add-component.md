@@ -1,8 +1,8 @@
-In this exercise, you'll add a Razor component to the home page of our application.
+In this exercise, you add a Razor component to your application's home page.
 
 ## Add the Counter component to the Home page
 
-1. Expand the folders in the Visual Studio project explorer.
+1. Expand the folders in the Visual Studio Solution Explorer. If you don't have the Solution Explorer displayed, select **File** > **Solution Explorer**.
 
 1. Select **Pages** to view the existing Razor pages.
 
@@ -22,20 +22,32 @@ In this exercise, you'll add a Razor component to the home page of our applicati
    <Counter />
    ```
 
-If you still have the app running save the file, and select the hot reload (Alt+F10) command so that the `Counter` component shows up on the Home page by clicking to another tab and returning to the Home. If you stopped debugging previously, start the app again by selecting **Debug** > **Start Debugging**.
+::: zone pivot="vstudio"
 
-When you're ready to stop, return to Visual Studio 2022, and press Shift+F5 to stop the app.
+If you still have the app running, save the file and select the **Hot reload** (<kbd>Alt+F10</kbd>) command so that the `Counter` component shows up on the Home page. In the running app, verify the counter appears by selecting another tab, then selecting the **Home** tab to return to the Home page. If you stopped debugging previously, start the app again by selecting **Debug** > **Start Debugging**.
+
+When you're ready to stop, return to Visual Studio and press <kbd>Shift+F5</kbd> to stop the app.
+
+::: zone-end
+
+::: zone pivot="vscode"
+
+If you still have the app running, return to Visual Studio Code, and press <kbd>Shift+F5</kbd> to stop the app. Save the file and start the app again by selecting **Run** > **Start Debugging**
+
+When you're ready to stop, return to Visual Studio Code, and press <kbd>Shift+F5</kbd> to stop the app.
+
+:::zone-end
 
 ![Screenshot of the counter component on the home page.](../media/counter-homepage.png)
 
 ## Modify a component
 
-Component parameters are specified using attributes or child content, which allow you to set properties on the child component. Define a parameter on the Counter component for specifying how much it increments with every button click:
+Component parameters are specified using attributes or child content, which allow you to set properties on the child component. Define a parameter on the `Counter` component for specifying how much it increments with every button click:
 
 - Add a public property for `IncrementAmount` with a `[Parameter]` attribute.
 - Change the `IncrementCount` method to use the `IncrementAmount` when incrementing the value of `currentCount`.
 
-The following code in the **Counter.razor** file shows how to achieve that.
+Update the code in the **Counter.razor** file as follows:
 
 ```razor
 @page "/counter"
@@ -73,8 +85,8 @@ Welcome to your new app.
 <Counter IncrementAmount="10" />
 ```
 
-Start the app again by selecting **Debug** > **Start Debugging**
+Start the app again 
 
-The `Index` component now has its own counter that increments by 10 each time the **Click me** button is selected, as shown in the following image. The `Counter` component (_Counter.razor_) at `/counter` continues to increment by one.
+The `Index` component now has its own counter that increments by 10 each time you select the **Click me** button, as shown in the following image. The `Counter` component (_Counter.razor_) at `/counter` continues to increment by one.
 
 ![Screenshot of the home page with Counter update.](../media/counter-homepage-modify.png)

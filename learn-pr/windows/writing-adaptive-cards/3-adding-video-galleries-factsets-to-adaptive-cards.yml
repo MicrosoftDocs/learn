@@ -6,10 +6,9 @@ metadata:
   description: Learn how to render video, set up a gallery of images with associated actions, and add a fact set - a bulleted list - to your Adaptive Card.
   ms.date: 2/7/2019
   displayType: one-Column
-  author: PeterTurcan
-  ms.author: v-pettur
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  author: alvinashcraft
+  ms.author: aashcraft
+  ms.topic: unit
   
   zone_pivot_groups: platform-apps-uwp-wpf
 durationInMinutes: 20

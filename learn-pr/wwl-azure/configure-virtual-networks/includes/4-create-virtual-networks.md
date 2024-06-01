@@ -1,5 +1,3 @@
-
-
 You can create new virtual networks at any time. You can also add virtual networks when you create a virtual machine.
 
 ### Things to know about creating virtual networks
@@ -12,7 +10,7 @@ Review the following requirements for creating a virtual network.
 
    - The address space for the network can be either on-premises or in the cloud, but not both.
 
-   - You can't redefine the IP address space for a network after it's created. If you plan your address space for cloud-only virtual networks, you might later decide to connect an on-premises site. 
+   - Once you create the IP address space, it can't be changed. If you plan your address space for cloud-only virtual networks, you might later decide to connect an on-premises site. 
 
 - To create a virtual network, you need to define at least one subnet.
 

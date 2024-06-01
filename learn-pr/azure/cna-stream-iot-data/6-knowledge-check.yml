@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 04/24/2021
-  author: mpolicht
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/05/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -30,10 +29,10 @@ quiz:
     choices:
     - content: "Azure Service Bus"
       isCorrect: false
-      explanation: "Incorrect. Azure IoT Central applications support continuous data export to Azure Event Hub, Azure Service Bus, and custom webhooks."
-    - content: "Azure Event Hub"
+      explanation: "Incorrect. Azure IoT Central applications support continuous data export to Azure Event Hubs, Azure Service Bus, and custom webhooks."
+    - content: "Azure Event Hubs"
       isCorrect: false
-      explanation: "Incorrect. Azure IoT Central applications support continuous data export to Azure Event Hub, Azure Service Bus, and custom webhooks."
+      explanation: "Incorrect. Azure IoT Central applications support continuous data export to Azure Event Hubs, Azure Service Bus, and custom webhooks."
     - content: "Azure Blob Storage"
       isCorrect: true
       explanation: "Correct. It's possible to configure interval-based data export from Azure IoT Central to Azure Blob storage."

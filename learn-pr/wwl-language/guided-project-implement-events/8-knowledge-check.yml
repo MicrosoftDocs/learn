@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-implement-events.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A developer wants to create an event handler for a button click event in a C# WPF application using VS Code. Which of the following answers has the correct syntax for defining the event handler in XAML?"
+    choices:
+    - content: "Click=\"Button_Click\"  Handler=\"Button_Click\""
+      isCorrect: true
+      explanation: "Correct. This is the correct syntax for defining the event handler in WPF and linking it to the C# code-behind method."
+    - content: "Click=\"Button_Click\""
+      isCorrect: false
+      explanation: "Incorrect. This is the correct syntax for defining the event handler in WPF, but it's missing the event handler method in the C# code-behind."
+    - content: "OnClick=\"Button_Click\""
+      isCorrect: false
+      explanation: "Incorrect. This is the syntax used in Windows Forms applications, not WPF."
+  - content: "A developer wants to create an event handler for a slider value changed event in a C# WPF application using VS Code. Which of the following answers has the correct syntax for defining the event handler in XAML?"
+    choices:
+    - content: "ValueChanged=\"Slider_ValueChanged\"  Handler=\"Slider_ValueChanged\""
+      isCorrect: true
+      explanation: "Correct. This is the correct syntax for defining the event handler in WPF and linking it to the C# code-behind method."
+    - content: "ValueChanged=\"Slider_ValueChanged\""
+      isCorrect: false
+      explanation: "Incorrect. This is the correct syntax for defining the event handler in WPF, but it's missing the event handler method in the C# code-behind."
+    - content: "OnValueChanged=\"Slider_ValueChanged\""
+      isCorrect: false
+      explanation: "Incorrect. This is the syntax used in Windows Forms applications, not WPF."
+  - content: "A developer wants to connect a text box change event to a method in C# using XAML in VS Code. Which attribute should they add to the text box element?"
+    choices:
+    - content: "onSubmit"
+      isCorrect: false
+      explanation: "Incorrect. onSubmit isn't a valid attribute for connecting events in C# using XAML."
+    - content: "onChange"
+      isCorrect: false
+      explanation: "Incorrect. onChange isn't a valid attribute for connecting events in C# using XAML."
+    - content: "TextChanged"
+      isCorrect: true
+      explanation: "Correct. The TextChanged attribute is used to connect a text box change event to a method in C# using XAML."

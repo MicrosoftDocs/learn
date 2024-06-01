@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.explore-azure-virtual-machine-monitoring-considerations
+title: Explore Azure Virtual Machine monitoring considerations
+metadata:
+  title: Explore Azure Virtual Machine monitoring considerations
+  description: "Explore Azure virtual machine monitoring considerations"
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-explore-azure-virtual-machine-monitoring-considerations.md)]

@@ -4,11 +4,10 @@ title: Respond to alerts
 metadata:
   title: Respond to alerts
   description: Respond to alerts
-  ms.date: 09/30/2019
+  ms.date: 12/19/2022
   author: elazark
-  ms.author: memildin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: elkrieger
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-respond-to-alerts.md)]
@@ -19,7 +18,7 @@ quiz:
      choices:
      - content: "True"
        isCorrect: true
-       explanation: "Correct. Once attackers are in a system they wil often progress into other connected computers and servers."
+       explanation: "Correct. Once attackers are in a system they will often progress into other connected computers and servers."
      - content: "False"
        isCorrect: false
    - content: Select the best definition of a Defender for Cloud _incident_.

@@ -6,8 +6,9 @@ metadata:
   ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hub
 title: Offer an Event Hubs resource provider for Azure Stack Hub
 summary: 'Streaming and event-based solutions are supported, for both on-premises and Azure cloud processing. This learning path help you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.'
 abstract: |

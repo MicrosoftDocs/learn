@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-delta-lake-tables-fabric.exercise-delta-tables
+title: Exercise - Use delta tables in Apache Spark
+metadata:
+  title: Exercise - Use delta tables in Apache Spark
+  description: "Exercise - Use delta tables in Apache Spark"
+  ms.date: 01/31/2024
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: unit
+  ms.custom:
+  - build-2023
+durationInMinutes: 40
+content: |
+  [!include[](includes/6-exercise-delta-tables.md)]

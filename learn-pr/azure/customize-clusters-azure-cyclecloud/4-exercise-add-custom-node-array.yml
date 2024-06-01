@@ -5,11 +5,10 @@ metadata:
   unitType: exercise
   title: Exercise - Add a custom node array to an HPC cluster
   description: This unit describes the process of adding a custom node array to an HPC cluster by using an Azure CycleCloud template.
-  ms.date: 06/14/2021
+  ms.date: 02/01/2024
   author: anhoward
   ms.author: anhoward
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 30
 content: |
   [!include[](includes/4-exercise-add-custom-node-array.md)]

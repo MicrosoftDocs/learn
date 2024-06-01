@@ -4,11 +4,12 @@ title: Exercise - Download and install Visual Studio Code
 metadata:
   title: Exercise - Download and install Visual Studio Code
   description: "Exercise - Download and install Visual Studio Code"
-  ms.date: 04/13/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/2-exercise-download-install-visual-studio-code.md)]

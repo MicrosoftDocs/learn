@@ -3,11 +3,10 @@ uid: learn.azure-sql-high-availability.2-backup-restore
 metadata:
   title: Backup and restore
   description: Backup and restore
-  ms.date: 03/15/2023
+  ms.date: 11/29/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Backup and restore
 durationInMinutes: 10
 content: |
