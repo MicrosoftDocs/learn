@@ -47,7 +47,6 @@ units:
 - learn.wwl.introduction-to-continuous-delivery.move-continuous-delivery
 - learn.wwl.introduction-to-continuous-delivery.understand-releases-deployments
 - learn.wwl.introduction-to-continuous-delivery.understand-release-process-versus-release
-- learn.wwl.introduction-to-continuous-delivery.knowledge-check
 - learn.wwl.introduction-to-continuous-delivery.summary
 badge:
   uid: learn.wwl.introduction-to-continuous-delivery.badge
