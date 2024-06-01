@@ -3448,3 +3448,8 @@ achievements:
   title: Explore continuous integration
   summary: This module details continuous integration practice and the pillars for implementing it in the development lifecycle, its benefits, and properties.
   iconUrl: /learn/achievements/4-explore-continuous-integration.svg
+- uid: learn.wwl.introduction-to-continuous-delivery.badge
+  type: badge
+  title: Introduction to continuous delivery
+  summary: This module introduces continuous delivery concepts and their implementation in a traditional IT development cycle.
+  iconUrl: /learn/achievements/1-introduction-to-continuous-delivery.svg
