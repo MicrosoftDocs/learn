@@ -39928,6 +39928,11 @@
       "source_path": "learn-pr/wwl-azure/explore-continuous-integration/7-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-continuous-integration/3-learn-four-pillars-continuous-integration.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
     }
   ]
 }
