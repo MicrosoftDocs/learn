@@ -43,6 +43,5 @@ products:
 subjects:
 - architecture
 units:
-- learn.wwl.introduction-to-continuous-delivery.what-continuous-delivery
 badge:
   uid: learn.wwl.introduction-to-continuous-delivery.badge
