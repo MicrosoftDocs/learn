@@ -39983,6 +39983,11 @@
       "source_path": "learn-pr/wwl-azure/introduction-to-continuous-delivery/3-what-continuous-delivery.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/owasp-and-dynamic-analyzers/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
     }
   ]
 }
