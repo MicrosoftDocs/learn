@@ -42,6 +42,5 @@ products:
 subjects:
 - devops
 units:
-- learn.wwl.owasp-and-dynamic-analyzers.summary
 badge:
   uid: learn.wwl.owasp-and-dynamic-analyzers.badge
