@@ -39993,6 +39993,11 @@
       "source_path": "learn-pr/wwl-azure/owasp-and-dynamic-analyzers/3-explore-owasp-zap-penetration-test.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/owasp-and-dynamic-analyzers/4-explore-owasp-zap-results-bugs.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
     }
   ]
 }
