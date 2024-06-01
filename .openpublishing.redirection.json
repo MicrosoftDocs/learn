@@ -39893,6 +39893,131 @@
       "source_path": "learn-pr/wwl-azure/connect-azure-server-private-endpoint-using-azure-portal/4-connect-to-an-azure-sql-server-using-an-azure-private-endpoint-using-the-azure-portal.md",
       "redirect_url": "/training/modules/connect-azure-server-private-endpoint-using-azure-portal",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-continuous-integration/index.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-continuous-integration/5-describe-build-properties.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-continuous-integration/6-enable-continuous-integration-azure-pipelines.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-continuous-integration/4-explore-benefits-continuous-integration.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-continuous-integration/1-introduction.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-continuous-integration/2-introduction-continuous-integration.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-continuous-integration/7-knowledge-check.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-continuous-integration/3-learn-four-pillars-continuous-integration.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-continuous-integration/8-summary.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-continuous-delivery/index.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-continuous-delivery/2-explore-traditional-it-development-cycle.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-continuous-delivery/1-introduction.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-continuous-delivery/7-knowledge-check.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-continuous-delivery/4-move-continuous-delivery.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-continuous-delivery/8-summary.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-continuous-delivery/6-understand-release-process-versus-release.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-continuous-delivery/5-understand-releases-deployments.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-continuous-delivery/3-what-continuous-delivery.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/owasp-and-dynamic-analyzers/index.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/owasp-and-dynamic-analyzers/3-explore-owasp-zap-penetration-test.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/owasp-and-dynamic-analyzers/4-explore-owasp-zap-results-bugs.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/owasp-and-dynamic-analyzers/1-introduction.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/owasp-and-dynamic-analyzers/5-knowledge-check.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/owasp-and-dynamic-analyzers/2-plan-implement-owasp-secure-coding-practices.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/owasp-and-dynamic-analyzers/6-summary.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
     }
   ]
 }
