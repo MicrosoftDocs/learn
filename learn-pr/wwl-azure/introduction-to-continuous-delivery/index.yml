@@ -44,7 +44,6 @@ subjects:
 - architecture
 units:
 - learn.wwl.introduction-to-continuous-delivery.what-continuous-delivery
-- learn.wwl.introduction-to-continuous-delivery.move-continuous-delivery
 - learn.wwl.introduction-to-continuous-delivery.understand-releases-deployments
 - learn.wwl.introduction-to-continuous-delivery.understand-release-process-versus-release
 - learn.wwl.introduction-to-continuous-delivery.summary
