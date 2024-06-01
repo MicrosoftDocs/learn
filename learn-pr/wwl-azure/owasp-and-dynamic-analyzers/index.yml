@@ -44,7 +44,6 @@ subjects:
 units:
 - learn.wwl.owasp-and-dynamic-analyzers.introduction
 - learn.wwl.owasp-and-dynamic-analyzers.plan-implement-owasp-secure-coding-practices
-- learn.wwl.owasp-and-dynamic-analyzers.explore-owasp-zap-results-bugs
 - learn.wwl.owasp-and-dynamic-analyzers.knowledge-check
 - learn.wwl.owasp-and-dynamic-analyzers.summary
 badge:
