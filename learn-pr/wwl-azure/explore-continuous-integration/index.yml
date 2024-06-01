@@ -43,7 +43,6 @@ products:
 subjects:
 - devops
 units:
-- learn.wwl.explore-continuous-integration.learn-four-pillars-continuous-integration
 - learn.wwl.explore-continuous-integration.summary
 badge:
   uid: learn.wwl.explore-continuous-integration.badge
