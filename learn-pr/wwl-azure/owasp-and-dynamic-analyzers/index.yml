@@ -42,7 +42,6 @@ products:
 subjects:
 - devops
 units:
-- learn.wwl.owasp-and-dynamic-analyzers.introduction
 - learn.wwl.owasp-and-dynamic-analyzers.plan-implement-owasp-secure-coding-practices
 - learn.wwl.owasp-and-dynamic-analyzers.knowledge-check
 - learn.wwl.owasp-and-dynamic-analyzers.summary
