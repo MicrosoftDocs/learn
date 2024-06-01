@@ -3453,3 +3453,8 @@ achievements:
   title: Introduction to continuous delivery
   summary: This module introduces continuous delivery concepts and their implementation in a traditional IT development cycle.
   iconUrl: /learn/achievements/1-introduction-to-continuous-delivery.svg
+- uid: learn.wwl.owasp-and-dynamic-analyzers.badge
+  type: badge
+  title: OWASP and Dynamic Analyzers
+  summary: This module explores OWASP and Dynamic Analyzers for penetration testing, results, and bugs.
+  iconUrl: /training/achievements/owasp-dynamic-analyzer.svg
