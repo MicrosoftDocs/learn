@@ -47,7 +47,6 @@ units:
 - learn.wwl.explore-continuous-integration.introduction-continuous-integration
 - learn.wwl.explore-continuous-integration.learn-four-pillars-continuous-integration
 - learn.wwl.explore-continuous-integration.explore-benefits-continuous-integration
-- learn.wwl.explore-continuous-integration.describe-build-properties
 - learn.wwl.explore-continuous-integration.enable-continuous-integration-azure-pipelines
 - learn.wwl.explore-continuous-integration.knowledge-check
 - learn.wwl.explore-continuous-integration.summary
