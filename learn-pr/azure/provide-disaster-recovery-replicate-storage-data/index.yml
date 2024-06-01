@@ -7,6 +7,7 @@ metadata:
   author: normesta
   ms.author: normesta
   ms.topic: module
+  ms.service: azure-storage
 title: Provide disaster recovery by replicating storage data across regions and failing over to a secondary location
 summary: In this module, you'll learn to evaluate and choose a redundancy option for Azure Storage. You'll create a storage account and blob container to demonstrate replication. You'll also initiate storage account failover to the secondary region.
 abstract: | 
