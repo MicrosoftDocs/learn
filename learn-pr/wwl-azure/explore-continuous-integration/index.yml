@@ -43,8 +43,6 @@ products:
 subjects:
 - devops
 units:
-- learn.wwl.explore-continuous-integration.introduction
-- learn.wwl.explore-continuous-integration.introduction-continuous-integration
 - learn.wwl.explore-continuous-integration.learn-four-pillars-continuous-integration
 - learn.wwl.explore-continuous-integration.knowledge-check
 - learn.wwl.explore-continuous-integration.summary
