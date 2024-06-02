@@ -40048,6 +40048,11 @@
       "source_path": "learn-pr/wwl-azure/migrate-to-devops/6-migrate-integrate-existing-test-management-tools.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/migrate-to-devops/5-migrate-integrate-existing-work-management-tools.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
     }
   ]
 }
