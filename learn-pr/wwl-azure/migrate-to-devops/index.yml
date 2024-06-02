@@ -47,6 +47,5 @@ subjects:
 units:
 - learn.wwl.migrate-to-devops.what-is-azure-devops
 - learn.wwl.migrate-to-devops.what-is-github
-- learn.wwl.migrate-to-devops.summary
 badge:
   uid: learn.wwl.migrate-to-devops.badge
