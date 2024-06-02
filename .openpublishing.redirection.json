@@ -9,7 +9,27 @@
       "source_path_from_root": "/learn-pr/paths/index.md",
       "redirect_url": "/training/browse/?resource_type=learning%20path",
       "redirect_document_id": false
-    },    
+    }, 
+    {
+      "source_path_from_root": "/learn-pr/credentials/index.yml",
+      "redirect_url": "/credentials",
+      "redirect_document_id": false
+   },  
+   {
+      "source_path_from_root": "/learn-pr/certifications/index.yml",
+      "redirect_url": "/credentials",
+      "redirect_document_id": false
+   },  
+   {
+      "source_path_from_root": "/learn-pr/courses/index.yml",
+      "redirect_url": "/training/browse/?resource_type=course",
+      "redirect_document_id": false
+   },  
+   {
+      "source_path_from_root": "/learn-pr/courses/browse/index.yml",
+      "redirect_url": "/training/browse/?resource_type=course",
+      "redirect_document_id": false
+   },   
     {
       "source_path_from_root": "/learn-pr/azure/add-sign-in-support-python-web-app-identity-platform/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-python-sign-in",
