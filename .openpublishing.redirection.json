@@ -40068,6 +40068,51 @@
       "source_path": "learn-pr/wwl-azure/migrate-to-devops/3-what-is-github.md",
       "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/index.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/1-introduction.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/2-introduction-azure-repos.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/3-introduction-to-github.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/4-migrate-from-tfvc-to-git.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/5-use-git-tfs.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/work-azure-repos-github/6-develop-online-github-codespaces.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/work-azure-repos-github/8-summary.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/7-knowledge-check.md",
+      "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
     }
   ]
 }
