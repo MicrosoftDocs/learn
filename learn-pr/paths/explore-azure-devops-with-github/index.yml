@@ -22,8 +22,7 @@ products:
   - github
   - azure-devops
 modules:
-  - learn.wwl.migrate-to-devops
-  - learn.wwl.work-azure-repos-github
+    - learn.wwl.work-azure-repos-github
   - learn.wwl.introduction-to-github-actions
   - learn.wwl.learn-continuous-integration-github-actions
   - learn.wwl.explore-azure-pipelines
