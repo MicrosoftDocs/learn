@@ -3458,3 +3458,8 @@ achievements:
   title: OWASP and Dynamic Analyzers
   summary: This module explores OWASP and Dynamic Analyzers for penetration testing, results, and bugs.
   iconUrl: /training/achievements/owasp-dynamic-analyzer.svg
+- uid: learn.wwl.migrate-to-devops.badge
+  type: badge
+  title: Choose the DevOps tools
+  summary: This module explores Azure DevOps and GitHub tools and helps organizations define their work management tool and licensing strategy.
+  iconUrl: /training/achievements/4-migrate-to-devops.svg
