@@ -3458,3 +3458,13 @@ achievements:
   title: OWASP and Dynamic Analyzers
   summary: This module explores OWASP and Dynamic Analyzers for penetration testing, results, and bugs.
   iconUrl: /training/achievements/owasp-dynamic-analyzer.svg
+- uid: learn.wwl.migrate-to-devops.badge
+  type: badge
+  title: Choose the DevOps tools
+  summary: This module explores Azure DevOps and GitHub tools and helps organizations define their work management tool and licensing strategy.
+  iconUrl: /training/achievements/4-migrate-to-devops.svg
+- uid: learn.wwl.work-azure-repos-github.badge
+  type: badge
+  title: Work with Azure Repos and GitHub
+  summary: This module introduces you to Azure Repos and GitHub and explores ways to migrate from TFVC to Git, and work with GitHub Codespaces for development.
+  iconUrl: /training/achievements/7-work-with-azure-repos-and-github.svg
