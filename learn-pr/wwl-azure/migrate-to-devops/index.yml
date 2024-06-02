@@ -48,7 +48,6 @@ units:
 - learn.wwl.migrate-to-devops.introduction
 - learn.wwl.migrate-to-devops.what-is-azure-devops
 - learn.wwl.migrate-to-devops.what-is-github
-- learn.wwl.migrate-to-devops.explore-authorization-access-strategy
 - learn.wwl.migrate-to-devops.migrate-integrate-existing-work-management-tools
 - learn.wwl.migrate-to-devops.migrate-integrate-existing-test-management-tools
 - learn.wwl.migrate-to-devops.knowledge-check
