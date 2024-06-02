@@ -48,7 +48,6 @@ units:
 - learn.wwl.migrate-to-devops.what-is-azure-devops
 - learn.wwl.migrate-to-devops.what-is-github
 - learn.wwl.migrate-to-devops.migrate-integrate-existing-work-management-tools
-- learn.wwl.migrate-to-devops.migrate-integrate-existing-test-management-tools
 - learn.wwl.migrate-to-devops.summary
 badge:
   uid: learn.wwl.migrate-to-devops.badge
