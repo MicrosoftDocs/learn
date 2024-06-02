@@ -1,4 +1,5 @@
 ## Scenario
+
 As a global manufacturer handling thousands of parts supplied by thousands of vendors, you want to combine SAP and other data to help identify your strongest suppliers. Your plan is to bring together time-stamped order details from your SAP Business Warehouse solution and QA data from an Azure Cosmos DB resource. You want to analyze the data and output a rating for each vendor that predicts vendor reliability. The rating will be based on quality metrics and on-time delivery data. You plan to use a single workspace in Azure Synapse Analytics for much of the process. Your outputs will display in a business app that helps you turn insight into action. Decision makers search on a part number, see a dashboard with vendor reliability ratings, select the appropriate vendor, then place the order. Order details are then saved into your SAP Business solution.
 
 ## Learning objectives

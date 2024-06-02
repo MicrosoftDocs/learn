@@ -4,16 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/17/2022
+  ms.date: 12/11/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
-content: |
-  [!include[](includes/12-knowledge-check.md)]
 quiz:
   questions:
   - content: "You want to include a sentiment score for each document in an index. What should you do?"
@@ -21,13 +18,13 @@ quiz:
     - content: "Create a custom skill that uses an Azure Machine Learning model to predict the sentiment for a document"
       isCorrect: false
       explanation: "Incorrect. There is no need to create a custom skill in this scenario."
-    - content: "Create a custom skill that calls the Text Analytics cognitive service to predict the sentiment of each document."
+    - content: "Create a custom skill that calls the Azure AI Language service to predict the sentiment of each document."
       isCorrect: false
       explanation: "Incorrect. There is no need to create a custom skill in this scenario."
     - content: "Add the built-in Sentiment skill to the skillset used by the indexer."
       isCorrect: true
       explanation: "Correct. The built-in sentiment skill can be used to accomplish the goal in this scenario."
-  - content: "You have implemented a custom skill as an Azure function. You want to include the custom skill in your Azure Cognitive Search indexing process. What should you do?"
+  - content: "You have implemented a custom skill as an Azure function. You want to include the custom skill in your Azure AI Search indexing process. What should you do?"
     choices:
     - content: "Add a WebApiSkill to a skillset, referencing the Azure function's URI"
       isCorrect: true

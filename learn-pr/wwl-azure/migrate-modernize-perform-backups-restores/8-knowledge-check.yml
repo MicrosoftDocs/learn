@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-perform-backups-restores.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "As part of the process of implementing application-consistent backup of Azure Linux virtual machines, customers have to configure permissions for many files, including VMSnapshotScriptPluginConfig.json. Which user/s should have \"execute\" permissions to this file?"
+    choices:
+    - content: "Root user only"
+      isCorrect: false
+      explanation: "Incorrect. Only the root user should have \"read\" and \"write\" permissions to VMSnapshotScriptPluginConfig.json, and no users should have \"execute\" permissions."
+    - content: "All users"
+      isCorrect: false
+      explanation: "Incorrect. Only the root user should have \"read\" and \"write\" permissions to VMSnapshotScriptPluginConfig.json, and no users should have \"execute\" permissions."
+    - content: "No users"
+      isCorrect: true
+      explanation: "Correct. Only the root user should have \"read\" and \"write\" permissions to VMSnapshotScriptPluginConfig.json, and no users should have \"execute\" permissions."
+  - content: "How does implementing application-consistent backup of Azure virtual machines differ between Windows and Linux?"
+    choices:
+    - content: "There's no difference, the process is handled identically in both cases."
+      isCorrect: false
+      explanation: "Incorrect. When Azure Backup takes application-consistent snapshots of Linux VMs, it invokes only the pre/post scripts written by the user. If the pre-scripts and post-scripts execute successfully, Azure Backup marks the recovery point as application consistent. However, with custom scripts, the user is ultimately responsible for application consistency."
+    - content: "Linux requires the user to write their own pre-script and post-script framework."
+      isCorrect: true
+      explanation: "Correct. When Azure Backup takes application-consistent snapshots of Linux VMs, it invokes only the pre/post scripts written by the user. If the pre-scripts and post-scripts execute successfully, Azure Backup marks the recovery point as application consistent. However, with custom scripts, the user is ultimately responsible for application consistency."
+    - content: "Linux doesn't support application-consistent backup."
+      isCorrect: false
+      explanation: "Incorrect. When Azure Backup takes application-consistent snapshots of Linux VMs, it invokes only the pre/post scripts written by the user. If the pre-scripts and post-scripts execute successfully, Azure Backup marks the recovery point as application consistent. However, with custom scripts, the user is ultimately responsible for application consistency."
+  - content: "The following steps are suggested for taking a storage snapshot of a production SAP HANA workload, with an XFS file system spanning four Azure virtual disks. 1. Prepare the HANA snapshot. 2. Create all necessary blob snapshots on Azure. 3. Confirm the HANA snapshot. Can the process be relied upon to provide a consistent snapshot?"
+    choices:
+    - content: "Yes, the process should result in a consistent snapshot."
+      isCorrect: false
+      explanation: "Incorrect. The easiest way to avoid problems would be to shut down SAP HANA, but this approach isn't an option for a production system. Freezing the XFS file system (with xfs_freeze) ensures consistency of the snapshot."
+    - content: "No, the user must shut down SAP HANA before taking the snapshot, or the snapshot won't be consistent."
+      isCorrect: false
+      explanation: "Incorrect. The easiest way to avoid problems would be to shut down SAP HANA, but this approach isn't an option for a production system. Freezing the XFS file system (with xfs_freeze) ensures consistency of the snapshot."
+    - content: "No, the user should also freeze the file system before creating the blob snapshots on Azure, and unfreeze it afterwards."
+      isCorrect: true
+      explanation: "Correct. The easiest way to avoid problems would be to shut down SAP HANA, but this approach isn't an option for a production system. Freezing the XFS file system (with xfs_freeze) ensures consistency of the snapshot."

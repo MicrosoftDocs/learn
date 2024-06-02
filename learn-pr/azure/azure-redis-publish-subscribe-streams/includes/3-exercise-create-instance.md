@@ -2,7 +2,7 @@
 
 You have been tasked with validating if Azure Cache for Redis can serve as your overall communication middleware for your solutions for your retail development team.
 
-In this exercise, you will create a new Azure Cache for Redis instance. You will then use this instance in the remaining exercises throughout this module.
+In this exercise, you create a new Azure Cache for Redis instance. You then use this instance in the remaining exercises throughout this module.
 
 ## Create an Azure Cache for Redis instance
 
@@ -21,9 +21,9 @@ Use the Azure portal to create a new Azure Cache for Redis instance.
     | -- | -- |
     | **Subscription** | *Concierge Subscription* |
     | **Resource group** | *<rgn>[sandbox resource group name]</rgn>* |
-    | **DNS name** | *Enter any globally unique name. The portal will check the name in real time.* |
+    | **DNS name** | *Enter any globally unique name. The portal checks the name in real time.* |
     | **Location** | *Select a region* |
-    | **Cache type** | *Basic C0 (250MB Cache, No SLA)*  |
+    | **Cache type** | *Basic C0 (250 MB Cache, No SLA)*  |
 
 1. Select the **Advanced** tab.
 
@@ -31,14 +31,14 @@ Use the Azure portal to create a new Azure Cache for Redis instance.
 
     | **Setting** | **Value** |
     | -- | -- |
-    | **Redis version** | *6* |
+    | **Redis version** | *Latest - 6* |
 
 1. Select **Review + Create** to navigate to the **Review + Create** tab, and then select **Create**.
 
     > [!NOTE]
     > It can take upwards of fifteen minutes to create a new Azure Cache for Redis instance.
 
-1. Observe the **Deployment** pane. When the deployment is complete, the pane will update with a **Deployment successful** message.
+1. Observe the **Deployment** pane. When the deployment is complete, the pane updates with a **Deployment successful** message.
 
 ## View the Azure Cache for Redis instance
 

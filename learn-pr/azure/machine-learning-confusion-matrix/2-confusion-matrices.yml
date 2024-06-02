@@ -4,11 +4,10 @@ title: Confusion matrices
 metadata:
   title: Confusion matrices
   description: Conceptual unit about confusion matrices in machine learning
-  ms.date: 05/25/2021
+  ms.date: 04/14/2023
   author: TomReidNZ
   ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-confusion-matrices.md)]

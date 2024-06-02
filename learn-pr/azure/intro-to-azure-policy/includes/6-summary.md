@@ -1,8 +1,8 @@
-You've explored the concepts of Azure Policy and how to use it to:
+In this module, you explored the concepts of Azure Policy and how to use it to:
 
-* Apply enforcement and compliance of your business rules
-* Apply policies at scale
-* Help with remediation of resources
+- Apply enforcement and compliance of your business rules.
+- Apply policies at scale.
+- Help with remediation of resources.
 
 You can learn more by visiting the following webpages:
 

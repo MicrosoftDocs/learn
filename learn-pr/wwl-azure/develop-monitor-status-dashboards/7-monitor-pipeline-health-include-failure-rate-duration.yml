@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-monitor-status-dashboards.monitor-pipeline-health-include-failure-rate-duration
+title: Monitor pipeline health, including failure rate, duration, and flaky tests
+metadata:
+  title: Monitor pipeline health, including failure rate, duration, and flaky tests
+  description: "Monitor pipeline health, including failure rate, duration, and flaky tests"
+  ms.date: 05/08/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-monitor-pipeline-health-include-failure-rate-duration.md)]

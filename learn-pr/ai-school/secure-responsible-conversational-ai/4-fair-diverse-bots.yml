@@ -7,8 +7,7 @@ metadata:
   ms.date: 02/20/2020
   author: Adriamen
   ms.author: japerena
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-fair-diverse-bots.md)] 

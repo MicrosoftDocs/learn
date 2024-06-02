@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-write-ahead-logging.understand-replication-logical-decode
+title: Describe replication and logical decoding
+metadata:
+  title: Describe replication and logical decoding
+  description: "Describe replication and logical decoding."
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-understand-replication-logical-decode.md)]

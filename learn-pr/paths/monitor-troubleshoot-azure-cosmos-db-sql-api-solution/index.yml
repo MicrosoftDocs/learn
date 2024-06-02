@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Monitor and troubleshoot an Azure Cosmos DB for NoSQL solution
 prerequisites: |
   Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
@@ -21,7 +20,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.measure-performance-azure-cosmos-db-sql-api
 - learn.wwl.monitor-responses-events-azure-cosmos-db-sql-api

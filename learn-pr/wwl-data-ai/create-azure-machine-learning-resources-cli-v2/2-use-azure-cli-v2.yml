@@ -7,8 +7,9 @@ metadata:
   ms.date: 03/02/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

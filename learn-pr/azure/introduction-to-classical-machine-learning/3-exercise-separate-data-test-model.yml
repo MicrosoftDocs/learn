@@ -4,11 +4,10 @@ title: Exercise - Implement supervised learning
 metadata:
   title: Exercise - Implement supervised learning
   description: Create and use a simple supervised learning model without using external libraries.
-  ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/26/2023
+  author: lgayhardt
+  ms.author: lagayhar
+  ms.topic: unit
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/2-3-exercise-separate-data-test-model.ipynb

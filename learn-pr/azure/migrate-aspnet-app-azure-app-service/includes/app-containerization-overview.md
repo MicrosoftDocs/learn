@@ -1,9 +1,9 @@
-Azure Migrate: App Containerization is a standalone utility that you can download and install on any Windows 10 or Windows Server 2016 (or later) machine with network access to your application servers running the ASP.NET web app to be containerized and migrated. The tool works by using the running state of the applications on a server to determine the application components and helps you package them in a container image. The containerized application can then be deployed on Azure Kubernetes Service (AKS) or Azure App Service containers. The containerization process doesn’t require access to your codebase and provides an easy way to containerize existing applications.
+Azure Migrate: App Containerization is a standalone utility that you can download and install on any Windows 10 or Windows Server 2016 (or later) machine. The machine needs network access to your application servers running the ASP.NET web app to be containerized and migrated. The tool works by using the running state of the applications on a server to determine the application components and helps you package them in a container image. The containerized application can then be deployed on Azure Kubernetes Service (AKS) or Azure App Service containers. The containerization process doesn’t require access to your codebase and provides an easy way to containerize existing applications.
 
-The tool currently supports containerization and migration of following ASP.NET applications -
+The tool currently supports containerization and migration of the following ASP.NET applications:
 
 - ASP.NET applications using Microsoft .NET Framework 3.5 or later.
-- Application servers running Windows Server 2008 R2 or later (application servers should be running PowerShell version 5.1).
+- Application servers running Windows Server 2012 R2 or later (application servers should be running PowerShell version 5.1).
 - Applications running on Internet Information Services (IIS) 7.5 or later.
 
 Azure Migrate: App Containerization helps you to:
@@ -14,4 +14,4 @@ Azure Migrate: App Containerization helps you to:
 
 ![App Containerization process overview](../media/process-overview.png)
 
-In the next sections of this module, you'll setup a sample two-tier ASP.NET web application and use Azure Migrate: App Containerization to containerize and migrate the application to App Service. 
+In the next sections of this module, you set up a sample two-tier ASP.NET web application and use Azure Migrate: App Containerization to containerize and migrate the application to App Service. 

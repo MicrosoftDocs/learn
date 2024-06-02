@@ -3,11 +3,10 @@ uid: learn.protect-infrastructure-with-azure-site-recovery.2-what-is-site-recove
 metadata:
   title: What is Azure Site Recovery?
   description: Here, you'll learn how replication, disaster recovery (DR) drills and the flexibility of Site Recovery.
-  ms.date: 11/15/2019
+  ms.date: 12/07/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: What is Azure Site Recovery
 durationInMinutes: 4
 content: |

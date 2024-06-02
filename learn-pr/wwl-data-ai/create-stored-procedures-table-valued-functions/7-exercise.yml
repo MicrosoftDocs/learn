@@ -4,12 +4,12 @@ title: 'Exercise: Create stored procedures and table-valued functions'
 metadata:
   title: 'Exercise: Create stored procedures and table-valued functions'
   description: "Exercise: Create stored procedures and table-valued functions"
-  ms.date: 02/02/2023
+  ms.date: 03/15/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 labId: 105120
 labModal: true
 durationInMinutes: 30

@@ -3,11 +3,10 @@ uid: learn.end-to-end-encryption-with-app-gateway.3-configure-backend-pools-for-
 metadata:
   title: Configure back-end pools for encryption
   description: Configure back-end pools for encryption
-  ms.date: 02/22/2022
-  author: vhorne
-  ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/22/2024
+  author: greg-lindsay
+  ms.author: greglin
+  ms.topic: unit
 title: Configure back-end pools for encryption
 durationInMinutes: 10
 content: |

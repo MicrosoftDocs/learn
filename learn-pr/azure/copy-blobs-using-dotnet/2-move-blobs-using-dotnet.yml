@@ -3,12 +3,13 @@ uid: learn.azure.copy-blobs-using-dotnet.move-blobs-using-dotnet
 title: Move Azure Storage blobs using the .NET Storage Client
 metadata:
   title: Move Azure Storage blob using the .NET Storage Client
-  description: Move Azure Storage blobs using the .NET Storage Client
-  ms.date: 04/20/2023
+  description: Move Azure Storage blobs using the .NET Storage Client.
+  ms.date: 05/20/2024
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 7
 content: |
   [!include[](includes/2-move-blobs-using-dotnet.md)]

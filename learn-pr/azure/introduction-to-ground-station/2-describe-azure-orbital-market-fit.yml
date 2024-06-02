@@ -4,11 +4,11 @@ title: Describe how Azure Orbital Ground Station fits into the space market
 metadata:
   title: Describe how Azure Orbital Ground Station fits into the space market
   description: Learn how the space industry is changing as well as common challenges to accessing space data.
-  ms.date: 09/27/2022
+  ms.date: 08/28/2023
   author: meaghanlewis
   ms.author: mosagie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: eliotgra
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-describe-azure-orbital-market-fit.md)]

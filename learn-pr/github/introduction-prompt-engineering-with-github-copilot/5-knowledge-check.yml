@@ -1,0 +1,117 @@
+### YamlMime:ModuleUnit
+uid: learn.github.introduction-prompt-engineering-with-github-copilot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of the "Introduction to prompt engineering with GitHub Copilot" module.
+  ms.date: 11/10/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 6
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What's GitHub Copilot?"
+    choices:
+    - content: "A platform for code repository."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot isn't a platform for hosting code repositories; that's what GitHub itself does. Copilot is an AI-powered code completion tool."
+    - content: "A model powered by machine learning."
+      isCorrect: false
+      explanation: "Incorrect. Although GitHub Copilot is powered by machine learning, this description is too broad and doesn't accurately define its primary function as a coding assistant."
+    - content: "An assistant for coding, powered by OpenAI."
+      isCorrect: true
+      explanation: "Correct. GitHub Copilot is an AI-powered coding assistant developed by OpenAI, which helps developers by suggesting code completions and snippets."
+    - content: "A service for web hosting."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot isn't a web hosting service. It's an AI-powered tool for assisting with code writing."
+  - content: "What role does prompting play in utilizing GitHub Copilot effectively?"
+    choices:
+    - content: "Generates instant bug fixes."
+      isCorrect: false
+      explanation: "Incorrect. While GitHub Copilot can suggest fixes, the quality and applicability of those fixes are heavily dependent on the quality of the prompts given by the user."
+    - content: "Enhances code suggestions quality."
+      isCorrect: true
+      explanation: "Correct. The clarity and specificity of prompts play a crucial role in enhancing the quality of code suggestions provided by GitHub Copilot."
+    - content: "Automates the coding process entirely."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot doesn't automate the entire coding process; it aids in code writing through suggestions, which are influenced by the user's prompts."
+    - content: "Implements real-time collaboration."
+      isCorrect: false
+      explanation: "Incorrect. Prompting in GitHub Copilot isn't related to real-time collaboration but to the user's communication with the AI to receive relevant code suggestions."
+  - content: "Which of the following is a principle of the 4 S's of prompt engineering?"
+    choices:
+    - content: "Summarize code objectives concisely." 
+      isCorrect: false
+      explanation: "Incorrect. While conciseness is encouraged, 'Summarize' isn't one of the 4 S's principles of prompt engineering."
+    - content: "Specify instructions explicitly and in detail."
+      isCorrect: true
+      explanation: "Correct. The principle of being 'Specific' is one of the 4 S's, emphasizing clear and detailed instructions."
+    - content: "Streamline processes for efficient code suggestions."
+      isCorrect: false
+      explanation: "Incorrect. 'Streamline' isn't a term associated with the 4 S's principles."
+    - content: "Simplify coding languages for universal understanding."
+      isCorrect: false
+      explanation: "Incorrect. The 4 S's don't include simplifying coding languages. The 4 S's are about making the prompts single, specific, short, and surrounded by context."
+  - content: "How does GitHub Copilot handle personal data?"
+    choices:
+    - content: "It saves all personal data for future references." 
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot actively filters out personal data to ensure user privacy and data security."
+    - content: "It shares personal data with other users for collaborative projects."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot doesn't share personal data; it's designed to respect user privacy."
+    - content: "It encrypts personal data."
+      isCorrect: false
+      explanation: "Incorrect. It doesn't encrypt personal data, but rather, it avoids processing or storing it."
+    - content: "It actively filters out personal data to protect user privacy."
+      isCorrect: true
+      explanation: "Correct. GitHub Copilot is designed to actively filter out personal data to safeguard user privacy and data security."
+  - content: "What is LoRA in the context of LLMs fine-tuning?"
+    choices:
+    - content: "A method that adds trainable elements to each layer of the pretrained model without a complete overhaul." 
+      isCorrect: true
+      explanation: "Correct. LoRA involves adding trainable parts to the model without changing the entire structure, optimizing its performance for specific tasks."
+    - content: "A technology optimizing communication between different coding languages."
+      isCorrect: false
+      explanation: "Incorrect. LoRA isn't a communication technology. It's a method of fine-tuning AI models."
+    - content: "A specialized software library enhancing Copilot's performance."
+      isCorrect: false
+      explanation: "Incorrect. LoRA isn't a software library. It's a fine-tuning method for AI models."
+    - content: "A new programming paradigm supported exclusively by Copilot."
+      isCorrect: false
+      explanation: "Incorrect. LoRA refers to a fine-tuning technique for AI models, not a programming paradigm."
+  - content: "How does Copilot use the context to provide code suggestions?"
+    choices:
+    - content: "It considers only the prompt text you provide." 
+      isCorrect: false
+      explanation: "Incorrect. Copilot considers not just the prompt but also the surrounding code and other context information to provide suggestions."
+    - content: "It considers the file type but not the content of the file."
+      isCorrect: false
+      explanation: "Incorrect. Copilot considers both file type and content, among other contextual elements."
+    - content: "It considers the surrounding code, file type, and content of parallel open tabs in the code editor."
+      isCorrect: true
+      explanation: "Correct. Copilot takes a holistic approach, considering various contextual elements to provide relevant code suggestions."
+    - content: "It randomly selects context from the internet."
+      isCorrect: false
+      explanation: "Incorrect. Copilot's suggestions are based on the specific context provided, not random selections from the internet."
+  - content: "Which of the following helps to improve prompt effectiveness in GitHub Copilot?"
+    choices:
+    - content: "Providing detailed contextual information with clarity." 
+      isCorrect: true
+      explanation: "Correct. Detailed and clear contextual information enhances the relevance and accuracy of Copilot's code suggestions."
+    - content: "Making the prompt as general as possible."
+      isCorrect: false
+      explanation: "Incorrect. General prompts can lead to less accurate and relevant code suggestions. Specificity is encouraged."
+    - content: "Keeping the prompt lengthy and detailed."
+      isCorrect: false
+      explanation: "Incorrect. While detail is important, prompts should also be concise to ensure clarity and effectiveness."
+    - content: "Avoiding examples in the prompt to not restrict Copilot's creativity."
+      isCorrect: false
+      explanation: "Incorrect. Providing examples can clarify requirements and expectations, leading to better code suggestions."
+
+
+
+
+

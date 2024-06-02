@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.apply-responsible-ai-principles.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is a part of the 'Apply responsible AI principles in learning environments' module.
+  ms.date: 03/25/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

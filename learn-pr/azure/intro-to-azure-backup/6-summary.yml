@@ -5,11 +5,10 @@ metadata:
   unitType: summary
   title: Summary of Introduction to Azure Backup
   description: Summary of Introduction to Azure Backup
-  ms.prod: learning-azure
-  ms.date: 4/30/2021
+  ms.date: 04/20/2023
   author: gerryaobrien
-  ms.author: gerryo
-  ms.topic: interactive-tutorial
+  ms.author: nitinme
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

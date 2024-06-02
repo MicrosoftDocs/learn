@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/09/2021
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Write advanced Transact-SQL queries
 prerequisites: |
   - Familiarity with working with tables of data
@@ -31,8 +30,6 @@ products:
 - azure-sql-virtual-machines
 - azure-sqlserver-vm
 - sql-server
-subjects:
-- development-tools
 modules:
 - learn.wwl.create-tables-views-temporary-objects
 - learn.wwl.combine-query-results-set-operators

@@ -4,12 +4,13 @@ title: Introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 11/16/2020
+  ms.date: 11/08/2023
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors: ropreddy-11172020
 durationInMinutes: 3
 content: |

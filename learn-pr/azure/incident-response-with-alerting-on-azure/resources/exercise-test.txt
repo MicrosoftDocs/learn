@@ -1,7 +1,7 @@
 export SUBS=$(az vm create \
   --resource-group alerting \
   --name CPUHog$RANDOM \
-  --image UbuntuLTS \
+  --image Ubuntu2204 \
   --custom-data cloud-init.txt \
   --generate-ssh-keys \
   --output tsv --query id)

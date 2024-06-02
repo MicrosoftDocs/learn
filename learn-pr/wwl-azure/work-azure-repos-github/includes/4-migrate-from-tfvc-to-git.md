@@ -25,7 +25,7 @@ If you are on TFVC and in Azure DevOps, you have the option of a simple single-b
 
 Import repository also allows you to import a git repository. It is beneficial to move your git repositories from GitHub or any other public or private hosting spaces into Azure Repos.
 
-:::image type="content" source="../media/image-8e79d252-e94e-4ef8-97ca-94d105a3b260-dae00d71.png" alt-text="Screenshot of the PartsUnlimited Import Repository menu selection.":::
+:::image type="content" source="../media/image-8e79d252-e94e-4ef8-97ca-94d105a3b260-dae00d71-6a59c9ac-c9918a69.png" alt-text="Screenshot of the PartsUnlimited Import Repository menu selection.":::
 
 
 There are some limitations here (that apply only when migrating source type TFVC): a single branch and only 180 days of history.

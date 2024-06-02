@@ -11,7 +11,7 @@ The payload for the *Gollum* event contains the following items:
 - **pages** that were updated. Each page includes the following information:
   - `page_name` Name of the page.
   - `title` Current page title.
-  - `action` Action that was performed on the page. Can be created or edited.
+  - `action` Action that was performed on the page - created or edited.
   - `html_url` HTML wiki page.
 - **repository** information about the repository containing the wiki page, including:
   - `name` Name of the repository.
@@ -52,7 +52,7 @@ This information is passed as the body of an HTTP POST request. We'll need to up
 
 ## Parse information from the Gollum event
 
-Recall that the webhook runs when a specific event occurs. The webhook then sends a request to the URL on which your Azure Functions code is set up to listen, using the **URL** for your function. The payload is passed to the Azure Function. Your function can parse the request body to extract the fields from the payload, and take the appropriate actions.
+Recall that the webhook runs when a specific event occurs. The webhook then sends a request to the URL where your Azure Functions code is set up to listen, using the **URL** for your function. The payload is passed to the Azure Function. Your function can parse the request body to extract the fields from the payload, and take the appropriate actions.
 
 The following example retrieves the repository name from the payload. The event type is available in the *x-github-event* request header. This data is output in the following function response.
 
@@ -64,4 +64,4 @@ if (req.body.repository.name){
 }
 ```
 
-In the next exercise, we'll update your function code to be able to handle an incoming **Gollum** event correctly.
+In the next exercise, we'll update your function code to be able to handle an incoming **Gollum** event.

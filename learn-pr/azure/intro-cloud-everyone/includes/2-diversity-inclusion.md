@@ -19,7 +19,7 @@ First, let's get curious and grounded in some of the facts:
 - The estimated buying power of all LGBTQI+ is $3.6 trillion.
 - 80% of buying decisions are made by women, with global female buying power at $40 trillion.
 
-Diversity alone, without inclusivity, doesn't bring opportunity. We need inclusivity and empathy to bring about the true change that can lead to more significant and equitable benefits for all.
+Diversity without inclusivity doesn't bring opportunity. We need inclusivity and empathy to bring about the true change that can lead to more significant and equitable benefits for all.
 
 Microsoft's commitment to D&I says that, "Only by actively engaging different perspectives can we challenge and stretch our thinking, enrich the experience of our employees, and empower every person and every organization on the planet to achieve more."
 
@@ -35,7 +35,7 @@ This means:
 
 ## What we need to do
 
-Good ideas, beliefs, and technologies aren't enough. Good intentions must be converted into tangible actions to enable the builders of the future to create great things for themselves and their communities. These actions need to be persistent and enduring to drive meaningful impact. We have to commit to a long-term journey.
+Good ideas, beliefs, and technologies aren't enough. We must convert food intentions into tangible actions to enable the builders of the future to create great things for themselves and their communities. These actions need to be persistent and enduring to drive meaningful impact. We have to commit to a long-term journey.
 
 Across Microsoft, we have teams who are bringing this mission to life by defining and weaving the principles of D&I into the unique areas of their business, whether it's applied in gaming, AI, or the cloud. Creating an inclusive culture is the cornerstone for all teams and how they accomplish great things. While this process starts with our focus on diversity in our hiring and inclusiveness in our work environment, it doesn't stop there. We need to incorporate areas like inclusive design, with a focus on creating great products for the largest number of people. Also, Inclusive Marketing strives to reflect human values, allowing each individual to see themselves in relation to the product, service, or experience.
 

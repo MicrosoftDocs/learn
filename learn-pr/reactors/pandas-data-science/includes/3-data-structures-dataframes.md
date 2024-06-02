@@ -49,39 +49,39 @@ As with `Series`, `DataFrames` also automatically order indices (in this case, t
 So far, you've combined dictionaries together to compose a `DataFrame` (which has given our `DataFrame` a row-centric feel), but you can also create `DataFrames` in a column-wise fashion. Consider adding a *Capital* column by using our reliable old array-analog, a list:
 
 ```python
-countries['Capital'] = ['Tirana', 'Paris', 'Berlin', 'Tokyo', 'Moscow']
+countries['Capital/Major City'] = ['Tirana', 'Paris', 'Berlin', 'Tokyo', 'Moscow']
 countries
 ```
 
 The output is:
 
 ```Output
-|          | Population   | Area      | Capital  |
---------------------------------------------------
-| Albania  | NaN          | 28748     | Tirana   |
-| France   | 65429495.0   | 643801    | Paris    |
-| Germany  | 82408706.0   | 357386    | Berlin   |
-| Japan    | 126922333.0  | 377972    | Tokyo    |
-| Russia   | 143910127.0  | 17125200  | Moscow   |
+|          | Population   | Area      | Capital/Major City  |
+-------------------------------------------------------------
+| Albania  | NaN          | 28748     | Tirana              |
+| France   | 65429495.0   | 643801    | Paris               |
+| Germany  | 82408706.0   | 357386    | Berlin              |
+| Japan    | 126922333.0  | 377972    | Tokyo               |
+| Russia   | 143910127.0  | 17125200  | Moscow              |
 ```
 
 As with `Series`, even though initial indices are ordered in `DataFrames`, subsequent additions to a `DataFrame` stay in the order added. However, you can explicitly change the order of `DataFrame` column indices this way:
 
 ```python
-countries = countries[['Capital', 'Area', 'Population']]
+countries = countries[['Capital/Major City', 'Area', 'Population']]
 countries
 ```
 
 The output is:
 
 ```Output
-|          | Capital   | Area      | Population   |
---------------------------------------------------
-| Albania  |  Tirana   | 28748     | NaN          | 
-| France   |  Paris    | 643801    | 65429495.0   | 
-| Germany  |  Berlin   | 357386    | 82408706.0   | 
-| Japan    |  Tokyo    | 377972    | 126922333.0  | 
-| Russia   |  Moscow   | 17125200  | 143910127.0  | 
+|          | Capital/Major City   | Area      | Population   |
+--------------------------------------------------------------
+| Albania  |  Tirana              | 28748     | NaN          | 
+| France   |  Paris               | 643801    | 65429495.0   | 
+| Germany  |  Berlin              | 357386    | 82408706.0   | 
+| Japan    |  Tokyo               | 377972    | 126922333.0  | 
+| Russia   |  Moscow              | 17125200  | 143910127.0  | 
 ```
 
 Commonly in a data-science context, you need to generate new columns of data from existing datasets. Because `DataFrame` columns behave like `Series`, you can do this by performing operations on them as you would with `Series`:
@@ -94,13 +94,13 @@ countries
 The output is:
 
 ```Output
-|          | Capital   | Area      | Population   | Population density |
-------------------------------------------------------------------------
-| Albania  |  Tirana   | 28748     | NaN          | NaN                |
-| France   |  Paris    | 643801    | 65429495.0   | 101.629999         |
-| Germany  |  Berlin   | 357386    | 82408706.0   | 230.587393         |
-| Japan    |  Tokyo    | 377972    | 126922333.0  | 335.798242         |
-| Russia   |  Moscow   | 17125200  | 143910127.0  | 8.403413           |
+|          | Capital/Major City   | Area      | Population   | Population density |
+-----------------------------------------------------------------------------------
+| Albania  |  Tirana              | 28748     | NaN          | NaN                |
+| France   |  Paris               | 643801    | 65429495.0   | 101.629999         |
+| Germany  |  Berlin              | 357386    | 82408706.0   | 230.587393         |
+| Japan    |  Tokyo               | 377972    | 126922333.0  | 335.798242         |
+| Russia   |  Moscow              | 17125200  | 143910127.0  | 8.403413           |
 ```
 
 > [!Note]
@@ -136,10 +136,10 @@ countries.loc['Japan']
 The output is:
 
 ```Output
-Capital                     Tokyo
-Area                       377972
-Population            1.26922e+08
-Population Density        335.798
+Capital/Major City                     Tokyo
+Area                                  377972
+Population                       1.26922e+08
+Population Density                   335.798
 Name: Japan, dtype: object
 ```
 
@@ -172,13 +172,13 @@ countries
 The output is:
 
 ```Output
-|          | Capital   | Area      | Population   | Population density | Debt-to-GDP ratio |
---------------------------------------------------------------------------------------------
-| Albania  |  Tirana   | 28748     | NaN          | NaN                | NaN               |
-| France   |  Paris    | 643801    | 65429495.0   | 101.629999         | NaN               |
-| Germany  |  Berlin   | 357386    | 82408706.0   | 230.587393         | NaN               |
-| Japan    |  Tokyo    | 377972    | 126922333.0  | 335.798242         | NaN               |
-| Russia   |  Moscow   | 17125200  | 143910127.0  | 8.403413           | NaN               |
+|          | Capital/Major City   | Area      | Population   | Population density | Debt-to-GDP ratio |
+-------------------------------------------------------------------------------------------------------
+| Albania  |  Tirana              | 28748     | NaN          | NaN                | NaN               |
+| France   |  Paris               | 643801    | 65429495.0   | 101.629999         | NaN               |
+| Germany  |  Berlin              | 357386    | 82408706.0   | 230.587393         | NaN               |
+| Japan    |  Tokyo               | 377972    | 126922333.0  | 335.798242         | NaN               |
+| Russia   |  Moscow              | 17125200  | 143910127.0  | 8.403413           | NaN               |
 ```
 
 Again, you can disregard any warning you see about adding the column this way.
@@ -194,13 +194,13 @@ countries
 The output is:
 
 ```Output
-|          | Capital   | Area      | Population   | Population density | Debt-to-GDP ratio |
---------------------------------------------------------------------------------------------
-| Albania  |  Tirana   | 28748     | NaN          | NaN                | NaN               |
-| France   |  Paris    | 643801    | 65429495.0   | 101.629999         | NaN               |
-| Germany  |  Berlin   | 357386    | 82408706.0   | 230.587393         | NaN               |
-| Japan    |  Tokyo    | 377972    | 126922333.0  | 335.798242         | 2.36              |
-| Russia   |  Moscow   | 17125200  | 143910127.0  | 8.403413           | 0.19              |
+|          | Capital/Major City   | Area      | Population   | Population density | Debt-to-GDP ratio |
+-------------------------------------------------------------------------------------------------------
+| Albania  |  Tirana              | 28748     | NaN          | NaN                | NaN               |
+| France   |  Paris               | 643801    | 65429495.0   | 101.629999         | NaN               |
+| Germany  |  Berlin              | 357386    | 82408706.0   | 230.587393         | NaN               |
+| Japan    |  Tokyo               | 377972    | 126922333.0  | 335.798242         | 2.36              |
+| Russia   |  Moscow              | 17125200  | 143910127.0  | 8.403413           | 0.19              |
 ```
 
 You can use the `del` command to delete a column from a `DataFrame`:

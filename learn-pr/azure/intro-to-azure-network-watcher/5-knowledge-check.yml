@@ -4,12 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 02/09/2022
-  author: Orin-Thomas
-  ms.author: orthomas
-  ms.custom: team=cloud_advocates
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/31/2024
+  author: halkazwini
+  ms.author: halkazwini
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -21,32 +19,32 @@ quiz:
         - content: Topology
           isCorrect: true
           explanation: Correct. Topology allows you to view which resources are connected to a specific virtual network.
-        - content: Connection Monitor
+        - content: Connection monitor
           isCorrect: false
-          explanation: Incorrect. Connection Monitor can catch changes that will affect connectivity, such as changes to the network configuration or changes to NSG rules.
-        - content: Network Performance Monitor
+          explanation: Incorrect. Connection monitor can catch changes that affect connectivity, such as changes to the network configuration or changes to NSG rules.
+        - content: VPN troubleshoot
           isCorrect: false
-          explanation: Incorrect. Network Performance Monitor allows you to track and alert based on traffic latency and packet drops.          
-    - content: Which of the following Network Watcher tools would you use to detect whether changes in NSG rules affect connectivity between IaaS VMs on a virtual network in Adatum's Azure subscription?
+          explanation: Incorrect. VPN troubleshoot allows you to troubleshoot virtual network gateways and their connections.          
+    - content: Which of the following Network Watcher tools allows you to detect whether changes in NSG rules affect connectivity between IaaS VMs on a virtual network in Adatum's Azure subscription?
       choices: 
         - content: Topology
           isCorrect: false
           explanation: Incorrect. Topology allows you to view which resources are connected to a specific virtual network.          
-        - content: Connection Monitor
+        - content: Connection monitor
           isCorrect: true
-          explanation: Correct. Connection Monitor can catch changes that will affect connectivity, such as changes to the network configuration or changes to NSG rules.          
-        - content: Network Performance Monitor
+          explanation: Correct. Connection monitor can catch changes that affect connectivity, such as changes to the network configuration or changes to NSG rules.          
+        - content: VPN troubleshoot
           isCorrect: false
-          explanation: Incorrect. Network Performance Monitor allows you to track and alert based on traffic latency and packet drops.          
-    - content: You're responsible for diagnosing performance issues in a multi-tier application. This application is in a hybrid configuration and is hosted across computers and VMs that run both in on-premises and cloud locations. The front-end component runs on a computer on-premises and a back-end component runs on an IaaS VM in Azure. Your on-premises location is connected to the Azure virtual network that hosts the back-end IaaS VM through an Azure site-to-site VPN. Performance degrades when network traffic across the Azure site-to-site VPN is congested. Which of the following Network Watcher tools would you use to raise an alert when packet loss between the two hosts exceeds a specific threshold?
+          explanation: Incorrect. VPN troubleshoot allows you to troubleshoot virtual network gateways and their connections.          
+    - content:  Which of the following Network Watcher tools allows you to detect if your on-premises devices can't communicate with your Azure virtual machine over the new VPN connection that you created?
       choices:
         - content: Topology
           isCorrect: false
           explanation: Incorrect. Topology allows you to view which resources are connected to a specific virtual network.      
         - content: Connection Monitor
           isCorrect: false
-          explanation: Incorrect. Although Connection Monitor can inform you if a connection is disrupted by checking periodically, it doesn't raise alerts when latency or packet drops exceed a specific threshold.      
-        - content: Network Performance Monitor
+          explanation: Incorrect. Connection monitor shows you that there's no traffic between the on-premises devices and the Azure VM, but it doesn't tell you why.
+        - content: VPN troubleshoot
           isCorrect: true
-          explanation: Correct. Network Performance Monitor allows you to track and alert based on traffic latency and packet drops.
+          explanation: Correct. VPN troubleshoot allows you to troubleshoot virtual network gateways and their connections.
           

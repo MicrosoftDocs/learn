@@ -3,12 +3,11 @@ uid: learn.azure.cna-orchestrate-containers.3-exercise-create-aks-instance
 title: Exercise - Create an AKS cluster
 metadata:
   title: Exercise - Create an AKS cluster
-  description: A high-level explanation of the parts of cloud-native apps
-  ms.date: 10/23/2020
-  author: tomreidnz
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: A high-level explanation of the parts of cloud-native apps.
+  ms.date: 12/28/2023
+  author: rayoef
+  ms.author: rayoflores
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-aks-instance.md)]

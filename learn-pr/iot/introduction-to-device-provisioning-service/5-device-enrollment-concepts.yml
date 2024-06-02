@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-device-provisioning-service.enrollment-concepts
+title: Examine device enrollment concepts
+metadata:
+  title: Examine device enrollment concepts
+  description: "Examine device enrollment concepts"
+  ms.date: 12/15/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-device-enrollment-concepts.md)]

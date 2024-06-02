@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.monitor-protection-of-workloads-in-azure-backup.create-alerts-using-log-analytics
+title: Create alerts by using Log Analytics tools
+metadata:
+  title: Create alerts by using Log Analytics tools
+  description: Learn how to create alerts by using Log Analytics for Azure Backup.
+  ms.date: 12/01/2023
+  author: AbhishekMallick-MS
+  ms.author: v-abhmallick
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-create-alerts-using-log-analytics.md)]

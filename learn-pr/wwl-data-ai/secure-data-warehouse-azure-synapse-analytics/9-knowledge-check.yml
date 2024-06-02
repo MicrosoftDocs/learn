@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/21/2023
+  ms.date: 07/04/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -25,14 +24,14 @@ quiz:
     - content: "A managed virtual network hasn't  been created."
       isCorrect: true
       explanation: "Correct. In order to create a private endpoint, you first must create a managed virtual network."
-  - content: "You require an Azure Synapse Analytics Workspace to access an Azure Data Lake Store using the benefits of the security provided by Azure Active Directory. What is the best authentication method to use?"
+  - content: "You require an Azure Synapse Analytics Workspace to access an Azure Data Lake Store using the benefits of the security provided by Microsoft Entra ID. What is the best authentication method to use?"
     choices:
     - content: "Storage account keys."
       isCorrect: false
-      explanation: "Incorrect. Keys aren't able to take advantage of Azure Active Directory."
+      explanation: "Incorrect. Keys aren't able to take advantage of Microsoft Entra ID."
     - content: "Shared access signatures."
       isCorrect: false
-      explanation: "Incorrect. Shared access signatures aren't able to take advantage of Azure Active Directory."
+      explanation: "Incorrect. Shared access signatures aren't able to take advantage of Microsoft Entra ID."
     - content: "Managed identities."
       isCorrect: true
-      explanation: "Correct. Managed identities provide Azure services with an automatically managed identity in Azure Active Directory. You can use the Managed Identity capability to authenticate to any service that support Azure Active Directory authentication."
+      explanation: "Correct. Managed identities provide Azure services with an automatically managed identity in Microsoft Entra ID. You can use the Managed Identity capability to authenticate to any service that support Microsoft Entra authentication."

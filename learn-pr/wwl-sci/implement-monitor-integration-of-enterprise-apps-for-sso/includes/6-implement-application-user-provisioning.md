@@ -1,4 +1,4 @@
-In Azure AD, the term app provisioning refers to automatically creating user identities and roles in the cloud ([SaaS](https://azure.microsoft.com/overview/what-is-saas/)) applications that users need access to. In addition to creating user identities, automatic provisioning includes the maintenance and removal of user identities as status or roles change. A common scenario is provisioning an Azure AD user into applications like [Dropbox](/azure/active-directory/saas-apps/dropboxforbusiness-provisioning-tutorial), [Salesforce](/azure/active-directory/saas-apps/salesforce-provisioning-tutorial), [ServiceNow](/azure/active-directory/saas-apps/servicenow-provisioning-tutorial), and more.
+In Microsoft Entra ID, the term app provisioning refers to automatically creating user identities and roles in the cloud ([SaaS](https://azure.microsoft.com/overview/what-is-saas/)) applications that users need access to. In addition to creating user identities, automatic provisioning includes the maintenance and removal of user identities as status or roles change. A common scenario is provisioning a Microsoft Entra user into applications like [Dropbox](/azure/active-directory/saas-apps/dropboxforbusiness-provisioning-tutorial), [Salesforce](/azure/active-directory/saas-apps/salesforce-provisioning-tutorial), [ServiceNow](/azure/active-directory/saas-apps/servicenow-provisioning-tutorial), and more.
 
 :::image type="content" source="../media/provision-overview-676ba683.png" alt-text="Diagram of the process flow for Provisioning. You can automate and govern the provisioning process.":::
 
@@ -16,12 +16,12 @@ This feature lets you to the following actions.
 
 ## Manual vs. automatic provisioning
 
-Applications in the Azure AD gallery support either manual or automatic provisioning.
+Applications in the Microsoft Entra ID gallery support either manual or automatic provisioning.
 
- -  Manual provisioning means there's no automatic Azure AD provisioning connector for the app yet. User accounts must be created manually. Examples of this include adding users directly into the administrative portal of the app or uploading a spreadsheet with user account details. Consult the documentation provided by the app or contact the app developer to determine what mechanisms are available.
- -  Automatic means that an Azure AD provisioning connector has been developed for this application. Follow the setup tutorial for setting up provisioning for the application.
+ -  Manual provisioning means there's no automatic Microsoft Entra provisioning connector for the app yet. User accounts must be created manually. Examples of this include adding users directly into the administrative portal of the app or uploading a spreadsheet with user account details. Consult the documentation provided by the app or contact the app developer to determine what mechanisms are available.
+ -  Automatic means that a Microsoft Entra provisioning connector has been developed for this application. Follow the setup tutorial for setting up provisioning for the application.
 
-In the Azure AD gallery, applications that support automatic provisioning are designated by a **Provisioning** icon.
+In the Microsoft Entra ID gallery, applications that support automatic provisioning are designated by a **Provisioning** icon.
 
 :::image type="content" source="../media/browse-gallery-1eb29b09.png" alt-text="Screenshot of the Provisioning icon in the application gallery.  Select to start the provisioning process.":::
 
@@ -34,13 +34,13 @@ To help automate provisioning and deprovisioning, apps expose proprietary user a
 
 To address these challenges, the System for Cross-domain Identity Management (SCIM) specification provides a common user schema to help users move into, out of, and around apps. SCIM is becoming the standard for provisioning and, when used in conjunction with federation standards like SAML or OpenID Connect, provides administrators an end-to-end, standards-based solution for access management.
 
-## Build a System for Cross-domain Identity Management endpoint and configure user provisioning with Azure AD
+## Build a System for Cross-domain Identity Management endpoint and configure user provisioning with Microsoft Entra ID
 
-As an application developer, you can use the System for Cross-Domain Identity Management (SCIM) user management API to enable automatic provisioning of users and groups between your application and Azure AD. The SCIM specification provides a common user schema for provisioning. When used in conjunction with federation standards like SAML or OpenID Connect, SCIM gives administrators an end-to-end, standards-based solution for access management.
+As an application developer, you can use the System for Cross-Domain Identity Management (SCIM) user management API to enable automatic provisioning of users and groups between your application and Microsoft Entra ID. The SCIM specification provides a common user schema for provisioning. When used in conjunction with federation standards like SAML or OpenID Connect, SCIM gives administrators an end-to-end, standards-based solution for access management.
 
 SCIM is a standardized definition of two endpoints: a /Users endpoint and a /Groups endpoint. It uses common Representational state transfer (REST) verbs to create, update, and delete objects, and a pre-defined schema for common attributes like group name, username, first name, last name, and email. Apps that offer a SCIM 2.0 REST API can reduce or eliminate the pain of working with a proprietary user management API. For example, any compliant SCIM client knows how to make an HTTP POST of a JSON object to the /Users endpoint to create a new user entry. Instead of needing a slightly different API for the same basic actions, apps that conform to the SCIM standard can instantly take advantage of pre-existing clients, tools, and code.
 
-:::image type="content" source="../media/system-for-cross-domain-identity-management-provision-overview-9d92fdf9.png" alt-text="Screen shot of the Provisioning dialogs from Azure A D to an app with S C I M capabilities.":::
+:::image type="content" source="../media/system-for-cross-domain-identity-management-provision-overview-9d92fdf9.png" alt-text="Diagram of Microsoft Entra ID with user provisioning sharing data with external apps.":::
 
 
 The standard user object schema and REST APIs for management defined in SCIM 2.0 allow identity providers and apps to integrate with each other more easily. Application developers that build a SCIM endpoint can integrate with any SCIM-compliant client without having to do custom work, rather than starting from scratch and building the implementation completely on your own, you can rely on a number of open source SCIM libraries published by the SCIM community.

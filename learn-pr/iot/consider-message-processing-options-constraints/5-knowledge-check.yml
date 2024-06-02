@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.consider-message-processing-options-constraints.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/22/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Within an Azure IoT Hub solution, what is message enrichment?"
+    choices:
+    - content: "An IoT hub feature that enables users to direct device messages to a service endpoint."
+      isCorrect: false
+      explanation: "Incorrect. Message routing is the IoT hub feature that directs device messages to a service endpoint."
+    - content: "A real-time analytics and complex event-processing engine that accepts data from multiple sources simultaneously."
+      isCorrect: false
+      explanation: "Incorrect. Azure Stream Analytics is the real-time analytics and complex event-processing engine that accepts data from multiple sources simultaneously."
+    - content: "The ability of IoT hub to stamp messages with additional information before the message is sent a designated endpoint."
+      isCorrect: true
+      explanation: "Correct. Message enrichment is a feature of IoT hub that is used to stamp messages with additional information before the message is sent a designated endpoint."
+  - content: "What message size is used to calculate IoT hub's daily message quota for the Basic and Standard tiers?"
+    choices:
+    - content: "0.5 KB"
+      isCorrect: false
+      explanation: "Incorrect. A message size of 0.5 KB is to calculate the daily quota for the free tier of IoT hub, but not Basic and Standard tiers."
+    - content: "4 KB"
+      isCorrect: true
+      explanation: "Correct. IoT hub uses message size of 4 KB to calculate the daily quota for Basic and Standard tiers, and a size of 0.5 KB for a free tier. The tier and number of units determine the maximum daily quota of messages that you can send."
+    - content: "256 KB"
+      isCorrect: false
+      explanation: "Incorrect. 256 KB is the maximum size for a device-to-cloud message, but not the size used to calculate daily message quota."

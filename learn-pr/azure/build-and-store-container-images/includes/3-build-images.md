@@ -1,28 +1,18 @@
-Suppose your company makes use of container images to manage compute workloads. You use the local Docker tooling to build your container images.
+## Create a container image using Azure Container Registry Tasks
 
-You can now use Azure Container Registry Tasks to build these container images. Container Registry Tasks also allows for DevOps process integration with automated build on source code commit.
+You use a Dockerfile to provide build instructions. Azure Container Registry Tasks enables you to reuse any Dockerfile currently in your environment, including multi-staged builds. For this example, you create a new Dockerfile that builds a Node.js application.
 
-Let's automate the creation of a container image using Azure Container Registry Tasks.
+1. Open the Cloud Shell editor and create a new file named *Dockerfile* using the `code` command.
 
-## Create a container image with Azure Container Registry Tasks
-
-A standard Dockerfile provides build instructions. Azure Container Registry Tasks enables you to reuse any Dockerfile currently in your environment, including multi-staged builds.
-
-We'll use a new Dockerfile for our example.
-
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
-
-The first step is to create a new file named `Dockerfile`. You can use any text editor to edit the file. We'll use Cloud Shell editor for this example.
-
-1. Run the following command in Cloud Shell to open the editor.
-
-    ```bash
-    code
+    ```azurecli-interactive
+    code Dockerfile
     ```
 
-1. Copy the following contents into the editor.
+2. Paste the following Dockerfile contents into the file.
 
-    ```bash
+    This Dockerfile uses the `node:9-alpine` image as its base image. It then adds the Node.js application files to the image and installs the application dependencies. Finally, it configures the container to serve the application on port 80 via the *EXPOSE* instruction.
+
+    ```azurecli-interactive
     FROM    node:9-alpine
     ADD     https://raw.githubusercontent.com/Azure-Samples/acr-build-helloworld-node/master/package.json /
     ADD     https://raw.githubusercontent.com/Azure-Samples/acr-build-helloworld-node/master/server.js /
@@ -31,33 +21,26 @@ The first step is to create a new file named `Dockerfile`. You can use any text 
     CMD     ["node", "server.js"]
     ```
 
-1. Press <kbd>Ctrl+S</kbd> (<kbd>Cmd+S</kbd> for Mac) to save your changes. Name the file `Dockerfile` when prompted.
+3. Save the file and close the editor.
+4. Build the container image from the Dockerfile using the `az acr build` command.
 
-    This configuration adds a Node.js application to the `node:9-alpine` image. After that, it configures the container to serve the application on port 80 via the *EXPOSE* instruction.
+    > [!NOTE]
+    > Make sure you add the period (`.`) to the end of the command. It represents the source directory containing the Dockerfile. Because we didn't specify the name of the file using the `--file` parameter, the command looks for a file called **Dockerfile** in our current directory.
 
-1. Run the following Azure CLI command to build the container image from the Dockerfile. *$ACR_NAME* is the variable you defined in the preceding unit to hold your container registry name.
-
-    ```azurecli
+    ```azurecli-interactive
     az acr build --registry $ACR_NAME --image helloacrtasks:v1 .
     ```
 
-    > [!NOTE]
-    > Don't forget the period `.` at the end of the preceding command. It represents the source directory containing the docker file, which in our case is the current directory. Because we didn't specify the name of a file with the `--file` parameter, the command looks for a file called **Dockerfile** in our current directory.
+5. Verify that the image has been created and stored in the registry using the `az acr repository list` command.
 
-## Verify the image
-
-1. Run the following command in Cloud Shell to verify that the image has been created and stored in the registry.
-
-    ```azurecli
+    ```azurecli-interactive
     az acr repository list --name $ACR_NAME --output table
     ```
 
-1. The output from this command should look similar to the following example.
+    Your output should look similar to the following example output:
 
     ```output
     Result
     -------------
     helloacrtasks
     ```
-
-The `helloacrtasks` image is now ready to be used.

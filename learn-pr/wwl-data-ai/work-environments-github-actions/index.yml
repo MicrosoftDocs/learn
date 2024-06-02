@@ -2,12 +2,12 @@
 uid: learn.wwl.work-environments-github-actions
 metadata:
   title: Work with environments in GitHub Actions
-  description: "machine learning operations, MLOps, environments"
+  description: machine learning operations, MLOps, environments
   ms.date: 09/26/2022
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Work with environments in GitHub Actions
 summary: Learn how to train, test, and deploy a machine learning model by using environments as part of your machine learning operations (MLOps) strategy.
 abstract: |

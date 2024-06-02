@@ -1,11 +1,11 @@
-In this module, you learned how to create a Java web application, how to use the `Maven Plugin for Azure Web Apps`, and how to deploy your application to Azure App Service.
+In this module, you learned how to create a Java web application, how to use the Maven Plugin for Azure Web Apps, and how to deploy your application to Azure App Service.
 
 ## Clean up resources
 
 In this module, you created resources using your Azure subscription. You need to clean up these resources so that you won't continue to be charged for them. Run the following command to delete all the resources.
 
 ```azurecli
-az group delete --name <name of your resource>
+az group delete --name <name of your resource group>
 ```
 
 ## Other resources
@@ -14,7 +14,6 @@ az group delete --name <name of your resource>
 
 * [Azure App Service](/azure/app-service/)
 * [Monitor Azure App Service performance](/azure/azure-monitor/app/azure-web-apps?tabs=java)
-* [Quickstart: Get started with Application Insights in a Java web project](/azure/azure-monitor/app/java-get-started?tabs=maven)
 * [Get started with Autoscale in Azure](/azure/azure-monitor/platform/autoscale-get-started)
 * [Deploy to App Service using GitHub Actions](/azure/app-service/deploy-github-actions?tabs=userlevel)
 * [Integrate your app with an Azure virtual network](/azure/app-service/web-sites-integrate-with-vnet)

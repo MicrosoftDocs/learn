@@ -6,15 +6,14 @@ metadata:
   ms.date: 04/05/2023
   author: wwlpublish
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'SC-100: Design security operations, identity, and compliance capabilities'
 prerequisites: |
   -   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
   -   Experience with hybrid and cloud implementations.
 summary: |
   You learn how to design solutions for security operations (SecOps), identity & access management, privileged access, and regulatory compliance.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/sc-100-design-operations-identity-compliance-capabilities.svg
 levels:
 - advanced
 roles:

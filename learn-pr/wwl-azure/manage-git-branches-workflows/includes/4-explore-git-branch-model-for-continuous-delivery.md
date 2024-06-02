@@ -21,6 +21,11 @@ Let's cover the principles of what we suggest:
      -  Use feature flags to manage long-running feature branches.
      -  Changes from feature branches to the main only flow through pull requests.
      -  Name your feature to reflect its purpose.
+ -  The release branch:
+     -  Create a dedicated release branch from a stable feature branch to prepare for deployment.
+     -  Ensure the release branch undergoes thorough testing and stabilization efforts.
+     -  Apply bug fixes and necessary changes to the release branch before deployment.
+     -  Tag releases in the release branch to mark significant milestones.
     
     List of branches:
     
@@ -50,9 +55,9 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
 ## How to do it
 
 > [!IMPORTANT]
-> You need to have the project created in the first Learning Path: [Describe working with Git locally](/training/modules/describe-types-of-source-control-systems/7-describe-working-git-locally).
+> You need to have the project created in the first Learning Path: [Describe working with Git locally](/learn/modules/describe-types-of-source-control-systems/7-describe-working-git-locally).
 
-1. After you've cloned the main branch into a local repository, create a new feature branch, myFeature-1:
+1.  After you've cloned the main branch into a local repository, create a new feature branch, myFeature-1:
     
     ***myWebApp***
     
@@ -63,7 +68,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     **Output:**
     
     *Switched to a new branch 'feature/myFeature-1'.*
-1. Run the Git branch command to see all the branches. The branch showing up with an asterisk is the "currently-checked-out" branch:
+2.  Run the Git branch command to see all the branches. The branch showing up with an asterisk is the "currently-checked-out" branch:
     
     ***myWebApp***
     
@@ -76,14 +81,14 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     *feature/myFeature-1*
     
     *main*
-1. Make a change to the Program.cs file in the feature/myFeature-1 branch:
+3.  Make a change to the Program.cs file in the feature/myFeature-1 branch:
     
     ***myWebApp***
     
     ```CMD
     notepad Program.cs
     ```
-1. Stage your changes and commit locally, then publish your branch to remote:
+4.  Stage your changes and commit locally, then publish your branch to remote:
     
     ***myWebApp***
     
@@ -114,18 +119,18 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     **Output:**
     
-    *Delta compression using up to 8 threads. Compressing objects: 100% (3/3), done. Writing objects: 100% (3/3), 348 bytes \| 348.00 KiB/s, done. Total 3 (delta 2), reused 0 (delta 0) remote: Analyzing objects... (3/3) (10 ms) remote: Storing packfile... done (44 ms) remote: Storing index... done (62 ms) To https://dev.azure.com/Geeks/PartsUnlimited/\_git/MyWebApp \* \[new branch\] feature/myFeature-1 -&gt; feature/myFeature-1 Branch feature/myFeature-1 set up to track remote branch feature/myFeature-1 from origin.*
+    *Delta compression using up to 8 threads. Compressing objects: 100% (3/3), done. Writing objects: 100% (3/3), 348 bytes \| 348.00 KiB/s, done. Total 3 (delta 2), reused 0 (delta 0) remote: Analyzing objects... (3/3) (10 ms) remote: Storing packfile... done (44 ms) remote: Storing index... done (62 ms) To https://dev.azure.com/organization/teamproject/\_git/MyWebApp \* \[new branch\] feature/myFeature-1 -&gt; feature/myFeature-1 Branch feature/myFeature-1 set up to track remote branch feature/myFeature-1 from origin.*
     
     The remote shows the history of the changes:
     
     :::image type="content" source="../media/remote-history-changes-133245b4.png" alt-text="Screenshot of remote history of the changes.":::
     
-1. Configure Azure DevOps CLI for your organization and project. Replace **organization** and **project name**:
+5.  Configure Azure DevOps CLI for your organization and project. Replace **organization** and **project name**:
     
     ```CMD
     az devops configure --defaults organization=https://dev.azure.com/organization project="project name"
     ```
-1. Create a new pull request (using the Azure DevOps CLI) to review the changes in the feature-1 branch:
+6.  Create a new pull request (using the Azure DevOps CLI) to review the changes in the feature-1 branch:
     
     ```CMD
     az repos pr create --title "Review Feature-1 before merging to main" --work-items 38 39 `
@@ -148,17 +153,17 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     :::image type="content" source="../media/create-tag-example-9a81a5d0.png" alt-text="Screenshot of the creation of a tag example.":::
     
-1. Start work on Feature 2. Create a branch on remote from the main branch and do the checkout locally:
+7.  Start work on Feature 2. Create a branch on remote from the main branch and do the checkout locally:
     
     ***myWebApp***
     
     ```CMD
-    git push origin origin:refs/heads/feature/myFeature-2
+    git push origin main:refs/heads/feature/myFeature-2
     ```
     
     **Output:**
     
-    *Total 0 (delta 0), reused 0 (delta 0) To https://dev.azure.com/Geeks/PartsUnlimited/\_git/MyWebApp \* \[new branch\] origin/HEAD -&gt; refs/heads/feature/myFeature-2.*
+    *Total 0 (delta 0), reused 0 (delta 0) To https://dev.azure.com/**organization**/**teamproject**/\_git/MyWebApp \* \[new branch\] origin/HEAD -&gt; refs/heads/feature/myFeature-2.*
     
     ***myWebApp***
     
@@ -169,7 +174,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     **Output:**
     
     *Switched to a new branch 'feature/myFeature-2' Branch feature/myFeature-2 set up to track remote branch feature/myFeature-2 from origin.*
-1. Modify Program.cs by changing the same comment line in the code changed in feature-1.
+8.  Modify Program.cs by changing the same comment line in the code changed in feature-1.
     
     ```
     public class Program
@@ -185,7 +190,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
                 .UseStartup<Startup>()
                 .Build();
     ```
-1. Commit the changes locally, push them to the remote repository, and then raise a pull request to merge the changes from feature/myFeature-2 to the main branch:
+9.  Commit the changes locally, push them to the remote repository, and then raise a pull request to merge the changes from feature/myFeature-2 to the main branch:
     
     ```CMD
     az repos pr create --title "Review Feature-2 before merging to main" --work-items 40 42 `
@@ -205,7 +210,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     **Output:**
     
     *Switched to a new branch, 'fof/bug-1'.*
-1. Modify Program.cs by changing the same line of code that was changed in the feature-1 release:
+10. Modify Program.cs by changing the same line of code that was changed in the feature-1 release:
     
     ```
     public class Program
@@ -221,7 +226,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
                 .UseStartup<Startup>()
                 .Build();
     ```
-1. Stage and commit the changes locally, then push changes to the remote repository:
+11. Stage and commit the changes locally, then push changes to the remote repository:
     
     ***myWebApp***
     
@@ -233,8 +238,8 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     **Output:**
     
-    *To https://dev.azure.com/Geeks/PartsUnlimited/\_git/MyWebApp \* \[new branch\] fof/bug-1 - fof/bug-1 Branch fof/bug-1 set up to track remote branch fof/bug-1 from origin.*
-1. Immediately after the changes have been rolled out to production, tag the fof\\bug-1 branch with the release\_bug-1 tag, then raise a pull request to merge the changes from fof/bug-1 back into the main:
+    *To https://dev.azure.com/**organization**/**teamproject**/\_git/MyWebApp \* \[new branch\] fof/bug-1 - fof/bug-1 Branch fof/bug-1 set up to track remote branch fof/bug-1 from origin.*
+12. Immediately after the changes have been rolled out to production, tag the fof\\bug-1 branch with the release\_bug-1 tag, then raise a pull request to merge the changes from fof/bug-1 back into the main:
     
     ```CMD
     az repos pr create --title "Review Bug-1 before merging to main" --work-items 100 `
@@ -256,12 +261,28 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     :::image type="content" source="../media/merge-conflicts-pull-request-84cba5e1.png" alt-text="Screenshot of merge conflicts from pull request.":::
     
-1. The Git Pull Request Merge Conflict resolution extension makes it possible to resolve merge conflicts right in the browser. Navigate to the conflicts tab and click on Program.cs to resolve the merge conflicts:
+13. The Git Pull Request Merge Conflict resolution extension makes it possible to resolve merge conflicts right in the browser. Navigate to the conflicts tab and click on Program.cs to resolve the merge conflicts:
     
     :::image type="content" source="../media/git-pr-merge-conflict-resolution-extension-0e6d8b72.png" alt-text="Screenshot of the Git pull request merge conflict resolution extension.":::
     
     
     The user interface allows you to take the source, target, add custom changes, review, and submit the merge. With the changes merged, the pull request is completed.
+
+At this point, you can create a release branch based on the critical bug fix implemented in the **fof/bug-1** branch and merged into master. Using the git checkout command, create a dedicated release branch from the master branch.
+
+```CMD
+git checkout -b release/v1.1 main
+```
+
+This command creates a new branch named release/v1.1 based on the master branch.
+
+As significant milestones are reached during the release process, tag releases in the release branch using Git tags. Tags serve as markers to denote specific versions of the software.
+
+```CMD
+git tag -a v1.1 -m "Release version 1.1"
+```
+
+This command creates a tag named v1.1 to mark the release version 1.1 in the release branch.<br>
 
 ## How it works
 

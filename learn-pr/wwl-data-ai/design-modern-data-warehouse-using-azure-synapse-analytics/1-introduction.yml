@@ -7,8 +7,11 @@ metadata:
   ms.date: 08/15/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

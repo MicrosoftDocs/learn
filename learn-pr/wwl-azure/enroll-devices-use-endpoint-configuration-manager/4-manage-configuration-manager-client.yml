@@ -4,11 +4,12 @@ title: Manage the Microsoft Configuration Manager client
 metadata:
   title: Manage the Microsoft Configuration Manager client
   description: "Manage the Microsoft Configuration Manager client"
-  ms.date: 03/10/2023
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: configuration-manager
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/4-manage-configuration-manager-client.md)]

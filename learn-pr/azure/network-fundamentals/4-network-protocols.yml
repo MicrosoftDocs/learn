@@ -4,11 +4,10 @@ title: Network protocols to use when you implement a network
 metadata:
   title:  Network protocols to use when you implement a network
   description: Explore the network protocols to use when you implement services on a network.
-  ms.date: 01/09/2020
+  ms.date: 05/11/2023
   author: cryophobia
   ms.author: chrvaw
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 13
 content: |
   [!include[](includes/4-network-protocols.md)]

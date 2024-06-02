@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.protect-your-databases-with-defender-databases
+title: Configure Microsoft Defender for Azure SQL Database
+metadata:
+  title: Configure Microsoft Defender for Azure SQL Database
+  description: "Configure Microsoft Defender for Azure SQL Database"
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-protect-your-databases-with-defender-databases.md)]

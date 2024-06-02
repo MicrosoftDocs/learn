@@ -4,11 +4,10 @@ title: "The post-incident review process"
 metadata:
   title: "The post-incident review process"
   description: "The post-incident review process"
-  ms.date: 05/07/2020
+  ms.date: 04/19/2024
   author: dnblankedelman
   ms.author: dnb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 durationInMinutes: 7
@@ -20,18 +19,18 @@ quiz:
 
   - content: 'What is the first step to begin a post-review process?'
     choices:
-    - content: 'write down everything you can remember about the incident'
+    - content: 'Write down everything you can remember about the incident.'
       isCorrect: false
       explanation: 'We need to gather the data, especially the conversation, first.'
-    - content: 'gather the data, including the conversation and context'
+    - content: 'Gather the data, including the conversation and context.'
       isCorrect: true
       explanation: 'Correct.'
-    - content: 'schedule a meeting room for the discussion'
+    - content: 'Schedule a meeting room for the discussion.'
       isCorrect: false
       explanation: 'Though meeting space may be at a premium, gather the data first.'
-    - content: 'meet with the engineering manager associated with the service that had a problem'
+    - content: 'Meet with the engineering manager associated with the service that had a problem.'
       isCorrect: false
-      explanation: 'You will need to gather the data first, all stakeholders can be a part of that process.'
+      explanation: 'You need to gather the data first, and all stakeholders can be a part of that process.'
 
   - content: 'Which tool can help us retrieve a Teams conversation for the post-incident review?'
     choices:

@@ -4,11 +4,12 @@ metadata:
   title: Introduction to the Azure CLI
   description: Overview of using the Azure CLI to manage and provision Azure resources
   ms.published: 02/27/2023
-  ms.date: 02/27/2023
+  ms.date: 04/03/2024
   author: dbradish-microsoft
   ms.author: dbradish
-  ms.topic: module-choose-best-product
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 title: Introduction to the Azure CLI
 durationInMinutes: 3
 content: |

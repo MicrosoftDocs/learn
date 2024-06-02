@@ -4,11 +4,10 @@ title: Exercise - Set up your development environment
 metadata:
   title: Exercise - Set up your development environment
   description: Exercise - Set up your development environment
-  ms.date: 07/01/2019
-  author: davidcberry13
-  ms.author: daberry
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/27/2023
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: unit
   zone_pivot_groups: ide
 durationInMinutes: 15
 content: |

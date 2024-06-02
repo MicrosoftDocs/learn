@@ -4,13 +4,12 @@ title: Exercise - Implement Conditional Access policies roles and assignments
 metadata:
   title: Exercise - Implement Conditional Access policies roles and assignments
   description: "Exercise - Implement Conditional Access policies roles and assignments"
-  ms.date: 02/03/2023
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-implement-conditional-access-policies-roles-assignments.md)]

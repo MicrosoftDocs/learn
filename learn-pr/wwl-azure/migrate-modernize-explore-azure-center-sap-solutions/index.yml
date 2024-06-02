@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-modernize-explore-azure-center-sap-solutions
+metadata:
+  title: Modernize and explore Azure Center for SAP solutions
+  description: "Explore Azure Center for SAP Solutions (ACSS) to deploy and manage SAP workloads more efficiently. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.service: azure
+title: Modernize and explore Azure Center for SAP solutions
+summary: Explore how Azure Center for SAP Solutions (ACSS) offers secure, scalable, and reliable deployment and management of SAP workloads on Azure.
+abstract: |
+  After completing this module, you will be able to:
+  - Discover Azure Center for SAP Solutions (ACSS) and its services.
+  - Learn how to deploy SAP workloads on Azure or register existing SAP workloads with ACSS.
+  - Use ACSS to manage new and existing SAP workloads on Azure.
+  - Monitor and troubleshoot SAP workloads on Azure.
+prerequisites: |
+  Before taking this training, you should complete:
+  *   Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam.
+  *   SAP HANA or NetWeaver training.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.introduction
+- learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.discover-azure-center-sap-solutions
+- learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.examine-prerequisites-azure-center-sap-solutions
+- learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.choose-deployment-type-supported-software
+- learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.exercise-install-azure-infrastructures
+- learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.exercise-install-sap-software
+- learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.register-deployed-sap-system
+- learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.exercise-use-azure-center-sap-services-features
+- learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.knowledge-check
+- learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.summary
+badge:
+  uid: learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.badge

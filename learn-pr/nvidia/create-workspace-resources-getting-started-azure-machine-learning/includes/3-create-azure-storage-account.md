@@ -29,7 +29,7 @@ In this unit, you'll use the Azure portal to create a storage account for storin
     | Require secure transfer for REST API operations | *Check*. This setting controls whether **HTTP** can be used for the REST APIs that access data in the storage account. Setting this option to *enable* forces all clients to use SSL (**HTTPS**). Most of the time, you'll want to set secure transfer to *enable*; using HTTPS over the network is considered a best practice. |
     | Enable blob public access | *Check*. We'll allow clients to read data in that container without authorizing the request. |
     | Enable storage account key access | *Check*. We'll allow clients to access data via SAS. |
-    | Default to Azure Active Directory authorization in the Azure portal | *Uncheck*. Clients are public, not part of an Active Directory. |
+    | Default to Microsoft Entra authorization in the Azure portal | *Uncheck*. Clients are public, not part of an Active Directory. |
     | Minimum TLS version | Select *Version 1.2* from dropdown list. TLS 1.2 is the most secure version of TLS and is used by Azure Storage on public HTTPS endpoints. TLS 1.1 and 1.0 is supported for backwards compatibility. See *Warning* at end of table. |
     | **Data Lake Storage Gen2** |
     | Enable hierarchical namespace | *Uncheck*. Data Lake hierarchical namespace is for big-data applications that aren't relevant to this module. |

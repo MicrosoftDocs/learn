@@ -5,12 +5,11 @@ metadata:
   unitType: summary
   title: Summary
   description: Summary
-  ms.date: 05/18/2022
+  ms.date: 04/03/2023
   author: batamig
   manager: raynew
   ms.author: bagol
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

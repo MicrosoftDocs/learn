@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: Summary.
-  ms.date: 04/27/2021
+  ms.date: 11/12/2023
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]

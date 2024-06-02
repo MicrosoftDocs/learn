@@ -2,7 +2,7 @@ T-SQL batches are collections of one or more T-SQL statements that are submitted
 
 If you're a report writer who typically writes queries using SELECT statements and not procedures, it's still important to understand batch boundaries. These boundaries will affect your work with variables and parameters in stored procedures and other routines. For example, a variable must be declared in the same batch in which it's referenced. It's important, therefore, to recognize what is contained in a batch.
 
-Batches are delimited by the client application. How you mark the end of a batch depends on the settings of your client. For Microsoft clients including SQL Server Management Studio (SSMS), Azure Data Studio and SQLCMD the keyword is GO.
+Batches are delimited by the client application. How you mark the end of a batch depends on the settings of your client. For Microsoft clients including SQL Server Management Studio (SSMS), Azure Data Studio, and SQLCMD the keyword is GO.
 
 In this example, there are two distinct batches each terminated with a GO:
 
@@ -20,11 +20,11 @@ The batch terminator **GO** isn't a T-SQL keyword, but is one recognized by SSMS
 When working with T-SQL batches, there are two important considerations to keep in mind:
 
 - Batches are boundaries for variable scope, which means a variable defined in one batch may only be referenced by other code in the same batch
-- Some statements, typically data definition statements such as CREATE VIEW, CREATE FUNCTION and CREATE PROCEDURE may not be combined with others in the same batch.
+- Some statements, typically data definition statements such as CREATE VIEW, CREATE FUNCTION, and CREATE PROCEDURE may not be combined with others in the same batch.
 
 ## Working with batches
 
-A batch is collections of T-SQL statements submitted to SQL Server for parsing and execution. Understanding how batches are parsed will be useful in identifying error messages and behavior.  When a batch is submitted by a client, such as when you press the Execute button in SSMS, the batch is parsed for syntax errors by the SQL Server engine. Any errors found will cause the entire batch to be rejected; there will be no partial execution of statements within the batch.
+A batch is a collection of T-SQL statements submitted to SQL Server for parsing and execution. Understanding how batches are parsed will be useful in identifying error messages and behavior.  When a batch is submitted by a client, such as when you press the Execute button in SSMS, the batch is parsed for syntax errors by the SQL Server engine. Any errors found will cause the entire batch to be rejected; there will be no partial execution of statements within the batch.
 
 If the batch passes the syntax check, then SQL Server runs other steps, resolving object names, checking permissions, and optimizing the code for execution. Once this process completes and execution begins, statements succeed or fail individually. This is an important contrast to syntax checking. When a runtime error occurs on one line, the next line may be executed, unless you've added error handling to the code.
 

@@ -5,11 +5,10 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Azure NetApp Files.
-  ms.date: 06/18/2021
+  ms.date: 02/21/2023
   author: b-ahibbard
   ms.author: anfdocs
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
 quiz: 

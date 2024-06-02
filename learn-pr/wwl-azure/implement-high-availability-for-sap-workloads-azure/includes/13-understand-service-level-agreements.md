@@ -1,5 +1,3 @@
-
-
 In Azure, the [Service Level Agreement](https://azure.microsoft.com/support/legal/sla/) describes Microsoft's commitments for uptime and connectivity. If the SLA for a particular service is 99.9%, you should expect the service to be available 99.9% of the time. Different services have different SLAs.
 
 The Azure SLA also provides for obtaining a service credit if the SLA isn't met, along with specific definitions of *availability* for each service. That aspect of the SLA acts as an enforcement policy.

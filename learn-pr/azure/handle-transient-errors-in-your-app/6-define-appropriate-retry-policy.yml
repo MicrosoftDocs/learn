@@ -4,11 +4,12 @@ title: Choose a retry policy to recover from a transient error
 metadata:
   title: Choose a retry policy to recover from a transient error
   description: Discussion around number of retries, and the amount of time to wait before retrying.
-  ms.date: 04/10/2019
+  ms.date: 08/01/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
   zone_pivot_groups: dev-lang-csharp-java-node
 durationInMinutes: 5
 content: |

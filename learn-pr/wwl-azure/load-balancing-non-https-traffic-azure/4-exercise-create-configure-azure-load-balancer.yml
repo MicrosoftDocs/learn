@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.load-balancing-non-https-traffic-azure.exercise-create-configure-azure-load-balancer
-title: 'Exercise: create and configure an Azure load balancer'
+title: 'Exercise: Create and configure an Azure load balancer'
 metadata:
-  title: 'Exercise: create and configure an Azure load balancer'
-  description: "Exercise: create and configure an Azure load balancer"
-  ms.date: 09/28/2022
+  title: 'Exercise: Create and configure an Azure load balancer'
+  description: "Exercise: Create and configure an Azure load balancer"
+  ms.date: 12/05/2023
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - references_regions
 durationInMinutes: 15
 content: |
   [!include[](includes/4-exercise-create-configure-azure-load-balancer.md)]

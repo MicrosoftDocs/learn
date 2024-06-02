@@ -4,11 +4,10 @@ title:  Exercise - Add a .gitignore file
 metadata:
   title:  Exercise - Add a .gitignore file
   description: Learn to build, host, and maintain a secure repository on GitHub.
-  ms.date: 09/27/2021
+  ms.date: 04/22/2024
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-security-strategy-essentials.md)]

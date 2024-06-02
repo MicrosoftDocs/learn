@@ -6,9 +6,8 @@ metadata:
   description: Introduction to writing your first program in C++.
   author: saifeemustafaq
   ms.author: chnoring
-  ms.date: 11/18/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/04/2023
+  ms.topic: unit
   ms.custom: nextgen
 durationInMinutes: 2
 content: |

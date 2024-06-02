@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-compute-gallery.how-azure-compute-gallery-works
+title: How does Azure Compute Gallery Work?
+metadata:
+  title: What does Azure Compute Gallery work?
+  description: In this unit, you'll learn how Azure Compute Gallery works.
+  ms.date: 08/16/2023
+  author: tomvcassidy
+  ms.author: tomcassidy
+  ms.topic: unit
+  ms.service: azure-virtual-machines
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-how-azure-compute-gallery-works.md)]

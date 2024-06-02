@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.intro-github-copilot-enterprise.how-to-get-started
+title: How to get started
+metadata:
+  title: How to get started
+  description: This content is a part of the "Introduction to GitHub Copilot Enterprise" module.
+  ms.date: 02/28/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-how-to-get-started.md)]

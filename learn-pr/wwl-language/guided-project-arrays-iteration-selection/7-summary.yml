@@ -4,11 +4,12 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 04/11/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]

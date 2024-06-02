@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-defender-cloud-regulatory-compliance-standards.regulatory-compliance-standards
+title: Regulatory compliance standards in Defender for Cloud
+metadata:
+  title: Regulatory compliance standards in Defender for Cloud
+  description: "Regulatory compliance standards in Defender for Cloud"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-regulatory-compliance-standards.md)]

@@ -1,4 +1,3 @@
-
 Applications that integrate with the Microsoft identity platform follow an authorization model that gives users and administrators control over how data can be accessed.
 
 The Microsoft identity platform implements the [OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols) authorization protocol. OAuth 2.0 is a method through which a third-party app can access web-hosted resources on behalf of a user. Any web-hosted resource that integrates with the Microsoft identity platform has a resource identifier, or *application ID URI*.

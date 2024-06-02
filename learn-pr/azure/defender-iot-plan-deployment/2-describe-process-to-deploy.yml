@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-plan-deployment.describe-process-to-deploy
+title: Describe the process to deploy Microsoft Defender for IoT
+metadata:
+  title: Describe the process to deploy Microsoft Defender for IoT
+  description: Describe the process to deploy Microsoft Defender for IoT
+  ms.date: 11/29/2023
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+  ms.service: defender-for-iot
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-describe-process-to-deploy.md)]
+
+quiz:
+
+  questions:
+  
+  - content: "What task is completed in the sensor onboarding phase rather than the sensor deployment phase?"
+    choices:
+    - content: "Add OT sensors to Defender for IoT on the Azure portal"
+      isCorrect: true
+      explanation: "The onboarding sensors phase includes onboarding your OT sensors to Defender for IoT in the Azure portal."
+    - content: "Install SSH/TLS certificates"
+      isCorrect: false
+      explanation: "Installing SSH/TLS certificates occurs in the sensor deployment phase."
+    - content: "Configure a proxy connection"
+      isCorrect: false
+      explanation: " Configuring a proxy connection occurs in the sensor deployment phase."
+
+  - content: "In which phase would you choose a traffic mirroring method?"
+    choices:
+    - content: "Deploy sensors"
+      isCorrect: false
+      explanation: "In the sensor deployment phase you would download and install Defender for IoT, activate your OT sensors, install certificates, and configure proxies."
+    - content: "Plan and prepare"
+      isCorrect: true 
+      explanation: "You would choose a traffic mirroring method for each OT sensor in the plan and prepare stage of deployment and configure them in the Site networking setup phase."
+    - content: "Site networking setup"
+      isCorrect: false
+      explanation: "In the site networking setup phase, you would configure your traffic mirroring method not choose the method."

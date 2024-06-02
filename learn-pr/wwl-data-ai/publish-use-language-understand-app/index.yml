@@ -1,25 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.publish-use-language-understand-app
 metadata:
-  title: Publish and use a Language Understanding app
-  description: "After creating a Language Understanding app, you can publish it and consume it from client applications."
-  ms.date: 10/12/2022
+  title: Develop an app with Azure AI Language
+  description: "After creating an Azure AI Language Understanding model, you can publish it and consume it from client applications."
+  ms.date: 11/7/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Publish and use a Language Understanding app
-summary: After creating a Language Understanding app, you can publish it and consume it from client applications.
+  ms.topic: module-standard-task-based
+  ms.service: azure-ai-language
+title: Develop an app with Azure AI Language
+summary: After creating an Azure AI Language Understanding model, you can publish it and consume it from client applications.
 abstract: |
   After completing this module, you'll be able to:
-  - Understand capabilities of a Language Understanding app
-  - Process predictions from a Language Understanding app
-  - Deploy a language understanding app in a container
+  - Understand capabilities of an Azure AI Language Understanding model
+  - Process predictions from an Azure AI Language in your app
 prerequisites: |
   Before starting this module, you should already have:
   *   Familiarity with Azure and the Azure portal.
   *   Experience programming with C# or Python.
-  *   Experience creating a Language Understanding app
+  *   Experience creating an Azure AI Language Understanding app
   If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path first.
 iconUrl: /training/achievements/publish-use-language-understand-app.svg
 levels:
@@ -28,17 +27,14 @@ roles:
 - ai-engineer
 - developer
 products:
-- azure-cognitive-services
-- azure-language-understanding
+- ai-services
 subjects:
 - artificial-intelligence
 - cloud-computing
-- data-ai
 units:
 - learn.wwl.publish-use-language-understand-app.introduction
 - learn.wwl.publish-use-language-understand-app.understand-capabilities-of-language-service
 - learn.wwl.publish-use-language-understand-app.process-predictions
-- learn.wwl.publish-use-language-understand-app.use-container
 - learn.wwl.publish-use-language-understand-app.exercise-create
 - learn.wwl.publish-use-language-understand-app.knowledge-check
 - learn.wwl.publish-use-language-understand-app.summary

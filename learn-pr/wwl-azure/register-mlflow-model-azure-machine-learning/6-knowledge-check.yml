@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/17/2023
+  ms.date: 01/12/2024
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "A data scientist trains and logs a model with MLflow. When the data scientist deploys the model, the schema of the model's input and output isn't correct. What should the data scientist customize to fix the issue?"
     choices:

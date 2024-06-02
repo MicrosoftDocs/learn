@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.azure.azure-speech-services-tutorials-mrtk
 metadata:
-  title: Add Azure Cognitive Services to your mixed reality project
+  title: Add Azure AI services to your mixed reality project
   description: This course explores the use of Azure speech services by integrating to a hololens2 application. You can also deploy your project to a HoloLens.
-  ms.date: 09/13/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
-title: Add Azure Cognitive Services to your mixed reality project
+  ms.date: 01/17/2024
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: module-standard-task-based
+  ms.service: azure-ai-services
+title: Add Azure AI services to your mixed reality project
 summary: Import and learn about Azure Speech Services to enhance your learning experience.
 abstract: |
-  By the end of this module you will be able to:
-  - You would have implemented speech recognition powered by Azure with Mixed Reality ToolKit(MRTK).
-  - Implemented speech commands powered by Azure.
-  - Our project can now successfully translate the words you speak into several different languages.
-  - Our project now have AI-powered speech commands, allowing our application to recognize the users' intent even if they do not utter precise commands.
+  By the end of this module, you'll be able to:
+  - Implement speech recognition powered by Azure with Mixed Reality ToolKit (MRTK).
+  - Implement speech commands powered by Azure.
+  - Successfully translate the words you speak into several different languages.
+  - Integrate AI-powered speech commands, allowing your application to recognize the users' intent even if they don't utter precise commands.
 iconUrl: /training/achievements/azure-speech-services-tutorials-mrtk.svg
 levels:
 - beginner
@@ -32,7 +32,7 @@ prerequisites: |
   - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/develop/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
   - (Optional) A HoloLens 2 device configured for development
-  - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
+  - Unity Hub with Unity 2021.3 or later installed and the Universal Windows Platform Build Support module added
   - [Set up a mixed reality project in Unity module](/training/modules/mixed-reality-toolkit-project-unity)
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
   - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene.

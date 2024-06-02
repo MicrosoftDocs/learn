@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.build-ai-powered-workplace-helper-app.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary of the module."
+  ms.date: 12/12/2023
+  author: reneenoble
+  ms.author: reneenoble
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

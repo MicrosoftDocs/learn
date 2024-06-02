@@ -3,11 +3,10 @@ uid: learn.language.rust-automated-tests.documentation-tests
 metadata:
   title: Write documentation tests
   description: Learn about what documentation tests are and how to write them.
-  ms.date: 01/26/2021
+  ms.date: 06/14/2021
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Write documentation tests
 durationInMinutes: 5

@@ -1,6 +1,3 @@
-
-
-
 Azure Automation provides you with the ability to automate frequent, time-consuming, and error-prone cloud management tasks. Automation helps you focus on work that adds business value. By reducing errors and boosting efficiency, it also helps to lower your operational costs. You can integrate Azure services and other public systems that are required in deploying, configuring, and managing your end-to-end processes. The service allows you to author runbooks graphically, in PowerShell, or Python.
 
 ## Process Automation

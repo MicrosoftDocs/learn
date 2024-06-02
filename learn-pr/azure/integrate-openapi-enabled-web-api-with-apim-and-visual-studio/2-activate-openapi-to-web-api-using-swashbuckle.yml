@@ -4,12 +4,11 @@ title: Use Swashbuckle to create an OpenAPI document
 metadata:
   title: Use Swashbuckle to create an OpenAPI document
   description: Use Swashbuckle tooling to create an OpenAPI description for a web API
-  ms.date: 04/16/2021
+  ms.date: 07/11/2023
   author: justinyoo
   ms.author: juyoo
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: juyoo-04222021
 durationInMinutes: 3

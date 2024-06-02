@@ -5,7 +5,7 @@ You can use DLP policies for non-Microsoft cloud apps to monitor and detect when
 You can create DLP policies for non-Microsoft cloud apps in three ways:
 
 - Create file policies in the Microsoft Defender for Cloud Apps portal
-- Create file policies in the Microsoft 365 Defender Portal
+- Create file policies in the Microsoft Defender portal
 - Create DLP policies in the Microsoft Purview compliance portal and specify Microsoft Defender for Cloud Apps as the location
 
 File policies allow control of the actions you can execute in Microsoft Defender for Cloud Apps when a policy match is found. Whereas DLP policies allow you more control over non-Microsoft cloud apps. If you want more control over the SharePoint Online and OneDrive cloud apps, you should use the SharePoint Online or OneDrive portals.

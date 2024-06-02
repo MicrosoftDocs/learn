@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-manage-container-app-using-azure-container-apps
+metadata:
+  title: Guided project - Deploy and manage a container app using Azure Container Apps
+  description: "Learn to configure Azure Container Registry, Azure Container Apps, and the other resources required for an app deployment scenario. Learn to configure a container apps solution for continuous integration, scaling, and revision management."
+  ms.date: 02/29/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: module-guided-project
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Guided project - Deploy and manage a container app using Azure Container Apps
+summary: This module guides learners through the end-to-end process of building, deploying, and managing containerized applications using Azure Container Apps, Azure Container Registry, Azure Pipelines, and other tools and resources.
+abstract: |
+  -   Configure Azure Container Registry, Azure Container Apps, and other resources required for an app deployment scenario.
+  -   Configure Azure Pipelines for a continuous integration scenario.
+  -   Configure Azure Container Apps for scaling and revision management.
+prerequisites: |
+  -   Experience using the Azure portal and Azure CLI to create and manage Azure resources.
+  -   Experience using Azure container services, including Azure Container Registry and Azure Container Apps.
+  -   Experience using Visual Studio Code and Docker to build and push images to a registry would be beneficial.
+  -   Experience using Azure Virtual Networks would be beneficial.
+  -   Experience using Azure DevOps and Azure Pipelines for application deployment would be beneficial.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- devops-engineer
+products:
+- azure-container-registry
+- azure-pipelines
+- azure-virtual-network
+- azure-container-apps
+subjects:
+- devops
+units:
+- learn.wwl.deploy-manage-container-app-using-azure-container-apps.introduction
+- learn.wwl.deploy-manage-container-app-using-azure-container-apps.prepare-deployment-tools-resources
+- learn.wwl.deploy-manage-container-app-using-azure-container-apps.exercise-configure-connection-container-registry-container-apps
+- learn.wwl.deploy-manage-container-app-using-azure-container-apps.exercise-create-configure-container-app-azure-container-apps
+- learn.wwl.deploy-manage-container-app-using-azure-container-apps.exercise-configure-continuous-integration-azure-pipelines
+- learn.wwl.deploy-manage-container-app-using-azure-container-apps.exercise-manage-revisions-azure-container-apps
+- learn.wwl.deploy-manage-container-app-using-azure-container-apps.knowledge-check
+- learn.wwl.deploy-manage-container-app-using-azure-container-apps.summary
+badge:
+  uid: learn.wwl.deploy-manage-container-app-using-azure-container-apps.badge

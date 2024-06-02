@@ -7,8 +7,7 @@ metadata:
   ms.date: 4/5/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 3
 ###########################################################################
 ###
@@ -27,37 +26,31 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-    - content: "What is Conditional Access in Azure AD?"
+    - content: "What is Conditional Access in Microsoft Entra ID?"
       choices:
         - content: "A feature that allows users to bypass security policies."
           isCorrect: false
           explanation: "Conditional Access applies controls based on specific conditions, including user, location, device, and application state. It restricts user access until they have met those conditions."
-          
         - content: "An identity-based security model that enables customers to control access to applications and resources."
           isCorrect: true
           explanation: "Conditional Access grants or denies application access to users by requiring multifactor authentication or blocking access when the specified conditions are not met."
-          
         - content: "A type of user authentication specific to external identities."
           isCorrect: false
           explanation: "Conditional Access is not a type of user authentication but a set of access controls designed to improve security."
-
         - content: "An automated tool for managing user privileges within an organization."
           isCorrect: false
           explanation: "Conditional Access defines user-specific access policies but does not manage user privileges."
-    - content: "What is External Identities in Azure AD?"
+    - content: "What is External Identities in Microsoft Entra ID?"
       choices:
         - content: "A set of tools for managing conditional access policies for partners and customers."
           isCorrect: false
           explanation: "External Identity tools are designed to support B2B scenarios to simplify the management of policies related to guests, partners, and vendors accessing shared resources."
-        
         - content: "A system for managing user accounts within an organization."
           isCorrect: false
           explanation: "External Identities offers the ability to create and manage identities for users outside an organization in order to provide partner and customer access to assigned resources."
-        
         - content: "A set of tools for managing user accounts and access for non-employees or guests that need to access organizational assets."
           isCorrect: true
           explanation: "External identities enable secure collaboration between external users like customers, business partners, or vendors and internal teams while guarding against unauthorized data access."
-        
         - content: "An automatic threat detection system that detects abnormal behavior patterns in user accounts."
           isCorrect: false
           explanation: "External Identities provides capabilities around governance, user access, authentication, and identity protection, but does not include an automatic threat detection system."

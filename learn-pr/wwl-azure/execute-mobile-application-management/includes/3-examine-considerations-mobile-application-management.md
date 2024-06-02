@@ -1,4 +1,5 @@
 
+
 Intune provides a robust set of mobile application protection policies enabled for Intune-managed apps. These policies provide comprehensive protection to mobile apps and data without requiring complete device management. The following are some of the key benefits of using Intune-managed apps:
 
 - **Restrict copy-and-paste and save-as functions:** Intune-managed apps can be configured to restrict copy-and-paste and save-as functions, which help prevent accidental data leakage or unauthorized data sharing.

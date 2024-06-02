@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-interfaces
+metadata:
+  title: Implement Interfaces in C#
+  description: This learning path will introduce you to interfaces in C#. You'll work with a role-playing game inventory project to practice adding behaviors to classes, and use interfaces to craft modular, robust code.
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: learning-path
+  ms.service: dotnet-csharp
+title: Implement Interfaces in C#
+prerequisites: |
+  Visual Studio Community installed
+  Basic knowledge of the Visual Studio IDE and project structure
+  Basic understanding of the C# programming language
+  Familiarity with classes, abstract classes, and inheritance
+summary: |
+  This learning path will introduce you to interfaces in C#. You'll work with a role-playing game inventory project to practice adding behaviors to classes, and use interfaces to craft modular, robust code.
+iconUrl: /training/achievements/implement-interfaces.svg
+hidden: true
+levels:
+- intermediate
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+- vs-ide
+modules:
+- learn.wwl.introduce-interfaces
+- learn.wwl.implement-interfaces-c-sharp
+- learn.wwl.design-code-with-interfaces
+- learn.wwl.guided-project-langstons-ant
+trophy:
+  uid: learn.wwl.implement-interfaces.trophy

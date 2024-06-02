@@ -4,11 +4,10 @@ title: Explore SAP HANA backup
 metadata:
   title: Explore SAP HANA backup
   description: "Explore SAP HANA backup"
-  ms.date: 04/25/2023
+  ms.date: 10/27/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/6-explore-sap-hana-backup.md)]

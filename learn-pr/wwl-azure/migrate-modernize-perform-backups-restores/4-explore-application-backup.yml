@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-perform-backups-restores.explore-application-backup
+title: Explore application backup
+metadata:
+  title: Explore application backup
+  description: "Explore application backup"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom: linux-related-content
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-explore-application-backup.md)]

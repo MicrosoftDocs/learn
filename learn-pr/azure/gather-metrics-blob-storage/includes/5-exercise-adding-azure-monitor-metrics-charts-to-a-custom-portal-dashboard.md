@@ -1,16 +1,16 @@
-To get ready for moving client proofs into Azure Blob Storage, you want to see how easy it will be to create the dashboards for ongoing monitoring.
+To get ready for moving client proofs into Azure Blob Storage, you want to see how to create the dashboards for ongoing monitoring.
 
-In this exercise, you'll create an Azure dashboard and then add storage metric charts to it.
+In this exercise, you create an Azure dashboard and then add storage metric charts to it.
 
 ## Create a custom dashboard
 
 1. On the Azure portal menu, select **Dashboard**.
 
-2. In the dashboard area, select **+ New dashboard**, and then select **Blank dashboard**.
+2. In the dashboard area, select **+ Create**, and then select **Custom**.
 
 3. At the top of the new dashboard area, delete the default **My Dashboard** title, and enter **Storage Dashboard** as a new title, and then select **Save**.
 
-4. Select **Edit**. On the left side, under **Tile Gallery**, select **Markdown**, and then select **Add**.
+4. Select **Edit**. On the right side, under **Tile Gallery**, select **Markdown**, and then select **Add**.
 
 5. In the **Edit Markdown** panel, in the **Title** box, clear the contents of the box and enter **Blob Storage**.
 
@@ -33,9 +33,9 @@ In this exercise, you'll create an Azure dashboard and then add storage metric c
 4. In the **Select a scope** panel:
 
    1. In the **Subscription** drop-down list, ensure that only the concierge subscription you're using for the exercises is selected.
-   
+
    2. In the **Resource type** drop-down list, select **Storage accounts**.
-   
+
    3. In the search box type the name of the storage account that you created in unit (For example: select **monitorstorageaccount**). In the results list, select that storage account and then select **Apply**.
 
 5. Under the chart toolbar, in the **Metric namespace** drop-down list, select **Blob**.
@@ -55,9 +55,9 @@ In this exercise, you'll create an Azure dashboard and then add storage metric c
 4. On the **Select a resource** panel:
 
    1. In the **Subscription** drop-down list, ensure that only the subscription you're using for the exercises is selected.
-   
+
    2. In the **Resource type** drop-down list, select **Storage accounts**.
-   
+
    3. In the search box type the name of the storage account that you created in unit (For example: select **monitorstorageaccount**). In the results list, select that storage account and then select **Apply**.
 
 5. Under the chart toolbar, in the **Metric namespace** drop-down list, select **Blob**.

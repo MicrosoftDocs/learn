@@ -2,13 +2,12 @@
 uid: learn.backup-restore-azure-sql.6-restore-database
 metadata:
   title: Recover data by restoring an Azure SQL database
-  description: In this unit, you'll learn how to restore data from automated backups and long-term retention.
-  ms.date: 03/10/2022
+  description: Learn how to restore data from automated backups and long-term retention.
+  ms.date: 12/11/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Recover data by restoring an Azure SQL database
 durationInMinutes: 5
 content: |

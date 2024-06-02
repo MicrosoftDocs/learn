@@ -20,14 +20,6 @@ This type of routing is known as application layer (OSI layer 7) load balancing.
  -  **Rewrite HTTP headers**: HTTP headers allow the client and server to pass parameter information with the request or the response.
  -  **Custom error pages:** Application Gateway allows you to create custom error pages instead of displaying default error pages. You can use your own branding and layout using a custom error page.
 
-## When to use Azure Application Gateway
-
-Azure Application Gateway can meet your organization’s needs for the following reasons:
-
-- Azure Application Gateway routing allows traffic to be directed from an endpoint in Azure to a back-end pool made up of servers running in Adatum’s on-premises datacenter. The health probe functionality of Azure Application Gateway will ensure that traffic isn't being directed to any server that may have become unavailable.
-- Azure Application Gateway TLS termination functionality will reduce the amount of CPU capacity that servers in the back-end pool allocate to encryption and decryption operations.
-- Azure Application Gateway allows Adatum to use a web application firewall to block cross-site scripting and SQL injection traffic before it reaches servers in the back-end pool.
-- Azure Application Gateway supports session affinity, required because the several web applications deployed by Adatum use user session state information stored locally on individual servers in the back-end pool.
 
 ## Determine Application Gateway routing
 
@@ -44,7 +36,7 @@ Path-based routing sends requests with different URL paths different pools of ba
 
 ### Multiple site routing
 
-Multiple site routing configures more than one web application on the same application gateway instance. In a multi-site configuration, you register multiple DNS names (CNAMEs) for the IP address of the Application Gateway, specifying the name of each site. Application Gateway uses separate listeners to wait for requests for each site. Each listener passes the request to a different rule, which can route the requests to servers in a different back-end pool. For example, you could direct all requests for [http://contoso.com](http://contoso.com/) to servers in one back-end pool, and requests for [http://fabrikam.com](http://fabrikam.com/) to another back-end pool. The following diagram shows this configuration.
+Multiple site routing configures more than one web application on the same application gateway instance. In a multi-site configuration, you register multiple DNS names (CNAMEs) for the IP address of the Application Gateway, specifying the name of each site. Application Gateway uses separate listeners to wait for requests for each site. Each listener passes the request to a different rule, which can route the requests to servers in a different back-end pool. For example, you could direct all requests for [https://contoso.com](https://contoso.com/) to servers in one back-end pool, and requests for [https://fabrikam.com](https://fabrikam.com/) to another back-end pool. The following diagram shows this configuration.
 
 :::image type="content" source="../media/app-gateway-site-0ea3f85a.png" alt-text="Multiple site routing example":::
 
@@ -60,7 +52,7 @@ Review the [feature comparison table](/azure/application-gateway/overview-v2#fea
 
 ## Choosing between Azure Application Gateway v2 and Web Application Firewall V2 SKUs
 
-When choosing whether to deploy an Application Gateway or a Web Application Firewall, there are several factors you must consider, including the scaling strategy you want to follow and the cost of the service.
+When choosing whether to deploy an Application Gateway or a Web Application Firewall, there are several factors you must consider, including the scaling strategy you want to follow.
 
 ### Scaling Application Gateway and WAF v2
 
@@ -68,14 +60,6 @@ Application Gateway and WAF can be configured to scale in two modes:
 
 **Autoscaling:** With autoscaling enabled, the Application Gateway and WAF v2 SKUs scale up or down based on application traffic requirements. This mode offers better elasticity to your application and eliminates the need to guess the application gateway size or instance count. This mode also allows you to save cost by not requiring the gateway to run at peak provisioned capacity for anticipated maximum traffic load. You must specify a minimum and optionally maximum instance count. Minimum capacity ensures that Application Gateway and WAF v2 don't fall below the minimum instance count specified, even in the absence of traffic. Each instance is roughly equivalent to 10 additional reserved Capacity Units. Zero signifies no reserved capacity and is purely autoscaling in nature. You can also optionally specify a maximum instance count, which ensures that the Application Gateway doesn't scale beyond the specified number of instances. You will only be billed for traffic served by the Gateway. The instance counts can range from 0 to 125. The default value for maximum instance count is 20 if not specified.
 
-**Manual:** You can alternatively choose Manual mode where the gateway won't autoscale. In this mode, if there is more traffic than the Application Gateway or WAF can handle, it could result in traffic loss. With manual mode, specifying instance count is mandatory. Instance count can vary from 1 to 125 instances.
+**Manual:** You can alternatively choose Manual mode where the gateway doesn't autoscale. In this mode, if there is more traffic than the Application Gateway or WAF can handle, it could result in traffic loss. With manual mode, specifying instance count is mandatory. Instance count can vary from 1 to 125 instances.
 
-### Pricing
 
-With the v2 SKU, the pricing model is driven by consumption and is no longer attached to instance counts or sizes. The v2 SKU pricing has two components:
-
-**Fixed price:** This is hourly (or partial hour) price to provision a Standard\_v2 or WAF\_v2 Gateway. Please note that 0 additional minimum instances still ensure high availability of the service which is always included with fixed price.
-
-**Capacity Unit price:** This is a consumption-based cost that is charged in addition to the fixed cost. Capacity unit charge is also computed hourly or partial hourly. There are three dimensions to capacity unit - compute unit, persistent connections, and throughput. Compute unit is a measure of processor capacity consumed. Factors affecting compute unit are TLS connections/sec, URL Rewrite computations, and WAF rule processing. Persistent connection is a measure of established TCP connections to the application gateway in each billing interval. Throughput is average Megabits/sec processed by the system in each billing interval. The billing is done at a Capacity Unit level for anything above the reserved instance count.
-
-Each capacity unit is composed of at most: 1 compute unit, 2500 persistent connections, and 2.22-Mbps throughput.

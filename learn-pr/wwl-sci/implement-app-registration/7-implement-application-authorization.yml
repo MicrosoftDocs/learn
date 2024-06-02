@@ -4,13 +4,10 @@ title: Implement application authorization
 metadata:
   title: Implement application authorization
   description: "Implement application authorization"
-  ms.date: 04/03/2023
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.topic: unit
+durationInMinutes: 11
 content: |
   [!include[](includes/7-implement-application-authorization.md)]

@@ -3,7 +3,10 @@ It's an example of a basic continuous integration workflow created by using acti
 ```YAML
 name: dotnet Build
 
-on: [push]
+on:
+  push:
+    branches:
+    - main
 
 jobs:
     build:

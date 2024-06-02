@@ -1,5 +1,4 @@
-
-Whether you realized it or not, you've been calling C# methods ever since your first "Hello, World!" application. That application uses the `WriteLine()` method of the `Console` class to display the "Hello, World!" message. 
+Whether you realized it or not, you've been calling C# methods ever since your first "Hello, World!" application. That application uses the `WriteLine()` method of the `Console` class to display the "Hello, World!" message.
 
 However, not all classes and methods are implemented the same way. This unit covers some of the most common variants that you'll need to understand when using methods from the .NET Class Library. More importantly, you'll learn how to find and use the documentation to better understand more about each method.
 
@@ -24,7 +23,7 @@ While some methods can be called the same way that you called `Console.WriteLine
 
 ## Prepare your coding environment
 
-This module includes hands-on activities that guide you through the process of building and running sample code. You are encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
+This module includes coding activities that guide you through the process of building and running sample code. You are encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
 
 1. Open Visual Studio Code.
 
@@ -139,6 +138,14 @@ The `new` operator does several important things:
 - It returns the memory address so that it can be saved in the `dice` variable.
 
 From that point on, when the `dice` variable is referenced, the .NET Runtime performs a lookup behind the scenes to give the illusion that you're working directly with the object itself.
+
+The latest version of the .NET Runtime enables you to instantiate an object without having to repeat the type name (target-typed constructor invocation). For example, the following code will create a new instance of the `Random` class:
+
+```c#
+Random dice = new();
+```
+
+The intention is to simplify code readability. You always use parentheses when writing a target-typed `new` expression.
 
 ## Why is the Next() method stateful?
 

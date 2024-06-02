@@ -2,7 +2,8 @@ The first computers could only do a single thing. As computers got more powerful
 
 To enable this flexibility, the programmable computer was born. Programs are instructions that tell a computer what to do and when to do it. The instructions tell the computer what to show on a screen or what sound to make. Programs are made to respond to what the person using the computer (the user) types, says, or selects.
 
-![Diagram showing a section of code.](../media/section-of-code.png)
+:::image type="content" source="../media/section-of-code-e3592ca3.png" alt-text="Diagram showing a section of code.":::
+
 
 We tend to give instructions to humans in a language like English or Spanish. Computer programs have a language too. Just as you say, write, or sign words to a human, you can type (or speak) a program using the language the computer understands.
 
@@ -16,7 +17,8 @@ This worked pretty well, but there were a few problems. If a problem in the code
 
 Another problem was that programmers couldn't update the programs without selling a new version. While this could be good for business, it meant that people had to wait months or years for the new version to come out.
 
-![Diagram showing a person waiting.](../media/person-waiting.png)
+:::image type="content" source="../media/person-waiting-f109fc63.png" alt-text="Diagram showing a person waiting.":::
+
 
 A third problem is that early programs seemed bloated to some people. This means that the program had to include anything that someone might want to do with it. Customers had to pay for the full program with all the features whether they used everything or not.
 

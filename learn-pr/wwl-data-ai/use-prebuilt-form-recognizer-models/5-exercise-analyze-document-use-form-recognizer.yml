@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-prebuilt-form-recognizer-models.exercise-analyze-document-use-form-recognizer
-title: Exercise - Analyze a document using Form Recognizer
+title: Exercise - Analyze a document using Azure AI Document Intelligence
 metadata:
-  title: Exercise - Analyze a document using Form Recognizer
-  description: "Exercise - Analyze a document using Form Recognizer"
-  ms.date: 11/01/2022
+  title: Exercise - Analyze a document using Azure AI Document Intelligence
+  description: "Exercise - Analyze a document using Azure AI Document Intelligence"
+  ms.date: 02/06/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+labId: 152395
+labModal: true
 durationInMinutes: 3
 content: |
   [!include[](includes/5-exercise-analyze-document-use-form-recognizer.md)]

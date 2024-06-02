@@ -42,10 +42,8 @@ Suppose you want to use the ASP.NET Core Runtime Docker image. This image is ava
 
 Now, let's suppose you want to use the .NET Core samples Docker images. Here we have four versions available from which to choose:
 
-- `mcr.microsoft.com/dotnet/core/samples:dotnetapp`
-- `mcr.microsoft.com/dotnet/core/samples:aspnetapp`
-- `mcr.microsoft.com/dotnet/core/samples:wcfservice`
-- `mcr.microsoft.com/dotnet/core/samples:wcfclient`
+- `mcr.microsoft.com/dotnet/samples:dotnetapp`
+- `mcr.microsoft.com/dotnet/samples:aspnetapp`
 
 > [!NOTE]
 > A single image can have multiple tags assigned to it. By convention, the most recent version of an image is assigned the *latest* tag in addition to a tag that describes its version number. When you release a new version of an image, you can reassign the *latest* tag to reference the new image.
@@ -53,6 +51,9 @@ Now, let's suppose you want to use the .NET Core samples Docker images. Here we 
 A repository is also the unit of privacy for an image. If you don't wish to share an image, you can make the repository private. You can grant access to other users with whom you want to share the image.
 
 ## Browse Docker Hub and pull an image
+
+> [!NOTE]
+> You don't need to complete any of the examples or run any of the code in the following sections. You'll do that in the next unit.
 
 Often you'll find there's an image in Docker Hub that closely matches the type of app you want to containerize. You can download such an image and extend it with your application code.
 
@@ -66,7 +67,7 @@ You use the `docker pull` command with the image name to retrieve an image. By d
 > The examples in this unit are intended to show the syntax of the various Docker commands. You don't need to run these commands while reading this unit. The exercises that follow this unit will guide you through working with Docker directly.
 
 ```bash
-docker pull mcr.microsoft.com/dotnet/core/samples:aspnetapp
+docker pull mcr.microsoft.com/dotnet/samples:aspnetapp
 ```
 
 When you fetch an image, Docker stores it locally and makes it available for running containers. You can view the images in your local registry with the *docker image list* command.
@@ -79,7 +80,7 @@ The output looks like the following example:
 
 ```console
 REPOSITORY TAG IMAGE ID CREATED SIZE
-mcr.microsoft.com/dotnet/core/samples   aspnetapp           6e2737d83726        6 days ago          263MB
+mcr.microsoft.com/dotnet/samples   aspnetapp           6e2737d83726        6 days ago          263MB
 ```
 
 You use the image name ID to reference the image in many other Docker commands.
@@ -89,7 +90,7 @@ You use the image name ID to reference the image in many other Docker commands.
 Use the `docker run` command to start a container. Specify the image to run with its name or ID. If you haven't `docker pull`ed the image already, Docker will do it for you.
 
 ```bash
-docker run mcr.microsoft.com/dotnet/core/samples:aspnetapp
+docker run mcr.microsoft.com/dotnet/samples:aspnetapp
 ```
 
 In this example, the command responds with the following message:
@@ -112,7 +113,7 @@ Additionally, the web app in this image isn't meant to be used interactively fro
 Press <kbd>Ctrl+C</kbd> to stop the image and then restart it as shown by the following example:
 
 ```bash
-docker run -p 8080:80 -d mcr.microsoft.com/dotnet/core/samples:aspnetapp
+docker run -p 8080:80 -d mcr.microsoft.com/dotnet/samples:aspnetapp
 ```
 
 The command maps port 80 in the container to port 8080 on your computer. If you visit the page `http://localhost:8080` in a browser, you'll see the sample web app.

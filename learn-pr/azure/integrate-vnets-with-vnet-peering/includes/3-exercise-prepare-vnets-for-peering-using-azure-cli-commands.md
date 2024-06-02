@@ -4,7 +4,7 @@ Let's say your company is now ready to implement virtual network peering. You wa
 - The **Marketing** virtual network is deployed in **North Europe**. Marketing systems use this virtual network. Members of the Marketing team regularly chat with the Sales team. To share their data with the Sales team, they must download it because the Sales and Marketing systems aren't connected.
 - The **Research** virtual network is deployed in **West Europe**. Research systems use this virtual network. Members of the Research team have a logical working relationship with Marketing, but they don't want the Sales team to have direct access to their data.
 
-![A diagram of virtual networks you need to create.](../media/3-prepare-vnets.svg)
+:::image type="content" source="../media/3-prepare-vnets.svg" alt-text="A diagram of virtual networks you need to create.":::
 
 You'll create the following resources:
 
@@ -20,7 +20,7 @@ You'll create the following resources:
 
     ```azurecli
     az network vnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name SalesVNet \
         --address-prefixes 10.1.0.0/16 \
         --subnet-name Apps \
@@ -32,7 +32,7 @@ You'll create the following resources:
 
     ```azurecli
     az network vnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name MarketingVNet \
         --address-prefixes 10.2.0.0/16 \
         --subnet-name Apps \
@@ -44,7 +44,7 @@ You'll create the following resources:
 
     ```azurecli
     az network vnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name ResearchVNet \
         --address-prefixes 10.3.0.0/16 \
         --subnet-name Data \
@@ -80,13 +80,13 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --no-wait \
         --name SalesVM \
         --location northeurope \
         --vnet-name SalesVNet \
         --subnet Apps \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --admin-password <password>
     ```
@@ -98,13 +98,13 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --no-wait \
         --name MarketingVM \
         --location northeurope \
         --vnet-name MarketingVNet \
         --subnet Apps \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --admin-password <password>
     ```
@@ -113,13 +113,13 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --no-wait \
         --name ResearchVM \
         --location westeurope \
         --vnet-name ResearchVNet \
         --subnet Data \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --admin-password <password>
     ```
@@ -130,7 +130,7 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
 
     ```bash
     watch -d -n 5 "az vm list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --show-details \
         --query '[*].{Name:name, ProvisioningState:provisioningState, PowerState:powerState}' \
         --output table"

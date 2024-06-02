@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/21/2023
+  ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -22,7 +21,7 @@ quiz:
       explanation: "That’s incorrect. Site-to-site connectivity via VPN or ExpressRoute is necessary for production scenarios. This type of connection is also needed for non-production scenarios that feed into production scenarios where SAP software is being used."
     - content: "Connect through a VPN or Azure ExpressRoute"
       isCorrect: true
-      explanation: "That's correct. Site-to-site connectivity via VPN or ExpressRoute is necessary for production scenarios. This type of connection is also needed for non-production scenarios that feed into production scenarios where SAP software is being used."
+      explanation: "Correct. Site-to-site connectivity via VPN or ExpressRoute is necessary for production scenarios. This type of connection is also needed for non-production scenarios that feed into production scenarios where SAP software is being used."
     - content: "Either method is acceptable for a production scenario"
       isCorrect: false
       explanation: "That’s incorrect. Site-to-site connectivity via VPN or ExpressRoute is necessary for production scenarios. This type of connection is also needed for non-production scenarios that feed into production scenarios where SAP software is being used."
@@ -33,7 +32,7 @@ quiz:
       explanation: "That’s incorrect. The Owner has full access to all resources including the right to delegate access to others."
     - content: "Contributor"
       isCorrect: true
-      explanation: "That's correct. Contributors can create and manage all types of Azure resources but can’t grant access to others."
+      explanation: "Correct. Contributors can create and manage all types of Azure resources but can’t grant access to others."
     - content: "User Access Administrator"
       isCorrect: false
       explanation: "That’s incorrect. The User Access Administrator can manage user access to Azure resources."
@@ -41,7 +40,7 @@ quiz:
     choices:
     - content: "Azure Bastion"
       isCorrect: true
-      explanation: "That's correct. Azure Bastion is a service users deploy that lets them connect to a virtual machine using their browser and the Azure portal. The Azure Bastion service is a fully platform-managed PaaS service that users provision inside their virtual network."
+      explanation: "Correct. Azure Bastion is a service users deploy that lets them connect to a virtual machine using their browser and the Azure portal. The Azure Bastion service is a fully platform-managed PaaS service that users provision inside their virtual network."
     - content: "Azure Resource Manager"
       isCorrect: false
       explanation: "That’s incorrect. Azure Bastion is a service users deploy that lets them connect to a virtual machine using their browser and the Azure portal. The Azure Bastion service is a fully platform-managed PaaS service that users provision inside their virtual network."

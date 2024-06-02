@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-performance-efficiency.design-to-meet-capacity-requirements
+title: Design to meet capacity requirements
+metadata:
+  title: Design to meet capacity requirements
+  description: Learn how to design your workload to meet capacity requirements.
+  ms.date: 12/13/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-design-to-meet-capacity-requirements.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'In the context of designing to meet capacity requirements, what is one way that you can choose the right resources for your workload?'
+    choices:
+    - content: 'Look at the pricing of the resources and choose the cheapest option.'
+      isCorrect: false
+      explanation: 'Incorrect. Choosing the cheapest option may mean a sacrifice in performance that would not allow you to meet your capacity requirements.'
+    - content: 'Look for services that are in public preview and prefer those over services that are generally available.'
+      isCorrect: false
+      explanation: 'Incorrect. Services in public preview may not be ready for production workloads and may not be able to meet your capacity requirements.'
+    - content: 'Consider features that can fulfill the scalability requirements of your workload.'
+      isCorrect: true
+      explanation: "Correct. Being able to take advantage of built-in scaling features is a great design choice that can help you meet capacity requirements."
+    - content: "Choose the most expensive option for your workload's components to ensure that you have enough capacity."
+      isCorrect: false
+      explanation: "Incorrect. Choosing the most expensive option may mean that you are paying for capacity that you don't need."
+  - content: 'What should you use predictive modeling for?'
+    choices:
+    - content: 'To forecast the future capacity requirements of your workload.'
+      isCorrect: true
+      explanation: 'Correct. Predictive modeling can help you forecast the future capacity requirements of your workload.'
+    - content: 'To observe the current performance of the workload.'
+      isCorrect: false
+      explanation: 'Incorrect. Predictive modeling is used for capacity planning, not performance monitoring.'
+    - content: 'To predict the likelihood of a failure in your workload.'
+      isCorrect: false
+      explanation: "Incorrect. Predictive modeling is used for capacity planning, not failure prediction."
+    - content: 'To predict the likelihood of a security breach in your workload.'
+      isCorrect: false
+      explanation: "Incorrect. Predictive modeling is used for capacity planning, not security breach prediction."
+  - content: 'What is one hypothesis that Contoso was trying to validate with their POC deployment?'
+    choices:
+    - content: 'That the Azure platform could support their application design.'
+      isCorrect: false
+      explanation: 'Incorrect. Contoso already knew that the Azure platform could support their application design.'
+    - content: 'That they could use Azure Kubernetes Service (AKS) to host their application.'
+      isCorrect: false
+      explanation: 'Incorrect. In this scenario, Contoso was migrating to Azure Spring Apps, not AKS.'
+    - content: 'That they could successfully migrate their data to Azure.'
+      isCorrect: false
+      explanation: "Incorrect. Contoso wasn't looking at this factor for their POC."
+    - content: 'That latency communicating with their on-premises IOT devices might affect their compute requirements.'
+      isCorrect: true
+      explanation: "Correct. Contoso speculated that high latency might affect their compute requirements, so they wanted to test this hypothesis."

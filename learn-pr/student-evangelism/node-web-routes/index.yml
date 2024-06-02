@@ -2,14 +2,14 @@
 uid: learn.student-evangelism.node-web-routes
 metadata:
   title: Introduction to route management in Node.js with JavaScript
-  description: Learn how to set up a Node.js API with multiple routes and handle incoming HTTP requests by using JavaScript.
-  ms.date: 03/23/2023
-  author: clarkio
-  ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Learn how to set up a Node.js API with multiple routes and handle incoming HTTP requests by using JavaScript (CommonJS).
+  ms.date: 01/30/2024
+  author: diberry
+  ms.author: diberry
+  ms.service: azure-javascript
+  ms.topic: module-standard-task-based
 title: Introduction to route management in Node.js with JavaScript
-summary: Learn how to set up a Node.js API with multiple routes and handle incoming HTTP requests by using JavaScript.
+summary: Learn how to set up a Node.js API with multiple routes and handle incoming HTTP requests by using JavaScript. This module uses JavaScript (CommonJS) with the Express.js server framework in the Node.js runtime.
 abstract: |
   In this module, you will:
   - Learn about API route management 
@@ -22,13 +22,10 @@ roles:
 products:
   - azure
 prerequisites: |
-  - [Git](https://git-scm.com/?azure-portal=true) and [Node.js](https://nodejs.org/en/?azure-portal=true) installed
-  on your computer
+  - Have a free [GitHub account](https://github.com/login)
   - Familiarity with editing text and code files in any text editor
   - Basic familiarity with the HTTP protocol
   - Experience using the command line, including Git operations
-subjects:
-- development-tools
 units:
 - learn.student-evangelism.node-web-routes.introduction
 - learn.student-evangelism.node-web-routes.manage-routes

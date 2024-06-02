@@ -3,11 +3,10 @@ uid: learn.hub-and-spoke-network-architecture.3-plan-virtual-networks
 metadata:
   title: Plan virtual networks in Azure
   description: Plan virtual networks in Azure
-  ms.date: 10/21/2019
-  author: KumudD
-  ms.author: kumud
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 02/19/2024
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 title: Plan virtual networks in Azure
 durationInMinutes: 8
 content: |
@@ -15,11 +14,11 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which one of these is a way resources can communicate with each other inside Azure?"
+  - content: "Which one of these choices is a way resources can communicate with each other inside Azure?"
     choices:
     - content: "Have the resources communicate over an ExpressRoute connection."
       isCorrect: false
-      explanation: "An ExpressRoute connection enables connection of your on-premises resources, with resources inside Azure."
+      explanation: "An ExpressRoute connection enables connection of your on-premises resources with resources inside Azure."
     - content: "Having the resources inside a single virtual network."
       isCorrect: true
       explanation: "Correct. All resources within a virtual network can communicate in the private address space."
@@ -30,10 +29,10 @@ quiz:
     choices:
     - content: "10"
       isCorrect: false
-      explanation: "This is correct for a standard ExpressRoute circuit, but it isn't the only limit."
+      explanation: "This answer is correct for a standard ExpressRoute circuit, but it isn't the only limit."
     - content: "100"
       isCorrect: false
-      explanation: "This is correct for a premium-add on ExpressRoute with a 10-Gbps or larger circuit, but it isn't the only limit."
+      explanation: "This is correct for a premium-add on ExpressRoute with a 10 Gbps or larger circuit, but it isn't the only limit."
     - content: "It depends on the size of the circuit."
       isCorrect: true
-      explanation: "The limit is based on the SKU and size of the ExpressRoute circuit. At present, 100 is the maximum for all."
+      explanation: "The limit is based on the SKU and size of the ExpressRoute circuit. At present, 100 is the maximum for both."

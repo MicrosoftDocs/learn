@@ -4,10 +4,12 @@ title: Deploy applications with Configuration Manager
 metadata:
   title: Deploy applications with Configuration Manager
   description: "Deploy applications with Configuration Manager"
-  ms.date: 04/04/2023
+  ms.date: 04/23/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/5-deploy-applications-configuration-manager.md)]

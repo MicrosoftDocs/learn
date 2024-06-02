@@ -47,7 +47,7 @@ Let's look closely at some key parts of this resource definition:
 
 A Bicep template usually includes several resources. Often, you need a resource to depend on another resource. You might have to extract some information from one resource to be able to define another. Or, if you're deploying a web application, you'll have to create the server infrastructure before you can add an application to it. These relationships are called _dependencies_.
 
-You'll need to deploy an App Service app for the template that will help launch the toy product. But to create an App Service app, you first need to create an App Service plan. The App Service plan represents the server-hosting resources, and it's declared like this example:
+You'll need to deploy an App Service app for the template that will help launch the toy product, but to create an App Service app, you first need to create an App Service plan. The App Service plan represents the server-hosting resources, and it's declared like this example:
 
 ```bicep
 resource appServicePlan 'Microsoft.Web/serverFarms@2022-03-01' = {
@@ -59,7 +59,7 @@ resource appServicePlan 'Microsoft.Web/serverFarms@2022-03-01' = {
 }
 ```
 
-This resource definition is telling Bicep you want to deploy an App Service plan that has the resource type `Microsoft.Web/serverFarms`. The plan resource is named `toy-product-launch-plan`, and it's deployed into the West US 3 region. It uses a pricing SKU of F1, which is the free tier of App Service.
+This resource definition is telling Bicep you want to deploy an App Service plan that has the resource type `Microsoft.Web/serverFarms`. The plan resource is named `toy-product-launch-plan`, and it's deployed into the West US 3 region. It uses a pricing SKU of F1, which is App Service's free tier.
 
 Now that you've declared the App Service plan, the next step is to declare the app:
 
@@ -74,7 +74,7 @@ resource appServiceApp 'Microsoft.Web/sites@2022-03-01' = {
 }
 ```
 
-This template instructs Azure to host the app on the plan you created. Notice that the definition of the plan includes the symbolic name of the App Service plan on this line: `serverFarmId: appServicePlan.id`. This line means that Bicep will get the App Service plan's _resource ID_ using the `id` property. It's effectively saying, _this app's server farm ID is the ID of the App Service plan defined earlier_.
+This template instructs Azure to host the app on the plan you created. Notice that the plan's definition includes the App Service plan's symbolic name on this line: `serverFarmId: appServicePlan.id`. This line means that Bicep will get the App Service plan's _resource ID_ using the `id` property. It's effectively saying: _this app's server-farm ID is the ID of the App Service plan defined earlier_.
 
 > [!TIP]
 > In Azure, a _resource ID_ is a unique identifier for each resource. The resource ID includes the Azure subscription ID, the resource group name, and the resource name, along with some other information.

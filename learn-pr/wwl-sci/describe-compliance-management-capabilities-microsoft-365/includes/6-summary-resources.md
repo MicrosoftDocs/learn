@@ -10,7 +10,7 @@ Now that you’ve completed this module, you should be able to:
 
 ## Learn more
 
-- [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center?view=o365-worldwide)
-- [Microsoft Purview Compliance Manager](/microsoft-365/compliance/compliance-score?view=o365-worldwide#relationship-to-compliance-manager)
-- [Compliance score calculation](/microsoft-365/compliance/compliance-score-calculation?view=o365-worldwide)
-- [Compliance Manager frequently asked questions](/microsoft-365/compliance/compliance-score-faq?view=o365-worldwide#what-is-the-difference-between-compliance-score-and-compliance-manager)
+- [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center)
+- [Microsoft Purview Compliance Manager](/microsoft-365/compliance/compliance-score)
+- [Compliance score calculation](/microsoft-365/compliance/compliance-score-calculation)
+- [Compliance Manager frequently asked questions](/microsoft-365/compliance/compliance-score-faq)

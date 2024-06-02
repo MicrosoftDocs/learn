@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: Summary of the features and uses of Azure text moderation.
-  ms.date: 1/28/2019
+  ms.date: 12/19/2022
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

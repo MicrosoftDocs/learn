@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql
+metadata:
+  title: Extract insights using Azure AI Language and Azure Database for PostgreSQL
+  description: "Learn to extract insights using Azure AI Language and Azure Database for PostgreSQL."
+  ms.date: 04/29/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: module
+  ms.service: postgresql
+  ms.subservice: flexible-server
+  ai-usage: human-only
+title: Extract insights using Azure AI Language and Azure Database for PostgreSQL
+summary: This module covers Azure AI Language tools including key phrase extraction, entity recognition, personally identifiable information recognition and redaction, and using Azure Database for PostgreSQL - Flexible Server with Azure AI to access these services.
+abstract: |
+  -   Examine the concepts of key phrase extraction, entity recognition, and PII (personally identifiable information recognition) recognition.
+
+  -   Understand the capabilities provided by the azure_ai extension for PostgreSQL to access Azure AI Language.
+
+  -   Install the azure_ai&nbsp;extension in an Azure Database for PostgreSQL - Flexible Server database, and use it to extract key phrases, recognize entities in text, and redact PII.
+prerequisites: Before starting this module, you should have experience working with PostgreSQL databases and writing SQL queries.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-database-postgresql
+- ai-services
+subjects:
+- artificial-intelligence
+- databases
+units:
+- learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.introduction
+- learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.extract
+- learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.recognize
+- learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.detect-personally-identifiable-information
+- learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.exercise
+- learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.knowledge-check
+- learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.summary
+badge:
+  uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.badge

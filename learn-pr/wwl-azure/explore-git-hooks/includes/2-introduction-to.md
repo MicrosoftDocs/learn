@@ -38,7 +38,7 @@ Some examples of where you can use hooks to enforce policies, ensure consistency
 
  -  In Enforcing preconditions for merging
  -  Verifying work Item ID association in your commit message
- -  Preventing you &amp; your team from committing faulty code
+ -  Preventing you & your team from committing faulty code
  -  Sending notifications to your team's chat room (Teams, Slack, HipChat, etc.)
 
 In the next unit, you will see how to implement Git Hooks.

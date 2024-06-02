@@ -7,8 +7,7 @@ metadata:
   ms.date: 06/08/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -17,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An Azure Stack Hub operator wants to deploy using an Azure Active Directory identity provider. They acquire the certificates and want to determine if the certificates meet the requirements for Azure Stack Hub. Which PowerShell cmdlet should they run?"
+  - content: "An Azure Stack Hub operator wants to deploy using a Microsoft Entra identity provider. They acquire the certificates and want to determine if the certificates meet the requirements for Azure Stack Hub. Which PowerShell cmdlet should they run?"
     choices:
     - content: "Invoke-AzsHubDeploymentCertificateValidation."
       isCorrect: true
@@ -35,7 +34,7 @@ quiz:
       explanation: "Incorrect. Running New-RegistrationToken creates a new registration token."
     - content: "Run the Register-DirectoryService cmdlet and specify the -CustomADAdminCredential parameter."
       isCorrect: false
-      explanation: "Incorrect. Running the Register-DirectoryService cmdlet registers customer Active Directory (Azure AD) with Graph Service."
+      explanation: "Incorrect. Running the Register-DirectoryService cmdlet registers customer Microsoft Entra ID with Graph Service."
     - content: "Copy the certificates to a file share is accessible from the privileged endpoint (PEP). Then run the Test-AzureStack cmdlet and specify the -Group SecretRotationReadiness parameter. Lastly, run the Start-SecretRotation and specify the PfxFilePath parameter."
       isCorrect: true
       explanation: "Correct. They should copy the certificates to a file share is accessible from the privileged endpoint (PEP). The, Run the Test-AzureStack cmdlet and specify the -Group SecretRotationReadiness parameter. Lastly, run the Start-SecretRotation and specify the PfxFilePath parameter"
