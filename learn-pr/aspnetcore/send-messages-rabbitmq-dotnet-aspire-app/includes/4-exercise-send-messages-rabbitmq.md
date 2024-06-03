@@ -8,7 +8,7 @@ The prerequisites for .NET Aspire are:
 
 - .NET 8
 - Visual Studio 2022 Preview
-- Docker Desktop
+- Docker Desktop or Podman
 - .NET Aspire workload in Visual Studio
 
 If you've already got these packages installed, you can skip ahead to begin working with RabbitMQ.
@@ -26,8 +26,9 @@ dotnet --version
 You should see the version number of the .NET SDK you installed. For example:
 
 ```console
-8.0.300-preview.24122.6
+8.0.300-preview.24203.14
 ```
+
 ### Install Visual Studio 2022 Preview
 
 Follow this [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/) link, and select **Download Preview**. After the download is complete, run the installer and follow the instructions.
@@ -98,9 +99,9 @@ Install the .NET Aspire workload using the .NET CLI:
     You should see the details of the .NET Aspire workload.
 
     ```console
-    Installed Workload Id      Manifest Version                      Installation Source
-    ------------------------------------------------------------------------------------
-    aspire                     8.0.0-preview.4.24156.9/8.0.100       VS 17.10.34726.289
+	Installed Workload Id      Manifest Version      Installation Source
+    ---------------------------------------------------------------------------------------------
+    aspire                     8.0.0/8.0.100         SDK 8.0.300-preview.24203, VS 17.10.34902.84
     
     Use `dotnet workload search` to find additional workloads to install.
     ```
@@ -110,7 +111,7 @@ Install the .NET Aspire workload using the .NET CLI:
 Let's use `git` to obtain a sample app, which doesn't yet use a message broker:
 
 1. In the command line, browse to a folder of your choice where you can work with code.
-1. Execute the following command to clone the **Northern Mountains eShop** sample application:
+1. Execute the following command to clone the sample application:
 
     ```dotnetcli
     git clone -b aspire-rabbitmq  https://github.com/MicrosoftDocs/mslearn-aspire-starter
@@ -118,11 +119,17 @@ Let's use `git` to obtain a sample app, which doesn't yet use a message broker:
 
 ## Create the RabbitMQ container
 
-Let's start by adding RabbitMQ to the AppHost project. When we start the solution, .NET Aspire adds a RabbitMQ container to the app and passes references to the projects that use it:
+Let's start by adding RabbitMQ to the app host project. When we start the solution, .NET Aspire adds a RabbitMQ container to the app and passes references to the projects that use it:
 
 1. Start Visual Studio, and select **Open a project or solution**.
 1. Navigate to the folder where you cloned the project.
 1. Double-click the **start** folder, select the _eShop.rabbitmq.sln_ solution, and then select **Open**.
+1. In **Solution Explorer**, right-click the **eShop.AppHost** project, select **Add**, and then select **.NET Aspire package**.
+1. In the search textbox, at the end of the existing text, type **RabbitMQ**.
+1. Select **Aspire.Hosting.RabbitMQ** package.
+1. In the **Version** list, select the latest **8.0.0** version, and then select **Install**.
+1. If the **Preview Changes** dialog appears, select **Apply**.
+1. In the **License Acceptance** dialog, select **I Accept**.
 1. In **Solution Explorer**, expand **eShop.AppHost** and then double-click _Program.cs_.
 1. Locate the following line of code:
 
@@ -133,15 +140,14 @@ Let's start by adding RabbitMQ to the AppHost project. When we start the solutio
 1. Immediately after that code, to register a RabbitMQ server, add this code:
 
     ```csharp
-    var messaging = builder.AddRabbitMQContainer("messaging");
+    var messaging = builder.AddRabbitMQ("messaging");
     ```
 
 1. Locate the following code, which registers the **Catalog.API** project for .NET Aspire orchestration:
 
     ```csharp
     var catalogApi = builder.AddProject<Catalog_API>("catalog-api")
-        .WithReference(catalogDb)
-        .WithReference(redis);
+        .WithReference(catalogDb);
     ```
 
 1. To pass the RabbitMQ service to the **Catalog.API** project, alter that code to match this code:
@@ -149,7 +155,6 @@ Let's start by adding RabbitMQ to the AppHost project. When we start the solutio
     ```csharp
     var catalogApi = builder.AddProject<Catalog_API>("catalog-api")
         .WithReference(catalogDb)
-        .WithReference(redis)
         .WithReference(messaging);
     ```
 
@@ -157,13 +162,12 @@ Let's start by adding RabbitMQ to the AppHost project. When we start the solutio
 
 Now, we can install and configure RabbitMQ in the Catalog.API project:
 
-1. In Visual Studio, in **Solution Explorer**, right-click the **Catalog.API** project, and then select **Open in Terminal**.
-1. In the **Developer PowerShell**, run this command:
-
-    ```dotnetcli
-    dotnet add package Aspire.RabbitMQ.Client --version 8.0.0-preview.4.24156.9
-    ```
-
+1. In Visual Studio, in **Solution Explorer**, right-click the **Catalog.API** project, select **Add**, and then select **.NET Aspire package**.
+1. In the search textbox, at the end of the existing text, type **RabbitMQ**.
+1. Select the **Aspire.RabbitMQ.Client** package.
+1. In the **Version** list, select the latest **8.0.0** version, and then select **Install**.
+1. If the **Preview Changes** dialog appears, select **Apply**.
+1. In the **License Acceptance** dialog, select **I Accept**.
 1. In **Solution Explorer**, expand the **Catalog.API** project, and then double-click _Program.cs_.
 1. In the _Program.cs_ file, locate the following line of code:
 
@@ -174,7 +178,7 @@ Now, we can install and configure RabbitMQ in the Catalog.API project:
 1. Immediately after that line, to register the RabbitMQ connection, add this code:
 
     ```csharp
-    builder.AddRabbitMQ("messaging");
+    builder.AddRabbitMQClient("messaging");
     ```
 
 ## Send a message to a RabbitMQ queue
@@ -187,8 +191,7 @@ When a user requests the items in the catalog, we want to send a message to a Ra
     ```csharp
     public static async Task<Results<Ok<PaginatedItems<CatalogItem>>, BadRequest<string>>> GetAllItems(
         [AsParameters] PaginationRequest paginationRequest,
-        [AsParameters] CatalogServices services,
-        IDistributedCache cache)
+        [AsParameters] CatalogServices services)
     {
     ```
 
@@ -198,7 +201,6 @@ When a user requests the items in the catalog, we want to send a message to a Ra
     public static async Task<Results<Ok<PaginatedItems<CatalogItem>>, BadRequest<string>>> GetAllItems(
         [AsParameters] PaginationRequest paginationRequest,
         [AsParameters] CatalogServices services,
-        IDistributedCache cache,
         RabbitMQ.Client.IConnection connection)
     {
     ```
@@ -233,6 +235,7 @@ When a user requests the items in the catalog, we want to send a message to a Ra
 
     channel.BasicPublish(exchange: string.Empty,
                          routingKey: "catalogEvents",
+						 mandatory: false,
                          basicProperties: null,
                          body: body);
     ```
@@ -256,28 +259,26 @@ To receive messages from the RabbitMQ queue, let's create a new project:
 
     ```csharp
     builder.AddProject<WebApp>("webapp")
-        .WithReference(catalogApi)
-        .WithReference(redis);
+        .WithReference(catalogApi);
     ```
 
 1. Immediately after that code, to add the **RabbitConsumer** project to .NET Aspire orchestration, add the following code:
 
     ```csharp
-    builder.AddProject<Projects.RabbitConsumer>("consumers").
-        WithReference(messaging);
+    builder.AddProject<Projects.RabbitConsumer>("consumers")
+        .WithReference(messaging);
     ```
 
 ## Configure the message consumer project
 
 Before we can receive messages in the new message consumer project, we must configure it to use the RabbitMQ backing service from the AppHost:
 
-1. In **Solution Explorer**, right-click the **RabbitConsumer** project, and then select **Open in Terminal**.
-1. In the **Developer PowerShell**, run this command:
-
-    ```dotnetcli
-    dotnet add package Aspire.RabbitMQ.Client --version 8.0.0-preview.4.24156.9
-    ```
-
+1. In Visual Studio, in **Solution Explorer**, right-click the **RabbitConsumer** project, select **Add**, and then select **.NET Aspire package**.
+1. In the search textbox, at the end of the existing text, type **RabbitMQ**.
+1. Select the **Aspire.RabbitMQ.Client** package.
+1. In the **Version** list, select the latest **8.0.0** version, and then select **Install**.
+1. If the **Preview Changes** dialog appears, select **Apply**.
+1. In the **License Acceptance** dialog, select **I Accept**.
 1. In **Solution Explorer**, right-click the **RabbitConsumer** project, point to **Add**, and then select **Project Reference**.
 1. In the list of projects, ensure that **eShop.ServiceDefaults** is selected, and then select **OK**.
 
@@ -289,13 +290,12 @@ Before we can receive messages in the new message consumer project, we must conf
     ```csharp
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
-    using RabbitConsumer;
 
     var builder = Host.CreateApplicationBuilder(args);
 
     builder.AddServiceDefaults();
 
-    builder.AddRabbitMQ("messaging");
+    builder.AddRabbitMQClient("messaging");
 
     var host = builder.Build();
 
@@ -309,7 +309,7 @@ Before we can receive messages in the new message consumer project, we must conf
 To receive a message, we must create a component that runs in the background waiting for messages to arrive. Use a `BackgroundService` class for this task:
 
 1. In **Solution Explorer**, right-click the **RabbitConsumer** project, point to **Add** and then select **Class**.
-1. In the **Name** textbox, type **CatalogProcessingJob.cs** and then select **Add**.
+1. In the **Name** textbox, type **CatalogProcessingJob** and then select **Add**.
 1. In the **CatalogProcessingJob.cs** class, remove all the default code, and replace it with the following lines:
 
     ```csharp
@@ -384,7 +384,7 @@ To receive a message, we must create a component that runs in the background wai
 1. Locate the following code:
 
     ```csharp
-    builder.AddRabbitMQ("messaging");
+    builder.AddRabbitMQClient("messaging");
     ```
 
 1. Immediately after that line, add the following code:
@@ -399,7 +399,7 @@ Let's test our RabbitMQ backing service and the microservices that send and rece
 
 1. In Visual Studio, to start the app in debugging mode, press <kbd>F5</kbd> or select **Debug > Start Debugging**.
 1. If the **Start Docker Desktop** message appears, select **Yes**. The app starts and displays the .NET Aspire dashboard in a browser tab.
-1. In the .NET Aspire dashboard, in the list of **Resources**, notice that the list includes a new container with the name **messaging**. The source is **rabbitmq:3**. This container runs the RabbitMQ message broker.
+1. In the .NET Aspire dashboard, in the list of **Resources**, notice that the list includes a new container with the name **messaging**. The source includes **rabbitmq:3**. This container runs the RabbitMQ message broker.
 
     :::image type="content" source="../media/dashboard-running-rabbitmq.png" lightbox="../media/dashboard-running-rabbitmq.png" alt-text="Screenshot showing a RabbitMQ container displayed in the .NET Aspire dashboard.":::
 

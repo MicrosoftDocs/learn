@@ -11,17 +11,19 @@ When you use RabbitMQ from .NET, you usually have to create a `ConnectionFactory
 - You register a connection and connection string in the **AppHost** project.
 - When you pass a reference to the service to consuming projects, they can use dependency injection to get a connection to RabbitMQ. They don't need to create and configure their own connections.
 
-In .NET Aspire, you must add the .NET Aspire RabbitMQ component to each project that uses it:
+### Configuring RabbitMQ in the app host
+
+In .NET Aspire, you must install the Rabbit MQ hosting component in the app host:
 
 ```dotnetcli
-dotnet add package Aspire.RabbitMQ.Client --prerelease
+dotnet add package Aspire.Hosting.RabbitMQ
 ```
 
-In your AppHost project, register the RabbitMQ service and pass it to projects that use it:
+Now, you can register the RabbitMQ service and pass it to projects that use it:
 
 ```csharp
 // Service registration
-var rabbit = builder.AddRabbitMQContainer("messaging");
+var rabbit = builder.AddRabbitMQ("messaging");
 
 // Service consumption
 builder.AddProject<Projects.CatalogAPI>()
@@ -30,10 +32,19 @@ builder.AddProject<Projects.CatalogAPI>()
 
 The `AppHost` manages the connection for all projects in the solution.
 
-In each project that uses RabbitMQ, you must install the .NET Aspire RabbitMQ component. Then, to obtain a reference to the RabbitMQ message broker, call the `AddRabbitMQ()` method:
+
+### Configuring Rab
+
+Next, add the .NET Aspire RabbitMQ component to each project that uses it:
+
+```dotnetcli
+dotnet add package Aspire.RabbitMQ.Client
+```
+
+To obtain a reference to the RabbitMQ message broker, call the `AddRabbitMQClient()` method:
 
 ```csharp
-builder.AddRabbitMQ("messaging");
+builder.AddRabbitMQClient("messaging");
 ```
 
 Now, you can use dependency injection to obtain the connection to RabbitMQ:

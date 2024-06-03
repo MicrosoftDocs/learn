@@ -8,13 +8,13 @@ In this unit, you'll see how RabbitMQ can create a flexible and resilient commun
 
 Cloud-native apps consist of independent microservices, often built by separate teams and using different technologies and languages. Each team has its own development sprints and upgrade schedules and may deploy fixes and new features continuously. However, when a request arrives from a user, the microservice that receives it almost always needs to call other microservices and backing services and receive replies from them to formulate the complete response.
 
-Obviously the format and schema of these inter-service requests and responses must be agreed between the development teams and change rarely. They're usually implemented as REST APIs. You should usually implement new features of each interface without altering existing methods and parameters. However, if you choose to have microservices communicate directly, several issues can arise:
+Obviously the format and schema of these inter-service requests and responses must be agreed between the development teams and change rarely. They're usually implemented as REST APIs. You should preferentially implement new features of each interface without altering existing methods and parameters. However, if you choose to have microservices communicate directly, several issues can arise:
 
 - When a destination microservice is offline or busy, what happens to messages sent to it? What are the consequences of messages being lost?
 - How can you send the same message to more than one destination?
 - If a microservice is running on more than one container, which should you send messages to?
 
-A message broker is middleware that addresses these issues. Services send messages to the message broker instead of directly to a destination. They're stored in queues in the order in which they arrived. Destination services subscribe to these queues and pick up messages, one at a time, for processing.
+A message broker is middleware that addresses these issues. Services send messages to the message broker instead of directly to a destination. The broker stores them in queues in the order in which they arrive. Destination services subscribe to these queues and pick up messages, one at a time, for processing.
 
 If the destination service is unavailable, the sending microservice can still place messages in the queue. When the destination restarts, it continues to pick up messages from the queue, from the same point. No messages are lost, although the sender has to wait for longer.
 
@@ -27,8 +27,6 @@ RabbitMQ is one of the most popular message brokers and has many features that m
 - The RabbitMQ server, which hosts the queues. The server supports clustering and failover for high availability and can run in containers.
 - Implementations of Advanced Message Queuing Protocol (AMQP), Simple Text Oriented Message Protocol (STOMP), and Message Queuing Telemetry Transport (MQTT).
 - AMQP client libraries that you can use in .NET, Java, and Erlang.
-
-Let's examine some important concepts in RabbitMQ:
 
 ### RabbitMQ concepts
 
