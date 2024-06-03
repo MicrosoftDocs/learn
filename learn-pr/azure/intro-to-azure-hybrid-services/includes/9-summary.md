@@ -37,7 +37,6 @@ You can learn more by referencing the following documentation:
 You can also learn more by reviewing the following Microsoft Training modules:
 
 - [Design a hybrid network architecture on Azure][design-a-hybrid-network-architecture]
-- [Expose hybrid services securely with Azure Relay][expose-hybrid-services-with-azure-relay]
 - [Manage hybrid workloads with Azure Arc][manage-hybrid-workloads-azure-arc]
 - [Implement hybrid identity with Windows Server][implement-hybrid-identity-windows-server]
 - [Implement a hybrid file server infrastructure][implement-hybrid-file-server-infrastructure]
@@ -71,7 +70,6 @@ You can also learn more by reviewing the following Microsoft Training modules:
 [azure-sentinel]: /azure/sentinel?azure-portal=true
 [overview]: /azure/automation/update-management/overview?azure-portal=true
 [design-a-hybrid-network-architecture]: /training/modules/design-a-hybrid-network-architecture?azure-portal=true
-[expose-hybrid-services-with-azure-relay]: /training/modules/expose-hybrid-services-with-azure-relay?azure-portal=true
 [manage-hybrid-workloads-azure-arc]: /training/modules/manage-hybrid-workloads-azure-arc?azure-portal=true
 [implement-hybrid-identity-windows-server]: /training/modules/implement-hybrid-identity-windows-server?azure-portal=true
 [implement-hybrid-file-server-infrastructure]: /training/modules/implement-hybrid-file-server-infrastructure?azure-portal=true
