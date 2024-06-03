@@ -171,11 +171,11 @@ Take notice of the resources section of the output. It defines the resources man
 
 You can also view deployment stacks in the Azure portal. They're available at their respective scopes. For a resource group, navigate to the resource group where the deployment stack is scoped. Under settings, you see an option for deployment stacks.
 
-:::image type="content" source="{../media/rg-deployment-stack-portal-1.png}" alt-text="{a graphic representing the properties of a resource group and where to find deployment stacks}":::
+:::image type="content" source="{(../media/rg-deployment-stack-portal-1.png)}" alt-text="{a graphic representing the properties of a resource group and where to find deployment stacks}":::
 
 When you click on deployment stacks, it lists any stacks scoped to the resource group. Clicking on a deployment stack takes you to the property page of the deployment stacks.
 
-:::image type="content" source="{../media/rg-deployment-stack-portal-2.png}" alt-text="{a graphic representing the properties of a deployment stack, including its managed resources}":::
+:::image type="content" source="{(../media/rg-deployment-stack-portal-2.png)}" alt-text="{a graphic representing the properties of a deployment stack, including its managed resources}":::
 
 ## Listing deployment stacks
 
