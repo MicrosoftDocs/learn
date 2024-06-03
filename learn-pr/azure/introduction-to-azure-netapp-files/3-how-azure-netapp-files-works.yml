@@ -5,9 +5,9 @@ metadata:
   unitType: learning-content
   title: How Azure NetApp Files works
   description: Learn how Azure NetApp Files works.
-  ms.date: 03/20/2023
+  ms.date: 06/04/2024
   author: mengruts
-  ms.author: mengtsai
+  ms.author: anfdocs
   ms.topic: unit
 durationInMinutes: 8
 content: |

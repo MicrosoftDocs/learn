@@ -5,9 +5,9 @@ metadata:
   unitType: learning-content
   title: When to use Azure NetApp Files
   description: Examine criteria and use cases to help you decide whether Azure NetApp Files is right for your organization.
-  ms.date: 03/20/2023
+  ms.date: 06/04/2024
   author: mengruts
-  ms.author: mengtsai
+  ms.author: anfdocs
   ms.topic: unit
 durationInMinutes: 12
 content: |
