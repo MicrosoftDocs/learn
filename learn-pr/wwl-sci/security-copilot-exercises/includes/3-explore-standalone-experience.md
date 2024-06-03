@@ -1,11 +1,9 @@
+The security administrator for your organization provisioned Copilot. Since you're the senior analyst on the team, the administrator added you as a Copilot owner and asked you familiarize yourself with the solution.
 
-In this exercise, you explore all the core features available in the standalone experience of Microsoft Copilot for Security.
-
-In this exercise, you start exploring all the key landmarks in the landing page of the standalone experience of Microsoft Copilot for Security. For this exercise, you have the Copilot owner role.
-
+In this exercise, you explore all the key landmarks in the landing page of the standalone experience of Microsoft Copilot for Security.
 
 > [!NOTE]
-> The environment for this exercise is based on a simulation, generated from pre-determined screen captures of the actual product. As a limited simulation, links on a page may not be enabled and **this exploration exercise does not accept any user inputs**.
+> The environment for this exercise is based on a simulation, generated from pre-determined screen captures of the actual product. As a limited simulation, links on a page may not be enabled. This exploration exercise does not accept any user inputs.
 
 ### Exercise
 
@@ -63,7 +61,7 @@ You start at the top left corner of the page and exploring the options in the ho
 
 #### Task: Explore access to recent sessions
 
-In the center of the landing page, you'll see cards representing your more recent sessions. 
+In the center of the landing page, there are cards representing your more recent sessions.
 
 1. Selecting the title of any session card takes you to that session.
 1. Select View all sessions to go to the My sessions page.
@@ -114,8 +112,8 @@ At the bottom right corner of the window is the help icon where you can easily a
 1. Select the **Help (?)** icon.
     1. Select **Documentation**. This selection opens a new browser tab to the Microsoft Copilot for Security documentation. Return to the Microsoft Copilot for Security browser tab.
     1. Select **Help**.
-        1. Anyone with access to Copilot for Security can access the self help widget by selecting the help icon then selecting the Help tab. Here you can find solutions to common problems by entering something about the problem. Select the right arrow key on your keyboard to prepopulate the prompt bar then select the arrow in the blue box or press enter.
-        1. Users with a minimum role of Service Support Administrator or Helpdesk Administrator role can submit a support case to the Microsoft support team. If you have this role, you see a headset icon. Close the contact support page.
+        1. Anyone with access to Copilot for Security can access the self help widget by selecting the help icon then selecting the Help tab. Here you can find solutions to common problems by entering something about the problem.
+        1. Users with a minimum role of Service Support Administrator or Helpdesk Administrator role can submit a support case to the Microsoft support team. If you have this role, a headset icon is displayed. Close the contact support page.
 
 #### Review
 

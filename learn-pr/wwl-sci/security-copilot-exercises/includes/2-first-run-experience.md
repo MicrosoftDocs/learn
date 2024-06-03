@@ -1,6 +1,6 @@
 The organization you work for wants to increase the efficiency and capabilities of its security analyst to improve security outcomes. In support of that objective, the office of the CISO determined that deploying Microsoft Copilot for Security is a key step towards that objective. As the Security administrator for your organization, you're tasked with setting up Copilot.
 
-In this exercise, you'll walk through the first run experience. 
+In this exercise, you go through the first run experience of Microsoft Copilot for Security.
 
 - You have a global administrator role within Microsoft Entra.
 - You'll provision Microsoft Entra with one security compute unit (SCU), to start.

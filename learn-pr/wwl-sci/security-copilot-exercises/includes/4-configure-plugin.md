@@ -16,10 +16,9 @@ Using the exercise environment, follow the exercise steps that are listed.
 
 When working with technology, it's not  uncommon to try use a feature and then realize, after some trouble-shooting, that you forgot to enable that feature. In this first task, you test a Microsoft Sentinel prompt with the Microsoft Sentinel plugin disabled. You go through this task so that you can get exposure to the information provided in the process log that helps you troubleshoot the issue.
 
-1. From the prompt bar, enter the prompt **Summarize the Microsoft Sentinel incident 30342**. You can use the right arrow key to prepopulate the prompt bar. Then select the run icon.
+1. From the prompt bar, enter the prompt **Summarize the Microsoft Sentinel incident 30342**. You can copy and paste the prompt into prompt bar. Then select the run icon.
 
 1. The Copilot process log shows that it can't complete your request. Expand the items in the process log for more detailed information.
-
 
 #### Task: Configure and enable the Microsoft Sentinel plugin
 
@@ -48,7 +47,7 @@ In this task, you'll configure the Sentinel plugin. To do this, you need to acce
 
 Now that the Sentinel plugin is enabled, you'll run the prompt you tried earlier. With the prompt successfully executed, you'll save the prompt to the pinboard and get a link to the session so you can share it with a colleague.
 
-1. From the prompt bar, enter the prompt **Summarize the Microsoft Sentinel incident 30342**. You can use the right arrow key to prepopulate the prompt bar. Then select the run icon.
+1. From the prompt bar, enter the prompt **Summarize the Microsoft Sentinel incident 30342**. You can copy and paste the prompt into the prompt bar. Then select the run icon.
 
 1. The Copilot process log shows that the prompt executed successfully by displaying green check marks.
 1. Select the box next to the prompt response, then select the pin icon.
