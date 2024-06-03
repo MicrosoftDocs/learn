@@ -45,5 +45,5 @@ quiz:
       explanation: "Azure NetApp Files volumes are accessible only within your virtual private network."
     - content: "Snapshots"
       isCorrect: true
-      explanation: "Correct. Azure NetApp Files doesn't provide a publicly (i.e. internet) accessible endpoint."
+      explanation: "Correct. Azure NetApp Files doesn't provide a publicly (that is, internet) accessible endpoint."
 

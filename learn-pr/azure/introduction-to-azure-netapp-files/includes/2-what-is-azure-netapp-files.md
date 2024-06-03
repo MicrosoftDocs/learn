@@ -40,7 +40,7 @@ Azure NetApp Files performance is measured in three ways:
 - **Throughput limits**: a storage-performance benchmark that measures a combination of read and write speeds. Azure NetApp Files can assign a maximum of 4,500 MiB/s to a regular size volume and 10,240 MiB/s to a large volume using the highest tier.
 - **Latency**: the time required to access a particular storage location. Azure NetApp Files offers an average latency of less than 1 millisecond.
 
-Azure NetApp Files provide fast and reliable all-flash performance with sub-millisecond latency by running performance-intensive workloads in the cloud with on-premises infrastructure-level performance.
+Azure NetApp Files provide fast and reliable all-flash performance with submillisecond latency by running performance-intensive workloads in the cloud with on-premises infrastructure-level performance.
 
 Azure NetApp Files provide three flexible performance tiers (Standard, Premium, and Ultra). The performance tiers offer the ability to dynamically change service levels based on workload needs. Using Azure NetApp Files storage with cool access, you can configure inactive data to move from Azure NetApp Files Standard service-level storage (the hot tier) to an Azure storage account (the cool tier). Enabling cool access moves inactive data blocks from the volume and the volume's snapshots to the cool tier, resulting in cost savings.  You need to choose the right performance level for workloads and can always dynamically adjust performance based on workload needs to balance cost with changing requirements.
 
@@ -69,7 +69,7 @@ Azure NetApp Files is designed to provide simplicity and high availability for y
 
 - Azure NetApp Files enables you to provision and manage volumes quickly and easily without the need for dedicated hardware or complex configurations.
 - Azure NetApp Files simplifies management and ensures consistency with other Azure services while providing a familiar interface and integration with existing tools and workflows.
-- Azure NetApp Files provides a high-availability SLA, that ensures that data is always available and accessible, avoiding downtime and disruption to business operations.
+- Azure NetApp Files provides a high-availability SLA that ensures that data is always available and accessible, avoiding downtime and disruption to business operations.
 - Azure NetApp Files enables you to move their workloads to Azure quickly and easily without the need for costly and time-consuming application refactoring or redesign.
 - Azure NetApp Files provides a simple-to-use and highly available file storage solution. 
 - Azure NetApp Files ensures that your data is easy to manage and highly available, recoverable, and accessible to your applications. Availability and remote access can be improved by utilizing cross-region or cross-zone replication. 
@@ -102,7 +102,7 @@ Azure NetApp Files offers the widest choice of file protocols among public cloud
 - SMB 2.x
 - SMB 3.x
 
-Azure NetApp Files also supports dual-protocol access to NFSv3, NFSv4.1 and SMB volumes. You can create volumes that use both supported NFS and SMB at the same time. Using both protocols on a volume enables both Linux-based and Windows-based enterprise applications that rely on file-based datasets to simultaneously access and share that data. You can also create Azure NetApp Files volumes that allow simultaneous dual-protocol (NFSv4.1 and SMB) access with support for LDAP user mapping.
+Azure NetApp Files also supports dual-protocol access to NFSv3, NFSv4.1, and SMB volumes. You can create volumes that use both supported NFS and SMB at the same time. Using both protocols on a volume enables both Linux-based and Windows-based enterprise applications that rely on file-based datasets to simultaneously access and share that data. You can also create Azure NetApp Files volumes that allow simultaneous dual-protocol (NFSv4.1 and SMB) access with support for LDAP user mapping.
 
 ## Data management
 
@@ -116,10 +116,10 @@ Azure NetApp Files volumes are served from a bare-metal fleet powered by ONTAP r
 
 Quickly and easily back up data and restore it to a previous point in time, minimizing downtime and reducing the risk of data loss. Instantly restore data from a snapshot quickly and accurately.
 
-Snapshots offer low overhead because of Azure NetApp Files' volume virtualization technology, using and manipulating pointers to the actual data blocks on disk. It does not rewrite or overwrite existing blocks. Instead it writes updated data to a new unused block and changes the pointer(s).
+Snapshots offer low overhead because of Azure NetApp Files' volume virtualization technology, using and manipulating pointers to the actual data blocks on disk. It does not rewrite or overwrite existing blocks. Instead it writes updated data to a new unused block and changes the pointers.
 
 When you delete a volume, its snapshots are deleted, but backups remain.
 
 ### Cross-region and cross-zone replication
 
-Azure NetApp Files replication functionality provides data protection through cross-region and cross-zone volume replication. This functionality can asynchronously replicate data from an Azure NetApp Files volume (source) in one region or zone to another Azure NetApp Files volume (destination) in another region or zone without any load on your application server(s). This capability enables you to fail over your critical application(s) in case of a region-wide or zone-wide outage or disaster.
+Azure NetApp Files replication functionality provides data protection through cross-region and cross-zone volume replication. This functionality can asynchronously replicate data from an Azure NetApp Files volume (source) in one region or zone to another Azure NetApp Files volume (destination) in another region or zone without any load on your application servers. This capability enables you to fail over your critical applications in case of a region-wide or zone-wide outage or disaster.

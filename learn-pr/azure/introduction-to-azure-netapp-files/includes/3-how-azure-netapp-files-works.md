@@ -8,7 +8,7 @@ One of the most important components of Azure NetApp Files is the storage hierar
 
 Azure NetApp Files requires an Azure subscription. Visit the Microsoft Azure website to set up a subscription and for details about pricing. Before creating a volume in Azure NetApp Files, you must have a NetApp account and set up a pool for provisioned capacity. 
 
-A **NetApp account** serves as an administrative grouping of the various capacity pools, and it is not the same as your general Azure storage account. A NetApp account is regional in scope. You can have multiple NetApp accounts in a region, but each NetApp account is tied to only a single region. You can have up to 10 NetApp accounts per region, this is a soft limit and can be increased by a Microsoft support ticket if needed.
+A **NetApp account** serves as an administrative grouping of the various capacity pools, and it is not the same as your general Azure storage account. A NetApp account is regional in scope. You can have multiple NetApp accounts in a region, but each NetApp account is tied to only a single region. You can have up to 10 NetApp accounts per region; this limit is soft and can be increased by a Microsoft support ticket if needed.
 
 A **capacity pool** is measured and billed by its provisioned capacity and its service level. The capacity is provisioned by the fixed SKUs that you purchased. A capacity pool can have only one service level. Each capacity pool can belong to only one NetApp account. However, you can have multiple capacity pools within a NetApp account. A capacity pool cannot be moved across NetApp accounts. For example, capacity pool 1 cannot be moved from the South-Central US NetApp account to a West Europe NetApp account.
 

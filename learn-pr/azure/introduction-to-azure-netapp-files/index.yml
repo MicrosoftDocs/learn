@@ -16,7 +16,7 @@ abstract: |
     - Understand how Azure NetApp Files provides enterprise-grade storage in Azure.
     - Evaluate whether Azure NetApp Files is appropriate for migrating and running your organization's file-based workloads.
     - Describe the performance tiers of Azure NetApp Files and choose a performance level that fits your workload requirements.
-    - Understand how Azure NetApp Files will support your application running in Azure. 
+    - Understand how Azure NetApp Files supports your application running in Azure. 
 prerequisites: |
   - Basic knowledge of Azure products, including Azure Virtual Network and Azure Virtual Gateway.
   - Basic knowledge of networked file system protocols, particularly Server Message Block (SMB) and Network File System (NFS).

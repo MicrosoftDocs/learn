@@ -22,14 +22,14 @@ Azure NetApp Files is the correct choice for shared network storage when file-ba
 
 ### Should an Oracle Database team use Azure NetApp Files?
 
-The most demanding Oracle Database workloads require very high I/O capacity and low-latency access to storage. The solution provides shared file access with the network file system (NFS) protocol. The architecture uses Azure NetApp Files, a shared file-storage service. Azure NetApp Files offers benefits:
+The most demanding Oracle Database workloads require high I/O capacity and low-latency access to storage. The solution provides shared file access with the network file system (NFS) protocol. The architecture uses Azure NetApp Files, a shared file-storage service. Azure NetApp Files offers benefits:
 
 - Disk I/O limits on access rates that apply at the virtual machine (VM) level don't affect Azure NetApp Files. As a result, you can use smaller VM SKUs than you would with disk storage, without degrading performance. This approach can significantly reduce costs.
 - Azure NetApp Files offers flexibility. You can enlarge or shrink deployments on demand to keep your configuration cost effective.
 
 As a simple-to-consume Azure native service, Azure NetApp Files runs within the Azure datacenter environment. You can provision, consume, and scale Azure NetApp Files just like other Azure storage options. Azure NetApp Files uses a bare-metal fleet of all-flash storage. Besides using shared and highly scalable storage, Azure NetApp Files provides latencies of less than 1 millisecond. These factors make this service well-suited for using the NFS protocol to run Oracle Database workloads over networks. 
 
-The following diagram depicts a possible architecture. The components interact as follows: 
+The following diagram depicts a possible architecture. The components interact as follows:
 
 - Oracle Database runs on Azure VMs within the Oracle subnet.
 - In the Azure NetApp Files subnet, Azure NetApp Files provides NFS access to the data and log files.
@@ -37,7 +37,7 @@ The following diagram depicts a possible architecture. The components interact a
 
 Azure NetApp Files makes it easy to create, migrate, and run file-based applications with no code changes. This shared file-storage service is a joint development from Microsoft and NetApp, a Microsoft partner. Azure Virtual Network is a networking service that manages virtual private networks in Azure. Azure Virtual Network also provides scalability, availability, isolation, and other benefits of Azure infrastructure. Oracle Database is a multi-model database management system. It supports various data types and workloads.
 
-:::image type="content" source="../media/4-oracle-deployment.png" alt-text="Diagram depicting an Oracle Dababase deployment on Azure NetApp Files." lightbox="../media/4-oracle-deployment.png":::
+:::image type="content" source="../media/4-oracle-deployment.png" alt-text="Diagram depicting an Oracle Database deployment on Azure NetApp Files." lightbox="../media/4-oracle-deployment.png":::
 
 ### Should an Azure Virtual Desktop team use Azure NetApp Files?
 
