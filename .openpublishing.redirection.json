@@ -29804,26 +29804,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/3-examine-visual-studio-code-user-interface.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/4-examine-visual-studio-code-user-interface",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/4-exercise-explore-visual-studio-code-user-interface.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/5-exercise-explore-visual-studio-code-user-interface",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/5-exercise-configure-visual-studio-code.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/6-exercise-configure-visual-studio-code",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/6-exercise-install-dotnet.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/3-exercise-install-dotnet",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/build-daemon-python/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
       "redirect_document_id": false
@@ -40132,6 +40112,26 @@
     {
       "source_path": "learn-pr/wwl-azure/work-azure-repos-github/7-knowledge-check.md",
       "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/3-exercise-install-dotnet.md",
+      "redirect_url": "/training/modules/install-configure-visual-studio-code/6-exercise-install-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/4-examine-visual-studio-code-user-interface.md",
+      "redirect_url": "/training/modules/install-configure-visual-studio-code/3-examine-visual-studio-code-user-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/5-exercise-explore-visual-studio-code-user-interface.md",
+      "redirect_url": "/training/modules/install-configure-visual-studio-code/4-exercise-explore-visual-studio-code-user-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/6-exercise-configure-visual-studio-code.md",
+      "redirect_url": "/training/modules/install-configure-visual-studio-code/5-exercise-configure-visual-studio-code",
       "redirect_document_id": false
     }
   ]
