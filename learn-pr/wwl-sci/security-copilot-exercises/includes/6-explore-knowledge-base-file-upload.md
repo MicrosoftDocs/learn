@@ -22,7 +22,7 @@ In this task, you start by attempting a file upload but realize that there's no 
 1. You review the information in the files upload window, but there's no option to actually upload files. This is an indication that the owner setting that controls this option has been changed from the default. After conferring with the other Copilot owner, you realize this was disabled in error and agree this should be set.
     1. Select the home menu (hamburger icon).
     1. Select owner settings.
-    1. Scoll-down to Files. Select the drop-down and set it to owners and contributors can upload files.
+    1. Scroll-down to Files. Select the drop-down and set it to owners and contributors can upload files.
 
 #### Task: Upload a file and run test prompts
 
