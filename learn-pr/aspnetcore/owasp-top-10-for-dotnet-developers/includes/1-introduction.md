@@ -29,7 +29,7 @@ AppSec logically falls under the wider context of **Information Security (InfoSe
 
 ### Meet the team
 
-Suppose you're joining a new IT company with an established team working on a legacy software. Your team's main focus is maintaining, supporting, and developing new features of a rich web application customers all around the world use. The website and its underlying infrastructure have only recently been migrated to Microsoft Azure cloud.
+Suppose you're joining a new IT company with an established team working on a legacy software. Your team's main focus is maintaining, supporting, and developing new features of a rich web application that customers all around the world use. The website and its underlying infrastructure have only recently been migrated to Microsoft Azure cloud.
 
 The team you're part of has a mix of talent, including early-career and seasoned enterprise developers.
 

@@ -3,7 +3,7 @@ Highly configurable and distributed software, along with supporting services and
 
 ### Security hardening
 
-The application might be vulnerable if the it's missing a rigorous, repeatable application security configuration process.
+The application might be vulnerable if it's missing a rigorous, repeatable application security configuration process.
 
 The following image shows a typical enterprise-scale application with supporting DevOps process. Here, security misconfiguration can apply to how you protect developer workstations, handle app secrets in your application, protect the CI/CD process, and so on.
 

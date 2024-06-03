@@ -1,4 +1,4 @@
-The odentification and authentication failures category covers weaknesses in confirming a user's identity, authentication, and session management in protection against authentication-related attacks.
+The identification and authentication failures category covers weaknesses in confirming a user's identity, authentication, and session management in protection against authentication-related attacks.
 
 As we discussed earlier, authentication is a process in which a user provides credentials that are then compared to credentials stored by the identity provider. If the credentials match, users authenticate successfully, and can then perform actions that they're authorized for. Authorization refers to the process that determines what a user is allowed to do.
 
