@@ -5,14 +5,13 @@ application infrastructure, and then configure the Java application to use.
 
 ## Create the application infrastructure
 
-In this exercise, you'll use Azure CLI to create the following resources:
+In this exercise, you use Azure CLI to create the following resources:
 
-- An Azure resource group, that will contain all the resources for your application.
+- An Azure resource group that contains all the resources for your application.
 - A PostgreSQL database server.
-- An Azure Spring Apps cluster, and a Spring Boot application running inside this cluster.
+- An Azure Spring Apps cluster and a Spring Boot application running inside this cluster.
 
-You need to provide some environment variables at the beginning of the script, that should be unique across Azure.
-We recommend you use your username and some random characters to avoid naming conflicts.
+You need to provide some environment variables at the beginning of the script that should be unique across Azure. 
 
 You also need to provide your local IP address to access the database from your local computer. This IP address should
 be an IPv4 Address. If you don't know your local IP address, you can go to the following website: https://www.whatismyip.com/
@@ -29,16 +28,21 @@ AZ_LOCAL_IP_ADDRESS=<YOUR_LOCAL_IP_ADDRESS>
 Once those environment variables are set, you can run the following command to create the resources:
 
 ```bash
-
 AZ_LOCATION=eastus
-AZ_SPRING_CLOUD=spring-${AZ_RESOURCE_GROUP}
+# Must be all lowercase
+AZ_SPRING_CLOUD=spring-${AZ_RESOURCE_GROUP,,}
+
 AZ_DATABASE_NAME=pgsql-${AZ_RESOURCE_GROUP}
 AZ_DATABASE_USERNAME=${AZ_DATABASE_USERNAME}
 
 az group create \
     --name $AZ_RESOURCE_GROUP \
     --location $AZ_LOCATION
+```
 
+This command can take several minutes to complete.
+
+```bash
 az postgres server create \
     --resource-group $AZ_RESOURCE_GROUP \
     --name $AZ_DATABASE_NAME \
@@ -47,30 +51,47 @@ az postgres server create \
     --storage-size 5120 \
     --admin-user $AZ_DATABASE_USERNAME \
     --admin-password $AZ_DATABASE_PASSWORD
+```
+
+```bash
 az postgres server firewall-rule create \
     --resource-group $AZ_RESOURCE_GROUP \
     --name $AZ_DATABASE_NAME-database-allow-local-ip \
     --server $AZ_DATABASE_NAME \
     --start-ip-address $AZ_LOCAL_IP_ADDRESS \
     --end-ip-address $AZ_LOCAL_IP_ADDRESS
+
 az postgres server firewall-rule create \
     --resource-group $AZ_RESOURCE_GROUP \
     --name $AZ_DATABASE_NAME-database-allow-azure-ip \
     --server $AZ_DATABASE_NAME \
     --start-ip-address 0.0.0.0 \
     --end-ip-address 0.0.0.0
+```
+
+```bash
 az postgres db create \
     --resource-group $AZ_RESOURCE_GROUP \
     --name demo \
     --server-name $AZ_DATABASE_NAME
+```
 
-az extension add --name spring-cloud
-az spring-cloud create \
+This command can take several minutes to complete.
+
+```bash
+az extension add --name spring
+
+az spring create \
    --name $AZ_SPRING_CLOUD \
    --resource-group $AZ_RESOURCE_GROUP \
    --location $AZ_LOCATION \
    --sku Basic
-az spring-cloud app create \
+```
+
+This command can take several minutes to complete.
+
+```bash
+az spring app create \
    --resource-group $AZ_RESOURCE_GROUP \
    --service $AZ_SPRING_CLOUD \
    --name application \
@@ -78,7 +99,7 @@ az spring-cloud app create \
    --assign-endpoint true
 ```
 
-This script will take some time to run, so you can keep it in the background and start coding the application in the meantime.
+These scripts take some time to run, so you can let them run in the background and start coding the application in the meantime.
 
 ## Configure the Java application
 
@@ -88,7 +109,7 @@ Get the application skeleton from the https://github.com/Azure-Samples/manage-se
 git clone https://github.com/Azure-Samples/manage-secrets-in-java-applications.git
 ```
 
-This application uses Spring Data JPA to access the database, you can look at the CRUD Repository interface:
+This application uses the Spring Data Java Persistence API (JPA) to access the database. You can look at the CRUD Repository interface:
 
 ```java
 package com.example.demo;
@@ -133,7 +154,7 @@ insert into item (details) values ('This is a item from the database');
 
 You can add more lines to this file if you want more data, or if you want to customize it.
 
-To access the database, you'll need to configure the `src/main/resources/application.properties` file:
+To access the database, you need to configure the `src/main/resources/application.properties` file:
 
 ```properties
 logging.level.org.springframework.jdbc.core=DEBUG
@@ -151,7 +172,7 @@ This configuration file has three variables that need to be configured:
 - `${azureDatabaseUsername}` is the name of the database username that was configured earlier in the `AZ_DATABASE_USERNAME` environment variable. Type `echo $AZ_DATABASE_USERNAME` to see it.
 - `${azureDatabasePassword}` is the name of the database password that was configured earlier in the `AZ_DATABASE_PASSWORD` environment variable. Type `echo $AZ_DATABASE_PASSWORD` to see it.
 
-As we've seen in the previous unit, it's a bad practice to hard-code those values in the application
+As we saw in the previous unit, it's a bad practice to hard-code those values in the application
 source code. But to test the application, you can write them temporarily and run the application:
 
 ```bash
@@ -167,27 +188,27 @@ curl http://localhost:8080
 
 ## Deploy the Java application to Azure
 
-To deploy the application, you'll first need to package it as a Jar file:
+To deploy the application, you first need to package it as a Jar file:
 
 ```bash
 ./mvnw clean package
 ```
 
-This command will produce an executable Jar file in the `target` directory, that you'll deploy using
+This command produces an executable Jar file in the `target` directory, that you deploy using
 the Azure CLI:
 
 ```bash
-az spring-cloud app deploy \
+az spring app deploy \
    --resource-group $AZ_RESOURCE_GROUP \
    --service $AZ_SPRING_CLOUD \
    --name application \
-   --jar-path target/*.jar
+   --artifact-path target/*.jar
 ```
 
-If anything goes bad, you can look at the application logs by typing the following command:
+If you encounter failures, you can look at the application logs by typing the following command:
 
 ```bash
-az spring-cloud app logs \
+az spring app logs \
    --resource-group $AZ_RESOURCE_GROUP \
    --service $AZ_SPRING_CLOUD \
    --name application
@@ -198,7 +219,12 @@ command:
 
 ```bash
 curl https://$AZ_SPRING_CLOUD-application.azuremicroservices.io
+
+# Expected output:
+#
+# Here are all the database items: [Secret{Id=1, details='This is a item from the database'}]
+#
 ```
 
-Congratulations, you've successfully created a Java application that connects to a database! Now
-you'll need to secure the database credentials in the next units.
+Congratulations! You successfully created a Java application that connects to a database! Now
+you need to secure the database credentials in the next units.

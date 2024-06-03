@@ -17,11 +17,11 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What is the LESS SECURE way to store your application secrets?"
+    - content: "What is the LEAST SECURE way to store your application secrets?"
       choices:
         - content: "Expose them as environment variables."
           isCorrect: false
-          explanation: "Incorrect. Environment variables are commonly used and aren't the less secure solution."
+          explanation: "Incorrect. Environment variables are commonly used and aren't the least secure solution."
         - content: "Store them in the application source code."
           isCorrect: true
           explanation: "You're correct. Storing secrets in the source code means that anybody with access to your code will know your secrets."
@@ -30,7 +30,7 @@ quiz:
           explanation: "Incorrect. A Secrets store, like Azure Key Vault, is the best solution for storing your secrets."
         - content: "Store them using Kubernetes secrets."
           isCorrect: false
-          explanation: "Incorrect. Kubernetes secrets are commonly used with Kubernetes, and aren't the less secure solution."
+          explanation: "Incorrect. Kubernetes secrets are commonly used with Kubernetes, and aren't the least secure solution."
     - content: "How can a Java application access secret stored in Azure Key Vault?"
       choices:
         - content: "The application needs to store a login/password to Azure Key Vault in its source code"
