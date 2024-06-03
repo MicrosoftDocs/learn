@@ -1,6 +1,8 @@
+Managing sensitive information is crucial for any organization. Applying sensitivity labels in Microsoft 365 helps protect data by classifying and securing it across different platforms and collaboration tools. These labels ensure that sensitive information is only accessible to authorized individuals, maintaining compliance and data security throughout the project lifecycle.
+
 As our firm begins the project to launch a new service powered by data analysis and AI, we're faced with the critical task of managing sensitive information. This includes everything from our clients' financial details to strategic plans. Your role in ensuring the safety of this data is crucial. Equipped with Microsoft 365 sensitivity labels, you're prepared to protect our project at every stage.
 
-This unit guides you on how to:
+Here you learn to:
 
 - **Secure email communication**: Apply sensitivity labels in Outlook on the web to determine who can view project-related emails.
 - **Safeguard shared spaces**: Protect documents and discussions during the service launch by applying sensitivity labels in SharePoint and Teams.
@@ -89,7 +91,3 @@ If sensitivity labels are created with a Group & site setting and the user has a
 Microsoft Entra ID supports applying sensitivity labels published by the Microsoft Purview compliance portal to Microsoft 365 groups. To learn more about applying sensitivity labels to Microsoft 365 groups, see [Assign sensitivity labels to Microsoft 365 groups in Microsoft Entra ID](/entra/identity/users/groups-assign-sensitivity-labels?azure-portal=true).
 
 Now that we've applied sensitivity labels to Microsoft 365 services, we've improved how we protect our project's data. Next, we focus on securing our meetings in Microsoft Teams and Outlook. By using sensitivity labels for meetings, we make sure that only the authorized individuals can join these discussions, keeping our information secure and private. This is our next step in keeping our firm's data safe and compliant.
-
-## Knowledge check
-
-Select the best response to the question, then select **Check your answers**.
