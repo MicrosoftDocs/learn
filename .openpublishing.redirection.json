@@ -29804,26 +29804,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/3-examine-visual-studio-code-user-interface.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/4-examine-visual-studio-code-user-interface",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/4-exercise-explore-visual-studio-code-user-interface.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/5-exercise-explore-visual-studio-code-user-interface",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/5-exercise-configure-visual-studio-code.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/6-exercise-configure-visual-studio-code",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/6-exercise-install-dotnet.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/3-exercise-install-dotnet",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/build-daemon-python/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/quickstart-daemon-app-python-acquire-token",
       "redirect_document_id": false
@@ -33978,6 +33958,136 @@
     {
       "source_path": "learn-pr/azure/intro-to-personalizer/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/2-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/3-deploy-microsoft-purview.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/4-deploy-microsoft-purview-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/5-deployment-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/6-access-control.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/7-access-control-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/8-access-control-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/9-register-scan.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/10-register-scan-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/govern-azure-databases-with-microsoft-purview/govern-manage-azure-sql-data.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/purview/register-scan-azure-sql-database?tabs=sql-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/govern-azure-databases-with-microsoft-purview/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/purview/register-scan-azure-sql-database?tabs=sql-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/govern-azure-databases-with-microsoft-purview/introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/purview/register-scan-azure-sql-database?tabs=sql-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/govern-azure-databases-with-microsoft-purview/knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/purview/register-scan-azure-sql-database?tabs=sql-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/govern-azure-databases-with-microsoft-purview/register-scan-azure-sql-data.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/purview/register-scan-azure-sql-database?tabs=sql-authentication",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/azure/govern-azure-databases-with-microsoft-purview/register-scan-azure-sql-managed-instance-data.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/purview/register-scan-azure-sql-database?tabs=sql-authentication",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/azure/govern-azure-databases-with-microsoft-purview/summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/purview/register-scan-azure-sql-database?tabs=sql-authentication",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/azure/govern-sql-server-with-microsoft-purview/discover-govern-data-different-sources-using-microsoft-purview.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/purview/register-scan-azure-sql-database?tabs=sql-authentication",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/azure/govern-sql-server-with-microsoft-purview/govern-manage-data-from-amazon-relational-database-service.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/purview/register-scan-azure-sql-database?tabs=sql-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/govern-sql-server-with-microsoft-purview/govern-manage-data-sql-server.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/purview/register-scan-azure-sql-database?tabs=sql-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/govern-sql-server-with-microsoft-purview/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/purview/register-scan-azure-sql-database?tabs=sql-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/govern-sql-server-with-microsoft-purview/introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/purview/register-scan-azure-sql-database?tabs=sql-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/govern-sql-server-with-microsoft-purview/knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/purview/register-scan-azure-sql-database?tabs=sql-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/govern-sql-server-with-microsoft-purview/summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/purview/register-scan-azure-sql-database?tabs=sql-authentication",
       "redirect_document_id": false
     },
     {
@@ -40132,6 +40242,26 @@
     {
       "source_path": "learn-pr/wwl-azure/work-azure-repos-github/7-knowledge-check.md",
       "redirect_url": "/training/paths/az-400-work-git-for-enterprise-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/3-exercise-install-dotnet.md",
+      "redirect_url": "/training/modules/install-configure-visual-studio-code/6-exercise-install-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/4-examine-visual-studio-code-user-interface.md",
+      "redirect_url": "/training/modules/install-configure-visual-studio-code/3-examine-visual-studio-code-user-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/5-exercise-explore-visual-studio-code-user-interface.md",
+      "redirect_url": "/training/modules/install-configure-visual-studio-code/4-exercise-explore-visual-studio-code-user-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/6-exercise-configure-visual-studio-code.md",
+      "redirect_url": "/training/modules/install-configure-visual-studio-code/5-exercise-configure-visual-studio-code",
       "redirect_document_id": false
     }
   ]
