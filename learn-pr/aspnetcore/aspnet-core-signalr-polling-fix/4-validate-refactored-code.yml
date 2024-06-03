@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Validate ASP.NET Core SignalR refactoring
   description: "In this unit, you validate ASP.NET Core SignalR refactoring to ensure that the source is functionally equivalent."
-  ms.date: 11/09/2021
+  ms.date: 06/03/2024
   author: IEvangelist
   ms.author: dapine
   ms.manager: markl
