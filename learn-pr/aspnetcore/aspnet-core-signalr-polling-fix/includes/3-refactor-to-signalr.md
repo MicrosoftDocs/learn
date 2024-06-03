@@ -15,7 +15,7 @@ The *BlazingPizza.Client.csproj* file added the following NuGet package referenc
 
 :::code language="xml" source="~/../blazing-pizza-signalr/blazor-workshop/src/BlazingPizza.Client/BlazingPizza.Client.csproj" highlight="12-13":::
 
-The MessagePack NuGet package was added to make messages sent between the client and server smaller.
+The MessagePack NuGet package was added to make the messages that are sent between the client and server smaller.
 
 ## Refactored server app
 
@@ -23,7 +23,7 @@ The server is responsible for exposing a SignalR endpoint. The endpoint maps to 
 
 ### The addition of the `OrderStatusHub`
 
-ASP.NET Core SignalR supports strongly typed hub implementations, <xref:Microsoft.AspNetCore.SignalR.Hub%601>, where `T` is the client type. Consider the following *IOrderStatusHubs.cs* file:
+ASP.NET Core SignalR supports hub implementations that are "strongly typed" such as <xref:Microsoft.AspNetCore.SignalR.Hub%601>, where `T` is the client type. Consider the following *IOrderStatusHubs.cs* file:
 
 :::code source="~/../blazing-pizza-signalr/blazor-workshop/src/BlazingPizza.Server/Hubs/IOrderStatusHub.cs":::
 
@@ -31,7 +31,7 @@ The preceding interface defines a single method, which acts as an event that cli
 
 :::code source="~/../blazing-pizza-signalr/blazor-workshop/src/BlazingPizza.Server/Hubs/OrderStatusHub.cs":::
 
-The preceding hub implementation exposes two methods that are invokable from clients. A client calls `StartTrackingOrder` and is given an `order` instance, and the client's unique connection is added to a group where notifications will be sent. Likewise, a call to `StopTrackingOrder` has the connection leave the group and no longer receive notifications.
+The preceding hub implementation exposes two methods that are invokable from clients. A client calls `StartTrackingOrder` and is given an `order` instance, and the client's unique connection is added to a group that notifications are sent from. Likewise, a call to `StopTrackingOrder` has the connection leave the group and no longer receive notifications.
 
 ### SignalR server configuration
 
@@ -86,7 +86,7 @@ The configuration of the SignalR connection requires a few more injected propert
 - The `[Inject] public NavigationManager Nav { get; set; }` property is used to resolve the hub's endpoint.
 - The `[Inject] public IAccessTokenProvider AccessTokenProvider { get; set; }` property is used to assign the `AccessTokenProvider` to the hub connection's options object. This property ensures that all communications correctly provide the authenticated user's access token.
 
-The `OnInitializedAsync` override method uses the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionBuilder> object to build the `_hubConnection` instance. It's configured to automatically reconnect, and it specifies the MessagePack protocol. With the `_hubConnection` instance, the page subscribes to the `"OrderStatusChanged"` hub event and sets the `OnOrderStatusChangedAsync` as its corresponding event handler. The hub connection is then started using <xref:Microsoft.AspNetCore.SignalR.Client.HubConnection.StartAsync%2A?displayProperty=nameWithType>.
+The `OnInitializedAsync` override method uses the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionBuilder> object to build the `_hubConnection` instance. The `_hubConnection` instance is configured to automatically reconnect, and it specifies the MessagePack protocol. With the `_hubConnection` instance, the page subscribes to the `"OrderStatusChanged"` hub event and sets the `OnOrderStatusChangedAsync` as its corresponding event handler. The hub connection is then started using <xref:Microsoft.AspNetCore.SignalR.Client.HubConnection.StartAsync%2A?displayProperty=nameWithType>.
 
 The `OnOrderStatusChangedAsync` event handler method accepts the `OrderWithStatus` instance as its parameter and then returns <xref:System.Threading.Tasks.Task>. It reassigns the `_orderWithStatus` class variable and calls <xref:Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged>.
 

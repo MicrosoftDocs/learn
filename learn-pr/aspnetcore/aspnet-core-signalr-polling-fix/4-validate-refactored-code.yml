@@ -19,13 +19,13 @@ quiz:
       choices:
         - content: "It's an implementation of `Hub<IOrderStatusHub>`."
           isCorrect: true
-          explanation: "Correct! The hub from the refactor implements the strongly typed `Hub<TClient>`."
+          explanation: "Correct! The hub from the code refactoring implements the 'strongly typed' `Hub<TClient>`."
         - content: "It's an implementation of `HubConnection`."
           isCorrect: false
           explanation: "Incorrect. The `HubConnection` is a client-side concept."
         - content: "It's an implementation of `Hub`."
           isCorrect: false
-          explanation: "Incorrect. Although this statement is partially true, the hub implements the strongly typed `Hub<TClient>`."
+          explanation: "Incorrect. Although this statement is partially true, the hub implements the 'strongly typed' `Hub<TClient>`."
 
     - content: "Why was SignalR a preferred alternative to client-side polling?"
       choices:
@@ -51,7 +51,7 @@ quiz:
           isCorrect: false
           explanation: "Incorrect. SignalR creates a duplex communication, in which the server and client can send messages to each other."
 
-    - content: "As part of the refactor, what parts of the code had to change?"
+    - content: "As part of the refactoring, what parts of the code had to change?"
       choices:
         - content: "Only the client-side code. The server-side code was already functionally sound."
           isCorrect: false
@@ -59,6 +59,6 @@ quiz:
         - content: "Only the server-side code. The client-side code was already functionally sound."
           isCorrect: false
           explanation: "Incorrect. The client-side code had to consume `HubConnection` to communicate with the server."
-        - content: "Both the client-side code and server-side code were updated as part of the refactor."
+        - content: "Both the client-side code and server-side code were updated as part of the refactoring."
           isCorrect: true
           explanation: "Correct! The client-side code used `HubConnection` to connect to the server-side `OrderStatusHub` class."
