@@ -3,36 +3,38 @@ uid: learn.wwl.implement-disaster-recovery-for-sap-workloads-azure.knowledge-che
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 10/18/2023
+  description: "Check what you learn in this module."
+  ms.date: 05/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following SAP tiers is it recommended be protected by replicating using Azure Site Recovery?"
+  - content: "Which of the following SAP tiers is it recommended to protect by replicating using Azure Site Recovery?"
     choices:
     - content: "Active Directory virtual machines"
       isCorrect: false
-      explanation: "That’s incorrect. For Active Directory virtual machines, Active Directory replication is recommended."
+      explanation: "Incorrect. For Active Directory virtual machines, Active Directory replication is recommended."
     - content: "SAP Central Services cluster"
       isCorrect: true
       explanation: "Correct. It's recommended to use Azure Site Recovery to protect the SAP Web Dispatcher Pool, SAP Application server pool, and the SAP Central Services cluster. For Active Directory virtual machines, Active Directory replication is recommended, and for SQL Server databases, SQL Always On replication is recommended."
     - content: "SQL Server databases"
       isCorrect: false
-      explanation: "That’s incorrect. For SQL Server databases, SQL Always On replication is recommended."
+      explanation: "Incorrect. For SQL Server databases, SQL Always On replication is recommended."
   - content: "For which of the following is the recommended disaster recovery strategy to use DBMS-specific mechanisms such as SQL Server Always On or HANA System Replication?"
     choices:
     - content: "Application servers"
       isCorrect: false
-      explanation: "That’s incorrect. SAP application servers don't contain business data. On Azure, a simple DR strategy is to create SAP application servers in the secondary region, then shut them down. Upon any configuration changes or kernel updates on the primary application server, the same changes must be applied to the virtual machines in the secondary region. For example, copy the SAP kernel executables to the DR virtual machines. For automatic replication of application servers to a secondary region, Azure Site Recovery is the recommended solution."
+      explanation: "Incorrect. SAP application servers don't contain business data. On Azure, a simple DR strategy is to create SAP application servers in the secondary region, then shut them down. Upon any configuration changes or kernel updates on the primary application server, the same changes must be applied to the virtual machines in the secondary region. For example, copy the SAP kernel executables to the DR virtual machines. For automatic replication of application servers to a secondary region, Azure Site Recovery is the recommended solution."
     - content: "Central Services servers"
       isCorrect: false
-      explanation: "That’s incorrect. This component of the SAP application stack doesn't persist business data. A VM can be built in the secondary region to run the Central Services role. To synchronize the two servers, users can use either Azure Site Recovery, to replicate the cluster nodes, or use a regularly scheduled copy job to copy /sapmnt to the DR side."
+      explanation: "Incorrect. This component of the SAP application stack doesn't persist business data. A virtual machine can be built in the secondary region to run the Central Services role. To synchronize the two servers, users can use either Azure Site Recovery, to replicate the cluster nodes, or use a regularly scheduled copy job to copy /sapmnt to the DR side."
     - content: "Database servers"
       isCorrect: true
       explanation: "Correct. Use DBMS-specific mechanisms such as SQL Server Always On Availability Group or HANA System Replication to facilitate disaster recovery requirements. These mechanisms support multi-tier, asynchronous replication to a node in a separate Azure region, in addition to a local, two-node high availability setup with synchronous replication."
@@ -40,10 +42,10 @@ quiz:
     choices:
     - content: "Simple availability between two Azure regions"
       isCorrect: false
-      explanation: "That’s incorrect. Simple availability between two regions doesn't allow for RPO = 0, because of asynchronous replication."
+      explanation: "Incorrect. Simple availability between two regions doesn't allow for RPO = 0, because of asynchronous replication."
     - content: "SAP HANA multi-tier system replication"
       isCorrect: true
       explanation: "Correct. Simple availability between two regions doesn't allow for RPO = 0, because of asynchronous replication. Multi-tier system replication allows RPO = 0 with synchronous replication and auto-failover within Region 1, while still maintaining a Region 2 secondary site at a sufficient distance to be unaffected by regional disasters."
     - content: "Either configuration is suitable"
       isCorrect: false
-      explanation: "That’s incorrect. Simple availability between two regions doesn't allow for RPO = 0, because of asynchronous replication. Multi-tier system replication allows RPO = 0 with synchronous replication and auto-failover within Region 1, while still maintaining a Region 2 secondary site at a sufficient distance to be unaffected by regional disasters."
+      explanation: "Incorrect. Simple availability between two regions doesn't allow for RPO = 0, because of asynchronous replication. Multi-tier system replication allows RPO = 0 with synchronous replication and auto-failover within Region 1, while still maintaining a Region 2 secondary site at a sufficient distance to be unaffected by regional disasters."

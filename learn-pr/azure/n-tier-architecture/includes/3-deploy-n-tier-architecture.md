@@ -16,7 +16,7 @@ Here's a high-level visualization of what this template deploys.
 
     ```azurecli
     az deployment group create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --template-uri  https://raw.githubusercontent.com/MicrosoftDocs/mslearn-n-tier-architecture/master/Deployment/azuredeploy.json \
       --parameters password="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 32)"
     ```
@@ -28,7 +28,7 @@ After the deployment has completed, test the application. Run the following comm
 ```azurecli
 az deployment group show \
   --output table \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --resource-group "<rgn>[sandbox resource group name]</rgn>" \
   --name azuredeploy \
   --query properties.outputs.webSiteUrl
 ```

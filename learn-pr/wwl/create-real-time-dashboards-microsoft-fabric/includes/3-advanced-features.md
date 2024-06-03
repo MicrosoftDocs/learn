@@ -41,7 +41,7 @@ You can review the query in two modes: viewing and editing. However, you can onl
     ![Screenshot of Select query tile to edit.](../media/edit-query.png)
 
 1. Select the ***Edit query*** option.
-1. You can choose either the option of editing the ***Existing Queryset*** or a ***New Queryset***
+1. You can choose either the option of editing the ***Existing Queryset*** or a ***New Queryset***.
 
     ![Screenshot of Edit exiting query.](../media/edit-queryset-from-tile.png)
     
@@ -57,7 +57,7 @@ Auto refresh automatically updates dashboard data, eliminating the need for manu
     > [!NOTE]
     > If you don't see any options when selecting the ***Manage*** in the menu bar. Check to be sure you're in ***Editing Mode***. 
 
-1. Toggle the option to enable the auto refresh option
+1. Toggle the option to enable the auto refresh option.
 1. Choose values for ***Minimum time interval*** and ***Default refresh interval***.
 1. Select ***Apply*** and then be sure to ***Save*** the dashboard.
 
