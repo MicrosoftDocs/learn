@@ -7,7 +7,7 @@ In this unit, we're reviewing the following components of the GitHub flow:
 
 ## What are branches
 
-In the last section, we created a new file in the last section, along the way to you also created a new branch in your repositories. 
+In the last section, we created a new file and a new branch in your repositories.
 
 Branches are an essential part to the GitHub experience because they're where we can make changes without affecting the entire project we're working on. 
 

@@ -24,7 +24,7 @@ let isMember = true;
 let hasDiscount = isHoliday || isMember;
 ```
 
-With the preceding code, you express whether a customer can have a discount or not. Only one of the variables, `isMember` or `hasDiscount`, needs to have a truthy value for the `hasDiscount` variable to be assigned true.
+With the preceding code, you express whether a customer can have a discount or not. Only one of the variables: `isHoliday` or `isMember`, needs to have a value that evaluates to true, for the `hasDiscount` variable to be assigned true.
 
 ### In if...else
 
@@ -52,7 +52,7 @@ Yes, you are.
 
 ## Negation operator
 
-You've seen how you can use an `if...else` statement to create conditional logic. Anything that goes into an `if` needs to evaluate to true or false. By using the `!` operator, you can _negate_ the expression. It would look like so:
+Earlier, you saw how you can use an `if...else` statement to create conditional logic. Anything that goes into an `if` needs to evaluate to true or false. By using the `!` operator, you can _negate_ the expression. It would look like so:
 
 ```javascript
 if (!condition) {
@@ -75,12 +75,12 @@ Here's a more tangible example:
 ```javascript
 let firstNumber = 20;
 let secondNumber = 10
-let biggestNumber = firstNumber > secondNumber ? firstNumber: secondNumber;
+let biggestNumber = firstNumber > secondNumber ? firstNumber : secondNumber;
 ```
 
 The code states that:
 
-if `firstNumber` is larger than `secondNumber`,
+If `firstNumber` is larger than `secondNumber`,
 then assign `firstNumber` to `biggestNumber`, otherwise assign `secondNumber`.
 
 > [!TIP]
