@@ -237,8 +237,8 @@ instead of measuring one qubit three times.
     Here, we introduce three concepts:
 
     * The `qubits` variable now represents a `Qubit` array that has a length of three.
-    * The operations `ApplyToEach` and `ForEach` are useful to measure and act on multiple qubits, and they useless code. Q# libraries offer many kinds of operations and functions that make writing quantum programs more efficient.
-    * The `BoolArrayAsInt`] and `ResultArrayAsBoolArray` functions from the `Microsoft.Quantum.Convert` library transform the binary `Result` array that's returned by `ForEach(M, qubits)` into an integer.
+    * The operations `ApplyToEach` and `ForEach` are useful to measure and act on multiple qubits, and they use less code. Q# libraries offer many kinds of operations and functions that make writing quantum programs more efficient.
+    * The `BoolArrayAsInt` and `ResultArrayAsBoolArray` functions from the `Microsoft.Quantum.Convert` library transform the binary `Result` array that's returned by `ForEach(M, qubits)` into an integer.
 
 1. To run the program, click on **Run** from the list of commands below `@EntryPoint()`, or press **Ctrl+F5**. Your output will appear in the debug console.
 1. By using `DumpMachine`, you see how the act of measuring the three qubits collapses the state of the register to one of the eight possible basis states. For example, if you get the result `3`, it means that the state of the register collapsed to $|110\rangle$.

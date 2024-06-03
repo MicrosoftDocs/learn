@@ -6,9 +6,9 @@ Visual Studio Code implements GitHub Copilot using two extensions, GitHub Copilo
 > [!NOTE]
 > This module focuses on using the GitHub Copilot extensions to develop code. Using the GitHub Copilot extensions to create unit tests and improve existing code are covered separately.
 
-## Access GitHub Copilot tools in Visual Studio Code
+## GitHub Copilot tools in Visual Studio Code
 
-Visual Studio Code provides easy access to the following GitHub Copilot and Copilot Chat features:
+Visual Studio Code provides easy access to the following GitHub Copilot and GitHub Copilot Chat features:
 
 - **Code line completions**: Use code line completions to write code more efficiently.
 - **Inline chat**: Start an inline chat conversation directly from the editor for help while you're coding.

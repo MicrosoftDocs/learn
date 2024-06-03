@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.collaborate-pull-requests-azure-repos.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following statements best describe a pull request?"
+    choices:
+    - content: "Pull requests are commonly used by teams and organizations collaborating, where everyone shares a single repository, and topic branches are used to develop features and isolate changes."
+      isCorrect: true
+      explanation: "Correct. Pull requests are commonly used by teams and organizations collaborating, where everyone shares a single repository, and topic branches are used to develop features and isolate changes."
+    - content: "Pull requests are used to publish new changes from feature branches into production branches and update the environments with the latest code version."
+      isCorrect: false
+      explanation: "Incorrect. Pull requests are commonly used by teams and organizations collaborating, where everyone shares a single repository, and topic branches are used to develop features and isolate changes."
+    - content: "Pull request creates reports from the latest branch updates and generates remediation summary for resolving issues during development."
+      isCorrect: false
+      explanation: "Incorrect. Pull requests are commonly used by teams and organizations collaborating, where everyone shares a single repository, and topic branches are used to develop features and isolate changes."
+  - content: "Which of the following choices isn't a benefit of using pull requests?"
+    choices:
+    - content: "Protect branches with policies."
+      isCorrect: false
+      explanation: "Incorrect. The common benefits of collaborating with pull requests are: Get your code reviewed, Give great feedback, and Protect branches with policies."
+    - content: "Give feedback."
+      isCorrect: false
+      explanation: "Incorrect. The common benefits of collaborating with pull requests are: Get your code reviewed, Give great feedback, and Protect branches with policies."
+    - content: "Create reports about code security and quality."
+      isCorrect: true
+      explanation: "Correct. The common benefits of collaborating with pull requests are: Get your code reviewed, Give great feedback, and Protect branches with policies."
+  - content: "Which of the following choices is the most effective way to avoid direct updates from feature branches into main?"
+    choices:
+    - content: "Branch Policies."
+      isCorrect: true
+      explanation: "Correct. Policies are a great way to enforce your team's code quality and change-management standards."
+    - content: "Branch Security."
+      isCorrect: false
+      explanation: "Incorrect. Policies are a great way to enforce your team's code quality and change-management standards."
+    - content: "Branch Lock."
+      isCorrect: false
+      explanation: "Incorrect. Policies are a great way to enforce your team's code quality and change-management standards."

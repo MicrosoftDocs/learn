@@ -15,7 +15,7 @@ Let's see how you can use Q# features to build a complete random number generato
 Let's outline what the logic of a random number generator should be, provided the random bit generator built in the previous unit:
 
 1. Define `max` as the maximum number you want to generate.
-1. Define the number of random bits that you need to generate, by calculating how many bits, `nBits`, you need to express integers up to `max`.
+1. Define the number of random bits you need to generate by calculating how many bits, `nBits`, you need to express integers up to `max`.
 1. Generate a random bit string that's `nBits` in length.
 1. If the bit string represents a number greater than `max`, go back to step three.
 1. Otherwise, the process is complete. Return the generated number as an integer.
@@ -36,7 +36,7 @@ Here, you expand on the `RandomNumberGenerator.qs` file to build larger random n
 
 ### Add the required libraries
 
-For the complete random number generator, you need to include three Q# libraries: `Microsoft.Quantum.Math`, `Microsoft.Quantum.Intrinsic`, and `Microsoft.Quantum.Convert`. Add the following `open` directives to `RandomNumberGenerator.qs`, like this:
+For the complete random number generator, you need to include three Q# libraries: `Microsoft.Quantum.Math`, `Microsoft.Quantum.Intrinsic`, and `Microsoft.Quantum.Convert`. Add the following `open` directives to `RandomNumberGenerator.qs` like this:
 
 ```qsharp
 namespace QuantumRandomNumberGenerator {
@@ -157,7 +157,7 @@ The `let` directive declares variables that don't change during the computation.
 
 Let's try out our new random number generator!
 
-1. Before running the program, you need to set the target profile to **Unrestricted**. Select **View -> Command Palette**, search for QIR, select **Q#: Set the Azure Quantum QIR target profile**, and then select **Q#: unrestricted**.
+1. Before running the program, you need to set the target profile to **Unrestricted**. Select **View** > **Command Palette**, search for QIR, select **Q#: Set the Azure Quantum QIR target profile**, and then select **Q#: unrestricted**.
 1. To test run your program locally on the built-in simulator, click on **Run** from the list of commands below `@EntryPoint()`, or press **Ctrl+F5**. Your output will appear in the debug console.
 1. Run the program again to see a different result.
 

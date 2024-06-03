@@ -103,7 +103,7 @@ In this exercise, you learn how memory grant feedback can improve query performa
 
    :::image type="content" source="../media/memory-grant-query-plan-select-properties.png" alt-text="Screenshot of the execution plan select operator properties in SSMS.":::
 
-1. **IsMemoryGrangFeedbackAdjusted** has a value of `NoFirstExecution`. This value means that the system made no adjustment because there's no feedback and the query was compiled. The *used* memory is only the memory used as part of the grant and doesn't account for the spill.
+1. **IsMemoryGrantFeedbackAdjusted** has a value of `NoFirstExecution`. This means no adjustment has been made since there's no feedback and the query was compiled. The *used* memory is only the memory used as part of the grant and doesn't account for the spill.
 
 1. You can query the Query Store in order to find information. Run the following script in SSMS.
 

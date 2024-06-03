@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.incident-response-with-alerting-on-azure
 metadata:
-  title: Improve incident response with alerting on Azure
-  description: Respond to incidents and activities in your infrastructure through alerting capabilities in Azure Monitor.
+  title: Improve incident response with Azure Monitor alerts
+  description: Respond to incidents and activities in your infrastructure using Azure Monitor alerts.
   ms.date: 09/14/2023
   author: AbbyMSFT
   ms.author: abbyweisberg
   ms.topic: module
   ms.service: azure
-title: Improve incident response with alerting on Azure
+title: Improve incident response with Azure Monitor alerts
 summary: Respond to incidents and activities in your infrastructure through alerting capabilities in Azure Monitor.
 abstract: | 
   In this module, you'll:

@@ -3358,3 +3358,128 @@ achievements:
   title: Microsoft Accessibility Features and Tools
   summary: This module highlights how to find and use key accessibility features and tools built into Microsoft products such as Windows 10, Microsoft PowerPoint, and Microsoft Translator.
   iconUrl: /training/achievements/accessibility-features.svg
+- uid: learn.security-ops-sentinel.trophy
+  type: trophy
+  title: Cloud-native security operations with Microsoft Sentinel
+  summary: This learning path describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and Get familiar with Microsoft Sentinel, a cloud-native, security information and event management (SIEM) service.
+  iconUrl: /training/achievements/security-ops-sentinel.svg
+- uid: learn.azure.azure-sentinel-deploy-connect.badge
+  type: badge
+  title: Deploy Microsoft Sentinel and connect data sources
+  summary: In this course you'll learn how to deploy Microsoft Sentinel and connect it to data sources. You'll also learn how to use Azure and AI to provide analysis of security alerts.
+  iconUrl:  /training/achievements/deploy-azure-sentinel-and-connect-data-sources.svg
+- uid: learn.wwl.create-conversational-ai-solutions.trophy
+  type: trophy
+  title: Create conversational AI solutions
+  summary: Conversational AI solutions are based on interactions between human users and AI agents called _bots_. In this learning path, you'll learn how to build bots that can be delivered on Microsoft Azure.
+  iconUrl: /training/achievements/create-conversational-ai-solutions.svg
+- uid: learn.wwl.design-bot-conversation-flow.badge
+  type: badge
+  title: Create a bot with the Bot Framework SDK
+  summary: Learn how to build a bot by using the Microsoft Bot Framework SDK.
+  iconUrl: /training/achievements/design-a-bot-conversation-flow.svg
+- uid: learn.wwl.configure-azure-active-directory.badge
+  type: badge
+  title: Configure Microsoft Entra ID
+  summary: Learn how to configure Microsoft Entra ID, including features like Microsoft Entra ID join and self-service password reset.
+  iconUrl: /training/achievements/azure-active-directory.svg
+- uid: learn.wwl.configure-azure-dns.badge
+  type: badge
+  title: Configure Azure DNS
+  summary: Learn how to configure Azure DNS including custom domain names and record sets.
+  iconUrl: /training/achievements/azure-dns-configure.svg
+- uid: learn.wwl.configure-file-folder-backups.badge
+  type: badge
+  title: Configure file and folder backups
+  summary: Learn how to configure backup and restore policies that meet your company's regulatory needs.
+  iconUrl: /training/achievements/file-folder-backups.svg
+- uid: learn.wwl.create-bot-with-bot-framework-composer.badge
+  type: badge
+  title: Create a Bot with the Bot Framework Composer
+  summary: User the Bot Framework Composer to quickly and easily build sophisticated conversational bots without writing code.
+  iconUrl: /training/achievements/create-a-bot-with-the-bot-framework-composer.svg
+- uid: learn.wwl.az-400-get-started-devops-transformation-journey.trophy
+  type: trophy
+  title: 'AZ-400: Get started on a DevOps transformation journey'
+  summary: This learning path helps you understand what DevOps is and how to plan for a DevOps transformation journey.
+  iconUrl: /training/achievements/az-400-get-started-on-a-devops-transformation-journey.svg
+- uid: learn.wwl.choose-right-project.badge
+  type: badge
+  title: Choose the right project
+  summary: This module helps organizations decide the projects to start applying the DevOps process and tools to minimize initial resistance.
+  iconUrl: /training/achievements/2-choose-the-right-project.svg
+- uid: learn.wwl.describe-team-structures.badge
+  type: badge
+  title: Describe team structures
+  summary: This module explores agile development practices and helps to define and to configure teams and tools for collaboration.
+  iconUrl: /training/achievements/3-describe-team-structures.svg
+- uid: learn.deploy-microsoft-purview-scan-data-resources.badge
+  type: badge
+  title: Deploy Microsoft Purview and scan an Azure Data Lake resource using the Azure portal
+  summary: "Microsoft Purview is a data governance service that allows you to understand and manage data in your business by answering questions like: What kind of data do I have? Where is my sensitive data? Where did my data come from? This guide will help you get started with Microsoft Purview by deploying a Microsoft Purview account through the Azure portal, and registering an Azure Storage data source."
+  iconUrl: /training/achievements/microsoft-purview-deployment.svg
+- uid: learn-pr.azure.govern-azure-databases-with-microsoft-purview.badge
+  type: badge
+  title: Govern data from Azure databases with Microsoft Purview
+  summary: Govern data from Azure SQL and Azure SQL Managed instance databases using Microsoft Purview.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn-pr.azure.govern-sql-server-with-microsoft-purview.badge
+  type: badge
+  title: Govern multicloud relational databases using Microsoft Purview
+  summary: Govern your relational databases where they're using Microsoft Purview.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.intro-to-event-hubs.badge
+  type: badge
+  title: Introduction to Event Hubs 
+  summary: Azure Event Hubs connects events from any source to your software systems. This acts as a buffer to provide modular solutions that avoid overwhelming your system during traffic spikes, while still enabling near real-time data pipelines. Event Hubs is fast to set up and designed to allow you to focus on drawing insights from data instead of managing infrastructure. Able to process millions of events per second with low latency, Event Hubs is a modern big data message and event ingestion service that can be seamlessly integrated with other Azure and Microsoft services, such as Stream Analytics, Power BI, and Event Grids, along with outside services like Apache Spark.
+  iconUrl: /training/achievements/3-describe-team-structures.svg
+- uid: learn.expose-hybrid-services-with-azure-relay.badge
+  type: badge
+  title: Expose hybrid services securely with Azure Relay
+  summary: Learn how Azure Relay lets you securely expose services that run in your on-premises network to clients in the cloud. Connect services across network boundaries, without having to open a port on your firewall or make intrusive changes to your corporate network infrastructure.
+  iconUrl: /training/achievements/expose-hybrid-services-with-azure-relay.svg
+- uid: learn.data-ai.transform-data-with-azure-stream-analytics.badge
+  type: badge
+  title: Transform data by using Azure Stream Analytics
+  summary: Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and return results.
+  iconUrl: /learn/achievements/data-ai/transform-data-with-azure-stream-analytics-badge.svg
+- uid: learn.wwl.describe-types-of-source-control-systems.badge
+  type: badge
+  title: Describe types of source control systems
+  summary: This module describes different source control systems such Git and TFVC and helps with the initial steps for Git utilization.
+  iconUrl: /training/achievements/6-describe-types-of-source-control-systems.svg
+- uid: learn.wwl.introduction-to-source-control.badge
+  type: badge
+  title: Introduction to source control
+  summary: This module introduces you to the basics of source control, exploring benefits and best practices.
+  iconUrl: /training/achievements/5-introduction-to-source-control.svg
+- uid: learn.wwl.structure-your-git-repo.badge
+  type: badge
+  title: Structure your Git Repo
+  summary: This module examines Git repositories structure, explains the differences between mono versus multiple repos, and helps you create a changelog.
+  iconUrl: /training/achievements/1-structure-your-git-repo.svg
+- uid: learn.wwl.explore-continuous-integration.badge
+  type: badge
+  title: Explore continuous integration
+  summary: This module details continuous integration practice and the pillars for implementing it in the development lifecycle, its benefits, and properties.
+  iconUrl: /learn/achievements/4-explore-continuous-integration.svg
+- uid: learn.wwl.introduction-to-continuous-delivery.badge
+  type: badge
+  title: Introduction to continuous delivery
+  summary: This module introduces continuous delivery concepts and their implementation in a traditional IT development cycle.
+  iconUrl: /learn/achievements/1-introduction-to-continuous-delivery.svg
+- uid: learn.wwl.owasp-and-dynamic-analyzers.badge
+  type: badge
+  title: OWASP and Dynamic Analyzers
+  summary: This module explores OWASP and Dynamic Analyzers for penetration testing, results, and bugs.
+  iconUrl: /training/achievements/owasp-dynamic-analyzer.svg
+- uid: learn.wwl.migrate-to-devops.badge
+  type: badge
+  title: Choose the DevOps tools
+  summary: This module explores Azure DevOps and GitHub tools and helps organizations define their work management tool and licensing strategy.
+  iconUrl: /training/achievements/4-migrate-to-devops.svg
+- uid: learn.wwl.work-azure-repos-github.badge
+  type: badge
+  title: Work with Azure Repos and GitHub
+  summary: This module introduces you to Azure Repos and GitHub and explores ways to migrate from TFVC to Git, and work with GitHub Codespaces for development.
+  iconUrl: /training/achievements/7-work-with-azure-repos-and-github.svg
