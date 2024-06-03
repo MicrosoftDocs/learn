@@ -42,4 +42,4 @@ When using this parameter, you choose from three possible options that determine
 - Delete All  - deletes resources, resource groups, and management groups.
 - Detach All - detaches resources, resource groups, and management groups.
 
- The action on unmanage parameter can be set when creating, modifying, or deleting a deployment stack. All three operations have the ability to set the behavior of the action on unmanage parameter. Let's say that you create a deployment stack using the Azure CLI and set the action on unmanage behavior to detach all. If you delete the stack and specify the behavior as delete all, then that value takes precedence. Consider it an overwrite of the orginal value.
+ The action on unmanage parameter can be set when creating, modifying, or deleting a deployment stack. All three operations have the ability to set the behavior of the action on unmanage parameter. Let's say that you create a deployment stack using the Azure CLI and set the action on unmanage behavior to detach all. If you delete the stack and specify the behavior as delete all, then that value takes precedence. Consider it an overwrite of the original value.
