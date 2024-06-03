@@ -8,6 +8,7 @@ metadata:
   ms.author: riswinto
   ms.topic: module
   ms.service: purview
+  ms.subservice: retention
   ai-usage: ai-assisted
 title: Manage data retention and deletion in Microsoft 365 workloads
 summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
