@@ -21,7 +21,7 @@ quiz:
       explanation: "Incorrect. The Main Editor is a no-code tool for designing and managing your event data pipeline."
     - content: "It's to manually scale the event stream according to the volume of data."
       isCorrect: false
-      explanation: "Incorrect. The Main Editor is not responsible for scaling, which is handled automatically by Microsoft Fabric event stream."
+      explanation: "Incorrect. The Main Editor isn't responsible for scaling, which is handled automatically by Microsoft Fabric event stream."
     - content: "It's to design your event data pipeline by adding and managing sources and destinations."
       isCorrect: true
       explanation: "Correct. The Main Editor allows you to drag and drop different nodes such as sources, destinations, and transformations to design your event data pipeline."
@@ -57,4 +57,4 @@ quiz:
       explanation: "Incorrect. The Fabric trial license is required to complete the exercise, but it's not the main purpose of creating an event stream."
     - content: "To create and link objects to read and write objects to a lakehouse"
       isCorrect: true
-      explanation: "Correct. The main purpose of creating a Microsoft Fabric event stream in this exercise is to create and link objects for reading and writing to a lakehouse.."
+      explanation: "Correct. The main purpose of creating a Microsoft Fabric event stream in this exercise is to create and link objects for reading and writing to a lakehouse."
