@@ -19,9 +19,9 @@ You also learned that you likely won't benefit from using Azure NetApp Files if 
 - Mostly static content with relatively constant demand.
 - Workloads that have a strict dependency or requirement for storage that is both block-based and direct-attached.
 
-Implementing today's enterprise workloads requires the highest storage performance, maximum availability, and the flexibility to meet any demand. So, the significant question today is, how do you migrate your most important enterprise workloads to the cloud while still maintaining the highest level of performance and availability? Azure NetApp Files provides datacenter-quality performance and high availability with all the flexibility of the cloud. The process you went through here should give you enough information to decide the correct shared-storage solution for your organization.
+Implementing today's enterprise workloads requires the highest storage performance, maximum availability, and the flexibility to meet any demand. The significant question is: how do you migrate your most important enterprise workloads to the cloud while still maintaining the highest level of performance and availability? Azure NetApp Files provides datacenter-quality performance and high availability with all the flexibility of the cloud. The process you went through here should give you enough information to decide the correct shared-storage solution for your organization.
 
-## References
+## Learn more
 
 - [Azure NetApp Files](https://azure.microsoft.com/services/netapp/)
 - [What is Azure NetApp Files?](/azure/azure-netapp-files/azure-netapp-files-introduction)

@@ -1,4 +1,4 @@
-Here, we discuss how Azure NetApp Files works behind the scenes. You learn about the main pieces of Azure NetApp Files and how they work together to provide a high-performance cloud NAS service. This knowledge helps you evaluate whether Azure NetApp Files is a good solution for migrating your organization's file-based workloads to the Azure cloud.
+Here, we discuss how Azure NetApp Files works behind the scenes and how different elements work together to provide a high-performance cloud NAS service. This knowledge helps you evaluate whether Azure NetApp Files is a good solution for migrating your organization's file-based workloads to the Azure cloud.
 
 ## Storage hierarchy
 
@@ -20,7 +20,7 @@ A capacity pool cannot be deleted until all volumes within the capacity pool hav
 
 Azure NetApp Files volume performance scales with the size of the volume and the service level. Azure NetApp Files offers three service levels for the capacity pools you create:
 
-- **Standard** Provides up to 16 MiB/s of throughput and 1000 IOPS per 1 TiB of capacity provisioned. An Azure NetApp Files volume can generate approximately 319.000 IOPS with only 1.5 ms of latency for adjacent virtual machines. Use Standard for static web content, file shares, and database backups.
+- **Standard**: Provides up to 16 MiB/s of throughput and 1000 IOPS per 1 TiB of capacity provisioned. An Azure NetApp Files volume can generate approximately 319.000 IOPS with only 1.5 ms of latency for adjacent virtual machines. Use Standard for static web content, file shares, and database backups.
     - **Storage with cool access**: The throughput experience for this service level is the same as the Standard service level for data that is in the hot tier. It may differ for accessing data that resides in the cool tier.
 - **Premium**: Provides up to 64 MiB/s of throughput and 4,000 IOPS per 1 TiB of capacity provisioned. It can generate a maximum of 450,000 IOPS per volume. Premium is comparable to mainstream SSD performance and is suitable for SAP HANA, databases, enterprise apps, virtual desktop infrastructure (VDI), analytics, technical applications, messaging queues, and big data analytics
 - **Ultra**: Provides up to 128 MiB/s of throughput and 8,000 IOPS per 1 TiB of capacity provisioned. It can generate a maximum of  450,000 IOPS per volume. Use Ultra for the most performance-intensive applications, such as HPC applications.
@@ -47,7 +47,7 @@ Before provisioning an Azure NetApp Files volume, you need to create an Azure vi
 
 ### Subnets
 
-When you create an Azure NetApp Files volume, you assign the volume to a delegated subnet. A delegated subnet is a subnet that's configured with permissions to create resources that are specific to a service, which in this case is Azure NetApp Files. How network nodes connect to Azure NetApp Files in that subnet depends on where those nodes are located. Azure NetApp Files volumes are securely accessible only within a customer’s VNet context. Azure NetApp Files does not provide a publicly (i.e. internet) accessible endpoint.
+When you create an Azure NetApp Files volume, you assign the volume to a delegated subnet. A delegated subnet is a subnet that's configured with permissions to create resources that are specific to a service, which in this case is Azure NetApp Files. How network nodes connect to Azure NetApp Files in that subnet depends on where those nodes are located. Azure NetApp Files volumes are securely accessible only within a customer’s VNet context. Azure NetApp Files does not provide a publicly (that is, internet) accessible endpoint.
 
 When planning subnets, there are three main scenarios to consider:
 

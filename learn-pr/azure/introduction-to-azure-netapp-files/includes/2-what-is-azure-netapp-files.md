@@ -12,11 +12,11 @@ Most organizations still have many applications and services that require shared
 There are two main file system protocols used for most shared file-storage implementations:
 
 - **Network File System (NFS)**: most often used with the Linux operating system.
-- **Server Message Block (SMB)**: Most often used with the Windows operating system.
+- **Server Message Block (SMB)**: most often used with the Windows operating system.
 
 Both NFS and SMB present logical drives organized in hierarchical structures on which the OS can store files in directories or folders.
 
-## Azure NetApp Files
+## Azure NetApp Files defined
 
 Azure NetApp Files is an Azure native, first-party, enterprise-class, high-performance, fully managed NAS file storage service.
 
@@ -32,7 +32,7 @@ Azure NetApp Files is designed to provide high-performance file storage for ente
 
 ### Performance
 
-Azure NetApp Files is designed for the highest possible performance so that it can manage even the most demanding Windows and Linux workloads. This performance is achieved by running Azure NetApp Files instances on dedicated NetApp hardware running NetApp's proprietary ONTAP operating system, which is optimized for extremely high storage throughput and availability.
+Azure NetApp Files is built on a fault-tolerant bare-metal fleet powered by ONTAP to provide very fast and reliable storage.
 
 Azure NetApp Files performance is measured in three ways:
 
@@ -47,6 +47,7 @@ Azure NetApp Files provide three flexible performance tiers (Standard, Premium, 
 ### Cost optimization
 
 Understanding the cost model for Azure NetApp Files helps you manage your service expenses.
+
 Azure NetApp Files is billed on provisioned storage capacity, which is allocated by creating capacity pools. Capacity pools are billed monthly based on a set cost per allocated GiB per hour. You can: 
 
 - Save money by starting with a smaller storage footprint and lower entry point. Scale storage based on growth without high upfront costs.
@@ -97,7 +98,7 @@ Azure NetApp Files ensures both data-in-transit and data-at-rest encryption feat
 
 Azure NetApp Files offers the widest choice of file protocols among public cloud NAS providers. Azure NetApp Files supports the following protocols:
 
-- NFSv3.0
+- NFSv3
 - NFSv4.1
 - SMB 2.x
 - SMB 3.x
@@ -106,7 +107,7 @@ Azure NetApp Files also supports dual-protocol access to NFSv3, NFSv4.1, and SMB
 
 ## Data management
 
-Azure NetApp Files provides built-in data management and security capabilities to help ensure the secure storage, availability, and manageability of your data. 
+Azure NetApp Files provides built-in data management and security capabilities to help ensure the secure storage, availability, and manageability of your data.
 
 ### Volume access
 

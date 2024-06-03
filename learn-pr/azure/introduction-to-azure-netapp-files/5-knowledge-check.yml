@@ -43,7 +43,7 @@ quiz:
     - content: "Each volume can belong to multiple capacity pools."
       isCorrect: false
       explanation: "Azure NetApp Files volumes are accessible only within your virtual private network."
-    - content: "Snapshots"
+    - content: "Azure NetApp Files volumes are accessible only within your virtual private network."
       isCorrect: true
       explanation: "Correct. Azure NetApp Files doesn't provide a publicly (that is, internet) accessible endpoint."
 

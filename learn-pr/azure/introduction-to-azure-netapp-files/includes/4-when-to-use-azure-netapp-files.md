@@ -1,6 +1,6 @@
 Now let's look at some scenarios that illustrate when it's appropriate to migrate an on-premises file-based workload to run in the cloud using Azure NetApp Files as shared file storage. Here are the criteria that help you decide whether Azure NetApp Files is a suitable storage choice for running your organization's file-based workloads in the cloud: 
 
-- Ease of migration
+- Ease of deployment or migration
 - Workload scale
 - Flexibility
 - Storage technology
@@ -11,7 +11,7 @@ Azure NetApp Files can manage enterprise-scale, file-based workloads that need l
 
 | **Criteria** | **Analysis**|
 | --- | --- |
-| Ease of migration | Do you need to "lift and shift" your workload? That is, is it a requirement that you transition your workload into the Azure cloud without having to change the components, configuration, or code of your application? A lift-and-shift migration minimizes the risk that your workload has problems when it starts running in the cloud. It also minimizes the costs, effort, and time required to perform new new deployments and migration. |
+| Ease of deployment or migration | Do you need to "lift and shift" your workload? That is, is it a requirement that you transition your workload into the Azure cloud without having to change the components, configuration, or code of your application? A lift-and-shift migration minimizes the risk that your workload has problems when it starts running in the cloud. It also minimizes the costs, effort, and time required to perform new new deployments and migration. |
 | Workload scale | What is the overall scale of the workload? Azure NetApp Files works best with enterprise-scale workloads that require the highest performance and availability. Examples include massive database deployments, large-scale VDI, and high-performance computing applications. Azure NetApp Files can easily support relatively small-scale and low-performance workloads. |
 | Flexibility | Does your workload need flexibility in terms of performance, capacity, and scalability? Azure NetApp Files enables you to change a volume's service level between Standard, Premium, and Ultra, with no service disruption by moving the volume to a capacity pool with the service level you want. You can also increase or decrease the size of a capacity pool or volume at any time to match current demand. If you have set your capacity pool to manual QoS, Azure NetApp Files also enables you to independently change a volume's throughput as needed by your workload. |
 | Storage technology | Do you need block-based or file-based storage? Azure NetApp Files works for any POSIX-compatible workload that can use shared file storage. However, some workloads have a strict dependency or requirement for storage that is both block-based and direct-attached. Azure NetApp Files provides a virtual NAS, which makes it unsuitable for that workload type. However, while historically many workloads have used direct-attached, block-based storage, it's not a strict dependency or requirement. In such cases, Azure NetApp Files might provide better performance and scalability because Azure virtual machines are less network rate-limited than block-based (SSD) infrastructure, and Azure Network Files volumes are network connected. |
