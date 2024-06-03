@@ -13,58 +13,39 @@ durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: ""
+
+  - content: How do you provision capacity for Microsoft Copilot for Security?
     choices:
-    - content: ""
+    - content: You can provision capacity by selecting the 'Owner settings' option and then choosing 'Provision capacity'.
+      isCorrect: false
+      explanation: Incorrect. There is no 'Provision capacity' option available under owner settings.
+    - content: You can provision capacity by selecting the help icon and entering Provision Capacity.
+      isCorrect: false
+      explanation: Incorrect. While the help option can provide information on how to provision capacity, you can't provision capacity from the help icon.
+    - content: You can provision capacity by running the wizard that is part of the first run experience Microsoft Copilot for Security or by selecting 'Microsoft Copilot for Security compute capacities' in the Azure portal and completing the steps.
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: Correct. You can provision capacity by running the wizard that is part of the first run experience Microsoft Copilot for Security or by selecting 'Microsoft Copilot for Security compute capacities' in the Azure portal and completing the steps.
+   
+  - content: What is the purpose of enabling file uploads in Copilot?
     choices:
-    - content: ""
+    - content: To allow Copilot to store files for future reference
+      isCorrect: false
+      explanation: Incorrect. While Copilot can access uploaded files, it does not store them for future reference.
+    - content: To allow Copilot to reason over the information contained in the uploaded files
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: Correct. Enabling file uploads allows Copilot to reason over the information contained in the uploaded files.
+    - content: To allow users to download files from Copilot
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: Incorrect. Enabling file uploads does not allow users to download files from Copilot.
+  
+  - content: What the option that best describes the steps involved in creating a custom promptbook.
     choices:
-    - content: ""
+    - content: From the owner settings, select the custom promptbook icon, follow the steps in the Create a promptbook page, and select create.
+      isCorrect: false
+      explanation: Incorrect. To create a custom promptbook identify an existing session, select the prompts you want to reuse, select the custom promptbook icon, follow the steps in the Create a promptbook page, then select create.
+    - content: Start with an existing session, select the prompts you want to reuse, select the custom promptbook icon, follow the steps in the Create a promptbook page, and select create.
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: Correct. To create a custom promptbook identify an existing session, select the prompts you want to reuse, select the custom promptbook icon, follow the steps in the Create a promptbook page, then select create.
+    - content: Select the Sources icon, select files, then upload a .json formatted file that contains the details of the promptbook.
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: Incorrect. To create a custom promptbook identify an existing session, select the prompts you want to reuse, select the custom promptbook icon, follow the steps in the Create a promptbook page, then select create.
