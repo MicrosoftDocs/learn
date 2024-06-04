@@ -3483,3 +3483,8 @@ achievements:
   title: Work with Azure Repos and GitHub
   summary: This module introduces you to Azure Repos and GitHub and explores ways to migrate from TFVC to Git, and work with GitHub Codespaces for development.
   iconUrl: /training/achievements/7-work-with-azure-repos-and-github.svg
+- uid: learn.wwl.deploy-run-java-applications-azure-spring-apps.trophy
+  type: trophy
+  title: Deploying and running Java applications in Azure Spring Apps
+  summary: Learn how to plan a Java application migration to Azure Spring Apps using Azure Service Bus and Azure Event Hubs. This learning path guides you through migrating and deploying Java applications to Azure Spring Apps.
+  iconUrl: /training/achievements/deploying-and-running-java-applications-in-azure-spring-apps.svg
