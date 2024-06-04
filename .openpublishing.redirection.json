@@ -40438,6 +40438,11 @@
       "source_path": "learn-pr/wwl-azure/secure-application-secrets-use-key-vault/7-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-application-secrets-use-key-vault/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
