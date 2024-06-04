@@ -34,6 +34,5 @@ products:
 - github
 - azure-spring-apps
 units:
-- learn.wwl.create-configure-azure-service-bus-azure-spring-apps.update-existing-microsoft-service-queues
 badge:
   uid: learn.wwl.create-configure-azure-service-bus-azure-spring-apps.badge
