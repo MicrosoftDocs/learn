@@ -40313,6 +40313,11 @@
       "source_path": "learn-pr/wwl-azure/enable-monitoring-end-to-end-tracing/4-test-monitoring-configuration.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/migrate-spring-cloud-application-to-azure/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
