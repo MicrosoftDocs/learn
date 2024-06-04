@@ -36,7 +36,6 @@ products:
 - azure-spring-apps
 units:
 - learn.wwl.enable-monitoring-end-to-end-tracing.test-monitoring-configuration
-- learn.wwl.enable-monitoring-end-to-end-tracing.knowledge-check
 - learn.wwl.enable-monitoring-end-to-end-tracing.summary
 badge:
   uid: learn.wwl.enable-monitoring-end-to-end-tracing.badge
