@@ -40263,6 +40263,11 @@
       "source_path": "learn-pr/wwl-language/install-configure-visual-studio-code/6-exercise-configure-visual-studio-code.md",
       "redirect_url": "/training/modules/install-configure-visual-studio-code/5-exercise-configure-visual-studio-code",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/deploy-run-java-applications-azure-spring-apps/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
