@@ -37,7 +37,6 @@ products:
 - github
 - azure-spring-apps
 units:
-- learn.wwl.protect-endpoints-use-web-application-firewall.knowledge-check
 - learn.wwl.protect-endpoints-use-web-application-firewall.summary
 badge:
   uid: learn.wwl.protect-endpoints-using-web-application-firewall.badge
