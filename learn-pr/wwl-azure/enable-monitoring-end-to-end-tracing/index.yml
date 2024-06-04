@@ -38,7 +38,6 @@ units:
 - learn.wwl.enable-monitoring-end-to-end-tracing.introduction
 - learn.wwl.enable-monitoring-end-to-end-tracing.configure-monitoring
 - learn.wwl.enable-monitoring-end-to-end-tracing.test-monitoring-configuration
-- learn.wwl.enable-monitoring-end-to-end-tracing.configure-distributed-tracing
 - learn.wwl.enable-monitoring-end-to-end-tracing.debug-microsoft-service-architecture
 - learn.wwl.enable-monitoring-end-to-end-tracing.knowledge-check
 - learn.wwl.enable-monitoring-end-to-end-tracing.summary
