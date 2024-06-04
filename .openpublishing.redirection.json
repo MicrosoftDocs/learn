@@ -40558,6 +40558,11 @@
       "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/6-configure-public-domain-name-azure-spring-cloud.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/2-configure-virtual-network-for-azure-spring-cloud.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
