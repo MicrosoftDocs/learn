@@ -40573,6 +40573,11 @@
       "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/3-deploy-azure-spring-cloud-virtual-network.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
