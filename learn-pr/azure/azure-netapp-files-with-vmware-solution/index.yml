@@ -12,12 +12,15 @@ title: Using Azure NetApp Files with Azure VMware Solution
 summary: |
   This module helps you understand Microsoft Azure NetApp Files and how to use it with the Azure VMware Solution. 
 abstract: |
-  In this module, you'll demonstrate your ability to:
-   - Apply mission-critical design principles to an existing architecture to make it fault tolerant.
-   - Define key strategies for observing the overall health of the system
+  By the end of this module, you'll be able to:
+  - Understand the key benefits of using Azure NetApp Files with Azure VMware solution (AVS).
+  - Understand the requirements for attaching Azure NetApp Files to your Azure VMware Solution.
+  - Provision an Azure NetApp Files volume to expand your datastore capacity and as a guest-mounted file system.
+  - Understand how Cloud Backup for Virtual Machines can be used to protect your virtual machines.
 prerequisites: |
-    - Basic understanding of virtual machines. 
-    - Basic understanding of Azure VMware Solution. 
+  - Basic understanding of Azure VMware Solution, including virtual machines.
+  - Basic understanding of Azure NetApp Files. 
+  - Basic knowledge of networked file system protocols, particularly Server Message Block (SMB) and Network File System (NFS).
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced
@@ -34,9 +37,11 @@ subjects:
 - migration
 units:
 - learn.azure.azure-netapp-files-with-vmware-solution.introduction
-- learn.azure.azure-netapp-files-with-vmware-solution.what-is-azure-netapp-files
-- learn.azure.azure-netapp-files-with-vmware-solution.prepare-to-attach
-- learn.azure.azure-netapp-files-with-vmware-solution.map-azure-netapp-files-shares
+- learn.azure.azure-netapp-files-with-vmware-solution.why-azure-netapp-files-vmware-solution
+- learn.azure.azure-netapp-files-with-vmware-solution.best-practices
+- learn.azure.azure-netapp-files-with-vmware-solution.attach-volume-datastore
+- learn.azure.azure-netapp-files-with-vmware-solution.cloud-backup
+- learn.azure.azure-netapp-files-with-vmware-solution.attach-volumes-virtual-machines
 - learn.azure.azure-netapp-files-with-vmware-solution.knowledge-check
 - learn.azure.azure-netapp-files-with-vmware-solution.summary
 badge:

@@ -270,6 +270,6 @@ Now that you've pushed your changes to your remote repository, you can inspect t
 
    :::image type="content" source="../media/9-azure-repos-final.png" alt-text="Screenshot of the Azure DevOps interface that shows the repository, including the folder and file structure." border="true":::
 
-1. Browse through the GitHub interface to explore the files, and notice that your changes are all displayed. Because GitHub has the full list of changes to each file, you can even view the history of a file, just as you can when you work in Visual Studio Code.
+1. Browse through the Azure Repos interface to explore the files, and notice that your changes are all displayed. Because Azure Repos has the full list of changes to each file, you can even view the history of a file, just as you can when you work in Visual Studio Code.
 
 ::: zone-end
