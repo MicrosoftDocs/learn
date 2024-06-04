@@ -3508,3 +3508,8 @@ achievements:
   title: Secure application secrets using Key Vault
   summary: You're now running a version of the spring-petclinic microservice application in Azure. You want a better way to protect application secrets like your database connection string. In this module, you'll better protect your application secrets.
   iconUrl: /training/achievements/3-secure-application-secrets-using-key-vault.svg
+- uid: learn.wwl.configure-azure-event-hubs-azure-spring-apps.badge
+  type: badge
+  title: Configure Azure Event Hubs for Azure Spring Apps
+  summary: Now that you've set up messaging for the Spring Petclinic application, the next thing you'll do is configure Azure Event Hubs. Event Hubs is a fully managed, real-time data ingestion service that’s trusted and scalable.
+  iconUrl: /training/achievements/configure-azure-event-hubs-azure-spring-apps.svg
