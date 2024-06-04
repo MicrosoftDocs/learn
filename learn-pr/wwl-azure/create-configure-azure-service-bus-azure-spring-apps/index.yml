@@ -35,7 +35,6 @@ products:
 - azure-spring-apps
 units:
 - learn.wwl.create-configure-azure-service-bus-azure-spring-apps.introduction
-- learn.wwl.create-configure-azure-service-bus-azure-spring-apps.create-azure-service-bus
 - learn.wwl.create-configure-azure-service-bus-azure-spring-apps.send-messages-azure-service-bus
 - learn.wwl.create-configure-azure-service-bus-azure-spring-apps.update-existing-microsoft-service-queues
 - learn.wwl.create-configure-azure-service-bus-azure-spring-apps.knowledge-check
