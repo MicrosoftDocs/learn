@@ -38,7 +38,6 @@ products:
 units:
 - learn.wwl.migrate-spring-cloud-application-to-azure.introduction
 - learn.wwl.migrate-spring-cloud-application-to-azure.create-azure-service
-- learn.wwl.migrate-spring-cloud-application-to-azure.create-azure-mysql-database-service
 - learn.wwl.migrate-spring-cloud-application-to-azure.deploy-spring-cloud-service
 - learn.wwl.migrate-spring-cloud-application-to-azure.test-application-use-publicly-available-endpoint
 - learn.wwl.migrate-spring-cloud-application-to-azure.knowledge-check
