@@ -1,6 +1,6 @@
 The **AzCopy** command is a command-line utility specially created and optimized for moving data in and out of Azure Storage. Running AzCopy, you can bulk-transfer from the local file system of an on-premises computer to the cloud.
 
-In this unit, you'll learn how to run the AzCopy utility to upload, download, and transfer blob data between storage accounts.
+In this unit, you learn how to run the AzCopy utility to upload, download, and transfer blob data between storage accounts.
 
 ## What is AzCopy?
 
@@ -12,7 +12,7 @@ The latest version of AzCopy lets you take incremental backups of blobs, and can
 
 ## Upload data
 
-From the command line, you can call AzCopy using the all lower-case name `azcopy`, with additional parameters depending on the operation you want to perform. Run the `azcopy copy` command to upload data to Azure Storage. The simplest form of this command copies a file to a blob. The following example uploads the contents of a file named *myfile.txt* to a blob, also named *myfile.txt*, to the *mycontainer* container in the *myaccount* Blob Storage account. The storage account and container must already exist.
+From the command line, you can call AzCopy using the all lower-case name `azcopy`, with more parameters depending on the operation you want to perform. Run the `azcopy copy` command to upload data to Azure Storage. The simplest form of this command copies a file to a blob. The following example uploads the contents of a file named *myfile.txt* to a blob, also named *myfile.txt*, to the *mycontainer* container in the *myaccount* Blob Storage account. The storage account and container must already exist.
 
 ```bash
 azcopy copy "myfile.txt" "https://myaccount.blob.core.windows.net/mycontainer/"
@@ -32,7 +32,7 @@ azcopy copy "myfolder" "https://myaccount.blob.core.windows.net/mycontainer/?<sa
 
 ## Monitor and manage jobs
 
-Remember that AzCopy runs asynchronously. If you're transferring a large number of files, or even a small number of large files, AzCopy starts your upload and reports an initial summary. The command then continues running in the background. Run the `AzCopy jobs list` command to view the status of running and recently completed commands. Each job has an ID, and you can view the details of a job with the `AzCopy jobs show <id>` command.
+Remember that AzCopy runs asynchronously. If you're transferring a large number of files, or even a few large files, AzCopy starts your upload and reports an initial summary. The command then continues running in the background. Run the `AzCopy jobs list` command to view the status of running and recently completed commands. Each job has an ID, and you can view the details of a job with the `AzCopy jobs show <id>` command.
 
 If an AzCopy transfer is interrupted, it appears in the jobs list. Restart the job by running the `azcopy jobs resume <id>` command.
 
@@ -58,7 +58,7 @@ The `--recursive=true` flag is available if your container has a hierarchical se
 
 When the source and destination of the AzCopy command are both Azure Storage accounts, the command performs the transfer using the Azure Storage service. It doesn't download and upload blobs via your computer.
 
-Another way to copy blobs between storage accounts is to run the `AzCopy sync` command. This command synchronizes the contents of a destination container with a source container, by either copying blobs if they aren't found in the destination or if the last modified time of a blob in the destination is earlier than that of the corresponding blob in the source. This command also provides the `--delete-destination` flag. If you set this flag to true, AzCopy will delete blobs in the destination that don't exist in the source. Use this option with caution.
+Another way to copy blobs between storage accounts is to run the `AzCopy sync` command. This command synchronizes the contents of a destination container with a source container. The command copies blobs if they aren't found in the destination or if the last modified time of a blob in the destination is earlier than the corresponding blob in the source. This command also provides the `--delete-destination` flag. If you set this flag to true, AzCopy deletes blobs in the destination that don't exist in the source. Use this option with caution.
 
 ## Manage blobs
 
@@ -82,4 +82,4 @@ azcopy remove "https://myaccount.blob.core.windows.net/mycontainer?<sas token>" 
 
 ## Configure concurrency
 
-You can control the performance and resource utilization of the AzCopy command by setting the *AZCOPY_CONCURRENCY_VALUE* environment variable. AzCopy uses the value of this variable to specify the number of concurrent threads it will use for transferring data. By default, it's set to 300. You can reduce this value if you need to control the bandwidth and CPU utilization of your copy operations.
+You can control the performance and resource utilization of the AzCopy command by setting the *AZCOPY_CONCURRENCY_VALUE* environment variable. AzCopy uses the value of this variable to specify the number of concurrent threads it uses for transferring data. By default, the value is set to 300. You can reduce this value if you need to control the bandwidth and CPU utilization of your copy operations.

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-devops.define-organization-structure-agile-practices
+title: Define organization structure for agile practices
+metadata:
+  title: Define organization structure for agile practices
+  description: "Define organization structure for agile practices"
+  ms.date: 05/29/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-define-organization-structure-agile-practices.md)]

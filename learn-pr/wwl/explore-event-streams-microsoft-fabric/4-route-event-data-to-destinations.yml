@@ -1,13 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-event-streams-microsoft-fabric.route-event-data-to-destinations
-title: Routing eventstream data
+title: Routing event stream data
 metadata:
-  title: Routing eventstream data
-  description: "Routing eventstream data"
-  ms.date: 11/01/2023
+  title: Routing event stream data
+  description: "Routing event stream data"
+  ms.date: 06/03/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 15
 content: |
   [!include[](includes/4-route-event-data-to-destinations.md)]

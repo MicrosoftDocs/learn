@@ -1,24 +1,24 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.explore-real-time-analytics-microsoft-fabric
 metadata:
-  title: Implement Real-Time Analytics with Microsoft Fabric
-  description: Implement Real-Time Analytics with Microsoft Fabric
-  ms.date: 11/08/2023
+  title: Implement Real-Time Intelligence with Microsoft Fabric
+  description: Implement Real-Time Intelligence with Microsoft Fabric
+  ms.date: 05/31/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: learning-path
-title: Implement Real-Time Analytics with Microsoft Fabric
+title: Implement Real-Time Intelligence with Microsoft Fabric
 prerequisites: |
   The student should be able to:
-  - Log in to the Azure portal.
-  - Explain and create resource groups.
-  - Understand the concept of streaming data.
+  -   Log in to the Azure portal.
+  -   Explain and create resource groups.
+  -   Understand the concept of streaming data.
 summary: |
   In this learning path, the student is exposed to various ways to:
-  *   Source streaming data sources into Microsoft Fabric.
-  *   Use real time Eventstream in Microsoft Fabric.
-  *   Query data in a KQL database in Microsoft Fabric.
-  *   Create real time dashboards in Microsoft Fabric.
+  -   Source streaming data sources into Microsoft Fabric.
+  -   Use real time Eventstream in Microsoft Fabric.
+  -   Query data in a KQL database in Microsoft Fabric.
+  -   Create real time dashboards in Microsoft Fabric.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
@@ -31,5 +31,7 @@ modules:
 - learn.wwl.get-started-kusto-fabric
 - learn.wwl.explore-event-streams-microsoft-fabric
 - learn.wwl.query-data-kql-database-microsoft-fabric
+- learn.wwl.create-real-time-dashboards-microsoft-fabric
+- learn.wwl.get-started-data-activator-microsoft-fabric
 trophy:
   uid: learn.wwl.explore-real-time-analytics-microsoft-fabric.trophy

@@ -3,7 +3,7 @@ uid: learn.wwl.security-storage
 metadata:
   title: Plan and implement security for storage
   description: "This module is designed to provide administrators with the knowledge and skills required to plan and implement comprehensive security measures for Azure storage resources, safeguarding data integrity, confidentiality, and availability."
-  ms.date: 04/18/2024
+  ms.date: 05/29/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product

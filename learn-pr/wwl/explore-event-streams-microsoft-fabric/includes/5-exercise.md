@@ -1,4 +1,4 @@
-In this lab, you create a Microsoft Fabric Eventstream and use the Fabric Main Editor to create and link object to read and write objects to a lakehouse.
+In this lab, you create a Microsoft Fabric event stream and use the Fabric Main Editor to create and link object to read and write objects to a lakehouse.
 
 This lab takes approximately **30** minutes to complete.
 
@@ -7,4 +7,4 @@ This lab takes approximately **30** minutes to complete.
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-fabric-eventstream)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2260610)

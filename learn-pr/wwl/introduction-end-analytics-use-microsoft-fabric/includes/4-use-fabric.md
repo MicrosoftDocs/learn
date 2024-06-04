@@ -37,6 +37,6 @@ After you create your Fabric enabled workspace, you can start creating items in 
 
 Fabric workloads refer to the different capabilities included in Fabric. You can switch between workloads using the workload switcher in the bottom left corner of the navigation pane.
 
-![Screenshot of the Fabric workload switcher, featuring Data engineering, Data factory, Data science, Data warehousing, real-time analytics, and Power BI workloads.](../media/workspace-switcher.png)
+![Screenshot of the Fabric workload switcher, featuring Data engineering, Data factory, Data science, Data warehousing, real-time intelligence, and Power BI workloads.](../media/workspace-switcher.png)
 
 You may notice that Fabric workloads look similar to other Microsoft data offerings. Fabric is built on Power BI and Azure Data Lake Storage, and includes capabilities from Azure Synapse Analytics, Azure Data Factory, Azure Databricks, and Azure Machine Learning. What makes Fabric unique is that it brings these capabilities together in a single, SaaS integrated experience without the need for access to Azure resources.

@@ -4,10 +4,12 @@ title: Plan and implement network security configurations for an App Service Env
 metadata:
   title: Plan and implement network security configurations for an App Service Environment (ASE)
   description: "Plan and implement network security configurations for an App Service Environment (ASE)"
-  ms.date: 04/24/2024
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/6-network-security-configurations-app-service-environment.md)]

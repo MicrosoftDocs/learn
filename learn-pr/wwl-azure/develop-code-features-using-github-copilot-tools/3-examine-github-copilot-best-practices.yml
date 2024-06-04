@@ -4,10 +4,12 @@ title: Examine GitHub Copilot best practices
 metadata:
   title: Examine GitHub Copilot best practices
   description: "Examine GitHub Copilot best practices"
-  ms.date: 05/10/2024
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/3-examine-github-copilot-best-practices.md)]

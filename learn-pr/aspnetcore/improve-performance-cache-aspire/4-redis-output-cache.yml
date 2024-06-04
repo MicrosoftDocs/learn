@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-performance-cache-aspire.redis-output-cache
+title: Using a Redis output cache
+metadata:
+  title: Using a Redis output cache
+  description: In this unit, you'll learn how to cache complete HTML responses in a Redis cache.
+  ms.date: 03/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-redis-output-cache.md)]

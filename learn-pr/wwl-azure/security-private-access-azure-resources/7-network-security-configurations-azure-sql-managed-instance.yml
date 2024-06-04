@@ -4,10 +4,12 @@ title: Plan and implement network security configurations for an Azure SQL Manag
 metadata:
   title: Plan and implement network security configurations for an Azure SQL Managed Instance
   description: "Service supports disabling public network access either through using service-level IP Access Control List (ACL) filtering rule (not NSG or Azure Firewall) or using a **Disable Public Network Access** toggle switch."
-  ms.date: 04/24/2024
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/7-network-security-configurations-azure-sql-managed-instance.md)]

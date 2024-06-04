@@ -1,13 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-event-streams-microsoft-fabric.eventstream-components
-title: Main components of Eventstream
+uid: learn.wwl.explore-event-streams-microsoft-fabric.event stream-components
+title: Main components of event streams
 metadata:
-  title: Main components of Eventstream
-  description: "Main components of Eventstream"
-  ms.date: 11/01/2023
+  title: Main components of event streams
+  description: "Main components of event streams"
+  ms.date: 06/03/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/2-eventstream-components.md)]
