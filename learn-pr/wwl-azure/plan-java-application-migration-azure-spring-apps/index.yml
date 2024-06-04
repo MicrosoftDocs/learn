@@ -37,7 +37,6 @@ products:
 units:
 - learn.wwl.plan-java-application-migration-azure-spring-apps.use-spring-cloud-to-develop-java-apps-publish
 - learn.wwl.plan-java-application-migration-azure-spring-apps.use-azure-services-for-store-application-data
-- learn.wwl.plan-java-application-migration-azure-spring-apps.organize-azure-resources
 - learn.wwl.plan-java-application-migration-azure-spring-apps.summary
 - learn.wwl.plan-java-application-migration-azure-spring-apps.run-azure-services-for-host-java-applications
 badge:
