@@ -39,7 +39,6 @@ products:
 units:
 - learn.wwl.protect-endpoints-use-web-application-firewall.introduction
 - learn.wwl.protect-endpoints-use-web-application-firewall.deploy-azure-spring-cloud-virtual-network
-- learn.wwl.protect-endpoints-use-web-application-firewall.create-application-gateway-resources
 - learn.wwl.protect-endpoints-use-web-application-firewall.knowledge-check
 - learn.wwl.protect-endpoints-use-web-application-firewall.summary
 badge:
