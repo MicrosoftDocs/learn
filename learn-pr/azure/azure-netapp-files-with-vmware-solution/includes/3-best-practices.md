@@ -42,7 +42,7 @@ A single Azure NetApp Files volume can deliver up to 5,025 MiB/s of throughput a
 
 Azure NetApp Files supports nondisruptive performance scaling in two ways:
 
-1. **Increasing (or decreasing) the volume’s size:** You can nondisruptively increase (or decrease) the volume size in seconds to meet performance requirements as business needs change in near real-time.
-2. **Changing a volume’s service level:** You can nondisruptively change a volume’s service level by moving it to a different capacity pool. Changing a volume’s capacity pool only takes a few seconds as it doesn’t require any data copying or moving.
+- **Increasing (or decreasing) the volume’s size:** You can nondisruptively increase (or decrease) the volume size in seconds to meet performance requirements as business needs change in near real-time.
+- **Changing a volume’s service level:** You can nondisruptively change a volume’s service level by moving it to a different capacity pool. Changing a volume’s capacity pool only takes a few seconds as it doesn’t require any data copying or moving.
 
 For more information, see [Azure VMware Solution datastore performance considerations for Azure NetApp Files](/azure/azure-netapp-files/performance-azure-vmware-solution-datastore).

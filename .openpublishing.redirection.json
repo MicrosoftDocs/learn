@@ -36103,7 +36103,7 @@
     },
     {
       "source_path": "learn-pr/azure/azure-netapp-files-with-vmware-solution/4-map-azure-netapp-files-shares.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/azure-netapp-files-with-vmware-solution/4-attacch-volume-datastore",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-netapp-files-with-vmware-solution/4-attach-volume-datastore",
       "redirect_document_id": false
     },
     {
@@ -36113,7 +36113,7 @@
     },
     {
       "source_path": "learn-pr/azure/azure-netapp-files-with-vmware-solution/6-summary.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/azure-netapp-files-with-vmware-solution/7-summary",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-netapp-files-with-vmware-solution/8-summary",
       "redirect_document_id": false
     },
     {
