@@ -37,6 +37,5 @@ products:
 - github
 - azure-spring-apps
 units:
-- learn.wwl.secure-application-secrets-use-key-vault.update-application-configure
 badge:
   uid: learn.wwl.secure-application-secrets-using-key-vault.badge
