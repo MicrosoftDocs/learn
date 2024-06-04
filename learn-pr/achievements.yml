@@ -3518,3 +3518,8 @@ achievements:
   title: Create and configure Azure Service Bus for Azure Spring Apps
   summary: At this point, you've deployed the Spring Petclinic application, and the services are running. In this module, you'll be using Azure Service Bus to test an existing microservice and update another microservice to utilize queues.
   iconUrl: /training/achievements/create-configure-azure-service-bus-azure-spring-apps.svg
+- uid: learn.wwl.protect-endpoints-using-web-application-firewall.badge
+  type: badge
+  title: Protect endpoints using Web Application Firewall
+  summary: You have now set up your Spring Petclinic application in Azure and secured the secrets used by the microservices. In this module, you'll learn how to add a Web Application Firewall to your setup.
+  iconUrl: /training/achievements/4-protect-endpoints-using-web-application-firewall.svg
