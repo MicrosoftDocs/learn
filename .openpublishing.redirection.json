@@ -40328,6 +40328,11 @@
       "source_path": "learn-pr/wwl-azure/migrate-spring-cloud-application-to-azure/4-create-azure-mysql-database-service.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/migrate-spring-cloud-application-to-azure/2-create-azure-service.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
