@@ -40618,6 +40618,11 @@
       "source_path": "learn-pr/wwl-azure/secure-mysql-database-key-vault-use-private-endpoint/6-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-mysql-database-key-vault-use-private-endpoint/4-test-configuration.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
