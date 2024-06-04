@@ -40268,6 +40268,11 @@
       "source_path": "learn-pr/paths/deploy-run-java-applications-azure-spring-apps/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-monitoring-end-to-end-tracing/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
