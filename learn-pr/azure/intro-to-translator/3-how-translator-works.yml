@@ -4,11 +4,10 @@ title: How Translator works
 metadata:
   title: How Translator works
   description: How Translator works
-  ms.date: 03/14/2021
+  ms.date: 02/06/2024
   author: laujan
   ms.author: lajanuar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-how-translator-works.md)]
+  [!INCLUDE[](includes/3-how-translator-works.md)]

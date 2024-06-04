@@ -4,32 +4,29 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/21/2022
+  ms.date: 09/27/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
-content: |
-  [!include[](includes/05-knowledge-check.md)]
 quiz:
   questions:
-  - content: "Which of the following features of Language Studio can you use out of box without needing to train a model?"
+  - content: "Which of the following features of Azure AI Language can you use out of box without needing to train a model?"
     choices:
     - content: "Conversational language understanding."
       isCorrect: false
       explanation: "Incorrect. You need to train a model with the intents and entities."
     - content: "Analyze sentiment."
       isCorrect: true
-      explanation: "Correct. The analyze sentiment feature has a pre-built model that you can use without any training."
+      explanation: "Correct. The analyze sentiment feature has a prebuilt model that you can use without any training."
     - content: "Custom text classification."
       isCorrect: false
       explanation: "Incorrect. You need to train a model with the classes you want to identify."
-  - content: "Which step enables a cognitive search index to store the enrichments from a Language Studio project?"
+  - content: "Which step enables an AI Search index to store the enrichments from an Azure AI Language project?"
     choices:
-    - content: "Update your Azure Cognitive Search solution."
+    - content: "Update your Azure AI Search solution."
       isCorrect: true
       explanation: "Correct. You need to edit the index, indexer, and custom skillset to store the enrichments."
     - content: "Create a function app."

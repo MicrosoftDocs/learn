@@ -3,11 +3,13 @@ uid: learn.wwl.explore-microsoft-identity-platform
 metadata:
   title: Explore the Microsoft identity platform
   description: "Learn the core features and functionality of the Microsoft identity platform including authentication, libraries, and app management tools."
-  ms.date: 04/24/2023
+  ms.date: 12/11/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: identity-platform
 title: Explore the Microsoft identity platform
 summary: Learn the core features and functionality of the Microsoft identity platform including authentication, libraries, and app management tools.
 abstract: |
@@ -25,7 +27,7 @@ levels:
 roles:
 - developer
 products:
-- azure-active-directory
+- entra-id
 - microsoft-identity-web
 subjects:
 - identity-access

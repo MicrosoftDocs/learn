@@ -6,9 +6,10 @@ metadata:
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-react
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-js
 title: Work with logic in JSX files
 durationInMinutes: 1
 content: |

@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-prepare-deployment.determine-traffic-mirroring-method
+title: Determine traffic mirroring methods to use
+metadata:
+  title: Determine traffic mirroring methods to use
+  description: "Describes the process to prepare which traffic monitoring methods to use."
+  ms.date: 03/04/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+  ms.service: defender-for-iot
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-determine-traffic-mirroring-method.md)]
+  
+quiz:
+
+  questions:
+  
+  - content: "What factors should you consider when choosing a traffic mirroring method for each sensor?"
+    choices:
+    - content: "Factors such as the sensor connection, the network configuration, and the available resources."
+      isCorrect: true
+      explanation: "Factors like the sensor connection, the network configuration, and the available resources influence the type of traffic monitoring methods chosen and used for your sensors."
+    - content: "Factors such as the time zone of the sensor and the project manager's preferences."
+      isCorrect: false 
+      explanation: "The time zone of the sensor and the project manager's preferences shouldn't determine what traffic mirroring method is chosen. Choose a traffic mirroring method that best fits the needs and resources of your organization."
+    - content: "Factors such as the number of users and the brand of the network devices."
+      isCorrect: false
+      explanation: "The number of users shouldn't affect the type of traffic mirroring method nor should the brand of the network devices, unless there's a device interoperability issue."
+
+  - content: "Your automotive manufacturing organization wants forensic traffic monitoring to protect in-vehicle software and firmware during manufacturing. What traffic mirroring method would be ideal for your use?"
+    choices:
+    - content: "ERSPAN" 
+      isCorrect: false
+      explanation: "ERSPAN wouldn't be the most ideal method for forensic traffic monitoring. This is because GRE encapsulation and decapsulation require more bandwidth and resources and might encounter network errors that could lead to packet loss or corruption."
+    - content: "TAP"
+      isCorrect: true
+      explanation: "TAP is a good choice for forensic traffic monitoring since it can capture all traffic without dropping packets thereby passing all messages, including damaged ones."
+    - content: "Virtual switch"
+      isCorrect: false
+      explanation: "While a virtual switch could mirror all traffic passed through promiscuous mode, it's limited to the host's resources. So it might not be the ideal traffic mirroring method. Your decision should be based on your network needs and resources."

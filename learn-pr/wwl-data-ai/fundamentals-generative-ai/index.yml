@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.fundamentals-generative-ai
+metadata:
+  title: Fundamentals of Generative AI          
+  description: "Learn about how large language models form the foundation of generative AI applications and understand how to work with Microsoft Copilot."               # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 5/15/2024               
+  author: sherzyang       
+  ms.author: sheryang            
+  ms.topic: module-intro-to-product # Please don't edit, used for our analytics
+  ms.service: azure-ai-openai
+title: Fundamentals of Generative AI
+summary: "In this module, you explore the way in which language models enable AI applications and services to generate original content based on natural language input. You also learn how generative AI enables the creation of copilots that can assist humans in creative tasks."
+abstract: |
+  By the end of this module, you are able to:
+  - Understand generative AI's place in the development of artificial intelligence.
+  - Understand language models and their role in intelligent applications. 
+  - Describe examples of copilots and good prompts. 
+prerequisites: |
+  - Familiarity with Azure and the Azure portal.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles: 
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products: 
+  - azure-openai
+  - azure
+subjects: 
+  - cloud-computing
+units:
+- learn.wwl.fundamentals-generative-ai.introduction
+- learn.wwl.fundamentals-generative-ai.what-is-generative-ai
+- learn.wwl.fundamentals-generative-ai.language-models
+- learn.wwl.fundamentals-generative-ai.azure-openai
+- learn.wwl.fundamentals-generative-ai.copilots
+- learn.wwl.fundamentals-generative-ai.microsoft-copilot
+- learn.wwl.fundamentals-generative-ai.writing-prompts
+- learn.wwl.fundamentals-generative-ai.building-custom-copilots
+- learn.wwl.fundamentals-generative-ai.exercise
+- learn.wwl.fundamentals-generative-ai.knowledge-check
+- learn.wwl.fundamentals-generative-ai.summary
+badge:
+  uid: learn.wwl.fundamentals-generative-ai.badge

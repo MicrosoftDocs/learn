@@ -1,5 +1,3 @@
-
-
 Contoso uses AD DS to authenticate users, computers, applications, and other resources. Contoso plans to implement several line of business (LOB) applications, partly on-premises and partly in Azure. IT staff have concerns that there might be latency sending authentication requests from Azure back to on-premises. As a consequence, you are considering implementing directory and identity services in Azure to help reduce this latency.
 Some of the reasons you might consider placing domain controllers in Azure include:
 

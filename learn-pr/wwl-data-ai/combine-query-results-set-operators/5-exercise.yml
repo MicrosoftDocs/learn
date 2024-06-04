@@ -4,12 +4,12 @@ title: 'Exercise: Combine query results with set operators'
 metadata:
   title: 'Exercise: Combine query results with set operators'
   description: "Exercise: Combine query results with set operators"
-  ms.date: 10/11/2022
+  ms.date: 03/14/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 labId: 105116
 labModal: true
 durationInMinutes: 30

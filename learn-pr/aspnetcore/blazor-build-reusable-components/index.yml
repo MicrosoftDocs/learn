@@ -4,11 +4,13 @@ metadata:
   moduleType: standard
   title: Build reusable components with Blazor
   description: "Learn how to use Razor class libraries to package and deploy components with Blazor."
-  ms.date: 03/22/2023
+  ms.date: 01/26/2024
   author: csharpfritz
   ms.author: jefritz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-blazor 
+  ms.manager: markl
+  ms.topic: module
+  ms.service: dotnet-architecture
+  ms.subservice: blazor
 title: Build reusable components with Blazor
 summary: "By using Blazor components, you can reuse sections of HTML in your applications. Learn how to build a component, package it, and share it with other Blazor applications."
 abstract: |
@@ -29,8 +31,6 @@ products:
   - blazor
   - dotnet
   - aspnet-core
-subjects:
-- development-tools
 units:
 - learn.blazor-build-reusable-components.introduction
 - learn.blazor-build-reusable-components.concepts-razor-class-library

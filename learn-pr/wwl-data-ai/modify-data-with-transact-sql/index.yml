@@ -6,8 +6,10 @@ metadata:
   ms.date: 04/29/2022
   author: wwlpublish
   ms.author: anrudduc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: sql
+  ms.subservice: t-sql
+  ms.devlang: tsql
 title: Modify data with T-SQL
 summary: Learn how to use Transact-SQL to insert, update, and delete data in a database.
 abstract: |
@@ -37,8 +39,6 @@ products:
 - azure-sql-managed-instance
 - azure-sqlserver-vm
 - azure-sql-virtual-machines
-subjects:
-- development-tools
 units:
 - learn.wwl.modify-data-with-transact-sql.introduction
 - learn.wwl.modify-data-with-transact-sql.insert-data

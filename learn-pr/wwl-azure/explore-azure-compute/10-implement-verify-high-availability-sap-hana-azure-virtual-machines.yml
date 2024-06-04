@@ -4,11 +4,10 @@ title: Implement and verify high availability SAP HANA on Azure virtual machines
 metadata:
   title: Implement and verify high availability SAP HANA on Azure virtual machines
   description: "Implement and verify high availability SAP HANA on Azure virtual machines"
-  ms.date: 04/21/2023
+  ms.date: 12/06/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/10-implement-verify-high-availability-sap-hana-azure-virtual-machines.md)]

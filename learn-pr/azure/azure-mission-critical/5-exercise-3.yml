@@ -8,8 +8,7 @@ metadata:
   ms.date: 09/22/2022
   author: msimecek
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 60
 content: |
   [!include[](includes/5-exercise-3.md)]

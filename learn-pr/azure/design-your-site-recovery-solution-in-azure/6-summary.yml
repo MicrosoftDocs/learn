@@ -3,12 +3,11 @@ uid: learn.design-your-site-recovery-solution-in-azure.6-summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary
-  ms.date: 11/18/2019
+  description: Summary.
+  ms.date: 05/10/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

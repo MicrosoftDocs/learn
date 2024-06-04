@@ -1,5 +1,3 @@
-
-
 After training, you want to deploy a machine learning model in order to integrate the model with an application. In Azure Machine Learning, you can easily deploy a model to a batch or online endpoint when you register the model with **MLflow**. 
 
 Imagine you're a data scientist, working for a company that creates an application for health care practitioners to help diagnose diabetes in patients. The practitioners enter a patient's medical information and expect a response from the application, indicating whether a patient is likely to have diabetes or not.

@@ -21,7 +21,7 @@ In some cases, system parts may require more granular context because of their i
 |2|Create a new file and name it exactly the same way as the description label, with a path-like structure, such as *Web Service Name - Web Service Worker Name*.|
 |3|Focus the data-flow diagram only on the system subpart you're "zooming into."|
 
-The result will be a series of data-flow diagrams in the **subprocess layer**, known as layer 2.
+The result is a series of data-flow diagrams in the **subprocess layer**, known as layer 2.
 
 > [!TIP]
 > The path-like file naming structure helps you differentiate between the different levels.

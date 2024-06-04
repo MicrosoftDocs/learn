@@ -8,13 +8,13 @@ You know what Azure Firewall is and how it works. Now you need some criteria to 
 - Your network requires multiple firewalls.
 - You want to implement hierarchical firewall policies.
 
-As part of your evaluation of Azure Firewall and Azure Firewall Manager, you know that Contoso has faced several of these scenarios. Read the following corresponding sections for more details.
+As part of your evaluation of Azure Firewall and Azure Firewall Manager, you know that Contoso faced several of these scenarios. Read the following corresponding sections for more details.
 
 ## You want to protect your network against infiltration
 
 A common goal of many malicious actors is to infiltrate your network. These intruders might want to use your network resources or examine, steal, or destroy sensitive or proprietary data.
 
-Azure Firewall is designed to help prevent such intrusions. For example, a malicious hacker might try to infiltrate the network by requesting access to a network resource. Azure Firewall uses stateful inspection of network packets to examine the context of such requests. If a request is a response to earlier legitimate activity, then the firewall will likely allow the request; if a request came seemingly out of nowhere—as would the request sent by a would-be infiltrator—then the firewall would deny the request.
+Azure Firewall is designed to help prevent such intrusions. For example, a malicious hacker might try to infiltrate the network by requesting access to a network resource. Azure Firewall uses stateful inspection of network packets to examine the context of such requests. If a request is a response to earlier legitimate activity, then the firewall likely allows the request; if a request came seemingly out of nowhere—like a request sent by a would-be infiltrator—then the firewall would deny the request.
 
 ## You want to protect your network against user error
 
@@ -64,7 +64,7 @@ Similarly, the log for your firewall's network rules might include entries such 
 
 - *TCP request from 73.121.236.17:12354 to 10.0.0.30:3389. Action: Deny*
 
-Once you've enabled diagnostic logging, you can monitor and analyze the logs in the following ways:
+Once you enable diagnostic logging, you can monitor and analyze the logs in the following ways:
 
 - You can examine the logs directly in their native JSON format.
 - You can examine the logs in Azure Monitor.
@@ -82,14 +82,14 @@ Azure Firewall Manager solves these problems by giving you a central management 
 
 ## You want to implement hierarchical firewall policies
 
-Many smaller companies can simply use a one-size-fits-all firewall policy. That is, small companies can often create a single firewall policy that applies to every user and resource on the network.
+Many smaller companies can use a one-size-fits-all firewall policy. That is, small companies can often create a single firewall policy that applies to every user and resource on the network.
 
 For most larger companies, however, a more nuanced and detailed approach is required. For example, consider the following two scenarios:
 
 - A DevOps shop might have a virtual network for developing an app, another virtual network for staging the app, and a third virtual network for the production version of the app.
 - A large business might have separate teams for database users, engineering, and sales. Each of those teams has its own set of applications running in separate virtual networks.
 
-Although there will certainly be firewall rules that are common to all, the users and resources in each virtual network will require specific firewall rules. So, larger companies almost always require *hierarchical* firewall policies. Hierarchical firewall policies consist of the following two components:
+Although there are firewall rules that are common to all, the users and resources in each virtual network requires specific firewall rules. So, larger companies almost always require *hierarchical* firewall policies. Hierarchical firewall policies consist of the following two components:
 
 - A single *base firewall policy* that implements the rules that need to be enforced company wide.
 - One or more *local firewall policies* that implement rules that are specific to a particular app, team, or service. Local policies inherit the base firewall policy and then add rules related to the underlying app, team, or service.

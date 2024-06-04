@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric
+metadata:
+  title: Preprocess data with Data Wrangler in Microsoft Fabric
+  description: "Explore the process of preparing data for machine learning models using the Data Wrangler tool in Microsoft Fabric notebooks."
+  ms.date: 09/19/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: module-standard-task-based
+  ms.service: fabric
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+title: Preprocess data with Data Wrangler in Microsoft Fabric
+summary: Data Wrangler serves as a comprehensive tool for preprocessing data. It enables users to clean data, handle missing values, and transform features to build machine learning models.
+abstract: |
+  In this module, you'll:
+  - Learn Data Wrangler features, and its role in the data science workflow.
+  - Perform different types of preprocessing operations in data science.
+  - Learn how to handle missing values, and imputation strategies.
+  - Use one-hot encoding and other techniques to convert categorical data into a format suitable for machine learning algorithms.
+prerequisites: |
+  Before starting this module, you should be familiar with the basic principles of machine learning.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+products:
+- fabric
+subjects:
+- data-management
+- machine-learning
+units:
+- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.introduction
+- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.understand-data-wrangler
+- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.explore-data-with-data-wrangler
+- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.handle-missing-data
+- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.transform-data
+- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.exercise-preprocess-data-with-data-wrangler
+- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.knowledge-check
+- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.summary
+badge:
+  uid: learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.badge

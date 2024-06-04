@@ -1,10 +1,10 @@
-You're a new developer at Tailwind Traders. Before you can start, you'll need to get your development environment configured. Don't worry, Tailwind Traders has made the onboarding process easy. There are just a few small steps you need to follow to get up and running.
+You're a new developer at Tailwind Traders. Before you can start, you need to get your development environment configured. Don't worry, Tailwind Traders has made the onboarding process easy. There are just a few small steps you need to follow to get up and running.
 
 ## Scaffold the project resources
 
-1. Sign in to Azure Cloud Shell (also known as, "Tailwind Traders Production Environment") as indicated at the top of this page.
+1. Activate the sandbox and sign in to Azure Cloud Shell (also known as the *Tailwind Traders Production Environment*) as indicated at the top of this page.
 
-1. Copy the following line, and paste it into Azure Cloud Shell terminal to the right.
+1. Copy the following line and paste it into Azure Cloud Shell terminal to the right.
 
    ```bash
    git clone https://github.com/MicrosoftDocs/mslearn-build-api-azure-functions && ./mslearn-build-api-azure-functions/DB_SETUP/CREATE_DATABASE.sh
@@ -18,11 +18,11 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 1. In the top menu bar, select **View** > **Command Palette**.
 
-1. In the prompt, enter *clone*.
+1. In the prompt, enter *Clone*.
 
 1. In the Command Palette, select **Git: Clone**.
 
-1. Enter the following repo URL.
+1. Enter the following repo URL:
 
    ```bash
    https://github.com/MicrosoftDocs/mslearn-build-api-azure-functions
@@ -36,7 +36,7 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
    :::image type="content" source="../media/open-workspace.png" alt-text="Screenshot of Visual Studio Code notification prompt to open workspace." loc-scope="Visual Studio Code":::
 
-When the workspace opens, two projects appear in Visual Studio Code: "frontend" and "api". The "frontend" project contains the web app. The "api" project is where you build the serverless API with Azure Functions.
+When the workspace opens, two projects appear in Visual Studio Code: `frontend` and `api`. The "frontend" project contains the web app. The `api` project is where you build the serverless API with Azure Functions.
 
 ## Run the front-end project
 
@@ -50,7 +50,7 @@ When the workspace opens, two projects appear in Visual Studio Code: "frontend" 
    npm start
    ```
 
-   A small webserver called *serve* should be running in the Visual Studio Code terminal window. It displays the URL where the front-end app is running.
+   A small webserver called *serve* runs in the Visual Studio Code terminal window. It displays the URL where the front-end app is running.
 
    :::image type="content" source="../media/npm-start.png" alt-text="Screenshot of Visual Studio Code terminal with a callout highlighting the url and port of running application." loc-scope="vs-code":::
 

@@ -4,13 +4,10 @@ title: Implement and configure consent settings
 metadata:
   title: Implement and configure consent settings
   description: "Implement and configure consent settings"
-  ms.date: 02/07/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.topic: unit
+durationInMinutes: 1
 content: |
   [!include[](includes/3-implement-configure-consent-settings.md)]

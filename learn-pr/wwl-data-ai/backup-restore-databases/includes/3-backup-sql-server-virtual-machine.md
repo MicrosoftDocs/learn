@@ -1,4 +1,4 @@
-Azure Backup can back up VMs that contain SQL Server. These backups would contain not just SQL Server databases; they would everything that is in the VM so it could be restored as a whole. While this option may not be right for everyone, it can potentially protect against problems like ransomware.
+Azure Backup can back up VMs that contain SQL Server. These backups would contain not just SQL Server databases; they would contain everything that is in the VM so it could be restored as a whole. While this option may not be right for everyone, it can potentially protect against problems like ransomware.
 
 VM-level backups are SQL Server-aware, also known as application aware, so they'll create an application-consistent backup. This means that if you restore a VM-level backup, it will not ‘break’ SQL Server. If using this option, when looking in the SQL Server log you'll see that the I/O has been momentarily frozen and then starts again when complete. If this causes issues with availability features like AGs, you may want to consider another backup strategy.
 

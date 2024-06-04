@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-batch-predictions-fabric.exercise
+title: Exercise - Generate and save batch predictions
+metadata:
+  title: Exercise - Generate and save batch predictions
+  description: "Exercise - Generate and save batch predictions in Microsoft Fabric"
+  ms.date: 10/25/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise.md)]

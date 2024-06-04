@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.build-accessible-sharepoint-sites.use-built-in-features-to-improve-sharepoint-site-accessibility
+title: Use built-in features to improve SharePoint site accessibility
+metadata:
+  title: Use built-in features to improve SharePoint site accessibility
+  description: This content is a part of the "Build accessible SharePoint sites." module.
+  ms.date: 04/12/2024
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-use-built-in-features-to-improve-sharepoint-site-accessibility.md)]

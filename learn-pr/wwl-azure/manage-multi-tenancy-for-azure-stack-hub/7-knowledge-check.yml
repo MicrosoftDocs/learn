@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/26/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -28,11 +27,11 @@ quiz:
     - content: "$guestDirectoryTenantName = \"fabrikam.onmicrosoft.com\""
       isCorrect: true
       explanation: "Correct. Running $guestDirectoryTenantName = \"fabrikam.onmicrosoft.com\" sets the value for the guest tenant directory to fabrikam.onmicrosoft.com."
-  - content: "An Azure Stack Hub operator is configuring multi-tenancy for Azure Stack Hub. They begin by configuring Azure Stack Hub to allow signing in from Azure Active Directory (AD) directory guest tenants. What should they do?"
+  - content: "An Azure Stack Hub operator is configuring multi-tenancy for Azure Stack Hub. They begin by configuring Azure Stack Hub to allow signing in from Microsoft Entra directory guest tenants. What should they do?"
     choices:
     - content: "Onboard the guest directory tenant to Azure Stack Hub by configuring Azure Resource Manager to accept users and service principals from the guest directory tenant."
       isCorrect: true
-      explanation: "Correct. Multi-tenancy for Azure Stack Hub allows signing in from Azure Active Directory (AD) directory guest tenants. Azure Resource Manager accepts users and service principals from the guest directory tenant to allow the guest directory tenant."
+      explanation: "Correct. Multi-tenancy for Azure Stack Hub allows signing in from Microsoft Entra directory guest tenants. Azure Resource Manager accepts users and service principals from the guest directory tenant to allow the guest directory tenant."
     - content: "Run Get-AzProviderOperation \"Microsoft.Support/*\" | FT Operation, Description -AutoSize"
       isCorrect: false
       explanation: "Incorrect. Get-AzProviderOperation command gets the list of operations for the Microsoft.Support resource provider."

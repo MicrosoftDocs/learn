@@ -6,8 +6,12 @@ metadata:
   ms.date: 08/15/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: synapse-analytics
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
 title: Design a Modern Data Warehouse using Azure Synapse Analytics
 summary: Learn how Azure Synapse Analytics enables you to build Data Warehouses using modern architecture patterns.
 abstract: |
@@ -29,7 +33,7 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.introduction
 - learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.describe

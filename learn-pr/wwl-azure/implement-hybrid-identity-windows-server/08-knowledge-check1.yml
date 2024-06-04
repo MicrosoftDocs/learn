@@ -6,9 +6,8 @@ metadata:
   description: "Knowledge check 1"
   ms.date: 12/13/2021
   author: wwlpublish
-  ms.author: v-anwarr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: tonyj
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -17,28 +16,28 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following statements about Azure AD is true?"
+  - content: "Which of the following statements about Microsoft Entra ID is true?"
     choices:
-    - content: "Azure AD implements the same authentication protocols as on-premises AD DS."
+    - content: "Microsoft Entra ID implements the same authentication protocols as on-premises AD DS."
       isCorrect: false
-      explanation: "That's incorrect. Azure AD does not use on-premises AD DS Kerberos authentication; instead, it uses HTTP and HTTPS protocols such as SAML, WS-Federation, and OpenID Connect for authentication, and OAuth for authorization."
-    - content: "Azure AD is essentially on-premises AD DS in the cloud."
+      explanation: "That's incorrect. Microsoft Entra ID does not use on-premises AD DS Kerberos authentication; instead, it uses HTTP and HTTPS protocols such as SAML, WS-Federation, and OpenID Connect for authentication, and OAuth for authorization."
+    - content: "Microsoft Entra ID is essentially on-premises AD DS in the cloud."
       isCorrect: false
-      explanation: "That's incorrect. Although Azure AD has many similarities to AD DS, there are also many differences. It's important to realize that using Azure AD is different from deploying an AD DS domain controller on an Azure VM and then adding it to your on-premises domain."
-    - content: "Azure AD users and groups are created in a flat structure."
+      explanation: "That's incorrect. Although Microsoft Entra ID has many similarities to AD DS, there are also many differences. It's important to realize that using Microsoft Entra ID is different from deploying an AD DS domain controller on an Azure VM and then adding it to your on-premises domain."
+    - content: "Microsoft Entra users and groups are created in a flat structure."
       isCorrect: true
-      explanation: "That's correct. Azure AD users and groups are created in a flat structure, and there are no OUs or GPOs."
-  - content: "Contoso IT staff have set up Azure AD Connect and are beginning to synchronize accounts. Maria in IT finds a new user account in Azure AD that has been created by the Azure AD Connect process. Which of the following accounts would Maria have found?"
+      explanation: "That's correct. Microsoft Entra users and groups are created in a flat structure, and there are no OUs or GPOs."
+  - content: "Contoso IT staff have set up Microsoft Entra Connect and are beginning to synchronize accounts. Maria in IT finds a new user account in Microsoft Entra ID that has been created by the Microsoft Entra Connect process. Which of the following accounts would Maria have found?"
     choices:
     - content: "Maria found an account called `MSOL_c778af008d92`."
       isCorrect: false
-      explanation: "That's incorrect. The account with the MSOL prefix resides in on-premises AD DS, but it's created during setup of Azure AD Connect."
+      explanation: "That's incorrect. The account with the MSOL prefix resides in on-premises AD DS, but it's created during setup of Microsoft Entra Connect."
     - content: "Marie found an account called `Sync_CONTOSO-DC1_c778af008d92@Contoso.com`."
       isCorrect: true
-      explanation: "That's correct. An account with the prefix Sync is created in Azure AD as part of the Azure AD Connect setup."
+      explanation: "That's correct. An account with the prefix Sync is created in Microsoft Entra ID as part of the Microsoft Entra Connect setup."
     - content: "Maria found an account called `AAD_c778af008d92`."
       isCorrect: false
-      explanation: "That's incorrect. The account with the AAD prefix resides in on-premises AD DS, but is created during setup of Azure AD Connect."
+      explanation: "That's incorrect. The account with the Microsoft Entra ID prefix resides in on-premises AD DS, but is created during setup of Microsoft Entra Connect."
   - content: "Which of the following sign-in methods is NOT available for Contoso IT staff to combine with Seamless SSO?"
     choices:
     - content: "Password Hash Synchronization."

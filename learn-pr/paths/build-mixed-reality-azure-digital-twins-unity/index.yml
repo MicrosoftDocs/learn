@@ -6,14 +6,13 @@ metadata:
   ms.date: 05/12/2021
   author: JBrentJ
   ms.author: jejacks
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Build mixed reality digital twins with Azure Digital Twins and Unity
 summary: Learn how to create a mixed reality application using Azure Digital Twins and Unity, a real-time 3D platform.
 prerequisites: |
   - Azure service creation and configuration
   - Basic familiarity with Unity, C#, and GitHub
-  - Domain User Azure Active Directory (i.e, not Guest)
+  - Domain User Microsoft Entra ID (i.e., not Guest)
   - [Azure CLI](/cli/azure/install-azure-cli) installed
   - Bing Maps developer account 
   - A Windows 10 PC configured with the required tools
@@ -33,7 +32,7 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- azure-cognitive-services
+- ai-services
 - azure-digital-twins
 - azure-iot
 - azure-iot-hub

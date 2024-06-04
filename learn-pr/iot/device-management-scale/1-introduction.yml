@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-approaches-to-device-management-at-scale.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is part of Examine approaches to device management at scale using Azure IoT Hub
+  ms.date: 10/01/2023
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

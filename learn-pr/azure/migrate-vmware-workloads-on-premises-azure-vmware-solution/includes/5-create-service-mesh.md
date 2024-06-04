@@ -1,8 +1,8 @@
-After the site pairing, networking profiles, and compute profile configurations finish, the next step involves setting up a service mesh for VMware HCX (HCX) Manager. The service mesh also allows HCX Manager to migrate VMs from an HCX-enabled source site (on-premises) into an HCX-enabled destination site (Azure VMware Solution).
+After the site pairing, networking profiles, and compute profile configurations finish, the next step involves setting up a service mesh for VMware HCX Manager. The service mesh also allows VMware HCX Manager to migrate virtual machines (VMs) from a VMware HCX-enabled source site (on-premises) into a VMware HCX-enabled destination site (Azure VMware Solution).
 
 ## What is a service mesh?
 
-A *service mesh* provides a dedicated infrastructure abstraction layer that helps ease network transport between a source and destination site. The service mesh allows workloads and application services to decouple the networking components required for communication between sites. The service mesh enables a secure and optimized networking transport fabric between any two sites managed by HCX Manager. After you enable the service mesh, you can migrate VMs to Azure VMware Solution.
+A *service mesh* provides a dedicated infrastructure abstraction layer that helps ease network transport between a source and destination site. The service mesh allows workloads and application services to decouple the networking components required for communication between sites. The service mesh enables a secure and optimized networking transport fabric between any two sites managed by VMware HCX Manager. After you enable the service mesh, you can migrate VMware vSphere VMs to Azure VMware Solution.
 
 ## Create a service mesh
 
@@ -10,12 +10,12 @@ To successfully establish a service mesh with Azure VMware Solution, you must me
 
 |Requirement | Reason  |
 |---------|---------|
-| UDP ports 500/4500 | These ports need to be open between the HCX Connector uplink and the Azure VMware Solution HCX Cloud uplink network profile addresses. |
+| UDP ports 500/4500 | These ports need to be open between the VMware HCX Connector uplink and the Azure VMware Solution HCX Cloud uplink network profile addresses. |
 | VMware HCX Manager required ports | See the VMware HCX URL at the end of this module. The URL provides a comprehensive list of required open ports between source and destination sites. |
 
 After you confirm the networking ports and test them as open, take the following steps to enable a service mesh:
 
-1. From within the HCX Connector dashboard on-premises, under **Infrastructure**, select **Interconnect** > **Service Mesh** > **Create Service Mesh**.
+1. From within the VMware HCX Connector dashboard on-premises, under **Infrastructure**, select **Interconnect** > **Service Mesh** > **Create Service Mesh**.
 
     :::image type="content" source="../media/5-create-service-mesh.png" alt-text="Screenshot of options to select when you're creating a service mesh between the on-premises HCX Connector and Azure VMware Solution.":::
 
@@ -23,7 +23,7 @@ After you confirm the networking ports and test them as open, take the following
 
     :::image type="content" source="../media/5-pre-populated-sites.png" alt-text="Screenshot of the pre-populated site pairing created earlier.":::
 
-1. Select both the source and remote compute profiles from the dropdown lists, then select **Continue**. These selections define where VMs can use HCX services for migration.
+1. Select both the source and remote compute profiles from the dropdown lists, then select **Continue**. These selections define where VMs can use VMware HCX services for migration.
 
     :::image type="content" source="../media/5-select-compute-profile-source.png" alt-text="Screenshot that shows selecting the source compute profile in the on-premises HCX Connector.":::
 
@@ -39,7 +39,7 @@ After you confirm the networking ports and test them as open, take the following
 
 1. In **Advanced Configuration - Network Extension Appliance Scale Out**, locate the checkbox next to the distributed switch configuration that you configured for the vMotion network profile. You should see that this checkbox is already selected. Simply leave the checkbox selected and select **Continue**.
 
-1. When you reach **Advanced Configuration - Traffic Engineering**, select **Continue**. You don't have an HCX Enterprise key for this configuration.
+1. When you reach **Advanced Configuration - Traffic Engineering**, select **Continue**.
 
     :::image type="content" source="../media/5-advanced-configuration-traffic-engineering.png" alt-text="Screenshot displaying that application resiliency can't be selected because there isn't an HCX Enterprise license key.":::
 
@@ -67,4 +67,4 @@ After you confirm the networking ports and test them as open, take the following
 
     :::image type="content" source="../media/5-interconnect-appliance.png" alt-text="Screenshot of interconnect appliances that were deployed to Azure VMware Solution by enabling the service mesh.":::
 
-In the next unit, we'll cover how to migrate VMs from on-premises to Azure VMware Solution by using VMware HCX.
+In the next unit, we'll cover how to migrate VMs from on-premises vSphere to Azure VMware Solution by using VMware HCX.

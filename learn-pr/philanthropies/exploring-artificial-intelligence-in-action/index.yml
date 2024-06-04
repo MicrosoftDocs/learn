@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.philanthropies.exploring-artificial-intelligence-in-action
+
+metadata:
+  title: Exploring artificial intelligence in action
+  description: This module explores various subsets within artificial intelligence (AI) such as natural language processing (NLP), computer vision, and recommendation systems and discuss the integration of AI-powered tools into a learning environment.
+  ms.date: 01/25/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: module-standard-task-based
+  ms.service: artificial-intelligence
+title: Exploring artificial intelligence in action
+summary: This module explores various subsets within artificial intelligence (AI) such as natural language processing (NLP), computer vision, and recommendation systems and discuss the integration of AI-powered tools into a learning environment.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand the main advantages of applying AI-powered tools into a learning environment. 
+  - Analyze the differences between different AI subsets and their applications in education.
+
+iconUrl: /training/achievements/exploring-artificial-intelligence-in-action.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- higher-ed-educator
+- business-user
+- data-engineer
+- school-leader
+products:
+- ai-services
+- m365-apps
+- azure-translator-text
+- azure-translator-speech
+- ms-copilot
+- language-service
+subjects:
+- artificial-intelligence
+units:
+- learn.philanthropies.exploring-artificial-intelligence-in-action.introduction
+- learn.philanthropies.exploring-artificial-intelligence-in-action.common-ai-subsets
+- learn.philanthropies.exploring-artificial-intelligence-in-action.ai-powered-tools-education 
+- learn.philanthropies.exploring-artificial-intelligence-in-action.evaluating-efficacy-ai-systems
+- learn.philanthropies.exploring-artificial-intelligence-in-action.knowledge-check
+- learn.philanthropies.exploring-artificial-intelligence-in-action.summary
+badge:
+  uid: learn.philanthropies.exploring-artificial-intelligence-in-action.badge

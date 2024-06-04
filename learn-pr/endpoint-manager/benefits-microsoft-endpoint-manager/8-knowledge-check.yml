@@ -3,11 +3,10 @@ uid: learn.benefits-microsoft-endpoint-manager.8-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 10/26/2020
+  ms.date: 12/08/2022
   author: Erikre 
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager  
+  ms.topic: unit
 title: Knowledge check
 durationInMinutes: 3
 quiz:

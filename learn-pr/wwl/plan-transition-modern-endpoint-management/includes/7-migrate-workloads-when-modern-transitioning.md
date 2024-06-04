@@ -1,4 +1,5 @@
 
+
 For organizations currently using Configuration Manger, there are obviously choices an organization must make with regard to how they'll leverage Endpoint Manager. There's no "correct choice" to transitioning to modern management; organizations must choose which solution within Endpoint Manager best fits the various scenarios they face. Microsoft fully supports Endpoint Manager, and that includes all the capabilities that Intune and Configuration Manager provides.
 
 ### Migrate client management to Intune

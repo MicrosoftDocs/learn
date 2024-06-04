@@ -6,9 +6,8 @@ metadata:
   description: Validate your knowledge on using secrets in a GitHub Actions workflow.
   author: a-a-ron
   ms.author: aastewar
-  ms.date: 06/11/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/07/2023
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/exercise.md)]

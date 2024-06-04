@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-iot-hub-message-routing.examine-query-syntax
+title: Examine message routing queries
+metadata:
+  title: Examine message routing queries
+  description: "Examine the message routing queries"
+  ms.date: 02/06/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-message-routing-query-syntax.md)]

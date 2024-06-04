@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-inheritance-abstraction-polymorphism.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the best definition of code reuse?"
+    choices:
+    - content: "Code reuse is about reusing a code, such as a banking PIN number."
+      isCorrect: false
+      explanation: "Incorrect. Code ruse has nothing to do with these type os numbers."
+    - content: "Code reuse is the practice of cutting and pasting code, creating new classes."
+      isCorrect: false
+      explanation: "Incorrect. Code reuse does not involve cutting and pasting code for reuse."
+    - content: "Code reuse is the practice of using existing code to create new classes and methods through inheritance."
+      isCorrect: true
+      explanation: "Correct. Code reuse involves using existing classes to create new one through inheritance."
+  - content: "Why is inheritance useful?"
+    choices:
+    - content: "Inheritance is useful because it makes code more difficult to read and understand."
+      isCorrect: false
+      explanation: "Incorrect. Code reuse makes code easier to understand."
+    - content: "Inheritance is useful because it allows developers to write new code from scratch every time they need to create a new class."
+      isCorrect: false
+      explanation: "Incorrect. Code reuse makes it so you don't need to new class from scratch."
+    - content: "Inheritance is useful because it allows developers to reuse code and avoid duplicating code across multiple classes."
+      isCorrect: true
+      explanation: "Correct. Code reuse allows you to inherit from another class, reducing the amount of duplicate code in a program."
+  - content: "What is the best definition of polymorphism?"
+    choices:
+    - content: "Polymorphism is the ability to present the same interface for the same underlying data type."
+      isCorrect: false
+      explanation: "Incorrect. Polymorphism is not the ability to present the same interface for the same underlying data type."
+    - content: "Polymorphism is the ability to present different interfaces for the same underlying data type."
+      isCorrect: false
+      explanation: "Incorrect. Polymorphism is not the ability to present different interfaces for the same underlying data type."
+    - content: "Polymorphism is the ability to present the same interface for differing underlying forms data types."
+      isCorrect: true
+      explanation: "Correct. Polymorphism is the ability to present the same interface for differing data types."

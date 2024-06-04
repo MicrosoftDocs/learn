@@ -1,25 +1,25 @@
 You previously modified the Notes app to move the UI layout from C# code to XAML. You're now ready to add the following features to the page:
 
-- Support customization of the font color and background color of the label, buttons, and editor control. In this way, it's easy to adjust the app to make it more accessible for users that require a high contrast UI.
+- Support customizing the label's font color and background color, buttons, and editor control. In this way, it's easy to adjust the app to make it more accessible for users that require a high-contrast UI.
 
-- Adjust the height of the Editor control on Android and iOS. When running on Windows, this control has sufficient width to allow the user to enter reasonable amount of text before it scrolls. On an Android phone or an iPhone, the narrower width results in scrolling occurring more quickly, and so it's beneficial to provide more vertical space.  
+- Adjust the Editor control's height on Android and iOS. When running on Windows, this control has sufficient width to allow the user to enter reasonable amount of text before it scrolls. On an Android phone or an iPhone, the narrower width results in scrolling occurring more quickly, so it's beneficial to provide more vertical space.  
 
 ## Use a static resource in XAML
 
-You'll create a static class to hold the values for the font color and background color for the app. You'll then use the `x:Static` mark-up extension to read these values from the class and apply them to the XAML mark-up for the controls on the page.
+You'll create a static class to hold the app's font color and background color values. You'll then use the `x:Static` markup extension to read these values from the class and apply them to the XAML markup for the controls on the page.
 
 1. In Visual Studio, return to the Notes app you edited in the previous exercise.
 
     > [!NOTE]
     > A working copy of the app is available in the **exercise2** folder in exercise repository you cloned at the start of the previous exercise.
 
-1. In the **Solution Explorer** window, right-click the **Notes** project, select **Add**, and then select **Class**.
+1. In the **Solution Explorer** window, right-click the **Notes** project, select **Add**, then select **Class**.
 
 1. In the **Add New Item** dialog box, make sure the **Class** template is selected. Name the new class file **SharedResources.cs**, and then select **Add**:
 
     :::image type="content" source="../media/8-add-class-file.png" alt-text="A screenshot of the Add New Item dialog box. The user is adding a class named SharedResources.":::
 
-1. In the **SharedResources.cs** file, replace the `using` directives with that shown below, and mark the **SharedResources** class as `static`:
+1. In the **SharedResources.cs** file, replace the `using` directives with the following code, and mark the **SharedResources** class as `static`:
 
     ```csharp
     namespace Notes;
@@ -51,7 +51,7 @@ You'll create a static class to hold the values for the font color and backgroun
 
 1. Open the **MainPage.xaml** file.
 
-1. Add the XML namespace declaration shown below to the `ContentPage` element, before the `x:Class` attribute. This declaration brings the classes in the C# **Notes** namespace into scope in the XAML page:
+1. Add the XML following namespace declaration to the `ContentPage` element, before the `x:Class` attribute. This declaration brings the classes in the C# **Notes** namespace into scope in the XAML page:
 
     ```xml
     <ContentPage ...
@@ -60,7 +60,7 @@ You'll create a static class to hold the values for the font color and backgroun
              ...>
     ```
 
-1. Add the `TextColor` attribute shown in the following code to the `Label` control. This mark-up uses the `x:Static` mark-up extension to retrieve the values stored in the `static` fields in the **SharedResources** class:
+1. Add the `TextColor` attribute shown in the following code to the `Label` control. This markup uses the `x:Static` markup extension to retrieve the values stored in the `static` fields in the **SharedResources** class:
 
     ```xml
     <Label Text="Notes"
@@ -69,7 +69,7 @@ You'll create a static class to hold the values for the font color and backgroun
         TextColor="{x:Static Member=notes:SharedResources.FontColor}" />
     ```
 
-1. Use the `x:Static` mark-up extension to set the `TextColor` and `BackgroundColor` attributes for the `Editor` and `Button` controls. The completed mark-up for **MainPage** should look like this:
+1. Use the `x:Static` mark-up extension to set the `TextColor` and `BackgroundColor` attributes for the `Editor` and `Button` controls. The completed markup for your **MainPage.xaml** file should look like this:
 
     ```xml
     <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -110,7 +110,7 @@ You'll create a static class to hold the values for the font color and backgroun
     ```
 
     > [!NOTE]
-    > This XAML code contains repetition of the mark-up that sets the `TextColor` and `BackgroundColor` properties. XAML enables you to define resources that can be applied globally across an app by using a resource dictionary in the **App.xaml** file. This technique is described in a later module.
+    > This XAML code contains repetition of the markup that sets the `TextColor` and `BackgroundColor` properties. XAML lets you define resources that can be applied globally across an app by using a resource dictionary in the **App.xaml** file. We describe this technique in a later module.
 
 1. Rebuild the app and run it using Windows. Verify that the colors match those you specified in the **SharedResources** class. If you have time, also try running the app using the Android emulator:
 
@@ -122,7 +122,7 @@ You'll create a static class to hold the values for the font color and backgroun
 
 1. Open the **MainPage.xaml** file in Visual Studio.
 
-1. Locate the definition of the `Editor` control, and modify the value for the **HeightRequest** property as shown in the example below:
+1. Locate the definition of the `Editor` control, and modify the value for the **HeightRequest** property as shown in the following example:
 
     ```xml
     <Editor x:Name="editor"
@@ -131,8 +131,8 @@ You'll create a static class to hold the values for the font color and backgroun
             .../>
     ```
 
-    This mark-up sets the default height of the control to 100 units, but on Android it's increased to 500.
+    This markup sets the default control height to 100 units, but increases it to 500 on Android.
 
-1. Rebuild the app and run it using Windows and then on Android. The app should look like this on each platform:
+1. Rebuild the app and run it using Windows, then Android. The app should look like this on each platform:
 
     :::image type="content" source="../media/8-windows-android-editor-screen.png" alt-text="A screenshot of the Notes app running on Windows and Android.":::

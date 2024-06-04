@@ -3,11 +3,10 @@ uid: learn.incident-response-with-alerting-on-azure.4-exercise-metric-alerts
 metadata:
   title: Exercise - Use metric alerts to alert on performance issues in your Azure environment
   description: In this exercise, you'll use Cloud Shell to prepare the environment before using the Azure portal to set up the monitoring.
-  ms.date: 10/10/2019
-  author: cwatson-cat
-  ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/14/2023
+  author: AbbyMSFT
+  ms.author: abbyweisberg
+  ms.topic: unit
 title: Exercise - Use metric alerts to alert on performance issues in your Azure environment
 durationInMinutes: 10
 interactive: bash

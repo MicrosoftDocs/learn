@@ -5,11 +5,10 @@ metadata:
   unitType: summary
   title: Summary
   description: Summary
-  ms.date: 4/5/2021
-  author: pplavetzki
-  ms.author: paplavet
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 02/14/2024
+  author: schaffererin
+  ms.author: schaffererin
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/8-summary.md)]

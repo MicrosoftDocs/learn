@@ -4,13 +4,14 @@ title: Introduction
 metadata:
   title: Introduction
   description: Managing many containerized microservices manually is messy and time consuming. Learn how to deploy a .NET-based containerized microservice into Kubernetes.
-  ms.date: 08/03/2021
+  ms.date: 11/06/2023
   author: codemillmatt
-  ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: masoucou  
+  ms.topic: unit
+  ms.service: azure
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-dotnet
   ms.contributors:
   - masoucou-09032021
 durationInMinutes: 1

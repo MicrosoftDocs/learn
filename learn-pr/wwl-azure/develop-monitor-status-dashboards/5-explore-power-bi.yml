@@ -4,13 +4,12 @@ title: Explore Power BI
 metadata:
   title: Explore Power BI
   description: "Explore Power BI"
-  ms.date: 01/26/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/5-explore-power-bi.md)]

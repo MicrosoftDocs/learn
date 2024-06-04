@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/18/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Explore brain design patterns
 summary: In this module, you'll learn about the main Autonomous AI brain design patterns that solve most of the Machine Teaching challenges. You'll also learn when to best use them individually or combined.
 abstract: | 
@@ -16,7 +15,7 @@ abstract: |
   - Describe the benefits and usage of brain design patterns
   - Apply best practices of Machine Teaching to solve industrial business challenges
 
-  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar Artificial Intelligence: Cloud and Edge Implementations course***"
 prerequisites: | 
 
   - Basic knowledge of Automated Intelligence

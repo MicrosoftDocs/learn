@@ -3,19 +3,19 @@ uid: learn.machinelearning.introduction-to-data-for-machine-learning
 metadata:
   title: Introduction to data for machine learning
   description: The power of machine learning models comes from the data that is used to train them. Through content and exercises, we explore how to understand your data, how to encode it so that the computer can interpret it properly, how to clean it of errors, and tips that will help you create models that perform well.
-  ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/30/2024
+  ms.service: machine-learning
+  author: fbsolo-ms1
+  ms.author: franksolomon
+  ms.topic: module
 title: Introduction to data for machine learning
-summary: The power of machine learning models comes from the data that is used to train them. Through content and exercises, we explore how to understand your data, how to encode it so that the computer can interpret it properly, how to clean it of errors, and tips that will help you create models that perform well.
+summary: The power of machine learning models comes from the data that is used to train them. Through content and exercises, we explore how to understand your data, how to encode it so that the computer can interpret it properly, how to clean any errors, and tips that will help you create high performance models.
 abstract: | 
   In this module, you will:
   - Visualize large datasets with Exploratory Data Analysis (EDA)
-  - Clean a dataset of errors
+  - Clean the errors in a dataset
   - Predict unknown values using numeric and categorical data
-prerequisites: Some familiarity with machine learning concepts, such as models and cost, is helpful, but not essential
+prerequisites: Some familiarity with machine learning concepts - for example, models and cost - is helpful, but not essential
 iconUrl: /training/achievements/machine-learning/introduction-to-data-for-machine-learning.svg
 levels: 
 - beginner
@@ -29,7 +29,7 @@ products:
 subjects:
 - machine-learning
 - data-analytics
-- data-lake
+- data-storage
 units:
 - learn.machinelearning.introduction-to-data-for-machine-learning.introduction
 - learn.machinelearning.introduction-to-data-for-machine-learning.detect-correct-data

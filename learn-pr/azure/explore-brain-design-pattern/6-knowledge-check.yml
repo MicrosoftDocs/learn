@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: A knowledge check for the discover Microsoft guidelines for Automated Intelligence.
-  ms.date: 10/14/2022
+  ms.date: 10/18/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)] 

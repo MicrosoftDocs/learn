@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 10/06/2022
+  ms.date: 02/07/2024
   author: spelluru
   ms.author: spelluru
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 quiz:
   questions:
@@ -16,7 +15,7 @@ quiz:
       choices:
       - content: "An SDK that I can add as a dependency to my Java application."
         isCorrect: false
-        explanation: "JMS is simply an API specification. It's implemented as part of various SDKs and Spring Boot Starter kits." 
+        explanation: "JMS is simply an API specification, implemented as part of various SDKs and Spring Boot Starter kits."  
       - content: "An API that enables Java applications to communicate with enterprise messaging brokers."
         isCorrect: true
         explanation: "Java Message Service (JMS) 2.0 is an API specification that enables Java/Java EE/Spring applications to communicate with enterprise messaging brokers."
@@ -34,7 +33,7 @@ quiz:
         - content: "Java EE"
           isCorrect: false
           explanation: "Not just Java EE. It can be used with POJOs and Spring Boot as well."
-        - content: "All of the above"
+        - content: "All of these options"
           isCorrect: true
           explanation: "The JMS API works with POJOs, Spring Boot, and Java EE."
     - content: "What Spring Boot object do you need to send or receive a JMS message?"

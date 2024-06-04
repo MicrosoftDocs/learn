@@ -1,0 +1,3 @@
+One-size-fits-all may not be true when it comes to handling data at enterprise level. Each enterprise could have different requirements and complexities which could require them to have control of the cluster to  fine tune the performance and get maximum out of it. 
+ 
+HDInsight on AKS is a pro-developer offering and provides bunch of controls to the user to tune their clusters as per their requirements. When working with HDInsight on AKS, you can configure and manage resources to optimize the performance and scalability of your cluster.  

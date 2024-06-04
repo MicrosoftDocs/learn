@@ -1,21 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.protect-identities-azure-acative-directory
 metadata:
-  title: MD-102 1-Protect identities in Azure Active Directory
+  title: MD-102 1-Protect identities in Microsoft Entra ID
   description: "This module introduces students to the various authentication methods used to protect identities."
-  ms.date: 04/25/2023
+  ms.date: 05/11/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Protect identities in Azure Active Directory
+  ms.topic: module
+  ms.service: entra-id
+  ms.subservice: domain-services
+title: Protect identities in Microsoft Entra ID
 summary: This module introduces students to the various authentication methods used to protect identities.
 abstract: |
   After this module, you should be able to:
   - Describe Windows Hello for Business
   - Describe Windows Hello deployment and management
-  - Describe Azure AD Identity Protection
-  - Describe and manage self-service password reset in Azure AD
+  - Describe Microsoft Entra ID Protection
+  - Describe and manage self-service password reset in Microsoft Entra ID
   - Describe and manage multi-factor authentication
 prerequisites: |
   - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later

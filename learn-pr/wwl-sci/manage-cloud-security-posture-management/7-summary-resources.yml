@@ -6,9 +6,8 @@ metadata:
   description: "Summary and resources"
   ms.date: 02/22/2023
   author: wwlpublish
-  ms.author: bneeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: kelawson
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

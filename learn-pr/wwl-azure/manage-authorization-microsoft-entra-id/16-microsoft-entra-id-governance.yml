@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-id-governance
+title: Microsoft Entra ID Governance
+metadata:
+  title: Microsoft Entra ID Governance
+  description: "Microsoft Entra ID Governance"
+  ms.date: 04/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/16-microsoft-entra-id-governance.md)]

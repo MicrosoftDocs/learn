@@ -6,8 +6,9 @@ metadata:
   ms.date: 06/09/2021
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hub
 title: Manage Azure Kubernetes Service on Azure Stack HCI
 summary: This module describes how to implement and manage Microsoft Azure Kubernetes Service on Azure Stack HCI.
 abstract: |

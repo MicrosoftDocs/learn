@@ -2,12 +2,12 @@
 uid: learn.wwl.monitor-manage-performance-health
 metadata:
   title: Monitor and manage performance and health
-  description: "Monitor and manage performance and health"
+  description: Monitor and manage performance and health
   ms.date: 08/02/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Monitor and manage performance and health
 summary: For Azure Virtual Desktop issues, check Azure Advisor first. Azure Advisor will give you directions for how to solve the problem, or at least point you towards a resource that can help.
 abstract: |
@@ -17,7 +17,7 @@ abstract: |
   *  How to monitor Azure Virtual Desktop by using Azure Advisor.
   *  How to resolve Azure Advisor recommendations.
   *  How to diagnose graphics performance issues.
-prerequisites: ""
+prerequisites: ''
 iconUrl: /training/achievements/3-monitor-and-manage-performance-and-health.svg
 levels:
 - intermediate

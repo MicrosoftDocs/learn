@@ -5,14 +5,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.prod: learning-azure
   author: markingmyname
   ms.author: maghan
   manager: jroth
   ms.reviewer: shreyaanand
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: event-tier1-build-2022
-  ms.date: 06/08/2022
+  ms.date: 06/09/2023
 
 durationInMinutes: 5
 content: |

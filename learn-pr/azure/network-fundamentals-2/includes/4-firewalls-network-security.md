@@ -1,4 +1,4 @@
-Attackers can exploit a vulnerable network to steal information and render services and resources inaccessible. Such an attack on your organization can lead to reputational and financial loss.
+Attackers can exploit a vulnerable network to steal information and render services and resources inaccessible. Such an attack on your organization can lead to financial loss and damage to your reputation.
 
 In this unit, we'll get an overview of network security and some of the different types available. We'll also learn about network security zones and firewalls. Finally, we'll explore the network-security tools used to strengthen network protection in Azure.
 
@@ -8,7 +8,7 @@ You need robust security to diagnose and prevent suspicious events, attacks, and
 
 ### Access control
 
-You use access control to scrutinize every user and client to determine whether they have permission to access your network or its resources. Access control is implemented by configuring security policies that ensure the user has the right level of permissions assigned to do specific actions on your network. For example, you might want to deny read access for some resources when the user is connecting from outside your on-premises location.
+You can use access control to scrutinize every user and client to determine whether they have permission to access your network or its resources. You implement access control by configuring security policies that ensure the user has the right level of permissions assigned to do specific actions on your network. For example, you might want to deny read access for some resources when the user is connecting from outside your on-premises location.
 
 ### Antimalware tools
 
@@ -19,11 +19,11 @@ Antimalware tools protect your network from malicious software (malware). Malwar
 - Spyware
 - Trojans
 
-You can use antimalware and antivirus tools to monitor and remedy malware. These tools can detect anomalies in your files, taking actions to remove malicious pieces of code, and repairing affected resources and devices on your network.
+You can use antimalware and antivirus tools to monitor and remedy malware. These tools can detect anomalies in your files, take actions to remove malicious pieces of code, and repair affected resources and devices on your network.
 
 ### Application security
 
-Attackers can compromise applications, whether they're your own or owned by a third party. The software may inadvertently contain security vulnerabilities that an attacker might use to access devices and network resources. If an application is developed in-house, you'll need to actively find and fix vulnerabilities that attackers could abuse. One solution is to test your application during its development lifecycle and implement whatever changes are needed to fix a potential vulnerability. If you're dealing with an application development elsewhere, it's a good practice to apply updates as soon as they're available.
+Attackers can compromise applications, whether they're yours or owned by a third party. The software may inadvertently contain security vulnerabilities that an attacker might use to access devices and network resources. If an application is developed in-house, you'll need to actively find and fix vulnerabilities that attackers could abuse. One solution is to test your application during its development lifecycle and implement whatever changes are needed to fix a potential vulnerability. If you're dealing with an application developed elsewhere, it's a good practice to apply updates as soon as they're available.
 
 ### Behavioral analytics
 
@@ -37,27 +37,27 @@ To address this problem, you can create security policies based on these analyti
 
 Attackers often use email to access your network. An email that looks genuine might ask users to select a link and provide details that the attacker uses to access resources and devices on your network. Email applications like Microsoft Outlook help identify suspicious messages and senders.
 
-:::image type="content" source="../media/4-email-outlook.png" alt-text="Image showing a suspicious email message in Outlook. The email has a header that reads This message authenticates but sent by a different responsible sender."  loc-scope="office-outlook":::
+:::image type="content" source="../media/4-email-outlook.png" alt-text="Screenshot of a suspicious email message in Outlook. The email has a header that reads This message authenticates but sent by a different responsible sender."  loc-scope="office-outlook":::
 
 ### Intrusion detection and prevention
 
 You want to take a proactive and preventative security posture for your network. The earlier you can identify intrusion, the better. You can use intrusion prevention and detection tools together to monitor all your network traffic.
 
-For example, Azure Network Watcher can provide data to an open-source intrusion detection system. Your traffic is analyzed from this system across your network on Azure, and you're alerted about intrusions.
+For example, Azure Network Watcher can provide data to an open-source intrusion-detection system. Your traffic is analyzed from this system across your network on Azure, and you're alerted about intrusions.
 
 ### VPN
 
 A virtual private network (VPN) can establish an encrypted connection from one network to another over the internet. The VPN configures an encrypted tunnel that either uses TLS or IPSec to provide secure communication and remote access capabilities across your networks.
 
-:::image type="content" source="../media/4-vpn-connection.svg" alt-text="Diagram that shows a VPN tunnel that is set up between two gateways across an internet connection.":::
+:::image type="content" source="../media/4-vpn-connection.svg" alt-text="Diagram that shows a VPN tunnel that's set up between two gateways across an internet connection.":::
 
 ### Web security
 
-You can employ tools that secure how your people use the web. For example, you can use a web filter to prevent users from accessing certain types of sites that have been red flagged. These web security tools also allow you to set up policies that help you decide how you want to handle different types of web requests in your network.
+You can employ tools that secure how your people use the web. For example, you can use a web filter to prevent users from accessing certain types of sites that have been red flagged. These web-security tools also allow you to set up policies that help you decide how you want to handle different types of web requests in your network.
 
 ### Wireless security
 
-The wireless portions of your network aren't as secure as the wired portions. A wireless network can be accessible from outside your organization, depending on the strength of the wireless signal. Different tools are available to scan and monitor activity on the wireless portions of your network. The first step to securing a wireless network is to use the strongest type of encryption available on wireless devices. Second, configure a separate wireless network for guests to prevent visitors from using the wireless network intended for internal users.
+The wireless portions of your network aren't as secure as the wired portions. A wireless network might be accessible from outside your organization, depending on the strength of the wireless signal. Different tools are available to scan and monitor activity on the wireless portions of your network. The first step to securing a wireless network is to use the strongest type of encryption available on wireless devices. Second, configure a separate wireless network for guests, which prevents visitors from using the wireless network intended for internal users.
 
 ## Network security zones
 
@@ -77,21 +77,21 @@ A public zone contains everything outside the organization. This zone is part of
 
 The perimeter network (also known as DMZ, demilitarized zone, and screened subnet) is a zone where resources and services accessible from outside the organization are available. For example, you can use a perimeter network to provide access to an application, a partnering organization, or a supplier.
 
-### Zone filtering policies
+### Zone-filtering policies
 
-Zone filtering policies handle the flow of traffic as it travels between different zones. These policies include:
+Zone-filtering policies handle the flow of traffic as it travels between different zones. These policies include:
 
-- **Inside-to-outside** and **inside-to-perimeter-network**. This type of filter scrutinizes all traffic that originates from the inside and is headed to the perimeter network. For example, your internal staff members may want to access a public website. The traffic is inspected to check whether the website is trustworthy.
+- **Inside-to-outside** and **inside-to-perimeter-network**: This type of filter scrutinizes all traffic that originates from the inside and is headed to the perimeter network. For example, your internal staff members might want to access a public website. The traffic is inspected to check whether the website is trustworthy.
 
-- **Outside-to-inside**. This type of filter blocks traffic coming from outside into your network. The only traffic permitted is traffic that is a direct response to a request that originated from the inside zone. For example, when an internal staff member requests a webpage from a server, the response is allowed (if it's a trusted source), so the user can browse the site.
+- **Outside-to-inside**: This type of filter blocks traffic coming from outside into your network. The only traffic permitted is traffic that's a direct response to a request that originated from the inside zone. For example, when an internal staff member requests a webpage from a server, the response is allowed (if it's a trusted source), so the user can browse the site.
 
-- **Outside-to-perimeter-network**. This type of filter inspects all traffic coming from the outside and going to the perimeter network. The traffic is either permitted or denied permission. The types of traffic that may be allowed to pass through include email and HTTPS traffic.
+- **Outside-to-perimeter-network**: This type of filter inspects all traffic coming from the outside and going to the perimeter network. The traffic is either permitted or denied permission. The types of traffic that might be allowed to pass through include email and HTTPS traffic.
 
 - **Perimeter-network-to-outside**. This type of filter inspects traffic that comes from the perimeter network and leaves your network. Traffic is permitted to travel outside the network based on firewall rules and the resource or client starting the request. For example, a mail server in the perimeter network might need to sync with another server that's outside the network. In this case, you'll configure firewall rules to decide what should happen.
 
 ### What is a network firewall?
 
-A network firewall is a security appliance that blocks or remedies unauthorized access into your network. Network firewalls also monitor and make logs of all traffic across your network. You can use security policies to configure your network firewalls to take appropriate action on all traffic across your network. Network firewalls can be hardware or software implementations.
+A network firewall is a security appliance that blocks or remedies unauthorized access into your network. Network firewalls also monitor and log all traffic across your network. You can use security policies to configure your network firewalls to take appropriate action on all traffic across your network. Network firewalls can be hardware or software implementations.
 
 A **hardware firewall** can be a standalone physical device or form part of another device on your network. Physical devices like routers, for example, already have built-in firewalls. Hardware firewalls are expensive to operate and typically found in large organizations.
 
@@ -111,9 +111,9 @@ Firewalls can perform several different functions across your network:
 
     :::image type="content" source="../media/4-proxy-server.svg" alt-text="Diagram showing allowed traffic flow through a proxy server and all other traffic blocked.":::
 
-- **Stateful firewalls** inspect characteristics about the connections on your network. The firewall also monitors packets over time and stores a combination of this information in a state table. When a connection and packet match aren't recognized, based on the information held in the table, traffic is blocked.
+- **Stateful firewalls** inspect characteristics about the connections on your network. The firewall also monitors packets over time and stores a combination of this information in a state table. When a connection and packet match aren't recognized based on the information held in the table, traffic is blocked.
 
-    :::image type="content" source="../media/4-stateful-firewall.svg" alt-text="Diagram showing how a stateful firewall block requests from an address that is not allowed.":::
+    :::image type="content" source="../media/4-stateful-firewall.svg" alt-text="Diagram showing how a stateful firewall blocks requests from an address that isn't allowed.":::
 
 - **Next-generation firewalls** perform many of the same functions as stateful firewalls, but they can encompass more functions from other types of firewalls, such as packet filtering and VPN support. This type of firewall also investigates packets more thoroughly when compared to stateful firewalls. For example, a next-generation firewall could look at the payload for each packet and inspect it for suspicious characteristics and malware.
 
@@ -147,20 +147,20 @@ You can connect your on-premises network to your Azure virtual networks by confi
 
 You can also set up a **point-to-site VPN** connection between Azure and your on-premises network. Here, individual users and clients can connect to your Azure resources through a secure tunnel.
 
-:::image type="content" source="../media/4-point-to-site-vpn.svg" alt-text="A diagram showing an Azure point-to-site connection using P2S SSTP tunnels.":::
+:::image type="content" source="../media/4-point-to-site-vpn.svg" alt-text="Diagram showing an Azure point-to-site connection using P2S SSTP tunnels.":::
 
 ### Azure network security considerations
 
 There's much you can do to improve network security on Azure. Here are a few things you should consider implementing:
 
-Use **Azure network security appliances**, developed by Microsoft partners on Azure Marketplace, to improve network security. This range of appliances provides a number of functions, including:
+Use **Azure network security appliances** developed by Microsoft partners on Azure Marketplace to improve network security. This range of appliances provides a number of functions, including:
 
 - Detecting anomalies on your network
 - Identifying and rectifying vulnerabilities
 - Web filtering
 - Antivirus protection
 
-Configure **Azure virtual network service endpoints** so that critical Azure services only connect to your Azure virtual networks, and not to the public internet. These services include:
+Configure **Azure virtual network service endpoints** so that critical Azure services only connect to your Azure virtual networks and not to the public internet. These services include:
 
 - Azure SQL Database
 - Azure Storage

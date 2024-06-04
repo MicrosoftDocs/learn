@@ -38,3 +38,4 @@ In the Windows PowerShell Integrated Scripting Environment (ISE), you can set br
 Microsoft Visual Studio Code allows you to set and use breakpoints with more advanced options than the PowerShell ISE. You can configure conditional breakpoints that are triggered when variables are outside of a range or match a specific value.
 
 Information about variable contents is also easier to find in Visual Studio Code. After a breakpoint is triggered and you're in the debugger, there's a **variables** section that displays the contents of variable so that you don't need to interrogate them.
+

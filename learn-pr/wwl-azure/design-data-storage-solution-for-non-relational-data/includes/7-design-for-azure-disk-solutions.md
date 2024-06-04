@@ -7,7 +7,7 @@ Data disks are used by virtual machines to store data like database files, websi
 
 ### Things to know about managed disks
 
-Azure offers several types of managed disks. The following table shows a [comparison of four data disk types](/azure/storage/common/nfs-comparison). 
+Azure offers several types of managed disks. The following table shows a [comparison of four data disk types](/azure/virtual-machines/disks-types#disk-type-comparison). 
 
 | Comparison | Ultra-disk | Premium SSD | Standard SSD | Standard HDD |
 | --- | --- | --- | --- | --- |

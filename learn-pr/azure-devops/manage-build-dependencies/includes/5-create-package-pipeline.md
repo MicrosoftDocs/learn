@@ -1,4 +1,4 @@
-Here, you'll get the team's new code for the **Tailspin.SpaceGame.Web.Models** project that is now separate from the **Tailspin.SpaceGame.Web** project. You'll create an Azure Pipelines project for the Models project and see the artifact in Azure Artifacts with a version number of 1.0.0 in your feed.
+Here, you'll get the team's new code for the **Tailspin.SpaceGame.Web.Models** project that's now separate from the **Tailspin.SpaceGame.Web** project. You'll create an Azure Pipelines project for the Models project and see the artifact in Azure Artifacts with a version number of 1.0.0 in your feed.
 
 ## What changes were made to the project?
 
@@ -6,11 +6,11 @@ Recall that the _Space Game_ website is an ASP.NET Core app. It uses the Model-V
 
 To do that, they create a new C# project called **Tailspin.SpaceGame.Web.Models** that contains only the model classes. At the same time, they remove the model classes from their existing project, **Tailspin.SpaceGame.Web**. They replace the model classes in their existing project with a reference to the **Tailspin.SpaceGame.Web.Models** project.
 
-To build these projects, Andy and Mara use two pipelines, one for each project. You already have the first project and its associated Azure Pipelines configuration. Here, you'll fork the second project on GitHub, and create an Azure Pipelines configuration to build it. You'll publish the resulting package to Azure Artifacts.
+To build these projects, Andy and Mara use two pipelines, one for each project. You already have the first project and its associated Azure Pipelines configuration. Here, you'll fork the second project on GitHub and create an Azure Pipelines configuration to build it. You'll publish the resulting package to Azure Artifacts.
 
 ## Prepare Visual Studio Code
 
-Previously, you set up Visual Studio Code to work with the **Tailspin.SpaceGame.Web** project. Here you open a second instance of Visual Studio Code so you can work with the **Tailspin.SpaceGame.Web.Models** project.
+Previously, you set up Visual Studio Code to work with the **Tailspin.SpaceGame.Web** project. Here, you'll open a second instance of Visual Studio Code so you can work with the **Tailspin.SpaceGame.Web.Models** project.
 
 1. Open a second instance of Visual Studio Code.
 1. From Visual Studio Code, open the integrated terminal.
@@ -42,7 +42,7 @@ To clone the **mslearn-tailspin-spacegame-web-models** projects to your computer
 1. On GitHub, go to your fork of the **mslearn-tailspin-spacegame-web-models** project.
 1. Select **Code**. Then, from the **HTTPS** tab, select the button next to the URL that's shown to copy the URL to your clipboard.
 
-    :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Locating the URL and copy button from the GitHub repository.":::
+    :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Screenshot showing the URL and copy button from the GitHub repository.":::
 1. From Visual Studio Code, go to the terminal window, and run this `git clone` command. Replace the URL that's shown with the contents of your clipboard.
 
     ```bash
@@ -82,7 +82,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
         projects: '**/*.csproj'
     ```
 
-    This `DotNetCoreCLI@2` task packages the project with a version of 1.0.0.
+    This `DotNetCoreCLI@2` task packages the project with a version of 1.0.0:
 
     ``` yml
     - task: DotNetCoreCLI@2
@@ -97,9 +97,9 @@ In Visual Studio Code, your terminal window points to the root directory of the 
         patchVersion: '0'
     ```
 
-    When developing your package, it's common to use the `byPrereleaseNumber` versioning scheme. This appends a unique pre-release suffix, such as "-CI-20190621-042647" to the end of the version number. Following this example, the complete version number would be "1.0.0-CI-20190621-042647".
+    When developing your package, it's common to use the `byPrereleaseNumber` versioning scheme. This appends a unique pre-release suffix such as "-CI-20190621-042647" to the end of the version number. Following this example, the complete version number would be "1.0.0-CI-20190621-042647".
 
-    This `NuGetCommand@2` task pushes the package to your **Tailspin.SpaceGame.Web.Models** Azure Artifacts feed.
+    This `NuGetCommand@2` task pushes the package to your **Tailspin.SpaceGame.Web.Models** Azure Artifacts feed:
 
     ```yml
     - task: NuGetCommand@2
@@ -113,15 +113,16 @@ In Visual Studio Code, your terminal window points to the root directory of the 
 
     `feedPublish` specifies the name of the feed to publish to. The format of the name is `<projectName>/<feedName>`, where:
 
-      * `$(System.TeamProject)` is a predefined variable that refers to your project name, for example, "Space Game - web - Dependencies".
-      * "Tailspin.SpaceGame.Web.Models" is the feed name that you provided in the previous exercise.
+      * `$(System.TeamProject)` is a predefined variable that refers to your project name; for example, "Space Game - web - Dependencies".
+      * `Tailspin.SpaceGame.Web.Models` is the feed name that you provided in the previous exercise.
 
 ## Set permissions
 
 Before you can set up and run your pipeline, you need to give the Build service the correct permissions.
 
+1. Go to your project in Azure DevOps.
 1. Select **Artifacts** from the menu on the left.
-1. Select the **Settings** icon at the top of the screen, then select the **Permissions tab**.
+1. Select the **Settings** icon at the top-right of the screen, then select the **Permissions** tab.
 1. Select the **Add users/groups** button.
 1. In the **Users/Groups** field, enter **Space Game - web - Dependencies Build Service**, select the **Contributor** role, and select **Save**.
 

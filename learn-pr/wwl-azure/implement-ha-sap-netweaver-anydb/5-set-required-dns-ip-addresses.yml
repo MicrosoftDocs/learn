@@ -4,11 +4,10 @@ title: Set the required DNS IP addresses
 metadata:
   title: Set the required DNS IP addresses
   description: "Set the required DNS IP addresses"
-  ms.date: 04/23/2023
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/5-set-required-dns-ip-addresses.md)]

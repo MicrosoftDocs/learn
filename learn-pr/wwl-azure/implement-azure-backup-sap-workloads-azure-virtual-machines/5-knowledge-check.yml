@@ -3,13 +3,11 @@ uid: learn.wwl.implement-azure-backup-for-sap-workloads-azure-vms.knowledge-chec
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 03/15/2021
+  description: "Check what you learn in this module."
+  ms.date: 03/27/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -27,23 +25,23 @@ quiz:
     - content: "24 hours"
       isCorrect: false
       explanation: "Incorrect. The Recovery Point Object isn't 24 hours."
-  - content: "What Azure CLI command can you use to create a Recovery Services vault?"
+  - content: "Which of these Azure CLI commands creates a Recovery Services vault?"
     choices:
-    - content: "`az backup vault create`"
+    - content: "`az backup vault create`."
       isCorrect: true
       explanation: "Correct. `az backup vault create` creates a Recovery Services Vault."
-    - content: "`az backup recoverypoint list`"
+    - content: "`az backup recoverypoint list`."
       isCorrect: false
       explanation: "Incorrect. `az backup recoverypoint list` displays recovery points."
-    - content: "`az backup recoveryservices create`"
+    - content: "`az backup recoveryservices create`."
       isCorrect: false
       explanation: "Incorrect. `az backup recoveryservices create` isn't a valid command."
   - content: "What minimum VM access permissions are required, in addition to **Backup Operator**, to restore an SAP HANA database on Azure VMs backed up using Azure Backup? Include permissions for database source and target VMs."
     choices:
-    - content: "Contributor (write)"
+    - content: "Contributor (write)."
       isCorrect: true
-      explanation: "Correct. Both source and target VMs need contributor (write) permissions"
-    - content: "Contributor (read-only)"
+      explanation: "Correct. Both source and target VMs need contributor (write) permissions."
+    - content: "Contributor (read-only)."
       isCorrect: false
       explanation: "Incorrect. Contributor (read-only) isn't sufficient permissions."
     - content: "Owner"

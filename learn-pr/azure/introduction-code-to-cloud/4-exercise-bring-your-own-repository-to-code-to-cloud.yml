@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-code-to-cloud.exercise-bring-your-own-repository-to-code-to-cloud
+title: Exercise - Bring your own repository and deploy to Code to Cloud
+metadata:
+  title: Exercise - Bring your own repository and deploy to Code to Cloud
+  description: Exercise - Bring your own repository and deploy with Code-to-Cloud
+  ms.date: 09/04/2023
+  author: juliamuiruri4
+  ms.author: juliamuiruri
+  ms.topic: unit
+  ms.service: azure
+  ms.custom: team=nextgen
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-exercise-bring-your-own-repository-to-code-to-cloud.md)]

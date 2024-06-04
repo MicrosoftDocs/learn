@@ -3,11 +3,10 @@ uid: learn.improve-app-scalability-resiliency-with-load-balancer.6-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 08/31/2019
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/10/2024
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |

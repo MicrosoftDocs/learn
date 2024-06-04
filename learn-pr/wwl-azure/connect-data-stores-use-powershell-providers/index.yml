@@ -3,25 +3,37 @@ uid: learn.wwl.connect-data-stores-use-powershell-providers
 metadata:
   title: Connect with data stores using PowerShell providers
   description: "This module covers PowerShell providers that connect Windows PowerShell to data stores. They offer an easier-to-understand and consistent interface for working with data stores."
-  ms.date: 10/26/2022
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
+  ai-usage: human-only
 title: Connect with data stores using PowerShell providers
 summary: This module covers PowerShell providers that connect Windows PowerShell to data stores. They offer an easier-to-understand and consistent interface for working with data stores.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  *   Explain the purpose of PowerShell providers.
-  *   Compare different PowerShell provider capabilities.
-  *   Explain how to access PowerShell provider help files.
-  *   Explain how to review a list of providers and the help options for a specific provider.
+
+  -   Explain the purpose of PowerShell providers.
+
+  -   Compare different PowerShell provider capabilities.
+
+  -   Explain how to access PowerShell provider help files.
+
+  -   Explain how to review a list of providers and the help options for a specific provider.
 prerequisites: |
-  - Familiarity with Windows networking technologies and implementation.
-  - Familiarity with Windows Server administration, maintenance, and troubleshooting.
-  - Familiarity with Windows PowerShell and its commands to perform specific tasks.
-  - Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
-  - Familiarity with Windows PowerShell pipeline.
+  -   Familiarity with Windows networking technologies and implementation.
+
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting.
+
+  -   Familiarity with Windows PowerShell and its commands to perform specific tasks.
+
+  -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
+
+  -   Familiarity with Windows PowerShell pipeline.
 iconUrl: /training/achievements/connect-data-stores-use-powershell-providers.svg
 levels:
 - intermediate
@@ -29,14 +41,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

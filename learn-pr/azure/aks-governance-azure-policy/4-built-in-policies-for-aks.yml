@@ -3,12 +3,12 @@ uid: learn.aks-governance-azure-policy.built-in-policies-for-aks
 title: Built-in policies for AKS
 metadata:
   title: Built-in policies for Azure Kubernetes Services
-  description: Review some built-in policies for AKS
-  ms.date: 10/13/2021
+  description: Review some built-in policies for Azure Kubernetes Services (AKS).
+  ms.date: 04/22/2024
   author: NillsF
   ms.author: nilfran
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 3
 content: | 
   [!include[](includes/4-built-in-policies-for-aks.md)]

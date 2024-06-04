@@ -4,11 +4,12 @@ title: Manage tiered storage in app code
 metadata:
   title: Manage tiered storage in app code
   description: Manage tiered storage in app code
-  ms.date: 09/30/2021
+  ms.date: 11/02/2023
   author: tamram
   ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 5
 content: |
   [!include[](includes/5-manage-tiered-storage-in-app-code.md)]

@@ -1,12 +1,12 @@
-You can automate the steps in your deployment process by using a _workflow_. Each time you make a change to your code and commit the change to your Git repository, the workflow runs your predefined process. A workflow can verify whether your Bicep code meets your quality standards, and then it automates the actions to deploy your resources to Azure. The process is defined in a _workflow definition_ that you create.
+You can automate the steps in your deployment process by using a _workflow_. Each time you make a change to your code and commit the change to your Git repository, the workflow runs your predefined process. A workflow can verify whether your Bicep code meets your quality standards, then automate the actions to deploy your resources to Azure. The process is defined in a _workflow definition_ that you create.
 
 GitHub Actions is a feature of GitHub. GitHub also hosts the Git repositories you use to store and share your code with your collaborators. When you store your Bicep code on GitHub, GitHub Actions can access your code to automate your deployment processes. In this unit, you'll learn about GitHub Actions.
 
 ## What is a workflow?
 
-A workflow is a configurable repeatable process that's defined in a file, which is used to test and deploy your code. A workflow consists of all the steps, in proper order, that you need to execute.
+A workflow is a configurable repeatable process that's defined in a file that's used to test and deploy your code. A workflow consists of all the steps, in the proper order, that you need to execute.
 
-When you work with GitHub Actions, you define your workflow configuration in a YAML file. Because a workflow YAML file is a code file, the file is stored with your Bicep code in your Git repository in a folder named `.github/workflows`. A YAML file is a structured text file, similar to a Bicep structured text file. You can create and edit a YAML file with any text editor. In this module, you'll use Visual Studio Code as the editor. The GitHub web interface provides tools that you can use to view and edit your workflow YAML file, to collaborate on your workflow definition, and to manage different versions of your workflow file by using commits and branches.
+When you work with GitHub Actions, you define your workflow configuration in a YAML file. Because a workflow YAML file is a code file, the file is stored with your Bicep code in your Git repository in a folder named `.github/workflows`. A YAML file is a structured-text file, similar to a Bicep structured-text file. You can create and edit a YAML file with any text editor. In this module, you'll use Visual Studio Code as the editor. The GitHub web interface provides tools that you can use to view and edit your workflow YAML file, to collaborate on your workflow definition, and to manage different versions of your workflow file by using commits and branches.
 
 ## Runners
 
@@ -19,7 +19,7 @@ GitHub Actions provides multiple types of runners for different operating system
 :::image type="content" source="../media/2-runner.png" alt-text="Diagram that shows a workflow that runs on a runner." border="false":::
 
 > [!NOTE]
-> You have the option to create a custom runner that's called a _self-hosted runner_. You might create a self-hosted runner if you have specific software that you need to run as part of your workflow or if you need to control precisely how the runner is configured. We don't discuss self-hosted runners in this module, but we provide a link to more information in the summary.
+> You can create a custom runner that's called a _self-hosted runner_. You might create a self-hosted runner if you have specific software that you need to run as part of your workflow or if you need to control precisely how the runner is configured. We don't discuss self-hosted runners in this module, but we provide a link to more information in the Summary section.
 
 ## Triggers
 
@@ -33,14 +33,14 @@ A _step_ represents a single operation that the workflow performs. A step is sim
 
 GitHub Actions offers two types of steps:
 
-- **Run steps**. Use a run step to run a single command or a sequence of commands in Bash, PowerShell, or the Windows command shell.
-- **Action steps**. An action step is a convenient way to access many different capabilities without writing script statements. For example, there's a built-in task to deploy Bicep files to Azure. Anyone can write an action and share it with other users. A large set of commercial and open-source tasks are available.
+- **Run steps**: You can use a run step to run a single command or a sequence of commands in Bash, PowerShell, or the Windows command shell.
+- **Action steps**: An action step is a convenient way to access many different capabilities without writing script statements. For example, there's a built-in task to deploy Bicep files to Azure. Anyone can write an action and share it with other users. A large set of commercial and open-source tasks are available.
 
-Some people prefer to use script statements instead of actions because they offer more control over what's executed. Other people prefer to use actions so that they don't have to write and manage scripts. In this module, we use a mixture of both approaches.
+Some people prefer to use script statements instead of actions because they offer more control over what's executed. Other people prefer to use actions so that they don't have to write and manage scripts. In this module, we'll use a mixture of both approaches.
 
 ## Jobs
 
-In GitHub Actions, a _job_ represents an ordered set of steps. You always have at least one job in a workflow, and when you create complex deployments, it's common to have more than one job.
+In GitHub Actions, a _job_ represents an ordered set of steps. You always have at least one job in a workflow, and it's common to have more than one job when you create complex deployments.
 
 > [!NOTE]
 > You can set each job to run on a different runner. Running jobs on different runners is useful when you build and deploy solutions that need to use different operating systems in different parts of the job workflow.
@@ -51,7 +51,7 @@ In GitHub Actions, a _job_ represents an ordered set of steps. You always have a
 
 ## Basic workflow example
 
-Now that you know the basic concepts in GitHub Actions, let's look at a simple workflow definition in YAML:
+Now that you know the basic GitHub Actions concepts, let's look at a simple workflow definition in YAML:
 
 :::code language="yaml" source="code/2-simple.yml" :::
 

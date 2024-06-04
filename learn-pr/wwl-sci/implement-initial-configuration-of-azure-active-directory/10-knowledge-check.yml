@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/03/2023
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -39,14 +38,14 @@ quiz:
     - content: "Protect the organization's assets."
       isCorrect: true
       explanation: "Correct. Identity is new perimeter is a common security phrase these days, meaning that validation or both people and devices are required to protect company assets."
-  - content: "Azure AD guest users have restricted directory permissions. Which of the following answers best describes guest users capabilities?"
+  - content: "Microsoft Entra guest users have restricted directory permissions. Which of the following answers best describes guest users capabilities?"
     choices:
     - content: "They can manage their own profile, change their own password, and add other B2B guests to groups."
       isCorrect: false
-      explanation: "Sorry, that's incorrect. Azure AD guest users cannot add other B2B guests to groups."
+      explanation: "Sorry, that's incorrect. Microsoft Entra guest users cannot add other B2B guests to groups."
     - content: "They can manage their own profile, change their own password, and retrieve some information about other users, groups, and apps."
       isCorrect: true
       explanation: "Correct. Guest users can only manage aspects of their own profile information, like their password; and view available resource like apps."
     - content: "They can manage their own profile, change their own password, and identify group members or other directory objects."
       isCorrect: false
-      explanation: "Sorry, that's incorrect. Azure AD guest users cannot identify group members and other directory objects."
+      explanation: "Sorry, that's incorrect. Microsoft Entra guest users cannot identify group members and other directory objects."

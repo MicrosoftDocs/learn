@@ -1,3 +1,4 @@
+
 ## Lab scenario
 
 Your organization is exploring Azure virtual networking capabilities. As the Azure Administrator you've been tasked to implement the following requirements:

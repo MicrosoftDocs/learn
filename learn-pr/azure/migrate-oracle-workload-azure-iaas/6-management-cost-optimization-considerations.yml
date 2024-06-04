@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-oracle-workload-azure-iaas.management-cost-optimization-considerations
+title: Plan for management and cost optimization
+metadata:
+  title: Plan for management and cost optimization
+  description: Learn about management and cost optimization considerations.
+  ms.date: 05/01/2024
+  author: jjaygbay1
+  ms.author: jacobjaygbay
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-management-cost-optimization-considerations.md)]

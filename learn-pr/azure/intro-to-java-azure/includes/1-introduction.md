@@ -13,4 +13,4 @@ By the end of this module, you'll be able to:
 
 ## Prerequisites
 
-- Basic development experience in Java or system operating knowledge for Java-based architectures.
+- Basic development experience in Java or system operating knowledge for Java-based architectures

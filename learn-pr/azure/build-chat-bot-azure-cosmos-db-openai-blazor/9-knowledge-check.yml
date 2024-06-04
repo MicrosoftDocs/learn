@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: |
+    Check your knowledge on managing items in Azure Cosmos DB for NoSQL and interacting with the conservational interface for Azure OpenAI.
+  author: seesharprun
+  manager: jroth
+  ms.author: sidandrews
+  ms.reviewer: mjbrown
+  ms.topic: unit
+  ms.date: 03/07/2024
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: |
+      Which NuGet package is used to interact with data in Azure Cosmos DB for NoSQL from a .NET application?
+    choices:
+    - content: |
+        Microsoft.Azure.WebJobs.Extensions.CosmosDB
+      isCorrect: false
+      explanation: |
+        This extension is used with Azure Functions to support Azure Cosmos DB bindings.
+    - content: |
+        Microsoft.Azure.Cosmos
+      isCorrect: true
+      explanation: |
+        This library is the official SDK to manage data in an Azure Cosmos DB for NoSQL account.
+    - content: |
+        Azure.ResourceManager.CosmosDB
+      isCorrect: false
+      explanation: |
+        This library is used to manage Azure Cosmos DB resources, but not data.
+  - content: |
+      After importing the `Azure.AI.OpenAI` library and namespace, which class is used to connect to an Azure OpenAI endpoint and model deployment?
+    choices:
+    - content: |
+        `OpenAiClient`
+      isCorrect: true
+      explanation: |
+        The `OpenAiClient` class is a client class to connect to Azure OpenAI and make data-plane requests.
+    - content: |
+        `Completions`
+      isCorrect: false
+      explanation: |
+        The `Completions` class contains responses (choices) and utilization metadata about a request.
+    - content: |
+        `ChatMessage`
+      isCorrect: false
+      explanation: |
+        The `ChatMessage` class contains metadata about the role and content sent to a model for a completion response.
+  - content: |
+      Which property is required to be the same of all items in a transactional batch within Azure Cosmos DB for NoSQL?
+    choices:
+    - content: |
+        eTag
+      isCorrect: false
+      explanation: |
+        The `_etag` for each item is typically distinct and changes anytime the item is changed. This property is typically used to implement optimistic concurrency.
+    - content: |
+        Unique identifier (&#105;&#100;)
+      isCorrect: false
+      explanation: |
+        The **&#105;&#100;** for each item is distinct within the context of the logical partition. You shouldn't expect this property to be the same within a transactional batch.
+    - content: |
+        Partition key
+      isCorrect: true
+      explanation: |
+        The partition key value of each item must match exactly within a transactional batch. If an item in the batch has a different partition key value, the transactional batch fails.

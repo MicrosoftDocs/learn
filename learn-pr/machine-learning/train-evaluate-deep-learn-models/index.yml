@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/08/2021
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Train and evaluate deep learning models
 summary: Deep learning is an advanced form of machine learning that emulates the way the human brain learns through networks of connected neurons.
 abstract: |

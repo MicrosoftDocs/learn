@@ -1,42 +1,102 @@
-In this exercise, you'll deploy KEDA to an Azure Kubernetes Service (AKS) cluster to autoscale a sample component for your video rendering service. You'll deploy KEDA with Deployment manifests using `kubectl`.  This is one of several options to deploy KEDA. For our purposes, using the default Deployment files method is most appropriate.
+## Install the `aks-preview` Azure CLI extension
 
-> [!TIP]
-> For more detailed information about installation options view KEDA's [official documentation](https://keda.sh/docs/2.2/deploy/).
+1. Open the [Azure Cloud Shell](https://shell.azure.com) in your browser and select **Bash**.
 
-## Deploy KEDA
+1. Install the `aks-preview` extension using the `az extension add` command:
 
-1. Execute the `kubectl get nodes` command to check that you can connect to your cluster and confirm its configuration.
-
-    ```bash
-    kubectl get nodes
+    ```azurecli-interactive
+    az extension add --name aks-preview --allow-preview true
     ```
 
-    You should receive a list similar to what you see here:
+1. Update to the latest version of the `aks-preview` extension using the `az extension update` command:
+
+    ```azurecli-interactive
+    az extension update --name aks-preview --allow-preview true
+    ```
+
+## Register the `AKS-KedaPreview` feature flag
+
+1. Register the `AKS-KedaPreview` feature flag using the `az feature register` command:
+
+    ```azurecli-interactive
+    az feature register --name AKS-KedaPreview --namespace Microsoft.ContainerService
+    ```
+
+    It can take few minutes for the status to show as *Registered*.
+
+1. Verify the registration status using the `az feature show` command:
+
+    ```azurecli-interactive
+    az feature show --name AKS-KedaPreview --namespace Microsoft.ContainerService
+    ```
+
+1. When the status reflects as *Registered*, refresh the Microsoft.ContainerService resource provider's registration using the `az provider register` command:
+
+    ```azurecli-interactive
+    az provider register --namespace Microsoft.ContainerService
+    ```
+
+## Enable the KEDA add-on on an AKS cluster
+
+1. Use the following commands to create environment variables for the resource group name, location, and cluster name for use throughout this module. If you want to use your own names or location, replace the values in the following commands with your own.
+
+    ```azurecli-interactive
+    RESOURCE_GROUP=myContosoRG
+    LOCATION=westus2
+    CLUSTER_NAME=myContosoCluster
+    ```
+
+1. Create an Azure resource group using the `az group create` command:
+
+    ```azurecli-interactive
+    az group create -n $RESOURCE_GROUP -l $LOCATION
+    ```
+
+1. Create an AKS cluster with the KEDA add-on enabled using the `az aks create` command and the `--enable-keda` flag:
+
+    ```azurecli-interactive
+    az aks create -g $RESOURCE_GROUP -n $CLUSTER_NAME --enable-keda --generate-ssh-keys
+    ```
+
+    This command can take a few minutes to run.
+
+1. Connect to your AKS cluster using the `az aks get-credentials` command:
+
+    ```azurecli-interactive
+    az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
+    ```
+
+1. Verify the KEDA add-on is installed on your cluster using the `az aks show` command and set the `--query` flag to `workloadAutoScalerProfile.keda.enabled`:
+
+    ```azurecli-interactive
+    az aks show -n $CLUSTER_NAME -g $RESOURCE_GROUP --query "workloadAutoScalerProfile.keda.enabled"
+    ```
+
+    Your output should look like the following example output, which shows the KEDA add-on is installed on the cluster:
 
     ```output
-    NAME                                STATUS   ROLES   AGE    VERSION
-    aks-nodepool1-68128804-vmss000000   Ready    agent   10d   v1.19.9
+    true
     ```
 
-2. Use `kubectl` to deploy the KEDA manifest files.
+## Create an Azure Cache for Redis instance
 
-    ```bash
-    kubectl apply -f https://github.com/kedacore/keda/releases/download/v2.2.0/keda-2.2.0.yaml
+1. Use the following command to create an environment variable for the Redis name for use throughout this module:
+
+    ```azurecli-interactive
+    REDIS_NAME=contoso-redis-$RANDOM
     ```
 
-3. Use `kubectl` to verify the installation of KEDA.
+1. Create an Azure Cache for Redis instance using the `az redis create` command:
 
-    ```bash
-    kubectl get pods --namespace keda
+    ```azurecli-interactive
+    az redis create --location $LOCATION --name $REDIS_NAME --resource-group $RESOURCE_GROUP --sku Basic --vm-size c0 --enable-non-ssl-port
     ```
 
-    You should see something similar to the following:
+    This command can take several minutes to run.
 
-    ```output
-    NAME                                      READY   STATUS    RESTARTS   AGE
-    keda-metrics-apiserver-55dc9f9498-qswbh   1/1     Running   0          4m54s
-    keda-operator-59dcf989d6-5kqfx            1/1     Running   0          4m53s
+1. Create environment variables for the Redis host and key for use throughout this module using the `az redis show` and `az redis list-keys` commands:
+
+    ```azurecli-interactive
+    REDIS_HOST=$(az redis show -n $REDIS_NAME -g $RESOURCE_GROUP -o tsv --query "hostName")
+    REDIS_KEY=$(az redis list-keys --name $REDIS_NAME --resource-group $RESOURCE_GROUP -o tsv --query "primaryKey")
     ```
-
-> [!NOTE]
-> At this point KEDA is up and running; however, no workload is currently under KEDA scaling control. KEDA still needs to be configured to monitor your workload for scaling.  This will be done in a future step.

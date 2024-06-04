@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-css-styles.exercise-selectors
-title: 'Exercise: Selectors'
+title: Exercise - Selectors
 metadata:
-  title: 'Exercise: Selectors'
-  description: "Exercise: Selectors"
-  ms.date: 04/21/2023
+  title: Exercise - Selectors
+  description: "Set styles for the social media and experience sections and links on your web page."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/6-exercise-selectors.md)]

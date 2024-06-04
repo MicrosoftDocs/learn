@@ -4,11 +4,10 @@ title: Import and publish an API
 metadata:
   title: Import and publish an API
   description: Import and publish an API
-  ms.date: 05/02/2019
+  ms.date: 10/30/2023
   author: dlepow
   ms.author: danlep
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-import-and-publish-an-api.md)]

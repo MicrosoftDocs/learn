@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-data-with-spark-fabric-notebooks.write-optimize
+title: Write data into a lakehouse
+metadata:
+  title: Write data into a lakehouse
+  description: "Write data into a lakehouse"
+  ms.date: 05/08/2024
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-write-optimize.md)]

@@ -7,8 +7,7 @@ metadata:
   ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Cloud computing basics for developers
 summary: |
   Learn about the basics of the cloud, including the history, building blocks, and types, in preparation for real-world cloud practice on Azure.

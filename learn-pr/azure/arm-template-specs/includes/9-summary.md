@@ -1,4 +1,4 @@
-Your organization's use of Azure is growing. Along with that growth, your workload is increasing as more teams ask you to deploy Azure resources for them. You need to make sure that it's done quickly while also maintaining your company's standards for how resources are deployed. 
+Your organization's use of Azure is growing. Along with that growth, your workload is increasing as more teams ask you to deploy Azure resources for them. You need to make sure that deployments are done quickly while also maintaining your company's standards for how resources are deployed.
 
 You decided to create template specs for your colleagues to use. Template specs provide a way for you to publish a template so that other people in your organization can reuse it.
 

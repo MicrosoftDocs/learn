@@ -5,10 +5,9 @@ metadata:
   title: Solving vision problems with MobileNet
   description: MobileNet is a compact neural network architecture that can be used to solve computer vision problems on mobile and low-power devices. 
   author: shwars
-  ms.author: dmitryso
+  ms.author: chnoring
   ms.date: 04/14/2021
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5
 sandbox: true

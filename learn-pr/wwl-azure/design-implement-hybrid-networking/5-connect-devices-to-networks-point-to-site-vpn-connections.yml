@@ -4,13 +4,10 @@ title: Connect devices to networks with Point-to-site VPN connections
 metadata:
   title: Connect devices to networks with Point-to-site VPN connections
   description: "Connect devices to networks with Point-to-site VPN connections"
-  ms.date: 01/05/2023
+  ms.date: 10/09/2023
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/5-connect-devices-to-networks-point-to-site-vpn-connections.md)]
@@ -38,4 +35,4 @@ quiz:
       explanation: "Incorrect, An Active Directory Domain Controller alone isn't sufficient. Another type of server is required."
     - content: "DNS server"
       isCorrect: false
-      explanation: "Incorrect, A DNS server may be required for name resolution, but it isn't sufficient for authentication."
+      explanation: "Incorrect, A DNS server might be required for name resolution, but it isn't sufficient for authentication."

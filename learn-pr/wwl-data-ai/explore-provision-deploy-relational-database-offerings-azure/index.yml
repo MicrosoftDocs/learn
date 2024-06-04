@@ -2,21 +2,26 @@
 uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure
 metadata:
   title: Explore relational database services in Azure
-  description: "Explore relational database services in Azure"
-  ms.date: 09/21/2022
+  description: "This content is a part of Explore relational database services in Azure."
+  ms.date: 03/15/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: sql-database
+  ai-usage: human-only
 title: Explore relational database services in Azure
 summary: Microsoft Azure provides multiple services for relational databases. You can choose the relational database management system that's best for your needs, and host relational data in the cloud.
 abstract: |
-  In this module, you'll learn how to:
-  - Identify options for Azure SQL services
-  - Identify options for open-source databases in Azure
-  - Provision a database service on Azure
-prerequisites: |
-  Before starting this module, you should have a fundamental understanding of relational data concepts and some familiarity with Microsoft Azure and the Azure portal.
+  In this module, you learn how to:
+
+  -   Identify options for Azure SQL services
+
+  -   Identify options for open-source databases in Azure
+
+  -   Provision a database service on Azure
+prerequisites: Before starting this module, you should have a fundamental understanding of relational data concepts and some familiarity with Microsoft Azure and the Azure portal.
 iconUrl: /training/achievements/explore-provision-deploy-relational-database-offerings-azure.svg
 levels:
 - beginner
@@ -28,7 +33,7 @@ roles:
 products:
 - azure
 subjects:
-- database
+- databases
 units:
 - learn.wwl.explore-provision-deploy-relational-database-offerings-azure.introduction
 - learn.wwl.explore-provision-deploy-relational-database-offerings-azure.describe-azure-sql

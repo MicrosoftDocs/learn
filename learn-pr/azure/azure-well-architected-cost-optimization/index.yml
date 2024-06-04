@@ -1,41 +1,44 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-cost-optimization
 metadata:
-  title: Microsoft Azure Well-Architected Framework - Cost optimization
-  description: Identify cost optimization opportunities to maximize cloud efficiency and visibility with the Microsoft Azure Well-Architected Framework.
-  ms.date: 03/01/2023
+  title: Microsoft Azure Well-Architected Framework - Cost Optimization
+  description: Apply cost optimization guidance in your architecture to sustain and improve your return on investment (ROI).
+  ms.date: 10/23/2023
   author: martinekuan
   ms.author: martinek
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Microsoft Azure Well-Architected Framework - Cost optimization
-summary: Identify cost optimization opportunities to maximize cloud efficiency and visibility with the Microsoft Azure Well-Architected Framework.
-abstract:  | 
-  By the end of this module, you will be able to:
-    - Use monitoring and analytics to gain cost insights
-    - Maximize the efficiency of your cloud environment
-    - Provision resources that are optimized for cost
+  ms.topic: module
+  ms.service: waf
+title: Microsoft Azure Well-Architected Framework - Cost Optimization
+summary: Apply cost optimization guidance in your architecture to sustain and improve your return on investment (ROI).
+abstract: |
+  By the end of this module, you'll understand the five principles of the Cost Optimization pillar and some key approaches to:
+    - Build a team culture that has awareness of budget, expenses, reporting, and cost tracking
+    - Spend only on what you need to achieve the highest return on your investments
+    - Maximize the use of resources and operations
+    - Increase efficiency without redesigning, renegotiating, or sacrificing requirements
+    - Continuously right-size investment as your workload evolves
 prerequisites: |
   - Experience building or operating solutions by using core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems
 iconUrl: /training/achievements/azure-well-architected-cost-optimization.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- solution-architect
+  - solution-architect
 products:
-- azure
-- azure-cost-management
-- azure-advisor
-- azure-monitor
+  - azure
+  - azure-cost-management
+  - azure-advisor
+  - azure-monitor
 subjects:
-- infrastructure
+  - infrastructure
 units:
-- learn.azure-well-architected-cost-optimization.1-introduction
-- learn.azure-well-architected-cost-optimization.2-plan-estimate-costs
-- learn.azure-well-architected-cost-optimization.3-provision-with-optimization
-- learn.azure-well-architected-cost-optimization.4-use-monitoring-and-analytics-to-gain-cost-insights
-- learn.azure-well-architected-cost-optimization.5-maximize-efficiency-of-cloud-spend
-- learn.azure-well-architected-cost-optimization.6-summary
+  - learn.azure-well-architected-cost-optimization.1-introduction
+  - learn.azure-well-architected-cost-optimization.develop-cost-management-discipline
+  - learn.azure-well-architected-cost-optimization.design-with-cost-efficiency-mindset
+  - learn.azure-well-architected-cost-optimization.design-for-usage-optimization
+  - learn.azure-well-architected-cost-optimization.design-for-rate-optimization
+  - learn.azure-well-architected-cost-optimization.monitor-and-optimize-over-time
+  - learn.azure-well-architected-cost-optimization.6-summary
 badge:
   uid: learn.azure-well-architected-cost-optimization.badge

@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/15/2023
   author: MashaMSFT
   ms.author: mathoma
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Scenario 1 - Architect global scale and secure access
 durationInMinutes: 10
 content: |
@@ -45,67 +44,67 @@ quiz:
         explanation: "The customer can use the geo-replicated databases as readable secondaries, and it can deploy multiple geo-replicated databases across the globe, including in its existing region. However, geo-replication isn't currently available in Azure SQL Managed Instance."
     - content: "Which authentication method would you recommend for the application on an Azure VM?"
       choices:
-      - content: "Azure AD authentication: integrated authentication."
+      - content: "Microsoft Entra authentication: integrated authentication."
         isCorrect: false
         explanation: "Is there a passwordless option available for Azure resources?"
-      - content: "Azure AD authentication: client ID/certificate."
+      - content: "Microsoft Entra authentication: client ID/certificate."
         isCorrect: false
         explanation: "Is there a passwordless option available for Azure resources?"
-      - content: "Azure AD authentication: interactive with multifactor authentication."
+      - content: "Microsoft Entra authentication: interactive with multifactor authentication."
         isCorrect: false
         explanation: "Is there a passwordless option available for Azure resources?"
-      - content: "Azure AD authentication: managed identity."
+      - content: "Microsoft Entra authentication: managed identity."
         isCorrect: true
         explanation: "Managed identities for Azure resources are, in general, the form of passwordless authentication that we recommend for applications running on Azure virtual machines."
       - content: "SQL authentication: username and password."
         isCorrect: false
-        explanation: "Consider Azure AD."
+        explanation: "Consider Microsoft Entra ID."
     - content: "Which authentication method would you recommend for the application on a non-Azure machine that is domain-joined?"
       choices:
-      - content: "Azure AD authentication: integrated authentication."
+      - content: "Microsoft Entra authentication: integrated authentication."
         isCorrect: true
-        explanation: "Integrated authentication via Azure Active Directory is the authentication method that we recommend for apps running on domain-joined machines outside Azure, assuming the domain has been federated with Azure Active Directory. Alternatively, you can create an application identity for your application in Azure Active Directory, associate a certificate with the application identity, and modify your application to acquire a token for Azure SQL Database by providing a client ID and a certificate. Although the certificate must contain a private key and it must be deployed on the machine that's hosting your application, you at least avoid hard-coding an application secret in the application code or configuration. (You'll need to configure the app with the certificate thumbprint.)"
-      - content: "Azure AD authentication: client ID/certificate."
+        explanation: "Integrated authentication via Microsoft Entra ID is the authentication method that we recommend for apps running on domain-joined machines outside Azure, assuming the domain has been federated with Microsoft Entra ID. Alternatively, you can create an application identity for your application in Microsoft Entra ID, associate a certificate with the application identity, and modify your application to acquire a token for Azure SQL Database by providing a client ID and a certificate. Although the certificate must contain a private key and it must be deployed on the machine that's hosting your application, you at least avoid hard-coding an application secret in the application code or configuration. (You'll need to configure the app with the certificate thumbprint.)"
+      - content: "Microsoft Entra authentication: client ID/certificate."
         isCorrect: false
-        explanation: "Integrated authentication via Azure Active Directory is the authentication method that we recommend for apps running on domain-joined machines outside Azure, assuming the domain has been federated with Azure Active Directory. Alternatively, you can create an application identity for your application in Azure Active Directory, associate a certificate with the application identity, and modify your application to acquire a token for Azure SQL Database by providing a client ID and a certificate. Although the certificate must contain a private key and it must be deployed on the machine that's hosting your application, you at least avoid hard-coding an application secret in the application code or configuration. (You'll need to configure the app with the certificate thumbprint.)"
-      - content: "Azure AD authentication: interactive with multifactor authentication."
+        explanation: "Integrated authentication via Microsoft Entra ID is the authentication method that we recommend for apps running on domain-joined machines outside Azure, assuming the domain has been federated with Microsoft Entra ID. Alternatively, you can create an application identity for your application in Microsoft Entra ID, associate a certificate with the application identity, and modify your application to acquire a token for Azure SQL Database by providing a client ID and a certificate. Although the certificate must contain a private key and it must be deployed on the machine that's hosting your application, you at least avoid hard-coding an application secret in the application code or configuration. (You'll need to configure the app with the certificate thumbprint.)"
+      - content: "Microsoft Entra authentication: interactive with multifactor authentication."
         isCorrect: false
         explanation: "Not the best option for an application."
-      - content: "Azure AD authentication: managed identity."
+      - content: "Microsoft Entra authentication: managed identity."
         isCorrect: false
         explanation: "Not for an application outside Azure."
       - content: "SQL authentication: username and password."
         isCorrect: false
-        explanation: "Consider Azure AD."
+        explanation: "Consider Microsoft Entra ID."
     - content: "Which authentication method would you recommend for SQL admin tools (SSMS, PowerShell) on a non-Azure machine that is not domain-joined?"
       choices:
-      - content: "Azure AD authentication: integrated authentication."
+      - content: "Microsoft Entra authentication: integrated authentication."
         isCorrect: false
-        explanation: "You can eliminate the use of passwords with SQL tools by using Azure AD integrated authentication, if the tools run on a domain-joined machine and the domain has been federated with Azure Active Directory. If your environment doesn't meet the prerequisites for integrated authentication, we recommend that you use Azure AD interactive authentication with multifactor authentication, which most SQL tools support."
-      - content: "Azure AD authentication: client ID/certificate."
+        explanation: "You can eliminate the use of passwords with SQL tools by using Microsoft Entra integrated authentication, if the tools run on a domain-joined machine and the domain has been federated with Microsoft Entra ID. If your environment doesn't meet the prerequisites for integrated authentication, we recommend that you use Microsoft Entra interactive authentication with multifactor authentication, which most SQL tools support."
+      - content: "Microsoft Entra authentication: client ID/certificate."
         isCorrect: false
         explanation: "Is there a passwordless option?"
-      - content: "Azure AD authentication: interactive with multifactor authentication."
+      - content: "Microsoft Entra authentication: interactive with multifactor authentication."
         isCorrect: true
-        explanation: "You can eliminate the use of passwords with SQL tools by using Azure AD integrated authentication, if the tools run on a domain-joined machine and the domain has been federated with Azure Active Directory. If your environment doesn't meet the prerequisites for integrated authentication, we recommend that you use Azure AD interactive authentication with multifactor authentication, which most SQL tools support."
-      - content: "Azure AD authentication: managed identity."
+        explanation: "You can eliminate the use of passwords with SQL tools by using Microsoft Entra integrated authentication, if the tools run on a domain-joined machine and the domain has been federated with Microsoft Entra ID. If your environment doesn't meet the prerequisites for integrated authentication, we recommend that you use Microsoft Entra interactive authentication with multifactor authentication, which most SQL tools support."
+      - content: "Microsoft Entra authentication: managed identity."
         isCorrect: false
         explanation: "Available only for Azure resources."
       - content: "SQL authentication: username and password."
         isCorrect: false
-        explanation: "Consider Azure AD."
+        explanation: "Consider Microsoft Entra ID."
     - content: "Which authentication method would you recommend for an older application where you can't change the driver/connection string on a non-Azure machine?"
       choices:
-      - content: "Azure AD authentication: integrated authentication."
+      - content: "Microsoft Entra authentication: integrated authentication."
         isCorrect: false
         explanation: "Not possible for applications that use old drivers or SQL authentication and can't be modified."
-      - content: "Azure AD authentication: client ID/certificate."
+      - content: "Microsoft Entra authentication: client ID/certificate."
         isCorrect: false
         explanation: "Not possible for applications that use old drivers or SQL authentication and can't be modified."
-      - content: "Azure AD authentication: interactive with multifactor authentication."
+      - content: "Microsoft Entra authentication: interactive with multifactor authentication."
         isCorrect: false
         explanation: "Not possible for applications that use old drivers or SQL authentication and can't be modified."
-      - content: "Azure AD authentication: managed identity."
+      - content: "Microsoft Entra authentication: managed identity."
         isCorrect: false
         explanation: "Not possible for applications that use old drivers or SQL authentication and can't be modified."
       - content: "SQL authentication: username and password."
