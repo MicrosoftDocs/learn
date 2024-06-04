@@ -19,7 +19,7 @@ abstract: |
   - Select the right .NET Aspire component to address a functional requirement in a cloud-native application.
   - Use Visual Studio to create and run a new .NET Aspire application.
 ratingEnabled: true
-iconUrl: /training/achievements/dotnet-aspiresvg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
