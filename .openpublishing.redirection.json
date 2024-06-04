@@ -40363,6 +40363,11 @@
       "source_path": "learn-pr/wwl-azure/plan-java-application-migration-azure-spring-apps/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-java-application-migration-azure-spring-apps/6-choose-right-tools.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
