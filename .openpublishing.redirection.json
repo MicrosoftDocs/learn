@@ -40533,6 +40533,11 @@
       "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/8-access-application-use-domain-name-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
