@@ -40503,6 +40503,11 @@
       "source_path": "learn-pr/wwl-azure/create-configure-azure-service-bus-azure-spring-apps/2-create-azure-service-bus.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-configure-azure-service-bus-azure-spring-apps/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
