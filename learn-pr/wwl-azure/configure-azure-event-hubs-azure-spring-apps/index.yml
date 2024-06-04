@@ -34,6 +34,5 @@ products:
 - github
 - azure-spring-apps
 units:
-- learn.wwl.configure-azure-event-hubs-azure-spring-apps.use-github-actions-workflow
 badge:
   uid: learn.wwl.configure-azure-event-hubs-azure-spring-apps.badge
