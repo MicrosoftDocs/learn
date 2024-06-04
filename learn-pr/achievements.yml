@@ -3508,3 +3508,23 @@ achievements:
   title: Secure application secrets using Key Vault
   summary: You're now running a version of the spring-petclinic microservice application in Azure. You want a better way to protect application secrets like your database connection string. In this module, you'll better protect your application secrets.
   iconUrl: /training/achievements/3-secure-application-secrets-using-key-vault.svg
+- uid: learn.wwl.configure-azure-event-hubs-azure-spring-apps.badge
+  type: badge
+  title: Configure Azure Event Hubs for Azure Spring Apps
+  summary: Now that you've set up messaging for the Spring Petclinic application, the next thing you'll do is configure Azure Event Hubs. Event Hubs is a fully managed, real-time data ingestion service that’s trusted and scalable.
+  iconUrl: /training/achievements/configure-azure-event-hubs-azure-spring-apps.svg
+- uid: learn.wwl.create-configure-azure-service-bus-azure-spring-apps.badge
+  type: badge
+  title: Create and configure Azure Service Bus for Azure Spring Apps
+  summary: At this point, you've deployed the Spring Petclinic application, and the services are running. In this module, you'll be using Azure Service Bus to test an existing microservice and update another microservice to utilize queues.
+  iconUrl: /training/achievements/create-configure-azure-service-bus-azure-spring-apps.svg
+- uid: learn.wwl.protect-endpoints-using-web-application-firewall.badge
+  type: badge
+  title: Protect endpoints using Web Application Firewall
+  summary: You have now set up your Spring Petclinic application in Azure and secured the secrets used by the microservices. In this module, you'll learn how to add a Web Application Firewall to your setup.
+  iconUrl: /training/achievements/4-protect-endpoints-using-web-application-firewall.svg
+- uid: learn.wwl.secure-mysql-database-key-vault-using-private-endpoint.badge
+  type: badge
+  title: Secure MySQL database and Key Vault using a private endpoint
+  summary: You now have an Azure Spring Apps application deployed into a virtual network. In this module, you'll implement a configuration in which only connections that originate from within your virtual network are accepted.
+  iconUrl: /training/achievements/5-secure-mysql-database-key-vault-using-private-endpoint.svg
