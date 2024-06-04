@@ -40543,6 +40543,11 @@
       "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/5-acquire-self-signed-certificate-add-to-key-vault.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/9-configure-for-application-gateway.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
