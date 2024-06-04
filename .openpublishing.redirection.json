@@ -40478,6 +40478,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-event-hubs-azure-spring-apps/7-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-event-hubs-azure-spring-apps/4-understand-blue-green-deployments-for-applications-azure-spring-cloud.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
