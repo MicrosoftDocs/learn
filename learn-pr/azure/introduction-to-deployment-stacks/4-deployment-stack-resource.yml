@@ -8,7 +8,6 @@ metadata:
   author: joshuawaddell
   ms.author: jowaddel
   ms.topic: unit
-  zone_pivot_groups: azure-shell-interface
 durationInMinutes: 7
 content: | 
   [!include[](includes/4-deployment-stack-resource.md)]

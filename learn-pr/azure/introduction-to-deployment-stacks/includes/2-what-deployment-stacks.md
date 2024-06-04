@@ -16,7 +16,7 @@ A resource group is frequently used as a security boundary for permissions. You 
 
 Let's say your application consists of an app service, application insights, and an SQL database deployed to a single resource group. Your organization has separate teams for managing compute, web applications, and databases. If your organization's security policy requires granular RBAC, it's necessary to scope permissions at the resource scope instead of the resource group scope.
 
-![a graphic representing an application deployed to a single resource group](../media/single-resource-group-application.png)
+![A graphic representing an application with its resources deployed to a single resource group.](../media/single-resource-group-application.png)
 
 Over time, it's possible that resources unrelated to the application are also deployed to the same resource group. For example, a colleague of yours deploys a new Azure Key Vault and accidentally chooses the wrong resource group at the time of deployment. This scenario may make it tough to determine which resources belong to which application and could potentially lead to issues such as an accidental deletion of a critical resource.
 
@@ -24,7 +24,7 @@ Over time, it's possible that resources unrelated to the application are also de
 
 What happens when your application scales to the point where a change is needed? It might be necessary to take parts of your application and break them out into separate resource groups for simplified security controls. For example, you may place all the compute resources into the compute resource group, the application resources into the application resource group, and all the databases into the database resource group.
 
-![a graphic representing an application deployed to multiple resource groups](../media/multiple-resource-group-application.png)
+![A graphic representing an application with its resources deployed to multiple resource groups.](../media/multiple-resource-group-application.png)
 
 This model allows you to scope permissions to the compute, application, and database teams to their appropriate resource groups. While this practice may solve for a problem, you introduced decentralized management. As most deployments in Azure are scoped to the resource group, you no longer have the ability to manage the resources as a single unit.
 
@@ -38,7 +38,7 @@ Deployment stacks change how you think about resource organization across resour
 
 Think of deployment stacks as a series of pointers that groups your application's resources into a single unit. Deployment stacks can be created at different scopes, such as resource groups, subscriptions, and management groups.
 
-![a graphic representing an application managed by a deployment stack and deployed to multiple resource groups](../media/deployment-stack-application.png)
+![A graphic representing an application's resources managed by a deployment stack and deployed to multiple resource groups.](../media/deployment-stack-application.png)
 
 Consider the example from earlier. By deploying your application and its resources with a single stack, scoped at the subscription level and across resource groups, you can now manage the application as a single unit. Each resource group and its resources are managed by the stack.
 

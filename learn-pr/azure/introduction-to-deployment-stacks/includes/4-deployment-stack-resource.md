@@ -4,11 +4,11 @@ In this unit, you learn about the deployment stacks resource and some of the ope
 
 ## The deployment stacks resource
 
-Azure Resource Manager (ARM) is the service that deploys and manages resources in Azure. You can use Resource Manager to create, update, and delete resources in your Azure subscription. 
+Azure Resource Manager (ARM) is the service that deploys and manages resources in Azure. You can use Resource Manager to create, update, and delete resources in your Azure subscription.
 
 A deployment stack is a native Azure resource, which allows for typical ARM operations to be performed on the stack as a whole. A deployment stack can inherit an Azure policy assignment, and Azure role-based access control (RBAC) assignment, or even a Microsoft Defender for Cloud security recommendation. Within a deployment stack are pointers to all of the resources, resource groups, and management groups managed by the stack. The managed resources defined in the stack can easily be created, updated, or deleted with a single operation on the deployment stack resource.
 
-![a graphic representing an application managed by a deployment stack and deployed to multiple resource groups](../media/deployment-stack-application.png)
+![A graphic representing an application's resources managed by a deployment stack and deployed to multiple resource groups.](../media/deployment-stack-application.png)
 
 ## Deployment stacks operations
 
