@@ -41,7 +41,6 @@ units:
 - learn.wwl.protect-endpoints-use-web-application-firewall.configure-virtual-network-for-azure-spring-cloud
 - learn.wwl.protect-endpoints-use-web-application-firewall.deploy-azure-spring-cloud-virtual-network
 - learn.wwl.protect-endpoints-use-web-application-firewall.configure-internal-domain-name-services
-- learn.wwl.protect-endpoints-use-web-application-firewall.acquire-self-signed-certificate-add-to-key-vault
 - learn.wwl.protect-endpoints-use-web-application-firewall.configure-public-domain-name-azure-spring-cloud
 - learn.wwl.protect-endpoints-use-web-application-firewall.create-application-gateway-resources
 - learn.wwl.protect-endpoints-use-web-application-firewall.configure-for-application-gateway
