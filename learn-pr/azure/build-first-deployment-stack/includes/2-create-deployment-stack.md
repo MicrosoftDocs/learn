@@ -10,7 +10,7 @@ In this unit, you learn how to create a deployment stack, verify its deployment,
 
 Deployment stacks change how you think about resource organization across resource groups and subscriptions. A deployment stack allows you to group all the resources that make up your application, regardless of where they're in your Azure resource organizational hierarchy. You can manage them as a single unit. With deployment stacks, you're able to perform lifecycle operations on the collection of resources that make up the stack.
 
-![a graphic representing an application managed by a resource group scoped deployment stack](../media/depolyment-stack-resource-group-scope.png)
+![A graphic representing an application and its managed by a resource group scoped deployment stack.](../media/depolyment-stack-resource-group-scope.png)
 
 Think of deployment stacks as a series of pointers that groups your application's resources into a single unit. Deployment stacks can be created at different scopes, such as resource groups, subscriptions, and management groups.
 
@@ -147,7 +147,7 @@ The results include the properties of the deployment stack and the status of the
 
 :::code language="json" source="code/2-json.json" range="1-27, 40-43, 56-81":::
 
-Take notice of the resources section of the output. For each resource, it shows its status as `managed`, its resource group, its resource id, and its deny settings.
+Take notice of the resources section of the output. For each resource, it shows its status as `managed`, its resource group, its resource ID, and its deny settings.
 
 ::: zone-end
 

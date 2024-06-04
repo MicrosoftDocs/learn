@@ -36,7 +36,7 @@ az stack group create \
 
 When performing an update on the stack, you receive a message stating that the stack already exists in the current subscription. If the value of the _action on unmanage_ parameter changes, the warning alerts you of the new values.
 
-![a graphic representing an Azure CLI warning that the deployment stack already exists](../media/stack-exists-cli.png)
+:::image type="content" source="../media/stack-exists-cli.png" alt-text="{a graphic representing an Azure CLI command line warning that the deployment stack already exists}":::
 
 To verify that the stack is managing the new resources, use the `az stack group show` command.
 
@@ -86,7 +86,7 @@ In the next module, you work on managing resource lifecycles, including adding, 
 Reliable resource cleanup is a key feature of deployment stacks. When you delete a deployment stack, you can also delete the managed resources, resource groups, and management groups. Using a single API call eliminates the need to understand dependencies. As with creating and updating deployment stacks, the _action on unmanage_ parameter determines how Azure handles detached resources.
 
 > [!NOTE]
-> In this module, we are working with resrouce group scoped deployment stacks. In this situation, the resource group is not managed by the stack. > The 'delete all' value for the _action on unmanage_ parameter doesn't detele the resource group where the stack exists. It is necessary to delete the resource group after the stack and its resources are deleted.
+> In this module, we are working with resrouce group scoped deployment stacks. In this situation, the resource group is not managed by the stack. The 'delete all' value for the _action on unmanage_ parameter doesn't detele the resource group where the stack exists. It is necessary to delete the resource group after the stack and its resources are deleted.
 
 ::: zone pivot="cli"
 
