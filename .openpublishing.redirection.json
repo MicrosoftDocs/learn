@@ -40383,6 +40383,11 @@
       "source_path": "learn-pr/wwl-azure/plan-java-application-migration-azure-spring-apps/5-organize-azure-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-java-application-migration-azure-spring-apps/3-run-azure-services-for-host-java-applications.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
