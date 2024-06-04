@@ -40318,6 +40318,11 @@
       "source_path": "learn-pr/wwl-azure/migrate-spring-cloud-application-to-azure/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/migrate-spring-cloud-application-to-azure/3-configure-managed-spring-cloud-configure-server-azure-spring-apps.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
