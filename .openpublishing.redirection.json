@@ -40458,6 +40458,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-event-hubs-azure-spring-apps/3-automate-github-actions-workflow.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-event-hubs-azure-spring-apps/5-blue-green-deployment-strategies-azure-spring-cloud.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
