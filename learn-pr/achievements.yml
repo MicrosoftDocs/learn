@@ -3413,6 +3413,11 @@ achievements:
   title: Describe team structures
   summary: This module explores agile development practices and helps to define and to configure teams and tools for collaboration.
   iconUrl: /training/achievements/3-describe-team-structures.svg
+- uid: learn.monitor-aks-using-container-insights-badge
+  type: badge
+  title: Monitor an Azure Kubernetes Service cluster using Container insights in Azure Monitor
+  summary: Learn how to analyze the availability and performance of an Azure Kubernetes Service cluster with a containerized application and be proactively notified when a problem occurs. Enable Container insights in Azure Monitor to send the data to a Log Analytics workspace and then workbooks in Azure Monitor to view collected data and enable a predefined alert rule.
+  iconUrl: /learn/achievements/generic-badge.svg
 - uid: learn.deploy-microsoft-purview-scan-data-resources.badge
   type: badge
   title: Deploy Microsoft Purview and scan an Azure Data Lake resource using the Azure portal
