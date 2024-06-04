@@ -40266,187 +40266,187 @@
     },
     {
       "source_path": "learn-pr/paths/deploy-run-java-applications-azure-spring-apps/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/enable-monitoring-end-to-end-tracing/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/enable-monitoring-end-to-end-tracing/3-access-monitoring-information.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/enable-monitoring-end-to-end-tracing/5-configure-distributed-tracing.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/enable-monitoring-end-to-end-tracing/2-configure-monitoring.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/enable-monitoring-end-to-end-tracing/6-debug-microsoft-service-architecture.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/enable-monitoring-end-to-end-tracing/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/enable-monitoring-end-to-end-tracing/7-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/enable-monitoring-end-to-end-tracing/8-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/enable-monitoring-end-to-end-tracing/4-test-monitoring-configuration.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/migrate-spring-cloud-application-to-azure/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/migrate-spring-cloud-application-to-azure/3-configure-managed-spring-cloud-configure-server-azure-spring-apps.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/migrate-spring-cloud-application-to-azure/4-create-azure-mysql-database-service.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/migrate-spring-cloud-application-to-azure/2-create-azure-service.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/migrate-spring-cloud-application-to-azure/5-deploy-spring-cloud-service.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/migrate-spring-cloud-application-to-azure/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/migrate-spring-cloud-application-to-azure/7-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/migrate-spring-cloud-application-to-azure/8-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/migrate-spring-cloud-application-to-azure/6-test-application-use-publicly-available-endpoint.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/plan-java-application-migration-azure-spring-apps/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/plan-java-application-migration-azure-spring-apps/6-choose-right-tools.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/plan-java-application-migration-azure-spring-apps/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/plan-java-application-migration-azure-spring-apps/7-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/plan-java-application-migration-azure-spring-apps/5-organize-azure-resources.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/plan-java-application-migration-azure-spring-apps/3-run-azure-services-for-host-java-applications.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/plan-java-application-migration-azure-spring-apps/8-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/plan-java-application-migration-azure-spring-apps/4-use-azure-services-for-store-application-data.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/plan-java-application-migration-azure-spring-apps/2-use-spring-cloud-to-develop-java-apps-publish.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/secure-application-secrets-use-key-vault/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/secure-application-secrets-use-key-vault/3-configure-connection-string-secret.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/secure-application-secrets-use-key-vault/5-configure-managed-identity-access-key-vault.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/secure-application-secrets-use-key-vault/2-create-azure-service.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/secure-application-secrets-use-key-vault/4-create-managed-identity-for-microsoft-services.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/secure-application-secrets-use-key-vault/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/secure-application-secrets-use-key-vault/7-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/secure-application-secrets-use-key-vault/8-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/secure-application-secrets-use-key-vault/6-update-application-configure.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     }
   ]
