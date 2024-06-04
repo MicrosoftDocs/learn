@@ -40423,6 +40423,11 @@
       "source_path": "learn-pr/wwl-azure/secure-application-secrets-use-key-vault/2-create-azure-service.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-application-secrets-use-key-vault/4-create-managed-identity-for-microsoft-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
