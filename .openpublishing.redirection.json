@@ -40398,6 +40398,11 @@
       "source_path": "learn-pr/wwl-azure/plan-java-application-migration-azure-spring-apps/4-use-azure-services-for-store-application-data.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/plan-java-application-migration-azure-spring-apps/2-use-spring-cloud-to-develop-java-apps-publish.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
