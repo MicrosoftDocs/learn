@@ -7,16 +7,16 @@ In this exercise, you explore all the key landmarks in the landing page of the s
 
 ### Exercise
 
+For this exercise you're logged in Avery Howard and have the Copilot owner role.  For all the tasks in this exercise, you'll work in the Copilot standalone experience.
+
 > [!NOTE]
-> It is recommended that you open the exercise environment in a separate browser window so that you can simultaneously view the instructions and the exercise environment.
-
-Using the exercise environment, follow the exercise steps that are listed. This exploration exercise doesn't accept any user inputs.
-
-[![Button to launch exercise environment.](../media/security-copilot-launch-exercise-button-v2.png)]()
+> When a lab instruction calls for opening a link to the simulated environment, it is recommended that you open the link in a split screen window. To do so, select the right mouse key and select 'Open link in split screen window'.
 
 #### Task: Explore the menu options
 
-You start at the top left corner of the page and exploring the options in the home menu.
+In this task you start your exploration in the home menu.
+
+1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security](https://app.highlights.guide/start/2cac767e-42c4-4058-afbb-a9413aac461d?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f)**. Use the right mouse key and select,'Open link in split screen window'.
 
 1. Select the **Menu** icon ![home menu icon](../media/home-menu-icon.png), which is sometimes referred to as the hamburger icon.
 

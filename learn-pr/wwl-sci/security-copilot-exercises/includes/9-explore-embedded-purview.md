@@ -15,9 +15,9 @@ For this exercise you'll work in both the standalone experience and the embedded
 
 #### Task: Enable the Microsoft Purview plugin
 
-In this task, you enable the Microsoft Purview plugin. For this task, you work in the standalone experience. 
+In this task, you enable the Microsoft Purview plugin. For this task, you work in the standalone experience.
 
-1. Open the environment by selecting this link (use the right mouse key and select,'Open link in split screen window'): Microsoft Copilot for Security. 
+1. Open the simulated environment by selecting this link (use the right mouse key and select,'Open link in split screen window'): **Microsoft Copilot for Security.** 
 
 1. From the Microsoft Copilot for Security landing page, select the sources icon in the prompt bar.
     1. Expand the Microsoft plugins
@@ -32,11 +32,16 @@ In this task, you enable the Microsoft Purview plugin. For this task, you work i
 
 #### Task: Gain comprehensive summary of Insider Risk Management alerts
 
+For this and all subsequent tasks, you explore the Copilot functionality embedded in Microsoft Purview.
+
 In this task, you explore the value Copilot provides in summarizing an Insider Risk Management alert. You start by first reviewing an alert, without Copilot for Security. It can be challenging to know where to start your investigation when risky activities are detected over a long period of time. You'll then see how Copilot can address this same task with the click of a button.
 
 Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview Insider Risk Management solution, users should have previously been assigned an appropriate role.
 
+1. Open the environment by selecting this link (use the right mouse key and select,'Open link in split screen window'): **Microsoft Purview Portal.**
+
 1. From the Microsoft Purview portal, select Insider Risk Management.
+
 1. Select Alerts
 
 1. In the search bar, enter **86e52569**. Select this alert.
