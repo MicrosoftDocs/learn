@@ -40353,6 +40353,11 @@
       "source_path": "learn-pr/wwl-azure/migrate-spring-cloud-application-to-azure/8-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/migrate-spring-cloud-application-to-azure/6-test-application-use-publicly-available-endpoint.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
