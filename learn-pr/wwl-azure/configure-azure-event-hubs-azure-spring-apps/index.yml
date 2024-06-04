@@ -34,7 +34,6 @@ products:
 - github
 - azure-spring-apps
 units:
-- learn.wwl.configure-azure-event-hubs-azure-spring-apps.introduction
 - learn.wwl.configure-azure-event-hubs-azure-spring-apps.use-github-actions-workflow
 - learn.wwl.configure-azure-event-hubs-azure-spring-apps.understand-blue-green-deployments-for-applications-azure-spring-cloud
 - learn.wwl.configure-azure-event-hubs-azure-spring-apps.knowledge-check
