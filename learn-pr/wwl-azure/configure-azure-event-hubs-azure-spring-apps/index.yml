@@ -36,7 +36,6 @@ products:
 units:
 - learn.wwl.configure-azure-event-hubs-azure-spring-apps.use-github-actions-workflow
 - learn.wwl.configure-azure-event-hubs-azure-spring-apps.understand-blue-green-deployments-for-applications-azure-spring-cloud
-- learn.wwl.configure-azure-event-hubs-azure-spring-apps.knowledge-check
 - learn.wwl.configure-azure-event-hubs-azure-spring-apps.summary
 badge:
   uid: learn.wwl.configure-azure-event-hubs-azure-spring-apps.badge
