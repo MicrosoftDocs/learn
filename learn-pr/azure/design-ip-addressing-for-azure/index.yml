@@ -3,11 +3,10 @@ uid: learn.design-ip-addressing-for-azure
 metadata:
   title: Design an IP addressing schema for your Azure deployment
   description: In this module, you will learn how to plan and implement an IP addressing scheme for virtual networks and virtual machines in Azure.
-  ms.date: 07/20/2022
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/28/2023
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: module
 title: Design an IP addressing schema for your Azure deployment
 summary: |
   A good Azure IP addressing schema provides flexibility, room for growth, and integration with on-premises networks. The schema ensures that communication works for deployed resources, minimizes public exposure of systems, and gives the organization flexibility in its network. If not properly designed, systems might not be able to communicate, and additional work will be required to remediate.

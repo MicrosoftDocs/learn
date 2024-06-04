@@ -1,14 +1,39 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.monitor-vm-health
-title: Monitor the health of the virtual machine
+title: Monitoring for Azure VMs
 metadata:
-  title: Monitor the health of the virtual machine
-  description: Look at how to use Azure metrics to monitor the health of a virtual machine. You'll explore the different metrics available in Azure. You'll also learn how to plot multiple metrics on a graph to better understand the traffic that hits your web server.
-  ms.date: 10/18/2019
+  title: Monitoring for Azure VMs
+  description: Understand Azure Monitor Metrics and Logs, and explore the various Azure Monitor capabilities for monitoring a virtual machine (VM).
+  ms.date: 11/06/2023
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 5
+  ms.topic: unit
+durationInMinutes: 8
 content: |
   [!include[](includes/2-monitor-vm-health.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What are the two main types of monitoring data that Azure Monitor collects for Azure VMs?
+    choices:
+    - content: Metrics and logs.
+      isCorrect: true
+      explanation: Azure Monitor can collect two main types of data for monitoring VMs, metrics and logs.
+    - content: VM insights and Alerts.
+      isCorrect: false
+      explanation: VM insights and Alerts are based on Azure Monitor Metrics data, but Azure Monitor can also collect log data.
+    - content: Workbooks and Workspaces.
+      isCorrect: false
+      explanation: Workbooks and Log Analytics Workspaces work with already-collected metrics and log data.
+  - content: What are the layers of a VM that need to be monitored?
+    choices:
+    - content: VM host OS, SKU, and disks.
+      isCorrect: false
+      explanation: The OS, SKU, and disks are features of the VM host layer, which runs client workloads and applications.
+    - content: VM host, guest OS, client workloads, and applications.
+      isCorrect: true
+      explanation: VM monitoring layers consist of the VM host and the client VM, which includes the guest OS and the workloads and applications that run on the VM.
+    - content: Subscription, resource group, and VM.
+      isCorrect: false
+      explanation: Azure VMs are created inside resource groups and subscriptions, but those features aren't related to VM monitoring layers.
+      

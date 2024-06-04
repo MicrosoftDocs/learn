@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-hybrid-identity-with-windows-server.select-azure-ad-integration-model
-title: Select an Azure Active Directory integration model
+title: Select a Microsoft Entra integration model
 metadata:
-  title: Select an Azure Active Directory integration model
-  description: "Select an Azure Active Directory integration model"
+  title: Select a Microsoft Entra integration model
+  description: "Select a Microsoft Entra integration model"
   ms.date: 12/13/2021
   author: wwlpublish
-  ms.author: v-anwarr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: tonyj
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 13

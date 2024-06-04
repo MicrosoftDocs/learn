@@ -1,4 +1,4 @@
-Let's start with a quick overview of DBaaS databases and Azure Database for MySQL. This will help you decide whether your organization can benefit from migrating to Azure Database for MySQL.
+To help you decide whether your organization can benefit from migrating to Azure Database for MySQL, let's start with a quick overview of DBaaS databases and Azure Database for MySQL. 
 
 ## What is DBaaS?
 

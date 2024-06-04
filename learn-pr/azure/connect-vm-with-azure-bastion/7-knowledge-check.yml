@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Check your knowledge
   description: Review what you've learned.
-  ms.date: 11/12/2020
+  ms.date: 12/06/2023
   author: cherylmc
   ms.author: cherylmc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
@@ -24,7 +23,7 @@ quiz:
     - content: The organization can simplify the management of its VMs.
       isCorrect: true
       explanation: Azure Bastion is a fully managed PaaS service. It provides seamless RDP/SSH access to VMs over the internet without requiring the installation of connection software like Remote Desktop. 
-  - content: "At what resource level or scope does an Azure Bastion connection apply to?"
+  - content: "To what resource level or scope does an Azure Bastion connection apply?"
     choices:
     - content: Resource group
       isCorrect: false

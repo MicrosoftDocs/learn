@@ -1,54 +1,53 @@
 ### YamlMime:ModuleUnit
 uid: learn.app-service-autoscale-rules.3-knowledge-check-identify-scenarios
-title: Knowledge Check - Identify suitable scenarios for autoscaling
+title: Knowledge check - Identify suitable scenarios for autoscaling
 metadata:
-  title: Knowledge Check - Identify suitable scenarios for autoscaling
-  description: Knowledge Check - Identify suitable scenarios for autoscaling
-  ms.date: 04/10/2019
+  title: Knowledge check - Identify suitable scenarios for autoscaling
+  description: Knowledge check - Identify suitable scenarios for autoscaling
+  ms.date: 04/15/2024
   author: cephalin
   ms.author: cephalin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
-  title: Check your knowledge
+  
   questions:
   - content: "Which of these statements best describes autoscaling?"
     choices:
-    - content: "Autoscaling is a scale up/scale down solution. It migrates an application to more powerful hardware during periods of high demand, and moves it back to less powerful hardware when demand drops."
+    - content: "Autoscaling is a scale-up/scale-down solution. It migrates an application to more powerful hardware during periods of high demand, and moves the application back to less powerful hardware when demand drops."
       isCorrect: false
-      explanation: "No. Autoscaling is a scale in/scale out solution. It adds and removes instances of resources rather than migrating to more powerful hardware."
+      explanation: "Incorrect. Autoscaling is a scale-out/scale-in solution. It adds and removes instances of resources rather than migrating an application to and from more powerful hardware."
     - content: "Autoscaling requires an administrator to actively monitor the workload on a system. If the workload increases and response times start to drop, the administrator can trigger autoscaling to help increase the throughput of the system."
       isCorrect: false
-      explanation: "No. Autoscaling is an automated process that doesn't require manual intervention. You define autoscale rules, which monitor resource usage. When these rules determine that utilization exceeds a certain threshold, autoscaling will increase the resources available by scaling out. When the utilization falls, autoscaling can remove these resources."
-    - content: "Autoscaling is a scale out/scale in solution. The system can scale out when specified resource metrics indicate increasing usage, and scale in when these metrics drop."
+      explanation: "Incorrect. Autoscaling is an automated process that doesn't require manual intervention. You define autoscale rules, which monitor resource usage. When these rules determine that utilization exceeds a certain threshold, autoscaling increases available resources by scaling out. When utilization falls, autoscaling can remove these resources."
+    - content: "Autoscaling is a scale-out/scale-in solution. The system can scale out when specified resource metrics indicate increasing usage and scale in when these metrics drop."
       isCorrect: true
-      explanation: "This answer is correct"
+      explanation: "Correct."
     - content: "Autoscaling is an ideal solution for handling sudden bursts of activity that last for a few minutes."
       isCorrect: false
-      explanation: "No. Autoscaling takes time to add resources. A sudden burst of activity might have passed before the system can spin up the additional resources."
-    - content: "Scaling in and out provides better availability than autoscaling."
+      explanation: "Incorrect. Autoscaling takes time to add resources. A brief burst of activity might have passed before an autoscaling system can spin up more resources."
+    - content: "Scaling up and scaling down provides better availability than autoscaling."
       isCorrect: false
-      explanation: "No. Autoscaling increases availability by adding more instances of services. If one of these instances fails, the others should still be available. In a scale up solution, the failure of a single instance could stop the entire service."
-  - content: "Autoscaling enables a system to predict the resources that will be required to handle an increasing workload."
+      explanation: "Incorrect. Autoscaling increases availability by adding more instances of web services. If one instance fails, the others should still be available. In a scale-up/scale-down solution, the failure of a single instance could stop the entire service."
+  - content: "Autoscaling enables a system to predict the resources required to handle an increasing workload."
     choices:
     - content: "True"
       isCorrect: false
-      explanation: "Autoscaling is a reactive technology, not predictive. It can only make decisions on whether there are currently sufficient resources available to meet the current workload, based on metrics and schedules."
+      explanation: "Incorrect. Autoscaling is a reactive technology, not a predictive one. Autoscaling only makes decisions on whether sufficient resources are available to meet the current workload, based on metrics and schedules."
     - content: "False"
       isCorrect: True
-      explanation: "This answer is correct"
-  - content: "Which of these scenarios is a suitable candidate for autoscaling?"
+      explanation: "Correct."
+  - content: "Which of the following scenarios is a suitable candidate for autoscaling?"
     choices:
-    - content: "The number of users requiring access to an application varies according to a regular schedule. For example, more users use the system on a Friday than other days of the week."
+    - content: "The number of users requiring access to an application varies according to a regular schedule. For example, more users use the system on Fridays than on other days of the week."
       isCorrect: true
-      explanation: "This answer is correct"
-    - content: "The system is subject to a sudden influx of requests that grinds your system to a halt. The workload has increased exponentially and there appears to be no reason for this surge of activity."
+      explanation: "Correct."
+    - content: "The system experiences a sudden influx of requests that grinds your system to a halt. The workload has increased exponentially and there appears to be no reason for this surge of activity."
       isCorrect: false
-      explanation: "The increasing burst of activity could be caused by a Denial of Service attack that is attempting to overwhelm your system. Autoscaling wouldn't solve the problem. Filter these requests out using your security infrastructure before they reach the servers hosting your system."
+      explanation: "Incorrect. The sudden burst of activity could be caused by a denial-of-service attack that is attempting to overwhelm your system. Autoscaling wouldn't work quickly enough to solve the problem. Instead, use your security infrastructure to filter out these false requests before they reach the servers hosting your system."
     - content: "Over time, your service is becoming more popular, and you need to handle the increasing traffic."
       isCorrect: false
-      explanation: "In this scenario, manual scaling is likely to be a better option. The increased demand is long-lived and increasing."
-    - content: "Your organization is running a promotion and expects to see increased traffic to their web site for the next couple of weeks. Ensure sufficient resources are available to handle the demand expected when the promotion starts."
+      explanation: "Incorrect. In this scenario, manual scaling is likely to be a better option because the increased demand is long-lived and can be predicted."
+    - content: "Your organization is running a promotion and expects increased traffic to their website for the next couple of weeks. You want to ensure sufficient resources are available to handle the demand expected when the promotion starts."
       isCorrect: false
-      explanation: "Scale the system manually before the promotion starts, monitor the activity, and then scale back when the promotion finishes."
+      explanation: "Incorrect. You can scale up the system manually before the promotion starts, monitor the activity, and then scale back when the promotion finishes."

@@ -4,12 +4,14 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 06/07/2022
-  author: manekinekko
-  ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen, team=cloud_advocates
+  ms.date: 01/05/2024
+  author: diberry
+  ms.author: diberry
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - team=cloud_advocates
+    - devx-track-js
   ms.contributors: wachegha-11052021
 durationInMinutes: 2
 content: |

@@ -98,4 +98,4 @@ The cloud governance team has decided that enforcement of required Azure Policy 
 3.  Publish the blueprint definition.
 4.  Assign the `governance-baseline` blueprint definition to all subscriptions.
 
-See the [Azure Blueprints documentation](https://learn.microsoft.com/azure/governance/blueprints/overview) for more information on creating and using blueprint definitions.
+See the [Azure Blueprints documentation](/azure/governance/blueprints/overview) for more information on creating and using blueprint definitions.

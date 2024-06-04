@@ -3,21 +3,27 @@ uid: learn.wwl.integrate-identity-management-systems
 metadata:
   title: Integrate with identity management systems
   description: "Integrate with identity management systems"
-  ms.date: 11/01/2022
+  ms.date: 05/27/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Integrate with identity management systems
 summary: This module describes the integration with GitHub and single sign-on (SSO) for authentication, service principals, and managed service identities.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Integrate Azure DevOps with identity management systems
-  - Integrate GitHub with single sign-on (SSO)
-  - Understand and create a service principal
-  - Create managed service identities
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  -   Integrate Azure DevOps with identity management systems.
+
+  -   Integrate GitHub with single sign-on (SSO).
+
+  -   Understand and create a service principal.
+
+  -   Create managed service identities.
+prerequisites: None
 iconUrl: /training/achievements/7-integrate-identity-management-systems.svg
 levels:
 - advanced
@@ -45,8 +51,10 @@ subjects:
 units:
 - learn.wwl.integrate-identity-management-systems.introduction
 - learn.wwl.integrate-identity-management-systems.integrate-github-single-sign-sso
+- learn.wwl.integrate-identity-management-systems.design-implement-permissions-roles-github
+- learn.wwl.integrate-identity-management-systems.design-implement-permissions-security-groups
 - learn.wwl.integrate-identity-management-systems.explore-service-principals
-- learn.wwl.integrate-identity-management-systems.explore-managed-service-identities
+- learn.wwl.integrate-identity-management-systems.explore-managed-identity
 - learn.wwl.integrate-identity-management-systems.knowledge-check
 - learn.wwl.integrate-identity-management-systems.summary
 badge:

@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-github-actions.explore-events
-title: Explore events
+title: Explore Events
 metadata:
-  title: Explore events
-  description: "Explore events"
-  ms.date: 12/09/2022
+  title: Explore Events
+  description: "Explore Events"
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
 content: |
   [!include[](includes/6-explore-events.md)]

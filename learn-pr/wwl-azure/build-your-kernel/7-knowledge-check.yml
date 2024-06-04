@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-your-kernel.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your knowledge"
+  ms.date: 02/27/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary role of the Semantic Kernel SDK?"
+    choices:
+    - content: "Semantic Kernel SDK primarily functions as a standalone AI application."
+      isCorrect: false
+      explanation: "Incorrect. The Semantic Kernel SDK isn't a standalone AI application."
+    - content: "Semantic Kernel SDK acts as an AI orchestration layer between code and large language models."
+      isCorrect: true
+      explanation: "Correct. Semantic Kernel provides a layer for seamless integration with large language models."
+    - content: "Semantic Kernel SDK is exclusively designed for gaming applications."
+      isCorrect: false
+      explanation: "Incorrect. The Semantic Kernel SDK isn't exclusively designed for gaming applications."
+  - content: "What are connectors in the Semantic Kernel SDK?"
+    choices:
+    - content: "Connectors in the Semantic Kernel SDK refer to electrical components."
+      isCorrect: false
+      explanation: "Incorrect. Connectors in the Semantic Kernel SDK are not electrical components."
+    - content: "Connectors connect the application code to the internet."
+      isCorrect: false
+      explanation: "Incorrect. Connectors in the Semantic Kernel SDK aren't responsible for connecting the application code to the internet."
+    - content: "Connectors serve as the bridge between application code and AI models."
+      isCorrect: true
+      explanation: "Correct. Connectors facilitate the integration process."
+  - content: "Which of the following statements is true about the Semantic Kernel SDK?"
+    choices:
+    - content: "Semantic Kernel SDK adds unnecessary complexity and developers should avoid it."
+      isCorrect: false
+      explanation: "Incorrect. The Semantic Kernel SDK doesn't add unnecessary complexity."
+    - content: "Semantic Kernel SDK uses abstraction to reduce the learning curve of integration AI."
+      isCorrect: true
+      explanation: "Correct. Semantic Kernel SDK eases AI integration by providing abstraction and orchestration."
+    - content: "Semantic Kernel SDK is only suitable for advanced AI developers."
+      isCorrect: false
+      explanation: "Incorrect. The Semantic Kernel SDK is suitable for developers of all levels."

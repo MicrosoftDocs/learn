@@ -2,12 +2,11 @@
 uid: learn.intro-to-azure-lighthouse.5-video-publish-managed-service
 metadata:
   title: Publish a managed service offer on the Azure Marketplace
-  description: See how to publish on the Azure Marketplace and as a customer how you'd go about accepting and authorizing a service provider to manage your Azure instance.
-  ms.date: 02/09/2023
+  description: Learn how to publish on the Azure Marketplace, and how customers can accept and authorize a service provider to manage an Azure instance.
+  ms.date: 04/15/2024
   author: iankensey
   ms.author: socuff
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: socuff-04232021
 title: Publish a managed service offer on the Azure Marketplace

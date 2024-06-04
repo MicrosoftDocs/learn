@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.examine-iot-hub-message-routing
+metadata:
+  title: Examine Azure IoT Hub message routing
+  description: "This module introduces you to Azure IoT Hub message routing, the common set of message features implemented by Azure IoT Hub, Azure IoT Hub's service-facing endpoints, and the message routing query syntax."
+  ms.date: 02/06/2024
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.topic: module-standard-task-based
+  ms.service: iot-hub
+title: Examine Azure IoT Hub message routing
+summary: This module introduces you to Azure IoT Hub message routing, the common set of message features implemented by Azure IoT Hub, Azure IoT Hub's service-facing endpoints, and the message routing query syntax.
+abstract: |
+  After you complete this module, you'll be able to:
+  - Describe message processing concepts.
+  - Describe the common message features of Azure IoT Hub message routing.
+  - Describe the built-in and custom endpoints that can be used with Azure IoT Hub message routing.
+  - Describe the message routing query syntax.
+prerequisites: |
+  Ability to:
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Describe the features and capabilities of Azure IoT Hub.
+iconUrl: /training/achievements/iot-hub-message-routing.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-iot-hub
+subjects:
+- iot
+units:
+- learn.wwl.examine-iot-hub-message-routing.introduction
+- learn.wwl.examine-iot-hub-message-routing.review-message-processing-concepts
+- learn.wwl.examine-iot-hub-message-routing.examine-common-message-format
+- learn.wwl.examine-iot-hub-message-routing.examine
+- learn.wwl.examine-iot-hub-message-routing.built-endpoint
+- learn.wwl.examine-iot-hub-message-routing.examine-query-syntax
+- learn.wwl.examine-iot-hub-message-routing.knowledge-check
+- learn.wwl.examine-iot-hub-message-routing.summary
+badge:
+  uid: learn.wwl.examine-iot-hub-message-routing.badge

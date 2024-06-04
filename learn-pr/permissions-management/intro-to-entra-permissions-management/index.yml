@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.permissions-management.intro-to-entra-permissions-management
 metadata:
-  title: Introduction to Entra Permissions Management
+  title: Introduction to Microsoft Entra Permissions Management
   description: Permissions Management is a CIEM solution that provides complete visibility into permissions that are assigned to all identities. 
   ms.date: 03/15/2023
   author: jenniferf-skc
   ms.author: jfields
-  ms.topic: interactive-tutorial
-  ms.prod: learning-entra-permissions-management
-title: Introduction to Entra Permissions Management 
+  ms.topic: module-intro-to-product
+  ms.service: entra-permissions-management
+title: Introduction to Microsoft Entra Permissions Management 
 summary: Microsoft Entra Permissions Management gives security operation administrators insight into over-privileged workload and user identities, actions, and resources across multicloud infrastructures.
 abstract: |
   By the end of this module, you'll be able to:
@@ -37,4 +37,3 @@ units:
 - learn.permissions-management.intro-to-entra-permissions-management.summary
 badge:
   uid: learn.permissions-management.intro-to-entra-permissions-management.badge
-

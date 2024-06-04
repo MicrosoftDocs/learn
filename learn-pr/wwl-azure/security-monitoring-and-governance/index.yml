@@ -3,21 +3,27 @@ uid: learn.wwl.security-monitoring-and-governance
 metadata:
   title: Security Monitoring and Governance
   description: "Security Monitoring and Governance"
-  ms.date: 11/16/2022
+  ms.date: 05/13/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Security Monitoring and Governance
 summary: This module describes security monitoring and governance with Microsoft Defender for Cloud and its usage scenarios, Azure Policies, Microsoft Defender for Identity, and security practices related to the tools.
 abstract: |
-  By the end of this module, you'll be able to:
-  *   Configure Microsoft Defender for Cloud
-  *   Understand Azure policies
-  *   Describe initiatives, resource locks and Azure Blueprints
-  *   Work with Microsoft Defender for Identity
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  -   Configure Microsoft Defender for Cloud.
+
+  -   Understand Azure policies.
+
+  -   Describe initiatives, resource locks and Azure Blueprints.
+
+  -   Work with Microsoft Defender for Identity.
+prerequisites: None
 iconUrl: /training/achievements/azure-security-center-introduction.svg
 levels:
 - advanced
@@ -51,8 +57,9 @@ units:
 - learn.wwl.security-monitoring-and-governance.understand-policies
 - learn.wwl.security-monitoring-and-governance.explore-initiatives
 - learn.wwl.security-monitoring-and-governance.explore-resource-locks
-- learn.wwl.security-monitoring-and-governance.explore-azure-blueprints
 - learn.wwl.security-monitoring-and-governance.understand-microsoft-defender-identity
+- learn.wwl.security-monitoring-and-governance.integrate-github-advanced-security-microsoft-defender
+- learn.wwl.security-monitoring-and-governance.configure-github-advanced-security-github
 - learn.wwl.security-monitoring-and-governance.knowledge-check
 - learn.wwl.security-monitoring-and-governance.summary
 badge:

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql.explore-sentiment-analysis
+title: Explore sentiment analysis
+metadata:
+  title: Explore sentiment analysis
+  description: "Explore sentiment analysis"
+  ms.date: 04/26/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-explore-sentiment-analysis.md)]

@@ -6,9 +6,11 @@ metadata:
   ms.date: 02/02/2023
   author: sethmanheim
   ms.author: sethm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: femila
+  ms.topic: module
   ms.custom: e2e-hybrid
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hci
 title: Introduction to Azure Stack HCI core technologies
 summary: This module introduces Azure Stack HCI technologies. You'll learn about the core Azure Stack HCI technologies, including Hyper-V, software-defined storage, and software-defined networking. 
 abstract: | 
@@ -34,7 +36,7 @@ products:
 - azure-stack-hci
 - windows-server
 subjects:
-- data-warehousing
+- data-storage
 units:
 - learn.azure.azure-stack-hci-technologies.1-introduction
 - learn.azure.azure-stack-hci-technologies.2-hyper-v

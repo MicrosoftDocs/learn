@@ -1,1 +1,0 @@
-Your team will be responsible for supporting the implementation of Azure Time Series Insights within the company's IoT solution. The experience that you have gained by configuring a Time Series Insights environment and viewing IoT time series data in the test environment will help to ensure successful TSI implementation within the production environment.

@@ -1,7 +1,3 @@
-
-
-
-
 The `try-catch` pattern consists of a `try` block followed by one or more `catch` clauses. Each `catch` clause specifies the handler for a different exception type.
 
 When an exception is thrown, the common language runtime (CLR) searches for a `catch` clause that can handle the exception. If the currently executing method doesn't contain a `catch` clause that can handle the exception type thrown, the CLR searches the method that called the current method. The search continues down through the call stack until a suitable `catch` clause is found. If no `catch` clause is found to handle the exception, the CLR displays an unhandled exception message to the user and stops the execution of the program.
@@ -26,7 +22,7 @@ Your first step is to create a code project that you use during this module.
 
     You will use a .NET CLI command to create a new console app.
 
-1. At the TERMINAL panel command prompt, enter the following command:
+1. At the TERMINAL panel command prompt, enter the following commands:
 
     ```dotnetcli
     dotnet new console
@@ -38,11 +34,9 @@ Your first step is to create a code project that you use during this module.
 
 1. Use the Visual Studio Code EXPLORER view to open the Program.cs file.
 
-1. After a few seconds, notice that a dialog box is displayed asking if you want to load the assets required for building and debugging.
+1. On the View menu, select **Command Palette**.
 
-    Visual Studio Code recognizes the C# file extension, `.cs`, and recognizes that your "Exceptions101" project is missing the required assets.
-
-1. To load the required assets, select **Yes**.
+1. At the command prompt, enter **.net: g** and then select **.NET: Generate Assets for Build and Debug**.
 
 1. Replace the content of the Program.cs file with the following code:
 

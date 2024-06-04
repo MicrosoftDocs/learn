@@ -2,13 +2,15 @@
 uid: learn.azure-scale-azure-sql-databases-elastic-pools.manage-elastic-pools
 metadata:
   title: Manage SQL elastic pools performance and cost
-  description: Manage SQL elastic pools performance and cost
-  ms.date: 5/03/2019
+  description: Learn how to manage Azure SQL elastic pools performance and cost.
+  ms.date: 12/15/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Manage SQL elastic pools performance and cost
 durationInMinutes: 7
 content: |

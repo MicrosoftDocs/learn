@@ -3,11 +3,10 @@ uid: learn.language.go-data-types.1-arrays
 metadata:
   title: Exercise - Use arrays
   description: Learn about arrays and how to use them in Go programs.
-  ms.date: 01/20/2021
+  ms.date: 01/27/2023
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Exercise - Use arrays
 durationInMinutes: 8

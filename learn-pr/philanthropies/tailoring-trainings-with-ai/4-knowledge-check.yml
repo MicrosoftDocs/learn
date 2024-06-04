@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.introduction-to-ai-for-trainers.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This module explores fundamental concepts in artificial intelligence (AI) and machine learning.
+  ms.date: 01/24/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+  ms.service: artificial-intelligence
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "Which of the following is an example of how AI content creation tools can be used to translate learning content for learners with diverse language proficiency levels?"
+      choices:
+        - content: "Learners can use speech synthesis to listen to concepts in different languages."
+          isCorrect: false
+          explanation: "Incorrect. Speech synthesis can help learners listen to concepts in different languages, but it doesn't help them understand or produce in those languages."
+        - content: "Learners can use voice recognition to speak answers instead of typing them."
+          isCorrect: false
+          explanation: "Incorrect. Voice recognition can be leveraged to facilitate learning interactions. It can help learners express their answers more easily and naturally, and also improve their speaking skills."
+        - content: "Learners can use real-time translation to understand concepts in their native languages."
+          isCorrect: true
+          explanation: "Correct: Real-time translation can help learners access and comprehend content that isn't available in their native language, and also improve their language skills by exposing them to different languages."
+    - content: "If a learner excels in a subject, how might an AI-powered learning software respond according to the text?"
+      choices:
+        - content: "The software provides the learner with similar exercises for reinforcement."
+          isCorrect: false
+          explanation: "Incorrect. This wouldn't challenge the learner."
+        - content: "The software gives the learner more advanced challenges."
+          isCorrect: true
+          explanation: "Correct. The AI software would provide more challenging exercises to help the learner develop in the specific subject."
+        - content: "The software suggests the learner switch subjects."
+          isCorrect: false
+          explanation: "Incorrect. An AI-powered learning software would not support a learner's interest in switching subjects. This would disrupt the learner's development in the current subject."
+    - content: "According to the text, how does AI-driven storytelling software enhance learning engagement?"
+      choices:
+        - content: "By providing learners with prewritten stories to read."
+          isCorrect: false
+          explanation: "Incorrect. Providing prewritten stories wouldn't allow learners to express their creativity or voice in storytelling."
+        - content: "By enabling learners to create digital stories and receive instant feedback."
+          isCorrect: true
+          explanation: "Correct. This allows learners to be expressive and creative. The software would also provide feedback and guidance on how the learner can improve their storytelling skills."
+        - content: "By narrating textbooks and instructional materials to learners."
+          isCorrect: false
+          explanation: "Incorrect. Narration doesn't involve learners in the creation or consumption of stories."

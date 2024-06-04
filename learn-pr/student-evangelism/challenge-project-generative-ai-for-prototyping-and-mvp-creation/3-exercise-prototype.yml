@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.exercise-prototype
+title: Exercise - Using Microsoft Copilot to give you ideas on how to build your prototype
+metadata:
+  title: Exercise - Using Microsoft Copilot to give you ideas on how to build your prototype
+  description: "Exercise - Using Microsoft Copilot to give you ideas on how to build your prototype"
+  ms.date: 12/04/2023
+  author: bethanyjep
+  ms.author: bethanycheum
+  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.service: microsoft-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-prototype.md)]

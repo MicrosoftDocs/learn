@@ -4,12 +4,11 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 08/08/2022
+  description: "Use KQL to answer operational and business questions by interpreting and summarizing log data."
+  ms.date: 02/11/2024
   author: guywi-ms
   ms.author: guywild
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

@@ -4,12 +4,12 @@ title: Set up communication between IoT Hub and IoT Edge
 metadata:
   title: Set up communication between IoT Hub and IoT Edge
   description: In this unit, we provide the definition of resource group, how to create an IoT Edge device, an IoT Hub, and how to set up communication between IoT Edge and IoT Hub
-  ms.date: 12/5/2019
-  author: leestott
+  ms.date: 11/27/2023
+  author: PatAltimore
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
+  ms.topic: unit
   ms.custom: team=nextgen
+  ms.service: iot-hub
 durationInMinutes: 7 # dummy number at present
 content: |
   [!include[](includes/3-how-setup-communication.md)]

@@ -4,11 +4,10 @@ title: Exercise - View in MR and View in 3D
 metadata:
   title:  Exercise - View in MR and View in 3D 
   description: You'll be able to design the main pages of the application like splash screen, product page and so on.
-  ms.date: 10/19/2021
+  ms.date: 04/23/2024
   author: "Sean-Kerawala"
-  ms.author: "sekerawa"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.author: "vinnietieto"
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-view-mr-3d.md)]

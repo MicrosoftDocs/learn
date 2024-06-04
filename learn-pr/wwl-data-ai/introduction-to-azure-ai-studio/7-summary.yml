@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-azure-ai-studio.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary of key learning points for Azure AI Studio."
+  ms.date: 05/08/2024
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+  ms.custom:
+    - ignite-2023
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

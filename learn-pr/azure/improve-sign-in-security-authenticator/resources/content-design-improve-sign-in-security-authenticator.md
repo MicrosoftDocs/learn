@@ -1,6 +1,6 @@
 # Title
 
-Improve sign-in security by registering Microsoft Authenticator for Azure Active Directory (Azure AD) users
+Improve sign-in security by registering Microsoft Authenticator for Microsoft Entra users
 
 ## Role(s)
 
@@ -13,16 +13,16 @@ Security Operations Analyst
 
 ## Product(s)
 
-- Azure Active Directory
+- Microsoft Entra ID
 
 ## Prerequisites
 
-- Experience using the Azure AD portal.
-- Knowledge of Azure Active Directory (Azure AD) fundamentals, including multifactor authentication (MFA).
+- Experience using the Microsoft Entra admin center.
+- Knowledge of Microsoft Entra fundamentals, including multifactor authentication (MFA).
 
 ## Summary
 
-Review security considerations for different authentication methods for Azure AD. For better sign-in security, run a campaign to have users set up Microsoft Authenticator whenever they sign in.
+Review security considerations for different authentication methods for Microsoft Entra ID. For better sign-in security, run a campaign to have users set up Microsoft Authenticator whenever they sign in.
 
 ## Learning objectives
 
@@ -70,11 +70,13 @@ Identify the subtasks of module title.
 1. Understand authentication method strength and security 
 
    
-   ## What authentication and verification methods are available in Azure Active Directory?
+   <a name='what-authentication-and-verification-methods-are-available-in-azure-active-directory'></a>
 
-   As part of the sign-in experience for accounts in Azure Active Directory (Azure AD), users can authenticate themselves in different ways. A username and password is the most common way. With modern authentication and security features in Azure AD, that basic password should be supplemented or replaced with more secure authentication methods.
+## What authentication and verification methods are available in Microsoft Entra ID?
 
-   ![Diagram of the strengths and preferred authentication methods in Azure AD](media/concept-authentication-methods/authentication-methods.png)
+   As part of the sign-in experience for accounts in Microsoft Entra ID, users can authenticate themselves in different ways. A username and password is the most common way. With modern authentication and security features in Microsoft Entra ID, that basic password should be supplemented or replaced with more secure authentication methods.
+
+   ![Diagram of the strengths and preferred authentication methods in Microsoft Entra ID](media/concept-authentication-methods/authentication-methods.png)
 
    **Microsoft Authenticator**
 
@@ -96,7 +98,7 @@ Identify the subtasks of module title.
 
    Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices, but could also use Bluetooth or NFC. With a hardware device that handles the authentication, the security of an account is increased as there's no password that could be exposed or guessed.
 
-   FIDO2 security keys can be used to sign in to their Azure AD or hybrid Azure AD joined Windows 10 devices and get single-sign on to their cloud and on-premises resources. Users can also sign in to supported browsers. FIDO2 security keys are a great option for enterprises who are very security sensitive or have scenarios or employees who aren't willing or able to use their phone as a second factor.
+   FIDO2 security keys can be used to sign in to their Microsoft Entra ID or Microsoft Entra hybrid joined Windows 10 devices and get single-sign on to their cloud and on-premises resources. Users can also sign in to supported browsers. FIDO2 security keys are a great option for enterprises who are very security sensitive or have scenarios or employees who aren't willing or able to use their phone as a second factor.
 
    *image*
    
@@ -104,9 +106,9 @@ Identify the subtasks of module title.
 
    OATH TOTP (Time-based One Time Password) is an open standard that specifies how one-time password (OTP) codes are generated. OATH TOTP can be implemented using either software or hardware to generate the codes. 
 
-   Software OATH tokens are typically applications such as Microsoft Authenticator and other authenticator apps. Azure AD generates the secret key, or seed, that's input into the app and used to generate each OTP. Microsoft Authenticator automatically generates codes when set up to do push notifications so a user has a backup even if their device doesn't have connectivity. 
+   Software OATH tokens are typically applications such as Microsoft Authenticator and other authenticator apps. Microsoft Entra ID generates the secret key, or seed, that's input into the app and used to generate each OTP. Microsoft Authenticator automatically generates codes when set up to do push notifications so a user has a backup even if their device doesn't have connectivity. 
 
-   OATH-TOTP SHA-1 hardware tokens refresh codes every 30 or 60 seconds. Customers can purchase these tokens from the vendor of their choice. OATH TOTP hardware tokens typically come with a secret key, or seed, pre-programmed in the token. These keys must be input into Azure AD.
+   OATH-TOTP SHA-1 hardware tokens refresh codes every 30 or 60 seconds. Customers can purchase these tokens from the vendor of their choice. OATH TOTP hardware tokens typically come with a secret key, or seed, pre-programmed in the token. These keys must be input into Microsoft Entra ID.
 
    **SMS**
 
@@ -118,7 +120,7 @@ Identify the subtasks of module title.
   
    ## Compare security
 
-   The following table summarizes user considerations for each Azure AD authentication method. Usability refers to how easily users can sign-in with that method. For example, OATH tokens can only be used as a secondary form of verification. Availability refers to the number of environments where users can sign-in with that method. Some environments don't allow phones to be used for verification, which makes SMS ans Voice call less available. 
+   The following table summarizes user considerations for each Microsoft Entra authentication method. Usability refers to how easily users can sign-in with that method. For example, OATH tokens can only be used as a secondary form of verification. Availability refers to the number of environments where users can sign-in with that method. Some environments don't allow phones to be used for verification, which makes SMS ans Voice call less available. 
 
    | Authentication method          | Security | Usability | Availability |
    |--------------------------------|:--------:|:---------:|:------------:|
@@ -141,9 +143,9 @@ Identify the subtasks of module title.
 
    **Exercise: Verify remote employees are enabled for Microsoft Authenticator**
 
-   Before enabling a registration campaign, make sure prerequisites are complete. Only users who are enabled for Azure AD MFA will be prompted to register Microsoft Authenticator, so check that Azure AD MFA is enabled for the tenant. The users also need to be enabled to use Microsoft Authenticator for authentication, and the Authentication mode must be set to **Any** or **Push**. 
+   Before enabling a registration campaign, make sure prerequisites are complete. Only users who are enabled for Microsoft Entra multifactor authentication will be prompted to register Microsoft Authenticator, so check that Microsoft Entra multifactor authentication is enabled for the tenant. The users also need to be enabled to use Microsoft Authenticator for authentication, and the Authentication mode must be set to **Any** or **Push**. 
 
-   1. In the Azure AD portal, click **Security** > **Authentication methods** > **Policies**. 
+   1. In the Microsoft Entra admin center, click **Security** > **Authentication methods** > **Policies**. 
    1. Click **Microsoft Authenticator**, click **Enabled**, select **Remote employees**.
    1. In the contextual menu, click **Configure**, set **Authentication mode** to **Any** or **Push**, and click **Done**. 
    1. Click **Save**.
@@ -154,19 +156,19 @@ Identify the subtasks of module title.
    - Create a test user account
    - Enable authentication methods for the test user 
 
-   You can enable the the registration campaign in the Azure AD portal.
+   You can enable the the registration campaign in the Microsoft Entra admin center.
 
    The registration campaign can apply to only a single group, but it can contain other groups. 
 
    If you want to nudge users during each MFA attempt, set the snooze to 0.
 
-   **Exercise: Enable the registration campaign using the Azure AD portal**
+   **Exercise: Enable the registration campaign using the Microsoft Entra admin center**
 
-   The easiest way to create the registration campaign is to use the Azure AD portal. You can also use Microsoft Graph API if you want to include the task of registering users for Microsoft Authenticator as part of any automation you have in place for adding new employees. 
+   The easiest way to create the registration campaign is to use the Microsoft Entra admin center. You can also use Microsoft Graph API if you want to include the task of registering users for Microsoft Authenticator as part of any automation you have in place for adding new employees. 
 
    Your company is specifically concerned about sign-ins from users in your **Remote employees** security group. Let's use the portal to enable a registration campaign for that group. 
 
-   1. In the Azure AD portal, sign in as either authentication policy administrator or global administrator.
+   1. In the Microsoft Entra admin center, sign in as either authentication policy administrator or global administrator.
    1. Click **Security** > **Authentication methods** > **Registration campaign**.
    1. Change **State** to **Enabled**.
    1. For **Day allowed to snooze**, select **0 days**. Remote employees will be prompted to set up Microsoft Authenticator every time the sign in. 
@@ -181,7 +183,7 @@ Identify the subtasks of module title.
 
    Create a user account for the purposes of testing the Microsoft Authenticator registration campaign.
 
-   1. Sign in to the Azure portal, click **Azure Active Directory** > **Manage** > **Users**.
+   1. Sign in to the Azure portal, click **Microsoft Entra ID** > **Manage** > **Users**.
    1. Select **New user** at the top of the pane.
    1. In the **User name** field, enter the username of the user account. For example, `contosouser1@contoso.com`. Be sure to change `contoso.com` to the name of the tenant domain.
    1. In the **Name** field, enter the name of the user of the account. For example, `contosouser1`.

@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Learn how to use GitHub Actions and workflows to implement a CD solution that deploys a container-based web app to Microsoft Azure Web Apps.
-  ms.date: 05/19/2020
+  ms.date: 11/02/2023
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

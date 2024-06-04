@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.identify-sap-certified-configurations.discover-supported-azure-virtual-machine-types-for-sap-products-windows-linux
-title: Discover supported Azure virtual machines for SAP products on Windows and Linux
+title: Discover supported Azure Virtual Machines for SAP products on Windows and Linux
 metadata:
-  title: Discover supported Azure virtual machines for SAP products on Windows and Linux
-  description: "Discover supported Azure virtual machines for SAP products on Windows and Linux"
-  ms.date: 04/21/2023
+  title: Discover supported Azure Virtual Machines for SAP products on Windows and Linux
+  description: "Discover supported Azure Virtual Machines for SAP products on Windows and Linux"
+  ms.date: 02/14/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 5
 content: |
   [!include[](includes/4-discover-supported-azure-virtual-machine-types.md)]

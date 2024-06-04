@@ -1,12 +1,12 @@
 The external and internal developer teams want to work together, so you decide to create guest user access for the external developer team. 
 
-Use the Azure portal to invite business-to-business (B2B) collaboration users. You can invite guest users to an Azure Active Directory (Azure AD) organization, group, or application. After you invite a user, their account is added to Azure AD, with a guest user type.
+Use the Azure portal to invite business-to-business (B2B) collaboration users. You can invite guest users to a Microsoft Entra organization, group, or application. After you invite a user, their account is added to Microsoft Entra ID, with a guest user type.
 
 After you add a guest user to the organization, send them a direct link to a shared app. Have the guest user open the redemption URL in the invitation email.
 
 ## Add guest users to the organization
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and under **Azure services**, select **Azure Active Directory**. The **Overview** pane for your Azure AD appears.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and under **Azure services**, select **Microsoft Entra ID**. The **Overview** pane for your Microsoft Entra ID appears.
 
 1. In the left menu pane, under **Manage**, select **Users**. The **All users** pane appears.
 
@@ -16,15 +16,13 @@ After you add a guest user to the organization, send them a direct link to a sha
 
    The **New user** pane opens.
 
-1. Confirm **Invite user** is selected.
+1. Enter a display name and an email address to which you have access.
 
-1. Enter a name and an email address that you have access to.
-
-1. Select **Invite**. An invitation is sent to the email address you provided for the guest user. The **All users** pane appears. Notice that the user now appears in the list of users and has *Guest* as **User type**.
+1. Select **Review + invite**, then select **Invite**. An invitation is sent to the email address you provided for the guest user. The **All users** pane appears. Notice that the user now appears in the list of users and has *Guest* as **User type**. You might need to refresh to see the new user.
 
 ## Add guest users to a group
 
-1. In your Azure AD organization overview page, in the left menu pane, under **Manage**, select **Groups**. The **All groups** pane appears.
+1. In your Microsoft Entra organization overview page, in the left menu pane, under **Manage**, select **Groups**. The **All groups** pane appears.
 
 1. Search for and select **Developer group** in the list of groups. The **Developer group** pane appears.
 
@@ -36,19 +34,19 @@ After you add a guest user to the organization, send them a direct link to a sha
 
 1. Select the account, and select **Select**. The **Members** pane for your developer group appears.
 
-   You now see the user in the list of members for this group.
+   You now see the user in the list of members for this group. You might need to refresh to see the new user.
 
 ## Add guest users to an application
 
-1. Go to your Azure AD organization, and in the left menu pane, under **Manage**, select **Enterprise applications**. The **Enterprise applications | All applications** pane appears.
+1. Go to your Microsoft Entra organization, and in the left menu pane, under **Manage**, select **Enterprise applications**. The **Enterprise applications | All applications** pane appears.
 
 1. On the top menu bar, select **New application**.
 
    :::image type="content" source="../media/7-enterprise-application.png" alt-text="Screenshot that shows the New Application button.":::
 
-   The **Browse Azure AD Gallery** pane appears.
+   The **Browse Microsoft Entra Gallery** pane appears.
 
-1. Search for and select **DocuSign**. The **Docusign** pane appears.
+1. Search for and select **DocuSign**. Once the app is added, the **Docusign** pane appears.
 
 1. Select **Create**. The **Docusign | Overview** pane appears.
 
@@ -92,12 +90,10 @@ You've now added a guest user to an application.
 
 If the guest user didn't receive the first email invitation, you can resend an invitation email.
 
-1. In your Azure AD organization, in the left menu pane, under **Manage**, select **Users**. The **All users** pane appears.
+1. In your Microsoft Entra organization, in the left menu pane, under **Manage**, select **Users**. The **All users** pane appears.
 
 1. Select the user. The **Profile** pane for the user appears.
 
-1. Under the **B2B collaboration** section, select the **Manage (resend invitation / reset status)** link. The **Manage invitations** pane appears.
+1. Scroll down to the **B2B invitation** box and select the **Resend invitation** link.
 
-1. Under **Email invitations** for **Resend invite**, select **Yes**, and then select **Yes** to confirm resending the invitation. The **Manage invitations** pane reappears.
-
-1. Select **Done**.
+1. Select **Resend**.

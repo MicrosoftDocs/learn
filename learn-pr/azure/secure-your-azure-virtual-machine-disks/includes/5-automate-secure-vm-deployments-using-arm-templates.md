@@ -6,7 +6,7 @@ Here, you'll look at how to use an Azure Resource Manager template to automatica
 
 Resource Manager templates are JSON files used to define a set of resources to deploy to Azure. You can write them from scratch, and for some Azure resources (including VMs), you can use the Azure portal to generate them. You'll need to complete the required information for a manual VM deployment, but instead of deploying the VM to Azure, you'll save the template. You can then *reuse* the template to create that specific VM configuration.
 
-To automate all sorts of administrative tasks, there are [example templates available](https://azure.microsoft.com/resources/templates). In fact, you could have used one of these templates to encrypt your VM that you just did manually!
+To automate all sorts of administrative tasks, there are [example templates available](https://azure.microsoft.com/resources/templates). In fact, you could have used one of these templates to encrypt your VM that you just did manually.
 
 ![Screenshot showing the Azure templates.](../media/5-browse-templates.png)
 
@@ -24,11 +24,11 @@ You can then execute the template to create, modify, or remove resources.
 
 ### Run templates in Azure portal
 
-If you already know the template you want to use, or you have saved templates in your Azure account, you can use the **Create a resource** > **Template Deployment** resource to locate and run defined templates in the portal. You can search through templates by name, edit a template to change the parameters or behavior, and execute the template right from the GUI.
+If you already know the template you want to use or you have saved templates in your Azure account, you can use the **Create a resource** > **Template Deployment** resource to locate and run defined templates in the portal. You can search through templates by name, edit a template to change the parameters or behavior, and execute the template right from the GUI.
 
 ### Run templates from command line
 
-Given a URL to a template, you can execute it with Azure PowerShell. For example, you could run the disk encryption template with the following PowerShell command:
+Given a template's URL, you can execute it with Azure PowerShell. For example, you could run the disk encryption template with the following PowerShell command:
 
 ```powershell
 New-AzResourceGroupDeployment `

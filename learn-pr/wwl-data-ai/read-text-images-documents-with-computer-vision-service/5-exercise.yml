@@ -4,13 +4,12 @@ title: Exercise - Read text in images
 metadata:
   title: Exercise - Read text in images
   description: "Exercise - Read text in images"
-  ms.date: 10/20/2022
+  ms.date: 02/05/2024
   author: wwlpublish
-  ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: unit
 azureSandbox: false
-labId: 97055
+labId: 152408
 labModal: true
 durationInMinutes: 20
 content: |

@@ -3,13 +3,12 @@ uid: learn.azure-sql-deploy-configure.4-exercise-verify-database
 metadata:
   title: Exercise - Verify Azure SQL Database
   description: Exercise - Verify Azure SQL Database
-  ms.date: 03/15/2023
+  ms.date: 10/16/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Verify Azure SQL Database
 durationInMinutes: 10
-azureSandbox: true
+azureSandbox: false
 content: |
   [!include[](includes/4-exercise-verify-database.md)]

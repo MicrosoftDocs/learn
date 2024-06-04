@@ -4,27 +4,27 @@ metadata:
   moduleType: choose
   title: Choose the best networking plugin for AKS
   description: "Learn how to choose between Azure CNI and kubenet, two networking plugin options for an Azure Kubernetes Service cluster."
-  ms.date: 03/23/2022
-  author: nickomang
-  ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.date: 03/18/2024
+  author: schaffererin
+  ms.author: schaffererin
+  ms.topic: module-choose-best-product
+  ms.service: azure-kubernetes-service
 title: Choose the best networking plugin for AKS
 summary: "Understand the key differences and considerations when selecting between Azure CNI and kubenet, two networking plugin options for an Azure Kubernetes Service cluster."
 abstract: |
   By the end of this module, you'll be able to:
-    - "Understand what a Kubernetes network plugin is"
-    - "Understand the pros, cons, and limitations of kubenet"
-    - "Know how to deploy an AKS cluster with kubenet"
-    - "Understand the pros, cons, and limitations of Azure CNI"
-    - "Know how to deploy an AKS cluster with Azure CNI"
+    - Understand what a Kubernetes network plugin is
+    - Understand the pros, cons, and limitations of kubenet
+    - Know how to deploy an AKS cluster with kubenet
+    - Understand the pros, cons, and limitations of Azure CNI
+    - Know how to deploy an AKS cluster with Azure CNI
 prerequisites: |
-  - "A basic understanding of Azure Kubernetes Service concepts such as the Kubernetes API, clusters, and pods"
-  - "Familiarity with basic networking concepts like CIDR, IP address allocation and NAT"
-  - "A Basic understanding of Azure Virtual Networks"
+  - Basic understanding of Azure Kubernetes Service concepts such as the Kubernetes API, clusters, and pods
+  - Familiarity with basic networking concepts like CIDR, IP address allocation and NAT
+  - Basic understanding of Azure Virtual Networks
 iconUrl: /training/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
-  - intermediate
+  - beginner
 roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - network-engineer
 products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
@@ -35,8 +35,7 @@ units:
 - learn.choose-best-networking-plugin-for-aks.introduction
 - learn.choose-best-networking-plugin-for-aks.identify-plugin-options
 - learn.choose-best-networking-plugin-for-aks.analyze-decision-criteria
-- learn.choose-best-networking-plugin-for-aks.use-kubenet
-- learn.choose-best-networking-plugin-for-aks.use-azure-container-networking-interface
+- learn.choose-best-networking-plugin-for-aks.use-scenario
 - learn.choose-best-networking-plugin-for-aks.knowledge-check
 - learn.choose-best-networking-plugin-for-aks.summary
 badge:

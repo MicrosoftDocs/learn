@@ -1,4 +1,3 @@
-
 In modern enterprises, the increase in collaboration between both internal and external users and the proliferation of employee-owned devices, known as BYOD, has increased the risk of accidental or malicious data leakage. This risk has grown with the expanded use of mobile apps, cloud-based services, and social media.
 
 Traditionally, enterprises have controlled access to data by assigning credentials to users and configuring permissions and access lists on resources. However, user access control doesn't prevent authorized users from accidentally sharing files or sending data in emails, leading to new protection systems. Also, most technologies based on authentication/authorization for protection are location-dependent, meaning they usually work only while data is in a company-controlled environment.

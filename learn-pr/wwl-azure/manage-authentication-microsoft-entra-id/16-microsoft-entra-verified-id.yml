@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-verified-id
+title: Introduction to Microsoft Entra Verified ID
+metadata:
+  title: Introduction to Microsoft Entra Verified ID
+  description: "Introduction to Microsoft Entra Verified ID"
+  ms.date: 05/29/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/16-microsoft-entra-verified-id.md)]

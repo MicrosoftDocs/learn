@@ -3,11 +3,10 @@ uid: learn.aks-secrets-configure-app.5-exercise-create-configmaps
 metadata:
   title: Exercise - Enhance the application with configmaps
   description: In this exercise, you'll deploy the application frontend using configurations provided by a configmap.
-  ms.date: 12/16/2020
+  ms.date: 01/26/2024
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 sandbox: false
 # interactive: bash
 # sandbox: true

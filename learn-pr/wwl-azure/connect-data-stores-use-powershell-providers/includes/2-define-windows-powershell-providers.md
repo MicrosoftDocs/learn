@@ -14,3 +14,4 @@ Some common providers include:
 - FileSystem. Provides access to the files and folders in the file system.
 - Function. Provides access to Windows PowerShell functions loaded into memory.
 - Variable. Provides access to Windows PowerShell variables and their values loaded into memory.
+

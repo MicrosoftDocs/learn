@@ -4,11 +4,10 @@ title: Identity and Access Control
 metadata:
   title: Identity and Access Control
   description: In this unit, you'll learn about the various identity and access control options that are available for Azure Files.
-  ms.date: 08/30/2022
-  author: kendownie
+  ms.date: 11/10/2023
+  author: khdownie
   ms.author: kendownie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/4-identity-and-access-control.md)]

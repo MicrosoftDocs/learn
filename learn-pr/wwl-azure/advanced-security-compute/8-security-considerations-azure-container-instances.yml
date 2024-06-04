@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.advanced-security-compute.security-considerations-azure-container-instances
+title: Configure security for Azure Container Apps (ACAs)
+metadata:
+  title: Configure security for Azure Container Apps (ACAs)
+  description: "Configure security for Azure Container Apps (ACAs)"
+  ms.date: 05/02/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-security-considerations-azure-container-instances.md)]

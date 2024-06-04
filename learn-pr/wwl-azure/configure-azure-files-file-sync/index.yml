@@ -2,28 +2,35 @@
 uid: learn.wwl.configure-azure-files-file-sync
 metadata:
   title: Configure Azure Files and Azure File Sync
-  description: "Learn how to configure Azure Files and Azure File Sync."
-  ms.date: 03/30/2023
+  description: Learn how to configure Azure Files for SMB cloud file shares and how to use Azure File Sync to transform Windows Server into a quick cache of your Azure file share.
+  ms.date: 04/04/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure-file-storage
+  ai-usage: ai-assisted
 title: Configure Azure Files and Azure File Sync
 summary: Learn how to configure Azure Files and Azure File Sync.
 abstract: |
   In this module, you learn how to:
-  - Identify storage for file shares and blob data.
-  - Configure Azure Files shares and file share snapshots.
-  - Identify features and usage cases of Azure File Sync.
-  - Identify Azure File Sync components and configuration steps.
-prerequisites: |
-  None
+
+  -   Identify storage for file shares versus blob data.
+
+  -   Configure Azure file shares and file share snapshots.
+
+  -   Identify features and use cases of Azure File Sync.
+
+  -   Identify Azure File Sync components and configuration steps.
+prerequisites: None
 iconUrl: /training/achievements/azure-file-sync-configure.svg
 levels:
 - intermediate
 roles:
 - administrator
 products:
+- azure
 - azure-files
 subjects:
 - cloud-computing
@@ -32,8 +39,8 @@ units:
 - learn.wwl.configure-azure-files-file-sync.compare-files-to-blobs
 - learn.wwl.configure-azure-files-file-sync.manage-file-shares
 - learn.wwl.configure-azure-files-file-sync.create-file-share-snapshots
-- learn.wwl.configure-azure-files-file-sync.implement
-- learn.wwl.configure-azure-files-file-sync.identify-components
+- learn.wwl.configure-azure-files-file-sync.implement-soft-delete
+- learn.wwl.configure-storage-tools.use-storage-explorer1
 - learn.wwl.configure-azure-files-file-sync.setup
 - learn.wwl.configure-azure-files-file-sync.knowledge-check
 - learn.wwl.configure-azure-files-file-sync.summary-resources

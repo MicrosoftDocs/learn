@@ -2,21 +2,27 @@
 uid: learn.wwl.understand-write-ahead-logging
 metadata:
   title: Understand write-ahead logging
-  description: "Azure Database for PostgreSQL is an ACID compliant database service. Write ahead logging ensures changes are both atomic and durable (the A and D in ACID). Changes are first written to the log before they are committed to the database. In this module you learn how Azure Database for PostgreSQL implements write ahead logging, and how the log can be used for replication and logical decoding."
-  ms.date: 10/03/2022
+  description: "Azure Database for PostgreSQL is an ACID compliant database service. Write-ahead logging ensures changes are both atomic and durable (the A and D in ACID). Changes are first written to the log before they're committed to the database. In this module, you learn how Azure Database for PostgreSQL implements write-ahead logging, and how the log can be used for replication and logical decoding."
+  ms.date: 05/10/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: postgresql
+  ai-usage: human-only
 title: Understand write-ahead logging
 summary: Azure Database for PostgreSQL is an ACID compliant database service. Write-ahead logging ensures changes are both atomic and durable. In this module, you learn how Azure Database for PostgreSQL implements write-ahead logging.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe write-ahead logging.
-  - Describe replication and logical decoding.
+
+  -   Describe write-ahead logging.
+
+  -   Describe replication and logical decoding.
 prerequisites: |
-  - Demonstrate an understanding of relational databases.
-  - Demonstrate an understanding of basic SQL.
+  -   Demonstrate an understanding of relational databases.
+
+  -   Demonstrate an understanding of basic SQL.
 iconUrl: /training/achievements/understand-write-ahead-logging.svg
 levels:
 - intermediate
@@ -25,11 +31,11 @@ roles:
 products:
 - azure-database-postgresql
 subjects:
-- database
+- databases
 units:
 - learn.wwl.understand-write-ahead-logging.introduction
-- learn.wwl.understand-write-ahead-logging.describe
-- learn.wwl.understand-write-ahead-logging.describe-replication-logical-decode
+- learn.wwl.understand-write-ahead-logging.understand-write-ahead-logging
+- learn.wwl.understand-write-ahead-logging.understand-replication-logical-decode
 - learn.wwl.understand-write-ahead-logging.exercise-list-table-changes-logical-decode
 - learn.wwl.understand-write-ahead-logging.knowledge-check
 - learn.wwl.understand-write-ahead-logging.summary

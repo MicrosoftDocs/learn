@@ -1,8 +1,8 @@
-Azure Government is a cloud environment specifically built to meet compliance and security requirements for US government. This mission-critical cloud delivers  breakthrough innovation to U.S. government customers and their partners. Azure Government applies to government at any level — from state and local governments to federal agencies including Department of Defense agencies. 
+Azure Government is a cloud environment specifically built to meet compliance and security requirements for the United States government. This mission-critical cloud delivers breakthrough innovation to US government customers and their partners. Azure Government applies to government at any level — from state and local governments to federal agencies including Department of Defense agencies. 
 
 While there are multiple cloud providers in the public sector, not many can offer the unique capabilities required by state and local and federal government agencies. Azure Government provides hybrid flexibility, deep security, and broad compliance coverage across regulatory standards.
 
-The key difference between Microsoft Azure and Microsoft Azure Government is that Azure Government is a sovereign cloud. It's a physically separated instance of Azure, dedicated to U.S. government workloads only. It's built exclusively for government agencies and their solution providers.
+The key difference between Microsoft Azure and Microsoft Azure Government is that Azure Government is a sovereign cloud. It's a physically separated instance of Azure, dedicated to US government workloads only. It's built exclusively for government agencies and their solution providers.
 
 Azure Government is designed for highly sensitive data, enabling government customers to safely transfer mission-critical workloads to the cloud.
 
@@ -19,7 +19,7 @@ Before we go further, let's highlight the key benefits of using Azure Government
    :::column span="3":::
      A **Physically separated** instance of Microsoft Azure.
 
-     Microsoft Azure Government is a separate, physical instance of Azure. It has an advanced infrastructure with robust networking in eight announced regions across the United States. Those regions include two regions at DoD Impact Level 5. Azure Government also offers data replication across regions for business continuity. All are connected via private dark fiber.
+     Microsoft Azure Government is a standalone physical instance of Azure. It has an advanced infrastructure with robust networking in eight announced regions across the United States. Those regions include two regions at DoD Impact Level 5. Azure Government also offers data replication across regions for business continuity. All are connected via private dark fiber.
 
      ExpressRoute provides choice and convenience when connecting between on-premises and virtual resources in the cloud and enables reliable connection for scenarios like data migration, disaster recovery, or other high-availability needs. ExpressRoute locations are in Chicago, Dallas, New York, Phoenix, San Antonio, Seattle, Silicon Valley, and Washington DC.
 
@@ -34,7 +34,7 @@ Before we go further, let's highlight the key benefits of using Azure Government
      ![An icon representing a government building.](../media/gov-icon.png)
    :::column-end:::
    :::column span="3":::
-     The only hyper-scale cloud built **specifically for U.S. government**.
+     The only hyper-scale cloud built **specifically for the US government**.
 
      Azure Government serves thousands of government customers within Federal, state and local agencies. Many Federal cabinet level agencies are represented, as well as the Army, Navy, Air Force, and Marine Corps.
    :::column-end:::
@@ -58,7 +58,7 @@ Before we go further, let's highlight the key benefits of using Azure Government
      ![An icon representing a secure computer screen.](../media/secure-screen-icon.png)
    :::column-end:::
    :::column span="3":::
-     Designed to **exceed U.S. government requirements**.
+     Designed to **exceed US government requirements**.
 
      With Azure Government, agencies can:
      - **Modernize their services with the trusted cloud**. Leverage state-of-the-art security to protect citizen data, applications, and  hardware in an environment built to exceed the highest compliance requirements.
@@ -75,7 +75,7 @@ Before we go further, let's highlight the key benefits of using Azure Government
    :::column span="3":::
      Supports the **broadest selection of services**, tools, and languages.
 
-     Azure Government is the only offering to span Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS). Services are offered in compute, networking, storage, web + mobile, databases, data + analytics, AI & cognitive services, Internet of Things (IoT), enterprise integration, security + identity, monitoring + management, and developer tools.
+     Azure Government is the only offering to span Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS). Services are offered in compute, networking, storage, web + mobile, databases, data + analytics, Azure AI services, Internet of Things (IoT), enterprise integration, security + identity, monitoring + management, and developer tools.
 
      Over 38 services are included in the Azure Government FedRAMP High compliance program.
      While not all Microsoft Azure services are available in Azure Government, the list is continually growing. For the most current list of services, see the [Products available by region tool](https://azure.microsoft.com/global-infrastructure/services/) (select Azure Government in the **Regions** dropdown). The services available in Azure Government are listed by category, as well as whether they are Generally Available or available through preview. 

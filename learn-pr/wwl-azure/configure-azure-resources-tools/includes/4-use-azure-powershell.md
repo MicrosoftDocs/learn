@@ -20,7 +20,7 @@ Azure PowerShell is also available two ways: inside a browser via the Azure Clou
  -  Resource groups
  -  Storage
  -  VMs
- -  Azure AD
+ -  Microsoft Entra ID
  -  Containers
  -  Machine learning
 

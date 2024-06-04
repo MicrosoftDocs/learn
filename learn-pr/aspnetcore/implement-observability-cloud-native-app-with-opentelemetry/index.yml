@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.implement-observability-cloud-native-app-with-opentelemetry
+metadata:
+  title: Implement observability in a .NET cloud-native application with OpenTelemetry
+  description: "Learn about observability and how to implement it in a cloud-native application. Use OpenTelemetry packages to output logs, metrics, and tracing data and analyze the data in Application Insights and third-party applications."
+  ms.date: 12/20/2023
+  author: codemillmatt  
+  ms.author: masoucou
+  ms.topic: module-standard-task-based
+title: Implement observability in a cloud-native .NET 8 application with OpenTelemetry
+summary: "Implement observability in an existing cloud-native application by using OpenTelemetry. Then view the data in Application Insights and third-party tools."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the three pillars of observability and how they help monitor applications.
+  - Create an observability cloud-native application by using OpenTelemetry.
+  - Ensure that a cloud-native application is generating observable data.
+  - Use Application Insights and third-party tools to monitor a cloud-native application.
+prerequisites: |
+  - Experience developing applications in C# and .NET
+  - Familiarity with RESTful service concepts
+  - Access to an Azure subscription with Owner privilege
+  - Ability to run development containers in GitHub Codespaces or Visual Studio Code
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - developer
+  - solution-architect
+products: 
+  - aspnet-core
+  - dotnet
+  - azure
+  - azure-app-configuration
+subjects: 
+  - business-applications
+units:
+- learn.implement-observability-cloud-native-app-with-opentelemetry.introduction
+- learn.implement-observability-cloud-native-app-with-opentelemetry.whats-observability
+- learn.implement-observability-cloud-native-app-with-opentelemetry.add-observability-cloud-native-app
+- learn.implement-observability-cloud-native-app-with-opentelemetry.exercise-add-observability-cloud-native-app
+- learn.implement-observability-cloud-native-app-with-opentelemetry.view-telemetry-data
+- learn.implement-observability-cloud-native-app-with-opentelemetry.exercise-use-opentelemetry-data-cloud-native-application
+- learn.implement-observability-cloud-native-app-with-opentelemetry.exercise-extend-telemetry
+- learn.implement-observability-cloud-native-app-with-opentelemetry.knowledge-check
+- learn.implement-observability-cloud-native-app-with-opentelemetry.summary
+badge:
+  uid: learn.implement-observability-cloud-native-app-with-opentelemetry.badge

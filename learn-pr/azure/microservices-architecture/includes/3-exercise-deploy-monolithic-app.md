@@ -1,8 +1,8 @@
-We've talked a bit about monolithic and microservices architectures. Now, let's deploy a monolithic application and dive further into how we can evolve it into a microservices architecture.
+We talked a bit about monolithic and microservices architectures. Now, let's deploy a monolithic application and dive further into how we can evolve it into a microservices architecture.
 
-Fabrikam has currently added the drone service into their existing application.
+Fabrikam recently added the drone service into their existing application.
 
-In this exercise, we'll deploy a monolithic application on Azure App Service, and enable Azure Monitor to get visibility into telemetry and application performance.
+In this exercise, we deploy a monolithic application on Azure App Service, and enable Azure Monitor to get visibility into telemetry and application performance.
 
 ![Visualization of the resources for the drone delivery application.](../media/3-drone-delivery-monolithic.svg)
 
@@ -58,7 +58,7 @@ Let's start by deploying the application. First, we need to create the Azure res
         --src DroneDelivery-before.zip
     ```
 
-1. After the deployment finishes, confirm that the deployment was successful by visiting the website of your app service. Run the following command to get the URL, and select it to open the page.
+1. After the deployment finishes, confirm that the deployment is successful by visiting the website of your app service. Run the following command to get the URL, and select it to open the page.
 
     ```bash
     echo https://$(az webapp config hostname list \

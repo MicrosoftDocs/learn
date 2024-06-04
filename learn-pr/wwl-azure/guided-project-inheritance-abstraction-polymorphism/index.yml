@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-inheritance-abstraction-polymorphism
+metadata:
+  title: 'Guided Project: Inheritance, Abstraction, and Polymorphism'
+  description: "This is the guided project for Inheritance, Abstraction, and Polymorphism."
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: module
+  ms.service: learn
+  ms.devlang: csharp
+title: 'Guided Project: Inheritance, Abstraction, and Polymorphism'
+summary: |
+  In this guided project, you were asked to repurpose your code, such that it better supports reuse. Much like functions are stand-alone pieces of code that can be reused for different purposes.
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
+abstract: |
+  - How to use inheritance.
+  - Understand the benefits of code reuse.
+prerequisites: |
+  - Installation of Visual Studio Code configured for C# application development, including C# Dev Kit.
+  - Experience with the VS Code editor.
+  - Ability to develop C# console applications that implement business logic using loops, if statements, properties, and methods.
+  - Experience with basic C# syntax rules.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- vs
+units:
+- learn.wwl.guided-project-inheritance-abstraction-polymorphism.introduction
+- learn.wwl.guided-project-inheritance-abstraction-polymorphism.prepare
+- learn.wwl.guided-project-inheritance-abstraction-polymorphism.exercise-ant-class-generalized-ant
+- learn.wwl.guided-project-inheritance-abstraction-polymorphism.exercise-implement-generalized-ant
+- learn.wwl.guided-project-inheritance-abstraction-polymorphism.exercise-bonus-material
+- learn.wwl.guided-project-inheritance-abstraction-polymorphism.knowledge-check
+- learn.wwl.guided-project-inheritance-abstraction-polymorphism.summary
+badge:
+  uid: learn.wwl.guided-project-inheritance-abstraction-polymorphism.badge

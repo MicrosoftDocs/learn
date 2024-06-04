@@ -10,7 +10,7 @@ The data a company uses can come from many sources. There could be a mass of his
 In this unit, you'll learn about two important stages in data analytics: data ingestion, and data processing. The diagram below shows how these stages fit together. 
 
 > [!div class="mx-imgBorder"]
-> ![A typical data analytics architecture depicting data ingestion, processing, and exploration](../media/2-data-process.png)
+> ![Diagram of A typical data analytics architecture depicting data ingestion, processing, and exploration.](../media/2-data-process.png)
 
 ## What is data ingestion?
 
@@ -31,7 +31,7 @@ Data processing takes the data in its raw form, cleans it, and converts it into 
 The aim of data processing is to convert the raw data into one or more business models. A business model describes the data in terms of meaningful business entities, and may aggregate items together and summarize information. The data processing stage could also generate predictive or other analytical models from the data. Data processing can be complex, and may involve automated scripts, and tools such as Azure Databricks, Azure Functions, and Azure Cognitive Services to examine and reformat the data, and generate models. A data analyst could use machine learning to help determine future trends based on these models.
 
 > [!div class="mx-imgBorder"]
-> ![Processing ingested data to generate data models](../media/2-process-stage.png)
+> ![Diagram of Processing ingested data to generate data models.](../media/2-process-stage.png)
 
 ## What is ELT and ETL?
 
@@ -40,12 +40,12 @@ The data processing mechanism can take two approaches to retrieving the ingested
 ETL stands for *Extract, Transform, and Load*. The raw data is retrieved and transformed before being saved. The extract, transform, and load steps can be performed as a continuous pipeline of operations. It is suitable for systems that only require simple models, with little dependency between items. For example, this type of process is often used for basic data cleaning tasks, deduplicating data, and reformatting the contents of individual fields.
 
 > [!div class="mx-imgBorder"]
-> ![Image showing the ETL process](../media/2-extract-transform-load.png)
+> ![Diagram of Image showing the ETL process.](../media/2-extract-transform-load.png)
 
 An alternative approach is *ELT*. ELT is an abbreviation of *Extract, Load, and Transform*. The process differs from ETL in that the data is stored before being transformed. The data processing engine can take an iterative approach, retrieving and processing the data from storage, before writing the transformed data and models back to storage. ELT is more suitable for constructing complex models that depend on multiple items in the database, often using periodic batch processing.
 
 > [!div class="mx-imgBorder"]
-> ![Image showing the ELT process](../media/2-extract-load-transform.png)
+> ![Diagram of Image showing the ELT process.](../media/2-extract-load-transform.png)
 
 ELT is a scalable approach that is suitable for the cloud because it can make use of the extensive processing power available. The more stream-oriented approach of ETL places more emphasis on throughput. However, ETL can filter data before it's stored. In this way, ETL can help with data privacy and compliance, removing sensitive data before it arrives in your analytical data models.
 
@@ -53,6 +53,6 @@ Azure provides several options that you can use to implement the ELT and ETL app
 
 This is a simple table showing the advantages of ETL and ELT in most cases.
 
-:::image type="content" source="../media/2-etl-vs-elt.png" alt-text="ETL versus ELT":::
+:::image type="content" source="../media/2-etl-vs-elt.png" alt-text="Diagram of ETL versus ELT.":::
 
 Another more generalized approach is to use Azure Data Factory. Azure Data Factory is a cloud-based data integration service that allows you to create data-driven workflows for orchestrating data movement and transforming data at scale. Using Azure Data Factory, you can create and schedule data-driven workflows (called pipelines) that can ingest data from disparate data stores. You can build complex ETL processes that transform data visually with data flows, or by using compute services such as *Azure HDInsight Hadoop*, *Azure Databricks*, and *Azure SQL Database*.

@@ -4,7 +4,7 @@ The most beneficial security controls are found across multiple STRIDE categorie
 
 ## Security-control types
 
-As you assess each security control, you'll notice they fall into one of the following types:
+As you assess each security control, notice how they fall into one of the following types:
 
 |Icon|Type|Description|
 |----|----|-----------|
@@ -13,7 +13,7 @@ As you assess each security control, you'll notice they fall into one of the fol
 |![Administrative.](../media/Administrative.png)|Administrative| Controls referring to policies that define processes for your system. Examples include data classification, auditing, and restrictions.|
 
 > [!NOTE]
-> Depending on your system, you'll want to apply security controls across all types to help create layers for a more secure system.
+> Depending on your system, you should apply security controls across all types to help create layers for a more secure system.
 
 ## Security-control functions
 

@@ -5,10 +5,9 @@ metadata:
   title: Summary
   description: Summary and knowledge check. 
   ms.date: 03/03/2023
-  author: QuinnRadich
-  ms.author: quradic
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  author: alvinashcraft
+  ms.author: aashcraft
+  ms.topic: unit
   
 durationInMinutes: 10
 content: |

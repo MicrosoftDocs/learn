@@ -4,31 +4,28 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/07/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.topic: unit
+durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What service and connector work together to securely pass a user sign-on token from Azure AD to a web application running in an organization's on-premises datacenter?"
+  - content: "What service and connector work together to securely pass a user sign-on token from Microsoft Entra ID to a web application running in an organization's on-premises datacenter?"
     choices:
-    - content: "The Azure AD Application Proxy service and Application Proxy connector"
+    - content: "The Microsoft Entra Application Proxy service and Application Proxy connector"
       isCorrect: true
-      explanation: "Correct. The Azure AD Application Proxy service and the Application Proxy connector work together to securely pass the user sign-on token from Azure AD to the web application."
+      explanation: "Correct. The Microsoft Entra Application Proxy service and the Application Proxy connector work together to securely pass the user sign-on token from Microsoft Entra ID to the web application."
     - content: "An Application Proxy connector and the Azure Firewall service"
       isCorrect: false
       explanation: "Incorrect. The Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It is a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability."
-    - content: "The Azure AD Application Proxy service and Application Gateway"
+    - content: "The Microsoft Entra Application Proxy service and Application Gateway"
       isCorrect: false
       explanation: "Incorrect. Azure Application Gateway provides an application delivery controller (ADC) as a service. It offers various layer 7 load-balancing capabilities for your applications. This service is highly available, scalable, and fully managed by Azure."
-  - content: "Which user provision mode(s) are supported for applications in the Azure AD gallery?"
+  - content: "Which user provisioning mode(s) are supported for applications in the Microsoft Entra ID gallery?"
     choices:
     - content: "Administrator approved and automatic."
       isCorrect: false
@@ -38,8 +35,8 @@ quiz:
       explanation: "Incorrect. Both manual and automatic user provisioning are allowed."
     - content: "Manual and automatic"
       isCorrect: true
-      explanation: "Correct. Manual provisioning means there is no automatic Azure AD provisioning connector for the app yet. User accounts must be created manually, for example by adding users directly into the app's administrative portal or uploading a spreadsheet with user account detail. Consult the documentation provided by the app or contact the app developer to determine what mechanisms are available. Automatic means that an Azure AD provisioning connector has been developed for this application."
-  - content: "Which of the following groups of information can be found in the Azure Active Directory Usage and insights report?"
+      explanation: "Correct. Manual provisioning means there is no automatic Microsoft Entra ID provisioning connector for the app yet. User accounts must be created manually, for example by adding users directly into the app's administrative portal or uploading a spreadsheet with user account detail. Consult the documentation provided by the app or contact the app developer to determine what mechanisms are available. Automatic means that a Microsoft Entra ID provisioning connector has been developed for this application."
+  - content: "Which of the following groups of information can be found in the Microsoft Entra ID Usage and insights report?"
     choices:
     - content: "The top used application in your organization and Who gave consent to an application and The top sign-in errors for each application"
       isCorrect: false
@@ -49,4 +46,4 @@ quiz:
       explanation: "Incorrect. Information about a service that logged an occurrence is part of Audit logs and not usage and insights."
     - content: "The top used applications in your organization and The application with the most failed sign-ins and The top sign-in errors for each application"
       isCorrect: true
-      explanation: "Correct. With the usage and insights report, you can get an application-centric view of your sign-in data to find information about these three topics."
+      explanation: "Correct. With the usage and insights report, you can get an application-centric view of your sign-in data to find information about these three categories."

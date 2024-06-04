@@ -1,17 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-users-and-groups-in-azure-active-directory.user-accounts-azure-ad
-title: What are user accounts in Azure Active Directory?
+title: What are user accounts in Microsoft Entra ID?
 metadata:
-  title: What are user accounts in Azure Active Directory?
-  description: What are user accounts in Azure Active Directory?
-  ms.date: 03/21/2023
+  title: What are user accounts in Microsoft Entra ID?
+  description: What are user accounts in Microsoft Entra ID?
+  ms.date: 07/27/2023
   author: shlipsey3
   ms.author: sarahlipsey
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.manager: amycollanino
-  ms.service: active-directory
-  ms.subservice: fundamentals
 durationInMinutes: 7
 content: |
   [!include[](includes/2-user-accounts-azure-ad.md)]

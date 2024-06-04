@@ -5,11 +5,10 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Learn about business scenarios that can utilize Azure Cache for Redis as communication middleware.
-  ms.date: 02/11/2022
+  ms.date: 05/11/2023
   author: tchristiani
   ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

@@ -1,0 +1,11 @@
+Assessing a model isn't just about understanding how accurately it can make a prediction, but also why it made the prediction. Understanding a model’s behavior is a critical part of debugging and helps drive responsible outputs. By evaluating which data features are driving a model’s prediction, you can identify if they're acceptable sensitive or nonsensitive features to base a decision on. For instance, if a model is using race or gender to predict a diabetic patient’s time in the hospital, then that’s a red flag to investigate the model. In addition, being able to explain a model’s outcome provides shared understanding for data scientists, decision-makers, end-users and auditors. Some industries have compliance regulations that require organizations to provide an explanation for how and why a model made the prediction it did. If an AI system is driving the decision-making, then data scientists need to specify the data features driving the model to make a prediction.
+
+This is where the Responsible AI dashboard is beneficial. The feature importance component provides an interactive user interface (UI) that enables data scientists or AI developers to see the top features in their dataset that influence their model’s prediction. In addition, it provides both global explanations and local explanations. With global explanations, the dashboard displays the top features that affect the model’s overall predictions. For local explanations, it shows which features most influenced a prediction for an individual data point. In our diabetes hospital readmission use case, every patient is different, so what features drove the model to make a prediction for one patient might not be as important for another patient.
+
+The feature importance component has built-in model explainability and interpretability capabilities to help users answer questions in scenarios such as:
+
+- Model debugging: Why did my model make this mistake? How can I improve my model?
+- Human-AI collaboration: How can I understand and trust the model’s decisions?
+- Regulatory compliance: Does my model satisfy legal requirements?
+
+By using the feature importance component, you can see which features were most important in your model’s predictions.

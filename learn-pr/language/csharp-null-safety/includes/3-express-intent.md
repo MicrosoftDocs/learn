@@ -32,7 +32,7 @@ As discussed in the previous unit, C# defines several operators to express your 
 
 ### Null-forgiving (`!`) operator
 
-You were introduced to the null-forgiving operator (`!`) in the previous section. It tells the compiler to ignore the CS8600 warning. This is one way to tell the compiler that you know what you're doing, but it comes with the caveat that you should *actually know what you're doing*!
+You were introduced to the null-forgiving operator (`!`) in the previous section. It tells the compiler to ignore the [CS8600 warning](/dotnet/csharp/language-reference/compiler-messages/nullable-warnings#possible-null-assigned-to-a-nonnullable-reference). This is one way to tell the compiler that you know what you're doing, but it comes with the caveat that you should *actually know what you're doing*!
 
 When you initialize non-nullable types while a nullable context is enabled, you may need to explicitly ask the compiler for forgiveness. For example, consider the following code:
 
@@ -59,7 +59,7 @@ In the preceding example, `FooBar fooBar = fooList.Find(f => f.Name == "Bar");` 
 FooBar fooBar = fooList.Find(f => f.Name == "Bar")!;
 ```
 
-Note the `!` at the end of `fooList.Find(f => f.Name =="Bar")`. This tells the compiler that you know that the object returned by the `Find` method might be `null`, and it's okay.
+Note the `!` at the end of `fooList.Find(f => f.Name == "Bar")`. This tells the compiler that you know that the object returned by the `Find` method might be `null`, and it's okay.
 
 You can apply the null-forgiving operator to an object inline prior to a method call or property evaluation, too. Consider another contrived example:
 
@@ -67,7 +67,7 @@ You can apply the null-forgiving operator to an object inline prior to a method 
 List<FooBar>? fooList = FooListFactory.GetFooList();
 
 // Declare variable and assign it as null.
-FooBar fooBar = fooList.Find(f => f.Name=="Bar")!; // generates warning
+FooBar fooBar = fooList.Find(f => f.Name == "Bar")!; // generates warning
 
 static class FooListFactory
 {

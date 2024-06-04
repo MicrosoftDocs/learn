@@ -1,0 +1,68 @@
+### YamlMime:Module
+uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor
+metadata:
+  title: Guided project - Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and Blazor
+  description: |
+    This module walks through the steps to connect an existing Blazor application to an Azure Cosmos DB for NoSQL account and an Azure OpenAI account. Your application sends prompts to the model in Azure OpenAI and parses the responses. Your application also stores various conversation sessions and their corresponding messages as items colocated in a single container within Azure Cosmos DB for NoSQL.
+  moduleType: guided-project
+  manager: jroth
+  author: seesharprun
+  ms.author: sidandrews
+  ms.reviewer: mjbrown
+  ms.topic: module
+  ms.date: 04/25/2024
+  ms.service: cosmos-db
+  ms.subservice: nosql
+title: Guided project - Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and Blazor
+summary: |
+  Connect an existing Blazor web application to Azure Cosmos DB for NoSQL and Azure OpenAI using their .NET software development kits. Your code manages and queries items in an API for NoSQL container. Your code also sends prompts to Azure OpenAI and parses the responses.
+  
+  > [!NOTE]
+  > This module is a **_Guided Project_** where you complete an end-to-end project by following step-by-step instructions.
+abstract: |
+  In this module, you practice how to:
+    - Connect to an Azure OpenAI account using the .NET SDK.
+    - Send prompts to a model deployment and parse the responses.
+    - Connect to an Azure Cosmos DB for NoSQL account using the .NET SDK.
+    - Create, update, query, and delete items in an API for NoSQL container.
+prerequisites: |
+  - [Azure subscription](https://azure.microsoft.com/free?azure-portal=true)
+  - [GitHub account](https://docs.github.com/get-started/start-your-journey/creating-an-account-on-github)
+  - [Azure OpenAI access](/legal/cognitive-services/openai/limited-access?azure-portal=true)
+
+  - Ability to execute scripts with Azure CLI
+  - Ability to deploy templates using Azure Resource Manager
+  - Experience with Azure Cosmos DB concepts such as databases, containers, and items
+  - Experience with Azure OpenAI concepts such as models, deployments, and prompts
+  - Experience writing queries for Azure Cosmos DB for NoSQL
+  - Ability to write C# at an intermediate level
+  - Experience running ASP.NET web applications
+  - Experience running Blazor web applications
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - azure-cosmos-db
+  - azure-openai
+  - blazor
+subjects:
+  - cloud-computing
+  - chatbots
+  - artificial-intelligence
+  - databases
+  - custom-app-development
+units:
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.introduction
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.prepare
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-setup-starter-app
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-connect-openai-model
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-implement-openai-model-service
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-connect-cosmos-db-nosql
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-implement-cosmos-db-nosql-service
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.cleanup
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.knowledge-check
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.summary
+badge:
+  uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.badge

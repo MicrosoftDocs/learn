@@ -3,20 +3,21 @@ uid: learn.azdo.implement-code-workflow
 metadata:
   title: Implement a code workflow in your build pipeline by using Git and GitHub
   description: Learn along with the Space Game web team the benefits of collaboration through Visual Studio Code and GitHub.
-  ms.date: 07/29/2022
+  ms.date: 10/24/2023
   author: juliakm
   ms.author: jukullam
   ms.custom: devdivchpfy22
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-devops
+  manager: mijacobs
 title: Implement a code workflow in your build pipeline by using Git and GitHub
 summary: Collaborate with others and merge only the highest quality code.
 abstract: |
   After completing this module, you'll be able to:
-  - Collaborate with others by choosing an appropriate branching and merging strategy
-  - Add a badge to your GitHub repository to show the status of the latest build
-  - Add a dashboard widget to help visualize your build history
-  - Set up a rule on your GitHub repository to require a review
+  - Collaborate with others by choosing an appropriate branching and merging strategy.
+  - Add a badge to your GitHub repository to show the status of the latest build.
+  - Add a dashboard widget to help visualize your build history.
+  - Set up a rule on your GitHub repository to require a review.
 prerequisites: |
   - An Azure DevOps organization with access to **Microsoft-hosted** parallel jobs. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
   - Visual Studio Code
@@ -34,8 +35,6 @@ roles:
 - solution-architect
 products:
 - azure-devops
-subjects:
-- development-tools
 units:
 - learn.azdo.implement-code-workflow.1-introduction
 - learn.azdo.implement-code-workflow.2-choose-a-code-flow-strategy

@@ -9,7 +9,7 @@ Best practices for Sentinel workspace design fall into a few main categories:
 
 ## Tenancy considerations
 
-While fewer workspaces are simpler to manage, you may have specific needs for multiple tenants and workspaces. For example, many organizations have a cloud environment that contains multiple Azure Active Directory (Azure AD) tenants, resulting from mergers and acquisitions or due to identity separation requirements.
+While fewer workspaces are simpler to manage, you may have specific needs for multiple tenants and workspaces. For example, many organizations have a cloud environment that contains multiple Microsoft Entra tenants, resulting from mergers and acquisitions or due to identity separation requirements.
 
 When determining how many tenants and workspaces to use, consider that most Microsoft Sentinel features operate by using a single workspace or Microsoft Sentinel instance, and Microsoft Sentinel ingests all logs housed within the workspace.
 
@@ -17,9 +17,9 @@ Costs are one of the main considerations when determining Microsoft Sentinel arc
 
 ### Working with multiple tenants
 
-If you have multiple tenants, such as if you're a managed security service provider (MSSP), we recommend that you create at least one workspace for each Azure AD tenant to support built-in, service to service data connectors that work only within their own Azure AD tenant.
+If you have multiple tenants, such as if you're a managed security service provider (MSSP), we recommend that you create at least one workspace for each Microsoft Entra tenant to support built-in, service to service data connectors that work only within their own Microsoft Entra tenant.
 
-All connectors based on diagnostics settings cannot be connected to a workspace that is not located in the same tenant where the resource resides. This applies to connectors such as Azure Firewall, Azure Storage, Azure Activity or Azure Active Directory.
+All connectors based on diagnostics settings cannot be connected to a workspace that is not located in the same tenant where the resource resides. This applies to connectors such as Azure Firewall, Azure Storage, Azure Activity or Microsoft Entra ID.
 
 Use Azure Lighthouse to help manage multiple Microsoft Sentinel instances in different tenants.
 
@@ -84,7 +84,7 @@ For example, consider if the organization whose architecture is described in the
 
 ### Access considerations with multiple workspaces
 
-If you have different entities, subsidiaries, or geographies within your organization, each with their own security teams that need access to Microsoft Sentinel, use separate workspaces for each entity or subsidiary. Implement the separate workspaces within a single Azure AD tenant, or across multiple tenants using Azure Lighthouse.
+If you have different entities, subsidiaries, or geographies within your organization, each with their own security teams that need access to Microsoft Sentinel, use separate workspaces for each entity or subsidiary. Implement the separate workspaces within a single Microsoft Entra tenant, or across multiple tenants using Azure Lighthouse.
 
 Your central SOC team may also use an additional, optional Microsoft Sentinel workspace to manage centralized artifacts such as analytics rules or workbooks.
 

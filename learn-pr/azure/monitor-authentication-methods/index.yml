@@ -2,25 +2,25 @@
 uid: learn.monitor-authentication-methods
 metadata:
   moduleType: build-your-first-using-product 
-  title: Monitor and report on authentication methods used in Azure AD                     
-  description: "This module teaches you how to create an Azure AD workbook that helps you to create a report of the authentication methods used in your tenant."                        # Copy your 'apply' Learning Objective here (see below)
-  ms.date: 07/21/2022                        
+  title: Monitor and report on authentication methods used in Microsoft Entra ID
+  description: "This module teaches you how to create a Microsoft Entra workbook that helps you to create a report of the authentication methods used in your tenant."                        # Copy your 'apply' Learning Objective here (see below)
+  ms.date: 07/21/2022
   author: softchris
-  ms.author: chnoring                    
-  ms.topic: interactive-tutorial            
-  ms.prod: learning-azure                   
-title: Monitor and report on authentication methods used in Azure AD
-summary: "This module teaches you how to create an Azure AD workbook that helps you to create a report of the authentication methods used in your tenant."
+  ms.author: chnoring
+  ms.topic: module-standard-task-based
+  ms.service: active-directory
+title: Monitor and report on authentication methods used in Microsoft Entra ID
+summary: "This module teaches you how to create a Microsoft Entra workbook that helps you to create a report of the authentication methods used in your tenant."
 abstract: |
    By the end of this module, you'll be able to:
    - Choose the right activity logs.
    - Route your activity logs to a different endpoint.
    - Write queries to retrieve the activity data you need.
-   - Create a new Azure AD workbook to generate a rich report of your activity data.
-   - Use an existing Azure AD workbook to solve your business problem.
+   - Create a new Microsoft Entra workbook to generate a rich report of your activity data.
+   - Use an existing Microsoft Entra workbook to solve your business problem.
 
 prerequisites: |
-  - Familiarity with Azure AD
+  - Familiarity with Microsoft Entra ID
 
 iconUrl: /training/achievements/generic-badge.svg
 levels:

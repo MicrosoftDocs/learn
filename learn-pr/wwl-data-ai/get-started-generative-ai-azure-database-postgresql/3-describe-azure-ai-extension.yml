@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.describe-azure-ai-extension
+title: Describe the Azure AI extension
+metadata:
+  title: Describe the Azure AI extension
+  description: "Describe the Azure AI extension"
+  ms.date: 04/26/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-describe-azure-ai-extension.md)]

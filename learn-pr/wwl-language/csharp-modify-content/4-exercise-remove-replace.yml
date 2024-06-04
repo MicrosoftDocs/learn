@@ -3,12 +3,13 @@ uid: learn.languages.csharp-modify-content.exercise-replace-remove
 title: Exercise - Use the Remove() and Replace() methods
 metadata:
   title: Exercise - Use the Remove() and Replace() methods
-  description: "Exercise - Use the Remove() and Replace() methods"
-  ms.date: 04/25/2023
+  description: "Use the Remove() and Replace() methods to remove and replace characters from a string."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/4-exercise-remove-replace.md)]
@@ -19,10 +20,10 @@ quiz:
     choices:
     - content: "`\"Big Dog\"`"
       isCorrect: false
-      explanation: "Incorrect. `\"B\"` is replaced by `\"D\"`."
+      explanation: "Incorrect. `\"B\"` is replaced with `\"D\"`."
     - content: "`\"Big Bog\"`"
       isCorrect: false
-      explanation: "Incorrect. `\"B\"` is replaced by `\"D\"`."
+      explanation: "Incorrect. `\"B\"` is replaced with `\"D\"`."
     - content: "`\"Dig Dog\"`"
       isCorrect: true
-      explanation: "Correct. `\"B\"` is replaced by `\"D\"`."
+      explanation: "Correct. `\"B\"` is replaced with `\"D\"`."

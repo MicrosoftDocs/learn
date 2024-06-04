@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/13/2023
+  ms.date: 04/25/2024
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -17,7 +16,7 @@ quiz:
     choices:
     - content: "The compiler primarily locates spelling mistakes in your code."
       isCorrect: false
-      explanation: "Incorrect. While it's possible you misspelled something in your code and that produces an error, that isn't the primary job of the compiler."
+      explanation: "Incorrect. While it's possible you misspelled something in your code and that produces an error that isn't the primary job of the compiler."
     - content: "The compiler primarily executes your code."
       isCorrect: false
       explanation: "Incorrect. The compiler doesn't execute your code, but makes it possible for your code to be executed."

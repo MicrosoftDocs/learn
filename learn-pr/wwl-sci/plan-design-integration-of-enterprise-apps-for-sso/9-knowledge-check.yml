@@ -4,14 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/07/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
@@ -28,12 +27,12 @@ quiz:
     - content: "Microsoft Security Center"
       isCorrect: false
       explanation: "Incorrect. The Microsoft 365 security center is intended to help security admins and security operations teams manage and protect their organization."
-  - content: "By default, who has the ability to create application registrations or consent to applications in Azure Active Directory?"
+  - content: "By default, who has the ability to create application registrations or consent to applications in Microsoft Entra ID?"
     choices:
-    - content: "All Azure AD Users"
+    - content: "All Microsoft Entra Users"
       isCorrect: true
-      explanation: "Correct. In Azure AD all users can register application registrations and manage all aspects of applications they create. Everyone also has the ability to consent to apps accessing company data on their behalf."
-    - content: "All Azure AD and Guest users"
+      explanation: "Correct. In Microsoft Entra ID, all users can register application registrations and manage all aspects of applications they create. Everyone also has the ability to consent to apps accessing company data on their behalf."
+    - content: "All Microsoft Entra and Guest users"
       isCorrect: false
       explanation: "Guest users do not have the ability to create applications by default."
     - content: "Only users assigned the Global Administrator role"

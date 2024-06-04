@@ -4,12 +4,11 @@ title: Explore the Azure App Service
 metadata:
   title: Explore the Azure App Service
   description: Explore the Azure App Service
-  ms.date: 05/02/2020
+  ms.date: 09/27/2023
   author: mikejo5000
   ms.author: mikejo
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/4-explore-the-azure-app-service.md)]

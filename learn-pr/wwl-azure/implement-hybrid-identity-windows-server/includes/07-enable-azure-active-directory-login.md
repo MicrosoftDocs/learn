@@ -2,7 +2,7 @@
 
 In this demonstration, you'll learn to:
 
-- Enable Azure AD login in a Windows VM.
+- Enable Microsoft Entra login in a Windows VM.
 
 
 
@@ -13,7 +13,6 @@ In this demonstration, you'll learn to:
 ## Next steps
 
 Review the steps for this demonstration:
-[Enabling Azure AD login in for Windows VM in Azure](https://aka.ms/azure-ad-login-in-windows-vm-azure?azure-portal=true)
+[Enabling Microsoft Entra login in for Windows VM in Azure](https://aka.ms/azure-ad-login-in-windows-vm-azure?azure-portal=true)
 
 If you want to repeat these steps, [get a free trial Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). After completing the steps, delete any resource groups you created.
-

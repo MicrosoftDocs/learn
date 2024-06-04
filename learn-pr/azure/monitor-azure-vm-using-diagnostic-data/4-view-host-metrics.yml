@@ -1,39 +1,38 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.view-host-metrics
-title: View VM metrics
+title: Use Metrics Explorer to view detailed host metrics
 metadata:
-  title: View VM metrics
-  description: See how to build rich charts by using the VM metrics, and then pin these charts to a new health dashboard.
-  ms.date: 10/18/2019
+  title: Use Metrics Explorer to view detailed host metrics
+  description: Use Azure Monitor Metrics Explorer to create and configure a custom VM host metrics graph.
+  ms.date: 11/06/2023
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-view-host-metrics.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: You want to track the average CPU usage of your Azure virtual machine over the last seven days. What is the most straightforward way to do this?
+  - content: How do you add another metric to an existing Metrics Explorer graph?
     choices:
-    - content: View the metrics for the virtual machine on the Overview page and set the range to the last seven days.
+    - content: Select the metric from the dropdown list in the **Metric** field.
+      isCorrect: false
+      explanation: You select the current metric from the dropdown list in the **Metric** field. To add another metric, select **Add metric**.
+    - content: Select **New chart**.
+      isCorrect: false
+      explanation: You can select **New chart** to create a new graph, but to add another metric to the existing graph, select **Add metric**.
+    - content: Select **Add metric**.
       isCorrect: true
-      explanation: The Overview page displays this graph by default. You can set the range to show a seven-day range.
-    - content: View the metrics for the virtual machine each day and store the values for each of the last seven days in a spreadsheet.
-      isCorrect: false
-      explanation: You can track trends in virtual machine metrics on a single graph for up to seven days.
-    - content: View the metric in the Monitor section by creating a graph and set the range to the last seven days.
-      isCorrect: false
-      explanation: You don't need to create a graph for the average CPU. The Overview page shows this metric by default.
-  - content: What do you have to install or create to store simple boot diagnostics in Azure?
+      explanation: To add another metric to the existing Metrics Explorer graph, select **Add metric** at upper left.
+  - content: Which of these parameters isn't included in the dropdown fields when you define a Metrics Explorer graph?
     choices:
-    - content: Install the Azure Diagnostics extension.
+    - content: Metric Namespace
       isCorrect: false
-      explanation: An Azure Diagnostics extension isn't required to store simple boot diagnostics.
-    - content: You don't have to install or create anything additional to store diagnostic logs in Azure.
-      isCorrect: false
-      explanation: You don't have to create anything additional to see basic metrics for VMs. You need a storage account for boot diagnostics, though.
-    - content: An Azure storage account.
+      explanation: The fields for a Metrics Explorer graph include **Scope**, **Metrics Namespace**, **Metric**, and **Aggregation**.
+    - content: Time range
       isCorrect: true
-      explanation: You need a storage account to store boot diagnostics data, the boot screenshots, and logs.
+      explanation: You select the time range and granularity for a metrics graph by selecting the time filter above the graph.
+    - content: Aggregation
+      isCorrect: false
+      explanation: The fields for a Metrics Explorer graph include **Scope**, **Metrics Namespace**, **Metric**, and **Aggregation**.

@@ -4,7 +4,7 @@ Since SaaS is not only software, but primarily a service, one of the differences
 SLAs describe software provider's commitments for uptime and connectivity. If software provider doesn't achieve and maintain the Service Levels for each Service as described in this SLA, then customers are eligible for compensation.
 
 An SLA penalty towards software provider depends on industry and type of business. The two most common scenarios are Financial Penalty and Service Credits. In case of Service Credits customers may be eligible for a credit towards a portion of customers’ monthly service fees. 
-Here you can find the inspiration on how Microsoft defined SLA for one of our products -Azure Active Directory: [SLA for Azure Active Directory (Azure AD) | Microsoft Azure](https://azure.microsoft.com/support/legal/sla/active-directory/v1_1/)
+Here you can find the inspiration on how Microsoft defined SLA for one of our products -Microsoft Entra ID: [SLA for Microsoft Entra ID | Microsoft Azure](https://azure.microsoft.com/support/legal/sla/active-directory/v1_1/)
 
 Since SLA is an agreement between you as SaaS provider and a client, you can define 100%  uptime for your service. However, it's hard to achieve 100% availability for complex systems, so many software companies tie their SLA to availability they can provide. If SLA states 100% uptime, it only means that if there were outages, customers will get compensation according to agreement, but it doesn't guarantee 100% availability.
 
@@ -43,7 +43,7 @@ For example, if a service is currently achieving 99.7% availability, the team co
 
 ## Contoso scenario
 
-A simple SLA agreement which Contoso could create for their users, could be something similar to the example shared above for Azure Active Directory. 
+A simple SLA agreement which Contoso could create for their users, could be something similar to the example shared above for Microsoft Entra ID. 
 
 First, Contoso would define, what Service Levels are guaranteed, such as:
 
@@ -55,7 +55,7 @@ First, Contoso would define, what Service Levels are guaranteed, such as:
 
 Also, Contoso will have to define, what is considered Downtime, and what compensation do they offer when customers are facing the downtime. 
 
-For example, Contoso could take inspiration from Azure Active Directory compensation structure (uptime percentage correlated with % of monthly credits received) or create a system of flat compensation for each minute of downtime. 
+For example, Contoso could take inspiration from Microsoft Entra compensation structure (uptime percentage correlated with % of monthly credits received) or create a system of flat compensation for each minute of downtime. 
 
 
 

@@ -2,28 +2,28 @@
 uid: learn.azure.azure-java-app-enable-authentication-authorization
 metadata:
   moduleType: standard
-  title: Sign in users with Azure Active Directory in a Java web app
-  description: Learn how to authenticate users with Azure Active Directory and get authorized access to data in a Java web app using Microsoft Authentication Library.
-  ms.date: 06/11/2021
-  author: navyasric
-  ms.author: nacanuma
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Sign in users with Azure Active Directory in a Java web app
-summary: Learn how to authenticate users with Azure Active Directory and get authorized access to data in a Java web app using Microsoft Authentication Library.
+  title: Sign in users with Microsoft Entra ID in a Java web app
+  description: Learn how to authenticate users with Microsoft Entra ID and get authorized access to data in a Java web app using Microsoft Authentication Library.
+  ms.date: 11/21/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: module-standard-task-based
+  ms.service: active-directory
+title: Sign in users with Microsoft Entra ID in a Java web app
+summary: Learn how to authenticate users with Microsoft Entra ID and get authorized access to data in a Java web app using Microsoft Authentication Library.
 abstract: | 
   By the end of this module, you'll be able to:
 
-  - Register a web application with Azure Active Directory
-  - Sign in users in an Azure Active Directory tenant to a Java web application
-  - Authorize access to data in a Microsoft API
+  - Register a web application with Microsoft Entra ID.
+  - Sign in users in a Microsoft Entra tenant to a Java web application.
+  - Authorize access to data in a Microsoft API.
 
 prerequisites: | 
   - Tomcat 9 is installed and running on the development machine
   - Maven 3 is installed and running on the development machine
   - Java 8 or above is installed on the development machine
   - Familiarity with building Java web application with Maven and running it on a Tomcat server
-  - An Azure subscription and Azure Active Directory tenant
+  - An Azure subscription and Microsoft Entra tenant
   - An IDE like Visual Studio Code to edit code
 
 iconUrl: /training/achievements/azure-java-app-enable-authentication-authorization.svg

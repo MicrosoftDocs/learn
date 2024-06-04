@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-release-pipeline.explore-release-jobs
+title: Explore release jobs
+metadata:
+  title: Explore release jobs
+  description: "Explore release jobs"
+  ms.date: 05/28/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-explore-release-jobs.md)]

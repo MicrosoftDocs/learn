@@ -4,11 +4,10 @@ title: Exercise - Measure in MR and filter in Power Apps
 metadata:
   title: Exercise - Measure in MR and filter in Power Apps
   description: You build two-dimensional and three-dimensional polygons during measuring, which can be used to confirm how a specific-sized object would fit within a space. 
-  ms.date: 10/19/2021
+  ms.date: 04/23/2024
   author: "Sean-Kerawala"
-  ms.author: "sekerawa"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.author: "vinnietieto"
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-measure-mr-filter.md)]
