@@ -39,7 +39,6 @@ products:
 units:
 - learn.wwl.secure-application-secrets-use-key-vault.introduction
 - learn.wwl.secure-application-secrets-use-key-vault.create-azure-service
-- learn.wwl.secure-application-secrets-use-key-vault.configure-connection-string-secret
 - learn.wwl.secure-application-secrets-use-key-vault.create-managed-identity-for-microsoft-services
 - learn.wwl.secure-application-secrets-use-key-vault.configure-managed-identity-access-key-vault
 - learn.wwl.secure-application-secrets-use-key-vault.update-application-configure
