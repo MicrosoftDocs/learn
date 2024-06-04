@@ -34,6 +34,5 @@ products:
 - azure-spring-apps
 units:
 - learn.wwl.secure-mysql-database-key-vault-use-private-endpoint.test-configuration
-- learn.wwl.secure-mysql-database-key-vault-use-private-endpoint.summary
 badge:
   uid: learn.wwl.secure-mysql-database-key-vault-using-private-endpoint.badge
