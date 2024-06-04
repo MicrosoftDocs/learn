@@ -38,7 +38,6 @@ units:
 - learn.wwl.create-configure-azure-service-bus-azure-spring-apps.create-azure-service-bus
 - learn.wwl.create-configure-azure-service-bus-azure-spring-apps.send-messages-azure-service-bus
 - learn.wwl.create-configure-azure-service-bus-azure-spring-apps.update-existing-microsoft-service-queues
-- learn.wwl.create-configure-azure-service-bus-azure-spring-apps.add-message-producers-listeners
 - learn.wwl.create-configure-azure-service-bus-azure-spring-apps.knowledge-check
 - learn.wwl.create-configure-azure-service-bus-azure-spring-apps.summary
 badge:
