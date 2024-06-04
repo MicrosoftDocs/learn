@@ -1,4 +1,4 @@
-In this module, you learned about batch transcription, a cognitive service available on Azure. You learned about the different types of features available, how to use batch transcription, and you created a custom speech model to use with batch transcription.
+In this module, you learned about batch transcription, a cognitive service available on Azure. You learned about the different types of features available and how to use batch transcription, and you created a custom speech model to use with batch transcription.
 
 Now that you completed this module, you should be able to:
 

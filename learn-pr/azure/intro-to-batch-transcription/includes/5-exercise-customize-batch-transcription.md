@@ -6,7 +6,7 @@ The first step to train a model is to upload training data. For more information
 
 1. Sign in to the [Custom Speech portal](https://speech.microsoft.com/portal)
 
-1. Go to **Speech-to-text** > **Custom Speech**.
+1. Go to **Speech to text** > **Custom Speech**.
 
     :::image type="content" source="../media/5-azure-speech-portal.png" alt-text="Screenshot showing the home page of the speech portal with a red line around custom models.":::
 
@@ -52,24 +52,23 @@ It might take several minutes for your model to complete training. In the meanti
 
 ## Set up your custom transcription
 
-1. In the exercise sandbox, paste the following command to get our environment variables ready for the next transcription. These variables use the same resources that we set up in the last exercise.
+In the exercise sandbox, paste the following command to get our environment variables ready for the next transcription. These variables use the same resources that we set up in the last exercise.
 
-    ```bash
-    # Get and set the names from the previous exercise
-    subscription=$(az account list --query [0].id -o tsv)
-    resourceGroupName=$(az group list --query "[0] | name" -o tsv)
-    lastchars=${resourceGroupName: -10}
-    blobName=blob$lastchars
-    blobContainerName=container$lastchars
-    blobConnectionString=$(az storage account show-connection-string -g $resourceGroupName -n $blobName --query "connectionString" -o tsv)
-    apiKeySpeech=$(az cognitiveservices account keys list -g $resourceGroupName -n cognitive-services-account-resource-speech --query [key1] -o tsv)
-    # Create a new SAS Token
-    end=`date -u -d "59 minutes" '+%Y-%m-%dT%H:%MZ'`
-    sasToken=$(az storage container generate-sas -n $blobContainerName --permissions rwl --expiry $end --connection-string $blobConnectionString -o tsv)
-    # Create the new URI for the storage container
-    contentContainerUrl="https://$blobName.blob.core.windows.net/$blobContainerName/?$sasToken"
-
-    ```
+```bash
+# Get and set the names from the previous exercise
+subscription=$(az account list --query [0].id -o tsv)
+resourceGroupName=$(az group list --query "[0] | name" -o tsv)
+lastchars=${resourceGroupName: -10}
+blobName=blob$lastchars
+blobContainerName=container$lastchars
+blobConnectionString=$(az storage account show-connection-string -g $resourceGroupName -n $blobName --query "connectionString" -o tsv)
+apiKeySpeech=$(az cognitiveservices account keys list -g $resourceGroupName -n cognitive-services-account-resource-speech --query [key1] -o tsv)
+# Create a new SAS Token
+end=`date -u -d "59 minutes" '+%Y-%m-%dT%H:%MZ'`
+sasToken=$(az storage container generate-sas -n $blobContainerName --permissions rwl --expiry $end --connection-string $blobConnectionString -o tsv)
+# Create the new URI for the storage container
+contentContainerUrl="https://$blobName.blob.core.windows.net/$blobContainerName/?$sasToken"
+```
 
 ## Use your custom model
 
@@ -131,7 +130,7 @@ We can do this by using an endpoint, or linking directly to the model. Here, we 
 
     ```
 
-    Take note of the status. After it states **Succeeded**, then move on. It might take a minute or two to run. If it states the job is still running, wait 20 seconds, then paste the previous command into the terminal and run it again. Repeat this until the status is **Succeeded**.
+    Notice the status. After it states **Succeeded**, then move on. It might take a minute or two to run. If it states the job is still running, wait 20 seconds, then paste the previous command into the terminal and run it again. Repeat this until the status is **Succeeded**.
 
 1. Run the following command to retrieve the URI for the transcription information and download the individual transcription files.
 
