@@ -40451,177 +40451,177 @@
     },
     {
       "source_path": "learn-pr/wwl-azure/configure-azure-event-hubs-azure-spring-apps/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/configure-azure-event-hubs-azure-spring-apps/3-automate-github-actions-workflow.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/configure-azure-event-hubs-azure-spring-apps/5-blue-green-deployment-strategies-azure-spring-cloud.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/configure-azure-event-hubs-azure-spring-apps/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/configure-azure-event-hubs-azure-spring-apps/6-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/configure-azure-event-hubs-azure-spring-apps/7-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/configure-azure-event-hubs-azure-spring-apps/4-understand-blue-green-deployments-for-applications-azure-spring-cloud.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/configure-azure-event-hubs-azure-spring-apps/2-use-github-actions-workflow.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/create-configure-azure-service-bus-azure-spring-apps/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/create-configure-azure-service-bus-azure-spring-apps/5-add-message-producers-listeners.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/create-configure-azure-service-bus-azure-spring-apps/2-create-azure-service-bus.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/create-configure-azure-service-bus-azure-spring-apps/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/create-configure-azure-service-bus-azure-spring-apps/6-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/create-configure-azure-service-bus-azure-spring-apps/3-send-messages-azure-service-bus.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/create-configure-azure-service-bus-azure-spring-apps/7-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/create-configure-azure-service-bus-azure-spring-apps/4-update-existing-microsoft-service-queues.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/8-access-application-use-domain-name-services.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/5-acquire-self-signed-certificate-add-to-key-vault.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/9-configure-for-application-gateway.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/4-configure-internal-domain-name-services.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/6-configure-public-domain-name-azure-spring-cloud.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/2-configure-virtual-network-for-azure-spring-cloud.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/7-create-application-gateway-resources.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/3-deploy-azure-spring-cloud-virtual-network.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/10-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/11-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/secure-mysql-database-key-vault-use-private-endpoint/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/secure-mysql-database-key-vault-use-private-endpoint/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/secure-mysql-database-key-vault-use-private-endpoint/5-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/secure-mysql-database-key-vault-use-private-endpoint/2-private-endpoint.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/secure-mysql-database-key-vault-use-private-endpoint/3-secure-key-vault.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/secure-mysql-database-key-vault-use-private-endpoint/6-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/secure-mysql-database-key-vault-use-private-endpoint/4-test-configuration.md",
-      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
     }
   ]
