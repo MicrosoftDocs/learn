@@ -40528,6 +40528,11 @@
       "source_path": "learn-pr/wwl-azure/create-configure-azure-service-bus-azure-spring-apps/4-update-existing-microsoft-service-queues.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/protect-endpoints-use-web-application-firewall/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/expand-capabilities-java-azure/",
+      "redirect_document_id": false
     }
   ]
 }
