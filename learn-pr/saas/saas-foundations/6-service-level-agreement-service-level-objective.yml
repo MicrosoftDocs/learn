@@ -3,8 +3,8 @@ uid: learn.saas-foundations.sla-and-slo
 title: SLA and SLO
 metadata:
   title: SLA and SLO
-  description: "Difference between SLA and SLO. How to define SLA or SLO"
-  ms.date: 09/11/2022
+  description: Learn about definitions and differences between Service-Level Agreement (SLA) and Service-Level Objectives (SLO).
+  ms.date: 05/28/2024
   author: kostinams
   ms.author: irkostin
   ms.topic: unit
