@@ -3561,5 +3561,5 @@ achievements:
 - uid: learn.azure-admin-monitor-backup-resources.trophy
   type: trophy
   title: Monitor and back up resources for Azure administrators
-  description: Learn how to monitor and back up Azure resources.
+  summary: Learn how to monitor and back up Azure resources.
   iconUrl: /training/achievements/azure-administrator-monitor-backup-resources.svg
