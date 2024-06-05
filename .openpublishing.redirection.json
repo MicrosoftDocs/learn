@@ -34011,6 +34011,36 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/azure-administrator-prerequisites/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-104-administrator-prerequisites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-administrator-manage-identities-governance/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-104-manage-identities-governance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-administrator-manage-storage/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-104-manage-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-administrator-manage-compute-resources/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-104-manage-compute-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-administrator-manage-virtual-networks/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-104-manage-virtual-networks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-administrator-monitor-backup-resources/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-104-monitor-backup-resources",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance/",
       "redirect_document_id": false
