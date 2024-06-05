@@ -19,7 +19,7 @@ abstract: |
   - Use the .NET Aspire dashboard to monitor the telemetry data from a cloud-native application.
   - Add ILogger messages to the .NET Aspire application.
 ratingEnabled: true
-iconUrl: /training/achievements/dotnet-aspiresvg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

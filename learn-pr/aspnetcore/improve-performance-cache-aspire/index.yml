@@ -19,7 +19,7 @@ abstract: |
   - Use a Redis distributed cache to increase performance in a .NET Aspire app.
   - Use a Redis output cache to complete HTML responses in a .NET Aspire app.
 ratingEnabled: true
-iconUrl: /training/achievements/dotnet-aspiresvg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
