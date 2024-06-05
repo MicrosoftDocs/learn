@@ -1,41 +1,41 @@
-Orleans is designed to provide powerful features through approachable patterns. Although Orleans can be implemented in various ways, a standard setup will generally consist of the following tasks:
+Orleans provided powerful features through approachable patterns. Although you can implement Orleans in various ways, a standard setup generally consists of the following tasks:
 
-* Create grain classes and interfaces to represent your data or entities.
-* Configure the necessary silos and storage locations in _Program.cs_.
-* Inject grain factories into your app components to create and utilize grains.
+- Create grain classes and interfaces to represent your data or entities.
+- Configure the necessary silos and storage locations in _Program.cs_.
+- Inject grain factories into your app components to create and use grains.
 
-Let's explore each of these steps more closely.
+This unit explores each of these tasks more closely.
 
 ## How are grains implemented?
 
 From a coding perspective, a grain is a standard C# class that usually implements the following three concepts:
 
-1. The implementation inherits from the Orleans <xref:Orleans.Grain> base class, which manages various internal behaviors and integration points with Orleans.
+- The implementation inherits from the Orleans <xref:Orleans.Grain> base class, which manages various internal behaviors and integration points with Orleans.
 
-1. The grain implements one of the following grain interface types. Each of these interfaces defines a similar contract, but marks your class with a different data type for the identifier that Orleans uses to track the grain, such as a `string` or `integer`.
+- The grain implements one of the following grain interface types. Each of these interfaces defines a similar contract, but marks your class with a different data type for the identifier that Orleans uses to track the grain, such as a `string` or `integer`.
 
-* `IGrainWithGuidKey`
-* `IGrainWithIntegerKey`
-* `IGrainWithStringKey`
-* `IGrainWithGuidCompoundKey`
-* `IGrainWithIntegerCompoundKey`
+  - `IGrainWithGuidKey`
+  - `IGrainWithIntegerKey`
+  - `IGrainWithStringKey`
+  - `IGrainWithGuidCompoundKey`
+  - `IGrainWithIntegerCompoundKey`
 
-1. A grain also usually implements an interface of your design to manage custom data and behavior. A sample grain interface for a shopping cart might look like the following code:
+- A grain also usually implements an interface of your design to manage custom data and behavior. A sample grain interface for a shopping cart might look like the following code:
 
-    ```csharp
-    public interface IShoppingCartGrain
-    {
-        Task<bool> AddOrUpdateItemAsync(int quantity, ProductDetails product);
+   ```csharp
+   public interface IShoppingCartGrain
+   {
+       Task<bool> AddOrUpdateItemAsync(int quantity, ProductDetails product);
 
-        Task RemoveItemAsync(ProductDetails product);
+       Task RemoveItemAsync(ProductDetails product);
 
-        Task<IEnumerable<CartItem>> GetAllItemsAsync();
+       Task<IEnumerable<CartItem>> GetAllItemsAsync();
 
-        Task<int> GetCartItemsCount();
+       Task<int> GetCartItemsCount();
 
-        Task EmptyCartAsync();
-    }
-    ```
+       Task EmptyCartAsync();
+   }
+   ```
 
 With these three concepts in mind, consider the following pseudo code, which represents a `ShoppingCartGrain` class implementation. The class inherits from the grain base class and implements the appropriate interfaces:
 
@@ -57,7 +57,7 @@ public sealed class ShoppingCartGrain
 }
 ```
 
-You can create as many different types of grains as your application requires. Grains can represent any entity that includes state and behavior. Remember, as you create grains in your application, Orleans will handle storing and managing those grains using silos.
+You can create as many different types of grains as your application requires. Grains can represent any entity that includes state and behavior. Remember, as you create grains in your application, Orleans stores and manages those grains using silos.
 
 ## How are silos implemented?
 
@@ -79,7 +79,7 @@ builder.Host.UseOrleans(siloBuilder =>
 
 ## Use grains in your application
 
-Once your grains are created and your silos are configured, you can begin using those grains in your application. For example, consider the following Razor Page in ASP.NET Core, which uses grains to populate a shopping cart page:
+After your grains are created and your silos are configured, you can begin using those grains in your application. For example, consider the following Razor Page in ASP.NET Core, which uses grains to populate a shopping cart page:
 
 ```csharp
 public sealed class CartModel(IGrainFactory grainFactory) : PageModel
@@ -102,8 +102,8 @@ public sealed class CartModel(IGrainFactory grainFactory) : PageModel
 
 The preceding code accomplishes the following tasks:
 
-* Injects an Orleans <xref:Orleans.IGrainFactory> into the [primary constructor](/dotnet/csharp/whats-new/tutorials/primary-constructors) of the Razor Page. A default grain factory implementation is provided by Orleans and made available through the .NET Core dependency resolver.
-* The `OnGet` method then uses the grain factory to retrieve the correct shopping cart grain for the current user.
-* The `GetAllItemsAsync` method retrieves all of the items currently in the shopping cart and binds them to a `CartItems` property. The Razor Page could then display those items in the UI using the matching Razor syntax template.
+- Injects an Orleans <xref:Orleans.IGrainFactory> into the [primary constructor](/dotnet/csharp/whats-new/tutorials/primary-constructors) of the Razor Page. Orleans provides a default grain factory implementation, which is made available through the .NET Core dependency resolver.
+- The `OnGet` method then uses the grain factory to retrieve the correct shopping cart grain for the current user.
+- The `GetAllItemsAsync` method retrieves all of the items currently in the shopping cart and binds them to a `CartItems` property. The Razor Page could then display those items in the UI using the matching Razor syntax template.
 
-Although this example depicts a fairly standard development scenario, by using Orleans your code automatically gains several advantages. Your code will continue to work as your application scales across many instances and users without any further changes. Orleans can also handle failures or disruptions in the underlying infrastructure to preserve the state of the shopping cart for the user. In the next step you'll, explore these types of advantages more closely.
+Although this example depicts a fairly standard development scenario, by using Orleans your code automatically gains several advantages. Your code continues to work as your application scales across many instances and users without any further changes. Orleans can also handle failures or disruptions in the underlying infrastructure to preserve the state of the shopping cart for the user. In the next step, explore these types of advantages more closely.
