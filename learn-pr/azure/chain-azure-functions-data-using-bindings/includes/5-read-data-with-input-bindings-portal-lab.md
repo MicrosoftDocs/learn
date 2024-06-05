@@ -40,7 +40,7 @@ A database account is a container for managing one or more databases. Before we 
 
 1. Deployment can take some time. Wait for a **Deployment succeeded** message in the Notifications hub before proceeding.
 
-    :::image type="content" source="../media/5-db-deploy-success.PNG" alt-text="Screenshot of a notification that database account deployment has completed.":::
+    :::image type="content" source="../media/5-db-deploy-success.PNG" alt-text="Screenshot of a notification that database account deployment is completed.":::
 
 1. Select **Go to resource** to go to the database account in the portal. The **Quick start** pane for your Azure Cosmos DB account appears.
 
@@ -60,7 +60,7 @@ Let's use the Data Explorer tool to create a database and container.
 
     | Setting | Value | Description |
     |---|---|---|
-    | Database id | Select **Create new**, and enter *func-io-learn-db* for the Database id | Database names can be 1 to 255 characters long, and can't contain /, \\, #, ?, or a trailing space.<br>You can enter whatever you want, but we're using *func-io-learn-db* in this module. |
+    | Database id | Select **Create new**, and enter *func-io-learn-db* for the Database id | Database names can be 1 to 255 characters long, and can't contain `/, \\, #, ?`, or a trailing space.<br>You can enter whatever you want, but we're using *func-io-learn-db* in this module. |
     | Database Max RU/s | 4000 |Accept the default throughput of 4000 request units per second (RU/s). To reduce latency, you can scale up the performance later. |
     | Container id | *Bookmarks* | Container IDs have the same character requirements as database names. We're using *Bookmarks* in this module.|
     | Partition key | /id  | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. We use the *Partition key* setting as a convenience here because we're not concerned with database performance in this module. To learn more about Azure Cosmos DB partition key strategies, explore the Microsoft Learn Azure Cosmos DB modules. |
@@ -100,7 +100,7 @@ You want to add data to your **Bookmarks** container. Use Data Explorer to store
 
     | Property | Description |
     |---|---|
-    | `_rid` | Resource ID is a unique identifier that is also hierarchical per the resource stack on the resource model. It's used internally for placement and navigation of the item resource. |
+    | `_rid` | Resource ID is a unique identifier that is also hierarchical per the resource stack on the resource model. The ID is used internally for placement and navigation of the item resource. |
     | `_self` | Unique addressable URI for the resource. |
     | `_etag` | Required for optimistic concurrency control. |
     | `_attachments` | Addressable path for the attachments resource. |
@@ -136,7 +136,7 @@ You want to add data to your **Bookmarks** container. Use Data Explorer to store
     }
     ```
 
-1. When you've finished entering the bookmark data, your container should look like the following image.
+1. When you finish entering the bookmark data, your container should look like the following image.
 
     :::image type="content" source="../media/5-db-bookmark-collection-small.png" alt-text="Screenshot of SQL API data showing collection of items in bookmarks container of the func-io-learn-db." lightbox="../media/5-db-bookmark-collection.png":::
 
@@ -158,7 +158,7 @@ Your **Bookmarks** container has five items. In this scenario, if a request arri
 
 ### Verify the function
 
-You can verify what we've done so far by testing the new function.
+You can verify our progress so far by testing the new function.
 
 1. In the command bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
@@ -209,7 +209,7 @@ Now that your binding is defined, you can use it in your function. You need to m
 
 - Modify your function's language-specific implementation code. It needs to determine whether a document was found in the database that matches the ID that is passed to the function.
 
-- Modify your function's JSON implementation code to accept a parameter that is passed in the query string.
+- Modify your function's JSON implementation code so that it accepts a parameter that is passed in the query string.
 
 ::: zone pivot="javascript"
 

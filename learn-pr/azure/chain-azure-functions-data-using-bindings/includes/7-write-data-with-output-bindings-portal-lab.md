@@ -6,7 +6,7 @@ In this scenario, we receive requests to add bookmarks to our collection. The re
 
 If the key that was passed to us isn't found, we add the new bookmark to our database. We could stop there, but let's do a little more.
 
-Notice another step in the flowchart? So far, we haven't done much with the data that we receive in terms of processing. We move what we receive into a database. However, in a real solution, we'd probably process the data in some fashion. We can do all the processing in the same function, but in this exercise, we show a pattern that offloads further processing to another component or piece of business logic.
+Notice another step in the flowchart? So far, we didn't do much with the data that we received in terms of processing. We move what we receive into a database. However, in a real solution, we'd probably process the data in some fashion. We can do all the processing in the same function, but in this exercise, we show a pattern that offloads further processing to another component or piece of business logic.
 
 What might be a good example of offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would, in turn, generate a QR code for the URL, store the image in Blob Storage, and add the address of the QR image into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming. So rather than wait for the result, we hand the task off to a function and let it complete this task asynchronously.
 
@@ -83,7 +83,7 @@ Now we have a binding to read from our collection, and a binding to write to it.
 
 ## Add an Azure Queue Storage output binding
 
-Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages--up to the total capacity of the storage account in which it's defined. The following diagram shows, at a high level, how a queue is used in our scenario.
+Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages--up to the total capacity of the storage account in which it's defined in. The following diagram shows, at a high level, how a queue is used in our scenario.
 
 :::image type="content" source="../media/7-q-logical-small.png" alt-text="Illustration showing a storage queue with a function pushing and another function popping messages.":::
 
@@ -134,7 +134,7 @@ Let's break down what this code does:
 
 * Because this function changes our data, we expect the HTTP request to be a POST, and the bookmark data to be part of the request body.
 * Our Azure Cosmos DB input binding attempts to retrieve a document, or bookmark, by using the `id` that we receive. If it finds an entry, the `bookmark` object is set. The `if(bookmark)` condition checks to see whether an entry was found.
-* Adding to the database is as simple as setting the `context.bindings.newbookmark` binding parameter to the new bookmark entry, which we've created as a JSON string.
+* Adding to the database is as simple as setting the `context.bindings.newbookmark` binding parameter to the new bookmark entry, which we created as a JSON string.
 * Posting a message to our queue is as simple as setting the `context.bindings.newmessage` parameter.
 
 > [!NOTE]
@@ -266,6 +266,6 @@ Azure Queue Storage queues are hosted in a storage account. You configured the s
 
     In this example, the message was given a unique ID, and the **Message text** column displays your bookmark in JSON format. There's no message for the Azure `docs` bookmark that you tried to add because it already existed in the database.
 
-1. You can test the function further by changing the request body in the test pane with new id/url sets, and running the function. Watch this queue to see more messages arrive. You can also look at the database to verify that new entries have been added.
+1. You can test the function further by changing the request body in the test pane with new id/url sets, and running the function. Watch this queue to see more messages arrive. You can also look at the database to verify that new entries are added.
 
-In this exercise, we expanded your knowledge of bindings to output bindings, and writing data to your Azure Cosmos DB. We added an output binding to post messages to an Azure queue. This example demonstrates the true power of bindings to help you shape and move data from incoming sources to various destinations. We haven't written any database code or had to manage connection strings ourselves. Instead, we configured bindings declaratively, and let the platform take care of securing connections, scaling our function, and scaling our connections.
+In this exercise, we expanded your knowledge of bindings to output bindings, and writing data to your Azure Cosmos DB. We added an output binding to post messages to an Azure queue. This example demonstrates the true power of bindings to help you shape and move data from incoming sources to various destinations. We didn't have to write any database code or manage connection strings ourselves. Instead, we configured bindings declaratively, and let the platform take care of securing connections, scaling our function, and scaling our connections.
