@@ -63,7 +63,7 @@ You should choose a company name that's easy to say. There are two parts to this
 
 ## Safe in other languages
 
-We've all heard of company and product names that turned out to be an insult in another language.
+Some company and product names can turn out to be an insult in another language.
 
 Research online to make sure that your preferred name doesn't translate to something offensive. You might also decide to test similar-sounding words with different spellings, and to check with people who speak the language of your target non-English-speaking markets.
 

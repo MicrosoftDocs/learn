@@ -12,7 +12,7 @@ We also introduce the concept of a personal brand for startup founders. We discu
 
 By the end of the module, you learn:
 
-- What makes a good name for a startup, and how to come up with potential names.
-- The mistakes that founders commonly make when choosing a name, and how to avoid them.
+- How to come up with potential names for your startup, and what makes a good name.
+- How to avoid the mistakes that founders commonly make when choosing a name.
 - Why and how to secure the right domains for your company.
 - Why and how you should invest time in building your personal brand as the external face of the company.
