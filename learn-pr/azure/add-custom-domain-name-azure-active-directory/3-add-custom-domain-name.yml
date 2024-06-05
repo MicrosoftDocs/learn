@@ -5,8 +5,8 @@ metadata:
   title: Add a custom domain name in Microsoft Entra ID
   description: Learn how to associate your custom domain with Microsoft Entra ID, set it to be the primary domain, and then add pilot users.
   ms.date: 09/22/2022
-  author: ajburnle
-  ms.author: ajburnle
+  author: amycolannino
+  ms.author: amycolannino
   ms.topic: unit
   ms.custom:
     - devx-track-azurepowershell

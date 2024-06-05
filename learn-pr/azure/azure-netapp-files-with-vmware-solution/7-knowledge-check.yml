@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-with-vmware-solution.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of Azure NetApp Files.
+  ms.date: 04/08/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+quiz: 
+  questions: 
+  - content: "Which statement is true about Azure NetApp Files?"
+    choices: 
+    - content: "Azure NetApp Files is an Azure-native first-party solution."
+      isCorrect: true
+      explanation: "Azure NetApp Files is an Azure first-party service natively integrated into the Azure platform."
+    - content: "Azure NetApp Files is an Azure Marketplace offering."
+      isCorrect: false
+      explanation: "Azure NetApp Files is an Azure first-party service natively integrated into the Azure platform."
+    - content: "For Azure NetApp Files technical support, you must contact NetApp."
+      isCorrect: false
+      explanation: "Azure NetApp Files is an Azure first-party solution completely supported by Microsoft."
+  - content: "Which option isn't a best practice when deploying Azure NetApp Files as an AVS datastore?"
+    choices: 
+      - content: "Using a dedicated virtual network for your Azure NetApp Files volumes."
+        isCorrect: false 
+        explanation: "Incorrect. Having a dedicated VNet for your Azure NetApp Files volumes provides optimal performance."
+      - content: "Connecting your Azure NetApp Files VNet using an ExpressRoute gateway with the `UltraPerformance` or `ErGw3Az` SKU."
+        isCorrect: false
+        explanation: "Correct. Using the `UltraPerformance` or `ErGw3Az` SKU ensures the best network performance between your AVS private cloud and the Azure NetApp Files service."
+      - content: "Enabling FastPath on the connection between your AVS private cloud and ExpressRoute gateway."
+        isCorrect: false
+        explanation: "Incorrect. Using FastPath on the connection between your AVS private cloud and ExpressRoute gateway ensures the best network performance between your AVS private cloud and the Azure NetApp Files service."
+      - content: "When deploying Azure NetApp Files, the Ultra service level should always be used to meet the performance needs of the workload."
+        isCorrect: true 
+        explanation: "Selecting the appropriate service level for your volume based on the workload demands prevents over-provisioning and wasted resources."
+  - content: "Which is not a primary business benefit of attaching Azure NetApp Files to AVS?"
+    choices:
+    - content: "Reduced Azure VMware Solution CPU and memory costs."
+      isCorrect: false
+      explanation: "Azure NetApp Files allows you to scale storage without the cost of additional Azure VMware Solution hosts providing opportunity for decrease total cost of ownership."
+    - content: "Azure NetApp Files is a shared file service and doesn't offer block protocol connectivity."
+      isCorrect: true
+      explanation: "Azure NetApp Files is a shared file service and doesn't offer block protocol connectivity."
+    - content: "Nondisruptive storage scaling as business needs change."
+      isCorrect: false
+      explanation: "Azure NetApp Files can scale up and down nondisruptively to meet changing business needs."
+    - content: "Built-in data protection features."
+      isCorrect: false 
+      explanation: "Azure NetApp Files includes data protection features such as snapshots, backup, and cross-zone/cross-region replication."
+
+
+ 
