@@ -33,7 +33,7 @@ For more information, see [Qubit parameters of the Azure Quantum Resource Estima
 
 ### QEC schemes
 
-Quantum error correction (QEC) is crucial for any quantum-computing platform to achieve truly scalable quantum computation. The set of operations a quantum computing platform permits are limited by physical constraints and might not match the operations prescribed in the algorithm. Even if the operations that the quantum computer offers match the operations in the algorithm, the accuracy to which the quantum computer can perform each operation is likely to be limited.
+Quantum error correction (QEC) is crucial for any quantum-computing platform to achieve truly scalable quantum computation. The set of operations a quantum computing platform permits is limited by physical constraints and might not match the operations prescribed in the algorithm. Even if the operations that the quantum computer offers match the operations in the algorithm, the accuracy to which the quantum computer can perform each operation is likely to be limited.
 
 The Azure Quantum Resource Estimator provides three predefined QEC schemes: two *surface code* protocols for gate-based and Majorana physical instruction sets, and the *Floquet code* protocol, which can be used only with a Majorana physical instruction set.
 
