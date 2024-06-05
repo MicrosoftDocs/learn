@@ -42,7 +42,7 @@ As an IT admin or business decision maker, you must find modern methods and tech
 
 You can help protect resources and devices by using mobile device management (MDM) and mobile application management (MAM) services and tools.
 
-- MAM enables organizations to manage and protect their data within an application.
+- MAM enables organizations to manage and protect their data within applications.
 - MDM enables organizations to protect and secure their resources and data based on enrolled devices.
 
 By using MAM and MDM, organizations can ensure that only authorized people and devices get access to proprietary information. Device users can feel comfortable accessing work data from their devices, such as phones, because they know their devices meet their organization's security requirements.
@@ -57,7 +57,7 @@ MDM and MAM solutions must accomplish the following tasks:
 - Create and distribute digital policies that help keep company data safe on organization-owned and personal devices.
 - Ensure that users get a first-class support experience for the products they need to use, such as Office and Edge.
 
-By implementing a management infrastructure, you can provide your users with IT services, apps, protection, and configuration to them be more productive. For instance, users can automatically get their certificates, wireless network profiles, and virtual private network (VPN) settings without manually configuring them. Users are more productive because they don't have to do manual configuration, and are better protected because they have the correct settings.
+By implementing a management infrastructure, you can provide your users with IT services, apps, protection, and configuration to help them be more productive. For instance, users can automatically get their certificates, wireless network profiles, and virtual private network (VPN) settings without manually configuring them. Users are more productive because they don't have to do manual configuration, and are better protected because they have the correct settings.
 
 You might know and already be using services and tools like Microsoft Intune, Microsoft Endpoint Configuration Manager, co-management, and Windows Autopilot. Microsoft Intune now combines all these services and tools. Intune is part of the Microsoft 365 stack of services that help protect your organization's endpoints by securing access, protecting data, and managing risk.
 

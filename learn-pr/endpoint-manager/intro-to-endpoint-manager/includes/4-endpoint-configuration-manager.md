@@ -1,4 +1,4 @@
-Microsoft Endpoint Configuration Manager is a computer management solution. You can use Configuration Manager to manage desktops, servers, and laptops that are on your network or the internet. You can attach your Configuration Manager deployment to the Microsoft 365 cloud to provide integration with Intune, Microsoft Entra ID, Microsoft Defender, and other cloud services.
+Microsoft Endpoint Configuration Manager is a computer management solution. You can use Configuration Manager to manage desktop computers, laptops, and servers that are on your network or the internet. You can attach your Configuration Manager deployment to the Microsoft 365 cloud to provide integration with Intune, Microsoft Entra ID, Microsoft Defender, and other cloud services.
 
 You can use Configuration Manager to:
 

@@ -8,4 +8,4 @@ Endpoint analytics are part of the [Microsoft Adoption Score](/microsoft-365/adm
 
 The following screenshot displays the endpoint analytics pane:
 
-![Screenshot of Endpoint analytics pane.](../media/intro-to-endpoint-manager-11.png)
+:::image type="content" source="../media/intro-to-endpoint-manager-11.png" alt-text="Screenshot of Endpoint analytics pane.":::

@@ -4,12 +4,12 @@ The only interaction required from the end user is to connect to a network and v
 
 You can configure Windows Autopilot to do the following tasks by using cloud-based services:
 
-- Automatically join devices to Microsoft Entra ID
-- Autoenroll devices into mobile device management (MDM) services such as Microsoft Intune
-- Restrict rights on the device
-- Autoassign devices to configuration groups
-- Present customized out-of-box-experience (OOBE) content for your organization
-- Reset, repurpose, and recover devices
+- Automatically join devices to Microsoft Entra ID.
+- Autoenroll devices into mobile device management (MDM) services such as Microsoft Intune.
+- Restrict rights on the device.
+- Autoassign devices to configuration groups.
+- Present customized out-of-box-experience (OOBE) content for your organization.
+- Reset, repurpose, and recover devices.
 
 By using cloud-based technologies, Windows Autopilot:
 

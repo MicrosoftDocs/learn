@@ -3,7 +3,7 @@ Microsoft Intune provides cloud-based mobile device management (MDM), cloud-base
 Microsoft Intune integrates closely with:
 
 - Microsoft Entra ID for identity and access control.
-- Microsoft Purview Information Protection
+- Microsoft Purview Information Protection.
 - Microsoft Defender advanced threat protection products.
 
 When you use Microsoft Intune with Microsoft 365, you can help your workforce be productive on all their devices while protecting your organization's information. If you have on-premises infrastructure such as Exchange or an Active Directory, you can use Intune connectors to help you connect to external services. Intune is included in Microsoft's [Enterprise Mobility + Security (EMS) suite](https://www.microsoft.com/microsoft-365/enterprise-mobility-security?azure-portal=true).
