@@ -5,8 +5,8 @@ metadata:
   description: Learn how to manage storage as an Azure administrator.
   brand: azure
   ms.date: 05/15/2020
-  author: tamram
-  ms.author: tamram
+  author: normesta
+  ms.author: normesta
   ms.topic: learning-path
 title: Implement and manage storage for Azure administrators
 summary: |

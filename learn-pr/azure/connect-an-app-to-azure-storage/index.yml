@@ -4,8 +4,8 @@ metadata:
   title: Connect an app to Azure Storage
   description: 'Create a simple application and add configuration, client library references, and C# or JavaScript code to connect it to Azure Storage.'
   ms.date: 09/19/2023
-  author: tamram
-  ms.author: tamram
+  author: normesta
+  ms.author: normesta
   ms.topic: module
   ms.service: azure-storage
 title: Connect an app to Azure Storage

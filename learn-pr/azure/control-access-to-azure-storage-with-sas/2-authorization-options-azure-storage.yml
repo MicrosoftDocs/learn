@@ -4,8 +4,8 @@ metadata:
   title: Authorization options for Azure Storage
   description: Authorization options for Azure Storage
   ms.date: 09/13/2023
-  author: tamram
-  ms.author: tamram
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
 title: Authorization options for Azure Storage
 durationInMinutes: 5
