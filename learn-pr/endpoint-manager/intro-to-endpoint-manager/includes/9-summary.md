@@ -1,10 +1,10 @@
-In this module, you learned what Microsoft Intune is, and about its key services. The module covered the following information:
+In this module, you learned what Microsoft Intune is, and about the following key services it can provide for your organization:
 
-- Intune manages an organization's endpoints, including mobile devices, desktop computers, servers, and apps.
-- You manage endpoints in different environments based on where they're located.
-- Intune helps you manage and protect your organization against advanced digital threats while maintaining productivity.
-- By implementing a management infrastructure, you can provide IT services, apps, protection, and configuration to your end users.
-- Intune integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, endpoint analytics, and Windows Autopilot.
+- Manages an organization's endpoints, including mobile devices, desktop computers, servers, and apps.
+- Lets you manage endpoints in different environments based on where they're located.
+- Provides a management infrastructure to provide IT services, apps, protection, and configuration to end users.
+- Helps you manage and protect your organization against digital threats while maintaining productivity.
+- Integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, endpoint analytics, and Windows Autopilot.
 
 ## Next steps
 

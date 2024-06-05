@@ -1,6 +1,6 @@
 Microsoft Intune is a single, integrated management platform for managing, protecting, and monitoring all of your organization's endpoints.
 
-Endpoints include all the apps and devices that your organization uses. Endpoint devices include:
+Endpoints include all the apps and devices that your organization uses. Endpoints include the following devices:
 - Mobile devices
 - Desktop and laptop computers
 - Virtual machines

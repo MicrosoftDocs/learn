@@ -28,10 +28,10 @@ quiz:
     - content: "Endpoints are the policies that the users and groups of an organization use to safely transfer data."
       isCorrect: false
       explanation: "Endpoints include all the mobile devices, desktop computers, servers, and apps that an organization uses."
-    - content: "Endpoints are the employees who use an organization's devices, apps, and data."
+    - content: "Endpoints are the personnel who use an organization's devices, apps, and data."
       isCorrect: false
       explanation: "Endpoints include all the mobile devices, desktop computers, servers, and apps that an organization and its employees use."
-    - content: "Endpoints include the mobile devices, desktop computers, servers, and apps that an organization uses."
+    - content: "Endpoints are the mobile devices, desktop computers, servers, and apps that an organization uses."
       isCorrect: true
       explanation: "Intune helps manage an organization's endpoints. Endpoints include mobile devices, desktop computers, servers, and apps that an organization uses."
   - content: "What is co-management in Microsoft Intune?"
@@ -39,9 +39,9 @@ quiz:
     - content: "Co-management describes how an organization can concurrently manage Windows 10/11 devices by using both Configuration Manager and Microsoft Intune."
       isCorrect: true
       explanation: "Co-management lets you concurrently manage Windows 10/11 devices with both Configuration Manager and Intune. By using co-management, you can keep some tasks on-premises while running other tasks in the cloud."
-    - content: "Co-management describes how an organization can manage non-Windows devices by using Microsoft 365, BitLocker, and Entra ID."
+    - content: "Co-management describes how an organization can manage non-Windows devices by using Microsoft 365, BitLocker, and Microsoft Entra ID."
       isCorrect: false
       explanation: "Co-management lets you concurrently manage Windows 10/11 devices with both Configuration Manager and Intune. Co-management applies only to Windows 10/11 devices."
-    - content: "Co-management describes how you can manage company owned devices without using cloud-based services."
+    - content: "Co-management describes how you can manage company-owned devices without using cloud-based services."
       isCorrect: false
       explanation: "Co-management lets you concurrently manage Windows 10/11 devices with both on-premises Configuration Manager and cloud-based Intune. By using co-management, you can keep some tasks on-premises while running other tasks in the cloud."
