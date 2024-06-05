@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.use-databases-dotnet-aspire-app
+metadata:
+  title: Use databases in a .NET Aspire app
+  description: "Learn about the database systems that .NET Aspire can connect to using built-in components. Then see how to configure connections to, and store data in, relational and nonrelational databases."
+  ms.date: 3/20/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: module
+  ms.service: aspnet-core
+title: Use databases in a .NET Aspire app
+summary: "Learn about the database systems that .NET Aspire can connect to using built-in components. Then see how to configure connections to, and store data in, relational and nonrelational databases."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the database systems that .NET Aspire can connect to using built-in components.
+  - Use .NET Aspire components to read and write data to PostgreSQL, MySQL, and Microsoft SQL Server databases.
+  - Use .NET Aspire components to read and write data to MongoDB databases.
+prerequisites: |
+  - Experience building web applications using .NET and C#
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - developer
+  - solution-architect
+products: 
+  - dotnet
+  - vs
+  - vs-code
+subjects: 
+  - custom-app-development
+units:
+- learn.use-databases-dotnet-aspire-app.introduction
+- learn.use-databases-dotnet-aspire-app.store-data-sql-databases
+- learn.use-databases-dotnet-aspire-app.store-data-nosql-databases
+- learn.use-databases-dotnet-aspire-app.exercise-use-databases-persist-data-from-aspire-app
+- learn.use-databases-dotnet-aspire-app.knowledge-check
+- learn.use-databases-dotnet-aspire-app.summary
+badge:
+  uid: learn.use-databases-dotnet-aspire-app.badge
