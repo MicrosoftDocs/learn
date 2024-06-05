@@ -19,11 +19,17 @@ param sqlServerName string = 'sql-${uniqueString(resourceGroup().id)}'
 param webApplicationName string = 'webapp-${uniqueString(resourceGroup().id)}'
 
 // Variables
+@description('The name of the Application Insights instance.')
+var applicationInsightsName = 'appinsights-deposits'
+
 @description('The name of the app service plan.')
 var appServicePlanName = 'plan-deposits'
 
+@description('The name of the Log Analytics Workspace.')
+var logAnalyticsWorkspaceName = 'log-deposits'
+
 // Resource - App Service Plan
-resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
+resource appServicePlan 'Microsoft.Web/serverfarms@2023-12-01' = {
   name: appServicePlanName
   location: location
   sku: {
@@ -33,11 +39,19 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
 }
 
 // Resource - Web App
-resource webApplication 'Microsoft.Web/sites@2022-03-01' = {
+resource webApplication 'Microsoft.Web/sites@2023-12-01' = {
   name: webApplicationName
   location: location
   properties: {
     serverFarmId: appServicePlan.id
+    siteConfig: {
+      appSettings: [
+        {
+          name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
+          value: applicationInsights.properties.InstrumentationKey
+        }     
+      ]
+    }    
   }
 }
 
@@ -59,5 +73,28 @@ resource sqlServerDatabase 'Microsoft.Sql/servers/databases@2021-11-01' = {
   sku: {
     name: 'Standard'
     tier: 'Standard'
+  }
+}
+
+// Resource - Log Analytics Workspace
+resource logAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2023-09-01' = {
+  name: logAnalyticsWorkspaceName
+  location: location
+  properties: {
+    retentionInDays: 30
+    sku: {
+      name: 'PerGB2018'
+    }
+  }
+}
+
+// Resource - Application Insights
+resource applicationInsights 'Microsoft.Insights/components@2020-02-02' = {
+  name: applicationInsightsName
+  location: location
+  kind: 'web'
+  properties: {
+    Application_Type: 'web'
+    WorkspaceResourceId: logAnalyticsWorkspace.id
   }
 }

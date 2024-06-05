@@ -76,23 +76,6 @@ There are three possible values for the `--action-on-unmanage` parameter:
 > [!NOTE]
 > In this module, we are working with resrouce group scoped deployment stacks. In this situation, the resource group is not managed by the stack. > The 'delete all' value for the _action on unmanage_ parameter doesn't detele the resource group where the stack exists. It is necessary to delete the resource group after the stack and its resources are deleted.
 
-::: zone-end
-
-::: zone pivot="powershell"
-
-For example, if a deployment stack is created with the parameter set as `-ActionOnUnmanage DetachAll`, Azure will detach any resources no longer managed by the stack. If a subsequent update operation is run and the parameter is set as `-ActionOnUnmanage DeleteAll`, the behavior will default to `DeleteAll`.
-
-There are three possible values for the `-ActionOnUnmanage` parameter:
-
-- `DeleteAll` - deletes resources, resource groups, and management groups
-- `DeleteResources` - deletes resources, but detaches resource groups and management groups
-- `DetachAll` - detaches all resources, resource groups, and management groups
-
-> [!NOTE]
-> In this module, we are working with resrouce group scoped deployment stacks. In this situation, the resource group is not managed by the stack. > The 'delete all' value for the _action on unmanage_ parameter doesn't detele the resource group where the stack exists. It is necessary to delete the resource group after the stack and its resources are deleted.
-
-::: zone-end
-
 Let's take a look at the json output when using the Azure CLI `az stack group show` command with values set for the `--action-on-unmanage` parameter. Notice the behavior for resources, resource groups, and management groups.
 
 1. `--action-on-unmanage deleteAll`
@@ -124,3 +107,46 @@ Let's take a look at the json output when using the Azure CLI `az stack group sh
         "resources": "detach"
     },
     ```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+For example, if a deployment stack is created with the parameter set as `-ActionOnUnmanage DetachAll`, Azure will detach any resources no longer managed by the stack. If a subsequent update operation is run and the parameter is set as `-ActionOnUnmanage DeleteAll`, the behavior will default to `DeleteAll`.
+
+There are three possible values for the `-ActionOnUnmanage` parameter:
+
+- `DeleteAll` - deletes resources, resource groups, and management groups
+- `DeleteResources` - deletes resources, but detaches resource groups and management groups
+- `DetachAll` - detaches all resources, resource groups, and management groups
+
+> [!NOTE]
+> In this module, we are working with resrouce group scoped deployment stacks. In this situation, the resource group is not managed by the stack. > The 'delete all' value for the _action on unmanage_ parameter doesn't detele the resource group where the stack exists. It is necessary to delete the resource group after the stack and its resources are deleted.
+
+Let's take a look at the json output when using the Azure CLI `az stack group show` command with values set for the `--action-on-unmanage` parameter. Notice the behavior for resources, resource groups, and management groups.
+
+1. `-ActionOnUnmanage DeleteAll`
+
+    ```powershell
+    resourcesCleanupAction        : delete
+    resourceGroupsCleanupAction   : delete
+    managementGroupsCleanupAction : delete
+    ```
+
+2. `-ActionOnUnmanage DeleteResources`
+
+    ```powershell
+    resourcesCleanupAction        : delete
+    resourceGroupsCleanupAction   : detach
+    managementGroupsCleanupAction : detach
+    ```
+
+3. `-ActionOnUnmanage DetachAll`
+
+    ```powershell
+    resourcesCleanupAction        : detach
+    resourceGroupsCleanupAction   : detach
+    managementGroupsCleanupAction : detach
+    ```
+
+::: zone-end

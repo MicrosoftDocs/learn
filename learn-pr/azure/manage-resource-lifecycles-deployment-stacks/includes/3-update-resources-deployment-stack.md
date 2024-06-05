@@ -16,4 +16,4 @@ Over time, the resources that make up an application change. Properties of exist
 - Detaching a managed resource
 - Deleting a managed resource
 
-How are these changes implemented? As we discussed in the last module, deployment stacks manage resources that are defined in a ARM JSON template, Bicep file, or template spec. When you create a deployment stack, you reference one of these files to deploy your resources. The same holds true for updating a deployment stack. To update resources managed by a deployment stack, simply update the underlying template file.
+How are these changes implemented? As we discussed in the last module, deployment stacks manage resources that are defined in a ARM JSON template, Bicep file, or template spec. When you create a deployment stack, you reference one of these files to deploy your resources. The same is true for updating a deployment stack. To update resources managed by a deployment stack, simply update the underlying template file.
