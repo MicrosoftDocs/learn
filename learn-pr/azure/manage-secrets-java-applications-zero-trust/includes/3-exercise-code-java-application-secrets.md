@@ -109,7 +109,7 @@ Get the application skeleton from the https://github.com/Azure-Samples/manage-se
 git clone https://github.com/Azure-Samples/manage-secrets-in-java-applications.git
 ```
 
-This application uses the Spring Data Java Persistence API (JPA) to access the database. You can look at the CRUD Repository interface:
+This application uses Spring Data JPA to access the database. You can look at the CRUD Repository interface:
 
 ```java
 package com.example.demo;
