@@ -42,7 +42,7 @@ If you have a single producer and a single consumer, you use a single queue and 
 
 ### Sending messages to competing consumers
 
-In the competing consumers model, a producer sends messages to a single work queue. Two or more consumers retrieve messages from the queue. The consumers compete to retrieve messages because each message can only be retrieved by a single consumers.
+In the competing consumers model, a producer sends messages to a single work queue. Two or more consumers retrieve messages from the queue. The consumers compete to retrieve messages because each message can only be retrieved by a single consumer.
 
 :::image type="content" source="../media/competing-consumers.png" alt-text="Diagram showing a single RabbitMQ queue with a single producer and two competing consumers.":::
 

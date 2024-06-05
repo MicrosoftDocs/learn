@@ -21,7 +21,7 @@ quiz:
       explanation: "Incorrect. A direct exchange applies filters to messages so you can govern which queues and consumers receive them."
     - content: "Topic"
       isCorrect: false
-      explanation: "Incorrect. A topic exchange applies filters with wildcards to messages so you can flexibly govern whichh queues and consumers receive them."
+      explanation: "Incorrect. A topic exchange applies filters with wildcards to messages so you can flexibly govern which queues and consumers receive them."
     - content: "Fanout"
       isCorrect: true
       explanation: "Correct. When you use a fanout exchange, messages are copied to all the subscribers."

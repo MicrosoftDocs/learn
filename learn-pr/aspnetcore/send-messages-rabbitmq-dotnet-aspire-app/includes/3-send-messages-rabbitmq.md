@@ -64,7 +64,7 @@ var channel = connection.CreateModel();
 
 ## Sending messages
 
-Once you have the messaging channel, you can use it to set up queues, exchanges, and other components of the your messaging topology. For example, to create a queue, use this code:
+Once you have the messaging channel, you can use it to set up queues, exchanges, and other components of your messaging topology. For example, to create a queue, use this code:
 
 ```csharp
 channel.QueueDeclare(queue: "catalogEvents",
