@@ -38,8 +38,10 @@ subjects:
 units:
 - learn.wwl.design-solutions-secure-microsoft-365.introduction-security-exchange-sharepoint-onedrive-teams
 - learn.wwl.design-solutions-secure-microsoft-365.evaluate-security-posture-collaboration-productivity-workloads
-- learn.wwl.design-solutions-secure-microsoft-365.design-microsoft-defender-365-solution
 - learn.wwl.design-solutions-secure-microsoft-365.design-configurations-operational-practices-microsoft-365
+- learn.wwl.design-solutions-secure-microsoft-365.design-microsoft-defender-365-solution
+- learn.wwl.design-solutions-secure-microsoft-36.evaluate-solutions-securing-data-microsoft-purview
+- learn.wwl.design-solutions-secure-microsoft-365.evaluate-data-security-compliance-copilot
 - learn.wwl.design-solutions-secure-microsoft-365.knowledge-check
 - learn.wwl.design-solutions-secure-microsoft-365.summary
 badge:
