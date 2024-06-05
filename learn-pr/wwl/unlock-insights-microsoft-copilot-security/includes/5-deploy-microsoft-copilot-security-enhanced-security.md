@@ -5,7 +5,7 @@ Understand what you need to get started such as the minimum requirements, purcha
 Get recommendations on next steps to take to get you on your way to maximizing the capabilities in Copilot for Security. 
 
 > [!NOTE]
-> **Disclaimer:** This documentation is only intended for customers using commercial clouds. Currently, Copilot for Security is not designed for use by customers using US government clouds, including but not limited to GCC, GCC High, DoD, and Microsoft Azure Government. For more information, consult with your Microsoft representative.
+> **Disclaimer:** This documentation is only intended for customers using commercial clouds. Currently, Copilot for Security is not designed for use by customers using US government clouds, including but not limited to GCC, GCC High, DoD, and Microsoft Azure Government. For more information, see with your Microsoft representative.
 
 ## Minimum requirements
 

@@ -11,9 +11,9 @@ Each item describes where the enhancement can be experienced. For more informati
 **Experience:**  Embedded (Microsoft Purview)
 
 
-Purview (embedded experience) will provide the ability to answer users Microsoft Purview data related questions in natural language queries using existing data insights API/ solution APIs. The Purview users will be able to use Copilot for Security capabilities to summarize alerts and incidents, and get contextual summary of communications. 
+Purview (embedded experience) will provide the ability to answer users Microsoft Purview data-related questions in natural language queries using existing data insights API/ solution APIs. The Purview users will be able to use Copilot for Security capabilities to summarize alerts and incidents, and get contextual summary of communications. 
 
-Purview embedded experience leverages Copilot for Security’s natural language assistive copilot experience and enhances the Purview product experience by providing an AI assistant while using Purview. 
+Purview embedded experience uses Copilot for Security’s natural language assistive copilot experience and enhances the Purview product experience by providing an AI assistant while using Purview. 
 
 
 For more information, see: [Microsoft Copilot for Security in Microsoft Purview](/purview/copilot-in-purview-overview).
@@ -29,7 +29,7 @@ For more information, see: [Microsoft Copilot for Security in Microsoft Purview]
 CyberArk Privilege Cloud is a SaaS solution that provides a simplified path to securely store, rotate and isolate credentials (for both human and non-human users), monitor sessions, and quickly deliver scalable risk reduction to the business. You can use the CyberArk plugin with Microsoft Copilot for Security to:
 
 - List privileged accounts in Copilot for Security using natural language.
-- Leverage Copilot generative AI abilities to interact with privileged accounts data.
+- Use Copilot generative AI abilities to interact with privileged accounts data.
 
 For more information, see: [Cyberark Privilege Cloud](/copilot/security/plugin-cyberark).
 

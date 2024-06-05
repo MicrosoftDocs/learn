@@ -14,7 +14,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A security professional is tasked with analyzing a complex command-line script associated with malware. What feature of Microsoft Copilot for Security can assist in translating the script into natural language and linking indicators to their respective entities?"
+  - content: "A security professional is tasked with analyzing a complex command-line script associated with malware. What feature of Microsoft Copilot for Security can help translating the script into natural language and linking indicators to their respective entities?"
     choices:
     - content: "Impact Analysis"
       isCorrect: false

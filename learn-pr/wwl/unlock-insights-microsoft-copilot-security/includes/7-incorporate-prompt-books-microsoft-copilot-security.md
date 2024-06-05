@@ -4,26 +4,26 @@ Promptbooks in Microsoft Copilot for Security are prebuilt collections of prompt
 
 **Incident Investigation**
 1. Select the Prompts button and type "incident investigation."
-2. Choose the appropriate promptbook (e.g., Microsoft Sentinel incident investigation).
-3. Enter the incident number and click Run.
+2. Choose the appropriate promptbook (for example, Microsoft Sentinel incident investigation).
+3. Enter the incident number and select Run.
 4. Review the responses, which build on each other to generate an executive report.
 
 **Threat Actor Profile**
 1. Select the Prompts button and type "threat actor profile."
 2. Choose Threat Actor Profile.
-3. Enter the threat actor name and click Run.
+3. Enter the threat actor name and select Run.
 4. Review the generated summary report.
 
 **Suspicious Script Analysis**
 1. Select the Prompts button and type "suspicious script analysis."
 2. Choose Suspicious Script Analysis.
-3. Paste the script and click Run.
+3. Paste the script and select Run.
 4. Review the report detailing script actions and threats.
 
 **Vulnerability Impact Assessment**
 1. Select the Prompts button and type "vulnerability impact assessment."
 2. Choose Vulnerability Impact Assessment.
-3. Enter the CVE number or vulnerability name and click Run.
+3. Enter the CVE number or vulnerability name and select Run.
 4. Review the report on the vulnerability's impact and mitigation steps.
 
 #### Viewing the Promptbook Library
