@@ -3533,3 +3533,8 @@ achievements:
   title: Secure MySQL database and Key Vault using a private endpoint
   summary: You now have an Azure Spring Apps application deployed into a virtual network. In this module, you'll implement a configuration in which only connections that originate from within your virtual network are accepted.
   iconUrl: /training/achievements/5-secure-mysql-database-key-vault-using-private-endpoint.svg
+- uid: learn.azure.intro-to-content-moderator.badge
+  type: badge
+  title: Introduction to Content Moderator
+  summary: Content Moderator checks text, image, and video content for material that is potentially offensive, risky, or otherwise undesirable in content.
+  iconUrl: /training/achievements/intro-to-content-moderator.svg
