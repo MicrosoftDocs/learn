@@ -17,7 +17,7 @@ For this exercise you'll work in both the standalone experience and the embedded
 
 In this task, you enable the Microsoft Purview plugin. For this task, you work in the standalone experience.
 
-1. Open the simulated environment by selecting this link (use the right mouse key and select,'Open link in split screen window'): **Microsoft Copilot for Security.** 
+1. Open the simulated environment by selecting this link: **Microsoft Copilot for Security**.
 
 1. From the Microsoft Copilot for Security landing page, select the sources icon in the prompt bar.
     1. Expand the Microsoft plugins

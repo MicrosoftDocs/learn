@@ -7,7 +7,7 @@ In this exercise, you explore all the key landmarks in the landing page of the s
 
 ### Exercise
 
-For this exercise you're logged in Avery Howard and have the Copilot owner role.  For all the tasks in this exercise, you'll work in the Copilot standalone experience.
+For this exercise you're logged in as Avery Howard and have the Copilot owner role.  For all the tasks in this exercise, you'll work in the Copilot standalone experience.
 
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is recommended that you open the link in a split screen window. To do so, select the right mouse key and select 'Open link in split screen window'.
