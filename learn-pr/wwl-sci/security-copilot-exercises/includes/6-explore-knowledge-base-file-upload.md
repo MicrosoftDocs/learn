@@ -6,7 +6,7 @@ In this exercise, you go through the process of integrating a knowledge base int
 ### Exercise
 
 > [!NOTE]
-> It is recommended that you open the exercise environment in a separate browser window so that you can simultaneously view the instructions and the exercise environment.
+> When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
 
 Using the exercise environment, follow the exercise steps that are listed.
 

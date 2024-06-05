@@ -10,7 +10,7 @@ In this exercise, you explore the Copilot summarization capabilities available i
 For this exercise you'll work in both the standalone experience and the embedded experience. Copilot standalone experience and Microsoft Copilot in Microsoft Purview.
 
 > [!NOTE]
-> When a lab instruction calls for opening a link to the simulated environment, it is recommended that you open the link in a split screen window. To do so, select the right mouse key and select 'Open link in split screen window'.
+> When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
 
 
 #### Task: Enable the Microsoft Purview plugin

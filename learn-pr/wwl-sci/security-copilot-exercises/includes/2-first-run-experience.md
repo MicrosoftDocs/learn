@@ -3,19 +3,17 @@ The organization you work for wants to increase the efficiency and capabilities 
 In this exercise, you go through the first run experience of Microsoft Copilot for Security.
 
 - You have a global administrator role within Microsoft Entra.
-- You'll provision Microsoft Entra with one security compute unit (SCU), to start.
+- You'll provision Microsoft Copilot for Security with one security compute unit (SCU).
 
 > [!NOTE]
 > The environment for this exercise is based on a simulation, generated from pre-determined screen captures of the actual product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script are not be supported.
 
 ### Exercise
 
+For this exercise, you are logged in as Avery Howard and you have the global administrator role in Microsoft Entra. You'll work in both the Azure portal and Microsoft Copilot for Security.
+
 > [!NOTE]
-> It is recommended that you open the exercise environment in a separate browser window so that you can simultaneously view the instructions and the exercise environment.
-
-Using the exercise environment, follow the exercise steps that are listed.
-
-[![Button to launch exercise environment.](../media/security-copilot-launch-exercise-button-v2.png)]()
+> When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
 
 #### Task: Set role permissions
 
@@ -30,21 +28,23 @@ Why is this needed? As a Global Administrator in Microsoft Entra ID, you might n
 
 Once you have user access, you can then assign yourself the necessary access to provision SCUs for Copilot.
 
+1. Open the simulated environment by selecting this link: **[Azure portal](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=1&token=40f793d4-2956-40a4-b11a-6b3d4f92557f)**.
+
 1. You'll start by enabling Access management for Azure resources. To access this setting:
-    1. Make sure you are on the browser tab for **Microsoft Entra**.
-    1. Select **Overview** from the left navigation panel.
-    1. Then select the **Properties** tab from the main window.
+    1. From the Azure portal, select **Microsoft Entra ID**.
+    1. From the left navigation panel, expand **Manage**.
+    1. From the left navigation panel, scroll down and select **Properties**.
     1. Enable the toggle switch for **Access management for Azure resources**.
 
 1. Now that you can view all resources and assign access in any subscription or management group in the directory, assign yourself the Owner role for the Azure subscription.
-    1. Select the **Azure browser tab** to access the Azure portal.
-    1. Select **Subscriptions** then select the **???? Verify the subscription name for the simulation???**
+    1. From the blue banner on the top of the page, select **Microsoft Azure** to return to the landing page of the Azure portal.
+    1. Select **Subscriptions** then select the subscription listed **Woodgrove - GTP Demos (Exernal/Sponsored)**.
     1. Select **Access control (IAM)**.
     1. Select **Add**, then **Add role assignment**.
     1. From the Role tab, select **Privileged administrator roles**.
     1. Select **Owner**.
     1. Select **+ Select members**.
-    1. Select **??? Which user ???**.
+    1. Select **Avery Howard**.
     1. Select **Allow user to assign all roles except privileged administrator roles, Owner, UAA, RBAC (Recommended)**.
     1. Select **Review + assign**.
 
@@ -57,7 +57,10 @@ In this task, you go through the steps of provisioning capacity for your organiz
 - Provision capacity within Copilot for Security (recommended)
 - Provision capacity through Azure
 
-For this exercise, you provision capacity through Copilot for Security. When you first open Copilot for Security (https://securitycopilot.microsoft.com), a wizard guides you through the steps in setting up capacity for your organization.
+For this exercise, you provision capacity through Copilot for Security. When you first open Copilot for Security, a wizard guides you through the steps in setting up capacity for your organization.
+
+1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=1&token=40f793d4-2956-40a4-b11a-6b3d4f92557f)**.
+
 
 1. Open the browser tab for **Microsoft Copilot for Security**.
 1. Follow the steps in the Wizard, select **Get started**.
