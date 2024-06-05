@@ -1,47 +1,49 @@
-You can use Update Management in Azure Automation to manage operating system updates for your Windows and Linux virtual machines in Azure, physical or VMs in on-premises environments, and in other cloud environments. You can quickly assess the status of available updates and manage the process of installing required updates for your machines reporting to Update Management.
+Update Manager is a unified service to help manage and govern updates for all your machines. You can monitor Windows and Linux update compliance across your deployments in Azure, on-premises, and on other cloud platforms from a single dashboard. You can also use Update Manager to make real-time updates or schedule them within a defined maintenance window.
 
-As a service provider, you may have onboarded multiple customer tenants to [Azure Lighthouse](/azure/lighthouse/overview). Update Management can be used to assess and schedule update deployments to machines in multiple subscriptions in the same Microsoft Entra tenant, or across tenants using Azure Lighthouse.
+You can use Update Manager in Azure to:
 
-Microsoft offers other capabilities to help you manage updates for your Azure VMs or Azure Virtual Machine Scale Sets that you should consider as part of your overall update management strategy.
+- Oversee update compliance for your entire fleet of machines in Azure, on-premises, and in other cloud environments.
+- Instantly deploy critical updates to help secure your machines.
+- Use flexible patching options such as [automatic virtual machine (VM) guest patching](/azure/virtual-machines/automatic-vm-guest-patching) in Azure, [hotpatching](/azure/automanage/automanage-hotpatch), and customer-defined maintenance schedules.
 
-Before deploying Update Management and enabling your machines for management, make sure that you understand the information in the following sections.
+We also offer other capabilities to help you manage updates for your Azure VMs that you should consider as part of your overall update management strategy. To learn more about the options that are available, see the Azure VM [update options](/azure/virtual-machines/updates-maintenance-overview).
 
-### About Update Management
+Before you enable your machines for Update Manager, make sure that you understand the information in the following sections.
 
-The following diagram illustrates how Update Management assesses and applies security updates to all connected Windows Server and Linux servers.
+## Key benefits
 
-![Diagram that shows the update management workflow.](../media/update-management-workflow.png)
+Update Manager has been redesigned and doesn't depend on Azure Automation or Azure Monitor Logs, as required by the [Azure Automation Update Management feature](/azure/automation/update-management/overview). Update Manager offers many new features and provides enhanced functionality over the original version available with Azure Automation. Some of those benefits are listed here:
 
-Update Management integrates with Azure Monitor Logs to store update assessments and update deployment results as log data, from assigned Azure and non-Azure machines. To collect this data, the Automation Account and Log Analytics workspace are linked together, and the Log Analytics agent for Windows and Linux is required on the machine and configured to report to this workspace.
+- Provides native experience with zero on-boarding.
+    - Built as native functionality on Azure compute and the Azure Arc for Servers platform for ease of use.
+    - No dependency on Log Analytics and Azure Automation.
+    - Azure Policy support.
+    - Global availability in all Azure compute and Azure Arc regions.
+- Works with Azure roles and identity.
+    - Granular access control at the per-resource level instead of access control at the level of the Azure Automation account and Log Analytics workspace.
+    - Update Manager now has Azure Resource Manager-based operations. It allows role-based access control and roles based on Azure Resource Manager in Azure.
+- Offers enhanced flexibility.
+    - Ability to take immediate action either by installing updates immediately or scheduling them for a later date.
+    - Check updates automatically or on demand.
+    - Helps secure machines with new ways of patching, such as [automatic VM guest patching](/azure/virtual-machines/automatic-vm-guest-patching) in Azure, [hot patching](/azure/automanage/automanage-hotpatch), or custom maintenance schedules.
+    - Sync patch cycles in relation to "patch Tuesday," the unofficial term for Microsoft's scheduled security fix release on every second Tuesday of each month.
 
-Update Management supports collecting information about system updates from agents in a System Center Operations Manager management group connected to the workspace. Having a machine registered for Update Management in more than one Log Analytics workspace (also referred to as multihoming) isn't supported.
+The following diagram illustrates how Update Manager assesses and applies updates to all Azure machines and Azure Arc-enabled servers for both Windows and Linux.
 
-The following table summarizes the supported connected sources with Update Management.
+![Diagram that shows the Update Manager workflow.](../media/update-management-center-overview.png)
 
-| Connected source | Supported | Description |
-| --- | --- | --- |
-| Windows |Yes |Update Management collects information about system updates from Windows machines with the Log Analytics agent and installation of required updates.<br> Machines need to report to Microsoft Update or Windows Server Update Services (WSUS). |
-| Linux |Yes |Update Management collects information about system updates from Linux machines with the Log Analytics agent and installation of required updates on supported distributions.<br> Machines need to report to a local or remote repository. |
-| Operations Manager management group |Yes |Update Management collects information about software updates from agents in a connected management group.<br/><br/>A direct connection from the Operations Manager agent to Azure Monitor logs isn't required. Log data is forwarded from the management group to the Log Analytics workspace. |
+To support management of your Azure VM or non-Azure machine, Update Manager relies on a new [Azure extension](/azure/virtual-machines/extensions/overview) designed to provide all the functionality required to interact with the operating system to manage the assessment and application of updates. This extension is automatically installed when you initiate any Update Manager operations, such as **Check for updates**, **Install one-time update**, and **Periodic Assessment** on your machine. The extension supports deployment to Azure VMs or Azure Arc-enabled servers by using the extension framework. The Update Manager extension is installed and managed by using:
 
-The machines assigned to Update Management report how up to date they are based on what source they are configured to synchronize with. Windows machines need to be configured to report to either [Windows Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) or [Microsoft Update](https://support.microsoft.com/windows/update-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a), and Linux machines need to be configured to report to a local or public repository. You can also use Update Management with Microsoft Endpoint Configuration Manager, and to learn more see [Integrate Update Management with Windows Endpoint Configuration Manager](/azure/automation/update-management/mecmintegration).
+- [Azure VM Windows agent](/azure/virtual-machines/extensions/agent-windows) or the [Azure VM Linux agent](/azure/virtual-machines/extensions/agent-linux) for Azure VMs.
+- [Azure Arc-enabled servers agent](/azure/azure-arc/servers/agent-overview) for non-Azure Linux and Windows machines or physical servers.
 
-<!-- END Source: (/azure/automation/update-management/overview)
--->
+ Update Manager manages the extension agent installation and configuration. Manual intervention isn't required as long as the Azure VM agent or Azure Arc-enabled server agent is functional. The Update Manager extension runs code locally on the machine to interact with the operating system, and it includes:
 
-## Integrate with Configuration Manager for on-premises resources
+- Retrieving the assessment information about status of system updates for it specified by the Windows Update client or Linux package manager.
+- Initiating the download and installation of approved updates with the Windows Update client or Linux package manager.
 
-<!-- START Source: (/azure/automation/update-management/mecmintegration)
--->
-Customers who have invested in Microsoft Endpoint Configuration Manager to manage PCs, servers, and mobile devices also rely on its strength and maturity in managing software updates as part of their software update management (SUM) cycle.
+All assessment information and update installation results are reported to Update Manager from the extension and is available for analysis with [Azure Resource Graph](/azure/governance/resource-graph/overview). You can view up to the last seven days of assessment data, and up to the last 30 days of update installation results.
 
-You can report and update managed Windows servers by creating and pre-staging software update deployments in Microsoft Endpoint Configuration Manager, and get detailed status of completed update deployments using [Update Management](/azure/automation/update-management/overview). If you use Microsoft Endpoint Configuration Manager for update compliance reporting, but not for managing update deployments with your Windows servers, you can continue reporting to Microsoft Endpoint Configuration Manager while security updates are managed with Azure Automation Update Management.
+The machines assigned to Update Manager report how up to date they are based on what source they're configured to synchronize with. You can configure [Windows Update Agent (WUA)](/windows/win32/wua_sdk/updating-the-windows-update-agent) on Windows machines to report to [Windows Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) or Microsoft Update, which is by default. You can configure Linux machines to report to a local or public YUM or APT package repository. If the Windows Update Agent is configured to report to WSUS, depending on when WSUS last synchronized with Microsoft Update, the results in Update Manager might differ from what Microsoft Update shows. This behavior is the same for Linux machines that are configured to report to a local repository instead of a public package repository.
 
-### Prerequisites
-
--   You must have [Azure Automation Update Management](/azure/automation/update-management/overview) added to your Automation account.
--   Windows servers currently managed by your Microsoft Endpoint Configuration Manager environment also need to report to the Log Analytics workspace that also has Update Management enabled.
--   This feature is enabled in Microsoft Endpoint Configuration Manager current branch version 1606 and higher. To integrate your Microsoft Endpoint Configuration Manager central administration site or a standalone primary site with Azure Monitor logs and import collections, review [Connect Configuration Manager to Azure Monitor logs](/azure/azure-monitor/logs/collect-sccm).
--   Windows agents must either be configured to communicate with a Windows Server Update Services (WSUS) server or have access to Microsoft Update if they don't receive security updates from Microsoft Endpoint Configuration Manager.
-
-How you manage clients hosted in Azure IaaS with your existing Microsoft Endpoint Configuration Manager environment primarily depends on the connection you have between Azure datacenters and your infrastructure. This connection affects any design changes you may need to make to your Microsoft Endpoint Configuration Manager infrastructure and related cost to support those necessary changes.
+You can manage your Azure VMs or Azure Arc-enabled servers directly or at scale with Update Manager.

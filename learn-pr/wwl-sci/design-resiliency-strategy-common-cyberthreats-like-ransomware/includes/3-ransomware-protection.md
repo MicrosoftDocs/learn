@@ -1,5 +1,6 @@
 
 Microsoft best practices for ransomware protection are based on a three step approach:
+
 1. Prepare your recovery plan
 2. Limit the scope of the damage
 3. Make it hard to get in
