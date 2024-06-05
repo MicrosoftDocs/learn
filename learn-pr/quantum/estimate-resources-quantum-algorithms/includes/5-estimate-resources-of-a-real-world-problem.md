@@ -1,24 +1,22 @@
-
 Shor's factoring algorithm is one of the most well-known quantum algorithms. It offers an exponential speedup over any known classical factoring algorithm. 
 
 Classic cryptography uses physical or mathematical means, like computational difficulty, to accomplish a task. A popular cryptographic protocol is the [Rivest–Shamir–Adleman (RSA) scheme](https://wikipedia.org/wiki/RSA_(cryptosystem)), which is based on the assumption of the difficulty of factoring prime numbers by using a classical computer.
 
 The Shor's algorithm implies that sufficiently large quantum computers can break public-key cryptography. Estimating the resources required for Shor’s algorithm is important to assess the vulnerability of these types of cryptographic schemes.
 
-In the following exercise, you calculate the resource estimates for the factoring of a 2,048-bit integer. For this application, you compute the physical resource estimates directly from precomputed logical resource estimates. For the tolerated error budget, you use $\epsilon = 1/3$.
-
+In the following exercise, you'll calculate the resource estimates for the factoring of a 2,048-bit integer. For this application, you'll compute the physical resource estimates directly from precomputed logical resource estimates. For the tolerated error budget, you'll use $\epsilon = 1/3$.
 
 ## Write the Shor's algorithm
 
-1. In VS Code, select **View > Command palette** and select **Create: New Jupyter Notebook**. 
+1. In Visual Studio Code, select **View > Command palette** and select **Create: New Jupyter Notebook**.
 1. Save the notebook as **ShorRE.ipynb**.
-1. In the first cell of the notebook, import the `qsharp` package.
+1. In the first cell, import the `qsharp` package:
 
     ```python
     import qsharp
     ```
 
-1. Use the `Microsoft.Quantum.ResourceEstimation` namespace to define a cached, optimized version of Shor's integer factorization algorithm. Add a new cell and copy the following code.
+1. Use the `Microsoft.Quantum.ResourceEstimation` namespace to define a cached, optimized version of Shor's integer factorization algorithm. Add a new cell and copy and paste the following code:
 
     ```qsharp
     %%qsharp
@@ -385,14 +383,14 @@ In the following exercise, you calculate the resource estimates for the factorin
 
 ## Estimate the Shor's algorithm
 
-Now, you estimate the physical resources for the `RunProgram` operation using the default assumptions. Add a new cell and copy the following code.
+Now, estimate the physical resources for the `RunProgram` operation using the default assumptions. Add a new cell and copy and paste the following code:
 
 ```python
 result = qsharp.estimate("RunProgram()")
 result
 ```
 
-The `qsharp.estimate` function creates a result object, which can be used to display a table with the overall physical resource counts. You can inspect cost details by collapsing the groups, which have more information. 
+The `qsharp.estimate` function creates a result object you can use to display a table with the overall physical resource counts. You can inspect cost details by collapsing the groups, which have more information.
 
 For example, collapse the **Logical qubit parameters** group to see that the code distance is 21 and the number of physical qubits is 882.
 
@@ -413,20 +411,20 @@ For example, collapse the **Logical qubit parameters** group to see that the cod
 
 ### Space diagram
 
-The distribution of physical qubits used for the algorithm and the T factories is a factor which may impact the design of your algorithm. You can use the `qsharp-widgets` package to visualize this distribution to better understand the estimated space requirements for the algorithm.
+The distribution of physical qubits used for the algorithm and the T factories is a factor which might impact your algorithm's design. You can use the `qsharp-widgets` package to visualize this distribution to better understand the algorithm's estimated space requirements.
 
 ```python
 from qsharp_widgets import SpaceChart
 SpaceChart(result)
 ```
 
-In this example, the number of physical qubits required to run the algorithm are 829766, 196686 of which are algorithm qubits and 633080 of which are T factory qubits.
+In this example, the number of physical qubits required to run the algorithm is 829766, 196686 of which are algorithm qubits and 633080 of which are T factory qubits.
 
 :::image type="content" source="../media/resource-estimator-diagram-jupyter.png" alt-text="Screenshot showing the space diagram of the Resource Estimator.":::
 
 ## Compare the resource estimates for different qubit technologies
 
-The Azure Quantum Resource Estimator allows you to run multiple configurations of target parameters, and compare the results. This is useful when you want to compare the cost of different qubit models, QEC schemes, or error budgets.
+The Azure Quantum Resource Estimator allows you to run multiple configurations of target parameters and compare the results. This is useful when you want to compare the cost of different qubit models, QEC schemes, or error budgets.
 
 You can also construct a list of estimation parameters using the `EstimatorParams` object.
 
@@ -460,7 +458,7 @@ qsharp.estimate("RunProgram()", params=params).summary_data_frame(labels=labels)
 
 ## Extract resource estimates from logical resource counts
 
-If you already know some estimates for an operation, the Resource Estimator allows you to incorporate the known estimates into the overall cost of the program to reduce the execution time. You can use the `LogicalCounts` class to extract the logical resource estimates from pre-calculated resource estimation values.
+If you already know some estimates for an operation, the Resource Estimator allows you to incorporate the known estimates into the overall program cost to reduce the execution time. You can use the `LogicalCounts` class to extract the logical resource estimates from precalculated resource estimation values.
 
 Select **Code** to add a new cell, and then enter and run the following code:
 
@@ -489,6 +487,6 @@ logical_counts.estimate(params).summary_data_frame(labels=labels)
 
 In the worst scenario, a quantum computer using gate-based µs qubits (qubits that have operation times in the nanosecond regime, such as superconducting qubits) and a surface QEC code would need six years and 37.38 millions of qubits to factor a 2,048-bit integer by using Shor's algorithm.
 
-If you use a different qubit technology, for example gate-based ns ion qubits and the same surface code, the number of qubits doesn't change much, but the runtime became two days in the worst case and 18 hours in the optimistic case. If you change the qubit technology and the QEC code, for example, by using Majorana-based qubits, factoring a 2,048-bit integer by using Shor’s algorithm could be done in hours with an array of 6.25 millions of qubits in the best case scenario.
+If you use a different qubit technology—for example, gate-based ns ion qubits—and the same surface code, the number of qubits doesn't change much, but the runtime becomes two days in the worst case and 18 hours in the optimistic case. If you change the qubit technology and the QEC code—for example, by using Majorana-based qubits—factoring a 2,048-bit integer by using Shor’s algorithm could be done in hours with an array of 6.25 millions of qubits in the best-case scenario.
 
 From your experiment, you can conclude that using Majorana qubits and a Floquet QEC code is the best choice to execute Shor's algorithm and factor a 2,048-bit integer.
