@@ -1,7 +1,11 @@
-Endpoint analytics aims to improve user productivity and reduce IT support costs by providing insights into how your organization is working and the quality of the experience you're delivering to your end users. Endpoint analytics can help identify configuration or hardware issues that might be slowing down devices, provide recommended actions to remediate them, and proactively make changes without disrupting end users or generating a help desk ticket.
+Endpoint analytics help provide insights into how well your organization works and the quality of the experience you deliver to end users. To help improve user productivity and reduce IT support costs, endpoint analytics can:
 
-Endpoint analytics is also a part of the [Microsoft Productivity Score](/microsoft-365/admin/productivity/productivity-score?azure-portal=true). The Productivity Score provides productivity data, insights, and recommendations for your end users' experience and your organization's overall technology experience.
+- Help identify configuration or hardware issues that slow down devices.
+- Provide recommended actions to remediate these issues.
+- Proactively make changes without disrupting end users or generating help desk tickets.
 
-The following screenshot displays the Endpoint analytics pane:
+Endpoint analytics are part of the [Microsoft Adoption Score](/microsoft-365/admin/adoption/adoption-score?azure-portal=true). The Adoption Score provides productivity data, insights, and recommendations for your end users' experience and your organization's overall technology experience.
+
+The following screenshot displays the endpoint analytics pane:
 
 ![Screenshot of Endpoint analytics pane.](../media/intro-to-endpoint-manager-11.png)

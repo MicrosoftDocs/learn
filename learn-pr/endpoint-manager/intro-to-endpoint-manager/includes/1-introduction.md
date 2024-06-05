@@ -1,51 +1,65 @@
-Today, most companies are using cloud services of some kind. Software updates are needed continuously. Organizations often allow personal devices in the workplace. The majority of users use mobile devices and apps for work-related activity. Additionally, cybersecurity continues to be a growing concern when protecting corporate data.
+Technology is evolving in the modern workplace.
 
 ![Diagram of modern workplace technology trends.](../media/intro-to-endpoint-manager-00.png)
 
-Technology needs are evolving in the modern workplace. IT is adapting to this evolving and changing modern workplace. These changes include the following:
+According to the preceding diagram:
+- Most companies use cloud services.
+- Software updates are continuous and frequent.
+- Most companies allow use of personal mobile devices in the workplace.
+- Most employees use mobile apps for work-related activities.
+- Cybersecurity is a growing concern, and data breaches are increasingly expensive.
 
-- Users and knowledge workers that were using a single device are now using multiple devices.
-- Shared devices such as retail point of sale devices and ruggedized devices are becoming more common.
-- Specialized devices such as digital interactive whiteboards, conference room devices, and holographic wearable computers are becoming more common.
-- Devices that were business owned are now both user and business owned.
-- Users that were solely using the corporate network with legacy apps are now using cloud-managed and SaaS apps as well.
-- IT admins that were using manual processes are moving toward automated processes.
-- IT admins that spent their time being reactive are now moving toward being automated.
-- IT admins that were providing a high-touch environment for their organization are now providing self-service solutions.
+This evolution leads to the following changes in information technology (IT) practices:
 
-## Access to data
+- Knowledge workers that used single devices now use multiple devices.
+- Shared devices such as retail point of sale devices and ruggedized devices are more common.
+- Specialized devices such as digital interactive whiteboards, conference room devices, and holographic wearable computers are more common.
+- Devices that were corporate owned can now be owned by users or the corporation.
+- Legacy apps on the corporate network are now joined by cloud-managed and software-as-a-service (SaaS) apps.
+- IT admins are moving from manual, reactive processes toward automated processes.
+- Instead of providing high-touch support environments, organizations now provide self-service solutions.
 
-Users within your organization must be able to access your organization's data seamlessly and securely. This is apparent whether they're using a corporate device—such as an iOS/iPadOS, Android, Windows, or macOS device—or they're using their own device. Additionally, these users will need to share information with trusted and verified coworkers in a variety of forms, such as from an app or displayed in a web browser. Members of your organization will often use multiple devices, both personal and corporate, to get their work done.  
+## Access data
 
-As an IT admin or business decision maker, you must find modern methods and technologies to successfully manage and protect your organization against advanced digital threats, while still being productive.
+Users within your organization:
 
-You can start by implementing services and tools to protect the digital resources at your organization. These resources often include devices, apps, and data that the people of your organization use to be productive. These same users might also be employees, coworkers, and students. They might open and share personal files, visit unsecured websites, and install potentially unsafe apps. They want to use their devices to access all of their information and resources, whether it's at work, school, or home.
+- Can be employees, coworkers, and students.
+- Might open and share personal files, visit unsecured websites, and install potentially unsafe apps.
+- Want to use their devices to access all of their information and resources, whether at work, school, or home.
+- Need to share information with trusted and verified coworkers.
+
+These users must be able to access organizational resources seamlessly and securely to do their work:
+
+- On iOS/iPadOS, Android, Windows, or macOS devices.
+- On company devices or their own devices.
+- On multiple types of devices.
+- In a variety of formats, such as from an app or displayed in a web browser.
+
+As an IT admin or business decision maker, you must find modern methods and technologies to successfully protect your organization against digital threats while maintaining productivity. You can start by implementing services and tools to protect the digital devices, apps, and data that the members of your organization need to be productive.
 
 ## Protect resources
 
-You can protect resources and devices by using mobile device management (MDM) and mobile application management (MAM) services and tools. MDM enables organizations to protect and secure their resources and data based on enrolled devices. Organization can make sure that only authorized people and devices get access to proprietary information. Similarly, device users can feel at ease accessing work data from their device, such as a phone, because they know their device meets their organization's security requirements. MAM enables organizations to manage and protect their data within an application.
+You can help protect resources and devices by using mobile device management (MDM) and mobile application management (MAM) services and tools.
+
+MDM enables organizations to protect and secure their resources and data based on enrolled devices. Organizations can make sure that only authorized people and devices get access to proprietary information. Device users can feel at ease accessing work data from their device, such as a phone, because they know their device meets their organization's security requirements. MAM enables organizations to manage and protect their data within an application.
 
 An MDM or MAM solution must accomplish the following tasks:
 
 - Support a diverse mobile environment to securely manage iOS/iPadOS, Android, Windows, and macOS devices.
-- Make sure devices and apps are compliant with your organization's security requirements.
-- Ensure that all your corporate services are easily available to users on all the devices they use.
-- Create and distribute digital policies that help keep your organization's data safe on organization-owned and personal devices.
-- Ensure that users get the best possible experience based on first-class support for all the products that they need to use, such as Office, Edge, and other products.
-- Use a single, unified mobile solution to enforce these policies, and help manage devices, apps, users, and groups.
-- Protect your company information by helping to control the way your workforce accesses and shares its data.
+- Make sure devices and apps are compliant with organizational security requirements.
+- Create and distribute digital policies that help keep company data safe on organization-owned and personal devices.
+- Use a single, unified mobile solution that enforces policies and helps manage devices, apps, users, and groups.
+- Ensure that corporate services are easily available to users on all the devices they use.
+- Protect company information by helping control the way the workforce accesses and shares its data.
+- Ensure that users get a first-class support experience for the products they need to use, such as Office and Edge.
 
-By implementing a management infrastructure, you can provide IT services, apps, protection, and configuration to your users to make them extremely productive. For instance, users can automatically get their certs, wireless network profiles, and VPN settings without having to manually configure them. This allows users to be more productive because they don't have to do any manual configuration, but it also helps users be protected because they have the right settings.
+By implementing a management infrastructure, you can provide your users with IT services, apps, protection, and configuration to help make them more productive. For instance, users can automatically get their certificates, wireless network profiles, and virtual private network (VPN) settings without having to manually configure them. Users can be more productive because they don't have to do any manual configuration, and are better protected because they have the right settings.
 
-Microsoft Intune combines these services and tools in one location. You may know and already be using these services and tools, including Microsoft Intune, Microsoft Endpoint Configuration Manager, co-management, and Windows Autopilot. These services are part of the Microsoft 365 stack of services to help protect your organization's endpoints, by securing access, protecting data, and responding to and managing risk.
+Microsoft Intune combines these services and tools. You might know and already be using services and tools like Microsoft Intune, Microsoft Endpoint Configuration Manager, co-management, and Windows Autopilot. These services are part of the Microsoft 365 stack of services that help protect your organization's endpoints by securing access, protecting data, and responding to and managing risk.
 
 ## Learning objectives
 
-In this module, you will:
-
-- Learn what endpoints are and what Microsoft Intune can do for you and your organization.
-- Learn about the different products, services, and capabilities that encompass Microsoft Intune.
-
-## Prerequisites
-
-- None
+In this module, you learn about:
+- The endpoints that you can protect with Intune and Configuration Manager.
+- The products, services, and capabilities that make up Microsoft Intune.
+- What Microsoft Intune can do for you and your organization.
