@@ -16,6 +16,8 @@ abstract: |
 
   - Select from the work queues, topics, subscriptions, and routes available on a RabbitMQ server to send messages to the intended recipient microservices.
   - Add messages to a queue on a RabbitMQ exchange server by using the .NET Aspire RabbitMQ client message broker.
+prerequisites: |
+  - Experience building web applications using .NET and C#
 ratingEnabled: true
 iconUrl: /training/achievements/dotnet-aspiresvg
 levels:
