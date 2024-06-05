@@ -49,7 +49,7 @@ You can now upload an API definition file to your API center to [trigger the eve
 ## Shift-left API governance
 The most successful governance initiatives always include developers themselves. By applying traditional shift-left principles, API platform teams can ensure that API producers know exactly what requirements they must meet to publish APIs early in the development cycle. This saves valuable development time by reducing the need to remediate noncomplaint APIs later in the development cycle.
 
-The API Center extension for Visual Studio Code provides API producers an experience to run API design conformance checks directly in Visual Studio Code as the API is being built. Additionally, API producers can use the breaking change detection feature to detect when an change may result in a breaking chat for API consumers.
+The API Center extension for Visual Studio Code provides API producers an experience to run API design conformance checks directly in Visual Studio Code as the API is being built. Additionally, API producers can use the breaking change detection feature to detect when a change may result in a breaking chat for API consumers.
 
 ### API design conformance in Visual Studio Code
 API Center extension is integrated with Spectral, a JSON/ YAML linter that supports OpenAPI and custom ruleset. The extension allows developers to strictly follow the provided or recommended API style guide, ensuring consistency across all APIs being developed across different teams.
