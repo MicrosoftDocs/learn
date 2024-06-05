@@ -36,7 +36,7 @@ az stack group create \
 
 When performing an update on the stack, you receive a message stating that the stack already exists in the current subscription. If the value of the _action on unmanage_ parameter changes, the warning alerts you of the new values.
 
-:::image type="content" source="../media/stack-exists-cli.png" alt-text="{a graphic representing an Azure CLI command line warning that the deployment stack already exists}":::
+:::image type="content" source="../media/stack-exists-cli.png" alt-text="A screenshot showing the Azure CLI command line warning that the deployment stack already exists.":::
 
 To verify that the stack is managing the new resources, use the `az stack group show` command.
 
