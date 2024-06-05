@@ -6,7 +6,7 @@ Orleans is built around the *actor model*. This established design pattern exist
 
 ## What are Grains?
 
-Grains are the most essential primitives and building blocks of Orleans applications. They represent actors in the Actor model and define the state data and behavior of entities you define, such as shopping cart or product. Grains are each identified and tracked through user-defined keys. Other grains and clients can access grains.
+*Grains* are the most essential primitives and building blocks of Orleans applications. They represent actors in the Actor model and define the state data and behavior of entities you define, such as shopping cart or product. Grains are each identified and tracked through user-defined keys. Other grains and clients can access grains.
 
 :::image type="content" source="../media/grain-visual.png" alt-text="A diagram of the anatomy of a grain.":::
 
@@ -18,7 +18,7 @@ Grains have a managed life cycle, which means the Orleans runtime handles activa
 
 ## What are silos?
 
-Silos are another core building block of Orleans. Silos store grains and can contain one or more grains. A group of silos is known as a *cluster*.
+*Silos* are another core building block of Orleans. Silos store grains and can contain one or more grains. A group of silos is known as a *cluster*.
 
 The cluster coordinates work between silos, allowing communication with grains as though they're all available in a single process. You can organize your data by storing different types of grains in different silos. Your application can retrieve individual grains without having to worry about the details of how they're managed within the cluster.
 
