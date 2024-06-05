@@ -25,7 +25,7 @@ Update Manager has been redesigned and doesn't depend on Azure Automation or Azu
 - Offers enhanced flexibility.
     - Ability to take immediate action either by installing updates immediately or scheduling them for a later date.
     - Check updates automatically or on demand.
-    - Helps secure machines with new ways of patching, such as [automatic VM guest patching](/azure/virtual-machines/automatic-vm-guest-patching) in Azure, [hot patching](/azure/automanage/automanage-hotpatch), or custom maintenance schedules.
+    - Helps secure machines with new ways of patching, such as [automatic VM guest patching](/azure/virtual-machines/automatic-vm-guest-patching) in Azure, [hotpatching](/azure/automanage/automanage-hotpatch), or custom maintenance schedules.
     - Sync patch cycles in relation to "patch Tuesday," the unofficial term for Microsoft's scheduled security fix release on every second Tuesday of each month.
 
 The following diagram illustrates how Update Manager assesses and applies updates to all Azure machines and Azure Arc-enabled servers for both Windows and Linux.
