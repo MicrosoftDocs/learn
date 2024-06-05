@@ -13,7 +13,7 @@ In this exercise, you will:
 
 To start managing your APIs through API Center, you need:
 
-1. An Azure Subscription.
+1. An Azure subscription.
 1. The **Microsoft.ApiCenter** resource provider registered in your subscription.
 1. At least a Contributor role assignment or [equivalent permissions](/azure/role-based-access-control/role-assignments-list-portal) in the Azure subscription.
 

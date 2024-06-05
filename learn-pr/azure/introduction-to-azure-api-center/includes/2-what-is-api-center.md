@@ -8,7 +8,7 @@ Azure API Center is a new service on Azure that offers a structured and centrali
 |----------|----------|
 | **Poor API discoverability and reuse**   | **Ease of API discoverability and consumption.** API managers can view a complete inventory of all APIs in the Azure portal. API consumers can use the web-based API Center portal to discover and consume APIs, or use the API Center extension for Visual Studio Code to build, discover, and consume APIs.     |
 | **Shadow, ungoverned APIs**    | **Centralized inventory of APIs.** API Center allows organizations to build a central repository of APIs from different teams and departments that act as a consolidated source of truth and trust for all APIs.    |
-| **Potential security threats**    | **Ease of API governance.** With APIs consolidated in one location, governing these APIs to enforce organization security policies becomes easier for API platform teams.    |
+| **Potential security threats**    | **Ease of API governance.** With APIs consolidated in one location, governing these APIs to enforce organization security policies becomes easier for API Platform teams.    |
 | **Inconsistent API design**   | **Automated API design conformance checks.** API Center allows admins to enforce design standards across all APIs and implements a linting workflow that checks APIs against a defined style guide and generates an API compliance report accessible in your API Center.    |
 
 ## API Ecosystem roles & responsibilities
@@ -69,7 +69,7 @@ This capability in API Center simplifies the tracking of APIs using metadata lik
 
 API Center also offers tooling around API design governance that supports linting, implemented using the Spectral JSON/ YAML linter, that ensures registered APIs conform to the organization’s style rules and provides an analytics functionality for your APIs. Enabling this for your organization helps with early detection of errors and inconsistency by generating a compliance report that can be viewed in your API Center.
 
-API platform efforts are most successful when they have developer buy-in. The API Center extension for Visual Studio Code provides shift-left API governance capabilities for breaking change detection and API design governance to ensure APIs are built the right way the first time.
+API Platform efforts are most successful when they have developer buy-in. The API Center extension for Visual Studio Code provides shift-left API governance capabilities for breaking change detection and API design governance to ensure APIs are built the right way the first time.
 
 :::image type="content" source="../media/2-apic-analysis.png" alt-text="Screenshot showing API Analysis on API Center":::
 
