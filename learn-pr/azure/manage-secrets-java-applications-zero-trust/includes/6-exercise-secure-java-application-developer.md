@@ -1,6 +1,6 @@
-In this unit, you'll configure the existing Spring Boot application to use the secrets stored in Azure Key Vault.
+In this unit, you configure the existing Spring Boot application to use the secrets stored in Azure Key Vault.
 
-You'll have the role of a Java developer, who will configure their project to read those secrets.
+You take the role of a Java developer, who configures their project to read those secrets.
 
 ## Configuring the Java project
 
@@ -8,8 +8,7 @@ The Azure Spring Boot starter for Key Vault automates the usage of the Key Vault
 Spring Boot developers.
 
 In the previous section, we added two environment variables using the Azure CLI: `AZURE_KEYVAULT_ENABLED`, and `AZURE_KEYVAULT_URI`.
-
-Those environment variables are read by Spring Boot, and used to authenticate to Azure Key Vault,
+Spring Boot reads these environment variables and uses them to authenticate to Azure Key Vault,
 using underneath the Java SDK for Key Vault.
 
 To add support for the Azure Spring Boot starter for Key Vault, add the following dependency in
@@ -35,40 +34,40 @@ spring.datasource.password=${azureDatabasePassword}
 spring.sql.init.mode=always
 ```
 
-With that change, your application source code doesn't contain any secrets, and it will get them from the Azure Key Vault instance we configured in the previous section.
+With that change, your application source code doesn't contain any secrets, and it gets them from the Azure Key Vault instance we configured in the previous section.
 
 ## Deploy the Java application to Azure
 
-As in the previous unit, to deploy the application, you'll first need to package it as a Jar file:
+As in the previous unit, to deploy the application, you first need to package it as a Jar file:
 
 ```bash
 ./mvnw clean package
 ```
 
-Then deploy it using the Azure CLI:
+Then deploy it using the Azure CLI. This command can take several minutes to run.
 
 ```bash
-az spring-cloud app deploy \
+az spring app deploy \
    --resource-group $AZ_RESOURCE_GROUP \
    --service $AZ_SPRING_CLOUD \
    --name application \
-   --jar-path target/*.jar
+   --artifact-path target/*.jar
 ```
 
-If anything goes bad, you can look at the application logs by typing the following command:
+If you encounter failures, you can look at the application logs by typing the following command:
 
 ```bash
-az spring-cloud app logs \
+az spring app logs \
    --resource-group $AZ_RESOURCE_GROUP \
    --service $AZ_SPRING_CLOUD \
    --name application
 ```
 
-The application will then be available in the cloud, and you can access its data using a cURL
+The application is now available in the cloud, and you can access its data using a cURL
 command:
 
 ```bash
 curl https://$AZ_SPRING_CLOUD-application.azuremicroservices.io
 ```
 
-Congratulations, you've successfully created a Zero Trust Java application, that uses Azure Key Vault to store secrets.
+Congratulations, you successfully created a Zero Trust Java application that uses Azure Key Vault to store secrets.
