@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.unlock-insights-microsoft-copilot-security.incorporate-prompt-books-microsoft-copilot-security
+title: Incorporate Promptbooks in Microsoft Copilot for Security
+metadata:
+  title: Incorporate Promptbooks in Microsoft Copilot for Security
+  description: "Incorporate Promptbooks in Microsoft Copilot for Security"
+  ms.date: 06/05/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-incorporate-prompt-books-microsoft-copilot-security.md)]

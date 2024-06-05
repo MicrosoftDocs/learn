@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.unlock-insights-microsoft-copilot-security.deploy-microsoft-copilot-security-enhanced-security
+title: Deploy Microsoft Copilot for Security for Enhanced Security
+metadata:
+  title: Deploy Microsoft Copilot for Security for Enhanced Security
+  description: "Deploy Microsoft Copilot for Security for Enhanced Security"
+  ms.date: 06/05/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-deploy-microsoft-copilot-security-enhanced-security.md)]
