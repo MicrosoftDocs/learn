@@ -2,7 +2,7 @@
 
 This module introduces Microsoft Copilot for Security, an AI-powered security solution designed to enhance the efficiency of security professionals. It offers a natural language, assistive copilot experience for scenarios like incident response, threat hunting, and posture management.
 
-Imagine you are a security professional in a large organization. You are constantly dealing with evolving threats and need to respond quickly and effectively. However, the sheer volume of incidents and the complexity of the threat landscape make it challenging to keep up. You need a tool that can help you manage these tasks more efficiently, provide broader visibility into threats, and offer richer context for decision-making. This is where Microsoft Copilot for Security comes in. It integrates with Microsoft Security portfolio products and third-party services, leveraging OpenAI architecture to generate responses using security-specific plugins.
+Imagine you're a security professional in a large organization. You're constantly dealing with evolving threats and need to respond quickly and effectively. However, the sheer volume of incidents and the complexity of the threat landscape make it challenging to keep up. You need a tool that can help you manage these tasks more efficiently, provide broader visibility into threats, and offer richer context for decision-making. This is where Microsoft Copilot for Security comes in. It integrates with Microsoft Security portfolio products and third-party services, using OpenAI architecture to generate responses using security-specific plugins.
 
 The topics covered in this module include:
 - Exploring Microsoft Copilot for Security: Features, Integration, and Use Cases
@@ -14,4 +14,4 @@ The topics covered in this module include:
 - New Features and Enhancements in Copilot for Security - May 2024
 - Understanding Responsible AI Principles in Microsoft Copilot for Security
 
-By the end of this module, you will understand how Microsoft Copilot for Security can enhance your efficiency as a security professional by providing an immersive standalone or embedded experience, integrating with other security products, and offering unique features like incident summarization, script analysis, and threat hunting.
+By the end of this module, you'll understand how Microsoft Copilot for Security can enhance your efficiency as a security professional by providing an immersive standalone or embedded experience, integrating with other security products, and offering unique features like incident summarization, script analysis, and threat hunting.
