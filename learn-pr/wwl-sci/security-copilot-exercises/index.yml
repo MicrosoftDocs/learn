@@ -3,7 +3,7 @@ uid: learn.security-copilot-exercises
 metadata:
   title: Explore use cases of Microsoft Copilot for Security
   description: "Explore use cases of Microsoft Copilot for Security."
-  ms.date: 06/28/2024
+  ms.date: 06/06/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module-standard-task-based
@@ -22,8 +22,8 @@ prerequisites: |
   - Working knowledge of security operations and incident response
   - Working knowledge of Microsoft Security solutions and services
   - Completion of the module [Describe Microsoft Copilot for Security](/training/modules/security-copilot-getting-started/)
-  - Completion of the module [Describe the core features of Microsoft Copilot for Security](training/modules/security-copilot-describe-core-features/)
-  - Completion of the module [Describe the embedded experiences of Microsoft Copilot for Security](training/modules/security-copilot-embedded-experiences/)
+  - Completion of the module [Describe the core features of Microsoft Copilot for Security](/training/modules/security-copilot-describe-core-features/)
+  - Completion of the module [Describe the embedded experiences of Microsoft Copilot for Security](/training/modules/security-copilot-embedded-experiences/)
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - beginner
@@ -44,7 +44,7 @@ units:
 - learn.security-copilot-exercises.configure-plugin
 - learn.security-copilot-exercises.enable-custom-plugin
 - learn.security-copilot-exercises.explore-knowledge-base-file-upload
-- learn.security-copilot-exercises.create-custom-playbook
+- learn.security-copilot-exercises.create-custom-promptbook
 - learn.security-copilot-exercises.explore-embedded-defender-xdr
 - learn.security-copilot-exercises.explore-embedded-microsoft-purview
 - learn.security-copilot-exercises.summary
