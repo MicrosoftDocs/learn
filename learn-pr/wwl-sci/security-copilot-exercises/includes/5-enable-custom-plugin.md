@@ -7,6 +7,8 @@ The creation of the plugin manifest is outside the scope of this content, but yo
 
 ### Exercise
 
+For this exercise you're logged in as Avery Howard and have the Copilot owner role. For all the tasks in this exercise, you'll work in the Copilot standalone experience.
+
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
 
@@ -15,6 +17,8 @@ Using the exercise environment, follow the exercise steps that are listed.
 #### Task: Update owner settings for custom plugins
 
 In this task, you configure Copilot so that Copilot owners and contributors can add and manage their own custom plugins and for everyone in the organization. 
+
+1. Open the simulated environment by selecting this link: **Microsoft Copilot for Security**.
 
 1. Select the **Home menu** (hamburger) icon
 

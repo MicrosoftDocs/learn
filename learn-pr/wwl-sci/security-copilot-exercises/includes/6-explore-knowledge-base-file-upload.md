@@ -5,16 +5,16 @@ In this exercise, you go through the process of integrating a knowledge base int
 
 ### Exercise
 
+For this exercise you're logged in as Avery Howard and have the Copilot owner role. For all the tasks in this exercise, you'll work in the Copilot standalone experience.
+
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
-
-Using the exercise environment, follow the exercise steps that are listed.
-
-[![Button to launch exercise environment.](../media/security-copilot-launch-exercise-button-v2.png)]()
 
 #### Task: Configure Copilot to support file uploads
 
 In this task, you start by attempting a file upload but realize that there's no way to actually upload a file. This is an indication that the file upload option isn't configured. As a user with the Copilot owner role, you enable file uploads and then test using a file as a knowledge base for Copilot.
+
+1. Open the simulated environment by selecting this link: **Microsoft Copilot for Security**.
 
 1. To access file uploads, select the sources icon from the prompt bar.
 

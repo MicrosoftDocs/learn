@@ -5,16 +5,17 @@ In this exercise, you create a custom promptbook from an existing session and th
 
 ### Exercise
 
+For this exercise you're logged in as Avery Howard and have the Copilot owner role. For all the tasks in this exercise, you'll work in the Copilot standalone experience.
+
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
 
-Using the exercise environment, follow the exercise steps that are listed.
-
-[![Button to launch exercise environment.](../media/security-copilot-launch-exercise-button-v2.png)]()
 
 #### Task: Create the promptbook from an existing session
 
 In this task, you create the promptbook. As part of the process, you templatize one of the prompts by editing the prompt with an input parameter, and then add a new prompt.
+
+1. Open the simulated environment by selecting this link: **Microsoft Copilot for Security**.
 
 1. There’s a session from earlier in the day that identified failed logins that you want to use. Since that session isn't listed on the landing page, select view all sessions.
 

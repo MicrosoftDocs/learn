@@ -5,15 +5,17 @@ In this exercise, you configure the Microsoft Sentinel plugin and run some test 
 
 ### Exercise
 
+For this exercise you're logged in as Avery Howard and have the Copilot owner role. For all the tasks in this exercise, you'll work in the Copilot standalone experience.
+
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
-Using the exercise environment, follow the exercise steps that are listed.
 
-[![Button to launch exercise environment.](../media/security-copilot-launch-exercise-button-v2.png)]()
 
 #### Task: Test a Microsoft Sentinel prompt
 
 When working with technology, it's not  uncommon to try use a feature and then realize, after some trouble-shooting, that you forgot to enable that feature. In this first task, you test a Microsoft Sentinel prompt with the Microsoft Sentinel plugin disabled. You go through this task so that you can get exposure to the information provided in the process log that helps you troubleshoot the issue.
+
+1. Open the simulated environment by selecting this link: **Microsoft Copilot for Security**.
 
 1. From the prompt bar, enter the prompt **Summarize the Microsoft Sentinel incident 30342**. You can copy and paste the prompt into prompt bar. Then select the run icon.
 
@@ -49,8 +51,10 @@ Now that the Sentinel plugin is enabled, you'll run the prompt you tried earlier
 1. From the prompt bar, enter the prompt **Summarize the Microsoft Sentinel incident 30342**. You can copy and paste the prompt into the prompt bar. Then select the run icon.
 
 1. The Copilot process log shows that the prompt executed successfully by displaying green check marks.
-1. Select the box next to the prompt response, then select the pin icon.
-1. Select the pin board icon ![prompt icon](../media/pinboard-icon.png) to open the pin board.
+
+1. Select the **box icon ![box icon](../media/box-icon.png)** next to the pin icon to copy all the responses to the pin board, then select the **Pin icon ![pin icon](../media/pin-icon.png)** to save those responses to the pin board.
+
+1. Select the pin board icon ![prompt icon](../media/pinboard-icon.png) to open the pin board. The pin board holds your saved prompts and responses, along with a summary of each one.
 1. From the top of the page, select Export to view available options. Exporting to Word or Mail results in a summary document or email that you can immediately send to your stakeholders.
 
 #### Review
