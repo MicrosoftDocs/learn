@@ -30,13 +30,13 @@ quiz:
     choices:
     - content: You can select 'Who can use this plugin' and you upload a file in the format of .docx, .pdf, .txt, or .md.
       isCorrect: false
-      explanation: Incorrect. When adding a custom plugin, you can select 'Who can use this plugin' and you select whether you will be uploading a Copilot for Security plugin or an OpenAI plugin.
-    - content: You can select 'Who can use this plugin' and you select whether you will be uploading a Copilot for Security plugin or an OpenAI plugin.
+      explanation: Incorrect. When adding a custom plugin, you can select 'Who can use this plugin' and you select whether you're uploading a Copilot for Security plugin or an OpenAI plugin.
+    - content: You can select 'Who can use this plugin' and you select whether you're uploading a Copilot for Security plugin or an OpenAI plugin.
       isCorrect: true
-      explanation: Correct. When adding a custom plugin, you can select 'Who can use this plugin' and you select whether you will be uploading a Copilot for Security plugin or an OpenAI plugin.
-    - content: You start by enabling the option 'Allow Copilot for Security to access data from your Microsoft 365 services' then you select whether you will be uploading a Copilot for Security plugin or an OpenAI plugin.
+      explanation: Correct. When adding a custom plugin, you can select 'Who can use this plugin' and you select whether you're uploading a Copilot for Security plugin or an OpenAI plugin.
+    - content: You start by enabling the option 'Allow Copilot for Security to access data from your Microsoft 365 services' then you select whether you're uploading a Copilot for Security plugin or an OpenAI plugin.
       isCorrect: false
-      explanation: Incorrect. The option to 'Allow Copilot for Security to access data from your Microsoft 365 services' is not applicable to custom plugins.  To add a custom plugin, you can select 'Who can use this plugin' and you select whether you will be uploading a Copilot for Security plugin or an OpenAI plugin.
+      explanation: Incorrect. The option to 'Allow Copilot for Security to access data from your Microsoft 365 services' isn't applicable to custom plugins. To add a custom plugin, you can select 'Who can use this plugin' and you select whether you're uploading a Copilot for Security plugin or an OpenAI plugin.
   
   - content: What the option that best describes the steps involved in creating a custom promptbook.
     choices:
