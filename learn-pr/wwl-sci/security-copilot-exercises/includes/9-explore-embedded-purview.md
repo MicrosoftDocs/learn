@@ -7,7 +7,7 @@ In this exercise, you explore the Copilot summarization capabilities available i
 
 ### Exercise
 
-For this exercise you're logged in as Avery Howard and have the Copilot owner role. you'll work in both the standalone experience and the embedded experience. Copilot standalone experience and Microsoft Copilot in Microsoft Purview.
+For this exercise you're logged in as Avery Howard and have the Copilot owner role. You'll work in both the standalone experience and the embedded experience. Copilot standalone experience and Microsoft Copilot in Microsoft Purview.
 
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
