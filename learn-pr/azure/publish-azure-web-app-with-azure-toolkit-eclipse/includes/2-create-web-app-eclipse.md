@@ -8,13 +8,13 @@ To create a dynamic web app, on the **File** menu in Eclipse, select **New**, an
 
 :::image type="content" source="../media/2-new-dynamic-web-project.png" alt-text="Screenshot of the New menu in Eclipse with Dynamic Web Project selected." loc-scope="third-party"::: <!-- Eclipse, no-loc -->
 
-The **Dynamic Web Project** wizard prompts you for the basic details of the project. The only required item is the project name. The wizard provides default values for all the other properties and configuration details. Verify the target runtime in order to determine the functionality that you want to use in your web app. In the following screenshot, the user selects the **Apache Tomcat v8.0** server. Use this server is useful to test and debug locally. You can deploy the web app to Azure after you test it.
+The **Dynamic Web Project** wizard prompts you for the basic details of the project. The only required item is the project name. The wizard provides default values for all the other properties and configuration details. Verify the target runtime in order to determine the functionality that you want to use in your web app. In the following screenshot, the user selects the **Apache Tomcat v8.0** server. Use this server to test and debug locally. You can deploy the web app to Azure after you test it.
 
 :::image type="content" source="../media/2-dynamic-web-app-wizard.png" alt-text="Screenshot of the Dynamic Web Project wizard in Eclipse." loc-scope="third-party"::: <!-- Eclipse, no-loc -->
 
 ## How to create static and dynamic web pages
 
-After you create a dynamic web app, add resources to the project using the **Project Explorer** window. Resources include HTML files, JSP files, and CSS style sheets, For example, to add a new JSP page to the project, right-click the project name in the **Project Explorer** window, select **New**, and then select **JSP File**.
+After you create a dynamic web app, add resources to the project using the **Project Explorer** window. Resources include HTML files, JSP files, and CSS style sheets. For example, to add a new JSP page to the project, right-click the project name in the **Project Explorer** window, select **New**, and then select **JSP File**.
 
 :::image type="content" source="../media/2-new-jsp-file.png" alt-text="Screenshot of Eclipse with the user creating a new JSP file for the dynamic web project." loc-scope="third-party"::: <!-- Eclipse, no-loc -->
 
@@ -22,7 +22,7 @@ Eclipse generates the basic boilerplate code for a web page. Use the HTML editor
 
 :::image type="content" source="../media/2-html-editor.png" alt-text="Screenshot of the HTML editor in Eclipse, showing IntelliSense-style prompts." loc-scope="third-party"::: <!-- Eclipse, no-loc -->
 
-A dynamic web page contains a mixture of HTML markup and Java code. You add Java code to a web page using JSP tags. For example, the following steps describe how and when you might use these tags:
+A dynamic web page contains a mixture of HTML markup and Java code. You add Java code to a web page using JSP tags. 
 
 - To import Java libraries, use the `<%@ page ... %>` directive. In the following example, the *java.util* library is imported by adding the directive to the start of the page:
 
@@ -98,3 +98,5 @@ To test a web app, on the **Run** menu, select **Run**, or select the **Run** bu
 Select **Finish** to start the web app. If the server is currently stopped, it starts. Then, the web app runs, and the results appear in a browser window in Eclipse. The results should look similar to the following output:
 
 :::image type="content" source="../media/2-dynamic-app-results.png" alt-text="Screenshot of the static web app running in the browser window in Eclipse." loc-scope="third-party":::
+
+In the next unit, you use Eclipse to create a Java web app that uses Java Server Pages to generate dynamic content for a web page.

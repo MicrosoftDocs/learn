@@ -27,7 +27,7 @@ In this exercise, you use Eclipse to create a Java web app that uses Java Server
 
    :::image type="content" source="../media/3-jsp-file.png" alt-text="Screenshot of the New JSP File wizard in Eclipse, showing the JSP page." loc-scope="third-party":::
 
-1. A code editor window appears that displays the *index.jsp* file. In the **head** section of the page, change the HTML markup for the title to *Sample Web App*:
+1. A code editor window appears that displays the *index.jsp* file. In the head section of the page, change the HTML markup for the title to *Sample Web App*.
 
    ```html
    <head>
@@ -36,7 +36,7 @@ In this exercise, you use Eclipse to create a Java web app that uses Java Server
    </head>
    ```
 
-1. In the **body** section of the page, add this code:
+1. In the body section of the page, add this code:
 
    ```html
    <body>
@@ -48,7 +48,7 @@ In this exercise, you use Eclipse to create a Java web app that uses Java Server
 
    This code retrieves the current date then formats and displays it. The code also extracts the IP address of the client from the request message and prints it.
 
-1. Near the top of the page, after the first **@page** directive that specifies the language and content type of the page, add the two **@page** directives shown in the following code:
+1. Near the top of the page, after the first `@page` directive that specifies the language and content type of the page, add the two `@page` directives shown in the following code:
 
    ```html
    <%@ page language="java" contentType="text/html; charset=UTF-8"

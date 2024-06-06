@@ -112,4 +112,4 @@ You modify the web app to read the value of these properties and use them in the
 > [!IMPORTANT]
 > Deleting the web app using the Azure Toolkit for Eclipse doesn't delete the app service plan. You can remove the plan using the Azure portal. To do so, navigate to the appropriate resource group, select the app service plan, and then select **Delete**, as shown in the following image:
 >
-> :::image type="content" source="../media/7-delete-app-service-plan.png" alt-text="Screenshot of the Azure portal. The user is deleting the app service plan.":::
+> :::image type="content" source="../media/7-delete-app-service-plan.png" alt-text="Screenshot of the Azure portal with the delete option highlighted." lightbox="../media/7-delete-app-service-plan.png":::

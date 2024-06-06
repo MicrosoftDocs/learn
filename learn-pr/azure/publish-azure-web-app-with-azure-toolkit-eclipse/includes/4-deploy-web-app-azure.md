@@ -1,4 +1,4 @@
-Azure App Service provides a scalable, highly available environment for hosting web apps. An Azure web app is a service that can run one or more web applications. It uses the resources that are defined within an App Service Plan.
+Azure App Service provides a scalable, highly available environment for hosting web apps. An Azure web app is a service that can run one or more web applications. It uses the resources that are defined in an App Service Plan.
 
 The App Service Plan defines the environment for running a web app. It specifies resources such as CPU availability, memory allocation, disk storage capacity, how to scale the system according to demand, and how and when to create backups. When you deploy a web app to Azure, you can reuse an existing web app instance or create a new one.
 
