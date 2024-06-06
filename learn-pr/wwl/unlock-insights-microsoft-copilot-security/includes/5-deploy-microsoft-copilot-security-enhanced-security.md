@@ -96,7 +96,7 @@ You need to be an Azure subscription owner or contributor to create capacity.
     
 5. Select a subscription and resource group, add a name to the capacity, select the prompt evaluation location and select the number of Security Compute Units (SCUs). Data is always stored in your home tenant geo.
 
-    :::image type="content" source="../media/set-up-copilot-for-security-azure.png" alt-text="Screenshot of setting up Copilot for Security in Azure." lightbox="../media/set-up-cfs-azure.png":::
+    :::image type="content" source="../media/set-up-copilot-for-security-azure.png" alt-text="Screenshot of setting up Copilot for Security in Azure." lightbox="../media/set-up-copilot-for-security-azure.png":::
 
    > [!NOTE]
    > The number of SCUs is provisioned on an hourly basis, and the estimated monthly cost is displayed.
