@@ -34011,6 +34011,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/intro-to-immersive-reader/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/immersive-reader/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/intro-to-immersive-reader/2-what-is-immersive-reader.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/immersive-reader/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/intro-to-immersive-reader/3-how-immersive-reader-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/immersive-reader/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/intro-to-immersive-reader/4-when-to-use-immersive-reader.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/immersive-reader/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/intro-to-immersive-reader/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/immersive-reader/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/intro-to-immersive-reader/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/immersive-reader/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/intro-to-immersive-reader/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/immersive-reader/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance/",
       "redirect_document_id": false
