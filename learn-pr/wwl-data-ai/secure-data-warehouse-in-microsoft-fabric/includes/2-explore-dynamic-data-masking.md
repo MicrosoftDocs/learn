@@ -63,7 +63,7 @@ CreditCardNumber: XXXX-XXXX-XXXX-3456
 
 As you can see, the sensitive data is hidden from the nonprivileged user, enhancing the security of your data. This scenario is a basic example of how Dynamic Data Masking works. It helps to ensure that sensitive data isn't exposed to users who don't have the necessary privileges to view it.
 
-![NOTE]
+>[!NOTE]
 > Unprivileged users with query permissions can infer the actual data since the data isn’t physically obfuscated.
 
 DDM should be used as part of a comprehensive data security strategy that includes proper management of object-level security with SQL granular permissions and adherence to the principle of minimal required permissions.

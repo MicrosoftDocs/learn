@@ -16,7 +16,7 @@ Here's how you might implement column-level security in this scenario:
 
 1. **Implement access control**: Restrict access to the `MedicalHistory` column based on the user's role. 
 
-Column-level security can help ensure that sensitive health information is only accessible to those who are authorized to see it, thou protecting patient privacy and complying with healthcare regulations. 
+Column-level security can help ensure that sensitive health information is only accessible to those who are authorized to see it, though protecting patient privacy and complying with healthcare regulations. 
 
 ## Configure column-level security
 
