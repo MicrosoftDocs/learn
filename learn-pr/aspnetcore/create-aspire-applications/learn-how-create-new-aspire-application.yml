@@ -8,6 +8,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.topic: unit
+  ms.custom: devx-track-dotnet
 durationInMinutes: 5
 content: |
   [!include[](includes/learn-how-create-new-aspire-application.md)]
