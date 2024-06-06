@@ -3563,3 +3563,8 @@ achievements:
   title: Monitor and back up resources for Azure administrators
   summary: Learn how to monitor and back up Azure resources.
   iconUrl: /training/achievements/azure-administrator-monitor-backup-resources.svg
+- uid: learn.azure.intro-to-content-moderator.badge
+  type: badge
+  title: Introduction to Content Moderator
+  summary: Content Moderator checks text, image, and video content for material that is potentially offensive, risky, or otherwise undesirable in content.
+  iconUrl: /training/achievements/intro-to-content-moderator.svg
