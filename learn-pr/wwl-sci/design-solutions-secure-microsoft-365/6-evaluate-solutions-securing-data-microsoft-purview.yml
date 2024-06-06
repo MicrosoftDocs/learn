@@ -9,7 +9,6 @@ metadata:
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: unit
-  ms.service: security
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-evaluate-solutions-securing-data-microsoft-purview.md)]
+  [!include[](includes/6-evaluate-solutions-securing-data-microsoft-purview.md)]
