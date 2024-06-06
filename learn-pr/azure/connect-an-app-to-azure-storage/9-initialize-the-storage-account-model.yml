@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Connect your application to your Azure Storage account
   description: Exercise - Connect your application to your Azure Storage account
   ms.date: 09/19/2023
-  author: tamram
-  ms.author: tamram
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java
