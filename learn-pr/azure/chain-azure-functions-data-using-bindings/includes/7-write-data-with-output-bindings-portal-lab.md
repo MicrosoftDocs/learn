@@ -52,11 +52,11 @@ Let's add another Azure Cosmos DB input binding.
     | **Collection Name** | `Bookmarks` | The name of the collection from which data is read. We defined this setting earlier in the lesson. |
     | **Document ID** | `{id}` | Add `{id}` to use the correct binding expression and accept the parameter that is passed in the query string. |
     | **Partition key** | `{id}` | Again, add `{id}` to use the correct binding expression and accept the parameter that is passed in the query string. |
-    | **SQL Query (optional)** | _Leave blank_ | We're only retrieving one item at a time based on the ID. So, filtering with the Document setting is better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = /id`). That query would indeed return an item, but it would return it in an items collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
+    | **SQL Query (optional)** | *Leave blank* | We're only retrieving one item at a time based on the ID. So, filtering with the Document setting is better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = /id`). That query would indeed return an item, but it would return it in an items collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
 
     Like the input binding that we created in the previous exercise, we want to look up a bookmark with a specific ID, so we tied the **Document ID** that our function receives in the query string to the binding, which is known as the *binding expression*. The function trigger is an HTTP request that uses a query string to specify the ID to look up. The binding returns either 0 (not found) or 1 (found) documents.
 
-1. Select **OK** to save the input binding configuration.
+1. Select **ADD** to save the input binding configuration.
 
 We now have an Azure Cosmos DB input binding. Let's add an output binding so we can write new entries to our collection.
 
@@ -77,13 +77,13 @@ We now have an Azure Cosmos DB input binding. Let's add an output binding so we 
     | **Collection Name** | `Bookmarks` | The name of the collection from which data is read. This value is the container name that we defined earlier in the lesson. |
     | **Partition key** | `/id` | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. The key entered here (specified in input binding configuration `<key>`) must match the one in the container. |
 
-1. Select **OK** to save this output binding configuration.
+1. Select **ADD** to save this output binding configuration.
 
 Now we have a binding to read from our collection, and a binding to write to it.
 
 ## Add an Azure Queue Storage output binding
 
-Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages--up to the total capacity of the storage account in which it's defined in. The following diagram shows, at a high level, how a queue is used in our scenario.
+Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages--up to the total capacity of the storage account that the queue is defined in. The following diagram shows, at a high level, how a queue is used in our scenario.
 
 :::image type="content" source="../media/7-q-logical-small.png" alt-text="Illustration showing a storage queue with a function pushing and another function popping messages.":::
 
@@ -114,7 +114,7 @@ Although we could keep the default values, let's change some settings to lend mo
     | **Message parameter name** | outputQueueItem | newmessage | The binding property we use in code. |
     | **Queue name** | outqueue | bookmarks-post-process | The name of the queue where we're placing bookmarks so that another function can process them further. |
 
-1. Select **OK** to save your output configuration for Azure Queue Storage.
+1. Select **ADD** to save your output configuration for Azure Queue Storage.
 
 ## Update function implementation
 
@@ -142,6 +142,64 @@ Let's break down what this code does:
 > 
 > :::image type="content" source="../media/7-q-auto-create-small.png" alt-text="Screenshot showing message that the queue will be auto-created.":::.
 > 
+
+1. Select **function.json** from the dropdown list in your **`<functionapp> \ HttpTrigger3 \`** path and make the following changes:
+
+    1. Change all instances of `"collectionName"` to `"containerName"`.
+    1. Change all instances of `"connectionStringSetting"` to `"connection"`.
+    1. Delete the references to `"methods": []`.
+
+1. Your final **function.json**  file should resemble this code.
+
+    ```json
+    {
+      "bindings": [
+        {
+          "authLevel": "function",
+          "type": "httpTrigger",
+          "direction": "in",
+          "name": "req",
+          "methods": [
+            "get",
+            "post"
+          ]
+        },
+        {
+          "type": "http",
+          "direction": "out",
+          "name": "res"
+        },
+        {
+          "name": "bookmark",
+          "direction": "in",
+          "type": "cosmosDB",
+          "partitionKey": "{id}",
+          "databaseName": "func-io-learn-db",
+          "containerName": "Bookmarks",
+          "connection": "your-database_DOCUMENTDB",
+          "id": "{id}"
+        },
+        {
+          "name": "newbookmark",
+          "direction": "out",
+          "type": "cosmosDB",
+          "partitionKey": "/id",
+          "databaseName": "func-io-learn-db",
+          "containerName": "Bookmarks",
+          "connection": "your-database_DOCUMENTDB"
+        },
+        {
+          "name": "newmessage",
+          "direction": "out",
+          "type": "queue",
+          "queueName": "bookmarks-post-process",
+          "connection": "your-storage-account_STORAGE"
+        }
+      ]
+    }
+    ```
+
+1. In the command bar, select **Save**.
 
 So, that's it. Let's see our work in action in the next section.
 
@@ -182,7 +240,7 @@ So, that's it. Let's see our work in action in the next section.
     })
     ```
 
-1. In the command bar, select **Save**.  A connection is made, and a log file session opens.
+1. Select **Save** in the command bar. A connection is made, and a log file session opens.
 
 Let's break down what this code does:
 

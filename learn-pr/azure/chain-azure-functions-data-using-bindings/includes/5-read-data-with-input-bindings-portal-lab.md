@@ -73,7 +73,7 @@ Let's use the Data Explorer tool to create a database and container.
 
 1. Select **func-io-learn-db** to expand it. Notice that your **func-io-learn-db** database contains several child members, including Scale and Bookmarks. 
 
-1. Expand the **Bookmarks** container, and notice that it's prepopulated with several child members.
+1. Expand the **Bookmarks** container. Notice that several child members already prepopulate it.
 
 In the next task, you add some data, also known as items, to your Bookmarks container.
 
@@ -201,7 +201,7 @@ To read data from the database, you need to define an input binding. As you see 
 
     To clarify why we're using these settings, we want to look up a bookmark with a specific ID, so we tied the **Document ID** that our function receives in the query string to the input binding. This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Because IDs are unique in our collection, the binding returns either 0 (not found) or 1 (found) documents.
 
-1. To save this input binding configuration, select **OK**.
+1. To save this input binding configuration, select **ADD**.
 
 ## Update the function implementation
 
@@ -262,7 +262,7 @@ Let's examine what this code is doing.
 
 1. Select **function.json** from the dropdown list in your **`<functionapp> \ HttpTrigger2 \`** path.
 
-1. Modify the values for `id` and `partitionKey` so that they accept a parameter of `{id}`. Your **function.json** code should resemble the following example, where `your-database` is replaced with the name of your Cosmos DB database.
+1. Replace all code in the *function.json* file with the following code. Be sure and replace `your-database` with the name of your Azure Cosmos DB account.
 
     ```json
     {
@@ -286,11 +286,11 @@ Let's examine what this code is doing.
           "name": "bookmark",
           "direction": "in",
           "type": "cosmosDB",
-          "connection": "your-database_DOCUMENTDB",
+          "partitionKey": "{id}"
           "databaseName": "func-io-learn-db",
           "containerName": "Bookmarks",
+          "connection": "your-database_DOCUMENTDB",
           "id": "{id}",
-          "partitionKey": "{id}"
         }
       ]
     }
