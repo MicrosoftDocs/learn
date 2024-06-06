@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Manage tiered storage using Azure CLI
   description: Exercise - Manage tiered storage using Azure CLI
   ms.date: 11/02/2023
-  author: tamram
-  ms.author: tamram
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli
