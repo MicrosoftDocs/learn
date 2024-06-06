@@ -1,6 +1,6 @@
-This unit will explore how inclusive hiring can be a source of competitive advantage for your startup.
+This unit explores how inclusive hiring can be a source of competitive advantage for your startup.
 
-We'll look specifically at gender diversity, ethnic diversity, neurodiversity, and people with differing ability. But the concepts that we'll discuss are intended to reflect a focus on diversity in the broadest sense.
+We'll look specifically at gender diversity, ethnic diversity, neurodiversity, and people with differing ability, but the concepts that we discuss are intended to reflect a focus on diversity in the broadest sense.
 
 ## Gender diversity
 
@@ -8,7 +8,7 @@ In the United States, only [20 percent of seed-funded startups have a female fou
 
 One of the reasons for those low numbers is that only [8 percent of partners at venture capital firms are women, and three-quarters of US venture capital firms don't have any female partners](https://hbr.org/2018/07/the-other-diversity-dividend?azure-portal=true). It's been shown that [bias, unconscious or otherwise, has a dramatic effect on investment decisions](https://www.hbs.edu/ris/Publication%20Files/17-067_b5578676-e44c-40aa-a9d8-9e72c287afe8.pdf?azure-portal=true).
 
-Nevertheless, a recent study by BCG found that venture-backed startups with [women founders generated more than twice as much revenue per dollar invested than startups founded by men](https://www.bcg.com/en-us/publications/2018/why-women-owned-startups-are-better-bet?azure-portal=true).
+Nevertheless, a recent study by BCG found that venture-backed startups with [women founders generated more than twice as much revenue per dollar invested than startups founded by men](https://www.bcg.com/publications/2018/why-women-owned-startups-are-better-bet).
 
 ## Ethnic diversity
 
@@ -30,7 +30,7 @@ For these reasons, large companies such as [SAP, Hewlett Packard, and Microsoft 
 
 ## People of differing ability
 
-One in four adults in the US has some type of disability, which includes challenges with [mobility (14 percent), cognition (11 percent), hearing (6 percent), and vision (5 percent)](https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html?azure-portal=true).
+One in four adults in the US has some type of disability, which includes challenges with [mobility (12 percent), cognition (12 percent), hearing (6 percent), and vision (5 percent)](https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html?azure-portal=true).
 
 The inclusion of people with disabilities in product development has been shown to greatly improve companies' success in building products that need to be accessible by those with disabilities. Building accessible products is becoming not just desirable, but mandated in many settings. It's much easier to achieve if your team includes people with a disability.
 
@@ -54,22 +54,22 @@ As noted earlier, this unit sets out to cover diversity in the broadest sense. E
 
 Here are some of the ways in which startups can benefit from [building teams that embrace diversity and inclusion](https://medium.com/swlh/driving-financial-performance-with-diversity-43eba2de0315?azure-portal=true):
 
-- Greater diversity of ideas and perspectives.
-- Avoidance of group-think caused by team homogeneity.
-- Greater employee job satisfaction, trust, and engagement.
-- Enhanced team decision-making.
-- Stronger corporate practices in social responsibility.
-- Better reputation and goodwill in the community in which the company operates.
-- Higher sales conversion rates. (Research has shown that [consumers are more likely to purchase a product if they perceive the company to be diverse or inclusive](https://www.thinkwithgoogle.com/future-of-marketing/management-and-culture/diversity-and-inclusion/thought-leadership-marketing-diversity-inclusion/?azure-portal=true).)
-- Better understanding of diverse customer groups, reaching product/market fit faster.
-- More authentic communication with diverse customer groups.
-- Ease of recruiting candidates from diverse backgrounds.
-- Ease of recruiting candidates for whom a diverse workplace is an important consideration. (A survey by Glassdoor found that [67 percent of candidates consider workforce diversity when evaluating a job offer](https://medium.com/swlh/driving-financial-performance-with-diversity-43eba2de0315?azure-portal=true).)
-- Minimized staff turnover caused by lack of diversity in the workplace or a lack of consideration for the needs of diverse employees.
+- Greater diversity of ideas and perspectives
+- Avoidance of group-think caused by team homogeneity
+- Greater employee job satisfaction, trust, and engagement
+- Enhanced team decision-making
+- Stronger corporate practices in social responsibility
+- Better reputation and goodwill in the community in which the company operates
+- Higher sales conversion rates (Research has shown that [consumers are more likely to purchase a product if they perceive the company to be diverse or inclusive](https://www.thinkwithgoogle.com/future-of-marketing/management-and-culture/diversity-and-inclusion/thought-leadership-marketing-diversity-inclusion/?azure-portal=true))
+- Better understanding of diverse customer groups, reaching product/market fit faster
+- More authentic communication with diverse customer groups
+- Ease of recruiting candidates from diverse backgrounds
+- Ease of recruiting candidates for whom a diverse workplace is an important consideration (A survey by Glassdoor found that [67 percent of candidates consider workforce diversity when evaluating a job offer](https://medium.com/swlh/driving-financial-performance-with-diversity-43eba2de0315?azure-portal=true))
+- Minimized staff turnover caused by lack of diversity in the workplace or a lack of consideration for the needs of diverse employees
 
 It's clear that creating a diverse team can be a massive competitive advantage for startups. A diverse population is a highly skilled but underutilized talent pool. Startups that can attract and retain the right candidates can use this enhanced talent to their advantage and outperform companies with less diverse teams.  
 
-Calendly is a great example of a company benefiting from a focus on diversity. It has implemented diversity programs to encourage and support employees from diverse backgrounds, including programs specifically for women of color. It's become recognized as a highly desirable employer, with [93 percent of employees reporting it's a great place to work](https://www.greatplacetowork.com/certified-company/7023983?azure-portal=true) compared to a US average of 59 percent of employees.
+Calendly is a great example of a company benefiting from a focus on diversity. It implemented diversity programs to encourage and support employees from diverse backgrounds, including programs specifically for women of color. It's become recognized as a highly desirable employer, with [93 percent of employees reporting it's a great place to work](https://www.greatplacetowork.com/certified-company/7023983?azure-portal=true) compared to a US average of 59 percent of employees.
 
 Attracting and retaining diverse candidates requires creating a work environment that allows them to deliver their best work. Companies need to think about how to achieve this before recruiting. For example, there's no point in recruiting a candidate with autism unless you've understood their needs (which might include minimizing visual and auditory distractions) and created a work environment that allows them to be productive.
 
