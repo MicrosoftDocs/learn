@@ -8,7 +8,7 @@ This module expands on these concepts and covers practical tips for building a h
 
 ## Learning objectives
 
-In this module, you'll learn:
+In this module, we cover:
 
 - The core attributes and skill sets that make up successful startup teams.
 - The pros and cons of cofounders versus employees versus contractors.
