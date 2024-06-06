@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.send-messages-rabbitmq-dotnet-aspire-app.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "In this unit, you'll answer questions about using RabbitMQ in .NET Aspire to check the knowledge you've gained in this module."
+  ms.date: 3/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom:
+  - team=cloud_advocates
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "You're setting up a RabbitMQ message channel. You want to distribute all messages to all the subscribers without any filters. What kind of exchange should you create?"
+    choices:
+    - content: "Direct"
+      isCorrect: false
+      explanation: "Incorrect. A direct exchange applies filters to messages so you can govern which queues and consumers receive them."
+    - content: "Topic"
+      isCorrect: false
+      explanation: "Incorrect. A topic exchange applies filters with wildcards to messages so you can flexibly govern which queues and consumers receive them."
+    - content: "Fanout"
+      isCorrect: true
+      explanation: "Correct. When you use a fanout exchange, messages are copied to all the subscribers."
+  - content: "You add a RabbitMQ container in your app host project and pass it to a consuming project. In the consumer, how can you obtain a connection to the RabbitMQ service?"
+    choices:
+    - content: "Call the AddRabbitMQClient() method and then use dependency injection."
+      isCorrect: true
+      explanation: "Correct. Once you've called the AddRabbitMQClient() method, you can get the connection that the app host passed to your consuming project by using dependency injection in the object where you want to send or receive messages."
+    - content: "Call the AddRabbitMQ() method."
+      isCorrect: false
+      explanation: "Incorrect. You use the AddRabbitMQ() method in the app host to create a RabbitMQ service, not in the consuming project."
+    - content: "Call the CreateModel() method."
+      isCorrect: false
+      explanation: "Incorrect. You use the CreateModel() method to set up a messaging channel after you obtain the connection."
