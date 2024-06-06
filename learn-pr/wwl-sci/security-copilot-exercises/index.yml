@@ -15,7 +15,7 @@ abstract: |
   By the end of this module, you'll be able to:
     - "Set up Microsoft Copilot for Security."
     - "Work with sources in Copilot."
-    - "Create a custom playbook."
+    - "Create a custom promptbook."
     - "Use the capabilities of Copilot in Defender XDR."
     - "Use the capabilities of Copilot in Microsoft Purview."
 prerequisites: |
@@ -46,7 +46,8 @@ units:
 - learn.security-copilot-exercises.explore-knowledge-base-file-upload
 - learn.security-copilot-exercises.create-custom-promptbook
 - learn.security-copilot-exercises.explore-embedded-defender-xdr
-- learn.security-copilot-exercises.explore-embedded-microsoft-purview
+- learn.security-copilot-exercises.explore-embedded-purview
+- learn.security-copilot-exercises.knowledge-check
 - learn.security-copilot-exercises.summary
 badge:
   uid: learn.security-copilot-exercises.badge

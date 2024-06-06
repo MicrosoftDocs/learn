@@ -7,6 +7,14 @@ The module then moved on to exercises focused on managing sources. You configure
 
 Lastly, you explored the capabilities of Copilot embedded in Defender XDR and Purview.
 
+Now that you completed this module, you can:
+
+- Set Up and provision Microsoft Copilot for Security.
+- Explore the standalone experience of Microsoft Copilot for Security.
+- Manage sources.
+- Work with prompts and promptbooks.
+- Explore the features of the different embedded experiences.
+
 #### Learn more
 
 - [Get started with Microsoft Copilot for Security](/copilot/security/get-started-security-copilot)

@@ -78,7 +78,7 @@ This task is complex and requires the involvement of more senior analysts. In th
 
 1. Select the **box icon ![box icon](../media/box-icon.png)** next to the pin icon to copy all the responses to the pin board, then select the **Pin icon ![pin icon](../media/pin-icon.png)** to save those responses to the pin board.
 
-1. Select the **pin board icon ![prompt icon](../media/pinboard-icon.png)** to open the pin board. The pin board holds your saved prompts and responses, along with a summary of each one.
+1. Select the **pin board icon ![pin board icon](../media/pinboard-icon.png)** to open the pin board. The pin board holds your saved prompts and responses, along with a summary of each one.
 
 1. From the top of the page, select **Share** to view your options. By sharing the incident via a link or email, people in your organization with Copilot access can view this session. Close the window by selecting the **X**.
 
