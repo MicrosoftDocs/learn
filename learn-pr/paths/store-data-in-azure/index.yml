@@ -5,8 +5,8 @@ metadata:
   description: This learning path gets you started with the basics of storage management in Azure, Storage Account creation, and choices for data storage.
   brand: azure
   ms.date: 01/31/2018
-  author: tamram
-  ms.author: tamram
+  author: normesta
+  ms.author: normesta
   ms.topic: learning-path
 title: Store data in Azure
 summary:  |

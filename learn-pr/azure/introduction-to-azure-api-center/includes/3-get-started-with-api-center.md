@@ -13,14 +13,21 @@ In this exercise, you will:
 
 To start managing your APIs through API Center, you need:
 
-1. An Azure Subscription.
-1. If you haven't already, you need to register the **Microsoft.ApiCenter resource provider** in your subscription. 
-
+1. An Azure subscription.
+1. The **Microsoft.ApiCenter** resource provider registered in your subscription.
 1. At least a Contributor role assignment or [equivalent permissions](/azure/role-based-access-control/role-assignments-list-portal) in the Azure subscription.
 
-## Step 1: Create an API Center resource
-
 ::: zone pivot="azure-portal"
+
+> [!NOTE]
+> If you haven't already, you need to register the **Microsoft.ApiCenter** resource provider in your subscription.
+> 1. [Sign in](https://portal.azure.com/) to the Azure portal.
+> 2. Enter *Subscriptions* in the search bar.
+> 3. Select subscription where you want to create the API Center.
+> 4. In the left menu, under Resources, select *Resource providers*.
+> 5. Search for **Microsoft.ApiCenter** in the list of resource providers. If it's not registered, select **Register**.
+
+### Step 1: Create an API Center resource
 
    1. [Sign in](https://portal.azure.com/) to the Azure portal.
    1. Enter *API Centers* in the search bar.
@@ -54,6 +61,16 @@ To start managing your APIs through API Center, you need:
    az login
    ```
 
+> [!NOTE]
+> If you haven't already, you need to register the **Microsoft.ApiCenter** resource provider in your subscription.
+>
+> Run the following command to register the resource provider  
+> ```bash
+> az provider register –namespace Microsoft.ApiCenter 
+> ```
+
+### Step 1: Create an API Center resource
+
    Create a resource group by running the following command passing the:
 
 - name of your resource group **--name** Example. *Contoso*
@@ -64,6 +81,9 @@ To start managing your APIs through API Center, you need:
  ```
 
    :::image type="content" source="../media/3-az-group-create.png" alt-text="Screenshot showing successful az group create CLI command":::
+
+> [!NOTE]
+> *az apic* commands require the **apic-extension** Azure CLI extension. If you haven't used *az apic* commands, the extension will be installed dynamically when you run your first *az apic* command, or you can install the extension manually. Learn more about [Azure CLI extensions](/cli/azure/azure-cli-extensions-overview).
 
  Create an API Center by running the following command, passing the:
 
@@ -88,7 +108,7 @@ To start managing your APIs through API Center, you need:
 
 ::: zone-end
 
-## Step 2: Define metadata properties
+### Step 2: Define metadata properties
 
 API Center uses metadata properties to organize the APIs in your inventory and enable operations such as filtering, search etc.
 
@@ -100,6 +120,8 @@ Contoso, like many other organizations would like to have all their APIs pass th
 - *API Approver* of type String
 - *Compliance review* of type Predefined choices
 - *Public facing* of type Boolean
+
+::: zone pivot="azure-portal"
 
 1. On the left menu, select **Assets > Metadata > + New metadata.**
     :::image type="content" source="../media/3-add-metadata-portal.png" alt-text="Screenshot showing steps to add new metadata on azure portal":::
@@ -129,7 +151,62 @@ This opens a modal on the right with metadata details, which include built-in pr
 > [!NOTE]
 > You can add and edit properties in the schema at any time and instantly apply them to all APIs in your API Center
 
-## Step 3: Add APIs to the inventory
+::: zone-end
+
+::: zone pivot="azure-cli"
+
+Create a new metadata schema by running the following command, to set the:
+- Metadata **name** as *api-approver*
+- **Schema** with property type as *String* and title as *API Approver*
+- **Assignments** as *required* for **APIs** while *optional* for **Environment** and **Deployment**
+
+```bash
+az apic metadata create --resource-group contoso --service-name contoso-apis --name "api-approver" --schema '{"type":"string", "title":"API Approver"}' --assignments '[{entity:api,required:true,deprecated:false},{entity:environment,required:true,deprecated:false}]'
+```
+:::image type="content" source="../media/3-create-metadata-cli.png" alt-text="Screenshot showing steps to create metadata schema using Azure CLI":::
+
+Repeat the same steps for:
+ - Metadata **name** as *public-facing*
+- **Schema** with property type as *Boolean* and **title** as *Public Facing*
+- **Assignments** as *required* for **APIs** while *optional* for **Environment** and **Deployment**
+
+By running the following command:
+
+```bash
+az apic metadata create --resource-group contoso --service-name contoso-apis --name "public-facing" --schema '{"type":"boolean", "title":"Public Facing"}' --assignments '[{entity:api,required:true,deprecated:false},{entity:environment,required:true,deprecated:false}]'
+```
+
+Finally, repeat the same steps for:
+ - Metadata **name** as *compliance-review*
+- **Schema** with property type as *String* and **title** as *Compliance Review*
+- **Assignments** as *required* for **APIs** while *optional* for **Environment** and **Deployment**
+
+By running the following command:
+
+```bash
+az apic metadata create --resource-group contoso --service-name contoso-apis --name "compliance-review" --schema '{"type":"string","title":"Compliance Review","oneOf":[{"const":"Not Started","description":""},{"const":"In Progress","description":""},{"const":"Completed","description":""}]}' --assignments '[{entity:api
+,required:true,deprecated:false},{entity:environment,required:true,deprecated:false}]'
+```
+
+You can run the following command to view a list of all the defined metadata in your API Center.
+
+```bash
+az apic metadata list -g <resource-group-name> -s <api-center-name> 
+```
+
+> [!NOTE]
+> You can add and edit properties in the schema at any time and instantly apply them to all APIs in your API Center
+
+::: zone-end
+
+::: zone pivot="vs-code"
+
+> [!NOTE]
+> This action is currently not supported on VS Code. Create one using Azure CLI or the Azure portal.
+
+::: zone-end
+
+### Step 3: Add APIs to the inventory
 
 The Contoso organization would like to recommend technical conferences for their engineering teams as part of their internal skilling drive. We'll add a Conference API with speakers, sessions, and topics.
 
@@ -243,11 +320,13 @@ az apic api definition import-specification --resource-group myResourceGroup --s
 
 ::: zone-end
 
-## Step 4: Add deployments and environments
+### Step 4: Add deployments and environments
 
 ### Environments
 
-An environment (Development, Testing, Staging, or Production), represents a location where an API runtime is deployed. Contoso IT Administrators define two environments – Testing and production, in their API Center instance to manage and track different API runtimes in their organization.
+An environment (Development, Testing, Staging, or Production), represents a location where an API runtime is deployed. API Platform engineers at Contoso define two environments – Testing and production, in their API Center instance to manage and track different API runtimes in their organization.
+
+::: zone pivot="azure-portal"
 
 To create an environment,
 
@@ -260,11 +339,40 @@ To create an environment,
 
     :::image type="content" source="../media/3-contoso-production-env-portal.png" alt-text="Screenshot showing steps to create a new environment of production type on Azure portal":::
 
+::: zone-end
+
+::: zone pivot="azure-cli"
+
+To create an environment, run the following CLI command
+
+```bash
+az apic environment create -g contoso -s contoso-apis --title "Contoso Testing" --environment-id "contoso-testing" --type "testing"
+```
+
+:::image type="content" source="../media/3-create-environment-cli.png" alt-text="Screenshot showing CLI command to create a new environment":::
+
+Repeat the same for the production environment
+
+```bash
+az apic environment create -g contoso -s contoso-apis --title "Contoso Production" --environment-id "contoso-production" --type "production"
+```
+
+::: zone-end
+
+::: zone pivot="vs-code"
+
+> [!NOTE]
+> Creating environments is currently not supported on VS Code. Please use the Azure CLI or the Azure portal option for this step.
+
+::: zone-end
+
 ### Deployments
 
 A unique location (address) for users to interact with your API is provided for each API runtime in a given environment. This location is called a deployment, and a single API version could have two deployments - a staging and a production deployment.
 
 Contoso has one API, the Conference API, which we associate with the environments we created.
+
+::: zone pivot="azure-portal"
 
 1. In the portal, navigate to your API center.
 2. In the left menu, select **APIs** and then select an API, for example, the *Conference API.*
@@ -278,3 +386,24 @@ Contoso has one API, the Conference API, which we associate with the environment
     c. After successfully adding the definition, add a base runtime URL that will be specific for the API in the selected environment.
 
     :::image type="content" source="../media/3-add-deployment-portal.png" alt-text="Screenshot showing steps to create a new deployment on Azure portal":::
+
+::: zone-end
+
+::: zone pivot="azure-cli"
+
+To create a deployment and associate it with the environment we created in the step above, run the following CLI command
+
+```bash
+az apic api deployment create -g contoso-corporation -s contoso-api-center --deployment-id "v1-conference-api" --title "Conference OpenAPI 2" --description "Conference Demo API deployment." --api-id conference-api --environment-id "/workspaces/default/environments/contoso-testing" --definition-id "/workspaces/default/apis/conference-api/versions/v1/definitions/conference-openapi-2" --server '{"runtimeUri":["https://conferenceapi.azurewebsites.net/"]}'
+```
+
+:::image type="content" source="../media/3-create-deployment-cli.png" alt-text="Screenshot showing CLI command to create a deployment":::
+
+::: zone-end
+
+::: zone pivot="vs-code"
+
+> [!NOTE]
+> Creating deployments is currently not supported on VS Code. Please use the Azure CLI or the Azure portal option for this step.
+
+::: zone-end

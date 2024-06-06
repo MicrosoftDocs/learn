@@ -1,6 +1,6 @@
 Azure Quantum offers a variety of tools to help you learn about quantum computing and quantum programming, and to help you develop your quantum solutions. 
 
-Depending on your level of coding, quantum knowledge, and objectives, you may prefer different tools for quantum computing. This module introduces you to the various choices you have with Azure Quantum, and what each one can do.
+Depending on your level of coding, quantum knowledge, and objectives, you may prefer different tools for quantum computing. This module introduces you to the various choices you have with Azure Quantum and what each can do.
 
 ## Learning objectives
 
