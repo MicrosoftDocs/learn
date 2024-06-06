@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-security-operations.design-security-workflows
-title: Design security workflows
+title: Design and evaluate security workflows, including incident response, threat hunting, and incident management
 metadata:
-  title: Design security workflows
-  description: "SC-100 preparatory unit on the topic: design security workflows."
+  title: •	Design and evaluate security workflows, including incident response, threat hunting, and incident management
+  description: "SC-100 preparatory unit on the topic: •	Design and evaluate security workflows, including incident response, threat hunting, and incident management."
   ms.date: 3/15/2023
   author: hrasheed-msft
   ms.author: hrasheed
