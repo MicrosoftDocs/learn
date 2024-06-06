@@ -6,7 +6,7 @@ Extend and integrate services with Copilot for Security using plugins from Micro
 
 Copilot for Security also taps into threat intelligence and authoritative content through plugins. These plugins can search across Microsoft Defender Threat Intelligence articles, intel profiles, Microsoft Defender XDR threat analytics reports, and vulnerability disclosure publications.
 
-:::image type="content" source="../media/security-copilot-diagram.png" alt-text="Diagrame of how Copilot for Security works." lightbox="media/security-copilot-diagram.png":::
+:::image type="content" source="../media/security-copilot-diagram.png" alt-text="Diagrame of how Copilot for Security works." lightbox="../media/security-copilot-diagram.png":::
 
 ### How Microsoft Copilot for Security Works:
 

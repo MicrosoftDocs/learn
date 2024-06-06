@@ -6,8 +6,8 @@ Access Copilot for Security directly at [securitycopilot.microsoft.com](https://
 **Embedded Experience**  
 Utilize Copilot for Security within other Microsoft security products to gain context-specific functionalities seamlessly integrated into your existing workflows. For example, within Microsoft Defender XDR, you can access features like incident summarization or script analysis directly.
 
->[!Note]
- For detailed guidance on specific embedded experiences, refer to the documentation library of the corresponding service. For instance, if using Copilot for Security within Microsoft Defender XDR, the relevant guidance can be found in the Microsoft Defender XDR documentation.
+> [!NOTE]
+> For detailed guidance on specific embedded experiences, refer to the documentation library of the corresponding service. For instance, if using Copilot for Security within Microsoft Defender XDR, the relevant guidance can be found in the Microsoft Defender XDR documentation.
 
 ### Available Embedded Experiences
 
