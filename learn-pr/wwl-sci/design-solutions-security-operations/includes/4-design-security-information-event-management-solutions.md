@@ -25,7 +25,7 @@ Microsoft Defender XDR is made up of these security technologies, operating in t
 
 The diagram below illustrates high-level architecture for key Microsoft Defender XDR components and integrations. *Detailed* architecture for each Defender component, and use-case scenarios, are given throughout this series of articles.
 
-:::image type="content" source="./media/eval-defender-xdr-m365-defender-eval-architecture.png" alt-text="A diagram that shows the high-level architecture of Microsoft Defender XDR." lightbox="./media/eval-defender-xdr-m365-defender-eval-architecture.png":::
+:::image type="content" source="../media/eval-defender-xdr-m365-defender-eval-architecture.png" alt-text="A diagram that shows the high-level architecture of Microsoft Defender XDR." lightbox="../media/eval-defender-xdr-m365-defender-eval-architecture.png":::
 
 In this illustration:
 
@@ -45,25 +45,3 @@ Additional optional architecture components not included in this illustration:
 - **Detailed signal data from all Microsoft Defender XDR components can be integrated into Microsoft Sentinel** and combined with other logging sources to offer full SIEM and SOAR capabilities and insights.
 - **For more reading on using Microsoft Sentinel, an Azure SIEM, with Microsoft Defender XDR** as an XDR, take a look at this [Overview article](/azure/sentinel/microsoft-365-defender-sentinel-integration) and the Microsoft Sentinel and Microsoft Defender XDR [integration steps](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE).
 - For more on SOAR in Microsoft Sentinel (including links to playbooks in the Microsoft Sentinel GitHub Repository), please read [this article](/azure/sentinel/automate-responses-with-playbooks).
-
-<a name='the-evaluation-process-for-microsoft-365-defender-cyber-security'></a>
-
-## The evaluation process for Microsoft Defender XDR cyber security
-
-Microsoft recommends enabling the components of Microsoft 365 Defender in the order illustrated:
-
-:::image type="content" source="/defender/media/defender/m365-defender-eval-process.png" alt-text="A diagram that shows the high-level evaluation process for Microsoft Defender XDR." lightbox="/defender/media/defender/m365-defender-eval-process.png":::
-
-The following table describes this illustration.
-
-|Serial Number|Step|Description|
-|---|---|---|
-|1|[Create the evaluation environment](eval-create-eval-environment.md)|This step ensures you have the trial license for Microsoft Defender XDR.|
-|2|[Enable Defender for Identity](eval-defender-identity-overview.md)|Review the architecture requirements, enable the evaluation, and walk through tutorials for identifying and remediating different attack types.|
-|3|[Enable Defender for Office 365](eval-defender-office-365-overview.md)|Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment. This component includes Exchange Online Protection and so you will actually evaluate *both* here.|
-|4|[Enable Defender for Endpoint](eval-defender-endpoint-overview.md)|Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment.|
-|5|[Enable Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)|Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment.|
-|6|[Investigate and respond to threats](eval-defender-investigate-respond.md)|Simulate an attack and begin using incident response capabilities.|
-|7|[Promote the trial to production](eval-defender-promote-to-production.md)|Promote the Microsoft 365 components to production one-by-one.|
-
-This order is commonly recommended and designed to leverage the value of the capabilities quickly based on how much effort is typically required to deploy and configure the capabilities. For example, Defender for Office 365 can be configured in less time than it takes to enroll devices in Defender for Endpoint. Of course, you should prioritize the components to meet your business needs, and can enable these in a different order.
