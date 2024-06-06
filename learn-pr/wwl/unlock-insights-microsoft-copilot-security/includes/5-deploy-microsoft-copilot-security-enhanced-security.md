@@ -58,12 +58,12 @@ You need to be an Azure subscription owner or contributor to create capacity.
 
 2. Select **Get started**.
     
-     :::image type="content" source="media/get-started.png" alt-text="Screenshot of get started." lightbox="media/get-started.png":::
+     :::image type="content" source="../media/get-started.png" alt-text="Screenshot of get started." lightbox="media/get-started.png":::
 
 3. Set up your security capacity: 
    Select the Azure subscription, associate capacity to a resource group, add a name to the capacity, select the prompt evaluation location, and specify the number of Security Compute Units (SCUs). Data is always stored in your home tenant geo.
 
-    :::image type="content" source="media/set-up-capacity.png" alt-text="Screenshot of set up your security capacity." lightbox="media/set-up-capacity.png":::
+    :::image type="content" source="../media/set-up-capacity.png" alt-text="Screenshot of set up your security capacity." lightbox="media/set-up-capacity.png":::
 
     > [!NOTE]
     > The number of SCUs is provisioned on an hourly basis, and the estimated monthly cost is displayed.
@@ -74,7 +74,7 @@ You need to be an Azure subscription owner or contributor to create capacity.
 
 After you've created the capacity, it will take a few minutes to deploy the Azure resource on the backend.  
 
-   :::image type="content" source="media/setting-up-capacity.png" alt-text="Screenshot of setting up your security capacity." lightbox="media/setting-up-capacity.png":::
+   :::image type="content" source="../media/setting-up-capacity.png" alt-text="Screenshot of setting up your security capacity." lightbox="media/setting-up-capacity.png":::
 
 #### Option 2: Provision capacity in Azure
 
@@ -92,11 +92,11 @@ You need to be an Azure subscription owner or contributor to create capacity.
 
 4. Under **Plan**, select **Microsoft Copilot for Security**. Then select **Create**.
 
-   :::image type="content" source="media/create-capacity-azure.png" alt-text="Screenshot showing creating capacity in the Azure portal." lightbox="media/create-capacity-azure.png":::
+   :::image type="content" source="../media/create-capacity-azure.png" alt-text="Screenshot showing creating capacity in the Azure portal." lightbox="media/create-capacity-azure.png":::
     
 5. Select a subscription and resource group, add a name to the capacity, select the prompt evaluation location and select the number of Security Compute Units (SCUs). Data is always stored in your home tenant geo.
 
-    :::image type="content" source="media/set-up-cfs-azure.png" alt-text="Screenshot of setting up Copilot for Security in Azure." lightbox="media/set-up-cfs-azure.png":::
+    :::image type="content" source="../media/set-up-copilot-for-security-azure.png" alt-text="Screenshot of setting up Copilot for Security in Azure." lightbox="media/set-up-cfs-azure.png":::
 
    > [!NOTE]
    > The number of SCUs is provisioned on an hourly basis, and the estimated monthly cost is displayed.
@@ -119,20 +119,20 @@ You need to be an Azure Owner or a contributor for the capacity resource to asso
 
 1. Associate your capacity to the Copilot for Security environment if the capacity was created in the Azure portal. 
 
-    :::image type="content" source="media/select-capacity.png" alt-text="Screenshot of selecting capacity you'd like to use." lightbox="media/select-capacity.png":::
+    :::image type="content" source="../media/select-capacity.png" alt-text="Screenshot of selecting capacity you'd like to use." lightbox="media/select-capacity.png":::
     
 2. You're informed where your Customer Data will be stored. Select **Continue**.
 
-    :::image type="content" source="media/customer-data-stored.png" alt-text="Screenshot of where your customer data is stored." lightbox="media/customer-data-stored.png":::
+    :::image type="content" source="../media/customer-data-stored.png" alt-text="Screenshot of where your customer data is stored." lightbox="media/customer-data-stored.png":::
 
 3. Select among the data sharing options. Select **Continue**. 
 
-    :::image type="content" source="media/data-sharing-options.png" alt-text="Screenshot of Customer Data sharing options." lightbox="media/data-sharing-options.png":::
+    :::image type="content" source="../media/data-sharing-options.png" alt-text="Screenshot of Customer Data sharing options." lightbox="media/data-sharing-options.png":::
 
 4. You'll be informed of the default roles that can access Copilot for Security. Select **Continue**.
 
-     :::image type="content" source="media/copilot-access.png" alt-text="Screenshot of Copilot access." lightbox="media/copilot-access.png":::
+     :::image type="content" source="../media/copilot-access.png" alt-text="Screenshot of Copilot access." lightbox="media/copilot-access.png":::
 
 5. A confirmation page is displayed. Select **Finish**.
 
-    :::image type="content" source="media/all-set.png" alt-text="Screenshot of Copilot all set." lightbox="media/all-set.png":::
+    :::image type="content" source="../media/all-set.png" alt-text="Screenshot of Copilot all set." lightbox="media/all-set.png":::

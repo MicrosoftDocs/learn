@@ -3,8 +3,8 @@ In this module, you have learnt about Microsoft Copilot for Security, an AI-powe
 The main takeaways from this module are the comprehensive capabilities of Microsoft Copilot for Security. It enhances the efficiency and capabilities of Defenders by integrating with Microsoft security products like Defender XDR, Sentinel, and Intune. The system allows for the integration of plugins from Microsoft and third-party security products, adding context from event logs, alerts, incidents, and policies. Furthermore, it taps into threat intelligence and authoritative content through plugins. The process involves user prompts, preprocessing, response generation, delivery, and iterative processing to produce relevant and actionable results based on your organizational data. This helps achieve more efficient and effective security outcomes tailored to your organization's specific context.
 
 Additional Reading:
-1. [Microsoft Copilot for Security](https://securitycopilot.microsoft.com/)
-2. [Microsoft Defender XDR](https://www.microsoft.com/security/business/threat-protection/defender-xdr)
-3. [Microsoft Intune](https://www.microsoft.com/microsoft-365/microsoft-intune)
-4. [Responsible AI Overview](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6)
-5. [Responsible AI FAQs](https://www.microsoft.com/ai/responsible-ai-resources)
+- [Microsoft Copilot for Security](https://securitycopilot.microsoft.com/)
+- [Microsoft Defender XDR](https://www.microsoft.com/security/business/threat-protection/defender-xdr)
+- [Microsoft Intune](https://www.microsoft.com/microsoft-365/microsoft-intune)
+- [Responsible AI Overview](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6)
+- [Responsible AI FAQs](https://www.microsoft.com/ai/responsible-ai-resources)
