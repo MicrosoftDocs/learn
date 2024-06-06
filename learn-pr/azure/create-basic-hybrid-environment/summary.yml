@@ -3,9 +3,9 @@ uid: learn.create-basic-hybrid-environment.summary
 title: Summary
 metadata:
   unitType: summary
-  title: summary
-  description:  "This learn module will guide you through the creation of a basic hybrid environment.  This environment will be the basis for subsequent learn modules."
-  ms.date: 5/31/2022
+  title: Summary
+  description:  "Learn about how your basic Windows Server Active Directory and Microsoft Entra ID hybrid environment can be the basis for subsequent learn modules."
+  ms.date: 05/28/2024
   author: billmath
   ms.author: billmath
   ms.topic: unit

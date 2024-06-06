@@ -1,16 +1,19 @@
 
 
+
 DP-100: Learning Path 3 Make data available in Azure Machine Learning
 
 Learning Path 3 Overview
 
 As you begin to teach this learning path, get familiar with what the students will learn during the learning path. In this learning path students will learn how to make data available in Azure Machine Learning by emphasizing the fact that data happens to be the fundamental element in any machine learning workload. Students will also learn about creating and managing the datastores and data assets, how to use them in the model training experiments, and manage them in Azure Machine Learning workspace.
 
-This learning path consists of one module:
+This learning path consists of three focus areas:
 
-- Module 1 – Make data available in Azure Machine Learning
+- Work with Uniform Resource Identifiers (URIs)
+- Create and use datastores
+- Create and use data assets
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14Lk3]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=9fdaf41e-38eb-43e0-8e40-32113d138611]
 
 Learning Path 3 Tips and Tricks
 

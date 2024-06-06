@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud.use-the-log-analytics-workspaces-menu-to-create-a-workspace
-title: Exercise - Create a workspace
+title: Exercise - Create a Log Analytics workspace for Microsoft Defender for Cloud
 metadata:
-  title: Exercise - Create a workspace
-  description: "Exercise - Create a workspace"
-  ms.date: 04/24/2024
+  title: Exercise - Create a Log Analytics workspace for Microsoft Defender for Cloud
+  description: "Exercise - Create a Log Analytics workspace for Microsoft Defender for Cloud"
+  ms.date: 05/31/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

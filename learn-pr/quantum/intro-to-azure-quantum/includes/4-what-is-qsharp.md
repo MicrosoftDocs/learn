@@ -1,4 +1,4 @@
-Q# is an open-source, high-level, programming language for developing and running quantum algorithms. It’s part of the Azure Quantum Development Kit (Modern QDK) and is designed to be hardware agnostic, scale to the full range of quantum applications, and to optimize execution.
+Q# is an open-source, high-level programming language for developing and running quantum algorithms. It’s part of the Azure Quantum Development Kit (Modern QDK) and is designed to be hardware agnostic, scale to the full range of quantum applications, and optimize execution.
 
 ## Why a quantum programming language?
 
@@ -6,13 +6,13 @@ There are many reasons for wanting to build a quantum programming language, but 
 
 When writing algorithms, we should meet the following requirements for the language, compiler, and runtime:
 
-- **Abstract qubits** Quantum algorithms use qubits that aren't tied to specific hardware or layout. The compiler and runtime handle the mapping from program qubits to physical qubits.
-- **Quantum and classical computation.** The ability to perform classical and quantum computations is essential in a *universal* quantum computer.
-- **Laws of physics** Quantum algorithms follow the rules of quantum physics. For example, they can't copy or access qubit state directly.
+- **Abstract qubits:** Quantum algorithms use qubits that aren't tied to specific hardware or layout. The compiler and runtime handle the mapping from program qubits to physical qubits.
+- **Quantum and classical computation:** The ability to perform classical and quantum computations is essential in a *universal* quantum computer.
+- **Laws of physics:** Quantum algorithms follow the rules of quantum physics. For example, they can't copy or access the qubit state directly.
 
 ## The characteristics of Q\#
 
-Q# can be used to write quantum algorithms, simulate them on classical computers, and then run them on actual quantum computers. Q# also provides a library of built-in quantum operations, such as quantum gates and measurements that are used to manipulate qubits and perform quantum computations. 
+Q# can be used to write quantum algorithms, simulate them on classical computers, and then run them on actual quantum computers. Q# also provides a library of built-in quantum operations, such as quantum gates and measurements, that are used to manipulate qubits and perform quantum computations. 
 
 ```qsharp
 @EntryPoint()
@@ -40,7 +40,7 @@ The following sections describe some key features of Q#.
 The Q# libraries enable you to run complex quantum operations without having to design low-level operation sequences.
 
 - The standard library provides a set of essential functions and operations that can be used when writing quantum programs in Q#.
-- The quantum numeric library provides support for a wide range of numerics functionality.
+- The quantum numeric library provides support for a wide range of numerical functionality.
 
 ### Qubit management
 
@@ -52,7 +52,7 @@ The Q# language doesn’t specify whether the qubits in the program are logical 
 
 ### Compiler-generated controlled and adjoint specializations
 
-Q# can automatically make operations reversible and controlled. This capability makes writing algorithms easier and allows for compiler driven optimization of quantum code.
+Q# can automatically make operations reversible and controlled. This capability makes writing algorithms easier and allows for compiler-driven optimization of quantum code.
 
 ### First-class operations
 

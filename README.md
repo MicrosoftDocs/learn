@@ -1,6 +1,6 @@
-# Microsoft Learn Cloud training content
+# Repository Not Currently Accepting Public Contributions
 
-This repository contains the modules and learning paths for Microsoft Cloud. Review this README file to understand how you can assist in contributing to Microsoft Learn training content.
+This repository contains the modules and learning paths for Microsoft Cloud. The repository is publicly available for **Instructor Led Training** purposes, and we encourage you to continue exploring the project. However, we do not accept public contributions to this repository. Any pull requests submitted to this public repository will be closed.
 
 ### Home, landing, and browse pages
 
@@ -9,17 +9,9 @@ This repository contains the modules and learning paths for Microsoft Cloud. Rev
 
 To view all of the available landing pages, you can navigate to them from the header of the home page.
 
-## Contributions and feedback
+## Feedback
 
-### Notice: Repository Not Currently Accepting Public Contributions
-
-Thank you for your interest in contributing to the 'MicrosoftDocs/learn' repository. Your enthusiasm and support for the project are greatly appreciated. However, please be aware that we are **not currently accepting public contributions** to this repository.
-
-While this may be disappointing, this decision has been made to ensure the consistency of the content within the repository. The repository is publicly available for **Instructor Led Training** purposes, and we encourage you to continue exploring the project.
-
-Stay tuned for any updates regarding contributions in the future. We appreciate your understanding.
-
-External users can provide feedback by clicking on the **reporting an issue** link located at the bottom of any learning unit. Although this is one-way feedback, our teams review and triage all incoming feedback regularly.
+You can provide feedback by clicking on the **reporting an issue** link located at the bottom of any learning unit. Although this is one-way feedback, our teams review and triage all incoming feedback regularly.
 
 ### Code of Conduct
 
