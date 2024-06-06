@@ -4,7 +4,7 @@ Microsoft Entra access reviews support up to three review stages, in which multi
 
 Multi-stage access reviews allow you and your organization to enable complex workflows to meet recertification and audit requirements calling for multiple reviewers to attest to access for users in a particular sequence. It also helps you design more efficient reviews for your resource owners and auditors by reducing the number of decisions each reviewer is accountable for. This approach allows for combining otherwise disjoint, separate reviews for the same resource, to be combined in one access review.
 
-:::image type="content" source="media/using-multi-stage-reviews/new-access-reviews.png" alt-text="Screenshot of admin experience to configure multi-stage reviews." lightbox="media/using-multi-stage-reviews/new-access-reviews.png":::
+:::image type="content" source="../media/new-access-reviews.png" alt-text="Screenshot of admin experience to configure multi-stage reviews." lightbox="../media/new-access-reviews.png":::
 
 Here are some scenarios you might want to consider:
 
@@ -17,7 +17,7 @@ Here are some scenarios you might want to consider:
 
 Review administrators define the duration of every review stage and therefore, how much time reviewers in their stage have to record their decisions. Each stage can be configured to have its own duration, to cater for availability and expectation of reviewers.
 
-:::image type="content" source="media/using-multi-stage-reviews/using-multi-stage-reviews.png" alt-text="Screenshot of using multi-stage reviews." lightbox="media/using-multi-stage-reviews/using-multi-stage-reviews.png":::
+:::image type="content" source="../media/using-multi-stage-reviews.png" alt-text="Screenshot of using multi-stage reviews." lightbox="../media/using-multi-stage-reviews.png":::
 
 Each review stage stays open for reviewers to add decisions for the length of the duration. Review administrators can stop a running stage and automatically progress the overall review to the next review stage on the reviewer overview page, by selecting **Stop current stage**.
 

@@ -5361,6 +5361,26 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-sci/design-solutions-secure-privileged-access/7-knowledge-check.yml",
+      "redirect_url": "learn-pr/wwl-sci/design-solutions-secure-privileged-access/9-knowledge-check.yml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-solutions-secure-privileged-access/8-summary.yml",
+      "redirect_url": "learn-pr/wwl-sci/design-solutions-secure-privileged-access/10-summary.yml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-solutions-securing-server-client-endpoints/8-knowledge-check.yml",
+      "redirect_url": "learn-pr/wwl-sci/design-solutions-securing-server-client-endpoints/9-knowledge-check.yml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-solutions-securing-server-client-endpoints/9-summary.yml",
+      "redirect_url": "learn-pr/wwl-sci/design-solutions-securing-server-client-endpoints/10-summary.yml",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/classify-images-with-vision-services/index.md",
       "redirect_url": "/training/paths/process-classify-images-with-azure-cognitive-vision-services",
       "redirect_document_id": false
