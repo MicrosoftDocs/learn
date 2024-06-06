@@ -25,7 +25,7 @@ prerequisites: |
   - Working knowledge of Microsoft Entra
   - Working knowledge of Microsoft Intune
 iconUrl: /learn/achievements/security-copilot-embedded-experiences.svg
-hidden: false
+hidden: true
 levels: 
   - beginner
 roles: 
