@@ -6,9 +6,9 @@ You learned how to:
 
 ## Learn more with security documentation
 
-- [Office 365 Security including Microsoft Defender for Collaboration and Exchange Online Protection - Office 365](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview?view=o365-worldwide)
-- [Assess your security posture through Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-improvement-actions?view=o365-worldwide)
-- [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?view=o365-worldwide)
+- [Office 365 Security including Microsoft Defender for Collaboration and Exchange Online Protection - Office 365](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview)
+- [Assess your security posture through Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-improvement-actions)
+- [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust)
 
 ## Learn more with reference architectures
 
