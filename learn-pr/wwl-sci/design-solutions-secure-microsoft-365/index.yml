@@ -2,7 +2,7 @@
 uid: learn.wwl.design-solutions-secure-microsoft-365
 metadata:
   title: Design solutions for securing Microsoft 365
-  description: "You learn how to design security solutions for Exchange, Sharepoint, OneDrive and Teams."
+  description: "You learn how to design security solutions for Exchange, Sharepoint, OneDrive, and Teams."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
@@ -11,9 +11,9 @@ metadata:
   ai-usage: ai-assisted
 title: Design solutions for securing Microsoft 365
 summary: |
-  You learn how to design security solutions for Exchange, Sharepoint, OneDrive and Teams.
+  You learn how to design security solutions for Exchange, Sharepoint, OneDrive, and Teams.
 abstract: |
-  By the end of this module, you are able to:
+  By the end of this module, you're able to:
   -   Evaluate security posture for collaboration and productivity workloads
   -   Design a Microsoft Defender XDR solution
   -   Design configurations and operational practices for Microsoft 365
