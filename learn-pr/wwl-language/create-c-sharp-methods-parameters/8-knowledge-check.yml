@@ -44,6 +44,6 @@ quiz:
     - content: "The method code must be incorrect."
       isCorrect: false
       explanation: "Incorrect. Strings are pass by reference, but they're immutable so the value can't be altered once assigned."
-    - content: "Strings can't be altered once assigned, they can only be overwritten with a new value."
+    - content: "Strings can't be altered once assigned. They can only be overwritten with a new value."
       isCorrect: true
       explanation: "Correct! Strings are pass by reference, but they're immutable and can't be altered once assigned."
