@@ -3563,3 +3563,13 @@ achievements:
   title: Monitor and back up resources for Azure administrators
   summary: Learn how to monitor and back up Azure resources.
   iconUrl: /training/achievements/azure-administrator-monitor-backup-resources.svg
+- uid: learn.azure.intro-to-immersive-reader.badge
+  type: badge
+  title: Introduction to Immersive Reader
+  summary: Immersive Reader is a tool that embeds reading, math, and text comprehension capabilities into applications. Immersive Reader is an inclusively designed tool that implements proven techniques to improve reading comprehension for new readers, language learners, and people with learning differences such as dyslexia. No knowledge of machine learning is required.
+  iconUrl: /training/achievements/intro-to-immersive-reader.svg
+- uid: learn.azure.intro-to-content-moderator.badge
+  type: badge
+  title: Introduction to Content Moderator
+  summary: Content Moderator checks text, image, and video content for material that is potentially offensive, risky, or otherwise undesirable in content.
+  iconUrl: /training/achievements/intro-to-content-moderator.svg
