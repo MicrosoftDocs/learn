@@ -3,11 +3,13 @@ uid: learn.wwl.explore-azure-compute.explore-network-bandwidth-allocation
 title: Explore network bandwidth allocation
 metadata:
   title: Explore network bandwidth allocation
-  description: "Explore network bandwidth allocation"
-  ms.date: 12/06/2023
+  description: "Explore network bandwidth allocation."
+  ms.date: 06/07/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/7-explore-network-bandwidth-allocation.md)]
