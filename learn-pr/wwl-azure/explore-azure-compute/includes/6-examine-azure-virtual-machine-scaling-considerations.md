@@ -10,7 +10,7 @@ The minimum OS releases for deploying scale-out configurations in Azure Virtual 
 - **SUSE Linux 12 SP3**
 - **Red Hat Linux 7.4**
 
-Azure Virtual Machine scale-out deployments don't support a standby node with NFS shares implemented by third-party solutions. This is because none of these solutions are currently able to fulfill the storage latency criteria for SAP HANA with their solutions deployed on Azure. This means that **/hana/data** and **/hana/log** volumes can't be shared, which prevents the usage of an SAP HANA standby node in a scale-out configuration.
+Azure Virtual Machine scale-out deployments doesn't support a standby node with NFS shares implemented by third-party solutions. This is because none of these solutions are currently able to fulfill the storage latency criteria for SAP HANA with their solutions deployed on Azure. This means that **/hana/data** and **/hana/log** volumes can't be shared, which prevents the usage of an SAP HANA standby node in a scale-out configuration.
 
 The basic configuration of a SUSE Linux virtual machine node for SAP HANA scale-out has the following characteristics:
 

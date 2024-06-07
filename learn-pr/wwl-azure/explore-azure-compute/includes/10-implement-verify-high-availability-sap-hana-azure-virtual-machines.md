@@ -115,7 +115,7 @@ Follow the steps in [Setting up Pacemaker on Red Hat Enterprise Linux in Azure](
 
 The steps in this section use the following prefixes: **\[A\]**: The step applies to all nodes. **\[1\]**: The step applies to node 1 only. **\[2\]**: The step applies to node 2 of the Pacemaker cluster only.
 
-1. **\[A\]** Set up the disk layout by using Logical Volume Manager (LVM). We recommend that you use LVM for volumes that store data and log files. The following example assumes that the Azure Virtual Machines have four data disks attached that are used to create two volumes.
+1. **\[A\]** Setup the disk layout by using Logical Volume Manager (LVM). We recommend that you use LVM for volumes that store data and log files. The following example assumes that the Azure Virtual Machines has four data disks attached that are used to create two volumes.
 
      - List all of the available disks
 
@@ -179,7 +179,7 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
     sudo mount -a
     ```
 
-2. **\[A\]** Set up the disk layout:
+2. **\[A\]** Setup the disk layout:
 
      - For demo systems, you can place your HANA data and log files on one disk. Create a partition on /dev/disk/azure/scsi1/lun0 and format it with xfs:
 
