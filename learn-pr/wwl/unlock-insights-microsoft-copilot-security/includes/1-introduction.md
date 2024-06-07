@@ -14,4 +14,3 @@ The topics covered in this module include:
 - New Features and Enhancements in Copilot for Security - May 2024
 - Understanding Responsible AI Principles in Microsoft Copilot for Security
 
-By the end of this module, you'll understand how Microsoft Copilot for Security can enhance your efficiency as a security professional by providing an immersive standalone or embedded experience, integrating with other security products, and offering unique features like incident summarization, script analysis, and threat hunting.

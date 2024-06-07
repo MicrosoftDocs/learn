@@ -4,7 +4,7 @@ The main takeaways from this module are the comprehensive capabilities of Micros
 
 Additional Reading:
 - [Microsoft Copilot for Security](https://securitycopilot.microsoft.com/)
-- [Microsoft Defender XDR](https://www.microsoft.com/security/business/threat-protection/defender-xdr)
-- [Microsoft Intune](https://www.microsoft.com/microsoft-365/microsoft-intune)
+- [Microsoft Defender XDR](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-xdr)
+- [Microsoft Intune](https://www.microsoft.com/security/business/endpoint-management/microsoft-intune)
 - [Responsible AI Overview](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6)
 - [Responsible AI FAQs](https://www.microsoft.com/ai/responsible-ai-resources)
