@@ -123,7 +123,7 @@ There are three possible values for the `-ActionOnUnmanage` parameter:
 > [!NOTE]
 > In this module, we are working with resrouce group scoped deployment stacks. In this situation, the resource group is not managed by the stack. > The 'delete all' value for the _action on unmanage_ parameter doesn't detele the resource group where the stack exists. It is necessary to delete the resource group after the stack and its resources are deleted.
 
-Let's take a look at the json output when using the Azure CLI `az stack group show` command with values set for the `--action-on-unmanage` parameter. Notice the behavior for resources, resource groups, and management groups.
+Let's take a look at the json output when using the Azure PowerShell `Get-AzResourceGroupDeploymentStack` command with values set for the `-ActionOnUnmanage` parameter. Notice the behavior for resources, resource groups, and management groups.
 
 1. `-ActionOnUnmanage DeleteAll`
 

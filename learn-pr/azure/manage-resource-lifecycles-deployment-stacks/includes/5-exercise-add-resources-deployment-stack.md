@@ -29,7 +29,7 @@ Our first step is to create a Bicep file that defines our resources to use with 
 
 1. Add the following Bicep code into the file. You deploy the template soon. It's a good idea to type the code yourself instead of copying and pasting, so you can see how the tooling helps you to write your Bicep files.
 
-    :::code language="bicep" source="code/1-template.bicep" range="1-21,25-27,31-77":::
+    :::code language="bicep" source="code/1-template.bicep" range="1-21,25-27,31-46,55-77":::
 
     Notice that you're using expressions that include string interpolation and the `uniqueString()` function to define default parameter values. Someone deploying this template can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
@@ -125,7 +125,21 @@ Next, we need to create our deployment stack scoped to our recently created reso
 
 ::: zone-end
 
-## Update the Bicep file to modify the app service plan sku
+## Update the Bicep file to add the log analytics workspace and application insights instance
+
+1. Open the _main.bicep_ file in Visual Studio Code.
+
+1. Add the highlighted code to the variables section of your file:
+
+    :::code language="bicep" source="code/1-template.bicep" range="1-77" highlight="22-23,28-29":::
+
+1. Add the following code to the bottom of the file:
+
+    :::code language="bicep" source="code/1-template.bicep" range="79-100":::
+
+1. Save the changes to the file.
+
+## Update the Bicep file to modify the app service plan
 
 1. Open the _main.bicep_ file in Visual Studio Code.
 
@@ -133,19 +147,9 @@ Next, we need to create our deployment stack scoped to our recently created reso
 
     :::code language="bicep" source="code/1-template.bicep" range="31-39" highlight="36":::
 
-1. Save the changes to the file.
+1. Add the highlighted code to wire in the aplication insights instance:
 
-## Update the Bicep file to add the log analytics workspace and application insights instance
-
-1. Open the _main.bicep_ file in Visual Studio Code.
-
-1. Add the highlighted code to the variables section of your file:
-
-    :::code language="bicep" source="code/1-template.bicep" range="1-100" highlight="22-23,28-29":::
-
-1. Add the following code to the bottom of the file:
-
-    :::code language="bicep" source="code/1-template.bicep" range="79-100":::
+    :::code language="bicep" source="code/1-template.bicep" range="41-56" highlight="47-54":::
 
 1. Save the changes to the file.
 
@@ -162,15 +166,23 @@ With the Bicep file updated, we want to update the deployment stack so that the 
         --name stack-deposits \
         --resource-group rg-depositsApplication \
         --template-file ./main.bicep \
-        --action-on-unmanage deleteAll \
+        --action-on-unmanage detachAll \
         --deny-settings-mode none
     ```
 
-2. You receive a message stating that the stack already exists in the current subscription. If the value of the _action on unmanage_ parameter changed, the warning alerts you of the new values. Press `y`, followed by 'Enter`.
+1. You receive a message stating that the stack already exists in the current subscription. If the value of the _action on unmanage_ parameter changed, the warning alerts you of the new values. Press `y`, followed by 'Enter`.
 
     :::image type="content" source="../media/stack-exists-cli.png" alt-text="A screenshot showing the Azure CLI command line warning that the deployment stack already exists.":::
 
-3. Wait for the update operation to complete before moving on to the next task.
+1. You're prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter.'
+
+    :::image type="content" source="../media/sql-admin-cli.png" alt-text="A screenshot showing the Azure CLI command line prompting you to enter an SQL server administrator user name.":::
+
+1. You're prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter.'
+
+    :::image type="content" source="../media/sql-password-cli.png" alt-text="A screenshot showing the Azure CLI command line prompting you to enter an SQL server administrator password.":::
+
+1. Wait for the update operation to complete before moving on to the next task.
 
 ::: zone-end
 
@@ -185,9 +197,17 @@ With the Bicep file updated, we want to update the deployment stack so that the 
         -Name stack-deposits `
         -ResourceGroupName rg-depositsApplication `
         -TemplateFile ./main.bicep `
-        -ActionOnUnmanage DeleteAll `
+        -ActionOnUnmanage DetachAll `
         -DenySettingsMode none
     ```
+
+1. You're prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter.'
+
+    :::image type="content" source="../media/sql-admin-powershell.png" alt-text="A screenshot showing the Azure PowerShell command line prompting you to enter an SQL server administrator user name.":::
+
+1. You're prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter.'
+
+    :::image type="content" source="../media/sql-password-powershell.png" alt-text="A screenshot showing the Azure PowerShell command line prompting you to enter an SQL server administrator password.":::
 
 1. Wait for the update operation to complete before moving on to the next task.
 
@@ -202,12 +222,12 @@ With the update complete, we want to validate that the app service plan's sku is
 1. To view the configuration of the app service plan, run the following command from the terminal in Visual Studio Code.
 
     ```azurecli
-    az appserviceplan show \
+    az appservice plan show \
         --name plan-deposits
-        ----resource-group rg-depositsApplication
+        --resource-group rg-depositsApplication
     ```
 
-1. Take notice of the sku section of the output. It should be similar to the following output:
+1. Take notice of the sku section of the output. The app service plan is now on the S1 sku. It should be similar to the following output:
 
     ```json
     "sku": {
@@ -229,7 +249,7 @@ With the update complete, we want to validate that the app service plan's sku is
 
 1. Take notice of the resources section of the output. We now see the log analytics workspace and the application insights instance listed as managed resources. The result should appear similar to the following output:
 
-TODO: :::code language="json" source="code/2-json.json":::
+    :::code language="json" source="code/2-json.json" range="43-80" highlight="68-79":::
 
 ::: zone-end
 
@@ -245,7 +265,7 @@ TODO: :::code language="json" source="code/2-json.json":::
     $sku
     ```
 
-1. Take notice of the output. It should be similar to the following:
+1. Take notice of the output. The app service plan is now on the S1 sku. It should be similar to the following:
 
     ```powershell
     Name         : S1
@@ -265,6 +285,6 @@ TODO: :::code language="json" source="code/2-json.json":::
 
 1. Take notice of the resources section of the output. We now see the log analytics workspace and the application insights instance listed as managed resources. The result should appear similar to the following output:
 
-TODO: :::code language="json" source="code/3-powershell.ps1":::
+    :::code language="json" source="code/3-powershell.ps1" range="11-16" highlight="15-16":::
 
 ::: zone-end

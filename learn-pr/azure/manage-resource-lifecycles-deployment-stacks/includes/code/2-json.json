@@ -1,9 +1,11 @@
 {
   "actionOnUnmanage": {
-    "managementGroups": "delete",
-    "resourceGroups": "delete",
-    "resources": "delete"
+    "managementGroups": "detach",
+    "resourceGroups": "detach",
+    "resources": "detach"
   },
+  "bypassStackOutOfSyncError": null,
+  "correlationId": ".",
   "debugSetting": null,
   "deletedResources": [],
   "denySettings": {
@@ -12,11 +14,11 @@
     "excludedPrincipals": null,
     "mode": "none"
   },
-  "deploymentId": "/subscriptions/./resourceGroups/rg-depositsApplication/./././stack-deposits-2405160351ewk",
-  ".cope": null,
+  "deploymentId": "/subscriptions/./resourceGroups/rg-depositsApplication/././deployments/stack-deposits",
+  "deploymentScope": null,
   "description": null,
   "detachedResources": [],
-  "duration": "PT2M17.202945S",
+  "duration": "PT47.3708833S",
   "error": null,
   "failedResources": [],
   "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././deploymentStacks/stack-deposits",
@@ -25,10 +27,12 @@
   "outputs": null,
   "parameters": {
     "sqlServerAdminPassword": {
+      "reference": null,
       "type": "securestring",
       "value": ""
     },
     "sqlServerAdminUserName": {
+      "reference": null,
       "type": "string",
       "value": "sqladmin"
     }
@@ -39,25 +43,37 @@
   "resources": [
     {
       "denyStatus": "none",
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././servers/sql-brpdm7iotbwjm",
+      "resourceGroup": "rg-depositsApplication",
+      "status": "managed"
+    },
+    {
+      "denyStatus": "none",
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././servers/sql-brpdm7iotbwjm/databases/sqldb-brpdm7iotbwjm",
+      "resourceGroup": "rg-depositsApplication",
+      "status": "managed"
+    },
+    {
+      "denyStatus": "none",
       "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././serverfarms/plan-deposits",
       "resourceGroup": "rg-depositsApplication",
       "status": "managed"
     },
     {
       "denyStatus": "none",
-      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././sites/webapp-eque2jlrboltq",
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././sites/webapp-brpdm7iotbwjm",
       "resourceGroup": "rg-depositsApplication",
       "status": "managed"
     },
     {
       "denyStatus": "none",
-      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././servers/sql-eque2jlrboltq",
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././components/appinsights-deposits",
       "resourceGroup": "rg-depositsApplication",
       "status": "managed"
     },
     {
       "denyStatus": "none",
-      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././servers/sql-eque2jlrboltq/databases/sqldb-eque2jlrboltq",
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././workspaces/log-deposits",
       "resourceGroup": "rg-depositsApplication",
       "status": "managed"
     }
