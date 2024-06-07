@@ -1,4 +1,4 @@
-You've learned about the many disadvantages of the "epic deployment" as a software-delivery model, but knowing what _doesn’t_ work well is only half the battle. In this unit, you’ll find out about the alternative to that monolithic method, and how it can further your goal of improved reliability.
+You've learned about the many disadvantages of the "epic deployment" as a software-delivery model, but knowing what _doesn’t_ work well is only half the battle. In this unit, you’ll learn about the alternative to that monolithic method, and how it can further your goal of improved reliability.
 
 ## What is continuous delivery?
 
@@ -10,9 +10,9 @@ _Continuous delivery_ is a method by which you can make software changes availab
 
 - **Automated testing**: You can use integrated automated testing not only to test the code, but to also provide quick feedback on the results of those tests. It's this quick feedback that allows you to iterate and recover from failed tests quickly.
 
-  Once your code has been tested, you can test the deployment, end to end, in a series of staged environments such as test, QA, and so forth. Rolling your deployments through these environments becomes an integrated part of the deployment experience.
+  Once your code has been tested, you can test the deployment end to end in a series of staged environments such as test, QA, and so forth. Rolling your deployments through these environments becomes an integrated part of the deployment experience.
 
-- **Historical records**: Not only do you want a historical record of deployment activities, you also want to be able to reconcile your production environment at any given time. You want to understand which  deployment created your current production environment. With this knowledge, you can trace such things as configurations, tests results, and the code itself all the way back to the individual pull request that triggered the deployment.
+- **Historical records**: Not only do you want a historical record of deployment activities, you also want to be able to reconcile your production environment at any given time. You want to understand which  deployment created your current production environment. With this knowledge, you can trace such things as configurations, test results, and the code itself all the way back to the individual pull request that triggered the deployment.
 
 ## Deployment goals
 
@@ -32,13 +32,13 @@ This is very similar to the previous goal, but instead of implementing changes, 
 
 ## Deployment results
 
-The goals discussed above are not just theoretical aspiration, they're achievable. Here are some statistics from the _2019 Accelerate State of DevOps Report_ by DevOps Research and Assessment (DORA) and Google Cloud DevOps & SRE. In it, they've found that "high performing" DevOps companies:
+The goals discussed in this unit aren't just theoretical aspirations, they're achievable. Here are some statistics from the _2019 Accelerate State of DevOps Report_ by DevOps Research and Assessment (DORA) and Google Cloud DevOps & SRE. In it, they've found that "high performing" DevOps companies:
 
 - Have 208x the number of deployments.
 - Are 106x faster from commit to deploy.
 - Have a 7x lower change failure rate.
 - Have a 2,604x faster incident recovery time.
 
-This all leads to increased revenue and faster time-to-market.
+This all leads to increased revenue and faster time to market.
 
 These numbers validate the idea that deployment practices matter.

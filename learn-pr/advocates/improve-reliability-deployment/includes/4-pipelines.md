@@ -1,13 +1,13 @@
-You’ve learned about continuous deployment and delivery of software and services, but the two are actually part of a triad. DevOps practices are aimed at achieving continuous _integration, deployment, and delivery._
+You've learned about continuous deployment and delivery of software and services, but the two are actually part of a triad. DevOps practices are aimed at achieving continuous _integration, deployment, and delivery._
 
-Now it’s time to back up and discuss the first of these: integration. This is part of the development process that comes prior to deployment. DevOps recommends a development practice in which team members frequently integrate code into a shared repository containing a singular "main" or
+Now, it's time to back up and discuss the first of these: integration. This is part of the development process that comes prior to deployment. DevOps recommends a development practice in which team members frequently integrate code into a shared repository containing a singular "main" or
 "trunk" codebase. The goal is to have everyone contributing to the code that will be shipped vs. working off on their copy and only bringing everything together at the last minute.
 
-Each integration by a team member can then be verified by automated testing. This testing helps determine that the code is "healthy" after every change and addition made. The testing is part of what we'd call a *pipeline*. We'll talk about pipelines in just a moment, because this unit will focus on integrated testing and delivery pipelines.
+Automated testing can then verify each team member's integration. This testing helps determine that the code is "healthy" after every change and addition made. The testing is part of what we'd call a _pipeline_. We'll talk about pipelines in just a moment, because this unit will focus on integrated testing and delivery pipelines.
 
 ## The continuous delivery pipeline
 
-To understand the role of automated testing in the continuous delivery deployment model, you need to look at where it fits into the delivery pipeline. A continuous delivery pipeline is the implementation of the set of steps code goes through as changes are made during the development process prior to deploying it to production. Here's a graphic representation of sample steps in a simplified delivery pipeline:
+To understand automated testing's role in the continuous delivery deployment model, you need to look at where it fits into the delivery pipeline. A continuous delivery pipeline is the implementation of the set of steps code goes through as changes are made during the development process prior to deploying it to production. Here's a graphic representation of sample steps in a simplified delivery pipeline:
 
 :::image type="content" source="../media/pipeline-stages.png" alt-text="Diagram with eight stages of a pipeline, four marked as Integration, four marked as Deployment, with red indicator arrows pointing at Test and Review stages":::
 
@@ -15,9 +15,9 @@ Let's walk through this pipeline step by step.
 
 - An instance of the pipeline starts as code or infrastructure changes are committed to a code repository, perhaps using a pull request.
 
-- Next, unit tests run—perhaps integration or end-to-end tests—and ideally the results of these tests are communicated back to the requesting party.
+- Next, unit tests run—perhaps integration or end-to-end tests—and ideally, these test results are communicated back to the requesting party.
 
-- Perhaps at this point the code in the repository is scanned for secrets, vulnerabilities, and aspects of configuration.
+- Perhaps at this point, the code in the repository is scanned for secrets, vulnerabilities, and aspects of configuration.
 
 - When everything checks out, the code is built and prepared for deployment.
 
@@ -36,10 +36,10 @@ Azure Pipelines.
 
 Pipelines are defined using YAML syntax or via the Classic user interface in the Azure portal. When you use a YAML file, you can store that file alongside your code. Pipelines also provide templates that you can use to easily create pipelines; for example, a pipeline that builds a Docker image or a Node.js project. You can also reuse an existing YAML file.
 
-Whether you use a YAML file or the Classic interface, here are the basic steps you follow:
+Whether you use a YAML file or the Classic interface, here are the basic steps:
 
 1. Configure Azure Pipelines to use your Git repository.
-2. Define your build, either by editing the azure-pipelines.yml file or by using the Classic editor.
+2. Define your build, either by editing the _azure-pipelines.yml_ file or by using the Classic editor.
 3. Push your code to your version-control repository. This action triggers the pipeline to build and test your code.
 
 Once the code has been updated, built, and tested, you can deploy it to whatever target you want.
