@@ -3543,3 +3543,58 @@ achievements:
   title: Introduction to Content Moderator
   summary: Content Moderator checks text, image, and video content for material that is potentially offensive, risky, or otherwise undesirable in content.
   iconUrl: /training/achievements/intro-to-content-moderator.svg
+- uid: learn-windows.develop-windows-apps.trophy
+  type: trophy
+  title: Develop Windows 10 applications
+  summary: Learn how to develop, test, and deploy Windows 10 applications.
+  iconUrl: /training/achievements/develop-windows10-apps.svg
+- uid: learn.wsl-introduction.badge
+  type: badge
+  title: Introduction to Windows Subsystem for Linux (WSL)
+  summary: This 7-part training provides an introduction to WSL. Learn the basic concepts that combine Windows and Linux operating systems, including how to install one or more Linux distributions on your Windows computer.
+  iconUrl: /learn/achievements/wsl-path.svg
+- uid: learn-windows.writing-windows-10-apps.badge
+  type: badge
+  title: Write your first Windows application
+  summary: Learn how to create apps in some of the most popular Windows development frameworks - UWP, WPF, and Windows Forms.
+  iconUrl: /training/achievements/write-your-first-windows10-app.svg
+- uid: learn-windows.introduction-w10-dev.badge
+  type: badge
+  title: Introduction to Windows 10 development
+  summary: Learn the basics of Windows 10 development, and get your computer ready for writing Windows apps.
+  iconUrl: /training/achievements/introduction-to-windows-10-development.svg
+- uid: learn-windows.windows-10-ui-and-data.badge
+  type: badge
+  title: Implement data binding in your Windows application
+  summary: Learn about the relation between UI and data in Windows apps, and implement data binding in your applications.
+  iconUrl: /training/achievements/windows-10-ui-and-data.svg
+- uid: learn-windows.writing-adaptive-cards.badge
+  type: badge
+  title: Creating Adaptive Cards
+  summary: Learn the full range of capabilities (layout, inputs, and actions) of Adaptive Cards.
+  iconUrl: /training/achievements/writing-adaptive-cards.svg
+- uid: learn.learn-windows-on-arm.badge
+  type: badge
+  title: Introduction to Windows on Arm - Port a .NET application to natively support Arm-based processors
+  summary: This module describes how the Windows operating system supports devices powered by Arm processors. It also describes how to add a build configuration for Arm64 architecture to improve the experience of using your Windows application on Arm-based devices. This training also covers testing, debugging, and troubleshooting the new Arm-based version of your Windows app.
+  iconUrl: /learn/achievements/add-arm-support-to-your-windows-app.svg
+- uid: learn-windows.narrator-and-voice-input.badge
+  type: badge
+  title: Configure your Windows app to use Narrator and speech recognition
+  summary: Learn how to use audio elements to make an inclusive Windows app. Configure your app to work well with Narrator, and add a custom speech recognition system for spoken input.
+  iconUrl: /training/achievements/narrator-and-voice-input.svg
+- uid: learn-windows.making-inclusive-windows-app.badge
+  type: badge
+  title: Add principles of inclusive design to your Windows app
+  summary: Inclusive app design provides support for users with visual or motor skills impairment. This module will show you how to support such users in a Windows app.
+  iconUrl: /training/achievements/making-inclusive-windows-app.svg
+- uid: learn-windows.integrating-app-into-windows-10-timeline.badge
+  type: badge
+  title: Integrate adaptive cards into Windows 10 Timeline
+  summary: Learn how to use an adaptive card as the image in Windows 10 Timeline.
+  iconUrl: /training/achievements/integrating-app-into-windows-10-timeline.svg
+- uid: learn-windows.introducing-visual-studio.badge
+  type: badge
+  title: Getting started with Visual Studio for Windows 10 app development
+  summary: Visual Studio is the development tool used to create, debug, and deploy Windows 10 applications.
+  iconUrl: /training/achievements/introduction-to-visual-studio-for-windows10-dev.svg
