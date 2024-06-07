@@ -24,7 +24,7 @@ This is a win-win; not only do you increase job satisfaction by reducing the str
 
 ### Goal 2: Reduce the time between when you know a change is required and when that change is deployed to production
 
-For example, assume that you've identified a revenue-impacting code defect. You know exactly what the issue is and how to code up the fix. How long does it take for you to get that code into production? How many strings do you need pull? How do you test? With DevOps practices, you can code commit, take lunch, and get a notification that the issue has been resolved before returning to your desk.
+For example, assume that you've identified a revenue-impacting code defect. You know exactly what the issue is and how to code up the fix. How long does it take for you to get that code into production? How many strings do you need to pull? How do you test? With DevOps practices, you can code commit, take lunch, and get a notification that the issue has been resolved before returning to your desk.
 
 ### Goal 3: Reduce the time between having an idea and delivering useable software
 
