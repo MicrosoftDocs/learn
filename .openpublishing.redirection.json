@@ -29449,6 +29449,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/intro-to-content-moderator/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/content-moderator",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-content-moderator/2-what-is-content-moderator.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/content-moderator",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-content-moderator/3-how-content-moderator-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/content-moderator",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-content-moderator/4-when-to-use-content-moderator.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/content-moderator",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-content-moderator/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/content-moderator",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-content-moderator/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/content-moderator",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-content-moderator/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/content-moderator",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
       "redirect_document_id": false
@@ -34018,6 +34053,41 @@
     {
       "source_path": "learn-pr/azure/aks-monitor/9-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/deploy-manage-monitor-wincontainers-aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-immersive-reader/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/immersive-reader/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-immersive-reader/2-what-is-immersive-reader.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/immersive-reader/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-immersive-reader/3-how-immersive-reader-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/immersive-reader/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-immersive-reader/4-when-to-use-immersive-reader.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/immersive-reader/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-immersive-reader/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/immersive-reader/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-immersive-reader/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/immersive-reader/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-immersive-reader/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/immersive-reader/",
       "redirect_document_id": false
     },
     {
