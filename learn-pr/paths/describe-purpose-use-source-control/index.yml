@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: learning-path
-  ms.service: github
 title: Describe the purpose and use of source control
 prerequisites: |
   A personal computer running Windows, macOS, or Linux
