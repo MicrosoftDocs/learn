@@ -1,10 +1,10 @@
-For on-premises development, you can use either HANA System Replication or use shared storage to establish high availability for SAP HANA. On Azure virtual machines (VMs), HANA System Replication on Azure is currently the only supported high availability function. SAP HANA Replication consists of one primary node and at least one secondary node. Changes to the data on the primary node are replicated to the secondary node synchronously or asynchronously.
+For on-premises development, you can use either HANA System Replication or use shared storage to establish high availability for SAP HANA. On Azure Virtual Machines, HANA System Replication on Azure is currently the only supported high availability function. SAP HANA Replication consists of one primary node and at least one secondary node. Changes to the data on the primary node are replicated to the secondary node synchronously or asynchronously.
 
-:::image type="content" source="../media/sap-hana-high-availability-overview-c1c1ac0b.png" alt-text="Overview diagram of S A P HANA high availability.":::
+:::image type="content" source="../media/sap-hana-high-availability-overview-c1c1ac0b.png" alt-text="Diagram showing an overview of S A P HANA high availability.":::
 
-The following steps describe how to deploy and configure Azure VMs running SUSE Linux Enterprise Server, install the cluster framework, and install and configure SAP HANA System Replication. In the example configurations, installation commands, instance number 03, and HANA System ID HN1 are used.
+The following steps describe how to deploy and configure Azure Virtual Machines running SUSE Linux Enterprise Server, install the cluster framework, and install and configure SAP HANA System Replication. In the example configurations, installation commands, instance number 03, and HANA System ID HN1 are used.
 
-For instructions regarding the equivalent procedure for Azure VMs running Red Hat Enterprise Linux, refer to [High availability of SAP HANA on Azure VMs on Red Hat Enterprise Linux](/azure/virtual-machines/workloads/sap/sap-hana-high-availability-rhel)
+For instructions regarding the equivalent procedure for Azure Virtual Machines running Red Hat Enterprise Linux, refer to [High availability of SAP HANA on Azure Virtual Machines on Red Hat Enterprise Linux](/azure/virtual-machines/workloads/sap/sap-hana-high-availability-rhel)
 
 To achieve high availability, SAP HANA is installed on two virtual machines. The data is replicated by using HANA System Replication.
 
@@ -34,7 +34,7 @@ You can use one of the quickstart templates that are on GitHub to deploy all the
      - **System Availability**: Select **HA**.
      - **Admin Username and Admin Password**: A new administrative user account that can be used to sign in to the operating system.
      - **New Or Existing Subnet**: Determines whether a new virtual network and subnet should be created or an existing subnet used. If you already have a virtual network that's connected to your on-premises network, select Existing.
-     - **Subnet ID**: If you want to deploy the VM into an existing virtual network where you have a subnet defined the VM should be assigned to, name the ID of that specific subnet. The ID usually looks like: `/subscriptions/subscription ID/resourceGroups/resource group name/providers/Microsoft.Network/virtualNetworks/virtual network name/subnets/subnet name`
+     - **Subnet ID**: If you want to deploy the virtual machine into an existing virtual network where you have a subnet defined the virtual machine should be assigned to, name the ID of that specific subnet. The ID usually looks like: `/subscriptions/subscription ID/resourceGroups/resource group name/providers/Microsoft.Network/virtualNetworks/virtual network name/subnets/subnet name`
 
 ## Manual deployment (via the Azure portal)
 
@@ -48,11 +48,11 @@ You can use one of the quickstart templates that are on GitHub to deploy all the
      - Select the virtual network created in step 2.
 5. **Create virtual machine 1**.
 
-     - Use a SLES4SAP image in the Azure gallery that's supported for SAP HANA on the VM type you selected.
+     - Use a SLES4SAP image in the Azure gallery that's supported for SAP HANA on the virtual machine type you selected.
      - Select the availability set created in step 3.
 6. **Create virtual machine 2**.
 
-     - Use a SLES4SAP image in the Azure gallery that's supported for SAP HANA on the VM type you selected.
+     - Use a SLES4SAP image in the Azure gallery that's supported for SAP HANA on the virtual machine type you selected.
      - Select the availability set created in step 3.
 7. **Add data disks**.
 8. **Configure the load balancer. First, create a front-end IP pool**:
@@ -105,7 +105,7 @@ You can use one of the quickstart templates that are on GitHub to deploy all the
 For more information about the required ports for SAP HANA, see [SAP Note \#2388694](https://me.sap.com/notes/2388694).
 
 > [!IMPORTANT]
-> Don't enable TCP timestamps on Azure VMs placed behind Azure load balancer. Enabling TCP timestamps will cause the health probes to fail. Set parameter net.ipv4.tcp\_timestamps to 0.
+> Don't enable TCP timestamps on Azure Virtual Machines placed behind Azure load balancer. Enabling TCP timestamps will cause the health probes to fail. Set parameter net.ipv4.tcp\_timestamps to 0.
 
 ## Create a Pacemaker cluster
 
@@ -115,7 +115,7 @@ Follow the steps in [Setting up Pacemaker on Red Hat Enterprise Linux in Azure](
 
 The steps in this section use the following prefixes: **\[A\]**: The step applies to all nodes. **\[1\]**: The step applies to node 1 only. **\[2\]**: The step applies to node 2 of the Pacemaker cluster only.
 
-1. **\[A\]** Set up the disk layout by using Logical Volume Manager (LVM). We recommend that you use LVM for volumes that store data and log files. The following example assumes that the Azure VMs have four data disks attached that are used to create two volumes.
+1. **\[A\]** Set up the disk layout by using Logical Volume Manager (LVM). We recommend that you use LVM for volumes that store data and log files. The following example assumes that the Azure Virtual Machines have four data disks attached that are used to create two volumes.
 
      - List all of the available disks
 
@@ -217,7 +217,7 @@ The steps in this section use the following prefixes: **\[A\]**: The step applie
      - Elect other components for installation: Enter 1.
      - Enter Installation Path \[/hana/shared\]: Select Enter.
      - Enter Local Host Name \[..\]: Select Enter.
-     - Do you want to add additional hosts to the system? (y/n) \[n\]: Select Enter.
+     - Do you want to add extra hosts to the system? (y/n) \[n\]: Select Enter.
      - Enter SAP HANA System ID: Enter the SID of HANA, for example: HN1.
      - Enter Instance Number \[00\]: Enter the HANA Instance number. Enter 03 if you used the Azure template or followed the manual deployment section of this article.
      - Select Database Mode / Enter Index **\[1\]**: Select Enter.
