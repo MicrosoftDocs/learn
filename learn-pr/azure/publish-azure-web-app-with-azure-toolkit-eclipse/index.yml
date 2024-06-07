@@ -17,10 +17,11 @@ abstract: |
   - Deploy the app to Azure by using Azure Toolkit for Eclipse
   - Manage deployed web app configurations using Azure Toolkit
 prerequisites: | 
-  - Experience writing web apps in Java
-  - Familiarity with the [Eclipse IDE](https://www.eclipse.org/ide/) to write projects in Java
-  - [Azure Toolkit for Eclipse](/azure/developer/java/toolkit-for-eclipse/)
+  - [Eclipse IDE for Enterprise Java and Web Developers](https://www.eclipse.org/ide/) *Neon* (4.6) or later
   - [Apache Tomcat](http://tomcat.apache.org/) server
+  - [Azure Toolkit for Eclipse](/azure/developer/java/toolkit-for-eclipse/)
+  - Experience writing web apps in Java and Java Server Pages
+  - Familiarity with the Eclipse IDE to create projects in Java
 iconUrl: /training/achievements/publish-azure-web-app-with-azure-toolkit-eclipse.svg
 levels:
 - beginner
