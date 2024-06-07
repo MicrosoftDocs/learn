@@ -1,7 +1,7 @@
 
 [MITRE ATT&CK](https://attack.mitre.org/#) is a publicly accessible knowledge base of tactics and techniques that are commonly used by attackers, and is created and maintained by observing real-world observations. Many organizations use the MITRE ATT&CK knowledge base to develop specific threat models and methodologies that are used to verify security status in their environments.
 
-## ATT&CK Matrices
+## ATT&CK matrices
 
 [MITRE ATT&CK](https://attack.mitre.org/) includes three matrices in its attack framework. Each matrix is a threat model with multiple tactics or goals along with techniques for achieving those goals in a specific type of environment:
 
