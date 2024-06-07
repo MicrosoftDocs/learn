@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-applications
 metadata:
   title: MD-102 Deploy and update applications
   description: "In this module, you'll master deploying applications using Intune, Configuration Manager, Group Policy, and Microsoft Store Apps. These powerful tools and techniques will equip you to manage and maintain diverse applications across your organization effectively."
-  ms.date: 04/23/2024
+  ms.date: 06/07/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: module
@@ -31,7 +31,7 @@ prerequisites: |
   -   Strong understanding of computer networking, client security, and application concepts
 
   -   Experience using Active Directory Domain Services
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/deploy-and-update-applications.svg
 levels:
 - intermediate
 roles:
