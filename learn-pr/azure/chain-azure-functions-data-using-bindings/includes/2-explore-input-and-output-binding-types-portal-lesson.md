@@ -1,6 +1,6 @@
 Accessing and processing data are key tasks in many software solutions. Consider some of these scenarios:
 
-- You've been asked to implement a way to move incoming data from Azure Blob Storage to Azure Cosmos DB.
+- You're asked to implement a way to move incoming data from Azure Blob Storage to Azure Cosmos DB.
 - You want to post incoming messages to a queue for processing by another component in your enterprise.
 - Your service needs to grab gamer scores from a queue and update an online scoreboard.
 
@@ -80,7 +80,7 @@ To create this binding, we:
 
 1. Provide the `path`, which specifies the container and the item name that goes in it. The `path` property is required when using the blob trigger, and should be provided in the style shown here, with curly braces around the filename portion of the path. This syntax creates a *binding expression* that allows you to reference the blob's name in other bindings, and in your function's code. In this example, a parameter on the function named *filename* would be populated with the filename of the blob that triggered the function.
 
-1. Provide the `connection` string setting name defined in the application's settings file. It's used as a key to find the connection string to connect to your storage account.
+1. Provide the `connection` string setting name defined in the application's settings file. The name is used as a key to find the connection string to connect to your storage account.
 
 1. Define the `direction` as `in`. It reads data from the blob.
 
