@@ -5,10 +5,10 @@ metadata:
   title: "Exercise: Create a Test Spec with Codegen"
   description: In this exercise, you'll use the Playwright CLI to generate a test spec file using Codegen. You'll then run the test spec file to verify that the test passes.
   ms.date: 05/08/2024
-  author: japhletnwamu
-  ms.author: japhletnwamu
+  ms.author: debbieobrien
+  author: debs-obrien
+  ms.manager: jamont
   ms.topic: unit
-  ms.custom: team=cloud_advocates
 durationInMinutes: 1
 content: |
   [!include[](includes/7-create-test-specification-with-codegen.md)]
