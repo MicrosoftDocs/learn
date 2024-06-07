@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-exercise-manage-on-premises-azure-arc.enhance-security-arc-enabled-windows
+title: Exercise 3 - Enhance security of Azure Arc-enabled Windows servers by using Microsoft Defender for Cloud
+metadata:
+  title: Exercise 3 - Enhance security of Azure Arc-enabled Windows servers by using Microsoft Defender for Cloud
+  description: "Exercise 3 - Enhance security of Azure Arc-enabled Windows servers by using Microsoft Defender for Cloud"
+  ms.date: 06/07/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/4-enhance-security-arc-enabled-windows.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-exercise-manage-on-premises-azure-arc.onboard-windows-servers-azure-arc
+title: Exercise 1 - Onboard Windows servers to Azure Arc
+metadata:
+  title: Exercise 1 - Onboard Windows servers to Azure Arc
+  description: "Exercise 1 - Onboard Windows servers to Azure Arc"
+  ms.date: 06/07/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 60
+content: |
+  [!include[](includes/2-onboard-windows-servers-azure-arc.md)]

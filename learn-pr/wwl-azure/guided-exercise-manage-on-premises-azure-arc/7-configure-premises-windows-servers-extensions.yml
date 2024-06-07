@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-exercise-manage-on-premises-azure-arc.configure-premises-windows-servers-extensions
+title: Exercise 6 - Configure on-premises Windows servers by using Azure VM extensions and azcmagent CLI
+metadata:
+  title: Exercise 6 - Configure on-premises Windows servers by using Azure VM extensions and azcmagent CLI
+  description: "Exercise 6 - Configure on-premises Windows servers by using Azure VM extensions and azcmagent CLI"
+  ms.date: 06/07/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/7-configure-premises-windows-servers-extensions.md)]

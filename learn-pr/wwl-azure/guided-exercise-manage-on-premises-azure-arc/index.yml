@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.guided-exercise-manage-on-premises-azure-arc
+metadata:
+  title: Guided exercise - Manage on-premises Windows servers by using Azure Arc
+  description: "In this guided exercise, you practice onboarding, securing, monitoring, and updating on-premises Windows servers by using Azure Arc. The guided exercise combines both learning and hands-on practice."
+  ms.date: 06/07/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: azure
+  ai-usage: human-only
+title: Guided exercise - Manage on-premises Windows servers by using Azure Arc
+summary: In this guided exercise, you practice onboarding, securing, monitoring, and updating&nbsp;on-premises Windows servers by using Azure Arc. The guided exercise combines both learning and hands-on practice.
+abstract: |
+  After completing this module, you'll have practical experience with:
+
+  -   Onboarding Windows servers to Azure Arc
+
+  -   Managing Azure Arc-enabled Windows servers by using Azure Policy
+
+  -   Enhancing security of Azure Arc-enabled Windows servers by using Microsoft Defender for Cloud
+
+  -   Monitoring Azure Arc-enabled Windows servers by using Azure Monitor
+
+  -   Managing updates of Azure Arc-enabled Windows servers by using Azure Update Manager
+
+  -   Configuring on-premises Windows servers by using Azure VM extensions and azcmagent CLI
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.guided-exercise-manage-on-premises-azure-arc.introduction
+- learn.wwl.guided-exercise-manage-on-premises-azure-arc.onboard-windows-servers-azure-arc
+- learn.wwl.guided-exercise-manage-on-premises-azure-arc.manage-arc-enabled-azure-policy
+- learn.wwl.guided-exercise-manage-on-premises-azure-arc.enhance-security-arc-enabled-windows
+- learn.wwl.guided-exercise-manage-on-premises-azure-arc.monitor-arc-enabled-windows
+- learn.wwl.guided-exercise-manage-on-premises-azure-arc.manage-updates-arc-enabled
+- learn.wwl.guided-exercise-manage-on-premises-azure-arc.configure-premises-windows-servers-extensions
+- learn.wwl.guided-exercise-manage-on-premises-azure-arc.knowledge-check
+- learn.wwl.guided-exercise-manage-on-premises-azure-arc.summary
+badge:
+  uid: learn.wwl.guided-exercise-manage-on-premises-azure-arc.badge
