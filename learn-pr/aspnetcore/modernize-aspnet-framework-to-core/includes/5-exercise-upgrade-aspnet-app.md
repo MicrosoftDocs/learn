@@ -52,7 +52,7 @@ Let's obtain the sample app, which is just a standard boilerplate app generated 
    - Create a new ASP.NET Core project.
    - Set a new Start action (*Don't open a page*).
    - Set both projects as the solution's Startup projects.
-   - Add YARP and System.Web adapter packages to the new project.
+   - Add YARP and `System.Web` adapter packages to the new project.
    - Add YARP settings to *appsettings.json*. The settings will be configured to forward requests to the old project.
 
 1. Select **Finish**. The upgrade assistant will complete the initial migration.

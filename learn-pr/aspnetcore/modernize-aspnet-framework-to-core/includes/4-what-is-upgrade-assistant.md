@@ -4,7 +4,7 @@ The [.NET Upgrade Assistant](/dotnet/core/porting/upgrade-assistant-overview) is
 
 The Visual Studio extension is convenient and provides graphical feedback throughout the upgrade, so in this unit we'll show how to use the extension. Meanwhile, if you prefer to use CLI, the [documentation and installer are available on GitHub](https://github.com/dotnet/upgrade-assistant/blob/main/README.md).
 
-To follow along, you'll need to download and install the Visusal Studio extension:
+To follow along, you'll need to download and install the Visual Studio extension:
 > [!div class="nextstepaction"]
 > [Visual Studio: .NET Upgrade Assistant extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.upgradeassistant)
 

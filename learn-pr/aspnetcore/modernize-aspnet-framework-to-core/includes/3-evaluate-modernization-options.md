@@ -6,7 +6,7 @@ ASP.NET MVC on .NET Framework continues to be supported and maintained by Micros
 
 ## Option 2: Full upgrade to ASP.NET Core
 
-If your project timeline and budget allow for a full upgrade to ASP.NET Core, you should consider this option. A complete upgrade will provide you the full benefits of ASP.NET Core, and can simplify issues encountered on running in a mixed environment.
+If your project timeline and budget allow for a full upgrade to ASP.NET Core, you should consider this option. A complete upgrade will provide you with the full benefits of ASP.NET Core, and can simplify issues encountered on running in a mixed environment.
 
 ## Option 3: Incremental upgrade
 
