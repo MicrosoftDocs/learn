@@ -4,10 +4,12 @@ title: Deploy to App Service
 metadata:
   title: Deploy to App Service
   description: "Deploy to App Service"
-  ms.date: 04/24/2023
+  ms.date: 06/09/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-deploy-code-to-app-service.md)]

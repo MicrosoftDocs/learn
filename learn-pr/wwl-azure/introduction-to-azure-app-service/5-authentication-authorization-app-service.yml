@@ -4,10 +4,12 @@ title: Explore authentication and authorization in App Service
 metadata:
   title: Explore authentication and authorization in App Service
   description: "Explore authentication and authorization in App Service"
-  ms.date: 04/24/2023
+  ms.date: 06/09/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+durationInMinutes: 6
 content: |
   [!include[](includes/5-authentication-authorization-app-service.md)]
