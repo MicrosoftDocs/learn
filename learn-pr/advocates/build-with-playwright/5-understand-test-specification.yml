@@ -5,10 +5,10 @@ metadata:
   title: Understand Test Specification
   description: The default test runs on the tests/example.spec.ts specification. Let's unpack that to see what it contains.
   ms.date: 05/08/2024
-  author: japhletnwamu
-  ms.author: japhletnwamu
+  ms.author: debbieobrien
+  author: debs-obrien
+  ms.manager: jamont
   ms.topic: unit
-  ms.custom: team=cloud_advocates
 durationInMinutes: 9
 content: |
   [!include[](includes/5-understand-test-specification.md)]

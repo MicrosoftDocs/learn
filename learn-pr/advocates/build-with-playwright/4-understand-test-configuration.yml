@@ -5,10 +5,10 @@ metadata:
   title: "Exercise: Deconstruct a Playwright Test"
   description: Let’s now dive deeper into the Playwright Test Specification and Configuration. Let’s open the project we created in the previous section in our favorite code editor and explore the files that Playwright installed. We're using Visual Studio Code for the workshop. 
   ms.date: 05/08/2024
-  author: japhletnwamu
-  ms.author: japhletnwamu
+  ms.author: debbieobrien
+  author: debs-obrien
+  ms.manager: jamont
   ms.topic: unit
-  ms.custom: team=cloud_advocates
 durationInMinutes: 18
 content: |
   [!include[](includes/4-understand-test-configuration.md)]
