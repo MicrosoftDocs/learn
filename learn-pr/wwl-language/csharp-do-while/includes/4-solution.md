@@ -37,7 +37,4 @@ Hero was damaged and lost 6 health and now has -2 health.
 Monster wins!
 ```
 
-If you were successful, congratulations! Continue on to the knowledge check in the next unit.
-
-> [!IMPORTANT]
-> If you had trouble completing this challenge, maybe you should review the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.
+If you were successful, congratulations! Continue on to the next challenge. If you had trouble, take the time to review the solution and try to understand how it works. You may want to review the previous units and then retry this challenge activity before continuing.
