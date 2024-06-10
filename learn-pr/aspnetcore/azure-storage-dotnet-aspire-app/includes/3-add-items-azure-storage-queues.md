@@ -114,6 +114,6 @@ The string you pass to this method is the name of a connection string. You shoul
 
 ## Learn more
 
-- [.NET Aspire Azure Queue Storage component](dotnet/aspire/storage/azure-storage-queues-component)
+- [.NET Aspire Azure Queue Storage component](/dotnet/aspire/storage/azure-storage-queues-component)
 - [Azure Storage Queues client library for .NET](/dotnet/api/overview/azure/storage.queues-readme)
 - [Quickstart: Azure Queue Storage client library for .NET](/azure/storage/queues/storage-quickstart-queues-dotnet)
