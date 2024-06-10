@@ -3,7 +3,7 @@ Data Activator in Microsoft Fabric takes action based on what's happening in you
 - You need a notification in your Real-Time Dashboard when certain conditions are met, such as if you have a safety stock level drop below a predefined threshold. In this case you can send alert notifications to email and start a reorder event.
 - A sales associate needs to receive alerts when a potential client is visiting their website and offers to start a live chat with them.  
 - A network administrator detects potential security breaches through real-time monitoring and initiates immediate protective actions.
-- A file arrives in Azure Blob Storage container and Activator starts a new activity in Real-Time Intelligence in eventhouse.
+- A file arrives in Azure Blob Storage container and Activator starts a new activity in Real-Time Intelligence in event house.
 - A tile changes in a Real-Time Dashboard and sends and email or Microsoft Teams message to a user for action.
 
 Data Activator experience covers all those scenarios because it allows Fabric to operate and act from events that are generated and processed from data streams.  
