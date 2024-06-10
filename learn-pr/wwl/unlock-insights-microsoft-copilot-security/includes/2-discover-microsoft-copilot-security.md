@@ -6,21 +6,21 @@ Integration is at the core of Copilot for Security. It provides a standalone exp
 
 Using the full power of OpenAI architecture, Copilot for Security generates responses to user prompts using security-specific plugins. These plugins tap into organization-specific information, authoritative sources, and global threat intelligence. This approach gives security professionals broader visibility into threats, richer context, and the ability to extend the solution’s functionalities.
 
-### Primary Use Cases for Copilot for Security
+### Primary Use Cases for Copilot for security
 
-**Incident Summarization**
+###Incident summarization
 
 Quickly distill complex security alerts into concise, actionable summaries using generative AI. This improves communication across your organization, enabling faster response times and streamlined decision-making.
 
-**Impact Analysis**
+###Impact analysis
 
 Utilize AI-driven analytics to assess the potential impact of security incidents. Gain insights into affected systems and data, allowing you to prioritize response efforts effectively.
 
-**Reverse Engineering of Scripts**
+###Reverse engineering of scripts
 
 Eliminate the need for manual reverse engineering of malware. Analyze complex command-line scripts and translate them into natural language with clear explanations. Efficiently extract and link indicators found in the script to their respective entities in your environment.
 
-**Guided Response**
+###Guided response
 
 Receive actionable, step-by-step guidance for incident response, including directions for triage, investigation, containment, and remediation. Relevant deep links to recommended actions allow for quicker response.
 

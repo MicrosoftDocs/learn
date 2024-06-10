@@ -6,9 +6,9 @@ Extend and integrate services with Copilot for Security using plugins from Micro
 
 Copilot for Security also taps into threat intelligence and authoritative content through plugins. These plugins can search across Microsoft Defender Threat Intelligence articles, intel profiles, Microsoft Defender XDR threat analytics reports, and vulnerability disclosure publications.
 
-:::image type="content" source="../media/security-copilot-diagram.png" alt-text="Diagrame of how Copilot for Security works." lightbox="../media/security-copilot-diagram.png":::
+:::image type="content" source="../media/security-copilot-diagram.png" alt-text="Diagram of how Copilot for Security works." lightbox="../media/security-copilot-diagram.png":::
 
-### How Microsoft Copilot for Security Works:
+### How Microsoft Copilot for Security works
 
 1. **User Prompts:** Security products send user prompts to Copilot for Security.
 2. **Preprocessing:** Copilot for Security preprocesses the input prompt using a method called grounding, which enhances the prompt’s specificity. It accesses plugins for preprocessing, then sends the refined prompt to the language model.

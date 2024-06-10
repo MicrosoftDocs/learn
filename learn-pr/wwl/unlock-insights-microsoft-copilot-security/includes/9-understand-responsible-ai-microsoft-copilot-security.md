@@ -1,6 +1,6 @@
 Microsoft is dedicated to developing AI systems, including Microsoft Copilot for Security, that adhere to ethical principles and responsible practices. The focus is on fairness, reliability, safety, privacy, inclusiveness, transparency, and accountability.
 
-Key Principles:
+### Key principles:
 - **Fairness**: Ensuring equitable treatment for all users.
 - **Reliability and Safety**: Building robust and safe AI systems.
 - **Privacy and Security**: Protecting user data and confidentiality.

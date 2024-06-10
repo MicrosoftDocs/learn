@@ -3,7 +3,7 @@ uid: learn.wwl.unlock-insights-microsoft-copilot-security
 metadata:
   title: Unlock Insights with Microsoft Copilot for Security
   description: "This module introduces Microsoft Copilot for Security, an AI-powered security solution designed to enhance the efficiency of security professionals. It offers a natural language, assistive copilot experience for scenarios like incident response, threat hunting, and posture management."
-  ms.date: 06/07/2024
+  ms.date: 06/10/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: module
@@ -46,7 +46,7 @@ units:
 - learn.wwl.unlock-insights-microsoft-copilot-security.explore-microsoft-copilot-security-experiences
 - learn.wwl.unlock-insights-microsoft-copilot-security.deploy-microsoft-copilot-security-enhanced-security
 - learn.wwl.unlock-insights-microsoft-copilot-security.utilize-prompts-microsoft-copilot-security
-- learn.wwl.unlock-insights-microsoft-copilot-security.incorporate-prompt-books-microsoft-copilot-security
+- learn.wwl.unlock-insights-microsoft-copilot-security.incorporate-promptbooks-microsoft-copilot-security
 - learn.wwl.unlock-insights-microsoft-copilot-security.explore-new-features-microsoft-copilot-security
 - learn.wwl.unlock-insights-microsoft-copilot-security.understand-responsible-ai-microsoft-copilot-security
 - learn.wwl.unlock-insights-microsoft-copilot-security.knowledge-check

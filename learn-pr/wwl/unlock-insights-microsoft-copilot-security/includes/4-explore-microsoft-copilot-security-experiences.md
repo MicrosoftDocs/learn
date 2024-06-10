@@ -1,9 +1,9 @@
 Microsoft Copilot for Security provides both an immersive standalone experience and intuitive embedded experiences within other Microsoft security products, enhancing your security operations.
 
-**Standalone Experience**  
+### Standalone experience
 Access Copilot for Security directly at [securitycopilot.microsoft.com](https://securitycopilot.microsoft.com) for a comprehensive, independent experience. This platform allows security professionals to apply the full capabilities of Copilot for Security in one place.
 
-**Embedded Experience**  
+### Embedded experience
 Utilize Copilot for Security within other Microsoft security products to gain context-specific functionalities seamlessly integrated into your existing workflows. For example, within Microsoft Defender XDR, you can access features like incident summarization or script analysis directly.
 
 > [!NOTE]
