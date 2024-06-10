@@ -5,8 +5,8 @@ metadata:
   title: Manage Azure Arc-enabled SQL Managed Instance
   description: Demonstrates how to manage Azure Arc-enabled SQL Managed Instance.
   ms.date: 12/21/2022
-  author: tchristiani
-  ms.author: terrychr
+  author: MikeRayMSFT
+  ms.author: mikeray
   ms.topic: unit
 durationInMinutes: 5
 content: |
