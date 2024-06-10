@@ -1,6 +1,6 @@
-This guided project consists of the sex exercises.
+This guided project consists of the six exercises.
 
- -  **Exercise 1: Onboard Windows servers to Azure Arc.**
+ -  **Exercise 1: Onboard Windows servers to Azure Arc**.
  -  Exercise 2: Manage Azure Arc-enabled Windows servers by using Azure Policy<br>
  -  Exercise 3: Enhance security of Azure Arc-enabled Windows servers by using Microsoft Defender for Cloud
  -  Exercise 4: Monitor Azure Arc-enabled Windows servers by using Azure Monitor
@@ -9,11 +9,11 @@ This guided project consists of the sex exercises.
 
 In Exercise 1, you configure Azure Container Registry and Azure Kubernetes Service resources.<br>
 
- -  **Task 1: Deploy Azure resources by using an Azure Resource Manager template.**
- -  **Task 2: Implement the operating system prerequisites for connecting Azure VMs to Azure Arc.**
- -  **Task 3: Prepare for connecting on-premises servers to Azure Arc.**
- -  **Task 4: Connect a Windows Server to Azure Arc by using Windows Admin Center.**
- -  **Task 5: Connect Windows servers to Azure Arc non-interactively at scale.**
+ -  **Task 1: Deploy Azure resources by using an Azure Resource Manager template**.
+ -  **Task 2: Implement the operating system prerequisites for connecting Azure VMs to Azure Arc**.
+ -  **Task 3: Prepare for connecting on-premises servers to Azure Arc**.
+ -  **Task 4: Connect a Windows Server to Azure Arc by using Windows Admin Center**.
+ -  **Task 5: Connect Windows servers to Azure Arc non-interactively at scale**.
 
 > [!NOTE]
 > To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
