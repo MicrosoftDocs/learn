@@ -6,7 +6,7 @@ Microsoft Copilot for Security enhances your security operations by using prompt
 
 ### How to Use Prompts
 
-#### Selecting the Prompts Icon
+#### Selecting the prompts icon
 
 1. **Access the Prompt Bar:** On the Copilot home page, select the sparkle icon located at the prompt bar.
 2. **Explore Promptbooks:** You'll find a list of promptbooks and individual prompts. Promptbooks are collections of prompts designed to accomplish specific security tasks in sequence.

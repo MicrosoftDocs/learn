@@ -8,19 +8,19 @@ Using the full power of OpenAI architecture, Copilot for Security generates resp
 
 ### Primary Use Cases for Copilot for security
 
-###Incident summarization
+### Incident summarization
 
 Quickly distill complex security alerts into concise, actionable summaries using generative AI. This improves communication across your organization, enabling faster response times and streamlined decision-making.
 
-###Impact analysis
+### Impact analysis
 
 Utilize AI-driven analytics to assess the potential impact of security incidents. Gain insights into affected systems and data, allowing you to prioritize response efforts effectively.
 
-###Reverse engineering of scripts
+### Reverse engineering of scripts
 
 Eliminate the need for manual reverse engineering of malware. Analyze complex command-line scripts and translate them into natural language with clear explanations. Efficiently extract and link indicators found in the script to their respective entities in your environment.
 
-###Guided response
+### Guided response
 
 Receive actionable, step-by-step guidance for incident response, including directions for triage, investigation, containment, and remediation. Relevant deep links to recommended actions allow for quicker response.
 
