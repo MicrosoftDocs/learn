@@ -11,12 +11,13 @@ You also did exercises to assign a tagging strategy, create a budget, and add po
 
 For more information about cloud governance, see:
 
+- [Cloud Governance assessment](/assessments/b1891add-7646-4d60-a875-32a4ab26327e/)
 - [Build a cloud governance team](/azure/cloud-adoption-framework/govern/build-cloud-governance-team)
 - [Assess cloud risks](/azure/cloud-adoption-framework/govern/assess-cloud-risks)
 - [Document cloud governance policies](/azure/cloud-adoption-framework/govern/document-cloud-governance-policies)
 - [Enforce cloud governance policies](/azure/cloud-adoption-framework/govern/enforce-cloud-governance-policies)
 - [Monitor cloud governance](/azure/cloud-adoption-framework/govern/monitor-cloud-governance)
 
-## Next steps
+## Next step
 
 For an overview about cloud governance, see the [Govern overview](/azure/cloud-adoption-framework/govern). This article guides you through the Cloud Adoption Framework Govern methodology to develop cloud governance.

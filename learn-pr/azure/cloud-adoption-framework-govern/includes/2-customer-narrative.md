@@ -24,3 +24,4 @@ To balance digital transformation efforts, Tailwind Traders needs a cloud govern
 
 Before Tailwind Traders adopted the cloud, governance was delivered in a series of manual processes of review, acceptance, and change control. The employees, processes, and tools that delivered governance functions in the on-premises environment aren't scaling to consistently govern cloud deployments.
 
+

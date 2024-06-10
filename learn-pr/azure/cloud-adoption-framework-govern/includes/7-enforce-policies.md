@@ -15,6 +15,27 @@ To effectively enforce cloud governance policies:
 
 **Review and update enforcement mechanisms.** Keep cloud governance policy enforcement aligned with your current needs, including developer, architect, workload, platform, and business requirements. Track changes in regulations and standards to ensure compliance. 
 
+## Align with cloud governance policies
+
+The cloud provides guardrails to help reduce human overhead due to recurring processes. You can use these guardrails to help align with the policies that you incorporate.
+
+The following table outlines triggers and actions that can address the risks that concern the Tailwind Traders CIO. The actions align their organization with their new policies.
+
+| Risk | Sample trigger | Sample action |
+|-----------------------------|----------------|---------------|
+| Overspending in the cloud | Monthly cloud spending is 20% higher than expected. | Notify the billing unit leader so that they can review resource usage. |
+| Overspending in the cloud | Deployed assets don't use the allocated CPU or memory. | Notify the billing unit leader and automatically resize to fit actual usage, when possible. |
+| Not meeting organizational security or compliance requirements | Deviations from defined security or compliance requirements. | Notify the IT security team and automate remediation, when possible. |
+| Asset configurations create operations management problems or oversights | CPU usage for a workload is higher than 90%. | Notify the IT operations team, and scale out more resources to handle the load. |
+| Asset configurations create operations management problems or oversights | Assets that fail to meet patching, business continuity, or disaster recovery requirements trigger an operational compliance warning. | Notify the IT security team, and automatically resolve the deviation, when possible. |
+| Unauthorized access that compromises systems or data | Traffic patterns deviate from approved network topologies. | Notify the IT security team, and automatically close attack vectors, when possible.|
+| Unauthorized access that compromises systems or data | Assets are configured without proper role assignments or elevated privileges. | Notify the IT security team, and automatically resolve the deviation, when possible. |
+| Immature processes or lack of team skills creates inconsistent governance | Identified assets aren't included in required governance processes. | Notify the IT governance team, and automatically resolve the deviation, when possible. |
+
+You can use Azure governance tools to automate notifications for each of these triggers. Other cloud providers might require a more manual approach, but the defined policies still apply. Don't define policies that lock you into using a specific vendor so that you don't have to repeat this process in the future.
+
+After you establish your cloud policy statements and draft a design guide, you need to create a strategy to ensure that your cloud deployment remains compliant with your policy requirements. This strategy must encompass your cloud governance team's ongoing review and communication processes and establish criteria for when policy violations require action. This strategy must also define the requirements for automated monitoring and compliance systems that detect violations and trigger remediation actions.
+
 ## Governance design consideration
 
 To accommodate long-term governance needs, apply a hierarchical governance model in which specific workloads inherit governance policies from the platform. This model helps ensure that organizational standards apply to the correct environments, such as purchasing requirements for cloud services.
