@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.explore-dynamic-data-masking
+title: Explore dynamic data masking
+metadata:
+  title: Explore dynamic data masking
+  description: "Explore the concept and how to implement dynamic data masking in a data warehouse in Microsoft Fabric."
+  ms.date: 5/23/2024
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-explore-dynamic-data-masking.md)]

@@ -5,8 +5,8 @@ metadata:
   title: Examine disaster recovery for Azure Arc-enabled SQL Managed Instance
   description: Examine the disaster recovery features of Azure Arc-enabled SQL Managed Instance.
   ms.date: 12/26/2022
-  author: tchristiani
-  ms.author: terrychr
+  author: MikeRayMSFT
+  ms.author: mikeray
   ms.topic: unit
 durationInMinutes: 5
 content: |
