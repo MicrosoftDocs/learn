@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-azure-managed-lustre-file-system.create-managed-lustre-file-system
+title: Create an Azure Managed Lustre file system
+metadata:
+  title: Create an Azure Managed Lustre file system
+  description: Learn how to create an Azure Managed Lustre file system using the Azure portal.
+  ms.date: 06/14/2024
+  author: pauljewellmsft
+  ms.author: pauljewell
+  ms.reviewer: blepore
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/create-managed-lustre-file-system.md)]

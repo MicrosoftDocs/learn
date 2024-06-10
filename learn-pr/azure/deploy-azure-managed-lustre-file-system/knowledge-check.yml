@@ -1,0 +1,27 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-azure-managed-lustre-file-system.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 06/14/2024
+  author: pauljewellmsft
+  ms.author: pauljewell
+  ms.reviewer: blepore
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  questions:
+  - content: "?"
+    choices:
+    - content: "A"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "B"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "C"
+      isCorrect: false
+      explanation: "Incorrect."

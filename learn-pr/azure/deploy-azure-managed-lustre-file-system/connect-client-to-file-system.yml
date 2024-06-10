@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-azure-managed-lustre-file-system.connect-client-to-file-system
+title: Connect clients to an Azure Managed Lustre file system
+metadata:
+  title: Connect clients to an Azure Managed Lustre file system
+  description: Learn how to connect clients to an Azure Managed Lustre file system.
+  ms.date: 06/14/2024
+  author: pauljewellmsft
+  ms.author: pauljewell
+  ms.reviewer: blepore
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/connect-client-to-file-system.md)]
