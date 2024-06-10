@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-exercise-manage-on-premises-azure-arc.manage-updates-arc-enabled
+title: Exercise 5 - Manage updates of Azure Arc-enabled Windows servers by using Azure Update Manager
+metadata:
+  title: Exercise 5 - Manage updates of Azure Arc-enabled Windows servers by using Azure Update Manager
+  description: "Exercise 5 - Manage updates of Azure Arc-enabled Windows servers by using Azure Update Manager"
+  ms.date: 06/10/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/6-manage-updates-arc-enabled.md)]
