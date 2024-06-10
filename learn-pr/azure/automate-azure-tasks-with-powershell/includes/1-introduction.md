@@ -10,7 +10,7 @@ call record without an associated customer in the database. This orphaned record
 integration tests to fail, even after you fixed the bug.
 
 Recognizing the frequency of these testing cycles, which occur multiple times per week, you decide
-to deploy a new VM for each testing cycle to ensure the consistency and reliability of your test
+to deploy a new VM for each cycle to ensure the consistency and reliability of your test
 environment. By developing PowerShell scripts for deployment, you streamline the process, optimize
 workflow efficiency, and minimize errors through automation.
 

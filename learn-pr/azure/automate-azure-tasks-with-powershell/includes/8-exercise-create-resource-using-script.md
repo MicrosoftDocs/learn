@@ -101,7 +101,7 @@ param (
 
 $adminCredential = Get-Credential -Message 'Enter a username and password for the VM administrator.'
 
-$vms = 1..3
+$vms = 'web','app','sql'
 
 foreach ($vm in $vms) {
 

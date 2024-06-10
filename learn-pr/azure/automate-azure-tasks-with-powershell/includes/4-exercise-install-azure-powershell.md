@@ -29,7 +29,7 @@ determine which version of PowerShell is installed:
 
 1. **Open PowerShell version 7**:
 
-   To open PowerShell version 7, select the **PowerShell 7 (x64)** shortcut. If PowerShell version 7
+   If PowerShell version 7
    isn't installed, open Windows PowerShell and use **Windows Package Manager (Winget)** to install
    the latest stable version of PowerShell 7:
 
@@ -42,7 +42,8 @@ determine which version of PowerShell is installed:
 
 1. **Determine the PowerShell version**:
 
-   Run the following command to check the version of PowerShell:
+   To open PowerShell version 7, select the **PowerShell 7 (x64)** shortcut. Run the following
+   command to check the version of PowerShell:
 
    ```powershell
    $PSVersionTable.PSVersion

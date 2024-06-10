@@ -10,7 +10,7 @@ than manually creating them each time.
 
 Beyond the core operation of creating a VM, your script needs to meet a few other requirements:
 
-- **Create multiple VMs**: Use `New-AzVM` inside a loop to create multiple VMs.
+- **Create multiple VMs**: Use `New-AzVM` to create multiple uniquely named VMs.
 - **Resource group parameter**: Allow the script to accept the name of the resource group as a
   parameter.
 
@@ -131,7 +131,7 @@ param (
 
 $adminCredential = Get-Credential
 
-$vms = 1..$VmCount
+$vms = 'web','app','sql'
 
 foreach ($vm in $vms) {
     $vmName = "testvm-$vm"

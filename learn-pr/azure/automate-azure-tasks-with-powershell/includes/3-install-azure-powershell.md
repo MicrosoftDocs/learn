@@ -2,7 +2,7 @@
 
 In this scenario, your administrators prefer executing scripts locally on their computers rather
 than using Azure Cloud Shell. Since your team uses a mixture of Windows, Linux, and macOS, your task
-is to ensure Azure PowerShell works seamlessly across all these devices. This empowers your
+is to ensure Azure PowerShell works across all these devices. This empowers your
 administrators to manage and automate the Azure infrastructure for your organization from their
 preferred operating system on their local computers.
 
@@ -17,7 +17,8 @@ first, let's look at the two key components required for Azure PowerShell:
 - **The Az PowerShell module**: This module must be installed to add the Azure-specific commands to
   PowerShell.
 
-> [!TIP] The latest stable version of PowerShell 7 is recommended for use with the **Az** PowerShell
+> [!TIP]
+> The latest stable version of PowerShell 7 is recommended for use with the **Az** PowerShell
 > module on all platforms.
 
 After installing the appropriate version of PowerShell, you can then install the **Az** PowerShell

@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD041 -->
 
-In interactive mode, PowerShell allows you to write and execute commands immediately.
+In interactive mode, PowerShell allows you to enter and run commands immediately.
 
 In the Customer Relationship Management (CRM) example, the goal is to create three test
 environments, each containing virtual machines (VMs). Use resource groups to ensure the VMs are

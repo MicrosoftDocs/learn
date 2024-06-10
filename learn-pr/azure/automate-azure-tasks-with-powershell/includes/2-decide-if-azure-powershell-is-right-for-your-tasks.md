@@ -37,12 +37,12 @@ approach can be time-consuming and error-prone for more complex tasks.
 
 ## Azure PowerShell
 
-Azure PowerShell is a collection of modules that provide PowerShell cmdlets for connecting to your
-Azure subscription and managing resources. It requires PowerShell, a command-line shell and
-scripting language.
+Azure PowerShell is a collection of modules that provide PowerShell cmdlets for managing Azure
+resources. It requires PowerShell, a command-line shell and scripting language.
 
-For example, Azure PowerShell offers the `New-AzVM` cmdlet to create a virtual machine in your Azure
-subscription. To use it, launch PowerShell and execute the following command:
+For example, Azure PowerShell provides the `New-AzVM` cmdlet to create a virtual machine in your
+Azure subscription. To use it, launch PowerShell and execute the following command:
+
 
 ```azurepowershell
 $azVmParams = @{
@@ -58,11 +58,11 @@ installation on Windows, Linux, or macOS. You can use PowerShell interactively, 
 PowerShell commands from PowerShell, or you can create and execute scripts that consist of multiple
 commands.
 
-## The Azure CLI
+## Azure CLI
 
-The Azure CLI is a cross-platform command-line tool that enables you to connect to Azure and execute
-administrative commands on Azure resources. For instance, you can create a virtual machine using the
-following command (this example uses Bash line continuation characters):
+The Azure CLI is a cross-platform command-line tool that enables you to manage Azure resources. For
+instance, you can create a virtual machine using the following command (this example uses Bash line
+continuation characters):
 
 ```azurecli
 az vm create \
@@ -106,7 +106,7 @@ application. Your administrators have two specific Azure tasks to complete:
 The Azure portal is a reasonable choice for creating resource groups. Since these tasks are one-off,
 you don't need scripts to create them.
 
-The first experience with Azure for most administrators is through the Azure portal. It provides a
+Most administrators first experience Azure through the Azure portal. The portal provides a
 well-organized graphical interface for managing Azure resources, making it an excellent starting
 point. However, the portal doesn't support automation, which is essential for repetitive tasks like
 creating multiple VMs several times a week.
