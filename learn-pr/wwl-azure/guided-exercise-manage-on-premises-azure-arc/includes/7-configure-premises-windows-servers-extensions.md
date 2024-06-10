@@ -10,7 +10,7 @@ This guided project consists of the six exercises.
 In Exercise 6, you configure on-premises Windows servers by using Azure virtual machine extensions and Azure CLI.
 
  -  **Task 1: Configure Azure Arc-enabled Windows servers by using an Azure VM extension**.
- -  **Task 2: Configure Azure Arc-enabled Windows servers by using CL**.
+ -  **Task 2: Configure Azure Arc-enabled Windows servers by using CLI**.
  -  **Task 3: Remove the lab environment**.
 
 > [!NOTE]

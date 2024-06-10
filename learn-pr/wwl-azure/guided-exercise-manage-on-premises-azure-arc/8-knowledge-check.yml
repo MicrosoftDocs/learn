@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "Disable and re-enable Microsoft Defender for Cloud"
       isCorrect: false
-      explanation: "Incorrect. Disabling and re-enabling Microsoft Defender for Cloudisn't required to verify its functionality."
+      explanation: "Incorrect. Disabling and re-enabling Microsoft Defender for Cloud isn't required to verify its functionality."
     - content: "Initiate a system reboot on all Azure Arc enabled Windows servers"
       isCorrect: false
       explanation: "Incorrect. A system reboot isn't necessary after configuring Microsoft Defender for Cloud based protection."
@@ -29,10 +29,10 @@ quiz:
     choices:
     - content: "Using a pre-existing environment without any modifications"
       isCorrect: false
-      explanation: "Incorrect. This does not allow for the creation and teardown of environments, nor does it provide validation."
+      explanation: "Incorrect. This doesn't allow for the creation and teardown of environments, nor does it provide validation."
     - content: "Manual scripting of each environment setup and teardown"
       isCorrect: false
-      explanation: "Incorrect. While scripting can automate tasks, it does not inherently provide validation of the process."
+      explanation: "Incorrect. While scripting can automate tasks, it doesn't inherently provide validation of the process."
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
       explanation: "Correct. Automating and validating the creation and teardown of environments ensures stability and security."

@@ -1,4 +1,4 @@
-Welcome to this interactive skills validation experience. Completing this module helps prepare you for the *Deploy and manage Azure Arc-enabled Servers*assessment.<br>
+Welcome to this interactive skills validation experience. Completing this module helps prepare you for the *Deploy and manage Azure Arc-enabled Servers* assessment.
 
 In this guided exercise, you practice onboarding, securing, monitoring, and updating on-premises Windows servers by using Azure Arc. The guided exercise combines both learning and hands-on practice. The skills validated include:
 
