@@ -29,7 +29,7 @@ Our first step is to create a Bicep file that defines our resources to use with 
 
 1. Add the following Bicep code into the file. You deploy the template soon. It's a good idea to type the code yourself instead of copying and pasting, so you can see how the tooling helps you to write your Bicep files.
 
-    :::code language="bicep" source="code/1-template.bicep" range="1-21,25-27,31-46,55-77":::
+    :::code language="bicep" source="code/1a-template.bicep" range="1-63":::
 
     Notice that you're using expressions that include string interpolation and the `uniqueString()` function to define default parameter values. Someone deploying this template can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
@@ -131,11 +131,11 @@ Next, we need to create our deployment stack scoped to our recently created reso
 
 1. Add the highlighted code to the variables section of your file:
 
-    :::code language="bicep" source="code/1-template.bicep" range="21-29" highlight="22-23,28-29":::
+    :::code language="bicep" source="code/1b-template.bicep" range="21-30" highlight="2-3,8-9":::
 
 1. Add the following code to the bottom of the file:
 
-    :::code language="bicep" source="code/1-template.bicep" range="79-100":::
+    :::code language="bicep" source="code/1b-template.bicep" range="79-100":::
 
 1. Save the changes to the file.
 
@@ -145,11 +145,11 @@ Next, we need to create our deployment stack scoped to our recently created reso
 
 1. Change the sku name of the app service paln from `F1` to `S1`:
 
-    :::code language="bicep" source="code/1-template.bicep" range="31-39" highlight="36":::
+    :::code language="bicep" source="code/1b-template.bicep" range="31-39" highlight="6":::
 
 1. Add the highlighted code to wire in the aplication insights instance:
 
-    :::code language="bicep" source="code/1-template.bicep" range="41-56" highlight="47-54":::
+    :::code language="bicep" source="code/1b-template.bicep" range="41-56" highlight="7-14":::
 
 1. Save the changes to the file.
 

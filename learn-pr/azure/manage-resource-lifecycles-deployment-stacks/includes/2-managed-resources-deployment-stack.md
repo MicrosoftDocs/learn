@@ -14,11 +14,15 @@ What happens to a resource that is no longer managed by the deployment stack? If
 
 For example, let's consider our Bicep file from the last module.
 
-:::code language="bicep" source="code/1-template.bicep" range="1-4, 18-42":::
+:::code language="bicep" source="code/1a-template.bicep" range="1-4,18-43":::
 
-The template file defines an app servie plan and a web app. Let's say that we need to remove the existing web app from our application. We edit our Bicep file, removing the code that references our web app.
+The template file defines an app service plan and a web app. Let's say that we need to remove the existing web app from our application. We edit our Bicep file, removing the highlighted code that references our web app.
 
-:::code language="bicep" source="code/1-template.bicep" range="1-4, 21-33":::
+:::code language="bicep" source="code/1a-template.bicep" range="1-4,18-43" highlight="5-6,22-29":::
+
+We are left with the following code in our file:
+
+:::code language="bicep" source="code/1a-template.bicep" range="1-4,21-24":::
 
 ::: zone pivot="cli"
 
