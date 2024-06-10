@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/10/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/11-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A team is working on securing their cloud servers. They are considering using Microsoft Defender for Endpoint or extended protection with just in time network access, file integrity monitoring, vulnerability assessment, and more. What is this process called?"
+    choices:
+    - content: "Defender for Storage"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Storage is used to protect storage resources, not servers."
+    - content: "Defender for Containers"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Containers is used to secure containers, not servers."
+    - content: "Defender for Servers"
+      isCorrect: true
+      explanation: "Correct. Defender for Servers is used to provide server protections."
+  - content: "A team is integrating their on-premises machines with Azure and wants to verify the connection. They sign in to the Azure portal, select Microsoft Defender for Cloud, and view the asset inventory. What should they do next to complete the verification?"
+    choices:
+    - content: "Filter the page to view irrelevant resource types"
+      isCorrect: false
+      explanation: "Incorrect. Filtering the page to view irrelevant resource types will not help in verifying the connection."
+    - content: "Enable Microsoft Defender XDR"
+      isCorrect: false
+      explanation: "Incorrect. Enabling Microsoft Defender XDR is not necessary for verifying the connection of on-premises machines with Azure."
+    - content: "Filter the page to view the relevant resource types"
+      isCorrect: true
+      explanation: "Correct. They should filter the page to view the relevant resource types to verify the connection."
+  - content: "A security analyst needs to monitor the security posture of non-Azure machines. They decide to connect these machines to Azure. Which method is recommended for onboarding these machines?"
+    choices:
+    - content: "Using the Azure portal"
+      isCorrect: false
+      explanation: "Incorrect. The Azure portal can be used, but it is not the recommended method for onboarding non-Azure machines."
+    - content: "Onboarding directly with Microsoft Defender for Endpoint"
+      isCorrect: false
+      explanation: "Incorrect. While this is a method, it is not the recommended one for connecting non-Azure machines."
+    - content: "Onboarding with Azure Arc"
+      isCorrect: true
+      explanation: "Correct. Azure Arc enabled servers is the recommended method for onboarding non-Azure machines."
