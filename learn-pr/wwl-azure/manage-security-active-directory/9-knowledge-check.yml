@@ -1,0 +1,11 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security-active-directory.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/10/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 3

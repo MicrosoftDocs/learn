@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security-active-directory.protect-user-accounts-protected-users-group
+title: Protect User Accounts with the Protected Users group
+metadata:
+  title: Protect User Accounts with the Protected Users group
+  description: "Protect User Accounts with the Protected Users group"
+  ms.date: 06/10/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-protect-user-accounts-protected-users-group.md)]

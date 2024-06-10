@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security-active-directory.block-windows-ntlm-authentication
+title: Block Windows NTLM authentication
+metadata:
+  title: Block Windows NTLM authentication
+  description: "Block Windows NTLM authentication"
+  ms.date: 06/10/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-block-windows-ntlm-authentication.md)]
