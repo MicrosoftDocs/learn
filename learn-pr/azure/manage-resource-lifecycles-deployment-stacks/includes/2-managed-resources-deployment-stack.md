@@ -22,7 +22,7 @@ The template file defines an app service plan and a web app. Let's say that we n
 
 We are left with the following code in our file:
 
-:::code language="bicep" source="code/1a-template.bicep" range="1-4,21-24":::
+:::code language="bicep" source="code/1a-template.bicep" range="1-4,21-34":::
 
 ::: zone pivot="cli"
 
