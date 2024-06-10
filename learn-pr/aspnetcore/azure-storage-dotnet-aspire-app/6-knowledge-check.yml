@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-storage-dotnet-aspire-app.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "In this unit, you'll answer questions about using Azure Storage accounts in .NET Aspire to check the knowledge you've gained in this module."
+  ms.date: 3/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom:
+  - team=cloud_advocates
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "You want to use Azure blob storage to host videos for your .NET Aspire app. Which package should you install in the App Host project?"
+    choices:
+    - content: "Aspire.Azure.Storage.Blobs"
+      isCorrect: false
+      explanation: "Incorrect. You should install the Aspire.Azure.Storage.Blobs package in the consuming projects but not in the App Host project."
+    - content: "Aspire.Hosting"
+      isCorrect: false
+      explanation: "Incorrect. The Aspire.Hosting package is probably already installed in the App Host project and doesn't help you configure a blob storage backing service."
+    - content: "Aspire.Hosting.Azure.Storage"
+      isCorrect: true
+      explanation: "Correct. You should install the  Aspire.Hosting.Azure.Storage package in the App Host project."
+  - content: "You're writing a microservice that receives orders and uses them to update stock numbers in your warehouse database. You've registered the Azure Storage Queues backing service in your .NET Aspire App Host project. You want to write the method that retrieves messages from an Azure Storage queue. How should you access the queue to receive messages?"
+    choices:
+    - content: "Obtain the QueueServiceClient object using dependency injection and then call its ReceiveMessagesAsync() method."
+      isCorrect: false
+      explanation: "Incorrect. You must start by obtaining the QueueServiceClient object from dependency injection but that object doesn't have a ReceiveMessagesAsync() method."
+    - content: "Obtain the QueueServiceClient object using dependency injection and then call its GetQueueClient() method."
+      isCorrect: true
+      explanation: "Correct. The QueueServiceClient object represents an Azure Queue Storage service. To interact with a queue, call the GetQueueClient() method to obtain a QueueClient object. Call the QueueClient.ReceiveMessagesAsync() method to obtain and process messages."
+    - content: "Obtain the QueueClient object using dependency injection and then call its ReceiveMessagesAsync() method."
+      isCorrect: false
+      explanation: "Incorrect. You can't obtain a QueueClient object by using dependency injection in a .NET Aspire app."
+  - content: "You need to store information about products in a database that several of your microservices use. You're considering using Azure Storage Tables. Which of the following are advantages that Azure Storage Tables can realize?"
+    choices:
+    - content: "You can tightly control the schema of the entities in each table."
+      isCorrect: false
+      explanation: "Incorrect. Azure Storage Tables takes a semi-structured approach to data, so schemas aren't strictly enforced on tables."
+    - content: "You can impose strict relationships between entities in different tables."
+      isCorrect: false
+      explanation: "Incorrect. Azure Storage Tables takes a semi-structured approach to data, so relationships between different tables aren't strictly enforced."
+    - content: "If the properties of products are likely to evolve, it's easy to reflect this change in the tables."
+      isCorrect: true
+      explanation: "Correct. Azure Storage Tables takes a semi-structured approach to data. Schemas aren't strictly enforced so the properties of entities can evolve more easily as your business requirements change."
