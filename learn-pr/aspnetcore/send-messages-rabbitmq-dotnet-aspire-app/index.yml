@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Experience building web applications using .NET and C#
 ratingEnabled: true
-iconUrl: /training/achievements/dotnet-aspiresvg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
