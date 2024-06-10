@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-first-deployment-stack.exercise-update-delete-deployment-stack
+title: Exercise - Update and delete a deployment stack
+metadata:
+  title: Exercise - Update and delete a deployment stack
+  description: Learn how to update and delete an existing deployment stack.
+  ms.date: 08/01/2023
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: unit
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 10
+content: | 
+  [!include[](includes/5-exercise-update-delete-deployment-stack.md)]

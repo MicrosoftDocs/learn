@@ -82,6 +82,10 @@ Select the title of the promptbook to open a page with more detailed information
 
 For a complete listing of all the available promptbooks, select View promptbook library.
 
+Watch this short video, for a summary on using promptbooks.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7bb51c3d-ba80-430e-b3bc-2eed3942cf70]
+
 ### Prompt bar
 
 You use the prompt bar to tell Copilot what insights you want from your security data, in natural language, then select the run icon.
@@ -143,3 +147,7 @@ By selecting the help icon, you can link to documentation, or if you encounter i
 ***Submit a support case to the Microsoft support team***. To open support cases, you must have, at a minimum, a Service Support Administrator OR Helpdesk Administrator role. You can also view your support history.
 
 :::image type="content" source="../media/contact-support-tab.png" lightbox="../media/contact-support-tab.png" alt-text="Screen capture showing the form to get support from an agent.":::
+
+Watch this short video, for tour of Microsoft Copilot for Security.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3b45ed29-1738-40e8-bc87-696d420155f8]

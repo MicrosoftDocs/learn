@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.use-databases-dotnet-aspire-app.store-data-nosql-databases
+
+title: Store data in NoSQL databases
+metadata:
+  title: Store data in NoSQL databases
+  description: "Learn how to use .NET Aspire components to read and write data to MongoDB databases."
+  ms.date: 3/20/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/store-data-nosql-databases.md)]
