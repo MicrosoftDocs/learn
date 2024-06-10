@@ -58,11 +58,11 @@ quiz:
     choices:
     - content: Rotate the schedule of service manager users to prevent over-familiarity with the customer's Azure estate.
       isCorrect: false
-      explanation: Incorrect. Using multi-factor authentication limits the chance of an unauthorized user accessing an onboarded customer's Azure instance.
+      explanation: Incorrect. Using multifactor authentication limits the chance of an unauthorized user accessing an onboarded customer's Azure instance.
     - content: Carry out detailed background checks of all your staff who manage your onboarded customers.
       isCorrect: false
       explanation: Incorrect. Use MFA to validate this information.
-    - content: Implement multi-factor authentication for all users who manage your onboarded customers.
+    - content: Implement multifactor authentication for all users who manage your onboarded customers.
       isCorrect: true
       explanation: Correct. MFA ensures that only dedicated users can access your customer's Azure estate. It's also a good practice to ask the customer to implement MFA on their Azure tenant.
   - content: 'Where can you find the Azure Lighthouse Resource Manager templates?'
@@ -125,7 +125,7 @@ quiz:
     - content: Enterprise Agreement.
       isCorrect: false
       explanation: Incorrect. You'd use the bring-your-own-license model.
-    - content: Pay-As-You-Go.
+    - content: Pay-as-you-go.
       isCorrect: false
       explanation: Incorrect. You'd use the bring-your-own-license model.
     - content: Bring your own license.
