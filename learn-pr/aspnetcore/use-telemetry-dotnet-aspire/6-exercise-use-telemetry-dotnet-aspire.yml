@@ -7,6 +7,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.topic: unit
+  ms.custom: devx-track-dotnet
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-use-telemetry-dotnet-aspire.md)]
