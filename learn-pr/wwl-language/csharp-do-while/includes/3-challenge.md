@@ -47,6 +47,6 @@ Here are the rules for the battle game that you need to implement in your code p
     Hero wins!
     ```
 
-    Obviously, because of the random nature of the code, the outcome will be different each time, so your results will definitely be different that the output displayed above. However, you can use this as an example of the output your code should generate.
+    Since the code uses random numbers and the outcome is different each time, your results will be different than the output displayed above. However, you can use this as an example of the output your code should generate.
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.

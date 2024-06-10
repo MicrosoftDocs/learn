@@ -123,3 +123,5 @@ for (int i = 0; i < stringsCount; i++)
     Console.WriteLine(mySentence);
 }
 ```
+
+If you were successful, congratulations! If you had trouble, take the time to review the solution and try to understand how it works.
