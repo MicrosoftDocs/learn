@@ -16,7 +16,7 @@ Just like other Fabric experiences, the first thing you do with Data Activator i
 
 Let's go ahead and create a Reflex item in your Fabric workspace. From the New menu in the workspace, choose the ***Reflex*** item.
 
-[ ![Screenshot of selecting Reflexes in Data Activator.](../media/get-reflex-data.png) ] (../media/get-reflex-data-large.png)
+[![Screenshot of selecting Reflexes in Data Activator.](../media/get-reflex-data.png)](../media/get-reflex-data-large.png)
 
 ## Navigate between data mode and design mode
 
