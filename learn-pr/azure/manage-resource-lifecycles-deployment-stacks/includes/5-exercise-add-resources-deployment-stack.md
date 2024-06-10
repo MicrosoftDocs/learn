@@ -131,7 +131,7 @@ Next, we need to create our deployment stack scoped to our recently created reso
 
 1. Add the highlighted code to the variables section of your file:
 
-    :::code language="bicep" source="code/1-template.bicep" range="1-77" highlight="22-23,28-29":::
+    :::code language="bicep" source="code/1-template.bicep" range="21-29" highlight="22-23,28-29":::
 
 1. Add the following code to the bottom of the file:
 
@@ -139,7 +139,7 @@ Next, we need to create our deployment stack scoped to our recently created reso
 
 1. Save the changes to the file.
 
-## Update the Bicep file to modify the app service plan
+## Update the Bicep file to modify the app service plan and app service
 
 1. Open the _main.bicep_ file in Visual Studio Code.
 
@@ -285,6 +285,6 @@ With the update complete, we want to validate that the app service plan's sku is
 
 1. Take notice of the resources section of the output. We now see the log analytics workspace and the application insights instance listed as managed resources. The result should appear similar to the following output:
 
-    :::code language="json" source="code/3-powershell.ps1" range="11-16" highlight="15-16":::
+    :::code language="powershell" source="code/3-powershell.ps1" range="11-16" highlight="15-16":::
 
 ::: zone-end
