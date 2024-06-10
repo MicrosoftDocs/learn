@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
+  ms.custom: devx-track-azurecli
 durationInMinutes: 4
 content: |
   [!include[](includes/3-work-azure-cli.md)]
