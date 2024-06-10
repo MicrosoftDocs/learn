@@ -34,7 +34,7 @@ text editor.
 The following screenshot is an example of VS Code with a sample script to connect to Azure and
 create a virtual machine:
 
->![Screenshot of VS Code with a PowerShell script to create a virtual machine in Azure](../media/7-vscode-powershell-extension-screenshot.png)
+![Screenshot of VS Code with a PowerShell script to create a virtual machine in Azure.](../media/7-vs-code-powershell-extension-screenshot.png)
 
 Once you create a script, you can execute it from the PowerShell command line by passing the name of
 the file preceded by a dot for the current directory and a backslash:
