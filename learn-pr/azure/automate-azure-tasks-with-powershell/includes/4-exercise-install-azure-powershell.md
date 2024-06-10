@@ -27,11 +27,8 @@ determine which version of PowerShell is installed:
      PowerShell scripts.
    - **Windows PowerShell ISE (x86)**: 32-bit ISE, included on 64-bit versions of Windows.
 
-1. **Open PowerShell version 7**:
-
-   If PowerShell version 7
-   isn't installed, open Windows PowerShell and use **Windows Package Manager (Winget)** to install
-   the latest stable version of PowerShell 7:
+   If PowerShell version 7 isn't installed, open **Windows PowerShell** and use
+   **Windows Package Manager (Winget)** to install the latest stable version of PowerShell 7:
 
    ```powershell
    winget install --id Microsoft.Powershell --source winget
@@ -273,3 +270,6 @@ uses the same commands.
    You should see the **Az** PowerShell module installing.
 
 :::zone-end
+
+This process enables you to use the full range of Azure-specific cmdlets available in the **Az**
+PowerShell module.

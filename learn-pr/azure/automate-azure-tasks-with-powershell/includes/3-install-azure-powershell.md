@@ -51,28 +51,19 @@ Microsoft repository, which you must add to your package manager.
 To install PowerShell on supported versions of Ubuntu Linux, use the Advanced Packaging Tool (apt)
 and the Bash command line:
 
-```bash
-sudo apt-get install -y powershell
-```
-
 ### macOS
 
 On macOS, use `Homebrew` to install PowerShell.
-
-```powershell
-brew install powershell/tap/powershell
-```
 
 ## The Az PowerShell module
 
 Azure PowerShell is the product name for the official Microsoft PowerShell module containing
 commands for managing Azure resources.
 
-The current iteration of the Azure PowerShell module for managing Azure resources is named **Az**.
-It's the recommended PowerShell module for interacting with, managing, and automating Azure
-resources with PowerShell. It includes thousands of commands to control almost every aspect of
-Azure, such as resource groups, storage, virtual machines, containers, and machine learning. The
-**Az** PowerShell module is open-source and cross-platform.
+The current version of the Azure PowerShell module for managing Azure resources is named **Az**.
+It's the recommended PowerShell module for managing Azure resources with PowerShell. It includes
+thousands of commands that control almost every aspect of Azure. The **Az** PowerShell module is
+cross-platform.
 
 You might find examples on the internet that use the **AzureRM** PowerShell module, which is the
 previous generation of Azure PowerShell. It's deprecated, no longer maintained or supported, and not
@@ -81,14 +72,3 @@ recommended. Commands in the **AzureRM** PowerShell module use the `*-AzureRM*` 
 You might also encounter an Azure PowerShell module named **Azure**, which is for managing legacy
 Azure resources that use Azure Service Manager (ASM) APIs. The **Azure** PowerShell module isn't
 recommended when creating new resources since ASM is scheduled to retire soon.
-
-### How to install the Az PowerShell module
-
-Install the **Az** PowerShell module from the PowerShell Gallery.
-
-```powershell
-Install-Module -Name Az -Scope CurrentUser -Repository PSGallery
-```
-
-This process enables you to use the full range of Azure-specific cmdlets available in the **Az**
-PowerShell module.

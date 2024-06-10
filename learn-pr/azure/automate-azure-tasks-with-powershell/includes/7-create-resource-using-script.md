@@ -77,10 +77,6 @@ PowerShell has several loop structures, including `For`, `Foreach`, `Do-Until`, 
 `While`. The `Foreach` loop is a good choice for scenarios where you need to execute a loop over a
 set of values in a collection.
 
-The following example uses the PowerShell range operator to store an array of sequential integers in
-the variable `$items`. A `Foreach` loop is used to iterate through each element in the `$items`
-collection and return the value of `$item`.
-
 ```powershell
 $items = 1..3
 foreach ($item in $items) {
