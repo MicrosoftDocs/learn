@@ -45,7 +45,7 @@ For example, Azure PowerShell offers the `New-AzVM` cmdlet to create a virtual m
 subscription. To use it, launch PowerShell and execute the following command:
 
 ```azurepowershell
-$azVmParams           = @{
+$azVmParams = @{
     ResourceGroupName = 'CrmTestingResourceGroup'
     Name              = 'CrmUnitTestVm'
     Image             = 'Ubuntu2204'

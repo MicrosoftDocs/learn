@@ -75,7 +75,7 @@ machines.
 1. Create a VM using the `$vmName` variable:
 
    ```azurepowershell
-   $azVmParams           = @{
+   $azVmParams = @{
        ResourceGroupName = $ResourceGroupName
        Name              = $vmName
        Credential        = $adminCredential
@@ -108,7 +108,7 @@ foreach ($vm in $vms) {
     $vmName = "ConferenceDemo-$vm"
     Write-Output "Creating VM: $vmName"
 
-    $azVmParams           = @{
+    $azVmParams = @{
         ResourceGroupName = $ResourceGroupName
         Name              = $vmName
         Credential        = $adminCredential

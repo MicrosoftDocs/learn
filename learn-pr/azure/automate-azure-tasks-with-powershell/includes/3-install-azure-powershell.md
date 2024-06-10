@@ -17,9 +17,8 @@ first, let's look at the two key components required for Azure PowerShell:
 - **The Az PowerShell module**: This module must be installed to add the Azure-specific commands to
   PowerShell.
 
-> [!TIP]
-> The latest stable version of PowerShell 7 is recommended for use with the Az PowerShell module on
-> all platforms.
+> [!TIP] The latest stable version of PowerShell 7 is recommended for use with the **Az** PowerShell
+> module on all platforms.
 
 After installing the appropriate version of PowerShell, you can then install the **Az** PowerShell
 module to start managing Azure resources.

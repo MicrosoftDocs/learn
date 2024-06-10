@@ -28,7 +28,7 @@ Here's how to create a new Azure VM with Azure PowerShell:
    - Create a public IP address name for SSH sign-in.
 
    ```azurepowershell
-   $azVmParams             = @{
+   $azVmParams = @{
        ResourceGroupName   = '<rgn>[sandbox resource group name]</rgn>'
        Name                = 'testvm-eus-01'
        Credential          = (Get-Credential)
@@ -90,9 +90,9 @@ Here's how to create a new Azure VM with Azure PowerShell:
 
 1. Inspect VM properties:
 
-   You can inspect complex objects through a dot (`.`) notation. For example, to see the properties
-   in the `VMSize` object associated with the **HardwareProfile** section, run the following
-   command:
+   You can inspect complex objects through the member-access operator (`.`). For example, to see the
+   properties in the `VMSize` object associated with the **HardwareProfile** section, run the
+   following command:
 
    ```azurepowershell
    $vm.HardwareProfile

@@ -181,12 +181,12 @@ For detailed installation instructions, see
 
 ### Install the Az PowerShell module
 
-The Az PowerShell module is available from a global repository called the PowerShell Gallery. You
-can install the module on your local machine using the `Install-Module` cmdlet.
+The **Az** PowerShell module is available from a global repository called the PowerShell Gallery.
+You can install the module on your local machine using the `Install-Module` cmdlet.
 
 ::: zone pivot="windows"
 
-To install the latest version of the Az PowerShell module, follow these steps:
+To install the latest version of the **Az** PowerShell module, follow these steps:
 
 1. **Open PowerShell version 7**
 
@@ -230,14 +230,14 @@ To install the latest version of the Az PowerShell module, follow these steps:
 
      Enter <kbd>Y</kbd> or <kbd>A</kbd>, then press <kbd>Enter</kbd>.
 
-   You should now see the Az PowerShell module installing.
+   You should now see the **Az** PowerShell module installing.
 
 :::zone-end
 
 ::: zone pivot="linux,macos"
 
-The process for installing the Az PowerShell module on Linux and macOS is straightforward and uses
-the same commands.
+The process for installing the **Az** PowerShell module on Linux and macOS is straightforward and
+uses the same commands.
 
 1. **Launch PowerShell**:
 
@@ -247,7 +247,7 @@ the same commands.
      pwsh
      ```
 
-1. Install the Az PowerShell Module:
+1. Install the **Az** PowerShell Module:
 
    - At the PowerShell prompt, enter the following command:
 
@@ -269,6 +269,6 @@ the same commands.
 
      Enter <kbd>Y</kbd> or <kbd>A</kbd>, then press <kbd>Enter</kbd>.
 
-   You should see the Az PowerShell module installing.
+   You should see the **Az** PowerShell module installing.
 
 :::zone-end

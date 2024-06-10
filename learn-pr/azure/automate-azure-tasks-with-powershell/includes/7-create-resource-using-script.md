@@ -37,7 +37,7 @@ create a virtual machine:
 >![Screenshot of VS Code with a PowerShell script to create a virtual machine in Azure](../media/7-vscode-powershell-extension-screenshot.png)
 
 Once you create a script, you can execute it from the PowerShell command line by passing the name of
-the file preceded by a dot and a backslash:
+the file preceded by a dot for the current directory and a backslash:
 
 ```powershell
 .\myScript.ps1
@@ -136,7 +136,7 @@ $vms = 1..$VmCount
 foreach ($vm in $vms) {
     $vmName = "testvm-$vm"
 
-    $azVmParams             = @{
+    $azVmParams = @{
         ResourceGroupName   = $ResourceGroupName
         Name                = $vmName
         Credential          = $adminCredential

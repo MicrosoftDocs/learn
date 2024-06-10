@@ -138,7 +138,7 @@ typically need to specify only five key items:
 Here's an example:
 
 ```azurepowershell
-$azVmParams           = @{
+$azVmParams = @{
     ResourceGroupName = '<resource-group-name>'
     Name              = '<machine-name>'
     Credential        = '<credentials-object>'
