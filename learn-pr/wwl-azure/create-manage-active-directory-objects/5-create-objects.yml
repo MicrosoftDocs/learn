@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-active-directory-objects.create-objects
+title: Create objects in Active Directory
+metadata:
+  title: Create objects in Active Directory
+  description: "Create objects in Active Directory"
+  ms.date: 06/10/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-create-objects.md)]

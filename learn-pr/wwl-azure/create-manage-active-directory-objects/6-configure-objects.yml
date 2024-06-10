@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-active-directory-objects.configure-objects
+title: Configure objects in Active Directory
+metadata:
+  title: Configure objects in Active Directory
+  description: "Configure objects in Active Directory"
+  ms.date: 06/10/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-configure-objects.md)]
