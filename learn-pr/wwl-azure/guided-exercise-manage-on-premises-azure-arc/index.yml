@@ -3,7 +3,7 @@ uid: learn.wwl.guided-exercise-manage-on-premises-azure-arc
 metadata:
   title: Guided exercise - Manage on-premises Windows servers by using Azure Arc
   description: "In this guided exercise, you practice onboarding, securing, monitoring, and updating on-premises Windows servers by using Azure Arc. The guided exercise combines both learning and hands-on practice."
-  ms.date: 06/07/2024
+  ms.date: 06/10/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
@@ -24,7 +24,7 @@ abstract: |
 
   -   Managing updates of Azure Arc-enabled Windows servers by using Azure Update Manager
 
-  -   Configuring on-premises Windows servers by using Azure VM extensions and azcmagent CLI
+  -   Configuring on-premises Windows servers by using Azure VM extensions and CLI
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg
 levels:

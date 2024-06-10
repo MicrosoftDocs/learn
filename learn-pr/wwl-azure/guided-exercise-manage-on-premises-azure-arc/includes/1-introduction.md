@@ -7,7 +7,7 @@ In this guided exercise, you practice onboarding, securing, monitoring, and upda
  -  Protecting on-premises Windows servers by using Microsoft Defender for Cloud
  -  Monitoring on-premises Windows servers by using Azure Monitor
  -  Updating on-premises Windows servers by using Azure Update Manager
- -  Configuring on-premises Windows servers by using Azure VM extensions and azcmagent CLI
+ -  Configuring on-premises Windows servers by using Azure virtual machine extensions and CLI
 
 By the end of this guided exercise, you gain hands-on experience in creating and configuring these services in Azure.
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/07/2024
+  ms.date: 06/10/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
@@ -25,25 +25,14 @@ quiz:
     - content: "Review the Microsoft Defender for Cloud based protection of Azure Arc enabled Windows servers"
       isCorrect: true
       explanation: "Correct. Reviewing the Microsoft Defender for Cloud based protection ensures it is functioning as expected."
-  - content: "A system administrator is tasked with enhancing the security of Azure Arc enabled Windows servers using Microsoft Defender for Cloud. After configuring Microsoft Defender for Cloud based protection, what should the administrator do next to ensure the protection is functioning as expected?"
+  - content: "A developer is tasked with creating and tearing down environments for application hosting platforms. Which process would best enable the automation and validation of this task?"
     choices:
-    - content: "Disable and re-enable Microsoft Defender for Cloud"
+    - content: "Using a pre-existing environment without any modifications"
       isCorrect: false
-      explanation: "Incorrect. Disabling and re-enabling Microsoft Defender for Cloud is not required to verify its functionality."
-    - content: "Initiate a system reboot on all Azure Arc enabled Windows servers"
+      explanation: "Incorrect. This does not allow for the creation and teardown of environments, nor does it provide validation."
+    - content: "Manual scripting of each environment setup and teardown"
       isCorrect: false
-      explanation: "Incorrect. A system reboot is not necessary after configuring Microsoft Defender for Cloud based protection."
-    - content: "Review the Microsoft Defender for Cloud based protection of Azure Arc enabled Windows servers"
+      explanation: "Incorrect. While scripting can automate tasks, it does not inherently provide validation of the process."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
-      explanation: "Correct. Reviewing the Microsoft Defender for Cloud based protection ensures it is functioning as expected."
-  - content: "A system administrator is tasked with enhancing the security of Azure Arc enabled Windows servers using Microsoft Defender for Cloud. After configuring Microsoft Defender for Cloud based protection, what should the administrator do next to ensure the protection is functioning as expected?"
-    choices:
-    - content: "Initiate a system reboot on all Azure Arc enabled Windows servers"
-      isCorrect: false
-      explanation: "Incorrect. A system reboot is not necessary after configuring Microsoft Defender for Cloud based protection."
-    - content: "Disable and re-enable Microsoft Defender for Cloud"
-      isCorrect: false
-      explanation: "Incorrect. Disabling and re-enabling Microsoft Defender for Cloud is not required to verify its functionality."
-    - content: "Review the Microsoft Defender for Cloud based protection of Azure Arc enabled Windows servers"
-      isCorrect: true
-      explanation: "Correct. Reviewing the Microsoft Defender for Cloud based protection ensures it is functioning as expected."
+      explanation: "Correct. Automating and validating the creation and teardown of environments ensures stability and security."

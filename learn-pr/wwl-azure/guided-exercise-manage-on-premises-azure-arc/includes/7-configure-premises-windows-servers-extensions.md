@@ -5,12 +5,12 @@ This guided project consists of the six exercises.
  -  Exercise 3: Enhance security of Azure Arc-enabled Windows servers by using Microsoft Defender for Cloud.
  -  Exercise 4: Monitor Azure Arc-enabled Windows servers by using Azure Monitor.
  -  Exercise 5: Manage updates of Azure Arc-enabled Windows servers by using Azure Update Manager.
- -  **Exercise 6: Configure on-premises Windows servers by using Azure VM extensions and azcmagent CLI.**
+ -  **Exercise 6: Configure on-premises Windows servers by using Azure virtual machine extensions and CLI.**
 
-In Exercise 5, you manage updates of Azure Arc-enabled Windows servers by using Azure Update Manager.
+In Exercise 6, you configure on-premises Windows servers by using Azure virtual machine extensions and Azure CLI.
 
  -  **Task 1: Configure Azure Arc-enabled Windows servers by using an Azure VM extension**.
- -  **Task 2: Configure Azure Arc-enabled Windows servers by using azcmagent CL**.
+ -  **Task 2: Configure Azure Arc-enabled Windows servers by using CLI**.
  -  **Task 3: Remove the lab environment.**
 
 > [!NOTE]
