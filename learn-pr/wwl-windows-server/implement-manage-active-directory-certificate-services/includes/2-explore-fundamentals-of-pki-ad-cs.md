@@ -3,7 +3,7 @@ To obtain certificates for your AD DS infrastructure, you can request them from 
 
 ## What is PKI?
 
-PKI is the combination of software, encryption technologies, processes, and services that enables an organization to secure its data, communications, and business transactions. PKI relies on the exchange of digital certificates between authenticated users and trusted resources. You use certificates to secure data and to manage identification credentials from users and computers both within and outside of your organization.
+PKI is the combination of software, encryption technologies, processes, and services that enable an organization to secure its data, communications, and business transactions. PKI relies on the exchange of digital certificates between authenticated users and trusted resources. You use certificates to secure data and to manage identification credentials from users and computers both within and outside of your organization.
 
 ## What is AD CS?
 
