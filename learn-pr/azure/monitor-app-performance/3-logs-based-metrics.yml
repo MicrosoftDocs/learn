@@ -4,10 +4,12 @@ title: Discover log-based metrics
 metadata:
   title: Discover log-based metrics
   description: "Discover log-based metrics"
-  ms.date: 04/24/2023
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/3-logs-based-metrics.md)]
