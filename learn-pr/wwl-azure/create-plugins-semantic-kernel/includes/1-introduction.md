@@ -15,4 +15,4 @@ In this module, you learn how to create your own plugins with the Semantic Kerne
 - Experience programming in C#.
 - Visual Studio Code IDE installed.
 - Familiarity with Azure and the Azure portal.
-- Access to Azure Open AI Services.
+- Access to Azure OpenAI Services.
