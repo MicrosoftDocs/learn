@@ -1,6 +1,6 @@
 In the  **Configuration > General settings** section you can configure some common settings for your app. Some settings require you to scale up to higher pricing tiers.
 
-:::image type="content" source="../media/configure-general-settings.png" alt-text="Navigating to Configure > General settings":::
+:::image type="content" source="../media/configure-general-settings.png" alt-text="Screenshot of navigating to Configure > General settings.":::
 
 A list of the currently available settings:
 
