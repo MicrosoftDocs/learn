@@ -6,7 +6,7 @@ To connect your on-premises machines by using the Azure portal, do this procedur
 4.  Select the **Get started** tab.
 5.  Find **Add non-Azure servers** and select **Configure**.
     
-    :::image type="content" source="../media/onboard-get-started-tab-new-fd416374.png" alt-text="Screenshot displays the Defender for Cloud resources for getting started." lightbox="media/onboard-get-started-tab-new-fd416374.png":::
+    :::image type="content" source="../media/onboard-get-started-tab-new-fd416374.png" alt-text="Screenshot displays the Defender for Cloud resources for getting started." lightbox="../media/onboard-get-started-tab-new-fd416374.png":::
     
     
     After you connect Defender for Cloud to your Azure subscription, you can start connecting your on-premises machines from the **Getting started** page in Defender for Cloud.
