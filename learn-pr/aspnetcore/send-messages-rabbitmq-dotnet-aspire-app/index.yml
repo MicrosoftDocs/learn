@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.send-messages-rabbitmq-dotnet-aspire-app
 metadata:
-  title: Send messages with RabbitMQ in a .NET Aspire app
+  title: Send messages with RabbitMQ in a .NET Aspire project
   description: In this module, you'll learn about the RabbitMQ message broker and how you can use it to decouple microservices while ensuring that they can communicate reliably. You'll also see how .NET Aspire makes it easy to integrate with RabbitMQ.
   author: camsoper
   ms.author: casoper
@@ -9,8 +9,8 @@ metadata:
   ms.service: dotnet-aspire
   ms.custom:
   - team=cloud_advocates
-title: Send messages with RabbitMQ in a .NET Aspire app
-summary: Learn how to use message queues on RabbitMQ exchange servers to decouple microservices and manage communications in a cloud-native .NET Aspire application. 
+title: Send messages with RabbitMQ in a .NET Aspire project
+summary: Learn how to use message queues on RabbitMQ exchange servers to decouple microservices and manage communications in a cloud-native application built with .NET Aspire. 
 abstract: |
   By the end of this module, you'll be able to:
 
