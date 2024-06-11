@@ -3,8 +3,8 @@ uid: learn.windows.windows-best-app-framework.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check your knowledge to see if you understand when to use each Windows application framework (WPF, Windows Forms, and WinUI 3 with Windows App SDK).
-  ms.date: 01/17/2024
+  description: Check your knowledge to see if you understand when to use each Windows application framework (WPF, Windows Forms, and WinUI with Windows App SDK).
+  ms.date: 06/11/2024
   author: alvinashcraft
   ms.author: aashcraft
   ms.topic: unit
@@ -16,7 +16,7 @@ quiz:
     choices:
     - content: WinUI and Windows App SDK
       isCorrect: false
-      explanation: Incorrect. WinUI is a great choice if the current feature set meets your requirements, but it may not provide the high degree of UI customization required for this project.
+      explanation: Incorrect. WinUI is a great choice if the current feature set meets your requirements, but it may not have the third-party control and library support necessary to provide the high degree of customization required for this project.
     - content: Windows Forms
       isCorrect: false
       explanation: Incorrect. While Windows Forms is a good choice for building desktop applications that require rapid development and rich functionality, it isn't as customizable as WPF.
@@ -38,10 +38,10 @@ quiz:
     choices:
     - content: WPF
       isCorrect: false
-      explanation: Incorrect. WPF doesn't implement the Fluent design system by default.
+      explanation: Incorrect. WPF doesn't currently implement the Fluent design system by default. It's Windows 11 theming support is currently in preview in .NET 9 preview.
     - content: WinUI and Windows App SDK
       isCorrect: true
-      explanation: Correct. WinUI 3 implements the latest Fluent design system and can be easily deployed via the Microsoft Store.
+      explanation: Correct. WinUI implements the latest Fluent design system and can be easily deployed via the Microsoft Store.
     - content: Windows Forms
       isCorrect: false
       explanation: Incorrect. Windows Forms doesn't implement the Fluent design system.
