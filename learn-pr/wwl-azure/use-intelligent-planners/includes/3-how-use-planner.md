@@ -1,4 +1,4 @@
-Planners are an excellent tool to help you automatically run your functions and prompts. To use the Handlebars planner, first you need to install the add-on package:
+Planners are an excellent tool to help you automatically run your functions and prompts. Currently, the Semantic Kernel planners are available for preview. To use the Handlebars planner, first you need to install the add-on package:
 
 `dotnet add package Microsoft.SemanticKernel.Planners.Handlebars --version 1.2.0-preview`
 
