@@ -1,108 +1,275 @@
-In this unit, you'll learn how to check the version of **PowerShell** installed on your local machine and install the latest version.
+<!-- markdownlint-disable MD041 -->
+
+In this unit, you learn how to determine the version of **PowerShell** installed on your local
+machine and how to install the latest version. You also learn how to install the **Az** PowerShell
+module.
 
 > [!NOTE]
-> This exercise guides you through creating a local installation of PowerShell tools. The remainder of this module uses the Azure Cloud Shell, so you can leverage the free subscription support in Microsoft Learn. If you prefer, consider this exercise as an optional activity and just review the instructions.
+> This exercise guides you through creating a local installation of the **Az** PowerShell module.
+> However, the remainder of this module uses Azure Cloud Shell to leverage the free Microsoft Learn
+> sandbox environment. If you prefer, you can consider this exercise optional and simply review the
+> instructions.
+
+::: zone pivot="windows"
+
+## Install PowerShell on Windows
+
+Windows PowerShell is included with the Windows operating system. However, we recommend installing
+the latest stable version of PowerShell 7 for use with Azure PowerShell. Follow these steps to
+determine which version of PowerShell is installed:
+
+1. In the **System Tray Search Box**, type <kbd>PowerShell</kbd>. You might see multiple shortcuts:
+   - **PowerShell 7 (x64)**: 64-bit version of PowerShell 7 (recommended).
+   - **Windows PowerShell**: 64-bit version of Windows PowerShell, included with Windows.
+   - **Windows PowerShell (x86)**: 32-bit version of Windows PowerShell, included on 64-bit versions
+     of Windows.
+   - **Windows PowerShell ISE**: 64-bit Integrated Scripting Environment (ISE) for writing Windows
+     PowerShell scripts.
+   - **Windows PowerShell ISE (x86)**: 32-bit ISE, included on 64-bit versions of Windows.
+
+   If PowerShell version 7 isn't installed, open **Windows PowerShell** and use
+   **Windows Package Manager (Winget)** to install the latest stable version of PowerShell 7:
+
+   ```powershell
+   winget install --id Microsoft.Powershell --source winget
+   ```
+
+   For detailed installation instructions, see
+   [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
+
+1. **Determine the PowerShell version**:
+
+   To open PowerShell version 7, select the **PowerShell 7 (x64)** shortcut. Run the following
+   command to check the version of PowerShell:
+
+   ```powershell
+   $PSVersionTable.PSVersion
+   ```
+
+1. **Set the PowerShell execution policy**:
+
+   - Check the current execution policy:
+
+     ```powershell
+     Get-ExecutionPolicy -List
+     ```
+
+   - If the execution policy is set to `Restricted`, change it to `RemoteSigned` or less
+     restrictive:
+
+     ```powershell
+     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+     ```
+
+   - **Confirm the execution policy change**:
+
+     You're prompted to confirm the change:
+
+     ```Output
+     The execution policy helps protect you from scripts that you do not trust. Changing the
+     execution policy might expose you to the security risks described in the
+     about_Execution_Policies help topic at https:/go.microsoft.com/fwlink/?LinkID=135170. Do you
+     want to change the execution policy? [Y] Yes [A] Yes to All [N] No [L] No to All [S] Suspend
+     [?] Help (default is "N"): Y
+     ```
+
+     Enter <kbd>Y</kbd> or <kbd>A</kbd>, then press <kbd>Enter</kbd>.
+
+::: zone-end
 
 ::: zone pivot="linux"
 
-## Linux
+## Install PowerShell on Linux
 
-Installing PowerShell for Linux involves using a package manager. We'll use **Ubuntu 18.04** for our example, but we have [detailed instructions for other versions and distributions in our documentation](/powershell/scripting/install/installing-powershell-core-on-linux).
+Installing PowerShell on Linux involves using a package manager. The following instructions are for
+supported versions of Ubuntu. For other distributions, see
+[Install PowerShell on Linux](/powershell/scripting/install/installing-powershell-on-linux).
 
-Install PowerShell on Ubuntu Linux using the Advanced Packaging Tool (**apt**) and the Bash command line.
+Install PowerShell on Ubuntu Linux using the Advanced Packaging Tool (**apt**) and the Bash command
+line:
 
-1. Import the encryption key for the Microsoft Ubuntu repository. This key enables the package manager to verify that the PowerShell package you install comes from Microsoft.
+1. Update the list of packages
 
-    ```bash
-    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
-    ```
+   ```bash
+   sudo apt-get update
+   ```
 
-1. Register the **Microsoft Ubuntu repository** so the package manager can locate the PowerShell package:
+1. Install prerequisite packages
 
-    ```bash
-    sudo curl -o /etc/apt/sources.list.d/microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
-    ```
+   ```bash
+   sudo apt-get install -y wget apt-transport-https software-properties-common
+   ```
 
-1. Update the list of packages:
+1. Determine your version of Ubuntu
 
-    ```bash
-    sudo apt-get update
-    ```
+   ```bash
+   source /etc/os-release
+   ```
 
-1. Install PowerShell:
+1. Download the Microsoft repository keys
 
-    ```bash
-    sudo apt-get install -y powershell
-    ```
+   ```bash
+   wget -q https://packages.microsoft.com/config/ubuntu/$VERSION_ID/packages-microsoft-prod.deb
+   ```
 
-1. Start PowerShell to verify that it installed successfully:
+1. Register the Microsoft repository keys
 
-    ```bash
-    pwsh
-    ```
+   ```bash
+   sudo dpkg -i packages-microsoft-prod.deb
+   ```
+
+1. Delete the Microsoft repository keys file
+
+   ```bash
+   rm packages-microsoft-prod.deb
+   ```
+
+1. Update the list of packages after adding the Microsoft repository
+
+   ```bash
+   sudo apt-get update
+   ```
+
+1. Install PowerShell
+
+   ```bash
+   sudo apt-get install -y powershell
+   ```
+
+1. Start PowerShell
+
+   ```bash
+   pwsh
+   ```
 
 ::: zone-end
 
 ::: zone pivot="macos"
 
-## macOS
+## Install PowerShell on macOS
 
-On macOS, install **PowerShell** by using the Homebrew package manager.
+To install PowerShell on macOS, use the Homebrew package manager.
 
 > [!IMPORTANT]
-> If the **brew** command is unavailable, you might need to install the Homebrew package manager. For details, go to the [Homebrew website](https://brew.sh/).
+> If the `brew` command isn't found, you must install Homebrew. For details, see the
+> [Homebrew website](https://brew.sh/).
 
-1. Install Homebrew-Cask to obtain more packages, including the PowerShell package:
+Install Homebrew by running the following command:
 
-    ```bash
-    brew install --cask powershell
-    ```
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+1. Once Homebrew is installed, install the latest stable release of PowerShell 7:
+
+   ```bash
+   brew install powershell/tap/powershell
+   ```
 
 1. Start PowerShell to verify that it installed successfully:
 
-    ```bash
-    pwsh
-    ```
+   ```bash
+   pwsh
+   ```
+
+For detailed installation instructions, see
+[Installing PowerShell on macOS](/powershell/scripting/install/installing-powershell-on-macos).
 
 ::: zone-end
+
+### Install the Az PowerShell module
+
+The **Az** PowerShell module is available from a global repository called the PowerShell Gallery.
+You can install the module on your local machine using the `Install-Module` cmdlet.
 
 ::: zone pivot="windows"
 
-## Windows
+To install the latest version of the **Az** PowerShell module, follow these steps:
 
-Windows PowerShell is included with the Windows operating system; however, we recommend installing PowerShell 7.0.6 LTS, PowerShell 7.1.3, or higher for use with Azure Az PowerShell module PowerShell. You can check which version is installed using the following steps:
+1. **Open PowerShell version 7**
 
-1. In the **System tray search box**, type **PowerShell**. You may have multiple shortcut links:
-    - PowerShell 7 (x64) - The 64-bit version. Generally, you should choose this shortcut.
-    - Windows PowerShell - The 64-bit version included with Windows.
-    - Windows PowerShell (x86) - A 32-bit version installed on 64-bit Windows.
-    - Windows PowerShell ISE - The Integrated Scripting Environment (ISE) is used for writing scripts in Windows PowerShell.
-    - Windows PowerShell ISE (x86) - A 32-bit version of the ISE on Windows.
+1. Install the **Az** PowerShell Module:
 
-1. Select the best-match PowerShell icon.
+   ```powershell
+   Install-Module -Name Az -Scope CurrentUser -Repository PSGallery
+   ```
 
-1. Type the following command to determine the version of PowerShell installed.
+   This command installs the **Az** PowerShell module for your current user, which is controlled by
+   the **Scope** parameter.
 
-    ```powershell
-    $PSVersionTable.PSVersion
-    ```
+   - **NuGet installation prompt**:
 
-    *or*
+     The installation relies on `NuGet` to retrieve components. You might be prompted to download
+     and install the latest version of `NuGet`:
 
-    ```powershell
-    pwsh -ver
-    ```
+     ```Output
+     NuGet provider is required to continue PowerShellGet requires NuGet provider version
+     '2.8.5.201' or newer to interact with NuGet-based repositories. The NuGet provider must be
+     available in 'C:\Program Files\PackageManagement\ProviderAssemblies' or
+     'C:\Users\<username>\AppData\Local\PackageManagement\ProviderAssemblies'. You can also install
+     the NuGet provider by running 'Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201
+     -Force'. Do you want PowerShellGet to install and import the NuGet provider now? [Y] Yes [N] No
+     [S] Suspend [?] Help (default is "Y"):
+     ```
 
-    If the major version number is lower than 7, follow the instructions to [upgrade existing Windows PowerShell](/powershell/scripting/install/installing-powershell-on-windows#upgrading-an-existing-installation). It's important to install the SDK to support .NET tools, as well.
+     Enter <kbd>Y</kbd> and press <kbd>Enter</kbd>.
 
-    You need the [.NET SDK installed](/dotnet/core/sdk) to run this command.
+   - **Untrusted repository prompt**:
 
-    ```powershell
-    dotnet tool install --global PowerShell
-    ```
+     By default, the PowerShell Gallery isn't configured as a trusted repository. You're prompted to
+     confirm that you want to install the module from an untrusted repository:
 
-    After the .NET tool is installed, run the PowerShell version command again to verify your installation.
+     ```Output
+     You are installing the modules from an untrusted repository. If you trust this repository,
+     change its InstallationPolicy value by running the Set-PSRepository cmdlet. Are you sure you
+     want to install the modules from 'PSGallery'? [Y] Yes [A] Yes to All [N] No [L] No to All [S]
+     Suspend [?] Help (default is "N"):
+     ```
 
-::: zone-end
+     Enter <kbd>Y</kbd> or <kbd>A</kbd>, then press <kbd>Enter</kbd>.
 
-You'll also need to set up your local machine(s) to support PowerShell. In the next unit, we'll review commands you can add, including the Azure Az PowerShell module.
+   You should now see the **Az** PowerShell module installing.
+
+:::zone-end
+
+::: zone pivot="linux,macos"
+
+The process for installing the **Az** PowerShell module on Linux and macOS is straightforward and
+uses the same commands.
+
+1. **Launch PowerShell**:
+
+   - Open a terminal and run the following command:
+
+     ```bash
+     pwsh
+     ```
+
+1. Install the **Az** PowerShell Module:
+
+   - At the PowerShell prompt, enter the following command:
+
+     ```powershell
+     Install-Module -Name Az -Scope CurrentUser -Repository PSGallery
+     ```
+
+   - **Untrusted repository prompt**:
+
+     By default, the PowerShell Gallery isn't configured as a trusted repository. You're prompted to
+     confirm that you want to install the module from an untrusted repository:
+
+     ```Output
+     You are installing the modules from an untrusted repository. If you trust this repository,
+     change its InstallationPolicy value by running the Set-PSRepository cmdlet. Are you sure you
+     want to install the modules from 'PSGallery'? [Y] Yes [A] Yes to All [N] No [L] No to All [S]
+     Suspend [?] Help (default is "N"):
+     ```
+
+     Enter <kbd>Y</kbd> or <kbd>A</kbd>, then press <kbd>Enter</kbd>.
+
+   You should see the **Az** PowerShell module installing.
+
+:::zone-end
+
+This process enables you to use the full range of Azure-specific cmdlets available in the **Az**
+PowerShell module.

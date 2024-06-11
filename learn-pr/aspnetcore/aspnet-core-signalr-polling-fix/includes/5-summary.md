@@ -1,4 +1,4 @@
-In this module, you learned about refactoring out client-side polling and replacing it with ASP.NET Core SignalR. You learned what NuGet packages are required and how a strongly typed hub is created, mapped, and configured on the server. You also learned how to establish a connection to the hub from the client application, where events are subscribed to and methods are called.
+In this module, you learned about refactoring out client-side polling and replacing it with ASP.NET Core SignalR. You learned what NuGet packages are required and how a "strongly typed" hub is created, mapped, and configured on the server. You also learned how to establish a connection to the hub from the client application, where events are subscribed to and methods are called.
 
 ## References
 

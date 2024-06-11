@@ -5,8 +5,8 @@ metadata:
   title: Extend and customize data protection with extra Azure services
   description: Overview of a wide range of Azure services that help government agencies ensure in-depth security on the cloud, such as Microsoft Defender for Cloud, Azure Monitor, Azure Policy, Azure Firewall, Azure Watcher, Azure DDoS Protection, Microsoft Sentinel, Azure Advisor, and Azure Blueprints.
   ms.date: 07/25/2023
-  author: TerryLanfear
-  ms.author: terrylan
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
 durationInMinutes: 7
 content: |
