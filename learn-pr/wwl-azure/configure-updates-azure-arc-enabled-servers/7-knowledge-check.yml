@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-updates-azure-arc-enabled-servers.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/11/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A system administrator needs to apply updates to all Azure machines and Azure Arc enabled servers for both Windows and Linux. What feature of Update Manager would allow them to do this?"
+    choices:
+    - content: "Azure Policy support"
+      isCorrect: false
+      explanation: "Incorrect. While Azure Policy support is a feature of Update Manager, it does not directly enable the application of updates to all Azure machines and Azure Arc enabled servers."
+    - content: "Granular access control at the per resource level"
+      isCorrect: false
+      explanation: "Incorrect. Granular access control at the per resource level is a feature of Update Manager, but it does not directly facilitate the application of updates to all Azure machines and Azure Arc enabled servers."
+    - content: "Ability to take immediate action either by installing updates immediately or scheduling them for a later date"
+      isCorrect: true
+      explanation: "Correct. This feature of Update Manager allows a system administrator to apply updates to all Azure machines and Azure Arc enabled servers for both Windows and Linux."
+  - content: "A system administrator needs to create a maintenance configuration schedule for a resource. They have the necessary parameters and are using the PUT request on the specified path. What is the correct format for the 'properties.maintenanceWindow.duration' in the request body?"
+    choices:
+    - content: "In seconds"
+      isCorrect: false
+      explanation: "Incorrect. The duration of the maintenance window is not provided in seconds."
+    - content: "In minutes"
+      isCorrect: false
+      explanation: "Incorrect. The duration of the maintenance window is not provided in minutes."
+    - content: "In HH:mm format"
+      isCorrect: true
+      explanation: "Correct. The duration of the maintenance window should be provided in HH:mm format."
+  - content: "A system administrator needs to ensure update compliance across all machines, deploy critical updates instantly, and use flexible patching options. Which Azure service should they use?"
+    choices:
+    - content: "Azure Security Center"
+      isCorrect: false
+      explanation: "Incorrect. While Azure Security Center provides unified security management and advanced threat protection, it does not directly manage updates."
+    - content: "Azure Automation"
+      isCorrect: false
+      explanation: "Incorrect. Azure Automation allows for the creation, deployment, monitoring, and maintenance of resources in an Azure environment, but it does not specifically manage updates."
+    - content: "Update Manager in Azure"
+      isCorrect: true
+      explanation: "Correct. Update Manager in Azure oversees update compliance, deploys critical updates, and offers flexible patching options."

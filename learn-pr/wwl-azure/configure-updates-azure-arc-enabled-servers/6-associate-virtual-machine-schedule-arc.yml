@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-updates-azure-arc-enabled-servers.associate-virtual-machine-schedule-arc
+title: Associate a virtual machine with a schedule
+metadata:
+  title: Associate a virtual machine with a schedule
+  description: "Associate a virtual machine with a schedule"
+  ms.date: 06/11/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-associate-virtual-machine-schedule-arc.md)]
