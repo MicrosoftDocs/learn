@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.use-databases-dotnet-aspire-app.exercise-use-databases-persist-data-from-aspire-app
+
+title: Exercise - Use database services to persist data from a .NET Aspire project
+metadata:
+  title: Exercise - Use database services to persist data from a .NET Aspire project
+  description: "In this exercise, you see how to add PostgreSQL and MongoDB database components to an existing app built with .NET Aspire."
+  ms.date: 3/20/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/exercise-use-databases-persist-data-from-aspire-app.md)]

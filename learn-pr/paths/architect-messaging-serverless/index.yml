@@ -34,6 +34,6 @@ modules:
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs
 - learn.implement-message-workflows-with-service-bus
 - learn.react-to-state-changes-using-event-grid
-- learn.expose-hybrid-services-with-azure-relay
+#- learn.expose-hybrid-services-with-azure-relay
 trophy:
   uid: learn.architect-messaging-serverless.trophy

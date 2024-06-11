@@ -27,4 +27,4 @@ One of the goals of quantum computing research is to study which problems a quan
 
 Shor's algorithm running on a quantum computer could break classical cryptographic schemes such as the Rivest–Shamir–Adleman (RSA) scheme, which is widely used in e-commerce for secure data transmission. This scheme is based on the practical difficulty of factoring prime numbers by using classical algorithms.
 
-Grover's algorithm speeds up the solution to unstructured data searches, running the search in fewer steps than any classical algorithm could. Indeed, any problem that allows you to check whether a given value is a valid solution (a "yes or no problem") can be formulated in terms of the search problem. 
+Grover's algorithm speeds up the solution to unstructured data searches, running the search in fewer steps than any classical algorithm could. Indeed, any problem that allows you to check whether a given value is a valid solution (a "yes or no" problem) can be formulated in terms of the search problem. 

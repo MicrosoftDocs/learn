@@ -11,7 +11,7 @@ title: Implement a data warehouse with Microsoft Fabric
 prerequisites: |
   You should be familiar with basic data concepts and terminology.
 summary: |
-  Explore the data warehousing process and learn how to load, monitor, and query a warehouse in Microsoft Fabric.
+  Explore the data warehousing process and learn how to load, monitor, secure, and query a warehouse in Microsoft Fabric.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
@@ -29,5 +29,6 @@ modules:
 - learn-wwl.load-data-into-microsoft-fabric-data-warehouse
 - learn-wwl.query-data-warehouse-microsoft-fabric
 - learn.wwl.monitor-fabric-data-warehouse
+- learn-wwl.secure-data-warehouse-in-microsoft-fabric
 trophy:
   uid: learn-wwl.work-with-data-warehouses-using-microsoft-fabric.trophy

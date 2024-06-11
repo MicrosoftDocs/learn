@@ -2,9 +2,9 @@
 uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-incrementally-increase-readiness
 title: Incrementally increase readiness
 metadata:
-  title: exercise
-  description: "CluedIn was designed so that you can decide to improve the data in any order that you want. For example, we could either enrich data first and deduplicate the data afterwards or we could clean the data first and then deduplicate the data and then enrich the data afterwards. This means your data can be continually improved without having to rework the entire system."
-  ms.date: 11/29/2023
+  title: Exercise
+  description: "CluedIn was designed so that you can decide to improve the data in any order that you want. For example, we could enrich data first and deduplicate the data afterwards. Or, we could clean the data first, then deduplicate the data, and then enrich the data afterwards. This flexibility means your data can be continually improved without having to rework the entire system."
+  ms.date: 05/28/2024
   author: whhender
   ms.author: whhender
   ms.topic: unit

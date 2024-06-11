@@ -121,3 +121,7 @@ Once connected, prompt Copilot to look for information in the Azure AI Search in
 - SOC analysts can ask Copilot to provide information that helps investigate phishing incidents across large volumes of suspicious emails or files ingested by the index. Sample prompt: What are the most common email subject headings in my Azure AI Search index that were used in suspected business email compromise (BEC) emails?
 
 The Azure AI Search plugin performs a semantic and keyword search across the index's contents to find the relevant information so it's advisable to be as specific as you can in prompting. For more on the elements of an effective prompt and other prompting tips, read [Describe the elements of an effective prompt](/training/modules/security-copilot-getting-started/5-create-effective-prompts).
+
+Watch this short video for a summary on setting up the Azure AI Search plugin.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3fdc7c2f-5c94-4260-8d56-068092ac9f9a]

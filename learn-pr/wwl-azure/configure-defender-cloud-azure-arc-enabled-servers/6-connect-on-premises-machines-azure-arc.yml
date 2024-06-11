@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.connect-on-premises-machines-azure-arc
+title: Connect on-premises machines by using Azure Arc
+metadata:
+  title: Connect on-premises machines by using Azure Arc
+  description: "Connect on-premises machines by using Azure Arc"
+  ms.date: 06/11/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-connect-on-premises-machines-azure-arc.md)]

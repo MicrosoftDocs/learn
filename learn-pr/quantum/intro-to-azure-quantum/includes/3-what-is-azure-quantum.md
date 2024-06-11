@@ -4,7 +4,7 @@ With Azure Quantum and the Azure Quantum Development Kit (QDK), you're able to p
 
 ## The Azure Quantum Development Kit
 
-Quantum programming is a distinct art from classical programming that requires different tools to understand and express quantum algorithmic thinking. The Azure Quantum Development Kit (QDK) is a **free**, open-source SDK that you can use to write quantum programs.
+Quantum programming is a distinct art from classical programming that requires different tools to understand and express quantum algorithmic thinking. The Azure Quantum Development Kit (QDK) is a **free**, open-source software development kit that you can use to write quantum programs.
 
 The QDK includes Q#, a high-level **quantum programming language**. Q# is designed to address the challenges of quantum information processing. The Q# language is integrated in a software stack that enables a quantum algorithm to be compiled down to the primitive operations of a quantum computer.
 
@@ -14,7 +14,7 @@ The QDK includes Q#, a high-level **quantum programming language**. Q# is design
 With the QDK, you can:
 
 - **Debug your code:** It offers a quantum computing debugger that can step through classical and quantum code. This debugger paired with its sparse in-memory simulator, provides fast simulation of up to thousands of logical qubits.
-- **Write your code faster:** Syntax highlighting and intelligent code completion with IntelliSense and write entire blocks of code assisted with Copilot.
+- **Write your code faster:** Syntax highlighting and intelligent code completion with IntelliSense, and write entire blocks of code assisted with Copilot.
 - **Run your code on quantum hardware:** You can run your quantum programs on real quantum hardware, such as IonQ, PASQAL, Quantinuum, and Rigetti.
 - **Plot the quantum circuit diagram:** Visualize your quantum circuits with the built-in circuit diagram viewer.
 - **Run the Azure Quantum Resource Estimator:** Estimate the resources required to run your quantum program on a quantum computer.
@@ -55,7 +55,7 @@ Azure Quantum Credits consumption is based on a resource-usage model defined by 
 
 Microsoft is committed to making quantum computing accessible to everyone, whether you're a quantum developer, researcher, or enthusiast.
 
-Azure Quantum incorporates **artificial intelligence** to assist you. You can play with the Copilot in Azure Quantum, a quantum-focused chatbot that helps you write code and better understand quantum concepts.
+Azure Quantum incorporates **artificial intelligence** to assist you. You can play with Copilot in Azure Quantum, a quantum-focused chatbot that helps you write code and better understand quantum concepts.
 
 If you want to learn by doing, try the *Quantum Katas*, a series of self-paced tutorials that teach you elements of quantum computing and Q# programming. You can also explore [the Q# quantum samples](https://github.com/microsoft/Quantum/tree/main/samples/azure-quantum).
 
