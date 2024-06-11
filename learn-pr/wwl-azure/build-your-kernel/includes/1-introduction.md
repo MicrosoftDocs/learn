@@ -20,4 +20,4 @@ This module introduces you to the Semantic Kernel SDK. You can learn how the ker
 - Experience programming in C#.
 - Visual Studio Code IDE installed.
 - Familiarity with Azure and the Azure portal.
-- Access to Azure Open AI services.
+- Access to Azure OpenAI services.

@@ -1,4 +1,4 @@
-Using the Semantic Kernel SDK takes minimal setup. To begin creating your own AI agent, you just need the SDK package and an endpoint for the large language model (LLM) service. The SDK uses this endpoint to connect to the LLM and run prompts. The Semantic Kernel SDK supports HuggingFace, OpenAI, and Azure Open AI LLMs. For this example, we use Azure Open AI.
+Using the Semantic Kernel SDK takes minimal setup. To begin creating your own AI agent, you just need the SDK package and an endpoint for the large language model (LLM) service. The SDK uses this endpoint to connect to the LLM and run prompts. The Semantic Kernel SDK supports HuggingFace, OpenAI, and Azure OpenAI LLMs. For this example, we use Azure OpenAI.
 
 The steps to get started using the Semantic Kernel SDK are:
 
@@ -8,7 +8,7 @@ The steps to get started using the Semantic Kernel SDK are:
 
 2. Navigate to the Azure portal.
 
-3. Create a new Azure Open AI resource if you don't already have one.
+3. Create a new Azure OpenAI resource if you don't already have one.
 
 4. Create a deployment for the model you want to use.
 
