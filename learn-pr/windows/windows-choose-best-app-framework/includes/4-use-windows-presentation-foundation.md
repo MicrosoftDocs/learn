@@ -20,7 +20,7 @@ In this section, we analyze the requirements for the healthcare application and 
 
 ### Appearance and style of the application
 
-The customer says it's not important for application to support the latest Fluent design system guidance. However, they would like to match the theme of the application to each hospital's branding. This style must be configurable without redistributing a custom version of the application. Both WPF and WinUI can meet their theming needs. Theming can also be accomplished in Windows Forms, but it's more difficult to implement and may require some third-party libraries. Because Fluent design isn't a requirement, the team isn't limited to selecting WinUI or waiting for WPF's Windows 11 theming support to become available in .NET 9.
+The customer says it's not important for application to support the latest Fluent design system guidance. However, they would like to match the theme of the application to each hospital's branding. This style must be configurable without redistributing a custom version of the application. Both Windows Presentation Foundation (WPF) and WinUI can meet their theming needs. Theming can also be accomplished in Windows Forms, but it's more difficult to implement and may require some third-party libraries. Because Fluent design isn't a requirement, the team isn't limited to selecting WinUI or waiting for WPF's Windows 11 theming support to become available in .NET 9.
 
 ### Device compatibility
 
@@ -32,7 +32,7 @@ Windows Forms applications are more difficult to use on a touch device. They can
 
 ### Skillset of the team's enterprise developers
 
-The development team is familiar with all three frameworks being considered for this project. The team has experience building applications with WPF, Windows Forms, and WinUI and is familiar with the latest versions of .NET and C#. The developers are also familiar with XAML, so they can use the XAML designer or editor in Visual Studio to build the UI for the application.
+The development team is familiar with all three frameworks being considered for this project. The team has experience building applications with WPF, Windows Forms, and WinUI and is familiar with the latest versions of .NET and C#. The developers are also familiar with Extensible Application Markup Language (XAML), so they can use the XAML designer or editor in Visual Studio to build the UI for the application.
 
 ### Application performance and responsiveness
 
@@ -42,10 +42,10 @@ WPF fits this requirement. Applications built with WPF and .NET are performant a
 
 ### Deployment scenarios and options
 
-This application must be deployed via a custom installer. It's deployed to enterprise customers on desktop PCs running Windows 10 and Windows 11. The application should be easy to update with new features and bug fixes.
+This application must be deployed via a custom installer to enterprise customers on desktop PCs running Windows 10 and Windows 11. The application should be easy to update with new features and bug fixes.
 
 WPF and Windows Forms applications can be deployed using Microsoft Store (with MSIX), ClickOnce, Windows Installer, or third-party installer solutions. They can be deployed to all currently supported versions of Windows. WinUI applications can't be deployed to all versions of Windows 10. WinUI is only available on Windows 11 and Windows 10, version 1809 and later. WinUI applications can be deployed using Microsoft Store (with MSIX), ClickOnce, or third-party installer solutions.
 
 ## Choosing the framework
 
-For this project, WPF is a great choice. WPF fits the bill for building enterprise applications with multiple screens and complex data binding requirements. WPF also has a rich set of controls that can be used to build the application. Additionally, Microsoft is refreshing WPF with new Windows 11 theming for .NET 9, and will continue to invest in WPF as one of the two preferred native UI platforms on Windows. This theming update is currently in preview. WPF can also support the customer's performance and deployment requirements.
+For this project, WPF is a great choice. WPF fits the bill for building enterprise applications with multiple screens and complex data binding requirements. WPF also has a rich set of controls that can be used to build the application. Additionally, Microsoft is refreshing WPF with new Windows 11 theming for .NET 9. They continue to invest in WPF as one of the preferred native UI platforms on Windows. This theming update is currently in preview. WPF can also support the customer's performance and deployment requirements.

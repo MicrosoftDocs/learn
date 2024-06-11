@@ -16,7 +16,7 @@ quiz:
     choices:
     - content: WinUI and Windows App SDK
       isCorrect: false
-      explanation: Incorrect. WinUI is a great choice if the current feature set meets your requirements, but it may not have the third-party control and library support necessary to provide the high degree of customization required for this project.
+      explanation: Incorrect. WinUI is a great choice if the current feature set meets your requirements. However, it may not have the third-party control and library support necessary to provide the high degree of customization that is required for this project.
     - content: Windows Forms
       isCorrect: false
       explanation: Incorrect. While Windows Forms is a good choice for building desktop applications that require rapid development and rich functionality, it isn't as customizable as WPF.

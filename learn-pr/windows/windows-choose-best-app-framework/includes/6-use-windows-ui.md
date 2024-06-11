@@ -8,8 +8,8 @@ In this unit, you learn the benefits and limitations of the frameworks and how t
 
 The cloud-based file synchronization application is a consumer-facing app. The differentiating requirements to focus on for this application are:
 
-- **Appearance and style of the application.** This application supports the latest Fluent design system guidance and matches the UX of the latest Windows releases. This must be a first-class Windows app with smooth performance and exceptional UX.
-- **The device compatibility.** The file sync app should run on the latest Windows devices, including desktops and tablet PCs, and take advantage of modern hardware. The team may decide to support additional platforms in the future.
+- **Appearance and style of the application.** This application supports the latest Fluent design system guidance and matches the UX of the latest Windows releases. It must be a first-class Windows app with smooth performance and exceptional UX.
+- **The device compatibility.** The file sync app should run on the latest Windows devices, including desktops and tablet PCs, and take advantage of modern hardware. The team may decide to support other platforms in the future.
 - **Multimedia support.** The app should support multimedia content, such as images and videos, and provide a rich user experience.
 - **Deployment options.** The application is available in the Microsoft Store. There's no need for enterprise deployment scenarios.
 
@@ -19,7 +19,7 @@ In this section, we're going to analyze the requirements for the file sync app a
 
 ### Appearance and style of the application
 
-WinUI applications implement the latest Fluent design system. The Fluent design system is a set of guidelines for creating apps that look and feel like they belong on Windows. The WinUI design language evolves alongside Fluent to create a design that is human, universal, and truly feels like Windows. WinUI currently provides the best experience for users on Windows. This requirement is a perfect match for the file sync app's requirement to implement the latest Fluent design system guidance. Neither WPF nor Windows Forms currently support the Fluent design system. The WPF team is working on adding support for Fluent design in .NET 9, but it's currently only available in preview.
+WinUI applications implement the latest Fluent design system. The Fluent design system is a set of guidelines for creating apps that look and feel like they belong on Windows. The WinUI design language evolves alongside Fluent to create a design that is human, universal, and truly feels like Windows. WinUI currently provides the best experience for users on Windows. This requirement is a perfect match for the file sync app's requirement to implement the latest Fluent design system guidance. WPF and Windows Forms don't currently support the Fluent design system. The WPF team is working on adding support for Fluent design in .NET 9, but it's currently only available in preview.
 
 ### Tablet usability (touch) and device compatibility
 
@@ -29,7 +29,7 @@ WinUI is designed to work seamlessly with touch and pen input. The WinUI team wo
 
 Developers can use C# and .NET or C++ and WinRT to build WinUI apps. Teams that are familiar with XAML and C# or C++ feel at home developing WinUI applications. Developers who have experience with WPF or UWP find that WinUI is similar to those frameworks. In fact, UWP and WinUI share the same XAML and can access many of the same WinRT APIs.
 
-The team who will be leading this project is familiar with the latest version of .NET and C#. The developers are also familiar with XAML, so they can use the XAML designer or editor in Visual Studio to build the UI for the application. They're comfortable developing with any of the frameworks being considered for this project.
+The team who is leading this project is familiar with the latest version of .NET and C#. The developers are also familiar with XAML, so they can use the XAML designer or editor in Visual Studio to build the UI for the application. They're comfortable developing with any of the frameworks being considered for this project.
 
 ### Application performance and responsiveness
 
