@@ -14,5 +14,5 @@ In this module, you learn how native functions work in the Semantic Kernel SDK. 
 - Experience programming in C#.
 - Visual Studio Code IDE installed.
 - Familiarity with Azure and the Azure portal.
-- Access to Azure Open AI Services.
+- Access to Azure OpenAI Services.
 - Experience using the Semantic Kernel SDK to create prompts.
