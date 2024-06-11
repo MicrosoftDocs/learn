@@ -16,7 +16,7 @@ A principal aim in the design and implementation of .NET Aspire is to ensure tha
 
 ## OpenTelemetry configuration in .NET Aspire
 
-The code that adds and configures OpenTelemetry in a .NET Aspire app is in the **ServiceDefaults** project. In the _Extensions.cs_ file you find:
+The code that adds and configures OpenTelemetry in a .NET Aspire solution is in the **ServiceDefaults** project. In the _Extensions.cs_ file you find:
 
 - The `ConfigureOpenTelemetry()` method, which adds logging, metrics, and tracing services.
 - The `AddOpenTelemetryExporters()` method, which adds OpenTelemetry Protocol (OTLP) exporters.
