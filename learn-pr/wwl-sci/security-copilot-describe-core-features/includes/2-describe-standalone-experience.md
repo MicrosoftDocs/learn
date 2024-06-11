@@ -82,7 +82,7 @@ Select the title of the promptbook to open a page with more detailed information
 
 For a complete listing of all the available promptbooks, select View promptbook library.
 
-Watch this short video, for a summary on using promptbooks.
+Watch this short video for a summary on using promptbooks.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=7bb51c3d-ba80-430e-b3bc-2eed3942cf70]
 
