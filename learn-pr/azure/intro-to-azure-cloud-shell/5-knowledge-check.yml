@@ -10,7 +10,7 @@ metadata:
   ms.author: viniap
   ms.topic: unit
   ms.custom: team=cloud_advocates
-durationInMinutes: 5
+durationInMinutes: 4
 quiz:
   title: Check your knowledge
   questions:
@@ -47,3 +47,4 @@ quiz:
     - content: "Use the Cloud Shell editor to make the necessary changes and save it directly on the CloudDrive."
       isCorrect: true
       explanation: "Correct. Saving your script directly on the CloudDrive is the most appropriate method."
+      

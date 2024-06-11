@@ -31,7 +31,7 @@ Use the following steps to prepare for the Guided Project exercises:
 
     You should see a "Plugins" folder, a "Prompts" folder, and "Program.cs" file.
 
-1. Open the **Program.cs** file and update the following variables with your Azure Open AI Services deployment name, API key, endpoint
+1. Open the **Program.cs** file and update the following variables with your Azure OpenAI Services deployment name, API key, endpoint
 
     ```csharp
     string yourDeploymentName = "";
