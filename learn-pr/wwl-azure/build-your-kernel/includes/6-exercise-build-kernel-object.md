@@ -1,4 +1,8 @@
-In this exercise, you learn how to build your first Semantic Kernel SDK project. You learn how to create a new project, add the Semantic Kernel SDK NuGet package, and add a reference to the Semantic Kernel SDK. Let's get started!
+In this exercise, you learn how to build your first Semantic Kernel SDK project. You create a new project, add the Semantic Kernel SDK NuGet package, create a kernel object, and run your first prompt. Let's get started!
+
+> [!IMPORTANT]
+> You must have Visual Studio Code and the .NET Framework 8.0 installed to complete these steps. 
+> You may also need to install the Visual Studio Code C# Dev Kit extension.
 
 1. Open Visual Studio Code and create a new project.
 
@@ -18,10 +22,10 @@ In this exercise, you learn how to build your first Semantic Kernel SDK project.
     using Microsoft.SemanticKernel;
 
     var builder = Kernel.CreateBuilder();
-    builder.Services.AddAzureOpenAIChatCompletion(
-        "your-resource-name",
+    builder.AddAzureOpenAIChatCompletion(
+        "your-deployment-name",
         "your-endpoint",
-        "your-resource-key",
+        "your-api-key",
         "deployment-model");
     var kernel = builder.Build();
     ```
