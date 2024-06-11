@@ -1,11 +1,10 @@
-The Semantic Kernel SDK also supports a templating language that allows you to complete a task using natural language prompts. Prompts are conversational cues you give to large language models (LLMs), shaping responses based on your queries or instructions. For example, you can prompt LLMs to convert a sentence from English to French, or to generate a summary of a text.
+Prompts are conversational cues you give to large language models (LLMs), shaping responses based on your queries or instructions. For example, you can prompt LLMs to convert a sentence from English to French, or to generate a summary of a text. 
 
 In the previous unit, you created the prompt as the input string:
 
 ```c#
-    string input = @"I'm a vegan in search of new recipes. 
-    I love spicy food! Can you give me a list of breakfast 
-    recipes that are vegan friendly?";
+    string input = @"I'm a vegan in search of new recipes. I love spicy food! 
+    Can you give me a list of breakfast recipes that are vegan friendly?";
 ```
 
 Prompting involves crafting clear, context rich instructions to guide the model to generate a desired response. To craft an effective prompt, precision and clarity are key. You may need to experiment and adjust your prompts for accurate results. 
@@ -24,18 +23,18 @@ Prompting involves crafting clear, context rich instructions to guide the model 
 
 ## Create prompt templates
 
-The templating language of the Semantic Kernel SDK allows you to create reusable prompts. Using tokens, you can dynamically replace the input parameters of a prompt. You can also call functions within the prompt to perform operations on the input parameters. To embed expressions in your prompts, the templating language uses curly brackets `{{...}}`.
+The Semantic Kernel SDK supports a templating language that allows you to use expressions and variables in your natural language prompts. This means you can create prompts that are reusable with different input parameters. To embed expressions in your prompts, the templating language uses curly brackets `{{...}}`.
 
 ```c#
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Plugins.Core;
 
 var builder = Kernel.CreateBuilder();
-    builder.Services.AddAzureOpenAIChatCompletion(
-        "your-resource-name",
-        "your-endpoint",
-        "your-resource-key",
-        "deployment-model");
+builder.AddAzureOpenAIChatCompletion(
+    "your-deployment-name",
+    "your-endpoint",
+    "your-api-key",
+    "deployment-model");
 
 builder.Plugins.AddFromType<ConversationSummaryPlugin>();
 var kernel = builder.Build();
@@ -53,20 +52,18 @@ string history = @"In the heart of my bustling kitchen, I have embraced
     dishes that not only please the picky palates but are also heathy and 
     delicious.";
 
-string functionPrompt = @"User background: 
-    {{ConversationSummaryPlugin.SummarizeConversation $history}}
+string prompt = @"This is some information about the user's background: 
+    {{$history}}
+
     Given this user's background, provide a list of relevant recipes.";
 
-var suggestRecipes = kernel.CreateFunctionFromPrompt(functionPrompt);
-var result = await kernel.InvokeAsync(suggestRecipes, 
-    new KernelArguments() {
-        { "history", history }
-    });
+var result = await kernel.InvokePromptAsync(prompt, 
+    new KernelArguments() {{ "history", history }});
 
 Console.WriteLine(result);
 ```
 
-In this example, `functionPrompt` is a prompt template that calls `ConversationSummaryPlugin.SummarizeConversation` on some input, denoted by `$history`. The prompt tells the model to use this input to provide a list of recipes. `kernel.CreateFunctionFromPrompt` returns a `KernelFunction` that can be invoked with the required input. 
+In this example, the `history` variable is referenced in the prompt, denoted by the `$` symbol. When the prompt is invoked, the `history` variable is replaced with the actual value provided in the `KernelArguments` dictionary. This allows you to create prompts that can be dynamically populated with different inputs.
 
 Here's the example output:
 
@@ -82,4 +79,4 @@ Here's the example output:
 5. Black bean and sweet potato enchiladas - a delicious and healthy twist on traditional enchiladas. This recipe is vegetarian and can easily be made vegan.
 ```
 
-Using variables and functions in prompts allows you to create reusable templates that can be dynamically populated with different inputs. Reusing prompts is especially useful when you need to perform the same task with different inputs, or provide context to the model for improved results.
+Creating reusable prompts is especially useful when you need to perform the same task with different inputs. In the next exercise, you'll practice creating your own reusable prompts using the Semantic Kernel SDK.
