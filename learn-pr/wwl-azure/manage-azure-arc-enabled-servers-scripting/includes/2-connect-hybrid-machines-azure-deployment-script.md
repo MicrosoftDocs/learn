@@ -28,15 +28,15 @@ The script to automate the download and installation, and to establish the conne
 
 You can install the Connected Machine agent manually by running the Windows Installer package *AzureConnectedMachineAgent.msi*. You can download the latest version of the [Windows agent Windows Installer package](https://aka.ms/AzureConnectedMachineAgent) from the Microsoft Download Center.
 
-    > [!NOTE]
-    > To install or uninstall the agent, you must have *Administrator* permissions.
+> [!NOTE]
+> To install or uninstall the agent, you must have *Administrator* permissions.
 
-    > [!NOTE]
-    > You must first download and copy the Installer package to a folder on the target server, or from a shared network folder. If you run the Installer package without any options, it starts a setup wizard that you can follow to install the agent interactively.
+> [!NOTE]
+> You must first download and copy the Installer package to a folder on the target server, or from a shared network folder. If you run the Installer package without any options, it starts a setup wizard that you can follow to install the agent interactively.
 
 If the machine needs to communicate through a proxy server to the service, then run a command that's described in the steps. This command sets the proxy server system environment variable https\_proxy. Using this configuration, the agent communicates through the proxy server using the HTTP protocol.
 
-1.  To install the agent silently and create a setup log file in the `C:\Support\Logs` folder that exist, run the command.
+1.  To install the agent silently and create a setup log file in the `C:\Support\Logs` folder that exists, run the command.
     
     ```powershell
     msiexec.exe /i AzureConnectedMachineAgent.msi /qn /l*v "C:\Support\Logs\Azcmagentsetup.log"
@@ -72,4 +72,4 @@ If the agent fails to start after setup is finished, check the logs for detailed
 
 After you install the agent and configure it to connect to Azure Arc-enabled servers, go to the Azure portal to verify that the server has successfully connected. View your machines in the [Azure portal](https://aka.ms/hybridmachineportal).
 
-:::image type="content" source="../media/arc-servers-successful-onboard-1-bd202596.png" alt-text="Displays a screenshot of the Azure portal to verify that the server has successfully connected.by using installation script.":::
+:::image type="content" source="../media/arc-servers-successful-onboard-1-bd202596.png" alt-text="Screenshot of the Azure portal to verify that the server has successfully connected by using installation script.":::

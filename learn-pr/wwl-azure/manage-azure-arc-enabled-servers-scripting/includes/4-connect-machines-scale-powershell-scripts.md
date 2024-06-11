@@ -1,6 +1,6 @@
 Microsoft Configuration Manager facilitates comprehensive management of servers supporting the secure and scalable deployment of applications and operating systems. Configuration Manager has an integrated ability to run PowerShell scripts.
 
-You can use Configuration Manager to run a PowerShell script that automates at-scale onboarding to Azure Arc-enabled servers.
+You can use Configuration Manager to run a PowerShell script that automates at scale onboarding to Azure Arc-enabled servers.
 
 Before you get started, be sure to review the [prerequisites](/azure/azure-arc/servers/prerequisites) and verify that your subscription and resources meet the requirements. For information about supported regions and other related considerations, see [supported Azure regions](/azure/azure-arc/servers/overview#supported-regions).
 

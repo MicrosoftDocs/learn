@@ -31,10 +31,10 @@ quiz:
     choices:
     - content: "By running a diagnostic test on the network."
       isCorrect: false
-      explanation: "Incorrect. A network diagnostic test does not confirm the connection to Azure Arc."
+      explanation: "Incorrect. A network diagnostic test doesn't confirm the connection to Azure Arc."
     - content: "By checking the status of the devices in the device manager."
       isCorrect: false
-      explanation: "Incorrect. The device manager does not provide information about the connection to Azure Arc."
+      explanation: "Incorrect. The device manager doesn't provide information about the connection to Azure Arc."
     - content: "By monitoring the script status and checking the visibility of onboarded servers in the Azure portal."
       isCorrect: true
       explanation: "Correct. The script status monitoring indicates if the script has successfully installed the Connected Machine Agent. Onboarded servers will also be visible in the Azure portal."

@@ -24,7 +24,7 @@ The installed extension ``Az.ConnectedMachine`` is experimental and not covered 
 
 1.  Open a PowerShell console with elevated privileges.
 2.  Sign in to Azure by running the command `Connect-AzAccount`.
-3.  To install the Connected Machine agent, use `Connect-AzConnectedMachine` with the`-Name, -ResourceGroupName,` and `-Location`parameters. Use the`-SubscriptionId` parameter to override the default subscription as a result of the Azure context created after sign-in. Run one of the following commands:
+3.  To install the Connected Machine agent, use `Connect-AzConnectedMachine` with the `-Name, -ResourceGroupName,` and `-Location` parameters. Use the `-SubscriptionId` parameter to override the default subscription as a result of the Azure context created after sign-in. Run one of the following commands:
     
     
      -  To install the Connected Machine agent on the target machine that can directly communicate to Azure, run:
@@ -67,11 +67,11 @@ Here's how to configure one or more Windows servers with servers enabled with Az
     
     The following example shows the results of the command targeting a single machine:
     
-    :::image type="content" source="../media/powershell-content-example-output-b0c15771.png" alt-text="Displays a screenshot of the output from running the PowerShell script.":::
+    :::image type="content" source="../media/powershell-content-example-output-b0c15771.png" alt-text="Screenshot of the output from running the PowerShell script.":::
     
 
 ### Verify the connection with Azure Arc
 
 After you install the agent and configure it, go to the Azure portal to verify that the server has successfully connected. View your machines in the [Azure portal](https://aka.ms/hybridmachineportal).
 
-:::image type="content" source="../media/arc-servers-successful-onboard-1-bd202596.png" alt-text="Displays a screenshot of the Azure portal to verify that the server has successfully connected by using PowerShell remoting.":::
+:::image type="content" source="../media/arc-servers-successful-onboard-1-bd202596.png" alt-text="Screenshot of the Azure portal to verify that the server has successfully connected by using PowerShell remoting.":::
