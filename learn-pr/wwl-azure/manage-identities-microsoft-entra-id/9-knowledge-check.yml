@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/22/2024
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -16,17 +16,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A company wants to collaborate with a vendor outside of their organization. Which capability of Microsoft Entra External ID should they use?"
+  - content: "A company wants to provide options for different social or enterprise identity providers and integrate self-service sign-up user flows with external cloud systems. Which tool can they use to achieve this?"
     choices:
-    - content: "B2B collaboration"
+    - content: "Database Management Systems"
+      isCorrect: false
+      explanation: "Incorrect. Database Management Systems are used for storing, manipulating, and retrieving data, not for integrating user flows with external cloud systems."
+    - content: "Network Monitoring Tools"
+      isCorrect: false
+      explanation: "Incorrect. Network Monitoring Tools are used for overseeing and managing network operations, not for integrating user flows with external cloud systems."
+    - content: "API Connectors"
       isCorrect: true
-      explanation: "Correct. B2B collaboration allows external users to sign in to the organization using their own credentials and access the apps and resources shared with them."
-    - content: "B2C collaboration"
-      isCorrect: false
-      explanation: "Incorrect. B2C collaboration is for collaborating with customers, not vendors."
-    - content: "Internal member authentication"
-      isCorrect: false
-      explanation: "Incorrect. Internal member authentication is for employees of the organization, not external vendors."
+      explanation: "Correct. API Connectors can be used to integrate self-service sign-up user flows with external cloud systems."
   - content: "An organization wants to enable automatic remediation for identity-based risks detected by Microsoft Entra ID Protection. What access controls can be required based on the detected risk level?"
     choices:
     - content: "Blocking the user's account"
