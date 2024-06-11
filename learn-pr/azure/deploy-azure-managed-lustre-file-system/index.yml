@@ -12,7 +12,7 @@ title: 'Accelerate HPC and AI workloads with Azure Managed Lustre'
 summary: Deploy an Azure Managed Lustre file system, integrate the file system with Azure Blob Storage, and connect clients to the file system.
 abstract: |
   By the end of this module, you'll be able to: 
-    - Understand what Azure Managed Lustre is.
+    - Identify the use cases and advantages of Azure Managed Lustre.
     - List the prerequisites for Azure Managed Lustre.
     - Deploy an Azure Managed Lustre file system.
     - Integrate the file system with Azure Blob Storage.
