@@ -16,5 +16,5 @@ In this module, you learn about the different ways you can automatically invoke 
 - Experience programming in C#.
 - Visual Studio Code IDE installed.
 - Familiarity with Azure and the Azure portal.
-- Access to Azure Open AI Services.
+- Access to Azure OpenAI Services.
 - Experience creating plugins using the Semantic Kernel SDK.
