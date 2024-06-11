@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.use-intelligent-planners.introduction
+uid: learn.wwl.manage-azure-arc-enabled-servers-scripting.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
   ms.date: 06/11/2024
   author: wwlpublish
-  ms.author: buzahid
+  ms.author: bradj
   ms.topic: unit
   ms.custom:
   - N/A
