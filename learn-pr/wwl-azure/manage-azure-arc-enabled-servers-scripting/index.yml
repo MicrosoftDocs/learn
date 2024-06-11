@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.manage-azure-arc-enabled-servers-scripting
+metadata:
+  title: Manage Azure Arc-enabled servers by using scripting
+  description: "This module covers the topic of enabling Azure Arc for Windows or Linux machines in your environment. Enabling Arc-enabled servers is done either manually or by using an automated method with a provided template script."
+  ms.date: 06/11/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Manage Azure Arc-enabled servers by using scripting
+summary: This module covers the topic of enabling Azure Arc for Windows or Linux machines in your environment. Enabling Arc-enabled servers is done either manually or by using an automated method with a provided template script.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Connect hybrid machines to Azure using a deployment script
+
+  -   Connect hybrid machines to Azure by using PowerShell
+
+  -   Connect machines at scale by running PowerShell scripts with Configuration Manager
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.manage-azure-arc-enabled-servers-scripting.introduction
+- learn.wwl.manage-azure-arc-enabled-servers-scripting.connect-hybrid-machines-azure-deployment-script
+- learn.wwl.manage-azure-arc-enabled-servers-scripting.connect-hybrid-machines-azure-powershell
+- learn.wwl.manage-azure-arc-enabled-servers-scripting.connect-machines-scale-powershell-scripts
+- learn.wwl.manage-azure-arc-enabled-servers-scripting.knowledge-check
+- learn.wwl.manage-azure-arc-enabled-servers-scripting.summary
+badge:
+  uid: learn.wwl.manage-azure-arc-enabled-servers-scripting.badge
