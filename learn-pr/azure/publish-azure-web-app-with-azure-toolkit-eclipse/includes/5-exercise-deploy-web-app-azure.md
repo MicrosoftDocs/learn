@@ -52,7 +52,7 @@ In this exercise, you use the Azure Toolkit for Eclipse to create a new Azure Ap
    | Name | *[your-webapp-name]* |
    | Subscription | *Concierge Subscription* |
    | Runtime | *Linux* |
-   | Linux Runtime | *TOMCAT 8.5-java-11* |
+   | Linux Runtime | *TOMCAT 10.1-java-17* |
    | App service plan | Select **Create new** and accept the default name and location, but change the **Pricing Tier** to **Free_F1** for this exercise. |
    | Resource Group | *<rgn>[sandbox resource group name]</rgn>* |
    | App Settings | Leave empty |

@@ -12,12 +12,12 @@ In this exercise, you use Eclipse to create a Java web app that uses Java Server
 
    If you don't see **Dynamic Web Project**, try **File** > **Other** > **Web** > **Dynamic Web Project**. If the wizard isn't there, make sure that you installed *Eclipse IDE for Enterprise Java and Web Developers*.
 
-1. In the **New Dynamic Web Project** wizard, on the **Dynamic Web Project** page, in **Project name**, enter  *SampleWebApp*. Make sure the **Target runtime** is set to **Apache Tomcat v8.0**, and then select **Finish**.
+1. In the **New Dynamic Web Project** wizard, on the **Dynamic Web Project** page, in **Project name**, enter  *SampleWebApp*. Make sure the **Target runtime** is set to **Apache Tomcat v10.1**, and then select **Finish**.
 
    :::image type="content" source="../media/3-dynamic-web-project.png" alt-text="Screenshot of the Dynamic Web Project page in the New Dynamic Web Project wizard, in Eclipse." loc-scope="third-party":::
 
    > [!NOTE]
-   > If the **Apache Tomcat v8.0** runtime isn't listed, select **New Runtime**, and download it.
+   > If the **Apache Tomcat v10.1** runtime isn't listed, select **New Runtime**, and download it.
 
 1. In the **Project Explorer** pane, expand **SampleWebApp**, expand **Java Resources**, right-click **src**, select **New**, and then select **JSP File**.
 
@@ -88,12 +88,12 @@ In this exercise, you use Eclipse to create a Java web app that uses Java Server
 
    :::image type="content" source="../media/3-run-app.png" alt-text="Screenshot of the Run menu in Eclipse with the Run command selected." loc-scope="third-party":::
 
-1. In the **Run On Server** wizard, select **Tomcat v8.0 Server at localhost**, and then select **Finish**.
+1. In the **Run On Server** wizard, select **Tomcat v10.1 Server at localhost**, and then select **Finish**.
 
-   :::image type="content" source="../media/3-run-on-server.png" alt-text="Screenshot of the Run On Server wizard in Eclipse with the Tomcat v8.0 Server at localhost server selected." loc-scope="third-party":::
+   :::image type="content" source="../media/3-run-on-server.png" alt-text="Screenshot of the Run On Server wizard in Eclipse with the Tomcat v10.1 Server at localhost server selected." loc-scope="third-party":::
 
    > [!NOTE]
-   > If you have recently installed Tomcat, there might not be an existing server available. Select **Manually define a new server**, and select **Tomcat v8.0 Server**.
+   > If you have recently installed Tomcat, there might not be an existing server available. Select **Manually define a new server**, and select **Tomcat v10.1 Server**.
 
 1. When the Tomcat server starts, you see a few messages. Eclipse shows the output of the web application in a browser window inside the IDE, which should look similar to this image.
 
