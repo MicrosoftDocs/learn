@@ -1,0 +1,12 @@
+### YamlMime:Module
+uid: learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-requirements-iot-workloads
+metadata:
+  title: Specify security requirements for IoT workloads
+  description: "SC-100 preparatory unit on the topic: Specify security requirements for IoT workloads."
+  ms.date: 6/4/2024
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-specify-security-requirements-iot-workloads.md)]
