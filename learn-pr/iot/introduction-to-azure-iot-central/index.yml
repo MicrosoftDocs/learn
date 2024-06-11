@@ -10,6 +10,7 @@ metadata:
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: module-intro-to-product
+  ms.service: iot-central
 title: Introduction to Azure IoT Central
 summary: |
   Determine when to use Azure IoT Central to quickly evaluate your IoT scenario.
