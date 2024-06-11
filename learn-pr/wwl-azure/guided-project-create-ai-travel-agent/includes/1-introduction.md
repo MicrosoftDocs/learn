@@ -23,6 +23,6 @@ In this module, you practice how to:
 - Experience programming in C#.
 - Visual Studio Code IDE installed.
 - Familiarity with Azure and the Azure portal.
-- Access to Azure Open AI Services.
+- Access to Azure OpenAI Services.
 - Experience creating plugins using the Semantic Kernel SDK.
 - Experience using Semantic Kernel auto function calling.
