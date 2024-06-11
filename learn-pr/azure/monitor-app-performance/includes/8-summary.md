@@ -1,4 +1,3 @@
-
 In this module, you learned how to:
 
 * Describe how Application Insights works and how it collects events and metrics.

@@ -25,17 +25,6 @@ quiz:
     - content: "Use the Microsoft Edge Browser to log into an Azure Subscription."
       isCorrect: true
       explanation: "Correct. You open Azure Cloud Shell once logged into your Azure subscription with a web browser."
-  - content: "You need to perform routine checks on your Azure Kubernetes Cluster via kubectl. Which of the following solutions should you use?"
-    choices:
-    - content: "Install kubectl and the Azure CLI on your machine, download the kubectl config file, and establish a connection."
-      isCorrect: false
-      explanation: "Incorrect. This solution assumes you're using a terminal on your own machine."
-    - content: "Open Azure Cloud Shell, and use `az aks get-credentials` to download the kubectl config file to the Cloud Shell session and establish a connection."
-      isCorrect: true
-      explanation: "Correct. Kubectl is native to Azure Cloud Shell. You can retrieve the connection file using `az aks get-credential` and connect your cluster."
-    - content: "Create a new Azure virtual machine (VM), download kubectl, and establish a new connection."
-      isCorrect: false
-      explanation: "Incorrect. Azure Cloud Shell is available on any supported internet browser, so there's no need to install a new VM."
   - content: "You want to store a script that you constantly use for operations on Azure resources. This script needs to be rapidly available when you open a new Azure Cloud Shell session. Which of these procedures should you use?"
     choices:
     - content: "Upload the script to your CloudDrive on an Azure Cloud Shell session."
