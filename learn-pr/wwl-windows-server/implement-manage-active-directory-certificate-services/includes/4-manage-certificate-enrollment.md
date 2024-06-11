@@ -4,7 +4,7 @@ The purpose of CA is to allow users and devices to enroll for and use certificat
 
 A certificate is a small file that contains several pieces of information about its owner. This data can include the owner's email address, the owner's name, the certificate usage type, the validity period, and the URLs for AIA and CDP locations.
 
-A certificate also contains the public key and corresponding metadata,which consists of a private key and the corresponding public key. You can use these keys in processes of validating identities, digital signatures, and encryption. The key pair that each certificate generates has the following conditions:
+A certificate also contains the public key and corresponding metadata, which consists of a private key and the corresponding public key. You can use these keys in processes of validating identities, digital signatures, and encryption. The key pair that each certificate generates has the following conditions:
 
  -  When content is encrypted with the public key, it can be decrypted only with the private key.
  -  When content is encrypted with the private key, it can be decrypted only with the public key.
