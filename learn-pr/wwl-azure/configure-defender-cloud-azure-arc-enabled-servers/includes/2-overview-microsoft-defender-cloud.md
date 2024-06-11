@@ -4,7 +4,7 @@ Microsoft Defender for Cloud is a cloud-native application protection platform (
  -  A cloud security posture management (CSPM) solution that surfaces actions that you can take to prevent breaches.
  -  A cloud workload protection platform (CWPP) with specific protections for servers, containers, storage, databases, and other workloads.
 
-:::image type="content" source="../media/defender-cloud-pillars-c5e0fe76.png" alt-text="Diagram showing how the Defender for Cloud security components integrate.":::
+:::image type="content" source="../media/defender-cloud-pillars-updated-125418ad.png" alt-text="Diagram showing how the Defender for Cloud security components integrate.":::
 
 
 When you [enable Defender for Cloud](/azure/defender-for-cloud/connect-azure-subscription), you automatically gain access to Microsoft Defender XDR. You can learn more about the [integration between Microsoft Defender for Cloud and Microsoft Defender XDR](/azure/defender-for-cloud/concept-integration-365).

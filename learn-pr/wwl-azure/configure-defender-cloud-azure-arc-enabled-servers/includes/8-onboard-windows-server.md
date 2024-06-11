@@ -2,7 +2,7 @@ To onboard your on-premises machines by using the Azure portal, do this procedur
 
 1.  Select **Windows servers**.
     
-    :::image type="content" source="../media/windows-servers-added-d15c1de0.png" alt-text="Displays a screenshot of the controls for selecting Windows Servers.":::
+    :::image type="content" source="../media/windows-servers-added-d15c1de0.png" alt-text="Displays a screenshot of the controls for selecting Windows Servers." lightbox="media/windows-servers-added-d15c1de0.png":::
     
     
     When you add a Windows server, you need to get the information on the Agents management page and download the appropriate agent file (32 bit or 64 bit).
