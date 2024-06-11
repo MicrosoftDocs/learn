@@ -4,7 +4,7 @@ title: 'Exercise: Create a static HTML web app by using Azure Cloud Shell'
 metadata:
   title: 'Exercise: Create a static HTML web app by using Azure Cloud Shell'
   description: "Exercise: Create a static HTML web app by using Azure Cloud Shell"
-  ms.date: 06/09/2024
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
@@ -13,5 +13,5 @@ metadata:
 azureSandbox: true
 durationInMinutes: 15
 content: |
-  [!include[](includes/7-exercise-create-html-web-app.md)]
+  [!include[](includes/7-create-html-web-app.md)]
 interactive: bash
