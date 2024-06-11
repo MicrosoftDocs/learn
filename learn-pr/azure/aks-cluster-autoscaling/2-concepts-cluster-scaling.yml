@@ -5,7 +5,7 @@ metadata:
   type: knowledge_check
   title: Cluster scalability concepts
   description: Learn about cluster scalability, why it's important, and how AKS can help with it.
-  ms.date: 11/08/2023
+  ms.date: 06/06/2024
   author: nickomang
   ms.author: nickoman
   ms.topic: unit

@@ -40798,6 +40798,26 @@
       "source_path": "learn-pr/wwl-azure/secure-mysql-database-key-vault-use-private-endpoint/4-test-configuration.md",
       "redirect_url": "/training/paths/expand-capabilities-java-azure/",
       "redirect_document_id": false
+    },
+       {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/4-combine-prompts-functions.md",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/5-exercise-combine-prompts-functions.md",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/6-knowledge-check.md",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/4-knowledge-check",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/7-summary.md",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/5-summary",
+      "redirect_document_id": false
     }
   ]
 }

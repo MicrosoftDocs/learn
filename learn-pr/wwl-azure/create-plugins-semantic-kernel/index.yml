@@ -3,7 +3,7 @@ uid: learn.wwl.create-plugins-semantic-kernel
 metadata:
   title: Create plugins for semantic kernel
   description: "This module explores Semantic Kernel SDK plugins. Learn how plugins to the SDK are used to accomplish customized tasks and create intelligent applications."
-  ms.date: 04/30/2024
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module

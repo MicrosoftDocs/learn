@@ -4,10 +4,12 @@ title: Exercise - Build a kernel object
 metadata:
   title: Exercise - Build a kernel object
   description: "Exercise - Build a kernel object"
-  ms.date: 02/27/2024
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/6-exercise-build-kernel-object.md)]
