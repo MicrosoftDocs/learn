@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-web-app-settings.enable-diagnostic-logging
-title: Exercise - Enable diagnostic logging
+title: Enable diagnostic logging
 metadata:
-  title: Exercise - Enable diagnostic logging
+  title: Enable diagnostic logging
   description: "Enable diagnostic logging"
-  ms.date: 06/10/2024
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-exercise-enable-diagnostic-logging.md)]
+  [!include[](includes/5-enable-diagnostic-logging.md)]
