@@ -2,6 +2,9 @@
 
 1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as at least a [User Administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator).
 2.  Browse to **Identity** &gt; **Users** &gt; **All users**.
+    
+    :::image type="content" source="../media/create-new-user-menu-fa41ce23.png" alt-text="Screenshot showing how to create a new user in the Microsoft Entra administration center.":::
+    
 3.  Select **New user** &gt; **Create new user**.
 4.  Complete the remaining tabs in the New user page.
 
