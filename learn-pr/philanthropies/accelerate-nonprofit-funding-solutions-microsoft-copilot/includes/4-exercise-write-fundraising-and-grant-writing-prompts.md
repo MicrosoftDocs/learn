@@ -22,9 +22,12 @@ Data Analysis: Employ Copilot’s capabilities to analyze donor data and gain in
 Practice using Copilot to help draft and edit grant proposals, increasing efficiency and potentially the success rate. 
 
 ```
-What are some donor segments my [cause e.g., family services] nonprofit can approach for grants? Target [region or zip codes] for [desired demographic]. Provide responses in list form. 
+What are some donor segments my [cause e.g., family services] nonprofit can approach 
+for grants? Target [region or zip codes] for [desired demographic]. Provide responses 
+in list form. 
 ```
  
 ```
-Compile a list of current grant opportunities in the [desired region] that support [your cause]. 
+Compile a list of current grant opportunities in the [desired region] that support 
+[your cause]. 
 ```

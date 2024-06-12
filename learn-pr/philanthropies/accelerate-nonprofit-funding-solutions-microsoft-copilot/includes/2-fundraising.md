@@ -9,20 +9,23 @@ Fundraising is the process of soliciting and obtaining financial or in-kind supp
 
 In previous modules, you learned that prompts for Copilot contained four parts. They are goal, context, expectations, and source. 
 
-:::image type="content" source="./media/prompt-engineering.png" alt-text="Image of a slide from a presentation showing a prompt with four parts: goal, context, expectations, and source":::
+:::image type="content" source="../media/prompt-engineering.png" alt-text="Image of a slide from a presentation showing a prompt with four parts: goal, context, expectations, and source":::
 
 Here are some sample prompts that can be used to fundraise for our family services nonprofit:
 
 ```
-Write a catchy and persuasive article for our crowdfunding campaign that emphasizes the urgent need for diapers in low-income families.
+Write a catchy and persuasive article for our crowdfunding campaign that emphasizes 
+the urgent need for diapers in low-income families.
 ```
 
 ```
-Create a budget for our gala dinner for 200 people, including the estimated costs of venue, catering, a DJ, marketing campaign, and staff.
+Create a budget for our gala dinner for 200 people, including the estimated costs of 
+venue, catering, a DJ, marketing campaign, and staff.
 ```
 
 ```
-Create a flyer for local high schools advertising the need for volunteers at our fill the bus diaper drive, including date, location, time slots available, and benefits of volunteering.
+Create a flyer for local high schools advertising the need for volunteers at our fill 
+the bus diaper drive, including date, location, time slots available, and benefits of volunteering.
 ```
 
 Copilot will then produce a response that meets your request, such as a list of ideas, a strategy outline, or a plan template. You can also ask Copilot to refine, expand, or revise its response, or to provide more details or examples.

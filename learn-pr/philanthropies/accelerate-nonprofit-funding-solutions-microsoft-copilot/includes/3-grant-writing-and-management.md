@@ -7,11 +7,13 @@ Grant management and writing is the process of finding, applying, and reporting 
 Let’s consider the same nonprofit organization. To use Copilot for grant management and writing, you can simply type your request in natural language. Here are prompt examples:
 
 ```
-Write a letter of inquiry requesting funding for a capital campaign, including your current and projected sources of income and expenses and how you plan to use the funds.
+Write a letter of inquiry requesting funding for a capital campaign, including your current 
+and projected sources of income and expenses and how you plan to use the funds.
 ```
 
 ```
-Update a grant report for our annual appeal that shows how the utility assistance program and clothing and housewares center have helped enable low-income families to achieve self-sufficiency.
+Update a grant report for our annual appeal that shows how the utility assistance program 
+and clothing and housewares center have helped enable low-income families to achieve self-sufficiency.
 ```
 
 ```
