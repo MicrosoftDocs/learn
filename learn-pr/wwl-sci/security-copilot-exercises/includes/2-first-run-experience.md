@@ -10,7 +10,7 @@ In this exercise, you go through the first run experience of Microsoft Copilot f
 
 ### Exercise
 
-For this exercise, you are logged in as Avery Howard and you have the global administrator role in Microsoft Entra. You'll work in both the Azure portal and Microsoft Copilot for Security.
+For this exercise, you're logged in as Avery Howard and you have the global administrator role in Microsoft Entra. You'll work in both the Azure portal and Microsoft Copilot for Security.
 
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
@@ -28,7 +28,7 @@ Why is this needed? As a Global Administrator in Microsoft Entra ID, you might n
 
 Once you have user access, you can then assign yourself the necessary access to provision SCUs for Copilot.
 
-1. Open the simulated environment by selecting this link: **[Azure portal](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=1&token=40f793d4-2956-40a4-b11a-6b3d4f92557f)**.
+1. Open the simulated environment by selecting this link: **[Azure portal](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=1&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
 1. You'll start by enabling Access management for Azure resources. To access this setting:
     1. From the Azure portal, select **Microsoft Entra ID**.
@@ -59,30 +59,31 @@ In this task, you go through the steps of provisioning capacity for your organiz
 
 For this exercise, you provision capacity through Copilot for Security. When you first open Copilot for Security, a wizard guides you through the steps in setting up capacity for your organization.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=1&token=40f793d4-2956-40a4-b11a-6b3d4f92557f)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
 
 1. Open the browser tab for **Microsoft Copilot for Security**.
 1. Follow the steps in the Wizard, select **Get started**.
-1. On this page, you set up your security capacity.
-
-    ***For this simulation, the input values are auto-populated by selecting the right arrow key on your keyboard.***
-    
-    1. Use the right arrow key to enter your Azure subscription
-    1. Select Create a new resource group then use the right arrow key to enter the resource group name.
-    1. Use the right arrow key to enter the capacity name
-    1. Select a region for the Prompt evaluation location.
+1. On this page, you set up your security capacity. For any of the fields listed below, you can select the information icon for more information.
+    1. Azure subscription: From the drop-down, select **Woodgrove - GTP Demos (External/Sponsored)**.
+    1. Resource group: From the drop-down, select **RG-1**.
+    1. Capacity name: Enter a capacity name.
+    1. Prompt evaluation location [Geo]: From the drop-down, select your region.
     1. You can choose whether you want to select the option, "If this location has too much traffic, allow Copilot to evaluate prompts anywhere in the world (recommended for optimal performance).
     1. Capacity region is set based on location selected.
-    1. Use the right arrow key to populate Security compute units field with the value of 1.
-    1. Select the box, "I acknowledge that I have read, understood, and agree to the Terms and Conditions.
-    1. Select Continue (on bottom right).
+    1. Security compute: This field is automatically populated with the minimum required SCU units, which is 1. Leave  field with the value of **1**.
+    1. Select the box, **"I acknowledge that I have read, understood, and agree to the Terms and Conditions**.
+    1. Select **Continue** on the bottom right corner of the page.
 
+1. The wizard displays information about where your customer data will be stored. The region displayed is based on the region you selected in the Prompt evaluation field. Select **Continue**.
+    1. If you want to learn more about how Microsoft protects your data, selected **protects your data**. This opens a separated browser tab. When you're done reviewing this information, select the Microsoft Copilot for Security browser tab to continue the setup.
 1. Once the SCU is provisioned, the next page in the wizard is to allocate that capacity. Select the drop-down and select the capacity that was configured.
 1. The next screen is where you can select options to help improve Copilot. You can select the toggle based on your preferences.
-1. In the next page, you're informed of the default roles that can access Copilot (you’ll add users in a subsequent exercise). Select continue.
-1. You're now ready to explore and start using Copilot. The next unit will focus on exploring the core functionality of the standalone experience.
+    1. If you want to learn more about Copilot privacy and data security, select **Copilot for Security privacy and data security**. This opens a separated browser tab. When you're done reviewing this information, select the Microsoft Copilot for Security browser tab to continue the setup.
+1. In the next page, you're informed of the default roles that can access Copilot (you’ll add users in a subsequent exercise). Select **Continue**.
+1. You're all set! Select **Finish**.
+1. Close the browser tab, as the next exercise will use a separate link to the lab-like environment.
 
 #### Review
 
-In this exercise, you successfully provisioned Copilot for Security.
+In this exercise, you successfully provisioned Copilot for Security. You're now ready to move to the next exercise where you'll explore the core functionality of Microsoft Copilot for Security.
