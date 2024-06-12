@@ -48,6 +48,7 @@ In this task, you'll configure the Sentinel plugin. To do this, you need to acce
 
 Now that the Sentinel plugin is enabled, you'll run the prompt you tried earlier. With the prompt successfully executed, you'll save the prompt to the pinboard and get a link to the session so you can share it with a colleague.
 
+1. Once you've configured the plugin, you need to create a new session to run the Sentinel prompt.  From the top of the page, select **Microsoft Copilot for Security**.
 1. From the prompt bar, enter the prompt **Summarize the Microsoft Sentinel incident 30342**. You can copy and paste the prompt into the prompt bar. Then select the run icon.
 
 1. The Copilot process log shows that the prompt executed successfully by displaying green check marks.
