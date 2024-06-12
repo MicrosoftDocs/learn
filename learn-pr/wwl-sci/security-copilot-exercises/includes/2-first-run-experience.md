@@ -34,7 +34,7 @@ Once you have user access, you can then assign yourself the necessary access to 
     1. From the Azure portal, select **Microsoft Entra ID**.
     1. From the left navigation panel, expand **Manage**.
     1. From the left navigation panel, scroll down and select **Properties**.
-    1. Enable the toggle switch for **Access management for Azure resources**.
+    1. Enable the toggle switch for **Access management for Azure resources**, then select **Save**..
 
 1. Now that you can view all resources and assign access in any subscription or management group in the directory, assign yourself the Owner role for the Azure subscription.
     1. From the blue banner on the top of the page, select **Microsoft Azure** to return to the landing page of the Azure portal.
