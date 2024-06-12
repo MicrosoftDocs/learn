@@ -8,7 +8,7 @@ Support for Azure REST API to manage Azure Arc-enabled servers is available thro
 
 ## Update assessment
 
-To trigger an update assessment on your Azure Arc-enabled server, specify the following POST request. To specify the POST request, you can use the Azure CLI [az rest](https://github.com/MicrosoftDocs/azure-docs/blob/main/cli/azure/reference-index#az_rest) command.
+To trigger an update assessment on your Azure Arc-enabled server, specify the following POST request. To specify the POST request, you can use the Azure CLI az rest command.
 
 ```azurecli
 az rest --method post --url
