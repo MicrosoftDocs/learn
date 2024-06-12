@@ -7,7 +7,7 @@ metadata:
   ms.date: 5/21/2024
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/6-evaluate-ai-services-security.md)]
