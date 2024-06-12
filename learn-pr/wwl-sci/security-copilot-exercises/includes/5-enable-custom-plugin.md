@@ -18,7 +18,7 @@ Using the exercise environment, follow the exercise steps that are listed.
 
 In this task, you configure Copilot so that Copilot owners and contributors can add and manage their own custom plugins and for everyone in the organization. 
 
-1. Open the simulated environment by selecting this link: **Microsoft Copilot for Security**.
+1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security](https://app.highlights.guide/start/89f9d04d-283c-4788-8214-22e4d5b4b171?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
 1. Select the **Home menu** (hamburger) icon
 
