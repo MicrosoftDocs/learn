@@ -1,8 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.accelerate-nonprofit-funding-solutions-microsoft-copilot.{{unitName}}
-title: Summary
+uid: learn.philanthropies.accelerate-nonprofit-funding-solutions-microsoft-copilot.marketing-and-social-media
+
+title: Enter exercise title
 metadata:
-  title: summary
+  title: exercise
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 5/30/2024
   author: CourtneyHMicrosoft
@@ -22,4 +23,4 @@ metadata:
   ms.service: TODO
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/6-marketing-and-social-media.md)]

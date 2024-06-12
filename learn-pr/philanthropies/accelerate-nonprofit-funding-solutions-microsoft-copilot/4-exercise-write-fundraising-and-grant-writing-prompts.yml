@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.accelerate-nonprofit-funding-solutions-microsoft-copilot.marketing-and-social-media
+uid: learn.philanthropies.accelerate-nonprofit-funding-solutions-microsoft-copilo.exercise-write-fundraising-and-grant-writing-prompts
 
-title: Enter exercise title
+title: $Exercise - Write fundraising and grant writing prompts
 metadata:
-  title: exercise
+  title: $Exercise - Write fundraising and grant writing prompts
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 5/30/2024
-  author: CourtneyHMicrosoft
-  ms.author: cohodge
+  ms.date: 6/11/2024
+  author: {{githubUsername}}
+  ms.author: {{msUser}}
   ms.topic: interactive-tutorial
 ###########################################################################
 ###
@@ -23,4 +23,4 @@ metadata:
   ms.service: TODO
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-marketing-and-social-media.md)]
+  [!include[](includes/4-exercise-write-fundraising-and-grant-writing-prompts.md)]
