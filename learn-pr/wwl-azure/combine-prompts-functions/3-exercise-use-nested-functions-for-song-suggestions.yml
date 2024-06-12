@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.combine-prompts-functions.exercise-use-nested-functions-for-song-suggestions
+title: Exercise - Combine prompts and functions
+metadata:
+  title: Exercise - Combine prompts and functions
+  description: "Exercise - Combine prompts and functions"
+  ms.date: 06/12/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-use-nested-functions-for-song-suggestions.md)]
