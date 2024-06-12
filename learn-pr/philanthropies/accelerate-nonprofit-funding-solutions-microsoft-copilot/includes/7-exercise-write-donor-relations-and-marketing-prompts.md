@@ -7,7 +7,7 @@ Create personalized outreach materials and thank-you notes with Copilot’s assi
 ```
 Develop an agenda and outline for a roundtable discussion to engage donors and gather constructive feedback to improve [goal]. Include [proposed dates or timelines] and suggested discussion topics that generate [type of feedback desired]. 
 ```
- 
+
 ```
 Write a formal, yet friendly thank you email to sponsors who donated [dollar amount] in cash contributions over the past year. Include a real-life story that signifies the impact they are making in the community. Direct them to [annual report or other resource] for a detailed overview of our outcomes.
 ```
