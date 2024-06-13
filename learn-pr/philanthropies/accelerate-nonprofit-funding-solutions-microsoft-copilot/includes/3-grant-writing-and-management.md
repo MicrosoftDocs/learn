@@ -22,5 +22,4 @@ Draft a grant application requesting funding for operating costs including staff
 
 Copilot will then produce a response that meets your request, such as a list of opportunities, an application draft, or a report summary. You can also ask Copilot to refine, expand, or revise its response, or to provide more details or examples.
 
-[Tips for effective prompts in Copilot to generate texts for a grant proposal (video: 1:03)(https://aka.ms/TechSoup-copilot-prompts)]
-> [!VIDEO https://www.youtube.com/watch?v=sGjUvtnPaJg] 
+[Tips for effective prompts in Copilot to generate texts for a grant proposal (video: 1:03)](https://aka.ms/TechSoup-copilot-prompts)

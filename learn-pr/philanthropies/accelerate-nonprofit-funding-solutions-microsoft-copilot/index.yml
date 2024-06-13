@@ -2,7 +2,7 @@
 uid: learn.philanthropies.accelerate-nonprofit-funding-solutions-microsoft-copilot
 metadata:
   title: Accelerate nonprofit funding solutions with Microsoft Copilot
-  description: "Save time, improve quality, and increase impact in your funding activities. Copilot can also help you learn new skills, discover new opportunities, and enhance your creativity."
+  description: Save time, improve quality, and increase impact in your funding activities. Copilot can also help you learn new skills, discover new opportunities, and enhance your creativity.
   author: cohodgeMicrosoft
   ms.author: cohodge
   ms.topic: module-standard-task-based
@@ -12,10 +12,10 @@ title: Accelerate nonprofit funding solutions with Microsoft Copilot
 summary: Save time, improve quality, and increase impact in your funding activities. Copilot can also help you learn new skills, discover new opportunities, and enhance your creativity.
 abstract: |
   By the end of this module, you'll be able to:
-    - "Recognize opportunities to leverage AI and Copilot in your fundraising activities."
-    - "Use copilot to help with fundraising, grant management, donor relations, and social media and marketing efforts"
+    - Recognize opportunities to leverage AI and Copilot in your fundraising activities.
+    - Use copilot to help with fundraising, grant management, donor relations, and social media and marketing efforts
 prerequisites: |
-  - "Complete the [Introduction to AI skills for nonprofits learning path](https://learn.microsoft.com/learn/paths/introduction-to-ai-skills-for-nonprofits/)]"
+  - Complete the [Introduction to AI skills for nonprofits learning path](https://learn.microsoft.com/learn/paths/introduction-to-ai-skills-for-nonprofits/)]
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - beginner

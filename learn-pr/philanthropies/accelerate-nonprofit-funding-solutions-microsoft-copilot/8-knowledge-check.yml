@@ -16,27 +16,27 @@ quiz:
       choices:
         - content: "To provide legal advice"
           isCorrect: false
-          explanation: ""
+          explanation: "Copilot is designed to be an AI-powered assistant that helps with various aspects of funding missions, such as raising money, managing grants, writing proposals, communicating with donors, and promoting work. It is not meant to provide legal advice, manage finances, or recruit volunteers, which are tasks typically handled by human experts or specialized software. "
         - content: "To assist with various aspects of funding missions"
           isCorrect: true
           explanation: "Copilot is designed to be an AI-powered assistant that helps with various aspects of funding missions, such as raising money, managing grants, writing proposals, communicating with donors, and promoting work. It is not meant to provide legal advice, manage finances, or recruit volunteers, which are tasks typically handled by human experts or specialized software. "
         - content: "To manage the nonprofit's finances"
           isCorrect: false
-          explanation: ""
+          explanation: "Copilot is designed to be an AI-powered assistant that helps with various aspects of funding missions, such as raising money, managing grants, writing proposals, communicating with donors, and promoting work. It is not meant to provide legal advice, manage finances, or recruit volunteers, which are tasks typically handled by human experts or specialized software."
         - content: "To recruit volunteers for fundraising events"
           isCorrect: false
-          explanation: ""
+          explanation: "Copilot is designed to be an AI-powered assistant that helps with various aspects of funding missions, such as raising money, managing grants, writing proposals, communicating with donors, and promoting work. It is not meant to provide legal advice, manage finances, or recruit volunteers, which are tasks typically handled by human experts or specialized software."
     - content: "Which of the following is NOT a task that Copilot can help with in fundraising?"
       choices:
         - content: "Generating ideas for fundraising campaigns"
           isCorrect: false
-          explanation: ""
+          explanation: "Copilot can generate ideas for fundraising campaigns, suggest strategies for reaching out to potential donors, and create plans for executing fundraising activities. However, providing tax exemption for donors is a legal matter that requires authorization from tax authorities and is not within the capabilities of Copilot."
         - content: "Suggesting strategies for reaching out to potential donors"
           isCorrect: false
-          explanation: ""
+          explanation: "Copilot can generate ideas for fundraising campaigns, suggest strategies for reaching out to potential donors, and create plans for executing fundraising activities. However, providing tax exemption for donors is a legal matter that requires authorization from tax authorities and is not within the capabilities of Copilot."
         - content: "Creating plans for executing fundraising activities"
           isCorrect: false
-          explanation: ""
+          explanation: "Copilot can generate ideas for fundraising campaigns, suggest strategies for reaching out to potential donors, and create plans for executing fundraising activities. However, providing tax exemption for donors is a legal matter that requires authorization from tax authorities and is not within the capabilities of Copilot."
         - content: "Providing tax exemption for donors"
           isCorrect: true
           explanation: "Copilot can generate ideas for fundraising campaigns, suggest strategies for reaching out to potential donors, and create plans for executing fundraising activities. However, providing tax exemption for donors is a legal matter that requires authorization from tax authorities and is not within the capabilities of Copilot."
@@ -44,13 +44,13 @@ quiz:
       choices:
         - content: "By searching and filtering grant opportunities"
           isCorrect: false
-          explanation: ""
+          explanation: "Copilot can aid in grant management and writing by searching and filtering grant opportunities, generating and editing grant applications, and creating and updating grant reports. These tasks encompass the entire process of grant management and writing, making Copilot a comprehensive assistant for these activities."
         - content: "By generating and editing grant applications"
           isCorrect: false
-          explanation: ""
+          explanation: "Copilot can aid in grant management and writing by searching and filtering grant opportunities, generating and editing grant applications, and creating and updating grant reports. These tasks encompass the entire process of grant management and writing, making Copilot a comprehensive assistant for these activities."
         - content: "By creating and updating grant reports"
           isCorrect: false
-          explanation: ""
+          explanation: "Copilot can aid in grant management and writing by searching and filtering grant opportunities, generating and editing grant applications, and creating and updating grant reports. These tasks encompass the entire process of grant management and writing, making Copilot a comprehensive assistant for these activities."
         - content: "All of the above"
           isCorrect: true
           explanation: "Copilot can aid in grant management and writing by searching and filtering grant opportunities, generating and editing grant applications, and creating and updating grant reports. These tasks encompass the entire process of grant management and writing, making Copilot a comprehensive assistant for these activities."

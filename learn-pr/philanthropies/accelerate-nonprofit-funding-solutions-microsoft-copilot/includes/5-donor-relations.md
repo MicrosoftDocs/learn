@@ -21,6 +21,4 @@ Design a survey to gather feedback from our donors with at least five questions 
 the effectiveness of the different services we provide.
 ```
 
-```
-
 Copilot will then produce a response that meets your request, such as a message text, a material design, or a feedback form. You can also ask Copilot to refine, expand, or revise its response, or to provide more details or examples.

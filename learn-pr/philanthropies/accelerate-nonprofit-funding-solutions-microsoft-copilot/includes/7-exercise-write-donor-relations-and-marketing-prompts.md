@@ -4,8 +4,10 @@ In this exercise, you'll practice using Copilot to quickly create content to con
 
 Create personalized outreach materials and thank-you notes with Copilot’s assistance to engage donors. Edit these prompts to suit your situation.
 
-```markdown
-Develop an agenda and outline for a roundtable discussion to engage donors and gather constructive feedback to improve [goal]. Include [proposed dates or timelines] and suggested discussion topics that generate [type of feedback desired]. 
+```
+Develop an agenda and outline for a roundtable discussion to engage donors and gather 
+constructive feedback to improve [goal]. Include [proposed dates or timelines] and suggested 
+discussion topics that generate [type of feedback desired]. 
 ```
 
 ```
@@ -25,3 +27,5 @@ the [event or call to action]. Encourage readers to participate and/or volunteer
 [intended outcome, community in need e.g., adopt an orphaned pet] in need. [Call to action, 
 corresponding link e.g., sign up, view details]. Use catchy, persuasive language, and include hashtags.
 ```
+
+Ask Copilot to generate an image for your post, remembering to specify the clear action, detailed subject, scene or setting, additional elements, and specific style in your prompt.
