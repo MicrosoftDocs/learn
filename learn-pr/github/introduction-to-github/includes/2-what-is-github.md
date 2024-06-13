@@ -7,7 +7,7 @@ In this unit, we review the following learning objectives:
 - Introduction to gists and wikis
 
 ## GitHub
- 
+
 :::image type="content" source="../media/github-enterprise-platform.png" alt-text="A conceptual image of the GitHub Platform with layers from top to bottom: AI, Collaboration, Productivity, Security, and Scale." border="false":::
 
 **GitHub** is a cloud-based platform that uses Git, a distributed version control system, at its core. The GitHub platform simplifies the process of collaborating on projects and provides a website, command-line tools, and overall flow that allows developers and users to work together.
@@ -22,7 +22,7 @@ The GitHub Enterprise platform is enhancing collaboration through AI-powered pul
 
 ### Collaboration
 
-Collaboration is at the core of everything GitHub does. We know inefficient collaboration results in wasted time and money. We counteract that with a suite of seamless tools that allow collaboration to happen effortlessly. 
+Collaboration is at the core of everything GitHub does. We know inefficient collaboration results in wasted time and money. We counteract that with a suite of seamless tools that allow collaboration to happen effortlessly.
 
 Repositories, Issues, Pull Requests, and other tools help to enable developers, project managers, operation leaders, and others at the same company to work faster together, cut down approval times, and ship more quickly.
 
@@ -66,11 +66,11 @@ You can create a new repository on your personal account or any organization whe
 
 Let’s tackle creating a repository from github.com. 
 
-1. In the upper-right corner of any page, use the  drop-down menu, and select New repository.
+1. In the upper-right corner of any page, use the drop-down menu, and select **New repository**.
 
     :::image type="content" source="../media/2-new-repo-option.png" alt-text="A screenshot of the drop-down menu of the plus sign in the top right corner of GitHub.com, with the first option being New repository." border="false":::
 
-1. Use the Owner drop-down menu to select the account you want to own the repository.
+1. Use the **Owner** drop-down menu to select the account you want to own the repository.
 
     :::image type="content" source="../media/2-selecting-repo-owner.png" alt-text="A screenshot of the drop-down menu of who should be the owner of the new repository." border="false":::
 
