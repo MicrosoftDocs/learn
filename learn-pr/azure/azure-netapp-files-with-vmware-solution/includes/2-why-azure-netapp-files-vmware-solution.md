@@ -39,7 +39,13 @@ You can create up to 255 snapshots per volume. Creating a snapshot doesn't impac
 You can create and maintain snapshots in two ways:
 
 - **Manual**: Create on-demand snapshots by using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
-- **Automatic**: Automated snapshot creation. You can set up snapshot policies by using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
+- **Automatic**: Automate snapshot creation by using snapshot policies or create virtual machine consistent snapshots with [Cloud Backup for Virtual Machines](/azure/azure-vmware/install-cloud-backup-virtual-machines). You can set up snapshot policies by using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
+
+The point of creating volume snapshots is to recover data that has been corrupted or has been accidentally deleted, overwritten, or modified. Azure NetApp Files gives you three ways to recover data by using snapshots:
+
+- Restore one or more files or directories from a snapshot.
+- Restore a snapshot to a new volume. This is called cloning the volume because you're creating an identical copy of the volume in a new location.
+- Restore a snapshot in-place. This is called reverting the volume, because it returns the volume to the state it was in when you created the snapshot.
 
 ## Replication
 
