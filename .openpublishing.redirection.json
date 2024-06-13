@@ -31902,6 +31902,356 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/develop-windows10-apps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/start-here",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/wsl-introduction/index.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/wsl/about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/wsl-introduction/install-and-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/wsl/about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/wsl-introduction/introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/wsl/about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/wsl-introduction/knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/wsl/about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/wsl-introduction/run-basic-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/wsl/about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/wsl-introduction/summary.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/wsl/about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/wsl-introduction/understanding-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/wsl/about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/wsl-introduction/what-is-wsl.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/wsl/about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/write-your-first-windows10-app/0-intro-to-writing-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/start-here",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/write-your-first-windows10-app/1-writing-uwp-app.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/start-here",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/write-your-first-windows10-app/2-writing-wpf-app.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/start-here",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/write-your-first-windows10-app/3-writing-windows-forms-app.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/start-here",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/write-your-first-windows10-app/4-writing-app-using-windows-template-studio.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/start-here",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/write-your-first-windows10-app/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/start-here",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/write-your-first-windows10-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/start-here",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/introduction-to-windows10-dev/1-introduction-to-windows-10-development.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/introduction-to-windows10-dev/2-installing-tools-automatically.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/introduction-to-windows10-dev/3-installing-tools-manually.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/introduction-to-windows10-dev/4-windows-developer-settings.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/introduction-to-windows10-dev/5-windows-insider-program.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/introduction-to-windows10-dev/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/introduction-to-windows10-dev/index.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/implement-data-binding-in-windows-10-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/develop/data-binding/data-binding-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/implement-data-binding-in-windows-10-app/2-introducing-databinding.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/develop/data-binding/data-binding-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/implement-data-binding-in-windows-10-app/3-transferring-data-with-databinding.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/develop/data-binding/data-binding-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/implement-data-binding-in-windows-10-app/4-implementing-inotifypropertychanged-easy-way.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/develop/data-binding/data-binding-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/implement-data-binding-in-windows-10-app/5-creating-interactive-ui.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/develop/data-binding/data-binding-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/implement-data-binding-in-windows-10-app/6-databinding-and-lists.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/develop/data-binding/data-binding-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/implement-data-binding-in-windows-10-app/7-updating-ui-when-collections-change.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/develop/data-binding/data-binding-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/implement-data-binding-in-windows-10-app/8-summary-and-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/develop/data-binding/data-binding-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/implement-data-binding-in-windows-10-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/develop/data-binding/data-binding-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/writing-adaptive-cards/1-introducing-adaptive-cards.yml",
+      "redirect_url": "https://learn.microsoft.com/adaptive-cards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/writing-adaptive-cards/2-engaging-your-users-with-adaptive-cards.yml",
+      "redirect_url": "https://learn.microsoft.com/adaptive-cards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/writing-adaptive-cards/3-adding-video-galleries-factsets-to-adaptive-cards.yml",
+      "redirect_url": "https://learn.microsoft.com/adaptive-cards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/writing-adaptive-cards/4-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/adaptive-cards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/writing-adaptive-cards/index.yml",
+      "redirect_url": "https://learn.microsoft.com/adaptive-cards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/port-windows-applications-to-natively-support-arm/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/arm/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/port-windows-applications-to-natively-support-arm/2-introduction-to-windows-applications-on-arm.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/arm/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/port-windows-applications-to-natively-support-arm/3-exercise-add-an-arm64-build-configuration-to-a-windows-application.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/arm/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/port-windows-applications-to-natively-support-arm/4-exercise-test-an-arm-application-on-an-arm-virtual-machine.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/arm/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/port-windows-applications-to-natively-support-arm/5-exercise-debug-an-arm-application-using-remote-debugger-in-visual-studio.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/arm/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/port-windows-applications-to-natively-support-arm/6-troubleshoot-common-arm-support-issues.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/arm/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/port-windows-applications-to-natively-support-arm/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/arm/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/port-windows-applications-to-natively-support-arm/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/arm/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/port-windows-applications-to-natively-support-arm/index.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/arm/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/narrator-and-voice-input/1-introduction.yml",
+      "redirect_url": "https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/narrator-and-voice-input/2-audio-descriptions-with-narrator.yml",
+      "redirect_url": "https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/narrator-and-voice-input/3-speech-recognition-control.yml",
+      "redirect_url": "https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/narrator-and-voice-input/4-custom-voice-recognition.yml",
+      "redirect_url": "https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/narrator-and-voice-input/5-permissions-and-testing.yml",
+      "redirect_url": "https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/narrator-and-voice-input/6-summary-and-knowledge-check.yml",
+      "redirect_url": "https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/narrator-and-voice-input/index.yml",
+      "redirect_url": "https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/write-inclusive-windows-apps/1-introduction.yml",
+      "redirect_url": "https://inclusive.microsoft.design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/write-inclusive-windows-apps/2-identify-inclusivity-issues.yml",
+      "redirect_url": "https://inclusive.microsoft.design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/write-inclusive-windows-apps/3-support-color-and-high-contrast.yml",
+      "redirect_url": "https://inclusive.microsoft.design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/write-inclusive-windows-apps/4-visual-inclusivity-improvements.yml",
+      "redirect_url": "https://inclusive.microsoft.design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/write-inclusive-windows-apps/5-keyboard-alternatives.yml",
+      "redirect_url": "https://inclusive.microsoft.design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/write-inclusive-windows-apps/6-summary-and-knowledge-check.yml",
+      "redirect_url": "https://inclusive.microsoft.design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/write-inclusive-windows-apps/index.yml",
+      "redirect_url": "https://inclusive.microsoft.design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/integrate-app-into-windows-10-timeline/1-introducing-windows-timeline.yml",
+      "redirect_url": "https://learn.microsoft.com/adaptive-cards/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/integrate-app-into-windows-10-timeline/2-integrating-your-app-into-windows-10-timeline.yml",
+      "redirect_url": "https://learn.microsoft.com/adaptive-cards/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/integrate-app-into-windows-10-timeline/3-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/adaptive-cards/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/integrate-app-into-windows-10-timeline/index.yml",
+      "redirect_url": "https://learn.microsoft.com/adaptive-cards/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/get-started-with-visual-studio-for-windows10-app-dev/1-visual-studio-features.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/windows/apps/get-started/start-here",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/get-started-with-visual-studio-for-windows10-app-dev/2-debugging.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/windows/apps/get-started/start-here",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/get-started-with-visual-studio-for-windows10-app-dev/3-nuget.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/windows/apps/get-started/start-here",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/get-started-with-visual-studio-for-windows10-app-dev/4-advanced-features.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/windows/apps/get-started/start-here",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/get-started-with-visual-studio-for-windows10-app-dev/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/windows/apps/get-started/start-here",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/get-started-with-visual-studio-for-windows10-app-dev/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/windows/apps/get-started/start-here",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/autonomous-ai-implementation-engineer/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
@@ -34073,6 +34423,36 @@
     {
       "source_path": "learn-pr/azure/aks-monitor/9-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/deploy-manage-monitor-wincontainers-aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-administrator-prerequisites/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-104-administrator-prerequisites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-administrator-manage-identities-governance/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-104-manage-identities-governance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-administrator-manage-storage/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-104-manage-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-administrator-manage-compute-resources/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-104-manage-compute-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-administrator-manage-virtual-networks/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-104-manage-virtual-networks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-administrator-monitor-backup-resources/index.yml" ,
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-104-monitor-backup-resources",
       "redirect_document_id": false
     },
     {
