@@ -3,7 +3,7 @@ uid: learn.wwl.configure-updates-azure-arc-enabled-servers
 metadata:
   title: Configure updates of Azure Arc-enabled servers by using Azure Update Manager
   description: "Update Manager  is a unified service that helps manage and govern updates for all your machines. It allows you to monitor Windows and Linux update compliance across Azure and on-premises from a single dashboard."
-  ms.date: 06/12/2024
+  ms.date: 06/13/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: module-intro-to-product
