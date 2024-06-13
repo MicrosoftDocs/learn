@@ -4,12 +4,12 @@ uid: learn.philanthropies.accelerate-nonprofit-funding-solutions-microsoft-copil
 title: Exercise - Write fundraising and grant writing prompts
 metadata:
   title: Exercise - Write fundraising and grant writing prompts
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 6/11/2024
-  author: cohodgeMicrosoft
+  description: This content is a part of the Accelerate nonprofit funding solutions with Microsoft Copilot module.
+  ms.date: 5/30/2024
+  author: CourtneyHMicrosoft
   ms.author: cohodge
-  ms.topic: interactive-tutorial
-  ms.service: artificial-intelligence
+  ms.topic: unit
+  ai-usage: ai-assisted
 durationInMinutes: 1
 content: |
   [!include[](includes/4-exercise-write-fundraising-and-grant-writing-prompts.md)]

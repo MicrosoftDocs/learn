@@ -2,13 +2,13 @@
 uid: learn.philanthropies.accelerate-nonprofit-funding-solutions-microsoft-copilot.exercise-write-donor-relations-and-marketing-prompts
 title: Exercise write donor relations and marketing prompts
 metadata:
-  title: Exercise write donor relations and marketing prompts
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 6/11/2024
-  author: cohodgeMicrosoft
+  title: Exercise - Write donor relations and marketing prompts
+  description: This content is a part of the Accelerate nonprofit funding solutions with Microsoft Copilot module.
+  ms.date: 5/30/2024
+  author: CourtneyHMicrosoft
   ms.author: cohodge
-  ms.topic: interactive-tutorial
-  ms.service: artificial-intelligence
+  ms.topic: unit
+  ai-usage: ai-assisted
 durationInMinutes: 6
 content: |
   [!include[](includes/7-exercise-write-donor-relations-and-marketing-prompts.md)]

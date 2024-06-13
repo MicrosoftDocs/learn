@@ -1,13 +1,14 @@
 ### YamlMime:Module
 uid: learn.philanthropies.accelerate-nonprofit-funding-solutions-microsoft-copilot
 metadata:
-  title: Funding nonprofits by leveraging AI and Copilot
-  description: ""
+  title: Accelerate nonprofit funding solutions with Microsoft Copilot
+  description: "Save time, improve quality, and increase impact in your funding activities. Copilot can also help you learn new skills, discover new opportunities, and enhance your creativity."
   author: cohodgeMicrosoft
   ms.author: cohodge
   ms.topic: module-standard-task-based
   ms.service: artificial-intelligence
-title: Funding nonprofits by leveraging AI and Copilot
+  ai-usage: ai-assisted
+title: Accelerate nonprofit funding solutions with Microsoft Copilot
 summary: Save time, improve quality, and increase impact in your funding activities. Copilot can also help you learn new skills, discover new opportunities, and enhance your creativity.
 abstract: |
   By the end of this module, you'll be able to:
