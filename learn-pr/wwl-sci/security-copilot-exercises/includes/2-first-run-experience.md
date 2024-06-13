@@ -28,13 +28,13 @@ Why is this needed? As a Global Administrator in Microsoft Entra ID, you might n
 
 Once you have user access, you can then assign yourself the necessary access to provision SCUs for Copilot.
 
-1. Open the simulated environment by selecting this link: **[Azure portal](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=1&token=40f793d4-2956-40a4-b11a-6b3d4f92557f)**.
+1. Open the simulated environment by selecting this link: **[Azure portal](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=1&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
 1. You'll start by enabling Access management for Azure resources. To access this setting:
     1. From the Azure portal, select **Microsoft Entra ID**.
     1. From the left navigation panel, expand **Manage**.
     1. From the left navigation panel, scroll down and select **Properties**.
-    1. Enable the toggle switch for **Access management for Azure resources**.
+    1. Enable the toggle switch for **Access management for Azure resources**, then select **Save**..
 
 1. Now that you can view all resources and assign access in any subscription or management group in the directory, assign yourself the Owner role for the Azure subscription.
     1. From the blue banner on the top of the page, select **Microsoft Azure** to return to the landing page of the Azure portal.
@@ -59,7 +59,7 @@ In this task, you go through the steps of provisioning capacity for your organiz
 
 For this exercise, you provision capacity through Copilot for Security. When you first open Copilot for Security, a wizard guides you through the steps in setting up capacity for your organization.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
 
 1. Open the browser tab for **Microsoft Copilot for Security**.
