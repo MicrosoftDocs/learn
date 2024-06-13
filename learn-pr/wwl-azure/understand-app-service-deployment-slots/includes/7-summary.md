@@ -1,4 +1,3 @@
-
 In this module, you learned how to:
 
 * Describe the benefits of using deployment slots

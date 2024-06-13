@@ -5,10 +5,10 @@ metadata:
   title: "Exercise: Getting Started with Playwright"
   description: Let’s begin by installing Playwright, then we explore the tool and validate that we can run the example tests that come when installing Playwright.
   ms.date: 05/08/2024
-  author: japhletnwamu
-  ms.author: japhletnwamu
+  ms.author: debbieobrien
+  author: debs-obrien
+  ms.manager: jamont
   ms.topic: unit
-  ms.custom: team=cloud_advocates
 durationInMinutes: 10
 content: |
   [!include[](includes/3-set-up-playwright.md)]

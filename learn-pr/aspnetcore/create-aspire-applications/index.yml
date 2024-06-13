@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.create-aspire-application
 metadata:
-  title: Create a .NET Aspire application
+  title: Create a .NET Aspire project
   description: "Learn how to create cloud-native applications from scratch or add orchestration to an existing app by using the .NET Aspire stack in .NET 8."
   ms.date: 2/6/2024
   author: camsoper
   ms.author: casoper
   ms.topic: module
   ms.service: aspnet-core
-title: Create a .NET Aspire application
+title: Create a .NET Aspire project
 summary: "Learn how to create cloud-native applications from scratch or add orchestration to an existing app by using the .NET Aspire stack in .NET 8."
 abstract: |
   By the end of this module, you're going to be able to:

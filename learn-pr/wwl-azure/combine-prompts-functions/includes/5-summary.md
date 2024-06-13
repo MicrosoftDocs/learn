@@ -1,4 +1,4 @@
-In this module, you learned how the Semantic Kernel SDK can connect code to large language models and extend functionality. You learned how to create and invoke native functions that perform tasks. You also combined native functions with semantic prompts to build an intelligent recommendation agent. Great work!
+In this module, you learned how nest functions within prompts to extend the functionality of your AI agent. You created functions and prompts that work together to provide personalized music and concert suggestions based on user data. Great work!
 
 ## Reference materials
 

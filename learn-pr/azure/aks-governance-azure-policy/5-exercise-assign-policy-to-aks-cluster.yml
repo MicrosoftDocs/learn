@@ -8,6 +8,7 @@ metadata:
   author: mosabami
   ms.author: aayodeji
   ms.topic: unit
+  ms.custom: devx-track-azurecli
 durationInMinutes: 45
 content: | 
   [!include[](includes/5-exercise-assign-policy-to-aks-cluster.md)]
