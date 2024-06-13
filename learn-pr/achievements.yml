@@ -3533,6 +3533,36 @@ achievements:
   title: Secure MySQL database and Key Vault using a private endpoint
   summary: You now have an Azure Spring Apps application deployed into a virtual network. In this module, you'll implement a configuration in which only connections that originate from within your virtual network are accepted.
   iconUrl: /training/achievements/5-secure-mysql-database-key-vault-using-private-endpoint.svg
+- uid: learn.azure-admin-prerequisites.trophy
+  type: trophy
+  title: Prerequisites for Azure administrators
+  summary: Learn the basic concepts you'll need to know as an Azure administrator.
+  iconUrl: /training/achievements/azure-administrator-prerequisites.svg
+- uid: learn.azure-admin-manage-identities-governance.trophy
+  type: trophy
+  title: Manage identities and governance for Azure administrators
+  summary: Learn how to manage users, subscriptions, role-based access control (RBAC), and governance in Azure. 
+  iconUrl: /training/achievements/azure-administrator-manage-identities-governance.svg
+- uid: learn.azure-admin-manage-storage.trophy
+  type: trophy
+  title: Implement and manage storage for Azure administrators
+  summary: Learn how to manage storage as an Azure administrator.
+  iconUrl: /training/achievements/azure-administrator-manage-storage.svg
+- uid: learn.azure-admin-manage-compute-resources.trophy
+  type: trophy
+  title: Deploy and manage compute resources for Azure administrators
+  summary: Learn how to deploy and configure Azure compute resources.
+  iconUrl: /training/achievements/azure-administrator-manage-compute-resources.svg
+- uid: learn.azure-admin-manage-virtual-networks.trophy
+  type: trophy
+  title: Configure and manage virtual networks for Azure administrators
+  summary: Learn how to configure and manage key Azure network capabilities.
+  iconUrl: /training/achievements/azure-administrator-manage-virtual-networks.svg
+- uid: learn.azure-admin-monitor-backup-resources.trophy
+  type: trophy
+  title: Monitor and back up resources for Azure administrators
+  summary: Learn how to monitor and back up Azure resources.
+  iconUrl: /training/achievements/azure-administrator-monitor-backup-resources.svg
 - uid: learn.azure.intro-to-immersive-reader.badge
   type: badge
   title: Introduction to Immersive Reader
