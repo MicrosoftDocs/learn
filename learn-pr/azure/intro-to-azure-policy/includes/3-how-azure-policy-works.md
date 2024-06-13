@@ -18,24 +18,22 @@ Here, we cover some concepts you need to understand in advance to work with Azur
 
 Azure policy covers all Azure resources, including Arc-enabled resources. For example, you can extend the coverage of your controls over Windows and Linux physical servers, and virtual machines hosted outside of Azure, on your corporate network, or other cloud providers. Using Azure Policy is free for Azure resources, but there's a fee associated for an Arc resource.
 
+Azure Arc is a service that allows you to manage resource types hosted outside of Azure. The following resource types are supported:
+
+- Physical and Virtual Windows or Linux Servers.
+- Kubernetes clusters.
+- Azure data services such as Azure SQL Managed Instance.
+- SQL Server.
+- Provision, resize, delete and manage virtual machines based on VMware vSphere or Azure Stack HCI and enable VM self-service through role-based access.
+
 ## Related services
 
-* **Azure Blueprints:** A policy assignment is an artifact type from Azure Blueprints, meaning you can use Azure Blueprints to assign policy assignments. You can assign a policy through .NET, JavaScript, Python, REST API, PowerShell, Azure CLI, ARM template, Bicep, and Terraform as well.
-* **Azure Resource Graph:** Through Azure Resource Graph, you can run queries to get information about compliance details by assignments and resource types, list all noncompliant resources, summarize resource compliance by state, and more.
-* **Azure Security Center:** The recommendations from Azure Security Center come from built-in security policies initiatives.
+- **Azure Blueprints:** A policy assignment is an artifact type from Azure Blueprints, meaning you can use Azure Blueprints to assign policy assignments. You can assign a policy through .NET, JavaScript, Python, REST API, PowerShell, Azure CLI, ARM template, Bicep, and Terraform as well.
+- **Azure Resource Graph:** Through Azure Resource Graph, you can run queries to get information about compliance details by assignments and resource types, list all noncompliant resources, summarize resource compliance by state, and more.
+- **Azure Security Center:** The recommendations from Azure Security Center come from built-in security policies initiatives.
 
 ## Costs of Azure Policy
 
-If you're using Azure Policy on **Azure Resources**, there are **no costs** associated. However, if you plan use the capabilities of Azure Policy to cover an **Azure Arc Resource**, there are **specific scenarios** where you're **charged**. Refer to the [Azure Policy Pricing](https://azure.microsoft.com/pricing/details/azure-policy/) page for reference.
+There are no costs to use Azure Policy for your Azure resources.
 
-* Azure Policy guest configuration (includes Azure Automation change tracking, inventory, state configuration): $6/Server/Month
-* Kubernetes Configuration: First 6 vCPUs are free, $2/vCPU/month
-
-> [!NOTE]
->Azure Arc is a service that allows you to manage some resource types hosted outside of Azure. Today, the following resource types are supported:
->
->* Physical and Virtual Windows or Linux Servers
->* Kubernetes clusters
->* Azure data services such as Azure SQL Managed Instance
->* SQL Server
->* Provision, resize, delete and manage virtual machines based on VMware vSphere or Azure Stack HCI and enable VM self-service through role-based access.
+If you plan use Azure Policy to cover an Azure Arc resource, there are specific scenarios where you're charged a fee. To estimate costs, use [Azure Policy pricing](https://azure.microsoft.com/pricing/details/azure-policy/) or the [Pricing calculator](https://azure.microsoft.com/pricing/calculator/).

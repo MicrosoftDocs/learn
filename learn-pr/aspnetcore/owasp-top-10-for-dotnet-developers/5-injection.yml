@@ -2,9 +2,9 @@
 uid: learn.owasp-top-10-for-dotnet-developers.injection
 title: Injection
 metadata:
-  title: injection
+  title: Injection
   description: "OWASP Top 10 for .NET Developers. Injection."
-  ms.date: 06/12/2023
+  ms.date: 05/31/2024
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: unit
@@ -27,6 +27,6 @@ quiz:
     - content: "Using parameterized queries."
       isCorrect: false
       explanation: "Use parameterized queries where a direct SQL query must be used."
-    - content: "At least one or combinations of few techniques should be used, including Entity Framework and input validation"
+    - content: "You should use at least one or combinations of few techniques, including Entity Framework and input validation"
       isCorrect: true
-      explanation: "With username validation as a minimum, any of the methods can be used."
+      explanation: "With username validation as a minimum, you can use any of the methods."

@@ -14,7 +14,7 @@ For this exercise you're logged in as Avery Howard and have the Copilot owner ro
 
 In this task, you start by attempting a file upload but realize that there's no way to actually upload a file. This is an indication that the file upload option isn't configured. As a user with the Copilot owner role, you enable file uploads and then test using a file as a knowledge base for Copilot.
 
-1. Open the simulated environment by selecting this link: **Microsoft Copilot for Security**.
+1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security](https://app.highlights.guide/start/89f9d04d-283c-4788-8214-22e4d5b4b171?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
 1. To access file uploads, select the sources icon from the prompt bar.
 

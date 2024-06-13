@@ -116,7 +116,7 @@ You have to use Exchange Online PowerShell to turn off auditing.
 1. Run this PowerShell command to disable auditing:
 
    ```powershell
-   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
+   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
    ```
 
 ## Knowledge check

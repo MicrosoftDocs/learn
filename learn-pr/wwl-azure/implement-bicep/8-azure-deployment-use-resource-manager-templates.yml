@@ -8,8 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: yasa
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.custom: N/A, devx-track-bicep
 durationInMinutes: 60
 content: |
   [!include[](includes/8-azure-deployment-use-resource-manager-templates.md)]

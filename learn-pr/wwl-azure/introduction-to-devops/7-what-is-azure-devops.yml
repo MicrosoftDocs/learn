@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
+  ms.custom: devx-track-dotnet
 durationInMinutes: 2
 content: |
   [!include[](includes/7-what-is-azure-devops.md)]

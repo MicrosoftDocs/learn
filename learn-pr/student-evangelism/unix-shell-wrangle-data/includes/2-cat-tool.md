@@ -127,5 +127,5 @@ The third use of the `cat` command is to concatenate copies of the contents of f
 1. If you run the `ls` command again, you'll see the new file in your directory:
 
    ```output
-   file1   files2   NASA-logs-1995.txt   NASA-software-API.txt
+   file1   file2   NASA-logs-1995.txt   NASA-software-API.txt
    ```

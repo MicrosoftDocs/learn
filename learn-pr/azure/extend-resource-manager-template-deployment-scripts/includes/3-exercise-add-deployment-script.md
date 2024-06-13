@@ -76,7 +76,7 @@ Next, you need to create a user-assigned managed identity. Given the infrastruct
 
 1. Edit the `resources` section of *azuredeploy.json* to include:
 
-    :::code language="json" source="code/3-template-with-deploymentscript.json" range="61-65,107" :::
+    :::code language="json" source="code/3-template-with-deploymentscript.json" range="62-66,108" :::
 
 1. Save the template.
 
@@ -90,7 +90,7 @@ Next, you need to create a user-assigned managed identity. Given the infrastruct
 
 1. Under the resource definitions, add:
 
-    :::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="44-47" :::
+    :::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="45-48" :::
 
 1. Save the template.
 
@@ -110,7 +110,7 @@ The role assignment also needs a GUID name. You can use the [`guid`](/azure/azur
 
 1. Edit the `resources` section of *azuredeploy.json* to include:
 
-    :::code language="json" source="code/3-template-with-deploymentscript.json" range="67-77,107" :::
+    :::code language="json" source="code/3-template-with-deploymentscript.json" range="68-78,108" :::
 
 1. Save the template.
 
@@ -124,7 +124,7 @@ The role assignment also needs a GUID name. You can use the [`guid`](/azure/azur
 
 1. Under the resource definitions, add:
 
-    :::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="49-56" :::
+    :::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="50-57" :::
 
 1. Save the template.
 
@@ -142,11 +142,11 @@ Now, you have all the prerequisites for the deployment script. You'll start with
 
 1. Edit the `resources` section of *azuredeploy.json* to include:
 
-    :::code language="json" source="code/3-template-with-deploymentscript.json" range="79-93,106-107" :::
+    :::code language="json" source="code/3-template-with-deploymentscript.json" range="80-94,107-108" :::
 
 1. Add a `properties` section to the resource to define the script and the other required values.
 
-    :::code language="json" source="code/3-template-with-deploymentscript.json" range="95-106" :::
+    :::code language="json" source="code/3-template-with-deploymentscript.json" range="96-107" :::
 
 1. Save the template.
 
@@ -160,11 +160,11 @@ Now, you have all the prerequisites for the deployment script. You'll start with
 
 1. Under the resource definitions, add:
 
-    :::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="58-67, 80-84" :::
+    :::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="59-68, 81-85" :::
 
 1. Add a `properties` section to the resource to define the script and the other required values.
 
-    :::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="68-79" :::
+    :::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="69-80" :::
 
 1. Save the template.
 
@@ -178,7 +178,7 @@ Now that you have a deployment script uploading a file into Azure Blob Storage, 
 
 After the `resources` section of the ARM template, add an output that references the URI for the file as reported by the deployment script.
 
-:::code language="json" source="code/3-template-with-deploymentscript.json" range="109-114":::
+:::code language="json" source="code/3-template-with-deploymentscript.json" range="110-115":::
 
 ::: zone-end
 
@@ -186,7 +186,7 @@ After the `resources` section of the ARM template, add an output that references
 
 At the bottom of the file, after the resource definitions, add an output that references the URI for the file as reported by the deployment script.
 
-:::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="86":::
+:::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="87":::
 
 ::: zone-end
 
@@ -196,7 +196,7 @@ Your template should look like:
 
 ::: zone pivot="jsoncli,jsonpowershell"
 
-:::code language="json" source="code/3-template-with-deploymentscript.json" highlight="9-12, 61-107, 109-114" :::
+:::code language="json" source="code/3-template-with-deploymentscript.json" highlight="9-12, 62-108, 110-115" :::
 
 ::: zone-end
 
