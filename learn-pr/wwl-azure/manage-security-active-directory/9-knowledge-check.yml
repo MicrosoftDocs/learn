@@ -4,8 +4,66 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/10/2024
+  ms.date: 06/13/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
 durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A system administrator needs to delegate password reset permissions in Active Directory to a non-administrative user. What is the correct sequence of steps to accomplish this task?"
+    choices:
+    - content: "Open ADUC, right click the OU, click Add, select the user or group, select Delegate Control, choose Reset user passwords and force password change at next logon, review selections, click Finish."
+      isCorrect: false
+      explanation: "Incorrect. The sequence of steps is not correct. Delegate Control should be selected before adding the user or group to whom the permission is delegated."
+    - content: "Open ADUC, select Delegate Control, click Add, select Reset user passwords and force password change at next logon, choose the user or group, review selections, click Finish."
+      isCorrect: false
+      explanation: "Incorrect. The sequence of steps is not correct. The user or group to whom the permission is delegated should be selected before choosing the tasks to delegate."
+    - content: "Open ADUC, right click the OU, select Delegate Control, click Add, select the user or group, choose Reset user passwords and force password change at next logon, review selections, click Finish."
+      isCorrect: true
+      explanation: "Correct. This is the correct sequence of steps to delegate password reset permissions in Active Directory to a non-administrative user."
+  - content: "A system administrator needs to allow certain users to create symbolic links from the computer they are signed in to. Which user right assignment should the administrator configure?"
+    choices:
+    - content: "Debug programs"
+      isCorrect: false
+      explanation: "Incorrect. The 'Debug programs' right allows users to attach a debugger to processes within the operating system kernel, not create symbolic links."
+    - content: "Create global objects"
+      isCorrect: false
+      explanation: "Incorrect. The 'Create global objects' right allows users to create global objects that are available to all sessions, not symbolic links."
+    - content: "Create symbolic links"
+      isCorrect: true
+      explanation: "Correct. The 'Create symbolic links' right allows users to create symbolic links from the computer they are signed in to."
+  - content: "This account supports Kerberos AES (Advanced Encryption Standard) 256-bit encryption."
+    choices:
+    - content: "This account supports Kerberos AES (Advanced Encryption Standard) 256-bit encryption."
+      isCorrect: false
+      explanation: "Incorrect. Enabling Kerberos AES 256-bit encryption strengthens the security of an administrative user account."
+    - content: "Don't require Kerberos preauthentication."
+      isCorrect: true
+      explanation: "Correct. Kerberos preauthentication reduces the risk of replay attacks. That's why you should not enable this option."
+    - content: "Account is sensitive and cannot be delegated."
+      isCorrect: false
+      explanation: "Incorrect. Enabling the setting to block delegation strengthens the security of an administrative user account."
+  - content: "Which feature allows you to configure TGT (Ticket-granting tickets) lifetime and access-control conditions for a user?"
+    choices:
+    - content: "Authentication policies."
+      isCorrect: true
+      explanation: "Correct. Authentication policies allow you to configure TGT lifetime and access control conditions for a user, service, or computer account."
+    - content: "Authentication policy silos."
+      isCorrect: false
+      explanation: "Incorrect. Authentication policy silos allow administrators to assign authentication policies to user, computer, and service accounts but does not control the contents of those policies."
+    - content: "Protected Users group."
+      isCorrect: false
+      explanation: "Incorrect. While adding an account to the protected users group increases security, it does not allow you to configure TGT lifetime and access control conditions."
+  - content: "Which of the following problematic user accounts you should check for regularly?"
+    choices:
+    - content: "Users with passwords that do not expire."
+      isCorrect: true
+      explanation: "Correct. Accounts should regularly have new passwords assigned. When a password is compromised, an account that has its password regularly updated will eventually change the compromised password to a new one."
+    - content: "Users with few administrative permissions."
+      isCorrect: false
+      explanation: "Incorrect. Accounts should have a minimal set of permissions to conform to the principle of least privilege rather than being loaded with permissions. If an account is compromised, it is better to have the compromised account be as limited as possible rather than over-privileged."
+    - content: "Users with complex passwords."
+      isCorrect: false
+      explanation: "Incorrect. Accounts should have complex passwords rather than simple ones that are easy to guess or attack using brute force methods."

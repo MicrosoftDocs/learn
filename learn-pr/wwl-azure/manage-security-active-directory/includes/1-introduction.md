@@ -1,4 +1,4 @@
-This module covers the important topic of configuring user rights in a computer system. It emphasizes the principle of least privilege, which is a crucial aspect of maintaining secure systems.
+This module covers the important topic of configuring user rights in Active Directory. It emphasizes the principle of least privilege, which is a crucial aspect of maintaining secure systems.
 
 ## Scenario
 
@@ -6,10 +6,12 @@ Imagine you are an IT administrator for a large corporation. Your company has a 
 
 ## Learning Objectives
 
-The topics covered in this module include
+By the end of this module, you'll be able to:
 
-\- Understanding and Implementing User Rights and Privileges
-
-## Goals
-
-By the end of this module, you will be able to configure user rights effectively, ensuring that each user has the necessary privileges to perform their tasks, while minimizing potential security risks.
+ -  Configure user account rights.
+ -  Configure user account rights to restrict access.
+ -  Delegate permissions in Active Directory.
+ -  Protect User Accounts with the Protected Users group.
+ -  Describe Windows Defender Credential Guard.
+ -  Block Windows NTLM authentication.
+ -  Locate problematic accounts.

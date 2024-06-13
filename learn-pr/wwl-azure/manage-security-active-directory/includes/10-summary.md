@@ -1,1 +1,19 @@
-In this module, you have learnt about the importance of configuring user rights and following the principle of least privilege. This principle involves granting users only the rights and privileges they need to perform their tasks, and no more. This way, if an unauthorized user compromises an account, they gain access only to the limited set of privileges assigned to that account. You also learnt about the need for IT staff to have separate accounts for day-to-day activities and administrative tasks. The module also covered various user rights assignment policies such as Function Access Credential Manager, Act as part of the operating system, Adjust memory quotas for a process, and many others. The main takeaways from this module are understanding the significance of the principle of least privilege in maintaining security and how to implement it. You also learnt about the different user rights assignment policies and their functions. These policies determine what actions users can perform, such as changing the system time, creating a page file, debugging programs, and many others. Understanding these policies is crucial in managing user rights and maintaining system security. Additional Reading: 1. \[Implementing Least Privilege Administrative Models\](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) 2. \[User Rights Assignment\](/windows/security/threat-protection/security-policy-settings/user-rights-assignment) 3. \[Understanding User and Group Accounts\](/windows-server/identity/ad-ds/plan/understanding-user-and-group-accounts) 4. \[Principle of Least Privilege\](https://www.csoonline.com/article/3334617/what-is-the-principle-of-least-privilege-polp-a-comprehensive-guide.html)
+In this module, you learned about the importance of configuring user rights and following the principle of least privilege. Least privilege involves granting users only the rights and privileges they need to perform their tasks, and no more. This way, if an unauthorized user compromises an account, they gain access only to the limited set of privileges assigned to that account. You also learned about the need for IT staff to have separate accounts for day-to-day activities and administrative tasks. The module also covered various user rights assignment policies such as Function Access Credential Manager, Act as part of the operating system, Adjust memory quotas for a process, and many others.
+
+## Learning objectives
+
+You should now be able to:
+
+ -  Configure user account rights.
+ -  Configure user account rights to restrict access.
+ -  Delegate permissions in Active Directory.
+ -  Protect User Accounts with the Protected Users group.
+ -  Describe Windows Defender Credential Guard.
+ -  Block Windows NTLM authentication.
+ -  Locate problematic accounts.
+
+## Additional resources
+
+ -  [Implementing Least Privilege Administrative Models](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models)
+ -  [User Rights Assignment](/windows/security/threat-protection/security-policy-settings/user-rights-assignment)
+ -  [Understanding User and Group Accounts](/windows-server/identity/ad-ds/plan/understanding-user-and-group-accounts)
