@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-administer-active-directory-domain-services.summary
+title: summary
+metadata:
+  title: summary
+  description: "summary"
+  ms.date: 06/13/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+content: |
+  [!include[](includes/8-summary.md)]

@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-administer-active-directory-domain-services
+metadata:
+  title: Guided project - Administer Active Directory Domain Services
+  description: "This guided project helps prepare you to manage Active Directory Domain services, including creating and deploying domains, configuring group policy objects, establishing and enforcing passwords, and maintaining security of Active Directory."
+  ms.date: 06/13/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: module-guided-project
+  ms.service: active-directory
+  ai-usage: human-only
+title: Guided project - Administer Active Directory Domain Services
+summary: |
+  This guided project helps prepare you to manage Active Directory Domain services, including creating and deploying domains, configuring group policy objects, establishing and enforcing passwords, and maintaining security of Active Directory.
+
+  [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
+abstract: |
+  In this module, you'll practice how to:
+
+  -   Configure Domain Controller Operations
+
+  -   Configure User Management Operations
+
+  -   Manage Password Policies
+
+  -   Configure Security Settings
+prerequisites: |
+  Knowledge of and experience working with:
+
+  -   Windows Server.
+
+  -   Core networking technologies.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- active-directory
+subjects:
+- architecture
+- device-management
+- infrastructure
+units:
+- learn.wwl.guided-project-administer-active-directory-domain-services.introduction
+- learn.wwl.guided-project-administer-active-directory-domain-services.prepare
+- learn.wwl.guided-project-administer-active-directory-domain-services.exercise-configure-domain-controller-operations
+- learn.wwl.guided-project-administer-active-directory-domain-services.exercise-configure-user-management-operations
+- learn.wwl.guided-project-administer-active-directory-domain-services.exercise-manage-password-policies
+- learn.wwl.guided-project-administer-active-directory-domain-services.exercise-configure-security-settings
+- learn.wwl.guided-project-administer-active-directory-domain-services.knowledge-check
+- learn.wwl.guided-project-administer-active-directory-domain-services.summary
+badge:
+  uid: learn.wwl.guided-project-administer-active-directory-domain-services.badge

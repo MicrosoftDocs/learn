@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-administer-active-directory-domain-services.exercise-configure-security-settings
+title: exercise-configure-security-settings
+metadata:
+  title: exercise-configure-security-settings
+  description: "exercise-configure-security-settings"
+  ms.date: 06/13/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+content: |
+  [!include[](includes/6-exercise-configure-security-settings.md)]
