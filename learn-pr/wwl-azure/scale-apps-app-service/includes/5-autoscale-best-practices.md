@@ -1,4 +1,3 @@
-
 If you're not following good practices when creating autoscale settings, you can create conditions that lead to undesirable results. In this unit, you'll learn how to avoid creating rules that conflict with each other.
 
 ## Autoscale concepts

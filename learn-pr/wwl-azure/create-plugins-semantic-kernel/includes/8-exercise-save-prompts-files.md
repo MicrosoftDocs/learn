@@ -1,8 +1,21 @@
-Suppose you want to suggest travel destinations and activities for a user. For this exercise, you practice creating prompts and saving them to files. You also practice using variables and calling functions inside the prompt templates as well. Let's get started!
+Suppose you want to suggest travel destinations and recommend activities for a user. In this exercise, you practice creating prompts and saving them to files. Let's get started!
 
 1. Open the Visual Studio Code project you created in the previous exercise.
 
 1. Remove the `prompt` and `input` variables you created in the previous exercise.
+
+    ```csharp
+    using Microsoft.SemanticKernel;
+    using Microsoft.SemanticKernel.Plugins.Core;
+
+    var builder = Kernel.CreateBuilder();
+    builder.AddAzureOpenAIChatCompletion(
+        "your-deployment-name",
+        "your-endpoint",
+        "your-api-key",
+        "deployment-model");
+    var kernel = builder.Build();
+    ```
 
 1. Create the following folders in your project:
 
@@ -48,7 +61,7 @@ Suppose you want to suggest travel destinations and activities for a user. For t
     </message>
     <message role="assistant">Santorini, Greece</message>
 
-    <message role="user"> {{$input}}</message>
+    <message role="user">{{$input}}</message>
     ```
 
     This prompt helps the large language model (LLM) filter the user's input and retrieve just the destination from the text.
@@ -129,14 +142,12 @@ Suppose you want to suggest travel destinations and activities for a user. For t
     ```html
     You are a travel assistant. You are helpful, creative, and very friendly.
     Consider your previous conversation with the traveler: 
-    {{ConversationSummaryPlugin.SummarizeConversation $history}}
+    {{$history}}
 
     The traveler would like some activity recommendations, things to do, and points 
-    of interest for their trip. They want to go to {{TravelPlugins.GetDestination $destination}}.
+    of interest for their trip. They want to go to {{$destination}}.
     Please provide them with a list of things they might like to do at their chosen destination.
     ```
-
-    In this prompt, you call other functions using the Semantic Kernel SDK prompt template syntax. `ConversationSummaryPlugin.SummarizeConversation` summarizes the provided conversation history, and the `TravelPlugins.GetDestination` you created earlier retrieves the destination from the user's input.
 
     Now let's import and test your new prompts!
 
@@ -147,10 +158,10 @@ Suppose you want to suggest travel destinations and activities for a user. For t
     using Microsoft.SemanticKernel.Plugins.Core;
 
     var builder = Kernel.CreateBuilder();
-    builder.Services.AddAzureOpenAIChatCompletion(
-        "your-resource-name",
+    builder.AddAzureOpenAIChatCompletion(
+        "your-deployment-name",
         "your-endpoint",
-        "your-resource-key",
+        "your-api-key",
         "deployment-model");
     var kernel = builder.Build();
 
@@ -158,22 +169,18 @@ Suppose you want to suggest travel destinations and activities for a user. For t
     var prompts = kernel.ImportPluginFromPromptDirectory("Prompts/TravelPlugins");
 
     ChatHistory history = [];
-    string input = @"I'm planning an anniversary trip with my 
-        spouse. We like hiking, mountains, and beaches. Our 
-        travel budget is $15000";
+    string input = @"I'm planning an anniversary trip with my spouse. We like hiking, 
+        mountains, and beaches. Our travel budget is $15000";
 
     var result = await kernel.InvokeAsync<string>(prompts["SuggestDestinations"],
-        new() {
-            { "input", input },
-        }
-    );
+        new() {{ "input", input }});
 
     Console.WriteLine(result);
     history.AddUserMessage(input);
     history.AddAssistantMessage(result);
     ```
 
-    In this code, you import the plugins you created, and the built-in plugin you referenced in your `SuggestActivities` prompt. You also use a `ChatHistory` object to store the user's conversation. Finally, you pass some information to the `SuggestDestinations` prompt and record the results. Next, let's ask the user where they want to go so we can recommend some activities to them.
+    In this code, you import the plugins you created. You also use a `ChatHistory` object to store the user's conversation. Finally, you pass some information to the `SuggestDestinations` prompt and record the results. Next, let's ask the user where they want to go so we can recommend some activities to them.
 
 1. Add the following code to your Program.cs file:
 
@@ -190,7 +197,7 @@ Suppose you want to suggest travel destinations and activities for a user. For t
     Console.WriteLine(result);
     ```
 
-    In this code, you get some input from the user to find out where they want to go. Then you call the `SuggestActivities` prompt with the destination and the conversation history to recommend activities at the destination.
+    In this code, you get some input from the user to find out where they want to go. Then you call the `SuggestActivities` prompt with the destination and the conversation history.
 
 1. To test the code, enter `dotnet run` in the terminal.
 

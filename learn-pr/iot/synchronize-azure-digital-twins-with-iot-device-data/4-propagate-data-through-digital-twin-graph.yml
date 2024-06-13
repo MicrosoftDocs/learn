@@ -8,6 +8,7 @@ metadata:
   author: baanders
   ms.author: baanders
   ms.topic: unit
+  ms.custom: devx-track-azurecli
 durationInMinutes: 30
 content: |
   [!include[](includes/4-propagate-data-through-digital-twin-graph.md)]

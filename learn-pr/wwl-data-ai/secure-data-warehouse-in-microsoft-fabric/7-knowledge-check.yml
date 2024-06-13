@@ -44,14 +44,4 @@ quiz:
     - content: The user has both permissions, and it causes a conflict.
       isCorrect: false
       explanation: Incorrect. There isn't a conflict. The DENY statement always supersedes the GRANT statement.
-  - content: What is required to secure a warehouse in Microsoft Fabric?
-    choices:
-    - content: A Microsoft Fabric trial license with the Fabric preview enabled in your tenant.
-      isCorrect: true
-      explanation: Correct. This setup allows access to the necessary features to secure a warehouse in Microsoft Fabric.
-    - content: A standard Microsoft Fabric license
-      isCorrect: false
-      explanation: Incorrect. A standard license doesn't provide access to the Fabric preview needed for this task.
-    - content: A Microsoft Fabric trial license without the Fabric preview enabled.
-      isCorrect: false
-      explanation: Incorrect. The Fabric preview must be enabled in the tenant for this task.
+
