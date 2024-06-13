@@ -41,7 +41,7 @@ To set up a Blazor Hybrid project to work with, we use Visual Studio Code.
 
     ![Screenshot of the Visual Studio Code Create New Project screen and the .NET MAUI Blazor App template.](../media/visual-studio-code-create-new-project.png)
 
-3. Create a new folder in the pop up names **BlazorHybridApp** and select **Select Folder**.
+3. Create a new folder in the pop-up named **BlazorHybridApp** and select **Select Folder**.
 
 4. Name the project **BlazorHybridApp** and press **Enter** to confirm.
 
