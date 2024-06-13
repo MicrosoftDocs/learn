@@ -1,8 +1,8 @@
 The templating language of the Semantic Kernel SDK allows you to create dynamic prompts. The language supports three features:
 
-1. Using variables.
-1. Calling external functions.
-1. Passing arguments to functions.
+- Using variables.
+- Calling external functions.
+- Passing arguments to functions.
 
 To embed expressions in your prompts, the templating language uses curly brackets `{{...}}` and variables are denoted by a dollar sign `$`. The functions you call must be part of the plugins you load into the kernel. For example, if you want to call a function within a prompt, you can use the following syntax:
 
@@ -19,7 +19,7 @@ string history = @"In the heart of my bustling kitchen, I have embraced the chal
     With a mix of picky eaters and allergies, my culinary journey revolves around 
     exploring a plethora of vegetarian recipes.
 
-    One of my kids is a picky eater with an aversion to anything green,  while another 
+    One of my kids is a picky eater with an aversion to anything green, while another 
     has a peanut allergy that adds an extra layer of complexity to meal planning. 
     Armed with creativity and a passion for wholesome cooking, I've embarked on a 
     flavorful adventure, discovering plant-based dishes that not only please the 
