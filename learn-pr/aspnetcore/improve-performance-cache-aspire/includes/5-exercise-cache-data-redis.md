@@ -106,7 +106,7 @@ Install the .NET Aspire workload using the .NET CLI:
 
 ## Clone and modify the sample app
 
-Let's use `git` to obtain a sample .NET Aspire app. The app doesn't yet have caching set up:
+Let's use `git` to obtain a sample app built with .NET Aspire. The app doesn't yet have caching set up:
 
 1. In the command line, browse to a folder of your choice where you can work with code.
 1. Execute the following command to clone the **Northern Mountains eShop** sample application:

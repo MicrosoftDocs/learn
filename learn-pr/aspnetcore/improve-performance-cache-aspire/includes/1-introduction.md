@@ -9,5 +9,5 @@ In this module, you'll learn how .NET Aspire components make it simple to connec
 By the end of this module, you'll be able to:
 
 - Choose a type of Redis caching for a specific performance optimization requirement.
-- Use a Redis distributed cache to increase performance in a .NET Aspire app.
-- Use a Redis output cache to store complete HTML responses in a .NET Aspire app.
+- Use a Redis distributed cache to increase performance in a .NET Aspire project.
+- Use a Redis output cache to store complete HTML responses in a .NET Aspire project.

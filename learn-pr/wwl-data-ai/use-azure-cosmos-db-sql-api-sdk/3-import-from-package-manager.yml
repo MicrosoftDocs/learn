@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
+  ms.custom: devx-track-dotnet
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

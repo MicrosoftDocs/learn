@@ -2,9 +2,9 @@
 uid: learn.owasp-top-10-for-dotnet-developers.security-misconfiguration
 title: Security misconfiguration
 metadata:
-  title: security-misconfiguration
+  title: Security misconfiguration
   description: "OWASP Top 10 for .NET Developers. Security misconfiguration."
-  ms.date: 06/12/2023
+  ms.date: 05/31/2024
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: unit
@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "Schema Definition Language."
       isCorrect: false
-      explanation: "Not quite"
+      explanation: "Not quite."
     - content: "Security Development Lifecycle."
       isCorrect: true
-      explanation: "Correct! You may come across similar acronym SDLC, which means the same."
+      explanation: "Correct! You might come across the similar acronym SDLC, which means the same."
     - content: "Supplier Document List."
       isCorrect: false
       explanation: "Almost there!"

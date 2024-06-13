@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.combine-prompts-functions
+metadata:
+  title: Combine Prompts and Functions
+  description: "Learn how combining native functions with prompts can accomplish customized tasks with the Semantic Kernel SDK."
+  ms.date: 06/13/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure-ai-services
+  ai-usage: human-only
+title: Combine Prompts and Functions
+summary: This module demonstrates how&nbsp;to combine functions and prompts with the Semantic Kernel SDK. Nesting functions&nbsp;within prompts can allow your code to complete tasks large language models can't typically complete on their own.
+abstract: |
+  -   Practice creating plugins with the Semantic Kernel SDK.
+
+  -   Learn how to combine prompts with native functions.
+prerequisites: |
+  -   Experience programming in C#.
+
+  -   Visual Studio Code IDE installed.
+
+  -   Familiarity with Azure and the Azure portal.
+
+  -   Access to Azure OpenAI Services.
+
+  -   Experience using the Semantic Kernel SDK to create prompts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- dotnet
+- vs-code
+- azure-openai
+units:
+- learn.wwl.combine-prompts-functions.introduction
+- learn.wwl.combine-prompts-functions.call-functions-within-prompts
+- learn.wwl.combine-prompts-functions.exercise-use-nested-functions-song-suggestions
+- learn.wwl.combine-prompts-functions.knowledge-check
+- learn.wwl.combine-prompts-functions.summary
+badge:
+  uid: learn.wwl.combine-prompts-functions.badge
