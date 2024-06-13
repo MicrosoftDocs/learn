@@ -4,6 +4,9 @@ Managing the Active Directory Domain Services (AD DS) environment is one of the 
 
 The Active Directory Administrative Center provides a GUI that is based on Windows PowerShell. This enhanced interface allows you to perform AD DS object management by using task-oriented navigation, and it replaces the functionality of Active Directory Users and Computers.
 
+:::image type="content" source="../media/administrative-center.png" alt-text="A screenshot of Active Directory Administrative Center. The administrator has selected the IT OU in the Contoso.com domain.":::
+
+
 Tasks that you can perform by using the Active Directory Administrative Center include:
 
  -  Creating and managing user, computer, and group accounts.
@@ -25,6 +28,9 @@ Windows Admin Center works with any browser that is compliant with modern standa
 
 With a decreasing number of exceptions, Windows Admin Center supports most current Windows Server and Windows 10 administrative functionality. However, Microsoft intends that Windows Admin Center will eventually support all the administrative functionality that is presently available through RSAT.
 
+:::image type="content" source="../media/windows-admin-center.png" alt-text="A screenshot of Windows Admin Center. The administrator has selected Server Manager. The Overview pane for a server called SEA-DC1 is displayed.":::
+
+
 To use Windows Admin Center, you must first download and install it. You can download Windows Admin Center from the Microsoft download website. After downloading and installing Windows Admin Center, you must enable the appropriate TCP port on the local firewall. On a Windows 10 computer (in standalone mode), this defaults to 6516. On Windows Server (in gateway mode), this defaults to TCP 443. In both cases, you can change it during setup.
 
 > [!NOTE]
@@ -33,6 +39,9 @@ To use Windows Admin Center, you must first download and install it. You can dow
 ## Remote Server Administration Tools
 
 RSAT is a collection of tools which enables you to manage Windows Server roles and features remotely.
+
+:::image type="content" source="../media/add-optional-feature-dialog-box.png" alt-text="A screenshot of the Add an optional feature dialog box. Displayed are a list of RSAT tools.":::
+
 
 > [!NOTE]
 > You no longer need to download RSAT. Instead, you enable it from the Settings app. In **Settings**, search for **Manage optional features**, select **Add a feature**, and then select the appropriate RSAT tools from the returned list. Select Install to add the feature.

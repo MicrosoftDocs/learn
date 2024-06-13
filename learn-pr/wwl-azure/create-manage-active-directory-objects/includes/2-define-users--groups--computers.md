@@ -8,6 +8,9 @@ In Windows Server, a user account is an object that contains all the information
 
 A user account also contains settings that you can configure based on your organizational requirements.
 
+:::image type="content" source="../media/user.png" alt-text="A screenshot of the Jane Dow user account in Active Directory Administrative Center.":::
+
+
 The username and password of a user account serve as the user’s sign-in credentials. A user object also includes several other attributes that describe and manage the user. You can use the following tools to create and manage user objects in AD DS:
 
  -  Active Directory Administrative Center.
@@ -45,9 +48,6 @@ To create the KDS root key, run the following command from the Active Directory 
 Add-KdsRootKey –EffectiveImmediately
 
 
-
-
-
 ```
 
 You create group managed service accounts by using `New-ADServiceAccount` Windows PowerShell cmdlet with the `–PrinicipalsAllowedToRetrieveManagedPassword` parameter.
@@ -55,10 +55,7 @@ You create group managed service accounts by using `New-ADServiceAccount` Window
 For example:
 
 ```powershell
-New-ADServiceAccount -Name LondonSQLFarm -PrincipalsAllowedToRetrieveManagedPassword SEA-SQL1, SEA-SQL2, SEA-SQL3<br>
-
-
-
+New-ADServiceAccount -Name LondonSQLFarm -PrincipalsAllowedToRetrieveManagedPassword SEA-SQL1, SEA-SQL2, SEA-SQL3
 
 
 ```
@@ -73,6 +70,9 @@ For example, if several users need the same level of access to a folder, it's mo
 > As an added benefit, you can change users’ file permissions by adding or removing them from groups rather than editing the file permissions directly.
 
 Before you implement groups in your organization, you must understand the scope of various AD DS group types. In addition, you must understand how to use group types to manage access to resources or to assign management rights and responsibilities.
+
+:::image type="content" source="../media/group.png" alt-text="A screenshot of Create Group: Sales Managers dialog box in Windows Administrative Center.":::
+
 
 ### Group types
 
@@ -122,6 +122,9 @@ A computer account begins its lifecycle when you create the computer object and 
  -  Moving the computer between OUs.
  -  Managing the computer itself.
  -  Renaming, resetting, disabling, enabling, and eventually deleting the computer object.
+
+:::image type="content" source="../media/computer.png" alt-text="A screenshot of the Create Computer: SEA-CL5 dialog box in Active Directory Administrative Center.":::
+
 
 ### Computers container
 

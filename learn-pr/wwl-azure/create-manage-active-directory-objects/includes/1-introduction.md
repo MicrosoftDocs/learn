@@ -6,16 +6,12 @@ Imagine you are a system administrator for a large enterprise network. You are t
 
 ## Learning Objectives
 
-The topics covered in this module include
+By the end of this module, you'll be able to:
 
-\- Understanding User Accounts
-
-Service Accounts
-
-Group Objects
-
-and Computer Objects in Active Directory Domain Services
-
-## Goals
-
-By the end of this module, you will be able to manage user accounts, service accounts, and group objects in AD DS. You will also be able to create and manage computer objects and OUs, thereby improving the efficiency and security of your organization's network.
+ -  Define users, groups, and computers.
+ -  Define organizational units.
+ -  Manage objects and their properties in Active Directory.
+ -  Create objects in Active Directory.
+ -  Configure objects in Active Directory.
+ -  Perform bulk management tasks for user accounts.
+ -  Maintain Active Directory Domain Services domain controllers.

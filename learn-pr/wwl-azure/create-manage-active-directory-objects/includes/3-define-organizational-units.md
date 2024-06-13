@@ -20,6 +20,9 @@ You can use OUs to represent the hierarchical, logical structures within your or
 
 AD DS has several built-in containers, or generic containers, such as Users and Computers. These containers store system objects or function as the default parent objects to new objects that you create. Don't confuse these generic container objects with OUs. The primary difference between OUs and containers is the management capabilities. Containers have limited management capabilities. For example, you can't apply a GPO directly to a container.
 
+:::image type="content" source="../media/objects.png" alt-text="A screenshot of Active Directory Users and Computers. The administrator has selected the Computers container \\\`Contoso.com\\\` domain. Other containers that are displayed are described in the following tables.":::
+
+
 Installing AD DS creates the Domain Controllers OU and several generic container objects by default. AD DS primarily uses some of these default objects, which are also hidden by default. The following objects are displayed by default:
 
  -  Domain. The top level of the domain organizational hierarchy.

@@ -3,7 +3,7 @@ uid: learn.wwl.create-manage-active-directory-objects
 metadata:
   title: Create and manage Active Directory objects
   description: "This module focuses on the tasks associated with managing Active Directory objects and AD domain services domain controllers."
-  ms.date: 06/10/2024
+  ms.date: 06/13/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
@@ -40,6 +40,10 @@ roles:
 - administrator
 products:
 - active-directory
+subjects:
+- architecture
+- device-management
+- infrastructure
 units:
 - learn.wwl.create-manage-active-directory-objects.introduction
 - learn.wwl.create-manage-active-directory-objects.define-users--groups--computers
