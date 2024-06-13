@@ -187,7 +187,7 @@ You can use an inline chat session to suggest a code update as follows:
 1. Ask GitHub Copilot Chat how to complete the update.
 1. Review the suggestions and select the best option.
 
-In this case, you could ask: `how can I update this code to ensure that the list doesn't include duplicate numbers?`
+In this case, you could ask: `How can I update this code to ensure that the list doesn't include duplicate numbers?`
 
 ![Screenshot showing suggested update from inline chat in Visual Studio Code.](../media/inline-chat-3.png)
 
