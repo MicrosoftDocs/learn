@@ -7,6 +7,7 @@ metadata:
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: module
+  ms.service: mixed-reality
 title: Designing for mixed reality
 summary: Learn about all the foundational elements required to design a mixed reality application and equip yourselves with the required tools.
 abstract: |
