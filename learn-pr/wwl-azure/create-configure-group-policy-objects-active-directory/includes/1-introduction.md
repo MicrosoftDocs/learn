@@ -1,4 +1,4 @@
-This module covers the broad topic of Group Policy in Windows Server. Group Policy is a feature that allows administrators to define and deploy settings across their organizations.
+This module covers the broad topic of Group Policy in Active Directory. Group Policy is a feature that allows administrators to define and deploy settings across their organizations.
 
 ## Scenario
 
@@ -6,10 +6,11 @@ Imagine you are an IT staff member at a large corporation. You are tasked with m
 
 ## Learning Objectives
 
-The topics covered in this module include
+By the end of this module, you'll be able to:
 
-\- Understanding and Managing Group Policy in Windows Server
-
-## Goals
-
-By the end of this module, you will be able to use Group Policy to manage configuration in an Active Directory domain. You will understand how to define, enforce, and update your entire configuration using GPO settings.
+ -  Define Group Policy Objects.
+ -  Implement Group Policy Object scope and inheritance.
+ -  Define domain-based Group Policy Objects.
+ -  Create and configure a domain-based Group Policy Object.
+ -  Configure a domain password policy.
+ -  Configure and apply a fine-grained password policy.
