@@ -104,7 +104,7 @@ But before we begin, it is worth knowing in order to add a file to a repository 
 
 1. In the file name field, type the name and extension for the file. To create subdirectories, type the / directory separator.
 1. In the file contents text box, type content for the file.
-1. To review the new content, above the file contents, click Preview.
+1. To review the new content, above the file contents, select **Preview**.
 
     :::image type="content" source="../media/2-preview-option-in-a-file.png" alt-text="Screenshot showing a yml file with the preview button highlighted in the top left." border="false":::
 
