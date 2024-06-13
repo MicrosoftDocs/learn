@@ -5,7 +5,6 @@ Stories: Copilot can generate and edit stories that highlight your mission, visi
 Images: Copilot can create and enhance images that illustrate your work, such as photos, graphics, and logos. 
 
 :::image type="content" source="../media/prompt-engineering-images.png" alt-text="Image of a slide from a presentation showing a prompt to create an image with five parts: clear action, detailed subject, scene or setting, additional elements, and specific style":::
-Image of a slide from a presentation showing a prompt to create an image with five parts: clear action, detailed subject, scene or setting, additional elements, and specific style
 
 Using Copilot for marketing or social media, here are prompt examples using the family services nonprofit organization: 
 

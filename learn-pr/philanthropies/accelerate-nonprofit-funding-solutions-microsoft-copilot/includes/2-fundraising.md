@@ -10,7 +10,6 @@ Fundraising is the process of soliciting and obtaining financial or in-kind supp
 In previous modules, you learned that prompts for Copilot contained four parts. They are goal, context, expectations, and source. 
 
 :::image type="content" source="../media/prompt-engineering.png" alt-text="Image of a slide from a presentation showing a prompt with four parts: goal, context, expectations, and source.":::
-Image of a slide from a presentation showing a prompt with four parts: goal, context, expectations, and source.
 
 ## Scenario
 
@@ -36,8 +35,3 @@ Copilot will then produce a response that meets your request, such as a list of 
 ## Additional Resources
 
 [How to Leverage Microsoft Copilot for Fundraising (resource guide)](https://aka.ms/TechSoup-RG-Fundraising)
-
-Test what you have learned:
-
-1. Automate Routine Tasks: Use Copilot to automate repetitive tasks like data entry, scheduling, and email responses to save time.
-2. Data Analysis: Employ Copilot’s capabilities to analyze donor data and gain insights into targeted fundraising campaigns.

@@ -24,7 +24,7 @@ Next, practice leveraging Copilot to manage and create content for social media 
 ```
 Draft a social media post tailored to the following [targeted social media outlets] amplifying 
 the [event or call to action]. Encourage readers to participate and/or volunteer to help 
-[intended outcome, community in need e.g., adopt an orphaned pet] in need. [Call to action, 
+[intended outcome, community in need e.g., adopt an orphaned pet]. [Call to action, 
 corresponding link e.g., sign up, view details]. Use catchy, persuasive language, and include hashtags.
 ```
 
