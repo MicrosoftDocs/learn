@@ -1,4 +1,4 @@
-Microsoft Copilot for Security is accessible within Microsoft Purview data security solutions, including Data Loss Prevention (DLP), Insider Risk Management, Communication Compliance, and eDiscovery (Premium), 
+Microsoft Copilot for Security is accessible within Microsoft Purview data security and compliance solutions, including Data Loss Prevention (DLP), Insider Risk Management, Communication Compliance, and eDiscovery (Premium).
 
 In this exercise, you explore the Copilot summarization capabilities available in each of these solutions. You start by verifying that the Microsoft Purview plugin is enabled.
 
@@ -7,7 +7,11 @@ In this exercise, you explore the Copilot summarization capabilities available i
 
 ### Exercise
 
-For this exercise you're logged in as Avery Howard and have the Copilot owner role. You'll work in both the standalone experience and the embedded experience. Copilot standalone experience and Microsoft Copilot in Microsoft Purview.
+For this exercise you're logged in as Avery Howard. You have the Copilot owner role and you have specific role permissions required for access to each of the afore mentioned Microsoft Purview solutions.
+
+You'll work with specific Microsoft Purview solutions, using the new Microsoft Purview portal, and access the embedded Copilot capabilities of those solutions.
+
+This exercise should take approximately **25** minutes to complete.
 
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.

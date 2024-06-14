@@ -5,11 +5,12 @@ In this exercise, you configure the Microsoft Sentinel plugin and run some test 
 
 ### Exercise
 
-For this exercise you're logged in as Avery Howard and have the Copilot owner role. For all the tasks in this exercise, you'll work in the Copilot standalone experience.
+For this exercise you're logged in as Avery Howard and have the Copilot owner role. You'll work in both the Azure portal and the standalone experience of Microsoft Copilot for Security.
+
+This exercise should take approximately **15** minutes to complete.
 
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
-
 
 #### Task: Test a Microsoft Sentinel prompt
 
