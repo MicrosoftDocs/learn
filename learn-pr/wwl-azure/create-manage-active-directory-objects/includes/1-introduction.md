@@ -2,7 +2,7 @@ This module covers the topic of managing user accounts, service accounts, and gr
 
 ## Scenario
 
-Imagine you are a system administrator for a large enterprise network. You are tasked with managing user accounts, service accounts, and group objects in your organization's AD DS. You also need to create and manage computer objects and OUs. The challenge is to do this efficiently and securely, ensuring that users can authenticate to the AD DS domain and access network resources, services run smoothly, and access to resources is properly managed.
+Imagine you are a system administrator for a large enterprise network. You are tasked with managing user accounts, service accounts, and group objects in your organization's AD DS environment. You also need to create and manage computer objects and OUs. The challenge is to do this efficiently and securely, ensuring that users can authenticate to the AD DS domain and access network resources, services run smoothly, and access to resources is properly managed.
 
 ## Learning Objectives
 
@@ -14,4 +14,4 @@ By the end of this module, you'll be able to:
  -  Create objects in Active Directory.
  -  Configure objects in Active Directory.
  -  Perform bulk management tasks for user accounts.
- -  Maintain Active Directory Domain Services domain controllers.
+ -  Maintain AD DS domain controllers.

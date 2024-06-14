@@ -1,4 +1,4 @@
-Managing the Active Directory Domain Services (AD DS) environment is one of the most common tasks an IT pro performs. There are several tools that you can use to manage AD DS.
+Managing the AD DS environment is one of the most common tasks an IT pro performs. There are several tools that you can use to manage AD DS.
 
 ## Active Directory Administrative Center
 

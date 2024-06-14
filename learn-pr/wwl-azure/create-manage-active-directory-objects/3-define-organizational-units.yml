@@ -4,10 +4,10 @@ title: Define organizational units
 metadata:
   title: Define organizational units
   description: "Define organizational units"
-  ms.date: 06/13/2024
+  ms.date: 06/14/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/3-define-organizational-units.md)]

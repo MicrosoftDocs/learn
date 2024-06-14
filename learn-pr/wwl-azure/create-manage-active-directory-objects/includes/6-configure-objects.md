@@ -2,6 +2,8 @@ Configuring Active Directory objects is essential for maintaining the integrity 
 
 Although these are only a subset of routine tasks an Active Directory administrator performs, they are critical in protecting sensitive information from unauthorized access and potential security breaches. Proper configuration helps in enforcing compliance with security policies, streamlining user management, and minimizing the risk of downtime due to compromised accounts. Therefore, understanding and executing these configuration tasks effectively is a fundamental responsibility for AD administrators to maintain a secure and efficient network.
 
+The examples in this unit show the steps to create these objects using the Active Directory Administrative Center (ADAC), but you can accomplish the same tasks using other tools, such as Windows PowerShell.
+
 ## Configure the expiration date of a user account
 
 To configure the expiration date for a user account in Active Directory:
@@ -19,11 +21,11 @@ This sets the expiration date for the user account, after which the account will
 
 To disable user accounts in Active Directory:
 
-1.  Open the **Active Directory Administrative Center** (ADAC).
+1.  Open the Active Directory Administrative Center.
 2.  Navigate to the OU where the user account is located.
 3.  Find and select the user account you want to disable.
 4.  In the right-hand action pane, click **Properties**.
-5.  In the Account tab, select the **Account is disabled** checkbox.
+5.  In the **Account tab**, select the **Account is disabled** checkbox.
 6.  Click **OK** to save changes and disable the account.
 
 This will disable the selected user account, preventing any logins using that account. Remember to document any changes made to user accounts for future reference and compliance.
@@ -32,7 +34,7 @@ This will disable the selected user account, preventing any logins using that ac
 
 To ensure that users are forced to change their password at the next logon in Active Directory:
 
-1.  In **Active Directory Administrative Center**, navigate to the OU where the user account is located.
+1.  In Active Directory Administrative Center, navigate to the OU where the user account is located.
 2.  Find and select the user account you want to modify.
 3.  In the right-hand action pane, click **Properties**.
 4.  In the **Account** tab, check **User must change password at next logon**.

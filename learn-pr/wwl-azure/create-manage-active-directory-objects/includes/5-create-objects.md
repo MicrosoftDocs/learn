@@ -45,7 +45,7 @@ To add a user account to a group in an OU in Active Directory:
 
 1.  In the Active Directory Administrative Center, navigate to the OU where the group is located.
 2.  Find and select the group you want to add the user to.
-3.  In the right-hand action pane, select Members.
-4.  In the Members section, click Add.
-5.  In the Select Users, Contacts, Computers, Service Accounts, or Groups dialog box, type the name of the user you want to add to the group, and then click OK.<br>The user will now be listed as a member of the group.
-6.  Click OK to confirm and close the dialog box.
+3.  In the right-hand action pane, select **Members**.
+4.  In the Members section, click **Add**.
+5.  In the **Select Users, Contacts, Computers, Service Accounts, or Groups** dialog box, type the name of the user you want to add to the group, and then click **OK**.<br>The user will now be listed as a member of the group.
+6.  Click **OK** to confirm and close the dialog box.

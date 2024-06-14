@@ -11,10 +11,10 @@ Moving user accounts to a specific organizational unit (OU) allows for centraliz
 1.  Open the Active Directory Administrative Center and browse to the domain.
 2.  Right-click the root of the domain, select **Find** and then select the **Advanced** tab.
 3.  Select **Field**, click the **User** dropdown list, and select **Is Exactly**.
-4.  Click the **Value** dropdown list and select **=London**.
+4.  Click the **Value** dropdown list and select the City attribute for the desired OU from the list, for example **=London**.
 5.  Select **Add** and click **Find now**.<br>This action returns all the user accounts with the City attribute set to London.
 6.  Select and right-click all the returned user accounts, and from the context menu select **Move**.
-7.  In the **Move** dialog box, navigate to and select the London OU, then click **OK** to move the accounts.
+7.  In the **Move** dialog box, navigate to and select the OU where you want to move the accounts, then click **OK**.
 8.  With the user accounts still selected in the London OU, right-click and select **Disable** to disable all selected accounts.
 
 ## Re-enable accounts and force a password reset

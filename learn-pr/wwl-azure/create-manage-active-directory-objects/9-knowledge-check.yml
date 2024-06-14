@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/13/2024
+  ms.date: 06/14/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -12,28 +12,6 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An administrator is tasked with managing and configuring settings for computers and users within a specific department. They decide to consolidate these objects for easier management. What should the administrator create to accomplish this task?"
-    choices:
-    - content: "A Group Policy Object (GPO)"
-      isCorrect: false
-      explanation: "Incorrect. While GPOs are used to manage and configure settings, they are not used to consolidate objects."
-    - content: "A Domain"
-      isCorrect: false
-      explanation: "Incorrect. A domain is a logical group of network objects, but it is not specifically used to consolidate objects for easier management."
-    - content: "An Organizational Unit (OU)"
-      isCorrect: true
-      explanation: "Correct. An OU is a container object within a domain that can be used to consolidate users, computers, groups, and other objects for easier management."
-  - content: "An administrator needs to move multiple user accounts to a specific organizational unit (OU) for centralized control and uniform policy enforcement. After moving the accounts, they need to be disabled temporarily. What should the administrator do to accomplish this?"
-    choices:
-    - content: "Use Windows PowerShell to manually move each account to the OU and then disable them individually."
-      isCorrect: false
-      explanation: "Incorrect. While PowerShell can be used, the task doesn't require moving and disabling accounts individually which is time-consuming."
-    - content: "Use Active Directory Administrative Center to move the accounts to the OU, but leave them enabled."
-      isCorrect: false
-      explanation: "Incorrect. This doesn't fulfill the requirement of disabling the accounts after moving them to the OU."
-    - content: "Use Active Directory Administrative Center to move the accounts to the OU and then disable all selected accounts."
-      isCorrect: true
-      explanation: "Correct. This method allows for bulk management of accounts, saving time and reducing potential for error."
   - content: "A system administrator is tasked with managing service accounts for various applications running on multiple servers. The administrator wants to simplify password management and SPN management. What should the administrator use to accomplish this task?"
     choices:
     - content: "User accounts in AD DS"
@@ -45,6 +23,17 @@ quiz:
     - content: "Group managed service accounts"
       isCorrect: true
       explanation: "Correct. Group managed service accounts provide automatic password maintenance and simplified SPN management for services running on multiple servers."
+  - content: "Which of the following is a built-in container in an AD DS domain that can hold computer accounts?"
+    choices:
+    - content: "The Domain Controllers OU"
+      isCorrect: true
+      explanation: "That's correct. Although the Domain Controllers OU is an OU, it is created by default and is therefore built in."
+    - content: "The IT OU"
+      isCorrect: false
+      explanation: "That's incorrect. OUs are not built-in objects but are manually created (with one exception)."
+    - content: "System"
+      isCorrect: false
+      explanation: "That's incorrect. Although this is a built-in container, it does not contain computer objects."
   - content: "A system administrator needs to manage a collection of users, computers, contacts, and other groups as a single entity in Active Directory. What should the administrator do to accomplish this task?"
     choices:
     - content: "Create a new user account"
