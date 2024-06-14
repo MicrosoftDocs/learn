@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-dotnet-aspire-app-azure.exercise-deploy-azure
+title: Exercise - Deploy to Azure
+metadata:
+  title: Exercise - Deploy to Azure
+  description: In this unit, you'll use the Azure Developer CLI to deploy a .NET Aspire solution to your Azure subscription.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-deploy-azure.md)]
