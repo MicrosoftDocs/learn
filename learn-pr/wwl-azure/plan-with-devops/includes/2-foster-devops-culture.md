@@ -14,15 +14,15 @@ Given the core DevOps culture elements, there are many actions that organization
 
 Exemplifying these recommendations, Microsoft has a well-established live site culture that is based on the principles of DevOps. The company has a strong focus on customer satisfaction and operational excellence, and it has a culture of continuous learning and improvement. Key aspects of Microsoft's live site culture:
 
-- Learn once and share
-- Drive with data
-- Automate everything
-- Use telemetry to drive decisions
-- Embrace failure
-- Root cause is key
-- Lock down the environment
-- Monitor everything
-- Plan for scale
-- Live site first
-- Detect before customers
-- Configuration as code
+- Learn once and share.
+- Drive with data.
+- Automate everything.
+- Use telemetry to drive decisions.
+- Embrace failure.
+- Root cause is key.
+- Lock down the environment.
+- Monitor everything.
+- Plan for scale.
+- Live site first.
+- Detect before customers.
+- Configuration as code.
