@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.streamline-nonprofit-program-management-with-microsoft-copilot
+metadata:
+  title: Streamline nonprofit program management with Microsoft Copilot
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  ms.date: 6/13/2024
+  author: cohodgeMicrosoft
+  ms.author: cohodge
+  ms.topic: module-standard-task-based
+  ms.service: artificial-intelligence
+  ai-usage: ai-assisted
+title: Streamline nonprofit program management with Microsoft Copilot
+summary: This module is aligned to program management and administrative task roles. Learn how AI tools such as Copilot can help to manage everyday tasks to increase efficiency, automate time-consuming tasks, and give time back to your team. 
+abstract: |
+  By the end of this module, you'll be able to:
+    - Recognize opportunities to leverage AI and Copilot in your program management activities.
+    - Use copilot to help generate and edit program plans, timelines, and reports.
+prerequisites: |
+  - Complete the [Introduction to AI skills for nonprofits learning path](https://learn.microsoft.com/learn/paths/introduction-to-ai-skills-for-nonprofits/)
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - beginner
+roles:
+  - functional-consultant
+  - higher-ed-educator
+  - school-leader
+  - k-12-educator
+  - business-user
+  - business-owner
+products:
+  - ai-services
+  - m365-apps
+  - ms-copilot
+subjects:
+  - artificial-intelligence
+  - business-applications
+units:
+- learn.streamline-nonprofit-program-management-with-microsoft-copilot.introduction
+- learn.streamline-nonprofit-program-management-with-microsoft-copilo.plan-effective-programs
+- learn.streamline-nonprofit-program-management-with-microsoft-copilo.exercise-plan-effective-programs
+- learn.streamline-nonprofit-program-management-with-microsoft-copilo.optimize-program-scheduling
+- learn.streamline-nonprofit-program-management-with-microsoft-copilo.exercise-optimize-program-scheduling
+- learn.streamline-nonprofit-program-management-with-microsoft-copilot.knowledge-check
+- learn.streamline-nonprofit-program-management-with-microsoft-copilot.summary
+badge:
+  uid: learn.streamline-nonprofit-program-management-with-microsoft-copilot.badge
