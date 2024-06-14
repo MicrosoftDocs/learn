@@ -112,7 +112,7 @@ Install the .NET Aspire workload using the .NET CLI:
 Let's use `git` to obtain a sample app, which doesn't yet use Azure Storage:
 
 1. In the command line, browse to a folder of your choice where you can work with code.
-1. Execute the following command to clone the **Northern Mountains eShop** sample application:
+1. Execute the following command to clone the **eShop** sample application:
 
     ```dotnetcli
     git clone -b aspire-azure-storage https://github.com/MicrosoftDocs/mslearn-aspire-starter
@@ -120,7 +120,7 @@ Let's use `git` to obtain a sample app, which doesn't yet use Azure Storage:
 
 ## Add the Azure Storage backing service
 
-Next, let's add the Azure Storage components to the .NET Aspire app host project:
+Next, let's add the Azure Storage components to the .NET Aspire solution host project:
 
 1. Start Visual Studio, and select **Open a project or solution**.
 1. Navigate to the folder where you cloned the project.

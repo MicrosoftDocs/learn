@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azure-storage-dotnet-aspire-app
 metadata:
-  title: Using Azure Storage in a .NET Aspire app
+  title: Using Azure Storage in a .NET Aspire solution
   description: In this module, you'll learn about the components built into .NET Aspire that make it simple to store files, data, and messages in Azure Storage accounts.
   author: camsoper
   ms.author: casoper
@@ -9,8 +9,8 @@ metadata:
   ms.service: dotnet-aspire
   ms.custom:
   - team=cloud_advocates
-title: Using Azure Storage in a .NET Aspire app
-summary: Learn how to access and use Azure Storage accounts from .NET Aspire apps for file storage, data storage, and message queuing.
+title: Using Azure Storage in a .NET Aspire solution
+summary: Learn how to access and use Azure Storage accounts from .NET Aspire solutions for file storage, data storage, and message queuing.
 abstract: |
   By the end of this module, you'll be able to:
 

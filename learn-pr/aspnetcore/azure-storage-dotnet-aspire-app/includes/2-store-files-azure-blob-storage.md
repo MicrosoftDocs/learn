@@ -136,9 +136,23 @@ The string you pass to this method is the name of a connection string. You shoul
 }
 ```
 
+## Using the Azurite storage emulator
+
+To help during development, Visual Studio includes the Azurite storage emulator. This tool runs on your local computer and emulates an Azure Storage account. You can use it to test your Azure storage code, including code that uses Storage blobs, queues, and table storage.
+
+To use Azurite in your .NET Aspire solution, add this code to the app host's _Program.cs_ file:
+
+```csharp
+if (builder.Environment.IsDevelopment())
+{
+    storage.RunAsEmulator();
+}
+```
+
 ## Learn more
 
 - [Storage account overview](/azure/storage/common/storage-account-overview)
 - [Azure Blob Storage documentation](/azure/storage/blobs/)
 - [.NET Aspire Azure Blob Storage component](/dotnet/aspire/storage/azure-storage-blobs-component)
 - [Tutorial: Connect an ASP.NET Core app to .NET Aspire storage components](/dotnet/aspire/storage/azure-storage-components)
+- [Use the Azurite emulator for local Azure Storage development](/azure/storage/common/storage-use-azurite)

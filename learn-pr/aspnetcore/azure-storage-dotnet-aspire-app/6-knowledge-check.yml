@@ -14,7 +14,7 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "You want to use Azure blob storage to host videos for your .NET Aspire app. Which package should you install in the App Host project?"
+  - content: "You want to use Azure blob storage to host videos for your .NET Aspire solution. Which package should you install in the App Host project?"
     choices:
     - content: "Aspire.Azure.Storage.Blobs"
       isCorrect: false
@@ -35,7 +35,7 @@ quiz:
       explanation: "Correct. The QueueServiceClient object represents an Azure Queue Storage service. To interact with a queue, call the GetQueueClient() method to obtain a QueueClient object. Call the QueueClient.ReceiveMessagesAsync() method to obtain and process messages."
     - content: "Obtain the QueueClient object using dependency injection and then call its ReceiveMessagesAsync() method."
       isCorrect: false
-      explanation: "Incorrect. You can't obtain a QueueClient object by using dependency injection in a .NET Aspire app."
+      explanation: "Incorrect. You can't obtain a QueueClient object by using dependency injection in a .NET Aspire solution."
   - content: "You need to store information about products in a database that several of your microservices use. You're considering using Azure Storage Tables. Which of the following are advantages that Azure Storage Tables can realize?"
     choices:
     - content: "You can tightly control the schema of the entities in each table."
