@@ -9,6 +9,6 @@ metadata:
   ms.author: cohodge
   ms.topic: unit
   ai-usage: ai-assisted
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/5-exercise-optimize-program-scheduling.md)]

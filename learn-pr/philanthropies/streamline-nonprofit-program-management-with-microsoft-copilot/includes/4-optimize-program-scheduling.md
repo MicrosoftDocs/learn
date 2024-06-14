@@ -4,6 +4,8 @@ Program scheduling is the process of setting your program's milestones and deadl
 - Dates: Copilot can estimate and update your program's dates based on your program's milestones, dependencies, and constraints. 
 - Formats: Copilot can create and customize your program's schedule formats, such as lists, calendars, and Gantt charts. 
 
+## Sample prompts
+
 Let’s consider the same digital literacy nonprofit. Here are some sample prompts that can be used in program scheduling for that organization:  
 
 ```
