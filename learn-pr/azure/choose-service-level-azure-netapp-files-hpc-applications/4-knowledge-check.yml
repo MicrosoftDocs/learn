@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Azure NetApp Files.
-  ms.date: 05/10/2023
+  ms.date: 06/07/2024
   author: mengruts
   ms.author: mengtsai
   ms.topic: unit
@@ -45,7 +45,7 @@ quiz:
       - content: "Volume type, volume quota, file count."
         isCorrect: false 
         explanation: "Volume type can be regular or large and can impact performance, but isn't one of the key components. Volume quotas impact the throughput per TiB. File count refers to the number of files in the volume."
-  - content: "An HPC application needs at least 50 TiB size of volume storage and also needs to ensure 5,000 MiB per second in throughput. Which of the following service levels and volume quotas are the best to be configured?"
+  - content: "A high-performance computing (HPC) application needs at least 50-TiB size of volume storage and also needs to ensure 5,000 MiB per second in throughput. Which of the following service levels and volume quotas are the best to be configured?"
     choices:
     - content: "Standard service level with a 75-TiB regular volume size."
       isCorrect: false
