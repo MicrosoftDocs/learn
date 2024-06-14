@@ -5,7 +5,7 @@ Before you deploy Azure NetApp Files as a datastore or a guest-mounted file syst
 The following resources should be created before deploying an Azure NetApp Files volume for Azure VMware Solution (AVS):
 
 - One or more AVS private clouds
-- Dedicated VNet connected via an ExpressRoute gateway configured with the UltraPerformance or ErGw3Az SKU with FastPath enabled
+- Dedicated VNet connected via an ExpressRoute gateway configured with the UltraPerformance or `ErGw3Az` SKU with FastPath enabled
 - Subnet delegated to the `Microsoft.NetApp/volumes` service
 - NetApp account created in the same region as your AVS private clouds
 - Azure NetApp Files capacity pool with the appropriate service level and quality of service (QoS) type
