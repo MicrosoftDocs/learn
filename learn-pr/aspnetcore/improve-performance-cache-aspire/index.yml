@@ -29,6 +29,7 @@ products:
 - dotnet
 - vs
 - vs-code
+- dotnet-aspire
 subjects:
 - custom-app-development
 units:
