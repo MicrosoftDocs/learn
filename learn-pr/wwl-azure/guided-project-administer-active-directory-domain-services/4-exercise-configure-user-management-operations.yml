@@ -4,9 +4,10 @@ title: exercise-configure-user-management-operations
 metadata:
   title: exercise-configure-user-management-operations
   description: "exercise-configure-user-management-operations"
-  ms.date: 06/13/2024
+  ms.date: 06/14/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
+durationInMinutes: 3
 content: |
   [!include[](includes/4-exercise-configure-user-management-operations.md)]

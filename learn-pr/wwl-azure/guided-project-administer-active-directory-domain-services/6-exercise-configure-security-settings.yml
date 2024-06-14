@@ -4,9 +4,10 @@ title: exercise-configure-security-settings
 metadata:
   title: exercise-configure-security-settings
   description: "exercise-configure-security-settings"
-  ms.date: 06/13/2024
+  ms.date: 06/14/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
+durationInMinutes: 3
 content: |
   [!include[](includes/6-exercise-configure-security-settings.md)]

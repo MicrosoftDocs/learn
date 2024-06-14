@@ -4,9 +4,10 @@ title: exercise-configure-domain-controller-operations
 metadata:
   title: exercise-configure-domain-controller-operations
   description: "exercise-configure-domain-controller-operations"
-  ms.date: 06/13/2024
+  ms.date: 06/14/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
+durationInMinutes: 3
 content: |
   [!include[](includes/3-exercise-configure-domain-controller-operations.md)]

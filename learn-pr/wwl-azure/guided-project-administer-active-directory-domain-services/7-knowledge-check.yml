@@ -4,8 +4,66 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/13/2024
+  ms.date: 06/14/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
 durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following is a physical component of Active Directory Domain Services (AD DS)?"
+    choices:
+    - content: "Schema"
+      isCorrect: false
+      explanation: "Incorrect. The Schema is a logical component of AD DS that defines objects and attributes, not a physical component."
+    - content: "Domain controller"
+      isCorrect: true
+      explanation: "Correct. A domain controller contains a copy of the AD DS database and is a physical component of the network."
+    - content: "Forest"
+      isCorrect: false
+      explanation: "Incorrect. A forest is a collection of one or more domains, which is a logical structure, not a physical one."
+  - content: "What is the purpose of a Global Catalog in AD DS?"
+    choices:
+    - content: "To store a full, writable copy of all objects in the directory."
+      isCorrect: false
+      explanation: "Incorrect: The Global Catalog does not store a full, writable copy; it stores a partial, read-only copy to facilitate forest-wide searches."
+    - content: "To act as a central storage for user credentials and passwords."
+      isCorrect: false
+      explanation: "Incorrect: While the Global Catalog does contain some credential information, its primary purpose is not to act as central storage for credentials but to assist in searches across the forest."
+    - content: "To contain a partial, read-only copy of all objects in a forest to speed up searches."
+      isCorrect: true
+      explanation: "Correct: The Global Catalog speeds up searches across the forest by storing a partial, read-only copy of all objects."
+  - content: "Which of the following operations master roles is unique to each domain in AD DS?"
+    choices:
+    - content: "Schema master"
+      isCorrect: false
+      explanation: "Incorrect: The Schema master is a forest-wide role, not unique to each domain, and is responsible for maintaining the schema – the definition of object classes and attributes in AD DS."
+    - content: "RID master"
+      isCorrect: true
+      explanation: "Correct: The RID master allocates RIDs to domain controllers within the domain."
+    - content: "Domain naming master"
+      isCorrect: false
+      explanation: "Incorrect: The domain naming master is unique to the forest, not to each domain."
+  - content: "In AD DS, what is the primary purpose of an Organizational Unit (OU)?"
+    choices:
+    - content: "To serve as a template for creating new user accounts."
+      isCorrect: false
+      explanation: "Incorrect: Organizational Units (OUs) are used to organize users, groups, computers, and other OUs within a domain, but they do not serve as templates for account creation."
+    - content: "To provide a way to group objects such as users and computers for delegation of administration."
+      isCorrect: true
+      explanation: "Correct: OUs are used to group objects for administrative purposes."
+    - content: "To act as a security boundary within a domain."
+      isCorrect: false
+      explanation: "Incorrect: OUs are for organization and management, not security boundaries."
+  - content: "Which of the following is true about Read-Only Domain Controllers (RODC)?"
+    choices:
+    - content: "They allow direct updates to the AD DS database."
+      isCorrect: false
+      explanation: "Incorrect: RODCs host a read-only copy of the AD DS database and do not allow direct updates."
+    - content: "They are designed for use in secure datacenter environments."
+      isCorrect: false
+      explanation: "Incorrect: RODCs are specifically designed for environments where physical security cannot be guaranteed, such as branch offices, not for secure datacenter environments."
+    - content: "They host a read-only copy of the AD DS database and are suitable for branch office locations."
+      isCorrect: true
+      explanation: "Correct: RODCs are designed for scenarios where physical security cannot be guaranteed, such as branch offices."

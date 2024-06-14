@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.guided-project-administer-active-directory-domain-services.introduction
-title: introduction
+title: Introduction
 metadata:
-  title: introduction
-  description: "introduction"
-  ms.date: 06/13/2024
+  title: Introduction
+  description: "Introduction"
+  ms.date: 06/14/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
+durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

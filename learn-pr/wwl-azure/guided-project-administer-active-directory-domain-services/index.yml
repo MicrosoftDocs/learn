@@ -3,7 +3,7 @@ uid: learn.wwl.guided-project-administer-active-directory-domain-services
 metadata:
   title: Guided project - Administer Active Directory Domain Services
   description: "This guided project helps prepare you to manage Active Directory Domain services, including creating and deploying domains, configuring group policy objects, establishing and enforcing passwords, and maintaining security of Active Directory."
-  ms.date: 06/13/2024
+  ms.date: 06/14/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module-guided-project
@@ -17,13 +17,13 @@ summary: |
 abstract: |
   In this module, you'll practice how to:
 
-  -   Configure Domain Controller Operations
+  -   Configure Domain Controller Operations.
 
-  -   Configure User Management Operations
+  -   Configure User Management Operations.
 
-  -   Manage Password Policies
+  -   Manage Password Policies.
 
-  -   Configure Security Settings
+  -   Configure Security Settings.
 prerequisites: |
   Knowledge of and experience working with:
 

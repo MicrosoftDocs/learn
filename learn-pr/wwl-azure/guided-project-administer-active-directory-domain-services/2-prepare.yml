@@ -4,9 +4,10 @@ title: prepare
 metadata:
   title: prepare
   description: "prepare"
-  ms.date: 06/13/2024
+  ms.date: 06/14/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
+durationInMinutes: 3
 content: |
   [!include[](includes/2-prepare.md)]
