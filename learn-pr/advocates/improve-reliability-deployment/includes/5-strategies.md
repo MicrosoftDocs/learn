@@ -4,7 +4,7 @@ You already know about the "epic deployment" approach, which some refer to as th
 
 ## Rolling deployment strategy
 
-The rolling deployment strategy takes a gradual approach to the introduction of new versions of code. The new version is phased in over a period of time, gradually increasing the instances of the new code while at the same time decreasing instances of the old. This means the old and new instances will coexist within the organization. For instance, you might upgrade the software on one server, virtual machine, or container at a time.
+The rolling deployment strategy takes a gradual approach to introducing new versions of code. The new version is phased in over a period of time, gradually increasing the instances of the new code while at the same time decreasing instances of the old. This means the old and new instances will coexist within the organization. For instance, you might upgrade the software on one server, virtual machine, or container at a time.
 
 An advantage of this strategy is that you can monitor the new code in the production environment to ensure that it meets your performance, security, reliability, and other standards before it's widely deployed.
 
@@ -20,7 +20,7 @@ An advantage of this strategy is that you can make the switch almost instantaneo
 
 The canary deployment strategy combines some elements of the rolling deployment with that of the blue-green deployment. You don't make the switch all at once, but instead deploy the new version into a limited part of the production environment and then gradually shift all the traffic to the new version. The software deploys in incremental steps to a limited number of instances or users until you've verified that it works properly, then rolls out to the rest of the infrastructure.
 
-The name comes from the practice of using canaries in coal mines as an early warning system. In a canary deployment, you can do automated testing and use monitoring and analytics to get an early warning of any problems with the new version within the subset of instances or users. Tat way, the entire production environment isn't affected.
+The name comes from the practice of using canaries in coal mines as an early warning system. In a canary deployment, you can do automated testing and use monitoring and analytics to get an early warning of any problems with the new version within the subset of instances or users. That way, the entire production environment isn't affected.
 
 ## Feature flags
 
@@ -32,11 +32,11 @@ One strong plus for this approach is the ease at which we can roll back if there
 
 Regardless of which deployment strategy you use, there are some best practices that will help you minimize the risk when rolling out new software or a new version of existing software:
 
-- Use proper tools, such as Azure Pipelines to create a continuous integration and deployment pipeline.
+- Use proper tools—such as Azure Pipelines—to create a continuous integration and deployment pipeline.
 
 - Integrate automated testing.
 
-- Use communication channels to notify proper parties of the results of the testing; that is, alert teams if deployments fail or encounter problems, etc.
+- Use communication channels to notify proper parties of the results of the testing; that is, alert teams if deployments fail, encounter problems, and so on.
 
 - Monitor for issues immediately after the deployment.
 

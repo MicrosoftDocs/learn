@@ -6,8 +6,9 @@ metadata:
   title: learning-content
   description: Learn how Azure Cache for Redis Pub/Sub can serve as an event aggregator between the components of your application.
   ms.date: 05/11/2023
-  author: tchristiani
-  ms.author: terrychr
+  author: flang-msft
+  ms.author: franlanglois
+  manager: mcleans
   ms.topic: unit
 durationInMinutes: 7
 content: |
