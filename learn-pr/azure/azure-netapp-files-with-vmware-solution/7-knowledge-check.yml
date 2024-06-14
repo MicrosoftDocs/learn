@@ -50,7 +50,7 @@ quiz:
       isCorrect: false
       explanation: "Azure NetApp Files includes data protection features such as snapshots, backup, and cross-zone/region replication."
     - content: "Provide a unified storage solution combing both file and block protocols."
-      isCorrect: false 
+      isCorrect: true 
       explanation: "Azure NetApp Files is a shared file service and does not offer block protocol connectivity."
 
 
