@@ -28,9 +28,7 @@ The following diagram illustrates the snapshot process:
 
    [![Diagram showing changes captured with Snapshot2.](../media/2-single-file-snapshot-restore-three.png)](../media/2-single-file-snapshot-restore-three.png#lightbox)
 
-An Azure NetApp Files snapshot only manipulates block pointers, creating a "frozen," read-only view of a volume. By design snapshots can't be modified, only deleted once they expire useful life on the system.
-
-Actual data blocks aren't copied, which leads to two efficiencies:
+An Azure NetApp Files snapshot only manipulates block pointers, creating a "frozen," read-only view of a volume. By design snapshots can't be modified, only deleted once they expire useful life on the system. Actual data blocks aren't copied, which leads to two efficiencies:
 
 - **Speed**: Creating a snapshot is near-instantaneous. No matter the volume size, creating a snapshot takes only a few seconds. Reverting a volume to a snapshot is also near-instantaneous, supporting fast data recovery if you experience corruption or a malicious hijack event.
 - **Space**: A snapshot consumes minimal storage space because it doesn't copy the data blocks of the entire volume. Two snapshots taken in sequence differ only by the blocks added or changed in the time interval between the two.
@@ -51,9 +49,9 @@ The point of creating volume snapshots is to recover data that has been corrupte
 
 **Cross-zone replication:** Azure NetApp Files replication can provide data protection through cross-zone volume replication. You can asynchronously replicate data from an Azure NetApp Files volume in one zone (source) to another Azure NetApp Files volume in another zone within the same region (destination). This capability enables you to failover your critical applications if there's a zone outage or disaster.
 
-**Cross-region replication:** Azure NetApp Files replication functionality can provide data protection through cross-region volume replication. You can asynchronously replicate data from an Azure NetApp Files volume in one region (source) to another Azure NetApp Files volume (destination) in another region (destination). This capability enables you to failover your critical applications if there's a region-wide outage or disaster.
+**Cross-region replication:** Azure NetApp Files replication provides data protection through cross-region volume replication. You can asynchronously replicate data from an Azure NetApp Files volume in one region (source) to another Azure NetApp Files volume (destination) in another region (destination). This capability enables you to failover your critical applications if there's a region-wide outage or disaster.
 
-## Azure NetApp Files integration with Azure VMware Solution
+## Integration with Azure VMware Solution
 
 Azure NetApp Files improves utilization of AVS resources, lowers total cost of ownership (TCO), and delivers advanced data management functionality.
 
