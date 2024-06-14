@@ -3,8 +3,8 @@ uid: learn.azure.publish-azure-web-app-with-azure-toolkit-eclipse.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 02/01/2020
+  description: Learn about the objectives for this module and the prerequisites you need to create and publish a web app in Azure using Eclipse.
+  ms.date: 06/06/2024
   author: cephalin
   ms.author: cephalin
   ms.topic: unit
