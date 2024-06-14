@@ -32,7 +32,7 @@ In this task, you start by attempting a file upload but realize that there's no 
 1. To access file uploads, select the **sources icon** ![sources icon](../media/sources-icon.png) from the prompt bar.
 
 1. From the manage sources page, select **Files**.
-1. If there is no option to actually upload a files, it's because the owner setting that controls this option has been changed from the default. After conferring with the other Copilot owner, you realize this was disabled in error and agree this should be set.
+1. If there is no option to actually upload a file, it's because the owner setting that controls this option has been changed from the default. After conferring with the other Copilot owner, you realize this was disabled in error and agree this should be set.
     1. Select the **Home** menu icon (hamburger icon).
     1. Select **Owner settings**.
     1. Scroll-down to **Files**. Select the drop-down and set it to **Contributors and owners can upload files**.
