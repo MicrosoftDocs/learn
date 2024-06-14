@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-dotnet-aspire-app-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "In this unit, you'll answer questions about deploying .NET Aspire solutions to services in Azure to check the knowledge you've gained in this module."
+  ms.date: 3/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom:
+  - team=cloud_advocates
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "You have a .NET Aspire solution that you want to deploy to Azure Kubernetes Service for production. How can you complete this task fastest?"
+    choices:
+    - content: "Use the Azure Developer CLI."
+      isCorrect: false
+      explanation: "Incorrect. You can use the Azure Developer CLI to deploy a .NET Aspire solution to Azure Container Apps, but not to Azure Kubernetes Service."
+    - content: "Manually create a Kubernetes manifest."
+      isCorrect: false
+      explanation: "Incorrect. You can create a manifest manually when you want a high level of control over the deployment but this process takes time."
+    - content: "Use Aspir8."
+      isCorrect: true
+      explanation: "Correct. Use the Aspir8 tool to translate the .NET Aspire manifest into a Kubernetes manifest rapidly and deploy the app's containers to Kubernetes."
+  - content: "You want to configure Continuous Integration/Continuous Deployment using a GitHub Action for your .NET Aspire solution. Which tool can you use to complete this task?"
+    choices:
+    - content: "The Azure Developer CLI"
+      isCorrect: true
+      explanation: "Correct. You can use the azd pipeline config command to configure GitHub Actions for .NET Aspire solutions."
+    - content: "winget"
+      isCorrect: false
+      explanation: "Incorrect. You can't use the winget package manager to configure CI/CD or GitHub Actions."
+    - content: "Aspir8"
+      isCorrect: false
+      explanation: "Incorrect. You can use Aspir8 to deploy .NET Aspire solutions to Kubernetes cluster but you can't use it to configure GitHub Actions."

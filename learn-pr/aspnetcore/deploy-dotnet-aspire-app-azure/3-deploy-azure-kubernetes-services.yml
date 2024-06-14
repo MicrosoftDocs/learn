@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-dotnet-aspire-app-azure.deploy-azure-kubernetes-services
+title: Deploy to Azure Kubernetes Services
+metadata:
+  title: Deploy to Azure Kubernetes Services
+  description: In this unit, you'll learn how to use the Aspir8 tool to deploy a .NET Aspire solution to Azure Kubernetes Services.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-deploy-azure-kubernetes-services.md)]
