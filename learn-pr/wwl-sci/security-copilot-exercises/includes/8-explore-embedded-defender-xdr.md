@@ -7,7 +7,7 @@ In this exercise, you investigate an incident in Microsoft Defender XDR. As part
 
 For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You'll work in Microsoft Defender, using the new unified security operations platform, to access the embedded Copilot capabilities in Microsoft Defender XDR. Towards the end of the exercise, you pivot to the standalone experience of Microsoft Copilot for Security.
 
-This exercise should take approximately **25** minutes to complete.
+This exercise should take approximately **30** minutes to complete.
 
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
