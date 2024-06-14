@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.streamline-nonprofit-program-management-with-microsoft-copilo.exercise-plan-effective-programs
-title: Exercise - Plan effective programs
+uid: learn.streamline-nonprofit-program-management-with-microsoft-copilo.exercise-program-planning
+title: Exercise - Program planning
 metadata:
-  title: exercise
+  title: exercise - program planning
   description: This content is a part of the Streamline nonprofit program management with Microsoft Copilot module.
   ms.date: 5/30/2024
   author: CourtneyHMicrosoft
@@ -11,4 +11,4 @@ metadata:
   ai-usage: ai-assisted
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-exercise-plan-effective-programs.md)]
+  [!include[](includes/3-exercise-program-planning.md)]

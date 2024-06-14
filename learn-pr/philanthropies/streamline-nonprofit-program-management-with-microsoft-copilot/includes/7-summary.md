@@ -2,19 +2,13 @@ In this module, you've gained valuable insights into how Copilot can streamline 
 
 ## Additional resources
 
-Explore the best of Microsoft 365 to boost your productivity and skills! In this video, we dive into the integration of Copilot in Microsoft Loop, and how we can bring them both together to save you time, and make you more productive! Whether you're a seasoned Loop user or curious about Microsoft Copilot, this video is packed with insights, tips, and a step-by-step guide on using Microsoft Loop and Copilot, to do even more for you! [https://aka.ms/TechSoup-Supercharge](https://aka.ms/TechSoup-Supercharge) 
-
- Let Copilot assist you with additional everyday tasks across Microsoft applications. View these short videos to learn how your AI assistant can help [summarize reports and research](https://aka.ms/TechSoup-Summarize-Content) for you, [use Excel's Forecast feature](https://aka.ms/TechSoup-Forecast) to calculate or predict a future value using existing values, and [how to rehearse with coach in PowerPoint](https://aka.ms/TechSoup-Rehearse) to prepare for your presentation.  
-
-Alternative option:  
 
 These short videos provide examples of how to utilize Copilot to get the most out of your day!  
 
-[How to use Copilot to Summarize content](https://aka.ms/TechSoup-Summarize-Content)
-
-[How to use the Forecast Feature in Excel](https://aka.ms/TechSoup-Forecast)
-
-[How to use Rehearse with Coach in PowerPoint](https://aka.ms/TechSoup-Rehearse) 
+- [How to use Microsoft Loop in Teams](https://aka.ms/TechSoup-Supercharge) 
+- [How to use Copilot to Summarize content](https://aka.ms/TechSoup-Summarize-Content)
+- [How to use the Forecast Feature in Excel](https://aka.ms/TechSoup-Forecast)
+- [How to use Rehearse with Coach in PowerPoint](https://aka.ms/TechSoup-Rehearse) 
 
 Visit [Copilot Lab](https://aka.ms/CopilotLab) for videos, tips, and tricks for powerful prompting as you start your Copilot journey.  
 

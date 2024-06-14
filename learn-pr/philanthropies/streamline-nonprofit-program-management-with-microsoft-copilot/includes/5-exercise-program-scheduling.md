@@ -2,7 +2,7 @@ In this exercise, you'll modify a prompt template to create a program schedule, 
 
 ```
 Create a Gantt chart that outlines a schedule for the [program] and assigns tasks that 
-align with the [program requirements]. Include [deadlines] and task completion status 
+align with the [program requirements]. Include [deadlines] and task completion status. 
 ```
 
 Now it's your turn. Use your imagination, ask Copilot how it can help, and then craft prompts for monitoring and communicating progress and adherence to the schedule it creates.

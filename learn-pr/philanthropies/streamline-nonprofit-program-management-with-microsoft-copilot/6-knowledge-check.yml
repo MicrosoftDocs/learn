@@ -24,7 +24,7 @@ quiz:
     - content: "Copilot can manage the nonprofit's finances. "
       isCorrect: false
       explanation: "Copilot aids in program planning by offering ideas based on the program's theme, sector, and audience, and by creating templates such as logic models and theory of change. It does not provide legal advice, manage finances, or recruit volunteers, as these tasks are outside its capabilities."
-    - content: "Copilot can recruit volunteers for program activities"
+    - content: "Copilot can recruit volunteers for program activities."
       isCorrect: false
       explanation: "Copilot aids in program planning by offering ideas based on the program's theme, sector, and audience, and by creating templates such as logic models and theory of change. It does not provide legal advice, manage finances, or recruit volunteers, as these tasks are outside its capabilities."
   - content: "Which of the following is NOT a task that Copilot can help with in program planning?"
@@ -35,7 +35,7 @@ quiz:
     - content: "Creating and filling in program planning templates, such as logic models, theory of change, and results frameworks."
       isCorrect: false
       explanation: "Copilot can help with generating ideas, creating templates, and providing feedback for your program plan, but it cannot implement and execute your program plan, which is a human responsibility that requires leadership, communication, and problem-solving skills."
-    - content: "Reviewing and critiquing your program plan, and suggesting improvements, such as clarity, coherence, and alignment"
+    - content: "Reviewing and critiquing your program plan, and suggesting improvements, such as clarity, coherence, and alignment."
       isCorrect: false
       explanation: "Copilot can help with generating ideas, creating templates, and providing feedback for your program plan, but it cannot implement and execute your program plan, which is a human responsibility that requires leadership, communication, and problem-solving skills."
     - content: "Implementing and executing your program plan, and ensuring its quality, timeliness, and coordination."
