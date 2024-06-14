@@ -1,47 +1,41 @@
 ### YamlMime:Module
 uid: learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot
 metadata:
-  title: {{moduleTitle}}
+  title: Enhance nonprofit volunteer management with Microsoft Copilot
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
-  ms.date: {{msDate}}
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
-  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.date: 6/13/2024
+  author: cohodgeMicrosoft
+  ms.author: cohodge
+  ms.topic: module-standard-task-based
+  ms.service: artificial-intelligence
   ai-usage: ai-assisted
-###########################################################################
-###
-### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
-### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
-###
-### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
-###
-### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
-### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
-### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.prod: TODO
-  ms.service: TODO
-title: {{moduleTitle}}
-summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+title: Enhance nonprofit volunteer management with Microsoft Copilot
+summary: This module demonstrates how to use Copilot to manage volunteers within your nonprofit organization. 
 abstract: |
-  By the end of this module, you'll be able to: 
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+  By the end of this module, you'll be able to:
+    - Recognize opportunities to leverage AI and Copilot in your program management activities.
+    - Use copilot to help generate and edit program plans, timelines, and reports.
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+  - Complete the [Introduction to AI skills for nonprofits learning path](https://learn.microsoft.com/learn/paths/introduction-to-ai-skills-for-nonprofits/)
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
-  - TODO
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
-  - TODO
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-  {{products}}
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
-  - TODO
+levels: 
+  - beginner
+roles:
+  - functional-consultant
+  - higher-ed-educator
+  - school-leader
+  - k-12-educator
+  - business-user
+  - business-owner
+products:
+  - ai-services
+  - m365-apps
+  - ms-copilot
+subjects:
+  - artificial-intelligence
+  - business-applications
 units:
-- learn.streamline-nonprofit-program-management-with-microsoft-copilot.introduction
+- learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.introduction
 - learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.elevate-volunteer-recruitment
 - learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.exercise-volunteer-recruitment
 - learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.simplify-volunteer-training
