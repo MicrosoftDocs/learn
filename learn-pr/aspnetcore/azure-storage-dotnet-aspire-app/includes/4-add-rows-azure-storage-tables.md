@@ -1,6 +1,6 @@
 Another service included in Azure Storage accounts is Azure Table storage. In these tables, you can store large lists of entities with flexible schemas. Table storage is designed to be adaptable, scalable, and cost effective.
 
-In the outdoor equipment retailer you work for, you're already using Azure Storage accounts in several microservices to store blobs and message queues. One microservice uses a SQL database for product information but you want to assess whether Azure Table storage is a better place to keep this data.
+In the outdoor equipment retailer you work for, you're already using Azure Storage accounts in several microservices to store blobs and message queues. One microservice uses an SQL database for product information but you want to assess whether Azure Table storage is a better place to keep this data.
 
 In this unit, you'll learn about the .NET Aspire Azure Data Tables component and how you can implement it in a cloud-native app.
 
@@ -71,8 +71,6 @@ public class CatalogService(TableServiceClient client)
 ### Storing data
 
 From .NET Aspire, you can obtain a `TableServiceClient` from dependency injection. With this client, you can create and obtain tables:
-
-!!! TODO Check this code!
 
 ```csharp
 private static async Task<TableClient> CreateProductsTableAsync(TableServiceClient tableServiceClient)
