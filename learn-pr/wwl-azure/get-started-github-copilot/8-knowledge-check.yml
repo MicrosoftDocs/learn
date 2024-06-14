@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/16/2024
+  ms.date: 06/13/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
@@ -32,7 +32,7 @@ quiz:
       explanation: "Incorrect. GitHub Copilot doesn't manage repositories, it provides autocomplete-style suggestions as code is entered."
     - content: "It's an AI pair programmer that provides autocomplete-style suggestions as code is entered."
       isCorrect: true
-      explanation: "Correct. GitHub Copilot is an AI pair programmer that provides autocomplete-style suggestions as code is entered."
+      explanation: "Correct. GitHub Copilot is an AI pair programmer that provides autocomplete-style suggestions as code and comments are entered."
     - content: "It's a tool for debugging code."
       isCorrect: false
       explanation: "Incorrect. GitHub Copilot doesn't debug code, it provides autocomplete-style suggestions as code is entered."

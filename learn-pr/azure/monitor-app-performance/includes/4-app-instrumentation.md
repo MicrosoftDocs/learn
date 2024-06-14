@@ -1,4 +1,3 @@
-
 Application Insights is enabled through either Auto-Instrumentation (agent) or by adding the Application Insights SDK to your application code.
 
 ## Auto-instrumentation

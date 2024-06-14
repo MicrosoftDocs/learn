@@ -8,8 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.custom: N/A, linux-related-content
 durationInMinutes: 8
 content: |
   [!include[](includes/3-manage-file-shares.md)]

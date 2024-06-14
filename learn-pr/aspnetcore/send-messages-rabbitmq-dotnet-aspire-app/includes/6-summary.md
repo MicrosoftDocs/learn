@@ -1,4 +1,4 @@
-Robust communication between microservices is essential in business-critical cloud-native apps. Message queue services, such as RabbitMQ, can increase your app's resilience by managing queues of messages securely. .NET Aspire makes it easy to use this service by providing client components out-of-the-box. In this module, you've learned how to add these components to a .NET Aspire app and how to send and receive messages using them.
+Robust communication between microservices is essential in business-critical cloud-native apps. Message queue services, such as RabbitMQ, can increase your app's resilience by managing queues of messages securely. .NET Aspire makes it easy to use this service by providing client components out-of-the-box. In this module, you've learned how to add these components to a .NET Aspire project and how to send and receive messages using them.
 
 Now that you've completed this module, you can:
 

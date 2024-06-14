@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.use-telemetry-dotnet-aspire
 metadata:
-  title: Use telemetry in a .NET Aspire app
+  title: Use telemetry in a .NET Aspire project
   description: In this module, you'll learn about using telemetry to record the behavior of a cloud-native application and how the .NET Aspire stack makes it easier store data and view it later.
   author: camsoper
   ms.author: casoper
@@ -9,15 +9,15 @@ metadata:
   ms.service: dotnet-aspire
   ms.custom:
   - team=cloud_advocates
-title: Use telemetry in a .NET Aspire app
-summary: Learn how to use telemetry in a .NET Aspire app to log data and examine the behavior of a cloud-native application. 
+title: Use telemetry in a .NET Aspire project
+summary: Learn how to use telemetry in a .NET Aspire project to log data and examine the behavior of a cloud-native application. 
 abstract: |
   By the end of this module, you'll be able to:
 
   - Understand the relationship between .NET Aspire and OpenTelemetry.
   - Understand the telemetry data sources available in .NET.
   - Use the .NET Aspire dashboard to monitor the telemetry data from a cloud-native application.
-  - Add ILogger messages to the .NET Aspire application.
+  - Add ILogger messages to the application.
 ratingEnabled: true
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

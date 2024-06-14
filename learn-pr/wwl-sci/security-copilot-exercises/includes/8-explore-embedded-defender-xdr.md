@@ -2,9 +2,12 @@ In this exercise, you investigate an incident in Microsoft Defender XDR. As part
 
 > [!NOTE]
 > The environment for this exercise is based on a simulation, generated from pre-determined screen captures of the actual product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script are not be supported.
+
 ### Exercise
 
-For this exercise, you're logged in as Avery Howard and have the Copilot owner role. For most of the tasks in this exercise, you work in the Microsoft Defender portal and access the embedded Copilot capabilities of Defender XDR. Towards the end of the exercise, you pivot to the standalone experience.
+For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You'll work in Microsoft Defender, using the new unified security operations platform, to access the embedded Copilot capabilities in Microsoft Defender XDR. Towards the end of the exercise, you pivot to the standalone experience of Microsoft Copilot for Security.
+
+This exercise should take approximately **25** minutes to complete.
 
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
@@ -62,7 +65,7 @@ For this exercise, you're logged in as Avery Howard and have the Copilot owner r
 1. From the windows opens, select **Analyze**. Copilot generates a summary.
 
 
-#### Task: Pivot to the standalone experience and run incident promptbook
+#### Task: Pivot to the standalone experience
 
 This task is complex and requires the involvement of more senior analysts. In this task, you pivot your investigation and run the Defender incident promptbook so the other analysts have a running start on the investigation. You pin responses to the pin board and generate a link to this investigation that you can share with more advanced members of the team to help investigate.
 
