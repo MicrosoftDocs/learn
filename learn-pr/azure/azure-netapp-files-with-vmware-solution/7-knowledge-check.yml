@@ -42,16 +42,16 @@ quiz:
     choices:
     - content: "Reduced Azure VMware Solution CPU and memory costs."
       isCorrect: false
-      explanation: "Azure NetApp Files allows you to scale storage without the cost of additional Azure VMware Solution hosts providing opportunity for decrease total cost of ownership."
-    - content: "Non-disruptive storage scaling as business needs change."
+      explanation: "Azure NetApp Files allows you to scale storage without the cost of more Azure VMware Solution hosts providing opportunity for decrease total cost of ownership."
+    - content: "Nondisruptive storage scaling as business needs change."
       isCorrect: false
-      explanation: "Azure NetApp Files can scale up and down non-disruptively to meet changing business needs."
+      explanation: "Azure NetApp Files can scale up and down nondisruptively to meet changing business needs."
     - content: "Built-in data protection features."
       isCorrect: false
       explanation: "Azure NetApp Files includes data protection features such as snapshots, backup, and cross-zone/region replication."
     - content: "Provide a unified storage solution combing both file and block protocols."
       isCorrect: true 
-      explanation: "Azure NetApp Files is a shared file service and does not offer block protocol connectivity."
+      explanation: "Azure NetApp Files is a shared file service and doesn't offer block protocol connectivity."
 
 
  
