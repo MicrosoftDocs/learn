@@ -17,7 +17,7 @@ abstract: |
   - Deploy a .NET Aspire solution, including microservices and components, to Azure Container Apps.
   - Deploy a .NET Aspire solution to a Kubernetes cluster, such as Azure Kubernetes Service.
 ratingEnabled: true
-iconUrl: /training/achievements/dotnet-aspiresvg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
