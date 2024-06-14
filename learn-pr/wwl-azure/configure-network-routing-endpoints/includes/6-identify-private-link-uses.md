@@ -1,4 +1,3 @@
-
 Azure Private Link provides private connectivity from a virtual network to Azure platform as a service (PaaS), customer-owned, or Microsoft partner services. It simplifies the network architecture and secures the connection between endpoints in Azure by eliminating data exposure to the public internet.
 
 ### Things to know about Azure Private Link 
@@ -29,4 +28,4 @@ There are many benefits to working with Azure Private Link. Review the following
 
 - **Consider protection against data exfiltration for Azure resources**. Map private endpoints to Azure PaaS resources. When there's a security incident within your network, only the mapped resources are accessible. This implementation eliminates the threat of data exfiltration.
 
-- **Consider services delivered directly to customer virtual networks**. Privately consume Azure PaaS, Microsoft partner, and your own services in your virtual networks on Azure. Private Link works across Microsoft Entra tenants to help unify your experience across services. Send, approve, or reject requests directly without permissions or role-based access controls.
+- **Consider services delivered directly to customer virtual networks**. Privately consume Azure PaaS, Microsoft partner, and your own services in your virtual networks on Azure. Private Link works across Azure Active Directory (Azure AD) tenants to help unify your experience across services. Send, approve, or reject requests directly without permissions or role-based access controls.
