@@ -30,7 +30,7 @@ quiz:
     - content: "The Azure Developer CLI"
       isCorrect: true
       explanation: "Correct. You can use the azd pipeline config command to configure GitHub Actions for .NET Aspire solutions."
-    - content: "winget"
+    - content: "Winget"
       isCorrect: false
       explanation: "Incorrect. You can't use the winget package manager to configure CI/CD or GitHub Actions."
     - content: "Aspir8"

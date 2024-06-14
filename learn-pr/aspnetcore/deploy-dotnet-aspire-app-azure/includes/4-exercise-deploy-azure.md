@@ -1,7 +1,7 @@
 In this exercise, you'll use the Azure Developer CLI to deploy the eShop .NET Aspire solution to Azure Container Apps.
 
 > [!IMPORTANT]
-> To complete this exercise, you'll need an Azure subscription. If you don't have a subscription, you can [create a free trial subscription](https://azure.microsoft.com/en-us/free/).
+> To complete this exercise, you'll need an Azure subscription. If you don't have a subscription, you can [create a free trial subscription](https://azure.microsoft.com/free/).
 
 ## Install prerequisites
 
@@ -292,5 +292,5 @@ When the deployment is complete, you can examine the new resources in your Azure
 
     :::image type="content" source="../media/deployed-dashboard-open-webapp.png" lightbox="../media/deployed-dashboard-open-webapp.png" alt-text="Screenshot showing the .NET Aspire dashboard, deployed in an Azure subscription.":::
 
-1. The web app is displayed. Notice that the site's URL indicates that it is running in Azure Container Apps.
-1. When you are finished with the .NET Aspire solution, you can clean up your Azure subscription by deleting the **rg-aspireeshop** resource group.
+1. The web app is displayed. Notice that the site's URL indicates that it's running in Azure Container Apps.
+1. When you're finished with the .NET Aspire solution, you can clean up your Azure subscription by deleting the **rg-aspireeshop** resource group.

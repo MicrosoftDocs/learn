@@ -1,12 +1,12 @@
 If you want to host cloud-native .NET Aspire solutions in Azure, you can choose from two services: Azure Container Apps or Azure Kubernetes Service. Both can create highly flexible and scalable deployments but Azure Container Apps can be easier to configure.
 
-In your outdoor equipment retailer, you want to deploy the new eShop your team has created for staging. You want a system that's easy to set up and configure but will run all the containers in one place. You want to know if Azure Container Apps is the right choice for this requirement.
+In your outdoor equipment retailer, you want to deploy the new eShop for staging. You want a system that's easy to set up and configure but runs all the containers in one place. You want to know if Azure Container Apps is the right choice for this requirement.
 
 In this unit, you'll learn how to deploy a .NET Aspire solution to Azure Container Apps by using Visual Studio or the Azure Developer CLI.
 
 ## Deploying .NET Aspire solutions
 
-Cloud-native apps, such as those built with the .NET Aspire stack, consist of microservices and their associated backing services and other executables. Each of these is independent and may employ different technologies and languages from the others. This structure often becomes complex for large apps and the necessary manual deployment steps can become similarly complex. The number of steps involved in the manual deployment of multiple microservices and their requirements is large and such procedures are prone to user error.
+Cloud-native apps, such as those built with the .NET Aspire stack, consist of microservices and their associated backing services and other executables. Each of these microservices is independent and may employ different technologies and languages from the others. This structure often becomes complex for large apps and the necessary manual deployment steps can become similarly complex. The number of steps involved in the manual deployment of multiple microservices and their requirements is large and such procedures are prone to user error.
 
 More complicating factors can be introduced when you need to deploy to several different environments such as testing, staging, and production.
 
@@ -19,24 +19,24 @@ To make deployment easier, .NET Aspire includes automated deployment tools that 
 
 Manifest files are an important part of deployment automation: they describe the content of the complete .NET Aspire solution, including all its containers and backing services. They also include properties necessary for a deployment, such as environment variables, for example.
 
-When you use Visual Studio or azd to deploy an app, manifest files are created created for you by using specialized targets of the app host project.
+When you use Visual Studio or azd to deploy an app, manifest files are created for you by using specialized targets of the app host project.
 
 ## What is Azure Container Apps?
 
-A cloud-native application, whether it's built using .NET Aspire or not, runs in containers. Each container image usually maps to one microservice or one backing service. To run them, you need a service that hosts containers in the cloud. Azure Container Apps is one such service.
+A cloud-native application, whether it uses .NET Aspire or not, runs in containers. Each container image usually maps to one microservice or one backing service. To run them, you need a service that hosts containers in the cloud. Azure Container Apps is one such service.
 
-Azure Container Apps is easy to use because much of the underlying technology is automated. You can deploy and configure a microservice with a relatively small amount of code and once the microservice is running, it automatically scales in response to traffic, processing load, memory load, or other values.
+Azure Container Apps is easy to use because much of the underlying technology is automated. You can deploy and configure a microservice with a relatively small amount of code. Once the microservice is running, it automatically scales in response to traffic, processing load, memory load, or other values.
 
 > [!TIP]
-> Azure Container Apps includes the KEDA automatic scaler, so you can use any metric supported by KEDA in you customized scaling regime.
+> Azure Container Apps includes the KEDA automatic scaler, so you can use any metric supported by KEDA in your customized scaling regime.
 
-Azure Container Apps is easier to use that other container orchestrators available on Azure because much of the underlying technology is automated. You don't have to become an expert in orchestration to deploy your first applications and you don't have to take charge of the underlying infrastructure. It can also scale to large deployments. However, if you have specialized needs, you may find that they are not supported. For example, if you want to use a custom service mesh or make other adjustments, you may need to use Azure Kubernetes Services instead.
+Azure Container Apps is easier to use that other container orchestrators available on Azure because much of the underlying technology is automated. You don't have to become an expert in orchestration to deploy your first applications and you don't have to take charge of the underlying infrastructure. It can also scale to large deployments. However, if you have specialized needs, you may find that they aren't supported. For example, if you want to use a custom service mesh or make other adjustments, you may need to use Azure Kubernetes Services instead.
 
 To deploy and run a containerized app in Azure Container Apps, you issue commands with the **Azure Developer CLI**. These commands can integrate into your preferred Continuous Integration/Continuous Deployment pipelines if you're using them. For example, you can add deployment commands to a GitHub Action so that a microservice is deployed every time a pull request is merged.
 
 ## Deploying apps using Visual Studio
 
-If you used one of the .NET Aspire templates to create your solution in Visual Studio, you have a simple wizard that will deploy your .NET Azure app to Azure Container Services. Visual Studio can complete these deployment tasks:
+If you used one of the .NET Aspire templates to create your solution in Visual Studio, you have a simple wizard that deploys your .NET Azure app to Azure Container Services. Visual Studio can complete these deployment tasks:
 
 - Create an Azure resource group to organize all the necessary resources.
 - Create a container registry to store all the necessary container images.
@@ -44,9 +44,9 @@ If you used one of the .NET Aspire templates to create your solution in Visual S
 - Provision a Redis container in Azure if the solution uses it.
 - Deploy containers to Azure Container Apps.
 
-To start the publishing wizard, in **Solution Explorer** right-click the **.AppHost** project and then select **Publish**. Choose the publishing target **Azure Container Apps for .NET Aspire**. The wizard prompts you for these values:
+To start the publishing wizard, in **Solution Explorer** right-click the **AppHost** project and then select **Publish**. Choose the publishing target **Azure Container Apps for .NET Aspire**. The wizard prompts you for these values:
 
-- **Subscription**: Choose the Azure subscription to host the app.
+- **Subscription**: Choose the Azure subscription that you want to host the app.
 - **Location**: Choose the Azure region where you want to host the app.
 - **Environment name**: All the resources the wizard creates in Azure have names based on this value.
 
@@ -74,9 +74,9 @@ Before you can deploy, you should initialize your solution with the CLI. Run the
 azd init
 ```
 
-This command inspects your solution, asks you questions, and generates deployment files including the .NET Aspire manifest.
+This command inspects your solution, asks questions, and generates deployment files including the .NET Aspire manifest.
 
-Once you've initialized the solution, you can package, provision, and deploy the app with a single command:
+After initializing the solution, you can package, provision, and deploy the app with a single command:
 
 ```azd
 azd up
@@ -86,7 +86,7 @@ azd up
 
 The Developer CLI can also help you to configure CI/CD by creating a GitHub repository, if you don't already have one, and adding a GitHub Action to it. Whenever changes are pushed to the repository, the GitHub Action executes to deploy the changes to Azure.
 
-To set this system up, start with by executing the `azd init` command as you saw in the last section. Once you have configured the GitHub Action, you can use the following command to create the GitHub Action and connect it to your Azure subscription:
+To set up this system, start with by executing the `azd init` command as you saw in the last section. Then you can use the following command to create the GitHub Action and connect it to your Azure subscription:
 
 ```azd
 azd pipeline config

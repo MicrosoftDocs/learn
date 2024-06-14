@@ -1,4 +1,4 @@
-.NET Aspire solutions consist of custom microservices, each of which runs in a container, and supporting services such as databases, caching services, and messenging services. The decoupled nature of these components can make deployment complex. In this module, you've seen how to deploy containers to Azure services to run test and customer-facing deployments. You've also learnt how .NET Aspire solutions can integrate into CI/CD pipelines.
+.NET Aspire solutions consist of custom microservices and supporting services such as databases, caching services, and messaging services. Each microservice runs in a container. The decoupled nature of these components can make deployment complex. In this module, you've seen how to deploy containers to Azure services to run test and customer-facing deployments. You've also learnt how .NET Aspire solutions can integrate into CI/CD pipelines.
 
 After completing this module, you can:
 

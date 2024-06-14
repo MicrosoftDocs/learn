@@ -1,16 +1,16 @@
-If you want the most granular control of your containers in an Azure-deployed .NET Aspire solution, or you have a team with expertise in Kubernetes, you should consider using Aure Kubernetes Service.
+If you want the most granular control of your containers in an Azure-deployed .NET Aspire solution, or you have a team with expertise in Kubernetes, you should consider using Azure Kubernetes Service.
 
 In your outdoor equipment retailer, you want to deploy the completed eShop for production. Your team has worked with Kubernetes clusters before and some members want the ability to customize ingress and traffic management. You want to understand the deployment process for Kubernetes clusters.
 
-In this unit, you'll learn how to deploy a .NET Aspire cloud-native app to Kubernetes clusters including Azure Kuberbetes Service.
+In this unit, you'll learn how to deploy a .NET Aspire cloud-native app to Kubernetes clusters including Azure Kubernetes Service.
 
 ## What is Kubernetes?
 
-Kubernetes is a orchestration system that runs and manages containers to create scalable and flexible hosting systems for software. Each container provides a repeatable and predictable environment for the software component that it runs. Kubernetes can scale the system by deploying new containers and distribute requests amongst all the instances of that image. Since cloud-native applications, such as those built with .NET Aspire, are composed of microservices that run in containers, Kubernetes is a popular choice to host them, even in production environments with high potential user demand.
+Kubernetes is an orchestration system that runs and manages containers to create scalable and flexible hosting systems for software. Each container provides a repeatable and predictable environment for the software component that it runs. Kubernetes can scale the system by deploying new containers and distribute requests among all the instances of that image. Since cloud-native applications, such as those built with .NET Aspire, are composed of microservices that run in containers, Kubernetes is a popular choice to host them, even in production environments with high potential user demand.
 
 Kubernetes runs on a cluster of **nodes**. Each node is a computer that can host containers. Each node must run certain Kubernetes components such as the **container runtime**, which launches containers, and **kubelet**, which monitors the health of the node. At least one node is designated the **master node**, and runs the Kubernetes **control plane**. The control plane manages communication, encryption, and scheduling.
 
-The control plane schedule **pods** to run on nodes. Each pod consists of one or more containers, which will always run on the same node and can reference each other. Pods can include **volumes** that provide persistent storage for the lifetime of the pod. The data stored on volumes is not lost when any individual container stops.
+The control plane schedule **pods** to run on nodes. Each pod consists of one or more containers, which always run on the same node and can reference each other. Pods can include **volumes** that provide persistent storage for the lifetime of the pod. The data stored on volumes isn't lost when any individual container stops.
 
 Features of Kubernetes include:
 
