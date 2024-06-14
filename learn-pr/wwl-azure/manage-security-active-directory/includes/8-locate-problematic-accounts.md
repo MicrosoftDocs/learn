@@ -15,42 +15,12 @@ You can use Windows PowerShell or the AD DS Administrative Center to find proble
 Get-ADUser -Filter {Enabled -eq $true -and PasswordNeverExpires -eq $true}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```
 
 Use the following Windows PowerShell command to find users that have not signed in within the last 90 days, using Windows PowerShell:
 
 ```powershell
 Get-ADUser -Filter {LastLogonTimeStamp -lt (Get-Date).Adddays(-(90))-and enabled -eq $true} -Properties LastLogonTimeStamp
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ```

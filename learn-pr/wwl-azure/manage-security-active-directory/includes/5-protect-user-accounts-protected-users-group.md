@@ -1,4 +1,4 @@
-The AD DS (Active Directory) security group Protected Users helps you protect highly privileged user accounts against compromise. The Protected Users group members have several security-related configuration settings applied that cannot be modified except by leaving the group.
+The AD DS (Active Directory) security group Protected Users helps you protect highly privileged user accounts against compromise. The Protected Users group members have several security-related configuration settings applied that can't be modified except by leaving the group.
 
 ## Protected Users group prerequisites
 
@@ -12,22 +12,22 @@ To provide protection for members of the Protected Users group:
 
 When a user is a member of the Protected Users group, on their workstation or local device:
 
- -  User credentials are not cached locally.
- -  Credential delegation (CredSSP) will not cache user credentials.
+ -  User credentials aren't cached locally.
+ -  Credential delegation (CredSSP) won't cache user credentials.
  -  Windows Digest will not cache user credentials.
- -  NTLM will not cache user credentials.
- -  Kerberos will not create DES (Data Encryption Standard) or RC4 keys, or cache credentials or long-term keys.
+ -  NTLM won't cache user credentials.
+ -  Kerberos won't create DES (Data Encryption Standard) or RC4 keys, or cache credentials or long-term keys.
  -  The user can no longer sign-in offline.
 
 On domain controllers running Windows Server 2012 R2 or later:
 
- -  NTLM authentication is not allowed.
- -  DES and RC4 encryption in Kerberos preauthentication cannot be used.
- -  Credentials cannot be delegated using constrained delegation.
- -  Cannot be delegated using unconstrained delegation.
- -  Ticket-granting tickets (TGTs) cannot renew past the initial lifetime.
+ -  NTLM authentication isn't allowed.
+ -  DES and RC4 encryption in Kerberos preauthentication can't be used.
+ -  Credentials can't be delegated using constrained delegation.
+ -  Can't be delegated using unconstrained delegation.
+ -  Ticket-granting tickets (TGTs) can't renew past the initial lifetime.
 
-To add users to privileged groups and the Protected Users group using the Active Directory Administrative Center (ADAC), please follow these steps:
+To add users to privileged groups and the Protected Users group using the Active Directory Administrative Center (ADAC), follow these steps:
 
 1.  Open the **Active Directory Administrative Center (ADAC)**.
 2.  In the left-hand navigation pane, expand your domain and navigate to the Users container or the specific Organizational Unit (OU) where the privileged group or the Protected Users group is located.
@@ -39,7 +39,7 @@ To add users to privileged groups and the Protected Users group using the Active
 8.  Confirm the additions by clicking **OK** and then **OK** again in the group properties window.<br>
 
 > [!NOTE]
-> The Protected Users group, which is designed to provide additional protections against credential theft attacks, uses the same steps to add users. However, ensure that the domain functional level is Windows Server 2012 R2 or later, as this is a prerequisite for deploying a Protected Users group.
+> The Protected Users group, which is designed to provide additional protections against credential theft attacks, uses the same steps to add users. However, ensure that the domain functional level is Windows Server 2012 R2 or later, as it's a prerequisite for deploying a Protected Users group.
 
 ## Authentication policies
 

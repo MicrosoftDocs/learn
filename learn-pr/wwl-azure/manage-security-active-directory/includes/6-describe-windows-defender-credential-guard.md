@@ -13,7 +13,7 @@ You can deploy Windows Defender Credential Guard only on devices that meet certa
 Windows Defender Credential Guard requires the following:
 
  -  Windows 10 Enterprise or Windows Server 2016 or later
- -  64-bit CPU CPU virtualization extensions plus extended page tables (Intel VT-x or AMD-V)
+ -  64-bit CPU virtualization extensions plus extended page tables (Intel VT-x or AMD-V)
  -  Trusted Platform Module (TPM) 1.2 or 2.0
  -  Unified Extensible Firmware Interface (UEFI) firmware version 2.3.1.c or newer
  -  UEFI Secure boot
@@ -24,7 +24,7 @@ Windows Defender Credential Guard can protect secrets in a Microsoft Hyper-V vir
  -  The Hyper-V host has an input/output memory management unit (IOMMU) and runs Windows Server 2016 or later, or runs Windows 10 Enterprise.
  -  The virtual machine must be Generation 2, have virtual TPM enabled, and run an operating system that supports Windows Defender Credential Guard.
 
-Windows Defender Credential Guard does not support:
+Windows Defender Credential Guard doesn't support:
 
  -  Unconstrained Kerberos delegation
  -  NTLMv1
@@ -33,4 +33,4 @@ Windows Defender Credential Guard does not support:
  -  Credential (CredSSP) delegation
  -  Kerberos DES (Data Encryption Standard) encryption
 
-Windows Defender Credential Guard is not supported on domain controllers. It also does not provide protections for the AD DS (Active Directory) database or Security Accounts Manager (SAM).
+Windows Defender Credential Guard isn't supported on domain controllers. It also doesn't provide protections for the AD DS (Active Directory) database or Security Accounts Manager (SAM).
