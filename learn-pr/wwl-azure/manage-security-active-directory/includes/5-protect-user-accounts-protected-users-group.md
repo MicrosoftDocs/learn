@@ -1,4 +1,4 @@
-The AD DS (Active Directory) security group Protected Users helps you protect highly privileged user accounts against compromise. The Protected Users group members have several security-related configuration settings applied that can't be modified except by leaving the group.
+The AD DS security group Protected Users helps you protect highly privileged user accounts against compromise. The Protected Users group members have several security-related configuration settings applied that can't be modified except by leaving the group.
 
 ## Protected Users group prerequisites
 

@@ -4,10 +4,10 @@ title: Protect User Accounts with the Protected Users group
 metadata:
   title: Protect User Accounts with the Protected Users group
   description: "Protect User Accounts with the Protected Users group"
-  ms.date: 06/14/2024
+  ms.date: 06/15/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/5-protect-user-accounts-protected-users-group.md)]
