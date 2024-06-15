@@ -3,8 +3,8 @@ uid: learn.azure.publish-azure-web-app-with-azure-toolkit-eclipse.exercise-creat
 title: Exercise - Build a web app in Eclipse
 metadata:
   title: Exercise - Build a web app in Eclipse
-  description: Building and testing a web app using Eclipse
-  ms.date: 02/01/2020
+  description: Build and test a simple java web app by using the Eclipse IDE for Enterprise Java and Web Developers.
+  ms.date: 06/06/2024
   author: cephalin
   ms.author: cephalin
   ms.topic: unit

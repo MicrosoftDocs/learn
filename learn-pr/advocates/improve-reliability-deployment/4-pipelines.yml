@@ -4,7 +4,7 @@ title: "Test automation and the delivery pipeline"
 metadata:
   title: "Test automation and the delivery pipeline"
   description: "Test automation and the delivery pipeline"
-  ms.date: 04/05/2023
+  ms.date: 06/07/2024
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
@@ -34,15 +34,15 @@ quiz:
 
   - content: 'Environment traceability allows us to do which of these things?'
     choices:
-    - content: 'Correlate what is running in production with a specific build instance'
+    - content: 'Correlate what is running in production with a specific build instance.'
       isCorrect: true
       explanation: 'Correct.'
-    - content: 'Find out which environment variables were active during a build'
+    - content: 'Find out which environment variables were active during a build.'
       isCorrect: false
       explanation: 'Environment traceability allows us to correlate what is running in production with a specific build instance.'
     - content: 'Determine the origin of code in a source control system'
       isCorrect: false
       explanation: 'Environment traceability allows us to correlate what is running in production with a specific build instance.'
-    - content: 'Find the staging environment used for testing the code'
+    - content: 'Find the staging environment used for testing the code.'
       isCorrect: false
       explanation: 'Environment traceability allows us to correlate what is running in production with a specific build instance.'
