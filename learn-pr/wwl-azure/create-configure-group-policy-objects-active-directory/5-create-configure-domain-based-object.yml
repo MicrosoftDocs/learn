@@ -4,10 +4,10 @@ title: Create and configure a domain-based Group Policy Object
 metadata:
   title: Create and configure a domain-based Group Policy Object
   description: "Create and configure a domain-based Group Policy Object"
-  ms.date: 06/13/2024
+  ms.date: 06/15/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 12
 content: |
   [!include[](includes/5-create-configure-domain-based-object.md)]

@@ -4,10 +4,10 @@ title: Implement Group Policy Object scope and inheritance
 metadata:
   title: Implement Group Policy Object scope and inheritance
   description: "Implement Group Policy Object scope and inheritance"
-  ms.date: 06/13/2024
+  ms.date: 06/15/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/3-implement-object-scope-inheritance.md)]

@@ -31,6 +31,10 @@ Use security filters and WMI filters to narrow or specify the scope within the i
 ```powershell
 select * from Win32_OperatingSystem where Version like "10.%"
 
+
+
+
+
 ```
 
 ## GPO processing order

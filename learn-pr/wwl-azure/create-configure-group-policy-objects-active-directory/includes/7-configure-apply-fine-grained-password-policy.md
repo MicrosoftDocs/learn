@@ -1,4 +1,4 @@
-What if you wanted to have different password policies for different people? The domain password policy sets the password policy for the entire domain. What if your organization wanted to have different password policies for different groups of people? Maybe vendors passwords need to require more frequent updates, and domain admins need a more secure password, and other groups also need different password configurations.
+What if you wanted to have different password policies for different people? The domain password policy sets the password policy for the entire domain. What if your organization wanted to have different password policies for different groups of people? Maybe vendors passwords need to require more frequent updates, domain admins need a more secure password, and other groups also need different password configurations.
 
 A fine-grained password policy (FGPP) enables active directory to enforce different password policies for different groups.
 

@@ -1,4 +1,4 @@
-This module covers the broad topic of Group Policy in Active Directory. Group Policy is a feature that allows administrators to define and deploy settings across their organizations.
+This module covers the broad topic of Group Policy in Active Directory. Group Policy is a feature that allows administrators to define and deploy settings and configurations across their organizations.
 
 ## Scenario
 

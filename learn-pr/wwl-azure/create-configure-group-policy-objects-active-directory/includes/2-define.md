@@ -7,12 +7,12 @@ Consequently, IT staff at Contoso can define, enforce, and update their entire c
 
 ## What is Group Policy?
 
-Group Policy is a framework in Windows operating systems with components that reside in Active Directory (AD), on domain controllers, and on each Windows Server and client. By using these components, you can manage configuration in an AD domain. You define Group Policy settings within a group policy object (GPO). A GPO is an object that contains one or more policy settings that apply to one or more configuration settings for a user or a computer.
+Group Policy is a framework in Windows operating systems with components that reside in Active Directory (AD), on domain controllers, and on each Windows Server and client. By using these components, you can manage configuration in an AD DS domain. You define Group Policy settings within a group policy object (GPO). A GPO is an object that contains one or more policy settings that apply to one or more configuration settings for a user or a computer.
 
 :::image type="content" source="../media/group-policy.png" alt-text="A screenshot of the Group Policy Management console. The administrator has selected the Contoso.com domain. Displayed are three GPOs. Also displayed are the OUs in the domain, some of which have linked GPOs.":::
 
 
-Group Policy is a powerful administrative tool. You can use GPOs to push various settings to a large number of users and computers. Because you can apply them to different levels, from the local computer all the way up to the domain, you can focus these settings precisely. Primarily, you use Group Policy to configure settings that you do not want users to configure. Additionally, you can use Group Policy to standardize desktop environments on all computers in an organizational unit (OU) or in an entire organization. You also can use Group Policy to provide additional security, to configure some advanced system settings, and for other purposes.
+Group Policy is a powerful administrative tool. You can use GPOs to push various settings to a large number of users and computers. Because you can apply them to different levels, from the local computer all the way up to the domain, you can focus these settings precisely. Primarily, you use Group Policy to configure settings that you do not want users to configure. Additionally, you can use Group Policy to standardize desktop environments on all computers in an OU or in an entire organization. You also can use Group Policy to provide additional security, to configure some advanced system settings, and for other purposes.
 
 :::image type="content" source="../media/group-policy-editor.png" alt-text="A screenshot of the Group Policy Management Editor. The administrator has expanded the Computer Configuration and User Configuration nodes to display the Policies and Preferences folders.":::
 

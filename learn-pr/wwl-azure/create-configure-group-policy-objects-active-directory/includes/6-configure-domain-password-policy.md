@@ -48,10 +48,10 @@ To update the password policy settings:
 
 While the new domain password settings are in place, they aren’t in effect yet. To apply the new settings, a group policy update needs to be completed.
 
-From a command prompt with administrative permissions, use the following command:
+From a command prompt with administrative permissions, type the following command:
 
 <!--- raw content start --->
-gpudate /force
+**gpudate /force**
 <!--- raw content end --->
 
 The domain password policy is now configured and rolled-out.

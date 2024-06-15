@@ -1,4 +1,4 @@
-You can create domain-based group policy objects (GPOs) in Active Directory (AD) and store them on domain controllers. You can use these GPOs to manage configuration centrally for the domain’s users and computers. When you install AD, Windows Server creates two default GPOs:
+You can create domain-based group policy objects (GPOs) in AD DS and store them on domain controllers. You can use these GPOs to manage configuration centrally for the domain’s users and computers. When you install AD DS, Windows Server creates two default GPOs:
 
  -  Default Domain Policy
  -  Default Domain Controllers Policy
@@ -10,7 +10,7 @@ You can create domain-based group policy objects (GPOs) in Active Directory (AD)
 
 The Default Domain Policy GPO is linked to the domain, and it applies to Authenticated Users. This GPO doesn't have any WMI filters. Therefore, it affects all users and computers in the domain. This GPO contains policy settings that specify password, account lockout, and Kerberos version 5 authentication protocol policies.
 
-These settings are of critical importance to the AD environment, and thus, make the Default Domain Policy a critical component of Group Policy. You shouldn't add unrelated policy settings to this GPO. If you need to configure other settings to apply broadly in your domain, create additional GPOs that link to the domain.
+These settings are of critical importance to the AD DS environment, and thus, make the Default Domain Policy a critical component of Group Policy. You shouldn't add unrelated policy settings to this GPO. If you need to configure other settings to apply broadly in your domain, create additional GPOs that link to the domain.
 
 ## Default Domain Controllers Policy
 
