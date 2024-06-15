@@ -5,7 +5,9 @@ In this exercise, you create a custom promptbook from an existing session and th
 
 ### Exercise
 
-For this exercise you're logged in as Avery Howard and have the Copilot owner role. For all the tasks in this exercise, you'll work in the Copilot standalone experience.
+For this exercise you're logged in as Avery Howard and have the Copilot owner role. You'll work in the standalone experience of Microsoft Copilot for Security.
+
+This exercise should take approximately **10** minutes to complete.
 
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
@@ -23,7 +25,7 @@ In this task, you create the promptbook. As part of the process, you templatize 
 
 1. To include a subset of all the prompts, you can select the box next to each individual prompt. Or you can select the box next to the pin icon to include all the prompts. In this case, you want to select all the prompts from the session. 
 
-1. Now that you’ve selected the prompts, select the Create promptbook icon ![sources icon](../media/create-promptbook-icon.png). The Create a promptbook window opens. Here you populate the specific information about the promptbook. For the simulation, use the right-arrow key to autopopulate the fields as follows.
+1. Now that you’ve selected the prompts, select the Create promptbook icon ![sources icon](../media/create-promptbook-icon.png). The Create a promptbook window opens. Here you populate the specific information about the promptbook. For the simulation, use the right-arrow key to auto-populate the fields as follows.
     1. Name: Failed logins
     1. Tags: Microsoft Entra
     1. Description: Find the last failed logins
