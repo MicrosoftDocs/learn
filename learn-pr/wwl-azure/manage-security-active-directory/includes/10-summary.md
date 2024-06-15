@@ -11,4 +11,3 @@ Use these resources to discover more:
  -  [Configure authentication policies silos](/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts)
  -  [Configure account security](/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory)
  -  [Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage)
-

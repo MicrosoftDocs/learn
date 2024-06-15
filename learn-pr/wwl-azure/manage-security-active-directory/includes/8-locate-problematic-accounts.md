@@ -1,6 +1,6 @@
-You should check your AD DS environment for accounts that have not signed in for a specific period of time, or that have passwords with no expiration date.
+You should check your AD DS environment for accounts that haven't signed in for a specific period of time, or that have passwords with no expiration date.
 
-Inactive user accounts usually indicate a person that has left the organization and organization processes have failed to remove or disable the account. The account might also have originally been shared by IT staff, but is no longer in use. These extra accounts represent additional opportunities for unauthorized users to gain access to your network resources.
+Inactive user accounts usually indicate a person that left the organization and organization processes failed to remove or disable the account. The account might also have originally been shared by IT staff, but is no longer in use. These extra accounts represent additional opportunities for unauthorized users to gain access to your network resources.
 
 Accounts with fixed passwords are less secure than accounts that are required to update their password periodically. If a third-party user obtains a user’s password, that knowledge is only valid until the user updates the password. If you configure an account with a password that the user doesn't have to update periodically, then a potential cybercriminal could have access to your network indefinitely. Ensuring regular password updates is especially important for highly privileged accounts.
 
@@ -17,7 +17,7 @@ Get-ADUser -Filter {Enabled -eq $true -and PasswordNeverExpires -eq $true}
 
 ```
 
-Use the following Windows PowerShell command to find users that have not signed in within the last 90 days, using Windows PowerShell:
+Use the following Windows PowerShell command to find users that haven't signed in within the last 90 days, using Windows PowerShell:
 
 ```powershell
 Get-ADUser -Filter {LastLogonTimeStamp -lt (Get-Date).Adddays(-(90))-and enabled -eq $true} -Properties LastLogonTimeStamp
