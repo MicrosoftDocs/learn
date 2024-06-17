@@ -1,16 +1,19 @@
+In this exercise, you will practice using Copilot to create a volunteer training handbook. Start by using the prompt templates, and then create your own prompts to reinforce what you've learned. 
 
 ```
-Create a volunteer training handbook, including sections for the following topics:
+Create a volunteer training handbook, using a  including sections for the following topics:
 
-Introduction with our mission, vision, and values and the importance of volunteers
+- Introduction with our mission, vision, and values and the importance of volunteers
 
-Safety and security guidelines
+- Safety and security guidelines
 
-Detail the roles they will take on, time commitments, and expectations
+- Detail the roles they will take on, time commitments, and expectations
 
-Highlight the importance of respectful behavior, listening, and communication skills
+- Highlight the importance of respectful behavior, listening, and communication skills
 
-Include a schedule for specialized project-based training  
+- Include a schedule for specialized project-based training  
+
+Write in casual, playful language to keep volunteers engaged.
 ```
 
 ## Test what you have learned:
