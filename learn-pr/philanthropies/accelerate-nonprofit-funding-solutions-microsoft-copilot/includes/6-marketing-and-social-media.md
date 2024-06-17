@@ -30,4 +30,4 @@ Let’s try this prompt in Copilot. “Our organization is running a summer volu
 
 View Copilot’s results here:
 
->[!Video](6cc69410-5d63-4de1-a9fa-fa7b0b22ee74)
+>[!VIDEO 6cc69410-5d63-4de1-a9fa-fa7b0b22ee74]

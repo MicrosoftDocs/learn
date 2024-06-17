@@ -15,7 +15,7 @@ abstract: |
     - Recognize opportunities to leverage AI and Copilot in your fundraising activities.
     - Use copilot to help with fundraising, grant management, donor relations, and social media and marketing efforts.
 prerequisites: |
-  - Complete the [Introduction to AI skills for nonprofits learning path](https://learn.microsoft.com/learn/paths/introduction-to-ai-skills-for-nonprofits/)
+  - Complete the [Introduction to AI skills for nonprofits learning path](/learn/paths/introduction-to-ai-skills-for-nonprofits/)
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - beginner
