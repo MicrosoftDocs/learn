@@ -4,7 +4,7 @@ metadata:
   title: Enhance nonprofit volunteer management with Microsoft Copilot
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
   ms.date: 6/13/2024
-  author: cohodgeMicrosoft
+  author: CourtneyHMicrosoft
   ms.author: cohodge
   ms.topic: module-standard-task-based
   ms.service: artificial-intelligence
@@ -16,7 +16,7 @@ abstract: |
     - Understand how Copilot can help with various aspects of volunteer management at a nonprofit organization.
     - Use Copilot to recruit, train, and retain volunteers for your nonprofit programs.
 prerequisites: |
-  - Complete the [Introduction to AI skills for nonprofits learning path](https://learn.microsoft.com/learn/paths/introduction-to-ai-skills-for-nonprofits/)
+  - Complete the [Introduction to AI skills for nonprofits learning path](/learn/paths/introduction-to-ai-skills-for-nonprofits/)
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - beginner
