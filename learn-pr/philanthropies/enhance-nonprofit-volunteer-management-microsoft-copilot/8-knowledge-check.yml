@@ -11,168 +11,41 @@ metadata:
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 3
-Question 1: What is a key benefit of using Copilot for volunteer management in nonprofit organizations? 
-
-A) Copilot can generate and edit volunteer recruitment materials. 
-
-B) Copilot can provide legal advice for volunteer management. 
-
-C) Copilot can manage the nonprofit's finances. 
-
-D) Copilot can physically set up volunteer events. 
-
-Correct Answer: A) Copilot can generate and edit volunteer recruitment materials. 
-
-  
-
-Feedback: Copilot aids in volunteer management by offering the ability to generate and edit materials such as job descriptions, flyers, and social media posts. It does not provide legal advice, manage finances, or set up events, as these tasks are outside its capabilities 
-
- 
-
-Question 2: Which of the following tasks is Copilot NOT designed to assist with volunteer training? 
-
-A) Creating volunteer training manuals and videos. 
-
-B) Generating volunteer training quizzes. 
-
-C) Providing feedback on volunteer training materials. 
-
-D) Conducting in-person volunteer training sessions. 
-
-Correct Answer: D) Conducting in-person volunteer training sessions. 
-
-  
-
-Feedback: While Copilot can help create training materials and quizzes, it cannot conduct in-person training sessions, which require human interaction and real-time communication. 
-
- 
-
-Question 3: What is an essential aspect of volunteer retention that Copilot can assist with? 
-
-A) Copilot can ensure long-term commitment from volunteers. 
-
-B) Copilot can generate and update volunteer retention materials. 
-
-C) Copilot can provide financial incentives for volunteers. 
-
-D) Copilot can personally thank each volunteer for their service. 
-
-Correct Answer: B) Copilot can generate and update volunteer retention materials. 
-
-  
-
 quiz:
   questions:
-  - content: ""
+  - content: "What is a key benefit of using Copilot for volunteer management in nonprofit organizations?"
     choices:
-    - content: ""
+    - content: "Copilot can generate and edit volunteer recruitment materials."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Copilot aids in volunteer management by offering the ability to generate and edit materials such as job descriptions, flyers, and social media posts. It does not provide legal advice, manage finances, or set up events, as these tasks are outside its capabilities."
+    - content: "Copilot can provide legal advice for volunteer management."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Copilot aids in volunteer management by offering the ability to generate and edit materials such as job descriptions, flyers, and social media posts. It does not provide legal advice, manage finances, or set up events, as these tasks are outside its capabilities."
+    - content: "Copilot can manage the nonprofit's finances."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Copilot aids in volunteer management by offering the ability to generate and edit materials such as job descriptions, flyers, and social media posts. It does not provide legal advice, manage finances, or set up events, as these tasks are outside its capabilities."
+    - content: "Copilot can physically set up volunteer events."
+      isCorrect: false
+      explanation: "Copilot aids in volunteer management by offering the ability to generate and edit materials such as job descriptions, flyers, and social media posts. It does not provide legal advice, manage finances, or set up events, as these tasks are outside its capabilities."
+  - content: "Which of the following tasks is Copilot NOT designed to assist with volunteer training?"
     choices:
-    - content: ""
+    - content: "Creating volunteer training manuals and videos."
+      isCorrect: false
+    - content: "Generating volunteer training quizzes."
+      isCorrect: false
+    - content: "Providing feedback on volunteer training materials."
+      isCorrect: false
+    - content: "Conducting in-person volunteer training sessions."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "While Copilot can help create training materials and quizzes, it cannot conduct in-person training sessions, which require human interaction and real-time communication."
+  - content: "What is an essential aspect of volunteer retention that Copilot can assist with?"
     choices:
-    - content: ""
+    - content: "Copilot can ensure long-term commitment from volunteers."
+      isCorrect: false
+    - content: "Copilot can generate and update volunteer retention materials."
       isCorrect: true
-      explanation: ""
-    - content: ""
+    - content: "Copilot can provide financial incentives for volunteers."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-content: |
-quiz:
-  questions:
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
+    - content: "Copilot can personally thank each volunteer for their service."
       isCorrect: false
       explanation: ""
