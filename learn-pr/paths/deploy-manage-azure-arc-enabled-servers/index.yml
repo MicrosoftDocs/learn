@@ -2,12 +2,11 @@
 uid: learn.wwl.deploy-manage-azure-arc-enabled-servers
 metadata:
   title: Deploy and manage Azure Arc-enabled Servers
-  description: In this learning path, you are introduced to Azure Arc-enabled servers. You will cover Arc-enabled server deployment, updates to Arc-enabled servers using Azure Update Manager and configuring Microsoft Defender for Cloud for Azure Arc-enabled servers.
+  description: In this learning path, you're introduced to Azure Arc-enabled servers. You'll cover Arc-enabled server deployment, updates to Arc-enabled servers using Azure Update Manager and configuring Microsoft Defender for Cloud for Azure Arc-enabled servers.
   ms.date: 06/17/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: learning-path
-  ms.service: azure-arc
 title: Deploy and manage Azure Arc-enabled Servers
 prerequisites: |
   -   Experience using the Azure portal to create resources.
@@ -15,7 +14,7 @@ prerequisites: |
   -   Basic knowledge of networking concepts like virtual networks, subnetting, and hybrid scenarios.
   -   Basic knowledge of Azure Policy and Azure Arc concepts.
 summary: |
-  In this learning path, you are introduced to Azure Arc-enabled servers. You will cover Arc-enabled server deployment, updates to Arc-enabled servers using Azure Update Manager and configuring Microsoft Defender for Cloud for Azure Arc-enabled servers.
+  In this learning path, you're introduced to Azure Arc-enabled servers. You'll cover Arc-enabled server deployment, updates to Arc-enabled servers using Azure Update Manager and configuring Microsoft Defender for Cloud for Azure Arc-enabled servers.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
