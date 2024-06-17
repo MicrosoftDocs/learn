@@ -1,8 +1,8 @@
-In this exercise, you will perform user management operations.
+In this exercise, you perform user management operations.
 
 ## Create Organizational Units
 
-In this task, you will create three OUs: Sydney, Melbourne, and Brisbane. To complete this task, perform the following steps:
+In this task, you create three OUs: Sydney, Melbourne, and Brisbane. To complete this task, perform the following steps:
 
 1.  In TAILWIND-DC1, open Active Directory Users and Computers from the Tools menu of the Server Manager console.
 2.  Right-click on the Domain.
@@ -12,7 +12,7 @@ In this task, you will create three OUs: Sydney, Melbourne, and Brisbane. To com
 
 ## Create users<br>
 
-In this task you will create a user and configure account properties such as Account Expiration Date. To complete this task, perform the following steps:
+In this task, you create a user and configure account properties such as Account Expiration Date. To complete this task, perform the following steps:
 
 1.  In TAILWIND-DC1, open Active Directory Users and Computers (or Administrative Center).
 2.  Right-click on the Sydney OU.
@@ -35,7 +35,7 @@ In this task you will create a user and configure account properties such as Acc
 
 ## Create the Sydney Admins group<br>
 
-In this task, you will create a new security group named Sydney Administrators. To complete this task, perform the following steps:
+In this task, you create a new security group named Sydney Administrators. To complete this task, perform the following steps:
 
 1.  In TAILWIND-DC1, open Active Directory Users and Computers.
 2.  Right click the Sydney OU, and select **New**, then **Group**.
@@ -47,7 +47,7 @@ In this task, you will create a new security group named Sydney Administrators. 
 
 ## Configure a user as a Protected User<br>
 
-In this task, you will configure the SydneyContractor user account as a proptected user. To complete this task, perform the following steps:
+In this task, you configure the SydneyContractor user account as a protected user. To complete this task, perform the following steps:
 
 1.  In TAILWIND-DC1, open Active Directory Users and Computers (or Administrative Center).
 2.  Navigate to the Sydney OU and double-click the SydneyContractor User account.
@@ -57,7 +57,7 @@ In this task, you will configure the SydneyContractor user account as a proptect
 
 ## Delegate Security Permissions to an OU to a security group<br>
 
-In this task, you will delegate the ability to reset passwords and force password change to the Sydney Administrators group over accounts in the Sydney OU. To complete this task, perform the following steps:
+In this task, you delegate the ability to reset passwords and force password change to the Sydney Administrators group over accounts in the Sydney OU. To complete this task, perform the following steps:
 
 1.  In TAILWIND-DC1, open Active Directory Users and Computers.
 2.  Right-click the Sydney OU and click **Delegate Control**.
@@ -68,7 +68,7 @@ In this task, you will delegate the ability to reset passwords and force passwor
 
 ## Configure City Attribute for a User<br>
 
-In this task you will configure a city attribute for a user account and then use the Find attribute to verify that the user is present. To complete this task, perform the following steps:
+In this task, you configure a city attribute for a user account and then use the Find attribute to verify that the user is present. To complete this task, perform the following steps:
 
 1.  In TAILWIND-DC1, open Active Directory Users and Computers.
 2.  Select the Sydney OU, right-click the SydneyContractor user account, and click **Properties**.
@@ -79,7 +79,7 @@ In this task you will configure a city attribute for a user account and then use
 
 ## Disable the Melbourne Contractor User<br>
 
-In this task, you will disable the Melbourne Contractor user. To complete this task, perform the following steps:
+In this task, you disable the Melbourne Contractor user. To complete this task, perform the following steps:
 
 1.  In TAILWIND-DC1, open Active Directory Users and Computers, and then open the Melbourne OU.
 2.  In the Melbourne OU, right-click **MelbourneContractor** and click **Disable Account**.
@@ -87,7 +87,7 @@ In this task, you will disable the Melbourne Contractor user. To complete this t
 
 ## Reset the password of the Brisbane Contractor User<br>
 
-In this task, you will reset the password of the BrisbaneContractor user. To complete this task, perform the following steps:
+In this task, you reset the password of the BrisbaneContractor user. To complete this task, perform the following steps:
 
 1.  In TAILWIND-DC1, open Active Directory Users and Computers, and then open the Brisbane OU.
 2.  Right-click the BrisbaneContractor user and select **Reset Password**.

@@ -1,17 +1,17 @@
-n this exercise, you will promote a server to domain controller, transfer a FSMO role to the new domain controller, create a site, and add a subnet to the site,
+In this exercise, you promote a server to domain controller, transfer a FSMO role to the new domain controller, create a site, and add a subnet to the site.
 
 ## Install Active Directory Domain Services (AD DS) and promote to Domain Controller
 
-In this task, you will promote member server TAILWIND-MBR1 to become a domain controller in the TAILWINDTRADERS domain. To complete this task, perform the following steps:
+In this task, you promote member server TAILWIND-MBR1 to become a domain controller in the TAILWINDTRADERS domain. To complete this task, perform the following steps:
 
 1.  Sign in to TAILWIND-MBR1 as TAILWINDTRADERS\\Administrator with the password: **Pa55w.rdPa55w.rd**.
 2.  In Server Manager, select the Manage menu and then select **Add Roles and Features**.
 3.  On the Before you begin page of the Add Roles and Features wizard, click **Next**.
-4.  On the Select installation type page select **Role-based or feature-based installation** and click **Next**.
+4.  On the Select installation type page, select **Role-based or feature-based installation** and click **Next**.
 5.  On the Select destination server page, choose **Select a server from the server pool**, ensure TAILWIND-MBR1 is selected and click **Next**.
-6.  On the Select server roles page, select the **Active Directory Domain Services** checkbox. This will open the Add features page. Select **Add Features**. On the Select server roles page click **Next**.
-7.  On the Select features page click **Next**.
-8.  On the Active Directory Domain Services page click **Next**.
+6.  On the Select server roles page, select the **Active Directory Domain Services** checkbox. This opens the Add features page. Select **Add Features**.
+7.  On the Select features page, click **Next**.
+8.  On the Active Directory Domain Services page, click **Next**.
 9.  On the Confirm installation selections page, click **Install**. Depending on the speed of the computer, installation may take several minutes. When the installation completes, click **Close**.
 10. On the Server manager menu, select the notification icon next to the flag in the top right corner shown in the screenshot.
     
@@ -29,7 +29,7 @@ In this task, you will promote member server TAILWIND-MBR1 to become a domain co
 
 ## Transfer Flexible Single Master Operations Roles<br>
 
-In this task, you will transfer the RID Master role from TAILWIND-DC1 to TAILWIND-MBR1. To complete this task, perform the following steps:
+In this task, you transfer the RID Master role from TAILWIND-DC1 to TAILWIND-MBR1. To complete this task, perform the following steps:
 
 1.  On TAILWIND-MBR1, open Active Directory Users and Computers.<br>
 2.  In the navigation pane, right-click Active Directory Users, point to **All Tasks**, and then select **Operations Masters**.
@@ -38,7 +38,7 @@ In this task, you will transfer the RID Master role from TAILWIND-DC1 to TAILWIN
 
 ### Create an Active Directory site and configure a subnet for that site<br>
 
-In this task, you will create an Active Directory site and configure a subnet associated with that site. To complete this task, perform the following steps:
+In this task, you create an Active Directory site and configure a subnet associated with that site. To complete this task, perform the following steps:
 
 1.  On TAILWIND-DC1, Open Active Directory Sites and Services from the Tools menu.
 2.  Right-click Sites, select **New site**, and type **Sydney** as the site name.

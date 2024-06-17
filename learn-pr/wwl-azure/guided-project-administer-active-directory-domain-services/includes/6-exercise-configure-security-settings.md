@@ -1,8 +1,8 @@
-In this exercise, you will configure settings related to security including disabling NTLM authentication for domain accounts, auditing account management activity and denying log on as a service for members of a security group.
+In this exercise, you configure settings related to security including disabling NTLM authentication for domain accounts, auditing account management activity, and denying log on as a service for members of a security group.
 
 ## Restrict NTLM Authentication
 
-In this task, you will restrict NTLM authentication. To complete this task, perform the following steps in TAILWIND-DC1:
+In this task, you restrict NTLM authentication. To complete this task, perform the following steps in TAILWIND-DC1:
 
 1.  From the Tools menu of the Server Manager console, open the Group Policy Management console.
 2.  Expand the Tailwindtraders.internal domain and then expand Group Policy Objects.
@@ -15,7 +15,7 @@ In this task, you will restrict NTLM authentication. To complete this task, perf
 
 ## Audit User Account Management in Sydney<br>
 
-In this task, you will enable auditing of User Account Management in the Sydney OU. To complete this task, perform the following steps in TAILWIND-DC1:
+In this task, you enable auditing of User Account Management in the Sydney OU. To complete this task, perform the following steps in TAILWIND-DC1:
 
 1.  From the Tools menu of the Server Manager console, choose Group Policy Management Console.
 2.  In the Group Policy Management Console, expand the Tailwindtraders.internal domain.
@@ -29,7 +29,7 @@ In this task, you will enable auditing of User Account Management in the Sydney 
 
 ## Deny Log On As a Service<br>
 
-In this task, you will configure the Deny Log On As A Service security option. To complete this task, perform the following steps in TAILWIND-DC1:
+In this task, you configure the Deny Log On As A Service security option. To complete this task, perform the following steps in TAILWIND-DC1:
 
 1.  From the Tools menu of the Server Manager console, open the Group Policy Management console.
 2.  Expand Tailwindtraders.internal domain.
