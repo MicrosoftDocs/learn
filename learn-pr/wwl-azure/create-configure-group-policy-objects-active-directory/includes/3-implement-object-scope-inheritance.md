@@ -35,6 +35,10 @@ select * from Win32_OperatingSystem where Version like "10.%"
 
 
 
+
+
+
+
 ```
 
 ## GPO processing order

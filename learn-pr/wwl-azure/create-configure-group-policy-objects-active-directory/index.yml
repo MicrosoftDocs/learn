@@ -3,7 +3,7 @@ uid: learn.wwl.create-configure-group-policy-objects-active-directory
 metadata:
   title: Create and configure Group Policy Objects in Active Directory
   description: "This module focuses on Group Policy objects, including using them to enforce a robust password policy."
-  ms.date: 06/15/2024
+  ms.date: 06/17/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
