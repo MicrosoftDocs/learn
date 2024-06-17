@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction        
   title: Introduction to Azure NetApp Files         
   description: Evaluate whether Microsoft Azure NetApp Files is appropriate for migrating and running your organization's file-based workloads.       
-  ms.date: 03/20/2023            
+  ms.date: 06/10/2024            
   author: mengruts   
   ms.author: mengtsai           
   ms.topic: module-intro-to-product
@@ -12,12 +12,12 @@ metadata:
 title: Introduction to Azure NetApp Files
 summary: Describe how the low latency and high availability of Microsoft Azure NetApp Files work to provide on-premises-like performance for cloud workloads. Determine the types of file-based workloads that are suitable for migration to Azure NetApp Files.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Evaluate whether Azure NetApp Files is appropriate for migrating and running your organization's file-based workloads.
     - Describe how the performance tiers of Azure NetApp Files enable you to choose a performance level that fits your workload requirements.
 prerequisites: |
   - Basic knowledge of Azure products, including Azure Virtual Network and Azure Virtual Gateway.
-  - Basic knowledge of networked file system protocols, particularly Server Message Block (SMB) and Network File System (NFS).
+  - Basic knowledge of networked file system protocols. Particularly, Server Message Block (SMB) and Network File System (NFS).
 iconUrl: /training/achievements/introduction-to-azure-netapp-files.svg
 levels:
   - beginner
