@@ -42,4 +42,4 @@ Let’s view a demo of copilot using this prompt:
 
 Can you help me create a timeline for our upcoming community health program? I want to launch the program on August 26th. Can you share a checklist for planning, initiation implementation, and evaluation?” 
 
-[!VIDEO](25c4d5d9-179c-4f53-9130-d80f5c38d7da)
+>[!VIDEO 25c4d5d9-179c-4f53-9130-d80f5c38d7da]
