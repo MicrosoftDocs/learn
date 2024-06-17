@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/3-explore-standalone-experience.md)]
