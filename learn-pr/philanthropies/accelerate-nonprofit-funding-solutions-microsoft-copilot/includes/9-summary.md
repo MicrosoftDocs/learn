@@ -1,7 +1,8 @@
 Copilot is a powerful tool that can help you with various aspects of funding your mission. By using Copilot, you can save time, improve quality, and increase impact. Copilot can also help you learn new skills, discover new opportunities, and enhance your creativity. To get started with Copilot, you can visit [Microsoft Copilot](https://www.microsoft.com/en-us/microsoft-copilot) and sign up for a free trial. You can also explore the Copilot community, where you can find tips, tutorials, and examples from other users. We hope you enjoy using Copilot, and we look forward to hearing your feedback and suggestions.
 
-:::image type="content" source="../media/image-created-with-copilot-in-designer.png" alt-text="An image created by Copilot, of a computer on top of a textbook, with a hand pointing a finger at an element on the screen. The image is in claymation style.":::
-Image created with Designer in Copilot.
+:::image type="content" source="../media/image-created-with-copilot-in-designer.png" alt-text="An illustration created by Copilot, of a computer on top of a textbook, with a hand pointing a finger at an element on the screen. The illustration is in claymation style.":::
+
+Illustration created with Designer in Copilot.
 
 ## Additional Resources
 

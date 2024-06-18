@@ -1,8 +1,8 @@
-In this exercise, you'll practice using Copilot to quickly create content to connect with exisiting and new donors.
+In this exercise, you practice using Copilot to quickly create content to connect with existing and new donors.
 
 ## Donor relations prompts
 
-Create personalized outreach materials and thank-you notes with Copilot’s assistance to engage donors. Edit these prompts to suit your situation.
+Engage donors by creating personalized outreach materials and thank-you notes with Copilot’s assistance. Edit these prompts for your situation.
 
 ```
 Develop an agenda and outline for a roundtable discussion to engage donors and gather 
@@ -19,7 +19,7 @@ of our outcomes.
 
 ## Marketing and social media prompts
 
-Next, practice leveraging Copilot to manage and create content for social media platforms to boost fundraising efforts.
+Next, practice using Copilot to manage and create content for social media platforms to boost fundraising efforts.
 
 ```
 Draft a social media post tailored to the following [targeted social media outlets] amplifying 
@@ -28,4 +28,4 @@ the [event or call to action]. Encourage readers to participate and/or volunteer
 corresponding link e.g., sign up, view details]. Use catchy, persuasive language, and include hashtags.
 ```
 
-Ask Copilot to generate an image for your post, remembering to specify the clear action, detailed subject, scene or setting, additional elements, and specific style in your prompt.
+Ask Copilot to generate an image for your post, remembering to specify the clear action, detailed subject, scene or setting, other elements, and specific style in your prompt.

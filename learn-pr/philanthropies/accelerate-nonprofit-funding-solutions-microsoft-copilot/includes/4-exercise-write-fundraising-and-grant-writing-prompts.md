@@ -17,9 +17,9 @@ at the conclusion.
 
 Continue practicing by writing your own prompts for Copilot to assist with the following tasks:
 
-1. **Automate Routine Tasks:** Use Copilot to automate repetitive tasks like data entry, scheduling, and email responses to save time.  
+- **Automate Routine Tasks:** Use Copilot to automate repetitive tasks like data entry, scheduling, and email responses to save time.  
 
-1. **Data Analysis:** Employ Copilot’s capabilities to analyze donor data and gain insights into targeted fundraising campaigns.
+- **Data Analysis:** Employ Copilot’s capabilities to analyze donor data and gain insights into targeted fundraising campaigns.
 
 ## Write prompts for grant management
 

@@ -1,4 +1,3 @@
-## Understand ways to use Copilot to help fundraise
 Fundraising is the process of soliciting and obtaining financial or in-kind support for your organization or project. Fundraising can be challenging, especially for nonprofits and social enterprises that have limited resources and staff. Copilot can help you with fundraising by providing you with:
 
 - Ideas: Copilot can generate ideas for fundraising campaigns, events, products, or services that match your mission and audience.
@@ -9,7 +8,7 @@ Fundraising is the process of soliciting and obtaining financial or in-kind supp
 
 In previous modules, you learned that prompts for Copilot contained four parts. They are goal, context, expectations, and source. 
 
-:::image type="content" source="../media/prompt-engineering.png" alt-text="Image of a slide from a presentation showing a prompt with four parts: goal, context, expectations, and source.":::
+:::image type="content" source="../media/prompt-engineering.png" alt-text="Diagram that shows a prompt with four parts: goal, context, expectations, and source.":::
 
 ## Scenario
 
@@ -32,6 +31,6 @@ the bus diaper drive, including date, location, time slots available, and benefi
 
 Copilot will then produce a response that meets your request, such as a list of ideas, a strategy outline, or a plan template. You can also ask Copilot to refine, expand, or revise its response, or to provide more details or examples.
 
-## Additional Resources
+## Additional resource
 
 [How to Leverage Microsoft Copilot for Fundraising (resource guide)](https://aka.ms/TechSoup-RG-Fundraising)
