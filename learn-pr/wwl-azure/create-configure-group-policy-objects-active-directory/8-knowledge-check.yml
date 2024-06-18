@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/17/2024
+  ms.date: 06/18/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -25,24 +25,24 @@ quiz:
       explanation: "Incorrect. Group Policy can be refined to target a single organizational unit."
   - content: "A system administrator needs to temporarily disable a GPO link due to recent changes causing production issues. What action should the administrator take to resolve this?"
     choices:
-    - content: "Enable Block Inheritance on the domain or OU"
+    - content: "Enable Block Inheritance on the domain or OU."
       isCorrect: false
       explanation: "Incorrect. Block Inheritance prevents all Group Policy settings from GPOs that link to parents in the Group Policy hierarchy, not just one specific GPO."
-    - content: "Increase the precedence value of the GPO"
+    - content: "Increase the precedence value of the GPO."
       isCorrect: false
       explanation: "Incorrect. Increasing the precedence value of a GPO does not disable it, but rather lowers its priority compared to other GPOs."
-    - content: "Disable the GPO link on the OU's Linked Group Policy Objects tab"
+    - content: "Disable the GPO link on the OU's Linked Group Policy Objects tab."
       isCorrect: true
       explanation: "Correct. Disabling the GPO link will block the application of that specific GPO for the given domain or OU."
   - content: "A system administrator needs to ensure that a specific GPO takes the highest level of precedence and its policy settings prevail over any conflicting policy settings in other GPOs. What should the administrator do?"
     choices:
-    - content: "Link the GPO to a higher level in the console tree"
+    - content: "Link the GPO to a higher level in the console tree."
       isCorrect: false
       explanation: "Incorrect. Simply linking the GPO to a higher level doesn't necessarily enforce its settings over others."
-    - content: "Set the GPO link to Enforced"
+    - content: "Set the GPO link to Enforced."
       isCorrect: true
       explanation: "Correct. When a GPO link is set to Enforced, the GPO takes the highest level of precedence and its settings prevail over any conflicting ones."
-    - content: "Set the GPO link to Block Inheritance"
+    - content: "Set the GPO link to Block Inheritance."
       isCorrect: false
       explanation: "Incorrect. Block Inheritance prevents a GPO from inheriting settings from parent containers, it doesn't enforce its settings over others."
   - content: "A system administrator needs to enforce password, account lockout, and Kerberos version 5 authentication protocol policies across all users and computers in the domain. Which Group Policy Object (GPO) should they utilize?"

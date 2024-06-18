@@ -3,14 +3,14 @@ uid: learn.wwl.create-configure-group-policy-objects-active-directory
 metadata:
   title: Create and configure Group Policy Objects in Active Directory
   description: "This module focuses on Group Policy objects, including using them to enforce a robust password policy."
-  ms.date: 06/17/2024
+  ms.date: 06/18/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
   ms.service: active-directory
   ai-usage: ai-assisted
 title: Create and configure Group Policy Objects in Active Directory
-summary: This module focuses on Group Policy objects, including using them to enforce a robust password policy.
+summary: This module focuses on Group Policy objects, including using them to enforce a domain wide as well as fine-grained password policy.
 abstract: |
   By the end of this module, you'll be able to:
 
@@ -28,9 +28,9 @@ abstract: |
 prerequisites: |
   Knowledge of and experience working with:
 
-  -   Windows Server.
+  - Windows Server.
 
-  -   Core networking technologies.
+  - Core networking technologies.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -44,7 +44,7 @@ subjects:
 - infrastructure
 units:
 - learn.wwl.create-configure-group-policy-objects-active-directory.introduction
-- learn.wwl.create-configure-group-policy-objects-active-directory.define
+- learn.wwl.create-configure-group-policy-objects-active-directory.define-group-policy-objects
 - learn.wwl.create-configure-group-policy-objects-active-directory.implement-object-scope-inheritance
 - learn.wwl.create-configure-group-policy-objects-active-directory.define-domain-based
 - learn.wwl.create-configure-group-policy-objects-active-directory.create-configure-domain-based-object

@@ -35,7 +35,7 @@ In the Group Policy Management Editor, go to:
 
 Once in the password policy section, specific settings can be set to apply across the domain.
 
-### Configure the Password Policy Settings
+### Configure the password policy settings
 
 You will see a list of settings such as Enforce password history, Maximum password age, Minimum password length, etc.
 

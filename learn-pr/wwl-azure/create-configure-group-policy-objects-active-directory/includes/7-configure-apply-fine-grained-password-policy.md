@@ -12,7 +12,7 @@ A fine-grained password policy (FGPP) enables active directory to enforce differ
 6.  Configure the password requirements.
 7.  Select **OK**.
 
-The FGPP is now created, and the procedure can be completed multiple times to create different variations or versions of a FGPP. Once the password settings object (PSO) is created, it needs to be associated with users or groups to be enforced.
+The FGPP is now created, and the procedure can be completed multiple times to create different variations or versions of an FGPP. Once the password settings object (PSO) is created, it needs to be associated with users or groups to be enforced.
 
 ## Apply an FGPP
 

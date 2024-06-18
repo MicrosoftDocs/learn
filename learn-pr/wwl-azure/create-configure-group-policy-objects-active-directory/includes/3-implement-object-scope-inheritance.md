@@ -23,22 +23,13 @@ You can further narrow the scope of the GPO with one of two types of filters dis
 | Security   | These specify security groups or individual user or computer objects that relate to a GPO’s scope, but to which the GPO explicitly should or shouldn't apply. |
 | WMI        | These specify a scope by using characteristics of a system, such as an operating system version or free disk space.                                           |
 
-:::image type="content" source="../media/group-policy-filters.png" alt-text="A screenshot of the Group Policy Management console. The administrator has selected a GPO linked to the Marketing OU. Displayed on the detail pane are a WMI filter called Windows 10 Devices, and a security filter set to the Marketing group.":::
+:::image type="content" source="../media/group-policy-filters.png" alt-text="A screenshot of the Group Policy Management console. The administrator has selected a GPO linked to the Marketing OU.":::
 
 
 Use security filters and WMI filters to narrow or specify the scope within the initial scope that the GPO link created. The following is an example of a WMI filter that results in a list of computers running Windows 10.
 
 ```powershell
 select * from Win32_OperatingSystem where Version like "10.%"
-
-
-
-
-
-
-
-
-
 ```
 
 ## GPO processing order
@@ -75,7 +66,7 @@ The default behavior of Group Policy is that GPOs linked to a higher-level conta
 
 You can configure a domain or OU to prevent the inheritance of policy settings. This is known as blocking inheritance. To block inheritance, right-click or access the context menu for the domain or OU in the GPMC console tree, and then select **Block Inheritance**.
 
-:::image type="content" source="../media/group-policy-inheritance.png" alt-text="A screenshot of the context menu for the Marketing OU in the Group Policy Management console. The administrator has selected Block Inheritance.":::
+:::image type="content" source="../media/group-policy-inheritance.png" alt-text="A screenshot of the context menu for the Marketing OU in the Group Policy Management console.":::
 
 
 The Block Inheritance option is a property of a container, so it blocks all Group Policy settings from GPOs that link to parents in the Group Policy hierarchy.
@@ -90,7 +81,7 @@ The Block Inheritance option is a property of a container, so it blocks all Grou
 
 Additionally, you can set a GPO link to be enforced. To enforce a GPO link, right-click or access the context menu for the GPO link in the console tree, and then select **Enforced** from the shortcut menu.
 
-:::image type="content" source="../media/group-policy-enforced.png" alt-text="A screenshot of the context menu for the Contoso Domain Security Settings GPO in the Group Policy Management console. The administrator has selected Enforced.":::
+:::image type="content" source="../media/group-policy-enforced.png" alt-text="A screenshot of the context menu for the Contoso Domain Security Settings GPO in the Group Policy Management console.":::
 
 
 When you set a GPO link to Enforced, the GPO takes the highest level of precedence. Policy settings in that GPO prevail over any conflicting policy settings in other GPOs.
@@ -104,7 +95,7 @@ Enforcement is useful when you must configure a GPO that defines a configuration
 
 To facilitate evaluation of GPO precedence, you can simply select an OU or domain, and then select the **Group Policy Inheritance** tab. This tab displays the resulting precedence of GPOs, accounting for GPO link, link order, inheritance blocking, and link enforcement.
 
-:::image type="content" source="../media/group-policy-partial-enforced.png" alt-text="A screenshot of the Group Policy Management console. The administrator has selected the Group Policy Inheritance tab for the Marketing OU. Four policies are displayed, two of which are Enforced from the domain.":::
+:::image type="content" source="../media/group-policy-partial-enforced.png" alt-text="A screenshot of the Group Policy Management console. The administrator has selected the Group Policy Inheritance tab for the Marketing OU.":::
 
 
 > [!IMPORTANT]

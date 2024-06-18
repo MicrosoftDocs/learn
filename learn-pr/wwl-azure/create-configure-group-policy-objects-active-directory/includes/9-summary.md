@@ -13,6 +13,4 @@ You should now be able to:
 
 ## Additional resources
 
- -  [Understanding Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754678%28v=ws.11%29)
- -  [Managing Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754273%28v=ws.11%29)
  -  [Group Policy Settings Reference Guide](https://www.microsoft.com/download/details.aspx?id=25250)
