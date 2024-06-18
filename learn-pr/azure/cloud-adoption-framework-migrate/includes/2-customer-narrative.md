@@ -8,11 +8,9 @@ We resume the Tailwind story just as the migration team prepares to start migrat
 
 ## The Tailwind Traders migration plan
 
-In the Planning module, we rationalized the company's digital estate by using Azure Migrate and created a backlog to guide the migration in Azure DevOps. Now, the migration team is ready to begin migrating the existing datacenters to the cloud. In the remaining 12 months, the team plans to migrate waves of workloads incrementally. Given the scope and timeline for this migration, the team has chosen the following migration-factory approach:
+In the Planning module, we rationalized the company's digital estate by using Azure Migrate and created a backlog to guide the migration in Azure DevOps. Now, the migration team is ready to begin migrating the existing datacenters to the cloud. In the remaining 12 months, the team plans to migrate waves of workloads incrementally. Given the scope and timeline for this migration, the team has chosen the Cloud Adoption Framework migrate methodology:
 
 :::image type="content" source="../media/methodology-effort-only.png" alt-text="Diagram of the three common task groups in a migration process." border="false":::
-
-*Figure 1: Common tasks required in each sprint of a migration process.*
 
 - One small team focuses on migrating a wave of workloads in each two-week sprint by using Azure Migrate.
 - A second small team of architects stays one to two waves ahead of the migration team. It focuses on the assessment and design of each workload to migrate.
