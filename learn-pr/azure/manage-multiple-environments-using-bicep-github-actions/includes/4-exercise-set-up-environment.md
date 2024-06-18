@@ -48,28 +48,6 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 [!INCLUDE [](../../includes/cleanup-steps.md)]
 
-To clean up your resources without completing the module, run the following commands in the Visual Studio Code terminal:
-
-::: zone pivot="cli"
-
-```azurecli
-az group delete --resource-group ToyWebsiteTest --yes --no-wait
-az group delete --resource-group ToyWebsiteProduction --yes --no-wait
-```
-
-The resource group is deleted in the background.
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-```azurepowershell
-Remove-AzResourceGroup -Name ToyWebsiteTest -Force
-Remove-AzResourceGroup -Name ToyWebsiteProduction -Force
-```
-
-::: zone-end
-
 ## Clone the repository
 
 You now have a copy of the template repository in your own account. Next, clone this repository locally so you can start working in it.
