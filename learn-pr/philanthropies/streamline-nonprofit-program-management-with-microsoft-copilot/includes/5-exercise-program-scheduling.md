@@ -7,4 +7,4 @@ align with the [program requirements]. Include [deadlines] and task completion s
 
 Now it's your turn. Use your imagination, ask Copilot how it can help, and then craft prompts for monitoring and communicating progress and adherence to the schedule it creates.
 
-**Schedule Management:** Use Copilot to help manage your program's schedule, including your program's changes and risks.
+**Schedule management:** Use Copilot to help manage your program's schedule, including your program's changes and risks.
