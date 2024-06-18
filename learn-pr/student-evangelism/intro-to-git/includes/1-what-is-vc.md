@@ -12,7 +12,7 @@ With a VCS, you can:
 
 Git is a fast, versatile, highly scalable, free, open-source VCS. Its primary author is Linus Torvalds, the creator of Linux.
 
-[!VIDEO 331e993e-e86b-4d5a-9a52-823b2072a188]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=331e993e-e86b-4d5a-9a52-823b2072a188]
 
 ## Distributed version control
 
