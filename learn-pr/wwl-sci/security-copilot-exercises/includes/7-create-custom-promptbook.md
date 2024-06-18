@@ -5,7 +5,7 @@ In this exercise, you create a custom promptbook from an existing session and th
 
 ### Exercise
 
-For this exercise you're logged in as Avery Howard and have the Copilot owner role. You'll work in the standalone experience of Microsoft Copilot for Security.
+For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You'll work in the standalone experience of Microsoft Copilot for Security.
 
 This exercise should take approximately **10** minutes to complete.
 
@@ -32,7 +32,7 @@ In this task, you create the promptbook. As part of the process, you templatize 
     1. Tags: **Microsoft Entra**
     1. Description: **Find the last failed logins**
     1. The first prompt is to show the last three failed logins. For your custom promptbook, you want to replace the number three with an input parameter. To configure the input parameter, place your mouse over the first prompt, then select the **edit** ![edit icon](../media/edit-icon.png) icon.
-        1. Replace the word three with an easily understood parameter that contains no spaces and is delineated with angle brackets.  For this simulation, enter **\<number>**.
+        1. Replace the word three with an easily understood parameter that contains no spaces and is delineated with angle brackets. For this simulation, enter **\<number>**.
         1. To confirm the edit, select the checkmark ![checkmark icon](../media/check-mark-icon.png) icon. The number parameter is now listed in the section labeled "Inputs you’ll need." For this promptbook, this is the only input needed, but you can create promptbooks that use multiple inputs.
     1. For your promptbook, you'll add a new prompt. Select **+ Add prompt**.
         1. Select the **edit** ![edit icon](../media/edit-icon.png) icon.
@@ -48,7 +48,7 @@ In this task, you explore the options available for the newly created promptbook
 
 1. Select **My promptbooks**.
 
-1. Place your mouse over the newly created promptbook, until it's highlighted. With the promptbook highlighted select the **ellipses** to view the available options.  Select the ellipses again to close the window with the available options.
+1. Place your mouse over the newly created promptbook, until it's highlighted. With the promptbook highlighted select the **ellipses** to view the available options. Select the ellipses again to close the window with the available options.
 
 1. Select the **run ![run icon](../media/run-icon.png)** icon to start a new session.
     1. You want Copilot to return information on the last **two** failed logins.
