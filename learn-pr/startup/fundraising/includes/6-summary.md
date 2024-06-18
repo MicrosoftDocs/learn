@@ -1,4 +1,4 @@
-The goal of this module was to outline the process of raising money from investors to fund the growth of your startup. Key points covered include:
+The goal of this module was to outline the process of raising money from investors to fund the growth of your startup. We covered the following points:
 
 - Not all startups need to raise external capital. Think through the implications of self-funding, or *bootstrapping*, versus external funding.
 - Not all startups can raise capital. Many founders underestimate the rate of growth and scale they need to achieve in order to generate an acceptable return to investors.

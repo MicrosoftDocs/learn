@@ -10,24 +10,24 @@ It's worth noting that friends and family are generally the only investors who w
 
 Friends and family can be a good source of early capital if they're happy to be passive investors and don't expect to be involved in running your business.
 
-For most founders, the biggest challenge with friends and family rounds is that you have a friend or a family member who is now financially exposed to the success or failure of your business.
+For most founders, the biggest challenge with friends and family rounds is that you have a friend or a family member who's now a shareholder in your company. They're financially exposed to the success or failure of your business.
 
 This arrangement can have a profound effect on your relationship with that person. It's wise to think about how to manage this relationship over the long term.
 
 Tips for raising money from friends and family:
 
-- Before any investment is made, discuss expectations. Ensure that you communicate the likelihood of success and failure, time frames, and how the company will be run.
+- Before any investment is made, discuss expectations. Ensure that you agree on the likelihood of success and failure, time frames, and how the company will be run.
 - Agree on a reasonable valuation. For example, your uncle might not have a grasp on startup valuations. While it might be tempting to set a high valuation, this might cause trouble when you raise your next round from more sophisticated investors.
 - Have a legal agreement that sets out the terms of the investment. Is it an equity investment, a loan, or a gift? How will the investor be compensated? What happens if the company fails? What input, if any, will they have?
 - Make sure the person can afford to lose their investment.
 
 ## Angel investors
 
-An angel investor is a wealthy individual who invests their own money, like Melanie in the previous unit's example. In many cases, they are successful entrepreneurs themselves.
+An angel investor is a wealthy individual who invests their own money, like Melanie in the previous unit's example. In many cases, they're successful entrepreneurs themselves.
 
 Good angel investors bring capital along with expertise and networks that can help you grow your company. Angel investors often work in groups. An angel round can have a few or sometimes 20 or more individual investors participating.
 
-Angel groups often invest in a wide range of sectors, with their investment interests influenced by the individual expertise of their members.
+Angel groups often invest in a wide range of sectors, with their investment interests influenced by the their members' individual expertise.
 
 Generally, angel investors will consider investing in a startup only after it launches at least a minimal viable product and generates traction in the form of product usage and, ideally, revenue.
 
