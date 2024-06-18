@@ -8,6 +8,7 @@ metadata:
   ms.author: pauljewell
   ms.reviewer: blepore
   ms.topic: module
+  ai-usage: ai-assisted
 title: 'Accelerate HPC and AI workloads with Azure Managed Lustre'
 summary: Deploy an Azure Managed Lustre file system, integrate the file system with Azure Blob Storage, and connect clients to the file system.
 abstract: |

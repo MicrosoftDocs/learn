@@ -13,15 +13,60 @@ durationInMinutes: 4
 content: |
   [!include[](includes/knowledge-check.md)]
 quiz:
+  title: Check your knowledge
   questions:
-  - content: "?"
+  - content: What is a requirement for a client machine to access Azure Managed Lustre?
     choices:
-    - content: "A"
+    - content: The client machine does not need network connectivity to the subnet that hosts the Azure Managed Lustre file system
+      isCorrect: false
+      explanation: Incorrect. The client machine does need network connectivity to the subnet that hosts the Azure Managed Lustre file system.
+    - content: The client machine must be running a Windows operating system
+      isCorrect: false
+      explanation: Incorrect. The client machine must be running a Linux operating system, not Windows.
+    - content: The client machine must have the appropriate Lustre client package installed
       isCorrect: true
-      explanation: "Correct."
-    - content: "B"
+      explanation: Correct. The client machine must have the appropriate Lustre client package installed to access Azure Managed Lustre.
+  - content: What is the purpose of the Maintenance window setting in Azure Managed Lustre file system?
+    choices:
+    - content: It controls the day and time when system updates can occur.
+      isCorrect: true
+      explanation: Correct. The Maintenance window setting is used to specify when system updates, including security updates, Lustre code fixes, and service enhancements, can be applied.
+    - content: It sets the time for automatic system upgrades.
       isCorrect: false
-      explanation: "Incorrect."
-    - content: "C"
+      explanation: Incorrect. The Maintenance window setting does not schedule automatic system upgrades.
+    - content: It allows users to schedule regular data backups.
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: Incorrect. The Maintenance window setting does not schedule data backups.
+  - content: What is the purpose of creating an export job in Azure Managed Lustre file system?
+    choices:
+    - content: To delete data from the Lustre file system after it has been copied to Azure Blob Storage
+      isCorrect: false
+      explanation: Incorrect. The export job does not delete any data from the Lustre file system.
+    - content: To copy new or changed files from the Lustre file system to Azure Blob Storage
+      isCorrect: true
+      explanation: Correct. An export job is created to copy new or changed files from the Lustre file system to Azure Blob Storage for long-term storage.
+    - content: To import data from Azure Blob Storage to the Lustre file system
+      isCorrect: false
+      explanation: Incorrect. An export job is used to copy data from the Lustre file system to Azure Blob Storage, not the other way around.
+  - content: What is one of the main advantages of using Azure Managed Lustre for high-performance computing workloads?
+    choices:
+    - content: It allows for the creation of virtual machines with unlimited storage capacity
+      isCorrect: false
+      explanation: Incorrect. While Azure Managed Lustre does provide high-performance storage, it does not allow for the creation of virtual machines with unlimited storage capacity.
+    - content: It provides a built-in data analytics tool for analyzing large volumes of data
+      isCorrect: false
+      explanation: Incorrect. Azure Managed Lustre is a file system service and does not provide built-in data analytics tools.
+    - content: It simplifies operations, reduces setup costs, and eliminates complex maintenance associated with high-performance file systems
+      isCorrect: true
+      explanation: Correct. Azure Managed Lustre is a managed service that simplifies operations, reduces setup costs, and eliminates complex maintenance associated with high-performance file systems.
+  - content: What is the requirement for the network security group in order to enable Azure Managed Lustre?
+    choices:
+    - content: It must allow inbound and outbound access on port 988 and ports 1019-1023.
+      isCorrect: true
+      explanation: Correct. The network security group must allow inbound and outbound access on port 988 and ports 1019-1023 for Azure Managed Lustre to function properly.
+    - content: It must allow inbound and outbound access on port 988 and ports 1019-1020.
+      isCorrect: false
+      explanation: Incorrect. While port 988 is required, the range of ports needed is 1019-1023, not just 1019-1020.
+    - content: It must restrict all inbound and outbound access on port 988 and ports 1019-1023.
+      isCorrect: false
+      explanation: Incorrect. The network security group must allow, not restrict, inbound and outbound access on port 988 and ports 1019-1023.
