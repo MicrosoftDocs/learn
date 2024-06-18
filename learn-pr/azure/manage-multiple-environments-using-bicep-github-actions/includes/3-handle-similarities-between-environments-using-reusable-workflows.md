@@ -22,7 +22,7 @@ After talking to your colleagues on the website team, you decide on the followin
    1. The workflow pauses for manual validation.
    1. If approval is received, the workflow runs the deployment and smoke tests against your production environment.
 
-Some of these tasks are run in both your test and production environments, and some are run only for specific environments:
+Some of these tasks are repeated between your test and production environments, and some are run only for specific environments:
 
 | Task | Environments |
 |-|-|
@@ -60,9 +60,9 @@ You can define as many inputs and secrets as you need. But just like Bicep param
 
 Inputs can have several properties, including:
 
-- The _name_, which you use to refer to the input in your workflow definitions.
-- The _type_. Inputs support _string_, _number_, and _Boolean_ values.
-- The _default value_, which is optional. If you don't specify a default value, then a value must be provided when the workflow is used in a caller workflow.
+- The input _name_, which you use to refer to the input in your workflow definitions.
+- The input _type_. Inputs support _string_, _number_, and _Boolean_ values.
+- The input's _default value_, which is optional. If you don't specify a default value, then a value must be provided when the workflow is used in a caller workflow.
 
 Secrets have names, but they don't have types or default values.
 
@@ -84,9 +84,9 @@ When you work with called workflows, you often define some of your deployment ac
 
 ## Conditions
 
-You use workflow _conditions_ to specify whether a step or a job should run depending on a rule that you create. You can combine inputs and workflow conditions to customize your deployment process to suit your needs.
+You can use workflow _conditions_ to specify whether a step or a job should run depending on a rule that you specify. You can combine inputs and workflow conditions to customize your deployment process for multiple situations.
 
-For example, imagine you define a workflow that runs the steps in a script. You plan to reuse the template for each of your environments. When you deploy your production environment, you want to run another step. Here's how you can achieve that by using the `if` condition on the step:
+For example, imagine you define a workflow that runs script steps. You plan to reuse the template for each of your environments. When you deploy your production environment, you want to run another step. Here's how you can achieve that by using the `if` condition on the step:
 
 :::code language="yaml" source="code/3-script-conditions.yml" range="15-24" highlight="10" :::
 
