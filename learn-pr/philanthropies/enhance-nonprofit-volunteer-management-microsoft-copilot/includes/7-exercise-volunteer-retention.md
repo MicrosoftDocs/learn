@@ -1,4 +1,4 @@
-In this exercise, you will practice using Copilot to help draft a volunteer retention program. Start by using the prompt templates, and then create your own prompts to reinforce what you've learned.
+In this exercise, you practice using Copilot to help draft a volunteer retention program. Start by using the prompt templates, and then create your own prompts to reinforce what you learned.
 
 ```
 Develop a volunteer of the month program for [organization name] to include selection criteria, acknowledgment milestones, and award ideas.  
