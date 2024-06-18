@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/5-enable-custom-plugin.md)]

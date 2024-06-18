@@ -1,8 +1,10 @@
 You can create custom, or user-defined (static), routes in Azure to override Azure's default system routes, or to add more routes to a subnet's route table. In Azure, you create a route table, then associate the route table to zero or more virtual network subnets. Each subnet can have zero or one route table associated to it. To learn about the maximum number of routes you can add to a route table and the maximum number of user-defined route tables you can create per Azure subscription, see [Azure limits](/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits). When you create a route table and associate it to a subnet, the table's routes are combined with the subnet's default routes. If there are conflicting route assignments, user-defined routes override the default routes.
 
-You can specify the following next hop types when creating a user-defined route:<br>
+You can specify the following next hop types when creating a user-defined route:
 
- -  Virtual appliance: A virtual appliance is a virtual machine that typically runs a network application, such as a firewall. To learn about various preconfigured network virtual appliances you can deploy in a virtual network, see the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/networking?page=1&subcategories=appliances). When you create a route with the virtual appliance hop type, you also specify a next hop IP address. The IP address can be:<br>
+ -  Virtual appliance: A virtual appliance is a virtual machine that typically runs a network application, such as a firewall. To learn about various preconfigured network virtual appliances you can deploy in a virtual network, see the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/networking?page=1&subcategories=appliances). When you create a route with the virtual appliance hop type, you also specify a next hop IP address. The IP address can be:
+    
+    
      -  The private IP address of a network interface attached to a virtual machine. Any network interface attached to a virtual machine that forwards network traffic to an address other than its own must have the Azure Enable IP forwarding option enabled for it. The setting disables Azure's check of the source and destination for a network interface. Learn more about how to enable IP forwarding for a network interface. Learn more about how to [enable IP forwarding for a network interface](/azure/virtual-network/virtual-network-network-interface#enable-or-disable-ip-forwarding). Though Enable IP forwarding is an Azure setting, you may also need to enable IP forwarding within the virtual machine's operating system for the appliance to forward traffic between private IP addresses assigned to Azure network interfaces. If the appliance needs to route traffic to a public IP address, it must either proxy the traffic or perform network address translation (NAT) from the source's private IP address to its own private IP address. Azure then performs NAT to a public IP address before sending the traffic to the Internet. To determine required settings within the virtual machine, see the documentation for your operating system or network application. To understand outbound connections in Azure, see [Understanding outbound connections](/azure/load-balancer/load-balancer-outbound-connections?toc=/azure/virtual-network/toc.json).<br>
      -  The private IP address of an Azure internal load balancer. A load balancer is often used as part of a high availability strategy for network virtual appliances.
 
@@ -34,6 +36,10 @@ To use this feature, specify a Service Tag name for the address prefix parameter
 
 ```powershell
 $param = @{ Name = 'StorageRoute' AddressPrefix = 'Storage' NextHopType = 'VirtualAppliance' NextHopIpAddress = '10.0.100.4' } New-AzRouteConfig @param
+
+
+
+
 ```
 
 The same command for CLI is as follows:
@@ -42,4 +48,8 @@ The same command for CLI is as follows:
 
 ```azurecli
 az network route-table route create \ --resource-group MyResourceGroup \ --route-table-name MyRouteTable \ --name StorageRoute \ --address-prefix Storage \ --next-hop-type VirtualAppliance \ --next-hop-ip-address 10.0.100.4
+
+
+
+
 ```

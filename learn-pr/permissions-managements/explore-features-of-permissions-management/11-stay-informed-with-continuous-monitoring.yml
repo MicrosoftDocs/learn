@@ -8,7 +8,6 @@ metadata:
   author: jenniferf-skc
   ms.author: jfields
   ms.topic: unit
-  ms.service: multicloud-permissions-management 
 durationInMinutes: 5
 content: |
   [!include[](includes/11-stay-informed-with-continuous-monitoring.md)]
