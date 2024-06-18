@@ -27,7 +27,7 @@ An angel investor is a wealthy individual who invests their own money, like Mela
 
 Good angel investors bring capital along with expertise and networks that can help you grow your company. Angel investors often work in groups. An angel round can have a few or sometimes 20 or more individual investors participating.
 
-Angel groups often invest in a wide range of sectors, with their investment interests influenced by the their members' individual expertise.
+Angel groups often invest in a wide range of sectors, with their investment interests influenced by their members' individual expertise.
 
 Generally, angel investors will consider investing in a startup only after it launches at least a minimal viable product and generates traction in the form of product usage and, ideally, revenue.
 
