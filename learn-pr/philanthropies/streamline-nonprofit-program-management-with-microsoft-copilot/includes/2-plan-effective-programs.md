@@ -4,7 +4,7 @@ Program planning is the process of defining your program's goal, objectives, act
 - Templates: Copilot can create and fill in program planning templates, such as logic models, theory of change, and results frameworks. 
 - Feedback: Copilot can review and critique your program plan, and suggest improvements, such as clarity, coherence, and alignment. 
 
-## Example Scenario
+## Example scenario
 
 Let’s consider a nonprofit working to help youth gain critical digital literacy skills. Here are some sample prompts that can be used in program planning for that organization:  
 
