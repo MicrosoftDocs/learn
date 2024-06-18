@@ -3,7 +3,7 @@ uid: learn.wwl.manage-security-active-directory
 metadata:
   title: Manage security in Active Directory
   description: "This module focuses on maintaining security in an Active Directory environment. It covers things from permissions management to authentication methods to identifying problematic accounts."
-  ms.date: 06/17/2024
+  ms.date: 06/18/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module

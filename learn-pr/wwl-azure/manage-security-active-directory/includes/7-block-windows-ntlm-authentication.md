@@ -15,7 +15,7 @@ Prior to blocking NTLM, you need to ensure that existing applications are no lon
 
  -  **Network security: Restrict NTLM: Outgoing NTLM Traffic to remote servers**. Configure this policy with the Audit All setting.
  -  **Network security: Restrict NTLM: Audit Incoming NTLM Traffic**. Configure this policy with the Enable auditing for all accounts setting.
- -  **Network security:Restrict NTLM: Audit NTLM authentication in this domain**. Configure this policy with the Enable for domain accounts to domain servers setting on domain controllers. You shouldn't configure this policy on all computers.
+ -  **Network security: Restrict NTLM: Audit NTLM authentication in this domain**. Configure this policy with the Enable for domain accounts to domain servers setting on domain controllers. You shouldn't configure this policy on all computers.
 
 ## Block NTLM
 
@@ -32,6 +32,6 @@ To disable NTLM on domain controllers using the Group Policy Management Console,
 2.  Create a new **Group Policy Object (GPO)** and give it a descriptive name.
 3.  Edit the GPO and navigate to Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Local Policies\\Security Options.
 4.  Locate the policy **Network security: Restrict NTLM: NTLM authentication in this domain** and set it to **Deny all**.
-5.  Locate the policy “Network security: Restrict NTLM: Add server exceptions in this domain” and configure it with the necessary exceptions if required.
+5.  Locate the policy **Network security: Restrict NTLM: Add server exceptions in this domain** and configure it with the necessary exceptions if required.
 6.  Link the GPO to the domain controllers’ Organizational Unit (OU).
 7.  Ensure the policy is enforced by running the **gpupdate /force** command on the domain controllers or waiting for the next Group Policy refresh cycle.

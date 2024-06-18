@@ -6,7 +6,6 @@ Use these resources to discover more:
 
  -  [Implementing Least Privilege Administrative Models](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models)
  -  [User Rights Assignment](/windows/security/threat-protection/security-policy-settings/user-rights-assignment)
- -  [Understanding User and Group Accounts](/windows-server/identity/ad-ds/plan/understanding-user-and-group-accounts)
  -  [Manage protected users](/windows-server/identity/ad-ds/plan/security-best-practices/appendix-c--protected-accounts-and-groups-in-active-directory)
  -  [Configure authentication policies silos](/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts)
  -  [Configure account security](/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory)

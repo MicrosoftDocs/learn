@@ -1,4 +1,4 @@
-The AD DS security group Protected Users helps you protect highly privileged user accounts against compromise. The Protected Users group members have several security-related configuration settings applied that can't be modified except by leaving the group.
+The Active Directory Domain Services (AD DS) security group Protected Users helps you protect highly privileged user accounts against compromise. The Protected Users group members have several security-related configuration settings applied that can't be modified except by leaving the group.
 
 ## Protected Users group prerequisites
 
@@ -22,7 +22,7 @@ When a user is a member of the Protected Users group, on their workstation or lo
 On domain controllers running Windows Server 2012 R2 or later:
 
  -  NTLM authentication isn't allowed.
- -  DES and RC4 encryption in Kerberos preauthentication can't be used.
+ -  DES and RC4 encryption in Kerberos pre-authentication can't be used.
  -  Credentials can't be delegated using constrained delegation.
  -  Can't be delegated using unconstrained delegation.
  -  Ticket-granting tickets (TGTs) can't renew past the initial lifetime.

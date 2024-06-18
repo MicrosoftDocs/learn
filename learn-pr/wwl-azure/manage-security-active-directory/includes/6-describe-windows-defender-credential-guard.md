@@ -19,10 +19,10 @@ Windows Defender Credential Guard requires the following:
  -  UEFI Secure boot
  -  UEFI secure firmware update
 
-Windows Defender Credential Guard can protect secrets in a Microsoft Hyper-V virtual machine when:
+Windows Defender Credential Guard can protect secrets in a Microsoft Hyper-V Virtual Machine when:
 
  -  The Hyper-V host has an input/output memory management unit (IOMMU) and runs Windows Server 2016 or later, or runs Windows 10 Enterprise.
- -  The virtual machine must be Generation 2, have virtual TPM enabled, and run an operating system that supports Windows Defender Credential Guard.
+ -  The Virtual Machine must be Generation 2, have virtual TPM enabled, and run an operating system that supports Windows Defender Credential Guard.
 
 Windows Defender Credential Guard doesn't support:
 
