@@ -39,8 +39,10 @@ subjects:
 units:
 - learn.wwl.specify-requirements-secure-saas-paas-iaas-services.introduction-security-saas-paas-iaas
 - learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-baselines-saas-paas-iaas-services
+- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-requirements-iot-workloads
 - learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-requirements-web-workloads
 - learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-requirements-containers-container-orchestration
+- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.evaluate-ai-services-security
 - learn.wwl.specify-requirements-secure-saas-paas-iaas-services.knowledge-check
 - learn.wwl.specify-requirements-secure-saas-paas-iaas-services.summary
 badge:
