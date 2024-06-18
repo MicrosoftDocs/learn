@@ -11,7 +11,7 @@ For this exercise you're logged in as Avery Howard. You have the Copilot owner r
 
 You'll work with specific Microsoft Purview solutions, using the new Microsoft Purview portal, and access the embedded Copilot capabilities of those solutions.
 
-This exercise should take approximately **25** minutes to complete.
+This exercise should take approximately **30** minutes to complete.
 
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
