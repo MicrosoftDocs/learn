@@ -1,4 +1,4 @@
-An orginizational unit (OU) is a container object within a domain that you can use to consolidate users, computers, groups, and other objects. You can link Group Policy Objects (GPOs) directly to an OU to manage the users and computers contained in the OU. You can also assign an OU manager and associate a COM+ partition with an OU.
+An organizational unit (OU) is a container object within a domain that you can use to consolidate users, computers, groups, and other objects. You can link Group Policy Objects (GPOs) directly to an OU to manage the users and computers contained in the OU. You can also assign an OU manager and associate a COM+ partition with an OU.
 
 You can create new OUs in AD DS by using:
 
@@ -20,7 +20,7 @@ You can use OUs to represent the hierarchical, logical structures within your or
 
 AD DS has several built-in containers, or generic containers, such as Users and Computers. These containers store system objects or function as the default parent objects to new objects that you create. Don't confuse these generic container objects with OUs. The primary difference between OUs and containers is the management capabilities. Containers have limited management capabilities. For example, you can't apply a GPO directly to a container.
 
-:::image type="content" source="../media/objects.png" alt-text="A screenshot of Active Directory Users and Computers. The administrator has selected the Computers container \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\`Contoso.com\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\` domain. Other containers that are displayed are described in the following tables.":::
+:::image type="content" source="../media/objects.png" alt-text="A screenshot of Active Directory Users and Computers. The administrator has selected the Computers container Contoso.com domain. Other containers that are displayed are described in the following tables.":::
 
 
 Installing AD DS creates the Domain Controllers OU and several generic container objects by default. AD DS primarily uses some of these default objects, which are also hidden by default. The following objects are displayed by default:

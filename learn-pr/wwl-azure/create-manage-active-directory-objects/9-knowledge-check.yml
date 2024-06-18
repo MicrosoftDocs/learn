@@ -4,11 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/17/2024
+  ms.date: 06/18/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
 durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -19,7 +21,7 @@ quiz:
       explanation: "Incorrect. User accounts in AD DS are used for user authentication and access control, not for managing service accounts."
     - content: "Local System accounts"
       isCorrect: false
-      explanation: "Incorrect. Local System accounts are local to the computer and do not provide centralized administration or simplified password and SPN management."
+      explanation: "Incorrect. Local System accounts are local to the computer and don't provide centralized administration or simplified password and SPN management."
     - content: "Group managed service accounts"
       isCorrect: true
       explanation: "Correct. Group managed service accounts provide automatic password maintenance and simplified SPN management for services running on multiple servers."
@@ -27,21 +29,21 @@ quiz:
     choices:
     - content: "The Domain Controllers OU"
       isCorrect: true
-      explanation: "That's correct. Although the Domain Controllers OU is an OU, it is created by default and is therefore built in."
+      explanation: "That's correct. Although the Domain Controllers OU is an OU, it's created by default and is therefore built in."
     - content: "The IT OU"
       isCorrect: false
-      explanation: "That's incorrect. OUs are not built-in objects but are manually created (with one exception)."
+      explanation: "That's incorrect. OUs aren't built-in objects but are manually created (with one exception)."
     - content: "System"
       isCorrect: false
-      explanation: "That's incorrect. Although this is a built-in container, it does not contain computer objects."
+      explanation: "That's incorrect. Although this is a built-in container, it doesn't contain computer objects."
   - content: "A system administrator needs to manage a collection of users, computers, contacts, and other groups as a single entity in Active Directory. What should the administrator do to accomplish this task?"
     choices:
     - content: "Create a new user account"
       isCorrect: false
-      explanation: "Incorrect. Creating a new user account provides an individual with access permissions and resources, but it does not allow for managing a collection of users and resources as a single entity."
+      explanation: "Incorrect. Creating a new user account provides an individual with access permissions and resources, but it doesn't allow for managing a collection of users and resources as a single entity."
     - content: "Create an Organizational Unit"
       isCorrect: false
-      explanation: "Incorrect. While creating an Organizational Unit provides a hierarchical framework for organizing objects, it does not directly allow for managing a collection of users and resources as a single entity."
+      explanation: "Incorrect. While creating an Organizational Unit provides a hierarchical framework for organizing objects, it doesn't directly allow for managing a collection of users and resources as a single entity."
     - content: "Create a new group"
       isCorrect: true
       explanation: "Correct. Creating a group in Active Directory allows for managing a collection of users, computers, contacts, and other groups as a single entity."

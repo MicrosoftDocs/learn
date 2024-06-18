@@ -4,7 +4,6 @@ In this module, you learned about the importance of user accounts in Active Dire
 
 You can learn more by reviewing the following documents.
 
- -  [Understanding User Accounts in Active Directory](/windows-server/identity/ad-ds/plan/user-object-user-accounts)
  -  [Managed Service Accounts Overview](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)
- -  [Active Directory Groups in AD DS](/windows-server/identity/ad-ds/plan/creating-groups-in-active-directory)
- -  [Organizational Units in Active Directory](/windows-server/identity/ad-ds/plan/organizational-unit-design-concepts)
+ -  [Active Directory security groups](/windows-server/identity/ad-ds/manage/understand-security-groups)
+ -  [Understanding the Active Directory Logical Model](/windows-server/identity/ad-ds/plan/understanding-the-active-directory-logical-model)

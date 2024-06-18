@@ -34,13 +34,13 @@ To restore AD DS, a backup must explicitly include system state data. &lt;i&gt;S
 
 To perform an AD DS restore, you must have full access to the files on the domain controller. This requires restarting the domain controller in DSRM. If you're restarting a domain controller locally, open the advanced startup options and choose the DSRM from the menu.
 
-When you start a domain controller in DSRM, you will sign in as Administrator with the DSRM password. You then can use Windows Server Backup to restore the directory database. After completing the restore process, you must restart the server you are recovering. The domain controller will ensure that its database is consistent with the rest of the domain by pulling from its replication partners the changes to the directory that have occurred since the date of the backup.
+When you start a domain controller in DSRM, you'll sign in as Administrator with the DSRM password. You then can use Windows Server Backup to restore the directory database. After completing the restore process, you must restart the server you are recovering. The domain controller ensures that its database is consistent with the rest of the domain by pulling from its replication partners the changes to the directory that have occurred since the date of the backup.
 
 #### Nonauthoritative restore
 
 By default, you restore an AD DS backup as of a known good date. Essentially, you roll the domain controller back in time. When AD DS restarts on the domain controller, the domain controller contacts its replication partners and requests all subsequent updates. In other words, the domain controller catches up with the rest of the domain by using standard replication mechanisms.
 
-This type of restore is useful when the directory on a domain controller has been damaged or corrupted, but the problem has not spread to other domain controllers. However, in some scenarios, this approach is not suitable. For example, this will not enable you to recover an object you deleted after the backup took place, if that deletion has replicated to other domain controllers. If you restore a known good version of AD DS and restart the domain controller, the deletion that happened after the backup took place will simply replicate back to the domain controller.
+This type of restore is useful when the directory on a domain controller has been damaged or corrupted, but the problem has not spread to other domain controllers. However, in some scenarios, this approach is not suitable. For example, this won't enable you to recover an object you deleted after the backup took place, if that deletion has replicated to other domain controllers. If you restore a known good version of AD DS and restart the domain controller, the deletion that happened after the backup took place will simply replicate back to the domain controller.
 
 #### Authoritative restore
 

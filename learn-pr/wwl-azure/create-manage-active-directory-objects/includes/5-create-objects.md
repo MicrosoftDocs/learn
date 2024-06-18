@@ -2,7 +2,7 @@ You’ve learned about the fundamental AD DS structure and how users, groups, an
 
 In this unit, you’ll see how to create basic AD DS objects, starting with OUs, which are essential for grouping and managing resources within a domain. The examples in this unit show the steps to create these objects using the Active Directory Administrative Center, but you can accomplish the same tasks using other tools, such as Windows PowerShell.
 
-## Create an Organizational Unit
+## Create an organizational unit
 
 Creating an organizational unit (OU) in Active Directory provides you with a hierarchical framework for organizing objects, such as users, groups, and computers. You can then use this framework to apply group policies and delegate administrative control over these resources.
 

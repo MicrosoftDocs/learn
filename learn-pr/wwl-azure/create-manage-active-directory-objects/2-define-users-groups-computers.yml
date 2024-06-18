@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-manage-active-directory-objects.define-users--groups--computers
+uid: learn.wwl.create-manage-active-directory-objects.define-users-groups-computers
 title: Define users, groups, and computers
 metadata:
   title: Define users, groups, and computers
   description: "Define users, groups, and computers"
-  ms.date: 06/17/2024
+  ms.date: 06/18/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-define-users--groups--computers.md)]
+  [!include[](includes/2-define-users-groups-computers.md)]
