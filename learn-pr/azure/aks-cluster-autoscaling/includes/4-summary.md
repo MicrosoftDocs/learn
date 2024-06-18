@@ -1,6 +1,6 @@
-In this module, you worked for a growing video editing company that provides a cloud-based video rendering service. The service was experiencing increased demand from recent international expansion. The application leveraged the Horizontal Pod Autoscaler (HPA) for scaling purposes, but the cluster couldn't keep up. Your manager tasked you with finding a solution to scale the cluster automatically.
+In this module, you work for a growing video editing company that provides a cloud-based video rendering service. The service was experiencing increased demand from recent international expansion. The application applied the Horizontal Pod Autoscaler (HPA) for scaling purposes, but the cluster couldn't keep up. Your manager tasked you with finding a solution to scale the cluster automatically.
 
-You looked into the AKS cluster autoscaler feature to see if it would be the right fit. With this feature, you were able to automatically scale up and down the number of nodes in your cluster. You configured the cluster autoscaler to watch for unscheduled pods with resource constraints, and it automatically increased and decreased the number of nodes to meet those requirements. You saw how the feature could allow your company to keep up with application scalability and decided to propose the solution to your manager.
+You looked into the Azure Kubernetes Service (AKS) cluster autoscaler feature to see if it would be the right fit. With this feature, you were able to scale the number of nodes in your cluster up and down automatically. You configured the cluster autoscaler to watch for unscheduled pods with resource constraints, and then automatically increase and decrease the number of nodes to meet those requirements. You saw how the feature could allow your company to keep up with application scalability and decided to propose the solution to your manager.
 
 ## Clean up resources
 
@@ -26,7 +26,7 @@ In this module, you created resources by using your Azure subscription. To avoid
 
 ## Learn more
 
-For more information on the topics covered in this module, see the following resources:
+For more information about the articles covered in this module, see the following resources:
 
 - [Scalability concepts in AKS](/azure/aks/concepts-scale)
 - [Types of pods that prevent scale downs](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#what-types-of-pods-can-prevent-ca-from-removing-a-node)

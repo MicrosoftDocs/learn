@@ -5,8 +5,8 @@ metadata:
   title: Identify other Azure tools and services for Linux deployments
   description: Learn about the other Azure tools and services that are available for Linux deployments.
   ms.date: 05/01/2023
-  author: chasecrum
-  ms.author: chasecrum
+  author: fossygirl
+  ms.author: carols
   ms.topic: unit
   ms.custom: devx-track-arm-template, devx-track-azurecli, linux-related-content
 durationInMinutes: 11

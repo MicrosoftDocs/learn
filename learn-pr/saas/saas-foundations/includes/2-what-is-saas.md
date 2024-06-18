@@ -1,81 +1,75 @@
-One of the most popular forms of cloud computing is Software as a Service, or SaaS, and is often used daily by consumers and for business.
+Software as a Service (SaaS) is one of the most popular forms of cloud computing, and is used daily by consumers and businesses. SaaS allows organizations to quickly get up and running with apps at minimal upfront cost.
 
-SaaS provides a complete software solution that you purchase on a pay-as-you-go basis from a service provider. You rent the use of an app for your organization, and your users connect to it over the Internet, usually with a web browser or mobile app. All the underlying infrastructure, middleware, app software, and app data are in the service provider’s datacenter. The service provider manages the hardware and software, and with the appropriate service agreement, will ensure the availability and the security of the app and your data as well. SaaS allows your organization to get quickly up and running with an app at minimal upfront cost.
+SaaS is a complete software solution that customers purchase from a service provider. Customers rent the use of an app for their organization, and users connect to the app over the internet, usually with a web browser or mobile app.
 
-The idea of success behind SaaS model isn't new, and the term that you might hear often, is Economies of scale. In production it's also called subtractive manufacturing – the more you produce, the higher margins it's possible to achieve.
+All the underlying infrastructure, middleware, app software, and app data are in the service provider's datacenter. The service provider manages the hardware and software, and with the appropriate service agreement, ensures the availability and security of the app and data.
+
+The term *economies of scale*, also called *subtractive manufacturing* in production scenarios, describes the idea of success underlying the SaaS model. This idea isn't new, and means that the more you produce, the higher margins you can achieve. Economies of scale apply to SaaS because you reuse infrastructure and don't produce customized software for each customer.
 
 ![This graph illustrates declining price per unit based on the amount of units produced.](../media/economies-of-scale.png) 
 
-It works with software too – but only in case you're NOT producing customizable software for each customer and reusing infrastructure. However, there are cases with dedicated or isolated tiers of service in SaaS with their own infrastructure.
-
-For example, Microsoft has a special offer called Azure Government, which can only be sold to the government, since they have high security standards and requirements, and because of that the infrastructure is fully isolated from the Azure Public Cloud.  
+Some dedicated or isolated SaaS service tiers do have their own infrastructure. For example, the Microsoft special offer called Azure Government can be sold only to government. Because of government security standards and requirements, the infrastructure is completely isolated from the Azure public cloud.
 
 ## SaaS business models
 
-On a high level, we can distinguish two different business models for SaaS companies:
-* B2B (Business – to Business) company that provides software and services to other businesses.
-* B2C (Business-to-Consumer) company that sells software and operates this software directly to individual consumers.
+There are two high-level SaaS business models:
 
-The biggest difference is the audience of your products. And even though you might have a product that suits both business and individual consumers, it has a direct impact on your company and implemented solution.
+- Business-to-Business (B2B) companies provide software and services to other businesses.
+- Business-to-Consumer (B2C) companies sell and operate software directly to individual consumers.
 
-Some other differences (but not limited to) between B2B and B2C include:
-* Pricing models
-* Sales process
-* Customer service or account management
+The main difference is the audience for products. A company might have a product that suits both business and individual consumers, but the audience still has the most direct influence on the company's implemented solution.
 
-Both B2B and B2C models can provide your company with sales and revenue, but you should create a strategy which suits your company the best.
-And it's possible to serve both B2B and B2C customers, as we can see with example of Microsoft itself, there are different models of purchasing Azure subscriptions, tailored for enterprise-size customers (Enterprise Agreements), as well as individual consumers (Pay-As-You-Go). However, when starting with new solution, it's a good idea to focus only on one customer segment to begin with.
+Some other differences between B2B and B2C include:
 
-When working on defining business model for SaaS solution, you need to identify the market you are targeting, which will help you gather more insights about your customers and their problems, so that you can define more clear requirements for your tech team about what solution they have to build.  
+- Pricing models.
+- Sales processes.
+- Customer service or account management.
 
-![Illustrates target market segment definition: Buying behavior, Company size and Industry, Technical requirements, Complexity, Geography.](../media/target.png)
+It's possible to serve both B2B and B2C customers. For example, there are different models of Microsoft Azure subscriptions tailored for enterprise-size customers (enterprise agreements) or individual consumers (pay-as-you-go).
 
+Both B2B and B2C models can provide your company with sales and revenue, but you should create a strategy that suits your company best. When starting with a new solution, it's a good idea to begin with one customer segment.
 
+As you work on defining the business model for your SaaS solution, you need to identify the market you're targeting. You can then gather insights about your customers and their problems, so you can define clearer requirements for the tech team that builds your solution.
+
+![Illustration of target market segment definition, including buying behavior, company size and industry, technical requirements, complexity, and geography.](../media/target.png)
 
 ## Contoso scenario
 
-Let's have a look at example and consider a fictitious Contoso company. 
+This example considers a fictitious UK company, Contoso, that wants to develop a subscription-based service to generate and improve website designs. Contoso created an AI model that can generate user interfaces for websites, track the performance of the design over time, and suggest improvements.
 
-UK based company Contoso has idea to develop *subscription-based service to generate and improve website designs*. Contoso created AI model which can generate UI for website, and track the performance of design over time and suggest improvements.
+The technical capability of this service isn't much different for private users or large corporations, but from a business perspective it makes sense to focus on only one segment at a time. Marketing and business development efforts are different for individual consumers and business segments, and might bring different technical requirements for the solution itself.
 
-While the technical capability of this service won't be much different for private users or large corporates, from business perspective it makes sense to focus on only one segment at a time, and not try to capture both markets of individual consumers as well businesses, because marketing and business development efforts will be different for these segments, as well as might bring different technical requirements for the solution itself. 
+Contoso decides to focus initially on the B2B model, in particular small companies who can't afford their own in-house designers. It's important to offer attractive designs that aren't too complex, so AI can provide high-quality service. Contoso discovered through market and user research that lawyers were the most willing to pay for these services.
 
-Due to several reasons Contoso decided to focus initially on B2B model, in particular small companies, who can't afford to have their own in-house designers, and they have found out through market and user research that it is mostly lawyers, who are willing to pay for service like this, where it's important to have attractive design, which also is not too complex in order for AI to be able to provide high quality service.
-
-This way, the identified market segment could look something like this:
+The identified market segment looks something like this:
 
 #### Buying behaviors
 
-- Customers search for service online and purchase online
+- Customers search for service online and purchase online.
+- A free trial lets users try out the product to decide if it's suitable.
 
-- Requires free trial in order for user to try out the design and decide if it's suitable
+#### Company size and industry
 
-#### Company size, industry
-
-- Small size companies
-
-- Legal industry
+- Small size companies.
+- Legal industry.
 
 #### Technical requirements
 
-For the sake of example, requirements are simplified, but here are some examples to give you an idea:
+The example is simplified, but here are some general requirements:
 
-- Need to be able to collect the usage of the website, which will allow to analyze this data to improve the design of the website 
-
-- Due to collection of the sensitive data, Contoso will have to comply with several regulations, such as UK GDPR
-- Provide capability for customers to book appointment with lawyer 
+- Must allow collecting website usage data and analyzing this data to improve the design of the website.
+- Due to the collection of sensitive data, must comply with several regulations, such as UK GDPR.
+- Must provide capability for customers to book appointments with lawyers.
 
 #### Complexity
 
-- AI model was trained on the set of simple landing pages and will be able to handle well designs for websites which are not too complex and mostly are informational and used for booking time slots.
-- Complexity of customers business should be low.
+- The AI model was trained on a set of simple landing pages, and can handle website designs that aren't too complex and are mostly informational or used for booking time slots.
+- Complexity of customers' business should be low.
 
 #### Geography 
 
-- Initially Contoso is focusing on UK region due to its origins, preferred language and financial capability of companies providing legal services within UK region. In the future, after Contoso establishes stable business within UK region, they'll start going into other markets. 
+Initially, Contoso is focusing on the UK region due to its origins, preferred language, and the financial capabilities of companies that provide legal services within the UK. After Contoso establishes a stable business within the UK region, they plan to go into other markets.
 
-  Each geographical region will bring additional challenges, in term of technical delivery of the service, as well as over all Go-To-Market strategies and activities. If Contoso decides, that next market is Europe, they'll have to create a strategy of how to market the product in countries/regions, where English is not default language and take into account specifics of local legal industry.  
+Each geographical region adds more challenges in terms of technical delivery of the service and overall market strategies and activities. If Contoso decides their next market is Europe, they have to create a strategy for marketing the product in countries/regions where English isn't the default language, and account for specifics of the local legal industry.
 
-
-
-Now, with clear understanding of who Contoso is focusing on as customers and what are the requirements for the service, you should understand why SaaS is preferred model and why Contoso shouldn't just sell AI generated designs to customers. 
+With a clear understanding of the requirements for the service and which customers to focus on, Contoso understands why SaaS is the preferred model instead of just selling AI-generated designs.

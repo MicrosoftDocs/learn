@@ -16,6 +16,10 @@ Every good prompt should have a goal. Whether it comes in the form of instructio
 
 For Copilot, context can refer to the time frame, or that you'll use the response for a report. Expectations can include whether you want the response to be in a table format, a list of action steps, a summary, or even a diagram. Source might be useful in specifying which Microsoft plugins you're referring to, if needed. Some plugins require more context to work effectively or supporting plugins to ensure a response when initial responses fail.
 
+Watch this short video for a summary on how to create effective prompts.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=972d5cc0-e83a-48fa-9729-7dea11edba9d]
+
 ### Other prompting tips
 
 Some things to remember when coming up with your own prompts:

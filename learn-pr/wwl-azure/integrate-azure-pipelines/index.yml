@@ -2,20 +2,26 @@
 uid: learn.wwl.integrate-azure-pipelines
 metadata:
   title: Integrate with Azure Pipelines
-  description: Integrate with Azure Pipelines
-  ms.date: 06/20/2023
+  description: "Integrate with Azure Pipelines"
+  ms.date: 05/26/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Integrate with Azure Pipelines
 summary: This module details Azure Pipelines anatomy and structure, templates, YAML resources, and how to use multiple repositories in your pipeline.
 abstract: |
-  By the end of this module, you'll be able to:
-  *   Describe advanced Azure Pipelines anatomy and structure
-  *   Detail templates and YAML resources
-  *   Implement and use multiple repositories
-prerequisites: ''
+  By the end of this module, you're able to:
+
+  -   Describe advanced Azure Pipelines anatomy and structure
+
+  -   Detail templates and YAML resources
+
+  -   Implement and use multiple repositories
+prerequisites: None
 iconUrl: /training/achievements/6-integrate-with-azure-pipelines.svg
 levels:
 - advanced
@@ -47,6 +53,7 @@ units:
 - learn.wwl.integrate-azure-pipelines.detail-templates
 - learn.wwl.integrate-azure-pipelines.explore-yaml-resources
 - learn.wwl.integrate-azure-pipelines.use-multiple-repositories-your-pipeline
+- learn.wwl.integrate-azure-pipelines.migrate-pipeline-classic-yaml-azure-pipelines
 - learn.wwl.integrate-azure-pipelines.knowledge-check
 - learn.wwl.integrate-azure-pipelines.summary
 badge:

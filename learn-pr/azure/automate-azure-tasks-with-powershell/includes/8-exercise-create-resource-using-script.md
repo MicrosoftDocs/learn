@@ -1,102 +1,148 @@
-In this unit, you'll continue with the example of a company that makes Linux admin tools. Recall that you plan to use Linux VMs to let potential customers test your software. You have a resource group ready, and now it's time to create the VMs.
+<!-- markdownlint-disable MD041 -->
 
-Your company has paid for a booth at a large Linux trade show. You plan a demo area containing three terminals each connected to a separate Linux VM. At the end of each day, you want to delete the VMs and re-create them so they start fresh every morning. Creating the VMs manually after work when you're tired would be error prone. You want to write a PowerShell script to automate the VM-creation process.
+In this unit, you continue with the example of a company that develops Linux admin tools. The goal
+is to use Linux virtual machines (VMs) to allow potential customers to test your software. With a
+resource group already set up, it's time to create the VMs.
+
+Your company secured a booth at a large Linux trade show. You plan to set up a demo area with three
+terminals, each connected to a separate Linux VM. You must delete the VMs and re-create them at the
+end of each day so they start fresh every morning. Creating the VMs manually after a long day is
+error-prone, so you need to write a PowerShell script to automate the VM creation process.
 
 ## Write a script to create virtual machines
 
-Follow these steps in Cloud Shell on the right to write the script:
+Follow these steps to write a script in Azure Cloud Shell that automates the creation of virtual
+machines.
 
-1. Switch to your home folder in Cloud Shell.
+> [!NOTE]
+> Usually, you'd authenticate to Azure using your credentials with `Connect-AzAccount`, but in
+> Cloud Shell, you're already authenticated, so this step is unnecessary.
 
-    ```powershell
-    cd $HOME\clouddrive
-    ```
-
-1. Create a new text file, named **ConferenceDailyReset.ps1**.
-
-    ```powershell
-    touch "./ConferenceDailyReset.ps1"
-    ```
-
-1. Open the integrated editor, and select the **ConferenceDailyReset.ps1** file.
-
-    ```powershell
-    code "./ConferenceDailyReset.ps1"
-    ```
-
-    > [!TIP]
-    > The integrated Cloud Shell also supports vim, nano, and emacs if you'd prefer to use one of those editors.
-
-1. Start by capturing the input parameter in a variable. Add the following line to your script.
-
-    ```powershell
-    param([string]$resourceGroup)
-    ```
-
-    > [!NOTE]
-    > Normally, you'd have to authenticate with Azure using your credentials using `Connect-AzAccount`, and you could do so in the script. However, in the Cloud Shell environment, you're already authenticated, so this is unnecessary.
-
-1. Prompt for a username and password for the VM's admin account and capture the result in a variable:
-
-    ```powershell
-    $adminCredential = Get-Credential -Message "Enter a username and password for the VM administrator."
-    ```
-
-1. Create a loop that executes three times:
-
-    ```powershell
-    For ($i = 1; $i -le 3; $i++) 
-    {
-
-    }
-    ```
-
-1. In the loop body, create a name for each VM and store it in a variable, and output it to the console:
-
-    ```powershell
-    $vmName = "ConferenceDemo" + $i
-    Write-Host "Creating VM: " $vmName
-    ```
-
-1. Next, create a VM using the `$vmName` variable:
+1. Switch to your home folder:
 
    ```powershell
-   New-AzVm -ResourceGroupName $resourceGroup -Name $vmName -Credential $adminCredential -Image Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest
+   Set-Location -Path $HOME
    ```
 
-1. Save the file. You can use the "..." menu at the top-right corner of the editor. There are also common accelerator keys for *Save*, like <kbd>Ctrl</kbd> + <kbd>S</kbd>.
+1. Create a new PowerShell script file:
 
-The completed script should look like the following code:
+   ```powershell
+   New-Item -Name ConferenceDailyReset.ps1 -ItemType File
+   ```
 
-```powershell
-param([string]$resourceGroup)
+1. Open the integrated Visual Studio Code (VS Code) editor:
 
-$adminCredential = Get-Credential -Message "Enter a username and password for the VM administrator."
+   ```powershell
+   code ./ConferenceDailyReset.ps1
+   ```
 
-For ($i = 1; $i -le 3; $i++)
-{
-    $vmName = "ConferenceDemo" + $i
-    Write-Host "Creating VM: " $vmName
-    New-AzVm -ResourceGroupName $resourceGroup -Name $vmName -Credential $adminCredential -Image Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest
+   > [!TIP]
+   > The integrated Cloud Shell editor also supports vim, nano, and emacs if you prefer to use one
+   > of those editors.
+
+1. Define a parameter for your resource group name:
+
+   Add the following line to your script:
+
+   ```powershell
+   param (
+       [string]$ResourceGroupName
+   )
+   ```
+
+1. Prompt for VM administrator credentials:
+
+   ```powershell
+   $adminCredential = Get-Credential -Message 'Enter a username and password for the VM administrator.'
+   ```
+
+1. Create a loop to execute three times:
+
+   ```powershell
+   $vms = 1..3
+   foreach ($vm in $vms) {
+       $vm
+   }
+   ```
+
+1. In the loop, create a name for each VM and return it:
+
+   ```powershell
+   $vmName = "ConferenceDemo-$vm"
+   Write-Output "Creating VM: $vmName"
+   ```
+
+1. Create a VM using the `$vmName` variable:
+
+   ```azurepowershell
+   $azVmParams = @{
+       ResourceGroupName = $ResourceGroupName
+       Name              = $vmName
+       Credential        = $adminCredential
+       Image             = 'Canonical:0001-com-ubuntu-server-jammy:22_04-lts:latest'
+       OpenPorts         = 22
+   }
+   New-AzVm @azVmParams
+   ```
+
+1. Save the file:
+
+   To save the script, use the ellipsis (`...`) context menu at the top-right corner of the editor
+   or the <kbd>Ctrl</kbd> + <kbd>S</kbd> keyboard shortcut.
+
+### Completed script
+
+The completed script should look like the following example:
+
+```azurepowershell
+param (
+    [string]$ResourceGroupName
+)
+
+$adminCredential = Get-Credential -Message 'Enter a username and password for the VM administrator.'
+
+$vms = 'web','app','sql'
+
+foreach ($vm in $vms) {
+
+    $vmName = "ConferenceDemo-$vm"
+    Write-Output "Creating VM: $vmName"
+
+    $azVmParams = @{
+        ResourceGroupName = $ResourceGroupName
+        Name              = $vmName
+        Credential        = $adminCredential
+        Image             = 'Canonical:0001-com-ubuntu-server-jammy:22_04-lts:latest'
+        OpenPorts         = 22
+    }
+    New-AzVm @azVmParams
 }
 ```
 
+Once you confirm your script looks like the code in the previous example, close the editor using the
+ellipsis (`...`) context menu at the top-right corner of the editor, or the <kbd>Ctrl</kbd> +
+<kbd>Q</kbd> keyboard shortcut.
+
 ## Run the script
 
-1. Save the file and close the editor using the "..." context menu on the top right of the editor (or use <kbd>Ctrl</kbd> + <kbd>Q</kbd>).
+1. Execute the script using the following command:
 
-1. Run the script.
+   ```powershell
+   ./ConferenceDailyReset.ps1 -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+   ```
 
-    ```powershell
-    ./ConferenceDailyReset.ps1 <rgn>[sandbox resource group name]</rgn>
-    ```
+1. Wait for completion. The script takes several minutes to complete.
 
-    The script will take several minutes to complete. When it's finished, verify it ran successfully by looking at the resources you now have in your resource group:
+1. Verify the VMs. Once the script finishes, verify it completed successfully by listing the VMs in
+   the resource group:
 
-    ```powershell
-    Get-AzResource -ResourceType Microsoft.Compute/virtualMachines
-    ```
+   ```azurepowershell
+   Get-AzVM -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+   ```
 
-You should have three VMs, each with a unique name.
+   You should see three VMs, each with a unique name.
 
-You wrote a script that automated the creation of three VMs in the resource group indicated by a script parameter. The script is short and simple, but automates a process that would take a long time to complete manually with the Azure portal.
+You successfully created a script that automates the creation of three VMs, each in a specific
+resource group, ensuring they're ready for daily demos at the trade show. Although the script is
+short and straightforward, it significantly speeds up a process that would otherwise be
+time-consuming and error-prone if performed manually through the Azure portal.

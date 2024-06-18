@@ -16,13 +16,13 @@ quiz:
     choices:
     - content: "Docker Desktop or Podman"
       isCorrect: true
-      explanation: "That's correct! A local container host is required to run .NET Aspire applications."
+      explanation: "That's correct! A local container host is required to run a project with .NET Aspire."
     - content: "Docker Compose"
       isCorrect: false
-      explanation: "That's incorrect. Docker Compose isn't required to run .NET Aspire applications."
+      explanation: "That's incorrect. Docker Compose isn't required to run a project with .NET Aspire."
     - content: "Kubernetes"
       isCorrect: false
-      explanation: "That's incorrect. Kubernetes isn't required to run .NET Aspire applications."
+      explanation: "That's incorrect. Kubernetes isn't required to run a project with .NET Aspire."
   - content: "You enlist your application in the .NET Aspire orchestration. Which of the following changes would you expect to see in your solution?"
     choices:
     - content: "A new Redis cache container for outbound HTTP requests."

@@ -3,7 +3,7 @@ uid: learn.wwl.install-configure-visual-studio-code
 metadata:
   title: Install and configure Visual Studio Code
   description: "Learn how to configure Visual Studio Code for C# and how to use this professional IDE to create and run console applications."
-  ms.date: 05/08/2024
+  ms.date: 06/03/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
@@ -38,10 +38,10 @@ subjects:
 units:
 - learn.wwl.install-configure-visual-studio-code.introduction
 - learn.wwl.install-configure-visual-studio-code.exercise-download-install-visual-studio-code
-- learn.wwl.install-configure-visual-studio-code.exercise-install-dotnet
 - learn.wwl.install-configure-visual-studio-code.examine-visual-studio-code-user-interface
 - learn.wwl.install-configure-visual-studio-code.exercise-explore-visual-studio-code-user-interface
 - learn.wwl.install-configure-visual-studio-code.exercise-configure-visual-studio-code
+- learn.wwl.install-configure-visual-studio-code.exercise-install-dotnet
 - learn.wwl.install-configure-visual-studio-code.exercise-create-build-run-app
 - learn.wwl.install-configure-visual-studio-code.knowledge-check
 - learn.wwl.install-configure-visual-studio-code.summary

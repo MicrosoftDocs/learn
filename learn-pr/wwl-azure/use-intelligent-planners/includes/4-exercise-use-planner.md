@@ -1,11 +1,12 @@
-In this exercise, you use a planner to automatically invoke your plugin functions to accomplish a goal. The goal is to recommend an upcoming concert to a user based on their recently played music. To accomplish this goal, you need to make sure all of the steps are in place before the Handlebars planner can accurately plan the steps. First, let's create a plugin to retrieve upcoming concerts.
+In this exercise, you use a planner to automatically invoke your plugin functions to accomplish a goal. The goal is to recommend an upcoming concert to a user based on their recently played music. To accomplish this goal, you need to make sure all of the functions are in place before the Handlebars planner can accurately plan the steps. First, let's create a plugin to retrieve upcoming concerts.
 
 ## Prepare your development environment
 
 For these exercises, a starter project is available for you to use. Use the following steps to set up the starter project:
 
 > [!IMPORTANT]
-> You must have .NET Framework 8.0 installed and a Github account to complete these steps.
+> You must have Visual Studio Code and the .NET Framework 8.0 installed to complete these steps.
+> You may also need to install the Visual Studio Code C# Dev Kit extension.
 
 1. Open Visual Studio Code.
 
@@ -21,18 +22,18 @@ For these exercises, a starter project is available for you to use. Use the foll
 
 1. Open the project in Visual Studio Code
 
-1. In Explorer, right-click the **M04-use-intelligent-planners/M04-Project** folder and click **Open in Integrated Terminal**
+1. In Explorer, right-click the **M05-use-intelligent-planners/M05-Project** folder and click **Open in Integrated Terminal**
 
-1. Expand the **M04-use-intelligent-planners/M04-Project** folder
+1. Expand the **M0-5use-intelligent-planners/M05-Project** folder
 
     You should see a "Program.cs" file.
 
-1. Open the **Program.cs** file and update the following variables with your Azure Open AI Services deployment name, API key, endpoint.
+1. Open the **Program.cs** file and update the following variables with your Azure OpenAI Services deployment name, API key, endpoint.
 
     ```csharp
     string yourDeploymentName = "";
     string yourEndpoint = "";
-    string yourKey = "";
+    string yourAPIKey = "";
     ```
 
 Now you're ready to begin the exercise. Good luck!
@@ -57,49 +58,14 @@ Now you're ready to begin the exercise. Good luck!
         public static string GetTours()
         {
             string dir = Directory.GetCurrentDirectory();
-            string content = File.ReadAllText($"{dir}/concertdates.txt");
+            string content = File.ReadAllText($"{dir}/data/concertdates.txt");
             return content;
         }
     ```
 
-1. Create a new file in the 'M04-Project' folder called 'concertdates.txt' and paste the following content:
+    The `GetTours` function reads a file named 'concertdates.txt' and returns the content. This function will be used to retrieve a list of upcoming concerts.
 
-    ```json
-    [
-        {"artist": "Ly Hoa", "concerts": [
-            { "location": "Los Angeles CA, USA", "date": "7/14/2024" },
-            { "location": "London, UK", "date": "10/21/2024" },
-            { "location": "Berlin, Germany", "date": "11/9/2024" },
-            { "location": "Paris, France", "date": "11/23/2024" },
-        ]},
-        {"artist": "Lisa Taylor", "concerts": [
-            { "location": "Portland OR, USA", "date": "2/14/2024" },
-            { "location": "Seattle WA, USA", "date": "2/22/2024" },
-            { "location": "New York City NY, USA", "date": "4/14/2024" },
-            { "location": "Nashville TN, USA", "date": "5/10/2024" },
-        ]},
-        {"artist": "Henry", "concerts": [
-            { "location": "Vancouver, Canada", "date": "2/2/2024" },
-            { "location": "Seattle WA, USA", "date": "2/14/2024" },
-            { "location": "Los Angeles CA, USA", "date": "3/1/2024" },
-            { "location": "Austin TX, USA", "date": "3/10/2024" },
-        ]},
-        {"artist": "Gaby", "concerts": [
-            { "location": "New York City NY, USA", "date": "2/14/2024" },
-            { "location": "Chicago IL, USA", "date": "3/3/2024" },
-            { "location": "Los Angeles CA, USA", "date": "5/6/2024" },
-            { "location": "Barcelona, Spain", "date": "5/24/2024" },
-        ]},
-        { "artist": "Nanami", "concerts": [
-            { "location": "Portland OR, USA", "date": "4/16/2024" },
-            { "location": "Seattle WA, USA", "date": "4/20/2024" },
-            { "location": "San Diego, USA", "date": "6/2/2024" },
-            { "location": "Santa Monica CA, USA", "date": "6/10/2024" },
-        ]}
-    ]
-    ```
-
-    This file should be in the same directory as your 'Program.cs' file. Currently, the Handlebars planner can't complete large language model (LLM) prompts on its own. The planner can only select available prompts and functions to combine to achieve the goal. So next, you need to create a prompt to ask the LLM to suggest a concert.
+    Next, create a prompt to ask the LLM to suggest a concert based on the user's recently played music.
 
 1. In the 'Prompts' folder, create a new folder named 'SuggestConcert'
 
@@ -149,7 +115,7 @@ Now you're ready to begin the exercise. Good luck!
     please recommend a relevant concert that is close to their location.
     ```
 
-    This prompt helps the LLM filter the user's input and retrieve just the destination from the text. Next, you invoke the planner to create a plan that combines the plugins together to accomplish the goal.
+    This prompt asks the LLM to suggest a concert based on the user's recently played songs and location. Next, you invoke the planner to create a plan that combines the plugins together to accomplish the goal.
 
 1. Open your 'Program.cs' file and update it with the following code:
 
@@ -171,17 +137,13 @@ Now you're ready to begin the exercise. Good luck!
     Console.WriteLine($"Results: {result}");
     ```
 
+    In this code, you import the 'MusicLibraryPlugin' and 'MusicConcertPlugin' plugins and the 'SuggestConcert' prompt. You then create a Handlebars planner and use it to create a plan that suggests a concert based on the user's information. Finally, you invoke the plan and print the result.
+
 1. In the terminal, enter `dotnet run`
 
-    You should see output similar to the following response:
+    You should see a generated concert suggestion based on the user's recently played music and location. Try modifying the location to see how the recommendation changes.
 
-    ```output
-    Based on the user's recently played songs and their location in Redmond WA USA, a relevant concert recommendation would be the upcoming concert of Lisa Taylor in Seattle WA, USA on February 22, 2024. Lisa Taylor is an indie-folk artist, and her music genre aligns with the user's recently played songs, such as "Loanh Quanh" by Ly Hoa. Additionally, Seattle is close to Redmond, making it a convenient location for the user to attend the concert.
-    ```
-
-    Try tweaking your prompt and location to see what other results you can generate.
-
-The Handlebars planner us useful when you have several steps required to accomplish a task. It can't run LLM prompts on its own, so you'll need to consider the different tasks a user might want to accomplish in your application.
+The Handlebars planner is useful when you have several steps required to accomplish a task, or when you have many plugins that can be combined in different ways to accomplish a goal.
 
 > [!IMPORTANT]
 > Be sure not to delete any of the code you wrote so far since it's needed for the next exercise.

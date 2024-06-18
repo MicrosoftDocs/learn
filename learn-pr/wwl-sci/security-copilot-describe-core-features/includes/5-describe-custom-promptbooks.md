@@ -30,6 +30,10 @@ Selecting the promptbook opens it. From here, you enter the required input param
 
 :::image type="content" source="../media/create-promptbook-run-v3.png" lightbox="../media/create-promptbook-run-v3.png" alt-text="Screen capture promptbook, including the input parameter.":::
 
+Watch this short video for a summary on creating a promptbook.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c27470bd-2161-4a41-9669-14f5436c22a1]
+
 ### Edit a promptbook
 
 To edit your existing promptbook, select the home menu (hamburger icon) and select Promptbook library.

@@ -4,31 +4,33 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/27/2024
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
   - content: "Suppose there is a `HandlebarsPlanner` object named `planner`. Which line generates a plan for a prompt?"
     choices:
-    - content: "`planner.GeneratePlan( prompt);`"
+    - content: "`planner.GeneratePlan(prompt);`"
       isCorrect: false
       explanation: "Incorrect. `HandlebarsPlanner.GeneratePlan` isn't a function."
-    - content: "`planner.CreatePlanAsync( kernel, prompt);`"
+    - content: "`planner.CreatePlanAsync(kernel, prompt);`"
       isCorrect: true
       explanation: "Correct! To create a plan, use `CreatePlanAsync` with the kernel and the prompt."
-    - content: "`planner.CreatePlanAsync( prompt);`"
+    - content: "`planner.CreatePlanAsync(prompt);`"
       isCorrect: false
       explanation: "Incorrect. You must also include the kernel object to create the plan."
   - content: "How is automatic function calling enabled in the Semantic Kernel SDK?"
     choices:
-    - content: "By using `kernel.InvokeAsync( prompt);`"
+    - content: "By using `kernel.InvokeAsync(prompt);`"
       isCorrect: false
       explanation: "Incorrect. This line invokes a prompt so it doesn't enable automatic function calling."
-    - content: "By using `kernel.EnableAutomaticFunctionCalling( true);`"
+    - content: "By using `kernel.EnableAutomaticFunctionCalling(true);`"
       isCorrect: false
       explanation: "Incorrect. There's no function called `EnableAutomaticFunctionCalling`."
     - content: "By using `OpenAIPromptExecutionSettings` with `ToolCallBehavior.AutoInvokeKernelFunctions`"

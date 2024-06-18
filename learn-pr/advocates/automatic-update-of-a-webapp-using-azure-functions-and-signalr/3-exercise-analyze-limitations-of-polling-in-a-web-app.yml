@@ -8,7 +8,6 @@ metadata:
   ms.author: cshoe
   ms.topic: unit
   ms.custom:
-    - devx-track-azurecli
 title: Exercise - Analyze the limitations of a polling-based web app
 durationInMinutes: 15
 content: |
