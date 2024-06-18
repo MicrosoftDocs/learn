@@ -3,12 +3,10 @@ uid: learn.wwl.configure-manage-entitlement-microsoft-entra-id
 metadata:
   title: Configure and govern entitlement with Microsoft Entra ID
   description: Use Microsoft Entra to manage access by using entitlements, access reviews, privileged access tools, and monitor access events.
-  ms.date: 05/24/2024
+  ms.date: 06/18/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: learning-path
-  ms.service: entra-id-governance
-  ms.subservice: entitlement-management
 title: Configure and govern entitlement with Microsoft Entra ID
 prerequisites: |
   -   Basic Azure administration knowledge.
