@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.guided-project-administer-active-directory-domain-services.exercise-configure-user-management-operations
-title: Exercise - Configure User Management Operations
+title: Exercise - Configure user management operations
 metadata:
-  title: Exercise - Configure User Management Operations
-  description: "Exercise - Configure User Management Operations"
-  ms.date: 06/17/2024
+  title: Exercise - Configure user management operations
+  description: "Exercise - Configure user management operations"
+  ms.date: 06/18/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 25
 content: |
   [!include[](includes/4-exercise-configure-user-management-operations.md)]

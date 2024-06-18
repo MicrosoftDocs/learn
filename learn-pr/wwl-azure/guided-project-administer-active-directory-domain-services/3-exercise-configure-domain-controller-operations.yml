@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.guided-project-administer-active-directory-domain-services.exercise-configure-domain-controller-operations
-title: Exercise - Configure Domain Controller Operations
+title: Exercise - Configure domain controller operations
 metadata:
-  title: Exercise - Configure Domain Controller Operations
-  description: "Exercise - Configure Domain Controller Operations"
-  ms.date: 06/17/2024
+  title: Exercise - Configure domain controller operations
+  description: "Exercise - Configure domain controller operations"
+  ms.date: 06/18/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-configure-domain-controller-operations.md)]
