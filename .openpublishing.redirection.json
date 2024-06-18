@@ -41168,6 +41168,126 @@
       "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/7-summary.md",
       "redirect_url": "/training/modules/give-your-ai-agent-skills/5-summary",
       "redirect_document_id": false
-    }
+    },
+    {
+        "source_path": "learn-pr/permissions-management/explore-features-of-permissions-management/10-knowledge-check-remediation.yml",
+        "redirect_url": "/training/modules/explore-features-of-permissions-management/10-knowledge-check-remediation",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/explore-features-of-permissions-management/11-stay-informed-with-continuous-monitoring.yml",
+        "redirect_url": "/training/modules/explore-features-of-permissions-management/11-stay-informed-with-continuous-monitoring",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/explore-features-of-permissions-management/12-knowledge-check-monitoring.yml",
+        "redirect_url": "/training/modules/explore-features-of-permissions-management/12-knowledge-check-monitoring",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/explore-features-of-permissions-management/13-manage-access-to-microsoft-entra-permissions-management.yml",
+        "redirect_url": "/training/modules/explore-features-of-permissions-management/13-manage-access-to-microsoft-entra-permissions-management",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/explore-features-of-permissions-management/14-put-it-all-together.yml",
+        "redirect_url": "/training/modules/explore-features-of-permissions-management/14-put-it-all-together",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/explore-features-of-permissions-management/15-summary.yml",
+        "redirect_url": "/training/modules/explore-features-of-permissions-management/15-summary",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/explore-features-of-permissions-management/1-introduction.yml",
+        "redirect_url": "/training/modules/explore-features-of-permissions-management/1-introduction",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/explore-features-of-permissions-management/2-comprehensive-experience-for-all-cloud-environments.yml",
+        "redirect_url": "/training/modules/explore-features-of-permissions-management/2-comprehensive-experience-for-all-cloud-environments",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/explore-features-of-permissions-management/3-get-high-level-insights-permissions-management-dashboard.yml",
+        "redirect_url": "/training/modules/explore-features-of-permissions-management/3-get-high-level-insights-permissions-management-dashboard",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/explore-features-of-permissions-management/4-knowledge-check-insights.yml",
+        "redirect_url": "/training/modules/explore-features-of-permissions-management/4-knowledge-check-insights",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/explore-features-of-permissions-management/5-dive-deeper-with-analytics-tab.yml",
+        "redirect_url": "/training/modules/explore-features-of-permissions-management/5-dive-deeper-with-analytics-tab",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/explore-features-of-permissions-management/6-knowledge-check-analytics.yml",
+        "redirect_url": "/training/modules/explore-features-of-permissions-management/6-knowledge-check-analytics",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/explore-features-of-permissions-management/7-develop-better-understanding-of-your-environment-with-reports.yml",
+        "redirect_url": "/modules/explore-features-of-permissions-management/7-develop-better-understanding-of-your-environment-with-reports.yml",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/explore-features-of-permissions-management/8-analyze-historical-data-with-audit-tab.yml",
+        "redirect_url": "/training/modules/explore-features-of-permissions-management/8-analyze-historical-data-with-audit-tab.yml",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/explore-features-of-permissions-management/9-act-on-your-findings-with-remediation-tab.yml",
+        "redirect_url": "/training/modules/explore-features-of-permissions-management/9-act-on-your-findings-with-remediation-tab",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/explore-features-of-permissions-management/index.yml",
+        "redirect_url": "/training/modules/explore-features-of-permissions-management/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/intro-to-entra-permissions-management/1-introduction.yml",
+        "redirect_url": "/training/modules/intro-to-entra-permissions-management/1-introduction",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/intro-to-entra-permissions-management/2-what-is-ciem.yml",
+        "redirect_url": "/training/modules/intro-to-entra-permissions-management/2-what-is-ciem",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/intro-to-entra-permissions-management/3-what-is-entra-permissions-management.yml",
+        "redirect_url": "/training/modules/intro-to-entra-permissions-management/3-what-is-entra-permissions-management",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/intro-to-entra-permissions-management/4-how-entra-permissions-management-works.yml",
+        "redirect_url": "/training/modules/intro-to-entra-permissions-management/4-how-entra-permissions-management-works",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/intro-to-entra-permissions-management/5-when-to-use-permissions-management.yml",
+        "redirect_url": "/training/modules/intro-to-entra-permissions-management/5-when-to-use-permissions-management",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/intro-to-entra-permissions-management/6-knowledge-check.yml",
+        "redirect_url": "/training/modules/intro-to-entra-permissions-management/6-knowledge-check",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/intro-to-entra-permissions-management/7-summary.yml",
+        "redirect_url": "/training/modules/intro-to-entra-permissions-management/7-summary",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "learn-pr/permissions-management/intro-to-entra-permissions-management/index.yml",
+        "redirect_url": "/training/modules/intro-to-entra-permissions-management/index",
+        "redirect_document_id": false
+      }
   ]
 }

@@ -62,7 +62,7 @@ Microsoft operates isolated cloud environments for special geopolitical regions 
 
 ExpressRoute Direct provides customers the opportunity to connect directly into Microsoft’s global network at peering locations strategically distributed across the world. ExpressRoute Direct provides dual 100-Gbps connectivity, which supports Active/Active connectivity at scale.
 
-Key features that ExpressRoute Direct provides include, but aren't limited to:<br>
+Key features that ExpressRoute Direct provides include, but aren't limited to:
 
  -  Massive data ingestion into services like Azure Storage and Azure Cosmos DB.<br>
  -  Physical isolation for industries that are regulated and require dedicated and isolated connectivity. For example: banks, governments, and retails.
@@ -93,6 +93,8 @@ You can increase the ExpressRoute circuit bandwidth without having to tear down 
  -  Unlimited data. Billing is based on a monthly fee; all inbound and outbound data transfer is included free of charge.<br>
  -  Metered data. Billing is based on a monthly fee; all inbound data transfer is free of charge. Outbound data transfer is charged per GB of data transfer. Data transfer rates vary by region.
  -  ExpressRoute premium add-on. ExpressRoute premium is an add-on to the ExpressRoute circuit. The ExpressRoute premium add-on provides the following capabilities:
+    
+    
      -  Increased route limits for Azure public and Azure private peering from 4,000 routes to 10,000 routes.
      -  Global connectivity for services. An ExpressRoute circuit created in any region (excluding national clouds) has access to resources across every other region in the world. For example, a virtual network created in West Europe can be accessed through an ExpressRoute circuit provisioned in Silicon Valley.
      -  Increased number of virtual network links per ExpressRoute circuit from 10 to a larger limit, depending on the bandwidth of the circuit.

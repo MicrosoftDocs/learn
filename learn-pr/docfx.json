@@ -681,7 +681,20 @@
                     "**/resources/**"
                 ],
                 "dest": "modules"
-            },           
+            },
+			{
+                "src": "permissions-managements",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
             {
                 "files": [
                     "**/*.md",
