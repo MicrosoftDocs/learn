@@ -1,6 +1,6 @@
 Deployment workflows enable you to automate the steps in your deployment process. Often, you need to run the steps in multiple separate environments. In your toy company, you want to review the changes to your code before you deploy the changes to your production environment.
 
-In this unit, you'll learn about how environments in GitHub Actions help you support your own process.
+In this unit, you learn about how environments in GitHub Actions help you support your own process.
 
 ## Why do you have multiple environments?
 
@@ -32,7 +32,7 @@ Common environments include:
 
   Integration environments are sometimes also called _system integration test_ (SIT) environments.
 
-- **User acceptance test**: A user acceptance test (UAT) environment is used for manual validation, usually by business stakeholders rather than developers. In manual validation, someone goes through the solution and verifies that it behaves as expected and that it achieves the necessary business requirements. That person then approves the changes so that the deployment can continue.
+- **User acceptance test**: A user acceptance test (UAT) environment is used for manual validation, usually by business stakeholders rather than developers. In manual validation, someone goes through the solution and verifies that it behaves as expected and that it satisfies the necessary business requirements. That person then approves the changes so that the deployment can continue.
 
 - **Pre-production**: A pre-production environment is often a mirror of the production environment, with the same resource SKUs and configuration. It's used as a final check to verify how the production deployment will behave during and after the change is applied. It can also be used to verify whether to expect any downtime during the production deployment.
 
@@ -46,7 +46,7 @@ Common environments include:
 
 ### Environments in your organization
 
-You might see variations of these environments. Some organizations use only a few environments, and some use many more. The number and type of environments that you use depend on the solution you're deploying, the size of the team that's building the solution, and the importance of the workload.
+There are variations of these environments. Some organizations use only a few environments, and some use many more. The number and type of environments that you use depend on the solution you're deploying, the size of the team that's building the solution, and the importance of the workload.
 
 Sometimes, a single environment takes the role of several of the environments listed earlier. Other times, you might have a complex workflow that deploys to multiple environments, some in parallel and some in sequence. Some organizations even automatically delete or deprovision environments when they're no longer used, and then redeploy them when they're needed in the future.
 
@@ -56,7 +56,7 @@ In your toy company, you decide to start with a basic set of environments for yo
 
 :::image type="content" source="../media/2-environments.png" alt-text="Diagram that shows two environments: test and production." border="false":::
 
-You'll update your workflow to deploy your Bicep code to your test environment and run some basic tests against it. If that effort succeeds, you'll deploy to your production environment.
+You'll update your workflow to deploy your Bicep code to your test environment and run some basic tests against it. If that effort succeeds, you can then deploy to your production environment.
 
 ## Workflow environments
 
@@ -64,15 +64,15 @@ GitHub Actions also has the concept of an environment. You create a GitHub Actio
 
 ### Protection rules
 
-An environment in GitHub Actions can have protection rules configured. Each time the environment is used in a job in your workflow, GitHub Actions will make sure these rules have been met before the job starts running.
+An environment in GitHub Actions can have protection rules configured. Each time the environment is used in a job in your workflow, GitHub Actions will make sure these rules are met before the job starts running.
 
-For example, you can configure manual reviews on your production environment. Before a production deployment starts, the designated reviewer will receive a notification. That person can manually verify that your policies and procedures are met before the deployment begins. For example, the approver might check that everything is working as they expect in the pre-production environment before they approve the deployment.
+For example, you can configure manual reviews on your production environment. Before a production deployment starts, the designated reviewer receives a notification. That person can manually verify that your policies and procedures are met before the deployment begins. For example, the approver might check that everything is working as they expect in the pre-production environment before they approve the deployment.
 
 Additionally, you could run an automated check to confirm the branch that your change is coming from. If the change isn't on your main branch, you can configure GitHub to prevent it from being deployed to your production environment.
 
 ### Secrets
 
-GitHub Actions enables you to store secrets that can only be used with a specific environment. You'll learn more about secret management later in this module.
+GitHub Actions enables you to store secrets that can only be used with a specific environment. You learn more about secret management later in this module.
 
 ### Deployment history
 
@@ -80,7 +80,7 @@ GitHub Actions tracks the history of the deployments to an environment. This his
 
 ### Create environments
 
-You create an environment by using the GitHub web interface.
+You typically create an environment by using the GitHub web interface.
 
 When your workflow refers to an environment that doesn't exist, GitHub Actions automatically creates it for you. This feature can affect the security of your GitHub repository because the new environment won't have any protection rules configured. It's best to create an environment yourself through the GitHub web interface, so that you have full control over its security.
 
@@ -113,6 +113,6 @@ Apply Azure role assignments so that users and workload identities can access on
 
 When your workload identity connects to Azure from your deployment workflow, it uses a _federated credential_ to securely authenticate itself without any secrets or keys. In previous modules in this learning path, your federated credentials granted access to your deployment workflows when they deployed from the _main_ branch of your Git repository.
 
-When you deploy to an environment within your workflow, you need to use a federated credential that's scoped to that environment.
+When you deploy to an environment within your workflow, you need to use a federated credential scoped to that environment.
 
 In this module, your workflow includes several jobs, many of which connect and deploy to Azure. Some of the jobs use environments, and some don't. So, you create two federated credentials for each of your workload identities: one scoped to the environment and one scoped to the _main_ branch.

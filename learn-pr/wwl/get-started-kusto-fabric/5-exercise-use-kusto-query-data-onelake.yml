@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-kusto-fabric.exercise-use-kusto-query-data-onelake
-title: 'Exercise: Explore Synapse Real-Time Analytics in Fabric'
+title: 'Exercise: Explore Real-Time Intelligence in Fabric'
 metadata:
-  title: 'Exercise: Explore Synapse Real-Time Analytics in Fabric'
-  description: "Exercise: Explore Synapse Real-Time Analytics in Fabric"
-  ms.date: 01/09/2024
+  title: 'Exercise: Explore Real-Time Intelligence in Fabric'
+  description: "Exercise: Explore Real-Time Intelligence in Fabric"
+  ms.date: 05/14/2024
   author: wwlpublish
-  ms.author: anrudduc
+  ms.author: jamesh
   ms.topic: unit
   ms.custom:
   - build-2023

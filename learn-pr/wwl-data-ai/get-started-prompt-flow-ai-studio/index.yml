@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.get-started-prompt-flow-ai-studio
 metadata:
-  title: Get started with prompt flow in Azure AI Studio (preview)
-  description: Get started with prompt flow to develop language model apps in the Azure AI Studio (preview).
+  title: Get started with prompt flow in Azure AI Studio
+  description: Get started with prompt flow to develop language model apps in the Azure AI Studio.
   ms.date: 01/25/2024
   author: madiepev
   ms.author: madiepev
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: azure-ai-services
-title: Get started with prompt flow to develop language model apps in the Azure AI Studio (preview)
-summary: Learn about how to use prompt flow to develop applications that leverage language models in the Azure AI Studio (preview).
+title: Get started with prompt flow to develop language model apps in the Azure AI Studio
+summary: Learn about how to use prompt flow to develop applications that leverage language models in the Azure AI Studio.
 abstract: |
   By the end of this module, you'll be able to:
     - Understand the development lifecycle when creating language model applications.

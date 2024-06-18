@@ -2,11 +2,11 @@ In this exercise, you add a Razor component to your application's home page.
 
 ## Add the Counter component to the Home page
 
-1. Expand the folders in the Visual Studio Solution Explorer. If you don't have the Solution Explorer displayed, select **File** > **Solution Explorer**.
+1. Expand the folders in the Visual Studio Solution Explorer. If you don't have the Solution Explorer displayed, select **View** > **Solution Explorer**.
 
 1. Select **Pages** to view the existing Razor pages.
 
-1. Select the **Index.razor** file to open it.
+1. Select the **Home.razor** file to open it.
 
 1. Add a `Counter` component to the page by adding a `<Counter />` element at the end of the _Index.razor_ file.
 

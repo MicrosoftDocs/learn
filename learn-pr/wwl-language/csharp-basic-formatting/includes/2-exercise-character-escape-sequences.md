@@ -85,7 +85,7 @@ c:\source\repos
 1. To create the mockup of the command line tool, enter the following code in the editor:
 
     ```csharp
-    Console.WriteLine("Generating invoices for customer \"Contoso Corp\" ...\n");
+    Console.WriteLine("Generating invoices for customer \"Contoso Corp\" ... \n");
     Console.WriteLine("Invoice: 1021\t\tComplete!");
     Console.WriteLine("Invoice: 1022\t\tComplete!");
     Console.WriteLine("\nOutput Directory:\t");

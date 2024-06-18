@@ -78,7 +78,7 @@ Now, let's create a user account.
 1. Enter the following values for each setting.
 
     **Identity**
-    - **User name**: chris@contosomarketingXXXXXX.onmicrosoft.com. The domain name should match the primary domain you copied in the previous section.
+    - **User name**: `chris@contosomarketingXXXXXX.onmicrosoft.com`. The domain name should match the primary domain you copied in the previous section.
     - **Name**: *Chris Green*
 
     **Password**

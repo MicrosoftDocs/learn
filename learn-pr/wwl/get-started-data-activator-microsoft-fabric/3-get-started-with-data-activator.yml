@@ -4,10 +4,12 @@ title: Get started with Data Activator
 metadata:
   title: Get started with Data Activator
   description: "Get started with Data Activator"
-  ms.date: 03/18/2024
+  ms.date: 06/14/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/3-get-started-with-data-activator.md)]

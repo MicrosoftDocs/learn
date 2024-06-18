@@ -1,4 +1,3 @@
-
 Azure DevOps Projects includes an option to create a project wiki.
 
 :::image type="content" source="../media/project-wiki-2fd9a459.png" alt-text="Screenshot of Azure DevOps wiki with title and description example.":::

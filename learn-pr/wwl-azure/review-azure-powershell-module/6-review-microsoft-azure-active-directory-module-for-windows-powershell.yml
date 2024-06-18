@@ -8,8 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.custom: N/A, devx-track-azurepowershell
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

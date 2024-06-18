@@ -4,10 +4,12 @@ title: Automatically invoke functions
 metadata:
   title: Automatically invoke functions
   description: "Automatically invoke functions"
-  ms.date: 02/27/2024
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/7-automatically-invoke-functions.md)]

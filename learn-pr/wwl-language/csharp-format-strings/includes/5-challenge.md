@@ -1,4 +1,4 @@
-To the sales and marketing company's newest investment products, you send thousands of personalized letters to the company's existing clients. Your job is to write C# code to merge personalized information about the customer. The letter contains information like their existing portfolio and compares their current returns to projected returns if they were to invest in using the new products.
+For the sales and marketing company's newest investment products, you send thousands of personalized letters to the company's existing clients. Your job is to write C# code to merge personalized information about the customer. The letter contains information like their existing portfolio and compares their current returns to projected returns if they were to invest in using the new products.
 
 The writers have decided on the following example marketing message. Here's the desired output (using fictitious customer account data).
 
@@ -57,7 +57,7 @@ Use your new found knowledge of string formatting to build an application that c
     
     Currently, you own 2,975,000.00 shares at a return of 12.75%.
     
-    Our new product, Glorious Future offers a return of 13.13%.  Given your current volume, your potential profit would be ¤63,000,000.00.
+    Our new product, Glorious Future offers a return of 13.13%.  Given your current volume, your potential profit would be $63,000,000.00.
     
     Here's a quick comparison:
     

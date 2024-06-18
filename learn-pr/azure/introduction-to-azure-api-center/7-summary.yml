@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-api-center.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Resource cleanup and a summary of the key takeaways from the Introduction to Azure API Center module."
+  ms.date: 5/3/2024
+  author: juliamuiruri4
+  ms.author: juliamuiruri
+  ms.topic: unit
+  zone_pivot_groups: azure-resource-interaction
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-summary.md)]

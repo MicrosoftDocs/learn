@@ -1,4 +1,5 @@
 
+
 Now it's your turn to use Data Activator in Fabric and monitor your data.
 
 > [!NOTE]

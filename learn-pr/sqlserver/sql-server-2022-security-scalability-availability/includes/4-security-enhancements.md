@@ -2,9 +2,9 @@
 ms.custom:
   - build-2023
 ---
-In this unit, we'll explore some of the security enhancements to SQL Server 2022 that helps protect and manage your data.
+In this unit, we explore some of the security enhancements to SQL Server 2022 that helps protect and manage your data.
 
-- Always Encrypted enhancements
+- Enhancements to Always Encrypted
 - New granular fixed server roles
 - Strict connected encryption (TDS 8.0 and TLS 1.3)
 - Granular UNMASK permissions for dynamic data masking
@@ -15,9 +15,9 @@ Always Encrypted with secure enclaves allows some computations on plaintext data
 
 :::image type="content" source="../media/always-encrypted-data-flow.png" alt-text="Diagram for the flow of Always Encrypted in Azure SQL Database or SQL Server.":::
 
-SQL Server 2022 adds additional support for confidential queries with JOIN, GROUP BY and ORDER BY operations on encrypted columns.
+SQL Server 2022 adds more support for confidential queries with JOIN, GROUP BY and ORDER BY operations on encrypted columns.
 
-Confidential queries are [DML queries](/sql/t-sql/queries/queries) that involve operations on enclave-enabled columns performed inside the secure enclave.
+Confidential queries are [Data Manipulation Language (DML) queries](/sql/t-sql/queries/queries) that involve operations on enclave-enabled columns performed inside the secure enclave.
 
 The operations supported inside the secure enclaves are:
 
@@ -36,7 +36,7 @@ The operations supported inside the secure enclaves are:
 
 SQL Server provides fixed server roles to ease the burden of providing permissions for certain server based activities. For example, a SQL principal can be assigned to the **sysadmin** fixed server role, which gives the principal the broadest set of permissions possible across the SQL Server instance.
 
-In SQL Server 2022, new fixed server roles have been added that provide more granular permissions for specific tasks. For example, the new fixed server role **##MS_ServerPerformanceStateReader##** allows any member to view key performance metrics through Dynamic Management Views (DMV), but not the same full rights as members of the **sysadmin** role. New fixed server roles provide the concept of principle of least privilege.
+In SQL Server 2022, new fixed server roles are added that provide more granular permissions for specific tasks. For example, the new fixed server role **##MS_ServerPerformanceStateReader##** allows any member to view key performance metrics through Dynamic Management Views (DMV), but not the same full rights as members of the **sysadmin** role. New fixed server roles provide the concept of principle of least privilege.
 
 For more information and all the server roles introduced in SQL Server 2022, see [Fixed server-level roles introduced in SQL Server 2022](/sql/relational-databases/security/authentication-access/server-level-roles#fixed-server-level-roles-introduced-in-sql-server-2022).
 

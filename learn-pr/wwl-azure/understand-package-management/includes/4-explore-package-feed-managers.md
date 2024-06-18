@@ -1,4 +1,3 @@
-
 Each of the package types has a corresponding manager that takes care of one or more of the following aspects of package management:
 
  -  Installation and removal of local packages

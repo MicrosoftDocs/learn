@@ -3,8 +3,8 @@ uid: learn.python-advanced-pytest.exercise
 title: Exercise
 metadata:
   title: Exercise - write a custom fixture and use _parametrize_
-  description: Practice creating a custom fixture and using _parametrize_ in test functions
-  ms.date: 1/31/2022
+  description: Practice creating a custom fixture and use _parametrize_ in test functions.
+  ms.date: 4/12/2024
   author: alfredodeza
   ms.author: alfredodeza
   ms.custom:

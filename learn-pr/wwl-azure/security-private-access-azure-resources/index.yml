@@ -3,10 +3,12 @@ uid: learn.wwl.security-private-access-azure-resources
 metadata:
   title: Plan and implement security for private access to Azure resources
   description: "This module focuses on equipping administrators with the knowledge and skills required to plan and implement robust security measures for private access to Azure resources, safeguarding sensitive data and enhancing network integrity."
-  ms.date: 04/24/2024
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
+  ms.custom:
+  - N/A
   ms.service: azure
   ai-usage: human-only
 title: Plan and implement security for private access to Azure resources

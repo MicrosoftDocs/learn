@@ -2,9 +2,9 @@
 ms.custom:
   - build-2023
 ---
-Imagine that you're an auditor for the Contoso company. The HR department of Contoso is using a simple web application to manage employees salaries. You were asked to audit the data in the database to make sure the data is correct and no one has tampered with it.
+Imagine that you're an auditor for the Contoso company. The HR department of Contoso is using a simple web application to manage employees salaries. You're asked to audit the data in the database to make sure the data is correct and that no one tampered with it.
 
-In this exercise, we see how you can use ledger in a real world scenario of auditing data using ledger tables. We'll perform the following tasks:
+In this exercise, we see how you can use ledger in a real world scenario of auditing data using ledger tables. We perform the following tasks:
 
 - Create a database called `ContosoHR`.
 - create an updatable ledger table called `Employees`.
@@ -56,7 +56,7 @@ In this exercise, we see how you can use ledger in a real world scenario of audi
     GO
     ```
 
-    If you inspect the newly created table in SSMS **Object Explorer**, you'll notice the table has a new icon with a checkmark that indicates it's a ledger table.
+    If you inspect the newly created table in SSMS **Object Explorer**, you notice the table has a new icon with a checkmark that indicates it's a ledger table.
 
     :::image type="content" source="../media/ssms-object-explorer.png" alt-text="Screenshot of the newly created ledger table in SSMS Object Explorer.":::
 
@@ -100,7 +100,7 @@ In this exercise, we see how you can use ledger in a real world scenario of audi
     GO
     ```
 
-1. Look at the `Employees_Ledger` view by executing the following `SELECT` query. This is a view from the `Employees` table and a ledger history table. The ledger has the transaction information from hidden columns in the table, plus an indication of what type of operation was performed on the ledger for a specific row.
+1. Look at the `Employees_Ledger` view by executing the following `SELECT` query. This view is from the `Employees` table and a ledger history table. The ledger has the transaction information from hidden columns in the table, plus an indication of what type of operation was performed on the ledger for a specific row.
 
     ```sql
     USE ContosoHR;
@@ -126,7 +126,7 @@ In this exercise, we see how you can use ledger in a real world scenario of audi
 
    You can see that the view is a union of the original table (for new inserts), and updates from the history table (for inserts and deletes).
 
-1. You can combine the ledger view with a system table to get more auditing information, such as who performed the transaction on the database, and at what date and time. Execute the following query to see an example.
+1. You can combine the ledger view with a system table to get more auditing information, such as who performed the transaction on the database, and at what date and time. To see an example, execute the following query.
 
     ```sql
     USE ContosoHR;
@@ -160,16 +160,16 @@ In this exercise, we see how you can use ledger in a real world scenario of audi
 
 ## Make changes to the data
 
-Now that we've looked at some of the functionality of ledger in SQL Server 2022, let's make some changes to the data and see how the ledger tracks the changes. This helps you in your task of auditing the data in the `ContosoHR` database, and specifically, the `Employees` table.
+After looking at some of the functionality of ledger in SQL Server 2022, let's make some changes to the data and see how the ledger tracks the changes. This exercise helps you in your task of auditing the data in the `ContosoHR` database, and specifically, the `Employees` table.
 
-1. Pretend that Jay, an employee at the company has logged into the database, and executes the following query to add 50,000 to their salary. Unfortunately for Jay, the `Employees` table is an updatable ledger table. That means their change, along with their identity and the timestamp have been persisted in a tamper-evident ledger data structure.
+1. Pretend that Jay, an employee at the company, logged into the database, and executed the following query to add 50,000 to their salary. Unfortunately for Jay, the `Employees` table is an updatable ledger table. That means their change, along with their identity and the timestamp, is persisted in a tamper-evident ledger data structure.
 
     ```sql
     UPDATE [dbo].[Employees] SET [Salary] = [Salary] + 50000
     WHERE [FirstName] = N'Jay' AND [LastName] = N'Adams'
     ```
 
-1. If you use a `SELECT` query on the `Employees` table, you can see that Jay's salary has been updated from earlier.
+1. If you use a `SELECT` query on the `Employees` table, you can see that Jay's salary was updated from earlier.
 
     ```sql
     SELECT * FROM [dbo].[Employees]
@@ -181,7 +181,7 @@ Now that we've looked at some of the functionality of ledger in SQL Server 2022,
 
 Let's assume that a few weeks later, you're doing a routine audit of changes in the `ContosoHR` database. As a first step, you run the ledger verification to make sure that you can trust the data that you're going to examine.
 
-1. Execute the query below to run the ledger verification. The results contain the latest database digest and represent the hash of the database at the current point in time. Copy the contents of the results to be used in the next step.
+1. Execute the following query to run the ledger verification. The results contain the latest database digest and represent the hash of the database at the current point in time. Copy the contents of the results to be used in the next step.
 
     ```sql
     USE ContosoHR;
@@ -200,33 +200,33 @@ Let's assume that a few weeks later, you're doing a routine audit of changes in 
     ';
     ```
 
-   If the verification is successful and your data hasn't been tampered with, you'll see the following **Message**:
+   If the verification is successful and your data wasn't tampered with, you see the following **Message**:
 
    :::image type="content" source="../media/ssms-ledger-verification-success.png" alt-text="Screenshot of the results of the ledger verification in SSMS.":::
 
    By using this digest, we know that:
 
-   - The data is valid based on the time the digest was captured.
-   - The internal blocks match the current data changes for the update to Jay's salary. If someone had to fake the data for the `Employees` table without doing a T-SQL `UPDATE` command to make the system *think* Jay's current salary was 50,000 more than it really is, the system would have raised an error that hashes of the changes don't match the current data. You would see a `Ledger verification failed` message.
+   - The data is valid, based on the time the digest was captured.
+   - The internal blocks match the current data changes for the update to Jay's salary. If someone had to fake the data for the `Employees` table without doing a T-SQL `UPDATE` command to make the system *think* Jay's current salary was 50,000 more than it really is, the system raises an error that hashes of the changes don't match the current data. You would see a `Ledger verification failed` message.
 
-1. Now that you've verified the data hasn't been tampered with, you browse the content of the ledger view for the `Employees` table. You notice a suspicious update operation performed by Jay, who won't be able to effectively deny they have updated their salary. The data in the ledger table has been cryptographically verified as genuine and it clearly shows Jay's **UserName** as the account who updated the salary. To verify this, run the following query.
+1. Now that you verified that the data wasn't tampered with, you browse the content of the ledger view for the `Employees` table. You notice a suspicious update operation performed by Jay, who can't effectively deny updating the salary. The data in the ledger table is cryptographically verified as genuine and it clearly shows Jay's **UserName** as the account who updated the salary. To make this verification, run the following query.
 
     ```sql
-        SET NOCOUNT ON
-    	SELECT
-    	t.[commit_time] AS [CommitTime]
-    	, t.[principal_name] AS [UserName]
-    	, l.EmployeeId
-    	, l.[SSN]
-    	, l.[FirstName]
-    	, l.[LastName]
-    	, l.[Salary]
-    	, l.[ledger_operation_type_desc] AS Operation
-    	FROM [dbo].[Employees_Ledger] l
-    	JOIN sys.database_ledger_transactions t
-    	ON t.transaction_id = l.ledger_transaction_id
-    	WHERE t.[commit_time] > DATEADD(MONTH, -1, SYSDATETIMEOFFSET())
-    	ORDER BY t.commit_time DESC;
+    SET NOCOUNT ON
+    SELECT
+    t.[commit_time] AS [CommitTime]
+    , t.[principal_name] AS [UserName]
+    , l.EmployeeId
+    , l.[SSN]
+    , l.[FirstName]
+    , l.[LastName]
+    , l.[Salary]
+    , l.[ledger_operation_type_desc] AS Operation
+    FROM [dbo].[Employees_Ledger] l
+    JOIN sys.database_ledger_transactions t
+    ON t.transaction_id = l.ledger_transaction_id
+    WHERE t.[commit_time] > DATEADD(MONTH, -1, SYSDATETIMEOFFSET())
+    ORDER BY t.commit_time DESC;
     ```
 
    ![Screenshot of the results of the ledger view for the Employees table in SSMS showing who made the changes.](../media/ssms-changed-ledger-view.png)

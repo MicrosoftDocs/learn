@@ -19,7 +19,7 @@ Using a tool like Packer can help you simplify and automate the build process. T
 
 As you prepare your image for Azure Marketplace, you need to install the most current updates to the OS and all installed services. You also need to make sure that you perform other required security checks. For more information, check out our [documentation on security recommendations for Azure Marketplace images](/azure/security/fundamentals/azure-marketplace-images).
 
-Once you install your software and configured the image, you need to generalize the image. Generalizing the image removes all instance-specific identifiers and software drivers, making it possible for customers to use various Azure VM types and sizes to deploy your software. You can use a tool called Sysprep to generalize Windows VMs and the Microsoft Azure Linux Agent (waagent) to generalize Linux VMs. For more detail on generalization, reference our [documentation on generalizing VM images](/partner-center/marketplace/azure-vm-create-using-approved-base#generalize-the-image).
+Once you install your software and configured the image, you need to generalize the image. Generalizing the image removes all instance-specific identifiers and software drivers, making it possible for customers to use various Azure VM types and sizes to deploy your software. You can use a tool called Sysprep to generalize Windows VMs and the Microsoft Azure Linux Agent (waagent) to generalize Linux VMs. For more detail on generalization, reference our [documentation on generalizing VM images](/partner-center/marketplace/azure-vm-use-approved-base#generalize-the-image).
 
 ## Testing your VM image
 
@@ -30,7 +30,7 @@ You should test your generalized image by deploying it on an Azure VM. To do so,
  The [commercial marketplace certification policies](/legal/marketplace/certification-policies?context=/partner-center/marketplace/context/context) dictate that your offer should maintain a high level of security. To ensure your VM offer is compliant, you should periodically update your image's OS and all installed services with the latest security and maintenance patches. Microsoft periodically scans VM images for any significant Common Vulnerabilities and Exposures (CVE). Images that fail these assessments can be removed from Azure Marketplace until the CVE is patched.
 
 >[!TIP]
->As we mentioned at the beginning of this unit, there are a variety of ways to create your offer's base VM images. Be sure to reference our documentation on [creating a VM from an approved base](/partner-center/marketplace/azure-vm-create-using-approved-base) and [creating a VM using your own image](/partner-center/marketplace/azure-vm-create-using-own-image) for more details on the process.
+>As we mentioned at the beginning of this unit, there are a variety of ways to create your offer's base VM images. Be sure to reference our documentation on [creating a VM from an approved base](/partner-center/marketplace/azure-vm-use-approved-base) and [creating a VM using your own image](/partner-center/marketplace/azure-vm-use-own-image) for more details on the process.
 
 ## Other resources to help you get started
 

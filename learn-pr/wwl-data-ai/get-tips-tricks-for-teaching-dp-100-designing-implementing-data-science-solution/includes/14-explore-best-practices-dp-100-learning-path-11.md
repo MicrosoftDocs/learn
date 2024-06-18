@@ -1,31 +1,33 @@
 
 
-DP-100: Learning path 11 Deploy and consume models with Azure Machine Learning
 
-Learning path 11 overview
+DP-100: Learning Path 11 Design an MLOps solution
 
-As you begin to teach this learning path, get familiar with what the students learn during the learning path. In this learning path, students build on their learning about how models are designed to help decision-making through predictions and learn how to deploy the models both in real time inferencing and batch inferencing.
+Learning Path 11 Overview
 
-This learning path consists of two modules:
+As you begin to teach this learning path, get familiar with what the students will learn during the learning path. In this learning path students will learn about designing a machine learning operations solution.
 
-- Module 1 – Deploy a model to a managed online endpoint
-- Module 2 – Deploy a model to a batch endpoint
- 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14Qx2]
+This learning path consists of five focus areas:
 
-Learning path 11 tips and tricks
+- Design a machine learning operations (MLOps) solution
+- ML Ops overview 
+- Stages of the development and separate environments
+- Architecture overview
+- Monitoring
 
-- Highlight examples for each scenario
-- Describe the pros and cons for each approach
-- Explain how the representational state transfer (REST) API works and where students might have seen it previously
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a19a533a-2b8a-4248-ab54-cab1e7f220ae]
 
-Learning path 11 demos (optional)
+Learning Path 11 Tips and Tricks
 
-- Inference pipeline
-- Iterative process structure
-- Endpoint Health status
+- Explain both DevOps and CI/CD concepts
+- Illustrate different monitoring solutions
 
-Learning path 11 labs
+Learning Path 11 Demos (optional)
 
-- [Lab 11.1: Log and register models with MLflow](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/10-Log-mlflow-models.html)
-- [Lab 11.2: Deploy a model to a batch endpoint](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/11-Deploy-batch-endpoint.html)
+- Show different linked resources on Azure portal for monitoring
+- Show code output for jobs status
+
+Learning Path 11 Lab
+
+- Lab 11.1: [Deploy a model to a managed online endpoint](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/11-Deploy-online-endpoint.html)
+- Lab 11.2: Case study: design an MLOps solution (optional)

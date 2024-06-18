@@ -3,11 +3,11 @@ uid: learn.wwl.apply-manage-sensitivity-labels
 metadata:
   title: Apply sensitivity labels for data protection
   description: "Apply sensitivity labels for data protection."
-  ms.date: 04/09/2024
+  ms.date: 06/03/2024
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
-  ms.service: purview
+  ms.service: purview-information-protection
   ai-usage: ai-assisted
 title: Apply sensitivity labels for data protection
 summary: Learn about how sensitivity labels are used to classify and protect business data while making sure that user productivity and their ability to collaborate aren't hindered.
@@ -23,7 +23,6 @@ iconUrl: /training/achievements/implement-and-manage-sensitivity-labels.svg
 levels:
 - intermediate
 roles:
-- auditor
 - ip-admin
 - risk-practitioner
 products:
@@ -35,6 +34,7 @@ units:
 - learn.wwl.apply-manage-sensitivity-labels.introduction
 - learn.wwl.apply-manage-sensitivity-labels.sensitivity-label-foundations
 - learn.wwl.apply-manage-sensitivity-labels.manage-sensitivity-labels-office
+- learn.wwl.apply-manage-sensitivity-labels.apply-sensitivity-labels-with-copilot
 - learn.wwl.apply-manage-sensitivity-labels.protect-meetings-with-sensitivity-labels
 - learn.wwl.apply-manage-sensitivity-labels.apply-sensitivity-labels-to-microsoft-365-services
 - learn.wwl.apply-manage-sensitivity-labels.knowledge-check

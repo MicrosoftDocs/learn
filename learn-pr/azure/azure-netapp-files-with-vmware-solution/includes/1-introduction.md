@@ -1,13 +1,16 @@
-Imagine your business is currently using Azure VMware Solution with standard Azure storage but you want to extend your workload to take advantage of Azure offerings. Scaling complicated workloads to the cloud can be difficult, and with Azure VMware Solution, scaling can require scaling storage while adding unnecessary compute.
+Azure VMware Solution (AVS) is a great way to extend or move VMware workloads to Azure without refactoring or re-architecting. Though AVS includes vSAN datastores to store your virtual machines (VMs), there are several scenarios where it might make sense to extend the storage footprint of your AVS cluster(s) without adding AVS hosts. Storage solutions such as Azure NetApp Files allow you to provision performant and highly available storage directly to AVS hosts to increase datastore capacity or connect directly to AVS guest VMs to provide shared file systems to various workloads.
 
-Azure NetApp Files is now available with Azure VMware Solution to help you scale your workloads to the cloud. Azure NetApp Files exists to help migrate some of the most complicated, data-intensive workloads to the cloud with minimal risk and without the need to rearchitect data. Leveraging NetApp technology, Azure NetApp Files offers significant data protection and disaster recovery for your mission-critical work in an Azure consistent storage system that could also reduce your reliance on DR data centers. Using Azure VMware Solution with Azure NetApp Files creates an opportunity to significantly scale your on-premises operation to the cloud with an easy-to-use interface and a lower TCO. 
+Azure NetApp Files leverages NetApp technology to provide significant data protection and disaster recovery features for your mission-critical workloads in an Azure native storage service. Using Azure VMware Solution with Azure NetApp Files can also scale your on-premises operation to the cloud with an easy-to-use interface and a lower total cost of ownership.
 
-This guide introduces what Azure NetApp Files is and how you can prepare to connect Azure NetApp Files to your Azure VMware Solution setup to optimize your experience.
+This learning module helps you understand when and how to configure Azure NetApp Files with Azure VMware Solution to optimize scale and performance.
 
 ## What will we be doing? 
 
 In this guide, we explore:
 
-- What Azure NetApp Files is
-- How to configure your Azure NetApp Files to work with Azure VMware Solution
-- How to prepare Azure VMware to work with Azure NetApp Files
+- Why Azure NetApp Files for Azure VMware Solution?
+- Prerequisites, best practices, and performance sizing
+- How to attach Azure NetApp Files volumes as datastores to Azure VMware Solution
+- How to protect VMs using Cloud Backup for Virtual Machines
+- How to attach Azure NetApp Files volumes to VMs as guest-mounted file systems
+

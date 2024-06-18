@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-deployment-stacks.what-deployment-stacks
+title: What are deployment stacks?
+metadata:
+  title: What are deployment stacks?
+  description: Learn about how deployment stacks help manage your Azure resource deployments.
+  ms.date: 08/01/2023
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: unit
+durationInMinutes: 7
+content: | 
+  [!include[](includes/2-what-deployment-stacks.md)]

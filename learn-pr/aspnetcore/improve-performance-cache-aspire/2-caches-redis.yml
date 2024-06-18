@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-performance-cache-aspire.caches-redis
+title: Caches and Redis
+metadata:
+  title: Caches and Redis
+  description: In this unit, you'll learn about the different types of caching you can implement with Redis and also how to use the .NET Aspire Redis components.
+  ms.date: 03/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-caches-redis.md)]

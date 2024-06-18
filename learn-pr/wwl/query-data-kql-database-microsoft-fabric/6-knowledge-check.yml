@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/24/2024
+  ms.date: 05/14/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
@@ -14,7 +14,7 @@ durationInMinutes: 6
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the purpose of using the `project` operator in KQL queries?"
+  - content: "What is the purpose of using the `project` operator in KQL (Kusto Query Language) queries?"
     choices:
     - content: "To perform aggregations such as `count`, `sum`, and `avg`."
       isCorrect: false
@@ -32,18 +32,18 @@ quiz:
       explanation: "Incorrect. This ability is a feature of KQL, but not related to ingesting data from various sources."
     - content: "KQL allows you to ingest data from various sources such as Azure Event Hubs, Azure IoT Hub, and Azure Storage."
       isCorrect: true
-      explanation: "Correct. KQL allows you to ingest data from a variety of sources such as Azure Event Hubs, Azure IoT Hub, and Azure Storage."
+      explanation: "Correct. KQL allows you to ingest data from various sources such as Azure Event Hubs, Azure IoT Hub, and Azure Storage."
     - content: "KQL allows you to export query results to various destinations such as Azure Blob Storage, Azure Data Lake Storage, and Azure Event Hubs."
       isCorrect: false
       explanation: "Incorrect. This ability is a feature of KQL, but not related to ingesting data from various sources."
   - content: "What does the Fabric Main Editor enable a data consumer to do?"
     choices:
-    - content: "Create and link object to read and write objects to a lakehouse"
+    - content: "Create and link object to read and write objects to a lakehouse."
       isCorrect: true
       explanation: "Correct. The Fabric Main Editor enables you to create and link object to read and write objects to a lakehouse."
     - content: "Query a KQL database"
       isCorrect: false
       explanation: "Incorrect. The Fabric Main Editor does not query a KQL database."
-    - content: "Create a Microsoft Fabric Eventstream"
+    - content: "Create a Microsoft Fabric event stream"
       isCorrect: false
-      explanation: "Incorrect. The Fabric Main Editor does not create the Microsoft Fabric Eventstream."
+      explanation: "Incorrect. The Fabric Main Editor does not create the Microsoft Fabric event stream."
