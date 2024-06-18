@@ -1,4 +1,4 @@
-### YamlMime:ModuleUnit
+ac### YamlMime:ModuleUnit
 uid: learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.knowledge-check
 title: Knowledge check
 metadata:
@@ -16,16 +16,16 @@ quiz:
     choices:
     - content: "Copilot can generate and edit volunteer recruitment materials."
       isCorrect: true
-      explanation: "Correct. Copilot aids in volunteer management by offering the ability to generate and edit materials such as job descriptions, flyers, and social media posts. It does not provide legal advice, manage finances, or set up events, as these tasks are outside its capabilities."
+      explanation: "Correct. Copilot aids in volunteer management with the ability to generate and edit materials such as job descriptions, flyers, and social media posts. It does not provide legal advice, manage finances, or set up events, as these tasks are outside its capabilities."
     - content: "Copilot can provide legal advice for volunteer management."
       isCorrect: false
-      explanation: "Inorrect. Copilot aids in volunteer management by offering the ability to generate and edit materials such as job descriptions, flyers, and social media posts. It does not provide legal advice, manage finances, or set up events, as these tasks are outside its capabilities."
+      explanation: "Inorrect. This is outside Copilot's capabilities."
     - content: "Copilot can manage the nonprofit's finances."
       isCorrect: false
-      explanation: "Inorrect. Copilot aids in volunteer management by offering the ability to generate and edit materials such as job descriptions, flyers, and social media posts. It does not provide legal advice, manage finances, or set up events, as these tasks are outside its capabilities."
+      explanation: "Inorrect. This is outside Copilot's capabilities."
     - content: "Copilot can physically set up volunteer events."
       isCorrect: false
-      explanation: "Inorrect. Copilot aids in volunteer management by offering the ability to generate and edit materials such as job descriptions, flyers, and social media posts. It does not provide legal advice, manage finances, or set up events, as these tasks are outside its capabilities."
+      explanation: "Inorrect. This is outside Copilot's capabilities."
   - content: "Which of the following tasks is Copilot NOT designed to assist with volunteer training?"
     choices:
     - content: "Creating volunteer training manuals and videos."
@@ -39,7 +39,7 @@ quiz:
       explanation: "Inorrect. Copilot can assist with this. "
     - content: "Conducting in-person volunteer training sessions."
       isCorrect: true
-      explanation: "Correct. While Copilot can help create training materials and quizzes, it cannot conduct in-person training sessions, which require human interaction and real-time communication."
+      explanation: "Correct. While Copilot can help create training materials and quizzes, it cannot conduct in-person training sessions which require human interaction and real-time communication."
   - content: "What is an essential aspect of volunteer retention that Copilot can assist with?"
     choices:
     - content: "Copilot can ensure long-term commitment from volunteers."
