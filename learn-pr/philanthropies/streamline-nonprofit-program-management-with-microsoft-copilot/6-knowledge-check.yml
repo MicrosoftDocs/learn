@@ -17,17 +17,17 @@ quiz:
     choices:
     - content: "Copilot can generate ideas and templates for program planning."
       isCorrect: true
-      explanation: "Correct. Copilot aids in program planning by offering ideas based on the program's theme, sector, and audience, and by creating templates such as logic models and theory of change. It does not provide legal advice, manage finances, or recruit volunteers, as these tasks are outside its capabilities."
+      explanation: "Correct. Copilot aids in program planning by offering ideas based on the program's theme, sector, and audience. It can then use these ideas while creating templates such as logic models and theory of change. It doesn't provide legal advice, manage finances, or recruit volunteers, as these tasks are outside its capabilities."
     - content: "Copilot can provide legal advice for program planning. "
       isCorrect: false
-      explanation: "Incorrect. Copilot does not provide legal advice, manage finances, or recruit volunteers, as these tasks are outside its capabilities."
+      explanation: "Incorrect. Copilot doesn't provide legal advice, manage finances, or recruit volunteers, as these tasks are outside its capabilities."
     - content: "Copilot can manage the nonprofit's finances. "
       isCorrect: false
-      explanation: "Incorrect. Copilot does not provide legal advice, manage finances, or recruit volunteers, as these tasks are outside its capabilities."
+      explanation: "Incorrect. Copilot doesn't provide legal advice, manage finances, or recruit volunteers, as these tasks are outside its capabilities."
     - content: "Copilot can recruit volunteers for program activities."
       isCorrect: false
-      explanation: "Incorrect. Copilot does not provide legal advice, manage finances, or recruit volunteers, as these tasks are outside its capabilities."
-  - content: "Which of the following is NOT a task that Copilot can help with in program planning?"
+      explanation: "Incorrect. Copilot doesn't provide legal advice, manage finances, or recruit volunteers, as these tasks are outside its capabilities."
+  - content: "Which is NOT a task that Copilot can help with in program planning?"
     choices:
     - content: "Generating ideas for your program's goal, objectives, activities, and outputs."
       isCorrect: false
@@ -40,7 +40,7 @@ quiz:
       explanation: "Incorrect. Copilot can help with providing feedback for your program plan."
     - content: "Implementing and executing your program plan, and ensuring its quality, timeliness, and coordination."
       isCorrect: true
-      explanation: "Correct. Copilot can help with generating ideas, creating templates, and providing feedback for your program plan, but it cannot implement and execute your program plan, which is a human responsibility that requires leadership, communication, and problem-solving skills."
+      explanation: "Correct. Copilot can help with generating ideas, creating templates, and providing feedback for your program plan, but it can't implement and execute your program plan, which is a human responsibility that requires leadership, communication, and problem-solving skills."
   - content: "What is an essential aspect of program scheduling that Copilot can assist with?"
     choices:
     - content: "Copilot can ensure the program's quality, timeliness, and coordination."
@@ -48,7 +48,7 @@ quiz:
       explanation: "Incorrect. These are human functions and beyond Copilot’s capabilities."
     - content: "Copilot can generate and assign tasks based on program activities."
       isCorrect: true
-      explanation: "Correct. Copilot is an AI companion and cannot ensure quality, timeliness, and coordination, provide funding, or perform physical activities. These are human functions and beyond Copilot’s capabilities."
+      explanation: "Correct. Copilot is an AI companion and can't ensure quality, timeliness, and coordination, provide funding, or perform physical activities. These are human functions and beyond Copilot’s capabilities."
     - content: "Copilot can provide funding for program activities."
       isCorrect: false
       explanation: "Incorrect. These are human functions and beyond Copilot’s capabilities. "
