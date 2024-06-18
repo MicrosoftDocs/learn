@@ -46,19 +46,6 @@ To create the KDS root key, run the following command from the Active Directory 
 
 ```powershell
 Add-KdsRootKey –EffectiveImmediately
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```
 
 You create group managed service accounts by using `New-ADServiceAccount` Windows PowerShell cmdlet with the `–PrinicipalsAllowedToRetrieveManagedPassword` parameter.
@@ -67,19 +54,6 @@ For example:
 
 ```powershell
 New-ADServiceAccount -Name LondonSQLFarm -PrincipalsAllowedToRetrieveManagedPassword SEA-SQL1, SEA-SQL2, SEA-SQL3
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```
 
 ## What are group objects?
