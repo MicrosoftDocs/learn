@@ -5,11 +5,11 @@ metadata:
   unitType: exercise
   title: Exercise - Create an Azure Cache for Redis instance
   description: In this exercise, you’ll create a new Azure Cache for Redis account to use in subsequent tasks.
-  ms.date: 02/11/2022
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 05/11/2023
+  author: flang-msft
+  ms.author: franlanglois
+  manager: mcleans
+  ms.topic: unit
 azureSandbox: true
 durationInMinutes: 10
 content: |

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.migrate-sql-workloads-azure-managed-instances.use-link-feature
+title: Migrate using Managed Instance link
+metadata:
+  title: Migrate using Managed Instance link
+  description: "Learn how to use Managed Instance link to migrate"
+  ms.date: 05/26/2021
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-use-link-feature.md)]

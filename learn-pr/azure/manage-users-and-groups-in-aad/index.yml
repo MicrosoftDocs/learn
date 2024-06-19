@@ -1,30 +1,29 @@
 ### YamlMime:Module
 uid: learn.azure-security.manage-users-and-groups-in-aad
 metadata:
-  title: Manage users and groups in Azure Active Directory
-  description: Manage users and groups in Azure Active Directory
-  ms.date: 03/21/2023
+  title: Manage users and groups in Microsoft Entra ID
+  description: Manage users and groups in Microsoft Entra ID
+  ms.date: 11/08/2023
   author: shlipsey3
   ms.author: sarahlipsey
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.manager: amycollanino
   ms.service: active-directory
   ms.subservice: fundamentals
 
-title: Manage users and groups in Azure Active Directory
-summary: Manage users and groups in Azure Active Directory
+title: Manage users and groups in Microsoft Entra ID
+summary: In this module, you'll learn to manage users and groups in Microsoft Entra ID.
 abstract: | 
   In this module, you will:
-  - Learn the difference between Azure AD and Windows Server Active Directory
-  - Understand tenants, subscriptions, and users
-  - Create a new Azure Active Directory
-  - Add users and groups to an Azure AD
-  - Manage roles in an Azure AD
-  - Learn how to create a hybrid identity solution with Azure AD Connect
+  - Learn the difference between Microsoft Entra ID and Windows Server Active Directory.
+  - Understand tenants, subscriptions, and users.
+  - Create a new Microsoft Entra ID.
+  - Add users and groups to a Microsoft Entra ID.
+  - Manage roles in a Microsoft Entra ID.
+  - Learn how to create a hybrid identity solution with Microsoft Entra Connect.
 prerequisites: |
   - Basic understanding of identity and role-based access control
-  - Understand how to use the Azure portal
+  - Experience using the Azure portal
 iconUrl: /training/achievements/manage-users-and-groups-in-aad.svg
 levels:
 - beginner
@@ -33,7 +32,7 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 subjects:
 - cloud-computing
 - identity-access

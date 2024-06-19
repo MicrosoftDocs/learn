@@ -6,9 +6,8 @@ metadata:
   description: "Join a Windows Server VM to a managed domain"
   ms.date: 12/13/2021
   author: wwlpublish
-  ms.author: v-anwarr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: tonyj
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

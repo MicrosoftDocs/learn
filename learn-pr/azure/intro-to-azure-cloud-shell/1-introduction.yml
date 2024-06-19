@@ -4,12 +4,11 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: This is an introduction to the module.
-  ms.date: 08/05/2022
+  description: Introduction to the module.
+  ms.date: 04/09/2024
   author: vrapolinario
   ms.author: viniap
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
 durationInMinutes: 3
 content: |

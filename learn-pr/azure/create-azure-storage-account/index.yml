@@ -3,11 +3,11 @@ uid: learn.create-azure-storage-account
 metadata:
   title: Create an Azure Storage account
   description: Discover ways to use an Azure Storage account to manage your data for billing, access, and storage location of your blobs, files, queues, and tables.
-  ms.date: 09/24/2018
-  author: tamram
-  ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/23/2023
+  author: normesta
+  ms.author: normesta
+  ms.topic: module-standard-task-based
+  ms.service: azure-storage
 title: Create an Azure Storage account
 summary: Create an Azure Storage account with the correct options for your business needs.
 abstract: | 
@@ -33,7 +33,7 @@ products:
 subjects:
 - data-engineering
 - data-management
-- database
+- databases
 units:
 - learn.create-azure-storage-account.1-introduction
 - learn.create-azure-storage-account.2-decide-how-many-storage-accounts-you-need

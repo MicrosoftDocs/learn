@@ -1,14 +1,14 @@
 *Azure Private 5G Core* is an Azure edge service for deploying and managing 5G core network functions on an [Azure Stack Edge (ASE)](/azure/databox-online) device. The core network functions provide high-performance, low-latency, and secure connectivity for 5G Internet of Things (IoT) devices on standard 4G and 5G standalone radio access networks (RANs).
 
-Azure Private 5G Core is a key component in an [Azure private multi-access edge compute (MEC)](https://azure.microsoft.com/solutions/private-multi-access-edge-compute-mec) solution. Private MEC solutions bring together a portfolio of services and enable operators and system integrators to deliver high-performance connectivity for IoT applications at the enterprise edge.
+Azure Private 5G Core is a key component in an [Azure private multi-access edge compute (MEC)](https://azure.microsoft.com/solutions/private-multi-access-edge-compute-mec) solution. Private MEC solutions bring together a portfolio of services and enable operators and system integrators to deliver high-performance connectivity for IoT applications at the enterprise edge where your data is generated.
 
-Azure Private 5G Core instantiates a single enterprise private mobile network distributed across one or more sites around the world. Each site contains a packet core instance, which is a set of 5G network functions. Packet core instances run on a Kubernetes cluster that is connected to Azure Arc and deployed on an Azure Stack Edge device.
+Azure Private 5G Core enables the instantiation of a single enterprise private mobile network that can be distributed across one or more sites around the world. Each site hosts a packet core instance, which comprises a set of 5G network functions. Packet core instances run on a Kubernetes cluster that is deployed on an Azure Stack Edge device and connected to Azure Arc.
 
 The following diagram shows the key components of a single site powered by an Azure Private 5G Core packet core instance:
 
 :::image type="content" source="../media/site-physical-components.png" alt-text="A diagram that displays the main components of a site in a private mobile network." border="true":::
 
-As shown in the diagram, the packet core instance runs on a Kubernetes cluster deployed on an ASE device. The IoT user equipment (UE) connects to Azure Private 5G Core through RAN. To process the data from UEs, you'll also need to deploy data processing applications. For instance, in the package scanning example discussed in the introduction unit, the warehouse uses computer vision applications to process the data collected from each camera.
+As shown in the diagram, the packet core instance runs on a Kubernetes cluster deployed on an ASE device. The IoT user equipment (UE) connects to Azure Private 5G Core through the RAN. The packet core handles the communication and processing needs of the network, routing data to and from the data networks. To process the data from UEs, you'll also need to deploy data processing applications. For instance, in the package scanning example discussed in the introduction unit, the warehouse uses computer vision applications to process the data collected from each camera.
 
 ## Video: Introduction to Azure Private 5G Core
 

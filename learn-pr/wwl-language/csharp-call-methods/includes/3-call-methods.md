@@ -1,5 +1,4 @@
-
-Whether you realized it or not, you've been calling C# methods ever since your first "Hello, World!" application. That application uses the `WriteLine()` method of the `Console` class to display the "Hello, World!" message. 
+Whether you realized it or not, you've been calling C# methods ever since your first "Hello, World!" application. That application uses the `WriteLine()` method of the `Console` class to display the "Hello, World!" message.
 
 However, not all classes and methods are implemented the same way. This unit covers some of the most common variants that you'll need to understand when using methods from the .NET Class Library. More importantly, you'll learn how to find and use the documentation to better understand more about each method.
 
@@ -24,7 +23,7 @@ While some methods can be called the same way that you called `Console.WriteLine
 
 ## Prepare your coding environment
 
-This module includes hands-on activities that guide you through the process of building and running sample code. You are encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
+This module includes coding activities that guide you through the process of building and running sample code. You are encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
 
 1. Open Visual Studio Code.
 
@@ -91,7 +90,7 @@ This module includes hands-on activities that guide you through the process of b
 
     `C:\Users\someuser\Desktop\CsharpProjects\TestProject>`
 
-    When you use the Terminal to run .NET CLI commands, this folder location is where the commands will be running. Ensure that your code folder matches the folder path displayed in the command prompt before you build or run your code.
+    When you use the Terminal to run .NET CLI commands, this folder location is where the commands run. Ensure that your code folder matches the folder path displayed in the command prompt before you build or run your code.
   
 1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
 
@@ -108,7 +107,7 @@ This module includes hands-on activities that guide you through the process of b
     
     ```
 
-    On the third code line, you include a reference to the `Console` class and call the `Console.WriteLine()` method directly. However, you use a different technique for calling the `Random.Next()` method. The reason why you're using two different techniques is because some methods are stateful and others are stateless. Your next step is to examine the difference between stateful and stateless methods.
+    On the third code line, you include a reference to the `Console` class and call the `Console.WriteLine()` method directly. However, you use a different technique for calling the `Random.Next()` method. The reason why you're using two different techniques is because some methods are "stateful" and others are "stateless". You examine the difference between stateful and stateless methods in the next section.
 
 ## Stateful versus stateless methods
 
@@ -136,9 +135,19 @@ The `new` operator does several important things:
 
 - It first requests an address in the computer's memory large enough to store a new object based on the `Random` class.
 - It creates the new object, and stores it at the memory address.
-- It returns the memory address so that it can be saved in the `dice` variable.
+- It returns the memory address so that it can be saved in the `dice` object.
 
-From that point on, when the `dice` variable is referenced, the .NET Runtime performs a lookup behind the scenes to give the illusion that you're working directly with the object itself.
+From that point on, when the `dice` object is referenced in code, the .NET Runtime performs a lookup behind the scenes to give the illusion that you're working directly with the object itself.
+
+Your code uses the `dice` object like a variable that stores the state of the `Random` class. When you call the `Next()` method on the `dice` object, the method uses the state stored in the `dice` object to generate a random number.
+
+The latest version of the .NET Runtime enables you to instantiate an object without having to repeat the type name (target-typed constructor invocation). For example, the following code will create a new instance of the `Random` class:
+
+```c#
+Random dice = new();
+```
+
+The intention is to simplify code readability. You always use parentheses when writing a target-typed `new` expression.
 
 ## Why is the Next() method stateful?
 

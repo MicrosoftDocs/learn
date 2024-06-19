@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.2-organize-categorize-machines
+title: Organize and categorize your virtual machines
+metadata:
+  unitType: learning-content
+  title: Organize and categorize your virtual machines
+  description: "Describes how to organize and categorize your virtual machines."
+  ms.date: 12/01/2023
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-organize-categorize-machines.md)]

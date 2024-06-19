@@ -19,3 +19,7 @@ The Azure portal guides you through the configuration process to create your vir
 - On the **Advanced** tab, you can configure agents, scripts, or virtual machine extensions.
 
 - Other settings are available on the **Monitoring** and **Tags** tabs.
+
+### Learn how to reduce costs when creating your virtual machine
+
+> [!Video https://www.youtube.com/embed/n9QRCdCNtG0]

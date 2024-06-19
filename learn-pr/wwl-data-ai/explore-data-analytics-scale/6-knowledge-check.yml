@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-data-analytics-scale.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/08/2022
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following tasks are completed by a data analyst?"
+    choices:
+    - content: "Build monthly sales reports and gather feedback from the business on how reports are being used."
+      isCorrect: true
+      explanation: "Correct. Data analysts processes raw sales data into relevant insights."
+    - content: "Design, implement, and maintain operational aspects of on-premises and cloud-based database systems."
+      isCorrect: false
+      explanation: "Incorrect. Data analysts do not maintain database systems."
+    - content: "Manage and secure the flow of structured and unstructured data from multiple sources into analytical data storage."
+      isCorrect: false
+      explanation: "Incorrect. Data analysts do not typically manage getting data into analytical data storage."
+  - content: "What Microsoft tools do data analysts use for enterprise-scale analytics solutions?"
+    choices:
+    - content: "Azure Machine Learning and Azure Cosmos DB."
+      isCorrect: false
+      explanation: "Incorrect. Azure Machine Learning and Azure Cosmos DB aren't used by data analysts."
+    - content: "Microsoft Excel."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Excel isn't used for enterprise-scale analytics solutions."
+    - content: "Azure Synapse Analytics and Microsoft Power BI"
+      isCorrect: true
+      explanation: "Correct. Azure Synapse Analytics and Microsoft Power BI are enterprise-scale analytics tools used by data analysts."
+  - content: "What people focused strategies can help an organization achieve analytics at scale?"
+    choices:
+    - content: "Azure Synapse Analytics and Microsoft Power BI can help achieve analytics at scale in an organization."
+      isCorrect: false
+      explanation: "Incorrect. Azure Synapse Analytics and Microsoft Power BI are technology solutions."
+    - content: "Building a data culture, establishing a Center of Excellence, and creating a community of practice."
+      isCorrect: true
+      explanation: "Correct. Building a data culture, establishing a Center of Excellence, and creating a community of practice can assist in scaling analytics in an organization."
+    - content: "Achieving analytics at scale should be technology focused rather than people focused."
+      isCorrect: false
+      explanation: "Incorrect. Analytics can be achieved at scale through a combination of technology, people, and process focused strategies."

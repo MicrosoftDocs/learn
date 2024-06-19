@@ -11,5 +11,3 @@ You should now be able to:
  -  Describe subscriptions.
  -  Describe management groups.
  -  Describe the hierarchy of resource groups, subscriptions, and management groups.
-
-## 

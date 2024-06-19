@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.deploy-microsoft-defender-for-storage
+title: Deploy Microsoft Defender for Storage
+metadata:
+  title: Deploy Microsoft Defender for Storage
+  description: "Deploy Microsoft Defender for Storage"
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 3
+content: |
+  [!include[](includes/13-deploy-microsoft-defender-for-storage.md)]

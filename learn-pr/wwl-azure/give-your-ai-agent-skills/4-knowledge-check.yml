@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.give-your-ai-agent-skills.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/11/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of a native function in the Semantic Kernel SDK?"
+    choices:
+    - content: "To customize prompts and generated responses."
+      isCorrect: false
+      explanation: "Incorrect. Native functions aren't used to create custom prompts."
+    - content: "To create skills that can be invoked by the kernel."
+      isCorrect: true
+      explanation: "Correct. Native functions can be used by the kernel to augment your intelligent application."
+    - content: "To summarize conversations and chat history"
+      isCorrect: false
+      explanation: "Incorrect. Native functions are used to run native code in the application."
+  - content: "How is a native function declared using the Semantic Kernel SDK?"
+    choices:
+    - content: "By using `public static void NativeFunction() {}`"
+      isCorrect: false
+      explanation: "Incorrect. Native functions are declared using a function decorator."
+    - content: "Using `kernel.InvokeAsync(\"PluginName\", \"NativeFunctionName\");`"
+      isCorrect: false
+      explanation: "Incorrect. This line invokes a native function."
+    - content: "By using `[KernelFunction, Description(\"Function description\")]`"
+      isCorrect: true
+      explanation: "Correct. Native functions are declared using the `KernelFunction` decorator."

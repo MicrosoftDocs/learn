@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-retail.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/22/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What should be your goal when planning and implementing an AI solution for retail?"
+    choices:
+    - content: "Improving KPIs related to your business so you can measure AI success."
+      isCorrect: true
+      explanation: "Correct. It’s vital to keep your AI initiative aligned with your business goals and metrics. For example, ROI, cost savings, search engine rankings, or customer satisfaction scores."
+    - content: "Investing in online commerce experiences, which have more AI potential."
+      isCorrect: false
+      explanation: "Incorrect. In fact, most purchases occur in physical stores, so it’s fundamental to pay attention to offline shopping experiences. Instead, you should improve KPIs related to your business so you can measure AI success."
+    - content: "Adding generative AI to your shopping experience because it improves quality."
+      isCorrect: false
+      explanation: "Incorrect. While it’s true that generative AI has the potential to improve your services’ quality, your priority should focus on AI initiatives that will help you boost financial or business KPIs. Generative AI is a powerful tool, not a goal itself."
+  - content: "Which services would a retail company need to build an AI solution that recommends products to customers based on their browsing history?"
+    choices:
+    - content: "Azure AI Document Intelligence, Azure OpenAI Services, and Azure AI Search."
+      isCorrect: false
+      explanation: "Incorrect. The products you need are Azure AI Services and Dynamics 365 Copilot. Instead, you could use those products to process and organize sales data, customer feedback, and inventory details."
+    - content: "Azure OpenAI Services, Microsoft Power BI, and Azure Synapse Analytics."
+      isCorrect: false
+      explanation: "Incorrect. You just need Azure AI Services and Dynamics 365 Copilot. With that set of products, you could instead automate the generation of sales reports, customer trends, and financial forecasts."
+    - content: "Azure AI Services and Dynamics 365 Copilot."
+      isCorrect: true
+      explanation: "Correct. You can use these products for hyper-personalization features. You could also tailor recommendations to past purchases or design customized, targeted marketing campaigns."
+  - content: "Which common AI scenarios did Żabka implement?"
+    choices:
+    - content: "Content development."
+      isCorrect: false
+      explanation: "Incorrect. CarMax implemented an AI-powered content development initiative, not Żabka. The Polish grocery store network used AI for inventory management and sales forecasting, sales data analytics, and customized marketing campaigns."
+    - content: "Inventory management and sales forecasting, sales data analytics, and tailored product recommendations."
+      isCorrect: false
+      explanation: "Incorrect. This answer is only partially correct. Żabka uses Microsoft Cloud for Retail to manage inventory and predict demand. However, they don’t currently use the insights of their sales data analytics for tailored product recommendations, but to offer personalized offers and free products to their regular customers, that is, for customized marketing campaigns. Nonetheless, that AI scenario would fit their existing solution, so it would be a sensible next step."
+    - content: "Inventory management and sales forecasting, sales data analytics, and customized marketing campaigns."
+      isCorrect: true
+      explanation: "Correct. They use Microsoft Cloud for Retail to manage inventory and predict demand. Besides, their fidelity program uses customer purchase data to track regular customers and offer them personalized offers and free products."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-question-answer-solution-ai-language.create-knowledge-base
+title: Create a knowledge base
+metadata:
+  title: Create a knowledge base
+  description: "Create a knowledge base"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-create-knowledge-base.md)]

@@ -4,26 +4,24 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/30/2021
+  ms.date: 12/11/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: unit
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
-content: |
-  [!include[](includes/10-knowledge-check.md)]
 quiz:
   questions:
-  - content: "You want to find information in Microsoft Word documents that are stored in an Azure Storage blob container. What should you do to ensure the files can be accessed by Azure Cognitive Search?"
+  - content: "You want to find information in Microsoft Word documents that are stored in an Azure Storage blob container. What should you do to ensure the files can be accessed by Azure AI Search?"
     choices:
-    - content: "Add a JSON file that defines an Azure Cognitive Search index to the blob container"
+    - content: "Add a JSON file that defines an Azure AI Search index to the blob container"
       isCorrect: false
-      explanation: "Incorrect. Adding an index file to the blob container does not help Azure Cognitive Search access the data."
+      explanation: "Incorrect. Adding an index file to the blob container does not help Azure AI Search access the data."
     - content: "Enable anonymous access for the blob container"
       isCorrect: false
-      explanation: "Incorrect. Anonymous access is not required for Azure Cognitive Search to access documents in a blob container."
-    - content: "In an Azure Cognitive Services resource, and add a data source that references the container where the files are stored"
+      explanation: "Incorrect. Anonymous access is not required for Azure AI Search to access documents in a blob container."
+    - content: "In an Azure AI Services resource, and add a data source that references the container where the files are stored"
       isCorrect: true
       explanation: "Correct. To search files in a blob container, you should create a data source"
   - content: "You are creating an index that includes a field named modified_date. You want to ensure that the modified_date field can be included in search results. Which attribute must you apply to the modified_date field in the index definition?"
@@ -48,7 +46,7 @@ quiz:
     - content: "A suggester"
       isCorrect: false
       explanation: "Incorrect. A suggester does not map data to index fields."
-  - content: "You want to create a search solution that uses a built-in AI skill to determine the language in which each indexed document is written, and enrich the index with a field indicating the language. Which kind of Azure Cognitive Search object must you create?"
+  - content: "You want to create a search solution that uses a built-in AI skill to determine the language in which each indexed document is written, and enrich the index with a field indicating the language. Which kind of Azure AI Search object must you create?"
     choices:
     - content: "Synonym map"
       isCorrect: false

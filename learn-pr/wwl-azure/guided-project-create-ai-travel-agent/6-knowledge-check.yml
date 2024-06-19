@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-create-ai-travel-agent.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/11/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following is true about the Semantic Kernel SDK?"
+    choices:
+    - content: "Developers should avoid using Semantic Kernel SDK as it adds unnecessary complexity."
+      isCorrect: false
+      explanation: "Incorrect. The Semantic Kernel SDK is designed to simplify the integration of AI."
+    - content: "Semantic Kernel SDK uses abstraction to reduce the learning curve of integration AI."
+      isCorrect: true
+      explanation: "Correct. Semantic Kernel SDK eases AI integration by providing abstraction and orchestration."
+    - content: "Semantic Kernel SDK is only suitable for advanced AI developers."
+      isCorrect: false
+      explanation: "Incorrect. The Semantic Kernel SDK is suitable for developers of all levels."
+  - content: "Which of the following is true about native functions?"
+    choices:
+    - content: "Native functions can only be used in prompts."
+      isCorrect: false
+      explanation: "Incorrect. Native functions can be used in prompts, but they can also be invoked directly."
+    - content: "Native functions can be used in prompts, invoked directly, or called by other functions."
+      isCorrect: true
+      explanation: "Correct. Native functions are extremely flexible and can be called in various ways."
+    - content: "Native functions can't be used in prompts."
+      isCorrect: false
+      explanation: "Incorrect. Native functions can be used in prompts."
+  - content: "Which option assigns a role in a prompt to the large language model (LLM)?"
+    choices:
+    - content: "Using the `role` attribute in the `message` tag."
+      isCorrect: true
+      explanation: "Correct. You can assign a role to the LLM by using the `role` attribute in the `message` tag."
+    - content: "Using the `ChatHistory` object on the LLM response."
+      isCorrect: false
+      explanation: "Incorrect. The `ChatHistory` object is used to store the conversation history."
+    - content: "Using the `assignRole` attribute in the `chat` tag."
+      isCorrect: false
+      explanation: "Incorrect. You can assign a role to the LLM by using the `role` attribute in the `message` tag."

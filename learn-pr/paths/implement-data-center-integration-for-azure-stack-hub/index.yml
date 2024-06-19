@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Implement Data Center Integration for Azure Stack Hub
 prerequisites: |
   None

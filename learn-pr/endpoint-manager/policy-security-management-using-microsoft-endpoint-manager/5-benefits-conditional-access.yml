@@ -4,11 +4,10 @@ title: Understand the benefits of Conditional Access
 metadata:
   title: Understand the benefits of Conditional Access
   description: Learn about the benefits of Conditional Access.
-  ms.date: 10/26/2020
+  ms.date: 05/05/2023
   author: Erikre
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/5-benefits-conditional-access.md)]

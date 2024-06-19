@@ -53,7 +53,7 @@ When users access resources within an organization that uses SAML SSO, GitHub wi
 GitHub offers limited support for all identity providers that implement the SAML 2.0 standard with official support for several popular identity providers including:
 
 - Active Directory Federation Services (AD FS)
-- Azure Active Directory (Azure AD)
+- Microsoft Entra ID
 - Okta
 - OneLogin
 - PingOne

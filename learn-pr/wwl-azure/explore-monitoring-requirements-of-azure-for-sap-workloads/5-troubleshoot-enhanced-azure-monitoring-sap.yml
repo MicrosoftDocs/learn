@@ -4,11 +4,11 @@ title: Troubleshoot Azure Enhanced Monitoring for SAP
 metadata:
   title: Troubleshoot Azure Enhanced Monitoring for SAP
   description: "Troubleshoot Azure Enhanced Monitoring for SAP"
-  ms.date: 04/20/2023
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: N/A, linux-related-content
 durationInMinutes: 14
 content: |
   [!include[](includes/5-troubleshoot-enhanced-azure-monitoring-sap.md)]

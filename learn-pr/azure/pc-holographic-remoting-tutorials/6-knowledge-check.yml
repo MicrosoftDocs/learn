@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Three multiple-choice questions
-  ms.date: 09/09/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/03/2024
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: unit
 durationInMinutes: 3
 content: Choose the best response for each question. Then select Check your answers.
 quiz:
@@ -29,13 +28,13 @@ quiz:
       choices:
         - content: "PrivateNetworkClientServer"
           isCorrect: true
-          explanation: On Windows, this provides access to a home or work network – the app can send information to or from your computer and other computers on the same network.
+          explanation: On Windows, this provides access to a home or work network. The app can send information to or from your computer and other computers on the same network.
         - content: "Removable Storage"
           isCorrect: false
-          explanation: Removable storage, such as an external hard drive or USB flash drive, or MTP portable device, including the capability to add, change, or delete specific files. 
+          explanation: Removable storage, such as an external hard drive, USB flash drive, or MTP portable device, includes the capability to add, change, or delete specific files. 
         - content: "VideosLibrary"
           isCorrect: false
-          explanation: Your videos library, including the capability to add, change, or delete files.
+          explanation: Your videos library, which includes the capability to add, change, or delete files.
     - content: "In the OpenXR feature group we select: "
       choices:
         - content: "Mock Runtime"
@@ -43,7 +42,7 @@ quiz:
           explanation: Enabling this will take over whatever current OpenXR runtime you might be using.
         - content: "Runtime Debugger"
           isCorrect: false
-          explanation: A runtime debugger feature. Intercepts all OpenXR calls and forwards them over player connection to an editor window.
+          explanation: A runtime debugger feature intercepts all OpenXR calls and forwards them over player connection to an editor window.
         - content: "Holographic App Remoting"
           isCorrect: true
           explanation: The Holographic Remoting Player is a companion app that connects to PC apps and games that support Holographic Remoting.

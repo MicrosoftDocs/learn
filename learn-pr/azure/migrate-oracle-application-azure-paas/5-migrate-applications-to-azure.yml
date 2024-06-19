@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-oracle-application-azure-paas.migrate-applications-to-azure
+title: Explore the process of migrating your applications to Azure
+metadata:
+  title: Explore the process of migrating your applications to Azure
+  description: Learn how to migrate your applications to Azure.
+  ms.date: 05/01/2024
+  author: jjaygbay1
+  ms.author: jacobjaygbay
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-migrate-applications-to-azure.md)]

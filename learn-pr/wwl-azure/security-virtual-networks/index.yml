@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.security-virtual-networks
+metadata:
+  title: Plan and implement security for virtual networks
+  description: "This module is designed to provide administrators with the knowledge and skills needed to plan and implement robust security measures for Azure virtual networks, ensuring the confidentiality, integrity, and availability of network resources."
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: module-intro-to-product
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Plan and implement security for virtual networks
+summary: This module is designed to provide administrators with the knowledge and skills needed to plan and implement robust security measures for Azure virtual networks, ensuring the confidentiality, integrity, and availability of network resources.
+abstract: |
+  -   Implement security measures for Azure virtual networks to safeguard data and resources.
+
+  -   Utilize NSGs and ASGs for network traffic security, and manage UDRs for optimal traffic routing.
+
+  -   Establish secure network connectivity through Virtual Network peering, VPN gateways, and Virtual WAN.
+
+  -   Enhance network security with VPN configurations, ExpressRoute encryption, PaaS firewall settings, and Network Watcher monitoring.
+prerequisites: '-   None'
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- azure-firewall
+- azure-firewall-manager
+- azure-virtual-network
+- azure-vpn-gateway
+subjects:
+- security
+units:
+- learn.wwl.security-virtual-networks.introduction
+- learn.wwl.security-virtual-networks.azure-virtual-network
+- learn.wwl.security-virtual-networks.network-security-groups-application-security-groups
+- learn.wwl.security-virtual-networks.user-defined-routes
+- learn.wwl.security-virtual-networks.virtual-network-peering-gateways
+- learn.wwl.security-virtual-networks.virtual-wide-area-network
+- learn.wwl.security-virtual-networks.secure-virtual-private-network-connectivity-point-to-site-site-to-site
+- learn.wwl.security-virtual-networks.azure-expressroute
+- learn.wwl.security-virtual-networks.expressroute-encryption
+- learn.wwl.security-virtual-networks.secure-paas-deployments
+- learn.wwl.security-virtual-networks.flow-logging-network-security-groups
+- learn.wwl.security-virtual-networks.knowledge-check
+- learn.wwl.security-virtual-networks.summary
+badge:
+  uid: learn.wwl.security-virtual-networks.badge

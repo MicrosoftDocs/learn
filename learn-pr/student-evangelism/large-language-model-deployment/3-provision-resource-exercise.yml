@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.large-language-model-deployment.provision-resource-exercise
+title: "Exercise: Provision an Azure OpenAI resource"
+metadata:
+  title: "Exercise: Provision an Azure OpenAI resource"
+  description: Practice provisioning an Azure OpenAI resource.
+  ms.date: 12/04/2023
+  author: softchris
+  ms.author: chnoring
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-provision-resource-exercise.md)]

@@ -4,12 +4,11 @@ title: Exercise - Create an HPC cluster from built-in templates
 metadata:
   unitType: exercise
   title: Exercise - Create an HPC cluster from built-in templates
-  description: This unit describes the process of creating an HPC cluster from built-in templates.
-  ms.date: 06/07/2021
+  description: Learn about the process of creating an HPC cluster from built-in templates.
+  ms.date: 04/17/2024
   author: anhoward
   ms.author: anhoward
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 25
 content: |
   [!include[](includes/5-exercise-create-cluster.md)]

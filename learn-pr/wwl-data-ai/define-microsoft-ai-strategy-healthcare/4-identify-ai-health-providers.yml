@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-healthcare.identify-ai-health-providers
+title: Identify Microsoft AI use cases for health providers
+metadata:
+  title: Identify Microsoft AI use cases for health providers
+  description: "Identify Microsoft AI use cases for health providers"
+  ms.date: 05/22/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-identify-ai-health-providers.md)]

@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/21/2022
   author: cryophobia
   ms.author: chrvaw
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Build a containerized web application with Docker
 summary: Package a web app so that it can be deployed as a Docker image and run from an Azure Container Instance.
 abstract: |

@@ -4,11 +4,10 @@ title:  Exercise - Create a release based workflow
 metadata:
   title:  Exercise - Create a release based workflow
   description: Learn to implement a release based workflow on GitHub using project boards, branches, and releases.
-  ms.date: 06/26/2020
+  ms.date: 12/05/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 90
 content: |
   [!include[](includes/3-create-release-based-workflow.md)]

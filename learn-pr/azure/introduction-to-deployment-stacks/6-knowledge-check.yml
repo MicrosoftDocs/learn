@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-deployment-stacks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 08/01/2023
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: unit
+durationInMinutes: 2
+content: | 
+quiz:
+  questions:
+  - content: What is a deployment stack?
+    choices:
+    - content: A deployment stack is a resource that is used to set permissions on an Azure resource.
+      isCorrect: false
+      explanation: Azure role-based access control (RBAC) is used to set permissions on an Azure resource.
+    - content: A deployment stack is a type of Azure resource that enables you to manage the lifecycle of a collection of Azure resources as a single atomic unit.
+      isCorrect: true
+      explanation: A deployment stack is a type of Azure resource that enables you to manage the lifecycle of a collection of Azure resources as a single atomic unit.
+    - content: A deployment stack is many virtual machines grouped together to host a web application.
+      isCorrect: false
+      explanation: A deployment stack is a type of Azure resource that enables you to manage the lifecycle of a collection of Azure resources as a single atomic unit.
+  - content: Which is NOT a reason to use deployment stacks?
+    choices:
+    - content: Deployment stacks help to prevent unauthorized changes to your Azure resources.
+      isCorrect: false
+      explanation: Unauthorized changes to Azure resources are protected with the deny settings property.
+    - content: Deployment stacks provide reliable resource cleanup.
+      isCorrect: false
+      explanation: When you delete a deployment stack, the resources are also be deleted, depending on your `actionOnUnmanage` setting.
+    - content: Deployment stacks use a special type of template for defining resources.
+      isCorrect: true
+      explanation: Deployment stacks support the use of Bicep files, ARM JSON templates, or template specs for defining resources in a stack.
+  - content: Which is the purpose of the `actionOnUnmanage` property in a deployment stack?
+    choices:
+    - content: The `actionOnUnmanage` property in a deployment stack determines how Azure handles resources that are no longer managed by the stack.
+      isCorrect: true
+      explanation: The `actionOnUnmanage` property determines if a resource, resource group, or management group is detached or deleted when no longer managed by the deployment stack.
+    - content: The `actionOnUnmanage` property determines what users can modify the resources managed by the deployment stack.
+      isCorrect: false
+      explanation: Deny settings determine the actions that users can perform on resources in a deployment stack.
+    - content: The `actionOnUnmanage` property lists the resources in a deployment stack.
+      isCorrect: false
+      explanation: The `actionOnUnmanage` property determines if a resource, resource group, or management group is detached or deleted when no longer managed by the deployment stack.
+

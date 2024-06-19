@@ -3,18 +3,17 @@ uid: learn.wwl.transfer-transform-data-azure-synapse-analytics-pipelines
 metadata:
   title: Transfer and transform data with Azure Synapse Analytics pipelines
   description: Learn how to use Azure Synapse Analytics pipelines to automate and orchestrate data transfer and transformation activities.
-  ms.date: 02/07/2023
+  ms.date: 10/27/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
   ms.service: synapse-analytics
 title: Transfer and transform data with Azure Synapse Analytics pipelines
 prerequisites: |
   Before starting this learning path, you should be familiar with Azure Synapse Analytics. Consider completing the [Introduction to Azure Synapse Analytics](/training/modules/introduction-azure-synapse-analytics) module first.
 summary: |
   Azure Synapse Analytics enables data integration through the use of pipelines, which you can use to automate and orchestrate data transfer and transformation activities.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/transfer-and-transform-data-with-azure-synapse-analytics-pipelines.svg
 levels:
 - intermediate
 roles:

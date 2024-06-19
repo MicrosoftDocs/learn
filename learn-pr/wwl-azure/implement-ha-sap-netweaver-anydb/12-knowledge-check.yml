@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/23/2023
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/12-knowledge-check.md)]
@@ -17,23 +16,23 @@ quiz:
   questions:
   - content: "When a single SID 3-tier SAP NetWeaver high availability AnyDB is deployed using a 3-tier SAP Azure Resource Manager template, IP addresses are created for Azure internal load balancers and for the network cards for all virtual machines. Which of the following statements about those IP addresses is true?"
     choices:
-    - content: "The IP addresses are properly configured automatically, and do not need to be changed."
+    - content: "The IP addresses are properly configured automatically, and don't need to be changed."
       isCorrect: false
-      explanation: "That’s incorrect. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. They must be changed to static IP addresses."
+      explanation: "Incorrect. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. They must be changed to static IP addresses."
     - content: "All of the IP addresses are static by default, and need to be changed to dynamic."
       isCorrect: false
-      explanation: "That’s incorrect. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. They must be changed to static IP addresses."
+      explanation: "Incorrect. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. They must be changed to static IP addresses."
     - content: "All of the IP addresses are dynamic by default, and need to be changed to static."
       isCorrect: true
-      explanation: "That's correct. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. They must be changed to static IP addresses."
+      explanation: "Correct. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. They must be changed to static IP addresses."
   - content: "Azure load balancer's idle timeout can time out open connections to the SAP enqueue process. To prevent Azure load balancer's idle timeout, customers should add registry entries for KeepAliveTime and KeepAliveInterval at what registry path on the cluster nodes of the SAP ASCS-SCS instance?"
     choices:
     - content: "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Interfaces"
       isCorrect: false
-      explanation: "That’s incorrect. Add the registry entries to HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters."
+      explanation: "Incorrect. Add the registry entries to HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters."
     - content: "HKLM\\SYSTEM\\CurrentControlSet\\Services\\AFD\\Parameters"
       isCorrect: false
-      explanation: "That’s incorrect. Add the registry entries to HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters."
+      explanation: "Incorrect. Add the registry entries to HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters."
     - content: "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters"
       isCorrect: true
-      explanation: "That's correct. Add the registry entries to HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters."
+      explanation: "Correct. Add the registry entries to HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters."

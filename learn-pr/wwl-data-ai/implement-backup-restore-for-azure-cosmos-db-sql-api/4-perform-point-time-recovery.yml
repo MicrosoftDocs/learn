@@ -4,13 +4,12 @@ title: Perform a point-in-time recovery
 metadata:
   title: Perform a point-in-time recovery
   description: "Perform a point-in-time recovery"
-  ms.date: 10/18/2022
+  ms.date: 02/27/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-perform-point-time-recovery.md)]

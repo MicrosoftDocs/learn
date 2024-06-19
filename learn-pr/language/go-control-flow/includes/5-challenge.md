@@ -55,7 +55,7 @@ This program checks numbers 1 through 20, and prints the number if it's prime. M
 
 - In the `main` function, loop through all the numbers to check. Exit the loop after you check the last number.
 - Call the `findprimes` function to check the number. If the function returns true, print the prime.
-- In the `findprimes` loop, start from 2 and repeat until the counter is more than the `number` value.
+- In the `findprimes` loop, start from 2 and repeat until the counter is more than or equal to the `number` value.
 - Check if the `number` is evenly divisible by the current counter value. If it is, exit the loop.
 - When the `number` is prime, return true; otherwise, return false.
 - Hint: Be sure to correctly handle the case where the input number is 1.

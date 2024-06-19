@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-to-azure-ai-studio
+metadata:
+  title: Introduction to Azure AI Studio
+  description: "Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Azure AI Studio brings these services together in a single unified experience for AI development on the Azure cloud platform."
+  ms.date: 05/08/2024
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: azure-ai-services
+  ms.custom:
+    - ignite-2023
+  ai-usage: ai-assisted
+title: Introduction to Azure AI Studio
+summary: "Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Azure AI Studio brings these services together in a single unified experience for AI development on the Azure cloud platform."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe core features and capabilities of Azure AI Studio
+    - Use Azure AI Studio to provision and manage an Azure AI resource
+    - Use Azure AI Studio to create and manage an AI project
+    - Understand when to use Azure AI Studio
+prerequisites: |
+  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. Consider completing the [Get started with artificial intelligence](/training/paths/get-started-with-artificial-intelligence-on-azure) learning path first.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - ai-engineer
+  - data-scientist
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - azure
+  - ai-services
+subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - artificial-intelligence
+  - machine-learning
+  - natural-language-processing
+units:
+- learn.wwl.introduction-to-azure-ai-studio.introduction
+- learn.wwl.introduction-to-azure-ai-studio.what-is-ai-studio
+- learn.wwl.introduction-to-azure-ai-studio.azure-ai-resources
+- learn.wwl.introduction-to-azure-ai-studio.when-to-use-ai-studio
+- learn.wwl.introduction-to-azure-ai-studio.exercise-explore-ai-studio
+- learn.wwl.introduction-to-azure-ai-studio.knowledge-check
+- learn.wwl.introduction-to-azure-ai-studio.summary
+badge:
+  uid: learn.wwl.introduction-to-azure-ai-studio.badge

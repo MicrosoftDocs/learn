@@ -3,11 +3,10 @@ uid: learn.language.go-concurrency.2-channels
 metadata:
   title: Use channels as a communication mechanism
   description: Learn how channels work to communicate between goroutines.
-  ms.date: 01/25/2021
+  ms.date: 01/23/2023
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Use channels as a communication mechanism
 durationInMinutes: 8

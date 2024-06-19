@@ -1,4 +1,3 @@
-
 Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you register your app and get authentication tokens for a user or service, you can make requests to the Microsoft Graph API.
 
 The Microsoft Graph API defines most of its resources, methods, and enumerations in the OData namespace, `microsoft.graph`, in the [Microsoft Graph metadata](/graph/traverse-the-graph#microsoft-graph-api-metadata). A few API sets are defined in their sub-namespaces, such as the [call records API](/graph/api/resources/callrecords-api-overview) which defines resources like [callRecord](/graph/api/resources/callrecords-callrecord) in `microsoft.graph.callRecords`.
@@ -24,7 +23,7 @@ After you make a request, a response is returned that includes:
 
 * Status code - An HTTP status code that indicates success or failure.
 * Response message - The data that you requested or the result of the operation. The response message can be empty for some operations.
-* `nextLink` - If your request returns a lot of data, you need to page through it by using the URL returned in `@odata.nextLink`. 
+* `nextLink` - If your request returns numerous data, you need to page through it by using the URL returned in `@odata.nextLink`. 
 
 ## HTTP methods
 

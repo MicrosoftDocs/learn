@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-alerts-responses.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/25/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "How many action groups can be added to an alert rule?"
+    choices:
+    - content: "Five"
+      isCorrect: true
+      explanation: "Correct. You can add up to five action groups to an alert rule."
+    - content: "Ten"
+      isCorrect: false
+      explanation: "Incorrect. You can add up to five action groups to an alert rule."
+    - content: "Twenty"
+      isCorrect: false
+      explanation: "Incorrect. You can add up to five action groups to an alert rule."
+  - content: "A set of action groups need to be suppressed from sending notifications during maintenance at scale on resources in Azure. Which of the following items should be configured?"
+    choices:
+    - content: "Alert state"
+      isCorrect: false
+      explanation: "Incorrect. Changing alert states will not suppress notifications."
+    - content: "Action group"
+      isCorrect: false
+      explanation: "Incorrect. You wouldn't modify the properties of the action group for maintenance; you'd only perform this action if you wanted a more permanent change to how alerts functioned."
+    - content: "Alert processing rule"
+      isCorrect: true
+      explanation: "Correct. Alert processing rules allow you to suppress specific alerts. Alert rules generate new alerts, while alert processing rules modify the fired alerts as they're being fired."
+  - content: "An alert processing rule is configured with three filters. How many of the filters apply at any time to the rule?"
+    choices:
+    - content: "One"
+      isCorrect: false
+      explanation: "Incorrect. If you define multiple filters in a rule, all the rules apply. There's a logical AND between all filters."
+    - content: "Two"
+      isCorrect: false
+      explanation: "Incorrect. If you define multiple filters in a rule, all the rules apply. There's a logical AND between all filters."
+    - content: "Three"
+      isCorrect: true
+      explanation: "Correct. If you define multiple filters in a rule, all the rules apply. There's a logical AND between all filters."

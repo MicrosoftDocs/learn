@@ -4,11 +4,12 @@ title: Exercise - Configure and initialize the client library
 metadata:
   title: Exercise - Configure and initialize the client library
   description: Exercise - Configure and initialize the client library
-  ms.date: 03/23/2023
+  ms.date: 10/23/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
   zone_pivot_groups: dev-lang-csharp-java
 durationInMinutes: 10
 interactive: bash

@@ -3,20 +3,29 @@ uid: learn.quantum.estimate-resources-quantum-algorithms
 metadata:
   title: Estimate physical resources for quantum algorithms by using the Azure Quantum Resource Estimator
   description: Learn how to get started with Azure Quantum Resource Estimator.
-  ms.date: 02/08/2023
+  ms.date: 06/05/2024
   author: SoniaLopezBravo
   ms.author: sonialopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: tedhudek
+  ms.topic: module
+  ms.service: azure-quantum
 title: Estimate physical resources for quantum algorithms by using the Azure Quantum Resource Estimator
 summary: Learn why resource estimation is crucial in the development of quantum computing, and learn how to use the Azure Quantum Resource Estimator. 
 abstract: |
-  In this module, you will:
+  By the end of this module, you'll be able to:
+  - Explain what the Azure Quantum Resource Estimator is.
+  - Define the target parameters of the Azure Quantum Resource Estimator.
+  - Estimate the resources of a quantum algorithm using the Azure Quantum Resource Estimator.
+  In this module, you'll:
   - Learn what resource estimation is and why it's important.
   - Explore the Azure Quantum Resource Estimator.
   - Estimate the resources of an algorithm for practical quantum advantage.
-prerequisites: To use the Azure Quantum service, you need an active Azure subscription. For more information about creating an Azure account and subscription, see the module [Create an Azure account](/training/modules/create-an-azure-account/).
-iconUrl: /training/achievements/generic-badge.svg
+prerequisites: |
+  - The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code on the Web](https://vscode.dev/)
+  - The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension
+  - A Python environment with [Python and Pip](https://apps.microsoft.com/detail/9NRWMJP3717K) installed
+  - VS Code with [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) and [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) extensions installed
+iconUrl: /training/achievements/quantum/azure-quantum-resource-estimator.svg
 ratingEnabled: true
 levels:
 - beginner

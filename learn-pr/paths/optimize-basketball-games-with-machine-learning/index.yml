@@ -7,8 +7,7 @@ metadata:
   ms.date: 03/10/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: "Use basketball stats to optimize game play with Visual Studio Code, inspired by SPACE JAM: A NEW LEGACY"
 summary: |
   Inspired by the new film _Space Jam: A New Legacy_, this learning path shows basketball fans how an understanding of data science and coding can support their passions, create opportunities, and even open doors to possible careers. Develop skills in Visual Studio Code, Azure, GitHub, JavaScript, and Python, to gain insights into how individual moments throughout a player's history can lead to a critical game decision in the finals.
@@ -54,10 +53,8 @@ roles:
 products:
 - vs-code
 - azure
-- azure-app-service-static
+- static-web-apps
 - github
-subjects:
-- development-tools
 modules:
 - learn.student-evangelism.predict-basketball-player-efficiency-ratings
 - learn.student-evangelism.optimize-basketball-player-rest-breaks

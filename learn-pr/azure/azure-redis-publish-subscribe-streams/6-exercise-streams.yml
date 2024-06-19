@@ -5,11 +5,10 @@ metadata:
   unitType: exercise
   title: Exercise - Broker messages using Streams
   description: In this exercise, you’ll broker messages using Azure Cache for Redis’ Streams functionality.
-  ms.date: 02/11/2022
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: flang-msft
+  ms.author: franlanglois
+  manager: mcleans
+  ms.topic: unit
 azureSandbox: true
 durationInMinutes: 15
 content: |

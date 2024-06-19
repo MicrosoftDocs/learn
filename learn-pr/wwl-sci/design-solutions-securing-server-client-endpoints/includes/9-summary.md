@@ -9,16 +9,17 @@ You learned:
 
 ## Learn more with security documentation
 
-- [Azure security baseline for Windows Virtual Machines](https://learn.microsoft.com/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline)
-- [Microsoft cloud security benchmark - Endpoint security](https://learn.microsoft.com/security/benchmark/azure/mcsb-endpoint-security)
-- [Security in your IoT workload - Microsoft Azure Well-Architected Framework](https://learn.microsoft.com/azure/architecture/framework/iot/iot-security)
-- [Learn about Windows security baselines you can deploy with Microsoft Intune](https://learn.microsoft.com/mem/intune/protect/security-baselines)
-- [Plan for virtual machine remote access - Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-virtual-machine-remote-access)
+- [Azure security baseline for Windows Virtual Machines](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline)
+- [Microsoft cloud security benchmark - Endpoint security](/security/benchmark/azure/mcsb-endpoint-security)
+- [Microsoft Defender for IoT - Overview](/azure/defender-for-iot/organizations/overview)
+- [Security in your IoT workload - Microsoft Azure Well-Architected Framework](/azure/architecture/framework/iot/iot-security)
+- [Learn about Windows security baselines you can deploy with Microsoft Intune](/mem/intune/protect/security-baselines)
+- [Plan for virtual machine remote access - Cloud Adoption Framework](/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-virtual-machine-remote-access)
 
 ## Learn more with reference architectures
 
-- [Implement a secure hybrid network - Azure Architecture Center](https://learn.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?tabs=portal)
-- [On-premises network using ExpressRoute - Azure Architecture Center](https://learn.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/expressroute)
+- [Implement a secure hybrid network - Azure Architecture Center](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?tabs=portal)
+- [On-premises network using ExpressRoute - Azure Architecture Center](/azure/architecture/reference-architectures/hybrid-networking/expressroute)
 
 > [!NOTE]
 > This module contains AI-generated content.

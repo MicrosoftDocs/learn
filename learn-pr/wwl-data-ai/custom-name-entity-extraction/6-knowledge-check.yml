@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.custom-name-entity-extraction.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/31/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You've trained your model and you're seeing that it doesn't recognize your entities. What metric score is likely low to indicate that issue?"
+    choices:
+    - content: "Recall"
+      isCorrect: true
+      explanation: "That answer's correct. Recall indicates how well the model extracts entities, regardless of which entity that is."
+    - content: "Precision"
+      isCorrect: false
+      explanation: "That answer's incorrect. Recall indicates how well the model extracts entities, regardless of which entity that is."
+    - content: "F1 score"
+      isCorrect: false
+      explanation: "That answer's incorrect. Recall indicates how well the model extracts entities, regardless of which entity that is."
+  - content: "You just finished labeling your data. How and where is that file stored to train your model?"
+    choices:
+    - content: "JSON file, in my storage account container for the project"
+      isCorrect: true
+      explanation: "That answer's correct. The JSON file lives next to the dataset in your container for the model to use during training."
+    - content: "XML file, in my local project folder"
+      isCorrect: false
+      explanation: "That answer's incorrect. The JSON file lives next to the dataset in your container for the model to use during training."
+    - content: "YAML file, anywhere in my Azure account"
+      isCorrect: false
+      explanation: "That answer's incorrect. The JSON file lives next to the dataset in your container for the model to use during training."
+  - content: "You train your model with only one source of documents, even though real extraction tasks will come from several sources. What data quality metric do you need to increase?"
+    choices:
+    - content: "Distribution"
+      isCorrect: false
+      explanation: "That answer's incorrect. Having the right data diversity will lead to better extraction performance."
+    - content: "Accuracy"
+      isCorrect: false
+      explanation: "That answer's incorrect. Having the right data diversity will lead to better extraction performance."
+    - content: "Diversity"
+      isCorrect: true
+      explanation: "That answer's correct. Having the right data diversity will lead to better extraction performance."

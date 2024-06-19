@@ -9,7 +9,7 @@ Unlike some SAN protocols, iSCSI requires no specialized cabling or connectivity
 > [!NOTE]
 > By default, iSCSI uses TCP port 3260.
 
-:::image type="content" source="../media/m19-iscsi-concept.png" alt-text="The high level iSCSI architecture, with an iSCSI client connecting to an iSCSI Target Server via TCP/IP." border="false":::
+:::image type="content" source="../media/m19-iscsi-concept.png" alt-text="Diagram showing the high level iSCSI architecture, with an iSCSI client connecting to an iSCSI Target Server via TCP/IP." border="false":::
 
 ## iSCSI components
 

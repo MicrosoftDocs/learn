@@ -1,6 +1,6 @@
-In our scenario, a change was made to the network configuration. You've started to receive alerts informing you that virtual machines in the back-end pool aren't responding to health probes. Now you need to diagnose the cause of these failures and fix them.
+In our scenario, a change was made to the network configuration. You're receiving alerts that virtual machines in the back-end pool aren't responding to health probes. Now you need to diagnose the cause of these failures and fix them.
 
-In this exercise, you'll use a script to reconfigure the environment and cause health probe failures. You'll use the skills learned in this module to return the load-balanced HTTP service back to full operation.
+In this exercise, you use a script to reconfigure the environment and cause health probe failures. You use the skills learned in this module to return the load-balanced HTTP service back to full operation.
 
 ## Reconfigure load balancer and retest
 
@@ -16,19 +16,19 @@ In this exercise, you'll use a script to reconfigure the environment and cause h
     cd ~/load-balancer/src/scripts
     ```
 
-1. Run the following command to reconfigure the load balancer, network, and virtual machines. This script introduces some problems that you'll later diagnose and correct.
+2. Run the following command to reconfigure the load balancer, network, and virtual machines. This script introduces some problems that you'll diagnose and correct.
 
     ```bash
     bash reconfigure.sh
     ```
 
-1. Run the following commands to move to the **src/stresstest** folder.
+3. Run the following commands to move to the **src/stresstest** folder.
 
     ```bash
     cd ~/load-balancer/src/stresstest
     ```
 
-1. Run the stress test again where you replace <*ip address*> with the IP address of the load balancer. If you can't remember this address, run the **src/scripts/findip.sh** script again.
+4. Run the stress test again where you replace <*ip address*> with the IP address of the load balancer. If you can't remember this address, run the **src/scripts/findip.sh** script again.
 
     ```bash
     dotnet run <ip address>
@@ -36,12 +36,11 @@ In this exercise, you'll use a script to reconfigure the environment and cause h
 
     This time, the app won't generate any output and might eventually time out with the message "Error sending request to Load Balancer: The operation was canceled." Press <kbd>Enter</kbd> to stop the application.
 
-1. In the Azure portal, select **Dashboard** > **dashboard-learn-ts-loadbalancer**.
+5. In the Azure portal, select **Dashboard** > **dashboard-learn-ts-loadbalancer**.
 
-1. Review the dashboard that shows the health probe status and data path availability. You might need to change the time range to the past 30 minutes. It should look like the following chart, with both metrics dropped to zero.
+6. Review the dashboard that shows the health probe status and data path availability. You might need to change the time range to the past 30 minutes. It should look like the following chart, with both metrics dropped to zero.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot that shows the health probe status and data path availability is in an unhealthy state.](../media/5-probe-unhealthy.png)
+    :::image type="content" source="../media/5-probe-unhealthy.png" alt-text="Screenshot that shows the health probe status and data path availability is in an unhealthy state.":::
 
     This chart shows that the virtual machines aren't responding to health probe requests from the load balancer. So they've been marked as unhealthy. There's no data path available between a client and the application running on these virtual machines.
 
@@ -68,10 +67,10 @@ You can't ping the *appretailvm1* or *appretailvm2* virtual machines directly be
     cat passwd.txt
     ```
 
-1. Sign in to the jump box. Replace **azureuser** if you used a different user name.
+1. Sign in to the jump box with the IP address and password from the previous command outputs. Replace **azureuser** if you used a different user name.
 
     ```bash
-    ssh azureuser@<jumpbox ip address>
+    ssh azureuser@<jump box ip address>
     ```
 
 1. On the jump box, run the following command to test whether the *retailappvm1* virtual machine is running.
@@ -98,29 +97,25 @@ The *retailappvm1* virtual machine is up, and the application is running on that
 
 1. On the **Monitor - Overview** page, select **Service Health**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot that shows Service Health option selected from the left-hand side menu.](../media/5-monitor-overview.png)
+    :::image type="content" source="../media/5-monitor-overview.png" alt-text="Screenshot that shows Service Health option selected from the left-hand side menu.":::
 
 1. Select **Resource Health**.
 
 1. In the **Resource type** box, select **Load balancer**. In the list of resources, select **retailapplb**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Service Health - Resource health page that shows the retailapplb selected.](../media/5-service-health.png)
+    :::image type="content" source="../media/5-service-health.png" alt-text="Screenshot of the Service Health - Resource health page that shows the retailapplb selected.":::
 
 1. Wait a few minutes for the load balancer health to be evaluated.
 
 1. Under **Health history**, expand the topmost event and review the recommended steps. These steps suggest checking the VIP (routing rule) and DIP (health probe) endpoints in the load balancer.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Resource health page that shows health history including date, number of health events, status, description, and recommended steps.](../media/5-resource-health.png)
+    :::image type="content" source="../media/5-resource-health.png" alt-text="Screenshot of the Resource health page that shows health history including date, number of health events, status, description, and recommended steps.":::
 
 1. Go to the resource group **learn-ts-loadbalancer-rg**, and select **retailapplb**.
 
-1. Select **Load balancing rule** > **retailapprule**. This rule receives Tcp traffic on port 80 of the front-end IP address, and sends it to port 80 on the selected virtual machine in the back-end pool. This configuration appears to be correct, although the port used by the health probe looks suspicious. It's currently set to port 85.
+1. Select **Load balancing rules** > **retailapprule**. This rule receives Tcp traffic on port 80 of the front-end IP address, and sends it to port 80 on the selected virtual machine in the back-end pool. This configuration appears to be correct, although the port used by the health probe looks suspicious. It's currently set to port 85.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **retailapprule** page that shows the health probe is using  port 85.](../media/5-retailapprule.png)
+    :::image type="content" source="../media/5-retailapprule.png" alt-text="Screenshot of the **retailapprule** page that shows the health probe is using port 85.":::
 
 1. Close the **retailapprule** page.
 
@@ -128,8 +123,7 @@ The *retailappvm1* virtual machine is up, and the application is running on that
 
 1. Change the **Port** from 85 back to 80, and then select **Save**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **retailapphealthprobe** page that shows the port number updated to 80.](../media/5-retailapphealthprobe.png)
+    :::image type="content" source="../media/5-retailapphealthprobe.png" alt-text="Screenshot of the **retailapphealthprobe** page that shows the port number updated to 80.":::
 
 1. Wait a few minutes.
 
@@ -137,8 +131,7 @@ The *retailappvm1* virtual machine is up, and the application is running on that
 
 1. On the dashboard, select the chart showing the Health Probe Status and Data Path Availability metrics. The **Data Path Availability** metric should rise to 100, but the **Health Probe Status** metric will hover around 50. There's now a path available from the load balancer to at least one virtual machine, but only 50 percent of the virtual machines are showing as healthy.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Health Probe Status and Data Path Availability chart where the Data Path Availability is at 100 but Health Probe Status hovers around 50.](../media/5-probe-half-healthy.png)
+    :::image type="content" source="../media/5-probe-half-healthy.png" alt-text="Screenshot of the Health Probe Status and Data Path Availability chart where the Data Path Availability is at 100 but Health Probe Status hovers around 50.":::
 
     Select the chart to go to the metrics page for Load Balancer. This page enables you to refresh the chart and zoom in on a specific time period.
 
@@ -165,7 +158,7 @@ The problem might be caused by a network security rule blocking external traffic
 
 1. Select the **retailappnsg** network security group. This security group determines which traffic is allowed through the virtual network.
 
-1. Select **Inbound security rules**. Although there's a rule that allows incoming traffic from the load balancer running in the virtual network, there's no rule that permits traffic originating from outside the virtual network through port 80.
+1. Select **Inbound security rules**. While there's a rule that allows incoming traffic from the load balancer running in the virtual network, there's no rule permitting traffic originating from outside the virtual network through port 80.
 
 1. Select **Add**. The **Add inbound security rule** pane appears.
 
@@ -201,7 +194,7 @@ The problem might be caused by a network security rule blocking external traffic
 
 It seems that the *appretailvm2* virtual machine might not be handling requests properly. You need to check whether this virtual machine is up, and whether Load Balancer can connect to it.
 
-1. In Cloud Shell, sign in to the jump box again.
+1. In Cloud Shell, sign in to the jump box with the IP address and password from the previous command outputs
 
     ```bash
     ssh azureuser@<jump box ip address>
@@ -221,8 +214,7 @@ It seems that the *appretailvm2* virtual machine might not be handling requests 
 
 1. The **Overview** page shows that the virtual machine has stopped. Select **Start**, and wait for the machine to begin running.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot that shows the Overview page for the *retailappvm2* virtual machine with the start button highlighted.](../media/5-retailappvm2.png)
+    :::image type="content" source="../media/5-retailappvm2.png" alt-text="Screenshot that shows the Overview page for the *retailappvm2* virtual machine with the start button highlighted.":::
 
 1. Return to Cloud Shell connected to the jump box, and repeat the ping command.
 
@@ -284,20 +276,17 @@ It seems that the *appretailvm2* virtual machine might not be handling requests 
 
     The network security group has an inbound rule that blocks all outside traffic using the TCP protocol. This rule has a priority number lower than the rule (which opens port 80), so it takes precedence.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot that shows the inbound security rules for the NSG.](../media/5-inbound-security.png)
+    :::image type="content" source="../media/5-inbound-security.png" alt-text="Screenshot that shows the inbound security rules for the NSG.":::
 
 1. Select the **retailappvnetnsgrulevm2denyall** rule, change the priority to 300, and then select **Save**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing the edit page for the inbound rule.](../media/5-change-priority.png)
+    :::image type="content" source="../media/5-change-priority.png" alt-text="Screenshot showing the edit page for the inbound rule.":::
 
 1. Wait two minutes, and then go to the **Dashboard**.
 
 1. Select the chart that shows the **Health Probe Status** metric. The value of this metric should rise to 100. You might need to refresh the chart a few times.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing the Health Probe Status for the load balancer.](../media/5-probe-healthy.png)
+    :::image type="content" source="../media/5-probe-healthy.png" alt-text="Screenshot showing the Health Probe Status for the load balancer.":::
 
 1. Switch to Cloud Shell, and run the *stresstest* application again by using the load balancer's IP address.
 

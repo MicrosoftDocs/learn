@@ -1,1 +1,0 @@
-Your team needs to implement device message processing to support downstream data analysis and other downstream requirements. Your understanding of how IoT Hub uses message routing to processes messages and events will help to ensure that the implementation is successful.

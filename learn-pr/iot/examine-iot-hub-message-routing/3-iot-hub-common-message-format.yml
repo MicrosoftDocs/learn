@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-iot-hub-message-routing.examine-common-message-format
+title: Examine the common set of message features
+metadata:
+  title: Examine the common set of message features
+  description: "Examine the common set of message features"
+  ms.date: 02/06/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-iot-hub-common-message-format.md)]

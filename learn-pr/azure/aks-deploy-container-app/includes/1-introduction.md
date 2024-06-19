@@ -1,6 +1,6 @@
-Imagine you work for a growing video editing company that provides a cloud-based video rendering service. Your company is experiencing increased demand for its video rendering service because of its international expansion. They're looking for ways to scale the product to provide a better experience to all customers. Management tasked you to assess which Azure service would improve the ability to deploy your video rendering service to meet customer demand.
+Imagine you work for a growing video editing company that provides a cloud-based video rendering service. Your company is experiencing increased demand for its video rendering service because of its plans for international expansion. You need to look for new ways to scale the product to provide a better experience to all customers. By doing so, you're tasked to assess which Azure service would improve the ability to deploy your video rendering service to meet customer demand.
 
-You've identified Azure Kubernetes Service (AKS) as a potential solution. AKS meets the requirements that allow you to deploy your app and handle the company's increased growth. You want to understand how to deploy your app to an AKS cluster and allow customers access to the app's services.
+You identified Azure Kubernetes Service (AKS) as a business solution for deployment. AKS meets the requirements that allow you to deploy your app and handle the company's increased growth. You want to understand how to deploy your app to an AKS cluster and allow customers access to the app's services.
 
 In this module, deploy Kubernetes workloads declaratively to an AKS cluster by using manifest files. You can then create different deployment manifest files to deploy and expose your application to your users.
 
@@ -10,7 +10,6 @@ By the end of this module, you can:
 
 - Create and set up an AKS cluster.
 - Deploy Kubernetes workloads by using deployment YAML files.
-- Expose Kubernetes workloads by using services and ingress.
 
 ## Prerequisites
 

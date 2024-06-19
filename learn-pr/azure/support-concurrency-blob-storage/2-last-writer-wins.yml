@@ -4,11 +4,10 @@ title: Last Writer Wins
 metadata:
   title: Last Writer Wins
   description: Understanding concurrency issues with cloud based storage
-  ms.date: 04/06/2019
-  author: tamram
-  ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/06/2023
+  author: normesta
+  ms.author: normesta
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-last-writer-wins.md)]

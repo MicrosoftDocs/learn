@@ -1,8 +1,8 @@
 Some Azure Virtual Desktop procedures, such as installing Office on a master VHD image, assume you have elevated access on the VM, whether it's provisioned in Azure or Hyper-V Manager.
 
-As a Global Administrator in Azure Active Directory (Azure AD), you might not have access to all subscriptions and management groups in your directory. Below are methods to elevate access to all subscriptions and management groups.
+As a Global Administrator in Microsoft Entra ID, you might not have access to all subscriptions and management groups in your directory. Below are methods to elevate access to all subscriptions and management groups.
 
-:::image type="content" source="../media/global-admin-role-a10717c1.png" alt-text="Diagram that shows Global Administrator role in Azure Active Directory (Azure AD).":::
+:::image type="content" source="../media/global-admin-role-a10717c1.png" alt-text="Diagram that shows Global Administrator role in Microsoft Entra ID.":::
 
 
 ## Why would you need to elevate your access?
@@ -16,9 +16,9 @@ Global Administrators should consider the following scenarios for elevating acce
 
 ## How does elevated access work?
 
-Azure AD and Azure resources are secured independently from one another.
+Microsoft Entra ID and Azure resources are secured independently from one another.
 
-Azure AD role assignments do not grant access to Azure resources, and Azure role assignments do not grant access to Azure AD. However, if you are a Global Administrator in Azure AD, you can assign yourself access to all Azure subscriptions and management groups in your directory. Use this capability if you don't have access to Azure subscription resources. For example, for virtual machines or storage accounts, and you want to use your Global Administrator privilege to gain access to those resources.
+Microsoft Entra role assignments do not grant access to Azure resources, and Azure role assignments do not grant access to Microsoft Entra ID. However, if you are a Global Administrator in Microsoft Entra ID, you can assign yourself access to all Azure subscriptions and management groups in your directory. Use this capability if you don't have access to Azure subscription resources. For example, for virtual machines or storage accounts, and you want to use your Global Administrator privilege to gain access to those resources.
 
 When you elevate your access, you will be assigned the User Access Administrator role in Azure at root scope (/). This allows you to view all resources and assign access in any subscription or management group in the directory. User Access Administrator role assignments can be removed using Azure PowerShell, Azure CLI, or the REST API.
 
@@ -31,11 +31,11 @@ You should remove this elevated access once you have made the changes you need t
 
 Follow these steps to elevate access for a Global Administrator using the Azure portal.
 
-1.  Sign in to the Azure portal or the Azure Active Directory admin center as a Global Administrator.
-2.  Open **Azure Active Directory**.
+1.  Sign in to the Azure portal or the Microsoft Entra admin center as a Global Administrator.
+2.  Open **Microsoft Entra ID**.
 3.  Under **Manage**, select **Properties**.
 
-:::image type="content" source="../media/elevated-access-recommendation-image2-d645c7e4.png" alt-text="Select Properties for Azure Active Directory properties.":::
+:::image type="content" source="../media/elevated-access-recommendation-image2-d645c7e4.png" alt-text="Select Properties for Microsoft Entra properties.":::
 
 
 4.  Under **Access management for Azure resources**, set the toggle to **Yes**.
@@ -43,9 +43,9 @@ Follow these steps to elevate access for a Global Administrator using the Azure 
 :::image type="content" source="../media/elevated-access-recommendation-image3-1f9dd851.png" alt-text="Access management for Azure resources.":::
 
 
-When you set the toggle to **Yes**, you are assigned the User Access Administrator role in Azure role-based access control (RBAC) at root scope (/). This grants you permission to assign roles in all Azure subscriptions and management groups associated with this Azure AD directory. This toggle is only available to users who are assigned the Global Administrator role in Azure AD.
+When you set the toggle to **Yes**, you are assigned the User Access Administrator role in Azure role-based access control (RBAC) at root scope (/). This grants you permission to assign roles in all Azure subscriptions and management groups associated with this Microsoft Entra directory. This toggle is only available to users who are assigned the Global Administrator role in Microsoft Entra ID.
 
-When you set the toggle to **No**, the User Access Administrator role in Azure role-based access control (RBAC) is removed from your user account. You can no longer assign roles in all Azure subscriptions and management groups that are associated with this Azure AD directory. You can view and manage only the Azure subscriptions and management groups to which you have been granted access.
+When you set the toggle to **No**, the User Access Administrator role in Azure role-based access control (RBAC) is removed from your user account. You can no longer assign roles in all Azure subscriptions and management groups that are associated with this Microsoft Entra directory. You can view and manage only the Azure subscriptions and management groups to which you have been granted access.
 
 5.  Click **Save** to save your setting.
 
@@ -65,7 +65,7 @@ You should now have access to all subscriptions and management groups in your di
 To remove the User Access Administrator role assignment at root scope (/), follow these steps.
 
 1.  Sign in as the same user that was used to elevate access.
-2.  In the navigation list, click **Azure Active Directory** and then click **Properties**.
+2.  In the navigation list, click **Microsoft Entra ID** and then click **Properties**.
 3.  Set the **Access management for Azure resources** toggle back to **No**. Since this is a per-user setting, you must be signed in as the same user as was used to elevate access.
 
 If you try to remove the User Access Administrator role assignment on the Access control (IAM) pane, you'll see the following message. To remove the role assignment, you must set the toggle back to **No** or use Azure PowerShell, Azure CLI, or the REST API.

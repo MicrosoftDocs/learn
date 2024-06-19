@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Gain an overview of how to build a high-performing startup team. See topics like attributes of successful teams and how to use mentors.
-  ms.date: 02/11/2022
-  author: ryanmesches
-  ms.author: ryanmesches
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  ms.date: 06/17/2024
+  author: vhawk85
+  ms.author: vahughes
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

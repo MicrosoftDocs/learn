@@ -3,17 +3,17 @@ uid: learn.wwl.realize-integrated-analytical-solutions-with-azure-synapse-analyt
 metadata:
   title: Realize Integrated Analytical Solutions with Azure Synapse Analytics
   description: Realize Integrated Analytical Solutions with Azure Synapse Analytics
-  ms.date: 01/05/2022
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
+  ms.service: synapse-analytics
 title: Realize Integrated Analytical Solutions with Azure Synapse Analytics
 prerequisites: |
   Completion of Azure Data Fundamentals learning path.
 summary: |
   Learn how Azure Synapse Analytics enables you to perform different types of analytics through its’ components that can be used to build Modern Data Warehouses through to Advanced Analytical solutions.
-iconUrl: /training/achievements/realize-integrated-analytical-solutions-with-azure-synapse-analytics.svg
+iconUrl: /learn/achievements/realize-integrated-analytical-solutions-with-azure-synapse-analytics.svg
 levels:
 - beginner
 roles:
@@ -21,8 +21,8 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
-- data-warehousing
 - data-analytics
+- data-storage
 modules:
 - learn.wwl.introduction-to-azure-synapse-analytics
 - learn.wwl.survey-components-of-azure-synapse-analytics

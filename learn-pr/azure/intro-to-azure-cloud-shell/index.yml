@@ -3,17 +3,17 @@ uid: learn.intro-to-azure-cloud-shell
 metadata:
   moduleType: introduction        
   title: Introduction to Azure Cloud Shell
-  description: In this module you'll learn what Azure Cloud Shell does, how it works, and when you should choose to use Azure Cloud Shell as a solution to meet your organization’s needs. 
-  ms.date: 01/17/2023
+  description: In this module, you learn what Azure Cloud Shell does, how it works, and when you should choose to use Azure Cloud Shell as a solution to meet your organization’s needs. 
+  ms.date: 04/09/2024
   author: vrapolinario
   ms.author: viniap
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=cloud_advocates
+  ms.service: cloud-shell
 title: Introduction to Azure Cloud Shell
 summary: Describe Microsoft Azure Cloud Shell, learn how it works, and explore basic steps for its usage.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Describe Azure Cloud Shell and the functionality it provides.
     - Determine whether Azure Cloud Shell meets the needs of your organization.
     - Recognize how to use Azure Cloud Shell and persist files for multiple sessions.

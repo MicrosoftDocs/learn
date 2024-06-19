@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb
+metadata:
+  title: Migrate to vCore-based Azure Cosmos DB for MongoDB
+  description: "Migrate to vCore-based Azure Cosmos DB for MongoDB."
+  ms.date: 04/08/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: cosmos-db
+  ms.subservice: mongodb-vcore
+  ai-usage: human-only
+title: Migrate to vCore-based Azure Cosmos DB for MongoDB
+summary: Explore migrating to vCore-based Azure Cosmos DB for MongoDB, utilizing Azure Data Studio, MongoDB migration tools, and Azure Databricks for data migration.
+abstract: |
+  - Plan and assess the readiness of a migration from MongoDB to vCore-based Azure Cosmos DB for MongoDB.
+  - Use Azure Data Studio for migration assessment and execution.
+  - Employing native MongoDB tools for efficient data transfer.
+  - Use advanced migration techniques with Azure Databricks and Azure Database Migration Service.
+prerequisites: Before starting this module, you should be familiar with the Azure portal and MongoDB native transfer tools.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+units:
+- learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.introduction
+- learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.develop-migration-assessment-plan
+- learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.implement-offline-migration-using-mongodb-native-tools
+- learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.implement-offline-migration-using-azure-data-studio
+- learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.implement-online-migration-using-azure-databricks
+- learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.exercise-mongodb-native-tools
+- learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.knowledge-check
+- learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.summary
+badge:
+  uid: learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.badge

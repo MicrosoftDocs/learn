@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.define-active-directory-domain-services
+title: Define Active Directory Domain Services
+metadata:
+  title: Define Active Directory Domain Services
+  description: "Define Active Directory Domain Services"
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-define-active-directory-domain-services.md)]

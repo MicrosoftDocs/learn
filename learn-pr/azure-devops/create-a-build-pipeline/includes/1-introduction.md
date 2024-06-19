@@ -6,7 +6,7 @@ In this module, you'll help the team with their first task: setting up a continu
 
 This training module provides two options for running the pipeline that you create while completing the module.
 
-* Choose **Local development environment using a Microsoft-hosted agent** if you want to use a Microsoft-hosted agent to run your pipeline. To run pipelines on a Microsoft-hosted agent, your Azure DevOps organization must have at least one Microsoft-hosted parallel job. [Check your Microsoft-hosted parallel jobs count](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs) and if you don't have any:
+* Choose **Local development environment using a Microsoft-hosted agent** if you want to use a Microsoft-hosted agent to run your pipeline. To run pipelines on a Microsoft-hosted agent, your Azure DevOps organization must have at least one Microsoft-hosted parallel job. [Check your Microsoft-hosted parallel jobs count](/azure/devops/pipelines/licensing/concurrent-jobs#check-the-parallel-jobs-setting-directly) and if you don't have any:
   * [Request a free grant of parallel jobs](https://aka.ms/azpipelines-parallelism-request). The approval process for the free grant typically takes 2-3 business days. You can apply for the grant and return to complete the module when your request is approved.
   * [Pay for a parallel job](/azure/devops/pipelines/licensing/concurrent-jobs). If you want to use a Microsoft-hosted agent and don't want to wait 2-3 business days for the free grant, you can purchase a parallel job and complete the training using the paid job. For more information, see [Configure and pay for parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs).
 * Choose **GitHub Codespaces development environment using a self-hosted agent** if you don't have any parallel jobs and you don't want to wait 2-3 business days for the free grant in order to use a Microsoft-hosted agent. The GitHub Codespaces environment for this training module includes the required development tools, and provides a self-hosted agent that runs the pipeline that you create in the training module. This is not a typical production scenario, but it does provide an environment for completing this training module. GitHub Codespaces provides a free tier of [included usage hours and storage](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts) ([charges may apply if you exceed the free tier - check your usage](https://docs.github.com/billing/managing-billing-for-github-codespaces/viewing-your-github-codespaces-usage)).
@@ -37,7 +37,7 @@ After completing this module, you'll be able to:
 - Publish your builds so others can access them.
 - Use templates to build multiple configurations.
 
-## Prerequisites
+## Configure your environment
 
 The modules in this learning path and previous learning path form a progression.
 
@@ -48,7 +48,6 @@ To follow the progression from the beginning, be sure to first complete the [Get
 To complete this training module using a self-hosted agent with GitHub Codespaces you must have:
 
 - An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up). If you don't already have an Azure DevOps organization, create a [free organization](/azure/devops/pipelines/get-started/pipelines-sign-up) before you begin. If you have completed the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path prerequisite, use that Azure DevOps organization.
-- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). If you don't already have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 - A [GitHub](https://github.com/join?azure-portal=true) account
 
 ::: zone-end

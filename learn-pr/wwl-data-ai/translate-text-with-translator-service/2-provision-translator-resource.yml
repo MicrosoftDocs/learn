@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.translate-text-with-translator-service.provision-translator-resource
-title: Provision a Translator resource
+title: Provision an Azure AI Translator resource
 metadata:
-  title: Provision a Translator resource
-  description: "Provision a Translator resource"
-  ms.date: 05/11/2022
+  title: Provision an Azure AI Translator resource
+  description: "Provision an Azure AI Translator resource"
+  ms.date: 12/05/2023
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 2
 content: |
   [!include[](includes/2-provision-translator-resource.md)]

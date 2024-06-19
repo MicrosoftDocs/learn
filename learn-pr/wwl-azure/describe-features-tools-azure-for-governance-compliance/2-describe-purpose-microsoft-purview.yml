@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-features-tools-azure-for-governance-compliance.describe-purpose-microsoft-purview
+title: Describe the purpose of Microsoft Purview
+metadata:
+  title: Describe the purpose of Microsoft Purview
+  description: "Describe the purpose of Microsoft Purview"
+  ms.date: 03/13/2024
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-describe-purpose-microsoft-purview.md)]

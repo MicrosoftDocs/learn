@@ -13,6 +13,6 @@ For more information about Azure Monitor, check out the following articles:
 
 - [Azure Monitor overview](/azure/azure-monitor/overview)
 - [Get started with log queries in Azure Monitor](/azure/azure-monitor/log-query/get-started-queries)
-- [Writing efficient log queries in Azure Monitor](/azure/azure-monitor/log-query/log-query-performance)
-- [Create and share dashboards of Log Analytics data](/azure/azure-monitor/learn/tutorial-logs-dashboards)
-- [Visualizing data from Azure Monitor](/azure/azure-monitor/visualizations)
+- [Optimize log queries in Azure Monitor](/azure/azure-monitor/log-query/log-query-performance)
+- [Create and share dashboards of Log Analytics data](/azure/azure-monitor/visualize/tutorial-logs-dashboards)
+- [Analyze and visualize monitoring data](/azure/azure-monitor/best-practices-analysis)

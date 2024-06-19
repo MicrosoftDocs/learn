@@ -3,12 +3,11 @@ uid: learn.azure.troubleshoot-tightly-coupled-hpc-apps.4-debugging-performance-b
 title: Debug performance bottlenecks
 metadata:
   title: Debug performance bottlenecks
-  description: Learn about preparing to run a large and tightly coupled HPC application, how to check if an HPC application is underperforming, and how to correct underperformance.
-  ms.date: 03/01/2021
+  description: Learn about preparing to run a large and tightly coupled high-performance computing (HPC) application. Including, how to check if an HPC application is underperforming, and how to correct underperformance.
+  ms.date: 05/29/2024
   author: garvct
   ms.author: cogarvey
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-debugging-performance-bottlenecks.md)]

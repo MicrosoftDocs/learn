@@ -6,9 +6,8 @@ metadata:
   description: Learn about common programming mistakes, the error messages they produce, and how to resolve the errors.
   author: saifeemustafaq
   ms.author: chnoring
-  ms.date: 11/18/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/04/2023
+  ms.topic: unit
   ms.custom: nextgen
 durationInMinutes: 4
 content: |

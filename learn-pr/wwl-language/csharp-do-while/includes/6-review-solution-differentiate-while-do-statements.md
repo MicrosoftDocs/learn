@@ -1,8 +1,4 @@
-
-The following examples should use a `do` because you know that you need to execute the code block at least once. You CAN also 
-use a `while` to achieve the same result. Some developers feel that the logic of a `while` makes the code more readable. If that is
-the case for you, you can choose to implement a `while`. In this case, be aware that most code compilers will optimize your code for you by
-converting the iteration statement to a `do-while`.
+The following examples should use a `do` because you know that you need to execute the code block at least once. You CAN also use a `while` to achieve the same result. Some developers feel that the logic of a `while` makes the code more readable. If that is the case for you, you can choose to implement a `while`. In this case, be aware that most code compilers optimize your code for you by converting the iteration statement to a `do-while`.
 
 ## Project 1 code
 
@@ -86,7 +82,7 @@ readResult = Console.ReadLine();
 
 The following code is one possible solution for challenge project 3 from the previous unit.
 
-The code uses a `for` statement for the outer loop because you cannot modify the value assigned to a 'foreach iteration variable'. You could work around this by declaring an additional string variable inside the `foreach` loop, but then you would be adding unwanted complexity to your code logic. In other words, using the iteration statement `foreach (string myString in myStrings)` and then attempting to process the `myString` variable will generate a compilation error.
+The code uses a `for` statement for the outer loop because you cannot modify the value assigned to a 'foreach iteration variable'. You could work around this by declaring an extra string variable inside the `foreach` loop, but then you would be adding unwanted complexity to your code logic. In other words, using the iteration statement `foreach (string myString in myStrings)` and then attempting to process the `myString` variable generates a compilation error.
 
 The code uses a `while` statement for the inner loop because, depending on the value of the data string, the code block may not be executed (when the string does not contain a period). You should not use a `do` statement in situations where the iteration block may not need to be executed.  
 
@@ -122,9 +118,10 @@ for (int i = 0; i < stringsCount; i++)
 
         Console.WriteLine(mySentence);
     }
-
-    // the remaining portion of speciesToListSelection is the final species name 
+ 
     mySentence = myString.Trim();
     Console.WriteLine(mySentence);
 }
 ```
+
+If you're successful, congratulations! If you had trouble, take the time to review the solution and try to understand how it works.

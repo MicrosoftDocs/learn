@@ -4,13 +4,10 @@ title: Introduction to cloud computing
 metadata:
   title: Introduction to cloud computing
   description: "Introduction to cloud computing"
-  ms.date: 01/24/2023
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/2-introduction-cloud-compute.md)]

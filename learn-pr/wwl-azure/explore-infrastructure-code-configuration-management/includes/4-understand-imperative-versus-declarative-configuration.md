@@ -7,7 +7,7 @@ Two of the main methods of approach are:
 :::image type="content" source="../media/declarative-703bb981.png" alt-text="An arrow points from a script icon to an icon of two cogs representing coding procedures.":::
 
 
- -  **Imperative** (procedural). In the imperative approach, the script states the *how* for the final state of the machine by executing the steps to get to the finished state. It defines what the final state needs to be but also includes how to achieve that final state. It also can consist of coding concepts such as *for*, \**if-then*, *loops*, and matrices.
+ -  **Imperative** (procedural). In the imperative approach, the script states the *how* for the final state of the machine by executing the steps to get to the finished state. It defines what the final state needs to be but also includes how to achieve that final state. It also can consist of coding concepts such as *for*, *if-then*, *loops*, and matrices.
 
 :::image type="content" source="../media/imperative-a9e6a2ad.png" alt-text="An arrow points from a script icon to an icon of two cogs representing coding procedures, followed by another arrow pointing to an image representing an application in its final state.":::
 

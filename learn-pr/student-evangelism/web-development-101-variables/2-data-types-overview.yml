@@ -6,9 +6,10 @@ metadata:
   ms.date: 06/03/2021
   author: chloecodesthings
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-js
 title: Overview of variables
 durationInMinutes: 1
 content: |

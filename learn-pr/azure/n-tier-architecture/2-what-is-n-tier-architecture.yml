@@ -3,11 +3,10 @@ uid: learn.n-tier-architecture.2-what-is-n-tier-architecture
 metadata:
   title: What is an N-tier architecture?
   description: What is an N-tier architecture?
-  ms.date: 01/15/2019
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 02/17/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 title: What is an N-tier architecture?
 durationInMinutes: 7
 content: |

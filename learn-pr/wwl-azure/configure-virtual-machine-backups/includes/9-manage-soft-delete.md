@@ -1,5 +1,4 @@
-
-Azure Storage now offers the _soft delete_ option for Azure Blob objects. With this feature, you can more easily recover your data when it's erroneously modified or deleted by an application or other storage account user.
+Azure Storage now offers the _soft delete_ option for Azure Blob objects. With this feature, you can more easily recover your data when it's modified or deleted.
 
 :::image type="content" source="../media/soft-delete-93edca4c.png" alt-text="Flowchart that shows how backup items remain in the soft delete state for 14 days until the item is permanently deleted." border="false":::
 

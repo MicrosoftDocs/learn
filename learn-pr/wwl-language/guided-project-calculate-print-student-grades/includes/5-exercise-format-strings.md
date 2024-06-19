@@ -1,5 +1,3 @@
-
-
 In this exercise, you'll modify the console output from the previous exercise to achieve the reporting format specified by the teacher.
 
 ## Format the console output

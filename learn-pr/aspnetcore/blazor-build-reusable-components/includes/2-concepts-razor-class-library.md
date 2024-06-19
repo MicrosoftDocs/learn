@@ -36,7 +36,7 @@ A class library is a common package delivery structure in .NET applications, and
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
@@ -47,7 +47,7 @@ A class library is a common package delivery structure in .NET applications, and
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" />
   </ItemGroup>
 
 </Project>
@@ -71,10 +71,13 @@ This component interacts with other Blazor components and pages that reference i
 
 ### Static asset delivery
 
-You can reference the contents of the *wwwroot* folder relatively among the other contents of that folder and the components' individual CSS files, such as *Component1.razor.css*, as files in the same base folder. For example, the default CSS adds a background image style that uses the *background.png* image in the *wwwroot* folder. No path is required to make this reference from the CSS to the content that resides in the *wwwroot* folder.
+You can reference the contents of the *wwwroot* folder relatively among the other contents of that folder and the components' individual CSS files, such as *Component1.razor.css*, as files in the same base folder. For example, the default CSS adds a 2 pixel dashed red border and a background image style that uses the *background.png* image in the *wwwroot* folder. No path is required to make this reference from the CSS to the content that resides in the *wwwroot* folder.
 
 ```css
 .my-component {
+    border: 2px dashed red;
+    padding: 1em;
+    margin: 1em 0;
     background-image: url('background.png');
 }
 ```

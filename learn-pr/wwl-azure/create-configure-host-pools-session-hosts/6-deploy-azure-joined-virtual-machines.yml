@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-configure-host-pools-session-hosts.deploying-azure-ad-joined-virtual-machines-in-azure-virtual-desk
-title: Deploying Azure AD-joined virtual machines in Azure Virtual Desktop
+title: Deploying Microsoft Entra joined virtual machines in Azure Virtual Desktop
 metadata:
-  title: Deploying Azure AD-joined virtual machines in Azure Virtual Desktop
-  description: "Deploying Azure AD-joined virtual machines in Azure Virtual Desktop"
-  ms.date: 08/01/2022
+  title: Deploying Microsoft Entra joined virtual machines in Azure Virtual Desktop
+  description: "Deploying Microsoft Entra joined virtual machines in Azure Virtual Desktop"
+  ms.date: 09/25/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/6-deploy-azure-joined-virtual-machines.md)]

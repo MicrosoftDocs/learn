@@ -2,11 +2,10 @@
 uid: learn.iot.create-your-first-app-with-azure-maps.summary
 metadata:
   description: Summarizes the learning objectives, the scenario, next steps, and ends with a short knowledge check.
-  ms.date: 6/1/2020
+  ms.date: 9/01/2022
   author: PeterTurcan
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Summary
 durationInMinutes: 6
 content: |

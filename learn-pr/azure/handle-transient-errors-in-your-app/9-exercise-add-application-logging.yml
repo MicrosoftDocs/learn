@@ -4,11 +4,12 @@ title: Exercise - Monitor transient errors in your app using logging
 metadata:
   title: Exercise - Monitor transient errors in your app using logging
   description: In this hands-on lab, without using any external libraries, add additional logging to the chat app.
-  ms.date: 04/10/2019
+  ms.date: 08/01/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
   zone_pivot_groups: dev-lang-csharp-java-node
 interactive: bash
 azureSandbox: true

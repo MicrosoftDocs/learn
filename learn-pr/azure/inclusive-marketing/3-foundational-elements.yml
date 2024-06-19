@@ -4,11 +4,10 @@ title: Explain the foundational elements of inclusive marketing
 metadata:
   title: Explain the foundational elements of inclusive marketing
   description: Explain the foundational elements to consider when creating inclusive marketing.
-  ms.date: 04/16/2020
+  ms.date: 05/18/2023
   author: asajohnson
   ms.author: asjohnso
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-foundational-elements.md)]

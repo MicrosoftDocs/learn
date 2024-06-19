@@ -149,8 +149,21 @@
                 ],
                 "dest": "modules"
             },
-             {
+            {
                 "src": "commercial-marketplace",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "contributors",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -317,6 +330,32 @@
                     "**/resources/**"
                 ],
                 "dest": "./modules/partner-center/"
+            },
+            {
+                "src": "philanthropies",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "pwa",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
             },
             {
                 "src": "pytorch",
@@ -642,7 +681,20 @@
                     "**/resources/**"
                 ],
                 "dest": "modules"
-            },           
+            },
+			{
+                "src": "permissions-managements",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
             {
                 "files": [
                     "**/*.md",

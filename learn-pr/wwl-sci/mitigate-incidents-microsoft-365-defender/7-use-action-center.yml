@@ -4,13 +4,10 @@ title: Use the action center
 metadata:
   title: Use the action center
   description: "Use the action center"
-  ms.date: 02/27/2023
+  ms.date: 01/24/2024
   author: wwlpublish
-  ms.author: bneeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-azureSandbox: false
-labModal: false
+  ms.author: kelawson
+  ms.topic: unit
 durationInMinutes: 14
 content: |
   [!include[](includes/7-use-action-center.md)]

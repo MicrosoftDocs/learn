@@ -11,13 +11,13 @@ Example layers of security might include:
 - **Application** layer security to ensure applications are secure and free of security vulnerabilities.
 - **Data** layer security including controls to manage access to business and customer data and encryption to protect data.
 
-:::image type="content" source="../media/4-defense-depth.png" alt-text="Defense in depth uses multiple layers of security to protect sensitive data.":::
+:::image type="content" source="../media/4-defense-depth.png" alt-text="Diagram showing defense in depth layers of security which are used to protect sensitive data.":::
 
 ### Confidentiality, Integrity, Availability (CIA)
 
 As described above, a defense in-depth strategy uses a series of mechanisms to slow the advance of an attack. All the different mechanisms (technologies, processes, and training) are elements of a cybersecurity strategy, whose goals include ensuring confidentiality, integrity, and availability; often referred to as CIA.
 
-:::image type="content" source="../media/4-confidentiality-integrity-availability.png" alt-text="Confidentiality, Integrity, Availability (CIA)":::
+:::image type="content" source="../media/4-confidentiality-integrity-availability.png" alt-text="Diagram showing the Confidentiality, Integrity, Availability (CIA) triangle.":::
 
 - **Confidentiality** refers to the need to keep confidential sensitive data such as customer information, passwords, or financial data. You can encrypt data to keep it confidential, but then you also need to keep the encryption keys confidential. Confidentiality is the most visible part of security; we can clearly see need for sensitive data, keys, passwords, and other secrets to be kept confidential.
 

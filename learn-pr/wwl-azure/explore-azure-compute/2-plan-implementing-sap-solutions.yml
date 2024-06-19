@@ -3,12 +3,13 @@ uid: learn.wwl.explore-azure-compute.plan-for-implementing-sap-solutions
 title: Plan for implementing SAP solutions
 metadata:
   title: Plan for implementing SAP solutions
-  description: "Plan for implementing SAP solutions"
-  ms.date: 04/21/2023
+  description: "Plan for implementing SAP solutions."
+  ms.date: 06/07/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/2-plan-implementing-sap-solutions.md)]

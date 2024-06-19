@@ -7,10 +7,10 @@ metadata:
   title: Exercise - Add parameters and decorators
   description: Learn about parameters and types and how to apply decorators to document and restrict the values of your parameters.
   ms.date: 01/03/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom: devx-track-bicep
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 8
 content: |

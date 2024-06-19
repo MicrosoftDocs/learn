@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-deployment-stacks.deployment-stack-resource
+title: The deployment stacks resource
+metadata:
+  title: The deployment stacks resource
+  description: Learn about the deployment stacks resource in Azure Resource Manager.
+  ms.date: 08/01/2023
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: unit
+durationInMinutes: 7
+content: | 
+  [!include[](includes/4-deployment-stack-resource.md)]

@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure
+metadata:
+  title: Modernize and implement high availability for SAP workloads in Azure
+  description: "Explore high availability and disaster recovery support of Azure for SAP workloads. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.service: azure
+title: Modernize and implement high availability for SAP workloads in Azure
+summary: This module explores high availability and disaster recovery support of Azure for SAP workloads, such as SAP application servers, SAP ASCS-SCS instances, DBMS instances, and SAP HANA.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore high availability and disaster recovery support of Azure for SAP workloads.
+  - Explore high availability of SAP workloads.
+  - Examine failover clustering.
+  - Explore deployment scenarios.
+  - Explore high availability of SAP application servers.
+  - Explore high availability of SAP ASCS-SCS instances.
+  - Explore SAP HANA availability.
+  - Explore SQL Server high availability for SAP in Azure.
+  - Explore Oracle high availability for SAP in Azure.
+  - Examine high availability capabilities of Azure infrastructure.
+  - Explore Availability Zones.
+prerequisites: |
+  Before taking this training, you should complete:
+  *   Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam.
+  *   SAP HANA or NetWeaver training.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.introduction
+- learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-high-availability-disaster-recovery-support-azure-sap-workloads
+- learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-high-availability-sap-workloads
+- learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.examine-failover-clustering
+- learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-deployment-scenarios
+- learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-high-availability-sap-application-servers
+- learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-high-availability-sap-ascs-scs-instances
+- learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-sap-hana-availability
+- learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-sql-server-availability
+- learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-oracle-high-availability
+- learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.examine-high-availability-capabilities-azure-infrastructure
+- learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-availability-zones
+- learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.knowledge-check
+- learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.summary
+badge:
+  uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.badge

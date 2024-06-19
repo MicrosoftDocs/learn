@@ -1,15 +1,14 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.customize-clusters-azure-cyclecloud.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: This is a knowledge check unit.
-  ms.date: 06/14/2021
+  ms.date: 02/01/2024
   author: anhoward
   ms.author: anhoward
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
 quiz:
@@ -38,12 +37,12 @@ quiz:
       explanation: "This command requires that you first import the template."
   - content: "You created an Azure CycleCloud cluster based on the GitHub Slurm repository. Then, you configured its nodes with a cloud-init script. You need to connect to a cluster node from an Azure Cloud Shell session to validate that the script runs successfully. What authentication method should you use?"
     choices:
-    - content: "Azure Active Directory"
+    - content: "Microsoft Entra ID"
       isCorrect: false
-      explanation: "Slurm cluster nodes created based on the Azure CycleCloud GitHub Slurm repository don't support Azure Active Directory authentication."
-    - content: "Azure Active Directory Domain Services"
+      explanation: "Slurm cluster nodes created based on the Azure CycleCloud GitHub Slurm repository don't support Microsoft Entra authentication."
+    - content: "Microsoft Entra Domain Services"
       isCorrect: false
-      explanation: "Slurm cluster nodes created based on the Azure CycleCloud GitHub Slurm repository don't support Azure Active Directory Domain Services authentication."
+      explanation: "Slurm cluster nodes created based on the Azure CycleCloud GitHub Slurm repository don't support Microsoft Entra Domain Services authentication."
     - content: "SSH keys"
       isCorrect: true
       explanation: "This connection relies on SSH key-based authentication."

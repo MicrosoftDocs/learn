@@ -5,10 +5,9 @@ metadata:
   title: Knowledge check
   description: Demonstrate your understanding of Azure Arc data controller.
   ms.date: 12/19/2022
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: MikeRayMSFT
+  ms.author: mikeray
+  ms.topic: unit
 durationInMinutes: 3
 content: |
 quiz:
@@ -32,7 +31,7 @@ quiz:
     - content: 'Auto upgrade and patching'
       isCorrect: false
       explanation: 'Incorrect. you can pull/push container images to a local registry.'
-    - content: 'Azure Active Directory Authentication'
+    - content: 'Microsoft Entra authentication'
       isCorrect: true
       explanation: 'Correct. Indirectly connected mode supports Kubernetes authentication Active Directory for SQL endpoints.'
   - content: 'Which deployment options can be used for an indirectly connected mode data controller?'

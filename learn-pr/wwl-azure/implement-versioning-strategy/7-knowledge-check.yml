@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-versioning-strategy.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices is a correct fix if an existing package is broken or buggy?"
+    choices:
+    - content: "Use an older version."
+      isCorrect: false
+      explanation: "Incorrect. You need to publish a new version. Replacing or updating an existing version of a package is not allowed. Most of the package feeds do not allow operations that would change an existing version."
+    - content: "Publish a new version."
+      isCorrect: true
+      explanation: "Correct. You need to publish a new version. Replacing or updating an existing version of a package is not allowed. Most of the package feeds do not allow operations that would change an existing version."
+    - content: "Repair and save."
+      isCorrect: false
+      explanation: "Incorrect. You need to publish a new version. Replacing or updating an existing version of a package is not allowed. Most of the package feeds do not allow operations that would change an existing version."
+  - content: "Which of the following action is required to make a package visible in release views other than @local?"
+    choices:
+    - content: "Promote."
+      isCorrect: true
+      explanation: "Correct. You can promote packages to Release and Prerelease views as the quality indicator."
+    - content: "Move."
+      isCorrect: false
+      explanation: "Incorrect. You can promote packages to Release and Prerelease views as the quality indicator."
+    - content: "Push."
+      isCorrect: false
+      explanation: "Incorrect. You can promote packages to Release and Prerelease views as the quality indicator."
+  - content: "Which of the following choices isn't a default feed view in Azure Artifacts?"
+    choices:
+    - content: "Remote."
+      isCorrect: true
+      explanation: "Correct. Feeds in Azure Artifacts have three different views by default. These views are Release, Prerelease, and Local."
+    - content: "Prerelease."
+      isCorrect: false
+      explanation: "Incorrect. Feeds in Azure Artifacts have three different views by default. These views are Release, Prerelease, and Local."
+    - content: "Local."
+      isCorrect: false
+      explanation: "Incorrect. Feeds in Azure Artifacts have three different views by default. These views are Release, Prerelease, and Local."
