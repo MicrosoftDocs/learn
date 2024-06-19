@@ -47,7 +47,7 @@ If you need to upgrade an older Lustre client version on your Linux system, see 
 
 Mount all of your clients to the file system's MGS IP address. The **Client connection** page in the Azure portal shows the IP address and gives a sample `mount` command that you can copy and use to mount clients.
 
-:::image type="content" source="media/client-connection.png" alt-text="Screenshot of client connection page in the portal." lightbox="media/client-connection.png":::
+:::image type="content" source="../media/client-connection.png" alt-text="Screenshot of client connection page in the portal." lightbox="../media/client-connection.png":::
 
 The `mount` command includes three components:
 

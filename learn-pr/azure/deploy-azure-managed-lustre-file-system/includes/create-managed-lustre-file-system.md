@@ -28,7 +28,7 @@ On the **Basics** tab, you provide essential information about your Azure Manage
 
 The following screenshot shows an example of the **Basics** tab for creating an Azure Managed Lustre file system in the Azure portal:
 
-:::image type="content" source="./media/basics-tab.png" alt-text="A screenshot showing the Basics tab for creating an Azure Managed Lustre file system in the Azure portal." lightbox="./media/basics-tab.png":::
+:::image type="content" source="../media/basics-tab.png" alt-text="A screenshot showing the Basics tab for creating an Azure Managed Lustre file system in the Azure portal." lightbox="../media/basics-tab.png":::
 
 When you finish entering details on the **Basics** tab, select **Next: Advanced** to continue.
 
@@ -74,7 +74,7 @@ To configure blob integration, follow these steps:
 1. In the **Logging container** field, select the container where you want to store import/export logs. The logs must be stored in a separate container from the data container, but the containers must be in the same storage account.
 1. In the **Import prefix** fields, you can optionally supply one or more prefixes to filter the data imported into the Azure Managed Lustre file system. The default import prefix is `/`, and the default behavior imports the contents of the entire blob container. To learn more about import prefixes, see [Import prefix](/azure/azure-managed-lustre/blob-integration.md#import-prefix).
 
-:::image type="content" source="./media/advanced-blob-integration.png" alt-text="A screenshot showing blob integration settings on Advanced tab in Azure Managed Lustre create flow." lightbox="./media/advanced-blob-integration.png":::
+:::image type="content" source="../media/advanced-blob-integration.png" alt-text="A screenshot showing blob integration settings on Advanced tab in Azure Managed Lustre create flow." lightbox="../media/advanced-blob-integration.png":::
 
 When you finish entering details on the **Advanced settings** tab, you can optionally select **Next: Disk encryption keys** to enter details about managing your own encryption keys. If you don't want to manage your own encryption keys, select **Review + create**.
 
@@ -95,6 +95,6 @@ If validation fails, then the portal indicates which settings need to be modifie
 
 The following image shows the **Review + create** tab before the creation of a new file system:
 
-:::image type="content" source="./media/review-create-tab.png" alt-text="A screenshot showing the review and create tab in Azure Managed Lustre create flow." lightbox="./media/review-create-tab.png":::
+:::image type="content" source="../media/review-create-tab.png" alt-text="A screenshot showing the review and create tab in Azure Managed Lustre create flow." lightbox="../media/review-create-tab.png":::
 
 Select **Create** to begin deployment of the Azure Managed Lustre file system.

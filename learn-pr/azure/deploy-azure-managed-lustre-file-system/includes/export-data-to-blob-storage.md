@@ -13,7 +13,7 @@ Follow these steps to create an export job in the Azure portal:
 
 The following screenshot shows the export job configuration settings in the Azure portal:
 
-:::image type="content" source="./media/create-archive-job-options.png" alt-text="Screenshot showing portal setup for creating an export (archive) job." lightbox="./media/create-archive-job-options.png":::
+:::image type="content" source="../media/create-archive-job-options.png" alt-text="Screenshot showing portal setup for creating an export (archive) job." lightbox="../media/create-archive-job-options.png":::
 
 ## Monitor or cancel an export job
 
