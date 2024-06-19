@@ -3,7 +3,7 @@ uid: learn.customizing-dotnet-aspire-existing-resources.customizing-connection-s
 title: Customizing connection strings by using .NET Aspire manifests
 metadata:
   title: Customizing connection strings by using .NET Aspire manifests
-  description: In this unit, you'll about the manifest file format that deployment tools use to configure deployments of .NET Aspire solutions. You'll use this knowledge to configure values such as connection strings for backing services.
+  description: In this unit, you'll learn about the manifest file format that deployment tools use to configure .NET Aspire solutions. You'll use this knowledge to configure values such as connection strings for backing services.
   author: camsoper
   ms.author: casoper
   ms.topic: unit
