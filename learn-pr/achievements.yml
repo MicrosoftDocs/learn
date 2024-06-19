@@ -3628,3 +3628,8 @@ achievements:
   title: Getting started with Visual Studio for Windows 10 app development
   summary: Visual Studio is the development tool used to create, debug, and deploy Windows 10 applications.
   iconUrl: /training/achievements/introduction-to-visual-studio-for-windows10-dev.svg
+- uid: learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.badge
+  type: badge
+  title: Send and receive data using Azure Data Share and transform data using Azure Data Factory
+  summary: Learn how to ingest data from Azure Data Share into Azure Data Factory pipelines to build automated ingestion pipelines.
+  iconUrl: /training/achievements/receive-data-with-azure-data-share-transform-with-azure-data-factory.svg
