@@ -17,7 +17,7 @@ An Azure shared disk is created as a *managed disk*. A managed disk is a virtual
 
 Azure shared disks are available on the following disk types:
 
-- Ultra Disks. These disks deliver high throughput, high I/O operations per second (IOPS), and consistent low latency disk storage for Azure Infrastructure as a service (IaaS) VMs. By using Ultra Disks, you can dynamically change a disk's performance without restarting your VMs. Ultra Disks have the fastest performance on Azure along with low submillisecond latencies. They're scalable to 64 tebibytes (TiB).
+- Ultra Disks. These disks deliver high throughput, high I/O operations per second (IOPS), and consistent low latency disk storage for Azure infrastructure as a service (IaaS) VMs. By using Ultra Disks, you can dynamically change a disk's performance without restarting your VMs. Ultra Disks have the fastest performance on Azure along with low submillisecond latencies. They're scalable to 64 tebibytes (TiB).
 - Premium SSD v2 offers higher performance than Premium SSD while also generally being less costly. You can individually tweak the performance of Premium SSD v2 at any time, allowing your workloads to be more cost efficient.
 - Premium SSD (P15 and greater). Premium SSDs use solid-state drives (SSDs) to deliver high-performance, low-latency disk support for VMs running I/O-intensive workloads.
 - Standard SSDs are optimized for workloads that need consistent performance at lower IOPS levels than Premium SSD or Premium SSD v2.
