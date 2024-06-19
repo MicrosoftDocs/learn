@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.customizing-dotnet-aspire-existing-resources.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "In this unit, you'll answer questions about customizing a deployed .NET Aspire solution to use Azure resources to check the knowledge you've gained in this module."
+  ms.date: 3/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom:
+  - team=cloud_advocates
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "You are preparing to deploy a .NET Aspire solution to your Azure subscription. You want to add an Azure Storage account by editing the Bicep files. How can you generate Bicep files to edit before you deploy?"
+    choices:
+    - content: "Run the azd init command."
+      isCorrect: false
+      explanation: "Incorrect. The azd init command initializes the deployment and creates manifest files but doesn't create Bicep files."
+    - content: "Run the azd infra synth command."
+      isCorrect: true
+      explanation: "Correct. The azd infra synth command creates the Bicep files but doesn't deploy the solution to Azure."
+    - content: "Run the azd up command."
+      isCorrect: false
+      explanation: "Incorrect. The azd up command both creates Bicep files and runs the deployment so you have no opportunity to edit them."
+  - content: "You are deploying a .NET Aspire solution to Azure and you want it to send telemetry data to Azure Application Insights. When you run the deployment, an Application Insights instance is created but no telemetry data is displayed in it. What should you do?"
+    choices:
+    - content: "Add a package and code to the Service Defaults project to enable the Azure Monitor OpenTelemetry Exporter."
+      isCorrect: true
+      explanation: "Correct. If the Application Insights instance is created then you have configured the app host correctly but telemetry will not be sent to it until you add the Azure.Monitor.OpenTelemetry.AspNetCore package to the Service Defaults project and enable it in code."
+    - content: "Add a package and code to the web app and API projects to enable the Azure Monitor OpenTelemetry Exporter."
+      isCorrect: false
+      explanation: "Incorrect. You don't need to make any changes to your microservices for the solution to send data to Application Insights."
+    - content: "Add a package and code to the app host project to enable the Azure Monitor OpenTelemetry Exporter."
+      isCorrect: false
+      explanation: "Incorrect. If the Application Insights instance is created then you have configured the app host correctly but telemetry will not be sent to it until you make changes elsewhere in the solution."

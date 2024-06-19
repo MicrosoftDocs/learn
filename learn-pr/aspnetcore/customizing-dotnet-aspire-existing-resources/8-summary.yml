@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.customizing-dotnet-aspire-existing-resources.summary
+title: summary
+metadata:
+  title: Summary
+  description: In this unit, you'll review what you've learned about using Azure resources with deployed .NET Aspire solutions.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]

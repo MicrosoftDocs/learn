@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.customizing-dotnet-aspire-existing-resources.exercise-using-azure-resources
+title: Exercise - Using Azure resources with a .NET Aspire solution
+metadata:
+  title: Exercise - Using Azure resources with a .NET Aspire solution
+  description: In this unit, you'll configure a .NET Aspire solution to use an Azure Cache for Redis instance for output caching and Azure Application Insights for telemetry.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-using-azure-resources.md)]
