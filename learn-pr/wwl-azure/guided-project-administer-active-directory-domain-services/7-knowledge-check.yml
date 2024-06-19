@@ -35,7 +35,7 @@ quiz:
       explanation: "Incorrect. While the Global Catalog does contain some credential information, its primary purpose isn't to act as central storage for credentials but to assist in searches across the forest."
     - content: "To contain a partial, read-only copy of all objects in a forest to speed up searches."
       isCorrect: true
-      explanation: "Correct: The Global Catalog speeds up searches across the forest by storing a partial, read-only copy of all objects."
+      explanation: "Correct. The Global Catalog speeds up searches across the forest by storing a partial, read-only copy of all objects."
   - content: "Which of the following operations master roles is unique to each domain in AD DS?"
     choices:
     - content: "Schema master"

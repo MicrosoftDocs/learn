@@ -1,4 +1,5 @@
 
+This is a guided project, where you complete a series of tasks. It is essential to complete the units in order. Each unit requires resources and configuration from previous units in order to function correctly.
 
 ## Project overview
 
