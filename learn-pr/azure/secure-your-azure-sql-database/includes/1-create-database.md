@@ -11,7 +11,7 @@ In this unit, you set up the resources that you use throughout this module. Envi
     ```bash
     export ADMINLOGIN='[ServerAdmin]'
     export PASSWORD='[password]'
-    export SERVERNAME=server$RANDOM
+    export SERVERNAME=[server-name]
     export RESOURCEGROUP=<rgn>[sandbox resource group name]</rgn>
     export LOCATION=$(az group show --name $RESOURCEGROUP | jq -r '.location')
     ```
