@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.cloud-adoption-framework-migrate.5-common-tech-platforms
-title: Common tech platforms
+uid: learn.cloud-adoption-framework-migrate.prepare
+title: Prepare for your migration
 metadata:
-  title: Common tech platforms
+  title: Prepare for your migration
   description: Tailwind Traders is preparing its cloud environment. Learn more about the company's cloud portfolio to help it find the best governance solutions for its workloads.
   ms.date: 10/30/2023
   author: Zimmergren
@@ -10,5 +10,5 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-common-tech-platforms.md)]
+  [!include[](includes/3-prepare.md)]
   

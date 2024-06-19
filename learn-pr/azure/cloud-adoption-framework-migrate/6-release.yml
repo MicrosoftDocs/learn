@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cloud-adoption-framework-migrate.6-vm-migration
+uid: learn.cloud-adoption-framework-migrate.release
 title: Exercise - Migration and modernization
 metadata:
   title: Exercise - Migration and modernization
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 20
 content: |
-  [!include[](includes/6-vm-migration.md)]
+  [!include[](includes/6-release.md)]

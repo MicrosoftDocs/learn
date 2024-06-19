@@ -4,7 +4,7 @@ The migration process includes four stages: prepare, assess, deploy, and release
 
 :::image type="content" source="../media/migrate-overview.svg" alt-text="Diagram that shows the four steps of the migration methodology." lightbox="../media/migrate-overview.svg" border="false":::
 
-In this module, you learn tools and processes to use in your migration. You can apply that guidance to each resource and asset in your environment.
+In this module, you learn about tools and processes that you can use in your migration. You can apply that guidance to each resource and asset in your environment.
 
 ## Learning objectives
 
