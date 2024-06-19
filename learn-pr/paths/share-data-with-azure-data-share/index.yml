@@ -22,6 +22,5 @@ products:
 - azure-data-share
 modules:
 - learn.wwl.introduction-to-azure-data-share
-- learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory
 trophy:
   uid: learn.wwl.sharing-data-with-azure-data-share.trophy
