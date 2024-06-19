@@ -41288,6 +41288,11 @@
         "source_path": "learn-pr/permissions-management/intro-to-entra-permissions-management/index.yml",
         "redirect_url": "/training/modules/intro-to-entra-permissions-management/index",
         "redirect_document_id": false
-      }
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/receive-data-with-azure-data-share-transforming-with-azure-data-factory/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    }
   ]
 }
