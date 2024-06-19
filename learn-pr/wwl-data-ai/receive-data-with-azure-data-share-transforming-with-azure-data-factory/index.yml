@@ -41,7 +41,6 @@ units:
 - learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.sink-dataset-azure-synapse-analytics
 - learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.exercise-sink-dataset-azure-synapse-analytics
 - learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.publish-pipeline-run
-- learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.exercise-publish-pipeline-run
 - learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.knowledge-check
 - learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.summary
 badge:
