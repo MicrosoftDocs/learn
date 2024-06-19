@@ -21,7 +21,7 @@ quiz:
       explanation: "Correct. Fabric notebooks provide automation for ingestion and transformation, ensuring a smooth and systematic approach."
     - content: "Notebooks can orchestrate the Copy Data activity and transformations."
       isCorrect: false
-      explanation: "Incorrect. Pipelines use the Copy Data activity, but don't support transformations without a notebook or dataflow."
+      explanation: "Incorrect. Only Pipelines use the Copy Data activity, and don't support transformations without a notebook or dataflow."
     - content: "Notebooks offer a user-friendly, low-code experience for large semantic models."
       isCorrect: false
       explanation: "Incorrect. Dataflows offer a UI experience, but they are not as performant as notebooks with large semantic models."
