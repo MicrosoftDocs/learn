@@ -44,7 +44,7 @@ The following are the 10 most common models that tech startups use.
 **Practical considerations**:
 
 - Allows you to generate recurring revenues, which provide many benefits.
-- Tiered pricing plans enable customers to pay based on the features they need, their volume of usage or the number of seats required, or the size or type of their organization.
+- Tiered pricing plans enable customers to pay based on the features they need, their volume of usage or the number of licences required, or the size or type of their organization.
 - Allows you to offer new customers a free trial that converts to a paid plan after a set period. A free trial can be a good way of getting customers to start using your product, particularly if they're uncertain about the features, value, or pricing. It can also be a distraction if too few users convert.
 - Allows you to deliver a *freemium* offering in which users can access basic features for free (usually forever) and unlock premium features by paying; examples are LinkedIn Premium, Strava, or Spotify. You need to ensure that a large enough percentage of users convert to paid plans and that free users can be serviced at very low cost.
 - As long as you have a higher new customer sign-up rate than churn (unsubscribe) rate, your company will be growing.
