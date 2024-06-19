@@ -1,4 +1,3 @@
-
 This is a guided project, where you complete a series of tasks. It is essential to complete the units in order. Each unit requires resources and configuration from previous units in order to function correctly.
 
 ## Project overview
@@ -19,4 +18,5 @@ The Setup section consists of three main tasks:
 
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
-[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::](https://microsoftlearning.github.io/APL-1008-Administer-Active-Directory-Domain-Services/Instructions/Labs/LAB_01_prepare.html)
+[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
+](https://microsoftlearning.github.io/APL-1008-Administer-Active-Directory-Domain-Services/Instructions/Labs/LAB_01_prepare.html)
