@@ -33,6 +33,5 @@ products:
 subjects:
 - data-engineering
 units:
-- learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.summary
 badge:
   uid: learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.badge
