@@ -71,9 +71,9 @@ Consider other factors when you decide which users to target first:
 
 ## Find and convert early customers
 
-If you've done some customer interviews, it's likely you've built a list of prospects who are interested in your product. Even better, if have a live landing page and have run experiments such as a mock sale, concierge, or Wizard of Oz, you might have a substantial mailing list. You might also have information that can help you categorize prospects based on their tendency to be an ideal first customer or an early adopter.
+If you've done some customer interviews, it's likely you've built a list of prospects who are interested in your product. Even better, if you have a live landing page and have run experiments such as a mock sale, concierge, or Wizard of Oz, you might have a substantial mailing list. You might also have information that can help you categorize prospects based on their tendency to be an ideal first customer or an early adopter.
 
-Some startups can grow with zero-touch sales, even in the early days. but most startups benefit from having the founders engage directly with early customers and close the first 50 to 100 sales in person.
+Some startups can grow with zero-touch sales, even in the early days, but most startups benefit from having the founders engage directly with early customers and close the first 50 to 100 sales in person.
 
 This approach might seem inefficient and manual, but it's highly beneficial. It allows founders to acquire a deep understanding of their customers' needs. They also hone their ability to communicate the value proposition and address any common objections.
 
