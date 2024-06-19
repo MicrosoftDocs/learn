@@ -73,10 +73,10 @@ The database that you created doesn't currently allow access from any connection
     ssh nnn.nnn.nnn.nnn
     ```
   
-1. Rerun the `sqlcmd` command that you retrieved earlier to attempt to connect to the database. Make sure you replace `[username]` and `[password]` with the `ADMINUSER` credentials you specified in the previous unit. Make sure to keep the single quotes around the username and password so that the shell doesn't misinterpret any special characters.
+1. Rerun the `sqlcmd` command that you retrieved earlier to attempt to connect to the database. Replace `[server-name]` with the name of your server. Replace `[username]` and `[password]` with the `ADMINUSER` credentials you specified in the previous unit. Keep the single quotes around the username and password so that the shell doesn't misinterpret any special characters.
 
     ```bash
-    sqlcmd -S tcp:serverNNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
+    sqlcmd -S tcp:[server-name].database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
     You should see an error similar to the following output when you try to connect. This output is expected since access to the database isn't allowed.
@@ -95,7 +95,7 @@ Because your VM has outbound internet access, you can use the **Allow access to 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you activated the sandbox with.
 
-1. In the **Search resources, services, and docs** box at the top, search for your database server name, `serverNNNNN`. Select the SQL server.
+1. In the **Search resources, services, and docs** box at the top, search for your database server name, `server-name`. Select the SQL server.
 
 1. In the SQL server pane, in the left menu pane, under **Security**, select **Networking**.
 
@@ -104,7 +104,7 @@ Because your VM has outbound internet access, you can use the **Allow access to 
 1. Back in your SSH session, try to connect to your database again.
 
     ```bash
-    sqlcmd -S tcp:serverNNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
+    sqlcmd -S tcp:[server-name].database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
     At this point, you should be able to connect. If it's successful, you should see a sqlcmd prompt.
@@ -142,7 +142,7 @@ EXECUTE sp_set_database_firewall_rule N'My Firewall Rule', '40.112.128.214', '40
 1. Back in Cloud Shell, in the VM you're connected to over SSH, try to connect to your database again.
 
     ```bash
-    sqlcmd -S tcp:serverNNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
+    sqlcmd -S tcp:[server-name].database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
     At this point, you should be able to connect. If it's successful, you see a sqlcmd prompt.
@@ -177,7 +177,7 @@ Use a server-level IP rule to restrict the systems that can connect.
 1. Back in Cloud Shell, on your _appServer_ VM, try to connect to your database again.
 
     ```bash
-    sqlcmd -S tcp:serverNNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
+    sqlcmd -S tcp:[server-name].database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
     At this point, you should be able to connect. The server-level rule allows access based on the public IP address of the _appServer_ VM. If it's successful, you should see a sqlcmd prompt.
@@ -214,7 +214,7 @@ In this case, because your VM is running in Azure, you can use a server-level vi
 1. Back in Cloud Shell, on your _appServer_ VM, try to connect to your database again.
 
     ```bash
-    sqlcmd -S tcp:serverNNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
+    sqlcmd -S tcp:[server-name].database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
     At this point, you should be able to connect. If it's successful, you see a sqlcmd prompt.
