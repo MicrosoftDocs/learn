@@ -12,7 +12,7 @@ Linux is the fastest growing platform on Azure, which means that Linux users wil
 
 - Also find hundreds of other Linux images for third-party developer tools, security, databases, analytics, and more.
 
-As you think about designing a computing environment on Azure, distinguish between four general usage models available: infrastructure as a service (IaaS), platform as a service (PaaS), database as a service (DBaaS), and software as a service (SaaS).
+As you think about designing a computing environment on Azure, distinguish between four general usage models available: infrastructure as a service (IaaS), platform as a service (PaaS), database as a service (DBaaS), and software as a service (SaaS). Unit 4 will describe in more depth why you might choose one of these models over the other and what the tradeoffs might be. 
 
 **IaaS** &mdash; Azure maintains the physical hardware and provisions more computing resources as needed. You, the customer, are responsible for managing the operating system, configuring other services for security, web applications, your development environment, application deployment, and monitoring.
 
