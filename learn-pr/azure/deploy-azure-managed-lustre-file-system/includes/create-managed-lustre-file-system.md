@@ -21,14 +21,14 @@ On the **Basics** tab, you provide essential information about your Azure Manage
 | File system details | File system name | Required | Enter a name to identify this file system in your list of resources. This name isn't the name of the file system used in `mount` commands. |
 | File system details | File system type | Required | Shows **Durable, SSD**. |
 | File system details | Storage and throughput | Required | Enter the storage capacity of your file system in TiB, or the maximum throughput in MB/s.</br></br>There are two factors that determine your file system size: The amount of storage allocated for your data (storage capacity), and the maximum data transfer rate (throughput). When you select one of these options, the other values are calculated based on the **Throughput per TiB** setting for your file system type. To set the file system size, choose either **Storage capacity** or **Maximum throughput**. Enter a value in the corresponding field, either the desired storage capacity (in TiB) if you selected **Storage capacity**, or the desired maximum throughput (in MB/second) if you selected **Maximum throughput**.</br></br>Note: These values are rounded up to meet incremental size requirements. The values are never rounded down, so check the final configuration to make sure it's cost-effective for your workload. To learn more about available throughput configurations, see [Throughput configurations](#throughput-configurations). |
-| Networking | Virtual network | Required | Select an existing virtual network to use for the file system, or create a new virtual network. For more information about network sizing and other configuration options, see [Network prerequisites](amlfs-prerequisites.md#network-prerequisites). |
+| Networking | Virtual network | Required | Select an existing virtual network to use for the file system, or create a new virtual network. |
 | Networking | Subnet | Required | Select an existing subnet or create a new one. The Azure Managed Lustre file system uses a dedicated virtual network and one subnet. The subnet contains the Lustre Management Service (MGS), which handles all of the client interaction with the Azure Managed Lustre system. You can open the **Manage subnet configuration** link to make sure the subnet meets your network requirements. The network should have enough available IP addresses to handle the file system's load and any additional IP addresses required by any other services that are colocated with the file system. Make sure you complete all access settings to enable the subnet to access the needed Azure services. |
 | Maintenance window | Day of the week | Required | Provide a preferred day of the week and time for the Azure team to perform maintenance and troubleshooting. This maintenance is infrequent and performed only as needed. To learn more, see [Maintenance window](#maintenance-window). |
 | Maintenance window | Start time | Required | Provide the time that the maintenance window can begin. Time should be in 24-hour format (HH:MM). |
 
 The following screenshot shows an example of the **Basics** tab for creating an Azure Managed Lustre file system in the Azure portal:
 
-:::image type="content" source="./media/create-file-system-portal/basics-tab.png" alt-text="A screenshot showing the Basics tab for creating an Azure Managed Lustre file system in the Azure portal." lightbox="./media/create-file-system-portal/basics-tab.png":::
+:::image type="content" source="./media/basics-tab.png" alt-text="A screenshot showing the Basics tab for creating an Azure Managed Lustre file system in the Azure portal." lightbox="./media/basics-tab.png":::
 
 When you finish entering details on the **Basics** tab, select **Next: Advanced** to continue.
 
@@ -74,7 +74,7 @@ To configure blob integration, follow these steps:
 1. In the **Logging container** field, select the container where you want to store import/export logs. The logs must be stored in a separate container from the data container, but the containers must be in the same storage account.
 1. In the **Import prefix** fields, you can optionally supply one or more prefixes to filter the data imported into the Azure Managed Lustre file system. The default import prefix is `/`, and the default behavior imports the contents of the entire blob container. To learn more about import prefixes, see [Import prefix](/azure/azure-managed-lustre/blob-integration.md#import-prefix).
 
-:::image type="content" source="./media/create-file-system-portal/advanced-blob-integration.png" alt-text="A screenshot showing blob integration settings on Advanced tab in Azure Managed Lustre create flow." lightbox="./media/create-file-system-portal/advanced-blob-integration.png":::
+:::image type="content" source="./media/advanced-blob-integration.png" alt-text="A screenshot showing blob integration settings on Advanced tab in Azure Managed Lustre create flow." lightbox="./media/advanced-blob-integration.png":::
 
 When you finish entering details on the **Advanced settings** tab, you can optionally select **Next: Disk encryption keys** to enter details about managing your own encryption keys. If you don't want to manage your own encryption keys, select **Review + create**.
 
@@ -95,6 +95,6 @@ If validation fails, then the portal indicates which settings need to be modifie
 
 The following image shows the **Review + create** tab before the creation of a new file system:
 
-:::image type="content" source="./media/create-file-system-portal/review-create-tab.png" alt-text="A screenshot showing the review and create tab in Azure Managed Lustre create flow." lightbox="./media/create-file-system-portal/review-create-tab.png":::
+:::image type="content" source="./media/review-create-tab.png" alt-text="A screenshot showing the review and create tab in Azure Managed Lustre create flow." lightbox="./media/review-create-tab.png":::
 
 Select **Create** to begin deployment of the Azure Managed Lustre file system.

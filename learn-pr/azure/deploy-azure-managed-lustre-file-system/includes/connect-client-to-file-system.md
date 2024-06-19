@@ -26,14 +26,14 @@ You can download prebuilt and tested client packages for Azure Managed Lustre fr
 
 Packages and kernel modules are available for the following Linux operating systems:
 
-- [AlmaLinux HPC 8.6](install-hpc-alma-86.md)
-- [AlmaLinux 8](install-rhel-8.md)
-- [Red Hat Enterprise Linux (RHEL) 7](install-rhel-7.md)
-- [Red Hat Enterprise Linux (RHEL) 8](install-rhel-8.md)
-- [Red Hat Enterprise Linux (RHEL) 9](install-rhel-9.md)
-- [Ubuntu 18.04](install-ubuntu-18.md)
-- [Ubuntu 20.04](install-ubuntu-20.md)
-- [Ubuntu 22.04](install-ubuntu-22.md)
+- [AlmaLinux HPC 8.6](/azure/azure-managed-lustre/client-install?pivots=alma-86)
+- [AlmaLinux 8](/azure/azure-managed-lustre/client-install?pivots=rhel-8)
+- [Red Hat Enterprise Linux (RHEL) 7](/azure/azure-managed-lustre/client-install?pivots=rhel-7)
+- [Red Hat Enterprise Linux (RHEL) 8](/azure/azure-managed-lustre/client-install?pivots=rhel-8)
+- [Red Hat Enterprise Linux (RHEL) 9](/azure/azure-managed-lustre/client-install?pivots=rhel-9)
+- [Ubuntu 18.04](/azure/azure-managed-lustre/client-install?pivots=ubuntu-18)
+- [Ubuntu 20.04](/azure/azure-managed-lustre/client-install?pivots=ubuntu-20)
+- [Ubuntu 22.04](/azure/azure-managed-lustre/client-install?pivots=ubuntu-22)
 
 If you need to upgrade an older Lustre client version on your Linux system, see [Upgrade a Lustre client to the current version](/azure/azure-managed-lustre/client-upgrade.md). You must remove old kernel modules and software packages as part of the upgrade.
 
@@ -47,7 +47,7 @@ If you need to upgrade an older Lustre client version on your Linux system, see 
 
 Mount all of your clients to the file system's MGS IP address. The **Client connection** page in the Azure portal shows the IP address and gives a sample `mount` command that you can copy and use to mount clients.
 
-:::image type="content" source="media/connect-clients/client-connection.png" alt-text="Screenshot of client connection page in the portal." lightbox="media/connect-clients/client-connection.png":::
+:::image type="content" source="media/client-connection.png" alt-text="Screenshot of client connection page in the portal." lightbox="media/client-connection.png":::
 
 The `mount` command includes three components:
 
