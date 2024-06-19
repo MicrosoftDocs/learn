@@ -1,14 +1,14 @@
-The .NET Aspire dashboard provides a functional view of telemetry data but if you're familiar with Azure Application Insights you know that it provides a rich and ongoing analysis of an application's performance, structure, and behavior.
+The .NET Aspire dashboard provides a functional view of telemetry data but if you're familiar with Azure Application Insights, you know that it provides a rich and ongoing analysis of an application's performance, structure, and behavior.
 
-In your outdoor equipment retailer, your administration team, who already use Application Insights to support other important business systems, have requested that your new eShop sends telemetry to Application Insights.
+In your outdoor equipment retailer, your administrators, who already use Application Insights to support other important business systems, have requested that your new eShop sends telemetry to Application Insights.
 
-In this unit, you'll learn how to configure a .NET Aspire solution to integrate with Azure Application Insights when it is deployed.
+In this unit, you'll learn how to configure a .NET Aspire solution to integrate with Azure Application Insights when it's deployed.
 
 ## OpenTelemetry and Application Insights
 
 Observability is a key feature of cloud-native applications. Once they're deployed, your administration team needs to know how they behave and use resources to ensure timely responses to user requests. The .NET Aspire solution templates include the OpenTelemetry package and use it to generate behavior and performance telemetry data whenever a .NET Aspire solution runs. By default, this telemetry data is available in the .NET Aspire dashboard.
 
-In Azure, you have other tools for analyzing and displaying telemetry. Azure Monitor is a comprehensive system that you can use to collect, display, and analyze the behavior of both your entire cloud and on-premises systems. Azure Monitor includes Application Insights, which provides rich visuallizations to help you analyze the behavior of your solution.
+In Azure, you have other tools for analyzing and displaying telemetry. Azure Monitor is a comprehensive system that you can use to collect, display, and analyze the behavior of both your entire cloud and on-premises systems. Azure Monitor includes Application Insights, which provides rich visualizations to help you analyze the behavior of your solution.
 
 :::image type="content" source="/azure/azure-monitor/app/media/app-insights-overview/app-insights-overview-screenshot.png" lightbox="/azure/azure-monitor/app/media/app-insights-overview/app-insights-overview-screenshot.png" alt-text="Screenshot showing a complex distributed app analyzed and displayed in Application Insights.":::
 
@@ -19,12 +19,12 @@ If you want to use Application Insights to analyze your .NET Aspire solution, yo
 
 ## Provisioning Application Insights during .NET Aspire deployment
 
-This approach is appropriate if you don't already have a instance of Application Insight in your Azure subscription. You can also use this technique if you want your .NET Aspire solution to have a dedicated instance of Application Insights.
+This approach is appropriate if you don't already have an instance of Application Insight in your Azure subscription. You can also use this technique if you want your .NET Aspire solution to have a dedicated instance of Application Insights.
 
 Take the following steps:
 
 1. Add the NuGet package **Aspire.Hosting.Azure.ApplicationInsights** to the app host project.
-1. In the app host's _Program.cs_ file, create a Application Insights resource:
+1. In the app host's _Program.cs_ file, create an Application Insights resource:
 
     ```csharp
     var insights = builder.AddAzureApplicationInsights("AppInsights");
@@ -45,11 +45,11 @@ When you deploy the .NET Aspire solution by using Visual Studio or the Azure Dev
 
 ## Connecting to an existing Application Insights instance
 
-If you already have an instance of Application Insights then you need to configure your .NET Aspire solution with its location. Specify this location by adding a connection string to your app host project.
+If you already have an instance of Application Insights, then you need to configure your .NET Aspire solution with its location. Specify this location by adding a connection string to your app host project.
 
 You can find the connection string on the **Overview** page for your Application Insight instance in the Azure portal:
 
-:::image type="content" source="/dotnet/aspire/docs/deployment/media/app-insights-connection-string.png" lightbox="/dotnet/aspire/docs/deployment/media/app-insights-connection-string.png" alt-text="Screenshot showing where to find the Application Insights connection string in the Azure Portal.":::
+:::image type="content" source="/dotnet/aspire/docs/deployment/media/app-insights-connection-string.png" lightbox="/dotnet/aspire/docs/deployment/media/app-insights-connection-string.png" alt-text="Screenshot showing where to find the Application Insights connection string in the Azure portal.":::
 
 In your app host's _Program.cs_ file, create a connection string resource and pass it to each microservice:
 

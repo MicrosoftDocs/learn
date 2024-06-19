@@ -1,4 +1,4 @@
-Container management services, such as Kubernetes, provide scalable, versatile, and robust hosting for the microservices and shared services that make up a cloud-native application. However, they must be managed by expert teams. One way to reduce the demands placed on your administrators without compromising reliability is to leverage database and caching services available in Azure instead of implementing these in your own containers. In this module, you've seen how to move services into cloud PaaS services.
+Container management services, such as Kubernetes, provide scalable, versatile, and robust hosting for the microservices and shared services that make up a cloud-native application. However, expert teams must manage them. One way to reduce the demands placed on your administrators without compromising reliability is to use database and caching services available in Azure instead of implementing these services in your own containers. In this module, you've seen how to move services into cloud PaaS services.
 
 Now that you've completed this module, you can:
 

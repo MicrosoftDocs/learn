@@ -25,14 +25,14 @@ quiz:
     - content: "Run the azd up command."
       isCorrect: false
       explanation: "Incorrect. The azd up command both creates Bicep files and runs the deployment so you have no opportunity to edit them."
-  - content: "You are deploying a .NET Aspire solution to Azure and you want it to send telemetry data to Azure Application Insights. When you run the deployment, an Application Insights instance is created but no telemetry data is displayed in it. What should you do?"
+  - content: "You're deploying a .NET Aspire solution to Azure and you want it to send telemetry data to Azure Application Insights. When you run the deployment, an Application Insights instance is created but no telemetry data is displayed in it. What should you do?"
     choices:
     - content: "Add a package and code to the Service Defaults project to enable the Azure Monitor OpenTelemetry Exporter."
       isCorrect: true
-      explanation: "Correct. If the Application Insights instance is created then you have configured the app host correctly but telemetry will not be sent to it until you add the Azure.Monitor.OpenTelemetry.AspNetCore package to the Service Defaults project and enable it in code."
+      explanation: "Correct. If the Application Insights instance is created, then you have configured the app host correctly. However, the solution won't send telemetry to it until you add the Azure.Monitor.OpenTelemetry.AspNetCore package to the Service Defaults project and enable it in code."
     - content: "Add a package and code to the web app and API projects to enable the Azure Monitor OpenTelemetry Exporter."
       isCorrect: false
       explanation: "Incorrect. You don't need to make any changes to your microservices for the solution to send data to Application Insights."
     - content: "Add a package and code to the app host project to enable the Azure Monitor OpenTelemetry Exporter."
       isCorrect: false
-      explanation: "Incorrect. If the Application Insights instance is created then you have configured the app host correctly but telemetry will not be sent to it until you make changes elsewhere in the solution."
+      explanation: "Incorrect. If the Application Insights instance is created, then you have configured the app host correctly. However, the solution won't send telemetry to it until you make changes elsewhere in the solution."

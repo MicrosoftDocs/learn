@@ -1,7 +1,7 @@
 In this exercise, you'll configure the eShop application to use Azure Cache for Redis and Application Insights when it is deployed to Azure. You'll also deploy the .NET Aspire solution to your Azure subscription.
 
 > [!IMPORTANT]
-> To complete this exercise, you'll need an Azure subscription. If you don't have a subscription, you can [create a free trial subscription](https://azure.microsoft.com/en-us/free/).
+> To complete this exercise, you'll need an Azure subscription. If you don't have a subscription, you can [create a free trial subscription](https://azure.microsoft.com/free/).
 
 ## Install prerequisites
 

@@ -2,7 +2,7 @@ Bicep is a rich and concise declarative language that you can use to specify res
 
 In your outdoor equipment retailer, you want to add extra Azure resources to the deployed eShop .NET Aspire solution. You also want those files to be managed in version control with your C# code files and the rest of the code base.
 
-In this unit. you'll learn how to customize and control the Bicep files that Azure Developer CLI creates to alter your deployments.
+In this unit, you'll learn how to customize and control the Bicep files that Azure Developer CLI creates to alter your deployments.
 
 ## Why use Bicep files?
 
@@ -16,7 +16,7 @@ You can also use Bicep files to integrate the resources for your .NET Aspire sol
 
 Bicep is a text file format so you can create files with any text editor. Both Visual Studio and Visual Studio Code have extensions for Bicep. When you use these extensions, you get intellisense and syntax checking. However, you'll need a good understanding of the infrastructure your solution requires.
 
-Your completed .NET Aspire solution defines all the resources it needs in C# code files. Instead of writing Bicep files manually, you can use the Azure Developer CLI to automatically create Bicep from your solution. Use these commands:
+The completed .NET Aspire solution defines all the resources it needs in C# code files. Instead of writing Bicep files manually, you can use the Azure Developer CLI to automatically create Bicep from your solution. Use these commands:
 
 ```azd
 azd config set alpha.infraSynth on
@@ -67,7 +67,7 @@ resource containerRegistry 'Microsoft.ContainerRegistry/registries@2023-07-01' =
 }
 ```
 
-Use Visual Studio, Visual Studio Code, or your prefered text editor to customize these Bicep files before deployment.
+Use Visual Studio, Visual Studio Code, or your preferred text editor to customize these Bicep files before deployment.
 
 ## Using a modified Bicep file in a deployment
 
@@ -124,8 +124,8 @@ In the above code, notice that:
 
 - The `bicepFile` value specifies the location of the Bicep file relative to the app host project.
 - You pass a value a named parameter in the Bicep file by using the `.WithParameter()` extension method.
-- You retrieve output from the Bicep file by usng the `GetOutput()` method.
-- In this example, the output is the blob endpoint for the new storage account and this is passed as an environment variable to the API service.
+- You retrieve output from the Bicep file by using the `GetOutput()` method.
+- In this example, the output is the blob endpoint for the new storage account and this endpoint is passed as an environment variable to the API service.
 
 ## Learn more
 

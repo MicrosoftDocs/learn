@@ -89,7 +89,7 @@ var cache = builder.AddRedis("cache")
                    .PublishAsAzureRedis();
 ```
 
-Now, when you debug the solution locally, .NET runs Redis as a container within Docker or Podman. However, when you deploy the solution using Visual Studio or Azure Developer CLI, the tools createa new Azure Cache for Redis resource. The tools also automatically configure the deployed microservices to connect to the new resource.
+Now, when you debug the solution locally, .NET runs Redis as a container within Docker or Podman. However, when you deploy the solution using Visual Studio or Azure Developer CLI, the tools create a new Azure Cache for Redis resource. The tools also automatically configure the deployed microservices to connect to the new resource.
 
 ## Learn more
 

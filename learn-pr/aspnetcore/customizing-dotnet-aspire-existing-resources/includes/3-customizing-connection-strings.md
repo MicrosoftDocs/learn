@@ -29,7 +29,7 @@ info: Aspire.Hosting.Publishing.ManifestPublisher[0]
       Published manifest to: C:\repos\eShop\aspire-manifest.json
 ```
 
-You can also use a launch profile to run the above `dotnet` command. A launch profile is a group of settings that configures a .NET project when it runs. For example, the .NET Aspire Starter template creates these launch profiles:
+You can also use a launch profile to run the `dotnet` command. A launch profile is a group of settings that configures a .NET project when it runs. For example, the .NET Aspire Starter template creates these launch profiles:
 
 ```json
 "profiles": {
@@ -60,7 +60,7 @@ You can also use a launch profile to run the above `dotnet` command. A launch pr
 }
 ```
 
-Add a launch profile to create a manifest file with JSON code similar to this:
+Add a launch profile to create a manifest file with JSON code similar to this text:
 
 ```json
 "profiles": {
@@ -156,9 +156,9 @@ Here's an example manifest for the .NET Aspire Starter template with no modifica
 
 ## Connection strings and binding references.
 
-In the above manifest example, there are three resources:
+In the manifest example, there are three resources:
 
-- `webfrontend`: This resource is the microservice that present a web interface to customers.
+- `webfrontend`: This resource is the microservice that presents a web interface to customers.
 - `apiservice`: This resource is the REST API that the `webfrontend` calls. In the template, this call is to obtain weather data.
 - `cache`: This resource is the Redis cache, used to optimize the performance of the `webfrontend` microservice.
 
@@ -177,7 +177,7 @@ builder.AddProject<Projects.AspireStarter_Web>("webfrontend")
     .WithReference(apiService);
 ```
 
-In the manifest file, these dependencies are expressed as environment varibles:
+In the manifest file, these dependencies are expressed as environment variables:
 
 ```json
 "env": {
