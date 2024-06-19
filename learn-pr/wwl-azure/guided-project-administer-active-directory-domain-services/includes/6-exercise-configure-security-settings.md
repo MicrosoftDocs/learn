@@ -12,7 +12,7 @@ The exercise consists of the following tasks:
 
 - Restrict NTLM Authentication
 - Audit User Account Management in Sydney
-- Deny Log On As a Service
+- Deny Log on As a Service
 
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
