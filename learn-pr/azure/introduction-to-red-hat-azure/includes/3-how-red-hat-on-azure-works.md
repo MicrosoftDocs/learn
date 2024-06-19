@@ -23,3 +23,29 @@ JBoss EAP helps you upgrade from proprietary or outdated middleware to an open-s
 JBoss EAP is part of the Red Hat Application Services portfolio of middleware products, which helps users create, integrate, and automate applications. Red Hat Application Services supports your hybrid cloud journey by running the same workloads on-site, in the cloud, or within a container platform, like Red Hat OpenShift.
 
 Whether you already have existing licenses JBoss subscriptions on-premises or are starting fresh with new subscriptions on Azure, the Red Hat Cloud Access program allows you to use any JBoss EAP subscription. You can use a subscription to install JBoss EAP on your own Azure VM or one of the on-demand operating systems from the Azure Marketplace. VM operating system subscriptions are separate from JBoss EAP subscriptions.
+
+## Licensing options for Red Hat on Azure
+
+You can choose to **Pay-As-You-Go (PAYG)** or use the Red Hat Cloud Access Program to **Bring-Your-Own-Software (BYOS)**.
+
+With PAYG, you purchase images from Microsoft Azure at flat, hourly rates that include infrastructure and software usage rights. You pay for compute capacity by the second, with no long-term commitment or upfront payments. You can increase or decrease compute capacity on demand. These instances don't consume Red Hat Subscriptions, and they shouldn't be registered with Red Hat Subscription Management or Red Hat Satellite.
+
+The Red Hat Cloud Access program makes your eligible Red Hat product subscriptions portable, allowing you to choose the best architecture and infrastructure for your needs. The terms of your subscription with Red Hat, including pricing, remain the same. You work directly with your Red Hat sales representative to determine sizing and pricing when moving to a certified cloud provider. Under this scenario, you pay Red Hat for subscriptions and pay Azure for its services.
+
+### JBoss EAP deployment and pricing
+
+There are many supported ways to deploy JBoss EAP on Azure, including as an application in Azure App Services, on VMs from the Azure Marketplace or your own custom-built images, or as a containerized application on ARO.
+
+The subscriptions are available as PAYG or BYOS.
+
+### ARO deployment and pricing
+
+An Azure Red Hat OpenShift cluster consists of three main nodes and two or more worker nodes. Main nodes and worker nodes run on Azure VMs and are billed at Linux VM pricing. Worker nodes have an extra cost for the OpenShift subscription component.
+
+ARO is only available as PAYG. Compute, networking, and storage resources consumed by your cluster are billed according to usage.
+
+### Can I use my Azure Hybrid Benefits (AHB)?
+
+Yes. The Red Hat Cloud Access program applies AHB for the same net effect.
+
+:::image type="content" source="../media/cost-diagram.png" alt-text="A diagram representing Red Hat Enterprise Linux subscription options.":::

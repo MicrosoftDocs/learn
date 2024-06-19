@@ -1,6 +1,6 @@
 ## Example scenario
 
-Imagine you work for an online retailer that runs a Java-based website on Red Hat hosted in an on-premises datacenter. The system takes months to scale and presents many hoops that developers must jump through in order to build, test, and push changes to production.
+Imagine you work for an online retailer that runs a Java-based website on Red Hat hosted in an on-premises datacenter. The system is slow to scale and presents many hoops that developers must jump through in order to build, test, and push changes to production.
 
 Your manager wants to modernize the system to respond to the global shift of online ordering, which requires finding a way to help developers build new capabilities for the website faster and improve its speed, availability, and scalability.
 
