@@ -13,7 +13,7 @@ The `System.Data.SqlClient` library is available in the *System.Data.SqlClient* 
 You use an `SqlConnection` object to create a database connection. You provide a *connection string* that specifies the name and location of the database, the credentials to use, and other connection-related parameters. A typical connection string to a single database looks like this:
 
 ```Text
-Server=tcp:myserver.database.windows.net,1433;Initial Catalog=mydatabase;Persist Security Info=False;User ID=myusername;Password=mypassword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+Server=tcp:<server-name>.database.windows.net,1433;Initial Catalog=mydatabase;Persist Security Info=False;User ID=myusername;Password=mypassword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
 ```
 
 You can find the connection string for your single database on the **Connection strings** page for your database in the Azure portal.
@@ -25,7 +25,7 @@ using System.Data.SqlClient;
 
 ...
 
-string connectionString = "Server=tcp:myserver.database.windows.net,...";
+string connectionString = "Server=tcp:<server-name>.database.windows.net,...";
 SqlConnection con = new SqlConnection(connectionString);
 ```
 
