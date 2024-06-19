@@ -1,0 +1,16 @@
+In this module, you learned about the broad topic of Group Policy in Active Directory. Group Policy is a feature that allows administrators to define and deploy settings across their organizations. You also learned how to manage the configuration of hundreds of computers across multiple departments using Group Policy. The module also covered defining, enforcing, and updating your entire configuration using GPO settings. You learned about the Group Policy framework in Windows operating systems, the use of GPOs to push various settings to a large number of users and computers, and the creation and modification of GPOs in a domain.
+
+## Learning objectives
+
+You should now be able to:
+
+ -  Define Group Policy Objects.
+ -  Implement Group Policy Object scope and inheritance.
+ -  Define domain-based Group Policy Objects.
+ -  Create and configure a domain-based Group Policy Object.
+ -  Configure a domain password policy.
+ -  Configure and apply a fine-grained password policy.
+
+## Additional resources
+
+ -  [Group Policy Settings Reference Guide](https://www.microsoft.com/download/details.aspx?id=25250)

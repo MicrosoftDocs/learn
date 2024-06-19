@@ -62,7 +62,7 @@ Microservices and their loosely coupled nature increase the flexibility of your 
 - You can specify clearly for all teams the .NET projects, containers, executables, and cloud resources that make up the application.
 - Microservices can automatically discover endpoints for all the application's components. .NET Aspire performs this service discovery by managing connection strings and injecting them into microservices where needed.
 
-When you create a .NET Aspire app, you'll see a new project in the solution called **\<SolutionName\>.AppHost**. This project implements orchestration for your app and you should ensure it's the start-up project for the solution.
+When you create a .NET Aspire solution, you'll see a new project in the solution called **\<SolutionName\>.AppHost**. This project implements orchestration for your app and you should ensure it's the start-up project for the solution.
 
 ### Components
 
@@ -81,7 +81,7 @@ The out-of-the-box .NET Aspire components include:
 - Messaging components such as those for RabbitMQ and Azure Service Bus.
 
 > [!IMPORTANT]
-> .NET Aspire includes many components that work with Azure services, like Azure Storage and Azure Service Bus but Azure is not required for .NET Aspire apps and they work equally well with backing services outside Azure, like RabbitMQ and MongoDB.
+> .NET Aspire includes many components that work with Azure services, like Azure Storage and Azure Service Bus but Azure is not required for .NET Aspire projects and they work equally well with backing services outside Azure, like RabbitMQ and MongoDB.
 
 ### Tooling
 

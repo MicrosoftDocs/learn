@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.accelerate-nonprofit-funding-solutions-microsoft-copilot.exercise-write-donor-relations-and-marketing-prompts
+title: Exercise - Write donor relations and marketing prompts
+metadata:
+  title: Exercise - Write donor relations and marketing prompts
+  description: This content is a part of the Accelerate nonprofit funding solutions with Microsoft Copilot module.
+  ms.date: 5/30/2024
+  author: CourtneyHMicrosoft
+  ms.author: cohodge
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-exercise-write-donor-relations-and-marketing-prompts.md)]

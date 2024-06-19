@@ -3,8 +3,8 @@ uid: learn.azure.publish-azure-web-app-with-azure-toolkit-eclipse.deploy-web-app
 title: Deploy a web app to Azure
 metadata:
   title: Deploy a web app to Azure
-  description: Deploying a web app to Azure from Eclipse using the Azure Toolkit
-  ms.date: 02/01/2020
+  description: Learn how to connect to Azure from Eclipse and deploy a web app to Azure by using the Azure Toolkit.
+  ms.date: 06/06/2024
   author: cephalin
   ms.author: cephalin
   ms.topic: unit

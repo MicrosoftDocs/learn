@@ -17,8 +17,8 @@ The table below details the options you have for adding certificates in App Serv
 The free **App Service managed certificate** and the **App Service certificate** already satisfy the requirements of App Service. If you want to use a private certificate in App Service, your certificate must meet the following requirements:
 
 * Exported as a password-protected PFX file, encrypted using triple DES.
-* Contains private key at least 2048 bits long
-* Contains all intermediate certificates in the certificate chain
+* Contains private key at least 2048 bits long.
+* Contains all intermediate certificates and the root certificate in the certificate chain.
 
 To secure a custom domain in a TLS binding, the certificate has other requirements:
 
@@ -31,6 +31,9 @@ To create custom TLS/SSL bindings or enable client certificates for your App Ser
 
 The free App Service managed certificate is a turn-key solution for securing your custom DNS name in App Service. It's a TLS/SSL server certificate that's fully managed by App Service and renewed continuously and automatically in six-month increments, 45 days before expiration. You create the certificate and bind it to a custom domain, and let App Service do the rest.
 
+> [!IMPORTANT]
+> Before you create a free managed certificate, make sure you have met the prerequisites for your app. Free certificates are issued by DigiCert. For some domains, you must explicitly allow DigiCert as a certificate issuer by creating a CAA domain record with the value: `0 issue digicert.com`. Azure fully manages the certificates on your behalf, so any aspect of the managed certificate, including the root issuer, can change at anytime. These changes are outside your control. Make sure to avoid hard dependencies and "pinning" practice certificates to the managed certificate or any part of the certificate hierarchy.
+
 The free certificate comes with the following limitations:
 
 * Doesn't support wildcard certificates.
@@ -39,7 +42,7 @@ The free certificate comes with the following limitations:
 * Isn't exportable.
 * Isn't supported in an App Service Environment (ASE).
 * Only supports alphanumeric characters, dashes (-), and periods (.).
-
+* Only custom domains of length up to 64 characters are supported.
 
 ## Import an App Service Certificate
 
@@ -58,4 +61,3 @@ If you already have a working App Service certificate, you can:
 
 > [!NOTE]
 > App Service Certificates are not supported in Azure National Clouds at this time.
-
