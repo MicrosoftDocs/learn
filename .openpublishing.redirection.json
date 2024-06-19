@@ -41318,6 +41318,11 @@
       "source_path": "learn-pr/wwl-data-ai/receive-data-with-azure-data-share-transforming-with-azure-data-factory/9-exercise-sink-dataset-azure-synapse-analytics.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/receive-data-with-azure-data-share-transforming-with-azure-data-factory/4-ingest-data-azure-data-lake-gen-2.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
