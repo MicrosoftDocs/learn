@@ -41293,6 +41293,11 @@
       "source_path": "learn-pr/wwl-data-ai/receive-data-with-azure-data-share-transforming-with-azure-data-factory/index.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/receive-data-with-azure-data-share-transforming-with-azure-data-factory/5-exercise-ingest-data-azure-data-lake-storage-gen-2.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
