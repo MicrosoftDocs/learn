@@ -6,7 +6,6 @@ Now that you have finished this module, you should be able to:
 - Apply prompt engineering to various projects by using its good practices.
 - Use GitHub Copilot Chat to ask and receive coding-related questions.
 
-
 ## Delete your Codespaces resources
 
 To avoid consuming all your monthly GitHub Codespaces time, it's important to delete all your resources after you've uploaded your changes to your repository. Therefore, we'll guide you in removing your resources as follows:
@@ -20,7 +19,7 @@ To avoid consuming all your monthly GitHub Codespaces time, it's important to de
 
 ## References
 
-* [What is GitHub Copilot?](/shows/introduction-to-github-copilot/what-is-github-copilot-1-of-6?WT.mc_id=academic-105743-bethanycheum )
-* [Introduction to GitHub Copilot](/training/modules/introduction-to-github-copilot/?WT.mc_id=academic-105778-alfredodeza)
-* [Code with GitHub Codespaces](/training/modules/code-with-github-codespaces/?WT.mc_id=academic-105779-alfredodeza)
-* [Python for beginners](/training/paths/beginner-python/?WT.mc_id=academic-105781-alfredodeza)
+- [What is GitHub Copilot?](/shows/introduction-to-github-copilot/what-is-github-copilot-1-of-6?WT.mc_id=academic-105743-bethanycheum )
+- [Introduction to GitHub Copilot](/training/modules/introduction-to-github-copilot/?WT.mc_id=academic-105778-alfredodeza)
+- [Code with GitHub Codespaces](/training/modules/code-with-github-codespaces/?WT.mc_id=academic-105779-alfredodeza)
+- [Python for beginners](/training/paths/beginner-python/?WT.mc_id=academic-105781-alfredodeza)

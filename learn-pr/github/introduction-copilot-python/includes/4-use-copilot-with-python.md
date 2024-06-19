@@ -23,7 +23,7 @@ Since the prompt is ambiguous and vague, the result from GitHub Copilot might no
 # Create an API endpoint using the FastAPI framework that accepts a JSON payload in a POST request
 ```
 
-This last prompt is specific, clear and allows GitHub Copilot to understand the goal and scope of the task. Although you can also provide context and examples to Copilot using comments or code you can also use the chat option of GitHub Copilot Chat. Having a good prompt ensures that the model generates a high-quality output.
+This last prompt is specific, clear, and allows GitHub Copilot to understand the goal and scope of the task. Although you can also provide context and examples to Copilot using comments or code you can also use the chat option of GitHub Copilot Chat. Having a good prompt ensures that the model generates a high-quality output.
 
 ### Best practices using GitHub Copilot
 

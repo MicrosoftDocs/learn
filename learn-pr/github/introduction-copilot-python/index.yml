@@ -11,7 +11,7 @@ metadata:
 title: Using GitHub Copilot with Python
 summary: "Use GitHub Copilot, an AI pair programmer that offers autocomplete-style suggestions as you code, to work with Python"
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Enable the GitHub Copilot extension in Visual Studio Code.
     - Craft prompts that can generate useful suggestions from GitHub Copilot.
     - Use GitHub Copilot to improve a Python project.
