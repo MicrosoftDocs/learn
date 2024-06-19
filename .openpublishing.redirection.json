@@ -41308,6 +41308,11 @@
       "source_path": "learn-pr/wwl-data-ai/receive-data-with-azure-data-share-transforming-with-azure-data-factory/11-exercise-publish-pipeline-run.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/receive-data-with-azure-data-share-transforming-with-azure-data-factory/3-exercise-receive-data-share-transform-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
