@@ -38,7 +38,6 @@ units:
 - learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.exercise-receive-data-share-transform-data
 - learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.ingest-data-azure-data-lake-gen-2
 - learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.join-transform-shared-owned-data
-- learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.exercise-join-transform-shared-owned-data
 - learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.sink-dataset-azure-synapse-analytics
 - learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.exercise-sink-dataset-azure-synapse-analytics
 - learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.publish-pipeline-run
