@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 ```
 
-Use pandas to extract rainfall as a NumPy array. Make sure you've cloned the [Reactor repository](https://github.com/microsoft/Reactors?azure-portal=true) and opened the [Learn/Intro-python-data-science folder](https://github.com/microsoft/Reactors/blob/main/microsoft-learn-resources/Intro-python-data-science/README.md) in VS Code, as described in the [environment setup unit](../../python-data-science/1-introduction.yml?azure-portal=true). In this folder, you'll find a data folder with the required CSV files.
+Use pandas to extract rainfall as a NumPy array. Make sure you've cloned the Reactor repository and opened the Learn/Intro-python-data-science folder in VS Code, as described in the [environment setup unit](../../python-data-science/1-introduction.yml?azure-portal=true). In this folder, you'll find a data folder with the required CSV files.
 
 ```python
 rainfall_2003 = pd.read_csv('Data/Observed_Monthly_Rain_Gauge_Accumulations_-_Oct_2002_to_May_2017.csv')['RG01'][ 2:14].values

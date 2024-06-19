@@ -1,6 +1,6 @@
 Your organization can now use Azure shared disks to migrate existing clustered or distributed applications from your on-premises environment to the cloud. 
 
-Using Ultra Disk and Premium SSDs, you'll benefit from shared access to high-performance, durable block storage. A shared disk simplifies running clusters on Azure and offers a balance of price and performance. 
+Using Ultra Disk and Premium SSDs, you'll benefit from shared access to high-performance, durable block storage. A shared disk simplifies running clusters on Azure and offers a balance of price and performance.
 
 In this module, you learned about Azure shared disks and their benefits. You also learned how to create Azure shared disks and use them to deploy clustered VMs.
 
