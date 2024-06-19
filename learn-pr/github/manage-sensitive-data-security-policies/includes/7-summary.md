@@ -19,7 +19,7 @@ This module explained how to create a new GitHub repository in a way that limits
 
 - [Adding a security policy to your repository.](https://docs.github.com/code-security/getting-started/adding-a-security-policy-to-your-repository)
 - [Creating a default community health file](https://docs.github.com/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file#supported-file-types)
-- [About repository security advisories](https://docs.github.comcode-security/security-advisories/working-with-repository-security-advisories/about-repository-security-advisories)
+- [About repository security advisories](https://docs.github.com/code-security/security-advisories)
 - [Creating a security advisory](https://docs.github.com/code-security/security-advisories/working-with-repository-security-advisories/creating-a-repository-security-advisory)
 - [GitHub security features](https://docs.github.com/code-security/getting-started/github-security-features)
 - [Quickstart for securing your repository](https://docs.github.com/code-security/getting-started/quickstart-for-securing-your-repository)
