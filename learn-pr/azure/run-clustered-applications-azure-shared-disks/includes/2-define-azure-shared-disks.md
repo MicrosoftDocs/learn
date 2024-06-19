@@ -7,7 +7,7 @@ Azure displays a shared disk as a logical unit number (LUN) to the target VM, wh
 Applications that use Azure shared disks use a SCSI persistent reservation (SCSI PR) standard to enable failover from one node to another. VMs in the cluster can read or write to their attached disk, based on the chosen reservation of the clustered application that uses SCSI PR.
 
 > [!NOTE]
-> SCSI PR is an industry standard that applications running on on-premises System Area Networks (SANs) use.
+> SCSI PR is an industry standard that applications running on on-premises system area networks (SANs) use.
 
 You use Azure shared disks to run clustered databases, parallel file systems, persistent container volumes, and machine-learning applications.
 
