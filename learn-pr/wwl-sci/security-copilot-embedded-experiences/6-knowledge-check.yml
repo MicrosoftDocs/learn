@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
 
 quiz:
@@ -58,7 +58,6 @@ quiz:
     - content: Information about individual settings, their impact, and recommended values.
       isCorrect: true
       explanation: Correct. When creating a new policy, Copilot can be used to learn more about individual settings, their impact, and recommended values.
-
   - content: Copilot for Security in Defender for Cloud is available for all users when you enable Defender for Cloud in your environment, have access to Azure Copilot, and have SCUs assigned for Copilot for Security. What additional requirement must be met to remediate code with Copilot for Security?
     choices:
     - content: You must enable all the cloud workload protection plans.
