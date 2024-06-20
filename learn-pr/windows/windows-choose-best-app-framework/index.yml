@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.windows.windows-best-app-framework
 metadata:
-  title: Choose the best application framework for a Windows development project
+  title: Choose the best UI framework for a Windows development project
   description: Windows developers have various options for creating applications that run on Windows. This module introduces the Windows UI frameworks that are available for Windows development. It also provides guidance on how to choose the best framework for your application.
   ms.date: 01/17/2024
   author: alvinashcraft
@@ -10,7 +10,7 @@ metadata:
   ms.service: windows-dev-apps
   ai-usage: ai-assisted
   manager: jken
-title: Choose the best application framework for a Windows development project
+title: Choose the best UI framework for a Windows development project
 summary: Windows developers have various options for creating applications that run on Windows. This module introduces the Windows UI frameworks that are available for Windows development. It also provides guidance on how to choose the best framework for your application.
 abstract: |
   By the end of this module, you'll be able to:
