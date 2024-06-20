@@ -33,5 +33,4 @@ Copilot will then produce a response that meets your request, such as a manual, 
 
 Let’s try this prompt in Copilot. “Can you create a handbook for a summer mentoring program. The handbook should outline steps in the initiation, planning, implementation and evaluation phases. It should also include a checklist for the mentees and volunteers serving as mentors outlining their responsibilities during the program. Can you include a sample schedule for 30-minute weekly check-ins.”
 
-Prompt for mentoring handbook.mp4 (1:28)
 >[!VIDEO 3e038489-682b-401c-b206-1bcefce2ac24]
