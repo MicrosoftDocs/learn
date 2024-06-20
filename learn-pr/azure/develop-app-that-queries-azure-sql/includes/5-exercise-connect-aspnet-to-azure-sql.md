@@ -169,7 +169,7 @@ Now let's add to the application the code to retrieve course data from the datab
 1. Return to the code editor. Replace the value of the *connectionString* variable with the value from the clipboard. In the connection string, see the text `User ID` with the value `azuresql`. Replace the text `{your_password}` with the password for this account.
 
     ```C#
-    private string connectionString = "Server=tcp:courseservernnn.database.windows.net,1433;Initial Catalog=coursedatabasennn;Persist Security Info=False;User ID=azuresql;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+    private string connectionString = "Server=tcp:<server-name>.database.windows.net,1433;Initial Catalog=<database-name>;Persist Security Info=False;User ID=azuresql;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
     ```
 
 1. After the comment `//TODO: Connect to the database`, replace the commented-out `using` statement with the following code.
@@ -243,7 +243,7 @@ Now let's add to the application the code to retrieve course data from the datab
         public class DataAccessController
         {
             // Add your connection string in the following statements
-            private string connectionString = "Server=tcp:courseserver101.database.windows.net,1433;Initial Catalog=coursedatabase101;Persist Security Info=False;User ID=azuresql;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            private string connectionString = "Server=tcp:<server-name>.database.windows.net,1433;Initial Catalog=coursedatabase101;Persist Security Info=False;User ID=azuresql;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
             // Retrieve all details of courses and their modules    
             public IEnumerable<CoursesAndModules> GetAllCoursesAndModules()

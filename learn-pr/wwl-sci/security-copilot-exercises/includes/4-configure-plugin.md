@@ -5,7 +5,7 @@ In this exercise, you configure the Microsoft Sentinel plugin and run some test 
 
 ### Exercise
 
-For this exercise you're logged in as Avery Howard and have the Copilot owner role. You'll work in both the Azure portal and the standalone experience of Microsoft Copilot for Security.
+For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You'll work in both the Azure portal and the standalone experience of Microsoft Copilot for Security.
 
 This exercise should take approximately **15** minutes to complete.
 
@@ -32,7 +32,7 @@ In this task, you'll configure the Sentinel plugin. To do this, you need to acce
 
 1. Select the settings icon and note the parameters that need to be configured. Select the information icon next to any of the parameters. Keep this browser tab open, you'll come back to this page for each parameter to be configured.
 
-1. Open the browser page for the **[Azure portal](https://app.highlights.guide/start/89f9d04d-283c-4788-8214-22e4d5b4b171?link=1&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
+1. Use your right mouse key to open the link to the Azure portal in a new tab or window: **[Azure portal](https://app.highlights.guide/start/89f9d04d-283c-4788-8214-22e4d5b4b171?link=1&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**. It's important that access to the Azure portal and access to Copilot for Security be available as separate browser tabs, as you'll be accessing both tabs for this task.
     1. Select **Log Analytics workspaces**, it should be displayed as an icon under Azure services.
     1. Select the workspace associated with your Sentinel deployment. For this exercise, select **Woodgrove-LogAnalyticsWorkspace**.
     1. You should be on the overview page, if not select it now. From here you copy the information required to configure the Sentinel plugin. 
@@ -43,14 +43,14 @@ In this task, you'll configure the Sentinel plugin. To do this, you need to acce
 
 1. Repeat the steps until you have configured the remaining two fields. Once the all the fields are populated, select **Save**.
 
-1. Make sure toggle switch for the Sentinel plugin is enabled, then close the manage sources window.
+1. Make sure toggle switch for the Sentinel plugin is enabled, then close the manage sources window by selecting the **X**.
 
 #### Task: Retest the Microsoft Sentinel prompt
 
-Now that the Sentinel plugin is enabled, you'll run the prompt you tried earlier. With the prompt successfully executed, you'll save the prompt to the pinboard and get a link to the session so you can share it with a colleague.
+Now that the Sentinel plugin is enabled, you'll run the prompt you tried earlier. With the prompt successfully executed, you'll save the prompt to the pin board and get a link to the session so you can share it with a colleague.
 
-1. Once you've configured the plugin, you need to create a new session to run the Sentinel prompt.  From the top of the page, select **Microsoft Copilot for Security**.
-1. From the prompt bar, enter the prompt **Summarize the Microsoft Sentinel incident 30342**. You can copy and paste the prompt into the prompt bar. Then select the run icon.
+1. Once you've configured the plugin, you need to create a new session to rerun the Sentinel prompt. From the top of the page, select **Microsoft Copilot for Security**.
+1. In the prompt bar, enter the prompt **Summarize the Microsoft Sentinel incident 30342**. You can copy and paste the prompt into the prompt bar. Then select the run icon.
 
 1. The Copilot process log shows that the prompt executed successfully by displaying green check marks.
 
