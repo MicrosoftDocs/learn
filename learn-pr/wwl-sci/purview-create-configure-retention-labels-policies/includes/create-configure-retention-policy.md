@@ -30,6 +30,7 @@ Selecting either Teams or Viva Engage as a location automatically excludes the o
 ### Steps to create a retention policy
 
 1. Navigate to **Retention polices** in either the Microsoft Purview portal or Microsoft Purview compliance portal:
+
    - **Microsoft Purview portal**: [Sign in to the Microsoft Purview portal](https://purview.microsoft.com/) > **Data Lifecycle Management** card > **Policies** > **Retention policies**.
 
         If you don't see the **Data Lifecycle Management** card, select **View all solutions** and find **Data Lifecycle Management** under the **Data Governance** section.
@@ -37,12 +38,23 @@ Selecting either Teams or Viva Engage as a location automatically excludes the o
         :::image type="content" source="../media/purview-portal-data-lifecycle-management-card.png" alt-text="Screenshot showing the Data Lifecycle card in the Microsoft Purview portal.":::
 
    - **Microsoft Purview compliance portal**: [Sign in to the Microsoft Purview compliance portal](https://compliance.microsoft.com/) > **Solutions** > **Data lifecycle management** > **Microsoft 365** > **Retention Policies**.
+
 1. Select **New retention policy** to start the **Create retention policy** configuration, and name your new retention policy.
-1. On the **Assign admin units page**: If your organization uses administrative units in Microsoft Entra ID, you can restrict the retention policy to specific users by selecting these units. If administrative units are assigned to your account, choose the relevant ones.
+
+1. On the **Assign admin units** page: If your organization uses administrative units in Microsoft Entra ID, you can restrict the retention policy to specific users by selecting these units. If administrative units are assigned to your account, choose the relevant ones.
 
     If you don't want to use administrative units or if they aren't set up in your organization, keep the default setting as **Full directory**.
+
 1. Select the scope type for your retention policy.
-1. On the **Decide if you want to retain content, delete it, or both** page, set your retention policy options. Choose to retain content indefinitely, delete it after a specific period, or retain then delete it once that period expires.
+
+1. On the **Decide if you want to retain content, delete it, or both** page:
+
+   - **Retain items for a specific period**: Items are retained for a defined time frame. After this period, they are automatically deleted, helping manage data efficiently and ensuring compliance.
+
+   - **Retain items forever**: Items are kept indefinitely without an automatic deletion timeline.
+
+   - **Only delete items when they reach a certain age**: Items aren't retained but are scheduled for automatic deletion once they reach a specified age, helping manage data lifecycle without long-term retention.
+
 1. Complete the configuration and save your settings.
 
 ### Specific configurations for services
