@@ -53,7 +53,5 @@ To run your program locally on the built-in simulator, **Run** from the list of 
 
 The result is truly random. You can run the program again to see a different result.
 
-> [!TIP]
-> The  QDK includes a set of built-in Q# samples that you can use to learn more about Q# and quantum computing. To view the samples, open a new Q# file and type `sample`, then select the sample you want to view from the list of options. You can find the Q# code in this unit under "Random Bit sample".
 
 In the next unit, you'll implement the second phase of your quantum random number generator: combining multiple random bits to form a larger number.
