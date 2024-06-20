@@ -17,7 +17,7 @@ By the conclusion of this module, you have:
 
 - Configured a GitHub repository in Codespaces and installed the GitHub Copilot extension.
 - Crafted prompts to generate suggestions from GitHub Copilot.
-- Applied GitHub Copilot to improve your projects.
+- Learned how to apply GitHub Copilot to improve your projects.
 
 ## What is the main objective?
 
