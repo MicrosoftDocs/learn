@@ -1,14 +1,6 @@
 Q# is an open-source, high-level programming language for developing and running quantum algorithms. It’s part of the Azure Quantum Development Kit (Modern QDK) and is designed to be hardware agnostic, scale to the full range of quantum applications, and optimize execution.
 
-## Why a quantum programming language?
 
-There are many reasons for wanting to build a quantum programming language, but the short answer would be: because we want to write algorithms, not circuits.
-
-When writing algorithms, we should meet the following requirements for the language, compiler, and runtime:
-
-- **Abstract qubits:** Quantum algorithms use qubits that aren't tied to specific hardware or layout. The compiler and runtime handle the mapping from program qubits to physical qubits.
-- **Quantum and classical computation:** The ability to perform classical and quantum computations is essential in a *universal* quantum computer.
-- **Laws of physics:** Quantum algorithms follow the rules of quantum physics. For example, they can't copy or access the qubit state directly.
 
 ## The characteristics of Q\#
 
