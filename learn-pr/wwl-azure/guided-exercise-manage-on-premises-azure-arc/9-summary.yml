@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.give-your-ai-agent-skills.summary
+uid: learn.wwl.guided-exercise-manage-on-premises-azure-arc.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 02/27/2024
+  ms.date: 06/10/2024
   author: wwlpublish
-  ms.author: buzahid
+  ms.author: bradj
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/9-summary.md)]

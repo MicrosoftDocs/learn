@@ -1,12 +1,12 @@
 
-Recall that you recently joined a team at an IT software company that has tasked you with conducting a design and code review of the team-owned codebases. As you onboard to your new team and explore the codebase, you discover a web project, ASP.NET Blazor. With OWASP Top 10 in mind, you set off on a deep dive into the code with your security lenses on.
+Recall that you recently joined a team at an IT software company that's tasked you with conducting a design and code review of the team-owned codebases. As you onboard to your new team and explore the codebase, you discover an ASP.NET Blazor web project. With OWASP Top 10 in mind, you set off on a deep dive into the code with your security lenses on.
 
-You start at the top of the OWASP Top 10 list with *#1 - Broken Access Control*. This category refers to incidents user who shouldn’t have permission to access that data viewed confidential information.
+You start at the top of the OWASP Top 10 list with *#1: Broken Access Control*. This category refers to incidents where a user who shouldn’t have permission to access that data viewed confidential information.
 
 ### Built-in framework security capabilities
 
-.NET has built-in authentication and session management so there's no need to implement your own.
-Let's consider a ASP.NET Core controller. A controller without any authorization attributes treats each requests the same way without applying any security checks. By decorating controller actions or the controller itself with `Authorize` (user must be signed in and authenticated) or `AllowAnonymous` (any unauthenticated caller can invoke method) attributes, you gain control over what can be accessed publicly and which functionality is for authorized users only.
+.NET has built-in authentication and session management, so there's no need to implement your own.
+Let's consider a ASP.NET Core controller. A controller without any authorization attributes treats each request the same way without applying any security checks. By decorating controller actions or the controller itself with `Authorize` (user must be signed in and authenticated) or `AllowAnonymous` (any unauthenticated caller can invoke method) attributes, you gain control over what's publicly accessible and which functionality is for authorized users only.
 
 :::row:::
     :::column:::
@@ -56,7 +56,7 @@ public class AccountController : Controller​
 :::column-end:::
 :::row-end:::
 
-Similarly, the ASP.NET Minimal API supports the attribute decoration (Lambda *HTTP get* method with `[Authorize]` attribute), policy (AdminsOnly) and claim (admin) authorization, as seen in the example:
+Similarly, the ASP.NET Minimal API supports the attribute decoration (Lambda *HTTP get* method with `[Authorize]` attribute), policy (`AdminsOnly`) and claim (`admin`) authorization, as shown here:
 
 >  ```csharp
 > var builder = WebApplication.CreateBuilder(args);​
@@ -72,7 +72,7 @@ Similarly, the ASP.NET Minimal API supports the attribute decoration (Lambda *HT
 > app.MapGet("/", () => "This endpoint doesn't require authorization.");​
 > app.Run();
 
-Your application's user interface should also reflect the user's authentication (the user is who they say they are) and authorization (whether the user is allowed to access certain information) state. Here, too, the OWASP Top 10 framework has you covered. ASP.NET Blazor's razor syntax supports conditionally displayed components depending on authorization status. The `AutorizeView` component selectively displays UI content based on user's authorized status.
+Your application's user interface should also reflect the user's authentication (the user is who they say they are) and authorization state (whether the user is allowed to access certain information). Here, too, the OWASP Top 10 framework has you covered. ASP.NET Blazor's razor syntax supports conditionally displayed components depending on authorization status. The `AutorizeView` component selectively displays UI content based on user's authorized status.
 
 ```csharp
 <AuthorizeView Roles="admin, superuser">​
@@ -96,7 +96,7 @@ Your application's user interface should also reflect the user's authentication 
 }
 ```
 
-The `SecureMethod` is accessible once the user is authorized. Since `AutorizeView` component can validate against roles or policies, only role claim for either the *admin* or *superuser* roles would show the button.
+The `SecureMethod` is accessible once the user is authorized. Because the `AutorizeView` component can validate against roles or policies, only the role claims for either the *admin* or *superuser* roles would have the button.
 
 ### Code review notes
 

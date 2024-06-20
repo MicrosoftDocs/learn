@@ -42,7 +42,7 @@ BEGIN
 END;
 ```
 
-Sure, here's an example of a dynamic SQL query in T-SQL that could be useful in a data warehouse scenario. This example demonstrates a stored procedure that accepts a table name as a parameter and returns the top 10 rows from that table. This could be useful for quickly inspecting tables in a data warehouse.
+This example demonstrates a stored procedure that accepts a table name as a parameter and returns the top 10 rows from that table. This could be useful for quickly inspecting tables in a data warehouse.
 
 ```sql
 CREATE PROCEDURE sp_TopTenRows @tableName NVARCHAR(128)

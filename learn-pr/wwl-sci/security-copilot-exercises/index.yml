@@ -25,6 +25,7 @@ prerequisites: |
   - Completion of the module [Describe the core features of Microsoft Copilot for Security](/training/modules/security-copilot-describe-core-features/)
   - Completion of the module [Describe the embedded experiences of Microsoft Copilot for Security](/training/modules/security-copilot-embedded-experiences/)
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels: 
   - beginner
 roles: 
