@@ -1,4 +1,4 @@
-Congratulations! You succesfully created your first Q# program.
+Congratulations! You successfully created your first Q# program.
 
 The Azure Quantum Development Kit provides you with everything you need to start writing and verifying your own quantum algorithms right away.
 
