@@ -11,7 +11,7 @@ By implementing the recommended configuration settings in a newly built forest, 
 1.  Isolate legacy systems and applications.
 1.  Simplify security for end users.
 
-## Identifying principles for segregating and securing critical assets
+## Identify principles for segregating and securing critical assets
 
 The characteristics of the pristine environment that you create to house critical assets can vary widely. For example, you may choose to create a pristine forest into which you migrate only VIP users and sensitive data that only those users can access. You may create a pristine forest in which you migrate not only VIP users, but which you implement as an administrative forest, implementing the principles to reduce the attack surface to create secure administrative accounts and hosts that can be used to manage your legacy forests from the pristine forest. You might implement a "purpose-built" forest that houses VIP accounts, privileged accounts, and systems requiring additional security such as servers running Active Directory Certificate Services (AD CS) with the sole goal of segregating them from less-secure forests. Finally, you might implement a pristine forest that becomes the de facto location for all new users, systems, applications and data, allowing you to eventually decommission your legacy forest via attrition.
 
@@ -23,13 +23,13 @@ Regardless of whether your pristine forest contains a handful of users and syste
 1. Don't migrate computers from legacy forests to pristine forests. Implement freshly installed servers in the pristine forest, install applications on the freshly installed servers, and migrate application data to the newly installed systems. For file servers, copy data to freshly installed servers, set ACLs by using users and groups in the new forest, and then create print servers in a similar fashion.
 1. Don't permit the installation of legacy operating systems or applications in the pristine forest. If an application can't be updated and freshly installed, leave it in the legacy forest and consider creative destruction to replace the application's functionality.
 
-## Defining a limited, risk-based migration plan
+## Define a limited, risk-based migration plan
 
 Creating a limited, risk-based migration plan simply means that when deciding which users, applications, and data to migrate into your pristine forest, you should identify migration targets based on the degree of risk to which your organization is exposed if one of the users or systems is compromised. VIP users whose accounts are most likely to be targeted by attackers should be housed in the pristine forest. Applications that provide vital business functions should be installed on freshly built servers in the pristine forest, and highly sensitive data should be moved to secured servers in the pristine forest.
 
 If you don't already have a clear picture of the most business-critical users, systems, applications, and data in your Active Directory environment, work with business units to identify them. Any application required for the business to operate should be identified, as should any servers on which critical applications run or critical data is stored. By identifying the users and resources that are required for your organization to continue to function, you create a naturally prioritized collection of assets on which to focus your efforts.
 
-## Leveraging "nonmigratory" migrations
+## Leverage "nonmigratory" migrations
 
 Whether you know that your environment has been compromised, suspect that it has been compromised, or simply prefer not to migrate legacy data and objects from a legacy Active Directory installation to a new one, consider migration approaches that don't technically "migrate" objects.
 
@@ -49,19 +49,19 @@ In a traditional migration from one Active Directory forest to another, migratin
 
 Applications can present the most significant challenge in any migration from one forest to another, but in the case of a "nonmigratory" migration, one of the most basic principles you should apply is that applications in the pristine forest should be current, supported, and freshly installed. Data can be migrated from application instances in the old forest where possible. In situations in which an application can't be "recreated" in the pristine forest, you should consider approaches such as creative destruction or isolation of legacy applications as described in the following section.
 
-## Implementing creative destruction
+## Implement creative destruction
 
 In creative destruction, rather than maintaining outdated or redundant applications, you implement entirely new applications to replace the old, migrate data into the new applications, and decommission the old applications and the systems on which they run. In some cases, you can implement creative destruction of legacy applications by deploying a new application in your own infrastructure, but wherever possible, you should consider porting the application to a cloud-based solution instead.
 
 By deploying cloud-based applications to replace legacy in-house applications, you not only reduce maintenance efforts and costs, but you reduce your organization's attack surface by eliminating legacy systems and applications that present vulnerabilities for attackers to leverage. This approach provides a faster way for an organization to obtain desired functionality while simultaneously eliminating legacy targets in the infrastructure. Although the principle of creative destruction doesn't apply to all IT assets, it provides an often viable option to eliminating legacy systems and applications while simultaneously deploying robust, secure, cloud-based applications.
 
-## Isolating legacy systems and applications
+## Isolate legacy systems and applications
 
 A natural outgrowth of migrating your business-critical users and systems to a pristine, secure environment is that your legacy forest will contain less valuable information and systems. Although the legacy systems and applications that remain in the less secure environment may present elevated risk of compromise, they also represent a reduced severity of compromise. By re-homing and modernizing your critical business assets, you can focus on deploying effective management and monitoring while not needing to accommodate legacy settings and protocols.
 
 By removing these systems from domains where they forced implementation of legacy settings, you can subsequently increase the security of the domains by configuring them to support only current operating systems and applications. Although, it's preferable to decommission legacy systems and applications whenever possible. If decommissioning is simply not feasible for a small segment of your legacy population, segregating it into a separate domain (or forest) allows you to perform incremental improvements in the rest of the legacy installation.
 
-## Simplifying security for end users
+## Simplify security for end users
 
 In most organizations, users who have access to the most sensitive information due to the nature of their roles in the organization often have the least amount of time to devote to learning complex access restrictions and controls. Although you should have a comprehensive security education program for all users in your organization, you should also focus on making security as simple to use as possible by implementing controls that are transparent and simplifying principles to which users adhere.
 
