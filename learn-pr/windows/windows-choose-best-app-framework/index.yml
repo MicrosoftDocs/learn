@@ -17,7 +17,7 @@ abstract: |
     - Choose the Windows UI framework that best addresses your organization's application requirements and target audience.
 prerequisites: |
   - You should be familiar with .NET and Windows application development concepts and terminology.
-  - An understanding of the C# programming language and XAML markup is helpful, but isn't necessary.
+  - An understanding of the C# programming language and Extensible Application Markup Language (XAML) is helpful, but isn't necessary.
 iconUrl: /learn/achievements/windows-best-app-framework.svg
 levels: 
   - beginner
