@@ -27,7 +27,7 @@ In this task, you create the promptbook. As part of the process, you templatize 
 
 1. To include a subset of all the prompts, you can select the box next to each individual prompt. Or you can select the box next to the pin icon to include all the prompts. In this case, you want to select all the prompts from the session.
 
-1. Now that you’ve selected the prompts, select the **Create promptbook** ![sources icon](../media/create-promptbook-icon.png) icon. The Create a promptbook window opens. Here you populate the name, tags, and description fields for the promptbook. For the simulation, you can use copy/paste to enter the following values or type them in as shown.
+1. Now that you’ve selected the prompts, select the **Create promptbook** ![sources icon](../media/create-promptbook-icon.png) icon. The Create a promptbook window opens. Here you populate the name, tags, and description fields for the promptbook, you configure an input parameter, and add a prompt. For the simulation, we've provided the input values to use. You can use copy/paste to enter those values or type them in as shown.
     1. Name: **Failed logins**
     1. Tags: **Microsoft Entra**
     1. Description: **Find the last failed logins**
