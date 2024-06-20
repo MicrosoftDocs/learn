@@ -3,7 +3,7 @@ uid: learn.windows.windows-best-app-framework.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check your knowledge to see if you understand when to use each Windows application framework (WPF, Windows Forms, and WinUI with Windows App SDK).
+  description: Check your knowledge to see if you understand when to use each Windows UI framework (WPF, Windows Forms, and WinUI with Windows App SDK).
   ms.date: 06/11/2024
   author: alvinashcraft
   ms.author: aashcraft

@@ -10,7 +10,7 @@ Together, WinUI, the Windows App SDK, and WPF represent the best path forward fo
 
 ## References
 
-To read more about the application frameworks discussed in this module, see the following resources:
+To read more about the UI frameworks discussed in this module, see the following resources:
 
 - [Developing apps for Windows](https://developer.microsoft.com/windows/develop/)
 - [An overview of Windows development options](/windows/apps/get-started/)

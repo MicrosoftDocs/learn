@@ -1,12 +1,12 @@
-Organizations must choose to balance the needs of their customers with the skills of their developers. In this unit, you learn how to analyze the decision criteria for a project to choose the best application framework for a Windows development project.
+Organizations must choose to balance the needs of their customers with the skills of their developers. In this unit, you learn how to analyze the decision criteria for a project to choose the best UI framework for a Windows development project.
 
-The consulting company has customers that want to build Windows applications. The company needs to choose the best application framework for each project. The company has a team of developers that are experienced in .NET, C#, and Extensible Application Markup Language (XAML). The company wants to use the skills of the existing development team to build the applications. Each project has unique requirements, so the company needs to choose the best application framework for each project.
+The consulting company has customers that want to build Windows applications. The company needs to choose the best UI framework for each project. The company has a team of developers that are experienced in .NET, C#, and Extensible Application Markup Language (XAML). The company wants to use the skills of the existing development team to build the applications. Each project has unique requirements, so the company needs to choose the best UI framework for each project.
 
 - A line-of-business application that is deployed via a custom installer to enterprise customers in the healthcare industry.
 - A log reader utility that is deployed via Windows Package Manager with WinGet scripting to enterprise customers.
 - A file sync application that is deployed to the Microsoft Store for consumers.
 
-In this unit, you learn the common factors that influence the decision of which application framework to use for a Windows development project:
+In this unit, you learn the common factors that influence the decision of which UI framework to use for a Windows development project:
 
 - Appearance and style of the application
 - Tablet usability (touch) and device compatibility
