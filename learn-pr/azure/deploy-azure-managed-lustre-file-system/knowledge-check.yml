@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: What is a requirement for a client machine to access Azure Managed Lustre?
     choices:
-    - content: The client machine does not need network connectivity to the subnet that hosts the Azure Managed Lustre file system
+    - content: The client machine doesn't need network connectivity to the subnet that hosts the Azure Managed Lustre file system
       isCorrect: false
       explanation: Incorrect. The client machine does need network connectivity to the subnet that hosts the Azure Managed Lustre file system.
     - content: The client machine must be running a Windows operating system
@@ -33,15 +33,15 @@ quiz:
       explanation: Correct. The Maintenance window setting is used to specify when system updates, including security updates, Lustre code fixes, and service enhancements, can be applied.
     - content: It sets the time for automatic system upgrades.
       isCorrect: false
-      explanation: Incorrect. The Maintenance window setting does not schedule automatic system upgrades.
+      explanation: Incorrect. The Maintenance window setting doesn't schedule automatic system upgrades.
     - content: It allows users to schedule regular data backups.
       isCorrect: false
-      explanation: Incorrect. The Maintenance window setting does not schedule data backups.
+      explanation: Incorrect. The Maintenance window setting doesn't schedule data backups.
   - content: What is the purpose of creating an export job in Azure Managed Lustre file system?
     choices:
     - content: To delete data from the Lustre file system after it has been copied to Azure Blob Storage
       isCorrect: false
-      explanation: Incorrect. The export job does not delete any data from the Lustre file system.
+      explanation: Incorrect. The export job doesn't delete any data from the Lustre file system.
     - content: To copy new or changed files from the Lustre file system to Azure Blob Storage
       isCorrect: true
       explanation: Correct. An export job is created to copy new or changed files from the Lustre file system to Azure Blob Storage for long-term storage.
@@ -52,10 +52,10 @@ quiz:
     choices:
     - content: It allows for the creation of virtual machines with unlimited storage capacity
       isCorrect: false
-      explanation: Incorrect. While Azure Managed Lustre does provide high-performance storage, it does not allow for the creation of virtual machines with unlimited storage capacity.
+      explanation: Incorrect. While Azure Managed Lustre does provide high-performance storage, it doesn't allow for the creation of virtual machines with unlimited storage capacity.
     - content: It provides a built-in data analytics tool for analyzing large volumes of data
       isCorrect: false
-      explanation: Incorrect. Azure Managed Lustre is a file system service and does not provide built-in data analytics tools.
+      explanation: Incorrect. Azure Managed Lustre is a file system service and doesn't provide built-in data analytics tools.
     - content: It simplifies operations, reduces setup costs, and eliminates complex maintenance associated with high-performance file systems
       isCorrect: true
       explanation: Correct. Azure Managed Lustre is a managed service that simplifies operations, reduces setup costs, and eliminates complex maintenance associated with high-performance file systems.

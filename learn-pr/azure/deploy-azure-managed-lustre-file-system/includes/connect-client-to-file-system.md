@@ -9,7 +9,7 @@ Client machines running Linux can access Azure Managed Lustre. The basic client 
 - **Mount command** - Clients must be able to use the POSIX `mount` command to connect to the file system.
 - **Performance**: To achieve optimal performance, clients should meet the following requirements:
   - Clients must reside in the same Availability Zone as the cluster.
-  - [Enable accelerated networking](/azure/virtual-network/create-vm-accelerated-networking-cli#confirm-that-accelerated-networking-is-enabled) on all client VMs. If this option isn't enabled, then [fully enabling accelerated networking requires a stop/deallocate of each VM](/azure/virtual-network/accelerated-networking-overview#enabling-accelerated-networking-on-a-running-vm).
+  - [Enable accelerated networking](/azure/virtual-network/create-vm-accelerated-networking-cli#confirm-that-accelerated-networking-is-enabled) on all client VMs. If this option isn't enabled, then [fully enabling accelerated networking requires a stop/deallocate of each virtual machine (VM)](/azure/virtual-network/accelerated-networking-overview#enabling-accelerated-networking-on-a-running-vm).
 - **Security type**: When selecting the security type for the VM, choose the Standard Security Type. Choosing **Trusted Launch** or **Confidential** prevents the Lustre module from being properly installed on the client.
 
 The following steps describe the basic workflow to connect a client to the Azure Managed Lustre file system:

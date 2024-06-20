@@ -1,4 +1,4 @@
-In this module, you learned how to eliminate the complexity of managing storage infrastructure by deploying on demand, high-performance file systems using Azure Managed Lustre. file system, integrate the file system with Azure Blob Storage, connect clients to the file system to run workloads, and export modified files to a blob container for long-term storage.
+In this module, you learned how to accelerate HPC workloads and reduce the complexity of managing storage infrastructure by deploying on demand, high-performance file systems using Azure Managed Lustre. You learned how to deploy and Azure Managed Lustre file system, integrate the file system with Azure Blob Storage, connect clients to the file system to run workloads, and export modified files to a blob container for long-term storage.
 
 ## Learn more
 
