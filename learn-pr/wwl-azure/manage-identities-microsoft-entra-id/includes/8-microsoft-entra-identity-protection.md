@@ -1,4 +1,4 @@
-Microsoft Entra ID Protection helps organizations detect, investigate, and remediate identity-based risks. These identity-based risks can be further fed into tools like Conditional Access to make access decisions or fed back to a security information and event management (SIEM) tool for further investigation and correlation.<br>
+Microsoft Entra ID Protection helps organizations detect, investigate, and remediate identity-based risks. These identity-based risks can be further fed into tools like Conditional Access to make access decisions or fed back to a security information and event management (SIEM) tool for further investigation and correlation.
 
 :::image type="content" source="../media/microsoft-entra-identity-protection-overview-9425c35d.png" alt-text="Diagram showing an example of Microsoft Entra ID Protection.":::
 
@@ -20,6 +20,8 @@ Any risks detected on an identity are tracked with reporting. Identity Protectio
  -  Risk detections: Each risk detected is reported as a risk detection.
  -  Risky sign-ins: A risky sign-in is reported when there are one or more risk detections reported for that sign-in.
  -  Risky users: A Risky user is reported when either or both of the following are true:
+    
+    
      -  The user has one or more Risky sign-ins.
      -  One or more risk detections have been reported.
 
