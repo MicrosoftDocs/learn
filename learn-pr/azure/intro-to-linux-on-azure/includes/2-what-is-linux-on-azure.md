@@ -1,6 +1,6 @@
 The Microsoft Azure cloud is a worldwide network of state-of-the-art datacenters and more than 200 products and cloud services designed to support a broad spectrum of business and technical scenarios. Moving to Azure enables you to minimize the burden of maintaining physical infrastructure and benefit from advanced compute services. Microsoft and third parties on Azure offer many programming languages, development frameworks, and operating system distributions. Microsoft and its partners also offer hundreds of prebuilt solutions that can quickly add value to both new and existing workloads.
 
-Linux is the fastest growing platform on Azure, which means that Linux users find familiar tools and systems. Microsoft and its partners also offer hundreds of prebuilt solutions that can quickly add value to both new and existing workloads.
+Linux is the fastest growing platform on Azure, so Linux users will find familiar tools and systems. Microsoft and its partners also offer hundreds of prebuilt solutions that can quickly add value to both new and existing workloads.
 
 - First, choose the Linux distribution you want based on familiarity, usage, cost, and support requirements.  Bring your own distribution or find distributions in [Azure Marketplace](https://azuremarketplace.microsoft.com).
 
