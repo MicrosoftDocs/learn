@@ -26,7 +26,7 @@ Creating retention labels involves defining retention or deletion periods and sp
 
    - **Microsoft Purview portal**: [Sign in to the Microsoft Purview portal](https://purview.microsoft.com/) > **Records management** card > **File plan**.
 
-        If you don't see the **Records management** card, select **View all solutions** and find **Records management** under the **Risk & Compliance** section.
+        - If you don't see the **Records management** card, select **View all solutions** and find **Records management** under the **Risk & Compliance** section.
 
         :::image type="content" source="../media/purview-portal-records-management-card.png" alt-text="Screenshot showing the Records Management card in the Microsoft Purview portal.":::
 
@@ -42,7 +42,7 @@ Creating retention labels involves defining retention or deletion periods and sp
 
    - Select or create descriptors:
 
-      - Select **Choose** to  select appropriate descriptors that match the content management needs.
+      - Select **Choose** to select appropriate descriptors that match the content management needs.
 
       - If needed, select **Create new** to add a custom descriptor, provide its details, and confirm.
 
@@ -85,6 +85,6 @@ The visibility of retention labels can vary based on the service:
 
 :::image type="content" source="../media/retention-labels-published-timings.png" alt-text="Diagram illustrating when retention label policies are available to apply.":::
 
-If labels do not appear as expected, verify the policy status and consider using PowerShell commands to troubleshoot or force policy distribution.
+If labels don't appear as expected, verify the policy status and consider using PowerShell commands to troubleshoot or force policy distribution.
 
 Retention labels are a powerful component of Microsoft Purview, helping to ensure data is managed in compliance with policy and regulatory requirements. By following the steps to create and publish these labels, you can enhance your organization's data management strategy and ensure compliance across all digital content.
