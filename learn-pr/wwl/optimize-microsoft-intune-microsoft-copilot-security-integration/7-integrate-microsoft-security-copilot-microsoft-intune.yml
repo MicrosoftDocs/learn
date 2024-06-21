@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.integrate-microsoft-security-copilot-microsoft-intune
+title: Integrate Microsoft Copilot for Security with Microsoft Intune
+metadata:
+  title: Integrate Microsoft Copilot for Security with Microsoft Intune
+  description: "Integrate Microsoft Copilot for Security with Microsoft Intune"
+  ms.date: 06/21/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-integrate-microsoft-security-copilot-microsoft-intune.md)]
