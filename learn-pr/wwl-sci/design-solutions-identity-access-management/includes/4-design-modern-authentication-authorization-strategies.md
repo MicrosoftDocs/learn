@@ -128,7 +128,7 @@ Identity Protection categorizes risk into tiers: low, medium, and high.
 Microsoft doesn't provide specific details about how risk is calculated. Each level of risk brings higher confidence that the user or sign-in is compromised. For example, something like one instance of unfamiliar sign-in properties for a user might not be as threatening as leaked credentials for another user.
 
 > [!NOTE]
-> Risk based policies can be created in Identity protection as well, but it is recommended to do so with Conditional Access policies.
+> Risk-based policies can be created in Identity protection as well, but it is recommended to do so with Conditional Access policies.
 
 ## Risk-based conditional access policies
 
