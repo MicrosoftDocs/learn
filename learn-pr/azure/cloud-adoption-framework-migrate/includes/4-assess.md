@@ -12,11 +12,11 @@ Your cloud adoption team should evaluate technical compatibility, the required a
 
 When you want to migrate a workload, your cloud adoption team must ensure that all assets and associated dependencies are compatible with your deployment model and cloud provider. Your team documents any required efforts to remediate compatibility problems.
 
-- **Evaluate your assumptions**. Use assessment tools to [determine if you have any blockers for migration]((/azure/cloud-adoption-framework/migrate/assess/evaluate#evaluation-assumptions)).
+- **Evaluate your assumptions**. Use assessment tools to [determine if you have any blockers for migration](/azure/cloud-adoption-framework/migrate/assess/evaluate#evaluation-assumptions).
 
-- **Evaluate cross-datacenter dependencies** if you [migrate workloads from  multiple datacenters]((/azure/cloud-adoption-framework/migrate/assess/evaluate#evaluate-cross-datacenter-dependencies)). Visualize and group those dependencies to identify IP addresses and ports of assets that support the workload.
+- **Evaluate cross-datacenter dependencies** if you [migrate workloads from  multiple datacenters](/azure/cloud-adoption-framework/migrate/assess/evaluate#evaluate-cross-datacenter-dependencies). Visualize and group those dependencies to identify IP addresses and ports of assets that support the workload.
 
-- **Use Azure Migrate and Modernize** for replication activities. You can [use your Azure Migrate and Modernize]((/azure/cloud-adoption-framework/migrate/assess/evaluate#common-evaluation-activities-for-azure-migrate-and-modernize)) project to:
+- **Use Azure Migrate and Modernize** for replication activities. You can [use your Azure Migrate and Modernize](/azure/cloud-adoption-framework/migrate/assess/evaluate#common-evaluation-activities-for-azure-migrate-and-modernize) project to:
 
   - Assess workloads.
   - Calculate the cost of operating in Azure.
@@ -27,13 +27,15 @@ When you want to migrate a workload, your cloud adoption team must ensure that a
 
 - **Document any discrepancies** in your host configuration, replicated VM configuration, storage requirements, or network configuration. Use that information to estimate the bandwidth considerations for your migration.
 
-## Design a workload architecture
+## Design your workload architecture
 
-Design your:
-- Architecture for a landing zone during the Ready phase of the Cloud Adoption Framework.
-- Workload network architecture.
-- Workload dependencies.
-- Confidential computing.
+Before you migrate, you must [design the intended migrated state of your workload](/azure/cloud-adoption-framework/migrate/assess/architect#know-when-to-change-your-architecture). 
+
+Consider [common design assumptions](/azure/cloud-adoption-framework/migrate/assess/architect#base-architecture-design-on-common-assumptions) to design your:
+- Architecture for a [landing zone](/azure/cloud-adoption-framework/migrate/assess/architect#design-architecture-for-a-landing-zone) during the Ready phase of the Cloud Adoption Framework.
+- [Workload network architecture](/azure/cloud-adoption-framework/migrate/assess/architect#design-workload-network-architecture) with resources, like load balancers and other application-delivery resources.
+- [Workload dependencies](/azure/cloud-adoption-framework/migrate/assess/architect#design-workload-dependencies) to account for communication between components.
+- [Confidential computing](/azure/cloud-adoption-framework/migrate/assess/architect#prepare-for-adopting-confidential-computing).
 
 As you finish your architecture design, [revisit your cloud estimate](/azure/cloud-adoption-framework/migrate/assess/architect#update-your-initial-cloud-estimate) to make sure that you're still within the planned budget. 
 
