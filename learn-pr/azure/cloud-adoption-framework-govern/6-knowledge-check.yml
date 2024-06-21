@@ -15,9 +15,9 @@ quiz:
   questions:
   - content: To address the Tailwind Traders CIO's risks and concerns, which of the following steps would you start with?
     choices:
-    - content: Use Azure tools to automate notifications for triggers.
+    - content: Select a small and diverse cloud governance team.
       isCorrect: false
-      explanation: Incorrect. Governance tools can't address poorly defined corporate policy.
+      explanation: Incorrect. Tailwind Traders already has an established cloud governance team.
     - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
       isCorrect: true
       explanation: Correct! Rank the risks to determine which ones are most critical to address first.
@@ -29,9 +29,9 @@ quiz:
       explanation: Incorrect. You must first analyze the risks before you can define the policies that address them.
   - content: Which step would you address second?
     choices:
-    - content: Use Azure tools to automate notifications for triggers.
+    - content: Select a small and diverse cloud governance team.
       isCorrect: false
-      explanation: Incorrect. Governance tools can't address poorly defined corporate policy.
+      explanation: Incorrect. Tailwind Traders already has an established cloud governance team.
     - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
       isCorrect: false
       explanation: Incorrect. Risk analysis should be at the top of a list of things to address.
@@ -41,11 +41,11 @@ quiz:
     - content: Define the cloud governance policy, including a policy statement, risk ID, policy ID, and policy scope.
       isCorrect: true
       explanation: Correct! After you know the risks, you can define the policies that address them.
-  - content: Which step helps align Tailwind Traders' cloud governance with the new policy and also removes manual processes to improve efficiency?
+  - content: Which step helps encourage quick decision-making and provides various perspectives?
     choices:
-    - content: Use Azure tools to automate notifications for triggers.
+    - content: Select a small and diverse cloud governance team.
       isCorrect: true
-      explanation: Correct! Governance tools help enforce the policies that you put in place, and automation improves efficiency.
+      explanation: Correct! A diverse team is ideal so that you can get different perspectives about risks and policies.
     - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
       isCorrect: false
       explanation: Incorrect. You analyze risks before you align your organization with a new policy.
@@ -57,9 +57,9 @@ quiz:
       explanation: Incorrect. You must define the policy before you can align the organization's cloud governance with it.
   - content: Which step includes a governance compliance checklist for the members of Tailwind Traders?
     choices:
-    - content: Use Azure tools to automate notifications for triggers.
+    - content: Select a small and diverse cloud governance team.
       isCorrect: false
-      explanation: Incorrect. But you might include information about automation for triggers in a governance compliance checklist.
+      explanation: Incorrect.
     - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
       isCorrect: false
       explanation: Incorrect. You need to know the risks before you create a governance compliance checklist.
