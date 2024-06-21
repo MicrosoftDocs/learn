@@ -4,11 +4,11 @@ In this exercise, you add a Razor component to your application's home page.
 
 1. Expand the folders in the Visual Studio Solution Explorer. If you don't have the Solution Explorer displayed, select **View** > **Solution Explorer**.
 
-1. Select **Pages** to view the existing Razor pages.
+1. Select **Components/Pages** to view the existing Razor pages.
 
 1. Select the **Home.razor** file to open it.
 
-1. Add a `Counter` component to the page by adding a `<Counter />` element at the end of the _Index.razor_ file.
+1. Add a `Counter` component to the page by adding a `<Counter />` element at the end of the _Home.razor_ file.
 
    ```razor
    @page "/"
@@ -16,8 +16,6 @@ In this exercise, you add a Razor component to your application's home page.
    <h1>Hello, world!</h1>
 
    Welcome to your new app.
-
-   <SurveyPrompt Title="How is Blazor working for you?" />
 
    <Counter />
    ```
@@ -71,7 +69,7 @@ Update the code in the **Counter.razor** file as follows:
 }
 ```
 
-In `Index.razor`, update the `<Counter>` element to add an `IncrementAmount` attribute that changes the increment amount to 10 as shown by the last line in the following code:
+In `Home.razor`, update the `<Counter>` element to add an `IncrementAmount` attribute that changes the increment amount to 10 as shown by the last line in the following code:
 
 ```razor
 @page "/"
@@ -80,13 +78,11 @@ In `Index.razor`, update the `<Counter>` element to add an `IncrementAmount` att
 
 Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
-
 <Counter IncrementAmount="10" />
 ```
 
 Start the app again 
 
-The `Index` component now has its own counter that increments by 10 each time you select the **Click me** button, as shown in the following image. The `Counter` component (_Counter.razor_) at `/counter` continues to increment by one.
+The `Home` component now has its own counter that increments by 10 each time you select the **Click me** button, as shown in the following image. The `Counter` component (_Counter.razor_) at `/counter` continues to increment by one.
 
 ![Screenshot of the home page with Counter update.](../media/counter-homepage-modify.png)
