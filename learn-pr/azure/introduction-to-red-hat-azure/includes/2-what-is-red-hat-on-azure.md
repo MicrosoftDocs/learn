@@ -8,7 +8,7 @@ Red Hat offers open-source code for enterprise customers to improve the manageab
 
 ### ARO
 
-**Azure Red Hat OpenShift (ARO)** provides fully managed Red Hat OpenShift clusters on Azure. Both Microsoft and Red Hat engineer, manage, and support these clusters. ARO applies the power of Azure to provide a flexible, self-service deployment of fully managed OpenShift clusters for developing and deploying applications. With ARO, you can maintain regulatory compliance and focus on your application development, while Microsoft and Red Hat patch, update, and monitor your cluster nodes. You can get up and running immediately using the pre-integrated application builds, container packaging and registry, deployments, scaling, health management, and more. ARO also supports integration with most major CI/CD and application performance management solutions. 
+**Azure Red Hat OpenShift (ARO)** provides fully managed Red Hat OpenShift clusters on Azure. Both Microsoft and Red Hat engineers manage and support these clusters. ARO applies the power of Azure to provide a flexible, self-service deployment of fully managed OpenShift clusters for developing and deploying applications. With ARO, you can maintain regulatory compliance and focus on your application development, while Microsoft and Red Hat patch, update, and monitor your cluster nodes. You can get up and running immediately using the pre-integrated application builds, container packaging and registry, deployments, scaling, health management, and more. ARO also supports integration with most major CI/CD and application performance management solutions. 
 
 ARO is explained in more detail in the next unit.
 
