@@ -25,13 +25,13 @@ When you're choosing between hot, cool, cold, and archive access tiers, there ar
 
 In addition to pricing differences, blobs in the archive, cold, and cool tiers have a slightly lower availability Service Level Agreement (SLA) when compared with hot access tier. However, all three tiers offer the same durability, throughput, and storage access latency characteristics, with retrieval time in the range of milliseconds. The hot and cool tiers also support all redundancy options.
 
-The hot, cool, cold, or archive access tier can be assigned to a blob directly during its upload. Alternatively, hot or cool access tiers (but not archive or cold) can be inferred based on the access tier specified as the default tier on the storage account level. However, any explicit tier assignment takes precedence over the inferred one.
+The hot, cool, cold, or archive access tier can be assigned to a blob directly during its upload. Alternatively, hot or cool access tiers (but not archive) can be inferred based on the access tier specified as the default tier on the storage account level. However, any explicit tier assignment takes precedence over the inferred one.
 
 > [!NOTE]
 > Carefully consider the implications of changing the default access tier on the storage account level, because this might have a significant pricing impact if there’s a large number of blobs without an explicitly assigned access tier.
 
 > [!NOTE]
-> If a blob's tier is inferred as cool, there’s no early deletion charge for moving it to the archive tier. However, a charge does apply if the blob is explicitly assigned to the cool tier and then moved to the archive tier before a period of 30 days.
+> If a blob's tier is inferred as cool or cold, there’s no early deletion charge for moving it to the archive tier. However, a charge does apply if the blob is explicitly assigned to the cool or cold tier and then moved to the archive tier before a period of 30 days.
 
 While a blob is assigned to the archive tier, you can't directly read or modify its content, although you do have access to its metadata, including index tags. To access the blob's content, you can assign it to the hot, cool, or cold tier, which triggers the process referred to as *rehydration*. Alternatively, you can invoke the Copy Blob operation to create a copy of the blob in the hot, cool, or cold tier.
 
