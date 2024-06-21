@@ -1,4 +1,4 @@
-The Cloud Adoption Framework migration methodology provides proven guidance to help you prepare for and carry out a migration to the cloud.
+The Cloud Adoption Framework Migrate methodology provides proven guidance to help you prepare for and carry out a migration to the cloud.
 
 The migration process includes four stages: prepare, assess, deploy, and release. This approach is vendor-neutral, so you can migrate workloads to any cloud service.
 

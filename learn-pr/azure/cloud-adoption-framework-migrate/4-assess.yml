@@ -3,7 +3,7 @@ uid: learn.cloud-adoption-framework-migrate.assess
 title: Assess your workload
 metadata:
   title: Assess your workload
-  description: Tailwind Traders is preparing its cloud environment. Learn more about the company's cloud portfolio to help it find the best governance solutions for its workloads.
+  description: Learn how to use the Cloud Adoption Framework for Azure to assess the readiness of your workloads for migration to the cloud.
   ms.date: 10/30/2023
   author: Zimmergren
   ms.author: tozimmergren

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.cloud-adoption-framework-migrate.release
-title: Exercise - Migration and modernization
+title: Release your workload
 metadata:
-  title: Exercise - Migration and modernization
-  description: Walk through the process of migrating or modernizing a server by using Azure Migrate.
+  title: Release your workload
+  description: Learn how to use the Cloud Adoption Framework for Azure to prepare your migrated workload and assets so that you can promote them to production.
   ms.date: 10/30/2023
   author: Zimmergren
   ms.author: tozimmergren

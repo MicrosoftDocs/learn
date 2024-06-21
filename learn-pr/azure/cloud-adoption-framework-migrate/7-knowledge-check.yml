@@ -16,45 +16,45 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Validating traffic patterns and routing for user traffic is what kind of technical validation?
+  - content: What should you focus on during the Prepare phase in a migration?
     choices:
-    - content: User route testing
+    - content: Classifying workloads based on data sensitivity and workload criticality.
+      isCorrect: false
+      explanation: Incorrect.
+    - content: Performing tasks to ensure that you properly configure your landing zone for your migration.
       isCorrect: true
-      explanation: Having the correct user route testing in place helps ensure that the network is performing as expected.
-    - content:  Network isolation testing
+      explanation: Correct! You must prepare your landing zone so that your environment can support the migration.
+    - content: Decommissioning on-premises resources, and performing a retrospective.
       isCorrect: false
-      explanation:  Network isolation testing should be in place to test that the network has proper isolation and no unexpected network vulnerabilities.
-    - content: Dependency testing
+      explanation: Incorrect.
+    - content: Remediating assets, replicating assets, and performing a test migration in an isolated environment.
       isCorrect: false
-      explanation: Dependency testing should be in place to ensure that workload dependencies have been migrated and are accessible from the migrated assets.
-    - content: Business continuity and disaster recovery (BCDR) testing
-      isCorrect: false
-      explanation: BCDR testing should be in place to validate that any service-level agreements (SLAs) for backup and recovery are established.
-  - content: What should the *assessing workloads* phase in a migration project focus on?
+      explanation: Incorrect.
+  - content: What should you focus on during the Assess phase in a migration?
     choices:
-    - content: Forming a team of Azure experts.
-      isCorrect: false
-      explanation: A team of people who understand the Azure platform should be formed as part of the migration project. However, forming a team isn't necessarily the objective of assessing workloads for the project.
-    - content: Gathering information about cloud compatibility and dependencies between servers and assets.
+    - content: Classifying workloads based on data sensitivity and workload criticality.
       isCorrect: true
-      explanation: This phase of the migration project should be focused on information gathering that can help your organization understand the migration path for each workload or asset.
-    - content: Testing and releasing production traffic to the migrated workloads.
+      explanation: Correct! You must assess individual assets that are associated with your workload to determine whether they're suitable for migration.
+    - content: Performing tasks to ensure that you properly configure your landing zone for your migration.
       isCorrect: false
-      explanation: The release of production traffic to workloads in the cloud should happen after proper planning and migration.
-    - content: Planning out the migration sprint phases.
+      explanation: Incorrect.
+    - content: Decommissioning on-premises resources, and performing a retrospective.
       isCorrect: false
-      explanation: Planning out the appropriate sprint phases for the project is an important step but would take place after assessment of the workloads.
-  - content: An organization's migration project has stalled because the team hasn't set the correct expectations with its executive-level team. What kind of blocker is this an example of?
+      explanation: Incorrect.
+    - content: Remediating assets, replicating assets, and performing a test migration in an isolated environment.
+      isCorrect: false
+      explanation: Incorrect.
+  - content: What should you focus on during the Deploy phase in a migration?
     choices:
-    - content: Environmental blocker
+    - content: Classifying workloads based on data sensitivity and workload criticality.
       isCorrect: false
-      explanation:  An environmental blocker would be an improperly configured environment.
-    - content:  Operations blocker
+      explanation: Incorrect.
+    - content: Performing tasks to ensure that you properly configure your landing zone for your migration.
       isCorrect: false
-      explanation:  Not fully appreciating some of the differences between managing workloads in the cloud and managing workloads on-premises can lead to blockers within the migration project.
-    - content: Technical blocker
+      explanation: Incorrect.
+    - content: Decommissioning on-premises resources, and performing a retrospective.
       isCorrect: false
-      explanation: An example of a technical blocker would be a workload that's not suitable for migration to the cloud.
-    - content: Strategy blocker
+      explanation: Incorrect.
+    - content: Remediating assets, replicating assets, and performing a test migration in an isolated environment.
       isCorrect: true
-      explanation: Setting the correct expectations across your organization for factors like time frame and budget requirements is about strategy. In a migration project, avoiding strategy blockers can help prevent confusion and delays.
+      explanation: Correct! You must deploy your assets to an isolated environment to perform testing before you release your workload.

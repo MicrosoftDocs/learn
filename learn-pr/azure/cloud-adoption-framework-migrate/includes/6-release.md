@@ -1,10 +1,10 @@
-In this phase, you release your workload to production. You deployed your resources to Azure. Now you need to complete the migration steps, communicate the upcoming changes to other teams, make final change approvals, clean up resources, and do a retrospective.
+In this phase, you [release your workload](/azure/cloud-adoption-framework/migrate/release/) to production. You deployed your resources to Azure. Now you need to complete the migration steps, communicate the upcoming changes to other teams, make final change approvals, clean up resources, and do a retrospective.
 
 ## Communicate changes
 
-Inform your business about upcoming changes to ensure that everyone that the migration might effect knows the process. Each workload should undergo its own change communication because of its individual users and operators.
+[Inform your organization](/azure/cloud-adoption-framework/migrate/release/change-communication) about upcoming changes to ensure that everyone that the migration might effect knows the process. Each workload should undergo its own change communication because each workload has [dedicated users and operators](/azure/cloud-adoption-framework/migrate/release/change-communication#audience-for-change-communication).
 
-You should answer the following questions in your change communication:
+You should answer the following questions in your [change communication](/azure/cloud-adoption-framework/migrate/release/change-communication#change-communication-content):
 
 - What are the critical dates for the migration?
 
@@ -15,19 +15,20 @@ You should answer the following questions in your change communication:
 
 ## Perform business testing
 
-Business users of your workload should test your new solution. Your migration team can facilitate workload testing, develop testing plans, and automate testing when possible.
+Business users of your workload should [test your new solution](/azure/cloud-adoption-framework/migrate/release/business-test). Your [migration team](/azure/cloud-adoption-framework/migrate/release/business-test#migration-team-activities-during-business-testing) can facilitate workload testing, develop testing plans, and automate testing.
 
-Identify users that your changes might affect the most to test your workload. Inform those users of your business objectives, desired outcomes, and expected changes to business processes. Get feedback from the users and ensure that the IT staff understand the feedback and prioritize the feedback based on its impact. If the feedback requires changes to the workload, communicate the changes to all necessary teams.
+To test your workload, [identify users](/azure/cloud-adoption-framework/migrate/release/business-test#business-activities-during-business-testing) that your changes might affect most. Inform those users of your business objectives, desired outcomes, and expected changes to business processes. Get feedback from the users, and ensure that the IT staff understand the feedback and prioritize it based on its impact. If the feedback requires changes to the workload, communicate the changes to all necessary teams.
 
-During the feedback stage, the migration team collects feedback and manages the resulting technical actions. Build a testing plan to track the feedback and action steps.
+During the feedback stage, the migration team collects feedback and manages the resultant technical actions. Create a [testing plan](/azure/cloud-adoption-framework/migrate/release/business-test#example-testing-plan) to track the feedback and action steps.
 
 ## Complete the migration
 
 After you promote your asset and all of its dependencies to production, you can reroute production traffic. Then the on-premises assets are obsolete, and you can decommission them.
 
-You must perform various tasks depending on your workload architecture.
+You must perform [various tasks](/azure/cloud-adoption-framework/migrate/release/complete-migration#migration-window-playbook) depending on your workload architecture.
 
 - Send communication to inform parties that you began the promotion.
+
 - Verify that all staged resources are functioning properly.
 - Do replication for recent data.
 - Hydrate resources after you do replication. Stage any other components, like load balancing rules.
@@ -40,15 +41,15 @@ You must perform various tasks depending on your workload architecture.
 
 ## Optimize cost after migration
 
-After your migration, optimize your workload based on its live data, and decommission retired assets.
+After your migration, [optimize your workload](/azure/cloud-adoption-framework/migrate/release/optimize-cost-after-migration) based on its live data, and decommission retired assets.
 
-When you shut down and decommission assets:
+When you shut down and [decommission assets](/azure/cloud-adoption-framework/migrate/release/optimize-cost-after-migration#decommission-retired-assets):
 
-- **Continue monitoring**: Monitor assets that are scheduled for retirement to ensure that production traffic is correctly routed. Disabled assets can still use storage, network, and other infrastructure resources. If you turn them back on, unexpected problems can occur. Monitor for activity to ensure that assets are no longer in use.
+- **Continue monitoring**: [Monitor assets](/azure/cloud-adoption-framework/migrate/release/optimize-cost-after-migration#continue-monitoring) that are scheduled for retirement to ensure that production traffic is correctly routed. Disabled assets can still use storage, network, and other infrastructure resources. If you turn them back on, unexpected problems can occur. Monitor for activity to ensure that assets are no longer in use.
 
-- **Establish testing and outage windows**: Identify an inactive testing window to perform test cases that match real activities that users perform. You can also disable assets that you flag for decommission. Schedule a maintenance window, and inform users of your plan.
-- **Consider a holding period**: Keep a retired asset for at least 30 days to serve as a temporary backup of data in case you missed any data during replication. Your organization's data governance team might have more requirements beyond a 30-day holding period.
+- **Establish testing and outage windows**: Identify an inactive [testing window](/azure/cloud-adoption-framework/migrate/release/optimize-cost-after-migration#testing-windows-and-dependency-validation) to perform test cases that match real activities that users perform. You can also disable assets that you flag for decommission. Schedule a maintenance window, and inform users of your plan.
+- **Consider a holding period**: [Keep a retired asset](/azure/cloud-adoption-framework/migrate/release/optimize-cost-after-migration#holding-period-and-data-validation) for at least 30 days to serve as a temporary backup of data in case you missed any data during replication. Your organization's data governance team might have more requirements beyond a 30-day holding period.
 
 ## Conduct a retrospective
 
-Do a retrospective after your migration to discover what went well, what could have been better, and what you learned. Get insight from each member of your team so that you can apply the lessons that you learned to future migrations. Identify a team member to organize the process. And choose a method to track and organize the ideas that you gather.
+Do a [retrospective](/azure/cloud-adoption-framework/migrate/release/retrospective) after your migration to discover what went well, what could have been better, and what you learned. Get insight from each member of your team so that you can apply the [lessons](/azure/cloud-adoption-framework/migrate/release/retrospective#lessons-learned) that you learned to future migrations. Identify a team member to [organize](/azure/cloud-adoption-framework/migrate/release/retrospective#example-retrospective-output) the process. And choose a method to track and organize the ideas that you gather.

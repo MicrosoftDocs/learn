@@ -59,20 +59,17 @@ Ensure that you have a management routine in place for each workload. Plan and p
 
 Test your architecture and your management plan. Migration testing focuses on IT activities. List the problems that you discover during testing so that you can track and remediate them.
 
-[Perform test migrations](/azure/cloud-adoption-framework/migrate/deploy/migration-test#perform-test-migrations) in isolated environments to ensure that you don't affect production workloads. You can create a replica of your source systems that runs in parallel to the live systems.
-
 To do tests, you need:
 
 - An isolated network.
 - Isolated network access.
 - An authentication mechanism.
 
+[Perform test migrations](/azure/cloud-adoption-framework/migrate/deploy/migration-test#perform-test-migrations) in isolated environments to ensure that you don't affect production workloads. You can create a replica of your source systems that runs in parallel to the live systems.
+
 After you do testing, make sure that you:
 
 - **Record problems** that you discover.
 - **Triage problems** based on their severity, and identify workarounds.
-- **Document workarounds**. If you can incorporate the workaround as part of the migration, you might not need to remediate the problem.
-- **Start with non-workaround items**. Consider remediating items without workarounds first.
-
-
-
+- **Document workarounds**. Try to incorporate the workaround as part of the migration to avoid remediation.
+- **Start with non-workaround items**. Remediate problems without workarounds first.
