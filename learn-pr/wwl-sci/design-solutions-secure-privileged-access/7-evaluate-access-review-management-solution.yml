@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-secure-privileged-access.evaluate-access-review-management-solution
+title: Evaluate an access review management solution that includes Microsoft Entra Permissions Management
+metadata:
+  title: Evaluate an access review management solution that includes Microsoft Entra Permissions Management
+  description: "SC-100 preparatory unit on the topic: Evaluate an access review management solution that includes Microsoft Entra Permissions Management."
+  ms.date: 5/20/2024
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-evaluate-access-review-management-solution.md)]
