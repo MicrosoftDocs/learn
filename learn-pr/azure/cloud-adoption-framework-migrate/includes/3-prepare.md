@@ -24,7 +24,7 @@ Before you plan individual workload migrations, you must ready your organization
 
 - **Set policies to enable Microsoft Defender for Cloud**. When you deploy your landing zone, you must set policies to [enable Defender for Cloud](/azure/cloud-adoption-framework/migrate/prepare/ready-azure-landing-zone#prepare-for-microsoft-defender-for-cloud) for your Azure subscriptions. Defender for Cloud provides security posture recommendations in its [secure score](/azure/defender-for-cloud/secure-score-security-controls), which evaluates deployed resources against the Microsoft security baseline.
 
-## Prepare tools and the initial migration backlog
+## Prepare tools and an initial migration backlog
 
 To successfully complete your migration, you need [tools](/azure/cloud-adoption-framework/migrate/prepare/tools-backlog#prepare-migration-tools) to assess, replicate, and track your workloads through iterations, including remediation activities.
 

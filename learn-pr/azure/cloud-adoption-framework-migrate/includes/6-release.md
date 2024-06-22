@@ -2,13 +2,13 @@ In this phase, you [release your workload](/azure/cloud-adoption-framework/migra
 
 ## Communicate changes
 
-[Inform your organization](/azure/cloud-adoption-framework/migrate/release/change-communication) about upcoming changes to ensure that everyone that the migration might effect knows the process. Each workload should undergo its own change communication because each workload has [dedicated users and operators](/azure/cloud-adoption-framework/migrate/release/change-communication#audience-for-change-communication).
+[Inform your organization](/azure/cloud-adoption-framework/migrate/release/change-communication) about upcoming changes to ensure that everyone that the migration might effect knows the process. Communicate changes for each workload because each one has [dedicated users and operators](/azure/cloud-adoption-framework/migrate/release/change-communication#audience-for-change-communication).
 
 You should answer the following questions in your [change communication](/azure/cloud-adoption-framework/migrate/release/change-communication#change-communication-content):
 
 - What are the critical dates for the migration?
 
-- Whose work is disrupted, when, and for how long?
+- Whose work is disrupted, when is it disrupted, and for how long?
 - What work should each role complete before the change in order to be ready?
 - What work should each role complete after the change to confirm functionality?
 - Who should individuals reach out to if they have questions or challenges?
@@ -47,8 +47,8 @@ When you shut down and [decommission assets](/azure/cloud-adoption-framework/mig
 
 - **Continue monitoring**: [Monitor assets](/azure/cloud-adoption-framework/migrate/release/optimize-cost-after-migration#continue-monitoring) that are scheduled for retirement to ensure that production traffic is correctly routed. Disabled assets can still use storage, network, and other infrastructure resources. If you turn them back on, unexpected problems can occur. Monitor for activity to ensure that assets are no longer in use.
 
-- **Establish testing and outage windows**: Identify an inactive [testing window](/azure/cloud-adoption-framework/migrate/release/optimize-cost-after-migration#testing-windows-and-dependency-validation) to perform test cases that match real activities that users perform. You can also disable assets that you flag for decommission. Schedule a maintenance window, and inform users of your plan.
-- **Consider a holding period**: [Keep a retired asset](/azure/cloud-adoption-framework/migrate/release/optimize-cost-after-migration#holding-period-and-data-validation) for at least 30 days to serve as a temporary backup of data in case you missed any data during replication. Your organization's data governance team might have more requirements beyond a 30-day holding period.
+- **Establish testing and outage windows**: Identify an inactive [testing window](/azure/cloud-adoption-framework/migrate/release/optimize-cost-after-migration#testing-windows-and-dependency-validation) to perform test cases that match real activities that users perform. During this window, you can also disable assets that you flag for decommission. Schedule the maintenance window, and inform users of your plan.
+- **Consider a holding period**: [Keep a retired asset](/azure/cloud-adoption-framework/migrate/release/optimize-cost-after-migration#holding-period-and-data-validation) for at least 30 days to serve as a temporary backup of data in case you miss any data during replication. Your organization's data governance team might have other requirements that necessitate a holding period that's more than 30 days.
 
 ## Conduct a retrospective
 

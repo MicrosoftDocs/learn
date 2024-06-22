@@ -8,8 +8,6 @@ Now you can begin the technical implementation of your migration. To [deploy you
 
 Identify configurations that might make an asset incompatible with your cloud provider. Perform necessary [remediation](/azure/cloud-adoption-framework/migrate/deploy/remediate) to ensure that you can properly replicate and stage your workload in the cloud.
 
-Identify remediation tasks when you do assessments or tests, and then [track your tasks](/azure/cloud-adoption-framework/migrate/deploy/remediate#track-remediation-activities). You can use tools like Azure DevOps to create and prioritize work items and move through specific phases to help you scale out.
-
 To prepare assets for migration, you might need to do [remediation tasks](/azure/cloud-adoption-framework/migrate/deploy/remediate#common-remediation-tasks), such as:
 
 - Minor host upgrades.
@@ -17,6 +15,8 @@ To prepare assets for migration, you might need to do [remediation tasks](/azure
 - Service-level agreement (SLA) modifications.
 - Application configuration changes.
 - Minor network path changes.
+
+Identify remediation tasks when you do assessments or tests, and then [track your tasks](/azure/cloud-adoption-framework/migrate/deploy/remediate#track-remediation-activities). You can use tools like Azure DevOps to create and prioritize work items and move through specific phases to help you scale out.
 
 Some organizations might require [large-scale remediation tasks](/azure/cloud-adoption-framework/migrate/deploy/remediate#large-scale-remediation-tasks) that can interrupt the speed or consistency of a migration. For example, your organization might need to frequently upgrade hosts or guest operating systems. In that scenario, you can separate remediation into a parallel team effort, similar to the cloud adoption and cloud governance structure.
 
@@ -37,7 +37,7 @@ Replication [prerequisites](/azure/cloud-adoption-framework/migrate/deploy/repli
 - The source binaries, prepared for replication and synchronization. 
 - Any dependencies for your workload that you identified during the workload architecture design step.
 
-Consider the [potential factors](/azure/cloud-adoption-framework/migrate/deploy/replicate#replication-risks-physics-of-replication) that commonly affect migration plans, such as replication time and the cumulative effect of disk drift.
+Consider [potential factors](/azure/cloud-adoption-framework/migrate/deploy/replicate#replication-risks-physics-of-replication) that commonly affect migration plans, such as replication time and cumulative effect of disk drift.
 
 ## Prepare for management activities
 
@@ -65,7 +65,7 @@ To do tests, you need:
 - Isolated network access.
 - An authentication mechanism.
 
-[Perform test migrations](/azure/cloud-adoption-framework/migrate/deploy/migration-test#perform-test-migrations) in isolated environments to ensure that you don't affect production workloads. You can create a replica of your source systems that runs in parallel to the live systems.
+[Perform test migrations](/azure/cloud-adoption-framework/migrate/deploy/migration-test#perform-test-migrations) in an isolated environment to ensure that you don't affect production workloads. You can create a replica of your source systems that runs in parallel to the live systems.
 
 After you do testing, make sure that you:
 

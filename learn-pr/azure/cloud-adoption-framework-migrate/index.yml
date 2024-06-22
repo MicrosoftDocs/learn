@@ -1,27 +1,26 @@
 ### YamlMime:Module
 uid: learn.cloud-adoption-framework-migrate
 metadata:
-  title: Use the Cloud Adoption Framework migrate methodology to migrate your workload to the cloud
-  description: The Migrate methodology in the Cloud Adoption Framework guides you through migration to Azure by using repeatable processes and common tools.
-  ms.date: 10/30/2023
+  title: Use the Cloud Adoption Framework Migrate methodology to migrate your workload to the cloud
+  description: Learn how to use the four stages of the Cloud Adoption Framework Migrate methodology to migrate your workload to the cloud.
+  ms.date: 06/22/2024
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: module-standard-task-based
   ms.service: caf
   ms.subservice: caf-methodology-adopt-migrate
-title: Use the Cloud Adoption Framework migrate methodology to migrate your workload to the cloud
-summary: The Migrate methodology in the Cloud Adoption Framework guides you through migration to Azure by using repeatable processes and common tools.
+title: Use the Cloud Adoption Framework Migrate methodology to migrate your workload to the cloud
+summary: Learn how to use the four stages of the Cloud Adoption Framework Migrate methodology to migrate your workload to the cloud.
 abstract: |
-  In this module, you will:
-  - Understand the tools commonly used in migration
-  - Learn about the migration processes required to migrate effectively
-  - Demonstrate a migration (hands-on if possible)
-  - Understand options for properly migrating various platforms and workloads 
-  - Choose the best learning path to continue on with migrating a specific platform or workload
+ In this module, you'll:
+ - Prepare your landing zone for migration.
+ - Evaluate the readiness of your workload and plan for the migrated state.
+ - Deploy assets and remediate problems.
+ - Release your deployed workloads to production.
 
 prerequisites: |
-  - Foundational understanding of cloud migration
-  - Understanding of your organization's migration plan and the types of workloads you need to migrate
+  - A foundational understanding of cloud migration
+  - An understanding of your organization's migration plan and the types of workloads that you need to migrate
 
 iconUrl: /training/achievements/cloud-adoption-framework-migrate.svg
 ratingEnabled: true

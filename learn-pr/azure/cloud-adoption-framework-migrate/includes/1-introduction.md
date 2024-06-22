@@ -8,7 +8,7 @@ In this module, you learn about tools and processes that you can use in your mig
 
 ## Learning objectives
 
-In this module, you'll learn how to:
+In this module, you'll:
 
 - Prepare your landing zone for migration.
 - Evaluate the readiness of your workload and plan for the migrated state.
