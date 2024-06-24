@@ -1,4 +1,4 @@
-Through this module, you've learned some of the core concepts and foundational elements needed to start your designing journey in mixed reality. You also learned about the available UX components and interaction models required to build a great mixed reality application. This module also explains the techniques for expanding your design process.
+Through this module, you learned some of the core concepts and foundational elements needed to start your designing journey in mixed reality. You also learned about the available UX components and interaction models required to build a great mixed reality application. This module also explains the techniques for expanding your design process.
 
 You can now successfully build a seamless mixed reality application with all the knowledge learned here. Once you complete the application development, getting your apps into the hands of your users or out into the world is the most critical next step.
 
@@ -6,11 +6,11 @@ You can now successfully build a seamless mixed reality application with all the
 
 Your journey is just starting. Consider the following articles to kick-start your mixed reality development adventure:
 
-* [Introduction to mixed reality development](/windows/mixed-reality/develop/development)
-* [App quality and criteria](/windows/mixed-reality/develop/advanced-concepts/app-quality-criteria-overview)
-* [Advanced concepts](/windows/mixed-reality/develop/advanced-concepts/advanced-concepts-overview)
-* Learn more about [Windows mixed reality immersive headsets](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
-* Learn about the mixed reality Toolkit SDK for [Unity](https://github.com/microsoft/MixedRealityToolkit-Unity) and [Unreal Engine](https://github.com/microsoft/MixedReality-UXTools-Unreal)
+- [Introduction to mixed reality development](/windows/mixed-reality/develop/development)
+- [App quality and criteria](/windows/mixed-reality/develop/advanced-concepts/app-quality-criteria-overview)
+- [Advanced concepts](/windows/mixed-reality/develop/advanced-concepts/advanced-concepts-overview)
+- [Windows mixed reality immersive headsets](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
+- Learn about the Mixed Reality Toolkit (MRTK) SDK for [Unity](https://github.com/microsoft/MixedRealityToolkit-Unity) and [Unreal Engine](https://github.com/microsoft/MixedReality-UXTools-Unreal)
 
 ## Additional reading
 

@@ -71,7 +71,7 @@ In your on-premises Linux environment, you probably use a variety of storage mec
 
 [![Table that lists the various Azure Storage options.](../media/azure-storage-inline.png)](../media/azure-storage-expanded.png#lightbox)
 
-Azure managed disks are one component of the [Azure Storage](/azure/storage/common/storage-introduction) platform. Azure managed disks are block-level virtual storage volumes managed by Azure and used with Azure virtual machines. At a minimum, VMs typically require an operating system disk that contains the boot volume, a temporary disk for managing paging and swap files, and a data disk.
+Azure managed disks are one component of the [Azure Storage](/azure/storage/common/storage-introduction) platform. Azure managed disks are block-level virtual storage volumes managed by Azure and used with Azure virtual machines. At a minimum, VMs typically require an operating system disk that contains the boot volume, a temporary disk for managing paging and swap files, and a data disk. This may differ from the on-premises setup you're used to.  
 
 Storage options include these workload-specific services:
 

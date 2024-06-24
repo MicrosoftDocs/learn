@@ -1,6 +1,3 @@
-> [!CAUTION]
-> This article references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
-
 Azure Arc expands the support for Azure Resource Manager to resources running outside of Azure. This means that a physical server or a VM running in an on-premises datacenter can be registered with Azure Resource Manager and presented as a compute resource to the fabric controller. This applies to any server running the Windows Server or Linux server in an on-premises datacenter or hosted by a third-party cloud provider.
 
 ## Deploy Azure Arc to on-premises computers
@@ -15,14 +12,13 @@ For smaller-scale deployments, you can use the onboarding script available direc
 :::image type="content" source="../media/m14-generate-script-bac9e06c.png" alt-text="A screenshot of the Select a method page of the Azure Arc Machines node. Two options are available: Add machines using an interactive a script, and Add machines at scale.":::
 
 
-### Azure Connected Machine agent
+### Azure Connected Machine
 
 The Azure Connected Machine agent enables you to manage Windows and Linux machines hosted on-premises or with another cloud provider. The Azure Connected Machine agent officially supports the following versions of the Windows and Linux operating systems:
 
  -  Windows Server 2008 R2 SP1, 2012 R2, 2016, 2019, and 2022
  -  Azure Stack HCI
  -  Ubuntu 16.04, 18.04, and 20.04 LTS (x64)
- -  CentOS Linux 7 and 8 (x64)
  -  SUSE Linux Enterprise Server (SLES) 12 and 15 (x64)
  -  Red Hat Enterprise Linux (RHEL) 7 and 8 (x64)
  -  Amazon Linux 2 (x64)

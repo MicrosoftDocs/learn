@@ -96,7 +96,7 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
 
 ## Analyze the issues
 
-1. Start the program by selecting the **Run and Debug** tab on the left, then selecting the **Start debugging** button.
+1. Start the program by selecting the **Run and Debug** tab on the left, then selecting the **Start debugging** button. You might need to select the **Run and Debug** button first, then select the *Program.cs* file.
 
    :::image source="../media/start-debugging.png" alt-text="Screenshot of the Start debugging button in Visual Studio Code.":::
 

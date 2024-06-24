@@ -5,7 +5,7 @@ In this exercise, you go through the process of integrating a knowledge base int
 
 ### Exercise
 
-For this exercise you're logged in as Avery Howard and have the Copilot owner role. For all the tasks in this exercise, you'll work in the Copilot standalone experience.
+For this exercise, you're logged in as Avery Howard and have the Copilot owner role. For all the tasks in this exercise, you'll work in the Copilot standalone experience.
 
 This exercise should take approximately **10** minutes to complete.
 
@@ -14,13 +14,13 @@ This exercise should take approximately **10** minutes to complete.
 
 #### Before you start
 
-For the purpose of this exercise, you'll be using a sample file, 'Woodgrove Corporate Data Handling Policy.pdf'.
+For this exercise, you'll be using a sample file, 'Woodgrove Corporate Data Handling Policy.pdf.'
 
 1. Select the link **[Woodgrove Corporate Data Handling Policy.pdf'](https://github.com/MicrosoftLearning/SC-5006-Get-started-with-Microsoft-Copilot-for-Security/blob/master/Sample%20files/Woodgrove%20Corporate%20Data%20Handling%20Policy.pdf?azure-portal=true)** to access the sample file.
 
-1. Select the **Download raw file ![download raw file icon](../media/raw-file-download-icon-v2.png)** icon.  Save the file on your local computer, as you will need it later.
+1. Select the **Download raw file ![download raw file icon](../media/raw-file-download-icon-v2.png)** icon. Save the file on your local computer, as you'll need it later.
 
-   Alternatively, because this is a simulation, you can simply create the file named 'Woodgrove Corporate Data Handling Policy.pdf.' Because this is a simulation, the contents of the file you create won't matter.  The prompt responses shown in the simulation, however, are based on the actual file.
+   Alternatively, because this is a simulation, you can create the file named 'Woodgrove Corporate Data Handling Policy.pdf.' Because this is a simulation, the contents of the file you create won't matter. The prompt responses shown in the simulation, however, are based on the actual file.
 
 
 #### Task: Configure Copilot to support file uploads
@@ -32,18 +32,22 @@ In this task, you start by attempting a file upload but realize that there's no 
 1. To access file uploads, select the **sources icon** ![sources icon](../media/sources-icon.png) from the prompt bar.
 
 1. From the manage sources page, select **Files**.
-1. If there is no option to actually upload a file, it's because the owner setting that controls this option has been changed from the default. After conferring with the other Copilot owner, you realize this was disabled in error and agree this should be set.
+1. If there's no option to actually upload a file, it's because the owner setting that controls this option has been changed from the default. After conferring with the other Copilot owner, you realize this was disabled in error and agree this should be set.
     1. Select the **Home** menu icon (hamburger icon).
     1. Select **Owner settings**.
     1. Scroll-down to **Files**. Select the drop-down and set it to **Contributors and owners can upload files**.
+
+1. Return to the landing page. Select **Microsoft Copilot for Security** next to the home menu (hamburger) icon.
 
 #### Task: Upload a file and run test prompts
 
 In this task, you upload a file and proceed to run prompts that use that file.
 
-1. Now that file upload is enabled, return to the files upload window. Select the **Sources** icon, then select **Files**.
+1. From the landing page, select the **Sources** icon located in the promptbar.
 
-1. Upload the file **Woodgrove Corporate Data Handling Policy.pdf** that you previously downloaded or created.
+1. From the Manage sources page, select **Files**.
+
+1. Select **Upload file**. Upload the file **Woodgrove Corporate Data Handling Policy.pdf** that you previously downloaded or created.
 1. With the files uploaded, you can now try some prompts.
 1. In the prompt bar, you need to mention "uploaded files" if you want Copilot to reason over your available files. You can also include the file name if you would like to guide Copilot to reason over a specific file. Enter the following prompts:
     1. Prompt: **Summarize the uploaded file Woodgrove Corporate Data Handling Policy.pdf**. The process log shows that Copilot chose file uploads and successfully processed the prompt.
