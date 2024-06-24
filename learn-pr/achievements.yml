@@ -3633,3 +3633,8 @@ achievements:
   title: Send and receive data using Azure Data Share and transform data using Azure Data Factory
   summary: Learn how to ingest data from Azure Data Share into Azure Data Factory pipelines to build automated ingestion pipelines.
   iconUrl: /training/achievements/receive-data-with-azure-data-share-transform-with-azure-data-factory.svg
+- uid: learn.n-tier-architecture
+  type: badge
+  title: Tour the N-tier architecture style for your application
+  summary: Use a Resource Manager template to deploy an application styled in an N-tier architecture, identify key concepts of N-tier architectures, and review best practices for deployments of this style.
+  iconUrl: /training/achievements/n-tier-architecture.svg
