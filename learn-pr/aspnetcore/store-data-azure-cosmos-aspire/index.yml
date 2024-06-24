@@ -7,6 +7,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.topic: module
+  ms.service: dotnet-aspire
 title: Store data in Azure Cosmos DB for a .NET Aspire solution
 summary: "Learn how to connect to the Azure Cosmos DB database from a cloud-native application by using .NET Aspire built-in components."
 abstract: |

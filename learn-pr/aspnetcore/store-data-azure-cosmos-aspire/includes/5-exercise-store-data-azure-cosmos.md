@@ -161,7 +161,7 @@ Next, let's add a Cosmos DB backing service to the .NET Aspire app:
     var builder = DistributedApplication.CreateBuilder(args);
     ```
 
-1. Immediately after that code, to add a Cosmos DB service and a databse, add this code:
+1. Immediately after that code, to add a Cosmos DB service and a database, add this code:
 
     ```csharp
     var cosmos = builder.AddAzureCosmosDB("cosmos").RunAsEmulator();
@@ -202,7 +202,7 @@ For development, we want to use the Cosmos DB Emulator to run the database servi
     },
     ```
 
-1. In the new code, delete the `<connectionstring>` place holder and then press <kbd>CTRL</kbd> + <kbd>V</kbd> to replace it with the connection string your previously copied to the clipboard.
+1. In the new code, delete the `<connectionstring>` place holder and then press <kbd>CTRL</kbd> + <kbd>V</kbd> to replace it with the connection string you previously copied to the clipboard.
 1. In **Solution Explorer**, in the **eShop.AppHost** project, double-click the **Program.cs** file.
 1. Locate the following code:
 
@@ -260,7 +260,7 @@ Now that the app host creates the Cosmos DB backing service, you can use it in t
 
 Now you can write code that creates objects in the Cosmos DB service.
 
-1. In Visual Studio, in the **Solution Explorer**, expand **Catalog.API > Apis**, and then double-click the _Catalog.Api_ file.
+1. In Visual Studio, in the **Solution Explorer**, expand **Catalog.API > Apis**, and then double-click the _CatalogApi.cs_ file.
 1. Locate the following code, which declares the `GetAllItems()` method:
 
     ```csharp
@@ -311,7 +311,7 @@ Now you can write code that creates objects in the Cosmos DB service.
 
 ## Test the eShop
 
-You code is now complete. Let's test the eShop:
+Your code is now complete. Let's test the eShop:
 
 1. In Visual Studio, to start the app in debugging mode press <kbd>F5</kbd> or select **Debug > Start Debugging**.
 1. If the **Start Docker Desktop** message appears, select **Yes**. The app starts and displays the .NET Aspire dashboard in a browser tab.

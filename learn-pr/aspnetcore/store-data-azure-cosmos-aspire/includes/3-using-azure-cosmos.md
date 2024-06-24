@@ -8,7 +8,7 @@ In this unit, you'll learn how to connect to and interact with Cosmos DB by usin
 
 In a cloud-native solution, there are many microservices, each of which is the responsibility of a separate development team. Each team can choose to use a different database and if any of them prefer NoSQL or require global data distribution in a cloud-hosted database, it's likely that one or more may choose Cosmos DB.
 
-.NET Aspire makes it easy to work with Cosmos DB in cloud-native microservices by providing built-in Cosmos DB components. You can initiate these components and create databases in the app host project and pass them to comsuming microservices that read and write data.
+.NET Aspire makes it easy to work with Cosmos DB in cloud-native microservices by providing built-in Cosmos DB components. You can initiate these components and create databases in the app host project and pass them to consuming microservices that read and write data.
 
 Choose from these two components:
 

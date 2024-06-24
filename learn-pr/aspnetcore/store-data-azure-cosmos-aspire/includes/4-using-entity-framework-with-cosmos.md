@@ -1,6 +1,6 @@
 Entity Framework is a part of .NET that enables you to create database schemas and other objects in .NET code. It can ease database creation for .NET developers.
 
-In your outdoor equipment company, the development team in charge of the shopping basket microservice want to use Cosmos DB with the NoSQL API. They have experience with Entity Framework from a previous project. You want to know if .NET Aspire supports Entity Framework for Cosmos DB connections.
+In your outdoor equipment company, the development team in charge of the shopping basket microservice wants to use Cosmos DB with the NoSQL API. They have experience with Entity Framework from a previous project. You want to know if .NET Aspire supports Entity Framework for Cosmos DB connections.
 
 In this unit, you'll see how to use .NET Aspire and Entity Framework to code against Azure Cosmos DB databases.
 
@@ -8,7 +8,7 @@ In this unit, you'll see how to use .NET Aspire and Entity Framework to code aga
 
 Entity Framework is an object-relational mapper. You can use it to work with database objects in your .NET code without having to write native Cosmos DB code.
 
-For example, with Entity Framework, you define an class with properties in C# and create an instance of that class. Entity Framework automatically creates objects in the Cosmos DB database to store it.
+For example, with Entity Framework, you define a class with properties in C# and create an instance of that class. Entity Framework automatically creates objects in the Cosmos DB database to store it.
 
 To use Entity Framework, you also need a context object. The context represents a session open with a specific database. In .NET Aspire, the Cosmos DB Entity Framework component automatically creates the context for you and passes it to the consuming projects.
 

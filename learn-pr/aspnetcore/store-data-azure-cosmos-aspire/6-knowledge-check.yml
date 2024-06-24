@@ -30,7 +30,7 @@ quiz:
     - content: "On the Cosmos DB service in the app host project"
       isCorrect: true
       explanation: "Correct. In the app host project, call RunAsEmulator() on the Cosmos DB service after you've added it to the application builder object."
-    - content: "On the distributed application builder object in the app host project""
+    - content: "On the distributed application builder object in the app host project"
       isCorrect: false
       explanation: "Incorrect. The RunAsEmulator() method isn't an extension to the distributed application builder object."
     - content: "On the CosmosClient object in the consuming microservice."
