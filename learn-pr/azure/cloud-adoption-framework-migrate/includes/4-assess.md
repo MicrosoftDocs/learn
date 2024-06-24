@@ -1,4 +1,4 @@
-In the [assess phase](/azure/cloud-adoption-framework/migrate/assess/), you evaluate the readiness of your workload and plan for the migrated state. After you complete this phase, you can deploy the workload for migration.
+In the [Assess phase](/azure/cloud-adoption-framework/migrate/assess/), you evaluate the readiness of your workload and plan for the migrated state. After you complete this phase, you can deploy the workload for migration.
 
 :::image type="content" source="../media/migrate-assess.svg" alt-text="Diagram that shows the steps of the Migrate methodology." border="false":::
 
