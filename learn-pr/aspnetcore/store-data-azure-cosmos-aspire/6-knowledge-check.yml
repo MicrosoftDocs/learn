@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.store-data-azure-cosmos.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "In this unit, you'll answer questions about storing data in a Cosmos DB database from a .NET Aspire solution to check the knowledge you've gained in this module."
+  ms.date: 3/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom:
+  - team=cloud_advocates
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "You want to use Entity Framework to interact with a Cosmos DB database in a .NET Aspire project. Which package should you install in the app host project?"
+    choices:
+    - content: "Aspire.Microsoft.Azure.Cosmos"
+      isCorrect: false
+      explanation: "Incorrect. Install the Aspire.Microsoft.Azure.Cosmos package in a consuming project when you want to use Cosmos DB without Entity Framework. Don't install this package in the app host."
+    - content: "Aspire.Microsoft.EntityFramework.Cosmos"
+      isCorrect: false
+      explanation: "Incorrect. You should install the Aspire.Microsoft.EntityFramework.Cosmos package in the consuming project but not in the app host project."
+    - content: "Aspire.Hosting.Azure.CosmosDB"
+      isCorrect: true
+      explanation: "Correct. In the app host, install the Aspire.Hosting.Azure.CosmosDB package and in the consuming project, install the Aspire.Microsoft.EntityFramework.Cosmos package."
+  - content: "You're writing a microservice in a .NET Aspire solution that interacts with a Cosmos DB database. During development you want to use the Cosmos DB emulator on your local machine. Where should you call the RunAsEmulator() method?"
+    choices:
+    - content: "On the Cosmos DB service in the app host project"
+      isCorrect: true
+      explanation: "Correct. In the app host project, call RunAsEmulator() on the Cosmos DB service after you've added it to the application builder object."
+    - content: "On the distributed application builder object in the app host project""
+      isCorrect: false
+      explanation: "Incorrect. The RunAsEmulator() method isn't an extension to the distributed application builder object."
+    - content: "On the CosmosClient object in the consuming microservice."
+      isCorrect: false
+      explanation: "Incorrect. The RunAsEmulator() method isn't an extension to the CosmosClient object."
+  - content: "You want to create a relational database in Cosmos DB to support your shopping basket microservice. Which Cosmos DB API should you use?"
+    choices:
+    - content: "API for MongoDB"
+      isCorrect: false
+      explanation: "Incorrect. API for MongoDB creates NoSQL databases and doesn't support relational databases in Cosmos DB."
+    - content: "API for Apache Cassandra"
+      isCorrect: false
+      explanation: "Incorrect. API for Apache Cassandra creates NoSQL databases and doesn't support relational databases in Cosmos DB."
+    - content: "API for PostgreSQL"
+      isCorrect: true
+      explanation: "Correct. You can use API for PostgreSQL to create relational databases in Cosmos DB."

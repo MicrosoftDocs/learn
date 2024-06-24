@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.store-data-azure-cosmos-aspire
+metadata:
+  title: Store data in Azure Cosmos DB for a .NET Aspire solution
+  description: "Learn how to connect to the Azure Cosmos DB database from a cloud-native application by using .NET Aspire built-in components."
+  ms.date: 3/22/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: module
+title: Store data in Azure Cosmos DB for a .NET Aspire solution
+summary: "Learn how to connect to the Azure Cosmos DB database from a cloud-native application by using .NET Aspire built-in components."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe the advantages of using a cloud database solution in Azure for cloud-native apps.
+    - Store and retrieve data in an Azure Cosmos DB database using the .NET Aspire Azure Cosmos DB component.
+    - Use Entity Framework in .NET Aspire with data stored in Azure Cosmos DB.
+prerequisites: |
+  - Experience building web applications using .NET and C#
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - developer
+  - solution-architect
+products: 
+  - dotnet
+  - vs
+  - vs-code
+subjects: 
+  - custom-app-development
+units:
+- learn.store-data-azure-cosmos-aspire.introduction
+- learn.store-data-azure-cosmos-aspire.why-use-azure-cosmos
+- learn.store-data-azure-cosmos-aspire.using-azure-cosmos
+- learn.store-data-azure-cosmos-aspire.using-entity-framework-with-cosmos
+- learn.store-data-azure-cosmos-aspire.exercise-store-data-azure-cosmos
+- learn.store-data-azure-cosmos-aspire.knowledge-check
+- learn.store-data-azure-cosmos-aspire.summary
+badge:
+  uid: learn.store-data-azure-cosmos-aspire.badge
