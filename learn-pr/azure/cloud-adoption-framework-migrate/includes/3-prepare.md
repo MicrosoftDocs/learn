@@ -1,4 +1,8 @@
-Before you plan individual workload migrations, you must ready your organization and cloud resources to support the migration. Regardless of which Azure landing zone reference implementation you use, you must perform some tasks to prepare your landing zone for a successful migration project.
+Before you plan individual workload migrations, you must ready your organization and cloud resources to support the migration.
+
+:::image type="content" source="../media/migrate-prepare.svg" alt-text="Diagram that shows the steps of the Migrate methodology." border="false":::
+
+Regardless of which Azure landing zone reference implementation you use, you must perform some tasks to prepare your landing zone for a successful migration project.
 
 - **Establish hybrid connectivity**. During an Azure landing zone deployment, you can deploy a Connectivity subscription with a hub virtual network and network gateways. After you deploy your Azure landing zone, [configure hybrid connectivity](/azure/cloud-adoption-framework/migrate/prepare/ready-azure-landing-zone#establish-hybrid-connectivity) from these gateways to connect to your existing datacenter appliances or your ExpressRoute circuit.
 

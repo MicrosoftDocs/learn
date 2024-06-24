@@ -1,4 +1,4 @@
-The Getting Started module describes Tailwind Traders' objectives. The Tailwind Traders cloud strategy team defined an executive-level strategy that addresses financial and technical considerations.
+The *Getting Started module* describes Tailwind Traders' objectives. The Tailwind Traders cloud strategy team defined an executive-level strategy that addresses financial and technical considerations.
 
 To manage the various projects that contribute to that strategic program, Tailwind Traders implemented a cloud adoption plan. The central operations and infrastructure team deployed an Azure landing zone that meets its short-term compliance and operations needs.
 

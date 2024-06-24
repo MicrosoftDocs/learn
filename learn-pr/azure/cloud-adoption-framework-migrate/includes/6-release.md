@@ -1,4 +1,8 @@
-In this phase, you [release your workload](/azure/cloud-adoption-framework/migrate/release/) to production. You deployed your resources to Azure. Now you need to complete the migration steps, communicate the upcoming changes to other teams, make final change approvals, clean up resources, and do a retrospective.
+In this phase, you [release your workload](/azure/cloud-adoption-framework/migrate/release/) to production. 
+
+:::image type="content" source="../media/migrate-release.svg" alt-text="Diagram that shows the steps of the Migrate methodology." border="false":::
+
+You deployed your resources to Azure. Now you need to complete the migration steps, communicate the upcoming changes to other teams, make final change approvals, clean up resources, and do a retrospective.
 
 ## Communicate changes
 

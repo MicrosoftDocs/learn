@@ -1,4 +1,8 @@
-Now you can begin the technical implementation of your migration. To [deploy your workload](/azure/cloud-adoption-framework/migrate/deploy/) and remediate problems, use your workload architecture and assessment materials from the Assess phase. Perform detailed testing to ensure that you clearly understand how your services operate together.
+Now you can begin the technical implementation of your migration.
+
+:::image type="content" source="../media/migrate-deploy.svg" alt-text="Diagram that shows the steps of the Migrate methodology." border="false":::
+
+To [deploy your workload](/azure/cloud-adoption-framework/migrate/deploy/) and remediate problems, use your workload architecture and assessment materials from the Assess phase. Perform detailed testing to ensure that you clearly understand how your services operate together.
 
 ## Deploy supporting services
 
