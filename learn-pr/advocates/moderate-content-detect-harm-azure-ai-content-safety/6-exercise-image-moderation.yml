@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.moderate-content-detect-harm-azure-ai-content-safety.exercise-image-moderation
+title: Exercise – Image Moderation
+metadata:
+  title: Exercise – Image Moderation
+  description: Learn how to moderate image content with Azure AI Content Safety.
+  ms.date: 06/24/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-exercise-image-moderation.md)]
