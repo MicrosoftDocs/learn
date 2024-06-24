@@ -2,9 +2,9 @@
 
 RHEL provides a tested secure and supportive base on which you can build your enterprise-class applications and services. RHEL combines the Linux kernel with hundreds of industry-leading open-source projects into a distribution with a 10-year support lifecycle. Red Hat works with Azure and its other network partners to ensure compatibility across multiple architectures and deployment platforms.
 
-## How ARO works
+## How Azure Red Hat OpenShift works
 
-ARO is OpenShift that Microsoft and Red Hat work together to manage and support. With ARO, you don't have any VMs to operate and no patching is required. Microsoft and Red Hat patch, update, and monitor your main, infrastructure, and application nodes. Your ARO clusters are deployed into your Azure subscription and are included on your Azure bill.
+Azure Red Hat OpenShift is OpenShift that Microsoft and Red Hat work together to manage and support. With Azure Red Hat OpenShift, you don't have any VMs to operate and no patching is required. Microsoft and Red Hat patch, update, and monitor your main, infrastructure, and application nodes. Your Azure Red Hat OpenShift clusters are deployed into your Azure subscription and are included on your Azure bill.
 
 ### How OpenShift works
 
@@ -12,9 +12,9 @@ Running containers in production with Kubernetes requires extra tools and resour
 
 OpenShift is a fully compliant instance of upstream Kubernetes, hardened with hundreds of fixes that address defect, security, and performance issues in every release. It's integrated with and tested against dozens of technologies and provides a robust, tightly integrated platform.
 
-### Differences between OpenShift and ARO
+### Differences between OpenShift and Azure Red Hat OpenShift
 
-OpenShift is the platform that runs your applications. To provide that platform, OpenShift relies on infrastructure components like VMs, storage, load balancers, and other network components. The difference between an OpenShift subscription directly from Red Hat and one provided by Azure Red Hat OpenShift is that ARO also includes the underpinning components and the management of them.
+OpenShift is the platform that runs your applications. To provide that platform, OpenShift relies on infrastructure components like VMs, storage, load balancers, and other network components. The difference between an OpenShift subscription directly from Red Hat and one provided by Azure Red Hat OpenShift is that Azure Red Hat OpenShift also includes the underpinning components and the management of them.
 
 ## How JBoss EAP works
 
@@ -34,15 +34,15 @@ The Red Hat Cloud Access program makes your eligible Red Hat product subscriptio
 
 ### JBoss EAP deployment and pricing
 
-There are many supported ways to deploy JBoss EAP on Azure, including as an application in Azure App Services, on VMs from the Azure Marketplace or your own custom-built images, or as a containerized application on ARO.
+There are many supported ways to deploy JBoss EAP on Azure, including as an application in Azure App Services, on VMs from the Azure Marketplace or your own custom-built images, or as a containerized application on Azure Red Hat OpenShift.
 
 The subscriptions are available as PAYG or BYOS.
 
-### ARO deployment and pricing
+### Azure Red Hat OpenShift deployment and pricing
 
 An Azure Red Hat OpenShift cluster consists of three main nodes and two or more worker nodes. Main nodes and worker nodes run on Azure VMs and are billed at Linux VM pricing. Worker nodes have an extra cost for the OpenShift subscription component.
 
-ARO is only available as PAYG. Compute, networking, and storage resources consumed by your cluster are billed according to usage.
+Azure Red Hat OpenShift is only available as PAYG. Compute, networking, and storage resources consumed by your cluster are billed according to usage.
 
 ### Can I use my Azure Hybrid Benefits (AHB)?
 
