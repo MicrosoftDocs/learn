@@ -32,7 +32,7 @@ quiz:
     - content: "Allows you to reverse the changes you made to your Project."
       isCorrect: false
       explanation: "An iteration field helps you and your team organize your Project into different phases. Unfortunately, it doesn't help reverse changes."
-    - content: "Allows you to create sequential phases of your project and group issues and pull request based on the phase."
+    - content: "Allows you to create sequential phases of your project and group issues and pull requests based on the phase."
       isCorrect: true
       explanation: "An iteration field helps you and your team organize your Project into different phases. The value of the field allows you to prioritize what comes first. Setting priorities allows you to implement timelines to keep you on track and accomplish your goals."
   - content: "What field can you use in order to make a Priority grouping like High, Medium, and Low in your Project?"
@@ -42,7 +42,7 @@ quiz:
       explanation: "The Date field allows you to assign a date to the issue or pull request in your project."
     - content: "Single select"
       isCorrect: true
-      explanation: "Single select field allows you to create multiple groups like Priority grouping in order to help you organize and prioritize your Project."
+      explanation: "The Single select field allows you to create multiple groups like Priority grouping in order to help you organize and prioritize your Project."
     - content: "Iteration field"
       isCorrect: false
       explanation: "Although the interaction field helps you build different phases of your Project, the Single select field can help you create groupings to organize your Project."
@@ -56,7 +56,7 @@ quiz:
       explanation: "Built-in automation built within Projects allows you a simple way to automate your Project."
     - content: "GitHub Actions"
       isCorrect: false
-      explanation: "Although Actions can be simple to some, it's not necessarily the simplest way to add automation to a Project."
+      explanation: "Although GitHub Actions can be simple to some, it's not necessarily the simplest way to add automation to a Project."
   - content: "What is the name of the section where you can change the visibility of your Project, close your Project, or delete your Project?"
     choices:
     - content: "Red zone"
