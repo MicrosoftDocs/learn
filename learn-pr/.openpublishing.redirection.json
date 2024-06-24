@@ -278,32 +278,32 @@
       {
         "source_path_from_root": "/learn-pr/azure/n-tier-architecture/index.yml",
         "redirect_url": "/azure/architecture/guide/architecture-styles/n-tier",
-        "redirect_document_id": true
+        "redirect_document_id": false
       },
       {
         "source_path_from_root": "/learn-pr/azure/n-tier-architecture/1-introduction.yml",
         "redirect_url": "/azure/architecture/guide/architecture-styles/n-tier",
-        "redirect_document_id": true
+        "redirect_document_id": false
       },
       {
         "source_path_from_root": "/learn-pr/azure/n-tier-architecture/2-what-is-n-tier-architecture.yml",
         "redirect_url": "/azure/architecture/guide/architecture-styles/n-tier",
-        "redirect_document_id": true
+        "redirect_document_id": false
       },
       {
         "source_path_from_root": "/learn-pr/azure/n-tier-architecture/3-deploy-n-tier-architecture.yml",
         "redirect_url": "/azure/architecture/guide/architecture-styles/n-tier",
-        "redirect_document_id": true
+        "redirect_document_id": false
       },
       {
         "source_path_from_root": "/learn-pr/azure/n-tier-architecture/4-n-tier-architecture-considerations.yml",
         "redirect_url": "/azure/architecture/guide/architecture-styles/n-tier",
-        "redirect_document_id": true
+        "redirect_document_id": false
       },
       {
         "source_path_from_root": "/learn-pr/azure/n-tier-architecture/5-summary.yml",
         "redirect_url": "/azure/architecture/guide/architecture-styles/n-tier",
-        "redirect_document_id": true
+        "redirect_document_id": false
       }
     ]
   }
