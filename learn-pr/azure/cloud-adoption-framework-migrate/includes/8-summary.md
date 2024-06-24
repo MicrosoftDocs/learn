@@ -9,7 +9,7 @@ In this module, you completed the following learning objectives:
 
 - To learn how to govern and manage your newly adopted cloud environment, continue this learning path.
 
-- See further guidance about migrating your workloads to the cloud:
+- For further guidance about how to migrate your workloads to the cloud, see:
   - [Migrate overview](/azure/cloud-adoption-framework/migrate/)
   - [Prepare for your migration](/azure/cloud-adoption-framework/migrate/prepare/)
   - [Assess the readiness of your workload](/azure/cloud-adoption-framework/migrate/assess/)
