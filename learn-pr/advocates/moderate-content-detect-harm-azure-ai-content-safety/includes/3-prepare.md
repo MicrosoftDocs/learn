@@ -6,7 +6,7 @@ Once you have access to Azure OpenAI Service, you can get started by creating a 
 
 The Content Safety Resource is an Azure AI service. This service consists of machine learning assisted moderation APIs which detect material that is potentially offensive, risky, or otherwise undesirable, to assure the contents in community is safe. Follow the steps below to create a Content Safety Resource.
 
-:::image type="content" source="../media/create-aacs-resource.png" alt-text="A screenshot of the Create Content Safety screen. Displayed on the screen are fields for subscription, resource group, region, name, and pricing tier.":::
+:::image type="content" source="../media/create-content-safety-resource.png" alt-text="A screenshot of the Create Content Safety screen. Displayed on the screen are fields for subscription, resource group, region, name, and pricing tier.":::
 
 1. Navigate to [aka.ms/acs-create](https://aka.ms/acs-create).
 1. Complete the following fields:
@@ -20,7 +20,7 @@ The Content Safety Resource is an Azure AI service. This service consists of mac
 
 ## Get Content Safety Resource Key and Endpoint
 
-:::image type="content" source="../media/aacs-keys-endpoint.png" alt-text="A screenshot of the keys and endpoint for a Content Safety resource. There are 2 keys available in addition to the region and endpoint.":::
+:::image type="content" source="../media/content-safety-keys-endpoint.png" alt-text="A screenshot of the keys and endpoint for a Content Safety resource. There are 2 keys available in addition to the region and endpoint.":::
 
 1. After the resource is created, select **Go to resource**.
 1. In the **Content Safety Resource**, navigate to **Resource Management**.
