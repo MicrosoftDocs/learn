@@ -304,6 +304,11 @@
         "source_path_from_root": "/learn-pr/azure/n-tier-architecture/5-summary.yml",
         "redirect_url": "/azure/architecture/guide/architecture-styles/n-tier",
         "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/achievements/learn.n-tier-architecture.badge.yml",
+        "redirect_url": "/azure/architecture/guide/architecture-styles/n-tier",
+        "redirect_document_id": false
       }
     ]
   }
