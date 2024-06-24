@@ -1,35 +1,33 @@
-Managing digital content lifecycle is crucial for organizations to meet compliance requirements and manage operational risks effectively. Event-based retention in Microsoft Purview allows organizations to automate the retention and deletion of content based on specific events, ensuring that important information is preserved until it is no longer legally or operationally necessary.
+Managing digital content lifecycle is crucial for organizations to meet compliance requirements and manage operational risks effectively. Event-based retention allows organizations to automate the retention and deletion of content based on specific events, ensuring that important information is preserved until it's no longer legally or operationally necessary.
 
 ## Understand event-based retention
 
-Event-based retention triggers the start of a retention period based on specific events, rather than just the age of the content. This approach is particularly useful in scenarios like employee departures, contract expirations, or the end of a product's lifecycle. Here's how it works:
+Event-based retention triggers the start of a retention period based on specific events, rather than just the age of the content. This method is ideal in scenarios like employee departures, contract expirations, or the end of a product's lifecycle. Here's how it works:
 
-- **Employee departure**: Retain employee records for a specified period, say 10 years, from the employee's departure date.
-- **Contract expiration**: Keep contract-related documents for a determined period, such as five years after the contract ends.
-- **Product lifecycle**: Maintain records related to a product until a certain time after the product is no longer manufactured.
+- **Employee departure**: Documents are kept for a predetermined time, for example, 10 years from departure.
+- **Contract expiration**: Documents are retained for a set duration, such as five years after the contract ends.
+- **Product lifetime**: Product-related documents are maintained Maintain until a period after the product is no longer manufactured.
 
 These retention labels help in automating the management of records and ensure that documents are disposed of in a compliant manner.
 
 ## Components of event-based retention
 
-To implement event-based retention effectively, it's important to understand how event types, retention labels, events, and asset IDs interact. This interaction is the basis of how event-based retention is configured and executed within an organization.
+Understanding the interaction between event types, retention labels, events, and asset IDs is important for effectively implementing event-based retention. These components determine how retention is configured and executed.
 
    :::image type="content" source="../media/diagram-event-based-retention-1.png" alt-text="Diagram illustrating the relationship of the beginning of event-based retention.":::
 
    :::image type="content" source="../media/diagram-event-based-retention-2.png" alt-text="Diagram illustrating the relationship of the end of event-based retention.":::
 
-Consider the example **Product Lifetime** event type to illustrate event-based retention. In this scenario, retention labels are assigned to various types of product-related documents. These documents are linked to the **Product Lifetime** event type, which triggers the start of a retention period based on the product reaching its end-of-life date. This means that all relevant records must be retained for a specific duration, such as 10 years, from the date a product is discontinued.
+For products with a specific lifecycle, such as those that are at their end of life, event-based retention triggers document retention from the product's end-of-life date. For instance, documents might need to be retained for 10 years post-discontinuation.
 
-When setting up this type of retention:
+Setting up this type of retention involves:
 
-- **Create and apply retention labels**: Assign retention labels to product records. These labels are connected to the **Product Lifetime** event type to ensure that the records are kept for the required duration after the product is discontinued.
-- **Asset identification**: Assign an asset ID to each document within SharePoint and OneDrive, linking it directly to a specific product. This ID ensures that the retention schedule is accurately applied based on the unique lifecycle of each product.
-- **Event trigger**: When a product is officially discontinued, an event is recorded with the specific asset ID or keywords related to the product. This action sets the start date for the retention period.
-- **Synchronization and retention execution**: Once the event is logged, the specified retention period activates for all documents tagged with the corresponding asset ID or keywords. The system synchronizes this information across all labeled content, beginning the countdown until the retention period expires.
+- **Retention labels**: Attach retention labels to product-related documents linked to the **Product Lifetime** event type, ensuring documents are retained as required.
+- **Asset identification**: Assign an asset ID to each document in SharePoint and OneDrive, directly associating them with specific products to accurately enforce retention schedules.
+- **Event triggering**: Log an event with relevant asset IDs or keywords when a product ends its lifecycle to start the retention period.
+- **Synchronization and retention execution**: Post-event, the system synchronizes the start of the retention period across all tagged documents, initiating the countdown to expiration.
 
-It's important to understand that if you don't specify an asset ID or keywords for an event, **all content** with a retention label of that event type will have its retention period triggered by the event. This means that our scenario, all content would start being retained. It's unlikely this outcome is what you intended.
-
-Finally, remember that each retention label has its own retention settings. In this example, they all specify 10 years, but it's possible for an event to trigger retention labels where each label has a different retention period.
+If you don't specify an asset ID or keyword, **all documents** under that event type start their retention period, potentially leading to over-retention. Each label's settings, such as a 10-year duration in this example, can differ based on the label's configuration, affecting the retention timeline.
 
 ## Steps to implement event-based retention
 
@@ -37,7 +35,7 @@ Event-based retention helps manage document lifecycles by retaining and deleting
 
 ### 1. Create a retention label based on an event
 
-First, navigate to **File plan** within Microsoft Purview to create a new retention label. While defining the label settings, select the option **Retain items forever or for a specific period**. This setup starts your path to defining when your retention period will begin. You can select an existing event type from a dropdown or create a new one if your scenario requires a unique trigger.
+Navigate to **File plan** in Microsoft Purview to create a new retention label. Select **Retain items forever or for a specific period** and choose an event that triggers the retention period. You can use either an existing event type from a drop-down or create a new one if your situation requires a unique trigger.
 
    :::image type="content" source="../media/create-event-type.png" alt-text="Screenshot showing where to configure event-based retention.":::
 
@@ -48,15 +46,15 @@ Event-based retention requires retention settings that:
 
 ### 2. Create a new event type (if needed)
 
-If creating a new event type is needed, provide a name and description, then save it. Make sure to select this event type back on the **Define the period** page.
+If creating a new event type is necessary, provide its name and description, then save it. This new event type should be linked back to the retention label on the **Define the period** page.
 
 ### 3. Publish or auto-apply the retention label
 
-- Publish the retention labels so they can be applied manually or automatically to content.
+Publish the retention labels so they can be applied manually or automatically to content.
 
 ### 4. Specify an asset ID
 
-Once the label is in use, specify an asset ID for each relevant item. This ID can be a product code, project number, or any identifier used by your organization to track content. This detail is important as it links specific content to the event type, ensuring correct application of the retention policy.
+For each document that falls under the event-based retention category, assign a specific asset ID. This ID links the document to the event type, enabling precise retention management. This ID can be a product code, project number, or any identifier used by your organization to track content.
 
    :::image type="content" source="../media/event-type-retention-asset-id.png" alt-text="Screenshot showing assigning an asset ID for event-based retention.":::
 
@@ -78,4 +76,12 @@ Up to 1,000,000 events are supported per tenant.
 
 ### 6. Associate content with the event
 
-During event creation, select the appropriate event type that matches the one you used for your retention label. This ensures that all content tagged with this label will begin its retention period. If multiple labels or events are involved, adjust your settings to for each scenario.
+Ensure that the content tagged with the retention label is linked to the created event by selecting the appropriate event type during event creation.
+
+If your scenario involves multiple retention labels with different event types, use the **Choose Existing Labels** option to associate the event with the appropriate labels. This allows for targeted application of retention periods based on the specific event types assigned to each label.
+
+### 7. Enter keywords, query, or asset ID
+
+Narrow down the affected content by specifying asset IDs or using queries. If no asset ID is provided, all tagged content with labels of that event type get the same retention date applied to them.
+
+Select the date when the event occurred to start the retention period. Once you create an event, its date is synchronized to all relevant content, labeled with matching event types, asset IDs, or keywords. This synchronization process can take up to seven days. Once set, the retention settings immediately apply to indexed content. For new content tagged after the event's creation, a new event needs to be logged. Deleting an event doesn't reverse the retention settings already in effect, and events can't be canceled once triggered.
