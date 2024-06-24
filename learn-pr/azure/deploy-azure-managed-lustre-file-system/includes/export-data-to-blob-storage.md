@@ -26,3 +26,7 @@ Only one archive job runs at a time. To cancel the job that's in progress, selec
 If an export job doesn't complete successfully, you can retry the export by [creating a new export job](#create-an-export-job). The new job copies only the files that weren't copied during the previous job.
 
 Retries can be common when attempting to export data from active file systems where data is frequently changing. To learn more about these scenarios, see [Running export jobs in active file systems](/azure/azure-managed-lustre/blob-integration.md#running-export-jobs-in-active-file-systems).
+
+## Delete a file system
+
+After you've exported all the data you need from your Azure Managed Lustre file system to a blob container, you can optionally delete the file system to stop incurring charges for the resource. To delete the file system, open the file system in the Azure portal and select **Delete**.
