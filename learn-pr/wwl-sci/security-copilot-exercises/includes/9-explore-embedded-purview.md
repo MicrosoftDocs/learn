@@ -21,7 +21,7 @@ This exercise should take approximately **30** minutes to complete.
 
 In this task, you enable the Microsoft Purview plugin. For this task, you work in the standalone experience.
 
-1. Open the simulated environment by selecting this link: **Microsoft Copilot for Security**.
+1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security]( https://app.highlights.guide/start/cccb66cb-3ca0-4d88-92dd-b6bee0f2c563?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
 1. From the Microsoft Copilot for Security landing page, select the sources icon in the prompt bar.
     1. Expand the Microsoft plugins
@@ -42,7 +42,7 @@ In this task, you explore the value Copilot provides in summarizing an Insider R
 
 Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview Insider Risk Management solution, users should have previously been assigned an appropriate role.
 
-1. Open the environment by selecting this link (use the right mouse key and select,'Open link in split screen window'): **Microsoft Purview Portal.**
+1. Open the environment by selecting this link (use the right mouse key and select,'Open link in split screen window'): **[Microsoft Purview Portal](https://app.highlights.guide/start/cccb66cb-3ca0-4d88-92dd-b6bee0f2c563?link=3&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
 1. From the Microsoft Purview portal, select Insider Risk Management.
 
