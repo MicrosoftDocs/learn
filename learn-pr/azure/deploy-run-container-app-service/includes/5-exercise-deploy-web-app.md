@@ -37,7 +37,7 @@ You're now ready to create your web app.
     | Resource Group | From the dropdown list, select the existing resource group **learn-deploy-container-acr-rg**. |
     | **Instance Details** |
     | Name | Enter a unique name and make a note of it for later. |
-    | Publish | **Docker Container** |
+    | Publish | **Container** |
     | Operating System | **Linux** |
     | Region | Select the same location that is close to you from previous exercise. |
     | **Pricing plans** |
@@ -46,14 +46,15 @@ You're now ready to create your web app.
     | **Zone redundancy** |
     | Zone redundancy | Use the default. |
 
-1. Select the **Docker** tab at the top of the screen.
+1. Select the **Container** tab at the top of the screen.
 
-1. On the **Docker** tab, enter the following values for each setting.
+1. On the **Container** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---|---|
-    | Options | **Single Container** |
+    | Sidecar support (preview) | Accept default |
     | Image Source | **Azure Container Registry** |
+    | Options | **Single Container** |
     | **Azure container registry options** |
     | Registry | Select your registry. |
     | Image | `webimage` |
@@ -66,7 +67,7 @@ You're now ready to create your web app.
 
 1. After deployment succeeds, select **Go to resource** to see the web app you just created. Your **App service** pane appears for your web app.
 
-2. In the top menu bar, select **Browse** to open the site in a new browser tab.
+2. Select the URL in the **Default domain** field to open the site in a new browser tab.
 
 ::: zone pivot="csharp"
 
