@@ -60,7 +60,7 @@ az vm create \
     --resource-group $RGROUP \
     --name NW-RHEL01 \
     --size Standard_DS1_v2 \
-    --image RedHat:RHEL:7-RAW:latest \
+    --image RedHat:RHEL:8-gen2:latest \
     --authentication-type ssh \
     --generate-ssh-keys \
     --vnet-name NorthwindInternal \
@@ -83,7 +83,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
     The **NW-RHEL01** virtual machine pane appears.
 
-1. In the middle menu pane, scroll down to **Backup + Disaster recovery**, and select **Backup**. The **Backup** pane for the *NW-RHEL01* virtual machine appears.
+1. In the middle menu pane, select the **Capabilities** tab, then scroll down to and select **Backup**. The **Backup** pane for the *NW-RHEL01* virtual machine appears.
 
 1. Select the radio button for **Standard**. You can accept the defaults for the following options:
 
@@ -94,7 +94,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. Select the **Enable backup** button.
 
-1. Once deployment completes, go back to the **NW-RHEL01** virtual machine, scroll down to **Backup + Disaster recovery**, and select **Backup**. The **Backup** pane for the *NW-RHEL01* virtual machine appears.
+1. Once deployment completes, go back to the **NW-RHEL01** virtual machine, select the **Capabilites** tab, then scroll down to and select **Backup**. The **Backup** pane for the *NW-RHEL01* virtual machine appears.
 
 1. To perform the first backup for this server, in the top menu bar, select **Backup now**.
 
@@ -109,6 +109,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
     ```azurecli
     az backup vault create \
         --resource-group vmbackups \
+        --location westus2 \
         --name azure-backup
     ```
 
@@ -165,7 +166,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. Select the **NW-APP01** virtual machine. The *NW-APP01* virtual machine pane appears.
 
-1. In the middle menu pane, scroll to **Backup + Disaster recovery**, and select **Backup**. The **Backup** pane for the *NW-APP01* virtual machine appears.
+1. In the middle menu pane, select the **Capabilities** tab, then scroll to and select **Backup**. The **Backup** pane for the *NW-APP01* virtual machine appears.
 
     Under the **Backup status** section, the **Last backup status** field displays the current status of the backup.
 
