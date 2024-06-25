@@ -7,7 +7,8 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module
-  ms.service: azure
+  ms.reviewer: fernandovas;micflan
+  ms.service: finops
 title: Get started with FinOps
 summary: Begin your journey into FinOps on Azure with this module, designed to provide a comprehensive introduction to the FinOps framework. In this module, you'll delve into the essence of FinOps, understanding its fundamental principles, and gaining insights into its core components and best practices.
 abstract: |
