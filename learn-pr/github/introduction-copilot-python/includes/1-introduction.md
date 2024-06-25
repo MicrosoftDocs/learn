@@ -7,17 +7,15 @@ GitHub Codespaces is a hosted developer environment operating in the cloud that 
 
 ## Scenario: Improving a project
 
-As a developer, you want to be more productive when you're typing code both for new projects and existing ones. For this task, you want to find out if an AI assistant is what you need to improve your developer workflows in code writing, documentation, testing, and more.
+As a developer, you want to be more productive when you're typing code for new projects and existing ones. For this task, you want to find out if an AI assistant is what you need to improve your developer workflows in code writing, documentation, testing, and more.
 
-In this module, you learn how you can use GitHub Copilot with applied examples modifying a repository using a prompt to customize scroll behavior as well as live suggestions after typing initial code.
-
-## What will I learn?
+In this module, you learn how you can use GitHub Copilot to modify a project by using a prompt to customize a Python API. You also learn how to use live suggestions after typing initial code.
 
 By the conclusion of this module, you have:
 
 - Configured a GitHub repository in Codespaces and installed the GitHub Copilot extension.
 - Crafted prompts to generate suggestions from GitHub Copilot.
-- Learned how to apply GitHub Copilot to improve your projects.
+- Learned how to apply GitHub Copilot to improve your Python projects.
 
 ## What is the main objective?
 
