@@ -94,7 +94,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. Select the **Enable backup** button.
 
-1. Once deployment completes, go back to the **NW-RHEL01** virtual machine, select the **Capabilites** tab, then scroll down to and select **Backup**. The **Backup** pane for the *NW-RHEL01* virtual machine appears.
+1. Once deployment completes, go back to the **NW-RHEL01** virtual machine, select the **Capabilities** tab, then scroll down to and select **Backup**. The **Backup** pane for the *NW-RHEL01* virtual machine appears.
 
 1. To perform the first backup for this server, in the top menu bar, select **Backup now**.
 
