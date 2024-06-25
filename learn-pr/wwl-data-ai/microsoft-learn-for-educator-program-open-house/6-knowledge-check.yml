@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-learn-for-educator-program-open-house.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Introduction"
+  ms.date: 06/25/2024
+  author: wwlpublish
+  ms.author: WWL
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-knowledge-check.md)]

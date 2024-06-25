@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.microsoft-learn-for-educator-program-open-house
+metadata:
+  title: Module 1 – Microsoft Learn for Educator Program open house
+  description: "The Microsoft Learn for Educators program provides eligible educators and faculty members at colleges, universities, community colleges, polytechnics, and some STEM-focused secondary schools access to Microsoft's ready-to-teach curriculum and teaching materials aligned to industry-recognized Microsoft Certifications.
+The Microsoft certifications enhance your
+students' credibility by giving them a professional advantage through globally
+recognized, industry-endorsed evidence of skills mastery."
+  ms.date: 06/25/2024
+  author: wwlpublish
+  ms.author: WWL
+  ms.topic: module-intro-to-product
+  ai-usage: human-only
+title: Microsoft Learn for Educator Program Open House
+summary: |
+  The Microsoft Learn for Educators program provides eligible educators and faculty members at colleges, universities, community colleges, polytechnics, and some STEM-focused secondary schools access to Microsoft's ready-to-teach curriculum and teaching materials aligned to industry-recognized Microsoft Certifications.
+
+  The Microsoft certifications enhance your
+
+  students' credibility by giving them a professional advantage through globally
+
+  recognized, industry-endorsed evidence of skills mastery.
+abstract: |
+  After completing this module, you will be able to:
+
+  •	Understand the Microsoft Learn for Educators program benefits and offerings
+
+  •	Understand the different MSLE program participation options
+
+  •	Review the resources included in the Microsoft Learn for Educators program for Institutions, Educators and Students
+
+  •	Review the steps to signing up to the Microsoft Learn for Educators program.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- higher-ed-educator
+products:
+- azure
+units:
+- learn.wwl.microsoft-learn-for-educator-program-open-house.introduction
+- learn.wwl.microsoft-learn-for-educator-program-open-house.what-is-microsoft-learn-for-educators
+- learn.wwl.microsoft-learn-for-educator-program-open-house.discover-the-benefits-of-joining-microsoft-learn-for-educators
+- learn.wwl.microsoft-learn-for-educator-program-open-house.define-the-resources-and-benefits-for-my-students
+- learn.wwl.microsoft-learn-for-educator-program-open-house.demonstrate-how-to-sign-up-for-microsoft-learn-for-educators
+- learn.wwl.microsoft-learn-for-educator-program-open-house.knowledge-check
+- learn.wwl.microsoft-learn-for-educator-program-open-house.summary
+badge:
+  uid: learn.wwl.microsoft-learn-for-educator-program-open-house.badge
