@@ -42,7 +42,7 @@ quiz:
     - content: Analyze Image
       isCorrect: true
       explanation: Analyze Image scans images for sexual content, violence, hate, and self-harm with multi-severity levels.
-  - content: Which  Azure AI Content Safety API is responsible for detecting and blocking hallucinations in model outputs?
+  - content: Which  Azure AI Content Safety API is responsible for detecting and blocking false responses in model outputs?
     choices:
     - content: Analyze Text
       isCorrect: false

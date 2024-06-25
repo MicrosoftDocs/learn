@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.moderate-content-detect-harm-azure-ai-content-safety.exercise-integrate-contoso-camping-store-platform
-title: Exercise – Integrating with the Contoso Camping Store Platform
+title: Exercise – Integrating with the Contoso Camping Store platform
 metadata:
-  title: Exercise – Integrating with the Contoso Camping Store Platform
+  title: Exercise – Integrating with the Contoso Camping Store platform
   description: Learn how to integrate Azure AI Content Safety with the Contoso Camping Store platform.
   ms.date: 06/24/2024
   author: aprilspeight

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.moderate-content-detect-harm-azure-ai-content-safety.harm-categories-severity-levels
-title: Harm Categories and Severity Levels
+title: Harm categories and severity levels
 metadata:
-  title: Harm Categories and Severity Levels
+  title: Harm categories and severity levels
   description: Learn about the harm categories and severity levels that Azure AI Content Safety can detect.
   ms.date: 06/24/2024
   author: aprilspeight
