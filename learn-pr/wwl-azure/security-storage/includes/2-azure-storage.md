@@ -24,7 +24,7 @@ The Azure Storage platform includes the following data services:
 
 Each service is accessed through a storage account with a unique address. To get started, see Create a storage account.
 
-Additionally, Azure provides the following specialized storage:<br>
+Additionally, Azure provides the following specialized storage:
 
  -  Azure NetApp Files: Enterprise files storage, powered by NetApp: makes it easy for enterprise line-of-business (LOB) and storage professionals to migrate and run complex, file-based applications with no code change. Azure NetApp Files is managed via NetApp accounts and can be accessed via NFS, SMB and dual-protocol volumes.<br>
 
@@ -81,7 +81,7 @@ Elastic SAN is designed for large scale **Input/Output**\-intensive workloads an
 
 Azure Container Storage integrates with Kubernetes and utilizes existing Azure Storage offerings for actual data storage, offering a volume orchestration and management solution purposely built for containers. You can choose any of the supported backing storage options to create a storage pool for your persistent volumes.
 
-Azure Container Storage offers substantial benefits:<br>
+Azure Container Storage offers substantial benefits:
 
  -  Rapid scale out of stateful pods<br>
  -  Improved performance for stateful workloads<br>
@@ -138,4 +138,4 @@ Azure NetApp Files provides locally redundant storage with **99.99% availability
 
 You have several options for moving data into or out of Azure Storage. Which option you choose depends on the size of your dataset and your network bandwidth.
 
-Azure NetApp Files provides NFS and SMB volumes. You can use any file-based copy tool to migrate data to the service.<br>
+Azure NetApp Files provides NFS and SMB volumes. You can use any file-based copy tool to migrate data to the service.

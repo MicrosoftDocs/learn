@@ -10,7 +10,7 @@ The following table describes the options that Azure Storage offers for authoriz
 | Azure Queues       | Supported                            | Supported                         | Supported                                                                  | Not Supported                                               | Not supported                    |
 | Azure Tables       | Supported                            | Supported                         | Supported                                                                  | Not supported                                               | Not supported                    |
 
-Each authorization option is briefly described below:<br>
+Each authorization option is briefly described below:
 
  -  Microsoft Entra ID: Microsoft Entra is Microsoft's cloud-based identity and access management service. Microsoft Entra ID integration is available for the Blob, File, Queue and Table services. With Microsoft Entra ID, you can assign fine-grained access to users, groups, or applications via role-based access control (RBAC).
  -  Microsoft Entra Domain Services authorization for Azure Files. Azure Files supports identity-based authorization over Server Message Block (SMB) through Microsoft Entra Domain Services. You can use RBAC for fine-grained control over a client's access to Azure Files resources in a storage account.
