@@ -315,7 +315,7 @@ Let's test the Azure Storage service that you added.
 1. In the Aspire dashboard, notice that the list of **Resources** includes a container named **storage** and an **AzureQueueStorageResource** named **queueConnection**.
 1. Locate the line for the **eshop_messageprocessor** project and then in the **Logs** column, select **View**.
 
-    :::image type="content" source="../media/dotnet-aspire-dashboard-resources.png" lightbox="../media/dotnet-aspire-dashboard-resources.png" alt-text="Screenshot showing the .NET Aspire dashboard with storage resources and the message processer worker process.":::
+    :::image type="content" source="../media/dotnet-aspire-dashboard-resources.png" lightbox="../media/dotnet-aspire-dashboard-resources.png" alt-text="Screenshot showing the .NET Aspire dashboard with storage resources and the message processor worker process.":::
 
 1. In the **Console logs** for the **eshop-messageprocessor** project, notice that a new request and response is added every 15 seconds.
 1. In the navigation on the left, select **Resources**, and then select one of the endpoints for the **webapp** project:
@@ -327,7 +327,7 @@ Let's test the Azure Storage service that you added.
 1. Locate the line for the **eshop_messageprocessor** project and then in the **Logs** column, select **View**.
 1. The log displays an extra entry with a message about the catalog request. This message was added to the Azure Storage queue by the Catalog API and retrieved by the worker process.
 
-    :::image type="content" source="../media/retrieved-message.png" lightbox="../media/retrieved-message.png" alt-text="Screenshot showing the .NET Aspire concole log for the worker process with a message text displayed.":::
+    :::image type="content" source="../media/retrieved-message.png" lightbox="../media/retrieved-message.png" alt-text="Screenshot showing the .NET Aspire console log for the worker process with a message text displayed.":::
 
 1. Close the browser tabs and in Visual Studio, press <kbd>SHIFT + F5</kbd> or select **Debug > Stop Debugging**.
 1. Close Visual Studio.
