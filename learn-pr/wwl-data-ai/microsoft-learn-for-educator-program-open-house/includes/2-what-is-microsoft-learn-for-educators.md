@@ -14,7 +14,7 @@ Why join Microsoft Learn for Educators?
 
 At the core of MSLE is partnership, Microsoft and higher education coming together to partner for the future of education. MSLE provides materials, tools, training, and support that when coupled with your expertise, gives students the technical skills as well as the Microsoft credentials they need to help them be successful as they graduate and enter the workforce.
 
-Microsoft Azure is used by 95 percent of Fortune 500 companies and helps the start-ups of tomorrow scale globally. Source: [Microsoft Azure: The only consistent, comprehensive hybrid cloud | Microsoft Azure Blog](https://azure.microsoft.com/en-us/blog/microsoft-azure-the-only-consistent-comprehensive-hybrid-cloud/)
+Microsoft Azure is used by 95 percent of Fortune 500 companies and helps the start-ups of tomorrow scale globally. Source: [Microsoft Azure: The only consistent, comprehensive hybrid cloud | Microsoft Azure Blog](https://azure.microsoft.com/blog/microsoft-azure-the-only-consistent-comprehensive-hybrid-cloud/)
 
 It is our goal that MSLE helps you cultivate a reputation as a forward thinking, innovative higher education institution by adding an emphasis on real world technical skills.
 
