@@ -4,11 +4,12 @@ title: Configure Azure role permissions for management groups, subscriptions, re
 metadata:
   title: Configure Azure role permissions for management groups, subscriptions, resource groups, and resources
   description: "Configure Azure role permissions for management groups, subscriptions, resource groups, and resources"
-  ms.date: 04/24/2024
+  ms.date: 06/25/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-  ms.custom: N/A, devx-track-azurepowershell
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/3-configure-azure-role-permissions.md)]

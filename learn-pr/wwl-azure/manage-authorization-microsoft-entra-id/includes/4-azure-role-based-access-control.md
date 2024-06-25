@@ -77,26 +77,19 @@ The following are the high-level steps that Azure RBAC uses to determine if you 
 
 The following are the high-level steps that Azure RBAC uses to determine if you have access to a resource. These steps apply to Azure Resource Manager or data plane services integrated with Azure RBAC. This is helpful to understand if you are trying to troubleshoot an access issue.
 
-1. A user (or service principal) acquires a token for Azure Resource Manager. The token includes the user's group memberships (including transitive group memberships).
-
-2. The user makes a REST API call to Azure Resource Manager with the token attached.
-
-3. Azure Resource Manager retrieves all the role assignments and deny assignments that apply to the resource upon which the action is being taken.
-
-4. If a deny assignment applies, access is blocked. Otherwise, evaluation continues.
-
-5. Azure Resource Manager narrows the role assignments that apply to this user or their group and determines what roles the user has for this resource.
-
-6. Azure Resource Manager determines if the action in the API call is included in the roles the user has for this resource. If the roles include `Actions` that have a wildcard (`*`), the effective permissions are computed by subtracting the`NotActions` from the allowed `Actions`. Similarly, the same subtraction is done for any data actions.
+1.  A user (or service principal) acquires a token for Azure Resource Manager. The token includes the user's group memberships (including transitive group memberships).
+2.  The user makes a REST API call to Azure Resource Manager with the token attached.
+3.  Azure Resource Manager retrieves all the role assignments and deny assignments that apply to the resource upon which the action is being taken.
+4.  If a deny assignment applies, access is blocked. Otherwise, evaluation continues.
+5.  Azure Resource Manager narrows the role assignments that apply to this user or their group and determines what roles the user has for this resource.
+6.  Azure Resource Manager determines if the action in the API call is included in the roles the user has for this resource. If the roles include `Actions` that have a wildcard (`*`), the effective permissions are computed by subtracting the`NotActions` from the allowed `Actions`. Similarly, the same subtraction is done for any data actions.
 
  -  `Actions - NotActions = Effective management permissions`
  -  `DataActions - NotDataActions = Effective data permissions`
 
-7. If the user doesn't have a role with the action at the requested scope, access is not allowed. Otherwise, any conditions are evaluated.
-
-8. If the role assignment includes conditions, they are evaluated. Otherwise access is allowed.
-
-9. If conditions are met, access is allowed. Otherwise access is not allowed.
+7.  If the user doesn't have a role with the action at the requested scope, access is not allowed. Otherwise, any conditions are evaluated.
+8.  If the role assignment includes conditions, they are evaluated. Otherwise access is allowed.
+9.  If conditions are met, access is allowed. Otherwise access is not allowed.
 
 The following diagram is a summary of the evaluation logic.
 

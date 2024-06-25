@@ -41418,6 +41418,51 @@
       "source_path": "learn-pr/wwl-data-ai/receive-data-with-azure-data-share-transforming-with-azure-data-factory/13-summary.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/index.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/1-introduction.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/2-stereokit-overview.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/3-exercise-get-started-stereokit.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/4-stereokit-ink-application-overview.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/5-understand-stereokit-ink-application.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/6-exercise-install-test-stereokit-ink-application.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/7-knowledge-check.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/8-summary.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
     }
   ]
 }
