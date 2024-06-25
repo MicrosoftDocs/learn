@@ -162,6 +162,8 @@ For example, to view the entitlement management-specific roles that a particular
 
 
 
+
+
 ```
 
 For a role that is specific to a catalog, the `appScopeId` in the response indicates the catalog in which the user is assigned a role. This response only retrieves explicit assignments of that principal to role in entitlement management, it doesn't return results for a user who has access rights via a directory role, or through membership in a group assigned to a role.
