@@ -47,7 +47,7 @@ A geo-replicated registry provides the following benefits:
     eastus     eastus      Succeeded             Ready     True
     ```
 
-You can also use the Azure portal to view your container images by navigating to your container registry and selecting `Replications`:
+You can also use the Azure portal to view your container images by navigating to your container registry and selecting **Geo-replications**:
 
   ![Screenshot of Azure container registry world map showing replicated and available locations.](../media/replication-map-expanded.png)
 

@@ -3638,3 +3638,8 @@ achievements:
   title: Build Mixed Reality Apps in Native C# with StereoKit
   summary: By the end of this module, you'll be able to set up, create, and build an application using StereoKit. You'll understand the features of StereoKit through a sample application called StereoKit ink application. You'll also work across OpenXR platforms like HoloLens 2 and Windows Mixed Reality.
   iconUrl: /training/achievements/intro-to-stereokit.svg
+- uid: learn.n-tier-architecture
+  type: badge
+  title: Tour the N-tier architecture style for your application
+  summary: Use a Resource Manager template to deploy an application styled in an N-tier architecture, identify key concepts of N-tier architectures, and review best practices for deployments of this style.
+  iconUrl: /training/achievements/n-tier-architecture.svg
