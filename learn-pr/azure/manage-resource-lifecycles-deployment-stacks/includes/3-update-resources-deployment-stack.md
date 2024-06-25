@@ -10,7 +10,7 @@ In this unit, you learn about what situations call for an update to a deployment
 
 Over time, the resources that make up an application change. Properties of existing resources need to be updated, resources need to be added or deleted, or an appliction needs to integrate existing resources. A deployment stack can be updated to implement the changes in our applications. What situations require us to update a deployment stack?
 
-- Adding, removing, or modifying a property of a managed resource
+- Updating the property of a managed resource
 - Adding a new managed resource
 - Adding an existing resource as a managed resource
 - Detaching a managed resource
@@ -19,3 +19,63 @@ Over time, the resources that make up an application change. Properties of exist
 How are these changes implemented? As we discussed in the last module, deployment stacks manage resources that are defined in a ARM JSON template, Bicep file, or template spec. When you create a deployment stack, you reference one of these files to deploy your resources. The same is true for updating a deployment stack. To update resources managed by a deployment stack, simply update the underlying template file.
 
 ## Updating an existing managed resource
+
+It is common practice to modify your resources deployed in Azure. You may need to update a property value of a resource to incorporate a new feature or enhance its functionality.
+
+If you currently use infrastructure as code to define your resources in Azure
+
+With deployment stacks, the process is identical. Simply make the change to the resource in your Bicep file and run an update operation on the stack.
+
+Let's consider our Bicep file from the last unit. Our file defines an app service plan and an app service. We want to update the SKU of the app service plan from the `F1` SKU to the `S1` SKU.
+
+:::code language="bicep" source="code/1a-template.bicep" range="1-4,18-43" highlight="17":::
+
+TODO:
+
+::: zone pivot="cli"
+
+With the Bicep file updated, we want to update the deployment stack so that the changes made to the resources in the Bicep file are implemented.
+
+To update a deployment stack using Azure CLI, use the `az stack group create` command.
+
+```azurecli
+az stack group create \
+    --name stack-deposits \
+    --resource-group rg-depositsApplication \
+    --template-file ./main.bicep \
+    --action-on-unmanage detachAll \
+    --deny-settings-mode none
+```
+
+> [!NOTE]
+> Azure CLI does not have a dedicated command to update a deployment stack. Use the create command to update the stack.
+
+After the stack update is complete, we want to verify that the app service plan is now running on the `S1` SKU.
+
+To view the configuration of the app service plan using Azure CLI, use the `az appservice plan show` command
+
+```azurecli
+az appservice plan show \
+    --name plan-deposits
+    --resource-group rg-depositsApplication
+```
+
+The output shows us that the update was successful and the app service plan is now running on the `S1` SKU.
+
+```json
+"sku": {
+    "capacity": 1,
+    "family": "S",
+    "name": "S1",
+    "size": "S1",
+    "tier": "Standard"
+},
+```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+::: zone-end
+
+You will learn more about updating deployment stacks and its managed resources in later
