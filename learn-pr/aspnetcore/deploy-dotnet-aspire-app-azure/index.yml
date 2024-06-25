@@ -29,6 +29,7 @@ products:
 - vs-code
 subjects:
 - custom-app-development
+- containers
 units:
 - learn.deploy-dotnet-aspire-app-azure.introduction
 - learn.deploy-dotnet-aspire-app-azure.deploy-azure-container-apps
