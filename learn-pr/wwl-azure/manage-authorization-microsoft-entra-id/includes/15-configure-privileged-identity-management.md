@@ -214,7 +214,7 @@ You can [assign eligibility to members or owners of the PIM for Groups.](/entra/
 > You can assign the group to one or more Microsoft Entra ID and Azure resource roles in the same way as you assign roles to users. A **maximum of 500 role-assignable groups** can be created in a single Microsoft Entra organization (tenant).
 
 :::image type="content" source="../media/privileged-identity-for-groups-800d8e90.png" alt-text="Diagram showing an example of privileged identity for groups.":::
- When group assignment nears its expiration, use \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[PIM to extend or renew the group assignment\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\](/entra/id-governance/privileged-identity-management/groups-renew-extend). This operation requires group owner approval.
+ When group assignment nears its expiration, use \\\\\\\[PIM to extend or renew the group assignment\\\\\\\](/entra/id-governance/privileged-identity-management/groups-renew-extend). This operation requires group owner approval
 
 ### Approve or deny PIM activation request
 
