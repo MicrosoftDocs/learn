@@ -14,7 +14,7 @@ The centralized management interface makes it easy to define backup policies and
 
 :::image type="content" source="../media/azure-backup-architecture.png" alt-text="Diagram of Azure Backup architecture displaying workloads at the bottom, feeding into the data plane above that, tying into the management plane with backup policies, Azure policies, Azure Monitor, and Azure Lighthouse services listed for management.":::
 
-## How to think about Azure Backup?
+## When to think of Azure Backup?
 
 As the IT admin of your organization, you are responsible for meeting the compliance needs for all the data assets of the firm; backup is a critical aspect of it. There are also various application admins in your company who need to do self-service backup and restore to take care of issues like data corruption or rogue admin scenarios. You are looking for an enterprise-class backup solution to protect all your workloads and manage them from a central place.
 
@@ -44,7 +44,7 @@ Let's look at some key features of Azure Backup.
 | At-scale management | Natively manage your entire backup estate from a central console called Backup Center. Use APIs, PowerShell, and Azure CLI to automate Backup policy and security configurations. | Backup center simplifies data protection management at-scale by enabling you to discover, govern, monitor, operate, and optimize backup management, all from one unified console, helping you to drive operational efficiency with Azure.  |
 | Security | Azure Backup provides built-in security to your backup environment, both when your data is in transit and at rest by using capabilities encryption, private endpoints, alerts, and so on. | Your backups are automatically secured against ransomware, malicious admins, and accidental deletions. |
 
-## How Recovery Time Objective and Recovery Point Objective work?
+## How do Recovery Time Objective and Recovery Point Objective work?
 
 Recovery Time Objective (RTO) is the target time within which a business process must be restored after a disaster occurs to avoid unacceptable consequences. For instance, if a critical application goes down due to a server failure and the business can only tolerate a maximum of four hours of downtime, then the RTO is four hours.
 
