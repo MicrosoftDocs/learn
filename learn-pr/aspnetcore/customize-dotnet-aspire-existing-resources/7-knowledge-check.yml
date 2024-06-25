@@ -14,7 +14,7 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "You are preparing to deploy a .NET Aspire solution to your Azure subscription. You want to add an Azure Storage account by editing the Bicep files. How can you generate Bicep files to edit before you deploy?"
+  - content: "You're preparing to deploy a .NET Aspire solution to your Azure subscription. You want to add an Azure Storage account by editing the Bicep files. How can you generate Bicep files to edit before you deploy?"
     choices:
     - content: "Run the azd init command."
       isCorrect: false
@@ -29,7 +29,7 @@ quiz:
     choices:
     - content: "Add a package and code to the Service Defaults project to enable the Azure Monitor OpenTelemetry Exporter."
       isCorrect: true
-      explanation: "Correct. If the Application Insights instance is created, then you have configured the app host correctly. However, the solution won't send telemetry to it until you add the Azure.Monitor.OpenTelemetry.AspNetCore package to the Service Defaults project and enable it in code."
+      explanation: "Correct. If the Application Insights instance is created, then you've configured the app host correctly. However, the solution won't send telemetry to it until you add the Azure.Monitor.OpenTelemetry.AspNetCore package to the Service Defaults project and enable it in code."
     - content: "Add a package and code to the web app and API projects to enable the Azure Monitor OpenTelemetry Exporter."
       isCorrect: false
       explanation: "Incorrect. You don't need to make any changes to your microservices for the solution to send data to Application Insights."
