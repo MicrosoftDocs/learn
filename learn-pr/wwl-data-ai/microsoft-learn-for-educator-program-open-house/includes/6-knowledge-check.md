@@ -10,12 +10,12 @@ Feedback: Incorrect. In addition to learning paths for certification, MSLE is a 
 *a) Microsoft curriculum and teaching materials
 *b) Online training
 *c) Access to a global community of  Educators through the MSLE Educator Teams-based community.
-Feedback: All answers are Correct. Educators receive Microsoft curriculum and teaching materials which includes full course, learning path content (e.g., lab components), and trainer guide. Additional teaching guides for educator prep and student assessment guides. Online training with self-paced online learning paths, Microsoft virtual training days, and virtual educator prep sessions. Access to the MSLE community, a global educator forum to exchange ideas and learning on preparing students with technical skilling
+Feedback: All answers are Correct. Educators receive Microsoft curriculum and teaching materials, which include full course, learning path content (for example, lab components), and trainer guide. More teaching guides for educator prep and student assessment guides. Online training with self-paced online learning paths, Microsoft virtual training days, and virtual educator prep sessions. Access to the MSLE community, a global educator forum to exchange ideas and learning on preparing students with technical skilling
 
 3. To sign up for MSLE, institutions or individual educators should:
  a) Email Microsoft 
-Feedback: Incorrect. You may have received an email from your institution to join MSLE, however institutions or individual educators can apply for the MSLE program by navigating to [aka.ms/MSLE](https://aka.ms/MSLE), selecting Get started then Join MSLE
+Feedback: Incorrect. You may have received an email from your institution to join MSLE, however institutions, or individual educators can apply for the MSLE program by navigating to [aka.ms/MSLE](https://aka.ms/MSLE), selecting Get started then Join MSLE
 *b) Sign-up at [aka.ms/MSLE](https://aka.ms/MSLE)
 Feedback: Correct. Institutions or individual educators can apply for the MSLE program by navigating to [aka.ms/MSLE](https://aka.ms/MSLE), selecting Get started then Join MSLE
 c) Contact your institution representative  
-Feedback: Incorrect. You may have received an email from your institution to join MSLE, however institutions or individual educators can apply for the MSLE program by navigating to [aka.ms/MSLE](https://aka.ms/MSLE), selecting Get started then Join MSLE
+Feedback: Incorrect. You may have received an email from your institution to join MSLE, however institutions, or individual educators can apply for the MSLE program by navigating to [aka.ms/MSLE](https://aka.ms/MSLE), selecting Get started then Join MSLE
