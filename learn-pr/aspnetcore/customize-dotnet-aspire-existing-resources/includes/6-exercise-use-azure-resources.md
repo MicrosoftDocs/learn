@@ -115,7 +115,7 @@ Let's use `git` to obtain a sample app to deploy:
 1. Execute the following command to clone the **eShop** sample application:
 
     ```dotnetcli
-    git clone -b aspire-azure-deployment https://github.com/MicrosoftDocs/mslearn-aspire-starter
+    git clone -b aspire-azure-customize https://github.com/MicrosoftDocs/mslearn-aspire-starter
     ```
 
 1. Open Visual Studio and then select **Open a project or solution**.
