@@ -39,7 +39,7 @@ To hold all of the users you create in this exercise, create a new organization.
 
 1. After validation passes, select **Create**. The **Help us prove you're not a robot** pane appears.
 
-1. Enter the appropriate match to the request and select **Submit**. Wait for the your tenant creation to complete.
+1. Enter the appropriate match to the request and select **Submit**. Wait for your tenant creation to complete.
 
 1. On the **Help us prove you're not a robot** pane, select the **Click here to navigate to your new tenant: Contoso Marketing Company** link.
 

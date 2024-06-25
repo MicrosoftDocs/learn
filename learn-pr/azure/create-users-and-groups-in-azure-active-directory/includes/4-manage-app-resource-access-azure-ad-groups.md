@@ -1,4 +1,4 @@
-You want to give all the developers within your organization the same access. You also want to manage who's part of the developers group and who isn't.
+You want to give all the developers within your organization the same access. You also want to manage who's part of the Developers group and who isn't.
 
 Microsoft Entra ID helps you to manage your cloud-based apps, on-premises apps, and resources by using your organization's groups. Your resources can be part of the Microsoft Entra organization, such as permissions to manage objects through roles, or your resources can be external to the organization, like software as a service (SaaS) apps, Azure services, SharePoint sites, and on-premises resources.
 
