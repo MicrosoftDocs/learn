@@ -7,7 +7,7 @@ In this exercise, you explore the Copilot summarization capabilities available i
 
 ### Exercise
 
-For this exercise you're logged in as Avery Howard. You have the Copilot owner role and you have specific role permissions required for access to each of the afore mentioned Microsoft Purview solutions.
+For this exercise, you're logged in as Avery Howard. You have the Copilot owner role and you have specific role permissions required for access to each of the afore mentioned Microsoft Purview solutions.
 
 You'll work with specific Microsoft Purview solutions, using the new Microsoft Purview portal, and access the embedded Copilot capabilities of those solutions.
 
@@ -37,7 +37,7 @@ In this task, you enable the Microsoft Purview plugin. For this task, you work i
 1. Now that you’ve enabled Copilot to access data from your Microsoft 365 services, return to the plugins page and enable the Microsoft Purview plugin.
     1. From the promptbar, select the **Sources icon**.
     1. From the manage sources window, under the Microsoft plugins, select **Show 11 more**.
-    1. Enable the toggle switch next to Microsoft purview to enable the plugin.
+    1. Enable the toggle switch next to Microsoft Purview to enable the plugin.
     1. Close the manage sources window by selecting the **X**.
 
 #### Task: Gain comprehensive summary of Insider Risk Management alerts
@@ -48,7 +48,7 @@ In this task, you explore the value Copilot provides in summarizing an Insider R
 
 Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview Insider Risk Management solution, the Copilot user should have previously been assigned an appropriate role.
 
-1. Open the environment by selecting this link: **[Microsoft Purview Portal](https://app.highlights.guide/start/cccb66cb-3ca0-4d88-92dd-b6bee0f2c563?link=3&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**. A pop-up window will appear that says, "Welcome to the new Microsoft Purview portal!"
+1. Open the environment by selecting this link: **[Microsoft Purview Portal](https://app.highlights.guide/start/cccb66cb-3ca0-4d88-92dd-b6bee0f2c563?link=3&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**. A pop-up window appears that says, "Welcome to the new Microsoft Purview portal!"
     1. Select the box where it says **"This is a public preview. I agree to the terms of data flow disclosure, the preview section of the Product Terms, and Privacy Statements."**
     1. Select **Try now**.
     1. You can close the Explore all solutions pop-up by selecting the **X**. Alternatively, you can select Next to go through the information. If you go through all six information windows, you'll need to scroll-up to get back to the top of the page, when you're done.
@@ -61,7 +61,7 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
     1. This alert is associated with the policy, 'Potential data theft - Employee Departure.' Under User details, you can gain more context on why the user was identified as a high impact user by selecting **View all details**. Review the user details then select the **X** to close the User details window.
     1. The current page shows **All risk factors**. If you scroll down, there are even more details to consume.
     1. Select the **Activity explorer** tab, to quickly review a timeline of potentially risky activity and filter for specific risk activities associated with the alert. Select, the first activity on the list, labeled **Files accessed on SPO**. Review the information provided then select **X** to close the window.
-    1. Select the **User activity tab**. Here you view a scatter plot, over a 1 month, 3 month, or 6 month timeline; alongside details of each event.
+    1. Select the **User activity tab**. Here you view a scatter plot, over a one month, three months, or six months timeline; alongside details of each event.
 
 1. With Copilot for Security, you can gain a comprehensive summary of an alert – in the single click of a button! From the top of the alert page, select **Summarize**.
     1. This comprehensive summary provides key details, including alert severity, user details like their HR offboarding event and much more! 
@@ -83,7 +83,7 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
     1. A side panel opens listing some details of this alert, including the alert status, severity, the DLP policy match, location, and user involved. From the bottom of the page, select **View details**. This opens a new browser tab.
     1. Select the **Events** tab. For the selected event, you can view event details, impacted entities and more.
     1. Select the **Classifiers** tab. Under classifiers, you can view the specific sensitive information types or trainable classifiers that were matched.
-    1. You can also select File Activity. There is lots of information to analyze.
+    1. You can also select File Activity. There's much information to analyze.
     1. Close this browser tab, but be sure to keep the 'Alerts|Microsoft Purview' tab open.
 
 1. Now view the information that Copilot can generate with the click of a button.
@@ -122,9 +122,9 @@ Let’s start by showing you how to review evidence collected in eDiscovery revi
 
 Legal investigations can take hours, days, even weeks to sift through the list of evidence collected in review sets, requiring costly resources like outside council to manually go through each document to determine the relevancy to the case.
 
-1. From the left navigation panel in the new Microsoft Purview portal, select **Cases**
+1. From the New Microsoft Purview portal, select **View all solutions**, then select **eDiscovery**, listed under Risk & Compliance.
 
-1. Select **Contoso stock manipulation**, then select the tab **Review sets**.
+1. For this simulation, you're taken directly to the page for cases. From the cases page, select **Contoso stock manipulation**, then select the tab **Review sets**.
 
 1. From the review sets page, open the review set listed **RS - Stock manipulation Teams conversation + cloud attachments**
     1. From the bottom of the Overview page, select **Open review set**.
@@ -150,7 +150,7 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
 
 1. From the New Microsoft Purview portal, select **View all solutions**, then select **eDiscovery**, listed under Risk & Compliance.
 
-1. Select **Cases**.
+1. For this simulation, you're taken directly to the page for cases.
 1. Select **Fabrikam vs Contoso**.
 1. Select **Create a search**.
     1. Enter a search name.
