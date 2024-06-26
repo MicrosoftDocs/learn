@@ -3,7 +3,7 @@ uid: learn.deploy-azure-private-5g-core
 metadata:
   title: Deploy an Azure Private 5G Core service
   description: "Describes Azure Private 5G Core deployment tasks, including prerequisites, deployment methods, and creating mobile network and site."
-  ms.date: 01/18/2023
+  ms.date: 06/24/2024
   author: ArchanaUpadhyaya
   ms.author: archanau
   ms.topic: module
