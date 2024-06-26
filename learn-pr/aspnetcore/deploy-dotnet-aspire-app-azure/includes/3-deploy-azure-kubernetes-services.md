@@ -1,3 +1,7 @@
+---
+no-loc: [Aspir8]
+---
+
 If you want the most granular control of your containers in an Azure-deployed .NET Aspire solution, or you have a team with expertise in Kubernetes, you should consider using Azure Kubernetes Service.
 
 In your outdoor equipment retailer, you want to deploy the completed eShop for production. Your team has worked with Kubernetes clusters before and some members want the ability to customize ingress and traffic management. You want to understand the deployment process for Kubernetes clusters.
@@ -35,17 +39,17 @@ In the previous unit, you learned that the Azure Developer CLI creates a .NET As
 > [!IMPORTANT]
 > The .NET Aspire manifest is not the same as a Kubernetes manifest file, even though both can be JSON files. The schema used is different.
 
-A key task when you deploy a .NET Aspire solution to any Kubernetes cluster is the translation of the .NET Aspire manifest into a Kubernetes manifest. It's possible to complete this task manually, but it requires a deep understanding of both formats and can be time consuming. If you want help with this translation, you can use the **:::no-loc Aspir8:::** tool.
+A key task when you deploy a .NET Aspire solution to any Kubernetes cluster is the translation of the .NET Aspire manifest into a Kubernetes manifest. It's possible to complete this task manually, but it requires a deep understanding of both formats and can be time consuming. If you want help with this translation, you can use the **Aspir8** tool.
 
-## Using :::no-loc Aspir8::: to deploy
+## Using Aspir8 to deploy
 
-You can obtain :::no-loc Aspir8::: from NuGet by running this command
+You can obtain Aspir8 from NuGet by running this command
 
 ```dotnetcli
 dotnet tool install -g aspirate --prerelease
 ```
 
-After installation, run the intialization command in your .NET Aspire project. This command configures settings for the deployment, such as the container registry to use and tags for the containers.
+After installation, run the initialization command in your .NET Aspire project. This command configures settings for the deployment, such as the container registry to use and tags for the containers.
 
 ```cmd
 aspirate init
@@ -67,4 +71,4 @@ aspirate apply
 
 - [Kubernetes Overview](https://kubernetes.io/docs/concepts/overview/)
 - [What is Azure Kubernetes Service (AKS)?](/azure/aks/what-is-aks)
-- [:::no-loc Aspir8:::](https://prom3theu5.github.io/aspirational-manifests/getting-started.html)
+- [Aspir8](https://prom3theu5.github.io/aspirational-manifests/getting-started.html)
