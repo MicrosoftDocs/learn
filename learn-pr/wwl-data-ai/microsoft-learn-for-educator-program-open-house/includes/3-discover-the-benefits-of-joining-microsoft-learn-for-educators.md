@@ -12,10 +12,10 @@ The Assessment Guide provides guidance on the development of formative and summa
 
 Other benefits include:
 
-- Real world labs: Lab seats to provision Azure based labs for your students, enabling hands on experience and skills validation. Note: you'll need to enter your course details in the MSLE portal to gain access to the labs for each class you're teaching each term.
+- Real world labs: Lab seats to provision Azure based labs for your students, enabling hands on experience and skills validation. Note: you need to enter your course details in the MSLE portal to gain access to the labs for each class you're teaching each term.
 - Curriculum integration support: access to a learning path: [Implement certifications in academic programs](https://aka.ms/ImplementationLP) to help you implement industry recognized credentials and academic programs including how to implement Microsoft credentials in new or existing academic degree programs.
-- Strengthen you own technical skills: enroll in Microsoft Virtual Training Days, Microsoft Cloud Skills Challenges, or work with Microsoft training services partners to customize a learning experience, 
-- Practice assessments on Microsoft Learn, as well as free or discounted certification exam vouchers for your own use.
+- Strengthen your own technical skills: enroll in Microsoft Virtual Training Days, Microsoft Cloud Skills Challenges, or work with Microsoft training services partners to customize a learning experience, 
+- Practice assessments on Microsoft Learn, and free or discounted certification exam vouchers for your own use.
 - Microsoft Official Curriculum Virtual Educator Prep Sessions (MOC VEPS): teaching and training insights from Microsoft Certified Trainers and Microsoft Technical Trainers
 - Microsoft Learn for Educators Teams community: Microsoft Teams online network of fellow global educators runs by Microsoft community managers in multiple languages. 
 - Turnkey PR toolkit: guidelines to help you draft a press release highlighting your institution's participation in the Microsoft Learn for Educators program or the successes your students have had because of it and help you raise your profile as you spread the news about how you're enhancing your courses and graduating students with in-demand skills.
