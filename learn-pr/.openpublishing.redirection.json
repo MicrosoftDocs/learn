@@ -196,6 +196,11 @@
         "redirect_document_id": false
       },
       {
+        "source_path_from_root": "/learn-pr/quantum/intro-to-azure-quantum/4-what-is-qsharp.yml",
+        "redirect_url": "/training/modules/intro-to-azure-quantum/3-what-is-azure-quantum",
+        "redirect_document_id": false
+      },
+      {
         "source_path_from_root": "/learn-pr/azure/deploy-elastic-cloud-kubernetes-azure/1-introduction.yml",
         "redirect_url": "/training/modules/aks-monitor/",
         "redirect_document_id": false
@@ -309,7 +314,41 @@
         "source_path_from_root": "/learn-pr/azure/intro-to-azure-content-delivery-network/6-summary.yml",
         "redirect_url": "/training/modules/intro-to-azure-front-door/6-summary",
         "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/n-tier-architecture/index.yml",
+        "redirect_url": "/azure/architecture/guide/architecture-styles/n-tier",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/n-tier-architecture/1-introduction.yml",
+        "redirect_url": "/azure/architecture/guide/architecture-styles/n-tier",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/n-tier-architecture/2-what-is-n-tier-architecture.yml",
+        "redirect_url": "/azure/architecture/guide/architecture-styles/n-tier",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/n-tier-architecture/3-deploy-n-tier-architecture.yml",
+        "redirect_url": "/azure/architecture/guide/architecture-styles/n-tier",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/n-tier-architecture/4-n-tier-architecture-considerations.yml",
+        "redirect_url": "/azure/architecture/guide/architecture-styles/n-tier",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/azure/n-tier-architecture/5-summary.yml",
+        "redirect_url": "/azure/architecture/guide/architecture-styles/n-tier",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/achievements/learn.n-tier-architecture.badge.yml",
+        "redirect_url": "/azure/architecture/guide/architecture-styles/n-tier",
+        "redirect_document_id": false
       }
     ]
   }
-

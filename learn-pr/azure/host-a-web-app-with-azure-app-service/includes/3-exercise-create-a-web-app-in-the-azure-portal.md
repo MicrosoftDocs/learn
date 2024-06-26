@@ -29,7 +29,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Region | East US | The geographical region from which your app is hosted. |
     | **Pricing plans** |
     | Linux Plan | Accept default | The name of the App Service plan that powers your app. By default, the wizard creates a new plan in the same region as the web app. |
-    | Pricing plan | Standard S1 | The pricing tier of the service plan being created. The pricing plan determines the performance characteristics of the virtual servers that power your app and the features to which it has access. Select **Standard S1** in the drop-down. |
+    | Pricing plan | Free F1 | The pricing tier of the service plan being created. The pricing plan determines the performance characteristics of the virtual servers that power your app and the features to which it has access. Select **Free F1** in the drop-down. |
 
     :::image type="content" source="../media/3-create-web-app-dotnet.png" alt-text="Screenshot showing web app creation details.":::
 

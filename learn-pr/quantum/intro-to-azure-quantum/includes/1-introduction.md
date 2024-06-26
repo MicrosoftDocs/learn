@@ -9,7 +9,8 @@ In this module, you learn about the history of quantum computing and the require
 After you complete this module, you're able to:
 
 - Tell the difference between a classical and a quantum computer.
-- Describe the characteristics and applications of quantum computing.
+- Define what quantum computing and quantum bits are.
+- Describe the applications of quantum computing.
 - Define the Azure Quantum service and its components.
 
 ## Prerequisites

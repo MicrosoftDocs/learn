@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.sample-prompts-microsoft-intune
+title: Sample prompts for Microsoft Intune
+metadata:
+  title: Sample prompts for Microsoft Intune
+  description: "Sample prompts for Microsoft Intune"
+  ms.date: 06/21/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-sample-prompts-microsoft-intune.md)]

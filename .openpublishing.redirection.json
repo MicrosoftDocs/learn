@@ -5347,7 +5347,67 @@
     },
     {
       "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-server-client-endpoints/8-understand-security-operations-frameworks-processes-procedures.md",
-      "redirect_url": "learn-pr/wwl-sci/design-security-operations-strategy/2-understand-frameworks-processes-procedures.md",
+      "redirect_url": "/training/modules/design-security-operations-strategy/2-understand-frameworks-processes-procedures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-solutions-secure-microsoft-365/5-knowledge-check.yml",
+      "redirect_url": "/training/modules/design-solutions-secure-microsoft-365/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-solutions-secure-microsoft-365/6-summary.yml",
+      "redirect_url": "/training/modules/design-solutions-secure-microsoft-365/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-solutions-secure-privileged-access/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/design-solutions-secure-privileged-access/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-solutions-secure-privileged-access/8-summary.yml",
+      "redirect_url": "/training/modules/design-solutions-secure-privileged-access/10-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-solutions-securing-server-client-endpoints/8-knowledge-check.yml",
+      "redirect_url": "/training/modules/design-solutions-securing-server-client-endpoints/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-solutions-securing-server-client-endpoints/9-summary.yml",
+      "redirect_url": "/training/modules/design-solutions-securing-server-client-endpoints/10-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-solutions-security-posture-management-hybrid-multicloud-environments/10-summary.yml",
+      "redirect_url": "/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments/11-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-solutions-security-posture-management-hybrid-multicloud-environments/9-knowledge-check.yml",
+      "redirect_url": "/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments/10-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/specify-requirements-securing-saas-paas-iaas-services/3-specify-security-requirements-web-workloads.yml",
+      "redirect_url": "/training/modules/specify-requirements-securing-saas-paas-iaas-services/4-specify-security-requirements-web-workloads",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/specify-requirements-securing-saas-paas-iaas-services/4-specify-security-requirements-containers-container-orchestration.yml",
+      "redirect_url": "/training/modules/specify-requirements-securing-saas-paas-iaas-services/5-specify-security-requirements-containers-container-orchestration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/specify-requirements-securing-saas-paas-iaas-services/5-knowledge-check.yml",
+      "redirect_url": "/training/modules/specify-requirements-securing-saas-paas-iaas-services/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/specify-requirements-securing-saas-paas-iaas-services/6-summary.yml",
+      "redirect_url": "/training/modules/specify-requirements-securing-saas-paas-iaas-services/8-summary",
       "redirect_document_id": false
     },
     {
@@ -41357,6 +41417,51 @@
     {
       "source_path": "learn-pr/wwl-data-ai/receive-data-with-azure-data-share-transforming-with-azure-data-factory/13-summary.md",
       "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/index.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/1-introduction.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/2-stereokit-overview.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/3-exercise-get-started-stereokit.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/4-stereokit-ink-application-overview.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/5-understand-stereokit-ink-application.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/6-exercise-install-test-stereokit-ink-application.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/7-knowledge-check.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-stereokit/8-summary.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
       "redirect_document_id": false
     }
   ]
