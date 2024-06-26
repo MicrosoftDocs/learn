@@ -34,7 +34,7 @@ When you want to migrate a workload, your cloud adoption team must ensure that a
 Before you migrate, you must [design the intended migrated state of your workload](/azure/cloud-adoption-framework/migrate/assess/architect#know-when-to-change-your-architecture). 
 
 Consider [common design assumptions](/azure/cloud-adoption-framework/migrate/assess/architect#base-architecture-design-on-common-assumptions) to design your:
-- Architecture for a [landing zone](/azure/cloud-adoption-framework/migrate/assess/architect#design-architecture-for-a-landing-zone) during the Ready phase of the Migrate methodology.
+- Architecture for your application [landing zone](/azure/cloud-adoption-framework/migrate/assess/architect#design-architecture-for-a-landing-zone), as part of your Azure landing zone implementation.
 - [Workload network architecture](/azure/cloud-adoption-framework/migrate/assess/architect#design-workload-network-architecture) with resources, like load balancers and other application-delivery resources.
 - [Workload dependencies](/azure/cloud-adoption-framework/migrate/assess/architect#design-workload-dependencies) to account for communication between components.
 - [Confidential computing](/azure/cloud-adoption-framework/migrate/assess/architect#prepare-for-adopting-confidential-computing).
