@@ -10,6 +10,4 @@ This module continues the Tailwind story as the migration team prepares to migra
 
 The Plan module used Azure Migrate to rationalize the company's digital estate and used Azure DevOps to create a backlog to guide the migration. Now the migration team can migrate the existing datacenters to the cloud. The team chose the Cloud Adoption Framework migrate methodology for their migration.
 
-:::image type="content" source="../media/methodology-effort-only.png" alt-text="Diagram of the three common task groups in a migration process." border="false":::
-
 The remaining units of this module demonstrate processes, tools, and approaches that your team can use to successfully migrate your workloads to the cloud.
