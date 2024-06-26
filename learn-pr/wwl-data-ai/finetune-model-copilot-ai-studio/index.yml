@@ -34,9 +34,9 @@ subjects:
 units:
 - learn.wwl.finetune-model-copilot-ai-studio.introduction
 - learn.wwl.finetune-model-copilot-ai-studio.understand-finetune
+- learn.wwl.finetune-model-copilot-ai-studio.prepare-data
 - learn.wwl.finetune-model-copilot-ai-studio.finetune-model
-- learn.wwl.finetune-model-copilot-ai-studio.evaluate-model
-- learn.wwl.finetune-foundation-model-with-azure-machine-learning.exercise
+- learn.wwl.finetune-model-copilot-ai-studio.exercise
 - learn.wwl.finetune-model-copilot-ai-studio.knowledge-check
 - learn.wwl.finetune-model-copilot-ai-studio.summary
 badge:
