@@ -57,13 +57,13 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
 
 1. Select **Alerts**.
 
-1. Select the first alert on the list **86e52569**.
-    1. This alert deals with Potential data theft - Employee Departure. Under User details, you can gain more context on why the user was identified as a high impact user by selecting **View all details**. Review the user details then select the **X** to close the User details window.
+1. Select the first alert on the list, alert ID: **86e52569**.
+    1. This alert is associated with the policy, 'Potential data theft - Employee Departure.' Under User details, you can gain more context on why the user was identified as a high impact user by selecting **View all details**. Review the user details then select the **X** to close the User details window.
     1. The current page shows **All risk factors**. If you scroll down, there are even more details to consume.
     1. Select the **Activity explorer** tab, to quickly review a timeline of potentially risky activity and filter for specific risk activities associated with the alert. Select, the first activity on the list, labeled **Files accessed on SPO**. Review the information provided then select **X** to close the window.
     1. Select the **User activity tab**. Here you view a scatter plot, over a 1 month, 3 month, or 6 month timeline; alongside details of each event.
 
-1. With Copilot for Security, you can gain a comprehensive summary of an alert – in the single click of a button! Select **Summarize**.
+1. With Copilot for Security, you can gain a comprehensive summary of an alert – in the single click of a button! From the top of the alert page, select **Summarize**.
     1. This comprehensive summary provides key details, including alert severity, user details like their HR offboarding event and much more! 
     1. These summaries help accelerate investigations by helping you quickly gain context into user intent and timing of risky activities, enabling you to tailor your investigation with specific dates in mind and quickly pinpoint sensitive files at risk.
 
@@ -80,14 +80,14 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
 1. Investigating DLP alerts can be overwhelming due to the large number of sources to analyze, including apps, cloud services, email, endpoints and chat, and the varying rules and conditions of a policy.
 
 1. Select the alert labeled, **DLP policy match for document cardholder transaction Log.xlsx in OneDrive**.
-    1. The alert page opens to the **Details** page The details tab provides additional details, such as name of alert, location, and user involved. You can expand this view by selecting **View details**.
+    1. A side panel opens listing some details of this alert, including the alert status, severity, the DLP policy match, location, and user involved. From the bottom of the page, select **View details**. This opens a new browser tab.
     1. Select the **Events** tab. For the selected event, you can view event details, impacted entities and more.
     1. Select the **Classifiers** tab. Under classifiers, you can view the specific sensitive information types or trainable classifiers that were matched.
     1. You can also select File Activity. There is lots of information to analyze.
+    1. Close this browser tab, but be sure to keep the 'Alerts|Microsoft Purview' tab open.
 
 1. Now view the information that Copilot can generate with the click of a button.
-    1. Return to the Alerts page and select the same alert. **DLP policy match for document cardholder transaction Log.xlsx in OneDrive**.
-    1. Select **Get a summary from Security Copilot**.
+    1. From the Alerts|Microsoft Purview tab, which is showing the side panel with information about the alert, select **Get a summary from Security Copilot**.
     1. This comprehensive summary provides key details, including policy rules, source, files involved and more. Additionally, the summary pulls the user risk levels from Insider Risk Management, providing integrated insights across data security solutions. These summaries provide you with a better starting point for further investigation.
 
 1. From the left navigation panel, select **Home** to return the Microsoft Purview portal. You'll return to this page in the next task.
@@ -156,15 +156,17 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
     1. Enter a search name.
     1. Enter a description.
     1. Select **Create**.
-1. Add a data source – in this case, you want to search the group **Sales**.
-1. From the box labeled natural language prompt:
-    1. Select **View prompts**. This is a great starting point. You could look at suggested prompts to determine how to craft a natural language query for suggested prompts. For example, Find all emails containing the words budget and finance and have attachments. 
-    1. For this example, however, you know what you are looking for. You’ve been told that you need to find all conversations related to a recent acquisition. Enter **Find all conversations that contain the keywords; acquisition, stock, Bitdefender, Frostvision, offshore**.
-    1. When you enter your natural language prompt, Copilot may work to refine the query to ensure a more accurate query output. Select **Refine** then **Accept**.
+1. Add a data source
+    1. Select **Add data sources**.
+    1. In the search bar, enter **Sales**.
+    1. From the search results, select **Sales**.
+    1. From the bottom of the page, select **Save**.
+1. Now use Copilot draft a query in natural language. Select **Draft a query with Copilot**.
+    1. From the box labeled natural language prompt, select **View prompts**. This is a great starting point. You could look at suggested prompts to determine how to craft a natural language query for suggested prompts. For example, Find all emails containing the words budget and finance and have attachments.
+    1. For this example, however, you know what you are looking for. You’ve been told that you need to find all conversations related to a recent acquisition. Use copy/paste to enter **Find all conversations that contain the keywords; acquisition, stock, Bitdefender, Frostvision, offshore**.
+    1. When you enter your natural language prompt, you can have Copilot refine the query to ensure a more accurate query output. Select **Refine** then **Accept**.
     1. Select **Generate KeyQL**. Copilot for Security refines the prompt and then in a simple click, can generate the query within seconds!
     1. The resulting query is displayed in the Keyword Query Language  (KeyQL) result text box. Select **CopyKeyQL**, then paste it the KeyQL text box. From here, you can run the query. In this simulation, you won't run the query.
-
-1. A query can be generated manually with the Condition builder, but it can be more time-consuming. Also, if you input an incorrect property or condition, it can mean the difference between a right or wrong result – meaning you have to start over and further delay the investigation.
 
 #### Review
 
