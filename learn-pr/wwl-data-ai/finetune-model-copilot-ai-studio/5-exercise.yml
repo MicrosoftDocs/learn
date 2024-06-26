@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.finetune-model-copilot-ai-studio.exercise
+title: Exercise - Fine-tune a foundation model
+metadata:
+  title: Exercise - Fine-tune a foundation model
+  description: "Exercise - Fine-tune a foundation model using the Azure Machine Learning studio."
+  ms.date: 6/26/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise.md)]
