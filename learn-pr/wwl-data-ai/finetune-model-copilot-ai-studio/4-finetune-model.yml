@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.finetune-model-copilot-ai-studio.finetune-model
-title: Explore fine-tuning foundation models in Azure Machine Learning
+title: Explore fine-tuning language models in Azure AI Studio
 metadata:
-  title: Explore fine-tuning foundation models in Azure Machine Learning
-  description: "Explore fine-tuning foundation models from the model catalog in Azure Machine Learning"
+  title: Explore fine-tuning foundation models in Azure AI Studio
+  description: "Explore fine-tuning foundation models from the model catalog in Azure AI Studio"
   ms.date: 6/26/2024
   author: madiepev
   ms.author: madiepev
