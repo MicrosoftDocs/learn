@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.enhance-endpoint-security-microsoft-intune-copilot
 metadata:
-  title: Enhance Endpoint Security with Microsoft Intune and Microsoft Copilot for Security
+  title: Enhance endpoint security with Microsoft Intune and Microsoft Copilot for Security
   description: This learning path will teach you the essentials of Microsoft Intune, advanced threat detection and response with Microsoft Copilot for Security, and how to optimize the integration between Intune and Copilot. You'll gain skills in device management, threat protection, and policy enforcement.
   ms.date: 06/27/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: learning-path
-title: Enhance Endpoint Security with Microsoft Intune and Microsoft Copilot for Security
+title: Enhance endpoint security with Microsoft Intune and Microsoft Copilot for Security
 prerequisites: |
   - Basic understanding of IT security principles.
   - Familiarity with Microsoft Intune.
