@@ -37,7 +37,7 @@ subjects:
 units:
 - learn.azure.terraform-introduction-to-infrastructure-as-code.introduction
 - learn.azure.terraform-introduction-to-infrastructure-as-code.what-infrastructure-code
-- learn.azure.terraform-introduction-to-infrastructure-as-code.what-azure-resource-manager
+- learn.azure.terraform-introduction-to-infrastructure-as-code.azure-resource-manager-and-terraform-state
 - learn.azure.terraform-introduction-to-infrastructure-as-code.what-terraform
 - learn.azure.terraform-introduction-to-infrastructure-as-code.how-terraform-works
 - learn.azure.terraform-introduction-to-infrastructure-as-code.when-use-terraform

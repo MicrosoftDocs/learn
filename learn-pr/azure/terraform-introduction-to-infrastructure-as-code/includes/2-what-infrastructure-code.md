@@ -4,6 +4,7 @@ You've been asked to evaluate whether infrastructure as code might be a valuable
 - Azure CLI
 - Azure PowerShell
 - Azure Resource Manager templates (JSON and Bicep)
+- Terraform
 
 You're looking for a repeatable option, and you need to decide which technology to use to deploy your Azure infrastructure.
 
@@ -19,7 +20,7 @@ You can think of infrastructure as code as being like the instruction manual for
 
 Infrastructure as code is the process of automating your infrastructure provisioning. It uses a declaritive coding language and versioning system that's similar to what's used for source code. When you create an application, your source code generates the same result each time it's compiled. In a similar manner, infrastructure-as-code deployments are automated, consistent, and repeatable. Infrastructure as code can automate the deployments of your resources, like virtual networks, virtual machines, applications, storage and even GitHub repositories or user accounts.
 
-:::image type="content" source="../media/iac.svg" alt-text="Diagram that shows the infrastructure as code process using a source code repository with a template that deploys Azure resources." border="false" :::
+:::image type="content" source="../media/iac.svg" alt-text="Diagram that shows the infrastructure as code process using a source code repository with a module that deploys Azure resources." border="false" :::
 
 If you recall the instruction manual for the new toy, there are multiple ways to write the instruction manual. One option is to detail each step of the build process. Another option is to show an exploded view of the pieces and parts needed to assemble the toy. Later in this unit, you'll learn about the differences between imperative and declarative code and how they relate to your company's instruction manuals.
 
@@ -121,16 +122,16 @@ You can use an imperative approach to fully automate resource provisioning, but 
 
 ### Declarative code
 
-In Azure, a declarative code approach is accomplished by using  _templates_. Many types of templates are available to use, including:
+In Azure, a declarative code approach is accomplished by using templates or modules. Many types are available to use, including:
 
 - Terraform, by HashiCorp
 - Bicep
 - ARM JSON
 
 > [!NOTE]
-> This module focuses on using Terraform templates.
+> This module focuses on using Terraform modules.
 
-Take a look at the following example of a Terraform template that configures a storage account. The configuration of the storage account matches the Azure CLI example.
+Take a look at the following example of a Terraform module that configures a storage account. The configuration of the storage account matches the Azure CLI example.
 
 ```hcl
 resource "azurerm_resource_group" "example" {
@@ -152,4 +153,4 @@ resource "azurerm_storage_account" "example" {
 
 The resource blocks defines the resource group and storage account configuration. The `azurerm_storage_account` block contains the name, location, and properties of the storage account, including its SKU and the kind of account.
 
-You might notice that the Terraform template doesn't specify how to deploy the storage account. It specifies only what the storage account needs to look like. The actual steps that are executed behind the scenes to create this storage account or to update it to match the specification are left for the Terraform CLI and the azurerm Terraform provider to decide.
+You might notice that the Terraform module doesn't specify how to deploy the storage account. It specifies only what the storage account needs to look like. The actual steps that are executed behind the scenes to create this storage account or to update it to match the specification are left for the Terraform CLI and the azurerm Terraform provider to decide.

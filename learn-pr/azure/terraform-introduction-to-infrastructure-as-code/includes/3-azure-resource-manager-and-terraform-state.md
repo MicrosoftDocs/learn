@@ -14,4 +14,11 @@ Terraform state is a json based representation of the resources you are managing
 
 ## Comparison of Azure Resource Manager and Terraform State
 
-| Azure Resource Manager | Terraform State |  
+| Item | Azure Resource Manager | Terraform State |
+| --- | --- | --- |
+| State file management | Not required, state is stored in Azure | State file must be stored and secured |
+| Support for other cloud providers and APIs | Only works with Azure and now Entra ID | Works with any cloud or API that has a provider built for it |
+| Lifecycle (create, update, delete) | Deploment stacks now allow managing the full life cycle | Terraform has always been able to manage the full lifecycle |
+| Drift detection / plan | What If allows checking for updates | Terraform plan enables drift detection and planning |
+
+
