@@ -10,9 +10,9 @@ You may have heard of Terraform Enterprise or Terraform Cloud. These are separat
 
 ## Terraform providers
 
-In the preceding unit, you learned that HCL is a domain-specific language, which means that it's designed for a specific scenario or _domain_. HCL is built to make it easy to deploy and configure any resources.
+In the preceding unit, you learned that HCL is a domain-specific language, which means that it's designed for a specific scenario or _domain_. HCL is built to make it easy to deploy and configure any resource in any cloud or service with Terraform.
 
-How does Terraform know about the specifics of Azure though? And how about Azure DevOps, GitHub, etc. The Terraform CLI tool doesn't know anything about Azure, it only knows how to manage state and plan deployments. Terraform providers are responsible for bridging the gap between the Terraform CLI and the target API, in our case Azure. Terraform has a concept of plugins and providers are a plugin. Providers are loaded into Terraform during the init phase based on the requirements in your HCL code.
+How does Terraform know about the specifics of Azure though? And how about Azure DevOps, GitHub, etc for that matter. The Terraform CLI tool doesn't know anything about Azure or any other cloud or service, it only knows how to manage state and plan deployments. Terraform providers are responsible for bridging the gap between the Terraform CLI and the target API, in our case Azure. Terraform has a concept of plugins and providers are a type of plugin. Providers are loaded into the Terraform CLI during the init phase based on the requirements in your HCL code.
 
 Microsoft curates a number of providers in collaboration with HashiCorp and the community. These include:
 
@@ -22,7 +22,11 @@ Microsoft curates a number of providers in collaboration with HashiCorp and the 
 * [azuredevops](https://registry.terraform.io/providers/microsoft/azuredevops): This provider is used to manage all aspects of Azure DevOps, including repos, pipelines and projects.
 * [github](https://registry.terraform.io/providers/integrations/github): This provider is used to manage all aspects of GitHub, including organizations, repositories and actions.
 
-When you deploy a resource or series of resources to Azure, you submit the Bicep template to Resource Manager, which still requires JSON templates. The tooling that's built into Bicep converts your Bicep template into a JSON template. This process is known as _transpilation_, which essentially treats the ARM template as an intermediate language. The conversion happens automatically when you submit your deployment, or you can do it manually.
+The Terraform CLI interacts with providers via a standard interface. This enables the Terraform CLI to build dependency graphs and manage state without needing to be aware of the provider implementation details.
+
+Providers consist of _resources_ and _data sources_. Resources are managed by Terraform. Data sources are used to read the attributes of a resource without managing it.
+
+It is possible to write your own providers to work with internal API endpoints, so you can essentially manage anything with Terraform. Providers must be written in the Go programming language.
 
 :::image type="content" source="../media/plugin.png" alt-text="Diagram that shows the Terraform CLI plugin architecture." border="false" :::
 
