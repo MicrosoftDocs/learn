@@ -35,11 +35,11 @@ In the previous unit, you learned that the Azure Developer CLI creates a .NET As
 > [!IMPORTANT]
 > The .NET Aspire manifest is not the same as a Kubernetes manifest file, even though both can be JSON files. The schema used is different.
 
-A key task when you deploy a .NET Aspire solution to any Kubernetes cluster is the translation of the .NET Aspire manifest into a Kubernetes manifest. It's possible to complete this task manually, but it requires a deep understanding of both formats and can be time consuming. If you want help with this translation, you can use the **:::no-loc Aspir8:::** tool.
+A key task when you deploy a .NET Aspire solution to any Kubernetes cluster is the translation of the .NET Aspire manifest into a Kubernetes manifest. It's possible to complete this task manually, but it requires a deep understanding of both formats and can be time consuming. If you want help with this translation, you can use the **::no-loc text="Aspir8"::** tool.
 
-## Using :::no-loc Aspir8::: to deploy
+## Using :::no-loc text="Aspir8"::: to deploy
 
-You can obtain :::no-loc Aspir8::: from NuGet by running this command
+You can obtain :::no-loc text="Aspir8"::: from NuGet by running this command
 
 ```dotnetcli
 dotnet tool install -g aspirate --prerelease
