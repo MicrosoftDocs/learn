@@ -31,13 +31,13 @@ Selecting either Teams or Viva Engage as a location automatically excludes the o
 
 1. Navigate to **Retention polices** in either the Microsoft Purview portal or Microsoft Purview compliance portal:
 
-   - **Microsoft Purview portal**: [Sign in to the Microsoft Purview portal](https://purview.microsoft.com/) > **Data Lifecycle Management** card > **Policies** > **Retention policies**.
+   - **Microsoft Purview portal**: [Sign in to the Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true) > **Data Lifecycle Management** card > **Policies** > **Retention policies**.
 
         If you don't see the **Data Lifecycle Management** card, select **View all solutions** and find **Data Lifecycle Management** under the **Data Governance** section.
 
         :::image type="content" source="../media/purview-portal-data-lifecycle-management-card.png" alt-text="Screenshot showing the Data Lifecycle card in the Microsoft Purview portal.":::
 
-   - **Microsoft Purview compliance portal**: [Sign in to the Microsoft Purview compliance portal](https://compliance.microsoft.com/) > **Solutions** > **Data lifecycle management** > **Microsoft 365** > **Retention Policies**.
+   - **Microsoft Purview compliance portal**: [Sign in to the Microsoft Purview compliance portal](https://compliance.microsoft.com/?azure-portal=true) > **Solutions** > **Data lifecycle management** > **Microsoft 365** > **Retention Policies**.
 
 1. Select **New retention policy** to start the **Create retention policy** configuration, and name your new retention policy.
 

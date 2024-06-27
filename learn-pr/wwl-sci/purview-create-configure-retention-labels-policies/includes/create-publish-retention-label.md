@@ -24,13 +24,13 @@ Creating retention labels involves defining retention or deletion periods and sp
 
 1. Navigate to **File plan** in either the Microsoft Purview portal or Microsoft Purview compliance portal:
 
-   - **Microsoft Purview portal**: [Sign in to the Microsoft Purview portal](https://purview.microsoft.com/) > **Records management** card > **File plan**.
+   - **Microsoft Purview portal**: [Sign in to the Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true) > **Records management** card > **File plan**.
 
         - If you don't see the **Records management** card, select **View all solutions** and find **Records management** under the **Risk & Compliance** section.
 
         :::image type="content" source="../media/purview-portal-records-management-card.png" alt-text="Screenshot showing the Records Management card in the Microsoft Purview portal.":::
 
-   - **Microsoft Purview compliance portal**: [Sign in to the Microsoft Purview compliance portal](https://compliance.microsoft.com/) > **Solutions** > **Records management** > **File plan**.
+   - **Microsoft Purview compliance portal**: [Sign in to the Microsoft Purview compliance portal](https://compliance.microsoft.com/?azure-portal=true) > **Solutions** > **Records management** > **File plan**.
 
 1. Select **Create a label** to start the **Create retention label** configuration, and name your new retention label.
 
@@ -64,7 +64,7 @@ Creating retention labels involves defining retention or deletion periods and sp
 
 After creating the label, you need to publish them through a retention label policy, which makes them available to users in your organization to classify and manage content.
 
-1. Return to **File plan** from either the [Microsoft Purview portal](https://purview.microsoft.com/) or [Microsoft Purview compliance portal](https://compliance.microsoft.com/).
+1. Return to **File plan** from either the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true) or [Microsoft Purview compliance portal](https://compliance.microsoft.com/?azure-portal=true).
 
 1. Select the retention label you'd like to publish and select the **Publish labels** icon (:::image type="icon" source="../media/publish-retention-label-icon.png":::) to start the configuration to publish your retention label.
 

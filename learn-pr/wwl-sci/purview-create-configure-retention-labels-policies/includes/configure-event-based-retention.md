@@ -64,11 +64,11 @@ When an event occurs, such as a product reaching the end of its lifecycle, creat
 
 - Navigate to **Events** in either the Microsoft Purview portal or Microsoft Purview compliance portal:
   
-  - **Microsoft Purview portal**: [Sign in to the Microsoft Purview portal](https://purview.microsoft.com/) > **Records management** card > **Events**.
+  - **Microsoft Purview portal**: [Sign in to the Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true) > **Records management** card > **Events**.
 
     - If you don't see the **Records management** card, select **View all solutions** and find **Records management** under the **Risk & Compliance** section.
   
-  - **Microsoft Purview compliance portal**: [Sign in to the Microsoft Purview compliance portal](https://compliance.microsoft.com/) > **Solutions** > **Records management** > **Events**.
+  - **Microsoft Purview compliance portal**: [Sign in to the Microsoft Purview compliance portal](https://compliance.microsoft.com/?azure-portal=true) > **Solutions** > **Records management** > **Events**.
 
 - Select **+ Create** to create an event.
 
