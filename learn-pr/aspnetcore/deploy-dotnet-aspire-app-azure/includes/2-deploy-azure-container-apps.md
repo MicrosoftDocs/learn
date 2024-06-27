@@ -13,7 +13,7 @@ More complicating factors can be introduced when you need to deploy to several d
 To make deployment easier, .NET Aspire includes automated deployment tools that help you upload and run all the containers required:
 
 - **Visual Studio**: When you right-click on the app host project and select **Publish**, you can use a wizard to deploy the app.
-- **Azure Developer CLI (azd)**: You can use this command line tool to deploy many types of solution from a local development environment into various Azure services. The tool supports deploying .NET Aspire solutions into Azure Container Services and Azure Kubernetes Services.
+- **Azure Developer CLI (azd)**: You can use this command line tool to deploy many types of solution from a local development environment into various Azure services. By default `azd` supports deploying .NET Aspire solutions to Azure Container Apps.
 
 ### .NET Aspire deployment manifest files
 
@@ -25,7 +25,7 @@ When you use Visual Studio or azd to deploy an app, manifest files are created f
 
 A cloud-native application, whether it uses .NET Aspire or not, runs in containers. Each container image usually maps to one microservice or one backing service. To run them, you need a service that hosts containers in the cloud. Azure Container Apps is one such service.
 
-Azure Container Apps is easy to use because much of the underlying technology is automated. You can deploy and configure a microservice with a relatively small amount of code. Once the microservice is running, it automatically scales in response to traffic, processing load, memory load, or other values.
+Azure Container Apps is designed for simplicity, with its underlying infrastructure being managed for you. This allows you to deploy and configure your microservices with minimal code. Once the microservice is deployed, it will scale dynamically based on factors such as traffic, processing load, memory load, and other metrics.
 
 > [!TIP]
 > Azure Container Apps includes the KEDA automatic scaler, so you can use any metric supported by KEDA in your customized scaling regime.
