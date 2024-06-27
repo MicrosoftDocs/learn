@@ -1,8 +1,8 @@
 In this exercise, you create a custom promptbook from an existing session and then run that promptbook.
 
 > [!NOTE]
-> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps. 
-:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Image of pop-up screen indicating that this feature is not available within the simulation.":::
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.
+>:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Image of pop-up screen indicating that this feature is not available within the simulation.":::
 
 ### Exercise
 
