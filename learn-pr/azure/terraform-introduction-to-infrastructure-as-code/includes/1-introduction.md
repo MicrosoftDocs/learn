@@ -12,12 +12,12 @@ You've been asked to evaluate whether infrastructure as code might be a valuable
 
 ## What will we be doing?
 
-In this module, you'll learn about the concept of infrastructure as code and its benefits. You'll understand the purpose of Bicep as an infrastructure-as-code language and understand how it works. You'll find answers to these questions:
+In this module, you'll learn about the concept of infrastructure as code and its benefits. You'll understand the purpose of Terraform as an infrastructure-as-code language and understand how it works. You'll find answers to these questions:
 
 - What is infrastructure as code?
 - How can infrastructure as code help you automate resource provisioning?
-- What is Bicep and how does it work?
-- When should you use Bicep instead of other tooling options?
+- What is Terraform and how does it work?
+- When should you use Terraform instead of other tooling options?
 
 ## What is the main goal?
 
