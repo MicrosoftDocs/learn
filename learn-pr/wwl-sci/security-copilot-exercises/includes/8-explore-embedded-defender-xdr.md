@@ -83,7 +83,7 @@ This task is complex and requires the involvement of more senior analysts. In th
     1. The promptbook page opens and asks for the Defender Incident ID. Enter **30342** then select **Run**.
     1. Review the information provided. By pivoting to the standalone experience and running the promptbook, the investigation is able to invoke capabilities from a broader set security solution, beyond just Defender XDR, based on the plugins enabled.
 
-1. Select the **box icon ![box icon](../media/box-icon.png)** next to the pin icon to select all the responses, then select the **Pin icon ![pin icon](../media/pin-icon.png)** to save those responses to the pin board.
+1. Select the **box icon ![box icon](../media/box-icon.png)** next to the pin icon to select all the prompts and and the corresponding responses, then select the **Pin icon ![pin icon](../media/pin-icon.png)** to save those responses to the pin board.
 
 1. The pin board opens automatically. The pin board holds your saved prompts and responses, along with a summary of each one. You can open and close the pin board by selecting the **pin board icon ![pin board icon](../media/pinboard-icon.png)**.
 

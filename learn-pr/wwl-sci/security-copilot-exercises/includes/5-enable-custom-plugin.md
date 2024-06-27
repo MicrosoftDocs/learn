@@ -48,19 +48,19 @@ In this task, you upload the file named, KQL_DefenderExample.yaml, that you down
 
 1. From the prompt bar on the Copilot landing page, select the **sources** icon.
 
-1. On the Manage sources window, scroll down until you get to the Custom plugins. Select the **sources** icon displayed on the far right of where it says Custom. This opens the Add a plugin window.
+1. On the Manage sources window, scroll down until you get to the Custom plugins. Select the **Add plugin ![add plugin button](../media/add-plugin-button.png)** button. This opens the Add a plugin window.
 
 1. In the Add a plugin window, ensure the setting for Who can use this plugin is set to **Just me**.
 
 1. For this exercise, select **Copilot for Security Plugin** as this is the format for the .yaml file of your custom plugin.
 
-1. From the upload box that appears, select **Upload file**, then select the file you previously downloaded to your local computer, **KQL_DefenderExample.yaml**
+1. From the upload box that appears, select **Upload file**, then select the file you previously downloaded to your local computer, **KQL_DefenderExample.yaml** then select **Add**.
 
 1. On the custom plugins page, the plugin has been added and is enabled. Note the private tag.
 
 1. Select the **Settings** icon. The settings icon shows basic plugin information. Note the name and brief description. This is a basic sample plugin so there are no configuration parameters to configure. If there were API keys or sign-in credentials required for the plugin, this is where they would be configured, like the exercise where you configured the Microsoft Sentinel plugin. Here you can also delete the plugin. Select Cancel to exit the page.
 
-1. Exit the manage sources window.
+1. Close the manage sources window by selecting the **X** on the top right of the window.
 
 #### Task:  Test the custom plugin
 
@@ -70,7 +70,7 @@ In this task, you verify the capability enabled by the plugin can be accessed fr
 
 1. Select **See all system capabilities**.
 
-1. Scroll down until you get to **My sample Defender KQL** plugin. Listed below the plugin name is the capability (prompt) enabled by the plugin. Select **Get Latest Emails by Recipient** to run the prompt. For future reference you can search by this capability (prompt) name.
+1. Scroll all the way down until you get to **My sample Defender KQL** plugin. Listed below the plugin name is the capability (prompt) enabled by the plugin. Select **Get Latest Emails by Recipient** to run the prompt. For future reference you can search by this capability (prompt) name.
 
 1. Enter email address of a user whose email you need to audit: **nosv32@woodgrove.ms**.
 
