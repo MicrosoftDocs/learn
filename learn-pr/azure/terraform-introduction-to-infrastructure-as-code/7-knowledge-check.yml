@@ -59,7 +59,7 @@ quiz:
     - content: Management group.
       isCorrect: false
       explanation: Incorrect. A management group is a logical container for grouping Azure subscriptions.
-  - content: Which of these option correctly describes the Terraform CLI workflow?
+  - content: Which of these options correctly describes the Terraform CLI workflow?
     choices:
     - content: Init > Plan > Write > Apply
       isCorrect: false
