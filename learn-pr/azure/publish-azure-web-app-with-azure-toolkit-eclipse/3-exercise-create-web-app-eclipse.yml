@@ -8,6 +8,8 @@ metadata:
   author: cephalin
   ms.author: cephalin
   ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
 durationInMinutes: 10
 azureSandbox: true
 content: |
