@@ -30,9 +30,9 @@ Copilot can tell that something is a prompt or an instruction if you:
 
 ## Accepting suggestions
 
-What you get back from Copilot is a *suggestion*. Text that shows itself as grey code, if you use black as your text color. To accept the suggestion, you need to press the <kbd>Tab</kbd> key.
+What you get back from Copilot is a *suggestion*, or text that shows itself as gray code, if you use black as your text color. To accept the suggestion, you need to press the <kbd>Tab</kbd> key.
 
-Copilot might suggest more than one thing. In which case, you can cycle between suggestions by using <kbd>Ctrl + Enter</kbd>, and select the most appropriate one.
+Copilot might suggest more than one thing. In this case, you can cycle between suggestions by using <kbd>Ctrl + Enter</kbd>, and select the most appropriate one.
 
 ## How to set up GitHub Copilot
 

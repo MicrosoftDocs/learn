@@ -1,4 +1,4 @@
-In this module, we looked at how GitHub Codespaces can significantly improve the software development lifecycle. Offering features that range from creating a repository from a GitHub template to adding animations with live suggestions. GitHub Codespaces allows you to customize your coding experience and GitHub Copilot guides you in each step of the way.
+In this module, we looked at how GitHub Codespaces can significantly improve the software development lifecycle, offering features that range from creating a repository from a GitHub template to adding animations with live suggestions. GitHub Codespaces allows you to customize your coding experience and GitHub Copilot guides you in each step of the way.
 
 After finishing this module, you should be able to:
 
