@@ -8,9 +8,9 @@ In this exercise, you'll use the Azure Developer CLI to deploy the eShop .NET As
 The prerequisites for .NET Aspire are:
 
 - .NET 8
-- Visual Studio 2022 Preview
+- Visual Studio 2022
 - Docker Desktop or Podman
-- .NET Aspire workload in Visual Studio
+- .NET Aspire workload
 
 If you've already got these packages installed, you can skip ahead to begin working with Azure Storage.
 
@@ -40,7 +40,7 @@ Follow this [Docker Desktop](https://www.docker.com/products/docker-desktop/) li
 
 Open the Docker Desktop application and accept the service agreement.
 
-### Install the .NET Aspire workload in Visual Studio
+### Install the .NET Aspire workload
 
 Install the .NET Aspire workload using the .NET CLI:
 
