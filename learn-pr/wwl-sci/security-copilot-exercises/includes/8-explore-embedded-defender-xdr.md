@@ -38,7 +38,7 @@ This exercise should take approximately **30** minutes to complete.
 
 1. Copilot  automatically generates an **Alert summary**, which provides a wealth of information for further analysis. For example, the summary identifies suspicious activity, it identifies data collection activities, credential access, malware, discovery activities, and more.
 
-1. There's a lot of information on the page, so to get a better view of this alert, select **Open alert page**. It's on the third panel of the on the alert page, next to the incident graph and below the alert title.
+1. There's a lot of information on the page, so to get a better view of this alert, select **Open alert page**. It's on the third panel on the alert page, next to the incident graph and below the alert title.
 
 1. On the top of the page, is card for the device parkcity-win10v. Select the ellipses and note the options. Select **Summarize**. Copilot generates a **Device summary**. It's worth nothing that there are many ways you can access device summary and this is just one convenient method. The summary shows the device is a VM, identifies the owner of the device, it shows its compliance status against Intune policies, and more.
 
@@ -65,7 +65,7 @@ This exercise should take approximately **30** minutes to complete.
 1. From the left side of the screen select **Files**.
 1. Select the first item from the list with the entity named **Rubeus.exe**.
 1. From the window that opens, select **Analyze**. Copilot generates a summary.
-1. Note the detailed file analysis that Copilot generates.
+1. Review the detailed file analysis that Copilot generates.
 1. Close the file analysis window.
 
 
@@ -85,7 +85,7 @@ This task is complex and requires the involvement of more senior analysts. In th
 
 1. Select the **box icon ![box icon](../media/box-icon.png)** next to the pin icon to select all the responses, then select the **Pin icon ![pin icon](../media/pin-icon.png)** to save those responses to the pin board.
 
-1. The pin board opens automatically. The pin board holds your saved prompts and responses, along with a summary of each one.  You can open and close the pin board by selecting the **pin board icon ![pin board icon](../media/pinboard-icon.png)**.
+1. The pin board opens automatically. The pin board holds your saved prompts and responses, along with a summary of each one. You can open and close the pin board by selecting the **pin board icon ![pin board icon](../media/pinboard-icon.png)**.
 
 1. From the top of the page, select **Share** to view your options. By sharing the incident via a link or email, people in your organization with Copilot access can view this session. Close the window by selecting the **X**.
 
