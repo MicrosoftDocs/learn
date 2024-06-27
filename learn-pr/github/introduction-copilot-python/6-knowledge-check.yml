@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Review the differences in GitHub Copilot and Prompt engineering"
-  ms.date: 8/23/2023
+  ms.date: 06/25/2024
   author: bethanyjep
   ms.author: bethanycheum
   ms.topic: unit
@@ -15,12 +15,12 @@ quiz:
   questions:
   - content: "How does GitHub Copilot work?"
     choices:
-    - content: "GitHub Copilot uses prompts, natural language text, that you type, and it provides suggestions based on what you type."
+    - content: "GitHub Copilot uses prompts and natural language text that you type to provide coding suggestions."
       isCorrect: true
-      explanation: "Correct! Trained on billions of lines of code, GitHub Copilot turns natural language prompts into coding suggestions across dozens of languages."
+      explanation: "Correct! GitHub Copilot is trained on billions of lines of code. It turns natural language prompts into coding suggestions across dozens of languages."
     - content: "GitHub Copilot uses lights, that you type, and it provides suggestions based on what you type."
       isCorrect: false
-      explanation: "GitHub Copilot uses prompts, natural language text, that you type, and it provides suggestions based on what you type."
+      explanation: "GitHub Copilot uses prompts and natural language text that you type to provide coding suggestions."
     - content: "GitHub Copilot uses radio language, that you type, and it provides suggestions based on what you type."
       isCorrect: false
       explanation: "GitHub Copilot doesn't use radio language."
@@ -31,19 +31,19 @@ quiz:
       explanation: "Incorrect. GitHub Copilot currently costs 10 dollars per month, except for certain users. "
     - content: "No, it’s a service you can sign up for that’s free for students to use but currently costs 10 dollars per month."
       isCorrect: true
-      explanation: "GitHub Copilot is free for verified students, teachers and maintainers of popular open-source projects."
+      explanation: "GitHub Copilot is free for verified students, teachers, and maintainers of popular open-source projects."
     - content: "It's not free, even if you're a student or a teacher."
       isCorrect: false
-      explanation: "GitHub Copilot is free for verified students, teachers and maintainers of popular open-source projects."
+      explanation: "GitHub Copilot is free for verified students, teachers, and maintainers of popular open-source projects."
   - content: "How can you accept GitHub Copilot’s suggestions?"
     choices:
-    - content: "Press the “Tab” key."
+    - content: "Press the <kbd>Tab</kbd> key."
       isCorrect: true
-      explanation: "Copilot offers you a suggestion, which appears as grey code if you use black as your text color. To accept the suggestion, you need to press the “Tab” key."
-    - content: "Press “F1” key."
+      explanation: "Copilot offers you a suggestion, which appears as grey code if you use black as your text color. To accept the suggestion, you need to press the <kbd>Tab</kbd> key."
+    - content: "Press the <kbd>F1</kbd> key."
       isCorrect: false
       explanation: "False. This option doesn't work to accept GitHub Copilot suggestions."
-    - content: "Press “F4” key."
+    - content: "Press the <kbd>F4</kbd> key."
       isCorrect: false
       explanation: "False. This option doesn't work to accept GitHub Copilot suggestions."
   - content: "Identify which statement is valid and select the correct answer:"
@@ -53,11 +53,11 @@ quiz:
       explanation: "False. A prompt isn't a collection of songs."
     - content: "A prompt, which is our input, is a collection of instructions or guidelines that tell our copilot what to generate."
       isCorrect: true
-      explanation: "A prompt is crucial in eliciting specific responses from Copilot.  The prompt might be a comment that steers Copilot to generate code on your behalf or writing code that Copilot autocompletes."
+      explanation: "A prompt is crucial in eliciting specific responses from Copilot. The prompt might be a comment that steers Copilot to generate code on your behalf or writing code that Copilot autocompletes."
     - content: "A prompt, which is our document, is a collection of laptops that tells our Copilot what to generate."
       isCorrect: false
       explanation: "False. A prompt isn't our document nor a collection of laptops that tells our Copilot what to generate."
-  - content: "On what depends on the quality of the output from GitHub Copilot?"
+  - content: "What does the quality of the output from GitHub Copilot depend on?"
     choices:
     - content: "Your code editor."
       isCorrect: false
