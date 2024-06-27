@@ -3,12 +3,13 @@ uid: learn.azure.terraform-introduction-to-infrastructure-as-code
 metadata:
   moduleType: introduction
   title: Introduction to infrastructure as code using Terraform
-  description: Learn how Terraform can help you adopt infrastructure as code to quickly and confidently scale your cloud deployments.
+  description: Learn the fundamentals of how Terraform can help you adopt infrastructure as code to quickly and confidently scale your cloud deployments.
   ms.date: 04/18/2024
   author: jaredfholgate
   ms.author: jaredholgate
   ms.topic: module
   ms.devlang: hcl
+  ms.service: azure
 title: Introduction to infrastructure as code using Terraform
 summary: Infrastructure as code can help you quickly and confidently scale your cloud deployments. By using Terrafrom, you can automate and simplify the provisioning of infrastructure resources.
 abstract: |

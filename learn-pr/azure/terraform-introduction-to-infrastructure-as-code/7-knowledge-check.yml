@@ -37,14 +37,14 @@ quiz:
     - content: With declarative code, you specify only the end configuration. You don't define how to accomplish the task.
       isCorrect: true
       explanation: Correct. Declarative code specifies only the properties and configuration of your resources. The tooling then determines how to ensure that your resources meet those requirements.
-  - content: Suppose you're deciding on the type of declarative template to use for your resource provisioning. Which of the following declarative formats work with Azure?
+  - content: Suppose you're deciding on the type of declarative language to use for your resource provisioning. Which of the following declarative formats work with Azure?
     choices:
-    - content: Bicep template.
+    - content: XML template.
+      isCorrect: false
+      explanation: Incorrect. XML templates cannot be used for Azure resource deployments.
+    - content: Terraform module written in HCL.
       isCorrect: true
-      explanation: Correct. Bicep templates can be used for Azure resource deployments.
-    - content: Terraform module.
-      isCorrect: true
-      explanation: Correct. Terraform templates can be used for Azure resource deployments.
+      explanation: Correct. Terraform and HCL can be used for Azure resource deployments.
     - content: Running a Bash script in Azure CLI.
       isCorrect: false
       explanation: Incorrect. Running a Bash script in Azure CLI isn't an example of using a declarative template.

@@ -24,7 +24,7 @@ Microsoft curates a number of providers in collaboration with HashiCorp and the 
 
 When you deploy a resource or series of resources to Azure, you submit the Bicep template to Resource Manager, which still requires JSON templates. The tooling that's built into Bicep converts your Bicep template into a JSON template. This process is known as _transpilation_, which essentially treats the ARM template as an intermediate language. The conversion happens automatically when you submit your deployment, or you can do it manually.
 
-:::image type="content" source="../../includes/media/plugin.png" alt-text="Diagram that shows the Terraform CLI plugin architecture." border="false" :::
+:::image type="content" source="../media/plugin.png" alt-text="Diagram that shows the Terraform CLI plugin architecture." border="false" :::
 
 ## Terraform Workflow
 
@@ -35,7 +35,7 @@ When using the Terraform CLI, there a 4 fundamental steps in the workflow:
 1. Plan: Compare desired state to actual state and generate a plan to bring actual into line with desired state.
 1. Apply: Implement the plan and bring the target environment in line via API calls.
 
-:::image type="content" source="../../includes/media/workflow.png" alt-text="Diagram that shows the Terraform CLI workflow." border="false" :::
+:::image type="content" source="../media/workflow.png" alt-text="Diagram that shows the Terraform CLI workflow." border="false" :::
 
 ## Terraform LifeCycle
 
@@ -45,7 +45,7 @@ Terraform is designed and should be used to manage the life cycle of your resour
 1. Update: The desired state of the resource attributes do not match their actual state and the resource is updated to bring in line with desired state.
 1. Destroy: The resource no longer exists in desired state and is deleted from Azure.
 
-:::image type="content" source="../../includes/media/lifecycle.png" alt-text="Diagram that shows the Terraform resourc lifecycle." border="false" :::
+:::image type="content" source="../media/lifecycle.png" alt-text="Diagram that shows the Terraform resourc lifecycle." border="false" :::
 
 The update step can happen many times over the lifetime of a resource as the requirements alter over time. For example imagine you are managing Azure Firewall rules with Terraform, you may have to update these on a regular cadence to add new rules, adjust existing rules and remove rules.
 

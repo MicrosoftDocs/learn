@@ -2,7 +2,7 @@
 uid: learn.terraform-fundamentals
 metadata:
   title: Fundamentals of Terraform on Azure
-  description: Learn how Terraform enables you to manage infrastructure deployments on Azure.
+  description: Learn the fundamentals of how Terraform enables you to manage infrastructure deployments on Azure.
   brand: azure
   ms.date: 04/18/2024
   author: jaredfholgate

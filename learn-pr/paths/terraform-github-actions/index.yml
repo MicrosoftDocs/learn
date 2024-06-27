@@ -2,7 +2,7 @@
 uid: learn.terraform-github-actions
 metadata:
   title: Terraform on Azure automation with GitHub Actions
-  description: Learn how Terraform enables you to manage infrastructure deployments on Azure.
+  description: Learn how GitHub works with Terraform to enable you to manage infrastructure deployments on Azure.
   brand: azure
   ms.date: 04/18/2024
   author: jaredfholgate
