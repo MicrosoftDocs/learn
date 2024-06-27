@@ -27,23 +27,23 @@ quiz:
       explanation: "Incorrect. Storage optimized VMs are designed to have high disk throughput and IO, which is ideal for VMs running databases but not as suitable for network appliances."
   - content: "What's the composition of an alert rule?"
     choices:
-    - content: "Resource, condition, log, alert type"
+    - content: "Resource, condition, log, alert type."
       isCorrect: false
-      explanation: "Incorrect. Log and alert type are not part of the composition of an alert rule."
-    - content: "Metrics, logs, application, operating system"
+      explanation: "Incorrect. Log and alert type aren't part of the composition of an alert rule."
+    - content: "Metrics, logs, application, operating system."
       isCorrect: false
       explanation: "Incorrect. None of these elements make up an alert rule."
-    - content: "Resource, condition, actions, alert details"
+    - content: "Resource, condition, actions, alert details."
       isCorrect: true
       explanation: "Correct. These elements make up an alert rule."
   - content: "Which role provides read, write, and delete on Azure storage containers and blobs."
     choices:
-    - content: "Storage Blob Data Reader"
+    - content: "Storage Blob Data Reader."
       isCorrect: true
       explanation: "Incorrect. The Storage Blob Data Reader role only provides read and list permissions."
     - content: "Storage Blob Data Contributor."
       isCorrect: false
-      explanation: "Correct. The Storage Blob Data Contribtor role provides read, write, and delete permissions."
+      explanation: "Correct. The Storage Blob Data Contributor role provides read, write, and delete permissions."
     - content: "Storage Blob Delegator."
       isCorrect: false
-      explanation: "Incorrect. The Storage Blob Delegator role provides a user delegation key, which can then be used to create a shared access signatures."
+      explanation: "Incorrect. The Storage Blob Delegator role provides a user delegation key, which can then be used to create a shared access signature."

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.guided-project-deploy-administer-linux-virtual-machines-azure.exercise4
-title: Exercise - Backup virtual machines
+title: Exercise - Back up virtual machines
 metadata:
-  title: Exercise - Backup virtual machines
-  description: "Exercise - Backup Linux virtual machines"
+  title: Exercise - Back up virtual machines
+  description: "Exercise - Back up Linux virtual machines"
   ms.date: 06/27/2024
   author: wwlpublish
   ms.author: cynthist
