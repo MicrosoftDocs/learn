@@ -3,7 +3,8 @@ The organization you work for wants to increase the efficiency and capabilities 
 In this exercise, you go through the first run experience of Microsoft Copilot for Security to provision Copilot with one security compute unit (SCU).
 
 > [!NOTE]
-> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps. :::image type="content" source="../media/simulation-pop-up-error.png" alt-text="This feature is not available within the simulation.":::
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps. 
+:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Image of pop-up screen indicating that this feature is not available within the simulation.":::
 
 ### Exercise
 
@@ -33,7 +34,7 @@ Once you're assigned the User Access Administrator role in Azure, you can assign
     1. From the Azure portal, select **Microsoft Entra ID**.
     1. From the left navigation panel, expand **Manage**.
     1. From the left navigation panel, scroll down and select **Properties**.
-    1. Enable the toggle switch for **Access management for Azure resources**, then select **Save**..
+    1. Enable the toggle switch for **Access management for Azure resources**, then select **Save**.
 
 1. Now that you can view all resources and assign access in any subscription or management group in the directory, assign yourself the Owner role for the Azure subscription.
     1. From the blue banner on the top of the page, select **Microsoft Azure** to return to the landing page of the Azure portal.
@@ -41,11 +42,11 @@ Once you're assigned the User Access Administrator role in Azure, you can assign
     1. Select **Access control (IAM)**.
     1. Select **Add**, then **Add role assignment**.
     1. From the Role tab, select **Privileged administrator roles**.
-    1. Select **Owner**.
+    1. Select **Owner**, then select **Next**.
     1. Select **+ Select members**.
-    1. Select **Avery Howard**.
+    1. Avery Howard is the first name on this list, select the **+** to the right of the name.  Avery Howard is now listed under selected members. Select the **Select** button, then select **Next**.
     1. Select **Allow user to assign all roles except privileged administrator roles, Owner, UAA, RBAC (Recommended)**.
-    1. Select **Review + assign**.
+    1. Select **Review + assign**, then select **Review + assign** one last time.
 
 As an owner to the Azure subscription, you'll now be able to provision capacity within Copilot.
 
@@ -60,8 +61,6 @@ For this exercise, you provision capacity through Copilot for Security. When you
 
 1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
-
-1. Open the browser tab for **Microsoft Copilot for Security**.
 1. Follow the steps in the Wizard, select **Get started**.
 1. On this page, you set up your security capacity. For any of the fields listed below, you can select the information icon for more information.
     1. Azure subscription: From the drop-down, select **Woodgrove - GTP Demos (External/Sponsored)**.
@@ -75,11 +74,10 @@ For this exercise, you provision capacity through Copilot for Security. When you
     1. Select **Continue** on the bottom right corner of the page.
 
 1. The wizard displays information about where your customer data will be stored. The region displayed is based on the region you selected in the Prompt evaluation field. Select **Continue**.
-    1. If you want to learn more about how Microsoft protects your data, selected **protects your data**. This opens a separated browser tab. When you're done reviewing this information, select the Microsoft Copilot for Security browser tab to continue the setup.
-1. Once the SCU is provisioned, the next page in the wizard is to allocate that capacity. Select the drop-down and select the capacity that was configured.
-1. The next screen is where you can select options to help improve Copilot. You can select the toggle based on your preferences.
-    1. If you want to learn more about Copilot privacy and data security, select **Copilot for Security privacy and data security**. This opens a separated browser tab. When you're done reviewing this information, select the Microsoft Copilot for Security browser tab to continue the setup.
-1. In the next page, you're informed of the default roles that can access Copilot (you’ll add users in a subsequent exercise). Select **Continue**.
+
+1. You can select options to help improve Copilot. You can select the toggle based on your preferences.  Select **Continue**.
+
+1. As part of the initial setup, Copilot provides contributor access to everyone by default and includes Global administrators and Security administrators as Copilot owners. In your production environment, you can change who has access to Copilot, once you've completed the initial setup. Select **Continue**.
 1. You're all set! Select **Finish**.
 1. Close the browser tab, as the next exercise will use a separate link to the lab-like environment.
 

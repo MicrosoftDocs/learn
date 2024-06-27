@@ -3,7 +3,8 @@ In this exercise, you experiment with a custom plugin. You start by checking the
 The creation of the YAML or JSON plugin manifest file, which describes metadata about the plugin and how to invoke it, is outside the scope of this content, but you can obtain more information by visiting [Create your own custom plugins](/copilot/security/custom-plugins).
 
 > [!NOTE]
-> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps. :::image type="content" source="../media/simulation-pop-up-error.png" alt-text="This feature is not available within the simulation.":::
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps. 
+:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Image of pop-up screen indicating that this feature is not available within the simulation.":::
 
 ### Exercise
 
