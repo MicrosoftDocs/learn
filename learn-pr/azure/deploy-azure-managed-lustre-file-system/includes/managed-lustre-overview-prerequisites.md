@@ -1,4 +1,10 @@
-Before you can deploy an Azure Managed Lustre file system, you need to meet prerequisites for network configuration and, optionally, blob integration. This unit explains prerequisites that you must configure before creating an Azure Managed Lustre file system.
+Before you can deploy an Azure Managed Lustre file system, you need to meet prerequisites for network configuration and, optionally, blob integration. This unit gives a high level overview of the service topology, and explains prerequisites that you must configure before creating an Azure Managed Lustre file system.
+
+## Overview
+
+The following diagram describes the basic service topology of an Azure Managed Lustre file system, showing how it's arranged, and how it connects to and interacts with other Azure services:
+
+:::image type="content" source="../media/diagram-training-module.png" alt-text="Diagram describing the basic topology of an Azure Managed Lustre file system, and showing how it connects to and interacts with other Azure services." lightbox="../media/diagram-training-module.png":::
 
 ## Network prerequisites
 

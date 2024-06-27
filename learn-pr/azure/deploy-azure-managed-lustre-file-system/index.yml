@@ -40,7 +40,7 @@ subjects:
 - storage
 units:
 - learn.azure.deploy-azure-managed-lustre-file-system.introduction
-- learn.azure.deploy-azure-managed-lustre-file-system.managed-lustre-prerequisites
+- learn.azure.deploy-azure-managed-lustre-file-system.managed-lustre-overview-prerequisites
 - learn.azure.deploy-azure-managed-lustre-file-system.create-managed-lustre-file-system
 - learn.azure.deploy-azure-managed-lustre-file-system.connect-client-to-file-system
 - learn.azure.deploy-azure-managed-lustre-file-system.export-data-to-blob-storage
