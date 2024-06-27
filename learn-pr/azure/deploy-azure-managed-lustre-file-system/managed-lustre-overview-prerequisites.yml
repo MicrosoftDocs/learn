@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-azure-managed-lustre-file-system.managed-lustre-prerequisites
+uid: learn.azure.deploy-azure-managed-lustre-file-system.managed-lustre-overview-prerequisites
 title: Identify the requirements for Azure Managed Lustre
 metadata:
   title: Identify the requirements for Azure Managed Lustre
@@ -11,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/managed-lustre-prerequisites.md)]
+  [!include[](includes/managed-lustre-overview-prerequisites.md)]
