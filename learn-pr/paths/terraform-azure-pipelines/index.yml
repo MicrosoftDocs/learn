@@ -36,3 +36,4 @@ modules:
 - learn.azure.terraform-introduction-to-infrastructure-as-code
 trophy:
   uid: learn.terraform-azure-pipelines.trophy
+hidden: true
