@@ -36,7 +36,7 @@ To deploy and run a containerized app in Azure Container Apps, you issue command
 
 ## Deploying apps using Visual Studio
 
-If you used one of the .NET Aspire templates to create your solution in Visual Studio, you have a simple wizard that deploys your .NET Azure app to Azure Container Services. Visual Studio can complete these deployment tasks:
+If you used one of the .NET Aspire templates to create your solution in Visual Studio, you have a simple wizard that deploys your .NET Azure app to Azure Container Apps. Visual Studio can complete these deployment tasks:
 
 - Create an Azure resource group to organize all the necessary resources.
 - Create a container registry to store all the necessary container images.
@@ -53,7 +53,7 @@ To start the publishing wizard, in **Solution Explorer** right-click the **AppHo
 :::image type="content" source="../media/deploy-aca-visual-studio.png" lightbox="../media/deploy-aca-visual-studio.png" alt-text="Screenshot showing the configuration page of the .NET Aspire deployment wizard in Visual Studio.":::
 
 > [!NOTE]
-> You'll deploy an app to Azure Container Services in the exercise later in this module.
+> You'll deploy an app to Azure Container Apps in the exercise later in this module.
 
 ## Deploying apps using the Azure Developer CLI
 
