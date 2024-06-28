@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-implement-manage-retention.retention-overview
+title: Overview of retention with Microsoft Purview
+metadata:
+  title: Overview of retention with Microsoft Purview
+  description: "Overview of retention with Microsoft Purview."
+  ms.date: 06/28/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/retention-overview.md)]

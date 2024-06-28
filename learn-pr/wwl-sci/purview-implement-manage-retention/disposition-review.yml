@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-implement-manage-retention.disposition-review
+title: Conduct disposition reviews
+metadata:
+  title: Conduct disposition reviews
+  description: "Conduct disposition reviews."
+  ms.date: 06/28/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/disposition-review.md)]

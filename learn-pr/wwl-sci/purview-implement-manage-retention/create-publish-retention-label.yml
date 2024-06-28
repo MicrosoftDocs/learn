@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-implement-manage-retention.create-publish-retention-label
+title: Create and publish retention labels
+metadata:
+  title: Create and publish retention labels
+  description: "Create and publish retention labels."
+  ms.date: 06/28/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/create-publish-retention-label.md)]

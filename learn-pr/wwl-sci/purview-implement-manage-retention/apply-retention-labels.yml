@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-implement-manage-retention.apply-retention-labels
+title: Apply retention labels across Microsoft 365 services
+metadata:
+  title: Apply retention labels across Microsoft 365 services
+  description: "Apply retention labels across Microsoft 365 services."
+  ms.date: 06/28/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/apply-retention-labels.md)]

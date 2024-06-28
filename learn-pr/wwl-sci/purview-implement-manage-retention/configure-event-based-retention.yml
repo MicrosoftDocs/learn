@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-implement-manage-retention.configure-event-based-retention
+title: Configure event-based retention
+metadata:
+  title: Configure event-based retention
+  description: "Configure event-based retention."
+  ms.date: 06/28/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/configure-event-based-retention.md)]
