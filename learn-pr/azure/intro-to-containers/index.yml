@@ -3,7 +3,7 @@ uid: learn.intro-to-containers
 metadata:
   title: Build a containerized web application with Docker
   description: Use Docker to build, store, and manage private container images with the Azure Container Registry.  
-  ms.date: 03/21/2022
+  ms.date: 06/28/2024
   author: cryophobia
   ms.author: chrvaw
   ms.topic: module
