@@ -1,5 +1,5 @@
 
-You need to create a web server for a new ecommerce website. You want to explore how to create Linux virtual machines using the Azure portal. You're also interested in using SSH to securely connect to the virtual machine. Lastly, you want to install the latest OS updates and the Nginx web server.
+You need to create a web server for a new ecommerce website. You want to explore how to create Linux virtual machines using the Azure portal. You're interested in using SSH to securely connect to the virtual machine. Lastly, you want to install the latest OS updates and the Nginx web server.
 
 ## Architecture diagram
 

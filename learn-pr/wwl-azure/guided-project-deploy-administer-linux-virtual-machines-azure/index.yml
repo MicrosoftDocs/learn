@@ -3,13 +3,13 @@ uid: learn.wwl.guided-project-deploy-administer-linux-virtual-machines-azure
 metadata:
   title: 'Guided Project: Deploy and administer Linux virtual machines on Azure'
   description: "Guided Project: Deploy and administer Linux virtual machines on Azure"
-  ms.date: 06/27/2024
+  ms.date: 06/28/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module-guided-project
   ai-usage: human-only
 title: 'Guided Project: Deploy and administer Linux virtual machines on Azure'
-summary: In this module, you will practice for the new APL-1007 Deploy and administer Linux virtual machines on Azure Applied Skill.&nbsp;
+summary: In this module, you practice for the new APL-1007 Deploy and administer Linux virtual machines on Azure Applied Skill.&nbsp;
 abstract: In this module, you practice for the new APL-1007 Deploy and administer Linux virtual machines on Azure Applied Skill. You also gain skills to help with day-to-day administrator job tasks. The content&nbsp;combines topics on compute, storage, and monitoring tasks. You are guided&nbsp;through intermediate level tasks through demonstrations and interactive lab practice.
 prerequisites: Familiarity with the Azure CLI and Azure portal. Understand identity management and role-based access control. Experience using the Azure portal to create resources. Basic knowledge of unstructured data like blobs and files. Basic knowledge of security concepts like identities and permissions.
 iconUrl: /training/achievements/generic-badge.svg

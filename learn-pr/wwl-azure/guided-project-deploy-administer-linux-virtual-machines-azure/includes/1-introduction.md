@@ -12,7 +12,7 @@ The Web tier includes web servers running on Linux virtual machines. The App tie
 
 :::image type="content" source="../media/overarch.png" alt-text="Diagram of the overarching architecture." border="false":::
 
-The project proceeds in phases. In the first phase, you as the Cloud Administrator you learn how to deploy and administer the virtual machines in the web tier. You will prototype a solution that includes configure, monitor, storage, and backup. 
+The project proceeds in phases. In the first phase, you as the Cloud Administrator you learn how to deploy and administer the virtual machines in the web tier. You need to prototype a solution that includes configure, monitor, storage, and back up. 
 
 - Exercise 1 - Configure a virtual machine
 - Exercise 2 - Monitor a virtual machine
@@ -26,7 +26,7 @@ By the end of this module, you gained hands-on experience with virtual machines.
 
 ## Skilling areas
 
-You used the Azure documentation to [review virtual machine options](/azure/virtual-machines/). In each area, you have identified skills that you need to practice.
+You used the Azure documentation to [review virtual machine options](/azure/virtual-machines/). In each area, you identified skills that you need to practice.
 
 | Skilling area | Skilling task |
 | --- | --- | 

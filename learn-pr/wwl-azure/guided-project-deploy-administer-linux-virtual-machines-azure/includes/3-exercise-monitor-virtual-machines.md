@@ -1,5 +1,5 @@
 
-Your organization is migrating their virtual machine workloads to Azure. It's important that you're notified of any significant infrastructure changes. You plan to explore the capabilities of Azure Monitor, including alerts and Log Analytics.
+Your organization is migrating their virtual machine workloads to Azure. It's important you are notified of any significant infrastructure changes. You plan to explore the capabilities of Azure Monitor, including alerts and Log Analytics.
 
 ## Architecture diagram
 
