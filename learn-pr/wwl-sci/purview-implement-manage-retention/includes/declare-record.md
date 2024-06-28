@@ -24,18 +24,20 @@ Use the table to understand the actions allowed or blocked depending on the type
 
 <sup>3</sup> Containers include locations like SharePoint sites and Exchange mailboxes.
 
-### Editing and deleting configurations
+### Editing record properties
 
-- The ability to edit properties of a locked record is controlled through a tenant setting in the Microsoft Purview portals. This setting, when turned off, restricts property modifications, aligning with stricter record management protocols.
-- Similarly, the ability to delete items with a retention label in SharePoint and OneDrive can be controlled through tenant settings, providing administrators the flexibility to prevent the deletion of important documents.
+To manage the integrity and compliance of records marked by retention labels, consider adjusting your Microsoft Purview tenant settings:
 
-### Implications
+**Editing record properties**: By default, properties of locked records can be edited, but this can be turned off to ensure records remain unchanged. To change this setting:
 
-These restrictions ensure that records and regulatory records are preserved in an unaltered state to meet compliance requirements. For example, if a retention label marking an item as a record is applied, the item can't be deleted or its content edited, securing the record against unauthorized changes.
+1. Navigate to Microsoft Purview portal or Microsoft Purview compliance portal.
+   - Sign in to the Microsoft Purview portal > **Settings** card > **Solutions settings** > **Records Management** > **Retention Labels**.
+   - Sign in to the Microsoft Purview compliance portal > **Records management** > **Records management settings** > **Retention labels**.
+1. Turn off the setting for **Allow users to edit record properties**.
 
 ## Configure retention labels to declare records
 
-To enable the option to mark content as a regulatory record in the retention label wizard, run the PowerShell command below. This action is auditable and will be logged as Enabled regulatory record option for retention labels in the audit log.
+To enable the option to mark content as a regulatory record in the retention label wizard, run the PowerShell command `Set-RegulatoryComplianceUI`. This action is auditable and is logged as **Enabled regulatory record option for retention** labels in the audit log.
 
 1. [Connect to the Office 365 Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell?azure-portal=true).
 1. Execute the command:
@@ -46,7 +48,7 @@ To enable the option to mark content as a regulatory record in the retention lab
 
 This setting is applied immediately without confirmation.
 
-When you create a retention label from the **Records Management** solution in the Microsoft Purview portal or the Microsoft Purview compliance portal, you have the option to mark items as a record or a regulatory record, as long as you ran the PowerShell `Set-RegulatoryComplianceUI` command.
+When you create a retention label from the **Records Management** solution in the Microsoft Purview portal or the Microsoft Purview compliance portal, you can mark items as a record or a regulatory record, as long as you ran the PowerShell `Set-RegulatoryComplianceUI` command.
 
    :::image type="content" source="../media/declare-records.png" alt-text="Screenshot showing how to create a retention label for a record or regulatory record.":::
 

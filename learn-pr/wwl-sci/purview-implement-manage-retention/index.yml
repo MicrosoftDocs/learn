@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.purview-implement-manage-retention
+metadata:
+  title: Implement and manage retention with Microsoft Purview
+  description: "Implement and manage retention with Microsoft Purview."
+  ms.date: 07/01/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  ai-usage: ai-assisted
+  hidden: false
+title: Implement and manage retention with Microsoft Purview
+summary: Enhance data security and compliance with Microsoft Purview Audit by configuring detailed audits, managing logs, and analyzing access patterns.
+abstract: |
+  After completing this module, you'll be able to:
+  - Identify the differences between Microsoft Purview Audit (Standard) and Audit (Premium).
+  - Configure Microsoft Purview Audit for optimal log management.
+  - Perform audits to assess compliance and security measures.
+  - Analyze irregular access patterns using advanced tools in Purview Audit (Premium) and PowerShell.
+  - Ensure regulatory compliance through strategic data management.
+prerequisites: |
+  - Basic familiarity with Microsoft 365.
+  - Understanding of data management principles.
+  - Knowledge of general compliance requirements.
+iconUrl: /training/achievements/manage-microsoft-purview-audit-premium.svg
+levels:
+- intermediate
+roles:
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+units:
+- learn.wwl.purview-implement-manage-retention.introduction
+- learn.wwl.purview-implement-manage-retention.retention-overview
+- learn.wwl.purview-implement-manage-retention.create-configure-retention-policy
+- learn.wwl.purview-implement-manage-retention.create-configure-adaptive-scope
+- learn.wwl.purview-implement-manage-retention.create-publish-retention-label
+- learn.wwl.purview-implement-manage-retention.apply-retention-labels
+- learn.wwl.purview-implement-manage-retention.configure-event-based-retention
+- learn.wwl.purview-implement-manage-retention.auto-apply-retention-label
+- learn.wwl.purview-implement-manage-retention.declare-record.md
+- learn.wwl.purview-implement-manage-retention.disposition-review.md
+- learn.wwl.purview-implement-manage-retention.knowledge-check
+- learn.wwl.purview-implement-manage-retention.summary
+badge:
+  uid: learn.wwl.purview-implement-manage-retention.badge
