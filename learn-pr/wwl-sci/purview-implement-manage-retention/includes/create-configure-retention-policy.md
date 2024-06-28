@@ -49,7 +49,7 @@ Selecting either Teams or Viva Engage as a location automatically excludes the o
 
 1. On the **Decide if you want to retain content, delete it, or both** page:
 
-   - **Retain items for a specific period**: Items are retained for a defined time frame. After this period, they are automatically deleted, helping manage data efficiently and ensuring compliance.
+   - **Retain items for a specific period**: Items are retained for a defined time frame. After this period, they're automatically deleted, helping manage data efficiently and ensuring compliance.
 
    - **Retain items forever**: Items are kept indefinitely without an automatic deletion timeline.
 

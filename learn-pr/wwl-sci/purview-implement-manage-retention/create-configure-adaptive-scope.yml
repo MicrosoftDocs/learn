@@ -10,6 +10,6 @@ metadata:
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/create-configure-adaptive-scope.md)]

@@ -3,7 +3,7 @@ uid: learn.wwl.purview-implement-manage-retention
 metadata:
   title: Implement and manage retention with Microsoft Purview
   description: "Implement and manage retention with Microsoft Purview."
-  ms.date: 07/01/2024
+  ms.date: 06/28/2024
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -11,18 +11,18 @@ metadata:
   ai-usage: ai-assisted
   hidden: false
 title: Implement and manage retention with Microsoft Purview
-summary: Enhance data security and compliance with Microsoft Purview Audit by configuring detailed audits, managing logs, and analyzing access patterns.
+summary: Microsoft Purview provides tools to manage data retention and records, ensuring compliance through policies, labels, event-based retention, adaptive and static scopes, and disposition reviews..
 abstract: |
   After completing this module, you'll be able to:
-  - Identify the differences between Microsoft Purview Audit (Standard) and Audit (Premium).
-  - Configure Microsoft Purview Audit for optimal log management.
-  - Perform audits to assess compliance and security measures.
-  - Analyze irregular access patterns using advanced tools in Purview Audit (Premium) and PowerShell.
-  - Ensure regulatory compliance through strategic data management.
+  - Understand the differences between retention policies and retention labels.
+  - Configure retention policies.
+  - Create, publish, and automate retention labels.
+  - Implement event-based retention.
+  - Configure adaptive and static scopes.
+  - Declare items as records and manage them through disposition reviews.
 prerequisites: |
-  - Basic familiarity with Microsoft 365.
-  - Understanding of data management principles.
-  - Knowledge of general compliance requirements.
+  - Basic understanding of data management concepts.
+  - Familiarity with the Microsoft Purview portal.
 iconUrl: /training/achievements/manage-microsoft-purview-audit-premium.svg
 levels:
 - intermediate

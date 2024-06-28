@@ -8,7 +8,7 @@ File plan in Microsoft Purview Records Management enhances the creation and mana
 
 - **Bulk creation and management**: Import and create multiple retention labels from a spreadsheet, allowing for efficient setup.
 - **Detailed overview**: View and manage detailed settings of all retention labels from a single interface.
-- **Enhanced descriptors**: Use file plan descriptors for additional categorization and organization of retention labels.
+- **Enhanced descriptors**: Use file plan descriptors for extra categorization and organization of retention labels.
 
 ### Access requirements
 
@@ -87,4 +87,4 @@ The visibility of retention labels can vary based on the service:
 
 If labels don't appear as expected, verify the policy status and consider using PowerShell commands to troubleshoot or force policy distribution.
 
-Retention labels are a powerful component of Microsoft Purview, helping to ensure data is managed in compliance with policy and regulatory requirements. By following the steps to create and publish these labels, you can enhance your organization's data management strategy and ensure compliance across all digital content.
+Retention labels are an important feature of Microsoft Purview, ensuring data is managed according to policies and regulations. Creating and publishing these labels helps strengthen your organization's data management strategy and ensures compliance across all digital content.
