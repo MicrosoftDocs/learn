@@ -57,6 +57,6 @@ The update step can happen many times over the lifetime of a resource as the req
 
 Terraform state is required to support the Terraform lifecycle. Terraform has no insight into Azure or any of the other clouds or services it might manage. As such it needs an agnostic way to know what it's managing. The state file is that mechanism.
 
-By mapping the HCL configuration to a resource id in Azure, Terraform is able to know that it's managing a resource. If that resource is then removed from the HCL, Terraform knows it must plan to destroy that resource. Without a state file, Terraform would have no knowledge of that resource.
+By mapping the HCL configuration to a resource ID in Azure, Terraform is able to know that it's managing a resource. If that resource is then removed from the HCL, Terraform knows it must plan to destroy that resource. Without a state file, Terraform would have no knowledge of that resource.
 
 State files can contain sensitive data and must be stored securely. We recommend using Terraform Cloud / Enterprise or Azure Blob Storage to manage your state files.
