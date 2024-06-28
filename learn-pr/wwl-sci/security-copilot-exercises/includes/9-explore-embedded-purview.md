@@ -166,8 +166,8 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
     1. From the box labeled natural language prompt, select **View prompts**. This is a great starting point. You could look at suggested prompts to determine how to craft a natural language query for suggested prompts. For example, Find all emails containing the words budget and finance and have attachments.
     1. For this example, however, you know what you are looking for. You’ve been told that you need to find all conversations related to a recent acquisition. Use copy/paste to enter **Find all conversations that contain the keywords; acquisition, stock, Bitdefender, Frostvision, offshore**.
     1. When you enter your natural language prompt, you can have Copilot refine the query to ensure a more accurate query output. Select **Refine** then **Accept**.
-    1. Select **Generate KeyQL**. Copilot for Security refines the prompt and then in a simple click, can generate the query within seconds!
-    1. The resulting query is displayed in the Keyword Query Language  (KeyQL) result text box. Select **CopyKeyQL**, then paste it the KeyQL text box. From here, you can run the query. In this simulation, you won't run the query.
+    1. Select **Generate KeyQL**. Copilot for Security refines the prompt and then in a simple click, can generate the query within seconds!  
+    1. The purpose of this exercise is to show how easily Copilot can generate the code for a query using natural language. In your production environment, running a query would simply require you to copy the KeyQL code into the run box and select run.
 
 #### Review
 
