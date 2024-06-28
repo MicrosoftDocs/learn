@@ -4,7 +4,7 @@ The creation of the YAML or JSON plugin manifest file, which describes metadata 
 
 > [!NOTE]
 > The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
->:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Image of pop-up screen indicating that this feature is not available within the simulation.":::
+>:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
 
 ### Exercise
 
@@ -17,11 +17,11 @@ This exercise should take approximately **10** minutes to complete.
 
 #### Before you start
 
-For the purpose of this exercise, you'll be using a sample .yaml file, 'KQL_DefenderExample.yaml'.
+For this exercise, you'll be using a sample .yaml file, 'KQL_DefenderExample.yaml.'
 
 1. Select the link **[KQL_DefenderExample.yaml](https://github.com/MicrosoftLearning/SC-5006-Get-started-with-Microsoft-Copilot-for-Security/blob/master/Sample%20files/KQL_DefenderExample.yaml?azure-portal=true)** to access the sample file.
 
-1. Select the **Download raw file ![download raw file icon](../media/raw-file-download-icon-v2.png)** icon.  Save the file on your local computer, as you will need it later.  
+1. Select the **Download raw file ![download raw file icon](../media/raw-file-download-icon-v2.png)** icon. Save the file on your local computer, as you will need it later. 
 
    Alternatively, because this is a simulation, you can create the file named 'KQL_DefenderExample.yaml.' Because this is a simulation, the contents of the file you create won't matter. The system capabilities and prompt responses shown in the simulation, however, are based on the actual file.
 
