@@ -115,13 +115,11 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
 
 #### Task: Gain contextual summary of evidence collected in eDiscovery review sets (Preview)
 
-In this task, you explore the capability of Copilot to Microsoft Purview to gain a contextual summary of evidence collected in an eDiscovery review set.
+In this task, you explore the capability of Copilot to Microsoft Purview to gain a contextual summary of evidence collected in an eDiscovery review set. 
+
+Legal investigations can take hours, days, even weeks to sift through the list of evidence collected in review sets, requiring costly resources like outside council to manually go through each document to determine the relevancy to the case. Copilot can significantly reduce that burden by generating summaries of conversations in a variety of languages and the documents that may be included as attachments.
 
 Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview eDiscovery solution, users should have previously been assigned an appropriate role.
-
-Let’s start by showing you how to review evidence collected in eDiscovery review sets, without Copilot for Security.
-
-Legal investigations can take hours, days, even weeks to sift through the list of evidence collected in review sets, requiring costly resources like outside council to manually go through each document to determine the relevancy to the case.
 
 1. From the New Microsoft Purview portal, select **View all solutions**, then select **eDiscovery**, listed under Risk & Compliance.
 
@@ -133,13 +131,13 @@ Legal investigations can take hours, days, even weeks to sift through the list o
         1. Filter - **File class**.
         1. Select an operator - **Equals any of**.
         1. Select Any -  **Conversation**.
-    1. From the results, select item **#4**.
+    1. From the results, select the first item on the list **#1**.
         1. Information about the conversation appears in the window to the right. **Scroll** to view the source history. There's quite a bit of text included in this teams conversation. It can be time-consuming to sift through the information.
         1. With Copilot for Security, you can gain a comprehensive summary of the conversation in the review set – in the single click of a button! Select **Summarize**. Copilot also provides prompt suggestions and the prompt bar for you to enter your own prompts in furtherance of the investigation. This helps you save time and conduct investigations more efficiently!
 
-1. Refer back to the list of Teams conversations. This time, select item **#13** .
+1. Refer back to the list of Teams conversations. This time, select the second item on the list select item **#2** .
     1. The subject is displayed in a non-English language. This is common challenge with multi-national corporation whose employees speak various languages. The window with the source conversations shows a conversation history with non-English language. Select **Summarize** to view a summary in English, which is my default language for Copilot.
-    1. Expand item 13 by selecting the **>**. Within Microsoft Teams, you can send cloud attachments, which are links to documents. The first item under the expanded view is an attached document. Select **Summarize** to. So you can see the attachment shared within the Teams chat is rather lengthy.
+    1. Within Microsoft Teams, you can send cloud attachments, which are links to documents. Expand item #2 by selecting the **>**. The first subitem is a Word document. Select the document then select **Summarize** to have Copilot generate a summary
 
 1. From the left navigation panel, select **Home** to return the Microsoft Purview portal. You'll return to this page in the next task.
 
@@ -167,7 +165,7 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
     1. For this example, however, you know what you are looking for. You’ve been told that you need to find all conversations related to a recent acquisition. Use copy/paste to enter **Find all conversations that contain the keywords; acquisition, stock, Bitdefender, Frostvision, offshore**.
     1. When you enter your natural language prompt, you can have Copilot refine the query to ensure a more accurate query output. Select **Refine** then **Accept**.
     1. Select **Generate KeyQL**. Copilot for Security refines the prompt and then in a simple click, can generate the query within seconds!  
-    1. The purpose of this exercise is to show how easily Copilot can generate the code for a query using natural language. In your production environment, running a query would simply require you to copy the KeyQL code into the run box and select run.
+    1. The purpose of this exercise is to show how easily Copilot can generate the code for a query using natural language. In your production environment, to run the generated query copy the KeyQL code into the run box and select run.
 
 #### Review
 
