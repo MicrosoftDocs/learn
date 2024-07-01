@@ -71,7 +71,7 @@ Think about what a viewmodel might do for the HR application. Let's say that the
             get
             {
                 decimal vacationBalance = _model.GetVacationBalanceInDays();
-                ... // Some logic to format and return the string as "X days, Y days, Z hours"
+                ... // Some logic to format and return the string as "X weeks, Y days, Z hours"
             }
         }
     }
