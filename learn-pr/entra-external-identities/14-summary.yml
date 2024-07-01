@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.entra-external-identities.eeid-poc.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is a part of Guided project – Build a sample app to evaluate Entra External Identities for seamless and secure sign-up and sign-in for consumers and business customers.
+  ms.date: 6/3/2024
+  author: linkhp
+  ms.author: lipar
+  ms.topic: interactive-tutorial
+  ms.service: entra-external-id
+durationInMinutes: 1
+content: |
+  [!include[](includes/14-summary.md)]
+  [!include[](includes/linktosurvey.md)]

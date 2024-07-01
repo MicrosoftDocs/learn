@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.entra-external-identities.eeid-poc.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of Guided project – Build a sample app to evaluate Entra External Identities for seamless and secure sign-up and sign-in for consumers and business customers.
+  ms.date: 6/25/2024
+  author: linkhp
+  ms.author: lipar
+  ms.topic: interactive-tutorial
+  ms.service: entra-external-id
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What is the purpose of Entra External Identities in our project?"
+    choices:
+    - content: "To manage internal employee accounts"
+      isCorrect: false
+      explanation: "Incorrect. This is not the primary purpose of Entra External Identities in this context."
+    - content: "To create branded sign-in and sign-up experiences for customers"
+      isCorrect: true
+      explanation: "Correct. Entra External Identities is specifically designed to provide customizable sign-in and sign-up experiences for external users (such as customers). It allows you to brand the flows, customize account creation, secure account, and orchestrate verification."
+    - content: "To optimize website performance"
+      isCorrect: false
+      explanation: "Incorrect. This is not the primary purpose of Entra External Identities in this context."
+    - content: "To handle payment processing"
+      isCorrect: false
+      explanation: "Incorrect. This is not the primary purpose of Entra External Identities in this context."
+  - content: "What role does the tenant play in Entra External Identities?"
+    choices:
+    - content: "It hosts our website files"
+      isCorrect: false
+      explanation: "Incorrect. This is not the primary role that the tenant plays."
+    - content: "It stores user accounts securely"
+      isCorrect: true
+      explanation: "Correct. The tenant is where user accounts are securely stored. It’s a foundational step in using Entra External Identities."
+    - content: "It manages payment gateways"
+      isCorrect: false
+      explanation: "Incorrect. This is not the primary role that the tenant plays."
+    - content: "It handles DNS configuration"
+      isCorrect: false
+      explanation: "Incorrect. This is not the primary role that the tenant plays."
+  - content: "Which component of Entra External Identities allows you to customize the sign-in and sign-up experiences for your website?"
+    choices:
+    - content: "Tenant"
+      isCorrect: false
+      explanation: "Incorrect. Your tenant is not the primary component that allows you to customize your sign-up and sign-in experiences."
+    - content: "App registration"
+      isCorrect: false
+      explanation: "Incorrect. App registration doesn't allow you to customize your sign-up and sign-in experiences."
+    - content: "User flow"
+      isCorrect: true
+      explanation: "Correct. User flows in Entra External Identities allow you to customize identity providers used and define how attributes should be presented during sign-up."
+    - content: "Graph API"
+      isCorrect: false
+      explanation: "Incorrect. Graph API is not the primary component that allows you to customize your sign-up and sign-in experiences."

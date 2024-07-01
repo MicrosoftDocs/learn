@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.entra-external-identities.eeid-poc.register-an-application
+title: Register an application
+metadata:
+  title: Register an application
+  description: This content is a part of Guided project – Build a sample app to evaluate Entra External Identities for seamless and secure sign-up and sign-in for consumers and business customers.
+  ms.date: 6/3/2024
+  author: linkhp
+  ms.author: lipar
+  ms.topic: interactive-tutorial
+  zone_pivot_groups: entra-external-identities-configuration-options
+  ms.service: entra-external-id
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-register-an-application.md)]
+  [!include[](includes/linktosurvey.md)]
