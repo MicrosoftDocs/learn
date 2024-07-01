@@ -10,29 +10,29 @@ Users can manually apply retention labels in these locations:
 
 **In Outlook on desktop and on the web**:
 
-- Navigate to the item you want to label.
-- Right-click the item and select **Assign Policy**.
+1. Navigate to the item you want to label.
+1. Right-click the item and select **Assign Policy**.
 
    :::image type="content" source="../media/outlook-retention-labels.png" alt-text="Screenshot showing how to assign a retention label in Outlook.":::
 
-- Select the appropriate retention label from the list.
-- Labels once applied appear on the item along with the expiry date if applicable.
+1. Select the appropriate retention label from the list.
+1. Labels once applied appear on the item along with the expiry date if applicable.
 
 **In OneDrive and SharePoint**:
 
-- Select the document or item.
-- Open the details pane by clicking on the information icon.
-- Under **Apply label**, choose the appropriate retention label from the dropdown.
+1. Select the document or item.
+1. Open the details pane by clicking on the information icon.
+1. Under **Apply label**, choose the appropriate retention label from the dropdown.
 
    :::image type="content" source="../media/sharepoint-apply-retention-label.png" alt-text="Screenshot showing how to assign a retention label in SharePoint.":::
 
-- The label details can be viewed in the details pane once applied.
+1. The label details can be viewed in the details pane once applied.
 
 **In Microsoft Teams**:
 
-- Navigate to the **Files** tab within a Teams channel.
-- Select the file to which you want to apply the label.
-- Use the labeling options that appear to apply the desired retention label.
+1. Navigate to the **Files** tab within a Teams channel.
+1. Select the file to which you want to apply the label.
+1. Use the labeling options that appear to apply the desired retention label.
 
 ## Set default retention labels
 
@@ -42,20 +42,20 @@ A default retention label automatically applies a predefined retention or deleti
 
 To set a default retention label in SharePoint:
 
-- Navigate to the **Library settings** of the document library you want to manage.
-- Select **Apply label to items in this list or library** under **Permissions and Management**.
-- Choose a retention label that aligns with the content type or regulatory requirements of the stored documents.
-- Optionally, apply the label to existing items to ensure all documents in the library adhere to the same retention policy.
+1. Navigate to the **Library settings** of the document library you want to manage.
+1. Select **Apply label to items in this list or library** under **Permissions and Management**.
+1. Choose a retention label that aligns with the content type or regulatory requirements of the stored documents.
+1. Optionally, apply the label to existing items to ensure all documents in the library adhere to the same retention policy.
 
    :::image type="content" source="../media/sharepoint-default-retention-label.png" alt-text="Screenshot showing how to set a default retention label in SharePoint.":::
 
 #### Label behavior when you use a default label for SharePoint
 
-- **New items**: Automatically inherit the default label upon creation or addition to the library.
-- **Existing unlabeled items**: Can be retroactively labeled when setting the default, ensuring uniform policy enforcement.
-- **Inheritance**: The default label is inherited across all items within the container and any subfolders.
-- **Modifying or removing the default label**: Changes or removals only affect how new items are labeled unless explicitly applied to existing items.
-- **Moving items**: Items moved to a different library with a different default label inherits the new label. If moved to a library without a default label, they retain their original label unless manually changed.
+1. **New items**: Automatically inherit the default label upon creation or addition to the library.
+1. **Existing unlabeled items**: Can be retroactively labeled when setting the default, ensuring uniform policy enforcement.
+1. **Inheritance**: The default label is inherited across all items within the container and any subfolders.
+1. **Modifying or removing the default label**: Changes or removals only affect how new items are labeled unless explicitly applied to existing items.
+1. **Moving items**: Items moved to a different library with a different default label inherits the new label. If moved to a library without a default label, they retain their original label unless manually changed.
 
 ### Setting default labels in Outlook
 
@@ -74,8 +74,8 @@ By using default labels, organizations can ensure consistent data management pra
 
 ## Automatically apply labels using Outlook rules
 
-- Create a rule by right-clicking an email, then selecting **Rules** > **Create Rule** > **Advanced Options**.
-- Set conditions that trigger the rule and select the action to apply a specific retention label to emails meeting these conditions.
+1. Create a rule by right-clicking an email, then selecting **Rules** > **Create Rule** > **Advanced Options**.
+1. Set conditions that trigger the rule and select the action to apply a specific retention label to emails meeting these conditions.
 
    :::image type="content" source="../media/outlook-auto-retention-rule.png" alt-text="Screenshot showing how to automatically set a default retention using an Outlook rule.":::
 
