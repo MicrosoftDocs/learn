@@ -42,8 +42,8 @@ units:
 - learn.wwl.purview-implement-manage-retention.apply-retention-labels
 - learn.wwl.purview-implement-manage-retention.configure-event-based-retention
 - learn.wwl.purview-implement-manage-retention.auto-apply-retention-label
-- learn.wwl.purview-implement-manage-retention.declare-record.md
-- learn.wwl.purview-implement-manage-retention.disposition-review.md
+- learn.wwl.purview-implement-manage-retention.declare-record
+- learn.wwl.purview-implement-manage-retention.disposition-review
 - learn.wwl.purview-implement-manage-retention.knowledge-check
 - learn.wwl.purview-implement-manage-retention.summary
 badge:
