@@ -3,7 +3,8 @@ In this exercise, you experiment with a custom plugin. You start by checking the
 The creation of the YAML or JSON plugin manifest file, which describes metadata about the plugin and how to invoke it, is outside the scope of this content, but you can obtain more information by visiting [Create your own custom plugins](/copilot/security/custom-plugins).
 
 > [!NOTE]
-> The environment for this exercise is based on a simulation, generated from pre-determined screen captures of the actual product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script are not be supported.
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
+>:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
 
 ### Exercise
 
@@ -16,11 +17,11 @@ This exercise should take approximately **10** minutes to complete.
 
 #### Before you start
 
-For the purpose of this exercise, you'll be using a sample .yaml file, 'KQL_DefenderExample.yaml'.
+For this exercise, you'll be using a sample .yaml file, 'KQL_DefenderExample.yaml.'
 
 1. Select the link **[KQL_DefenderExample.yaml](https://github.com/MicrosoftLearning/SC-5006-Get-started-with-Microsoft-Copilot-for-Security/blob/master/Sample%20files/KQL_DefenderExample.yaml?azure-portal=true)** to access the sample file.
 
-1. Select the **Download raw file ![download raw file icon](../media/raw-file-download-icon-v2.png)** icon.  Save the file on your local computer, as you will need it later.  
+1. Select the **Download raw file ![download raw file icon](../media/raw-file-download-icon-v2.png)** icon. Save the file on your local computer, as you will need it later. 
 
    Alternatively, because this is a simulation, you can create the file named 'KQL_DefenderExample.yaml.' Because this is a simulation, the contents of the file you create won't matter. The system capabilities and prompt responses shown in the simulation, however, are based on the actual file.
 
@@ -47,19 +48,19 @@ In this task, you upload the file named, KQL_DefenderExample.yaml, that you down
 
 1. From the prompt bar on the Copilot landing page, select the **sources** icon.
 
-1. On the Manage sources window, scroll down until you get to the Custom plugins. Select the **sources** icon displayed on the far right of where it says Custom. This opens the Add a plugin window.
+1. On the Manage sources window, scroll down until you get to the Custom plugins. Select the **Add plugin ![add plugin button](../media/add-plugin-button.png)** button. This opens the Add a plugin window.
 
 1. In the Add a plugin window, ensure the setting for Who can use this plugin is set to **Just me**.
 
 1. For this exercise, select **Copilot for Security Plugin** as this is the format for the .yaml file of your custom plugin.
 
-1. From the upload box that appears, select **Upload file**, then select the file you previously downloaded to your local computer, **KQL_DefenderExample.yaml**
+1. From the upload box that appears, select **Upload file**, then select the file you previously downloaded to your local computer, **KQL_DefenderExample.yaml** then select **Add**.
 
 1. On the custom plugins page, the plugin has been added and is enabled. Note the private tag.
 
 1. Select the **Settings** icon. The settings icon shows basic plugin information. Note the name and brief description. This is a basic sample plugin so there are no configuration parameters to configure. If there were API keys or sign-in credentials required for the plugin, this is where they would be configured, like the exercise where you configured the Microsoft Sentinel plugin. Here you can also delete the plugin. Select Cancel to exit the page.
 
-1. Exit the manage sources window.
+1. Close the manage sources window by selecting the **X** on the top right of the window.
 
 #### Task:  Test the custom plugin
 
@@ -69,7 +70,7 @@ In this task, you verify the capability enabled by the plugin can be accessed fr
 
 1. Select **See all system capabilities**.
 
-1. Scroll down until you get to **My sample Defender KQL** plugin. Listed below the plugin name is the capability (prompt) enabled by the plugin. Select **Get Latest Emails by Recipient** to run the prompt. For future reference you can search by this capability (prompt) name.
+1. Scroll all the way down until you get to **My sample Defender KQL** plugin. Listed below the plugin name is the capability (prompt) enabled by the plugin. Select **Get Latest Emails by Recipient** to run the prompt. For future reference you can search by this capability (prompt) name.
 
 1. Enter email address of a user whose email you need to audit: **nosv32@woodgrove.ms**.
 
