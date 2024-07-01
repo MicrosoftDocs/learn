@@ -43,7 +43,7 @@ A key task when you deploy a .NET Aspire solution to any Kubernetes cluster is t
 
 ## Using Aspir8 to deploy
 
-You can obtain Aspir8 from NuGet by running this command
+You can obtain Aspir8 from NuGet by running this command:
 
 ```dotnetcli
 dotnet tool install -g aspirate --prerelease
