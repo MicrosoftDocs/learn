@@ -67,7 +67,7 @@ In Outlook, you can set a default label for each folder to manage emails efficie
 #### Behavior of default labels in Outlook
 
 - **Inheritance**: All emails in the folder, including new and existing unlabeled emails, automatically receive the default label.
-- **Changing labels**: Updating the default label affects all emails that have inherited it unless they have been individually labeled.
+- **Changing labels**: Updating the default label affects all emails that have inherited it unless they're individually labeled.
 - **Moving emails**: Emails moved to another folder with a different default label inherits the new label settings.
 
 By using default labels, organizations can ensure consistent data management practices across their digital environments, reducing the risk of noncompliance and enhancing operational efficiency.
@@ -80,3 +80,9 @@ By using default labels, organizations can ensure consistent data management pra
    :::image type="content" source="../media/outlook-auto-retention-rule.png" alt-text="Screenshot showing how to automatically set a default retention using an Outlook rule.":::
 
 Effective management of retention labels in Microsoft Purview is essential for compliance and organized data management. By familiarizing yourself with manual applications, default settings, and automation through Outlook rules, you ensure consistent adherence to your organization's data management policies. Regularly update and review your retention practices to align with evolving needs and regulations, optimizing your data lifecycle management.
+
+## Apply a retention label interactive guide
+
+Use the **Apply a retention label** interactive guide for a walkthrough on publishing and applying retention labels across workloads.
+
+[:::image type="content" source="../media/apply-retention-label-interactive-guide-cover.png" alt-text="Cover for an interactive guide that says Apply a retention label." border="false":::](https://mslearn.cloudguides.com/guides/Apply%20a%20retention%20label%20in%20Microsoft%20Purview?azure-portal=true)

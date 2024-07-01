@@ -4,7 +4,7 @@ title: Configure event-based retention
 metadata:
   title: Configure event-based retention
   description: "Configure event-based retention."
-  ms.date: 06/28/2024
+  ms.date: 07/01/2024
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
@@ -13,3 +13,17 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/configure-event-based-retention.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of these scenarios is ideal for implementing event-based retention?"
+    choices:
+    - content: "When documents need to be retained indefinitely."
+      isCorrect: false
+      explanation: "Incorrect: Event-based retention is ideal for specific durations based on events, not indefinite retention."
+    - content: "When managing documents based on employee departures, contract expirations, or product lifecycles."
+      isCorrect: true
+      explanation: "Correct: Event-based retention is used for scenarios like employee departures, contract expirations, or product lifecycles."
+    - content: "When organizing documents by category."
+      isCorrect: false
+      explanation: "Incorrect: Event-based retention focuses on retention periods based on events, not organizing documents by category."

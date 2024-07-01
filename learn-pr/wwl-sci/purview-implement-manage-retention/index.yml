@@ -3,7 +3,7 @@ uid: learn.wwl.purview-implement-manage-retention
 metadata:
   title: Implement and manage retention with Microsoft Purview
   description: "Implement and manage retention with Microsoft Purview."
-  ms.date: 06/28/2024
+  ms.date: 07/01/2024
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -11,7 +11,7 @@ metadata:
   ai-usage: ai-assisted
   hidden: false
 title: Implement and manage retention with Microsoft Purview
-summary: Microsoft Purview provides tools to manage data retention and records, ensuring compliance through policies, labels, event-based retention, adaptive and static scopes, and disposition reviews..
+summary: Microsoft Purview provides tools to manage data retention and records, ensuring compliance through policies, labels, event-based retention, adaptive and static scopes, and disposition reviews.
 abstract: |
   After completing this module, you'll be able to:
   - Understand the differences between retention policies and retention labels.
@@ -23,7 +23,7 @@ abstract: |
 prerequisites: |
   - Basic understanding of data management concepts.
   - Familiarity with the Microsoft Purview portal.
-iconUrl: /training/achievements/manage-microsoft-purview-audit-premium.svg
+iconUrl: /training/achievements/manage-records.svg
 levels:
 - intermediate
 roles:
