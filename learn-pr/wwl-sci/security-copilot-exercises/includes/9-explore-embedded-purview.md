@@ -24,16 +24,15 @@ In this task, you enable the Microsoft Purview plugin. For this task, you work i
 
 1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security]( https://app.highlights.guide/start/cccb66cb-3ca0-4d88-92dd-b6bee0f2c563?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
-1. From the Microsoft Copilot for Security landing page, select the sources icon in the prompt bar.
-    1. Expand the Microsoft plugins
+1. From the Microsoft Copilot for Security landing page, select the **Sources icon** ![sources icon](../media/sources-icon.png) in the prompt bar.
+    1. From the manage sources window, under the Microsoft plugins, select **Show 11 more**.
     1. Scroll down so that the Microsoft Purview plugin is visible.
-    1. Select the information icon. Note the instructions then close the plugins page.
+    1. Select the **Information icon** ![screenshot of information icon](../media/information-icon.png). Note the instructions then close the plugins page by selecting the **X** on the top-right corner of the manage sources window.
 
-1. Select the home menu (hamburger icon)
-    1. Select owner settings.
-    1. Enable the toggle for “Allow Copilot for Security to access data from your Microsoft 365 services.”
-    1. To exit out of the manage sources window, select the **X**.
-    1. Return to the Copilot home page, by selecting the home menu (hamburger) icon and selecting **Home**.
+1. Select the **Home menu** ![screenshot of the home menu icon](../media/home-menu-icon.png), often referred to as the hamburger icon.
+    1. Select **Owner settings**.
+    1. Enable the toggle switch next to **Allow Copilot for Security to access data from your Microsoft 365 services**.
+    1. Return to the Copilot home page, by selecting **Microsoft Copilot for Security** on the top-left of the page next to the the home menu (hamburger) icon.
 
 1. Now that you’ve enabled Copilot to access data from your Microsoft 365 services, return to the plugins page and enable the Microsoft Purview plugin.
     1. From the promptbar, select the **Sources icon**.
@@ -80,7 +79,7 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
 
 1. Investigating DLP alerts can be overwhelming due to the large number of sources to analyze, including apps, cloud services, email, endpoints and chat, and the varying rules and conditions of a policy.
 
-1. Select the alert labeled, **DLP policy match for document cardholder transaction Log.xlsx in OneDrive**.
+1. Select the first alert from the list, labeled, **DLP policy match for document cardholder transaction Log.xlsx in OneDrive**.
     1. A side panel opens listing some details of this alert, including the alert status, severity, the DLP policy match, location, and user involved. From the bottom of the page, select **View details**. This opens a new browser tab.
     1. Select the **Events** tab. For the selected event, you can view event details, impacted entities and more.
     1. Select the **Classifiers** tab. Under classifiers, you can view the specific sensitive information types or trainable classifiers that were matched.
@@ -88,7 +87,7 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
     1. Close this browser tab, but be sure to keep the 'Alerts|Microsoft Purview' tab open.
 
 1. Now view the information that Copilot can generate with the click of a button.
-    1. From the Alerts|Microsoft Purview tab, which is showing the side panel with information about the alert, select **Get a summary from Security Copilot**.
+    1. From the Alerts|Microsoft Purview tab, which is showing the side panel with information about the alert, select **Summarize with Copilot**.
     1. This comprehensive summary provides key details, including policy rules, source, files involved and more. Additionally, the summary pulls the user risk levels from Insider Risk Management, providing integrated insights across data security solutions. These summaries provide you with a better starting point for further investigation.
 
 1. From the left navigation panel, select **Home** to return the Microsoft Purview portal. You'll return to this page in the next task.
