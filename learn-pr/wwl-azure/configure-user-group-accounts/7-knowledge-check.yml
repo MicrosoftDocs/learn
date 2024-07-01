@@ -29,23 +29,23 @@ quiz:
       explanation: "Correct. A guest user account restricts users to just the access they need."
   - content: "What kind of group account can you create so you can apply the same permissions to all group members?"
     choices:
-    - content: "Security group​"
+    - content: "Security group.​"
       isCorrect: true
       explanation: "Correct. You can create a security group for a specific security policy and apply the same permissions to all members of the group."
-    - content: "Microsoft Entra bulk group​"
+    - content: "Microsoft Entra bulk group.​"
       isCorrect: false
-      explanation: "Incorrect. You can do bulk operations on users in Microsoft Entra ID, but there's no defined 'bulk' group."
-    - content: "Microsoft 365 group​"
+      explanation: "Incorrect. There is no bulk group account."
+    - content: "Microsoft 365 group.​"
       isCorrect: false
       explanation: "Incorrect. Microsoft 365 groups give members access to a shared mailbox, calendar, files, and so on."
   - content: "Which Microsoft Entra role enables a user to manage all groups in your Teams tenants, and also assign other admin roles?"
     choices:
-    - content: "Global administrator"
+    - content: "Global administrator."
       isCorrect: true
       explanation: "Correct. The Global Administrator role manages all aspects of Microsoft Entra ID and Microsoft services that use Microsoft Entra identities. This role can manage groups across tenants and assign other administrator roles."
-    - content: "Security administrator​"
+    - content: "Security administrator.​"
       isCorrect: false
       explanation: "Incorrect. The Security Administrator role can read security information and reports, and manage configuration in Microsoft Entra ID and Microsoft 365."
-    - content: "User administrator​"
+    - content: "User administrator.​"
       isCorrect: false
       explanation: "Incorrect. The User Administrator role can manage all aspects of users and groups, including resetting passwords for limited admins."
