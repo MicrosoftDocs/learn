@@ -1,54 +1,53 @@
 ### YamlMime:Module
-uid: learn.entra-external-identities
+uid: learn.entra-external-identities.eeid-poc
 metadata:
-  title: Guided project – Build a sample app to evaluate Entra External Identities for seamless and secure sign-up and sign-in for consumers and business customers.
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
-  ms.date: 6/3/2024
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
-  ms.topic: module-guided-project # Please don't edit, used for our analytics
-###########################################################################
-###
-### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
-### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
-###
-### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
-###
-### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
-### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
-### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.prod: TODO
-  ms.service: TODO
-title: Guided project – Build a sample app to evaluate Entra External Identities for seamless and secure sign-up and sign-in for consumers and business customers.
+  title: Guided project – Build a sample app to evaluate Entra External Identities for seamless and secure sign-up and sign-in for consumers and business customers
+  description: Discover how Entra External Identities can provide secure, seamless sign-in experiences for your consumers and business customers. Explore tenant creation, app registration, flow customization, and account security.
+  ms.date: 6/25/2024
+  author: linkhp
+  ms.author: lipar
+  ms.topic: module-guided-project
+  ms.service: entra-external-id
+title: Guided project – Build a sample app to evaluate Entra External Identities for seamless and secure sign-up and sign-in for consumers and business customers
 summary: |
-  TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title, include the note below; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
-  > [!NOTE]
-  > This is a **_Guided Project_** module where you complete an end-to-end project by following step-by-step instructions.
+ Discover how Entra External Identities can provide secure, seamless sign-in experiences for your consumers and business customers. Explore tenant creation, app registration, flow customization, and account security.
 abstract: |
-   In this module, you'll practice how to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+   By the end of this module, you'll be able to:
+    - Build a branded, seamless and secure sign-up and sign-in experiences for your web application
+    - Assess Entra External Identities identity provider capabilities against consumer and business customer needs
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
-iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
-  - TODO
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
-  - TODO
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-  {{products}}
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
-  - TODO
+  - An Azure subscription and Azure account 
+  - If you don’t have any Azure subscriptions, any personal account, Microsoft account (MSA) or GitHub account
+  - (Optional) The latest version of Visual Studio Code
+  - (Optional) The latest version of PowerShell
+iconUrl: http://via.placeholder.com/120x120
+levels:
+  - intermediate
+roles:
+  - administrator
+  - developer
+  - identity-access-admin
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+products:
+- entra-external-id
+subjects:
+  - identity-access
 units:
-- learn.entra-external-identitie.introduction
-- learn.entra-external-identitie.prepare
-- learn.entra-external-identitie.exercise
-- learn.entra-external-identitie.exercise
-- learn.entra-external-identitie.exercise
-- learn.entra-external-identitie.knowledge-check
-- learn.entra-external-identitie.summary
+- learn.entra-external-identities.eeid-poc.introduction
+- learn.entra-external-identities.eeid-poc.prepare
+- learn.entra-external-identities.eeid-poc.create-an-external-tenant
+- learn.entra-external-identities.eeid-poc.register-an-application
+- learn.entra-external-identities.eeid-poc.create-a-sign-up-and-sign-in-user-flow
+- learn.entra-external-identities.eeid-poc.add-an-admin-account
+- learn.entra-external-identities.eeid-poc.collect-user-attributes-during-sign-up
+- learn.entra-external-identities.eeid-poc.customize-the-look-and-feel-of-your-flows
+- learn.entra-external-identities.eeid-poc.enable-email-with-password-sign-in
+- learn.entra-external-identities.eeid-poc.enable-social-identity-provider-sign-in
+- learn.entra-external-identities.eeid-poc.validate-attributes-collected-during-sign-up
+- learn.entra-external-identities.eeid-poc.enable-multifactor-authentication
+- learn.entra-external-identities.eeid-poc.knowledge-check
+- learn.entra-external-identities.eeid-poc.summary
 badge:
-  uid: learn.entra-external-identities.badge
+  uid: learn.entra-external-identities.eeid-poc.badge
