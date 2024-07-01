@@ -1,5 +1,5 @@
 > [!CAUTION]
-> This content references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
+> This content references CentOS, a Linux distribution that is End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
 
 Azure Arc lets you manage physical and virtual Linux machines hosted outside of Azure, on your corporate network, or other cloud provider. Organizations like Contoso can manage their Linux resources with Azure just as they do their Arc-enabled Windows machines. Linux machines onboarded to Azure Arc enjoy the same capabilities as native Azure machines, including standard Azure constructs such as Azure policy and applying tags.
 
