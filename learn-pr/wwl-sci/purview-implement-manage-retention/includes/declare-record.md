@@ -61,6 +61,6 @@ Users can apply retention labels marking items as records or regulatory records:
 - In Exchange, any user with write access to the mailbox.
 - In SharePoint and OneDrive, any user in the default Members group with Contribute permission level.
 
-   :::image type="content" source="../media/retention-label-record.png" alt-text="Screenshot showing how to create a retention label for a record or regulatory record." lightbox ="../media/retention-label-record.png":::
+   :::image type="content" source="../media/retention-label-record.png" alt-text="Screenshot showing where to mark an item as a record in SharePoint and OneDrive." lightbox ="../media/retention-label-record.png":::
 
 Declaring content as records helps in enforcing legal holds and ensuring that critical information is preserved according to legal and organizational standards. It also aids in automating the retention and deletion processes, reducing the risk of human error.

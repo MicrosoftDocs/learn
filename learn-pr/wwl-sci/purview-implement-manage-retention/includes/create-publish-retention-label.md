@@ -38,7 +38,7 @@ Creating retention labels involves defining retention or deletion periods and sp
 
    - Review and categorize the retention label using predefined descriptors such as **Business function/department**, **Category**, **Authority type**, and **Provision/citation**.
 
-        :::image type="content" source="../media/file-plan-descriptors.png" alt-text="Screenshot showing the Records Management card in the Microsoft Purview portal.":::
+        :::image type="content" source="../media/file-plan-descriptors.png" alt-text="Screenshot showing the Define file plan descriptors for this label page.":::
 
    - Select or create descriptors:
 
