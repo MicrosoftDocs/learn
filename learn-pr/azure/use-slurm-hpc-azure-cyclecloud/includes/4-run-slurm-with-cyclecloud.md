@@ -5,7 +5,7 @@ After completing this unit, you should be able to use Slurm on Azure CycleCloud.
 
 ## Enabling Slurm on CycleCloud
 
-You can deploy a HPC cluster using Azure CycleCloud by performing the following steps:
+You can deploy a High Performance Computing (HPC) cluster using Azure CycleCloud by performing the following steps:
 
 1. Connect to a deployed Azure CycleCloud Instance and authenticate. 
 1. On the Create a New Cluster page, review the available options, and in the Schedulers section, select Slurm.
