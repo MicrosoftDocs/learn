@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-batch-stt.exercise-customize-batch-transcription
-title: Exercise - Customize Batch Transcription of customer service recordings
+title: Exercise - Customize batch transcription of customer service recordings
 metadata:
-  title: Exercise - Customize Batch Transcription of customer service recordings
-  description: Exercise - Customize Batch Transcription of customer service recordings
-  ms.date: 03/09/2023
+  title: Exercise - Customize batch transcription of customer service recordings
+  description: Exercise - Customize batch transcription of customer service recordings
+  ms.date: 06/04/2024
   author: eric-urban
   ms.author: eur
   ms.topic: unit

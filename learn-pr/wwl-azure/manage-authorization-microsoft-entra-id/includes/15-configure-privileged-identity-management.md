@@ -9,9 +9,9 @@ Organizations want to minimize the number of people who have access to secure in
 
 However, users still need to carry out privileged operations in Microsoft Entra ID, Azure, Microsoft 365, or SaaS apps. Organizations can give users just-in-time privileged access to Azure and Microsoft Entra resources and can oversee what those users are doing with their privileged access.
 
-Privileged Identity Management (PIM) provides a time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions to important resources. These resources include resources in Microsoft Entra ID, Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune.<br>
+Privileged Identity Management (PIM) provides a time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions to important resources. These resources include resources in Microsoft Entra ID, Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune.
 
-PIM enables you to allow a specific set of actions at a particular scope. Key features include:<br>
+PIM enables you to allow a specific set of actions at a particular scope. Key features include:
 
  -  Provide just-in-time privileged access to resources<br>
  -  Assign eligibility for membership or ownership of PIM for Groups<br>
@@ -28,13 +28,13 @@ PIM enables you to allow a specific set of actions at a particular scope. Key fe
 
 The PIM concepts in this section will help you understand your organization’s privileged identity requirements.
 
-Today, you can use PIM with:<br>
+Today, you can use PIM with:
 
  -  Microsoft Entra roles – Sometimes referred to as directory roles, Microsoft Entra roles include built-in and custom roles to manage Microsoft Entra ID and other Microsoft 365 online services.<br>
  -  Azure roles – The role-based access control (RBAC) roles in Azure that grants access to management groups, subscriptions, resource groups, and resources.<br>
  -  PIM for Groups – To set up just-in-time access to member and owner role of a Microsoft Entra security group. PIM for Groups not only gives you an alternative way to set up PIM for Microsoft Entra roles and Azure roles, but also allows you to set up PIM for other permissions across Microsoft online services like Intune, Azure Key Vaults, and Azure Information Protection. If the group is configured for app provisioning, activation of group membership triggers provisioning of group membership (and the user account, if it wasn’t provisioned) to the application using the System for Cross-Domain Identity Management (SCIM) protocol.<br>
 
-You can assign the following to these roles or groups:<br>
+You can assign the following to these roles or groups:
 
  -  Users- To get just-in-time access to Microsoft Entra roles, Azure roles, and PIM for Groups.<br>
  -  Groups- Anyone in a group to get just-in-time access to Microsoft Entra roles and Azure roles. For Microsoft Entra roles, the group must be a newly created cloud group that’s marked as assignable to a role while for Azure roles, the group can be any Microsoft Entra security group. We don't recommend assigning/nesting a group to a PIM for Groups.<br>
@@ -53,16 +53,16 @@ You assign users the role with the [least privileges necessary to perform their 
 
 There are two types of assignment – **eligible** and **active**. If a user has been made eligible for a role that means they can activate the role when they need to perform privileged tasks.
 
-You can also set a start and end time for each type of assignment. This addition gives you four possible types of assignments:<br>
+You can also set a start and end time for each type of assignment. This addition gives you four possible types of assignments:
 
  -  Permanent eligible<br>
  -  Permanent active<br>
  -  Time-bound eligible, with specified start and end dates for assignment<br>
  -  Time-bound active, with specified start and end dates for assignment<br>
 
-In case the role expires, you can **extend** or **renew** these assignments.<br>
+In case the role expires, you can **extend** or **renew** these assignments.
 
-**We recommend** you keep zero permanently active assignments for roles other than the recommended **two break-glass emergency access accounts**, which should have the permanent Global Administrator role.<br>
+**We recommend** you keep zero permanently active assignments for roles other than the recommended **two break-glass emergency access accounts**, which should have the permanent Global Administrator role.
 
 ## Plan the project
 
@@ -80,7 +80,7 @@ At each stage of your deployment ensure that you are evaluating that the results
 
 Communication is critical to the success of any new service. Proactively communicate with your users how their experience changes, when it changes, and how to gain support if they experience issues.
 
-Set up time with your internal IT support to walk them through the PIM workflow. Provide them with the appropriate documentations and your contact information.<br>
+Set up time with your internal IT support to walk them through the PIM workflow. Provide them with the appropriate documentations and your contact information.
 
 ## Plan testing and rollback
 
@@ -91,11 +91,11 @@ Set up time with your internal IT support to walk them through the PIM workflow.
 
 Create test users to verify PIM settings work as expected before you impact real users and potentially disrupt their access to apps and resources. Build a test plan to have a comparison between the expected results and the actual results.
 
-The following table shows an example test case:<br>
+The following table shows an example test case:
 
-| **Role**             | **Expected behavior during activation**                                                                                                                                            | **Actual results** |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| Global Administrator | Require MFA<br>  Require approval<br>  Require Conditional Access context (Public preview)<br>  Approver receives notification and can approve<br>  Role expires after preset time |                    |
+| **Role**             | **Expected behavior during activation**                                                                                                                                    | **Actual results** |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| Global Administrator | Require MFA<br>Require approval<br>Require Conditional Access context (Public preview)<br>Approver receives notification and can approve<br>Role expires after preset time |                    |
 
 For both Microsoft Entra ID and Azure resource role, make sure that you have users represented who will take those roles. In addition, consider the following roles when you test PIM in your staged environment:
 
@@ -133,7 +133,7 @@ You can use the Privileged label to identify roles with high privileges that you
 
 [Draft and configure your PIM settings](/entra/id-governance/privileged-identity-management/pim-how-to-change-default-settings) for every privileged Microsoft Entra role that your organization uses.
 
-The following table shows example settings:<br>
+The following table shows example settings:
 
 | **Role**             | **Require MFA** | **Require Conditional Access** | **Notification** | **Incident ticket** | **Require approval** | **Approver**               | **Activation duration** | **Perm admin**            |
 | -------------------- | --------------- | ------------------------------ | ---------------- | ------------------- | -------------------- | -------------------------- | ----------------------- | ------------------------- |
@@ -187,13 +187,13 @@ Use [access reviews for Azure resources](/entra/id-governance/privileged-identit
 
 When deciding which role assignments should be managed using PIM for Azure resource, you must first identify the management groups, subscriptions, resource groups, and resources that are most vital for your organization. Consider using management groups to organize all their resources within their organization.
 
-**We recommend** you manage all Subscription Owner and User Access Administrator roles using PIM.<br>
+**We recommend** you manage all Subscription Owner and User Access Administrator roles using PIM.
 
-Work with Subscription owners to document resources managed by each subscription and classify the risk level of each resource if compromised. Prioritize managing resources with PIM based on risk level. This also includes custom resources attached to the subscription.<br>
+Work with Subscription owners to document resources managed by each subscription and classify the risk level of each resource if compromised. Prioritize managing resources with PIM based on risk level. This also includes custom resources attached to the subscription.
 
-We also recommend you work with Subscription or Resource owners of critical services to set up PIM workflow for all the roles inside sensitive subscriptions or resources.<br>
+We also recommend you work with Subscription or Resource owners of critical services to set up PIM workflow for all the roles inside sensitive subscriptions or resources.
 
-For subscriptions or resources that aren’t as critical, you won’t need to set up PIM for all roles. However, you should still protect the Owner and User Access Administrator roles with PIM.<br>
+For subscriptions or resources that aren’t as critical, you won’t need to set up PIM for all roles. However, you should still protect the Owner and User Access Administrator roles with PIM.
 
 ### Configure PIM settings for Azure Resource roles
 
@@ -214,7 +214,7 @@ You can [assign eligibility to members or owners of the PIM for Groups.](/entra/
 > You can assign the group to one or more Microsoft Entra ID and Azure resource roles in the same way as you assign roles to users. A **maximum of 500 role-assignable groups** can be created in a single Microsoft Entra organization (tenant).
 
 :::image type="content" source="../media/privileged-identity-for-groups-800d8e90.png" alt-text="Diagram showing an example of privileged identity for groups.":::
-When group assignment nears its expiration, use [PIM to extend or renew the group assignment](/entra/id-governance/privileged-identity-management/groups-renew-extend). This operation requires group owner approval.
+ When group assignment nears its expiration, use [PIM to extend or renew the group assignment](/entra/id-governance/privileged-identity-management/groups-renew-extend). This operation requires group owner approval
 
 ### Approve or deny PIM activation request
 

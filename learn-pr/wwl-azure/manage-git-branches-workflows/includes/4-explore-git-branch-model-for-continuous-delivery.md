@@ -163,7 +163,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     **Output:**
     
-    *Total 0 (delta 0), reused 0 (delta 0) To https://dev.azure.com/**organization**/**teamproject**/\_git/MyWebApp \* \[new branch\] origin/HEAD -&gt; refs/heads/feature/myFeature-2.*
+    *Total 0 (delta 0), reused 0 (delta 0) To `https://dev.azure.com/**organization**/**teamproject**/\_git/MyWebApp` \* \[new branch\] origin/HEAD -&gt; refs/heads/feature/myFeature-2.*
     
     ***myWebApp***
     
@@ -238,7 +238,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     **Output:**
     
-    *To https://dev.azure.com/**organization**/**teamproject**/\_git/MyWebApp \* \[new branch\] fof/bug-1 - fof/bug-1 Branch fof/bug-1 set up to track remote branch fof/bug-1 from origin.*
+    *To `https://dev.azure.com/**organization**/**teamproject**/\_git/MyWebApp` \* \[new branch\] fof/bug-1 - fof/bug-1 Branch fof/bug-1 set up to track remote branch fof/bug-1 from origin.*
 12. Immediately after the changes have been rolled out to production, tag the fof\\bug-1 branch with the release\_bug-1 tag, then raise a pull request to merge the changes from fof/bug-1 back into the main:
     
     ```CMD

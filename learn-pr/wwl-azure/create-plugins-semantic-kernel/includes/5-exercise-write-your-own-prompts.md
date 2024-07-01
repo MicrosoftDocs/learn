@@ -1,4 +1,4 @@
-For this exercise, you build a prompt that asks the large language model (LLM) to provide a list of helpful phrases in French. You can also try this exercise with other languages of your choice. Let's get started!
+For this exercise, you build a prompt that asks the large language model (LLM) to provide a list of helpful phrases in French. You can also test your code with different languages of your choice. Let's get started!
 
 1. Open the Visual Studio Code project you created in the previous exercise.
 
@@ -9,10 +9,10 @@ For this exercise, you build a prompt that asks the large language model (LLM) t
     using Microsoft.SemanticKernel.Plugins.Core;
 
     var builder = Kernel.CreateBuilder();
-    builder.Services.AddAzureOpenAIChatCompletion(
-        "your-resource-name",
+    builder..AddAzureOpenAIChatCompletion(
+        "your-deployment-name",
         "your-endpoint",
-        "your-resource-key",
+        "your-api-key",
         "deployment-model");
 
     var kernel = builder.Build();
@@ -43,7 +43,7 @@ For this exercise, you build a prompt that asks the large language model (LLM) t
     11. Où est la gare? - Where is the train station?
     ```
 
-    The response comes from the Azure Open AI model you passed to the kernel. The Semantic Kernel SDK connects to the large language model (LLM) and runs the prompt. You can improve this prompt by adding more specific instructions.
+    The response comes from the Azure OpenAI model you passed to the kernel. The Semantic Kernel SDK connects to the large language model (LLM) and runs the prompt. You can improve this prompt by adding more specific instructions.
 
 1. Update your prompt to match the following text:
 
@@ -55,7 +55,7 @@ For this exercise, you build a prompt that asks the large language model (LLM) t
         the following format: Hello - Ciao [chow]";
     ```
 
-    You can provide the LLM with specific instructions to format a response. If you run the new prompt you should see a more detailed response, similar to the following output:
+    In this prompt, you provide the LLM with specific instructions to format the response. If you run the new prompt you should see a more detailed response, similar to the following output:
 
     ```output
     Restaurant Phrases:
@@ -89,7 +89,7 @@ For this exercise, you build a prompt that asks the large language model (LLM) t
         Hello - Ciao [chow]";
     ```
 
-    Now the LLM can consider the traveler's information when generating the list of phrases. We also added instructions to include common direction words.
+    Now the LLM can consider the traveler's information when generating the list of phrases. You also added instructions to include common direction words.
 
     The output might look similar to the following response:
 

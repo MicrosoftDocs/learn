@@ -28,6 +28,8 @@ Azure Backup also supports SQL Server backup types. The following table outlines
 | --- | --- | --- |
 | Full | A full database backup backs up the entire database. It contains all the data in a specific database or in a set of filegroups or files. A full backup also contains enough logs to recover that data. | At most, you can trigger one full backup per day.  You can choose to make a full backup on a daily or weekly interval. |
 | Differential | A differential backup is based on the most recent, previous full-data backup. It captures only the data that's changed since the full backup. | At most, you can trigger one differential backup per day. You can't configure a full backup and a differential backup on the same day. |
+| Multiple backups per day | Back up Azure VMs hourly with a minimum recovery point objective (RPO) of 4 hours and a maximum of 24 hours. |	You can use Enhanced backup policy to set the backup schedule to 4, 6, 8, 12, and 24 hours, respectively for new Azure offerings, such as  Trusted Launch VM. |
+| Selective disk backup | Selectively back up a subset of the data disks that are attached to your VM, and then restore a subset of the disks that are available in a recovery point, both from instant restore and vault tier. It helps you manage critical data in a subset of the VM disks and use database backup solutions when you want to back up only their OS disk to reduce cost. | Azure Backup provides Selective Disk backup and restore capability using Enhanced backup policy. |
 | Transaction Log | A log backup enables point-in-time restoration up to a specific second. | At most, you can configure transactional log backups every 15 minutes. |
 
 ## Workload integration layer - Backup Extension
@@ -60,11 +62,11 @@ All tiers offer different recovery time objectives (RTO) and are priced differen
 
 The backup data is replicated across zones or regions (based on the redundancy specified by the user). You can choose from locally redundant storage (LRS), Geo-redundant storage (GRS), or zone-redundant storage (ZRS). These options provide you with highly available data storage capabilities.
 
-The data is kept safe by encrypting it and implementing role-based access control (RBAC). You choose who can perform backup and restore operations. Azure Backup also provides protection against malicious deletion of your backup by using soft-delete operations. A deleted backup is stored for 14 days, free of charge, which allows you to recover the backup if needed.
+The data is kept safe by encrypting it and implementing Azure role-based access control (Azure RBAC). You choose who can perform backup and restore operations. Azure Backup also provides protection against malicious deletion of your backup by using soft-delete operations. A deleted backup is stored for 14 days, free of charge, which allows you to recover the backup if needed.
 
 Azure Backup also supports a backup data lifecycle management scenario that allows you to comply with retention policies.
 
-:::image type="content" source="../media/built-in-security.png" alt-text="Graphic displaying the three security options of RBAC, encryption, and soft delete as icons.":::
+:::image type="content" source="../media/built-in-security.png" alt-text="Graphic displaying the three security options of Azure RBAC, encryption, and soft delete as icons.":::
 
 ## Management Plane – Recovery Services vault/Backup vault and Backup center
 

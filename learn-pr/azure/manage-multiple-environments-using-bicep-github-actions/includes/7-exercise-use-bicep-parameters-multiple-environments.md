@@ -1,6 +1,6 @@
-Now that your workflow deploys to both of your environments, you're ready to integrate with the partner API for product reviews.
+Now that your workflow deploys to both of your environments, you're ready to integrate with the third-party API for product reviews.
 
-Your website team has provided you with the API keys and URLs that your website needs to access the service. There are different keys for your test and production environments to use. In this unit, you update your workflow to configure each of your environments with the correct settings for the product review API.
+Your website team has provided you with the API keys and URLs that your website should use to access the service. There are different values for your test and production environments to use. In this unit, you'll update your workflow to configure each of your environments with the correct settings for the product review API.
 
 During the process, you'll:
 

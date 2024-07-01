@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.finetune-model-copilot-ai-studio.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check about fine-tuning a language model."
+  ms.date: 6/26/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "How must data be formatted for fine-tuning?"
+    choices:
+    - content: "JSONL"
+      isCorrect: true
+      explanation: "Correct. JSONL or JSON Lines is the expected input format."
+    - content: "YAML"
+      isCorrect: false
+      explanation: "Incorrect. In the context of the Azure AI Studio, YAML is used to specify the configuration of jobs or flows."
+    - content: "HTML"
+      isCorrect: false
+      explanation: "Incorrect. HTML is a markup language for web pages."
+  - content: "What does fine-tuning optimize in your model?"
+    choices:
+    - content: "What the model needs to know."
+      isCorrect: false
+      explanation: "Incorrect. To optimize what the model needs to know, RAG is more effective."
+    - content: "How the model needs to act."
+      isCorrect: true
+      explanation: "Correct. Fine-tuning can help to maximize the consistency of the model's behavior."
+    - content: "Which words aren’t allowed."
+      isCorrect: false
+      explanation: "Incorrect. To filter specific content like words, you can use a content filter."
+  - content: "Which advanced option refers to one full cycle through the training dataset?"
+    choices:
+    - content: "seed"
+      isCorrect: false
+      explanation: "Incorrect. The seed controls the reproducibility of the job."
+    - content: "batch_size"
+      isCorrect: false
+      explanation: "Incorrect. The batch size specifies the number of training examples used."
+    - content: "n_epochs"
+      isCorrect: true
+      explanation: "Correct. When you set the number of epochs, you set the number of full cycles to run through the dataset."

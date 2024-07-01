@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security-active-directory.configure-user-account-rights
+title: Configure user account rights
+metadata:
+  title: Configure user account rights
+  description: "Configure user account rights"
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-configure-user-account-rights.md)]

@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.wwl.create-configure-group-policy-objects-active-directory
+metadata:
+  title: Create and configure Group Policy Objects in Active Directory
+  description: "This module focuses on Group Policy objects, including using them to enforce a robust password policy."
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: module
+  ms.service: active-directory
+  ai-usage: ai-assisted
+title: Create and configure Group Policy Objects in Active Directory
+summary: This module focuses on Group Policy objects, including using them to enforce a domain wide as well as fine-grained password policy.
+abstract: |
+  By the end of this module, you'll be able to:
+
+  -   Define Group Policy Objects.
+
+  -   Implement Group Policy Object scope and inheritance.
+
+  -   Define domain-based Group Policy Objects.
+
+  -   Create and configure a domain-based Group Policy Object.
+
+  -   Configure a domain password policy.
+
+  -   Configure and apply a fine-grained password policy.
+prerequisites: |
+  Knowledge of and experience working with:
+
+  - Windows Server.
+
+  - Core networking technologies.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- active-directory
+subjects:
+- architecture
+- device-management
+- infrastructure
+units:
+- learn.wwl.create-configure-group-policy-objects-active-directory.introduction
+- learn.wwl.create-configure-group-policy-objects-active-directory.define-group-policy-objects
+- learn.wwl.create-configure-group-policy-objects-active-directory.implement-object-scope-inheritance
+- learn.wwl.create-configure-group-policy-objects-active-directory.define-domain-based
+- learn.wwl.create-configure-group-policy-objects-active-directory.create-configure-domain-based-object
+- learn.wwl.create-configure-group-policy-objects-active-directory.configure-domain-password-policy
+- learn.wwl.create-configure-group-policy-objects-active-directory.configure-apply-fine-grained-password-policy
+- learn.wwl.create-configure-group-policy-objects-active-directory.knowledge-check
+- learn.wwl.create-configure-group-policy-objects-active-directory.summary
+badge:
+  uid: learn.wwl.create-configure-group-policy-objects-active-directory.badge
