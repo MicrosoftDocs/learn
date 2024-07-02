@@ -12,7 +12,7 @@ The following table lists the main differences between Codespaces and GitHub.dev
 |--------|--------|--------|
 | **Cost** | Free | Free monthly quota of usage for personal accounts. |
 | **Availability** |  Available to everyone on GitHub.com | Available to everyone on GitHub.com. |
-| **Startup** | GitHub.dev opens instantly with a key-press and you can start using it right away without having to wait for configuration or installation. | When you create or resume a Codespace, the Codespace is assigned a VM, and the container is configured based on the contents of a devcontainer.json file. This setup takes a few minutes to create the development environment. |
+| **Startup** | GitHub.dev opens instantly with a key-press and you can start using it right away without having to wait for configuration or installation. | When you create or resume a Codespace, the Codespace is assigned a VM. The container is then configured based on the contents of a devcontainer.json file. This setup takes a few minutes to create the development environment. |
 | **Compute** | There are no associated compute resources, so you can't build and run your code or use the integrated terminal. | With GitHub Codespaces, you get the power of a dedicated VM to run and debug your application. |
 | **Terminal access** | None | GitHub Codespaces provides a common set of tools by default, meaning that you can use the Terminal exactly as you would in your local environment. |
 | **Extensions** | Only a subset of extensions that can run on the web appear in the extensions view and can be installed | With GitHub Codespaces, you can use most extensions from the Visual Studio Code Marketplace. |
