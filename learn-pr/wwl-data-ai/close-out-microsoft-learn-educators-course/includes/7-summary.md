@@ -2,7 +2,7 @@ The Microsoft Learn for Educators program can help you prepare to deliver a clas
 
 Thank you for letting us partner with you as we seek to transform the future of education together.
 
-##Supplemental resources
+## Supplemental resources
 
 - [Microsoft Learn](https://aka.ms/learn)
 - [Microsoft Learn for Educators](https://aka.ms/msle)
