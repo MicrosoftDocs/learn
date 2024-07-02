@@ -10,7 +10,9 @@ metadata:
   ms.service: entra-external-id
 title: Guided project – Build a sample app to evaluate Entra External Identities for seamless and secure sign-up and sign-in for consumers and business customers
 summary: |
- Discover how Entra External Identities can provide secure, seamless sign-in experiences for your consumers and business customers. Explore tenant creation, app registration, flow customization, and account security.
+  Discover how Entra External Identities can provide secure, seamless sign-in experiences for your consumers and business customers. Explore tenant creation, app registration, flow customization, and account security.
+  > [!NOTE]
+  >  This is a **_guided project_** module where you’ll complete an end-to-end project by following step-by-step instructions.
 abstract: |
    In this module, you'll practice how to:
     - Build a branded, seamless and secure sign-up and sign-in experiences for your web application
