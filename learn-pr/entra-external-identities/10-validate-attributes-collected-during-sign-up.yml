@@ -12,5 +12,5 @@ metadata:
   ms.service: entra-external-id
 durationInMinutes: 20
 content: |
-  [!include[](includes/11-validate-attributes-collected-during-sign-up.md)]
+  [!include[](includes/10-validate-attributes-collected-during-sign-up.md)]
   [!include[](includes/linktosurvey.md)]

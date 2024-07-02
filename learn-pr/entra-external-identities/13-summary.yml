@@ -11,5 +11,5 @@ metadata:
   ms.service: entra-external-id
 durationInMinutes: 1
 content: |
-  [!include[](includes/14-summary.md)]
+  [!include[](includes/13-summary.md)]
   [!include[](includes/linktosurvey.md)]

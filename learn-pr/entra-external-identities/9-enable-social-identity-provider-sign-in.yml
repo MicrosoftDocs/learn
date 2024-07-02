@@ -12,5 +12,5 @@ metadata:
   ms.service: entra-external-id
 durationInMinutes: 10
 content: |
-  [!include[](includes/10-enable-social-identity-provider-sign-in.md)]
+  [!include[](includes/9-enable-social-identity-provider-sign-in.md)]
   [!include[](includes/linktosurvey.md)]
