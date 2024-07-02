@@ -40,10 +40,10 @@ quiz:
     choices:
     - content: "Microsoft Virtual Training Days and free practice assessments."
       isCorrect: true
-      explanation: "Feedback: Correct. Additional certification exam support for students and educators is available through [Microsoft Virtual Training Days](https://events.microsoft.com/allevents) and [free practice assessments](https://aka.ms/practiceassessments)"
+      explanation: "Feedback: Correct. Additional certification exam support for students and educators is available through [Microsoft Virtual Training Days](https://events.microsoft.com/allevents) and [free practice assessments](https://aka.ms/practiceassessments)."
     - content: "Microsoft Learned Career Connected Talent Coalition."
       isCorrect: false
-      explanation: "Feedback: Incorrect. Additional certification exam support for students and educators is available through [Microsoft Virtual Training Days](https://events.microsoft.com/allevents) and [free practice assessments](https://aka.ms/practiceassessments)"
+      explanation: "Feedback: Incorrect. Additional certification exam support for students and educators is available through [Microsoft Virtual Training Days](https://events.microsoft.com/allevents) and [free practice assessments](https://aka.ms/practiceassessments)."
     - content: "MSLE Download Center."
       isCorrect: false
-      explanation: "Feedback: Incorrect. Additional certification exam support for students and educators is available through [Microsoft Virtual Training Days](https://events.microsoft.com/allevents) and [free practice assessments](https://aka.ms/practiceassessments)"
+      explanation: "Feedback: Incorrect. Additional certification exam support for students and educators is available through [Microsoft Virtual Training Days](https://events.microsoft.com/allevents) and [free practice assessments](https://aka.ms/practiceassessments)."
