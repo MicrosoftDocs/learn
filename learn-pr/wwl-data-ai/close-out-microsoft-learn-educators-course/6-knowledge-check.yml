@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.close-out-microsoft-learn-educators-course.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/02/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Where is the educator-specific survey to help improve MSLE located?"
+    choices:
+    - content: "Microsoft Learn for Educators Portal."
+      isCorrect: true
+      explanation: "Feedback: Correct. An educator-specific survey is located in the Microsoft Learn for Educators Portal. Providing your feedback will help us better understand your experience as a faculty member within the Microsoft Learn for Educators program."
+    - content: "Microsoft Learn for Educators."
+      isCorrect: false
+      explanation: "Feedback: Incorrect. An educator-specific survey is located in the Microsoft Learn for Educators Portal. Providing your feedback will help us better understand your experience as a faculty member within the Microsoft Learn for Educators program."
+    - content: "Microsoft Learn."
+      isCorrect: false
+      explanation: "Feedback: Incorrect. An educator-specific survey is located in the Microsoft Learn for Educators Portal. Providing your feedback will help us better understand your experience as a faculty member within the Microsoft Learn for Educators program."
+  - content: "What program helps support skilled and credentialed students looking for jobs within the Microsoft ecosystem of customers and partners?"
+    choices:
+    - content: "MSLE portal."
+      isCorrect: false
+      explanation: "incorrect choice"
+    - content: "Microsoft Learn Career Connected."
+      isCorrect: true
+      explanation: "correct choice"
+    - content: "MSLE Download Center."
+      isCorrect: false
+      explanation: "incorrect choice"
+  - content: "Besides Microsoft Learn, where can students and educators find additional certification exam support?"
+    choices:
+    - content: "Microsoft Virtual Training Days and free practice assessments."
+      isCorrect: true
+      explanation: "Feedback: Correct. Additional certification exam support for students and educators is available through [Microsoft Virtual Training Days](https://events.microsoft.com/allevents) and [free practice assessments](https://aka.ms/practiceassessments)"
+    - content: "Microsoft Learned Career Connected Talent Coalition."
+      isCorrect: false
+      explanation: "Feedback: Incorrect. Additional certification exam support for students and educators is available through [Microsoft Virtual Training Days](https://events.microsoft.com/allevents) and [free practice assessments](https://aka.ms/practiceassessments)"
+    - content: "MSLE Download Center."
+      isCorrect: false
+      explanation: "Feedback: Incorrect. Additional certification exam support for students and educators is available through [Microsoft Virtual Training Days](https://events.microsoft.com/allevents) and [free practice assessments](https://aka.ms/practiceassessments)"
