@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.begin-your-microsoft-learn-educators-journey.identify-ongoing-support
+title: Identify ongoing support
+metadata:
+  title: Identify ongoing support
+  description: "Identify ongoing support"
+  ms.date: 07/02/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-identify-ongoing-support.md)]
