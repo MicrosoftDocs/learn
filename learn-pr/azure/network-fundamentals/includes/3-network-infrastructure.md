@@ -6,7 +6,7 @@ In this unit, you learn about the term *network standards* and explore the hardw
 
 While network protocols provide a unified method for communication, network standards govern the hardware and software that uses them.
 
-Today, there are hundreds of thousands of hardware suppliers, yet all of their technology seamlessly integrates with your computer or network with minimal effort. Network standards provide a framework that enables the interoperability between devices.
+Today, there are hundreds of thousands of hardware suppliers. Yet all of their technology seamlessly integrates with your computer or network with minimal effort. Network standards provide a framework that enables the interoperability between devices.
 
 Network standards improve the interoperability of different network-enabled devices and provide backward compatibility between product revisions and differing vendors. Official bodies that publish regulated standards are the International Telecommunication Union (ITU), the American National Standards Institute (ANSI), and the Institute of Electrical and Electronics Engineers (IEEE).
 
@@ -109,7 +109,7 @@ Here's a list of the more commonly available options to configure on a managed s
 - **Spanning Tree Protocol (STP)**: Build resilience into your network by defining alternative network routes in case a cable or device fails.
 - **Port mirroring**: Use with a network analyzer to diagnose network issues and problems. During setup, the switch exports a copy of the network traffic to a single port.
 - **Bandwidth rate-limiting**: Allow fine control of the bandwidth used by specific ports. For example, allowing a high bandwidth for ports handling database or VoIP, and lower bandwidths for email.
-- **MAC address filtering**: Control which network devices can be used or have access through the switch.
+- **MAC address filtering**: Control by which network devices can be used or have access through the switch.
 - **SNMP client**: Set up and configure SNMP with your network monitoring tools.
 
 There are two subtypes of managed switches:

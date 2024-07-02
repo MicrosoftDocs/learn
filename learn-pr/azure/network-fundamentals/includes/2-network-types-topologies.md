@@ -1,4 +1,4 @@
-All networks are built on the same principles. You can apply these principles to design and build your organization's local or cloud-based networks. When you build a network, you need to know about the different types of networks, their topologies, and their uses.
+All networks are built on the same principles. You can apply these principles  when you design and build your organization's local or cloud-based networks. When you build a network, you need to know about the different types of networks, their topologies, and their uses.
 
 In this unit, you explore some of the common types of network topologies that are used to create internet-based networks.
 
@@ -8,7 +8,7 @@ A network is a collection of network-enabled devices, typically made up of compu
 
 ## Network types
 
-Networks vary in size, shape, and usage. To make it easier to identify different network types, they're categorized into one of the following network categories:
+Networks vary in size, shape, and usage. To make it easier to identify different network types, they fall into one of the following network categories:
 
 - Personal area networks
 - Local area networks
@@ -17,7 +17,7 @@ Networks vary in size, shape, and usage. To make it easier to identify different
 
 ### What is a personal area network?
 
-A personal area network (PAN) provides networking needs around an individual. An example of a PAN is where a smartphone, smartwatch, tablet, and laptop all connect and share data without the need to connect to an access point or other third-party network services. PAN networks typically use Bluetooth to communicate because it provides a low-power, short-range data-sharing capability. The network standards associated with a PAN are Bluetooth and IEEE 802.15.
+A personal area network (PAN) provides networking needs around an individual. An example of a PAN is where a smartphone, smartwatch, tablet, and laptop all connect and share data without the need to connect to an access point or other non-Microsoft network services. PAN networks typically use Bluetooth® to communicate because it provides a low-power, short-range data-sharing capability. The network standards associated with a PAN are Bluetooth and IEEE 802.15.
 
 ### What is a local area network?
 
@@ -38,7 +38,7 @@ A wide area network (WAN) provides networking capabilities between two different
 Several aspects set a LAN apart from a WAN. Knowing these items makes it easier to plan the services to deploy across these networks.
 
 | LAN | WAN |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| --- | --- |
 | A LAN is a privately operated network typically contained in a single building. | A WAN is used to connect geographically separate offices to each other. Multiple organizations might operate WANs. |
 | A LAN operates at speeds of 10 Gbps or higher. | A WAN typically operates at speeds of less than 1 Gbps. |
 | A LAN is less congested compared to other network types. | A WAN is more congested compared to other network types. |
@@ -83,9 +83,9 @@ The star topology is the most commonly used network topology. Each network devic
 
 ## Ethernet
 
-Ethernet is a networking standard that's synonymous with wire-based LAN networks, and also used in MAN and WAN networks. Ethernet has replaced other wired LAN technologies like ARCNET and Token Ring, and is an industry standard.
+Ethernet is a networking standard that's synonymous with wire-based LAN networks, and also used in MAN and WAN networks. Ethernet replaces other wired LAN technologies like ARCNET and Token Ring, and is an industry standard.
 
-While Ethernet is associated with wired networks, keep in mind that it's not limited to wire, because it's used over fiber-optic links as well.
+While Ethernet is associated with wired networks, keep in mind that it isn't limited to wire, because it's used over fiber-optic links as well.
 
 The Ethernet standard defines a framework for data transmission, error handling, and performance thresholds. It describes the rules for configuring an Ethernet network and how each element in the network interacts with each other.
 
@@ -107,7 +107,7 @@ The 10 Gigabit Ethernet (IEEE 802.3ae) standard has a nominal data transfer spee
 
 ### Terabit Ethernet
 
-Terabit Ethernet offers data transfer speeds of 200 Gbps and 400 Gbps. It's expected that Terabit Ethernet will offer speeds of 800 Gbps and 1.6 Tbps in the future.
+Terabit Ethernet offers data transfer speeds of 200 Gbps and 400 Gbps. We expect that Terabit Ethernet will offer speeds of 800 Gbps and 1.6 Tbps in the future.
 
 ## Networks in Azure
 
@@ -121,4 +121,4 @@ Using Azure Virtual Network, you can build complex virtual networks that emulate
 
 ### Connectivity services
 
-When you need to have a low-latency, high-bandwidth connection between your on-premises network and your instance of Azure Virtual Network, you have two options. You can use a VPN connection via an Azure gateway, or you can use a dedicated connection through Azure ExpressRoute. ExpressRoute is a secure point-to-point service. To use this service, you use a third-party connectivity partner to provide and host the ExpressRoute circuits on your behalf.
+When you need to have a low-latency, high-bandwidth connection between your on-premises network and your instance of Azure Virtual Network, you have two options. You can use a VPN connection via an Azure gateway, or you can use a dedicated connection through Azure ExpressRoute. ExpressRoute is a secure point-to-point service. To use this service, a non-Microsoft connectivity partner can provide and host the ExpressRoute circuits on your behalf.

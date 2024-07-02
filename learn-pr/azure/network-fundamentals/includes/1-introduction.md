@@ -1,6 +1,8 @@
-When you consider moving to the cloud and taking on a role as an Azure developer, solution architect, or administrator. It's essential that you understand the foundations of how networking works and how to use different devices to build networks. While networks are made up of various network devices, there are other aspects to keep in mind as well. For example, network-communication protocols require devices to have network addresses assigned. You also need to secure your network to protect your organization's assets and resources. 
+When you consider moving to the cloud and taking on a role as an Azure developer, solution architect, or administrator, understanding networking fundamentals becomes crucial. It's essential that you grasp the foundations of how networking works and how to use different devices to build networks.
 
-In this module, you explore how networks communicate with each other. You also learn about network protocols and standards, and the difference between a WAN and a LAN. Finally, you get to know more about the Transmission Control Protocol and Internet Protocol (TCP/IP), IP addresses, and ports.
+While networks are made up of various network devices, there are other aspects to keep in mind as well. For example, network-communication protocols require devices to have network addresses assigned. You also need to secure your network to protect your organization's assets and resources.
+
+In this module, you explore how networks communicate with each other. You also learn about network protocols and standards, and the difference between a WAN and a LAN. Finally, you get to learn more about the Transmission Control Protocol and Internet Protocol (TCP/IP), IP addresses, and ports.
 
 While the content of this module applies to any network, we show you where and how the concepts apply to networks managed by using Azure.
 
