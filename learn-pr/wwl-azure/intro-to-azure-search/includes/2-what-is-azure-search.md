@@ -1,6 +1,6 @@
 Azure AI Search provides the infrastructure and tools to create search solutions that extract data from various structured, semi-structured, and non-structured documents. 
 
-![Infographic of Azure Search.](../media/2-what-is-azure-search.png)
+![Infographic of Azure Search.](../media/what-is-azure-search.png)
 
 Azure AI Search results contain only your data, which can include text inferred or extracted from images, or new entities and key phrases detection through text analytics. It's a Platform as a Service (PaaS) solution. Microsoft manages the infrastructure and availability, allowing your organization to benefit without the need to purchase or manage dedicated hardware resources.
 

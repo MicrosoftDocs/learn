@@ -36,12 +36,12 @@ quiz:
     - content: "An indexer is only used for AI enrichment and skillset execution."
       isCorrect: false
       explanation: "Incorrect. A skillset requires an indexer, but an indexer doesn't require a skillset. You can use indexers to create a search index from textual content in any supported data source."
-  - content: "If you set up a search index without including a skillset, which would you still be able to query?"
+  - content: "If you set up a search index without including an AI skillset, which information would you still be able to query?"
     choices:
     - content: "Sentiment."
       isCorrect: false
       explanation: "Incorrect. Detecting the sentiment in content requires a skillset that includes the Sentiment Analysis skill."
-    - content: "Text content."
+    - content: "Full-text content."
       isCorrect: true
       explanation: "Correct. Azure AI Search is used for full text search over indexes containing alphanumeric content."
     - content: "Image captions."

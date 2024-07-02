@@ -36,7 +36,6 @@ units:
 - learn.azure-introduction-to-azure-search.1-introduction
 - learn.azure-introduction-to-azure-search.2-what-is-azure-search
 - learn.azure-introduction-to-azure-search.process
-- learn.azure-introduction-to-azure-search.ai-skillsets
 - learn.azure-introduction-to-azure-search.2f-start-with-portal
 - learn.azure-introduction-to-azure-search.6-query-data-in-an-azure-search-index
 - learn.azure-introduction-to-azure-search.exercise
