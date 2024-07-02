@@ -38,7 +38,7 @@ To install Visual Studio Code, use the appropriate steps for your operating syst
 #### RHEL, Fedora, and CentOS
 
 > [!CAUTION]
-> This content references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
+> This content references CentOS, a Linux distribution that is End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
 
 1. Use the following script to install the key and repository:
 
