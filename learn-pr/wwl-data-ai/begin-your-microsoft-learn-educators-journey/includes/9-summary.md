@@ -1,6 +1,7 @@
 Joining MSLE is the beginning of a journey ensuring you feel confident in your technical skills related to teaching Microsoft technical content. Practicing for and getting certified in the content you'll be teaching, working to integrate the Microsoft Official Course materials into your curriculum or syllabus, and ensuring that you're using the various tools and benefits for teaching that Microsoft has to offer will help ensure your students are well prepared for today’s job opportunities and stand out among other job applicants and demonstrate their technical skills by earning Microsoft Certifications.  
 
-Supplemental Resources:
+## Supplemental resources:
+
 - [Implement certifications in academic programs learning path](https://aka.ms/ImplementationLP)
 - [Microsoft Learn](https://aka.ms/learn)
 - [Microsoft Learn for Educators](https://aka.ms/msle) 

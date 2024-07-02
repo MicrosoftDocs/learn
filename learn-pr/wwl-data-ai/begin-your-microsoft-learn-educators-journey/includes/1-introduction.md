@@ -14,8 +14,8 @@ Joining Microsoft Learn for Educators is the beginning of a journey ensuring you
 - Engage in technical training: Complete self-paced learning on Microsoft Learn and/or attend a Microsoft Virtual Training Day. Visit the [Microsoft Virtual Training Day calendar](https://aka.ms/mvtdevents) for the latest events.
 - Join the Teams-based community of educators, supported by Microsoft community managers, committed to helping students succeed.
 - Reviewing and following the guidance provided in the Microsoft Virtual Educator Prep Sessions on Microsoft Learn. 
-- Practice your technical skills: Request discounted or free practice exams from the [MSLE portal](https://aka.ms/MSLEPort)
-- Get certified: Request discounted Microsoft Certification exams from the [MSLE portal](https://aka.ms/MSLEPort)
+- Practice your technical skills: Request discounted or free practice exams from the [MSLE portal](https://aka.ms/MSLEPort).
+- Get certified: Request discounted Microsoft Certification exams from the [MSLE portal](https://aka.ms/MSLEPort).
 - Integrate the Microsoft curriculum into your course: Learn how to implement Microsoft Certifications in new or existing academic degree programs with this [Implementation Learning Path](https://aka.ms/implementationLP)
 
 MSLE brings online learning paths and instructor-led training materials from Microsoft into your courses. Below is a list of the resources available to you through [MSLE](https://aka.ms/msle):
