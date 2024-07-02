@@ -1,13 +1,38 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.microsoft-learn-for-educator-program-open-house.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
-  description: "Introduction"
-  ms.date: 07/01/2024
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/02/2024
   author: wwlpublish
   ms.author: WWL
   ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is MSLE?"
+    choices:
+    - content: "A program to train teachers to be Microsoft Technical Trainers."
+      isCorrect: false
+      explanation: "Feedback: Incorrect. MSLE is a program that provides faculty members and higher education institutions with free curriculum, training, and tools for teaching technical skills."
+    - content: "Free curriculum, training, and tools for teaching Microsoft technical skills."
+      isCorrect: true
+      explanation: "Feedback: Correct. Microsoft Learn of Educators is a program that provides faculty members and higher education institutions with free curriculum, training, and tools for teaching technical skills."
+    - content: "A learning path to certification in technical skills."
+      isCorrect: false
+      explanation: "Feedback: Incorrect. In addition to learning paths for certification, MSLE is a program that provides faculty members and higher education institutions with free curriculum, training, and tools for teaching technical skills."
+  - content: "To sign up for MSLE, institutions or individual educators should:"
+    choices:
+    - content: "Email Microsoft."
+      isCorrect: false
+      explanation: "Feedback: Incorrect. You may have received an email from your institution to join MSLE, however institutions, or individual educators can apply for the MSLE program by navigating to [aka.ms/MSLE](https://aka.ms/MSLE), selecting Get started then Join MSLE."
+    - content: "Sign-up at [aka.ms/MSLE](https://aka.ms/MSLE)."
+      isCorrect: true
+      explanation: "Feedback: Correct. Institutions or individual educators can apply for the MSLE program by navigating to [aka.ms/MSLE](https://aka.ms/MSLE), selecting Get started then Join MSLE."
+    - content: "Contact your institution representative."
+      isCorrect: false
+      explanation: "Feedback: Incorrect. You may have received an email from your institution to join MSLE, however institutions, or individual educators can apply for the MSLE program by navigating to [aka.ms/MSLE](https://aka.ms/MSLE), selecting Get started then Join MSLE."

@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.microsoft-learn-for-educator-program-open-house.summary
-title: Introduction
+title: Summary
 metadata:
-  title: Introduction
-  description: "Introduction"
-  ms.date: 07/01/2024
+  title: Summary
+  description: "Summary"
+  ms.date: 07/02/2024
   author: wwlpublish
   ms.author: WWL
   ms.topic: unit
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

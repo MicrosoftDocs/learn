@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.microsoft-learn-for-educator-program-open-house.what-is-microsoft-learn-for-educators
+uid: learn.wwl.microsoft-learn-for-educator-program-open-house.what-microsoft-learn-educators
 title: What is Microsoft Learn for Educators?
 metadata:
   title: What is Microsoft Learn for Educators?
   description: "What is Microsoft Learn for Educators?"
-  ms.date: 07/01/2024
+  ms.date: 07/02/2024
   author: wwlpublish
   ms.author: WWL
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 5
 content: |
-  [!include[](includes/2-what-is-microsoft-learn-for-educators.md)]
+  [!include[](includes/2-what-microsoft-learn-educators.md)]
