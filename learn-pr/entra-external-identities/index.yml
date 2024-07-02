@@ -12,7 +12,7 @@ title: Guided project – Build a sample app to evaluate Entra External Identiti
 summary: |
  Discover how Entra External Identities can provide secure, seamless sign-in experiences for your consumers and business customers. Explore tenant creation, app registration, flow customization, and account security.
 abstract: |
-   By the end of this module, you'll be able to:
+   In this module, you'll practice how to:
     - Build a branded, seamless and secure sign-up and sign-in experiences for your web application
     - Assess Entra External Identities identity provider capabilities against consumer and business customer needs
 prerequisites: |
