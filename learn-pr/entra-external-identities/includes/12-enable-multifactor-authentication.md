@@ -1,6 +1,6 @@
 ## Exercise - Enable multifactor authentication (MFA)
 
-[Multifactor authentication (MFA)](https://learn.microsoft.com/entra/external-id/customers/how-to-multifactor-authentication-customers) protects consumer identities by prompting them for a second verification method. Microsoft Entra Conditional Access brings signals together, to make decisions, and enforce security policies. For our groceries website, we will enforce a Conditional Access policy that prompts for MFA. The Conditional Access policy targets all users without any condition.
+[Multifactor authentication (MFA)](/entra/external-id/customers/how-to-multifactor-authentication-customers) protects consumer identities by prompting them for a second verification method. Microsoft Entra Conditional Access brings signals together, to make decisions, and enforce security policies. For our groceries website, we will enforce a Conditional Access policy that prompts for MFA. The Conditional Access policy targets all users without any condition.
 
 ::: zone pivot="microsoft-entra-admin-center"
 
@@ -24,7 +24,7 @@
 ::: zone pivot="graph-api"
 
 #### Create conditional access policy
-The following example creates a [conditional access policy](https://learn.microsoft.com/graph/api/conditionalaccessroot-post-policies?view=graph-rest-beta&tabs=http). This policy targets all sign-ins for all users (except for the tenant's Global Administrator.) In the request below, replace the **{web-or-mobile-app-ID}** with your own web or mobile application (App ID, not object ID.) Note that you can add more applications.
+The following example creates a [conditional access policy](/graph/api/conditionalaccessroot-post-policies?view=graph-rest-beta&tabs=http). This policy targets all sign-ins for all users (except for the tenant's Global Administrator.) In the request below, replace the **{web-or-mobile-app-ID}** with your own web or mobile application (App ID, not object ID.) Note that you can add more applications.
 
 ```json
 POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies

@@ -1,6 +1,6 @@
 ## Exercise - Add an admin account
 
-In Microsoft Entra External ID, an external tenant represents your directory of consumer and guest accounts. With an administrator role, work and guest accounts can [manage the tenant](https://learn.microsoft.com/entra/external-id/customers/quickstart-tenant-setup).
+In Microsoft Entra External ID, an external tenant represents your directory of consumer and guest accounts. With an administrator role, work and guest accounts can [manage the tenant](/entra/external-id/customers/quickstart-tenant-setup).
 
 ::: zone pivot="microsoft-entra-admin-center"
 

@@ -1,6 +1,6 @@
 ## Exercise - Enable email with password sign-in
 
-Email with password sign-in allows new users to sign-up and sign-in using an email address as the sign-in name and a password as their first-factor authentication method. Note that you can also enable [Email one-time passcode](https://learn.microsoft.com/entra/external-id/customers/how-to-user-flow-sign-up-sign-in-customers). For the purposes of our groceries website, we will enable email with password sign-in.
+Email with password sign-in allows new users to sign-up and sign-in using an email address as the sign-in name and a password as their first-factor authentication method. Note that you can also enable [Email one-time passcode](/entra/external-id/customers/how-to-user-flow-sign-up-sign-in-customers). For the purposes of our groceries website, we will enable email with password sign-in.
 
 ::: zone pivot="microsoft-entra-admin-center"
 

@@ -90,7 +90,7 @@ From the response, copy the value of the **appId**. For example:
 
 #### 2\. Create a service principal for your application
 
-After you register your application, [create a service principal](https://learn.microsoft.com/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-1.0&tabs=http). The following Graph call creates a service principal. Replace the **{appId}** with the app **appId** from the previous call (not the object ID).
+After you register your application, [create a service principal](/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-1.0&tabs=http). The following Graph call creates a service principal. Replace the **{appId}** with the app **appId** from the previous call (not the object ID).
 
 ```json
 POST https://graph.microsoft.com/v1.0/servicePrincipals
@@ -115,7 +115,7 @@ From the response, copy the value of the **id**. For example:
 
 #### 3\. Consent to the required permissions
 
-Since the tenant is an external tenant, the consumer users themselves can't consent to these permissions. You as the admin must [consent to these permissions](https://learn.microsoft.com/graph/api/oauth2permissiongrant-post?view=graph-rest-1.0&tabs=http) on behalf of all the users in the tenant.
+Since the tenant is an external tenant, the consumer users themselves can't consent to these permissions. You as the admin must [consent to these permissions](/graph/api/oauth2permissiongrant-post?view=graph-rest-1.0&tabs=http) on behalf of all the users in the tenant.
 
 ##### 3.1 Get the Microsoft Graph's service principal ID
 
@@ -146,7 +146,7 @@ POST https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 
 #### 4\. (Optional) Add a client secret
 
-Credentials enable confidential applications to identify themselves to the authentication service when receiving tokens. For a higher level of assurance, we recommend using a [certificate](https://learn.microsoft.com/graph/api/application-addkey?view=graph-rest-1.0&tabs=http) (instead of a client secret) as a credential. To obtain the [client secret](https://learn.microsoft.com/graph/api/application-addpassword?view=graph-rest-1.0&tabs=http), run the following request. Replace the **{graph-service-principal-id}** with the **appId** with the appId from the first step.
+Credentials enable confidential applications to identify themselves to the authentication service when receiving tokens. For a higher level of assurance, we recommend using a [certificate](/graph/api/application-addkey?view=graph-rest-1.0&tabs=http) (instead of a client secret) as a credential. To obtain the [client secret](/graph/api/application-addpassword?view=graph-rest-1.0&tabs=http), run the following request. Replace the **{graph-service-principal-id}** with the **appId** with the appId from the first step.
 
 ```json
 POST https://graph.microsoft.com/v1.0/applications(appId='appId')/addPassword
