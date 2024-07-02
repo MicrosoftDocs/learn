@@ -32,7 +32,7 @@ To enable your app to sign in with Microsoft Entra External Identities, you need
 
 #### 1\. Register an application
 
-[To register a web application](https://learn.microsoft.com/graph/api/application-post-applications?view=graph-rest-1.0&tabs=http), use the Graph request below and replace the following values.
+[To register a web application](/graph/api/application-post-applications?view=graph-rest-1.0&tabs=http), use the Graph request below and replace the following values.
 - Value of **displayName** with your app displayed name. For example, *Woodgrove Groceries*.
 - Values of the **redirectUris** with the redirect URI of your application. For example, *<https://woodgrovedemo.com/signin-oidc>*
 
