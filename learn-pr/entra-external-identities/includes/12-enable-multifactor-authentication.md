@@ -1,4 +1,4 @@
-## Enable multifactor authentication (MFA)
+## Exercise - Enable multifactor authentication (MFA)
 
 [Multifactor authentication (MFA)](https://learn.microsoft.com/entra/external-id/customers/how-to-multifactor-authentication-customers) protects consumer identities by prompting them for a second verification method. Microsoft Entra Conditional Access brings signals together, to make decisions, and enforce security policies. For our groceries website, we will enforce a Conditional Access policy that prompts for MFA. The Conditional Access policy targets all users without any condition.
 

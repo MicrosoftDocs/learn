@@ -1,4 +1,4 @@
-## Enable social identity provider sign-in
+## Exercise - Enable social identity provider sign-in
 
 By setting up federation with social identity providers, you can allow customers to sign in to your applications with their own social account, such as [Facebook](https://learn.microsoft.com/entra/external-id/customers/how-to-facebook-federation-customers) or [Google](https://learn.microsoft.com/entra/external-id/customers/how-to-google-federation-customers). This demo shows how to add Facebook as one of your application's sign-in options. On the sign-in page, customers can sign-in to Microsoft Entra ID with Facebook. The steps in this tutorial also applies to other identity providers, such as Google.
 

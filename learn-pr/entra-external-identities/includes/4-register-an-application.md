@@ -1,4 +1,4 @@
-## Register an application
+## Exercise - Register an application
 
 To enable your app to sign in with Microsoft Entra External Identities, you need to register the application in Microsoft Entra External Identities directory.
 
