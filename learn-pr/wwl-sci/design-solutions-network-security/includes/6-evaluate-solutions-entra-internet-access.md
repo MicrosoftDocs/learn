@@ -37,6 +37,6 @@ The Microsoft profile manages the following policy groups:
 
 For more information, see the following resources:
 
-- [Microsoft Entra Internet Access for Microsoft Traffic](https://learn.microsoft.com/entra/global-secure-access/how-to-manage-microsoft-profile).
-- [Configure cross-tenant access settings for B2B collaboration](https://learn.microsoft.com/entra/external-id/cross-tenant-access-settings-b2b-collaboration).
-- [Microsoft's Security Service Edge solution deployment guide for Microsoft Entra Internet Access for Microsoft Traffic proof of concept](https://learn.microsoft.com/entra/architecture/sse-deployment-guide-microsoft-traffic).
+- [Microsoft Entra Internet Access for Microsoft Traffic](/entra/global-secure-access/how-to-manage-microsoft-profile).
+- [Configure cross-tenant access settings for B2B collaboration](/entra/external-id/cross-tenant-access-settings-b2b-collaboration).
+- [Microsoft's Security Service Edge solution deployment guide for Microsoft Entra Internet Access for Microsoft Traffic proof of concept](/entra/architecture/sse-deployment-guide-microsoft-traffic).

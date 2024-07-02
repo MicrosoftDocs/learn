@@ -8,7 +8,7 @@ The features of Microsoft Entra Private Access provide a quick and easy way to r
 
 ### Quick Access and Global Secure Access apps
 
-When you configure the Quick Access and Global Secure Access apps, you create a new enterprise application. The app serves as a container for the private resources that you want to secure. The application has its own [Microsoft Entra private network connector](how-to-configure-connectors.md) to broker the connection between the service and the internal resource. You can assign users and groups to the app, and then use Conditional Access policies to control access to the app.
+When you configure the Quick Access and Global Secure Access apps, you create a new enterprise application. The app serves as a container for the private resources that you want to secure. The application has its own Microsoft Entra private network connector to broker the connection between the service and the internal resource. You can assign users and groups to the app, and then use Conditional Access policies to control access to the app.
 
 Quick Access and Per-app Access are similar, but there are a few key concepts to understand so you can decide how to configure each one.
 
@@ -16,7 +16,7 @@ Quick Access and Per-app Access are similar, but there are a few key concepts to
 
 Quick Access is the primary group of FQDNs and IP addresses that you want to secure. As you're planning your Global Secure Access deployment, review your list of private resources and determine which resources you *always* want to tunnel through the service. This primary group of FQDNs, IP addresses, and IP ranges is what you add to Quick Access.
 
-![Diagram of the Quick Access app process with traffic flowing through the service to the app, and granting access through application proxy.](../media/concept-private-access/quick-access-diagram.png)
+![Diagram of the Quick Access app process with traffic flowing through the service to the app, and granting access through application proxy.](../media/quick-access-diagram.png)
 
 ### Global Secure Access app
 
@@ -26,6 +26,6 @@ A Global Secure Access app could be configured if any of the following scenarios
 - I have a few private resources that I want to secure, but they should have a different set of access policies.
 - I have a subset of private resources that I only want to secure for a specific time frame.
 
-![Diagram of the Global Secure Access app process with traffic flowing through the service to the app, and granting access through application proxy.](../media/concept-private-access/private-access-diagram.png)
+![Diagram of the Global Secure Access app process with traffic flowing through the service to the app, and granting access through application proxy.](../media/private-access-diagram.png)
 
 The Global Secure Access app takes a more detailed approach to securing your private resources. You can create multiple per-app access apps to secure different private resources. Paired with Conditional Access policies, you have a powerful yet fine-grained way to secure your private resources.
