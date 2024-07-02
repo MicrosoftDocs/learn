@@ -4,7 +4,7 @@ Azure AI Search queries can be submitted as an HTTP or REST API request, with th
 
 Azure AI Search supports two types of syntax: simple and full Lucene. Simple syntax covers all of the common query scenarios, while full Lucene is useful for advanced scenarios.
 
-### Simple query requests
+### Simple query requests (behind the scenes)
 
 A query request is a list or words (search terms) and query operators (simple or full) of what you would like to see returned in a result set. Let's look what components make up a search query. Consider this simple search example:
 

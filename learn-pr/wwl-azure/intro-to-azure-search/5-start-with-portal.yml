@@ -4,7 +4,7 @@ title: Create an index in the Azure portal
 metadata:
   title: Create an index in the Azure portal
   description: "Create an index in the Azure portal"
-  ms.date: 12/07/2023
+  ms.date: 07/02/2024
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/2f-start-with-portal.md)]
+  [!include[](includes/5-start-with-portal.md)]
