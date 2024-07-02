@@ -22,7 +22,7 @@ You'll need to create a tenant with external configuration in the [Microsoft Ent
    ![alt text](../media/create-an-external-tenant/8.png)
 1. Use the **Settings** icon in the top menu to **Switch** to your customer tenant you created from the **Directories + subscriptions** menu. If the tenant you created doesn't appear in the list, refresh the page (using the web browser refresh button).
    ![alt text](../media/create-an-external-tenant/9.png)
-1. Browse to **Home** > **Tenant overview** to start configure your tenant.
+1. Browse to **Home** > **Tenant overview** to start configuring your tenant.
    ![alt text](../media/create-an-external-tenant/10.png)
     ***Well done!** At this point, the Microsoft Entra External ID tenant is ready to use.*
 ::: zone-end
