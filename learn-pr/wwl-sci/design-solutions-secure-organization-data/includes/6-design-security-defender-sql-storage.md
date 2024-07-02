@@ -84,7 +84,18 @@ You can review and manage your current security alerts from Microsoft Defender f
     
 -   **Hash reputation analysis isn't supported for all files protocols and operation types** - Some, but not all, of the telemetry logs contain the hash value of the related blob or file. In some cases, the telemetry doesn't contain a hash value. As a result, some operations can't be monitored for known malware uploads. Examples of such unsupported use cases include SMB file-shares and when a blob is created using [Put Block](/rest/api/storageservices/put-block) and [Put Block List](/rest/api/storageservices/put-block-list).
 
-## Defender for Azure SQL
+## Defender for Databases
+
+Defender for Databases in Microsoft Defender for Cloud allows you to protect your entire database estate with attack detection and threat response for the most popular database types in Azure. Defender for Cloud provides protection for the database engines and for data types, according to their attack surface and security risks.
+
+Database protection includes:
+
+- Microsoft Defender for Azure SQL databases
+- Microsoft Defender for SQL servers on machines
+- Microsoft Defender for open-source relational databases
+- Microsoft Defender for Azure Cosmos DB
+
+### Defender for Azure SQL
 
 > [!NOTE]
 > Defender for Azure SQL protects read-write replicas of:
@@ -99,25 +110,23 @@ Microsoft Defender for Azure SQL helps you discover and mitigate potential [dat
 
 When you enable **Microsoft Defender for Azure SQL**, all supported resources that exist within the subscription are protected. Future resources created on the same subscription will also be protected.
 
-### What are the benefits of Microsoft Defender for Azure SQL?
+### Defender for SQL servers on machines
 
-#### Discover and mitigate vulnerabilities
+Defender for SQL protects your IaaS SQL Servers by identifying and mitigating potential database vulnerabilities and detecting anomalous activities that could indicate threats to your databases.
 
-A vulnerability assessment service discovers, tracks, and helps you remediate potential database vulnerabilities. Assessment scans provide an overview of your SQL machines' security state, and details of any security findings. Defender for Azure SQL helps you identify and mitigate potential database vulnerabilities and detecting anomalous activities that could indicate threats to your databases.
+Defender for Cloud populates with alerts when it detects suspicious database activities, potentially harmful attempts to access or exploit SQL machines, SQL injection attacks, anomalous database access, and query patterns. The alerts created by these types of events appear on the alerts reference page.
 
-#### Advanced threat protection
+Defender for Cloud uses vulnerability assessment to discover, track, and assist you in the remediation of potential database vulnerabilities. Assessment scans provide an overview of your SQL machines' security state and provide details of any security findings.
 
-An advanced threat protection service continuously monitors your SQL servers for threats such as SQL injection, brute-force attacks, and privilege abuse. This service provides action-oriented security alerts in Microsoft Defender for Cloud with details of the suspicious activity, guidance on how to mitigate to the threats, and options for continuing your investigations with Microsoft Sentinel. Learn more about [advanced threat protection](/azure/azure-sql/database/threat-detection-overview).
+Learn more about vulnerability assessment for Azure SQL servers on machines.
 
-Threat intelligence enriched security alerts are triggered when there's:
+Defender for SQL servers on machines protects your SQL servers hosted in Azure, multicloud, and even on-premises machines.
 
--   **Potential SQL injection attacks** - including vulnerabilities detected when applications generate a faulty SQL statement in the database
--   **Anomalous database access and query patterns** - for example, an abnormally high number of failed sign-in attempts with different credentials (a brute force attempt)
--   **Suspicious database activity** - for example, a legitimate user accessing an SQL Server from a breached computer which communicated with a crypto-mining C&C server
+### Defender for open-source relational databases
 
-Alerts include details of the incident that triggered them, as well as recommendations on how to investigate and remediate threats. Learn more about the [security alerts for SQL servers](/azure/defender-for-cloud/alerts-reference#alerts-sql-db-and-warehouse).
+Defender for Cloud detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases. The plan makes it simple to address potential threats to databases without the need to be a security expert or manage advanced security monitoring systems.
 
-## Defender for Azure Cosmos DB
+### Defender for Azure Cosmos DB
 
 Microsoft Defender for Azure Cosmos DB detects potential SQL injections, known bad actors based on Microsoft Threat Intelligence, suspicious access patterns, and potential exploitation of your database through compromised identities, or malicious insiders.
 
@@ -128,24 +137,3 @@ You can [enable protection for all your databases](/azure/defender-for-cloud/qu
 Defender for Azure Cosmos DB continually analyzes the telemetry stream generated by the Azure Cosmos DB service. When potentially malicious activities are detected, security alerts are generated. These alerts are displayed in Defender for Cloud together with the details of the suspicious activity along with the relevant investigation steps, remediation actions, and security recommendations.
 
 Defender for Azure Cosmos DB doesn't access the Azure Cosmos DB account data, and doesn't have any effect on its performance.
-
-### What are the benefits of Microsoft Defender for Azure Cosmos DB
-
-Microsoft Defender for Azure Cosmos DB uses advanced threat detection capabilities and Microsoft Threat Intelligence data. Defender for Azure Cosmos DB continuously monitors your Azure Cosmos DB accounts for threats such as SQL injection, compromised identities and data exfiltration.
-
-This service provides action-oriented security alerts in Microsoft Defender for Cloud with details of the suspicious activity and guidance on how to mitigate the threats. You can use this information to quickly remediate security issues and improve the security of your Azure Cosmos DB accounts.
-
-Alerts include details of the incident that triggered them, and recommendations on how to investigate and remediate threats. Alerts can be exported to Microsoft Sentinel or any other third-party SIEM or any other external tool. To learn how to stream alerts, see [Stream alerts to a SIEM, SOAR, or IT classic deployment model solution](/azure/defender-for-cloud/export-to-siem).
-
-### Alert types
-
-Threat intelligence security alerts are triggered for:
-
--   **Potential SQL injection attacks**:  
-    Due to the structure and capabilities of Azure Cosmos DB queries, many known SQL injection attacks can’t work in Azure Cosmos DB. However, there are some variations of SQL injections that can succeed and may result in exfiltrating data from your Azure Cosmos DB accounts. Defender for Azure Cosmos DB detects both successful and failed attempts, and helps you harden your environment to prevent these threats.
-    
--   **Anomalous database access patterns**:  
-    For example, access from a TOR exit node, known suspicious IP addresses, unusual applications, and unusual locations.
-    
--   **Suspicious database activity**:  
-    For example, suspicious key-listing patterns that resemble known malicious lateral movement techniques and suspicious data extraction patterns.
