@@ -22,6 +22,74 @@ In Microsoft Entra External ID, an external tenant represents your directory of 
 
 ::: zone pivot="graph-api"
 
-Graph API tutorial coming soon.
+#### 1\. Create a user
+
+To [create a user](/graph/api/user-post-users?view=graph-rest-1.0&tabs=http), replace the following values in the Microsoft Graph request:
+
+- **displayName** with the user display name.
+- **mailNickname** with a mail alias for the user. This property must be specified when a user is created.
+- **userPrincipalName** with the principal name (UPN) of the user. The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
+- **password** with a temporary password that you will share with the user. During the first sign-in, the user will be asked to change their password.
+
+##### Example
+
+The following example shows how to create a new user account for Adele Vance.
+
+```json
+POST https://graph.microsoft.com/v1.0/applications
+{
+    "accountEnabled": true,
+    "displayName": "Adele Vance",
+    "mailNickname": "AdeleV",
+    "userPrincipalName": "AdeleV@wggdemo.onmicrosoft.com",
+    "passwordProfile": {
+        "forceChangePasswordNextSignIn": true,
+        "password": "12345678910"
+    }
+}
+```
+
+##### 1.1 Copy the user ID
+
+From the response, copy the value of the **id**. For example:
+
+```json
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+    "id": "123a123a-abc1-123a-abcd-123456789abc",
+    ...
+}        
+```
+
+#### 2\. Assign an admin role
+
+After the new user is created, [create a (unified) role assignment](/graph/api/rbacapplication-post-roleassignments). In the following Graph request, replace the:
+
+- **{user-id}** with the user **id** from the previous step.
+- **{role-id}** with one of the [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
+
+```json
+POST https://graph.microsoft.com/v1.0/servicePrincipals
+{
+    "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
+    "principalId": "{user-id}",
+    "roleDefinitionId": "{role-id}",
+    "directoryScopeId": "/"
+}
+```
+
+##### Example
+
+The following example assigns the Global Administrator role to Adele Vance
+
+```json
+POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments
+{
+    "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
+    "principalId": "c123a123a-abc1-123a-abcd-123456789ab",
+    "roleDefinitionId": "a321a321-1cba-a321-dcba-cba987654321",
+    "directoryScopeId": "/"
+}
+```
 
 ::: zone-end
