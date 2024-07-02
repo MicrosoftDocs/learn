@@ -13,6 +13,7 @@ metadata:
     - build-2023-dataai
   ms.contributors:
   - sejuare-04262021
+  ms.service: machine-learning
 title: Introduction to PyTorch
 summary: Learn key concepts used to build machine learning models with PyTorch.  We'll train a neural network model that recognizes and classifies images.
 abstract: |
