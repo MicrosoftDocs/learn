@@ -15,7 +15,7 @@ You can create a Codespace on GitHub.com, in Visual Studio Code, or by GitHub CL
 
 You can temporarily use a Codespace in order to test code or you can return to the same Codespace to work on long-running feature work.
 
-You can create more than one Codespace per repository or even per branch. However, there are limits to the number of Codespaces you can create and run at the same time. When you reach the maximum number of Codespaces and try to create another, a message displays that an existing Codespace needs to be removed/deleted before a new Codespace can be created.
+You can create more than one Codespace per repository or even per branch. However, there are limits to the number of Codespaces you can create and run at the same time. When you reach the maximum number of Codespaces and try to create another, a message is displayed. The message tells you that an existing Codespace needs to be removed/deleted before a new Codespace can be created.
 
 You can create a new Codespace each time you develop in GitHub Codespaces or keep a long-running Codespace for a feature. If starting a new project, create a Codespace from a template and publish it to a repository on GitHub later.
 
@@ -46,7 +46,7 @@ Your work saves to a virtual machine in the cloud. You can close and stop a Code
 
 You can reopen any of your active or stopped Codespaces on GitHub.com, in a JetBrains IDE, in Visual Studio Code, or by using GitHub CLI.
 
-To resume an existing Codespace, you can go to the repository where the Codespace exists, press **,** and **select Resume this codespace**. Or, you can open https://github.com/codespaces in the browser, select the repository, and then select the existing Codespace.
+To resume an existing Codespace, you can go to the repository where the Codespace exists, select the `,` key and then select **Resume this codespace**. Or, you can open https://github.com/codespaces in the browser, select the repository, and then select the existing Codespace.
 
 ### Timeouts for a Codespace
 
