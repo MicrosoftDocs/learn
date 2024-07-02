@@ -9,9 +9,9 @@ metadata:
   ms.topic: module
   ms.service: artificial-intelligence
 title: Explore Autonomous Intelligence
-summary: In this module, you'll learn about several AI technologies such as machine learning, deep learning and, deep reinforcement learning that are components of Machine Teaching. In addition, you’ll learn Autonomous Intelligence strengths, when to best use these technologies and their limitations, and when Automated Intelligence methods can support them.
+summary: In this module, you learn about several AI technologies such as machine learning, deep learning and, deep reinforcement learning that are components of Machine Teaching. In addition, you learn Autonomous Intelligence strengths, when to best use these technologies and their limitations, and when Automated Intelligence methods can support them.
 abstract: | 
-  In this module, you'll learn how to:
+  In this module, you learn how to:
   -	Describe Machine Learning for Advance Perception as a key component of Machine Teaching for Autonomous Intelligence systems
   - Describe Deep Reinforcement Learning for human-like decision making as a key component of Machine Teaching for Autonomous intelligent systems
   - Evaluate the advantages and limitations of Machine Learning and Deep Reinforcement Learning when used in Machine Teaching for Autonomous intelligent systems 
