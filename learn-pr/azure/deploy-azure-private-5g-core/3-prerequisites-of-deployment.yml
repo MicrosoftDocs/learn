@@ -5,8 +5,8 @@ metadata:
   title: Prerequisites of deployment
   description: Provides you the prerequisites for Azure private 5G core deployment.
   ms.date: 06/24/2024
-  author: ArchanaUpadhyaya
-  ms.author: archanau
+  author: joemarshallmsft
+  ms.author: joemarshall
   ms.topic: unit
 
 durationInMinutes: 5
