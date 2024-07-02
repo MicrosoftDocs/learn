@@ -45,7 +45,6 @@ units:
 - learn.entra-external-identities.eeid-poc.add-an-admin-account
 - learn.entra-external-identities.eeid-poc.collect-user-attributes-during-sign-up
 - learn.entra-external-identities.eeid-poc.customize-the-look-and-feel-of-your-flows
-- learn.entra-external-identities.eeid-poc.enable-email-with-password-sign-in
 - learn.entra-external-identities.eeid-poc.enable-social-identity-provider-sign-in
 - learn.entra-external-identities.eeid-poc.validate-attributes-collected-during-sign-up
 - learn.entra-external-identities.eeid-poc.enable-multifactor-authentication
