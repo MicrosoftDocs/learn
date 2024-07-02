@@ -32,7 +32,7 @@ Solutions in this area rely on Microsoft Entra Internet Access for Microsoft Tra
 The Microsoft profile manages the following policy groups:
 
 - Exchange Online
-- SharePoint Online and OneDrive for Business
+- SharePoint Online and OneDrive
 - Microsoft 365 Common and Office Online (only Microsoft Entra ID and Microsoft Graph)
 
 For more information, see the following resources:

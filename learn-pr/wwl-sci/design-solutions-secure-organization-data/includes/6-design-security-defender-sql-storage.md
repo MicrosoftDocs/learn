@@ -118,8 +118,6 @@ Defender for Cloud populates with alerts when it detects suspicious database act
 
 Defender for Cloud uses vulnerability assessment to discover, track, and assist you in the remediation of potential database vulnerabilities. Assessment scans provide an overview of your SQL machines' security state and provide details of any security findings.
 
-Learn more about vulnerability assessment for Azure SQL servers on machines.
-
 Defender for SQL servers on machines protects your SQL servers hosted in Azure, multicloud, and even on-premises machines.
 
 ### Defender for open-source relational databases
