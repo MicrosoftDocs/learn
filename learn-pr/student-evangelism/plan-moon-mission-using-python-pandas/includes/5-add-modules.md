@@ -4,7 +4,7 @@ A *critical* part of data science is ensuring that the assumptions you make accu
 
 ## Revisiting the Apollo program
 
-The Apollo program focused on using the Saturn V rocket to send humans into space and onto the Moon. The [Saturn V](https://www.nasa.gov/centers/johnson/rocketpark/saturn_v.html) rocket that was used in the Apollo program is known as a three-stage rocket. *Three-stage* means that the rocket has three parts, each of which burns at a different time to achieve a different goal.
+The Apollo program focused on using the Saturn V rocket to send humans into space and onto the Moon. The [Saturn V](https://www.nasa.gov/learning-resources/for-kids-and-students/what-was-the-saturn-v-grades-5-8/) rocket that was used in the Apollo program is known as a three-stage rocket. *Three-stage* means that the rocket has three parts, each of which burns at a different time to achieve a different goal.
 
 The first stage is the main thrust portion that gets the rocket to about 68 kilometers into the sky and then falls back to Earth, making the rocket lighter.  Next, the second stage burns its engines until the rocket nearly reaches Earth's orbit and then also falls back to Earth. The final stage gets the spacecraft into Earth's orbit and thrusts it toward the Moon.
 

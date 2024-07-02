@@ -4,13 +4,11 @@ title: Administer Azure Virtual Desktop
 metadata:
   title: Administer Azure Virtual Desktop
   description: "Administer Azure Virtual Desktop"
-  ms.date: 05/12/2023
+  ms.date: 05/14/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
-  ms.custom:
-    - devx-track-azurecli
-    - devx-track-azurepowershell
+  ms.custom: devx-track-azurecli, devx-track-azurepowershell
 durationInMinutes: 3
 content: |
   [!include[](includes/5-administer-azure-virtual-desktop.md)]

@@ -2,13 +2,14 @@
 uid: learn.azure.inclusive-design-principles
 metadata:
   title: Design with inclusivity in mind 
-  description: Learn how to perform inclusive product design for users with diverse capabilities
-  ms.date: 03/31/2023
+  description: Learn how to perform inclusive product design for users with diverse capabilities.
+  ms.date: 05/23/2024
   author: asajohnson
   ms.author: asjohnso
   ms.topic: module
+  ms.service: azure
 title: Design with inclusivity in mind 
-summary: Learn the principles of inclusive design.
+summary: In this module, you'll learn the principles of inclusive design.
 abstract: |
   In this module, you'll learn how to:
   - Describe inclusive product design.

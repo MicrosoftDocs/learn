@@ -3,7 +3,7 @@ Microsoft Entra Cloud Sync is a new offering from Microsoft designed to meet and
  -  Support for synchronizing to a Microsoft Entra tenant from a multi-forest disconnected Active Directory forest environment: The common scenarios include merger & acquisition (where the acquired company's AD forests are isolated from the parent company's AD forests), and companies that have historically had multiple AD forests.
  -  Simplified installation with light-weight provisioning agents: The agents act as a bridge from AD to Microsoft Entra ID, with all the sync configuration managed in the cloud.
  -  Multiple provisioning agents can be used to simplify high availability deployments, particularly critical for organizations relying upon password hash synchronization from AD to Microsoft Entra ID.
- -  Support for large groups with up to 50,000 members. It's recommended to use only the OU scoping filter when synchronizing large groups.
+ -  Support for large groups with up to 50,000 members. It's recommended to use only the organizational unit (OU) scoping filter when synchronizing large groups.
 
 :::image type="content" source="../media/microsoft-entra-cloud-hybrid-446945fc.png" alt-text="Diagram showing an example of a Microsoft Entra Cloud synchronization hybrid application.":::
 

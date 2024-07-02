@@ -5,9 +5,9 @@ metadata:
   unitType: learning-content  
   title: How Azure HDInsight works
   description: How Azure HDInsight works
-  ms.date: 07/25/2023  
+  ms.date: 04/21/2024  
   author: sreekzz
-  ms.author: v-sreiyer
+  ms.author: v-sreeiyer
   ms.topic: unit
 durationInMinutes: 6
 content: |

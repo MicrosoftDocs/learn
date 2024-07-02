@@ -216,12 +216,12 @@ achievements:
   type: trophy
   title: Distinguish Microsoft Azure Core Services (AZ-900)
   summary: Distinguish Microsoft Azure Core Services (AZ-900)
-  iconUrl: /training/achievements/distinguish-microsoft-azure-core-services.svg 
+  iconUrl: /training/achievements/distinguish-microsoft-azure-core-services.svg
 - uid: learn.wwl.examine-microsoft-azure-security-privacy-compliance-trust.trophy
   type: trophy
   title: Examine Microsoft Azure security, privacy, compliance, and trust (AZ-900)
   summary: Examine Microsoft Azure security, privacy, compliance, and trust (AZ-900)
-  iconUrl: /training/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg 
+  iconUrl: /training/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg
 - uid: learn.wwl.review-microsoft-azure-pricing-slas-lifecycles.trophy
   type: trophy
   title: Review Microsoft Azure pricing, service level agreements, and lifecycles (AZ-900)
@@ -354,7 +354,7 @@ achievements:
   iconUrl: /training/achievements/intro-to-security-in-azure.svg
 - uid: learn.predict-costs-and-optimize-spending.badge
   type: badge
-  title: Predict costs and optimize spending for Azure 
+  title: Predict costs and optimize spending for Azure
   summary: Cost is one of the most important aspects of the cloud and can have a massive impact on your business. Azure has several tools available to help you get a better understanding of cloud spend and some best practices that you can leverage to help you save money.
   iconUrl: /training/achievements/predict-costs-and-optimize-spending.svg
 - uid: learn.principles-cloud-computing.badge
@@ -650,7 +650,7 @@ achievements:
 - uid: learn.build-azure-vm-templates
   type: badge
   title: Build Azure Resource Manager templates
-  summary: Learn how Resource Manager templates express your deployments as code, enabling you to deploy faster and more reliably. 
+  summary: Learn how Resource Manager templates express your deployments as code, enabling you to deploy faster and more reliably.
   iconUrl: /training/achievements/build-azure-vm-templates.svg
 - uid: learn.wwl.process-natural-language-azure-cognitive-language-services.trophy
   type: trophy
@@ -1629,7 +1629,7 @@ achievements:
   iconUrl: /training/achievements/intro-to-custom-commands.svg
 - uid: learn.azure.model-partition-data-azure-cosmos-db.badge
   type: badge
-  title: Model and partition your data in Azure Cosmos DB  
+  title: Model and partition your data in Azure Cosmos DB
   summary: Identify key access patterns for a sample e-commerce application. Define the data model for each of the entities, along with containers to store the data with a partition key that will result in an efficient and scalable data store for this e-commerce application.
   iconUrl: /training/achievements/model-partition-data-azure-cosmos-db.svg
 - uid: learn.iot.manage-iot-central-apps-with-rest-api.badge
@@ -1697,61 +1697,61 @@ achievements:
   title: 'Microsoft Azure Fundamentals: Describe core Azure concepts'
   summary: >-
     New to the cloud? Azure fundamentals is a six-part series that teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free.
-  
-  
+
+
     After completing this learning path, you'll be able to:
-  
+
       - Understand the benefits of cloud computing in Azure and how it can save you time and money
       - Explain cloud concepts such as high availability, scalability, elasticity, agility, and disaster recovery
       - Describe core Azure architecture components such as subscriptions, management groups, resources and resource groups
       - Summarize geographic distribution concepts such as Azure regions, region pairs, and availability zones
-  
+
     Here are the learning paths in this series:
-  
-  
+
+
     :::row:::
-  
+
     :::column:::
       <img src="/training/achievements/az-900-describe-cloud-concepts.svg" width="101" alt="The trophy for the Describe core Azure concepts learning path." role="presentation"></img>
-  
+
       Part 1: Describe core Azure concepts
     :::column-end:::
-  
+
     :::column:::
       <img src="/training/achievements/az-900-describe-core-azure-services.svg" width="79.59" alt="The trophy for the Describe core Azure services learning path." role="presentation"></img>
-  
+
       [Part 2: Describe core Azure services](/training/paths/az-900-describe-core-azure-services/)
     :::column-end:::
-  
+
     :::column:::
       <img src="/training/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg" width="79.59" alt="The trophy for the Describe core solutions and management tools on Azure learning path." role="presentation"></img>
-  
+
       [Part 3: Describe core solutions and management tools on Azure](/training/paths/az-900-describe-core-solutions-management-tools-azure/)
     :::column-end:::
-  
+
     :::row-end:::
-  
-  
+
+
     :::row:::
-  
+
     :::column:::
       <img src="/training/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg" width="101" alt="The trophy for the Describe general security and network security features learning path." role="presentation"></img>
-  
+
       [Part 4: Describe general security and network security features](/training/paths/az-900-describe-general-security-network-security-features/)
     :::column-end:::
-  
+
     :::column:::
       <img src="/training/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg" width="79.59" alt="The trophy for the Describe identity, governance, privacy, and compliance features learning path." role="presentation"></img>
-  
+
       [Part 5: Describe identity, governance, privacy, and compliance features](/training/paths/az-900-describe-identity-governance-privacy-compliance-features/)
     :::column-end:::
-  
+
     :::column:::
       <img src="/training/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg" width="101" alt="The trophy for the Describe Microsoft Cost Management and service level agreements learning path." role="presentation"></img>
-  
+
       [Part 6: Describe Microsoft Cost Management and service level agreements](/training/paths/az-900-describe-azure-cost-management-service-level-agreements/)
     :::column-end:::
-  
+
     :::row-end:::
   iconUrl: /training/achievements/az-900-describe-cloud-concepts.svg
 - uid: learn-wwl.app-and-infra-migration-and-modernization.badge
@@ -1784,17 +1784,17 @@ achievements:
   title: Learn the business value of Microsoft Azure
   summary: >-
     Are you interested in learning about the cloud in an easy to understand way? Or perhaps you are confused about where to begin with cloud technology?
-  
+
     This learning experience will take you on  a journey that will begin by showing you how digital transformation and the power of the cloud can transform your business. We will cover how Microsoft Azure cloud services can power your organization on a trusted cloud platform. Finally, we will wrap up by illustrating how to make this journey real for your organization.
-  
+
     In this learning path, you will learn about:
-  
+
     - Enabling digital transformation.
-  
+
     - Identifying ways to migrate and modernize applications.
-  
+
     - Gaining insights through data, artificial intelligence (AI) and the Internet of Things (IoT)
-  
+
     - Meeting a broad set of regulatory and compliance standards on a trusted cloud platform.
   iconUrl: /training/achievements/azure-sfa-generalist-path.svg
 - uid: learn.wwl.design-for-high-availability.badge
@@ -1807,14 +1807,14 @@ achievements:
   title: Work with data in C#
   summary: >-
     Dive deeper into data and types, learning how to manipulate string and numeric data.
-  
-  
+
+
     In this learning path, you'll:
       - Choose the correct data type for the type of data you need to work with
       - Cast and convert data from one type to another
       - Modify string data, formatting it for display or changing the content of the string
       - Manipulate arrays, adding, removing, and sorting data
-  
+
     Once you complete this learning path, you'll take firm control of the data in your code.
   iconUrl: /training/achievements/csharp-data.svg
 - uid: learn.languages.csharp-first-steps.trophy
@@ -1822,14 +1822,14 @@ achievements:
   title: Take your first steps with C#
   summary: >-
     Interested in learning a programming language but aren't sure where to start?  Start here!  Learn the basic syntax and thought processes required to build simple applications using C#.
-  
-  
+
+
     In this learning path, you'll:
       - Write your first lines of C# code
       - Store and manipulate data to modify its type and appearance
       - Execute built-in functionality available from libraries of code
       - Add logic to your code to enable complex business functionality
-  
+
     Once you complete this learning path, you will have a great foundation to build upon in subsequent C# Learning Paths.
   iconUrl: /training/achievements/csharp-first-steps.svg
 - uid: learn.languages.csharp-logic.trophy
@@ -1837,14 +1837,14 @@ achievements:
   title: Add logic to your applications with C#
   summary: >-
     Deepen your experience with C# logic and iteration statements, Boolean expressions, and code blocks in this Learning Path.
-  
-  
+
+
     In this learning path, you'll:
       - Build more complex and expressive Boolean expressions
       - Use code blocks to control variable scope and the execution path of your code
       - Branch the flow of code using the `switch-case` statement
       - Iterate through a code block with the `for`, `while` and `do-while` statements
-  
+
     Once you complete this learning path, you'll have a stronger grasp of implementing logic in your C# code.
   iconUrl: /training/achievements/csharp-logic.svg
 - uid: learn.wwl.create-methods-c-sharp-console-applications
@@ -1911,7 +1911,7 @@ achievements:
   type: trophy
   title: Build edge AI solutions with Azure Percept
   summary: Build edge AI solutions with Azure Percept
-  iconUrl: /training/achievements/azure-percept/azure-percept.svg  
+  iconUrl: /training/achievements/azure-percept/azure-percept.svg
 - uid: learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.badge
   type: badge
   title: Deploy ASP.NET web apps with Azure Pipelines
@@ -2001,7 +2001,7 @@ achievements:
 - uid: learn.azure.intro-to-azure-linux.badge
   type: badge
   title: Introduction to Linux on Azure
-  summary: Discover the unique benefits of running Linux on Azure, and how to run Linux-based applications and workloads in the cloud with Azure. 
+  summary: Discover the unique benefits of running Linux on Azure, and how to run Linux-based applications and workloads in the cloud with Azure.
   iconUrl: /training/achievements/intro-to-azure-linux.svg
 - uid: learn.create-linux-vm-in-azure.badge
   type: badge
@@ -2032,7 +2032,7 @@ achievements:
   type: trophy
   title: Responsible bots
   summary: Responsible chatbots imitate human behavior but are also useful, reliable, unbiased, and culturally aware. They respect privacy and welcome diverse users.
-  iconUrl: /training/achievements/responsible-bots.svg  
+  iconUrl: /training/achievements/responsible-bots.svg
 - uid: learn.wwl.sc-100-design-security-for-infrastructure.trophy
   type: trophy
   title: 'SC-100: Design security for infrastructure'
@@ -2486,7 +2486,7 @@ achievements:
 - uid: learn.set-up-microsoft-intune.badge
   type: badge
   title: Set up Microsoft Intune
-  summary: Microsoft Intune helps you protect the devices, apps, and data that the people at your organization use to be productive. 
+  summary: Microsoft Intune helps you protect the devices, apps, and data that the people at your organization use to be productive.
   iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.data-ai.automate-model-selection-with-azure-automl.badge
   type: badge
@@ -2636,7 +2636,7 @@ achievements:
 - uid: learn.oxford.build-industrial-brain.badge
   type: badge
   title: Build an industrial strength brain
-  summary: Train a modular brain for real industrial processes. Decompose the tasks into skills, do Machine Teaching experimentation to get the orchestration and the training completed successfully. Evaluate brain performance using training graphs and custom assessments. 
+  summary: Train a modular brain for real industrial processes. Decompose the tasks into skills, do Machine Teaching experimentation to get the orchestration and the training completed successfully. Evaluate brain performance using training graphs and custom assessments.
   iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.oxford.autonomous-ai-implementation-engineer.trophy
   type: trophy
@@ -2826,7 +2826,7 @@ achievements:
 - uid: learn.azure.choose-bot-building-tool.badge
   type: badge
   title: Choose a bot-building tool
-  summary: Identify the different tools available from Microsoft that you can use to create bots. Learn about Azure Bot Service, Microsoft Power Visual Agents, QnA Maker, and Bot Framework Composer and Azure Bot Service. 
+  summary: Identify the different tools available from Microsoft that you can use to create bots. Learn about Azure Bot Service, Microsoft Power Visual Agents, QnA Maker, and Bot Framework Composer and Azure Bot Service.
   iconUrl: /training/achievements/choose-bot-building-tool.svg
 - uid: learn.wwl.azure-active-directory.badge
   type: badge
@@ -3016,7 +3016,7 @@ achievements:
 - uid: learn.iot.azure-rtos-netx-duo-fundamentals.badge
   type: badge
   title: Fundamentals of Azure RTOS NetX Duo
-  summary: Learn the fundamentals of Azure RTOS NetX Duo. 
+  summary: Learn the fundamentals of Azure RTOS NetX Duo.
   iconUrl: /learn/achievements/iot/azure-rtos-netx-duo-fundamentals.svg
 - uid: learn.iot.create-first-netx-duo-project.badge
   type: badge
@@ -3138,11 +3138,121 @@ achievements:
   title: Move app data to the cloud
   summary: Learn about Azure's data solutions and perform a data migration.
   iconUrl: /learn/achievements/move-application-data-to-cloud.svg
+- uid: learn-xamarin.consume-rest-services.badge
+  type: badge
+  title: Consume REST web services in Xamarin apps
+  summary: Consume a REST web service by using HttpClient and perform basic CRUD operations. You will detect when your device is connected to the internet to provide a good user experience and take advantage of the native networking stacks to get top performance.
+  iconUrl: /training/achievements/xamarin/consume-rest-services-badge.svg
+- uid: learn-xamarin.create-a-mobile-app-with-xamarin-forms.badge
+  type: badge
+  title: Create a mobile app with Xamarin.Forms
+  summary: Use Visual Studio with Xamarin.Forms to create a mobile app that runs on Android and iOS, with no previous experience necessary.
+  iconUrl: /training/achievements/xamarin/create-a-mobile-app-with-xamarin-forms-badge.svg
+- uid: learn-xamarin.create-custom-controls-with-forms-renderers.badge
+  type: badge
+  title: Create custom controls with Xamarin.Forms renderers
+  summary: Extend the built-in functionality of Xamarin.Forms by modifying existing controls and creating new custom controls.
+  iconUrl: /training/achievements/xamarin/create-custom-controls-in-xamarin-forms-with-renderers-badge.svg
+- uid: learn-xamarin.create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation.badge
+  type: badge
+  title: Create multi-page Xamarin.Forms apps with stack and tab navigation
+  summary: Analyze your app's page structure and choose the appropriate navigation paradigm. Implement stack navigation by using NavigationPage, and tab navigation with TabbedPage.
+  iconUrl: /training/achievements/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation-badge.svg
+- uid: learn-xamarin.create-ui-in-xamarin-forms-apps-with-xaml.badge
+  type: badge
+  title: Create a UI in Xamarin.Forms apps by using XAML
+  summary: Create a Xamarin.Forms application using XAML to define the UI while making use of platform-specific features. We will see how splitting the UI definition from the code implementation improves the maintainability of your application.
+  iconUrl: /training/achievements/xamarin/create-ui-in-xamarin-forms-apps-with-xaml-badge.svg
+- uid: learn-xamarin.customize-layout-in-xamarin-forms-xaml-pages.badge
+  type: badge
+  title: Customize layout in Xamarin.Forms XAML pages
+  summary: Create consistent user interfaces across different devices by using StackLayout and Grid.
+  iconUrl: /training/achievements/xamarin/customize-layout-in-xamarin-forms-xaml-pages-badge.svg
+- uid: learn-xamarincustomize-xamarinforms-listview.badge
+  type: badge
+  title: Customize a Xamarin.Forms ListView
+  summary: Create custom cell layouts that fit the shape of your data. Group related cells together to help your users find what they're interested in.
+  iconUrl: /training/achievements/xamarin/customize-xamarin-forms-listview-badge.svg
+- uid: learn-xamarin.design-a-mvvm-viewmodel-for-xamarin-forms.badge
+  type: badge
+  title: Design an MVVM viewmodel for Xamarin.Forms
+  summary: Separate your business logic and user interface code by using the MVVM design pattern.
+  iconUrl: /training/achievements/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms-badge.svg
+- uid: learn-xamarin.design-consistent-xaml-pages-with-shared-resources-and-styles.badge
+  type: badge
+  title: Design consistent Xamarin.Forms XAML pages by using shared resources and styles
+  summary: Define resources and styles in page-level and application-wide ResourceDictionary objects. Apply resources and styles by using the StaticResource and DynamicResource markup extensions.
+  iconUrl: /training/achievements/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles-badge.svg
+- uid: learn-xamarin.display-collections-in-xamarin-forms-apps-with-listview.badge
+  type: badge
+  title: Display collections in Xamarin.Forms apps by using ListView
+  summary: Use ListView to display a scrollable list of data that you can dynamically modify.
+  iconUrl: /training/achievements/xamarin/display-collections-in-xamarin-forms-apps-with-listview-badge.svg
+- uid: learn-xamarin.display-relationships-in-xamarin-forms-with-master-detail-navigation.badge
+  type: badge
+  title: Display relationships in Xamarin.Forms with master-detail navigation
+  summary: Implement drawer navigation and split view by using Xamarin.Forms MasterDetailPage and its MasterBehavior property.
+  iconUrl: /training/achievements/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation-badge.svg
+- uid: learn-xamarin.explore-cross-platform-design-patterns.badge
+  type: badge
+  title: Explore cross-platform design patterns for Xamarin apps
+  summary: Create a .NET Standard library to share code between your iOS and Android projects in Xamarin.Forms. Define platform-specific operations by using contracts so you can execute them from a shared code base.
+  iconUrl: /training/achievements/xamarin/explore-cross-platform-design-patterns-badge.svg
+- uid: learn.azure-intro-to-app-center.badge
+  type: badge
+  title: Introduction to App Center
+  summary: Characterize the types of services offered by App Center. Describe the use of App Center to build, distribute, test, and analyze usage of apps.
+  iconUrl: /training/achievements/app-center/introduction-to-app-center-badge.svg
+- uid: learn-xamarin.intro-to-xamarin-android.badge
+  type: badge
+  title: Introduction to Xamarin.Android
+  summary: Create fully native Android apps to take advantage of the power, features, and performance of the Android platform.
+  iconUrl: /training/achievements/xamarin/introduction-to-xamarin-android-badge.svg
+- uid: learn-xamarin.intro-to-xamarin-ios.badge
+  type: badge
+  title: Introduction to Xamarin.iOS
+  summary: Use Visual Studio and the Xamarin tools to create a Xamarin.iOS application. You design a UI in code and then provide behavior to create a tip calculator.
+  iconUrl: /training/achievements/xamarin/introduction-to-xamarin-ios-badge.svg
+- uid: learn-xamarin.prepare-to-publish-your-xamarin-application.badge
+  type: badge
+  title: Prepare to publish your Xamarin app
+  summary: After your app is code complete, you still need to take many steps to prepare it for submission to a store. In this module, you'll see how to prepare your app for publishing.
+  iconUrl: /training/achievements/xamarin/prepare-to-publish-your-xamarin-application-badge.svg
+- uid: learn-xamarinseparate-your-ui-and-code-with-xamarin-forms-data-binding.badge
+  type: badge
+  title: Separate your UI and code with Xamarin.Forms data binding
+  summary: Update your UI when your data changes by using bindings and INotifyPropertyChanged. Update your data when your UI changes by using two-way bindings. Bind otherwise incompatible types by using IValueConverter.
+  iconUrl: /training/achievements/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding-badge.svg
+- uid: learn-xamarin.store-local-data-with-sqlite.badge
+  type: badge
+  title: Store local data with SQLite in a Xamarin.Forms app
+  summary: Persist your data between application launches by storing your data locally using SQLite.
+  iconUrl: /training/achievements/xamarin/store-local-data-with-sqlite-badge.svg
+- uid: learn-xamarin.use-effects-in-xamarin-forms.badge
+  type: badge
+  title: Use effects in Xamarin.Forms
+  summary: Adjust the behavior of Xamarin.Forms elements by accessing the underlying native controls.
+  iconUrl:  /training/achievements/xamarin/use-effects-in-xamarin-forms-badge.svg
+- uid: learn-xamarin.xamarin-forms-accessibility.badge
+  type: badge
+  title: Create accessible apps with Xamarin.Forms
+  summary: Enhance the accessibility of Xamarin.Forms elements with automation properties for screen readers.
+  iconUrl: /training/achievements/xamarin-forms-accessibility.svg
+- uid: learn-xamarin.xamarin-forms-dual-screen.badge
+  type: badge
+  title: Build dual-screen Xamarin.Forms apps by using TwoPaneView
+  summary: Use TwoPaneView to support dual-screen devices like the Microsoft Surface Duo.
+  iconUrl: /training/achievements/xamarin/xamarin-forms-dual-screen-badge.svg
 - uid: learn.azure.intro-to-personalizer.badge
   type: badge
   title: Introduction to Personalizer
   summary: Discover the services available on Azure to personalize experiences for your users.
   iconUrl: /training/achievements/intro-to-personalizer.svg
+- uid: learn.govern-monitor-secure-resources-azure-lighthouse.badge
+  type: badge
+  title: Use Azure Lighthouse to govern, monitor, and secure customer resources
+  summary: Azure Lighthouse can help you monitor, secure, and govern your customer resources.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.wwl.configure-storage-tools.badge
   type: badge
   title: Configure Azure Storage with tools
@@ -3153,3 +3263,383 @@ achievements:
   title: Who Hacked cloud game
   summary: Provide instructions and guidance on playing the SC-200 Who Hacked cloud game.
   iconUrl: /training/achievements/sc-200-who-hacked-cloud-game.svg
+- uid: learn.static-apps-gatsby.badge
+  type: badge
+  title: Create and publish a static web app with Gatsby and Azure Static Web Apps
+  summary: Use Gatsby and React to develop a static web app, then deploy it to the web with Azure Static Web Apps.
+  iconUrl: /training/achievements/static-apps-gatsby.svg
+- uid: learn.azure.enterprise-scale-architecture.trophy
+  type: trophy
+  title: Create a scalable and modular architecture with Azure landing zones
+  summary: Learn how Microsoft Cloud Adoption Framework for Azure landing zones can help your organization to accelerate cloud adoption from months to weeks.
+  iconUrl: /training/achievements/enterprise-scale-architecture.svg
+- uid: learn.azure.enterprise-scale-introduction.badge
+  type: badge
+  title: Introduction to Azure landing zones in the Microsoft Cloud Adoption Framework
+  summary: Learn how Azure landing zones help organizations build the strategic design path and target technical state for your Azure environment.
+  iconUrl: /training/achievements/enterprise-scale-introduction.svg
+- uid: learn.azure.enterprise-scale-organizational-design-principles.badge
+  type: badge
+  title: Organizational design principles for enterprise-scale architecture 
+  summary: Evaluate the critical design areas for enterprise enrollment and Microsoft Entra tenants, identity and access management, and management group.
+  iconUrl: /training/achievements/enterprise-scale-organizational-design-principles.svg
+- uid: learn.azure.enterprise-scale-networking.badge
+  type: badge
+  title: Network design principles for enterprise-scale architecture
+  summary: This training examines key design considerations and recommendations surrounding networking and connectivity to, from, and within Microsoft Azure for the enterprise customer.
+  iconUrl: /training/achievements/enterprise-scale-networking.svg
+- uid: learn.azure.enterprise-scale-operations.badge
+  type: badge
+  title: Operational design principles for enterprise-scale architecture 
+  summary: Learn how to operationalize an Azure enterprise estate by using centralized management. This approach provides the guardrails needed to enable the organization's path to the cloud.
+  iconUrl: /training/achievements/enterprise-scale-operations.svg
+- uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.badge
+  type: badge
+  title: Diagnose startup errors in your application by using the Kudu console
+  summary: This module helps you understand the common startup errors in an ASP.NET Core application and diagnose them by using the Kudu console and the Azure portal.
+  iconUrl: /training/achievements/azure-diagnose-application-startup-errors-with-kudu-console.svg
+- uid: learn.azure-data-subject-requests.badge
+  type: badge
+  title: Responding to Data Subject Requests (DSRs)
+  summary: Know, understand, and be able to describe Data Subject Requests (DSRs), and learn how to manage DSRs on Azure and Microsoft 365.
+  iconUrl: /training/achievements/azure-data-subject-requests.svg
+- uid: learn.cela-disability-intro.badge
+  type: badge
+  title: Introduction to disability and accessibility
+  summary: This module presents the core ideas and definitions needed to understand accessibility concepts. You'll learn what accessibility means, how to be respectful and inclusive of people of all abilities, and why it's important for technology and materials to be accessible to everyone.
+  iconUrl: /training/achievements/accessibility-features.svg
+- uid: learn.azure-cosmos-db-for-postgresql.trophy
+  type: trophy
+  title: Azure Cosmos DB for PostgreSQL
+  summary: Azure Cosmos DB for PostgreSQL provides a highly scalable distributed relational database solution, reliably and securely managed on Azure. In these modules, learn how to effectively model data for distributed tables, efficiently ingest and query data by using distributed tables, use extensions to bundle multiple related SQL objects together, and design for a global scale and availability.
+  iconUrl: /learn/achievements/generic-trophy.svg
+- uid: learn.model-data-azure-cosmos-db-postgresql.badge
+  type: badge
+  title: Model data for Azure Cosmos DB for PostgreSQL
+  summary: In this module, you'll learn how to model, build, and alter a scalable, distributed, relational database in Azure Cosmos DB for PostgreSQL.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.ingest-query-data-using-azure-cosmos-db-postgresql.badge
+  type: badge
+  title: Ingest and query data using Azure Cosmos DB for PostgreSQL
+  summary: Understand how data is distributed across Azure Cosmos DB for PostgreSQL to efficiently ingest and query data across the cluster.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.extend-functionality-of-azure-cosmos-db-postgresql-using-extensions.badge
+  type: badge
+  title: Extend the functionality of Azure Cosmos DB for PostgreSQL using extensions
+  summary: Use PostgreSQL extensions to enhance and extend the functionality of Azure Cosmos DB for PostgreSQL. PostgreSQL allows you to extend the functionality of a database by using extensions. Extensions allow for bundling multiple related SQL objects together in a single package that can be loaded or removed from the database with a single command. After being loaded in the database, extensions can function like built-in features.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.manage-performance-availability-azure-cosmos-db-postgresql.badge
+  type: badge
+  title: Manage performance and availability in Azure Cosmos DB for PostgreSQL
+  summary: Azure Cosmos DB for PostgreSQL provides a highly scalable distributed database solution, reliably and securely managed on Azure. Scaled resources, read replication, and data availability can be managed to improve performance in Azure Cosmos DB for PostgreSQL.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.badge
+  type: badge
+  title: Scale from a single node to multiple nodes by using Azure Cosmos DB for PostgreSQL
+  summary: Azure Cosmos DB for PostgreSQL can scale from a single-node, nondistributed cluster to a multi-node, distributed cluster with minimal downtime. When you start with small amounts of data, it makes sense to start with a single node. But as time goes on, data needs to scale for growth. By understanding the process of going from a single-node cluster to a multi-node cluster, you can grow your data by using Azure Cosmos DB for PostgreSQL.
+  iconUrl: /learn/achievements/intro-to-hyperscale.svg
+- uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.badge
+  type: badge
+  title: Design multitenant SaaS apps by using Azure Cosmos DB for PostgreSQL
+  summary: Azure Cosmos DB for PostgreSQL provides a powerful data platform for multitenant software as a service (SaaS) applications. Starting from a single-node instance, a multitenant database can be horizontally scaled to a multi-node distributed cluster of up to 20 servers to meet the demands of tenant growth.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.accessible-content-m365.badge
+  type: badge
+  title: Creating accessible content with Microsoft 365
+  summary: This module shows you how to create content with Microsoft 365 in a way that enables greater accessibility.
+  iconUrl: /training/achievements/accessible-content-m365.svg
+- uid: learn.digital-accessibility.badge
+  type: badge
+  title: Digital accessibility
+  summary: This module shows how to create accessible and inclusive content for mobile apps and the web.
+  iconUrl: /training/achievements/digital-accessibility.svg
+- uid: learn.accessibility-features.badge
+  type: badge
+  title: Microsoft Accessibility Features and Tools
+  summary: This module highlights how to find and use key accessibility features and tools built into Microsoft products such as Windows 10, Microsoft PowerPoint, and Microsoft Translator.
+  iconUrl: /training/achievements/accessibility-features.svg
+- uid: learn.security-ops-sentinel.trophy
+  type: trophy
+  title: Cloud-native security operations with Microsoft Sentinel
+  summary: This learning path describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and Get familiar with Microsoft Sentinel, a cloud-native, security information and event management (SIEM) service.
+  iconUrl: /training/achievements/security-ops-sentinel.svg
+- uid: learn.azure.azure-sentinel-deploy-connect.badge
+  type: badge
+  title: Deploy Microsoft Sentinel and connect data sources
+  summary: In this course you'll learn how to deploy Microsoft Sentinel and connect it to data sources. You'll also learn how to use Azure and AI to provide analysis of security alerts.
+  iconUrl:  /training/achievements/deploy-azure-sentinel-and-connect-data-sources.svg
+- uid: learn.wwl.create-conversational-ai-solutions.trophy
+  type: trophy
+  title: Create conversational AI solutions
+  summary: Conversational AI solutions are based on interactions between human users and AI agents called _bots_. In this learning path, you'll learn how to build bots that can be delivered on Microsoft Azure.
+  iconUrl: /training/achievements/create-conversational-ai-solutions.svg
+- uid: learn.wwl.design-bot-conversation-flow.badge
+  type: badge
+  title: Create a bot with the Bot Framework SDK
+  summary: Learn how to build a bot by using the Microsoft Bot Framework SDK.
+  iconUrl: /training/achievements/design-a-bot-conversation-flow.svg
+- uid: learn.wwl.configure-azure-active-directory.badge
+  type: badge
+  title: Configure Microsoft Entra ID
+  summary: Learn how to configure Microsoft Entra ID, including features like Microsoft Entra ID join and self-service password reset.
+  iconUrl: /training/achievements/azure-active-directory.svg
+- uid: learn.wwl.configure-azure-dns.badge
+  type: badge
+  title: Configure Azure DNS
+  summary: Learn how to configure Azure DNS including custom domain names and record sets.
+  iconUrl: /training/achievements/azure-dns-configure.svg
+- uid: learn.wwl.configure-file-folder-backups.badge
+  type: badge
+  title: Configure file and folder backups
+  summary: Learn how to configure backup and restore policies that meet your company's regulatory needs.
+  iconUrl: /training/achievements/file-folder-backups.svg
+- uid: learn.wwl.create-bot-with-bot-framework-composer.badge
+  type: badge
+  title: Create a Bot with the Bot Framework Composer
+  summary: User the Bot Framework Composer to quickly and easily build sophisticated conversational bots without writing code.
+  iconUrl: /training/achievements/create-a-bot-with-the-bot-framework-composer.svg
+- uid: learn.wwl.az-400-get-started-devops-transformation-journey.trophy
+  type: trophy
+  title: 'AZ-400: Get started on a DevOps transformation journey'
+  summary: This learning path helps you understand what DevOps is and how to plan for a DevOps transformation journey.
+  iconUrl: /training/achievements/az-400-get-started-on-a-devops-transformation-journey.svg
+- uid: learn.wwl.choose-right-project.badge
+  type: badge
+  title: Choose the right project
+  summary: This module helps organizations decide the projects to start applying the DevOps process and tools to minimize initial resistance.
+  iconUrl: /training/achievements/2-choose-the-right-project.svg
+- uid: learn.wwl.describe-team-structures.badge
+  type: badge
+  title: Describe team structures
+  summary: This module explores agile development practices and helps to define and to configure teams and tools for collaboration.
+  iconUrl: /training/achievements/3-describe-team-structures.svg
+- uid: learn.monitor-aks-using-container-insights-badge
+  type: badge
+  title: Monitor an Azure Kubernetes Service cluster using Container insights in Azure Monitor
+  summary: Learn how to analyze the availability and performance of an Azure Kubernetes Service cluster with a containerized application and be proactively notified when a problem occurs. Enable Container insights in Azure Monitor to send the data to a Log Analytics workspace and then workbooks in Azure Monitor to view collected data and enable a predefined alert rule.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.deploy-microsoft-purview-scan-data-resources.badge
+  type: badge
+  title: Deploy Microsoft Purview and scan an Azure Data Lake resource using the Azure portal
+  summary: "Microsoft Purview is a data governance service that allows you to understand and manage data in your business by answering questions like: What kind of data do I have? Where is my sensitive data? Where did my data come from? This guide will help you get started with Microsoft Purview by deploying a Microsoft Purview account through the Azure portal, and registering an Azure Storage data source."
+  iconUrl: /training/achievements/microsoft-purview-deployment.svg
+- uid: learn-pr.azure.govern-azure-databases-with-microsoft-purview.badge
+  type: badge
+  title: Govern data from Azure databases with Microsoft Purview
+  summary: Govern data from Azure SQL and Azure SQL Managed instance databases using Microsoft Purview.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn-pr.azure.govern-sql-server-with-microsoft-purview.badge
+  type: badge
+  title: Govern multicloud relational databases using Microsoft Purview
+  summary: Govern your relational databases where they're using Microsoft Purview.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.intro-to-event-hubs.badge
+  type: badge
+  title: Introduction to Event Hubs 
+  summary: Azure Event Hubs connects events from any source to your software systems. This acts as a buffer to provide modular solutions that avoid overwhelming your system during traffic spikes, while still enabling near real-time data pipelines. Event Hubs is fast to set up and designed to allow you to focus on drawing insights from data instead of managing infrastructure. Able to process millions of events per second with low latency, Event Hubs is a modern big data message and event ingestion service that can be seamlessly integrated with other Azure and Microsoft services, such as Stream Analytics, Power BI, and Event Grids, along with outside services like Apache Spark.
+  iconUrl: /training/achievements/3-describe-team-structures.svg
+- uid: learn.expose-hybrid-services-with-azure-relay.badge
+  type: badge
+  title: Expose hybrid services securely with Azure Relay
+  summary: Learn how Azure Relay lets you securely expose services that run in your on-premises network to clients in the cloud. Connect services across network boundaries, without having to open a port on your firewall or make intrusive changes to your corporate network infrastructure.
+  iconUrl: /training/achievements/expose-hybrid-services-with-azure-relay.svg
+- uid: learn.data-ai.transform-data-with-azure-stream-analytics.badge
+  type: badge
+  title: Transform data by using Azure Stream Analytics
+  summary: Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and return results.
+  iconUrl: /learn/achievements/data-ai/transform-data-with-azure-stream-analytics-badge.svg
+- uid: learn.wwl.describe-types-of-source-control-systems.badge
+  type: badge
+  title: Describe types of source control systems
+  summary: This module describes different source control systems such Git and TFVC and helps with the initial steps for Git utilization.
+  iconUrl: /training/achievements/6-describe-types-of-source-control-systems.svg
+- uid: learn.wwl.introduction-to-source-control.badge
+  type: badge
+  title: Introduction to source control
+  summary: This module introduces you to the basics of source control, exploring benefits and best practices.
+  iconUrl: /training/achievements/5-introduction-to-source-control.svg
+- uid: learn.wwl.structure-your-git-repo.badge
+  type: badge
+  title: Structure your Git Repo
+  summary: This module examines Git repositories structure, explains the differences between mono versus multiple repos, and helps you create a changelog.
+  iconUrl: /training/achievements/1-structure-your-git-repo.svg
+- uid: learn.wwl.explore-continuous-integration.badge
+  type: badge
+  title: Explore continuous integration
+  summary: This module details continuous integration practice and the pillars for implementing it in the development lifecycle, its benefits, and properties.
+  iconUrl: /learn/achievements/4-explore-continuous-integration.svg
+- uid: learn.wwl.introduction-to-continuous-delivery.badge
+  type: badge
+  title: Introduction to continuous delivery
+  summary: This module introduces continuous delivery concepts and their implementation in a traditional IT development cycle.
+  iconUrl: /learn/achievements/1-introduction-to-continuous-delivery.svg
+- uid: learn.wwl.owasp-and-dynamic-analyzers.badge
+  type: badge
+  title: OWASP and Dynamic Analyzers
+  summary: This module explores OWASP and Dynamic Analyzers for penetration testing, results, and bugs.
+  iconUrl: /training/achievements/owasp-dynamic-analyzer.svg
+- uid: learn.wwl.migrate-to-devops.badge
+  type: badge
+  title: Choose the DevOps tools
+  summary: This module explores Azure DevOps and GitHub tools and helps organizations define their work management tool and licensing strategy.
+  iconUrl: /training/achievements/4-migrate-to-devops.svg
+- uid: learn.wwl.work-azure-repos-github.badge
+  type: badge
+  title: Work with Azure Repos and GitHub
+  summary: This module introduces you to Azure Repos and GitHub and explores ways to migrate from TFVC to Git, and work with GitHub Codespaces for development.
+  iconUrl: /training/achievements/7-work-with-azure-repos-and-github.svg
+- uid: learn.wwl.deploy-run-java-applications-azure-spring-apps.trophy
+  type: trophy
+  title: Deploying and running Java applications in Azure Spring Apps
+  summary: Learn how to plan a Java application migration to Azure Spring Apps using Azure Service Bus and Azure Event Hubs. This learning path guides you through migrating and deploying Java applications to Azure Spring Apps.
+  iconUrl: /training/achievements/deploying-and-running-java-applications-in-azure-spring-apps.svg
+- uid: learn.wwl.enable-monitoring-end-to-end-tracing.badge
+  type: badge
+  title: Enable monitoring and end-to-end tracing
+  summary: Now that everything is up and running, it’s important to monitor application availability. Monitoring helps you determine errors or exceptions within your applications. In this exercise, you'll add end-to-end monitoring to your applications.
+  iconUrl: /training/achievements/enable-monitoring-end-to-end-tracing.svg
+- uid: learn.wwl.migrate-spring-cloud-application-to-azure.badge
+  type: badge
+  title: Migrate a Spring Cloud application to Azure
+  summary: In this module, you'll create a git repo. Once created, the git repo, you'll create a config server for your Spring Cloud instance to connect to your repo. You'll then create a MySQL database service.
+  iconUrl: /training/achievements/2-migrate-spring-cloud-application-to-azure.svg
+- uid: learn.wwl.plan-java-application-migration-azure-spring-apps.badge
+  type: badge
+  title: Plan a Java application migration to Azure Spring Apps
+  summary: This module helps you to plan the migration of the PetClinic sample app to Azure. You'll see how services are deployed to Azure with Azure Spring Apps capabilities, including config server, logs, and distributed tracing.
+  iconUrl: /training/achievements/plan-spring-cloud-application-migration-to-azure.svg
+- uid: learn.wwl.secure-application-secrets-using-key-vault.badge
+  type: badge
+  title: Secure application secrets using Key Vault
+  summary: You're now running a version of the spring-petclinic microservice application in Azure. You want a better way to protect application secrets like your database connection string. In this module, you'll better protect your application secrets.
+  iconUrl: /training/achievements/3-secure-application-secrets-using-key-vault.svg
+- uid: learn.wwl.configure-azure-event-hubs-azure-spring-apps.badge
+  type: badge
+  title: Configure Azure Event Hubs for Azure Spring Apps
+  summary: Now that you've set up messaging for the Spring Petclinic application, the next thing you'll do is configure Azure Event Hubs. Event Hubs is a fully managed, real-time data ingestion service that’s trusted and scalable.
+  iconUrl: /training/achievements/configure-azure-event-hubs-azure-spring-apps.svg
+- uid: learn.wwl.create-configure-azure-service-bus-azure-spring-apps.badge
+  type: badge
+  title: Create and configure Azure Service Bus for Azure Spring Apps
+  summary: At this point, you've deployed the Spring Petclinic application, and the services are running. In this module, you'll be using Azure Service Bus to test an existing microservice and update another microservice to utilize queues.
+  iconUrl: /training/achievements/create-configure-azure-service-bus-azure-spring-apps.svg
+- uid: learn.wwl.protect-endpoints-using-web-application-firewall.badge
+  type: badge
+  title: Protect endpoints using Web Application Firewall
+  summary: You have now set up your Spring Petclinic application in Azure and secured the secrets used by the microservices. In this module, you'll learn how to add a Web Application Firewall to your setup.
+  iconUrl: /training/achievements/4-protect-endpoints-using-web-application-firewall.svg
+- uid: learn.wwl.secure-mysql-database-key-vault-using-private-endpoint.badge
+  type: badge
+  title: Secure MySQL database and Key Vault using a private endpoint
+  summary: You now have an Azure Spring Apps application deployed into a virtual network. In this module, you'll implement a configuration in which only connections that originate from within your virtual network are accepted.
+  iconUrl: /training/achievements/5-secure-mysql-database-key-vault-using-private-endpoint.svg
+- uid: learn.azure-admin-prerequisites.trophy
+  type: trophy
+  title: Prerequisites for Azure administrators
+  summary: Learn the basic concepts you'll need to know as an Azure administrator.
+  iconUrl: /training/achievements/azure-administrator-prerequisites.svg
+- uid: learn.azure-admin-manage-identities-governance.trophy
+  type: trophy
+  title: Manage identities and governance for Azure administrators
+  summary: Learn how to manage users, subscriptions, role-based access control (RBAC), and governance in Azure. 
+  iconUrl: /training/achievements/azure-administrator-manage-identities-governance.svg
+- uid: learn.azure-admin-manage-storage.trophy
+  type: trophy
+  title: Implement and manage storage for Azure administrators
+  summary: Learn how to manage storage as an Azure administrator.
+  iconUrl: /training/achievements/azure-administrator-manage-storage.svg
+- uid: learn.azure-admin-manage-compute-resources.trophy
+  type: trophy
+  title: Deploy and manage compute resources for Azure administrators
+  summary: Learn how to deploy and configure Azure compute resources.
+  iconUrl: /training/achievements/azure-administrator-manage-compute-resources.svg
+- uid: learn.azure-admin-manage-virtual-networks.trophy
+  type: trophy
+  title: Configure and manage virtual networks for Azure administrators
+  summary: Learn how to configure and manage key Azure network capabilities.
+  iconUrl: /training/achievements/azure-administrator-manage-virtual-networks.svg
+- uid: learn.azure-admin-monitor-backup-resources.trophy
+  type: trophy
+  title: Monitor and back up resources for Azure administrators
+  summary: Learn how to monitor and back up Azure resources.
+  iconUrl: /training/achievements/azure-administrator-monitor-backup-resources.svg
+- uid: learn.azure.intro-to-immersive-reader.badge
+  type: badge
+  title: Introduction to Immersive Reader
+  summary: Immersive Reader is a tool that embeds reading, math, and text comprehension capabilities into applications. Immersive Reader is an inclusively designed tool that implements proven techniques to improve reading comprehension for new readers, language learners, and people with learning differences such as dyslexia. No knowledge of machine learning is required.
+  iconUrl: /training/achievements/intro-to-immersive-reader.svg
+- uid: learn.azure.intro-to-content-moderator.badge
+  type: badge
+  title: Introduction to Content Moderator
+  summary: Content Moderator checks text, image, and video content for material that is potentially offensive, risky, or otherwise undesirable in content.
+  iconUrl: /training/achievements/intro-to-content-moderator.svg
+- uid: learn-windows.develop-windows-apps.trophy
+  type: trophy
+  title: Develop Windows 10 applications
+  summary: Learn how to develop, test, and deploy Windows 10 applications.
+  iconUrl: /training/achievements/develop-windows10-apps.svg
+- uid: learn.wsl-introduction.badge
+  type: badge
+  title: Introduction to Windows Subsystem for Linux (WSL)
+  summary: This 7-part training provides an introduction to WSL. Learn the basic concepts that combine Windows and Linux operating systems, including how to install one or more Linux distributions on your Windows computer.
+  iconUrl: /learn/achievements/wsl-path.svg
+- uid: learn-windows.writing-windows-10-apps.badge
+  type: badge
+  title: Write your first Windows application
+  summary: Learn how to create apps in some of the most popular Windows development frameworks - UWP, WPF, and Windows Forms.
+  iconUrl: /training/achievements/write-your-first-windows10-app.svg
+- uid: learn-windows.introduction-w10-dev.badge
+  type: badge
+  title: Introduction to Windows 10 development
+  summary: Learn the basics of Windows 10 development, and get your computer ready for writing Windows apps.
+  iconUrl: /training/achievements/introduction-to-windows-10-development.svg
+- uid: learn-windows.windows-10-ui-and-data.badge
+  type: badge
+  title: Implement data binding in your Windows application
+  summary: Learn about the relation between UI and data in Windows apps, and implement data binding in your applications.
+  iconUrl: /training/achievements/windows-10-ui-and-data.svg
+- uid: learn-windows.writing-adaptive-cards.badge
+  type: badge
+  title: Creating Adaptive Cards
+  summary: Learn the full range of capabilities (layout, inputs, and actions) of Adaptive Cards.
+  iconUrl: /training/achievements/writing-adaptive-cards.svg
+- uid: learn.learn-windows-on-arm.badge
+  type: badge
+  title: Introduction to Windows on Arm - Port a .NET application to natively support Arm-based processors
+  summary: This module describes how the Windows operating system supports devices powered by Arm processors. It also describes how to add a build configuration for Arm64 architecture to improve the experience of using your Windows application on Arm-based devices. This training also covers testing, debugging, and troubleshooting the new Arm-based version of your Windows app.
+  iconUrl: /learn/achievements/add-arm-support-to-your-windows-app.svg
+- uid: learn-windows.narrator-and-voice-input.badge
+  type: badge
+  title: Configure your Windows app to use Narrator and speech recognition
+  summary: Learn how to use audio elements to make an inclusive Windows app. Configure your app to work well with Narrator, and add a custom speech recognition system for spoken input.
+  iconUrl: /training/achievements/narrator-and-voice-input.svg
+- uid: learn-windows.making-inclusive-windows-app.badge
+  type: badge
+  title: Add principles of inclusive design to your Windows app
+  summary: Inclusive app design provides support for users with visual or motor skills impairment. This module will show you how to support such users in a Windows app.
+  iconUrl: /training/achievements/making-inclusive-windows-app.svg
+- uid: learn-windows.integrating-app-into-windows-10-timeline.badge
+  type: badge
+  title: Integrate adaptive cards into Windows 10 Timeline
+  summary: Learn how to use an adaptive card as the image in Windows 10 Timeline.
+  iconUrl: /training/achievements/integrating-app-into-windows-10-timeline.svg
+- uid: learn-windows.introducing-visual-studio.badge
+  type: badge
+  title: Getting started with Visual Studio for Windows 10 app development
+  summary: Visual Studio is the development tool used to create, debug, and deploy Windows 10 applications.
+  iconUrl: /training/achievements/introduction-to-visual-studio-for-windows10-dev.svg
+- uid: learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.badge
+  type: badge
+  title: Send and receive data using Azure Data Share and transform data using Azure Data Factory
+  summary: Learn how to ingest data from Azure Data Share into Azure Data Factory pipelines to build automated ingestion pipelines.
+  iconUrl: /training/achievements/receive-data-with-azure-data-share-transform-with-azure-data-factory.svg
+- uid: learn.azure.intro-to-stereokit.badge
+  type: badge
+  title: Build Mixed Reality Apps in Native C# with StereoKit
+  summary: By the end of this module, you'll be able to set up, create, and build an application using StereoKit. You'll understand the features of StereoKit through a sample application called StereoKit ink application. You'll also work across OpenXR platforms like HoloLens 2 and Windows Mixed Reality.
+  iconUrl: /training/achievements/intro-to-stereokit.svg
+- uid: learn.n-tier-architecture
+  type: badge
+  title: Tour the N-tier architecture style for your application
+  summary: Use a Resource Manager template to deploy an application styled in an N-tier architecture, identify key concepts of N-tier architectures, and review best practices for deployments of this style.
+  iconUrl: /training/achievements/n-tier-architecture.svg

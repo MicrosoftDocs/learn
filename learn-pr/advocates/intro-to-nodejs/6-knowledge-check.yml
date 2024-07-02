@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Check your knowledge of the Node.js runtime and its development environment.
   ms.date: 01/05/2024
-  author: manekinekko
-  ms.author: chnoring
+  author: diberry
+  ms.author: diberry
   ms.topic: unit
   ms.custom:
     - team=nextgen

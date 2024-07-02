@@ -41,7 +41,7 @@ An extension resource has a slightly different ID than other resources. It consi
 Let's say you deployed the previously mentioned Azure Cosmos DB account, and the account was named `toyrnd`. Here's what the lock's resource ID would look like:
 
 ```
-/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyDevelopment/providers/Microsoft.DocumentDB/databaseAccounts/toyrnd/providers/Microsoft.Authorization/locks/DontDelete
+/subscriptions/A123b4567c-1234-1a2b-2b1a-1234abc12345/resourceGroups/ToyDevelopment/providers/Microsoft.DocumentDB/databaseAccounts/toyrnd/providers/Microsoft.Authorization/locks/DontDelete
 ```
 
 Here's a visual representation:

@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-azure-virtual-networks
 metadata:
   title: Introduction to Azure Virtual Networks
   description: "In this module,&nbsp;you&nbsp;learn how to design and implement Azure networking services. You learn about virtual networks, public and private IPs, DNS, virtual network peering, routing, and Azure Virtual NAT."
-  ms.date: 04/18/2024
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: module

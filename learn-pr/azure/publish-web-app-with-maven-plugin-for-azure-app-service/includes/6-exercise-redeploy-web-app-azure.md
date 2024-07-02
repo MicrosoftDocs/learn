@@ -13,7 +13,7 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
 1. Replace the contents of this file with the following HTML and inline Java code:
 
     ```html
-    <%@ page import = "java.io.*,java.util.*, javax.servlet.*, java.net.InetAddress, java.io.File" %>
+    <%@ page import = "java.io.*,java.util.*, jakarta.servlet.*, java.net.InetAddress, java.io.File" %>
     <html>
     <head><title>Server Status Page</title></head>
     <body>
@@ -55,7 +55,7 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
 1. Run the app locally with the following Maven command:
 
     ```bash
-    mvn tomcat7:run
+    mvn package cargo:run
     ```
 
 1. Open a new browser tab using the URL in the JSON, appending `MyWebApp/`. You should see the new Server Status page:
@@ -81,31 +81,18 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
     mvn azure-webapp:deploy 
     ```
 
-1. You'll get this console output showing that the deployment used the new authentication configuration:
+    Maven displays a series of build messages, and the final message should indicate successful deployment to Azure.
 
     ```console
-    [INFO] Scanning for projects...
-    [INFO]
-    [INFO] ------------------------------------------------------------------------
-    [INFO] Building MyWebApp Maven Webapp 1.0-SNAPSHOT
-    [INFO] ------------------------------------------------------------------------
-    [INFO]
-    [INFO] --- azure-webapp-maven-plugin:1.9.0:deploy (default-cli) @ MyWebApp ---
-    [INFO] [Correlation ID: 3e5cf479-6732-4c6a-96da-88044cdadcc0] Instance discovery was successful
-    [INFO] Updating app service plan
-    [INFO] Updating target Web App...
-    [INFO] Successfully updated Web App.
-    [INFO] Using 'UTF-8' encoding to copy filtered resources.
-    [INFO] Copying 1 resource to /home/~/MyWebApp/target/azure-webapp/MyWebApp-1570214065588
+    [INFO] Successfully deployed the resources to MyWebApp-1570214065588
     [INFO] Trying to deploy artifact to MyWebApp-1570214065588...
-    [INFO] Deploying the war file MyWebApp.war...
-    [INFO] Successfully deployed the artifact to https://MyWebApp-1570214065588.azurewebsites.net
+    [INFO] Deploying (/home/cephas/MyWebApp/target/MyWebApp.war)[war]  ...
+    [INFO] Application url: https://MyWebApp-1570214065588.azurewebsites.net
     [INFO] ------------------------------------------------------------------------
     [INFO] BUILD SUCCESS
     [INFO] ------------------------------------------------------------------------
-    [INFO] Total time: 19.448 s
-    [INFO] Finished at: 2019-10-09T12:00:15+00:00
-    [INFO] Final Memory: 40M/324M
+    [INFO] Total time:  01:00 min
+    [INFO] Finished at: 2024-05-02T12:58:05Z
     [INFO] ------------------------------------------------------------------------
     ```
 

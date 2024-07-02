@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fundamentals-generative-ai.writing-prompts
-title: Improve generative AI responses with prompt engineering
+title: Considerations for Copilot prompts
 metadata:
-  title: Improve generative AI responses with prompt engineering
+  title: Considerations for Copilot prompts
   description: "Understand how submitting clear, specific prompts produces better generative AI results. See examples of best practices for prompt engineering."
-  ms.date: 6/27/2023
+  ms.date: 5/15/2024
   author: sherzyang
   ms.author: sheryang
   ms.topic: unit

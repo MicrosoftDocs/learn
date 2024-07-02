@@ -1,4 +1,4 @@
-In this module, you learned how to use Azure OpenAI with vCore-based Azure Cosmos DB for MongoDB to enhance how your applications retrieve and handle your own data. You explored how vector databases, embeddings, and Retrieval Augmentation Generation (RAG) systems can make searches more precise and responses more relevant. The module covered how to set up your vector indexes, create embeddings with Azure OpenAI, and merge these features to deliver accurate and useful answers in your MongoDB applications using your own data.
+In this module, you learned how to use Azure OpenAI with vCore-based Azure Cosmos DB for MongoDB to enhance how your applications retrieve and handle your own data. You explored how vector databases, embeddings, and Retrieval Augmentation Generation (RAG) systems can make searches more precise and responses more relevant. The module covered how to set up your vector indexes, create embeddings with Azure OpenAI, and merge these features to deliver accurate and useful answers in your vCore-based Azure Cosmos DB for MongoDB applications using your own data.
 
 Additional reading:
 

@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-  ms.service: azure, linux-related-content
+  ms.custom: linux-related-content
 azureSandbox: false
 labModal: false
 durationInMinutes: 13

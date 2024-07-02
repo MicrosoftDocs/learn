@@ -116,7 +116,7 @@ If you want to create a subdirectory and another subdirectory under it with one 
 mkdir --parents orders/2019
 ```
 
-The `rmdir` command deletes (removes) a directory, but only if it isn't empty. Fortunately, you can use the `rm` command to delete directories that aren't empty.
+The `rmdir` command deletes (removes) a directory, but only if it's empty. If it's not empty, you'll get a warning instead. Fortunately, you can use the `rm` command to delete directories that aren't empty in combination with the `-r` (recursive) flag. The command would then look like so, `rm -r`.
 
 ### `rm` command
 

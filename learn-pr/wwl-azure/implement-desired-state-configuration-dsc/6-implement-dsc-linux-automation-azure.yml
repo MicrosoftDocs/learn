@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-desired-state-configuration-dsc.implement-dsc-linux-automation-azure
+title: Implement DSC and Linux Automation on Azure
+metadata:
+  title: Implement DSC and Linux Automation on Azure
+  description: "Implement DSC and Linux Automation on Azure"
+  ms.date: 05/23/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom: N/A, linux-related-content
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-implement-dsc-linux-automation-azure.md)]

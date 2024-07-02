@@ -13,7 +13,7 @@ To meet these objectives, you'll do the following tasks:
 
 ## Get the GitHub repository
 
-Here you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files you need to get started for this module.
+Set up your GitHub repository to complete the rest of this module by creating a new repository based on a template repository. The template repository contains the files you need to get started for this module.
 
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated GitHub template repository.
 
@@ -39,9 +39,9 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 1. Select the **Public** option.
 
-   When you create your own repositories, you might want to make them private. In this module, you'll work with some features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
+   When you create your own repositories, you might want to make them private. However, this module uses some features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
 
-1. Select **Create repository from template**.
+1. Select **Create repository**.
 
    :::image type="content" source="../media/4-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page.":::
 
@@ -49,7 +49,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 ## Clone the repository
 
-You now have a copy of the template repository in your own account. You'll clone this repository locally so you can start work in it.
+You now have a copy of the template repository in your own account. Clone this repository locally so you can start work in it.
 
 1. Select **Code** and select the copy icon.
 
@@ -57,13 +57,9 @@ You now have a copy of the template repository in your own account. You'll clone
 
 1. Open Visual Studio Code.
 
-1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
+1. Open a Visual Studio Code terminal window by selecting **View** > **Terminal**. The window usually opens at the bottom of the screen.
 
-1. Navigate in the terminal to the directory where you want to clone the GitHub repository on your local computer. For example, to clone the repository to the _toy-website-test_ folder, run the following command:
-
-   ```bash
-   cd toy-website-test
-   ```
+1. Navigate in the terminal to the directory where you want to clone the GitHub repository on your local computer.
 
 1. Type `git clone` and then paste the URL you copied earlier, which looks something like this:
 
@@ -121,12 +117,12 @@ Next, create a workload identity in Microsoft Entra ID for your deployment workf
 
 ::: zone pivot="cli"
 
-To create the workload identity, the Azure CLI commands use `jq` to parse data from JSON output. If you don't have `jq` installed, you can use Bash in [Azure Cloud Shell](https://shell.azure.com/) to create the workload identity, resource group and role assignment, and prepare the GitHub secrets.
+To create the workload identity, the Azure CLI commands use `jq` to parse data from JSON output. If you don't have `jq` installed, you can use Bash in [Azure Cloud Shell](https://shell.azure.com/) to create the workload identity, resource group, and role assignment, and to prepare the GitHub secrets.
 
-1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `<myGithubUser>` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
    ```bash
-   githubOrganizationName='mygithubuser'
+   githubOrganizationName='<myGithubUser>'
    githubRepositoryName='toy-website-test'
    ```
 
@@ -150,10 +146,10 @@ To create the workload identity, the Azure CLI commands use `jq` to parse data f
 
 ::: zone pivot="powershell"
 
-1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `<myGithubUser>` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
    ```azurepowershell
-   $githubOrganizationName = 'mygithubuser'
+   $githubOrganizationName = '<myGithubUser>'
    $githubRepositoryName = 'toy-website-test'
    ```
 
@@ -245,7 +241,7 @@ You've created a workload identity, and a resource group that it can deploy to. 
 
 1. In your browser, navigate to your GitHub repository.
 
-1. Select **Settings** > **Secrets** > **Actions**.
+1. Select **Settings** > **Secrets and variables** > **Actions**.
 
 1. Select **New repository secret**.
 

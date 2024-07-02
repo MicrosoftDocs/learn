@@ -4,12 +4,11 @@ title: Exercise - Create Bicep templates
 metadata:
   title: Exercise - Create Bicep templates
   description: "Exercise - Create Bicep templates"
-  ms.date: 03/18/2024
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: yasa
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.custom: N/A, devx-track-bicep
 durationInMinutes: 3
 content: |
   [!include[](includes/4-exercise-create-bicep-templates.md)]

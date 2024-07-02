@@ -4,8 +4,8 @@ title: Exercise - Debug with Visual Studio Code
 metadata:
   title: Exercise - Debug with Visual Studio Code
   description: Learn how to use the Visual Studio Code debugger with Node.js programs.
-  author: GitHubber17
-  ms.author: chnoring
+  author: diberry
+  ms.author: diberry
   ms.date: 06/01/2023
   ms.topic: unit
   ms.custom:

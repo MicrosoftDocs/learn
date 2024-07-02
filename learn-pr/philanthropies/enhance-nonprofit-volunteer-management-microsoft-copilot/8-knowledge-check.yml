@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the Enhance nonprofit volunteer management with Microsoft Copilot module.
+  ms.date: 6/14/2024
+  author: CourtneyHMicrosoft
+  ms.author: cohodge
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is a key benefit of using Copilot for volunteer management in nonprofit organizations?"
+    choices:
+    - content: "Copilot can generate and edit volunteer recruitment materials."
+      isCorrect: true
+      explanation: "Correct. Copilot aids in volunteer management with the ability to generate and edit materials such as job descriptions, flyers, and social media posts. It does not provide legal advice, manage finances, or set up events, as these tasks are outside its capabilities."
+    - content: "Copilot can provide legal advice for volunteer management."
+      isCorrect: false
+      explanation: "Incorrect. This is outside Copilot's capabilities."
+    - content: "Copilot can manage the nonprofit's finances."
+      isCorrect: false
+      explanation: "Incorrect. This is outside Copilot's capabilities."
+    - content: "Copilot can physically set up volunteer events."
+      isCorrect: false
+      explanation: "Incorrect. This is outside Copilot's capabilities."
+  - content: "Which of the following tasks is Copilot NOT designed to assist with volunteer training?"
+    choices:
+    - content: "Creating volunteer training manuals and videos."
+      isCorrect: false
+      explanation: "Incorrect. Copilot can assist with this."
+    - content: "Generating volunteer training quizzes."
+      isCorrect: false
+      explanation: "Incorrect. Copilot can assist with this."
+    - content: "Providing feedback on volunteer training materials."
+      isCorrect: false
+      explanation: "Incorrect. Copilot can assist with this. "
+    - content: "Conducting in-person volunteer training sessions."
+      isCorrect: true
+      explanation: "Correct. While Copilot can help create training materials and quizzes, it cannot conduct in-person training sessions which require human interaction and real-time communication."
+  - content: "What is an essential aspect of volunteer retention that Copilot can assist with?"
+    choices:
+    - content: "Copilot can ensure long-term commitment from volunteers."
+      isCorrect: false
+      explanation: "Incorrect. This responsibility requires human judgment and interaction."
+    - content: "Copilot can generate and update volunteer retention materials."
+      isCorrect: true
+      explanation: "Correct. Copilot aids in volunteer retention by offering the ability to generate and update materials such as feedback forms, newsletters, and certificates. It does not ensure long-term commitment, provide financial incentives, or personally thank volunteers, as these are responsibilities that require human judgment and interaction."
+    - content: "Copilot can provide financial incentives for volunteers."
+      isCorrect: false
+      explanation: "Incorrect. This responsibility requires human judgment and interaction."
+    - content: "Copilot can personally thank each volunteer for their service."
+      isCorrect: false
+      explanation: "Incorrect. This responsibility requires human judgment and interaction."

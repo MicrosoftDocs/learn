@@ -3,7 +3,7 @@ uid: learn.github.configure-and-use-secret-scanning-in-your-github-repository
 metadata:
   title: Configure and use secret scanning in your GitHub repository
   description: On completing this module, you'll understand how secret scanning works to configure and use it efficiently.
-  ms.date: 03/07/2024
+  ms.date: 04/30/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module

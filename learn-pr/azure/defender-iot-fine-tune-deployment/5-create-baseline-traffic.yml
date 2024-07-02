@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-fine-tune-deployment.create-baseline-traffic
+title: Create a baseline of OT network traffic 
+metadata:
+  title: Create a baseline of OT network traffic 
+  description: "Create a baseline of OT network traffic."
+  ms.date: 5/23/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-create-baseline-traffic.md)] 

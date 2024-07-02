@@ -16,7 +16,7 @@ abstract: |
   - What is Azure Functions
   - How Azure Functions works and the logic behind it
   - When to use Azure Functions
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:

@@ -5,12 +5,11 @@ metadata:
   unitType:  Troubleshoot CodeQL results
   title:  Troubleshoot CodeQL results
   description: Learn about common tips for troubleshooting your CodeQL queries.
-  ms.date: 04/08/2024
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 05/01/2024
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
   ms.custom:
-    - devx-track-python
 durationInMinutes: 5
 content: |
   [!include[](includes/5-troubleshoot-your-results.md)]

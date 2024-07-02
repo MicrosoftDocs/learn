@@ -6,4 +6,4 @@ The topics covered in this module include:
 - Enhancing search functionalities using vector-based querying.
 - Integrating RAG systems to produce accurate and relevant responses.
 
-By the end of this module, you have the skills to effectively deploy Azure OpenAI within your vCore-based Azure Cosmos DB for MongoDB applications, ensuring they not only perform efficiently but also deliver contextually enhanced responses.
+By the end of this module, you have the skills to effectively utilize Azure OpenAI within your vCore-based Azure Cosmos DB for MongoDB applications, ensuring they not only perform efficiently but also deliver contextually enhanced responses.

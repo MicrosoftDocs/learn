@@ -1,4 +1,4 @@
-Workflows enable you to automate the steps in your deployment process. Your process might include several logical groups of jobs that you want to run. In this unit, you'll learn about workflow jobs and how you use them to add quality control processes to your Bicep deployments.
+Workflows allow you to automate the steps in your deployment process. Your process might include several logical groups of jobs that you want to run. In this unit, you'll learn about workflow jobs and how you use them to add quality control processes to your Bicep deployments.
 
 ## What are workflow jobs?
 
@@ -8,11 +8,11 @@ _Jobs_ help you to divide your workflow into multiple logical blocks. Each job c
 
 Jobs can be used in your workflow to mark a separation of concerns. For example, when you work with Bicep code, _validating_ the code is a separate concern from _deploying_ your Bicep file. When you use an automated workflow, building and testing your code are often called _continuous integration_ (CI). Deploying code in an automated workflow is often called _continuous deployment_ (CD).
 
-In CI jobs, you check the validity of the changes that have been made to your code. CI jobs provide quality assurance. They can be run without affecting your live production environment.
+In CI jobs, you check the validity of the changes that were made to your code. CI jobs provide quality assurance. They can be run without affecting your live production environment.
 
-In many programming languages, code needs to be _built_ before someone can run it. When a Bicep file is deployed, it's converted, or _transpiled_, from Bicep to JSON. The tooling performs this process automatically. In most situations, you don't need to manually build Bicep code to JSON templates within your workflow. We still use the term _continuous integration_ when we talk about Bicep code, though, because the other parts of CI still apply, such as validating your code.
+In many programming languages, code needs to be _built_ before someone can run it. When a Bicep file is deployed, it gets converted, or _transpiled_, from Bicep to JSON. The tooling performs this process automatically. In most situations, you don't need to manually build Bicep code to JSON templates within your workflow. We still use the term _continuous integration_ when we talk about Bicep code, though, because the other parts of CI still apply, such as validating your code.
 
-After your CI jobs run successfully, you should have increased your confidence that the changes you've made will deploy successfully too. In CD jobs, you deploy your code to each of your environments. You usually start with test and other non-production environments, and then move through to production environments. In this module, we'll deploy to a single environment. In a future module, you'll learn how to extend your deployment workflow to deploy to multiple environments, such as non-production and production environments.
+After your CI jobs run successfully, you should gain increased confidence that the changes you made will deploy successfully too. In CD jobs, you deploy your code to each of your environments. You usually start with test and other non-production environments, and then move through to production environments. In this module, we'll deploy to a single environment. In a future module, you'll learn how to extend your deployment workflow to deploy to multiple environments, such as non-production and production environments.
 
 Jobs run in parallel by default. You can control how and when each job runs. For example, you can configure your CD jobs to run only after your CI jobs successfully run. Or, you might have multiple CI jobs that need to run in sequence, such as to build your code and then test it. You might also include a _rollback_ job that runs only if previous deployment jobs failed.
 
@@ -24,7 +24,7 @@ Consider a timeline of the activities that you perform when you write code. The 
 
 :::image type="content" source="../../includes/media/shift-left.png" alt-text="Chart with a timeline on the horizontal axis, cost on the vertical axis, and a line showing that the cost increases the later an error is identified." border="false":::
 
-It's a well-understood rule in software development that the earlier in the process that you find an error - the closer to the left of the timeline - the easier, quicker, and cheaper it is to fix. The later in your process that you catch an error, the harder and more complicated it is to fix.
+It's a well-understood rule in software development that the earlier in the process that you find an error—the closer to the left of the timeline—the easier, quicker, and cheaper it is to fix. The later in your process that you catch an error, the harder and more complicated it becomes to fix.
 
 So, the goal is to shift the discovery of problems toward the left of the preceding diagram. Throughout this module, you'll see how you can add more validation and testing to your workflow as it progresses.
 
@@ -37,7 +37,7 @@ You can even add validation well before your deployment begins. When you work wi
 
 Every workflow contains at least one job, and you can define more jobs to suit your requirements. Jobs run in parallel by default. The type of GitHub account you have determines the number of jobs you can run simultaneously when you use GitHub-hosted runners.
 
-Imagine that you've built a Bicep file that you need to deploy twice: once to infrastructure in the United States and once to infrastructure in Europe. You also want to validate your Bicep code in your workflow. Here's an illustration of a multi-job workflow that defines a similar process:
+Imagine that you built a Bicep file that you need to deploy twice: once to infrastructure in the United States and once to infrastructure in Europe. You also want to validate your Bicep code in your workflow. Here's an illustration of a multi-job workflow that defines a similar process:
 
 :::image type="content" source="../media/2-jobs-parallel.png" alt-text="Diagram that shows a workflow with a Validate job, a Deploy U S job, and a Deploy Europe job, running in parallel." border="false":::
 
@@ -57,7 +57,7 @@ You can specify the dependencies between jobs by using the `needs` keyword:
 
 :::code language="yaml" source="code/2-jobs-needs.yml" highlight="10, 15" :::
 
-When you use the `needs` keyword, the workflow waits for the dependent job to finish successfully before it starts the next job. If the workflow detects that all of the dependencies for multiple jobs have been satisfied, it can run those jobs in parallel.
+When you use the `needs` keyword, the workflow waits for the dependent job to finish successfully before it starts the next job. If the workflow detects that all of the dependencies for multiple jobs were satisfied, it can run those jobs in parallel.
 
 > [!NOTE]
 > In reality, jobs run in parallel only if you have enough runners to run multiple jobs at the same time. The number of GitHub-hosted runners you can use depends on the type of GitHub account you have. You can purchase another GitHub account plan if you need more parallel jobs.
@@ -74,15 +74,15 @@ In the preceding example, when everything goes well, the workflow runs the **Tes
 
 ## Bicep deployment jobs
 
-A typical Bicep deployment workflow contains several jobs. As the workflow moves through the jobs, the goal is to become increasingly confident that the later jobs will succeed. Here are the common jobs for a Bicep deployment workflow:
+A typical Bicep deployment workflow contains several jobs. As the workflow moves through the jobs, the goal is to become increasingly confident that the later jobs succeed. Here are the common jobs for a Bicep deployment workflow:
 
 :::image type="content" source="../media/2-jobs-bicep.png" alt-text="Diagram that shows a Bicep deployment workflow with five jobs: Lint, Validate, Preview, Deploy, and Smoke Test." border="false":::
 
 1. **Lint**: Use the Bicep linter to verify that the Bicep file is well formed and doesn't contain any obvious errors.
 1. **Validate**: Use the Azure Resource Manager preflight validation process to check for problems that might occur when you deploy.
-1. **Preview**: Use the what-if command to validate the list of changes that will be applied against your Azure environment. Ask a human to manually review the what-if results and approve the workflow to proceed.
+1. **Preview**: Use the what-if command to validate the list of changes that are applied against your Azure environment. Ask a human to manually review the what-if results and approve the workflow to proceed.
 1. **Deploy**: Submit your deployment to Resource Manager and wait for it to finish.
-1. **Smoke Test**: Run basic post-deployment checks against some of the important resources that you've deployed. These checks are called _infrastructure smoke tests_.
+1. **Smoke Test**: Run basic post-deployment checks against some of the important resources that you deployed. These checks are called _infrastructure smoke tests_.
 
 Your organization might have a different sequence of jobs, or you might need to integrate your Bicep deployments into a workflow that deploys other components. After you understand how the jobs work, you can design a workflow to suit your needs.
 

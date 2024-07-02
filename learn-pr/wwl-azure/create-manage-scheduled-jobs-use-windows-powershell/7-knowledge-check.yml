@@ -4,17 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/03/2023
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
-azureSandbox: false
-labModal: false
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
+  title: ""
   questions:
   - content: "Which PowerShell cmdlet should you use to specify that a scheduled task that you will be creating should run with elevated privileges?"
     choices:

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-virtual-networks.secure-paas-deployments
+title: Configure firewall settings on PaaS resources
+metadata:
+  title: Configure firewall settings on PaaS resources
+  description: "Configure firewall settings on PaaS resources"
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/10-secure-paas-deployments.md)]

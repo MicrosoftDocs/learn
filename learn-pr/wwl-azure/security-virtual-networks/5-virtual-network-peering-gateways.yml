@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-virtual-networks.virtual-network-peering-gateways
+title: Plan and implement Virtual Network peering or gateway
+metadata:
+  title: Plan and implement Virtual Network peering or gateway
+  description: "Plan and implement Virtual Network peering or gateway"
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-virtual-network-peering-gateways.md)]

@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Working knowledge of security operations and incident response
   - Working knowledge of Microsoft security products and services
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/security-copilot-describe-core-features.svg
 hidden: false
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner

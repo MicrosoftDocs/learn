@@ -55,19 +55,19 @@ The initial access tactic refers to techniques an attacker may use for gaining a
 
 Source Code Management (SCM) authentication – Access by having an authentication method to the organization’s source code management. It may be a personal access token (PAT), an SSH key, or any other allowed authentication credential. An example of a method an attacker can use to achieve this technique is using a phishing attack against an organization.<br>
 
-Continuous Integration (CI) and Continuous Delivery (CD) service authentication – Similar to SCM authentication, an attacker can leverage authentication to the CI/CD service in order to attack the organization’s DevOps.<br>
+Continuous Integration (CI) and Continuous Delivery (CD) service authentication – Similar to SCM authentication, an attacker can leverage authentication to the CI/CD service in order to attack the organization’s DevOps.
 
 Organization’s public repositories – Access to the organization’s public repositories that are configured with CI/CD capabilities. Depending on the organization’s configuration, these repositories may have the ability to trigger a pipeline run after a pull request (PR) is created.<br>
 
-Endpoint compromise – Using an existing compromise, an attacker can leverage the compromised developer’s workstation, thus gaining access to the organization’s SCM, registry, or any other resource the developer has access to.<br>
+Endpoint compromise – Using an existing compromise, an attacker can leverage the compromised developer’s workstation, thus gaining access to the organization’s SCM, registry, or any other resource the developer has access to.
 
-Configured webhooks – When an organization has a webhook configured, an attacker could use it as an initial access method into the organization’s network by using the SCM itself to trigger requests into that network. This could grant the attacker access to services that are not meant to be publicly exposed, or that are running old and vulnerable software versions inside the private network.<br>
+Configured webhooks – When an organization has a webhook configured, an attacker could use it as an initial access method into the organization’s network by using the SCM itself to trigger requests into that network. This could grant the attacker access to services that are not meant to be publicly exposed, or that are running old and vulnerable software versions inside the private network.
 
 ### Execution
 
 The execution tactic refers to techniques that may be used by a malicious adversary to gain execution access on pipeline resources – the pipeline itself or the deployment resources. Some of the techniques in this section contain explanations about the different ways to perform them, or what we call sub-techniques:
 
-Poisoned pipeline execution (PPE) – Refers to a technique where an attacker can inject code to an organization’s repository, resulting in code execution in the repository’s CI/CD system. There are different sub-techniques to achieve code execution:<br>
+Poisoned pipeline execution (PPE) – Refers to a technique where an attacker can inject code to an organization’s repository, resulting in code execution in the repository’s CI/CD system. There are different sub-techniques to achieve code execution:
 
  -  Direct PPE (d-PPE) – Cases where the attacker can directly modify the configuration file inside the repository. Since the pipeline is triggered by a new PR and run according to the configuration file – the attacker can inject malicious commands to the configuration file, and these commands are executed in the pipeline.<br>
  -  Indirect PPE (i-PPE) – Cases where the attacker cannot directly change the configuration files, or that these changes are not taken into account when triggered. In these cases, the attacker can infect scripts used by the pipeline in order to run code, for example, make-files, test scripts, build scripts, etc.
@@ -75,13 +75,13 @@ Poisoned pipeline execution (PPE) – Refers to a technique where an attacker ca
 
 Dependency tampering – Refers to a technique where an attacker can execute code in the DevOps environment or production environment by injecting malicious code into a repository’s dependencies. Thus, when the dependency is downloaded, the malicious code is executed. Some sub-techniques that can be used to achieve code execution include:
 
- -  Public dependency confusion – A technique where the adversary publishes public malicious packages with the same name as private packages. In this case, because package search in package-control mechanisms typically looks in public registries first, the malicious package is downloaded.<br>
+ -  Public dependency confusion – A technique where the adversary publishes public malicious packages with the same name as private packages. In this case, because package search in package-control mechanisms typically looks in public registries first, the malicious package is downloaded.
  -  Public package hijack (“repo-jacking”) – Hijacking a public package by taking control of the maintainer account, for example, by exploiting the GitHub user rename feature.
  -  Typosquatting – Publishing malicious packages with similar names to known public packages. In this way, an attacker can confuse users to download the malicious package instead of the desired one.
 
 DevOps resources compromise – Pipelines are, at the core, a set of compute resources executing the CI/CD agents, alongside other software. An attacker can target these resources by exploiting a vulnerability in the OS, the agent’s code, other software installed in the VMs, or other devices in the network to gain access to the pipeline.
 
-Control of common registry – An attacker can gain control of a registry used by the organization, resulting in malicious images or packages executed by the pipeline VMs or production VMs.<br>
+Control of common registry – An attacker can gain control of a registry used by the organization, resulting in malicious images or packages executed by the pipeline VMs or production VMs.
 
 ### Persistence
 

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.configurations-secure-backup-restore
-title: Configurations for secure backup and restore
+title:  Design solutions for business continuity and disaster recovery (BCDR), including secure backup and restore
 metadata:
-  title: Configurations for secure backup and restore
-  description: "Learn how to design configurations for secure backup and restore."
-  ms.date: 3/14/2023
+  title:  Design solutions for business continuity and disaster recovery (BCDR), including secure backup and restore
+  description: "Learn how to design solutions for business continuity and disaster recovery (BCDR), including secure backup and restore."
+  ms.date: 5/17/2024
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: unit

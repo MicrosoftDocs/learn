@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-authorization-microsoft-entra-id.azure-role-based-access-control
-title: 'Azure role-based access control '
+title: Azure role-based access control
 metadata:
   title: Azure role-based access control
   description: "Azure role-based access control"
-  ms.date: 04/18/2024
+  ms.date: 06/25/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

@@ -2,8 +2,8 @@
 uid: learn.chain-azure-functions-data-using-input-output-bindings.4-read-data-with-input-bindings-portal-lesson
 metadata:
   title: Read data with input bindings
-  description: In this hands-on unit, we'll read data from Azure Cosmos DB in our Azure function by using an Azure Cosmos DB input binding.
-  ms.date: 10/16/2023
+  description: In this hands-on unit, we read data from Azure Cosmos DB in our Azure function by using an Azure Cosmos DB input binding.
+  ms.date: 06/06/2024
   author: ggailey777
   ms.author: glenga
   ms.topic: unit

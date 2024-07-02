@@ -23,4 +23,4 @@ Module 5 Tips and Tricks
 
 Module 5 Demo
 
-- Click-through demo: [Connected field service](https://edxinteractivepage.blob.core.windows.net/edxpages/mb-910/version2/LP-FS-M2-CFS/index.html)
+- Click-through demo: [Connected field service](https://microsoftlearning.github.io/click-throughs/docs/mb-910/version2/LP-FS-M2-CFS/index.html)

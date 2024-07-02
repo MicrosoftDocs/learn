@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-agile-github-projects-azure-boards.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/13-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices best describes the Azure DevOps and GitHub integration?"
+    choices:
+    - content: "Azure Boards have direct integration with Azure Repos, but it can also be integrated with GitHub to plan and track work linking commits, PRs, and issues."
+      isCorrect: true
+      explanation: "Correct. Integrating GitHub with Azure Boards lets you plan and track your work by linking GitHub commits, pull requests, and issues, directly to work items in Boards."
+    - content: "Azure Boards has direct integration with Azure Repos. Azure Repos only integrates with GitHub using extensions from Marketplace for the read-only track."
+      isCorrect: false
+      explanation: "Incorrect. Integrating GitHub with Azure Boards lets you plan and track your work by linking GitHub commits, pull requests, and issues, directly to work items in Boards."
+    - content: "Azure Boards has direct integration with GitHub for tracking activities and moving tasks on both sides Azure Boards to GitHub and GitHub to Azure Repos."
+      isCorrect: false
+      explanation: "Incorrect. Integrating GitHub with Azure Boards lets you plan and track your work by linking GitHub commits, pull requests, and issues, directly to work items in Boards."
+  - content: "Which of the following Project boards types can contain issues and pull requests from any personal repository?"
+    choices:
+    - content: "User-owned project boards."
+      isCorrect: true
+      explanation: "Correct. User-owned project boards can contain issues and pull requests from any personal repository."
+    - content: "Organization-wide project boards."
+      isCorrect: false
+      explanation: "Incorrect. Organization-wide project boards can contain issues and pull requests from any repository that belongs to an organization."
+    - content: "Repository project boards"
+      isCorrect: false
+      explanation: "Incorrect. Repository project boards are scoped to issues and pull requests within a single repository."
+  - content: "Which of the following choices isn't a Project Boards supported template by default?"
+    choices:
+    - content: "Basic kanban."
+      isCorrect: false
+      explanation: "Incorrect. Basic kanban is a supported template to track your tasks with: To do, In progress, and Done columns."
+    - content: "Automated kanban with review."
+      isCorrect: false
+      explanation: "Incorrect. Automated kanban with review is a supported template that cards automatically move between: To do, In progress, and Done columns, with extra triggers for pull request review status."
+    - content: "Automated CMMI."
+      isCorrect: true
+      explanation: "Correct. CMMI isn't a valid Project Boards template. The templates that can be automated and already configured are: Basic kanban, Automated kanban, Automated kanban with review, and Bug triage."

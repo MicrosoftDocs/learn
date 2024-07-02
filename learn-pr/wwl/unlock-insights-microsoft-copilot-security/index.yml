@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.unlock-insights-microsoft-copilot-security
+metadata:
+  title: Unlock Insights with Microsoft Copilot for Security
+  description: "This module introduces Microsoft Copilot for Security, an AI-powered security solution designed to enhance the efficiency of security professionals. It offers a natural language, assistive copilot experience for scenarios like incident response, threat hunting, and posture management."
+  ms.date: 06/19/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: module
+  ms.service: copilot-for-service
+  ai-usage: ai-assisted
+title: Unlock Insights with Microsoft Copilot for Security
+summary: This module introduces Microsoft Copilot for Security, an AI-powered security solution designed to enhance the efficiency of security professionals.&nbsp;
+abstract: |
+  The topics covered in this module include:
+
+  - Exploring Microsoft Copilot for Security: Features, Integration, and Use Cases
+
+  - Exploring the Functionality and Integration of Microsoft Copilot for Security
+
+  - Understanding Microsoft Copilot for Security: Standalone and Embedded Experiences
+
+  - Deploying and Setting Up Microsoft Copilot for Security
+
+  - Using and Creating Effective Prompts in Microsoft Copilot for Security
+
+  - Using Promptbooks in Microsoft Copilot for Security
+
+  - New Features and Enhancements in Copilot for Security - May 2024
+
+  - Understanding Responsible AI Principles in Microsoft Copilot for Security
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- security-engineer
+- security-operations-analyst
+products:
+- ms-copilot
+units:
+- learn.wwl.unlock-insights-microsoft-copilot-security.introduction
+- learn.wwl.unlock-insights-microsoft-copilot-security.discover-microsoft-copilot-security
+- learn.wwl.unlock-insights-microsoft-copilot-security.understand-how-copilot-security-works
+- learn.wwl.unlock-insights-microsoft-copilot-security.explore-microsoft-copilot-security-experiences
+- learn.wwl.unlock-insights-microsoft-copilot-security.deploy-microsoft-copilot-security-enhanced-security
+- learn.wwl.unlock-insights-microsoft-copilot-security.utilize-prompts-microsoft-copilot-security
+- learn.wwl.unlock-insights-microsoft-copilot-security.incorporate-promptbooks-microsoft-copilot-security
+- learn.wwl.unlock-insights-microsoft-copilot-security.explore-new-features-microsoft-copilot-security
+- learn.wwl.unlock-insights-microsoft-copilot-security.understand-responsible-ai-microsoft-copilot-security
+- learn.wwl.unlock-insights-microsoft-copilot-security.knowledge-check
+- learn.wwl.unlock-insights-microsoft-copilot-security.summary
+badge:
+  uid: learn.wwl.unlock-insights-microsoft-copilot-security.badge

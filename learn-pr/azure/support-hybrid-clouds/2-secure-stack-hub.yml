@@ -5,8 +5,8 @@ metadata:
   title: Secure data with Azure Stack Hub
   description: Overview of how Azure Stack Hub can be helpful in environments with limited connectivity in a safe, private way. A range of use cases is discussed.
   ms.date: 02/08/2023
-  author: rmcmurray
-  ms.author: robmcm
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
 durationInMinutes: 6
 content: |

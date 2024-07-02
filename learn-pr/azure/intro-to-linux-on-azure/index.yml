@@ -1,12 +1,13 @@
 ### YamlMime:Module
 uid: learn.introduction-to-linux-on-azure
 metadata:
-  ms.author: chasecrum
-  author: chasecrum
+  ms.author: carols
+  author: fossygirl
   ms.date: 05/01/2023
   title: Introduction to Linux on Azure
   description: This module introduces the services and platforms that Azure provides for Linux environments.
   ms.topic: module
+  ms.service: azure
 title: Introduction to Linux on Azure
 summary: This module helps you understand the types of services and platforms Azure provides for Linux environments. Perhaps you're exploring the migration of Linux-based workloads to the cloud or you're looking at rearchitecting Linux-based applications to increase agility and reduce time to market. After reviewing this material, you should be able to choose which types of services you'll need to start planning your Linux environment.
 abstract: |

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fundamentals-generative-ai.azure-openai
-title: What is Azure OpenAI?
+title: Using language models
 metadata:
-  title: What is Azure OpenAI?
-  description: "An introduction to Microsoft's generative AI capabilities which are offered through Azure OpenAI Service."
-  ms.date: 6/27/2023
+  title: Using language models
+  description: "Learn what the GPT language model is in the context of other large language models and the evolution of generative AI capabilities."
+  ms.date: 5/15/2024
   author: sherzyang
   ms.author: sheryang
   ms.topic: unit

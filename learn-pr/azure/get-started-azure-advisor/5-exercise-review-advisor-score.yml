@@ -5,8 +5,8 @@ metadata:
   title: 'Exercise - Review your Advisor Score'
   description: Learn how to review your Azure Advisor Score.
   ms.date: 10/20/2023
-  author: danterasera
-  ms.author: darasera
+  author: aortoll
+  ms.author: anortoll
   ms.topic: unit
 durationInMinutes: 3
 content: |

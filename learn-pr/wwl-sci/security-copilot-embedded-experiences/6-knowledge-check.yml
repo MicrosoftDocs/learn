@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
 
 quiz:
@@ -47,3 +47,25 @@ quiz:
     - content: Select the 'Summarize' tab in the Risky User Details window.
       isCorrect: true
       explanation: Correct. The 'Summarize' tab displays the Copilot generated summary of the user's risk level.
+  - content: What information can be obtained by using Copilot in Intune, when creating a new policy?
+    choices:
+    - content: The date and time a policy was last updated.
+      isCorrect: false
+      explanation: Incorrect. Copilot doesn't provide information on the date and time a policy was last updated.
+    - content: The number of users who have accessed a policy.
+      isCorrect: false
+      explanation: Incorrect. Copilot doesn't provide information on the number of users who have accessed a policy.
+    - content: Information about individual settings, their impact, and recommended values.
+      isCorrect: true
+      explanation: Correct. When creating a new policy, Copilot can be used to learn more about individual settings, their impact, and recommended values.
+  - content: Copilot for Security in Defender for Cloud is available for all users when you enable Defender for Cloud in your environment, have access to Azure Copilot, and have SCUs assigned for Copilot for Security. What additional requirement must be met to remediate code with Copilot for Security?
+    choices:
+    - content: You must enable all the cloud workload protection plans.
+      isCorrect: false
+      explanation: Incorrect. No CWP plans are required. To use the capability to remediate code with Copilot for Security, you must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements.
+    - content: You must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements.
+      isCorrect: true
+      explanation: Correct. To use the capability to remediate code with Copilot for Security, you must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements.
+    - content: You must enable the Defender for Cloud Security Posture Management (DCSPM) plan.
+      isCorrect: false
+      explanation: Incorrect. Although it's recommended that the DCSPM plan be enabled, it isn't required and doesn't address the requirement to remediate code with Copilot for Security. To use remediate code with Copilot for Security you must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements.

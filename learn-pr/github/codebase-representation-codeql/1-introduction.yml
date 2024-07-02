@@ -5,9 +5,9 @@ metadata:
   unitType: Introduction 
   title: Introduction
   description: Learn how to use CodeQL to identify security vulnerabilities in your codebase.
-  ms.date: 04/08/2024
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 05/01/2024
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 2
 content: |

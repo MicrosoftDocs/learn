@@ -44,5 +44,6 @@ modules:
 - learn.quantum.qsharp-create-first-quantum-development-kit
 - learn.quantum.explore-superposition
 - learn.quantum.estimate-resources-quantum-algorithms
+- learn.quantum.explore-entanglement
 trophy:
   uid: learn.quantum-computing-fundamentals.trophy

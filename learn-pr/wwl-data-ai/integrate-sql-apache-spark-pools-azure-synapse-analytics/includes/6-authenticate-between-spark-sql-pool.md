@@ -8,7 +8,7 @@ The Read API looks as follows when using SQL Authentication:
 
 ```scala
 val df = spark.read.
-option(Constants.SERVER, "samplews.database.windows.net").
+option(Constants.SERVER, "<server-name>.database.windows.net").
 option(Constants.USER, <SQLServer Login UserName>).
 option(Constants.PASSWORD, <SQLServer Login Password>).
 sqlanalytics("<DBName>.<Schema>.<TableName>")
@@ -27,7 +27,7 @@ The Write API using SQL Auth looks as follows:
 
 ```scala
 df.write.
-option(Constants.SERVER, "samplews.database.windows.net").
+option(Constants.SERVER, "<server-name>.database.windows.net").
 option(Constants.USER, <SQLServer Login UserName>).
 option(Constants.PASSWORD, <SQLServer Login Password>).
 sqlanalytics("<DBName>.<Schema>.<TableName>", <TableType>)

@@ -23,7 +23,7 @@ To upload a file, the steps are as follows:
    > [!NOTE]
    > Uploaded files are only available to the user account that uploaded them. Uploaded files are stored like the rest of customer data as described in [Privacy and data security in Microsoft Copilot for Security](/security-copilot/privacy-data-security).
 
-1. To include the file as a source in your current session, select the toggle button so it's lit up (the circle inside the toggle button is in the rightmost position). If you aren't going to use the file yet, or want to exclude it as a source in your current session, select the toggle button so it's greyed out (the circle inside the toggle button is in the rightmost position).
+1. To include the file as a source in your current session, select the toggle button so it's lit up (the circle inside the toggle button is in the rightmost position). If you aren't going to use the file yet, or want to exclude it as a source in your current session, select the toggle button so it's greyed out (the circle inside the toggle button is in the leftmost position).
 
 1. To prompt using the uploaded file, you need to mention "uploaded files" if you want Copilot to reason over your available files. You can also include the file name if you would like to guide Copilot to reason over a specific file. For example, if you want Copilot to check a user account's actions against your organization's data handling policies to find out if any violations were committed, a sample prompt would be:  
 

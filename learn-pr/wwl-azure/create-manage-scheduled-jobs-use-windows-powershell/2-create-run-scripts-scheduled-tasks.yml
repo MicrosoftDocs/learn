@@ -4,13 +4,12 @@ title: Create and run Windows PowerShell scripts as scheduled tasks
 metadata:
   title: Create and run Windows PowerShell scripts as scheduled tasks
   description: "Create and run Windows PowerShell scripts as scheduled tasks"
-  ms.date: 07/03/2023
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
-azureSandbox: false
-labModal: false
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/2-create-run-scripts-scheduled-tasks.md)]

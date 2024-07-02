@@ -22,9 +22,9 @@ In this example, we create a basic Conditional Access policy to prompt for MFA w
 
 First, create a Conditional Access policy and assign your test group of users as follows:
 
-1. Sign in to the Microsoft Entra admin center as at least a Conditional Access Administrator.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as at least a [Conditional Access Administrator](/entra/identity/role-based-access-control/permissions-reference#conditional-access-administrator).
 
-2. Browse to **Protection** &gt; **Conditional Access**, select + **New policy**, and then select **Create new policy**.
+2. Browse to **Protection** &gt; **Conditional Access**, select **+ New policy**, and then select **Create new policy**.
 
     :::image type="content" source="../media/conditional-access-policy-configuration-51511a83.png" alt-text="Screenshot showing an example of the conditional access new policy creation page.":::
 
@@ -103,6 +103,42 @@ Conditional Access policies can be set to **Report-only** if you want to see how
 
 
 2. To apply the Conditional Access policy, select **Create**.
+
+## Test Microsoft Entra multifactor authentication
+
+Let's see your Conditional Access policy and Microsoft Entra multifactor authentication in action.
+
+First, sign in to a resource that doesn't require MFA:
+
+1. Open a new browser window in InPrivate or incognito mode and browse to [https://account.activedirectory.windowsazure.com](https://account.activedirectory.windowsazure.com/). Using a private mode for your browser prevents any existing credentials from affecting this sign-in event.
+
+2. Sign in with your non-administrator test user, such as *testuser*. Be sure to include @ and the domain name for the user account. If this is the first instance of signing in with this account, you're prompted to change the password. However, there's no prompt for you to configure or use multifactor authentication.
+
+3. Close the browser window.
+
+You configured the Conditional Access policy to require additional authentication for sign in. Because of that configuration, you're prompted to use Microsoft Entra multifactor authentication or to configure a method if you haven't yet done so.
+
+Test this new requirement by signing in to the Microsoft Entra admin center:
+
+1. Open a new browser window in InPrivate or incognito mode and sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/).
+
+2. Sign in with your non-administrator test user, such as *testuser*. Be sure to include @ and the domain name for the user account. You're required to register for and use Microsoft Entra multifactor authentication.
+
+:::image type="content" source="../media/microsoft-entra-multifactor-authentication-2b9ff13f.png" alt-text="Screenshot showing the more information required notification.":::
+
+
+3. Select **Next** to begin the process.
+
+You can choose to configure an authentication phone, an office phone, or a mobile app for authentication. *Authentication phone* supports text messages and phone calls, *office phone* supports calls to numbers that have an extension, and *mobile app* supports using a mobile app to receive notifications for authentication or to generate authentication codes.
+
+4. Complete the instructions on the screen to configure the method of multifactor authentication that you've selected.
+
+5. Close the browser window, and sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) again to test the authentication method that you configured. For example, if you configured a mobile app for authentication, you should see a prompt like the following.
+
+:::image type="content" source="../media/approve-sign-in-request-ab44e1f6.png" alt-text="Screenshot showing the approve sign in request notification.":::
+
+
+6. Close the browser window.
 
 ## Configure Microsoft Entra multifactor authentication settings
 

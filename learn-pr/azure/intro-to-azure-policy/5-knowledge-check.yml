@@ -5,9 +5,9 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "Check your knowledge about Azure Policy."
-  ms.date: 01/05/2024
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 06/10/2024
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 durationInMinutes: 5
 content: |
@@ -42,7 +42,7 @@ quiz:
       explanation: "Incorrect. Azure Policy isn't a monitoring tool."
     - content: "Providing recommendations for your Azure resources."
       isCorrect: false
-      explanation: "Incorrect. Azure Policy doesn't provide recommendations for your Azure resources. You can use Azure Advisor to get recommendations." 
+      explanation: "Incorrect. Azure Policy doesn't provide recommendations for your Azure resources. You can use Azure Advisor to get recommendations."
     - content: "Adding required configuration at scale."
       isCorrect: true
       explanation: "Correct. As example, you can create a policy to enable Azure Backup for all virtual machines within an Azure subscription."

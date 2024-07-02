@@ -23,7 +23,7 @@ quiz:
       explanation: "Incorrect. Rules are processed according to the specified priority."
     - content: "The deny rule takes precedence."
       isCorrect: true
-      explanation: "Correct. The deny rule takes precedence. Deny rules are processed first. The rule with priority 150 is processed before the rule with priority 200."
+      explanation: "Correct. The deny rule takes precedence. The deny rule is processed first. The rule with priority 150 is processed before the rule with priority 200."
     - content: "The rule that was created first takes precedence."
       isCorrect: false
       explanation: "Incorrect. Rules are processed according to the specified priority."

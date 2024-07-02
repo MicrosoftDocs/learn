@@ -4,8 +4,8 @@ metadata:
   title: Support concurrency in Blob storage apps with ETags and blob leases
   description: In this module, you'll learn how to implement application code to manage concurrency in blob storage.
   ms.date: 11/06/2023
-  author: tamram
-  ms.author: tamram
+  author: normesta
+  ms.author: normesta
   ms.topic: module
   ms.learn-contact: nickwalk
   ms.service: azure-blob-storage

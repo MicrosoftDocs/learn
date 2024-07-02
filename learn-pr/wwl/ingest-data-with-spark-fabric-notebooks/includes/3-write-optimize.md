@@ -7,7 +7,7 @@ Lakehouses support structured, semi-structured, and unstructured files. Load as 
 
 ```python
 # Write DataFrame to Parquet file format
-parquet_output_path = "your_folder/your_file_name"
+parquet_output_path = "dbfs:/FileStore/your_folder/your_file_name"
 df.write.mode("overwrite").parquet(parquet_output_path)
 print(f"DataFrame has been written to Parquet file: {parquet_output_path}")
 
