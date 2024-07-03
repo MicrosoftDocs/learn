@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.explore-models-copilot-ai-studio
+metadata:
+  title: Configure model deployment in the Azure AI Studio
+  description: "When you want to integrate a language model with an application, you can deploy a model to an endpoint. The Azure AI Studio offers various language models that you can select, deploy, and test."
+  ms.date: 7/2/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: module-standard-task-based 
+  ms.service: azure-ai-services
+title: Configure model deployment in the Azure AI Studio
+summary: "Explore the various language models that are available through the Azure AI Studio. Understand how to select, deploy, and test a model, and to improve its performance."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Select a language model from the model catalog.
+    - Deploy a model to an endpoint.
+    - Test a model and improve the performance of the model.
+prerequisites: |
+  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. Consider completing the [Get started with artificial intelligence](/training/paths/get-started-with-artificial-intelligence-on-azure) learning path first.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - data-scientist
+  - ai-engineer
+products: 
+  - azure
+  - ai-services
+subjects: 
+  - cloud-computing
+  - artificial-intelligence
+  - machine-learning
+  - natural-language-processing
+units:
+- learn.wwl.explore-models-copilot-ai-studio.introduction
+- learn.wwl.explore-models-copilot-ai-studio.select-model
+- learn.wwl.explore-models-copilot-ai-studio.deploy-model
+- learn.wwl.explore-models-copilot-ai-studio.improve-model
+- learn.wwl.explore-models-copilot-ai-studio.exercise
+- learn.wwl.explore-models-copilot-ai-studio.knowledge-check
+- learn.wwl.explore-models-copilot-ai-studio.summary
+badge:
+  uid: learn.wwl.explore-models-copilot-ai-studio.badge

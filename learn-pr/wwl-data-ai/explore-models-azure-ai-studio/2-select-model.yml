@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-models-copilot-ai-studio.select-model
+title: Explore the language models in the model catalog 
+metadata:
+  title: Explore the language models in the model catalog
+  description: "Learn how to navigate the model catalog and to select a language model."
+  ms.date: 7/2/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-select-model.md)]
