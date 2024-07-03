@@ -120,24 +120,6 @@ To install Visual Studio, use the appropriate steps for your operating system.
 
 1. When the installation is complete, select **Launch** to open Visual Studio.
 
-### macOS
-
-1. Go to https://visualstudio.microsoft.com/ and download the Visual Studio for Mac installer.
-
-1. Select the **VisualStudioInstaller.dmg** file to mount the installer, then run it by double-clicking the logo.
-
-1. Acknowledge the Privacy and License terms when presented.
-
-1. The installer prompts you to select which components you wish to install. Azure components are already part of Visual Studio for Mac, but we recommend installing the **.NET Core** platform to develop web experiences for Azure.
-
-   :::image type="content" source="../media/5-vsmac-install-net-core.png" alt-text="Screenshot of the Visual Studio for Mac installer with the selected .NET Core platform option highlighted." loc-scope="vs":::
-
-1. When you've selected the necessary tools and extensions, select **Install and Update** and wait for the installer to complete.
-
-1. If you're prompted to elevate the permissions needed, use your administrator credentials to do so.
-
-1. Once the installer is complete, start Visual Studio for Mac.
-
 ::: zone-end
 
 ::: zone pivot="eclipse"
