@@ -3,11 +3,13 @@ uid: learn.languages.csharp-format-strings.exercise-string-interpolation
 title: Exercise - Explore string interpolation
 metadata:
   title: Exercise - Explore string interpolation
-  description: "Exercise - Explore string interpolation"
-  ms.date: 02/21/2024
+  description: "Create the code to print a receipt for the customer purchasing shares of an investment product."
+  ms.date: 05/20/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-string-interpolation.md)]

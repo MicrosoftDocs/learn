@@ -3,7 +3,7 @@ uid: learn.azure.threat-modeling-enterprise-security.4-visualize-risk
 metadata:
   title: Identifying infrastructure risks with threat modeling
   description: Visualize the state of security for your infrastructure by creating a data-flow diagram.
-  ms.date: 03/01/2021
+  ms.date: 08/07/2023
   author: rodrigosantos
   ms.author: rodsan
   ms.topic: unit

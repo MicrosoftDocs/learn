@@ -6,7 +6,7 @@ metadata:
   ms.date: 04/21/2023
   author: Meghana-ch
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.service: healthbot
 title: Basic Azure Health Bot 
@@ -26,7 +26,7 @@ products:
   - azure
 prerequisites: Introduction to Azure Health Bot
 subjects:
-- chatbot
+- chatbots
 units:
   - learn.health-bot-basic-bot.1-introduction
   - learn.health-bot-basic-bot.2-get-started-with-custom-scenario

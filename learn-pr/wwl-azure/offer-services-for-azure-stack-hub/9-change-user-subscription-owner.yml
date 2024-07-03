@@ -7,9 +7,7 @@ metadata:
   ms.date: 09/15/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.service: azure-stack
-  ms.subservice: azure-stack-hub
+  ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 5

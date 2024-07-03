@@ -4,7 +4,7 @@ title: Process pinning considerations
 metadata:
   title: Process pinning considerations
   description: Learn why, how, and when to pin processes and threads when you're running HPC parallel applications.
-  ms.date: 02/04/2021
+  ms.date: 05/09/2023
   author: garvct
   ms.author: cogarvey
   ms.topic: unit

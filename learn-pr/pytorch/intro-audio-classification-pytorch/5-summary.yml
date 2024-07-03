@@ -6,7 +6,7 @@ metadata:
   description: This Learn module covers the basics of building an audio machine learning model, including understanding how analog sound turns to digital sound, and creating spectrogram images of your .wav files.
   author: cassiebreviu
   ms.author: ruyakubu
-  ms.date: 04/14/2020
+  ms.date: 04/12/2021
   ms.topic: unit
   ms.custom:
   - team=nextgen

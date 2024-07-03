@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-container-instances.review-docker-platform
-title: Review the Docker platform
+title: Review Azure Container Apps
 metadata:
-  title: Review the Docker platform
+  title: Review Azure Container Apps
   description: "Review how to use the Docker platform with Azure Container Instances."
-  ms.date: 11/16/2023
+  ms.date: 05/02/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-review-docker-platform.md)]

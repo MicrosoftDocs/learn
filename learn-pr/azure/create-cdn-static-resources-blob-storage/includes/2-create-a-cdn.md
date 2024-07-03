@@ -51,11 +51,11 @@ The server locations are referred to as Point-of-presence (POP) locations. CDN's
 
 Features that Microsoft Azure CDN's offer are:
 
-- **Dynamic site acceleration** - speed up the delivery of static files
-- **HTTPS custom domain support** - enable encrypted connections to custom domains, such as `https://www.contoso.com`
-- **Azure diagnostics logs** - view core analytic information and send the data to an Azure Storage Account, Azure Event Hubs, or Log Analytics Workspace
-- **File compression** - increase performance by reducing the number of bytes in transit
-- **Geo-filtering** - create rules on your CDN endpoint that uses specific paths to allow or block content in selected countries/regions
+- **Dynamic site acceleration** - speed up the delivery of dynamic files.
+- **HTTPS custom domain support** - enable encrypted connections to custom domains, such as `https://www.contoso.com`.
+- **Azure diagnostics logs** - view core analytic information and send the data to an Azure Storage Account, Azure Event Hubs, or Log Analytics Workspace.
+- **File compression** - increase performance by reducing the number of bytes in transit.
+- **Geo-filtering** - create rules on your CDN endpoint that uses specific paths to allow or block content in selected countries/regions.
 
 For more information on these features, see the Further Reading section in the Summary unit.
 

@@ -89,7 +89,7 @@ Later in this module, we cover how the cloud evolved to make computing a public 
 2. _IBM (2017). [What is Big Data?](https://developer.ibm.com/dwblog/2017/what-is-big-data-insight/)_
 4. _Google Inc. (2015). [How Search Works](https://www.google.com/insidesearch/howsearchworks/thestory/)_
 5. _Hilbert, Martin and Lopez, Priscila (2011). [The world's technological capacity to store, communicate, and compute information](https://science.sciencemag.org/content/332/6025/60)_
-6. _Hamilton, James R and others (2007). [On Designing and Deploying Internet-Scale Services](http://highscalability.com/paper-designing-and-deploying-internet-scale-services)_
+6. _Hamilton, James R and others (2007). [On Designing and Deploying Internet-Scale Services](https://highscalability.com/paper-on-designing-and-deploying-internet-scale-services/)_
 7. _Brewer, Eric and others (2001). [Lessons from giant-scale services](https://people.eecs.berkeley.edu/~brewer/Giant.pdf)_
 
 ***
@@ -98,5 +98,5 @@ Later in this module, we cover how the cloud evolved to make computing a public 
 [^2]: <https://developer.ibm.com/dwblog/2017/what-is-big-data-insight/> "IBM (2017). *What is Big Data?*"
 [^4]: <https://www.google.com/insidesearch/howsearchworks/thestory/> "Google Inc. (2015). *How Search Works*"
 [^5]: <https://science.sciencemag.org/content/332/6025/60> "Hilbert, Martin and Lopez, Priscila (2011). *The world's technological capacity to store, communicate, and compute information*" 
-[^6]: <http://highscalability.com/paper-designing-and-deploying-internet-scale-services> "Hamilton, James R and others (2007). *On Designing and Deploying Internet-Scale Services*" 
+[^6]: <https://highscalability.com/paper-on-designing-and-deploying-internet-scale-services/> "Hamilton, James R and others (2007). *On Designing and Deploying Internet-Scale Services*" 
 [^7]: <https://people.eecs.berkeley.edu/~brewer/Giant.pdf> "Brewer, Eric and others (2001). *Lessons from giant-scale services*" 

@@ -95,7 +95,7 @@ Microsoft Defender for SQL servers on machines extends the protections for your 
     
 -   On-premises SQL servers:
     
-   -   [Azure Arc-enabled SQL Server](https://learn.microsoft.com/sql/sql-server/azure-arc/overview)
+   -   [Azure Arc-enabled SQL Server](/sql/sql-server/azure-arc/overview)
    -   [SQL Server running on Windows machines without Azure Arc](/azure/azure-monitor/agents/agent-windows)
         
 -   Multicloud SQL servers:

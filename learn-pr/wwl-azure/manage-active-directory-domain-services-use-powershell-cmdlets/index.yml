@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.service: active-directory
+  ms.service: entra-id
   ms.subservice: domain-services
 title: Manage Active Directory Domain Services using PowerShell cmdlets
 summary: This module covers the cmdlets that are used to administer Active Directory Domain Services.
@@ -38,7 +38,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

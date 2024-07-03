@@ -12,23 +12,20 @@ All data collection, processing, analysis, and alerting takes place directly on 
 
  Consider what type of connection methods to use for your cloud-connected sensors. Possible types include:
 
-- Proxy connections with an Azure proxy
-- Proxy connections with proxy chaining
 - Direct connections
+- Proxy connections with proxy chaining
+- Proxy connections with an Azure proxy
 - Multicloud connections
 
 Use the following questions to help you choose the right connection for your manufacturing organization.
 
-#### Proxy connections with an Azure proxy
+#### Direct connection
 
-- Do you need private connectivity between your sensor and Azure?
-- Is your site connected to Azure via ExpressRoute, or over a VPN?
+- Do you want to connect your sensor to Azure directly?
 
-If your answers to these questions are *Yes*, use a proxy connection with an Azure proxy.
+If so, you don't need a proxy at all. The following image shows an example of how you can connect your sensors to Defender for IoT portal and Azure directly over the internet.
 
-In the following image, sensors are connected to Defender for IoT and Azure through a proxy in the Azure virtual network to ensure communication confidentiality.
-
-:::image type="content" source="../media/4-proxy.png" alt-text="Diagram of a proxy connection using an Azure proxy." border="false":::
+:::image type="content" source="../media/4-direct.png" alt-text="Diagram of a direct cloud connection." border="false":::
 
 #### Proxy connections with proxy chaining
 
@@ -41,13 +38,16 @@ In the following image, sensors connect to Defender for IoT and Azure through mu
 
 :::image type="content" source="../media/4-proxy-chaining.png" alt-text="Diagram of a proxy connection using proxy chaining." border="false":::
 
-#### Direct connection
+#### Proxy connections with an Azure proxy
 
-- Do you want to connect your sensor to Azure directly?
+- Do you need private connectivity between your sensor and Azure?
+- Is your site connected to Azure via ExpressRoute, or over a VPN?
 
-If so, you don't need a proxy at all. The following image shows an example of how you can connect your sensors to Defender for IoT portal and Azure directly over the internet.
+If your answers to these questions are *Yes*, use a proxy connection with an Azure proxy.
 
-:::image type="content" source="../media/4-direct.png" alt-text="Diagram of a direct cloud connection." border="false":::
+In the following image, sensors are connected to Defender for IoT and Azure through a proxy in the Azure virtual network to ensure communication confidentiality.
+
+:::image type="content" source="../media/4-proxy.png" alt-text="Diagram of a proxy connection using an Azure proxy." border="false":::
 
 #### Multicloud connections
 

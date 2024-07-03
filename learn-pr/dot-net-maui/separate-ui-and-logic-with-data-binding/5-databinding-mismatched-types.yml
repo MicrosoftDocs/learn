@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding.5-databinding-mismatched-types
+title: Data binding with mismatched types
+metadata:
+  title: Data binding with mismatched types
+  description: Learn how to data binding between two mismatched property types.
+  ms.date: 02/15/2024
+  author: adegeo
+  ms.author: adegeo
+  ms.topic: unit
+  ms.service: dotnet-mobile
+  ms.subservice: dotnet-maui
+durationInMinutes: 10
+content: |
+  [!include[](./includes/5-databinding-mismatched-types.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "To display and format a value as a string in data binding, which is the best approach?"
+    choices:
+    - isCorrect: false
+      content: "Expose a secondary property that formats the value as a string."
+      explanation: "While you could create a new property, you end up exposing a string for a single purpose. If you wanted to show that value elsewhere, you would have to create another property formatted for that specific scenario."
+    - isCorrect: true
+      content: "Use the StringFormat binding property."
+      explanation: "You format the data with the binding. This option makes it easy to change the string format based on how the UI displays the data."
+    - isCorrect: false
+      content: "Use a binding converter."
+      explanation: "Using a converter in this scenario is usually not the correct approach. Binding converters are used when you have extra logic in converting a value to a string."
+  - content: "Which type is used in data binding conversion?"
+    choices:
+    - isCorrect: true
+      content: "IValueConverter"
+      explanation: "This interface is used by the data binding system and you implement it to create your own data conversion classes."
+    - isCorrect: false
+      content: "IConvertible"
+      explanation: "This interface is provided by the base class library, and converts an object to different value type representations. The class isn't usable as a XAML binding converter."
+    - isCorrect: false
+      content: "TypeConverter"
+      explanation: "This class is used by Windows Forms for data conversion. It isn't used by .NET MAUI."

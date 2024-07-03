@@ -46,8 +46,7 @@ using Azure.AI.OpenAI;
 // Define parameters and initialize the client
 string endpoint = "<YOUR_ENDPOINT_NAME>";
 string key = "<YOUR_API_KEY>";
-string deploymentName = "<YOUR_DEPLOYMENT_NAME>"; //SDK calls this "engine", but naming
-                                                  // it "deploymentName" for clarity
+string deploymentName = "<YOUR_DEPLOYMENT_NAME>"; 
 
 OpenAIClient client = new OpenAIClient(new Uri(endpoint), new AzureKeyCredential(key));
 ```
@@ -58,59 +57,44 @@ OpenAIClient client = new OpenAIClient(new Uri(endpoint), new AzureKeyCredential
 
 ```python
 # Add OpenAI library
-import openai
+from openai import AzureOpenAI
 
-openai.api_key = '<YOUR_API_KEY>'
-openai.api_base =  '<YOUR_ENDPOINT_NAME>' 
-openai.api_type = 'azure' # Necessary for using the OpenAI library with Azure OpenAI
-openai.api_version = '20xx-xx-xx' # Latest / target version of the API
+deployment_name = '<YOUR_DEPLOYMENT_NAME>' 
 
-deployment_name = '<YOUR_DEPLOYMENT_NAME>' # SDK calls this "engine", but naming
-                                           # it "deployment_name" for clarity
+# Initialize the Azure OpenAI client
+client = AzureOpenAI(
+        azure_endpoint = '<YOUR_ENDPOINT_NAME>', 
+        api_key='<YOUR_API_KEY>',  
+        api_version="20xx-xx-xx" #  Target version of the API, such as 2024-02-15-preview
+        )
 ```
 
 ::: zone-end
 
 ## Call Azure OpenAI resource
 
-Once you've configured your connection to Azure OpenAI, send your prompt to one of the available endpoints of `Completion`, `ChatCompletion`, or `Embedding`.
+Once you've configured your connection to Azure OpenAI, send your prompt to the model.
 
 ::: zone pivot="csharp"
-
-```csharp
-string prompt = "What is Azure OpenAI?";
-
-Response<Completions> completionsResponse = client.GetCompletions(deploymentName, prompt);
-string completion = completionsResponse.Value.Choices[0].Text;
-Console.WriteLine($"Chatbot: {completion}");
-```
-
-If using `ChatCompletion`, sending the prompt is formed differently.
 
 ```csharp
 // Build completion options object
 ChatCompletionsOptions chatCompletionsOptions = new ChatCompletionsOptions()
 {
-    Messages = 
+    Messages =
     {
-        new ChatMessage(ChatRole.System, "You are a helpful AI bot."), 
-        new ChatMessage(ChatRole.User, "What is Azure OpenAI?")
-    }
+        new ChatRequestSystemMessage("You are a helpful AI bot."),
+        new ChatRequestUserMessage("What is Azure OpenAI?"),
+    },
+    DeploymentName = deploymentName
 };
 
 // Send request to Azure OpenAI model
-ChatCompletions chatCompletionsResponse = client.GetChatCompletions(
-    deploymentName, 
-    chatCompletionsOptions);
+ChatCompletions response = client.GetChatCompletions(chatCompletionsOptions);
 
-ChatMessage completion = chatCompletionsResponse.Choices[0].Message;
-Console.WriteLine($"Chatbot: {completion.Content}");
-```
-
-The response object contains several values, such as `total_tokens` and `finish_reason`. The completion from the response object will be similar to the following completion:
-
-```console
-"Azure OpenAI is a cloud-based artificial intelligence (AI) service that offers a range of tools and services for developing and deploying AI applications. Azure OpenAI provides a variety of services for training and deploying machine learning models, including a managed service for training and deploying deep learning models, a managed service for deploying machine learning models, and a managed service for managing and deploying machine learning models."
+// Print the response
+string completion = response.Choices[0].Message.Content;
+Console.WriteLine("Response: " + completion + "\n");
 ```
 
 ::: zone-end
@@ -118,25 +102,20 @@ The response object contains several values, such as `total_tokens` and `finish_
 ::: zone pivot="python"
 
 ```python
-prompt = 'What is Azure OpenAI?'
-response = openai.Completion.create(engine=deployment_name, prompt=prompt)
-
-print(response.choices[0].text)
-```
-
-If using `ChatCompletion`, sending the prompt is formed differently.
-
-```python
-response = openai.ChatCompletion.create(
-    engine=deployment_name,
+response = client.chat.completions.create(
+    model=deployment_name,
     messages=[
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": "What is Azure OpenAI?"}
     ]
 )
+generated_text = response.choices[0].message.content
 
-print(response['choices'][0]['message']['content'])
+# Print the response
+print("Response: " + generated_text + "\n")
 ```
+
+::: zone-end
 
 The response object contains several values, such as `total_tokens` and `finish_reason`. The completion from the response object will be similar to the following completion:
 
@@ -144,6 +123,4 @@ The response object contains several values, such as `total_tokens` and `finish_
 "Azure OpenAI is a cloud-based artificial intelligence (AI) service that offers a range of tools and services for developing and deploying AI applications. Azure OpenAI provides a variety of services for training and deploying machine learning models, including a managed service for training and deploying deep learning models, a managed service for deploying machine learning models, and a managed service for managing and deploying machine learning models."
 ```
 
-::: zone-end
-
-In both C# and Python, your `create` call can include optional parameters including `temperature` and `max_tokens`. Examples of using those parameters are included in this module's lab.
+In both C# and Python, your call can include optional parameters including `temperature` and `max_tokens`. Examples of using those parameters are included in this module's lab.

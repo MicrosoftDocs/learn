@@ -2,47 +2,37 @@
 ms.custom:
   - build-2023
 ---
-In this exercise, you'll:
+In this exercise, you use CREATE EXTERNAL TABLE AS SELECT (CETAS) to:
 
-- Use CETAS to export a table as Parquet.
-- Use CETAS to move cold data out of the database.
-- Use a view to query the data that includes an external table.
-- Use wildcard search to query the data.
-- learn about folder elimination and metadata information
+- Export a table as Parquet.
+- Move cold data out of a database into storage.
+- Create an external table to access the exported external data.
+- Use views or wildcard search as query strategies.
+- Limit queries by using folder elimination and metadata information to improve performance.
 
 ## Prerequisites
 
-- The **PolyBase Query Service for External Data** feature installed on SQL Server 2022.
-- [AdventureWorks2022](/sql/samples/adventureworks-install-configure) sample database is used in this exercise. Restore the sample database to your server.
-- The SQL Server 2022 instance must have internet connectivity.
-- An Azure Subscription with a storage account and a blob storage container created. For more information, see [Quickstart: Upload, download, and list blobs with the Azure portal](/azure/storage/blobs/storage-quickstart-blobs-portal).
-- A blob container SAS Token created with READ, WRITE, LIST and CREATE permissions to be used for CETAS. For more information, see [CREATE EXTERNAL TABLE AS SELECT (CETAS) Permissions](/sql/t-sql/statements/create-external-table-as-select-transact-sql#permissions).
-- To create a SAS token, see [Create shared access signature (SAS) tokens for your storage containers](/azure/cognitive-services/translator/document-translation/how-to-guides/create-sas-tokens).
+- A SQL Server 2022 instance with internet connectivity and the **PolyBase Query Service for External Data** feature installed and enabled as for previous exercises.
+- The [AdventureWorks2022](/sql/samples/adventureworks-install-configure) sample database restored to your server to use for sample data.
+- An Azure Storage account with a Blob Storage container named `data` created. To create the storage, see [Quickstart: Upload, download, and list blobs with the Azure portal](/azure/storage/blobs/storage-quickstart-blobs-portal).
+- The Azure role-based access control (RBAC) **Storage Blob Data Contributor** role assigned in Azure. For more information, see [Assign an Azure role for access to blob data](/azure/storage/blobs/assign-azure-role-data-access).
+- A blob container SAS token with **READ**, **WRITE**, **LIST**, and **CREATE** permissions to be used for CETAS. To create the SAS token, see [Create shared access signature (SAS) tokens for your storage containers](/azure/cognitive-services/translator/document-translation/how-to-guides/create-sas-tokens).
 
 ## Use CETAS to export a table as Parquet
 
-Imagine that you're working with the business analytics team, and need to export older data from a table to an Azure Blob Storage container. You would rather the business analytics team run their report queries that use data older than 2012 from this exported data, than running their reports directly querying SQL Server.
+Imagine that you work with a business analytics team that wants to export data older than 2012 from a SQL Server table to an Azure Blob Storage container. They want to run their report queries on this exported data rather than directly querying SQL Server.
 
-1. Configure PolyBase.
+1. Enable CETAS on the SQL Server instance.
 
     ```sql
-    -- ENABLE POLYBASE
-    -- =========================================================================
-    EXEC SP_CONFIGURE @CONFIGNAME = 'POLYBASE ENABLED', @CONFIGVALUE = 1;
-    RECONFIGURE;
-    
-    EXEC SP_CONFIGURE @CONFIGNAME = 'POLYBASE ENABLED'
-    GO
-    -- ENABLE CETAS
-    -- =========================================================================
     EXEC SP_CONFIGURE @CONFIGNAME = 'ALLOW POLYBASE EXPORT', @CONFIGVALUE = 1;
     ```
 
-1. Execute the following query to understand the data that you want to export. In this case, we're looking for any data that is from 2012 or older.
+    :::image type="content" source="../media/allow-polybase-export.png" alt-text="Screenshot of configuring the option to allow PolyBase export.":::
+
+1. Execute the following data exploration query to understand what data you want to export. In this case, you're looking for data that's from 2012 or earlier. You want to export all data from 2011 and 2012.
 
     ```sql
-    Use AdventureWorks2022
-    GO
     -- RECORDS BY YEARS
     SELECT COUNT(*) AS QTY, DATEPART(YYYY, [DUEDATE]) AS [YEAR]
     FROM  [PURCHASING].[PURCHASEORDERDETAIL] 
@@ -50,29 +40,37 @@ Imagine that you're working with the business analytics team, and need to export
     ORDER BY [YEAR]
     ```
 
-   :::image type="content" source="../media/ssms-order-detail-by-year.png" alt-text="Screenshot of SSMS and the results from the AdventureWorks2022 database showing purchase orders grouped by year.":::
+    :::image type="content" source="../media/ssms-order-detail-by-year.png" alt-text="Screenshot of SSMS and the results from the AdventureWorks2022 database showing purchase orders grouped by year.":::
 
-   We'll be exporting all data from 2011 and 2012.
+1. Create a database master key for the database, as in the previous exercises.
 
-1. Create the database scoped credentials and external data source.
+    ```sql
+    Use AdventureWorks2022
+    
+    DECLARE @randomWord VARCHAR(64) = NEWID();
+    DECLARE @createMasterKey NVARCHAR(500) = N'
+    IF NOT EXISTS (SELECT * FROM sys.symmetric_keys WHERE name = ''##MS_DatabaseMasterKey##'')
+        CREATE MASTER KEY ENCRYPTION BY PASSWORD = '  + QUOTENAME(@randomWord, '''')
+    EXEC sp_executesql @createMasterKey;
+    
+    SELECT * FROM sys.symmetric_keys;
+    ```
 
-   > [!NOTE]
-   > For this example, you'll need to have an Azure Storage account. Create an Azure Blob Storage, and then create a container named `data`. Within the container, create a subfolder called `chapter3`. It is also expected to have a SAS_TOKEN with READ, WRITE, LIST, CREATE privileges in the `data` container.
+1. Create the database scoped credentials and external data source. Replace the `<sas_token>` and `<storageccount>` placeholders with the storage account and SAS token you created in Azure.
 
     ```sql
     -- DATABASE SCOPED CREDENTIAL
     CREATE DATABASE SCOPED CREDENTIAL blob_storage
-    	WITH IDENTITY = 'SHARED ACCESS SIGNATURE', 
-    	SECRET = 'sas_token'; -- EDIT THE TOKEN
-    GO
+          WITH IDENTITY = 'SHARED ACCESS SIGNATURE',
+          SECRET = '<sas_token>';
     
-    -- AZURE BLOB STORAGE DATA SOURCE 
+    -- AZURE BLOB STORAGE DATA SOURCE
     CREATE EXTERNAL DATA SOURCE ABS_Data
     WITH
     (
-     LOCATION = 'abs://<storage_account>.blob.core.windows.net/data/chapter3'
+     LOCATION = 'abs://<storageaccount>.blob.core.windows.net/data/chapter3'
     ,CREDENTIAL = blob_storage
-    )
+    );
     ```
 
 1. Create the external file format for Parquet.
@@ -80,11 +78,10 @@ Imagine that you're working with the business analytics team, and need to export
     ```sql
     -- PARQUET FILE FORMAT
     CREATE EXTERNAL FILE FORMAT ffParquet
-    WITH (FORMAT_TYPE = PARQUET)
-    GO
+    WITH (FORMAT_TYPE = PARQUET);
     ```
 
-1. Create the external table using CETAS.
+1. Create the external table using CETAS. The following query creates an external table named `ext_data_2011_2012` and exports all data from 2011 and 2012 to the location specified by the data source `ABS_Data`.
 
     ```sql
     CREATE EXTERNAL TABLE ex_data_2011_2012
@@ -110,36 +107,36 @@ Imagine that you're working with the business analytics team, and need to export
     GO
     ```
 
-   This query creates the external table named `ext_data_2011_2012`, and export every data from 2011 and 2012 to the location specified by the data source `ABS_Data`.
+1. Check your Azure Blob Storage in the Azure portal. You should see the following structure created. SQL Server 2022 automatically creates the filename based on how much data it exports and the file format.
 
-1. Check your Azure Blob Storage through the Azure portal. You should see the following structure being created:
+   :::image type="content" source="../media/parquet-azure-storage.png" alt-text="Screenshot from the Azure portal showing the Parquet file in Azure Storage.":::
 
-   :::image type="content" source="../media/parquet-azure-storage.png" alt-text="Screenshot from the Azure portal showing the parquet file in Azure Storage.":::
-
-   SQL Server 2022 will automatically create the file name based on how much data that it exports and the file format.
-
-1. You can now access the external table as if it was a regular table.
+1. You can now access the external table like a regular table.
 
     ```sql
     SELECT * FROM ex_data_2011_2012
     ```
 
-   :::image type="content" source="../media/ssms-select-from-external-table.png" alt-text="Screenshot of SSMS and the results from the AdventureWorks2022 database showing the results from the external table.":::
+   :::image type="content" source="../media/ssms-select-from-external-table.png" alt-text="Screenshot of results from the AdventureWorks2022 database showing the results from the external table.":::
 
-   Now that the data has been exported to Parquet, the data can be easily accessible through the external table. The business analytics team can query the external table, or point their reporting tool at the Parquet file.
+The data is now exported to Parquet and is easily accessible through the external table. The business analytics team can query the external table or point their reporting tool at the Parquet file.
 
 ## Use CETAS to move cold data out of the database
 
-To keep the data manageable, your company has decided that data that is older than 2014 should be moved from the database. However, all of the data must still be accessible. For this example, we export the data through CETAS, and generate several external tables that we can query later on. We'll go through an example of using a view with UNION statements to query the data, as well as creating a single external table that uses a wildcard search to search through the subfolders of the exported data.
+To keep the data manageable, your company decides to move data older than 2014 from the SQL Server database. However, all of the data must still be accessible.
 
-1. Start by cloning the original table, as we want to simulate exporting and removing the data, but don't necessarily want to delete the current data source. Run the following in SSMS:
+For this example, you export the data through CETAS and generate several external tables that you can query later. You can use a view with UNION statements to query the data, or create a single external table and use a wildcard to search through the subfolders of the exported data.
 
-    ```sql
-    -- CLONE TABLE
-    SELECT * INTO [PURCHASING].[PURCHASEORDERDETAIL_2] FROM [PURCHASING].[PURCHASEORDERDETAIL]
-    ```
+First, clone the original table, because you want to simulate exporting and removing the data but don't necessarily want to delete the current data source. Run the following statement:
 
-1. From the first exercise, we know that there are 5551 records from 2014. Everything before 2014 should be exported to a respective folder, divided by year. Data from 2011 will be put in a folder called `2011`. Data from 2012 will be put in a folder called `2012`, and data from 2013 will be put in a folder called `2013`. Run the following statements:
+```sql
+-- CLONE TABLE
+SELECT * INTO [PURCHASING].[PURCHASEORDERDETAIL_2] FROM [PURCHASING].[PURCHASEORDERDETAIL]
+```
+
+From the first data exploration query, you know there are 5551 records from 2014. Everything before 2014 should be exported to a folder identified by year. Data from 2011 goes into a folder called `2011`, and so on. 
+
+1. To create the external tables, run the following commands:
 
     ```sql
     CREATE EXTERNAL TABLE ex_2011
@@ -149,7 +146,7 @@ To keep the data manageable, your company has decided that data that is older th
             FILE_FORMAT = ffParquet
     )AS
     SELECT
-    	[PurchaseOrderID]
+        [PurchaseOrderID]
           ,[PurchaseOrderDetailID]
           ,[DueDate]
           ,[OrderQty]
@@ -161,8 +158,7 @@ To keep the data manageable, your company has decided that data that is older th
           ,[StockedQty]
           ,[ModifiedDate]
     FROM  [PURCHASING].[PURCHASEORDERDETAIL_2] 
-    WHERE YEAR([DUEDATE]) = 2011
-    GO
+    WHERE YEAR([DUEDATE]) = 2011;
     ```
 
     ```sql
@@ -173,7 +169,7 @@ To keep the data manageable, your company has decided that data that is older th
             FILE_FORMAT = ffParquet
     )AS
     SELECT
-    	[PurchaseOrderID]
+        [PurchaseOrderID]
           ,[PurchaseOrderDetailID]
           ,[DueDate]
           ,[OrderQty]
@@ -185,8 +181,7 @@ To keep the data manageable, your company has decided that data that is older th
           ,[StockedQty]
           ,[ModifiedDate]
     FROM  [PURCHASING].[PURCHASEORDERDETAIL_2] 
-    WHERE YEAR([DUEDATE]) = 2012
-    GO
+    WHERE YEAR([DUEDATE]) = 2012;
     ```
 
     ```sql
@@ -197,7 +192,7 @@ To keep the data manageable, your company has decided that data that is older th
             FILE_FORMAT = ffParquet
     )AS
     SELECT
-    	[PurchaseOrderID]
+        [PurchaseOrderID]
           ,[PurchaseOrderDetailID]
           ,[DueDate]
           ,[OrderQty]
@@ -209,55 +204,58 @@ To keep the data manageable, your company has decided that data that is older th
           ,[StockedQty]
           ,[ModifiedDate]
     FROM  [PURCHASING].[PURCHASEORDERDETAIL_2] 
-    WHERE YEAR([DUEDATE]) = 2013
-    GO
+    WHERE YEAR([DUEDATE]) = 2013;
     ```
 
-1. After executing these three commands, you should able to see the following external tables in SSMS **Object Explorer**. Open the sample database > **Tables** > **External Tables**:
+1. After you execute these commands, refresh SSMS **Object Explorer**. Then open **Databases** > **AdventureWorks2022** > **Tables** > **External Tables** to see the external tables.
 
    :::image type="content" source="../media/external-tables-2011-2013.png" alt-text="Screenshot of SSMS showing the external tables for 2011, 2012, and 2013.":::
 
-   On the Azure portal storage container, the following folders are created:
+1. Confirm that the following folders appear in the Azure Storage container:
 
    :::image type="content" source="../media/azure-storage-folders-created.png" alt-text="Screenshot of the Azure portal storage container showing the folders created for our command.":::
 
-1. After the cold data is exported, we can delete it from the table.
+1. After the cold data is exported, you can delete it from the original table location.
 
     ```sql
     DELETE FROM [PURCHASING].[PURCHASEORDERDETAIL_2] 
     WHERE YEAR([DUEDATE]) < 2014
     ```
 
-### Use a view to query the data that includes the external table
+## Query data that includes the external table
 
-1. Now that the old data that we wanted to remove from the database was exported and deleted, we can use T-SQL to create a view that will query all the external tables as well as the current data in our database.
+You can use a view or a wildcard search to query the exported external data. Each method has advantages and disadvantages. The view method is recommended for repetitive requests because it usually performs better, and can also be combined with physical tables. The wildcard search method is more flexible and easier to use for exploration purposes.
 
-    ```sql
-    CREATE VIEW vw_purchaseorderdetail 
-    AS
-    SELECT * FROM ex_2011
-    UNION ALL
-    SELECT * FROM ex_2012
-    UNION ALL
-    SELECT * FROM ex_2013
-    UNION ALL
-    SELECT * FROM  [PURCHASING].[PURCHASEORDERDETAIL_2] 
-    ```
+### Use a view to query the data
 
-1. By performing the same data exploration query from the beginning of the exercise to see the data distribution, but this time using the newly created view, we can see the same result:
+Now that the old data is exported and deleted from the database, you can use T-SQL to create a view that queries all the external tables and the current data in your database.
 
-    ```sql
-    SELECT  COUNT(*) AS QTY, DATEPART(YYYY, [DUEDATE]) AS [YEAR]
-    FROM vw_purchaseorderdetail 
-    GROUP BY DATEPART(YYYY, [DUEDATE])
-    ORDER BY [YEAR]
-    ```
+```sql
+CREATE VIEW vw_purchaseorderdetail 
+AS
+SELECT * FROM ex_2011
+UNION ALL
+SELECT * FROM ex_2012
+UNION ALL
+SELECT * FROM ex_2013
+UNION ALL
+SELECT * FROM  [PURCHASING].[PURCHASEORDERDETAIL_2] 
+```
+
+You can run the original data exploration query, this time using the newly created view, to see the same results.
+
+```sql
+SELECT  COUNT(*) AS QTY, DATEPART(YYYY, [DUEDATE]) AS [YEAR]
+FROM vw_purchaseorderdetail 
+GROUP BY DATEPART(YYYY, [DUEDATE])
+ORDER BY [YEAR]
+```
 
 ### Use a wildcard search to query the data
 
-In the previous example, we used a view with UNION statements to join the three external tables. That's just one way of achieving our desired results. Another way would be to use the wildcard search method that will scan the folder structure, including subfolders for any data from a particular type.
+In the preceding example, you used a view with UNION statements to join the three external tables. Another way to achieve the desired results is to use a wildcard search to scan the folder structure, including subfolders, for any data of a particular type.
 
-The following T-SQL example allows OPENROWSET to search across the `ABS_Data` data source for Parquet files, including its subfolders.
+The following T-SQL example uses OPENROWSET to search across the `ABS_Data` data source, including its subfolders, for Parquet files.
 
 ```sql
 SELECT COUNT(*) AS QTY, DATEPART(YYYY, [DUEDATE]) AS [YEAR]
@@ -270,11 +268,9 @@ GROUP BY DATEPART(YYYY, [DUEDATE])
 ORDER BY [YEAR]
 ```
 
-Each method has its own advantages and disadvantages. For exploration purposes, the wildcard search method is recommended since it's easier to use and more flexible. As for the view method, it's recommended for repetitive requests since it usually performs better, and it also can be combined with physical tables.
-
 ## Folder elimination and metadata information
 
-Both external tables and OPENROWSET can use the `filepath` function to collect and filter information based on the file metadata. The `filepath` function returns the full path of the file, the folder name, and the file name. That information can be used to further improve the search capabilities of both the external table and OPENROWSET commands.
+Both external tables and OPENROWSET can use the `filepath` function to collect and filter information based on file metadata. The `filepath` function returns full paths, folder names, and file names. You can use that information to improve the search capabilities of both the external table and OPENROWSET commands.
 
 ```sql
 SELECT
@@ -287,14 +283,14 @@ FROM OPENROWSET(
         FORMAT = 'parquet'
     ) as [r]
 GROUP BY
-	r.filepath(2),r.filepath(1), r.filepath()
+    r.filepath(2),r.filepath(1), r.filepath()
 ORDER BY 
-	r.filepath(2)
+    r.filepath(2)
 ```
 
 :::image type="content" source="../media/ssms-filepath-function.png" alt-text="Screenshot of SSMS showing the filepath function.":::
 
-If we want to ensure one data from a particular folder is retrieved but still leverages the functionality of the wildcard search method, we can use the following query:
+If you want to retrieve data from a particular folder and still use the functionality of the wildcard search method, you can use the following query:
 
 ```sql
 SELECT  *
@@ -307,11 +303,13 @@ WHERE
  r.filepath(1) IN ('2011')
 ```
 
-The end result is the same, but by leveraging the metadata for folder elimination, you guarantee that your query will only access the required folders, instead of scanning across the entire data source, making it better for query performance. With that information in mind, you can use it to help design your own storage architecture to better leverage the capabilities. For example, here's a sample folder architecture:
+The end results are the same, but by using the folder elimination metadata, your query accesses only the required folders instead of scanning the entire data source, producing better query performance. Keep this information in mind when you design storage architectures to better use PolyBase capabilities.
 
-:::image type="content" source="../media/folder-elimination-architecture.png" alt-text="Screenshot showing a folder architecture example in a storage container.":::
+For example, given the following folder architecture:
 
-This is how our query would look like:
+:::image type="content" source="../media/folder-elimination-architecture.png" alt-text="Screenshot showing a folder architecture example in a storage container." border="false":::
+
+You could use the following query:
 
 ```sql
 SELECT  *
@@ -325,8 +323,12 @@ WHERE
  r.filepath(2) IN ('<month>')
 ```
 
-In this example, it would matter little how large the data would grow. SQL Server would only query or load the data from the desired folder, skipping all others. Only the folder content would be read and loaded, and since no data is stored in the database, the database administrator doesn't need to design a specific maintenance strategy to manage this data.
+For purposes of this query, it doesn't matter how large the data source grows. SQL Server loads, reads, and queries only the data from the selected folder, skipping all others.
 
-The company must still take all the required precautions to safely maintain the data, including, but not limited to backups, availability, and permissions.
+Because no data is stored in the database, the database administrator doesn't need to design a specific strategy to manage this data. The company must still take all the required precautions to safely maintain the data, including but not limited to backups, availability, and permissions.
 
-With this newly acquired knowledge, we can combine OPENROWSET, external table, views, wildcard search, and filepath function to design a performant, durable, and scalable solution on Azure Blob Storage, Azure Data Lake Storage Gen 2, or S3-compatible object storage. Everything shown in this example works across every PolyBase supported data source. That means that you can use CETAS to access and export data from another database like SQL Server, Oracle, Teradata, MongoDB, and others.
+## Summary
+
+In this exercise, you used CETAS to move cold data out of a database into Azure Storage and export a table as Parquet file format. You learned ways to query the external data for exploration and to optimize performance.
+
+You can use CETAS to combine OPENROWSET, external tables, views, wildcard search, and filepath functions. You can access and export data from other databases like SQL Server, Oracle, Teradata, and MongoDB, or from Azure Blob Storage, Azure Data Lake Storage, or any S3-compatible object storage. CETAS can help you design performant, durable, and scalable solutions across all PolyBase supported data sources.

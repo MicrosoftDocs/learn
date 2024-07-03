@@ -7,7 +7,7 @@ metadata:
   ms.date: 03/06/2023
   author: mumian
   ms.author: jgao
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.devlang: bicep
 title: Share Bicep modules by using private registries
 summary: |

@@ -15,4 +15,8 @@ It's important to note that DevOps benefits extend beyond the lifecycle of tradi
 
 *Machine Learning Operations*, often referred to as simply *MLOps*, focus on transitioning from the development of machine learning models to their provisioning in production environments. By following MLOps practices, organizations can ensure that their workloads are resilient and can be easily recreated. This includes monitoring, retraining, and redeploying models on an as-needed basis, and maintaining their stability following each deployment.
 
+:::image type="content" source="../media/4-machine-learning-operations.png" alt-text="Diagram showing Machine Learning Operations cycles.":::
+
 *Infrastructure as Code*, commonly abbreviated as *IaC*, involves managing and provisioning compute, networking, and storage infrastructure via programming methods, rather than by relying on configuring physical hardware or using interactive administrative tools. IaC allows developers and operations teams to define and manage infrastructure elements such as servers, network devices, and databases using code. This code is typically written in a high-level, human-readable scripting language. The scripts are then executed to automate the provisioning and configuration of infrastructure, making it more efficient, consistent, and easily scalable.
+
+:::image type="content" source="../media/4-infrastructure-as-code.png" alt-text="Diagram showing Infrastructure as Code.":::

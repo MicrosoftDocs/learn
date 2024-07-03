@@ -5,6 +5,8 @@ Continuous integration (CI) is one of the most fundamental DevOps elements. It p
 Continuous integration is the process of automatically building and testing updated versions of software following individual updates to the software repository. In general, the integration pattern involves developers submitting their changes in separate branches via pull requests. The changes are subject to a collective review and, assuming its successful outcome, are merged into the main branch. Individual commit or merge events might be used to trigger code build and testing in order to ensure that proposed or resulting changes don't have adverse effects. With continuous integration in place, the build and tests are fully automated.  
 This automation is based on build and test definitions created by developers and implemented in the repository hosting platform. For example, GitHub offers for this purpose GitHub Actions workflow, while Azure DevOps relies on Azure Pipelines.
 
+:::image type="content" source="../media/5-continuous-integration.png" alt-text="Diagram of the continuous integration flow.":::
+
 ## What are the benefits of Continuous Integration?
 
 The primary benefits associated with continuous integration are based on the general shift-left strategy, which (as you'll find out later in this module) also influences many other DevOps practices. The basic premise is that the longer it takes to detect an issue introduced through a code change, the more expensive and effort consuming it's to fix it. With continuous integration, code build and testing take place as soon as possible. They're also implemented in an automated manner, which increases their speed and reliability.

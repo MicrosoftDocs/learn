@@ -7,7 +7,7 @@ metadata:
   ms.date: 11/24/2023  
   author: sairamyeturi
   ms.author: sairamyeturi
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: hdinsight-aks
 title: Introduction to Azure HDInsight on AKS
 summary: HDInsight on AKS (Azure Kubernetes Service) is a cloud-based service provided by Microsoft Azure that allows you to run HDInsight clusters on a managed Kubernetes environment. It combines the capabilities of HDInsight, which is a fully managed big data processing service, with the scalability and flexibility of AKS, a managed container orchestration service.
@@ -32,7 +32,7 @@ products:
   - azure
   - azure-hdinsight-aks
 subjects:
-- data-ai
+- data-management
 units:
 - learn.intro-to-azure-hdinsight-aks.1-introduction
 - learn.intro-to-azure-hdinsight-aks.2-what-is-azure-hdinsight-aks

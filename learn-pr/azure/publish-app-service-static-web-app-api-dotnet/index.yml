@@ -39,8 +39,6 @@ products:
   - dotnet
   - aspnet-core
   - blazor
-subjects:
-- development-tools
 units:
   - learn.azure.publish-static-web-app-and-api-dotnet.1-introduction
   - learn.azure.publish-static-web-app-and-api-dotnet.2-exercise-get-started

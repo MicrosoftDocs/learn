@@ -4,10 +4,10 @@ title: Identify Azure and on-premises roles to assign to users
 metadata:
   title: Identify Azure and on-premises roles to assign to users
   description: Identify Azure and on-premises roles to assign to users
-  ms.date: 09/27/2023
-  author: mjosephym
-  ms.author: v-mjosephy
-  ms.topic: interactive-tutorial
+  ms.date: 11/29/2023
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
   ms.service: defender-for-iot
 durationInMinutes: 5
 content: |

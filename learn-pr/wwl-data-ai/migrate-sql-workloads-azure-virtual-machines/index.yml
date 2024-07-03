@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/28/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Migrate SQL Server workloads to Azure Virtual Machine
 summary: You will explore different migration tools and migrate SQL Server databases to Azure Virtual Machine.
@@ -14,7 +14,6 @@ abstract: |
   In this module, you'll:
   - Understand the importance of careful planning for a successful migration of SQL Server workloads to Azure Virtual Machines.
   - Migrate databases using Azure SQL Migration extension for Azure Data Studio and tracking database migration activities to SQL Server on Azure Virtual Machines.
-  - Use the Data Migration Assistant (DMA) tool to facilitate SQL Server migrations to Azure Virtual Machine.
   - Explore several other methods for migrating SQL Server databases to Azure Virtual Machines.
 prerequisites: |
   - Experience in administering SQL Server databases.

@@ -1,8 +1,8 @@
-Tailwind Traders has begun the process of migrating some existing workloads to the cloud and ensuring that new workloads are cloud native where appropriate. Instead of having all workloads hosted on-premises or in Azure, Tailwind Traders will be taking advantage of the technologies that best suit its needs.
+Tailwind Traders began the process of migrating some existing workloads to the cloud and ensuring that new workloads are cloud native where appropriate. Instead of having all workloads hosted on-premises or in Azure, Tailwind Traders are taking advantage of the technologies that best suit its needs.
 
-In this module, you learned about a variety of Azure hybrid technologies, including those related to networking, identity, compute, data, and security. You also learned how these technologies might function to provide Tailwind Traders with appropriate solutions to its problems. 
+In this module, you learned about various Azure hybrid technologies, including technologies related to networking, identity, compute, data, and security. You also learned how these technologies might function to provide Tailwind Traders with appropriate solutions to its problems. 
 
-You learned about what hybrid cloud entails and the options for networking on-premises workloads to Azure in a seamless manner. You also learned how to provide consistent identity across a hybrid environment, the options for hybrid cloud compute workloads, and the options for having applications that have tiers that are both in the cloud and on-premises. Finally, you learned about the options for managing files and data in the cloud and the technologies that you can use to monitor and manage the security configuration of hybrid clouds.
+You learned about what hybrid cloud entails and the options for networking on-premises workloads to Azure in a seamless manner. You learned how to provide consistent identity across a hybrid environment, and you learned about the options for hybrid cloud compute workloads. Especially, the options for applications with tiers that are both in the cloud and on-premises. Finally, you learned about the options for managing files and data in the cloud, and the technologies for monitoring and managing the security configuration of hybrid clouds.
 
 ## Learn more
 
@@ -37,7 +37,6 @@ You can learn more by referencing the following documentation:
 You can also learn more by reviewing the following Microsoft Training modules:
 
 - [Design a hybrid network architecture on Azure][design-a-hybrid-network-architecture]
-- [Expose hybrid services securely with Azure Relay][expose-hybrid-services-with-azure-relay]
 - [Manage hybrid workloads with Azure Arc][manage-hybrid-workloads-azure-arc]
 - [Implement hybrid identity with Windows Server][implement-hybrid-identity-windows-server]
 - [Implement a hybrid file server infrastructure][implement-hybrid-file-server-infrastructure]
@@ -71,7 +70,6 @@ You can also learn more by reviewing the following Microsoft Training modules:
 [azure-sentinel]: /azure/sentinel?azure-portal=true
 [overview]: /azure/automation/update-management/overview?azure-portal=true
 [design-a-hybrid-network-architecture]: /training/modules/design-a-hybrid-network-architecture?azure-portal=true
-[expose-hybrid-services-with-azure-relay]: /training/modules/expose-hybrid-services-with-azure-relay?azure-portal=true
 [manage-hybrid-workloads-azure-arc]: /training/modules/manage-hybrid-workloads-azure-arc?azure-portal=true
 [implement-hybrid-identity-windows-server]: /training/modules/implement-hybrid-identity-windows-server?azure-portal=true
 [implement-hybrid-file-server-infrastructure]: /training/modules/implement-hybrid-file-server-infrastructure?azure-portal=true

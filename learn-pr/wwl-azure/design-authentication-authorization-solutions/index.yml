@@ -2,11 +2,14 @@
 uid: learn.wwl.design-authentication-authorization-solutions
 metadata:
   title: Design authentication and authorization solutions
-  description: "Azure Architects design and recommend authentication and authorization solutions."
-  ms.date: 03/24/2023
+  description: Azure Architects design and recommend authentication and authorization solutions.
+  ms.date: 03/06/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
 title: Design authentication and authorization solutions
 summary: Azure Architects design and recommend authentication and authorization solutions.
 abstract: |

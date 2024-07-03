@@ -16,6 +16,10 @@ Every good prompt should have a goal. Whether it comes in the form of instructio
 
 For Copilot, context can refer to the time frame, or that you'll use the response for a report. Expectations can include whether you want the response to be in a table format, a list of action steps, a summary, or even a diagram. Source might be useful in specifying which Microsoft plugins you're referring to, if needed. Some plugins require more context to work effectively or supporting plugins to ensure a response when initial responses fail.
 
+Watch this short video for a summary on how to create effective prompts.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=972d5cc0-e83a-48fa-9729-7dea11edba9d]
+
 ### Other prompting tips
 
 Some things to remember when coming up with your own prompts:
@@ -28,7 +32,7 @@ Some things to remember when coming up with your own prompts:
 
 - Provide necessary context to narrow down where Copilot looks for data.
   - Basic prompt: Summarize incident 15134.
-  - Better prompt: Summarize incident 15134 in Microsoft 365 Defender into a paragraph that I can submit to my manager and create a list of entities involved.
+  - Better prompt: Summarize incident 15134 in Microsoft Defender XDR into a paragraph that I can submit to my manager and create a list of entities involved.
 
 - Give positive instructions instead of "what not to do." Copilot is geared toward action, so telling it what you want it to do for exceptions is more productive.
   - Basic prompt: Give me a list of unmanaged devices in my network.

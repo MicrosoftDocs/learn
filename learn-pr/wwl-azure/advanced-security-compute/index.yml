@@ -3,23 +3,27 @@ uid: learn.wwl.advanced-security-compute
 metadata:
   title: Plan and implement advanced security for compute
   description: "This module is designed to provide administrators with the knowledge and skills needed to plan and implement advanced security measures for Azure compute resources, safeguarding applications and data against evolving security threats."
-  ms.date: 02/20/2024
+  ms.date: 06/10/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
   ms.custom:
   - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Plan and implement advanced security for compute
 summary: This module is designed to provide administrators with the knowledge and skills needed to plan and implement advanced security measures for Azure compute resources, safeguarding applications and data against evolving security threats.
 abstract: |
   By the end of this module, participants will be able to:
-  - Enhance Azure compute resources' security against vulnerabilities and attacks with advanced measures.
-  - Secure remote access via Azure Bastion and JIT VM access, and implement network isolation for AKS.
-  - Strengthen AKS clusters' security, monitor Azure Container Instances and Apps, and manage access to Azure Container Registry.
-  - Implement disk encryption methods like ADE and manage API access securely in Azure API Management.
-prerequisites: |
-  - None
+
+  -   Enhance Azure compute resources' security against vulnerabilities and attacks with advanced measures.
+
+  -   Secure remote access via Azure Bastion and JIT VM access, and implement network isolation for AKS.
+
+  -   Strengthen AKS clusters' security, monitor Azure Container Instances and Apps, and manage access to Azure Container Registry.
+
+  -   Implement disk encryption methods like ADE and manage API access securely in Azure API Management.
+prerequisites: '-   None'
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -38,6 +42,7 @@ subjects:
 units:
 - learn.wwl.advanced-security-compute.introduction
 - learn.wwl.advanced-security-compute.remote-access-public-endpoints-include-azure-bastion
+- learn.wwl.advanced-security-compute.azure-kubernetes-service-overview
 - learn.wwl.advanced-security-compute.best-practices-cluster-isolation-azure-kubernetes-service
 - learn.wwl.advanced-security-compute.microsoft-defender-containers
 - learn.wwl.advanced-security-compute.best-practices-authentication-authorization

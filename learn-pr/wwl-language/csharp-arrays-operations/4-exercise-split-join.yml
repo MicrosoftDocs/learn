@@ -3,11 +3,13 @@ uid: learn.languages.csharp-arrays-operations.exercise-split-join
 title: Exercise - Discover Split() and Join()
 metadata:
   title: Exercise - Discover Split() and Join()
-  description: "Exercise - Discover Split() and Join()"
-  ms.date: 02/21/2024
+  description: "Explore using Split() and Join() to split or combine elements in an array."
+  ms.date: 03/27/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-split-join.md)]
@@ -18,10 +20,10 @@ quiz:
     choices:
     - content: "Constructs a character array from items in `myArray` connected with `,` (commas)."
       isCorrect: false
-      explanation: "Incorrect. `String.Join` constructs strings from the elements of `myArray`)"
+      explanation: "Incorrect. `String.Join` constructs strings from the elements of `myArray`)."
     - content: "Constructs a string from items in `myArray` connected with `-` (dashes)."
       isCorrect: true
-      explanation: "Correct. `String.Join` constructs strings from the elements of `myArray`)"
+      explanation: "Correct. `String.Join` constructs strings from the elements of `myArray`)."
     - content: "Constructs a string named `myArray` connected with `-` (dashes)."
       isCorrect: false
-      explanation: "Incorrect. `String.Join` constructs strings from the elements of `myArray`)"
+      explanation: "Incorrect. `String.Join` constructs strings from the elements of `myArray`)."

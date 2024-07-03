@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/31/2020
   author: leestott
   ms.author: chnoring
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.custom: team=nextgen
   ms.service: azure-sphere
 title: "Introduction to Azure Sphere"
@@ -30,7 +30,7 @@ roles:
 products:
 - azure-iot-edge
 subjects:
-- digital-application-innovation
+- app-development
 units:
 - learn.oxford.intro-azure-sphere.introduction
 - learn.oxford.intro-azure-sphere.what-azure-sphere

@@ -7,12 +7,11 @@ metadata:
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
-  ms.prod: security
   ms.service: security-copilot
+  ai-usage: ai-assisted
 title: Describe Microsoft Copilot for Security
 summary: |
   Get acquainted with Microsoft Copilot for Security. You are introduced to some basic terminology, how Microsoft Copilot for Security processes prompts, the elements of an effective prompt, and how to enable the solution.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you'll be able to:
     - Describe what Microsoft Copilot for Security is.
@@ -21,9 +20,10 @@ abstract: |
     - Describe the elements of an effective prompt
     - Describe how to enable Microsoft Copilot for Security.
 prerequisites: |
-  - None
-iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
+  - Working knowledge of security operations and incident response
+  - Working knowledge of Microsoft security products and services
+iconUrl: /learn/achievements/security-copilot-getting-started.svg
+hidden: false
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role

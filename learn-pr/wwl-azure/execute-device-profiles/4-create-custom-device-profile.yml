@@ -4,10 +4,12 @@ title: Create a custom device profile
 metadata:
   title: Create a custom device profile
   description: "This unit covers how to create a custom device profile."
-  ms.date: 07/24/2023
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-create-custom-device-profile.md)]

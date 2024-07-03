@@ -29,8 +29,6 @@ roles:
   - solution-architect
 products:
   - azure-api-management
-subjects:
-- development-tools
 units:
 - learn.azure.introduction-to-azure-api-management.introduction
 - learn.azure.introduction-to-azure-api-management.what-is-azure-api-management

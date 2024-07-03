@@ -5,3 +5,5 @@ During the creation of AI models, machine learning models are carefully trained 
 A helpful analogy to the machine learning process is how an athlete learns the skills to play soccer. A soccer player starts by practicing basic skills like dribbling and passing. Through continuous practice, the soccer player begins to recognize playing patterns, anticipate the movements of opponents and teammates, and develop better coordination. Over time, the soccer player becomes more skilled at making split-second decisions during a match and adjusting strategies based on the evolving dynamics of the game.
 
 Similarly, a machine learning model starts with learning patterns and relationships in data during the training process. The model then uses these learned patterns to make predictions or perform tasks that it was designed for. Just as the soccer player's expertise grows through practice and experiencing various game scenarios, the machine learning model's proficiency evolves through iterative learning and adaptation within the parameters set for the model.
+
+<sup>2</sup>: See the *Bibliography* in this module's **Summary** section.

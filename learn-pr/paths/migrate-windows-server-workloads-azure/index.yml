@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/15/2023
   author: Orin-Thomas
   ms.author: orthomas
-  ms.topic: interactive-tutorial
+  ms.topic: learning-path
 title: Migrate Windows Server workloads to Azure
 prerequisites: |
   - Core Microsoft compute, storage, networking, and virtualization technologies

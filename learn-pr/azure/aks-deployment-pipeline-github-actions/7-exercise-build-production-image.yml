@@ -3,7 +3,7 @@ uid: learn.aks-deployment-pipeline-github-actions.7-exercise-build-production-im
 metadata:
   title: Exercise - Build the Production Application Image
   description: Practice what you've learned by building the production application image. Then, automatically deploy the image to Container Registry by using GitHub Actions.
-  ms.date: 10/08/2020
+  ms.date: 01/08/2023
   author: nickomang
   ms.author: nickoman
   ms.topic: unit

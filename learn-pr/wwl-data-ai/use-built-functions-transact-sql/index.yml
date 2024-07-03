@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/14/2023
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: sql
   ms.subservice: t-sql
   ms.devlang: tsql
@@ -42,8 +42,7 @@ products:
 - azure-sql-virtual-machines
 subjects:
 - data-analytics
-- database
-- development-tools
+- databases
 units:
 - learn.wwl.use-built-functions-transact-sql.introduction
 - learn.wwl.use-built-functions-transact-sql.categorize-functions

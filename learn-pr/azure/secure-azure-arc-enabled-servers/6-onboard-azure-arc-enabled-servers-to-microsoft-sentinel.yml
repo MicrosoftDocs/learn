@@ -3,8 +3,8 @@ uid: learn.azure.secure-azure-arc-enabled-servers.onboard-azure-arc-enabled-serv
 title: Onboard Azure Arc-enabled servers to Microsoft Sentinel
 metadata:
   title: Onboard Azure Arc-enabled servers to Microsoft Sentinel
-  description: Onboard Azure Arc-enabled servers to Microsoft Sentinel
-  ms.date: 02/02/2022
+  description: Learn how to onboard Azure Arc-enabled servers to Microsoft Sentinel.
+  ms.date: 04/24/2024
   author: aurnovcy
   ms.author: aurnovc
   ms.topic: unit

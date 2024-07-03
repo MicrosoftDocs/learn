@@ -4,9 +4,9 @@ title: Implement optimistic concurrency
 metadata:
   title: Implement optimistic concurrency
   description: Implement optimistic concurrency
-  ms.date: 06/22/2023
-  author: tamram
-  ms.author: tamram
+  ms.date: 11/06/2023
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
 durationInMinutes: 6
 content: |

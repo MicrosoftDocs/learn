@@ -29,7 +29,7 @@ To complete this project, you need an API for NoSQL account.
 
 The API for NoSQL account is used to store the data you create in this project and to execute queries. This section guides you through the steps to creating a new account using the Azure CLI directly in the Azure Cloud Shell terminal.
 
-1. Create a new shell variable named **suffix** with a random number. Create a new API for NoSQL account within the `<rgn>[sandbox resource group name]</rgn>` resource group.
+1. Create a new shell variable named **suffix** with a random number. Create a new API for NoSQL account within the **<rgn>[sandbox resource group name]</rgn>** resource group.
 
     ```azurecli
     let suffix=$RANDOM*$RANDOM
@@ -55,8 +55,10 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb keys li
 1. First, get the name of the most recently created API for NoSQL accounts.
 
     ```azurecli
+    let resourceGroup="<rgn>[sandbox resource group name]</rgn>"
+    
     az cosmosdb list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group $resourceGroup \
         --query "sort_by([].{name:name,created:systemData.createdAt}, &created)" \
         --output table
     ```
@@ -64,10 +66,12 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb keys li
 1. Now, get the `Primary SQL Connection String` credential for the first account from the list of recently created accounts.
 
     ```azurecli
+    let resourceGroup="<rgn>[sandbox resource group name]</rgn>"
+
     az cosmosdb keys list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group $resourceGroup \
         --name $(az cosmosdb list \
-            --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+            --resource-group $resourceGroup \
             --query "sort_by([].{name:name,created:systemData.createdAt}, &created)[0].name" \
             --output tsv) \
         --type connection-strings \

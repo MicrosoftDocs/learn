@@ -3,12 +3,11 @@ uid: learn.wwl.introduction-to-azure-ai-studio.what-is-ai-studio
 title: What is Azure AI Studio?
 metadata:
   title: What is Azure AI Studio?
-  description: "Discover core features and capabilities of Azure AI Studio (preview)."
-  ms.date: 10/16/2023
+  description: "Discover core features and capabilities of Azure AI Studio."
+  ms.date: 05/08/2024
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-ai-services
+  ms.author: berryivor
+  ms.topic: unit
   ms.custom:
     - ignite-2023
 durationInMinutes: 3

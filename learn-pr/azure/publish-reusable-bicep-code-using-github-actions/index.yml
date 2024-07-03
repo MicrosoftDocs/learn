@@ -7,7 +7,7 @@ metadata:
   ms.date: 06/29/2023
   author: mumian
   ms.author: jgao
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: engagement-fy23
   ms.devlang: bicep
 title: Publish reusable Bicep code by using GitHub Actions

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create an AKS cluster
   description: A high-level explanation of the parts of cloud-native apps.
   ms.date: 12/28/2023
-  author: tomreidnz
-  ms.author: jasdeb
+  author: rayoef
+  ms.author: rayoflores
   ms.topic: unit
 durationInMinutes: 10
 content: |

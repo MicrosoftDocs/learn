@@ -1,6 +1,6 @@
 Stored procedures are named groups of Transact-SQL (T-SQL) statements that can be used and reused whenever they're needed. Stored procedures can return results, manipulate data, and perform administrative actions on the server. You may need to execute stored procedures that someone else has created or create your own.
 
-Stored procedures can contain both data definition commands and data manipulation commands, providing a clean interface between a database and an application.
+Stored procedure can contain both data definition commands and data manipulation commands, providing a clean interface between a database and an application.
 
 There are advantages to using stored procedures, including:
 

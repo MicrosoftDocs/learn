@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.secure-networking
 metadata:
-  title: Secure networking
-  description: Secure networking
-  ms.date: 01/03/2024
+  title: 'AZ-500: Secure networking'
+  description: 'AZ-500: Secure networking'
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: learning-path
-title: Secure networking
+title: 'AZ-500: Secure networking'
 prerequisites: |
   It is beneficial to have a solid infrastructure background in networking and servers.
 summary: |

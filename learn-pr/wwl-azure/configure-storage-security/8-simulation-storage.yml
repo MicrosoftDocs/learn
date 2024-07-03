@@ -4,12 +4,12 @@ title: Interactive lab simulation
 metadata:
   title: Interactive lab simulation
   description: "Interactive lab simulation"
-  ms.date: 05/10/2023
+  ms.date: 03/05/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 30
 content: |
   [!include[](includes/8-simulation-storage.md)]

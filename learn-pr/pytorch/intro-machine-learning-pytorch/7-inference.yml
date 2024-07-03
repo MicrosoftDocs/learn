@@ -6,7 +6,7 @@ metadata:
   description: In this section, we look at how to persist model state with saving, loading, and running model predictions.
   author: cassiebreviu
   ms.author: ruyakubu
-  ms.date: 04/14/2020
+  ms.date: 08/05/2023
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates

@@ -88,6 +88,7 @@ Grafana needs to be configured so that it knows where to collect the metrics.
     ```
 
     The preceding YAML configures Grafana to use Prometheus as the data source.
+
 1. Select <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
 
 ### Update your ASP.NET Core app to expose metrics for Prometheus
@@ -95,6 +96,7 @@ Grafana needs to be configured so that it knows where to collect the metrics.
 Now, the diagnostics project is only configured to expose metrics to the console. You update the project to expose metrics to Prometheus instead.
 
 1. In Visual Studio Code, on the **TERMINAL** pane at the bottom, go to the *Diagnostics* folder.
+
 1. Run this command:
 
     ```bash
@@ -156,20 +158,6 @@ The app is currently only configured to expose metrics for the **Products** serv
 
 1. Select <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
 
-1. On the **EXPLORER** pane, in the *Store* folder, select the *Dockerfile* file.
-
-1. At line 9, add this code to copy the **Diagnostics** project into the container:
-
-    ```dockerfile
-    WORKDIR /Diagnostics
-    COPY "eShopLite/Diagnostics/Diagnostics.csproj" .
-    RUN dotnet restore
-    COPY "eShopLite/Diagnostics" .
-    RUN dotnet publish -c release -o /app
-    ```
-
-1. Select <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
-
 1. On the **EXPLORER** pane, expand the **Product** folder and then select **Program.cs**.
 
 1. Before the `app.Run()` method, add this code:
@@ -186,16 +174,24 @@ The app is currently only configured to expose metrics for the **Products** serv
 
 You now test the new observability features you added to the app.
 
-1. On the **TERMINAL** pane at the bottom, go to the *dotnet-observability* folder.
+1. On the **TERMINAL** pane at the bottom, go to the *dotnet-observability/eShopLite* folder.
 
     ```bash
-    cd ../.. 
+    cd ..
     ```
 
-1. Start the app with Docker:
+1. Update the apps containers.
+
+    ```dotnetcli
+    dotnet publish /p:PublishProfile=DefaultContainer 
+    ```
+    
+
+1. Go to the *dotnet-observability* folder, and start the app with Docker:
 
     ```bash
-    docker-compose up --build
+    cd ..
+    docker compose up
     ```
 
 1. On the **PORTS** tab, select **Open in Browser** for **Prometheus (9090)**. If you're running locally in Visual Studio Code, open a browser and, on a new tab, go to the Prometheus app `http://localhost:9090`.
@@ -263,7 +259,6 @@ You now extend the tracing capabilities of the app by adding Zipkin. As you did 
         dockerfile: ./eShopLite/Store/Dockerfile
       environment: 
         - ProductEndpoint=http://backend:8080
-        - ImagePrefix=http://[YOUR URL]/images
         - ZIPKIN_URL=http://zipkin:9411
       ports:
         - "32000:8080"
@@ -331,16 +326,24 @@ You now extend the tracing capabilities of the app by adding Zipkin. As you did 
     ```
 
 1. Select <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
-1. On the **TERMINAL** pane at the bottom, go to the *dotnet-observability* folder.
+
+1. On the **TERMINAL** pane at the bottom, go to the *dotnet-observability/eShopLite* folder.
 
     ```bash
-    cd ../.. 
+    cd ..
     ```
 
-1. Start the app with Docker:
+1. Update the apps containers.
+
+    ```dotnetcli
+    dotnet publish /p:PublishProfile=DefaultContainer 
+    ```
+
+1. Go to the *dotnet-observability* folder, and start the app with Docker:
 
     ```bash
-    docker-compose up --build
+    cd ..
+    docker compose up
     ```
 
 1. On the **PORTS** tab, select **Open in Browser** for **Prometheus (9090)**. If you're running locally in Visual Studio Code, open a new browser tab and go to the Zipkin app `http://localhost:9411`.
@@ -441,7 +444,6 @@ The last step is to add Application Insights to your app.
           dockerfile: ./eShopLite/Store/Dockerfile
         environment: 
           - ProductEndpoint=http://backend:8080
-          - ImagePrefix=http://localhost:32001/images
           - ZIPKIN_URL=http://zipkin:9411
           - APPLICATIONINSIGHTS_CONNECTION_STRING=InstrumentationKey=b851fa75-85a2-42f7-bb6f-413725d9d8ba;IngestionEndpoint=https://eastus-2.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/
         ports:
@@ -493,16 +495,24 @@ The last step is to add Application Insights to your app.
     ```
 
 1. Select <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
-1. On the **TERMINAL** pane at the bottom, go to the *dotnet-observability* folder.
+
+1. On the **TERMINAL** pane at the bottom, go to the *dotnet-observability/eShopLite* folder.
 
     ```bash
-    cd ../.. 
+    cd ..
     ```
 
-1. Start the app with Docker:
+1. Update the apps containers.
+
+    ```dotnetcli
+    dotnet publish /p:PublishProfile=DefaultContainer 
+    ```
+
+1. Go to the *dotnet-observability* folder, and start the app with Docker:
 
     ```bash
-    docker-compose up --build
+    cd ..
+    docker compose up
     ```
 
 1. Sign in to the Azure portal with the same credentials you used to sign in to the Azure CLI.
@@ -515,4 +525,4 @@ The last step is to add Application Insights to your app.
 
 1. To see changes to metrics, go to the **:::no-loc text="eShopLite":::** app and change stock. Then refresh the Application Insights dashboard.
 
-1. On the **TERMINAL** pane, select <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.
+1. On the **TERMINAL** pane, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.

@@ -31,7 +31,4 @@ There are several other scenarios where using an assessment tool may be worthwhi
 
 - **Consolidating databases:** If you're consolidating multiple databases into a single database or instance, it's possible to use a migration tool to assess compatibility and identify any issues that may prevent a successful consolidation. For example, suppose you're managing several SQL Server databases that are spread across multiple instances or servers. To simplify management and reduce costs, you may want to consolidate these databases into a single instance or server.
 
-- **Discovering new features:** For example, before you migrate or upgrade with the help of the Data Migration Assistant (DMA), the database can take advantage of new features available in the target SQL Server platform. DMA provides feature recommendations that are categorized into the following areas: performance, security, and storage.
-
-
-
+- **Discovering new features:** For example, before you migrate or upgrade with the help of the Azure Data Migration Service (DMS), the database can take advantage of new features available in the target SQL Server platform. 

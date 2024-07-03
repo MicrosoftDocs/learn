@@ -20,7 +20,7 @@ You'll create the following resources:
 
     ```azurecli
     az network vnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name SalesVNet \
         --address-prefixes 10.1.0.0/16 \
         --subnet-name Apps \
@@ -32,7 +32,7 @@ You'll create the following resources:
 
     ```azurecli
     az network vnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name MarketingVNet \
         --address-prefixes 10.2.0.0/16 \
         --subnet-name Apps \
@@ -44,7 +44,7 @@ You'll create the following resources:
 
     ```azurecli
     az network vnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name ResearchVNet \
         --address-prefixes 10.3.0.0/16 \
         --subnet-name Data \
@@ -80,7 +80,7 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --no-wait \
         --name SalesVM \
         --location northeurope \
@@ -98,7 +98,7 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --no-wait \
         --name MarketingVM \
         --location northeurope \
@@ -113,7 +113,7 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --no-wait \
         --name ResearchVM \
         --location westeurope \
@@ -130,7 +130,7 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
 
     ```bash
     watch -d -n 5 "az vm list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --show-details \
         --query '[*].{Name:name, ProvisioningState:provisioningState, PowerState:powerState}' \
         --output table"

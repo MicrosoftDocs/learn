@@ -13,13 +13,13 @@ Managing a team via your service provider allows you to save time and resources 
 
 ## Enterprise Managed Users
 
-Team synchronization is also available for organizations and enterprise accounts that use GitHub Enterprise Cloud. Enterprise Managed Users is a feature of GitHub Enterprise Cloud that provides even greater control over enterprise members and resources. 
+Team synchronization is also available for organizations and enterprise accounts that use GitHub Enterprise Cloud. Enterprise Managed Users is a feature of GitHub Enterprise Cloud that provides even greater control over enterprise members and resources.
 
-When you use Enterprise Managed Users, all members are provisioned and managed through your IdP. Users don't create their own accounts on GitHub. Organization and team membership can be managed by using groups on your IdP. Managed user accounts are restricted to their enterprise and can't push code, collaborate, or interact with users, repositories, or organizations outside of their enterprise. For more information, see [Getting started with GitHub Enterprise Cloud](https://docs.github.com/en/get-started/onboarding/getting-started-with-github-enterprise-cloud).
+When you use Enterprise Managed Users, all members are provisioned and managed through your IdP. Users don't create their own accounts on GitHub. You can manage organization and team membership by using groups on your IdP. Managed user accounts are restricted to their enterprise and can't push code, collaborate, or interact with users, repositories, or organizations outside of their enterprise. For more information, see [Getting started with GitHub Enterprise Cloud](https://docs.github.com/get-started/onboarding/getting-started-with-github-enterprise-cloud).
 
 ## Usage limits
 
-When using the team synchronization feature, there are specific usage limits you need to know about. Exceeding these limits can lead to unexpected performance, and may cause synchronization failures.
+When using the team synchronization feature, there are specific usage limits you need to know about. Exceeding these limits can lead to unexpected performance, and might cause synchronization failures.
 
 - Maximum number of members in a GitHub team: 5,000
 - Maximum number of members in a GitHub organization: 10,000
@@ -36,7 +36,7 @@ You can enable and use team synchronization, but only with the following support
 
 The steps to enable team synchronization depend on the IdP you want to use. There are prerequisites to enable team synchronization that apply to each IdP. To enable team synchronization with your IdP, you must obtain administrative access or work with your IdP administrator to configure the IdP integration and groups. After you enable team synchronization, team maintainers and organization owners can connect a team to an IdP group on GitHub or through the API.
 
-**Microsoft Entra ID**: The GitHub System Admin for the GitHub organization will need to identify and work with the Microsoft Entra Administrator to configure Team Synchronization. On the Microsoft Entra ID side, the service is called “automatic user account provisioning.” To enable team synchronization for Microsoft Entra ID, the installation needs the following permissions:
+**Microsoft Entra ID**: The GitHub System Admin for the GitHub organization will need to identify and work with the Microsoft Entra Administrator to configure Team Synchronization. On the Microsoft Entra ID side, the service is called "automatic user account provisioning." To enable team synchronization for Microsoft Entra ID, the installation needs the following permissions:
 
 - Read all users’ full profiles
 - Sign in and read user profiles

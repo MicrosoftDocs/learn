@@ -4,7 +4,7 @@ title: "The continuous delivery deployment model"
 metadata:
   title: "The continuous delivery deployment model"
   description: "The continuous delivery deployment model"
-  ms.date: 05/07/2020
+  ms.date: 06/07/2024
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
@@ -27,11 +27,11 @@ quiz:
       explanation: 'Source code version control does not require smaller, focused changes frequently.'
     - content: 'Test and staging environments'
       isCorrect: false
-      explanation: 'Just having test or staging environments does not require smaller, focused changes frequently.'
+      explanation: "Just having test or staging environments doesn't require smaller, focused changes frequently."
 
-  - content: 'Which has proven to be true of high performing DevOps companies?'
+  - content: 'Which has proven to be true of high-performing DevOps companies?'
     choices:
-    - content: 'They have a 7x higher change failure rate'
+    - content: 'They have a 7x higher change failure rate.'
       isCorrect: false
       explanation: 'They have a 7x _lower_ change failure rate.'
     - content: 'They have 2x faster incident recovery time'
@@ -43,12 +43,12 @@ quiz:
 
   - content: 'Which of these options is _not_ a goal continuous delivery can help you reach?'
     choices:
-    - content: 'Reduce the stress involved with deploying services'
+    - content: 'Reducing the stress involved with deploying services.'
       isCorrect: false
       explanation: 'Continuous delivery can help with this goal.'
-    - content: 'Reduce the time between having an idea and delivering useable software'
+    - content: 'Reducing the time between having an idea and delivering useable software.'
       isCorrect: false
       explanation: 'Continuous delivery can help with this goal.'
-    - content: 'Reduce the compliance requirements for your software'
+    - content: 'Reducing the compliance requirements for your software.'
       isCorrect: true
-      explanation: 'Correct, continuous delivery could potentially help you meet your requirements in some circumstances, but it will not reduce them.'
+      explanation: "Correct. Continuous delivery could potentially help you meet your requirements in some circumstances, but it won't reduce them."

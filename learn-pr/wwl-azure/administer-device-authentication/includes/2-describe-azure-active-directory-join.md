@@ -1,10 +1,8 @@
-
-
-With Windows 11 or later, in addition to joining an AD DS domain, you can now join a device to Microsoft Entra ID. Along with creating user accounts in Microsoft Entra ID, you can now have objects that represent devices in Microsoft Entra ID, and you can manage devices that are joined to Microsoft Entra ID from the cloud.
+Starting with Windows 10 and continuing into Windows 11, in addition to joining an Active Directory Domain Services (AD DS) domain, deploy Microsoft Entra joined devices. Along with creating user accounts in Microsoft Entra ID, you can have objects that represent devices, and you can manage devices that are joined to Microsoft Entra ID from the cloud.
 
 Before you decide whether you want to join a device to an AD DS domain or to Microsoft Entra ID, it’s important to understand the difference between these two concepts. Devices that join an AD DS domain must run a supported operating system version; for example, Home editions of the Windows and Windows RT operating systems don't support joining a domain. Devices that are capable of joining an AD DS domain usually access on-premises applications and services. Devices also can access some cloud resources if you integrate the domain accounts and Microsoft accounts.
 
-Microsoft Entra join allows devices running Windows 10, Windows Server, or later operating systems to join a Microsoft Entra domain. Devices must meet certain requirements, such as having the correct ports open and not being joined to another AD DS domain. Devices running operating systems such as Windows 10 Home, Pro, or Enterprise, Windows Server, macOS, iOS, or Android can register with Microsoft Entra ID. When you register a device with Microsoft Entra ID, it can access cloud-based resources and Azure-based resources by using SSO. From a management perspective, you can use Intune to manage and provision devices that are registered with Microsoft Entra ID. However, you can't manage these devices by using Group Policy. We'll talk more about device registration in the next unit.
+Microsoft Entra join allows All Windows 11 and Windows 10 devices except Home editions, Windows Server 2019 and newer Virtual Machines running in Azure (Server core isn't supported). Devices must meet certain requirements, such as having the correct ports open and not being joined to another AD DS domain. Devices running operating systems such as Windows 10 Home, Pro, or Enterprise, Windows Server, macOS, iOS, or Android can register with Microsoft Entra ID. When you register a device with Microsoft Entra ID, it can access cloud-based resources and Azure-based resources by using SSO. From a management perspective, you can use Intune to manage and provision devices that are registered with Microsoft Entra ID. However, you can't manage these devices by using Group Policy. We'll talk more about device registration in the next unit.
 
 <a name='usage-scenarios-for-azure-ad-join'></a>
 
@@ -38,15 +36,10 @@ Keep in mind that you also need to prepare Microsoft Entra ID so that it can joi
 
 If you have an on-premises Active Directory environment and you want to join your domain-joined devices to Microsoft Entra ID, you can accomplish this by configuring Microsoft Entra hybrid joined devices. Microsoft Entra hybrid join supports a broad range of Windows devices. Because the configuration for devices running older versions of Windows requires additional or different steps, the supported devices are grouped into two categories:
 
-**Windows current devices**
+**Supported Operating Systems**
 
- -  Windows 11 or later
- -  Windows Server 2022 or later
-
-**Windows down-level devices**
-
- -  Windows 10
- -  Windows Server 2019
+ -  Windows 11, Windows 10 or 8.1 except Home editions
+ -  Windows Server 2008/R2, 2012/R2, 2016, 2019 and 2022
 
 As a first planning step, you should review your environment and determine whether you need to support Windows down-level devices. *Microsoft Workplace Join for non-Windows 10 computers*, available on the Microsoft Download Center, must be installed for down-level devices.
 
@@ -61,3 +54,4 @@ You can't use a Microsoft Entra hybrid join if your environment consists of a si
  -  You want to continue to use imaging solutions to configure devices for your employees.
 
 Microsoft Entra hybrid join is a process to automatically register your on-premises domain-joined devices with Microsoft Entra ID. There are cases where you don't want all your devices to register automatically. If this is true for you, you should control the Microsoft Entra hybrid join of your devices.
+

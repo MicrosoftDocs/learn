@@ -9,7 +9,6 @@ metadata:
   author: johnmarco
   ms.author: johnmarc
   ms.topic: unit
-  ms.prod: azure-arc-servers
 durationInMinutes: 10
 content: |
   [!include[](includes/3-report-on-server-metadata.md)]

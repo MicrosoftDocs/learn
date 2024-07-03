@@ -4,7 +4,7 @@ title: Publish to GitHub Packages and GitHub Container Registry
 metadata:
   title: Publish to GitHub Packages and GitHub Container Registry
   description: Discover the basics of using a workflow to publish to GitHub Packages and the necessary steps to build, authenticate, tag, and push a Docker image to the GitHub Container Registry.
-  ms.date: 09/30/2021
+  ms.date: 11/26/2023
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit

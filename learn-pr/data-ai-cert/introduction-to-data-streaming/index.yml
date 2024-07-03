@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/08/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: stream-analytics
 title: Get started with Azure Stream Analytics
 summary: Azure Stream Analytics enables you to process real-time data streams and integrate the data they contain into applications and analytical solutions.
@@ -27,7 +27,7 @@ products:
 - azure
 - azure-stream-analytics
 subjects:
-- serverless-compute
+- serverless-computing
 units:
 - learn.data-ai.introduction-to-data-streaming.introduction
 - learn.data-ai.introduction-to-data-streaming.data-streams

@@ -3,8 +3,8 @@ uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-
 title: Deploy and configure your environment
 metadata:
   title: Deploy and configure your environment
-  description: "Configure your environment for master data management and data governance with Microsoft Purview and CluedIn. Deploy ADLS Gen2 and Azure Data Factory resources to create a full data stack."
-  ms.date: 03/28/2023
+  description: "Configure your environment for master data management and data governance with Microsoft Purview and CluedIn. Deploy Azure Data Lake Storage (ADLS) Gen2 and Azure Data Factory resources to create a full data stack."
+  ms.date: 05/28/2024
   author: whhender
   ms.author: whhender
   ms.topic: unit

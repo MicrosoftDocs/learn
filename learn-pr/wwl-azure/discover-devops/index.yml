@@ -12,14 +12,13 @@ title: Discover DevOps
 summary: Optimize application lifecycle management through DevOps practices such as collaboration, continuous learning, agility, and automation. Your organization benefits from accelerated time to market, stability and reliability in operations, and minimize mean time to recovery.
 abstract: |
   Upon completion of this module, you'll be able to:
-  *   Describe the DevOps approach
-  *   Explore best practices for fostering DevOps culture
-  *   Identify DevOps goals and benefits
-  *   Understand the DevOps application lifecycle
+  *   Describe the DevOps approach.
+  *   Explore best practices for fostering DevOps culture.
+  *   Identify DevOps goals and benefits.
+  *   Understand the DevOps application lifecycle.
 prerequisites: |
   *   Basic familiarity with IT terms and concepts
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
 levels:
   - beginner
 roles:

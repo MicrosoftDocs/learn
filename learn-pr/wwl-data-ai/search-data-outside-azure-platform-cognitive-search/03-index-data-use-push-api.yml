@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.search-data-outside-azure-platform-cognitive-search.index-any-data-using-push-api
-title: Index any data using the Azure Cognitive Search push API
+title: Index any data using the Azure AI Search push API
 metadata:
-  title: Index any data using the Azure Cognitive Search push API
-  description: "Index any data using the Azure Cognitive Search push API"
+  title: Index any data using the Azure AI Search push API
+  description: "Index any data using the Azure AI Search push API"
   ms.date: 09/27/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-  ms.service: cognitive-search
 azureSandbox: false
 labModal: false
 durationInMinutes: 11

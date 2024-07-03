@@ -4,12 +4,12 @@ title: Determine Azure Storage encryption
 metadata:
   title: Determine Azure Storage encryption
   description: "Determine Azure Storage encryption"
-  ms.date: 05/10/2023
+  ms.date: 03/05/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/5-determine-storage-service-encryption.md)]

@@ -3,10 +3,11 @@ uid: learn.startups.fundraising
 metadata:
   title: Fundraising for your startup
   description: Learn how to raise money from investors such as angels and venture capital funds. See practical tips for asking potential investors for funding.
-  ms.date: 01/04/2023
-  author: ryanmesches
-  ms.author: ryanmesches
-  ms.topic: interactive-tutorial
+  ms.date: 06/17/2024
+  author: vhawk85
+  ms.author: vahughes
+  ms.topic: module
+  ms.service: azure
 title: Fundraising for your startup
 summary: >
   This module describes the process of raising money from early-stage investors and gives practical advice on how and when to approach different types of investors, such as angel investors and venture capital funds.

@@ -36,8 +36,6 @@ roles:
 - developer
 products:
 - dotnet
-subjects:
-- development-tools
 units:
 - learn.dotnet-files.1-introduction
 - learn.dotnet-files.2-file-system

@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/22/2022
   author: PageWriter-MSFT
   ms.author: prwilk
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Challenge Project - Design a mission-critical web application
 summary: |
   You'll be given the architecture of an example web workload, its current state, tradeoffs, and business requirements for improvements. You want to make it highly available and resilient using the capabilities of Azure. 

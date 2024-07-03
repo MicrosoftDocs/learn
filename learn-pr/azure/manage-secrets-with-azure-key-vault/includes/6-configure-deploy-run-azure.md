@@ -13,7 +13,7 @@ The *plan* name only needs to be unique within your subscription, so you can use
         --name keyvault-exercise-plan \
         --sku FREE \
         --location centralus \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+        --resource-group "<rgn>[sandbox resource group name]</rgn>"
     ```
 
 1. Next, to create the Web App that uses the App Service plan you created, run the following command. Make sure to replace `<your-unique-app-name>` with your app's name in the `--name` parameter.
@@ -23,7 +23,7 @@ The *plan* name only needs to be unique within your subscription, so you can use
     ```azurecli
     az webapp create \
         --plan keyvault-exercise-plan \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name <your-unique-app-name>
     ```
 
@@ -35,7 +35,7 @@ The *plan* name only needs to be unique within your subscription, so you can use
     az webapp create \
         --plan keyvault-exercise-plan \
         --runtime "node|16LTS" \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name <your-unique-app-name>
     ```
 
@@ -49,7 +49,7 @@ To deploy to Azure, follow the App Service best practice of putting the `VaultNa
 
 ```azurecli
 az webapp config appsettings set \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --name <your-unique-app-name> \
     --settings 'VaultName=<your-unique-vault-name>'
 ```
@@ -62,7 +62,7 @@ To deploy to Azure, follow the App Service best practice of putting the `VaultNa
 
 ```azurecli
 az webapp config appsettings set \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --name <your-unique-app-name> \
     --settings 'VaultName=<your-unique-vault-name>' 'SCM_DO_BUILD_DURING_DEPLOYMENT=true'
 ```
@@ -75,7 +75,7 @@ Enabling managed identity on an app is a one-liner. To enable it on your app, ru
 
 ```azurecli
 az webapp identity assign \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --name <your-unique-app-name>
 ```
 
@@ -107,7 +107,7 @@ az keyvault set-policy \
 
     az webapp deployment source config-zip \
         --src site.zip \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name <your-unique-app-name>
     ```
 
@@ -125,7 +125,7 @@ az keyvault set-policy \
 
     az webapp deployment source config-zip \
         --src site.zip \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name <your-unique-app-name>
     ```
 

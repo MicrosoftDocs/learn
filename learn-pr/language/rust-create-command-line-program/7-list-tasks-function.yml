@@ -3,7 +3,7 @@ uid: learn.language.rust-create-command-line-program.list-tasks-function
 metadata:
   title: Write a function that prints tasks
   description: Write the function that prints tasks in a formatted output.
-  ms.date: 01/26/2021
+  ms.date: 01/21/2022
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: unit

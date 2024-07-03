@@ -3,7 +3,7 @@ uid: learn.language.go-concurrency.1-goroutines
 metadata:
   title: Learn about goroutines
   description: See how Go handles concurrency with goroutines.
-  ms.date: 01/25/2021
+  ms.date: 01/23/2023
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: unit

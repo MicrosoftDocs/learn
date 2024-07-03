@@ -7,7 +7,7 @@ metadata:
   author: patridge
   ms.author: adpatrid
   ms.date: 05/26/2023
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Top 5 security items to consider before pushing to production
 summary: Secure your web applications on Azure and protect your apps against the most common and dangerous web application attacks.
 abstract: | 

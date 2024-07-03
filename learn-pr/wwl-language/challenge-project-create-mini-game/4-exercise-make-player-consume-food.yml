@@ -4,10 +4,12 @@ title: Exercise - Make the player consume food
 metadata:
   title: Exercise - Make the player consume food
   description: "Exercise - Make the player consume food"
-  ms.date: 02/19/2024
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-make-player-consume-food.md)]

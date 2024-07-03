@@ -55,7 +55,7 @@ You've now connected Storage Explorer to your Azure subscription. Leave Storage 
     ```azurecli
     az storage account create \
     --name  mslearn$RANDOM \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --sku Standard_GRS \
     --kind StorageV2
     ```

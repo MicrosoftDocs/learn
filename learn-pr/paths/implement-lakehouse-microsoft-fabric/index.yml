@@ -22,11 +22,10 @@ roles:
 products:
 - fabric
 subjects:
-- data-ai
 - data-analytics
 - data-engineering
 - data-integration
-- data-lake
+- data-storage
 modules:
 - learn.wwl.introduction-end-analytics-use-microsoft-fabric
 - learn.wwl.get-started-lakehouses

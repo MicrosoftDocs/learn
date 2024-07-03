@@ -4,10 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: Summary and resources.
-  ms.date: 02/18/2021
-  author: danterasera
-  ms.author: darasera
-  ms.topic: interactive-tutorial
+  ms.date: 10/20/2023
+  author: aortoll
+  ms.author: anortoll
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]

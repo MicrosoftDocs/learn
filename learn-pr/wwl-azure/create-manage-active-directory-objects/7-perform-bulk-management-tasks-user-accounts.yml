@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-active-directory-objects.perform-bulk-management-tasks-user-accounts
+title: Perform bulk management tasks for user accounts
+metadata:
+  title: Perform bulk management tasks for user accounts
+  description: "Perform bulk management tasks for user accounts"
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-perform-bulk-management-tasks-user-accounts.md)]

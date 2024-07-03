@@ -1,4 +1,3 @@
-
 Learn to implement automatic IP configuration with Dynamic Host Configuration Protocol (DHCP) in Windows Server. 
 
 ## Scenario

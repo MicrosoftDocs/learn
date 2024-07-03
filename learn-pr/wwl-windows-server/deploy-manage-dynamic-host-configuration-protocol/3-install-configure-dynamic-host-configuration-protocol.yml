@@ -4,12 +4,12 @@ title: Install and configure the DHCP role
 metadata:
   title: Install and configure the DHCP role
   description: "Install and configure the DHCP role"
-  ms.date: 10/20/2021
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/3-install-configure-dynamic-host-configuration-protocol.md)]

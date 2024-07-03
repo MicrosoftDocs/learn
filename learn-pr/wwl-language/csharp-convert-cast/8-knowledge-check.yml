@@ -3,8 +3,8 @@ uid: learn.languages.csharp-convert-cast.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 02/21/2024
+  description: "Check what you learn in this module."
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -14,17 +14,17 @@ durationInMinutes: 2
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which technique should be **avoided** when changing a `string` value `4.123456789` into a `decimal`?"
+  - content: "Which technique results in an error when used to convert a `string` value `4.123456789` into a `decimal`?"
     choices:
     - content: "`Convert.ToDecimal()`"
       isCorrect: false
-      explanation: "Incorrect. Using `ToDecimal` is a valid technique."
+      explanation: "Incorrect. Using `ToDecimal` is a valid technique and doesn't result in an error."
     - content: "`decimal.TryParse()`"
       isCorrect: false
-      explanation: "Incorrect. Using `TryParse` is a valid technique."
+      explanation: "Incorrect. Using `TryParse` is a valid technique and doesn't result in an error."
     - content: "`(decimal)`"
       isCorrect: true
-      explanation: "Correct. You can't cast a `string` into a `decimal`."
+      explanation: "Correct. It isn't possible to directly cast a `string` into a `decimal` and results in an error."
   - content: "What type of action is being performed when changing a `float` into an `int`?"
     choices:
     - content: "A narrowing conversion."
@@ -35,4 +35,4 @@ quiz:
       explanation: "Incorrect. Changing a `float` into an `int` isn't a widening conversion because `float` can store more precision data than an `int` can store."
     - content: "An illegal conversion."
       isCorrect: false
-      explanation: "Incorrect. Changing a `float` into an `int` isn't an illegal conversion. You can accomplish this, buy it's with the loss of precision data."
+      explanation: "Incorrect. Changing a `float` into an `int` isn't an illegal conversion. It can be accomplished, but it's with the loss of precision data."

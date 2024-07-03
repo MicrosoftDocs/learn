@@ -33,8 +33,6 @@ roles:
 products:
 - azure
 - azure-app-service
-subjects:
-- development-tools
 modules:
 - learn.django.get-started
 - learn.django.models-data

@@ -4,7 +4,7 @@ title: Best practices for Azure Arc-enabled servers management and services in A
 metadata:
   title: Best practices for Azure Arc-enabled servers management and services in Azure
   description: Overview of how to best leverage Azure services for security, governance, and observability of Azure Arc-enabled servers.
-  ms.date: 09/21/2021
+  ms.date: 03/22/2023
   author: aurnovcy
   ms.author: aurnovc
   ms.topic: unit

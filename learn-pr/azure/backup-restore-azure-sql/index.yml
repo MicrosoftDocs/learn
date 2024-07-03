@@ -29,7 +29,7 @@ products:
 - azure-sql-managed-instance
 - azure-sql-database
 subjects:
-- database
+- databases
 units:
 - learn.backup-restore-azure-sql.1-introduction
 - learn.backup-restore-azure-sql.2-protect-database-with-backup

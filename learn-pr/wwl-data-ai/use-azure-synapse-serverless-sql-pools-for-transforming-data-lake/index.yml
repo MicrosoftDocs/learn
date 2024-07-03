@@ -28,7 +28,7 @@ products:
 - azure-synapse-analytics
 subjects:
 - data-engineering
-- data-lake
+- data-storage
 units:
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.introduction
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.transform-data-with-using-create-external-table-as-select-statement

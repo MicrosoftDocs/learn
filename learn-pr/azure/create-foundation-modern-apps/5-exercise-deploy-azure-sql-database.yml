@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content  
   title: Deploy and configure Azure SQL Database
   description: Perform the steps to deploy and configure your instance of Azure SQL Database.
-  ms.date: 3/15/2023  
+  ms.date: 02/15/2024  
   author: WilliamDAssafMSFT
   ms.author: wiassaf  
   ms.topic: unit

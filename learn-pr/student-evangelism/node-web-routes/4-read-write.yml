@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.node-web-routes.read-write
-title: Read and write
+title: Write data
 metadata:
-  title: Read and write
-  description: This unit explains how to configure Express differently depending on the format of the incoming data.
-  author: clarkio
-  ms.author: chnoring
-  ms.date: 07/12/2021
+  title: Write data
+  description: This unit explains how to send data into Express depending on the incoming request.
+  author: diberry
+  ms.author: diberry
+  ms.date: 01/30/2024
   ms.topic: unit
 durationInMinutes: 3
 content: |

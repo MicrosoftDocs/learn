@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Review and merge Bicep changes by using pull requests
   description: Learn about pull requests, including how to create, review, approve, and merge them.
-  ms.date: 02/28/2023
+  ms.date: 03/06/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit

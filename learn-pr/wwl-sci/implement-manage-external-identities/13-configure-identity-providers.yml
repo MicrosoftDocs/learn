@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/13-configure-identity-providers.md)]

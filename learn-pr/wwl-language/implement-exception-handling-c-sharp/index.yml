@@ -3,23 +3,25 @@ uid: learn.wwl.implement-exception-handling-c-sharp
 metadata:
   title: Implement exception handling in C# console applications
   description: "This module explores the use of exceptions and the exception handling process in C# console applications. Hands-on activities provide experience implementing exception handling patterns for various coding scenarios."
-  ms.date: 01/24/2024
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: dotnet-csharp
   ms.devlang: csharp
 title: Implement exception handling in C# console applications
 summary: Learn about exceptions, the exception handling process supported by C#, and then implement exception handling patterns for various coding scenarios.
 abstract: |
-  *   Examine the basic categories of exceptions and review some common system exceptions.
-  *   Examine the exception handling tools included with C# and techniques for using these tools.
-  *   Implement the `try-catch` pattern within various coding scenarios.
+  -   Examine the basic categories of exceptions and review some common system exceptions.
+  -   Examine the exception handling tools included with C# and techniques for using these tools.
+  -   Implement the `try-catch` pattern within various coding scenarios.
 prerequisites: |
-  - An installation of Visual Studio Code that's configured for C# application development.
-  - Ability to develop C# console applications that implement business logic using iteration statements, selection statements, and custom methods.
-  - A basic understanding of the relationship between errors and exceptions in C#.
-  - Experience using the Visual Studio Code debugging tools for C#.
+  -   An installation of Visual Studio Code that's configured for C# application development.
+  -   Ability to develop C# console applications that implement business logic using iteration statements, selection statements, and custom methods.
+  -   A basic understanding of the relationship between errors and exceptions in C#.
+  -   Experience using the Visual Studio Code debugging tools for C#.
 iconUrl: /training/achievements/implement-exception-handling-c-sharp.svg
 levels:
 - beginner
@@ -32,7 +34,7 @@ products:
 - dotnet
 - vs-code
 subjects:
-- development-tools
+- app-development
 units:
 - learn.wwl.implement-exception-handling-c-sharp.introduction
 - learn.wwl.implement-exception-handling-c-sharp.examine-exceptions-exception-handling-process

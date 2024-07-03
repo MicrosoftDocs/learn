@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-virtual-networks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/12-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A company wants to configure network security as a natural extension of an application's structure. They want to group virtual machines and define network security policies based on those groups. Which Azure feature should they use?"
+    choices:
+    - content: "Network Security Group (NSG)"
+      isCorrect: false
+      explanation: "Incorrect. NSGs are used to filter network traffic to and from Azure resources in an Azure virtual network."
+    - content: "Virtual Network Service Endpoints"
+      isCorrect: false
+      explanation: "Incorrect. Virtual Network Service Endpoints enable you to secure Azure service resources to only your virtual networks."
+    - content: "Application Security Groups (ASGs)"
+      isCorrect: true
+      explanation: "Correct. ASGs enable you to configure network security as a natural extension of an application's structure, allowing you to group virtual machines and define network security policies based on those groups."
+  - content: "A company needs to connect two virtual networks in Azure so that traffic can be routed between them. Which virtual network connection type should they use?"
+    choices:
+    - content: "Virtual network peering"
+      isCorrect: true
+      explanation: "Correct. Virtual network peering connects two Azure virtual networks so that they appear as one for connectivity purposes. Traffic between virtual machines in the peered virtual networks is routed through the Microsoft backbone infrastructure, through private IP addresses only. No public internet is involved. This provides a low latency, high bandwidth connection and is useful in scenarios such as cross-region data replication and database failover."
+    - content: "Global peering"
+      isCorrect: false
+      explanation: "Incorrect. Global peering is used to peer virtual networks across Azure regions, but it does not provide a direct connection between two virtual networks within the same region."
+    - content: "VPN gateway"
+      isCorrect: false
+      explanation: "Incorrect. A VPN gateway is used to send traffic between an Azure virtual network and an on-premises location over the public internet. While it can also be used to send traffic between Azure virtual networks, it is not the most efficient option for connecting two virtual networks within the same region."
+  - content: "A company wants to establish network topologies that combine cross premises connectivity with inter virtual network connectivity. Which Azure feature allows them to do this?"
+    choices:
+    - content: "Azure Virtual Network Gateway"
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual Network Gateway is used to establish secure, cross-premises connectivity between an on-premises network and Azure."
+    - content: "VNet peering"
+      isCorrect: true
+      explanation: "Correct. VNet peering allows the establishment of network topologies that combine cross premises connectivity with inter virtual network connectivity without using a virtual network gateway."
+    - content: "Azure Resource Manager"
+      isCorrect: false
+      explanation: "Incorrect. Azure Resource Manager is a deployment model used to manage resources in Azure."
+  - content: "How does Network Watcher help monitor network security in Azure?"
+    choices:
+    - content: "By providing real-time threat detection and prevention"
+      isCorrect: false
+      explanation: "While Network Watcher offers to monitor capabilities, it doesn't provide real-time threat detection and prevention."
+    - content: "By enabling monitoring of network traffic flow and identifying security rule violations."
+      isCorrect: true
+      explanation: "Network Watcher helps identify and diagnose network issues, including security rule violations, by providing insights into network traffic flow and connectivity."
+    - content: "By encrypting all traffic within Azure virtual networks"
+      isCorrect: false
+      explanation: "Network Watcher focuses on monitoring and diagnostics rather than encryption."
+  - content: "What is the primary purpose of Network Security Groups (NSGs) in Azure Virtual Networks?"
+    choices:
+    - content: "To provide DNS resolution services for virtual networks"
+      isCorrect: false
+      explanation: "Incorrect because NSGs are used to filter network traffic to and from Azure resources in an Azure virtual network, not to provide DNS services."
+    - content: "To filter network traffic to and from Azure resources within an Azure Virtual Network"
+      isCorrect: true
+      explanation: "Correct because NSGs allow or deny network traffic to resources within a virtual network. They can be associated with either subnets or individual VM instances, providing a way to enforce and control access policies at a granular level."
+    - content: "To automate the deployment of virtual machines"
+      isCorrect: false
+      explanation: "Incorrect because NSGs are used for controlling access to resources within a virtual network by permitting or denying network traffic, not for automating deployments."

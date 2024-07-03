@@ -3,7 +3,7 @@ uid: learn.app-service-autoscale-rules
 metadata:
   title: Dynamically meet changing web app performance requirements with autoscale rules
   description: Respond to periods of high activity by incrementally adding resources, and then removing these resources when activity drops, to reduce costs.
-  ms.date: 05/04/2022
+  ms.date: 04/15/2024
   author: cephalin
   ms.author: cephalin
   ms.topic: module
@@ -13,12 +13,12 @@ title: Dynamically meet changing web app performance requirements with autoscale
 summary: Respond to periods of high activity by incrementally adding resources, and then removing these resources when activity drops, to reduce costs.
 abstract: |
   In this module, you will:
-  - Identify scenarios for which autoscaling is an appropriate solution
-  - Create autoscaling rules for a web app
-  - Monitor the effects of autoscaling
+  - Identify scenarios for which autoscaling is an appropriate solution.
+  - Create autoscaling rules for a web app.
+  - Monitor the effects of autoscaling.
 prerequisites: |
   - Experience using the Azure portal to create and manage App Service web apps
-  - Basic familiarity with manually scaling an App Service
+  - Basic familiarity with manually scaling an App Service web app
 iconUrl: /training/achievements/app-service-autoscale-rules.svg
 levels:
 - beginner

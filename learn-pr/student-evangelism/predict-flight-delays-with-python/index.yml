@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/24/2019
   author: JeffProsise
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen, py-fresh-zinc
   ms.service: azure-python
   ms.devlang: python

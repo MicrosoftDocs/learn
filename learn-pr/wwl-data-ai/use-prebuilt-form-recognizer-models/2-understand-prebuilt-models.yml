@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom: devx-track-python
   zone_pivot_groups: dev-lang-csharp-python
 durationInMinutes: 3
 content: |

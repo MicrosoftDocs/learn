@@ -4,9 +4,9 @@ title: Introduction
 metadata:
   title: Introduction
   description: Create Web API routes with Node.js by using JavaScript and Express
-  author: clarkio
-  ms.author: chnoring
-  ms.date: 07/12/2021
+  author: diberry
+  ms.author: diberry
+  ms.date: 01/30/2024
   ms.topic: unit
   ms.custom:
     - devx-track-js

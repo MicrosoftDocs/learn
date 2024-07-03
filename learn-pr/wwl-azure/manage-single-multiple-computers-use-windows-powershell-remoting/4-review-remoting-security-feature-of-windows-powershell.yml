@@ -4,11 +4,12 @@ title: Review the remoting security feature of Windows PowerShell
 metadata:
   title: Review the remoting security feature of Windows PowerShell
   description: "Review the remoting security feature of Windows PowerShell"
-  ms.date: 10/14/2022
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 12

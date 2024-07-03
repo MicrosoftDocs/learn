@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Plan the structure of your Bicep file
   description: Learn how a Bicep file can be structured to make it easy to understand and work with.
-  ms.date: 08/06/2021
+  ms.date: 12/19/2023
   author: mumian
   ms.author: jgao
   ms.topic: unit

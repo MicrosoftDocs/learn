@@ -2,11 +2,12 @@
 uid: learn.wwl.introduction-data-engineering-azure
 metadata:
   title: Introduction to data engineering on Azure
-  description: "This module describes how Microsoft Azure provides a comprehensive platform for data engineering."
+  description: This module describes how Microsoft Azure provides a comprehensive platform for data engineering.
   ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Introduction to data engineering on Azure
 summary: Microsoft Azure provides a comprehensive platform for data engineering; but what is data engineering? Complete this module to find out.
 abstract: |

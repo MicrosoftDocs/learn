@@ -4,7 +4,7 @@ metadata:
   title: Introduction to Terraform
   description: Overview of using Terraform to manage and provision Azure resources
   ms.published: 02/27/2023
-  ms.date: 02/27/2023
+  ms.date: 04/03/2024
   author: TomArcherMsft
   ms.author: tarcher
   ms.topic: unit

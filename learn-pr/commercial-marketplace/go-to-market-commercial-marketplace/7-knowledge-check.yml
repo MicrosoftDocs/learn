@@ -4,7 +4,7 @@ title: Check your knowledge
 metadata:
   title: Check your knowledge
   description: Review of concepts related to going to market through the Microsoft commercial marketplace
-  ms.date: 11/10/2020
+  ms.date: 04/04/2024
   author: marleva
   ms.author: maevan
   ms.topic: unit
@@ -39,7 +39,7 @@ quiz:
       explanation: 'Your offer name should be based on the value your product drives for customers. Your offer name should capture attention because it speaks to the issue your target customers are trying to solve.'
     - content: 'Disable my free software trial or test drive so customers will need to contact me for a product demonstration.'
       isCorrect: false
-      explanation: 'Free trials and test drives help you engage customers in the commercial marketplace. Customers often filter filter for applications that offer trials and test drives so they can test solutions at their own pace.'
+      explanation: 'Free trials and test drives help you engage customers in the commercial marketplace. Customers often filter for applications that offer trials and test drives so they can test solutions at their own pace.'
   - content: 'Which of the following describes Marketplace Rewards program benefits best?'
     choices:
     - content: 'Marketplace Rewards benefits are only unlocked the first time I publish a transact offer to the commercial marketplace.'

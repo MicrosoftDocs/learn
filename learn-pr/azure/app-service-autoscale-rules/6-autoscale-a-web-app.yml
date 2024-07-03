@@ -3,8 +3,8 @@ uid: learn.app-service-autoscale-rules.6-autoscale-a-web-app
 title: Autoscale a web app
 metadata:
   title: Autoscale a web app
-  description: Explain how to use the Azure portal to configure autoscaling for a web app and monitor the results.
-  ms.date: 04/10/2019
+  description: This article explains how to use the Azure portal to configure autoscaling for a web app and monitor the results.
+  ms.date: 04/15/2024
   author: cephalin
   ms.author: cephalin
   ms.topic: unit

@@ -15,15 +15,15 @@ To configure your VIS in the Azure portal:
     :::image type="content" source="../media/select-virtual-instance-sap.png" lightbox="../media/select-virtual-instance-sap.png" alt-text="Screenshot of Azure portal, showing the V I S page in the Azure Center for S A P solutions service with a table of available V I S resources.":::
 
 > [!IMPORTANT]
-> Each VIS resource has a unique Managed Resource Group associated with it. This Resource Group contains resources like Storage Account, Key Vault, etc. which are critical for ACSS to provide capabilities like deployment of infrastructure for a new system, installation of SAP software, registration of existing systems, and all other SAP system management functions. Don't delete this Resource Group or any resources within it. If they are deleted, you will have to re-register the VIS to use any capabilities of ACSS.
+> Each VIS resource has a unique Managed Resource Group associated with it. This Resource Group contains resources like Storage Account, Key Vault, etc. which are critical for ACSS to provide capabilities like deployment of infrastructure for a new system, installation of SAP software, registration of existing systems, and all other SAP system management functions. Don't delete this Resource Group or any resources within it. If they are deleted, you'll have to re-register the VIS to use any capabilities of ACSS.
 
 ## Monitor VIS
 
 To see infrastructure-based metrics for the VIS, open the VIS in the Azure portal. On the **Overview** pane, select the **Monitoring** tab. You can see the following metrics:
 
-- VM utilization by ASCS and Application Server instances. The graph shows CPU usage percentage for all VMs that support the ASCS and Application Server instances.
-- VM utilization by the database instance. The graph shows CPU usage percentage for all VMs that support the database instance.
-- IOPS consumed by the database instance's data disk. The graph shows the percentage of disk utilization by all VMs that support the database instance.
+- Virtual machine utilization by ASCS and Application Server instances. The graph shows CPU usage percentage for all virtual machines that support the ASCS and Application Server instances.
+- Virtual machine utilization by the database instance. The graph shows CPU usage percentage for all virtual machines that support the database instance.
+- IOPS consumed by the database instance's data disk. The graph shows the percentage of disk utilization by all virtual machines that support the database instance.
 
 ## View instance properties
 
@@ -112,7 +112,7 @@ If you get the warning **The operation 'List' is not enabled in this key vault's
 The following scenarios are supported when starting and stopping SAP systems:
 
 - SAP systems that run on Windows and, RHEL and SUSE Linux operating systems.
-- Stopping and starting SAP system or individual instances from the VIS resource only stops or starts the SAP application. The underlying VMs are **not** stopped or started.
+- Stopping and starting SAP system or individual instances from the VIS resource only stops or starts the SAP application. The underlying virtual machines are **not** stopped or started.
 - Stopping a highly available SAP system from the VIS resource gracefully stops the SAP instances in the right order and doesn't result in a failover of Central Services instance.
 - Stopping the HANA database from the VIS resource results in the entire HANA instance to be stopped. If there's HANA MDC with multiple tenant DBs, the entire instance is stopped and not the specific Tenant DB.
 - For highly available (HA) HANA databases, start and stop operations through the VIS resource are supported only when cluster management solution is in place. Any other HANA database HA configurations without a cluster aren't currently supported when starting and stopping using the VIS resource.
@@ -145,7 +145,7 @@ To start an SAP system in the VIS resource:
 1. Search for and select **Azure Center for SAP solutions** in the search bar.
 1. Select **Virtual Instances for SAP solutions** in the sidebar menu.
 1. In the table of VIS resources, select the name of the VIS you want to start.
-1. Select the **Start** button. If you can't select this button, make sure that you've followed the prerequisites for the VMs within your SAP system.
+1. Select the **Start** button. If you can't select this button, make sure that you've followed the prerequisites for the virtual machines within your SAP system.
 
     :::image type="content" source="../media/start-button.png" lightbox="../media/start-button.png" alt-text="Screenshot of the V I S resource menu in the Azure portal, showing the Start button.":::
 
@@ -176,7 +176,7 @@ As developer wants to set up monitoring for a Virtual Instance for SAP solutions
 
     :::image type="content" source="../media/virtual-instance-sap-overview.png" lightbox="../media/virtual-instance-sap-overview.png" alt-text="Screenshot of the V I S resource overview in the Azure portal, showing health and status information and the Properties tab highlighted.":::
 
-1. On the properties page for the VIS, review the **SAP status** section to see the health of SAP instances. Review the **Virtual machines** section to see the health of VMs inside the VIS.
+1. On the properties page for the VIS, review the **SAP status** section to see the health of SAP instances. Review the **Virtual machines** section to see the health of virtual machines inside the VIS.
 
     :::image type="content" source="../media/properties-tab.png" lightbox="../media/properties-tab.png" alt-text="Screenshot of the Properties tab for the V I S resource overview, showing the S A P status and Virtual machines details.":::
 

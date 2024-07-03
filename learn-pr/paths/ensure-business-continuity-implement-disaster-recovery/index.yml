@@ -22,7 +22,7 @@ roles:
 products:
 - azure
 subjects:
-- business-continuity
+- site-reliability-engineering
 modules:
 - learn.wwl.implement-high-availability-for-sap-workloads-azure
 - learn.wwl.implement-disaster-recovery-for-sap-workloads-azure

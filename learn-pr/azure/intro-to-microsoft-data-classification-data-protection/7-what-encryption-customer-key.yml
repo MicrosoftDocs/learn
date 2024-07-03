@@ -4,7 +4,7 @@ title: Service encryption and Customer Key
 metadata:
   title: Service encryption and Customer Key
   description: Learn about Microsoft encryption tools for data at rest, including BitLocker and DKM, service encryption, and Microsoft Purview Customer Key.
-  ms.date: 03/25/2021
+  ms.date: 08/08/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: unit

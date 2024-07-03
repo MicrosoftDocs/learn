@@ -3,7 +3,7 @@ uid: learn.language.go-concurrency.3-buffered-channels
 metadata:
   title: Learn about buffered channels
   description: Understand how buffered channels behave like a queue and send and receive data without blocking a program.
-  ms.date: 01/25/2021
+  ms.date: 01/23/2023
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: unit

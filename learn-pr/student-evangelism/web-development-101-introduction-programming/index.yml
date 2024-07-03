@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/24/2021
   author: chloecodesthings
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: Introduction to programming
 summary: Learn about programming languages and the tools that developers use to create software.
@@ -24,8 +24,6 @@ roles:
 - student
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.student-evangelism.web-development-101.introduction-to-programming.introduction
 - learn.student-evangelism.web-development-101.introduction-to-programming.what-is-programming

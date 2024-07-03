@@ -3,14 +3,12 @@ uid: learn.advocates.azure-functions-and-signalr.7-exercise-host-a-static-websit
 metadata:
   title: Exercise - Use a storage account to host a static website
   description: Customize your storage account, publish your function app and view your application hosted in the cloud.
-  ms.date: 05/31/2019
+  ms.date: 03/27/2024
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: unit
   ms.custom: vscode-azure-extension-update-completed
 title: Exercise - Use a storage account to host a static website
-interactive: bash
-azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/7-exercise-host-a-static-website-using-a-storage-account.md)]

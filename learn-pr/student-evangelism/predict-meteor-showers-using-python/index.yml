@@ -6,7 +6,7 @@ metadata:
   ms.date: 04/20/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: vs-code
   ms.custom: team=nextgen, py-fresh-zinc
 title: Predict meteor showers by using Python and Visual Studio Code
@@ -32,7 +32,6 @@ roles:
 products:
 - vs-code
 subjects:
-- development-tools
 - data-analytics
 units:
 - learn.student-evangelism.predict-meteor-showers-using-python.1-introduction

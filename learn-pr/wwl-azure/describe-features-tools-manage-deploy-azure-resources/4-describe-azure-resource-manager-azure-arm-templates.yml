@@ -4,12 +4,11 @@ title: Describe Azure Resource Manager and Azure ARM templates
 metadata:
   title: Describe Azure Resource Manager and Azure ARM templates
   description: "Describe Azure Resource Manager and Azure ARM templates"
-  ms.date: 02/05/2024
+  ms.date: 03/15/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
-  ms.custom:
-  - ai-video-concept
+  ms.custom: ai-video-concept, devx-track-arm-template
 durationInMinutes: 8
 content: |
   [!include[](includes/4-describe-azure-resource-manager-azure-arm-templates.md)]

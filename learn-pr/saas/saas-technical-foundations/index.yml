@@ -6,7 +6,7 @@ metadata:
   ms.date: 2/9/2024               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: kostinams        # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: irkostin             # Alias     of the Microsoft employee either authoring or project-managing this content
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: architecture-center
 
 title: Technical foundations of SaaS

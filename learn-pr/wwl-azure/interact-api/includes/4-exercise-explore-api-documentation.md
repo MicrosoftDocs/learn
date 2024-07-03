@@ -2,7 +2,7 @@ In this exercise, you run an ASP.NET Core minimal API locally and explore the AP
 
 <br/>
 
-<a href="https://microsoftlearning.github.io/APL-2002-develop-aspnet-core-consumes-api/Instructions/Labs/01-interact-with-an-api.html" target="_blank">
+<a href="https://go.microsoft.com/fwlink/?linkid=2261091" target="_blank">
     <img src="../media/launch-exercise.png" alt="Button to launch exercise.">
 </a>
 

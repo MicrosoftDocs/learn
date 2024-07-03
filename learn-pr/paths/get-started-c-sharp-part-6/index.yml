@@ -59,8 +59,6 @@ roles:
 products:
 - dotnet
 - vs-code
-subjects:
-- development-tools
 modules:
 - learn.wwl.review-principles-code-debugging-exception-handling-c-sharp
 - learn.wwl.implement-visual-studio-code-debugging-tools

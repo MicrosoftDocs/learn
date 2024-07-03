@@ -2,14 +2,14 @@
 uid: learn.wwl.manage-enterprise-security-in-hdinsight
 metadata:
   title: Manage enterprise security in HDInsight
-  description: "Manage enterprise security in HDInsight"
-  ms.date: 01/05/2022
+  description: "Learn how to manage enterprise security in HDInsight."
+  ms.date: 04/07/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: module
   ms.service: hdinsight
 title: Manage enterprise security in HDInsight
-summary: Azure HDInsight in conjunction with other Azure services provides a comprehensive multi-tiered security solution and is a shared responsibility between Microsoft and the customer.
+summary: Azure HDInsight with other Azure services provide a comprehensive multi-tiered security solution and is a shared responsibility between Microsoft and the customer.
 abstract: |
   1. Introduction
   2. Describe HDInsight security areas
@@ -20,11 +20,11 @@ abstract: |
   7. Knowledge Check
   8. Summary
 prerequisites: |
-  The following pre-requisite should be completed:
-  -  Successfully login to the Azure portal
-  - Understand the Azure storage options
-  - Understand the Azure compute options
-  - Create and configure a HDInsight Cluster in the Azure portal
+  The following prerequisite should be completed:
+  - Successfully log in to the Azure portal.
+  - Understand the Azure storage options.
+  - Understand the Azure compute options.
+  - Create and configure a HDInsight Cluster in the Azure portal.
 iconUrl: /training/achievements/manage-enterprise-security-in-hdinsight.svg
 levels:
 - intermediate

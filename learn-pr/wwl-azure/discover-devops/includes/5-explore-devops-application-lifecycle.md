@@ -4,7 +4,7 @@ While DevOps practices have a vast scope, their primary target is optimizing app
 
 Application lifecycle phases include planning, development, delivery, and operations.
 
-:::image type="content" source="../media/5-devops-lifecycle.png" alt-text="Screenshot of the DevOps and Application Lifecycle":::
+:::image type="content" source="../media/5-devops-lifecycle.png" alt-text="Screenshot of the DevOps and Application Lifecycle.":::
 
 ### Planning
 

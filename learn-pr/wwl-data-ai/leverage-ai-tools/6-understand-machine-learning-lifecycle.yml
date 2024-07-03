@@ -4,10 +4,12 @@ title: Understand the machine learning lifecycle
 metadata:
   title: Understand the machine learning lifecycle
   description: "Understand the machine learning lifecycle"
-  ms.date: 01/09/2024
+  ms.date: 04/08/2024
   author: Adriamen
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/6-understand-machine-learning-lifecycle.md)]

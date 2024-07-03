@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 04/28/2022
+  ms.date: 04/03/2024
   author: v-tcassi
   ms.author: tomcassidy
   ms.topic: unit
@@ -25,13 +25,16 @@ quiz:
       isCorrect: false
       explanation: "The restart policy **Always** will ensure needed processes continue to be available even if a restart is required."
 
-  - content: "True or false: By default, you can see the values of an environment variable in the Azure portal and the Azure CLI output."
+  - content: "By default, you can see the values of an environment variable in:"
     choices:
-    - content: "True"
-      isCorrect: true
-      explanation: "Environment variables are not secured by default and their values can be seen in the Azure portal and the Azure CLI output."
-    - content: "False"
+    - content: "Only the Azure portal."
       isCorrect: false
+      explanation: "Environment variables are not secured by default and their values can be seen in the Azure portal and the Azure CLI output."
+    - content: "Only the Azure CLI output."
+      isCorrect: false
+      explanation: "Environment variables are not secured by default and their values can be seen in the Azure portal and the Azure CLI output."
+    - content: "Both the Azure portal and the Azure CLI output."
+      isCorrect: true
       explanation: "Environment variables are not secured by default and their values can be seen in the Azure portal and the Azure CLI output."
 
   - content: "Which troubleshooting command can be used to view container startup events?"

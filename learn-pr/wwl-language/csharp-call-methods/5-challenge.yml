@@ -4,10 +4,12 @@ title: Exercise - Complete a challenge activity to discover and implement a meth
 metadata:
   title: Exercise - Complete a challenge activity to discover and implement a method call
   description: "Exercise - Complete a challenge activity to discover and implement a method call"
-  ms.date: 02/21/2024
+  ms.date: 06/05/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/5-challenge.md)]

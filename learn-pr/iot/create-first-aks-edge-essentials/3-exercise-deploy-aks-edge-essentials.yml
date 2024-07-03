@@ -10,6 +10,7 @@ metadata:
   author: asergaz
   ms.author: sergaz
   ms.topic: unit
+  ms.custom: devx-track-azurecli
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-deploy-aks-edge-essentials.md)]

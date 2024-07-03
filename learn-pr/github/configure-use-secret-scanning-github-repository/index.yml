@@ -2,18 +2,19 @@
 uid: learn.github.configure-and-use-secret-scanning-in-your-github-repository
 metadata:
   title: Configure and use secret scanning in your GitHub repository
-  description: Understand how secret scanning works to configure and use it efficiently.
-  ms.date: 11/25/2021
+  description: On completing this module, you'll understand how secret scanning works to configure and use it efficiently.
+  ms.date: 04/30/2024
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: github
 title: Configure and use secret scanning in your GitHub repository
 summary: Understand how secret scanning works to configure and use it efficiently.
 abstract: |
-  By the end of this module, you will be able to:
-  - Describe secret scanning
-  - Configure secret scanning
-  - Use secret scanning
+  By the end of this module, you'll be able to:
+  - Describe secret scanning.
+  - Configure secret scanning.
+  - Use secret scanning.
 prerequisites: |
  - A GitHub enterprise account with a GitHub Advanced Security license
  - Repository administrator or organization owner permissions

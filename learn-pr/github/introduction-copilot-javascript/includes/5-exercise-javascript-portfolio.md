@@ -31,7 +31,7 @@ const siteProps = {
 
 ## Animate your social media icons with a prompt
 
-An animation can make the social media section more eye-catching. Ask Copilot’s help to animate the icons. Write the following prompt in the `src/styles.css` file:
+An animation can make the social media section more eye-catching. Ask Copilot’s help to animate the icons. You can use GitHub Copilot Chat to ask Copilot or write the following prompt comment in the `src/styles.css` file:
 
 ```css
 /* add an amazing animation to the social icons */

@@ -3,7 +3,7 @@ uid: learn.azure-sql-high-availability.3-exercise-restore-point-in-time
 metadata:
   title: Exercise - Restore to a point in time
   description: Restore to a point in time
-  ms.date: 03/15/2023
+  ms.date: 11/29/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   ms.topic: unit

@@ -7,9 +7,7 @@ metadata:
   ms.date: 01/03/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.service: microsoft-365-security
-  ms.subservice: m365d
+  ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 5

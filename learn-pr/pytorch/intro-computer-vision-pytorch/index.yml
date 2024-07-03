@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/04/2020
   author: shwars
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-ai-vision
   ms.custom: team=nextgen
 title: Introduction to Computer Vision with PyTorch 

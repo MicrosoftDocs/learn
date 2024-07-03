@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/01/2021
   author: leestott
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.service: iot-edge
 title: "Void detection on Edge devices with Live Video Analytics using own images and video"

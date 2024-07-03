@@ -4,10 +4,12 @@ title: Select a set of objects in the pipeline
 metadata:
   title: Select a set of objects in the pipeline
   description: "Select a set of objects in the pipeline"
-  ms.date: 01/29/2024
+  ms.date: 05/30/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/4-select-set-of-objects-pipeline.md)]

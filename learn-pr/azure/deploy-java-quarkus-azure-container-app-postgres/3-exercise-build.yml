@@ -3,8 +3,8 @@ uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres.3-exercise-bui
 title: Exercise - Create a Quarkus application
 metadata:
   title: Exercise - Create a Quarkus application
-  description: In this exercise, follow the steps to bootstrap a Quarkus application, develop it, test it, and execute it locally.
-  ms.date: 01/02/2023
+  description: In this exercise, you bootstrap a Quarkus application, develop it, test it, and run it locally.
+  ms.date: 02/14/2024
   author: agoncal
   ms.author: antoniomanug
   ms.topic: unit

@@ -4,12 +4,12 @@ title: Select and set up VPNs
 metadata:
   title: Select and set up VPNs
   description: "Select and set up VPNs"
-  ms.date: 03/14/2022
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/3-set-up-vpns.md)]

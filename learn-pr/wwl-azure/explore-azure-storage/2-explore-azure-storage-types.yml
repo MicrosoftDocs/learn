@@ -3,8 +3,8 @@ uid: learn.wwl.explore-azure-storage.types
 title: Explore Azure Storage types
 metadata:
   title: Explore Azure Storage types
-  description: "Explore Azure Storage types"
-  ms.date: 10/17/2023
+  description: "Explore the different Azure Storage types, including blobs, tables, queues, and files."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

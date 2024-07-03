@@ -1,13 +1,15 @@
-In this exercise, you deploy your company's back end messaging service as a test app onto Azure Kubernetes Service (AKS). The service connects to the Redis PaaS service you created in the previous exercise.
+In this exercise, you'll deploy your company's back-end messaging service as a test app onto Azure Kubernetes Service (AKS). The service connects to the Redis PaaS service you created in the previous exercise.
 
 > [!NOTE]
 > The code for the service is available in the [GitHub repository](https://github.com/Azure-Samples/mslearn-aks-app-scaling-keda).
 
 ## Create a list in Redis
 
-You need to create a list in Redis and populate it with some random elements to simulate a queue receiving data. Each item in the queue represents something that the microservice will process. For this exercise, you add a static number of items. Later in the exercise, you scale the microservice to the number of items in the queue.
+You need to create a list in Redis and populate it with some random elements to simulate a queue receiving data. Each item in the queue represents something that the microservice will process. For this exercise, you'll add a static number of items. Later in the exercise, you'll scale the microservice to the number of items in the queue.
 
-1. Create a Redis container locally to connect to your Azure Cache for Redis using the `docker run` command.
+1. Make sure Docker is running on your computer.
+
+1. Create a Redis container locally to connect to your Azure Cache for Redis using the `docker run` command:
 
     ```azurecli-interactive
     docker run -it --rm redis redis-cli -h $REDIS_HOST -a $REDIS_KEY
@@ -19,19 +21,19 @@ You need to create a list in Redis and populate it with some random elements to 
     redis-contoso-video.redis.cache.windows.net:6379>
     ```
 
-2. Create a list and populate it with random elements using the `lpush keda` command.
+1. Create a list and populate it with random elements using the `lpush keda` command:
 
     ```azurecli-interactive
     lpush keda Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum felis, ac ultricies nulla. Fusce vehicula mattis laoreet. Quisque facilisis bibendum dui, at scelerisque nulla hendrerit sed. Sed rutrum augue arcu, id maximus felis sollicitudin eget. Curabitur non libero rhoncus, pellentesque orci a, tincidunt sapien. Suspendisse laoreet vulputate sagittis. Vivamus ac magna lacus. Etiam sagittis facilisis dictum. Phasellus faucibus sagittis libero, ac semper lorem commodo in. Quisque tortor lorem, sollicitudin non odio sit amet, finibus molestie eros. Proin aliquam laoreet eros, sed dapibus tortor euismod quis. Maecenas sed viverra sem, at porta sapien. Sed sollicitudin arcu leo, vitae elementum
     ```
 
-3. Verify the length of the list using the `llen keda` command.
+1. Verify the length of the list using the `llen keda` command:
 
     ```azurecli-interactive
     llen keda
     ```
 
-4. Exit the Redis shell by typing `exit`.
+1. Exit the Redis shell by typing `exit`.
 
 ## Create a Deployment manifest
 
@@ -39,7 +41,7 @@ You create a Deployment manifest file to deploy your application. The manifest f
 
 Kubernetes groups containers into logical structures called pods, which have no intelligence. Deployments add the missing intelligence to create your application.
 
-1. In Cloud Shell, create a manifest file for the Kubernetes Deployment called `deployment.yaml` using the `touch` command.
+1. In Cloud Shell, create a manifest file for the Kubernetes Deployment called `deployment.yaml` using the `touch` command:
 
     ```azurecli-interactive
     touch deployment.yaml
@@ -85,11 +87,11 @@ Kubernetes groups containers into logical structures called pods, which have no 
                   value: "******************************************"  # *** REPLACE with your value ***
     ```
 
-4. Save the manifest file and close the editor.
+4. Save the manifest file (<kbd>CTRL + S</kbd>) and close the editor(<kbd>CTRL + Q</kbd>).
 
 ## Apply the manifest
 
-1. Deploy the manifest to your cluster using the `kubectl apply` command.
+1. Deploy the manifest to your cluster using the `kubectl apply` command:
 
     ```azurecli-interactive
     kubectl apply -f ./deployment.yaml
@@ -101,7 +103,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
     deployment.apps/contoso-microservice created
     ```
 
-2. Verify the deployment was successful using the `kubectl get deployment` command.
+2. Verify the deployment was successful using the `kubectl get deployment` command:
 
     ```azurecli-interactive
     kubectl get deployment contoso-microservice
@@ -114,7 +116,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
     contoso-microservice   1/1     1            0           16s
     ```
 
-3. Verify the pod is running using the `kubectl get pods` command.
+3. Verify the pod is running using the `kubectl get pods` command:
 
     ```azurecli-interactive
     kubectl get pods

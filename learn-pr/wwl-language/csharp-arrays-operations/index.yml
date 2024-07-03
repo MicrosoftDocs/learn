@@ -3,24 +3,34 @@ uid: learn.languages.csharp-arrays-operations
 metadata:
   title: Perform operations on arrays using helper methods in C#
   description: "Use C# helper methods to perform reverse, resize, split and join operations on arrays."
-  ms.date: 02/21/2024
+  ms.date: 03/27/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.service: azure
+  ms.custom:
+  - N/A
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
   ms.devlang: csharp
+  ai-usage: ai-assisted
 title: Perform operations on arrays using helper methods in C#
 summary: Use powerful helper methods to manipulate and control the content of arrays.
 abstract: |
-  -   Sort and reverse the order of array elements.
-  -   Clear and resize the elements of an array.
-  -   Split a string into an array of strings or characters (`chars`).
-  -   Join array elements into a `string`.
+  - Sort and reverse the order of array elements.
+
+  - Clear and resize the elements of an array.
+
+  - Split a string into an array of strings or characters (chars).
+
+  - Join array elements into a string.
 prerequisites: |
-  -   Introductory level experience with arrays
-  -   Introductory level experience with the `if` statement
-  -   Introductory level experience with built-in methods on data types (like `string`)
-  -   Experience using Visual Studio Code to develop, build, and run C# code
+  - Introductory level experience with arrays
+
+  - Introductory level experience with the if statement
+
+  - Introductory level experience with built-in methods on data types (like string)
+
+  - Experience using Visual Studio Code to develop, build, and run C# code
 iconUrl: /training/achievements/csharp-arrays-operations.svg
 levels:
 - beginner

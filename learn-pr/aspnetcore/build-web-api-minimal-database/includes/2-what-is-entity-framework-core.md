@@ -81,8 +81,8 @@ if (pizza is null)
 {
     //Handle error
 }
-pizza.Item = updatepizza.Item;
-pizza.IsComplete = updatepizza.IsComplete;
+pizza.Desription = updatepizza.Description;
+pizza.Name = updatepizza.Name;
 await db.SaveChangesAsync();
 ```
 

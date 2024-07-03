@@ -3,12 +3,11 @@ uid: learn.azure.intro-to-data-science-virtual-machine.exercise-preinstalled-too
 metadata:
   title: Exercise - Use the preinstalled tools
   description: Learn how to use the preinstalled tools in the Data Science Virtual Machine to perform data science.
-  ms.date: 06/02/2023
+  ms.date: 04/09/2024
   author: jesscioffi
   ms.author: jcioffi
   ms.reviewer: franksolomon 
   ms.topic: unit
-  ms.service: machine-learning
   ms.custom:
     - devx-track-python
 azureSandbox: true

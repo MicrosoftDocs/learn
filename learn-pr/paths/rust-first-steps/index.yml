@@ -30,8 +30,6 @@ roles:
 - student
 products:
 - azure
-subjects:
-- development-tools
 modules:
 - learn.language.rust-introduction
 - learn.language.rust-set-up-environment

@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/30/2021
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: Learn the basics of web accessibility
 summary: There are various tools and reports at your disposal that can highlight issues that need to be addressed. There are also standards like ARIA tags that will make your app usable by all. 

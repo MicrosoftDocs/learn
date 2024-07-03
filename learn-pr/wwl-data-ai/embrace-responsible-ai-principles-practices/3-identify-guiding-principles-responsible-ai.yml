@@ -4,10 +4,12 @@ title: Identify guiding principles for responsible AI
 metadata:
   title: Identify guiding principles for responsible AI
   description: "Identify guiding principles for responsible AI"
-  ms.date: 11/30/2023
+  ms.date: 06/25/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 12
 content: |
   [!include[](includes/3-identify-guiding-principles-responsible-ai.md)]

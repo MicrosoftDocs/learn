@@ -4,7 +4,7 @@ title: Continuously monitor applications and services
 metadata:
   title: Continuously monitor applications and services
   description: Learn how continuous monitoring Azure Monitor and Application Insights helps you validate the health, performance, and reliability of your application and infrastructure. Also, how IT Service Management Connector can help you implement a ticketing system.
-  ms.date: 12/20/2019
+  ms.date: 07/21/2023
   author: tpetchel
   ms.author: thpetche
   ms.topic: unit

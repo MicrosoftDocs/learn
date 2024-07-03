@@ -1,4 +1,4 @@
-*Vector search* is a new capability available in Cognitive Search used to index, store and retrieve vector embedding from a search index. You can use it to power applications implementing the Retrieval Augmented Generation (RAG) architecture, similarity and multi-modal searches or recommendation engines.
+*Vector search* is a new capability available in AI Search used to index, store and retrieve vector embedding from a search index. You can use it to power applications implementing the Retrieval Augmented Generation (RAG) architecture, similarity and multi-modal searches or recommendation engines.
 
 Below is an illustration of the indexing and query workflows for vector search.
 
@@ -21,9 +21,9 @@ Here are some scenarios where you should use vector search:
 
 There are a few limitations when using vector search, which you should note:
 
-- You'll need to provide the embeddings using Azure OpenAI or a similar open source solution, as Azure Cognitive Search doesn't generate these for your content.
+- You'll need to provide the embeddings using Azure OpenAI or a similar open source solution, as Azure AI Search doesn't generate these for your content.
 - Customer Managed Keys (CMK) aren't supported.
 - There are storage limitations applicable so you should check what your service quota provides.
 
 > [!NOTE]
-> If your documents are large, you consider chunking. Use the [Chunking large documents for vector search solutions in Cognitive Search](/azure/search/vector-search-how-to-chunk-documents) documentation for more information.
+> If your documents are large, you consider chunking. Use the [Chunking large documents for vector search solutions in AI Search](/azure/search/vector-search-how-to-chunk-documents) documentation for more information.

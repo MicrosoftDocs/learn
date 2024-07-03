@@ -4,12 +4,12 @@ title: Review Azure Storage security strategies
 metadata:
   title: Review Azure Storage security strategies
   description: "Review Azure Storage security strategies"
-  ms.date: 05/10/2023
+  ms.date: 03/05/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/2-review-strategies.md)]

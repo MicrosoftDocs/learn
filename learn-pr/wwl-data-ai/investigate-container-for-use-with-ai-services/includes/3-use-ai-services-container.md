@@ -23,10 +23,11 @@ For the AI Language service, the core features map to separate images:
 |---|---|
 | Key Phrase Extraction | mcr.microsoft.com/azure-cognitive-services/textanalytics/keyphrase |
 | Language Detection | mcr.microsoft.com/azure-cognitive-services/textanalytics/language |
-| Sentiment Analysis v3 (English) |	mcr.microsoft.com/azure-cognitive-services/textanalytics/sentiment:3.0-en |
-| Text Language Detection | mcr.microsoft.com/product/azure-cognitive-services/textanalytics/language/about |
+| Sentiment Analysis |	mcr.microsoft.com/azure-cognitive-services/textanalytics/sentiment |
+| Named Entity Recognition | mcr.microsoft.com/product/azure-cognitive-services/textanalytics/language/about |
 | Text Analytics for health | mcr.microsoft.com/product/azure-cognitive-services/textanalytics/healthcare/about |
 | Translator | mcr.microsoft.com/product/azure-cognitive-services/translator/text-translation/about |
+| Summarization | mcr.microsoft.com/azure-cognitive-services/textanalytics/summarization |
 
 > [!NOTE]
 > Sentiment Analysis supports other languages by replacing the *en* in the image with the correct language code
@@ -46,12 +47,6 @@ For the AI Language service, the core features map to separate images:
 |---|---|
 | Read OCR | mcr.microsoft.com/product/azure-cognitive-services/vision/read/about |
 | Spatial analysis | mcr.microsoft.com/product/azure-cognitive-services/vision/spatial-analysis/about |
-
-### Decision containers
-
-| Feature | Image |
-|---|---|
-| Anomaly Detector | mcr.microsoft.com/product/azure-cognitive-services/decision/anomaly-detector/about |
 
 You can use the Docker *pull* command to download container images to work with them directly from your machine. Some of the containers are in a "Gated" public preview state, and you need to explicitly request access to use them. Otherwise the containers are available for anyone to use with their Azure AI services deployment.
 

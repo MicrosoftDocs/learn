@@ -4,79 +4,70 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/13/2024
+  ms.date: 06/25/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What does Azure DDoS Protection do to provide tailored protection policies for each customer?"
+  - content: "What is the purpose of implementing Transport Layer Security (TLS) in Azure applications?"
     choices:
-    - content: "It applies the same mitigation policies for all customers."
+    - content: "To increase the storage capacity of Azure Blob Storage."
       isCorrect: false
-      explanation: "Incorrect. This wouldn't provide tailored protection policies for each customer."
-    - content: "It relies on customers to configure their own protection policies."
+      explanation: "TLS focuses on security measures, specifically on encrypting data in transit to enhance communications security, not on expanding storage capabilities."
+    - content: "To decrease the loading time of web applications."
       isCorrect: false
-      explanation: "Incorrect. This wouldn't provide tailored protection policies for each customer."
-    - content: "It automatically learns per customer per Public IP traffic patterns for Layer 3 and 4."
+      explanation: "While performance is crucial, TLS primarily secures data transmission, not directly improving loading times."
+    - content: "To secure communications between clients and servers by encrypting data in transit."
       isCorrect: true
-      explanation: "Correct. Azure DDoS Protection uses automatic learning of per customer per Public IP traffic patterns for Layer 3 and 4 to provide tailored protection policies for each customer."
-  - content: "A company wants to ensure the security of their web applications from common exploits and vulnerabilities. Which of the following solutions can help them achieve this?"
+      explanation: "TLS provides encryption for data in transit, enhancing the security of communications between clients and servers, making it essential for protecting sensitive information."
+  - content: "How does Azure Firewall contribute to the security of Azure resources?"
     choices:
-    - content: "Securing each individual web application separately"
+    - content: "By providing physical security controls for Azure data centers."
       isCorrect: false
-      explanation: "Incorrect. This approach can be time-consuming and may not provide centralized protection against common exploits and vulnerabilities."
-    - content: "Deploying multiple layers of security within the application code"
-      isCorrect: false
-      explanation: "Incorrect. This approach can be challenging and require rigorous maintenance, patching, and monitoring at multiple layers of the application topology."
-    - content: "Deploying a centralized Web Application Firewall (WAF)"
+      explanation: "Azure Firewall is a network security service that manages and logs network traffic, not a measure for physical security."
+    - content: "By managing and logging all inbound and outbound network traffic according to firewall policies."
       isCorrect: true
-      explanation: "Correct. A WAF provides centralized protection of web applications from common exploits and vulnerabilities, making security management simpler and giving application administrators better assurance of protection against threats and intrusions."
-  - content: "A company wants to improve the performance and security of their web applications for their global users. They want to use a cloud Content Delivery Network (CDN) that can provide fast, reliable, and secure access between their users and their applications. Which Microsoft service can they use to achieve this?"
+      explanation: "Azure Firewall centralizes the management of network traffic rules, providing enhanced logging and threat intelligence for inbound and outbound traffic."
+    - content: "By automatically upgrading software applications to the latest version."
+      isCorrect: false
+      explanation: "Software updates are important but fall outside Azure Firewall's scope, which focuses on network traffic management."
+  - content: "What is the primary function of Azure Application Gateway?"
     choices:
-    - content: "Azure Traffic Manager"
-      isCorrect: false
-      explanation: "Incorrect. Azure Traffic Manager is a DNS-based traffic load balancer that enables users to distribute traffic optimally to services across global Azure regions."
-    - content: "Azure Virtual Network"
-      isCorrect: false
-      explanation: "Incorrect. Azure Virtual Network is a service that allows users to create and manage virtual private networks (VPNs) in Azure."
-    - content: "Azure Front Door"
+    - content: "To provide application-level routing and load balancing services."
       isCorrect: true
-      explanation: "Correct. Azure Front Door is Microsoft's modern cloud Content Delivery Network (CDN) that provides fast, reliable, and secure access between users and applications' static and dynamic web content across the globe. It delivers content using Microsoft's global edge network with hundreds of global and local points of presence (PoPs) distributed around the world close to both enterprise and consumer end-users."
-  - content: "A company wants to protect their Azure resources from DDoS attacks. Which Azure DDoS Protection tier should they choose if they want to pay per protected IP and receive additional value-added services such as rapid response support, cost protection, and discounts on WAF?"
+      explanation: "Azure Application Gateway offers advanced routing and load balancing, optimizing web traffic delivery and increasing application security."
+    - content: "To offer dedicated virtual machine hosting services."
+      isCorrect: false
+      explanation: "Application Gateway focuses on managing web traffic, not on providing hosting services."
+    - content: "To act as a distributed denial-of-service (DDoS) protection service."
+      isCorrect: false
+      explanation: "While DDoS protection is crucial, Application Gateway's main role is in routing and load balancing, not direct DDoS mitigation."
+  - content: "Which Azure service provides protection against Distributed Denial of Service (DDoS) attacks?"
     choices:
-    - content: "DDoS Protection Key Features"
+    - content: "Azure Application Gateway."
       isCorrect: false
-      explanation: "Incorrect. DDoS Protection Key Features provides always-on traffic monitoring, adaptive real-time tuning, and DDoS protection analytics, metrics, and alerting, but it doesn't offer additional value-added services such as rapid response support, cost protection, and discounts on WAF."
-    - content: "DDoS Network Protection"
-      isCorrect: false
-      explanation: "Incorrect. DDoS Network Protection is automatically tuned to help protect specific Azure resources in a virtual network, but it doesn't offer additional value-added services such as rapid response support, cost protection, and discounts on WAF."
-    - content: "DDoS IP Protection"
+      explanation: "Incorrect because Azure Application Gateway primarily offers application delivery control, not DDoS protection."
+    - content: "Azure DDoS Protection."
       isCorrect: true
-      explanation: "Correct. DDoS IP Protection is a pay-per-protected-IP model that offers the same core engineering features as DDoS Network Protection, but with additional value-added services such as rapid response support, cost protection, and discounts on WAF."
-  - content: "A company wants to protect their Azure resources from DDoS attacks. Which Azure DDoS Protection tier should they choose if they want to pay per protected IP and receive additional value-added services such as rapid response support, cost protection, and discounts on WAF?"
+      explanation: "Correct because Azure DDoS Protection offers enhanced DDoS mitigation features to protect Azure resources from DDoS attacks."
+    - content: "Azure Blob Storage."
+      isCorrect: false
+      explanation: "Incorrect because Azure Blob Storage is a service for storing large amounts of unstructured object data, such as text or binary data, and is not related to DDoS protection."
+  - content: "Why integrate a Web Application Firewall (WAF) with Azure services?"
     choices:
-    - content: "DDoS Protection Key Features"
+    - content: "To automate the deployment of new virtual machines."
       isCorrect: false
-      explanation: "Incorrect. DDoS Protection Key Features provides always-on traffic monitoring, adaptive real-time tuning, and DDoS mitigation analytics, metrics, and alerting, but it doesn't offer the pay-per-protected-IP model or additional value-added services of DDoS IP Protection."
-    - content: "DDoS Network Protection"
+      explanation: "WAF focuses on application security, whereas VM deployment automation is handled by different Azure services."
+    - content: "To enhance the search engine optimization (SEO) of web applications."
       isCorrect: false
-      explanation: "Incorrect. DDoS Network Protection is automatically tuned to help protect specific Azure resources in a virtual network, but it doesn't offer the additional value-added services of DDoS IP Protection."
-    - content: "DDoS IP Protection"
+      explanation: "While SEO is important for web visibility, WAF's role is to improve security, not SEO."
+    - content: "To protect web applications from common web vulnerabilities and attacks."
       isCorrect: true
-      explanation: "Correct. DDoS IP Protection is a pay-per-protected-IP model that offers additional value-added services such as rapid response support, cost protection, and discounts on WAF."
-  - content: "A company is using an application gateway to route traffic to their backend servers. They want to ensure that the traffic between the application gateway and backend servers is encrypted. Which setting in HTTP settings should they configure to accomplish this?"
-    choices:
-    - content: "Modifications to the request"
-      isCorrect: false
-      explanation: "Incorrect. This setting doesn't affect the encryption of traffic between the application gateway and backend servers."
-    - content: "Backend server DNS resolution"
-      isCorrect: false
-      explanation: "Incorrect. This setting doesn't affect the encryption of traffic between the application gateway and backend servers."
-    - content: "Port and protocol"
-      isCorrect: true
-      explanation: "Correct. The port and protocol used in HTTP settings determine whether the traffic between the application gateway and backend servers is encrypted, accomplishing end-to-end TLS."
+      explanation: "WAF is designed to safeguard applications against web-based attacks and exploits, such as SQL injection and cross-site scripting, enhancing application security."

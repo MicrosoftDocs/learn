@@ -8,6 +8,10 @@ There are three migration types you can benefit from when using Data Migration A
 | **Schema only** | Allows you to migrate only the schema from your source database to Azure SQL Database. No data is migrated. |
 | **Data only** | Allows you to migrate only the data from your source database to Azure SQL Database. The schema must already exist in the target Azure SQL Database. |
 
+> [!NOTE]
+> While the Database Migration Assistant is a useful tool available, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience.
+
+
 ### Assess a SQL Server database
 
 Use the Data Migration Assistant to assess the database for compatibility issues.

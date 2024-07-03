@@ -3,12 +3,13 @@ uid: learn.wwl.deploy-single-instance-implementations-2-tier-3-tier.implement-sa
 title: Implement SAP HANA scale-out
 metadata:
   title: Implement SAP HANA scale-out
-  description: "Implement SAP HANA scale-out"
-  ms.date: 10/20/2023
+  description: "Implement SAP HANA scale-out."
+  ms.date: 03/07/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/8-implement-sap-hana-scale-out.md)]

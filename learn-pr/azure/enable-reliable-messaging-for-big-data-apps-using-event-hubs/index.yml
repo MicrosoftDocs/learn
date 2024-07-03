@@ -31,7 +31,7 @@ products:
 subjects:
 - cloud-computing
 - communication
-- data-warehousing
+- data-storage
 units:
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.1-introduction
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.2-create-an-event-hub-using-azure-cli

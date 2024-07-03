@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-identity-services.explore-primary-scenarios-using-ad-ds-azure-virtual-machines
-title: Explore primary scenarios using Active Directory Domain Services and Azure virtual machines
+title: Explore primary scenarios using Active Directory Domain Services and Azure Virtual Machines
 metadata:
-  title: Explore primary scenarios using Active Directory Domain Services and Azure virtual machines
-  description: "Explore primary scenarios using Active Directory Domain Services and Azure virtual machines"
-  ms.date: 10/17/2023
+  title: Explore primary scenarios using Active Directory Domain Services and Azure Virtual Machines
+  description: "Explore primary scenarios using Active Directory Domain Services and Azure Virtual Machines"
+  ms.date: 03/05/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/11-scenarios-active-directory-domain-services-virtual-machines.md)]

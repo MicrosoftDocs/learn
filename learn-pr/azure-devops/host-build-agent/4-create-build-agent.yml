@@ -4,8 +4,8 @@ title: Exercise - Create a build agent that runs on Azure
 metadata:
   title: Exercise - Create a build agent that runs on Azure
   description: Use a virtual machine that runs on Azure to configure a build agent you can use in Azure Pipelines.
-  ms.custom: devdivchpfy22
-  ms.date: 07/11/2023
+  ms.custom: devdivchpfy22, linux-related-content
+  ms.date: 04/02/2024
   author: steved0x
   ms.author: sdanie
   ms.topic: unit

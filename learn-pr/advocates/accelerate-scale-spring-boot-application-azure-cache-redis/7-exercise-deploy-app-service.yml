@@ -6,7 +6,7 @@ metadata:
   description: Deploy the Spring Boot application to Azure App Service in the cloud, and use Azure Cache for Redis clustered functionality.
   author: judubois
   ms.author: judubois
-  ms.date: 01/20/2021
+  ms.date: 06/05/2023
   ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-03112021

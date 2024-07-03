@@ -4,10 +4,12 @@ title: Configure data connectors in Microsoft Sentinel
 metadata:
   title: Configure data connectors in Microsoft Sentinel
   description: "Configure data connectors in Microsoft Sentinel"
-  ms.date: 02/19/2024
+  ms.date: 04/26/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/3-microsoft-sentinel-data-connectors.md)]

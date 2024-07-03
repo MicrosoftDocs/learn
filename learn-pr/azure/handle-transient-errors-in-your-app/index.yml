@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/01/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Handle transient errors in your app
 summary: Use application logging and retry policies to handle transient errors to make your apps more resilient.
 abstract: | 
@@ -24,8 +24,6 @@ roles:
 - developer
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.azure.handle-transient-errors-in-your-app.1-introduction
 - learn.azure.handle-transient-errors-in-your-app.2-explore-transient-errors

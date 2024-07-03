@@ -4,10 +4,10 @@ title: How Azure Cache for Redis works
 metadata:
   unitType: learning-content  
   title: How Azure Cache for Redis works
-  description: Review the features of Azure Cache for Redis works and how they work together to help improve app functionality
-  ms.date: 04/09/2021  
-  author: tchristiani
-  ms.author: terrychr
+  description: Review the features of Azure Cache for Redis works and how they work together to help improve app functionality.
+  ms.date: 04/04/2024  
+  author: flang-msft
+  ms.author: franlanglois
   ms.topic: unit
 durationInMinutes: 7
 content: |

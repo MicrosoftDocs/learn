@@ -7,9 +7,7 @@ metadata:
   ms.date: 08/31/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: azure-ai-language
-  ms.subservice: azure-ai-question-answering
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/3-compare-to-language-understanding.md)]

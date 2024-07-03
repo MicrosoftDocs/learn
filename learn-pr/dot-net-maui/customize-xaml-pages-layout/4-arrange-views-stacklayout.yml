@@ -4,11 +4,11 @@ title: Arrange views with StackLayout
 metadata:
   title: Arrange views with StackLayout
   description: Arrange views horizontally or vertically with a StackLayout.
-  ms.date: 10/13/2023
+  ms.date: 11/07/2023
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.service: azure
 durationInMinutes: 10
 content: |

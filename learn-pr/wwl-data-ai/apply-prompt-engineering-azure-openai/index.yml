@@ -36,7 +36,6 @@ products:
   - azure
 subjects: 
   - cloud-computing
-  - data-ai
 units:
 - learn.wwl.apply-prompt-engineering-azure-openai.introduction
 - learn.wwl.apply-prompt-engineering-azure-openai.understand-prompt-engineering

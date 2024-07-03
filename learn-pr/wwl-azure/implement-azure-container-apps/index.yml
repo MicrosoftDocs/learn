@@ -6,7 +6,7 @@ metadata:
   ms.date: 06/13/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Implement Azure Container Apps
 summary: Learn how Azure Container Apps can help you deploy and manage microservices and containerized apps on a serverless platform that runs on top of Azure Kubernetes Service.

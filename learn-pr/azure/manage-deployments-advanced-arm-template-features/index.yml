@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/09/2020
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   title: Manage complex cloud deployments by using advanced JSON ARM template features
   ms.custom: team=nextgen
 summary: This module teaches you how to use advanced features of JSON ARM templates to perform secrets management and conditional deployments.

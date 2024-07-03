@@ -3,7 +3,7 @@ uid: learn.orleans-product-introduction
 metadata:
   title: Introduction to Orleans
   description: Learn what the Orleans framework is, the benefits it can provide, and how to integrate it with your applications.
-  ms.date: 10/11/2023
+  ms.date: 06/04/2024
   author: IEvangelist
   ms.author: dapine
   ms.topic: module-intro-to-product
@@ -24,8 +24,6 @@ roles:
 products:
 - azure-app-service
 - dotnet-orleans
-subjects:
-  - development-tools
 prerequisites: |
   - A local installation of the [.NET SDK](https://dotnet.microsoft.com/download)
   - [Visual Studio Code](https://code.visualstudio.com) with the Azure development workload installed

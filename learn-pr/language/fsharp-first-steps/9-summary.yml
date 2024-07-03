@@ -5,7 +5,7 @@ metadata:
   unitType: summary
   title: "Summary"
   description: "In this module you set up your F# development environment, wrote your first line of F# code, and built your first F# application"
-  ms.date: 07/20/2021
+  ms.date: 02/22/2023
   author: luisquintanilla
   ms.author: luquinta
   ms.manager: markl

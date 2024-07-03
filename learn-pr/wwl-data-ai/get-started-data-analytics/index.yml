@@ -2,20 +2,26 @@
 uid: learn.wwl.get-started-data-analytics
 metadata:
   title: Get started with data analytics
-  description: "Get started with data analytics"
-  ms.date: 03/01/2023
+  description: "This content is a part of Get started with data analytics."
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: excel
+  ai-usage: human-only
 title: Get started with data analytics
 summary: Converting raw data to useful information is essential for business users. This module covers fundamental concepts of aggregating data and grouping data.
 abstract: |
-  By the end of this module, you'll be able to:
-  *   Describe data aggregation
-  *   Describe grouping of data
-  *   Describe data visualizations
-prerequisites: |
-  - You should be familiar with basic computing concepts and terminology.
+  By the end of this module, you're able to:
+
+  -   Describe data aggregation.
+
+  -   Describe grouping of data.
+
+  -   Describe data visualizations.
+prerequisites: '-   You should be familiar with basic computing concepts and terminology.'
 iconUrl: /training/achievements/get-started-data-analytics.svg
 levels:
 - beginner
@@ -30,7 +36,7 @@ products:
 - azure-sqlserver-vm
 - sql-server
 subjects:
-- database
+- databases
 units:
 - learn.wwl.get-started-data-analytics.introduction
 - learn.wwl.get-started-data-analytics.aggregate-data

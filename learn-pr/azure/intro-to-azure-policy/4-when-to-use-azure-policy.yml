@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-policy.when-to-use-azure-policy 
+uid: learn.intro-to-azure-policy.when-to-use-azure-policy
 title: When to use Azure Policy
 metadata:
   unitType: learning-content
   title: When to use Azure Policy
   description: "Learn ways that you can use Azure Policy to manage resources."
-  ms.date: 9/29/2021
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 06/10/2024
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 durationInMinutes: 1
 content: |

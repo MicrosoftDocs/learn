@@ -4,10 +4,12 @@ title: Azure Virtual Network
 metadata:
   title: Azure Virtual Network
   description: "Azure Virtual Network"
-  ms.date: 01/29/2024
+  ms.date: 06/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/3-create-virtual-networking-infrastructure.md)]

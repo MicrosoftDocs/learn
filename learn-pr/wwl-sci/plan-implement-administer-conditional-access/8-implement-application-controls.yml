@@ -4,11 +4,12 @@ title: Implement application controls
 metadata:
   title: Implement application controls
   description: "Implement application controls"
-  ms.date: 10/19/2023
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.service: azure
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/8-implement-application-controls.md)]

@@ -3,7 +3,7 @@ uid: learn.aks-app-scaling-keda.4-concept-deploy-app
 metadata:
   title: Deploy an event-driven application
   description: Discuss how to deploy a service that connects to the Azure Redis Cache and reads messages from a list.
-  ms.date: 11/07/2023 
+  ms.date: 06/03/2024 
   author: schaffererin
   ms.author: schaffererin 
   ms.topic: unit

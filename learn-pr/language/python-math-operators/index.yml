@@ -7,7 +7,7 @@ metadata:
   author: geektrainer
   ms.author: chnoring
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-python
   ms.devlang: python
 title: Use mathematical operations in Python

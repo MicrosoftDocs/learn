@@ -4,10 +4,12 @@ title: Azure resource group
 metadata:
   title: Azure resource group
   description: "Azure resource group"
-  ms.date: 01/29/2024
+  ms.date: 06/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/2-create-resource-group-azure-portal.md)]

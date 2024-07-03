@@ -2,18 +2,19 @@
 uid: learn.wwl.plan-implement-business-continuity-disaster-recovery
 metadata:
   title: Plan for disaster recovery
-  description: "Plan for disaster recovery"
+  description: Plan for disaster recovery
   ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Plan for disaster recovery
 summary: You can replicate your virtual machines (VMs) to the secondary location for Azure Virtual Desktop. You use Azure Site Recovery to manage replicating VMs in other Azure locations.
 abstract: |
   After completing this module, you'll be able to:
   *  Configure virtual machine (VM) replication for Azure Virtual Desktop.
   *  Configure FSLogix for multiple profile locations.
-prerequisites: ""
+prerequisites: ''
 iconUrl: /training/achievements/1-plan-and-implement-business-continuity-and-disaster-recovery.svg
 levels:
 - intermediate
@@ -25,7 +26,7 @@ products:
 - azure-virtual-desktop
 - azure-virtual-machines
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.wwl.plan-implement-business-continuity-disaster-recovery.introduction
 - learn.wwl.plan-implement-business-continuity-disaster-recovery.disaster-recovery-for-azure-virtual-desktop

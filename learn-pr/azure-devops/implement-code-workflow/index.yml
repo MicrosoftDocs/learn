@@ -35,8 +35,6 @@ roles:
 - solution-architect
 products:
 - azure-devops
-subjects:
-- development-tools
 units:
 - learn.azdo.implement-code-workflow.1-introduction
 - learn.azdo.implement-code-workflow.2-choose-a-code-flow-strategy

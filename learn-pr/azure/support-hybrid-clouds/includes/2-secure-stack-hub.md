@@ -10,7 +10,7 @@ Customers can run many types of VM instances, App Services, Containers (includin
 
 ## Tactical Azure Stack Hub
 
-While Azure Stack Hub is intended for on-premises deployment (such as in a datacenter), a ruggedized and field-deployable version called [Tactical Azure Stack Hub](https://www.delltechnologies.com/en-us/collaterals/unauth/data-sheets/products/converged-infrastructure/dell-emc-integrated-system-for-azure-stack-hub-tactical-spec-sheet.pdf) is also available. Tactical Azure Stack Hub is designed to address tactical edge deployments for limited or no connectivity, fully mobile requirements, and harsh conditions requiring military specification solutions.
+While Azure Stack Hub is intended for on-premises deployment (such as in a datacenter), a ruggedized and field-deployable version called [Tactical Azure Stack Hub](https://www.dell.com/en-us/dt/hyperconverged-infrastructure/microsoft-azure-stack/microsoft-azure-stack-hub.htm) is also available. Tactical Azure Stack Hub is designed to address tactical edge deployments for limited or no connectivity, fully mobile requirements, and harsh conditions requiring military specification solutions.
 
 Azure Stack Hub can be operated from a [deployment that is disconnected](/azure-stack/operator/azure-stack-disconnected-deployment) from Azure or the internet. Customers can run the next generation of AI-enabled hybrid applications where their data lives. For example, government agencies can rely on Azure Stack to bring a trained AI model to the edge and integrate it with their applications for low-latency intelligence, with no tool or process changes for local applications.
 

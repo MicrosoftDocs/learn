@@ -1,8 +1,10 @@
-Data usually resides in a database or an endpoint. The size of the data can be enormous. When a user asks for all the data for a specific resource, the response can be thousands or even millions of records. A request like this can cause a massive strain on a database. It also takes a long time to serve the response.
+As an engineer for Tailwind Traders, create your APIs to be efficient both for the server and the client by limiting the amount of data that is sent or returned from the API.
+
+Data usually resides in a database or other storage. The size of the data can be enormous. When a user asks for all the data for the products, the response can be thousands or even millions of records. A request like this can cause a massive strain on a database. It also takes a long time to serve and render the response on the client.
 
 To avoid that scenario, it's a good practice to limit the size of the response:
 
-- Use route parameters to ask for specific records.
+- Use route parameters to ask for a specific record
 - Use query parameters to specify a subset of records.
 
 This exercise teaches both techniques.
@@ -75,9 +77,11 @@ This exercise teaches both techniques.
 
     The *parameters* directory should contain these files:
 
-    - app.js - This file contains the Express application.
-    - package.json - This file contains the dependencies for the project.
-    - package-lock.json - This file contains the exact versions of the dependencies.
+    | File | Purpose |
+    |--|--|
+    |`app.js`|This file contains the Express application.|
+    |`package.json`|This file contains the dependencies for the project.|
+    |`package-lock.json`|This file contains the exact versions of the dependencies.|
 
 1. Right-click on the folder name in the file explorer, `/nodejs-http/exercise-express-routing/parameters` and select **Open in integrated terminal**. 
 1. In the terminal, run the following command to install the project's dependencies:
@@ -85,11 +89,6 @@ This exercise teaches both techniques.
     ```bash
     npm install
     ```
-
-    `npm` reads from the `dependencies` section in *package.json*.
-
-   > [!NOTE]
-   > If you see a warning about an old version of `npm`, follow the instructions to fix the issue before you move to the next step.
 
 1. Open *app.js* to inspect it. The file should look like this:
 
@@ -125,9 +124,11 @@ This exercise teaches both techniques.
    app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
    ```
 
-   The *app.js* file shows a skeleton of a program. Your next job is to implement the routes.
+    This JavaScript code creates a basic Express.js server. It defines an array of `products` and sets up three routes: root (`/`), `/products/:id`, and `/products`. The server listens on port 3000. The routes `/products/:id` and `/products` are placeholders with no functionality yet.
 
-## Implement two routes
+    The data is hardcoded to simplify the exercise. In a real-world scenario, the data would come from a database or other storage.
+
+## Implement product route to return a single product
 
 The code contains an Express application. The next step is to implement two routes:
 
@@ -158,7 +159,7 @@ The code contains an Express application. The next step is to implement two rout
 1. Add the following to the end of the URL:
 
     ```text
-    products/1
+    /products/1
     ``` 
 
     The output is:
@@ -174,8 +175,9 @@ The code contains an Express application. The next step is to implement two rout
 
    Congratulations! You implemented the route correctly. The app uses the route parameter `id` to find a specific product.
 
-1. In the terminal, and select Ctrl+C to stop the application.
+1. In the terminal, select Ctrl+C to stop the application.
 
+## Implement products route to return a list of products
 
 1. To implement the route `/products`, locate the following code:
 
@@ -210,7 +212,7 @@ The code contains an Express application. The next step is to implement two rout
 1. Add the following to the end of the URL:
 
     ```text
-    page=1&pageSize=2
+    /products?page=1&pageSize=2
     ``` 
 
 
@@ -241,8 +243,8 @@ The code contains an Express application. The next step is to implement two rout
    }]
    ```
 
-1. In the terminal, and select Ctrl+C to stop the application.
-
 Because the code contains only three records, the second page should contain only one record. 
-   
+
+1. In the terminal, select Ctrl+C to stop the application.
+
 You've now successfully applied query parameters to limit the response.

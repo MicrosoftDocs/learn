@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/07/2021
   author: interurban
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: 'Use self-regulation to work strategically'
 summary: In this module, you'll learn about using self-regulation to respond effectively to challenges. You'll also use goal-orientation theory to diagnose what motivates you to learn.
@@ -27,7 +27,7 @@ roles:
 products:
 - azure
 subjects:
-- modern-work
+- business-applications
 units:
 - learn.student-evangelism.self-regulation-work-strategically.introduction
 - learn.student-evangelism.self-regulation-work-strategically.what-is-self-regulation

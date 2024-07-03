@@ -3,8 +3,8 @@ uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-
 title: Integrate deployed technologies
 metadata:
   title: Integrate deployed technologies
-  description: "Now that we've created our resources, we need to connect them. This module will create a complete, end to end data flow that allows users to curate and manage their data in real time for quick value add. Transform raw data into valuable information."
-  ms.date: 03/28/2023
+  description: "Now that we created our resources, we need to connect them. This module creates a complete, end to end data flow that allows users to curate and manage their data in real time for quick value add. Transform raw data into valuable information."
+  ms.date: 05/28/2024
   author: whhender
   ms.author: whhender
   ms.topic: unit

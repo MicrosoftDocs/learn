@@ -4,10 +4,12 @@ title: Configure Microsoft Defender for Servers
 metadata:
   title: Configure Microsoft Defender for Servers
   description: "Configure Microsoft Defender for Servers"
-  ms.date: 02/19/2024
+  ms.date: 05/10/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - references_regions
 durationInMinutes: 7
 content: |
   [!include[](includes/3-protect-your-servers-with-defender-servers.md)]

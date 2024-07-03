@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Checks that you've grasped what is taught about the monitoring capabilities and tools of Azure Private 5G Core.
   ms.date: 10/27/2022
-  author: rmcmurray
-  ms.author: robmcm
+  author: lnyswonger
+  ms.author: lnyswonger
   ms.topic: unit
 durationInMinutes: 4
 content: |

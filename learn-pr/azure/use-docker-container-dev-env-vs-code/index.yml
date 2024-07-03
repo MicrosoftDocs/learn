@@ -34,7 +34,7 @@ roles:
 products:
   - vs-code
 subjects:
-- container
+- containers
 units:
   - learn.use-docker-container-dev-env-vs-code.1-introduction
   - learn.use-docker-container-dev-env-vs-code.2-exercise-prepare-project

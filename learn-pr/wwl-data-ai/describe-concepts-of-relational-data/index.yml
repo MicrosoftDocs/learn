@@ -2,20 +2,26 @@
 uid: learn.wwl.describe-concepts-of-relational-data
 metadata:
   title: Describe concepts of relational data
-  description: "Describe concepts of relational data"
-  ms.date: 09/13/2021
+  description: "This content is a part of Describe concepts of relational data."
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: sql-database
+  ai-usage: human-only
 title: Describe concepts of relational data
 summary: Explore the relational model for databases, how tables are structured, how you can use indexes to improve query performance, and how you can use views to simplify complex queries.
 abstract: |
   In this module, you will:
-  * Explore the characteristics of relational data
-  * Define tables, indexes, and views
-  * Explore relational data workload offerings
-prerequisites: |
-  None
+
+  -   Explore the characteristics of relational data.
+
+  -   Define tables, indexes, and views.
+
+  -   Explore relational data workload offerings.
+prerequisites: None
 iconUrl: /training/achievements/describe-concepts-of-relational-data.svg
 levels:
 - beginner
@@ -26,7 +32,7 @@ roles:
 products:
 - azure
 subjects:
-- database
+- databases
 units:
 - learn.wwl.describe-concepts-of-relational-data.introduction
 - learn.wwl.describe-concepts-of-relational-data.explore-characteristics

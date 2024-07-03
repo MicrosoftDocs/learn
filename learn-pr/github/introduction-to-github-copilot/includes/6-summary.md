@@ -11,6 +11,7 @@ Now that you've finished this module, you should be able to:
 ## References
 
 - [GitHub Copilot features](https://github.com/features/copilot)
+- [GitHub Copilot Usage stats](https://github.blog/2022-09-07-research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
 - [About GitHub Copilot](https://docs.github.com/copilot/overview-of-github-copilot/about-github-copilot)
 - [Using GitHub Copilot](https://docs.github.com/copilot/overview-of-github-copilot/about-github-copilot#using-github-copilot)
 - [About GitHub Copilot and JetBrains IDEs](https://docs.github.com/copilot/getting-started-with-github-copilot?tool=jetbrains)

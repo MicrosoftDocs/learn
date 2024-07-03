@@ -7,7 +7,7 @@ metadata:
   ms.date: 04/30/2023
   author: kaitlynjones
   ms.author: kaitlynjones
-  ms.topic: interactive-tutorial
+  ms.topic: module
   showCreativeCommonsFooter: true
 title: Accessibility best practices for gaming hardware
 summary: This module introduces accessibility best practices considerations for developing gaming hardware, such as consoles, headsets, controllers, and other types of input devices. Accessible packaging components for these products are also presented.
@@ -28,7 +28,7 @@ roles:
 products:
 - xbox
 subjects:
-- gaming-innovation
+- game-development
 units:
 - learn.hardware-devices.introduction
 - learn.hardware-devices.standard-devices

@@ -12,7 +12,7 @@ Follow these steps to create connections between the virtual networks and to con
     az network vnet peering create \
         --name SalesVNet-To-MarketingVNet \
         --remote-vnet MarketingVNet \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name SalesVNet \
         --allow-vnet-access
     ```
@@ -23,7 +23,7 @@ Follow these steps to create connections between the virtual networks and to con
     az network vnet peering create \
         --name MarketingVNet-To-SalesVNet \
         --remote-vnet SalesVNet \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name MarketingVNet \
         --allow-vnet-access
     ```
@@ -36,7 +36,7 @@ Now that you have connections between Sales and Marketing, create connections be
     az network vnet peering create \
         --name MarketingVNet-To-ResearchVNet \
         --remote-vnet ResearchVNet \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name MarketingVNet \
         --allow-vnet-access
     ```
@@ -47,7 +47,7 @@ Now that you have connections between Sales and Marketing, create connections be
     az network vnet peering create \
         --name ResearchVNet-To-MarketingVNet \
         --remote-vnet MarketingVNet \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name ResearchVNet \
         --allow-vnet-access
     ```
@@ -60,7 +60,7 @@ Now that you've created the peering connections between the virtual networks, ma
 
     ```azurecli
     az network vnet peering list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name SalesVNet \
         --query "[].{Name:name, Resource:resourceGroup, PeeringState:peeringState, AllowVnetAccess:allowVirtualNetworkAccess}"\
         --output table
@@ -72,7 +72,7 @@ Now that you've created the peering connections between the virtual networks, ma
 
     ```azurecli
     az network vnet peering list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name ResearchVNet \
         --query "[].{Name:name, Resource:resourceGroup, PeeringState:peeringState, AllowVnetAccess:allowVirtualNetworkAccess}"\
         --output table
@@ -84,7 +84,7 @@ Now that you've created the peering connections between the virtual networks, ma
 
     ```azurecli
     az network vnet peering list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name MarketingVNet \
         --query "[].{Name:name, Resource:resourceGroup, PeeringState:peeringState, AllowVnetAccess:allowVirtualNetworkAccess}"\
         --output table
@@ -104,7 +104,7 @@ You can further check the peering connection by looking at the routes that apply
 
     ```azurecli
     az network nic show-effective-route-table \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name SalesVMVMNic \
         --output table
     ```
@@ -126,7 +126,7 @@ You can further check the peering connection by looking at the routes that apply
 
     ```azurecli
     az network nic show-effective-route-table \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name MarketingVMVMNic \
         --output table
     ```
@@ -149,7 +149,7 @@ You can further check the peering connection by looking at the routes that apply
 
     ```azurecli
     az network nic show-effective-route-table \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name ResearchVMVMNic \
         --output table
     ```

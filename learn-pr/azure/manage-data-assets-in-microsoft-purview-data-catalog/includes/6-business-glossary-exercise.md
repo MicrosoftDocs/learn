@@ -2,19 +2,19 @@ In this exercise we're going to create a term in the business glossary, update o
 
 ## Create terms
 
-You can create terms one at a time or in bulk! In this example, we'll do both.
+You can create terms one at a time or in bulk! In this example, we do both.
 
 ### Single
 
 1. Open the data catalog and select **Manage glossary** on the home page menu. Or in the left menu when you're in the data catalog, select **Glossary**
 
-    :::image type="content" source="../media/business-glossary-exercise/open-business-glossary-inline.png" alt-text="Screenshot of the glossary home page with the manage glossary button highlighted in the menu and glossary highlighted in the left menu." lightbox="../media/business-glossary-exercise/open-business-glossary.png":::
+    :::image type="content" source="../media/business-glossary-exercise/open-business-glossary-inline.png" alt-text="Screenshot of the glossary home page with the 'Manage glossary' button highlighted in the menu and glossary highlighted in the left menu." lightbox="../media/business-glossary-exercise/open-business-glossary.png":::
 
-1. On the glossary terms page select **+ New term**, and a page will open showing available templates.
+1. On the glossary terms page select **+ New term**, and a page opens showing available templates.
 
     :::image type="content" source="../media/business-glossary-exercise/select-new-term.png" alt-text="Screenshot of glossary terms page with new term button highlighted.":::
 
-1. We'll talk about creating term templates later in this exercise. For now, let's choose the **System default** template and select **Continue**.
+1. Later in this exercise, we talk about creating term templates. For now, let's choose the **System default** template and select **Continue**.
 
     :::image type="content" source="../media/business-glossary-exercise/select-default-term-template.png" alt-text="Screenshot of new term page with system default and continue buttons highlighted.":::
 
@@ -38,7 +38,7 @@ You can create terms one at a time or in bulk! In this example, we'll do both.
 
     :::image type="content" source="../media/business-glossary-exercise/related.png" alt-text="Screenshot of the new term page with the related tab selected and highlighted.":::
 
-1. Open the **Contacts** tab to add experts and stewards to your term. These will be the users that will manage the term, or that others can contact if they have questions.
+1. Open the **Contacts** tab to add experts and stewards to your term. These contacts are the users that manage the term, and other users can contact them if they have questions.
 
     :::image type="content" source="../media/business-glossary-exercise/contacts.png" alt-text="Screenshot of the new term page with the contacts tab selected and highlighted.":::
 
@@ -58,7 +58,7 @@ You can also import many terms into the data catalog at one time using a .csv fi
 "Name","Nick Name","Status","Definition","Acronym","Resources","Related Terms;Separated by semicolons","Synonyms","Stewards","Experts","Parent Term Name","IsDefinitionRichText(True/False)","Term Template Names"
 ```
 
-A full sample CSV will be provided in the steps below.
+A full sample CSV is provided in the following steps.
 
 1. To import these terms to the glossary, open the data glossary and select **Import terms** in the top menu.
 
@@ -68,18 +68,18 @@ A full sample CSV will be provided in the steps below.
 
     :::image type="content" source="../media/business-glossary-exercise/select-default-term-template-for-bulk-inline.png" alt-text="Screenshot of the import terms page with the Continue button highlighted at the bottom." lightbox="../media/business-glossary-exercise/select-default-term-template-for-bulk.png":::
 
-1. There's a sample .csv available for you to download and edit. Download the CSV and use it as a template to complete your terms.
+1. There's a sample .csv available for you to download and edit. To complete your terms, download the CSV and use it as a template.
 
     >[!TIP]
     >When using the sample CSV, remember to remove the first example row before uploading your CSV.
 
     :::image type="content" source="../media/business-glossary-exercise/download-sample-csv-inline.png" alt-text="Screenshot showing import terms page with the download a sample csv button highlighted." lightbox="../media/business-glossary-exercise/download-sample-csv.png":::
 
-1. When you've added your terms as shown, upload the completed file to the import terms window. Then select **Ok**.
+1. When you add your terms as shown, upload the completed file to the import terms window. Then select **Ok**.
 
     :::image type="content" source="../media/business-glossary-exercise/upload-terms-and-select-okay-inline.png" alt-text="Screenshot of the import terms page, showing a loaded sample file and the ok button highlighted." lightbox="../media/business-glossary-exercise/upload-terms-and-select-okay.png":::
 
-1. It may take a few minutes, but the system will upload the file and add all the terms to your glossary.
+1. It might take a few minutes, but the system uploads the file and adds all the terms to your glossary.
 
     :::image type="content" source="../media/business-glossary-exercise/importing-terms-inline.png" alt-text="Screenshot of the terms page with an 'import in progress' pop up showing the import progress." lightbox="../media/business-glossary-exercise/importing-terms.png":::
 
@@ -93,13 +93,13 @@ A full sample CSV will be provided in the steps below.
 
     :::image type="content" source="../media/business-glossary-exercise/select-edit-inside-term-inline.png" alt-text="Screenshot of a term in the glossary, with the edit button highlighted in the action bar." lightbox="../media/business-glossary-exercise/select-edit-inside-term.png":::
 
-1. From here you can update any values to the term.
+1. From this Edit screen, you can update any values to the term.
 
 1. Select **Save** to make sure your edits persist.
 
     :::image type="content" source="../media/business-glossary-exercise/save-changes-inline.png" alt-text="Screenshot of the term edit screen with the save button highlighted." lightbox="../media/business-glossary-exercise/save-changes.png":::
 
-1. In the glossary menu you can also select multiple terms and either delete these terms or export them, using the **Delete** or **Export** buttons at the top of the page.
+1. In the glossary menu, you can also select multiple terms and either delete these terms or export them, using the **Delete** or **Export** buttons at the top of the page.
 
     :::image type="content" source="../media/business-glossary-exercise/export-or-delete-bulk-inline.png" alt-text="Screenshot of the glossary with multiple terms selected, showing the now-available export and delete actions." lightbox="../media/business-glossary-exercise/export-or-delete-bulk.png":::
 
@@ -122,7 +122,7 @@ A full sample CSV will be provided in the steps below.
 
 1. You can also add your term to a specific column in the data asset under **Glossary terms** for that column on the **Schema** page.
 
-    :::image type="content" source="../media/business-glossary-exercise/select-schema-glossary-term-inline.png" alt-text="Screenshot of the edit asset page on the schema tab, with the glossary terms dropdown highlighted in one row and a single term selected." lightbox="../media/business-glossary-exercise/select-schema-glossary-term.png":::
+    :::image type="content" source="../media/business-glossary-exercise/select-schema-glossary-term-inline.png" alt-text="Screenshot of the edit asset page on the schema tab. The glossary terms dropdown is highlighted in one row and a single term is selected." lightbox="../media/business-glossary-exercise/select-schema-glossary-term.png":::
 
 1. Select **Save** to save your changes.
 
@@ -136,17 +136,17 @@ A full sample CSV will be provided in the steps below.
 
 1. Open the data catalog and select **Manage term templates** in the top menu.
 
-    :::image type="content" source="../media/business-glossary-exercise/manage-term-templates-inline.png" alt-text="Screenshot of the glossary page, showing the manage term template button highlighted in the action bar." lightbox="../media/business-glossary-exercise/manage-term-templates.png":::
+    :::image type="content" source="../media/business-glossary-exercise/manage-term-templates-inline.png" alt-text="Screenshot of the glossary page, showing the 'Manage term templates' button highlighted in the action bar." lightbox="../media/business-glossary-exercise/manage-term-templates.png":::
 
-1. Select the **Custom** tab at the top of the manage term templates window.
+1. Select the **Custom** tab at the top of the **Manage term templates** window.
 
-    :::image type="content" source="../media/business-glossary-exercise/select-custom-inline.png" alt-text="Screenshot of the manage term templates window with the 'Custom' tab highlighted." lightbox="../media/business-glossary-exercise/select-custom.png":::
+    :::image type="content" source="../media/business-glossary-exercise/select-custom-inline.png" alt-text="Screenshot of the 'Manage term templates' window with the 'Custom' tab highlighted." lightbox="../media/business-glossary-exercise/select-custom.png":::
 
 1. Select **New term template**.
 
-    :::image type="content" source="../media/business-glossary-exercise/select-new-term-template-inline.png" alt-text="Screenshot of the manage term templates page on the custom tab with the new term template button highlighted." lightbox="../media/business-glossary-exercise/select-new-term-template.png":::
+    :::image type="content" source="../media/business-glossary-exercise/select-new-term-template-inline.png" alt-text="Screenshot of the 'Manage term templates' page on the custom tab with the new term template button highlighted." lightbox="../media/business-glossary-exercise/select-new-term-template.png":::
 
-1. Give your template a name and description that will give other users enough information about how to use the term template.
+1. Give your template a name and description that gives other users enough information about how to use the term template.
 
     :::image type="content" source="../media/business-glossary-exercise/name-and-description.png" alt-text="Screenshot of new term template page with the template name and description boxes highlighted.":::
 
@@ -166,7 +166,7 @@ A full sample CSV will be provided in the steps below.
 
     :::image type="content" source="../media/business-glossary-exercise/select-field-type.png" alt-text="Screenshot of new attribute page with the field type dropdown highlighted.":::
 
-1. For Text, you can provide a default value. For single or multiple choice, provide all the values for choices you'll want.
+1. For Text, you can provide a default value. For single or multiple choice, provide values for all the choices you want.
 
     :::image type="content" source="../media/business-glossary-exercise/complete-field.png" alt-text="Screenshot of new attribute page showing a multiple choice field type with several example choices added.":::
 
@@ -178,6 +178,6 @@ A full sample CSV will be provided in the steps below.
 
     :::image type="content" source="../media/business-glossary-exercise/select-create-for-template.png" alt-text="Screenshot of new term template page with the create button highlighted.":::
 
-1. Now your new term template will be available when others create terms in the business glossary. You can use these to define terms that provide the best information for your business.
+1. Now your new term template is available when others create terms in the business glossary. You can use these templates to define terms that provide the best information for your business.
 
     :::image type="content" source="../media/business-glossary-exercise/new-term-template-created-inline.png" alt-text="Screenshot of the glossary page with new term selected, and the newly created term template available to select." lightbox="../media/business-glossary-exercise/new-term-template-created.png":::

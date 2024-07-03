@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
-  ms.service: synapse-analytics
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-use-spark-notebooks-pipeline.md)]

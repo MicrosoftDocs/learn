@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-virtual-networks.expressroute-encryption
+title: Implement encryption over ExpressRoute
+metadata:
+  title: Implement encryption over ExpressRoute
+  description: "Implement encryption over ExpressRoute"
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-expressroute-encryption.md)]

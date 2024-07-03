@@ -4,10 +4,12 @@ title: Exercise - Add code to end the game
 metadata:
   title: Exercise - Add code to end the game
   description: "Exercise - Add code to end the game"
-  ms.date: 02/19/2024
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-add-code-to-end-game.md)]

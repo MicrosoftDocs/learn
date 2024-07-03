@@ -4,11 +4,12 @@ title: Explore Microsoft Defender for Identity
 metadata:
   title: Explore Microsoft Defender for Identity
   description: "Explore Microsoft Defender for Identity"
-  ms.date: 10/25/2023
+  ms.date: 04/03/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.service: azure
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/8-explore-microsoft-defender-identity.md)]

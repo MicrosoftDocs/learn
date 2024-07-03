@@ -3,7 +3,7 @@ uid: learn.azure.migrate-aspnet-app-azure-app-service.exercise-build-container-i
 metadata:
   title: Exercise - Build container image for your ASP.NET app
   description: Describes the steps to build the container image for the application
-  ms.date: 09/01/2021
+  ms.date: 01/02/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit

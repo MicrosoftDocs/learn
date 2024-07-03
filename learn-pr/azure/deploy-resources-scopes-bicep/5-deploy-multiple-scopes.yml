@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Deploy resources to multiple scopes
   description: Learn how to create a Bicep file that deploys your resources to multiple scopes.
-  ms.date: 10/14/2021
+  ms.date: 12/14/2023
   author: mumian
   ms.author: jgao
   ms.topic: unit

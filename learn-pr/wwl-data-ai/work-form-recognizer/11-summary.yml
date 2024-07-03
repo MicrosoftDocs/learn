@@ -4,12 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 10/18/2023
+  ms.date: 04/18/2024
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/11-summary.md)]

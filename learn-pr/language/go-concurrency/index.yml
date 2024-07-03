@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/23/2023
   author: danmabee
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: Learn how concurrency works in Go
 summary: Understand more about concurrency, one of the most unique features in Go.

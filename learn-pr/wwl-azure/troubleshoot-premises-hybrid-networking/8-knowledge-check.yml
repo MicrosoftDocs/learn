@@ -4,19 +4,19 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/28/2023
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An administrator is investigating a problem with IP configurations. On Friday, all was working, and now, Monday morning, all the devices in only one subnet on the fourth floor of the HQ building cannot connect to any corporate or internet resources. The administrator determines that the client computers have an IP address with the prefix 169.254.0.0/16. Which of the following is the likely cause of the problem?"
+  - content: "An administrator is investigating a problem with IP configurations. On Friday, all was working, and now, Monday morning, all the devices in only one subnet on the fourth floor of the HQ building can't connect to any corporate or internet resources. The administrator determines that the client computers have an IP address with the prefix 169.254.0.0/16. Which of the following is the likely cause of the problem?"
     choices:
     - content: "The router connecting the subnet to the rest of the network has failed."
       isCorrect: true
@@ -31,14 +31,14 @@ quiz:
     choices:
     - content: "The administrator doesn't need to do anything. Debug logging is enabled by default. They merely need to review the logs."
       isCorrect: false
-      explanation: "Incorrect. Debug logging is not disabled by default."
+      explanation: "Incorrect. Debug logging isn't disabled by default."
     - content: "The administrator must enable debug logging on the DNS server by selecting the Debug Logging tab and enabling and configuring the required options."
       isCorrect: true
       explanation: "Correct. Debug logging is disabled by default, and must be enabled on the DNS server."
     - content: "The administrator must enable debug logging on the DNS zones that they want to verify. The administrator must select the Debug Logging tab for the zone and enabling and configuring the required options."
       isCorrect: false
-      explanation: "Incorrect. Debug logging is not configured on DNS zones."
-  - content: "A helpdesk consultant has responded a user support call. The user reports that they cannot connect to a web server on the corporate network. The consultant determines that many users are experiencing the problem. They verify that the server hosting the website is online, but when they attempt to connect to the website, they receive an error: \"Hmmm can't reach this page\". What should they try next?"
+      explanation: "Incorrect. Debug logging isn't configured on DNS zones."
+  - content: "A helpdesk consultant has responded a user support call. The user reports that they can't connect to a web server on the corporate network. The consultant determines that many users are experiencing the problem. They verify that the server hosting the website is online, but when they attempt to connect to the website, they receive an error: \"Hmmm can't reach this page\". What should they try next?"
     choices:
     - content: "The helpdesk consultant should use telnet to verify the server is listening on TCP port 443."
       isCorrect: true

@@ -4,10 +4,12 @@ title: Exercise – Create a GitHub account and an initial repository
 metadata:
   title: Exercise – Create a GitHub account and an initial repository
   description: "Exercise – Create a GitHub account and an initial repository"
-  ms.date: 08/30/2023
+  ms.date: 04/08/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/3-exercise-create-github-account-initial-repository.md)]

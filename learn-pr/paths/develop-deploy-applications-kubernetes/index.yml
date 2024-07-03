@@ -24,7 +24,7 @@ roles:
 products:
 - azure
 subjects:
-- container
+- containers
 modules:
 - learn.aks-deploy-container-app
 - learn.app-package-management-using-helm

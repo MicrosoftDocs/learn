@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/04/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: Introduction to scripting in PowerShell
 summary: This module introduces you to scripting with PowerShell. It introduces various concepts to help you create script files and make them as robust as possible.
@@ -28,8 +28,6 @@ prerequisites: |
   - Ability to install Visual Studio Code extensions 
   - Ability to install software on your computer, if you're not using a Windows operating system
   - Familiarity with running commands in PowerShell
-subjects:
-- development-tools
 units:
   - learn.powershell.scripting-with-powershell.1-introduction
   - learn.powershell.scripting-with-powershell.2-introduction-scripting

@@ -3,11 +3,13 @@ uid: learn.languages.csharp-format-strings.challenge
 title: Exercise - Complete a challenge to apply string interpolation to a form letter
 metadata:
   title: Exercise - Complete a challenge to apply string interpolation to a form letter
-  description: "Exercise - Complete a challenge to apply string interpolation to a form letter"
-  ms.date: 02/21/2024
+  description: "Apply string interpolation to merge and format appropriate content in a form letter."
+  ms.date: 05/20/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/5-challenge.md)]

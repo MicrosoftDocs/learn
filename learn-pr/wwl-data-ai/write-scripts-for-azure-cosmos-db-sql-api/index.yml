@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: cosmos-db
   ms.subservice: nosql
 title: Write management scripts for Azure Cosmos DB for NoSQL
@@ -28,7 +28,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 units:
 - learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.introduction
 - learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.create-resources

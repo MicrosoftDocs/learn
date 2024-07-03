@@ -1,9 +1,9 @@
 Network flow can be categorized as:
 
- -  **Ingress traffic**: From the client to the workload running in the cluster.
- -  **Egress traffic**: From a pod or node in the cluster to an external service.
+ -  **Ingress traffic**: From the client, to the workload running in the cluster.
+ -  **Egress traffic**: From a pod or node, in the cluster to an external service.
  -  **Pod-to-pod traffic**: Communication between pods. This traffic includes communication between the ingress controller and the workload. Also, if your workload is composed of multiple applications deployed to the cluster, communication between those applications would fall into this category.
- -  **Management traffic**: Traffic that goes between the client and the Kubernetes API server.
+ -  **Management traffic**:Traffic that goes between the client and the Kubernetes API server.
 
 This architecture has several layers of security to secure all types of traffic.
 
@@ -22,4 +22,4 @@ The architecture only accepts TLS encrypted requests from the client. TLS v1.2 i
 3.  As traffic moves from Application Gateway to the backend, it's encrypted again with another TLS certificate (wildcard for \*.aks-ingress.contoso.com) as it's forwarded to the internal load balancer. This re-encryption makes sure traffic that isn't secure doesn't flow into the cluster subnet.
 4.  The ingress controller receives the encrypted traffic through the load balancer. The controller is another TLS termination point for \*.aks-ingress.contoso.com and forwards the traffic to the workload pods over HTTP. The certificates are stored in Azure Key Vault and mounted into the cluster using the Container Storage Interface (CSI) driver.
 
-You can implement end-to-end TLS traffic at every hop all the way through to the workload pod.
+You can implement end-to-end TLS traffic all at every hop the way through to the workload pod.

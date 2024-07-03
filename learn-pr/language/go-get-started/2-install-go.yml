@@ -3,11 +3,11 @@ uid: learn.language.go-get-started.2-install-go
 metadata:
   title: Exercise - Install Go
   description: Install Go on your operating system.
-  ms.date: 10/06/2021
+  ms.date: 12/21/2022
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: unit
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, linux-related-content
   zone_pivot_groups: os
 title: Exercise - Install Go
 durationInMinutes: 5

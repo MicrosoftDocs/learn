@@ -2,11 +2,12 @@
 uid: learn.wwl.backup-restore-databases
 metadata:
   title: Back up and restore databases
-  description: "Back up and restore databases"
+  description: Back up and restore databases
   ms.date: 07/25/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Back up and restore databases
 summary: Plan and implement policy for recovering data if user errors occur or the technology fails. Explore various options for how and where to back up and restore databases.
 abstract: |
@@ -30,7 +31,7 @@ products:
 - azure-sql-database
 - sql-server
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.wwl.backup-restore-databases.introduction
 - learn.wwl.backup-restore-databases.backup-restore-sql-server-running-azure-virtual-machines

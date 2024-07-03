@@ -3,8 +3,8 @@ uid: learn.azure.power-apps-tutorial.3-exercise-add-data-source-gallery-controls
 title: Exercise - Add a data source to the canvas app and design functional pages
 metadata:
   title: Exercise - Add a data source to the canvas app and design functional pages
-  description: You'll learn how to create a SharePoint site and add data to your SharePoint list and design a few functional pages for the application
-  ms.date: 01/07/2022
+  description: Learn how to create a SharePoint site and add data to your SharePoint list and design a few functional pages for the application.
+  ms.date: 04/23/2024
   author: "Sean-Kerawala"
   ms.author: "vinnietieto"
   ms.topic: unit

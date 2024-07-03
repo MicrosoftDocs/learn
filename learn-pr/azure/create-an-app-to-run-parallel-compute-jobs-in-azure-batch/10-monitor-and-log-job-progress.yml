@@ -4,7 +4,7 @@ title: Exercise - Add code to monitor and log Azure Batch job progress in your a
 metadata:
   title: Exercise - Add code to monitor and log Azure Batch job progress in your app
   description: In this hands-on exercise, you'll finish the app by adding monitoring and clean up code.
-  ms.date: 06/01/2019
+  ms.date: 02/14/2024
   author: lauradolan
   ms.author: jushiman
   ms.topic: unit

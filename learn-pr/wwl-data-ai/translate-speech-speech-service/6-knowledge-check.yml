@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: unit
-  ms.service: azure-ai-speech
 durationInMinutes: 3
 quiz:
   title: ""

@@ -3,8 +3,8 @@ uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-
 title: Roles and responsibilities
 metadata:
   title: Roles and responsibilities
-  description: "Overview of the roles and responsibilities of each product in our data governance and master data management stack. This includes Azure Data Lake Storage (ADLS) Gen2, Microsoft Purview, CluedIn, and Azure Data Factory (ADF)."
-  ms.date: 03/28/2023
+  description: "Overview of the roles and responsibilities of each product in our data governance and master data management stack. The products in the overview include Azure Data Lake Storage (ADLS) Gen2, Microsoft Purview, CluedIn, and Azure Data Factory (ADF)."
+  ms.date: 05/28/2024
   author: whhender
   ms.author: whhender
   ms.topic: unit

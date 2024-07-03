@@ -7,17 +7,16 @@ The DevOps culture creates a collaborative, transparent, and continuously improv
 
 ## What are the key elements of DevOps culture?
 
-The key elements of the DevOps culture include:
+:::image type="content" source="../media/3-devops-culture.png" alt-text="Diagram showing the key elements of DevOps culture.":::
 
-- **Collaboration**: DevOps encourages collaboration and teamwork across teams. Open communication and shared goals help eliminate traditional silos and enhance overall efficiency.
-- **Transparency**: Transparency is one of the prerequisites of effective collaboration. Openness and visibility into the development and operations processes enhances overall understanding of organizational goals and helps with intelligent decision-making.
-- **Alignment**: Alignment is a direct result of improved transparency. Understanding organizational goals helps ensure that each individual team contributes to them.
-- **Shared Responsibility**: DevOps stresses the importance of shared responsibility throughout the entire software delivery lifecycle, replacing blaming and finger pointing with collective efforts targeting continuous improvements.
-- **Accountability**: Shared responsibility doesn't preclude accountability; it merely shifts its scope. For example, developers become involved in ensuring that their applications remain stable and performant in the operational stage.
-- **Empowerment**: Accountability needs to be linked to the power to make decisions contributing to the organizational accomplishments and the corresponding sense of ownership.
-- **Continuous Learning**: The DevOps culture promotes continuous learning and improvement. The teams are encouraged to regularly review their existing processes, identify areas for improvement, and implement changes to enhance efficiency and effectiveness.
-- **Measurable Outcomes**: DevOps relies on the use of metrics and key performance indicators (KPIs) to validate successful deliveries as well as to identify the need for innovations and enhancements. Measurable outcomes  serve as an essential component of data-driven decision making and continuous learning.
-- **Customer-Centric Focus**: DevOps emphasizes the value that customers and end-users derive from an accelerated and reliable software delivery.
-- **Agility**: DevOps organizations are adaptable and responsive to change. They embrace an agile mindset, responding rapidly to customer feedback and needs.
-- **Automation**: Automation is a necessary aspect of DevOps culture. Besides accommodating the need for flexibility and adaptability, it increases efficiency, reduces errors, and accelerates development and deployment processes.
-- **Security Integration**: Security is an essential part of DevOps, permeating throughout each stage, which hints for the reason behind coining the term DevSecOps. DevSecOps is an extension of DevOps, with the focus on integrating security practices into the DevOps processes.
+The key elements of DevOps culture can be summarized as follows:
+
+- **Collaboration:** DevOps encourages teamwork and open communication across teams, eliminating silos and improving efficiency.
+- **Transparency:** Openness and visibility into development and operations processes enhance understanding and decision-making.
+- **Shared responsibility:** DevOps emphasizes collective efforts and continuous improvements, replacing blame with collaboration.
+- **Continuous learning:** The DevOps culture promotes regular process reviews, identifying areas for improvement and enhancing efficiency.
+- **Measurable outcomes:** DevOps relies on the use of metrics and key performance indicators (KPIs) to validate successful deliveries as well as to identify the need for innovations and enhancements. Measurable outcomes  serve as an essential component of data-driven decision making and continuous learning.
+- **Customer-centric focus:** DevOps values the customer's experience and emphasizes accelerated and reliable software delivery.
+- **Agility:** DevOps organizations are adaptable and responsive to change, embracing an agile mindset.
+- **Automation:** Automation increases efficiency, reduces errors, and accelerates development and deployment processes in DevOps.
+- **Security Integration:** Security is an essential part of DevOps, permeating throughout each stage, which hints for the reason behind coining the term DevSecOps. DevSecOps is an extension of DevOps, with the focus on integrating security practices into the DevOps processes.

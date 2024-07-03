@@ -27,8 +27,6 @@ roles:
 products:
 - github
 - vs-code
-subjects:
-- professional-social-network
 units:
 - learn.contribute-docs-browser.introduction
 - learn.contribute-docs-browser.what-is-docs-contributor

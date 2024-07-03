@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-  ms.service: microsoft-sentinel
   ms.custom:
   - N/A
 durationInMinutes: 3

@@ -3,8 +3,8 @@ uid: learn.languages.csharp-modify-content.exercise-indexof-substring
 title: Exercise - Use the string's IndexOf() and Substring() helper methods
 metadata:
   title: Exercise - Use the string's IndexOf() and Substring() helper methods
-  description: "Exercise - Use the string's IndexOf() and Substring() helper methods"
-  ms.date: 02/21/2024
+  description: "Use the IndexOf() and Substring() helper methods to locate the position of one or more characters inside a larger string, and return the part of the larger string that follows the character positions you specify."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "`0`"
       isCorrect: true
-      explanation: "Correct. `\"C\"` is the first item in `myString` and matches at position `0`"
+      explanation: "Correct. `\"C\"` is the first item in `myString` and matches at position `0`."
     - content: "`1`"
       isCorrect: false
       explanation: "Incorrect. `1` is the second item in `myString`, the character `\"#\"`."

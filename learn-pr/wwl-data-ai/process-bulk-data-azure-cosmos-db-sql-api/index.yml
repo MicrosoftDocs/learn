@@ -2,18 +2,23 @@
 uid: learn.wwl.process-bulk-data-azure-cosmos-db-sql-api
 metadata:
   title: Process bulk data in Azure Cosmos DB for NoSQL
-  description: "<div|Perform bulk operations on Azure Cosmos DB in bulk from code using the SDK.  </div|"
-  ms.date: 08/28/2023
+  description: "Perform bulk operations on Azure Cosmos DB in bulk from code using the SDK."
+  ms.date: 03/20/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: cosmos-db
+  ms.subservice: nosql
+  ai-usage: human-only
 title: Process bulk data in Azure Cosmos DB for NoSQL
 summary: Perform bulk operations on Azure Cosmos DB in bulk from code using the SDK.
 abstract: |
   After completing this module, you'll be able to:
-  *   Use C# task asynchronous programming model and &quot;bulk&quot; support in the Azure Cosmos DB for NoSQL .NET SDK
-prerequisites: |
-  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+
+  -   Use C# task asynchronous programming model and &quot;bulk&quot; support in the Azure Cosmos DB for NoSQL .NET SDK
+prerequisites: '- Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.'
 iconUrl: /training/achievements/azure-cosmos-db-process-bulk-data.svg
 levels:
 - intermediate
@@ -24,7 +29,7 @@ products:
 subjects:
 - data-engineering
 - data-modeling
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.process-bulk-data-azure-cosmos-db-sql-api.introduction
 - learn.wwl.process-bulk-data-azure-cosmos-db-sql-api.create-bulk-operations-sdk

@@ -4,7 +4,7 @@ metadata:
   moduleType: standard  
   title: Architect modern applications using Azure SQL Database
   description: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to use modern database capabilities to build a foundation for applications.
-  ms.date: 06/06/2023  
+  ms.date: 02/15/2024  
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth

@@ -33,7 +33,7 @@ products:
 - azure-container-registry
 subjects:
 - data-engineering
-- container
+- containers
 units:
 - learn.azure.deploy-run-container-app-service.1-introduction
 - learn.azure.deploy-run-container-app-service.2-build-store-images

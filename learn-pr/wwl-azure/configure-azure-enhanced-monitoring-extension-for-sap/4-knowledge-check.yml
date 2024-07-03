@@ -4,46 +4,48 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/17/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When running Azperflib.exe as part the readiness check after installing the Azure Extension for SAP on a Windows VM, is it automatically a problem if Storage Read Op Latency Server msec counter is empty?"
+  - content: "When running Azperflib.exe as part the readiness check after installing the Azure Extension for SAP on a Windows virtual machine, is it automatically a problem if Storage Read Op Latency Server msec counter is empty?"
     choices:
     - content: "Yes"
       isCorrect: false
-      explanation: "That’s incorrect. The Storage Read Op Latency Server msec and Storage Read Op Latency E2E msec counters can be empty. All other counters must have values."
+      explanation: "Incorrect. The Storage Read Op Latency Server msec and Storage Read Op Latency E2E msec counters can be empty. All other counters must have values."
     - content: "No"
       isCorrect: true
       explanation: "Correct. The Storage Read Op Latency Server msec and Storage Read Op Latency E2E msec counters can be empty. All other counters must have values."
     - content: "Only if the Storage Read Op Latency E2E msec counter is also empty"
       isCorrect: false
-      explanation: "That’s incorrect. The Storage Read Op Latency Server msec and Storage Read Op Latency E2E msec counters can be empty. All other counters must have values."
+      explanation: "Incorrect. The Storage Read Op Latency Server msec and Storage Read Op Latency E2E msec counters can be empty. All other counters must have values."
   - content: "Which version of the Azure Extension for SAP does Microsoft recommend for installation?"
     choices:
     - content: "The New version is recommended in all cases."
       isCorrect: false
-      explanation: "That’s incorrect. The Standard version of the extension is currently recommended for each installation where none of the use cases for the new version of the extension apply."
+      explanation: "Incorrect. The Standard version of the extension is currently recommended for each installation where none of the use cases for the new version of the extension apply."
     - content: "The Standard version is recommended, except for certain specific use cases."
       isCorrect: true
       explanation: "Correct. The Standard version of the extension is currently recommended for each installation where none of the use cases for the new version of the extension apply."
     - content: "The New version is recommended, except for certain specific use cases."
       isCorrect: false
-      explanation: "That’s incorrect. The Standard version of the extension is currently recommended for each installation where none of the use cases for the new version of the extension apply."
+      explanation: "Incorrect. The Standard version of the extension is currently recommended for each installation where none of the use cases for the new version of the extension apply."
   - content: "Does Microsoft recommend a particular version of the Azure Extension for SAP for installation of SUSE SLES 15?"
     choices:
     - content: "Yes, the Standard version is recommended."
       isCorrect: false
-      explanation: "That’s incorrect. Installing the extension on SUSE SLES 15 or higher is one of the specific use cases where the New version is recommended."
+      explanation: "Incorrect. Installing the extension on SUSE SLES 15 or higher is one of the specific use cases where the New version is recommended."
     - content: "Yes, the New version is recommended."
       isCorrect: true
       explanation: "Correct. Choose the New version only in certain specific use cases, including installing the extension on SUSE SLES 15 or higher."
     - content: "No, both versions are equally valid in this scenario."
       isCorrect: false
-      explanation: "That’s incorrect. The New version is recommended in certain specific use cases, including installing the extension on SUSE SLES 15 or higher."
+      explanation: "Incorrect. The New version is recommended in certain specific use cases, including installing the extension on SUSE SLES 15 or higher."

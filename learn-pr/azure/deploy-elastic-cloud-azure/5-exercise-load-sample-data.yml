@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Load sample data to test drive Kibana
   description: "This unit walks users through the steps for launching Kibana and loading sample data."
-  ms.date: 6/11/2021
+  ms.date: 04/07/2023
   author: yenchiho
   ms.author: yenchiho
   ms.topic: unit

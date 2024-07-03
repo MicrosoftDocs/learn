@@ -4,10 +4,12 @@ title: Exercise - Implement code branches using selection statements
 metadata:
   title: Exercise - Implement code branches using selection statements
   description: "Exercise - Implement code branches using selection statements"
-  ms.date: 02/21/2024
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 25
 content: |
   [!include[](includes/5-exercise-implement-selection-statements.md)]

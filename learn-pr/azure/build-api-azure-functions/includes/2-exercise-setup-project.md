@@ -36,7 +36,7 @@ You're a new developer at Tailwind Traders. Before you can start, you need to ge
 
    :::image type="content" source="../media/open-workspace.png" alt-text="Screenshot of Visual Studio Code notification prompt to open workspace." loc-scope="Visual Studio Code":::
 
-When the workspace opens, two projects appear in Visual Studio Code: "frontend" and "api". The "frontend" project contains the web app. The "api" project is where you build the serverless API with Azure Functions.
+When the workspace opens, two projects appear in Visual Studio Code: `frontend` and `api`. The "frontend" project contains the web app. The `api` project is where you build the serverless API with Azure Functions.
 
 ## Run the front-end project
 
@@ -50,7 +50,7 @@ When the workspace opens, two projects appear in Visual Studio Code: "frontend" 
    npm start
    ```
 
-   A small webserver called *serve* should be running in the Visual Studio Code terminal window. It displays the URL where the front-end app is running.
+   A small webserver called *serve* runs in the Visual Studio Code terminal window. It displays the URL where the front-end app is running.
 
    :::image type="content" source="../media/npm-start.png" alt-text="Screenshot of Visual Studio Code terminal with a callout highlighting the url and port of running application." loc-scope="vs-code":::
 

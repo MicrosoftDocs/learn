@@ -6,7 +6,7 @@ metadata:
   title: Overview of Azure CNI networking
   description: This unit provides an overview of the key components of Azure CNI networking.
   ms.author: schaffererin
-  ms.date: 10/31/2023
+  ms.date: 02/15/2024
   ms.topic: unit
   author: schaffererin
 durationInMinutes: 5

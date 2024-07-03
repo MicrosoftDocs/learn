@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge
-  ms.date: 09/30/2021
+  ms.date: 11/26/2023
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
@@ -23,7 +23,7 @@ quiz:
     - content: "When I want to publish a small code library as an open-source project."
       isCorrect: false
       explanation: "GitHub packages allow you to publish your libraries in public, and is free for public repositories."
-  - content: "When pulling the image to your local environment, which credentials are needed?"
+  - content: "When pulling an image to your local environment, which credentials are needed?"
     choices:
     - content: "Your GitHub username and a Personal Access Token"
       isCorrect: true
@@ -39,9 +39,9 @@ quiz:
     - content: "With an API Key"
       isCorrect: false
       explanation: "API Keys can't be used to authenticate with your package manager."
-    - content: "With my GitHub Credentials (username and password)."
+    - content: "With my GitHub Credentials (username and password)"
       isCorrect: false
       explanation: "Your GitHub Credentials can't be used to authenticate with your package manager."
-    - content: "With a Personal Access Token."
+    - content: "With a Personal Access Token"
       isCorrect: true
       explanation: "Yes, with your GitHub username and a Personal Access Token."      

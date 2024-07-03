@@ -2,25 +2,27 @@
 uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres
 metadata:
   title: Deploy a Quarkus application to Azure Container Apps
-  description: Create a Quarkus application, connect it to a PostgreSQL database, and then deploy to Azure Container Apps.
-  ms.date: 01/02/2023
+  description: Create a Quarkus application, connect it to a PostgreSQL database, and then deploy it to Azure Container Apps.
+  ms.date: 02/14/2024
   author: agoncal
   ms.author: antoniomanug
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.custom: team=devdiv
   ms.contributors: antoniomanug
   ms.service: container-apps
 title: Deploy a Quarkus application to Azure Container Apps
-summary: Create a Quarkus application, connect it to a PostgreSQL database, and then deploy to Azure Container Apps.
+summary: Create a Quarkus application, connect it to a PostgreSQL database, and then deploy it to Azure Container Apps.
 abstract: |
   In this module, you:
   - Develop a Quarkus application.
-  - Connect your application to an Azure for PostgreSQL database.
-  - Deploy the application to Azure Container Apps.
-  - Configure the database firewall so only internal IP addresses can access it.
+  - Connect your application to Azure Database for PostgreSQL.
+  - Deploy the application to Container Apps.
+  - Configure the database firewall so that only internal IP addresses can access it.
 prerequisites: | 
+  - Familiarity with developing Java applications
   - An Azure subscription
-  - Local installations of Java JDK (11 or later), Maven (3.8 or later), Docker Desktop, and the Azure CLI (2.40 or later)
+  - Local installations of Java JDK (17 or later), Maven (3.1), and the Azure CLI (2.57 or later) 
+  - Docker and Docker Desktop
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

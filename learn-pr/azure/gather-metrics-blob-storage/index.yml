@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/27/2023
   author: normesta
   ms.author: normesta
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure-blob-storage
 title: Gather metrics from your Azure Blob Storage containers
 summary: In this module, you learn how to use Azure Monitor to gather and view metrics for a Blob Storage account in Microsoft Azure. 

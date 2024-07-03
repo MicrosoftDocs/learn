@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/21/2022
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: rust
 title: Build a command-line to-do list program
@@ -30,8 +30,6 @@ roles:
 - student
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.language.rust-create-command-line-program.introduction
 - learn.language.rust-create-command-line-program.application-outline

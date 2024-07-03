@@ -8,8 +8,7 @@ metadata:
   author: ju-shim
   ms.author: jushiman
   ms.topic: unit
-  ms.custom:
-    - devx-track-js
+  ms.custom: devx-track-js, linux-related-content
 interactive: bash
 azureSandbox: true
 durationInMinutes: 5

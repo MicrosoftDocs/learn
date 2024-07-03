@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/11/2021
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: typescript
 title: 'Define generics in TypeScript'
@@ -35,8 +35,6 @@ roles:
 - student
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.language.typescript-generics.1-introduction
 - learn.language.typescript-generics.2-what-are-generics

@@ -4,7 +4,7 @@ title: Access your Batch account using the .NET client library
 metadata:
   title: Access your Batch account using the .NET client library
   description: Understand how the three Azure Batch related libraries are used in your app, Microsoft.Azure.Batch, Microsoft.Azure.Storage.Blob, and Microsoft.Azure.Management.Batch.
-  ms.date: 06/01/2019
+  ms.date: 02/14/2024
   author: lauradolan
   ms.author: jushiman
   ms.topic: unit

@@ -1,5 +1,7 @@
 Incorporating DevOps into the application lifecycle involves implementing a range of DevOps practices. The ability to maximize DevOps benefits is highly dependent on the extent to which this implementation is successful. In our sample scenario, the organization would need to introduce significant changes to its operating model, starting with promoting collaboration and communication between development and operations teams as well as investing in version control, automation, continuous integration, continuous testing, continuous delivery, and continuous monitoring. You'll explore these practices in this unit.
 
+:::image type="content" source="../media/4-devops-practices.png" alt-text="Diagram showing DevOps practices.":::
+
 ## Version control
 
 Version control is the practice of managing updates to code by storing it in designated repositories, tracking its revisions,  and maintaining change history. This facilitates code reviews and the ability to recover from programming errors. In addition, version control systems (VCS) such as Git allow for collaboration in code authoring among multiple developers through such features as repository cloning, pull requests, code change merges, conflict resolution, and support for rollbacks.

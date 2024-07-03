@@ -2,21 +2,27 @@
 uid: learn.wwl.understand-postgresql-query-process
 metadata:
   title: Understand PostgreSQL query processing
-  description: "The Azure Database for PostgreSQL server receives SQL queries and returns the relevant results. Each SQL query goes through several stages in order to return the correct results as quickly as possible. In this module you will learn about the different stages of processing a query, as well as the EXPLAIN statement."
-  ms.date: 10/27/2022
+  description: "The Azure Database for PostgreSQL server receives SQL queries and returns the relevant results. Each SQL query goes through several stages in order to return the correct results as quickly as possible. In this module, you learn about the different stages of processing a query, and the EXPLAIN statement."
+  ms.date: 05/11/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
   ms.service: postgresql
+  ai-usage: human-only
 title: Understand PostgreSQL query processing
 summary: The Azure Database for PostgreSQL server receives SQL queries and returns the relevant results. Each SQL query goes through several stages in order to return the correct results as quickly as possible.
 abstract: |
   After completing this module, you'll be able to:
-  - Identify the query processing components.
-  - Understand EXPLAIN.
+
+  -   Identify the query processing components.
+
+  -   Understand EXPLAIN.
 prerequisites: |
-  - Demonstrate an understanding of relational databases.
-  - Demonstrate an understanding of basic SQL.
+  -   Demonstrate an understanding of relational databases.
+
+  -   Demonstrate an understanding of basic SQL.
 iconUrl: /training/achievements/understand-postgresql-query-process.svg
 levels:
 - intermediate
@@ -25,12 +31,12 @@ roles:
 products:
 - azure-database-postgresql
 subjects:
-- database
+- databases
 units:
 - learn.wwl.understand-postgresql-query-process.introduction
 - learn.wwl.understand-postgresql-query-process.identify-components
 - learn.wwl.understand-postgresql-query-process.understand-explain
-- learn.wwl.understand-postgresql-query-process.exercise-practice-explain
+- learn.wwl.understand-postgresql-query-process.exercise-execute-explain
 - learn.wwl.understand-postgresql-query-process.knowledge-check
 - learn.wwl.understand-postgresql-query-process.summary
 badge:

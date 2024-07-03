@@ -8,7 +8,7 @@ metadata:
   author: lgayhardt
   ms.author: lagayhar
   manager: scottpolly
-  ms.topic: module
+  ms.topic: module-standard-task-based
 title: Build classical machine learning models with supervised learning
 summary: Supervised learning is a form of machine learning where an algorithm learns from examples of data. We progressively paint a picture of how supervised learning automatically generates a model that can make predictions about the real world. We also touch on how these models are tested, and difficulties that can arise in training them.
 abstract: | 

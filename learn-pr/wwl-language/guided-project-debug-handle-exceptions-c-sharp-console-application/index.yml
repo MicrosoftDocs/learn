@@ -3,24 +3,26 @@ uid: learn.wwl.guided-project-debug-handle-exceptions-c-sharp-console-applicatio
 metadata:
   title: Guided project - Debug and handle exceptions in a C# console application using Visual Studio Code
   description: "This module guides you through the code verification process for a C# console application. Hands-on activities provide experience identifying logic issues, debugging the application, and implementing exception handling. Step-by-step instructions are provided."
-  ms.date: 12/06/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: dotnet-csharp
   ms.devlang: csharp
 title: Guided project - Debug and handle exceptions in a C# console application using Visual Studio Code
 summary: This module guides you through a code review and debugging process, as well as the process for adding exception handling to an application.
 abstract: |
-  - Use the Visual Studio Code debugger tools to identify and correct an issue in your code logic.
-  - Implement exception handling in a C# console application using the `try-catch` pattern.
-  - Create and throw exceptions with customized properties.
-  - Catch exceptions at a lower level in the call stack.
+  -   Use the Visual Studio Code debugger tools to identify and correct an issue in your code logic.
+  -   Implement exception handling in a C# console application using the `try-catch` pattern.
+  -   Create and throw exceptions with customized properties.
+  -   Catch exceptions at a lower level in the call stack.
 prerequisites: |
-  - An installation of Visual Studio Code that's configured for C# application development.
-  - Ability to develop C# console applications that implement business logic using iteration statements, selection statements, and custom methods.
-  - Experience using the Visual Studio Code debugging tools for C#.
-  - Experience implementing `try-catch` exception handing and throwing exceptions in C# console applications.
+  -   An installation of Visual Studio Code that's configured for C# application development.
+  -   Ability to develop C# console applications that implement business logic using iteration statements, selection statements, and custom methods.
+  -   Experience using the Visual Studio Code debugging tools for C#.
+  -   Experience implementing `try-catch` exception handing and throwing exceptions in C# console applications.
 iconUrl: /training/achievements/guided-project-debug-handle-exceptions-c-sharp-console-application.svg
 levels:
 - beginner
@@ -33,7 +35,7 @@ products:
 - dotnet
 - vs-code
 subjects:
-- development-tools
+- app-development
 units:
 - learn.wwl.guided-project-debug-handle-exceptions-c-sharp-console-application.introduction
 - learn.wwl.guided-project-debug-handle-exceptions-c-sharp-console-application.prepare

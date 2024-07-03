@@ -4,10 +4,12 @@ title: Describe version control and source control
 metadata:
   title: Describe version control and source control
   description: "Describe version control and source control"
-  ms.date: 06/06/2023
+  ms.date: 05/20/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/2-describe-version-control-source-control.md)]

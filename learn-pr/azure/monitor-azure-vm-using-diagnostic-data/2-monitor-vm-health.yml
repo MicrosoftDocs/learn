@@ -4,7 +4,7 @@ title: Monitoring for Azure VMs
 metadata:
   title: Monitoring for Azure VMs
   description: Understand Azure Monitor Metrics and Logs, and explore the various Azure Monitor capabilities for monitoring a virtual machine (VM).
-  ms.date: 10/18/2019
+  ms.date: 11/06/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: unit

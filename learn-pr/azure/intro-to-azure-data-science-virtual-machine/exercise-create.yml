@@ -3,12 +3,11 @@ uid: learn.azure.intro-to-data-science-virtual-machine.exercise-create
 metadata:
   title: Exercise - Create a Data Science Virtual Machine
   description: Follow these steps to create an Ubuntu Data Science Virtual Machine.
-  ms.date: 06/02/2023
+  ms.date: 04/09/2024
   author: jesscioffi
   ms.author: jcioffi
   ms.reviewer: franksolomon 
   ms.topic: unit
-  ms.service: machine-learning
 azureSandbox: true
 title: Exercise - Create a Data Science Virtual Machine
 durationInMinutes: 10

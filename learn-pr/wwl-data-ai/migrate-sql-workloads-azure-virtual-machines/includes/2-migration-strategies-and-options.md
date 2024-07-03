@@ -85,7 +85,7 @@ To minimize downtime during the database migration process, use either the Alway
 These are the main tools and features to support and migrate your SQL Server databases to SQL Server running on an Azure Virtual Machine.
 
 - **[Azure SQL Migration extension for Azure Data Studio](/sql/azure-data-studio/extensions/azure-sql-migration-extension) –**
-    The Azure SQL Migration extension helps in assessing your migration readiness, providing appropriate SKU recommendations for Azure resources, and facilitating the migration of your SQL Server database to Azure and is ideal for small to medium-sized databases. It's powered by the latest version of Data Migration Services, and also provides an advanced assessment feature that evaluates SQL Server databases that are ready for migration to Azure SQL.
+    The Azure SQL Migration extension is powered with latest version of [Azure Database Migration Service](/azure/dms/dms-overview) and helps in assessing your migration readiness, providing appropriate SKU recommendations for Azure resources, and facilitating the migration of your SQL Server database to Azure and is ideal for small to medium-sized databases. It's powered by the latest version of Data Migration Services, and also provides an advanced assessment feature that evaluates SQL Server databases that are ready for migration to Azure SQL.
 
 - **[Backup and restore with Azure Blob Storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service) –**
     You can restore a database from Azure Blob Storage to your SQL Server running on an Azure Virtual Machine.
@@ -99,11 +99,14 @@ These are the main tools and features to support and migrate your SQL Server dat
 - **[Azure Migrate](/azure/migrate/migrate-services-overview) –**
     Azure Migrate is a comprehensive migration service that supports a wide range of migration scenarios, including SQL Server migration. Azure Migrate provides a suite of tools designed for assessment and migration of on-premises servers, infrastructure, applications, and data at scale, with the purpose of migrating them to Azure. 
 
+- **[Database Experimentation Assistant (DEA)](/sql/dea/database-experimentation-assistant-overview) –**
+   Use it to assess if your target server can handle the workload if you have concerns about performance. You can use the analysis metrics to give comparison data to allow you to decide on whether the targeted version would provide a better experience after the migration.
+
 - **[Data Migration Assistant (DMA)](/sql/dma/dma-overview) –**
    Use it to to migrate database schema, data, users, server roles, SQL Server and Windows logins from an on-premises SQL Server to a SQL Server on Azure Virtual Machine. The tool will first run an assessment that prompts you to address any compatibility issues. You can then use the same tool to migrate the assessed database schema and data to Azure.
 
-- **[Database Experimentation Assistant (DEA)](/sql/dea/database-experimentation-assistant-overview) –**
-   Use it to assess if your target server can handle the workload if you have concerns about performance. You can use the analysis metrics to give comparison data to allow you to decide on whether the targeted version would provide a better experience after the migration.
+> [!NOTE]
+> While the Database Migration Assistant is a useful tool available, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience.
 
 > [!TIP]
 > To learn how to assess on-premises SQL Server instance(s) to migrate to Azure SQL, and how to discover new features in the target SQL Server platform that the database can benefit from after an upgrade, see [Assess SQL Server databases for migration to Azure SQL module](/training/modules/assess-sql-server-databases-for-migration-to-azure-sql/).
@@ -124,7 +127,7 @@ Zero downtime migrations are normally required by mission critical workloads. Yo
 
 ### Small maintenance window migration
 
-Small maintenance windows are often measured in minutes. Use the Azure SQL migration extension for Azure Data Studio or the Data Migration Assistant (DMA) to replicate and migrate data from an on-premises SQL Server database to a SQL Server running on Azure Virtual Machine.
+Small maintenance windows are often measured in minutes. Use [Azure Database Migration Service](/azure/dms/dms-overview) to replicate and migrate data from an on-premises SQL Server database to a SQL Server running on Azure Virtual Machine.
 
 > [!NOTE]  
 > To migrate an entire application, consider using [Azure Site Recovery](/azure/site-recovery/site-recovery-overview).

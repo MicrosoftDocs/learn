@@ -32,7 +32,7 @@ roles:
 products: 
 - azure-sql-database
 subjects:
-- database
+- databases
 units:
 - learn.azure-sql-replication.introduction
 - learn.azure-sql-replication.track-data-changes-with-cdc

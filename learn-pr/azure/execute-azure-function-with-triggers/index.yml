@@ -3,7 +3,7 @@ uid: learn.execute-azure-function-with-triggers
 metadata:
   title: Execute an Azure Function with triggers
   description: This module demos some of the most common types of triggers for executing Azure Functions and how to configure them to execute your logic.
-  ms.date: 09/25/2023
+  ms.date: 04/09/2024
   author: ggailey777
   ms.author: glenga
   ms.topic: module

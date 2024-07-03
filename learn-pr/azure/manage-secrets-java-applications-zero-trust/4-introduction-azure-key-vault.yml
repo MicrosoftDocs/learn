@@ -6,7 +6,7 @@ metadata:
   description: This unit introduces Azure Key Vault, to securely manage applications secrets in the cloud.
   author: judubois
   ms.author: judubois
-  ms.date: 12/23/2021
+  ms.date: 05/28/2024
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates

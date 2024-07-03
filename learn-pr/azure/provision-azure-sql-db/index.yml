@@ -30,7 +30,7 @@ products:
 - azure-sql-database
 - azure-cloud-shell
 subjects:
-- database
+- databases
 units:
 - learn.provision-azure-sql-db.1-introduction
 - learn.provision-azure-sql-db.2-plan-your-database

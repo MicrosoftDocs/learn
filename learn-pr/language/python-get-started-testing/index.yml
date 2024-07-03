@@ -7,7 +7,7 @@ metadata:
   author: alfredodeza
   ms.author: alfredodeza
   ms.custom: team=nextgen
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure-python
   ms.devlang: python
 title: Get started with testing in Python
@@ -29,8 +29,6 @@ roles:
   - student
 products:
   - azure
-subjects:
-- development-tools
 units:
 - learn.python-get-started-testing.introduction
 - learn.python-get-started-testing.python-unittest

@@ -1,6 +1,6 @@
 You need to create the code to print a receipt for the customer purchasing shares of an investment product. The shares are purchased automatically at the end of the year based on a series of payroll deductions, so the number of shares purchased usually contains a decimal amount. To print the receipt, you would likely need to combine data of different types, including fractional values, currency, and percentages in precise ways.
 
-### Display the invoice number using string interpolation
+## Display the invoice number using string interpolation
 
 1. Select and delete all code lines in the Visual Studio Code Editor.
 
@@ -38,7 +38,7 @@ You need to create the code to print a receipt for the customer purchasing share
     >[!NOTE]
     > You may see several warnings such as `warning CS0219: The variable 'productShares' is assigned but its value is never used` for all the variables that were defined but not yet used in the code.
 
-### Display the product shares with one thousandth of a share (0.001) precision
+## Display the product shares with one thousandth of a share (0.001) precision
 
 Since you bill the customers using fractions of shares even though the precision is one ten thousandth (0.0001), you'll only display three digits after the decimal point.
 
@@ -57,7 +57,7 @@ Since you bill the customers using fractions of shares even though the precision
        Shares: 25.457 Product
     ```
 
-### Display the subtotal that you charge the customer formatted as currency
+## Display the subtotal that you charge the customer formatted as currency
 
 1. Add the following code below the code you typed in steps 1 and 2:
 
@@ -71,14 +71,14 @@ Since you bill the customers using fractions of shares even though the precision
 
     ```Output
     Invoice Number: 1201
-    Shares: 25.457 Product
-        Sub Total: $2,750.00
+       Shares: 25.457 Product
+         Sub Total: $2,750.00
     ```
 
     >[!NOTE]
     > The sample shows the "$" but you may see a different regional currency symbol.
 
-### Display the tax charged on the sale formatted as a percentage
+## Display the tax charged on the sale formatted as a percentage
 
 1. Add the following code below the code you typed in steps 1 through 3:
 
@@ -92,9 +92,9 @@ Since you bill the customers using fractions of shares even though the precision
 
     ```Output
     Invoice Number: 1201
-    Shares: 25.457 Product
-        Sub Total: $2,750.00
-            Tax: 15.83 %
+       Shares: 25.457 Product
+         Sub Total: $2,750.00
+               Tax: 15.83%
     ```
 
 ## Finalize the receipt with the total amount due formatted as currency

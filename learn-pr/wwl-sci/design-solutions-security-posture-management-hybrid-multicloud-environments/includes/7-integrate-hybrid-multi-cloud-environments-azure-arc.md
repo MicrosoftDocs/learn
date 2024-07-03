@@ -17,8 +17,8 @@ Currently, Azure Arc allows you to manage the following resource types hosted ou
 -   [Servers](/azure/azure-arc/servers/overview): Manage Windows and Linux physical servers and virtual machines hosted outside of Azure.
 -   [Kubernetes clusters](/azure/azure-arc/kubernetes/overview): Attach and configure Kubernetes clusters running anywhere, with multiple supported distributions.
 -   [Azure data services](/azure/azure-arc/data/overview): Run Azure data services on-premises, at the edge, and in public clouds using Kubernetes and the infrastructure of your choice. SQL Managed Instance and PostgreSQL (preview) services are currently available.
--   [SQL Server](https://learn.microsoft.com/sql/sql-server/azure-arc/overview): Extend Azure services to SQL Server instances hosted outside of Azure.
--   Virtual machines (preview): Provision, resize, delete and manage virtual machines based on [VMware vSphere](/azure/azure-arc/vmware-vsphere/overview) or [Azure Stack HCI](https://learn.microsoft.com/azure-stack/hci/manage/azure-arc-enabled-virtual-machines) and enable VM self-service through role-based access.
+-   [SQL Server](/sql/sql-server/azure-arc/overview): Extend Azure services to SQL Server instances hosted outside of Azure.
+-   Virtual machines (preview): Provision, resize, delete and manage virtual machines based on [VMware vSphere](/azure/azure-arc/vmware-vsphere/overview) or [Azure Stack HCI](/azure-stack/hci/manage/azure-arc-enabled-virtual-machines) and enable VM self-service through role-based access.
 <!--
 [](/azure/azure-arc/overview#key-features-and-benefits)
 -->
@@ -35,7 +35,7 @@ Some of the key scenarios that Azure Arc supports are:
 -   Zero-touch compliance and configuration for Kubernetes clusters using Azure Policy.
 -   Run [Azure data services](/azure/azure-arc/kubernetes/custom-locations) on any Kubernetes environment as if it runs in Azure (specifically Azure SQL Managed Instance and Azure Database for PostgreSQL server, with benefits such as upgrades, updates, security, and monitoring). Use elastic scale and apply updates without any application downtime, even without continuous connection to Azure.
 -   Create [custom locations](/azure/azure-arc/kubernetes/custom-locations) on top of your [Azure Arc-enabled Kubernetes](/azure/azure-arc/kubernetes/overview) clusters, using them as target locations for deploying Azure services instances. Deploy your Azure service cluster extensions for [Azure Arc-enabled data services](/azure/azure-arc/data/create-data-controller-direct-azure-portal), [App services on Azure Arc](/azure/app-service/overview-arc-integration) (including web, function, and logic apps) and [Event Grid on Kubernetes](/azure/event-grid/kubernetes/overview).
--   Perform virtual machine lifecycle and management operations for [VMware vSphere](/azure/azure-arc/vmware-vsphere/overview) and [Azure Stack HCI](https://learn.microsoft.com/azure-stack/hci/manage/azure-arc-enabled-virtual-machines) environments.
+-   Perform virtual machine lifecycle and management operations for [VMware vSphere](/azure/azure-arc/vmware-vsphere/overview) and [Azure Stack HCI](/azure-stack/hci/manage/azure-arc-enabled-virtual-machines) environments.
 -   A unified experience viewing your Azure Arc-enabled resources, whether you are using the Azure portal, the Azure CLI, Azure PowerShell, or Azure REST API.
 
 # Introduction to Azure Arc landing zone accelerator for hybrid and multicloud

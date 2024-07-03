@@ -1,4 +1,3 @@
-
 Group Policy or Microsoft Configuration Manager applications mostly manage devices that are capable of joining AD DS. When you join a device to Microsoft Entra ID, Group Policy isn't available except when you use with Microsoft Entra Domain Services. However, even with Microsoft Entra Domain Services, Group Policy can't manage devices such as smartphones and tablets.
 
 Microsoft Entra ID doesn't provide a built-in management mechanism for devices that don't support Group Policy. Additionally, Microsoft Entra Domain Services isn't enabled by default, you must manually enable and configure this service.
@@ -6,3 +5,4 @@ Microsoft Entra ID doesn't provide a built-in management mechanism for devices t
 If you want to manage devices that join Microsoft Entra ID, you can configure integration between Azure and a mobile device management mechanism such as Intune. If you configure Intune as an application in Azure, each device that joins Microsoft Entra ID can be configured to enroll in Intune automatically. For this to work, you need to have an active Intune subscription that’s associated with the same Microsoft Entra tenant where you configured the integration of these services. Additionally, a user who joins a device to Microsoft Entra ID needs to have an assigned Intune license.
 
 After the device enrolls in Intune, you can configure Intune security and configuration policies that will apply to the user or to the device. It’s important to understand that management through Intune doesn't follow the same logic as management with Group Policy, nor does it have as many available options. Intune management options mostly focus on security and the apps that are on managed devices.
+

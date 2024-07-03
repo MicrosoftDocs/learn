@@ -3,20 +3,25 @@ uid: learn.wwl.combine-query-results-set-operators
 metadata:
   title: Combine query results with set operators
   description: "Combine query results with set operators using Transact-SQL."
-  ms.date: 02/12/2024
+  ms.date: 03/14/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
-  ms.service: azure
+  ms.custom:
+  - N/A
+  ms.service: sql
+  ai-usage: human-only
 title: Combine query results with set operators
 summary: Learn how to use Transact-SQL to combine query results.
 abstract: |
   After completing this module, you’ll be able to:
+
   - Use the UNION operator.
+
   - Use the INTERSECT and EXCEPT operators.
+
   - Use the APPLY operator.
-prerequisites: |
-  Before starting this module, you should have experience of using Transact-SQL queries to retrieve and filter data from a table in a database.
+prerequisites: Before starting this module, you should have experience of using Transact-SQL queries to retrieve and filter data from a table in a database.
 iconUrl: /training/achievements/query-combine-results-operators.svg
 levels:
 - advanced

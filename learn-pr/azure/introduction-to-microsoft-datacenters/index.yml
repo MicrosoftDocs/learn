@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/01/2022
   author: TBD
   ms.author: v-jenhor
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Introduction to Microsoft Datacenters
 summary: In this module, you'll learn the physical infrastructure of the Microsoft Cloud and its datacenters, which will help customers make better decisions when considering and planning for cloud infrastructure and workloads.
 abstract: |

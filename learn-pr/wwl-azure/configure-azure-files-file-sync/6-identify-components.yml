@@ -1,13 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.configure-azure-files-file-sync.identify-components
-title: Identify Azure File Sync components
+uid: learn.wwl.configure-storage-tools.use-storage-explorer1
+title: Use Azure Storage Explorer
 metadata:
-  title: Identify Azure File Sync components
-  description: "Identify Azure File Sync components"
-  ms.date: 05/19/2023
+  title: Use Azure Storage Explorer
+  description: "Use Azure Storage Explorer."
+  ms.date: 04/04/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/6-identify-components.md)]

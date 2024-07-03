@@ -4,10 +4,12 @@ title: Exercise - Write code to read and save new ourAnimals array data
 metadata:
   title: Exercise - Write code to read and save new ourAnimals array data
   description: "Exercise - Write code to read and save new ourAnimals array data"
-  ms.date: 02/21/2024
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 20
 content: |
   [!include[](includes/6-exercise-read-save-array-data.md)]

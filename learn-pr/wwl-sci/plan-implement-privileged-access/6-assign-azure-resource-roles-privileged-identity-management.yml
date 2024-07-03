@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/6-assign-azure-resource-roles-privileged-identity-management.md)]

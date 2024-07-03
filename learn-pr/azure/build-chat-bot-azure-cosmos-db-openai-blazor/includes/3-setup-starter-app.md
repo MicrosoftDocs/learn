@@ -2,8 +2,8 @@ The first step of this project is to walk through the existing starter applicati
 
 There are a few requirements in this exercise:
 
-- Open the **CodeTour** within the application and walk through the entire tour.
-- Successfully build the application.
+- Open the **CodeTour** within the application and walk through the entire tour
+- Successfully build the application
 - Run the application using the **Hot Reload** feature of .NET
 
 After you complete this exercise, you'll have a general understanding of the project and its components.
@@ -21,7 +21,7 @@ This application uses [CodeTour](https://github.com/microsoft/codetour), a Visua
 
 1. Review the overview of the guided tour.
 
-1. The guided tour of the codebase walks you through the following components of the application:
+1. The guided tour of the codebase walks you through the following components of the application.
 
     - The `Message` and `Session` types in the `/Models` path
     - The Bicep template and various properties of the resources it deployed

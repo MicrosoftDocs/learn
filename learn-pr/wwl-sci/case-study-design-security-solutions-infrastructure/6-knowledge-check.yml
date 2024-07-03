@@ -40,7 +40,6 @@ quiz:
         - content: "To provide endpoint protection against advanced attacks."
           isCorrect: false
           explanation: "Endpoint protection refers to a different approach to security which involves securing individual endpoints like devices or servers."
-          
     - content: "What is Cloud Workload Protection in Microsoft Defender for Cloud?"
       choices:
         - content: "A feature that provides external attack surface management."
@@ -55,7 +54,6 @@ quiz:
         - content: "A feature that provides security controls for DevOps teams and their CI/CD pipelines."
           isCorrect: false
           explanation: "This statement is referring to another feature called Azure Defender for Kubernetes which provides native security controls for CI/CD pipelines."
-          
     - content: "What is Azure Arc used for?"
       choices:
         - content: "To automatically scale compute resources in cloud environments."

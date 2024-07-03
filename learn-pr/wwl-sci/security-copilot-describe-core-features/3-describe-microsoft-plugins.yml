@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.security-copilot-describe-core-features.describe-microsoft-plugins
-title: Describe the Microsoft plugins available in Security Copilot
+title: Describe the Microsoft plugins available in Microsoft Copilot for Security
 metadata:
-  title: Describe the Microsoft plugins available in Security Copilot
-  description: "Describe the Microsoft plugins available in Security Copilot."
-  ms.date: 11/18/2023
+  title: Describe the Microsoft plugins available in Microsoft Copilot for Security
+  description: "Describe the Microsoft plugins available in Microsoft Copilot for Security."
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-  ms.service: security-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/3-describe-microsoft-plugins.md)]

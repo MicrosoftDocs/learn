@@ -4,11 +4,12 @@ title: Discover how Microsoft AI improves shopping experiences – A Żabka succ
 metadata:
   title: Discover how Microsoft AI improves shopping experiences – A Żabka success story
   description: "Discover how Microsoft AI improves shopping experiences – A Żabka success story"
-  ms.date: 11/24/2023
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-  ms.service: azure-ai-services
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/4-discover-ai-improves-shopping-experiences.md)]

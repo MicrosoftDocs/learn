@@ -1,6 +1,5 @@
 Let's get some practice with the Azure Quantum Resource Estimator. In the following example, you estimate the physical resources of a Shor's algorithm sample.
 
-
 ## Install qsharp and qsharp-widgets
 
 First, install the latest Azure Quantum `qsharp` and `qsharp-widgets` packages.  
@@ -11,15 +10,15 @@ python -m pip install --upgrade qsharp qsharp-widgets
 
 ## Create the quantum algorithm
 
-1. In VS Code, select **View > Command palette** and select **Create: New Jupyter Notebook**. 
-1. In the first cell of the notebook, import the `qsharp` package.
+1. In Visual Studio Code, select **View > Command palette** and select **Create: New Jupyter Notebook**.
+1. In the notebook's first cell, import the `qsharp` package:
 
     ```python
     import qsharp
     from qsharp_widgets import EstimateDetails
     ```
 
-1. Add a new cell and copy the following code.
+1. Add a new cell and copy the following code:
 
     ```qsharp
     %%qsharp
@@ -51,15 +50,15 @@ python -m pip install --upgrade qsharp qsharp-widgets
 
 # Estimate the quantum algorithm
 
-1. Now, you estimate the physical resources for the `RandomBit` operation using the default assumptions. Add a new cell and copy the following code.
+1. Now, estimate the physical resources for the `RandomBit` operation using the default assumptions. Add a new cell and copy the following code:
 
     ```python
     result = qsharp.estimate("RandomBit()")
     result
     ```
 
-    The `qsharp.estimate` function creates a result object, which can be used to display a table with the overall physical resource counts. The first table shows the main physical resources estimates. The `RandomBit` operation requires 300 qubits and takes 2 microseconds to run on a quantum computer.
-    
+    The `qsharp.estimate` function creates a result object, which can be used to display a table with the overall physical resource counts. The first table shows the main physical-resource estimates. The `RandomBit` operation requires 300 qubits and takes two microseconds to run on a quantum computer.
+
     |Physical resource estimates| Value |
     |----|---|
     |Runtime| 2 microsecs|
@@ -109,18 +108,18 @@ python -m pip install --upgrade qsharp qsharp-widgets
 
 ## Change the default values and estimate the algorithm
 
-When submitting a resource estimate request for your program, you can specify some optional parameters. These are the target parameters that can be customized:
+When submitting a resource estimate request for your program, you can specify some optional parameters. These are the target parameters you can customize:
 
-* `errorBudget` - the overall allowed error budget for the algorithm 
-* `qecScheme` - the quantum error correction (QEC) scheme 
-* `qubitParams` - the physical qubit parameters 
-* `constraints` - the constraints on the component-level
-* `distillationUnitSpecifications` - the specifications for T factories distillation algorithms
-* `estimateType` - single or frontier
+* `errorBudget`: The overall allowed error budget for the algorithm
+* `qecScheme`: The quantum error correction (QEC) scheme
+* `qubitParams`: The physical qubit parameters
+* `constraints`: The constraints on the component-level
+* `distillationUnitSpecifications`: The specifications for T factories distillation algorithms
+* `estimateType`: Single or frontier
 
 ### Change qubit model
 
-You can estimate the cost for the same algorithm using the Majorana-based qubit parameter, `qubitParams`, "qubit_maj_ns_e6".
+You can estimate the cost for the same algorithm using the Majorana-based qubit parameter, `qubitParams`, `qubit_maj_ns_e6`.
 
 ```python
 result_maj = qsharp.estimate("RandomBit()", params={

@@ -28,7 +28,7 @@ roles:
 products:
 - azure-iot
 subjects:
-- digital-application-innovation
+- app-development
 - iot
 units:
 - learn.introduction-to-azure-iot.introduction

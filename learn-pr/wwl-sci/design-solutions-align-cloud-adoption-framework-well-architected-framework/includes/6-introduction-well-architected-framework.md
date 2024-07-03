@@ -22,7 +22,7 @@ Reference the following video about how to architect successful workloads on Azu
 
 <br/>
 
-> [!VIDEO /shows/azure-enablement/architect-successful-workloads-on-azure--introduction-ep-1-well-architected-series/player]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?show=azure-enablement&ep=architect-successful-workloads-on-azure--introduction-ep-1-well-architected-series]
 
 <!-- markdownlint-enable MD034 -->
 

@@ -6,7 +6,7 @@ metadata:
   description: Use the what-if tool to predict what a deployment will carry out if it's applied.
   author: mumian
   ms.author: jgao
-  ms.date: 05/20/2021
+  ms.date: 08/22/2023
   ms.topic: unit
   ms.custom: team=nextgen, devx-track-bicep
   zone_pivot_groups: arm-template-language-azure-shell-interface

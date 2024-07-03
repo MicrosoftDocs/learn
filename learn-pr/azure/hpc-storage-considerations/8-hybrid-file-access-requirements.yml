@@ -4,7 +4,7 @@ title: Hybrid file access requirements
 metadata:
   title: Hybrid file access requirements
   description: A discussion of how data is accessed across wide area networks and the various approaches you can take to move data to and from Azure.
-  ms.date: 12/29/2020
+  ms.date: 04/04/2024
   author: scjescho
   ms.author: padmalathas
   ms.topic: unit
@@ -19,6 +19,9 @@ quiz:
     - content: "Caching"
       isCorrect: false
       explanation: "Incorrect. Caching retrieves and presents data based on requests for a given file."
+    - content: "Routing"
+      isCorrect: false
+      explanation: "Incorrect. Routing is the pathway data takes."
     - content: "Synchronization"
       isCorrect: true
       explanation: "Correct. Synchronization checks the destination directory and creates or updates files based on whether they exist and reflect the most recent changes."

@@ -6,8 +6,9 @@ metadata:
   ms.date: 07/31/2023
   author: spelluru
   ms.author: spelluru
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: intro-internal
+  ms.service: event-hubs
 title: Choose a messaging model in Azure to loosely connect your services
 summary: When you have an application that consists of components running on different computers, servers, and mobile devices, reliable communications between those components can be difficult and unreliable. Azure provides several technologies that you can use to communicate more reliably, including Storage queues, Event Hubs, Event Grid, and Service Bus. This module shows you how to choose the best technology for your communication task.
 abstract: |

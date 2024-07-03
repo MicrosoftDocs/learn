@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-embedded-experiences.copilot-for-defender-cloud
+title: Microsoft Copilot in Microsoft Defender for Cloud (Preview)
+metadata:
+  title: Microsoft Copilot in Microsoft Defender for Cloud (Preview)
+  description: "Microsoft Copilot in Microsoft Defender for Cloud."
+  ms.date: 06/17/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5a-copilot-for-defender-cloud.md)]

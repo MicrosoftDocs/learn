@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/05/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Provide context with the right depth layer
 summary: Threat models can get complex if all parties involved can't agree on a data-flow diagram depth layer that provides enough context to satisfy requirements
 abstract: |

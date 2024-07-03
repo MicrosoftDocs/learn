@@ -27,7 +27,7 @@ subjects:
 - data-analytics
 - data-engineering
 - data-integration
-- data-science
+- data-management
 modules:
 - learn.wwl.ingest-dataflows-gen2-fabric
 - learn.wwl.ingest-data-with-spark-fabric-notebooks

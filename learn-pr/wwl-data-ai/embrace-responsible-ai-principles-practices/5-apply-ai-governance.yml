@@ -4,10 +4,12 @@ title: Applying systems for AI governance
 metadata:
   title: Applying systems for AI governance
   description: "Applying systems for AI governance"
-  ms.date: 11/30/2023
+  ms.date: 06/25/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-apply-ai-governance.md)]

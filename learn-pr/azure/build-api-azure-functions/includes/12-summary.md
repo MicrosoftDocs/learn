@@ -9,3 +9,8 @@ Take a break, and then come back. There are many more Learn modules waiting for 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
 <!-- *Optional* for this unit is a a section called "Learn More", with a bulleted list of appropriate external links -->
+
+## Learn more: 
+
+* [Azure Functions Node.js developer guide](/azure/azure-functions/functions-reference-node?tabs=typescript%2Cwindows%2Cazure-cli&pivots=nodejs-model-v4)
+* [App settings reference for Azure Functions](/azure/azure-functions/functions-app-settings)

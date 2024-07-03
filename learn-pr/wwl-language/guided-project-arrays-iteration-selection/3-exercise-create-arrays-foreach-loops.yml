@@ -4,10 +4,12 @@ title: Exercise - Create arrays and foreach loops
 metadata:
   title: Exercise - Create arrays and foreach loops
   description: "Exercise - Create arrays and foreach loops"
-  ms.date: 02/21/2024
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 25
 content: |
   [!include[](includes/3-exercise-create-arrays-foreach-loops.md)]

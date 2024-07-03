@@ -1,51 +1,84 @@
-This module looks at how your organization can use GitHub Advanced Security features to improve security. You'll learn what it means to "shift left." You'll also develop an understanding of how shifting left helps secure your Software Development Life Cycle (SDLC). Finally, you'll review different security workflow models to identify best practices.
+In this unit we'll review:
 
-At the end of this unit, you'll understand how the right tools, combined with organizational culture, increase the security of your environments and codebases. This begins with adopting a security-focused mindset.
+- Understanding the dependency graph
+- Acting on GHAS alerts
+- Who has access to alerts
 
-## Adopt a security mindset
+Let’s take a closer look at how Dependabot works, starting with the dependency graph.
 
-The more security-centric your organizational culture is, the more everyone remembers to view their actions, work, and decisions through the lens of security. This perspective provides better outcomes for your software development and planning. However, a sound security strategy involves more than simply putting protective tools in place. You also need to account for human error. A user could accidentally enable an attack, or a developer could write insecure code. Think about how many attacks begin by tricking or forcing a member of an organization.
+The dependency graph is central to supply chain security. The dependency graph identifies all upstream dependencies and public downstream dependents of a repository or package. You can see your repository’s dependencies and some of their properties, like vulnerability information, on the dependency graph for the repository.
 
-## Shift left
+To generate the dependency graph, GitHub looks at a repository’s explicit dependencies declared in the manifest and lockfiles. When enabled, the dependency graph automatically parses all known package manifest files in the repository and uses this scan to construct a graph with known dependency names and versions.
 
-:::image type="content" source="../media/shift-left-3.png" alt-text="Screenshot of the shift left icon." border="false":::
+Key points about the dependency graph include:
 
-You might have heard that a company or development team is beginning to "shift left." To understand this phrase, you must first realize that security has commonly been an isolated topic in many software-development paradigms. The development lifecycle has figuratively begun "on the left" with design and development. Then, the lifecycle ends to the right, bringing in quality control and deployment tasks. Workflows often include security only after the development stage. At that point, only a specific group would perform a security review.
+- Includes information on your direct dependencies and transitive dependencies.
+- Dependency graph is automatically updated when you push a commit to GitHub that changes or adds a supported manifest or lock file to the default branch. It's also automatically updated when anyone pushes a change to the repository of one of your dependencies as well.
+- You can see the dependency graph by opening the repository's main page on GitHub and navigating to the Insights tab.
+- If you have at least read access to the repository, you can export the dependency graph for the repository as an SPDX-compatible, Software Bill of Materials (SBOM), via the GitHub UI or GitHub REST API. For more information, see "Exporting a software bill of materials for your repository."
 
-In the SDLC, shifting left means adopting security practices early. When development shifts left, everyone considers security when they contribute to the code. They integrate security into the design phase, making it easier to write secure code and policies.
+Additionally, you can use the Dependency submission API (beta) to submit dependencies from the package manager or ecosystem of your choice, even if the ecosystem isn't supported by dependency graph for manifest or lock file analysis. Dependencies submitted to a project using the Dependency submission API (beta) shows which detector was used for their submission and when they were submitted.
 
-### Faulty security models
+Other supply chain features on GitHub rely on the information provided by the dependency graph, which include the following:
 
-Developers that view security as an isolated consideration can struggle when quality assurance or security discovers errors in the project's code. The development team has to fix the code. At this point, they might have already begun a new project. Passing code back to be repaired results in two open work streams. This is an inefficient use of time and resources. Although some elements of a defective security model might be common, you should still work to avoid them.
+- **Dependency review**: uses the dependency graph to identify dependency changes and help you understand the security impact of these changes when you review pull requests.
+- **Dependabot alerts**: Dependabot cross-references dependency data provided by the dependency graph with the list of advisories published in the GitHub Advisory Database. The dependency graph scans your dependencies and generates Dependabot alerts when a potential vulnerability is detected.
+- **Dependabot security updates**: Uses the dependency graph and Dependabot alerts to help you update dependencies with known vulnerabilities in your repository.
 
-This table outlines traits regularly found in faulty organizational security models:
+Although **Dependabot version updates** don't use the dependency graph, it's still worth mentioning. Dependabot version updates rely on the semantic versioning of dependencies instead. Dependabot version updates help you keep your dependencies updated, even when they don’t have any vulnerabilities. 
 
-| Facet  | Comment |
-|---|---|
-| Scope of team involvement |  Only a limited number of team members are responsible for security. The people building the application aren't the same ones involved in ensuring security. Security experts are outside of the development workflow. |
-| Prioritization | Security reviews and quality control are separate steps at the end of the development stage.|
-| Documentation | Security documentation is nonexistent. Written standards and guidelines haven't been established to granularly regulate what type of information enters the codebase and by whom. Subsequently, team members lack a common understanding of expectations and directives.|
-| Platform configuration | The development environment isn't configured to align with and enforce established security guidelines.|
+### Acting on GHAS alerts
 
-### The ideal security model
+With its comprehensive set of tools GHAS provides holistic visibility into an organization's security posture and the ability to enforce security adoption, enabling precise and effective prioritization and management of security risks.
 
-Ideally, everyone is responsible for securing the project within their scope of work. The team that writes the code is the same team performing tests and dealing with the results of those tests in real time. Policies exist for each phase of the operation to ensure code quality. Automation plays a significant role in creating an efficient workflow.
+One of the many tools that ensure security throughout the development process is all of the alerts that GHAS provides your organization. 
 
-This table shows key elements of the ideal security model:
+Let’s review them:
 
-| Facet  |  Comment |
-|---|---|
-| Scope of team involvement | Teams shift left. Each role from design to deployment is concerned with security. |
-| Prioritization | Throughout all stages of development, measures are in place to protect assets. |
-| Documentation | Standards and guidelines are in writing. Teams know the process to report bugs. |
-| Tooling | The development platform enforces standards and keeps code and environments secure. |
+Code Scanning Alerts:
 
-### Security policies
+- CodeQL Analysis Alerts: Generated by CodeQL, GitHub's semantic code analysis engine, these alerts identify potential security vulnerabilities in the codebase. They cover a wide range of issues, including but not limited to SQL injection, cross-site scripting, and other code vulnerabilities.
 
-A strong security culture needs documentation to define the people or roles that can perform specific actions within a repository or branch. In GitHub, these documents are *policies*. Policies may require a code review before merging. They ensure that the code passes certain status checks. For example, you might want to specify who can push code to or delete a branch. In GitHub, you store policy details in your repository in the `SECURITY.md` file. This file should also include instructions on reporting any bugs or vulnerabilities found in the project.
+Secret Scanning Alerts:
 
-#### Enforce policies
+- Exposed Secrets Alerts: These alerts are triggered when potentially sensitive information, such as API keys or credentials, is identified within the repository's source code. Secret scanning helps prevent accidental exposure of confidential data.
 
-GitHub Advanced Security includes compliance and policy-management features. You can use policies to stipulate standards and procedures that keep your code healthy. Policies also identify who to contact when an error is found.
+Dependency Alerts:
 
-Policies alone don't enforce your organization's requirements. Policies are organizational measures. Administrators ensure user adherence by setting up protected branches. The configuration of a branch allows you to force specific requirements. For example, tests such as code scanning must pass before merging changes. Another example is requiring a reviewer to approve a pull request before reviewers release it for merging.
+- Dependabot Alerts: Dependabot automatically detects outdated dependencies in a project and creates pull requests to update them to the latest, secure versions. Dependabot alerts notify developers about available updates for project dependencies.
+
+
+Security Overview Alerts:
+
+- The Security Overview provides a comprehensive dashboard summarizing the security status of the repository.
+
+Third Party Alerts: 
+
+- You can integrate third-party code analysis tools with GitHub code scanning by uploading data as SARIF files. Learn more about this topic at the end of the module with a link to 'Integrating with code scanning.'
+
+#### Implications of Ignoring an Alert
+
+Ignoring a security alert poses significant risks to the project. Vulnerabilities may be exploited by malicious actors, leading to data breaches, service disruptions, or other security incidents. Ignoring alerts can also result in increased remediation efforts, potentially impacting project timelines and the overall trustworthiness of the software.
+
+The long-term consequences of ignoring alerts may include reputational damage, regulatory noncompliance, and financial losses. It's crucial for development teams to prioritize and address security alerts promptly to mitigate these risks and maintain the integrity of the software.
+
+When developers discover a security alert, their immediate role is to investigate the nature and severity of the alert. This involves understanding the impact on the codebase, potential exploit scenarios, and any necessary steps for remediation.
+
+With the help of GHAS, developers can find and fix vulnerabilities earlier in the software development life cycle.
+
+
+### Who has access to alerts?
+
+GHAS provides granular access controls, allowing organizations to define who can view alerts for different security features. This ensures that only authorized personnel, such as security teams and relevant stakeholders, have access to sensitive security information.
+
+Access management is role-based, with different roles having varying levels of access to GHAS alerts. Let’s take a moment to dig a bit deeper into roles and access to alerts:
+- Code scanning & Dependabot alerts can be seen and modified by anyone with the `Write` repository role
+- Secret scanning alerts can be seen and modified by anyone with the `Admin` repository role
+- Any person or team can be granted access to see and modify all alerts on a repository, regardless of their repository role, by modifying the repo's "Access to alerts" settings
+
+Now that we’ve reviewed which alerts can be seen by specific roles, it's worth noting that effective access management enhances collaboration by providing the right level of visibility to each team member. This ensures that stakeholders can focus on the security aspects relevant to their roles, facilitating a streamlined and efficient response to security alerts.
+
+By understanding the intricacies of identifying vulnerabilities, responding to alerts, acknowledging the implications of inaction, and defining roles and access controls, development teams can leverage GitHub Advanced Security to its fullest potential, creating a more resilient and secure development environment.
+
+In the next section, we’ll review how collectively GHAS can enhance your security ecosystem.
+

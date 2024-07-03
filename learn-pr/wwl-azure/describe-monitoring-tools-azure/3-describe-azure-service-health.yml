@@ -4,10 +4,12 @@ title: Describe Azure Service Health
 metadata:
   title: Describe Azure Service Health
   description: "Describe Azure Service Health"
-  ms.date: 08/17/2023
+  ms.date: 04/17/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/3-describe-azure-service-health.md)]

@@ -4,10 +4,12 @@ title: Exercise - Use whitespace to make your code easier to read
 metadata:
   title: Exercise - Use whitespace to make your code easier to read
   description: "Exercise - Use whitespace to make your code easier to read"
-  ms.date: 02/21/2024
+  ms.date: 05/27/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-use-whitespace.md)]

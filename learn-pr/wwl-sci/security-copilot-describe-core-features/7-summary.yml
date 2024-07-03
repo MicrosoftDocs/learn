@@ -4,11 +4,10 @@ title: Summary and resources
 metadata:
   title: Summary and resources
   description: "Describe the core features of Microsoft Security Copilot."
-  ms.date: 11/18/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-  ms.service: security-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

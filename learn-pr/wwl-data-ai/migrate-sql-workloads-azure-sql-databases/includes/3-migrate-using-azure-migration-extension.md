@@ -2,7 +2,7 @@ If you can afford to take the database offline while you migrate to Azure, you h
 
 In our bicycle manufacturing scenario, the HR database is considered business-critical but is rarely used at weekends. You've planned to execute an offline migration between Friday evening and Monday morning, but you want to assess the best migration method.
 
-It's assumed that all pre-migration checks have been done with the [Azure SQL migration extension for Azure Data Studio](/sql/azure-data-studio/extensions/azure-sql-migration-extension), [Data Migration Assistant](/sql/dma/dma-overview) or [Azure Migrate](/azure/migrate/migrate-services-overview). This process ensures that feature and compatibility issues are addressed.
+It's assumed that all pre-migration checks have been done with the [Azure SQL migration extension for Azure Data Studio](/sql/azure-data-studio/extensions/azure-sql-migration-extension) or [Azure Migrate](/azure/migrate/migrate-services-overview). This process ensures that feature and compatibility issues are addressed.
 
 ## Migrate using the Azure SQL migration extension for Azure Data Studio
 

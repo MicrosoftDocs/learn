@@ -3,8 +3,8 @@ uid: learn.intro-to-azure-routing-preference.how-routing-preference-works
 title: How does routing preference work?
 metadata:
   title: how-routing-preference-works
-  description: "This unit for routing preference explains how the routing preference works and the behavior of communication traffic depending on the option used."
-  ms.date: 10/19/2023
+  description: "Learn how routing preference works and the behavior of communication traffic depending on the option used."
+  ms.date: 04/08/2024
   author: asudbring
   ms.author: allensu
   ms.topic: unit

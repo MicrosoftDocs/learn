@@ -2,7 +2,7 @@ As mentioned earlier in this module, observability is one of the fundamental asp
 
 ## What is the role of performance monitoring in observability?
 
-In the context of observability, performance monitoring relies on collecting real-time telemetry, such as metrics, logs, and traces to evaluate overall health of your workloads. Metrics contain quantitative data, logs offer detailed information about events, and traces enable data correlation across distributed systems. To perform the evaluation, you also need to develop a health model, representing the operational status of the workloads under normal working conditions. Performance monitoring uses the health model to detect anomalies, performance bottlenecks, and performance-related issues as soon as they occur.
+In the context of observability, performance monitoring relies on collecting real-time telemetry, such as metrics, logs, and traces to evaluate the overall health of your workloads. Metrics contain quantitative data, logs offer detailed information about events, and traces enable data correlation across distributed systems. To perform the evaluation, you also need to develop a health model, representing the operational status of the workloads under normal working conditions. Performance monitoring uses the health model to detect anomalies, performance bottlenecks, and performance-related issues as soon as they occur.
 
 Data collected through performance monitoring is also essential in incident response. It provides a detailed status of the affected workloads prior to, during, and after the incident, which simplifies troubleshooting and helps minimize *mean time to resolution (MTTR)*. Other metrics that help assess effectiveness of performance monitoring include:
 

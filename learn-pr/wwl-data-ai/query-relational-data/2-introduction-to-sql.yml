@@ -4,11 +4,10 @@ title: Introduction to SQL
 metadata:
   title: Introduction to SQL
   description: "Introduction to SQL"
-  ms.date: 08/12/2021
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
 durationInMinutes: 7
 content: |
   [!include[](includes/2-introduction-to-sql.md)]

@@ -1,16 +1,16 @@
-Adding external data that doesn't reside in Azure is a common need in an organization's search solution. Azure Cognitive Search is flexible as it allows many ways to create and push data into indexes.
+Adding external data that doesn't reside in Azure is a common need in an organization's search solution. Azure AI Search is flexible as it allows many ways to create and push data into indexes.
 
 ## Push data into a search index using Azure Data Factory (ADF)
 
 A first approach is a zero-code option for pushing data into an index using ADF. ADF comes with connections to nearly 100 different data stores. With connectors like HTTP and REST that allow you to connect an unlimited number of data stores. These data stores are used as a source or a target (called sinks in the copy activity) in pipelines.
 
-The Azure Cognitive Search index connector can be used as a sink in a copy activity.
+The Azure AI Search index connector can be used as a sink in a copy activity.
 
 ### Create an ADF pipeline to push data into a search index
 
 The steps you need to take to use and ADF pipeline to push data into a search index are:
 
-1. Create an Azure Cognitive Search index with all the fields you want to store data in.
+1. Create an Azure AI Search index with all the fields you want to store data in.
 1. Create a pipeline with a copy data step.
 1. Create a data source connection to where your data resides.
 1. Create a sink to connect to your search index.
@@ -47,7 +47,7 @@ For example, imagine you've customer data in JSON format that is hosted external
 
 #### Create a search index
 
-Create an Azure Cognitive Search service and an index to store this information in. If you've completed the [Create an Azure Cognitive Search solution](/training/modules/create-azure-cognitive-search-solution/) module, then you've seen how to do this. Follow the steps to create the search service but stop at the point of importing data. As pushing data into an index doesn't need you to create an indexer or skillset.
+Create an Azure AI Search service and an index to store this information in. If you've completed the [Create an Azure AI Search solution](/training/modules/create-azure-cognitive-search-solution/) module, then you've seen how to do this. Follow the steps to create the search service but stop at the point of importing data. As pushing data into an index doesn't need you to create an indexer or skillset.
 
 Create an index and add these fields and properties:
 
@@ -89,11 +89,11 @@ Open the [Azure Data Factory Studio](https://adf.azure.com/) and select your Azu
 
 1. In **Destination type**, select **Azure Search**. Then select **+ New connection**.
 
-    :::image type="content" source="../media/create-search-linked-service-small.png" alt-text="A screenshot showing creating a linked service to cognitive search." lightbox="../media/create-search-linked-service.png":::
+    :::image type="content" source="../media/create-search-linked-service-small.png" alt-text="A screenshot showing creating a linked service to AI Search." lightbox="../media/create-search-linked-service.png":::
 
 1. In the **New connection** pane, in **Name** enter **search_index**.
 1. In **Azure subscription**, select your Azure subscription.
-1. In **Service name**, select your Azure Cognitive Search service.
+1. In **Service name**, select your Azure AI Search service.
 1. Select **Create**.
 1. On the **Destination data store** pane, in **Target**, select the search index you created.
 
@@ -123,11 +123,11 @@ The pipeline has been deployed and run. The JSON document will have been added t
 
 Following these steps you've seen how you can push data into an index. The pipeline you've created by default merges updates into the index. If you amended the JSON data and rerun the pipeline, the search index would be updated. You can change the write behavior to upload only if you want the data to be replaced each time you run your pipeline. 
 
-### Limitations of using the built-in Azure Cognitive Search as a linked service
+### Limitations of using the built-in Azure AI Search as a linked service
 
-At the moment, the Azure Cognitive Search linked service as a sink only supports these fields:
+At the moment, the Azure AI Search linked service as a sink only supports these fields:
 
-|Azure Cognitive Search data type  |
+|Azure AI Search data type  |
 |---------|
 |String     |
 |Int32     |

@@ -3,23 +3,35 @@ uid: learn.wwl.review-windows-powershell
 metadata:
   title: Review Windows PowerShell
   description: "Review Windows PowerShell"
-  ms.date: 07/04/2023
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
+  ai-usage: human-only
 title: Review Windows PowerShell
 summary: This module introduces you to Windows PowerShell and its versions. It discusses commonly used host applications. It explains how to use Microsoft Visual Studio Code (VS Code) to develop PowerShell scripts.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  *   Describe Windows PowerShell and its major versions.
-  *   Identify the common Windows PowerShell hosting applications.
-  *   Describe points to consider when using PowerShell.
-  *   Explain how to configure the Windows PowerShell console host.
-  *   Explain how to configure the Windows PowerShell ISE host.
-  *   Describe how to use VS Code for PowerShell scripting.
+
+  -   Describe Windows PowerShell and its major versions.
+
+  -   Identify the common Windows PowerShell hosting applications.
+
+  -   Describe points to consider when using PowerShell.
+
+  -   Explain how to configure the Windows PowerShell console host.
+
+  -   Explain how to configure the Windows PowerShell ISE host.
+
+  -   Describe how to use VS Code for PowerShell scripting.
 prerequisites: |
-  - Familiarity with Windows networking technologies and implementation.
-  - Familiarity with Windows Server administration, maintenance, and troubleshooting.
+  -   Familiarity with Windows networking technologies and implementation.
+
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting.
 iconUrl: /training/achievements/review-windows-powershell.svg
 levels:
 - intermediate
@@ -33,7 +45,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

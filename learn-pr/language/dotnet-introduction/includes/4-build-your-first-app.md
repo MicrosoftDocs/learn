@@ -1,13 +1,13 @@
-At the outset of this module, we assumed that you've already written a "Hello World" application by using C#. If you haven't, you might want to review this learning path's first module, [Write your first C# code](/training/modules/csharp-write-first/?azure-portal=true).
+At the outset of this module, we assumed that you had written a "Hello World" application by using C#. If you haven't, you might want to review this learning path's first module, [Write your first C# code](/training/modules/csharp-write-first/?azure-portal=true).
 
-For simplicity, we'll rewrite the "Hello World" application. This time, we'll take a .NET perspective and see what's happening behind the scenes.
+For simplicity, we're going to rewrite the "Hello World" application, but this time, we take a .NET perspective and see what's happening behind the scenes.
 
 ## Build a simple app by using C#
 
 Earlier, you learned that **Try .NET** provides an easy way to experiment with C# and .NET. You can use Try .NET without installing any software on your local computer.
 
 > [!Note]
-> In this module, you'll use a browser built-in version of Try .NET. If you want to experiment with the application after you finish this exercise, go to `https://try.dot.net`. Try .NET is a great way to try out small code examples without installing anything on your local computer.
+> In this module, you use a browser built-in version of Try .NET. If you want to experiment with the application after you finish this exercise, go to `https://try.dot.net`. Try .NET is a great way to try out small code examples without installing anything on your local computer.
 
 ### Step 1 - Write the code
 
@@ -16,7 +16,8 @@ In the .NET editor, on the right side of this web page, type the following code 
 ```csharp-interactive
 Console.WriteLine("Hello world!");
 ```
-As you learned in the prerequisite module, "Hello world" is a simple and canonical code example that developers write to understand the basic syntax of new programming languages. You could learn a lot about the C# syntax from this simple example. For now, we'll use it to learn more about .NET specifically.
+
+As you learned in the prerequisite module, "Hello world" is a simple and canonical code example that developers write to understand the basic syntax of new programming languages. You could learn a lot about the C# syntax from this simple example. For now, we use it to learn more about .NET specifically.
 
 ### Step 2 - Run the code
 
@@ -47,15 +48,15 @@ The in-browser Try .NET environment uses the same steps you learned about earlie
 
 Focusing on that expanded view of the code, you can see a series of curly braces `{ }`. C# uses a pair of curly braces to define a *code block*. Different kinds of code blocks are used for different purposes.
 
-The code `public static void Main()` and its set of curly braces define a type of code block called a *method*. A method contains a grouping of code that works toward a single purpose or responsibility in your software system.
+The code `public static void Main()` including the set of curly braces, define a type of code block called a *method*. A method contains a grouping of code that works toward a single purpose or responsibility in your software system.
 
 In this case, the method contains only one line of code, and its purpose is to display a message. Larger programs can have hundreds or thousands of methods.
 
 Methods are organized inside other code blocks called classes. A *class* can contain one or more methods. All of the methods in a class have a related purpose in the system. The class in the preceding code is named `Program`.
 
-In your inserted line of code, `Console.WriteLine()` is *calling*, or running, the method `WriteLine()`. The method `WriteLine()` is contained in the class `Console`.  
+In your inserted line of code, `Console.WriteLine()` is *calling*, or running, the method `WriteLine()`. The method `WriteLine()` is contained in the class `Console`. 
 
-Where is this code?  It's in the base class library. Actually, its full name is `System.Console.WriteLine()`.  In the preceding code, you see that the first line is:
+Where is this code? It's in the base class library. Actually, its full name is `System.Console.WriteLine()`. In the preceding code example, you see the first line is:
 
 ```csharp
 using System;
@@ -64,9 +65,9 @@ using System;
 The word `System` is omitted in your call to `Console.WriteLine()`. But the first line of code `using System;` tells the C# compiler to look in the base class library if it can't find the method definition in your code.
 
 > [!NOTE]
-> Don't worry about C#-specific terms terms like method, class, System, and using. You can learn about those later. We'll focus right now on the process of compiling and executing your code.
+> Don't worry about C#-specific terms like method, class, System, and using. You can learn about those later. We'll focus right now on the process of compiling and executing your code.
 
-### What happens to your code after it's inserted into the Main() method?
+### What happens to your code after you insert it into the Main() method?
 
 The most important part of this exercise is what happens after the code you write is inserted into a `Main()` method. Keep in mind that the following process happens on a server on your behalf.
 

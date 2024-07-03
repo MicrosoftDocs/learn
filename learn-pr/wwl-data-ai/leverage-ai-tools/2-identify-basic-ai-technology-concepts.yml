@@ -4,10 +4,12 @@ title: Identify basic AI technology concepts
 metadata:
   title: Identify basic AI technology concepts
   description: "Identify basic AI technology concepts"
-  ms.date: 01/09/2024
+  ms.date: 04/08/2024
   author: Adriamen
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/2-identify-basic-ai-technology-concepts.md)]

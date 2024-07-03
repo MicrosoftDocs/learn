@@ -13,7 +13,7 @@ prerequisites: |
   -   Experience with hybrid and cloud implementations.
 summary: |
   Learn how to design solutions to secure data and applications, including: Microsoft 365, application development, existing application portfolios, data discovery and classification with Microsoft Purview and data security for Azure workloads.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/sc-100-design-security-solutions-applications-data.svg
 levels:
 - advanced
 roles:

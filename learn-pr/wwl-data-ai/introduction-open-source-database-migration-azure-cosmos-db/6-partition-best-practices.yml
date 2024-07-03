@@ -4,11 +4,12 @@ title: Cosmos DB provisioning best practices
 metadata:
   title: Cosmos DB provisioning best practices
   description: "Cosmos DB provisioning best practices"
-  ms.date: 01/07/2021
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/6-partition-best-practices.md)]

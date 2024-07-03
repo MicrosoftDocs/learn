@@ -2,27 +2,37 @@
 uid: learn.wwl.design-implement-private-access-to-azure-services
 metadata:
   title: Design and implement private access to Azure Services
-  description: "You'll learn to design and implement private access to Azure Services with Azure Private Link, and virtual network service endpoints."
-  ms.date: 10/25/2023
+  description: "You learn to design and implement private access to Azure Services with Azure Private Link, and virtual network service endpoints."
+  ms.date: 04/11/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom:
   - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Design and implement private access to Azure Services
 summary: You'll learn to design and implement private access to Azure Services with Azure Private Link, and virtual network service endpoints.
 abstract: |
-  At the end of this module, you'll be able to:
-  *   Explain virtual network service endpoints
-  *   Define Private Link Service and private endpoints
-  *   Integrate private endpoints with DNS
-  *   Design and configure private endpoints
-  *   Design and configure access to service endpoints
-  *   Integrate your App Service with Azure virtual networks
+  In this module, you will:
+
+  -   Explain virtual network service endpoints.
+
+  -   Define Private Link Service and private endpoints.
+
+  -   Integrate private endpoints with DNS.
+
+  -   Design and configure private endpoints.
+
+  -   Design and configure access to service endpoints.
+
+  -   Integrate your App Service with Azure virtual networks.
 prerequisites: |
-  - You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
-  - You should have experience with network connectivity methods, such as VPN or WAN
-  - You should have experience with the Azure portal and Azure PowerShell
+  -   You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing.
+
+  -   You should have experience with network connectivity methods, such as VPN or WAN.
+
+  -   You should have experience with the Azure portal and Azure PowerShell.
 iconUrl: /training/achievements/design-and-implement-private-access-to-azure-services.svg
 levels:
 - intermediate

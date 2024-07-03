@@ -4,7 +4,7 @@ title: "Foundations of incident response"
 metadata:
   title: "Foundations of incident response"
   description: "Foundations of incident response"
-  ms.date: 05/07/2020
+  ms.date: 02/28/2024
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
@@ -19,32 +19,32 @@ quiz:
 
   - content: 'Which of these things is a pillar of incident response?'
     choices:
-    - content: 'rosters'
+    - content: 'Rosters'
       isCorrect: false
-      explanation: 'Rosters are one of the pillars, but this is not the most correct answer.'
-    - content: 'roles'
+      explanation: 'Rosters are one of the pillars, but not the only one.'
+    - content: 'Roles'
       isCorrect: false
-      explanation: 'Roles are one of the pillars, but this is not the most correct answer.'
-    - content: 'rotations'
+      explanation: 'Roles are one of the pillars, but not the only one.'
+    - content: 'Rotations'
       isCorrect: false
-      explanation: 'Rotations are one of the pillars, but this is not the most correct answer.'
-    - content: 'all of the above'
+      explanation: 'Rotations are one of the pillars, but not the only one.'
+    - content: 'All of these'
       isCorrect: true
-      explanation: 'Correct, they are all pillars of effective incident response.'
+      explanation: 'Correct, all of these are pillars of effective incident response.'
       
 
-  - content: 'What does the role of scribe do as part of incident response?'
+  - content: 'What does scribe role do as part of incident response?'
     choices:
-    - content: 'writes up the post-incident review'
+    - content: 'Writes up the post-incident review'
       isCorrect: false
-      explanation: 'Though they may do this later, this is not the main purpose of this role.'
-    - content: 'creates a verbatim transcript for a call bridge'
+      explanation: 'Though they might do this later, this role has a different main purpose.'
+    - content: 'Creates a verbatim transcript for a call bridge'
       isCorrect: false
-      explanation: 'The scribe captures all the data possible – not just what team members are doing but also what they’re saying and even what they’re feeling or experiencing.'
-    - content: 'keeps track of the metrics in the monitoring system that are important'
+      explanation: 'The scribe captures all the data possible, not just what team members are doing but also what they’re saying and even what they’re feeling or experiencing.'
+    - content: 'Keeps track of the metrics in the monitoring system that are important'
       isCorrect: false
-      explanation: 'This is not the role of the scribe during incident response.'
-    - content: 'documents the conversation around incident in as much detail as possible'
+      explanation: 'The scribe has a different role during incident response.'
+    - content: 'Documents the conversation around incident in as much detail as possible'
       isCorrect: true
       explanation: 'Correct.'
 

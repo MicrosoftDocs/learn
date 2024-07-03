@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/13/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are key considerations when integrating Azure OpenAI Service into applications?"
+    choices:
+      - content: "User interface design"
+        isCorrect: false
+        explanation: "Incorrect. While important, the integration involves more than just UI design, focusing on secure and responsible AI use."
+      - content: "Security features and ethical AI usage"
+        isCorrect: true
+        explanation: "Correct. When integrating Azure OpenAI, it's crucial to consider security and ethical implications of AI use."
+      - content: "Replacing all existing systems with AI"
+        isCorrect: false
+        explanation: "Incorrect. Integration typically supplements rather than replaces existing systems."
+  - content: "How does Retrieval Augmentation Generation (RAG) enhance language model responses?"
+    choices:
+      - content: "By reducing the computational resources needed"
+        isCorrect: false
+        explanation: "Incorrect. RAG primarily enhances responses by using extra data sources for more accurate and relevant answers, not by reducing resource usage."
+      - content: "By providing grounding data from vector databases"
+        isCorrect: true
+        explanation: "Correct. RAG systems use an information retrieval component to provide grounding data from vector databases, enhancing the relevance and accuracy of responses."
+      - content: "By translating responses into multiple languages automatically"
+        isCorrect: false
+        explanation: "Incorrect. RAG's main enhancement isn't translation but improving the responses making them more contextual and relevant."
+  - content: "How do you generate embeddings for use in vCore-based Azure Cosmos DB for MongoDB?"
+    choices:
+      - content: "By manually encoding data points"
+        isCorrect: false
+        explanation: "Incorrect. Embeddings are typically generated using machine learning models, not manually."
+      - content: "Using Azure OpenAI's API to create numerical embeddings"
+        isCorrect: true
+        explanation: "Correct. Azure OpenAI's API is used to generate numerical embeddings from text, which can then be stored in vector columns for vector search."
+      - content: "By direct input from database administrators"
+        isCorrect: false
+        explanation: "Incorrect. While database administrators configure the system, embeddings generate automatically by machine learning algorithms, not by administrators."

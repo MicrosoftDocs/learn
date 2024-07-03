@@ -20,7 +20,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk
 - learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed

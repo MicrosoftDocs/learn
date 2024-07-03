@@ -1,20 +1,20 @@
 Orleans simplifies the process of building distributed, scalable applications. There are several key concepts to understand  in order to work with Orleans effectively.
 
-Orleans is built around the "actor model", which is an established design pattern that has exited since the 1970s. Although a deep understanding of the actor model isn't required for getting started with Orleans, you'll want to become familiar with this pattern as you build more complex apps. For now, you can easily complete the exercises ahead with a basic understanding of a few important concepts, such as grains and silos.
+Orleans is built around the *actor model*, which is an established design pattern in use since the 1970s. Although a deep understanding of the actor model isn't required for getting started with Orleans, it helps to become familiar with this pattern as you build more complex apps. For now, you can easily complete the exercises ahead with a basic understanding of a few important concepts, such as grains and silos.
 
 ## What are Grains?
 
-Grains are the most essential primitives and building blocks of Orleans applications. They represent actors in the Actor model and define the state data and behavior of an entity, such as shopping cart or product. Grains are each identified and tracked through user-defined keys and can be accessed by other grains and clients.
+Grains are the most essential primitives and building blocks of Orleans applications. They represent actors in the Actor model and define the state data and behavior of an entity, such as shopping cart or product. Grains are each identified and tracked through user-defined keys and other grains and clients can access them.
 
 :::image type="content" source="../media/grain-visual.png" alt-text="A diagram of the anatomy of a grain.":::
 
-Grains are stored in silos, which you explore later. Grains that are currently active and in use by your application will remain in memory, while inactive grains can be persisted in storage. A grain becomes active again when it's needed or requested by the app. Grains have a managed life cycle, which means the Orleans runtime handles activating, deactivating, storing and locating grains as needed by the application. Developers don't have to worry about managing these concerns themselves and can write code that assumes a grain is available in memory.
+Grains are stored in silos, which you explore later. Grains that are currently active and in use by your application remain in memory, while inactive grains can be persisted in storage. A grain becomes active again when the app needs it or requests it. Grains have a managed life cycle, which means the Orleans runtime handles activating, deactivating, storing, and locating grains as needed by the application. Developers don't have to worry about managing these concerns themselves and can write code that assumes a grain is available in memory.
 
 :::image type="content" source="../media/grain-lifecycle.png" alt-text="A diagram of the grain life cycle.":::
 
 ## How are grains implemented?
 
-In more concrete coding terms, a grain is a class that inherits from the `Grain` base class. The `Grain` class manages various internal behaviors and integration points with the Orleans framework. Your grain classes should also implement one of the grain interface types listed below. Each of these interfaces defines a similar contract, but marks your class with a different data type for the identifier that Orleans uses to track the grain, such as a `string` or `integer`.
+In more concrete coding terms, a grain is a class that inherits from the `Grain` base class. The `Grain` class manages various internal behaviors and integration points with the Orleans framework. Your grain classes should also implement one of the grain interface types in the following list. Each of these interfaces defines a similar contract, but marks your class with a different data type for the identifier that Orleans uses to track the grain, such as a `string` or `integer`.
 
 - `IGrainWithGuidKey`
 - `IGrainWithIntegerKey`
@@ -74,4 +74,4 @@ builder.Host.UseOrleans(siloBuilder =>
 });
 ```
 
-Orleans supports plenty of other features for more specific or advanced scenarios, such as streams and ACID transactions. These capabilities can be explored as you start to build more complex apps. Next you'll create a basic application and apply some basic configurations to begin use Orleans.
+Orleans supports plenty of other features for more specific or advanced scenarios, such as streams and ACID transactions. These capabilities can be explored as you start to build more complex apps. Next you create a basic application and apply some basic configurations to begin use Orleans.

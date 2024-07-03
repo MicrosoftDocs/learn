@@ -8,8 +8,7 @@ metadata:
   author: johnmarco
   ms.author: johnmarc
   ms.topic: unit
-  ms.custom:
-    - devx-track-ansible
+  ms.custom: devx-track-ansible, linux-related-content
 durationInMinutes: 10
 content: |
   [!include[](includes/4-options-for-managing-multiple-systems.md)]

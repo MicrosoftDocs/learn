@@ -3,7 +3,7 @@ uid: learn.reactors.blockchain-tokens.6-write-token-project
 metadata:
   title: Exercise - Write an ERC20 token contract
   description: Add a new token smart contract to the Truffle project.
-  ms.date: 10/16/2020
+  ms.date: 02/11/2022
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: unit

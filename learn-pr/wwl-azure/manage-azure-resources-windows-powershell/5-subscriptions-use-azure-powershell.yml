@@ -4,12 +4,11 @@ title: Manage Azure subscriptions by using Azure PowerShell
 metadata:
   title: Manage Azure subscriptions by using Azure PowerShell
   description: "Manage Azure subscriptions by using Azure PowerShell"
-  ms.date: 10/20/2022
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-  ms.custom:
-    - devx-track-azurepowershell
+  ms.custom: N/A, devx-track-azurepowershell
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

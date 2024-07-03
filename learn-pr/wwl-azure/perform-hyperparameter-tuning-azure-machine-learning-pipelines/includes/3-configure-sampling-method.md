@@ -51,13 +51,13 @@ sweep_job = command_job_for_sweep.sweep(
 
 You may want to be able to reproduce a random sampling sweep job. If you expect that you do, you can use Sobol instead. Sobol is a type of random sampling that allows you to use a seed. When you add a seed, the sweep job can be reproduced, and the search space distribution is spread more evenly.
 
-The following code example shows how to use Sobol by adding a seed and a rule, and using the `RandomParameterSampling` class:
+The following code example shows how to use Sobol by adding a seed and a rule, and using the `RandomSamplingAlgorithm` class:
 
 ```python
-from azure.ai.ml.sweep import RandomParameterSampling
+from azure.ai.ml.sweep import RandomSamplingAlgorithm
 
 sweep_job = command_job_for_sweep.sweep(
-    sampling_algorithm = RandomParameterSampling(seed=123, rule="sobol"),
+    sampling_algorithm = RandomSamplingAlgorithm(seed=123, rule="sobol"),
     ...
 )
 ```

@@ -33,8 +33,6 @@ products:
   - azure-kubernetes-service
   - azure-container-registry
   - github
-subjects:
-- development-tools
 units:
   - learn.aks-deployment-pipeline-github-actions.1-introduction
   - learn.aks-deployment-pipeline-github-actions.2-what-is-continuous-integration

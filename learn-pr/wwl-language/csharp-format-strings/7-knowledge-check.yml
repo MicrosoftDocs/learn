@@ -3,11 +3,13 @@ uid: learn.languages.csharp-format-strings.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 02/21/2024
+  description: "Check what you learn in this module."
+  ms.date: 05/20/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -33,7 +35,7 @@ quiz:
       explanation: "Incorrect. `H` isn't a known format specifier."
     - content: "`0:N2`"
       isCorrect: true
-      explanation: "Correct. `N2` is the correct format specifier!"
+      explanation: "Correct. `N2` is the correct format specifier."
   - content: "Which character must be used as a directive to perform string interpolation?"
     choices:
     - content: "`$`"

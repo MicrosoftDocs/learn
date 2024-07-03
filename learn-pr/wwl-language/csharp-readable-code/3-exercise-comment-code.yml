@@ -4,10 +4,12 @@ title: Exercise - Create effective code comments
 metadata:
   title: Exercise - Create effective code comments
   description: "Exercise - Create effective code comments"
-  ms.date: 02/21/2024
+  ms.date: 05/27/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 13
 content: |
   [!include[](includes/3-exercise-comment-code.md)]

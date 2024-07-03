@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 04/29/2021
+  ms.date: 02/22/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
@@ -22,9 +22,9 @@ quiz:
     - content: "Azure IoT Central"
       isCorrect: true
       explanation: "Correct. This service implements a wide range of IoT capabilities, including telemetry collection, processing, analytics, and secure device management."
-    - content: "Azure Event Hub"
+    - content: "Azure Event Hubs"
       isCorrect: false
-      explanation: "Incorrect. This service offers autoscalable ingestion of telemetry data at high throughput rates, but it's not optimized for IoT scenarios. For example, it doesn't support device management."
+      explanation: "Incorrect. This service offers autoscalable ingestion of telemetry data at high throughput rates, but isn't optimized for IoT scenarios. For example, it doesn't support device management."
   - content: 'Which of the following features distinguishes Azure Cosmos DB from Azure SQL Database?'
     choices:
     - content: "Geo-replication"
@@ -43,7 +43,7 @@ quiz:
       explanation: "Incorrect. Azure IoT Central offers interval-based export to Azure Storage."
     - content: "Azure Cosmos DB"
       isCorrect: false
-      explanation: "Incorrect. Azure IoT Central offers continuous data export to Azure Event Hub, Azure Service Bus, and custom webhooks."
-    - content: "Azure Event Hub"
+      explanation: "Incorrect. Azure IoT Central offers continuous data export to Azure Event Hubs, Azure Service Bus, and custom webhooks."
+    - content: "Azure Event Hubs"
       isCorrect: true
-      explanation: "Correct. Azure IoT Central offers continuous data export to Azure Event Hub, Azure Service Bus, and custom webhooks."
+      explanation: "Correct. Azure IoT Central offers continuous data export to Azure Event Hubs, Azure Service Bus, and custom webhooks."

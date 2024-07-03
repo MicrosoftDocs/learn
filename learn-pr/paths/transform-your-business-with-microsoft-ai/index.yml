@@ -2,16 +2,15 @@
 uid: learn.wwl.transform-your-business-with-microsoft-ai
 metadata:
   title: Transform your business with Microsoft AI
-  description: Transform your business with Microsoft AI
-  ms.date: 12/08/2023
+  description: In this learning path, business leaders will find the knowledge and resources to adopt AI in their organizations. It explores planning, strategizing, and scaling AI projects in a responsible way.
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: learning-path
-  ms.service: microsoft-365
 title: Transform your business with Microsoft AI
 prerequisites: |
-  * Basic understanding of IT concepts.
-  * Basic understanding of business concepts.
+  -   Basic understanding of IT concepts.
+  -   Basic understanding of business concepts.
 summary: |
   In this learning path, business leaders will find the knowledge and resources to adopt AI in their organizations. It explores planning, strategizing, and scaling AI projects in a responsible way.
   
@@ -21,7 +20,7 @@ summary: |
   - [Discover Microsoft AI for AI leaders in sustainability](/training/paths/discover-microsoft-ai-leaders-sustainability/)
   - [Discover Microsoft AI for AI leaders in retail](/training/paths/discover-microsoft-ai-leaders-retail/)
   - [Discover Microsoft AI for AI leaders in manufacturing](/training/paths/discover-microsoft-ai-leaders-manufacturing/)
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/transform-your-business-with-microsoft-ai.svg
 levels:
 - beginner
 roles:
@@ -31,7 +30,6 @@ products:
 - azure-openai
 subjects:
 - artificial-intelligence
-- data-ai
 modules:
 - learn.wwl.leverage-ai-tools
 - learn.wwl.create-business-value

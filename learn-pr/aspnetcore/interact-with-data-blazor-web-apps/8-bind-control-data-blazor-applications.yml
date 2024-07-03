@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Bind controls to data in Blazor applications
   description: "Learn how to bind controls to fields, properties, and expressions in Blazor for more interactive user interfaces."
-  ms.date: 8/13/2021
+  ms.date: 02/09/2023
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl

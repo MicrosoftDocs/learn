@@ -1,14 +1,14 @@
-As you can see in the following graphic, confidential computing closes a gap in data encryption capabilities by enabling encryption while data is in memory and being processed. Confidential computing protects sensitive or highly regulated datasets and application workloads in a secure public cloud platform. In addition, confidential computing extends beyond existing solutions that protect data at rest and in transit. 
+As shown in the following graphic, confidential computing closes a gap in data-encryption capabilities by enabling encryption while data is in memory and being processed. Confidential computing protects sensitive or highly regulated datasets and application workloads in a secure public-cloud platform. In addition, confidential computing extends beyond existing solutions that protect data at rest and in transit. 
 
-![Graphic of three states of data protection, with confidential computing's data in use highlighted.](../media/confidential-computing-diagram.png)
+![Diagram of three states of data protection, with confidential computing's data in use highlighted.](../media/confidential-computing-diagram.png)
 
-Confidential computing is an industry term defined by the [Confidential Computing Consortium](https://confidentialcomputing.io/) (CCC) &mdash; a foundation dedicated to defining and accelerating the adoption of confidential computing. The CCC defines confidential computing as: "The protection of data in use by performing computations in a hardware-based, attested Trusted Execution Environment (TEE)."
+Confidential computing is an industry term defined by the [Confidential Computing Consortium](https://confidentialcomputing.io/) (CCC), a foundation dedicated to defining and accelerating the adoption of confidential computing. The CCC defines confidential computing as: "The protection of data in use by performing computations in a hardware-based, attested Trusted Execution Environment (TEE)."
 
-A TEE enforces execution of only authorized code. Any data in the TEE can't be read or tampered with by any code outside of the TEE. TEEs form the basis of the confidential computing threat model, which aims at removing or reducing the ability for a cloud provider operator and other actors in the tenant's domain to access code and data while they're being executed.
+A TEE enforces execution of only authorized code. Any code outside of the TEE can't read or tamper with any data in the TEE. TEEs form the basis of the confidential computing threat model, which aims to remove or reduce the ability for a cloud provider operator and other actors in the tenant's domain to access code and data while they're being executed.
 
-TEEs are also being used to protect proprietary business logic, analytics functions, machine learning algorithms, or entire applications.
+TEEs are also used to protect proprietary business logic, analytics functions, machine learning algorithms, or entire applications.
 
-Because you're focused on cloud migration, you also want to understand how these concepts work in the cloud. As you find out, Azure confidential computing isn't a single technology, it's multiple technologies working together to help increase trust in Azure for sensitive workloads. 
+Because you're focused on cloud migration, you also want to understand how these concepts work in the cloud. As you find out, Azure confidential computing isn't a single technology; it's multiple technologies working together to help increase trust in Azure for sensitive workloads. Azure confidential computing helps you:
 
 - Prevent unauthorized access to data, with little to no change from existing practices. Meet regulatory compliance needs. Keep full control of data to satisfy government regulations for protecting personal information and secure organizational IP.
 
@@ -18,11 +18,11 @@ Because you're focused on cloud migration, you also want to understand how these
 
 Microsoft offers multiple technologies for confidential computing.  
 
-#### Foundational technologies
+### Foundational technologies
 
 | **Item** | **Description** | **Purpose** |
 |---|---|---|
-| Virtual machines | Multiple options from AMD and Intel support confidential computing. | Create confidential computing from raw virtual machines. |
+| Virtual machines | Multiple options from AMD and Intel support confidential computing | Create confidential computing from raw virtual machines. |
 | [Microsoft Azure Attestation](/azure/attestation/overview) | The remote attestation service in Azure | Use for validating the trustworthiness of multiple TEEs and verifying the integrity of the binaries running inside the TEEs. |
 | [Azure Key Vault Managed HSM](/azure/key-vault/managed-hsm/) | A cloud service that enables you to safeguard cryptographic keys for your cloud applications | Store and manage your private keys in a fully managed, highly available, single-tenant, standards-compliant service that uses FIPS 140-2 Level 3 validated hardware security modules (HSM). |
 | [Trusted Launch](/azure/virtual-machines/trusted-launch) | A feature set in Generation 2 VMs that brings hardened security features to virtual machines in Azure | Protect against boot kits, rootkits, and kernel-level malware with a secure boot and virtual trusted platform module with boot integrity monitoring. |
@@ -46,9 +46,9 @@ The services in the portfolio provide vectors of protection, including from thes
 - Physical access to the systems
 - Collaborators for both data and IP
 
-As you can see, multiple options help you protect sensitive workloads in Azure. Which options you use depends on several factors. For example, is the application greenfield or are you migrating it to Azure? 
+There are multiple options to help you protect sensitive workloads in Azure. Which options you use depends on several factors. For example: is the application greenfield, or are you migrating it to Azure?
 
-If you're migrating applications, it might be easier to create new confidential computing virtual machines and then migrate said applications to the raw VMs. You can also deploy [containers that use those VM types](/azure/confidential-computing/confidential-node-pool-aks). 
+If you're migrating applications, it might be easier to create new confidential computing virtual machines and then migrate said applications to the raw VMs. You can also deploy [containers that use those VM types](/azure/confidential-computing/confidential-node-pool-aks).
 
 If you're building a new application on Azure, what use case are you trying to address? Depending on your needs, one of the other services can help. For example, Always Encrypted with secure enclaves in Azure SQL or Azure Confidential Ledger.
 

@@ -4,11 +4,12 @@ title: Explore AI goals and challenges in retail
 metadata:
   title: Explore AI goals and challenges in retail
   description: "Explore AI goals and challenges in retail"
-  ms.date: 11/24/2023
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-  ms.service: azure-ai-services
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/2-explore-ai-goals-challenges-retail.md)]

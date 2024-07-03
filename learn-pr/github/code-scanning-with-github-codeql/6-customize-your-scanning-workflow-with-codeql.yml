@@ -5,35 +5,10 @@ metadata:
   unitType: learning-content
   title: "Customize your code scanning workflow with CodeQL - Part 1" # user input: module title for browser tab and search results
   description: "Learn how to edit a workflow file to reference other queries and how to use queries from query packs." # user input: a description for site search and SEO
-  ms.date: 2/15/2022
-  author: hrasheed-msft
-  ms.author: hrasheed
+  ms.date: 04/11/2024
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 10 # user input: the estimate time to complete the unit
 content: |
     [!include[](includes/6-customize-your-scanning-workflow-with-codeql.md)]
-quiz:
-  title: Customize your code scanning workflow with CodeQL - Part 1
-  questions:
-  - content: "What options are available for referencing other queries in a workflow file?"
-    choices:
-    - content: "Workflow files can only reference query packs."
-      isCorrect: false
-      explanation: "Incorrect. Query packs aren't the only option for referencing other queries."
-    - content: "Workflow files can only reference individual query files (.ql) or query suite files (.qls)."
-      isCorrect: false
-      explanation: "Incorrect. Individual query files and query suite file aren't the only option for referencing other queries."
-    - content: "Workflow files can reference query packs, individual query files, and query suite files."
-      isCorrect: true
-      explanation: "Correct!"
-  - content: "What is the method for ensuring that any packs or queries referenced in a custom configuration file are run in addition to the ones included in the workflow file?"
-    choices:
-    - content: "Prefix the value of packs or queries in the workflow file with the `+` symbol."
-      isCorrect: true
-      explanation: "Correct!"
-    - content: "Prefix the value of packs or queries in the custom configuration file with the `+` symbol."
-      isCorrect: false
-      explanation: "Incorrect. The '+' symbol isn't added in the custom configuration file."
-    - content: "Prefix the value of packs or queries in the custom configuration file with the `join` keyword."
-      isCorrect: false
-      explanation: "Incorrect. The word 'join' isn't used as a keyword in the custom configuration file."

@@ -3,7 +3,7 @@ uid: learn.languages.aspnetcore-accessibility.4-accessible-web-forms
 metadata:
   title: Find and fix form accessibility issues by using Accessibility Insights for Web
   description: Find and fix form accessibility issues by using Accessibility Insights for Web.
-  ms.date: 04/20/2021
+  ms.date: 02/13/2024
   author: jongalloway
   ms.author: jogallow
   ms.manager: markl
@@ -15,17 +15,17 @@ content: |
 quiz:
     title: Check your knowledge
     questions:
-    - content: "What HTML element should be associated with every form input field to provide context to screen readers?"
+    - content: "What HTML element should be associated with every input field on your form to provide context to screen readers?"
       choices:
       - content: "Alt text"
         isCorrect: false
-        explanation: "Alt text is used to provide descriptions for images, not form fields."
+        explanation: "Alt text is used to provide descriptions for images, not fields on a form."
       - content: "Label"
         isCorrect: true
-        explanation: "Correct. The `Label` element is used to describe HTML form elements and is understood by screen readers."
+        explanation: "Correct. The `Label` element is used to describe HTML form elements and screen readers understand it."
       - content: "Name"
         isCorrect: false
-        explanation: "The `Name` attribute is used to identify the data that the form field submits to the server. It's not used for accessibility."
+        explanation: "The `Name` attribute is used to identify the data that the form field submits to the server. It isn't used for accessibility."
       - content: "Description"
         isCorrect: false
-        explanation: "`Description` is not an HTML element."
+        explanation: "`Description` isn't an HTML element."

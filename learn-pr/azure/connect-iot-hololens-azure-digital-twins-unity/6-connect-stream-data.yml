@@ -4,7 +4,7 @@ title: Exercise - Connect and stream Azure Digital Twin data to wind turbine ass
 metadata:
   title: Exercise - Connect and stream Azure Digital Twin data to wind turbine assets
   description: Learn how to connect and stream Azure Digital Twin data to the wind turbine assets in your Unity project.
-  ms.date: 05/12/2021
+  ms.date: 10/10/2023
   author: JBrentJ
   ms.author: jejacks
   ms.topic: unit

@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: cosmos-db
 title: Create resource template for Azure Cosmos DB for NoSQL
 summary: Learn about automated Azure Cosmos DB for NoSQL resource deployments using the Azure Resource Manager with JSON and Bicep templates.
@@ -25,8 +25,6 @@ roles:
 - developer
 products:
 - azure-cosmos-db
-subjects:
-- development-tools
 units:
 - learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.introduction
 - learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.understand-azure-resource-manager-resources

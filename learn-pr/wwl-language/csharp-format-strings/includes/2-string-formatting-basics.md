@@ -1,4 +1,3 @@
-
 In this unit, you learn methods to format strings for efficient display, especially for cases using multiple variables.
 
 ### Prepare your coding environment
@@ -21,7 +20,9 @@ This module includes hands-on activities that guide you through the process of b
 
 1. On the Visual Studio Code **Terminal** menu, select **New Terminal**.
    Notice that a command prompt in the Terminal panel displays the folder path for the current folder. For example:  
-   ```dos   C:\Users\someuser\Desktop>   ```
+   ```dos
+   C:\Users\someuser\Desktop>
+   ```
 
 1. At the Terminal command prompt, to create a new console application in a specified folder, type **dotnet new console -o ./CsharpProjects/TestProject** and then press Enter.
    This .NET CLI command uses a .NET program template to create a new C# console application project in the specified folder location. The command creates the CsharpProjects and TestProject folders for you, and uses TestProject as the name of the `.csproj` file.
@@ -66,11 +67,19 @@ There are a few important things to notice about this code.
 > You may think it's odd to start with the number 0. Actually this is very common in software development. Whenever there's a sequence of items that can be identified using a number, the numbering will usually start at 0.
 
 1. Update your code as follows:
-   ```csharp   string first = "Hello";   string second = "World";   Console.WriteLine("{1} {0}!", first, second);   Console.WriteLine("{0} {0} {0}!", first, second);   ```
+   ```csharp
+   string first = "Hello";
+   string second = "World";
+   Console.WriteLine("{1} {0}!", first, second);
+   Console.WriteLine("{0} {0} {0}!", first, second);
+   ```
 
 1. Save your code file, and then use Visual Studio Code to run your code.
    You should see the following output:
-   ```Output   World Hello!   Hello Hello Hello!   ```
+   ```Output
+   World Hello!
+   Hello Hello Hello!
+   ```
 
 A few observations about these examples:
 
@@ -84,11 +93,21 @@ A few observations about these examples:
 Instead of using a numbered token and including the literal value or variable name in a list of arguments to `String.Format()` or `Console.WriteLine()`, you can just use the variable name inside of the curly braces.
 
 1. In order for a string to be interpolated, you must prefix it with the `$` directive. Now, create the same examples from earlier using string interpolation instead of composite formatting. Update your code as follows:
-   ```csharp   string first = "Hello";   string second = "World";   Console.WriteLine($"{first} {second}!");   Console.WriteLine($"{second} {first}!");   Console.WriteLine($"{first} {first} {first}!");   ```
+   ```csharp
+   string first = "Hello";
+   string second = "World";
+   Console.WriteLine($"{first} {second}!");
+   Console.WriteLine($"{second} {first}!");
+   Console.WriteLine($"{first} {first} {first}!");
+   ```
 
 1. Save your code file, and then use Visual Studio Code to run your code.
    You should see the following output:
-   ```Output   Hello World!   World Hello!   Hello Hello Hello!   ```
+   ```Output
+   Hello World!
+   World Hello!
+   Hello Hello Hello!
+   ```
 
 > [!NOTE]
 > If you look at code examples in books and online, you're likely to see both *composite formatting* and *string interpolation* used, but generally you should choose *string interpolation*.
@@ -168,7 +187,7 @@ Measurement: 123,456.7891 units
 
 ### Formatting percentages
 
-Use the `P` format specifier to format percentages. Add a number afterwards to control the number of values displayed after the decimal point. Update your code as follows:
+Use the `P` format specifier to format percentages and rounds to 2 decimal places. Add a number afterwards to control the number of values displayed after the decimal point. Update your code as follows:
 
 ```csharp
 decimal tax = .36785m;
@@ -178,7 +197,7 @@ Console.WriteLine($"Tax rate: {tax:P2}");
 If you're viewing this from the `en-US` culture, you observe the following output.
 
 ```Output
-Tax rate: 36.79 %
+Tax rate: 36.79%
 ```
 
 ### Combining formatting approaches

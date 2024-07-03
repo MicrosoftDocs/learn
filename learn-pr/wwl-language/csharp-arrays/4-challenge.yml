@@ -4,10 +4,12 @@ title: Exercise - Complete a challenge activity for nested iteration and selecti
 metadata:
   title: Exercise - Complete a challenge activity for nested iteration and selection statements
   description: "Exercise - Complete a challenge activity for nested iteration and selection statements"
-  ms.date: 01/22/2024
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/4-challenge.md)]

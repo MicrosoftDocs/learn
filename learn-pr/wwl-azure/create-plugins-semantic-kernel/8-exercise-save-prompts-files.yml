@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-plugins-semantic-kernel.exercise-save-prompts-files
+title: Exercise - Saving prompts to files
+metadata:
+  title: Exercise - Saving prompts to files
+  description: "Exercise - Save prompts to files"
+  ms.date: 06/11/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 15
+content: |
+  [!include[](includes/8-exercise-save-prompts-files.md)]

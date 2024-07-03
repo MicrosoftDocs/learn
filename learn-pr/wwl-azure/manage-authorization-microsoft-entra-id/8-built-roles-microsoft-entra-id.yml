@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authorization-microsoft-entra-id.built-roles-microsoft-entra-id
+title: Assign built-in roles in Microsoft Entra ID
+metadata:
+  title: Assign built-in roles in Microsoft Entra ID
+  description: "Assign built-in roles in Microsoft Entra ID"
+  ms.date: 06/25/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-built-roles-microsoft-entra-id.md)]

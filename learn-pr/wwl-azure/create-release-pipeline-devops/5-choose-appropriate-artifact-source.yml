@@ -4,11 +4,12 @@ title: Choose the appropriate artifact source
 metadata:
   title: Choose the appropriate artifact source
   description: "Choose the appropriate artifact source"
-  ms.date: 06/28/2023
+  ms.date: 05/28/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-choose-appropriate-artifact-source.md)]

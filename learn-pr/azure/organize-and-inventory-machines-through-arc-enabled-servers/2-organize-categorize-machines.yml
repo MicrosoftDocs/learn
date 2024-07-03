@@ -9,7 +9,6 @@ metadata:
   author: johnmarco
   ms.author: johnmarc
   ms.topic: unit
-  ms.prod: azure-arc-servers
 durationInMinutes: 8
 content: |
   [!include[](includes/2-organize-categorize-machines.md)]

@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.manager: markl
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: entity-framework
   ms.subservice: entity-framework-core
 title: Use a database with minimal API, Entity Framework Core, and ASP.NET Core
@@ -31,7 +31,7 @@ prerequisites: |
   - Familiarity with .NET
   - A basic understanding of what an API is
 subjects:
-- database
+- databases
 units:
   - learn.aspnetcore.build-web-api-minimal-database.introduction
   - learn.aspnetcore.build-web-api-minimal-database.what-is-entity-framework-core

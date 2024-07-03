@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.accelerate-nonprofit-funding-solutions-microsoft-copilot.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is a part of the Accelerate nonprofit funding solutions with Microsoft Copilot module.
+  ms.date: 5/30/2024
+  author: CourtneyHMicrosoft
+  ms.author: cohodge
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

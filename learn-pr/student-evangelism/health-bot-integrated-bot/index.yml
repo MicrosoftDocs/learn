@@ -26,7 +26,7 @@ products:
   - azure
 prerequisites: Complete the module titled "Enhanced health bot."
 subjects:
-- chatbot
+- chatbots
 units:
   - learn.health-bot-integrated-bot.1-introduction
   - learn.health-bot-integrated-bot.2-build-database

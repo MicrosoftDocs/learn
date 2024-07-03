@@ -34,7 +34,7 @@ roles:
 products:
 - dotnet
 subjects:
-- container
+- containers
 - custom-app-development
 units:
 - learn.languages.dotnet-deploy-microservices-kubernetes.introduction

@@ -4,12 +4,12 @@ title: 'Exercise: Connect two Azure virtual networks using global virtual networ
 metadata:
   title: 'Exercise: Connect two Azure virtual networks using global virtual network peering'
   description: "Exercise: Connect two Azure virtual networks using global virtual network peering"
-  ms.date: 08/16/2023
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/8-exercise-connect-two-azure-virtual-networks-global.md)]

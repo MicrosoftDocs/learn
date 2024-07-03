@@ -1,11 +1,11 @@
-﻿Now that you've created your Project, added issues and pull requests, and it's now organized, let's talk about how to:
+﻿Now that you've created your Project, added issues and pull requests, and organized it, let's talk about how to:
 
 - Provide visibility and access to your Project
 - And how to close and delete your Project
 
 ## Project visibility and access
 
-In this portion of the unit we'll go over the following:
+In this portion of the unit, we'll go over the following:
 
 - Who has visibility to your Project
 - Who has access and who can manage access to your Project
@@ -29,13 +29,11 @@ To change your Project's visibility:
 
 ### Who has access and who can manage access to your Project
 
-Access to your Project will depend if your Project is an organization-level Project or a personal/user-level Project, but managing access is very similar between the two levels.
+Access to your Project depends on if your Project is an organization-level Project or a personal/user-level Project, but managing access is similar between the two levels.
 
 ### Who can manage access to your Project
 
 Admins of organization-level Projects can manage access for the entire organization, for teams, for individual organization members, and for outside collaborators. Admins of user-level Projects can invite individual collaborators and manage their access.
-
-Types of Roles and access to your Project
 
 #### Organization level Project
 
@@ -68,7 +66,7 @@ Types of Roles and access to your Project
 
 You can add Projects to your team to give the whole team collaborator access to their Projects. When you add a Project to a team, that Project is listed on the team's Projects page, making it easier for members to identify which Projects a particular team uses.
 
-Teams are granted read permissions on any Project they're added to. To change permissions see the above section, "[Who has access and who can manage access to your Project](#who-has-access-and-who-can-manage-access-to-your-project)".
+Teams are granted read permissions on any Project they're added to. To change permissions, see the preceding section, "[Who has access and who can manage access to your Project](#who-has-access-and-who-can-manage-access-to-your-project)".
 
 Steps to adding Projects to teams:
 
@@ -82,7 +80,7 @@ Steps to adding Projects to teams:
 
 ### Adding a Project to a repository
 
-You can list relevant Projects in a repository so your team can access information they need to stay up-to-date. But it is worth noting you can only list Projects that are owned by the same user or organization that owns the repository. In order for repository members to see a Project listed in a repository, they must have visibility to the Project.
+You can list relevant Projects in a repository so your team can access information they need to stay up-to-date. But it's worth noting you can only list Projects that are owned by the same user or organization that owns the repository. In order for repository members to see a Project listed in a repository, they must have visibility to the Project.
 
 To change permissions see the above section, "[Who has access and who can manage access to your Project](#who-has-access-and-who-can-manage-access-to-your-project)".
 
@@ -99,15 +97,15 @@ Here are the steps to add a Project to a repository:
 
 ## Closing and deleting Projects
 
-Once you've completed a Project or you no longer need to use a Project you can either close or delete the project.
+Once you've completed a Project or you no longer need to use a Project, you can either close or delete the project.
 
-Closing a Project enables you to remove it from the list of Projects but retain the content and ability to re-open the Project later. This is the recommended option to preserve your data.
+Closing a Project enables you to remove it from the list of Projects but retain the content and ability to re-open the Project later. We recommend this option to preserve your data.
 
-Deleting a Project, however, will permanently remove your Project from the platform along with any saved views, custom fields and associated values, insights data, and drafted issues.
+Deleting a Project, however, permanently removes your Project from the platform along with any saved views, custom fields and associated values, insights data, and drafted issues.
 
 Regardless of which option you choose, both closing and deleting Project settings are in the same location.
 
-Below are steps on how to navigate to them:
+Here are steps on how to navigate to them:
 
 1. Navigate to your Project.
 1. In the top-right, click the three dots to open the menu.

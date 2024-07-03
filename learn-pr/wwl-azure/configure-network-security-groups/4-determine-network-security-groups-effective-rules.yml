@@ -4,12 +4,12 @@ title: Determine network security group effective rules
 metadata:
   title: Determine network security group effective rules
   description: "Determine network security group effective rules"
-  ms.date: 11/19/2023
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/4-determine-network-security-groups-effective-rules.md)]

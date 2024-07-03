@@ -30,7 +30,7 @@ products:
 - azure-migrate
 - azure-app-service
 subjects:
-- container
+- containers
 units:
 - learn.azure.migrate-aspnet-app-azure-app-service.introduction
 - learn.azure.migrate-aspnet-app-azure-app-service.containerization-overview

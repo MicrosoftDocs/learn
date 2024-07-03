@@ -3,25 +3,36 @@ uid: learn.languages.csharp-choose-data-type
 metadata:
   title: Choose the correct data type in your C# code
   description: "Choose the correct data type for your code from several basic types used in C#."
-  ms.date: 02/21/2024
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.service: azure
+  ms.custom:
+  - N/A
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
   ms.devlang: csharp
+  ai-usage: human-only
 title: Choose the correct data type in your C# code
 summary: Learn the difference between many data types, how they work, what they do, and how to choose one over another.
 abstract: |
-  -   Learn the fundamental differences between *value types* and *reference types*.
-  -   Describe the properties of many new numeric data types, including new *integral types* and *floating-point* types.
-  -   Write code that returns the maximum and minimum values that numeric data types can store.
-  -   Use the `new` keyword to create new instances of a reference type.
-  -   Determine which data type you should choose for a given application.
+  - Learn the fundamental differences between value types and reference types.
+
+  - Describe the properties of many new numeric data types, including new integral types and floating-point types.
+
+  - Write code that returns the maximum and minimum values that numeric data types can store.
+
+  - Use the new keyword to create new instances of a reference type.
+
+  - Determine which data type you should choose for a given application.
 prerequisites: |
-  -   Experience using basic data types like string, char, bool, int, and decimal.
-  -   Experience using string interpolation to combine variables in string templates.
-  -   Experience using code comments to comment out unused code.
-  -   Experience using Visual Studio Code to develop, build, and run C# code.
+  - Experience using basic data types like string, char, bool, int, and decimal.
+
+  - Experience using string interpolation to combine variables in string templates.
+
+  - Experience using code comments to comment out unused code.
+
+  - Experience using Visual Studio Code to develop, build, and run C# code.
 iconUrl: /training/achievements/csharp-choose-data-type.svg
 levels:
 - beginner

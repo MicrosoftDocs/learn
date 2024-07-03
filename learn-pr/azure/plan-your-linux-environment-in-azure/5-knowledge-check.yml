@@ -4,10 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 04/07/2023
-  author: chasecrum
-  ms.author: chasecrum
+  ms.date: 10/16/2023
+  author: fossygirl
+  ms.author: carols
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 8
 content: |
   [!include[](includes/5-knowledge-check.md)]

@@ -23,7 +23,7 @@ roles:
 products:
 - azure
 subjects:
-- business-continuity
+- site-reliability-engineering
 - devops
 modules:
 - learn.wwl.describe-high-availability-disaster-recovery-strategies

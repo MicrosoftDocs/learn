@@ -32,7 +32,7 @@ products:
   - azure
 subjects: 
   - cloud-computing
-  - data-ai
+  - data-management
 units:
 - learn.wwl.responsible-generative-ai.introduction
 - learn.wwl.responsible-generative-ai.plan-responsible-ai

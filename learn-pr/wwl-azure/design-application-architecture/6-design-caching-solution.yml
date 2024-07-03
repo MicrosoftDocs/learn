@@ -4,10 +4,12 @@ title: Design a caching solution
 metadata:
   title: Design a caching solution
   description: "Design a caching solution"
-  ms.date: 05/10/2023
+  ms.date: 02/28/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/6-design-caching-solution.md)]

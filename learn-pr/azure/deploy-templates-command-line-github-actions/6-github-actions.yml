@@ -4,7 +4,7 @@ title: Deploy ARM templates as part of your CI/CD efforts with GitHub Actions
 metadata:
   title: Deploy ARM templates as part of your CI/CD efforts with GitHub Actions
   description: Automate your deployment by running an ARM template in GitHub Actions
-  ms.date: 10/15/2020
+  ms.date: 03/13/2024
   author: pierreroman
   ms.author: pierrer
   ms.topic: unit

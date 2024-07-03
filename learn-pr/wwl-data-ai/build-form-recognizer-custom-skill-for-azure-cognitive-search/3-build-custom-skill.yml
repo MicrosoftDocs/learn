@@ -4,10 +4,12 @@ title: Build an Azure AI Document Intelligence custom skill
 metadata:
   title: Build an Azure AI Document Intelligence custom skill
   description: "Build an Azure AI Document Intelligence custom skill"
-  ms.date: 02/06/2024
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/3-build-custom-skill.md)]

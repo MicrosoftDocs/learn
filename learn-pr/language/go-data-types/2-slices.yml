@@ -3,7 +3,7 @@ uid: learn.language.go-data-types.2-slices
 metadata:
   title: Exercise - Explore slices
   description: Learn about slices and how to use them in Go programs.
-  ms.date: 04/20/2021
+  ms.date: 01/27/2023
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: unit

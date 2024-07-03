@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check for the administer device authentication module."
-  ms.date: 08/21/2023
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -21,7 +23,7 @@ quiz:
       explanation: "Incorrect. Domain controllers are always required when using AD DS. Try again."
     - content: "To enable iOS and Android devices to be managed using Group Policy"
       isCorrect: false
-      explanation: "Incorrect. Leveraging Microsoft Entra ID can provide management options for non-Windows devices, but it does not manage them using Group Policy. Try again."
+      explanation: "Incorrect. Leveraging Microsoft Entra ID can provide management options for non-Windows devices, but it doesn't manage them using Group Policy. Try again."
     - content: "To offer users the ability to use their personal devices to access organizational resources"
       isCorrect: true
       explanation: "Correct. With Microsoft Entra join, devices can access resources without the need to join a domain."

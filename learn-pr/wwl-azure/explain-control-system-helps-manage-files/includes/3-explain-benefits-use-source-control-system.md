@@ -1,4 +1,3 @@
-
 Version and source control systems have been around for a long time. They're common tools in nearly all software development roles and many other technical and non-technical roles.
 
 Without a version control system, files may be stored on a local hard drive, a file server, or maybe even in the cloud. Those storage mechanisms work fine as long as there aren't any problems either with the files or with the actual storage medium. However, if anything happens to your local hard drive or the file server you may completely lose the file that you've been working on. If the file is stored in the cloud, you may still have access to that file.

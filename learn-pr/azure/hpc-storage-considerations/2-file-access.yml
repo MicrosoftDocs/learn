@@ -4,10 +4,10 @@ title: File access for HPC jobs
 metadata:
   title: File access for HPC jobs
   description: A discussion of what files can be used in HPC workloads and how files are typically accessed.
-  ms.date: 12/29/2020
+  ms.date: 04/04/2024
   author: scjescho
   ms.author: padmalathas
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/2-file-access.md)]

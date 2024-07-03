@@ -4,11 +4,11 @@ title: Exercise - Explore alignment options
 metadata:
   title: Exercise - Explore alignment options
   description: Use a .NET MAUI application to see the effect of the four primary layout options in a StackLayout.
-  ms.date: 10/13/2023
+  ms.date: 11/07/2023
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.service: azure
   ms.custom:
     - devx-track-dotnet

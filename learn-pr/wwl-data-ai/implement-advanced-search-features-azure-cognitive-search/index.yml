@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search
 metadata:
-  title: Implement advanced search features in Azure Cognitive Search
-  description: "Use more advanced features of Azure Cognitive Search to improve your existing search solutions. Learn how to change the ranking on documents, boost the most important terms to your organization, and allow searching in multiple languages."
+  title: Implement advanced search features in Azure AI Search
+  description: "Use more advanced features of Azure AI Search to improve your existing search solutions. Learn how to change the ranking on documents, boost the most important terms to your organization, and allow searching in multiple languages."
   ms.date: 09/27/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: module-standard-task-based
   ms.service: cognitive-search
-title: Implement advanced search features in Azure Cognitive Search
-summary: Use more advanced features of Azure Cognitive Search to improve your existing search solutions. Learn how to change the ranking on documents, boost terms, and allow searching in multiple languages.
+title: Implement advanced search features in Azure AI Search
+summary: Use more advanced features of Azure AI Search to improve your existing search solutions. Learn how to change the ranking on documents, boost terms, and allow searching in multiple languages.
 abstract: |
   In this module, you'll learn how to:
   - Improve the ranking of a document with term boosting
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   *   Familiarity with Microsoft Azure
   *   Application development experience with C# or Python
-  *   Experience of building a basic search solution with Azure Cognitive Search. If you haven't completed the [Create an Azure Cognitive Search](/training/modules/create-azure-cognitive-search-solution) solution module, you should do so before starting this module
+  *   Experience of building a basic search solution with Azure AI Search. If you haven't completed the [Create an Azure AI Search](/training/modules/create-azure-cognitive-search-solution) solution module, you should do so before starting this module
 iconUrl: /training/achievements/implement-advanced-search-features-azure-cognitive-search.svg
 levels:
 - intermediate

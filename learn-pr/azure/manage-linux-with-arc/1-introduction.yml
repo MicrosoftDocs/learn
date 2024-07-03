@@ -8,6 +8,7 @@ metadata:
   author: johnmarco
   ms.author: johnmarc
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

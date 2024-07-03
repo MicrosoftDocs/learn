@@ -3,8 +3,8 @@ uid: learn.wwl.explore-azure-storage.examine-general-database-sizing
 title: Examine general database sizing
 metadata:
   title: Examine general database sizing
-  description: "Examine general database sizing"
-  ms.date: 10/17/2023
+  description: "Find the optimal size and configuration for your disk layout."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

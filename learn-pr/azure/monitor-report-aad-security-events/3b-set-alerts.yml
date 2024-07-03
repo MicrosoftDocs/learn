@@ -3,7 +3,7 @@ uid: learn.monitor-report-aad-security-events.set-alerts
 metadata:
   title: Set and view alerts in your Log Analytics workspace
   description: Set and view alerts fin your Log Analytics workspace.
-  ms.date: 04/22/2022
+  ms.date: 03/01/2023
   author: softchris
   ms.author: chnoring
   ms.topic: unit

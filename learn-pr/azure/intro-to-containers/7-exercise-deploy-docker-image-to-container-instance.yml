@@ -4,7 +4,7 @@ title: Exercise - Deploy a Docker image to an Azure Container Instance
 metadata:
   title: Exercise - Deploy a Docker image to an Azure Container Instance
   description: Create an Azure Container Registry. Upload an image from the local Docker registry to the Azure Container Registry. Create an Azure Container Instance from the image in the Azure Container Registry. Run the application using the instance.
-  ms.date: 03/03/2022
+  ms.date: 03/21/2022
   author: MGoedtel
   ms.author: magoedte
   ms.topic: unit

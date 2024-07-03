@@ -38,8 +38,6 @@ products:
 - azure
 - azure-database-mysql
 - azure-spring-apps
-subjects:
-- development-tools
 units:
 - learn.monitor-java-azure.learning-content
 - learn.monitor-java-azure.exercise-setup

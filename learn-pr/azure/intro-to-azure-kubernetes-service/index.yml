@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/17/2023
   author: nickomang
   ms.author: nickoman
-  ms.topic: module
+  ms.topic: module-intro-to-product
   ms.service: azure-kubernetes-service
 title: Introduction to Azure Kubernetes Service
 summary: Determine the types of business problems that can be solved using Azure Kubernetes Service. Describe the benefits of container orchestration with features like deployment management, automatic updates, and self-healing.
@@ -30,7 +30,7 @@ products:
 - azure
 - azure-kubernetes-service
 subjects:
-- container
+- containers
 units:
 - learn.intro-to-azure-kubernetes-service.introduction
 - learn.intro-to-azure-kubernetes-service.what-is-azure-kubernetes-service

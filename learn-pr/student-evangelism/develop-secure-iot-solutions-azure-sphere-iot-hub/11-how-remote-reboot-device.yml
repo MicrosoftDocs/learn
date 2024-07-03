@@ -4,7 +4,7 @@ title: How to remotely restart your Azure Sphere device with an Azure IoT Hub di
 metadata:
   title: How to remotely restart your Azure Sphere device with an Azure IoT Hub direct method
   description: In this section, we remotely restart the Azure Sphere with an Azure IoT Hub direct method.
-  ms.date: 6/29/2020
+  ms.date: 12/11/2020
   author: leestott
   ms.author: leestott
   ms.topic: unit

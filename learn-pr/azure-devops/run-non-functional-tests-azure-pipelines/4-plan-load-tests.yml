@@ -4,7 +4,7 @@ title: Plan load tests by using Apache JMeter
 metadata:
   title: Plan load tests by using Apache JMeter
   description: Plan a strategy for running load tests that use Apache JMeter in Azure Pipelines.
-  ms.date: 08/04/2022
+  ms.date: 04/02/2024
   author: steved0x
   ms.author: sdanie
   ms.custom: devdivchpfy22

@@ -3,13 +3,13 @@ uid: learn.challenge-project-use-generative-ai-to-ideate.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "How can we use the tools, Design Thinking and more in the age of AI?"
+  description: "How can we use AI tools, Design Thinking and more in the age of AI?"
   ms.date: 12/7/2023
   author: pablonunes
   ms.author: pablolopes
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.service: bing
+  ms.topic: unit
+  ms.service: microsoft-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

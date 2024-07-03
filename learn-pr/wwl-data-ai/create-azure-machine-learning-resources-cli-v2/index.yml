@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/02/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: machine-learning 
 title: Create Azure Machine Learning resources with the CLI (v2)
 summary: Use the Azure Machine Learning CLI (v2) to create and manage workspace resources.

@@ -4,10 +4,10 @@ title: Explore the SQL Server 2014 Buffer Pool Extension
 metadata:
   title: Explore the SQL Server 2014 Buffer Pool Extension
   description: "Explore the SQL Server 2014 Buffer Pool Extension"
-  ms.date: 10/18/2023
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/9-explore-sql-server-2014-buffer-pool-extension.md)]

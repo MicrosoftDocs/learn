@@ -3,10 +3,10 @@ uid: learn.create-vm-offer-commercial-marketplace.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: In this unit, we introduce the concept of the VM software delivery method and its benefits for providers and their customers
-  ms.date: 06/03/2021
-  author: marleva
-  ms.author: maevan
+  description: In this unit, we introduce the concept of the virtual machine (VM) software delivery method and its benefits for providers and their customers.
+  ms.date: 04/25/2024
+  author: amhindma
+  ms.author: amhindma
   ms.topic: unit
 durationInMinutes: 2
 content: |

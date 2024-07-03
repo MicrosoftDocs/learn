@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/11/2021
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: typescript
 title: 'Organize code using TypeScript namespaces'
@@ -33,8 +33,6 @@ roles:
 - developer
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.language.typescript-namespaces-organize-code.1-introduction
 - learn.language.typescript-namespaces-organize-code.2-organize-code-namespaces

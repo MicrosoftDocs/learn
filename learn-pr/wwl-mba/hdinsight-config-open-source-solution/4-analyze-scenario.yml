@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.4-analyze-scenario-map-it-hdinsight-configuration-option
-title: Analyze a scenario and map it to a HDInsight configuration option
+title: Analyze a scenario and map it to a HDInsight configuration option.
 metadata:
-  title: Analyze a scenario and map it to a HDInsight configuration option
-  description: "Analyze a scenario and map it to a HDInsight configuration option"
-  ms.date: 01/05/2022
+  title: Analyze a scenario and map it to a HDInsight configuration option.
+  description: "Analyze a scenario and map it to a HDInsight configuration option."
+  ms.date: 04/06/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
@@ -16,18 +16,18 @@ content: |
 quiz:
   title: "Knowledge check"
   questions:
-  - content: "**Which HDInsight cluster configuration type would be appropriate to fulfill the streaming requirements that are needed by the connected bicycle scenario?**"
+  - content: "**Which HDInsight cluster configuration type would be appropriate to fulfill the streaming requirements needed by the connected bicycle scenario?**"
     choices:
     - content: "Apache Interactive Query"
       isCorrect: false
-      explanation: "The correct answer is Apache Kafka. Apache Interactive Query provides in-memory caching for interactive and faster Hive queries. Apache Kafka is an open-source platform that's used for building streaming data pipelines and applications"
+      explanation: "The correct answer is Apache Kafka. Apache Interactive Query provides in-memory caching for interactive and faster Hive queries. Apache Kafka is an open-source platform used for building streaming data pipelines and applications."
     - content: "Apache HBase"
       isCorrect: false
       explanation: "The correct answer is Apache Kafka. Apache HBase is a NoSQL database built on Hadoop that provides random access and strong consistency for large amounts of unstructured and semi-structured data."
     - content: "Apache Kafka"
       isCorrect: true
-      explanation: "The correct answer is Apache Kafka. Apache Kafka is an open-source platform that's used for building streaming data pipelines and applications"
-  - content: "**Which HDInsight cluster configuration type would be appropriate to house the data analysis that is currently performed by the data warehouse on the on-premises SQL Server?**"
+      explanation: "The correct answer is Apache Kafka. Apache Kafka is an open-source platform used for building streaming data pipelines and applications."
+  - content: "**Which HDInsight cluster configuration type would be appropriate to house the data analysis performed by the data warehouse on the on-premises SQL Server?**"
     choices:
     - content: "Apache Hadoop with Hive"
       isCorrect: true
@@ -37,15 +37,15 @@ quiz:
       explanation: "The correct answer is Apache Hadoop with Hive. Apache Spark is an open-source, parallel-processing framework that supports in-memory processing to boost the performance of big-data analysis applications. Mahout is an algebra framework to create your own algorithms."
     - content: "Apache HBase with MapReduce"
       isCorrect: false
-      explanation: "The correct answer is Apache Hadoop with Hive. Apache HBase is a NoSQL database built on Hadoop that provides random access and strong consistency for large amounts of unstructured and semi-structured data. MapReduce is a framework for easily writing applications which process vast amounts of data."
+      explanation: "The correct answer is Apache Hadoop with Hive. Apache HBase is a NoSQL database built on Hadoop that provides random access and strong consistency for large amounts of unstructured and semi-structured data. MapReduce is a framework for easily writing applications, which process vast amounts of data."
   - content: "**Which HDInsight cluster configuration type would be the appropriate type to perform the predictive maintenance work in Bicycle Maintenance Service?**"
     choices:
     - content: "Apache Hadoop"
       isCorrect: false
-      explanation: "The correct answer is Apache Spark. Apache Hadoop is a framework that uses HDFS, and a simple MapReduce programming model to process and analyze batch data"
+      explanation: "The correct answer is Apache Spark. Apache Hadoop is a framework that uses HDFS, and a simple MapReduce programming model to process and analyze batch data."
     - content: "Apache Spark"
       isCorrect: true
-      explanation: "The correct answer is Apache Spark, which is an open-source, parallel-processing framework that supports in-memory processing to boost the performance of big-data analysis applications"
+      explanation: "The correct answer is Apache Spark, which is an open-source, parallel-processing framework that supports in-memory processing to boost the performance of big-data analysis applications."
     - content: "Apache HBase"
       isCorrect: false
       explanation: "The correct answer is Apache Spark. Apache HBase is a NoSQL database built on Hadoop that provides random access and strong consistency for large amounts of unstructured and semi-structured data."
@@ -53,10 +53,10 @@ quiz:
     choices:
     - content: "Azure Blob Storage"
       isCorrect: false
-      explanation: "The correct answer is Azure Data Lake Gen2 as it is the recommended storage platform for Spark and Hadoop, as well as being the default choice for HBase. Azure Blob Storage can be used for scenarios where Azure Data Lake Gen2 cannot be used"
+      explanation: "The correct answer is Azure Data Lake Gen2 as it's the recommended storage platform for Spark and Hadoop, and being the default choice for HBase. Azure Blob Storage can be used for scenarios where Azure Data Lake Gen2 can't be used."
     - content: "Azure Data Lake Gen1"
       isCorrect: false
-      explanation: "The correct answer is Azure Data Lake Gen2 as it is the recommended storage platform for Spark and Hadoop, as well as being the default choice for HBase. Azure Data Lake Gen1 is not recommended"
+      explanation: "The correct answer is Azure Data Lake Gen2 as it's the recommended storage platform for Spark and Hadoop, and being the default choice for HBase. Azure Data Lake Gen1 isn't recommended."
     - content: "Azure Data Lake Gen2"
       isCorrect: true
-      explanation: "The correct answer is Azure Data Lake Gen2 as it is the recommended storage platform for Spark and Hadoop, as well as being the default choice for HBase."
+      explanation: "The correct answer is Azure Data Lake Gen2 as it's the recommended storage platform for Spark and Hadoop, and being the default choice for HBase."

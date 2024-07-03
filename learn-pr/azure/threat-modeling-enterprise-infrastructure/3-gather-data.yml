@@ -3,7 +3,7 @@ uid: learn.azure.threat-modeling-enterprise-security.3-gather-data
 metadata:
   title: Infrastructure threat modeling security assessment answers
   description: Capture the state of security for your infrastructure by collecting the answers to each question.
-  ms.date: 03/01/2021
+  ms.date: 08/07/2023
   author: rodrigosantos
   ms.author: rodsan
   ms.topic: unit

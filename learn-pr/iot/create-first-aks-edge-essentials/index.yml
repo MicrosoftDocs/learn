@@ -34,7 +34,7 @@ products:
 - windows-iot
 subjects:
 - iot
-- container
+- containers
 units:
 - learn.create-first-aks-edge-essentials.introduction
 - learn.create-first-aks-edge-essentials.prepare-machine-for-aks-edge-essentials

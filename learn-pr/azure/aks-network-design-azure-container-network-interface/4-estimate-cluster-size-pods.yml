@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Estimating cluster size - Pods
   description: To help determine the size of your Kubernetes cluster, you need to understand the applications you want to deploy and their performance and availability requirements. You can then determine how many pods you need to run.
-  ms.date: 10/31/2023
+  ms.date: 02/15/2024
   ms.topic: unit
   ms.author: schaffererin
   author: schaffererin

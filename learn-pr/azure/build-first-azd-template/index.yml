@@ -9,7 +9,7 @@ metadata:
   ms.author: alexwolf
   ms.topic: module
   ms.custom: engagement-fy23
-  ms.service: azure
+  ms.service: azure-dev-cli
 title: Build your first Azure Developer CLI template
 summary: "Learn how to build your own Azure Developer CLI templates."
 abstract: |
@@ -28,8 +28,6 @@ roles:
   - solution-architect
 products:
   - azure-clis
-subjects:
-- development-tools
 units:
 - learn.azure.build-first-azure-developer-cli-template.introduction
 - learn.azure.build-first-azure-developer-cli-template.create-template-structure

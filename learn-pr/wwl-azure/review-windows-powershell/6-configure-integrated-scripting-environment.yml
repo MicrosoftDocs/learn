@@ -4,13 +4,12 @@ title: Configure the Windows PowerShell Integrated Scripting Environment (ISE)
 metadata:
   title: Configure the Windows PowerShell Integrated Scripting Environment (ISE)
   description: "Configure the Windows PowerShell Integrated Scripting Environment (ISE)"
-  ms.date: 07/04/2023
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
-azureSandbox: false
-labModal: false
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/6-configure-integrated-scripting-environment.md)]

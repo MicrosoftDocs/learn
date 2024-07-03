@@ -3,34 +3,26 @@ So now that there's a basic understanding of plugins, capabilities, and how the 
 
 ### Process flow
 
-When a user submits a prompt, Copilot processes that prompt to generate the best possible response. The diagram that follows illustrates those process steps to provide a general understanding of what is happening and how the response comes to be.
+When a user submits a prompt, Copilot processes that prompt to generate the best possible response. The diagram that follows illustrates, at a high level, steps that Copilot takes to process the prompt and generate a response.
 
-:::image type="content" source="../media/security-copilot-figma.png" lightbox="../media/security-copilot-figma.png" alt-text="Diagram illustrating how Microsoft Copilot for Security processes a prompt request.":::
+:::image type="content" source="../media/copilot-how-it-works.png" lightbox="../media/copilot-how-it-works.png" alt-text="Diagram illustrating how Microsoft Copilot for Security processes a prompt request.":::
 
-1. The process starts when a user submits a prompt in the prompt bar. Once the user submits their prompt, it's sent to the Copilot backend referred to as the orchestrator.  The orchestrator is Copilot’s system for composing capabilities (skills) together to answer a user’s prompt.
+1. Submit a prompt: The process starts when a user submits a prompt in the prompt bar.
 
-1. Copilot bundles the user prompt and a full list of Copilot capabilities for the enabled plugins and then sends it to OpenAI with the request to make a plan for fulfilling the user’s request
+1. Orchestrator: Copilot for Security sends the information to the Copilot backend referred to as the orchestrator. The orchestrator is Copilot’s system for composing capabilities together to answer a user’s prompt. It determines the initial context and builds a plan using all the available capabilities (skills).
 
-1. OpenAI uses its advanced LLM to match the prompt with the available capabilities (skills) a creates a plan (set of steps) for fulfilling the user’s request.  That plan is sent back to the orchestrator.
-    1. If no capability is matched, the response to the user’s prompt is generated based on OpenAI GPT-4 LLM, and conceptually the process would jump to step 7.
-    1. The OpenAI GPT-4 LLM is good at general knowledge and problem solving but isn't uniquely focused on security so there's a greater chance that the response provided isn't accurate.  For this reason, it's beneficial to enable plugins to bring a collection of resource specific capabilities to Copilot.  
+1. Build context: Once a plan is defined and built, Copilot executes that plan to get the required data context to answer the prompt.
 
-1. Copilot's orchestrator executes the plan by running the code for the selected plugins/capabilities and calling the appropriate application programming interfaces (API) to gather information and to take action.
+1. Plugins: In the course of executing the plan, Copilot analyzes all data and patterns to provide intelligent insights. This includes reasoning over all the plugins and sources of data, enabled and available to Copilot.
 
-1. The first- and third-party integration partner apps gather information and execute actions based on the API call and sends the response back to Copilot.
+1. Responding: Copilot combines all the data and context and uses the power of its advanced LLM to compose a response using language that makes sense to a human being.
 
-1. The orchestrator receives the response from the API calls, but it’s still not ready to be sent to the user.  Copilot iterates on the process to ensure best response. Before a final response can be sent to the user, the orchestrator bundles that response with the original prompt, and sends it back to OpenAI.
+1. Response: Before the response can be sent back to the user, Copilot formats and reviews the response as part of Microsoft's commitment to responsible AI.
 
-1. OpenAI uses the power of its advanced LLM to compose a response using language that makes sense to a human being.
-
-1. That response from OpenAI is sent back to Copilot for review by Microsoft’s responsible AI models that look for anything malicious, hate speech, etc.
-    1. If everything looks good, then the response is sent to the user.
-    1. If something malicious or inappropriate is detected, then an error message is generated instead of sending the information to the user.
-
-1. The user receives the response from the Copilot.
+1. Receives response: The process culminates with the user receiving the response from the Copilot.
 
 #### Process log
 
-During this process, Copilot generates a process log that is visible to the user. The user can see what capability (skill) is used to generate the response. This is important because it enables the user to determine whether the response was generated from a trusted source. In the screenshot that follows, the process log shows that Copilot chose the Microsoft Sentinel plugin and lists the selected capability (skill). The process log also shows that the final output went through safety checks, which is part of Microsoft’s commitment to responsible AI.
+During this process, Copilot generates a process log that is visible to the user. The user can see what capability is used to generate the response. This is important because it enables the user to determine whether the response was generated from a trusted source. In the screenshot that follows, the process log shows that Copilot chose the Incident Analysis capability. The process log also shows that the final output went through safety checks, which is part of Microsoft’s commitment to responsible AI.
 
-:::image type="content" source="../media/process-log-ver-2b.png" lightbox="../media/process-log-ver-2b.png"alt-text="Screen capture of the process log that highlights the skill selected and the text indicating that Copilot ran safety checks as part of the process to compose the response message.":::
+:::image type="content" source="../media/process-log-new.png" lightbox="../media/process-log-new.png"alt-text="Screen capture of the process log that highlights the capability selected and the text indicating that Copilot ran safety checks as part of the process to compose the response message.":::

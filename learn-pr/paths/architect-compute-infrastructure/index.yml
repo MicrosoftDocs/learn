@@ -22,7 +22,7 @@ products:
 - azure
 - azure-virtual-machines
 subjects:
-- serverless-compute
+- serverless-computing
 modules:
 - learn.manage-vms-with-azure-cli
 - learn.choose-compute-provisioning

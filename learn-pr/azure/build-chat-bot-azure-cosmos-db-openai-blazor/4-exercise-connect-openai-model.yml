@@ -13,7 +13,7 @@ metadata:
   ms.reviewer: mjbrown
   ms.topic: unit
   ms.custom: devx-track-dotnet
-  ms.date: 10/17/2023
+  ms.date: 03/07/2024
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-connect-openai-model.md)]

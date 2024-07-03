@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.challenge-project-use-generative-ai-to-create-business-model-startu.exercise-introduce-your-idea-generate-logo
-title: Exercise - Introduce your idea and generate a logo using Bing Chat
+title: Exercise - Introduce your idea and generate a logo using Microsoft Copilot
 metadata:
   title: Exercise - Introduce your idea and generate a logo
-  description: "Exercise - Introduce your idea and generate a logo using Bing Chat"
+  description: "Exercise - Introduce your idea and generate a logo using Microsoft Copilot"
   ms.date: 12/4/2023
   author: juliamuiruri4
   ms.author: juliamuiruri
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.service: bing
+  ms.topic: unit
+  ms.service: microsoft-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/3-exercise-introduce-your-idea-generate-logo.md)]

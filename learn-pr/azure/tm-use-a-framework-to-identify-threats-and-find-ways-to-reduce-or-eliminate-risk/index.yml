@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/17/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Use a framework to identify threats and find ways to reduce or eliminate risk
 summary: Threat modeling helps you generate a list of potential threats using the threat modeling framework and find ways to reduce or eliminate risk with corresponding security controls.
 abstract: |

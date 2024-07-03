@@ -8,31 +8,64 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-  ms.service: security-copilot
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
+
 quiz:
   title: Check your knowledge
   questions:
-  - content: A security analyst needs to quickly analyze scripts and code to understand its capabilities and apply appropriate mitigation to attacks from progressing further within a network. Which capability of Microsoft Copilot in Microsoft Defender XDR provides security teams added capacity to inspect scripts and code without using external tools?
+  - content: A security analyst is using Microsoft Copilot in Microsoft Defender XDR to review an incident and needs to understand the sequence of events that occurred during the attack. Which feature should they use to obtain a comprehensive overview?
     choices:
+    - content: Script analysis
+      isCorrect: false
+      explanation: Incorrect. Script analysis is used for examining scripts for potential threats, not summarizing incident timelines.
+    - content: Summarize incidents
+      isCorrect: true
+      explanation: Correct. The Summarize incidents feature provides an overview of the attack, including the timeline and assets involved.
     - content: Guided responses
       isCorrect: false
-      explanation: Incorrect. Guided responses use AI and machine learning capabilities to contextualize an incident and learn from previous investigations to generate appropriate response actions.
-    - content: Script analysis
-      isCorrect: true
-      explanation: Correct. The script analysis capability of Copilot in Microsoft Defender XDR provides security teams added capacity to inspect scripts and code without using external tools. This capability also reduces complexity of analysis, minimizing challenges and allowing security teams to quickly assess and identify a script as malicious or benign.
-    - content: Generate KQL queries
-      isCorrect: false
-      explanation: Incorrect. Generate KQL queries is a feature that allows threat hunters or security analysts to make a request or ask a question in natural language, and Copilot generates a KQL query that corresponds to the request using the advanced hunting data schema.
-  - content: A data security admin wants to review a DLP alert summary using Microsoft Copilot in Microsoft Purview. What are the steps they should follow?
+      explanation: Incorrect. Guided responses provide recommended actions for incident response, not a summary of the incident's timeline.
+  - content: An organization's legal compliance team uses Microsoft Purview eDiscovery tools for internal and external investigations and is planning to use Copilot for Security to help make them more productive and aid in their investigations. Which of the following statements is true regarding Copilot use with eDiscovery?
     choices:
-    - content: Sign in to the compliance portal and go to the Data Loss Prevention solution. Navigate to the alerts queue and select the alert you want to review. Select 'Get a summary from Security Copilot.'
+    - content: Copilot functionality isn't supported with Microsoft Purview eDiscovery.
+      isCorrect: false
+      explanation: Incorrect. Copilot for Security functionality is supported with Microsoft Purview eDiscovery (Premium).
+    - content: The organization must be licensed to use Microsoft Purview eDiscovery (Premium).
       isCorrect: true
-      explanation: Correct. These are the correct steps for reviewing a DLP alert summary using Copilot in Microsoft Purview.
-    - content: Navigate to the Insider Risk Management solution and select the alert you want to review.
+      explanation: Correct. To use Copilot for Security functionality with Microsoft Purview eDiscovery, the organization must be licensed for Microsoft Purview eDiscovery (Premium).
+    - content: The organization needs to be licensed for Microsoft Purview eDiscovery (Standard), as a minimum.
       isCorrect: false
-      explanation: Incorrect. This answer describes the steps for reviewing an Insider Risk Management alert, not a DLP alert.
-    - content: Navigate to Communication Compliance in the compliance portal and select a policy match to view message content.
+      explanation: Incorrect. To use Copilot for Security functionality with Microsoft Purview eDiscovery, the organization must be licensed for Microsoft Purview eDiscovery (Premium).
+  - content: After enabling the Entra plugin in Copilot and assigning the appropriate role permissions, an admin navigates to the Risky users report to investigate a user's risky sign-ins. What should the admin do next to view the Copilot generated summary?
+    choices:
+    - content: Select the 'Export' option to download the user's risk details.
       isCorrect: false
-      explanation: Incorrect. This answer describes the steps for getting a contextual summary of content in a Communication Compliance policy, not reviewing a DLP alert.
+      explanation: Incorrect. The 'Export' option would download data, not display the Copilot generated summary.
+    - content: Check the 'User Activity' log for recent sign-in attempts.
+      isCorrect: false
+      explanation: Incorrect. The 'User Activity' log provides sign-in attempts, not the Copilot generated summary.
+    - content: Select the 'Summarize' tab in the Risky User Details window.
+      isCorrect: true
+      explanation: Correct. The 'Summarize' tab displays the Copilot generated summary of the user's risk level.
+  - content: What information can be obtained by using Copilot in Intune, when creating a new policy?
+    choices:
+    - content: The date and time a policy was last updated.
+      isCorrect: false
+      explanation: Incorrect. Copilot doesn't provide information on the date and time a policy was last updated.
+    - content: The number of users who have accessed a policy.
+      isCorrect: false
+      explanation: Incorrect. Copilot doesn't provide information on the number of users who have accessed a policy.
+    - content: Information about individual settings, their impact, and recommended values.
+      isCorrect: true
+      explanation: Correct. When creating a new policy, Copilot can be used to learn more about individual settings, their impact, and recommended values.
+  - content: Copilot for Security in Defender for Cloud is available for all users when you enable Defender for Cloud in your environment, have access to Azure Copilot, and have SCUs assigned for Copilot for Security. What additional requirement must be met to remediate code with Copilot for Security?
+    choices:
+    - content: You must enable all the cloud workload protection plans.
+      isCorrect: false
+      explanation: Incorrect. No CWP plans are required. To use the capability to remediate code with Copilot for Security, you must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements.
+    - content: You must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements.
+      isCorrect: true
+      explanation: Correct. To use the capability to remediate code with Copilot for Security, you must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements.
+    - content: You must enable the Defender for Cloud Security Posture Management (DCSPM) plan.
+      isCorrect: false
+      explanation: Incorrect. Although it's recommended that the DCSPM plan be enabled, it isn't required and doesn't address the requirement to remediate code with Copilot for Security. To use remediate code with Copilot for Security you must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements.

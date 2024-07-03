@@ -37,8 +37,6 @@ roles:
 products:
 - azure
 - vs-code
-subjects:
-- development-tools
 modules:
 - learn.student-evangelism.intro-to-python
 - learn.beginner-python.create-run-program

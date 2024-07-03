@@ -4,12 +4,10 @@ title: Use the Azure Document Intelligence Studio
 metadata:
   title: Use the Azure Document Intelligence Studio
   description: "Use the Azure Document Intelligence Studio"
-  ms.date: 10/18/2023
+  ms.date: 04/18/2024
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/9-form-recognizer-studio.md)]

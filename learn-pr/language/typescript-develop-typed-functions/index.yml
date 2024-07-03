@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/09/2023
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: typescript
 title: 'Develop typed functions by using TypeScript'

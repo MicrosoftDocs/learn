@@ -6,7 +6,7 @@ metadata:
   ms.date: 11/02/2023
   author: YaelSchuster
   ms.author: yaschust
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Explore the fundamentals of data analysis using Kusto Query Language (KQL)
 summary: "Learn about the basics of Kusto Query Language (KQL), and the various Microsoft products that use it."
@@ -35,7 +35,7 @@ products:
   - configuration-manager
   - fabric
 subjects:
-  - data-science
+  - data-management
   - data-visualization
   - big-data
 units:

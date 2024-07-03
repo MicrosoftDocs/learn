@@ -6,7 +6,7 @@ metadata:
   ms.date: 2/27/2023
   author: sheryang
   ms.author: sheryang
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure-ai-openai
 title: Get started with Azure OpenAI Service
 summary: This module provides engineers with the skills to begin building an Azure OpenAI Service solution.
@@ -31,7 +31,6 @@ products:
   - azure
 subjects: 
   - cloud-computing
-  - data-ai
 units:
 - learn.wwl.get-started-openai.introduction
 - learn.wwl.get-started-openai.access-azure-openai

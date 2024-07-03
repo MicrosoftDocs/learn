@@ -7,7 +7,7 @@ metadata:
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: module
-  ms.service: azure
+  ms.service: security
 title: "Case study: Design solutions that align with security best practices and priorities"
 summary: "Apply your cybersecurity architect skills on a real business scenario in the area of security operations, identity and compliance. You will analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
 abstract: |

@@ -3,7 +3,7 @@ uid: learn.advocates.create-web-app-with-refreshable-models.1-introduction
 metadata:
   title: Introduction
   description: Create a web app consuming a custom vision machine learning model and build it with GitHub Actions.
-  ms.date: 02/10/2020
+  ms.date: 12/22/2022
   author: GitHubber17
   ms.author: chnoring
   ms.topic: unit

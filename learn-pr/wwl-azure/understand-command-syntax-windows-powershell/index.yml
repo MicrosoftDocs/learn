@@ -3,22 +3,33 @@ uid: learn.wwl.understand-command-syntax-windows-powershell
 metadata:
   title: Understand the command syntax in Windows PowerShell
   description: "This module covers the cmdlet structure and parameters for using Windows PowerShell cmdlets. It also explains how to use tab completion and how to display About files content."
-  ms.date: 11/09/2022
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
+  ai-usage: human-only
 title: Understand the command syntax in Windows PowerShell
 summary: This module covers the cmdlet structure and parameters for using Windows PowerShell cmdlets. It also explains how to use tab completion and how to display About files content.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  *   Describe cmdlet structure.
-  *   Identify how to use Windows PowerShell parameters.
-  *   Explain how to use tab completion.
-  *   Explain how to display the About files content.
-  *   Use About files.
+
+  -   Describe cmdlet structure.
+
+  -   Identify how to use Windows PowerShell parameters.
+
+  -   Explain how to use tab completion.
+
+  -   Explain how to display the About files content.
+
+  -   Use About files.
 prerequisites: |
-  - Familiarity with Windows networking technologies and implementation.
-  - Familiarity with Windows Server administration, maintenance, and troubleshooting.
+  -   Familiarity with Windows networking technologies and implementation.
+
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting.
 iconUrl: /training/achievements/understand-command-syntax-windows-powershell.svg
 levels:
 - intermediate
@@ -32,7 +43,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

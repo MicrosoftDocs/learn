@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/10/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
+  ms.topic: learning-path
   ms.service: azure
 title: Develop decision support solutions with Azure AI Services
 prerequisites: |
@@ -29,6 +29,5 @@ subjects:
 - artificial-intelligence
 modules:
 - learn.data-ai.classify-and-moderate-text-with-azure-content-moderator
-- learn.make-recommendations-ai-personalizer
 trophy:
   uid: learn.wwl.develop-decision-support.trophy

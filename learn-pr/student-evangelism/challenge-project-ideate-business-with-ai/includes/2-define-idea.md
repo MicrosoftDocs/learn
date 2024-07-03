@@ -40,7 +40,7 @@ Take a moment to think about your community and some of the challenges being fac
 
 An example of an idea generated from a problem affecting community.
 
-- The rampant human-wildlife conflicts resulted in loss of lives & destruction of property for communities that live close to wildlife conservancies. [Rhions Lab Limited](https://rhions.co/) used IoT and AI to track wildlife and send timely alerts to rangers
+- The rampant human-wildlife conflicts resulted in loss of lives & destruction of property for communities that live close to wildlife conservancies. [Rhions Lab Limited](https://www.rhions.co/) used IoT and AI to track wildlife and send timely alerts to rangers
 
 ### Personal Productivity
 When you think about your day to day activities, what are some of the tasks that you would rather not do? How to apply the power of Artificial Intelligence to make you more productive?
@@ -50,7 +50,7 @@ An example of an idea to help in increasing productivity
 - Many people **struggle with managing their time and tasks effectively**, and often feel overwhelmed or stressed by their workload. I want to build an **AI-powered personal assistant app** that helps users plan, prioritize, and execute their tasks based on their goals, preferences, and deadlines. The app can also provide feedback, reminders, and suggestions to help users improve their productivity and well-being.
 
 ### Natural disasters & pandemics
-Think about some of the natural disasters which strucked in different parts of the world, and how technology can be used to mitigate or prevent.
+Think about some of the natural disasters that have struck in different parts of the world, and how technology can be used to mitigate or prevent.
 
 An example of an idea generated from natural causes
 - **Natural disasters such as earthquakes, floods, hurricanes, and wildfires can cause massive damage and loss of lives and are often hard to predict and prepare for**. I'm thinking of creating an **AI-powered early warning system** that can:
@@ -63,7 +63,7 @@ An example of an idea generated from natural causes
 
 ## Use the “Brain writing Technique” to find a solution
 > [!NOTE]
-> It’s important to have a notebook and pencil close by to write down interesting ideas that might pop up in your mind while we are doing these exercises with Bing Chat.
+> It’s important to have a notebook and pencil close by to write down interesting ideas that might pop up in your mind while we are doing these exercises with Microsoft Copilot.
 
 To help you come up with an interesting solution, we'll do a quick training using a technique called “brain writing”. This technique involves writing down your solution ideas on a piece of paper or a sticky note, and then passing it on to another person who will add their own solution or comments. This way, you can generate many solutions in a short time, without interrupting or judging each other. You can also combine or improve the ideas of others and create new connections or perspectives.
 
@@ -71,7 +71,7 @@ To use this technique, you need:
 - A clear problem statement or goal
 - A timer
 - Paper and pens, sticky notes, or whatever works better for you and your team (Sticky Notes, a whiteboard, PowerPoint, Loop, OneNote, etcetera)
-- A team *(In case you’re currently working on your own, you can also ask Bing Chat to help in this activity as shown in the solo steps)*
+- A team *(In case you’re currently working on your own, you can also ask Microsoft Copilot to help in this activity as shown in the solo steps)*
 
 The group steps are:
 1. Write down the problem statement or goal on a board or a screen, so everyone can see it.
@@ -86,8 +86,8 @@ The group steps are:
 The solo steps are:
 1. Write down the problem statement or goal on a sticky note, so you can visualize your ideas.
 1. Set the timer for 3 minutes and start writing all the ideas that pop up in your mind related to the problem. 
-1. When the timer is up, share your ideas to Bing Chat and ask it to give you five ideas related to the problem or goal 
-1. Continue until you feel that you have enough ideas from Bing and yourself.
+1. When the timer is up, share your ideas to Microsoft Copilot Chat and ask it to give you five ideas related to the problem or goal 
+1. Continue until you feel that you have enough ideas from Microsoft Copilot and yourself.
 1. Collect all the papers and group them by categories. 
 1. Review the ideas and select the best ones to move forward.
 

@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Load sample data to test drive Kibana
   description: "This unit discusses Kibana, which is the Elastic tool for data visualization."
-  ms.date: 6/11/2021
+  ms.date: 04/07/2023
   author: yenchiho
   ms.author: yenchiho
   ms.topic: unit

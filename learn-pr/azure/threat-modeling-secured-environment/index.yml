@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/17/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Choose a client application to use in a Privileged Access Workstation (PAW) with threat modeling
 summary: Learn how to use the foundation of threat modeling to assess a client application for security risks. Find ways to reduce or eliminate risks before installing an application into a privileged environment.
 abstract: |

@@ -3,7 +3,7 @@ uid: learn.azure.shift-express-api-azure-functions.7-exercise-function
 metadata:
   title: Exercise - Create functions for the Azure Functions app
   description: Create and configure functions in the Azure Functions application for each endpoint in the Node.js Express application.
-  ms.date: 04/10/2020
+  ms.date: 02/20/2024
   author: johnpapa
   ms.author: jopapa
   ms.topic: unit

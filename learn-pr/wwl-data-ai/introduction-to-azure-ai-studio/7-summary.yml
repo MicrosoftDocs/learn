@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary of key learning points for Azure AI Studio."
-  ms.date: 10/16/2023
+  ms.date: 05/08/2024
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-ai-services
+  ms.author: berryivor
+  ms.topic: unit
   ms.custom:
     - ignite-2023
 durationInMinutes: 1

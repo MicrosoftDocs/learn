@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.use-semantic-search.what-is-semantic-search
-title: What is semantic search?
+title: What is semantic ranking?
 metadata:
-  title: What is semantic search?
-  description: "Learn how semantic search works."
+  title: What is semantic ranking?
+  description: "Learn how semantic ranking works."
   ms.date: 9/29/2023
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: cognitive-search
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-what-is-semantic-search.md)]

@@ -6,7 +6,7 @@ metadata:
   description: In this unit, we learn how simplest dense neural network (or perceptron) can be trained to recognize handwritten digits, and try to visualize network weights to understand how it works.
   author: shwars
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 06/04/2020
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 10

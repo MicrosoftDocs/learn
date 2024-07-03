@@ -34,7 +34,6 @@ products:
 subjects:
 - artificial-intelligence
 - cloud-computing
-- data-ai
 units:
 - learn.wwl.build-language-understanding-model.introduction
 - learn.wwl.build-language-understanding-model.understand-prebuilt-capabilities

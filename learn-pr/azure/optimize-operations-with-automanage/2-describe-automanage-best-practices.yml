@@ -4,10 +4,11 @@ title: Describe concepts around Azure Automanage best practices
 metadata:
   title: Describe concepts around Azure Automanage best practices
   description: Describe the benefits and services of using Azure Automanage.
-  ms.date: 11/27/2023
+  ms.date: 12/19/2023
   author: johnmarco
   ms.author: johnmarc
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 10
 content: |
   [!include[](includes/2-describe-automanage-best-practices.md)]

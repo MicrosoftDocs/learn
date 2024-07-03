@@ -3,21 +3,27 @@ uid: learn.wwl.plan-design-integration-of-enterprise-apps-for-sso
 metadata:
   title: Plan and design the integration of enterprise apps for SSO
   description: "Enterprise app deployment enables control over which users can access the apps, easily log into apps with single-sign-on, and provide integrated usage reports."
-  ms.date: 10/26/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: identity-and-access
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: entra-workload-id
+  ai-usage: human-only
 title: Plan and design the integration of enterprise apps for SSO
 summary: Enterprise app deployment enables control over which users can access the apps, easily log into apps with single-sign-on, and provide integrated usage reports.
 abstract: |
   By the end of this module, you're able to:
-  *   Discover apps by using Defender for Cloud Apps or ADFS app report.
-  *   Design and implement access management for apps.
-  *   Design and implement app management roles.
-  *   Configure preintegrated (gallery) SaaS apps.
-prerequisites: |
-  None
+
+  -   Discover apps by using Defender for Cloud Apps or ADFS app report.
+
+  -   Design and implement access management for apps.
+
+  -   Design and implement app management roles.
+
+  -   Configure preintegrated (gallery) SaaS apps.
+prerequisites: None
 iconUrl: /learn/achievements/plan-and-design-the-integration-of-enterprise-apps-for-sso.svg
 levels:
 - advanced
@@ -25,10 +31,7 @@ roles:
 - administrator
 - security-engineer
 products:
-- azure
-- entra
 - entra-workload-identities
-- entra-id
 subjects:
 - cloud-security
 - identity-access

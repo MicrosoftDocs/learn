@@ -10,6 +10,7 @@ metadata:
   ms.topic: unit
   content_well_notification: 
     - AI-contribution
+  ai-usage: ai-assisted
 durationInMinutes: 3
 ###########################################################################
 ###
@@ -27,7 +28,6 @@ durationInMinutes: 3
 ###########################################################################
 content: |
 quiz:
-
   questions:
   - content: "What is the core principle of Zero Trust security?"
     choices:

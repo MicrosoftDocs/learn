@@ -2,13 +2,13 @@ Let's start implementing the design for the app by creating a new project and sp
 
 ## Create a solution
 
-The .NET CLI is the simplest way to create an ASP.NET Core web API. The CLI is pre-installed when you install the .NET SDK.
+The .NET CLI is the simplest way to create an ASP.NET Core web API. The CLI is preinstalled when you install the .NET SDK.
 
-In this unit, you'll use the .NET CLI to create a web API locally. You'll also gain an understanding of the resulting project.
+In this unit, you use the .NET CLI to create a web API locally. You also gain an understanding of the resulting project.
 
 ## Create and explore a web API project
 
-To set up a .NET project to work with a web API, we'll use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project easy. If you don't want to use another code editor, you can use a terminal to run the commands in this module.
+To set up a .NET project to work with a web API, we use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project easy. If you don't want to use another code editor, you can use a terminal to run the commands in this module.
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
@@ -22,7 +22,7 @@ To set up a .NET project to work with a web API, we'll use Visual Studio Code. V
     dotnet new webapp
     ```
 
-    This command creates the files for a basic web API project. Those files include a C# project file named *AccessibleWeb.csproj*, which includes a few pages to get started. 
+    This command creates the files for a basic web API project. Those files include a C# project file named *AccessibleWeb.csproj*, which includes a few pages to get started.
 
     You might receive a prompt from Visual Studio Code to add assets to debug the project. Select **Yes** in the dialog.  
 
@@ -51,7 +51,7 @@ To set up a .NET project to work with a web API, we'll use Visual Studio Code. V
 ## Create the data entry form
 
 1. Open *Index.cshtml*.
-1. Replace the contents of the page with the following markup:  
+1. Replace the contents of the page with the following markup.
 
    ```razor
    @page
@@ -117,10 +117,10 @@ To set up a .NET project to work with a web API, we'll use Visual Studio Code. V
        </div>
        <div class="row text-primary">
          <div class="col-4">
-           E-mail Address
+           Email Address
          </div>
          <div class="col-8">
-           <input type="text" id="E-mail">
+           <input type="text" id="Email">
          </div>
        </div>
        <div class="button">
@@ -156,10 +156,10 @@ To set up a .NET project to work with a web API, we'll use Visual Studio Code. V
 
 ## Run the application
 
-1. Run the application by entering the following command in the terminal window:
+1. Run the application by entering the following command in the terminal window.
 
     ```dotnetcli
     dotnet run
     ```
 
-2. In your web browser, go to https://localhost:5001. You'll see the home page of the pizza restaurant's website. This page might look OK at first glance, but it contains many issues that limit its accessibility. In the following units, you'll find and fix these issues.
+1. Go to https://localhost:5001 in your web browser. You should see the home page of the pizza restaurant's website. This page might look OK at first glance, but it contains many issues that limit its accessibility. In the following units, you find and fix these issues.

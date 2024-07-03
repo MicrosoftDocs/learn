@@ -13,7 +13,7 @@ Your organization is migrating hub and spoke network topologies to Azure. As the
 ## Objectives
 
 + **Task 1: Provision the lab environment.** In this task, you deploy four virtual machines into the same Azure region. The first two reside in a hub virtual network, while the remaining two reside in a separate spoke virtual network.
-    + Review an [Azure Resource Manager template](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/06/az104-06-vms-loop-template.json).
+    + Review an [Azure Resource Manager template](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/tree/master/Allfiles/Interactive%20Lab%20Simulation%20Files/06).
     + This template includes the virtual machines and virtual networks in the underlying architecture. 
     + Use Azure PowerShell to install the Network Watcher extension on the Azure virtual machines. 
 + **Task 2: Configure the hub and spoke network topology.** In this task, you configure local peering between the virtual networks you deployed in the previous tasks in order to create a hub and spoke network topology.
@@ -42,4 +42,3 @@ Your organization is migrating hub and spoke network topologies to Azure. As the
 > Select the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
 
 [![Screenshot of the simulation page.](../media/simulation-traffic-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator%20Exercise%2010?azure-portal=true)
-

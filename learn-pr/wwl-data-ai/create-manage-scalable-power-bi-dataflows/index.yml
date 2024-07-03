@@ -3,10 +3,10 @@ uid: learn.wwl.create-manage-scalable-power-bi-dataflows
 metadata:
   title: Create and manage scalable Power BI dataflows
   description: "Create Power BI transformation logic for reuse across your organization with Power BI dataflows. Learn how to combine Power BI dataflows with Power BI Premium for scalable ETL, and practice creating and consuming dataflows."
-  ms.date: 10/26/2022
+  ms.date: 05/15/2024
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: module
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based
   ms.service: powerbi
 title: Create and manage scalable Power BI dataflows
 summary: Create Power BI transformation logic for reuse across your organization with Power BI dataflows.  Learn how to combine Power BI dataflows with Power BI Premium for scalable ETL, and practice creating and consuming dataflows.
@@ -16,7 +16,7 @@ abstract: |
   - Describe best practices for implementing Power BI dataflows.
   - Create and consume Power BI dataflows.
 prerequisites: |
-  *   You'll need knowledge of Power BI data model design including star schema design basics.
+  *   You need knowledge of Power BI data model design including star schema design basics.
   *   Consider completing the [Model data in Power BI](/training/paths/model-power-bi/) learning path.
 iconUrl: /training/achievements/create-manage-scalable-power-bi-dataflows.svg
 levels:
@@ -33,7 +33,6 @@ units:
 - learn.wwl.create-manage-scalable-power-bi-dataflows.define-use-cases-for-dataflows
 - learn.wwl.create-manage-scalable-power-bi-dataflows.create-reusable-assets
 - learn.wwl.create-manage-scalable-power-bi-dataflows.implement-best-practices
-- learn.wwl.create-manage-scalable-power-bi-dataflows.exercise-create-dataflow
 - learn.wwl.create-manage-scalable-power-bi-dataflows.knowledge-check
 - learn.wwl.create-manage-scalable-power-bi-dataflows.summary
 badge:

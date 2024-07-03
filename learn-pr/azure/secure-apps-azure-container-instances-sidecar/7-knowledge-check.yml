@@ -5,10 +5,10 @@ metadata:
   type: knowledge_check
   title: Azure Container Instances - Knowledge check
   description: Azure Container Instances - Knowledge check
-  ms.date: 04/27/2022
+  ms.date: 10/12/2023
   author: erjosito
   ms.author: jomore
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 05
 content: |
 quiz:

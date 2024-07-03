@@ -8,6 +8,7 @@ Lastly, the Data Migration Assistant assists in assessing the compatibility of d
 
 For more information on the tools available, see:
 
+- [What is Azure Database Migration Service?](/azure/dms/dms-overview)
 - [Azure SQL Migration extension for Azure Data Studio](/azure/dms/migration-using-azure-data-studio)
 - [Azure Migrate documentation](/azure/migrate/)
 - [Best practices for running Data Migration Assistant](/sql/dma/dma-bestpractices)

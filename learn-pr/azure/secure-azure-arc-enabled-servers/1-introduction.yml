@@ -3,8 +3,8 @@ uid: learn.azure.secure-azure-arc-enabled-servers.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 02/02/2022
+  description: Learn about the security capabilities of Azure Arc-enabled servers.
+  ms.date: 04/24/2024
   author: aurnovcy
   ms.author: aurnovc
   ms.topic: unit

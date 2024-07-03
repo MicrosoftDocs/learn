@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: "Azure Monitor knowledge check" # user input: module title for browser tab and search results
   description: "Check your knowledge of Azure Monitor." # user input: a description for site search and SEO.
-  ms.date: 4/15/2021
+  ms.date: 08/31/2023
   author: guywi-ms
   ms.author: guywild
   ms.topic: unit

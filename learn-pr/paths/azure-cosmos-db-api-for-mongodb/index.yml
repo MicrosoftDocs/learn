@@ -24,7 +24,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.get-started-mongodb-api-azure-cosmos-db
 - learn.wwl.design-mongodb-database-for-azure-cosmos-db

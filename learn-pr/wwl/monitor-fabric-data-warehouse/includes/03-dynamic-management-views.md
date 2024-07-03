@@ -26,7 +26,7 @@ WHERE requests.status = 'running'
 ORDER BY requests.total_elapsed_time DESC
 ```
 
-This query returns details about the active requests in the current database, ordered by the duration for which they have been executing; which may be useful to identify long-running queries that cold benefit from optimization. An example result set from the query is shown here:
+This query returns details about the active requests in the current database, ordered by the duration for which they have been executing; which may be useful to identify long-running queries that could benefit from optimization. An example result set from the query is shown here:
 
 |session_id|login_name|client_net_address|command|start_time|total_elapsed_time|
 |--|--|--|--|--|--|

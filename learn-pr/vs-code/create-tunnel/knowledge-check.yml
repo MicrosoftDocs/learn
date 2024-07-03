@@ -3,48 +3,48 @@ uid: learn.create-tunnel.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Test your knowledge of tunneling in Visual Studio Code (VS Code).
+  description: Test your knowledge of tunneling in Visual Studio Code.
   ms.date: 12/15/2023
   author: theReynald
   ms.author: radolphe
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 3
 content: |
   [!include[](includes/knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-    - content: What’s the command to create a secure tunnel? 
+    - content: What's the command to create a secure tunnel? 
       choices:
-        - content: code tunnel
+        - content: The command is `code tunnel`.
           isCorrect: true
           explanation: Correct. This answer is the right command. The others cause an error.
-        - content:  tunnel code
+        - content: The command is `tunnel code`.
           isCorrect: false
-          explanation: This answer is incorrect. The correct command is 'code tunnel.'
-        - content: code –t 
+          explanation: Incorrect. The correct command is `code tunnel`.
+        - content: The command is `code –t`.
           isCorrect: false
-          explanation: This answer is incorrect. The correct command is 'code tunnel.'
-    - content: What format seems correct for a vscode.dev URL tied to a remote machine and folder? 
+          explanation: Incorrect. The correct command is `code tunnel`.
+    - content: What format seems correct for a `vscode.dev` URL tied to a remote machine and folder? 
       choices:
         - content: vscode.dev/tunnel/<folder_name>/<machine_name>
-          isCorrect: true
-          explanation: Correct. This answer shows the right format. The others don't work.
+          isCorrect: false
+          explanation: This answer is incorrect.
         - content: vscode.dev/tunnel/<machine_name_folder_name> 
           isCorrect: false
           explanation: This answer is incorrect. 
         - content: vscode.dev/tunnel/<machine_name>/<folder_name>
-          isCorrect: false
-          explanation: This answer is incorrect. 
+          isCorrect: true
+          explanation: Correct. This answer shows the right format. The others don't work.
     - content: Which statement is most true?
       choices:
-        - content: The Remote - Tunnels extension lets you connect to a remote machine, like a desktop PC, or virtual machine (VM), via a secure tunnel. You can connect to that machine from a VS Code client anywhere, without the requirement of SSH. 
+        - content: The Visual Studio Code Remote - Tunnels extension, lets you connect via a secure tunnel to a remote machine like a desktop PC or virtual machine. You can connect to that machine from a Visual Studio Code client anywhere, without the requirement of the Secure Shell protocol. 
           isCorrect: true
-          explanation: Correct. The tunnels extension connects to either a remote desktop PC or remote virtual machine (VM).
-        - content: The Remote - Tunnels extension lets you connect to a desktop PC but not a virtual machine (VM), via a secure tunnel. 
+          explanation: Correct. The Remote - Tunnels extension connects to either a remote desktop PC or a remote virtual machine.
+        - content: The Remote - Tunnels extension lets you connect to a desktop PC but not a virtual machine, via a secure tunnel. 
           isCorrect: false
-          explanation: Incorrect. Tunnels extension lets you connect to both either remote machine, desktop PC or virtual. 
-        - content: The Remote - Tunnels extension lets you connect to a virtual machine but not a desktop PC, via a secure tunnel.  
+          explanation: Incorrect. The Remote - Tunnels extension lets you connect to either remote machine, whether it's a desktop PC or a virtual machine. 
+        - content: The Remote - Tunnels extension lets you connect to a virtual machine but not a desktop PC, via a secure tunnel.
           isCorrect: false
-          explanation: Incorrect. Tunnels extension lets you connect to both either remote machine, desktop PC or virtual. 
+          explanation: Incorrect. The Remote - Tunnels extension lets you connect to either remote machine, whether it's a desktop PC or a virtual machine. 
 

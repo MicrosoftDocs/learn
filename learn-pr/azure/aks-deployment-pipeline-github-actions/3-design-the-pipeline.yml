@@ -3,7 +3,7 @@ uid: learn.aks-deployment-pipeline-github-actions.3-design-the-pipeline
 metadata:
   title: Design the Deployment Pipeline
   description: Get an overview of deployment pipelines and plan to build one.
-  ms.date: 10/08/2020
+  ms.date: 01/08/2023
   author: nickomang
   ms.author: nickoman
   ms.topic: unit

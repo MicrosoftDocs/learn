@@ -3,26 +3,41 @@ uid: learn.wwl.deploy-manage-dhcp
 metadata:
   title: Deploy and manage DHCP
   description: "Deploy and manage DHCP"
-  ms.date: 10/20/2021
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: windows-server
+  ms.subservice: networking
+  ai-usage: human-only
 title: Deploy and manage DHCP
 summary: Learn to implement automatic IP configuration with Dynamic Host Configuration Protocol (DHCP) in Windows Server 2019.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe the DHCP Server role.
-  - Install and configure the DHCP Server role.
-  - Configure DHCP options.
-  - Create and configure a DHCP scope.
-  - Describe high availability options for DHCP.
-  - Describe DHCP Failover and explain how to configure it.
+
+  -   Describe the DHCP Server role.
+
+  -   Install and configure the DHCP Server role.
+
+  -   Configure DHCP options.
+
+  -   Create and configure a DHCP scope.
+
+  -   Describe high availability options for DHCP.
+
+  -   Describe DHCP Failover and explain how to configure it.
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
-  - Active Directory Domain Services concepts and technologies.
-  - Windows Server.
-  - Core networking technologies.
-  - Windows client operating systems such as Windows 10.
+
+  -   Active Directory Domain Services concepts and technologies.
+
+  -   Windows Server.
+
+  -   Core networking technologies.
+
+  -   Windows client operating systems such as Windows 10.
 iconUrl: /training/achievements/deploy-and-manage-dhcp.svg
 levels:
 - intermediate

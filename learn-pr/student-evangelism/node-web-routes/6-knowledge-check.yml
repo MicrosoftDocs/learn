@@ -4,34 +4,67 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 07/12/2021
-  author: clarkio
-  ms.author: chnoring
+  ms.date: 01/30/2024
+  author: diberry
+  ms.author: diberry
   ms.topic: unit
 durationInMinutes: 2
 content: Choose the best response for each question. Then select **Check your answers**.
 quiz:
   title: Check your knowledge
   questions:
+    - content: What is middleware in Express.js?
+      choices:
+      - content: A type of database
+        isCorrect: false
+        explanation: Incorrect. Middleware is not related to databases.
+      - content: Functions that execute during the request-response cycle and have access to the request and response objects
+        isCorrect: true
+        explanation: Correct. Middleware functions can be used for tasks such as logging, authentication, and error handling.
+      - content: A type of cookie
+        isCorrect: false
+        explanation: Incorrect. Middleware is not related to cookies.  
     - content: What is a way to set up middleware? 
       choices:
-        - content: Use `app.get(‘/’, () => {})`.
-          isCorrect: false
-          explanation: Incorrect. That's how you would set up a default route for ‘/’. 
-        - content: Use `app.use({} => {})`.
-          isCorrect: true
-          explanation: Correct. Using `use()` is the correct way to set up middleware.
-        - content: Use `app.middleware() => {})`.
-          isCorrect: false
-          explanation: Incorrect. There's no method called `middleware()`.
-    - content: How would you respond with text content?
+      - content: Use `app.get('/', () => {})`.
+        isCorrect: false
+        explanation: Incorrect. That's how you would set up a default route for `'/'`. 
+      - content: Use `app.use(() => {})`.
+        isCorrect: true
+        explanation: Correct. Using `use()` is the correct way to set up middleware.
+      - content: Use `app.middleware() => {})`.
+        isCorrect: false
+        explanation: Incorrect. There's no method called `middleware()`.
+    - content: What is the purpose of route parameters in Express.js?
       choices:
-        - content: Use the `res.text()` method.
-          isCorrect: false
-          explanation: Incorrect. There's no method called `text()` on the response stream.
-        - content: Use the `res.send()` method.
-          isCorrect: true
-          explanation: Correct. This method ensures that what's sent back is of type `text`.
-        - content: Use the `req.send()` method.
-          isCorrect: false
-          explanation: Incorrect. Although `send()` is the correct method to use for sending data back, you need to use the response stream (`res`), not the request (`req`).
+      - content: To capture values specified in the URL and use them to perform actions on the server
+        isCorrect: true
+        explanation: Correct. Route parameters are defined by a colon followed by a parameter name in the route path, and can be accessed in the request object.
+      - content: To store data in a database
+        isCorrect: false
+        explanation: Incorrect. Route parameters are not related to database storage.
+      - content: To define the layout of the website
+        isCorrect: false
+        explanation: Incorrect. Route parameters are not related to website layout.
+    - content: What is the purpose of using query parameters in an Express app?
+      choices:
+      - content: To encrypt data sent between the client and server
+        isCorrect: false
+        explanation: Incorrect. Query parameters are not used for encryption.
+      - content: To authenticate users before accessing protected routes
+        isCorrect: false
+        explanation: Incorrect. Query parameters are not used for authentication.
+      - content: To filter, sort, and paginate data returned from the server
+        isCorrect: true
+        explanation: Correct. Query parameters can be used to modify the data returned from the server.
+    - content: What is the difference between res.send() and res.json() in Express.js?
+      choices:
+      - content: res.send() sends a JSON response while res.json() sends a plain text response
+        isCorrect: false
+        explanation: Incorrect. Both methods can send JSON responses, but res.json() is specifically designed for sending JSON data.
+      - content: res.send() sends a plain text response while res.json() sends a JSON response with additional metadata
+        isCorrect: false
+        explanation: Incorrect. Both methods can send plain text or JSON responses, but res.json() is specifically designed for sending JSON data.
+      - content: res.send() can send any type of response while res.json() is specifically designed for sending JSON data
+        isCorrect: true
+        explanation: Correct. While both methods can send JSON responses, res.json() is specifically designed for sending JSON data. res.send() can send any type of response, including JSON, plain text, HTML, and more.

@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: How ASP.NET Core SignalR works
   description: In this unit, you'll learn how ASP.NET Core SignalR works.
-  ms.date: 10/06/2023
+  ms.date: 10/25/2023
   author: IEvangelist
   ms.author: dapine
   ms.manager: markl

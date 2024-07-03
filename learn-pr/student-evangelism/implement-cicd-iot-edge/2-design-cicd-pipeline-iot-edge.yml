@@ -5,11 +5,10 @@ metadata:
   title: Design a CI/CD pipeline for IoT Edge
   description: In this section, we design the structure of implementing a CI/CD pipeline for IoT Edge.
   ms.date: 06/21/2020
-  author: leestott
-  ms.author: leestott
+  author: PatAltimore
+  ms.author: patricka
   ms.topic: unit
   ms.custom: team=nextgen
-  ms.service: iot-hub
 durationInMinutes: 6 
 content: |
   [!include[](includes/2-design-cicd-pipeline-iot-edge.md)]

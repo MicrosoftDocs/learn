@@ -3,7 +3,7 @@ uid: learn.design-monitoring-strategy-on-azure.6-sentinel
 metadata:
   title: Manage enterprise security by using Microsoft Sentinel
   description: Learn how to monitor, analyze, and manage enterprise security by using Microsoft Sentinel.
-  ms.date: 12/03/2019
+  ms.date: 11/13/2023
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit

@@ -3,9 +3,9 @@ uid: learn.incident-response-with-alerting-on-azure.5-log-alerts
 metadata:
   title: Use log alerts to alert on events in your application
   description: Understand how log data can be used to improve resilience in your system.
-  ms.date: 10/10/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 09/14/2023
+  author: AbbyMSFT
+  ms.author: abbyweisberg
   ms.topic: unit
 title: Use log alerts to alert on events in your application
 durationInMinutes: 4

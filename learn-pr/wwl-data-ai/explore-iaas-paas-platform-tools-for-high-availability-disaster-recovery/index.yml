@@ -2,11 +2,12 @@
 uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr
 metadata:
   title: Explore IaaS and PaaS solutions for high availability and disaster recovery
-  description: "Explore IaaS and PaaS solutions for high availability and disaster recovery"
+  description: Explore IaaS and PaaS solutions for high availability and disaster recovery
   ms.date: 05/13/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Explore IaaS and PaaS solutions for high availability and disaster recovery
 summary: Deploy Windows Server Failover Cluster and availability groups in Azure and hybrid environments. Configure temporal tables, geo-replication, and auto-failover groups.
 abstract: |

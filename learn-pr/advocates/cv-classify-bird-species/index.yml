@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/22/2022
   author: cassiebreviu
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.service: azure-ai-custom-vision
 title:  Classify endangered bird species with Custom Vision

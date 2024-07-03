@@ -7,7 +7,7 @@ metadata:
   ms.date: 01/17/2023
   author: mumian
   ms.author: jgao
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: engagement-fy23
   ms.devlang: bicep
 title: Build your first Bicep deployment workflow by using GitHub Actions

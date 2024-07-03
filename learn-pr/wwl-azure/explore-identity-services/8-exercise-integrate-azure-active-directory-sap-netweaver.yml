@@ -4,10 +4,10 @@ title: Integrate Microsoft Entra ID with SAP NetWeaver
 metadata:
   title: Integrate Microsoft Entra ID with SAP NetWeaver
   description: "Integrate Microsoft Entra ID with SAP NetWeaver"
-  ms.date: 10/17/2023
+  ms.date: 03/05/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 13
 content: |
   [!include[](includes/8-exercise-integrate-azure-active-directory-sap-netweaver.md)]

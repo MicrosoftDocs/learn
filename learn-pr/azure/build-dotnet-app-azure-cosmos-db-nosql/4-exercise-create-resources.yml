@@ -15,7 +15,7 @@ metadata:
   author: seesharprun
   ms.author: sidandrews
   ms.topic: unit
-  ms.date: 6/5/2023
+  ms.date: 11/01/2023
 durationInMinutes: 9
 content: |
   [!include[](includes/4-exercise-create-resources.md)]

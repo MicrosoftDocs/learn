@@ -30,7 +30,6 @@ roles:
 products:
 - fabric
 subjects:
-- data-ai
 - data-analytics
 - data-engineering
 - data-integration

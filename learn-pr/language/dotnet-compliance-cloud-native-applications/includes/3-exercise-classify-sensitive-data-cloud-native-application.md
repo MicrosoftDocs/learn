@@ -1,8 +1,8 @@
-In this exercise, you'll classify the sensitive data types in a sample **:::no-loc text="eShopLite":::** application. 
+In this exercise, you classify the sensitive data types in a sample **:::no-loc text="eShopLite":::** application. 
 
 The app is in active development and currently has two data classes, **:::no-loc text="Product":::** and **:::no-loc text="Order":::**. They're building out the ordering process and want you to add the code to classify data types.
 
-In this exercise, you'll:
+In this exercise, see how to:
 
 * Explore the current app and its data types.
 * Add the code to classify the data types.
@@ -12,9 +12,9 @@ In this exercise, you'll:
 
 You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
 
-To use a **codespace** create a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-compliance%2Fdevcontainer.json).
+To use a **codespace**, create a preconfigured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-compliance%2Fdevcontainer.json).
 
-GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise. The code that's used for the remainder of this module is in the **/dotnet-compliance** directory.
+GitHub takes several minutes to create and configure the codespace. When the process completes, you see the code files for the exercise. The code to use for the remainder of this module is in the **/dotnet-compliance** directory.
 
 To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your own GitHub account. Then:
 
@@ -22,48 +22,39 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
 1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
 1. Select your forked repository. Visual Studio Code creates your development container locally.
 
-### Update docker settings to run in a codespace
-
-If you're using a codespace for this exercise, you need to update the **docker-compose.yml** file to use the correct URL for the apps images.
-
-1. Select the **PORTS** tab. To the right of the local address for the **Back End (32001)** port, select the **Copy** icon.
-
-1. In the **EXPLORER** pane, expand the dotnet-compliance folder, then select the **docker-compose.yml** file.
-1. Paste the copied URL in the `ImagePrefix` environment variable. Replace the text `http://localhost:32001`.
-1. Append `images` to the pasted text, you're final `ImagePrefix` should look like this:
-
-    ```docker-compose
-    environment: 
-      - ProductEndpoint=http://backend:8080
-      - ImagePrefix=https://super-duper-space-broccoli-5200.app.github.dev/images
-    ```
-
-1. Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
-
 ### Test the :::no-loc text="eShopLite"::: app
 
 1. At the bottom of the Visual Studio Code window, select the **TERMINAL** tab.
 1. Move to the exercise folder:
 
     ```bash
-    cd dotnet-compliance/
+    cd dotnet-compliance/eShopLite
     ```
 
-1. Build on run the app:
+1. Build the apps containers.
+
+    ```dotnetcli
+    dotnet publish /p:PublishProfile=DefaultContainer 
+    ```
+
+1. Run the app using docker:
 
     ```bash
-    docker-compose up --build
+    cd ..
+    docker compose up
     ```
 
 1. Select the **PORTS** tab, then select the **Open in Browser** globe icon for the **Front End (32000)** port.
+
 1. Select the Products link. The app displays a list of products.
 
     :::image type="content" source="../media/eshoplite-screenshot.png" alt-text="A screenshot of the running eShopLite app.":::
+
 1. Select the **TERMINAL** tab, then press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.
 
 ## Create taxonomies and attributes
 
-In this task, you'll add the code to create two new taxonomies. Then you'll annotate the **:::no-loc text="Product":::** and **:::no-loc text="Order":::** data types with the appropriate attributes.
+In this task, add code to create two new taxonomies. Then annotate the **:::no-loc text="Product":::** and **:::no-loc text="Order":::** data types with the appropriate attributes.
 
 1. In the **TERMINAL** tab, move to the **:::no-loc text="eShopLite/DataEntities":::** folder:
 
@@ -78,7 +69,9 @@ In this task, you'll add the code to create two new taxonomies. Then you'll anno
     ```
 
 1. In the **EXPLORER** pane, right-click the **DataEntities** folder, then select the **New file**.
+
 1. In the file name, enter **Compliance.cs**.
+
 1. In the editor, enter this code:
 
     ```csharp
@@ -158,22 +151,28 @@ Use these taxonomies and attributes to classify the data types in the **:::no-lo
 
 ### Test your changes to the :::no-loc text="eShopLite"::: app
 
-1. At the bottom of the Visual Studio Code window, select the **TERMINAL** tab.
-1. Move to the root folder:
+1. On the **TERMINAL** pane at the bottom, go to the *dotnet-compliance/eShopLite* folder.
 
     ```bash
-    cd ../..
+    cd ..
     ```
 
-1. Build on run the app:
+1. Update the apps containers.
+
+    ```dotnetcli
+    dotnet publish /p:PublishProfile=DefaultContainer 
+    ```
+
+1. Go to the *dotnet-compliance* folder, and start the app with Docker:
 
     ```bash
-    docker-compose up --build
+    cd ..
+    docker compose up
     ```
 
 1. If you closed the tab in your browser, select the **PORTS** tab, then select the **Open in Browser** icon for the **Front End (32000)** port.
 1. Note the **:::no-loc text="eShopLite":::** app is unchanged.
 1. Try adding some products to the basket, then select **Buy Basket**.
-1. In the **TERMINAL** window, press <kbd>CTRL</kbd>+<kbd>C</kbd> to stop the app.
+1. In the **TERMINAL** window, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.
 
 You'll add redacted logging in the next exercise.

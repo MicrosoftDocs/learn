@@ -20,8 +20,14 @@ The Azure Developer CLI (`azd`) is designed to provision and deploy resources to
     mkdir web
     ```
 
+1. Change the directory to the `web` folder you just created.
+
+    ```bash
+    cd web
+    ```
+
 1. Create a new web app using the `dotnet new` command:
-    
+
     ```csharp
     dotnet new webapp
     ```

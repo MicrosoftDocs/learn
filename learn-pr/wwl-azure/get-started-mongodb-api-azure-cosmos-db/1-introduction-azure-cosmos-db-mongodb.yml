@@ -4,10 +4,12 @@ title: Introduction to the MongoDB API in Azure Cosmos DB
 metadata:
   title: Introduction to the MongoDB API in Azure Cosmos DB
   description: "Introduction to the MongoDB API in Azure Cosmos DB"
-  ms.date: 10/17/2023
+  ms.date: 03/20/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction-azure-cosmos-db-mongodb.md)]

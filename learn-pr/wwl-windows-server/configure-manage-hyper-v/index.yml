@@ -3,7 +3,7 @@ uid: learn.wwl.configure-manage-hyper-v
 metadata:
   title: Configure and manage Hyper-V
   description: "Configure and manage Hyper-V"
-  ms.date: 10/12/2023
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
@@ -30,8 +30,6 @@ roles:
 - solution-architect
 products:
 - windows-server
-subjects:
-- development-tools
 units:
 - learn.wwl.configure-manage-hyper-v.introduction
 - learn.wwl.configure-manage-hyper-v.define

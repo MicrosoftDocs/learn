@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 14
 content: |
   [!include[](includes/6-troubleshoot-enhanced-azure-monitoring-sap.md)]

@@ -35,8 +35,6 @@ roles:
 products:
   - blazor
   - aspnet
-subjects:
-- development-tools
 units:
 - learn-pr.use-forms-in-blazor-web-apps.introduction
 - learn-pr.use-forms-in-blazor-web-apps.attach-csharp-code-dom-events-blazor-event-handlers

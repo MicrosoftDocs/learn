@@ -3,9 +3,9 @@ uid: learn.azure.stack-hci-arc-integration.2-azure-arc-capabilities
 metadata:
   title: Characteristics and capabilities of Azure Arc
   description: Azure Arc serves as the core component that facilitates integration of non-Azure resources with Azure, helping companies like Contoso to bridge the gap between the administrative model of on-premises and cloud services. In this unit, you will learn about the basic characteristics of Azure Arc and the range of scenarios it supports.
-  ms.date: 12/09/2020
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 05/19/2023
+  author: JasonGerend
+  ms.author: jgerend
   ms.topic: unit
   ms.custom: e2e-hybrid
 title: Characteristics and capabilities of Azure Arc

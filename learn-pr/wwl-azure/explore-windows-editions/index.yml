@@ -6,7 +6,8 @@ metadata:
   ms.date: 09/15/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: windows
 title: Explore Windows Editions
 summary: This module covers Windows OS editions, features, and installation methods. Learners gain a deeper understanding of the available editions and corresponding installation processes.
 abstract: |

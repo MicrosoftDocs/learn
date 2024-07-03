@@ -7,7 +7,7 @@ metadata:
   ms.date: 05/10/2023
   author: kaitlynjones
   ms.author: kaitlynjones
-  ms.topic: interactive-tutorial
+  ms.topic: module
   showCreativeCommonsFooter: true
 title: Gaming assistive technologies
 summary: Learn about the types of assistive hardware and software technologies that players with disabilities use to game, and the importance of supporting these assistive technologies when you create accessible gaming products and experiences for all audiences.
@@ -29,7 +29,7 @@ roles:
 products:
 - xbox
 subjects:
-- gaming-innovation
+- game-development
 units:
 - learn.gaming-assistive-technologies.introduction
 - learn.gaming-assistive-technologies.gaming-software

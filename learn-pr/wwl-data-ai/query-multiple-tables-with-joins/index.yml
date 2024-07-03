@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/03/2021
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: sql
   ms.subservice: t-sql
   ms.devlang: tsql
@@ -39,7 +39,7 @@ products:
 - azure-sqlserver-vm
 - azure-sql-virtual-machines
 subjects:
-- database
+- databases
 units:
 - learn.wwl.query-multiple-tables-with-joins.introduction
 - learn.wwl.query-multiple-tables-with-joins.join-concepts

@@ -3,21 +3,27 @@ uid: learn.wwl.design-container-build-strategy
 metadata:
   title: Design a container build strategy
   description: "Design a container build strategy"
-  ms.date: 06/30/2023
+  ms.date: 05/25/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Design a container build strategy
 summary: This module helps you plan a container build strategy, explains containers and their structure, introduces Docker, microservices, Azure Container Registry, and related services.
 abstract: |
-  By the end of this module, you'll be able to:
-  *   Design a container strategy
-  *   Work with Docker Containers
-  *   Create an Azure Container Registry
-  *   Explain Docker microservices and containers
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  -   Design a container strategy
+
+  -   Work with Docker Containers
+
+  -   Create an Azure Container Registry
+
+  -   Explain Docker microservices and containers
+prerequisites: None
 iconUrl: /training/achievements/1-design-a-container-build-strategy.svg
 levels:
 - advanced
@@ -41,7 +47,7 @@ products:
 - azure-test-plans
 - github
 subjects:
-- container
+- containers
 units:
 - learn.wwl.design-container-build-strategy.introduction
 - learn.wwl.design-container-build-strategy.examine-structure-of-containers

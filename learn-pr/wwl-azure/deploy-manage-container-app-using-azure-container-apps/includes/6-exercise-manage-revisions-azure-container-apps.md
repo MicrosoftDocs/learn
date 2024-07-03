@@ -32,19 +32,19 @@ You complete the following tasks during this exercise:
 
 1. In the Azure portal, open your container app resource.
 
-1. On the left side menu, under Revisions, select **Revisions**.
+1. On the left side menu, under Application, select **Revisions and replicas**.
 
-1. At the top of the Revisions page, select **Choose revision mode**.
+1. At the top of the Revisions and replicas page, select **Choose revision mode**.
 
 1. To switch from single to multi-revision mode, select **Confirm**.
 
-1. On the Revisions page, wait for the **Revision Mode** setting to update.
+1. On the Revisions and replicas page, wait for the **Revision Mode** setting to update.
 
-    The Revision Mode will be set to **Multiple** after the update.
+    The Revision Mode will be set to **Multiple** after the update. Also, on the left-side menu, the section title changes from Application to Revisions.
 
 ## Create a new revision with a v2 suffix
 
-1. In the Azure portal, ensure that you have the Revisions page of your container app resource open.
+1. In the Azure portal, ensure that you have the Revisions and replicas page of your container app resource open.
 
 1. At the top of the page, select **+ Create new revision**.
 
@@ -75,13 +75,13 @@ You complete the following tasks during this exercise:
 
     - Insecure connections: ensure that Allowed is **NOT** checked.
 
-    - Target port: enter **80**
+    - Target port: enter **5000**
 
     - IP Security Restrictions Mode: ensure that **Allow all traffic** is selected.
 
 1. At the bottom of the Ingress page, select **Save**, and then wait for the update to complete.
 
-1. On the left-side menu, under Revisions, select **Revisions**.
+1. On the left-side menu, under Revisions, select **Revisions and replicas**.
 
 1. For the v2 revision, under Label, enter **updated**
 
@@ -91,7 +91,7 @@ You complete the following tasks during this exercise:
 
 ## Configure a traffic percentage on the revisions
 
-1. Ensure that you have the Revisions page open.
+1. Ensure that you have the Revisions and replicas page open.
 
 1. For the v2 revision, under Traffic, enter **25** as the percentage.
 
@@ -103,7 +103,7 @@ You complete the following tasks during this exercise:
 
 1. Ensure that you have your Container App open in the Azure portal.
 
-1. On the left-side menu, under Revisions, select **Revisions**.
+1. On the left-side menu, under Application, select **Revisions and replicas**.
 
 1. Verify that your revisions are configured as follows:
 

@@ -2,6 +2,8 @@ The *shift-left* approach is recommended not only in regard to testing. The same
 
 ## What is shift-left security?
 
+:::image type="content" source="../media/7-shift-security-left.png" alt-text="Diagram showing parts of shift-left security, including Dev, Ops, SDL, and OSA.":::
+
 In the context of security, shift-left translates into introducing security activities as early in the software lifecycle processes as possible. This starts with incorporating security in software design by using threat modeling in order to identify potential future threats, assess risks, and define mitigation strategies. The process continues throughout software development by implementing a range of security-related activities such as code reviews and automated security testing. Code reviews should include security-focused assessments, targeting security flaws, adherence to coding standards, and potential vulnerabilities. Automated security testing involves such tasks as static application security testing (SAST), dynamic application security testing (DAST), and software composition analysis (SCA), which are integrated into continuous integration/continuous deployment (CI/CD) pipelines.
 
 Continuous monitoring, which is part of continuous security, is another element suitable for the shift-left approach. Its implementation involves applying logging, monitoring, and incident response mechanisms from the beginning of development.

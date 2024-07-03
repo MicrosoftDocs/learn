@@ -4,9 +4,9 @@ title: Understand URLs and routes
 metadata:
   title: Understand URLs and routes
   description: Divide your application into sections for the different resources.
-  author: clarkio
-  ms.author: chnoring
-  ms.date: 07/12/2021
+  author: diberry
+  ms.author: diberry
+  ms.date: 01/30/2024
   ms.topic: unit
 durationInMinutes: 7
 content: |

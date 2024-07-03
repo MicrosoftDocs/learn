@@ -3,7 +3,7 @@ uid: learn.secure-your-azure-sql-database.2-restrict-network-access
 metadata:
   title: Exercise - Restrict network access
   description: Learn how to restrict network access to your Azure SQL Server database.
-  ms.date: 11/09/2018
+  ms.date: 11/07/2023
   author: VanMSFT
   ms.author: vanto
   manager: jroth

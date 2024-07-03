@@ -21,7 +21,7 @@ To create your vault, run the following command in Azure Cloud Shell. Make sure 
 
 ```azurecli
 az keyvault create \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --location centralus \
     --name <your-unique-vault-name>
 ```

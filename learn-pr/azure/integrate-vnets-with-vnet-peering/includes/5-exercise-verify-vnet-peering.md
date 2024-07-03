@@ -15,7 +15,7 @@ Let's confirm the connectivity across the peering connections. To do this, you'l
 
     ```azurecli
     az vm list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --query "[*].{Name:name, PrivateIP:privateIps, PublicIP:publicIps}" \
         --show-details \
         --output table

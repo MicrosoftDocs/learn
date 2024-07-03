@@ -2,23 +2,29 @@
 uid: learn.wwl.secure-azure-database-for-postgresql
 metadata:
   title: Secure Azure Database for PostgreSQL
-  description: "Azure Database for PostgreSQL includes comprehensive security features including encryption in transit and at rest, authentication, and granting permissions to database users. In this module you will learn about the security features of Azure Database for PostgreSQL, and how to configure them."
-  ms.date: 02/07/2023
+  description: "Azure Database for PostgreSQL includes comprehensive security features including encryption in transit and at rest, authentication, and granting permissions to database users. In this module you learn about the security features of Azure Database for PostgreSQL, and how to configure them."
+  ms.date: 05/10/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
   ms.service: postgresql
+  ai-usage: human-only
 title: Secure Azure Database for PostgreSQL
-summary: Azure Database for PostgreSQL includes comprehensive security features including encryption, authentication, and granting permissions to database users. In this module you will learn about the security features of Azure Database for PostgreSQL.
+summary: Azure Database for PostgreSQL includes comprehensive security features including encryption, authentication, and granting permissions to database users. In this module, you learn about the security features of Azure Database for PostgreSQL.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe the security features of Azure Database for PostgreSQL.
-  - Create database users and grant permissions.
-  - Understand encryption in Azure Database for PostgreSQL.
+
+  -   Describe the security features of Azure Database for PostgreSQL.
+
+  -   Create database users and grant permissions.
+
+  -   Understand encryption in Azure Database for PostgreSQL.
 prerequisites: |
-  ## Prerequisites
-  - Demonstrate an understanding of relational databases.
-  - Demonstrate an understanding of basic SQL.
+  -   Demonstrate an understanding of relational databases.
+
+  -   Demonstrate an understanding of basic SQL.
 iconUrl: /training/achievements/secure-azure-database-for-postgresql.svg
 levels:
 - intermediate
@@ -27,7 +33,7 @@ roles:
 products:
 - azure-database-postgresql
 subjects:
-- database
+- databases
 units:
 - learn.wwl.secure-azure-database-for-postgresql.introduction
 - learn.wwl.secure-azure-database-for-postgresql.describe-security

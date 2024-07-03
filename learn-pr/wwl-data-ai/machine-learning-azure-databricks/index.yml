@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/29/2023
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure-databricks
 title: Train a machine learning model in Azure Databricks
 summary: Machine learning involves using data to train a predictive model. Azure Databricks support multiple commonly used machine learning frameworks that you can use to train models.
@@ -27,8 +27,7 @@ roles:
 products:
 - azure-databricks
 subjects:
-- data-ai
-- data-science
+- data-management
 - machine-learning
 units:
 - learn.wwl.machine-learning-azure-databricks.introduction

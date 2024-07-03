@@ -3,11 +3,13 @@ uid: learn.languages.csharp-arrays-operations.exercise-sort-reverse
 title: Exercise - Discover Sort() and Reverse()
 metadata:
   title: Exercise - Discover Sort() and Reverse()
-  description: "Exercise - Discover Sort() and Reverse()"
-  ms.date: 02/21/2024
+  description: "Discover how to use Sort() and Reverse() to manipulate an array."
+  ms.date: 03/27/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-sort-reverse.md)]

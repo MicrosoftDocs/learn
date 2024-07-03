@@ -4,8 +4,8 @@ title: Manage assets
 metadata:
   unitType: learning-content
   title: Manage assets
-  description: "This article describes how you can manage and modify data assets that have been scanned into your Microsoft Purview Data Catalog."
-  ms.date: 04/27/2023
+  description: "This article describes how you can manage and modify data assets that were scanned into your Microsoft Purview Data Catalog."
+  ms.date: 04/03/2024
   author: whhender
   ms.author: whhender
   ms.topic: unit

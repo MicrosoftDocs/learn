@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-endpoint-manager.6-endpoint-analytics
-title: Learn about Endpoint analytics
+title: Learn about endpoint analytics
 metadata:
-  title: Learn about Endpoint analytics
-  description: Endpoint analytics aims to improve user productivity and reduce IT support costs by providing insights into how your organization is working.
-  ms.date: 10/15/2020
+  title: Learn about endpoint analytics
+  description: Learn how endpoint analytics can help improve user productivity and reduce IT support costs by providing insights into how your organization works.
+  ms.date: 06/05/2024
   author: Erikre
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-endpoint-analytics.md)]

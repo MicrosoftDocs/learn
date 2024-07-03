@@ -4,9 +4,9 @@ metadata:
   title: Get started with Azure Advisor
   description: Learn how to use Azure Advisor to optimize your Azure usage, lower costs, and increase efficiency. 
   ms.date: 10/20/2023
-  author: danterasera
-  ms.author: darasera
-  ms.topic: module
+  author: aortoll
+  ms.author: anortoll
+  ms.topic: module-standard-task-based
   ms.service: advisor
 title: Get started with Azure Advisor
 summary: Learn how to use Azure Advisor to optimize your Azure workload usage, lower costs, increase efficiency, and improve security.

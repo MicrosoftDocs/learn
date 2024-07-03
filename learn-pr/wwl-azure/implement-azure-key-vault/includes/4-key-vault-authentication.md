@@ -1,4 +1,3 @@
-
 Authentication with Key Vault works with Microsoft Entra ID, which is responsible for authenticating the identity of any given security principal.
 
 For applications, there are two ways to obtain a service principal:

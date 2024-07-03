@@ -28,7 +28,7 @@ products:
 - fabric
 subjects:
 - architecture
-- data-lake
+- data-storage
 - data-management
 units:
 - learn.wwl.describe-medallion-architecture.introduction

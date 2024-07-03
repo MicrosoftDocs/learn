@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/05/2022
+  ms.date: 04/07/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
@@ -24,25 +24,25 @@ quiz:
     - content: "Inbound Access rules."
       isCorrect: false
       explanation: "Inbound rules filter traffic passing from the network to a service."
-  - content: "Contoso wants to retain Active directory passwords on-premises so that they are not synchronized to Microsoft Entra ID. In such circumstances, what service would you recommend designing for the authentication for users?"
+  - content: "Contoso wants to retain Active directory passwords on-premises so that they aren't synchronized to Microsoft Entra ID. In such circumstances, what service would you recommend designing for the authentication for users?"
     choices:
     - content: "HDInsight Identity Broker."
       isCorrect: true
-      explanation: "Use HDInsight Identity Broker to include components to support authentication in HDInsight"
+      explanation: "Use HDInsight Identity Broker to include components to support authentication in HDInsight."
     - content: "Apache Ranger."
       isCorrect: false
-      explanation: "Apache Ranger enables you to monitor data security"
+      explanation: "Apache Ranger enables you to monitor data security."
     - content: "Microsoft Entra Domain Services."
       isCorrect: false
-      explanation: "Microsoft Entra Domain Services will be the source of the passwords"
-  - content: "After a suspected unauthorized login, Contoso has asked you to provide them with SSH logs for one of their ESP clusters enabled with Azure Monitoring. Which log file would serve the purpose?"
+      explanation: "Microsoft Entra Domain Service is the source of the passwords."
+  - content: "After a suspected unauthorized login, Contoso asked you to provide SSH logs for one of their ESP clusters enabled with Azure Monitoring. Which log file would serve the purpose?"
     choices:
     - content: "log_ambari_audit_CL."
       isCorrect: false
-      explanation: "This method provides audit logs from Ambari"
+      explanation: "This method provides audit logs from Ambari."
     - content: "log_auth_CL."
       isCorrect: true
-      explanation: "log_auth_CL are the correct logs to identify suspected unauthorized login"
+      explanation: "log_auth_CL are the correct logs to identify suspected unauthorized login."
     - content: "log_gateway_audit_CL."
       isCorrect: false
       explanation: "This table provides audit logs from cluster gateway nodes that show successful and failed login attempts"
@@ -50,10 +50,10 @@ quiz:
     choices:
     - content: "TLS 1.2 encryption"
       isCorrect: false
-      explanation: "TLS 1.2 encryption manages security of data in transit over the network"
-    - content: "Storage encryption using customer/Microsoft managed keys"
+      explanation: "TLS 1.2 encryption manages security of data in transit over the network."
+    - content: "Storage encryption using customer/Microsoft managed keys."
       isCorrect: true
       explanation: "Storage encryption is best to use to ensure the data is inaccessible if physically stolen from a data center"
-    - content: "Access control list"
+    - content: "Access control list."
       isCorrect: false
-      explanation: "Access control lists are used to control authorized access to resources on a cluster"
+      explanation: "Access control lists are used to control authorized access to resources on a cluster."

@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/23/2022
   author: MikeRayMSFT
   ms.author: mikeray
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure-arc
   ms.subservice: azure-arc-data-sqlmi
 title: Monitor Azure Arc-enabled SQL Managed Instance security performance

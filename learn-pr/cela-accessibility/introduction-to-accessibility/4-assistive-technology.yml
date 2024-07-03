@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.introduction-to-accessibility.assistive-technology
+title: Assistive technology
+metadata:
+  title: Assistive technology
+  description: This content is a part of the 'Introduction to accessibility' module.
+  ms.date: 04/10/2024
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-assistive-technology.md)]

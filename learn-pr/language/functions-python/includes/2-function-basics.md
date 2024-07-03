@@ -28,7 +28,7 @@ rocket_parts()
 payload, propellant, structure
 ```
 
-The `rocket_parts()` function doesn't take any arguments and prints a statement about gravity. If you need to use a value that a function is returning, you can assign the function output to a variable:
+The `rocket_parts()` function doesn't take any arguments and prints a statement. If you need to use a value that a function is returning, you can assign the function output to a variable:
 
 ```python
 output = rocket_parts()

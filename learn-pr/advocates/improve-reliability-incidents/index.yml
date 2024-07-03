@@ -4,22 +4,23 @@ title: "Improve your reliability with modern operations practices: Incident resp
 metadata:
   title: "Improve your reliability with modern operations practices: Incident response"
   description: Learn the incident response fundamentals necessary to help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
-  ms.date: 05/07/2020
+  ms.date: 02/28/2024
   author: dnblankedelman
   ms.author: dnb
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=cloud_advocates
+  ms.service: azure
   ms.contributors: dnb-06092020
 summary: Everyone has incidents, but the top performing organizations know how to respond to them effectively. Learn the fundamentals of efficient incident response and the Azure tools that make them possible.
 abstract: |
-  In this module you will:
-  - Learn the importance of effective incident response
-  - Gain an understanding of the lifecycle of an incident so we know just how to apply our efforts
+  In this module, you will:
+  - Learn the importance of effective incident response.
+  - Gain an understanding of the lifecycle of an incident so we know just how to apply our efforts.
   - Learn the building blocks for constructing an incident response process that allows us to respond with urgency.
   - Begin to track your incidents effectively using Azure DevOps tools.
-  - Explore ways to automate your incident tracking for a speedy and consistent response
-  - Understand the guidelines around communication that allow incident response to be more efficient
-  - Visit some Azure tools that can significantly speed up your remediation times during an incident
+  - Explore ways to automate your incident tracking for a speedy and consistent response.
+  - Understand the guidelines around communication that allow incident response to be more efficient.
+  - Visit some Azure tools that can significantly speed up your remediation times during an incident.
 iconUrl: /training/achievements/improve-reliability-incidents.svg
 levels:
 - beginner

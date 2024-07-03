@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Benchmark results 
   description: Verify performance results by using FIO and SPEC EDA benchmark suites. 
-  ms.date: 05/07/2021
+  ms.date: 08/03/2023
   author: mengruts  
   ms.author: mengtsai  
   ms.topic: unit

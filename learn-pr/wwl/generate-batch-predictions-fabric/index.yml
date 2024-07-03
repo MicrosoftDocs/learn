@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/26/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: 
     - build-2023
     - build-2023-dataai
@@ -32,7 +32,7 @@ roles:
 products:
 - fabric
 subjects:
-- data-science
+- data-management
 - machine-learning
 units:
 - learn.wwl.generate-batch-predictions-fabric.introduction

@@ -3,21 +3,21 @@ uid: learn.manage-data-assets-in-microsoft-purview-data-catalog
 metadata:
   moduleType: standard
   title: Manage data assets in the Microsoft Purview Data Catalog
-  description: "This module will teach you how to use the Microsoft Purview Data Catalog to manage your scanned data assets, curate a business glossary, and browse assets across your entire data estate."
-  ms.date: 04/27/2023
+  description: "This module teaches you how to use the Microsoft Purview Data Catalog to manage your scanned data assets. How to curate a business glossary, and how to browse assets across your entire data estate."
+  ms.date: 04/03/2024
   author: whhender
   ms.author: whhender
   ms.topic: module
   ms.custom:
     - ignite-2022
-  ms.service: purview-data-catalog
+  ms.service: purview-data-governance
 title: Manage data assets in the Microsoft Purview Data Catalog
-summary: "This module will teach you how to use the Microsoft Purview Data Catalog to manage your scanned data assets, curate a business glossary, and browse assets across your entire data estate."
+summary: "This module teaches you how to use the Microsoft Purview Data Catalog to manage your scanned data assets. How to curate a business glossary, and how to browse assets across your entire data estate."
 abstract: |
-  By the end of this module, you'll be able to:
-    - Use the Microsoft Purview Data Catalog to browse and search your data assets
+  By the end of this module, you're able to:
+    - Use the Microsoft Purview Data Catalog to browse and search your data assets.
     - Manage and edit assets in the data catalog
-    - Create and manage a business glossary to organize and define your data assets
+    - Create and manage a business glossary to organize and define your data assets.
 prerequisites: |
   - Ability to navigate the Azure portal
   - Access to a Microsoft Purview account with a data source added and scanned. You can follow our [deployment learn module to deploy a Microsoft Purview resource and scan the data.](/learn/modules/deploy-microsoft-purview-scan-data-resources/)

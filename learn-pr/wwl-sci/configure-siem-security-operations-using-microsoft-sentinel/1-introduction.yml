@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/3/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.service: microsoft-sentinel
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction.md)]

@@ -4,10 +4,12 @@ title: Describe the purpose of Azure Advisor
 metadata:
   title: Describe the purpose of Azure Advisor
   description: "Describe the purpose of Azure Advisor"
-  ms.date: 08/17/2023
+  ms.date: 04/17/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/2-describe-purpose-of-azure-advisor.md)]

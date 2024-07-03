@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-disaster-recovery-for-sap-workloads-azure.replicate-azure-virtual-machines-running-proximity-placement-groups-to-another-r
-title: Replicate Azure virtual machines running in Proximity Placement Groups to another region
+title: Replicate Azure Virtual Machines running in Proximity Placement Groups to another region
 metadata:
-  title: Replicate Azure virtual machines running in Proximity Placement Groups to another region
-  description: "Replicate Azure virtual machines running in Proximity Placement Groups to another region"
-  ms.date: 10/18/2023
+  title: Replicate Azure Virtual Machines running in Proximity Placement Groups to another region
+  description: "Explore the considerations when replicating Azure Virtual Machines running in Proximity Placement Groups to another region."
+  ms.date: 05/29/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.service: sap-on-azure
-  ms.subservice: sap-vm-workloads
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/8-replicate-running-proximity-placement-groups-to-another-region.md)]

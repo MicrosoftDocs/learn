@@ -4,3 +4,6 @@ By reviewing the cash register application, debugging the `MakeChange` method, a
 
 The ability to debug C# applications and implement exception handling enables you to develop stable and reliable applications.
 
+## Get a free verified certification
+
+Microsoft and freeCodeCamp.org offer a training and certification combo on foundational C#. By completing this Learn module, you've already started. Explore freeCodeCamp's Foundational C# with Microsoft certification here: [https://aka.ms/csharp-certification](https://aka.ms/csharp-certification).

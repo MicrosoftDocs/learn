@@ -1,26 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.work-with-form-recognizer
 metadata:
-  title: Extract data from forms with Azure Document Intelligence
-  description: "Azure Document Intelligence extracts data at scale to enable the submission of documents in real time, at scale, with accuracy. This module gives users the tools to use the Azure Document Intelligence vision API."
-  ms.date: 10/18/2023
+  title: Extract data from forms with Azure Document intelligence
+  description: "Azure Document intelligence extracts data at scale to enable the submission of documents in real time, at scale, with accuracy. This module gives users the tools to use the Azure Document intelligence vision API."
+  ms.date: 04/18/2024
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module-standard-task-based
-  ms.service: azure-ai-document-intelligence
-title: Extract data from forms with Azure Document Intelligence
-summary: Azure Document Intelligence uses machine learning technology to identify and extract key-value pairs and table data from form documents with accuracy, at scale. This module teaches you how to use the *Azure Document Intelligence* Azure AI service.
+  ms.topic: module
+  ms.service: azure
+  ai-usage: human-only
+title: Extract data from forms with Azure Document intelligence
+summary: Document intelligence uses machine learning technology to identify and extract key-value pairs and table data from form documents with accuracy, at scale. This module teaches you how to use the *Azure Document intelligence* cognitive service.
 abstract: |
-  In this module, you'll learn how to:
-  - Identify how Azure Document Intelligence's layout service, prebuilt models, and custom service can automate processes
-  - Use Azure Document Intelligence's Optical Character Recognition (OCR) capabilities with SDKs, REST API, and Azure Document Intelligence Studio
-  - Develop and test custom models
+  In this module, you learn how to:
+  -   Identify how Document intelligence's layout service, prebuilt models, and custom models can automate processes.
+  -   Use Document intelligence's capabilities with SDKs, REST API, and Document Intelligence Studio.
+  -   Develop and test custom models.
 prerequisites: |
   To complete this module, you'll need:
-  - An active Azure account
-  - Knowledge of Azure portal navigation
-  - Knowledge of at least one programming language (C#, Python)
-iconUrl: /training/achievements/form-recognizer-extract-data.svg
+  -   An active Azure account
+  -   Knowledge of Azure portal navigation
+  -   Knowledge of at least one programming language (C#, Python)
+iconUrl: /learn/achievements/form-recognizer-extract-data.svg
 levels:
 - intermediate
 roles:
@@ -31,6 +32,8 @@ roles:
 - student
 products:
 - ai-services
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.work-with-form-recognizer.introduction
 - learn.wwl.work-with-form-recognizer.what-form-recognizer

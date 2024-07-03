@@ -3,7 +3,7 @@ uid: learn.language.rust-error-handling.2-fatal-errors-with-panic
 metadata:
   title: Learn about fatal errors with panic!
   description: Understand how the the simplest error handling mechanism works in Rust.
-  ms.date: 6/7/2021
+  ms.date: 01/05/2023
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: unit

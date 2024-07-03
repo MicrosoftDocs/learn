@@ -14,15 +14,17 @@ The dashboard provides you with an overview of your compliance status and the se
 
 **Example: Microsoft Defender for Cloud - Regulatory compliance dashboard** 
 
+:::image type="content" source="../media/regulatory-compliance-dashboard-1d42ccd6.png" alt-text="Screenshot showing an example of the regulatory compliance dashboard and network security controls.":::
+
+
 The following list has a numbered item that matches each location in the image above, and describes what is in the image:
 
 1.  Select a compliance standard to see a list of all controls for that standard.<br>
 2.  View the subscription(s) that the compliance standard is applied on.
 3.  Select a Control to see more details. Expand the control to view the assessments associated with the selected control. Select an assessment to view the list of resources associated and the actions to remediate compliance concerns.
 4.  Select Control details to view Overview, Your Actions and Microsoft Actions tabs.
-5.  In the Your Actions tab, you can see the automated and manual assessments associated to the control.
+5.  In the Your Actions tab, you can see the automated assessments associated to the control.
 6.  Automated assessments show the number of failed resources and resource types, and link you directly to the remediation experience to address those recommendations.
-7.  The manual assessments can be manually attested, and evidence can be linked to demonstrate compliance.
 
 Recommendations give you suggestions on how to better secure your resources. You implement a recommendation by following the remediation steps provided in the recommendation.
 

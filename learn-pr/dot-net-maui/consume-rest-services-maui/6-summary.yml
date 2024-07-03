@@ -5,7 +5,7 @@ metadata:
   unitType: Summary
   title: "Summary"
   description: "Summary of the consuming REST services with .NET MAUI module"
-  ms.date: 10/13/2023
+  ms.date: 10/31/2023
   author: codemillmatt  
   ms.author: masoucou
   ms.manager: markl

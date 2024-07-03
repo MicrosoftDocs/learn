@@ -4,88 +4,87 @@ The first step to train a model is to upload training data. For more information
 
 ## Train and evaluate a model
 
-1. Sign in to the [Custom Speech portal](https://speech.microsoft.com/customspeech)
+1. Sign in to the [Custom Speech portal](https://speech.microsoft.com/portal)
 
-1. Go to **Speech to text** > **Custom Speech**
+1. Go to **Speech to text** > **Custom Speech**.
 
     :::image type="content" source="../media/5-azure-speech-portal.png" alt-text="Screenshot showing the home page of the speech portal with a red line around custom models.":::
 
-1. Select **Resource** then **select your new Speech Services resource**
-1. Select **Use resource**
-1. Select **Create a new project**
-1. Name your project, and select **Create**
+1. Select **Resource** then **select your new Speech Services resource**.
+1. Select **Use resource**.
+1. Select **Create a new project**.
+1. Name your project, and select **Create**.
 
     :::image type="content" source="../media/5-new-project.png" alt-text="Screenshot showing the Create a New Project window with an example name.":::
 
 ## Use audio data to create a custom speech model
 
-Now you've created a project, it's time to upload some training data. Here, you use the sample data from Azure Samples to reduce processing time. However, you can provide your own data if you wish.
+Now that you created a project, it's time to upload some training data. Here, you use the sample data from Azure Samples to reduce processing time. However, you can provide your own data if you wish.
 
-1. Select your new project by clicking on its name
-1. Select **Upload data**
-1. Make sure **Audio + human-labeled transcript** is highlighted, and select **Next**
-1. Select **Azure Blob or other shared web locations**
-1. Copy the following URL, and paste it into the **Audio + transcript** box, then select **Next**
+1. In the list of projects, select your new project by choosing its name.
+1. Select **Upload data**.
+1. Select **Audio + human-labeled transcript** to highlight it, then select **Next**.
+1. Select **Azure Blob or other shared web locations**.
+1. Copy the following URL, and paste it into the **Audio + transcript** box, then select **Next**.
 
     ```http
-    https://github.com/Azure-Samples/cognitive-services-speech-sdk/raw/master/sampledata/customspeech/en-US/training/audio-and-trans.zip
+    https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/sampledata/customspeech/en-US/general/testing/audio-and-trans.zip
     ```
 
     :::image type="content" source="../media/5-azure-blob-link.png" alt-text="Screenshot showing an example of steps 4 and 5 in the speech portal.":::
 
-1. Choose a name for your dataset, and select **Next**
-1. Select **Save and close**
+1. Choose a name for your dataset, and select **Next**.
+1. Select **Save and close**.
 
 ## Train a custom model
 
-After a few seconds, you'll see a message saying your files have successfully processed. Next, let's train a custom model using the sample data.
+After a few seconds, you'll see a message saying your files are successfully processed. Next, let's train a custom model using the sample data.
 
-1. On the left-hand side, select the checkbox for the dataset, then select **Train**
+1. Select the checkbox for the dataset, then select **Train**.
 
     :::image type="content" source="../media/5-training-a-model.png" alt-text="Screenshot showing the example model selected and train outlined in the portal.":::
 
-1. Select **Next**, then select **Next** again
-1. Choose a name for your model, and select **Next**
-1. Select **Save and close**
+1. Select **Next**, then select **Next** again.
+1. Choose a name for your model, and select **Next**.
+1. Select **Save and close**.
 
-It might take several minutes for your model to complete training. In the meantime, lets set things up to use it.
+It might take several minutes for your model to complete training. In the meantime, let's set things up to use it.
 
 ## Set up your custom transcription
 
-1. In the exercise sandbox, paste in the following command to get our environment variables ready for the next transcription. These variables use the same resources that we set up in the last exercise.
+In the exercise sandbox, paste the following command to get our environment variables ready for the next transcription. These variables use the same resources that we set up in the last exercise.
 
-    ```bash
-    # Get and set the names from the previous exercise
-    subscription=$(az account list --query [0].id -o tsv)
-    resourceGroupName=$(az group list --query "[0] | name" -o tsv)
-    lastchars=${resourceGroupName: -10}
-    blobName=blob$lastchars
-    blobContainerName=container$lastchars
-    blobConnectionString=$(az storage account show-connection-string -g $resourceGroupName -n $blobName --query "connectionString" -o tsv)
-    apiKeySpeech=$(az cognitiveservices account keys list -g $resourceGroupName -n cognitive-services-account-resource-speech --query [key1] -o tsv)
-    # Create a new SAS Token
-    end=`date -u -d "59 minutes" '+%Y-%m-%dT%H:%MZ'`
-    sasToken=$(az storage container generate-sas -n $blobContainerName --permissions rwl --expiry $end --connection-string $blobConnectionString -o tsv)
-    # Create the new URI for the storage container
-    contentContainerUrl="https://$blobName.blob.core.windows.net/$blobContainerName/?$sasToken"
-
-    ```
+```bash
+# Get and set the names from the previous exercise
+subscription=$(az account list --query [0].id -o tsv)
+resourceGroupName=$(az group list --query "[0] | name" -o tsv)
+lastchars=${resourceGroupName: -10}
+blobName=blob$lastchars
+blobContainerName=container$lastchars
+blobConnectionString=$(az storage account show-connection-string -g $resourceGroupName -n $blobName --query "connectionString" -o tsv)
+apiKeySpeech=$(az cognitiveservices account keys list -g $resourceGroupName -n cognitive-services-account-resource-speech --query [key1] -o tsv)
+# Create a new SAS Token
+end=`date -u -d "59 minutes" '+%Y-%m-%dT%H:%MZ'`
+sasToken=$(az storage container generate-sas -n $blobContainerName --permissions rwl --expiry $end --connection-string $blobConnectionString -o tsv)
+# Create the new URI for the storage container
+contentContainerUrl="https://$blobName.blob.core.windows.net/$blobContainerName/?$sasToken"
+```
 
 ## Use your custom model
 
 Now, to use the model we need to refer to it in the Cloud Shell.
 
-We can do this using an endpoint, or linking directly to the model. Here, we link directly to the model.
+We can do this by using an endpoint, or linking directly to the model. Here, we link directly to the model.
 
-1. **Return to the Custom Speech portal**, and navigate to the **Train custom models section** on the far left-hand menu of the website.
+1. Return to the **Custom Speech portal**, and select **Train custom models** on the far left-hand menu of the website.
 
-1. If your model has completed training, it's listed with its name in blue. If it isn't ready, wait a few minutes for training to complete. Once it's ready, select your model's name.
+1. If your model completed training, its name is listed in blue. If it isn't ready, wait a few minutes for training to complete. Once it's ready, select your model's name.
 
-1. **Copy your Model ID** from the top of the page. It's listed as a GUID such as 0000000-1234-5678-9abc-def012345678.
+1. **Copy your Model ID** from the top of the page. It's listed as a GUID, such as 0000000-1234-5678-9abc-def012345678.
 
 1. Return to the sandbox terminal, and type `model_id=<your-model-id>`, replacing \<your-model-id\> with the GUID you copied in the previous step. Then, press <kbd>Enter</kbd>
 
-1. Next, we follow the same steps as we did in the first exercise to create a new batch of transcriptions using the custom model. This time, you specify that Batch Transcription should use your newly created Custom Model in the JSON. Notice how we specify the endpoint with the Azure AI services URL, and the custom model ID. Run the following command to create the JSON.
+1. Next, we follow the same steps as we did in the first exercise to create a new batch of transcriptions using the custom model. This time, you specify that batch transcription should use your newly created custom model in the JSON. Notice how we specify the endpoint with the Azure AI services URL, and the custom model ID. To create the JSON, run the following command.
 
     ```bash
     # Create the JSON  
@@ -108,7 +107,7 @@ We can do this using an endpoint, or linking directly to the model. Here, we lin
 
     ```
 
-1. Now, we're going to use cURL to submit the transcription job with a POST request. Run the following command to submit your next Batch Transcription job.
+1. Now, we're going to use cURL to submit the transcription job with a POST request. Run the following command to submit your next batch transcription job.
 
     ```bash
     # Submit the job
@@ -131,7 +130,7 @@ We can do this using an endpoint, or linking directly to the model. Here, we lin
 
     ```
 
-    Take note of the status. **Once it states 'Succeeded', then move on.** It might take a minute or two to run. If it states the job is still running, wait 20 seconds, then paste the previous command into the terminal and run it again. **Repeat this until the status is 'Succeeded'**
+    Notice the status. After it states **Succeeded**, then move on. It might take a minute or two to run. If it states the job is still running, wait 20 seconds, then paste the previous command into the terminal and run it again. Repeat this until the status is **Succeeded**.
 
 1. Run the following command to retrieve the URI for the transcription information and download the individual transcription files.
 
@@ -167,4 +166,4 @@ We can do this using an endpoint, or linking directly to the model. Here, we lin
 
 That's it! You can press <kbd>Ctrl+X</kbd> to exit the nano text editor.
 
-Congratulations, you're now transcribing your entire storage container of audio files with your Custom Speech model.
+Congratulations, you're now transcribing your entire storage container of audio files with your custom speech model.

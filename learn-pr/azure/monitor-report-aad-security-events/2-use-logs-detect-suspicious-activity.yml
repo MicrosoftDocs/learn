@@ -3,7 +3,7 @@ uid: learn.monitor-report-aad-security-events.2-use-logs-detect-suspicious-activ
 metadata:
   title: Use sign-in, audit, and risky sign-in logs to detect suspicious activity
   description: Use sign-in, audit, and risky sign-in logs to detect suspicious activity.
-  ms.date: 04/22/2022
+  ms.date: 03/01/2023
   author: softchris
   ms.author: chnoring
   ms.topic: unit

@@ -3,8 +3,8 @@ uid: learn.languages.csharp-modify-content.exercise-replace-remove
 title: Exercise - Use the Remove() and Replace() methods
 metadata:
   title: Exercise - Use the Remove() and Replace() methods
-  description: "Exercise - Use the Remove() and Replace() methods"
-  ms.date: 02/21/2024
+  description: "Use the Remove() and Replace() methods to remove and replace characters from a string."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

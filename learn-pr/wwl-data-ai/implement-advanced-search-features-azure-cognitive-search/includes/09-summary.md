@@ -11,5 +11,5 @@ To learn more about each of these topics, see the documentation:
 
 - [Score tuning](/azure/search/search-lucene-query-architecture#score-tuning)
 - [Add scoring profiles to a search index](/azure/search/index-add-scoring-profiles)
-- [Add custom analyzers to string fields in an Azure Cognitive Search index](/azure/search/index-add-custom-analyzers)
-- [Create an index for multiple languages in Azure Cognitive Search](/azure/search/search-language-support)
+- [Add custom analyzers to string fields in an Azure AI Search index](/azure/search/index-add-custom-analyzers)
+- [Create an index for multiple languages in Azure AI Search](/azure/search/search-language-support)

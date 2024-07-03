@@ -32,7 +32,7 @@ products:
 - azure-sqlserver-vm
 - sql-server
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.get-started-transact-sql-programming
 - learn.wwl.create-stored-procedures-table-valued-functions

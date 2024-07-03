@@ -4,33 +4,35 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/22/2024
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following statements about the `switch-case` construct is true?"
+  - content: "What is the purpose of a `default` case in a switch statement?"
     choices:
-    - content: "A single switch section can have multiple case labels."
+    - content: "It's used to specify the condition for the switch statement."
+      isCorrect: false
+      explanation: "Incorrect. The default case is not used to specify the condition for the switch statement."
+    - content: "It's used to end the switch statement."
+      isCorrect: false
+      explanation: "Incorrect. The default case doesn't end the switch statement."
+    - content: "It's used to execute a block of code if no case matches the expression."
       isCorrect: true
-      explanation: "Correct! A single switch section can have multiple case labels."
-    - content: "A switch construct must include a default switch section."
-      isCorrect: false
-      explanation: "Incorrect. The switch section that uses the default case is optional."
-    - content: "The colon at the end of the case label is optional."
-      isCorrect: false
-      explanation: "Incorrect. The colon isn't optional."
-  - content: "A developer implements a `switch` statement in their application. What is the purpose of the `break` keyword?"
+      explanation: "Correct! The default case executes when no other case matches the switch expression."
+  - content: "What happens if a break statement (or alternative keyword that prevents \"fall-through\") is omitted in a switch case?"
     choices:
-    - content: "The `break` keyword tells the runtime to continue evaluating other cases in the `switch` construct."
+    - content: "The `default` case will execute."
       isCorrect: false
-      explanation: "Incorrect. The `break` keyword doesn't instruct the runtime to continue evaluating other cases in the `switch` construct."
-    - content: "The `break` keyword tells the runtime to exit the application."
+      explanation: "Incorrect. The default case won't execute if a break statement is omitted."
+    - content: "The impacted case sections will be removed by the compiler."
       isCorrect: false
-      explanation: "Incorrect. The `break` keyword doesn't instruct the runtime to exit the application."
-    - content: "The `break` keyword tells the runtime to stop evaluating and prevents execution of other cases in the `switch` construct."
+      explanation: "Incorrect. The compiler doesn't remove case sections that allow “fall through” to the next switch section."
+    - content: "The compiler will generate an error."
       isCorrect: true
-      explanation: "Correct! The `break` keyword redirects code execution and prevents one switch section from continuing into the next section."
+      explanation: "Correct! Only one switch section is allowed to be executed. If you forget the `break` keyword (or, optionally, the `return` keyword) the compiler will generate an error."

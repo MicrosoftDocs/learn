@@ -72,7 +72,7 @@ When you work with template specs, it's important to consider how others use you
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-1. Update the `location` parameter definition to add a description:
+1. Update the `location` parameter definition by adding a description:
 
    :::code language="bicep" source="code/5-template.bicep" range="1-2" highlight="1" :::
 
@@ -86,7 +86,7 @@ When you work with template specs, it's important to consider how others use you
 
 ::: zone pivot="jsoncli,jsonpowershell"
 
-1. Update the `location` parameter definition to add a description:
+1. Update the `location` parameter definition by adding a description:
 
    :::code language="json" source="code/5-template.json" range="5-11" highlight="4-6" :::
 
@@ -213,7 +213,7 @@ For simplicity, you deploy the template spec into the same sandbox resource grou
    ```azurecli
    id=$(az ts show \ 
     --name ToyCosmosDBAccount \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --version "1.0" \
     --query "id")
    ```

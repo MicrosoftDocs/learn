@@ -1,4 +1,3 @@
-
 Just as groups in Active Directory Domain Services (AD DS) simplify permissions management, Microsoft Entra groups streamline access management. When you enable directory synchronization, your on-premises AD DS groups can be synchronized to Microsoft Entra ID. While the group membership remains consistent between AD DS and Microsoft Entra ID, the individual members are mapped from on-premises user accounts to their corresponding Microsoft Entra accounts. If directory synchronization isn't in place, group management is exclusively cloud-based.
 
 In Microsoft Entra ID, you can establish two primary types of groups:
@@ -16,3 +15,4 @@ Membership for a cloud-based group can be **assigned** or **dynamic**. When you 
 When you create a group with dynamic membership, you need to select whether it’s for users or devices. Many Microsoft 365 features can use user-based groups. Intune uses device-based groups.
 
 Groups from on-premises AD DS with dynamic membership don’t synchronize with Microsoft Entra ID.
+

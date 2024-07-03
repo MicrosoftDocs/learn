@@ -6,10 +6,11 @@ In this module, you've learned to plan for, buy, and manage Azure reservations t
 
 ## Learn more
 
-To learn more about Azure reservations, see the following articles:
+To learn more about Azure reservations, see the following:
 
 - [What are Azure reservations?](/azure/cost-management-billing/reservations/save-compute-costs-reservations)
 - [Choose a reservation to purchase](/azure/cost-management-billing/reservations/determine-reservation-purchase)
 - [Buy an Azure reservation](/azure/cost-management-billing/reservations/prepare-buy-reservation)
 - [View reservations and utilization](/azure/cost-management-billing/reservations/view-reservations)
 - [Manage Azure reservations](/azure/cost-management-billing/reservations/manage-reserved-vm-instance)
+- [Purchase Azure savings plan for compute](/training/modules/azure-savings-plan-for-compute/)

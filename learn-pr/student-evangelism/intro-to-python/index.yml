@@ -6,7 +6,7 @@ metadata:
   ms.date: 1/23/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen, py-fresh-zinc
   ms.devlang: python
 title: Introduction to Python
@@ -28,8 +28,6 @@ roles:
   - student
 products:
   - azure
-subjects:
-- development-tools
 units:
   - learn.student-evangelism.intro-to-python.introduction
   - learn.student-evangelism.intro-to-python.what-is-python

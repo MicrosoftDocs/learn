@@ -4,6 +4,8 @@ Both GitHub and Azure DevOps support a range of DevOps planning capabilities. Co
 
 GitHub Projects is a feature hosted by the GitHub platform providing the ability to organize, track and manage work in a collaborative and visual manner. This feature is suitable for managing software development lifecycle, although it can be used in practically any scenario that involves project-related work. It closely integrates with other GitHub components such as repositories, issues, and pull requests. It provides a way to plan, track progress, and coordinate tasks within a repository and across repositories.
 
+:::image type="content" source="../media/5-github-projects.png " alt-text="Screenshot of GitHub Projects.":::
+
 Each project is automatically accessible in the table, board, and roadmap layout. You also have the option of creating views by filtering, grouping, and sorting components included in the project, generating configurable charts, and adding custom fields based on your individual preferences or needs.
 
 GitHub Projects support milestones, which represent target dates of specific goals or deliverables. Milestones implement a timeline for the project and allow teams to track their progress.
@@ -16,6 +18,8 @@ Projects include built-in workflows that you can use to update the status of ite
 ## What is a GitHub Projects board?
 
 A GitHub Projects board offers a visual representation of the corresponding project. It's accessible via the board layout and supports a Kanban experience. It consists of columns and cards that allow you to organize and track issues and pull requests. Columns can be customized to represent different project stages. Cards represent work items, such as issues, draft issues, or pull requests. You can drag cards between columns to reflect their current status or stage of completion and the value of those items adjust to match the column you drag them to. Each card can contain many fields including labels, assignees, due dates, and descriptions. These fields allow you to specify additional information about the work being tracked.
+
+:::image type="content" source="../media/5-github-projects-board.png" alt-text="Screenshot of GitHub Projects board.":::
 
 By using the views functionality, you have the option to create multiple boards within a repository, each with its own, distinct set of columns. You can also set a limit for the number of cards in a particular column in a board layout to implement a WIP limit.
 

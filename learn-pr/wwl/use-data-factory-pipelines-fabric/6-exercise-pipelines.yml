@@ -4,13 +4,12 @@ title: Exercise - Ingest data with a pipeline
 metadata:
   title: Exercise - Ingest data with a pipeline
   description: "Exercise - Ingest data with a pipeline"
-  ms.date: 01/31/2024
+  ms.date: 05/08/2024
   author: wwlpublish
-  ms.author: anrudduc
-  ms.service: fabric
+  ms.author: shlindsay
   ms.topic: unit
   ms.custom:
-    - build-2023
+  - build-2023
 durationInMinutes: 60
 content: |
   [!include[](includes/6-exercise-pipelines.md)]

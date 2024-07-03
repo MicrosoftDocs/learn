@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/14/2024
   author: vhorne
   ms.author: victorh
-  ms.topic: module
+  ms.topic: module-intro-to-product
   ms.service: web-application-firewall
 title: "Introduction to Azure Web Application Firewall"
 summary: Describe how Azure Web Application Firewall protects Azure web applications from common attacks, including the features, how it's deployed, and common use cases.

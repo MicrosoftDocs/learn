@@ -3,8 +3,8 @@ uid: learn.intro-to-azure-lighthouse.6a-exercise-managing-a-customer
 title: Exercise - Manage a customer
 metadata:
   title: Exercise - Manage a customer
-  description: In this exercise, you'll explore how to manage customers with Azure Lighthouse
-  ms.date: 02/09/2023
+  description: Explore how to manage customers with Azure Lighthouse.
+  ms.date: 04/15/2024
   author: SCuffy
   ms.author: socuff
   ms.topic: unit

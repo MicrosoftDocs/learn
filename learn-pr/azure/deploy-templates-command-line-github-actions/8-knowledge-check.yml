@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 10/15/2020
+  ms.date: 03/13/2024
   author: pierreroman
   ms.author: pierrer
   ms.topic: unit
@@ -18,7 +18,7 @@ quiz:
   questions:
   - content: "When you're using linked templates, where can you store the linked artifacts?"
     choices:
-    - content: "On a networked server accessible over SMB."
+    - content: "On a networked server accessible over Server Message Block (SMB)."
       isCorrect: false
       explanation: "When you're referencing a linked template, you can't use a local file or a file that's available only on your local network."
     - content: "On any endpoint that's publicly accessible through HTTP or HTTPS."
@@ -31,13 +31,13 @@ quiz:
     choices:
     - content: "Provide a username and template as part of a configured secret in GitHub repository settings."
       isCorrect: false
-      explanation: "You can automate your workflow to do an Azure login by using an Azure service principal."
+      explanation: "You can automate your workflow to do an Azure sign-in by using an Azure service principal."
     - content: "Use the user credentials part of a configured secret in GitHub repository settings."
       isCorrect: true
       explanation: "You can provide the service principal credentials part of a configured secret in your GitHub repository settings."
     - content: "Provide the shared access signature (SAS) part of a configured secret in GitHub repository settings."
       isCorrect: false
-      explanation: "Shared access signatures or SAS tokens are used to provides secure delegated access to resources in your storage account without compromising the security of your data."
+      explanation: "Shared access signatures or SAS tokens are used to provide secure delegated access to resources in your storage account without compromising the security of your data."
   - content: "What's the best way to modularize your resources for deployment?" 
     choices:
     - content: "Use nested templates."

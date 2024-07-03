@@ -4,12 +4,12 @@ title: Design managed identities
 metadata:
   title: Design managed identities
   description: "Design managed identities"
-  ms.date: 03/24/2023
+  ms.date: 03/06/2024
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/9-one-design-managed-identities.md)]

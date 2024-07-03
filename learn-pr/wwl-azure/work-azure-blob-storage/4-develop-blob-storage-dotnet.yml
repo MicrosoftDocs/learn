@@ -7,8 +7,7 @@ metadata:
   ms.date: 11/02/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.service: azure-blob-storage
+  ms.topic: unit
   ms.custom: N/A, devx-track-dotnet
 durationInMinutes: 15
 content: |

@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.service: access
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary-resources.md)]

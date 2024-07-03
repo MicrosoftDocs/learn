@@ -7,19 +7,22 @@ In this exercise, you create a microservice endpoint and containerize it by usin
 
 You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
 
-To use a **codespace** create a pre-configured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-docker%2Fdevcontainer.json).
+To use a **codespace**, create a preconfigured GitHub Codespace with [this Codespace creation link](https://codespaces.new/MicrosoftDocs/mslearn-dotnet-cloudnative?devcontainer_path=.devcontainer%2Fdotnet-docker%2Fdevcontainer.json).
 
-GitHub takes several minutes to create and configure the codespace. When it's finished, you see the code files for the exercise. The code that's used for the remainder of this module is in the **/dotnet-docker** directory.
+GitHub takes several minutes to create and configure the codespace. When the process completes, you see the code files for the exercise. The code used for the remainder of this module is in the **/dotnet-docker** directory.
 
-To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your own GitHub account. Then:
+To use **Visual Studio Code**, clone the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your local machine. Then:
 
-1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
-1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
-1. Select your forked repository. Visual Studio Code creates your development container locally.
+1. Install any [system requirements](https://code.visualstudio.com/docs/devcontainers/containers) to run Dev Container in Visual Studio Code.
+1. Make sure Docker is running. 
+1. In a new Visual Studio Code window open the folder of the cloned repository
+1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
+1. Search: **>Dev Containers: Rebuild and Reopen in Container**
+1. Select **eShopLite - dotnet-docker** from the drop-down. Visual Studio Code creates your development container locally.
 
 ## Use .NET publish to create the Products back-end image
 
-The latest .NET 8 release has improved support for containerization. You can use the `dotnet publish` command to create a Docker image for your microservices. The command creates a rootless container image. This means the services run under an `app` account. This is great for security and performance. The command knows how to pick the best base image by checking the settings in the project file.
+The latest .NET 8 release improves support for containerization. You can use the `dotnet publish` command to create a Docker image for your microservices. The command creates a rootless container image that runs services under an `app` account. Running rootless containers is great for security and performance. The command knows how to pick the best base image by checking the settings in the project file.
 
 1. To create the images for all the **:::no-loc text="eShopLite":::** services, go to the **TERMINAL** tab and run this command:
 
@@ -28,7 +31,7 @@ The latest .NET 8 release has improved support for containerization. You can use
   	dotnet publish /p:PublishProfile=DefaultContainer
   	```
 
-    You'll see output like this:
+    You see output like the following messages:
 
     ```console
     DataEntities -> /workspaces/mslearn-dotnet-cloudnative/dotnet-docker/DataEntities/bin/Release/net8.0/publish/
@@ -42,7 +45,7 @@ The latest .NET 8 release has improved support for containerization. You can use
     Pushed image 'products:latest' to local registry via 'docker'.
     ```
 
-    The command has read the solution file, determined it contains three projects, built them, and created images for the store and products projects. The images are named after the projects and published into the local docker registry.
+    The command reads the solution file, determined it contains three projects, built them, and created images for the store and products projects. The images are named after the projects and published into the local docker registry.
 
 1. Check the images are available in docker:
 
@@ -50,7 +53,7 @@ The latest .NET 8 release has improved support for containerization. You can use
     docker images
     ```
     
-    You'll see output like this:
+    You see output like the following messages:
 
     ```console
     REPOSITORY                          TAG       IMAGE ID       CREATED              SIZE
@@ -58,12 +61,12 @@ The latest .NET 8 release has improved support for containerization. You can use
     store                               latest    e9458c3abdb1   About a minute ago   218MB
     ```
 
-
 ## Use a Dockerfile to create the Products back-end image
 
 If you want more control of how the images are built, you can use a Dockerfile to create an image for the Products web service. 
 
-1. In the **EXPLORER** pane, open the file named **./dotnet-docker/Products/Dockerfile**. The file will be empty.
+1. In the **EXPLORER** pane, create a file named **Dockerfile** in **./dotnet-docker/Products**. The file is empty.
+
 1. Enter the following code:
 
     ```dockerfile
@@ -88,7 +91,6 @@ If you want more control of how the images are built, you can use a Dockerfile t
 1. Directly below the last line, enter this code:
 
     ```dockerfile
-
   	WORKDIR /src
   	COPY Products/Products.csproj .
   	RUN dotnet restore
@@ -96,18 +98,17 @@ If you want more control of how the images are built, you can use a Dockerfile t
   	RUN dotnet publish -c release -o /app
   	```
 	
-    This code will do the following steps sequentially when invoked:
+    This code does the following steps sequentially when invoked:
     
       - Set the working directory within the image to `/src`.
       - Copy the file named **Products.csproj** found locally to the `/src` directory that you created.
       - Call `dotnet restore` on the project.
       - Copy everything in the local **Products** directory to the image.
       - Call `dotnet publish` on the project.
-	
+
 1. Directly below the last line, enter this code:
 
     ```dockerfile
-
   	FROM mcr.microsoft.com/dotnet/aspnet:8.0
   	WORKDIR /app
   	EXPOSE 80
@@ -116,7 +117,7 @@ If you want more control of how the images are built, you can use a Dockerfile t
   	ENTRYPOINT ["dotnet", "Products.dll"]
   	```
 
-  	This code will do the following steps sequentially when invoked:
+  	This code does the following steps sequentially when invoked:
   
       - Pull the `mcr.microsoft.com/dotnet/aspnet:8.0` image.
       - Set the working directory within the image to `/app`.
@@ -137,9 +138,9 @@ Having completed the Dockerfile, the next step is to use it to create a Docker i
 
   	This runs the commands in **Dockerfile** in the current directory and applies the tag **productsbackend:latest** to the resulting image.
 
-1. After much output, the image will be built. Entering `docker images` will show you a list of all images in your codespace including **productsbackend**. The other image is the one for the codespace itself.
+1. After much output, the image will be built. Entering `docker images` shows you a list of all images in your codespace including **productsbackend**. The other image is the one for the codespace itself.
 
-    You'll see output like this:
+    You see output like the following messages:
 
     ```console
     REPOSITORY                          TAG       IMAGE ID       CREATED              SIZE
@@ -148,21 +149,23 @@ Having completed the Dockerfile, the next step is to use it to create a Docker i
     productsbackend                     latest   190783f7e06f    About a minute ago   293MB
     ```
 
+Think about the difference between using `dotnet publish` and having to manually create the **Dockerfiles** for each microservice in your apps.
+
 ## Run the container and test the service
 
 Now you can use the image to run and host the Products service.
 
-1. To create and run a container from the new **productsbackend** image and expose the service on port 5200, run this command:
+1. To create and run a container from the new **products** image and expose the service on port 32001, run this command:
+
+    ```bash
+    docker run -it --rm -p 32001:8080  products
+    ```
+
+    Or if you'd like to run the image you created using the Dockerfile, run:
 
     ```bash
     docker run -it --rm -p 32001:8080 productsbackend
     ```
-
-    Or to run the image you created with `dotnet publish` run:
-
-    ```bash
-    docker run -it --rm -p 32001:8080  products
-    ```   
 
 1. To test the service, switch to the **PORTS** tab then, to the right of the local address for the **Back End** port, select the globe icon. The browser opens a new tab at that address.
 

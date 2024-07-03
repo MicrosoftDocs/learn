@@ -1,5 +1,3 @@
-
-
 Azure Event Grid supports two types of event schemas: Event Grid event schema and Cloud event schema. Events consist of a set of four required string properties. The properties are common to all events from any publisher.
 
 The data object has properties that are specific to each publisher. For system topics, these properties are specific to the resource provider, such as Azure Storage or Azure Event Hubs.
@@ -41,8 +39,8 @@ All events have the same following top-level data:
 | eventTime | string | Yes | The time the event is generated based on the provider's UTC time. |
 | id | string | Yes | Unique identifier for the event. |
 | data | object | No | Event data specific to the resource provider. |
-| dataVersion | string | No. If not included, it is stamped with an empty value. | The schema version of the data object. The publisher defines the schema version. |
-| metadataVersion | string | No. If not included, Event Grid will stamp onto the event. If included, must match the Event Grid Schema `metadataVersion` exactly (currently, only `1`). | The schema version of the event metadata. Event Grid defines the schema of the top-level properties. Event Grid provides this value. |
+| dataVersion | string | No. If not included, it's stamped with an empty value. | The schema version of the data object. The publisher defines the schema version. |
+| metadataVersion | string | No. If not included, Event Grid stamps onto the event. If included, must match the Event Grid Schema `metadataVersion` exactly (currently, only `1`). | The schema version of the event metadata. Event Grid defines the schema of the top-level properties. Event Grid provides this value. |
 
 For custom topics, the event publisher determines the data object. The top-level data should have the same fields as standard resource-defined events.
 
@@ -56,7 +54,7 @@ In addition to its default event schema, Azure Event Grid natively supports even
 
 CloudEvents simplifies interoperability by providing a common event schema for publishing, and consuming cloud based events. This schema allows for uniform tooling, standard ways of routing & handling events, and universal ways of deserializing the outer event schema. With a common schema, you can more easily integrate work across platforms.
 
-Here is an example of an Azure Blob Storage event in CloudEvents format:
+Here's an example of an Azure Blob Storage event in CloudEvents format:
 
 ```json
 {

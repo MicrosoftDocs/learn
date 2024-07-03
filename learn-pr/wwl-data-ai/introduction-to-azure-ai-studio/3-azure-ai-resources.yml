@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-azure-ai-studio.azure-ai-resources
-title: Azure AI hubs
+title: How does Azure AI Studio work
 metadata:
-  title: Azure AI hubs
-  description: "You can use Azure AI Studio to create and manage Azure AI hubs."
-  ms.date: 10/16/2023
+  title: How does Azure AI Studio work?
+  description: "You can use Azure AI Studio to create and manage AI solutions."
+  ms.date: 05/08/2024
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-ai-services
-  ms.custom:
-    - ignite-2023
+  ms.author: berryivor
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-azure-ai-resources.md)]

@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.manager: markl
   ms.custom: team=nextgen
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: aspnet-core
 title: Build a web API with minimal API, ASP.NET Core, and .NET
 summary: Learn how to build a web API with minimal API and .NET.
@@ -30,8 +30,6 @@ prerequisites: |
   - Local installations of the [.NET SDK](https://dotnet.microsoft.com/download).
   - Familiarity with .NET
   - A basic understanding of what an API is
-subjects:
-- development-tools
 units:
   - learn.aspnetcore.build-web-api-minimal-api.introduction
   - learn.aspnetcore.build-web-api-minimal-api.what-is-minimal-api

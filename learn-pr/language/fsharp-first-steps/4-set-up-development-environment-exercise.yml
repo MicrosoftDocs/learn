@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: "Exercise - Set up your F# development environment"
   description: "Install the .NET SDK, Visual Studio Code, and Ionide F# extension to develop your F# applications"
-  ms.date: 07/20/2021
+  ms.date: 02/22/2023
   author: luisquintanilla
   ms.author: luquinta
   ms.manager: markl

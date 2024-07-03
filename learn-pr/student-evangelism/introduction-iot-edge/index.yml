@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/22/2019
   author: leestott
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.service: iot-edge
 title: "Introduction to Azure IoT Edge"

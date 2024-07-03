@@ -4,9 +4,9 @@ title: Reduce insider threat
 metadata:
   title: Reduce insider threat
   description: Discussion of the controls that ensure data protection in Azure and prevent back-door attacks.
-  ms.date: 02/23/2021
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 07/25/2023
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
 durationInMinutes: 8
 content: |

@@ -4,13 +4,12 @@ title: Run scripts and set the execution policy in Windows PowerShell
 metadata:
   title: Run scripts and set the execution policy in Windows PowerShell
   description: "Run scripts and set the execution policy in Windows PowerShell"
-  ms.date: 11/11/2022
+  ms.date: 03/27/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
-azureSandbox: false
-labModal: false
+  - N/A
 durationInMinutes: 12
 content: |
   [!include[](includes/6-run-scripts-set-execution-policy.md)]

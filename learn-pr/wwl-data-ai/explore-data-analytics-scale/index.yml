@@ -2,11 +2,12 @@
 uid: learn.wwl.explore-data-analytics-scale
 metadata:
   title: Explore data analytics at scale
-  description: "Describe data analytics at scale and understand the roles of a data team. Learn about the responsibilities of an enterprise data analyst and what tools are available to build scalable solutions."
+  description: Describe data analytics at scale and understand the roles of a data team. Learn about the responsibilities of an enterprise data analyst and what tools are available to build scalable solutions.
   ms.date: 06/08/2022
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
+  ms.author: anrudduc
+  ms.topic: module
+  ms.service: azure
 title: Explore data analytics at scale
 summary: Describe data analytics at scale and understand the roles of a data team. Learn about the responsibilities of an enterprise data analyst and what tools are available to build scalable solutions.
 abstract: |

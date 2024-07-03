@@ -3,11 +3,11 @@ uid: learn.language.go-get-started.5-hello-world
 metadata:
   title: Exercise - Hello World
   description: Write your first Go program in Visual Studio Code.
-  ms.date: 04/14/2021
+  ms.date: 12/21/2022
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: unit
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, linux-related-content
   zone_pivot_groups: os
 title: Exercise - Hello World
 durationInMinutes: 6

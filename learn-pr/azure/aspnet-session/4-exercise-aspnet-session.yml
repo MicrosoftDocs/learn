@@ -4,7 +4,7 @@ title: Exercise - Store session state information in an ASP.NET web app
 metadata:
   title: Exercise - Store session state information in an ASP.NET web app
   description: Configure Azure Cache for Redis, and configure the cache as the session state provider for the web app.
-  ms.date: 06/30/2020
+  ms.date: 02/27/2024
   author: coderandhiker
   ms.author: chrisrt
   ms.manager: markl

@@ -74,12 +74,12 @@ After you add the custom domain name and any subdomains, set one of the domain n
 
 ## Manage custom domain names by using Azure PowerShell
 
-You might prefer to manage your domain names by using Azure PowerShell.
+You might prefer to manage your domain names by using [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview).
 
-- `New-AzureADDomain`: Creates a new domain. Use the parameter `-IsDefault` to set the domain name as the primary domain name.
-- `Confirm-AzureADDomain`: Lets you try to validate the ownership of a domain.
-- `Set-AzureADDomain`: Updates a domain name and can set the domain to the primary domain name.
-- `Remove-AzureADDomain`: Deletes a domain from Microsoft Entra ID.
+- `New-MgDomain`: Creates a new domain. Use the parameter `-IsDefault` to set the domain name as the primary domain name.
+- `Confirm-MgDomain`: Lets you try to validate the ownership of a domain.
+- `Update-MgDomain`: Updates a domain name and can set the domain to the primary domain name.
+- `Remove-MgDomain`: Deletes a domain from Microsoft Entra ID.
 
 ## Add a user
 

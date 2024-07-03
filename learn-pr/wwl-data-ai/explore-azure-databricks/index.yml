@@ -2,11 +2,12 @@
 uid: learn.wwl.explore-azure-databricks
 metadata:
   title: Explore Azure Databricks
-  description: "Explore Azure Databricks"
+  description: Explore Azure Databricks
   ms.date: 08/29/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Explore Azure Databricks
 summary: Azure Databricks is a cloud service that provides a scalable platform for data analytics using Apache Spark.
 abstract: |

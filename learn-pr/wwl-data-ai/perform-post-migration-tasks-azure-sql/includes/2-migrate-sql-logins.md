@@ -55,7 +55,7 @@ Data Migration Assistant currently doesn’t support:
 -  By default, Data Migration Assistant selects all the qualified logins to migrate. Optionally, you can select specific logins to migrate1.
 
 > [!NOTE]
-> Server principles with names enclosed by double hash marks (##), which are for internal use only are not migrated.
+> While the Database Migration Assistant is a useful tool available, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience, which is available as [Azure SQL Migration extension for Azure Data Studio](/azure-data-studio/extensions/azure-sql-migration-extension), or via [Azure Portal](https://aka.ms/dmsazureportal), or through [Azure PowerShell and Azure CLI](/azure/dms/migration-dms-powershell-cli).
 
 ### MoveLogins script
 
@@ -68,4 +68,4 @@ The script, written in PowerShell, generates a T-SQL script that can be applied 
 The script generates different results depending on whether you're using Azure SQL Database, or Azure SQL Managed Instance. In Azure SQL Database, you can't create Microsoft Entra logins and related database users; instead, Microsoft Entra users are created at the database level. For Azure SQL Managed Instance, it's similar to on-premises SQL Server with server-level logins and database users.
 
 >[!NOTE]
-> We suggest starting with a dedicated migration tool like Azure Migration extension or DMA to transfer logins. If you encounter any issues with these recommended tools, you can consider alternative methods like using this script.
+> We suggest starting with a dedicated migration tool like Azure Migration extension to transfer logins. If you encounter any issues with these recommended tools, you can consider alternative methods like using the MoveLogins script.

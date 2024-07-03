@@ -4,9 +4,9 @@ title: Implement Pessimistic Concurrency
 metadata:
   title: Implement Pessimistic Concurrency
   description: Implementing Pessimistic Concurrency
-  ms.date: 06/22/2023
-  author: tamram
-  ms.author: tamram
+  ms.date: 11/06/2023
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
 durationInMinutes: 8
 content: |

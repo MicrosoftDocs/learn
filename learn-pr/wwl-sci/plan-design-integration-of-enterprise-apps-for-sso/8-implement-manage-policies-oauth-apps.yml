@@ -4,11 +4,12 @@ title: Implement and manage policies for OAuth apps
 metadata:
   title: Implement and manage policies for OAuth apps
   description: "Implement and manage policies for OAuth apps"
-  ms.date: 10/26/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.prod: identity-and-access
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/8-implement-manage-policies-oauth-apps.md)]

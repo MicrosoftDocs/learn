@@ -4,49 +4,29 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/29/2024
+  ms.date: 06/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 15
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the purpose of a Network Security Group (NSG) in Azure?"
+  - content: "What is the purpose of a network security group in Azure?"
     choices:
-    - content: "To manage user access to Azure resources"
+    - content: "Enables the creation of virtual machines in Azure"
       isCorrect: false
-      explanation: "Incorrect. This is the role of Azure Active Directory and Azure role-based access control."
-    - content: "To filter network traffic and enforce access controls"
+      explanation: "Incorrect. A network security group doesn't enable the creation of virtual machines in Azure."
+    - content: "Provides storage for Azure resources"
+      isCorrect: false
+      explanation: "Incorrect. A network security group doesn't provide storage for Azure resources."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
-      explanation: "Correct. A Network Security Group (NSG) in Azure is used to filter network traffic by defining inbound and outbound security rules. It helps enforce access controls and restricts network traffic to Azure resources based on source, destination, port, and protocol."
-    - content: "To monitor performance and availability of Azure services"
-      isCorrect: false
-      explanation: "Incorrect. This is the role of Azure Monitor and Azure Application Insights."
-  - content: "Which of the following network security rules are valid in an NSG?"
-    choices:
-    - content: "Deny outbound traffic to a specific IP address"
-      isCorrect: false
-      explanation: "Incorrect. This rule blocks outbound traffic to a specific IP address."
-    - content: "Allow all traffic within the virtual network"
-      isCorrect: true
-      explanation: "Correct. Allowing all traffic within the virtual network would eliminate the purpose of using a Network Security Group (NSG) to filter network traffic. NSGs are designed to restrict and control network traffic based on defined rules."
-    - content: "Allow SSH traffic from a specific IP range"
-      isCorrect: false
-      explanation: "Incorrect. This rule permits SSH traffic from a specific range of IP addresses."
-  - content: "Which of the following methods would associate an NSG with an Azure resource?"
-    choices:
-    - content: "During the creation of the Azure resource"
-      isCorrect: false
-      explanation: "Incorrect. NSG association isn't typically done during resource creation."
-    - content: "By modifying the virtual network settings"
-      isCorrect: true
-      explanation: "Correct. To associate a Network Security Group (NSG) with an Azure resource, you need to modify the virtual network settings and associate the NSG with the desired subnet or network interface."
-    - content: "By using Azure PowerShell commands"
-      isCorrect: false
-      explanation: "Incorrect. While possible, it isn't the primary method for associating NSGs with resources."
+      explanation: "Correct. A network security group is used to filter inbound and outbound network traffic to and from Azure resources in an Azure virtual network, helping to deliver secure and stable application hosting platforms."
   - content: "What happens to network traffic that doesn't match any NSG rules?"
     choices:
     - content: "It's allowed by default"
@@ -54,7 +34,29 @@ quiz:
       explanation: "Incorrect. Allowing traffic by default would pose a security risk."
     - content: "It's denied by default"
       isCorrect: true
-      explanation: "Correct. By default, network traffic that does not match any Network Security Group (NSG) rules is denied. This ensures that any traffic not explicitly allowed is blocked and helps maintain a secure network environment."
+      explanation: "Correct. By default, network traffic that doesn't match any Network Security Group (NSG) rules is denied. This ensures that any traffic not explicitly allowed is blocked and helps maintain a secure network environment."
     - content: "It's logged for analysis"
       isCorrect: false
       explanation: "Incorrect. NSGs don't log traffic by default, but logging can be enabled for further analysis."
+  - content: "How do Application Security Groups (ASGs) enhance network security within Azure Virtual Networks?"
+    choices:
+    - content: "By grouping virtual machines according to their functions to streamline network security rules application."
+      isCorrect: true
+      explanation: "Correct because ASGs allow administrators to group VMs based on their roles or functions, enabling more efficient and targeted security rule application, thus improving overall security posture and management efficiency."
+    - content: "By encrypting virtual network traffic"
+      isCorrect: false
+      explanation: "Incorrect because ASGs don't encrypt network traffic; encryption is managed through other mechanisms like Azure VPN Gateway or Azure ExpressRoute for securing network traffic."
+    - content: "By automatically applying antivirus software to all virtual machines within a group"
+      isCorrect: false
+      explanation: "Incorrect because ASGs don't deal with antivirus software; their purpose is to simplify network security management by grouping VMs for security rule application."
+  - content: "A network administrator is planning to minimize the number of security rules and changes needed. They are considering using service tags or application security groups, rather than individual IP addresses or ranges of IP addresses. What should they ensure about the network interfaces in both application security groups?"
+    choices:
+    - content: "They must exist in different virtual networks"
+      isCorrect: false
+      explanation: "Incorrect. Having network interfaces in different virtual networks would make it impossible to assign one as the source and the other as the destination in a rule."
+    - content: "They can exist in any virtual network"
+      isCorrect: false
+      explanation: "Incorrect. The network interfaces need to be in the same virtual network for both the source and destination application security groups."
+    - content: "They must exist in the same virtual network"
+      isCorrect: true
+      explanation: "Correct. All network interfaces for both the source and destination application security groups need to exist in the same virtual network."

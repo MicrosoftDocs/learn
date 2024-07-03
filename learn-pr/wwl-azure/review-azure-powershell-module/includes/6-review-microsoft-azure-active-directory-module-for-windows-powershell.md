@@ -1,62 +1,38 @@
-The Azure Active Directory module for Windows PowerShell provides cmdlets that you can use for Microsoft Entra administrative tasks. These tasks include user management, domain management, and configuring single sign-on. This topic includes information about how to install these cmdlets for use with your directory.
+# Review Microsoft Graph PowerShell module
 
-You mostly need the Azure Active Directory module for Windows PowerShell when you manage users, groups, and services such as Microsoft 365. However, Microsoft is replacing the Azure Active Directory module for Windows PowerShell with Azure Active Directory PowerShell for Graph. The Azure Active Directory module for Windows PowerShell cmdlets include **Msol** in their names, while the Azure Active Directory PowerShell for Graph cmdlets use **AzureAD** in their names.
+The Microsoft Graph module for Windows PowerShell provides cmdlets that you can use for Microsoft Entra administrative tasks. These tasks include user management, domain management, and configuring single sign-on. This topic includes information about how to install these cmdlets for use with your directory.
 
-## Azure Active Directory module for Windows PowerShell
+The following list summarizes the key advantages of using the Microsoft Graph PowerShell SDK.
 
-The following Windows operating systems support the Azure Active Directory module for Windows PowerShell, with the default version of Microsoft .NET Framework and Windows PowerShell:
-
-- Windows 8.1
-- Windows 8
-- Windows 7
-- Windows Server 2012 R2
-- Windows Server 2012
-- Windows Server 2008 R2
+- **Access to all Microsoft Graph APIs**: Microsoft Graph PowerShell is based on Microsoft Graph API. The Microsoft Graph API includes, in addition to Microsoft Entra ID, APIs from other Microsoft services like SharePoint, Exchange, and Outlook, all accessed through a single endpoint with a single access token.
+- **Supports PowerShell 7**: Microsoft Graph PowerShell module works with PowerShell 7 and later. It's also compatible with Windows PowerShell 5.1.
+- **Cross-platform support**: Microsoft Graph PowerShell module works on all platforms including Windows, macOS, and Linux.
+- **Supports modern authentication**: Microsoft Graph PowerShell supports the Microsoft Authentication Library (MSAL) which offers more security. For example, you can use Passwordless sign-in experiences.
+- **Supports external identities**: Users from other Microsoft Entra tenants can authenticate to services in your tenant with Microsoft Graph PowerShell.
+- **Uses least privilege**: Microsoft Graph PowerShell permissions are NOT pre-authorized and users must perform one-time request for app permissions depending on their needs.
+- **Advanced queries**: Microsoft Graph PowerShell supports rich, advanced queries via eventual consistency. For example, you can get a near-instant count of all users using advanced queries.
+- **Open source**: Feature teams and the community can create great PowerShell experiences and share them with everyone.
+- **Receives regular updates**: Microsoft Graph PowerShell commands are updated regularly to support the latest Graph API updates.
 
 The easiest way to install the module is from the PowerShell Gallery. You can install the module with the **Install-Module** cmdlet by running the following command:
 
 ```powershell
-Install-Module MSOnline
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Install-Module Microsoft.Graph
 ```
-
-## Azure Active Directory PowerShell for Graph
-
-Currently, the Azure Active Directory PowerShell for Graph module doesn't completely replace the functionality of the Azure Active Directory module for Windows PowerShell module for user, group, and license administration. In some cases, you need to use both versions. You can safely install both versions on the same computer.
-
-The Azure AD PowerShell for Graph module has two versions: a Public Preview version and a General Availability version. It isn't recommended to use the Public Preview version for production scenarios.
-
-> **Additional reading:** For more information about downloading either version of the Azure AD PowerShell for Graph module, refer to [Install Azure Active Directory PowerShell for Graph](https://aka.ms/install-azure-active-directory-powershell-for-graph).
-
-To install the General Availability version of the Azure AD PowerShell for Graph module on your computer, run the following command:
+You can also add beta features for Microsoft Graph SDK by running (not required):
 
 ```powershell
-Install-Module AzureAD
+Install-Module Microsoft.Graph.Beta
 ```
-
-To install the public preview release of this module, run the following command:
-
-```powershell
-Install-module AzureADPreview
-```
-
-<a name='connecting-to-azure-ad-with-powershell'></a>
-
 ## Connecting to Microsoft Entra ID with PowerShell
 
-If you want to connect to the Microsoft Entra service with the Azure Active Directory module for Windows PowerShell, run the following command:
+If you want to connect to the Microsoft Entra service with the Microsoft Graph module for Windows PowerShell, run the following command:
 
 ```powershell
-Connect-MsolService
+Connect-MgGraph -Scopes 'User.Read.All'
 ```
 
-If you use the Azure AD PowerShell for Graph module, and want to connect to Microsoft Entra ID, run the following command:
+After running the previous command, you'll be prompted for your Microsoft Entra credentials. You should use the credentials that you use to sign in to Microsoft 365 or your Azure services. After you authenticate, you'll be able to use the cmdlets available for Microsoft Entra management.
 
-```powershell
-Connect-AzureAD
-```
-
-After running either of the previous commands, you'll be prompted for your Microsoft Entra credentials. You should use the credentials that you use to sign in to Microsoft 365 or your Azure services. After you authenticate, you'll be able to use the cmdlets available for Microsoft Entra management.
-
-> **Additional reading:** For more information about the Azure Active Directory PowerShell for Graph cmdlets, refer to [AzureAD](https://aka.ms/azure-ad-2).
-
-> **Additional reading:** For more information about the Azure Active Directory module for Windows PowerShell cmdlets, refer to [MSOnline](https://aka.ms/msonline).
+> **Additional reading:** For more information about the cmdlets related to Microsoft Entra ID in the PowerShell for Graph, refer to [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview?view=graph-powershell-1.0).

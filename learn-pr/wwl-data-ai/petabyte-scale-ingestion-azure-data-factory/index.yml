@@ -35,7 +35,7 @@ products:
 - azure-data-factory
 - azure-synapse-analytics
 subjects:
-- digital-application-innovation
+- app-development
 units:
 - learn.wwl.petabyte-scale-ingestion-azure-data-factory.introduction
 - learn.wwl.petabyte-scale-ingestion-azure-data-factory.list-ingestion-methods

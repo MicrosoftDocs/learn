@@ -50,3 +50,4 @@ You can enable other options during installation when you select custom settings
      -  Existing user, group, and contact objects that are deleted from on-premises Active Directory are deleted from Microsoft Entra ID.
 
 Existing user objects that are disabled on-premises are disabled in Azure; however, licenses aren’t automatically unassigned.
+

@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/25/2023
   author: drguthals
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen, py-fresh-zinc, engagement-fy23
   ms.devlang: python
 title: Write basic Python in Notebooks
@@ -32,8 +32,6 @@ roles:
 - data-scientist
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.student-evangelism.basic-python-nasa.1-introduction
 - learn.student-evangelism.basic-python-nasa.2-comments

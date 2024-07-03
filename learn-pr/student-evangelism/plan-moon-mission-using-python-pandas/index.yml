@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/29/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen, py-fresh-zinc
   ms.devlang: python
 title: Plan a Moon mission by using Python pandas
@@ -32,8 +32,6 @@ roles:
 - student
 products:
 - vs-code
-subjects:
-- development-tools
 units:
 - learn.student-evangelism.plan-moon-mission-using-python-pandas.1-introduction
 - learn.student-evangelism.plan-moon-mission-using-python-pandas.2-rock-samples

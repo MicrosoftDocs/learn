@@ -4,11 +4,12 @@ title: Configure connectors to apps
 metadata:
   title: Configure connectors to apps
   description: "Configure connectors to apps"
-  ms.date: 10/26/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.prod: identity-and-access
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/3-configure-connectors-apps.md)]

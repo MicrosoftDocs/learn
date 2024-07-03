@@ -4,7 +4,7 @@ title: Scaling with KEDA
 metadata:
   title: Scaling with KEDA
   description: K8S
-  ms.date: 11/07/2023 
+  ms.date: 06/03/2024 
   author: schaffererin
   ms.author: schaffererin 
   ms.topic: unit
@@ -38,12 +38,12 @@ quiz:
       explanation: "Although Deployment and StatefulSets are the most common approach to scaling in KEDA, any Resource that implements the scale subresource can be scaled using KEDA."
   - content: "What's the primary reason for using Scaled Jobs?"
     choices:
-    - content: "To handle long running processes."
+    - content: "To handle long-running processes."
       isCorrect: true
       explanation: "Rather than processing multiple events within a deployment, a single job is created per event and runs it to completion."
     - content: "To scale more efficiently."
       isCorrect: false
       explanation: "Scaled jobs don't affect efficiency of scaling a resource."
-    - content: "To consume less resources."
+    - content: "To consume fewer resources."
       isCorrect: false
       explanation: "Scaled jobs don't affect the amount of resources consumed."

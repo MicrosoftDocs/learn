@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/25/2023
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: sql
   ms.subservice: t-sql
 title: Implement transactions with Transact-SQL

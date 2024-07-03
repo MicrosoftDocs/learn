@@ -49,8 +49,6 @@ roles:
 products:
 - azure-custom-vision
 - vs-code
-subjects:
-- development-tools
 modules:
 - learn.student-evangelism.plan-moon-mission-using-python-pandas
 - learn.student-evangelism.predict-meteor-showers-using-python

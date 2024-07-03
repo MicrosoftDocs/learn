@@ -30,7 +30,7 @@ roles:
 products:
 - azure
 subjects:
-- business-continuity
+- site-reliability-engineering
 - cloud-computing
 units:
 - learn.wwl.perform-backups-restores.introduction

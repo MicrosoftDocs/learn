@@ -30,8 +30,6 @@ products:
 - aspnet-core
 - blazor
 - dotnet
-subjects:
-- development-tools
 units:
 - learn.build-web-app-blazor-webassembly-vscode.1-introduction
 - learn.build-your-first-blazor-web-app.configure-environment

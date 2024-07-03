@@ -60,5 +60,5 @@ Firewall Manager enables you to:
 
 In the following graphic, an administrator is deploying a firewall with a firewall policy for an existing virtual network.
 
-:::image type="content" source="../media/deploy-firewall.png" alt-text="Screenshot of the Virtual networks blade in Firewall Manager. The administrator has selected an existing virtual network." lightbox="../media/deploy-firewall.png":::
+:::image type="content" source="../media/deploy-firewall.png" alt-text="Screenshot of the Virtual networks blade in Firewall Manager. The administrator selected an existing virtual network." lightbox="../media/deploy-firewall.png":::
 

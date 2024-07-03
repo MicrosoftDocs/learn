@@ -37,8 +37,6 @@ roles:
 products:
 - azure
 - azure-resource-manager
-subjects:
-- development-tools
 modules:
 - learn.azure.deploy-resources-different-scopes
 - learn.azure.extend-resource-manager-template-deployment-scripts

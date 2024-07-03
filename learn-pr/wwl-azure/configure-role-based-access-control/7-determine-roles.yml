@@ -3,11 +3,11 @@ uid: learn.wwl.configure-role-based-access-control.determine-rbac-roles
 title: Review fundamental Azure RBAC roles
 metadata:
   title: Review fundamental Azure RBAC roles
-  description: "Review fundamental Azure RBAC roles"
-  ms.date: 10/23/2023
+  description: "Review fundamental Azure roles."
+  ms.date: 05/06/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 2

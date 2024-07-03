@@ -1,8 +1,6 @@
 Azure Center for SAP Solutions offers a range of services and tools to help you deploy and manage your SAP environment effectively.
 
-## Scenario
-
-Imagine you're an SAP professional responsible for managing SAP workloads in your organization. You're looking for ways to deploy and manage your SAP environment more efficiently on a secure, scalable, and reliable cloud platform. In this module, we explore how Azure Center for SAP Solutions (ACSS) can help you achieve these goals. Azure provides a robust platform for running SAP workloads. Azure Center for SAP Solutions offers a range of services and tools to help you deploy and manage your SAP environment effectively.
+Imagine you're an SAP professional responsible for managing SAP workloads in your organization. You're looking for ways to deploy and manage your SAP environment more efficiently on a secure, scalable, and reliable cloud platform. In this module, you explore how Azure Center for SAP Solutions (ACSS) can help you achieve these goals. Azure provides a robust platform for running SAP workloads. Azure Center for SAP Solutions offers a range of services and tools to help you deploy and manage your SAP environment effectively.
 
 ## Learning objectives
 

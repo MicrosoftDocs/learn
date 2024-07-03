@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/21/2023
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-  ms.service: azure-ai-services
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -31,7 +32,7 @@ quiz:
     - content: "Azure OpenAI Service enables you to implement copilot assistants to support frontline workers or your design and development teams."
       isCorrect: true
       explanation: "Correct. The generative AI models included in Azure OpenAI Service, such as ChatGPT, are the basis for virtual assistants that improve the efficiency and productivity of your staff."
-    - content: "Azure AI Services allow your data scientists to automatically train AI models."
+    - content: "Azure AI Services allows your data scientists to automatically train AI models."
       isCorrect: false
       explanation: "Incorrect. This feature isn’t covered by Azure AI Services, but by Azure Machine Learning. Instead, Azure AI Services helps you by offering prebuilt AI models and APIs for common AI scenarios, such as computer vision or document intelligence."
     - content: "Microsoft Fabric helps your factory’s team extract information from complex layouts such as technical datasheets."

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.explore-superposition.dirac-notation
+title: Dirac notation and operators
+metadata:
+  title: Dirac notation and operators
+  description: Learn how to represent a qubit using Dirac notation.
+  ms.date: 03/25/2024
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  manager: tedhudek
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-dirac-notation.md)]

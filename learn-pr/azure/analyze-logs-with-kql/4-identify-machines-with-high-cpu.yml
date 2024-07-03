@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Identify machines with high CPU usage
   description: "Write KQL queries to retrieve and transform data from the `Perf` table to gain an understanding of which machines have reached or are nearing their total compute capacity, and which machines are being underused."
-  ms.date: 08/08/2022
+  ms.date: 02/11/2024
   author: guywi-ms
   ms.author: guywild
   ms.topic: unit

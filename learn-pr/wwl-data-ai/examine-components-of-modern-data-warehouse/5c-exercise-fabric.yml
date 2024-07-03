@@ -4,10 +4,12 @@ title: 'Exercise: Explore Microsoft Fabric'
 metadata:
   title: 'Exercise: Explore Microsoft Fabric'
   description: "Exercise: Explore Microsoft Fabric"
-  ms.date: 12/19/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 25
 content: |
   [!include[](includes/5c-exercise-fabric.md)]

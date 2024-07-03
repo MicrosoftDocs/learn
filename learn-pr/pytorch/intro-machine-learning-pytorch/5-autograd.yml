@@ -6,7 +6,7 @@ metadata:
   description: When training neural networks, the most frequently used algorithm is back propagation. In this algorithm, parameters (model weights) are adjusted according to the gradient of the loss function with respect to the given parameter.
   author: cassiebreviu
   ms.author: ruyakubu
-  ms.date: 04/14/2020
+  ms.date: 08/05/2023
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates

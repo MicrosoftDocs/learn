@@ -4,7 +4,7 @@ metadata:
   title: Deploy an application on your Azure Kubernetes Service cluster
   description: Explore the concepts needed to create and deploy an application to your Azure Kubernetes Service cluster. You'll see how to deploy an application as a container from a container registry by using a declarative manifest file.
   ms.published: 07/31/2020
-  ms.date: 03/01/2022
+  ms.date: 04/04/2023
   author: nickomang
   ms.author: nickoman
   ms.topic: unit

@@ -3,7 +3,7 @@ uid: learn.run-docker-containers-aci.5-use-data-volumes
 metadata:
   title: Exercise - Use data volumes
   description: Use data volumes with Azure Container Instances (ACI).
-  ms.date: 04/28/2022
+  ms.date: 04/03/2024
   author: v-tcassi
   ms.author: tomcassidy
   ms.topic: unit

@@ -4,12 +4,11 @@ title: Review the benefits of the Azure PowerShell module
 metadata:
   title: Review the benefits of the Azure PowerShell module
   description: "Review the benefits of the Azure PowerShell module"
-  ms.date: 10/19/2022
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-  ms.custom:
-    - devx-track-azurepowershell
+  ms.custom: N/A, devx-track-azurepowershell
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

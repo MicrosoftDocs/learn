@@ -31,13 +31,13 @@ Building out the semantic model is a critical component to preparing your data f
 
 ![Screenshot of the FactSalesOrder table with hidden fields highlighted in yellow.](../media/hide-fields.png)
 
-## Understand datasets
+## Understand semantic models
 
 Every time a data warehouse is created, Fabric creates a *semantic model* for analysts and/or business users to connect to for reporting.
 
-*Datasets* are a semantic model with metrics that are used to create reports. Simply put, analysts use the semantic model you created in your warehouse, which is stored in a semantic model. If you're familiar with Power BI, working with datasets created by the data warehouse experience will be straightforward.
+Semantic model has metrics that are used to create reports. Simply put, analysts use the semantic model you created in your warehouse, which is stored in a semantic model. If you're familiar with Power BI, working with semantic models created by the data warehouse experience will be straightforward.
 
-Datasets are automatically kept in sync with the data warehouse, so you don't have to worry about maintaining them. You can also create custom datasets to meet your specific needs.
+Semantic models are automatically kept in sync with the data warehouse, so you don't have to worry about maintaining them. You can also create custom semantic models to meet your specific needs.
 
 ## Understand the default semantic model
 
@@ -46,7 +46,7 @@ There's also a *default semantic model* automatically created for you in Fabric.
 New tables in the Lakehouse are automatically added to the default semantic model. Users can also manually select tables or views from the warehouse they want included in the model for more flexibility. Objects that are in the default semantic model are created as a layout in the model view.
 
 > [!NOTE]
-> Default Datasets follow the current limitations for datasets in Power BI. See [Default Power BI datasets](/fabric/data-warehouse/limitations) for more information.
+> Default semantic models follow the current limitations for semantic models in Power BI. See [Default Power BI semantic models](/fabric/data-warehouse/limitations) for more information.
 
 ## Visualize data
 

@@ -4,11 +4,12 @@ title: 'Exercise enable sign-in risk policy '
 metadata:
   title: Exercise enable sign-in risk policy
   description: "Exercise enable sign-in risk policy"
-  ms.date: 10/25/2023
+  ms.date: 04/03/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.service: azure
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-enable-sign-risk-policy.md)]

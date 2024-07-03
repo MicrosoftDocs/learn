@@ -2,7 +2,7 @@ The three-tier SAP Azure Resource Manager templates referenced earlier support h
 
 The templates create:
 
-- Azure VMs (and, if applicable, their managed disks)
+- Azure Virtual Machines (and, if applicable, their managed disks)
 - Network cards for all virtual machines, with associated IP addresses
 - Availability groups for:
 

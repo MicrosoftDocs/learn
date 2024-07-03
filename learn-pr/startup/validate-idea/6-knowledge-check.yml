@@ -3,8 +3,8 @@ uid: learn.startups.validate-idea.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Review concepts on how to test your startup assumptions. Topics include experiments, interview strategies, and tools that measure value.
-  ms.date: 02/11/2022
+  description: Review concepts on how to test your startup assumptions. Subjects include experiments, interview strategies, and tools that measure value.
+  ms.date: 03/19/2024
   author: ryanmesches
   ms.author: ryanmesches
   ms.topic: unit
@@ -35,7 +35,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The Lean Canvas helps founders identify assumptions about their startup's business model. Founders should populate the most critical segments first, not segments that they happen to have information on."
 
-  - content: "Which category of assumptions are you testing by creating a simple landing page and tracking whether customers will provide their email address?"
+  - content: "Which category of assumptions are you testing by creating a simple landing page and tracking whether customers provide their email address?"
     choices:
     - content: "Desirability."
       isCorrect: true
@@ -58,12 +58,12 @@ quiz:
     - content: "Having a prepared set of interview questions."
       isCorrect: false
       explanation: "Incorrect. Being prepared can be helpful. When you're not prepared, you risk omitting questions and wasting time."
-    - content: "Asking how much time or money they've spent trying to solve the problem."
+    - content: "Asking how much time or money they spent trying to solve the problem."
       isCorrect: false
-      explanation: "Incorrect. Learning how much time or money customers have spent on the problem can be helpful. You can use this information to gauge interest in your idea."
+      explanation: "Incorrect. Learning how much time or money customers spent on the problem can be helpful. You can use this information to gauge interest in your idea."
     - content: "Pitching your product and trying to get them to commit to a sale."
       isCorrect: true
-      explanation: "Correct. During customer interviews, your goal is to gather information. Before you've validated your idea, it's too early to invest a significant amount of time in selling your product."
+      explanation: "Correct. During customer interviews, your goal is to gather information. Before you validate your idea, it's too early to invest a significant amount of time in selling your product."
 
   - content: "What's the main difference between a concierge experiment and a Wizard of Oz experiment?"
     choices:

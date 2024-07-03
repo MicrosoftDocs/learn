@@ -5,8 +5,8 @@ metadata:
   title: System upgrade
   description: Describes the tasks for upgrading an Azure Private 5G Core instance and its underlying platforms.
   ms.date: 11/29/2022
-  author: rmcmurray
-  ms.author: robmcm
+  author: lnyswonger
+  ms.author: lnyswonger
   ms.topic: unit
 durationInMinutes: 8
 content: |

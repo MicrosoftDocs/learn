@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Customize software installations
   description: This unit describes methods of customizing software installations on Azure CycleCloud-managed clusters.
-  ms.date: 06/14/2021
+  ms.date: 02/01/2024
   author: anhoward
   ms.author: anhoward
   ms.topic: unit

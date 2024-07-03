@@ -1,6 +1,6 @@
 Composed models in Azure AI Document Intelligence enable users to submit a form when they don't know which is the best model to use.
 
-In your polling company, you often change versions of the forms you use to collect data from respondents. When your uses submit these forms for analysis, they sometimes choose the wrong custom model. You'd like to find a way for them to submit forms without having to specify the model version.
+In your polling company, you often change versions of the forms you use to collect data from respondents. When your users submit these forms for analysis, they sometimes choose the wrong custom model. You'd like to find a way for them to submit forms without having to specify the model version.
 
 Here, you'll learn how composed models can help to send a form to the correct custom model automatically.
 

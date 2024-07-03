@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-  ms.service: sap-on-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/8-explore-sap-hana-file-level-backups.md)]

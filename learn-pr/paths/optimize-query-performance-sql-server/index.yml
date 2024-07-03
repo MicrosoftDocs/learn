@@ -27,7 +27,7 @@ products:
 - azure-sql-database
 - sql-server
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.explore-query-performance-optimization
 - learn.wwl.explore-performance-based-design

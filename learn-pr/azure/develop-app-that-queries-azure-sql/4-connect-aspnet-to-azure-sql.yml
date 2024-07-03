@@ -3,7 +3,7 @@ uid: learn.develop-app-that-queries-azure-sql.4-connect-aspnet-to-azure-sql
 metadata:
   title: Connect an ASP.NET application to Azure SQL Database
   description: Connect an ASP.NET application to Azure SQL Database
-  ms.date: 01/24/2023
+  ms.date: 08/10/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth

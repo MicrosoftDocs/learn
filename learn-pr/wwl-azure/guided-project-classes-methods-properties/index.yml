@@ -3,27 +3,36 @@ uid: learn.wwl.guided-project-classes-methods-properties
 metadata:
   title: 'Guided project: Implement, classes, methods, and properties'
   description: "This lesson describes building the LangtonsAnt project using classes and methods."
-  ms.date: 01/29/2024
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: dotnet-csharp
+  ai-usage: ai-assisted
 title: 'Guided project: Implement, classes, methods, and properties'
 summary: |
   This module guides you through the steps required to begin building the LangtonsAnts demonstration. It sets up the application and then begins adding the classes, methods, and properties the application requires.
   [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   After completing this module, you will be able to:
-  *   Create a console application
-  *   Create an Ant class and add properties and a constructor
-  *   Read user input in a loop
+
+  -   Create a console application
+
+  -   Create an Ant class and add properties and a constructor
+
+  -   Read user input in a loop
 prerequisites: |
-  - Beginner level experience with a .NET editor
-  - Beginner level experience with basic C# syntax rules
-  - Beginner level experience with performing math operations on variables
-  - Beginner level experience with creating literal values and declare variables of basic data types like string, int, and decimal
-  - Beginner level experience with string concatenation and string interpolation
+  -   Beginner level experience with a .NET editor
+
+  -   Beginner level experience with basic C# syntax rules
+
+  -   Beginner level experience with performing math operations on variables
+
+  -   Beginner level experience with creating literal values and declare variables of basic data types like string, int, and decimal
+
+  -   Beginner level experience with string concatenation and string interpolation
 iconUrl: /training/achievements/generic-badge.svg
 hidden: true
 levels:
@@ -35,8 +44,6 @@ roles:
 - student
 products:
 - vs
-subjects:
-- development-tools
 units:
 - learn.wwl.guided-project-classes-methods-properties.introduction
 - learn.wwl.guided-project-classes-methods-properties.prepare

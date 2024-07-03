@@ -31,7 +31,7 @@ products:
 - windows-server
 subjects:
 - infrastructure
-- container
+- containers
 modules:
 - learn.intro-to-docker-containers
 - learn.wwl.run-containers-windows-server

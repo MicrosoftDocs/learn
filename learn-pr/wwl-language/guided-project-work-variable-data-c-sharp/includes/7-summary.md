@@ -6,7 +6,8 @@ In this module, you practiced your ability to:
 - Use data processing.
 - Format data output.
 - Choose the correct data types and safely converting data types.
-- Manipulate number, string and character arrays, as well as add, remove, and sort data.
+- Create two dimensional arrays of numbers and strings.
+- Search data in arrays to display or update data.
 - Modify and build complex strings from multiple data sources, and format data for display across regions.
 
 You delivered functionality to your Contos pet app team, including:
@@ -19,4 +20,4 @@ You delivered functionality to your Contos pet app team, including:
 
 ## Get a free verified certification
 
-Microsoft has partnered with freeCodeCamp.org to offer a training and certification program on foundational C#. By completing this Microsoft Learn module, you're already one step closer to being certified. To explore the foundational C# certification offered by freeCodeCamp, visit: [https://aka.ms/csharp-certification](https://aka.ms/csharp-certification).
+Microsoft has partnered with freeCodeCamp.org to offer a training and certification program on foundational C#. By completing this Microsoft Learn module, you're already one step closer to being certified. To explore the foundational C# certification offered by freeCodeCamp, visit: [https://aka.ms/csharp-certification](https://aka.ms/csharp-certification). 

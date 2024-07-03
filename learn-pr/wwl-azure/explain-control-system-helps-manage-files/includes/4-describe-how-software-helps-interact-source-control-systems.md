@@ -1,4 +1,3 @@
-
 A long time ago, working with the computer was staring at a screen with lines of text. Initially, computers didn't use a graphical interface. To interact with the computer, you entered commands from your keyboard at a prompt.
 
 Now, computers, tablets, cell phones, and other electronic devices almost all have a graphical interface through which you can consume information and interact with the computer. As the computer interface shifted, so has the way that most people interact with and use computers.

@@ -50,4 +50,3 @@ You can easily view the aggregate rules applied to a network interface by **view
 
 > [!TIP]
 > Unless you have a specific reason to, we recommend that you associate a network security group to a subnet, or a network interface, but not both. Since rules in a network security group associated to a subnet can conflict with rules in a network security group associated to a network interface, you can have unexpected communication problems that require troubleshooting.
-

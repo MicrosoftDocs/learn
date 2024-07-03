@@ -6,7 +6,7 @@ metadata:
   description: Check what you've learned.
   author: alexwolfmsft
   ms.author: alexwolf
-  ms.date: 12/08/2022
+  ms.date: 05/29/2024
   manager: jmartens
   ms.topic: unit
 durationInMinutes: 3
@@ -23,7 +23,7 @@ quiz:
           explanation: "Incorrect. The `appsettings.json` file does not provide an option to enable remote debugging."
         - content: "Enable remote debugging through the app service configuration page in the Azure portal."
           isCorrect: true
-          explanation: "Correct. Remote debugging can be enabled under the general settings tab on the App Service configuration page."
+          explanation: "Correct. You can enable remote debugging under the General Settings tab on the App Service configuration page."
         - content: "Use the Visual Studio attach to process dialog window to enable remote debugging."
           isCorrect: false
           explanation: "Incorrect. The Azure App Service remote debugging setting can't be enabled from the attach to process dialog."

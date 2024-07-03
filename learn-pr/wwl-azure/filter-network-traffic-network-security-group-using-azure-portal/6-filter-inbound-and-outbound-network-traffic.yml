@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.filter-inbound-and-outbound-network-traffic
+title: Exercise - Create a virtual network infrastructure
+metadata:
+  title: Exercise - Create a virtual network infrastructure
+  description: "Exercise - Create a virtual network infrastructure"
+  ms.date: 06/12/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-filter-inbound-and-outbound-network-traffic.md)]

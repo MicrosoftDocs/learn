@@ -1,6 +1,6 @@
 Now you have:
 
-- Explored Azure virtual machine authentication, authorization, and access control.
+- Explored Azure Virtual Machine authentication, authorization, and access control.
 - Explored Microsoft Entra ID.
 - Explored SAP Cloud Platform Identity authentication.
 - Added SAP Cloud Platform Identity Authentication from the gallery.
@@ -9,7 +9,7 @@ Now you have:
 - Integrated Microsoft Entra ID with SAP NetWeaver.
 - Integrated Active Directory with SAP single sign-on (Kerberos-SPNEGO).
 - Discovered Active Directory Domain Services.
-- Explored primary scenarios using Active Directory Domain Services and Azure virtual machines.
+- Explored primary scenarios using Active Directory Domain Services and Azure Virtual Machines.
 - Integrated Linux with Active Directory Domain Services.
 - Discovered Microsoft Entra Domain Services.
 

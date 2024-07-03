@@ -4,10 +4,12 @@ title: Plan and implement an Azure Application Gateway
 metadata:
   title: Plan and implement an Azure Application Gateway
   description: "Plan and implement an Azure Application Gateway"
-  ms.date: 02/13/2024
+  ms.date: 06/25/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-durationInMinutes: 7
+  ms.custom:
+  - N/A
+durationInMinutes: 10
 content: |
   [!include[](includes/4-azure-application-gateway.md)]

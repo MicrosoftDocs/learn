@@ -3,25 +3,39 @@ uid: learn.wwl.run-containers-windows-server
 metadata:
   title: Run containers on Windows Server
   description: "Run containers on Windows Server"
-  ms.date: 07/04/2023
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: windows-server
+  ms.subservice: containers
+  ai-usage: human-only
 title: Run containers on Windows Server
 summary: Learn about Windows Server and Hyper-V containers, associated isolation modes, running containers, and preparing the Windows Server host for running containerized workloads. Learn about Docker, preparing Windows Server for running container workloads, and managing containers.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe containers and how they work.
-  - Explain the difference between containers and virtual machines (VMs).
-  - Describe the difference between process isolation and Hyper-V isolation modes.
-  - Describe Docker and how it's used to manage Windows containers.
-  - Identify the container-based images available from the Microsoft Container Registry.
-  - Understand the process for running a Windows container.
-  - Explain how to manage containers using Windows Admin Center (WAC).
+
+  -   Describe containers and how they work.
+
+  -   Explain the difference between containers and virtual machines (VMs).
+
+  -   Describe the difference between process isolation and Hyper-V isolation modes.
+
+  -   Describe Docker and how it's used to manage Windows containers.
+
+  -   Identify the container-based images available from the Microsoft Container Registry.
+
+  -   Understand the process for running a Windows container.
+
+  -   Explain how to manage containers using Windows Admin Center (WAC).
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
-  - Windows Server.
-  - Working with virtualization technologies.
+
+  -   Windows Server.
+
+  -   Working with virtualization technologies.
 iconUrl: /training/achievements/run-containers-on-windows-server.svg
 levels:
 - intermediate
@@ -31,7 +45,7 @@ roles:
 products:
 - windows-server
 subjects:
-- container
+- containers
 units:
 - learn.wwl.run-containers-windows-server.introduction
 - learn.wwl.run-containers-windows-server.define-containers

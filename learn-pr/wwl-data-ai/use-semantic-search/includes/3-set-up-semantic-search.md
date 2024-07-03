@@ -1,25 +1,25 @@
-You enable semantic search at the service level and, once it is enabled, semantic search is available for all indexes. Semantic search cannot be enabled or disabled on  a per-index basis.
+You can enable semantic ranking at the service level and once it is enabled, semantic ranking is available for all indexes. Semantic ranking cannot be enabled or disabled on a per-index basis.
 
-## Enable semantic search
+## Enable semantic ranking
 
-Before enabling semantic search, you must have an Azure Cognitive Search service with at least one index.
+Before enabling semantic ranking, you must have an Azure AI Search service with at least one index.
 
 > [!NOTE]
-> For semantic search, the Cognitive Search service must have a billable tier. You cannot change the pricing tier of a Cognitive Search service. If you need another pricing tier, you will have to re-create the service.
+> For semantic ranking, the AI Search service must have a billable tier. You cannot change the pricing tier of an AI Search service. If you need another pricing tier, you will have to re-create the service.
 
-Semantic search is not available in every region. Before enabling semantic search, check that the region of your Cognitive Search service supports semantic search.
-To see a list of regions that support semantic search, see [Products available by region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/?products=search)
+Semantic ranking is not available in every region. Before enabling semantic ranking, check that the region of your AI Search service supports semantic ranking.
+To see a list of regions that support semantic ranking, see [Products available by region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/?products=search)
 
-To enable semantic search in the Azure portal, perform the following steps:
+To enable semantic ranking in the Azure portal, perform the following steps:
 
 1. Open the Azure portal and sign in.
 1. Select **All resources** and select your search service.
-1. In the navigation pane, select **Semantic search (preview)**.
+1. In the navigation pane, select **Semantic ranking (preview)**.
 1. Select the appropriate service plan. You can alter the service plan after deployment.
 
 ## Configure semantic ranking
 
-Once you have enabled semantic search, you can configure semantic ranking on a per-index basis. You can have multiple semantic configurations on each index.
+Once you have enabled semantic ranking, you can configure semantic ranking on a per-index basis. You can have multiple semantic configurations on each index.
 
 To configure semantic ranking, follow these steps:
 

@@ -55,8 +55,6 @@ products:
 - azure
 - static-web-apps
 - github
-subjects:
-- development-tools
 modules:
 - learn.student-evangelism.predict-basketball-player-efficiency-ratings
 - learn.student-evangelism.optimize-basketball-player-rest-breaks

@@ -4,12 +4,12 @@ This GitHub exercise is graded automatically once you attempt a solution to the 
 
 Here are some helpful tips before you begin the exercise:
 
-- Read the **About this exercise** section in the exercise's repository README to understand how the exercise works.
-- Follow the steps provided in the **Instructions** section to successfully complete the exercise.
-- To see the results of your exercise, navigate to the **Actions** tab of your cloned repository and select the most recent run on the **Grading** workflow.
-- Stuck on what to do? Revisit the content in the last unit or check out the **Useful resources** section in the exercise's repository README for some other resources.
+- Read the **Welcome** section of the README file in the exercise's repository to understand more about the exercise.
+- Follow the steps provided in the **How to start this course** section to successfully complete the exercise.
+- To see the results of your exercise, navigate to your cloned repository's **Actions** tab and select the most recent run on the **Grading** workflow.
+- Stuck on what to do? Revisit the content in the last unit or check out the README file in the exercise's repository.
 
->[!Note]
+> [!NOTE]
 > A grading script exists under `.github/workflows/grading.yml`. You don't need to modify this workflow to complete this exercise. **Altering the contents in this workflow can break the exercise's ability to validate your actions, provide feedback, or grade the results.**
 
 This exercise is a challenge based on content covered in this module, and there could be more than one way to successfully complete the exercise. If you get stuck, revisit previous content in this module or navigate to some of the other resources provided.

@@ -5,9 +5,10 @@ metadata:
   unitType: exercise
   title: Exercise - Publish and subscribe to events using Pub/Sub
   description: In this exercise, you’ll subscribe to and publish events using Azure Cache for Redis’ Pub/Sub functionality.
-  ms.date: 02/11/2022
-  author: tchristiani
-  ms.author: terrychr
+  ms.date: 05/11/2023
+  author: flang-msft
+  ms.author: franlanglois
+  manager: mcleans
   ms.topic: unit
 azureSandbox: true
 durationInMinutes: 15
