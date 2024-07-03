@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.apim.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 04/27/2020
+  author: undefined
+  ms.author: undefined
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "First question"
+      choices:
+        - content: "first choice"
+          isCorrect: true
+          explanation: "Correct. because reasons"
+        - content: "second choice"
+          isCorrect: false
+        - content: "third choice"
+          isCorrect: false
+        - content: "fourth choice"
+          isCorrect: false
+          explanation: "Incorrect. because reasons"
+  
