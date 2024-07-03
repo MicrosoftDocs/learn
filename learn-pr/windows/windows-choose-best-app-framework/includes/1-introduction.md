@@ -1,4 +1,4 @@
-This module discusses the different options for building Windows applications and how to choose the best option based on project requirements.
+This module discusses the different options for building native Windows applications and how to choose the best option based on project requirements.
 
 ![A picture visualizing Windows UI framework design and development.](../media/windows-development-design.jpg)
 
@@ -10,10 +10,10 @@ Imagine you're a project manager at a consulting company that has a team of deve
 
 The module covers the following topics:
 
-- Introduction to Windows UI frameworks
+- Introduction to native Windows UI frameworks
 - Windows Presentation Foundation (WPF)
 - Windows Forms
-- WinUI and Windows App SDK
+- WinUI 3
 - Understand each application's requirements any how they may match up with each framework
 - Case studies for each project
 - Deployment options

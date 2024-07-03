@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.windows.windows-best-app-framework
 metadata:
-  title: Choose the best UI framework for a Windows development project
-  description: Windows developers have various options for creating applications that run on Windows. This module introduces the Windows UI frameworks that are available for Windows development. It also provides guidance on how to choose the best framework for your application.
+  title: Choose the best UI framework for a native Windows development project
+  description: Windows developers have various options for creating applications that run on Windows. This module introduces the native Windows UI frameworks that are available for Windows development. It also provides guidance on how to choose the best framework for your application.
   ms.date: 01/17/2024
   author: alvinashcraft
   ms.author: aashcraft
@@ -10,11 +10,11 @@ metadata:
   ms.service: windows-dev-apps
   ai-usage: ai-assisted
   manager: jken
-title: Choose the best UI framework for a Windows development project
-summary: Windows developers have various options for creating applications that run on Windows. This module introduces the Windows UI frameworks that are available for Windows development. It also provides guidance on how to choose the best framework for your application.
+title: Choose the best UI framework for a native Windows development project
+summary: Windows developers have various options for creating applications that run on Windows. This module introduces the native Windows UI frameworks that are available for Windows development. It also provides guidance on how to choose the best framework for your application.
 abstract: |
   By the end of this module, you'll be able to:
-    - Choose the Windows UI framework that best addresses your organization's application requirements and target audience.
+    - Choose the native Windows UI framework that best addresses your organization's application requirements and target audience.
 prerequisites: |
   - You should be familiar with .NET and Windows application development concepts and terminology.
   - An understanding of the C# programming language and Extensible Application Markup Language (XAML) is helpful, but isn't necessary.
