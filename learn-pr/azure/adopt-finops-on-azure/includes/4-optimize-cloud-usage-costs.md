@@ -1,6 +1,6 @@
 Rate optimization, licensing + SaaS management, workload optimization, architecting for the cloud, and cloud sustainability are essential capabilities for optimizing cloud usage and cost. By implementing best practices and maturing in these capabilities, organizations can maximize the value of their cloud investments, control expenses, and ensure efficient resource utilization.
 
-[!VIDEO https://learn-video.azurefd.net/vod/player?id=2fa29bca-eafe-4edb-bf1e-5e0879a81631]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2fa29bca-eafe-4edb-bf1e-5e0879a81631]
 
 ## Rate optimization
 
@@ -38,7 +38,7 @@ Designing solutions with cost-awareness to maximize business value and achieving
 
 #### Objective:
 
-Establishing the strategic and tactical direction, metrics, and criteria for incorporating sustainability goals and targets into other FinOps Capabilities and decision making. 
+Establishing the strategic and tactical direction, metrics, and criteria for incorporating sustainability goals and targets into other FinOps Capabilities and decision making.
 
 #### Get started with optimizing carbon emissions:
 

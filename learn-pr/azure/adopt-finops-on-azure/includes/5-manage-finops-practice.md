@@ -1,12 +1,12 @@
 By implementing effective FinOps management strategies, organizations can fully unlock the potential of their cloud investments and attain greater success in the cloud. To achieve this goal, organizations should apply a range of capabilities, including FinOps practice operations, FinOps tooling and services, FinOps assessment, onboarding workloads, FinOps education and enablement, Invoicing and chargeback, Cloud policy and governance, and Intersecting disciplines.
 
-[!VIDEO https://learn-video.azurefd.net/vod/player?id=35066977-501e-4e0a-beb9-cd95d48479e8]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=35066977-501e-4e0a-beb9-cd95d48479e8]
 
 ## FinOps practice operations
 
 #### Objective:
 
-Driving a culture of accountability through effective organizational alignment of the FinOps practice and empowering the FinOps function within teams. 
+Driving a culture of accountability through effective organizational alignment of the FinOps practice and empowering the FinOps function within teams.
 
 ## Onboarding workloads
 
