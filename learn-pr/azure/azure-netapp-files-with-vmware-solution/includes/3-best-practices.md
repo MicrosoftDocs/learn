@@ -1,14 +1,14 @@
-Before you deploy Azure NetApp Files as a datastore or a guest-mounted file system, you should be aware of the prerequisites and best practices to ensure a successful deployment and to meet performance requirements.
+Before you deploy Azure NetApp Files as a datastore or a guest-mounted file system, you should be aware of the prerequisite resources you need to create. You should also be aware of the best practices for ensuring a successful deployment and meeting the performance requirements.
 
 ## Prerequisites
 
 The following resources should be created before deploying an Azure NetApp Files volume for Azure VMware Solution (AVS):
 
-- One or more AVS private clouds
-- Dedicated VNet connected via an ExpressRoute gateway configured with the UltraPerformance or `ErGw3Az` SKU with FastPath enabled
-- Subnet delegated to the `Microsoft.NetApp/volumes` service
-- NetApp account created in the same region as your AVS private clouds
-- Azure NetApp Files capacity pool with the appropriate service level and quality of service (QoS) type
+- One or more AVS private clouds.
+- Dedicated VNet connected via an ExpressRoute gateway configured with the UltraPerformance or `ErGw3Az` SKU with FastPath enabled.
+- Subnet delegated to the `Microsoft.NetApp/volumes` service.
+- NetApp account created in the same region as your AVS private clouds.
+- Azure NetApp Files capacity pool with the appropriate service level and quality of service (QoS) type.
 
 The diagram shows the logical connectivity between the AVS private cloud and the dedicated Azure NetApp Files VNet.
 
@@ -16,7 +16,7 @@ The diagram shows the logical connectivity between the AVS private cloud and the
 
 ## Best practices
 
-When deploying an Azure NetApp Files volume with AVS, adhere to the best practices: 
+When deploying an Azure NetApp Files volume with AVS, adhere to the best practices:
 
 - Use the UltraPerformance or `ErGw3Az` SKU for the ExpressRoute gateway.
 - Enable FastPath on the connection between your AVS private cloud and the dedicated Azure NetApp Files VNet.
