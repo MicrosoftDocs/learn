@@ -1,6 +1,6 @@
 Understanding cloud usage and costs is important for effective cloud management and optimization. Gaining this understanding allows organizations to gain insight into how resources are being utilized, identify trends, and make informed decisions to optimize performance and cost efficiency. Data ingestion, allocation, reporting and analytics, and anomaly management play crucial roles in achieving this objective.
 
-<!-- Video placeholder: Overview MS solutions the capabilities in this domain. -->
+[!VIDEO https://learn-video.azurefd.net/vod/player?id=d1689416-9919-497e-95ed-bb40bbb1b053]
 
 ## Data ingestion
 
