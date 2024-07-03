@@ -41480,6 +41480,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/intro-to-azure-database-for-mariadb/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mariadb/whats-happening-to-mariadb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-database-for-mariadb/2-what-is-azure-database-for-mariadb.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mariadb/whats-happening-to-mariadb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-database-for-mariadb/3-how-azure-database-for-mariadb-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mariadb/whats-happening-to-mariadb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-database-for-mariadb/4-when-to-use-azure-database-for-mariadb.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mariadb/whats-happening-to-mariadb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-database-for-mariadb/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mariadb/whats-happening-to-mariadb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-database-for-mariadb/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mariadb/whats-happening-to-mariadb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-database-for-mariadb/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mariadb/whats-happening-to-mariadb",
+      "redirect_document)id": false
+    },
+    {
       "source_path": "learn-pr/azure/introduction-to-ground-station/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/orbital/",
       "redirect_document_id": false

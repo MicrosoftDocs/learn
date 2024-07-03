@@ -3643,6 +3643,11 @@ achievements:
   title: Tour the N-tier architecture style for your application
   summary: Use a Resource Manager template to deploy an application styled in an N-tier architecture, identify key concepts of N-tier architectures, and review best practices for deployments of this style.
   iconUrl: /training/achievements/n-tier-architecture.svg
+- uid: learn.intro-to-azure-database-for-mariadb.badge
+  type: badge
+  title: Introduction to Azure Database for MariaDB
+  summary: Evaluate whether Azure Database for MariaDB can manage your organization's mission-critical workloads. Describe whether its performance and scalability make it ideal to host your database workloads.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.introduction-to-azure-orbital-ground-station-badge
   type: badge
   title: Introduction to Azure Orbital Ground Station
