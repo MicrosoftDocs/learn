@@ -36,7 +36,6 @@ subjects:
 - migration
 units:
 - learn.cloud-adoption-framework-migrate.introduction
-- learn.cloud-adoption-framework-migrate.customer-narrative
 - learn.cloud-adoption-framework-migrate.prepare
 - learn.cloud-adoption-framework-migrate.assess
 - learn.cloud-adoption-framework-migrate.deploy

@@ -10,5 +10,5 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-deploy.md)]
+  [!include[](includes/4-deploy.md)]
   
