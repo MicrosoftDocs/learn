@@ -41478,6 +41478,106 @@
       "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/9-summary-resources.md",
       "redirect_url": "learn-pr/wwl-azure/configure-user-group-accounts/8-summary-resources",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-ground-station/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-ground-station/2-describe-azure-orbital-market-fit.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-ground-station/3-describe-azure-orbital-ground-station-key-benefits.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-ground-station/4-describe-key-features-azure-orbital-ground-station.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-ground-station/5-exercise-register-spacecraft.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-ground-station/6-exercise-create-contact-profile.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-ground-station/7-exercise-schedule-contact-and-downlink-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-ground-station/8-process-analyze-and-apply-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-ground-station/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-ground-station/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-ground-station/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-space/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-space/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-space/2-describe-key-trends-space-industry.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-space/3-describe-key-players-space-ecosystem.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-space/4-understand-value-proposition.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-space/5-describe-azure-space-portfolio.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-space/6-understand-real-world-implications.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-space/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-space/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/orbital/",
+      "redirect_document_id": false
     }
   ]
 }
