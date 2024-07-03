@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers
+metadata:
+  title: Deploy and manage Active Directory Domain Services domain controllers
+  description: "This module introduces you to the topology of domain controllers within an Active Directory environment. It also starts you down the path of deploying, managing, and migrating a domain controller between servers."
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: module
+  ms.service: active-directory
+  ai-usage: ai-assisted
+title: Deploy and manage Active Directory Domain Services domain controllers
+summary: This module introduces you to the topology of domain controllers within an Active Directory environment. It also starts you down the path of deploying, managing, and migrating a domain controller between servers.
+abstract: |
+  By the end of this module, you'll be able to:
+
+  -   Define Active Directory Domain Services.
+
+  -   Define Active Directory Domain Services forests and domains.
+
+  -   Deploy Active Directory Domain Services domain controllers.
+
+  -   Migrate a domain controller to a new site.
+
+  -   Manage Active Directory Domain Services operations masters.
+prerequisites: |
+  Knowledge of and experience working with:
+
+  -   Windows Server.
+
+  -   Core networking technologies.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- active-directory
+subjects:
+- architecture
+- device-management
+- infrastructure
+units:
+- learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.introduction
+- learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.define-active-directory-domain-services
+- learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.define-forests-domains
+- learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.deploy-active-directory-domain-services-controllers
+- learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.migrate-domain-controller-new-site
+- learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.operations-masters
+- learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.knowledge-check
+- learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.summary
+badge:
+  uid: learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.badge

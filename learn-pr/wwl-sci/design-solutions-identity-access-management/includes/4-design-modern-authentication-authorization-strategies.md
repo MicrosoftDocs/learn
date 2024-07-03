@@ -55,7 +55,6 @@ Continuous access evaluation is implemented by enabling services, like Exchange 
 
 This process enables the scenario where users lose access to organizational SharePoint Online files, email, calendar, or tasks, and Teams from Microsoft 365 client apps within minutes after a critical event. 
 
-
 ### Conditional Access policy evaluation
 
 Exchange Online, SharePoint Online, Teams, and MS Graph can synchronize key Conditional Access policies for evaluation within the service itself.
@@ -82,17 +81,8 @@ This process enables the scenario where users lose access to organizational file
 | **SharePoint Online** | Partially supported | Partially supported | Partially supported | Partially supported | Partially supported |
 | **Exchange Online** | Partially supported | Partially supported | Partially supported | Partially supported | Partially supported |
 
-> \* Token lifetimes for Office web apps are reduced to 1 hour when a Conditional Access policy is set.
-<!--
-END()
--->
-<a name='threat-intelligence-integration---azure-ad-identity-protection'></a>
+## Microsoft Entra Identity Protection
 
-## Threat intelligence integration - Microsoft Entra ID Protection
-
-<!--
-BEGIN([What is Azure Active Directory Identity Protection? - Microsoft Entra | Microsoft Learn](/azure/active-directory/identity-protection/overview-identity-protection))
--->
 Identity Protection allows organizations to accomplish three key tasks:
 
 -   [Automate the detection and remediation of identity-based risks](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
@@ -136,14 +126,11 @@ More information can be found in the article, [How To: Investigate risk](/azure
 Identity Protection categorizes risk into tiers: low, medium, and high.
 
 Microsoft doesn't provide specific details about how risk is calculated. Each level of risk brings higher confidence that the user or sign-in is compromised. For example, something like one instance of unfamiliar sign-in properties for a user might not be as threatening as leaked credentials for another user.
-<!--
-END([What is Azure Active Directory Identity Protection? - Microsoft Entra | Microsoft Learn](/azure/active-directory/identity-protection/overview-identity-protection))
--->
 
 > [!NOTE]
-> Risk based policies can be created in Identity protection as well, but it is recommended to do so with Conditional Access policies.
+> Risk-based policies can be created in Identity protection as well, but it is recommended to do so with Conditional Access policies.
 
-## Risk-based access policies
+## Risk-based conditional access policies
 
 Access control policies can be applied to protect organizations when a sign-in or user is detected to be at risk. Such policies are called **risk-based policies**. 
 
@@ -177,3 +164,28 @@ Identity Protection analyzes signals about user accounts and calculates a risk s
 - Allow access but require a secure password change.
 
 A secure password change remediates the user risk and close the risky user event to prevent unnecessary noise for administrators.
+
+## Protected actions
+
+Protected actions in Microsoft Entra ID are permissions that have been assigned Conditional Access policies. When a user attempts to perform a protected action, they must first satisfy the Conditional Access policies assigned to the required permissions. For example, to allow administrators to update Conditional Access policies, you can require that they first satisfy the Phishing-resistant MFA policy.
+
+### Why use protected actions?
+
+You use protected actions when you want to add an additional layer of protection. Protected actions can be applied to permissions that require strong Conditional Access policy protection, independent of the role being used or how the user was given the permission. Because the policy enforcement occurs at the time the user attempts to perform the protected action and not during user sign-in or rule activation, users are prompted only when needed.
+
+### What policies are typically used with protected actions?
+
+We recommend using multifactor authentication on all accounts, especially accounts with privileged roles. Protected actions can be used to require additional security. Here are some common stronger Conditional Access policies.
+
+- Stronger MFA authentication strengths, such as [Passwordless MFA](/identity/authentication/concept-authentication-strengths.md#built-in-authentication-strengths) or [Phishing-resistant MFA](/identity/authentication/concept-authentication-strengths.md#built-in-authentication-strengths),  
+- Privileged access workstations, by using Conditional Access policy [device filters](/identity/conditional-access/concept-condition-filters-for-devices.md).
+- Shorter session timeouts, by using Conditional Access [sign-in frequency session controls](/identity/conditional-access/concept-session-lifetime.md#user-sign-in-frequency). 
+
+### What permissions can be used with protected actions?
+
+Conditional Access policies can be applied to limited set of permissions. You can use protected actions in the following areas:
+
+- Conditional Access policy management
+- Cross-tenant access settings management
+- Custom rules that define network locations
+- Protected action management

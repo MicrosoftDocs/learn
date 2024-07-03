@@ -3,7 +3,7 @@ uid: learn.choose-deployment-strategy-hololens
 metadata:
   title: Choose a deployment scenario for HoloLens device management
   description: "Learn how to choose a deployment scenario for managing HoloLens devices."
-  ms.date: 7/12/2023
+  ms.date: 06/11/2024
   author: aprilspeight
   ms.author: apspeigh
   ms.topic: module
@@ -12,9 +12,9 @@ title: Choose a deployment scenario for HoloLens device management
 summary: "Explore and evaluate common deployment scenarios for HoloLens 2 device management."
 abstract: |
   By the end of this module, you'll be able to:
-    - Understand the common deployment scenarios for HoloLens 2 devices
-    - Assess your organization's specific needs and requirements for deploying HoloLens devices
-    - Evaluate which deployment scenario is best suited for your organization
+    - Understand the common deployment scenarios for HoloLens 2 devices.
+    - Assess your organization's specific needs and requirements for deploying HoloLens devices.
+    - Evaluate which deployment scenario is best suited for your organization.
 
 prerequisites: "Although this module has no requirements, you're encouraged to have a HoloLens 2 device (or devices) ready for deployment."
 iconUrl: /learn/achievements/choose-deployment-strategy-hololens.svg

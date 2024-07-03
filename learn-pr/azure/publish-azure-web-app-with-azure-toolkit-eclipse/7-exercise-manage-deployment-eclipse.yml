@@ -3,8 +3,8 @@ uid: learn.azure.publish-azure-web-app-with-azure-toolkit-eclipse.exercise-manag
 title: Exercise - Manage app deployments from Eclipse
 metadata:
   title: Exercise - Manage app deployments from Eclipse
-  description: Managing web app deployments from Eclipse using the Azure Toolkit
-  ms.date: 02/01/2020
+  description: Learn how to manage, configure, and redeploy web apps using the Azure Toolkit with an Azure App Service. 
+  ms.date: 06/06/2024
   author: cephalin
   ms.author: cephalin
   ms.topic: unit

@@ -9,6 +9,8 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 20
 content: |
   [!include[](includes/exercise-use-databases-persist-data-from-aspire-app.md)]
