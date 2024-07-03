@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.github-actions-automate-tasks.3-exercise-create-container-action
-title: Exercise - Create a basic container action by using GitHub Actions
+title: Exercise - Create and run a basic GitHub Actions workflow
 metadata:
-  title: Exercise - Create a basic container action by using GitHub Actions
-  description: Use GitHub Learning Lab to create a container action that will print a greeting in the action's log file, and a workflow that triggers on a push to the repository.
-  ms.date: 10/06/2023
+  title: Exercise - Exercise - Create and run a basic GitHub Actions workflow
+  description: Use GitHub Learning Lab to complete a series of small challenges.
+  ms.date: 06/28/2024
   author: juliakm
   ms.author: jukullam
   ms.topic: unit

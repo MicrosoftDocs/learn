@@ -2,11 +2,11 @@ Great samples inspire and motivate us to create wonders in mixed reality. It's a
 
 ## MRTK Examples Hub
 
-We've already explored some powerful features of MRTK. However, it would be time-consuming to examine each of these features individually. MRTK has provided its users with the MRTK Examples Hub. The MRTK Examples Hub is a Unity scene that makes it easy to experience multiple scenes. These scenes contain all the necessary information about a particular feature of MRTK.
+In the previous units, we explored some powerful features of MRTK. However, it would be time-consuming to examine each of these features individually. MRTK provides its users with the MRTK Examples Hub. The MRTK Examples Hub is a Unity scene that makes it easy to experience multiple scenes. These scenes contain all the necessary information about a particular feature of MRTK.
 
 :::image type="content" source="../media/example-hub.png" alt-text="Screenshot showing the start scene of examples hub" lightbox="../media/example-hub.png":::
 
-MRTK Examples Hub uses MRTK's Scene System to load and unload the scenes so that users can easily switch scenes. **MRTKExamplesHub.unity** is the container scene with shared components, including shared components MixedRealityToolkit and MixedRealityPlayspace. **MRTKExamplesHubMainMenu.unity** scene has the cube buttons.
+MRTK Examples Hub uses MRTKs Scene System to load and unload the scenes so that users can easily switch scenes. **MRTKExamplesHub.unity** is the container scene with shared components, including shared components MixedRealityToolkit and MixedRealityPlayspace. **MRTKExamplesHubMainMenu.unity** scene has the cube buttons.
 
 If you have HoloLens 2 device, you can directly download and install the app<sup>15</sup> on your device.
 
@@ -28,7 +28,7 @@ You can download HoloLens Playground<sup>17</sup> in the Microsoft Store.
 
 ## Galaxy Explorer
 
-The Galaxy Explorer has been one of the first mixed reality experiences for many. It was created as an open-source application for HoloLens (first version) through the Share Your Idea initiative. Currently, it's up-to-date for HoloLens 2.
+The Galaxy Explorer is one of the first mixed reality experiences for many. It was created as an open-source application for HoloLens (first version) through the Share Your Idea initiative. Currently, it's up-to-date for HoloLens 2.
 
 :::image type="content" source="../media/galaxy-explorer.png" alt-text="Screenshot showing the galaxy explorer app." lightbox="../media/galaxy-explorer.png":::
 
@@ -46,14 +46,14 @@ The Surfaces app is an open-source sample app from Microsoft's Mixed Reality Des
 
 In this project, you can find the examples of:
 
-* Use MRTK's Input System<sup>21</sup>, specifically hand / joint tracking.
-* Use MRTK's Standard Shader<sup>2</sup> for performant graphics.
+* Use MRTKs Input System<sup>21</sup>, specifically hand / joint tracking.
+* Use MRTKs Standard Shader<sup>2</sup> for performant graphics.
 
 You can use this project's components to create your own mixed reality app experiences. Download the app package<sup>22</sup> from GitHub and try it yourself.
 
 ## Periodic Table
 
-Microsoft's Mixed Reality Design Labs has released an open-source sample app called the Periodic Table of Elements. The app was created in 2015 to demonstrate how to create an end-to-end experience utilizing MRTK's building blocks for the HoloLens 1st generation and immersive headsets. In addition, the software has been upgraded to use MRTK v2 to properly use the new articulated hand tracking and eye-tracking input on HoloLens 2.
+Microsoft's Mixed Reality Design Labs released an open-source sample app called the Periodic Table of Elements. The app was created in 2015 to demonstrate how to create an end-to-end experience utilizing MRTKs building blocks for the HoloLens (1st gen) and immersive headsets. In addition, the software is upgraded to use MRTK v2 to properly use the new articulated hand tracking and eye-tracking input on HoloLens 2.
 
 :::image type="content" source="../media/periodic-table.png" alt-text="Screenshot showing the periodic table app." lightbox="../media/periodic-table.png":::
 
@@ -61,13 +61,13 @@ The Periodic Table of the Elements displays chemical elements and their properti
 
 In this project, you can find the examples of:
 
-* Use MRTK's Input System<sup>21</sup>
-* Lay out an array of objects in 3D space with various surface types using MRTK's Object Collection<sup>23</sup>
-* Create objects that respond to the standard inputs using MRTK's Interactable<sup>24</sup>
-* MRTK Button<sup>25</sup>
-* MRTK Object Manipulator<sup>26</sup>
-* MRTK Hand Menu<sup>27</sup>
-* Loading and parsing local JSON file data using Unity's JsonUtility
+* Using MRTKs Input System<sup>21</sup>.
+* Laying out an array of objects in 3D space with various surface types using MRTKs Object Collection<sup>23</sup>.
+* Creating objects that respond to the standard inputs using MRTKs Interactable<sup>24</sup>.
+* Using the MRTK Button<sup>25</sup>.
+* Using the MRTK Object Manipulator<sup>26</sup>.
+* Using the MRTK Hand Menu<sup>27</sup>.
+* Loading and parsing local JSON file data using Unity's JsonUtility.
 
 You can use this project's components to create your own mixed reality app experiences. Download the app package<sup>28</sup> from GitHub and try it yourself.
 

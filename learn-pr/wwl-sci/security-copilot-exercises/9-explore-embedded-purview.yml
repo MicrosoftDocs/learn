@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 15
+durationInMinutes: 30
 content: |
   [!include[](includes/9-explore-embedded-purview.md)]

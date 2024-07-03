@@ -7,6 +7,8 @@ If you're looking for basic data protection coverage for your storage account an
  -  Configure an Azure Resource Manager lock on the storage account to protect the account from deletion or configuration changes.<br>
  -  Enable container soft delete for the storage account to recover a deleted container and its contents.
  -  Save the state of a blob at regular intervals:
+    
+    
      -  For Blob Storage workloads, enable blob versioning to automatically save the state of your data each time a blob is overwritten.
      -  For Azure Data Lake Storage workloads, take manual snapshots to save the state of your data at a particular point in time.
 
@@ -85,6 +87,6 @@ If you should need to recover data that has been overwritten or deleted, how you
 
 Azure Storage always maintains multiple copies of your data so that it's protected from planned and unplanned events, including transient hardware failures, network or power outages, and massive natural disasters. Redundancy ensures that your storage account meets its availability and durability targets even in the face of failures.
 
-If a failure occurs in a data center, if your storage account is redundant across two geographical regions (geo-redundant), then you have the option to fail over your account from the primary region to the secondary region.<br>
+If a failure occurs in a data center, if your storage account is redundant across two geographical regions (geo-redundant), then you have the option to fail over your account from the primary region to the secondary region.
 
 Customer-managed failover isn't currently supported for storage accounts with a hierarchical namespace enabled.

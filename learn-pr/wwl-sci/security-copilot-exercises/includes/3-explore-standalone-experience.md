@@ -1,33 +1,34 @@
-The security administrator for your organization provisioned Copilot. Since you're the senior analyst on the team, the administrator added you as a Copilot owner and asked you familiarize yourself with the solution.
+The security administrator for your organization provisioned Copilot. Since you're the senior analyst on the team, the administrator added you as a Copilot owner and asked you to familiarize yourself with the solution.
 
 In this exercise, you explore all the key landmarks in the landing page of the standalone experience of Microsoft Copilot for Security.
 
 > [!NOTE]
-> The environment for this exercise is based on a simulation, generated from pre-determined screen captures of the actual product. As a limited simulation, links on a page may not be enabled. This exploration exercise does not accept any user inputs.
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
+>:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
 
 ### Exercise
 
-For this exercise you're logged in as Avery Howard and have the Copilot owner role. For all the tasks in this exercise, you'll work in the Copilot standalone experience.
+For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You'll work in the standalone experience of Microsoft Copilot for Security.
+
+This exercise should take approximately **15** minutes to complete.
 
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
 
 #### Task: Explore the menu options
 
-In this task you start your exploration in the home menu.
+In this task, you start your exploration in the home menu.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security](https://app.highlights.guide/start/2cac767e-42c4-4058-afbb-a9413aac461d?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security](https://app.highlights.guide/start/2cac767e-42c4-4058-afbb-a9413aac461d?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
 1. Select the **Menu** icon ![home menu icon](../media/home-menu-icon.png), which is sometimes referred to as the hamburger icon.
 
 1. Select **My sessions** and note the available options.
-    1. Select search icon, then select the X to close.
     1. Select recent to view the most recent sessions
     1. Select filter and note the available options, then close the filer.
     1. Select the home menu icon to open the home menu.
 
 1. Select **Promptbook library**.
-    1. Select search icon and then select the X to close.
     1. Select My promptbooks. A subsequent task dives deeper into promptbooks.
     1. Select Woodgrove.
     1. Select Microsoft.
@@ -57,15 +58,17 @@ In this task you start your exploration in the home menu.
     1. Select About.
     1. Select the X to close the preferences window.
 
-1. Select the tenant switch, which is the down-arrow next to the tenant name. In this case, the only available tenant is Woodgrove, this is where you can select other tenants if available.
+1. Select where it says **Woodgrove** at the bottom left of the home menu.
+    1. When you select this option, you see your tenants. This is referred to as the tenant switcher. In this case, Woodgrove is the only available tenant.
+    1. Select the **Home** to return to the landing page.
 
 #### Task: Explore access to recent sessions
 
-In the center of the landing page, there are cards representing your more recent sessions.
+In the center of the landing page, there are cards representing your most recent sessions.
 
-1. Selecting the title of any session card takes you to that session.
-1. Select View all sessions to go to the My sessions page.
-1. Return to the landing page.
+1. The largest card is your last session. Selecting the title of any session card takes you to that session.
+1. Select **View all sessions** to go to the My sessions page.
+1. Select **Microsoft Copilot for Security**, next to the home menu icon, to return to the landing page.
 
 #### Task: Explore access to promptbooks
 
@@ -73,21 +76,23 @@ The next section of the Copilot landing page revolves around promptbooks. The la
 
 1. To the right of where it says "Get started with these promptbooks" are a left and right arrow key that allows you to scroll through the tiles for Microsoft security promptbooks. Select the **right arrow >**
 
-1. Each tile shows the title of the promptbook, a brief description, the number of prompts, and a run icon. Selecting the title of any of the promptbook tiles to open that promptbook. Select **Vulnerability impact assessment**, as an example. The window for the selected promptbook provides information, including who created the promptbook, tags, a brief description, inputs required to run the promptbook, and a listing of the prompts. You can duplicate or share this promptbook. You also have the option to start a new session. Select **X** to close the window.
+1. Each tile shows the title of the promptbook, a brief description, the number of prompts, and a run icon. Select the title of any of the promptbook tiles to open that promptbook. Select **Vulnerability impact assessment**, as an example.
+    1. The window for the selected promptbook provides information, including who created the promptbook, tags, a brief description, inputs required to run the promptbook, and a listing of the prompts.
+    2. Note the information about the promptbook and the available options. For this simulation you can't start a new session, you'll do that in a subsequent exercise. 
+    1. Select **X** to close the window.
 
 1. Select **View the promptbook library**.
-    1. Select the search icon and close it.
     1. To view promptbooks that you own, select My promptbooks.
     1. Select Woodgrove for a listing of promptbooks owned by Woodgrove, the name of a fictitious organization.
     1. To view built-in, Microsoft owned/developed promptbooks, select Microsoft.
     1. Select the filter icon. Here you can filter based on tags assigned to the workbook. Close the filter window by selecting the X in the New filter tab.
-    1. Return to the landing page.
+    1. Select **Microsoft Copilot for Security**, next to the home menu icon, to return to the landing page.
 
-#### Task: Explore the prompt bar
+#### Task: Explore the prompts and sources icon in the prompt bar
 
-At the bottom center of the page is the prompt bar. The prompt bar includes the prompts and sources icon, which you explore.
+At the bottom center of the page is the prompt bar. The prompt bar includes the prompts and sources icon, which you explore in this task. In subsequent exercises you'll enter inputs directly in the prompt bar.
 
-1. In the prompt bar, you type in your prompt or you can select the prompts icon to select a built-in prompt or a promptbook. Select the **prompt icon** ![prompt icon](../media/prompt-icon.png). 
+1. From the prompt bar, you can select the prompts icon to select a built-in prompt or a promptbook. Select the **prompts icon** ![prompts icon](../media/prompt-icon.png).
     1. Select **See all promptbooks**
         1. Scroll to view all the available promptbooks.
         1. Select the **back-arrow** next to the search bar to go back.
@@ -96,13 +101,13 @@ At the bottom center of the page is the prompt bar. The prompt bar includes the 
         1. Select the **back-arrow** next to the search bar to go back.
 
 1. Select the **sources icon** ![sources icon](../media/sources-icon.png).
-    1. The sources icon opens the manage sources window. From here, you can access Plugins or Files. Let's start by selecting **Plugins**.
+    1. The sources icon opens the manage sources window. From here, you can access Plugins or Files. The **Plugins** tab is selected by default.
         1. Select whether you want to view all plugins, those that are enabled (on), or those that are disabled (off).
         1. Expand/collapse list of Microsoft, non-Microsoft, and custom plugins.
-        1. Some plugins require configuring parameters. Select the settings icon for the Microsoft Sentinel plugin, to view the settings window. Select **cancel** to close the settings window. In a separate exercise, you configure the plugin.
+        1. Some plugins require configuring parameters. Select the **Set up** button for the Microsoft Sentinel plugin, to view the settings window. Select **cancel** to close the settings window. In a separate exercise, you configure the plugin.
     1. You should still be in the Manage sources window. Select **Files**.
         1. Review the description.
-        1. Files can be deleted by selecting the trash bin icon and the toggle switch enables and disables access to the file.
+        1. Files can be uploaded and used as a knowledge base by Copilot. In a subsequent exercise, you'll work with file uploads.
         1. Select **X** to close the manage sources window.
 
 #### Task:  Explore the help feature

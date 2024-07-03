@@ -1,14 +1,21 @@
 In this unit, you implement the second phase of your quantum random number generator: combining multiple random bits to form a larger random number. This phase builds on the random bit generator that you already created. You'll need to write some classical code for this phase.
 
-## Can I write classical code in Q#?
 
-Yes, you can. Quantum computers perform specialized tasks. You don't use a quantum computer for everything because, for many tasks, classical computers work fine.
+## Combine multiple random bits to form a larger number
 
-Just like a graphics processing unit (GPU) or other specialized hardware, you want to use a quantum computer for the tasks they're best suited for. In this case, you want to produce purely random bits.
+In the previous unit, you created a random bit generator that generates a random bit by putting a qubit into superposition and measuring it.
 
-For this reason, Q# enables you to write classical code that resembles programming languages you already know.
+When you measure the qubit, you'll get a random bit, either 0 or 1, with equal 50% probability. The value of this bit is truly random, there's no way of knowing what you get after the measurement. But how can you use this behavior to generate larger random numbers?
 
-Let's see how you can use Q# features to build a complete random number generator.
+Let's say you repeat the process four times, generating this sequence of binary digits:
+
+$${0, 1, 1, 0}$$
+
+If you concatenate, or combine, these bits into a bit string, you can form a larger number. In this example, the bit sequence ${0110}$ is equivalent to six in decimal.
+
+$${0110_{\ binary} \equiv 6_{\ decimal}}$$
+
+If you repeat this process many times, you can combine multiple bits to form any large number.
 
 ## Define the random number generator logic
 
@@ -150,15 +157,12 @@ namespace QuantumRandomNumberGenerator {
 
 The `let` directive declares variables that don't change during the computation. For learning purposes, here we define the maximum value as 100.
 
-> [!NOTE]
-> This code snippet does not currently run on any available Azure Quantum hardware targets, as the callable `ResultArrayAsInt` requires a QPU with [full computation profile](/azure/quantum/concepts-targets-in-azure-quantum#quantum-processing-units-qpu-different-profiles).
-
 ## Run the program
 
 Let's try out our new random number generator!
 
 1. Before running the program, you need to set the target profile to **Unrestricted**. Select **View** > **Command Palette**, search for QIR, select **Q#: Set the Azure Quantum QIR target profile**, and then select **Q#: unrestricted**.
-1. To test run your program locally on the built-in simulator, click on **Run** from the list of commands below `@EntryPoint()`, or press **Ctrl+F5**. Your output will appear in the debug console.
+1. To run your program, select **Run** from the list of commands below `@EntryPoint()`, or press **Ctrl+F5**. Your output will appear in the debug console.
 1. Run the program again to see a different result.
 
 > [!NOTE]
@@ -168,4 +172,4 @@ Congratulations! Now you know how to combine classical logic with Q# to create a
 
 ## Bonus exercise
 
-Modify the program to also require the generated random number to be greater than some minimum number, `min`, instead of zero.
+Try to modify the program to also require the generated random number to be greater than some minimum number, `min`, instead of zero.

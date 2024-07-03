@@ -2,12 +2,12 @@
 uid: learn.wwl.build-oss-analytical-solutions-az-hdinsight
 metadata:
   title: Building Open Source Software (OSS) Analytics Solutions with Azure HDInsight
-  description: Building Open Source Software (OSS) Analytics Solutions with Azure HDInsight
-  ms.date: 03/19/2024
+  description: How to Build an Open Source Software (OSS) Analytics Solutions with Azure HDInsight.
+  ms.date: 06/28/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: learning-path
-  ms.service: hdinsight
+  ms:service: hdinsight
 title: Building Open Source Software (OSS) Analytics Solutions with Azure HDInsight
 prerequisites: |
   The following pre-requisite should be completed

@@ -2,7 +2,7 @@ A cloud-native application is a web application built from small microservices, 
 
 Imagine that you work for an outdoor clothing and equipment company. Your development team is considering whether to use .NET Aspire to develop a new storefront web app for the main customer-facing site. You want to understand how .NET Aspire will help your team and save effort.
 
-In this module, you'll see an overview of the .NET Aspire stack and its components. You'll also examine and run a complete .NET Aspire app.
+In this module, you'll see an overview of the .NET Aspire stack and its components. You'll also examine and run a complete app built with .NET Aspire.
 
 ## Learning objectives
 
@@ -10,4 +10,4 @@ By the end of this module, you'll be able to:
 
 - Describe how .NET Aspire makes it easier to develop cloud-native distributed applications.
 - Select the right .NET Aspire component to address a functional requirement in a cloud-native application.
-- Use Visual Studio to create and run a new .NET Aspire application.
+- Use Visual Studio to create and run a new application using .NET Aspire.

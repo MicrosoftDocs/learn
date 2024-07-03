@@ -1,4 +1,4 @@
-Data Activator in Microsoft Fabric takes action based on what's happening in your data. Consider the following three scenarios:  
+Data Activator in Microsoft Fabric takes action based on what's happening in your data. Consider the following five scenarios:  
 
 - You need a notification in your Real-Time Dashboard when certain conditions are met, such as if you have a safety stock level drop below a predefined threshold. In this case you can send alert notifications to email and start a reorder event.
 - A sales associate needs to receive alerts when a potential client is visiting their website and offers to start a live chat with them.  

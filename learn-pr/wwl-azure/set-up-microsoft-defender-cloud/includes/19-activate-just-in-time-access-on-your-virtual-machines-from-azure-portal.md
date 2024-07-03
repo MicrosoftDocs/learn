@@ -9,4 +9,4 @@ Launch the exercise and follow the instructions.
 > To continue your learning journey, open the exercise in a new browser tab or window while staying on this page. To do this, right-click the Launch Exercise button and select Open link in new tab or Open link in new window.
 
 [:::image type="content" source="../media/launch-exercise-162c1d6a.png" alt-text="Screenshot showing an icon for the Launch Exercise button.":::
-](https://microsoftlearning.github.io/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/Instructions/Labs/LAB_03b_Configure%20just-in-time%20%28JIT%29%20VM%20access%20in%20Defender%20for%20Cloud.html)
+](https://microsoftlearning.github.io/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/)
