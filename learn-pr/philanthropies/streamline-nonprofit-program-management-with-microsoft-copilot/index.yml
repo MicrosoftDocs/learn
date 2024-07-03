@@ -16,7 +16,8 @@ abstract: |
     - Recognize opportunities to leverage AI and Copilot in your program management activities.
     - Use copilot to help generate and edit program plans, timelines, and reports.
 prerequisites: |
-  - Complete the [Introduction to AI skills for nonprofits learning path](/learn/paths/introduction-to-ai-skills-for-nonprofits/)
+  - Basic understanding of program management
+  - Basic understanding of Microsoft Copilot
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - beginner

@@ -1,0 +1,13 @@
+Employers are looking for very specific markers of readiness and skill attainment when hiring. More and more, they are seeking out candidates with industry recognized technical credentials, like certifications from Microsoft. As a faculty member teaching this course and setting students up for success, you play a pivotal role in ensuring your students get skilled and have a better chance at landing the job of their dreams.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=de73ab12-e4d3-402d-a5e0-4aa5fa8c2978]
+
+Additional certification exam support for students and educators is available through [Microsoft Virtual Training Days](https://events.microsoft.com/allevents) and [free practice assessments](https://aka.ms/practiceassessments).
+
+Within the Microsoft Credential portfolio, Microsoft offers two main certification categories: Fundamentals and Advanced Role-Based (ARB). Fundamental certifications focus on skills within Microsoft's specific technology products, such as Azure, Azure AI, Azure Data Identity, Security and Compliance, and business applications. For students thinking about a career in technology, Microsoft's ARB exams assess associate level knowledge of Microsoft Cloud and business application services. ARB certifications focus on the skills needed for specific job roles that leverage Microsoft technology products.
+
+For students, Microsoft offers academic pricing on Microsoft certification exams in most countries. To qualify, students must identify that they are a student during registration and verify their academic status. Once verified, students will receive a [student discount](https://aka.ms/mslestudentsdiscount) when registering for an exam. 
+
+As an institution, you can offer Microsoft certification exams by purchasing exam vouchers through [Microsoft Volume Licensing Program](https://aka.ms/mslevolumelicensing), a customizable Microsoft software purchase program that grants discounted access to Microsoft Certification Solutions. Exam vouchers purchased through Microsoft Volume Licensing program can be used for Microsoft Certification exams, including Microsoft Fundamentals and Microsoft Advanced Role Based certification exams.
+
+In addition, Microsoft Office Specialist (MOS), Microsoft Fundamentals, and Microsoft Certified Educator exams are available for purchase directly through [Certiport](https://certiport.pearsonvue.com/Certifications/Microsoft) and its partner network.

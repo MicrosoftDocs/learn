@@ -5411,6 +5411,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-sci/design-solutions-network-security/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/design-solutions-network-security/8-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/design-solutions-network-security/7-summary.yml",
+      "redirect_url": "/training/modules/design-solutions-network-security/9-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/classify-images-with-vision-services/index.md",
       "redirect_url": "/training/paths/process-classify-images-with-azure-cognitive-vision-services",
       "redirect_document_id": false
@@ -22158,16 +22168,6 @@
     {
       "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/9-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/configure-role-based-access-control/10-summary-resources",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/7-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/configure-user-group-accounts/8-knowledge-check",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/8-summary-resources.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/configure-user-group-accounts/9-summary-resources",
       "redirect_document_id": false
     },
     {
@@ -41462,6 +41462,21 @@
     {
       "source_path": "learn-pr/azure/intro-to-stereokit/8-summary.yml",
       "redirect_url": "/training/paths/beginner-hololens-2-tutorials/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/7-simulation-user-groups.md",
+      "redirect_url": "learn-pr/wwl-azure/configure-user-group-accounts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/8-knowledge-check.md",
+      "redirect_url": "learn-pr/wwl-azure/configure-user-group-accounts/7-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/9-summary-resources.md",
+      "redirect_url": "learn-pr/wwl-azure/configure-user-group-accounts/8-summary-resources",
       "redirect_document_id": false
     }
   ]
