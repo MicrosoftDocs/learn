@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.azure.migrate-oracle-workloads-to-azure
+metadata:
+  title: Migrate Oracle workloads to Azure
+  description: "Learn how you can migrate your Oracle workloads to Azure."
+  brand: azure
+  ms.date: 07/01/2024
+  author: jjaygbay1
+  ms.author: jacobjaygbay
+  ms.topic: learning-path
+title: Migrate Oracle workloads to Azure
+summary: |
+  "In this learning path, you'll learn how to migrate existing Oracle applications and databases to Azure by using Azure IaaS virtual machines, Oracle Database@Azure, and Azure PaaS database services."
+prerequisites: |
+  - Basic understanding of the Azure platform
+  - Familiarity with hosting and operations of applications and Oracle databases
+  - Familiarity with hosting and operations of Oracle Exadata databases and applications
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- database-administrator
+- business-user
+- technology-manager
+- developer
+products:
+- azure
+- azure-cost-management
+subjects:
+- databases
+modules:
+- learn.azure.migrate-oracle-workload-azure-iaas
+- learn.azure.migrate-oracle-workload-azure-odaa
+- learn.azure.migrate-oracle-application-azure-paas
+trophy:
+  uid: learn.azure.migrate-oracle-workloads-to-azure.trophy
