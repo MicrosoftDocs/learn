@@ -42,6 +42,7 @@ $param = @{ Name = 'StorageRoute' AddressPrefix = 'Storage' NextHopType = 'Virtu
 
 
 
+
 ```
 
 The same command for CLI is as follows:
@@ -50,6 +51,7 @@ The same command for CLI is as follows:
 
 ```azurecli
 az network route-table route create \ --resource-group MyResourceGroup \ --route-table-name MyRouteTable \ --name StorageRoute \ --address-prefix Storage \ --next-hop-type VirtualAppliance \ --next-hop-ip-address 10.0.100.4
+
 
 
 
