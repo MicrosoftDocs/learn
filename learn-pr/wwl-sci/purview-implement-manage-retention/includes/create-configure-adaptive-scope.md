@@ -46,7 +46,7 @@ Before configuring an adaptive scope, determine the necessary scope type and att
         :::image type="content" source="../media/purview-portal-settings-card.png" alt-text="Screenshot showing the Settings card in the Microsoft Purview portal.":::
 
    - **Microsoft Purview compliance portal**: [Sign in to the Microsoft Purview compliance portal](https://compliance.microsoft.com/?azure-portal=true) > **Solutions** > **Roles & scopes** > **Adaptive scopes**.
-1. Select **+ Create scope**."
+1. Select **+ Create scope**.
 1. If your organization uses administrative units and you want to restrict the policy to specific users, select the appropriate units. If not, select **Full directory** to include all locations.
 1. Select the scope type and the attributes or properties to define dynamic membership. Input the desired attribute or property values.
 
