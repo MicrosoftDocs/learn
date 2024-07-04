@@ -32,11 +32,11 @@ Disposition reviews help determine if content should be retained or deleted at t
 
 - **Overview and management**: Administrators have access to an overview of all pending and completed dispositions on the Disposition page. Individual reviewers only see dispositions assigned to them.
 
-   :::image type="content" source="../media/dispositions-overview.png" alt-text="Overview of pending dispositions.":::
+   :::image type="content" source="../media/dispositions-overview.png" alt-text="Overview of pending dispositions." lightbox="../media/dispositions-overview.png":::
 
 - **Actions during review**: During the review, actions such as approving disposal, relabeling items, extending retention, or adding reviewers can be taken based on the organizational needs and outcomes of the review. Each action is auditable to ensure transparency. More reviewers must be granted appropriate permissions to participate. The mini-review pane provides detailed information about the item, including its history and properties, to aid in informed decision-making.
 
-   :::image type="content" source="../media/retention-disposition-options.png" alt-text="Options available during disposition review.":::
+   :::image type="content" source="../media/retention-disposition-options.png" alt-text="Options available during disposition review." lightbox="../media/retention-disposition-options.png":::
 
 ### Exporting data
 
