@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.close-out-microsoft-learn-educators-course.certify-your-students-connect-them-jobs
+title: Certify your students and connect them to jobs
+metadata:
+  title: Certify your students and connect them to jobs
+  description: "Certify your students and connect them to jobs"
+  ms.date: 07/02/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-certify-your-students-connect-them-jobs.md)]
