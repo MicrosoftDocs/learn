@@ -68,7 +68,7 @@ quiz:
       explanation: Incorrect.
     - content: Decommissioning on-premises resources and performing a retrospective.
       isCorrect: true
-      explanation: Correct! During the Release phase, you complete you migration and perform clean-up activities, like decommissioning on-premises resources. And you do a retrospective to prepare for future migrations.
+      explanation: Correct! During the Release phase, you complete your migration and perform clean-up activities, like decommissioning on-premises resources. And you do a retrospective to prepare for future migrations.
     - content: Remediating assets, replicating assets, and performing a test migration in an isolated environment.
       isCorrect: false
       explanation: Incorrect.

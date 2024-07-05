@@ -6,7 +6,7 @@ You deployed your resources to Azure. Now you need to complete the migration ste
 
 ## Communicate changes
 
-[Inform your organization](/azure/cloud-adoption-framework/migrate/release/change-communication) about upcoming changes to ensure that everyone that the migration might effect knows the process. Communicate changes for each workload because each one has [dedicated users and operators](/azure/cloud-adoption-framework/migrate/release/change-communication#audience-for-change-communication).
+[Inform your organization](/azure/cloud-adoption-framework/migrate/release/change-communication) about upcoming changes to ensure that everyone that the migration might affect knows the process. Communicate changes for each workload because each one has [dedicated users and operators](/azure/cloud-adoption-framework/migrate/release/change-communication#audience-for-change-communication).
 
 You should answer the following questions in your [change communication](/azure/cloud-adoption-framework/migrate/release/change-communication#change-communication-content):
 

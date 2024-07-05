@@ -2,7 +2,7 @@ The Cloud Adoption Framework Migrate methodology provides proven guidance to hel
 
 The migration process includes four stages: prepare, assess, deploy, and release. This approach is vendor-neutral, so you can migrate workloads to any cloud service.
 
-:::image type="content" source="../media/migrate-overview.svg" alt-text="Diagram that shows the four steps of the migration methodology." lightbox="../media/migrate-overview.svg" border="false":::
+:::image type="content" source="../media/migrate-overview.svg" alt-text="Diagram that shows the four steps of the migration methodology." border="false":::
 
 In this module, you learn about tools and processes that you can use in your migration. You can apply that guidance to each resource and asset in your environment.
 
