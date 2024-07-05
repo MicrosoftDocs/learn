@@ -14,7 +14,6 @@ In this exercise, you'll use Helm to install the pet store application on your K
 
     ```bash
     cd charts
-    cd aks-store-demo
     ```
 
 3. Deploy the pet store front Helm chart using the `helm install` command.
