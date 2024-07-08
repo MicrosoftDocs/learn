@@ -1,11 +1,11 @@
 ﻿> [!CAUTION]
-> This article references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
+> This article references CentOS, a Linux distribution that is End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
 
 After completing this unit, you should be able to use Slurm on Azure CycleCloud.
 
 ## Enabling Slurm on CycleCloud
 
-You can deploy a HPC cluster using Azure CycleCloud by performing the following steps:
+You can deploy a High Performance Computing (HPC) cluster using Azure CycleCloud by performing the following steps:
 
 1. Connect to a deployed Azure CycleCloud Instance and authenticate. 
 1. On the Create a New Cluster page, review the available options, and in the Schedulers section, select Slurm.

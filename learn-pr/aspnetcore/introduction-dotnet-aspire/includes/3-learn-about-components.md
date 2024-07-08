@@ -37,7 +37,7 @@ build.AddRedisClient("cache");
 Other usage code varies depending on the component you're using.
 
 > [!NOTE]
-> Each .NET Aspire component type usually has a equivalent hosting package. Hosting packages configure the resources and dependencies that the app requires and you install them in the **AppHost** project, not the consuming project.
+> Each .NET Aspire component type usually has an equivalent hosting package. Hosting packages configure the resources and dependencies that the app requires and you install them in the **AppHost** project, not the consuming project.
 
 ## Database components
 
