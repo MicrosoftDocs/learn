@@ -41613,6 +41613,41 @@
       "source_path": "learn-pr/azure/introduction-to-azure-space/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/orbital/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/3-migration-process.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-migrate/2-prepare",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/4-migration-tools.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-migrate/3-assess",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/5-common-tech-platforms.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-migrate/4-deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/6-vm-migration.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-migrate/5-release",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/2-customer-narrative.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-migrate/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-migrate/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/8-summary.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-migrate/7-summary",
+      "redirect_document_id": false
     }
   ]
 }
