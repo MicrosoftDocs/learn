@@ -57,4 +57,4 @@ Azure NetApp Files improves utilization of AVS resources, lowers total cost of o
 
 As business needs change, Azure NetApp Files storage can be scaled independently of AVS compute, optimizing TCO. Azure NetApp Files offloads I/O and memory from AVS hosts that can improve AVS performance and free up resources for other VMs.
 
-Azure NetApp Files delivers enterprise grade performance, availability, and data management. Efficient snapshots and clones can rapidly create copies and protect data. Cross-zonal and cross-region replication, enables integrated backup and disaster recovery for AVS VMs.
+Azure NetApp Files delivers enterprise grade performance, availability, and data management. Efficient snapshots and clones can rapidly create copies and protect data. Cross-zonal and cross-region replication enables integrated backup and disaster recovery for AVS VMs.

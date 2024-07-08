@@ -1,4 +1,4 @@
-Before you deploy Azure NetApp Files as a datastore or a guest-mounted file system, you should be aware of the prerequisite resources you need to create. You should also be aware of the best practices for ensuring a successful deployment and meeting the performance requirements.
+Before you deploy Azure NetApp Files as a datastore or a guest-mounted file system, you should be aware of the requirements and best practices for a successful deployment.
 
 ## Prerequisites
 
