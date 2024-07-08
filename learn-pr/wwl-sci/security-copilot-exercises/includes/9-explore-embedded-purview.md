@@ -3,7 +3,8 @@ Microsoft Copilot for Security is accessible within Microsoft Purview data secur
 In this exercise, you explore the Copilot summarization capabilities available in each of these solutions. You start by verifying that the Microsoft Purview plugin is enabled.
 
 > [!NOTE]
-> The environment for this exercise is based on a simulation, generated from pre-determined screen captures of the actual product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script are not be supported.
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
+>:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
 
 ### Exercise
 
@@ -23,16 +24,15 @@ In this task, you enable the Microsoft Purview plugin. For this task, you work i
 
 1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security]( https://app.highlights.guide/start/cccb66cb-3ca0-4d88-92dd-b6bee0f2c563?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
-1. From the Microsoft Copilot for Security landing page, select the sources icon in the prompt bar.
-    1. Expand the Microsoft plugins
+1. From the Microsoft Copilot for Security landing page, select the **Sources icon** ![sources icon](../media/sources-icon.png) in the prompt bar.
+    1. From the manage sources window, under the Microsoft plugins, select **Show 11 more**.
     1. Scroll down so that the Microsoft Purview plugin is visible.
-    1. Select the information icon. Note the instructions then close the plugins page.
+    1. Select the **Information icon** ![screenshot of information icon](../media/information-icon.png). Note the instructions then close the plugins page by selecting the **X** on the top-right corner of the manage sources window.
 
-1. Select the home menu (hamburger icon)
-    1. Select owner settings.
-    1. Enable the toggle for “Allow Copilot for Security to access data from your Microsoft 365 services.”
-    1. To exit out of the manage sources window, select the **X**.
-    1. Return to the Copilot home page, by selecting the home menu (hamburger) icon and selecting **Home**.
+1. Select the **Home menu** ![screenshot of the home menu icon](../media/home-menu-icon.png), often referred to as the hamburger icon.
+    1. Select **Owner settings**.
+    1. Enable the toggle switch next to **Allow Copilot for Security to access data from your Microsoft 365 services**.
+    1. Return to the Copilot home page, by selecting **Microsoft Copilot for Security** on the top-left of the page next to the home menu (hamburger) icon.
 
 1. Now that you’ve enabled Copilot to access data from your Microsoft 365 services, return to the plugins page and enable the Microsoft Purview plugin.
     1. From the promptbar, select the **Sources icon**.
@@ -79,7 +79,7 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
 
 1. Investigating DLP alerts can be overwhelming due to the large number of sources to analyze, including apps, cloud services, email, endpoints and chat, and the varying rules and conditions of a policy.
 
-1. Select the alert labeled, **DLP policy match for document cardholder transaction Log.xlsx in OneDrive**.
+1. Select the first alert from the list, labeled, **DLP policy match for document cardholder transaction Log.xlsx in OneDrive**.
     1. A side panel opens listing some details of this alert, including the alert status, severity, the DLP policy match, location, and user involved. From the bottom of the page, select **View details**. This opens a new browser tab.
     1. Select the **Events** tab. For the selected event, you can view event details, impacted entities and more.
     1. Select the **Classifiers** tab. Under classifiers, you can view the specific sensitive information types or trainable classifiers that were matched.
@@ -87,7 +87,7 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
     1. Close this browser tab, but be sure to keep the 'Alerts|Microsoft Purview' tab open.
 
 1. Now view the information that Copilot can generate with the click of a button.
-    1. From the Alerts|Microsoft Purview tab, which is showing the side panel with information about the alert, select **Get a summary from Security Copilot**.
+    1. From the Alerts|Microsoft Purview tab, which is showing the side panel with information about the alert, select **Summarize with Copilot**.
     1. This comprehensive summary provides key details, including policy rules, source, files involved and more. Additionally, the summary pulls the user risk levels from Insider Risk Management, providing integrated insights across data security solutions. These summaries provide you with a better starting point for further investigation.
 
 1. From the left navigation panel, select **Home** to return the Microsoft Purview portal. You'll return to this page in the next task.
@@ -114,13 +114,11 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
 
 #### Task: Gain contextual summary of evidence collected in eDiscovery review sets (Preview)
 
-In this task, you explore the capability of Copilot to Microsoft Purview to gain a contextual summary of evidence collected in an eDiscovery review set.
+In this task, you explore the capability of Copilot to Microsoft Purview to gain a contextual summary of evidence collected in an eDiscovery review set. 
+
+Legal investigations can take hours, days, even weeks to sift through the list of evidence collected in review sets, requiring costly resources like outside council to manually go through each document to determine the relevancy to the case. Copilot can significantly reduce that burden by generating summaries of conversations in a variety of languages and the documents that may be included as attachments.
 
 Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview eDiscovery solution, users should have previously been assigned an appropriate role.
-
-Let’s start by showing you how to review evidence collected in eDiscovery review sets, without Copilot for Security.
-
-Legal investigations can take hours, days, even weeks to sift through the list of evidence collected in review sets, requiring costly resources like outside council to manually go through each document to determine the relevancy to the case.
 
 1. From the New Microsoft Purview portal, select **View all solutions**, then select **eDiscovery**, listed under Risk & Compliance.
 
@@ -132,13 +130,13 @@ Legal investigations can take hours, days, even weeks to sift through the list o
         1. Filter - **File class**.
         1. Select an operator - **Equals any of**.
         1. Select Any -  **Conversation**.
-    1. From the results, select item **#4**.
+    1. From the results, select the first item on the list **#1**.
         1. Information about the conversation appears in the window to the right. **Scroll** to view the source history. There's quite a bit of text included in this teams conversation. It can be time-consuming to sift through the information.
         1. With Copilot for Security, you can gain a comprehensive summary of the conversation in the review set – in the single click of a button! Select **Summarize**. Copilot also provides prompt suggestions and the prompt bar for you to enter your own prompts in furtherance of the investigation. This helps you save time and conduct investigations more efficiently!
 
-1. Refer back to the list of Teams conversations. This time, select item **#13** .
+1. Refer back to the list of Teams conversations. This time, select the second item on the list select item **#2** .
     1. The subject is displayed in a non-English language. This is common challenge with multi-national corporation whose employees speak various languages. The window with the source conversations shows a conversation history with non-English language. Select **Summarize** to view a summary in English, which is my default language for Copilot.
-    1. Expand item 13 by selecting the **>**. Within Microsoft Teams, you can send cloud attachments, which are links to documents. The first item under the expanded view is an attached document. Select **Summarize** to. So you can see the attachment shared within the Teams chat is rather lengthy.
+    1. Within Microsoft Teams, you can send cloud attachments, which are links to documents. Expand item #2 by selecting the **>**. The first subitem is a Word document. Select the document then select **Summarize** to have Copilot generate a summary
 
 1. From the left navigation panel, select **Home** to return the Microsoft Purview portal. You'll return to this page in the next task.
 
@@ -165,8 +163,8 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
     1. From the box labeled natural language prompt, select **View prompts**. This is a great starting point. You could look at suggested prompts to determine how to craft a natural language query for suggested prompts. For example, Find all emails containing the words budget and finance and have attachments.
     1. For this example, however, you know what you are looking for. You’ve been told that you need to find all conversations related to a recent acquisition. Use copy/paste to enter **Find all conversations that contain the keywords; acquisition, stock, Bitdefender, Frostvision, offshore**.
     1. When you enter your natural language prompt, you can have Copilot refine the query to ensure a more accurate query output. Select **Refine** then **Accept**.
-    1. Select **Generate KeyQL**. Copilot for Security refines the prompt and then in a simple click, can generate the query within seconds!
-    1. The resulting query is displayed in the Keyword Query Language  (KeyQL) result text box. Select **CopyKeyQL**, then paste it the KeyQL text box. From here, you can run the query. In this simulation, you won't run the query.
+    1. Select **Generate KeyQL**. Copilot for Security refines the prompt and then in a simple click, can generate the query within seconds!  
+    1. The purpose of this exercise is to show how easily Copilot can generate the code for a query using natural language. In your production environment, to run the generated query copy the KeyQL code into the run box and select run.
 
 #### Review
 

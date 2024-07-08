@@ -25,10 +25,8 @@ products:
 - microsoft-purview
 subjects:
 - compliance
-- security
 modules:
-- learn-m365.m365-compliance-information-govern-information
-- learn-m365.m365-compliance-information-manage-records
+- learn.wwl.purview-implement-manage-retention
 - learn.wwl.manage-microsoft-purview-ediscovery-premium
 - learn-m365.m365-compliance-insider-prepare-communication-compliance
 trophy:
