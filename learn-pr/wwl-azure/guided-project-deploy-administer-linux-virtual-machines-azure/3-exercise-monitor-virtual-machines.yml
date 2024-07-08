@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-durationInMinutes: 40
+durationInMinutes: 45
 content: |
   [!include[](includes/3-exercise-monitor-virtual-machines.md)]
