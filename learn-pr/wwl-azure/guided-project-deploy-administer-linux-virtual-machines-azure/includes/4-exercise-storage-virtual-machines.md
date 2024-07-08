@@ -1,5 +1,6 @@
 
-You want to explore how virtual machines can use Azure storage. You want to explore using Azure file shares and Blobs. You want to add and mount a data disk on the virtual machine. Lastly, you want to explore how to transfer data from Azure to the virtual machine with azcopy.
+
+You need to provide access to data storage for a virtual machine. Specifically, you need to access Azure file shares and Blobs. Also you need to add data disks and transfer files. 
 
 ## Architecture diagram
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/28/2024
+  ms.date: 07/08/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -14,7 +14,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Suppose you want to run a network appliance on a virtual machine. Which vm size family would you choose?"
+  - content: "Suppose you want to run a network appliance on a virtual machine. Which virtual machine size family would you choose?"
     choices:
     - content: "Compute optimized."
       isCorrect: true
@@ -39,10 +39,10 @@ quiz:
   - content: "Which role provides read, write, and delete on Azure storage containers and blobs."
     choices:
     - content: "Storage Blob Data Reader."
-      isCorrect: true
+      isCorrect: false
       explanation: "Incorrect. The Storage Blob Data Reader role only provides read and list permissions."
     - content: "Storage Blob Data Contributor."
-      isCorrect: false
+      isCorrect: true
       explanation: "Correct. The Storage Blob Data Contributor role provides read, write, and delete permissions."
     - content: "Storage Blob Delegator."
       isCorrect: false

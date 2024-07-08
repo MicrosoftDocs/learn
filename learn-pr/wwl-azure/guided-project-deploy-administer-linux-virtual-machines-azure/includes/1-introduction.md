@@ -1,5 +1,3 @@
-[!INCLUDE [](../../../includes/wwl/ai-contribution-notes.md)]
-
 This Guided Project focuses on deploying and administering Azure virtual machines. 
 
 Azure virtual machines (vms) are one of several types of on-demand, scalable computing resources that Azure offers. Typically, you choose a virtual machine when you need more control over the computing environment than the other choices offer. 
@@ -12,21 +10,21 @@ The Web tier includes web servers running on Linux virtual machines. The App tie
 
 :::image type="content" source="../media/overarch.png" alt-text="Diagram of the overarching architecture." border="false":::
 
-The project proceeds in phases. In the first phase, you as the Cloud Administrator you learn how to deploy and administer the virtual machines in the web tier. You need to prototype a solution that includes configure, monitor, storage, and back up. 
+The project has several phases. In the first phase, you as the Cloud Administrator must learn how to deploy and administer the virtual machines in the Web tier. You need to prototype a solution that includes configure, monitor, storage, and back up. 
 
-- Exercise 1 - Configure a virtual machine
-- Exercise 2 - Monitor a virtual machine
-- Exercise 3 - Storage for virtual machines
-- Exercise 4 - Back up a virtual machine
+- Exercise 1 - Configure an Azure Linux virtual machine.
+- Exercise 2 - Monitor a virtual machine.
+- Exercise 3 - Provide storage for virtual machines.
+- Exercise 4 - Backup a virtual machine.
 
-By the end of this module, you gained hands-on experience with virtual machines. You're able to apply this knowledge to the on-premises migration. 
+By the end of this module, you will have practical experience with Linux virtual machines. You can then apply this knowledge to the on-premises migration. 
 
 > [!NOTE]
-> This is a guided project module where you complete an end-to-end project by following step-by-step instructions. 
+> This is a guided project module where you complete a project by following step-by-step instructions. 
 
 ## Skilling areas
 
-You used the Azure documentation to [review virtual machine options](/azure/virtual-machines/). In each area, you identified skills that you need to practice.
+You reviewed the [Azure virtual machine documentation.](/azure/virtual-machines/). In each area, you identified skills that you need to complete.
 
 | Skilling area | Skilling task |
 | --- | --- | 
