@@ -44,7 +44,7 @@ You can select backup storage redundancy and retention periods during server cre
 
 - Zone-redundant. Multiple backup copies are stored in both the server’s AZ and another AZ in the same region. Available for zone-redundant HA servers. 
 
-- Geo-redundant. Multiple backup copies are stored in both the server’s region and its geo-paired region. Available for all servers in paired regions. For the full list of supported regions, see the **Azure regions** section in the article [What is Azure Database for MySQL - Flexible Server?](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/overview" /l "azure-regions). 
+- Geo-redundant. Multiple backup copies are stored in both the server’s region and its geo-paired region. Available for all servers in paired regions. For the full list of supported regions, see the **Azure regions** section in the article [What is Azure Database for MySQL - Flexible Server?](https://learn.microsoft.com/azure/mysql/flexible-server/overview" /l "azure-regions). 
 
 Note that you can only enable or disable geo-redundancy at creation time for zone-redundant HA servers. For servers without HA, you can move from locally redundant to geo-redundant backup storage after creation by changing the backup storage setting under **Compute + Storage**. To move an HA server’s backups from locally redundant or zone-redundant to geo-redundant, either restore a backup to a new server with geo-redundancy or create a new server with geo-redundant backups and perform a data migration. 
 

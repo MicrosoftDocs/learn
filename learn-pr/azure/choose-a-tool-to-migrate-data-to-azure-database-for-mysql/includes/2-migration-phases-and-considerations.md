@@ -75,7 +75,7 @@ It's also vital to consider security requirements during the migration. You'll n
 
 Whether the source database is on-premises or located on another cloud provider, network settings typically don't allow external connections. You'll need to configure the network to allow connections with Azure.
 
-If the source database is on-premises and the data volume is large, moving terabytes of data over a regular Internet connection might be impractically slow. In this scenario, consider setting up an [Azure ExpressRoute](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction) connection between your network and Azure.
+If the source database is on-premises and the data volume is large, moving terabytes of data over a regular Internet connection might be impractically slow. In this scenario, consider setting up an [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) connection between your network and Azure.
 
 Even if you use an ExpressRoute, the connection it is on will probably also serve other traffic, and the two can interfere with each other. Depending on contention, the performance hit to existing applications and the migration process could be significant.
 

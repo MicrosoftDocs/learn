@@ -38,7 +38,7 @@ Zone redundant HA provides redundancy across multiple availability zones, offeri
 
 > [!Important] 
 >
-> Zone-redundant HA is available in a [subset of Azure regions](https://github.com/solliancenet/microsoft-learning-path-work-with-azure-database-for-mysql/blob/main/azure/mysql/flexible-server/overview" /l "azure-regions) that offer support for multiple [availability zones](https://learn.microsoft.com/en-us/azure/availability-zones/az-overview) and [zone-redundant Premium file shares](https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy" /l "zone-redundant-storage).
+> Zone-redundant HA is available in a [subset of Azure regions](https://github.com/solliancenet/microsoft-learning-path-work-with-azure-database-for-mysql/blob/main/azure/mysql/flexible-server/overview" /l "azure-regions) that offer support for multiple [availability zones](/azure/availability-zones/az-overview) and [zone-redundant Premium file shares](/azure/storage/common/storage-redundancy" /l "zone-redundant-storage).
 
 ### Same-zone HA
 

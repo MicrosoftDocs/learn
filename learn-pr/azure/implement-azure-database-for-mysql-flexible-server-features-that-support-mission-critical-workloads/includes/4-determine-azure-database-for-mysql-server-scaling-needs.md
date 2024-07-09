@@ -2,7 +2,7 @@ When it comes to sizing compute resources, consider whether existing and forecas
 
 ## Monitor database performance metrics
 
-The Azure portal presents access to a [number of metrics](https://review.learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-monitoring) that you can use to monitor database performance. For example, you can visualize the CPU percentage used by a flexible server.
+The Azure portal presents access to a [number of metrics](https://review.learn.microsoft.com/azure/mysql/flexible-server/concepts-monitoring) that you can use to monitor database performance. For example, you can visualize the CPU percentage used by a flexible server.
 
 ![Screenshot of metrics showing CPU utilization](../media/metrics.png)
 

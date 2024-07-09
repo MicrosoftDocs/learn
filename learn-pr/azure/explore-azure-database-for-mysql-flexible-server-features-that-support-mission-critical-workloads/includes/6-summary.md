@@ -16,16 +16,16 @@ After reviewing the Wingtip Toys business requirements and Azure Database for My
 
 ## References
 
-- [Azure Database for MySQL - Flexible Server service tiers](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-service-tiers-storage) 
-- [Backup and restore in Azure Database for MySQL - Flexible Server](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-backup-restore) 
+- [Azure Database for MySQL - Flexible Server service tiers](/azure/mysql/flexible-server/concepts-service-tiers-storage) 
+- [Backup and restore in Azure Database for MySQL - Flexible Server](/azure/mysql/flexible-server/concepts-backup-restore) 
 - [Data encryption with customer managed keys for Azure Database for MySQL - Flexible Server](https://review.learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-customer-managed-key) 
 
-- [High availability concepts in Azure Database for MySQL - Flexible Server](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability) 
-- [Microsoft Entra authentication for Azure Database for MySQL - Flexible Server](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-azure-ad-authentication) 
-- [Overview of business continuity with Azure Database for MySQL - Flexible Server](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-business-continuity)
+- [High availability concepts in Azure Database for MySQL - Flexible Server](/azure/mysql/flexible-server/concepts-high-availability) 
+- [Microsoft Entra authentication for Azure Database for MySQL - Flexible Server](/azure/mysql/flexible-server/concepts-azure-ad-authentication) 
+- [Overview of business continuity with Azure Database for MySQL - Flexible Server](/azure/mysql/flexible-server/concepts-business-continuity)
 
-- [Read replicas in Azure Database for MySQL - Flexible Server](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-read-replicas) 
-- [Respond to Defender open-source database alerts](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-databases-usage) 
-- [Scheduled maintenance in Azure Database for MySQL - Flexible Server](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-maintenance#near-zero-downtime-maintenance-public-preview). 
+- [Read replicas in Azure Database for MySQL - Flexible Server](/azure/mysql/flexible-server/concepts-read-replicas) 
+- [Respond to Defender open-source database alerts](/azure/defender-for-cloud/defender-for-databases-usage) 
+- [Scheduled maintenance in Azure Database for MySQL - Flexible Server](/azure/mysql/flexible-server/concepts-maintenance#near-zero-downtime-maintenance-public-preview). 
 
-- [Storage IOPS in Azure Database for MySQL - Flexible Server](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-storage-iops) 
+- [Storage IOPS in Azure Database for MySQL - Flexible Server](/azure/mysql/flexible-server/concepts-storage-iops) 
