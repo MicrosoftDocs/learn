@@ -37,7 +37,6 @@ subjects:
 - artificial-intelligence
 units:
 - learn.wwl.transcribe-speech-input-text.introduction
-- learn.wwl.transcribe-speech-input-text.create-speech-resource
 - learn.wwl.transcribe-speech-input-text.speech-to-text
 - learn.wwl.transcribe-speech-input-text.text-to-speech
 - learn.wwl.transcribe-speech-input-text.speech-synthesis-markup
