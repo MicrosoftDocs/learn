@@ -1,4 +1,5 @@
 It's time to migrate the on-premises MySQL server to an Azure Database for MySQL flexible server. You've decided to perform an offline migration because network settings prevent a direct connection between the source and target servers. The following diagram summarizes the procedure:
+
 :::image type="content" source="../media/5-exercise-use-azure-database-for-mysql-import-cli-from-onprem-mysql/azure-import-cli-migration-procedure.png" alt-text="Screenshot of azure-import-cli-migration-procedure." lightbox="../media/5-exercise-use-azure-database-for-mysql-import-cli-from-onprem-mysql/azure-import-cli-migration-procedure.png":::
 
 ## Prerequisites
@@ -9,8 +10,8 @@ It's time to migrate the on-premises MySQL server to an Azure Database for MySQL
     lower_case_table_names = 1  
     innodb_file_per_table = ON
     innodb_page_size = 16348 (MySQL Default)
-
     ```
+
   - The system tablespace name should be `ibdata1`.
 
   - The system tablespace size should be greater than or equal to 12 MB. (MySQL Default)
@@ -28,11 +29,11 @@ It's time to migrate the on-premises MySQL server to an Azure Database for MySQL
    1. Install the tool according to these [instructions](https://docs.percona.com/percona-xtrabackup/8.0/installation.html) (for MySQL 8.0).
 
    2. Create a [full backup](https://docs.percona.com/percona-xtrabackup/8.0/create-full-backup.html); for example:
+
       ```shell
-
       xtrabackup --backup --target-dir=/data/backups/
-
       ```
+
 2. Upload the backup file to Azure Blob storage, following these [steps](https://review.learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-blobs-upload#upload-a-file).
 
 3. Trigger the import by running this command after filling in variables. You can modify the compute size as well by changing Standard_D2ds_v4.
