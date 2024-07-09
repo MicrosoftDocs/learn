@@ -37,7 +37,6 @@ units:
 - learn.wwl.extract-insights-text-with-text-analytics-service.extract-key-phrases
 - learn.wwl.extract-insights-text-with-text-analytics-service.extract-entitites
 - learn.wwl.extract-insights-text-with-text-analytics-service.extract-linked-entitites
-- learn.wwl.extract-insights-text-with-text-analytics-service.exercise
 - learn.wwl.extract-insights-text-with-text-analytics-service.knowledge-check
 - learn.wwl.extract-insights-text-with-text-analytics-service.summary
 badge:
