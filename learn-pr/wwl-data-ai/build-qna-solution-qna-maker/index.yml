@@ -41,7 +41,6 @@ units:
 - learn.wwl.build-qna-solution-qna-maker.create-knowledge-base
 - learn.wwl.build-qna-solution-qna-maker.implement-multi-turn-conversation
 - learn.wwl.build-qna-solution-qna-maker.test-publish-knowledge-base
-- learn.wwl.build-qna-solution-qna-maker.consume-qna-client-interfaces
 - learn.wwl.build-qna-solution-qna-maker.implement-active-learning
 - learn.wwl.build-qna-solution-qna-maker.create-qna-bot
 - learn.wwl.build-qna-solution-qna-maker.exercise-create
