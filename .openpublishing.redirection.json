@@ -41713,6 +41713,11 @@
       "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/2-understand.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
     }
   ]
 }
