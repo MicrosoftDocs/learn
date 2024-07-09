@@ -3663,3 +3663,8 @@ achievements:
   title: Build a question answering solution
   summary: The question answering capability of the Language service makes it easy to build applications in which users ask questions using natural language and receive appropriate answers.
   iconUrl: /training/achievements/qna-maker-solution.svg
+- uid: learn.wwl.custom-name-entity-extraction.badge
+  type: badge
+  title: Create a custom named entity extraction solution
+  summary: Build a custom entity recognition solution to extract entities from unstructured documents
+  iconUrl: /training/achievements/2-custom-name-entity-recognition.svg
