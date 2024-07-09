@@ -42,13 +42,13 @@ quiz:
     choices:
     - content: "An online migration."
       isCorrect: false
-      explanation: "While an online migration would remove the downtime, it's a lot of extra complexity when the application can tolerate about an hour of downtime."
+      explanation: "While an online migration would remove the downtime, its extra complexity when the application can tolerate about an hour of downtime."
     - content: "An offline migration using a full snapshot."
       isCorrect: false
       explanation: "A full snapshot would take about 4 hours to restore. The application would have to be online during this process (at least), which exceeds the one hour downtime target."
     - content: "An offline migration using a full snapshot and an incremental snapshot."
       isCorrect: true
-      explanation: "This is the best choice. The 4-hour transfer can occur first. Then, the application can go down to capture & migrate the much smaller increment, to fit within the hour of downtime."
+      explanation: "This is the best choice. The four hour transfer can occur first. Then, the application can go down to capture & migrate the smaller increment, to fit within the hour of downtime."
   - content: "You want to migrate your on-premises MySQL database to Azure because it exhausts processing and storage resources regularly. Near-zero downtime is preferable. Which of these approaches should you consider?"
     choices:
     - content: "Restore the database from a snapshot and use the binary log to synchronize changes that occurred since the snapshot was taken."
@@ -56,7 +56,7 @@ quiz:
       explanation: "While this is a way to eliminate downtime, it's manual and error-prone compared to automated approaches like Azure Database Migration Service."
     - content: "Use mydumper and myloader to create and restore data."
       isCorrect: false
-      explanation: "Even though these tools are very fast, they will still require downtime to migrate data once the application is frozen."
+      explanation: "Even though these tools are fast, they'll still require downtime to migrate data once the application is frozen."
     - content: "Use Azure Migrate and Azure Database Migration Service to automate migration and minimize downtime."
       isCorrect: true
       explanation: "Azure DMS automates the migration process, and can perform an online migration, or a near-zero downtime offline migration."
@@ -64,13 +64,13 @@ quiz:
     choices:
     - content: "Restore database backups into development environments."
       isCorrect: false
-      explanation: "Unless absolutely necessary, this poses a security risk as it places full customer data into non-production environments."
+      explanation: "Unless necessary, this poses a security risk as it places full customer data into nonproduction environments."
     - content: "Use a tool like mysqldump to create controlled test scenarios."
       isCorrect: true
-      explanation: "A test scenario should contain PII-safe customer data, if any customer data at all. The mysqldump allows you to build selective test scenarios."
+      explanation: "A test scenario should contain PERSONAL DATA-safe customer data, if any customer data at all. The mysqldump allows you to build selective test scenarios."
     - content: "Use Azure Database for MySQL Import CLI to create test data."
       isCorrect: false
-      explanation: "This is not one of the Import CLI's features."
+      explanation: "This isn't one of the Import CLI's features."
   - content: "You want to migrate a high-availability flexible server from one region to another. Some downtime is acceptable. Which is the simplest solution?"
     choices:
     - content: "Use mydumper and myloader to migrate two parallel instances, then enable replication."
