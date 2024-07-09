@@ -41648,6 +41648,216 @@
       "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/8-summary.yml",
       "redirect_url": "/training/modules/cloud-adoption-framework-migrate/7-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/3-compare-to-language-understanding.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/7-consume-qna-client-interfaces.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/4-create-knowledge-base.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/9-create-qna-bot.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/10-exercise-create.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/8-implement-active-learning.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/5-implement-multi-turn-conversation.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/6-test-publish-knowledge-base.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/2-understand.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/5-exercise-extract-custom-entities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/3-tag-your-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/4-train-evaluate-your-model.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/2-understand-custom-named.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/5-analyze-sentiment.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/3-detect-language.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/8-exercise-analyze-text.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/6-extract-entities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/4-extract-key-phrases.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/7-extract-linked-entities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/2-provision-resource.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/5-audio-format-voices.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/2-create-speech-service.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/7-exercise-speech-app.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/6-speech-synthesis-markup.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/3-speech-to-text.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/4-text-to-speech.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
     }
   ]
 }
