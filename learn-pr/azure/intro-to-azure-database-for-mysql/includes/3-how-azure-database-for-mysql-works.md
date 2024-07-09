@@ -1,23 +1,22 @@
 In this unit, you explore how Azure Database for MySQL works, beginning with its architecture. You also learn how it provides high availability, backup functionality, and scaling to meet your workload's needs.
-
 ## Azure Database for MySQL architecture
 
 The following diagram shows an instance of Azure Database for MySQL—Flexible Server configured with Azure Premium Storage (for data and logs) and access to locally redundant storage (for backup).
 
 While the MySQL flexible server is hosted in Availability zone 1, the instance can also use the other availability zones that are present. In addition, various client apps are connected to the MySQL flexible server.
 
-:::image type="content" source="../media/flexible-server.png" alt-text="A detailed architecture diagram of Azure Database for MySQL in a typical organization as previously described.":::
+:::image type="content" source="../media/3-how-azure-database-for-mysql-works/flexible-server.png" alt-text="Screenshot of A detailed architecture diagram of Azure Database for MySQL in a typical organization as previously described." lightbox="../media/3-how-azure-database-for-mysql-works/flexible-server.png":::
 
 ### How high availability works
 
 For Azure Database for MySQL flexible server, within the single availability zone, the following process occurs after a hosting server failure:
 
 1. Azure provisions a new virtual machine (VM).
-2. Azure maps the storage and data files to the newly provisioned VM.
-3. The MySQL database engine is brought online.
-4. Client applications reconnect to the new MySQL instance.
+1. Azure maps the storage and data files to the newly provisioned VM.
+1. The MySQL database engine is brought online.
+1. Client applications reconnect to the new MySQL instance.
 
-> [!NOTE]
+> [!NOTE]  
 > If you have provisioned high availability across zones, a hot standby server is maintained in another availability zone in the same Azure region. This server is a fully synchronized replica of the primary server. In the event of a primary server failure, the hot standby server can quickly take over with minimal disruption, thereby maintaining service availability.
 
 ### How backups work
@@ -26,7 +25,7 @@ You can use backups to restore your server to any point in time within the reten
 
 ### How scaling works
 
-Scaling in Azure Database for MySQL involves adjusting the computing resources according to the application's needs, which can fluctuate based on user demand, the complexity of the operations processed, or other factors like business growth. This flexibility is crucial for maintaining optimal performance and cost efficiency. 
+Scaling in Azure Database for MySQL involves adjusting the computing resources according to the application's needs, which can fluctuate based on user demand, the complexity of the operations processed, or other factors like business growth. This flexibility is crucial for maintaining optimal performance and cost efficiency.
 
 #### Types of scaling
 
@@ -46,8 +45,8 @@ Scaling in Azure Database for MySQL involves adjusting the computing resources a
 
 Autoscale IOPS (Input/Output Operations Per Second) is a feature that dynamically adjusts the I/O throughput based on the current workload. This is particularly useful for unpredictable or spike-prone workload patterns, as it ensures that the database can handle sudden increases in load without manual intervention.
 
-- **IOPS scaling based on load**: When the workload increases and more I/O throughput is required, the Autoscale feature automatically increases the IOPS limit up to the maximum allowed in the chosen compute tier. Conversely, IOPS can be reduced during periods of low activity to minimize costs. 
-- **Cost-effectiveness**: By automatically adjusting IOPS based on actual usage, you only pay for the IOPS you use rather than over-provision resources to handle peak loads, which may only occur sporadically.
+- **IOPS scaling based on load**: When the workload increases and more I/O throughput is required, the Autoscale feature automatically increases the IOPS limit up to the maximum allowed in the chosen compute tier. Conversely, IOPS can be reduced during periods of low activity to minimize costs.
+- **Cost-effectiveness**: By automatically adjusting IOPS based on actual usage, you only pay for the IOPS you use rather than over-provision resources to handle peak loads, which might only occur sporadically.
 
 #### Best practices for scaling
 

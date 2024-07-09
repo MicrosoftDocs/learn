@@ -1,5 +1,4 @@
 Now that you know about different app hosting options on Azure, you want to explore how to deploy Azure Database for MySQL - Flexible Server apps on these services.
-
 In this unit, you explore two of the most used services: Azure App Service and AKS. Then you review options for automating CI/CD tasks using Azure DevOps and GitHub.
 
 ## Azure App Service + Azure Database for MySQL - Flexible Server
@@ -11,15 +10,15 @@ To deploy your app on Azure App Service and integrate with Azure Database for My
 
 After setting up your App Service app and MySQL flexible server, you can deploy your app code to Azure using various deployment methods supported by Azure App Service. These methods include deploying from a ZIP package, Local Git repositories, Azure Container Registry, GitHub Actions, or Azure Pipelines, each option offering flexibility based on your development and operational workflows.
 
-In the next unit, you build a sample PHP app and deploy it to Azure App Service, going through each step involved in the deployment process, and leverage Azure's powerful platform features to optimize your app's performance and scalability.
+In the next unit, you build a sample PHP app and deploy it to Azure App Service, going through each step involved in the deployment process, and use Azure's powerful platform features to optimize your app's performance and scalability.
 
 ## Azure Kubernetes Service (AKS) + MySQL - Flexible Server
 
-A powerful platform for deploying containerized apps, integrating AKS with Azure Database for MySQL - Flexible Server can streamline database management as well as enhance app scalability and resilience. To effectively deploy and manage your apps on AKS with a backend MySQL flexible server, consider the following information. 
+A powerful platform for deploying containerized apps, integrating AKS with Azure Database for MySQL - Flexible Server can streamline database management as well as enhance app scalability and resilience. To effectively deploy and manage your apps on AKS with a backend MySQL flexible server, consider the following information.
 
 The following diagram illustrates three common ways to integrate MySQL with your AKS app:
 
-:::image type="content" source="../media/kubernetes-and-mysql.png" alt-text="Diagram showing the three options to use a MySQL database in AKS application.":::
+:::image type="content" source="../media/4-deploy-app-on-azure/kubernetes-and-mysql.png" alt-text="Diagram showing the three options to use a MySQL database in AKS application." lightbox="../media/4-deploy-app-on-azure/kubernetes-and-mysql.png":::
 
 - **Use Azure Database for MySQL - Flexible Server** which reduces the operational overhead of managing the MySQL server thereby enhancing developer productivity.
 - **Use MySQL on Azure VM**, an infrastructure as a service offering, which requires that you take responsibility for managing and maintaining the MySQL server.
@@ -27,24 +26,24 @@ The following diagram illustrates three common ways to integrate MySQL with your
 
 To deploy an app on AKS that integrates with Azure Database for MySQL - Flexible Server, use the following five-step process:
 
-1. **Create an Azure Database for MySQL - Flexible Server** using the Azure Portal, the Azure CLI, an ARM/Bicep template, or other Azure tools. Along with choosing the right compute, storage, backup, and high availability options, it’s important to decide the suitable networking option while creating the MySQL flexible server.
+1. **Create an Azure Database for MySQL - Flexible Server** using the Azure Portal, the Azure CLI, an ARM/Bicep template, or other Azure tools. Along with choosing the right compute, storage, backup, and high availability options, it's important to decide the suitable networking option while creating the MySQL flexible server.
 
     **Important**: Unless your scenario only involves small projects or demos, it's highly recommended to create your server with private access, which will help secure access to your server via VNet integration.
 
-2. **Prepare your app** by making the following changes to your app code:
+1. **Prepare your app** by making the following changes to your app code:
 
     - To have the app use MySQL flexible server, modify the corresponding configuration file or app properties file to add code indicating the host server URL, database name, username, and password, which will be read from the environment variables (as defined in and passed down from the Kubernetes manifest file).
     - [Create a Dockerfile](https://docs.docker.com/guides/docker-concepts/building-images/writing-a-dockerfile/) to build the app Docker image.
 
-3. **Create an Azure container registry** and push the app to the registry as a Docker image.
-4. **Create an AKS cluster** and attach the Azure container registry account to the cluster.
-5. **Deploy the app to the cluster** and then test the deployment. To deploy the app to the AKS cluster, you first need to create a Kubernetes manifest file that defines a desired state for the cluster, such as what container images to run.
+1. **Create an Azure container registry** and push the app to the registry as a Docker image.
+1. **Create an AKS cluster** and attach the Azure container registry account to the cluster.
+1. **Deploy the app to the cluster** and then test the deployment. To deploy the app to the AKS cluster, you first need to create a Kubernetes manifest file that defines a desired state for the cluster, such as what container images to run.
 
     In the Kubernetes manifest YAML file, key things to define include:
 
     - The container image name: replace it with your own in the format [registryname].azurecr.io/[image-name]:[tag]
     - Environment variables for MySQL flexible server host URL, database name, admin username and password.
-    - A service resource to access the app in the cluster. For example, a service of the type “LoadBalancer” will create an external load balancer providing an externally accessible IP address to the app.
+    - A service resource to access the app in the cluster. For example, a service of the type "LoadBalancer" will create an external load balancer providing an externally accessible IP address to the app.
 
     After the YAML file is ready, deploy it with either `kubectl apply` or within the Kubernetes resource view in the Azure portal.
 

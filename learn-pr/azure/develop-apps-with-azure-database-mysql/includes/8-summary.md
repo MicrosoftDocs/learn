@@ -1,10 +1,9 @@
 You set out to resolve existing scalability, performance, and availability issues in your food delivery app to make database management easier and to reduce the burden on your developers. You wanted to revamp your app architecture and understand how to deploy your app on Azure and take advantage of Azure Database for MySQL - Flexible Server in the backend.
-
 You identified the best hosting option for your app, updated your app code to connect to and query data from you Azure Database for MySQL flexible server, and deployed your app on Azure App Service. You also examined best practices that you can apply to help ensure lower latency, as well as better security and performance.
 
 If you hadn't modernized the app to use a managed database on Azure, the food delivery platform would have continued to degrade in performance, which could easily result in having a greater number of dissatisfied customers, leading to an increased customer churn rate and revenue loss. You also would have continued spending time and effort trying to fix existing issues and securing funding for new hardware to help scale apps during peak loads. In addition, your developers would be overwhelmed with tasks.
 
-By migrating and modernizing your app on Azure with Azure Database for MySQL - Flexible Server, you have built a more robust and performant platform, and increased your usage, adoption rate, and customer satisfaction. You can now focus on strategizing and expanding your business with app innovations.  robust and performant platform, and increased your usage, adoption rate, and customer satisfaction. You can now focus on strategizing and expanding your business with application innovations.
+By migrating and modernizing your app on Azure with Azure Database for MySQL - Flexible Server, you have built a more robust and performant platform, and increased your usage, adoption rate, and customer satisfaction. You can now focus on strategizing and expanding your business with app innovations. robust and performant platform, and increased your usage, adoption rate, and customer satisfaction. You can now focus on strategizing and expanding your business with application innovations.
 
 ## References
 

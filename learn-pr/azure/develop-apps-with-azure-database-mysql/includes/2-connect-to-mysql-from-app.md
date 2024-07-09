@@ -1,10 +1,9 @@
 Azure Database for MySQL - Flexible Server provides you with the flexibility to develop apps using your favorite tools, languages, and frameworks. You can continue to use powerful development tools like Visual Studio Code and GitHub and develop using any programming language like PHP, Java, Python, Node.js, C#, Ruby, Rust, Go, etc. You can also integrate Flexible Server with popular Content Management Systems (CMS) like WordPress or Drupal, Learning Management Systems (LMS) like Moodle, e-commerce platforms like Magento, and so on.
-
 Let's begin by looking at the various tasks involved in connecting to and querying Azure Database for MySQL flexible server from your app, using the language of your choice.
 
 ## 1 - Obtain connection information
 
-The first task is to obtain the connection information you need to connect to your Azure Database for MySQL flexible server. You'll need the server name, database name, and sign in credentials. 
+The first task is to obtain the connection information you need to connect to your Azure Database for MySQL flexible server. You'll need the server name, database name, and sign in credentials.
 
 In the Azure portal, navigate to your MySQL flexible server resource, and then note the **Server name** and **Server admin login name**.
 
@@ -12,7 +11,7 @@ In the Azure portal, navigate to your MySQL flexible server resource, and then n
 
 It's recommended to secure data in transit by ensuring that your app connects to an Azure Database for Azure Database for MySQL flexible server using Secure Sockets Layer (SSL). You can download the public SSL certificate from the Networking blade in the Azure portal as shown in the following screenshot.
 
-:::image type="content" source="../media/download-ssl.png" alt-text="Screenshot showing Azure Database for MySQL Networking blade on Azure portal":::
+:::image type="content" source="../media/2-connect-to-mysql-from-app/download-ssl.png" alt-text="Screenshot showing Azure Database for MySQL Networking blade on Azure portal.":::
 
 Save the certificate file to your preferred location.
 
@@ -85,7 +84,7 @@ $product_price = 15;
 if ($stmt = mysqli_prepare($conn, "INSERT INTO Products (ProductName, Price) VALUES (?, ?)")) {
     //Binds the parameters for each column value
     mysqli_stmt_bind_param($stmt, 'ssd', $product_name, $product_price);
-    //Run the prepared statement 
+    //Run the prepared statement
     mysqli_stmt_execute($stmt);
     printf("Insert: Affected %d rows\n", mysqli_stmt_affected_rows($stmt));
     //Close the prepared statement
@@ -208,14 +207,14 @@ import java.sql.*;
 public class DemoApplication {
 
     public static void main(String[] args) throws Exception {
-        
+
         //Load application properties
         Properties properties = new Properties();
         properties.load(DemoApplication.class.getClassLoader().getResourceAsStream("application.properties"));
 
         //Establish Connection to database
         Connection connection = DriverManager.getConnection(properties.getProperty("url"), properties);
-        
+
         .
         .
 

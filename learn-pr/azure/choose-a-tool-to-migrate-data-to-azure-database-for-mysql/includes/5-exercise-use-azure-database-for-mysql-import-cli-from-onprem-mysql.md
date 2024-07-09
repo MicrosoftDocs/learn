@@ -18,7 +18,7 @@ It's time to migrate the on-premises MySQL server to an Azure Database for MySQL
 
   - Only the INNODB engine is supported.
 
-- You need an Azure Blob storage container. If you don't have an appropriate container, create one following this [quickstart](https://review.learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container). You need the Azure Blob container's shared access signature (SAS) token. To optimize performance, keep the storage and target flexible server in the same region.
+- You need an Azure Blob storage container. If you don't have an appropriate container, create one following this [quickstart](https://review.learn.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container). You need the Azure Blob container's shared access signature (SAS) token. To optimize performance, keep the storage and target flexible server in the same region.
 
 - You need to shut down your application to prevent any changes to the database.
 
@@ -34,7 +34,7 @@ It's time to migrate the on-premises MySQL server to an Azure Database for MySQL
       xtrabackup --backup --target-dir=/data/backups/
       ```
 
-2. Upload the backup file to Azure Blob storage, following these [steps](https://review.learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-blobs-upload#upload-a-file).
+2. Upload the backup file to Azure Blob storage, following these [steps](https://review.learn.microsoft.com/azure/storage/common/storage-use-azcopy-blobs-upload#upload-a-file).
 
 3. Trigger the import by running this command after filling in variables. You can modify the compute size as well by changing Standard_D2ds_v4.
 

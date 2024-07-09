@@ -1,5 +1,4 @@
 In this unit, you explore some best practices to apply when developing apps with Azure Database for MySQL - Flexible Server that can help to ensure better performance, resilience, and security. These best practices include:
-
 - Co-locating resources.
 - Implementing connection pooling.
 - Choosing the right app container size.
@@ -9,9 +8,9 @@ In this unit, you explore some best practices to apply when developing apps with
 
 These best practices come into play at various points during the app development process with Azure Database for MySQL - Flexible Server, as shown in the following diagram.
 
-:::image type="content" source="../media/best-practices.png" alt-text="Diagram showing six key best practices to be followed for app development.":::
+:::image type="content" source="../media/6-implement-best-practices/best-practices.png" alt-text="Diagram showing six key best practices to be followed for app development." lightbox="../media/6-implement-best-practices/best-practices.png":::
 
-> [!NOTE]
+> [!NOTE]  
 > This list of best practices is not exhaustive. Be sure to consult the [Azure Database for MySQL documentation](https://aka.ms/mysqldocs) for detailed guides on implementing best practices related to networking, security, monitoring, performance optimization, business continuity and disaster recovery, etc.
 
 ## Co-locate resources
@@ -20,9 +19,9 @@ When deploying your app to Azure, be sure that all of your resource dependencies
 
 ## Implement connection pooling
 
-Managing database connections within an app can significantly impact the overall app performance.  To improve app performance and resiliency, consider implementing connection pooling to connect to a MySQL flexible server. A connection pooler (like ProxySQL) can decrease the number of idle connections and reuse existing connections.
+Managing database connections within an app can significantly impact the overall app performance. To improve app performance and resiliency, consider implementing connection pooling to connect to a MySQL flexible server. A connection pooler (like ProxySQL) can decrease the number of idle connections and reuse existing connections.
 
-> [!TIP]
+> [!TIP]  
 > To optimize performance, in key code paths, reduce the number of times that connections are established and the time it takes to establish these connections.
 
 ## Choose the right app container size
@@ -50,8 +49,8 @@ It's important to analyze your workload and size your MySQL flexible server inst
 You can create a MySQL flexible server in one of three compute tiers: Burstable, General Purpose, and Business Critical. As a starting point for choosing the compute tier, consider the detail in the following table.
 
 | Compute tier | Target workloads |
-| ------------ | ---------------- |
-| Burstable | Best for workloads that don’t need the full CPU continuously. Cost-effective for smaller web apps and development workloads. |
+| --- | --- |
+| Burstable | Best for workloads that don't need the full CPU continuously. Cost-effective for smaller web apps and development workloads. |
 | General Purpose | Best for most business workloads that require balanced compute and memory with scalable I/O throughput. Examples include servers for hosting web and mobile apps and other enterprise apps. |
 | Business Critical | Best for high-performance database workloads that require in-memory performance for faster transaction processing and higher concurrency. Examples include servers for processing real-time data and high-performance transactional or analytical apps. |
 
@@ -73,7 +72,7 @@ You can allocate a specific number of IOPS to your database instance using pre-p
 
 ### Autoscale IOPS
 
-Autoscale IOPS brings dynamic performance scaling, an essential feature for effectively managing fluctuating workloads. With this feature enabled, the database server automatically adjust IOPS based on real-time demand without the need for pre-provisioning. Having this flexibility is particularly beneficial for tier-1, mission-critical apps that may experience variable performance needs.
+Autoscale IOPS brings dynamic performance scaling, an essential feature for effectively managing fluctuating workloads. With this feature enabled, the database server automatically adjust IOPS based on real-time demand without the need for pre-provisioning. Having this flexibility is particularly beneficial for tier-1, mission-critical apps that might experience variable performance needs.
 
 The key benefits of using Autoscale IOPS functionality include:
 

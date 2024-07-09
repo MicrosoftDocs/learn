@@ -1,12 +1,11 @@
 When developing a new app or modernizing an existing one, choosing the right hosting option is crucial to optimize performance, security, and cost-efficiency.
-
 Traditionally, apps have been hosted on web servers like Internet Information Services (IIS), Apache, or on NGINX on physical or virtualized on-premises hardware. While this option offers the advantage of providing the infrastructure team full control of the environment, it requires additional effort to manage overhead, upfront costs, availability, scalability, resiliency, security, and compliance.
 
 When you deploy your app to the cloud, you eliminate the need to manage these areas. Hosting an app on the cloud reduces overall set-up costs, provides enhanced availability and reliability with Business Continuity and Disaster Recovery (BCDR) options; allows you to scale your app resources on demand; and provides advanced security.
 
 Microsoft Azure offers a diverse range of app hosting options customized to address your app's architectural requirements and use cases.
 
-:::image type="content" source="../media/application-hosting-options.png" alt-text="Diagram showing types of MySQL applications and corresponding Azure services.":::
+:::image type="content" source="../media/3-choose-app-hosting-option/application-hosting-options.png" alt-text="Diagram showing types of MySQL applications and corresponding Azure services." lightbox="../media/3-choose-app-hosting-option/application-hosting-options.png":::
 
 Many of these app hosting options integrate seamlessly with Azure Database for MySQL - Flexible Server, a particularly effective service for backend databases due to its scalability, performance, and manageability. In this unit, we'll explore some common MySQL app architectures and Azure services to help you determine the most suitable hosting option for your app workload.
 
@@ -39,6 +38,6 @@ Azure also provides services like **Azure Event Grid**, **Azure Service Bus**, a
 
 ## Monolithic legacy applications on Azure VMs
 
-Some organizations may have legacy apps with monolithic architectures that are tightly coupled with business processes and hard to modernize. You can migrate these apps to Azure using a lift-and-shift model and host them on Azure Virtual Machines, which is an Infrastructure-as-a-Service (IaaS) service.
+Some organizations might have legacy apps with monolithic architectures that are tightly coupled with business processes and hard to modernize. You can migrate these apps to Azure using a lift-and-shift model and host them on Azure Virtual Machines, which is an Infrastructure-as-a-Service (IaaS) service.
 
 While the advantages of Azure include the ability to enable backup and restore services, disk encryption, and scaling options that require no upfront costs, you'll still need to invest manual effort to deploy, maintain, and manage apps on Azure VMs.

@@ -1,5 +1,4 @@
 In this unit, you build and deploy a sample PHP app to Azure App Service, and integrate it with Azure Database for MySQL - Flexible Server on the back end.
-
 ## STEP 1 - Create an Azure Database for MySQL flexible server
 
 First, you'll provision a MySQL flexible server with public access connectivity, configure firewall rules to allow the app to access the server, and create a production database.
@@ -11,57 +10,55 @@ You'll use the Azure portal to walk through the MySQL flexible server creation e
     > [!div class="nextstepaction"]
     > [Azure portal for the sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)
 
-2. In the search box at the top of the page, enter **MySQL** and select **Azure Database for MySQL flexible servers**.
+1. In the search box at the top of the page, enter **MySQL** and select **Azure Database for MySQL flexible servers**.
 
-    ![Screenshot of the search bar at the top of the portal showing results from searching for mysql.](../media/search-mysql.png)
+ :::image type="content" source="../media/5-exercise-app-service-mysql/search-mysql.png" alt-text="Screenshot of the search bar at the top of the portal showing results from searching for mysql.":::
 
-3. On the **Azure Database for MySQL flexible servers** page, select **+ Create**, and then select **Flexible server**.
+1. On the **Azure Database for MySQL flexible servers** page, select **+ Create**, and then select **Flexible server**.
 
-    ![Screenshot of the expanded Create menu with the Flexible server menu item highlighted.](../media/create-flexible-server-menu.png)
+ :::image type="content" source="../media/5-exercise-app-service-mysql/create-flexible-server-menu.png" alt-text="Screenshot of the expanded Create menu with the Flexible server menu item highlighted.":::
 
-4. On the **Flexible server** page, on the **Basics** tab, enter the information in the following table.
+1. On the **Flexible server** page, on the **Basics** tab, enter the information in the following table.
 
     | Setting | Suggested Value |
-    | ------------ | ---------------- |
+    | --- | --- |
     | Subscription | Concierge Subscription |
-    | Resource group | From the dropdown, select the resource group starting with **learn-** |
+    | Resource group | From the dropdown list, select the resource group starting with **learn-** |
     | Server name | Enter a globally unique name that identifies your flexible server. |
     | MySQL version | 8.0 |
     | Workload type | Select **For development or hobby projects** |
-    | Admin username | Enter **mysqladmin**. Don't use azure_superuser, admin, administrator, root,  guest, or public. |
+    | Admin username | Enter **mysqladmin**. Don't use azure_superuser, admin, administrator, root, guest, or public. |
     | Password | Enter **Passw0rd123**. The password must contain between 8 and 128 characters and include characters from three categories: English uppercase letters, English lowercase letters, numbers (0 through 9), and non-alphanumeric characters (such as ! $, #, %). |
 
     Keep the default values for all other settings.
 
-5. On the **Basics** tab, under **Compute + Storage**, select **Configure server**.
+1. On the **Basics** tab, under **Compute + Storage**, select **Configure server**.
 
-6. On the **Compute + Storage** page, configure the following settings:
+1. On the **Compute + Storage** page, configure the following settings:
     1. **Compute**
         1. Select the **Burstable** compute tier.
-        2. From the **Compute** **size** drop-down list, select **Standard_B1s (1 vCore, 1 GiB memory, 400 max iops)**.
-    2. **Storage**
+        1. From the **Compute** **size** dropdown list, select **Standard_B1s (1 vCore, 1 GiB memory, 400 max iops)**.
+    1. **Storage**
        1. Verify that the **Storage size (in GB)** is set to **20**.
-       2. Select **Pre-provisioned IOPS** and leave the value is set to **360**.
-       3. Verify that the **Storage Auto-growth** check box is selected.
-    3. **High Availability**
+       1. Select **Pre-provisioned IOPS** and leave the value is set to **360**.
+       1. Verify that the **Storage Auto-growth** check box is selected.
+    1. **High Availability**
        1. Verify that the **Enable High Availability** check box is not selected.
-    4. **Backups**
+    1. **Backups**
        1. Verify that the **Backup retention period (in days)** is set to **7**.
-       2. Verify that the **Recover from regional outage or disaster** check box as not selected.
+       1. Verify that the **Recover from regional outage or disaster** check box as not selected.
 
-7. Select **Save**, and then navigate to the **Networking** tab.
+1. Select **Save**, and then navigate to the **Networking** tab.
 
-    :::image type="content" source="../media/flexible-server-basics.png" alt-text="Screenshot showing Flexible Server create blade, with red box around Networking tab.":::
+    :::image type="content" source="../media/5-exercise-app-service-mysql/flexible-server-basics.png" alt-text="Screenshot showing Flexible Server create blade, with red box around Networking tab.":::
 
-8. In the **Networking** tab, select **Public access (allowed IP addresses)** connectivity method, check **Allow public access to this resource through the internet using a public IP address**, and check **Allow public access from any Azure service within Azure to this server** as shown in the following screenshot.
+1. In the **Networking** tab, select **Public access (allowed IP addresses)** connectivity method, check **Allow public access to this resource through the internet using a public IP address**, and check **Allow public access from any Azure service within Azure to this server** as shown in the following screenshot.
 
-    :::image type="content" source="../media/flexible-server-networking.png" alt-text="Screenshot showing Flexible Server networking blade, with red box around Public access connectivity.":::
+1. Select **Review + create** to review your MySQL flexible server configuration.
 
-9. Select **Review + create** to review your MySQL flexible server configuration.
+1. Select **Create** to provision the server. Provisioning can take up to 10 minutes.
 
-10. Select **Create** to provision the server. Provisioning can take up to 10 minutes.
-
-11. After the deployment is done, select **Go to resource** to view the Azure Database for MySQL flexible server's **Overview** page.
+1. After the deployment is done, select **Go to resource** to view the Azure Database for MySQL flexible server's **Overview** page.
 
 For the remainder of this exercise, you'll run the commands using the Azure Cloud Shell, which appears to the right of this window.
 
@@ -116,7 +113,7 @@ In Azure App Service (Web Apps, API Apps, or Mobile Apps), an app always runs in
     --password <your-deployment-password>
     ```
 
-1. To create an App Service web app with PHP 8.0 runtime and to configure  the Local Git deployment option to deploy your app from a Git repository on your local computer, run the following command.
+1. To create an App Service web app with PHP 8.0 runtime and to configure the Local Git deployment option to deploy your app from a Git repository on your local computer, run the following command.
 
     **Note**: Replace `<your-app-name>` with a globally unique app name (valid characters are a-z, 0-9, and -).
 
@@ -129,7 +126,7 @@ In Azure App Service (Web Apps, API Apps, or Mobile Apps), an app always runs in
     --deployment-local-git
     ```
 
-    > [!IMPORTANT]
+    > [!IMPORTANT]  
     > In the Azure CLI output, the URL of the Git remote is displayed in the `deploymentLocalGitUrl` property, with the format `https://<username>@<app-name>.scm.azurewebsites.net/<app-name>.git`. Save this URL, as you'll need it later.
 
 1. The `config.php` file in the sample PHP app retrieves the database connection information (server name, database name, server username and password) from environment variables using the `getenv()` function. In App Service, to set environment variables as **Application Settings** (*appsettings*), run the following command:
@@ -176,12 +173,12 @@ Now, you'll deploy the sample PHP app to Azure App Service using the Local Git d
     git push azure main
     ```
 
-The deployment may take a few minutes to succeed.
+The deployment might take a few minutes to succeed.
 
 ## STEP 5 - Test your app
 
 Finally, test the app by browsing to `https://<app-name>.azurewebsites.net`, and then adding, viewing, updating, or deleting items from the product catalog.
 
-![Screenshot of the deployed web app displayed in the web browser.](../media/deployed-website.png)
+:::image type="content" source="../media/5-exercise-app-service-mysql/deployed-website.png" alt-text="Screenshot of the deployed web app displayed in the web browser.":::
 
 Congratulations! You have successfully deployed a sample PHP app to Azure App Service and integrated it with Azure Database for MySQL - Flexible Server on the back end.

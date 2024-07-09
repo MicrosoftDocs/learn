@@ -24,7 +24,7 @@ When evaluating the import CLI, be sure to take into account the following consi
 
 ## Azure Migrate and Azure Database Migration Service
 
-[Azure Migrate](https://azure.microsoft.com/products/azure-migrate/) is a unified platform that discovers assets suitable for migration and assesses their readiness for the process. [Azure Database Migration Service](https://azure.microsoft.com/en-us/products/database-migration) (DMS) assists with migrating databases to Azure.
+[Azure Migrate](https://azure.microsoft.com/products/azure-migrate/) is a unified platform that discovers assets suitable for migration and assesses their readiness for the process. [Azure Database Migration Service](https://azure.microsoft.com/products/database-migration) (DMS) assists with migrating databases to Azure.
 
 DMS works by creating and running repeatable migration projects. Sources range from on-premises workloads to cloud-based workloads like Amazon RDS MySQL. While DMS is technically an offline migration tool, it makes use of the MySQL `binlog` to perform near-zero downtime online migrations.
 

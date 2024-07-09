@@ -1,15 +1,14 @@
 Most cloud architects and developers don't want to manage the server that hosts their apps or the underlying operating system (OS) and database. Instead, they want to focus on developing their cloud-designed apps. Using Microsoft Azure Database for MySQL can help them achieve this focus.
-
 Azure Database for MySQL is a managed relational database as a service (DBaaS) offering that can help manage your mission-critical workloads with predictable performance and dynamic scalability. You can connect your existing client apps and database tools to your instance of Azure Database for MySQL to gain the benefits of a platform as a service (PaaS) environment, as shown in the following image.
 
-:::image type="content" source="../media/mysql-conceptual-diagram.png" alt-text="The Azure Database for MySQL architecture in a typical organization with a managed relational database as a service (DBaaS).":::
+:::image type="content" source="../media/1-introduction/mysql-conceptual-diagram.png" alt-text="Screenshot of The Azure Database for MySQL architecture in a typical organization with a managed relational database as a service (DBaaS)." lightbox="../media/1-introduction/mysql-conceptual-diagram.png":::
 
 By implementing Azure Database for MySQL, you can take advantage of high availability, data protection, and predictable, scalable performance.
 
-> [!NOTE]
+> [!NOTE]  
 > Azure Database for MySQL is based on the MySQL Community Edition database engine versions 5.7 and 8.0.
 
-> [!TIP]
+> [!TIP]  
 > Azure Database for MySQL now supports [in-place upgrades to major versions](/azure/mysql/flexible-server/how-to-upgrade). For example, if you have a MySQL 5.7 server, you can upgrade it to MySQL 8.0 without any data movement or needing to update application connection strings.
 
 ## Example scenario

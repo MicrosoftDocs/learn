@@ -1,5 +1,4 @@
 Throughout this module, you explored the capabilities and features of Azure Database for MySQL, emphasizing its role as a fully managed Database as a Service (DBaaS) solution that simplifies the management of mission-critical workloads with predictable performance and dynamic scalability. You also evaluated the features and capabilities of running MySQL on Azure VMs, exploring insights assess which deployment option works best for the needs of your organization.
-
 The module covered the two primary deployment options for running MySQL workloads on Azure. Each option presents unique benefits and considerations:
 
 - **Azure Database for MySQL - Flexible Server**: This DBaaS option is designed for ease of use, offering built-in high availability, automated backups, and support for automatic scaling of compute and storage resources. It's particularly suitable for organizations looking to reduce administrative overhead while ensuring high availability and disaster recovery capabilities.
