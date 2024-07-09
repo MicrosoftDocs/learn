@@ -9,7 +9,6 @@ metadata:
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen, linux-related-content
-  ms.service: iot-edge
 durationInMinutes: 15 # dummy number at present
 content: |
   [!include[](includes/3-exercise-install-edge-runtime-linux.md)]
