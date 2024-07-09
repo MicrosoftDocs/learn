@@ -33,7 +33,6 @@ subjects:
 - artificial-intelligence
 units:
 - learn.wwl.extract-insights-text-with-text-analytics-service.provision-resource
-- learn.wwl.extract-insights-text-with-text-analytics-service.knowledge-check
 - learn.wwl.extract-insights-text-with-text-analytics-service.summary
 badge:
   uid: learn.wwl.extract-insights-text-with-text-analytics-service.badge
