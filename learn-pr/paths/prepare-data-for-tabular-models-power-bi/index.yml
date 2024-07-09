@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/26/2022
   author: wwlpublish
   ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Prepare data for tabular models in Power BI
 prerequisites: |
   Consider completing the [Model data in Power BI](/learn/paths/model-power-bi/) learning path.

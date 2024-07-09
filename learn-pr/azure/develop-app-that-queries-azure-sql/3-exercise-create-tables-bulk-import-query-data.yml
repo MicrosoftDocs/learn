@@ -3,12 +3,11 @@ uid: learn.develop-app-that-queries-azure-sql.3-exercise-create-tables-bulk-impo
 metadata:
   title: Exercise - Create tables, bulk import, and query data
   description: Create tables, bulk import, and query data
-  ms.date: 01/24/2023
+  ms.date: 08/10/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Create tables, bulk import, and query data
 durationInMinutes: 10
 interactive: bash

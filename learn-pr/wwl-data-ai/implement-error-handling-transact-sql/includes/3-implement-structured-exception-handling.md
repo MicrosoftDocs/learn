@@ -1,6 +1,6 @@
-Now you have an understanding of the nature of errors and basic error handling in T-SQL, it's time to look at a more advanced form of error handling. Structured exception handling was introduced in SQL Server 2005. 
+Now that you have an understanding of the nature of errors and basic error handling in T-SQL, it's time to look at a more advanced form of error handling. Structured exception handling was introduced in SQL Server 2005.
 
-Here, you'll see how to use it and evaluate its benefits and limitations.  Including the TRY CATCH block, the role of error handling functions, understanding the difference between catchable and noncatchable errors. Finally you'll see how errors can be managed and surfaced when necessary.
+Here, you'll see how to use it and evaluate its benefits and limitations, including the TRY CATCH block, the role of error handling functions, and understanding the difference between catchable and noncatchable errors. Finally, you'll see how errors can be managed and surfaced when necessary.
 
 ## What is TRY/CATCH block programming
 

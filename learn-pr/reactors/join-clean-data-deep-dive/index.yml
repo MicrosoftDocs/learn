@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/15/2020
   author: sguthals
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-reactors
+  ms.topic: module
   ms.custom: team=nextgen
 title: 'Join and clean datasets: Deep dive'
 summary: Learn how to join and clean datasets and prepare your data for analysis.

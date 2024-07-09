@@ -3,11 +3,10 @@ uid: learn.language.rust-automated-tests.exercise-documentation-tests
 metadata:
   title: Exercise - Write documentation tests
   description: Use what you've learned to write several documentation tests.
-  ms.date: 01/26/2021
+  ms.date: 06/14/2021
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Exercise - Write documentation tests
 durationInMinutes: 8

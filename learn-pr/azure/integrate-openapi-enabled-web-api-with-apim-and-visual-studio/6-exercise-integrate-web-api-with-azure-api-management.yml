@@ -4,12 +4,11 @@ title: Exercise - Integrate openAPI enabled web API with Azure API Management
 metadata:
   title: Exercise - Integrate openAPI enabled web API with Azure API Management
   description: Integrate an OpenAPI enabled web API published to Azure App Service with Azure API Management instance.
-  ms.date: 04/16/2021
+  ms.date: 07/11/2023
   author: justinyoo
   ms.author: juyoo
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: juyoo-04222021
 durationInMinutes: 8

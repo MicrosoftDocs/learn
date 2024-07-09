@@ -34,3 +34,4 @@ After updating settings, close the dialog box. Verify that the window fits on th
 The console host supports copying and pasting to and from the clipboard. It also supports using standard keyboard shortcuts, though they might not always work. This could be because of other applications that are running on the local computer and have changed settings for keyboard shortcuts. To enable this functionality, make sure that **QuickEdit Mode** is enabled in the console’s **Properties** dialog box. In the **Edit Options** section of the **Options** tab, enable keyboard shortcuts for copy and paste by selecting **Enable Ctrl key shortcuts**.
 
 Within the console, select a block of text, and then select Enter to copy that text to the clipboard. Right-click or activate the context menu to paste. Starting with Windows 10 and Windows Server 2016, the Ctrl+C and Ctrl+V keyboard shortcuts also work for copy and paste.
+

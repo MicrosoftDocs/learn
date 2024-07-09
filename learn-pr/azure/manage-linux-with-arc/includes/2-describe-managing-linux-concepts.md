@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This content references CentOS, a Linux distribution that is End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
+
 Azure Arc lets you manage physical and virtual Linux machines hosted outside of Azure, on your corporate network, or other cloud provider. Organizations like Contoso can manage their Linux resources with Azure just as they do their Arc-enabled Windows machines. Linux machines onboarded to Azure Arc enjoy the same capabilities as native Azure machines, including standard Azure constructs such as Azure policy and applying tags.
 
 Once your Linux machines are onboarded to Azure Arc, you can:
@@ -11,12 +14,13 @@ Once your Linux machines are onboarded to Azure Arc, you can:
 The following Linux distributions are officially supported for the Azure Connected Machine agent:
 
 - Ubuntu 16.04, 18.04, 20.04, and 22.04 LTS
-- Debian 10 and 11
+- Debian 10, 11, and 12
 - CentOS Linux 7 and 8
 - Rocky Linux 8
-- SUSE Linux Enterprise Server (SLES) 12 and 15
-- Red Hat Enterprise Linux (RHEL) 7 and 8
-- Amazon Linux 2
+- SUSE Linux Enterprise Server (SLES) 12 SP3-SP5 and 15
+- Red Hat Enterprise Linux (RHEL) 7, 8, and 9
+- Amazon Linux 2 and 2023
+- Azure Linux (CBL-Mariner) 1.0, 2.0
 - Oracle Linux 7 and 8
 
 ## Change tracking and inventory

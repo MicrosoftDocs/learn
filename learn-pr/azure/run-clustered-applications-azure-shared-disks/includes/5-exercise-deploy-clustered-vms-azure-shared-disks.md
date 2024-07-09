@@ -1,10 +1,9 @@
-Your company's CTO needs to provide proof of concept for using Azure shared disks to deploy a clustered application in Azure virtual machines (VMs). You've been asked to test clustered scenarios with both Linux and Windows VMs.
-
-> [!NOTE]
-> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to the special Concierge Subscription.
+Your company's CTO needs to provide proof of concept for using Azure shared disks to deploy a clustered application in Azure virtual machines (VMs). Your task is to test clustered scenarios with both Linux and Windows VMs.
 
 > [!NOTE]
 > You can use either Azure PowerShell or the Azure CLI to manage Windows and Linux VMs on Azure. Here, for learning purposes, if you choose the Windows option, you'll use Azure PowerShell. If you choose Linux, you'll use the Azure CLI.
+
+[!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
 
 ::: zone pivot="linux-cloud"
 
@@ -14,17 +13,23 @@ To provide proof of concept, deploy two Linux VMs that are running the Ubuntu Se
 
 In this exercise, you explore Azure shared disk deployment and perform the following tasks:
 
-- Create an Azure shared disk.
-- Create an availability set.
-- Deploy two VMs that are running Ubuntu Server OS, and then attach a shared disk to the two VMs.
-- Test SCSI PR commands.
+- Create an Azure shared disk
+- Create an availability set
+- Deploy two VMs that are running Ubuntu Server OS, and then attach a shared disk to the two VMs
+- Test SCSI PR commands
 
 ### Create an Azure shared disk
 
-Use Azure Cloud Shell with the Azure CLI to create an Azure shared disk.
+You need a resource group to contain the resources you'll create for this exercise. Here we use `myResourceGroup`, but you can use whatever name you like. This example uses the location `eastus`, but you can choose a location close to you. Use this command to create a resource group:
 
 ```azurecli
-az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --size-gb 1024 --sku Premium_LRS --max-shares 2
+az group create --name myResourceGroup --location "eastus"
+```
+
+ Create an Azure shared disk using Azure Cloud Shell with the Azure CLI:
+
+```azurecli
+az disk create -g myResourceGroup -n mySharedDisk --size-gb 1024 --sku Premium_LRS --max-shares 2
 ```
 
 ### Create an availability set
@@ -33,11 +38,13 @@ Run the following command to create an availability set:
 
 ```azurecli
 az vm availability-set create \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --resource-group myResourceGroup \
   --name myAvailabilitySet \
   --platform-fault-domain-count 2 \
   --platform-update-domain-count 2
 ```
+
+This command can take several minutes to complete.
 
 ### Create two VMs that run Ubuntu Server
 
@@ -46,7 +53,7 @@ While you're still in Cloud Shell, run the following commands to create two VMs 
 ```azurecli
 for i in `seq 1 2`; 
 do
-   az vm create --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM$i --availability-set myAvailabilitySet --size Standard_DS1_v2 --vnet-name myVnet --subnet mySubnet --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
+   az vm create --resource-group myResourceGroup --name myVM$i --availability-set myAvailabilitySet --size Standard_DS1_v2 --vnet-name myVnet --subnet mySubnet --image Ubuntu2204 --admin-username azureuser --generate-ssh-keys
 done
 ```
 
@@ -55,16 +62,16 @@ done
 While you're still in Cloud Shell, attach the Azure shared disk to both VMs by using the following commands:
 
 ```azurecli
-diskId=$(az disk show -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --query 'id' -o tsv)
+diskId=$(az disk show -g myResourceGroup -n mySharedDisk --query 'id' -o tsv)
 
 # attach the shared disk to the first VM.
-az vm disk attach -g <rgn>[sandbox resource group name]</rgn> --vm-name myVM1 --name $diskId
+az vm disk attach -g myResourceGroup --vm-name myVM1 --name $diskId
 
 # attach the shared disk to the second VM.
-az vm disk attach -g <rgn>[sandbox resource group name]</rgn> --vm-name myVM2 --name $diskId
+az vm disk attach -g myResourceGroup --vm-name myVM2 --name $diskId
 ```
 
-When you've finished this task, the shared disk is attached to two VMs at the same time.
+When you finish this task, the shared disk is attached to two VMs at the same time.
 
 ### Test SCSI PR by using the "sg3-utils" tools
 
@@ -73,7 +80,7 @@ When you've finished this task, the shared disk is attached to two VMs at the sa
 1. Use the following command to retrieve the IP addresses of VM1:
 
     ```azurecli
-    myPublicIP1=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM1PublicIP --query 'ipAddress' --output tsv)
+    myPublicIP1=$(az network public-ip show --resource-group myResourceGroup --name myVM1PublicIP --query 'ipAddress' --output tsv)
     ```
 
 1. Connect to the first VM over SSH:
@@ -97,7 +104,7 @@ When you've finished this task, the shared disk is attached to two VMs at the sa
     sudo sg_persist /dev/sdc -s
     ```
 
-    This command identifies the current reservations that exist for the shared disk. Because this is the first time that you've run it, there should be no new reservations.
+    This command identifies the current reservations that exist for the shared disk. When you run it for the first time, there should be no new reservations.
 
     :::image type="content" source="../media/05-disk-status-without-vm-registration.png" alt-text="Screenshot of disk status without V M registration." border="true":::
 
@@ -128,7 +135,7 @@ When you've finished this task, the shared disk is attached to two VMs at the sa
 1. Connect to the second VM through SSH by using the following command:
 
     ```bash
-    myPublicIP2=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM2PublicIP --query 'ipAddress' --output tsv)
+    myPublicIP2=$(az network public-ip show --resource-group myResourceGroup --name myVM2PublicIP --query 'ipAddress' --output tsv)
 
     ssh azureuser@$myPublicIP2
     ```
@@ -214,6 +221,14 @@ When you've finished this task, the shared disk is attached to two VMs at the sa
     exit
     ```
 
+### Clean up the Linux VM resources
+
+When you're done, you can delete everything in your resource group using the group delete command.
+
+```azurecli
+az group delete --name myResourceGroup --yes --no-wait
+```
+
 ::: zone-end
 
 ::: zone pivot="windows-cloud"
@@ -222,24 +237,32 @@ When you've finished this task, the shared disk is attached to two VMs at the sa
 
 To further demonstrate Azure shared disk functionality, deploy two Windows VMs running the Windows server operating system (OS). You'll then test the SCSI Persistent Reservations (PR) commands on the Azure shared disk.
 
-In this exercise, you'll explore Azure shared disk deployment and perform the following tasks:
+In this exercise, you explore Azure shared disk deployment and perform the following tasks:
 
-- Create an Azure shared disk.
-- Create an availability set.
-- Deploy two VMs running Windows Server OS and configure clustered services.
-- Test SCSI PR commands.
+- Create an Azure shared disk
+- Create an availability set
+- Deploy two VMs running Windows Server OS and configure clustered services
+- Test SCSI PR commands
 
 ### Create an Azure shared disk
+
+You need a resource group to contain the resources you'll create for this exercise. Here we use `myResourceGroup`, but you can use whatever name you like. This example uses the location `eastus`, but you can choose a location close to you. Use this command to create a resource group:
+
+``` azurepowershell
+# Switch to PowerShell
+pwsh
+
+# Create the resource group
+New-AzResourceGroup -Name myResourceGroup -Location "eastus"
+```
 
 1. In Cloud Shell, you can switch from the Azure CLI to Azure PowerShell by running the following command:
 
     ```azurepowershell
-    # Switch to PowerShell
-    pwsh
 
     # Create Azure Shared disk
-    $dataDiskConfig=New-AzDiskConfig -Location "EastUs" -DiskSizeGB 1024 -AccountType Premium_LRS -CreateOption Empty -MaxSharesCount 2
-    $dataDisk=New-AzDisk -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -DiskName "mySharedDisk1" -Disk $dataDiskConfig
+    $dataDiskConfig=New-AzDiskConfig -Location "eastus" -DiskSizeGB 1024 -SkuName Premium_LRS -CreateOption Empty -MaxSharesCount 2
+    $dataDisk=New-AzDisk -ResourceGroupName myResourceGroup -DiskName "mySharedDisk1" -Disk $dataDiskConfig
     ```
 
 ### Create an availability set
@@ -249,13 +272,15 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
     ```azurepowershell
     # Create a managed availability set by using New-AzAvailabilitySet with the -sku aligned parameter.
     New-AzAvailabilitySet `
-      -Location "EastUS" `
+      -Location "eastus" `
       -Name "myAvailabilitySet1" `
-      -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+      -ResourceGroupName myResourceGroup `
       -Sku aligned `
       -PlatformFaultDomainCount 2 `
       -PlatformUpdateDomainCount 2
     ```
+
+This command can take several minutes to complete.
 
 ### Create two VMs that are running Windows Server
 
@@ -276,7 +301,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
     for ($i=3; $i-le4; $i++)
     {
         New-AzVm `
-          -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+          -ResourceGroupName myResourceGroup `
           -Name "myVM$i" `
           -Location eastus `
           -VirtualNetworkName "myVnet1" `
@@ -294,25 +319,25 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 1. Use the following command to attach the Azure shared disk to the first VM:
 
     ```azurepowershell
-    $vm3 = Get-AzVM -Name "myvm3" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+    $vm3 = Get-AzVM -Name "myvm3" -ResourceGroupName myResourceGroup
     $vm3 = Add-AzVMDataDisk -VM $vm3 -CreateOption Attach -ManagedDiskId $dataDisk.Id -Lun 0
 
-    Update-AzVM -VM $vm3 –ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+    Update-AzVM -VM $vm3 –ResourceGroupName myResourceGroup
     ```
 
 1. Attach the Azure shared disk to the second VM:
 
     ```azurepowershell
-    $vm4 = Get-AzVM -Name "myvm4" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+    $vm4 = Get-AzVM -Name "myvm4" -ResourceGroupName myResourceGroup
     $vm4 = Add-AzVMDataDisk -VM $vm4 -CreateOption Attach -ManagedDiskId $dataDisk.Id -Lun 0
 
-    Update-AzVM -VM $vm4 –ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+    Update-AzVM -VM $vm4 –ResourceGroupName myResourceGroup
     ```
 
 ### Install Windows Failover Clustering Service on myVM3
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and make sure you're in the sandbox subscription.
-1. In the **search resources, services, and docs (G+/)** field, enter **virtual machines**, and then select **virtual machines.**
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. In the **Search resources, services, and docs (G+/)** field, enter **virtual machines**, and then select **Virtual machines.**
 1. Select the **myVM3** VM from the toolbar, select **Connect**, and then select **RDP**.
 1. Select **Download RDP File**, and then connect by using the following credentials:
 
@@ -359,8 +384,8 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 1. Verify that the **Include management tools (if applicable)** checkbox is selected. Select **Add Features**, and then select **Next**.
 1. On the **Confirmation** page, select the **Restart the destination server automatically if required** checkbox, and then select **Yes.** Select **Install** to install the Failover Clustering role.
 
->[!Note]
->After the failover cluster feature is installed, virtual machine **myVM4** automatically restarts.
+> [!NOTE]
+> After the failover cluster feature is installed, virtual machine **myVM4** automatically restarts.
 
 ### Test the storage for Windows Failover Clustering Service on myVM3
 
@@ -382,13 +407,17 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 1. Verify that all the tests are successful, and then select **Finish**.
 1. Close the RDP connection.
 
->[!Note]
->To continue creating the cluster, you'll need to meet additional prerequisites, such as Azure Active Directory Domain Services (Azure AD DS), and create a static IP address to use for the internal load balancer.
+> [!NOTE]
+> To continue creating the cluster, you'll need to meet additional prerequisites, such as Microsoft Entra Domain Services (Microsoft Entra Domain Services), and create a static IP address to use for the internal load balancer.
 >
->This step is out of scope for this exercise.
+> This step is out of scope for this exercise.
+
+### Clean up the Windows VM resources
+
+When you're done, you can delete everything in your resource group using the group delete command.
+
+```azurepowershell
+Remove-AzResourceGroup -Name "myResourceGroup" -Force -AsJob
+```
 
 ::: zone-end
-
-### Clean up the resources
-
-The sandbox automatically cleans up your resources when you're finished with this module.

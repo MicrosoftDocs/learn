@@ -11,8 +11,8 @@ In this module, you'll learn about common batch-processing workloads. You'll lea
 
 After you complete this module, you'll be able to:
 
-- Create an Azure Batch job by using the Azure portal
-- Run an Azure Batch job by using the Azure portal  
+- Create an Azure Batch job by using the Azure portal.
+- Run an Azure Batch job by using the Azure portal.
 
 ## Prerequisites
 

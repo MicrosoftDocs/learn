@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.monitor-azure-vm-using-diagnostic-data.enable-vm-insights
+title: Collect client performance counters by using VM insights
+metadata:
+  title: Collect client performance counters by using VM insights
+  description: Enable Azure Monitor VM insights with process and dependency mapping to monitor and map client performance counter metrics.
+  ms.date: 11/06/2023
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-enable-vm-insights.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What capabilities does enabling VM insights provide?
+    choices:
+    - content: Prebuilt client performance workbooks and guest OS metrics.
+      isCorrect: true
+      explanation: Enable VM insights with the Azure Monitor Agent to collect guest OS metrics and use prebuilt workbooks to visualize VM client performance.
+    - content: Graphs that show several host metrics on one graph with customizable timeframes.
+      isCorrect: false
+      explanation: To build metrics graphs that show several host metrics on one graph with adjustable timeframes, use Metrics Explorer.
+    - content: Azure VM log collection and analytics.
+      isCorrect: false
+      explanation: Azure Monitor doesn't collect any logs by default. You have to set up DCRs to collect logs and send them to Log Analytics.
+  - content: What's a quick way to install the Azure Monitor Agent to collect guest OS metrics?
+    choices:
+    - content: Install the diagnostics extension under **Diagnostics settings**.
+      isCorrect: false
+      explanation: The diagnostics extension isn't related to the Azure Monitor Agent.
+    - content: You don't have to install or enable anything to use the Azure Monitor Agent to collect guest OS metrics.
+      isCorrect: false
+      explanation: Guest OS metrics aren't collected by default. You must install the Azure Monitor Agent to collect guest OS metrics.
+    - content: Select the **Azure Monitor Agent** when you enable VM insights.
+      isCorrect: true
+      explanation: Select the Azure Monitor Agent instead of the legacy Log Analytics Agent when you enable VM insights.

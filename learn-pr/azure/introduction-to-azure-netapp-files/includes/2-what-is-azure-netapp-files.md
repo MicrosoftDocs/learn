@@ -20,11 +20,11 @@ Azure NetApp Files is an enterprise-class, high-performance, fully managed NAS s
 
 ## Performance
 
-Azure NetApp Files is designed for the highest possible performance so that it can manage even the most demanding Windows and Linux workloads. This performance is achieved by running Azure NetApp Files instances on dedicated NetApp hardware running NetApp's proprietary ONTAP operating system, which is optimized for extremely high storage throughput and availability.
+Azure NetApp Files is designed for the highest possible performance so that it can manage even the most demanding Windows and Linux workloads. This performance is achieved by running Azure NetApp Files instances on dedicated NetApp hardware running NetApp's proprietary ONTAP operating system, which is optimized for high storage throughput and availability.
 
 Azure NetApp Files performance is measured in two ways:
 
-- Input/output operations per second (IOPS). IOPS is a storage-performance benchmark that measures the average number of read and write operations a storage device can perform per second. Azure NetApp Files offers up to 320,000 IOPS on its lowest performance tier, and up to 450,000 IOPS on its highest tiers. By comparison, most solid-state drives (SSDs) have throughput measurements between 100,000 IOPS and 400,000 IOPS.
+- Input/output operations per second (IOPS). A storage-performance benchmark that measures the average number of read and write operations a storage device can perform per second. Azure NetApp Files offers up to 320,000 IOPS on its lowest performance tier, and up to 450,000 IOPS on its highest tiers. By comparison, most solid-state drives (SSDs) have throughput measurements between 100,000 IOPS and 400,000 IOPS.
 - Latency. Latency is the time required to access a particular storage location. Azure NetApp Files offers an average latency of less than 1 millisecond (ms). By comparison, regular hard drives have latencies between 1 ms and 10 ms, whereas SSDs have latencies between 0.05 ms and 0.15 ms.
 
 Given these measurements, you can understand why Azure NetApp Files provides performance that is comparable to or even better than on-premises performance.
@@ -46,7 +46,7 @@ Azure NetApp Files offers the widest choice of file protocols among public cloud
 - SMB 2.x
 - SMB 3.x
 
-Azure NetApp Files already supports dual-protocol access to NFSv3 and SMB volumes as of July 2020. You can now create an Azure NetApp Files volume that allows simultaneous dual-protocol (NFSv4.1 and SMB) access with support for LDAP user mapping. This feature enables use cases where you might have a Linux-based workload using NFSv4.1 for its access, and the workload generates and stores data in an Azure NetApp Files volume.
+Azure NetApp Files already supports dual-protocol access to NFSv3 and SMB volumes. You can now create an Azure NetApp Files volume that allows simultaneous dual-protocol (NFSv4.1 and SMB) access with support for Lightweight Directory Access Protocol (LDAP) user mapping. This feature enables use cases where you might have a Linux-based workload using NFSv4.1 for its access, and the workload generates and stores data in an Azure NetApp Files volume.
 
 Azure NetApp Files also supports creating volumes that can use both NFS 3.0 and SMB at the same time. Using both protocols on a volume enables both Linux-based and Windows-based enterprise applications that rely on file-based datasets to simultaneously access and share that data.
 
@@ -70,7 +70,7 @@ The following diagram illustrates the snapshot process:
 
 :::image type="content" source="../media/2-what-is-azure-netapp-files-snapshots.png" alt-text="Diagram depicting how Azure NetApp Files snapshots work." lightbox="../media/2-what-is-azure-netapp-files-snapshots.png":::
 
-An Azure NetApp Files snapshot only manipulates block pointers, creating a "frozen," read-only view of a volume. Actual data blocks aren't copied, which leads to two efficiencies:
+An Azure NetApp Files snapshot only manipulates block pointers, creating a *frozen*, read-only view of a volume. Actual data blocks aren't copied, which leads to two efficiencies:
 
 - Speed. Creating a snapshot is near-instantaneous. No matter what volume size you're working with, creating a snapshot takes only a few seconds.
 - Space. A snapshot consumes minimal storage space because it doesn't copy the data blocks of the entire volume. Two snapshots taken in sequence differ only by the blocks added or changed in the time interval between the two.
@@ -82,14 +82,14 @@ You can create up to 255 snapshots per volume. Creating a snapshot doesn't affec
 
 ### Cross-region Replication
 
-Azure NetApp Files replication functionality provides data protection through cross-region volume replication. You can asynchronously replicate data from an Azure NetApp Files volume (source) in one region to another Azure NetApp Files volume (destination) in another region. This capability enables you to failover your critical application if there's a region-wide outage or disaster.
+Azure NetApp Files replication functionality provides data protection through cross-region volume replication. You can asynchronously replicate data from an Azure NetApp Files volume (source) in one region to another Azure NetApp Files volume (destination) in another region. This capability enables you to fail over your critical application if there's a region-wide outage or disaster.
 
 ### Data recovery
 
-The point of creating volume snapshots is to recover data that has been corrupted or has been accidentally deleted, overwritten, or modified. Azure NetApp Files gives you three ways to recover data by using snapshots:
+The point of creating volume snapshots is to recover data that is corrupted or accidentally deleted, overwritten, or modified. Azure NetApp Files gives you three ways to recover data by using snapshots:
 
 - Restore one or more files or directories from a snapshot.
-- *Clone* the volume. Restore a snapshot to a new volume by creating an identical copy of the volume in a new location.
+- Create a *Clone* of the volume. Restore a snapshot to a new volume by creating an identical copy of the volume in a new location.
 - *Revert* the volume. Restore a snapshot in-place by returning the volume to the state it was in when you created the snapshot.
 
 ## How to give your web development team access to the same data

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-intelligent-planners.learn-about-ai-planners
+title: Learn about AI planners
+metadata:
+  title: Learn about AI planners
+  description: "Learn about AI planners"
+  ms.date: 06/11/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-learn-about-ai-planners.md)]

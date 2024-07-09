@@ -1,7 +1,0 @@
-As an educator, you play a pivotal role in empowering students for future success. Skilling our future generations is critical work. The AI-102: Designing and Implementing a Microsoft Azure AI Solution course provides students with skills to build, manage, and deploy AI solutions that use Azure Cognitive Services and Azure Applied AI services. Students preparing for the exam should have proficiency in C# or Python and should be able to use REST-based APIs and SDKs to build computer vision, natural language processing, knowledge mining, and conversational AI solutions on Azure. They should also understand the components that make up the Azure AI portfolio, the available data storage options, and need to understand and be able to apply responsible AI principles. 
-
-Before we begin, make sure you use the most up-to-date version of the Microsoft Official Curriculum. It's recommended that you log into the [Learning Download Center](https://aka.ms/ldc) (LDC) at least quarterly. If you haven't already done so, download the course materials from the LDC before continuing with this module.   
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y1Nf]  
-
-Now that you have the updated materials, you’re ready to prepare for your class. 

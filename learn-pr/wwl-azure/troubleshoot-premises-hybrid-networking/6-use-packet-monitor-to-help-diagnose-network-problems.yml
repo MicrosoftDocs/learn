@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.troubleshoot-premises-hybrid-networking.use-packet-manager-to-help-diagnose-network-problems
-title: Use Packet Manager to help diagnose network problems
+title: Use Packet Monitor to help diagnose network problems
 metadata:
-  title: Use Packet Manager to help diagnose network problems
-  description: "Use Packet Manager to help diagnose network problems"
-  ms.date: 06/08/2022
+  title: Use Packet Monitor to help diagnose network problems
+  description: "Use Packet Monitor to help diagnose network problems"
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/6-use-packet-monitor-to-help-diagnose-network-problems.md)]

@@ -3,12 +3,11 @@ uid: learn.wwl.explore-azure-storage.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 04/20/2023
+  description: "Summary of the module."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/21-summary.md)]

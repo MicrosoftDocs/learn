@@ -4,11 +4,11 @@ title: Explore the Azure Resource Manager template structure and schema
 metadata:
   title: Explore the Azure Resource Manager template structure and schema
   description: "Explore the Azure Resource Manager template structure and schema"
-  ms.date: 04/21/2023
+  ms.date: 11/08/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-arm-template
 durationInMinutes: 6
 content: |
   [!include[](includes/4-explore-azure-resource-manager-template-structure-schema.md)]

@@ -4,13 +4,12 @@ title: Examine threat modeling and mitigation techniques
 metadata:
   title: Examine threat modeling and mitigation techniques
   description: "Examine threat modeling and mitigation techniques"
-  ms.date: 07/18/2022
+  ms.date: 05/31/2024
   author: wwlpublish
-  ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 9
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
 content: |
   [!include[](includes/5-iot-security-architecture-threat-modeling.md)]

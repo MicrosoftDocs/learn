@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.introduction-prompt-engineering-with-github-copilot.github-copilot-user-prompt-process-flow
+title: GitHub Copilot user prompt process flow
+metadata:
+  title: GitHub Copilot user prompt process flow
+  description: This content is part of the "Introduction to prompt engineering with GitHub Copilot" module.
+  ms.date: 11/10/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-github-copilot-user-prompt-process-flow.md)]

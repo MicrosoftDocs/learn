@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.use-databases-dotnet-aspire-app.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 3/20/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/summary.md)]

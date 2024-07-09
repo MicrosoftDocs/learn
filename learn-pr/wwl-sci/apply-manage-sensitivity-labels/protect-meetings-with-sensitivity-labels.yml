@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-manage-sensitivity-labels.protect-meetings-with-sensitivity-labels
+title: Protect meetings with sensitivity labels
+metadata:
+  title: Protect meetings with sensitivity labels
+  description: "Protect meetings with sensitivity labels."
+  ms.date: 06/03/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/protect-meetings-with-sensitivity-labels.md)]

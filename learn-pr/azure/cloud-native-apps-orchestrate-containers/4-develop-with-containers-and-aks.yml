@@ -3,12 +3,11 @@ uid: learn.azure.cna-orchestrate-containers.4-developing-with-containers-and-aks
 title: Developing with containers and AKS
 metadata:
   title: Developing with containers and AKS
-  description: We examine developing with containers and AKS
-  ms.date: 10/23/2020
-  author: tomreidnz
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: We examine developing with containers and AKS.
+  ms.date: 12/28/2023
+  author: rayoef
+  ms.author: rayoflores
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-develop-with-containers-and-aks.md)]

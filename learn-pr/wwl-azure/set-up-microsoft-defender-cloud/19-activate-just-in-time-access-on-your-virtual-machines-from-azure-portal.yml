@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.set-up-microsoft-defender-cloud.activate-just-in-time-access-on-your-virtual-machines-from-azure-portal
+title: Exercise - Enable just-in-time access on Virtual Machines
+metadata:
+  title: Exercise - Enable just-in-time access on Virtual Machines
+  description: "Exercise - Enable just-in-time access on Virtual Machines"
+  ms.date: 04/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 30
+content: |
+  [!include[](includes/19-activate-just-in-time-access-on-your-virtual-machines-from-azure-portal.md)]

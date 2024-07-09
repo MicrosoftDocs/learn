@@ -4,11 +4,10 @@ title: Access an API with an Azure Logic Apps custom connector
 metadata:
   title: Access an API with an Azure Logic Apps custom connector
   description: In this unit, you'll learn how to create a custom connector for Azure Logic Apps.
-  ms.date: 04/11/2019
+  ms.date: 05/02/2023
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ROBOTS: INDEX,FOLLOW
 durationInMinutes: 5
 content: |

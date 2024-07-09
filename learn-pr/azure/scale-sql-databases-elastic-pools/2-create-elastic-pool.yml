@@ -2,13 +2,15 @@
 uid: learn.azure-scale-azure-sql-databases-elastic-pools.create-elastic-pool
 metadata:
   title: Create a SQL elastic pool
-  description: Create a SQL elastic pool
-  ms.date: 5/03/2019
+  description: Learn how to create an Azure SQL Database elastic pool.
+  ms.date: 12/15/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Create a SQL elastic pool
 durationInMinutes: 7
 content: |

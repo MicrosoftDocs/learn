@@ -4,11 +4,10 @@ title: Request data
 metadata:
   title: Request data
   description: Discussion of the approach and key principles of how Microsoft handles government request for data, with focus on CLOUD Act.
-  ms.date: 02/23/2021
-  author: Adriamen
-  ms.author: micrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/25/2023
+  author: EliotSeattle
+  ms.author: eliotgra
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-government-requests-data.md)] 

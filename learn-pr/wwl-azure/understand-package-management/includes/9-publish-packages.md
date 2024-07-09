@@ -8,7 +8,7 @@ These components need to be managed and packaged. After that, they can be publis
 
 The first step is to create a feed where the packages can be stored. In Azure Artifacts, you can create multiple feeds, which are always private.
 
-During creation, you can specify the name, visibility and prepopulate the default public upstream sources for NuGet, NPM, and Python packages.
+During creation, you can specify the name, visibility and prepopulate the default public upstream sources for NuGet, npm, and Python packages.
 
 ## What are feeds in Azure Artifacts?
 

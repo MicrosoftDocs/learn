@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.extract
+title: Extract key phrases
+metadata:
+  title: Extract key phrases
+  description: "Extract key phrases"
+  ms.date: 04/29/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-extract.md)]

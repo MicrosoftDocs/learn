@@ -4,11 +4,11 @@ title: Examine application-consistent backup of Azure Linux virtual machines
 metadata:
   title: Examine application-consistent backup of Azure Linux virtual machines
   description: "Examine application-consistent backup of Azure Linux virtual machines"
-  ms.date: 04/25/2023
+  ms.date: 10/27/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 8
 content: |
   [!include[](includes/3-examine-application-consistent-backup-azure-linux-virtual-machines.md)]

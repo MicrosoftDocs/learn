@@ -6,9 +6,8 @@ metadata:
   description: This unit provides a scenario where the aim is to increase someone's flexibility. It also lets you reflect on your own cognitive flexibility skills.
   ms.date: 09/07/2021
   author: interurban
-  ms.author: jadenyer
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 
 durationInMinutes: 3

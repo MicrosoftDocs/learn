@@ -3,12 +3,11 @@ uid: learn.wwl.explore-azure-storage.explore-nfs-v4-1-volumes-azure-netapp-files
 title: Explore NFS v4.1 volumes on Azure NetApp Files
 metadata:
   title: Explore NFS v4.1 volumes on Azure NetApp Files
-  description: "Explore NFS v4.1 volumes on Azure NetApp Files"
-  ms.date: 04/20/2023
+  description: "Explore NFS v4.1 volumes on Azure NetApp Files, and learn about important considerations."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/18-explore-nfs-v4-1-volumes-azure-netapp-files.md)]

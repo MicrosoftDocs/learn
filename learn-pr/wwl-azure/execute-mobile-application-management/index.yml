@@ -3,20 +3,20 @@ uid: learn.wwl.execute-mobile-application-management
 metadata:
   title: MD-102 Execute mobile application management
   description: "This module introduces Mobile Application Management (MAM). Students will learn about considerations for implementing MAM and will be introduced to the management of MAM using Intune and Configuration Manager."
-  ms.date: 03/17/2023
+  ms.date: 07/18/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: intune
+  ms.topic: module
+  ms.service: configuration-manager
 title: Execute mobile application management
 summary: This module introduces Mobile Application Management (MAM). Students will learn about considerations for implementing MAM and will be introduced to the management of MAM using Intune and Configuration Manager.
 abstract: |
   After this module, you should be able to:
-  *   Explain Mobile Application Management
-  *   Understand application considerations in MAM
-  *   Explain how to use Configuration Manager for MAM
-  *   Use Intune for MAM
-  *   Implement and manage MAM policies
+  *   Explain Mobile Application Management.
+  *   Understand application considerations in MAM.
+  *   Explain how to use Configuration Manager for MAM.
+  *   Use Intune for MAM.
+  *   Implement and manage MAM policies.
 prerequisites: |
   *   Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
   *   Strong understanding of computer networking, client security, and application concepts

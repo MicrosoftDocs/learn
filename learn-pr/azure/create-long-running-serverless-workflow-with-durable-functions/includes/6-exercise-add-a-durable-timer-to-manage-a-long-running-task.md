@@ -10,23 +10,23 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **All resources**, and then select the function app that you created in the previous exercise. Your **Function App** pane appears.
 
-1. In the middle menu bar, under **Development Tools**, select **Console**. The **Console** pane appears for your function app.
+1. In the left menu bar, under **Development Tools**, select **Console**. The **Console** pane appears for your function app.
 
-1. Verify that the console window opens in the _C:\home\site\wwwroot_ folder, then run the following commands to install the libraries that are required for this sample function app.
+1. Verify that the console window opens in the *C:\home\site\wwwroot* folder, then run the following commands to install the libraries that are required for this sample function app.
 
-    1. Run the following command to install the _typescript_ library, which is a required dependency for static typing.
+    1. Run the following command to install the *TypeScript* library, which is a required dependency for static typing.
 
         ```bash
         npm install typescript
         ```
-    
-    1. Run the following command to install the _moment_ library, which contains date/time functions that you can use with durable functions. 
+
+    1. Run the following command to install the *moment* library, which contains date/time functions that you can use with durable functions.
 
         ```bash
         npm install moment
         ```
 
-        These commands may take a few seconds to complete, and the node package manager may display some warnings that you can ignore.
+        These commands might take a few seconds to complete, and the node package manager might display some warnings, which you can ignore.
 
 1. Wait until all packages have finished installing, then close the console window.
 
@@ -37,19 +37,19 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **All resources**, and then select your function app. Your **Function App** pane appears.
 
-1. In the middle menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
+1. Select the **Functions** tab in the center of the screen.
 
-1. In the top menu bar, select **Create**. The **Create function** pane appears.
+1. In the **Functions** tab menu bar, select **Create**. The **Create function** pane appears.
 
-1. Under **Select a template**, in the **Filter** box, enter *Durable Functions activity*, and select that template from the list. This template creates a durable function that is run when an activity is called by an orchestrator function.
+1. Under **Select a template**, in the **Filter** box, enter *Durable Functions activity* and select that template from the list. This template creates a durable function that is run when an activity is called by an orchestrator function.
 
 1. Under **Template details**, for the **New Function** field, enter *Escalation* for the name of the function, and select **Create**. The **escalation** pane appears for your function.
 
 1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
 
     The code for the **index.js** file appears in the editor.
-    
-1. Replace the existing code with the following code.
+
+1. Replace the existing code with the following code:
 
     ``` javascript
     module.exports = async function (context) {
@@ -65,7 +65,7 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **All resources**, and then select your function app. Your **Function App** pane appears.
 
-1. In the middle menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
+1. Select the **Functions** tab in the center of the screen.
 
 1. Select your **OrchFunction** function that you created in the previous exercise. The **OrchFunction** function pane appears.
 
@@ -106,7 +106,7 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
     });
     ```
 
-    To keep things brief for the purposes of this exercise, if the **Approval** function doesn't respond within 20 seconds, the **Escalation** function is called. The code also changes the call to **Approval** to wait for an external input. This way we can control when the response comes back for testing purposes.
+    To keep things brief for the purposes of this exercise, if the **Approval** function doesn't respond within 20 seconds, the **Escalation** function is called. The code also changes the call to **Approval** to wait for an external input. This way, we can control when the response comes back for testing purposes.
 
 1. In the top menu bar, select **Save**.
 
@@ -116,25 +116,25 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 1. On the **Overview** pane, on the top menu bar, select **Restart**, and then select **Yes** when prompted to restart. Wait for the restart to complete before continuing. Your **Function App** pane reappears.
 
-1. In the middle menu pane, Under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
+1. Select the **Functions** tab in the center of the screen.
 
 1. Select your **HttpStart** function. The **HttpStart** pane appears.
 
-1. On the top menu bar, select **Get Function Url**, and copy the URL. Your URL should resemble the following example.
+1. On the top menu bar, select **Get Function Url**, and copy the URL. Your URL should resemble the following example:
 
-    ```
+    ```text
     https://example.azurewebsites.net/api/orchestrators/{functionName}?code=AbCdEfGhIjKlMnOpQrStUvWxYz==
     ```
 
     You'll use this URL to run your functions.
 
-1. Open a new browser window, and navigate to the URL that you copied. In the URL, replace the **{functionName}** placeholder with **OrchFunction**, which should resemble the following example.
+1. Open a new browser window, and navigate to the URL that you copied. In the URL, replace the **{functionName}** placeholder with **OrchFunction**, which should resemble the following example:
 
-    ```
+    ```text
     https://example.azurewebsites.net/api/orchestrators/OrchFunction?code=AbCdEfGhIjKlMnOpQrStUvWxYz==
     ```
 
-   The response message contains a set of URI endpoints that you can use to monitor and manage the execution, which should resemble the following example.
+   The response message contains a set of URI endpoints that you can use to monitor and manage the execution, which should resemble the following example:
 
     ```json
     {
@@ -147,7 +147,7 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
     }
     ```
 
-1. Copy the **statusQueryGetUri** value, and use your web browser to navigate to this URL. You should see a response message that shows the status as _Running_ while it is waiting for the timer to countdown to 20 seconds, which should resemble the following example.
+1. Copy the **statusQueryGetUri** value and use your web browser to navigate to that URL. You should see a response message that shows the status as _Running_ while it's waiting for the timer to count down to 20 seconds, which should resemble the following example:
 
     ```json
     {
@@ -162,7 +162,7 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
     }
     ```
 
-1. Wait for 20 seconds and refresh the browser window. The timeout will have been reached, and the workflow will call the **Escalate** activity. You'll see a response that should resemble the following example.
+1. Wait for 20 seconds and refresh the browser window. The timeout will have been reached, and the workflow will call the **Escalate** activity. You'll see a response that should resemble the following example:
 
     ```json
     {

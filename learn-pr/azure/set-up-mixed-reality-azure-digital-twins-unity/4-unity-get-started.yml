@@ -4,11 +4,10 @@ title: Get started with Unity
 metadata:
   title: Get started with Unity
   description: Learn how to download and create a Unity project from scratch for mixed reality and Azure Digital Twins.
-  ms.date: 05/12/2021
+  ms.date: 01/24/2024
   author: JBrentJ
   ms.author: jejacks
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/4-unity-get-started.md)]

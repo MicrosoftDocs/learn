@@ -3,11 +3,10 @@ uid: learn.language.rust-generic-types-traits.3-derive
 metadata:
   title: Use the derive trait
   description: Learn how to use the derive trait.
-  ms.date: 05/16/2021
+  ms.date: 12/06/2022
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Use the derive trait
 durationInMinutes: 5

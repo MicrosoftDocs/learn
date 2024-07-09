@@ -6,8 +6,8 @@ metadata:
   ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: event-hubs
 title: Explore Azure Event Hubs
 summary: Learn how Azure Event Hubs captures events and how to scale your processing application.
 abstract: |
@@ -26,7 +26,7 @@ roles:
 products:
 - azure-event-hubs
 subjects:
-- data-ai
+- data-management
 units:
 - learn.wwl.azure-event-hubs.introduction
 - learn.wwl.azure-event-hubs.discover

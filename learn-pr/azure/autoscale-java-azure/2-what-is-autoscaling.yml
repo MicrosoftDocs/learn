@@ -5,13 +5,14 @@ metadata:
   unitType: learning-content
   title: What is autoscaling
   description: You'll learn about the basic concepts for autoscale on Azure
-  ms.date: 11/18/2021
+  ms.date: 03/22/2023
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.contributors: ropreddy-12032021
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
 durationInMinutes: 3
 content: |
   [!include[](includes/2-what-is-autoscale.md)]

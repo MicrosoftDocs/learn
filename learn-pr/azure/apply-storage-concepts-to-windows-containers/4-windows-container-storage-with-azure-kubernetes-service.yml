@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.apply-storage-concepts-to-windows-containers.windows-container-storage-with-azure-kubernetes-service
+title: Windows container storage with Azure Kubernetes Service
+metadata:
+  unitType: learning-content
+  title: Windows container storage with Azure Kubernetes Service
+  description: In the previous unit, we learned how Kubernetes manages and orchestrates your container-based applications and their associated storage components. We also learned about the Kubernetes cluster architecture that consists of a control plane for core services, and nodes for application resources.
+  ms.date: 02/13/2024
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-windows-container-storage-with-azure-kubernetes-service.md)]

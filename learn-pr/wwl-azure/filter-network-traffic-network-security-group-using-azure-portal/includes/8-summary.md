@@ -1,0 +1,1 @@
+In this module, you learned to enhance network security using Azure Network Security Groups (NSG), filter and control network traffic, prioritize NSG rules, and use NSG flow logs for monitoring and troubleshooting.

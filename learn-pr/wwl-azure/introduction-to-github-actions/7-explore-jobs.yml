@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-github-actions.explore-jobs
-title: Explore jobs
+title: Explore Jobs
 metadata:
-  title: Explore jobs
-  description: "Explore jobs"
-  ms.date: 12/09/2022
+  title: Explore Jobs
+  description: "Explore Jobs"
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
 content: |
   [!include[](includes/7-explore-jobs.md)]

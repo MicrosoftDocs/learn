@@ -1,6 +1,6 @@
 You'll be working with a Python project that shows a dashboard of products. To run this project in a container, you'll need the Dev Containers extension for Visual Studio Code.
 
-In this exercise, you'll clone one of the agency's projects: a Products Dashboard written in Python and install the Dev Containers extension for Visual Studio Code.
+In this exercise, you'll clone one of the agency's projects—a Products Dashboard written in Python—and install the Dev Containers extension for Visual Studio Code.
 
 ## Clone the sample repo
 
@@ -16,7 +16,7 @@ In this exercise, you'll clone one of the agency's projects: a Products Dashboar
 1. Paste in the URL from your clipboard.
 1. Select a location on your disk where the project can be cloned to.
 1. Select **Open** from the notification in Visual Studio Code.
-1. If you see a pop-up that asks if you trust the authors, select "Yes, I trust the authors".
+1. If you see a pop-up that asks if you trust the authors, select **Yes, I trust the authors**.
 
 The project should now be open in Visual Studio Code.
 
@@ -34,4 +34,4 @@ The project should now be open in Visual Studio Code.
 
    :::image type="content" source="../media/install-remote-containers.png" alt-text="Screenshot of the Visual Studio Code extension gallery showing Dev Containers extension." loc-scope="other"::: <!-- no-loc -->
 
-The Dev Containers extension will be installed, and you'll have access to the commands that it adds to Visual Studio Code.
+The Dev Containers extension will install, and you'll have access to the commands that it adds to Visual Studio Code.

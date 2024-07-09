@@ -1,19 +1,19 @@
 ![Rendering of a circle representing the Process Element.](../media/process.png)
 
-Depicted by a circle, this element represents activities that can modify or redirect received input to their proper outputs.
+The **process element** is depicted as a circle. It represents activities that can modify or redirect received input to their proper outputs.
 
 Examples include:
 
-- A microservice that receives an API call request and forwards it to an API handling service
-- Code that validates data input before it writes to a data store
+- A microservice that receives an API call request and forwards it to an API handling service.
+- Code that validates data input before it writes to a data store.
 
 ## When to use the process element
 
 Add a process element between:
 
-- **Data stores**: Processes handle all communication between data stores
-- **External entities with other elements**: Processes handle all tasks and communication
-- **Processes**: Processes handle all tasks
+- **Data stores**: Processes handle all communication between data stores.
+- **External entities with other elements**: Processes handle all tasks and communication.
+- **Processes**: Processes handle all tasks.
 
 Depending on the information-depth level required for a data-flow diagram, you may use the process element to represent a few distinct use cases:
 
@@ -24,7 +24,7 @@ Depending on the information-depth level required for a data-flow diagram, you m
 
 ## Include context
 
-Include the following context to each process element:
+Include the following context with each process element:
 
 |Context|Questions|
 |-------|---------|
@@ -33,5 +33,5 @@ Include the following context to each process element:
 |Service isolation|Is the process running in a sandbox?|
 |Input|Can this process accept input from everyone, local accounts, or just administrators?|
 |Validation|How does the process parse, handle, and accept input?|
-|Authentication|Does the process rely on Azure Active Directory for authentication? If not, on what does it rely?|
+|Authentication|Does the process rely on Microsoft Entra ID for authentication? If not, on what does it rely?|
 |Authorization|Does it rely on Access Control Lists (ACL) for authorization? If not, on what does it rely?|

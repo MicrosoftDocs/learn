@@ -13,3 +13,8 @@ Review the following options and think about what storage accounts are required 
 
 > [!NOTE]
 > All storage account types are encrypted by using Storage Service Encryption (SSE) for data at rest.
+
+### How to manage your storage account
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/-j_8clCWYn8" title="How to move Azure Storage Blobs between containers" allowfullscreen></iframe>
+

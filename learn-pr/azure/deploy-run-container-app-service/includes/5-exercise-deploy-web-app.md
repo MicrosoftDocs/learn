@@ -6,7 +6,7 @@ In this unit, you'll create a new web app by using the Docker image stored in Az
 
 ## Enable Docker access to the Azure Container Registry
 
-You'll use Docker to log in to the registry, and pull the web image that you want to deploy. Docker needs a username and password to perform this action. The Container Registry enables you to set the registry name as the username and the admin access key as the password to allow Docker to log in to your container registry.
+You'll use Docker to log in to the registry and pull the web image that you want to deploy. Docker needs a username and password to perform this action. The Container Registry enables you to set the registry name as the username and the admin access key as the password to allow Docker to log in to your container registry.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and go to **All resources**. The **All resources** pane appears.
 
@@ -14,7 +14,7 @@ You'll use Docker to log in to the registry, and pull the web image that you wan
 
 1. In the left menu pane, under **Settings**, select **Access keys**. The **Access keys** pane appears for your container registry.
 
-1. Set the **Admin user** option to **Enabled**. This change saves automatically.
+1. Check the **Admin user** box. This change saves automatically.
 
 You're now ready to create your web app.
 
@@ -37,20 +37,24 @@ You're now ready to create your web app.
     | Resource Group | From the dropdown list, select the existing resource group **learn-deploy-container-acr-rg**. |
     | **Instance Details** |
     | Name | Enter a unique name and make a note of it for later. |
-    | Publish | **Docker Container** |
+    | Publish | **Container** |
     | Operating System | **Linux** |
     | Region | Select the same location that is close to you from previous exercise. |
-    | **App Service Plan** |
-    | App Service plan | Use the default. |
+    | **Pricing plans** |
+    | Linux plan | Use the default. |
+    | Pricing plan | Use the default. |
+    | **Zone redundancy** |
+    | Zone redundancy | Use the default. |
 
-1. Select **Next:&nbsp;Docker&nbsp;&gt;**.
+1. Select the **Container** tab at the top of the screen.
 
-1. On the **Docker** tab, enter the following values for each setting.
+1. On the **Container** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---|---|
-    | Options | **Single Container** |
+    | Sidecar support (preview) | Accept default |
     | Image Source | **Azure Container Registry** |
+    | Options | **Single Container** |
     | **Azure container registry options** |
     | Registry | Select your registry. |
     | Image | `webimage` |
@@ -63,11 +67,11 @@ You're now ready to create your web app.
 
 1. After deployment succeeds, select **Go to resource** to see the web app you just created. Your **App service** pane appears for your web app.
 
-2. In the top menu bar, select **Browse** to open the site in a new browser tab.
+2. Select the URL in the **Default domain** field to open the site in a new browser tab.
 
 ::: zone pivot="csharp"
 
-3. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like the following image.
+3. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like the following image:
 
     ![Screenshot of the sample Docker image.](../media/5-sample-web-app-dotnet.png)
 
@@ -75,7 +79,7 @@ You're now ready to create your web app.
 
 ::: zone pivot="javascript"
 
-3. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like the following image.
+3. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like the following image:
 
     ![Screenshot of the sample Welcome to Express.](../media/5-sample-web-app-node.png)
 

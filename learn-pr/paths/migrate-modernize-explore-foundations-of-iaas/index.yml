@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.wwl.migrate-modernize-explore-foundations-of-iaas
+metadata:
+  title: Modernize and explore the foundations of IaaS for SAP on Azure
+  description: Modernize and explore the foundations of IaaS for SAP on Azure
+  ms.date: 01/10/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: learning-path
+  ms.service: azure
+title: Modernize and explore the foundations of IaaS for SAP on Azure
+prerequisites: |
+  Before taking this training, you should complete the Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam, and SAP HANA or NetWeaver training.
+summary: |
+  As an IT Professional experienced in SAP solutions, you need to understand how to leverage Azure resources that include virtual machines, virtual networks, storage accounts, and Azure AD. These modules will provide the basis for running SAP workloads in Azure.
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+modules:
+- learn.wwl.migrate-modernize-explore-azure-compute
+- learn.wwl.modernize-explore-azure-network
+- learn.wwl.migrate-modernize-explore-azure-storage
+trophy:
+  uid: learn.wwl.migrate-modernize-explore-foundations-of-iaas.trophy

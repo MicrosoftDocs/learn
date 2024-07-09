@@ -6,10 +6,12 @@ metadata:
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: module
+  ms.service: security
+  ai-usage: ai-assisted
 title: "Design solutions that align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)"
-summary: "You'll learn about the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF) and how you can use them to design more secure solutions."
+summary: |
+  You'll learn about the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF) and how you can use them to design more secure solutions.
 abstract: |
   Upon completion of this module, the learner will be able to:
     - Understand the Cloud Adoption Framework and how it can be used to accelerate and secure an organizations move to the cloud.
@@ -17,7 +19,7 @@ abstract: |
 prerequisites: |
   - Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments.
   - Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/design-solutions-align-cloud-adoption-well-architected-framework.svg
 levels:
 - advanced
 roles:

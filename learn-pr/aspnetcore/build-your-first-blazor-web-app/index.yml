@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.build-web-app-blazor-webassembly-vscode
+metadata:
+  title: Build your first web app with Blazor
+  description: Learn how to build your first web app with Blazor.
+  ms.date: 01/26/2024
+  author: danroth27
+  ms.author: daroth
+  ms.manager: markl
+  ms.topic: module
+  ms.service: aspnet-core
+  ms.subservice: blazor
+title: Build your first web app with Blazor
+summary: Learn how to build your first web app with Blazor.
+abstract: |
+  In this module, you will:
+  - Configure your local environment for Blazor development.
+  - Create a new Blazor web app project.
+  - Add component logic to a Blazor web app.
+prerequisites: |
+  - Knowledge of what Blazor is and how it works at the beginner level
+  - Basic knowledge of web app concepts
+  - C# and .NET experience at the beginner level
+iconUrl: /training/achievements/build-your-first-blazor-web-app.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- aspnet-core
+- blazor
+- dotnet
+units:
+- learn.build-web-app-blazor-webassembly-vscode.1-introduction
+- learn.build-your-first-blazor-web-app.configure-environment
+- learn.build-web-app-blazor-webassembly-vscode.3-exercise-configure-environment
+- learn.build-web-app-blazor-webassembly-vscode.4-blazor-components
+- learn.build-web-app-blazor-webassembly-vscode.5-exercise-add-component
+- learn.build-your-first-blazor-web-app.knowledge-check
+- learn.build-web-app-blazor-webassembly-vscode.8-summary
+badge:
+  uid: learn.build-web-app-blazor-webassembly-vscode.badge

@@ -1,25 +1,25 @@
 ### YamlMime:Module
 uid: learn.automate-azure-tasks-with-powershell
 metadata:
-  title: Automate Azure tasks using scripts with PowerShell
-  description: Learn how to install Azure PowerShell on Linux, macOS, or Windows and then connect to Azure and manage your resources.
-  ms.date: 01/31/2023
+  title: Automate Azure tasks using scripts with Azure PowerShell
+  description: Learn how to install Azure PowerShell on Windows, Linux, or macOS, and then connect to Azure and manage resources.
+  ms.date: 06/07/2024
   author: mikefrobbins
   ms.author: mirobb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Automate Azure tasks using scripts with PowerShell
+  ms.topic: module
+  ms.service: azure
+title: Automate Azure tasks using scripts with Azure PowerShell
 summary: Install Azure PowerShell locally and use it to manage Azure resources.
 abstract: | 
-  In this module, you will:
-  - Decide if Azure PowerShell is the right tool for your Azure administration tasks
-  - Install Azure PowerShell on Linux, macOS, and/or Windows
-  - Connect to an Azure subscription using Azure PowerShell
-  - Create Azure resources using Azure PowerShell
+  In this module, you:
+  - Decide if Azure PowerShell is the appropriate tool for your Azure management tasks.
+  - Install Azure PowerShell on Windows, Linux, or macOS.
+  - Connect to an Azure subscription using Azure PowerShell.
+  - Create Azure resources using Azure PowerShell.
 prerequisites: |
-  - Experience with a command-line interface such as PowerShell or Bash
-  - Knowledge of basic Azure concepts such as resource groups and Virtual Machines
-  - Experience administering Azure resources using the Azure portal
+  - Experience with PowerShell
+  - Knowledge of basic Azure concepts, such as resource groups and virtual machines
+  - Experience managing Azure resources using the Azure portal
 iconUrl: /training/achievements/automate-azure-tasks-with-powershell.svg
 levels: 
 - beginner
@@ -30,8 +30,8 @@ products:
 - azure
 - azure-powershell
 subjects:
-- data-engineering
-- data-management
+- infrastructure
+- cloud-computing
 units:
 - learn.automate-azure-tasks-with-powershell.1-introduction
 - learn.automate-azure-tasks-with-powershell.2-decide-if-azure-powershell-is-right-for-your-tasks

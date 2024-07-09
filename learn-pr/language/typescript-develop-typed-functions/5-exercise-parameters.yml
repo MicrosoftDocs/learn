@@ -4,11 +4,10 @@ title: Exercise - Fun with parameters
 metadata:
   title: Exercise - Fun with parameters
   description: Learn how to define a function with required, optional, and default.
-  ms.date: 02/11/2021
+  ms.date: 01/09/2023
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5
 content: |

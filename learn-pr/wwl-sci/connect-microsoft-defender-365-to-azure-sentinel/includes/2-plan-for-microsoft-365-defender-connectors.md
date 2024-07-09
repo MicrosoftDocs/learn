@@ -1,4 +1,4 @@
-The Microsoft 365 Defender portal​ is a unified, natively integrated, pre- and post-breach enterprise defense suite. It protects endpoint, identity, email, and cloud app threats. You can detect, prevent, investigate, and automatically respond to sophisticated threats in a central place. It includes the following services:
+The Microsoft Defender portal​ is a unified, natively integrated, pre- and post-breach enterprise defense suite. It protects endpoint, identity, email, and cloud app threats. You can detect, prevent, investigate, and automatically respond to sophisticated threats in a central place. It includes the following services:
 
 - Microsoft Defender for Office 365
 
@@ -8,9 +8,9 @@ The Microsoft 365 Defender portal​ is a unified, natively integrated, pre- and
 
 - Microsoft Defender for Cloud Apps
 
-The Microsoft 365 Defender integration with Microsoft Sentinel currently provides these data connectors for those services:
+The Microsoft Defender XDR integration with Microsoft Sentinel currently provides these data connectors for those services:
 
-- Microsoft 365 Defender (Preview)
+- Microsoft Defender XDR (Preview)
 
 - Microsoft Defender for Cloud Apps
 

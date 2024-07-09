@@ -1,14 +1,28 @@
-In this module, we wrote a script to automate the creation of multiple VMs. Even though the script was relatively short, you can see the potential power when you combine loops, variables, and functions from PowerShell with cmdlets from Azure PowerShell.
+<!-- markdownlint-disable MD041 -->
 
-Azure PowerShell is a good automation choice for admins with PowerShell experience. The combination of clean syntax and a powerful scripting language also makes it worth considering even if you're new to PowerShell. This level of automation for time-consuming and error-prone tasks should help you reduce administrative time and increase quality.
+In this module, you created a PowerShell script to automate the creation of multiple VMs. Despite
+its relative simplicity, the script showcases the powerful potential of PowerShell when combining
+loops, variables, and functions with Azure PowerShell cmdlets.
+
+Azure PowerShell is an excellent choice for automating the administration and management of Azure
+resources. Its clean syntax and powerful scripting capabilities make it a valuable tool, even for
+administrators new to PowerShell. By automating time-consuming and error-prone tasks, you can reduce
+administrative overhead and improve overall efficiency and quality.
 
 <!-- Cleanup sandbox -->
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
-When you're running in your own subscription, you can use the following PowerShell cmdlet to delete the resource group (and all related resources).
+Use the `Remove-AzResourceGroup` cmdlet to delete the resource group and all related resources.
+Replace `<resource-group-name>` with the name of the resource group you created:
 
-```powershell
-Remove-AzResourceGroup -Name MyResourceGroupName
+> [!CAUTION]
+> The following example deletes the specified resource group and all resources contained within it.
+> If resources outside the scope of this training module exist in the specified resource group,
+> they'll also be deleted.
+
+```azurepowershell
+Remove-AzResourceGroup -Name <resource-group-name>
 ```
 
-When you're asked to confirm the delete, answer **Yes**, or you can add the `-Force` parameter to skip the prompt. The command may take several minutes to complete.
+When prompted to confirm the deletion, answer <kbd>Y</kbd> and <kbd>Enter</kbd>, or add the
+**Force** parameter to skip the prompt. The command might take several minutes to complete.

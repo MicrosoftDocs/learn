@@ -5,10 +5,9 @@ metadata:
   title: Identify your audience
   description: This unit teaches you about identifying your product's audience.
   author: czhu89
-  ms.date: 04/16/2019
+  ms.date: 04/24/2023
   ms.author: cazh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-startups
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/3-identify-your-audience.md)]

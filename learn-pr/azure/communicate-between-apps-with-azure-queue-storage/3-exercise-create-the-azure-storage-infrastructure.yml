@@ -4,11 +4,12 @@ title: Exercise - Create a storage account
 metadata:
   title: Exercise - Create a storage account
   description: Create a storage account
-  ms.date: 04/04/2023
+  ms.date: 11/13/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 interactive: bash
 azureSandbox: true
 durationInMinutes: 10

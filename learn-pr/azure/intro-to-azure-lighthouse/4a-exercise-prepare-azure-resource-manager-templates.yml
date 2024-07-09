@@ -3,13 +3,14 @@ uid: learn.intro-to-azure-lighthouse.4a-exercise-prepare-azure-resource-manager-
 title: Exercise - Prepare Azure Resource Manager templates
 metadata:
   title: Exercise - Prepare Azure Resource Manager templates
-  description: In this exercise, you'll prepare the Azure Resource Manager templates for deployment
-  ms.date: 02/09/2023
+  description: Learn how to prepare the Azure Resource Manager templates for deployment.
+  ms.date: 04/15/2024
   author: SCuffy
   ms.author: socuff
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-arm-template
   ms.contributors: socuff-04232021
 durationInMinutes: 45
 azureSandbox: false

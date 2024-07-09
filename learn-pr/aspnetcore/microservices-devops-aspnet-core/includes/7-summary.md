@@ -1,35 +1,36 @@
 In this module, you:
 
-- Authenticated GitHub Actions to an ACR instance.
-- Stored sensitive information used by the GitHub Actions.
-- Implemented a GitHub Action to build the coupon service's container image in ACR.
-- Modified the coupon service code to trigger a build.
-- Implemented a GitHub Action to deploy the coupon service container to the AKS cluster.
-- Modified the coupon service's Helm chart to trigger a deployment to AKS.
-- Reverted the coupon service to a previous deployment.
-
-[!INCLUDE[de-provision your Azure resources](../../includes/microservices/remove-az-resources.md)]
+- Authenticated GitHub Actions to an Azure Container Registry instance.
+- Stored sensitive information that GitHub Actions uses.
+- Implemented a GitHub action to build the product service's container image in Container Registry.
+- Modified the product service adding a new product to trigger a build.
+- Implemented a GitHub action to deploy the product service container to the Azure Kubernetes Service (AKS) cluster.
+- Rolled back the product service to the previous deployment.
 
 ## Remove Azure service principal
 
-Earlier, you created an Azure Active Directory service principal, which allows GitHub to authenticate to each Azure resource. To remove the service principal, run the following script:
+Earlier, you created an Entra service principal that allows GitHub to authenticate to Azure resources. To remove the service principal, you can use the Azure CLI.
 
-```bash
-./cleanup-service-principal.sh
-```
+1. Use the following Azure CLI command to return a list of service principal identifiers from Microsoft Entra ID:
 
-The preceding script:
+   ```azurecli
+   az ad sp list --show-mine --query "[?contains(displayName,'eShop')].appId" --output tsv
+   ```
 
-- Uses the following Azure CLI command to return a list of service principal identifiers from Azure Active Directory:
+1. Filter the service principals to the following identifiers:
 
-    ```azurecli
-    az ad sp list --show-mine --query "[?contains(displayName,'eshop-learn-sp')].appId" --output tsv
-    ```
+   - Owned by the current user.
+   - Containing the string `eShop` in the display name.
+   
+1. Use the `az ad sp delete` Azure CLI command to remove each matching service principal.
 
-  The service principals are filtered to those identifiers:
+1. Delete the Azure resource group `rg-eshop` to delete all the resources you created in previous units.
 
-  - Owned by the current user.
-  - Containing the string `eshop-learn-sp` in the display name.
-- Uses the `az ad sp delete` Azure CLI command to remove each matching service principal.
+## Cleanup Codespace
 
-[!INCLUDE[learn more with these resources](../../includes/microservices/learn-more.md)]
+You can delete the codespace on [GitHub](https://github.com/codespaces) under **By repository** where you see **MicrosoftDocs/mslearn-dotnet-cloudnative-devops**.
+
+## Learn more about microservices
+
+- [Architecting Cloud Native .NET Applications for Azure](/dotnet/architecture/cloud-native/)
+- Video: [Implement microservices patterns with .NET and Docker containers](https://aka.ms/microservices-video)

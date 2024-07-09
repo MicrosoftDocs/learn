@@ -3,11 +3,10 @@ uid: learn.azure.threat-modeling-enterprise-security.5-eliminate-risk
 metadata:
   title: Reduce or eliminate risk in the infrastructure with threat modeling
   description: Improve the state of security for your infrastructure by finding ways to reduce or eliminate risk.
-  ms.date: 03/01/2021
+  ms.date: 08/07/2023
   author: rodrigosantos
   ms.author: rodsan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
+  ms.topic: unit
 title: Eliminate risk
 durationInMinutes: 15
 content: |

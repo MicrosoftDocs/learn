@@ -3,18 +3,19 @@ uid: learn.azure.publish-azure-web-app-with-azure-toolkit-intellij
 metadata:
   title: Develop Java web app on Azure using IntelliJ
   description: In this module, you will learn how to use Azure to host your Java web apps, built by using IntelliJ IDEA.
-  ms.date: 03/01/2020
+  ms.date: 03/18/2024
   author: bmitchell287
   ms.author: brendm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure
+  manager: mcleans
 title: Develop Java web app on Azure using IntelliJ
-summary: Create a web app in IntelliJ and deploy the app to Azure by using Azure Toolkit for IntelliJ.
+summary: In this module, you'll learn to create a web app in IntelliJ and deploy the app to Azure by using Azure Toolkit for IntelliJ.
 abstract: | 
   In this module, you will:
-  - Create a web app in IntelliJ IDEA
-  - Deploy the app to Azure by using the Azure Toolkit for IntelliJ
-  - Manage deployed web app configurations using the Azure Toolkit
+  - Create a web app in IntelliJ IDEA.
+  - Deploy the app to Azure by using the Azure Toolkit for IntelliJ.
+  - Manage deployed web app configurations using the Azure Toolkit.
 prerequisites: | 
   - Experience writing web apps in Java
   - Familiarity with [IntelliJ IDEA](https://www.jetbrains.com/idea/) to create projects in Java
@@ -27,8 +28,6 @@ roles:
 products:
 - azure
 - azure-virtual-machines
-subjects:
-- development-tools
 units:
 - learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.1-introduction
 - learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.2-create-web-app-intellij

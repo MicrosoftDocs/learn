@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/03/2023
+  author: lgayhardt
+  ms.author: lagayhar
+  ms.topic: unit
+  ms.service: machine-learning
+  ms.subservice: responsible-ai  
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "After successfully running a training job, what is the final step in the workflow to make the trained model available for future predictions?"
+    choices:
+    - content: "Register the model."
+      isCorrect: true
+      explanation: "Correct. Registering the model is the final step to make the trained model available for future predictions, allowing it to be accessed and utilized in various applications."
+    - content: "Create a new job."
+      isCorrect: false
+      explanation: "Incorrect. Jobs are used for different tasks in the workflow."
+    - content: "Transform the model."
+      isCorrect: false
+      explanation: "Incorrect. Transformation of the model might be necessary for specific applications, but it's not the final step in making the model available for future predictions."
+    - content: "Delete the compute cluster."
+      isCorrect: false
+      explanation: " Incorrect. Deleting the compute cluster isn't related to making the trained model available for future predictions. It's a separate administrative task for managing computing resources."
+  - content: "What does the feature importance component in the responsible AI dashboard creation process do?"
+    choices:
+    - content: "It configures the overall and feature error rates."
+      isCorrect: false
+      explanation: "Incorrect. Configuring error rates isn't the primary role of the feature importance component; this task is generally performed by the error analysis component."
+    - content: "It calculates error distributions."
+      isCorrect: false
+      explanation: "Incorrect. Calculating error distributions is typically handled by the error analysis component, not the feature importance component."
+    - content: "It initializes the global data for the components."
+      isCorrect: false
+      explanation: "Incorrect. Initializing global data for components is typically the role of the RAI constructor component, not the feature importance component."
+    - content: "It provides a better understanding of what features influence the model's predictions."
+      isCorrect: true
+      explanation: "The feature importance component helps users understand how different features affect the model's predictions."
+  - content: "Why is data imbalance in the test dataset a concern when using machine learning models?"
+    choices:
+    - content: " It increases model accuracy."
+      isCorrect: false
+      explanation: "Incorrect. Data imbalance typically reduces model accuracy because the model might be biased towards the majority class."
+    - content: "It makes model evaluation easier."
+      isCorrect: false
+      explanation: "Incorrect. Data imbalance makes model evaluation more challenging as traditional metrics can be misleading."
+    - content: "It might lead to fairness and inclusiveness issues."
+      isCorrect: true
+      explanation: "Correct. Data imbalance can lead to fairness and inclusiveness issues as the model might not perform well on underrepresented groups."
+    - content: "It has no impact on model performance."
+      isCorrect: false
+      explanation: "Incorrect. Data imbalance can significantly impact model performance, especially in cases with underrepresented classes."

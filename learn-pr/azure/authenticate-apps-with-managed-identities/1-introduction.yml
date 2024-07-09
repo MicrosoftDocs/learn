@@ -3,11 +3,10 @@ uid: learn.authenticate-apps-with-managed-identities.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 03/11/2020
+  ms.date: 12/27/2023
   author: barclayn
   ms.author: barclayn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 5
 content: |

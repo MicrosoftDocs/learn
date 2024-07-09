@@ -4,4 +4,4 @@ You have a clear understanding of the questions you need to ask the team members
 
 ## Learn more
 
-To learn more, see [Best practices for coaching](/workplace-analytics/manager-insights/coaching?azure-portal=true).
+To learn more, see [Best practices for coaching](/previous-versions/viva/insights/tutorials/gm-coaching).

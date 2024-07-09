@@ -6,9 +6,8 @@ metadata:
   description: Data visualization and transformation is an important part of every model. Now that you have your dataset downloaded, learn more about audio data visualization and transforming this dataset.
   author: cassiebreviu
   ms.author: ruyakubu
-  ms.date: 04/14/2020
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.date: 04/12/2021
+  ms.topic: unit
   ms.custom:
   - team=nextgen
   - team=cloud_advocates

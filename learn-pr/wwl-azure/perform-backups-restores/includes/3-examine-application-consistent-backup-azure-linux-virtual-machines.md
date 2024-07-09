@@ -1,5 +1,3 @@
-
-
 When performing backup snapshots of your VMs, application consistency means your applications should be able to start when the VMs boot after being restored. In Windows VMs, snapshots rely on VSS to facilitate application consistency. For Linux VMs, you can use the Linux pre-script and post-script framework to perform application-consistent backups.
 
 The framework provides an option to run custom pre-scripts and post-scripts while you're taking VM snapshots. Pre-scripts run just before you take the VM snapshot, and post-scripts run immediately after you take the VM snapshot.
@@ -26,7 +24,7 @@ Pre-scripts invoke native application APIs, which quiesce the IOs, and flush in-
      - **preScriptNoOfRetries**: Set the number of times the pre-script should be retried if there's any error before terminating. Zero means only one try and no retry if there's a failure.
      - **postScriptNoOfRetries**: Set the number of times the post-script should be retried if there's any error before terminating. Zero means only one try and no retry if there's a failure.
      - **timeoutInSeconds**: Specify individual timeouts for the pre-script and the post-script (maximum value can be 1800).
-     - **continueBackupOnFailure**: Set this value to true if you want Azure Backup to fall back to a file system consistent/crash consistent backup if pre-script or post-script fails. Setting this to false fails the backup in case of script failure (except when you have single-disk VM, in which case, script failure results always in crash-consistent backup).
+     - **continueBackupOnFailure**: Set this value to true if you want Azure Backup to fall back to a file system consistent/crash consistent backup if pre-script or post-script fails. Setting this to false fails the backup the script fails (except when you have single-disk VM, in which case, script failure results always in crash-consistent backup).
      - **fsFreezeEnabled**: Specify whether Linux fsfreeze should be called while you're taking the VM snapshot to ensure file system consistency. We recommend keeping this setting set to true unless your application has a dependency on disabling fsfreeze.
 6. The script framework is now configured. If the VM backup is already configured, the next backup invokes the scripts and triggers application-consistent backup.
 

@@ -3,11 +3,10 @@ uid: learn.aks-secrets-configure-app.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 12/16/2020
+  ms.date: 01/26/2024
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 2
 content: |

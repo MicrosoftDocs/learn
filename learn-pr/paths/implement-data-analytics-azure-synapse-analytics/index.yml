@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-data-analytics-azure-synapse-analytics
+metadata:
+  title: Implement a Data Analytics Solution with Azure Synapse Analytics
+  description: Implement a Data Analytics Solution with Azure Synapse Analytics
+  ms.date: 02/13/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: learning-path
+  ms.service: azure
+title: Implement a Data Analytics Solution with Azure Synapse Analytics
+prerequisites: |
+  The Audience should have familiarity with notebooks that use different languages and a Spark engine, such as Databricks, Jupyter Notebooks, Zeppelin notebooks and more. They should also have some experience with SQL, Python, and Azure tools, such as Data Factory.
+summary: |
+  <div style="display:none;height:0;overflow:hidden;font-size:0;"|This is a single day Instructor Lead Course designed to give the learners instruction on the SQL dedicated and serverless Spark pools and providing instruction of data wrangling and the ELT process using Synapse Pipelines which is very similar to those familiar with Azure Data Factory (ADF) to move data into the Synapse dedicated pool database. </div|<div|<p|This is a single day Instructor Lead Course designed to give the learners instruction on the SQL dedicated and serverless Spark pools and providing instruction of data wrangling and the ELT process using Synapse Pipelines, which is similar to those familiar with Azure Data Factory (ADF) to move data into the Synapse dedicated pool database. </p| </div|
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+subjects:
+- databases
+- data-engineering
+- data-storage
+modules:
+- learn.wwl.introduction-to-azure-synapse-analytics
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools
+- learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics
+- learn.wwl.use-delta-lake-azure-synapse-analytics
+- learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads
+- learn.wwl.build-data-pipeline-azure-synapse-analytics
+trophy:
+  uid: learn.wwl.implement-data-analytics-azure-synapse-analytics.trophy

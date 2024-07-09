@@ -4,13 +4,10 @@ title: Create custom security attributes
 metadata:
   title: Create custom security attributes
   description: "Create custom security attributes"
-  ms.date: 02/03/2023
+  ms.date: 01/31/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/11-create-custom-security-attributes.md)]

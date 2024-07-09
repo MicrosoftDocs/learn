@@ -1,4 +1,4 @@
-In this exercise, we'll create a function that runs when it receives an HTTP request, and responds to each request by returning a message. 
+In this exercise, we create a function that runs when it receives an HTTP request, and responds to each request by returning a message. 
 
 See the following high-level illustration of what we're going to build.
 
@@ -6,7 +6,7 @@ See the following high-level illustration of what we're going to build.
 
 :::image type="content" source="../media/3-default-http-trigger-implementation-javascript-small.png" alt-text="Screenshot of Code and Test pane showing default code for HTTP trigger function template." lightbox="../media/3-default-http-trigger-implementation-javascript.png":::
 
-The parameter `req` is the *trigger binding*, and the parameter `res` is the *output binding*. It might help to think of these parameters as abbreviations for "request" and "response".
+The parameter `req` is the *trigger binding*, and the parameter `res` is the *output binding*. It might help to think of these parameters as abbreviations for "request" and "response."
 
 ::: zone-end
 
@@ -20,7 +20,7 @@ The parameter `Request` is the *trigger binding*, and the parameter `Response` i
 
 ## Create a function app
 
-Let's create a function app that we'll use throughout this module. A function app lets you group functions as a logical unit for easier management, deployment, and sharing of resources.
+Let's create a function app that we can use throughout this module. A function app lets you group functions as a logical unit for easier management, deployment, and sharing of resources.
 
 ::: zone pivot="javascript"
 
@@ -30,7 +30,7 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. In the **Create a resource** menu, select **Compute**, and in the results list select **Function App**. You might need to search for **Function App** in the *Search services and marketplace* window.
 
-1. Select **Create.** The **Create Function App** pane appears.
+1. Select **Consumption**, then select the **Select** button. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -41,7 +41,6 @@ Let's create a function app that we'll use throughout this module. A function ap
     | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | The resource group for the sandbox. |
     | **Instance Details** |
     | Function App name | Enter a *globally unique name* | This name identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
-    | Publish | Code | Option to publish code files or a Docker container. |
     | Runtime stack | From the dropdown list, select **Node.js** | The sample code in this module is written in JavaScript. |
     | Version | Accept *default* | The default value is sufficient for this exercise. |
     | Region | From the dropdown list, select a *location* | Select the region nearest to you. |
@@ -60,9 +59,9 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. On the resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Create a resource** menu, select **Compute**, and then search for and select **Function App**. You might need to search for **Function App** in the *Search services and marketplace* window.
+1. In the **Create a resource** menu, select **Compute**, and in the results list select **Function App**. You might need to search for **Function App** in the *Search services and marketplace* window.
 
-1. Select **Create.** The **Create Function App** pane appears.
+1. Select **Consumption**, then select the **Select** button. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -73,7 +72,6 @@ Let's create a function app that we'll use throughout this module. A function ap
     | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | The resource group for the sandbox. |
     | **Instance Details** |
     | Function App name | Enter a *globally unique name* | This name identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
-    | Publish | Code | Option to publish code files or a Docker container. |
     | Runtime stack | From the dropdown list, select *PowerShell Core* | The sample code for this module is written in PowerShell. |
     | Version | Accept *default* | The default value is sufficient for this exercise. |
     | Region | From the dropdown list, select a *location* | Select the region nearest to you. |
@@ -93,29 +91,29 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 ::: zone pivot="javascript"
 
-Now that we have a function app, it's time to create a function. Each function is activated by a trigger. In this module, we'll define an HTTP trigger by using a predefined template.
+Now that we have a function app, it's time to create a function. Each function has a trigger that activates it. In this module, we define an HTTP trigger by using a predefined template.
 
-1. In the **Function App** menu on the left, under **Functions**, select **Functions**. The **Functions** pane for your *Function App* appears.
+1. Select the **Create function** button under **Create in Azure portal** in the **Functions** tab on the **Overview** page.
 
-1. In the command bar, select **Create**. The **Create function** pane appears.
+1. The **Create function** pane appears.
 
     :::image type="content" source="../media/3-add-function-small.png" alt-text="Screenshot for the Create Function pane." lightbox="../media/3-add-function.png":::
 
-1. In the **Select a template** section, select the **HTTP trigger** template.
+1. In the **Select a template** section, select the **HTTP trigger** template, then select **Next**.
 
 1. In the **Template details** section, confirm the following settings.
 
-    - In the **New Function** text box, accept the default name *HttpTrigger1*. Azure automatically creates unique names for the functions you create. You can choose a different name, but this is a reminder to use meaningful names.
+    - In the **Function name** text box, use the default name *HttpTrigger1*. Azure automatically creates unique names for the functions you create. You can choose a different name, but remember to use meaningful names.
 
-    - In the **Authorization level** text box, accept the default value *Function*. Authorization level determines what keys need to be present on the request in order for it to run. *Function* authorization level requires a function-specific key, which we'll find once it's created.
+    - In the **Authorization level** text box, use the default value *Function*. Authorization level determines what keys need to be present on the request in order for it to run. *Function* authorization level requires a function-specific key, which we can find after the function is created.
 
-1. Select **Create**. When the trigger function has propagated to your function app, the **Functions** pane for your *Function App* appears, listing *HttpTrigger1*.
+1. Select **Create**. When the trigger function is propagated to your function app, the **Functions** pane for your *Function App* appears, listing *HttpTrigger1*.
 
 1. In the command bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
 1. In the dropdown list, select **default (function key)**, select the *Copy to clipboard* icon at the end of the URL, and then select **OK** to close the dialog.
 
-1. In the address bar of a new browser tab, paste the function URL you copied. Press <kbd>Enter</kbd> to run the request in your browser. The response may take a couple of minutes as the function app initializes. If you receive a timeout error, refresh to resend the request.
+1. In the address bar of a new browser tab, paste the function URL you copied. Press <kbd>Enter</kbd> to run the request in your browser. The response might take a couple of minutes as the function app initializes. If you receive a timeout error, refresh to resend the request.
 
    When the function responds, you should see output similar to the following example displayed in your browser.
 
@@ -157,7 +155,7 @@ Now that we have a function app, it's time to create a function. Each function i
     }
     ```
 
-1. Let's look briefly at the function's other file--the **function.json** config file. Access this file by selecting **function.json** from the dropdown list in the filepath above the code block. The configuration data is shown in the following JSON listing.
+1. Let's look briefly at the function's other file, the **function.json** config file. Access this file by selecting **function.json** from the dropdown list in the filepath above the code block. The configuration data is shown in the following JSON listing.
 
     ```json
     {
@@ -189,17 +187,17 @@ In the preceding code for our function, we saw that we accessed the payload of t
 
 ::: zone pivot="powershell"
 
-Now that we have a function app, let's create a function. Each function is activated by a trigger. In this module, we'll create an HTTP trigger by using a template.
+Now that we have a function app, let's create a function. Each function has a trigger that activates it. In this module, we create an HTTP trigger by using a template.
 
-1. In the **Function App** menu on the left, under **Functions**, select **Functions**. The **Functions** pane for your function app appears.
+1. Select the **Create function** button under **Create in Azure portal** in the **Functions** tab on the **Overview** page.
 
-1. From the command bar, select **Create**. The **Create function** pane appears.
+1. The **Create function** pane appears.
 
-1. In the **Select a template** section, select the **HTTP trigger** template.
+1. In the **Select a template** section, select the **HTTP trigger** template, then select **Next**.
 
 1. In the **Template details** section, confirm the following settings.
 
-    - In the **New Function** text box, accept the default name *HttpTrigger1*. Azure automatically provides a unique name when you create a function. You can choose a different name, but this is a reminder to use meaningful names.
+    - In the **Function name** text box, use the default name *HttpTrigger1*. Azure automatically provides a unique name when you create a function. You can choose a different name, but remember to use meaningful names.
 
     - In the **Authorization level** text box, accept  the default value *Function*. Authorization level determines what keys need to be present on the request in order for it to run. *Function* requires a function-specific key.
 
@@ -211,7 +209,7 @@ Now that we have a function app, let's create a function. Each function is activ
 
 1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL, and then select **OK** to close the dialog box.
 
-1. In the address bar of a new browser tab, paste the function URL you copied. Press <kbd>Enter</kbd> to run the request in your browser. The response may take a couple of minutes as the function app initializes. If you receive a timeout error, refresh to resend the request.
+1. In the address bar of a new browser tab, paste the function URL you copied. Press <kbd>Enter</kbd> to run the request in your browser. The response might take a couple of minutes as the function app initializes. If you receive a timeout error, refresh to resend the request.
 
    When the function responds, you should see output similar to the following example displayed in your browser.
 
@@ -299,7 +297,7 @@ Now that we have a function app, let's create a function. Each function is activ
 
 1. In the **Function** menu, select **Integration**. The **Integration** pane for your function appears.
 
-   Notice that we've already defined a trigger and an output binding, as shown in the following image. The integration view adjusts to the best fit for the width and height of your screen. The same information can display horizontally, if your screen is wide enough.
+   Notice that a trigger and an output binding are already defined, as shown in the following image. The integration view adjusts to the best fit for the width and height of your screen. The same information can display horizontally, if your screen is wide enough.
 
    :::image type="content" source="../media/3-function-integration-vertical-small.png" alt-text="Screenshot of vertical flow diagram showing Trigger and Inputs leading to Function and Function leading to Outputs." lightbox="../media/3-function-integration-vertical.png":::
 
@@ -311,13 +309,13 @@ Now that we have a function app, let's create a function. Each function is activ
 
    Take a moment to consider how you might use each of these input bindings in a solution.
 
-   We'll get back to adding input bindings later in this module, but for now, select **Cancel** to dismiss this pane.
+   Later in this module, we add input bindings, but for now, select **Cancel** to dismiss this pane.
 
 1. In the **Outputs** box, select **Add output**. The **Create Output** pane appears. Select the dropdown list for **Binding Type** to view a list of all possible output binding types.
 
     :::image type="content" source="../media/3-function-output-bindings.png" alt-text="Screenshot of the Add output options.":::
 
-    As you can see, there are several output binding types. We'll get back to adding output bindings later in this module but, for now, select **Cancel** to dismiss this pane.
+    As you can see, there are several output binding types. Later in this module, we add output bindings but, for now, select **Cancel** to dismiss this pane.
 
 ::: zone-end
 
@@ -325,7 +323,7 @@ Now that we have a function app, let's create a function. Each function is activ
 
 1. In the **Function** menu, select **Integration**. The **Integration** pane for your function appears.
 
-    Notice that we've already defined a trigger and an output binding, as shown in the following image. The integration view adjusts to the best fit for the width and height of your screen. The same information can display vertically, if your screen isn't wide enough.
+    Notice that a trigger and an output binding are already defined, as shown in the following image. The integration view adjusts to the best fit for the width and height of your screen. The same information can display vertically, if your screen isn't wide enough.
 
     :::image type="content" source="../media/3-function-integration-horizontal-small.png" alt-text="Screenshot of horizontal flow diagram showing Trigger and Inputs leading to Function and Function leading to Outputs." lightbox="../media/3-function-integration-horizontal.png":::
 
@@ -337,14 +335,14 @@ Now that we have a function app, let's create a function. Each function is activ
 
     Take a moment to consider how you might use each of these input bindings in a solution. There are many possibilities to choose from.
 
-    We'll get back to adding input bindings later in this module but for now, select **Cancel** to dismiss this pane.
+    Later in this module, we add input bindings, but for now, select **Cancel** to dismiss this pane.
 
 1. In the **Outputs** box, select **Add output**. The **Create Output** pane appears. Select the dropdown list for **Binding Type** to view a list of all possible output binding types.
 
     :::image type="content" source="../media/3-function-output-bindings.png" alt-text="Screenshot of the Add output options.":::
 
-    As you can see, there are several output binding types. We'll get back to adding output bindings later in this module but, for now, select **Cancel** to dismiss this pane.
+    As you can see, there are several output binding types. Later in this module, we add output bindings but, for now, select **Cancel** to dismiss this pane.
 
 ::: zone-end
 
-So far, we've learned how to create a function app and add a function to it. We've seen a simple function in action--one that runs when an HTTP request is made. We've also explored the Azure portal and the types of input and output bindings that are available to functions. In the next unit, we'll use an input binding to read text from a database.
+So far, we learned how to create a function app and add a function to it. We saw a simple function in action--one that runs when an HTTP request is made. We also explored the Azure portal and the types of input and output bindings that are available to functions. In the next unit, we'll use an input binding to read text from a database.

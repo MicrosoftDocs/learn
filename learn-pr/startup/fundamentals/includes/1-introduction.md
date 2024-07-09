@@ -2,7 +2,7 @@ In this module, we're going to focus on startup basics so that you have a solid 
 
 We'll start by discussing some personal considerations:
 
-- What's it really like to found a startup? (Not the hype, but the nuts and bolts of the journey and what to expect.)
+- What it's really like to found a startup; not the hype, but the nuts and bolts of the journey and what to expect.
 - How to manage your time and energy.
 - When to transition to building your business full-time.
 
@@ -16,8 +16,8 @@ In this module, you'll learn:
 
 - How to think about the startup journey from a personal perspective and prepare for the road ahead.
 - How to decide if you're ready to pursue your idea full-time.
-- What factors help startups succeed, and how you can take actions early on that will improve your chance of success.
-- What mistakes cause startups to fail, and how to avoid them.
+- What factors help startups succeed and how you can take actions early on that will improve your chance of success.
+- What mistakes cause startups to fail and how to avoid them.
 - What to focus on in the first year of launching your startup.
 
 ## Prerequisites

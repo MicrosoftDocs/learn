@@ -5,10 +5,9 @@ metadata:
   title: Knowledge check
   description: Verify your knowledge about high availability and disaster recovery options of Azure Arc-enabled SQL Managed Instance.
   ms.date: 12/26/2022
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: MikeRayMSFT
+  ms.author: mikeray
+  ms.topic: unit
 durationInMinutes: 3
 content: |
 quiz:

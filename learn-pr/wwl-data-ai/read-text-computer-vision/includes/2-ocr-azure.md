@@ -1,42 +1,22 @@
-The ability to extract text from images is handled by the Computer Vision service, which also provides image analysis capabilities.
+The ability for computer systems to process written and printed text is an area of AI where *computer vision* intersects with *natural language processing*. Vision capabilities are needed to "read" the text, and then natural language processing capabilities make sense of it.
 
-## Azure resources for Computer Vision
+OCR is the foundation of processing text in images and uses machine learning models that are trained to recognize individual shapes as letters, numerals, punctuation, or other elements of text. Much of the early work on implementing this kind of capability was performed by postal services to support automatic sorting of mail based on postal codes. Since then, the state-of-the-art for reading text has moved on, and we have models that detect printed or handwritten text in an image and read it line-by-line and word-by-word.
 
-The first step towards using the Computer Vision service is to create a resource for it in your Azure subscription. You can use either of the following resource types:
+![A screenshot of an envelope showing a handwritten address with typed text next to it.](../media/sample-mail.jpg)
 
-- **Computer Vision**: A specific resource for the Computer Vision service. Use this resource type if you don't intend to use any other cognitive services, or if you want to track utilization and costs for your Computer Vision resource separately.
-- **Cognitive Services**: A general cognitive services resource that includes Computer Vision along with many other cognitive services; such as Text Analytics, Translator Text, and others. Use this resource type if you plan to use multiple cognitive services and want to simplify administration and development.
+## Azure AI Vision's OCR Engine
+Azure AI Vision service has the ability to extract machine-readable text from images. Azure AI Vision's *Read API* is the OCR engine that powers text extraction from images, PDFs, and TIFF files. OCR for images is optimized for general, non-document images that makes it easier to embed OCR in your user experience scenarios.
 
-Whichever type of resource you choose to create, it will provide two pieces of information that you will need to use it:
+The Read API, otherwise known as *Read OCR engine*, uses the latest recognition models and is optimized for images that have a significant amount of text or have considerable visual noise. It can automatically determine the proper recognition model to use taking into consideration the number of lines of text, images that include text, and handwriting.
 
-- A **key** that is used to authenticate client applications.
-- An **endpoint** that provides the HTTP address at which your resource can be accessed.
+The OCR engine takes in an image file and identifies bounding boxes, or coordinates, where items are located within an image. In OCR, the model identifies bounding boxes around anything that appears to be text in the image. 
 
-> [!NOTE]
-> If you create a Cognitive Services resource, client applications use the same key and endpoint regardless of the specific service they are using.
-
-## Use the Computer Vision service to read text
-
-Many times an image contains text.  It can be typewritten text or handwritten.  Some common examples are images with road signs, scanned documents that are in an image format such as JPEG or PNG file formats, or even just a picture taken of a white board that was used during a meeting.
-
-The Computer Vision service provides one application programming interface (APIs) that you can use to read text in images: the **Read** API.
-
-### The Read API
-
-The Read API uses the latest recognition models and is optimized for images that have a significant amount of text or has considerable visual noise.  
-
-The Read API can handle scanned documents that have a lot of text. It also has the ability to automatically determine the proper recognition model to use, taking into consideration lines of text and supporting images with printed text as well as recognizing handwriting.
-
-Because the Read API can work with large documents, it works asynchronously so as not to block your application while it is reading the content and returning results to your application. This means that to use the Read API, your application must use a three-step process:
-
-1. Submit an image to the API, and retrieve an *operation ID* in response.
-2. Use the operation ID to check on the status of the image analysis operation, and wait until it has completed.
-3. Retrieve the results of the operation.
-
-The results from the Read API are arranged into the following hierarchy:
+Calling the Read API returns results arranged into the following hierarchy:
 
 - **Pages** - One for each page of text, including information about the page size and orientation.
 - **Lines** - The lines of text on a page.
 - **Words** - The words in a line of text, including the bounding box coordinates and text itself.
 
 Each line and word includes bounding box coordinates indicating its position on the page.
+
+![A screenshot showing bounding boxes around the page, line, and word of a letter.](../media/pages-lines-words-example.jpg)

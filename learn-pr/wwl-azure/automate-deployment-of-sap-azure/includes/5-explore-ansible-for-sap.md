@@ -1,32 +1,26 @@
+> [!CAUTION]
+> This article references CentOS, a Linux distribution that is End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
 
-
-
-[Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) is an open-source platform by Red Hat that automates cloud provisioning, configuration management, and application deployments. Using Ansible, you can provision VMs, containers, and your entire cloud infrastructure. In addition to provisioning and configuring applications and their environments, Ansible enables you to automate deployment and configuration of resources in your environment such as virtual networks, storage, subnets, and resources groups. Ansible is also combined with other deployment tools such as Terraform. Terraform calls Ansible in the [SAP on Azure Deployment Automation Framework](https://github.com/Azure/sap-hana/blob/beta/documentation/SAP_Automation_on_Azure/table_of_contents.md) where Ansible is used after infrastructure deployment to install the SAP software. 
+[Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) is an open-source platform by Red Hat that automates cloud provisioning, configuration management, and application deployments. In this article, we explore using Ansible. Using Ansible you can deploy VMs, containers, and your entire cloud infrastructure. In addition to provisioning and configuring applications and their environments, Ansible enables you to automate deployment and configuration of resources in your environment such as virtual networks, storage, subnets, and resources groups. Ansible is also combined with other deployment tools such as Terraform. Terraform calls Ansible in the [SAP on Azure Deployment Automation Framework](https://github.com/Azure/sap-hana/blob/beta/documentation/SAP_Automation_on_Azure/table_of_contents.md) where Ansible is used after infrastructure deployment to install the SAP software.
 
 ## Ansible components
 
 Ansible models your IT infrastructure by describing how all your systems interrelate, rather than just managing one system at a time. The core components of Ansible are:
 
-- **Control Machine**. This is the machine from which the configurations are run. It can be any machine with Ansible installed on it. 
+- **Control Machine**: the machine from which the configurations are run. It can be any machine with Ansible installed on it.
+- **Managed Nodes**: the devices and machines (or just machines) and environments that are being managed. Ansible isn't installed on nodes.
+- **Playbooks**. Playbooks are ordered lists of tasks saved in .yml format so you can run them repeatedly in the same order. Playbooks are Ansible’s language for configuration, deployment, and orchestration.
 
-- **Managed Nodes**. These are the devices and machines (or just machines) and environments that are being managed. Ansible is not installed on nodes.
+  - When you create a playbook, you do so by using YAML, which defines a declarative model of a configuration or process. Elements such as **name**, **hosts**, and **tasks** reside within playbooks.
 
-- **Playbooks**. Playbooks are ordered lists of tasks that have been saved so you can run them repeatedly in the same order. Playbooks are Ansible’s language for configuration, deployment, and orchestration. 
+- **Modules**. Ansible works by connecting to your nodes, and then pushing small programs (or units of code)—called modules—out to the nodes. Modules are the units of code that define the configuration. They're modular and can be reused across playbooks. They represent the desired state of the system (declarative), are executed over SSH by default, and are removed when finished.
 
-    - When you create a playbook, you do so by using YAML, which defines a declarative model of a configuration or process. Elements such as **name**, **hosts**, and **tasks** reside within playbooks.
+  - A playbook is typically made up of many modules. For example, you could have one playbook containing three modules: a module for creating an Azure Resource group, a module for creating a virtual network, and a module for adding a subnet.
+  - You can preview Ansible Azure modules on the [Ansible Azure preview modules webpage](https://docs.ansible.com/ansible/latest/collections/azure/azcollection/index.html) for many examples including specifically for SAP.
 
-- **Modules**. Ansible works by connecting to your nodes, and then pushing small programs (or units of code)—called modules—out to the nodes. Modules are the units of code that define the configuration. They are modular and can be reused across playbooks. They represent the desired state of the system (declarative), are executed over SSH by default, and are removed when finished.
-
-    - A playbook is typically made up of many modules. For example, you could have one playbook containing three modules: a module for creating an Azure Resource group, a module for creating a virtual network, and a module for adding a subnet.
-
-    - You can preview Ansible Azure modules on the Ansible Azure preview modules webpage for many examples including specifically for SAP.
-
-- **Inventory**. An inventory is a list of managed nodes. Ansible represents what machines it manages using a .INI file that puts all your managed machines in groups of your own choosing. When adding new machines, you don't need to use additional SSL-signing servers, thus avoiding Network Time Protocol (NTP) and Domain Name System (DNS) issues. You can create the inventory manually, or for Azure, Ansible supports dynamic inventories. This means that the host inventory is dynamically generated at runtime. Ansible supports host inventories for other managed hosts as well.
-
+- **Inventory**. An inventory is a list of managed nodes. Ansible represents what machines it's managing by using a .INI file that puts all your managed machines in groups of your own choosing. When adding new machines, you don't need to use another SSL-signing servers, thus avoiding Network Time Protocol (NTP) and Domain Name System (DNS) issues. You can create the inventory manually, or for Azure, Ansible supports dynamic inventories. This means that the host inventory is dynamically generated at runtime. Ansible supports host inventories for other managed hosts as well.
 - **Roles**. Roles are predefined file structures that allow automatic loading of certain variables, files, tasks, and handlers, based on the file's structure. It allows for easier sharing of roles. You might, for example, create roles for a web server deployment.
-
-- **Facts**. Facts are data points about the remote system that Ansible is managing. When a playbook is run against a machine, Ansible will gather facts about the state of the environment to determine the state before executing the playbook.
-
+- **Facts**. Facts are data points about the remote system that Ansible is managing. When a playbook is run against a machine, Ansible gathers facts about the state of the environment to determine the state before executing the playbook.
 - **Plug-ins**. Plug-ins are code that supplements Ansible's core functionality.
 
 ## Ansible deployment workflow
@@ -35,7 +29,7 @@ Ansible is designed for multiple tier deployments, meaning you don't have to ins
 
 The following workflow and component diagram outlines how playbooks can run in different circumstances, one after another. 
 
-:::image type="content" source="../media/ansible-workflow.png" alt-text="Workflow and component diagram outlining how playbooks can run in different circumstances.":::
+:::image type="content" source="../media/ansible-workflow.png" alt-text="Diagram of Workflow and component diagram outlining how playbooks can run in different circumstances.":::
 
 In the workflow, Ansible playbooks:
 
@@ -43,7 +37,7 @@ In the workflow, Ansible playbooks:
 
 2. **Configure the application**. Playbooks can deploy applications to run services, such as installing Apache Tomcat on a Linux machine to allow you to run a web application.
 
-3. **Manage future configurations to scale**. Playbooks can alter configurations when they are applied to existing resources and applications—in this instance to scale the VMs.
+3. **Manage future configurations to scale**. Playbooks can alter configurations when they're applied to existing resources and applications—in this instance to scale the VMs.
 
 In all cases, Ansible makes use of core components such as roles, modules, APIs, plugins, and inventory.
 
@@ -88,9 +82,9 @@ You can find out more about installing Ansible on the [Install Ansible on Azure 
 
 You can use one of the following images available as part of the Azure Marketplace:
 
-- Red Hat Ansible on Azure is available as an image on Azure Marketplace, and it provides a fully configured version. This enables easier adoption for those looking to use Ansible as their provisioning and configuration management tool. This solution template will install Ansible on a Linux VM along with tools configured to work with Azure
+- Red Hat Ansible on Azure is available as an image on Azure Marketplace, and it provides a fully configured version. This enables easier adoption for anyone looking to use Ansible as their provisioning and configuration management tool. This solution template installs Ansible on a Linux VM along with tools configured to work with Azure
 
-- Ansible Tower (by Red Hat). Ansible Tower by Red Hat helps organizations scale IT automation and manage complex deployments across physical, virtual, and cloud infrastructures. Built on the proven open-source Ansible automation engine, Ansible Tower includes capabilities that provide additional levels of visibility, control, security, and efficiency necessary for today's enterprises. With Ansible Tower you can utilize the large community of content available on Ansible Galaxy. This offering requires the use of an available Ansible Tower subscription eligible for use in Azure. If you don't currently have a subscription, you can obtain one directly from Red Hat.
+- Ansible Tower (by Red Hat). Ansible Tower by Red Hat helps organizations scale IT automation and manage complex deployments across physical, virtual, and cloud infrastructures. Built on the proven open-source Ansible automation engine, Ansible Tower includes capabilities that provide other levels of visibility, control, security, and efficiency necessary for today's enterprises. Ansible Tower enables you to utilize the large community of content available on Ansible Galaxy. This offering requires the use of an available Ansible Tower subscription eligible for use in Azure. If you don't currently have a subscription, you can obtain one directly from Red Hat.
 
 ## Playbook structure
 
@@ -113,21 +107,21 @@ parent:
     second-sibling: value02
 ```
 
-The specific number of spaces used for indentation is not defined. You can indent each level by as many spaces as you want. However, the number of spaces used for indentations at each level must be uniform throughout the file.
+The specific number of spaces used for indentation isn't defined. You can indent each level by as many spaces as you want. However, the number of spaces used for indentations at each level must be uniform throughout the file.
 
-When there is indentation in a YAML file, the indented key value pair is the value of its parent key.
+When there's indentation in a YAML file, the indented key value pair is the value of its parent key.
 
 ### Playbook components
 
 The following list is of some of the playbook components:
 
-- **name**. The name of the playbook. This can be any name you wish.
+- **name**. The name of the playbook and can be any name you wish.
 
 - **hosts**. Lists where the configuration is applied, or the machines being targeted. Hosts can be a list of one or more groups or host patterns, separated by colons. It can also contain groups such as web servers or databases, providing that you have defined these groups in your inventory.
 
 - **connection**. Specifies the connection type.
 
-- **remote_user**. Specifies the user that will be connected to for completing the tasks.
+- **remote_user**. Specifies the user that is connected to for completing the tasks.
 
 - **var**. Allows you to define the variables that can be used throughout your playbook.
 
@@ -149,7 +143,7 @@ You can also check the syntax of a playbook using the following command:
 ansible-playbook --syntax-check
 ```
 
-The `syntax-check` command runs a playbook through the parser to verify that it has included items, such as files and roles, and that the playbook has no syntax errors. You can also use the `--verbose` command.
+The `syntax-check` command runs a playbook through the parser to verify that it includes items, such as files and roles, and that the playbook has no syntax errors. You can also use the `--verbose` command.
 
 To see a list of hosts that would be affected by running a playbook, run the command:
 
@@ -159,7 +153,7 @@ ansible-playbook playbook.yml --list-hosts
 
 ### Sample playbook
 
-The following code is a sample playbook that will create a Linux virtual machine in Azure:
+The following code is a sample playbook that creates a Linux virtual machine in Azure:
 
 ```yaml
 - name: Create Azure VM
@@ -233,92 +227,16 @@ The following code is a sample playbook that will create a Linux virtual machine
 > [!NOTE]
 > Ansible playbook samples for Azure are available on GitHub on the [Ansible Playbook Samples for Azure](https://github.com/Azure-Samples/ansible-playbooks) page.
 
-## Demonstration: Run Ansible in Azure Cloud Shell
+## Ansible in Azure Cloud Shell
 
 You can run Ansible playbooks on a Windows machine by using the Azure Cloud Shell with Bash. This is the quickest and easiest way to begin using playbook's provisioning and management features in Azure.
 
 ### Run commands
 
-Azure Cloud Shell has Ansible preinstalled. After you are signed into Azure Cloud Shell, specify the bash console. You do not need to install or configure anything further to run Ansible commands from the Bash console in Azure Cloud Shell.
+Azure Cloud Shell is configured with Ansible preinstalled. After you're signed into Azure Cloud Shell, specify the bash console. You don't need to install or configure anything further to run Ansible commands from the Bash console in Azure Cloud Shell.
 
 ### Editor
 
 You can also use the Azure Cloud Shell editor to review, open, and edit your playbook .yml files. You can open the editor by selecting the curly brackets icon on the Azure Cloud Shell taskbar.
 
-### Create a resource group
-
-The following steps outline how to create a resource group in Azure using Ansible in Azure Cloud Shell with bash:
-
-1. Go to the Azure Cloud Shell. You can also launch Azure Cloud Shell from within the Azure portal by selecting the Azure PowerShell icon on the taskbar.
-
-2. Authenticate to Azure by entering your credentials, if prompted.
-
-3. On the taskbar, ensure **Bash** is selected as the shell.
-
-4. Create a new file using the following command:
-
-    ```bash
-    vi rg.yml
-    ```
-
-5. Enter insert mode by pressing the I key.
-
-6. Copy and paste the following code into the file, and remove the **#** comment character. (It's included here for displaying code in the learning platform.) The code should be aligned as previously described.
-
-    ```yml
-      #---
-        - hosts: localhost
-          connection: local
-          tasks:
-            - name: Create resource group
-              azure_rm_resourcegroup:
-                name: ansible-rg
-                location: eastus
-    ```
-
-7. Exit insert mode by pressing the Esc key.
-
-8. Save the file and exit the vi editor by entering the following command:
-
-    ```bash
-    :wq
-    ```
-
-9. Run the playbook with the following command:
-
-    ```yml
-    ansible-playbook rg.yml
-    ```
-
-10. Verify that you receive output like the following code:
-
-    ```output
-    PLAY [localhost] *********************************************************************************
-    
-    TASK [Gathering Facts] ***************************************************************************
-    ok: [localhost]
-   
-    TASK [Create resource group] *********************************************************************
-    changed: [localhost]
-    
-    TASK [debug] *************************************************************************************
-    ok: [localhost] => {
-        "rg": {
-            "changed": true,
-            "contains_resources": false,
-            "failed": false,
-            "state": {
-                "id": "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/ansible-rg",
-                "location": "eastus",
-                "name": "ansible-rg",
-                "provisioning_state": "Succeeded",
-                "tags": null
-            }
-        }
-    }
-    
-    PLAY RECAP ***************************************************************************************
-    localhost                  : ok=3    changed=1    unreachable=0    failed=0
-    ```
-
-11. Open the Azure portal and verify that the resource group is now available in the portal.
+The article [Get Started: Configure Ansible using Azure Cloud Shell](/azure/developer/ansible/getting-started-cloud-shell?tabs=ansible) has further steps for using the Azure Cloud Shell with Ansible.

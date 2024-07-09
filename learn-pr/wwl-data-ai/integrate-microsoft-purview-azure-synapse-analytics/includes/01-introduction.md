@@ -1,3 +1,4 @@
+
 Microsoft Purview is a cloud service that provides the basis of a *data governance* solution in which you can catalog, classify, and track data assets across a large-scale data estate.
 
 Azure Synapse Analytics is a cloud-scale data analytics suite that supports data ingestion and transformation, distributed big data processing and exploration with SQL and Spark, and enterprise data warehousing.

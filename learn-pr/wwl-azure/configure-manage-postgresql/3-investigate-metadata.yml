@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-manage-postgresql.investigate-metadata
+title: Investigate metadata with system catalogs and system views
+metadata:
+  title: Investigate metadata with system catalogs and system views
+  description: "Investigate metadata with system catalogs and system views."
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-investigate-metadata.md)]

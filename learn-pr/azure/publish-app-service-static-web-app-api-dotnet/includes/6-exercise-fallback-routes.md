@@ -2,7 +2,7 @@ Now it's time to create a fallback route so your users can navigate to your app 
 
 ## Pull your latest code
 
-Azure Static Web Apps added a GitHub Actions workflow file to the branch you selected in the previous exercise. First, you'll get this file by pulling your code from Git.
+Azure Static Web Apps added a GitHub Actions workflow file to the branch you selected in the previous exercise. First, you get this file by pulling your code from Git.
 
 Pull your code changes from Git by following these steps:
 
@@ -16,7 +16,7 @@ You can now see your workflow file in the folder _.github/workflows_ in **Window
 
 ## Create a routing rule
 
-Before publishing your app, you'll create routing rules that include a fallback route.
+Before publishing your app, you create routing rules that include a fallback route.
 
 ### Create the file _staticwebapp.config.json_
 
@@ -45,7 +45,7 @@ Now, save and commit your changes to your local Git repository. Next, push those
 
 ### Try the fallback route
 
-The GitHub Actions workflow will build and deploy your app.
+The GitHub Actions workflow builds and deploys your app.
 
 Go to your repository in your browser and watch the GitHub Action's progress. Follow these steps to view the progress:
 
@@ -59,4 +59,4 @@ Go to your repository in your browser and watch the GitHub Action's progress. Fo
 
 You can see the progress of your GitHub Action as it builds and publishes your web app and API.
 
-After it's redeployed, browse to your app. Notice the URL displays **/products**. Now, refresh the browser by pressing <kbd>F5</kbd> to test your fallback route. Your app should reload successfully thanks to your fallback route in your routing rules!
+After your app is redeployed, browse to it. Notice the URL displays **/products**. Now, refresh the browser by pressing <kbd>F5</kbd> to test your fallback route. Your app should reload successfully thanks to your fallback route in your routing rules!

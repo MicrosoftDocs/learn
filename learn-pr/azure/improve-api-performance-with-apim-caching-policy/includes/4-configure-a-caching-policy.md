@@ -1,4 +1,4 @@
-Optimal performance is essential to most organizations. By using a cache of compiled responses in Azure API Management, you can reduce the time an API takes to answer calls.
+Optimal API performance is essential to most organizations. By using a cache of compiled responses in Azure API Management, you can reduce the time an API takes to answer calls.
 
 Suppose there's a need for the board gaming API to provide faster responses to requests. For example, users often request prices for various sizes of the board for games. API Management policies can accelerate responses by configuring a cache of prepared responses. When a request is received from a user, API Management checks to see if there's an appropriate response in the cache already. If there is, that response can be sent to the user without building it again from the data source.
 
@@ -70,7 +70,7 @@ By default, the response can't be served from the cache, because the customer ID
 
 However, the developers point out that the customer ID doesn't alter the response. It would be more efficient if requests for the same product from different customers could be returned from the cache. Customers would still see the correct information.
 
-To modify this default behavior, use the &lt;vary-by-query-parameter&gt; element within the &lt;cache-lookup&gt; policy:
+To modify this default behavior, use the `vary-by-query-parameter` element within the `<cache-lookup>` policy:
 
 ```xml
 <policies>
@@ -95,13 +95,13 @@ To modify this default behavior, use the &lt;vary-by-query-parameter&gt; element
 
 With this policy, the cache will store and separate responses for each product, because they have different part numbers. The cache won't store separate responses for each *customer*, because that query parameter isn't listed.
 
-By default, Azure doesn't examine HTTP headers to determine whether a cached response is suitable for a given request. If a header can make a significant difference to a response, use the `<vary-by-header>` tag. Work with your developer team to understand how each API uses query parameters and headers so you can decide which vary-by tags to use in your policy.
+By default, Azure API Management doesn't examine HTTP headers to determine whether a cached response is suitable for a given request. If a header can make a significant difference to a response, use the `<vary-by-header>` tag. Work with your developer team to understand how each API uses query parameters and headers so you can decide which vary-by tags to use in your policy.
 
 Within the `<cache-lookup>` tag, there's also the `vary-by-developer` attribute, which is required and set to *false* by default. When this attribute is set to *true*, API Management examines the subscription key supplied with each request. It serves a response from the cache only if the original request had the same subscription key. Set this attribute to *true* when each user should see a different response for the same URL. If each user group should see a different response for the same URL, set the `vary-by-developer-group` attribute to *true*.
 
 ## Use an external cache
 
-API Management instances usually have an internal cache, which is used to store prepared responses to requests. However, if you prefer, you can use an external cache instead. One possible external cache system that you can use is the Azure Cache for Redis service.
+API Management instances usually have an internal cache, which is used to store prepared responses to requests. However, if you prefer, you can use a Redis-compatible external cache instead. One possible external cache system that you can use is the Azure Cache for Redis service.
 
 You might choose to use an external cache because:
 
@@ -109,4 +109,4 @@ You might choose to use an external cache because:
 - You want to have greater control over the cache configuration than the internal cache allows.
 - You want to cache more data than can be stored in the internal cache.
 
-Another reason to configure an external cache is that you want to use caching with the consumption pricing tier. This tier follows serverless design principles, and you should use it with serverless web APIs. For this reason, it has no internal cache. If you want to use caching with an API Management instance in the consumption tier, you must use an external cache.
+Another reason to configure an external cache is that you want to use caching with the Consumption pricing tier. This tier follows serverless design principles, and you should use it with serverless web APIs. For this reason, it has no internal cache. If you want to use caching with an API Management instance in the Consumption tier, you must use an external cache.

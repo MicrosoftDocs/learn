@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-cost-optimization.design-for-usage-optimization
+title: Design for usage optimization
+metadata:
+  title: Design for usage optimization
+  description: Learn how to maximize the use of resources and operations.
+  ms.date: 10/23/2023
+  author: martinekuan
+  ms.author: martinek
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-design-for-usage-optimization.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which of these is available for certain Azure compute services to let you save money by paying for only the compute that you use?"
+      choices:
+        - content: "Azure Advisor cost recommendations"
+          isCorrect: false
+          explanation: "Incorrect.  Azure Advisor cost recommendations provide recommendations about how you can reduce your Azure spend by identifying idle and underutilized resources."
+        - content: "Azure Reservations"
+          isCorrect: false
+          explanation: "Incorrect. Azure reservations let you prepay for a one-year or three-year term to get a discount on the base compute rate. You can’t pay for only the compute that you use in this model."
+        - content: "Azure Hybrid Benefit"
+          isCorrect: false
+          explanation: "Incorrect.  Azure Hybrid Benefit lets you use your on-premises Windows Server or SQL Server licenses with Software Assurance to pay a reduced rate on Azure Virtual Machines. It doesn't affect the cost of resources based on utilization."
+        - content: "Consumption-based billing"
+          isCorrect: true
+          explanation: "Correct.  Services like Azure Functions and Azure Container Instances can be configured to use consumption-based billing, which means that you pay only for the compute that you use."
+
+    - content: "Which of the following HA designs should you avoid for cost-efficiency if you’ve already paid for the resources?"
+      choices:
+        - content: "Active-active"
+          isCorrect: false
+          explanation: "Incorrect.  An active-active design should be used for workloads that are accessed across regions or for workloads that require zero or near-zero downtime."
+        - content: "Active-only"
+          isCorrect: false
+          explanation: "Incorrect.  An active-only design may be sufficient for workloads with high RPO and RTO targets." 
+        - content: "Active-passive"
+          isCorrect: true
+          explanation: "Correct.  An active-passive design may lead to paying for idle resources."
+
+    - content: "What is one way the workload team can ensure that they catch abandoned resources, like MySQL servers that are no longer used?"
+      choices:
+        - content: "Review the monthly Azure bill."
+          isCorrect: false
+          explanation: "Incorrect.  The Azure bill won’t provide information about the utilization of a given resource"
+        - content: "Setup Azure budget alerts"
+          isCorrect: false
+          explanation: "Incorrect.  Budget alerts only notify users when the budget is exceeded, they can’t provide any information about a given resource's utilization"
+        - content: "Review the cost analysis report for the subscription"
+          isCorrect: false
+          explanation: "Incorrect.  The cost analysis report won’t provide information about the utilization of a given resource"
+        - content: "Review the Azure Advisor cost recommendations"
+          isCorrect: true
+          explanation: "Correct.  Azure Advisor cost recommendations can identify underutilized MySQL servers and will provide a recommendation when such servers are found."

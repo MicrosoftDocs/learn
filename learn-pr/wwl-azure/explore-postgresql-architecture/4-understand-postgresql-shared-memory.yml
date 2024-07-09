@@ -3,14 +3,13 @@ uid: learn.wwl.explore-postgresql-architecture.understand-postgresql-shared-memo
 title: Understand PostgreSQL shared memory
 metadata:
   title: Understand PostgreSQL shared memory
-  description: "Understand PostgreSQL shared memory"
-  ms.date: 10/27/2022
+  description: "Understand PostgreSQL shared memory."
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-understand-postgresql-shared-memory.md)]

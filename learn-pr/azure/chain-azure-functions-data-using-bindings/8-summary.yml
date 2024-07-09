@@ -2,13 +2,12 @@
 uid: learn.chain-azure-functions-data-using-input-output-bindings.8-summary
 title: Summary
 metadata:
-  title: What we've learned
+  title: What we learned
   description: Summary
-  ms.date: 09/24/2018
+  ms.date: 06/06/2024
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/8-summary.md)]
@@ -16,14 +15,14 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Which of the following is an advantage of using bindings in your Azure Functions to access data sources and data sinks?"
+  - content: "Which of the following statements describes an advantage of using bindings in your Azure Functions to access data sources and data sinks?"
     choices:
     - content: "They provide access to more data sources than are available using code."
       isCorrect: false
       explanation: "Bindings are optional; you can access data using code if you prefer."
     - content: "They let you connect to Azure resources without authentication."
       isCorrect: false
-      explanation: "Using a binding does not change the security requirements for accessing Azure resources."
+      explanation: "Using a binding doesn't change the security requirements for accessing Azure resources."
     - content: "They simplify the connection process; you don't need to code specific connection logic."
       isCorrect: true
       explanation: "Bindings provide a declarative way to connect to data. They let you avoid the complexity of coding connection logic like making a database connection or invoking web API interfaces."
@@ -35,7 +34,7 @@ quiz:
       explanation: "The configuration is written in JSON."
     - content: "config.json"
       isCorrect: false
-      explanation: "It is a JSON file, but this is not the correct name."
+      explanation: "It's a JSON file, but this name isn't correct."
     - content: "function.json"
       isCorrect: true
       explanation: "The configuration is named `function.json`, which contains JSON configuration data such as binding declarations."

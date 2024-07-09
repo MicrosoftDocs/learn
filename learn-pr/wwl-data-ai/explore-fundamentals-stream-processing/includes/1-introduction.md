@@ -8,7 +8,7 @@ In this module, you'll learn about the basics of stream processing and real-time
 - Describe common elements of streaming data solutions
 - Describe features and capabilities of Azure Stream Analytics
 - Describe features and capabilities of Spark Structured Streaming on Azure
-- Describe features and capabilities of Azure Synapse Data Explorer
+- Describe features and capabilities of realtime analytics in Microsoft Fabric
 
 > [!NOTE]
 > This module is designed to present a conceptual overview of real-time processing and describe Azure services that can be used to build real-time analytics solutions. It is not intended to teach implementation details for creating a stream processing solution.

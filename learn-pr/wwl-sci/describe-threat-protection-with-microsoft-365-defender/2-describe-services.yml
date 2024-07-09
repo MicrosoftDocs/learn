@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-services
-title: Describe Microsoft 365 Defender services
+title: Describe Microsoft Defender XDR services
 metadata:
-  title: Describe Microsoft 365 Defender services
-  description: "Describe Microsoft 365 Defender services"
-  ms.date: 02/09/2023
+  title: Describe Microsoft Defender XDR services
+  description: "Describe Microsoft Defender XDR services"
+  ms.date: 01/03/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/2-describe-services.md)]

@@ -1,0 +1,1 @@
+In this module, you learned about the purpose of the Semantic Kernel SDK. You learned how combining code with the capabilities of large language models can create a wide range of user experiences. You also set up your Azure OpenAI resource and built your Semantic Kernel project. Great work!

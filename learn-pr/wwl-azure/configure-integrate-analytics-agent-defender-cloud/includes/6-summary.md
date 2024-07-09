@@ -1,0 +1,1 @@
+In this module, you learned to configure and integrate an Azure Log Analytics agent and workspace with Microsoft Defender for Cloud, enabling centralized log collection, analysis, proactive security monitoring, and enhanced threat detection and response.

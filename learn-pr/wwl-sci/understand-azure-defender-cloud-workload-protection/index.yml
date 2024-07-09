@@ -6,8 +6,8 @@ metadata:
   ms.date: 07/14/2022
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: defender-for-cloud
 title: Explain cloud workload protections in Microsoft Defender for Cloud
 summary: Learn about the protections and detections provided by Microsoft Defender for Cloud with each cloud workload.
 abstract: |

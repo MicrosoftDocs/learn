@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/15/2023
   author: MashaMSFT
   ms.author: mathoma
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Scenario 2 - Mission-critical application
 durationInMinutes: 10
 content: |
@@ -76,17 +75,17 @@ quiz:
         - content: "SQL Audit only"
           isCorrect: false
           explanation: "This configuration allows you to access log data, but you won't be able to see sensitive data that was accessed."
-    - content: "How can you allow DBAs to troubleshoot performance via the Azure portal and SSMS, and create new contained database users with Azure AD principals?"
+    - content: "How can you allow DBAs to troubleshoot performance via the Azure portal and SSMS, and create new contained database users with Microsoft Entra principals?"
       choices:
-        - content: "Azure AD groups" 
+        - content: "Microsoft Entra groups" 
           isCorrect: false
           explanation: "Using groups alone won't really help the situation."
         - content: "Azure RBAC" 
           isCorrect: false
           explanation: "This option allows you to make DBAs part of the SQL Server Contributor role, but they won't be able to access data."
-        - content: "Azure AD groups and Azure RBAC" 
+        - content: "Microsoft Entra groups and Azure RBAC" 
           isCorrect: false
-          explanation: "Almost, but the DBA group must have Azure AD admin rights on the logical server."
+          explanation: "Almost, but the DBA group must have Microsoft Entra admin rights on the logical server."
         - content: "None of the above" 
           isCorrect: true
-          explanation: "The answer is really a combination of the above plus a little more. Create an Azure AD group called SQL DBA for the DBAs on the respective instance. Then, assign the group to the Azure RBAC role of SQL Server Contributor. Finally, set the group to be the Azure AD admin on the logical server."
+          explanation: "The answer is really a combination of the above plus a little more. Create a Microsoft Entra group called SQL DBA for the DBAs on the respective instance. Then, assign the group to the Azure RBAC role of SQL Server Contributor. Finally, set the group to be the Microsoft Entra admin on the logical server."

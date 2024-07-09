@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-hdinsight-aks.1-introduction  
+title: Introduction
+metadata:
+  unitType: introduction  
+  title: Introduction
+  description: HDInsight on AKS is a modern, reliable, secure, and fully managed Platform as a Service (PaaS) that runs on Azure Kubernetes Service (AKS). HDInsight on AKS allows you to deploy popular Open-Source Analytics workloads like Apache Spark™, Apache Flink®️, and Trino without the overhead of managing and monitoring containers.
+  ms.date: 11/24/2023  
+  author: sairamyeturi 
+  ms.author: sairamyeturi
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

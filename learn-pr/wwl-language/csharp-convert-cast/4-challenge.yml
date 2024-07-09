@@ -3,12 +3,13 @@ uid: learn.languages.csharp-convert-cast.challenge
 title: Exercise - Complete a challenge to combine string array values as strings and as integers
 metadata:
   title: Exercise - Complete a challenge to combine string array values as strings and as integers
-  description: "Exercise - Complete a challenge to combine string array values as strings and as integers"
-  ms.date: 04/26/2023
+  description: "Practice combining string array values as strings and as integers."
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/4-challenge.md)]

@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-identities-with-aad-idp.3-detect-risks-with-policies
 metadata:
-  title: Detect risks with Azure AD Identity Protection policies
-  description: Detect risks with Azure AD Identity Protection policies
-  ms.date: 03/23/2019
+  title: Detect risks with Microsoft Entra ID Protection policies
+  description: Detect risks with Microsoft Entra ID Protection policies
+  ms.date: 07/28/2023
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Detect risks with Azure AD Identity Protection policies
+  ms.topic: unit
+title: Detect risks with Microsoft Entra ID Protection policies
 durationInMinutes: 10
 content: |
   [!include[](includes/3-detect-risks-with-policies.md)]

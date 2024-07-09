@@ -4,12 +4,11 @@ title: Install Active Directory and create a user
 metadata:
   unitType: exercise
   title: Install Active Directory and create a user
-  description: "This exercise will guide you through the setup and installation of Active Directory and also the creation of a user."
-  ms.date: 5/31/2022
+  description: "Learn how to install Windows Server Active Directory and create a user as part of a hybrid configuration of Windows Server AD and Microsoft Entra ID."
+  ms.date: 05/28/2024
   author: billmath
   ms.author: billmath
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/exercise-install-ad-create-user.md)]
