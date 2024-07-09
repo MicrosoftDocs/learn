@@ -33,7 +33,6 @@ units:
 - learn.wwl.custom-name-entity-extraction.understand-custom-named
 - learn.wwl.custom-name-entity-extraction.tag-your-data
 - learn.wwl.custom-name-entity-extraction.train-evaluate-your-model
-- learn.wwl.custom-name-entity-extraction.knowledge-check
 - learn.wwl.custom-name-entity-extraction.summary
 badge:
   uid: learn.wwl.custom-name-entity-extraction.badge
