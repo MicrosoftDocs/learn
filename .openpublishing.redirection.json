@@ -41748,6 +41748,11 @@
       "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/4-train-evaluate-your-model.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/2-understand-custom-named.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
     }
   ]
 }
