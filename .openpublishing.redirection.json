@@ -41728,6 +41728,11 @@
       "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
     }
   ]
 }
