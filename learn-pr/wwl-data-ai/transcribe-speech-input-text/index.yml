@@ -37,6 +37,5 @@ subjects:
 - artificial-intelligence
 units:
 - learn.wwl.transcribe-speech-input-text.text-to-speech
-- learn.wwl.transcribe-speech-input-text.summary
 badge:
   uid: learn.wwl.transcribe-speech-input-text.badge
