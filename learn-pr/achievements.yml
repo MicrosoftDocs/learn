@@ -3668,3 +3668,8 @@ achievements:
   title: Create a custom named entity extraction solution
   summary: Build a custom entity recognition solution to extract entities from unstructured documents
   iconUrl: /training/achievements/2-custom-name-entity-recognition.svg
+- uid: learn.wwl.extract-insights-text-with-text-analytics-service.badge
+  type: badge
+  title: Extract insights from text with the Azure AI Language service
+  summary: The Azure AI Language service enables you to create intelligent apps and services that extract semantic information from text.
+  iconUrl: /training/achievements/extract-insights-from-text-with-the-text-analytics-service.svg
