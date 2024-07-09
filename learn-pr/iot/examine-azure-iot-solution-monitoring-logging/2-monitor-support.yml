@@ -7,7 +7,7 @@ metadata:
   ms.date: 01/17/2024
   author: kgremban
   ms.author: kgremban
-  ms.topic: module-standard-task-based
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-monitor-support.md)]
