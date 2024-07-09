@@ -38,7 +38,6 @@ subjects:
 units:
 - learn.wwl.build-qna-solution-qna-maker.understand
 - learn.wwl.build-qna-solution-qna-maker.test-publish-knowledge-base
-- learn.wwl.build-qna-solution-qna-maker.knowledge-check
 - learn.wwl.build-qna-solution-qna-maker.summary
 badge:
   uid: learn.wwl.build-qna-solution-qna-maker.badge
