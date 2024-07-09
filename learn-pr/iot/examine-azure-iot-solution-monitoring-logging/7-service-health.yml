@@ -8,7 +8,6 @@ metadata:
   author: kgremban
   ms.author: kgremban
   ms.topic: module-standard-task-based
-  ms.service: iot-hub
 durationInMinutes: 5
 content: |
   [!include[](includes/7-service-health.md)]

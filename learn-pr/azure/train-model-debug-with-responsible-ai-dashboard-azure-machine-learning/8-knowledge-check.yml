@@ -8,8 +8,6 @@ metadata:
   author: lgayhardt
   ms.author: lagayhar
   ms.topic: unit
-  ms.service: machine-learning
-  ms.subservice: responsible-ai  
 durationInMinutes: 5
 quiz:
   questions:

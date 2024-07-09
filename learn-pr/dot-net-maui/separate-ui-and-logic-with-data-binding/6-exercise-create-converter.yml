@@ -8,8 +8,6 @@ metadata:
   author: adegeo
   ms.author: adegeo
   ms.topic: unit
-  ms.service: dotnet-mobile
-  ms.subservice: dotnet-maui
   ms.custom: devx-track-dotnet
 durationInMinutes: 10
 content: |
