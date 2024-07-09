@@ -41663,6 +41663,11 @@
       "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/7-consume-qna-client-interfaces.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/4-create-knowledge-base.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
     }
   ]
 }
