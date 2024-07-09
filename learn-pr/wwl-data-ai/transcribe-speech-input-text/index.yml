@@ -40,7 +40,6 @@ units:
 - learn.wwl.transcribe-speech-input-text.create-speech-resource
 - learn.wwl.transcribe-speech-input-text.speech-to-text
 - learn.wwl.transcribe-speech-input-text.text-to-speech
-- learn.wwl.transcribe-speech-input-text.audio-format-voices
 - learn.wwl.transcribe-speech-input-text.speech-synthesis-markup
 - learn.wwl.transcribe-speech-input-text.exercise-speech-app
 - learn.wwl.transcribe-speech-input-text.knowledge-check
