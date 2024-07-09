@@ -36,6 +36,5 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn.wwl.build-qna-solution-qna-maker.understand
 badge:
   uid: learn.wwl.build-qna-solution-qna-maker.badge
