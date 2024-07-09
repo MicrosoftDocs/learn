@@ -32,6 +32,5 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn.wwl.extract-insights-text-with-text-analytics-service.summary
 badge:
   uid: learn.wwl.extract-insights-text-with-text-analytics-service.badge
