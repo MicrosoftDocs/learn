@@ -41738,6 +41738,11 @@
       "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/7-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/3-tag-your-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
     }
   ]
 }
