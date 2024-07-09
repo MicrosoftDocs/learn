@@ -21,7 +21,7 @@ quiz:
       choices:
         - content: "Run `npm install jest`"
           isCorrect: false
-          explanation: "Incorrect. This command installs Jest, but it installs it as a normal dependency. We don't recommend installing Jest as a normal dependency because the dependency will ship with the application."
+          explanation: "Incorrect. This command installs Jest, but it installs it as a normal dependency. We don't recommend installing Jest as a normal dependency because the dependency ships with the application."
         - content: "Run `npm install jest --save-dev`"
           isCorrect: true
           explanation: "Correct. This command installs Jest as a dev dependency. A test framework is something you need only during development."
@@ -30,7 +30,7 @@ quiz:
           explanation: "Incorrect. This command installs Jest in the `dependencies` section. We recommend that any library that's used only during development is installed as a dev dependency. And you don't need to add the `--save` flag. This flag is left over from when it was needed to persist the installed library in the package.json file."
         - content: "Run `npm download jest --save-dev`"
           isCorrect: false
-          explanation: "Incorrect. There is no `download` command. Use `install`."
+          explanation: "Incorrect. There's no `download` command. Use `install`."
     - content: "What is the main reason to use npx?"
       choices:
         - content: "The dependency is downloaded directly into the Node.js process and is removed after the command is run. This tool is great for when you want to run commands infrequently."
@@ -49,10 +49,10 @@ quiz:
       choices:
         - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"*\"`"
           isCorrect: false
-          explanation: "Incorrect. This code will update the dependency to the latest possible version."
+          explanation: "Incorrect. This code updates the dependency to the latest possible version."
         - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"1.x.0\"`"
           isCorrect: false
-          explanation: "Incorrect. This code will update the dependency to the latest minor version."
+          explanation: "Incorrect. This code updates the dependency to the latest minor version."
         - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"1.0.x\"`"
           isCorrect: true
           explanation: "Correct!"           
