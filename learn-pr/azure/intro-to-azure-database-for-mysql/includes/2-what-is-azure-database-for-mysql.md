@@ -48,7 +48,7 @@ Azure Database for MySQL is a fully managed, relational DBaaS platform hosted in
 
 These standard features require little administrative effort to implement and configure.
 
-Azure Database for MySQL supports common tools like MySQL Workbench and integrates with Azure Data Studio through the [MySQL extension](https://learn.microsoft.com/azure-data-studio/extensions/mysql-extension), maintaining a familiar workflow for developers. It provides you the flexibility to develop applications using your favorite tools, languages, and frameworks, deploy faster by integrating with Azure services like App Services or AKS, and automate CI/CD tasks using GitHub or Azure DevOps.
+Azure Database for MySQL supports common tools like MySQL Workbench and integrates with Azure Data Studio through the [MySQL extension](/azure-data-studio/extensions/mysql-extension), maintaining a familiar workflow for developers. It provides you the flexibility to develop applications using your favorite tools, languages, and frameworks, deploy faster by integrating with Azure services like App Services or AKS, and automate CI/CD tasks using GitHub or Azure DevOps.
 
 Consider this deployment mode to support cloud-native apps and solutions that:
 
