@@ -46,7 +46,7 @@ To learn more about Defender, including how to configure alerts, see the referen
 
 ## Enable and connect using Microsoft Entra ID authentication
 
-Before you begin, you need an appropriately configured user-managed identity (UMI). The identity needs the [Directory Readers](https://review.learn.microsoft.com/azure/active-directory/roles/permissions-reference#directory-readers) role, or these individual permissions: [User.Read.All](https://review.learn.microsoft.com/graph/permissions-reference#user-permissions), [GroupMember.Read.All](https://review.learn.microsoft.com/graph/permissions-reference#group-permissions), and [Application.Read.ALL](https://review.learn.microsoft.com/graph/permissions-reference#application-resource-permissions). For more information about how to add these permissions, see this [tutorial](https://review.learn.microsoft.com/azure/mysql/flexible-server/how-to-azure-ad#grant-permissions-to-user-assigned-managed-identity).
+Before you begin, you need an appropriately configured user-managed identity (UMI). The identity needs the [Directory Readers](/azure/active-directory/roles/permissions-reference#directory-readers) role, or these individual permissions: [User.Read.All](/graph/permissions-reference#user-permissions), [GroupMember.Read.All](/graph/permissions-reference#group-permissions), and [Application.Read.ALL](/graph/permissions-reference#application-resource-permissions). For more information about how to add these permissions, see this [tutorial](/azure/mysql/flexible-server/how-to-azure-ad#grant-permissions-to-user-assigned-managed-identity).
 
 To enable Microsoft Entra ID authentication for an Azure Database for MySQL flexible server, perform the following steps:
 
@@ -101,9 +101,9 @@ You can configure encryption at rest by using Azure portal or using the Azure CL
 
 - **User-managed identity (UMI)**. You need a UMI for the database to access the key vault.
 
-- **Permissions**. Set up either [role-based access](https://review.learn.microsoft.com/azure/role-based-access-control/overview) (IAM) or a [vault access policy](https://review.learn.microsoft.com/azure/key-vault/general/assign-access-policy), and grant the following permissions to the UMI: Get, List, Wrap key, and Unwrap key.
+- **Permissions**. Set up either [role-based access](/azure/role-based-access-control/overview) (IAM) or a [vault access policy](/azure/key-vault/general/assign-access-policy), and grant the following permissions to the UMI: Get, List, Wrap key, and Unwrap key.
 
-- **Enable** [**soft-delete**](https://review.learn.microsoft.com/azure/key-vault/general/soft-delete-overview" /l "soft-delete-behavior). Accidentally losing access to an encryption key could result in permanent data loss. Enable soft deletion as a layer of protection. When you use the Azure portal to create a new key vault, soft-deletion is enabled by default.
+- **Enable** [**soft-delete**](/azure/key-vault/general/soft-delete-overview" /l "soft-delete-behavior). Accidentally losing access to an encryption key could result in permanent data loss. Enable soft deletion as a layer of protection. When you use the Azure portal to create a new key vault, soft-deletion is enabled by default.
 
   If you know the vault's name but not ID, you can look it up by running:
 

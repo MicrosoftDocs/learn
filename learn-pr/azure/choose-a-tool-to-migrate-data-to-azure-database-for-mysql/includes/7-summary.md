@@ -4,4 +4,4 @@ You chose to use the Azure Import CLI as the simplest route. You created a full 
 ## References
 
 - [Percona XtraBackup 8](https://docs.percona.com/percona-xtrabackup/8.0/index.html)
-- Azure CLI reference: [mysql flexible-server import](/cli/azure/mysql/flexible-server/import?view=azure-cli-latest)
+- Azure CLI reference: [mysql flexible-server import](/cli/azure/mysql/flexible-server/import)

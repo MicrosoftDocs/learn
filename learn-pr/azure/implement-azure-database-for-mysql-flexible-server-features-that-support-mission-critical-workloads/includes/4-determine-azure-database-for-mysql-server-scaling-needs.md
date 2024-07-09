@@ -1,7 +1,7 @@
 When it comes to sizing compute resources, consider whether existing and forecasted usage are well within capacity. You can gather necessary information by monitoring basic performance metrics such as CPU and RAM utilization. It might be possible to use the slow query log to identify and optimize poorly performing queries and remedy the performance problem without scaling the compute size. You should also monitor I/O performance to make sure database reads and writes aren't a performance bottleneck. Another option to effectively increase available capacity on the main database is to provision a read replica to shift query load.
 ## Monitor database performance metrics
 
-The Azure portal presents access to a [number of metrics](https://review.learn.microsoft.com/azure/mysql/flexible-server/concepts-monitoring) that you can use to monitor database performance. For example, you can visualize the CPU percentage used by a flexible server.
+The Azure portal presents access to a [number of metrics](/azure/mysql/flexible-server/concepts-monitoring) that you can use to monitor database performance. For example, you can visualize the CPU percentage used by a flexible server.
 
 :::image type="content" source="../media/4-determine-azure-database-for-mysql-server-scaling-needs/metrics.png" alt-text="Screenshot of metrics showing CPU utilization." lightbox="../media/4-determine-azure-database-for-mysql-server-scaling-needs/metrics.png":::
 
@@ -81,6 +81,6 @@ To provision a read replica, in the Azure portal, on the page associated with yo
 
 After you create the read replica, you can configure the replica server name and its compute and storage settings. You cannot change some settings, like authentication, which are inherited from the primary server.
 
-:::image type="content" source="../media/4-determine-azure-database-for-mysql-server-scaling-needs/add-replica.png" alt-text="Screenshot of the add replica button." lightbox="../media/4-determine-azure-database-for-mysql-server-scaling-needs/add-replica.png":::
+:::image type="content" source="../media/4-determine-azure-database-for-mysql-server-scaling-needs/add-replica.png" alt-text="Screenshot of the adding a replica." lightbox="../media/4-determine-azure-database-for-mysql-server-scaling-needs/add-replica.png":::
 
 At Wingtip Toys, the data science team and reporting tools can now query the read replica server, reducing the load on the main application database and removing the need to throttle analytics or limit queries off-hours.
