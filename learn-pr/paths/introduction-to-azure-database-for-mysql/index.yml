@@ -25,7 +25,7 @@ products:
 - azure-database-mysql
 modules:
 - learn.intro-to-azure-database-for-mysql
-- learn-pr.azure.create-azure-database-for-mysql
+- learn.create-azure-database-for-mysql
 - learn.develop-apps-with-azure-database-mysql
 - learn.explore-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads
 - learn.implement-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads
