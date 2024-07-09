@@ -41708,6 +41708,11 @@
       "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/6-test-publish-knowledge-base.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/2-understand.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
     }
   ]
 }
