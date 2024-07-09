@@ -8,12 +8,12 @@ Suppose you work at an e-commerce startup, Wingtip Toys. Previously, you evaluat
 
 Wingtip Toys will launch a holiday marketing campaign next quarter, so it's vital to complete the database migration before then. The team is familiar with managing a MySQL server but has never migrated a database to the cloud before. 
 
-Currently, Wingtip Toys’ customers are US-centric, and there is predictable daytime traffic. You expect that this will change after the campaign launches and as the holiday nears, when people will shop later at night and new toys will attract a more international audience.
+Currently, Wingtip Toys’ customers are US-centric, and there's predictable daytime traffic. You expect that this will change after the campaign launches and as the holiday nears, when people will shop later at night and new toys will attract a more international audience.
 
-## What you will do
+## What you do
 
-You'll first review the considerations for and phases for migrating a database. Then you will review available tools and select the best option for your migration. Lastly, after deciding on the approach, you will migrate a database from an on-premises server to a new Azure Database for MySQL flexible server.
+You'll first review the considerations for and phases for migrating a database. Then you'll review available tools and select the best option for your migration. Lastly, after deciding on the approach, you'll migrate a database from an on-premises server to a new Azure Database for MySQL flexible server.
 
 ## Primary goal
 
-Your main goal is to understand how to approach and perform a database migration. You'll use this knowledge to migrate your on-premises server to a cloud database service: Azure Database for MySQL. 
+Your main goal is to understand how to approach and perform a database migration. You use this knowledge to migrate your on-premises server to a cloud database service: Azure Database for MySQL. 
