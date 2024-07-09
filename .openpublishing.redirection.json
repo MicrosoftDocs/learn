@@ -41833,6 +41833,11 @@
       "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
     }
   ]
 }
