@@ -4,7 +4,7 @@ title: Configure networking and security features
 metadata:
   title: Configure networking and security features
   description: "This unit covers implementing networking and security features for Azure Database for PostgreSQL - Flexible Server. It also looks at Microsoft Defender for Cloud and data encryption."
-  ms.date: 07/10/2024
+  ms.date: 07/08/2024
   author: shreyaaithal
   ms.author: shaithal
   ms.reviewer: maghan

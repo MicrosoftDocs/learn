@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Choose a suitable hosting option for your MySQL app
   description: Let us explore some common MySQL application architectures and Azure services to determine the most suitable hosting option for your app workload. We will discuss about web apps (Azure App Service), containerized applications with microservices architecture (AKS), event-driven serverless computing (Azure Functions and Logic Apps) and monolithic legacy apps (Azure Virtual Machines).
-  ms.date: 07/10/2024
+  ms.date: 07/08/2024
   author: shreyaaithal
   ms.author: shaithal
   ms.reviewer: maghan

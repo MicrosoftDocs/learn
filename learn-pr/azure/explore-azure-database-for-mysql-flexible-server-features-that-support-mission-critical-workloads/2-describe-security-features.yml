@@ -4,7 +4,7 @@ title: Describe security features
 metadata:
   title: Describe security features
   description: "This unit describes the security features of Azure Database for PostgreSQL - Flexible Server. It covers networking access, Microsoft Defender for Cloud, authentication, and encryption."
-  ms.date: 07/10/2024
+  ms.date: 07/08/2024
   author: shreyaaithal
   ms.author: shaithal
   ms.reviewer: maghan
