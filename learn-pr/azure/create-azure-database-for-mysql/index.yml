@@ -40,13 +40,13 @@ products:
 - azure-database-mysql
 
 units:
-- learn.create-azure-database-for-mysql..introduction
-- learn.create-azure-database-for-mysql..what-azure-database-mysql
-- learn.create-azure-database-for-mysql..how-deploy-connect-azure-database-mysql
-- learn.create-azure-database-for-mysql..deploy-azure-database-mysql
-- learn.create-azure-database-for-mysql..connect-azure-database-mysql
-- learn.create-azure-database-for-mysql..knowledge-check
-- learn.create-azure-database-for-mysql..summary
+- learn.create-azure-database-for-mysql.introduction
+- learn.create-azure-database-for-mysql.what-azure-database-mysql
+- learn.create-azure-database-for-mysql.how-deploy-connect-azure-database-mysql
+- learn.create-azure-database-for-mysql.deploy-azure-database-mysql
+- learn.create-azure-database-for-mysql.connect-azure-database-mysql
+- learn.create-azure-database-for-mysql.knowledge-check
+- learn.create-azure-database-for-mysql.summary
 
 badge:
-  uid: learn.create-azure-database-for-mysql..badge
+  uid: learn.create-azure-database-for-mysql.badge

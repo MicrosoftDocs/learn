@@ -27,8 +27,8 @@ modules:
 - learn.intro-to-azure-database-for-mysql
 - learn.create-azure-database-for-mysql
 - learn.develop-apps-with-azure-database-mysql
-- learn.explore-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads
-- learn.implement-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads
+- learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads
+- learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads
 - learn.choose-a-tool-to-migrate-data-to-azure-database-for-mysql
 trophy:
   uid: learn.azure-database-for-mysql.trophy

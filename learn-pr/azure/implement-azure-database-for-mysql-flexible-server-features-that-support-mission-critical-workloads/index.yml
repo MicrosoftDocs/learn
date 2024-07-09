@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.implement-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads
+uid: learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads
 metadata:
   title: "Implement Azure Database for MySQL Flexible Server features that support mission-critical workloads"
   description: "Implement Azure Database for MySQL Flexible Server features that support mission-critical workloads"
@@ -36,11 +36,11 @@ products:
 subjects:
 - databases
 units:
-- learn.implement-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.introduction
-- learn.implement-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.configure-security-features
-- learn.implement-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.configure-business-continuity-and-disaster-recovery
-- learn.implement-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.determine-azure-database-for-mysql-server-scaling-needs
-- learn.implement-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.knowledge-check
-- learn.implement-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.summary
+- learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads.introduction
+- learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads.configure-security-features
+- learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads.configure-business-continuity-and-disaster-recovery
+- learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads.determine-azure-database-for-mysql-server-scaling-needs
+- learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads.knowledge-check
+- learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads.summary
 badge:
-  uid: learn.implement-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.badge
+  uid: learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads.badge
