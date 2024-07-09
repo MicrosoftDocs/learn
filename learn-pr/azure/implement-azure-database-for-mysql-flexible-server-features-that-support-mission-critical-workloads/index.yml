@@ -37,7 +37,7 @@ subjects:
 - databases
 units:
 - learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads.introduction
-- learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads.configure-security-features
+- learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads.configure-networking-and-security-features
 - learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads.configure-business-continuity-and-disaster-recovery
 - learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads.determine-azure-database-for-mysql-server-scaling-needs
 - learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads.knowledge-check
