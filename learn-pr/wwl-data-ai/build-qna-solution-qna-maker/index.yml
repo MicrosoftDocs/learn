@@ -37,6 +37,5 @@ subjects:
 - artificial-intelligence
 units:
 - learn.wwl.build-qna-solution-qna-maker.understand
-- learn.wwl.build-qna-solution-qna-maker.test-publish-knowledge-base
 badge:
   uid: learn.wwl.build-qna-solution-qna-maker.badge
