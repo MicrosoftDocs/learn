@@ -1,0 +1,83 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "This unit is a knowledge check of the Azure Database for PostgreSQL - Flexible Server module. The knowledge check explores features that support mission-critical workloads."
+  ms.date: 3/29/2024
+  author: markingmyname
+  ms.author: maghan
+  ms.topic: unit
+durationInMinutes: 1
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "Which of the following best describes High Availability (HA)?"
+    choices:
+    - content: "The database has enough performance to be available."
+      isCorrect: false
+      explanation: "While performance issues can impact availability, high availability protects against other issues like hardware failure."
+    - content: "The database is available in every region."
+      isCorrect: false
+      explanation: "A highly available database is available on at least two nodes, not every region."
+    - content: "The database has at least one replica."
+      isCorrect: true
+      explanation: "Correct, a highly available database has at least one replica in the same zone or another zone."
+  - content: "The Burstable tier is best for which of these use cases:"
+    choices:
+    - content: "The server load is usually low, but occasionally high."
+      isCorrect: true
+      explanation: "Correct, during low traffic the server accumulates credits used during the occasional bursts."
+    - content: "The server load is usually high, but occasionally low."
+      isCorrect: false
+      explanation: "The Burstable tier is not meant to handle consistently high traffic."
+    - content: "The server load is medium for CPU with unpredictable IOPS."
+      isCorrect: false
+      explanation: "The Burstable tier responds to compute bursts, not IOPS (for that, see the Autoscale IOPS feature)."
+  - content: "Pre-provisioned IOPS may be adjusted:"
+    choices:
+    - content: "Automatically according to server load."
+      isCorrect: false
+      explanation: "Pre-provisioned IOPS are a constant capacity, not dynamic according to load."
+    - content: "Manually by an administrator."
+      isCorrect: true
+      explanation: "Correct, IOPS are provisioned with a user operation."
+    - content: "Automatically according to user-defined policies."
+      isCorrect: false
+      explanation: "Pre-provisioned IOPS are a constant capacity, not dynamic according to a policy."
+  - content: "Read replicas are useful when you need to:"
+    choices:
+    - content: "Replicate the application in another region."
+      isCorrect: false
+      explanation: "The application needs read-write access to its database, not a read-only copy of the other region's data."
+    - content: "Read the latest transactional data in another zone."
+      isCorrect: false
+      explanation: "While read replicas are quite fast, the replica is not guaranteed to be totally consistent with the primary database."
+    - content: "Run intensive reports during peak application traffic."
+      isCorrect: true
+      explanation: "This is an excellent use case for read replicas. Reports can typically tolerate seconds or even minutes of delay."
+  - content: "Your workload is very high in the morning Monday through Friday, but generally low otherwise. Uptime is extremely important during these times. You choose:"
+    choices:
+    - content: "Burstable Tier compute, with autoscaled IOPS."
+      isCorrect: false
+      explanation: "The Burstable tier is not best suited for mission-critical applications."
+    - content: "General-purpose tier, with maximum pre-provisioned IOPS."
+      isCorrect: false
+      explanation: "While this may meet the needs of the peak hours, the IOPS are very overprovisioned outside of weekday mornings, making this solution less cost-effective."
+    - content: "Business Critical Tier compute, with autoscaled IOPS."
+      isCorrect: true
+      explanation: "This is the most cost-effective solution that also provides the strongest uptime and performance."

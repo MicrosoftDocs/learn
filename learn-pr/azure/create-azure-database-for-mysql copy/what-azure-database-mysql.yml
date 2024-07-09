@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.azure.create-azure-database-for-mysql.what-azure-database-mysql
+title: Azure Database for MySQL
+
+metadata:
+  title: Azure Database for MySQL
+  description: Describe the core functionality of Azure Database for MySQL.
+  author: markingmyname
+  ms.author: maghan
+  manager: jroth
+  ms.reviewer: shreyaanand
+  ms.topic: unit
+  ms.custom: event-tier1-build-2022
+  ms.date: 06/09/2023
+
+durationInMinutes: 10
+content: |
+  [!include[](includes/what-azure-database-mysql.md)]

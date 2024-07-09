@@ -1,0 +1,21 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-apps-with-azure-database-mysql.exercise-app-service-mysql
+title: Exercise - Deploy a PHP and MySQL - Flexible Server app on Azure App Service
+sandbox: true
+interactive: bash
+metadata:
+  unitType: exercise
+  title: Exercise - Deploy a PHP and MySQL - Flexible Server app on Azure App Service
+  description: Build and deploy a sample PHP application to Azure App Service, and integrate it with Azure Database for MySQL - Flexible Server on the back end.
+  ms.date: 5/10/2022
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - devx-track-azurecli
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-app-service-mysql.md)]

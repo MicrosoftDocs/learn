@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.determine-azure-database-for-mysql-server-scaling-needs
+title: Determine Azure Database for MySQL server scaling needs
+metadata:
+  title: Determine Azure Database for MySQL server scaling needs
+  description: "This unit covers performance features for Azure Database for MySQL - Flexible Server: monitoring, tuning, Autoscale IOPS, and read replicas."
+  ms.date: 3/29/2024
+  author: markingmyname
+  ms.author: maghan
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-determine-azure-database-for-mysql-server-scaling-needs.md)]

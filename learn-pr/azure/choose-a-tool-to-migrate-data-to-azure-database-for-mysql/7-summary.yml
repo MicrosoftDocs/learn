@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-a-tool-to-migrate-data-to-azure-database-for-mysql.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "This unit summarizes the module on migrating data to Azure Database for MySQL Flexible server. The content covered migration phases and considerations, tool options, and migration approaches."
+  ms.date: 3/29/2024
+  author: markingmyname
+  ms.author: maghan
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-summary.md)]

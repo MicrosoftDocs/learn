@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.explore-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads
+
+metadata:
+  title: "Explore Azure Database for MySQL - Flexible Server features that support mission-critical workloads"
+  description: "Explore Azure Database for MySQL - Flexible Server features that support mission-critical workloads"
+  ms.date: 3/29/2024
+  author: markingmyname
+  ms.author: maghan
+  ms.topic: module-intro-to-product
+  ms.service: mysql
+title: "Explore Azure Database for MySQL - Flexible Server features that support mission-critical workloads"
+summary: |
+  Azure Database for MySQL – Flexible Server provides security, business continuity, disaster recovery, and performance features that are designed to support your mission critical workloads.
+abstract: |
+   In this module, you'll learn about Azure Database for MySQL - Flexible Server features that you can use to support your mission-critical workloads. You'll:
+   - "Explore security features in Azure Database for MySQL – Flexible Server."
+   - "Compare business continuity and disaster recovery options in Azure Database for MySQL – Flexible Server."
+   - "Evaluate performance features in Azure Database for MySQL – Flexible Server."
+prerequisites: |
+  - Experience administering MySQL.
+  - Experience administering Azure.
+  - Experience administering Azure Database for MySQL.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - database-administrator
+  - technology-manager
+products:
+  - azure
+  - azure-database-mysql
+subjects:
+- databases
+units:
+- learn.explore-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.introduction
+- learn.explore-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.networking-and-security-features
+- learn.explore-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.business-continuity-and-disaster-recovery-options
+- learn.explore-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.azure-database-for-mysql-flexible-server-performance-features
+- learn.explore-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.knowledge-check
+- learn.explore-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.summary
+badge:
+  uid: learn.explore-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.badge

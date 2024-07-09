@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "This unit introduces the module to implementing Azure Database for MySQL flexible server features that support mission-critical workloads. It covers networking and security, business continuity, disaster recovery, and performance."
+  ms.date: 3/29/2024
+  author: markingmyname
+  ms.author: maghan
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

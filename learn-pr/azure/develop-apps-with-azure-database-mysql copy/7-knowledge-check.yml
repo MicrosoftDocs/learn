@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-apps-with-azure-database-mysql.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge Check for Develop applications with Azure Database for MySQL - Flexible Server module.
+  ms.date: 5/10/2022
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "An e-commerce company has developed its client app using PHP, hosted it on an on-premises Apache server, and connected it to a MySQL server in the back end. With a growing number of features and active customer base, app performance has been severely affected to the point that the company cannot meet customers’ demands during peak traffic. The teams that are working on specific features and services are experiencing difficulty with managing, monitoring, and making changes to their parts of the app. What is the best solution to help mitigate these issues?"
+    choices:
+    - content: "Migrate the app to Azure and host it on Azure Virtual Machines. Then migrate the on-premises MySQL server to a managed VM on Azure."
+      isCorrect: false
+      explanation: "Try again. Migrating the app and databases to Azure VMs may simplify scaling and improve performance, but it won't solve all of the issues."
+    - content: "Deploy the app to Azure App Service and migrate the MySQL server to Azure Database for MySQL - Flexible Server."
+      isCorrect: false
+      explanation: "Try again. Migrating the app and databases to Azure App Service may simplify scaling and improve performance, but it won't solve all of the issues."
+    - content: "Modernize the app architecture to microservices, deploy it to Azure Kubernetes Service, and migrate the MySQL server to Azure Database for MySQL - Flexible Server."
+      isCorrect: true
+      explanation: "Correct. With the monolithic app separated into microservices, developers can work on, scale and manage individual services effectively. Migrating to MySQL - Flexible Server simplifies database manageability and scalability."
+  - content: "An IT company wants to create a simple, cost-effective app that sends a notification to managers every time a code change is submitted. What is the best app hosting option on Azure for this scenario?"
+    choices:
+    - content: "Azure Virtual Machines"
+      isCorrect: false
+      explanation: "Try again. This option is complex to implement and isn't cost-effective."
+    - content: "Azure Functions"
+      isCorrect: true
+      explanation: "Correct. An event-driven serverless computing option like Azure Functions is ideal for such scenarios. This option is easy to implement and is cost-effective since you're only charged for the time and resources taken to execute the code."
+    - content: "Azure Kubernetes Services (AKS)"
+      isCorrect: false
+      explanation: "Try again. While AKS is a possible option, it may not be the most cost-effective or easy to implement."
+  - content: "What connection information is sufficient to connect to and query a database on an Azure Database for MySQL flexible server from an app hosted in Azure App Service or AKS?"
+    choices:
+    - content: "Server name, resource group name, admin username, and password."
+      isCorrect: false
+      explanation: "Try again. The resource group name is not required to connect to a database on a MySQL flexible server."
+    - content: "Server name, database name, admin username, and password."
+      isCorrect: true
+      explanation: "Correct. These four pieces of information are sufficient to connect to a database in MySQL flexible server."
+    - content: "Server name, MySQL version, database name, admin username, and password."
+      isCorrect: false
+      explanation: "Try again. MySQL version is not required to connect to a database on a MySQL flexible server."
+  - content: "An app is facing intermittent connectivity issues while connecting to an Azure Database for MySQL flexible server. These issues occur randomly and cannot be reproduced at will. What's the most likely cause of these issues and the best solution to mitigate them?"
+    choices:
+    - content: "These are transient faults; implement retry logic."
+      isCorrect: true
+      explanation: "Correct. Cloud environments are likely to encounter transient faults like network connectivity interruptions or service timeouts. An application can be up and running again after retrying database requests with sufficient delays."
+    - content: "The connection string used in the application is incorrect; update the connection string and connection information."
+      isCorrect: false
+      explanation: "Try again. If the connection string was incorrectly configured, connections should always fail, not intermittently."
+    - content: "The flexible server's provisioned storage limit has been reached; scale up storage."
+      isCorrect: false
+      explanation: "Try again. When the consumed storage is reaching the provisioned limit, the flexible server is put to read-only mode. The application can still connect to it and perform read operations."
+  - content: "Jim is tasked with developing a public-facing website for his large organization using WordPress. He decides to deploy the app on Azure App Service and use Azure Database for MySQL - Flexible Server in the back end to store blog data. What is the most suitable MySQL - Flexible Server compute tier for this workload?"
+    choices:
+    - content: "Burstable"
+      isCorrect: false
+      explanation: "Try again. The Burstable tier is best suited for test and development workloads that do not require full CPU continuously."
+    - content: "General Purpose"
+      isCorrect: true
+      explanation: "Correct. The General Purpose tier is the best option for business workloads such as enterprise web applications."
+    - content: "Business Critical"
+      isCorrect: false
+      explanation: "Try again. The Business Critical tier is designed for high-performance database workloads. It may not be a cost-effective option for simple websites or applications."

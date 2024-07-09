@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.configure-networking-and-security-features
+title: Configure networking and security features
+metadata:
+  title: Configure networking and security features
+  description: "This unit covers implementing networking and security features for Azure Database for PostgreSQL - Flexible Server. It also looks at Microsoft Defender for Cloud and data encryption."
+  ms.date: 3/29/2024
+  author: markingmyname
+  ms.author: maghan
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-configure-networking-and-security-features.md)]

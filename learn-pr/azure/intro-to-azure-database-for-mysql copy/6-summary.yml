@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-database-for-mysql.6-summary  
+title: Summary  
+metadata:
+  unitType: summary  
+  title: Summary
+  description: Summary
+  ms.date: 03/23/2021  
+  author: markingmyname
+  ms.author: maghan
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-summary.md)]

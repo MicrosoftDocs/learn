@@ -34,13 +34,13 @@ quiz:
  
   - content: "Which architecture model provides the maximum high availability that Azure Database for MySQL - Flexible Server supports?"
     choices:
-    - content: "The primary and replica servers deployed into the same availability set"
+    - content: "The primary and standby replica servers deployed into the same availability set"
       isCorrect: false
       explanation: "Azure Database for MySQL - Flexible Server uses availability zones, not availability sets to maximize high availability."
-    - content: "The primary and replica servers deployed into different zones in the same region"
+    - content: "The primary and standby replica servers deployed into different zones in the same region"
       isCorrect: true
       explanation: "Azure Database for MySQL - Flexible Server uses availability zones to maximize high availability."
-    - content: "The primary and replica servers deployed into different regions"
+    - content: "The primary and standby replica servers deployed into different regions"
       isCorrect: false
       explanation: "Azure Database for MySQL - Flexible Server uses availability zones, not cross-region deployments, to maximize high availability."
  

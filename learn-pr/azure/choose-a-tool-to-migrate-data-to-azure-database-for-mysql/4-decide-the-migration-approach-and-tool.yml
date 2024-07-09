@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-a-tool-to-migrate-data-to-azure-database-for-mysql.decide-the-migration-approach-and-tool
+title: Decide the migration approach and tool
+metadata:
+  title: Decide the migration approach and tool
+  description: "This unit evaluates the pros and cons of tools and approaches for migrating to Azure Database for MySQL - Flexible Server."
+  ms.date: 3/29/2024
+  author: markingmyname
+  ms.author: maghan
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-decide-the-migration-approach-and-tool.md)]

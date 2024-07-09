@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-azure-database-for-mysql-flexible-server-features-that-support-mission-critical-workloads.business-continuity-and-disaster-recovery-options
+
+title: Compare business continuity and disaster recovery options
+metadata:
+  title: Compare business continuity and disaster recovery options
+  description: "This unit covers business continuity and disaster recovery for Azure Database for PostgreSQL - Flexible Server. The unit goes over downtime examples, high availability, backup and restore, and scheduled maintenance."
+  ms.date: 3/29/2024
+  author: markingmyname
+  ms.author: maghan
+  ms.topic: unit
+
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-business-continuity-and-disaster-recovery-options.md)]
