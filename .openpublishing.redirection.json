@@ -41848,6 +41848,11 @@
       "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/3-speech-to-text.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
     }
   ]
 }
