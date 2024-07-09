@@ -5,7 +5,7 @@ metadata:
   unitType: introduction
   title: Introduction
   description: In this module, you learn to create applications that connect to and query an Azure Database for MySQL flexible server. You also learn to develop and deploy applications faster by integrating the service with Azure App Service, Azure Kubernetes Service (AKS), Azure DevOps, or GitHub.
-  ms.date: 5/10/2022
+  ms.date: 07/10/2024
   author: shreyaaithal
   ms.author: shaithal
   ms.reviewer: maghan

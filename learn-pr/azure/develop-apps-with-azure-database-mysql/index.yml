@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Develop apps with Azure Database for MySQL - Flexible Server
   description: Learn to create apps that connect to and query Azure Database for MySQL - Flexible Server. Develop and deploy apps faster by integrating with Azure App Service, Azure Kubernetes Service, Azure DevOps or GitHub.
-  ms.date: 5/10/2022
+  ms.date: 07/10/2024
   author: shreyaaithal
   ms.author: shaithal
   ms.reviewer: maghan

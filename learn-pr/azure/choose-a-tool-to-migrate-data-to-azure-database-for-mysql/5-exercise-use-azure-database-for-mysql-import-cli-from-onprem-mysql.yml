@@ -4,7 +4,7 @@ title: "Exercise: Use the Azure Database for MySQL import CLI from an on-premise
 metadata:
   title: "Exercise: Use the Azure Database for MySQL import CLI from an on-premises MySQL"
   description: "This exercise covers migrating on-premises MySQL data to an Azure Database for MySQL flexible server using the import CLI."
-  ms.date: 3/29/2024
+  ms.date: 07/10/2024
   author: shreyaaithal
   ms.author: shaithal
   ms.reviewer: maghan

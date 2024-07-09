@@ -5,7 +5,7 @@ metadata:
   unitType: summary
   title: Summary
   description: This module helped you to identify the best hosting option for your application, update your application code to connect to and query data from Azure Database for MySQL - Flexible Server, and deploy your application on Azure App Service. You also learned a few best practices to follow to help ensure lower latency, as well as better security and performance.
-  ms.date: 5/10/2022
+  ms.date: 07/10/2024
   author: shreyaaithal
   ms.author: shaithal
   ms.reviewer: maghan

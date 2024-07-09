@@ -5,7 +5,7 @@ metadata:
   unitType: introduction  
   title: What is Azure Database for MySQL?
   description: Azure Database for MySQL is a managed database as a service (DBaaS) offering that can handle mission-critical workloads with predictable performance and dynamic scalability.
-  ms.date: 03/23/2021  
+  ms.date: 07/10/2024  
   author: shreyaaithal
   ms.author: shaithal
   ms.reviewer: maghan
