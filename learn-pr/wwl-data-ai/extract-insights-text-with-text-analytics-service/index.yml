@@ -36,7 +36,6 @@ units:
 - learn.wwl.extract-insights-text-with-text-analytics-service.provision-resource
 - learn.wwl.extract-insights-text-with-text-analytics-service.detect-language
 - learn.wwl.extract-insights-text-with-text-analytics-service.extract-key-phrases
-- learn.wwl.extract-insights-text-with-text-analytics-service.analyze-sentiment
 - learn.wwl.extract-insights-text-with-text-analytics-service.extract-entitites
 - learn.wwl.extract-insights-text-with-text-analytics-service.extract-linked-entitites
 - learn.wwl.extract-insights-text-with-text-analytics-service.exercise
