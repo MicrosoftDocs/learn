@@ -31,6 +31,5 @@ products:
 - ai-services
 units:
 - learn.wwl.custom-name-entity-extraction.understand-custom-named
-- learn.wwl.custom-name-entity-extraction.train-evaluate-your-model
 badge:
   uid: learn.wwl.custom-name-entity-extraction.badge
