@@ -2,26 +2,25 @@
 uid: learn.develop-apps-with-azure-database-mysql
 metadata:
   moduleType: standard
-  title: Develop applications with Azure Database for MySQL - Flexible Server
-  description: Learn to create applications that connect to and query Azure Database for MySQL - Flexible Server. Develop and deploy applications faster by integrating with Azure App Service, Azure Kubernetes Service, Azure DevOps or GitHub.
+  title: Develop apps with Azure Database for MySQL - Flexible Server
+  description: Learn to create apps that connect to and query Azure Database for MySQL - Flexible Server. Develop and deploy apps faster by integrating with Azure App Service, Azure Kubernetes Service, Azure DevOps or GitHub.
   ms.date: 5/10/2022
   author: shreyaaithal
   ms.author: shaithal
   ms.reviewer: maghan
-  manager: jroth
-  ms.topic: module-standard-task-based
+  ms.topic: module-intro-to-product
   ms.service: mysql
   ms.subservice: flexible-server
   ms.custom:
     - build-2023
     - build-2023-dataai
-title: Develop applications with Azure Database for MySQL - Flexible Server
-summary: Learn to create applications that connect to and query Azure Database for MySQL - Flexible Server. Develop and deploy applications faster by integrating with Azure App Service, Azure Kubernetes Service, Azure DevOps, or GitHub.
+title: Develop apps with Azure Database for MySQL - Flexible Server
+summary: Learn to create apps that connect to and query Azure Database for MySQL - Flexible Server. Develop and deploy apps faster by integrating with Azure App Service, Azure Kubernetes Service, Azure DevOps, or GitHub.
 abstract: |
-  By the end of this module, you'll be able to:
-    - Connect to and query Azure Database for MySQL from your application developed in the language of your choice.
-    - Choose a hosting option suitable for your MySQL application.
-    - Deploy your application on Azure services like Azure App Service and Azure Kubernetes Service (AKS).
+  By the end of this module, you should be able to:
+    - Connect to and query Azure Database for MySQL flexible server from your app developed in the language of your choice.
+    - Choose a hosting option suitable for your MySQL app.
+    - Deploy your app on Azure services like Azure App Service and Azure Kubernetes Service (AKS).
     - Build a sample PHP app connecting to MySQL Flexible Server and deploy it on Azure App Service.
     - Apply best practices for application development with Azure Database for MySQL.
 prerequisites: |

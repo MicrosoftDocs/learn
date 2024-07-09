@@ -5,8 +5,9 @@ metadata:
   title: Summary
   description: "This unit summarizes the module on implementing Azure Database for MySQL - Flexible Server features that support mission-critical workloads."
   ms.date: 3/29/2024
-  author: markingmyname
-  ms.author: maghan
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
   ms.topic: unit
 durationInMinutes: 1
 content: |

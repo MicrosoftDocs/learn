@@ -5,8 +5,9 @@ metadata:
   title: Summary
   description: "This unit summarizes the module on exploring Azure Database for MySQL - Flexible Server features that support mission-critical workloads. The module covered networking and security, business continuity, disaster recovery, and performance features."
   ms.date: 3/29/2024
-  author: markingmyname
-  ms.author: maghan
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
   ms.topic: unit
 durationInMinutes: 1
 content: |

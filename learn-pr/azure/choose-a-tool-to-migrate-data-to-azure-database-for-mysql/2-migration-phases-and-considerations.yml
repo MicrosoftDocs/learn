@@ -5,8 +5,9 @@ metadata:
   title: Migration phases and considerations
   description: "This unit covers the phases and considerations in database migrations to Azure Database for MySQL flexible servers."
   ms.date: 3/29/2024
-  author: markingmyname
-  ms.author: maghan
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
   ms.topic: unit
 durationInMinutes: 8
 content: |

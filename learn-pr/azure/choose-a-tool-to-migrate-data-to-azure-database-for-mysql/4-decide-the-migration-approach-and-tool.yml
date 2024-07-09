@@ -5,8 +5,9 @@ metadata:
   title: Decide the migration approach and tool
   description: "This unit evaluates the pros and cons of tools and approaches for migrating to Azure Database for MySQL - Flexible Server."
   ms.date: 3/29/2024
-  author: markingmyname
-  ms.author: maghan
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
   ms.topic: unit
 durationInMinutes: 8
 content: |

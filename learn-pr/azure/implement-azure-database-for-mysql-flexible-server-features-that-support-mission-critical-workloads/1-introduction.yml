@@ -5,8 +5,9 @@ metadata:
   title: Introduction
   description: "This unit introduces the module to implementing Azure Database for MySQL flexible server features that support mission-critical workloads. It covers networking and security, business continuity, disaster recovery, and performance."
   ms.date: 3/29/2024
-  author: markingmyname
-  ms.author: maghan
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
   ms.topic: unit
 durationInMinutes: 1
 content: |

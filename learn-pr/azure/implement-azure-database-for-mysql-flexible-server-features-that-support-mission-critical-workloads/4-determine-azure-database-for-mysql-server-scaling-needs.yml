@@ -5,8 +5,9 @@ metadata:
   title: Determine Azure Database for MySQL server scaling needs
   description: "This unit covers performance features for Azure Database for MySQL - Flexible Server: monitoring, tuning, Autoscale IOPS, and read replicas."
   ms.date: 3/29/2024
-  author: markingmyname
-  ms.author: maghan
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
   ms.topic: unit
 durationInMinutes: 1
 content: |

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.develop-apps-with-azure-database-mysql.implement-best-practices
-title: Apply best practices for application development
+title: Consider best practices for app development
 metadata:
   unitType: learning-content
-  title: Apply best practices for application development
-  description: Explore few best practices that you should consider implementing when developing applications with Azure Database for MySQL - Flexible Server, to ensure better performance, resilience and security. Co-locate your resource, implement connection pooling, size your application and database compute and storage, implement network isolation and SSL connectivity and retry logic to overcome transient errors. 
+  title: Consider best practices for app development
+  description: Explore few best practices that you should consider implementing when developing apps with Azure Database for MySQL - Flexible Server, to ensure better performance, resilience and security. Co-locate your resource, implement connection pooling, size your application and database compute and storage, implement network isolation and SSL connectivity and retry logic to overcome transient errors. 
   ms.date: 5/10/2022
   author: shreyaaithal
   ms.author: shaithal

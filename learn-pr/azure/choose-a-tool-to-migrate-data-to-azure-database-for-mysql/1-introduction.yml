@@ -5,8 +5,9 @@ metadata:
   title: Introduction
   description: "This unit introduces the module on choosing a tool to migrate data to an Azure Database for MySQL flexible server. It covers migration phases and considerations, tool options, and migration approaches."
   ms.date: 3/29/2024
-  author: markingmyname
-  ms.author: maghan
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
   ms.topic: unit
 durationInMinutes: 4
 content: |

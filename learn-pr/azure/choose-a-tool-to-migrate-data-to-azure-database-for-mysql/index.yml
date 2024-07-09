@@ -4,8 +4,9 @@ metadata:
   title: "Choose a tool to migrate data to Azure Database for MySQL"
   description: "Choose a tool to migrate data to Azure Database for MySQL"
   ms.date: 3/29/2024
-  author: markingmyname
-  ms.author: maghan
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
   ms.topic: module-intro-to-product
   ms.service: mysql
 title: "Choose a tool to migrate data to Azure Database for MySQL"

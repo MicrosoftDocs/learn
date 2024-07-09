@@ -5,8 +5,9 @@ metadata:
   title: Summary
   description: "This unit summarizes the module on migrating data to Azure Database for MySQL Flexible server. The content covered migration phases and considerations, tool options, and migration approaches."
   ms.date: 3/29/2024
-  author: markingmyname
-  ms.author: maghan
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
   ms.topic: unit
 durationInMinutes: 3
 content: |

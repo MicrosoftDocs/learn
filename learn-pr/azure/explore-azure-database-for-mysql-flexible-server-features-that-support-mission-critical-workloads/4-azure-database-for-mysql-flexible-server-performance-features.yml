@@ -5,8 +5,9 @@ metadata:
   title: Azure Database for MySQL - Flexible Server performance features
   description: "This unit describes performance features for Azure Database for MySQL - Flexible Server. It discusses compute size (RAM and cores), service tier compute sizes, pre-provisioned IOPS and Autoscale IOPS, and read replicas."
   ms.date: 3/29/2024
-  author: markingmyname
-  ms.author: maghan
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
   ms.topic: unit
 durationInMinutes: 6
 content: |

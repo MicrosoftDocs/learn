@@ -5,8 +5,9 @@ metadata:
   title: Configure business continuity and disaster recovery
   description: "This unit reviews implementing business continuity and disaster recovery features for Azure Database for MySQL - Flexible Server. It covers high availability, and backup and restore."
   ms.date: 3/29/2024
-  author: markingmyname
-  ms.author: maghan
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
   ms.topic: unit
 durationInMinutes: 1
 content: |

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.develop-apps-with-azure-database-mysql.connect-to-mysql-from-app
-title: Connect to and query MySQL - Flexible Server from your application
+title: Connect to and query an Azure Database for MySQL flexible server from your app
 metadata:
   unitType: learning-content
-  title: Connect to and query MySQL - Flexible Server from your application
+  title: Connect to and query an Azure Database for MySQL flexible server from your app
   description: Learn how to connect to and query Azure Database for MySQL - Flexible Server from your application, developed in languages like PHP, Java, Python.
   ms.date: 5/10/2022
   author: shreyaaithal

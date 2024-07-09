@@ -6,8 +6,9 @@ metadata:
   title: Compare business continuity and disaster recovery options
   description: "This unit covers business continuity and disaster recovery for Azure Database for PostgreSQL - Flexible Server. The unit goes over downtime examples, high availability, backup and restore, and scheduled maintenance."
   ms.date: 3/29/2024
-  author: markingmyname
-  ms.author: maghan
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
   ms.topic: unit
 
 durationInMinutes: 10

@@ -5,8 +5,9 @@ metadata:
   title: Explore migration tool options
   description: "This unit covers migration tool options for Azure Database for MySQL - Flexible Server. It addresses mysqldump, MySQL Workbench, MySQL binlog, mydumper, myloader, Azure Migrate, Azure Database Migration Service (DMS), and the Azure Database for MySQL Import CLI."
   ms.date: 3/29/2024
-  author: markingmyname
-  ms.author: maghan
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
   ms.topic: unit
 durationInMinutes: 6
 content: |
