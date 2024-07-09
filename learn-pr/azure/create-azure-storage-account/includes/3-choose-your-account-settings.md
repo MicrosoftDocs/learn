@@ -12,10 +12,7 @@ Each storage account has a name. The name must be globally unique within Azure, 
 
 ## Deployment model
 
-A _deployment model_ is the system Azure uses to organize your resources. The model defines the API that you use to create, configure, and manage those resources. Azure provides two deployment models:
-
-- **Resource Manager**: the current model that uses the Azure Resource Manager API
-- **Classic**: a legacy offering that uses the classic deployment model
+A _deployment model_ is the system Azure uses to organize your resources. The model defines the API that you use to create, configure, and manage those resources. Azure provides two deployment models, _Resource Manager_ and _Classic_. Resource Manager is the current model that uses the Azure Resource Manager API. The Classic model, [which is currently being retired](https://azure.microsoft.com/updates/cloud-services-classic-retirement-announcement-feb2024), was a legacy offering that used the classic deployment model.
 
 Most Azure resources only work with Resource Manager, which makes it easy to decide which model to choose. However, storage accounts, virtual machines, and virtual networks support both, so you must choose one or the other when you create your storage account.
 

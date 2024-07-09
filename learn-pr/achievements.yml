@@ -3658,3 +3658,23 @@ achievements:
   title: Introduction to Azure Space
   summary: Explore some of the ins and outs of the space industry and how it's quickly changing.
   iconUrl: /training/achievements/azure-space-intro.svg
+- uid: learn.wwl.build-qna-solution-qna-maker.badge
+  type: badge
+  title: Build a question answering solution
+  summary: The question answering capability of the Language service makes it easy to build applications in which users ask questions using natural language and receive appropriate answers.
+  iconUrl: /training/achievements/qna-maker-solution.svg
+- uid: learn.wwl.custom-name-entity-extraction.badge
+  type: badge
+  title: Create a custom named entity extraction solution
+  summary: Build a custom entity recognition solution to extract entities from unstructured documents
+  iconUrl: /training/achievements/2-custom-name-entity-recognition.svg
+- uid: learn.wwl.extract-insights-text-with-text-analytics-service.badge
+  type: badge
+  title: Extract insights from text with the Azure AI Language service
+  summary: The Azure AI Language service enables you to create intelligent apps and services that extract semantic information from text.
+  iconUrl: /training/achievements/extract-insights-from-text-with-the-text-analytics-service.svg
+- uid: learn.wwl.transcribe-speech-input-text.badge
+  type: badge
+  title: Create speech-enabled apps with Azure AI services
+  summary: The Azure AI Speech service enables you to build speech-enabled applications. This module focuses on using the speech-to-text and text to speech APIs, which enable you to create apps that are capable of speech recognition and speech synthesis.
+  iconUrl: /training/achievements/transcribe-speech-input-text.svg
