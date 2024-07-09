@@ -34,7 +34,6 @@ subjects:
 units:
 - learn.wwl.extract-insights-text-with-text-analytics-service.introduction
 - learn.wwl.extract-insights-text-with-text-analytics-service.provision-resource
-- learn.wwl.extract-insights-text-with-text-analytics-service.extract-key-phrases
 - learn.wwl.extract-insights-text-with-text-analytics-service.extract-linked-entitites
 - learn.wwl.extract-insights-text-with-text-analytics-service.knowledge-check
 - learn.wwl.extract-insights-text-with-text-analytics-service.summary
