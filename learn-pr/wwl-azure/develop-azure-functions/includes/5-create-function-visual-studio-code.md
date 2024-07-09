@@ -107,7 +107,7 @@ In this section, you create the Azure resources you need to deploy your local fu
     
 1. After deployment completes, select **View Output** to view the creation and deployment results, including the Azure resources that you created. If you miss the notification, select the bell icon in the lower right corner to see it again.
 
-    :::image type="content" source="../media/function-create-notifications.png" alt-text="":::
+    :::image type="content" source="../media/function-create-notifications.png" alt-text="Screenshot of the View Output window.":::
 
 ## Run the function in Azure
 
@@ -119,4 +119,3 @@ In this section, you create the Azure resources you need to deploy your local fu
 
 1. When the function executes in Azure and returns a response, a notification is raised in Visual Studio Code.
 
-    :::image type="content" source="../media/executed-function-notification.png" alt-text="Executed function notification":::
