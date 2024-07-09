@@ -3,8 +3,8 @@ uid: learn.intro-to-azure-site-recovery.when-to-use-azure-site-recovery
 title: When to use Azure Site Recovery
 metadata:
   title: When to use Azure Site Recovery
-  description: In this unit, you'll learn when to use Azure Site Recovery.
-  ms.date: 04/13/2023
+  description: In this unit, you learn when to use Azure Site Recovery.
+  ms.date: 07/08/2024
   author: orin-thomas
   ms.author: orthomas
   ms.topic: unit
