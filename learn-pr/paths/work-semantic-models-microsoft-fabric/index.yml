@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: learning-path
-  ms.service: fabric
 title: Work with semantic models in Microsoft Fabric
 prerequisites: |
   Familiarity with Microsoft Fabric: [https://learn.microsoft.com/training/paths/get-started-fabric/](/training/paths/get-started-fabric/)

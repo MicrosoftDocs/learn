@@ -7,7 +7,6 @@ metadata:
   ms.date: 01/29/2024
   author: olguzzar
   ms.author: olguzzar
-  ms.service: vs-code
   ms.topic: learning-path
 summary: |
   Remote development provides benefits like consistent environments, the ability to use more powerful hardware, and the flexibility to develop on different platforms without impacting your local machine. Visual Studio Code provides tools for various remote development setups, such as using a container, a remote machine, or the Windows Subsystem for Linux (WSL). In this path, you will:

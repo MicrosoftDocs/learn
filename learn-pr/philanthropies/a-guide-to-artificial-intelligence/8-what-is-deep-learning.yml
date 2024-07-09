@@ -8,7 +8,6 @@ metadata:
   author: yoosunee
   ms.author: andreapark
   ms.topic: unit
-  ms.service: artificial-intelligence
 durationInMinutes: 2
 content: |
   [!include[](includes/8-what-is-deep-learning.md)]
