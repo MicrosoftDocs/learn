@@ -39,7 +39,6 @@ units:
 - learn.wwl.transcribe-speech-input-text.speech-to-text
 - learn.wwl.transcribe-speech-input-text.text-to-speech
 - learn.wwl.transcribe-speech-input-text.speech-synthesis-markup
-- learn.wwl.transcribe-speech-input-text.knowledge-check
 - learn.wwl.transcribe-speech-input-text.summary
 badge:
   uid: learn.wwl.transcribe-speech-input-text.badge
