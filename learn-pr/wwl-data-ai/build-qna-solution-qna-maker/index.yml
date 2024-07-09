@@ -41,7 +41,6 @@ units:
 - learn.wwl.build-qna-solution-qna-maker.implement-multi-turn-conversation
 - learn.wwl.build-qna-solution-qna-maker.test-publish-knowledge-base
 - learn.wwl.build-qna-solution-qna-maker.implement-active-learning
-- learn.wwl.build-qna-solution-qna-maker.exercise-create
 - learn.wwl.build-qna-solution-qna-maker.knowledge-check
 - learn.wwl.build-qna-solution-qna-maker.summary
 badge:
