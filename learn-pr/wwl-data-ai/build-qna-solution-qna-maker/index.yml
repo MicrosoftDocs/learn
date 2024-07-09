@@ -36,7 +36,6 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn.wwl.build-qna-solution-qna-maker.introduction
 - learn.wwl.build-qna-solution-qna-maker.understand
 - learn.wwl.build-qna-solution-qna-maker.test-publish-knowledge-base
 - learn.wwl.build-qna-solution-qna-maker.knowledge-check
