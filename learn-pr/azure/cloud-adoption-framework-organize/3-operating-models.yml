@@ -22,21 +22,21 @@ quiz:
       explanation: Correct. A central IT model generally provides more control over your IT environment.
     - content: You prefer agility and speed over centralized control.
       isCorrect: false
-      explanation: Incorrect. This is better suited to a CCoE model.
+      explanation: Incorrect. A CCoE model handles this better.
     - content: You want to build a modern IT organization through agile approaches to capture and implement business requirements.
       isCorrect: false
-      explanation: Incorrect. This is better suited to a CCoE model.
+      explanation: Incorrect. A CCoE model suits this better.
     - content: You want to adopt new technologies quickly.
       isCorrect: false
-      explanation: Incorrect. This is better suited to a CCoE model.
+      explanation: Incorrect. A CCoE model suits this better.
   - content: What's a reason for transitioning to the CCoE model?
     choices:
     - content: You need to meet strict industry standards for compliance.
       isCorrect: false
-      explanation: Incorrect. This is better suited to a central IT model.
+      explanation: Incorrect. A central IT model suits this better.
     - content: You prefer control over agility and speed.
       isCorrect: false
-      explanation: Incorrect. This is better suited to a central IT model.
+      explanation: Incorrect. A central IT model suits this better.
     - content: You want to build a modern IT organization through agile approaches to capture and implement business requirements.
       isCorrect: true
       explanation: Correct. A CCoE model generally allows for more agility and speed.

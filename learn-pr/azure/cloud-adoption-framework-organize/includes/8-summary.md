@@ -3,4 +3,4 @@ In this module, you learned about why it's important to establish appropriately 
 - The various operational models available as your organization moves from an on-premises IT environment to the cloud.
 - Operational structures based on typical maturation stages.
 - Team structures at different stages of organizational maturity.
-- How to use RACI charts to align accountability and responsibility across each team.
+- How to use Responsible, Accountable, Consulted, and Informed (RACI) charts to align accountability and responsibility across each team.

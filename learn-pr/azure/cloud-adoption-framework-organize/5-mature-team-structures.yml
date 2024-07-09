@@ -22,10 +22,10 @@ quiz:
       explanation: Correct.
     - content: Central IT structure
       isCorrect: false
-      explanation: Incorrect. This is more often used in on-premises environments or where central control is required.
+      explanation: Incorrect. This model is more often used in on-premises environments or where central control is required.
     - content: Cloud adoption team
       isCorrect: false
-      explanation: Incorrect. This is primarily used for small-scale or early-stage adoption efforts.
+      explanation: Incorrect. This model is primarily used for small-scale or early-stage adoption efforts.
     - content: Minimum viable product
       isCorrect: false
       explanation: Incorrect. The MVP model is primarily used for small-scale or early-stage adoption efforts.
