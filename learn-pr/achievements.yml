@@ -3658,3 +3658,8 @@ achievements:
   title: Introduction to Azure Space
   summary: Explore some of the ins and outs of the space industry and how it's quickly changing.
   iconUrl: /training/achievements/azure-space-intro.svg
+- uid: learn.wwl.build-qna-solution-qna-maker.badge
+  type: badge
+  title: Build a question answering solution
+  summary: The question answering capability of the Language service makes it easy to build applications in which users ask questions using natural language and receive appropriate answers.
+  iconUrl: /training/achievements/qna-maker-solution.svg
