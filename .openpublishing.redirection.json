@@ -41788,6 +41788,11 @@
       "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/7-extract-linked-entities.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
     }
   ]
 }
