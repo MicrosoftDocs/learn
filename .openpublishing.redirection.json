@@ -41773,6 +41773,11 @@
       "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/8-exercise-analyze-text.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/6-extract-entities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
     }
   ]
 }
