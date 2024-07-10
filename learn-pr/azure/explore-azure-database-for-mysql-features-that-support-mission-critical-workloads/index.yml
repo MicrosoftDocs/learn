@@ -36,9 +36,9 @@ subjects:
 - databases
 units:
 - learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads.introduction
-- learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads.networking-and-security-features
+- learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads.networking-security-features
 - learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads.business-continuity-and-disaster-recovery-options
-- learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads.azure-database-for-mysql-flexible-server-performance-features
+- learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads.azure-database-for-mysql-performance-features
 - learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads.knowledge-check
 - learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads.summary
 badge:

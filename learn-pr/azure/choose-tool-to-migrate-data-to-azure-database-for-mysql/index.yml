@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.choose-a-tool-to-migrate-data-to-azure-database-for-mysql
+uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql
 metadata:
   title: "Choose a tool to migrate data to Azure Database for MySQL"
   description: "Choose a tool to migrate data to Azure Database for MySQL"
@@ -31,12 +31,12 @@ products:
 subjects:
   - migration
 units:
-- learn.choose-a-tool-to-migrate-data-to-azure-database-for-mysql.introduction
-- learn.choose-a-tool-to-migrate-data-to-azure-database-for-mysql.migration-phases-and-considerations
-- learn.choose-a-tool-to-migrate-data-to-azure-database-for-mysql.explore-migration-tool-options
-- learn.choose-a-tool-to-migrate-data-to-azure-database-for-mysql.decide-the-migration-approach-and-tool
-- learn.choose-a-tool-to-migrate-data-to-azure-database-for-mysql.exercise-use-azure-database-for-mysql-import-cli-from-onprem-mysql
-- learn.choose-a-tool-to-migrate-data-to-azure-database-for-mysql.knowledge-check
-- learn.choose-a-tool-to-migrate-data-to-azure-database-for-mysql.summary
+- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.introduction
+- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.migration-phases-considerations
+- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.explore-migration-tool-options
+- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.decide-the-migration-approach-and-tool
+- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.exercise-use-azure-database-for-mysql-import-cli-from-on-premises
+- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.knowledge-check
+- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.summary
 badge:
-  uid: learn.choose-a-tool-to-migrate-data-to-azure-database-for-mysql.badge
+  uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.badge

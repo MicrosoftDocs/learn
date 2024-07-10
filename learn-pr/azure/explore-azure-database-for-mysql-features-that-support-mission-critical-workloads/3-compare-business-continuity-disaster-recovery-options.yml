@@ -13,4 +13,4 @@ metadata:
 
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-business-continuity-and-disaster-recovery-options.md)]
+  [!include[](includes/3-business-continuity-disaster-recovery-options.md)]

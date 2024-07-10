@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.choose-a-tool-to-migrate-data-to-azure-database-for-mysql.decide-the-migration-approach-and-tool
+uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.decide-the-migration-approach-and-tool
 title: Decide the migration approach and tool
 metadata:
   title: Decide the migration approach and tool
@@ -11,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-decide-the-migration-approach-and-tool.md)]
+  [!include[](includes/4-decide-the-migration-approach-tool.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.choose-a-tool-to-migrate-data-to-azure-database-for-mysql.migration-phases-and-considerations
+uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.migration-phases-and-considerations
 title: Migration phases and considerations
 metadata:
   title: Migration phases and considerations
@@ -11,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-migration-phases-and-considerations.md)]
+  [!include[](includes/2-migration-phases-considerations.md)]

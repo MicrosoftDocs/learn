@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads.configure-networking-and-security-features
+uid: learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.configure-networking-and-security-features
 title: Configure networking and security features
 metadata:
   title: Configure networking and security features
@@ -11,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-configure-networking-and-security-features.md)]
+  [!include[](includes/2-configure-networking-security-features.md)]

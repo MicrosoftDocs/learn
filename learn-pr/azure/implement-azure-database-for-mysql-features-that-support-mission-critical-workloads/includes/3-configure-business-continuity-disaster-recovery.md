@@ -1,4 +1,5 @@
 Azure Database for MySQL - Flexible Server provides features to ensure business continuity and enable disaster recovery. In this unit, you learn how to configure high availability and work with backups.
+
 ## Zone-redundant high availability
 
 Let's look at how to set up zone-redundant high availability (HA), which involves replicating your flexible server instance to a standby server hosted in another availability zone.

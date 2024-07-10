@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.implement-azure-database-for-mysql-features-that-support-mission-critical-workloads.configure-business-continuity-and-disaster-recovery
+uid: learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.configure-business-continuity-and-disaster-recovery
 title: Configure business continuity and disaster recovery
 metadata:
   title: Configure business continuity and disaster recovery
@@ -11,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-configure-business-continuity-and-disaster-recovery.md)]
+  [!include[](includes/3-configure-business-continuity-disaster-recovery.md)]
