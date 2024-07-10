@@ -4,9 +4,9 @@ title: Deploy using ARM templates
 metadata:
   title: learning-content
   description: Describes how you can create mobile network, site, and SIM using the ARM templates.
-  ms.date: 01/18/2023
-  author: ArchanaUpadhyaya
-  ms.author: archanau
+  ms.date: 06/24/2024
+  author: joemarshallmsft
+  ms.author: joemarshall
   ms.topic: unit
 durationInMinutes: 3
 content: |
