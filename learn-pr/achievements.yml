@@ -3693,3 +3693,8 @@ achievements:
   title: Monitor Azure AI Services
   summary: Azure AI Services enable you to integrate artificial intelligence into your applications and services. It's important to be able to monitor Azure AI Services in order to track utilization, determine trends, and detect and troubleshoot issues.
   iconUrl: /learn/achievements/monitor-cognitive-services.svg
+- uid: learn.wwl.publish-use-language-understand-app.badge
+  type: badge
+  title: Develop an app with Azure AI Language
+  summary: After creating an Azure AI Language Understanding model, you can publish it and consume it from client applications.
+  iconUrl: /training/achievements/publish-use-language-understand-app.svg
