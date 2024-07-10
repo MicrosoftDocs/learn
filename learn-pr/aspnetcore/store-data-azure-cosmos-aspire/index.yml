@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.store-data-azure-cosmos-aspire
 metadata:
-  title: Store data in Azure Cosmos DB for a .NET Aspire solution
+  title: Store data in Azure Cosmos DB with .NET Aspire
   description: "Learn how to connect to the Azure Cosmos DB database from a cloud-native application by using .NET Aspire built-in components."
   ms.date: 3/22/2024
   author: camsoper
   ms.author: casoper
   ms.topic: module
   ms.service: dotnet-aspire
-title: Store data in Azure Cosmos DB for a .NET Aspire solution
+title: Store data in Azure Cosmos DB with .NET Aspire
 summary: "Learn how to connect to the Azure Cosmos DB database from a cloud-native application by using .NET Aspire built-in components."
 abstract: |
   By the end of this module, you'll be able to:
