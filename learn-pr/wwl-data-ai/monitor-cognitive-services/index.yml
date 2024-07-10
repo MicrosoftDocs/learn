@@ -37,7 +37,6 @@ units:
 - learn.monitor-cognitive-services.introduction
 - learn.monitor-cognitive-services.monitor-cost
 - learn.monitor-cognitive-services.view-metrics
-- learn.monitor-cognitive-services.diagnostic-logging
 - learn.monitor-cognitive-services.exercise-monitor
 - learn.monitor-cognitive-services.knowledge-check
 - learn.monitor-cognitive-services.summary
