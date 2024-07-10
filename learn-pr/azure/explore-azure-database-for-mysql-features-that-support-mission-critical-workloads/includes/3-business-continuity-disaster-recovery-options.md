@@ -1,4 +1,4 @@
-Azure Database for MySQL - Flexible Server provides business continuity features to protect your database in case of planned or unplanned outages. To address different types of outages, you can implement varying levels of fault protection with different recovery times or risk of data loss.
+Azure Database for MySQL - Flexible Server provides business continuity features to protect your database in case of planned or unplanned outages. To address different types of outages, you can learn.explore varying levels of fault protection with different recovery times or risk of data loss.
 ## Downtime examples
 
 A few example scenarios for both planned and unplanned downtime follow.
