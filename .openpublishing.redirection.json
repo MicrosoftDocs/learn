@@ -41943,6 +41943,11 @@
       "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/4-view-metrics.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
     }
   ]
 }
