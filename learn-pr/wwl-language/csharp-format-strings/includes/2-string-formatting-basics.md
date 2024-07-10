@@ -187,7 +187,7 @@ Measurement: 123,456.7891 units
 
 ### Formatting percentages
 
-Use the `P` format specifier to format percentages. Add a number afterwards to control the number of values displayed after the decimal point. Update your code as follows:
+Use the `P` format specifier to format percentages and rounds to 2 decimal places. Add a number afterwards to control the number of values displayed after the decimal point. Update your code as follows:
 
 ```csharp
 decimal tax = .36785m;
@@ -197,7 +197,7 @@ Console.WriteLine($"Tax rate: {tax:P2}");
 If you're viewing this from the `en-US` culture, you observe the following output.
 
 ```Output
-Tax rate: 36.79 %
+Tax rate: 36.79%
 ```
 
 ### Combining formatting approaches

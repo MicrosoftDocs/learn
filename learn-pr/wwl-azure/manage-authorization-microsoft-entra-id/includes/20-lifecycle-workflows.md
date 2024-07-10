@@ -1,6 +1,6 @@
 Lifecycle workflows are a new identity governance feature that enables organizations to manage Microsoft Entra users by automating these three basic lifecycle processes:
 
-**Joiner**: When an individual enters the scope of needing access. An example is a new employee joining a company or organization.<br>
+**Joiner**: When an individual enters the scope of needing access. An example is a new employee joining a company or organization.
 
 **Mover**: When an individual moves between boundaries within an organization. This movement might require more access or authorization. An example is a user who was in marketing and is now a member of the sales organization.
 
@@ -8,7 +8,7 @@ Lifecycle workflows are a new identity governance feature that enables organizat
 
 Workflows contain specific processes that run automatically against users as they move through their lifecycle. Workflows consist of tasks and execution conditions.
 
-Tasks are specific actions that run automatically when a workflow is triggered. An execution condition defines the scope of who's affected and the trigger of when a workflow will be performed. For example, sending a manager an email seven days before the value in the employeeHireDate attribute of new employees can be described as a workflow. It consists of:<br>
+Tasks are specific actions that run automatically when a workflow is triggered. An execution condition defines the scope of who's affected and the trigger of when a workflow will be performed. For example, sending a manager an email seven days before the value in the employeeHireDate attribute of new employees can be described as a workflow. It consists of:
 
  -  Task: Send email.<br>
  -  Who (scope): New employees.
@@ -47,6 +47,8 @@ You can use lifecycle workflows to address any of the following conditions:
 
  -  **Automating and extending user orientation and HR provisioning**: Use lifecycle workflows when you want to extend your HR provisioning scenarios by automating tasks such as generating temporary passwords and emailing managers. If you currently have a manual process for orientation, use lifecycle workflows as part of an automated process.<br>
  -  **Automating group membership**: When groups in your organization are well defined, you can automate user membership in those groups. Benefits and differences from dynamic groups include:
+    
+    
      -  Lifecycle workflows manage static groups, where you don't need a dynamic group rule.
      -  There's no need to have one rule per group. Lifecycle workflow rules determine the scope of users to execute workflows against, not which group.
      -  Lifecycle workflows help manage users' lifecycle beyond attributes supported in dynamic groups--for example, a certain number of days before the employeeHireDate attribute value.
@@ -59,7 +61,7 @@ You can use lifecycle workflows to address any of the following conditions:
 
 Using this feature requires Microsoft Entra ID Governance licenses.
 
-With Lifecycle Workflows, you can:<br>
+With Lifecycle Workflows, you can:
 
  -  Create, manage, and delete workflows up to the total limit of 50 workflows.<br>
  -  Trigger on-demand and scheduled workflow execution.

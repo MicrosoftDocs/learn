@@ -2,26 +2,37 @@
 uid: learn.wwl.introduction-to-azure-virtual-networks
 metadata:
   title: Introduction to Azure Virtual Networks
-  description: "In this module, you'll learn how to design and implement fundamental Azure Networking resources such as virtual networks, public and private IPs, DNS, virtual network peering, routing, and Azure Virtual NAT."
-  ms.date: 08/16/2023
+  description: "In this module,&nbsp;you&nbsp;learn how to design and implement Azure networking services. You learn about virtual networks, public and private IPs, DNS, virtual network peering, routing, and Azure Virtual NAT."
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: virtual-network
+  ai-usage: human-only
 title: Introduction to Azure Virtual Networks
-summary: You'll learn how to design and implement core Azure Networking infrastructure such as virtual networks, public and private IPs, DNS, virtual network peering, routing, and Azure Virtual NAT.
+summary: In this module, you learn how to design and implement Azure networking services. You learn about virtual networks, public and private IPs, DNS, virtual network peering, routing, and Azure Virtual NAT.
 abstract: |
-  At the end of this module, you'll be able to:
-  - Implement virtual networks
-  - Configure public IP services
-  - Design and implement name resolution
-  - Design and implement cross-VNET connectivity
-  - Implement virtual network routing
-  - Design and implement an Azure Virtual Network NAT
+  At the end of this module, you're able to:
+
+  -   Implement virtual networks.
+
+  -   Configure public IP services.
+
+  -   Design and implement name resolution.
+
+  -   Design and implement cross-VNET connectivity.
+
+  -   Implement virtual network routing.
+
+  -   Design and implement an Azure Virtual Network NAT.
 prerequisites: |
-  - You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
-  - You should have experience with network connectivity methods, such as VPN or WAN
-  - You should have experience with the Azure portal and Azure PowerShell
+  -   You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing.
+
+  -   You should have experience with network connectivity methods, such as VPN or WAN.
+
+  -   You should have experience with the Azure portal and Azure PowerShell.
 iconUrl: /training/achievements/introduction-to-azure-virtual-networks.svg
 levels:
 - beginner

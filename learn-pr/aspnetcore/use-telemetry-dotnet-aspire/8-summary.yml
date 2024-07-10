@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.use-telemetry-dotnet-aspire.summary
+title: Summary
+metadata:
+  title: Summary
+  description: In this unit, you'll review what you've learned about telemetry in .NET Aspire cloud-native applications.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-summary.md)]

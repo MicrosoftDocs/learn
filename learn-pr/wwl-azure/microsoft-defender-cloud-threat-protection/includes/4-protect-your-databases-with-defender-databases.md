@@ -13,7 +13,7 @@ When you enable database protection, you enable all four of the Defender plans a
 
 ### To enable Defender for Databases on your subscription:<br>
 
-1. Sign in to the Azure portal.<br>
+1. Sign in to the [Azure portal](https://portal.azure.com/).<br>
 
 2. Search for and select **Microsoft Defender for Cloud**.<br>
 
@@ -36,7 +36,7 @@ These plans protect all of the supported databases in your subscription.
 
 ### To enable specific database protections on your subscription:
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
 
 2. Search for and select **Microsoft Defender for Cloud**.
 

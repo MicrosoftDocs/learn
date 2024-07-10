@@ -8,13 +8,15 @@ Luckily, GitHub provides you with dependency management tools that help to manag
 
 By the end of this module, you'll be able to:
 
-- Describe the available tools for managing vulnerable dependencies on GitHub.
-- Enable and configure Dependabot alerts.
+- Describe the dependency graph and how to export a Software Bill of Materials (SBOM).
 - Identify the permissions and roles required to view and enable Dependabot alerts.
+- Enable and configure Dependabot alerts.
 - Enable and configure Dependabot security updates.
+- Create and configure the dependency review workflow.
 - Identify, review, and address vulnerable dependencies.
-- Explain how to use GraphQL API to retrieve vulnerability information.
 - Explain how to configure notifications for vulnerable dependencies.
+- Explain how to use the GraphQL API to retrieve vulnerability information.
+- Describe the available tools for managing vulnerable dependencies on GitHub.
 
 ## Prerequisites
 

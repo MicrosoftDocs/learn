@@ -4,12 +4,12 @@ title: Install a new Active Directory forest on an Azure VNet
 metadata:
   title: Install a new Active Directory forest on an Azure VNet
   description: "Install a new Active Directory forest on an Azure VNet"
-  ms.date: 08/25/2023
+  ms.date: 06/20/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/05-install-active-directory-forest-azure-virtual-network.md)]

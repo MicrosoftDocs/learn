@@ -4,10 +4,12 @@ title: Exercise - Use personas in prompts
 metadata:
   title: Exercise - Use personas in prompts
   description: "Exercise - Use personas in prompts"
-  ms.date: 02/27/2024
+  ms.date: 07/04/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-use-personas-prompts.md)]

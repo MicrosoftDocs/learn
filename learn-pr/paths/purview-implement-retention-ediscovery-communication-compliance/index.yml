@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.wwl.purview-implement-retention-ediscovery-communication-compliance
+metadata:
+  title: 'Implement retention, eDiscovery, and Communication compliance in Microsoft Purview'
+  description: 'Implement retention, eDiscovery, and Communication compliance in Microsoft Purview'
+  ms.date: 06/05/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: learning-path
+title: 'Implement retention, eDiscovery, and Communication compliance in Microsoft Purview'
+prerequisites: |
+  - Basic understanding of data governance and compliance concepts.
+  - Familiarity with Microsoft Purview and its interface.
+  - Knowledge of data lifecycle management principles.
+  - Experience with eDiscovery processes.
+  - Awareness of communication compliance requirements.
+summary: |
+  Manage data lifecycle, records management, eDiscovery, and communication compliance with Microsoft Purview.
+iconUrl: /training/achievements/m365-content-search.svg
+levels:
+- intermediate
+roles:
+- auditor
+products:
+- microsoft-purview
+subjects:
+- compliance
+modules:
+- learn.wwl.purview-implement-manage-retention
+- learn.wwl.manage-microsoft-purview-ediscovery-premium
+- learn-m365.m365-compliance-insider-prepare-communication-compliance
+trophy:
+  uid: learn.wwl.purview-implement-retention-ediscovery-communication-compliance.trophy

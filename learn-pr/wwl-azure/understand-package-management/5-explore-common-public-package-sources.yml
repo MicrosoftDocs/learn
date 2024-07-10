@@ -4,10 +4,12 @@ title: Explore common public package sources
 metadata:
   title: Explore common public package sources
   description: "Explore common public package sources"
-  ms.date: 07/06/2023
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-explore-common-public-package-sources.md)]

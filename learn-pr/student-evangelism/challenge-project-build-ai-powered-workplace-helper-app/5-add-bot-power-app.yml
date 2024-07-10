@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.build-ai-powered-workplace-helper-app.add-bot-to-power-app
+title: Exercise - Add your bot to a Power App
+metadata:
+  title: Exercise - Add your bot to a Power App
+  description: "Learn how to add your chatbot to a Power App."
+  ms.date: 12/12/2023
+  author: reneenoble
+  ms.author: reneenoble
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-add-bot-power-app.md)]

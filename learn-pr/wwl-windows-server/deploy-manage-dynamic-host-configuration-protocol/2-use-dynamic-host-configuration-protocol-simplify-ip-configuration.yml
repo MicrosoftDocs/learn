@@ -4,12 +4,12 @@ title: Use DHCP to simplify IP configuration
 metadata:
   title: Use DHCP to simplify IP configuration
   description: "Use DHCP to simplify IP configuration"
-  ms.date: 10/20/2021
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/2-use-dynamic-host-configuration-protocol-simplify-ip-configuration.md)]

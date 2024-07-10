@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.create-aspire-application
+metadata:
+  title: Create a .NET Aspire project
+  description: "Learn how to create cloud-native applications from scratch or add orchestration to an existing app by using the .NET Aspire stack in .NET 8."
+  ms.date: 2/6/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: module
+  ms.service: aspnet-core
+title: Create a .NET Aspire project
+summary: "Learn how to create cloud-native applications from scratch or add orchestration to an existing app by using the .NET Aspire stack in .NET 8."
+abstract: |
+  By the end of this module, you're going to be able to:
+    - Create new cloud-native apps by using the .NET Aspire templates in Visual Studio.
+    - Add the .NET Aspire stack to an existing .NET app for orchestration and simple cloud-native components.
+    - Use the .NET Aspire dashboard to diagnose connection issues between services.
+prerequisites: |
+  - Experience building web applications using .NET and C#
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - developer
+  - solution-architect
+products: 
+  - dotnet
+  - aspnet-core
+  - dotnet-aspire
+  - vs
+  - vs-code
+subjects: 
+  - cross-development
+  - backend-development
+  - frontend-development
+  - architecture
+units:
+- learn.create-aspire-application.introduction
+- learn.create-aspire-application.learn-how-create-new-aspire-application
+- learn.create-aspire-application.exercise-create-new-aspire-application
+- learn.create-aspire-application.how-add-orchestration-existing-app
+- learn.create-aspire-application.exercise-integrate-aspire-existing-application
+- learn.create-aspire-application.knowledge-check
+- learn.create-aspire-application.summary
+badge:
+  uid: learn.create-aspire-application.badge

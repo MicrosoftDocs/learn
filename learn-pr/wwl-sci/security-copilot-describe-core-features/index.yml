@@ -13,13 +13,15 @@ title: Describe the core features of Microsoft Copilot for Security
 summary: |
   Microsoft Copilot for Security has a rich set of features. Learn about available plugins, promptbooks, the ways you can export and share information from Copilot, and much more.
 abstract: |
-  By the end of this module, you'll be able to:
-    - Describe the features available in the standalone experience.
-    - Describe the services to which Microsoft Copilot for Security can integrate.
+  By the end of this module, you're able to:
+  - Describe the features available in the standalone Copilot experience.
+  - Describe the plugins available in Copilot.
+  - Describe custom promptbooks.
+  - Describe knowledge base connections.
 prerequisites: |
   - Working knowledge of security operations and incident response
   - Working knowledge of Microsoft security products and services
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/security-copilot-describe-core-features.svg
 hidden: false
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner

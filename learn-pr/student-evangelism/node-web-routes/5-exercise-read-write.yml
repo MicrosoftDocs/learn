@@ -4,9 +4,9 @@ title: Exercise - Write data
 metadata:
   title: Exercise - Write data
   description: This exercise shows you how to send data into Express depending on the incoming request.
-  author: clarkio
-  ms.author: chnoring
-  ms.date: 01/30/2024
+  author: diberry
+  ms.author: diberry
+  ms.date: 04/19/2024
   ms.topic: unit
 durationInMinutes: 5
 content: |

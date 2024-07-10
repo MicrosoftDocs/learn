@@ -4,9 +4,9 @@ Analytics rules search for specific events or sets of events across your environ
 
 ## Create a custom analytics rule with a scheduled query
 
-1. From the Microsoft Sentinel navigation menu, select Analytics.
+1. From the Microsoft Sentinel navigation menu, select **Analytics**.
 
-2. In the action bar at the top, select +Create and select Scheduled query rule. This opens the Analytics rule wizard.
+2. In the action bar at the top, select **+ Create** and select **Scheduled query rule**. This opens the Analytics rule wizard.
 
 :::image type="content" source="../media/create-scheduled-query-small-80002ed3.png" alt-text="Screenshot showing an example of how to run a scheduled query.":::
 
@@ -42,13 +42,21 @@ Here's another sample query, one that would alert you when an anomalous number o
 
 ### Kusto
 
-`AzureActivity`
+<!--- raw content start --->
+AzureActivity
+<!--- raw content end --->
 
-`| where OperationNameValue == "MICROSOFT.COMPUTE/VIRTUALMACHINES/WRITE" or OperationNameValue == "MICROSOFT.RESOURCES/DEPLOYMENTS/WRITE"`
+<!--- raw content start --->
+| where OperationNameValue == "MICROSOFT.COMPUTE/VIRTUALMACHINES/WRITE" or OperationNameValue == "MICROSOFT.RESOURCES/DEPLOYMENTS/WRITE"
+<!--- raw content end --->
 
-`| where ActivityStatusValue == "Succeeded"`
+<!--- raw content start --->
+| where ActivityStatusValue == "Succeeded"
+<!--- raw content end --->
 
-`| make-series dcount(ResourceId) default=0 on EventSubmissionTimestamp in range(ago(7d), now(), 1d) by Caller`
+<!--- raw content start --->
+| make-series dcount(ResourceId)  default=0 on EventSubmissionTimestamp in range(ago(7d), now(), 1d) by Caller
+<!--- raw content end --->
 
 > [!IMPORTANT]
 > We recommend that your query uses an Advanced Security Information Model (ASIM) parser and not a native table. This will ensure that the query supports any current or future relevant data source rather than a single data source.
@@ -62,9 +70,9 @@ Here's another sample query, one that would alert you when an anomalous number o
 
 ### Alert enrichment
 
- -  Use the **Entity mapping** configuration section to map parameters from your query results to Microsoft Sentinel-recognized entities. Entities enrich the rules' output (alerts and incidents) with essential information that serves as the building blocks of any investigative processes and remedial actions that follow. They're also the criteria by which you can group alerts together into incidents in the **Incident settings** tab.
- -  Use the **Custom details** configuration section to extract event data items from your query and surface them in the alerts produced by this rule, giving you immediate event content visibility in your alerts and incidents.<br>
- -  Use the **Alert details** configuration section to override default values of the alert's properties with details from the underlying query results. Alert details allow you to display, for example, an attacker's IP address or account name in the title of the alert itself, so it will appear in your incidents queue, giving you a much richer and clearer picture of your threat landscape.
+ -  Use the Entity mapping configuration section to map parameters from your query results to Microsoft Sentinel-recognized entities. Entities enrich the rules' output (alerts and incidents) with essential information that serves as the building blocks of any investigative processes and remedial actions that follow. They're also the criteria by which you can group alerts together into incidents in the Incident settings tab.
+ -  Use the Custom details configuration section to extract event data items from your query and surface them in the alerts produced by this rule, giving you immediate event content visibility in your alerts and incidents.<br>
+ -  Use the Alert details configuration section to override default values of the alert's properties with details from the underlying query results. Alert details allow you to display, for example, an attacker's IP address or account name in the title of the alert itself, so it will appear in your incidents queue, giving you a much richer and clearer picture of your threat landscape.
 
 > [!NOTE]
 > **The size limit for an entire alert is 64 KB**.
@@ -75,22 +83,23 @@ Here's another sample query, one that would alert you when an anomalous number o
 
 ### Query scheduling and alert threshold
 
- -  In the **Query scheduling** section, set the following parameters:
+ -  In the Query scheduling section, set the following parameters:
 
 ### :::image type="content" source="../media/set-rule-logic-threshold-5a90257c.png" alt-text="Screenshot showing an example of creating a new scheduled rule."::: 
 
- -  Set **Run query every** to control how often the query is run—as frequently as every 5 minutes or as infrequently as once every 14 days.
- -  Set **Lookup data from the last** to determine the time period of the data covered by the query—for example, it can query the past 10 minutes of data, or the past 6 hours of data. The maximum is 14 days.
- -  For the new **Start running** setting (in Preview):
-     -  Leave it set to Automatically continue the original behavior: the rule will run for the first time immediately upon being created, and after that at the interval set in the **Run query every** setting.
-     -  Toggle the switch to **At specific time** if you want to determine when the rule first runs, instead of having it run immediately. Then choose the date using the calendar picker and enter the time in the format of the example shown.
+ -  Set Run query every to control how often the query is run—as frequently as every 5 minutes or as infrequently as once every 14 days.
+ -  Set Lookup data from the last to determine the time period of the data covered by the query—for example, it can query the past 10 minutes of data, or the past 6 hours of data. The maximum is 14 days.
+ -  For the new Start running setting (in Preview):
+     -  Leave it set to Automatically continue the original behavior: the rule will run for the first time immediately upon being created, and after that at the interval set in the Run query every setting.
+     -  Toggle the switch to At specific time if you want to determine when the
+     -  rule first runs, instead of having it run immediately. Then choose the date using the calendar picker and enter the time in the format of the example shown.
 
 :::image type="content" source="../media/advanced-scheduling-639fd185.png" alt-text="Screenshot showing an example how to configure query scheduling parameters.":::
 
 
 Future runnings of the rule will occur at the specified interval after the first running.
 
-The line of text under the **Start running** setting (with the information icon at its left) summarizes the current query scheduling and lookback settings.
+The line of text under the Start running setting (with the information icon at its left) summarizes the current query scheduling and lookback settings.
 
 **Query intervals and lookback period**
 
@@ -159,6 +168,6 @@ Select **Review and create** to review all the settings for your new analytics r
 
 View the rule and its output
 
- -  You can find your newly created custom rule (of type "Scheduled") in the table under the Active rules tab on the main **Analytics** screen. From this list you can enable, disable, or delete each rule.
- -  To view the results of the analytics rules you create, go to the **Incidents** page, where you can triage incidents, investigate them, and remediate the threats.
+ -  You can find your newly created custom rule (of type "Scheduled") in the table under the Active rules tab on the main Analytics screen. From this list you can enable, disable, or delete each rule.
+ -  To view the results of the analytics rules you create, go to the Incidents page, where you can triage incidents, investigate them, and remediate the threats.
  -  You can update the rule query to exclude false positives.

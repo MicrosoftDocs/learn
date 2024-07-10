@@ -6,15 +6,15 @@ Remember that during training, we calculate how badly a model performs, and call
 
 ## Cost functions for classification
 
-Classification models are judged either on their output probabilities, such as 40% chance of an avalanche, or final labels—‘no avalanche’ or ‘avalanche’. Using the output probabilities can be advantageous during training. Slight changes in the model are reflected in changes in probabilities, even if they aren't enough to change the final decision. Using the final labels for a cost function is more useful if we want to estimate the real-world performance of our model. For instance, on the test set. Because for real-world use, we use the final labels, not the probabilities.
+Classification models are judged either on their output probabilities, such as 40% chance of an avalanche, or final labels—`no avalanche` or `avalanche`. Using the output probabilities can be advantageous during training. Slight changes in the model are reflected in changes in probabilities, even if they aren't enough to change the final decision. Using the final labels for a cost function is more useful if we want to estimate the real-world performance of our model. For instance, on the test set. Because for real-world use, we use the final labels, not the probabilities.
 
 ## Log loss
 
-Log loss is one of the most popular cost functions for simple classification. Log loss is applied to output probabilities. Similarly to MSE, small amounts of error result in small cost, while moderate amounts of error result in large costs. We have plotted log loss in the following graph, for a label where the correct answer was 0 (false).
+Log loss is one of the most popular cost functions for simple classification. Log loss is applied to output probabilities. Similarly to MSE, small amounts of error result in small cost, while moderate amounts of error result in large costs. We plot log loss in the following graph, for a label where the correct answer was 0 (false).
 
 ![Diagram showing a log loss example graph.](../media/4-log-loss-graph.png)
 
-The x-axis shows possible model outputs – probabilities from 0 to 1 – and the y axis shows the cost. If a model has high confidence that the correct response is 0 (for example predicting 0.1). Then, the cost is low because in this instance, the correct response is 0. If the model is confidently predicting the outcome wrongly (for example, predicting 0.9) then cost becomes high. In fact, at x=1, the cost is so high that we've cropped the x-axis here to 0.999 to keep the graph readable.
+The x-axis shows possible model outputs – probabilities from 0 to 1 – and the y axis shows the cost. If a model has high confidence that the correct response is 0 (for example predicting 0.1). Then, the cost is low because in this instance, the correct response is 0. If the model is confidently predicting the outcome wrongly (for example, predicting 0.9) then cost becomes high. In fact, at x=1, the cost is so high that we crop the x-axis here to 0.999 to keep the graph readable.
 
 ## Why not MSE?
 

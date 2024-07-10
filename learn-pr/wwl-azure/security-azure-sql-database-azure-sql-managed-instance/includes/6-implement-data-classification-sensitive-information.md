@@ -4,11 +4,11 @@
 2.  Scan and Ingest
 3.  Classify
 
-Labeling in the Microsoft Purview Data Map is currently in **PREVIEW**.
+Labeling in the Microsoft Purview Data Map is currently in PREVIEW.
 
 ### Supplemental Terms of Use for Microsoft Azure Previews
 
-Azure may include preview, beta, or other pre-release features, services, software, or regions offered by Microsoft for optional evaluation ("Previews"). Previews are licensed to you as part of your agreement governing use of Azure, and subject to terms applicable to "**Previews**".
+Azure may include preview, beta, or other pre-release features, services, software, or regions offered by Microsoft for optional evaluation ("Previews"). Previews are licensed to you as part of your agreement governing use of Azure, and subject to terms applicable to "Previews".
 
 Certain named Previews are subject to additional terms set forth below, if any. These Previews are made available to you pursuant to these additional terms, which supplement your agreement governing use of Azure. Capitalized terms not defined herein shall have the meaning set forth in your agreement. If you do not agree to these terms, do not use the Preview(s).<br>
 
@@ -33,8 +33,8 @@ Before you can scan your data source, you must take these steps:
 
 Scanning and Ingestion features in Microsoft Purview connect your Microsoft Purview account to your sources to populate the data map and data catalog so you can begin exploring and managing your data through Microsoft Purview.
 
- -  **Scanning** captures metadata from data sources and brings it to Microsoft Purview.<br>
- -  **Ingestion** processes metadata and stores it in the data catalog from both:
+ -  Scanning captures metadata from data sources and brings it to Microsoft Purview.<br>
+ -  Ingestion processes metadata and stores it in the data catalog from both:
      -  Data source scans - scanned metadata is added to the Microsoft Purview Data Map.
      -  Lineage connections - transformation resources add metadata about their sources, outputs, and activities to the Microsoft Purview Data Map.
 
@@ -74,11 +74,11 @@ Classification is the process of organizing data into *logical categories* that 
 
 The Microsoft Purview governance portal supports both system and custom classifications.
 
- -  **System classifications**: 200+ system classifications supported are out of the box.<br>
+ -  System classifications: 200+ system classifications supported are out of the box.<br>
 
     In the example in the preceding image, Person’s Name is a system classification. System classification has the thunderbolt icon along with classification name. Hovering over the classification itself provides more details on the type of classification, and more details on how it was applied<br>
 
- -  **Custom classifications**: You can create custom classifications when you want to classify assets based on a pattern or a specific column name that's unavailable as a system classification. Custom classification rules can be based on a regular expression pattern or dictionary.<br>
+ -  Custom classifications: You can create custom classifications when you want to classify assets based on a pattern or a specific column name that's unavailable as a system classification. Custom classification rules can be based on a regular expression pattern or dictionary.<br>
 
     Let's say that the Employee ID column follows the EMPLOYEE\{GUID\} pattern (for example, EMPLOYEE9c55c474-9996-420c-a285-0d0fc23f1f55). You can create your own custom classification by using a regular expression, such as \\^Employee\\\[A-Za-z0-9\\\]\{8\}-\\\[A-Za-z0-9\\\]\{4\}-\\\[A-Za-z0-9\\\]\{4\}-\\\[A-Za-z0-9\\\]\{4\}-\\\[A-Za-z0-9\\\]\{12\}\\$.
 
@@ -100,10 +100,10 @@ For example, applying a sensitivity label ‘highly confidential’ to a documen
 
 Microsoft Purview allows you to apply sensitivity labels to assets, enabling you to classify and protect your data.
 
- -  **Label travels with the data**: The sensitivity labels created in Microsoft Purview Information Protection can also be extended to the Microsoft Purview Data Map, SharePoint, Teams, Power BI, and SQL. When you apply a label on an office document and then scan it into the Microsoft Purview Data Map, the label will be applied to the data asset. While the label is applied to the actual file in Microsoft Purview Information Protection, it's only added as metadata in the Microsoft Purview map. While there are differences in how a label is applied to an asset across various services/applications, labels travel with the data and is recognized by all the services you extend it to.<br>
- -  **Overview of your data estate**: Microsoft Purview provides insights into your data through pre-canned reports. When you scan data into the Microsoft Purview Data Map, we hydrate the reports with information on what assets you have, scan history, classifications found in your data, labels applied, glossary terms, etc.
- -  **Automatic labeling**: Labels can be applied automatically based on sensitivity of the data. When an asset is scanned for sensitive data, autolabeling rules are used to decide which sensitivity label to apply. You can create autolabeling rules for each sensitivity label, defining which classification/sensitive information type constitutes a label.
- -  **Apply labels to files and database columns**: Labels can be applied to files in storage such as Azure Data Lake or Azure Files as well as to schematized data such as columns in Azure SQL Database.
+ -  Label travels with the data: The sensitivity labels created in Microsoft Purview Information Protection can also be extended to the Microsoft Purview Data Map, SharePoint, Teams, Power BI, and SQL. When you apply a label on an office document and then scan it into the Microsoft Purview Data Map, the label will be applied to the data asset. While the label is applied to the actual file in Microsoft Purview Information Protection, it's only added as metadata in the Microsoft Purview map. While there are differences in how a label is applied to an asset across various services/applications, labels travel with the data and is recognized by all the services you extend it to.<br>
+ -  Overview of your data estate: Microsoft Purview provides insights into your data through pre-canned reports. When you scan data into the Microsoft Purview Data Map, we hydrate the reports with information on what assets you have, scan history, classifications found in your data, labels applied, glossary terms, etc.
+ -  Automatic labeling: Labels can be applied automatically based on sensitivity of the data. When an asset is scanned for sensitive data, autolabeling rules are used to decide which sensitivity label to apply. You can create autolabeling rules for each sensitivity label, defining which classification/sensitive information type constitutes a label.
+ -  Apply labels to files and database columns: Labels can be applied to files in storage such as Azure Data Lake or Azure Files as well as to schematized data such as columns in Azure SQL Database.
 
 **Sensitivity labels** are tags that you can apply on assets to classify and protect your data.
 
@@ -113,8 +113,8 @@ Being able to apply labels to your asset in the data map requires you to perform
 
 1.  Create new or apply existing sensitivity labels in the Microsoft Purview compliance portal. Creating sensitivity labels include autolabeling rules that tell us which label should be applied based on the classifications found in your data.<br>
 2.  Register and scan your asset in the Microsoft Purview Data Map.
-3.  Microsoft Purview applies **classifications**: When you schedule a scan on an asset, Microsoft Purview scans the type of data in your asset and applies classifications to it in the data map. Application of classifications is done automatically by Microsoft Purview, there's no action for you.
-4.  Microsoft Purview applies **labels**: Once classifications are found on an asset, Microsoft Purview will apply labels to the assets depending on autolabeling rules. Application of labels is done automatically by Microsoft Purview, there's no action for you as long as you have created labels with autolabeling rules in step 1.
+3.  Microsoft Purview applies classifications: When you schedule a scan on an asset, Microsoft Purview scans the type of data in your asset and applies classifications to it in the data map. Application of classifications is done automatically by Microsoft Purview, there's no action for you.
+4.  Microsoft Purview applies labels: Once classifications are found on an asset, Microsoft Purview will apply labels to the assets depending on autolabeling rules. Application of labels is done automatically by Microsoft Purview, there's no action for you as long as you have created labels with autolabeling rules in step 1.
 
 > [!NOTE]
 > **Autolabeling rules** are conditions that you specify, stating when a particular label should be applied. When these conditions are met, the label is automatically assigned to the data. When you create your labels, make sure to define autolabeling rules for both files and database columns to apply your labels automatically with each scan.<br>
@@ -123,4 +123,4 @@ Being able to apply labels to your asset in the data map requires you to perform
 
 In addition to the Microsoft Purview Data Map's labeling for schematized data assets, Microsoft also supports labeling for SQL database columns using the SQL data classification in SQL Server Management Studio (SSMS). While Microsoft Purview uses the global sensitivity labels, SSMS only uses labels defined locally.
 
-Labeling in Microsoft Purview and labeling in SSMS are separate processes that don't currently interact with each other. Therefore, **labels applied in SSMS are not shown in Microsoft Purview, and vice versa**. We recommend Microsoft Purview for labeling SQL databases, because the labels can be applied globally, across multiple platforms.
+Labeling in Microsoft Purview and labeling in SSMS are separate processes that don't currently interact with each other. Therefore, labels applied in SSMS are not shown in Microsoft Purview, and vice versa. We recommend Microsoft Purview for labeling SQL databases, because the labels can be applied globally, across multiple platforms.

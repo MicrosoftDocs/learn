@@ -73,16 +73,30 @@ To exit the REPL console, enter Ctrl + C twice.
 Node.js also supports running code from files.
 
 1. Create a new folder named **hello-world** in the dev container.
+1. Open the new folder in a terminal by right-clicking the folder name, then selecting **Open in Integrated Terminal**.
+1. In the terminal, initialize the node project.
+
+    ```console
+    npm init -y
+    ```
+
+1. Install a Node package, `node-fetch` to make async HTTP requests.
+
+    ```console
+    npm install node-fetch
+    ```
+
+1. Open the `package.json` file and add the following property to allow top-level async/await.
+
+    ```json
+    "type":"module",
+    ```
 
 1. Create a file named **index.js** in the new folder.
 
 1. Copy the following code into the **index.js** file:
 
-   ```javascript
-   console.log('Hello World, from a script file.');
-   ```
-
-1. Open the new folder in a terminal by right-clicking the folder name, then selecting **Open in Integrated Terminal**.
+    :::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro-esm/5-try/index-1.js":::
 
 1. In the terminal, enter the `node` command followed by the name of the file index.js:
 
@@ -101,27 +115,13 @@ You have now run your first Node.js JavaScript code.
 - Question: Is console.log synchronous or asynchronous?
 - Answer: The `console.log` method appears in development to execute immediately and is therefore assumed to be async. There's no guarantee of async behavior for this method so it must be considered synchronous. Because the code execution *can* block until the `console.log` method is finished, you're cautioned from keeping `console.log` statements in your code in production.
 
-## Add an asynchronous function
+## Add a top-level asynchronous function
 
 The following top-level asynchronous code requests an HTTP JSON data source then displays it.
 
 1. Add the following code to the `index.js` file to create an asynchronous HTTP request:
 
-    ```javascript
-    const https = require('https');
-    
-    console.log(`start`);
-    
-    try{
-        const res = await https.get('https://nodejs.org/dist/index.json');
-
-        console.log(res.statusCode);
-    } catch( error ){
-        console.log(error);
-    }
-    
-    console.log(`end`);
-    ```
+    :::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro-esm/5-try/top-level-async-await.js":::
 
     The `https.get` method makes an HTTP request to the Node.js website and returns the response. The `get` method takes two parameters: the URL to request and a callback function that is called when the response is received. The callback function takes a single parameter, `res`, which is the response object.
 
@@ -135,8 +135,8 @@ The following top-level asynchronous code requests an HTTP JSON data source then
 
     ```output
     start
+    statusCode: 200
     end
-    200
     ```
 
 From the output, you can see the event loop in action. The HTTP method is called and put in the task queue, waiting for it to return. The event loop takes the next task, which is the console.log method.

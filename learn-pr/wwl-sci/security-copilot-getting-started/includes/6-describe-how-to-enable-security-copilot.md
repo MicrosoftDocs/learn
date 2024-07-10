@@ -13,6 +13,8 @@ Before users can start using Copilot, admins need to provision and allocate capa
 
 - You must have an Azure subscription.
 - You need to be an Azure owner or Azure contributor, at a resource group level, as a minimum.
+  
+    *Keep in mind that a global administrator in Microsoft Entra ID  doesn't necessarily have the Azure owner or Azure contributor role by default. Microsoft Entra role assignments don't grant access to Azure resources. As a global admin in Entra, you can enable access management for Azure resources through the Azure portal. For details, see [Elevate access to manage all Azure subscriptions and management groups](/azure/role-based-access-control/elevate-access-global-admin). Once you've enabled access management to Azure resources, you can configure the appropriate Azure role.*
 
 There are two options for provisioning capacity:
 
@@ -63,7 +65,7 @@ During the setup of Copilot for Security, you're prompted to configure settings.
 
 - Decide where your prompts are evaluated - You can restrict the evaluation within your geo or allow evaluation anywhere in the world. For more information on the list of mapped locations for your geo, see Data security and privacy.
 
-- Roles - You are informed of the required roles that need to be assigned for users in your organization to use Copilot for Security.
+- Roles - You're informed of the required roles that need to be assigned for users in your organization to use Copilot for Security.
 
 ### Role permissions
 

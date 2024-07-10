@@ -3,23 +3,27 @@ uid: learn.wwl.security-storage
 metadata:
   title: Plan and implement security for storage
   description: "This module is designed to provide administrators with the knowledge and skills required to plan and implement comprehensive security measures for Azure storage resources, safeguarding data integrity, confidentiality, and availability."
-  ms.date: 02/16/2024
+  ms.date: 06/25/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
   ms.custom:
   - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Plan and implement security for storage
 summary: This module is designed to provide administrators with the knowledge and skills required to plan and implement comprehensive security measures for Azure storage resources, safeguarding data integrity, confidentiality, and availability.
 abstract: |
   By the end of this module, participants will be able to:
-  - Develop security strategies for Azure storage resources, ensuring data protection during rest and transit.
-  - Manage storage account access with effective access control and secure key lifecycle management.
-  - Tailor access methods for Azure Files, Blob Storage, Tables, and Queues to specific use cases.
-  - Strengthen data security with soft delete, backups, versioning, immutable storage, BYOK, and double encryption.
-prerequisites: |
-  - None
+
+  -   Develop security strategies for Azure storage resources, ensuring data protection during rest and transit.
+
+  -   Manage storage account access with effective access control and secure key lifecycle management.
+
+  -   Tailor access methods for Azure Files, Blob Storage, Tables, and Queues to specific use cases.
+
+  -   Strengthen data security with soft delete, backups, versioning, immutable storage, BYOK, and double encryption.
+prerequisites: '-   None'
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -37,10 +41,11 @@ subjects:
 - information-protection-governance
 units:
 - learn.wwl.security-storage.introduction
+- learn.wwl.security-storage.azure-storage
 - learn.wwl.security-storage.authorize-requests-azure-storage
 - learn.wwl.security-storage.manage-storage-account-access-keys
+- learn.wwl.security-storage.select-configure-access-azure-files
 - learn.wwl.security-storage.authorize-access-blobs-use-microsoft-entra-id
-- learn.wwl.security-storage.select-configure-appropriate-method-access-azure
 - learn.wwl.security-storage.authorize-access-tables-use-microsoft-entra-id
 - learn.wwl.security-storage.authorize-access-queue-data-azure-portal
 - learn.wwl.security-storage.recommendations-basic-data-protection

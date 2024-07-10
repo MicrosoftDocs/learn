@@ -1,4 +1,3 @@
-
 Azure DevOps has extended support for pipelines as code (also called YAML pipelines) for continuous deployment and started introducing various release management capabilities into pipelines as code.
 
 The existing UI-based release management solution in Azure DevOps is referred to as classic release.

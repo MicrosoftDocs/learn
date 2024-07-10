@@ -4,10 +4,12 @@ title: Exercise – Use Data Activator in Fabric
 metadata:
   title: Exercise – Use Data Activator in Fabric
   description: "Exercise – Use Data Activator in Fabric"
-  ms.date: 03/18/2024
+  ms.date: 06/14/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 30
 content: |
   [!include[](includes/8-exercise.md)]

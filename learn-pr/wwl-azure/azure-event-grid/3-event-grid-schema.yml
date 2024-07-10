@@ -4,10 +4,12 @@ title: Discover event schemas
 metadata:
   title: Discover event schemas
   description: "Discover event schemas"
-  ms.date: 06/28/2023
+  ms.date: 04/16/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/3-event-grid-schema.md)]

@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.advanced-github-copilot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Review advanced features in GitHub Copilot."
+  ms.date: 5/10/2024
+  author: abrilurena
+  ms.author: abrilu
+  ms.topic: unit
+  ms.custom:
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What is ghost text in GitHub Copilot?"
+    choices:
+    - content: "Ghost text in GitHub Copilot are suggestions that appears in your text editor as you type."
+      isCorrect: true
+      explanation: "That's correct! Ghost text refers to the suggestions given by GitHub Copilot without a prompt, based on your currently opened files. By accepting these suggestions with the Tab key or manually editing them, you can quickly write code and documentation for your project."
+    - content: "Ghost text in GitHub Copilot are options used when typing to provide suggestions."
+      isCorrect: false
+      explanation: "Incorrect. Ghost text doesn't involve any kind of options while typing."
+    - content: "Ghost text in GitHub Copilot involves using prompts and natural language questions within your code or documentation."
+      isCorrect: false
+      explanation: "While you can provide a prompt for GitHub Copilot, ghost text doesn't require a specific prompt. Ghost text suggestions are based on context from the open files by default."
+  - content: "How do you access GitHub Copilot's inline chat?"
+    choices:
+    - content: "Access the inline chat by clicking on the chat icon in the left sidebar of Visual Studio Code."
+      isCorrect: false
+      explanation: "Incorrect, although you can use this method to access GitHub Copilot's dedicated chat pane. The inline chat requires a keyboard shortcut (Ctrl+i for Windows or Command+i for mac) to open in your code context."
+    - content: "Use Ctrl+i on Windows or Command+i on a mac to open the inline chat."
+      isCorrect: true
+      explanation: "That's correct! By using the keyboard combination, you can access GitHub Copilot's inline chat without leaving your code context. This functionality enables efficient interaction with the tool and faster response times during development."  
+    - content: "Access the inline chat by using Alt+i on Windows or Option+i on a mac."
+      isCorrect: false
+      explanation: "Incorrect, these aren't the correct keyboard shortcuts. You can access GitHub Copilot's inline chat using Ctrl+i for Windows and Command+i for mac instead."
+  - content: "What are slash commands used for in GitHub Copilot?"
+    choices:
+      - content: "Slash commands are used to format your codebase according to best practices."
+        isCorrect: false
+        explanation: "Incorrect, GitHub Copilot's slash commands don't enforce specific formatting rules. Instead, they help you quickly solve common development tasks like writing tests or documentation with predefined intents in the chat or inline pane."
+      - content: "Slash commands are used to debug code and detect security vulnerabilities within your projects."
+        isCorrect: false
+        explanation: "Incorrect. Although GitHub Copilot may provide suggestions for fixing bugs, slash commands aren't specifically designed for debugging or finding security vulnerabilities in your projects."
+      - content: "Slash commands are shortcuts to quickly solve common development tasks within the chat or inline pane."
+        isCorrect: true
+        explanation: "That's correct! Slash commands help you perform specific actions like writing tests and documentation faster by using predefined intents. You can access these slash command options in a drop-down menu after typing / in the chat or inline pane."       
+  - content: "What are the benefits of using agents like '@terminal' or '@workspace' when interacting with GitHub Copilot?"
+    choices:
+    - content: "Agents in Visual Studio Code help you ask questions within a specific context, allowing for more precise and relevant answers from GitHub Copilot."
+      isCorrect: true
+      explanation: "That's correct! Agents like '@terminal' or '@workspace' allow you to interact with GitHub Copilot in the context of your terminal or entire workspace. By using these agents, questions are more precise and relevant, helping you efficiently solve development tasks."
+    - content: "Agents help enforce a consistent code format based on best practices within Visual Studio Code for improved readability."
+      isCorrect: false
+      explanation: "Incorrect, agents don't specifically enforce formatting rules. They're used to interact with GitHub Copilot in the context of your terminal or workspace when asking questions and receiving answers."
+    - content: "Agents provide extra security features for detecting vulnerabilities and intrusions within Visual Studio Code projects."
+      isCorrect: false
+      explanation: "Incorrect, agents don't specifically focus on providing security features. They're used to interact with GitHub Copilot in a specific context when asking questions related to development tasks."
+  - content: "What are the benefits of using implicit prompts with slash commands in inline chat for fixing code issues with GitHub Copilot?"
+    choices:
+    - content: "Implicit prompts help enforce a consistent naming convention and syntax based on best practices within Visual Studio Code projects for improved readability."
+      isCorrect: false
+      explanation: "Incorrect. Implicit prompts don't specifically focus on enforcing naming conventions or syntax rules. They're used to interact with GitHub Copilot in a way that can provide helpful responses without writing long, explicit prompts when fixing code issues."
+    - content: "Implicit prompts help get better responses from GitHub Copilot without writing longer prompts, making it easier to interact and fix code issues."
+      isCorrect: true
+      explanation: "That's correct! Implicit prompts with slash commands in inline chat allow you for more straightforward interaction when fixing code. By using features like '/fix', GitHub Copilot can provide helpful responses even without detailed prompting, streamlining the development process."      
+    - content: "Implicit prompts help detect security vulnerabilities and potential malicious activities within Visual Studio Code projects for increased safety."
+      isCorrect: false
+      explanation: "Incorrect. Implicit prompts don't specifically focus on providing security features or detecting vulnerabilities in your projects. They're used to streamline interaction with GitHub Copilot when fixing code issues by using implicitly crafted prompts and slash commands."

@@ -4,7 +4,7 @@ title: Exercise - Examine the TryParse() method
 metadata:
   title: Exercise - Examine the TryParse() method
   description: "Examine using the TryParse() method to convert string data into a numeric data type."
-  ms.date: 03/26/2024
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -24,10 +24,10 @@ quiz:
     - content: "`decimal myInputDecimal = myInput + 0;`"
       isCorrect: false
       explanation: "Incorrect. A `string` can't be implicitly converted into a `decimal`."
-    - content: "`decimal.TryParse(myInput, out myInputDecimal)`"
+    - content: "`decimal.TryParse(myInput, out myInputDecimal);`"
       isCorrect: true
       explanation: "Correct. Using `TryParse` (or `Parse()`) is a valid technique."
-  - content: "Which best describes the return type of `decimal.TryParse()`?"
+  - content: "Consider the C# code `bool success = decimal.TryParse(input, out decimal number);`. Which best describes the return type of `decimal.TryParse()`?"
     choices:
     - content: "`decimal`"
       isCorrect: false

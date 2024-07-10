@@ -20,7 +20,7 @@ The home menu is accessed by selecting the hamburger icon located on the top lef
 From the home menu, the user can navigate as follows:
 
 - Back to the landing page by selecting the Home icon.
-- My sessions, which list past sessions created. The user can manage past sessions with search and filter options along with the ability to rename, duplicate, or delete sessions as needed.  Currently sessions are kept on the My sessions page until they are manually deleted.
+- My sessions, which list past sessions created. The user can manage past sessions with search and filter options along with the ability to rename, duplicate, or delete sessions as needed. Currently sessions are kept on the My sessions page until they're manually deleted. When a session is deleted, all data associated with that session is marked as deleted and the time to live (TTL) is set to 30 days. After that TTL expires, queries can't access that data. Logs, which contain session data aren't affected when a session is deleted via the in-product UX. These logs have a retention period of up to 90 days.
 
     :::image type="content" source="../media/my-sessions-v2.png" lightbox="../media/my-sessions-v2.png" alt-text="Screen capture listing a user's session.":::
 
@@ -46,7 +46,7 @@ From the home menu, the user can navigate as follows:
 
 - Settings, which include configurable preferences, data and privacy statements, and information about the App version.
 
-  - The preferences settings allow users to configure the theme, language, and time zone. Copilot supports many languages, for detailed information see [Supported languages](/security-copilot/supported-languages#supported-languages).
+  - The preferences settings allow users to configure the theme, language, and time zone. Copilot supports many languages. For detailed information see [Supported languages](/security-copilot/supported-languages#supported-languages).
    
     For users with owner role permissions, the preferences page includes more configuration options. Owners can configure options plugins, file upload, and the response debugging level.
 
@@ -81,6 +81,10 @@ Select the title of the promptbook to open a page with more detailed information
 :::image type="content" source="../media/promptbook-example.png" lightbox="../media/promptbook-example.png" alt-text="Screen capture showing information for the Vulnerability Impact Assessment promptbook.":::
 
 For a complete listing of all the available promptbooks, select View promptbook library.
+
+Watch this short video for a summary on using promptbooks.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7bb51c3d-ba80-430e-b3bc-2eed3942cf70]
 
 ### Prompt bar
 
@@ -126,6 +130,24 @@ Refer to subsequent units in this module for detailed information on plugins and
 
 ### Help
 
-The help icon is located on the bottom right of the Copilot landing page. By selecting the help icon, users can link to documentation, frequently access questions (FAQs), an interactive tour to review key features, and more.
+The help icon is located on the bottom right of the Copilot landing page. 
 
 :::image type="content" source="../media/help-to-help-list.png" lightbox="../media/help-to-help-list.png" alt-text="Screen capture showing the help icon and the help window.":::
+
+By selecting the help icon, you can link to documentation, or if you encounter issues or need to seek assistance, Copilot for Security provides a modern and advanced support experience. Depending on your role, the widget allows you to:
+
+- Find solutions to common problems.
+- Submit a support case to the Microsoft support team.
+
+
+***Find solutions to common problems***. Anyone with access to Copilot for Security can access the self help widget by selecting the help icon then selecting the Help tab. Type your question in the prompt bar and articles related to your search will be surfaced.
+
+:::image type="content" source="../media/help-icon-self-help.png" lightbox="../media/help-icon-self-help.png" alt-text="Screen capture showing the self-help prompt bar and articles related to the entered prompt.":::
+
+***Submit a support case to the Microsoft support team***. To open support cases, you must have, at a minimum, a Service Support Administrator OR Helpdesk Administrator role. You can also view your support history.
+
+:::image type="content" source="../media/contact-support-tab.png" lightbox="../media/contact-support-tab.png" alt-text="Screen capture showing the form to get support from an agent.":::
+
+Watch this short video for a tour of Microsoft Copilot for Security.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3b45ed29-1738-40e8-bc87-696d420155f8]

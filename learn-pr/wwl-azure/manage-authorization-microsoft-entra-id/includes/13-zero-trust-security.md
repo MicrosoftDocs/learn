@@ -4,7 +4,7 @@ Zero Trust is a new security model that assumes breach and verifies each request
 
 Today, organizations need a new security model that effectively adapts to the complexity of the modern environment, embraces the mobile workforce, and protects people, devices, applications, and data wherever they are located.
 
-To address this new world of computing, Microsoft highly recommends the Zero Trust security model, which is based on these guiding principles:<br>
+To address this new world of computing, Microsoft highly recommends the Zero Trust security model, which is based on these guiding principles:
 
  -  **Verify explicitly** \- Always authenticate and authorize based on all available data points.<br>
  -  **Use least privilege access** \- Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
@@ -14,7 +14,7 @@ To address this new world of computing, Microsoft highly recommends the Zero Tru
 
 A Zero Trust approach extends throughout the entire digital estate and serves as an integrated security philosophy and end-to-end strategy.
 
-:::image type="content" source="../media/zero-trust-security-f4e7a7c1.png" alt-text="Diagram showing an example of the Zero Trust architecture.":::
+:::image type="content" source="../media/zero-trust-security-example-c2b4de58.png" alt-text="Diagram showing an example of Zero Trust functional areas and technical architecture.":::
 
 
  -  Security policy enforcement is at the center of a Zero Trust architecture. This includes multifactor authentication with conditional access that takes into account user account risk, device status, and other criteria and policies that you set.

@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware
 metadata:
-  title: Design a resiliency strategy for common cyberthreats like ransomware
+  title: Design a resiliency strategy for ransomware and other attacks based on Microsoft Security Best Practices
   description: "You'll learn about common cyberthreats like ransomware and what kinds of attack patterns an organization must be prepared for."
   ms.date: 3/04/2024
   author: hrasheed-msft
@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: security
   ai-usage: ai-assisted
-title: Design a resiliency strategy for common cyberthreats like ransomware
+title: Design a resiliency strategy for ransomware and other attacks based on Microsoft Security Best Practices
 summary: |
   You'll learn about common cyberthreats like ransomware and what kinds of attack patterns an organization must be prepared for.
 abstract: |
@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments.
   - Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/design-resiliency-strategy-common-cyberthreats-like-ransomware.svg
 levels:
 - advanced
 roles:

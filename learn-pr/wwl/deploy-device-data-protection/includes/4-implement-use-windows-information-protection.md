@@ -14,20 +14,20 @@ WIP policies then specify which trusted apps can use and manipulate that data. E
 
 When you create policies in Intune, you can define which apps are protected, the level of protection provided, and how to find organizational data on your network.
 
-To create a WIP policy in Intune, perform the following:
+To create a WIP policy in Intune, perform the following steps:
 
-1.  Sign in to the **Microsoft Endpoint Manager admin center**.
-2.  Select **Apps** > **App protection policies**.
-3.  Select **Add a policy**, and then enter a name for the policy.
-4.  Select **Windows 10 and later** as the Platform.
-5.  Select **With Enrollment** as the Enrollment state.
-6.  Add protected apps.
-7.  Add any exempt apps.
-8.  In the Required settings blade, select the **Windows Information Protection** mode, and then set your corporate identity.
-9.  In the Advanced settings blade, define your network perimeter by adding network boundaries that define where apps can find and send corporate data.
-10. Upload a Data Recovery Agent (DRA) certificate.
-11. Choose other WIP settings, including whether to allow Azure RM with WIP.
-12. Select **OK**, and then select **Create**.
+ 1. **Sign in to the Microsoft Intune admin center**.
+ 2. Navigate to **Apps** > **App protection policies**.
+ 3. In the **App protection policies** pane, select **Add a policy**, and then fill in the following fields:
+    -  **Name**. Enter a name for the policy.
+    -  **Description**. Enter a description for the policy.
+    -  **Platform**. Select the platform for the policy.
+    -  **Enrollment state**: Choose Without enrollment for MAM or With enrollment for MDM.
+ 4. Select **Protected apps** and then select **Add apps**. You can add these types of apps:
+    -  **Recommended apps**. These are enlightened apps that work with WIP.
+    -  **Store apps**. These are apps that are available from Microsoft Store.
+    -  **Desktop apps**. These are signed Windows desktop apps.
+Please note that an application might return access denied errors after removing it from the list of protected apps. Rather than remove it from the list, you should uninstall and reinstall the application or exempt it from WIP policy.
 
 #### Allowed and exempt apps
 

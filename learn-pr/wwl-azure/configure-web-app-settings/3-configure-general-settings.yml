@@ -4,12 +4,12 @@ title: Configure general settings
 metadata:
   title: Configure general settings
   description: "Configure general settings"
-  ms.date: 02/05/2024
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/3-configure-general-settings.md)]

@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 2
+durationInMinutes: 7
 content: |
   [!include[](includes/5-describe-custom-promptbooks.md)]

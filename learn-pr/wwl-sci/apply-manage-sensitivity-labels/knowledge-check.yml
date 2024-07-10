@@ -4,37 +4,59 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/17/2022
+  ms.date: 06/03/2024
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: riswinto
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "If you want to restrict access to a file, you need to configure a sensitivity label with which of the following?"
+  - content: "What is a benefit of applying sensitivity labels to Microsoft Teams channels?"
     choices:
-    - content: "Marking content"
+    - content: "It enforces data retention policies specific to each channel's content."
       isCorrect: false
-      explanation: "The answer isn't correct. Only marking content isn't the way to restrict access to a file."
-    - content: "Encryption"
+      explanation: "Incorrect: While sensitivity labels can enforce data governance across Microsoft 365, applying them to Teams channels doesn't configure data retention policies based on content type within those channels."
+    - content: "It ensures that channel meetings and chats inherit the label's protection settings."
       isCorrect: true
-      explanation: "This answer is correct. Only a label with encryption can have access rules to prevent other user to edit or open the file."
-    - content: "Guest access"
+      explanation: "Correct: Applying sensitivity labels to Teams channels is beneficial because it ensures that meetings and chats within those channels inherit the label's protection settings."
+    - content: "It restricts channel access based on the user's location and device compliance."
       isCorrect: false
-      explanation: "The answer isn't correct. The Guest access prevention is only an option, but with it´s not possible to restrict file access in detail."
-  - content: "The Unified Labeling Scanner requires which other system to conduct scans?"
+      explanation: "Incorrect: Sensitivity labels control access to content based on classification and don't directly restrict channel access based on the user's location or device compliance. This is managed through other security policies in Microsoft 365."
+  - content: "How can sensitivity labels be applied to existing SharePoint sites?"
     choices:
-    - content: "a SQL Server Standard or SQL Server Enterprise"
+    - content: "By navigating to the SharePoint admin center and selecting the desired label under site settings."
       isCorrect: true
-      explanation: "This answer is correct. The SQL Server Express version is only for testing."
-    - content: "Microsoft 365 alerts enabled."
+      explanation: "Correct: Sensitivity labels are applied to existing sites in the SharePoint admin center under site settings."
+    - content: "By creating a new site and choosing the sensitivity label during setup."
       isCorrect: false
-      explanation: "The answer isn't correct."
-    - content: "A Linux server."
+      explanation: "Incorrect: This option describes applying labels to new sites, not existing ones."
+    - content: "By adjusting the site permissions to restrict access."
       isCorrect: false
-      explanation: "The answer isn't correct. A Windows server is needed."
+      explanation: "Incorrect: Adjusting site permissions doesn't directly involve sensitivity labels, which are applied separately for data classification and access control."
+  - content: "What settings can sensitivity labels adjust to improve meeting security?"
+    choices:
+    - content: "Recording permissions and access to meeting transcripts."
+      isCorrect: false
+      explanation: "Incorrect: Meeting recording permissions and access to meeting transcripts are important aspects of meeting security, but sensitivity labels don't control them."
+    - content: "Meeting scheduling options and calendar integration settings."
+      isCorrect: false
+      explanation: "Incorrect: Sensitivity labels focus on access control and encryption during meetings. Meeting scheduling options and calendar integration settings, while important for meeting organization, sensitivity labels aren't directly controlled by sensitivity labels."
+    - content: "Who can bypass the lobby, who can present, and encryption for meeting video and audio."
+      isCorrect: true
+      explanation: "Correct: Sensitivity labels can adjust settings like who can bypass the lobby, who can present, and encryption for meeting video and audio, enhancing meeting security."
+  - content: "What file types are fully compatible with sensitivity labels in Office apps?"
+    choices:
+    - content: "Image formats such as .jpg and .png."
+      isCorrect: false
+      explanation: "Incorrect: Image formats aren't directly relevant to sensitivity labels in Office apps."
+    - content: "Open XML formats such as .docx, .xlsx, and .pptx."
+      isCorrect: true
+      explanation: "Correct: Open XML formats such as .docx, .xlsx, and .pptx are fully compatible with sensitivity labels in Office apps, allowing effective data protection."
+    - content: "Legacy and nonstandard formats such as .doc and .xls."
+      isCorrect: false
+      explanation: "Incorrect. Legacy and nonstandard formats might have compatibility limitations with sensitivity labels."

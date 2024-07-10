@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.use-databases-dotnet-aspire-app.store-data-sql-databases
+
+title: Store data in SQL-compliant databases
+metadata:
+  title: Store data in SQL-compliant databases
+  description: "Learn how to use .NET Aspire components to read and write data to PostgreSQL, MySQL, and Microsoft SQL Server databases."
+  ms.date: 3/20/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
+durationInMinutes: 15
+content: |
+  [!include[](includes/store-data-sql-databases.md)]

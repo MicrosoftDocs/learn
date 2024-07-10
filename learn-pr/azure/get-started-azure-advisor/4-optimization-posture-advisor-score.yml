@@ -5,8 +5,8 @@ metadata:
   title: Understand your optimization posture with Advisor Score
   description: Learn how Azure Advisor Score is calculated and how to use it to better understand your optimization posture.
   ms.date: 10/20/2023
-  author: danterasera
-  ms.author: darasera
+  author: aortoll
+  ms.author: anortoll
   ms.topic: unit
   show_latex: true
 durationInMinutes: 4

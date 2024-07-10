@@ -4,10 +4,10 @@ title: Run CodeQL in a database
 metadata:
   unitType: Run CodeQL in a database 
   title: Run CodeQL in a database 
-  description: Learn how to analyze your database using CodeQL queries
-  ms.date: 02/10/2022
-  author: rmcmurray
-  ms.author: robmcm
+  description: Learn how to analyze your database by using CodeQL queries.
+  ms.date: 05/01/2024
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 5
 content: |

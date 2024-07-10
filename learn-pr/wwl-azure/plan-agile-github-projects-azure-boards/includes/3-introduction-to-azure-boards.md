@@ -1,4 +1,3 @@
-
 Azure Boards is a customizable tool to manage software projects supporting Agile, Scrum, and Kanban processes by default. Track work, issues, and code defects associated with your project. Also, you can create your custom process templates and use them to create a better and more customized experience for your company.
 
 You have multiple features and configurations to support your teams, such as calendar views, configurable dashboards, and integrated reporting.

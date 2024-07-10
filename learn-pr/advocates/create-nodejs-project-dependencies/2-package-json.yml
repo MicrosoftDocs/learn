@@ -4,9 +4,9 @@ title: Configure the package.json
 metadata:
   title: Configure the package.json
   description: This unit explains how you can configure a package.json file to describe a project better. It also covers how to create and run various scripts that can help you manage a project throughout its lifetime.
-  author: GitHubber17
-  ms.author: chnoring
-  ms.date: 05/30/2023
+  author: diberry
+  ms.author: diberry
+  ms.date: 04/19/2024
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4

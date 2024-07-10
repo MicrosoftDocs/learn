@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 04/13/2023
+  ms.date: 07/08/2024
   author: orin-thomas
   ms.author: orthomas
   ms.topic: unit
@@ -25,7 +25,7 @@ quiz:
     - content: Hyper-V Snapshot
       isCorrect: false
       explanation: Incorrect. App-consistent recovery points are created from app-consistent snapshots.
-  - content: You're replicating Hyper-V virtual machines from an on-premises datacenter to Azure. Which of the following Azure Site Recovery items can you use during a failover to recover the virtual machine and its memory state at the time the recovery point was taken?Which of the following paths to Azure can be the conduit for Azure Site Recovery replication traffic from an on-premises primary site to an Azure secondary site?
+  - content: You're replicating Hyper-V virtual machines from an on-premises datacenter to Azure. Which of the following paths to Azure can be the conduit for Azure Site Recovery replication traffic from an on-premises primary site to an Azure secondary site?
     choices:
     - content: Azure Point-to-Site VPN
       isCorrect: false
@@ -36,7 +36,7 @@ quiz:
     - content: Azure ExpressRoute
       isCorrect: true
       explanation: Correct. While you can't configure replication to occur over a VPN, you can configure replication to occur over Azure ExpressRoute.
-  - content: You're replicating Hyper-V virtual machines from an on-premises datacenter to Azure. Which of the following Azure Site Recovery items can you use during a failover to recover the virtual machine and its memory state at the time the recovery point was taken?What's the longest period of time that recovery points are stored?
+  - content: You're replicating Hyper-V virtual machines from an on-premises datacenter to Azure. What's the longest period of time that recovery points are stored?
     choices:
     - content: 24 hours
       isCorrect: false

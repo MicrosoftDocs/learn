@@ -46,6 +46,7 @@ units:
 - learn.wwl.design-solutions-securing-server-client-endpoints.design-solution-securing-operational-technology-industrial-control-systems
 - learn.wwl.design-solutions-securing-server-client-endpoints.specify-security-baselines-server-client-endpoints
 - learn.wwl.design-solutions-securing-server-client-endpoints.design-solution-secure-remote-access
+- learn.wwl.design-solutions-securing-server-client-endpoints.evaluate-windows-local-admin-password-solution
 - learn.wwl.design-solutions-securing-server-client-endpoints.knowledge-check
 - learn.wwl.design-solutions-securing-server-client-endpoints.summary
 badge:

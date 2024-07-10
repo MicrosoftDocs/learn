@@ -1,4 +1,4 @@
-Fabric's Lakehouse is a collection of files, folders, tables, and shortcuts that act like a database over a data lake. It's used by the Spark engine and SQL engine for big data processing and has features for ACID transactions when using the open-source Delta formatted tables. The Lakehouse is a great place to store data, but it's not the best place to serve data to business users. For that, you need a data warehouse.
+Fabric's Lakehouse is a collection of files, folders, tables, and shortcuts that act like a database over a data lake. It's used by the Spark engine and SQL engine for big data processing and has features for ACID transactions when using the open-source Delta formatted tables.
 
 Fabric's data warehouse experience allows you to transition from the lake view of the Lakehouse (which supports data engineering and Apache Spark) to the SQL experiences that a traditional data warehouse would provide. The Lakehouse gives you the ability to read tables and use the SQL analytics endpoint, whereas the data warehouse enables you to manipulate the data.
 
@@ -57,9 +57,7 @@ Generally, you should implement a data warehouse load process that performs task
 4. Load the fact tables from the fact data in the staging tables, looking up the appropriate surrogate keys for related dimensions.
 5. Perform post-load optimization by updating indexes and table distribution statistics.
 
-If you have tables in the lakehouse, and you want to be able to query it in your warehouse - but not make changes -
-
- With a Fabric data warehouse, you don't have to copy data from the lakehouse to the data warehouse. You can query data in the lakehouse directly from the data warehouse using cross-database querying.
+If you have tables in the lakehouse, and you want to be able to query it in your warehouse - but not make changes - with a Fabric data warehouse, you don't have to copy data from the lakehouse to the data warehouse. You can query data in the lakehouse directly from the data warehouse using cross-database querying.
 
 > [!IMPORTANT]
 > Working with tables in the Fabric data warehouse currently has some limitations. See [Tables in data warehousing in Microsoft Fabric](/fabric/data-warehouse/tables) for more information.

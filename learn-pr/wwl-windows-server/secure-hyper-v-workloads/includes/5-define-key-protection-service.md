@@ -43,6 +43,6 @@ You can also configure the Attestation Server and Key Protection URLs for a host
 
 1. In the **Host Guardian Service Settings** window, enter the **Attestation Server URL** and **Key Protection URL** you obtained previously in their respective fields.
 
-    :::image type="content" source="../media/m24-vmm-kps.png" alt-text="The HGS settings menu in VMM for adding the KPS URL for a host.":::
+    :::image type="content" source="../media/m24-vmm-kps.png" alt-text="Screenshot of the HGS settings menu in VMM for adding the KPS URL for a host.":::
 
 1. Select **Finish** to save the configuration.

@@ -3,7 +3,7 @@ Web Application Firewall (WAF) provides centralized protection of your web appli
 :::image type="content" source="../media/azure-web-application-firewall-b435bc71.png" alt-text="Diagram showing how the Web Application Firewall (WAF) provides centralized protection of your web applications from common exploits and vulnerabilities.":::
 
 
-Preventing such attacks in application code is challenging. It can require rigorous maintenance, patching, and monitoring at multiple layers of the application topology. A centralized web application firewall helps make security management much simpler. A WAF also gives application administrators better assurance of protection against threats and intrusions.<br>
+Preventing such attacks in application code is challenging. It can require rigorous maintenance, patching, and monitoring at multiple layers of the application topology. A centralized web application firewall helps make security management much simpler. A WAF also gives application administrators better assurance of protection against threats and intrusions.
 
 A WAF solution can react to a security threat faster by centrally patching a known vulnerability, instead of securing each individual web application.
 
@@ -64,14 +64,14 @@ The Application Gateway WAF is integrated with Microsoft Defender for Cloud. Def
 
 To enable a Web Application Firewall on Application Gateway, you must create a WAF policy. This policy is where all of the managed rules, custom rules, exclusions, and other customizations such as file upload limit exist.
 
-You can configure a WAF policy and associate that policy to one or more application gateways for protection. A WAF policy consists of two types of security rules:<br>
+You can configure a WAF policy and associate that policy to one or more application gateways for protection. A WAF policy consists of two types of security rules:
 
  -  Custom rules that you create<br>
  -  Managed rule sets that are a collection of Azure-managed preconfigured set of rules<br>
 
-When both are present, custom rules are processed before processing the rules in a managed rule set. A rule is made of a match condition, a priority, and an action. Action types supported are: **ALLOW**, **BLOCK**, and **LOG**. You can create a fully customized policy that meets your specific application protection requirements by combining managed and custom rules.<br>
+When both are present, custom rules are processed before processing the rules in a managed rule set. A rule is made of a match condition, a priority, and an action. Action types supported are: ALLOW, BLOCK, and LOG. You can create a fully customized policy that meets your specific application protection requirements by combining managed and custom rules.
 
-Rules within a policy are processed in a priority order. Priority is a unique integer that defines the order of rules to process. Smaller integer value denotes a higher priority and those rules are evaluated before rules with a higher integer value. Once a rule is matched, the corresponding action that was defined in the rule is applied to the request. Once such a match is processed, rules with lower priorities aren't processed further.<br>
+Rules within a policy are processed in a priority order. Priority is a unique integer that defines the order of rules to process. Smaller integer value denotes a higher priority and those rules are evaluated before rules with a higher integer value. Once a rule is matched, the corresponding action that was defined in the rule is applied to the request. Once such a match is processed, rules with lower priorities aren't processed further.
 
 A web application delivered by Application Gateway can have a WAF policy associated to it at the global level, at a per-site level, or at a per-URI level.
 
@@ -87,7 +87,7 @@ Application Gateway also supports custom rules. With custom rules, you can creat
 
 You can enable a managed bot protection rule set to take custom actions on requests from all bot categories.
 
-Three bot categories are supported:<br>
+Three bot categories are supported:
 
  -  Bad - Bad bots include bots from malicious IP addresses and bots that falsify their identities. Bad bots with malicious IPs are sourced from the Microsoft Threat Intelligence feed’s high confidence IP Indicators of Compromise.
  -  Good - Good bots include validated search engines such as Googlebot, bingbot, and other trusted user agents.
@@ -111,8 +111,8 @@ You can access WAF logs from a storage account, event hub, log analytics, or sen
 
 The Application Gateway WAF can be configured to run in the following two modes:
 
- -  **Detection mode**: Monitors and logs all threat alerts. You turn on logging diagnostics for Application Gateway in the Diagnostics section. You must also make sure that the WAF log is selected and turned on. Web application firewall doesn't block incoming requests when it's operating in Detection mode.<br>
- -  **Prevention mode**: Blocks intrusions and attacks that the rules detect. The attacker receives a "403 unauthorized access" exception, and the connection is closed. Prevention mode records such attacks in the WAF logs.
+ -  Detection mode: Monitors and logs all threat alerts. You turn on logging diagnostics for Application Gateway in the Diagnostics section. You must also make sure that the WAF log is selected and turned on. Web application firewall doesn't block incoming requests when it's operating in Detection mode.<br>
+ -  Prevention mode: Blocks intrusions and attacks that the rules detect. The attacker receives a "403 unauthorized access" exception, and the connection is closed. Prevention mode records such attacks in the WAF logs.
 
 ## **WAF engines**
 
@@ -131,9 +131,9 @@ You can choose which action is run when a request matches a rule condition. The 
 
 Open Web Application Security Project (OWASP) has two modes for deciding whether to block traffic: Traditional mode and Anomaly Scoring mode.
 
-In Traditional mode, traffic that matches any rule is considered independently of any other rule matches. This mode is easy to understand. But the lack of information about how many rules match a specific request is a limitation. So, Anomaly Scoring mode was introduced. It's the default for OWASP 3.x.<br>
+In Traditional mode, traffic that matches any rule is considered independently of any other rule matches. This mode is easy to understand. But the lack of information about how many rules match a specific request is a limitation. So, Anomaly Scoring mode was introduced. It's the default for OWASP 3.x.
 
-In Anomaly Scoring mode, traffic that matches any rule isn't immediately blocked when the firewall is in Prevention mode. Rules have a certain severity: Critical, Error, Warning, or Notice. That severity affects a numeric value for the request, which is called the Anomaly Score. For example, one Warning rule match contributes 3 to the score. One Critical rule match contributes 5.<br>
+In Anomaly Scoring mode, traffic that matches any rule isn't immediately blocked when the firewall is in Prevention mode. Rules have a certain severity: Critical, Error, Warning, or Notice. That severity affects a numeric value for the request, which is called the Anomaly Score. For example, one Warning rule match contributes 3 to the score. One Critical rule match contributes 5.
 
 | **Severity** | **Value** |
 | ------------ | --------- |

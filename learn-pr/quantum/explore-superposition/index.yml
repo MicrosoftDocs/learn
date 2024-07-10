@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.quantum.explore-superposition
+metadata: 
+  title: Explore quantum superposition with Q#
+  description: Learn one of the fundamental concepts of quantum computing, superposition, how to represent superposition of qubit using the Bloch sphere, and how to create and analyze superposition states with Q#.
+  ms.date: 04/04/2024
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  manager: tedhudek
+  ms.topic: module
+  ms.service: azure-quantum
+title: Explore quantum superposition with Q#
+summary: Learn one of the fundamental concepts of quantum computing, superposition, how to represent superposition of qubit using the Bloch sphere, and how to create and analyze superposition states with Q#.
+abstract: |
+  By the end of this module, you will be able to:
+  - Define the concepts of quantum superposition, probabilities, and Bloch sphere.
+  - Understand Dirac notation.
+  - Use Q# to apply operations and create superposition states.
+  - Use Q# to inspect the current state of a qubit.
+
+  In this module, you will:
+  - Learn what superposition and probability mean in quantum computing.
+  - Learn what the Bloch sphere is and how it represents a qubit.
+  - Learn Dirac notation and quantum operators.
+  - Create and analyze different superposition states with Q# and the Q# libraries.
+prerequisites: |
+  - Basic knowledge of linear algebra and complex numbers.
+  - The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code on the Web](https://vscode.dev/).
+  - The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension.
+iconUrl: /training/achievements/quantum/explore-superposition.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure-quantum
+subjects:
+- cloud-computing
+units:
+- learn.quantum.explore-superposition.introduction
+- learn.quantum.explore-superposition.superposition
+- learn.quantum.explore-superposition.superposition-quantum-computing
+- learn.quantum.explore-superposition.dirac-notation
+- learn.quantum.explore-superposition.superposition-qsharp
+- learn.quantum.explore-superposition.knowledge-check
+- learn.quantum.explore-superposition.summary
+badge:
+  uid: learn.quantum.explore-superposition.badge

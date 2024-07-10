@@ -16,15 +16,15 @@ quiz:
   questions:
   - content: "Artifacts from a GitHub Actions workflow can be saved with what action?"
     choices:
-    - content: "The ```actions/upload-artifacts``` action"
+    - content: "The ```actions/upload-artifact``` action"
       isCorrect: true
-      explanation: "The ```actions/upload-artifacts``` action allows you to save an artifact."
+      explanation: "The ```actions/upload-artifact``` action allows you to save an artifact."
     - content: "The ```actions/checkout@v3``` action"
       isCorrect: false
-      explanation: "The ```actions/upload-artifacts``` action allows you to save an artifact. The ```actions/checkout@v1``` action copies the code from your repository into the virtual machine."
+      explanation: "The ```actions/upload-artifact``` action allows you to save an artifact. The ```actions/checkout@v1``` action copies the code from your repository into the virtual machine."
     - content: "The ```actions/download-artifact``` action"
       isCorrect: false
-      explanation: "The ```actions/upload-artifacts``` action allows you to save an artifact. The ```actions/download-artifact``` action allows you to download a saved artifact."
+      explanation: "The ```actions/upload-artifact``` action allows you to save an artifact. The ```actions/download-artifact``` action allows you to download a saved artifact."
   - content: "What is one way that GitHub Actions workflows can NOT be used?"
     choices:
     - content: "To automatically run test suites on each push"

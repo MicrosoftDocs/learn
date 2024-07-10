@@ -1,4 +1,3 @@
-
 Learn to enable remote access within your organization, and to publish your organization’s applications and websites by using Windows Server Web Application Proxy (WAP). 
 
 ## Scenario

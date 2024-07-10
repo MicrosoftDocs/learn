@@ -4,11 +4,11 @@ title: What is a runbook?
 metadata:
   title: What is a runbook?
   description: "What is a runbook?"
-  ms.date: 09/05/2023
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-  ms.custom: devx-track-python
+  ms.custom: N/A, devx-track-python
 durationInMinutes: 4
 content: |
   [!include[](includes/3-what-runbook.md)]

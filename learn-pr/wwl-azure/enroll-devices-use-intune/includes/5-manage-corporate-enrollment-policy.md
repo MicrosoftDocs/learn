@@ -1,5 +1,3 @@
-
-
 When your organization signs up for a Microsoft cloud-based service like Intune, you're given an initial domain name hosted in Microsoft Entra ID that follows this model: **your-domain.onmicrosoft.com**. In this example, **your-domain** is the domain name that you chose when you signed up. **onmicrosoft.com** is the suffix assigned to the accounts you add to your subscription. You can configure your organization's custom domain to access Intune instead of the domain name provided with your subscription.
 
 Before you create user accounts or synchronize your on-premises Active Directory, we strongly recommend that you add one or more of your custom domain names. This will simplify user management and lets users sign in with the credentials they use to access other domain resources.

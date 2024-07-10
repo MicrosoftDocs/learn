@@ -3,20 +3,26 @@ uid: learn.wwl.define-microsoft-ai-strategy-healthcare
 metadata:
   title: Define a Microsoft AI strategy to create business value in healthcare
   description: "Discover AI use cases and scenarios for healthcare. Get familiar with Microsoft AI tools and services for healthcare. Learn from real success stories."
-  ms.date: 11/30/2023
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
-  ms.service: azure-ai-services
+  ms.custom:
+  - N/A
+  ms.service: microsoft-cloud-healthcare
+  ai-usage: human-only
 title: Define a Microsoft AI strategy to create business value in healthcare
 summary: This module is designed to help healthcare professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
 abstract: |
-  * Identify AI use cases in healthcare.
-  * Examine available AI tools and resources for healthcare scenarios.
-  * Discover insights from healthcare-specific AI success stories.
+  -   Identify AI use cases in healthcare.
+
+  -   Examine available AI tools and resources for healthcare scenarios.
+
+  -   Discover insights from healthcare-specific AI success stories.
 prerequisites: |
-  * Basic understanding of AI concepts.
-  * Basic understanding of healthcare concepts.
+  -   Basic understanding of AI concepts.
+
+  -   Basic understanding of healthcare concepts.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner

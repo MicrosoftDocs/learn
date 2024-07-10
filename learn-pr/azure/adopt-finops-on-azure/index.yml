@@ -1,0 +1,75 @@
+### YamlMime:Module
+uid: learn.azure.adopt-finops-on-azure
+metadata:
+  title: Adopt FinOps on Azure
+  description: Learn how to implement FinOps on Azure.
+  ms.date: 05/02/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: module
+  ms.reviewer: fernandovas;micflan
+  ms.service: finops
+title: Adopt FinOps on Azure
+summary: In today's dynamic landscape, effective cloud management is essential for organizations of all sizes and across various industries. This module provides a comprehensive overview of FinOps domains and capabilities, along with hands-on experience using Microsoft solutions to support your journey. Additionally, it includes a tutorial on conducting a FinOps iteration to help you start or advance your FinOps practice.
+abstract: |
+  By the end of this module, you are able to:
+
+  - Describe FinOps domains and capabilities.
+  - Make informed decisions about how to start adopting FinOps.
+  - Apply Microsoft resources and solutions available to implement FinOps.
+  - Conduct a FinOps iteration.
+
+  **Attribution** - The content of this learn module is based on the [FinOps Framework](https://www.finops.org/framework/) published by the [FinOps Foundation](https://www.finops.org/).
+prerequisites: |
+  - Basic understanding of FinOps
+  - Basic understanding of cloud computing concepts
+  - Basic understanding of the pay-per-use model
+  - Basic knowledge of Azure platform and Azure services  
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- intermediate
+roles:
+- administrator
+- ai-engineer
+- business-analyst
+- business-owner
+- business-user
+- data-analyst
+- data-engineer
+- database-administrator
+- developer
+- devops-engineer
+- functional-consultant
+- maker
+- network-engineer
+- security-engineer
+- solution-architect
+- student
+- technology-manager
+- startup-founder
+- service-adoption-specialist
+products:
+- azure
+- dynamics-365
+- fabric
+- m365
+- microsoft-defender
+- ms-copilot
+- office-365
+- sql-server
+- power-platform
+- industry-solutions
+subjects:
+- cloud-computing
+units:
+- learn.azure.adopt-finops-on-azure.introduction
+- learn.azure.adopt-finops-on-azure.understand-cloud-usage-costs
+- learn.azure.adopt-finops-on-azure.quantify-business-value
+- learn.azure.adopt-finops-on-azure.optimize-cloud-usage-costs
+- learn.azure.adopt-finops-on-azure.manage-finops-practice
+- learn.azure.adopt-finops-on-azure.conduct-finops-iteration
+- learn.azure.adopt-finops-on-azure.knowledge-check
+- learn.azure.adopt-finops-on-azure.summary
+badge:
+  uid: learn.azure.adopt-finops-on-azure.badge

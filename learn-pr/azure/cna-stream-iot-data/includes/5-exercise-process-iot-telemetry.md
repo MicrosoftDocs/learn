@@ -1,8 +1,8 @@
 This exercise provides an overview of using Azure IoT Central applications to configure rules and export IoT telemetry data. For more information, see:
 
 * [Configure rules](/azure/iot-central/core/howto-configure-rules?azure-portal=true)
-* [Create webhook actions on rules in Azure IoT Central](/azure/iot-central/core/howto-create-webhooks?azure-portal=true)
-* [Export IoT data to cloud destinations using data export](/azure/iot-central/core/howto-export-data?azure-portal=true)
+* [Create webhook actions on rules in Azure IoT Central](/azure/iot-central/core/howto-configure-rules#create-a-webhook-action)
+* [Export IoT data to cloud destinations using data export](/azure/iot-central/core/howto-export-to-blob-storage)
 
 In this exercise, you'll:
 
@@ -33,17 +33,17 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
    | Function App name | Enter a unique name consisting of lowercase letters, digits or dashes, and starting with a letter. |
    | Publish | Select **Code**. |
    | Runtime stack | Select **.NET**. |
-   | Version | Select **3.1**. |
+   | Version | Select **6.0 (LTS)**. |
    | Region | Select the Azure region closest to the location of your lab environment, preferably matching the location of your Azure IoT Central deployment. |
    | Operating System | Windows |
    | Plan type | Consumption (Serverless) |
 
    :::image type="content" source="../media/5-azure-create-function-app.png" alt-text="Screenshot of the Azure portal Create Function App blade Basics tab.":::
 
-1. Select **Create**.
+1. Select **Review + create**, then select **Create**.
 
    > [!NOTE]
-   > Wait for the Azure Function app provisioning to complete. This might take up to two minutes.
+   > Wait for the Azure Function app provisioning to complete. This might take up a few minutes.
 
 1. Within the browser window displaying the Azure portal with the Azure Function app provisioning status blade, select **Go to resource**.
 1. On the Azure Function app blade, select **Functions**, and then select **+ Create**.
@@ -113,17 +113,17 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
    | Callback URL | Paste the value of the Azure function URL you recorded in the previous task of this exercise. |
 
    > [!NOTE]
-   > The value of the humidity telemetry is intentionally artificially low, to invoke the webhook functionality and trigger the function. In real-life scenarios, you would adjust it to correspond to the condition that warrants raising an alert or taking a remediation action.
+   > The value of the humidity telemetry is intentionally artificially low to invoke the webhook functionality and trigger the function. In real-life scenarios, you'd adjust it to correspond to the condition that warrants raising an alert or taking a remediation action.
 
-1. On the **Rules** page, select **Done**, and then select **Save**.
-1. Switch to the browser window displaying the **Raspberry Pi Azure IoT Online Simulator** page you used in the previous exercise of this module. On this page, verify that the simulated device is sending messages to the Azure IoT Central application. If the simulator has stopped, select **Run** directly after the code pane.
+1. On the **Rules** page, select **Done**, then select **Save**.
+1. Switch to the browser window displaying the **Raspberry Pi Azure IoT Online Simulator** page you used in the previous exercise. On this page, verify that the simulated device is sending messages to the Azure IoT Central application. If the simulator has stopped, select **Run** directly after the code pane.
 1. Switch back to the web browser window displaying the **HttpTrigger1 \| Code + Test** blade in the Azure portal. In the vertical menu, select the **Monitor** entry, and on the **HttpTrigger1 \| Code + Test** blade, select the **Logs** tab.
 1. Verify that the logs pane displays the messages generated in response to the HTTP trigger originating from the Azure IoT Central application webhook you configured earlier in this task.
 
 ## Create an Azure Storage account that stores IoT telemetry
 
 1. Switch to the web browser window displaying the Azure portal.
-1. In the Azure portal, use the **Search resources, services, and docs** text box to search for, and select **Storage accounts**.
+1. In the Azure portal, use the **Search resources, services, and docs** text box to search for and select **Storage accounts**.
 1. On the **Storage accounts** blade, select **+ New** or **+ Create**.
 1. On the **Basics** tab of the **Create storage account** blade, configure the following settings (leave others with their default values):
 
@@ -137,25 +137,25 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
 
    :::image type="content" source="../media/5-azure-storage-account-create.png" alt-text="Screenshot of the Azure portal, Create storage account blade, Basics tab.":::
 
-1. On the **Basics** tab of the **Create storage account** blade, select **Review + create**, and then select **Create**.
+1. On the **Basics** tab of the **Create storage account** blade, select **Review + create**, then select **Create**.
 
    > [!NOTE]
    > Wait for the Azure storage account provisioning to complete. This might take about two minutes.
 
 1. After provisioning is complete, select **Go to resource**.
-1. On the Azure storage account blade, in the vertical menu, select **Containers**, and then select **+ Container**.
-1. On the **New container** blade, in the **Name** text box, enter **iotcontainer**, leave the **Public access level** set to **Private (no anonymous access)**, and then select **Create**.
+1. On the Azure storage account blade, in the vertical menu, select **Containers**, then select **+ Container**.
+1. On the **New container** blade, in the **Name** text box, enter **iotcontainer**, leave the **Public access level** set to **Private (no anonymous access)**, then select **Create**.
 
    :::image type="content" source="../media/5-azure-blob-container-create.png" alt-text="Screenshot of the Azure portal, New container blade.":::
 
-1. On the Azure storage account blade, in the vertical menu, in the **Security + Networking** section, select **Access keys**. Select **Show keys**, and then record the value of the connection string corresponding to **key1**.
+1. On the Azure storage account blade, in the vertical menu, in the **Security + Networking** section, select **Access keys**. Select **Show keys**, then record the value of the connection string corresponding to **key1**.
 
    :::image type="content" source="../media/5-azure-storage-account-keys.png" alt-text="Screenshot of the Azure portal, Access keys blade.":::
 
 ## Configure and validate data export of an Azure IoT Central application
 
 1. Switch to the web browser window displaying the **adatum-iot-custom-application** page in the IoT Central Application portal.
-1. In the IoT Central Application portal, on the **adatum-iot-custom-application** page, in the vertical menu, in the **Extend** section, select **Data export**, and then select **Add an export**.
+1. In the IoT Central Application portal, on the **adatum-iot-custom-application** page, in the vertical menu, in the **Extend** section, select **Data export**, then select **Add an export**.
 
    :::image type="content" source="../media/5-azure-iot-custom-application-export.png" alt-text="Screenshot of the  Azure IoT Central portal, Data export page.":::
 
@@ -173,14 +173,14 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
 
    :::image type="content" source="../media/5-azure-iot-create-new-destination.png" alt-text="Screenshot of the Azure IoT Central application export new destination settings.":::
 
-1. Select **Create**, and then select **Save** on the **Create new export** page.
+1. Select **Create**, then select **Save** on the **Create new export** page.
 1. Switch to the browser window displaying the **Raspberry Pi Azure IoT Online Simulator** page you used earlier in this exercise. On this page, directly after the code pane, select **Run**, and verify that the simulated device is sending messages to the Azure IoT Central application.
 1. Switch to the browser window displaying the Azure storage account blade in the Azure portal.
 1. On the Azure storage account blade, in the vertical menu, select **Containers**.
 1. In the list of containers, select the **iotcontainer** entry.
 1. On the **iotcontainer** blade, verify the presence of a new folder with a GUID-based name.
    > [!NOTE]
-   > If the folder is not present, wait for about a minute and select **Refresh**.
+   > If the folder isn't present, wait for about a minute and select **Refresh**.
 
 1. On the **iotcontainer** blade, select the newly generated folder and navigate through its subfolders until you reach a blob in any of its subfolders.
 1. On the **iotcontainer** blade, select the blob you identified in the previous step. Within the blob blade, select the **Edit** tab to display its content.
@@ -200,4 +200,4 @@ Congratulations! You completed the second exercise of this module. In this exerc
 
 ## Clean up the resources
 
-To avoid unnecessary charges from using Azure resources, you should delete the **iot-central-apps-RG** resource group you created at the beginning of this exercise. To do so, in the Azure portal, navigate to the **iot-central-apps-RG** blade, and select the **Delete resource group** entry in the toolbar. In the **TYPE THE RESOURCE GROUP NAME** textbox, enter **iot-central-apps-RG**, and then select **Delete**.
+To avoid unnecessary charges from using Azure resources, you should delete the **iot-central-apps-RG** resource group you created at the beginning of this exercise. To do so, in the Azure portal, navigate to the **iot-central-apps-RG** blade, and select the **Delete resource group** entry in the toolbar. In the **Enter resource group name to confirm deletion** textbox, enter **iot-central-apps-RG**, then select **Delete**. Select **Delete** again to confirm deletion.

@@ -1,9 +1,9 @@
 Defender for Containers is designed differently for each Kubernetes environment whether they're running in:
 
- -  **Azure Kubernetes Service (AKS)** \- Microsoft's managed service for developing, deploying, and managing containerized applications.<br>
- -  **Amazon Elastic Kubernetes Service (EKS)** in a connected Amazon Web Services (AWS) account - Amazon's managed service for running Kubernetes on AWS without needing to install, operate, and maintain your own Kubernetes control plane or nodes.<br>
- -  **Google Kubernetes Engine (GKE)** in a connected Google Cloud Platform (GCP) project - Google’s managed environment for deploying, managing, and scaling applications using GCP infrastructure.<br>
- -  **An unmanaged Kubernetes distribution** (using Azure Arc-enabled Kubernetes) - Cloud Native Computing Foundation (CNCF) certified Kubernetes clusters hosted on-premises or on IaaS.
+ -  Azure Kubernetes Service (AKS) - Microsoft's managed service for developing, deploying, and managing containerized applications.<br>
+ -  Amazon Elastic Kubernetes Service (EKS) in a connected Amazon Web Services (AWS) account - Amazon's managed service for running Kubernetes on AWS without needing to install, operate, and maintain your own Kubernetes control plane or nodes.<br>
+ -  Google Kubernetes Engine (GKE) in a connected Google Cloud Platform (GCP) project - Google’s managed environment for deploying, managing, and scaling applications using GCP infrastructure.<br>
+ -  An unmanaged Kubernetes distribution (using Azure Arc-enabled Kubernetes) - Cloud Native Computing Foundation (CNCF) certified Kubernetes clusters hosted on-premises or on IaaS.
 
 To protect your Kubernetes containers, Defender for Containers receives and analyzes:
 
@@ -18,12 +18,12 @@ To protect your Kubernetes containers, Defender for Containers receives and anal
 
 When Defender for Cloud protects a cluster hosted in Azure Kubernetes Service, the collection of audit log data is agentless and collected automatically through Azure infrastructure with no additional cost or configuration considerations. These are the required components in order to receive the full protection offered by Microsoft Defender for Containers:
 
- -  Defender agent: The DaemonSet that is deployed on each node, collects signals from hosts using the \***Extended Berkeley Packet Filter (eBPF) technology\***, and provides runtime protection. The agent is registered with a Log Analytics workspace, and used as a data pipeline. However, the audit log data isn't stored in the Log Analytics workspace. The Defender agent is deployed as an AKS Security profile.
-     -  **\*eBPF Background and Information\***: The **Extended Berkeley Packet Filter (eBPF)** is a powerful and versatile framework within the **Linux kernel** for programmatically **analyzing** and **filtering network packets**, as well as performing various other system-level tasks. Originally based on the Berkeley Packet Filter (BPF) introduced in the 1990s, eBPF expands upon its capabilities by **allowing user-defined programs to run within the kernel**, enabling dynamic and efficient packet processing without requiring modifications to the kernel itself.
-     -  eBPF programs are written in a **restricted subset of C** and are loaded into the kernel, where they execute within a **secure** and **sandboxed** environment. This allows for a wide range of network-related tasks to be performed directly within the kernel, such as **packet filtering**, **traffic monitoring**, **security enforcement**, and even custom protocol parsing.
-     -  One of the key advantages of eBPF is its versatility and performance. By executing within the kernel, eBPF programs can **access** and **manipulate network packets directly**, significantly **reducing overhead** compared to **traditional user-space packet processing methods**. Additionally, eBPF programs can be **dynamically loaded** and **attached to various hooks within the kernel**, allowing for **real-time responsiveness** and **adaptability** to **changing network conditions**.
-     -  eBPF has become increasingly popular in modern networking and security applications due to its flexibility and efficiency. It is widely used in tools and frameworks for **network monitoring**, **intrusion detection**, **traffic analysis**, and **performance tuning**. Moreover, its capabilities extend beyond networking to other areas of system observability and control, making it a fundamental building block for a wide range of Linux-based applications and services.
- -  Azure Policy for Kubernetes: A pod that extends the open-source Gatekeeper v3 and registers as a web hook to Kubernetes admission control making it possible to apply at-scale enforcements, and safeguards on your clusters in a centralized, consistent manner. The Azure Policy for Kubernetes pod is deployed as an AKS add-on. **It's only installed on one node in the cluster**.
+ -  Defender agent: The DaemonSet that is deployed on each node, collects signals from hosts using the \*Extended Berkeley Packet Filter (eBPF) technology\*, and provides runtime protection. The agent is registered with a Log Analytics workspace, and used as a data pipeline. However, the audit log data isn't stored in the Log Analytics workspace. The Defender agent is deployed as an AKS Security profile.
+     -  \*eBPF Background and Information\*: The Extended Berkeley Packet Filter (eBPF) is a powerful and versatile framework within the Linux kernel for programmatically analyzing and filtering network packets, as well as performing various other system-level tasks. Originally based on the Berkeley Packet Filter (BPF) introduced in the 1990s, eBPF expands upon its capabilities by allowing user-defined programs to run within the kernel, enabling dynamic and efficient packet processing without requiring modifications to the kernel itself.
+     -  eBPF programs are written in a restricted subset of C and are loaded into the kernel, where they execute within a secure and sandboxed environment. This allows for a wide range of network-related tasks to be performed directly within the kernel, such as packet filtering, traffic monitoring, security enforcement, and even custom protocol parsing.
+     -  One of the key advantages of eBPF is its versatility and performance. By executing within the kernel, eBPF programs can access and manipulate network packets directly, significantly reducing overhead compared to traditional user-space packet processing methods. Additionally, eBPF programs can be dynamically loaded and attached to various hooks within the kernel, allowing for real-time responsiveness and adaptability to changing network conditions.
+     -  eBPF has become increasingly popular in modern networking and security applications due to its flexibility and efficiency. It is widely used in tools and frameworks for network monitoring, intrusion detection, traffic analysis, and performance tuning. Moreover, its capabilities extend beyond networking to other areas of system observability and control, making it a fundamental building block for a wide range of Linux-based applications and services.
+ -  Azure Policy for Kubernetes: A pod that extends the open-source Gatekeeper v3 and registers as a web hook to Kubernetes admission control making it possible to apply at-scale enforcements, and safeguards on your clusters in a centralized, consistent manner. The Azure Policy for Kubernetes pod is deployed as an AKS add-on. It's only installed on one node in the cluster.
 
 :::image type="content" source="../media/architecture-azure-kubernetes-service-cluster-f99dc18c.png" alt-text="Diagram showing an example of the Azure Kubernetes Service architecture.":::
 
@@ -46,9 +46,9 @@ The discovery process is based on snapshots taken at intervals:
  -  **Create**:<br>
      -  If the extension is enabled from Defender CSPM, Defender for Cloud creates an identity in customer environments called CloudPosture/securityOperator/DefenderCSPMSecurityOperator.<br>
      -  If the extension is enabled from Defender for Containers, Defender for Cloud creates an identity in customer environments called CloudPosture/securityOperator/DefenderForContainersSecurityOperator.
-     -  **Assign**: Defender for Cloud assigns a built-in role called Kubernetes Agentless Operator to that identity on subscription scope. The role contains the following permissions:
+     -  Assign: Defender for Cloud assigns a built-in role called Kubernetes Agentless Operator to that identity on subscription scope. The role contains the following permissions:
      -  AKS read (`Microsoft.ContainerService/managedClusters/read`)<br>
-     -  AKS ***Trusted Access*** with the following permissions:
+     -  AKS *Trusted Access* with the following permissions:
      -  `Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/write`
      -  `Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/read`
      -  `Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/delete`
@@ -91,9 +91,9 @@ You can use Trusted Access to give explicit consent to your system-assigned mana
 
 These components are required in order to receive the full protection offered by Microsoft Defender for Containers:
 
- -  **Azure Arc-enabled Kubernetes** \- Azure Arc-enabled Kubernetes - An agent based solution, installed on one node in the cluster, that connects your clusters to Defender for Cloud. Defender for Cloud is then able to deploy the following two agents as Arc extensions:
- -  **Defender agent**: The DaemonSet that is deployed on each node, collects host signals using eBPF technology and Kubernetes audit logs, to provide runtime protection. The agent is registered with a Log Analytics workspace, and used as a data pipeline. However, the audit log data isn't stored in the Log Analytics workspace. The Defender agent is deployed as an Arc-enabled Kubernetes extension.
- -  **Azure Policy for Kubernetes**: A pod that extends the open-source Gatekeeper v3 and registers as a web hook to Kubernetes admission control making it possible to apply at-scale enforcements, and safeguards on your clusters in a centralized, consistent manner. The Azure Policy for Kubernetes pod is deployed as an Arc-enabled Kubernetes extension. It's only installed on one node in the cluster. For more information, see Protect your Kubernetes workloads and Understand Azure Policy for Kubernetes clusters.<br>
+ -  Azure Arc-enabled Kubernetes - Azure Arc-enabled Kubernetes - An agent based solution, installed on one node in the cluster, that connects your clusters to Defender for Cloud. Defender for Cloud is then able to deploy the following two agents as Arc extensions:
+ -  Defender agent: The DaemonSet that is deployed on each node, collects host signals using eBPF technology and Kubernetes audit logs, to provide runtime protection. The agent is registered with a Log Analytics workspace, and used as a data pipeline. However, the audit log data isn't stored in the Log Analytics workspace. The Defender agent is deployed as an Arc-enabled Kubernetes extension.
+ -  Azure Policy for Kubernetes: A pod that extends the open-source Gatekeeper v3 and registers as a web hook to Kubernetes admission control making it possible to apply at-scale enforcements, and safeguards on your clusters in a centralized, consistent manner. The Azure Policy for Kubernetes pod is deployed as an Arc-enabled Kubernetes extension. It's only installed on one node in the cluster. For more information, see Protect your Kubernetes workloads and Understand Azure Policy for Kubernetes clusters.<br>
 
 :::image type="content" source="../media/architecture-arc-cluster-fb52bb2a.png" alt-text="Diagram showing an example of the Azure Arc-enabled architecture.":::
 
@@ -102,10 +102,10 @@ These components are required in order to receive the full protection offered by
 
 When Defender for Cloud protects a cluster hosted in Elastic Kubernetes Service, the collection of audit log data is agentless. These are the required components in order to receive the full protection offered by Microsoft Defender for Containers:
 
- -  **Kubernetes audit logs** – AWS account’s CloudWatch enables, and collects audit log data through an agentless collector, and sends the collected information to the Microsoft Defender for Cloud backend for further analysis.
- -  **Azure Arc-enabled Kubernetes** \- Azure Arc-enabled Kubernetes - An agent based solution, installed on one node in the cluster, that connects your clusters to Defender for Cloud. Defender for Cloud is then able to deploy the following two agents as Arc extensions:
- -  **Defender agent**: The DaemonSet that is deployed on each node, collects signals from hosts using eBPF technology, and provides runtime protection. The agent is registered with a Log Analytics workspace, and used as a data pipeline. However, the audit log data isn't stored in the Log Analytics workspace. The Defender agent is deployed as an Arc-enabled Kubernetes extension.
- -  **Azure Policy for Kubernetes**: A pod that extends the open-source Gatekeeper v3 and registers as a web hook to Kubernetes admission control making it possible to apply at-scale enforcements, and safeguards on your clusters in a centralized, consistent manner. The Azure Policy for Kubernetes pod is deployed as an Arc-enabled Kubernetes extension. It's only installed on one node in the cluster.
+ -  Kubernetes audit logs – AWS account’s CloudWatch enables, and collects audit log data through an agentless collector, and sends the collected information to the Microsoft Defender for Cloud backend for further analysis.
+ -  Azure Arc-enabled Kubernetes - Azure Arc-enabled Kubernetes - An agent based solution, installed on one node in the cluster, that connects your clusters to Defender for Cloud. Defender for Cloud is then able to deploy the following two agents as Arc extensions:
+ -  Defender agent: The DaemonSet that is deployed on each node, collects signals from hosts using eBPF technology, and provides runtime protection. The agent is registered with a Log Analytics workspace, and used as a data pipeline. However, the audit log data isn't stored in the Log Analytics workspace. The Defender agent is deployed as an Arc-enabled Kubernetes extension.
+ -  Azure Policy for Kubernetes: A pod that extends the open-source Gatekeeper v3 and registers as a web hook to Kubernetes admission control making it possible to apply at-scale enforcements, and safeguards on your clusters in a centralized, consistent manner. The Azure Policy for Kubernetes pod is deployed as an Arc-enabled Kubernetes extension. It's only installed on one node in the cluster.
 
 :::image type="content" source="../media/architecture-amazon-elastic-kubernetes-cluster-c8ecdcff.png" alt-text="Diagram showing an example of the Amazon Elastic Kubernetes Service architecture.":::
  How does agentless discovery for Kubernetes in AWS work?
@@ -114,21 +114,21 @@ The discovery process is based on snapshots taken at intervals:
 
 When you enable the agentless discovery for Kubernetes extension, the following process occurs:
 
- -  **Create**:
+ -  Create:
      -  The Defender for Cloud role MDCContainersAgentlessDiscoveryK8sRole must be added to the aws-auth ConfigMap of the EKS clusters. The name can be customized.<br>
- -  **Assign**: Defender for Cloud assigns the MDCContainersAgentlessDiscoveryK8sRole role the following permissions:
+ -  Assign: Defender for Cloud assigns the MDCContainersAgentlessDiscoveryK8sRole role the following permissions:
      -  eks:UpdateClusterConfig<br>
      -  eks:DescribeCluster
- -  **Discover**: Using the system assigned identity, Defender for Cloud performs a discovery of the EKS clusters in your environment using API calls to the API server of EKS.
+ -  Discover: Using the system assigned identity, Defender for Cloud performs a discovery of the EKS clusters in your environment using API calls to the API server of EKS.
 
 ### Architecture diagram of Defender for Cloud and GKE clusters
 
 When Defender for Cloud protects a cluster hosted in Google Kubernetes Engine, the collection of audit log data is agentless. These are the required components in order to receive the full protection offered by Microsoft Defender for Containers:
 
- -  **Kubernetes audit logs** – GCP Cloud Logging enables, and collects audit log data through an agentless collector, and sends the collected information to the Microsoft Defender for Cloud backend for further analysis.
- -  **Azure Arc-enabled Kubernetes** \- Azure Arc-enabled Kubernetes - An agent based solution, installed on one node in the cluster, that connects your clusters to Defender for Cloud. Defender for Cloud is then able to deploy the following two agents as Arc extensions:
- -  **Defender agent**: The DaemonSet that is deployed on each node, collects signals from hosts using eBPF technology, and provides runtime protection. The agent is registered with a Log Analytics workspace, and used as a data pipeline. However, the audit log data isn't stored in the Log Analytics workspace. The Defender agent is deployed as an Arc-enabled Kubernetes extension.
- -  **Azure Policy for Kubernetes**: A pod that extends the open-source Gatekeeper v3 and registers as a web hook to Kubernetes admission control making it possible to apply at-scale enforcements, and safeguards on your clusters in a centralized, consistent manner. The Azure Policy for Kubernetes pod is deployed as an Arc-enabled Kubernetes extension. It only needs to be installed on one node in the cluster.
+ -  Kubernetes audit logs – GCP Cloud Logging enables, and collects audit log data through an agentless collector, and sends the collected information to the Microsoft Defender for Cloud backend for further analysis.
+ -  Azure Arc-enabled Kubernetes - Azure Arc-enabled Kubernetes - An agent based solution, installed on one node in the cluster, that connects your clusters to Defender for Cloud. Defender for Cloud is then able to deploy the following two agents as Arc extensions:
+ -  Defender agent: The DaemonSet that is deployed on each node, collects signals from hosts using eBPF technology, and provides runtime protection. The agent is registered with a Log Analytics workspace, and used as a data pipeline. However, the audit log data isn't stored in the Log Analytics workspace. The Defender agent is deployed as an Arc-enabled Kubernetes extension.
+ -  Azure Policy for Kubernetes: A pod that extends the open-source Gatekeeper v3 and registers as a web hook to Kubernetes admission control making it possible to apply at-scale enforcements, and safeguards on your clusters in a centralized, consistent manner. The Azure Policy for Kubernetes pod is deployed as an Arc-enabled Kubernetes extension. It only needs to be installed on one node in the cluster.
 
 :::image type="content" source="../media/architecture-google-kubernetes-engine-968f94b9.png" alt-text="Diagram showing an example of the Google Kubernetes Engine architecture cluster.":::
 
@@ -139,9 +139,9 @@ The discovery process is based on snapshots taken at intervals:
 
 When you enable the agentless discovery for Kubernetes extension, the following process occurs:
 
- -  **Create**:
+ -  Create:
      -  The service account mdc-containers-k8s-operator is created. The name can be customized.
- -  **Assign**: Defender for Cloud attaches the following roles to the service account mdc-containers-k8s-operator:
+ -  Assign: Defender for Cloud attaches the following roles to the service account mdc-containers-k8s-operator:
      -  The custom role MDCGkeClusterWriteRole, which has the container.clusters.update permission
      -  The built-in role container.viewer
- -  **Discover**: Using the system assigned identity, Defender for Cloud performs a discovery of the GKE clusters in your environment using API calls to the API server of GKE.
+ -  Discover: Using the system assigned identity, Defender for Cloud performs a discovery of the GKE clusters in your environment using API calls to the API server of GKE.

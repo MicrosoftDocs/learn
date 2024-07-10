@@ -4,10 +4,12 @@ title: Assign data in Data Activator
 metadata:
   title: Assign data in Data Activator
   description: "Assign data in Data Activator"
-  ms.date: 03/18/2024
+  ms.date: 06/14/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/6-assign-data-objects-data-activator.md)]

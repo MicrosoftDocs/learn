@@ -1,13 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-event-streams-microsoft-fabric.exercise
-title: Exercise - Load data into a KQL database using Microsoft Fabric Eventstream
+title: Exercise - Load data into a KQL database using Microsoft Fabric event stream
 metadata:
-  title: Exercise - Load data into a KQL database using Microsoft Fabric Eventstream
-  description: "Exercise - Load data into a KQL database using Microsoft Fabric Eventstream"
-  ms.date: 11/01/2023
+  title: Exercise - Load data into a KQL database using Microsoft Fabric event stream
+  description: "Exercise - Load data into a KQL database using Microsoft Fabric event stream"
+  ms.date: 06/03/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise.md)]

@@ -4,12 +4,12 @@ title: Examine blameless retrospective
 metadata:
   title: Examine blameless retrospective
   description: "Examine blameless retrospective"
-  ms.date: 11/06/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/8-examine-blameless-retrospective.md)]

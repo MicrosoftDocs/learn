@@ -96,9 +96,9 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
 
 Build and start the web API by running the following command:
 
-    ```dotnetcli
-    dotnet run
-    ```
+```dotnetcli
+dotnet run
+```
 
 ### Test the controller with .http file
 

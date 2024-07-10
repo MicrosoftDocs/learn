@@ -1,6 +1,6 @@
-﻿Now that you've added issues and pull requests to your Project, it's time to organize to keep track of the great work you and your team are doing.
+﻿Now that you added issues and pull requests to your Project, it's time to organize to keep track of the great work you and your team are doing.
 
-In this unit, you'll learn:
+In this unit, you learn:
 
 - How to create a field to track and group by priority.
 - How to add an iteration field.
@@ -8,15 +8,15 @@ In this unit, you'll learn:
 
 ## How to create a field to track and group by priority
 
-To group a set of issues and pull requests by priority, you'll need to first create a new field.
+To group a set of issues and pull requests by priority, you need to first create a new field.
 
 1. First in the table view, in the rightmost field header, select **+**.
 1. Then, select **New field**.
 
-   :::image type="content" source="../media/4-project-new-field.png" alt-text="Screenshot of the top of a Project with the columns for Notes and Priority and the New Field Button as a plus sign highlighted.":::
+   :::image type="content" source="../media/4-project-new-field.png" alt-text="Screenshot of the top of a Project showing the columns for Notes and Priority. The New Field Button as a plus sign is highlighted.":::
 
-1. Next, type the name of your field; in this case, it'll be *Priority*.
-1. In the drop-down menu, select the **Single select** option. This allows you to create your own classification for your new field.
+1. Next, type the name of your field; in this case, it's *Priority*.
+1. In the drop-down menu, select the **Single select** option. This option allows you to create your own classification for your new field.
 
    :::image type="complex" border="false" source="../media/4-new-field-drop-down.png" alt-text="Screenshot of the drop-down menu for a New Field.":::
     Screenshot of the drop-down menu for a New Field that contains Text, Number, Date, Single select, and Iteration with the Single Select option highlighted.
@@ -25,7 +25,7 @@ To group a set of issues and pull requests by priority, you'll need to first cre
 1. In the **Options** text box, start to add your different priority levels. You can label them as **Urgent**, **High**, **Medium**, and **Low**.
 1. Select **Save**.
 
-Now that you have your priority classification set up, next up you'll need to classify your issues and pull requests based on priority. To do this, select the issue or pull request you want to classify in the field row titled **Priority**. Now, in the drop-down field, select the priority you want to choose for this particular issue or pull request.
+Now that you have your priority classification set up, you need to classify your issues and pull requests based on priority. To make a classification, select the issue or pull request you want to classify in the field row titled **Priority**. Now, in the drop-down field, select the priority you want to choose for this particular issue or pull request.
 
 Repeat for your remaining pull requests and issues.
 
@@ -51,7 +51,7 @@ If you want to save this view, select the **Save changes** button on the top-rig
 
 Adding an iteration field to your Project can help you and your team visualize the balance of upcoming work in order to help everyone stay on track. An iteration field enables you to set up phases for your tasks in a tangible timeframe to keep you and your team organized.
 
-1. To first add an interaction field, first go to the table view of your Project. In the rightmost field header, select **+**.
+1. To first add an iteration field, first go to the table view of your Project. In the rightmost field header, select **+**.
 1. Select **New field**.
 1. Type in the name of your iteration; for example, *Project Phase* or *Sprint*.
 
@@ -76,6 +76,6 @@ Let's walk through how to get your board view up and running.
 1. When you changed the layout, your Project displayed an indicator to show that the view was modified. Save this view by selecting the **Save changes** button to top-right of the board.
 1. Now, you can drag and drop issues and pull requests to the various columns.
 1. You can also rename the view by double-clicking on the view's tab and typing in the new name.
-1. Once you select out of the tab, the name of your new view will automatically save.
+1. Once you select out of the tab, the name of your new view is automatically saved.
 
-   :::image type="content" source="../media/4-project-boards.png" alt-text="Screenshot example of a Project board with 4 columns labeled; no status, todo, in-progress, done.":::
+   :::image type="content" source="../media/4-project-boards.png" alt-text="Screenshot example of a Project board with four columns labeled; no status, todo, in-progress, done.":::

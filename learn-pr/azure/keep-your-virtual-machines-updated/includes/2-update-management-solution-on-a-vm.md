@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This content references CentOS, a Linux distribution that is End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
+
 The Public Information Officer (PIO) in your department maintains a non-public-facing website for use by the local media. Your PIO uses a mobile device to update content on the media website so that local media outlets can stay informed about current events. To prevent unauthorized or incorrect information being presented to the media, this site must be as secure as possible. As the administrator, one approach you can take to improve security is to keep the site current with the latest updates.
 
 Here, we introduce the Update Management solution for Azure.

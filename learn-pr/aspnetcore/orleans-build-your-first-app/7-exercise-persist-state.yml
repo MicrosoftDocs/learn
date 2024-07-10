@@ -4,7 +4,7 @@ title: Exercise - Persist grain state
 metadata:
   title: Exercise - Persist grain state
   description: Learn how to persist state using Orleans grains.
-  ms.date: 10/11/2023
+  ms.date: 04/05/2024
   author: alexwolfmsft
   ms.author: alexwolf
   ms.topic: unit

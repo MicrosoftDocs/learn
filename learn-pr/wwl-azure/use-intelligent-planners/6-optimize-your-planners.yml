@@ -4,10 +4,12 @@ title: Optimize your planners
 metadata:
   title: Optimize your planners
   description: "Optimize your planners"
-  ms.date: 02/27/2024
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/6-optimize-your-planners.md)]

@@ -1,4 +1,3 @@
-
 The purpose of writing code is to ship enhancements to your software.
 
 A branching model that introduces too much process overhead doesn't help increase the speed of getting changes to customers—developing a branching model gives you enough padding not to ship poor-quality changes. But, at the same time doesn't introduce too many processes to slow you down.
@@ -22,6 +21,11 @@ Let's cover the principles of what we suggest:
      -  Use feature flags to manage long-running feature branches.
      -  Changes from feature branches to the main only flow through pull requests.
      -  Name your feature to reflect its purpose.
+ -  The release branch:
+     -  Create a dedicated release branch from a stable feature branch to prepare for deployment.
+     -  Ensure the release branch undergoes thorough testing and stabilization efforts.
+     -  Apply bug fixes and necessary changes to the release branch before deployment.
+     -  Tag releases in the release branch to mark significant milestones.
     
     List of branches:
     
@@ -51,7 +55,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
 ## How to do it
 
 > [!IMPORTANT]
-> You need to have the project created in the first Learning Path: [Describe working with Git locally](/training/modules/describe-types-of-source-control-systems/7-describe-working-git-locally).
+> You need to have the project created in the first Learning Path: [Describe working with Git locally](/learn/modules/describe-types-of-source-control-systems/7-describe-working-git-locally).
 
 1.  After you've cloned the main branch into a local repository, create a new feature branch, myFeature-1:
     
@@ -115,7 +119,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     **Output:**
     
-    *Delta compression using up to 8 threads. Compressing objects: 100% (3/3), done. Writing objects: 100% (3/3), 348 bytes \| 348.00 KiB/s, done. Total 3 (delta 2), reused 0 (delta 0) remote: Analyzing objects... (3/3) (10 ms) remote: Storing packfile... done (44 ms) remote: Storing index... done (62 ms) To https://dev.azure.com/Geeks/PartsUnlimited/\_git/MyWebApp \* \[new branch\] feature/myFeature-1 -&gt; feature/myFeature-1 Branch feature/myFeature-1 set up to track remote branch feature/myFeature-1 from origin.*
+    *Delta compression using up to 8 threads. Compressing objects: 100% (3/3), done. Writing objects: 100% (3/3), 348 bytes \| 348.00 KiB/s, done. Total 3 (delta 2), reused 0 (delta 0) remote: Analyzing objects... (3/3) (10 ms) remote: Storing packfile... done (44 ms) remote: Storing index... done (62 ms) To https://dev.azure.com/organization/teamproject/\_git/MyWebApp \* \[new branch\] feature/myFeature-1 -&gt; feature/myFeature-1 Branch feature/myFeature-1 set up to track remote branch feature/myFeature-1 from origin.*
     
     The remote shows the history of the changes:
     
@@ -159,7 +163,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     **Output:**
     
-    *Total 0 (delta 0), reused 0 (delta 0) To https://dev.azure.com/Geeks/PartsUnlimited/\_git/MyWebApp \* \[new branch\] origin/HEAD -&gt; refs/heads/feature/myFeature-2.*
+    *Total 0 (delta 0), reused 0 (delta 0) To `https://dev.azure.com/**organization**/**teamproject**/\_git/MyWebApp` \* \[new branch\] origin/HEAD -&gt; refs/heads/feature/myFeature-2.*
     
     ***myWebApp***
     
@@ -234,7 +238,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     **Output:**
     
-    *To https://dev.azure.com/Geeks/PartsUnlimited/\_git/MyWebApp \* \[new branch\] fof/bug-1 - fof/bug-1 Branch fof/bug-1 set up to track remote branch fof/bug-1 from origin.*
+    *To `https://dev.azure.com/**organization**/**teamproject**/\_git/MyWebApp` \* \[new branch\] fof/bug-1 - fof/bug-1 Branch fof/bug-1 set up to track remote branch fof/bug-1 from origin.*
 12. Immediately after the changes have been rolled out to production, tag the fof\\bug-1 branch with the release\_bug-1 tag, then raise a pull request to merge the changes from fof/bug-1 back into the main:
     
     ```CMD
@@ -263,6 +267,22 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     
     The user interface allows you to take the source, target, add custom changes, review, and submit the merge. With the changes merged, the pull request is completed.
+
+At this point, you can create a release branch based on the critical bug fix implemented in the **fof/bug-1** branch and merged into master. Using the git checkout command, create a dedicated release branch from the master branch.
+
+```CMD
+git checkout -b release/v1.1 main
+```
+
+This command creates a new branch named release/v1.1 based on the master branch.
+
+As significant milestones are reached during the release process, tag releases in the release branch using Git tags. Tags serve as markers to denote specific versions of the software.
+
+```CMD
+git tag -a v1.1 -m "Release version 1.1"
+```
+
+This command creates a tag named v1.1 to mark the release version 1.1 in the release branch.<br>
 
 ## How it works
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.boost-volunteer-retention
+title: Boost volunteer retention
+metadata:
+  title: Boost volunteer retention
+  description: This content is a part of the Enhance nonprofit volunteer management with Microsoft Copilot module.
+  ms.date: 6/14/2024
+  author: CourtneyHMicrosoft
+  ms.author: cohodge
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-boost-volunteer-retention.md)]

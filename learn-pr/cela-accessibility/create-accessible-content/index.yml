@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.cela-accessibility.create-accessible-content
+metadata:
+  title: Create accessible content
+  description: Learn the best practices, benefits, and principles of creating accessible content for diverse audiences and situations.
+  ms.date: 04/12/2024
+  author: erzelman
+  ms.author: erzelman 
+  ms.topic: module
+  ms.service: microsoft-365
+title: Create accessible content
+summary: This module explores benefits and principles of creating accessible content for diverse audiences and situations. Learn best practices to create accessible content in Microsoft 365. And learn how to check for accessibility issues and address them using the Accessibility Checker.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Identify best practices for creating accessible content in Microsoft 365. 
+  - Identify best practices for creating accessible emails in Microsoft Outlook.
+  - Recall how to check documents for accessibility with Accessibility Checker and Accessibility Assistant in Microsoft 365.
+  - Describe how multimedia can be made accessible for learners.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels: 
+- beginner
+roles:
+- administrator
+- student
+products:
+- m365
+subjects:
+- accessibility
+units:
+- learn.cela-accessibility.create-accessible-content.introduction
+- learn.cela-accessibility.create-accessible-content.titles-for-accessible-content
+- learn.cela-accessibility.create-accessible-content.create-accessible-images
+- learn.cela-accessibility.create-accessible-content.how-color-contrast-influences-accessibility
+- learn.cela-accessibility.create-accessible-content.accessible-multimedia
+- learn.cela-accessibility.create-accessible-content.make-more-accessible-content-with-less-effort
+- learn.cela-accessibility.create-accessible-content.knowledge-check
+- learn.cela-accessibility.create-accessible-content.summary
+badge:
+  uid: learn.cela-accessibility.create-accessible-content.badge

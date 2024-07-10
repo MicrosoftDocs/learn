@@ -17,9 +17,9 @@ To understand how you might delegate access governance in entitlement management
 
 As the IT administrator, Hana has contacts in each department--Mamta in Marketing, Mark in Finance, and Joe in Legal who are responsible for their department's resources and business critical content.
 
-With entitlement management, you can delegate access governance to these non-administrators because they're the ones who know which users need access, for how long, and to which resources. Delegating to non-administrators ensures the right people are managing access for their departments.<br>
+With entitlement management, you can delegate access governance to these non-administrators because they're the ones who know which users need access, for how long, and to which resources. Delegating to non-administrators ensures the right people are managing access for their departments.
 
-Here's one way that Hana could delegate access governance to the marketing, finance, and legal departments.<br>
+Here's one way that Hana could delegate access governance to the marketing, finance, and legal departments.
 
 1.  Hana creates a new Microsoft Entra security group, and adds Mamta, Mark, and Joe as members of the group.<br>
 2.  Hana adds that group to the catalog creators role.<br>
@@ -118,45 +118,52 @@ The following table lists some of the role combinations that include the actions
 | SharePoint Administrator           | Catalog owner                   |                            | ✔️                              |                   | ✔️                                 |
 | Application Administrator          | Catalog owner                   |                            |                                 | ✔️                |                                    |
 | Cloud Application Administrator    | Catalog owner                   |                            |                                 | ✔️                |                                    |
-| User                               | Catalog owner                   | Only if group owner        | Only if group owner             | Only if app owner |
+| User                               | Catalog owner                   | Only if group owner        | Only if group owner             | Only if app owner |                                    |
 
 ## Delegated management of guest user lifecycle
 
 Typically, a user in a role with Guest Inviter privileges can invite individual external users to an organization, and this setting can be changed using the external collaboration settings.
 
-For managing external collaboration, where the individual external users for a collaboration project may not be known in advance, assigning users who are working with external organizations into entitlement management roles can allow them to configure catalogs, access packages and policies for their external collaboration. These configurations allow the external users they are collaborating with to request and be added to your organization's directory and access packages.<br>
+For managing external collaboration, where the individual external users for a collaboration project may not be known in advance, assigning users who are working with external organizations into entitlement management roles can allow them to configure catalogs, access packages and policies for their external collaboration. These configurations allow the external users they're collaborating with to request and be added to your organization's directory and access packages.
 
  -  To allow users in external directories from connected organizations to be able to request access packages in a catalog, the catalog setting of **Enabled for external users** needs to be set to **Yes**. Changing this setting can be done by an administrator or a catalog owner of the catalog.<br>
  -  The access package must also have a policy set for users not in your directory. This policy can be created by an administrator, catalog owner or access package manager of the catalog.
- -  An access package with that policy will allow users in scope to be able to request access, including users not already in your directory. If their request is approved, or does not require approval, then the user will be automatically added to your directory.
- -  If the policy setting was for **All users**, and the user was not part of an existing connected organization, then a new proposed connected organization is automatically created. You can view the list of connected organizations and remove organizations that are no longer needed.
+ -  An access package with that policy will allow users in scope to be able to request access, including users not already in your directory. If their request is approved, or doesn't require approval, then the user will be automatically added to your directory.
+ -  If the policy setting was for **All users**, and the user wasn't part of an existing connected organization, then a new proposed connected organization is automatically created. You can view the list of connected organizations and remove organizations that are no longer needed.
 
 You can also configure what happens when an external user brought in by entitlement management loses their last assignment to any access packages. You can block them from signing in to this directory, or have their guest account removed, in the settings to manage the lifecycle of external users.
 
 ## Restricting delegated administrators from configuring policies for users not in directory
 
-You can prevent users who are not in administrative roles from inviting individual guests, in the external collaboration settings, by changing the **Guest invite settings** setting to specific admin roles, and have **Enable guest self-service sign up** set to **No**.
+You can prevent users who aren't in administrative roles from inviting individual guests, in the external collaboration settings, by changing the **Guest invite settings** setting to specific admin roles, and have **Enable guest self-service sign up** set to **No**.
 
-To prevent delegated users from configuring entitlement management to let external users request for external collaboration, then be sure to communicate this constraint to all global administrators, identity governance administrators, catalog creators, and catalog owners, as they are able to change catalogs, so that they do not inadvertently permit new collaboration in new or updated catalogs. They should ensure that catalogs are set with **Enabled for external users** to **No**, and do not have any access packages with policies for allowing a user not in the directory to request.<br>
+To prevent delegated users from configuring entitlement management to let external users request for external collaboration, then be sure to communicate this constraint to all global administrators, identity governance administrators, catalog creators, and catalog owners, as they're able to change catalogs, so that they do not inadvertently permit new collaboration in new or updated catalogs. They should ensure that catalogs are set with **Enabled for external users** to **No**, and do not have any access packages with policies for allowing a user not in the directory to request.
 
-You can view the list of catalogs currently enabled for external users in the Microsoft Entra admin center.<br>
+You can view the list of catalogs currently enabled for external users in the Microsoft Entra admin center.
 
-1. Sign in to the **Microsoft Entra admin center** as at least an **Identity Governance Administrator**.<br>
-
-2. Browse to **Identity governance**, **Entitlement management**, **Catalogs**.<br>
-
-3. Change the filter setting for **Enabled for external users** to **Yes**.<br>
-
-4. If any of those catalogs have a non-zero number of access packages, those access packages may have a policy for users not in directory.<br>
+1.  Sign in to the **Microsoft Entra admin center** as at least an **Identity Governance Administrator**.<br>
+2.  Browse to **Identity governance**, **Entitlement management**, **Catalogs**.<br>
+3.  Change the filter setting for **Enabled for external users** to **Yes**.<br>
+4.  If any of those catalogs have a non-zero number of access packages, those access packages may have a policy for users not in directory.<br>
 
 ## Manage role assignments to entitlement management roles programmatically
 
 You can also view and update catalog creators and entitlement management catalog-specific role assignments using Microsoft Graph. A user in an appropriate role with an application that has the delegated `EntitlementManagement.ReadWrite.All` permission can call the Graph API to **list the role definitions** of entitlement management, and **list role assignments** to those role definitions.
 
-For example, to view the entitlement management-specific roles that a particular user or group has been assigned, use the Graph query to list role assignments, and provide the user or group's ID as the value of the `principalId`query filter, as in<br>
+For example, to view the entitlement management-specific roles that a particular user or group has been assigned, use the Graph query to list role assignments, and provide the user or group's ID as the value of the `principalId`query filter, as in
 
 **HTTP**
 
-`GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq '10850a21-5283-41a6-9df3-3d90051dd111'&$expand=roleDefinition&$select=id,appScopeId,roleDefinition`
+```
+
+  
+   GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq '10850a21-5283-41a6-9df3-3d90051dd111'&$expand=roleDefinition&$select=id,appScopeId,roleDefinition">">
+  
+
+
+
+
+
+```
 
 For a role that is specific to a catalog, the `appScopeId` in the response indicates the catalog in which the user is assigned a role. This response only retrieves explicit assignments of that principal to role in entitlement management, it doesn't return results for a user who has access rights via a directory role, or through membership in a group assigned to a role.

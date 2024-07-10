@@ -19,6 +19,8 @@ Another scenario where you would use management groups is to provide user access
 
  -  10,000 management groups can be supported in a single directory.
  -  A management group tree can support up to six levels of depth.
+    
+    
      -  This limit doesn't include the Root level or the subscription level.
  -  Each management group and subscription can only support one parent.
  -  Each management group can have many children.
@@ -37,6 +39,8 @@ Each directory is given a single top-level management group called the root mana
  -  All resources in the directory fold up to the root management group for global management.
  -  New subscriptions are automatically defaulted to the root management group when created.
  -  All Azure customers can see the root management group, but not all customers have access to manage that root management group.
+    
+    
      -  Everyone who has access to a subscription can see the context of where that subscription is in the hierarchy.
      -  No one is given default access to the root management group. Microsoft Entra ID Global Administrators are the only users that can elevate themselves to gain access. Once they have access to the root management group, the global administrators can assign any Azure role to other users to manage it.
 
@@ -51,7 +55,7 @@ When any user starts using management groups, there's an initial setup process t
 
 Azure management groups support Azure role-based access control (Azure RBAC) for all resource accesses and role definitions. These permissions are inherited to child resources that exist in the hierarchy. Any Azure role can be assigned to a management group that will inherit down the hierarchy to the resources. For example, the Azure role VM contributor can be assigned to a management group. This role has no action on the management group but will inherit to all VMs under that management group.
 
-The following chart shows the list of roles and the supported actions on management groups.<br>
+The following chart shows the list of roles and the supported actions on management groups.
 
 | **Azure Role Name**         | **Create** | **Rename** | **Move\*\*** | **Delete** | **Assign Access** | **Assign Policy** | **Read** |
 | --------------------------- | ---------- | ---------- | ------------ | ---------- | ----------------- | ----------------- | -------- |
@@ -61,11 +65,11 @@ The following chart shows the list of roles and the supported actions on managem
 | Reader                      |            |            |              |            |                   |                   | X        |
 | MG Reader\*                 |            |            |              |            |                   |                   | X        |
 | Resource Policy Contributor |            |            |              |            |                   | X                 |          |
-| User Access Administrator   |            |            |              |            | X                 | X                 |
+| User Access Administrator   |            |            |              |            | X                 | X                 |          |
 
 \*: The **Management Group Contributor** and **Management Group Reader** roles allow users to perform those actions only on the management group scope.
 
-\*\*: Role assignments on the root management group aren't required to move a subscription or management group to and from it.<br>
+\*\*: Role assignments on the root management group aren't required to move a subscription or management group to and from it.
 
 ## Azure custom role definition and assignment
 
@@ -75,65 +79,7 @@ You can define a management group as an assignable scope in an Azure custom role
 
 Defining and creating a custom role doesn't change with the inclusion of management groups. Use the full path to define the management group **/providers/Microsoft.Management/managementgroups/\{groupId\}**.
 
-Use the management group's ID and not the management group's display name. This common error happens since both are custom-defined fields when creating a management group.<br>
-
-`JSON`
-
-`...`
-
-`{`
-
-`"Name": "MG Test Custom Role",`
-
-`"Id": "id",`
-
-`"IsCustom": true,`
-
-`"Description": "This role provides members understand custom roles.",`
-
-`"Actions": [`
-
-`"Microsoft.Management/managementgroups/delete",`
-
-`"Microsoft.Management/managementgroups/read",`
-
-`"Microsoft.Management/managementgroup/write",`
-
-`"Microsoft.Management/managementgroup/subscriptions/delete",`
-
-`"Microsoft.Management/managementgroup/subscriptions/write",`
-
-`"Microsoft.resources/subscriptions/read",`
-
-`"Microsoft.Authorization/policyAssignments/*",`
-
-`"Microsoft.Authorization/policyDefinitions/*",`
-
-`"Microsoft.Authorization/policySetDefinitions/*",`
-
-`"Microsoft.PolicyInsights/*",`
-
-`"Microsoft.Authorization/roleAssignments/*",`
-
-`"Microsoft.Authorization/roledefinitions/*"`
-
-`],`
-
-`"NotActions": [],`
-
-`"DataActions": [],`
-
-`"NotDataActions": [],`
-
-`"AssignableScopes": [`
-
-`"/providers/microsoft.management/managementGroups/ContosoCorporate"`
-
-`]`
-
-`}`
-
-`...`
+Use the management group's ID and not the management group's display name. This common error happens since both are custom-defined fields when creating a management group.
 
 ### Issues with breaking the role definition and assignment hierarchy path
 
@@ -172,10 +118,16 @@ To move a management group or subscription to be a child of another management g
 If you're doing the move action, you need:
 
  -  Management group write and role assignment write permissions on the child subscription or management group.
+    
+    
      -  Built-in role example: **Owner**
  -  Management group write access on the target parent management group.
+    
+    
      -  Built-in role example: **Owner**, **Contributor**, **Management Group Contributor**
  -  Management group write access on the existing parent management group.
+    
+    
      -  Built-in role example: **Owner**, **Contributor**, **Management Group Contributor**
 
 **Exception**: If the target or the existing parent management group is the root management group, the permissions requirements don't apply. Since the root management group is the default landing spot for all new management groups and subscriptions, you don't need permissions on it to move an item.

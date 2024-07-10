@@ -4,12 +4,12 @@ title: Denormalize aggregates in the same container
 metadata:
   title: Denormalize aggregates in the same container
   description: "Denormalize aggregates in the same container"
-  ms.date: 10/17/2022
+  ms.date: 04/16/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/5-denormalize-aggregates-same-container.md)]

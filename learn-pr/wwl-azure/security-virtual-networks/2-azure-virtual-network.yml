@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-virtual-networks.azure-virtual-network
+title: What is an Azure Virtual Network
+metadata:
+  title: What is an Azure Virtual Network
+  description: "What is an Azure Virtual Network"
+  ms.date: 07/04/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-azure-virtual-network.md)]

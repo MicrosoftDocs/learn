@@ -4,19 +4,8 @@ Before you can explore the end-to-end capabilities of Microsoft Fabric, it must 
 - *Power Platform admin*
 - *Microsoft 365 admin*
 
-Fabric can be enabled at the tenant level or capacity level, meaning that it can be enabled for the entire organization or for specific groups of users. If you don't have access to Fabric, contact your Fabric administrator to find out if it's available to you. Note that the Fabric administrator is a new role as of June 2023. This was formerly the Power BI administrator role.
+Fabric can be enabled at the tenant level or capacity level, meaning that it can be enabled for the entire organization or for specific groups of users. If you don't have access to Fabric, contact your Fabric administrator to find out if it's available to you. The Fabric administrator was formerly the Power BI administrator role.
 
-> [!IMPORTANT]
-> You'll need a trial license to use Fabric. See [Get a trial license](/fabric/get-started/fabric-trial) for more information.
-
-## Check your access
-
-If you'd like to check to see if you have access to Fabric in your organization's tenant, sign-in to Power BI and look for the **Power BI icon** in the bottom of the left navigation pane. If you see the Power BI icon, select to see the experiences available within Fabric. If the icon isn't present, Fabric is not available to you.
-
-![Screenshot of Power BI interface with the Power BI icon highlighted in the bottom left corner of the user interface.](../media/check-fabric-access.png)
-
-> [!NOTE]
-> To find out if Fabric is available to you, contact your Fabric administrator. For more information about how admins can enable Fabric, see [Enable Microsoft Fabric for your organization](/fabric/admin/fabric-switch).
 
 ## Enable Microsoft Fabric
 
@@ -26,27 +15,28 @@ Admins can make Fabric available to either the entire organization or specific g
 
 ![Screenshot of the Enable Fabric settings in the Fabric admin portal, with the option toggled to enabled for specific security groups.](../media/enable-fabric.png)
 
+> [!NOTE]
+> If your organization isn't using Fabric or Power BI today, you can sign up for a [free Fabric trial](/fabric/get-started/fabric-trial) to explore the different workloads.
+
 ## Create Fabric enabled workspaces
 
-All Fabric items (lakehouses, notebooks, pipelines, etc.) are stored in OneLake and accessed via Fabric workspaces.
+All Fabric items (lakehouses, notebooks, pipelines, etc.) are stored in OneLake and accessed via Fabric workspaces. To enable Fabric in a workspace, choose a Trial or Fabric Capacity license mode.
 
-Workspaces must be in Premium capacity to use Fabric. If you don't have access to Premium capacity, you aren't able to use Fabric. Select **Trial** in the **Premium capacity settings** section of the **Workspace settings** page to enable Premium capacity for your workspace.
-
-![Screenshot of the Power BI workspace settings.](../media/workspace-settings.png)
+![Screenshot of the workspace license mode options including Trial and Fabric Capacity.](../media/workspace-settings-license.png)
 
 > [!NOTE]
-> For more information on enabling Premium capacity in a workspace, see [Premium capacity settings](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings).
+> For more information on enabling Premium capacity in a workspace, see [Fabric capacity settings](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings).
 
-## Create resources in Fabric
+## Create items in Fabric
 
-After you've created your Fabric enabled workspace, you can start creating resources in Fabric. You can create resources in Fabric using the **Create** menu in the upper left corner of the Power BI service.
+After you create your Fabric enabled workspace, you can start creating items in Fabric. You can create items in Fabric using the **Create** menu in the upper left corner of the Power BI service.
 
 ![Screenshot of the Power BI service with the Create menu highlighted in the upper left corner of the user interface.](../media/fabric-create.png)
 
-## Explore Fabric experiences
+## Explore Fabric workloads
 
-Fabric experiences refer to the different capabilities included in Fabric. You can switch between experiences using the experience switcher in the bottom left corner of the navigation pane.
+Fabric workloads refer to the different capabilities included in Fabric. You can switch between workloads using the workload switcher in the bottom left corner of the navigation pane.
 
-![Screenshot of the Fabric experience switcher, featuring the experience Data engineering, Data factory, Data science, Data warehousing, real-time analytics, and Power BI.](../media/check-fabric-access.png)
+![Screenshot of the Fabric workload switcher, featuring Data engineering, Data factory, Data science, Data warehousing, real-time intelligence, and Power BI workloads.](../media/workspace-switcher.png)
 
-You may notice that Fabric experiences look similar to other Microsoft data offerings. Fabric is built on Power BI and Azure Data Lake Storage, and includes capabilities from Azure Synapse Analytics, Azure Data Factory, Azure Databricks, and Azure Machine Learning. What makes Fabric unique is that it brings these capabilities together in a single, SaaS, integrated experience without the need for access to Azure resources.
+You may notice that Fabric workloads look similar to other Microsoft data offerings. Fabric is built on Power BI and Azure Data Lake Storage, and includes capabilities from Azure Synapse Analytics, Azure Data Factory, Azure Databricks, and Azure Machine Learning. What makes Fabric unique is that it brings these capabilities together in a single, SaaS integrated experience without the need for access to Azure resources.

@@ -109,11 +109,11 @@ This is a privileged role. Users in this role can create application registratio
 | microsoft.directory/oAuth2PermissionGrants/createAsOwner | Create OAuth 2.0 permission grants, with creator as the first owner<br>\[**PRIVILEGED**\] |
 | microsoft.directory/servicePrincipals/createAsOwner      | Create service principals, with creator as the first owner                                |
 
-## **Attribute Assignment Administrator**
+## Attribute Assignment Administrator
 
 Users with this role can assign and remove custom security attribute keys and values for supported Microsoft Entra objects such as users, service principals, and devices.
 
-By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes. To work with custom security attributes, you must be assigned one of the custom security attribute roles.<br>
+By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes. To work with custom security attributes, you must be assigned one of the custom security attribute roles.
 
 | **Actions**                                                                | **Description**                                                                |
 | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
@@ -158,7 +158,7 @@ By default, Global Administrator and other administrator roles do not have permi
 
 Users with this role can read the definition of custom security attributes.
 
-By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes. To work with custom security attributes, you must be assigned one of the custom security attribu<br>
+By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes. To work with custom security attributes, you must be assigned one of the custom security attribu
 
 | **Actions**                                                               | **Description**                                              |
 | ------------------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -175,7 +175,7 @@ Assign the Attribute Log Reader role to users who need to do the following tasks
 
 Users with this role **cannot** read audit logs for other events.
 
-By default, Global Administrator and other administrator roles do not have permissions to read audit logs for custom security attributes. To read audit logs for custom security attributes, you must be assigned this role or the Attribute Log Reader role.<br>
+By default, Global Administrator and other administrator roles do not have permissions to read audit logs for custom security attributes. To read audit logs for custom security attributes, you must be assigned this role or the Attribute Log Reader role.
 
 | **Actions**                                                                                  | **Description**                                                         |
 | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |

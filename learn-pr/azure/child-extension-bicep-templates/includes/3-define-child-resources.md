@@ -78,7 +78,7 @@ To resolve this situation, you could manually tell Bicep about the dependency by
 You start creating a child resource ID by including its parent's resource ID and then appending the child resource type and name. For example, let's consider an Azure Cosmos DB account named `toyrnd`. The Azure Cosmos DB resource provider exposes a type called `databaseAccounts`, which is the parent resource you deploy:
 
 ```
-/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyDevelopment/providers/Microsoft.DocumentDB/databaseAccounts/toyrnd
+/subscriptions/A123b4567c-1234-1a2b-2b1a-1234abc12345/resourceGroups/ToyDevelopment/providers/Microsoft.DocumentDB/databaseAccounts/toyrnd
 ```
 
 Here's a visual depiction of the same resource ID:
@@ -88,7 +88,7 @@ Here's a visual depiction of the same resource ID:
 If we add a database to this account, we can use the `sqlDatabases` child resource type. Let's add a database named `FlightTests` to our Azure Cosmos DB account and take a look at the child resource ID:
 
 ```
-/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyDevelopment/providers/Microsoft.DocumentDB/databaseAccounts/toyrnd/sqlDatabases/FlightTests
+/subscriptions/A123b4567c-1234-1a2b-2b1a-1234abc12345/resourceGroups/ToyDevelopment/providers/Microsoft.DocumentDB/databaseAccounts/toyrnd/sqlDatabases/FlightTests
 ```
 
 Here's a visual representation:
@@ -98,7 +98,7 @@ Here's a visual representation:
 You can have multiple levels of child resources. Here's an example resource ID that shows a storage account with two levels of children:
 
 ```
-/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyDevelopment/providers/Microsoft.Storage/storageAccounts/secrettoys/blobServices/default/containers/glitterspecs
+/subscriptions/A123b4567c-1234-1a2b-2b1a-1234abc12345/resourceGroups/ToyDevelopment/providers/Microsoft.Storage/storageAccounts/secrettoys/blobServices/default/containers/glitterspecs
 ```
 
 Here's a visual representation of the same resource ID:

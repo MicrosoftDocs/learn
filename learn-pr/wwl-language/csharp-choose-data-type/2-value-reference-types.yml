@@ -4,12 +4,11 @@ title: Discover value types and reference types
 metadata:
   title: Discover value types and reference types
   description: "Learn about data types, and how data and data types work in C# and .NET."
-  ms.date: 03/21/2024
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.custom: N/A, devx-track-dotnet
 durationInMinutes: 8
 content: |
   [!include[](includes/2-value-reference-types.md)]
