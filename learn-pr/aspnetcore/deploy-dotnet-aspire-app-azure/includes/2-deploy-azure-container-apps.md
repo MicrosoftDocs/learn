@@ -50,7 +50,7 @@ To start the publishing wizard, in **Solution Explorer** right-click the **AppHo
 - **Location**: Choose the Azure region where you want to host the app.
 - **Environment name**: All the resources the wizard creates in Azure have names based on this value.
 
-:::image type="content" source="../media/deploy-aca-visual-studio.png" lightbox="../media/deploy-aca-visual-studio.png" alt-text="Screenshot showing the configuration page of the .NET Aspire deployment wizard in Visual Studio.":::
+:::image type="content" source="../media/deploy-container-visual-studio.png" lightbox="../media/deploy-container-visual-studio.png" alt-text="Screenshot showing the configuration page of the .NET Aspire deployment wizard in Visual Studio.":::
 
 > [!NOTE]
 > You'll deploy an app to Azure Container Apps in the exercise later in this module.

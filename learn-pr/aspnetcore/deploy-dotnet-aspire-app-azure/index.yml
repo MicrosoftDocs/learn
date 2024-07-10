@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.deploy-dotnet-aspire-app-azure
 metadata:
-  title: Deploy a .NET Aspire Solution to Azure
+  title: Deploy a .NET Aspire solution to Azure
   description: In this module, you'll learn how to deploy a .NET Aspire solution to testing, staging, and production environments.
   author: camsoper
   ms.author: casoper
@@ -9,7 +9,7 @@ metadata:
   ms.service: dotnet-aspire
   ms.custom:
   - team=cloud_advocates
-title: Deploy a .NET Aspire App to Azure
+title: Deploy a .NET Aspire solution to Azure
 summary: Learn how to deploy a .NET Aspire solution to container host services, such as Azure Container Apps (ACA) and Azure Kubernetes Services (AKS). Integrate .NET Aspire solution deployment with Continuous Integration/Continuous Deployment (CI/CD) pipelines.
 abstract: |
   By the end of this module, you'll be able to:
