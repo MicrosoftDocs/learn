@@ -41913,6 +41913,11 @@
       "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/5-manage-diagnostic-logging.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/6-exercise-monitor-cognitive-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
     }
   ]
 }
