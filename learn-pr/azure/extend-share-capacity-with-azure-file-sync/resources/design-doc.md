@@ -168,7 +168,7 @@ Identify the subtasks of *Extend your on-premises file share capacity by using A
 
 ## Resources
 Related links for Azure File Sync:
-- http://learn.microsoft.com/azure/storage/files/storage-sync-files-planning
+- https://learn.microsoft.com/azure/storage/files/storage-sync-files-planning
 - https://learn.microsoft.com/azure/storage/files/storage-sync-files-deployment-guide?tabs=azure-portal
 - https://learn.microsoft.com/azure/storage/files/storage-sync-files-extend-servers
 - https://learn.microsoft.com/azure/storage/files/storage-sync-files-troubleshoot

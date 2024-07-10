@@ -41648,6 +41648,52 @@
       "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/8-summary.yml",
       "redirect_url": "/training/modules/cloud-adoption-framework-migrate/7-summary",
       "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/1-introduction.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/2-introduction-to-azure-object-anchors-run-time-sdk.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/3-exercise-create-object-anchors-account-retrieve-id-key.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/4-exercise-convert-upload-3d-model-to-hololens-2.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/5-exercise-detect-object-in-physical-world-with-sample-project.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/6-best-practices.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/7-knowledge-check.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/8-summary.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/index.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/index.md",
@@ -41857,6 +41903,161 @@
     {
       "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/4-text-to-speech.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/develop-decision-support/index.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/4-exercise-use-container.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/2-understand-containers.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/3-use-cognitive-services-container.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/3-create-alerts.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/5-manage-diagnostic-logging.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/6-exercise-monitor-cognitive-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/2-monitor-cost.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/4-view-metrics.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/5-exercise-create.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/3-process-predictions.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/2-understand-capabilities-of-language-service.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/4-exercise-secure-cognitive-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/3-implement-network-security.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/2-authentication.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
       "redirect_document_id": false
     }
   ]
