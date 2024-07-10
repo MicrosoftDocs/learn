@@ -41858,6 +41858,11 @@
       "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/4-text-to-speech.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/develop-decision-support/index.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
     }
   ]
 }
