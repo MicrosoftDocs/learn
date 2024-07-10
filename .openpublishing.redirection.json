@@ -41973,6 +41973,11 @@
       "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/7-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/2-understand-capabilities-of-language-service.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
     }
   ]
 }
