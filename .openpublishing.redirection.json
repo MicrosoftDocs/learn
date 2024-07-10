@@ -41878,6 +41878,11 @@
       "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
+      "redirect_document_id": false
     }
   ]
 }
