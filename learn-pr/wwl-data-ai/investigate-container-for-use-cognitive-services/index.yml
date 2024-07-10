@@ -37,6 +37,5 @@ subjects:
 units:
 - learn.wwl.investigate-container-for-use-with-cognitive-services.understand-containers
 - learn.wwl.investigate-container-for-use-with-cognitive-services.use-cognitive-services-containers
-- learn.wwl.investigate-container-for-use-with-cognitive-services.summary
 badge:
   uid: learn.wwl.investigate-container-for-use-with-cognitive-services.badge
