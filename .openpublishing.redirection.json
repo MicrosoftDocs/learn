@@ -41968,6 +41968,11 @@
       "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/3-process-predictions.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
     }
   ]
 }
