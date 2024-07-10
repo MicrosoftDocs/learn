@@ -41938,6 +41938,11 @@
       "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/8-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/4-view-metrics.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
     }
   ]
 }
