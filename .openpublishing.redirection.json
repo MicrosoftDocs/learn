@@ -41928,6 +41928,11 @@
       "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/7-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/2-monitor-cost.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
     }
   ]
 }
