@@ -1,6 +1,6 @@
 All cloud functions are provided by someone during every cloud adoption effort. These assignments and team structures can develop organically, or an organization can intentionally design them to match a defined team structure. 
 
-It's important for cloud implementation teams to understand team structures, where they are today, and where they want to end up. Again, this type of change takes time, experimentation, and negotiation. Getting there will be a journey.
+It's important for cloud implementation teams to understand where their team structures are today, and where they want them to end up. Again, this type of change is a journey that takes time, experimentation, and negotiation.
 
 Watch this video to get an overview of common team structures at various stages of organizational maturity:
 
@@ -49,7 +49,7 @@ The following sections describe a fully staffed, proven organizational structure
 
 ## Central IT team
 
-As adoption scales, the cloud governance team might struggle to keep pace with the flow of innovation from multiple cloud adoption teams. This is especially true in environments that have heavy compliance, operations, or security requirements.
+As adoption scales, the cloud governance team might struggle to keep pace with the flow of innovation from multiple cloud adoption teams. Especially in environments with heavy compliance, operations, or security requirements.
 
 At this stage, it's common for companies to shift cloud responsibilities to an existing central IT team. If that team can reassess tools, processes, and people to better support cloud adoption at scale, then it can add significant value. Subject matter experts from operations, automation, security, and administration can drive effective operational innovations to modernize the central IT team.
 
@@ -59,7 +59,7 @@ Unfortunately, the central IT team can bring one of the riskiest phases of organ
 
 Some central IT teams spend months or even years trying to force the cloud into alignment with on-premises approaches, with only negative results. The cloud doesn't require everything to change within the central IT team, but it does require significant change. If the central IT team is resistant to change, this phase of maturity can quickly become a cultural antipattern.
 
-Cloud adoption plans that are heavily focused on platform as a service (PaaS), DevOps, or other solutions that require less operations support are less likely to see value during this phase of maturity. These types of solutions are the most likely to be hindered or blocked when attempting to centralize IT.
+Cloud adoption plans that are heavily focused on platform as a service (PaaS), DevOps, or other solutions that require less support for operations are less likely to see value during this phase of maturity. These types of solutions are the most likely to be hindered or blocked when attempting to centralize IT.
 
 A higher level of maturity, like a CCoE, is more likely to yield positive results for those types of transformational efforts. To understand the differences between centralized IT in the cloud and a CCoE, see [Cloud center of excellence](/azure/cloud-adoption-framework/organize/cloud-center-of-excellence).
 

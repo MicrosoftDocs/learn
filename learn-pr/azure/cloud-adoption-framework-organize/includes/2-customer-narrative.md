@@ -1,6 +1,6 @@
 Earlier Microsoft Learn modules for the Cloud Adoption Framework shared the narrative of Tailwind Traders. This module is the next step toward Tailwind's cloud adoption journey. The company is evaluating how its organizational structure should evolve as it undergoes a paradigm shift within its IT operations.
 
-The Tailwind Traders IT team continues to move away from its on-premises datacenters toward the cloud. When IT was largely contained within its own datacenter, the team focused on enforcing control. A datacenter is only as smart as what an organization invests in it, so automation occurred only at rudimentary levels. Too much human action was required to create controls and maintain the central responsibility structure.
+The Tailwind Traders IT team continues to move away from its on-premises datacenters toward the cloud. The team focused on enforcing control when IT was largely contained within its own datacenter. However, a datacenter is only as smart as what an organization invests in it, so automation occurred only at rudimentary levels. Too much human action was required to create controls and maintain the central responsibility structure.
 
 :::image type="content" source="../media/paradigm-shift.png" alt-text="Illustration that contrasts central responsibility and delegated responsibility." border="false":::
 

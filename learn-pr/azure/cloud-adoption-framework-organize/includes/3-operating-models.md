@@ -19,9 +19,9 @@ The following resources could provide the skills for centralized IT functions:
 
 ## Central IT team risks
 
-Centralized IT became prevalent when all IT assets could be housed in few locations, managed by a few teams, and controlled through a single platform for operations management. Global business practices and the digital economy have largely reduced those centrally managed environments.
+Centralized IT became prevalent when all IT assets could be housed in a few locations, managed by a few teams, and controlled through a single platform for operations management. Over time, Global business practices and the digital economy reduced the number of centrally managed environments.
 
-In the modern view of IT, assets are globally distributed. Responsibilities are delegated. A mixture of internal staff, managed service providers, and cloud providers, deliver operations management.
+In the modern view of IT, assets are globally distributed. Operational responsibilities are delegated to a combination of internal staff, managed service providers, and cloud providers, who deliver operations management.
 
 In the digital economy, IT management practices are transitioning to a model of self-service and delegated control with clear guardrails to enforce governance. A central IT team can be a valuable contributor to cloud adoption by becoming a cloud broker and a partner for innovation and business agility.
 
@@ -53,7 +53,7 @@ A CCoE model requires collaboration between each of the following resources:
 
 ## Impact
 
-When a CCoE model is properly structured and supported, the participants can accelerate innovation and migration efforts while increasing business agility and reducing the overall cost of change. When this model is successfully implemented, it can noticeably reduce time to market.
+When a CCoE model is properly structured and supported, the participants can accelerate innovation and migration efforts. They can also increase business agility and reduce the overall cost of change. When this model is successfully implemented, it can noticeably reduce time to market.
 
 As team practices mature, quality indicators like reliability, performance efficiency, security, maintainability, and customer satisfaction improve. These gains are especially vital if the company plans to implement large-scale cloud migration efforts or wants to use the cloud to drive innovations associated with market differentiation.
 
@@ -67,7 +67,7 @@ The main duty of the CCoE team is to accelerate cloud adoption through cloud-nat
 
 The objective of the CCoE is to:
 
-- Help build a modern IT organization through agile approaches to capture and implement business requirements.
+- Help build a modern IT organization through agile approaches that captures and implements business requirements.
 - Use reusable deployment packages that align with security, compliance, and management policies.
 - Maintain a functional Azure platform in alignment with operational procedures.
 - Review and approve the use of cloud-native tools.
