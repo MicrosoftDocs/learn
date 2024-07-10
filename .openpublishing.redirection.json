@@ -42008,6 +42008,11 @@
       "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/5-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
+      "redirect_document_id": false
     }
   ]
 }
