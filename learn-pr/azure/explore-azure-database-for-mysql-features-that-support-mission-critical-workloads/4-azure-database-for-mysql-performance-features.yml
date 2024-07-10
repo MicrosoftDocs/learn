@@ -11,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-azure-database-for-mysql-flexible-server-performance-features.md)]
+  [!include[](includes/4-azure-database-for-mysql-performance-features.md)]

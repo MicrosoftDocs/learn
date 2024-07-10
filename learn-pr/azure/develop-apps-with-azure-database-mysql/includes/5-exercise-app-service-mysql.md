@@ -1,4 +1,5 @@
 In this unit, you build and deploy a sample PHP app to Azure App Service, and integrate it with Azure Database for MySQL - Flexible Server on the back end.
+
 ## STEP 1 - Create an Azure Database for MySQL flexible server
 
 First, you'll provision a MySQL flexible server with public access connectivity, configure firewall rules to allow the app to access the server, and create a production database.
@@ -77,7 +78,8 @@ For this exercise, you'll use a sample PHP app that displays and manages a produ
 
 You'll directly clone the coded app and learn how to deploy it on Azure App Service.
 
-**Note:** To learn more about the app code, go ahead and explore the app in the [GitHub repository](https://github.com/Azure-Samples/php-mysql-app-service)!
+> [!NOTE]
+> To learn more about the app code, go ahead and explore the app in the [GitHub repository](https://github.com/Azure-Samples/php-mysql-app-service)!
 
 1. To clone the sample app repository and change to the repository root, run the following commands:
 

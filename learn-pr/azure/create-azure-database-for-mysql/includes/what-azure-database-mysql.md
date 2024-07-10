@@ -84,7 +84,7 @@ The same-zone high availability model situates both the primary database and its
 
 #### Business continuity
 
-Azure Database for MySQL - Flexible Server automatically creates point-in-time backups of its databases and retains them in the locally redundant storage for up to 35 days, or up to 10 years when using long-term retention. When configuring backup, you can choose either locally-redundant, zone-redundant, or geo-redundant backups, which allows you to recover from an outage affecting an entire Azure region. Additionally, you can perform on-demand backups at any time to create a backup snapshot outside the regular backup schedule.
+Azure Database for MySQL - Flexible Server automatically creates point-in-time backups of its databases and retains them in the locally redundant storage for up to 35 days, or up to 10 years when using long-term retention. When configuring backup, you can choose either locally redundant, zone-redundant, or geo-redundant backups, which allows you to recover from an outage affecting an entire Azure region. Additionally, you can perform on-demand backups at any time to create a backup snapshot outside the regular backup schedule.
 
 Azure Database for MySQL also supports managed maintenance windows, intended for automated server patching, which facilitates business continuity. By specifying a custom patching schedule, you can minimize the effect of a temporary downtime resulting from the server restart.
 
