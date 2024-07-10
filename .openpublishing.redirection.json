@@ -41863,6 +41863,11 @@
       "source_path": "learn-pr/paths/develop-decision-support/index.md",
       "redirect_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
+      "redirect_document_id": false
     }
   ]
 }
