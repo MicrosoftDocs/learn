@@ -33,7 +33,6 @@ subjects:
 - cloud-computing
 units:
 - learn.wwl.publish-use-language-understand-app.understand-capabilities-of-language-service
-- learn.wwl.publish-use-language-understand-app.process-predictions
 - learn.wwl.publish-use-language-understand-app.summary
 badge:
   uid: learn.wwl.publish-use-language-understand-app.badge
