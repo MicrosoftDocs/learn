@@ -41983,6 +41983,11 @@
       "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/4-exercise-secure-cognitive-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
+      "redirect_document_id": false
     }
   ]
 }
