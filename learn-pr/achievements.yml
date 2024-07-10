@@ -3683,3 +3683,8 @@ achievements:
   title: Develop decision support solutions with Azure AI Services
   summary: Decision support helps automate decision making by providing recommendations to users. Azure AI Services includes multiple services that support common decision support scenarios.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.investigate-container-for-use-with-cognitive-services.badge
+  type: badge
+  title: Deploy Azure AI services in containers
+  summary: Learn about Container support in Azure AI Services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
+  iconUrl: /training/achievements/investigate-container-for-use-with-cognitive-services.svg
