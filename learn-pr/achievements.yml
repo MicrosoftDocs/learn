@@ -3698,3 +3698,8 @@ achievements:
   title: Develop an app with Azure AI Language
   summary: After creating an Azure AI Language Understanding model, you can publish it and consume it from client applications.
   iconUrl: /training/achievements/publish-use-language-understand-app.svg
+- uid: learn.wwl.secure-cognitive-services.badge
+  type: badge
+  title: Secure Azure AI Services
+  summary: Securing Azure AI Services can help prevent data loss and privacy violations for user data that may be a part of the solution.
+  iconUrl: /training/achievements/secure-cognitive-services.svg
