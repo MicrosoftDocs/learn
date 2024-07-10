@@ -35,7 +35,7 @@ units:
 - learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.migration-phases-considerations
 - learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.explore-migration-tool-options
 - learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.decide-the-migration-approach-and-tool
-- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.exercise-use-azure-database-for-mysql-import-cli-from-on-premises
+- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.exercise-azure-database-for-mysql-import-cli-from-on-premises
 - learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.knowledge-check
 - learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.summary
 badge:

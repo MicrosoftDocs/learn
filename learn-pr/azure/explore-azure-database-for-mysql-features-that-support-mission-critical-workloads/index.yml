@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads
+uid: implement-azure-database-for-mysql-features-support-mission-critical-workloads
 
 metadata:
   title: "Explore Azure Database for MySQL - Flexible Server features that support mission-critical workloads"
@@ -35,11 +35,11 @@ products:
 subjects:
 - databases
 units:
-- learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads.introduction
-- learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads.networking-security-features
-- learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads.business-continuity-and-disaster-recovery-options
-- learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads.azure-database-for-mysql-performance-features
-- learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads.knowledge-check
-- learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads.summary
+- implement-azure-database-for-mysql-features-support-mission-critical-workloads.introduction
+- implement-azure-database-for-mysql-features-support-mission-critical-workloads.describe-security-features
+- implement-azure-database-for-mysql-features-support-mission-critical-workloads.business-continuity-disaster-recovery-options
+- implement-azure-database-for-mysql-features-support-mission-critical-workloads.azure-database-for-mysql-performance-features
+- implement-azure-database-for-mysql-features-support-mission-critical-workloads.knowledge-check
+- implement-azure-database-for-mysql-features-support-mission-critical-workloads.summary
 badge:
-  uid: learn.explore-azure-database-for-mysql-features-that-support-mission-critical-workloads.badge
+  uid: implement-azure-database-for-mysql-features-support-mission-critical-workloads.badge

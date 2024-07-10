@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.exercise-use-azure-database-for-mysql-import-cli-from-onprem-mysql
+uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.exercise-use-azure-database-for-mysql-import-cli-from-on-premises
 title: "Exercise: Use the Azure Database for MySQL import CLI from an on-premises MySQL"
 metadata:
   title: "Exercise: Use the Azure Database for MySQL import CLI from an on-premises MySQL"
@@ -11,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 20
 content: |
-  [!include[](includes/5-exercise-use-azure-database-for-mysql-import-cli-from-on-premises.md)]
+  [!include[](includes/5-exercise-azure-database-for-mysql-import-cli-from-on-premises.md)]
