@@ -21,26 +21,26 @@ A personal area network (PAN) provides networking needs around an individual. An
 
 ### What is a local area network?
 
-A local area network (LAN) provides networking needs around a single location. This location might be an organization's office, a school, a university, a hospital, an airport, and many others. Typically, a LAN is privately owned and needs authentication and authorization to access. Of the different classifications of a network, a LAN is by far the most commonly used.
+A local area network (LAN) provides networking needs around a single location, such as an office, a school, a university, a hospital, or an airport. Typically, a LAN is privately owned and requires authentication and authorization to access. Of the different classifications of a network, a LAN is by far the most commonly used.
 
 ### What is a metropolitan area network?
 
 :::image type="content" source="../media/2-man-diagram.svg" alt-text="Diagram of a metropolitan area network.":::
 
-A metropolitan area network (MAN) provides networking capabilities between two different locations within a city or metropolitan area to provide a single extensive network. Typically, a MAN requires a dedicated and secure connection between each LAN joined to the MAN.
+A metropolitan area network (MAN) provides networking capabilities between different locations within a city or metropolitan area to provide a single extensive network. Typically, a MAN requires a dedicated and secure connection between each LAN joined to the MAN.
 
 ### What is a wide area network?
 
-A wide area network (WAN) provides networking capabilities between two different geographical locations locally or worldwide. For example, a WAN is used to connect an organization's head office with branch offices all over the region. A WAN links multiple LANs together to create one super network. With a WAN, you use a virtual private network (VPN) to manage the connection between different LANs.
+A wide area network (WAN) provides networking capabilities between different geographical locations locally or worldwide. For example, a WAN is used to connect an organization's head office with branch offices all over the region. A WAN links multiple LANs together to create one super network. With a WAN, you use a virtual private network (VPN) to manage the connection between different LANs.
 
 ### Differences between LAN and WAN networks
 
-Several aspects set a LAN apart from a WAN. Knowing these items makes it easier to plan the services to deploy across these networks.
+Several things set a LAN apart from a WAN. Knowing these differences makes it easier to plan the services to deploy across these networks.
 
 | LAN | WAN |
 | --- | --- |
 | A LAN is a privately operated network typically contained in a single building. | A WAN is used to connect geographically separate offices to each other. Multiple organizations might operate WANs. |
-| A LAN operates at speeds of 10 Gbps or higher. | A WAN typically operates at speeds of less than 1 Gbps. |
+| A LAN operates at speeds of 10 Gbps or faster. | A WAN typically operates at speeds of less than 1 Gbps. |
 | A LAN is less congested compared to other network types. | A WAN is more congested compared to other network types. |
 | A LAN can be managed and administrated in-house. | A WAN typically requires the use of a third party to configure and set up, which increases cost. |
 
@@ -57,7 +57,7 @@ A network topology describes the physical composition of a network. Let's look a
 
 :::image type="content" source="../media/2-bus-network.svg" alt-text="A diagram of a bus topology showing five nodes connected to a single network segment.":::
 
-In a bus topology, each network device is connected to a single network cable. Even though it's the simplest type of network to implement, it has limitations. The first limitation is the length of the main cable or bus. The longer it gets, the higher the chance of signal dropout. This limitation constrains the physical layout of the network. All devices have to be physically located near each other; for example, in the same room. Finally, if there's a break in the bus cable, the whole network fails.
+In a bus topology, each network device is connected to a single network cable. Even though it's the simplest type of network to implement, it has limitations. The first limitation is the length of the main cable or bus. The longer it gets, the higher the chance of signal dropout. This limitation constrains the physical layout of the network. All devices must be physically located near each other, for example, in the same room. Finally, if there's a break in the bus cable, the whole network fails.
 
 ### Ring topology
 
@@ -83,7 +83,7 @@ The star topology is the most commonly used network topology. Each network devic
 
 ## Ethernet
 
-Ethernet is a networking standard that's synonymous with wire-based LAN networks, and also used in MAN and WAN networks. Ethernet replaces other wired LAN technologies like ARCNET and Token Ring, and is an industry standard.
+Ethernet is a networking standard that's synonymous with wire-based LAN networks, and is also used in MAN and WAN networks. Ethernet replaces other wired LAN technologies like ARCNET and Token Ring, and is an industry standard.
 
 While Ethernet is associated with wired networks, keep in mind that it isn't limited to wire, because it's used over fiber-optic links as well.
 
@@ -99,11 +99,11 @@ Fast Ethernet (IEEE 802.3u) was developed to support data transmission speeds of
 
 ### Gigabit Ethernet
 
-Gigabit Ethernet (IEEE 802.3ab) was developed to support faster communication networks that can support services like streaming multimedia and Voice over IP (VoIP). The 1000BASE-T standard runs 10 times faster than the 100BASE-TX standard. Gigabit Ethernet is now included in the 802.3 standards, and recommended for enterprise networks. The new standard is backward compatible with the 100BASE-T and the older 10BASE-T standards.
+Gigabit Ethernet (IEEE 802.3ab) was developed to support faster communication networks that can support services like streaming multimedia and Voice over IP (VoIP). The 1000BASE-T standard runs 10 times faster than the 100BASE-TX standard. Gigabit Ethernet is now included in the 802.3 standards, and is recommended for enterprise networks. The new standard is backward compatible with the 100BASE-T and the older 10BASE-T standards.
 
 ### 10 Gigabit Ethernet
 
-The 10 Gigabit Ethernet (IEEE 802.3ae) standard has a nominal data transfer speed of 10 Gbps, which is 10 times faster than its predecessor. This speed improvement is made possible only by using fiber optics. The standard now requires that 10-Gigabit Ethernet networks use area-based routing rather than broadcasting data to all nodes. In that way, network noise and traffic are reduced.
+The 10 Gigabit Ethernet (IEEE 802.3ae) standard has a nominal data transfer speed of 10 Gbps, which is 10 times faster than its predecessor. This speed improvement is only made possible by using fiber optics. The standard now requires that 10 Gigabit Ethernet networks use area-based routing rather than broadcasting data to all nodes. In that way, network noise and traffic are reduced.
 
 ### Terabit Ethernet
 
@@ -117,8 +117,13 @@ Azure comes with several networking tools and services.
 
 :::image type="content" source="../media/2-virtual-network.svg" alt-text="A diagram showing a virtual network design with a web server and a SQL server assigned IP addresses from a virtual network range to isolate the servers.":::
 
-Using Azure Virtual Network, you can build complex virtual networks that emulate the structure of your actual on-premises networks. You can provision and manage your cloud-based virtual networks. You also can create hybrid virtual networks that integrate with your on-premises networks when you use Azure Virtual Network.
+By using Azure Virtual Network, you can build complex virtual networks that emulate the structure of your actual on-premises networks. You can provision and manage your cloud-based virtual networks. You also can create hybrid virtual networks that integrate with your on-premises networks when you use Azure Virtual Network.
 
 ### Connectivity services
 
-When you need to have a low-latency, high-bandwidth connection between your on-premises network and your instance of Azure Virtual Network, you have two options. You can use a VPN connection via an Azure gateway, or you can use a dedicated connection through Azure ExpressRoute. ExpressRoute is a secure point-to-point service. To use this service, a non-Microsoft connectivity partner can provide and host the ExpressRoute circuits on your behalf.
+When you need to have a low-latency, high-bandwidth connection between your on-premises network and your instance of Azure Virtual Network, you have two options:
+
+- A VPN connection via an Azure gateway
+- A dedicated connection through Azure ExpressRoute
+
+ExpressRoute is a secure point-to-point service. To use this service, a non-Microsoft connectivity partner can provide and host the ExpressRoute circuits on your behalf.
