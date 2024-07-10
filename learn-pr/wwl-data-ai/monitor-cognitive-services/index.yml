@@ -34,7 +34,6 @@ subjects:
 - artificial-intelligence
 - cloud-computing
 units:
-- learn.monitor-cognitive-services.monitor-cost
 - learn.monitor-cognitive-services.view-metrics
 - learn.monitor-cognitive-services.summary
 badge:
