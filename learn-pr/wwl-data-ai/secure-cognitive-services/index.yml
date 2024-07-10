@@ -36,7 +36,6 @@ subjects:
 units:
 - learn.wwl.secure-cognitive-services.introduction
 - learn.wwl.secure-cognitive-services.keys-with-azure-key-vault
-- learn.wwl.secure-cognitive-services.implement-network-security
 - learn.wwl.secure-cognitive-services.knowledge-check
 - learn.wwl.secure-cognitive-services.summary
 badge:
