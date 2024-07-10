@@ -41953,6 +41953,11 @@
       "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/5-exercise-create.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
     }
   ]
 }
