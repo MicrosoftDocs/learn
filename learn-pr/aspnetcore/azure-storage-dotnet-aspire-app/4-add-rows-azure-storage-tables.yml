@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-storage-dotnet-aspire-app.add-rows-azure-storage-tables
+title: Add rows to Azure Storage Tables
+metadata:
+  title: Add rows to Azure Storage Tables
+  description: In this unit, you'll learn how to use the Azure Storage Tables service as a repository for semi-structured data and how to access that data using the .NET Aspire Azure Data Tables component.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-add-rows-azure-storage-tables.md)]
