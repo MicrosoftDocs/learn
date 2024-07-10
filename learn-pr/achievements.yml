@@ -3658,6 +3658,11 @@ achievements:
   title: Introduction to Azure Space
   summary: Explore some of the ins and outs of the space industry and how it's quickly changing.
   iconUrl: /training/achievements/azure-space-intro.svg
+- uid: learn.azure.azure-object-anchors-tutorials.badge
+  type: badge
+  title: Use Azure Object Anchors to detect an object in the physical world
+  summary: This course explores the fundamentals of Azure Object Anchors and how it can be used to detect an object in physical world.
+  iconUrl: /training/achievements/azure-object-anchors-tutorials.svg
 - uid: learn.wwl.build-qna-solution-qna-maker.badge
   type: badge
   title: Build a question answering solution

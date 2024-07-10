@@ -41648,6 +41648,52 @@
       "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/8-summary.yml",
       "redirect_url": "/training/modules/cloud-adoption-framework-migrate/7-summary",
       "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/1-introduction.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/2-introduction-to-azure-object-anchors-run-time-sdk.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/3-exercise-create-object-anchors-account-retrieve-id-key.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/4-exercise-convert-upload-3d-model-to-hololens-2.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/5-exercise-detect-object-in-physical-world-with-sample-project.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/6-best-practices.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/7-knowledge-check.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/8-summary.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/index.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/index.md",
