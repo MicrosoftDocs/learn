@@ -42059,6 +42059,51 @@
       "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/6-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/2-prepare-lab-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/3-set-up-cluster.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/4-onboard-kubernetes-cluster-arc.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/5-implement-azure-app-service.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/6-deploy-web-app-kubernetes.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
     }
   ]
 }
