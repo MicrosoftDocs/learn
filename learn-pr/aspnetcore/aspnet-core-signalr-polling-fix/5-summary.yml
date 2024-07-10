@@ -4,12 +4,14 @@ title: Summary
 metadata:
   unitType: summary
   title: Summary
-  description: This unit summarizes ASP.NET Core SignalR refactoring and provides links to resources and additional references.
-  ms.date: 11/09/2021
+  description: This unit summarizes ASP.NET Core SignalR refactoring and provides links to resources and other references.
+  ms.date: 06/03/2024
   author: IEvangelist
   ms.author: dapine
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]

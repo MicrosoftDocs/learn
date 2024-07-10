@@ -2,12 +2,12 @@
 uid: learn.wwl.protect-data-transit-at-rest
 metadata:
   title: Protect data in-transit and at rest
-  description: "Protect data in-transit and at rest"
+  description: Protect data in-transit and at rest
   ms.date: 05/06/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Protect data in-transit and at rest
 summary: Explore encryption options available within Azure SQL, including firewall rules, Always Encrypted, and Transport Layer Security. Understand how SQL Injection works.
 abstract: |

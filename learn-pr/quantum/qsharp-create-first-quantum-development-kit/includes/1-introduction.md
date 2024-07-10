@@ -1,24 +1,26 @@
-Welcome aboard your spaceship!
+Classical computers don't produce random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates a deterministic sequence of numbers based on some initial value (called a _seed_). To better approximate random values, this seed is often the current time from the CPU's clock.
 
-![Figure of the crew spaceship.](../media/spaceship-core.svg)
+Quantum computers, on the other hand, can generate truly random numbers. This is because the measurement of a qubit in superposition is a probabilistic process. The result of the measurement is random, and there's no way to predict the outcome. This is the basic principle of quantum random number generators.
 
-In this module, you'll write your first quantum program by using the Quantum Development Kit (QDK). The QDK enables you to write and test your quantum programs locally, with a simulator, on standard hardware. You can, when it's generally available, run the same quantum program on quantum hardware through the Azure Quantum service.
+In this module, you write your first quantum program by using the Azure Quantum Development Kit (QDK). 
 
-The first thing you'll do before using your quantum computer is to sign in to the system. You want to generate a truly random password so no galactic hacker can jeopardize space fleet security.
-
-In this module, you'll write a quantum program to generate random numbers. A random number generator isn't only easy to write, but it will help you understand the basics of quantum computing.
+You write a quantum program to generate random numbers. A quantum random number generator is a perfect introduction to quantum computing because it illustrates quantum behavior and requires only a few lines of code. You also review the basic structure of a Q# program.
 
 ## Learning objectives
 
-After completing this module, you'll be able to:
+After completing this module, you're able to:
 
-- Prepare your development environment for writing quantum programs in Q#.
-- Understand how Q# programs are structured.
-- Work with qubits and superposition to build a quantum random number generator.
-- Learn how Azure Quantum enables you to run your programs on quantum hardware.
+- Allocate qubits and apply quantum operations to them.
+- Create and run Q# programs in Visual Studio Code.
+- Understand the structure and components of a Q# program.
 
 ## Prerequisites
 
-- Install the latest version of [.NET SDK 6.0](https://dotnet.microsoft.com/download?azure-portal=true).
-- Install [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true).
-- Install the [Quantum Development Kit for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode) extension. 
+- A basic understanding of quantum computing concepts.
+- Basic knowledge of classical programming concepts.
+- Install the latest version of [Visual Studio Code](https://code.visualstudio.com/download).
+- Install the latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension.
+
+    - You can also open [VS Code on the Web](https://vscode.dev/quantum), which already includes the Azure Quantum Development Kit extensions.
+
+

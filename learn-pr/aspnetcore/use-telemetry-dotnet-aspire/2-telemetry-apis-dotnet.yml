@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.use-telemetry-dotnet-aspire.telemetry-apis-dotnet
+title: Telemetry APIs in .NET
+metadata:
+  title: Telemetry APIs in .NET
+  description: In this unit, you'll learn about the different sources of telemetry data in .NET.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-telemetry-apis-dotnet.md)]

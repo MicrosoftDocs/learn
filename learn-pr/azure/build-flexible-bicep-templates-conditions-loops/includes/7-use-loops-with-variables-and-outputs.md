@@ -1,10 +1,10 @@
-You've learned how you can use copy loops to deploy multiple instances of resources, and how to set the properties of a resource by using loops. In Bicep, loops can also be used with variables and outputs.
+You've learned how you can use copy loops to deploy multiple instances of resources and how to set the properties of a resource by using loops. In Bicep, you can also use loops with variables and outputs.
 
-For your toy company, you need to deploy virtual networks with the same subnet configuration across multiple Azure regions. You expect that you'll need to add additional subnets to your virtual networks in the future, so you want to have the flexibility in your Bicep templates to modify the subnet configuration. 
+For your toy company, you need to deploy virtual networks with the same subnet configuration across multiple Azure regions. You expect that you'll need to add additional subnets to your virtual networks in the future, so you want to have the flexibility in your Bicep templates to modify the subnet configuration.
 
 Because you'll also be deploying multiple storage accounts in your Azure environment, you need to provide the endpoints for each storage account as output so that your deployment pipelines can use this information.
 
-In this unit, you learn how to use loops with variables and outputs.
+In this unit, you'll learn how to use loops with variables and outputs.
 
 [!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
 
@@ -18,17 +18,17 @@ var items = [for i in range(1, 5): 'item${i}']
 
 The preceding example creates an array that contains the values `item1`, `item2`, `item3`, `item4`, and `item5`.
 
-You would ordinarily use variable loops to create more complex objects that you could then use within a resource declaration. Here's how to use variable loops to create a `subnets` property:
+You'd ordinarily use variable loops to create more complex objects that you could then use within a resource declaration. Here's how to use variable loops to create a `subnets` property:
 
 ::: code language="bicep" source="code/7-loop-variable.bicep" highlight="13-18" :::
 
-This example illustrates an effective use for variable loops: turning a parameter that has simple, easy-to-understand values into a more complex object that corresponds to the required definition of the Azure resource. You use variable loops to enable parameters to specify only the key information that will change for each item in the list. You can then use Bicep expressions or default values to set other required properties for the resource.
+This example illustrates an effective use for variable loops: turning a parameter that has simple, easy-to-understand values into a more complex object that corresponds to the Azure resource's required definition. You can use variable loops to enable parameters to specify only the key information that will change for each item in the list. You can then use Bicep expressions or default values to set other required properties for the resource.
 
 ## Output loops
 
-You use Bicep outputs to provide information from your deployments back to the user or tool that started the deployment. Output loops give you the flexibility and power of loops within your outputs.
+You can use Bicep outputs to provide information from your deployments back to the user or tool that started the deployment. Output loops give you the flexibility and power of loops within your outputs.
 
-As you do with other loops, you use the `for` keyword to specify an output loop:
+As you do with other loops, use the `for` keyword to specify an output loop:
 
 ::: code language="bicep" source="code/7-loop-output-simple.bicep" highlight="9" :::
 

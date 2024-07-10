@@ -1,6 +1,6 @@
 Let's complete the application by writing code to read the next message in the queue, process it, and then delete it from the queue. 
 
-We're going to place the code into the application and run it when a user selects the appropriate menu items.  In a real-world scenario, this code should be put in its own application dedicated to receiving and processing messages.
+We're going to place the code into the application and run it when a user selects the appropriate menu items. In a real-world scenario, this code should be put in its own application dedicated to receiving and processing messages.
 
 ## Peeking at the next message
 
@@ -10,7 +10,7 @@ Let's add a new method that peeks at the next message from the queue.
 
 1. Find the `PeekMessageAsync` method in the application and delete the line throwing a `NotImplementedException`.
 
-1. Add the following code to the method.  This code peeks at the next message on the queue and prints some information about the message.
+1. Add the following code to the method. This code peeks at the next message in the queue and prints some information about the message.
 
     ```csharp
             Response<PeekedMessage> response = await queueClient.PeekMessageAsync();
@@ -27,14 +27,14 @@ Add code to receive and process a message in the application.
 
 1. Find the `ReceiveMessageAsync` method in the application and delete the line throwing a `NotImplementedException`.
 
-1. At the top of the `ReceiveMessageAsync` method, add the following lines of code to get a message from the queue.
+2. At the top of the `ReceiveMessageAsync` method, add the following lines of code to get a message from the queue.
 
     ```csharp
     Response<QueueMessage> response = await queueClient.ReceiveMessageAsync();
     QueueMessage message = response.Value;
     ```
 
-1. Add the following lines of code below the two lines you just added to the method. This code prints some properties about the received message, including the body of the raw message in JSON format.
+3. Add the following lines of code below the two lines you just added to the method. This code prints some properties about the received message, including the body of the raw message in JSON format.
 
     ```csharp
     Console.WriteLine($"Message id    : {message.MessageId}");
@@ -42,7 +42,7 @@ Add code to receive and process a message in the application.
     Console.WriteLine($"Message (raw) : {message.Body}");
     ```
 
-1. To deserialize the message content into an object that we can work with in our code, add the `ToObjectFromJson` method on the `Body` property of the `QueueMessage` object.  Add the following lines to the method.
+4. To deserialize the message content into an object that we can work with in our code, add the `ToObjectFromJson` method on the `Body` property of the `QueueMessage` object. Add the following lines to the method.
 
     ```csharp
     NewsArticle article = message.Body.ToObjectFromJson<NewsArticle>();
@@ -51,7 +51,7 @@ Add code to receive and process a message in the application.
     Console.WriteLine($"-  Location : {article.Location}");
     ```
 
-1. Finally, when we've processed the message, we need to delete the message from the queue so no other consumers process it.  Add the following code to the end of the `ReceiveMessageAsync` method.
+5. Finally, when we finish processing the message, we need to delete the message from the queue so no other consumers process it. Add the following code to the end of the `ReceiveMessageAsync` method.
 
     ```csharp
     Console.WriteLine("The processing for this message is just printing it out, so now it will be deleted");
@@ -82,6 +82,8 @@ Add code to receive and process a message in the application.
     }
     ```
 
+6. Save the `Program.cs` file.
+
 ## Execute the application
 
 The code is now complete. It can now send and retrieve messages.
@@ -92,13 +94,13 @@ The code is now complete. It can now send and retrieve messages.
     dotnet build
     ```
 
-1. Run the application
+1. Run the application.
 
     ```dotnetcli
     dotnet run
     ```
 
-1. Use the menu to experiment with adding messages to, peeking at, and receiving messages on the queue.  Your sample output should look similar to the following.
+1. Use the menu to experiment with adding messages to, peeking at, and receiving messages on the queue. Your sample output should look similar to the following.
 
     ```console
     What operation would you like to perform?
@@ -112,7 +114,7 @@ The code is now complete. It can now send and retrieve messages.
     World leaders to meet at economic summit
     Enter location:
     Paris, France
-    Message sent.  Message id=8f5b9bc7-3e7f-448b-9787-508636963938  Expiration time=10/14/2021 9:01:58 PM +00:00
+    Message sent. Message id=8f5b9bc7-3e7f-448b-9787-508636963938  Expiration time=10/14/2021 9:01:58 PM +00:00
     
     What operation would you like to perform?
       1 - Send message
@@ -146,4 +148,3 @@ The code is now complete. It can now send and retrieve messages.
       X - Exit program
     X
     ```
-

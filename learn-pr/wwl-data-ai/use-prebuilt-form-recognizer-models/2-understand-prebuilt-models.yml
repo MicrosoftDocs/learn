@@ -4,13 +4,12 @@ title: Understand prebuilt models
 metadata:
   title: Understand prebuilt models
   description: "Understand prebuilt models"
-  ms.date: 11/01/2022
+  ms.date: 02/06/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom: devx-track-python
+  zone_pivot_groups: dev-lang-csharp-python
 durationInMinutes: 3
 content: |
   [!include[](includes/2-understand-prebuilt-models.md)]

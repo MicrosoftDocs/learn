@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.build-with-playwright.solution-manually-create-a-test-specification
+title: "Review the Solution: Manually Create a Test Spec"
+metadata:
+  title: "Review the Solution: Manually Create a Test Spec"
+  description: In the last exercise, we generated a test spec using Codegen. Let's add another test spec to the same file and refine our test.
+  ms.date: 05/08/2024
+  ms.author: debbieobrien
+  author: debs-obrien
+  ms.manager: jamont
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-solution-manually-create-test-specification.md)]

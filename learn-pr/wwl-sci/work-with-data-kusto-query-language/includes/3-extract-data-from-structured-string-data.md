@@ -23,16 +23,11 @@ The query example below shows the use of Dynamic fields with the SigninLogs tabl
 // Example query for SigninLogs showing how to break out packed fields.
 
 SigninLogs 
-| where TimeGenerated >= ago(1d)
-| extend OS = DeviceDetail.operatingSystem, Browser = DeviceDetail.browser
-| extend ConditionalAccessPol0Name = tostring(ConditionalAccessPolicies[0].displayName), ConditionalAccessPol0Result = tostring(ConditionalAccessPolicies[0].result)
-| extend ConditionalAccessPol1Name = tostring(ConditionalAccessPolicies[1].displayName), ConditionalAccessPol1Result = tostring(ConditionalAccessPolicies[1].result)
-| extend ConditionalAccessPol2Name = tostring(ConditionalAccessPolicies[2].displayName), ConditionalAccessPol2Result = tostring(ConditionalAccessPolicies[2].result)
-| extend StatusCode = tostring(Status.errorCode), StatusDetails = tostring(Status.additionalDetails)
-| extend State = tostring(LocationDetails.state), City = tostring(LocationDetails.city)
-| extend Date = startofday(TimeGenerated), Hour = datetime_part("Hour", TimeGenerated)
-| summarize count() by Date, Identity, UserDisplayName, UserPrincipalName, IPAddress, ResultType, ResultDescription, StatusCode, StatusDetails, ConditionalAccessPol0Name, ConditionalAccessPol0Result, ConditionalAccessPol1Name, ConditionalAccessPol1Result, ConditionalAccessPol2Name, ConditionalAccessPol2Result, Location, State, City
-| sort by Date
+| extend OS = DeviceDetail.operatingSystem, Browser = DeviceDetail.browser 
+| extend StatusCode = tostring(Status.errorCode), StatusDetails = tostring(Status.additionalDetails) 
+| extend Date = startofday(TimeGenerated) 
+| summarize count() by Date, Identity, UserDisplayName, UserPrincipalName, IPAddress, ResultType, ResultDescription, StatusCode, StatusDetails 
+| sort by Date
 
 ```
 
@@ -51,19 +46,19 @@ The example below is a list of JSON related functions and operators.
 Run each query separately to see the results.
 
 ```kusto
-SigninLogs
-| extend Location =  todynamic(LocationDetails)
-| extend City =  Location.city
-| extend City2 = Location["city"]
-| project Location, City, City2
+SigninLogs 
+| extend AuthDetails =  parse_json(AuthenticationDetails) 
+| extend AuthMethod =  AuthDetails[0].authenticationMethod 
+| extend AuthResult = AuthDetails[0].["authenticationStepResultDetail"] 
+| project AuthMethod, AuthResult, AuthDetails 
 
 
-SigninLogs
-| mv-expand Location = todynamic(LocationDetails)
+SigninLogs 
+| mv-expand AuthDetails = parse_json(AuthenticationDetails) 
+| project AuthDetails
 
-SigninLogs
-| mv-apply Location = todynamic(LocationDetails) on 
-( where Location.city == "Canberra")
+SigninLogs 
+| mv-apply AuthDetails = parse_json(AuthenticationDetails) on
+(where AuthDetails.authenticationMethod == "Password")
 
 ```
-

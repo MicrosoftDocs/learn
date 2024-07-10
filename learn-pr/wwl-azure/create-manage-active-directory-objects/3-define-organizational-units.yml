@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-active-directory-objects.define-organizational-units
+title: Define organizational units
+metadata:
+  title: Define organizational units
+  description: "Define organizational units"
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-define-organizational-units.md)]

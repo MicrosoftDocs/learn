@@ -1,0 +1,98 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-secure-privileged-access.knowledge-check
+title: Knowledge check - Design solutions for securing privileged access management
+metadata:
+  title: Knowledge check - Design solutions for securing privileged access management
+  description: "This is a knowledge check for the module: design solutions for securing privileged access management."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: unit
+durationInMinutes: 3
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "What is the Enterprise access model?"
+    choices:
+      - content: "It's a security architecture that leverages multiple layers to protect privileged assets."
+        isCorrect: true
+        explanation: "The Enterprise access model helps organizations control access to resources and minimize security risks by relying on layered security principles and role-based access control."
+      - content: "It's a cloud service from Microsoft that provides identity and access management capabilities."
+        isCorrect: false
+        explanation: "The Enterprise access model is a security concept, not a specific product or service from Microsoft."
+      - content: "It's a way of organizing digital assets so that they can be easily accessed and managed by end-users."
+        isCorrect: false
+        explanation: "The Enterprise access model is about controlling and limiting access to digital assets, not making them more accessible."
+      - content: "It's a framework for extending IT capabilities by integrating different cloud services together."
+        isCorrect: false
+        explanation: "The Enterprise access model is a way of thinking about cybersecurity, not a framework for integrating cloud services."
+  - content: What is Privileged Access Management (PAM)?
+    choices:
+      - content: A tool used to simplify user provisioning
+        isCorrect: false
+        explanation: PAM isn't an identity and access management tool but rather it's focused on reducing the risk of privilege misuse within an organization.
+      - content: An account management tool designed for non-admin users
+        isCorrect: false
+        explanation: PAM is a security feature that minimizes the attack surface against privileged accounts and focuses on preventing privilege misuse.
+      - content: A control layer for managing access to high-risk services and applications
+        isCorrect: true
+        explanation: PAM is designed to help minimize organizational risk by providing a control layer that ensures access to high-risk services is granted based on specific criteria such as business justification or time-bound provisioning.
+      - content: A baseline security feature that is enabled by default
+        isCorrect: false
+        explanation: PAM is an optional feature and must be explicitly enabled in Microsoft Azure-based subscriptions.
+  - content: What is Azure Lighthouse?
+    choices:
+      - content: A tool to manage compliance requirements in Azure
+        isCorrect: false
+        explanation: Azure Lighthouse doesn't specifically address compliance requirements. However, its features can help partners better understand their customer's levels of compliance requirements through delegated resource management.
+      - content: A monitoring and alerting service for Azure resources
+        isCorrect: false
+        explanation: Though Azure Lighthouse provides a degree of resource visibility, its main focus is primarily delegated resource management.
+      - content: A centralized management platform for third-party managed services providers
+        isCorrect: true
+        explanation: Azure Lighthouse is a unified management platform that enables cross-tenant, multi-service, remote-management scenarios for MSPs and cloud solution providers.
+      - content: A network-level security service that protects Azure virtual networks
+        isCorrect: false
+        explanation: Though it's part of Azure Core Services, Azure Lighthouse doesn't offer any specific network-level security services such as virtual network protection.
+  - content: What is Cloud infrastructure entitlement management?
+    choices:
+      - content: A role and permission management solution for external applications
+        isCorrect: false
+        explanation: Cloud infrastructure entitlement management focuses on privileges and access to infrastructure and data that isn't necessarily visible via traditional identity management solutions.
+      - content: A practice of controlling risk associated with cloud-based resources
+        isCorrect: false
+        explanation: While it's good security practice to mitigate any cloud-based risk, cloud infrastructure entitlement management is more focused on identifying and protecting high-value assets inside a particular hybrid environment.
+      - content: A solution for automatically implementing identity management policies for different cloud platforms
+        isCorrect: false
+        explanation: Cloud infrastructure entitlement management does not automate identity management policies.
+      - content: A solution focused on securing access to privileged functions in cloud platforms
+        isCorrect: true
+        explanation: Cloud infrastructure entitlement management refers to a system for controlling and restricting users from performing sensitive actions, using a role-based model, and ensuring the principle of least privilege is respected.
+  - content: What are Privileged Access Devices?
+    choices:
+      - content: Any device assigned to a privileged user
+        isCorrect: false
+        explanation: A Privileged Access Device is a dedicated workstation designated for administrative tasks that can assist in reducing the risk of clients' credential theft and lateral movement.
+      - content: Devices that are protected by conditional access rules
+        isCorrect: false
+        explanation: While conditional access is available as a security mechanism for various client devices, this definition doesn't correspond to Privileged Access Devices.
+      - content: Devices running software that constantly monitors and blocks malicious activities
+        isCorrect: false
+        explanation: Although such activity analyzers exist in endpoint management systems, they are not limited to Privileged Access Devices.
+      - content: Secure workstations used to access sensitive resources
+        isCorrect: true
+        explanation: Privileged Access Devices are devices designated for accessing sensitive

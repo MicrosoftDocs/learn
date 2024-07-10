@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-regulatory-compliance.address-compliance-requirements-microsoft-purview
-title: Address compliance requirements with Microsoft Purview
+title: Design a solution to address compliance requirements by using Microsoft Purview
 metadata:
-  title: Address compliance requirements with Microsoft Purview
-  description: "SC-100 preparatory unit on the topic: address compliance requirements with Microsoft Purview."
+  title: Design a solution to address compliance requirements by using Microsoft Purview
+  description: "SC-100 preparatory unit on the topic: Design a solution to address compliance requirements by using Microsoft Purview."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-address-compliance-requirements-microsoft-purview.md)]

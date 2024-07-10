@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.exploring-artificial-intelligence-in-action.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This module explores various subsets within artificial intelligence (AI) such as natural language processing (NLP), computer vision, and recommendation systems and discuss the integration of AI-powered tools into a learning environment.
+  ms.date: 01/25/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+  ms.service: artificial-intelligence
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "What is the main advantage of applying AI-powered tools in education according to this module?"
+      choices:
+        - content: "To increase the quality and accessibility of education"
+          isCorrect: true
+          explanation: "Correct. AI-powered tools can enhance the learning experience by personalizing the content, providing feedback, and offering data analysis. This can make education more accessible and inclusive."
+        - content: "To foster a more supportive learning environment."
+          isCorrect: false
+          explanation: "Incorrect. Although fostering a more supportive learning environment can be a benefit, it is not the main advantage of applying AI-powered tools in education."
+        - content: "To save time on other tasks."
+          isCorrect: false
+          explanation: "Incorrect. Although saving time on other tasks can be a benefit, it is not the main advantage of applying AI-powered tools in education."
+    - content: "What is the main difference between machine translation systems and sentiment analysis in natural language processing?"
+      choices:
+        - content: "Machine translation systems convert text or speech content from one language to another, while sentiment analysis determines whether the sentiment of a content piece is positive, negative, or neutral."
+          isCorrect: true
+          explanation: "Correct. This is the correct explanation of these two tasks."
+        - content: "Machine translation systems use text and speech translations, while sentiment analysis uses text and image analysis."
+          isCorrect: false
+          explanation: "Incorrect. This answer confuses the input and output of the tasks. Machine translation systems and sentiment analysis use text and speech content as input."
+        - content: "Machine translation systems are more accurate and reliable than sentiment analysis."
+          isCorrect: false
+          explanation: "Incorrect. Machine translation systems are not necessarily more accurate or reliable than sentiment analysis."
+    - content: "How can chatbots be used to develop engaging online simulations in education?"
+      choices:
+        - content: "By providing information about the weather, dining reservations, or commute advice."
+          isCorrect: false
+          explanation: "Incorrect: Chatbots can provide information about the weather, dining reservations, or commute advice, but these are not relevant to educational online simulations."
+        - content: "By responding to questions, gathering learner feedback and insights, and providing real-time support."
+          isCorrect: false
+          explanation: "Incorrect. Chatbots can respond to questions, gather feedback and insights, and provide real-time support, but these are not specific to online learning simulations, but rather general features of chatbots in education."
+        - content: "By providing interactive activities, asking relevant questions, and giving feedback based on learner responses."
+          isCorrect: true
+          explanation: "Correct. Chatbots are conversational agents that can interact using natural language. They can be used to develop online simulations by creating scenarios, dialogues, and quizzes that challenge and motivate learners. They can also provide feedback such as explanations and encouragements."

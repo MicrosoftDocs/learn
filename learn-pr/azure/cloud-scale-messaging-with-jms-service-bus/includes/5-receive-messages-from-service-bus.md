@@ -1,8 +1,8 @@
-You'll now create a Spring Boot application that will receive messages from an Azure Service Bus queue.
+Now, let's create a Spring Boot application that can receive messages from an Azure Service Bus queue.
 
 ## Create a Spring Boot project
 
-Let's open up a new terminal window, and just like we did with the sender Spring Boot application, we'll use the [Spring Initializr](https://start.spring.io/) to create a Spring Boot project.
+Let's open up a new terminal window, and just like we did with the sender Spring Boot application, we use the [Spring Initializr](https://start.spring.io/) to create a Spring Boot project.
 
 ```bash
 curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web -d baseDir=spring-receiver-application -d bootVersion=2.4.1.RELEASE -d javaVersion=1.8 | tar -xzvf -
@@ -10,7 +10,7 @@ curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=w
 
 ## Receive messages from a Service Bus queue
 
-Here again, we'll add the dependency and configuration.
+Here again, we add the dependency and configuration.
 
 ### Add the maven dependency for Service Bus Spring Boot Starter
 
@@ -39,7 +39,7 @@ In the `pom.xml` file in your `spring-receiver-application`, add the following c
 
 ### Add code to receive messages from Service Bus
 
-Next, we'll add business logic to receive messages from a Service Bus queue.
+Next, we add business logic to receive messages from a Service Bus queue.
 
 In the `src/main/java/com/example/demo` directory, create a `ReceiveController.java` file that has the following content:
 
@@ -75,7 +75,7 @@ public class ReceiveController {
     Received <HelloOnceAgain>
     ```
 
-    The appearance of the statements indicates that the Spring Boot application has successfully received messages from the Service Bus queue.
+    The appearance of the statements indicates that the Spring Boot application is successfully receiving messages from the Service Bus queue.
 
 ## See the entire workflow in action
 
@@ -85,7 +85,7 @@ If your sender application (from unit 4) is still running, you can select the fo
 http://localhost:8080/messages?message=HelloOnceAgainAndAgain
 ```
 
-This message will in turn be received by your receiver application and will be displayed in your console.
+Your receiver application receives the message from the Service Bus queue and displays it in your console.
 
 ```bash
 Received <HelloOnceAgainAndAgain>

@@ -1,6 +1,11 @@
-Containers in Azure offer a standardized and repeatable way to package, deploy, and manage cloud applications. Azure Container Instances let you run a container in Azure without managing virtual machines and without a higher-level service.
+Containers and virtual machines are both forms of virtualization, but there are some key differences between them.
 
-In this module, suppose you work for an online clothing retailer that uses containers for their internal apps. The apps are hosted on-premises, in Azure, and in other cloud providers. The apps can share the hardware resources, but shouldn't access resources used by other apps. You're responsible for deploying, managing, sizing, and scaling the app containers.
+To provide context, let's consider a scenario: You're an Azure Administrator responsible for deploying and managing applications in a cloud environment. Your organization is looking for a solution that offers fast startup times, easy management, and the ability to run applications in isolated containers. You want to understand the benefits of using Azure Container Instances and how it compares to virtual machines.
+
+In this module, you learn when to use Azure Container Instances instead of virtual machines. You also get an overview of features and use cases. 
+
+The goal of this module is to introduce you to Azure Container Instances.
+
 
 ## Learning objectives
 
@@ -12,14 +17,9 @@ In this module, you learn how to:
 
 ## Skills measured
 
-The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
-
-Deploy and manage Azure compute resources (20–25%)
-
-- Create and configure containers
-   - Configure sizing and scaling for Azure Container Instances
-   - Configure container groups for Azure Container Instances
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). 
 
 ## Prerequisites
 
-None.
+- Working knowledge of containerization concepts and terminology.
+- Familiarity with cloud computing and experience with the Azure portal.

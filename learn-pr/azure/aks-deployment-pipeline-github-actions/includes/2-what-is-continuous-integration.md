@@ -1,55 +1,38 @@
-Before you begin deploying anything or changing the company's infrastructure, it's essential that you understand the concepts behind what you're planning to build.
+Before you change or deploy your company's infrastructure, understand what you plan to build by exploring the concepts behind continuous integration (CI) and continuous delivery or deployment (CD). In this unit, you learn about CI/CD pipelines and how to apply CI and CD with GitHub Actions.
 
-Let's explore some of the concepts behind CI and CD. In this unit, we learn what a pipeline is and how to apply CI and CD to GitHub Actions.
+CI and CD are operating practices that introduce continuous automation and monitoring into all the phases of software development, testing, and deployment. Developer teams use CI and CD to be more productive and help reduce problems that can arise when integrating new code into an existing code base.
 
-## What are CI and CD?
+## Continuous integration
 
-CI and CD are operating practices that can help make developer teams more productive by introducing continuous automation and monitoring into all the phases of software development, testing, and deployment. CI and CD aim to reduce problems that result when you integrate new code into an existing code base.
+Before the development of CI/CD tools, the entire develop-test-deploy-test process was manual. Automated test suites were available, but they had to be run manually or at scheduled times by expert teams.
 
-### Continuous integration (CI)
+One of the most significant challenges software developers faced was *merge day*. Merge day happened because most software development teams worked on the same code in different source control branches with minimal tests. On merge day, all code changes were integrated back into the main branch. As a result, an entire day had to be dedicated to solving integration issues as the team members' branches merged and intersected in the main branch.
 
-CI dictates that teams frequently implement and integrate the smallest changes in the code. Implementing this technique means that you constantly test, compile, deploy, and then test again in production.
+A critical CI principle is to merge all new changes back into the main branch as often as possible. Continually merging changes helps avoid the merge day "integration hell" that occurred when many developers combined their changes at once.
 
-One of the most critical CI principles is that you merge all the newest changes back into the main branch as often as possible. Continually merging changes helps you avoid "integration hell" and merge day, which often occurs when many developers combine their changes all at once in a single day.
+CI requires that teams frequently implement and integrate the smallest changes in the code. Implementing CI means that teams can constantly test, compile, deploy, and then test again in production. The goal of CI is to detect and avoid production problems caused by code changes before they can affect the main code branch or deploy to customers.
 
-The goal of CI is to avoid production problems caused by code changes by detecting problems before they can cause real damage to you or your customers.
+## Continuous delivery and deployment
 
-### Continuous delivery (CD)
+*Continuous delivery* picks up where CI ends, and automates the delivery process to the selected infrastructure environment. You can use continuous delivery to release changes quickly and sustainably. After you use continuous delivery, you decide in advance whether to deploy the changes daily, weekly, monthly, or on another schedule that suits your business requirements.
 
-CD picks up where CI ends. CD automates the delivery process to the selected infrastructure environment. You can use CD to release new changes to your customers quickly and sustainably.
+*Continuous deployment* goes one step farther by automatically releasing changes that pass all stages of the CI/CD pipeline to production. Continuous deployment is one of the most advanced processes in software development, and requires code that tests all aspects of the application's functionality without human intervention.
 
-When you use CD, you decide in advance whether you deploy the changes daily, weekly, monthly, or on another schedule that suits your business requirements.
+## CI/CD pipelines
 
-### Continuous deployment
+A pipeline comprises the collective processes that run when a specified event occurs. A large number of events are part of software development, and a CI/CD pipeline must support all related events. When an event triggers the pipeline, all the listeners for this event are triggered and the first stage of the process starts.
 
-A variation to the CD process is *continuous deployment*. Continuous deployment goes one step further than continuous delivery. In this variation, every change that passes all the stages of your CI pipeline is automatically released to customers.
+A CI/CD pipeline runs when a new code change triggers it. In most cases, the process begins by cloning or downloading source code. Then the next step triggers, and so on.
 
-Continuous deployment is one of the most advanced processes in software development. It requires coded tests that cover all aspects of the application to test the application's functionality without human intervention.
-
-## CI pipelines
-
-A CI pipeline is collectively the processes that run when a new code change is detected. Every time a code change triggers a CI run, all steps in the pipeline execute. If there's an error in one of these steps, the pipeline stops.
-
-An event triggers a pipeline. A large number of events are triggered during software development. The CI provider needs to support all related events. When an event is triggered, all the listeners for this specific event are triggered. The first stage of the process starts. 
-
-In most cases, the process begins by cloning or downloading source code. Then, the next step is triggered, and so on.
-
-Workflows can contain logic jumps so that a stage doesn't execute if certain conditions are met, but the pipeline continues to execute.
+Every time a code change triggers a CI/CD run, all steps in the pipeline execute. If there's an error in a step, the pipeline stops. Workflows can contain logic jumps so that some stages don't execute under certain conditions, but the overall pipeline continues to execute.
 
 ## GitHub Actions
 
-GitHub Actions is one of the most popular providers for CI platforms because of its presence in the open-source world. You can use GitHub Actions to seamlessly integrate all your hosted code in GitHub by using an automation workflow. The workflow can do multiple tasks and integrate code into several environments.
+GitHub Actions supports all GitHub related events and automates the CI/CD pipeline in this module. In GitHub Actions, each step defines actions either in JavaScript or by using a Docker container. Actions are easy to create, and form the building blocks of the pipeline steps.
 
-GitHub Actions supports all GitHub events. Each step is defined as an action that can either be JavaScript code or a Docker container. Because actions are simple repositories like all the code in the platform, GitHub users can use each other's actions without installing or configuring anything else.
+You can use GitHub Actions to seamlessly integrate all your GitHub hosted code with an automation workflow. The workflow handles multiple tasks to integrate the code across several environments.
 
-Actions are the most important piece of the pipeline. Actions are the building blocks of the stages, and they're easy to create. The ability to share actions among users is what makes GitHub Actions so great. You don't need to rewrite repeated code or stages—you can use someone's action or create your own.
+GitHub Actions is a popular provider for CI/CD pipelines because of its open-source model. Because workflows are open-source, they're stored in repositories available to anyone on the platform. GitHub users may use each other's actions or create their own custom actions without installing or configuring anything else.
 
-In the next units, you'll define a deployment pipeline to implement *continuous deployment* in an application.
+The ability to share actions among users means that you don't need to rewrite repeated code or stages, but can use or customize existing actions. In the next units, you use GitHub Actions in a Docker container to define a CI/CD pipeline that implements continuous deployment of an application.
 
-## Benefits of CI
-
-Before technological advancements gave us tools that can implement CI and CD, the entire develop-test-deploy-test process was done "by hand." Automated test suites were available, but they had to be run manually or at scheduled times.
-
-Before CI, one of the most significant problems software developers faced, and one that led to the development of CI, was merge day. Because most software development teams consist of several developers working on the same code in different branches, merge day was the day when all code changes were integrated back into the main branch. 
-
-The entire day would be dedicated to solving integration issues as the team members' branches merged and intersected in the main branch.

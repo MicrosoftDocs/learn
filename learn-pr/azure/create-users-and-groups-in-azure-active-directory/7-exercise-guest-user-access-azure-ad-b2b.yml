@@ -1,17 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-users-and-groups-in-azure-active-directory.exercise-guest-user-access-azure-ad-b2b
-title: Exercise - Give guest users access in Azure Active Directory B2B
+title: Exercise - Give guest users access in Microsoft Entra B2B
 metadata:
-  title: Exercise - Give guest users access in Azure Active Directory B2B
-  description: Exercise - Give guest users access in Azure Active Directory B2B
-  ms.date: 03/21/2023
+  title: Exercise - Give guest users access in Microsoft Entra B2B
+  description: Exercise - Give guest users access in Microsoft Entra B2B
+  ms.date: 06/25/2024
   author: shlipsey3
   ms.author: sarahlipsey
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.manager: amycollanino
-  ms.service: active-directory
-  ms.subservice: fundamentals
 durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-guest-user-access-azure-ad-b2b.md)]

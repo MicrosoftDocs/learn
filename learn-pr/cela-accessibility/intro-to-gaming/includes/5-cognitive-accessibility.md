@@ -1,6 +1,6 @@
 As discussed in our model of how games are played, players use information provided by the game through sensory channels to inform their next steps. Players can also experience unintentional barriers during this decision-making progress. 
 
-In this unit, you'll learn about the relationship between cognition and gaming. You'll learn to identify unintentional barriers that might be posed by common game elements and how they can negatively affect player experiences.
+In this unit, learn about the relationship between cognition and gaming. You also learn how to identify unintentional barriers that might be in common game elements and how they can negatively affect player experiences.
 
 ## Cognition and gaming
 
@@ -12,7 +12,7 @@ After players receive information provided by the game, they must then decide ho
 
 These cognitive processes might be more difficult for players with learning, attention, or memory-related disabilities. When accessibility supports and features that address these cognitive demands aren't provided, these players can experience unintentional barriers.
 
-In the following video, you'll learn how to identify common cognitive elements that can pose these barriers.
+In the following video, learn how to identify common cognitive elements that can pose these barriers.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPGaM]
 
@@ -35,14 +35,14 @@ Consult with an array of players with cognitive disabilities to inform effective
 
 ### Attention and gaming
 
-Attention can be affected by a range of sensory stimuli. For example, some individuals can easily ignore an incoming text notification on their phone while they play. But other players might find it difficult to sustain attention with environmental and in-game distractions.
+A range of sensory stimuli can affect attention. For example, some individuals can easily ignore an incoming text notification on their phone while they play. But other players might find it difficult to sustain attention with environmental and in-game distractions.
 
 Players with disabilities that affect attention might experience barriers when gaming experiences include lots of visual and audio stimuli. These stimuli can be notifications from the game or platform, animated backgrounds behind the text, and "loud" or "busy" user interfaces.
 
 In general, the following supports can help players eliminate distractions that can detract from game experiences:
 
- - The ability to customize or disable background animations or moving content that appears onscreen as players attempt to read static text
- - The ability to adjust the length and presence of notifications
+- The ability to customize or disable background animations or moving content that appears onscreen as players attempt to read static text
+- The ability to adjust the length and presence of notifications
 
 ### Memory and gaming
 
@@ -50,16 +50,16 @@ Navigating through gaming experiences often requires players to recall past info
 
 In general, the following supports can help decrease the cognitive demands placed on players to memorize and recall important game information:
 
- - A list of past and current objective tasks that can be referenced at any time
- - A way to reference the game's control scheme
- - A means of freely practicing these controls in an isolated environment
- - Maps, waypoint markers, and other directional supports that eliminate the need for players to recall important game locations and how to find them
+- A list of past and current objective tasks that can be referenced at any time
+- A way to reference the game's control scheme
+- A means of freely practicing these controls in an isolated environment
+- Maps, waypoint markers, and other directional supports that eliminate the need for players to recall important game locations and how to find them
 
 ### Learning, cognitive processing, and gaming
 
-In gaming, players are often given complex objectives or tasks that gate progress until they're solved. The way to complete some of these tasks might be easily understood. Other solutions can require players to piece together subtle cues from the game that aren't clearly obvious.
+Players are often given complex objectives or tasks that gate progress until they're solved. The way to complete some of these tasks might be easily understood. Other solutions can require players to piece together subtle cues from the game that aren't clearly obvious.
 
-For example, let's say a player is met by a locked door that blocks the entrance to the game's next level. Despite circling around for a long time, the player can't determine what's needed to unlock the door.
+For example, let's say a player meets a locked door that blocks the entrance to the game's next level. Despite circling around for a long time, the player can't determine what's needed to unlock the door.
 
 The game might have provided subtle cues that led up to this experience, like the presence of a random altar in a previous game area. Ideally, the player was supposed to have placed a gem they received on the altar as they passed it so that the door unlocked when they approached.
 

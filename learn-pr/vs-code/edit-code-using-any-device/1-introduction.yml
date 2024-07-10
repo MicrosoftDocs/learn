@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.edit-code-using-any-device.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to Visual Studio Code for the Web and an example scenario for using the browser-based code editor."
+  ms.date: 01/22/2024
+  author: olguzzar
+  ms.author: olguzzar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

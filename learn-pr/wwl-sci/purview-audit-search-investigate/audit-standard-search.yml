@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-audit-search-investigate.audit-standard-search
+title: Conduct searches with Audit (Standard)
+metadata:
+  title: Conduct searches with Audit (Standard)
+  description: "Conduct searches with Audit (Standard)."
+  ms.date: 05/01/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/audit-standard-search.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the maximum number of search jobs a user can run at the same time in the Microsoft Purview compliance portal?"
+    choices:
+    - content: "Unlimited, as long as system resources permit."
+      isCorrect: false
+      explanation: "Incorrect: There's a specific limit on the number of simultaneous search jobs."
+    - content: "Up to 5 search jobs."
+      isCorrect: false
+      explanation: "Incorrect: The limit is higher than 5."
+    - content: "Up to 10 search jobs."
+      isCorrect: true
+      explanation: "Correct: A user can run up to 10 search jobs at the same time, which is the system limit."

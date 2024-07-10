@@ -3,11 +3,10 @@ uid: learn.language.vue-data-events.6-computed-properties
 metadata:
   title: Understand computed properties
   description: Computed properties allow you to add new values based on existing data.
-  ms.date: 03/01/2021 
+  ms.date: 01/11/2023 
   author: GeekTrainer
   ms.author: chrhar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-vue
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Understand computed properties
 durationInMinutes: 2

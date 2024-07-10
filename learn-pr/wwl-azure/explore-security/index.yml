@@ -3,11 +3,11 @@ uid: learn.wwl.explore-security
 metadata:
   title: Explore security
   description: "Explore security"
-  ms.date: 01/31/2023
+  ms.date: 02/06/2024
   author: wwlpublish
-  ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: robbarefoot
+  ms.topic: module
+  ms.service: azure
 title: Explore security
 summary: Surveys computer security and how people and computers are identified on computer networks. It surveys historical and modern security features.
 abstract: |
@@ -27,8 +27,7 @@ roles:
 - k-12-educator
 - student
 products:
-- return-to-school
-- return-to-workplace
+- consumer
 subjects:
 - cloud-computing
 units:

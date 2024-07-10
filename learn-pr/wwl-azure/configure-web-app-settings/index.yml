@@ -3,22 +3,31 @@ uid: learn.wwl.configure-web-app-settings
 metadata:
   title: Configure web app settings
   description: "Configure web app settings"
-  ms.date: 04/24/2023
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: app-service
+  ms.subservice: web-apps
+  ai-usage: human-only
 title: Configure web app settings
 summary: Learn how to create and manage application settings, install SSL/TLS certificates to secure web traffic, enable diagnostic logging, create virtual app to directory mappings, and manage app features.
 abstract: |
   After completing this module, you'll be able to:
-  * Create application settings that are bound to deployment slots.
-  * Explain the options for installing SSL/TLS certificates for your app.
-  * Enable diagnostic logging for your app to aid in monitoring and debugging.
-  * Create virtual app to directory mappings.
+
+  -   Create application settings that are bound to deployment slots.
+
+  -   Explain the options for installing SSL/TLS certificates for your app.
+
+  -   Enable diagnostic logging for your app to aid in monitoring and debugging.
+
+  -   Create virtual app to directory mappings.
 prerequisites: |
-  * You should be familiar with developer concepts and terminology.
-  * An understanding of cloud computing and some experience with the Azure portal.
+  -   You should be familiar with developer concepts and terminology.
+
+  -   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/app-service-configure.svg
 levels:
 - intermediate

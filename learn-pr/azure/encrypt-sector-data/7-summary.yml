@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: An overview of the content covered in the module, and resources for further learning.
-  ms.date: 04/11/2023
+  ms.date: 05/24/2024
   author: Adriamen
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)] 

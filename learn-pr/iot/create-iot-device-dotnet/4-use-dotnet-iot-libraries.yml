@@ -4,11 +4,13 @@ title: 'Exercise: Use the .NET IoT Libraries'
 metadata:
   title: 'Exercise: Use the .NET IoT Libraries'
   description: "In this unit, learn how to use the .NET IoT Libraries to interact with a BME280 sensor and an LED."
-  ms.date: 9/20/2021
+  ms.date: 9/9/2022
   author: camsoper
   ms.author: casoper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 10
 content: |
   [!include[](includes/4-use-dotnet-iot-libraries.md)]

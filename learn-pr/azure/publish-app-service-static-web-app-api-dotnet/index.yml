@@ -3,15 +3,16 @@ uid: learn.azure.publish-static-web-app-and-api-dotnet
 metadata:
   title: Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps
   description: Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps
-  ms.date: 01/06/2023
+  ms.date: 11/14/2023
   author: aaronpowell
   ms.author: aapowell
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: module-standard-task-based
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
   - aapowell-12032021
+  ms.service: static-web-apps
 title: Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps
 summary: Automatically deploy and update a Blazor web application and its API from a GitHub repository.
 abstract: |
@@ -34,12 +35,10 @@ products:
   - azure
   - azure-functions
   - azure-app-service
-  - azure-app-service-static
+  - static-web-apps
   - dotnet
   - aspnet-core
   - blazor
-subjects:
-- development-tools
 units:
   - learn.azure.publish-static-web-app-and-api-dotnet.1-introduction
   - learn.azure.publish-static-web-app-and-api-dotnet.2-exercise-get-started

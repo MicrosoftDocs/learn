@@ -24,9 +24,4 @@ Module 3 Tips and Tricks
 
 Module 3 Demo
 
-- Click-through demo: [Sales insights](https://edxinteractivepage.blob.core.windows.net/edxpages/mb-910/version2/LP-SALES-M2-INSIGHTS/index.html)
-
-Module 3 Labs
-
-- Lab 3.1: [Create and manage a lead](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M03_Lab1_Create_and_manage_a_Lead.md)
-- Lab 3.2: [Create and manage an opportunity](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M03_Lab2_Create_and_manage_an_Opportunity.md)
+- Click-through demo: [Sales insights](https://microsoftlearning.github.io/click-throughs/docs/mb-910/version2/LP-SALES-M2-INSIGHTS/index.html)

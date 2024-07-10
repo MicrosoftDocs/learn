@@ -4,10 +4,12 @@ title: Deploy applications with Intune
 metadata:
   title: Deploy applications with Intune
   description: "Deploy applications with Intune"
-  ms.date: 04/04/2023
+  ms.date: 06/07/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/2-deploy-applications-intune.md)]

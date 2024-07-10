@@ -30,7 +30,7 @@ To save time, start by running a script to host our test API in Azure. The scrip
 
    If you list the contents in the **ms-learn-print-framer-api** folder using the `ls` command, you'll see that the folder contains a file called **setup-exercise.sh** and a folder called **PrintFramerAPI**.
 
-   As the name suggests, **setup-exercise.sh** is the script that we'll run to create our lab environment. **PrintFramerAPI** contains the app that we want to deploy to Azure as a web app with a public API.
+   As the name suggests, **setup-exercise.sh** is the script we'll run to create our lab environment. **PrintFramerAPI** contains the app that we want to deploy to Azure as a web app with a public API.
 
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -40,7 +40,7 @@ To save time, start by running a script to host our test API in Azure. The scrip
    . code setup-exercise.sh
    ```
 
-1. Add a `location` parameter to the `az appservice plan create` command. Select a location from the previous list of sandbox regions. For example:
+1. Add a `location` parameter to the `az appservice plan create` command. Select a location from the preceding list of sandbox regions. For example:
 
    ```typescript
    az appservice plan create --name $apiappname --resource-group $RESOURCE_GROUP --location eastus --sku FREE --verbose
@@ -54,9 +54,9 @@ To save time, start by running a script to host our test API in Azure. The scrip
    bash setup-exercise.sh
    ```
 
-   The script takes a couple minutes to run. When the script finishes, two URLs appear for you to use and test the app deployment. Observe that during deployment, all dependencies needed to run our app are automatically installed on the remote App Service at this point.
+   The script takes a couple of minutes to run. When the script finishes, two URLs appear for you to use and test the app deployment. Observe that during deployment, all dependencies needed to run our app are automatically installed on the remote App Service at this point.
 
-1. To test that our app successfully deployed, copy the value from **Example URL** in the Cloud Shell output, and paste into your favorite browser.
+1. To test that our app successfully deployed, copy the value from **Example URL** in the Cloud Shell output and paste it into your favorite browser.
 
    The browser shows the value `20.0`, which is the dollar value that the API calculated for a frame with the dimensions 6 x 7 inches. You can try other values by replacing `6` and `7` in the URL.
 

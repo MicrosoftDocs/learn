@@ -4,10 +4,11 @@ metadata:
   title: 'Manage Azure Stack HCI volumes'
   description: Azure Stack HCI provides highly resilient and performant software-defined volumes.
   ms.date: 03/30/2022
-  author: mpolicht
-  ms.author: nedelgad
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: JasonGerend
+  ms.author: jgerend
+  ms.topic: module
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hci
 title: 'Manage Azure Stack HCI volumes'
 summary: Manage Azure Stack HCI volumes.
 abstract:  | 

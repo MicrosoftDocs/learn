@@ -4,11 +4,11 @@ title: Exercise - Call the methods of a .NET Class
 metadata:
   title: Exercise - Call the methods of a .NET Class
   description: "Exercise - Call the methods of a .NET Class"
-  ms.date: 02/24/2023
+  ms.date: 06/05/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: N/A, devx-track-dotnet
 durationInMinutes: 12
 content: |
   [!include[](includes/3-call-methods.md)]
@@ -26,11 +26,11 @@ quiz:
     - content: "`String dice = new Random();`."
       isCorrect: false
       explanation: "Incorrect. The `Random` type must be used to define an instance of the `Random` class."
-  - content: "A developer creates an instance of the `Random` class named `coins`. Which of the following code lines can they use to implement the `Next()` method?"
+  - content: "A developer creates an instance of the `Random` class named `coins`. Which of the following code lines can they use to call the `Next()` method?"
     choices:
     - content: "`int money = new coins.Next();`."
       isCorrect: false
-      explanation: "Incorrect. The keyword `new` can not be used when calling a method."
+      explanation: "Incorrect. The keyword `new` can't be used when calling a method."
     - content: "`int money = Random.Next();`."
       isCorrect: false
       explanation: "Incorrect. The `Random.Next()` method cannot be accessed directly (using the `Random` class) because it is a stateful method."

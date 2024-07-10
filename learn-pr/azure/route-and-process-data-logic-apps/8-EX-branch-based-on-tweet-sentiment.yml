@@ -5,15 +5,13 @@ title: Exercise - Branch based on tweet sentiment
 metadata:
   title: Exercise - Branch based on tweet sentiment
   description: Exercise - Branch based on tweet sentiment
-  ms.date: 5/10/2019
+  ms.date: 10/17/2023
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ROBOTS: INDEX,FOLLOW
 
 interactive: bash
-azureSandbox: true
 durationInMinutes: 12
 content: |
   [!include[](includes/8-EX-branch-based-on-tweet-sentiment.md)]

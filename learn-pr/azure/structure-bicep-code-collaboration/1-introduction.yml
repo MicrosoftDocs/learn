@@ -5,11 +5,12 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Learn how to create modular, reusable, and documented infrastructure as code by using Bicep, and enable team collaboration in the process.
-  ms.date: 08/06/2021
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 12/19/2023
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

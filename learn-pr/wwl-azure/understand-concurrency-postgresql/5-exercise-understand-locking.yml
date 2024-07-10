@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-concurrency-postgresql.exercise-understand-locking
+title: Exercise - Understand locking
+metadata:
+  title: Exercise - Understand locking
+  description: "Exercise - Understand locking."
+  ms.date: 05/09/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-understand-locking.md)]

@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.custom-model-ai-vision-image-classification
+metadata:
+  title: Image classification with custom Azure AI Vision models
+  description: "Classify images with custom Azure AI Vision models"
+  ms.date: 01/29/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: module-standard-task-based 
+  ms.service: azure-ai-vision
+title: Image classification with custom Azure AI Vision models
+summary: "Classify images by training a custom model with Azure AI Vision."
+abstract: |
+  After completing this module, you'll be able to:
+  - Create a custom Azure AI Vision classification model
+  - Understand image classification
+  - Understand object detection
+  - Train an image classifier in Vision Studio
+prerequisites: |
+  Before starting this module, you should already have familiarity with Azure and the Azure portal.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - ai-engineer
+products: 
+  - ai-vision
+units:
+- learn.wwl.custom-model-ai-vision-image-classification.introduction
+- learn.wwl.custom-model-ai-vision-image-classification.understand-custom-model-types
+- learn.wwl.custom-model-ai-vision-image-classification.create-custom-project
+- learn.wwl.custom-model-ai-vision-image-classification.label-train-custom-model
+- learn.wwl.custom-model-ai-vision-image-classification.exercise
+- learn.wwl.custom-model-ai-vision-image-classification.knowledge-check
+- learn.wwl.custom-model-ai-vision-image-classification.summary
+badge:
+  uid: learn.wwl.custom-model-ai-vision-image-classification.badge

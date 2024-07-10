@@ -1,4 +1,3 @@
-
 The preferred method for managing your Windows device, which has built-in mobile device management features in the operating system, is to enroll it as a mobile device with Intune.
 
 You must use device enrollment for devices running any operating system other than Windows, such as those on phones or Macs.
@@ -6,10 +5,10 @@ You must use device enrollment for devices running any operating system other th
 There are several different ways to enroll Windows devices to MDM, based on device type and its current state, including:
 
  -  If a device is already joined to your on-premises AD DS, you can use Group Policy to automatically enroll it to MDM.
- -  You can configure integration between Azure AD and MDM so that when you join a Windows device to Azure AD, it’s automatically enrolled to MDM.
+ -  You can configure integration between Microsoft Entra ID and MDM so that when you join a Windows device to Microsoft Entra ID, it’s automatically enrolled to MDM.
  -  You can enroll Windows devices to MDM manually, by using a Settings app, provisioning packages, or the Company Portal app.
 
-Automatic enrollment to MDM works for Windows devices, because only Windows devices can be joined to an on-premises AD DS and Azure AD. Other devices, such as Android and iOS devices, can only be enrolled manually to MDM by using the Company Portal app. The Company Portal app isn't included on Android and iOS devices by default; it's available as a free app in Google Play store and the Apple app store. If you want to enroll iOS devices, you must ensure that MDM is configured with a valid Apple Push Notification (APN) certificate. iPhones, iPad, and macOS devices require an APN certificate for secure communication with MDM, regardless if MDM is Intune, MDM for Microsoft 365, or a third-party MDM product.
+Automatic enrollment to MDM works for Windows devices, because only Windows devices can be joined to an on-premises AD DS and Microsoft Entra ID. Other devices, such as Android and iOS devices, can only be enrolled manually to MDM by using the Company Portal app. The Company Portal app isn't included on Android and iOS devices by default; it's available as a free app in Google Play store and the Apple app store. If you want to enroll iOS devices, you must ensure that MDM is configured with a valid Apple Push Notification (APN) certificate. iPhones, iPad, and macOS devices require an APN certificate for secure communication with MDM, regardless if MDM is Intune, MDM for Microsoft 365, or a third-party MDM product.
 
 For more details, refer to [Enable Windows device automatic enrollment](https://aka.ms/Ff5rl5).
 
@@ -23,10 +22,13 @@ Intune supports devices running the following operating systems through device e
  -  Windows 10/11 Cloud PCs on Windows 365
  -  Windows 10 IoT and Windows 10 Holographic
  -  Windows 10 2019 LTSC
- -  Windows RT 8.1, and Windows 8.1 (sustaining mode)
- -  Apple iOS/iPadOS 13.0 and later
- -  macOS X 10.15 and later
- -  Android 6.0 and later, including Samsung Knox 2.4 and later and Android for Work
+ -  Surface Hub
+ -  Windows 10 Teams (Surface Hub)
+ -  Apple iOS/iPadOS 14.0 and later
+ -  macOS 11.0 and later
+ -  Android 8.0 and later, including Samsung KNOX Standard 3.0 and higher
+ -  Linux Ubuntu Desktop (20.04 or 22.04 LTS on x86/64)
+ -  Chrome OS
 
 > [!NOTE]
 > Intune offered a software client for legacy operating systems. This is not needed on current supported operating systems.
@@ -41,7 +43,7 @@ By default, all users who are assigned an Intune license are allowed to enroll t
     
      -  Minimum version
      -  Maximum version
- -  Restrict enrollment of personally owned devices. You can configure this restriction for iOS, Android, Android work profile, and macOS devices only; this restriction isn't available for Windows devices.
+ -  Restrict enrollment of personally owned devices. You can configure this restriction for iOS, Android, Android work profile, macOS, and personally owned devices for Windows 10/11.
 
 :::image type="content" source="../media/configure-platform-326ebf7a.png" alt-text="Screenshot of the Configure platforms screen.":::
 
@@ -63,4 +65,4 @@ Users can use their devices for personal work and leisure as soon as they obtain
 
 They only allow users to access company resources from enrolled devices that comply with organizational policy. They use compliance policies to define how devices should be configured and conditional access policies for controlling access to organizational resources. If a user tries to access resources from a non-enrolled device, he or she's denied access and asked to enroll the device first.
 
-You can configure automatic enrollment to MDM for Windows devices only. If a Windows device is already joined to on-premises AD DS which is synced to Azure AD, you can configure the **Enable automatic MDM enrollment using default Azure AD credentials** Group Policy setting to enroll devices to MDM.
+You can configure automatic enrollment to MDM for Windows devices only. If a Windows device is already joined to on-premises AD DS which is synced to Microsoft Entra ID, you can configure the **Enable automatic MDM enrollment using default Microsoft Entra credentials** Group Policy setting to enroll devices to MDM.

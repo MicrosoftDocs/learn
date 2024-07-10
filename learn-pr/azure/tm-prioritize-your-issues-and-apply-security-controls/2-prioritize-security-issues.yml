@@ -4,18 +4,17 @@ title: Prioritize security issues
 metadata:
   title: Prioritize Security Issues
   description: Learn how to prioritize security issues
-  ms.date: 02/28/2020
+  ms.date: 08/01/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-prioritize-security-issues.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An issue that may cause serious impact for users typically fall under which priority?"
+  - content: "An issue that may cause serious impact for users typically falls under which priority?"
     choices:
     - content: "Important"
       isCorrect: true

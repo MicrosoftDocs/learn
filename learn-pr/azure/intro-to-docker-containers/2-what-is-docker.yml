@@ -5,11 +5,10 @@ title: What is Docker?
 metadata:
   title: What is Docker?
   description: In this unit, we discuss what Docker is and its architecture.
-  ms.date: 03/24/2023
+  ms.date: 09/16/2023
   author: rayoef
   ms.author: rayoflores
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 5
 content: |

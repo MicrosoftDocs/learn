@@ -6,8 +6,8 @@ metadata:
   ms.date: 4/5/2023
   author: ivorb
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: module-standard-task-based
+  ms.service: azure-ai-services
 title: Build natural language solutions with Azure OpenAI Service
 summary: This module provides engineers with the skills to begin building apps that integrate with the Azure OpenAI Service.
 abstract: |
@@ -33,7 +33,6 @@ products:
   - azure
 subjects: 
   - cloud-computing
-  - data-ai
 units:
 - learn.wwl.build-language-solution-azure-openai.introduction
 - learn.wwl.build-language-solution-azure-openai.integrate-azure-openai-into-app

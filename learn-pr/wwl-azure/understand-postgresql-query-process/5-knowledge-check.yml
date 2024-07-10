@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/27/2022
+  ms.date: 05/11/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -21,32 +20,32 @@ quiz:
     choices:
     - content: "Parser, Planner, Executor, Rewriter."
       isCorrect: true
-      explanation: "That's correct. PostgreSQL queries go through the following components (in order): Parsing, Rewriter (transformation), Planning, Execution."
+      explanation: "Correct. PostgreSQL queries go through the following components (in order): Parsing, Rewriter (transformation), Planning, Execution."
     - content: "Lexer, scan, Parser, Executor."
       isCorrect: false
-      explanation: "That's incorrect. The lexer and scan components are part of the Parser, which is one of the four main query processing components in PostgreSQL."
+      explanation: "Incorrect. The lexer and scan components are part of the Parser, which is one of the four main query processing components in PostgreSQL."
     - content: "Cost estimator, Parser, Executor, Rewriter."
       isCorrect: false
-      explanation: "That's incorrect. The cost estimator is functionality included in the Planner. The cost estimator isn't a separate query processing component."
-  - content: "What is the result of running the following statement? EXPLAIN ANALYZE INSERT INTO animal (ani_id, name, weight_kg, cat_id, enc_id) VALUES (28, 'Robin Robin', 0.5, 2, 4);"
+      explanation: "Incorrect. The cost estimator is functionality included in the Planner. The cost estimator isn't a separate query processing component."
+  - content: "What is the result of running the following statement? EXPLAIN ANALYZE INSERT INTO animal (ani_id, name, weight_kg, cat_id, enc_id) VALUES (28, 'Robin - Robin', 0.5, 2, 4);"
     choices:
-    - content: "The statement isn't syntactically correct and will throw an error."
+    - content: "The statement isn't syntactically correct and throws an error."
       isCorrect: false
-      explanation: "That's incorrect. The statement is syntactically correct and will execute without an error."
-    - content: "The query plan for the INSERT statement is displayed, but the new record statement will be rolled back and not inserted into the animal table."
+      explanation: "Incorrect. The statement is syntactically correct and executes without an error."
+    - content: "The query plan for the INSERT statement is displayed, but the new record statement rolls back and doesn't insert into the animal table."
       isCorrect: false
-      explanation: "That's incorrect. EXPLAIN ANALYZE will both display an execution plan and make any changes to the database contained in the query statement."
+      explanation: "Incorrect. EXPLAIN ANALYZE both displays an execution plan and make any changes to the database contained in the query statement."
     - content: "The query plan for the INSERT statement is displayed, and a new record is inserted into the animal table."
       isCorrect: true
-      explanation: "That's correct. EXPLAIN ANALYZE both executes the query and returns the execution plan for the query."
+      explanation: "Correct. EXPLAIN ANALYZE both executes the query and returns the execution plan for the query."
   - content: "You're working on a complex query. You would like to see the query optimizer's plan to help you understand why it's running slowly. What should you do?"
     choices:
     - content: "Add the keyword EXPLAIN before the query statement."
       isCorrect: true
-      explanation: "That's correct. The keyword EXPLAIN will display the query optimizer's plan for the query, instead of running the query."
+      explanation: "Correct. The keyword EXPLAIN displays the query optimizer's plan for the query, instead of running the query."
     - content: "Add the keyword ANALYZE before the query statement."
       isCorrect: false
-      explanation: "That's incorrect. Adding ANALYZE before the query will no display the query optimizer's plan."
+      explanation: "Incorrect. Adding ANALYZE before the query doesn't display the query optimizer's plan."
     - content: "Add the keywords EXPLAIN ANALYZE before the query statement."
       isCorrect: false
-      explanation: "That's incorrect. EXPLAIN ANALYZE will both execute the query and return the execution plan for the query. You only want to see the execution plan, and don't want to run the query."
+      explanation: "Incorrect. EXPLAIN ANALYZE both executes the query and returns the execution plan for the query. You only want to see the execution plan, and don't want to run the query."

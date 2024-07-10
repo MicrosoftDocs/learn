@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 11/17/2020
+  ms.date: 05/20/2023
   author: Sean-Kerawala
   ms.author: sekerawa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 quiz:
   questions:

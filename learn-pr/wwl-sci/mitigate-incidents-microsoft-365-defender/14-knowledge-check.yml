@@ -4,13 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/27/2023
+  ms.date: 01/24/2024
   author: wwlpublish
-  ms.author: bneeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-azureSandbox: false
-labModal: false
+  ms.author: kelawson
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/14-knowledge-check.md)]
@@ -25,14 +22,14 @@ quiz:
     - content: "Non-Azure Machines"
       isCorrect: false
       explanation: "Incorrect. The incident page doesn't have a tab for Non-Azure machines."
-    - content: "Mailboxes"
+    - content: "Assets"
       isCorrect: true
-      explanation: "Correct. The incident page has a tab for mailboxes."
+      explanation: "Correct. The incident page has a tab for Assets."
   - content: "You can classify an Incident as which of the following?"
     choices:
-    - content: "True alert"
+    - content: "True positive"
       isCorrect: true
-      explanation: "Correct. True alert is an option."
+      explanation: "Correct. True positive is an option."
     - content: "High alert"
       isCorrect: false
       explanation: "Incorrect. High alert isn't an option."

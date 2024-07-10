@@ -8,8 +8,7 @@ metadata:
   ms.date: 04/09/2021
   author: cassiebreviu
   ms.author: cassieb
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.topic: learning-path
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
@@ -31,8 +30,6 @@ roles:
 - student
 products: 
 - azure-machine-learning
-subjects:
-- development-tools
 modules:
 - learn.pytorch.intro-machine-learning
 - learn.pytorch.intro-computer-vision

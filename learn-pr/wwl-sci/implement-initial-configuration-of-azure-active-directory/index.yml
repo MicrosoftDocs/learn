@@ -1,24 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-initial-configuration-of-azure-active-directory
 metadata:
-  title: Implement initial configuration of Azure Active Directory
+  title: Implement initial configuration of Microsoft Entra ID
   description: "Learn to create an initial Azure Active Directory configuration to ensure all the identity solutions available in Azure are ready to use. This module explores how to build and configure an Azure AD system."
-  ms.date: 02/03/2023
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Implement initial configuration of Azure Active Directory
-summary: Learn to create an initial Azure Active Directory configuration to ensure all the identity solutions available in Azure are ready to use. This module explores how to build and configure an Azure AD system.
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Implement initial configuration of Microsoft Entra ID
+summary: Learn to create an initial Microsoft Entra ID configuration to ensure all the identity solutions available in Azure are ready to use. This module explores how to build and configure a Microsoft Entra system.
 abstract: |
-  By the end of this module, you will be able to:
-  - Implement initial configuration of Azure Active Directory
-  - Create, configure, and manage identities
-  - Implement and manage external identities (excluding B2C scenarios)
-  - Implement and manage hybrid identity
-prerequisites: |
-  None
-iconUrl: /training/achievements/azure-active-directory-configure-directory.svg
+  By the end of this module, you'll be able to:
+
+  -   Implement initial configuration of Microsoft Entra ID.
+
+  -   Create, configure, and manage identities.
+
+  -   Implement and manage external identities (excluding B2C scenarios).
+
+  -   Implement and manage hybrid identity.
+prerequisites: None
+iconUrl: /learn/achievements/azure-active-directory-configure-directory.svg
 levels:
 - advanced
 roles:
@@ -27,10 +33,6 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-b2c
-- azure-active-directory-domain
-- entra-workload-identities
 subjects:
 - identity-access
 units:

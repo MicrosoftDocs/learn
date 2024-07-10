@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.1-introduction
-title: Introduction
+title: Introduction.
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 01/05/2022
+  ms.date: 04/05/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

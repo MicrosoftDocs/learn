@@ -1,30 +1,28 @@
-When looking at the [repository](https://github.com/Azure-Samples/aks-contoso-ships-sample), you came across [this file](https://github.com/Azure-Samples/aks-contoso-ships-sample/blob/434beca73f7bf5504c0e8d38890daace66f7723f/frontend/src/config.js). It's a config file that is loaded in [the `index.html`](https://github.com/Azure-Samples/aks-contoso-ships-sample/blob/f1b1796da12b714fb7ea2a1c807e0e15b0b2abbb/frontend/public/index.html#L5) file to allow the environment variables to be updated without the need of a full image build.
+In the [application repository](https://github.com/Azure-Samples/aks-contoso-ships-sample), there's a [config file](https://github.com/Azure-Samples/aks-contoso-ships-sample/blob/434beca73f7bf5504c0e8d38890daace66f7723f/frontend/src/config.js) loaded in the [`index.html`](https://github.com/Azure-Samples/aks-contoso-ships-sample/blob/f1b1796da12b714fb7ea2a1c807e0e15b0b2abbb/frontend/public/index.html#L5) file to allow the environment variables to be updated without the need of a full image build.
 
 The configuration file doesn't contain sensitive information, it just needs to be loaded along with the container. How can we mount the file in the container without the need of encryption or encoding?
 
 ## Understand ConfigMaps
 
-ConfigMaps are the counterpart of Secrets. While Secrets provide a mechanism to store and deliver sensitive data, ConfigMaps are objects used to store non-sensitive data using the same key-value structure as a Secret. The ConfigMaps object allows you to decouple configurations from container images, allowing those images to remain stateless.
+ConfigMaps are counterparts to Secrets. While Secrets provide a way to store and deliver sensitive data, ConfigMaps are objects that provide a way to store nonsensitive data using the same key-value structure as a Secret. The ConfigMaps object allows you to decouple configurations from container images so the images remain stateless.
 
-The motivation behind the creation of a ConfigMap is to store configuration data separately from the application code and load it almost the same way we load Secret objects in the Pod. ConfigMaps can only be referenced by an environment variable or mounted as a file in a volume inside the container.
+You create a ConfigMap to store configuration data separately from the application code and load it similarly to how we load Secret objects in the Pod. You can only reference ConfigMaps by using an environment variable, or by mounting them as a file in a volume inside the container.
 
-ConfigMaps have a data size limitation; you can hold up to 1 MiB of data in a ConfigMap. The size limitation helps you avoid large, complex configuration files by forcing users to break large configurations into smaller, more manageable, chunks. With ConfigMaps, you can mount only the required configuration files in your containers, allowing for more granularity.
+ConfigMaps have a data size limitation: you can hold up to *1 MiB* of data in a ConfigMap. The size limitation helps you avoid large, complex configuration files by having you break large configurations into smaller chunks. With ConfigMaps, you can mount only the required configuration files in your containers, which allows for more granularity.
 
-Like Secrets, ConfigMaps are namespaced. A ConfigMap can only be accessed and mounted by the containers present in the same namespace as it was created.
+Like Secrets, ConfigMaps are namespaced. You can only access and mount a ConfigMap by using the containers present in the same namespace that it was created in.
 
-ConfigMaps are also widely used by other tools such as [Helm](https://helm.sh) and Kubernetes Operators to store and read states.
+ConfigMaps are also widely used by other tools, such as [Helm](https://helm.sh) and Kubernetes Operators, to store and read states.
 
 ### ConfigMap updates
 
-All ConfigMaps that *are mounted as volumes* inside a pod are automatically updated once their value is changed.
+All ConfigMaps that are *mounted as volumes* inside a pod are automatically updated once their value is changed. This change might not occur immediately because of the [Kubelet configuration](https://kubernetes.io/docs/concepts/configuration/configmap/#mounted-configmaps-are-updated-automatically), but it happens automatically so there's no need to restart the Pod.
 
-This change may not occur immediately because of the [Kubelet configuration](https://kubernetes.io/docs/concepts/configuration/configmap/#mounted-configmaps-are-updated-automatically), but they'll be eventually updated and there's no need to restart the Pod.
+When a ConfigMap is *bound to environment variables*, it isn't automatically updated. For these cases, it's necessary to restart the Pod for the changes to take effect.
 
-ConfigMaps that are bound to environment variables though, won't. If the ConfigMap is bound to an environment variable, it's necessary to restart the Pod for the changes to take effect.
+## Create and use ConfigMaps
 
-## Create and Use ConfigMaps
-
-To create a ConfigMap you'll use the same approach as the Secret, a YAML file. This file follows this specification:
+You can create a ConfigMap using the same approach as a Secret: a YAML file. The ConfigMap specification is as follows:
 
 ```yaml
 apiVersion: v1
@@ -39,7 +37,7 @@ data:
     property, called "file-like" values
 ```
 
-You can reference ConfigMaps by one or more keys in the specification of a Pod or Deployment:
+You can reference ConfigMaps by one or more keys in the specification of a Pod or Deployment, as shown in the following example:
 
 ```yaml
 apiVersion: v1
@@ -60,7 +58,7 @@ spec:
               key: key-name
 ```
 
-Or mounted as files inside the pod using read-only volumes:
+You can also mount them as files inside the pod using read-only volumes, as shown in the following example:
 
 ```yaml
 apiVersion: v1

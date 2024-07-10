@@ -4,13 +4,10 @@ title: Use Performance Monitor to identify performance problems
 metadata:
   title: Use Performance Monitor to identify performance problems
   description: "Use Performance Monitor to identify performance problems"
-  ms.date: 04/06/2022
+  ms.date: 12/28/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-use-performance-monitor-to-identify-performance-problems.md)]

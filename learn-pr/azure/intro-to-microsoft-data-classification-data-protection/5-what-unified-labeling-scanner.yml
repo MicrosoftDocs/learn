@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.data-classification-and-data-protection.5-what-unified-labeling-scanner
-title: What is unified labeling scanner?
+title: The information protection scanner
 metadata:
-  title: What is unified labeling scanner?
+  title: Learn about the Microsoft Purview Information Protection scanner, and how to configure and install the scanner to help discover, classify, and protect files.
   description: What is unified labeling scanner?
-  ms.date: 03/25/2021
+  ms.date: 08/08/2023
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-what-unified-labeling-scanner.md)]

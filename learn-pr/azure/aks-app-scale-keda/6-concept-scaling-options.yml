@@ -1,13 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-app-scaling-keda.6-concept-scaling-options
 metadata:
-  title: Available Kubernetes scaling options
-  description: There are many options to help scale Kubernetes
-  ms.date: 5/2/2021 
-  author: pplavetzki
-  ms.author: paplavet 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  title: Kubernetes scaling options
+  description: Learn about the different scaling options for Kubernetes.
+  ms.date: 06/03/2024 
+  author: schaffererin
+  ms.author: schaffererin
+  ms.topic: unit
 title: Concept - Kubernetes scaling options
 durationInMinutes: 5
 content: |
@@ -15,36 +14,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Your workload to scale performs CPU-intensive photo transformation, which option should you choose?"
+  - content: "Your workload performs CPU-intensive photo transformation. Which scaling option should you choose?"
     choices:
     - content: "KEDA"
       isCorrect: false
-      explanation: "Although you can use KEDA to scale CPU-intensive workloads, a HPA is the best choice."
+      explanation: "Although you can use KEDA to scale CPU-intensive workloads, an HPA is the best choice."
     - content: "HPA"
       isCorrect: true
-      explanation: "In this case, using a HPA is the best choice for CPU-intensive workloads."
+      explanation: "In this case, using an HPA is the best choice for CPU-intensive workloads."
     - content: "Cluster Autoscaler"
       isCorrect: false
-      explanation: "Cluster autoscaler is for scaling the number of nodes in a Kubernetes cluster"
-  - content: "Your cluster is getting close to utilizing all its available resources during peak times.  Which option should you use?"
+      explanation: "The Cluster Autoscaler is for scaling the number of nodes in a Kubernetes cluster."
+  - content: "Your cluster is getting close to using all its available resources during peak times. Which scaling option should you use?"
     choices:
     - content: "KEDA"
       isCorrect: false
-      explanation: "Using KEDA will not increase the total available resources for a cluster."
+      explanation: "KEDA doesn't increase the total available resources for a cluster."
     - content: "HPA"
       isCorrect: false
-      explanation: "Using a HPA will not increase the total available resources for a cluster"
+      explanation: "The HPA doesn't increase the total available resources for a cluster."
     - content: "Cluster Autoscaler"
       isCorrect: true
-      explanation: "Cluster autoscaler is for scaling the number of nodes in a Kubernetes cluster"
-  - content: "Your service processes messages from an Apache Kafka queue, which option should you choose?"
+      explanation: "The Cluster Autoscaler is for scaling the number of nodes in a Kubernetes cluster."
+  - content: "Your service processes messages from an Apache Kafka queue. Which scaling option should you choose?"
     choices:
     - content: "KEDA"
       isCorrect: true
-      explanation: "Using KEDA is the ideal choice to scale resources based on received events"
+      explanation: "KEDA is the ideal choice for scaling resources based on received events."
     - content: "HPA"
       isCorrect: false
-      explanation: "Although you can use a HPA to scale this service, it is not efficient and fails to measure the quantity of messages in the queue."
+      explanation: "Although you can use an HPA to scale this service, it's not efficient and fails to measure the quantity of messages in the queue."
     - content: "Cluster Autoscaler"
       isCorrect: false
-      explanation: "Cluster autoscaler is for scaling the number of nodes in a Kubernetes cluster"
+      explanation: "The Cluster Autoscaler is for scaling the number of nodes in a Kubernetes cluster."

@@ -1,0 +1,66 @@
+### YamlMime:Module
+uid: learn.wwl.manage-authorization-microsoft-entra-id
+metadata:
+  title: Manage authorization by using Microsoft Entra ID
+  description: "Administer authorization in Microsoft Entra ID."
+  ms.date: 06/25/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: module-intro-to-product
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Manage authorization by using Microsoft Entra ID
+summary: This module is designed to provide administrators with the knowledge and skills required to effectively manage authorization using Microsoft Entra ID, ensuring that users have the appropriate access to resources and data.
+abstract: |
+  By the end of this module, participants are able to:
+
+  -   Set Azure role permissions across management groups, subscriptions, and resources for access control.
+
+  -   Assign built-in roles in Microsoft Entra ID and Azure for predefined user permissions.
+
+  -   Create custom roles in Azure and Microsoft Entra ID to match organizational access needs.
+
+  -   Manage Entra Permissions, Privileged Identity Management, and Conditional Access for refined control and compliance.
+prerequisites: '-   None'
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- entra
+- entra-permissions-management
+- entra-id
+subjects:
+- cloud-security
+units:
+- learn.wwl.manage-authorization-microsoft-entra-id.introduction
+- learn.wwl.manage-authorization-microsoft-entra-id.azure-management-groups
+- learn.wwl.manage-authorization-microsoft-entra-id.configure-azure-role-permissions
+- learn.wwl.manage-authorization-microsoft-entra-id.azure-role-based-access-control
+- learn.wwl.manage-authorization-microsoft-entra-id.azure-built-in-roles
+- learn.wwl.manage-authorization-microsoft-entra-id.assign-azure-role-permissions
+- learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-built-in-roles
+- learn.wwl.manage-authorization-microsoft-entra-id.built-roles-microsoft-entra-id
+- learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-role-based-access-control
+- learn.wwl.manage-authorization-microsoft-entra-id.create-new-custom-roles-microsoft-entra-id
+- learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-permissions-management
+- learn.wwl.manage-authorization-microsoft-entra-id.enable-microsoft-entra-permissions-management-your-organization
+- learn.wwl.manage-authorization-microsoft-entra-id.zero-trust-security
+- learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-privileged-identity-management
+- learn.wwl.manage-authorization-microsoft-entra-id.configure-privileged-identity-management
+- learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-id-governance
+- learn.wwl.manage-authorization-microsoft-entra-id.entitlement-management
+- learn.wwl.manage-authorization-microsoft-entra-id.access-reviews
+- learn.wwl.manage-authorization-microsoft-entra-id.identity-lifecycle-management
+- learn.wwl.manage-authorization-microsoft-entra-id.lifecycle-workflows
+- learn.wwl.manage-authorization-microsoft-entra-id.delegation-and-roles-in-entitlement-management
+- learn.wwl.manage-authorization-microsoft-entra-id.create-access-review-azure-resource-microsoft-entra-roles
+- learn.wwl.manage-authorization-microsoft-entra-id.conditional-access
+- learn.wwl.manage-authorization-microsoft-entra-id.knowledge-check
+- learn.wwl.manage-authorization-microsoft-entra-id.summary
+badge:
+  uid: learn.wwl.manage-authorization-microsoft-entra-id.badge

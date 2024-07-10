@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-blazor.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: "Blazor is a user interface framework for .NET developers that can be used to build applications with Razor and C#. Applications run on the server with ASP.NET Core or in the browser with WebAssembly."
+  ms.date: 01/12/2024
+  author: csharpfritz
+  ms.author: jefritz
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

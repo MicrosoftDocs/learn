@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.use-copilot-to-create-training-materials.use-microsoft-copilot-as-your-personal-tutor
+title: Exercise - Use Microsoft Copilot as your personal tutor
+metadata:
+  title: Exercise - Use Microsoft Copilot as your personal tutor
+  description: This content is a part of the 'Use Microsoft Copilot to create training materials' module.
+  ms.date: 03/06/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 40
+content: |
+  [!include[](includes/3-use-microsoft-copilot-as-your-personal-tutor.md)]

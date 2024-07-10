@@ -1,3 +1,0 @@
-The Bot Framework SDK provides libraries that developers can use to implement a bot in their preferred programming language. You can use it to create bots that support conversational flows that range from simple single-turn exchanges to complex, multi-turn conversations.
-
-If you are planning to implement a highly complex bot, you can use the Bot Framework SDK, but you may want to consider the graphical bot development environment offered by the Bot Framework Composer. You can learn more about the Bot Framework Composer in the [Create a Bot with the Bot Framework Composer](/training/modules/create-bot-with-bot-framework-composer/) module.

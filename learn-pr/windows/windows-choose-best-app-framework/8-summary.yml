@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows.windows-best-app-framework.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Your company has three upcoming Windows development projects and you need to choose the best Windows UI framework for each project. This module introduced the Windows UI frameworks that are available for Windows development. It also provided guidance on how to choose the best framework for your application.
+  ms.date: 01/17/2024
+  author: alvinashcraft
+  ms.author: aashcraft
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary.md)]

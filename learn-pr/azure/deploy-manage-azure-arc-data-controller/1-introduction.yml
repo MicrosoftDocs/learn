@@ -5,10 +5,9 @@ metadata:
   title: Introduction
   description: Learn how to deploy and manage Azure Arc data controller.
   ms.date: 12/19/2022
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: MikeRayMSFT
+  ms.author: mikeray
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/introduction.md)]

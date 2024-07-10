@@ -3,11 +3,10 @@ uid: learn.control-access-to-azure-storage-with-sas.5-use-stored-access-policies
 metadata:
   title: Use stored access policies to delegate access to Azure Storage
   description: Use stored access policies to delegate access to Azure Storage
-  ms.date: 03/06/2020
-  author: tamram
-  ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/13/2023
+  author: normesta
+  ms.author: normesta
+  ms.topic: unit
 title: Use stored access policies to delegate access to Azure Storage
 durationInMinutes: 4
 content: |

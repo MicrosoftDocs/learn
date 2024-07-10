@@ -5,11 +5,11 @@ metadata:
   unitType: knowledge_check
   title: Check your knowledge
   description: Review what you've learned.
-  ms.date: 02/11/2022
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 05/11/2023
+  author: flang-msft
+  ms.author: franlanglois
+  manager: mcleans
+  ms.topic: unit
 durationInMinutes: 3
 content: |
 quiz:

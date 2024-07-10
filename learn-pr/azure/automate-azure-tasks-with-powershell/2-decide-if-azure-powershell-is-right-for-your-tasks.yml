@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.automate-azure-tasks-with-powershell.2-decide-if-azure-powershell-is-right-for-your-tasks
-title: Decide if Azure PowerShell is right for your tasks
+title: Decide if Azure PowerShell is the appropriate tool for your tasks
 metadata:
-  title: Decide if Azure PowerShell is right for your tasks
-  description: Decide if Azure PowerShell is right for your tasks
-  ms.date: 09/24/2018
+  title: Decide if Azure PowerShell is the appropriate tool for your tasks
+  description: Decide if Azure PowerShell is the appropriate tool for your tasks
+  ms.date: 06/07/2024
   author: mikefrobbins
   ms.author: mirobb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
 durationInMinutes: 5
 content: |
   [!include[](includes/2-decide-if-azure-powershell-is-right-for-your-tasks.md)]

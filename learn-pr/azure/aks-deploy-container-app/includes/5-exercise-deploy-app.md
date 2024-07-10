@@ -11,7 +11,7 @@ You create a deployment manifest file to deploy your application. The manifest f
 
 Kubernetes groups containers into logical structures called pods, which have no intelligence. Deployments add the missing intelligence to create your application. Let's create a deployment file.
 
-1. Sign in to Azure Cloud Shell if you haven't done so already.
+1. Sign in to Azure Cloud Shell.
 
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/bash?azure-portal=true)
@@ -56,7 +56,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
             app: contoso-website
     ```
 
-    Pods don't have given names when they're created inside deployments. The pod's name is the deployment's name with a random ID added to the end.
+    Pods don't use the same names as the deployments. The pod's name is a mix of the deployment's name with a random ID added to the end.
 
     Notice the use of the `labels` key. You add the `labels` key to allow deployments to find and group pods.
 

@@ -2,21 +2,21 @@
 uid: learn.support-concurrency-blob-storage
 metadata:
   title: Support concurrency in Blob storage apps with ETags and blob leases
-  description: In this module you will learn how to implement application code to manage concurrency in blob storage.
-  ms.date: 04/06/2019
-  author: tamram
-  ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: In this module, you'll learn how to implement application code to manage concurrency in blob storage.
+  ms.date: 11/06/2023
+  author: normesta
+  ms.author: normesta
+  ms.topic: module
   ms.learn-contact: nickwalk
+  ms.service: azure-blob-storage
 title: Support concurrency in Blob storage apps with ETags and blob leases
 summary: Develop apps that properly support concurrency against data in Azure Blob storage
 abstract: |
   In this module, you will:
-  - Identify issues associated with concurrency in multi-user applications
-  - Identify the three concurrency strategies used for data in Blob storage, along with their tradeoffs
-  - Implement optimistic concurrency with blobs using ETags
-  - Implement pessimistic concurrency with blobs using blob leases
+  - Identify issues associated with concurrency in multi-user applications.
+  - Identify the three concurrency strategies used for data in Blob storage, along with their tradeoffs.
+  - Implement optimistic concurrency with blobs using ETags.
+  - Implement pessimistic concurrency with blobs using blob leases.
 prerequisites: |
   - Experience editing C# .NET code at a beginner level
 iconUrl: /training/achievements/support-concurrency-blob-storage.svg

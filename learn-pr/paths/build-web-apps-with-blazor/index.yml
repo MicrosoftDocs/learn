@@ -1,15 +1,17 @@
 ### YamlMime:LearningPath
 uid: learn.aspnet.build-blazor-webapps
-title: Build web applications with Blazor
-summary: Learn how to build your first web application with the Blazor web user-interface framework.
+title: Build web apps with Blazor
+summary: Learn how to build your first web app with the Blazor web user-interface framework.
 metadata:
-  title: Build web applications with Blazor learning path
-  description: Learn how to build your first web application with the free and open-source Blazor web user-interface framework.
-  ms.date: 09/03/2021
+  title: Build web apps with Blazor learning path
+  description: Learn how to build your first web app with the free and open-source Blazor web user-interface framework.
+  ms.date: 01/26/2024
   author: csharpfritz
   ms.author: jefritz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-blazor
+  ms.topic: learning-path
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 prerequisites: None
 iconUrl: /training/achievements/build-blazor-webapps.svg
 levels:
@@ -21,11 +23,10 @@ products:
 - blazor
 - aspnet-core
 - dotnet
-subjects:
-- development-tools
 modules:
 - learn.intro-to-blazor
 - learn.build-web-app-blazor-webassembly-vscode
+- learn.build-blazor-todo-list
 - learn.interact-with-data-blazor-web-apps
 - learn.use-pages-routing-layouts-improve-blazor-navigation
 - learn.use-forms-in-blazor-web-apps

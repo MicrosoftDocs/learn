@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.philanthropies.streamline-training-plans-with-ai-tools
+metadata:
+  title: Streamline training plans with AI tools
+  description: AI tools can aid in streamlining training plans. It helps in building learning objectives, streamlining research, creating assessments, providing feedback, and improving writing quality. Collaboration is boosted with tools like Microsoft Copilot.
+  ms.date: 03/07/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: module
+  ms.service: artificial-intelligence
+title: Streamline training plans with AI tools
+summary: This module provides use cases on how AI tools can streamline training tasks and boost efficiency in educational settings.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Assess the role of AI tools in assisting with a remote training environment.  
+  - Evaluate the role of AI tools in enhancing content creation.  
+  - Differentiate between the functionalities of AI tools in improving the efficiency and quality of training plans.
+iconUrl: /training/achievements/streamline-training-plans-with-ai-tools.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- business-user
+- higher-ed-educator
+- data-engineer
+- school-leader
+products:
+- ai-services
+- azure-machine-learning
+- azure-machine-learning-designer
+- m365-apps
+- azure-translator-text
+- azure-translator-speech
+- ms-copilot
+- language-service
+subjects:
+- artificial-intelligence
+units:
+- learn.philanthropies.streamline-training-plans-with-ai-tools.introduction
+- learn.philanthropies.streamline-training-plans-with-ai-tools.use-ai-for-training-plans
+- learn.philanthropies.streamline-training-plans-with-ai-tools.ai-support-for-content-creation
+- learn.philanthropies.streamline-training-plans-with-ai-tools.enhance-training-plans-with-microsoft-365-copilot
+- learn.philanthropies.streamline-training-plans-with-ai-tools.enhance-meetings-remote-training-environments
+- learn.philanthropies.streamline-training-plans-with-ai-tools.use-ai-tools-to-build-assessments
+- learn.philanthropies.streamline-training-plans-with-ai-tools.use-generative-ai-self-evaluation
+- learn.philanthropies.streamline-training-plans-with-ai-tools.knowledge-check
+- learn.philanthropies.streamline-training-plans-with-ai-tools.summary
+badge:
+  uid: learn.philanthropies.streamline-training-plans-with-ai-tools.badge

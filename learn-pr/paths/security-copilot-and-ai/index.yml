@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.wwl.security-copilot-and-ai
+metadata:
+  title: 'Get started with Microsoft Copilot for Security'
+  description: 'Get started with Microsoft Copilot for Security.'
+  ms.date: 01/07/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: learning-path
+title: 'Get started with Microsoft Copilot for Security'
+prerequisites: |
+  - Working knowledge of security operations and incident response
+  - Working knowledge of Microsoft security products and services
+summary: |
+  Learn about Microsoft Copilot for Security, an AI-powered security analysis tool that enables analysts to process security signals and respond to threats at a machine speed, and the AI concepts upon which it's built.
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: false
+levels:
+- beginner
+roles:
+- student
+- security-engineer
+- security-operations-analyst
+- business-user
+- business-owner
+products:
+- defender-xdr
+- microsoft-sentinel
+- intune
+- entra
+- defender-for-threat-intelligence
+- ms-copilot
+subjects:
+- security
+- artificial-intelligence
+modules:
+- learn.wwl.get-started-ai-fundamentals
+- learn.wwl.fundamentals-generative-ai
+- learn.wwl.responsible-generative-ai
+- learn-wwl.security-copilot-getting-started
+- learn.security-copilot-describe-core-features
+- learn.security-copilot-embedded-experiences
+- learn.security-copilot-exercises
+trophy:
+  uid: earn.wwl.security-copilot-and-ai.trophy

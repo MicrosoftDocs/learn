@@ -3,11 +3,12 @@ uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.exercise-monitor
 metadata:
   title: Exercise - Monitor your Azure Batch job in the CLI
   description: Exercise - Monitor your Azure Batch job in the CLI
-  ms.date: 05/06/2019
+  ms.date: 04/04/2024
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jushiman
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 title: Exercise - Monitor your Azure Batch job in the CLI
 durationInMinutes: 6
 content: |

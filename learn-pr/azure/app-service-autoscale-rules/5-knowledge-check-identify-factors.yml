@@ -1,37 +1,36 @@
 ### YamlMime:ModuleUnit
 uid: learn.app-service-autoscale-rules.5-knowledge-check-identify-factors
-title: Knowledge Check - Identify factors for implementing autoscaling
+title: Knowledge check - Identify factors for implementing autoscaling
 metadata:
-  title: Knowledge Check - Identify factors for implementing autoscaling
-  description: Knowledge Check - Identify factors for implementing autoscaling
-  ms.date: 04/10/2019
+  title: Knowledge check - Identify factors for implementing autoscaling
+  description: Knowledge check - Identify factors for implementing autoscaling
+  ms.date: 03/24/2024
   author: cephalin
   ms.author: cephalin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
-  title: Check your knowledge
+  
   questions:
-  - content: "You've defined an autoscale condition with four autoscale rules. The first rule scales out when the CPU utilization reaches 70 percent. The second rule scales back in when the CPU utilization drops below 50 percent. The third rule scales out if memory occupancy exceeds 75 percent. The fourth rule scales back in when memory occupancy falls below 50 percent. When will the system scale out?"
+  - content: "You defined an autoscale condition with four autoscale rules. The first rule scales out when the CPU utilization reaches 70 percent. The second rule scales back in when the CPU utilization drops below 50 percent. The third rule scales out if memory occupancy exceeds 75 percent. The fourth rule scales back in when memory occupancy falls below 50 percent. When does the system scale out?"
     choices:
-    - content: "When CPU utilization reaches 70 percent, **or** memory occupancy exceeds 75 percent"
+    - content: "The system scales out either when CPU utilization reaches 70 percent **or** when memory occupancy exceeds 75 percent."
       isCorrect: true
-      explanation: "This answer is correct"
-    - content: "When CPU utilization reaches 70 percent, **and** memory occupancy exceeds 75 percent"
+      explanation: "Correct."
+    - content: "The system scales out when CPU utilization reaches 70 percent **and** memory occupancy exceeds 75 percent."
       isCorrect: false
-      explanation: "No. The system will scale out when **either** of the rules are satisfied."
-    - content: "You can't do this with a single autoscale condition. An autoscale condition can only contain autoscale rules that use the same metric"
+      explanation: "Incorrect. The system scales out when **either** rule is satisfied."
+    - content: "You can't do this with a single autoscale condition. An autoscale condition can only contain autoscale rules that use the same metric."
       isCorrect: false
-      explanation: "No. The rules in an autoscale condition can reference different metrics."
-  - content: "An autoscale rule defines a scale-out action that increases the instance count when the disk queue length exceeds 10. The system scaled out two minutes ago, but the disk queue length is still over 10. When will the system scale-out again?"
+      explanation: "Incorrect. The rules in an autoscale condition can reference different metrics."
+  - content: "An autoscale rule defines a scale-out action that increases the instance count when the disk queue length exceeds 10. The system scaled out two minutes ago, but the disk queue length is still over 10. When will the system scale out again?"
     choices:
-    - content: "The autoscale rule will trigger another autoscale action immediately, and will continue doing so until the disk queue length drops below 10, or the maximum number of instances have been created."
+    - content: "The autoscale rule triggers another autoscale action immediately and continues doing so until the disk queue length drops below 10, or the maximum number of instances is created."
       isCorrect: false
-      explanation: "No. The autoscale rule won't trigger the action again until the *cool down* period for the rule has expired. If the disk queue length is still over 10 at this time, the action will be performed."
-    - content: "The autoscale rule won't run again until the system has scaled back in."
+      explanation: "Incorrect. The autoscale rule doesn't trigger the action again until the *cool-down* period for the rule expires. If the disk queue length is still over 10 at that time, the action is performed."
+    - content: "The autoscale rule doesn't run again until the system scales back in."
       isCorrect: false
-      explanation: "No. The autoscale rule can run again without scaling in first, but only after the *cool down* period for the rule has expired."
-    - content: "The autoscale rule won't trigger the action again until the *cool down* period for the rule has expired. If the disk queue length is still over 10 at this time, the action will be performed."
+      explanation: "Incorrect. The autoscale rule can run again without scaling in first, but only after the *cool-down* period for the rule expires."
+    - content: "The autoscale rule doesn't trigger the action again until the *cool-down* period for the rule expires. If the disk queue length is still over 10 at that time, the action is performed."
       isCorrect: true
-      explanation: "This answer is correct"
+      explanation: "Correct."

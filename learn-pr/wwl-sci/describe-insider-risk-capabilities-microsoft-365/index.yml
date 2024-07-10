@@ -1,20 +1,19 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-insider-risk-capabilities-microsoft-365
 metadata:
-  title: Describe insider risk capabilities in Microsoft Purview
-  description: "Describe insider risk capabilities in Microsoft Purview"
-  ms.date: 02/09/2023
+  title: Describe the insider risk capabilities in Microsoft Purview
+  description: "Describe the insider risk capabilities in Microsoft Purview"
+  ms.date: 09/09/2023
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-title: Describe insider risk capabilities in Microsoft Purview
+  ms.topic: module
+  ms.service: purview
+title: Describe the insider risk capabilities in Microsoft Purview
 summary: Insider risks are a top concern for organizations. These risks can be challenging to identify and mitigate. Learn how Microsoft Purview enables organizations to identify, analyze, and remediate internal risks before they cause harm.
 abstract: |
   After completing this module, you'll be able to:
   - Describe insider risk management
   - Describe communication compliance
-  - Describe information barriers
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -34,7 +33,6 @@ units:
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.introduction
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.management-solution
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.describe-communication-compliance
-- learn.wwl.describe-insider-risk-capabilities-microsoft-365.describe-information-barriers
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.knowledge-check
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.summary-resources
 badge:

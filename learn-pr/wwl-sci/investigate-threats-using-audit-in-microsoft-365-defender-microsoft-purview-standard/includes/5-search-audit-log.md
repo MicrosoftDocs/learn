@@ -7,7 +7,7 @@ Microsoft 365 supports an audit log so that organizations can search it for acti
 
 | **Microsoft 365 service or feature**    | **Record types**                                                                                                     |
 | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Azure Active Directory                  | AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon                                 |
+| Microsoft Entra ID                  | AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon                                 |
 | Azure Information Protection            | AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat                            |
 | Communication compliance                | ComplianceSuperVisionExchange                                                                                        |
 | Content explorer                        | LabelContentExplorer                                                                                                 |
@@ -19,7 +19,7 @@ Microsoft 365 supports an audit log so that organizations can search it for acti
 | Exchange Online                         | ExchangeAdmin, ExchangeItem, ExchangeItemAggregated                                                                  |
 | Forms                                   | MicrosoftForms                                                                                                       |
 | Information barriers                    | InformationBarrierPolicyApplication                                                                                  |
-| Microsoft 365 Defender                  | AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection                         |
+| Microsoft Defender XDR                  | AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection                         |
 | Microsoft Teams                         | MicrosoftTeams                                                                                                       |
 | MyAnalytics                             | MyAnalyticsSettings                                                                                                  |
 | OneDrive for Business                   | OneDrive                                                                                                             |
@@ -71,9 +71,9 @@ Each of these steps is examined in greater detail in the following sections.
     
     
     
-     -  **A. Start date and End date**. The last seven days are selected by default. Select a date and time range to display the events that occurred within that period. The date and time are presented in local time. The maximum date range that you can specify is 90 days. An error is displayed if the selected date range is greater than 90 days.
+     -  **A. Start date and End date**. The last seven days are selected by default. Select a date and time range to display the events that occurred within that period. The date and time are presented in local time. The maximum date range that you can specify is 180 days. An error is displayed if the selected date range is greater than 180 days.
         
-        If you're using the maximum date range of 90 days, select the current time for the **Start date**. Otherwise, you'll receive an error saying the start date is earlier than the end date. If you've implemented auditing within the last 90 days, the maximum date range can't start before the date that auditing was implemented.
+        If you're using the maximum date range of 180 days, select the current time for the **Start date**. Otherwise, you'll receive an error saying the start date is earlier than the end date. If you've implemented auditing within the last 180 days, the maximum date range can't start before the date that auditing was implemented.
      -  **B. Activities**. Select the drop-down list to display the activities that you can search for. User and administrator activities are organized into groups of related activities. You can select specific activities or you can select the activity group name to select all activities in the group. You can also select a selected activity to clear the selection. After you run the search, only the audit log entries for the selected activities are displayed. Selecting **Show results for all activities** displays results for all activities performed by the selected user or group of users. Over 100 user and administrator activities are logged in the audit log.
      -  **C. Users**. Select in this box and then select one or more users to display search results for. The audit log entries for the selected activity performed by the users you select in this box are displayed in the list of results. Leave this box blank to return entries for all users (and service accounts) in the organization.
      -  **D. File**, **folder**, **or site**. Type some or all of a file or folder name to search for activity related to the file of folder that contains the specified keyword. You can also specify a URL of a file or folder. If you use a URL, be sure the type the full URL path or if you type a portion of the URL, don't include any special characters or spaces. However, using the wildcard character (\*) is supported.
@@ -102,7 +102,7 @@ The results contain the following information about each event returned by the s
  -  **IP address**. The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.
     
     > [!NOTE]
-    > For some services, the value displayed in this field may be the IP address for a trusted application (for example, Office on the web apps) calling into the service on behalf of a user and not the IP address of the device used by the person who performed the activity. Also, for administrator activity (or activity performed by a system account) for Azure Active Directory-related events, the IP address isn't logged. As a result, the value displayed in this field is null.
+    > For some services, the value displayed in this field may be the IP address for a trusted application (for example, Office on the web apps) calling into the service on behalf of a user and not the IP address of the device used by the person who performed the activity. Also, for administrator activity (or activity performed by a system account) for Microsoft Entra ID-related events, the IP address isn't logged. As a result, the value displayed in this field is null.
  -  **User**. The user (or service account) who performed the action that triggered the event.
  -  **Activity**. The activity performed by the user. This value corresponds to the activities that were selected in the **Activities** drop down list. For an event from the Exchange admin audit log, the value in this column is an Exchange cmdlet.
  -  **Item**. The object that was created or modified as a result of the corresponding activity. For example, the file that was viewed or modified or the user account that was updated. Not all activities have a value in this column.

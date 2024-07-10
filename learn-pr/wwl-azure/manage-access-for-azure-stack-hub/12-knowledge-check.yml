@@ -7,8 +7,7 @@ metadata:
   ms.date: 07/29/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -27,12 +26,12 @@ quiz:
       explanation: "Correct. The Contributor is a user that manages everything except access to customer resources."
     - content: "User Access Administrator"
       isCorrect: false
-      explanation: "Incorrect. The User Access Administrator role allows assigning roles in all Azure subscriptions and management groups associated with the Azure Active Directory."
+      explanation: "Incorrect. The User Access Administrator role allows assigning roles in all Azure subscriptions and management groups associated with the Microsoft Entra ID."
   - content: "Which identity provider is used in disconnected mode while deploying Azure Stack Hub?"
     choices:
-    - content: "Azure Active Directory (Azure AD)"
+    - content: "Microsoft Entra ID"
       isCorrect: false
-      explanation: "Incorrect. When deploying Azure Stack Hub in a connected mode either Azure Active Directory (AD) or Active Directory Federation Services (AD FS) is used."
+      explanation: "Incorrect. When deploying Azure Stack Hub in a connected mode either Microsoft Entra ID or Active Directory Federation Services (AD FS) is used."
     - content: "Active Directory Federation Services (AD FS)"
       isCorrect: true
       explanation: "Correct. When deploying Azure Stack Hub in a disconnected mode, only Active Directory Federation Services (AD FS) is supported."

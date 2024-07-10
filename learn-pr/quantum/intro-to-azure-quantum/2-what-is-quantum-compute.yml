@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.intro-to-azure-quantum.what-is-quantum-computing
+title: What is quantum computing?
+metadata:
+  title: What is quantum computing?
+  description: Learn the basics of quantum computing and how it differs from classical computing.
+  ms.date: 01/09/2024
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  manager: tedhudek
+  ms.topic: unit
+  show_latex: true
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-what-is-quantum-compute.md)]

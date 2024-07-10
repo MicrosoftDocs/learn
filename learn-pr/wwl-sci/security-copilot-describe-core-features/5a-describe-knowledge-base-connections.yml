@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-core-features.describe-knowledge-base-connections
+title: Describe knowledge base connections
+metadata:
+  title: Describe knowledge base connections
+  description: "Learn about knowledge base connections and how to integrate as an additional source of information for your organization."
+  ms.date: 03/12/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 13
+content: |
+  [!include[](includes/5a-describe-knowledge-base-connections.md)]

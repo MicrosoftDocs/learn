@@ -4,11 +4,10 @@ title: Overview of text moderation
 metadata:
   title: Overview of text moderation
   description: Learn about the key concepts involved in text moderation with Azure Content Moderator.
-  ms.date: 1/28/2019
+  ms.date: 12/19/2022
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-overview-of-text-moderation.md)]

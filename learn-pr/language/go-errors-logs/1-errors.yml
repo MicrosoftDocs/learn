@@ -3,11 +3,10 @@ uid: learn.language.go-errors-logs.1-errors
 metadata:
   title: Learn how to handle errors in Go
   description: Consider how programs can fail and discover how to manage errors.
-  ms.date: 01/21/2021
+  ms.date: 02/12/2021
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Learn how to handle errors in Go
 durationInMinutes: 6

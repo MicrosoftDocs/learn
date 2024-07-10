@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-scaling-azure-kubernetes-service.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/25/2023
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of the Horizontal Pod Autoscaler in Azure Kubernetes Service?"
+    choices:
+    - content: "To provision a larger number of application instances"
+      isCorrect: false
+      explanation: "Incorrect. Provisioning a larger number of application instances is a separate concept from the purpose of the Horizontal Pod Autoscaler."
+    - content: "To manually scale replicas or nodes based on a fixed cost"
+      isCorrect: false
+      explanation: "Incorrect. This describes manually scaling resources, not the purpose of the Horizontal Pod Autoscaler."
+    - content: "To monitor resource demand and automatically scale the number of pods based on defined metrics such as CPU usage"
+      isCorrect: true
+      explanation: "Correct. The Horizontal Pod Autoscaler monitors resource demand and automatically scales the number of pods based on defined metrics such as CPU usage, allowing for efficient use of resources."
+  - content: "What is the purpose of the Kubernetes cluster autoscaler?"
+    choices:
+    - content: "To monitor the status of the Kubernetes API server"
+      isCorrect: false
+      explanation: "Incorrect. The cluster autoscaler monitors the Metrics API server, not the Kubernetes API server."
+    - content: "To adjust the number of pods based on application demand"
+      isCorrect: false
+      explanation: "Incorrect. This is the purpose of the horizontal pod autoscaler."
+    - content: "To adjust the number of nodes based on the requested compute resources in the node pool"
+      isCorrect: true
+      explanation: "Correct. The cluster autoscaler adjusts the number of nodes in the AKS cluster based on the requested compute resources in the node pool to ensure that there are enough resources to run the pods."
+  - content: "What is the purpose of the cluster autoscaler component in AKS?"
+    choices:
+    - content: "To manually enable or edit settings for scale set autoscale in the Azure portal or using the Azure CLI."
+      isCorrect: false
+      explanation: "Incorrect. This is not the purpose of the cluster autoscaler component in AKS."
+    - content: "To create a resource group using the az group create command."
+      isCorrect: false
+      explanation: "Incorrect. This is not the purpose of the cluster autoscaler component in AKS."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      isCorrect: true
+      explanation: "Correct. The cluster autoscaler component can watch for pods in your cluster that can't be scheduled because of resource constraints. When issues are detected, the number of nodes in a node pool increases to meet the application demand. Nodes are also regularly checked for a lack of running pods, with the number of nodes then decreased as needed. This ability to automatically scale up or down the number of nodes in your AKS cluster lets you run an efficient, cost effective cluster."

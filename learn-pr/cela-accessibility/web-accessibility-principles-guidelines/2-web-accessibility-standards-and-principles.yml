@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.web-accessibility-principles-guidelines.web-accessibility-standards-and-principles
+title: Web accessibility standards and principles
+metadata:
+  title: Web accessibility standards and principles
+  description: This content is a part of the "Web accessibility principles and guidelines" module.
+  ms.date: 04/11/2024
+  author: erzelman
+  ms.author: erzelman 
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-web-accessibility-standards-and-principles.md)]

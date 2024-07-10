@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-identities-microsoft-entra-id.secure-microsoft-entra-users
+title: Secure Microsoft Entra users
+metadata:
+  title: Secure Microsoft Entra users
+  description: "Create and manage Microsoft Entra ID users"
+  ms.date: 07/03/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-secure-microsoft-entra-users.md)]

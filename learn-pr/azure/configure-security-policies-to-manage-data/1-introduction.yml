@@ -3,12 +3,11 @@ uid: learn.azure-security.configure-security-policies-to-manage-data.introductio
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 09/30/2019
+  description: Learn about the benefits of classifying your data and identifying your data-protection needs.
+  ms.date: 01/04/2024
   author: VanMSFT
   ms.author: vanto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

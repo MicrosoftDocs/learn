@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-device-connections-communication.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/06/2023
+  author: kgremban
+  ms.author: kgremban
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+   - content: "Which of the following are the most common reasons that devices disconnect from IoT Hub?"
+     choices:
+     - content: "Network interruption, renewed X.509 certificate, communication throttling, DDoS attack."
+       isCorrect: false
+       explanation: "Incorrect. The most common reasons for IoT Hub device disconnect are expired SAS token or X.509 certificate, network interruption, service interruption, service reconfiguration."
+     - content: "Expired SAS token or X.509 certificate, network interruption, service interruption, service reconfiguration."
+       isCorrect: true
+       explanation: "Correct. These reasons are the most common for device disconnections from IoT Hub."
+     - content: "Service interruption, network interruption, failed device firmware update, invalid arguments passed to the callback of the `send` operation."
+       isCorrect: false
+       explanation: "Incorrect. The most common reasons for IoT Hub device disconnect are expired SAS token or X.509 certificate, network interruption, service interruption, service reconfiguration."
+   - content: "Which Azure service can provide monitoring notifications for specific devices?"
+     choices:
+     - content: "Azure Monitor"
+       isCorrect: false
+       explanation: "Incorrect. Azure Monitor is designed to monitor multiple devices and can't deliver notifications for specific devices."
+     - content: "Event Grid"
+       isCorrect: true
+       explanation: "Correct. Event Grid can monitor and deliver notifications for specific devices."
+   - content: "A developer is writing code that implements the device connection \"retry\" pattern. The first step in the code is to detect an error. What is the next step in the process that the code should implement?"
+     choices:
+     - content: "Retry according to the specified retry policy."
+       isCorrect: false
+       explanation: "Incorrect. If conditions allow, the code should implement a retry according to the specified retry policy, but this step isn't the next step."
+     - content: "Filter by error type and decide if a retry is needed."
+       isCorrect: true
+       explanation: "Correct. The next step is to filter by error type and decide if a retry is needed."
+     - content: "Determine whether the error is an unrecoverable error."
+       isCorrect: false
+       explanation: "Incorrect. The code should determine whether the error is an unrecoverable error, but this step isn't the next step."
+   - content: "What are the three retry policies that are supported by the IoT SDKs?"
+     choices:
+     - content: "Scheduled retry, Custom retry, No retry"
+       isCorrect: false
+       explanation: "Incorrect. Scheduled retry isn't a retry policy provided in the IoT SDKs."
+     - content: "Exponential back-off, Custom back-off, No retry"
+       isCorrect: false
+       explanation: "Incorrect. Custom back-off isn't a retry policy provided in the IoT SDKs."
+     - content: "Exponential back-off, Custom retry, No retry"
+       isCorrect: true
+       explanation: "Correct. The three retry policies provided by the IoT SDKs are Exponential back-off, Custom retry, No retry."
+   - content: "Which of the following choices is a common area to analyze first when device messages aren't being routed as expected?"
+     choices:
+     - content: "Router logs."
+       isCorrect: false
+       explanation: "Incorrect. Router logs aren't specific to Azure and contain too much information. The correct answer from this list Routing metrics for this endpoint."
+     - content: "The routing metrics for this endpoint."
+       isCorrect: true
+       explanation: "Correct.  You can combine information from multiple metrics to identify root cause for issues."
+     - content: "The fallback route is disabled."
+       isCorrect: false
+       explanation: "Incorrect. The fallback route disabled condition is related to not getting messages at the built-in endpoint. The correct answer from this list Routing metrics for this endpoint."

@@ -9,7 +9,7 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Release Engineering: Deployment](/azure/architecture/framework/devops/release-engineering-cd).
- -  [Canary deployment strategy for Kubernetes deployments](/azure/devops/pipelines/ecosystems/kubernetes/canary-demo).
- -  [What is Traffic Manager?](/azure/traffic-manager/traffic-manager-overview).
- -  [Progressive experimentation with feature flags](/devops/operate/progressive-experimentation-feature-flags).
+ -  [Release Engineering Continuous deployment - Azure Architecture Center \| Microsoft Docs](/training/modules/create-release-pipeline/).
+ -  [Canary deployment strategy for Kubernetes deployments - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/ecosystems/kubernetes/canary-demo).
+ -  [Azure Traffic Manager \| Microsoft Docs](/azure/traffic-manager/traffic-manager-overview).
+ -  [Progressive experimentation with feature flags - Azure DevOps \| Microsoft Docs](/devops/operate/progressive-experimentation-feature-flags).

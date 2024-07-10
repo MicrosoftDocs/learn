@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse.load-data-using-tsql
+title: Load data using T-SQL
+metadata:
+  title: Load data using T-SQL
+  description: "Learn how to load data in a warehouse using T-SQL."
+  ms.date: 12/01/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-load-data-using-tsql.md)]

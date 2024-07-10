@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-azure-ai-studio.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Test your knowledge of Azure AI Studio."
+  ms.date: 05/08/2024
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: unit
+  ms.custom:
+    - ignite-2023
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Which of the following best describes Azure AI Studio?"
+    choices:
+    - content: "An online marketplace where you can buy and sell AI models"
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Studio isn't an online marketplace."
+    - content: "A collaborative development environment for AI projects on Azure."
+      isCorrect: true
+      explanation: "Correct. Azure AI Studio provides a collaborative development environment for AI projects on Azure."
+    - content: "A graphics editing application that uses AI to generate images."
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Studio isn't a graphics application."
+  - content: "How can you enable a colleague to collaborate with you on an AI project?"
+    choices:
+    - content: "Add them as a member in the appropriate role to your Azure AI hub."
+      isCorrect: true
+      explanation: "Correct. To enable a colleague to collaborate with you, add them as a member of your Azure AI hub."
+    - content: "Deploy a model as a web app and configure authentication for the web app service."
+      isCorrect: false
+      explanation: "Incorrect. Deploying a web app and configuring authentication wouldn't enable collaboration on a project."
+    - content: "Tell the colleague to create their own Azure AI hub in the same Azure subscription as yours."
+      isCorrect: false
+      explanation: "Incorrect. Creating a separate Azure AI hub in the same subscription doesn't enable collaboration."
+  - content: "You have deployed an Azure OpenAI GPT model in Azure AI Studio. What's the easiest way to test it?"
+    choices:
+    - content: "Deploy the model as a web app, configure authentication, and use it in a browser."
+      isCorrect: false
+      explanation: "Incorrect. While you *could* test a model by deploying a web app, it's not the easiest way to do it."
+    - content: "Export the model and test it locally using Visual Studio Code."
+      isCorrect: false
+      explanation: "Incorrect. You don't need to export a model from Azure AI Studio to test it."
+    - content: "On the **Playground** page, select the deployment and use the chat interface."
+      isCorrect: true
+      explanation: "Correct. You can test an Azure OpenAI GPT model in the **Playground** page."

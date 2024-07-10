@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.embrace-responsible-ai.design-ai-systems-responsibly
+title: Exercise - Design AI systems responsibly
+metadata:
+  title: Exercise - Design AI systems responsibly
+  description: This content is a part of the 'Guided project - Embrace responsible AI' module. 
+  ms.date: 03/28/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-design-ai-systems-responsibly.md)]

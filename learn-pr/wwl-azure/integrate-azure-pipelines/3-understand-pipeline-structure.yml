@@ -4,13 +4,12 @@ title: Understand the pipeline structure
 metadata:
   title: Understand the pipeline structure
   description: "Understand the pipeline structure"
-  ms.date: 01/10/2023
+  ms.date: 05/26/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/3-understand-pipeline-structure.md)]

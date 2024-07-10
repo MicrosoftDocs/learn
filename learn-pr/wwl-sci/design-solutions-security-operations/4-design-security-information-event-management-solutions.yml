@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-security-operations.design-security-information-event-management-solutions
-title: Design security information and event management (SIEM) solutions
+title: Design a solution for detection and response that includes extended detection and response (XDR) and security information and event management (SIEM)
 metadata:
-  title: Design security information and event management (SIEM) solutions
-  description: "SC-100 preparatory unit on the topic: design security information and event management (SIEM) solutions."
+  title: Design a solution for detection and response that includes extended detection and response (XDR) and security information and event management (SIEM)
+  description: "SC-100 preparatory unit on the topic: Design a solution for detection and response that includes extended detection and response (XDR) and security information and event management (SIEM)."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/4-design-security-information-event-management-solutions.md)]

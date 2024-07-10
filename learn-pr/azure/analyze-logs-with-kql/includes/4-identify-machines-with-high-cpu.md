@@ -1,4 +1,4 @@
-Here, you'll write KQL queries to retrieve and transform data from the `Perf` table to gain an understanding of which machines have reached or are nearing their total compute capacity and which machines are being underused.  
+Here, you'll write KQL queries to retrieve and transform data from the `Perf` table to gain an understanding of which machines have reached or are nearing their total compute capacity, and which machines are being underused.  
 
 ## 1. Set goals
 
@@ -40,7 +40,7 @@ This screenshot shows the distinct combinations of `ObjectName` and `CounterName
 
 The `% Processor Time` counter gives you an understanding of the utilization of the processor, or Central Processing Unit (CPU). This is information you need!
 
-Let's assess how we can use this data and which KQL operations can help extract and transform the data:
+Let's assess how we can use this data, and which KQL operations can help extract and transform the data:
 
 | Column | Description | Analysis goal | Related KQL operations |
 | --- | --- | --- | --- |
@@ -97,7 +97,7 @@ Write a query that summarizes the average, minimum and maximum CPU usage of all 
 
 ## Challenge: Add operating system information from the Heartbeat table to the query results
 
-You can often get a better understanding of your query results by correlating information from a different table to your query results using the `join` operator. For more information, see [join operator](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer). 
+You can often get a better understanding of your query results by correlating information from a different table to your query results by using the `join` operator. For more information, see [join operator](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer). 
 
 Can you use the `join` operator to add information about the operating system running on each computer, which is available in the `Heartbeat` table, as we saw in the first exercise?
 

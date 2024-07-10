@@ -13,3 +13,4 @@ Some important capabilities include:
 - **Transactions** for providers that support transacted operations.
 
 You should always review the capabilities of a provider before you work with it. This helps you avoid unexpected errors when you try to use unsupported capabilities.
+

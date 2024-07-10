@@ -20,6 +20,6 @@ In this module, you'll:
 
 To get the best learning experience from this module, you should have:
 
-- Beginner-level knowledge of Azure, including regions, Azure virtual networks, Azure Virtual Network peering, Azure Active Directory, and ExpressRoute.
+- Beginner-level knowledge of Azure, including regions, Azure virtual networks, Azure Virtual Network peering, Microsoft Entra ID, and ExpressRoute.
 - Beginner-level knowledge of networking, including IP addresses, fully qualified domain names (FQDNs), network interfaces, and virtual private networks.
 - Beginner-level knowledge of cloud computing, including tenants, virtual networks, virtual machines, and PaaS.

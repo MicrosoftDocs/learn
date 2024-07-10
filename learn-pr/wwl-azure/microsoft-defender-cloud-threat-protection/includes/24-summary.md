@@ -1,0 +1,1 @@
+In this module, you learned how to configure and utilize Microsoft Defender for Cloud for robust threat management, including setting up monitoring, implementing advanced threat detection, fine-tuning security policies, and mastering incident response to effectively secure cloud assets.

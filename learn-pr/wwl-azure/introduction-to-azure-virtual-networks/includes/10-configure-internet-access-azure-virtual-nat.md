@@ -6,7 +6,6 @@ The following diagram shows outbound traffic flow from Subnet 1 through the NAT 
 
 :::image type="content" source="../media/nat-flow-map-e4870a4e.png" alt-text="NAT service provides internet connectivity for internal resources.":::
 
-
 You define the NAT configuration for each subnet within a VNet to enable outbound connectivity by specifying which NAT gateway resource to use. After NAT is configured, all UDP and TCP outbound flows from any virtual machine instance will use NAT for internet connectivity. No further configuration is necessary, and you don’t need to create any user-defined routes. NAT takes precedence over other outbound scenarios and replaces the default Internet destination of a subnet.
 
 ## Support dynamic workloads by scaling NAT
@@ -19,35 +18,32 @@ Configuring and using NAT gateway is a straightforward process:
 
 **NAT gateway resource:**
 
-1.  Create regional or zonal (zone-isolated) NAT gateway resource,
-2.  Assign IP addresses,
-3.  If necessary, modify TCP idle timeout (optional).
+1. Create regional or zonal (zone-isolated) NAT gateway resource,
+2. Assign IP addresses,
+3. If necessary, modify TCP idle timeout (optional).
 
 **Virtual network:**
 
- -  Configure virtual network subnet to use a NAT gateway.
- -  User-defined routes are not necessary.
+- Configure virtual network subnet to use a NAT gateway.
+- User-defined routes are not necessary.
 
 ## Coexistence of inbound and outbound
 
 NAT is compatible with the following standard SKU resources:
 
- -  Load balancer
- -  Public IP address
- -  Public IP prefix
+- Load balancer
+- Public IP address
+- Public IP prefix
 
 NAT and compatible Standard SKU features are aware of the direction the flow was started. Inbound and outbound scenarios can coexist. These scenarios will receive the correct network address translations because these features are aware of the flow direction. When used together with NAT, these resources provide inbound Internet connectivity to your subnet(s).
 
 :::image type="content" source="../media/nat-flow-direction-inbound-outbound-70bb1787.png" alt-text="Virtual Network NAT flow direction":::
 
-
 ## Limitations of NAT
 
- -  NAT is compatible with standard SKU public IP, public IP prefix, and load balancer resources. Basic resources (for example basic load balancer) and any products derived from them aren't compatible with NAT. Basic resources must be placed on a subnet not configured with NAT.
- -  IPv4 address family is supported. NAT doesn't interact with IPv6 address family. NAT can't be deployed on a subnet with an IPv6 prefix.
- -  NAT can't span multiple virtual networks.
- -  IP fragmentation isn't supported.
+- NAT is compatible with standard SKU public IP, public IP prefix, and load balancer resources. Basic resources (for example basic load balancer) and any products derived from them aren't compatible with NAT. Basic resources must be placed on a subnet not configured with NAT.
+- IPv4 address family is supported. NAT doesn't interact with IPv6 address family. NAT can't be deployed on a subnet with an IPv6 prefix.
+- NAT can't span multiple virtual networks.
+- IP fragmentation isn't supported.
 
-## Check your knowledge
-
-Choose the best response for each of the questions below. When you're done, select **Check your answers**.
+Choose the best response for each of the questions below. Then select **Check your answers**.

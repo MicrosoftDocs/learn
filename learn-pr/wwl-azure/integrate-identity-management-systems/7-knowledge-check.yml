@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-identity-management-systems.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/27/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following level choices do you need to connect your identity provider to GitHub to use SSO?"
+    choices:
+    - content: "At the organization level."
+      isCorrect: true
+      explanation: "Correct. To use SSO, you need to connect your identity provider to GitHub at the organization level."
+    - content: "At the project level."
+      isCorrect: false
+      explanation: "Incorrect. To use SSO, you need to connect your identity provider to GitHub at the organization level."
+    - content: "At the repository level."
+      isCorrect: false
+      explanation: "Incorrect. To use SSO, you need to connect your identity provider to GitHub at the organization level."
+  - content: "Applications are registered with an Azure AD tenant within Azure Active Directory. Registering an application creates an identity configuration. Which of the following choices isn't correct about who can use it?"
+    choices:
+    - content: "Accounts in the same organizational directory."
+      isCorrect: false
+      explanation: "Incorrect. Who can use it are accounts in the same organizational directory, accounts in any organizational directory, and Microsoft Accounts (personal) and Microsoft Accounts (Personal accounts only)."
+    - content: "Azure DevOps groups."
+      isCorrect: true
+      explanation: "Correct. Who can use it are accounts in the same organizational directory, accounts in any organizational directory, and Microsoft Accounts (personal) and Microsoft Accounts (Personal accounts only)."
+    - content: "Accounts in any organizational directory and Microsoft Accounts (personal)."
+      isCorrect: false
+      explanation: "Incorrect. Who can use it are accounts in the same organizational directory, accounts in any organizational directory, and Microsoft Accounts (personal) and Microsoft Accounts (Personal accounts only)."
+  - content: "Which of the following choices isn't a type of managed identities?"
+    choices:
+    - content: "Organization-assigned."
+      isCorrect: true
+      explanation: "Correct. There are two types of managed identities. System-assigned and User-assigned."
+    - content: "System-assigned."
+      isCorrect: false
+      explanation: "Incorrect. There are two types of managed identities. System-assigned and User-assigned."
+    - content: "User-assigned."
+      isCorrect: false
+      explanation: "Incorrect. There are two types of managed identities. System-assigned and User-assigned."

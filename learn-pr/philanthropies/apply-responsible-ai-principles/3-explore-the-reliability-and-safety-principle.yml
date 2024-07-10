@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.apply-responsible-ai-principles.explore-the-reliability-and-safety-principle
+title: Explore the reliability & safety principle
+metadata:
+  title: Explore the reliability & safety principle
+  description: This content is a part of the 'Apply responsible AI principles in learning environments' module.
+  ms.date: 03/25/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-explore-the-reliability-and-safety-principle.md)]

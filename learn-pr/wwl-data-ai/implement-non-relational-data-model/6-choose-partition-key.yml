@@ -4,13 +4,12 @@ title: Choose a partition key
 metadata:
   title: Choose a partition key
   description: "Choose a partition key"
-  ms.date: 02/06/2023
+  ms.date: 04/16/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/6-choose-partition-key.md)]

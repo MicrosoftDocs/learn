@@ -3,11 +3,10 @@ uid: learn.language.go-variables-functions-packages.1-variables
 metadata:
   title: Declare and use variables
   description: Learn about how to declare and use variables in Go programs.
-  ms.date: 10/06/2021
+  ms.date: 01/25/2023
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Declare and use variables
 durationInMinutes: 6

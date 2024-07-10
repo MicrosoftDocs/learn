@@ -6,11 +6,14 @@ metadata:
   description: Update a deployment script in an ARM template to use arguments and environment variables.
   author: smurawski
   ms.author: stmuraws
-  ms.date: 05/12/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 05/03/2023
+  ms.topic: unit
   zone_pivot_groups: arm-template-language-azure-shell-interface
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-arm-template
+    - devx-track-azurepowershell
+    - devx-track-bicep
   ms.contributors: stmuraws-05172021
 durationInMinutes: 8
 content: |

@@ -1,6 +1,6 @@
-You can run the Azure File Sync evaluation PowerShell cmdlets on any Windows Server on which you'd like to use file sync. The cmdlets check the OS, file system, file name, and folder name compatibility.
+You can run the Azure File Sync evaluation PowerShell cmdlets on any Windows Server on which you want to use file sync. The cmdlets check the operating system, file system, file name, and folder name compatibility.
 
-Before you install and set up Azure File Sync on your company's CAD file server, you're going to assess the server to ensure it's compatible. You'll run the evaluation cmdlets to produce a report.
+Before you install and set up Azure File Sync on your company's CAD file server, assess the server to ensure that it's compatible. You run the evaluation cmdlets to produce a report.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -10,7 +10,7 @@ The following video shows how to do the assessment on your on-premises server. F
 
 ## Create a Windows file server
 
-You'd normally install Azure File Sync on your on-premises server. For this exercise, you'll create an Azure virtual machine (VM) to act as your Windows file server.
+You'd normally install Azure File Sync on your on-premises server. For this exercise, you create an Azure virtual machine (VM) to act as your Windows file server.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -41,14 +41,12 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
     -Location $location `
     -ResourceGroupName $resourceGroup `
     -Subnet $subnetConfig
-
     ```
 
-1. Run the following command to set the username and password for the administrator account on the VM. Enter the *User* `learnadmin` and a password. The password needs to be at least eight characters long and include a digit, an uppercase letter, a lowercase letter, and a special character. Write down the password because you'll need it later.
+1. Run the following command to set the username and password for the administrator account on the VM. Enter the *User* `learnadmin` and a password. The password needs to be at least eight characters long. It must include a digit, an uppercase letter, a lowercase letter, and a special character. Write down the password because you need it later.
 
     ```powershell
     $cred = Get-Credential
-
     ```
 
 1. Create the Windows Server machine:
@@ -61,65 +59,62 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
     -Size Standard_DS1_v2 `
     -VirtualNetworkName Syncvnet `
     -SubnetName Syncpublicnet `
-    -Image "MicrosoftWindowsServer:WindowsServer:2019-Datacenter-with-Containers:latest" 
-
-
+    -Image "Win2019Datacenter" 
     ```
 
    Creating the VM takes a few minutes.
 
 ## Create a public IP address and associate it with the file server VM
 
-In order to connect to the new server using Remote Desktop, you'll need to create a public IP address and assign it to the file server VM.
+In order to connect to the new server using Remote Desktop, create a public IP address and assign it to the file server VM.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. In the portal, in the top search box, search for and select **Public IP addresses**. The **Public IP addresses** pane appears.
+1. In the Azure portal, in the top search box, search for and select **Public IP addresses**. The **Public IP addresses** pane appears.
 
 1. Select **+ Create**. The **Create public IP address** pane appears.
 
-1. Leave the defaults as they are, and under **Name**, specify **FileServerPublicIP**.
-
 1. Select the same Azure subscription and location that you used for the VM. Select the **learn-file-sync-rg** resource group.
 
-1. Select **Create** to create the public IP address.
+1. Leave the rest of the defaults as they are, and under **Name**, specify *FileServerPublicIP*.
+
+1. Select **Review + Create** and then **Create** to create the public IP address.
 
 1. In the top search box, search for and select **Virtual machines**. The **Virtual machines** pane appears.
 
 1. Select the **FileServerLocal** VM. The **FileServerLocal** virtual machine pane appears.
 
-1. Under **Settings** > **Networking**, select the network interface called **FileServerLocal**.
+1. Under **Networking** > **Network settings**, select the network interface called **FileServerLocal**.
 
 1. Under **Settings** > **IP configurations**, select the IP configuration **FileServerLocal**.
 
-1. Select **Associate**, and then for **Public IP address** select **FileServerPublicIP**.
+1. Select **Associate public IP address**, and then for **Public IP address** select **FileServerPublicIP**.
 
 1. Select **Save**.
 
-
 ## Set up Windows Server for assessment
 
-Connect to the new server by using Remote Desktop client. You'll download a sample CAD file and install the Azure PowerShell module that you'll use later.
+Connect to the new server by using Remote Desktop client. Download a sample CAD file and install the Azure PowerShell module that you use later.
 
-1. Make sure you're still signed in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. Make sure that you're still signed in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. In the top search box, search for and select **Virtual machines**. The **Virtual machines** pane appears.
 
 1. Select the **FileServerLocal** VM. The **FileServerLocal** virtual machine pane appears.
 
-1. In the top menu bar, select **Connect**, and from the dropdown list, select **RDP**. The **Connect** pane appears for your **FileServerLocal** virtual machine.
+1. In the top menu bar, select **Connect**. The **Connect** pane appears for your **FileServerLocal** VM. Select **Native RDP**.
 
 1. Select **Download RDP File**.
 
-1. Open the RDP file from your browser and select **Connect**.
+1. Open the RDP file and select **Connect**.
 
 1. In the **Windows Security** dialog box, select **More choices**, and then select **Use a different account**.
 
-1. Enter the user name **learnadmin** and the password you used earlier, and then select **OK**.
+1. Enter the user name *learnadmin* and the password you used earlier, and then select **OK**.
 
 1. If you're asked to connect despite certificate errors, select **Yes**. The **Server Manager** dashboard appears.
 
-1. After you've logged in, in the bottom task bar, select **Search**, enter *cmd*, and then select **Command Prompt**.
+1. After you sign in, in the bottom task bar, select **Search**, enter *cmd*, and then select **Command Prompt**.
 
 1. At the command prompt, enter **D:** and then select **Enter**.
 
@@ -147,7 +142,7 @@ Connect to the new server by using Remote Desktop client. You'll download a samp
     Install-Module -Name Az
     ```
 
-1. When prompted, enter **Y** to accept the untrusted repository. Do the same thing for any of the modules.
+1. If prompted, enter **Y** to install the NuGet provider and/or accept the untrusted repository. Do the same thing for any of the modules.
 
    The modules take a few minutes to install.
 

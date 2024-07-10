@@ -1,81 +1,44 @@
-Helm charts make it easy to install pre-configured cloud-native apps on a Kubernetes cluster. The DevOps team is already familiar with the installation steps to install apps using manifest files and kubectl. The team decides to install an ASP.NET Core Helm chart to test the Helm installation process.
+Helm charts make it easy to install preconfigured cloud-native apps on a Kubernetes cluster.
 
-In this exercise, you'll add a Helm repository to your Helm client and install an ASP.NET Core website onto your Azure Kubernetes Service cluster.
-
-## Fetch a Helm chart
-
-1. In the Azure Cloud Shell, add the Azure Marketplace Helm repository to the Helm client. This repository gives you access to a number pre-configured Helm charts.
-
-    ```bash
-    helm repo add azure-marketplace https://marketplace.azurecr.io/helm/v1/repo
-    ```
-
-    Run the helm repo list command to confirm the newly added repository:
-
-    ```bash
-    helm repo list
-    ```
-
-    The command should return a result similar to the following output:
-
-    ```output
-    NAME             	URL
-    azure-marketplace	https://marketplace.azurecr.io/helm/v1/repo
-    ```
-
-1. Run the helm search repo command to search for the azure-marketplace/aspnet-core chart:
-
-    ```bash
-    helm search repo aspnet
-    ```
-
-    Here's an example of what the listing might look like:
-
-    ```output
-    NAME                            CHART VERSION   APP VERSION	  DESCRIPTION
-    azure-marketplace/aspnet-core   1.3.18          3.1.19        ASP.NET Core is an open-source framework create...
-    ```
+In this exercise, you'll use Helm to install the pet store application on your Kubernetes cluster.
 
 ## Deploy a Helm chart
 
-1. Deploy the ASP.NET Core Helm chart by using the `helm install` command:
+1. Navigate to the [Azure Cloud Shell](https://shell.azure.com) and make sure you're in the *aks-store-demo* directory. If not, change to the directory using `cd`.
 
     ```bash
-    helm install aspnet-webapp azure-marketplace/aspnet-core
+    cd aks-store-demo
+    ```
+
+2. Change into the *charts/aks-store-demo* directory using `cd`.
+
+    ```bash
+    cd charts
+    ```
+
+3. Deploy the pet store front Helm chart using the `helm install` command.
+
+    ```bash
+    helm install aks-store-demo ./aks-store-demo
     ```
 
     The command should return a result similar to the following output:
 
     ```output
-    NAME: aspnet-webapp
-    LAST DEPLOYED: Mon Oct 11 17:12:43 2021
+    NAME: aks-store-demo
+    LAST DEPLOYED: Tue Feb 20 21:05:51 2024
     NAMESPACE: default
     STATUS: deployed
     REVISION: 1
-    TEST SUITE: None
     NOTES:
-    ** Please be patient while the chart is being deployed **
-
-    ASP.NET Core can be accessed through the following DNS name from within your cluster:
-
-        aspnet-webapp-aspnet-core.default.svc.cluster.local (port 80)
-
-    To access ASP.NET Core from outside the cluster execute the following commands:
-
-    1. Get the ASP.NET Core URL by running these commands:
-
-        export SERVICE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].port}" services aspnet-webapp-aspnet-core)
-        kubectl port-forward --namespace default svc/aspnet-webapp-aspnet-core ${SERVICE_PORT}:${SERVICE_PORT} &
-        echo "http://127.0.0.1:${SERVICE_PORT}"
-
-    2. Access ASP.NET Core using the obtained URL.
+    1. Get the application URL by running these commands:
+      export POD_NAME=$(kubectl get pods --namespace default -l "app.kubernetes.io/name=aks-store-demo,app.kubernetes.io/instance=storedemo2" -o jsonpath="{.items[0].metadata.name}")
+      export CONTAINER_PORT=$(kubectl get pod --namespace default $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}")
+      echo "Visit http://127.0.0.1:8080 to use your application"
+      kubectl --namespace default port-forward $POD_NAME 8080:$CONTAINER_PORT
     ```
 
-    The preceding output is generated from the `templates/Notes.txt` file. The information displayed from the `Notes.txt` file is generated based on a template define in the file and values from the `values.yaml` file.
-
-    For example, notice how the name of the chart, `aspnet-webapp`, is used to create the DNS name, `aspnet-webapp-aspnet-core.default.svc.cluster.local`, for the web app. You'll also notice the notes displays information to access the app via a service. The default release doesn't include an Ingress as part of the install.
-
-1. Helm allows you to query all the installed release on the cluster. Use the `helm list` command to list all Helm releases:
+4. Helm allows you to query all the installed release on the cluster. List all Helm releases using the `helm list` command.
 
     ```bash
     helm list
@@ -85,111 +48,109 @@ In this exercise, you'll add a Helm repository to your Helm client and install a
 
     ```output
     NAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                   APP VERSION
-    aspnet-webapp   default         1               2021-10-11 17:12:43.50734334 +0000 UTC  deployed        aspnet-core-1.3.18      3.1.19
+    aks-store-demo  default         1               2024-02-20 21:05:51.557392349 +0000 UTC deployed        aks-store-demo-0.1.0    1.16.0
     ```
 
-    Notice release's name and its revision number. The name of the release is important because you'll use the name to reference the release. The revision number increments each time you make a change to a release. In the next exercise, you'll see how the revision number is used to manage upgrades and rollbacks for a release.
-
-1. Helm allows you to fetch manifest information related to each release by using the `helm get manifest` command.
-
-    Use the `helm get manifest aspnet-webapp` command to get the manifest files for the release.
+5. Helm allows you to fetch manifest information related to each release. Fetch manifest information using the `helm get manifest` command.
 
     ```bash
-    helm get manifest aspnet-webapp
+    helm get manifest aks-store-demo
     ```
 
-    The command should return a result similar to the following output. Here, we've shortened the output for brevity:
+    The command should return a result similar to the following condensed output:
 
     ```output
     ---
-    # Source: aspnet-core/templates/serviceaccount.yaml
+    # Source: aks-store-demo-chart/templates/order-service.yaml
     apiVersion: v1
-    kind: ServiceAccount
+    kind: Secret
     metadata:
-      name: aspnet-webapp-aspnet-core
+      name: order-service-secret
     ...
     ---
-    # Source: aspnet-core/templates/svc.yaml
+    # Source: aks-store-demo-chart/templates/rabbitmq.yaml
     apiVersion: v1
-    kind: Service
+    kind: Secret
     metadata:
-      name: aspnet-webapp-aspnet-core
+      name: rabbitmq-secret
     ...
     ---
-    # Source: aspnet-core/templates/deployment.yaml
-    apiVersion: apps/v1
-    kind: Deployment
+    # Source: aks-store-demo-chart/templates/order-service.yaml
+    apiVersion: v1
+    kind: ConfigMap
     metadata:
-      name: aspnet-webapp-aspnet-core
+      name: makeline-service-configmap
     ...
     ```
 
-    Notice the three YAML files from the templates folder in the chart.
-
-    - ServiceAccount
-    - Service
-    - Deployment
-
-    These files are rendered based on the combination of the chart's available templates and the values available in the `values.yaml` file. In the next exercise, you'll see how to generate an Ingress manifest to allow users from the internet access to the web app.
-
-1. Validate that the pod is deployed by running by using the `kubectl get pods` command:
+6. Validate that the pod is deployed using the `kubectl get pods` command.
 
     ```bash
     kubectl get pods -o wide -w
-    ```
-
-    The command should return a result similar to the following output. Use <kbd>Ctrl + C</kbd> to exit the command once done.
-
-    ```output
-    NAME                                         READY   STATUS    RESTARTS   AGE     IP            NODE                                NOMINATED NODE   READINESS GATES
-    aspnet-webapp-aspnet-core-7cb658b89d-9fxwj   1/1     Running   0          5m16s   10.244.0.10   aks-nodepool1-41833800-vmss000000   <none>           <none>
-    ```
-
-## Delete a Helm release
-
-1. Delete the Helm release by using the helm delete command:
-
-    ```bash
-    helm delete aspnet-webapp
     ```
 
     The command should return a result similar to the following output:
 
     ```output
-    release "aspnet-webapp" uninstalled
+    NAME                                         READY   STATUS    RESTARTS   AGE     IP            NODE                                NOMINATED NODE   READINESS GATES
+    makeline-service-8747ddb89-j6mvz             1/1     Running   0          6m11s   10.244.2.7    aks-nodepool1-41853373-vmss000001   <none>           <none>
+    mongodb-0                                    1/1     Running   0          6m11s   10.244.2.3    aks-nodepool1-41853373-vmss000001   <none>           <none>
+    order-service-7854888498-mlsvv               1/1     Running   0          6m11s   10.244.2.8    aks-nodepool1-41853373-vmss000001   <none>           <none>
+    product-service-5d7d4f5c47-gr4sc             1/1     Running   0          6m11s   10.244.2.6    aks-nodepool1-41853373-vmss000001   <none>           <none>
+    rabbitmq-0                                   1/1     Running   0          6m11s   10.244.2.2    aks-nodepool1-41853373-vmss000001   <none>           <none>
+    store-admin-894788d77-k5qjw                  1/1     Running   0          6m11s   10.244.2.10   aks-nodepool1-41853373-vmss000001   <none>           <none>
+    store-front-6749d8579c-xdkv8                 1/1     Running   0          6m11s   10.244.2.4    aks-nodepool1-41853373-vmss000001   <none>           <none>
+    virtual-customer-76c4bb9b7-dq6lc             1/1     Running   0          6m11s   10.244.2.9    aks-nodepool1-41853373-vmss000001   <none>           <none>
+    virtual-worker-56b79f9547-9dkm9              1/1     Running   0          6m11s   10.244.2.5    aks-nodepool1-41853373-vmss000001   <none>           <none>
+    ```
+
+    Use `Ctrl+C` to exit the command once done.
+
+## Delete a Helm release
+
+1. Delete the Helm release using the `helm delete` command.
+
+    ```bash
+    helm delete aks-store-demo
+    ```
+
+    The command should return a result similar to the following output:
+
+    ```output
+    release "aks-store-demo" uninstalled
     ```
 
 ## Install a Helm chart with set values
 
-You may override values for a Helm chart by passing either a value parameter or your own `values.yaml` file.
+You can override values for a Helm chart by passing either a value parameter or your own `values.yaml` file. For now, use the following commands to see how to update a value using the `--set` parameter. You'll learn how to use a `values.yaml` file in the next unit.
 
-1. For now, use the following command to see how to update a value using the `--set` parameter. You'll use a values file in the next exercise.
-
-    Run the `helm install` with the `--set` parameter to set the `replicaCount` of the deployment template to five replicas:
+1. Install the Helm chart using the `helm install` command with the `--set` parameter to set the `replicaCount` of the deployment template to five replicas.
 
     ``` bash
-    helm install --set replicaCount=5 aspnet-webapp azure-marketplace/aspnet-core
+    helm install --set replicaCount=5 aks-store-demo ./aks-store-demo
     ```
 
-    Validate that five pod replicas are deployed by running the kubectl get pods command:
+2. Validate that five pod replicas were deployed using the `kubectl get pods` command.
 
     ```bash
     kubectl get pods -o wide -w
     ```
 
-    The command should return a result similar to the following output. Use `Ctrl+c` to exit the command once done.
+    The command should return a result similar to the following output:
 
     ```output
     NAME                                         READY   STATUS     RESTARTS   AGE   IP            NODE                                NOMINATED NODE   READINESS GATES
-    aspnet-webapp-aspnet-core-7cb658b89d-2q96n   0/1     Init:0/2   0          14s   10.244.0.14   aks-nodepool1-41833800-vmss000000   <none>           <none>
-    aspnet-webapp-aspnet-core-7cb658b89d-469f2   0/1     Init:0/2   0          14s   10.244.0.15   aks-nodepool1-41833800-vmss000000   <none>           <none>
-    aspnet-webapp-aspnet-core-7cb658b89d-bl9lc   0/1     Init:0/2   0          14s   10.244.0.12   aks-nodepool1-41833800-vmss000000   <none>           <none>
-    aspnet-webapp-aspnet-core-7cb658b89d-tlv7r   0/1     Init:0/2   0          14s   10.244.0.13   aks-nodepool1-41833800-vmss000000   <none>           <none>
-    aspnet-webapp-aspnet-core-7cb658b89d-zgsdp   0/1     Init:0/2   0          14s   10.244.0.16   aks-nodepool1-41833800-vmss000000   <none>           <none>
+    aks-store-demo-c8dfddf78-2v8fv               1/1     Running   0          31s   10.244.1.5    aks-nodepool1-41853373-vmss000000   <none>           <none>
+    aks-store-demo-c8dfddf78-8t4rq               1/1     Running   0          31s   10.244.2.16   aks-nodepool1-41853373-vmss000001   <none>           <none>
+    aks-store-demo-c8dfddf78-h2p8m               1/1     Running   0          31s   10.244.2.15   aks-nodepool1-41853373-vmss000001   <none>           <none>
+    aks-store-demo-c8dfddf78-l8qq2               1/1     Running   0          31s   10.244.0.10   aks-nodepool1-41853373-vmss000002   <none>           <none>
+    aks-store-demo-c8dfddf78-xwcpw               1/1     Running   0          31s   10.244.0.9    aks-nodepool1-41853373-vmss000002   <none>           <none>
     ```
 
-1. Delete the Helm chart by using the `helm delete` command. This command will delete the release and all replicas of the workload.
+    Use `Ctrl+C` to exit the command once done.
+
+3. Delete the Helm chart using the `helm delete` command.
 
     ```bash
-    helm delete aspnet-webapp
+    helm delete aks-store-demo
     ```

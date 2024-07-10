@@ -3,11 +3,11 @@ uid: learn.wwl.secure-windows-server-dns
 metadata:
   title: Secure Windows Server DNS
   description: "Secure Windows Server DNS"
-  ms.date: 10/20/2021
+  ms.date: 12/12/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: module
+  ms.service: windows-server
 title: Secure Windows Server DNS
 summary: Learn how to secure Windows Server DNS to help protect your network name resolution infrastructure and also learn how to implement DNS policies.
 abstract: |
@@ -24,7 +24,7 @@ prerequisites: |
   - Core networking technologies.
   - Basic security best practices.
   - Windows PowerShell basics.
-iconUrl: /training/achievements/secure-windows-server-dns.svg
+iconUrl: /learn/achievements/secure-windows-server-dns.svg
 levels:
 - intermediate
 roles:

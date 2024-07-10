@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/21/2023
+  ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/20-knowledge-check.md)]
@@ -17,15 +16,15 @@ quiz:
   questions:
   - content: "Which Azure SKU of public IP addresses supports both dynamic and static allocation methods?"
     choices:
-    - content: "Infrastructure"
+    - content: "Basic"
       isCorrect: true
-      explanation: "That’s correct. Network Protection SKU public IP addresses support only the static allocation method."
-    - content: "Network Protection"
+      explanation: "That’s correct. Standard SKU public IP addresses support  both dynamic and static allocation methods."
+    - content: "Standard"
       isCorrect: false
-      explanation: "That’s incorrect. DDoS Protection SKU public IP addresses support only the static allocation method."
-    - content: "IP Protection"
+      explanation: "That’s incorrect. Standard SKU public IP addresses support only the static allocation method."
+    - content: "Both Basic and Standard"
       isCorrect: false
-      explanation: "That’s incorrect. IP Protection SKU public IP addresses support only the static allocation method."
+      explanation: "That’s incorrect. Standard SKU public IP addresses support only the static allocation method."
   - content: "What is the maximum backend pool size of the Standard SKU of Azure load balancer?"
     choices:
     - content: "300 instances"
@@ -61,15 +60,15 @@ quiz:
       explanation: "That’s correct. Azure ExpressRoute connects an Azure virtual network to an on-premises network via a private connection. It's also possible to establish connectivity using point-to-site VPN, site-to-site VPN, and Azure Virtual WAN. VNet peering and VNet-to-VNet are both methods for establishing direct connectivity to another Azure virtual network."
   - content: "Which of the following Azure service offerings includes logging, alerting, and telemetry to help provide protection from Distributed Denial-of-Service network attacks?"
     choices:
-    - content: "DDoS Protection Basic"
+    - content: "Azure DDoS infrastructure Protection (Basic)"
       isCorrect: false
-      explanation: "That’s incorrect. DDoS Protection Standard have several advantages over the Basic service, including logging, alerting, and telemetry."
-    - content: "DDoS Protection Standard"
+      explanation: "That’s incorrect. Azure DDoS Protection has several advantages over the Basic service, including logging, alerting, and telemetry."
+    - content: "Azure DDoS Protection"
       isCorrect: true
-      explanation: "That’s correct. DDoS Protection Standard have several advantages over the Basic service, including logging, alerting, and telemetry."
-    - content: "Both Basic and Standard"
+      explanation: "That’s correct. Azure DDoS Protection has several advantages over the Azure DDoS infrastructure Protection (Basic) service, including logging, alerting, and telemetry."
+    - content: "Both Azure DDoS infrastructure Protection and Azure DDoS Protection"
       isCorrect: false
-      explanation: "That’s incorrect. DDoS Protection Standard have several advantages over the Basic service, including logging, alerting, and telemetry."
+      explanation: "That’s incorrect. Azure DDoS Protection has several advantages over the Azure DDoS infrastructure Protection (Basic) service, including logging, alerting, and telemetry."
   - content: "In a cross-premises scenario, where a single or multiple Azure IaaS-hosted SAP workloads are integrated into an existing on-premises SAP environment, which of the following deployments is supported?"
     choices:
     - content: "Different layers of SAP applications are run in different deployment methods."

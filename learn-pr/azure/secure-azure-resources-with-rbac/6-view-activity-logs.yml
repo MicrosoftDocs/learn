@@ -5,11 +5,10 @@ metadata:
   unitType: exercise
   title: Exercise - View activity logs for Azure RBAC changes
   description: Exercise - View activity logs for Azure RBAC changes
-  ms.date: 09/30/2022
+  ms.date: 09/07/2023
   author: rolyon
   ms.author: rolyon
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/6-view-activity-logs.md)]

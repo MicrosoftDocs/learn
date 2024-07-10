@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-manage-sensitivity-labels.manage-sensitivity-labels-office
+title: Manage sensitivity labels in Office apps
+metadata:
+  title: Manage sensitivity labels in Office apps
+  description: "Manage sensitivity labels in Office apps."
+  ms.date: 06/03/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/manage-sensitivity-labels-office.md)]
+
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which statement describes the effect of applying sensitivity labels to emails and documents for cross-organizational sharing?"
+    choices:
+    - content: "Sensitivity labels don't play a role in cross-organizational sharing."
+      isCorrect: false
+      explanation: "Incorrect: Sensitivity labels help manage shared data according to organizational protection policies."
+    - content: "Sensitivity labels prevent any form of cross-organizational sharing."
+      isCorrect: false
+      explanation: "Incorrect: Sensitivity labels are designed to secure, not prevent, sharing by applying appropriate protection measures."
+    - content: "Sensitivity labels ensure data sharing respects the data protection policies of both sending and receiving organizations."
+      isCorrect: true
+      explanation: "Correct: Sensitivity labels ensure data sharing respects the data protection policies of both sending and receiving organizations."

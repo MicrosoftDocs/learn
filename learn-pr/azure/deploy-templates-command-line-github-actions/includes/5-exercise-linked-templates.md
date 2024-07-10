@@ -1,7 +1,7 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're added to a special subscription named Concierge Subscription.
 
-Here, you'll deploy a template that includes two linked templates in the supplied sandbox environment.
+Here, you deploy a template that includes two linked templates in the supplied sandbox environment.
 
 This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 

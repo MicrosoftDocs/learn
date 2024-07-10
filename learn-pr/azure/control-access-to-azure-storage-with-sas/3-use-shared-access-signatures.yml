@@ -3,11 +3,10 @@ uid: learn.control-access-to-azure-storage-with-sas.3-use-shared-access-signatur
 metadata:
   title: Use shared access signatures to delegate access to Azure Storage
   description: Use shared access signatures to delegate access to Azure Storage
-  ms.date: 03/06/2020
-  author: tamram
-  ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/13/2023
+  author: normesta
+  ms.author: normesta
+  ms.topic: unit
 title: Use shared access signatures to delegate access to Azure Storage
 durationInMinutes: 6
 content: |

@@ -6,10 +6,9 @@ metadata:
   title: Mature team structures
   description: Understand team structures and which structure best aligns with your operational needs.
   ms.date: 05/10/2022
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-mature-team-structures.md)]
