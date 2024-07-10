@@ -34,7 +34,6 @@ products:
 subjects:
 - security
 units:
-- learn.wwl.secure-cognitive-services.knowledge-check
 - learn.wwl.secure-cognitive-services.summary
 badge:
   uid: learn.wwl.secure-cognitive-services.badge
