@@ -3678,3 +3678,28 @@ achievements:
   title: Create speech-enabled apps with Azure AI services
   summary: The Azure AI Speech service enables you to build speech-enabled applications. This module focuses on using the speech-to-text and text to speech APIs, which enable you to create apps that are capable of speech recognition and speech synthesis.
   iconUrl: /training/achievements/transcribe-speech-input-text.svg
+- uid: learn.wwl.develop-decision-support.trophy
+  type: trophy
+  title: Develop decision support solutions with Azure AI Services
+  summary: Decision support helps automate decision making by providing recommendations to users. Azure AI Services includes multiple services that support common decision support scenarios.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.investigate-container-for-use-with-cognitive-services.badge
+  type: badge
+  title: Deploy Azure AI services in containers
+  summary: Learn about Container support in Azure AI Services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
+  iconUrl: /training/achievements/investigate-container-for-use-with-cognitive-services.svg
+- uid: learn.wwl.monitor-cognitive-services.badge
+  type: badge
+  title: Monitor Azure AI Services
+  summary: Azure AI Services enable you to integrate artificial intelligence into your applications and services. It's important to be able to monitor Azure AI Services in order to track utilization, determine trends, and detect and troubleshoot issues.
+  iconUrl: /learn/achievements/monitor-cognitive-services.svg
+- uid: learn.wwl.publish-use-language-understand-app.badge
+  type: badge
+  title: Develop an app with Azure AI Language
+  summary: After creating an Azure AI Language Understanding model, you can publish it and consume it from client applications.
+  iconUrl: /training/achievements/publish-use-language-understand-app.svg
+- uid: learn.wwl.secure-cognitive-services.badge
+  type: badge
+  title: Secure Azure AI Services
+  summary: Securing Azure AI Services can help prevent data loss and privacy violations for user data that may be a part of the solution.
+  iconUrl: /training/achievements/secure-cognitive-services.svg

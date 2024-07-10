@@ -1,6 +1,6 @@
 Azure Container Instance enables you to run a Docker image in Azure.
 
-In the previous exercise, you packaged and tested your web app as a local Docker image. Now, you want to use the output of that exercise, and make the web application available globally. To accomplish this availability, you run the image as an Azure Container Instance.
+In the previous exercise, you packaged and tested your web app as a local Docker image. Now, you want to use the output of that exercise and make the web application available globally. To accomplish this availability, you can run the image as an Azure Container Instance.
 
 In this exercise, you'll learn how to rebuild the image for the web app and upload it to Azure Container Registry. You'll use the Azure Container Instance service to run the image.
 
@@ -27,8 +27,9 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
     | Resource group | Select Create a new resource group with the name **learn-deploy-container-aci-rg**. Remember the name you select; you'll be using it in the rest of the exercises in this module. Also, remember to clean up this resource when you're finished with the module. |
     | **Instance details** |
     | Registry name | Select a name of your choice. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. |
-    | Location | Select a location that is close to you. |
-    | SKU | **Standard** |
+    | Location | Select a location that's close to you. |
+    | Use availability zones | Accept the default. |
+    | Pricing plan | **Standard** |
 
 1. Select **Review + create**. When the *Validation passed* notification appears, select **Create**. Wait until the container registry has been deployed before continuing.
 
@@ -36,8 +37,8 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
 
 1. In the resource menu, under **Settings**, select **Access keys**. The **Access keys** pane for your container registry appears.
 
-1. If the **Admin user** setting is disabled, select the slider to enable the **Admin user** access key. The **Username** and passwords appear for your container registry.
- 
+1. If the **Admin user** setting is disabled, check the box next to the **Admin user** access key. The **Username** and passwords appear for your container registry.
+
 1. Make a note of the **Registry name**, **Login server**, **Username**, and **passwords** for your container registry.
 
     > [!NOTE]
@@ -82,9 +83,9 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
     docker push <registry-name>.azurecr.io/reservationsystem:latest
     ```
 
-    Wait until the upload completes. This process will take several minutes to push all the objects of the image to your repository. You're able to observe the progress as each object advances from *Waiting* to *Preparing* to *Pushing* to *Pushed*.
+    Wait until the upload completes. This process will take several minutes to push all the objects of the image to your repository. You can observe the progress as each object advances from *Waiting* to *Preparing* to *Pushing* to *Pushed*.
 
-## Verify the contents of the registry
+## Verify the registry contents
 
 For the remainder of the exercise, you'll return to the Azure portal.
 
@@ -92,7 +93,7 @@ For the remainder of the exercise, you'll return to the Azure portal.
 
 1. In the resource menu, under **Services**, select **Repositories**. The **Repositories** pane for your container registry appears.
 
-1. Verify that the **reservationsystem** repository appears. Select the **reservationsystem** repository, and verify that the repository contains an image with the tag **latest**.
+1. Verify that the **reservationsystem** repository appears. Select the **reservationsystem** repository and verify that the repository contains an image with the tag **latest**.
 
     :::image type="content" source="../media/7-repository.png" alt-text="Screenshot showing the repository and tagged reservation system container image in the registry.":::
 
@@ -118,7 +119,9 @@ For the remainder of the exercise, you'll return to the Azure portal.
     | **Container details** |
     | Container name | hotelsysteminstance |
     | Region | Use the default location |
-    | Image source | Docker Hub or other registry |
+    | Availability zones | Accept default |
+    | SKU | Standard |
+    | Image source | Other registry |
     | Image type | Private |
     | Image | \<*registry-name*\>.azurecr.io/reservationsystem:latest |
     | Image registry login server | Enter the login server name for your registry |
@@ -135,6 +138,7 @@ For the remainder of the exercise, you'll return to the Azure portal.
     |---|---|
     | Networking type | Public |
     | DNS name label | Choose a unique name, which will be used as part of the container's URL. |
+    | DNS name label scope reuse | Accept default |
     | **Ports** |
     | Ports | 80 |
     | Ports protocol | TCP |
