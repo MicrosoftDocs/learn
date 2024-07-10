@@ -42059,6 +42059,51 @@
       "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/6-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/2-create-web-app-eclipse.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/3-exercise-create-web-app-eclipse.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/4-deploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/5-exercise-deploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/6-manage-deployment-eclipse.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/7-exercise-manage-deployment-eclipse.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
     }
   ]
 }
