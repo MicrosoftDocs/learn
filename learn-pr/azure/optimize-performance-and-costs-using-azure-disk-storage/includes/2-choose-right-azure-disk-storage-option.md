@@ -18,13 +18,13 @@ The maximum performance of an Ultra disk depends on the size you select, as you 
 | 128 | 38,400 | 4,000 |
 | 256 | 76,800 | 4,000 |
 | 512 | 153,600 | 4,000 |
-| 1,024 - 65,536 (sizes in this range increase in 1 TiB increments) | 160,000 | 4,000 |
+| 1,024 - 65,536 (sizes in this range increase in 1-TiB increments) | 160,000 | 4,000 |
 
 Ultra disks can have capacities from 4 GB up to 64 TB. A unique feature of Ultra disks is that you can adjust the IOPS and throughput values while they're running and without detaching them from the host virtual machine. Performance adjustments can take up to an hour to take effect.
 
 Ultra disks have some limitations. For a complete list, see [Ultra disk Limitations](/azure/virtual-machines/disks-types#ultra-disk-limitations).
 
-Some workloads place intensive loads on disk storage. For example, top-tier databases and SAP HANA need fast performance and are transaction heavy. If you have such a workload, and if Premium SSD managed disks have caused performance bottlenecks, consider using Ultra disks.
+Some workloads place intensive loads on disk storage. For example, top-tier databases and SAP HANA need fast performance and are transaction heavy. If you have such a workload, and if Premium SSD managed disks are causing performance bottlenecks, consider using Ultra disks.
 
 > [!NOTE]
 > When you provision an instance of Azure Ultra Disk Storage, you can independently configure the size, IOPS, and throughput of the disk. You're charged for using Ultra Disk Storage based on the provisioned size, IOPS, and throughput.
@@ -64,7 +64,7 @@ With Premium SSD, these performance figures are guaranteed. There's no such guar
 
 If you need higher performance than standard disks provide, or if you can't sustain occasional drops in performance, use Premium SSD. Also use Premium SSD managed disks when you want the highest performance but can't use Ultra disks or Premium SSD v2 because of their current limitations. Premium SSD managed disks are a good fit for mission-critical workloads in medium and large organizations.
 
-Azure Premium SSD disks support two bursting models, an on-demand bursting model and a credit-based model. The disk bursting models and their differences are covered in the[Optimize performance and costs using performance-scaling options](../4-optimize-performance-and-costs-using-performance-scaling-options.yml) section.
+Azure Premium SSD disks support two bursting models, an on-demand bursting model and a credit-based model. The disk bursting models and their differences are covered in the [Optimize performance and costs using performance-scaling options](../4-optimize-performance-and-costs-using-performance-scaling-options.yml) section.
 
 ## Standard SSD managed disks
 
