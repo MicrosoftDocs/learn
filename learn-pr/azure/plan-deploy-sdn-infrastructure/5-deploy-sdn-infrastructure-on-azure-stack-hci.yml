@@ -4,7 +4,7 @@ title: Deploy SDN infrastructure on Azure Stack HCI
 metadata:
   unitType: learning-content
   title: Deploy SDN infrastructure on Azure Stack HCI
-  description: This unit describes how to deploy SDN infrastructure on Azure Stack HCI by using SDN Express and Windows Admin Center.
+  description: This unit describes how to deploy software defined networking (SDN) infrastructure on Azure Stack HCI by using SDN Express and Windows Admin Center.
   ms.date: 05/01/2023
   author: JasonGerend
   ms.author: jgerend
