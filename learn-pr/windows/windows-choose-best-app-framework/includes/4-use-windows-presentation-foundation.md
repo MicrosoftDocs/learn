@@ -49,7 +49,7 @@ WPF and Windows Forms applications can be deployed using Microsoft Store (with M
 
 ### Modernizing existing WPF application
 
-The customer has an existing WPF application and has the .NET Framework source code for the app. They plan to modernize and incorporate some of the existing screens and functionality in the new application over time. WPF is the best choice for this requirement. The team can use the .NET Upgrade Assistant to upgrade the exising .NET Framework codebase to a modern .NET solution and import the necessary components into the new WPF application.
+The customer has an existing WPF application and has the .NET Framework source code for the app. They plan to modernize and incorporate some of the existing screens and functionality in the new application over time. WPF is the best choice for this requirement. The team can use the .NET Upgrade Assistant to upgrade the existing .NET Framework codebase to a modern .NET solution and import the necessary components into the new WPF application.
 
 ## Choosing the framework
 
