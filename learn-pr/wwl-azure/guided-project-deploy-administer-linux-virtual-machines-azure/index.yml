@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module-guided-project
+  ms.service: azure-virtual-machines
   ai-usage: human-only
 title: 'Guided Project: Deploy and administer Linux virtual machines on Azure'
 summary: In this module, you practice for the *Deploy and administer Linux virtual machines on Azure* Applied Skill.&nbsp;

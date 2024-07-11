@@ -17,7 +17,7 @@ The project has several phases. In the first phase, you as the Cloud Administrat
 - Exercise 3 - Provide storage for virtual machines.
 - Exercise 4 - Back up a virtual machine.
 
-By the end of this module, you'll have practical experience with Linux virtual machines. You can then apply this knowledge to the on-premises migration. 
+By the end of this module, you have practical experience with Linux virtual machines. You can then apply this knowledge to the on-premises migration. 
 
 > [!NOTE]
 > This is a guided project module where you complete a project by following step-by-step instructions. 
