@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: learning-path
-  ms.service: dotnet-csharp
 title: Delegates events exceptions
 prerequisites: |
   - Installation of Visual Studio Code that's configured for C# application development, including C# Dev Kit.

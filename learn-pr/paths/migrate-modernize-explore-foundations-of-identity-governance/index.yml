@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: learning-path
-  ms.service: azure
 title: Modernize and explore the foundations of identity and governance for SAP on Azure
 prerequisites: |
   Before taking this training, you should complete the Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam, and SAP HANA or NetWeaver training.
