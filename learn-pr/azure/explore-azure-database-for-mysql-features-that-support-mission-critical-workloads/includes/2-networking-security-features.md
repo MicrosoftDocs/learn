@@ -44,7 +44,7 @@ When you use Microsoft Entra ID authentication, there are two administrator acco
 
 The following diagram shows the two modes to manage authentication.
 
-:::image type="content" source="../media/2-networking-and-security-features/azure-postgres-flexible-server-authentication-mechanisms.png" alt-text="Diagram showing how MySQL Admins and Microsoft Entra Admins for MySQL can create users and manage Azure Database for MySQL - Flexible Server." lightbox="../media/2-networking-and-security-features/azure-postgres-flexible-server-authentication-mechanisms.png":::
+:::image type="content" source="../media/2-networking-security-features/azure-postgres-flexible-server-authentication-mechanisms.png" alt-text="Diagram showing how MySQL Admins and Microsoft Entra Admins for MySQL can create users and manage Azure Database for MySQL - Flexible Server." lightbox="../media/2-networking-security-features/azure-postgres-flexible-server-authentication-mechanisms.png":::
 
 When users or applications attempt to connect to a MySQL flexible server using a Microsoft Entra identity, a token is issued to allow for login. The identity is associated with a database user via their unique Microsoft Entra user ID, rather than their name or other attributes.
 

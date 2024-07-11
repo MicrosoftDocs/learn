@@ -4,7 +4,7 @@ A successful migration balances considerations across several phases.
 
 Migrations occur in several phases. First, **plan** the migration scope: discovery and assessment of database resources, business requirements like downtime, and a fallback plan if migration fails. Then, **prepare** the migration by provisioning appropriate resources and setting up connectivity between source and target environments. After the migration approach is set and resources are ready, it's advisable to perform a **dry run** in a staging environment to identify issues ahead of production migration. Lastly, perform the **final migration**, and **validate** its ongoing progress and successful completion.
 
-:::image type="content" source="../media/2-migration-phases-and-considerations/migration-phases.png" alt-text="Screenshot of the migration phases." lightbox="../media/2-migration-phases-and-considerations/migration-phases.png":::
+:::image type="content" source="../media/2-migration-phases-considerations/migration-phases.png" alt-text="Screenshot of the migration phases." lightbox="../media/2-migration-phases-considerations/migration-phases.png":::
 
 This module focuses on the preparation (2) and final migration (4, 5) phases.
 
@@ -12,7 +12,7 @@ This module focuses on the preparation (2) and final migration (4, 5) phases.
 
 You should evaluate requirements for application downtime, version compatibility, networking and security, performance, cost, and business continuity.
 
-:::image type="content" source="../media/2-migration-phases-and-considerations/migration-considerations.png" alt-text="Screenshot of the migration considerations list." lightbox="../media/2-migration-phases-and-considerations/migration-considerations.png":::
+:::image type="content" source="../media/2-migration-phases-considerations/migration-considerations.png" alt-text="Screenshot of the migration considerations list." lightbox="../media/2-migration-phases-considerations/migration-considerations.png":::
 
 ### Application downtime
 

@@ -1,6 +1,6 @@
 It's time to migrate the on-premises MySQL server to an Azure Database for MySQL flexible server. You've decided to perform an offline migration because network settings prevent a direct connection between the source and target servers. The following diagram summarizes the procedure:
 
-:::image type="content" source="../media/5-exercise-use-azure-database-for-mysql-import-cli-from-onprem-mysql/azure-import-cli-migration-procedure.png" alt-text="Screenshot of azure-import-cli-migration-procedure." lightbox="../media/5-exercise-use-azure-database-for-mysql-import-cli-from-onprem-mysql/azure-import-cli-migration-procedure.png":::
+:::image type="content" source="../media/5-exercise-azure-database-for-mysql-import-cli-from-on-premises/azure-import-cli-migration-procedure.png" alt-text="Screenshot of azure-import-cli-migration-procedure." lightbox="../media/5-exercise-azure-database-for-mysql-import-cli-from-on-premises/azure-import-cli-migration-procedure.png":::
 
 ## Prerequisites
 
