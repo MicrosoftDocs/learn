@@ -71,9 +71,8 @@ After the new user is created, [create a (unified) role assignment](/graph/api/r
 - **{role-id}** with one of the [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 
 ```json
-POST https://graph.microsoft.com/v1.0/servicePrincipals
+POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments
 {
-    "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
     "principalId": "{user-id}",
     "roleDefinitionId": "{role-id}",
     "directoryScopeId": "/"
@@ -82,12 +81,11 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 ##### Example
 
-The following example assigns the Global Administrator role to Adele Vance
+The following example assigns the **Global Administrator** role to Adele Vance
 
 ```json
 POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments
 {
-    "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
     "principalId": "c123a123a-abc1-123a-abcd-123456789ab",
     "roleDefinitionId": "a321a321-1cba-a321-dcba-cba987654321",
     "directoryScopeId": "/"
