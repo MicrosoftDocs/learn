@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-nodejs
 metadata:
   title: Introduction to Node.js with JavaScript
   description: "Learn about Node.js: what it is, how it works, and when to use it. Create a Node.js application with JavaScript using Visual Studio Code."
-  ms.date: 01/05/2024
+  ms.date: 05/04/2024
   author: diberry
   ms.author: diberry
   ms.topic: module

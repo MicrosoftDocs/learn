@@ -2,12 +2,12 @@
 uid: learn.wwl.automate-deployment-of-sap-azure
 metadata:
   title: Automate Deployment of SAP on Azure
-  description: "After this module, you will be able to run automated deployments of SAP on Azure infrastructure."
+  description: After this module, you will be able to run automated deployments of SAP on Azure infrastructure.
   ms.date: 11/13/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.service: azure
+  ms.service: sap-on-azure
 title: Automate Deployment of SAP on Azure
 summary: After this module, you will be able to run automated deployments of SAP on Azure infrastructure.
 abstract: |

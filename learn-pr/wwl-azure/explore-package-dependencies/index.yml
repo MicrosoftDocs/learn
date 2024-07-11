@@ -2,24 +2,20 @@
 uid: learn.wwl.explore-package-dependencies
 metadata:
   title: Explore package dependencies
-  description: "Explore package dependencies"
+  description: Explore package dependencies
   ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
-  ms.service: azure
   ai-usage: human-only
+  ms.service: azure-devops-artifacts
 title: Explore package dependencies
 summary: This module explores dependency management concepts and helps to identify project dependencies. You learn how to decompose your system, identify dependencies, and package componentization.
 abstract: |
   By the end of this module, you're able to:
-
   -   Define dependency management strategy
-
   -   Identify dependencies
-
   -   Describe elements and componentization of a dependency management
-
   -   Scan your codebase for dependencies
 prerequisites: None
 iconUrl: /training/achievements/1-explore-package-dependencies.svg

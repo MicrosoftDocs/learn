@@ -2,14 +2,14 @@
 uid: learn.wwl.configure-monitoring-virtual-networks
 metadata:
   title: Configure monitoring for virtual networks
-  description: "In this module, you learn how to use the following Azure Network Watcher functionality to monitor and diagnose Azure networks: Azure Network Watcher topology. Connection Monitor. IP flow verify and NSG diagnostics. Packet capture."
+  description: 'In this module, you learn how to use the following Azure Network Watcher functionality to monitor and diagnose Azure networks: Azure Network Watcher topology. Connection Monitor. IP flow verify and NSG diagnostics. Packet capture.'
   ms.date: 10/25/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
   ms.custom:
   - references_regions
-  ms.service: azure
+  ms.service: azure-monitor
 title: Configure monitoring for virtual networks
 summary: Understand how to use Azure Network Watcher Connection Monitor, flow logs, NSG diagnostics, and packet capture to monitor connectivity across your Azure IaaS network resources.
 abstract: |
@@ -17,7 +17,7 @@ abstract: |
   - Create and configure a flow log
   - Enable Traffic Analytics
   - Configure access to flow logs
-prerequisites: ""
+prerequisites: ''
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

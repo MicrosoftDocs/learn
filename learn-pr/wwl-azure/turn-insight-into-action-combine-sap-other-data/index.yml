@@ -2,28 +2,23 @@
 uid: learn.wwl.turn-insight-into-action-combine-sap-other-data
 metadata:
   title: Turn insight into action by combining SAP and other data
-  description: "Explore Microsoft solutions and products that can help you address analytics needs that include both SAP and other data. You’ll learn about using the Azure Synapse Analytics platform to combine data from multiple sources and examine how Power Platform is used to display and analyze business data to turn insights into action."
+  description: Explore Microsoft solutions and products that can help you address analytics needs that include both SAP and other data. You’ll learn about using the Azure Synapse Analytics platform to combine data from multiple sources and examine how Power Platform is used to display and analyze business data to turn insights into action.
   ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.service: azure
   ai-usage: human-only
+  ms.service: sap-on-azure
 title: Turn insight into action by combining SAP and other data
 summary: Explore using Azure Synapse Analytics to combine data from SAP and other sources, and how Power Platform is used to display and analyze business data to turn insights into action.
 abstract: |
   After completion of this module, you will be able to:
-
   -   Combine data from multiple sources with linked services in Azure Synapse Analytics.
-
   -   Perform machine learning to provide predictions on data extracted from a SQL pool.
-
   -   Create Power BI data visualization of your merged data.
-
   -   Display actionable data and write data to SAP from a Power App.
 prerequisites: |
   -   Azure Data Fundamentals.
-
   -   Knowledge of SAP products such as SAP HANA or SAP NetWeaver.
 iconUrl: /learn/achievements/turn-insight-into-action-combine-sap-other-data.svg
 levels:
