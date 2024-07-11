@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.deploy-azure-database-for-mysql
+uid: learn.create-azure-database-for-mysql
 metadata:
   title: Create your first Azure Database for MySQL flexible server
   description: Microsoft Azure Database for MySQL is an Azure managed data service. It considerably simplifies database deployment, management, and maintenance, while providing compatibility with existing MySQL database workloads. 
@@ -40,13 +40,13 @@ products:
 - azure-database-mysql
 
 units:
-- learn.deploy-azure-database-for-mysql.introduction
-- learn.deploy-azure-database-for-mysql.what-azure-database-mysql
-- learn.deploy-azure-database-for-mysql.how-deploy-connect-azure-database-mysql
-- learn.deploy-azure-database-for-mysql.deploy-azure-database-mysql
-- learn.deploy-azure-database-for-mysql.connect-azure-database-mysql
-- learn.deploy-azure-database-for-mysql.knowledge-check
-- learn.deploy-azure-database-for-mysql.summary
+- learn.create-azure-database-for-mysql.introduction
+- learn.create-azure-database-for-mysql.what-azure-database-mysql
+- learn.create-azure-database-for-mysql.how-deploy-connect-azure-database-mysql
+- learn.create-azure-database-for-mysql.deploy-azure-database-mysql
+- learn.create-azure-database-for-mysql.connect-azure-database-mysql
+- learn.create-azure-database-for-mysql.knowledge-check
+- learn.create-azure-database-for-mysql.summary
 
 badge:
-  uid: learn.deploy-azure-database-for-mysql.badge
+  uid: learn.create-azure-database-for-mysql.badge

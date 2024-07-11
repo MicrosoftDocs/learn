@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.deploy-azure-database-for-mysql.connect-azure-database-mysql 
+uid: learn.create-azure-database-for-mysql.connect-azure-database-mysql 
 title: Exercise - Connect to an Azure Database for MySQL flexible server
 sandbox: true
 interactive: bash
