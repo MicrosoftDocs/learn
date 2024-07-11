@@ -1,6 +1,6 @@
 
 
-Once everything is configured you need to configure backup policies. Backup policies will protect the virtual machines from accidental or malicious data loss. 
+Once everything is configured, you need to configure backup policies. Backup policies protect the virtual machines from accidental or malicious data loss. 
 
 ## Architecture diagram
 
