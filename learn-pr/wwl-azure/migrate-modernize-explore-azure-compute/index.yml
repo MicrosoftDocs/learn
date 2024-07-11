@@ -2,12 +2,12 @@
 uid: learn.wwl.migrate-modernize-explore-azure-compute
 metadata:
   title: Modernize and explore Azure for SAP compute
-  description: "This module explores the design of scalable, performant, and resilient compute components for SAP deployments in Azure. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
+  description: 'This module explores the design of scalable, performant, and resilient compute components for SAP deployments in Azure. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/08/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.service: azure
+  ms.service: sap-on-azure
 title: Modernize and explore Azure for SAP compute
 summary: This module explores the planning and design of scalable, performant, and resilient compute components for SAP certified deployments in Microsoft Azure.
 abstract: |

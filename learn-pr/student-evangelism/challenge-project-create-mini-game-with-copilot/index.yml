@@ -8,7 +8,7 @@ metadata:
   ms.author: cyzanon
   ms.custom: team=nextgen
   ms.topic: module-challenge-project
-  ms.service: azure
+  ms.service: github
 title: Challenge project - Build a minigame with GitHub Copilot and Python
 summary: Demonstrate your ability to analyze, create, and use different methods to develop a console minigame in Python with GitHub Codespaces and GitHub Copilot.
 abstract: |

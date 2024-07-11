@@ -9,6 +9,6 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Use Azure Key Vault secrets in Azure Pipelines - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/release/azure-key-vault).
- -  [Define variables - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/process/variables).
- -  [Integrate Azure App Configuration using a continuous integration and delivery pipeline \| Microsoft Docs](/azure/azure-app-configuration/integrate-ci-cd-pipeline).
+ -  [Use Azure Key Vault secrets in Azure Pipelines - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/release/azure-key-vault).
+ -  [Define variables - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/process/variables).
+ -  [Integrate Azure App Configuration using a continuous integration and delivery pipeline \| Microsoft Learn](/azure/azure-app-configuration/integrate-ci-cd-pipeline).
