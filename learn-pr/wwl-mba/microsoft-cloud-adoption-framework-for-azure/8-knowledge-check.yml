@@ -56,7 +56,7 @@ quiz:
     - content: "Scale eases the burden of data backup, disaster recovery, and business continuity."
       isCorrect: false
       explanation: "That's incorrect. Reliability, not Scale, eases the burden of data backup, disaster recovery, and business continuity."
-  - content: "Financial planning for cloud adoption requires organizations to decide whether to expand on-premises capabilities or move certain workloads and functions off-premises to cloud-delivered services. Microsoft has tools that can help. What Microsoft tool is available for a CFO who's trying to estimate the expected monthly bill and track actual account usage?"
+  - content: "Financial planning for cloud adoption requires organizations to decide whether to expand on-premises capabilities or move certain workloads and functions off-premises to cloud-delivered services. Microsoft has tools that can help. What Microsoft tool is available for a CFO who's trying to estimate the expected monthly bill?"
     choices:
     - content: "The Azure Total Cost of Ownership (TCO) Calculator."
       isCorrect: false
