@@ -1,17 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn-pr.azure.create-azure-database-for-mysql.knowledge-check
+uid: learn.create-azure-database-for-mysql.knowledge-check
 title: Knowledge check
 
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  author: markingmyname
-  ms.author: maghan
-  manager: jroth
-  ms.reviewer: shreyaanand
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
   ms.topic: unit
   ms.custom: event-tier1-build-2022
-  ms.date: 06/09/2023
+  ms.date: 07/08/2024
 
 durationInMinutes: 5
 content: |
@@ -34,13 +33,13 @@ quiz:
  
   - content: "Which architecture model provides the maximum high availability that Azure Database for MySQL - Flexible Server supports?"
     choices:
-    - content: "The primary and replica servers deployed into the same availability set"
+    - content: "The primary and standby replica servers deployed into the same availability set"
       isCorrect: false
       explanation: "Azure Database for MySQL - Flexible Server uses availability zones, not availability sets to maximize high availability."
-    - content: "The primary and replica servers deployed into different zones in the same region"
+    - content: "The primary and standby replica servers deployed into different zones in the same region"
       isCorrect: true
       explanation: "Azure Database for MySQL - Flexible Server uses availability zones to maximize high availability."
-    - content: "The primary and replica servers deployed into different regions"
+    - content: "The primary and standby replica servers deployed into different regions"
       isCorrect: false
       explanation: "Azure Database for MySQL - Flexible Server uses availability zones, not cross-region deployments, to maximize high availability."
  

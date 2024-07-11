@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.azure-database-for-mysql
+title: Azure Database for MySQL
+metadata:
+  title: Azure Database for MySQL
+  description: Azure Database for MySQL
+  ms.date: 07/08/2024
+  author: markingmyname
+  ms.author: maghan
+  ms.topic: learning-path
+summary: |
+  MySQL is an open source relational database. Learn how to seamlessly deploy community mysql to the Azure cloud, connect your database to apps, and scale horizontally across as many machines - and locations - as needed.
+prerequisites: |
+  Basic familiarity with relational databases
+iconUrl: /training/achievements/azure-database-for-mysql.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- azure
+- azure-database-mysql
+modules:
+- learn.intro-to-azure-database-for-mysql
+- learn.create-azure-database-for-mysql
+- learn.develop-apps-with-azure-database-mysql
+- learn.explore-azure-database-for-mysql-features-support-mission-critical-workloads
+- learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads
+- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql
+trophy:
+  uid: learn.azure-database-for-mysql.trophy

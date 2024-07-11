@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql
+metadata:
+  title: "Choose a tool to migrate data to Azure Database for MySQL"
+  description: "Choose a tool to migrate data to Azure Database for MySQL"
+  ms.date: 07/08/2024
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
+  ms.topic: module-intro-to-product
+  ms.service: mysql
+title: "Choose a tool to migrate data to Azure Database for MySQL"
+summary: |
+  In this module, you evaluate migration tools and practice migrating an on-premises MySQL server to an Azure Database for MySQL flexible server. 
+abstract: |
+   By the end of this module, you should be able to:
+    - "Choose an online or offline migration."
+    - "Review available migration tools and select one."
+    - "Migrate an on-premises MySQL server into an Azure Database for MySQL flexible server."
+prerequisites: |
+  - Experience administering MySQL
+  - Experience administering Azure 
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+products:
+- azure
+- azure-database-mysql
+subjects:
+  - migration
+units:
+- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.introduction
+- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.migration-phases-considerations
+- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.explore-migration-tool-options
+- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.decide-the-migration-approach-and-tool
+- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.exercise-azure-database-for-mysql-import-cli-from-on-premises
+- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.knowledge-check
+- learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.summary
+badge:
+  uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.badge

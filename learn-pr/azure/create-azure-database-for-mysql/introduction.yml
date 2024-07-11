@@ -1,17 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn-pr.azure.create-azure-database-for-mysql.introduction
+uid: learn.create-azure-database-for-mysql.introduction
 title: Introduction
 
 metadata:
   title: Introduction
   description: Provide an introduction of Azure Database for MySQL.
-  author: markingmyname
-  ms.author: maghan
-  manager: jroth
-  ms.reviewer: shreyaanand
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
   ms.topic: unit
   ms.custom: event-tier1-build-2022
-  ms.date: 06/09/2023
+  ms.date: 07/08/2024
 
 durationInMinutes: 3
 content: |
