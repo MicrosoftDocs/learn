@@ -3,15 +3,16 @@ uid: learn.azure-intro-to-blockchain
 metadata:
   title: Introduction to blockchain on Azure
   description: Introduction to blockchain on Azure. See how blockchain allows business partners to trust each other's data without a central authority. You also learn a bit about how blockchain works. The goal is to help you decide if blockchain is a good choice for your scenario.
-  ms.date: 05/15/2023
+  ms.date: 07/09/2024
   author: meaghanlewis
   manager: eliotgra
   ms.author: mosagie
   ms.topic: module
+  ms.service: azure
 title: Introduction to blockchain on Azure
 summary: Discover how blockchain protocols enable trust. Learn to assess scenarios for when to use blockchain and decide if it's right for your solution.
 abstract: |
-  In this module, you learn how to:
+  In this module, you'll learn how to:
 
   - Explain how blockchain enables trust and business processes between participants.
   - Evaluate when to use blockchain for a solution.

@@ -3643,3 +3643,68 @@ achievements:
   title: Tour the N-tier architecture style for your application
   summary: Use a Resource Manager template to deploy an application styled in an N-tier architecture, identify key concepts of N-tier architectures, and review best practices for deployments of this style.
   iconUrl: /training/achievements/n-tier-architecture.svg
+- uid: learn.intro-to-azure-database-for-mariadb.badge
+  type: badge
+  title: Introduction to Azure Database for MariaDB
+  summary: Evaluate whether Azure Database for MariaDB can manage your organization's mission-critical workloads. Describe whether its performance and scalability make it ideal to host your database workloads.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.introduction-to-azure-orbital-ground-station-badge
+  type: badge
+  title: Introduction to Azure Orbital Ground Station
+  summary: Azure Orbital is an express route to space. It extends Azure capabilities and enables organizations to connect to the cloud from anywhere, analyze and disseminate space data, and build and test in the cloud from space. A part of the Azure Space portfolio, Azure Orbital Ground Station is a fully managed end-to-end service that enables satellite operators to communicate, uplink, downlink, and process data from their satellites/spacecrafts on a pay-as-you-go basis. In this module, we’ll look at AO Ground Station's key features and how to perform essential steps in the Azure Orbital portal.
+  iconUrl: /learn/achievements/azure-space-ground-station.svg
+- uid: learn.introduction-to-azure-space-badge
+  type: badge
+  title: Introduction to Azure Space
+  summary: Explore some of the ins and outs of the space industry and how it's quickly changing.
+  iconUrl: /training/achievements/azure-space-intro.svg
+- uid: learn.azure.azure-object-anchors-tutorials.badge
+  type: badge
+  title: Use Azure Object Anchors to detect an object in the physical world
+  summary: This course explores the fundamentals of Azure Object Anchors and how it can be used to detect an object in physical world.
+  iconUrl: /training/achievements/azure-object-anchors-tutorials.svg
+- uid: learn.wwl.build-qna-solution-qna-maker.badge
+  type: badge
+  title: Build a question answering solution
+  summary: The question answering capability of the Language service makes it easy to build applications in which users ask questions using natural language and receive appropriate answers.
+  iconUrl: /training/achievements/qna-maker-solution.svg
+- uid: learn.wwl.custom-name-entity-extraction.badge
+  type: badge
+  title: Create a custom named entity extraction solution
+  summary: Build a custom entity recognition solution to extract entities from unstructured documents
+  iconUrl: /training/achievements/2-custom-name-entity-recognition.svg
+- uid: learn.wwl.extract-insights-text-with-text-analytics-service.badge
+  type: badge
+  title: Extract insights from text with the Azure AI Language service
+  summary: The Azure AI Language service enables you to create intelligent apps and services that extract semantic information from text.
+  iconUrl: /training/achievements/extract-insights-from-text-with-the-text-analytics-service.svg
+- uid: learn.wwl.transcribe-speech-input-text.badge
+  type: badge
+  title: Create speech-enabled apps with Azure AI services
+  summary: The Azure AI Speech service enables you to build speech-enabled applications. This module focuses on using the speech-to-text and text to speech APIs, which enable you to create apps that are capable of speech recognition and speech synthesis.
+  iconUrl: /training/achievements/transcribe-speech-input-text.svg
+- uid: learn.wwl.develop-decision-support.trophy
+  type: trophy
+  title: Develop decision support solutions with Azure AI Services
+  summary: Decision support helps automate decision making by providing recommendations to users. Azure AI Services includes multiple services that support common decision support scenarios.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.investigate-container-for-use-with-cognitive-services.badge
+  type: badge
+  title: Deploy Azure AI services in containers
+  summary: Learn about Container support in Azure AI Services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
+  iconUrl: /training/achievements/investigate-container-for-use-with-cognitive-services.svg
+- uid: learn.wwl.monitor-cognitive-services.badge
+  type: badge
+  title: Monitor Azure AI Services
+  summary: Azure AI Services enable you to integrate artificial intelligence into your applications and services. It's important to be able to monitor Azure AI Services in order to track utilization, determine trends, and detect and troubleshoot issues.
+  iconUrl: /learn/achievements/monitor-cognitive-services.svg
+- uid: learn.wwl.publish-use-language-understand-app.badge
+  type: badge
+  title: Develop an app with Azure AI Language
+  summary: After creating an Azure AI Language Understanding model, you can publish it and consume it from client applications.
+  iconUrl: /training/achievements/publish-use-language-understand-app.svg
+- uid: learn.wwl.secure-cognitive-services.badge
+  type: badge
+  title: Secure Azure AI Services
+  summary: Securing Azure AI Services can help prevent data loss and privacy violations for user data that may be a part of the solution.
+  iconUrl: /training/achievements/secure-cognitive-services.svg

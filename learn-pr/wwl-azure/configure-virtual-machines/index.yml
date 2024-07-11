@@ -2,15 +2,15 @@
 uid: learn.wwl.configure-virtual-machines
 metadata:
   title: Configure virtual machines
-  description: "You will learn to configure virtual machines including sizing, storage, and connections."
+  description: You will learn to configure virtual machines including sizing, storage, and connections.
   ms.date: 11/15/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: azure
   ai-usage: ai-assisted
+  ms.service: azure-virtual-network
 title: Configure virtual machines
 summary: |
   Learn how to configure virtual machines including sizing, storage, and connections.
