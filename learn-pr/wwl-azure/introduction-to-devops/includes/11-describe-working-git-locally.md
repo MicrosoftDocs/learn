@@ -72,7 +72,7 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
     http://proxyUsername:proxyPassword@proxy.server.com:port
     
     ```
-4.  Create a new ASP.NET core application. The new command offers a collection of switches that can be used for language, authentication, and framework selection. More details can be found on [Microsoft docs](/dotnet/core/tools/dotnet-new).
+4.  Create a new ASP.NET core application. The new command offers a collection of switches that can be used for language, authentication, and framework selection. More details can be found on [Microsoft Learn](/dotnet/core/tools/dotnet-new).
     
     ```Cmd
     dotnet new mvc
