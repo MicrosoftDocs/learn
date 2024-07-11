@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-azure-database-for-mysql.deploy-azure-database-mysql 
+uid: learn.deploy-azure-database-for-mysql.deploy-azure-database-mysql 
 title: Exercise - Deploy an Azure Database for MySQL flexible server
 sandbox: true
 metadata:
