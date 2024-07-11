@@ -6,7 +6,7 @@ Imagine you're a large financial services company developer, using the LAMP (Lin
 
 To tackle these challenges, you're looking at leveraging cloud solutions and specifically considering deploying your MySQL database on Microsoft Azure. You prefer to focus more on your programming than managing infrastructure, so you're inclined to explore Azure Database for MySQL – Flexible Server—a managed service—over managing MySQL on Azure VMs.
 
-## What you are learning in this module
+## What you will do
 
 In this module, you explore the core functionality of Azure Database for MySQL. Then, you use your newly acquired knowledge to set up an instance of Azure Database for MySQL—Flexible Server and connect to it.
 
