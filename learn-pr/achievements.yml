@@ -3708,3 +3708,13 @@ achievements:
   title: Secure Azure AI Services
   summary: Securing Azure AI Services can help prevent data loss and privacy violations for user data that may be a part of the solution.
   iconUrl: /training/achievements/secure-cognitive-services.svg
+- uid: learn.azure.publish-azure-web-app-with-azure-toolkit-eclipse.badge
+  type: badge
+  title: Develop Java web app on Azure using Eclipse
+  summary: Create a web app in Eclipse and deploy the app to Azure by using Azure Toolkit for Eclipse with this step by step module.
+  iconUrl: /training/achievements/publish-azure-web-app-with-azure-toolkit-eclipse.svg
+- uid: learn.azure.azure-redis-publish-subscribe-streams.badge
+  type: badge
+  title: Implement Pub/Sub and Streams in Azure Cache for Redis
+  summary: Execute Redis pub/sub commands for event-based messaging at scale in Azure Cache for Redis. Use the Redis console to create, append, and query a Redis stream with time-based ranges.
+  iconUrl: /training/achievements/azure-redis-publish-subscribe-streams.svg
