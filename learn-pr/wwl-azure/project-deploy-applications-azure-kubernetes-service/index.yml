@@ -2,12 +2,12 @@
 uid: learn.wwl.project-deploy-applications-azure-kubernetes-service
 metadata:
   title: Guided Project - Deploy applications to Azure Kubernetes Service
-  description: "Welcome to this interactive skills validation experience. Completing this module helps prepare you for the Deploy and manage containers with Azure Kubernetes Service assessment."
+  description: Welcome to this interactive skills validation experience. Completing this module helps prepare you for the Deploy and manage containers with Azure Kubernetes Service assessment.
   ms.date: 10/25/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-kubernetes-service
 title: Guided Project - Deploy applications to Azure Kubernetes Service
 summary: Welcome to this interactive skills validation experience. Completing this module helps prepare you for the Deploy and manage containers with Azure Kubernetes Service assessment.
 abstract: |
