@@ -1,4 +1,4 @@
-Now that you've provisioned an Azure Database for MySQL flexible server, you want to connect to it to validate its availability. In this unit, you step through connecting to the server by using the mysql.exe utility from the Azure Cloud Shell.
+Now that you provisioned an Azure Database for MySQL flexible server, you want to connect to it to validate its availability. In this unit, you step through connecting to the server by using the mysql.exe utility from the Azure Cloud Shell.
 
 ### Connect to an Azure Database for MySQL flexible server
 
@@ -8,7 +8,7 @@ From the Azure Cloud Shell, use the following procedure to connect to and query 
 
 1. On the **Overview** pane, note the value of **Server name**. You need this fully qualified server name to establish a connection.
 
- :::image type="content" source="../media/connect-azure-database-mysql/5-server-overview-pane.png" alt-text="Screenshot displays the Overview menu item highlighted in the left-hand menu and the server name highlighted in the Essentials section.":::
+:::image type="content" source="../media/connect-azure-database-mysql/5-server-overview-pane.png" alt-text="Screenshot displays the Overview menu item highlighted in the left-hand menu and the server name highlighted in the Essentials section.":::
 
 1. To verify that your network configuration allows connectivity from Azure Cloud Shell, under **Settings**, select **Networking**.
 
@@ -20,15 +20,15 @@ From the Azure Cloud Shell, use the following procedure to connect to and query 
    wget --no-check-certificate https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem
    ```
 
-1. Next, run the following command to connect to the server, replacing the <server_name> placeholder with the name of your server, and the <user_name> placeholder with the name of the admin account you specified (such as `mysqladmin`) when provisioning the server in the previous exercise:
+1. Next, run the following command to connect to the server, replacing the <server_name> placeholder with the name of your server and the <user_name> placeholder with the name of the admin account you specified (such as `mysqladmin`) when provisioning the server in the previous exercise:
 
    ```bash
    mysql -h <server_name>.mysql.database.azure.com -u <user_name> -p --ssl-mode=VERIFY_IDENTITY --ssl-ca=DigiCertGlobalRootCA.crt.pem
    ```
 
-1. When prompted, enter the password that you assigned (such as `Passw0rd123`) to the admin account you specified when provisioning the server in the previous task.
+1. When prompted, enter the password you assigned (such as `Passw0rd123`) to the admin account you specified when provisioning the server in the previous task.
 
-    You should be presented with the **MySQL [(none)]** prompt. This prompt verifies that the connection was successful.
+    You should receive the **MySQL [(none)]** prompt. This prompt verifies that the connection was successful.
 
 1. Next, from the **MySQL [(none)]** prompt, run the following command to list databases hosted by the server:
 
@@ -36,7 +36,7 @@ From the Azure Cloud Shell, use the following procedure to connect to and query 
       SHOW DATABASES;
       ```
 
-1. Verify that the list includes the four precreated databases (**information_schema**, **mysql**, **performance_schema**, and **sys**) and the **testdb** that you created in the previous exercise.
+1. Verify that the list includes the four precreated databases (**information_schema**, **MySQL**, **performance_schema**, and **sys**) and the **testdb** you created in the previous exercise.
 
 1. From the **MySQL [(none)]** prompt, run the following command to switch to the **testdb** database:
 

@@ -1,5 +1,4 @@
 In this unit, you examine how Azure Database for MySQL can help with building a resilient, performant, and easy to maintain data store for your web-based app. Considering the expected business criticality and high demand, you're interested in its ability to scale both compute and storage resources. You also want to ensure that as a managed service, Azure Database for MySQL minimizes management and maintenance overhead, allowing you to focus on software development instead.
-
 ### What are the core characteristics of Azure Database for MySQL?
 
 Azure Database for MySQL - Flexible Server is designed to deliver full compatibility with your existing MySQL applications, supporting widely used MySQL Community Server versions 5.7 and 8.0. This deployment option is particularly effective for scenarios that require:
