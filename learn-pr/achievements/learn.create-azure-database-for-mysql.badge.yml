@@ -1,5 +1,5 @@
 ### YamlMime:AchievementDetail
-achievementUid: learn.create-azure-database-for-mysql.badge
+achievementUid: learn.deploy-azure-database-for-mysql.badge
 metadata:
   title: >-
     Microsoft Badge: Create your first Azure Database for MySQL flexible server
