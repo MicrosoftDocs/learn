@@ -2,13 +2,13 @@
 uid: learn.wwl.deploy-manage-container-app-using-azure-container-apps
 metadata:
   title: Guided project - Deploy and manage a container app using Azure Container Apps
-  description: "Learn to configure Azure Container Registry, Azure Container Apps, and the other resources required for an app deployment scenario. Learn to configure a container apps solution for continuous integration, scaling, and revision management."
+  description: Learn to configure Azure Container Registry, Azure Container Apps, and the other resources required for an app deployment scenario. Learn to configure a container apps solution for continuous integration, scaling, and revision management.
   ms.date: 02/29/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module-guided-project
-  ms.service: azure
   ai-usage: ai-assisted
+  ms.service: azure-container-apps
 title: Guided project - Deploy and manage a container app using Azure Container Apps
 summary: This module guides learners through the end-to-end process of building, deploying, and managing containerized applications using Azure Container Apps, Azure Container Registry, Azure Pipelines, and other tools and resources.
 abstract: |

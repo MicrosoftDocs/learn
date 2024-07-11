@@ -8,7 +8,7 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Git branching guidance - Azure Repos \| Microsoft Docs](/azure/devops/repos/git/git-branching-guidance).
- -  [Create a new Git branch from the web - Azure Repos \| Microsoft Docs](/azure/devops/repos/git/create-branch).
- -  [How Microsoft develops modern software with DevOps - Azure DevOps \| Microsoft Docs](/devops/develop/how-microsoft-develops-devops).
- -  [Fork your repository - Azure Repos \| Microsoft Docs](/azure/devops/repos/git/forks).
+ -  [Git branching guidance - Azure Repos \| Microsoft Learn](/azure/devops/repos/git/git-branching-guidance).
+ -  [Create a new Git branch from the web - Azure Repos \| Microsoft Learn](/azure/devops/repos/git/create-branch).
+ -  [How Microsoft develops modern software with DevOps - Azure DevOps \| Microsoft Learn](/devops/develop/how-microsoft-develops-devops).
+ -  [Fork your repository - Azure Repos \| Microsoft Learn](/azure/devops/repos/git/forks).

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.store-data-azure-cosmos-aspire.using-entity-framework-with-cosmos
+title: Using Entity Framework with Cosmos DB
+metadata:
+  title: Using Entity Framework with Cosmos DB
+  description: "Learn how to use Entity Framework database contexts to interact with a Cosmos DB database from a .NET Aspire solution."
+  ms.date: 3/22/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-using-entity-framework-with-cosmos.md)]
