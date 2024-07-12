@@ -12,7 +12,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'How does Azure Lighthouse let a service provider access resources in a customer\'s Azure environment?'
+  - content: How does Azure Lighthouse let a service provider access resources in a customer's Azure environment?
     choices:
     - content: Customers create a user account for the service provider in their Azure tenant.
       isCorrect: false
@@ -23,18 +23,18 @@ quiz:
     - content: Users in the service provider's tenant are granted specific roles to delegated resources in the customer's tenant.
       isCorrect: true
       explanation: Correct. After the onboarding process, service providers can sign in to their own Azure tenant and access the customer resources to which they've been granted access.
-  - content: 'What is the most efficient way that Azure Lighthouse could help Contoso ensure that all of its customer's storage accounts use HTTPS?'
+  - content: What is the most efficient way that Azure Lighthouse could help Contoso ensure that all of its customer's storage accounts use HTTPS?
     choices:
     - content: Contoso can access individual storage accounts in each customer tenant and check that each of them are using HTTPS.
       isCorrect: false
       explanation: Incorrect. While Azure Lighthouse enables this access, it's more efficient to deploy a policy across all customers.
-    - content: Contoso can deploy one policy across all of the customer subscriptions that it manages through Azure Lighthouse.
+    - content: Contoso can create a policy to check that storage accounts use HTTPS. It can then deploy that one policy across all of the customer subscriptions that it manages through Azure Lighthouse.
       isCorrect: true
       explanation: Correct. With Azure Lighthouse, one policy can be deployed to all of Contoso's customers.
-    - content: Contoso can deploy a custom policy to each individual customer subscription that it manages through Azure Lighthouse.
+    - content: Contoso can create custom policies for each customer to check that storage accounts use HTTPS, then deploy the policies to each individual subscription that it manages through Azure Lighthouse.
       isCorrect: false
       explanation: Incorrect. It's more efficient for Contoso to deploy one policy across all of its customers, which is supported by Azure Lighthouse.
-  - content: 'What are the costs for using Azure Lighthouse?'
+  - content: What are the costs for using Azure Lighthouse?
     choices:
     - content: Free
       isCorrect: true
