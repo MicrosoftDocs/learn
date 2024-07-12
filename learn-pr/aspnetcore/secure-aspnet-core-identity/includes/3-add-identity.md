@@ -73,10 +73,10 @@ The default Identity implementation can be added with `dotnet` command-line tool
 1. Install the ASP.NET Core code scaffolder:
 
     ```dotnetcli
-    dotnet tool install dotnet-aspnet-codegenerator --version 6.0.2 --global
+    dotnet tool install dotnet-aspnet-codegenerator --version 8.0.* --global
     ```
 
-    The scaffolder is a .NET Core tool that:
+    The scaffolder is a .NET tool that:
 
     * Is used to add the default Identity components to the project.
     * Enables customization of Identity UI components in the next unit.
@@ -85,11 +85,11 @@ The default Identity implementation can be added with `dotnet` command-line tool
 1. Add the following NuGet packages to the project:
 
     ```dotnetcli
-    dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 6.0.2
-    dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 6.0.3
-    dotnet add package Microsoft.AspNetCore.Identity.UI --version 6.0.3
-    dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.3
-    dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 6.0.3
+    dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 8.0.*
+    dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 8.0.*
+    dotnet add package Microsoft.AspNetCore.Identity.UI --version 8.0.*
+    dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.*
+    dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.*
     ```
 
     These packages install code generation templates and dependencies that are used by the scaffolder.
@@ -155,7 +155,7 @@ This connection string points to an instance of SQL Server Express LocalDB by de
 
 ```json
 "ConnectionStrings": {
-    "RazorPagesPizzaAuthConnection": "Data Source=localhost;Initial Catalog=RazorPagesPizza;Integrated Security=False;User Id=sa;Password=P@ssw0rd;MultipleActiveResultSets=True"
+    "RazorPagesPizzaAuthConnection": "Data Source=localhost;Initial Catalog=RazorPagesPizza;Integrated Security=False;User Id=sa;Password=P@ssw0rd;MultipleActiveResultSets=True;Encrypt=False"
 }
 ```
 
@@ -169,7 +169,7 @@ Now that you've verified the connection string, you can generate and run a migra
 1. Install the Entity Framework Core migration tool:
 
     ```dotnetcli
-    dotnet tool install dotnet-ef --version 6.0.3 --global
+    dotnet tool install dotnet-ef --version 8.0.7 --global
     ```
 
     The migration tool is a .NET tool that:
