@@ -4,7 +4,7 @@ title: Export file system data to Azure Blob Storage
 metadata:
   title: Export file system data to Azure Blob Storage
   description: Learn how to export Azure Managed Lustre file system data to Azure Blob Storage.
-  ms.date: 06/14/2024
+  ms.date: 07/12/2024
   author: pauljewellmsft
   ms.author: pauljewell
   ms.reviewer: blepore

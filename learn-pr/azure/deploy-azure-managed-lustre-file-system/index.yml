@@ -3,7 +3,7 @@ uid: learn.azure.deploy-azure-managed-lustre-file-system
 metadata:
   title: 'Accelerate HPC and AI workloads with Azure Managed Lustre'
   description: Learn how to deploy an Azure Managed Lustre file system to accelerate HPC and AI workloads.
-  ms.date: 06/14/2024
+  ms.date: 07/12/2024
   author: pauljewellmsft
   ms.author: pauljewell
   ms.reviewer: blepore
