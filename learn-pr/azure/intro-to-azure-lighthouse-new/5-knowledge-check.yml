@@ -12,7 +12,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'How does Azure Lighthouse let a service provider access resources in a customer's Azure environment?'
+  - content: 'How does Azure Lighthouse let a service provider access resources in a customer\'s Azure environment?'
     choices:
     - content: Customers create a user account for the service provider in their Azure tenant.
       isCorrect: false
