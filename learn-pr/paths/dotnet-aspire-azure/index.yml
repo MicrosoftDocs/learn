@@ -3,14 +3,14 @@ uid: learn.dotnet-aspire-azure
 metadata:
   title: Use Azure services to build and deploy apps with .NET Aspire
   description: |
-    Learn how use Azure services with .NET Aspire.
+    Learn how to use Azure services with .NET Aspire.
   ms.date: 07/12/2024
   author: CamSoper
   ms.author: casoper
   ms.topic: learning-path
 title: Use Azure services to build and deploy apps with .NET Aspire
 summary: |
-  Learn how use Azure services with .NET Aspire. 
+  Learn how to use Azure services with .NET Aspire. 
 prerequisites: |
   - Experience building web applications using .NET and C#
   - Experience with .NET Aspire
