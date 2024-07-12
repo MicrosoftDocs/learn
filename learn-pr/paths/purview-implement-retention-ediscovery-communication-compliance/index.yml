@@ -29,5 +29,6 @@ modules:
 - learn.wwl.purview-implement-manage-retention
 - learn.wwl.manage-microsoft-purview-ediscovery-premium
 - learn-m365.m365-compliance-insider-prepare-communication-compliance
+- learn-m365.wwl.purview-exercise-implement-retention-ediscovery-communication-compliance
 trophy:
   uid: learn.wwl.purview-implement-retention-ediscovery-communication-compliance.trophy
