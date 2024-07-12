@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-lighthouse.1-introduction
+metadata:
+  title: Introduction
+  description: Azure Lighthouse enables multitenant management with scalability, higher automation, and enhanced governance across resources. 
+  ms.date: 02/09/2023
+  author: JnHs
+  ms.author: jenhayes
+  ms.topic: unit
+  products:
+    - azure
+    - azure-lighthouse
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
+  
