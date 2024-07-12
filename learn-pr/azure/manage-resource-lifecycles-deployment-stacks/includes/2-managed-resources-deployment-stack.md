@@ -8,6 +8,8 @@ In this unit, you learn about managed resources and the _action on unmanage_ par
 
 Before we get into updating deployment stacks, let's take a look at how resources are managed by a stack. When you create a deployment stack, the stack becomes responsible for managing the resources described in the template file. These resources are known as managed resources. As long as a resource is defined in a template file, it is considered a managed resource. Think of deployment stacks as a series of pointers that groups your application's resources into a single unit.
 
+Deployment stacks can be created at different scopes, such as resource groups, subscriptions, and management groups. The resources that a deploment stack can manage depends on the scope where the stack is created.
+
 ![a graphic representing a deployment stack and managed resources](../media/deployment-stacks-scenario-2-and-5.png)
 
 What happens to a resource that is no longer managed by the deployment stack? If a resource is no longer defined in a template file and the stack is updated, the resource can become detached or deleted. A detached resource is a resource that is no longer managed by the stack, but the resource continues to exist within Azure. A deleted resource is a resource that is no longer managed by the stack, and is deleted from Azure.
@@ -16,13 +18,13 @@ For example, let's consider our Bicep file from the last module.
 
 :::code language="bicep" source="code/1a-template.bicep" range="1-4,18-43":::
 
-The template file defines an app service plan and a web app. Let's say that we need to remove the existing web app from our application. We edit our Bicep file, removing the highlighted code that references our web app.
+The template file defines an app service plan, a web app, and an Azure SQL server and database. Let's say that we need to remove the existing web app from our application. We edit our Bicep file, removing the highlighted code that references our web app.
 
-:::code language="bicep" source="code/1a-template.bicep" range="1-4,18-43" highlight="5-6,22-29":::
+:::code language="bicep" source="code/1a-template.bicep" range="1-63" highlight="18-19,35-42":::
 
 We are left with the following code in our file:
 
-:::code language="bicep" source="code/1a-template.bicep" range="1-4,21-34":::
+:::code language="bicep" source="code/1a-template.bicep" range="1-17,21-34,44-63":::
 
 ::: zone pivot="cli"
 
@@ -39,6 +41,8 @@ az stack group create \
 
 > [!NOTE]
 > Azure CLI does not have a dedicated command to update a deployment stack. Use the create command to update the stack.
+
+When performing an update on the stack, you receive a message stating that the stack already exists in the current subscription. If the value of the _action on unmanage_ parameter changes, the warning alerts you of the new values.
 
 After the update operation is complete, the app service plan is the only resource managed by the stack. In our command, we used `--action-on-unmanage detachAll` to specify how Azure handles resources that are no longer managed by a deployment stack. In this case, the web app is detached from the deployment stack, but it still exists in the resource group.
 
@@ -61,7 +65,7 @@ After the update operation is complete, the app service plan is the only resourc
 
 ::: zone-end
 
-## Action on Unmanage
+## Action on unmanage
 
 You're able to control how Azure handles detached resources, resource groups, and management groups with a property known as the _action on unmanage_ parameter. This parameter can be set when creating, modifying, or deleting a deployment stack.
 
