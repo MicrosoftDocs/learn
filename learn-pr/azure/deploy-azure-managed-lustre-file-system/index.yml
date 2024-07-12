@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.azure.deploy-azure-managed-lustre-file-system
+metadata:
+  title: 'Accelerate HPC and AI workloads with Azure Managed Lustre'
+  description: Learn how to deploy an Azure Managed Lustre file system to accelerate HPC and AI workloads.
+  ms.date: 07/12/2024
+  author: pauljewellmsft
+  ms.author: pauljewell
+  ms.reviewer: blepore
+  ms.topic: module
+  ms.service: azure-managed-lustre
+  ai-usage: ai-assisted
+title: 'Accelerate HPC and AI workloads with Azure Managed Lustre'
+summary: Deploy an Azure Managed Lustre file system, integrate the file system with Azure Blob Storage, and connect clients to the file system.
+abstract: |
+  By the end of this module, you'll be able to: 
+    - Identify the use cases and advantages of Azure Managed Lustre.
+    - List the prerequisites for Azure Managed Lustre.
+    - Deploy an Azure Managed Lustre file system.
+    - Integrate the file system with Azure Blob Storage.
+    - Connect clients to the file system.
+    - Export data to Azure Blob Storage and delete the file system.
+prerequisites: |
+  To get the best learning experience from this module, you should have:
+  - A basic understanding of Azure storage concepts.
+  - Familiarity with networking concepts like subnet and virtual network.
+  - Familiarity with Azure Blob Storage.
+  - Familiarity with creating resources in the Azure portal.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - technology-manager
+  - solution-architect
+products:  
+- azure
+- azure-managed-lustre
+subjects:
+- storage
+units:
+- learn.azure.deploy-azure-managed-lustre-file-system.introduction
+- learn.azure.deploy-azure-managed-lustre-file-system.managed-lustre-overview-prerequisites
+- learn.azure.deploy-azure-managed-lustre-file-system.create-managed-lustre-file-system
+- learn.azure.deploy-azure-managed-lustre-file-system.connect-client-to-file-system
+- learn.azure.deploy-azure-managed-lustre-file-system.export-data-to-blob-storage
+- learn.azure.deploy-azure-managed-lustre-file-system.knowledge-check
+- learn.azure.deploy-azure-managed-lustre-file-system.summary
+badge:
+  uid: learn.azure.deploy-azure-managed-lustre-file-system.badge
