@@ -3708,6 +3708,11 @@ achievements:
   title: Secure Azure AI Services
   summary: Securing Azure AI Services can help prevent data loss and privacy violations for user data that may be a part of the solution.
   iconUrl: /training/achievements/secure-cognitive-services.svg
+- uid: learn.azure.configure-application-kubernetes-arc.badge
+  type: badge
+  title: Implement Azure App Service on Kubernetes with Azure Arc
+  summary: Azure App Service on Kubernetes with Azure Arc enables implementation of Azure application-platform services on customer-managed, Arc-onboarded Kubernetes clusters. Azure App Service is one you can implement.
+  iconUrl: /training/achievements/configure-application-kubernetes-arc.svg
 - uid: learn.azure.publish-azure-web-app-with-azure-toolkit-eclipse.badge
   type: badge
   title: Develop Java web app on Azure using Eclipse
