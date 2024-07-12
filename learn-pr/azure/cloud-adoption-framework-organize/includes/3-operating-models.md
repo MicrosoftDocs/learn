@@ -19,9 +19,9 @@ The following resources could provide the skills for centralized IT functions:
 
 ## Central IT team risks
 
-Centralized IT became prevalent when all IT assets could be housed in a few locations, managed by a few teams, and controlled through a single platform for operations management. Over time, Global business practices and the digital economy reduced the number of centrally managed environments.
+Centralized IT became prevalent when all IT assets could be housed in a few locations, managed by a few teams, and controlled through a single platform for operations management. Over time, global business practices and the digital economy reduced the number of centrally managed environments.
 
-In the modern view of IT, assets are globally distributed. Operational responsibilities are delegated to a combination of internal staff, managed service providers, and cloud providers, who deliver operations management.
+In the modern view of IT, assets are globally distributed. Operational responsibilities are delegated to a combination of internal staff, managed service providers, and cloud providers.
 
 In the digital economy, IT management practices are transitioning to a model of self-service and delegated control with clear guardrails to enforce governance. A central IT team can be a valuable contributor to cloud adoption by becoming a cloud broker and a partner for innovation and business agility.
 
@@ -79,4 +79,4 @@ Each of these operating models is a theoretical construct to help determine whic
 
 Before you make any changes to operating models, consider your organization's tolerance for a growth mindset. Also consider IT's comfort level with releasing central responsibilities.
 
-This type of change takes time, experimentation, and negotiation. There are bumps and setbacks during the process. But if the team stays diligent and isn't discouraged from experimentation, there's a high probability of success in improving agility, speed, and reliability.
+This type of change takes time, experimentation, and negotiation and there might be bumps and setbacks during the process. However, if the team stays diligent and isn't discouraged from experimentation, there's a high probability of success in improving agility, speed, and reliability.
