@@ -28,6 +28,6 @@ Either way, once the customer is onboarded, two resources are created in the cus
 
 Once the customer has been onboarded, authorized users sign in to the Contoso tenant and perform tasks at the specified customer scope with the roles that they were granted during the onboarding process. Azure Resource Manager authenticates requests from users in the Contoso tenant, just as it does for requests made by users within the customer's own tenant. For Contoso’s users with access granted by Azure Lighthouse, Resource Manager confirms that the registration definition and the registration assignment are present in the customer's tenant and allow the requested access.
 
-Users in Contoso's tenant can work directly in the individual delegated customer scope, using the acess that they were granted. They could also perform common tasks across all delegated resources at scale.
+Users in Contoso's tenant can work directly in the individual delegated customer scope, using the access that they were granted. They could also perform common tasks across all delegated resources at scale.
 
-The customer can review all actions taken by Contoso in their activity log. The customer can also , and they can remove Contoso's access at any time.
+The customer can review all actions taken by Contoso in their activity log. They can also remove Contoso's access at any time.
