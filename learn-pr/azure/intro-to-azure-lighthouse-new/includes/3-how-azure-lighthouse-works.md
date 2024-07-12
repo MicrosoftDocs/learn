@@ -6,7 +6,7 @@ Azure delegated resource management creates a logical projection of resources fr
 
 The following diagram shows how Contoso might manage two customers through Azure Lighthouse. For Customer #1, Contoso users have access to one resource group, with roles that allow them to perform various monitoring and policy governance tasks. Customer #2 has delegated several subscriptions and resource groups to Contoso, with roles that allow them to perform monitoring and patching operations across all of the delegated scopes.
 
-**IMAGE TK**
+:::image type="content" source="../media/contoso-customers-delegation.png" alt-text="Diagram showing how Contoso might manage two customers through Azure Lighthouse.":::
 
 ## Process overview
 
