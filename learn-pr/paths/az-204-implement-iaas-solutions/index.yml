@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jeffko
   ms.topic: learning-path
-  ms.service: azure
 title: 'AZ-204: Implement containerized solutions'
 prerequisites: |
   *   At least one year of experience developing scalable solutions through all phases of software development.

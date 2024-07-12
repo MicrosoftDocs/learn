@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: learning-path
-  ms.service: azure
 title: Get started with Azure AI Services
 prerequisites: |
   Before starting this learning path, you should already have:

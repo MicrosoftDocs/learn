@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: learning-path
-  ms.service: azure-ai-services
 title: Discover Microsoft AI for leaders in manufacturing
 prerequisites: |
   * Basic understanding of manufacturing concepts.
