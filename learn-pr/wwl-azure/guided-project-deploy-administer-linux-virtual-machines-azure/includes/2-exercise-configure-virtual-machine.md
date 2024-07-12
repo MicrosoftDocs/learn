@@ -5,7 +5,7 @@ You need to create a web server for a new ecommerce website. You need to create 
 
 | Workloads Plan  | Tasks|
 | --- | --- |
-| :::image type="content" source="../media/lab01.png" alt-text="Diagram for exercise 1." border="true"::: | <ul><li> Use the Azure portal to create a virtual machine. </li><li>Connect to the virtual machine and install OS updates. </li><li>Install the Nginx web service and test to ensure it's working. </li></ul> |
+| :::image type="content" source="../media/lab-01.png" alt-text="Diagram for exercise 1." border="true"::: | <ul><li> Use the Azure portal to create a virtual machine. </li><li>Connect to the virtual machine and install OS updates. </li><li>Install the Nginx web service and test to ensure it's working. </li></ul> |
 
 Launch the exercise and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 

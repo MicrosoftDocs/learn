@@ -6,7 +6,7 @@ You need to provide access to data storage for a virtual machine. Specifically, 
 
 | Workloads Plan  | Tasks|
 | --- | --- |
-| :::image type="content" source="../media/lab03.png" alt-text="Diagram for exercise 3." border="true"::: | <ul><li>Create a virtual machine and add a data disk (CLI). </li><li>Access an Azure file share from the virtual machine. </li><li>Copy a file from Azure blob storage to the virtual machine data disk. </li></ul> |
+| :::image type="content" source="../media/lab-03.png" alt-text="Diagram for exercise 3." border="true"::: | <ul><li>Create a virtual machine and add a data disk (CLI). </li><li>Access an Azure file share from the virtual machine. </li><li>Copy a file from Azure blob storage to the virtual machine data disk. </li></ul> |
 
 Launch the exercise and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 
