@@ -9,62 +9,44 @@ The following are the steps and some examples for the Portal and Azure CLI.
 
 ## Azure portal
 
-There are two ways to add a policy through the Azure portal: Azure portal List view, and Azure portal Code view.
-
-### Azure portal List view
-
-1. Sign in to the [Azure portal](https://portal.azure.com).
-
-1. Select **All resources** and then select your storage account.
-
-1. Under **Data management**, select **Lifecycle management** to view or change your rules.
-
-1. Select the **List view** tab.
-
-1. Select **Add rule** and then fill out the **Action set** form fields. In the following example, blobs are moved to cool storage if they haven't been modified for 30 days.
-
-1. Select **Filter set** to add an optional filter. Then, select Browse to specify a container and folder by which to filter.
-
-1. Select **Review + add** to review the policy settings.
-
-1. Select **Add** to add the new policy.
+There are two ways to add a policy through the Azure portal: Azure portal List view, and Azure portal Code view. Following is an example of how to add a policy in the Azure portal Code view.
 
 ### Azure portal Code view
 
-1. Follow the first three steps in the **List view** section. 
+1. In the Azure portal, navigate to your storage account.
+1. Under **Data management**, select **Lifecycle Management** to view or change lifecycle management policies.
+1. Select the **Code View** tab. On this tab, you can define a lifecycle management policy in JSON.
 
-1. Select the **Code view** tab. The following JSON is an example of a policy that  moves a block blob whose name begins with *log* to the cool tier if it has been more than 30 days since the blob was modified.
+The following JSON is an example of a policy that  moves a block blob whose name begins with *log* to the cool tier if it has been more than 30 days since the blob was modified.
 
-    ```json
+```json
+{
+  "rules": [
     {
-      "rules": [
-        {
-          "enabled": true,
-          "name": "move-to-cool",
-          "type": "Lifecycle",
-          "definition": {
-            "actions": {
-              "baseBlob": {
-                "tierToCool": {
-                  "daysAfterModificationGreaterThan": 30
-                }
-              }
-            },
-            "filters": {
-              "blobTypes": [
-                "blockBlob"
-              ],
-              "prefixMatch": [
-                "sample-container/log"
-              ]
+      "enabled": true,
+      "name": "move-to-cool",
+      "type": "Lifecycle",
+      "definition": {
+        "actions": {
+          "baseBlob": {
+            "tierToCool": {
+              "daysAfterModificationGreaterThan": 30
             }
           }
+        },
+        "filters": {
+          "blobTypes": [
+            "blockBlob"
+          ],
+          "prefixMatch": [
+            "sample-container/log"
+          ]
         }
-      ]
+      }
     }
-    ```
-
-1. Select **Save**.
+  ]
+}
+```
 
 ## Azure CLI
 
@@ -78,6 +60,3 @@ az storage account management-policy create \
 ```
 
 A lifecycle management policy must be read or written in full. Partial updates aren't supported.
-
-
-
