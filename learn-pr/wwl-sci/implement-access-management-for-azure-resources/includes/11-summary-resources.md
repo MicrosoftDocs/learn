@@ -13,7 +13,7 @@ During this module you have learned to:
  -  [Assign Azure roles using the Azure portal - Azure RBAC \| Microsoft Learn](/azure/role-based-access-control/role-assignments-portal)
  -  [Create or update Azure custom roles using the Azure portal - Azure RBAC \| Microsoft Learn](/azure/role-based-access-control/custom-roles-portal)
  -  [Configure managed identities using the Azure portal - Microsoft Entra ID \| Microsoft Learn](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm)
- -  [Assign a managed identity access to a resource using the Azure portal - Microsoft Entra ID \| Microsoft Learn](/azure/active-directory/managed-identities-azure-resources/howto-assign-access-portal)
+ -  [Assign a managed identity access to a resource using the Azure portal - Microsoft Entra ID \| Microsoft Learn](/entra/identity/managed-identities-azure-resources/how-to-assign-access-azure-resource?pivots=identity-mi-access-portal)
  -  [Understand Azure role definitions - Azure RBAC \| Microsoft Learn](/azure/role-based-access-control/role-definitions)
  -  [Grant permission to applications to access an Azure key vault using Azure RBAC \| Microsoft Learn](/azure/key-vault/general/rbac-guide?tabs=azure-cli)
  -  [Create and access a secret in Azure Key Vault](/azure/key-vault/secrets/quick-create-portal)
