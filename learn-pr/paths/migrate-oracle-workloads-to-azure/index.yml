@@ -10,7 +10,7 @@ metadata:
   ms.topic: learning-path
 title: Migrate Oracle workloads to Azure
 summary: |
-  In this learning path, you'll learn how to migrate existing Oracle applications and databases to Azure by using Azure IaaS virtual machines, Oracle Database@Azure, and Azure PaaS database services.
+  In this learning path, you'll learn about three ways you can move Oracle workloads to Azure. Based on your business needs, you might rehost Oracle databases and applications in Azure IaaS virtual machines,  migrate Oracle Exadata databases to Oracle Database@Azure, or modernize Oracle databases to Azure PaaS database services. You'll gain an overview of each approach across the three modules.
 prerequisites: |
   - Basic understanding of the Azure platform
   - Familiarity with hosting and operations of applications and Oracle databases
