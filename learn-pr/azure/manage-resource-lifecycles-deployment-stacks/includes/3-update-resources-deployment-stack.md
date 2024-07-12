@@ -20,17 +20,15 @@ How are these changes implemented? As we discussed in the last module, deploymen
 
 ## Updating an existing managed resource
 
-It is common practice to modify your resources deployed in Azure. You may need to update a property value of a resource to incorporate a new feature or enhance its functionality.
-
-If you currently use infrastructure as code to define your resources in Azure
-
-With deployment stacks, the process is identical. Simply make the change to the resource in your Bicep file and run an update operation on the stack.
+It is common practice to modify your resources deployed in Azure. You may need to update a property value of a resource to incorporate a new feature or enhance its functionality. If you currently use infrastructure as code to define your resources in Azure, you are familiar with how to update the properties of a resource. With deployment stacks, the process is identical. Simply make the change to the resource in your Bicep file and run an update operation on the stack.
 
 Let's consider our Bicep file from the last unit. Our file defines an app service plan and an app service. We want to update the SKU of the app service plan from the `F1` SKU to the `S1` SKU.
 
 :::code language="bicep" source="code/1a-template.bicep" range="1-4,18-43" highlight="17":::
 
-TODO:
+Let's update the SKU.
+
+:::code language="bicep" source="code/1b-template.bicep" range="1-4,18-21,25-27,31-56" highlight="17":::
 
 ::: zone pivot="cli"
 
@@ -77,5 +75,3 @@ The output shows us that the update was successful and the app service plan is n
 ::: zone pivot="powershell"
 
 ::: zone-end
-
-You will learn more about updating deployment stacks and its managed resources in later
