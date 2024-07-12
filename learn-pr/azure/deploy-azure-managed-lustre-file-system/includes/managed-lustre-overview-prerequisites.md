@@ -33,13 +33,13 @@ By default, no specific changes need to be made to enable Azure Managed Lustre. 
 | Azure cloud service access | Configure your network security group to permit the Azure Managed Lustre file system to access Azure cloud services from within the file system subnet.<br><br>Add an outbound security rule with the following properties:<br>- **Port**: Any<br>- **Protocol**: Any<br>- **Source**: Virtual Network<br>- **Destination**: "AzureCloud" service tag<br>- **Action**: Allow<br><br>Note: Configuring the Azure cloud service also enables the necessary configuration of the Azure Queue service.<br><br>For more information, see [Virtual network service tags](/azure/virtual-network/service-tags-overview). |
 | Lustre network port access | Your network security group must allow inbound and outbound access on port 988 and ports 1019-1023. No other services can reserve or use these ports on your Lustre clients.<br>The default rules `65000 AllowVnetInBound` and `65000 AllowVnetOutBound` meet this requirement. |
 
-For detailed guidance about configuring a network security group for Azure Managed Lustre file systems, see [Create and configure a network security group](/azure/azure-managed-lustre/configure-network-security-group.md#create-and-configure-a-network-security-group).
+For detailed guidance about configuring a network security group for Azure Managed Lustre file systems, see [Create and configure a network security group](/azure/azure-managed-lustre/configure-network-security-group#create-and-configure-a-network-security-group).
 
 ### Other networking considerations
 
 When planning your virtual network and subnet configuration, take into account the following considerations and limitations:
 
-- **Azure Kubernetes Service (AKS)**: If you're using an AKS cluster with your Azure Managed Lustre file system, you can locate the AKS cluster in the same subnet as the file system. In this case, you must provide enough IP addresses for the AKS nodes and pods in addition to the address space for the Lustre file system. If you use more than one AKS cluster within the virtual network, make sure the virtual network has enough capacity for all resources in all of the clusters. To learn more about network strategies for Azure Managed Lustre and AKS, see [AKS subnet access](/azure/azure-managed-lustre/use-csi-driver-kubernetes.md#determine-the-network-type-to-use-with-aks).
+- **Azure Kubernetes Service (AKS)**: If you're using an AKS cluster with your Azure Managed Lustre file system, you can locate the AKS cluster in the same subnet as the file system. In this case, you must provide enough IP addresses for the AKS nodes and pods in addition to the address space for the Lustre file system. If you use more than one AKS cluster within the virtual network, make sure the virtual network has enough capacity for all resources in all of the clusters. To learn more about network strategies for Azure Managed Lustre and AKS, see [AKS subnet access](/azure/azure-managed-lustre/use-csi-driver-kubernetes#determine-the-network-type-to-use-with-aks).
 - **Compute VMs / multiple clusters**: If you plan to use another resource to host your compute VMs in the same virtual network as the file system, check the requirements for that process before creating the virtual network and subnet for your Azure Managed Lustre file system. When planning multiple clusters within the same subnet, make sure to use an address space large enough to accommodate the total requirements for all clusters.
 - **Azure NetApp Files**: Azure Managed Lustre and Azure NetApp Files resources can't share a subnet. If you use the Azure NetApp Files service, you must create your Azure Managed Lustre file system in a separate subnet. The deployment fails if you try to create an Azure Managed Lustre file system in a subnet that currently contains, or once contained, Azure NetApp Files resources.
 - **ypbind**: If you use the `ypbind` daemon on your clients to maintain Network Information Services (NIS) binding information, you must ensure that `ypbind` doesn't reserve port 988. You can either manually adjust the ports that `ypbind` reserves, or ensure that your system startup infrastructure starts your Lustre client mount before starting `ypbind`.
@@ -58,7 +58,7 @@ To integrate Azure Blob Storage with your Azure Managed Lustre file system, you 
 - [Storage account](#storage-account)
 - [Blob containers](#blob-containers)
 
-To learn more about blob integration, see [Use Azure Blob storage with an Azure Managed Lustre file system](/azure/azure-managed-lustre/blob-integration.md).
+To learn more about blob integration, see [Use Azure Blob storage with an Azure Managed Lustre file system](/azure/azure-managed-lustre/blob-integration).
 
 ### Storage account
 
@@ -108,7 +108,7 @@ You must have two separate blob containers in the same storage account, which ar
 - **Logging container**: A second container for import/export logs in the storage account. You must store the logs in a different container from the data container.
 
 > [!NOTE]
-> You can add files to the file system later from clients. However, files added to the original blob container after you create the file system won't be imported to the Azure Managed Lustre file system unless you [create an import job](/azure/azure-managed-lustre/create-import-job.md).
+> You can add files to the file system later from clients. However, files added to the original blob container after you create the file system won't be imported to the Azure Managed Lustre file system unless you [create an import job](/azure/azure-managed-lustre/create-import-job).
 
 ### Private endpoints (optional)
 

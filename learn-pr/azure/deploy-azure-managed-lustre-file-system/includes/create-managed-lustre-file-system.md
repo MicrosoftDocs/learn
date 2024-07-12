@@ -72,7 +72,7 @@ To configure blob integration, follow these steps:
 1. Select the **Import/export data from blob** check box.
 1. Specify the **Subscription**, **Storage account**, and **Container** to use with your Lustre file system.
 1. In the **Logging container** field, select the container where you want to store import/export logs. The logs must be stored in a separate container from the data container, but the containers must be in the same storage account.
-1. In the **Import prefix** fields, you can optionally supply one or more prefixes to filter the data imported into the Azure Managed Lustre file system. The default import prefix is `/`, and the default behavior imports the contents of the entire blob container. To learn more about import prefixes, see [Import prefix](/azure/azure-managed-lustre/blob-integration.md#import-prefix).
+1. In the **Import prefix** fields, you can optionally supply one or more prefixes to filter the data imported into the Azure Managed Lustre file system. The default import prefix is `/`, and the default behavior imports the contents of the entire blob container. To learn more about import prefixes, see [Import prefix](/azure/azure-managed-lustre/blob-integration#import-prefix).
 
 :::image type="content" source="../media/advanced-blob-integration.png" alt-text="A screenshot showing all blob integration settings on the Advanced tab in the Azure Managed Lustre create flow." lightbox="../media/advanced-blob-integration.png":::
 
@@ -85,7 +85,7 @@ When you finish entering details on the **Advanced settings** tab, you can optio
 
 You can optionally manage the encryption keys used for your Azure Managed Lustre file system storage by supplying your Azure Key Vault information on the **Disk encryption keys** tab. The key vault must be in the same region and in the same subscription as the cache. You can't change between Microsoft-managed keys and customer-managed keys after creating the file system.
 
-In this module, we skip the **Disk encryption keys** tab and use Microsoft-managed keys for encryption. To learn about customer-managed keys, see [Use customer-managed encryption keys with Azure Managed Lustre](/azure/azure-managed-lustre/customer-managed-encryption-keys.md).
+In this module, we skip the **Disk encryption keys** tab and use Microsoft-managed keys for encryption. To learn about customer-managed keys, see [Use customer-managed encryption keys with Azure Managed Lustre](/azure/azure-managed-lustre/customer-managed-encryption-keys).
 
 ## Review + create tab
 
