@@ -7,6 +7,7 @@ metadata:
   author: s-polly
   ms.author: scottpolly
   ms.topic: module
+  ms.service: machine-learning
 title: Train and evaluate regression models
 summary: Regression is a commonly used kind of machine learning for predicting numeric values.
 abstract: |
