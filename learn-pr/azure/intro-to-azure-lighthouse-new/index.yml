@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-lighthouse-new
 metadata:
   title: Introduction to Azure Lighthouse
   description: Learn about and adopt Azure Lighthouse for your managed service business to manage your customers at scale.
-  ms.date: 07/15/2024
+  ms.date: 07/12/2024
   author: JnHs
   ms.author: jenhayes
   ms.topic: module
@@ -31,11 +31,11 @@ prerequisites: |
  - Basic understanding of Microsoft Azure subscriptions
  - Basic understanding of Azure resource groups and resources
 units:
-- learn.intro-to-azure-lighthouse=new.1-introduction
+- learn.intro-to-azure-lighthouse-new.1-introduction
 - learn.intro-to-azure-lighthouse-new.2-what-is-azure-lighthouse
-- learn.intro-to-azure-lighthouse=new.3-how-azure-lighthouse-works
+- learn.intro-to-azure-lighthouse-new.3-how-azure-lighthouse-works
 - learn.intro-to-azure-lighthouse-new.4-when-to-use-azure-lighthouse
 - learn.intro-to-azure-lighthouse-new.5-knowledge-check
 - learn.intro-to-azure-lighthouse-new.6-summary
 badge:
-  uid: learn.intro-to-azure-lighthouse.badge
+  uid: learn.intro-to-azure-lighthouse-new.badge
