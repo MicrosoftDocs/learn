@@ -13,7 +13,6 @@ durationInMinutes: 4
 content: |
   [!include[](includes/knowledge-check.md)]
 quiz:
-  title: Check your knowledge
   questions:
   - content: What is a requirement for a client machine to access Azure Managed Lustre?
     choices:
