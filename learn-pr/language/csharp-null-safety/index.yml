@@ -9,6 +9,7 @@ metadata:
   ms.author: cahowd
   ms.topic: module
   ms.devlang: csharp
+  ms.service: dotnet-csharp
 title: Null safety in C#
 summary: Learn coding practices to help prevent the occurrence of `NullReferenceException`.
 abstract: |
