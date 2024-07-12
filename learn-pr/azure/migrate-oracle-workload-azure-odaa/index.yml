@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: azure
 title: "Migrate Oracle workloads to Oracle Database@Azure"
-summary: "This module describes the process of migrating an Oracle Exadata-powered application to Azure without refactoring, by taking advantage of Oracle infrastructure in Azure datacenters."
+summary: "This module describes the process of migrating a business-critical Oracle Exadata workloads to Azure without refactoring, by taking advantage of Oracle infrastructure in Azure datacenters via Oracle Database@Azure."
 abstract: |
   After completing this module, you'll be able to:
   - Describe how Oracle Database@Azure works and how it can support your applications.
