@@ -10,13 +10,11 @@ The resources that an application uses change over time. How do we update a depl
 
 Let's consider our Bicep file from the last unit. Our file defines an app service plan, a web app, and an Azure SQL server and database. We want to add an existing log analytics workspace to our deployment stack. The workspace is in the same resource group where our managed resources exist.
 
-:::code language="bicep" source="code/1b-template.bicep" range="1-21,25-46,55-77" highlight="25-26,68-78":::
+:::code language="bicep" source="code/1b-template.bicep" range="1-21,25-27,31-46,55-77":::
 
-To add the existing log analytics workspace, we need to add its definition to our Bicep file.
+To add the existing log analytics workspace, we need to add its definition to our Bicep file. Notice that we do not need to include any code that describes the workspace as an existing resource.
 
 :::code language="bicep" source="code/1b-template.bicep" range="1-21,25-46,55-89" highlight="25-26,68-78":::
-
-Notice that we do not need to include any code that describes the workspace as an existing resource.
 
 ::: zone pivot="cli"
 

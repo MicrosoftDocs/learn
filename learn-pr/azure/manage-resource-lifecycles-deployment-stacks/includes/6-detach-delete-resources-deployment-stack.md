@@ -12,7 +12,7 @@ With deployment stacks, the _action on unmanage_ parameter is used to control ho
 
 There are three possible values for the `--action-on-unmanage` parameter:
 
-- `deletell` - deletes resources, resource groups, and management groups
+- `deleteAll` - deletes resources, resource groups, and management groups
 - `deleteResources` - deletes resources, but detaches resource groups and management groups
 - `detachAll` - detaches all resources, resource groups, and management groups
 
@@ -103,7 +103,25 @@ After the update operation is complete, the log analytics workspace and applicat
 
 ## Delete a managed resource
 
-Insert text here.
+Deployment stacks provide for reliable resource cleanup. When you update or delete a deployment stack, you can also delete the managed resources, resource groups, and management groups. There are two values of the _action on unmanage_ parameter that set resources, resource groups, and management groups to delete when they are no longer managed by the deployment stack.
+
+::: zone pivot="cli"
+
+- `deleteAll` - deletes resources, resource groups, and management groups
+- `deleteResources` - deletes resources, but detaches resource groups and management groups
+
+Consider our deposits application. Let's say that the development team has decided to use an Azure Database for PostgreSQL instead of Azure SQL Database. We need to first update our deployment stack to remove and fully delete the Azure SQL server and database from Azure. To accomplish this, use the `deleteAll` or `deleteResources` _action on unmanage_ parameter when updating or deleting the deployment stack.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+- `DeleteAll` - deletes resources, resource groups, and management groups
+- `DeleteResources` - deletes resources, but detaches resource groups and management groups
+
+Consider our deposits application. Let's say that the development team has decided to use an Azure Database for PostgreSQL instead of Azure SQL Database. We need to first update our deployment stack to remove and fully delete the Azure SQL server and database from Azure. To accomplish this, use the `DeleteAll` or `DeleteResources` _action on unmanage_ parameter when updating or deleting the deployment stack.
+
+::: zone-end
 
 Let's consider our Bicep file from the previous section.
 
@@ -148,8 +166,10 @@ Set-AzResourceGroupDeploymentStack `
     -Name stack-deposits `
     -ResourceGroupName rg-depositsApplication `
     -TemplateFile ./main.bicep `
-    -ActionOnUnmanage DetachAll `
+    -ActionOnUnmanage DeleteAll `
     -DenySettingsMode None
 ```
 
-After the update operation is complete, the only resources that remain are the app service plan and web app. In our command, we used `-ActionOnUnmanage DetachAll` to specify how Azure handles resources that are no longer managed by a deployment stack. In this case, the resources are deleted from the deployment stack and from Azure.
+After the update operation is complete, the only resources that remain are the app service plan and web app. In our command, we used `-ActionOnUnmanage DeleteAll` to specify how Azure handles resources that are no longer managed by a deployment stack. In this case, the resources are deleted from the deployment stack and from Azure.
+
+::: zone-end

@@ -77,7 +77,7 @@ For example, if a deployment stack is created with the parameter set as `--actio
 
 There are three possible values for the `--action-on-unmanage` parameter:
 
-- `deletell` - deletes resources, resource groups, and management groups
+- `deleteAll` - deletes resources, resource groups, and management groups
 - `deleteResources` - deletes resources, but detaches resource groups and management groups
 - `detachAll` - detaches all resources, resource groups, and management groups
 
