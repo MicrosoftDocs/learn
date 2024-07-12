@@ -4,11 +4,11 @@ The following table lists the basic classes, along with a brief description:
 
 | Class | Description |
 |--|--|
-| `BlobClient` | The [`BlobClient`](/dotnet/api/azure.storage.blobs.blobclient?view=azure-dotnet) allows you to manipulate Azure Storage blobs. |
+| `BlobClient` | The [`BlobClient`](/dotnet/api/azure.storage.blobs.blobclient) allows you to manipulate Azure Storage blobs. |
 | `BlobClientOptions` | Provides the client configuration options for connecting to Azure Blob Storage. |
-| `BlobContainerClient` | The [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient?view=azure-dotnet) allows you to manipulate Azure Storage containers and their blobs. |
-| `BlobServiceClient` | The [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient?view=azure-dotnet) allows you to manipulate Azure Storage service resources and blob containers. The storage account provides the top-level namespace for the Blob service. |
-| `BlobUriBuilder` | The [BlobUriBuilder](/dotnet/api/azure.storage.blobs.bloburibuilder?view=azure-dotnet) class provides a convenient way to modify the contents of a Uri instance to point to different Azure Storage resources like an account, container, or blob. |
+| `BlobContainerClient` | The [BlobContainerClient](/dotnet/api/azure.storage.blobs.blobcontainerclient) allows you to manipulate Azure Storage containers and their blobs. |
+| `BlobServiceClient` | The [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient) allows you to manipulate Azure Storage service resources and blob containers. The storage account provides the top-level namespace for the Blob service. |
+| `BlobUriBuilder` | The [BlobUriBuilder](/dotnet/api/azure.storage.blobs.bloburibuilder) class provides a convenient way to modify the contents of a Uri instance to point to different Azure Storage resources like an account, container, or blob. |
 
 The following packages contain the classes used to work with Blob Storage data resources:
 
