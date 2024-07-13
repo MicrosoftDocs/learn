@@ -3,6 +3,7 @@ In this module, you learned about the various phases involved in a successful mi
 The main takeaways from this module are understanding the best tools and approaches for different migration scenarios. The Azure MySQL Import CLI is recommended for migrations from VMs and on-premises, while DMS is suggested for all other migrations. Other community tools can be used where these two can't support the migration. Each tool has its own pros and cons, and the choice depends on the specific requirements of the migration. The process of migrating an on-premises MySQL server to an Azure Database for MySQL flexible server involves several steps and considerations, including the non-migration of users and privileges, which must be manually dumped and migrated after the import operation.
 
 ## Additional Reading
+
 1. [Azure Database Migration Guide](https://docs.microsoft.com/azure/dms/)
 3. [Azure Database for MySQL: Flexible Server](https://docs.microsoft.com/azure/mysql/flexible-server/)
 1. [Percona XtraBackup 8](https://docs.percona.com/percona-xtrabackup/8.0/index.html)
