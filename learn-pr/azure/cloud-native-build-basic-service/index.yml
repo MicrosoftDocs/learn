@@ -3,6 +3,7 @@ uid: learn.azure.cna-build-basic-service
 metadata:
   title: Build a basic cloud-native service using PostgreSQL and Node.js
   description: Build a basic service consisting of an Express.js-based web service with Microsoft Azure Database for PostgreSQL providing its persistent data store, and managed by a front-end Next.js management web app. 
+  manager: mkluck
   ms.date: 05/15/2021
   author: rmcmurray
   ms.author: robmcm

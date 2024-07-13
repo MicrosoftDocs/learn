@@ -3,6 +3,7 @@ uid: learn.azure.migrate-oracle-workload-azure-odaa
 metadata:
   title: "Migrate Oracle workloads to Oracle Database@Azure"
   description: "Learn how to migrate your Oracle workloads to Oracle Database@Azure."
+  manager: akashdubey
   ms.date: 05/01/2024
   author: jjaygbay1
   ms.author: jacobjaygbay

@@ -3,6 +3,7 @@ uid: learn.azure.migrate-oracle-application-azure-paas
 metadata:
   title: Migrate Oracle-powered applications by using Azure PaaS database services
   description: Learn how to migrate Oracle-powered applications by using Azure PaaS database services.
+  manager: akashdubey
   ms.date: 05/01/2024
   author: jjaygbay1
   ms.author: jacobjaygbay
