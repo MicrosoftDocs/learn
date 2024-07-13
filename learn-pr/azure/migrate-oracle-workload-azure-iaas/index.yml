@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: azure
 title: "Migrate Oracle workloads to Azure IaaS virtual machines"
-summary: "This module describes the process of moving an existing application and Oracle database to Azure-hosted virtual machines (VMs)."
+summary: "This module describes the process of moving an existing application and Oracle database to Azure-hosted virtual machines (VMs). This approach helps minimize refactoring, development, and configuration."
 abstract: |
   After completing this module, you'll be able to:
   - Describe how applications powered by Oracle databases work on Azure infrastructure as a service (IaaS).
