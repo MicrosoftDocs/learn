@@ -4,6 +4,8 @@ metadata:
   moduleType: standard
   title: Structure your Bicep code for collaboration
   description: Learn how to create modular, reusable, and documented infrastructure as code by using Bicep, and enable team collaboration in the process.
+  ms.service: azure-resource-manager
+  manager: jasongroce
   ms.date: 12/19/2023
   author: mumian
   ms.author: jgao
