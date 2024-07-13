@@ -4,6 +4,7 @@ metadata:
   moduleType: introduction
   title: Introduction to Azure Firewall Manager
   description: Describe how Azure Firewall Manager provides central security policy and route management for your cloud-based security perimeters. Determine whether Azure Firewall Manager can help you secure your cloud perimeters.
+  manager: kumud
   ms.date: 03/08/2024
   author: vhorne
   ms.author: victorh

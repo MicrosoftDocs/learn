@@ -3,11 +3,12 @@ uid: learn.copy-blobs-using-azcopy
 metadata:
   title: Copy and move blobs from one container or storage account to another using the AzCopy command
   description: Use AzCopy to migrate files between Azure Storage accounts.
+  manager: akashdubey
   ms.date: 05/17/2024
   author: normesta
   ms.author: normesta
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-blob-storage
 title: Copy and move blobs from one container or storage account to another using the AzCopy command
 summary: Learn how to use AzCopy to copy and move blobs between contains and storage accounts both synchronously and asynchronously.
 abstract: |

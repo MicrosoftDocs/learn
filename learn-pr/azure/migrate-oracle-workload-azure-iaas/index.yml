@@ -3,6 +3,7 @@ uid: learn.azure.migrate-oracle-workload-azure-iaas
 metadata:
   title: "Migrate Oracle workloads to Azure IaaS virtual machines"
   description: "Learn how you can migrate your Oracle workloads to Azure IaaS virtual machines."
+  manager: akashdubey
   ms.date: 05/01/2024
   author: jjaygbay1
   ms.author: jacobjaygbay
