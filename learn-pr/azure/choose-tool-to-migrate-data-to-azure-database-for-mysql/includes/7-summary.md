@@ -4,7 +4,7 @@ The main takeaways are understanding the best tools and approaches for different
 
 ## Additional Reading
 
-1. [Azure Database Migration Guide](https://docs.microsoft.com/azure/dms/)
-3. [Azure Database for MySQL: Flexible Server](https://docs.microsoft.com/azure/mysql/flexible-server/)
+1. [Azure Database Migration Guide](https://learn.microsoft.com/azure/dms/)
+3. [Azure Database for MySQL: Flexible Server](https://learn.microsoft.com/azure/mysql/flexible-server/)
 1. [Percona XtraBackup 8](https://docs.percona.com/percona-xtrabackup/8.0/index.html)
 1. [Azure CLI reference: mysql flexible-server import](/cli/azure/mysql/flexible-server/import)
