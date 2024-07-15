@@ -42217,17 +42217,17 @@
     },
     {
       "source_path": "learn-pr/azure/cloud-adoption-framework-govern/5-governance-disciplines.yml",
-      "redirect_url": "/training/modules/cloud-adoption-framework-govern/7-enforce-policies",
+      "redirect_url": "/training/modules/cloud-adoption-framework-govern/6-enforce-policies",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/cloud-adoption-framework-govern/7-deploy-governance-foundation.yml",
-      "redirect_url": "/training/modules/cloud-adoption-framework-govern/7-enforce-policies",
+      "redirect_url": "/training/modules/cloud-adoption-framework-govern/6-enforce-policies",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/cloud-adoption-framework-govern/8-mature-cost-management.yml",
-      "redirect_url": "/training/modules/cloud-adoption-framework-govern/8-monitor-cloud-governance",
+      "redirect_url": "/training/modules/cloud-adoption-framework-govern/7-monitor-cloud-governance",
       "redirect_document_id": false
     }
   ]

@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Test your knowledge of the Govern methodology.
-  ms.date: 05/30/2024
+  ms.date: 07/15/2024
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!include[](includes/8-knowledge-check.md)]
 quiz:
   questions:
   - content: To address the Tailwind Traders CIO's risks and concerns, which of the following steps would you start with?

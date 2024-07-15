@@ -16,7 +16,7 @@ After your policies are in place and you align your organization's processes and
 
 **Develop a remediation plan** to automatically remediate violations quickly. Prioritize high-risk violations. Use manual remediation where you can't implement automated processes. After remediation, update governance policies and enforcement mechanisms to prevent future violations.
 
-## Use Microsoft Cost Management
+## Monitoring example using Microsoft Cost Management
 
 There are several services and methods that you can use to monitor how well your organization aligns with your cloud governance policies. For example, you can use Microsoft Cost Management to monitor your cost data and manage cloud governance cost. Cost Management combines data about your resource organization, Azure Advisor alerts, and your governance foundation.
 
