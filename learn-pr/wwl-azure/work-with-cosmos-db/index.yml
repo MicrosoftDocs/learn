@@ -16,29 +16,17 @@ summary: Learn how to develop client and server-side programming solutions on Az
 abstract: |
   After completing this module, you'll be able to:
 
-  -
+  -   Identify classes and methods used to create resources
 
-  Identify classes and methods used to create resources
+  -   Create resources by using the Azure Cosmos DB .NET v3 SDK
 
-  -
-
-  Create resources by using the Azure Cosmos DB .NET v3 SDK
-
-  -
-
-  Write stored procedures, triggers, and user-defined functions by using JavaScript
+  -   Write stored procedures, triggers, and user-defined functions by using JavaScript
 prerequisites: |
-  -
+  -   You should be familiar with developer concepts and terminology.
 
-  You should be familiar with developer concepts and terminology.
+  -   Experience working with data solutions.
 
-  -
-
-  Experience working with data solutions.
-
-  -
-
-  An understanding of cloud computing and some experience with the Azure portal.
+  -   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/3-work-with-azure-cosmos-db.svg
 levels:
 - intermediate
