@@ -2,35 +2,38 @@
 uid: learn.wwl.implement-azure-container-apps
 metadata:
   title: Implement Azure Container Apps
-  description: Run serverless containerized apps in Azure Container Apps service.
-  ms.date: 06/13/2023
+  description: "Run serverless containerized apps in Azure Container Apps service."
+  ms.date: 07/15/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: module-standard-task-based
+  ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure-container-apps
+  ai-usage: human-only
 title: Implement Azure Container Apps
 summary: Learn how Azure Container Apps can help you deploy and manage microservices and containerized apps on a serverless platform that runs on top of Azure Kubernetes Service.
 abstract: |
   After completing this module, you'll be able to:
-  * Describe the benefits of Azure Container Instances and how resources are grouped
-  * Deploy a container instance in Azure by using the Azure CLI
-  * Start and stop containers using policies
-  * Set environment variables in your container instances
-  * Mount file shares in your container instances
+
+  -   Describe the benefits of Azure Container Instances and how resources are grouped
+
+  -   Deploy a container instance in Azure by using the Azure CLI
+
+  -   Start and stop containers using policies
+
+  -   Set environment variables in your container instances
+
+  -   Mount file shares in your container instances
 prerequisites: |
-  *   You should be familiar with container concepts and terminology.
-  *   An understanding of cloud computing and some experience with the Azure portal.
+  -   You should be familiar with container concepts and terminology.
+
+  -   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/implement-azure-container-apps.svg
 levels:
 - intermediate
 roles:
 - developer
-products:
-- azure
-- azure-container-instances
-- azure-container-registry
-- azure-resource-manager
-- azure-virtual-machines
 units:
 - learn.wwl.implement-azure-container-apps.introduction
 - learn.wwl.implement-azure-container-apps.explore-azure-container-apps

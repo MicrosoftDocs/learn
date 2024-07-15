@@ -1,6 +1,3 @@
-
-
-
 The Distributed Application Runtime (Dapr) is a set of incrementally adoptable features that simplify the authoring of distributed, microservice-based applications. Dapr provides capabilities for enabling application intercommunication through messaging via pub/sub or reliable and secure service-to-service calls.
 
 Dapr is an open source, [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/projects/dapr/) project. The CNCF is part of the Linux Foundation and provides support, oversight, and direction for fast-growing, cloud native projects. As an alternative to deploying and managing the Dapr OSS project yourself, the Container Apps platform:
@@ -11,7 +8,7 @@ Dapr is an open source, [Cloud Native Computing Foundation (CNCF)](https://www.c
 
 ## Dapr APIs
 
-:::image type="content" source="../media/azure-container-apps-distributed-application-runtime-building-blocks.png" alt-text="Decorative":::
+:::image type="content" source="../media/azure-container-apps-dapr-building-blocks.png" alt-text="Decorative":::
 
 | Dapr API | Description |
 |--|--|
@@ -22,6 +19,7 @@ Dapr is an open source, [Cloud Native Computing Foundation (CNCF)](https://www.c
 | [Actors](https://docs.dapr.io/developing-applications/building-blocks/actors/actors-overview/) | Dapr actors are message-driven, single-threaded, units of work designed to quickly scale. For example, in burst-heavy workload situations. |
 | [Observability](/azure/container-apps/observability) | Send tracing information to an Application Insights backend. |
 | [Secrets](https://docs.dapr.io/developing-applications/building-blocks/secrets/secrets-overview/) | Access secrets from your application code or reference secure values in your Dapr components. |
+| [Configuration](https://docs.dapr.io/developing-applications/building-blocks/configuration/)	| Retrieve and subscribe to application configuration items for supported configuration stores. |
  
 > [!NOTE]
 > The table covers stable Dapr APIs. To learn more about using alpha APIs and features, [visit limitations](/azure/container-apps/dapr-overview?tabs=bicep1%2Cyaml#unsupported-dapr-capabilities).
