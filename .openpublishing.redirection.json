@@ -42194,6 +42194,21 @@
       "source_path": "learn-pr/azure/azure-redis-publish-subscribe-streams/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-blob-storage/5-blob-storage-static-website.md",
+      "redirect_url": "/training/modules/explore-azure-blob-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-blob-storage/6-knowledge-check.md",
+      "redirect_url": "/training/modules/explore-azure-blob-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-blob-storage/7-summary.md",
+      "redirect_url": "/training/modules/explore-azure-blob-storage/6-summary",
+      "redirect_document_id": false
     }
   ]
 }
