@@ -41613,6 +41613,602 @@
       "source_path": "learn-pr/azure/introduction-to-azure-space/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/orbital/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/3-migration-process.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-migrate/2-prepare",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/4-migration-tools.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-migrate/3-assess",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/5-common-tech-platforms.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-migrate/4-deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/6-vm-migration.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-migrate/5-release",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/2-customer-narrative.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-migrate/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-migrate/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-migrate/8-summary.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-migrate/7-summary",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/1-introduction.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/2-introduction-to-azure-object-anchors-run-time-sdk.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/3-exercise-create-object-anchors-account-retrieve-id-key.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/4-exercise-convert-upload-3d-model-to-hololens-2.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/5-exercise-detect-object-in-physical-world-with-sample-project.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/6-best-practices.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/7-knowledge-check.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/8-summary.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-object-anchors-tutorials/index.yml",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/mixed-reality-blog/3-new-features-in-dynamics-365-guides-version-9-0/ba-p/3965674",
+
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/3-compare-to-language-understanding.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/7-consume-qna-client-interfaces.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/4-create-knowledge-base.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/9-create-qna-bot.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/10-exercise-create.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/8-implement-active-learning.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/5-implement-multi-turn-conversation.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/6-test-publish-knowledge-base.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-qna-solution-qna-maker/2-understand.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/5-exercise-extract-custom-entities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/3-tag-your-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/4-train-evaluate-your-model.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-name-entity-extraction/2-understand-custom-named.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/5-analyze-sentiment.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/3-detect-language.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/8-exercise-analyze-text.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/6-extract-entities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/4-extract-key-phrases.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/7-extract-linked-entities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/2-provision-resource.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-ai-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/5-audio-format-voices.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/2-create-speech-service.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/7-exercise-speech-app.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/6-speech-synthesis-markup.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/3-speech-to-text.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/4-text-to-speech.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/develop-decision-support/index.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/4-exercise-use-container.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/2-understand-containers.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/3-use-cognitive-services-container.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/investigate-container-for-use-with-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/3-create-alerts.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/5-manage-diagnostic-logging.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/6-exercise-monitor-cognitive-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/2-monitor-cost.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-cognitive-services/4-view-metrics.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/5-exercise-create.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/3-process-predictions.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/publish-use-language-understand-app/2-understand-capabilities-of-language-service.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/4-exercise-secure-cognitive-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/3-implement-network-security.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/2-authentication.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-ai-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/2-prepare-lab-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/3-set-up-cluster.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/4-onboard-kubernetes-cluster-arc.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/5-implement-azure-app-service.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/6-deploy-web-app-kubernetes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-application-kubernetes-arc/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/2-create-web-app-eclipse.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/3-exercise-create-web-app-eclipse.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/4-deploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/5-exercise-deploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/6-manage-deployment-eclipse.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/7-exercise-manage-deployment-eclipse.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-eclipse/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-java?tabs=springboot&pivots=java-maven-javase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-redis-publish-subscribe-streams/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-redis-publish-subscribe-streams/2-publish-subscribe.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-redis-publish-subscribe-streams/3-exercise-create-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-redis-publish-subscribe-streams/4-exercise-publish-subscribe.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-redis-publish-subscribe-streams/5-streams.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-redis-publish-subscribe-streams/6-exercise-streams.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-redis-publish-subscribe-streams/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-redis-publish-subscribe-streams/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/azure/azure-redis-publish-subscribe-streams/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-blob-storage/5-blob-storage-static-website.md",
+      "redirect_url": "/training/modules/explore-azure-blob-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-blob-storage/6-knowledge-check.md",
+      "redirect_url": "/training/modules/explore-azure-blob-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-blob-storage/7-summary.md",
+      "redirect_url": "/training/modules/explore-azure-blob-storage/6-summary",
+      "redirect_document_id": false
     }
   ]
 }

@@ -2,32 +2,25 @@
 uid: learn.wwl.explore-azure-databases
 metadata:
   title: Explore Azure for SAP databases
-  description: "This module explores SAP on Azure database support and best practices for Azure for SAP workloads. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  description: This module explores SAP on Azure database support and best practices for Azure for SAP workloads. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads.
   ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.service: azure
   ai-usage: human-only
+  ms.service: sap-on-azure
 title: Explore Azure for SAP databases
 summary: This module explores SAP on Azure database support and best practices for Azure for SAP workloads.
 abstract: |
   After completing this module, you will be able to:
-
   -   Explore database support of Azure for SAP workloads.
-
   -   Explore storing database files directly on Azure Blob Storage.
-
   -   Explore Azure virtual machine and blob storage security.
-
   -   Examine SQL Server and Oracle recommendations.
 prerequisites: |
   Before taking this training, you should complete:
-
   -   SAP HANA or NetWeaver training.
-
   -   Azure Data Fundamentals training (DP-900).
-
   -   Azure Fundamentals training (AZ-900).
 iconUrl: /training/achievements/6-explore-azure-databases.svg
 levels:

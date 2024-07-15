@@ -4,6 +4,8 @@ metadata:
   moduleType: standard
   title: Manage end-to-end deployment scenarios by using Bicep and GitHub Actions
   description: Build a deployment workflow for Bicep infrastructure as code templates. Create a single workflow to deploy infrastructure, applications, and data.
+  ms.service: azure-resource-manager
+  manager: jasongroce
   ms.date: 12/19/2022
   author: mumian
   ms.author: jgao

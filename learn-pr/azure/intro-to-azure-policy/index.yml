@@ -4,6 +4,7 @@ metadata:
   moduleType: introduction
   title: Introduction to Azure Policy
   description: "This module introduces you to Azure Policy and describes how to use it to meet compliance requirements in your environment."
+  manager: jasongroce
   ms.date: 06/10/2024
   author: davidsmatlak
   ms.author: davidsmatlak

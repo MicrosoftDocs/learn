@@ -3,8 +3,8 @@ uid: learn.intro-to-azure-site-recovery.what-is-azure-site-recovery
 title: What is Azure Site Recovery?
 metadata:
   title: What is Azure Site Recovery?
-  description: In this unit, you'll learn about Azure Site Recovery.
-  ms.date: 04/13/2023
+  description: In this unit, you learn about Azure Site Recovery.
+  ms.date: 07/08/2024
   author: orin-thomas
   ms.author: orthomas
   ms.topic: unit

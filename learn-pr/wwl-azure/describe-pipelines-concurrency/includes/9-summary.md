@@ -9,8 +9,8 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Configure and pay for parallel jobs - Azure DevOps \| Microsoft Docs](/azure/devops/pipelines/licensing/concurrent-jobs).
+ -  [Configure and pay for parallel jobs - Azure DevOps \| Microsoft Learn](/azure/devops/pipelines/licensing/concurrent-jobs).
  -  [Azure DevOps Services Pricing \| Microsoft Azure](https://azure.microsoft.com/pricing/details/devops/azure-devops-services).
- -  [About public projects - Azure DevOps Services \| Microsoft Docs](/azure/devops/organizations/public/about-public-projects).
- -  [Create your first pipeline - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/create-first-pipeline).
- -  [Customize your pipeline - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/customize-pipeline).
+ -  [About public projects - Azure DevOps Services \| Microsoft Learn](/azure/devops/organizations/public/about-public-projects).
+ -  [Create your first pipeline - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/create-first-pipeline).
+ -  [Customize your pipeline - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/customize-pipeline).

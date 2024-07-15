@@ -4,6 +4,7 @@ metadata:
   moduleType: standard
   title: GitHub administration for GitHub Advanced Security
   description: Understand where GitHub Advanced Security fits in your software development lifecycle and how to enable and roll it out in your organization.
+  manager: mkluck
   ms.date: 05/02/2024
   author: rmcmurray
   ms.author: robmcm

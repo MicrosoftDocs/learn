@@ -20,9 +20,9 @@ You can't configure replication over Azure VPN. However, you can configure repli
 
 - Replication isn't supported over private peering.
 
-- If you're protecting VMware machines or physical machines, ensure that the networking requirements for Configuration Server are also met. The Configuration Server for orchestration of Site Recovery replication, requires connectivity to specific URLs. You can't use ExpressRoute for this connectivity.
+- VMware machines or physical machines can be protected by ensuring that the networking requirements for Configuration Server are also met. The Configuration Server for orchestration of Site Recovery replication, requires connectivity to specific URLs. You can't use ExpressRoute for this connectivity.
 
-- After the virtual machines are failed over to an Azure virtual network, you can access them using the private peering setup with the Azure virtual network.
+- You can access the virtual machines using the private peering setup with the Azure virtual network, after they fail over to an Azure virtual network.
 
 Replication between Azure sites occurs over the Microsoft network backbone.
 
@@ -30,7 +30,7 @@ Replication between Azure sites occurs over the Microsoft network backbone.
 
 A replication policy defines the settings for the retention history of recovery points. It also defines the frequency of app-consistent snapshots.
 
-By default, Azure Site Recovery creates a new replication policy with the following default settings:
+Azure Site Recovery creates a new replication policy with the following default settings:
 
 - 24 hours for the retention history of recovery points.
 - Zero (0) hours for the frequency of app-consistent snapshots.
@@ -49,15 +49,15 @@ For scenarios where you're replicating from one Azure region to another, it's po
 
 ## Recovery points
 
-Azure Site Recovery has customizable replication policies that you can use to define the retention history of recovery points and the frequency of snapshots. You can create a recovery point from a snapshot of a VM's disk.
+Azure Site Recovery has customizable replication policies that you can use to define the retention history of recovery points and the frequency of snapshots. You can create a recovery point from a snapshot of a virtual machine's disk.
 
 The two types of snapshots available are *Crash-consistent* and *App-consistent*:
 
 - **Crash-consistent** recovery represents the data on-disk at the time the snapshot is taken. The snapshots are captured every 5 minutes by default. The crash-consistent recovery point doesn't include anything that was in memory when the snapshot was taken.
 
-- **App-consistent** recovery captures the same data as crash-consistent but also includes all in-memory data and in-process transactions. Including the in-memory data means that the Site Recovery can restore a VM and any running apps without any data loss. The snapshots aren't captured by default. You can enable them in the Replication policy if necessary.
+- **App-consistent** recovery captures the same data as crash-consistent but also includes all in-memory data and in-process transactions. Including the in-memory data means that the Site Recovery can restore a virtual machine (VM) and any running apps without any data loss. The snapshots aren't captured by default. You can enable them in the Replication policy if necessary.
 
-All recovery points are kept for 24 hours by default, and you can extend this period to 14 days if necessary. If a disruption occurs and new recovery points can't be created, the oldest recovery points aren't overwritten. Azure Site Recovery only replaces the oldest point if it generates new points. Until there are new recovery points, all the old points remain after you reach the retention window.
+All recovery points are kept for 24 hours by default, and you can extend this period to a maximum of 15 days if necessary. If a disruption occurs and new recovery points can't be created, the oldest recovery points aren't overwritten. Azure Site Recovery only replaces the oldest point if it generates new points. Until there are new recovery points, all the old points remain after you reach the retention window.
 
 ## Recovery plans
 
@@ -71,11 +71,11 @@ A recovery plan gathers machines into recovery groups to prepare for a failover.
 
 - You can customize a plan by adding order, instructions, and tasks to it.
 
-- After a plan is defined, you can run a failover on it.
+- You can run a failover on a plan after you define it.
 
-- Machines can be referenced in multiple recovery plans, in which subsequent plans skip the deployment/startup of a machine if it was previously deployed using another recovery plan.
+- Machines can be referenced in multiple recovery plans. As long as subsequent plans skip the deployment/startup of a machine if it was previously deployed using another recovery plan.
 
-Recovering large applications can be a complex task. Manual steps make the process prone to error, and the person running the failover might not be aware of the intricacies of all apps. You can use a recovery plan to impose order and automate the actions needed at each step, using Azure Automation runbooks for failover to Azure, or scripts. For tasks that can't be automated, you can insert pauses for manual actions into recovery plans.
+Recovering large applications can be a complex task. Manual steps make the process prone to error, and the person running the failover might not be aware of the intricacies of all apps. You can use a recovery plan to impose order and automate the actions needed at each step, by using scripts or Azure Automation runbooks for failover to Azure. For tasks that can't be automated, you can insert pauses for manual actions into recovery plans.
 
 ## What is a disaster-recovery drill?
 
@@ -89,7 +89,7 @@ A failover occurs when a decision is made to execute a disaster-recovery plan fo
 
 The target environment becomes the de facto production environment in which your organization's production services run. After the target region is active, the source environment should no longer be used.
 
-A production failover in Azure Site Recovery is similar a test drill. There are some exceptions: for product failover, the option is **Failover**; whereas, for test, it's **Test failover**.
+A production failover in Azure Site Recovery is similar to a test drill. There are some exceptions: for product failover, the option is **Failover**; whereas, for test, it's **Test failover**.
 
 You can choose to shut down the source VM before starting the failover so that no data is lost during the switch.
 
@@ -100,7 +100,7 @@ When the failover is complete, ensure that the VM is working as expected. Azure 
 
 You can quickly start Azure Site Recovery failover and failback using the Azure portal. When running a failover, you select a recovery point. Running a failback is simply a reverse of this process. When a failover is successfully committed, you can protect the workload, and then it's available to failback.
 
-Failover isn't automatic when the primary location suffers an unexpected outage. You can initiate failovers with single click in the portal, or you can use Azure Site Recovery PowerShell to trigger a failover. Failing back is a simple action in the Site Recovery portal.
+Failover isn't automatic when the primary location suffers an unexpected outage. You can initiate failovers with a single-click in the portal, or you can use Azure Site Recovery PowerShell to trigger a failover. Failing back is a simple action in the Site Recovery portal.
 
 > [!NOTE]
 > Failback from Azure to an on-premises physical server isn't currently supported, but it's possible to fail back a physical server replicated to Azure to a VMware virtual machine.

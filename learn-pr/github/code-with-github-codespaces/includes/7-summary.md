@@ -9,7 +9,7 @@ You should now be able to:
 
 ## Resources
 
-Here are links to more information on the topics we discussed in this module:
+Here are links to more information on the subjects we discussed in this module:
 
 - [A beginner's guide to learning to code with GitHub Codespaces](https://github.blog/2023-02-22-a-beginners-guide-to-learning-to-code-with-github-codespaces/)
 - [Developing in a Codespace](https://docs.github.com/en/codespaces/developing-in-codespaces/developing-in-a-codespace)
