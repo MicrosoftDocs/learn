@@ -3,11 +3,11 @@ uid: learn.wwl.use-azure-machine-learn-job-for-automation
 metadata:
   title: Use an Azure Machine Learning job for automation
   description: "MLOps, machine learning operations"
-  ms.date: 09/26/2022
+  ms.date: 07/10/2024
   author: wwlpublish
   ms.author: madiepev
   ms.topic: module-standard-task-based
-  ms.service: machine-learning
+  ms.service: azure-machine-learning
 title: Use an Azure Machine Learning job for automation
 summary: Learn how to take your machine learning model from experimentation to production by using Azure Machine Learning jobs.
 abstract: |
