@@ -31,7 +31,7 @@ During your cloud risk assessment, you must determine which risks are a top prio
 
 Risk is relative. A small company with a few IT assets in a building that's offline has low risk. If the company adds users and an internet connection with access to those assets, the risk intensifies. If that small company grows to Fortune 500 status, the risks are exponentially greater. Risks increase and coalesce as revenue, business processes, employee counts, and IT assets accumulate. IT assets help generate revenue. An outage might stop that revenue stream. Every moment of downtime results in loss. As data accumulates, the risk for customers also grows.
 
-## Tailwind Trader's risks
+## Tailwind Traders' risks
 
 According to the Tailwind Traders customer narrative, the top risks that concern the Tailwind CIO include:
 

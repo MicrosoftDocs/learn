@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.cloud-adoption-framework-govern.customer-narrative
+uid: learn.azure.cloud-adoption-framework-govern.narrative
 title: Customer narrative
 metadata:
   title: Customer narrative
@@ -10,5 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-customer-narrative.md)]
-  
+  [!include[](includes/2-narrative.md)]

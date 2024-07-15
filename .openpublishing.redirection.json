@@ -42234,6 +42234,26 @@
       "source_path": "learn-pr/azure/cloud-adoption-framework-govern/6-knowledge-check.yml",
       "redirect_url": "/training/modules/cloud-adoption-framework-govern/8-knowledge-check",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-govern/1-introduction.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-govern/1-govern-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-govern/2-customer-narrative.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-govern/2-narrative",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-govern/3-methodology.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-govern/3-govern-methodology",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-govern/9-summary.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-govern/9-govern-summary",
+      "redirect_document_id": false
     }
   ]
 }

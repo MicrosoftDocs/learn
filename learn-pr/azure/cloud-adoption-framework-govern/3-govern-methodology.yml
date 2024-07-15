@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.cloud-adoption-framework-govern.methodology
+uid: learn.azure.cloud-adoption-framework-govern.govern-methodology
 title: Govern methodology
 metadata:
   title: Govern methodology
@@ -10,5 +10,5 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-methodology.md)]
+  [!include[](includes/3-govern-methodology.md)]
 

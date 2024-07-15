@@ -47,14 +47,14 @@ subjects:
 - threat-protection
 - insider-risk
 units:
-- learn.azure.cloud-adoption-framework-govern.introduction
-- learn.azure.cloud-adoption-framework-govern.customer-narrative
-- learn.azure.cloud-adoption-framework-govern.methodology
+- learn.azure.cloud-adoption-framework-govern.govern-introduction
+- learn.azure.cloud-adoption-framework-govern.narrative
+- learn.azure.cloud-adoption-framework-govern.govern-methodology
 - learn.azure.cloud-adoption-framework-govern.assess-risks
 - learn.azure.cloud-adoption-framework-govern.document-policies
 - learn.azure.cloud-adoption-framework-govern.enforce-policies
 - learn.azure.cloud-adoption-framework-govern.monitor-cloud-governance
 - learn.azure.cloud-adoption-framework-govern.knowledge-check
-- learn.azure.cloud-adoption-framework-govern.summary
+- learn.azure.cloud-adoption-framework-govern.govern-summary
 badge:
   uid: learn.azure.cloud-adoption-framework-govern.badge

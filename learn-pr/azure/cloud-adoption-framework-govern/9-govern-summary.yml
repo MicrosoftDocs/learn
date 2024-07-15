@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.cloud-adoption-framework-govern.summary
+uid: learn.azure.cloud-adoption-framework-govern.govern-summary
 title: Summary
 metadata:
   title: Summary
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/9-govern-summary.md)]
