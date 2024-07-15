@@ -42209,6 +42209,26 @@
       "source_path": "learn-pr/wwl-azure/explore-azure-blob-storage/7-summary.md",
       "redirect_url": "/training/modules/explore-azure-blob-storage/6-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-govern/4-corporate-policies.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-govern/5-document-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-govern/5-governance-disciplines.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-govern/7-enforce-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-govern/7-deploy-governance-foundation.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-govern/7-enforce-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-govern/8-mature-cost-management.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-govern/8-monitor-cloud-governance",
+      "redirect_document_id": false
     }
   ]
 }
