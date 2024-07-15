@@ -12,9 +12,9 @@ Privileged Identity Management provides time-based and approval-based role activ
 
 Once you set up Privileged Identity Management, you'll see Tasks, Manage, and Activity options in the left navigation menu. As an administrator, you can choose between options such as managing Microsoft Entra roles, managing Azure resource roles, or PIM for Groups. When you choose what you want to manage, you see the appropriate set of options for that option.
 
-For Microsoft Entra roles in Privileged Identity Management, only a user who is in the Privileged Role Administrator or Global Administrator role can manage assignments for other administrators. Global Administrators, Security Administrators, Global Readers, and Security Readers can also view assignments to Microsoft Entra roles in Privileged Identity Management.<br>
+For Microsoft Entra roles in Privileged Identity Management, only a user who is in the Privileged Role Administrator or Global Administrator role can manage assignments for other administrators. Global Administrators, Security Administrators, Global Readers, and Security Readers can also view assignments to Microsoft Entra roles in Privileged Identity Management.
 
-For Azure resource roles in Privileged Identity Management, only a subscription administrator, a resource Owner, or a resource User Access administrator can manage assignments for other administrators. Users who are Privileged Role Administrators, Security Administrators, or Security Readers don't by default have access to view assignments to Azure resource roles in Privileged Identity Management.<br>
+For Azure resource roles in Privileged Identity Management, only a subscription administrator, a resource Owner, or a resource User Access administrator can manage assignments for other administrators. Users who are Privileged Role Administrators, Security Administrators, or Security Readers don't by default have access to view assignments to Azure resource roles in Privileged Identity Management.
 
 ## Terminology
 
@@ -34,7 +34,7 @@ To better understand Privileged Identity Management and its documentation, you s
 
 The PIM role assignments give you a secure way to grant access to resources in your organization. This section describes the assignment process. It includes assign roles to members, activate assignments, approve or deny requests, extend and renew assignments.
 
-PIM keeps you informed by sending you and other participants email notifications. These emails might also include links to relevant tasks, such activating, approve or deny a request.<br>
+PIM keeps you informed by sending you and other participants email notifications. These emails might also include links to relevant tasks, such activating, approve or deny a request.
 
 The following screenshot shows an email message sent by PIM. The email informs Administrator-B that Administrator-A updated a role assignment for Member-1.
 
@@ -48,6 +48,8 @@ The assignment process starts by assigning roles to members. To grant access to 
  -  The members or owners to assign the role.<br>
  -  The scope of the assignment. The scope limits the assigned role to a particular set of resources.
  -  The type of the assignment
+    
+    
      -  Eligible assignments require the member of the role to perform an action to use the role. Actions might include activation, or requesting approval from designated approvers.
      -  Active assignments don't require the member to perform any action to use the role. Members assigned as active have the privileges assigned to the role.
  -  The duration of the assignment, using start and end dates or permanent. For eligible assignments, the members can activate or requesting approval during the start and end dates. For active assignments, the members can use the assign role during this period of time.
@@ -66,7 +68,7 @@ The following screenshot shows how members activate their role to a limited time
 :::image type="content" source="../media/role-activation-23e319a9.png" alt-text="Screenshot showing the role assignments configuration page.":::
 
 
-If the role requires approval to activate, a notification appears in the upper right corner of the user's browser informing them the request is pending approval. If an approval isn't required, the member can start using the role.<br>
+If the role requires approval to activate, a notification appears in the upper right corner of the user's browser informing them the request is pending approval. If an approval isn't required, the member can start using the role.
 
 ## Approve or deny
 

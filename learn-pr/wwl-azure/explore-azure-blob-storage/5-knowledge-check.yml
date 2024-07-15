@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-blob-storage.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/12/2024
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following types of blobs are used to store virtual hard drive files?"
+    choices:
+    - content: "Block blobs"
+      isCorrect: false
+      explanation: "Incorrect. Block blobs are made up of blocks of data that can be managed individually."
+    - content: "Append blobs"
+      isCorrect: false
+      explanation: "Incorrect. Append blobs are optimized for data append operations."
+    - content: "Page blobs"
+      isCorrect: true
+      explanation: "Correct. Page blobs store random access files up to 8 TB in size, and are used to store virtual hard drive (VHD) files and serve as disks for Azure virtual machines."
+  - content: "Which of the following types of storage accounts is recommended for most scenarios using Azure Storage?"
+    choices:
+    - content: "General-purpose v2"
+      isCorrect: true
+      explanation: "Correct. This supports blobs, files, queues, and tables. It's recommended for most scenarios using Azure Storage."
+    - content: "General-purpose v1"
+      isCorrect: false
+      explanation: "Incorrect. This is a legacy account type."
+    - content: "FileStorage"
+      isCorrect: false
+      explanation: "Incorrect. This is recommended for enterprise or high-performance scale applications and won't cover most scenarios."
+  - content: "What is the maximum size of data that a block blob in Azure Blob storage can store?"
+    choices:
+    - content: "8-TB"
+      isCorrect: false
+      explanation: "Incorrect. This is the maximum size for Page blobs, not Block blobs."
+    - content: "Unlimited"
+      isCorrect: false
+      explanation: "Incorrect. While Azure Blob storage can theoretically hold unlimited data, individual Block blobs have a size limit."
+    - content: "190.7-TiB"
+      isCorrect: true
+      explanation: "Correct. Block blobs in Azure Blob storage can store up to about 190.7-TiB of data."
+  - content: "What are the two versions of client-side encryption available in the Azure Blob Storage and Queue Storage client libraries?"
+    choices:
+    - content: "Version 1 uses Cipher Block Chaining (CBC) mode with AES and Version 2 uses Galois/Counter Mode (GCM) mode with AES"
+      isCorrect: true
+      explanation: "Correct. Version 1 uses CBC mode with AES, while Version 2 uses GCM mode with AES."
+    - content: "Version 1 uses Advanced Encryption Standard (AES) and Version 2 uses Federal Information Processing Standards (FIPS)"
+      isCorrect: false
+      explanation: "Incorrect. Both versions use AES, but they differ in the mode of operation: CBC for Version 1 and GCM for Version 2."
+    - content: "Version 1 uses Galois/Counter Mode (GCM) mode with AES and Version 2 uses Cipher Block Chaining (CBC) mode with AES"
+      isCorrect: false
+      explanation: "Incorrect. The versions are switched. Version 1 uses CBC mode with AES, while Version 2 uses GCM mode with AES."

@@ -8,8 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.custom: N/A, linux-related-content
 durationInMinutes: 8
 content: |
   [!include[](includes/6-determine-key-features-of-shielded-vms.md)]

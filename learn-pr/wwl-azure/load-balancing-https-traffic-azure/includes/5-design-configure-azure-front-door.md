@@ -166,4 +166,4 @@ Some of the key attributes of the custom HTTPS feature are:
 
 You can enable the HTTPS protocol for a custom domain that's associated with your Front Door under the frontend hosts section.
 
-For more information on how to configure HTTPS on Front door, see [Tutorial - Configure HTTPS on a custom domain for Azure Front Door | Microsoft Docs](/azure/frontdoor/front-door-custom-domain-https).
+For more information on how to configure HTTPS on Front door, see [Tutorial - Configure HTTPS on a custom domain for Azure Front Door | Microsoft Learn](/azure/frontdoor/front-door-custom-domain-https).

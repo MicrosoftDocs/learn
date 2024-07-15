@@ -3,6 +3,8 @@ uid: learn.intro-to-hpc
 metadata:
   title: Introduction to high-performance computing (HPC) on Azure
   description: Discover the services available on Azure for your high-performance computing workloads.
+  ms.service: batch
+  manager: akashdubey
   ms.date: 05/22/2023
   author: padmalathas
   ms.author: padmalathas

@@ -5,8 +5,8 @@ metadata:
   title: Explore Azure storage services
   description: Explore Azure storage services
   ms.date: 09/19/2023
-  author: tamram
-  ms.author: tamram
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
 durationInMinutes: 5
 content: |

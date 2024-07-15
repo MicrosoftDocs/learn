@@ -2,16 +2,16 @@ Modern software is powered by Application Programming Interfaces (APIs). Reflect
 
 ## Scenario
 
-Contoso Corporation is a fictitious company that implements microservice architectures, taking an API-first approach. In its earlier years, the organization only had a few teams building APIs, and often these were the same teams that consumed those APIs. Over time, the organization grew, and many teams are now producing and consuming APIs that are developed both internally and externally. However, IT Administrators at Contoso reported that they're approaching an API Sprawl state (a state where organizational APIs increase exponentially and uncontrollably), and foresee other downstream issues, including:
+Contoso Corporation is a fictitious company that implements microservice architectures, taking an API-first approach. In its earlier years, the organization only had a few teams building APIs, and often these were the same teams that consumed those APIs. Over time, the organization grew, and many teams are now producing and consuming APIs that are developed both internally and externally. However, API Platform engineers  at Contoso reported that they're approaching an API Sprawl state (a state where organizational APIs increase exponentially and uncontrollably), and foresee other downstream issues, including:
 
 - **Poor API discoverability and reuse** - Without a clear understanding of available APIs, developers may end up creating new APIs that replicate existing features, leading to wasted time and resources.
-- **Abandoned APIs** - Most developers may stop managing and maintaining some APIs in isolation as they move on to other projects.
-- **Potential security threats** – IT Administrators may not be able to effectively enforce organizational security policies, potentially leading to vulnerable and unsecured endpoints.
+- **Shadow, ungoverned APIs** - Most developers may stop managing and maintaining some APIs in isolation as they move on to other projects.
+- **Potential security threats** – The API Platform team may not be able to effectively enforce organizational security policies, potentially leading to vulnerable and unsecured endpoints.
 - **Inconsistent API design** - Developers may not all produce APIs that comply with the organization's unified API Design principles, and more development resources will need to be utilized to redesign inconsistent APIs that may be discovered after being rolled out.
 
     :::image type="content" source="../media/1-api-sprawl.png" alt-text="Screenshot showing an API Sprawl.":::
 
-At this point, IT administrators started to brainstorm on an effective and seamless solution to prevent their organization from getting to this state. If your organization also needs to adopt a strategy to centralize all of your APIs for easier tracking and governance, then this is the right module for you.
+At this point, the API Platform team started to brainstorm on an effective and seamless solution to prevent their organization from getting to this state. If your organization also needs to adopt a strategy to centralize all of your APIs for easier tracking and governance, then this is the right module for you.
 
 ## Learning objectives
 

@@ -5,7 +5,8 @@ For this exercise, you add an existing plugin to your Semantic Kernel project an
 For these exercises, a starter project is available for you to use. Use the following steps to set up the starter project:
 
 > [!IMPORTANT]
-> You must have .NET Framework 8.0 installed and a Github account to complete these steps.
+> You must have Visual Studio Code and the .NET Framework 8.0 installed to complete these steps.
+> You may also need to install the Visual Studio Code C# Dev Kit extension.
 
 1. Open Visual Studio Code.
 
@@ -27,7 +28,7 @@ For these exercises, a starter project is available for you to use. Use the foll
 
     You should see a "Program.cs" file.
 
-1. Open the **Program.cs** file and update the following variables with your Azure Open AI Services deployment name, API key, endpoint.
+1. Open the **Program.cs** file and update the following variables with your Azure OpenAI Services deployment name, API key, endpoint.
 
     ```csharp
     string yourDeploymentName = "";
@@ -51,9 +52,8 @@ Now you're ready to begin the exercise. Good luck!
     builder.Plugins.AddFromType<ConversationSummaryPlugin>();
     var kernel = builder.Build();
 
-    string input = @"I'm a vegan in search of new recipes. 
-    I love spicy food! Can you give me a list of breakfast 
-    recipes that are vegan friendly?";
+    string input = @"I'm a vegan in search of new recipes. I love spicy food! 
+    Can you give me a list of breakfast recipes that are vegan friendly?";
 
     var result = await kernel.InvokeAsync(
         "ConversationSummaryPlugin", 
@@ -66,6 +66,9 @@ Now you're ready to begin the exercise. Good luck!
     In this code, you import the `ConversationSummaryPlugin` from the `Core.Plugins` package. You create a new kernel builder and add the plugin to the builder. The `ConversationSummaryPlugin` supports several actions: `GetConversationActionItems`, `SummarizeConversation`, and `GetConversationTopics`.
     
     You create a string with a sample conversation, then call the plugin with the function name and pass in the conversation string. The plugin returns a summary of the conversation.
+
+    > [!NOTE]
+    > Since the plugin is still in preview, you may need to add suppress the warning by using `#pragma warning disable SKEXP0050` at the top of the file.
 
 1. Run the code by entering `dotnet run` in the terminal. 
 

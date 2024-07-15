@@ -34,7 +34,7 @@ properties:
       - name: SQL_SERVER_PASSWORD
         value: NAwzq6sjdItw7Ot
       - name: SQL_SERVER_FQDN
-        value: sqlserver24791.database.windows.net
+        value: <server-name>.database.windows.net
       image: erjosito/sqlapi:1.0
       ports:
       - port: 8080

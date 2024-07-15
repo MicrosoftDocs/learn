@@ -5,8 +5,8 @@ metadata:
   title: Discover the potential of Azure for government
   description: Discussion of the benefits of the public cloud for public sector agencies, with special attention to how Azure can be helpful to them. 
   ms.date: 02/15/2023
-  author: TerryLanfear
-  ms.author: terrylan
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: module
   manager: eliotgra
   ms.service: azure-government

@@ -2,12 +2,12 @@
 uid: learn.wwl.manage-azure-updates
 metadata:
   title: Manage Azure updates
-  description: "You'll be able to enable Azure Update Management, deploy updates, review an update assessment, and manage updates for your Azure VMs."
+  description: You'll be able to enable Azure Update Management, deploy updates, review an update assessment, and manage updates for your Azure VMs.
   ms.date: 09/24/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-update-manager
 title: Manage Azure updates
 summary: You'll be able to enable Azure Update Management, deploy updates, review an update assessment, and manage updates for your Azure VMs.
 abstract: |

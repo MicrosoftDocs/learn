@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-plugins-semantic-kernel.save-prompts-files
-title: Saving prompts to files
+title: Save prompts to files
 metadata:
-  title: Saving prompts to files
+  title: Save prompts to files
   description: "Save prompts to files"
-  ms.date: 04/30/2024
+  ms.date: 07/04/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit

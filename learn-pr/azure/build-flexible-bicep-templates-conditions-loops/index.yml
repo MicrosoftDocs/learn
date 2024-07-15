@@ -4,6 +4,8 @@ metadata:
   moduleType: standard
   title: Build flexible Bicep templates by using conditions and loops
   description: Build advanced Bicep templates by using conditions to conditionally deploy resources and using loops to deploy multiple instances of resources.
+  ms.service: azure-resource-manager
+  manager: jasongroce
   ms.date: 11/14/2023
   author: mumian
   ms.author: jgao

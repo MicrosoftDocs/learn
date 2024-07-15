@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-dotnet-aspire-app-azure.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this introductory unit, you'll see a business scenario that requires developers to deploy a .NET Aspire cloud-native app to multiple environments for testing and production.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

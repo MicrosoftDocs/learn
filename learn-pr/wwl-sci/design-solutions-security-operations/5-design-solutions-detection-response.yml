@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-security-operations.design-solutions-detection-response
-title: Design solutions for detection and response
+title: Design solutions for detection and response that includes extended detection and response (XDR) and security information and event management (SIEM).
 metadata:
-  title: Design solutions for detection and response
-  description: "SC-100 preparatory unit on the topic: design solutions for detection and response."
+  title: Design solutions for detection and response that includes extended detection and response (XDR) and security information and event management (SIEM).
+  description: "SC-100 preparatory unit on the topic: design solutions for detection and response that includes extended detection and response (XDR) and security information and event management (SIEM)."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed

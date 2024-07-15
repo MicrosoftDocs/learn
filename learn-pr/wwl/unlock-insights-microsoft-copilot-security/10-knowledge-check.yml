@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.unlock-insights-microsoft-copilot-security.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/19/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A security professional is tasked with analyzing a complex command-line script associated with malware. What feature of Microsoft Copilot for Security can help translating the script into natural language and linking indicators to their respective entities?"
+    choices:
+    - content: "Impact Analysis"
+      isCorrect: false
+      explanation: "Incorrect. Impact Analysis assesses the potential impact of security incidents, it doesn't translate scripts into natural language."
+    - content: "Incident Summarization"
+      isCorrect: false
+      explanation: "Incorrect. Incident Summarization distills complex security alerts into concise summaries, it doesn't translate scripts into natural language."
+    - content: "Reverse Engineering of Scripts"
+      isCorrect: true
+      explanation: "Correct. Reverse Engineering of Scripts translates complex command-line scripts into natural language and links indicators to their respective entities."
+  - content: "A security professional wants to quickly generate summaries of security incidents and analyzes scripts and codes. Which Microsoft product should they utilize for these tasks?"
+    choices:
+    - content: "Microsoft Intune"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Intune is used for managing and enforcing security policies across devices and troubleshooting device issues."
+    - content: "Microsoft Defender XDR"
+      isCorrect: true
+      explanation: "Correct. Microsoft Defender XDR provides features like incident summarization and script analysis."
+    - content: "Microsoft Entra"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Entra is used to identify and analyze users with suspicious activity."
+  - content: "A security analyst needs to summarize a specific incident in Microsoft Defender XDR for a report to their manager and create a list of entities involved. What should the analyst do?"
+    choices:
+    - content: "The analyst should use a prompt in Microsoft Copilot for Security, such as 'Summarize incident 15134 in Microsoft Defender XDR into a paragraph that I can submit to my manager and create a list of entities involved."
+      isCorrect: true
+      explanation: "Correct. This utilizes the prompt feature in Microsoft Copilot for Security to generate a tailored response."
+    - content: "The analyst should directly email the manager about the incident."
+      isCorrect: false
+      explanation: "Incorrect. This doesn't utilize the prompt feature in Microsoft Copilot for Security."
+    - content: "The analyst should manually search for the incident details in Microsoft Defender XDR."
+      isCorrect: false
+      explanation: "Incorrect. This doesn't make use of the automation provided by Microsoft Copilot for Security."

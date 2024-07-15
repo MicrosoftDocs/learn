@@ -2,14 +2,14 @@ Azure offers fully managed Databases as Services (DBaaS), which automate tasks l
 
 A partial list of the fully managed databases available on Azure includes:
 
-- Azure SQL Database
+- [Azure SQL Database](https://azure.microsoft.com/products/azure-sql/database)
 
-- Azure Database for PostgreSQL
+- [Azure Database for PostgreSQL](https://azure.microsoft.com/products/postgresql)
 
-- Azure Database for MySQL
+- [Azure Database for MySQL](https://azure.microsoft.com/free/mysql/)
 
-- Azure Cosmos DB
+- [Azure Cosmos DB](https://azure.microsoft.com/products/cosmos-db)
 
-- Azure Cache for Redis
+- [Azure Cache for Redis](https://azure.microsoft.com/products/cache/)
 
 You can find a complete, up-to-date list of fully managed databases in the [Types of Databases on Azure](https://azure.microsoft.com/products/category/databases/) article.

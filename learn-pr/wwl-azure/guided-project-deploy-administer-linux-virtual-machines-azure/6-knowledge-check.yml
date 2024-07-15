@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-deploy-administer-linux-virtual-machines-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/12/2024
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Suppose you want to run a network appliance on a virtual machine. Which virtual machine size family would you choose?"
+    choices:
+    - content: "Compute optimized."
+      isCorrect: true
+      explanation: "Correct. Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
+    - content: "Memory optimized."
+      isCorrect: false
+      explanation: "Incorrect. Memory optimized VMs are designed to have a high memory-to-CPU ratio, which is great for relational database servers, but not as suitable for network appliances."
+    - content: "Storage optimized."
+      isCorrect: false
+      explanation: "Incorrect. Storage optimized VMs are designed to have high disk throughput and IO, which is ideal for VMs running databases but not as suitable for network appliances."
+  - content: "What's the composition of an alert rule?"
+    choices:
+    - content: "Resource, condition, log, alert type."
+      isCorrect: false
+      explanation: "Incorrect. Log and alert type aren't part of the composition of an alert rule."
+    - content: "Metrics, logs, application, operating system."
+      isCorrect: false
+      explanation: "Incorrect. None of these elements make up an alert rule."
+    - content: "Resource, condition, actions, alert details."
+      isCorrect: true
+      explanation: "Correct. These elements make up an alert rule."
+  - content: "Which role provides read, write, and delete on Azure storage containers and blobs."
+    choices:
+    - content: "Storage Blob Data Reader."
+      isCorrect: false
+      explanation: "Incorrect. The Storage Blob Data Reader role only provides read and list permissions."
+    - content: "Storage Blob Data Contributor."
+      isCorrect: true
+      explanation: "Correct. The Storage Blob Data Contributor role provides read, write, and delete permissions."
+    - content: "Storage Blob Delegator."
+      isCorrect: false
+      explanation: "Incorrect. The Storage Blob Delegator role provides a user delegation key, which can then be used to create a shared access signature."

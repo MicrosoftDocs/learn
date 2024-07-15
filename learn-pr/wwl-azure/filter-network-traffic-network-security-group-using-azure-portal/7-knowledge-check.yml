@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/30/2024
+  ms.date: 06/12/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -27,17 +27,6 @@ quiz:
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
       explanation: "Correct. A network security group is used to filter inbound and outbound network traffic to and from Azure resources in an Azure virtual network, helping to deliver secure and stable application hosting platforms."
-  - content: "Which of the following methods would associate an NSG with an Azure resource?"
-    choices:
-    - content: "During the creation of the Azure resource"
-      isCorrect: false
-      explanation: "Incorrect. NSG association isn't typically done during resource creation."
-    - content: "By modifying the virtual network settings"
-      isCorrect: true
-      explanation: "Correct. To associate a Network Security Group (NSG) with an Azure resource, you need to modify the virtual network settings and associate the NSG with the desired subnet or network interface."
-    - content: "By using Azure PowerShell commands"
-      isCorrect: false
-      explanation: "Incorrect. While possible, it isn't the primary method for associating NSGs with resources."
   - content: "What happens to network traffic that doesn't match any NSG rules?"
     choices:
     - content: "It's allowed by default"
@@ -60,3 +49,14 @@ quiz:
     - content: "By automatically applying antivirus software to all virtual machines within a group"
       isCorrect: false
       explanation: "Incorrect because ASGs don't deal with antivirus software; their purpose is to simplify network security management by grouping VMs for security rule application."
+  - content: "A network administrator is planning to minimize the number of security rules and changes needed. They are considering using service tags or application security groups, rather than individual IP addresses or ranges of IP addresses. What should they ensure about the network interfaces in both application security groups?"
+    choices:
+    - content: "They must exist in different virtual networks"
+      isCorrect: false
+      explanation: "Incorrect. Having network interfaces in different virtual networks would make it impossible to assign one as the source and the other as the destination in a rule."
+    - content: "They can exist in any virtual network"
+      isCorrect: false
+      explanation: "Incorrect. The network interfaces need to be in the same virtual network for both the source and destination application security groups."
+    - content: "They must exist in the same virtual network"
+      isCorrect: true
+      explanation: "Correct. All network interfaces for both the source and destination application security groups need to exist in the same virtual network."

@@ -64,7 +64,7 @@ Feel free to explore on your own the rest of the features of the trace viewer su
 
 For debugging, we recommend running your tests with the *Show trace viewer* option and using the trace of your tests to better understand what is happening.
 
-However, with the VS Code extension you can also debug your tests right in VS Code, see error messages, create breakpoints, and live debug your tests. [Learn more from the docs](https://playwright.dev/docs/getting-started-vs-code) or watch this video to get a sense of the debugging support.
+However, with the VS Code extension you can also debug your tests right in VS Code, see error messages, create breakpoints, and live debug your tests. [Learn more from the docs](https://playwright.dev/docs/getting-started-vscode) or watch this video to get a sense of the debugging support.
 
 [![A youtube video showing you how to generate playwright test in Visual Studio Code](../media/tests-in-playwright-vs-code-youtube.jpg)](https://youtu.be/LM4yqrOzmFE)
 

@@ -3,11 +3,13 @@ uid: learn.azure.adopt-finops-on-azure
 metadata:
   title: Adopt FinOps on Azure
   description: Learn how to implement FinOps on Azure.
+  manager: mkluck
   ms.date: 05/02/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module
-  ms.service: azure
+  ms.reviewer: fernandovas;micflan
+  ms.service: finops
 title: Adopt FinOps on Azure
 summary: In today's dynamic landscape, effective cloud management is essential for organizations of all sizes and across various industries. This module provides a comprehensive overview of FinOps domains and capabilities, along with hands-on experience using Microsoft solutions to support your journey. Additionally, it includes a tutorial on conducting a FinOps iteration to help you start or advance your FinOps practice.
 abstract: |

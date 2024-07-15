@@ -4,6 +4,7 @@ metadata:
   moduleType: standard
   title: Protect your Azure Virtual Desktop deployment by using Azure Firewall
   description: Learn how to deploy and configure Azure Firewall to protect outbound network traffic for Azure Virtual Desktop.
+  manager: kumud
   ms.date: 01/05/2024
   author: vhorne
   ms.author: victorh

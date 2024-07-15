@@ -4,10 +4,12 @@ title: Swap deployment slots
 metadata:
   title: Swap deployment slots
   description: "Swap deployment slots"
-  ms.date: 04/24/2023
+  ms.date: 06/10/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+durationInMinutes: 6
 content: |
   [!include[](includes/4-swap-deployment-slots.md)]

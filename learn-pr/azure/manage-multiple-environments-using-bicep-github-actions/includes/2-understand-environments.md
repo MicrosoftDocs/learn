@@ -46,7 +46,7 @@ Common environments include:
 
 ### Environments in your organization
 
-There are variations of these environments. Some organizations use only a few environments, and some use many more. The number and type of environments that you use depend on the solution you're deploying, the size of the team that's building the solution, and the importance of the workload.
+You might see variations of these environments. Some organizations use only a few environments, and some use many more. The number and type of environments that you use depend on the solution you're deploying, the size of the team that's building the solution, and the importance of the workload.
 
 Sometimes, a single environment takes the role of several of the environments listed earlier. Other times, you might have a complex workflow that deploys to multiple environments, some in parallel and some in sequence. Some organizations even automatically delete or deprovision environments when they're no longer used, and then redeploy them when they're needed in the future.
 
@@ -72,7 +72,7 @@ Additionally, you could run an automated check to confirm the branch that your c
 
 ### Secrets
 
-GitHub Actions enables you to store secrets that can only be used with a specific environment. You learn more about secret management later in this module.
+GitHub Actions enables you to store secrets that can only be used with a specific environment. You'll learn more about secret management later in this module.
 
 ### Deployment history
 
@@ -80,7 +80,7 @@ GitHub Actions tracks the history of the deployments to an environment. This his
 
 ### Create environments
 
-You typically create an environment by using the GitHub web interface.
+You can create an environment by using the GitHub web interface.
 
 When your workflow refers to an environment that doesn't exist, GitHub Actions automatically creates it for you. This feature can affect the security of your GitHub repository because the new environment won't have any protection rules configured. It's best to create an environment yourself through the GitHub web interface, so that you have full control over its security.
 

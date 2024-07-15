@@ -8,9 +8,7 @@ metadata:
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: unit
-  ms.custom:
-    - team=nextgen
-    - devx-track-js
+  ms.custom: team=nextgen
 durationInMinutes: 2
 content: |
   Choose the best response for each of the following questions. Then select **Check your answers**.

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: learning-path
-  ms.service: machine-learning
 title: Implement a Data Analytics Solution with Azure Databricks
 prerequisites: |
   None

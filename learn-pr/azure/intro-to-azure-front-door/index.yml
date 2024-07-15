@@ -4,6 +4,7 @@ metadata:
   moduleType: introduction
   title: Introduction to Azure Front Door
   description: Azure Front Door provides a fast, reliable, and secure modern cloud content delivery network, integrated with intelligent threat protection.
+  manager: kumud
   ms.date: 10/16/2023
   author: duongau
   ms.author: duau

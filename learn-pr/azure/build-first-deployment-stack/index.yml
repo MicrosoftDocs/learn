@@ -1,0 +1,58 @@
+### YamlMime:Module
+uid: learn.azure.build-first-deployment-stack
+metadata:
+  title: Build your first deployment stack
+  description: Learn how to build and deploy deployment stacks.
+  ms.date: 08/01/2023
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.service: azure-resource-manager
+  ms.topic: module-build-your-first
+title: Build your first deployment stack
+summary: Learn how to build, deploy, update, and delete deployment stacks.
+abstract: | 
+  After completing this module, you'll be able to:
+    - Create and deploy Azure resources using deployment stacks and Bicep
+    - Update and delete Azure resources using deployment stacks and Bicep
+prerequisites: |
+  You should be familiar with using:
+  - Azure, including the Azure portal, subscriptions, resource groups, and resources.
+  - Bicep, including creating and deploying basic files.
+  - Basic Azure PowerShell or AZ CLI commands.
+
+  To follow along with the exercises in the module, you need the following software installed locally:
+  - [Visual Studio Code](https://code.visualstudio.com).
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
+  - Azure CLI [version 2.61.0 or later](/cli/azure/install-azure-cli) or Azure PowerShell [version 12.0.0 or later](/powershell/azure/install-az-ps).
+
+    > [!TIP]
+    > You can use either the Azure CLI or Azure PowerShell to complete this module. If you're not sure which to choose, we recommend you use the [Azure CLI](/cli/azure/install-azure-cli).
+
+    > [!NOTE]
+    > Azure CLI automatically installs the Bicep CLI. Azure PowerShell requires a manual installation. For more information, go to [Install Bicep tools](/azure/azure-resource-manager/bicep/install).
+
+iconUrl: /training/achievements/bicep/build-first-deployment-stack.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+languages:
+  - bicep
+products:
+- azure
+- azure-resource-manager
+subjects:
+  - cloud-computing
+  - devops
+units:
+- learn.azure.build-first-deployment-stack.introduction
+- learn.azure.build-first-deployment-stack.create-deployment-stack
+- learn.azure.build-first-deployment-stack.exercise-create-deploy-deployment-stack
+- learn.azure.build-first-deployment-stack.update-delete-deployment-stack
+- learn.azure.build-first-deployment-stack.exercise-update-delete-deployment-stack
+- learn.azure.build-first-deployment-stack.knowledge-check
+- learn.azure.build-first-deployment-stack.summary
+badge:
+  uid: learn.azure.build-first-deployment-stack.badge
