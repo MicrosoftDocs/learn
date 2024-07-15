@@ -1,18 +1,18 @@
-After you identify business risks, you must incorporate or update policies to mitigate them, regardless of the cloud platform that your organization uses. Healthy cloud governance strategy begins with sound cloud governance policy. 
+After you identify business risks that are associated with the cloud, you must document or update policies to mitigate the risks. Healthy cloud governance strategy begins with sound cloud governance policy. 
 
 Cloud governance policies establish the requirements, standards, and goals that your IT staff and automated systems must align with. Individual policy statements are guidelines that you can use to address specific risks that you identify during your risk analysis.
 
 The following examples describe proper cloud governance policies that help guide adoption in public and private cloud deployments.
 
-- **Policy**: *Avoid overspending.* Cloud deployments have a risk of overspending, especially for self-service deployments. An organization must allocate deployments to a billing unit with an approved budget and with a mechanism to apply budgetary limits.
+- **Policy**: *Workload teams must set budgets alerts at the resource group level.* Cloud deployments have a risk of overspending, especially for self-service deployments. An organization must allocate deployments to a billing unit with an approved budget and with a mechanism to apply budgetary limits.
 
   **Design consideration:** In Azure, an organization can control budget with [Microsoft Cost Management](/azure/cost-management-billing/). And [Azure Advisor](/azure/advisor/advisor-cost-recommendations) can provide optimization recommendations to reduce spending for each asset.
 
-- **Policy**: *Secure sensitive data.* Assets that interact with sensitive data might not receive sufficient protections, which leads to potential data leaks or business disruptions. A security team must identify and review all assets that interact with sensitive data to ensure that proper levels of protection are in place.
+- **Policy**: *Microsoft Purview must be used to monitor sensitive data.* An organization must identify, classify, protect, and govern sensitive information.
 
   **Design consideration:** In Azure, an organization must tag all deployed assets with proper data classification levels. A cloud governance team and application owner must review the classifications before deployment to the cloud.
 
-## Document cloud governance policies
+## How to document cloud governance policies
 
 To effectively document your cloud governance policies:
 

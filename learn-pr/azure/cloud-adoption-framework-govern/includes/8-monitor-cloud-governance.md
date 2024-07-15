@@ -18,7 +18,7 @@ After your policies are in place and you align your organization's processes and
 
 ## Use Microsoft Cost Management
 
-Use Microsoft Cost Management to monitor your cost data and manage cloud governance cost. Cost Management combines data about your resource organization, Azure Advisor alerts, and your governance foundation.
+There are several services and methods that you can use to monitor how well your organization aligns with your cloud governance policies. For example, you can use Microsoft Cost Management to monitor your cost data and manage cloud governance cost. Cost Management combines data about your resource organization, Azure Advisor alerts, and your governance foundation.
 
 You can use Advisor to monitor Azure resource costs, and configure alerts for new Advisor recommendations. You can also configure anomaly alerts in Cost Management to notify you when an unexpected cost occurs.
 
