@@ -9,6 +9,7 @@ metadata:
   ms.reviewer: maghan
   ms.topic: module-intro-to-product
   ms.service: mysql
+  ai-usage: ai-assisted
 title: "Choose a tool to migrate data to Azure Database for MySQL"
 summary: |
   In this module, you evaluate migration tools and practice migrating an on-premises MySQL server to an Azure Database for MySQL flexible server. 

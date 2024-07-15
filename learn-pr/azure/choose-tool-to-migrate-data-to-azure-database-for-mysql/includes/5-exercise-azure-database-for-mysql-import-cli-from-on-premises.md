@@ -18,7 +18,7 @@ It's time to migrate the on-premises MySQL server to an Azure Database for MySQL
 
   - Only the INNODB engine is supported.
 
-- You need an Azure Blob storage container. If you don't have an appropriate container, create one following this [quickstart](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container). You need the Azure Blob container's shared access signature (SAS) token. To optimize performance, keep the storage and target flexible server in the same region.
+- You need an Azure Blob storage container. If you don't have an appropriate container, create one with this [quickstart](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container). You need the Azure Blob container's shared access signature (SAS) token. To optimize performance, keep the storage and target flexible server in the same region.
 
 - You need to shut down your application to prevent any changes to the database.
 
@@ -52,4 +52,5 @@ Keep in mind the following limitations:
 
 After migrating users and privileges, connect your applications to the flexible server, and the migration is complete.
 
-If instead you were performing an online migration, you wouldn't have taken the source database offline before backing up. Instead, you would have performed the export and import as above, and then set up replication from the source to the target. When the target fully caught up to the source, you'd have cut over the application before shutting down the source database.
+> [!TIP]
+> Alternatively, if you were performing an online migration, you would have performed the export and import as above, and then set up replication from the source to the target. When the target fully caught up to the source, you'd have cut over the application before shutting down the source database.
