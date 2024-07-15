@@ -3,6 +3,7 @@ uid: learn.secure-your-azure-virtual-machine-disks
 metadata:
   title: Secure your Azure virtual machine disks
   description: Explore the options for Azure disk encryption to encrypt OS and data disks on existing and new virtual machines.
+  manager: akashdubey
   ms.date: 12/29/2023
   author: roygara
   ms.author: rogarana

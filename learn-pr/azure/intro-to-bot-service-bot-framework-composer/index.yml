@@ -4,6 +4,7 @@ metadata:
   moduleType: introduction
   title: Introduction to Azure Bot Service and Bot Framework Composer
   description: Introduction to Azure Bot Service and Bot Framework Composer
+  manager: mkluck
   ms.date: 04/24/2024
   author: jasonkellingtonwaypoint
   ms.author: robmcm

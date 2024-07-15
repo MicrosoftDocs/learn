@@ -4,6 +4,8 @@ metadata:
   moduleType: standard
   title: Automate Azure infrastructure change reviews by using Bicep and GitHub
   description: Build an automated pull request workflow for Bicep code. Lint code automatically during every pull request, and deploy temporary ephemeral environments by using GitHub and GitHub Actions.
+  ms.service: azure-resource-manager
+  manager: jasongroce
   ms.date: 03/29/2023
   author: mumian
   ms.author: jgao
