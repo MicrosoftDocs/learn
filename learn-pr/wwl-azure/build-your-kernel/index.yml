@@ -2,31 +2,26 @@
 uid: learn.wwl.build-your-kernel
 metadata:
   title: Build your kernel
-  description: "Learn how the semantic kernel SDK connects native code to large language models to create smart applications."
+  description: Learn how the semantic kernel SDK connects native code to large language models to create smart applications.
   ms.date: 06/11/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: azure
   ms.devlang: csharp
   ai-usage: human-only
+  ms.service: semantic-kernel
 title: Build your kernel
 summary: This module introduces the Semantic Kernel SDK. Learn how the kernel connects code to large language models to extend functionality with generative artificial intelligence.
 abstract: |
   -   Understand the purpose of Semantic Kernel.
-
   -   Understand prompting basics.
-
   -   Learn techniques for more effective prompts.
 prerequisites: |
   -   Experience programming in C#.
-
   -   Visual Studio Code IDE installed.
-
   -   Familiarity with Azure and the Azure portal.
-
   -   Access to Azure OpenAI services.
 iconUrl: /training/achievements/generic-badge.svg
 levels:

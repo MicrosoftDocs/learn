@@ -10,14 +10,14 @@ In this module, you created resources by using your Azure subscription. You want
 
 1. In the command bar, select **Delete resource group**. A dialog pane appears asking you to type the resource group name.
 
-1. Enter the name of the resource group (**learn-deploy-container-aci-rg** or whatever name you used) and then select **Delete**. All of the resources that you created in this module will be deleted along with the resource group.
+1. Enter the name of the resource group (**learn-deploy-container-aci-rg** or whatever name you used), then select **Delete**. Select **Delete** again to confirm deletion. All of the resources that you created in this module are deleted along with the resource group.
 
 ## Learn More
 
-- [Docker overview](https://docs.docker.com/engine/docker-overview/)
-- [Install Docker Desktop on Windows](https://docs.docker.com/docker-for-windows/install/)
+- [Docker overview](https://docs.docker.com/guides/docker-overview/)
+- [Install Docker Desktop on Windows](https://docs.docker.com/desktop/install/windows-install/)
 - [Docker reference documentation](https://docs.docker.com/reference/)
-- [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
-- [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
-- [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)
-- [Container Instances](https://azure.microsoft.com/services/container-instances/)
+- [Best practices for writing Dockerfiles](https://docs.docker.com/build/building/best-practices/)
+- [Dockerfile reference](https://docs.docker.com/reference/dockerfile/)
+- [Azure Container Registry](https://azure.microsoft.com/products/container-registry/)
+- [Container Instances](https://azure.microsoft.com/products/container-instances/)

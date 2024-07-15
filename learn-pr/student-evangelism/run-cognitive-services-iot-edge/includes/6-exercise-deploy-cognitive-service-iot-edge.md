@@ -28,23 +28,26 @@ Create an Azure AI Language service resource that matches the container.
 
 To deploy the Language Detection container image as Azure IoT Edge modules from Azure Marketplace, follow these steps:
 
-1. In the Azure portal, enter **Edge Module - Language Detection (Text Analytics)** into the search and open the Azure Marketplace result.
+1. Find the **Azure AI services Text Analytics Language** module in the [Microsoft Artifact Registry](https://mcr.microsoft.com/catalog?cat=IoT%20Edge%20Modules&alphaSort=asc&alphaSortKey=Name) filtered by *IoT Edge Modules*.
 
-1. Select **Create** to create the image.
+1. Select the latest image version of the **Azure AI services Text Analytics Language** module.
 
-1. It takes you to the Azure portal's **Target Devices for IoT Edge Module** page. Provide the following required information.
+1. Copy the URI for the **Azure AI services Text Analytics Language** module. You only need the URI for the module. Don't include the *docker pull* command. For example, `mcr.microsoft.com/azure-cognitive-services/textanalytics/language:latest`.
 
-    1. Select your subscription.
+1. 1. In the Azure portal, find your IoT Edge device created in an earlier step.
 
-    1. Select the IoT hub created in an earlier step.
+1. Select **Set modules** from the IoT Edge device details page.
 
-    1. Select **Find device** and find your IoT Edge device created in an earlier step.
+1. In the **IoT Edge modules** section, select **Add** then choose **IoT Edge Module**.
 
-1. Select the **Create** button. It takes you to the **Set modules** page. Keep the page open, because you'll configure Azure AI services in the next step.
+1. Update the following module settings:
 
-1. Select on the **EdgeModuleLanguageDetectionTextAnalytics** IoT Edge module.
-
-   ![The illustration shows the container image in your device.](../media/edge-module.png)
+    | Setting            | Value                                                                      |
+    |--------------------|----------------------------------------------------------------------------|
+    | IoT Module name    | `EdgeModuleLanguageDetectionTextAnalytics`                                 |
+    | Image URI          | `mcr.microsoft.com/azure-cognitive-services/textanalytics/language:latest` |
+    | Restart policy     | always                                                                     |
+    | Desired status     | running                                                                    |
 
 1. Navigate to **Environment Variables** and provide the following information.
 
@@ -77,11 +80,9 @@ To deploy the Language Detection container image as Azure IoT Edge modules from 
 
     This configuration adds port 5000 to the exposed ports so that the container can be connected to.
 
-1. Select **Update**.
+1. Select **Apply**.
 
-1. Select **Next: Routes** to  define your route. You define all messages from all modules to go to Azure IoT Hub.
-
-1. Select **Next: Review + create**. You can preview the JSON file that defines all the modules that get deployed to your IoT Edge device.
+1. Select **Review + create**. You can preview the JSON file that defines all the modules that get deployed to your IoT Edge device.
 
 1. Select **Create** to start the module deployment.
 

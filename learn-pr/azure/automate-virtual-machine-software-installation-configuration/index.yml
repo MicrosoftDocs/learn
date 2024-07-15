@@ -3,6 +3,7 @@ uid: learn.azure.automate-virtual-machine-software-installation-configuration
 metadata:
   title: Automate the installation and configuration of software in your Virtual Machines
   description: Learn how to automate the installation and configuration of software in your Azure Virtual Machines.
+  manager: akashdubey
   ms.date: 04/04/2024
   author: ju-shim
   ms.author: jushiman

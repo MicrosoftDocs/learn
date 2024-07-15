@@ -2,12 +2,12 @@
 uid: learn.wwl.describe-azure-storage-services
 metadata:
   title: Describe Azure storage services
-  description: "Azure storage services, tiers, redundancy options, and migration options and tools."
+  description: Azure storage services, tiers, redundancy options, and migration options and tools.
   ms.date: 11/15/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module-standard-task-based
-  ms.service: azure
+  ms.service: architecture-center
 title: Describe Azure storage services
 summary: This module introduces you to storage in Azure, including things such as different types of storage and how a distributed infrastructure can make your data more resilient.
 abstract: |

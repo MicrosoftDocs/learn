@@ -4,5 +4,5 @@ Always ON VPN is a feature of Windows Server, and can be deployed by setting up 
 
 ### Learn more
 
- -  [Configure Windows 10 Client Always On VPN Connections \| Microsoft Docs](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections)
+ -  [Configure Windows 10 Client Always On VPN Connections \| Microsoft Learn](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections)
  -  [Deploy Always On VPN](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/always-on-vpn-deploy-deployment).

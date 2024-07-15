@@ -3,6 +3,7 @@ uid: learn.connect-vm-with-azure-bastion
 metadata:
   title: Connect to virtual machines through the Azure portal by using Azure Bastion
   description: Learn how to deploy Azure Bastion to securely connect to Azure virtual machines directly within the Azure portal.
+  manager: kumud
   ms.date: 12/06/2023
   author: cherylmc
   ms.author: cherylmc

@@ -4,6 +4,7 @@ metadata:
   moduleType: build-your-first-using-product
   title: Load balance your web service traffic with Front Door
   description: "Accelerate the delivery and maintain high availability of web applications by distributing web traffic across multiple web servers."
+  manager: kumud
   ms.date: 10/16/2023
   author: duongau
   ms.author: duau
