@@ -4,7 +4,7 @@ Many of these infrastructure requirements are directly associated with block sto
 
 The type and size of the disk you select for your critical applications directly affects the applications' performance and can generate higher costs if you don't select the appropriate option.
 
-To help you optimize performance and costs, Azure Disk Storage also offers capabilities that you can use to cost-effectively scale your performance to meet the needs of your workloads, and keep costs under control.
+To help you optimize performance and costs, Azure Disk Storage also offers capabilities for scaling your performance to meet the needs of your workloads, and keep costs under control.
 
 The following sections discussing performance options don't apply to Ultra disks or Premium SSD v2 managed disks. The performance attributes of Ultra disks and Premium SSD v2 managed disks can be independently adjusted as needed, and these disks don't have tiers or bursting.
 
@@ -12,7 +12,7 @@ The following sections discussing performance options don't apply to Ultra disks
 
 For Premium SSD managed disks only, you can adjust and balance the IOPS and throughput of your disks by selecting the right performance tier for your needs. To select the right combination, you should be aware of your application requirements. Applications that have high I/O, like database servers or online transactional processing systems, require higher IOPS.
 
-You might have planned events, like a seasonal promotion or performance testing, during which the application requires higher demands on performance on a temporary basis. To optimize costs, you can change the performance tier on Premium SSD disks without increasing the size of the disks when you need to meet a higher performance demand. For example, your marketing applications are provisioned to use a Premium SSD disk with a P4 performance tier that's limited to 120 IOPS and 25 MB/s. Because of a seasonal sale, the interest for your marketing application increases dramatically, and you want to meet the higher capacity demands on a temporary basis. You can increase the performance tier of your P4 disk to a higher tier, such as P30 with 5,000 IOPS and 200 MB/s of throughput. When your marketing campaign is over, you can change the disk tier back to the original P4 tier. During the period when you use a higher performance tier, you're charged for the price of that tier. In this example, you're charged the price of a P30.
+You might have planned events, like a seasonal promotion or performance testing, during which the application requires higher demands on performance on a temporary basis. To optimize costs, you can change the performance tier on Premium SSD disks without increasing the size of the disks when you need to meet a higher performance demand. For example, your marketing applications are provisioned to use a Premium SSD disk with a P4 performance tier limited to 120 IOPS and 25 MB/s. Because of a seasonal sale, the interest for your marketing application increases dramatically, and you want to meet the higher capacity demands on a temporary basis. You can increase the performance tier of your P4 disk to a higher tier, such as P30 with 5,000 IOPS and 200 MB/s of throughput. When your marketing campaign is over, you can change the disk tier back to the original P4 tier. During the period when you use a higher performance tier, you're charged for the price of that tier. In this example, you're charged the price of a P30.
 
 ## Change the performance tier on Premium SSD disks while they are in use
 
@@ -81,7 +81,7 @@ The following factors determine the cost of a disk:
 - The size of the disk (all disks)
 - The number of transactions made involving the disk (all transactions for Standard HDD and Standard SSD. For Premium SSD, burst transactions only)
 - The redundancy option selected (Standard SSD and Premium SSD only)
-- Whether on-demand bursting is enabled (Premium SSD only)
+- The enabled/disabled setting for on-demand bursting (Premium SSD only)
 - The disk's IOPS (Ultra Disks and Premium SSD v2 only)
 - The disk's throughput (Ultra Disks and Premium SSD v2 only)
 
@@ -93,7 +93,7 @@ On Azure, input/output operation per second (IOPS) and transactions are similar 
 
 A transaction on Azure is an I/O operation less than or equal to 256 KiBs of throughput. If your IO operation is larger than 256 KiBs of throughput, it requires multiple transactions. The number of transactions is calculated by dividing the I/O size by 256 KiBs.  
 
-For example, an IO with the size of 1024 KiBs (1 MiB) would be processed as 4 transactions on a Standard SSD disk.
+For example, an IO with the size of 1024 KiBs (1 MiB) would be processed as four transactions on a Standard SSD disk.
 
 Standard SSDs have a cap on the number of transactions that are billed in an hour. Once that cap is passed, the rest of your transactions during that hour are free. For details, see [Standard SSD transaction caps](https://techcommunity.microsoft.com/t5/azure-storage-blog/cost-saving-with-standard-ssd-billing-caps/ba-p/3758792).
 

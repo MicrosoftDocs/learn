@@ -1,4 +1,4 @@
-Application performance often depends on how quickly the application can read and write data. To understand how to improve application performance, you must first understand how performance is measured and the settings and choices that affect it.
+Application performance often depends on how quickly the application can read and write data. To improve application performance, you must first understand how performance is measured. Then, understand the settings and choices that affect it.
 
 ## Disk performance characteristics
 
@@ -89,7 +89,7 @@ Caching uses specialized, and sometimes expensive, temporary storage that has fa
 
 *Read caching* tries to speed up data *retrieval*. Instead of reading from permanent storage, the application reads the data from the faster cache.
 
-It's important to note that read caching helps when there's some *predictability* to the read queue, such as a set of sequential reads. For random I/O, in which the data you're accessing is scattered across storage, caching is of little or no benefit and can even reduce disk performance.
+It's important to note that read caching helps when there's some *predictability* to the queue that you're reading, such as a set of sequential reads. For random I/O in which the data you're accessing is scattered across storage, caching is of little or no benefit and can even reduce disk performance.
 
 *Write caching* tries to speed up *writing data* to persistent storage. When you use a write cache, the app can consider the data that should be saved.
 
@@ -97,7 +97,7 @@ In reality, when you use write caching, data is queued in a cache, waiting to be
 
 ## Cached and uncached limits of VMs
 
-Now that you understand how caching might improve the performance for reading or writing data on the disk, you should be aware of how caching affects VM performance.
+We learned how caching might improve the performance for reading or writing data on the disk, now let's look at how caching affects VM performance.
 
 The performance of the VM depends on the IOPS and throughput limits that are imposed based on VM size. All VMs in the Premium tier have different limits for IOPS and throughput based on cached and uncached configurations. You can improve the performance of the VM to meet the higher demand for IOPS and throughput by enabling VM host caching.
 
