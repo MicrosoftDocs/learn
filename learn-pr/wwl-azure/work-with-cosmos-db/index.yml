@@ -3,10 +3,10 @@ uid: learn.wwl.work-with-cosmos-db
 metadata:
   title: Work with Azure Cosmos DB
   description: "Work with Azure Cosmos DB"
-  ms.date: 03/06/2024
+  ms.date: 07/15/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: module-standard-task-based
+  ms.topic: module
   ms.custom:
   - N/A
   ms.service: cosmos-db
