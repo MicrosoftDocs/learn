@@ -3,6 +3,8 @@ uid: learn.configure-the-network-for-your-virtual-machines
 metadata:
   title: Configure the network for your virtual machines
   description: Learn how to connect your local on-premises networks into Azure using virtual networks, VPN gateways, and Azure ExpressRoute.
+  ms.service: virtual-machines
+  manager: kumud
   ms.date: 11/01/2023
   author: mbender-ms
   ms.author: mbender

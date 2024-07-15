@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-deploy-administer-linux-virtual-machines-azure.exercise3
+title: Exercise - Configure storage for virtual machines
+metadata:
+  title: Exercise - Configure storage for virtual machines
+  description: "Exercise - Configure storage for Linux virtual machines"
+  ms.date: 07/12/2024
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/4-exercise-storage-virtual-machines.md)]

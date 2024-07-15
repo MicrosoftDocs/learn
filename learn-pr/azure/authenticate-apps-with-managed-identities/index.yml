@@ -3,6 +3,8 @@ uid: learn.authenticate-apps-with-managed-identities
 metadata:
   title: Authenticate apps to Azure services by using service principals and managed identities for Azure resources
   description: Securely authenticate apps to Azure to manage and access Azure services. Service principals and managed identities give your app a Microsoft Entra identity.
+  ms.service: entra-id
+  manager: mkluck
   ms.date: 12/27/2023
   author: rmcmurray
   ms.author: robmcm

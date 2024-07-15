@@ -3,6 +3,7 @@ uid: learn.azure.migrate-app-service-migration-assistant
 metadata:
   title: Migrate an on-premises web application to Azure App Service
   description: Use the Azure App Service Migration Assistant to assess the readiness of a web app to be deployed on App Service, and perform the migration.
+  manager: mkluck
   ms.date: 05/21/2020
   author: rmcmurray
   ms.author: robmcm

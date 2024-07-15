@@ -3,11 +3,12 @@ uid: learn.azure.accelerate-migration-journey
 metadata:
   title: Accelerate your migration, modernization, and innovation journey to Azure
   description: Learn how to accelerate your migration and modernization journey to Azure.
+  manager: jsuri
   ms.date: 05/15/2023
   author: sgsneha
   ms.author: sudhirsneha
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-migrate
 title: Accelerate your migration, modernization, and innovation journey to Azure
 summary: Moving to Azure can help you optimize costs and stay secure and resilient by avoiding costly business interruptions. You can take advantage of fully managed services in Azure to reduce operational burden, scale on demand, and focus on more important tasks. There are many reasons for moving to Azure, and a proven, methodical approach can help you navigate that journey successfully. Microsoft provides guidance, tools, and programs you can use to ensure success. 
 abstract: |

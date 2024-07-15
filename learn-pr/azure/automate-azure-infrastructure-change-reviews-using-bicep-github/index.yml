@@ -9,7 +9,8 @@ metadata:
   ms.author: jgao
   ms.topic: module
   ms.devlang: bicep
-  ms.service: github
+  ms.service: azure-resource-manager
+  manager: jasongroce
 title: Automate Azure infrastructure change reviews by using Bicep and GitHub
 summary: |
   Add checks to pull requests that run automatically during your code reviews. Run the Bicep linter on your code, and deploy the resources to a temporary environment to enable further automated and manual testing.

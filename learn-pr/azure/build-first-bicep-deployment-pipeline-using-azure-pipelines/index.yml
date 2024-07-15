@@ -4,6 +4,7 @@ metadata:
   moduleType: standard
   title: Build your first Bicep deployment pipeline by using Azure Pipelines
   description: Build a basic deployment pipeline for Bicep infrastructure as code templates by using Azure DevOps and Azure Pipelines.
+  manager: jasongroce
   ms.date: 01/30/2023
   author: mumian
   ms.author: jgao

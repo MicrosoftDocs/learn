@@ -4,6 +4,7 @@ metadata:
   moduleType: standard
   title: Create a voice calling web app with Azure Communication Services
   description: "In this module, you'll create a basic web app that can be used for voice calling with Azure Communication Services."
+  manager: mkluck
   ms.date: 04/20/2022
   author: rmcmurray
   ms.author: robmcm
