@@ -3,6 +3,7 @@ uid: introduction-azure-firewall
 metadata:
   title: "Introduction to Azure Firewall"
   description: Describe how Azure Firewall protects Azure Virtual Network resources, including the Azure Firewall features, rules, deployment options, and administration with Azure Firewall Manager.
+  manager: kumud
   ms.date: 11/06/2023
   author: vhorne
   ms.author: victorh

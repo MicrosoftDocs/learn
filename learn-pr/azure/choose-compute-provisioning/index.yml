@@ -3,6 +3,8 @@ uid: learn.choose-compute-provisioning
 metadata:
   title: Choose a compute provisioning solution for your application
   description: Discover the services and tools available to automate the deployment and configuration of your Azure infrastructure.
+  ms.service: virtual-machines
+  manager: mkluck
   ms.date: 03/29/2023
   author: rmcmurray
   ms.author: robmcm

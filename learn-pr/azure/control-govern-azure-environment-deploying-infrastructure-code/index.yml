@@ -4,6 +4,8 @@ metadata:
   moduleType: standard
   title: Control and govern your Azure environment by deploying your infrastructure as code
   description: Learn how to enforce controls over your Azure changes and deployments, to ensure that your infrastructure is deployed through an approved process.
+  ms.service: azure-resource-manager
+  manager: jasongroce
   ms.date: 07/18/2023
   author: mumian
   ms.author: jgao

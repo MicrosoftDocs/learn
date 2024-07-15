@@ -3,6 +3,7 @@ uid: learn.azure.migrate-aspnet-app-azure-kubernetes-service
 metadata:
   title: Containerize and migrate ASP.NET applications to Azure Kubernetes Service
   description: Microsoft Learn module to learn Azure Migrate App Containerization with a hands-on lab
+  manager: mkluck
   ms.date: 01/11/2023
   author: rmcmurray
   ms.author: robmcm
