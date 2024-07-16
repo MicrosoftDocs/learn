@@ -58,17 +58,17 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
    :::image type="content" source="../media/extension-location-option.png" alt-text="Screenshot showing how to select a subscription.":::
 
-1. Select the **Custom** option, and press <kbd>Enter</kbd>
-
-   :::image type="content" source="../media/extension-custom-option.png" alt-text="Screenshot showing the custom option selected.":::
-
 ::: zone pivot="angular"
 
-7. Select **angular-app** as the location for the application code, and press <kbd>Enter</kbd>.
+6. Select the **Angular** option, and press <kbd>Enter</kbd>
+
+   :::image type="content" source="../media/extension-angular-option.png" alt-text="Screenshot showing the angular option selected.":::
+
+1. Enter **/angular-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Screenshot showing the code location entered as Angular app.":::
 
-8. Enter **dist/angular-app** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
+1. Enter **dist/angular-app** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-angular.png" alt-text="Screenshot showing how to enter the build output location for Angular.":::
 
@@ -76,11 +76,15 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="react"
 
-7. Select **react-app** as the location for the application code, and press <kbd>Enter</kbd>.
+6. Select the **React** option, and press <kbd>Enter</kbd>
+
+   :::image type="content" source="../media/extension-react-option.png" alt-text="Screenshot showing the react option selected.":::
+
+1. Enter **/react-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-react.png" alt-text="Screenshot showing the code location entered as react app.":::
 
-8. Enter **build** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
+1. Enter **build** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-react.png" alt-text="Screenshot showing how to enter the build output location for React.":::
 
@@ -88,11 +92,15 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="svelte"
 
-7. Select **svelte-app** as the location for the application code, and press <kbd>Enter</kbd>.
+6. Select the **Svelte** option, and press <kbd>Enter</kbd>
+
+   :::image type="content" source="../media/extension-svelte-option.png" alt-text="Screenshot showing the svelte option selected.":::
+
+1. Enter **/svelte-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Screenshot showing the code location entered as Svelte app.":::
 
-8. Enter **public** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
+1. Enter **public** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Screenshot showing how to enter the build output location for Svelte.":::
 
@@ -100,11 +108,15 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="vue"
 
-7. Select **vue-app** as the location for the application code, and press <kbd>Enter</kbd>.
+6. Select the **Vue** option, and press <kbd>Enter</kbd>
+
+   :::image type="content" source="../media/extension-vue-option.png" alt-text="Screenshot showing the vue option selected.":::
+
+1. Enter **/vue-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Screenshot showing the code location entered as Vue app.":::
 
-8. Enter **dist** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
+1. Enter **dist** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-vue.png" alt-text="Screenshot showing how to enter the build output location for Vue":::
 
@@ -121,13 +133,13 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
    :::image type="content" source="../media/extension-waiting-for-deployment.png" alt-text="Screenshot of the VS Code UI showing waiting for deployment.":::
 
-10. You can view the progress of the deployment using GitHub Actions by expanding the **Actions** menu.
+1. You can view the progress of the deployment using GitHub Actions by expanding the **Actions** menu.
 
     :::image type="content" source="../media/extension-actions.png" alt-text="Screenshot showing how to check progress via GitHub Actions.":::
 
     Once the deployment is complete, you can navigate directly to your website.
 
-11. To view the website in the browser, right-click on the project in the Static Web Apps extension, and select Browse Site.
+1. To view the website in the browser, right-click on the project in the Static Web Apps extension, and select Browse Site.
 
     :::image type="content" source="../media/extension-browse-site.png" alt-text="Screenshot showing how to browse to your static web app site.":::
 
