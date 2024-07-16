@@ -10,7 +10,7 @@ To enable your app to sign in with Microsoft Entra External Identities, you need
    ![alt text](../media/register-an-application/2.png)
 1. The application's **Overview** pane displays upon successful registration. Record the **Application (client) ID** to be used in your application source code.
    ![alt text](../media/register-an-application/3.png)
-1. To add more **Redirect URIs**, or **Front-channel logout URL**, under **Manage** select **Authentication**. The **Front-channel logout URL** is where we send a request to have the application clear the user's session data. This is required for single sign-out to work correctly.
+1. To add more **Redirect URIs** or a **Front-channel logout URL**, under **Manage**, select **Authentication**. The **Front-channel logout URL** is where we send a request to have the application clear the user's session data. This is required for single sign-out to work correctly.
    ![alt text](../media/register-an-application/4.png)
 1. For a web application (confidential client) to acquire an access token, it needs a credential to prove its identity to Microsoft Entra ID. You can add certificates, client secrets (a string), or federated identity credentials as credentials to your confidential client app registration. For the groceries website, we will use a certificate. To add a certificate, select **Certificates & secrets** > **Certificates** > **Upload certificate**.
    ![alt text](../media/register-an-application/5.png)
