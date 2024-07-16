@@ -2,12 +2,12 @@
 uid: learn.wwl.scale-manage-deployed-container-apps
 metadata:
   title: Scale and manage deployed container apps
-  description: "This module addresses the concept of revisions in Azure Container Apps and discusses options for application lifecycle management. It also covers scaling choices and ingress settings, including traffic splitting for Azure Container Apps."
+  description: This module addresses the concept of revisions in Azure Container Apps and discusses options for application lifecycle management. It also covers scaling choices and ingress settings, including traffic splitting for Azure Container Apps.
   ms.date: 11/22/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-container-apps
 title: Scale and manage deployed container apps
 summary: |
   This module reviews the concept of revisions in Azure Container Apps and examines options for application lifecycle management. It also examines options for scaling and traffic splitting using Azure Container Apps.

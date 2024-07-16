@@ -3,6 +3,7 @@ uid: introduction-azure-virtual-wan
 metadata:
   title: "Introduction to Azure Virtual WAN"
   description: Consider constructing a wide area network (WAN) using software-defined Azure Virtual WAN networking services.
+  manager: kumud
   ms.date: 12/06/2023
   author: cherylmc
   ms.author: cherylmc

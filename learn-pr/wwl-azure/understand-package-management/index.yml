@@ -2,26 +2,22 @@
 uid: learn.wwl.understand-package-management
 metadata:
   title: Understand package management
-  description: "Understand package management"
+  description: Understand package management
   ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: azure
   ai-usage: human-only
+  ms.service: azure-devops-artifacts
 title: Understand package management
 summary: This module describes package feeds, common public package sources, and how to create and publish packages.
 abstract: |
   By the end of this module, you're able to:
-
   -   Implement package management
-
   -   Manage package feed
-
   -   Consume and create packages
-
   -   Publish packages
 prerequisites: None
 iconUrl: /training/achievements/2-understand-package-management.svg

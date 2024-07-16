@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-deploy-administer-linux-virtual-machines-azure.exercise1
+title: Exercise - Create and configure Linux virtual machines
+metadata:
+  title: Exercise - Create and configure Linux virtual machines
+  description: "Exercise - Create and configure Linux virtual machines"
+  ms.date: 07/12/2024
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/2-exercise-configure-virtual-machine.md)]

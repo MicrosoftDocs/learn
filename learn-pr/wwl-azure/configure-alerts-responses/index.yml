@@ -2,12 +2,12 @@
 uid: learn.wwl.configure-alerts-responses
 metadata:
   title: Configure alerts and responses
-  description: "In this module, you learn how Azure Monitoring alerts proactively notifies you when Azure Monitor data indicates there might be a problem with your infrastructure or applications before the problem becomes one for your users."
+  description: In this module, you learn how Azure Monitoring alerts proactively notifies you when Azure Monitor data indicates there might be a problem with your infrastructure or applications before the problem becomes one for your users.
   ms.date: 10/25/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-monitor
 title: Configure alerts and responses
 summary: Understand how to configure and manage alerts and responses in order to proactively manage notifications about potential issues before those issues become problems for your users.
 abstract: |
@@ -16,7 +16,7 @@ abstract: |
   - Configure and manage alert rules
   - Configure alert processing rules to modify triggered alerts
   - Describe how Change Analysis provides insight into changes made to Azure resources
-prerequisites: ""
+prerequisites: ''
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

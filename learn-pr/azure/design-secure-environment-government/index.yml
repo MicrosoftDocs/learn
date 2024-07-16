@@ -3,6 +3,8 @@ uid: learn.azure.design-secure-environment-government
 metadata:
   title: Design cloud solutions for the public sector
   description: Introduction to the stakes and options for implementing Azure to safeguard public sector data.
+  ms.service: azure-stack
+  manager: mkluck
   ms.date: 05/04/2023
   author: rmcmurray
   ms.author: robmcm

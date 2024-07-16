@@ -2,12 +2,12 @@
 uid: learn.wwl.configure-monitoring-applications
 metadata:
   title: Configure monitoring for applications
-  description: "In this module you learn how to use Application Insights to monitor application performance and how to use Azure ASQL Insights to improve performance of Azure SQL database applications."
+  description: In this module you learn how to use Application Insights to monitor application performance and how to use Azure ASQL Insights to improve performance of Azure SQL database applications.
   ms.date: 10/25/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-monitor
 title: Configure monitoring for applications
 summary: Understand how to monitor the performance of your applications and how to collect and analyze the appropriate telemetry to improve application performance.
 abstract: |
@@ -15,7 +15,7 @@ abstract: |
   - Distinguish between the different Application Insights sampling rates
   - Describe Azure diagnostic settings and resource logs
   - Leverage Azure SQL Insights to improve performance of Azure SQL database applications
-prerequisites: ""
+prerequisites: ''
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

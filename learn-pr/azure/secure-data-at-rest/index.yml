@@ -3,6 +3,8 @@ uid: learn.secure-data-at-rest
 metadata:
   title: Introduction to securing data at rest on Azure
   description: Identify the data in your organization and store it on Azure. Store secrets securely, and use client-side encryption and Storage Service Encryption to help protect your data.
+  ms.service: azure-key-vault
+  manager: mkluck
   ms.date: 05/02/2023
   author: rmcmurray
   ms.author: robmcm

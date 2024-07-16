@@ -4,6 +4,7 @@ metadata:
   moduleType: standard
   title: Manage multiple environments by using Bicep and Azure Pipelines
   description: Build a deployment pipeline for Bicep IaC templates. Deploy to multiple environments by using pipeline template YAML files. Learn how to provide environment-specific parameters from your pipeline.
+  manager: jasongroce
   ms.date: 02/27/2023
   author: mumian
   ms.author: jgao

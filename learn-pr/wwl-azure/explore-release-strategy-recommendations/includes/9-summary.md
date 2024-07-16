@@ -11,8 +11,8 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [How Microsoft plans efficient workloads with DevOps - Azure DevOps \| Microsoft Docs](/devops/plan/how-microsoft-plans-devops).
- -  [Release engineering app development - Azure Architecture Center \| Microsoft Docs](/azure/architecture/framework/devops/release-engineering-app-dev).
- -  [How Microsoft develops modern software with DevOps - Azure DevOps \| Microsoft Docs](/devops/develop/how-microsoft-develops-devops).
- -  [Control deployments by using approvals - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/release/approvals/approvals).
- -  [Control deployments by using gates - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/release/approvals/gates).
+ -  [How Microsoft plans efficient workloads with DevOps - Azure DevOps \| Microsoft Learn](/devops/plan/how-microsoft-plans-devops).
+ -  [Release engineering app development - Azure Architecture Center \| Microsoft Learn](/azure/architecture/framework/devops/release-engineering-app-dev).
+ -  [How Microsoft develops modern software with DevOps - Azure DevOps \| Microsoft Learn](/devops/develop/how-microsoft-develops-devops).
+ -  [Control deployments by using approvals - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/release/approvals/approvals).
+ -  [Control deployments by using gates - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/release/approvals/gates).
