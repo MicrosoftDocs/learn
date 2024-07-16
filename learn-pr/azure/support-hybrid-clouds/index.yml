@@ -4,6 +4,7 @@ title: Support data classification with private and hybrid clouds
 metadata:
   title: Support data classification with private and hybrid clouds
   description: Discussion of the private and hybrid cloud solutions for government customers to enforce data sovereignty, meet compliance requirements, and protect sensitive data.
+  ms.service: azure-stack
   ms.date: 02/08/2023
   author: EliotSeattle
   ms.author: eliotgra

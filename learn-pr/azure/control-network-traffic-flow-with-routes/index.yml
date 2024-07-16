@@ -3,6 +3,7 @@ uid: learn.control-network-traffic-flow-with-routes
 metadata:
   title: Manage and control traffic flow in your Azure deployment with routes
   description: Learn how to control Azure virtual network traffic by implementing custom routes.
+  manager: kumud
   ms.date: 10/20/2023
   author: mbender-ms
   ms.author: mbender
