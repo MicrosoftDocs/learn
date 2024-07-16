@@ -3,11 +3,10 @@ uid: learn.wwl.deploy-administer-linux-virtual-machines-azure
 metadata:
   title: Deploy and administer Linux virtual machines on Azure
   description: Deploy and administer Linux virtual machines on Azure
-  ms.date: 07/15/2024
+  ms.date: 07/16/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: learning-path
-  ms.service: azure
 title: Deploy and administer Linux virtual machines on Azure
 prerequisites: |
   -   Experience using the Azure portal and CLI to create resources.&nbsp;
@@ -15,7 +14,7 @@ prerequisites: |
   -   Experience creating and configuring Azure virtual machines.
   -   Working knowledge of administering operating systems based on the Linux kernel.
 summary: |
-  In this learning path, you prepare for the**&nbsp;**APL-1007 Deploy and administer Linux virtual machines on Azure**&nbsp;**Applied Skill.&nbsp;
+  In this learning path, you prepare for the Applied Skill,&nbsp;Deploy and administer Linux virtual machines on Microsoft Azure.&nbsp;
 iconUrl: /training/achievements/generic-trophy.svg
 hidden: true
 levels:
