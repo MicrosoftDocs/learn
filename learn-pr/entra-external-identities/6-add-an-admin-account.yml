@@ -3,7 +3,7 @@ uid: learn.microsoft-entra-external-identities.eeid-poc.add-an-admin-account
 title: Add an admin account
 metadata:
   title: Add an admin account
-  description: This content is a part of Guided project – Build a sample app to evaluate Entra External Identities for seamless and secure sign-up and sign-in for consumers and business customers.
+  description: This content is a part of Guided project – Build a sample app to evaluate Microsoft Entra External ID for seamless and secure sign-up and sign-in for consumers and business customers.
   ms.date: 6/25/2024
   author: linkhp
   ms.author: lipar

@@ -7,7 +7,7 @@ Suppose you work for an online grocery retailer, and your team is gearing up to 
 In this module, you'll:
 
 1. Build a branded, seamless and secure sign-up and sign-in experiences for your web application
-1. Assess Entra External Identities identity provider capabilities against consumer and business customer needs
+1. Assess Microsoft Entra External ID identity provider capabilities against consumer and business customer needs
 
 ## Prerequisites
 
