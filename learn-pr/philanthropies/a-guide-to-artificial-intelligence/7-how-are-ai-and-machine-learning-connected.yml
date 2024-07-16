@@ -8,7 +8,6 @@ metadata:
   author: yoosunee
   ms.author: andreapark
   ms.topic: unit
-  ms.service: artificial-intelligence
 durationInMinutes: 2
 content: |
   [!include[](includes/7-how-are-ai-and-machine-learning-connected.md)]

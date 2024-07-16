@@ -12,7 +12,6 @@ metadata:
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: unit
-  ms.service: iot-dps
 durationInMinutes: 12
 content: |
   [!include[](includes/2-prepare.md)]

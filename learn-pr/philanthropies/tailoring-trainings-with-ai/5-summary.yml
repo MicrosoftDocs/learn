@@ -8,7 +8,6 @@ metadata:
   author: yoosunee
   ms.author: andreapark
   ms.topic: unit
-  ms.service: artificial-intelligence
 durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]
