@@ -1,6 +1,6 @@
 ## Exercise - Create an external tenant
 
-You'll need to create a tenant with external configuration in the [Microsoft Entra admin center](https://entra.microsoft.com/) to get started. Once the tenant with external configuration is created, you can access it in both the Microsoft Entra admin center and the Azure portal.
+You'll need to create a tenant with external configuration in the [Microsoft Entra admin center](https://entra.microsoft.com/) to get started. Once this external tenant is created, you can access it in both the Microsoft Entra admin center and the Azure portal.
 
 ::: zone pivot="microsoft-entra-admin-center"
 
