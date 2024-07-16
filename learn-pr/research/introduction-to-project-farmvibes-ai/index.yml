@@ -1,0 +1,154 @@
+### YamlMime:Module
+uid: learn.research.introduction-to-project-farmvibes-ai
+metadata:
+  title: Introduction to project FarmVibes.AI            # Do not edit: title must be "Introduction to (product)"
+  description:  # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 7/16/2024               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  author: RiyazPishori        # GitHub ID of the Microsoft employee either authoring or project-managing this content
+  ms.author: riyazp             # Alias     of the Microsoft employee either authoring or project-managing this content
+  ms.topic: module-intro-to-product # Please don't edit, used for our analytics
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
+### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
+###
+### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
+###
+### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
+### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
+### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
+  ms.service: azure-kubernetes-service
+###########################################################################
+###
+### Do not edit: title must be "Introduction to (product)"
+###
+title: Introduction to project FarmVibes.AI
+###########################################################################
+###
+### Summary
+###
+### Length:
+###   - Write 2 sentences.
+###   - Total length should be 20-25 words; up to 35 is acceptable.
+###   - To keep it brief, avoid teaching, omit motivation, and remove "learn", "in this module", and title words.
+###
+### Sentence 1:
+###   Goal: Describe how the module will achieve the 'evaluate' task.
+###   Pattern: "Characterize the types of (problem) that (product) can (solve)".
+###   Example 1: "Characterize the types of (business processes) that (Logic Apps) can (automate)."
+###   Example 2: "Determine the types of (software projects) for which (GitHub) is a (good development platform)."
+###
+### Sentence 2:
+###   Goal: List key features of the product covered here. Omit less-important parts or group low-level parts into one higher-level element.
+###   Pattern: "Describe the (list of covered features) that (perform the key product use-case)."
+###   Example 1: "Describe the function of (connectors, triggers, and actions) and show how you (combine them to create an app)."
+###   Example 2: "Survey GitHub (notifications, branches, commits, and pull requests) that help you (collaborate, build, and deploy software)."
+###
+### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
+###
+summary: Explain the fundamental components of Project FarmVibes.AI (for brevity, we will refer to it as FarmVibes.AI) tooling such as soil analysis capabilities, crop health monitoring systems, and advanced data analytics. Characterize the agricultural challenges that FarmVibes.AI is designed to address. Describe how FarmVibes.AI integrates these components to enhance agricultural practices, improve decision-making in farming.
+###########################################################################
+###
+### Learning Objectives
+###
+### Write 2 Learning Objectives, one that fits each pattern shown below.
+###
+### Learning Objective 1:
+###   Goal: Express that 'evaluate' is the terminal learning objective of an "Introduction to (product)" module.
+###   Pattern: "Evaluate whether (product) is right for (general-type-of-problem-solved-by-product)."
+###   Example: "Evaluate whether (Logic Apps) is appropriate to (automate your business processes)."
+###
+### Learning Objective 2:
+###   Goal: Express that the learner will be able to describe how the product works to perform a task.
+###   Pattern: "Describe how (feature(s)) of (product) (solve problem)."
+###   Example: "Describe how (the components) of a (Logic App) work together to (launch your app and implement your business logic)."
+###
+### Notes:
+###   - The YAML element name here is 'abstract' but it must contain your Learning Objectives.
+###   - Do not edit the lead-in sentence ("By the end of this module, you'll be able to:").
+###   - Start each objective with an upper-case letter.
+###   - End each objective with a period.
+###
+### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main
+###
+abstract: |
+  By the end of this module, you'll be able to:
+    -	Evaluate whether FarmVibes.AI is appropriate for addressing agricultural challenges and improving decision-making in farming practices
+    -	Describe the features and functionalities of FarmVibes.AI 
+    -	Explain how FarmVibes.ai can assist in sustainable farming and environmental conservation 
+
+###########################################################################
+###
+### Prerequisites
+###   - List the skills learners need to have before starting this module.
+###
+### Guidance summary:
+###   - Do not require any knowledge of the product being covered.
+###   - Even though this is an "Introduction to..." module, you'll likely need at least 2 prerequisites.
+###   - Avoid ambiguity, e.g. say "Ability to write HTML at a novice level" rather than "Familiarity with HTML".
+###   - Be concrete: e.g. say "Familiarity with programming concepts such as loops, conditionals and variables" rather than "Familiarity with programming concepts".
+###   - Do not mention or link to other content that teaches the required prerequisite skills.
+###   - If needed, include software setup requirements with setup links.
+###
+### Detailed guidance:
+###   https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main
+###
+### Example:
+###   Module title: "Introduction to Azure Logic Apps"
+###   Prerequisite 1: "Familiarity with programming concepts such as conditional logic and loops"
+###   Prerequisite 2: "Basic knowledge of REST services and APIs"
+###
+prerequisites: |
+  -	Basic understanding of agriculture 
+  -	Familiarity with data-driven decision-making 
+
+###########################################################################
+###
+### Do not edit: will be replaced by the module icon when available
+###
+iconUrl: /learn/achievements/generic-badge.svg
+###########################################################################
+###
+### Do not edit: level must be 'beginner'
+###
+levels:
+  - beginner
+###########################################################################
+###
+### Specify the target roles.
+### Use value(s) from the role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
+###
+roles:
+  # -	Agricultural technologists 
+  # -	Agriculture researchers/Data scientist
+  # -	Farm managers 
+
+###########################################################################
+###
+### Specify the covered product.
+### Use a value from the product taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product)
+###
+products:
+  - AI (Artificial Intelligence)
+  - ML (Machine Learning)
+  - azure kubernetes service
+###########################################################################
+###
+### Specify the subject areas.
+### Use value(s) from the subject taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject)
+###
+subjects:
+  - TODO
+###########################################################################
+###
+### Do not edit: the unit names and order are exactly determined by the "Introduction to (product)" module pattern
+###
+units:
+- learn.introduction-to-project-farmvibes-ai.introduction
+- learn.introduction-to-project-farmvibes-ai.what-is-farmvibes-ai
+- learn.introduction-to-project-farmvibes-ai.how-farmvibes-ai-works
+- learn.introduction-to-project-farmvibes-ai.when-to-use-farmvibes-ai
+- learn.introduction-to-project-farmvibes-ai.knowledge-check
+- learn.introduction-to-project-farmvibes-ai.summary
+badge:
+  uid: learn.introduction-to-project-farmvibes-ai.badge
