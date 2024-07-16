@@ -14,7 +14,7 @@ To enable your app to sign in with Microsoft Entra External Identities, you need
    ![alt text](../media/register-an-application/4.png)
 1. For a web application (confidential client) to acquire an access token, it needs a credential to prove its identity to Microsoft Entra ID. You can add certificates, client secrets (a string), or federated identity credentials as credentials to your confidential client app registration. For the groceries website, we will use a certificate. To add a certificate, select **Certificates & secrets** > **Certificates** > **Upload certificate**.
    ![alt text](../media/register-an-application/5.png)
-1. Select the file you want to upload. It must be one of the following file types: .cer, .pem, .crt. then select **Add**.
+1. Select the file you want to upload. It must be one of the following file types: .cer, .pem, .crt. Then select **Add**.
    ![alt text](../media/register-an-application/6.png)
 1. In the following steps, you will add the required permission for the web application. Under **Manage**, select **API permissions**, then select **Add a permission**.
    ![alt text](../media/register-an-application/7.png)
