@@ -2,7 +2,7 @@
 uid: learn.research.introduction-to-project-farmvibes-ai
 metadata:
   title: Introduction to project FarmVibes.AI            # Do not edit: title must be "Introduction to (product)"
-  description:  # Copy your 'evaluate' Learning Objective here (see below)
+  description: This module provides an introduction to project FarmVibes.AI, a comprehensive tool for enhancing agricultural practices and decision-making in farming. Explore the fundamental components of FarmVibes.AI, including soil analysis capabilities, crop health monitoring systems, and advanced data analytics. Learn how FarmVibes.AI addresses agricultural challenges and integrates these components to assist in sustainable farming and environmental conservation.
   ms.date: 7/16/2024               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: RiyazPishori        # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: riyazp             # Alias     of the Microsoft employee either authoring or project-managing this content
@@ -119,26 +119,21 @@ levels:
 ### Use value(s) from the role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
 ###
 roles:
-  # -	Agricultural technologists 
-  # -	Agriculture researchers/Data scientist
-  # -	Farm managers 
-
+  -	data-engineer
 ###########################################################################
 ###
 ### Specify the covered product.
 ### Use a value from the product taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product)
 ###
 products:
-  - AI (Artificial Intelligence)
-  - ML (Machine Learning)
-  - azure kubernetes service
-###########################################################################
+  - azure-kubernetes-service
+##############################################
 ###
 ### Specify the subject areas.
 ### Use value(s) from the subject taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject)
 ###
 subjects:
-  - TODO
+  - machine-learning
 ###########################################################################
 ###
 ### Do not edit: the unit names and order are exactly determined by the "Introduction to (product)" module pattern
