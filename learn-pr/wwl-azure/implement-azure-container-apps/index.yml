@@ -3,7 +3,7 @@ uid: learn.wwl.implement-azure-container-apps
 metadata:
   title: Implement Azure Container Apps
   description: "Run serverless containerized apps in Azure Container Apps service."
-  ms.date: 07/15/2024
+  ms.date: 07/16/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
@@ -34,6 +34,8 @@ levels:
 - intermediate
 roles:
 - developer
+products:
+- azure-container-apps
 units:
 - learn.wwl.implement-azure-container-apps.introduction
 - learn.wwl.implement-azure-container-apps.explore-azure-container-apps
