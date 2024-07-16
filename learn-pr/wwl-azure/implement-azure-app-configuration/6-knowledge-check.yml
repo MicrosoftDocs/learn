@@ -38,12 +38,12 @@ quiz:
       explanation: "Correct. A feature manager provides extra functionality, such as caching feature flags and updating their states."
   - content: "What is the purpose of using customer-managed keys in Azure App Configuration?"
     choices:
-    - content: "To enable the App Configuration instance to authenticate with Microsoft Entra ID"
+    - content: "To enable authentication with Microsoft Entra ID"
       isCorrect: false
       explanation: "Incorrect. While a managed identity is used for authentication, it's not the primary purpose of customer-managed keys."
-    - content: "To store the unwrapped encryption key permanently within App Configuration"
+    - content: "To permanently store the unwrapped encryption key"
       isCorrect: false
       explanation: "Incorrect. The unwrapped encryption key is cached within App Configuration for one hour, not stored permanently."
-    - content: "To encrypt sensitive information at rest using a 256-bit AES encryption key"
+    - content: "To encrypt sensitive information at rest"
       isCorrect: true
       explanation: "Correct. Customer-managed keys are used to encrypt sensitive information in key-value pairs at rest."
