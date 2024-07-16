@@ -11,9 +11,9 @@ Here, we introduce the Update Manager solution for Azure.
 
  There are several advantages to the Azure Update Manager solution:
 
-  1. No agents or extra configuration are needed within the virtual machine.
-  1. You can run updates without logging into the virtual machine (VM). You also don't have to create passwords to install the update.
-  1. The Update Manager solution lists missing updates and provides information about failed deployments in an easy-to-read format.
+  - No agents or extra configuration are needed within the virtual machine.
+  - You can run updates without logging into the virtual machine (VM). You also don't have to create passwords to install the update.
+  - The Update Manager solution lists missing updates and provides information about failed deployments in an easy-to-read format.
 
 You can use Update Manager to natively onboard machines in multiple subscriptions in the same tenant. To manage machines in a different tenant, you must onboard them as non-Azure machines.
 
