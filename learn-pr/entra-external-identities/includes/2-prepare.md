@@ -4,9 +4,9 @@ Our project aims to launch a new website for our online grocery retailer. The pr
 
 ### High-level approach
 
-1. **Tenant Creation:** We’ll set up a tenant to store user accounts securely.
-1. **App Registration:** Register our app to integrate with Entra External Identities.
-1. **Customized User Experiences:**
-    - **During Sign-In:** Customize the sign-in process, including branding elements.
-    - **During Sign-Up:** Configure account creation, attribute collection, account types, and extension for information verification.
-1. **Account Security:** Prompt users to enroll in multi-factor authentication for enhanced security.
+1. **Tenant creation:** Set up a tenant to store user accounts securely.
+1. **App registration:** Register our app to integrate with Entra External Identities.
+1. **Customized user experiences:**
+    - **During sign-in:** Customize the sign-in process, including branding elements.
+    - **During sign-up:** Configure account creation, attribute collection, account types, and extension for information verification.
+1. **Account security:** Prompt users to enroll in multi-factor authentication for enhanced security.
