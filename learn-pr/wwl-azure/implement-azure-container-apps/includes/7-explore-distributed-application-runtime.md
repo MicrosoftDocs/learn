@@ -8,7 +8,7 @@ Dapr is an open source, [Cloud Native Computing Foundation (CNCF)](https://www.c
 
 ## Dapr APIs
 
-:::image type="content" source="../media/azure-container-apps-dapr-building-blocks.png" alt-text="Decorative":::
+:::image type="content" source="../media/azure-container-apps-dapr-building-blocks.png" alt-text="Screenshot of Decorative":::
 
 | Dapr API | Description |
 |--|--|
