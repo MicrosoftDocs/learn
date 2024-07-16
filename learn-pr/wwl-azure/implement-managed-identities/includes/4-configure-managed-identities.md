@@ -83,3 +83,4 @@ Azure supports multiple programming platforms through a series of [Azure SDKs](h
 | Python | [Create a virtual machine with system-assigned managed identity enabled](https://azure.microsoft.com/resources/samples/compute-python-msi-vm/) |
 | Ruby | [Create Azure virtual machine with an system-assigned identity enabled](https://github.com/Azure-Samples/compute-ruby-msi-vm/) |
 
+
