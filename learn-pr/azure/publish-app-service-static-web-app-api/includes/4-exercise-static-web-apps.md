@@ -60,7 +60,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="angular"
 
-1. Select the **Angular** option, and press <kbd>Enter</kbd>
+6. Select the **Angular** option, and press <kbd>Enter</kbd>
 
    :::image type="content" source="../media/extension-angular-option.png" alt-text="Screenshot showing the angular option selected.":::
 
@@ -76,7 +76,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="react"
 
-1. Select the **React** option, and press <kbd>Enter</kbd>
+6. Select the **React** option, and press <kbd>Enter</kbd>
 
    :::image type="content" source="../media/extension-react-option.png" alt-text="Screenshot showing the react option selected.":::
 
@@ -92,7 +92,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="svelte"
 
-1. Select the **Svelte** option, and press <kbd>Enter</kbd>
+6. Select the **Svelte** option, and press <kbd>Enter</kbd>
 
    :::image type="content" source="../media/extension-svelte-option.png" alt-text="Screenshot showing the svelte option selected.":::
 
@@ -108,7 +108,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="vue"
 
-1. Select the **Vue** option, and press <kbd>Enter</kbd>
+6. Select the **Vue** option, and press <kbd>Enter</kbd>
 
    :::image type="content" source="../media/extension-vue-option.png" alt-text="Screenshot showing the vue option selected.":::
 
@@ -125,7 +125,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
    > [!NOTE]
    > Your repository may be a bit different than the ones you may have used in the past. It contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
 
-4. Once the app is created, a confirmation notification is shown in Visual Studio Code.
+9. Once the app is created, a confirmation notification is shown in Visual Studio Code.
 
    :::image type="content" source="../media/extension-confirmation.png" alt-text="Screenshot of the confirmation code asking the user to open actions in GitHub or View/Edit Configure.":::
 
@@ -133,13 +133,13 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
    :::image type="content" source="../media/extension-waiting-for-deployment.png" alt-text="Screenshot of the VS Code UI showing waiting for deployment.":::
 
-5. You can view the progress of the deployment using GitHub Actions by expanding the **Actions** menu.
+1. You can view the progress of the deployment using GitHub Actions by expanding the **Actions** menu.
 
     :::image type="content" source="../media/extension-actions.png" alt-text="Screenshot showing how to check progress via GitHub Actions.":::
 
     Once the deployment is complete, you can navigate directly to your website.
 
-6. To view the website in the browser, right-click on the project in the Static Web Apps extension, and select Browse Site.
+1. To view the website in the browser, right-click on the project in the Static Web Apps extension, and select Browse Site.
 
     :::image type="content" source="../media/extension-browse-site.png" alt-text="Screenshot showing how to browse to your static web app site.":::
 
