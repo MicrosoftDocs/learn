@@ -12,6 +12,6 @@ In this module, you'll:
 ## Prerequisites
 
 * An Azure subscription and Azure account 
-* If you don’t have any Azure subscriptions, any personal account, Microsoft account (MSA) or GitHub account
+* If you don’t have an Azure subscription, use any personal account, Microsoft account (MSA) or GitHub account
 * (Optional) The latest version of Visual Studio Code
 * (Optional) The latest version of PowerShell
