@@ -3,6 +3,8 @@ uid: learn.languages.powershell-write-first
 metadata:
   title: Write your first PowerShell code
   description: Learn the basics of programming by writing and running code in PowerShell.
+  ms.service: powershell
+  manager: jasongroce
   ms.date: 10/04/2023
   author: michaeltlombardi
   ms.author: mlombardi

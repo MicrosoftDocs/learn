@@ -3,6 +3,7 @@ uid: learn.azure.get-started-with-finops
 metadata:
   title: Get started with FinOps
   description: Learn about the FinOps Framework and the impact of transitioning from a CapEx to an OpEx model.
+  manager: mkluck
   ms.date: 04/19/2024
   author: rmcmurray
   ms.author: robmcm

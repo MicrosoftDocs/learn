@@ -7,6 +7,7 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: module
+  ms.service: artificial-intelligence
 title: Explore the art of selecting use cases for winning Autonomous AI
 summary: In this module, you'll learn how to identify use cases that are a good fit to be solved using Machine Teaching for Autonomous AI.
 abstract: | 

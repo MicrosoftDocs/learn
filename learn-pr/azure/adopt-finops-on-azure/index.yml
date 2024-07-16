@@ -3,6 +3,7 @@ uid: learn.azure.adopt-finops-on-azure
 metadata:
   title: Adopt FinOps on Azure
   description: Learn how to implement FinOps on Azure.
+  manager: mkluck
   ms.date: 05/02/2024
   author: rmcmurray
   ms.author: robmcm

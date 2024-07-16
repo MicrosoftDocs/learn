@@ -8,7 +8,6 @@ metadata:
   author: limwainstein
   ms.author: lwainstein
   ms.topic: unit
-  ms.service: defender-for-iot
 durationInMinutes: 7
 content: |
   [!include[](includes/4-identify-the-devices-subnets.md)]
