@@ -6,7 +6,7 @@ To enable your app to sign in with Microsoft Entra External Identities, you need
 
 1. To register your own application, sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) and browse to **Applications** > **App registrations**. Then, select **+ New registration**.
    ![alt text](../media/register-an-application/1.png)
-1. In the **Register an application** page that appears, enter a meaningful application **Name** that is displayed to users of the app. For example, **Woodgrove Groceries**. Under **Supported account types**, select **Accounts in this organizational directory only**. In the **Platform** select the **Web** option and enter your app **Redirect URI**. The redirect URI is the endpoint to which users are redirected by Microsoft Entra external ID after their authentication with Microsoft Entra ID external is completed.
+1. In the **Register an application** page that appears, enter a meaningful application **Name** that is displayed to users of the app, for example, **Woodgrove Groceries**. Under **Supported account types**, select **Accounts in this organizational directory only**. For **Platform**, select the **Web** option and enter your app **Redirect URI**. The redirect URI is the endpoint to which users are redirected by Microsoft Entra External ID after their authentication with Microsoft Entra External ID is completed.
    ![alt text](../media/register-an-application/2.png)
 1. The application's **Overview** pane displays upon successful registration. Record the **Application (client) ID** to be used in your application source code.
    ![alt text](../media/register-an-application/3.png)
