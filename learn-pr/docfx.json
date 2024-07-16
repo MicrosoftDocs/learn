@@ -712,6 +712,19 @@
                     "**/design/**",
                     "**/resources/**"
                 ]
+            },
+            {
+                "src": "research",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
             }
         ],
         "resource": [{
@@ -838,19 +851,6 @@
                     "_themes/**",
                     "_themes.pdf/**"
                 ]
-            },
-            {
-                "src": "research",
-                "files": [
-                    "**/*.yml",
-                    "**/*.md"
-                ],
-                "exclude": [
-                    "**/includes/**",
-                    "**/design/**",
-                    "**/resources/**"
-                ],
-                "dest": "modules"
             }
         ],
         "overwrite": [],
