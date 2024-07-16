@@ -1,6 +1,6 @@
 ## Exercise - Register an application
 
-To enable your app to sign in with Microsoft Entra External Identities, you need to register the application in Microsoft Entra External Identities directory.
+To enable your app to sign in with Microsoft Entra External Identities, you need to register the application in the directory for your external tenant.
 
 ::: zone pivot="microsoft-entra-admin-center"
 
