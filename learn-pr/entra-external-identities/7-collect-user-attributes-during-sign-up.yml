@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.entra-external-identities.eeid-poc.collect-user-attributes-during-sign-up
+uid: learn.microsoft-entra-external-identities.eeid-poc.collect-user-attributes-during-sign-up
 title: Collect user attributes during sign-up
 metadata:
   title: Collect user attributes during sign-up
@@ -8,7 +8,7 @@ metadata:
   author: linkhp
   ms.author: lipar
   ms.topic: interactive-tutorial
-  zone_pivot_groups: entra-external-identities-configuration-options
+  zone_pivot_groups: microsoft-entra-external-identities-configuration-options
   ms.service: entra-external-id
 durationInMinutes: 10
 content: |

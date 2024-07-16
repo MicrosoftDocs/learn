@@ -434,7 +434,7 @@ groups:
       title: Azure CLI (local)
     - id: vs-code
       title: Visual Studio Code
-- id: entra-external-identities-configuration-options
+- id: microsoft-entra-external-identities-configuration-options
   title: Configuration options
   prompt: Select a configuration option
   pivots:
