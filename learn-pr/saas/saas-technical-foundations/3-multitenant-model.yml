@@ -8,7 +8,6 @@ metadata:
   author: kostinams
   ms.author: irkostin
   ms.topic: unit
-  ms.service: architecture-center
 durationInMinutes: 10
 content: |
   [!include[](includes/3-multitenant-model.md)]

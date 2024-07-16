@@ -8,7 +8,6 @@ metadata:
   author: codemillmatt
   ms.author: masoucou  
   ms.topic: unit
-  ms.service: azure
   ms.custom:
     - team=cloud_advocates
     - devx-track-dotnet
