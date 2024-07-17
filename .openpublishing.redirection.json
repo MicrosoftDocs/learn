@@ -42364,6 +42364,41 @@
       "source_path": "learn-pr/azure/cloud-adoption-framework-govern/9-summary.yml",
       "redirect_url": "/training/modules/cloud-adoption-framework-govern/9-govern-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/2a-process.md",
+      "redirect_url": "/training/modules/intro-to-azure-search/3-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/2b-ai-skillsets.md",
+      "redirect_url": "/training/modules/intro-to-azure-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/2c-understand-index.md",
+      "redirect_url": "/training/modules/intro-to-azure-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/2d-use-indexer-to-build-index.md",
+      "redirect_url": "/training/modules/intro-to-azure-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/2e-understand-knowledge-store.md",
+      "redirect_url": "/training/modules/intro-to-azure-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/2f-start-with-portal.md",
+      "redirect_url": "/training/modules/intro-to-azure-search/5-start-with-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/6a-exercise.md",
+      "redirect_url": "/training/modules/intro-to-azure-search/7-exercise",
+      "redirect_document_id": false
     }
   ]
 }
