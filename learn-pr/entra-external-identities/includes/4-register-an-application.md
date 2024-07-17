@@ -48,14 +48,14 @@ To enable your app to sign in with Microsoft Entra External ID, you need to regi
         },
         "requiredResourceAccess": [
             {
-                "resourceAppId": "00000003-0000-0000-c000-000000000000",
+                "resourceAppId": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
                 "resourceAccess": [
                     {
-                        "id": "00000000-0000-0000-0000-000000000000",
+                        "id": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2",
                         "type": "Scope"
                     },
                     {
-                        "id": "00000000-0000-0000-0000-000000000000",
+                        "id": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3",
                         "type": "Scope"
                     }
                 ]
@@ -80,8 +80,8 @@ From the response, copy the value of the **appId**. For example:
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications/$entity",
-    "id": "12345678-0000-0000-0000-000000000000",
-    "appId": "22222222-0000-0000-0000-000000000000",
+    "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "displayName": "Woodgrove Groceries",
     "description": "Woodgrove Groceries live demo application",
     ...
@@ -106,7 +106,7 @@ From the response, copy the value of the **id**. For example:
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals/$entity",
-    "id": "44444444-0000-0000-0000-000000000000",
+    "id": "bbbbbbbb-1111-2222-3333-cccccccccccc",
     "displayName": "Woodgrove Groceries",
     "description": "Woodgrove Groceries live demo application",
     ...
@@ -119,14 +119,14 @@ Since the tenant is an external tenant, the consumer users themselves can't cons
 
 ##### 3.1 Get the Microsoft Graph's service principal ID
 
-Run the following GET request and cope the **id** from the response:
+Run the following GET request and copy the **id** from the response:
 
 ```json
-GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000-c000-000000000000')
+GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='22223333-cccc-4444-dddd-5555eeee6666')
 {
-    "id": "66666666-0000-0000-0000-000000000000"
+    "id": "cccccccc-2222-3333-4444-dddddddddddd",
     "appDisplayName": "Microsoft Graph",
-    "appId": "00000003-0000-0000-c000-000000000000",
+    "appId": "22223333-cccc-4444-dddd-5555eeee6666"
 }
 ```
 
@@ -163,10 +163,10 @@ From the response, copy the value of the **secretText**:
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential",
     "displayName": "My app client secret",
-    "endDateTime": "2026-05-23T15:16:42.,
-    "hint": "iqi",
-    "keyId": "98765432-0000-0000-0000-000000000000",
-    "secretText": "Copy this value",
+    "endDateTime": "2026-05-23T15:16:42",
+    "hint": "<Your hint will show up here>",
+    "keyId": "aaaaaaaa-0b0b-1c1c-2d2d-333333333333",
+    "secretText": "A1bC2dE3fH4iJ5kL6mN7oP8qR9sT0u",
     "startDateTime": "2024-05-23T15:16:42"
 }
 ```
