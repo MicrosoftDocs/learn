@@ -1,4 +1,4 @@
-Azure AI Search provides the infrastructure and tools to create search solutions that extract data from various structured, semi-structured, and non-structured documents. 
+**Azure AI Search** provides the infrastructure and tools to create search solutions that extract data from various structured, semi-structured, and non-structured documents. 
 
 ![Infographic of Azure Search.](../media/what-is-azure-search.png)
 

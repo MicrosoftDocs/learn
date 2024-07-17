@@ -3,7 +3,7 @@ uid: learn.azure-introduction-to-azure-search
 metadata:
   title: Fundamentals of Knowledge Mining and Azure AI Search
   description: "Explore Azure AI Search to discover how to create an index, import data, and query the index for better search results."
-  ms.date: 07/15/2024
+  ms.date: 07/17/2024
   author: wwlpublish
   ms.author: sheryang
   ms.topic: module

@@ -4,7 +4,7 @@ title: Query data in an Azure AI Search index
 metadata:
   title: Query data in an Azure AI Search index
   description: "Write simple search queries in the Search explorer, then append extra parameters to manipulate those results"
-  ms.date: 07/15/2024
+  ms.date: 07/17/2024
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit

@@ -1,4 +1,4 @@
-Consider when you've needed to manually read through many pages of a document for information. If that content were in a database, you would be able to query for that information more quickly. This module discuses how you can improve the speed of information retrieval and gain novel insights by creating an index of your unstructured, typed, image-based, or hand-written media. 
+Consider when people need to manually read through multiple pages of a document for information. How would they be able to search for information more quickly? This module discuses how you can improve the speed of information retrieval and gain novel insights by creating an index of your unstructured, typed, image-based, or hand-written media. 
 
 Knowledge mining solutions provide automated information extraction from large volumes of often unstructured data. One of these knowledge mining solutions is Azure AI Search, a cloud search service that has tools for building and managing indexes. The indexes can be used for internal only use, or to enable searchable content on public-facing internet assets. 
 
@@ -8,7 +8,7 @@ Importantly, Azure AI Search can utilize the built-in capabilities of Azure AI s
 
 In this module, you will:
 
-- Understand how Azure AI Search uses cognitive skills
+- Understand how Azure AI Search implements AI through skillsets
 - Learn how indexers automate data ingestion steps, including JSON serialization
 - Describe the purpose of a knowledge store
-- Build and query a search index
+- Understand how to build and query a search index
