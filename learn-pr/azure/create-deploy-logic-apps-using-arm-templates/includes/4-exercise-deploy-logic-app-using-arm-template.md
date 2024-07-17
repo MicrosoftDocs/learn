@@ -10,6 +10,8 @@ However, we're using the free Azure sandbox environment, so you don't need to cr
 
 ### Download and examine a basic Resource Manager template
 
+1. At the top of the Cloud Shell window, select the **More** icon (**...**), then select **Settings** > **Go to Clasic version**.
+
 1. From Cloud Shell, run the following `curl` command to download the template from GitHub:
 
     ```azurecli

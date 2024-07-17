@@ -12,6 +12,6 @@ After you practice with more exercises and explore the documentation, the pictur
 
 - [Deploy Azure infrastructure by using JSON ARM templates](/training/modules/create-azure-resource-manager-template-vs-code/)
 - [Azure Logic Apps Documentation](/azure/logic-apps/)
-- [Quickstart: Create and manage automated logic app workflows via Visual Studio Code](/azure/logic-apps/Quickstart-create-logic-apps-visual-studio-code)
+- [Quickstart: Create and manage automated logic app workflows via Visual Studio Code](/azure/logic-apps/quickstart-create-logic-apps-visual-studio-code)
 - [Schema reference for Workflow Definition Language in Azure Logic Apps](/azure/logic-apps/logic-apps-workflow-definition-language)
 - [Overview: Automate deployment for Azure Logic Apps by using Azure Resource Manager templates](/azure/logic-apps/logic-apps-azure-resource-manager-templates-overview)
