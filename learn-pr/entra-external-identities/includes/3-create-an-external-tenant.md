@@ -98,7 +98,7 @@ PUT https://management.azure.com/subscriptions/{subscriptionId}/resourcegroups/{
 The following example creates a resource group named **my-resource-group** in **eastus**.
 
 ```json
-PUT https://management.azure.com/subscriptions/12345678-0000-0000-0000-000000000000/resourcegroups/my-resource-group?api-version=2021-04-01
+PUT https://management.azure.com/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourcegroups/my-resource-group?api-version=2021-04-01
 {
   "location": "eastus"
 }
@@ -134,10 +134,10 @@ PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{
 ##### Example
 
 The following example creates a resource group named **my-resource-group** in **eastus**.
-The following example creates a tenant name **contoso** within in the resource group **my-resource-group** linked to the **12345678-0000-0000-0000-000000000000** subscription.
+The following example creates a tenant name **contoso** within in the resource group **my-resource-group** linked to the **aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e** subscription.
 
 ```json
-PUT https://management.azure.com/subscriptions/12345678-0000-0000-0000-000000000000/resourceGroups/my-resource-group/providers/Microsoft.AzureActiveDirectory/ciamDirectories/contoso?api-version=2023-05-17-preview
+PUT https://management.azure.com/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/my-resource-group/providers/Microsoft.AzureActiveDirectory/ciamDirectories/contoso?api-version=2023-05-17-preview
 {
   "location": "United States",
   "sku": {
