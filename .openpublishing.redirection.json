@@ -34951,6 +34951,116 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/secure-vms-with-azure-security-center/1-introduction.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-vms-with-azure-security-center/2-brute-force-attacks.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-vms-with-azure-security-center/3-exercise-jit-vm-access.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-vms-with-azure-security-center/4-malware-protection.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-vms-with-azure-security-center/5-exercise-configure-endpoint-security.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-vms-with-azure-security-center/6-summary.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-vms-with-azure-security-center/index.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/resolve-threats-with-azure-security-center/1-introduction.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/resolve-threats-with-azure-security-center/2-view-security-alerts.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/resolve-threats-with-azure-security-center/3-respond-to-alerts.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/resolve-threats-with-azure-security-center/4-define-irp.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/resolve-threats-with-azure-security-center/5-use-a-playbook.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/resolve-threats-with-azure-security-center/6-exercise-configure-playbook.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/resolve-threats-with-azure-security-center/7-summary.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/resolve-threats-with-azure-security-center/index.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-defender-cloud/1-introduction.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-defender-cloud/2-what-is-defender-for-cloud.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-defender-cloud/3-how-defender-for-cloud-works.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-defender-cloud/4-when-to-use-defender-for-cloud.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-defender-cloud/5-knowledge-check.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-defender-cloud/6-summary.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-defender-cloud/index.yml",
+      "redirect_url": "/training/paths/sc-200-mitigate-threats-using-azure-defender",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/4-microsoft-entra-verified-id.md",
       "redirect_url": "/training/modules/manage-authentication-microsoft-entra-id/5-microsoft-entra-verified-id",
       "redirect_document_id": false
