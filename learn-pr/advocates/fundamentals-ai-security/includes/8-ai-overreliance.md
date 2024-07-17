@@ -1,0 +1,9 @@
+AI overreliance describes some users propensity to accept the output of AI systems without subjecting that output to the same critical analysis that they would if the same advice came from a human. For example, imagine a company relying upon the response of an AI to make critical business decisions instead of analyzing the response to determine if the idea was rational and likely to be correct. AI overreliance can lead to errors and issues, especially in critical contexts like medical diagnosis or legal decisions. Researchers are exploring ways to mitigate overreliance, including providing simpler AI explanations and disclaimers as well as increasing the stakes for correct answers. 
+
+Research has found that when an AI provides an explanation of its reasoning, this does not [ significantly reduce overreliance compared to only providing predictions](https://cicl.stanford.edu/publication/vasconcelos2023explanations/). Overreliance is partially a human problem because people are often likely to accept an explanation that sounds plausible rather than reasoning through to determine if the explanation is logically consistent. 
+
+User experience designers (UX Designers) play a crucial role in mitigating AI overreliance. Here are some strategies they can employ:
+
+- **Explanations**: Create interfaces that provide clear explanations for AI recommendations. When users understand the reasoning behind suggestions, they are less likely to blindly rely on them.
+- **Customization Options**: Allow users to customize AI behavior. By giving them control over settings and preferences, you empower them to make informed decisions.
+- **Feedback Mechanisms**: Enable users to provide feedback on AI performance. This loop helps improve trust and ensures users remain vigilant.
