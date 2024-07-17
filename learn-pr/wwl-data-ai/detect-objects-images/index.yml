@@ -3,11 +3,11 @@ uid: learn.wwl.detect-objects-images
 metadata:
   title: Detect objects in images
   description: "Detect objects in images"
-  ms.date: 09/17/2021
+  ms.date: 07/10/2024
   author: wwlpublish
   ms.author: berryivor
   ms.topic: module-standard-task-based
-  ms.service: azure-ai-custom-vision
+  ms.service: azure-ai-vision
 title: Detect objects in images
 summary: Object detection is used to locate and identify objects in images. You can use Azure AI Custom Vision to train a model to detect specific classes of object in images.
 abstract: |

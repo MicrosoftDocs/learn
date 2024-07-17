@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/17/2021
+  ms.date: 07/10/2024
   author: wwlpublish
   ms.author: berryivor
   ms.topic: unit
@@ -13,7 +13,7 @@ sandbox: false
 labModal: false
 durationInMinutes: 5
 quiz:
-  title: "Check your knowledge"
+  title: "Check your knowledge"
   questions:
   - content: "What does an object detection model predict?"
     choices:

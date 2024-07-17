@@ -9,7 +9,6 @@ metadata:
   ms.author: juliamuiruri
   ms.custom: team=nextgen
   ms.topic: unit
-  ms.service: microsoft-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

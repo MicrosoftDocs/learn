@@ -8,7 +8,6 @@ metadata:
   author: yoosunee
   ms.author: andreapark
   ms.topic: unit
-  ms.service: artificial-intelligence
 durationInMinutes: 40
 content: |
   [!include[](includes/3-create-an-interactive-article-using-microsoft-sway.md)]

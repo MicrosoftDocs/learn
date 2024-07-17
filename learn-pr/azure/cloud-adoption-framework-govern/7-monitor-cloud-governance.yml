@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-govern.monitor-cloud-governance
+title: Monitor cloud governance
+metadata:
+  title: Monitor cloud governance
+  description: Learn how to monitor the compliance of your cloud governance, especially the compliance related to cost.
+  ms.date: 07/15/2024
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-monitor-cloud-governance.md)]
