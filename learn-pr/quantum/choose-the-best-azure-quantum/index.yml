@@ -8,6 +8,7 @@ metadata:
   ms.author: sonialopez
   ms.topic: module
   ms.service: azure-quantum
+  ms.subservice: core
 title: Choose the best Azure Quantum option for your needs
 summary: Azure Quantum offers different development options. Learn the differences between each option, and how to choose the best way to get started in your quantum journey.
 abstract: |
