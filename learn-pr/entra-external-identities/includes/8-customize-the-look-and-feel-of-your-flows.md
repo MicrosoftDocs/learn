@@ -33,9 +33,9 @@ On the **Company Branding** page, you can choose to edit the **Default sign-in e
     ![alt text](../media/customize-the-look-and-feel-of-your-flows/7.png)
 1. To customize some of the labels, on the **Text** tab select **Add Custom Text**.
     ![alt text](../media/customize-the-look-and-feel-of-your-flows/8.png)
-1. Select the text you want to customize, and enter the label.
+1. Select the text you want to customize, and in **Title**, enter a new label. Select **Add**.
     ![alt text](../media/customize-the-look-and-feel-of-your-flows/9.png)
-1. Review to review all your modifications. Then select **Save** if you'd like to save your changes or **Previous** if you want to continue customizing.
+1. Select **Review** and review all your modifications. Then select **Save** if you'd like to save your changes or **Previous** if you want to continue customizing.
     ![alt text](../media/customize-the-look-and-feel-of-your-flows/10.png)
     ***Well done!** You completed configuring your company branding.*
 

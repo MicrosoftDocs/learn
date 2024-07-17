@@ -22,7 +22,7 @@ A [user flow](/entra/external-id/customers/how-to-user-flow-sign-up-sign-in-cust
     ![alt text](../media/create-a-sign-up-and-sign-in-user-flow/8.png)
 1. **Well done!** Your user flow is successfully created and the application is linked to the user flow.
     ![alt text](../media/create-a-sign-up-and-sign-in-user-flow/9.png)
-    *When users sign-in to the groceries website, they will come across the sign-in and sign-up experience configured in the user flow.*
+    *When users sign in to the groceries website, they'll come across the sign-in and sign-up experience configured in the user flow.*
 
 ::: zone-end
 

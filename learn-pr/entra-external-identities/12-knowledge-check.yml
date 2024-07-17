@@ -20,7 +20,7 @@ quiz:
       explanation: "Incorrect. This is not the primary purpose of Entra External Identities in this context."
     - content: "To create branded sign-in and sign-up experiences for customers"
       isCorrect: true
-      explanation: "Correct. Entra External Identities is specifically designed to provide customizable sign-in and sign-up experiences for external users (such as customers). It allows you to brand the flows, customize account creation, secure account, and orchestrate verification."
+      explanation: "Correct. Entra External Identities is specifically designed to provide customizable sign-in and sign-up experiences for external users (such as customers). It allows you to brand the flows, customize account creation, secure accounts, and orchestrate verification."
     - content: "To optimize website performance"
       isCorrect: false
       explanation: "Incorrect. This is not the primary purpose of Entra External Identities in this context."

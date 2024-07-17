@@ -9,4 +9,4 @@ Our project aims to launch a new website for our online grocery retailer. The pr
 1. **Customized user experiences:**
     - **During sign-in:** Customize the sign-in process, including branding elements.
     - **During sign-up:** Configure account creation, attribute collection, account types, and extension for information verification.
-1. **Account security:** Prompt users to enroll in multi-factor authentication for enhanced security.
+1. **Account security:** Prompt users to enroll in multifactor authentication for enhanced security.

@@ -1,14 +1,14 @@
 ## Exercise - Enable social identity provider sign-in
 
-By setting up federation with social identity providers, you can allow customers to sign in to your applications with their own social account, such as [Facebook](/entra/external-id/customers/how-to-facebook-federation-customers) or [Google](/entra/external-id/customers/how-to-google-federation-customers). This demo shows how to add Facebook as one of your application's sign-in options. On the sign-in page, customers can sign-in to Microsoft Entra ID with Facebook. The steps in this tutorial also applies to other identity providers, such as Google.
+By setting up federation with social identity providers, you can allow customers to sign in to your applications with their own social accounts, such as [Facebook](/entra/external-id/customers/how-to-facebook-federation-customers) or [Google](/entra/external-id/customers/how-to-google-federation-customers). This demo shows how to add Facebook as one of your application's sign-in options. On the sign-in page, customers can sign in to Microsoft Entra ID with Facebook. The steps in this tutorial also apply to other identity providers, such as Google.
 
 ::: zone pivot="microsoft-entra-admin-center"
 
-1. To add Facebook as an identity provider, you first need to create an application in Facebook identity provider. Then, configure the federation in Microsoft Entra External ID. After you created an application in Facebook, sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) and browse to **External Identities** > **All identity providers**. Then, select **Configure** next to **Facebook**.
+1. To add Facebook as an identity provider, you first need to create an application in Facebook. Then, configure the federation in Microsoft Entra External ID. After you create an application in Facebook, sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) and browse to **External Identities** > **All identity providers**. Then, select **Configure** next to **Facebook**.
     ![alt text](../media/enable-social-identity-provider-sign-in/1.png)
 1. For the **Client ID**, enter the client ID of the Facebook application that you created earlier. For the **Client secret**, enter the client secret that you recorded. Then, select **Save**.
     ![alt text](../media/enable-social-identity-provider-sign-in/2.png)
-1. At this point, the Facebook identity provider has been set up in your Microsoft Entra ID, but it's not yet available in any of the sign-in pages. You need to add the Facebook identity provider to a user flow. In your external tenant, browse to **Identity** > **External Identities** > **User flows**. Then, Select the user flow where you want to add the Facebook identity provider.
+1. At this point, the Facebook identity provider has been set up in your Microsoft Entra ID, but it's not yet available in any of the sign-in pages. You need to add the Facebook identity provider to a user flow. In your external tenant, browse to **Identity** > **External Identities** > **User flows**. Then, select the user flow where you want to add the Facebook identity provider.
     ![alt text](../media/enable-social-identity-provider-sign-in/3.png)
 1. Under **Settings**, select **Identity providers**. Under **Other Identity Providers**, select **Facebook**. At the top of the pane, select **Save**.
     ![alt text](../media/enable-social-identity-provider-sign-in/4.png)

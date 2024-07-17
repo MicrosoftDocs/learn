@@ -18,7 +18,7 @@ To enable your app to sign in with Microsoft Entra External Identities, you need
    ![alt text](../media/register-an-application/6.png)
 1. In the following steps, you will add the required permission for the web application. Under **Manage**, select **API permissions**, then select **Add a permission**.
    ![alt text](../media/register-an-application/7.png)
-1. In **Request API permissions**, select **Microsoft APIs** tab and then **Microsoft Graph**.
+1. In **Request API permissions**, select the **Microsoft APIs** tab, and then select **Microsoft Graph**.
    ![alt text](../media/register-an-application/8.png)
 1. Select the **Delegated permissions** option. Then, under **Select permissions** section, search for and select both **openid** and **offline_access** permissions. To complete, select **Add permissions**.
    ![alt text](../media/register-an-application/9.png)
