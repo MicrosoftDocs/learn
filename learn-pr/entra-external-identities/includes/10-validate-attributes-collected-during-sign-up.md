@@ -12,10 +12,10 @@ The custom authentication extension supports the [on attribute collection submit
 1. In **Basics**, select the **AttributeCollectionSubmit** event, and then select **Next**.
     ![alt text](../media/validate-attributes-collected-during-sign-up/2.png)
 1. In **Endpoint Configuration**, fill in the following properties:
-    - **Name** - A name for your custom authentication extension. For example, *Validate sign-up user input*.
+    - **Name** - A name for your custom authentication extension, for example, *Validate sign-up user input*.
     - **Target URL** - The URL of your REST API.
-    - **Timeout in milliseconds** - The maximum number of retries the API endpoint will be called in case of failure. If empty, will default to service default.
-    - **Maximum Retries** - The maximum number of retries the API endpoint will be called in case of failure. If empty, will default to service default.
+    - **Timeout in milliseconds** - The maximum number of retries the API endpoint will be called in case of failure. If empty, this value defaults to the service default.
+    - **Maximum Retries** - The maximum number of retries the API endpoint will be called in case of failure. If empty, this value defaults to the service default.
     - **Description** - A description for your custom authentication extensions.
     To continue, select **Next**.
     ![alt text](../media/validate-attributes-collected-during-sign-up/3.png)

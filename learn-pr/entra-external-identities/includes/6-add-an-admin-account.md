@@ -4,7 +4,7 @@ In Microsoft Entra External ID, an external tenant represents your directory of 
 
 ::: zone pivot="microsoft-entra-admin-center"
 
-1. To add an admin account, sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) with Global Administrator or Privileged Role Administrator permissions and browse to **Identity** > **Users** > **All users**. Then, select **New user** > **Create new user**.
+1. To add an admin account, sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) with at least Privileged Role Administrator permissions and browse to **Identity** > **Users** > **All users**. Then, select **New user** > **Create new user**.
     ![alt text](../media/add-an-admin-account/1.png)
 1. On the **Create new user** page, enter the following information:
     - Under **Basics**, enter information for this admin: 
@@ -14,7 +14,7 @@ In Microsoft Entra External ID, an external tenant represents your directory of 
     ![alt text](../media/add-an-admin-account/2.png)
 1. Under **Properties**, you can also enter a **First name** and **Last name** along with some other properties.
     ![alt text](../media/add-an-admin-account/3.png)
-1. To add administrative permissions for the user, add them to a Microsoft Entra role. You can assign the user to be a **Global Administrator** or one or more of the limited administrator roles in Microsoft Entra ID. Under **Assignments**, select **Add role**. Then, find the role you want to assign to this user, and choose **Select**. 
+1. To add administrative permissions for the user, add them to one or more of the administrator roles in Microsoft Entra ID. Under **Assignments**, select **Add role**. Then, find the role you want to assign to this user, and choose **Select**. 
     ![alt text](../media/add-an-admin-account/4.png)
 1. To create the account, select **Create**.
     ![alt text](../media/add-an-admin-account/5.png)
