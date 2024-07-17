@@ -4,7 +4,7 @@ title: Exercise - Explore an Azure AI Search index (UI)
 metadata:
   title: Explore an Azure AI Search index (UI)
   description: "Exercise - Explore an Azure AI Search index (UI)"
-  ms.date: 12/07/2023
+  ms.date: 07/17/2024
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 35
 content: |
-  [!include[](includes/6a-exercise.md)]
+  [!include[](includes/7-exercise.md)]
