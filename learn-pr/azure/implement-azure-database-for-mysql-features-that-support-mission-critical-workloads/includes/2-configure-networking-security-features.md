@@ -3,7 +3,7 @@ Key networking and security features in Azure Database for MySQL – Flexible Se
 
 ### Configure network access
 
-When creating a MySQL flexible server, you can select either private access through an Azure Virtual Network, or public access for allow-listed IP addresses with an optional private endpoint. After completing the **Basics** section, select **Next: Networking**, and then select either **Public access and Private endpoint** or **Private access**:
+When creating a MySQL flexible server, you can select either private access through an Azure Virtual Network or public access for allow-listed IP addresses with an optional private endpoint. After completing the **Basics** section, select **Next: Networking**, and then select either **Public access and Private endpoint** or **Private access**:
 
 :::image type="content" source="../media/2-configure-networking-and-security-features/networking-connectivity-public-private.png" alt-text="Screenshot of the network connectivity choice between public and private access." lightbox="../media/2-configure-networking-and-security-features/networking-connectivity-public-private.png":::
 

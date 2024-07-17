@@ -9,7 +9,7 @@ As CPU utilization nears 100%, database performance degrades severely. As a resu
 
 You can view your performance metrics in the monitoring overview workbook. To access the overview workbook, perform these steps:
 
-1. In the Azure portal, on the left pane, under Monitoring for your Azure Database for MySQL flexible server instance, select Workbooks.
+1. In the Azure portal, on the left pane, under Monitoring for your Azure Database for MySQL flexible server instance, select **Workbooks**.
 
  :::image type="content" source="../media/4-determine-azure-database-for-mysql-server-scaling-needs/monitor-workbooks.png" alt-text="Screenshot of the monitoring section showing the list of workbooks." lightbox="../media/4-determine-azure-database-for-mysql-server-scaling-needs/monitor-workbooks.png":::
 
