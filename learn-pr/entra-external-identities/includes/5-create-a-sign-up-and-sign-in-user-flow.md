@@ -26,7 +26,7 @@ A [user flow](/entra/external-id/customers/how-to-user-flow-sign-up-sign-in-cust
 
 ::: zone-end
 
-::: zone pivot="graph-api"
+::: zone pivot="microsoft-graph-api"
 
 #### 1\. Create a user flow
 

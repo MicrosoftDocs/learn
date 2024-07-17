@@ -28,11 +28,11 @@ To enable your app to sign in with Microsoft Entra External ID, you need to regi
 
 ::: zone-end
 
-::: zone pivot="graph-api"
+::: zone pivot="microsoft-graph-api"
 
 #### 1\. Register an application
 
-[To register a web application](/graph/api/application-post-applications?view=graph-rest-1.0&tabs=http), use the Graph request below and replace the following values.
+[To register a web application](/graph/api/application-post-applications?view=graph-rest-1.0&tabs=http), use the Microsoft Graph request below and replace the following values.
 - Value of **displayName** with your app displayed name. For example, *Woodgrove Groceries*.
 - Values of the **redirectUris** with the redirect URI of your application. For example, *<https://woodgrovedemo.com/signin-oidc>*
 

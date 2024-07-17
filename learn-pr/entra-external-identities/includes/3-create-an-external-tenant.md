@@ -25,7 +25,7 @@ You'll need to create a tenant with external configuration in the [Microsoft Ent
     ***Well done!** At this point, the Microsoft Entra External ID tenant is ready to use.*
 ::: zone-end
 
-::: zone pivot="graph-api"
+::: zone pivot="microsoft-graph-api"
 
 > [!NOTE]
 > Before you start, please note that for creating an external tenant, you will be using **Azure REST API** and not Microsoft Graph. Please check the links to relevant documentation that will allow you to run the REST API directly from your browser without needing to develop and register an application. The following screenshot shows how to run a particular API. ![alt text](../media/create-an-external-tenant/10.png)

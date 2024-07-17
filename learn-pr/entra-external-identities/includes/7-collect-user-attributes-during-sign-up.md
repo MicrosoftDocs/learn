@@ -20,7 +20,7 @@
 
 ::: zone-end
 
-::: zone pivot="graph-api"
+::: zone pivot="microsoft-graph-api"
 
 #### 1\. Create a custom attribute
 

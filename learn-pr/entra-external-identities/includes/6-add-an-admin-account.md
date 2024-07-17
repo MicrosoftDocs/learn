@@ -22,7 +22,7 @@ In Microsoft Entra External ID, an external tenant represents your directory of 
 
 ::: zone-end
 
-::: zone pivot="graph-api"
+::: zone pivot="microsoft-graph-api"
 
 #### 1\. Create a user
 
@@ -65,7 +65,7 @@ From the response, copy the value of the **id**. For example:
 
 #### 2\. Assign an admin role
 
-After the new user is created, [create a (unified) role assignment](/graph/api/rbacapplication-post-roleassignments). In the following Graph request, replace the:
+After the new user is created, [create a (unified) role assignment](/graph/api/rbacapplication-post-roleassignments). In the following Microsoft Graph request, replace the:
 
 - **{user-id}** with the user **id** from the previous step.
 - **{role-id}** with one of the [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).

@@ -52,6 +52,6 @@ quiz:
     - content: "User flow"
       isCorrect: true
       explanation: "Correct. User flows in Microsoft Entra External ID allow you to customize identity providers used and define how attributes should be presented during sign-up."
-    - content: "Graph API"
+    - content: "Microsoft Graph API"
       isCorrect: false
-      explanation: "Incorrect. Graph API is not the primary component that allows you to customize your sign-up and sign-in experiences."
+      explanation: "Incorrect. Microsoft Graph API is not the primary component that allows you to customize your sign-up and sign-in experiences."

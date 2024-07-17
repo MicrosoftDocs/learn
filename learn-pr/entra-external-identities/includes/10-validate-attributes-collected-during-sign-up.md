@@ -36,7 +36,7 @@ If this is your first custom authentication extension, see how we have configure
 
 ::: zone-end
 
-::: zone pivot="graph-api"
+::: zone pivot="microsoft-graph-api"
 
 #### 1\. Register custom authentication extension application
 

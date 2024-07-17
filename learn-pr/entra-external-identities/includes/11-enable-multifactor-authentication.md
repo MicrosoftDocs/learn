@@ -21,7 +21,7 @@
     ***Well done!** You created a Conditional access policy that requires users to complete MFA. To check the user experience, sign-in to your application.*
 ::: zone-end
 
-::: zone pivot="graph-api"
+::: zone pivot="microsoft-graph-api"
 
 #### Create conditional access policy
 The following example creates a [conditional access policy](/graph/api/conditionalaccessroot-post-policies?view=graph-rest-beta&tabs=http). This policy targets all sign-ins for all users (except for the tenant's Global Administrator.) In the request below, replace the **{web-or-mobile-app-ID}** with your own web or mobile application (App ID, not object ID.) Note that you can add more applications.

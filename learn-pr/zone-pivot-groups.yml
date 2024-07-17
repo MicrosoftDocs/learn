@@ -440,5 +440,5 @@ groups:
   pivots:
     - id: microsoft-entra-admin-center
       title: Microsoft Entra admin center
-    - id: graph-api
-      title: Graph API
+    - id: microsoft-graph-api
+      title: Microsoft Graph API

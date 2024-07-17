@@ -41,7 +41,7 @@ On the **Company Branding** page, you can choose to edit the **Default sign-in e
 
 ::: zone-end
 
-::: zone pivot="graph-api"
+::: zone pivot="microsoft-graph-api"
 
 #### Update the default company branding
 

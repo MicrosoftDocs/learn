@@ -16,7 +16,7 @@ By setting up federation with social identity providers, you can allow customers
 
 ::: zone-end
 
-::: zone pivot="graph-api"
+::: zone pivot="microsoft-graph-api"
 
 #### 1\. Register Facebook
 
