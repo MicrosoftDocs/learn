@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.machine-learning-production-azure-databricks.model-development-training
-title: Understand model development and training
+title: Explore model development
 metadata:
-  title: Understand model development and training
-  description: "Understand model development and training"
+  title: Explore model development
+  description: "Explore model development"
   ms.date: 07/17/2024
   author: wwlpublish
   ms.author: madiepev
