@@ -46,7 +46,7 @@ POST https://graph.microsoft.com/v1.0/applications
     "userPrincipalName": "AdeleV@wggdemo.onmicrosoft.com",
     "passwordProfile": {
         "forceChangePasswordNextSignIn": true,
-        "password": "12345678910"
+        "password": "A1bC2dE3fH4iJ5kL6mN7oP8qR9sT0u"
     }
 }
 ```
@@ -58,7 +58,7 @@ From the response, copy the value of the **id**. For example:
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-    "id": "123a123a-abc1-123a-abcd-123456789abc",
+    "id": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
     ...
 }        
 ```
@@ -81,13 +81,13 @@ POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments
 
 ##### Example
 
-The following example assigns the **Global Administrator** role to Adele Vance
+The following example assigns the **Security Administrator** role to Adele Vance
 
 ```json
 POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments
 {
-    "principalId": "c123a123a-abc1-123a-abcd-123456789ab",
-    "roleDefinitionId": "a321a321-1cba-a321-dcba-cba987654321",
+    "principalId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+    "roleDefinitionId": "194ae4cb-b126-40b2-bd5b-6091b380977d",
     "directoryScopeId": "/"
 }
 ```
