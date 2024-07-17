@@ -10,3 +10,11 @@ Our project aims to launch a new website for our online grocery retailer. The pr
     - **During Sign-In:** Customize the sign-in process, including branding elements.
     - **During Sign-Up:** Configure account creation, attribute collection, account types, and extension for information verification.
 1. **Account Security:** Prompt users to enroll in multifactor authentication for enhanced security.
+
+### Configuration options
+
+Throughout the module, you will be able to select your preferred configuration option to follow along.
+![alt text](/media/prepare/1.png)
+
+The **Microsoft Entra admin center** provides an intuitive interface for straightforward configuration tasks.
+The **Microsoft Graph API** enables customization and automation of tasks.
