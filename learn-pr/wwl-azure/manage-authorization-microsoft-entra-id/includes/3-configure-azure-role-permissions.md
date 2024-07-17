@@ -35,6 +35,7 @@ Update-AzManagementGroup -GroupId 'ContosoIt' -DisplayName 'Contoso Group'
 
 
 
+
 ```
 
 ### Change the name in Azure CLI
@@ -43,6 +44,7 @@ For Azure CLI, use the update command.
 
 ```azurecli
 az account management-group update --name 'Contoso' --display-name 'Contoso Group'
+
 
 
 
@@ -93,6 +95,7 @@ Remove-AzManagementGroup -GroupId 'Contoso'
 
 
 
+
 ```
 
 ### Delete in Azure CLI
@@ -101,6 +104,7 @@ With Azure CLI, use the command az account management-group delete.
 
 ```azurecli
 az account management-group delete --name 'Contoso'
+
 
 
 
@@ -137,12 +141,14 @@ Get-AzManagementGroup
 
 
 
+
 ```
 
 For a single management group's information, use the -GroupId parameter
 
 ```powershell
 Get-AzManagementGroup -GroupId 'Contoso'
+
 
 
 
@@ -165,6 +171,7 @@ az account management-group list
 
 
 
+
 ```
 
 For a single management group's information, use the show command
@@ -178,12 +185,14 @@ az account management-group show --name 'Contoso'
 
 
 
+
 ```
 
 To return a specific management group and all the levels of the hierarchy under it, use **-Expand** and **-Recurse** parameters.
 
 ```azurecli
 az account management-group show --name 'Contoso' -e -r
+
 
 
 
@@ -265,12 +274,14 @@ New-AzManagementGroupSubscription -GroupId 'Contoso' -SubscriptionId '12345678-1
 
 
 
+
 ```
 
 To remove the link between the subscription and the management group use the Remove-AzManagementGroupSubscription command.
 
 ```powershell
 Remove-AzManagementGroupSubscription -GroupId 'Contoso' -SubscriptionId '12345678-1234-1234-1234-123456789012'
+
 
 
 
@@ -293,12 +304,14 @@ az account management-group subscription add --name 'Contoso' --subscription '12
 
 
 
+
 ```
 
 To remove the subscription from the management group, use the subscription remove command.
 
 ```azurecli
 az account management-group subscription remove --name 'Contoso' --subscription '12345678-1234-1234-1234-123456789012'
+
 
 
 
@@ -339,10 +352,12 @@ $parentGroup = Get-AzManagementGroup -GroupId ContosoIT
 
 
 
+
 ```
 
 ```powershell
 Update-AzManagementGroup -GroupId 'Contoso' -ParentId $parentGroup.id
+
 
 
 
@@ -358,6 +373,7 @@ Use the update command to move a management group with Azure CLI.
 
 ```azurecli
 az account management-group update --name 'Contoso' --parent ContosoIT
+
 
 
 
@@ -386,6 +402,7 @@ An example of using this path is when assigning a new role assignment to a manag
 
 ```powershell
 New-AzRoleAssignment -Scope "/providers/Microsoft.Management/managementGroups/Contoso"
+
 
 
 
