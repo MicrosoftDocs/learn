@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.machine-learning-production-azure-databricks.model-deployment-strategies
+title: Explore model deployment strategies
+metadata:
+  title: Explore model deployment strategies
+  description: "Explore model deployment strategies"
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-model-deployment-strategies.md)]

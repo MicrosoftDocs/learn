@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.machine-learning-production-azure-databricks.model-versioning-lifecycle-management
+title: Explore model versioning and lifecycle management
+metadata:
+  title: Explore model versioning and lifecycle management
+  description: "Explore model versioning and lifecycle management"
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-model-versioning-lifecycle-management.md)]

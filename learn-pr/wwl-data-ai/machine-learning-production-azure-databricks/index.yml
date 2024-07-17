@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.machine-learning-production-azure-databricks
+metadata:
+  title: Manage machine learning in production with Azure Databricks
+  description: "Learn how to manage machine learning models in production with Azure Databricks."
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: module
+  ms.service: azure-databricks
+title: Manage machine learning in production with Azure Databricks
+summary: Machine learning involves using data to train a predictive model. Azure Databricks support multiple commonly used machine learning frameworks that you can use to train models.
+abstract: |
+  In this module you explore:
+  - Model development and training
+  - Model deployment strategies
+  - Model versioning and lifecycle management
+  - Data pipelines and feature engineering
+  - Integration with other Azure Services
+prerequisites: |
+  Before starting this module, you should be familiar with Azure Databricks. Consider completing the following modules first:
+  - [Explore Azure Databricks](/training/modules/explore-azure-databricks/)
+  - [Use Apache Spark in Azure Databricks](/training/modules/use-apache-spark-azure-databricks/)
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+products:
+- azure-databricks
+subjects:
+- machine-learning
+units:
+- learn.wwl.machine-learning-production-azure-databricks.introduction
+- learn.wwl.machine-learning-production-azure-databricks.model-development-training
+- learn.wwl.machine-learning-production-azure-databricks.model-deployment-strategies
+- learn.wwl.machine-learning-production-azure-databricks.model-versioning-lifecycle-management
+- learn.wwl.machine-learning-production-azure-databricks.data-pipelines-feature-engineering
+- learn.wwl.machine-learning-production-azure-databricks.integration-azure-services
+- learn.wwl.machine-learning-production-azure-databricks.exercise
+- learn.wwl.machine-learning-production-azure-databricks.knowledge-check
+- learn.wwl.machine-learning-production-azure-databricks.summary
+badge:
+  uid: learn.wwl.machine-learning-production-azure-databricks.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.machine-learning-production-azure-databricks.data-pipelines-feature-engineering
+title: Explore data pipelines and feature engineering
+metadata:
+  title: Explore data pipelines and feature engineering
+  description: "Explore data pipelines and feature engineering"
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-data-pipelines-feature-engineering.md)]

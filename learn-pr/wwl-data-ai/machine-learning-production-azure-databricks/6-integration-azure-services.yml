@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.machine-learning-production-azure-databricks.integration-azure-services
+title: Explore the integration with Azure services
+metadata:
+  title: Explore the integration with Azure services
+  description: "Explore the integration with Azure services"
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-integration-azure-services.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.machine-learning-production-azure-databricks.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 07/17/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

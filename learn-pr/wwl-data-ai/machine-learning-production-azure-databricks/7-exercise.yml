@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.machine-learning-production-azure-databricks.exercise
+title: Exercise - Manage a machine learning model in production with Azure Databricks
+metadata:
+  title: Exercise - Manage a machine learning model in production with Azure Databricks
+  description: "Exercise - Manage a machine learning model in production with Azure Databricks"
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/7-exercise.md)]
