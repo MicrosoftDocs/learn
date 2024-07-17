@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-configure-microsoft-entra-global-secure-access.deploy-private-access
+title: Deploy and configure Microsoft Entra Private Access
+metadata:
+  title: Deploy and configure Microsoft Entra Private Access
+  description: "Deploy and configure Microsoft Entra Private Access"
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-deploy-configure-private-access.md)]

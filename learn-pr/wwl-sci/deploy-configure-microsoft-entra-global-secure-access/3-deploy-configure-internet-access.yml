@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-configure-microsoft-entra-global-secure-access.deploy-internet-access
+title: Deploy and configure Microsoft Entra Internet Access
+metadata:
+  title: Deploy and configure Microsoft Entra Internet Access
+  description: "Deploy and configure Microsoft Entra Internet Access"
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-deploy-configure-internet-access.md)]

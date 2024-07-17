@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-configure-microsoft-entra-global-secure-access.use-conditional-access
+title: Use Conditional Access with Global Secure Access
+metadata:
+  title: Use Conditional Access with Global Secure Access
+  description: "Use Conditional Access with Global Secure Access"
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-use-conditional-access.md)]

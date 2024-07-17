@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-configure-microsoft-entra-global-secure-access.explore-logs-monitor-operations
+title: Explore logs and monitoring options with Global Secure Access
+metadata:
+  title: Explore logs and monitoring options with Global Secure Access
+  description: "Explore logs and monitoring options with Global Secure Access"
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-explore-logs-monitor-operations.md)]

@@ -1,0 +1,93 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-configure-microsoft-entra-global-secure-access.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the main function of Microsoft Entra Private Access?"
+    choices:
+    - content: "It provides your users secure access to your private, corporate resources without requiring a VPN."
+      isCorrect: true
+      explanation: "Correct. Microsoft Entra Private Access extends access to any private resource, port, and protocol for remote users across hybrid and multicloud environments, private networks, and data centers from any device and network."
+    - content: "It secures access to Microsoft services, SaaS, and public internet apps while protecting users, devices, and data against internet threats."
+      isCorrect: false
+      explanation: "Incorrect. This is the function of Microsoft Entra Internet Access, not Private Access."
+    - content: "It provides a unified portal to streamline the roll-out and management of the access control capabilities."
+      isCorrect: false
+      explanation: "Incorrect. This is a feature of the Global Secure Access, not specifically of Microsoft Entra Private Access."
+  - content: "What is the purpose of enabling the Microsoft traffic forwarding profile in Microsoft Entra Internet Access?"
+    choices:
+    - content: "It allows users to bypass the Global Secure Access client when accessing Microsoft resources, like Exchange Online and SharePoint Online."
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft traffic forwarding profile does not bypass the Global Secure Access client, but rather works with it to secure access to Microsoft resources."
+    - content: "It enables users to access Microsoft resources without any restrictions."
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft traffic forwarding profile does not remove restrictions, but rather helps manage network traffic to Microsoft services."
+    - content: "With the Microsoft profile enabled, Microsoft Entra Internet Access acquires the traffic going to Microsoft services, like Exchange Online and SharePoint Online."
+      isCorrect: true
+      explanation: "Correct. The Microsoft traffic forwarding profile is used to manage network traffic going to Microsoft services."
+  - content: "What is the purpose of configuring a Microsoft Entra private network connector and connector groups?"
+    choices:
+    - content: "To facilitate inbound connection to the Global Secure Access service and handle traffic to specific applications."
+      isCorrect: false
+      explanation: "Incorrect. The connectors facilitate outbound, not inbound, connections to the Global Secure Access service."
+    - content: "To install on a Windows device that does not have access to the backend resources and applications."
+      isCorrect: false
+      explanation: "Incorrect. The connectors must be installed on a Windows Server that has access to the backend resources and applications."
+    - content: "To facilitate the outbound connection to the Global Secure Access service and handle traffic to specific applications."
+      isCorrect: true
+      explanation: "Correct. The connectors are lightweight agents that sit on a server in a private network and facilitate the outbound connection to the Global Secure Access service."
+  - content: "What does the Global Secure Access snapshot widget provide in the Dashboard?"
+    choices:
+    - content: "It provides a summary of how many users and devices are using the service and how many applications were secured through the service."
+      isCorrect: true
+      explanation: "Correct. The Global Secure Access snapshot provides a summary of users, devices, and workloads secured through the service."
+    - content: "It provides a summary of the number of users and devices using the service and how many applications were blocked by the service."
+      isCorrect: false
+      explanation: "Incorrect. The Global Secure Access snapshot does not provide information about blocked applications."
+    - content: "It provides a summary of the number of users and devices using the service and how many alerts were generated."
+      isCorrect: false
+      explanation: "Incorrect. The Global Secure Access snapshot does not provide information about alerts."
+  - content: "What is the final step in configuring a Remote Network for use with Global Secure Access?"
+    choices:
+    - content: "Defining the name of your remote network and the region where you want to connect"
+      isCorrect: false
+      explanation: "Incorrect. This is the first step in the process, not the final one."
+    - content: "Reviewing the configuration in the Microsoft Entra admin center"
+      isCorrect: false
+      explanation: "Incorrect. While reviewing the configuration is an important step, it is not the final step in the process."
+    - content: "Updating the on-premises router configuration with the Microsoft connectivity settings"
+      isCorrect: true
+      explanation: "Correct. The final step involves updating the on-premises router configuration with the Microsoft connectivity settings."
+  - content: "What is the purpose of the Compliant Network Check in Conditional Access with Global Secure Access?"
+    choices:
+    - content: "It allows any organization using Microsoft's Global Secure Access services to access your resources."
+      isCorrect: false
+      explanation: "Incorrect. The Compliant Network Check is designed to prevent other organizations from accessing your resources, even if they are also using Microsoft's Global Secure Access services."
+    - content: "It checks if the network is compliant with the security policies of any tenant."
+      isCorrect: false
+      explanation: "Incorrect. The Compliant Network Check ensures users connect from a verified network connectivity model for their specific tenant and are compliant with security policies enforced by administrators."
+    - content: "It ensures users connect from a verified network connectivity model for their specific tenant and are compliant with security policies enforced by administrators."
+      isCorrect: true
+      explanation: "Correct. The Compliant Network Check is designed to ensure that users connect from a network that is compliant with the security policies of their specific tenant."
+  - content: "What is the purpose of Global Secure Access Audit logs?"
+    choices:
+    - content: "They provide information about Microsoft 365 workloads, so you can review network diagnostic data, performance data, and security events relevant to Microsoft 365 apps."
+      isCorrect: false
+      explanation: "Incorrect. This description refers to Enriched Office 365 logs, not Audit logs."
+    - content: "They provide information when researching or troubleshooting changes to your Microsoft Entra environment, capturing changes related to Global Secure Access in several categories."
+      isCorrect: true
+      explanation: "Correct. Audit logs are used for researching or troubleshooting changes to the environment."
+    - content: "They provide a summary of the network connections and transactions that are occurring in your environment."
+      isCorrect: false
+      explanation: "Incorrect. This description refers to Traffic logs, not Audit logs."

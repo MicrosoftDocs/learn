@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-configure-microsoft-entra-global-secure-access.explore-global-secure-access-dashboard
+title: Explore how to use the Dashboard to drive Global Secure Access
+metadata:
+  title: Explore how to use the Dashboard to drive Global Secure Access
+  description: "Explore how to use the Dashboard to drive Global Secure Access"
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-explore-global-secure-access-dashboard.md)]
