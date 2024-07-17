@@ -22,7 +22,7 @@ quiz:
     - content: "The Microsoft global network spans the United States and Europe."
       isCorrect: false
       explanation: "Incorrect. The Microsoft global network is a global implementation."
-    - content: "The Microsoft global network can be used by Microsoft but not customers."
+    - content: "The Microsoft global network is used by Microsoft but not its customers."
       isCorrect: false
       explanation: "Incorrect. Customers can use a range of services available in the Microsoft global network."
     - content: "The Microsoft global network is used for Azure services, not other Microsoft Cloud services."

@@ -24,4 +24,4 @@ quiz:
       explanation: "Incorrect. This statement is true and reflects Microsoft policy."
     - content: "Microsoft support can access user or administrator accounts on customer VMs."
       isCorrect: true
-      explanation: "Correct. This statement is not a Microsoft policy. Microsoft support personnel can't access user or administrator accounts on customer VMs."
+      explanation: "Correct. This statement isn't a Microsoft policy. Microsoft support personnel can't access user or administrator accounts on customer VMs."
