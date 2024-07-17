@@ -7,6 +7,7 @@ metadata:
   title: Fundamentals of AI security 
   description: Fundamental concepts of AI security
   ms.topic: module
+  ms.service: artificial-intelligence
 title: Fundamentals of AI security
 summary: In this module you learn about fundamental concepts of AI security
 abstract: |

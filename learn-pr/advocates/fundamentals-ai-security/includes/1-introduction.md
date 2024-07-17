@@ -5,7 +5,7 @@ AI introduces many new exciting capabilities but also brings with it new securit
 By the end of this module, you'll be able to:
 
 - Understand and describe the basic concepts of AI security
-- Describe the three layers of AI architecture 
+- Describe the three layers of AI architecture
 - Describe new, AI specific attack techniques
 
 ## Prerequisites:

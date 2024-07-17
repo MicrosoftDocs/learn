@@ -1,10 +1,10 @@
-AI security is the process of securing AI enabled systems. Just like other aspects of cybersecurity, AI security is the practice of protecting computer systems, networks, devices, and data from digital attacks, unauthorized access, damage, or theft. The primary goal of cybersecurity is to ensure the confidentiality, integrity, and availability of digital assets and information.  Security professionals working in the AI security space must design and implement security controls to protect the assets data and information contained within AI enabled applications. 
+AI security is the practice of protecting computer systems, networks, devices, and data from digital attacks, unauthorized access, damage, or theft. The primary goal of cybersecurity is to ensure the confidentiality, integrity, and availability of digital assets and information. Security professionals working in the AI security space must design and implement security controls to protect the assets data and information contained within AI enabled applications. 
 
 ## How is AI security different from traditional cyber security?
 
-AI security is different from traditional cybersecurity due to the nature of AI's learning capabilities and decision-making processes. For generative AI models as the output that the model will create will not always be the same, this can pose challenges when designing security controls. The complex input and output of generative AI products makes applying security controls challenging. Constraining input to a UI element or API to limit the attack surface is an understood known security control, but you cannot do the same with a natural language interface without fundamentally undermining its utility.
+AI security is different from traditional cybersecurity due to the nature of AI's learning capabilities and decision-making processes. The output of generative AI models won't always be the same. This lack of predictability poses challenges when designing security controls. The complex input and output of generative AI products makes applying security controls challenging. Constraining input to a UI element or API to limit the attack surface is an understood known security control, but you can't do the same with a natural language interface without fundamentally undermining its utility.
 
-Other additional considerations with regards to AI security that do not exist in other types of IT systems include, but are not limited to: 
+Other considerations specific to AI security include, but aren't limited to:
 
 - Integrity of the AI model
 - Integrity of the training data
@@ -12,9 +12,9 @@ Other additional considerations with regards to AI security that do not exist in
 - Adversarial AI attacks
 - AI model theft
 - Overreliance on AI
-- Non-deterministic (creative) nature of generative AI
+- Nondeterministic (creative) nature of generative AI
 
-One of the biggest challenges with AI security is that the field is developing very rapidly with new features and technology. This makes it is very challenging for security professionals to keep up to date with the scope and capabilities of the technology and thus it is challenging to have the correct security controls in place to secure these systems.
+One of the biggest challenges with AI security is that the field is developing rapidly with new features and technology. This makes it challenging for security professionals to keep up to date with the scope and capabilities of the technology and thus it's challenging to have the correct security controls in place to secure these systems.
 
 ## Why does responsible AI matter for cyber security?
 
@@ -24,7 +24,7 @@ Microsoft's Responsible AI Standard is a framework for building AI systems accor
 
 ![Diagram of the six principles of Microsoft Responsible AI, which encompass fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.](../media/image1.png)
 
-AI harms are issues in cybersecurity that are specifically related to AI. Some of these AI harms would also be considered cybersecurity issues, but some of them go further than this and would also be considered privacy and ethical issues. Although traditionally cybersecurity professionals would not be concerned with ethical issues, AI blurs the lines between the traditional split of cybersecurity and ethics and thus it is important that security professionals understand responsible AI holistically in order to create secure and responsible AI systems.
+AI harms are issues in cybersecurity that are specific to AI systems. Some of these AI harms would also be considered cybersecurity issues, but some of them go further than this and would also be considered privacy and ethical issues. AI blurs the lines between the traditional split of cybersecurity and ethics. It is important that security professionals understand responsible AI holistically in order to create secure and responsible AI systems.
 
 Examples of security-specific AI harms:
 
