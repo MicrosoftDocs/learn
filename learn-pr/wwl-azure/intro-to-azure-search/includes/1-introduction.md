@@ -1,4 +1,4 @@
-Consider when people need to manually read through multiple pages of a document for information. How would they be able to search for information more quickly? This module discuses how you can improve the speed of information retrieval and gain novel insights by creating an index of your unstructured, typed, image-based, or hand-written media. 
+Consider when people need to manually read through multiple pages of a document for information. How would they be able to search for information more quickly? This module discusses how you can improve the speed of information retrieval and gain novel insights by creating an index of your unstructured, typed, image-based, or hand-written media. 
 
 Knowledge mining solutions provide automated information extraction from large volumes of often unstructured data. One of these knowledge mining solutions is Azure AI Search, a cloud search service that has tools for building and managing indexes. The indexes can be used for internal only use, or to enable searchable content on public-facing internet assets. 
 
