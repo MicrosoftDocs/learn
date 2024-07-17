@@ -3,7 +3,7 @@ uid: learn.wwl.implement-azure-app-configuration
 metadata:
   title: Implement Azure App Configuration
   description: "Learn how to use Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features."
-  ms.date: 07/16/2024
+  ms.date: 07/17/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
