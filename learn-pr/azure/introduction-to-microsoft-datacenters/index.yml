@@ -7,6 +7,7 @@ metadata:
   author: TBD
   ms.author: v-jenhor
   ms.topic: module
+  ms.service: azure-cloud-services-classic
 title: Introduction to Microsoft Datacenters
 summary: In this module, you learn about the physical infrastructure of the Microsoft Cloud and its datacenters, which helps you make better decisions when considering and planning for cloud infrastructure and workloads.
 abstract: |
