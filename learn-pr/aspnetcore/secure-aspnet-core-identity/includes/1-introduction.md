@@ -22,22 +22,19 @@ In this module, you will:
 
 ## Required tools
 
-Before you start, ensure you have the following tools installed:
+It is recommended that you complete this module in [GitHub Codespaces](https://github.com/features/codespaces). No tools are required, but you need a free GitHub account.
 
-* [Visual Studio Code](https://code.visualstudio.com)
-* [.NET 6 SDK](https://dotnet.microsoft.com/download)
-* [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb)
-* [Git](https://git-scm.com/docs/gitcli)
+If you prefer to use a local development environment, you use the same Dev Container as GitHub Codespaces by installing the following tools:
 
-Alternatively, this module includes a [.devcontainer](https://code.visualstudio.com/docs/remote/create-dev-container) file. The *.devcontainer* file defines a container preconfigured with .NET 6 SDK, SQL Server, and the required extensions. We recommend this approach for the best experience.
-
-Using the *.devcontainer* requires only:
-
-* [Visual Studio Code](https://code.visualstudio.com) with the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
-* [Git](https://git-scm.com/docs/gitcli)
+* [Visual Studio Code](https://code.visualstudio.com) with the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/), [Rancher Desktop](https://rancherdesktop.io/), or similar
 
-If you don't want to install **any** local tools, you can also use the *.devcontainer* in [GitHub Codespaces](https://github.com/features/codespaces) ([charges might apply](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-codespaces#codespaces-pricing)).
+Finally, if you prefer to use no containerization, you must install the following tools:
+
+* [Visual Studio Code](https://code.visualstudio.com)
+* [.NET 8 SDK](https://dotnet.microsoft.com/download)
+* [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb)
+* [Git](https://git-scm.com/docs/gitcli)
 
 ## Get started
 

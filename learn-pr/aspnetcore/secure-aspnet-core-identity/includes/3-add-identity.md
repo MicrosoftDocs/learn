@@ -1,9 +1,18 @@
 Identity works out-of-the-box without any customization. In this unit, Identity is added to an existing ASP.NET Core Razor Pages project.
 
-## Obtain and open the starter project
+## Open the starter project
 
-> [!NOTE]
-> If you wish to use the *.devcontainer* in GitHub Codespaces, navigate to [your codespaces for the MicrosoftDocs/mslearn-secure-aspnet-core-identity](https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity/codespaces) repository. Create a new codespace using the `main` branch, and then skip to step 3.
+**To use the recommended GitHub Codespace**, navigate to [your codespaces for the MicrosoftDocs/mslearn-secure-aspnet-core-identity](https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity/codespaces) repository. Create a new codespace using the `main` branch, and then skip to [Explore the app](#explore-the-app).
+
+**To use a local Dev Container**, follow these steps:
+
+1. In a Visual Studio Code window, press <kbd>F1</kbd> key to open the command palette. Search for and select **Remote-Containers: Clone Repository in Container Volume...**.
+
+1. Enter the following repository URL: `https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity` Visual Studio code will create the Dev Container. Accept any prompts to install recommended extensions.
+
+1. Skip to [Explore the app](#explore-the-app).
+
+**To use a local development environment**, follow these steps:
 
 1. In a terminal window, run the following command to obtain the starter project:
 
@@ -18,12 +27,11 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
     code .
     ```
 
-    Visual Studio Code opens. Accept any prompts to install recommended extensions, or select **Reopen in Container** if you wish to use the *.devcontainer*.
+    Visual Studio Code opens. Accept any prompts to install recommended extensions, but **DO NOT** select **Reopen in Container** if prompted. Continue with the next steps below.
 
-    > [!TIP]
-    > If you miss the prompt to reopen in container, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette, and then search for and select **Dev Containers: Reopen in Container**.
+## Explore the app
 
-1. After the project loads (either locally or in the container), press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> to open a new terminal pane.
+1. After the project loads, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> to open a new terminal pane.
 
 1. In the new terminal pane, set your location to the *RazorPagesPizza* directory:
 
@@ -33,9 +41,7 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
 
 1. In the **Explorer** pane, expand the *RazorPagesPizza* directory to view the code. *RazorPagesPizza* is the project directory. As you proceed, assume all paths discussed in this module are relative to this location.
 
-## Explore the app
-
-Let's run the app to get a quick introduction.
+    Let's run the app to get a quick introduction.
 
 1. In the terminal pane, build the project and run the app:
 
@@ -48,15 +54,11 @@ Let's run the app to get a quick introduction.
 1. Open the app in your browser by selecting the URL with <kbd>Ctrl</kbd>+*click*.
 
     > [!IMPORTANT]
-    > If you're using the *.devcontainer* in Docker, the SSL certificate from inside the container won't be trusted by your browser. To view the web app, you must do **one** of the following:
+    > If you're using the Dev Container in local Docker, the SSL certificate from inside the container won't be trusted by your browser. To view the web app, you must do **one** of the following:
     >
     > * Ignore the certificate error. If using Microsoft Edge, select **Advanced** and **Continue to localhost (not recommended)**. Details vary by browser.
     > * Save the certificate and add it to your trusted certificate authorities.
     > * Import an existing development certificate inside the container. For more information, see the generated comments in *./devcontainer/devcontainter.json*.
-    >
-    > If you choose to import an existing development certificate inside the container, the container path */root/.aspnet/* is exposed as *.devcontainer/persisted-data/.aspnet* outside the container. This is for your convenience.
-    >
-    > If you're using the *.devcontainer* in GitHub Codespaces, no action is required. Codespaces handles the proxy SSL connection automatically.
 
 1. Explore the web app in the browser. Using the links on the header:
     1. Navigate to **Pizza List**
@@ -151,7 +153,9 @@ The `ConnectionStrings` section in *:::no-loc text="appsettings.json":::* should
 }
 ```
 
-This connection string points to an instance of SQL Server Express LocalDB by default. **If you're using the *.devcontainer*, you must change the connection string as follows!** Save your changes.
+This connection string points to an instance of SQL Server Express LocalDB by default. **If you're developing locally, do nothing.** This is the correct connection string.
+
+In Codespaces or Dev Containers, the connection string is incorrect. **If you are using the Codespace or Dev Container, you must change the connection string as follows!** Be sure to save your changes.
 
 ```json
 "ConnectionStrings": {
