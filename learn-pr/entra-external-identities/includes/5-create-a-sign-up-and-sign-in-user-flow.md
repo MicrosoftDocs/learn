@@ -164,7 +164,7 @@ From the response, copy the value of the user flow **id**. For example:
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventsFlows/$entity",
     "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
-    "id": "00000000-0000-0000-0000-000000000000",
+    "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
     "displayName": "Default sign-up and sign-in1",
     "description": "Woodgrove default sign-up and sign-in flow",
     ...
