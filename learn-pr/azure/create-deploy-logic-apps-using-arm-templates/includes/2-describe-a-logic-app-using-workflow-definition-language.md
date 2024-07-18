@@ -131,7 +131,7 @@ A trigger can also specify conditions. The trigger will only fire if these condi
 
 A logic app's `actions` section defines the logic and structure of the workflow. The section contains a series of *actions*. An action is a basic building block for constructing workflows. Actions take inputs and produce outputs, which are passed to the next action in the workflow. The following table lists different available action types:
 
-| Action item | Description |
+| Action | Description |
 |---|---|
 | `ApiConnection` | Sends an HTTP request to a specific service. This action type enables you to integrate a logic app workflow with Azure features such as Azure Service Bus, Azure Event Grid, and others. The action requires inputs that include a connection string for accessing the service, and any additional information and parameters required to invoke the service. |
 | `Compose` | Combines multiple inputs and expressions into a single output. |
