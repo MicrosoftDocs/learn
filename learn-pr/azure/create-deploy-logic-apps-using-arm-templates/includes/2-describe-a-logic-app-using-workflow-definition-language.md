@@ -129,7 +129,7 @@ A trigger can also specify conditions. The trigger will only fire if these condi
 
 ### Actions section
 
-A Logic App's `actions` section defines the logic and structure of the workflow. It contains a series of *action items*. An action item is a basic building block for constructing workflows. Action items take inputs and produce outputs, which are passed to the next action item in the workflow. The following table lists different available action types:
+A logic app's `actions` section defines the logic and structure of the workflow. The section contains a series of *actions*. An action is a basic building block for constructing workflows. Actions take inputs and produce outputs, which are passed to the next action in the workflow. The following table lists different available action types:
 
 | Action item | Description |
 |---|---|
