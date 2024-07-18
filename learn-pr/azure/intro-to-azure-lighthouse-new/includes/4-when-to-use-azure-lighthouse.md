@@ -24,7 +24,7 @@ Contoso can also view activity log alerts for delegated subscriptions, letting t
 
 You can deploy a policy definition and policy assignment across delegated subscriptions in multiple customer tenants.
 
-For example, one service that Contoso offers is managing customers’ storage accounts. As part of this, Contoso needs to ensure that all storage accounts use HTTPS for traffic. Contoso can deploy a policy to all customers that ensures that all storage accounts in customer subscriptions only use HTTPS, marking any storage accounts that aren't set to HTTPS as noncompliant. The policy also prevents new storage accounts that don’t use HTTPS from being created. Since this policy applies across all of the customers that Contoso manages, it only has to deploy the policy one time, and can view noncompliant resources all in one place.
+For example, one service that Contoso offers is managing customers’ storage accounts. As part of this, Contoso needs to ensure that all storage accounts use HTTPS for traffic. Contoso can deploy a policy to all customers that ensures that all storage accounts in customer subscriptions only use HTTPS, marking any storage accounts that aren't set to HTTPS as noncompliant. The policy also prevents new storage accounts that don’t use HTTPS from being created. Since this policy applies across all of the customers that Contoso manages, it only has to deploy the policy one time.
 
 ## Help secure customer resources
 
