@@ -3643,3 +3643,8 @@ achievements:
   title: Tour the N-tier architecture style for your application
   summary: Use a Resource Manager template to deploy an application styled in an N-tier architecture, identify key concepts of N-tier architectures, and review best practices for deployments of this style.
   iconUrl: /training/achievements/n-tier-architecture.svg
+- uid: learn-pr.azure.create-azure-database-for-mysql.badge
+  type: badge
+  title: Create your first Azure Database for MySQL flexible server
+  summary: This unit introduces the module on choosing a tool to migrate data to an Azure Database for MySQL flexible server. It covers migration phases and considerations, tool options, and migration approaches.
+  iconUrl: /training/achievements/create-azure-database-for-mysql.badge
