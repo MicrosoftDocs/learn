@@ -1,6 +1,6 @@
 The goal of this module was to learn how to deploy Azure Developer CLI templates and use different commands to accomplish common development tasks. We worked through the following tasks and features:
 
-* Installed and setup the Azure Developer CLI locally
+* Installed and set up the Azure Developer CLI locally
 * Selected and deployed an `azd` template
 * Redeployed and provisioned template updates to the Azure environment
 * Learned how to monitor the hosted application using Application Insights dashboards

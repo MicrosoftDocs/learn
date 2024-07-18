@@ -2,7 +2,7 @@ You've learned how to provision and deploy app resources to Azure and how to upd
 
 ## Configure the pipeline
 
-Most `azd` templates have CI/CD workflow files included with them in either the `.github` folder for GitHub Actions or the `.azdo` folder for Azure Pipelines. The sample template used in this module relies on GitHub Actions, but the `azd` command and workflow is the same regardless of the CI/CD platform. A GitHub repository is required for you to be able to setup CI/CD. You can either create the new repository by forking the original `azd` template repository and setting it as a remote, or you can create a repo using `azd` during the pipeline configuration process, which is the approach you'll use in this example.
+Most `azd` templates have CI/CD workflow files included with them in either the `.github` folder for GitHub Actions or the `.azdo` folder for Azure Pipelines. The sample template used in this module relies on GitHub Actions, but the `azd` command and workflow is the same regardless of the CI/CD platform. A GitHub repository is required for you to be able to set up CI/CD. You can either create the new repository by forking the original `azd` template repository and setting it as a remote, or you can create a repo using `azd` during the pipeline configuration process, which is the approach you'll use in this example.
 
 Complete the following steps to configure a CI/CD pipeline for your template:
 
@@ -14,7 +14,7 @@ Complete the following steps to configure a CI/CD pipeline for your template:
 
 1. Select **GitHub**.
 
-1. If a GitHub origin is not set for your project, `azd` will ask how you would like to configure your remote repository. Select the option **Create a new private GitHub repository** and then enter a name for the new repo. `azd` will complete the following tasks for you:
+1. If a GitHub origin isn't set for your project, `azd` will ask how you would like to configure your remote repository. Select the option **Create a new private GitHub repository** and then enter a name for the new repo. `azd` will complete the following tasks for you:
 
     * Creates a GitHub repository and commits your project code to it.
     * Creates and configures a service principal for the app on the Azure subscription.
@@ -28,4 +28,4 @@ Complete the following steps to configure a CI/CD pipeline for your template:
 
     :::image type="content" source="../media/azd-actions.png" alt-text="A screenshot showing a GitHub actions workflow running.":::
 
-Once your pipeline is configured, you can continuously update your Azure environment and deployed app by simply pushing your code changes to GitHub. You can also continue to run `azd` commands locally like you did in the previous steps.
+Once your pipeline is configured, you can continuously update your Azure environment and deployed app by pushing your code changes to GitHub. You can also continue to run `azd` commands locally like you did in the previous steps.
