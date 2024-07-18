@@ -20,7 +20,6 @@ abstract: |
 prerequisites: |
   - Familiarity with multi-tenant cloud services.
   - Familiarity with how Azure helps customers follow data sector requirements in the public sector.
-
 iconUrl: /training/achievements/safeguard-data-sector.svg
 levels: 
 - beginner
