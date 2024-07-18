@@ -22,7 +22,7 @@ automate recurring tasks.
 
 In this module, you:
 
-- Determine if Azure PowerShell is the appropriate tool for your Azure management tasks.
+- Determine if Azure PowerShell is the appropriate tool for your Azure management tasks
 - Install Azure PowerShell on Windows, Linux, or macOS
 - Connect to Azure using Azure PowerShell
 - Create Azure resources with Azure PowerShell
