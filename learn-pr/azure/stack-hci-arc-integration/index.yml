@@ -3,6 +3,7 @@ uid: learn.azure.stack-hci-arc-integration
 metadata:
   title: Integrate Azure Arc and Azure Stack HCI
   description: Integrate Azure Arc and Azure Stack HCI
+  manager: femila
   ms.date: 05/19/2023
   author: JasonGerend
   ms.author: jgerend
