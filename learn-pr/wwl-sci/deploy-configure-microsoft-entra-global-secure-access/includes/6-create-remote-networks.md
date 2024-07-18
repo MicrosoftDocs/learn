@@ -3,6 +3,7 @@ Remote networks are remote locations, such as a branch office, or networks that 
 There are multiple ways to connect remote networks to Global Secure Access. In a nutshell, you're creating an Internet Protocol Security (IPSec) tunnel between a core router, known as the customer premises equipment (CPE), at your remote network and the nearest Global Secure Access endpoint. All internet-bound traffic is routed through the core router of the remote network for security policy evaluation in the cloud. Installation of a client isn't required on individual devices.
 
 There are five primary steps to configure a Remote Network. In this phase, you're building a bridge from an on-premises router in your office to Global Secure Access. These steps can be performed in Microsoft Entra admin center or via the Microsoft Graph API. Note the final step is performed on the on-premises router.
+
 | Steps | Description |
 | :--- | :--- |
 | Basics | Define the name of your remote network and the region where you want to connect. |
@@ -24,6 +25,7 @@ There are five primary steps to configure a Remote Network. In this phase, you'r
 
 ## Set up 2. Connectivity
 1. Select **Next: Connectivity**.
+
 | Values requested |
 | :--- |
 | Name |

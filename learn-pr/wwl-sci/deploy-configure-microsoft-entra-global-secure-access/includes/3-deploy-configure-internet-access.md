@@ -1,6 +1,7 @@
 There are four main steps for getting Microsoft Entra Internet Access deployed within your company. After you complete these four steps, users with the Global Secure Access client installed on their Windows device can securely access Microsoft resources from anywhere. Conditional Access policy requires users to use the Global Secure Access client or a configured remote network, when they access resources like Exchange Online and SharePoint Online.
 
 Steps:
+
 | Steps | Description |
 | :--- | :--- |
 | 1. Enable the Microsoft traffic forwarding profile. | With the Microsoft profile enabled, Microsoft Entra Internet Access acquires the traffic going to Microsoft services, like Exchange Online and SharePoint Online. |
@@ -18,12 +19,14 @@ Steps:
 1. Enable the Microsoft traffic profile.
 
 Turns on Microsoft traffic forwarding and create the following configurations in Microsoft Entra:
+
 | Configuration Setup | Description |
 | :--- | :--- |
 | Policies (network routing) | 1. **Exchange Online**, 2. **SharePoint Online and OneDrive for Business**, and 3. **Entra ID and MSGraph** - These use fully qualified domain names or IP subnets to manage network traffic. |
 | Conditional Access Policy | **Linked Conditional Access policies** - Captures all traffic to Microsoft Services, routes to the network policies defined earlier if conditions are met. |
 | User and Group | Specify specific users or groups that this traffic forward applies to. |
 | | |
+
 Refer to the documentation article for more details - [Enable and manage Microsoft traffic forwarding](/entra/global-secure-access/how-to-manage-microsoft-profile).
 
 ## Deploy Global Secure Access client for Windows (or Android)

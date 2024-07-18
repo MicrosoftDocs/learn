@@ -1,6 +1,7 @@
 Similar to configuring Microsoft Entra Internet Access, there are four main steps for getting Microsoft Entra Private Access deployed within your company. After you complete these four steps, users with the Global Secure Access client installed on a Windows device can connect to your primary resources, through a Quick Access app, and private network connector.
 
 Steps:
+
 | Steps | Description |
 | :--- | :--- |
 | 1. Configure a Microsoft Entra private network connector and connector group.| tbd |
@@ -20,6 +21,7 @@ The Microsoft Entra private network connector requires a server running Windows 
 - Requires Transport Layer Security (TLS) 1.2 be enabled on Windows Server.
 
 Open ports for **outbound**:
+
 | Port number | What the port is used for |
 | :--- | :--- |
 | 80 | Downloading certificate revocation lists (CRLs) while validating the TLS/SSL certificate |
@@ -27,12 +29,14 @@ Open ports for **outbound**:
 | | |
 
 Allow access to some URLs:
+
 | URL | Port | What the port is used for |
 | :--- | :--- | :--- |
 | *.msappproxy.net *.servicebus.windows.net | 443/HTTPS | Communication between the connector and the Application Proxy cloud service |
 | crl3.digicert.com crl4.digicert.com ocsp.digicert.com crl.microsoft.com oneocsp.microsoft.com ocsp.msocsp.com | 80/HTTP | The connector uses these URLs to verify certificates. |
 | login.windows.net secure.aadcdn.microsoftonline-p.com *.microsoftonline.com *.microsoftonline-p.com *.msauth.net *.msauthimages.net *.msecnd.net *.msftauth.net *.msftauthimages.net *.phonefactor.net enterpriseregistration.windows.net management.azure.com policykeyservice.dc.ad.msft.net ctldl.windowsupdate.com www.microsoft.com/pkiops | 443/HTTPS | The connector uses these URLs during the registration process. |
 | ctldl.windowsupdate.com www.microsoft.com/pkiops | 80/HTTP | The connector uses these URLs during the registration process. |
+| | | |
 
 **Install the connector using Microsoft Entra**
 1. Sign into the Microsoft Entra admin center as a Global Administrator of the directory that uses Application Proxy.
