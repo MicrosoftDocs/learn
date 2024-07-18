@@ -3,6 +3,7 @@ uid: learn.quantum.choose-the-best-azure-quantum
 metadata:
   title: Choose the best Azure Quantum option for your needs
   description: Learn how to get started with Azure Quantum and choose the best service for your needs.
+  manager: tedhudek
   ms.date: 12/13/2023
   author: SoniaLopezBravo
   ms.author: sonialopez
