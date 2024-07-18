@@ -190,7 +190,7 @@ An Azure Logic Apps workflow is a resource in Azure. Therefore, we can deploy it
 
 We can deploy this template using one of the following methods:
 
-* Deploy using the Azure portal
+* Deploy using the Azure portal.
 * Deploy using the PowerShell `Az` module.
 * Deploy from the Azure Command Line Interface (CLI).
 
