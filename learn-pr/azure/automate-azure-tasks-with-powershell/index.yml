@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.automate-azure-tasks-with-powershell
 metadata:
-  title: Automate Azure tasks using scripts with Azure PowerShell
+  title: Automate Azure tasks with Azure PowerShell
   description: Learn how to install Azure PowerShell on Windows, Linux, or macOS, and then connect to Azure and manage resources.
   manager: jasongroce
   ms.date: 06/07/2024
@@ -9,7 +9,7 @@ metadata:
   ms.author: mirobb
   ms.topic: module
   ms.service: azure-powershell
-title: Automate Azure tasks using scripts with Azure PowerShell
+title: Automate Azure tasks with Azure PowerShell
 summary: Install Azure PowerShell locally and use it to manage Azure resources.
 abstract: | 
   In this module, you:
