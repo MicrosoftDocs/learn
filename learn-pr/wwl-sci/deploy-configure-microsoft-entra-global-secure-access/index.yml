@@ -2,7 +2,7 @@
 uid: learn.wwl.deploy-configure-microsoft-entra-global-secure-access
 metadata:
   title: Deploy and Configure Microsoft Entra Global Secure Access
-  description: "The modern workforce has transitioned from traditional office settings to working from nearly anywhere. This change in working location necessitates an identity-aware, cloud-delivered network perimeter.  This identity-aware perimeter is known as Security Service Edge (SSE). The Microsoft SSE solution is comprised of Microsoft Entra Internet Access and Microsoft Entra Private Access, collectively referred to as Global Secure Access. This solution is founded on Zero Trust principles, emphasizing least privilege, explicit verification, and an assumption of breach to ensure security in the cloud era."
+  description: "The modern workforce transitioned from traditional office settings to working from nearly anywhere. This change in working location necessitates an identity-aware, cloud-delivered network perimeter. This identity-aware perimeter is known as Security Service Edge (SSE). The Microsoft SSE solution is comprised of Microsoft Entra Internet Access and Microsoft Entra Private Access, collectively referred to as Global Secure Access. This solution is founded on Zero Trust principles, emphasizing least privilege, explicit verification, and an assumption of breach to ensure security in the cloud era."
   ms.date: 07/18/2024
   author: wwlpublish
   ms.author: roberts
@@ -11,9 +11,9 @@ metadata:
   ms.subservice: architecture
   ai-usage: human-only
 title: Deploy and Configure Microsoft Entra Global Secure Access
-summary: Global Secure Access lets you put identity as the gatekeeper to your network access.&nbsp; Use Zero Trust principles to protect your data and apps.
+summary: Global Secure Access lets you put identity as the gatekeeper to your network access. Use Zero Trust principles to protect your data and apps.
 abstract: |
-  By the end of this module, you will be able to:
+  By the end of this module, you are able to:
 
   -   Define Global Secure Access and its components.
 

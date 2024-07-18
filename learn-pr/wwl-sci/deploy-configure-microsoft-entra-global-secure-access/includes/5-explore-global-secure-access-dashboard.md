@@ -22,10 +22,10 @@ The Global Secure Access snapshot has a filter to show data by Internet Access, 
 
 ## Alerts and notifications (preview)
 This widget shows what is happening in the network and helps identify suspicious activities or trends identified by the network data. Common alerts are:
- - Unhealthy remote network: An unhealthy remote network has one or more device links disconnected.
- - Increased external tenants activity: The number of users accessing external tenants has increased.
+ - Unhealthy remote network: An unhealthy remote network has one or more device-links disconnected.
+ - Increased external tenants activity: The number of users accessing external tenants increased.
  - Token and device inconsistency: The original token is used on a different device.
- - Web content blocked: Access to the website has been blocked.
+ - Web content blocked: Access to the website is blocked.
 Navigate to a related alert detail page with additional information.
 
 
@@ -38,7 +38,7 @@ The Usage profiling widget displays usage patterns over a selected period of tim
  - Bytes received
 
 ## Top used destinations
-The top-visited destinations widget shows all types of traffic and sorts by the number of transactions. You can select a different traffic type to narrow down the results.  There are several filters available:
+The top-visited destinations widget shows all types of traffic and sorts by the number of transactions. You can select a different traffic type to narrow down the results. There are several filters available:
  - Transactions: The destinations with the highest number of transactions, showing the total number of transactions in the last 24 hours.
  - Users: The destinations most used by users, showing the number of distinct users (UPN) accessing the destination in the last 24 hours.
  - Devices: The destinations most used by devices, showing the number of distinct device IDs accessing the destination in the last 24 hours.
@@ -56,13 +56,13 @@ Global Secure Access provides visibility into the number of users and devices th
 Select the Configure tenant restrictions button to navigate to the Session management are of Global Secure Access, where you can check the settings of your tenant restrictions.
 
 ## Web category filtering
-The Web category filtering widget displays the top categories of web content that were blocked or allowed by the service. These categories can be used to determine what sites or categories of sites you might want to block. Sort the results using the following categories:
+The Web category filtering widget displays the top categories of web content that are blocked or allowed. These categories can be used to determine what sites or categories of sites you might want to block. Sort the results using the following categories:
  - Transactions: Shows the total number of transactions in the last 24 hours.
  - Users: The number of distinct users (UPN) accessing the destination in the last 24 hours.
  - Devices: The number of distinct device IDs accessing the destination in the last 24 hours.
 Select View all web categories to view more details about your network traffic.
 
 ## Device status
-The Device status widgets display the active and inactive devices that you have deployed.
+The Device status widgets display the active and inactive devices that you deployed.
  - Active devices: The number of distinct device IDs seen in the last 24 hours and the % change during that time.
  - Inactive devices: The number of distinct device IDs that were seen in the last seven days, but not during the last 24 hours. The % change during the last 24 hours is also displayed.

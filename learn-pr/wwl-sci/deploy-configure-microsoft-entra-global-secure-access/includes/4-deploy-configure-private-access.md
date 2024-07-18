@@ -1,4 +1,4 @@
-Similar to configuring Microsoft Entra Internet Access, there are four main steps for getting Microsoft Entra Private Access deployed within your company.  After you complete these four steps, users with the Global Secure Access client installed on a Windows device can connect to your primary resources, through a Quick Access app and private network connector.
+Similar to configuring Microsoft Entra Internet Access, there are four main steps for getting Microsoft Entra Private Access deployed within your company. After you complete these four steps, users with the Global Secure Access client installed on a Windows device can connect to your primary resources, through a Quick Access app, and private network connector.
 
 Steps:
 | Steps | Description |
@@ -14,20 +14,20 @@ Connectors are lightweight agents that sit on a server in a private network and 
 
 **Configuring the Windows Server for connectors**
 
-The Microsoft Entra private network connector requires a server running Windows Server 2012 R2 or later. You'll install the private network connector on the server. This connector server needs to connect to the Microsoft Entra Private Access service or application proxy service and the private resources or applications that you plan to publish.
+The Microsoft Entra private network connector requires a server running Windows Server 2012 R2 or later. You install the private network connector on the server. This connector server needs to connect to the Microsoft Entra Private Access service or application proxy service and the private resources or applications that you plan to publish.
 - For high availability in your environment, we recommend having more than one Windows server.
 - The minimum .NET version required for the connector is v4.7.1+.
-- Requires TLS 1.2 be enabled on Windows Server.
+- Requires Transport Layer Security (TLS) 1.2 be enabled on Windows Server.
 
 Open ports for **outbound**:
-| Port number | How it's used |
+| Port number | What the port is used for |
 | :--- | :--- |
 | 80 | Downloading certificate revocation lists (CRLs) while validating the TLS/SSL certificate |
 | 443 | All outbound communication with the Application Proxy service |
 | | |
 
 Allow access to some URLs:
-| URL | Port | How it's used |
+| URL | Port | What the port is used for |
 | :--- | :--- | :--- |
 | *.msappproxy.net *.servicebus.windows.net | 443/HTTPS | Communication between the connector and the Application Proxy cloud service |
 | crl3.digicert.com crl4.digicert.com ocsp.digicert.com crl.microsoft.com oneocsp.microsoft.com ocsp.msocsp.com | 80/HTTP | The connector uses these URLs to verify certificates. |
@@ -35,13 +35,13 @@ Allow access to some URLs:
 | ctldl.windowsupdate.com www.microsoft.com/pkiops | 80/HTTP | The connector uses these URLs during the registration process. |
 
 **Install the connector using Microsoft Entra**
-1. Sign in to the Microsoft Entra admin center as a Global Administrator of the directory that uses Application Proxy.
-1. Select your username in the upper-right corner. Verify you're signed in to a directory that uses Application Proxy. If you need to change directories, select Switch directory and choose a directory that uses Application Proxy.
+1. Sign into the Microsoft Entra admin center as a Global Administrator of the directory that uses Application Proxy.
+1. Select your username in the upper-right corner. Verify sign-in to a directory that uses Application Proxy. If you need to change directories, select Switch directory and choose a directory that uses Application Proxy.
 1. Browse to Global Secure Access > Connect > Connectors.
 1. Select Download connector service.
-1. Read the Terms of Service. When you're ready, select Accept terms & Download.
-1. At the bottom of the window, select Run to install the connector. An install wizard opens.
-1. Follow the instructions in the wizard to install the service. When you're prompted to register the connector with the Application Proxy for your Microsoft Entra tenant, provide your Global Administrator credentials.
+1. Read the Terms of Service. When ready, select Accept terms & Download.
+1. Install the connector using the Run option.  It is at the bottom of the screen.
+1. Install the service by following the instructions in the wizard. When prompted to register the connector with the Application Proxy for your Microsoft Entra tenant, provide your Global Administrator credentials.
 
 **Verify the connector installed**
 
@@ -57,12 +57,12 @@ In Microsoft Entra:
 1. Sign in to the Microsoft Entra admin center as a Global Administrator of the directory that uses Application Proxy.
 1. Browse to Global Secure Access > Connect > Connectors
   - All of your connectors and connector groups appear on this page.
-1. View a connector to verify its details.
-  - Expand the connector to view the details if it's not already expanded.
+1. Verify the details by viewing the connector.
+  - Expand the connector to view the details.
   - An active green label indicates that your connector can connect to the service. However, even though the label is green, a network issue could still block the connector from receiving messages.
 
 **Create groups of connectors**
-1. For quicker assignments you can group different connectors together.
+1. For quicker assignments, you can group different connectors together.
 1. Browse to Global Secure Access > Connect > Connectors.
 1. Select New connector group.
 1. Give your new connector group a name, then use the dropdown menu to select which connectors belong in this group.
@@ -118,7 +118,7 @@ The following table provides the most commonly used ports and their associated n
 | 445 | Server Message Block (SMB) file sharing |
 | 3389 | Remote Desktop Protocol (RDP) |
 | | | 
-1. Select the Save button when you're finished.
+1. Select the Save button when finished.
 
 **Assign users and groups for Quick Access**
 1. Sign in to the Microsoft Entra admin center.
@@ -142,7 +142,7 @@ The Private Access traffic forwarding profile routes traffic to your private net
 
 ## Deploy Global Secure Access client for Windows (or Android)
 
-The client is quick and easy to install. It can be deployed via mobile device management tools like Microsoft Intune, or manually installed on each device.  You will need to download the client from the Entra admin center, then use your choice of deployment methods.
+The client is quick and easy to install. It can be deployed via mobile device management tools like Microsoft Intune, or manually installed on each device.  You need to download the client from the Microsoft Entra admin center, then use your choice of deployment methods.
 
 **Download the client**:
 1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
