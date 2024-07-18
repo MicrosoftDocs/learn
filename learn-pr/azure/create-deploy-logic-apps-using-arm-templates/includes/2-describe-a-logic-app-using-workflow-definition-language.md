@@ -147,7 +147,6 @@ A logic app's `actions` section defines the logic and structure of the workflow.
 | `Workflow` | Runs another logic app workflow. |
 | `Condition` | A set of action types (`Foreach`, `If`, `Switch`, and `Until`) that enables you to implement programmatic flow of control in a workflow. You can iterate through the items in a collection, make decisions based on the values of input parameters, and loop until some condition is met. |
 | `InitializeVariable`,<br>`IncrementVariable`,<br>`DecrementVariable`,<br><nobr>and `SetVariable`</nobr> | Defines, initializes, assigns, and modifies variables that you can pass between action items in a workflow. |
-|||
 
 Like a trigger, each action must have a unique name in the workflow. In the following example, the default action name is `Response`, but you can use a valid and more meaningful identifier. An action must have an `inputs` section that specifies the data on which the action works. In the Response action, you can specify the data for an expression to return in the response message, together with an HTTP status code.
 
