@@ -44,13 +44,13 @@ The client is quick and easy to install. It can be deployed via mobile device ma
 You can install the Android client instead using either Microsoft Intune or Microsoft Defender for Endpoint on Android. The process is similar, but you get the client app from the Android store.
 
 ## Configure the Tenant Restrictions
-Administrators use tenant restrictions to control user access to external tenants on their network. Tenant restrictions with cross tenant access settings adds tenant-level restrictions and more granularity such as individual user, group, and application controls. Tenant restrictions moves policy management from network proxies to a cloud-based portal. Allow internal identities, such as employees, to access specific external tenants on your managed network. Block access to nonallowed tenants for internal identities. Block external identities, such as contractors and vendors, from accessing all external tenants. 
+Administrators use tenant restrictions to control user access to external tenants on their network. Tenant restrictions, with cross tenant access settings, add tenant-level restrictions and more granularity such as individual user, group, and application controls. Tenant restrictions move policy management from network proxies to a cloud-based portal. Allow internal identities, such as employees, to access specific external tenants on your managed network. Block access to nonallowed tenants for internal identities. Block external identities, such as contractors and vendors, from accessing all external tenants. 
 
 **Set up Tenant Restrictions**
 1. Sign in to the Microsoft Entra admin center as at least a Security Administrator.
 1. Browse to Identity > External Identities > Cross-tenant access settings, then select Organizational settings.
-1. Select Add organization.
-1. On the Add organization pane, type the full domain name (or tenant ID) for the organization.
+1. Select **Add organization**.
+1. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization.
 1. Select the organization in the search results, and then select Add.
 
    The organization appears in the Organizational settings list. At this point, all access settings for this organization are inherited from your default settings. To change the settings for this organization, select the Inherited from default link under the Inbound access or Outbound access column.
@@ -72,8 +72,8 @@ Once you created the tenant restriction policies, you can utilize Global Secure 
 | :--- | :--- |
 | 1. | Contoso configures a **tenant restrictions v2 ** policy in their cross-tenant access settings to block all external accounts and external apps. Contoso enforces the policy using Global Secure Access universal tenant restrictions. |
 | 2. | A user with a Contoso-managed device tries to access a Microsoft Entra integrated app with an unsanctioned external identity. |
-| 3. | Authentication plane protection: Using Microsoft Entra ID, Contoso's policy blocks unsanctioned external accounts from accessing external tenants. |
-| 4. | Data plane protection: If the user again tries to access an external unsanctioned application by copying an authentication response token they obtained outside of Contoso's network and pasting it into the device, are blocked. The token mismatch triggers reauthentication and blocks access. For SharePoint Online, any attempt at anonymously accessing resources are blocked. |
+| 3. | Authentication plane protection: Microsoft Entra ID, with Contoso's policy, blocks unsanctioned external accounts from accessing external tenants. |
+| 4. | Data plane protection: If the user again tries to access an external unsanctioned application by copying an authentication response token they obtained outside of Contoso's network and pasting it into the device, are blocked. The token mismatch triggers reauthentication and blocks access. For SharePoint Online, any attempt at anonymously accessing resources is blocked. |
 | | |
 
 ## Enable enhanced Global Secure Access signaling and Conditional Access
@@ -104,8 +104,8 @@ The Global Secure Access Client installed on devices or users behind configured 
    - Set Configure to Yes.
    - Under Include, select Any location.
    - Under Exclude, select Selected locations.
-     - Select the All Compliant Network locations location.
-   - Select Select.
+     - Select the All Compliant Network locations.
+   - Choose Select.
 1. Explore Access controls:
    - Grant, select Block Access, and select Select.
 1. Confirm your settings and set Enable policy to On.

@@ -53,7 +53,7 @@ Global Secure Access provides visibility into the number of users and devices th
  - Unseen tenants: The number of distinct tenant IDs that were seen in the last 24 hours, but not in the previous seven days.
  - Users: The number of distinct user sign-ins to other tenants in the last 24 hours.
  - Devices: The number of distinct devices that signed in to other tenants in the last 24 hours.
-Select the Configure tenant restrictions button to navigate to the Session management are of Global Secure Access, where you can check the settings of your tenant restrictions.
+Select the **Configure tenant restrictions** button to navigate to the Session management are of Global Secure Access, where you can check the settings of your tenant restrictions.
 
 ## Web category filtering
 The Web category filtering widget displays the top categories of web content that are blocked or allowed. These categories can be used to determine what sites or categories of sites you might want to block. Sort the results using the following categories:

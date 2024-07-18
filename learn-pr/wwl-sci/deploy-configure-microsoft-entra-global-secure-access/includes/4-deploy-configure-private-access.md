@@ -83,11 +83,11 @@ On the Quick Access page, you provide a name for the Quick Access app, select a 
 
 **Add an application segment**
 
-The Add Quick Access application segment portion of this process is where you define the FQDNs and IP addresses that you want to include in the traffic for Microsoft Entra Private Access. You can add these resources when you create the Quick Access app or return to add more or edit them later.
+The **Add Quick Access** application segment portion of this process is where you define the FQDNs and IP addresses that you want to include in the traffic for Microsoft Entra Private Access. You can add these resources when you create the Quick Access app or return to add more or edit them later.
 1. Sign in to the Microsoft Entra admin center.
 1. Browse to Global Secure Access > Applications > Quick Access.
-1. Select Add Quick Access application segment.
-1. In the Create application segment panel that opens, select a Destination type.
+1. Select **Add Quick Access** application segment.
+1. In the **Create application segment** panel, select a Destination type.
 1. Enter the appropriate details for the selected destination type. Depending on what you select, the subsequent fields change accordingly.
  - IP address:
    - Internet Protocol version 4 (IPv4) address, such as 192.0.2.1, that identifies a device on the network.

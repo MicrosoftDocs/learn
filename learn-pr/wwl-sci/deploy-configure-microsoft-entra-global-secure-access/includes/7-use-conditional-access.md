@@ -43,7 +43,7 @@ The compliant network Conditional Access policy can be used to protect your Micr
  - Set Configure to Yes.
  - Under Include, select Any location.
  - Under Exclude, choose Selected locations.
-     - Select the All Compliant Network locations location.
+     - Select the All Compliant Network locations.
  - Choose Select.
 1. Under Access controls:
  - Grant, select Block Access, and choose Select.

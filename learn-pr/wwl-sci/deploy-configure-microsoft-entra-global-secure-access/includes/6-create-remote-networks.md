@@ -6,7 +6,7 @@ There are five primary steps to configure a Remote Network. In this phase, you'r
 | Steps | Description |
 | :--- | :--- |
 | Basics | Define the name of your remote network and the region where you want to connect. |
-| Connectivity | Enter the data about your on-premises router. Where the signal comes from. |
+| Connectivity | Enter the data about your on-premises router, where the signal comes from. |
 | Traffic Forwarding | Add a traffic forwarding profile to define the type traffic network traffic to allow through. |
 | Review Configuration | In the step your confirm the setup of the remote network and gather settings you need to configure in the on-premises router. |
 | Setup on-premises router | Use the management console of your on-premises router to enter the Microsoft connectivity setting from previous step. |
