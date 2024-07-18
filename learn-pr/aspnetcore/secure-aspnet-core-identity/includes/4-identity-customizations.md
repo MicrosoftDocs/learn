@@ -2,7 +2,7 @@ In the previous unit, you added default ASP.NET Core Identity functionality to a
 
 ## Extending the Identity data model
 
-By default, Identity represents a user with an `IdentityUser` class. In the previous unit, when you ran the scoffolding tool, you created a class named `RazorPagesPizzaUser` that inherits from `IdentityUser`. In the next unit, you'll modify the derived class to include properties to store the user's first and last name.
+By default, Identity represents a user with an `IdentityUser` class. In the previous unit, when you ran the scaffolding tool, you created a class named `RazorPagesPizzaUser` that inherits from `IdentityUser`. In the next unit, you'll modify the derived class to include properties to store the user's first and last name.
 
 :::image type="content" source="../media/razorpagespizzauser.png" alt-text="Screenshot of RazorPagesPizzaUser class derived from IdentityUser." lightbox="../media/razorpagespizzauser.png":::
 
