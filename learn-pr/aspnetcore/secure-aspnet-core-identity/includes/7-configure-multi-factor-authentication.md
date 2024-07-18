@@ -11,7 +11,7 @@ Let's build everything you need to generate QR codes on the **Configure authenti
 1. In the terminal pane, install the `QRCoder` NuGet package:
 
     ```dotnetcli
-    dotnet add package QRCoder --version 1.4.3
+    dotnet add package QRCoder --version 1.6.0
     ```
 
 1. In the **Explorer** pane, right-click on the *Services* folder and add a new file named *QRCodeService.cs*. Add the following code:
@@ -46,7 +46,7 @@ Let's build everything you need to generate QR codes on the **Configure authenti
 
 1. In *Program.cs*, add the highlighted lines:
 
-    [!code-csharp[](../code/program-after-customization.cs?range=1-17,22-23&highlight=5-6,17)]
+    [!code-csharp[](../code/program-after-customization.cs?range=1-17,22-23&highlight=6,17)]
 
     `QRCodeService` is registered as a singleton service in the IoC container within *Program.cs*.
 

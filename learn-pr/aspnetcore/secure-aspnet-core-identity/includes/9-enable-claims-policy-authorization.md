@@ -27,7 +27,7 @@ You've received a new requirement that the Pizza List page should be visible onl
 
         [!code-csharp[](../code/pages/pizza.cshtml.cs?name=snippet_admincheck&highlight=3,14)]
 
-        You're going to hide the creation/deletion UI elements for non-administrators in the next step. That doesn't prevent an adversary with a tool like [HttpRepl](/aspnet/core/web-api/http-repl/) or Postman from accessing these endpoints directly. Adding this check ensures that if this is attempted, an HTTP 403 status code is returned.
+        You're going to hide the creation/deletion UI elements for non-administrators in the next step. That doesn't prevent an adversary with a tool like [HttpRepl](/aspnet/core/web-api/http-repl/) or curl from accessing these endpoints directly. Adding this check ensures that if this is attempted, an HTTP 403 status code is returned.
 
 1. In *Pages/Pizza.cshtml*, add checks to hide administrator UI elements from non-administrators:
 

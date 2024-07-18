@@ -92,6 +92,7 @@ The default Identity implementation can be added with `dotnet` command-line tool
     dotnet add package Microsoft.AspNetCore.Identity.UI --version 8.0.*
     dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.*
     dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.*
+    dotnet add package Microsoft.EntityFrameworkCore.Tools --version 8.0.*
     ```
 
     These packages install code generation templates and dependencies that are used by the scaffolder.
@@ -105,7 +106,7 @@ The default Identity implementation can be added with `dotnet` command-line tool
 1. Use the scaffolder to add the default Identity components to the project. Run the following command in the terminal:
 
     ```dotnetcli
-    dotnet aspnet-codegenerator identity --useDefaultUI --dbContext RazorPagesPizzaAuth
+    dotnet aspnet-codegenerator identity --useDefaultUI --dbContext RazorPagesPizzaAuth --userClass RazorPagesPizzaUser
     ```
 
     In the preceding command:
@@ -113,6 +114,7 @@ The default Identity implementation can be added with `dotnet` command-line tool
     * The generator identified as `identity` is used to add the Identity framework to the project.
     * The `--useDefaultUI` option indicates that a Razor class library (RCL) containing the default UI elements is used. Bootstrap is used to style the components.
     * The `--dbContext` option specifies the name of an EF Core database context class to generate.
+    * The `--userClass` option specifies the name of the user class to generate. The default user class is `IdentityUser`, but since the user class will be extended in a later unit, a custom user class named `RazorPagesPizzaUser` is specified. The `RazorPagesPizzaUser` class is derived from `IdentityUser`.
 
     The following *:::no-loc text="Areas":::* directory structure appears in the *RazorPagesPizza* directory:
 
@@ -120,6 +122,7 @@ The default Identity implementation can be added with `dotnet` command-line tool
         * *:::no-loc text="Identity":::* (displays on the same line as *Areas*)
             * *:::no-loc text="Data":::*
                 * *:::no-loc text="RazorPagesPizzaAuth.cs":::*
+                * *:::no-loc text="RazorPagesPizzaUser.cs":::*
             * *:::no-loc text="Pages":::*
                 * *:::no-loc text="_ValidationScriptsPartial.cshtml":::*
                 * *:::no-loc text="_ViewStart.cshtml":::*
@@ -131,7 +134,7 @@ The default Identity implementation can be added with `dotnet` command-line tool
 
     The scaffolder also made the following highlighted changes to *Program.cs*, reformatted for readability:
 
-    [!code-csharp[](../code/program.cs?highlight=1-3,5-8,27)]
+    [!code-csharp[](../code/program.cs?highlight=1-3,5-11)]
 
     In the preceding code:
 
@@ -173,7 +176,7 @@ Now that you've verified the connection string, you can generate and run a migra
 1. Install the Entity Framework Core migration tool:
 
     ```dotnetcli
-    dotnet tool install dotnet-ef --version 8.0.7 --global
+    dotnet tool install dotnet-ef --version 8.0.* --global
     ```
 
     The migration tool is a .NET tool that:

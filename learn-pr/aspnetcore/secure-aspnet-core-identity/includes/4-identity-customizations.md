@@ -2,7 +2,7 @@ In the previous unit, you added default ASP.NET Core Identity functionality to a
 
 ## Extending the Identity data model
 
-By default, Identity represents a user with an `IdentityUser` class. One way to extend the data captured at registration time is to create a class deriving from `IdentityUser`. In the next unit, a derived class named `RazorPagesPizzaUser` is created. `RazorPagesPizzaUser` contains properties to store the user's first and last name.
+By default, Identity represents a user with an `IdentityUser` class. In the previous unit, when you ran the scoffolding tool, you created a class named `RazorPagesPizzaUser` that inherits from `IdentityUser`. In the next unit, you'll modify the derived class to include properties to store the user's first and last name.
 
 :::image type="content" source="../media/razorpagespizzauser.png" alt-text="Screenshot of RazorPagesPizzaUser class derived from IdentityUser." lightbox="../media/razorpagespizzauser.png":::
 
@@ -10,9 +10,9 @@ Extending the data model requires changes to the underlying database. Luckily, E
 
 ## Customizing the Identity user interface
 
-The default Identity UI components are packaged in a .NET Standard Razor Class Library (RCL). Because an RCL is used, few files are added to the project when using the default UI.
+The default Identity UI components are packaged in a .NET Standard Razor Class Library (RCL). Because an RCL is used, few files are added to the project when using the default UI. There is no need for physical *.cshtml* files in the project because the RCL provides the UI components.
 
-When customizing the UI, you must first use the `aspnet-codegenerator` tool again to create files to be used in lieu of the RCL. The tool allows you to explicitly select which files are created. UI components from the RCL are used if the corresponding files aren't present.
+When customizing the UI, you must first use the `aspnet-codegenerator` tool again to create *.cshtml* files to be used in lieu of the RCL. The tool allows you to explicitly select which files are created. UI components from the RCL are used if the corresponding files aren't present.
 
 ## Summary
 

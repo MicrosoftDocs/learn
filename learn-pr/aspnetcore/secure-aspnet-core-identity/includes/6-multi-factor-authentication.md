@@ -20,7 +20,9 @@ When registering, the user enters the key into a TOTP-compliant app. Such apps i
 
 * Microsoft Authenticator
 * Google Authenticator
-* LastPass Authenticator
+* Authy
+* Bitwarden
+* *Many others!*
 
 Entering the key into the app can be streamlined with a QR code. The app uses the key and current time to generate and display unique codes every 30 seconds. If the code the app generates matches what the server expects, the authentication succeeds. The algorithm is designed to be forgiving of minor differences between the clocks on your device and the server.
 
