@@ -42,7 +42,7 @@ From the response, copy the value of the custom attribute **id**. For example:
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/userFlowAttributes/$entity",
-    "id": "extension_12345678900000000000000012345678_SpecialDiet",
+    "id": "extension_a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1_SpecialDiet",
     "displayName": "SpecialDiet",
     "description": "Customer's special diet",
     "userFlowAttributeType": "custom",
