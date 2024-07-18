@@ -3,6 +3,7 @@ uid: learn.oxford.implement-cicd-iot-edge
 metadata:
   title: "Implement CI/CD for IoT Edge"
   description: "This module implements CICD pipeline for edge devices."
+  manager: lizross
   ms.date: 06/19/2020
   author: PatAltimore
   ms.author: patricka

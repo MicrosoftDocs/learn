@@ -3,6 +3,7 @@ uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph
 metadata:
   title: Explore the Azure Digital Twins APIs for creating a graph
   description: Try out the Azure Digital Twins APIs and use them to create a graph.
+  manager: lizross
   ms.date: 03/14/2024
   author: baanders
   ms.author: baanders

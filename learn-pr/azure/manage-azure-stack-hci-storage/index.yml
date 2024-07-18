@@ -3,6 +3,7 @@ uid: learn-pr.azure.manage-azure-stack-hci-storage
 metadata:
   title: 'Plan and implement Azure Stack HCI storage'
   description: Microsoft Azure Stack HCI provides highly resilient and performant software-defined storage.
+  manager: femila
   ms.date: 03/30/2022
   author: JasonGerend
   ms.author: jgerend

@@ -3,6 +3,7 @@ uid: learn.iot.synchronize-azure-digital-twins-with-iot-device-data
 metadata:
   title: Synchronize Azure Digital Twins with IoT device data
   description: Set up data flow from a simulated IoT device into Azure Digital Twins. 
+  manager: lizross
   ms.date: 03/15/2024
   author: baanders
   ms.author: baanders

@@ -3,6 +3,7 @@ uid: learn.iot.introduction-to-azure-digital-twins
 metadata:
   title: Introduction to Azure Digital Twins
   description: Learn about Azure Digital Twins and evaluate whether it's appropriate for digitally representing your IoT environment.
+  manager: lizross
   ms.date: 03/13/2024
   author: baanders
   ms.author: baanders
