@@ -192,7 +192,7 @@ We can deploy this template using one of the following methods:
 
 * Deploy using the Azure portal
 * Deploy using the PowerShell `Az` module.
-* Deploy from the Azure Command Line Interface (CLI)
+* Deploy from the Azure Command Line Interface (CLI).
 
 In this module, we'll deploy templates using the Azure CLI and the `az deployment group` commands.
 
