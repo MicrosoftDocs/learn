@@ -43,7 +43,6 @@ resources. It requires PowerShell, a command-line shell and scripting language.
 For example, Azure PowerShell provides the `New-AzVM` cmdlet to create a virtual machine in your
 Azure subscription. To use it, launch PowerShell and execute the following command:
 
-
 ```azurepowershell
 $azVmParams = @{
     ResourceGroupName = 'CrmTestingResourceGroup'
