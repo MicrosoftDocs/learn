@@ -4,7 +4,7 @@ title: Safeguard public sector data with Azure
 metadata:
   title: Safeguard public sector data with Azure
   description: Conceptual introduction to data residency and sovereignty and overview of the options provided by Azure for public agencies to protect their data in the cloud. 
-  ms.service: azure-goverment
+  ms.service: azure-government
   manager: jmartens
   ms.date: 07/25/2023
   author: EliotSeattle
