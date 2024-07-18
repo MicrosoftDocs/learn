@@ -82,7 +82,7 @@ POST https://graph.microsoft.com/beta/identity/customAuthenticationExtensions
     "behaviorOnError": null,
     "authenticationConfiguration": {
         "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-        "resourceId": "api://auth-api.woodgrovedemo.com/12345678-1234-1234-1234-000000000000"
+        "resourceId": "api://auth-api.woodgrovedemo.com/a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1"
     },
     "endpointConfiguration": {
         "@odata.type": "#microsoft.graph.httpRequestEndpoint",
@@ -103,7 +103,7 @@ From the response, copy the value of the **id**. For example:
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/customAuthenticationExtensions/$entity",
     "@odata.type": "#microsoft.graph.onAttributeCollectionStartCustomExtension",
-    "id": "22222222-2222-3333-3333-444444444444",
+    "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
     "displayName": "Prepopulate sign-up attributes",
     "description": "Prepopulate sign-up attributes from a REST API",
 }
@@ -149,7 +149,7 @@ POST https://graph.microsoft.com/beta/identity/authenticationEventListeners
     "handler": {
         "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler",
         "customExtension": {
-            "id": "22222222-2222-3333-3333-444444444444"
+            "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
         }
     }
 }
@@ -171,9 +171,9 @@ PUT https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{user-fl
 ##### Example
 
 ```json
-PUT https://graph.microsoft.com/beta//identity/authenticationEventsFlows/44444444-4444-4444-4444-445555555555/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollectionSubmit/microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler/customExtension/$ref
+PUT https://graph.microsoft.com/beta//identity/authenticationEventsFlows/bbbbbbbb-1111-2222-3333-cccccccccccc/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollectionSubmit/microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler/customExtension/$ref
 {
-    "@odata.id": "https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/44444444-2222-3333-3333-444444444444"
+    "@odata.id": "https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 }
 ```
 
