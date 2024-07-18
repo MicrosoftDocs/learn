@@ -11,7 +11,6 @@ There are five primary steps to configure a Remote Network. In this phase, you'r
 | Traffic Forwarding | Add a traffic forwarding profile to define the type traffic network traffic to allow through. |
 | Review Configuration | In the step your confirm the setup of the remote network and gather settings you need to configure in the on-premises router. |
 | Setup on-premises router | Use the management console of your on-premises router to enter the Microsoft connectivity setting from previous step. |
-| | |
 
 ## Configure 1. Basics
 1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.

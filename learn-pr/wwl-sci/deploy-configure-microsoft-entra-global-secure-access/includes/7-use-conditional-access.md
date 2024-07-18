@@ -7,7 +7,6 @@ There are several new types of checks introduced into Conditional Access with Gl
 | Compliant network check | This compliant network check ensures users connect from a verified network connectivity model for their specific tenant and are compliant with security policies enforced by administrators. |
 | Private Access apps | Applying Conditional Access policies to your Microsoft Entra Private Access apps is a powerful way to enforce security policies for your internal, private resources. |
 | Source IP restoration | With a cloud based network proxy between users and their resources, the IP address that the resources see doesn't match the actual source IP address. Source IP restoration in Global Secure Access allows backward compatibility for Microsoft Entra customers to continue using original user Source IP. |
-| | |
 
 To use the **Compliant network check** and the **Source IP restoration** capabilities, you need to have **Global Secure Access signaling for Conditional Access** enabled. This is step only has to be performed once, so it's listed before we go into the direct Conditional Access options. You perform this step before using any of the below features in Conditional Access.
 
@@ -82,4 +81,3 @@ Conditional Access policies are powerful tools We recommend excluding the follow
 
  - **Emergency access or break-glass accounts** to prevent tenant-wide account lockout.
  - **Service accounts and service principals**, such as the Microsoft Entra Connect Sync Account. Service accounts are non-interactive accounts that aren't tied to any particular user.
- - 

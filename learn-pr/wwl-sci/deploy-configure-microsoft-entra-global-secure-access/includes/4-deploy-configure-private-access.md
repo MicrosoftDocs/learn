@@ -4,11 +4,10 @@ Steps:
 
 | Steps | Description |
 | :--- | :--- |
-| 1. Configure a Microsoft Entra private network connector and connector group.| tbd |
-| 2. Configure Quick Access to your private resources. | tbd |
-| 3. Enable the Private Access traffic forwarding profile. | tbd |
-| 4. Install and configure the Global Secure Access Client on end-user devices. | Use Conditional Access and Global Secure Access to prevent attacks. |
-| | |
+| 1. Configure a Microsoft Entra private network connector and connector group.| Create connection between an on-premises server and Global Secure Access. |
+| 2. Configure Quick Access to your private resources. | Define specific fully qualified domain names (FQDNs) or IP addresses of private resources to include in Microsoft Entra Private Access. |
+| 3. Enable the Private Access traffic forwarding profile. | Turn on Private Access and link from on-premises router to remote networks.  |
+| 4. Install and configure the Global Secure Access Client on end-user devices. | Deploy the client software onto devices, so they can access the traffic flow. |
 
 ## Configure a Microsoft Entra private network connector and connect groups
 Connectors are lightweight agents that sit on a server in a private network and facilitate the outbound connection to the Global Secure Access service. Connectors must be installed on a Windows Server that has access to the backend resources and applications. You can organize connectors into connector groups, with each group handling traffic to specific applications.
@@ -26,7 +25,6 @@ Open ports for **outbound**:
 | :--- | :--- |
 | 80 | Downloading certificate revocation lists (CRLs) while validating the TLS/SSL certificate |
 | 443 | All outbound communication with the Application Proxy service |
-| | |
 
 Allow access to some URLs:
 
@@ -36,7 +34,6 @@ Allow access to some URLs:
 | crl3.digicert.com crl4.digicert.com ocsp.digicert.com crl.microsoft.com oneocsp.microsoft.com ocsp.msocsp.com | 80/HTTP | The connector uses these URLs to verify certificates. |
 | login.windows.net secure.aadcdn.microsoftonline-p.com *.microsoftonline.com *.microsoftonline-p.com *.msauth.net *.msauthimages.net *.msecnd.net *.msftauth.net *.msftauthimages.net *.phonefactor.net enterpriseregistration.windows.net management.azure.com policykeyservice.dc.ad.msft.net ctldl.windowsupdate.com www.microsoft.com/pkiops | 443/HTTPS | The connector uses these URLs during the registration process. |
 | ctldl.windowsupdate.com www.microsoft.com/pkiops | 80/HTTP | The connector uses these URLs during the registration process. |
-| | | |
 
 **Install the connector using Microsoft Entra**
 1. Sign into the Microsoft Entra admin center as a Global Administrator of the directory that uses Application Proxy.
@@ -73,7 +70,7 @@ In Microsoft Entra:
 1. Select Save.
 
 ## Configure Quick Access for Global Secure Access
-With Global Secure Access, you can define specific fully qualified domain names (FQDNs) or IP addresses of private resources to include in the traffic for Microsoft Entra Private Access. Your organization's employees can then access the apps and sites that you specify. This article describes how to configure Quick Access for Microsoft Entra Private Access.
+With Global Secure Access, you can define specific fully qualified domain names (FQDNs) or IP addresses of private resources to include in the traffic for Microsoft Entra Private Access. Your organization's employees can then access the apps and sites that you specify. Explore how to configure Quick Access for Microsoft Entra Private Access.
 
 **Set up Quick Access name and connector group**
 
@@ -121,7 +118,7 @@ The following table provides the most commonly used ports and their associated n
 | 443 | Hypertext Transfer Protocol Secure (HTTPS) |
 | 445 | Server Message Block (SMB) file sharing |
 | 3389 | Remote Desktop Protocol (RDP) |
-| | | 
+
 1. Select the Save button when finished.
 
 **Assign users and groups for Quick Access**

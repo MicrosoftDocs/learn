@@ -8,7 +8,6 @@ Steps:
 | 2. Install the Global Secure Access Client on end-user devices. | Download and install the client app to capture and control access from the client. |
 | 3. Enable tenant restrictions. | Configure which tenants / organizations are allowed to blocked |
 | 4. Enable enhanced Global Secure Access signaling and Conditional Access. | Use Conditional Access and Global Secure Access to prevent attacks. |
-| | |
 
 ## Enable Microsoft traffic forwarding profile
 
@@ -25,7 +24,6 @@ Turns on Microsoft traffic forwarding and create the following configurations in
 | Policies (network routing) | 1. **Exchange Online**, 2. **SharePoint Online and OneDrive for Business**, and 3. **Entra ID and MSGraph** - These use fully qualified domain names or IP subnets to manage network traffic. |
 | Conditional Access Policy | **Linked Conditional Access policies** - Captures all traffic to Microsoft Services, routes to the network policies defined earlier if conditions are met. |
 | User and Group | Specify specific users or groups that this traffic forward applies to. |
-| | |
 
 Refer to the documentation article for more details - [Enable and manage Microsoft traffic forwarding](/entra/global-secure-access/how-to-manage-microsoft-profile).
 
@@ -77,7 +75,6 @@ Once you created the tenant restriction policies, you can utilize Global Secure 
 | 2. | A user with a Contoso-managed device tries to access a Microsoft Entra integrated app with an unsanctioned external identity. |
 | 3. | Authentication plane protection: Microsoft Entra ID, with Contoso's policy, blocks unsanctioned external accounts from accessing external tenants. |
 | 4. | Data plane protection: If the user again tries to access an external unsanctioned application by copying an authentication response token they obtained outside of Contoso's network and pasting it into the device, are blocked. The token mismatch triggers reauthentication and blocks access. For SharePoint Online, any attempt at anonymously accessing resources is blocked. |
-| | |
 
 ## Enable enhanced Global Secure Access signaling and Conditional Access
 Organizations who use Conditional Access along with the Global Secure Access, can prevent malicious access to Microsoft apps, SaaS apps, and private line-of-business (LoB) apps. You can configure multiple conditions to provide defense-in-depth. These conditions might include device compliance, location, and more to provide protection against user identity or token theft. Global Secure Access introduces the concept of a compliant network within Conditional Access. This compliant network check ensures users connect from a verified network connectivity.
