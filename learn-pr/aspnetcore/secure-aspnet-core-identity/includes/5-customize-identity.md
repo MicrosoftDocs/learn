@@ -264,4 +264,4 @@ You should also test the changes you made to the profile management form.
 
 ## Summary
 
-In this unit, you customized Identity to store custom user information. You also customized the confirmation email. In the next unit, you'll learn about implementing multi-factor authentication in Identity.
+In this unit, you customized Identity to store custom user information. You also customized the confirmation email. In the next unit, you'll learn about implementing multifactor authentication in Identity.
