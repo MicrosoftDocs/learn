@@ -21756,12 +21756,6 @@
       "redirect_url": "/training/modules/deploy-azure-database-for-mysql/what-azure-database-mysql",
       "redirect_document_id": false
     },
- 
-
-
-
-
-
     {
       "source_path": "learn-pr/wwl-data-ai/work-dataframes-advanced-methods-azure-databricks/index.md",
       "redirect_url": "/training/modules/use-apache-spark-azure-databricks/",
