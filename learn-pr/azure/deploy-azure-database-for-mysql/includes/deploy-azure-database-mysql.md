@@ -1,4 +1,4 @@
-Now that you've reviewed the deployment and connectivity options associated with Azure Database for MySQL – Flexible Server, it's time to test the process of provisioning a server and validating its availability by connecting to it. In this unit, you step through a sample deployment and connect to the server by using the mysql.exe utility from the Azure Cloud Shell.
+Now that you reviewed the deployment and connectivity options associated with Azure Database for MySQL – Flexible Server, it's time to test the process of provisioning a server and validating its availability by connecting to it. In this unit, you step through a sample deployment and connect to the server using the mysql.exe utility from the Azure Cloud Shell.
 
 ### Deploy an Azure Database for MySQL flexible server
 
@@ -11,11 +11,11 @@ Use the following procedure to deploy an Azure Database for MySQL flexible serve
 
 1. At the top of the window, in the **Search resources, services, and docs** text box at the top of the page, enter **MySQL** and then select **Azure Database for MySQL flexible servers**.
 
- :::image type="content" source="../media/deploy-azure-database-mysql/4-search-mysql.png" alt-text="Screenshot of the search bar at the top of the portal showing results from searching for mysql.":::
+:::image type="content" source="../media/deploy-azure-database-mysql/4-search-mysql.png" alt-text="Screenshot of the search bar at the top of the portal showing results from searching for mysql.":::
 
 1. On the **Azure Database for MySQL flexible servers** page, select **+ Create**, then select **Flexible server**.
 
- :::image type="content" source="../media/deploy-azure-database-mysql/4-create-flexible-server-menu.png" alt-text="Screenshot of the expanded Create menu with the Flexible server menu item highlighted.":::
+:::image type="content" source="../media/deploy-azure-database-mysql/4-create-flexible-server-menu.png" alt-text="Screenshot of the expanded Create menu with the Flexible server menu item highlighted.":::
 
 1. On the **Flexible server** page, on the **Basics** tab, enter the information in the following table.
 
@@ -26,12 +26,12 @@ Use the following procedure to deploy an Azure Database for MySQL flexible serve
    | **Server name** | <server_name> | A valid and globally unique name that identifies your flexible server. The server's fully qualified name consists of the <server_name> you choose, followed by the suffix mysql.database.azure.com. The server name can contain only lowercase letters, numbers, and the hyphen (-) character. It must contain between 3 and 63 characters. |
    | **Region** | The name of an Azure region | The name of the Azure region that hosts your server. Select any region that supports Azure Database for MySQL - Flexible Server deployment that is nearest the location of the computer you use to run this exercise. |
    | **MySQL version** | 8.0 | The MySQL major version your app uses. |
-   | **Workload type** | For development or hobby projects | The intended workload type, which determines the VM SKU to host the server. |
-   | **Availability zone** | No preference | This setting allows you to specify an availability zone where the server's deployed. Your choice is typically based on the zone hosting the application tier. |
-   | **Enable high availability** | Not selected | This setting determines whether you want to have a replica server automatically provisioned in another availability zone (for zonal deployments). This option requires the choice of either **General Purpose** or **Business Critical** VM SKUs compute tier). |
+   | **Workload type** | For development or hobby projects | The intended workload type determines the virtual machine (VM) SKU to host the server. |
+   | **Availability zone** | No preference | This setting allows you to specify an availability zone where the servers are deployed. Your choice is typically based on the zone hosting the application tier. |
+   | **Enable high availability** | Not selected | This setting determines whether you want a replica server automatically provisioned in another availability zone (for zonal deployments). This option requires the choice of either **General Purpose** or **Business Critical** VM SKUs compute tier). |
    | **Authentication method** | MySQL authentication only | Authenticate with the admin username and password only. |
-   | **Admin username** | mysqladmin | A valid user name, which you configure as the admin account for the MySQL server instance. In this case, we're using *mysqladmin*. Don't use azure_superuser, admin, administrator, root, guest, or public. |
-   | **Password** | `<Pword>` | A valid password assigned to the admin account. In this case, we're using `<Pword>`. It must contain between 8 and 128 characters and include characters from three categories: English uppercase letters, English lowercase letters, numbers (0 through 9), and non-alphanumeric characters (such as ! $, #, %). |
+   | **Admin username** | mysqladmin | A valid username you configure as the admin account for the MySQL server instance. In this case, we're using *mysqladmin*. Don't use azure_superuser, admin, administrator, root, guest, or public. |
+   | **Password** | `<Pword>` | A valid password assigned to the admin account. In this case, we're using `<Pword>`. It must contain between 8 and 128 characters and include characters from three categories: English uppercase letters, English lowercase letters, numbers (0 through 9), and nonalphanumeric characters (such as ! $, #, %). |
 
 1. On the **Basics** tab, under **Compute + Storage**, select **Configure server**.
 
@@ -63,14 +63,14 @@ Use the following procedure to deploy an Azure Database for MySQL flexible serve
 
 1. Select **Review + create**.
 
-1. On the **Review + create** page, review the settings that you configured, and then select **Create**.
+1. Review the settings you configured on the **Review + create** page, and then select **Create**.
 
     > [!NOTE]  
     > Wait for the provisioning process to complete, which might take about 10 minutes.
 
-1. After the deployment is complete, select **Go to resource** to navigate to the page for the newly deployed Azure Database for MySQL flexible server.
+1. After the deployment, select **Go to resource** to navigate to the page for the newly deployed Azure Database for MySQL flexible server.
 
-1. On the page for your flexible server, in the navigation menu, under **Settings**, select **Databases**, and then select **Add**.
+1. On the page for your flexible server, in the navigation menu, under **Settings**, select **Databases**, then select **Add**.
 
 1. In the **Create database** pane, in the **Name** text box, enter **testdb**, accept the default character set and collation values, and then select **Save**.
 

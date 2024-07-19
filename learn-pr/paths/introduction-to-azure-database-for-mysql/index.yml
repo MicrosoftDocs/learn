@@ -4,7 +4,7 @@ title: Azure Database for MySQL
 metadata:
   title: Azure Database for MySQL
   description: Azure Database for MySQL
-  ms.date: 07/08/2024
+  ms.date: 07/11/2024
   author: markingmyname
   ms.author: maghan
   ms.topic: learning-path
@@ -25,7 +25,7 @@ products:
 - azure-database-mysql
 modules:
 - learn.intro-to-azure-database-for-mysql
-- learn.create-azure-database-for-mysql
+- learn.deploy-azure-database-for-mysql
 - learn.develop-apps-with-azure-database-mysql
 - learn.explore-azure-database-for-mysql-features-support-mission-critical-workloads
 - learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads

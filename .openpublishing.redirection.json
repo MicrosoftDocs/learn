@@ -21676,6 +21676,87 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/connect-azure-database-mysql.yml",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/connect-azure-database-mysql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/include/connect-azure-database-mysql.md",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/connect-azure-database-mysql",
+      "redirect_document_id": false
+    },
+
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/deploy-azure-database-mysql.yml",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/deploy-azure-database-mysql.yml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/include/deploy-azure-database-mysql.md",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/deploy-azure-database-mysql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/how-deploy-connect-azure-database-mysql.yml",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/how-deploy-connect-azure-database-mysql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/include/how-deploy-connect-azure-database-mysql.md",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/how-deploy-connect-azure-database-mysql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/index.yml",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/include/index.md",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/introduction.yml",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/include/introduction.md",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/knowledge-check.yml",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/include/knowledge-check.md",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/summary.yml",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/include/summary.md",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/what-azure-database-mysql.yml",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/what-azure-database-mysql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/include/what-azure-database-mysql.md",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/what-azure-database-mysql",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/work-dataframes-advanced-methods-azure-databricks/index.md",
       "redirect_url": "/training/modules/use-apache-spark-azure-databricks/",
       "redirect_document_id": false
