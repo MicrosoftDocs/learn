@@ -7,6 +7,7 @@ metadata:
   author: cryophobia
   ms.author: chrvaw
   ms.topic: module
+  ms.service: azure
 title: Fundamentals of computer networking
 summary: Learn the fundamental principles of computer networking to prepare you for the Azure admin and developer learning paths.
 abstract: | 
