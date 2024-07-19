@@ -3,13 +3,13 @@ uid: learn.wwl.deploy-configure-microsoft-entra-global-secure-access
 metadata:
   title: Deploy and Configure Microsoft Entra Global Secure Access
   description: "The modern workforce transitioned from traditional office settings to working from nearly anywhere. This change in working location necessitates an identity-aware, cloud-delivered network perimeter. This identity-aware perimeter is known as Security Service Edge (SSE). The Microsoft SSE solution includes Microsoft Entra Internet Access and Microsoft Entra Private Access, collectively referred to as Global Secure Access. This solution is founded on Zero Trust principles, emphasizing least privilege, explicit verification, and an assumption of breach to ensure security in the cloud era."
-  ms.date: 07/18/2024
+  ms.date: 07/19/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
   ms.service: entra
   ms.subservice: architecture
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Deploy and Configure Microsoft Entra Global Secure Access
 summary: Global Secure Access lets you put identity as the gatekeeper to your network access. Use Zero Trust principles to protect your data and apps.
 abstract: |
