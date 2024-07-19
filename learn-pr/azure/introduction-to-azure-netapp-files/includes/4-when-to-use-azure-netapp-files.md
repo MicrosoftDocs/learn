@@ -35,8 +35,6 @@ The following diagram depicts a possible architecture. The components interact a
 - In the Azure NetApp Files subnet, Azure NetApp Files provides NFS access to the data and log files.
 - The connection protocol Oracle Direct NFS (dNFS) improves performance and throughput.
 
-Azure NetApp Files makes it easy to create, migrate, and run file-based applications with no code changes. This shared file-storage service is a joint development from Microsoft and NetApp, a Microsoft partner. Azure Virtual Network is a networking service that manages virtual private networks in Azure. Azure Virtual Network also provides scalability, availability, isolation, and other benefits of Azure infrastructure. Oracle Database is a multi-model database management system. It supports various data types and workloads.
-
 :::image type="content" source="../media/4-oracle-deployment.png" alt-text="Diagram depicting an Oracle Database deployment on Azure NetApp Files." lightbox="../media/4-oracle-deployment.png":::
 
 ### Should an Azure Virtual Desktop team use Azure NetApp Files?
@@ -51,7 +49,7 @@ The following diagram depicts one possible architecture the company could use fo
 
 ### Should a research and development team use Azure NetApp Files?
 
-Most of these tasks require compute-intensive and data-intensive operations such as computer-aided design, 3D modeling, and detailed simulations. As such, they require high IOPS, low latency, and high availability. These tasks often create extreme usage swings, where usage is high during, say, a complex simulation, then down to almost nothing when the simulation ends. R&D team members require mixed SMB/NFS protocol access with POSIX compliance. All of these considerations work in favor of migrating the R&D team's applications to Azure and using Azure NetApp Files as the shared-storage service.
+Most R&D teams have applications that require compute-intensive and data-intensive operations such as computer-aided design, 3D modeling, and detailed simulations. As such, they require high IOPS, low latency, and high availability. These tasks often create extreme usage swings, where usage is high during, say, a complex simulation, then down to almost nothing when the simulation ends. R&D team members require mixed SMB/NFS protocol access with POSIX compliance. All of these considerations work in favor of migrating the R&D team's applications to Azure and using Azure NetApp Files as the shared-storage service.
 
 The following image depicts a possible setup for running a high-performance computing application in an Azure virtual network. The setup uses Azure NetApp Files as the shared storage for the application. An R&D team member accesses the front end through a Windows or Linux virtual machine. The HPC application runs in the Compute subnet, which consists of a scale set of Linux virtual machines. The shared storage for the scale set comes from a designated subnet containing an Azure NetApp Files volume.
 
