@@ -3,11 +3,11 @@ Key networking and security features in Azure Database for MySQL – Flexible Se
 
 ### Configure network access
 
-When creating a MySQL flexible server, you can select either private access through an Azure Virtual Network, or public access for allow-listed IP addresses with an optional private endpoint. After completing the **Basics** section, select **Next: Networking**, and then select either **Public access and Private endpoint** or **Private access**:
+When creating a MySQL flexible server, you can select either private access through an Azure Virtual Network or public access for allow-listed IP addresses with an optional private endpoint. After completing the **Basics** section, select **Next: Networking**, and then select either **Public access and Private endpoint** or **Private access**:
 
 :::image type="content" source="../media/2-configure-networking-and-security-features/networking-connectivity-public-private.png" alt-text="Screenshot of the network connectivity choice between public and private access." lightbox="../media/2-configure-networking-and-security-features/networking-connectivity-public-private.png":::
 
-If you select **Public access and Private endpoint**, you can choose whether to expose the database to the internet. If **Allow public access** is unselected, the database will not be accessible using a public IP address; only by private endpoints. To keep public internet access, select **Allow public access**, then, under the **Firewall rules** section, add IP addresses or ranges to the allowlist. To add all Azure services on the Azure network to the allowlist, select **Allow public access from any Azure service within Azure to this server**.
+If you select **Public access and Private endpoint**, you can choose whether to expose the database to the internet. If **Allow public access** is unselected, the database will be accessible only by private endpoints and not using a public IP address. To keep public internet access, select **Allow public access**, then, under the **Firewall rules** section, add IP addresses or ranges to the allowlist. To add all Azure services on the Azure network to the allowlist, select **Allow public access from any Azure service within Azure to this server**.
 
 :::image type="content" source="../media/2-configure-networking-and-security-features/networking-connectivity-public-access-firewalls.png" alt-text="Screenshot of the network connectivity selection for public access, and a list of firewall rules." lightbox="../media/2-configure-networking-and-security-features/networking-connectivity-public-access-firewalls.png":::
 

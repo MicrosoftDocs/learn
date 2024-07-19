@@ -13,6 +13,6 @@ In addition, as WT hires more employees, their DBA team has struggled to keep up
 
 You'll evaluate, compare, and understand Azure Database for MySQL - Flexible Server's features to support Wingtip Toys' mission-critical operations. You'll learn about networking, security, business continuity, high availability, backups, performance, IOPS, and read replicas.
 
-## Primary goal
+## What is the goal?
 
-By the end of this exercise, you'll have chosen settings during flexible server creation and learned how to change them afterwards. You'll have reviewed how to monitor the flexible server's operations and make and restore backups.
+By the end of this module, you'll have chosen settings during flexible server creation and learned how to change them afterwards. You'll have reviewed how to monitor the flexible server's operations and make and restore backups.

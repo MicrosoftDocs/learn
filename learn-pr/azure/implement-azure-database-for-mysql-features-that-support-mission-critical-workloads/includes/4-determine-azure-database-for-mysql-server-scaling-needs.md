@@ -1,4 +1,4 @@
-When it comes to sizing compute resources, consider whether existing and forecasted usage are well within capacity. You can gather necessary information by monitoring basic performance metrics such as CPU and RAM utilization. It might be possible to use the slow query log to identify and optimize poorly performing queries and remedy the performance problem without scaling the compute size. You should also monitor I/O performance to make sure database reads and writes aren't a performance bottleneck. Another option to effectively increase available capacity on the main database is to provision a read replica to shift query load.
+When it comes to sizing compute resources, consider whether existing and forecasted usage are well within capacity. You can get the required information by monitoring basic performance metrics, such as CPU and RAM utilization. It might be possible to use the slow query log to identify and optimize poorly performing queries and remedy the performance problem without scaling the compute size. You should also monitor I/O performance to make sure database reads and writes aren't a performance bottleneck. Another option to effectively increase available capacity on the main database is to provision a read replica to shift query load.
 ## Monitor database performance metrics
 
 The Azure portal presents access to a [number of metrics](/azure/mysql/flexible-server/concepts-monitoring) that you can use to monitor database performance. For example, you can visualize the CPU percentage used by a flexible server.
@@ -9,7 +9,7 @@ As CPU utilization nears 100%, database performance degrades severely. As a resu
 
 You can view your performance metrics in the monitoring overview workbook. To access the overview workbook, perform these steps:
 
-1. In the Azure portal, on the left pane, under Monitoring for your Azure Database for MySQL flexible server instance, select Workbooks.
+1. In the Azure portal, on the left pane, under Monitoring for your Azure Database for MySQL flexible server instance, select **Workbooks**.
 
  :::image type="content" source="../media/4-determine-azure-database-for-mysql-server-scaling-needs/monitor-workbooks.png" alt-text="Screenshot of the monitoring section showing the list of workbooks." lightbox="../media/4-determine-azure-database-for-mysql-server-scaling-needs/monitor-workbooks.png":::
 
