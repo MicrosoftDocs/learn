@@ -99,6 +99,8 @@ The IoT Edge device is now sending the telemetry through the **filterfunction** 
 
 1. Select **Modules**, and then select **Import modules from manifest**.
 
+    :::image type="content" source="../media/7-import-modules-manifest.png" alt-text="Screenshot that shows how to import modules from manifest.":::
+
 1. In the **Import modules** dialog, select **Environmental Sensor**, and then select **Import**.
 
 :::image type="content" source="../media/7-module-filterfunction.png" alt-text="Screenshot that shows the FilterFunction module added to the device template.":::
