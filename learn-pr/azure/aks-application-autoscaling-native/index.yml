@@ -3,6 +3,7 @@ uid: learn.aks-application-autoscaling-native
 metadata:
   title: Application scalability on AKS with HorizontalPodAutoscalers
   description: Explore how to scale your deployed applications with HorizontalPodAutoscalers in AKS.
+  manager: rayoflores
   ms.date: 01/05/2024
   author: nickomang
   ms.author: nickoman

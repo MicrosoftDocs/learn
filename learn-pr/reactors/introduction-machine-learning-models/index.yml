@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: module
   ms.custom: team=nextgen
+  ms.service: machine-learning
 title: Introduction to machine learning models 
 summary: Learn how to use machine learning models for data science operations.
 abstract: |

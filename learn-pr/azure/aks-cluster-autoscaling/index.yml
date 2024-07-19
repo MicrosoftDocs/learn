@@ -4,6 +4,7 @@ metadata:
   type: standard
   title: Automatically scale your AKS clusters with the cluster autoscaler
   description: Learn how to configure automatic scaling for your AKS clusters using the cluster autoscaler.
+  manager: rayoflores
   ms.date: 06/06/2024
   author: nickomang
   ms.author: nickoman

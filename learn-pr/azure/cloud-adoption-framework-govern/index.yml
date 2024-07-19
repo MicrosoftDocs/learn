@@ -2,27 +2,27 @@
 uid: learn.azure.cloud-adoption-framework-govern
 metadata:
   title: Address tangible risks with the Govern methodology of the Cloud Adoption Framework for Azure
-  description: Any technical change introduces risk in your cloud environment. Learn how to evaluate risks and implement guardrails to help keep you safe as you adopt the cloud.
-  ms.date: 08/08/2023
+  description: Learn about how technical change introduces risk in your cloud environment and how to evaluate risks and implement guardrails to help keep you safe as you adopt the cloud.
+  ms.date: 07/15/2024
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: module
   ms.service: caf
   ms.subservice: caf-methodology-govern
 title: Address tangible risks with the Govern methodology of the Cloud Adoption Framework for Azure
-summary: Without proper governance, it can be difficult and laborious to maintain consistent control across a portfolio of workloads. Fortunately, cloud-native tools like Azure Policy and Azure Blueprints provide convenient means to establish those controls. The Govern methodology helps you evaluate and establish corporate policies and disciplines to mitigate tangible risks.
+summary: Without proper governance, it can be difficult and laborious to maintain consistent control across a portfolio of workloads. Fortunately, cloud-native tools like Azure Policy provide convenient means to establish those controls. The Govern methodology helps you evaluate and establish corporate policies and disciplines to mitigate tangible risks.
 abstract: |
   In this module, you'll:
-  - Establish processes to properly govern cloud adoption.
-  - Classify tangible risks based on the reference cloud adoption plan.
-  - Integrate corporate policies to mitigate tangible risks.
-  - List implementation strategies to mitigate risks.
-  - Demonstrate Azure Policy additions that implement risk mitigation strategies.
-  - Prioritize future governance investments.
+  - Learn about the Cloud Adoption Framework Govern methodology.
+  - Build a cloud governance team to oversee cloud governance.
+  - Assess cloud risks to determine which policies to implement.
+  - Document cloud governance policies to ensure transparency.
+  - Enforce cloud governance policies to ensure compliance.
+  - Monitor cloud governance to maintain compliance and refine policies.
 
 prerequisites: |
-  - Foundational understanding of IT governance processes.
-  - An understanding of your organization's governance requirements that are relevant to your cloud adoption plan.
+  - A foundational understanding of IT governance processes
+  - An understanding of your organization's governance requirements that are relevant to your cloud adoption plan
 
 iconUrl: /training/achievements/address-risks-caf-govern.svg
 ratingEnabled: true
@@ -47,14 +47,14 @@ subjects:
 - threat-protection
 - insider-risk
 units:
-- learn.azure.cloud-adoption-framework-govern.1-introduction
-- learn.azure.cloud-adoption-framework-govern.2-customer-narrative
-- learn.azure.cloud-adoption-framework-govern.3-methodology
-- learn.azure.cloud-adoption-framework-govern.4-corporate-policies
-- learn.azure.cloud-adoption-framework-govern.5-governance-disciplines
-- learn.azure.cloud-adoption-framework-govern.6-knowledge-check
-- learn.azure.cloud-adoption-framework-govern.7-deploy-governance-foundation
-- learn.azure.cloud-adoption-framework-govern.8-mature-cost-management
-- learn.azure.cloud-adoption-framework-govern.9-summary
+- learn.azure.cloud-adoption-framework-govern.govern-introduction
+- learn.azure.cloud-adoption-framework-govern.narrative
+- learn.azure.cloud-adoption-framework-govern.govern-methodology
+- learn.azure.cloud-adoption-framework-govern.assess-risks
+- learn.azure.cloud-adoption-framework-govern.document-policies
+- learn.azure.cloud-adoption-framework-govern.enforce-policies
+- learn.azure.cloud-adoption-framework-govern.monitor-cloud-governance
+- learn.azure.cloud-adoption-framework-govern.knowledge-check
+- learn.azure.cloud-adoption-framework-govern.govern-summary
 badge:
   uid: learn.azure.cloud-adoption-framework-govern.badge

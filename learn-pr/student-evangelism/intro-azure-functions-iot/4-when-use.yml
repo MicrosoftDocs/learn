@@ -9,7 +9,6 @@ metadata:
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen
-  ms.service: iot-hub
 durationInMinutes: 8 # dummy number at present
 content: |
   [!include[](includes/4-when-use.md)]

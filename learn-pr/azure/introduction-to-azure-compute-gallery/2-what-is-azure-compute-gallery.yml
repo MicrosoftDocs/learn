@@ -8,7 +8,6 @@ metadata:
   author: tomvcassidy
   ms.author: tomcassidy
   ms.topic: unit
-  ms.service: azure-virtual-machines
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-is-azure-compute-gallery.md)]

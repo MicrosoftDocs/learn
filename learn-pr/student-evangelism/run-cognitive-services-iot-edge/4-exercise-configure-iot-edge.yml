@@ -9,7 +9,6 @@ metadata:
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen, devx-track-azurecli
-  ms.service: iot-hub
 durationInMinutes: 12 # dummy number at present
 content: |
   [!include[](includes/4-exercise-configure-iot-edge.md)]

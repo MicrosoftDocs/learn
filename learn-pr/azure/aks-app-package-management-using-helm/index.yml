@@ -7,6 +7,8 @@ metadata:
   author: schaffererin
   ms.author: schaffererin
   ms.topic: module
+  ms.service: azure-kubernetes-service
+  manager: rayoflores
   ms.date: 02/20/2024
 summary: Helm is an application package manager for Kubernetes that you use to standardize and simplify the deployment of cloud-native applications on Kubernetes. Here, you learn how to install third-party packages, called Helm charts, and how to create and install Helm charts for the workloads your teams develop.
 abstract: |

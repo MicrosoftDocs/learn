@@ -3,6 +3,8 @@ uid: learn.microservices-architecture
 metadata:
   title: Decompose a monolithic application into a microservices architecture
   description: Improve development agility, deployment, fault tolerance, and scalability by modernizing your application with a microservices architecture.
+  ms.service: azure-functions
+  manager: mkluck
   ms.date: 02/02/2024
   author: rmcmurray
   ms.author: robmcm

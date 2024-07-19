@@ -1,8 +1,7 @@
 <!-- markdownlint-disable MD041 -->
 
-In this unit, you learn how to determine the version of **PowerShell** installed on your local
-machine and how to install the latest version. You also learn how to install the **Az** PowerShell
-module.
+In this unit, you learn how to determine the version of PowerShell installed on your local machine
+and how to install the latest version. You also learn how to install the **Az** PowerShell module.
 
 > [!NOTE]
 > This exercise guides you through creating a local installation of the **Az** PowerShell module.
