@@ -3,11 +3,13 @@ uid: learn.wwl.detect-analyze-faces.exercise
 title: Exercise - Detect faces in Vision Studio
 metadata:
   title: Exercise - Detect faces in Vision Studio
-  description: "Exercise - Detect faces in Vision Studio"
-  ms.date: 10/27/2023
+  description: Exercise - Detect faces in Vision Studio
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 10/27/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 15
 content: |
   [!include[](includes/4-exercise.md)]
