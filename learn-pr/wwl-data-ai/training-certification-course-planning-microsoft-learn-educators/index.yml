@@ -12,26 +12,8 @@ closing out a course, and participating in the MSLE Teams-based community."
   ms.service: azure
   ai-usage: human-only
 title: Training, certification, Course planning Microsoft Learn Educators
-summary: |
-  The VEPS series covers the MSLE program providing an understanding of
-
-  all aspects of the program from joining MSLE, preparing to teach a course,
-
-  closing out a course, and participating in the MSLE Teams-based community.&nbsp;
-abstract: |
-  After completing this module, you'll be able to:
-
-  -   Register your course in the Microsoft Learn for Educators portal.
-
-  -   Learn how to set up your lab seats and access Azure credits.
-
-  -   Execute learning management system integration.
-
-  -   Access technical training.
-
-  -   Determine how you and your students get certified.
-
-  -   Finalize course preparation.
+summary: ""
+abstract: ""
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
