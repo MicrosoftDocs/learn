@@ -2,13 +2,15 @@
 uid: learn.security-copilot-describe-core-features
 metadata:
   title: Describe the core features of Microsoft Copilot for Security
-  description: "Describe the core features of Microsoft Copilot for Security."
-  ms.date: 02/22/2024
+  description: Describe the core features of Microsoft Copilot for Security.
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.date: 02/22/2024
   ms.service: security-copilot
   ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Describe the core features of Microsoft Copilot for Security
 summary: |
   Microsoft Copilot for Security has a rich set of features. Learn about available plugins, promptbooks, the ways you can export and share information from Copilot, and much more.

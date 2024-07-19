@@ -3,11 +3,13 @@ uid: learn.security-copilot-describe-core-features.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Describe the core features of Microsoft Copilot for Security."
-  ms.date: 02/22/2024
+  description: Describe the core features of Microsoft Copilot for Security.
   author: wwlpublish
   ms.author: ceperezb
+  ms.date: 02/22/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 2
 
 content: |
