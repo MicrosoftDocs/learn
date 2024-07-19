@@ -1,0 +1,5 @@
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=bf002abc-b94e-4512-8d53-38b3f7398a88]
+
+Your students will benefit from practice assessments at no cost, the ability to explore career paths on Microsoft Learn, the opportunity to join the [Microsoft Learn Student Ambassador Program](https://mvp.microsoft.com/studentambassadors), testing their skills through Microsoft Cloud Skills Challenges, competing each year in Microsoft Imagine Cup, participating in events at our local Microsoft Reactors.
+
+For students who have earned a Microsoft Certification or Microsoft Applied Skills Credential, they can join [Microsoft Learn Career Connected](/training/career-paths/career-connected), our program that connects credentialed students to Microsoft customers and partners for jobs and internships and enables them to join Microsoft Career Fairs.
