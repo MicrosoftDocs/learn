@@ -8,7 +8,6 @@ metadata:
   ms.author: calopez
   ms.topic: module-standard-task-based
   ms.service: azure-cognitive-search
-  ms.subservice: nosql
 title: Search Azure Cosmos DB for NoSQL data with Azure Cognitive Search
 summary: Index Azure Cosmos DB for NoSQL data with Azure Cognitive Search.
 abstract: |
