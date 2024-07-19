@@ -3,6 +3,8 @@ uid: learn.design-a-geographically-distributed-application
 metadata:
   title: Design a geographically distributed application
   description: Build an application that spans multiple geographic locations for high availability and resiliency.
+  ms.service: azure-cdn
+  manager: mkluck
   ms.date: 03/17/2023
   author: rmcmurray
   ms.author: robmcm

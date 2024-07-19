@@ -3,8 +3,8 @@ uid: learn.windows.windows-best-app-framework.use-windows-ui
 title: Choose the best UI framework for a cloud-based file sync app
 metadata:
   title: Choose the best UI framework for a cloud-based file sync app
-  description: Discuss the benefits and challenges of using different UI frameworks to build a consumer-facing file sync application that syncs local files to a cloud provider.
-  ms.date: 01/17/2024
+  description: Discuss the benefits and challenges of using different UI frameworks to build a modern file sync application that syncs local files to a cloud provider.
+  ms.date: 06/11/2024
   author: alvinashcraft
   ms.author: aashcraft
   ms.topic: unit

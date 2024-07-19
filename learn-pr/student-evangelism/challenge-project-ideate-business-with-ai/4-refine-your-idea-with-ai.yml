@@ -9,7 +9,6 @@ metadata:
   ms.author: pablolopes
   ms.custom: team=nextgen
   ms.topic: unit
-  ms.service: microsoft-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/4-refine-idea-with-ai.md)]

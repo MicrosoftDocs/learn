@@ -3658,6 +3658,21 @@ achievements:
   title: Introduction to Azure Space
   summary: Explore some of the ins and outs of the space industry and how it's quickly changing.
   iconUrl: /training/achievements/azure-space-intro.svg
+- uid: learn.intro-to-defender-cloud.badge
+  type: badge
+  title: Introduction to Microsoft Defender for Cloud
+  summary: Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP) for all of your Azure, on-premises, and multicloud (Amazon AWS and Google GCP) resources.
+  iconUrl: /training/achievements/intro-to-defender-for-cloud.svg
+- uid: learn.azure-security.resolve-threats-with-azure-security-center.badge
+  type: badge
+  title: Resolve security threats with Microsoft Defender for Cloud
+  summary: In this module, you'll use the alert capabilities of Microsoft Defender for Cloud to watch for and respond to threats.
+  iconUrl: /training/achievements/resolve-threats-with-azure-security-center.svg
+- uid: learn.azure-security.secure-vms-with-security-center.badge
+  type: badge
+  title: Protect your servers and VMs from brute-force and malware attacks with Microsoft Defender for Cloud.
+  summary: In this module, you discover how to protect VMs and servers with Microsoft Defender for Cloud.
+  iconUrl: /training/achievements/secure-vms-with-azure-security-center.svg
 - uid: learn.azure.azure-object-anchors-tutorials.badge
   type: badge
   title: Use Azure Object Anchors to detect an object in the physical world
@@ -3708,3 +3723,23 @@ achievements:
   title: Secure Azure AI Services
   summary: Securing Azure AI Services can help prevent data loss and privacy violations for user data that may be a part of the solution.
   iconUrl: /training/achievements/secure-cognitive-services.svg
+- uid: learn.azure.configure-application-kubernetes-arc.badge
+  type: badge
+  title: Implement Azure App Service on Kubernetes with Azure Arc
+  summary: Azure App Service on Kubernetes with Azure Arc enables implementation of Azure application-platform services on customer-managed, Arc-onboarded Kubernetes clusters. Azure App Service is one you can implement.
+  iconUrl: /training/achievements/configure-application-kubernetes-arc.svg
+- uid: learn.azure.publish-azure-web-app-with-azure-toolkit-eclipse.badge
+  type: badge
+  title: Develop Java web app on Azure using Eclipse
+  summary: Create a web app in Eclipse and deploy the app to Azure by using Azure Toolkit for Eclipse with this step by step module.
+  iconUrl: /training/achievements/publish-azure-web-app-with-azure-toolkit-eclipse.svg
+- uid: learn.azure.azure-redis-publish-subscribe-streams.badge
+  type: badge
+  title: Implement Pub/Sub and Streams in Azure Cache for Redis
+  summary: Execute Redis pub/sub commands for event-based messaging at scale in Azure Cache for Redis. Use the Redis console to create, append, and query a Redis stream with time-based ranges.
+  iconUrl: /training/achievements/azure-redis-publish-subscribe-streams.svg
+- uid: learn.create-iot-device-dotnet.badge
+  type: badge
+  title: Construct Internet of Things devices using the .NET IoT Libraries
+  summary: In this module, you'll learn to read environmental sensors and activate relays using the .NET IoT Libraries.
+  iconUrl: /training/achievements/iot/create-iot-device-dotnet.svg

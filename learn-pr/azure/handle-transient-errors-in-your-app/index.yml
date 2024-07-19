@@ -3,6 +3,8 @@ uid: learn.azure.handle-transient-errors-in-your-app
 metadata:
   title: Handle transient errors in your app
   description: Detect, handle, and recover from errors when working with cloud-based services to make your apps more resilient and improve user experience. 
+  ms.service: azure-monitor
+  manager: mkluck
   ms.date: 08/01/2023
   author: rmcmurray
   ms.author: robmcm

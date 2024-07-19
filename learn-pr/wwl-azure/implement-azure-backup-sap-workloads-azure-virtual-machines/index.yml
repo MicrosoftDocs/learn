@@ -2,13 +2,13 @@
 uid: learn.wwl.implement-azure-backup-for-sap-workloads-azure-vms
 metadata:
   title: Implement Azure Backup for SAP workloads on Azure VMs
-  description: "Discover methods for implementing Azure Backup on Azure Virtual Machines running SAP workloads."
+  description: Discover methods for implementing Azure Backup on Azure Virtual Machines running SAP workloads.
   ms.date: 03/27/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.service: azure
   ai-usage: ai-assisted
+  ms.service: sap-on-azure
 title: Implement Azure Backup for SAP workloads on Azure VMs
 summary: You learn about using Azure Backup for SAP HANA workloads running on Azure virtual machines.
 abstract: In this module, you identify the scenarios for which Azure Backup provides backup and restore capabilities for SAP workloads running on Azure virtual machines and walk through the backup and restore process and considerations for an SAP HANA database running on Azure virtual machines.

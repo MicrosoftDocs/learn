@@ -4,6 +4,8 @@ metadata:
   moduleType: introduction
   title: Organize and inventory hybrid and multicloud machines through Arc-enabled servers
   description: Discover the key products and services that allow you to organize and inventory hybrid and multicloud virtual machines through Azure Arc-enabled servers.
+  ms.service: azure-arc
+  manager: rayoflores
   ms.date: 12/01/2023
   author: johnmarco
   ms.author: johnmarc
