@@ -3,11 +3,13 @@ uid: learn.wwl.apply-prompt-engineering-azure-openai.summary
 title: Summary
 metadata:
   title: summary
-  description: "In this module, you learned how to use prompt engineering for higher quality responses with Azure OpenAI."
-  ms.date: 07/10/2024
+  description: In this module, you learned how to use prompt engineering for higher quality responses with Azure OpenAI.
   author: ivorb
   ms.author: berryivor
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai
