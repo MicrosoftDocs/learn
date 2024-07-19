@@ -5,11 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Azure NetApp Files.
-<<<<<<< HEAD
-  ms.date: 06/03/2024
-=======
-  ms.date: 06/10/2024
->>>>>>> cb2de977501e8de57a790a6d66d4118c084df73c
+  ms.date: 07/19/2024
   author: mengruts
   ms.author: anfdocs
   ms.topic: unit
