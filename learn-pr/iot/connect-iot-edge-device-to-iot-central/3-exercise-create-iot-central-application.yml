@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.connect-iot-edge-device-to-iot-central.exercise-create-iot-central-application
-title: Exercise - Create an IoT Central application
+title: Exercise - Create an Azure IoT Central application
 metadata:
-  title: Exercise - Create an IoT Central application
+  title: Exercise - Create an Azure IoT Central application
   description: This content is a part of Connect an Azure IoT Edge device to your Azure IoT Central application
   author: dominicbetts
   ms.author: dobett

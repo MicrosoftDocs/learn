@@ -25,9 +25,9 @@ quiz:
     - content: "In an Azure service"
       isCorrect: false
       explanation: "No. The IoT Edge runtime runs on a device and interacts with Azure services such as IoT Hub."
-    - content: "In your IoT Central application"
+    - content: "In your Azure IoT Central application"
       isCorrect: false
-      explanation: "No. The IoT Central UI lets you manage IoT Edge device by communicating with the IoT Edge runtime on the device."
+      explanation: "No. The Azure IoT Central UI lets you manage IoT Edge device by communicating with the IoT Edge runtime on the device."
   - content: "What is the role of a deployment manifest?"
     choices:
     - content: "It specifies the capabilities of a device you want to connect to your application"
@@ -35,7 +35,7 @@ quiz:
       explanation: "no. A device template specifies the capabilities of a device you want to connect to your application."
     - content: "It contains information that lets the IoT Edge runtime determine which IoT Edge modules to download and run"
       isCorrect: true
-      explanation: "Correct. When an IoT Edge device connects to an IoT Central application, the IoT Edge runtime downloads the deployment manifest to determine which modules it should install and run on the device."
-    - content: "It specifies the type of IoT Central application to deploy to your Azure subscription"
+      explanation: "Correct. When an IoT Edge device connects to an Azure IoT Central application, the IoT Edge runtime downloads the deployment manifest to determine which modules it should install and run on the device."
+    - content: "It specifies the type of Azure IoT Central application to deploy to your Azure subscription"
       isCorrect: false
-      explanation: "No. An IoT Central application template specifies the initial configuration of your IoT Central application."
+      explanation: "No. An Azure IoT Central application template specifies the initial configuration of your Azure IoT Central application."

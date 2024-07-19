@@ -32,10 +32,10 @@ quiz:
     choices:
     - content: "It routes messages between IoT Edge modules"
       isCorrect: true
-      explanation: "Yes. It routes messages between modules. For example routing telemetry from a sensor to a filter module before sending it to your IoT Central application."
-    - content: "It routes messages to devices in IoT Central"
+      explanation: "Yes. It routes messages between modules. For example routing telemetry from a sensor to a filter module before sending it to your Azure IoT Central application."
+    - content: "It routes messages to devices in Azure IoT Central"
       isCorrect: false
-      explanation: "No. Each IoT Edge device is configured to send data to a specific device in IoT Central. Routing doesn't affect this behavior."
+      explanation: "No. Each IoT Edge device is configured to send data to a specific device in Azure IoT Central. Routing doesn't affect this behavior."
     - content: "It routes messages to specific IoT Hub instances in the cloud"
       isCorrect: false
       explanation: "No. Each IoT Edge device is connected to a specific IoT Hub. Routing doesn't affect this behavior."
