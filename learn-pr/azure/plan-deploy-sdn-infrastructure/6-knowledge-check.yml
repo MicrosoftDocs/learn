@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: A knowledge check unit.
-  ms.date: 05/01/2023
+  ms.date: 07/12/2024
   author: JasonGerend
   ms.author: jgerend
   ms.topic: unit
@@ -26,7 +26,7 @@ quiz:
       explanation: "Incorrect. RAS Gateway isn’t directly accessible from Windows Admin Center."
   - content: "Which configuration is required when deploying Network Controller on Azure Stack HCI?"
     choices:
-    - content: "A VM running the Azure Stack HCI operating system"
+    - content: "A virtual machine (VM) running the Azure Stack HCI operating system"
       isCorrect: true
       explanation: "Correct. All SDN infrastructure services, such as Network Controller, RAS Gateways, and Software Load Balancing must be deployed as VMs running the Azure Stack HCI operating system."
     - content: "A physical server running the Azure Stack HCI operating system"
