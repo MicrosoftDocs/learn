@@ -12,32 +12,32 @@ There are five primary steps to configure a Remote Network. In this phase, you'r
 | Review Configuration | In the step your confirm the setup of the remote network and gather settings you need to configure in the on-premises router. |
 | Setup on-premises router | Use the management console of your on-premises router to enter the Microsoft connectivity setting from previous step. |
 
-## Configure 1. Basics
+## Configure - Basics
 1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
-1. Browse to Global Secure Access > Connect > Remote networks.
-1. BASICS tab - Select the Create remote network button and provide the details.
+2. Browse to Global Secure Access > Connect > Remote networks.
+3. BASICS tab - Select the Create remote network button and provide the details.
 
-| Values requested |
-| :--- |
-| Name |
-| Region |
+   | Values requested |
+   | :--- |
+   | Name |
+   | Region |
 
-## Set up 2. Connectivity
-1. Select **Next: Connectivity**.
+## Set up - Connectivity
+4. Select **Next: Connectivity**.
 
-| Values requested |
-| :--- |
-| Name |
-| Device type - usually a router |
-| IP address of the device |
-| Type of redundancy to enable |
-| Bandwidth |
+   | Values requested |
+   | :--- |
+   | Name |
+   | Device type - usually a router |
+   | IP address of the device |
+   | Type of redundancy to enable |
+   | Bandwidth |
 
-## 3. Traffic forwarding profiles
-1. Select **Next** to open the Traffic forwarding setup.
+## Enable - Traffic forwarding profiles
+5. Select **Next** to open the Traffic forwarding setup.
  - You can create a new traffic forwarding profile, or select one created during Microsoft Entra Private Access or Microsoft Entra Internet Access.
 
-## 4 and 5. Set up your on-premises router
+## Complete configuration - Set up your on-premises router
 All your remote networks appear on the Remote network page. Select the View configuration link in the Connectivity details column. These details contain the connectivity information from the Microsoft side of the bidirectional communication channel that you use to set up your CPE.
 
 With the Microsoft connection data, it's time to update the on-premises router configuration. This step is performed in management console your CPE, not in Microsoft Entra admin center. Until you complete this step, your IPsec isn't set up. IPsec is a bidirectional communication. Internet Key Exchange (IKE) negotiations happen between two parties before the tunnel is successfully set up. So, don't miss this step.

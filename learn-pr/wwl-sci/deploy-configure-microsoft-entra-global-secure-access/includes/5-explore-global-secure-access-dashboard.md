@@ -1,4 +1,5 @@
-![Screenshot of the Global Secure Access dashboard page with some sample data for several different datapoints](../media/dashboard-global-secure-access.png)
+:::image type="content" source="../media/dashboard-global-secure-access.png" alt-text="Screenshot of the Global Secure Access dashboard page with some sample data for several different datapoints.":::
+
 To access the dashboard:
 1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
 1. Browse to Global Secure Access > Dashboard.

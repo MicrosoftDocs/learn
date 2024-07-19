@@ -6,7 +6,7 @@ Microsoft Entra Internet Access and Microsoft Entra Private Access are a solutio
 ## Microsoft Entra Internet Access
 Microsoft Entra Internet Access secures access to Microsoft services, SaaS, and public internet apps while protecting users, devices, and data against internet threats. Secure access to public internet apps through the identity-centric, device-aware, cloud-delivered Secure Web Gateway (SWG) of Microsoft Entra Internet Access.
 
-### Key features:
+### Key features
  - Prevent stolen tokens replays with the compliant network check-in Conditional Access.
  - Apply universal tenant restrictions to prevent data exfiltration.
  - Enriched logs with network and device signals.
@@ -20,7 +20,7 @@ Microsoft Entra Internet Access secures access to Microsoft services, SaaS, and 
 ## Microsoft Entra Private Access
 Microsoft Entra Private Access provides your users secure access to your private, corporate resources. Microsoft Entra Private Access builds on the capabilities of Microsoft Entra application proxy and extends access to any private resource, port, and protocol. Remote users connect to private apps across hybrid and multicloud environments, private networks, and data centers from any device and network without requiring a VPN. The service offers per-app adaptive access based on Conditional Access policies.
 
-### Key features:
+### Key features
  - Zero Trust based access to a range of IP addresses and/or Fully Qualified Domain Names (FQDNs) without requiring a legacy VPN.
  - Modernize legacy app authentication with Conditional Access.
  - Provide a seamless end-user experience by deploying side-by-side with your existing non-Microsoft SSE solutions.
@@ -28,11 +28,11 @@ Microsoft Entra Private Access provides your users secure access to your private
 ## Before you begin
 
 Licensing:
- - Microsoft Entra P1 or P2 license
- - Microsoft Entra Internet Access license and / or Microsoft Entra Private Access license
+ - Microsoft Entra P1 or P2 license.
+ - Microsoft Entra Internet Access license and / or Microsoft Entra Private Access license.
 
 Roles:
- - Global Secure Access Administrator role assigned to at least one administrator
+ - Global Secure Access Administrator role assigned to at least one administrator.
 
 It's recommended that you visit the [Zero Trust Guidance Center](/security/zero-trust/) to plan out your implementation. Additionally, you make all configuration changes in the Microsoft Entra Admin Center at [https://entra.microsoft.com](https://entra.microsoft.com).
 

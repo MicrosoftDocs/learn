@@ -60,13 +60,13 @@ quiz:
       explanation: "Incorrect. The Global Secure Access snapshot doesn't provide information about alerts."
   - content: "What is the final step in configuring a Remote Network for use with Global Secure Access?"
     choices:
-    - content: "Defining the name of your remote network and the region where you want to connect"
+    - content: "Defining the name of your remote network and the region where you want to connect."
       isCorrect: false
       explanation: "Incorrect. Defining the remote network name is the first step in the process, not the final one."
-    - content: "Reviewing the configuration in the Microsoft Entra admin center"
+    - content: "Reviewing the configuration in the Microsoft Entra admin center."
       isCorrect: false
       explanation: "Incorrect. While reviewing the configuration is an important step, it isn't the final step in the process."
-    - content: "Updating the on-premises router configuration with the Microsoft connectivity settings"
+    - content: "Updating the on-premises router configuration with the Microsoft connectivity settings."
       isCorrect: true
       explanation: "Correct. The final step involves updating the on-premises router configuration with the Microsoft connectivity settings."
   - content: "What is the purpose of the Compliant Network Check in Conditional Access with Global Secure Access?"

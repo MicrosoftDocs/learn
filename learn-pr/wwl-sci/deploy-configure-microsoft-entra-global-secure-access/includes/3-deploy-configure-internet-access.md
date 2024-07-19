@@ -11,7 +11,7 @@ Steps:
 
 ## Enable Microsoft traffic forwarding profile
 
-![Screenshot of the the Microsoft traffic profile enabled in Microsoft Entra. This enables 3 traffic policies, a conditional access policy, and user - group assignment.](../media/trafic-profile-enabled.png)
+:::image type="content" source="../media/traffic-profile-enabled.png" alt-text="Screenshot of the the Microsoft traffic profile enabled. Enables 3 traffic policies, a conditional access policy, and user - group assignment.":::
 
 1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
 1. Browse to Global Secure Access > Connect > Traffic forwarding.
@@ -31,12 +31,12 @@ Refer to the documentation article for more details - [Enable and manage Microso
 
 The client is quick and easy to install. It can be deployed via mobile device management tools like Microsoft Intune, or manually installed on each device. You need to download the client from the Microsoft Entra admin center, then use your choice of deployment methods.
 
-**Download the client**:
+#### Download the client
 1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
 1. Browse to Global Secure Access > Connect > Client download.
 1. Select Download Client.
 
-**Install the client**
+#### Install the client
 1. Copy the Global Secure Access client setup file to your client machine.
 1. Run the GlobalSecureAccessClient.exe setup file. Accept the software license terms.
 1. The client is installed and users are prompted to sign in with their Microsoft Entra credentials.
@@ -47,7 +47,7 @@ You can install the Android client instead using either Microsoft Intune or Micr
 ## Configure the Tenant Restrictions
 Administrators use tenant restrictions to control user access to external tenants on their network. Tenant restrictions, with cross tenant access settings, add tenant-level restrictions and more granularity such as individual user, group, and application controls. Tenant restrictions move policy management from network proxies to a cloud-based portal. Allow internal identities, such as employees, to access specific external tenants on your managed network. Block access to nonallowed tenants for internal identities. Block external identities, such as contractors and vendors, from accessing all external tenants. 
 
-**Set up Tenant Restrictions**
+#### Set up Tenant Restrictions
 1. Sign in to the Microsoft Entra admin center as at least a Security Administrator.
 1. Browse to Identity > External Identities > Cross-tenant access settings, then select Organizational settings.
 1. Select **Add organization**.
@@ -56,9 +56,9 @@ Administrators use tenant restrictions to control user access to external tenant
 
    The organization appears in the Organizational settings list. At this point, all access settings for this organization are inherited from your default settings. To change the settings for this organization, select the Inherited from default link under the Inbound access or Outbound access column.
 
-1. Modify the organization's settings
+1. Modify the organization's settings.
 
-**Enable Global Secure Access**
+#### Enable Global Secure Access
 Once you created the tenant restriction policies, you can utilize Global Secure Access to apply tagging for tenant restrictions. An administrator with both the Global Secure Access Administrator and Security Administrator roles must take the following steps to enable enforcement with Global Secure Access.
 
 1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
@@ -66,8 +66,9 @@ Once you created the tenant restriction policies, you can utilize Global Secure 
 1. Select the toggle to Enable tagging to enforce tenant restrictions on your network.
 1. Select Save.
 
-**How it works**
-![Process flow diagram showing how tenant restrictions work. Request comes in from a known or unknown tenant, the tenant is compared against the restriction policies and access is granted or blocked.](../media/tenant-restrictions-flow.png)
+#### How it works
+
+:::image type="content" source="../media/tenant-restrictions-flow.png" alt-text="Diagram of the process flow of how tenant restrictions work. Request comes in from a tenant, the tenant is compared to the restriction policy.":::
 
 | Steps | Description |
 | :--- | :--- |
@@ -81,7 +82,7 @@ Organizations who use Conditional Access along with the Global Secure Access, ca
 
 The Global Secure Access Client installed on devices or users behind configured remote networks allows administrators to secure resources behind a compliant network with advanced Conditional Access controls. This compliant network feature makes it easier for administrators to manage and maintain, without having to maintain a list of all of an organization's locations IP addresses. Administrators don't need to push traffic through their organization's VPN egress points to ensure security. Continuous Access Evaluation (CAE) with the compliant network feature is currently supported for SharePoint Online. With CAE, you can enforce defense-in-depth with token theft replay protection.
 
-**Enable Global Secure Access signaling**
+#### Enable Global Secure Access signaling
 1. Sign into the Microsoft Entra admin center as a Global Secure Access Administrator.
 1. Browse to Global Secure Access > Global settings > Session management Adaptive access.
 1. Select the toggle to Enable Global Secure Access signaling in Conditional Access.
@@ -89,7 +90,7 @@ The Global Secure Access Client installed on devices or users behind configured 
 
    Confirm you have a location called All Compliant Network locations with location type Network Access. Organizations can optionally mark this location as trusted.
 
-**Build your Conditional Access policy for networks**
+#### Build your Conditional Access policy for networks
 1. Sign into the Microsoft Entra admin center as at least a Conditional Access Administrator.
 1. Browse to Protection > Conditional Access.
 1. Select Create new policy.

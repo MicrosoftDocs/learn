@@ -4,9 +4,9 @@ You need to monitor the activity of the traffic flowing through your networks. G
 
 The Microsoft Entra audit log is a valuable source of information when researching or troubleshooting changes to your Microsoft Entra environment. Changes related to Global Secure Access are captured in the audit logs. Logs have categories, such as filtering policy, forwarding profiles, remote network management, and more.
 
-**Access audit logs from Global Secure Access or the Microsoft Entra admin center**
+### Access audit logs from Global Secure Access or the Microsoft Entra admin center
 
-#### From Global Secure Access:
+#### From Global Secure Access
 
 1. Sign in to the Microsoft Entra admin center using one of the required roles.
 1. Browse to Global Secure Access > Audit logs. The filters are prepopulated with the categories and activities related to Global Secure Access.
@@ -28,7 +28,7 @@ A user accessing a website represents one session, and within that session there
 - Connection: A connection includes the source and destination IP, source and destination port, and fully qualified domain name (FQDN). The connection components comprise the 5-tuple.
 - Transaction: A transaction is a unique request and response pair.
 
-**How to view the traffic logs**
+## How to view the traffic logs
 
 1. Sign in to the Microsoft Entra admin center as at least a Reports Reader.
 1. Global Secure Access > Monitor > Traffic logs.
@@ -47,7 +47,7 @@ The Enriched Office 365 logs provide you with the information you need to gain i
 #### How to view the logs
 Viewing the enriched Microsoft 365 logs is a two-step process. First, you need to enable the log enrichment from Global Secure Access. Second, you need to configure Microsoft Entra diagnostic settings to route the logs to an endpoint, such as a Log Analytics workspace.
 
-**Enable the log enrichment**
+#### Enable the log enrichment
 To enable the Enriched Microsoft 365 logs:
 
 1. Sign in to the Microsoft Entra admin center as a Global Administrator.
@@ -55,7 +55,7 @@ To enable the Enriched Microsoft 365 logs:
 1. Select the type of Microsoft 365 logs you want to enable.
 1. Select Save.
 
-**Send logs to an endpoint**
+#### Send logs to an endpoint**
 
 1. Sign in to the Microsoft Entra admin center as at least a Security Administrator.
 1. Browse to Identity > Monitoring & health > Diagnostic settings.
@@ -63,15 +63,14 @@ To enable the Enriched Microsoft 365 logs:
 1. Give your diagnostic setting a name.
 1. Select EnrichedOffice365AuditLogs.
 1. Select the Destination details for where you'd like to send the logs. Choose any or all of the following destinations:
-
- - Send to Log Analytics workspace.
- - Archive to a storage account.
- - Stream to an event hub.
- - Send to partner solution.
+   - Send to Log Analytics workspace.
+   - Archive to a storage account.
+   - Stream to an event hub.
+   - Send to partner solution.
 
 ## Log Retention and Storage
 Traffic Logs and Remote Network Health Logs: These logs are retained within the system for 30 days. This duration allows for ample time to review and analyze recent activities and network health status.
 
- - Audit Logs: The retention period for Audit Logs varies depending on your Microsoft Entra ID license. The table provides e breakdown:
+ - Audit Logs: The retention period for Audit Logs varies depending on your Microsoft Entra ID license.
  - Office Logs: Office Logs are maintained for a shorter duration, up to only 24 hours.
 
