@@ -2,12 +2,14 @@
 uid: learn.wwl.generate-images-azure-openai
 metadata:
   title: Generate images with Azure OpenAI Service
-  description: "Use DALL-E in Azure OpenAI service to generate images"
-  ms.date: 6/14/2023
+  description: Use DALL-E in Azure OpenAI service to generate images
   author: graememalcolm
   ms.author: gmalc
-  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.date: 6/14/2023
   ms.service: azure-ai-openai
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Generate images with Azure OpenAI Service
 summary: "The Azure OpenAI service includes the DALL-E model, which you can use to generate original images based on natural language prompts."
 abstract: |
