@@ -42399,6 +42399,85 @@
       "source_path": "learn-pr/wwl-azure/intro-to-azure-search/6a-exercise.md",
       "redirect_url": "/training/modules/intro-to-azure-search/7-exercise",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/iot/create-iot-device-dotnet/1-introduction.yml",
+      "redirect_url": "/dotnet/iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-iot-device-dotnet/2-construct-iot-hardware.yml",
+      "redirect_url": "/dotnet/iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-iot-device-dotnet/3-dotnet-iot-libraries.yml",
+      "redirect_url": "/dotnet/iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-iot-device-dotnet/4-use-dotnet-iot-libraries.yml",
+      "redirect_url": "/dotnet/iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-iot-device-dotnet/5-deploy-app-raspberry-pi.yml",
+      "redirect_url": "/dotnet/iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-iot-device-dotnet/6-test-raspberry-pi.yml",
+      "redirect_url": "/dotnet/iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-iot-device-dotnet/7-summary.yml",
+      "redirect_url": "/dotnet/iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-iot-device-dotnet/index.yml",
+      "redirect_url": "/dotnet/iot",
+      "redirect_document_id": false
+    }{
+  "source_path": "learn-pr/iot/create-iot-device-dotnet/1-introduction.yml",
+  "redirect_url": "/dotnet/iot",
+  "redirect_document_id": false
+},
+{
+  "source_path": "learn-pr/iot/create-iot-device-dotnet/2-construct-iot-hardware.yml",
+  "redirect_url": "/dotnet/iot",
+  "redirect_document_id": false
+},
+{
+  "source_path": "learn-pr/iot/create-iot-device-dotnet/3-dotnet-iot-libraries.yml",
+  "redirect_url": "/dotnet/iot",
+  "redirect_document_id": false
+},
+{
+  "source_path": "learn-pr/iot/create-iot-device-dotnet/4-use-dotnet-iot-libraries.yml",
+  "redirect_url": "/dotnet/iot",
+  "redirect_document_id": false
+},
+{
+  "source_path": "learn-pr/iot/create-iot-device-dotnet/5-deploy-app-raspberry-pi.yml",
+  "redirect_url": "/dotnet/iot",
+  "redirect_document_id": false
+},
+{
+  "source_path": "learn-pr/iot/create-iot-device-dotnet/6-test-raspberry-pi.yml",
+  "redirect_url": "/dotnet/iot",
+  "redirect_document_id": false
+},
+{
+  "source_path": "learn-pr/iot/create-iot-device-dotnet/7-summary.yml",
+  "redirect_url": "/dotnet/iot",
+  "redirect_document_id": false
+},
+{
+  "source_path": "learn-pr/iot/create-iot-device-dotnet/index.yml",
+  "redirect_url": "/dotnet/iot",
+  "redirect_document_id": false
+}
   ]
 }
