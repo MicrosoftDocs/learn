@@ -255,4 +255,4 @@ You've created a workload identity, and a resource group that it can deploy to. 
 
 1. Verify that your list of secrets now shows all three secrets.
 
-   :::image type="content" source="../../includes/media/github-create-repository-secrets.png" alt-text="Screenshot of the GitHub interface showing the list of secrets." source="../../includes/media/github-create-repository-secrets.png":::
+   :::image type="content" source="../../includes/media/github-create-repository-secrets.png" alt-text="Screenshot of the GitHub interface showing the list of secrets." lightbox="../../includes/media/github-create-repository-secrets.png":::
