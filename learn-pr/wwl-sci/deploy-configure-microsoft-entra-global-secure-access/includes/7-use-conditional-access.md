@@ -17,7 +17,7 @@ To enable the required setting to allow the compliant network check, an administ
 1. Browse to Global Secure Access > Global settings > Session management Adaptive access.
 1. Select the toggle to Enable CA Signaling for Microsoft Entra ID (covering all cloud apps). Continuous Access Evaluation (CAE) signaling is automatically enabled for Office 365 (preview).
 1. Browse to Protection > Conditional Access > Named locations.
- - Confirm you have a location called All Compliant Network locations with location type Network Access. Organizations can optionally mark this location as trusted.
+     - Confirm you have a location called All Compliant Network locations with location type Network Access. Organizations can optionally mark this location as trusted.
 
 ## Compliant Network Check
 Compliant network enforcement happens at authentication plane and at the data plane (preview). Microsoft Entra ID performs Authentication plane enforcement at the time of user authentication. Data plane enforcement works with services that support Continuous Access Evaluation (CAE). Currently only Exchange Online and SharePoint Online support this capability. With CAE, you can enforce defense-in-depth with token theft replay protection.
@@ -33,19 +33,19 @@ The compliant network Conditional Access policy can be used to protect your Micr
 3. Select Create new policy.
 4. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
 5. Look in Assignments, select Users or workload identities.
- - Under Include, select All users.
- - Under Exclude, select Users and groups and choose your organization's emergency access or break-glass accounts.
+     - Under Include, select All users.
+     - Under Exclude, select Users and groups and choose your organization's emergency access or break-glass accounts.
 6. Look in Target resources > Include, and choose Select apps.
- - Choose Office 365 Exchange Online, and/or Office 365 SharePoint Online, and/or any of your SaaS apps.
- - The specific Office 365 cloud app in the app picker is currently NOT supported, so don't select this cloud app.
+     - Choose Office 365 Exchange Online, and/or Office 365 SharePoint Online, and/or any of your SaaS apps.
+     - The specific Office 365 cloud app in the app picker is currently NOT supported, so don't select this cloud app.
 7. Explore Conditions > Location.
- - Set Configure to Yes.
- - Under Include, select Any location.
- - Under Exclude, choose Selected locations.
-     - Select the All Compliant Network locations.
+     - Set Configure to Yes.
+     - Under Include, select Any location.
+     - Under Exclude, choose Selected locations.
+         - Select the All Compliant Network locations.
  - Choose Select.
 8. Under Access controls:
- - Grant, select Block Access, and choose Select.
+     - Grant, select Block Access, and choose Select.
 9. Confirm your settings and set Enable policy to On.
 10. Select the Create button to create to enable your policy.
 

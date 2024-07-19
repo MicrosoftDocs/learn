@@ -15,7 +15,7 @@ There are five primary steps to configure a Remote Network. In this phase, you'r
 ## Configure - Basics
 1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
 2. Browse to Global Secure Access > Connect > Remote networks.
-3. BASICS tab - Select the Create remote network button and provide the details.
+3. Basics tab - Select the Create remote network button and provide the details.
 
    | Values requested |
    | :--- |
@@ -35,7 +35,8 @@ There are five primary steps to configure a Remote Network. In this phase, you'r
 
 ## Enable - Traffic forwarding profiles
 5. Select **Next** to open the Traffic forwarding setup.
- - You can create a new traffic forwarding profile, or select one created during Microsoft Entra Private Access or Microsoft Entra Internet Access.
+
+     - You can create a new traffic forwarding profile, or select one created during Microsoft Entra Private Access or Microsoft Entra Internet Access.
 
 ## Complete configuration - Set up your on-premises router
 All your remote networks appear on the Remote network page. Select the View configuration link in the Connectivity details column. These details contain the connectivity information from the Microsoft side of the bidirectional communication channel that you use to set up your CPE.

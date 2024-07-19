@@ -1,6 +1,6 @@
 There are four main steps for getting Microsoft Entra Internet Access deployed within your company. After you complete these four steps, users with the Global Secure Access client installed on their Windows device can securely access Microsoft resources from anywhere. Conditional Access policy requires users to use the Global Secure Access client or a configured remote network, when they access resources like Exchange Online and SharePoint Online.
 
-Steps:
+#### Steps
 
 | Steps | Description |
 | :--- | :--- |

@@ -50,18 +50,18 @@ Allow access to some URLs
 On Windows Server:
 1. Select the Windows key and enter services.msc to open the Windows Services Manager.
 2. Check to see if the status for the following services Running.
-  - Microsoft Entra private network connector enables connectivity.
-  - Microsoft Entra private network connector Updater is an automated update service.
-  - The updater checks for new versions of the connector and updates the connector as needed.
+    - Microsoft Entra private network connector enables connectivity.
+    - Microsoft Entra private network connector Updater is an automated update service.
+    - The updater checks for new versions of the connector and updates the connector as needed.
 3. If the status for the services isn't Running, right-click to select each service and choose Start.
 
 In Microsoft Entra:
 1. Sign in to the Microsoft Entra admin center as a Global Administrator of the directory that uses Application Proxy.
 2. Browse to Global Secure Access > Connect > Connectors.
-  - All of your connectors and connector groups appear on this page.
+    - All of your connectors and connector groups appear on this page.
 3. Verify the details by viewing the connector.
-  - Expand the connector to view the details.
-  - An active green label indicates that your connector can connect to the service. However, even though the label is green, a network issue could still block the connector from receiving messages.
+    - Expand the connector to view the details.
+    - An active green label indicates that your connector can connect to the service. However, even though the label is green, a network issue could still block the connector from receiving messages.
 
 #### Create groups of connectors
 1. For quicker assignments, you can group different connectors together.
@@ -91,25 +91,25 @@ The **Add Quick Access** application segment portion of this process is where yo
 3. Select **Add Quick Access** application segment.
 4. In the **Create application segment** panel, select a Destination type.
 5. Enter the appropriate details for the selected destination type. Depending on what you select, the subsequent fields change accordingly.
- - IP address:
-   - Internet Protocol version 4 (IPv4) address, such as 192.0.2.1, that identifies a device on the network.
-   - Provide the ports that you want to include.
- - Fully qualified domain name (including wildcard FQDNs):
-   - Domain name that specifies the exact location of a computer or a host in the Domain Name System (DNS).
-   - Provide the ports to include.
-   - NetBIOS isn't supported. For example, use contoso.local/app1 instead of contoso/app1.
- - IP address range (CIDR):
-   - Classless Inter-Domain Routing (CIDR) represents a range of IP addresses. An IP address is followed by a suffix indicating the number of network bits in the subnet mask.
-   - For example, 192.0.2.0/24 indicates that the first 24 bits of the IP address represent the network address, while the remaining 8 bits represents the host address.
-   - Provide the starting address, network mask, and ports.
- - IP address range (IP to IP):
-   - Range of IP addresses from start IP (such as 192.0.2.1) to end IP (such as 192.0.2.10).
-   - Provide the IP address start, end, and ports.
- - Enter the ports and select the Apply button.
-   - Separate multiple ports with a comma.
-   - Specify port ranges with a hyphen.
-   - Spaces between values are removed when you apply the changes.
-   - For example, 400-500, 80, 443.
+   - IP address:
+     - Internet Protocol version 4 (IPv4) address, such as 192.0.2.1, that identifies a device on the network.
+     - Provide the ports that you want to include.
+   - Fully qualified domain name (including wildcard FQDNs):
+     - Domain name that specifies the exact location of a computer or a host in the Domain Name System (DNS).
+     - Provide the ports to include.
+     - NetBIOS isn't supported. For example, use contoso.local/app1 instead of contoso/app1.
+   - IP address range (CIDR):
+     - Classless Inter-Domain Routing (CIDR) represents a range of IP addresses. An IP address is followed by a suffix indicating the number of network bits in the subnet mask.
+     - For example, 192.0.2.0/24 indicates that the first 24 bits of the IP address represent the network address, while the remaining 8 bits represents the host address.
+     - Provide the starting address, network mask, and ports.
+   - IP address range (IP to IP):
+     - Range of IP addresses from start IP (such as 192.0.2.1) to end IP (such as 192.0.2.10).
+     - Provide the IP address start, end, and ports.
+   - Enter the ports and select the Apply button.
+     - Separate multiple ports with a comma.
+     - Specify port ranges with a hyphen.
+     - Spaces between values are removed when you apply the changes.
+     - For example, 400-500, 80, 443.
    The following table provides the most commonly used ports and their associated networking protocols:
 
    | Port | Protocol |
