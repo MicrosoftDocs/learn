@@ -38,7 +38,7 @@ quiz:
       explanation: "Incorrect. Azure uses logical isolation to segregate each customer's applications and data from the applications and data of others."
     - content: "Azure Stack Hub."
       isCorrect: false
-      explanation: "Incorrect. Azure Stack Hub is an on-premises, cloud-consistent experience for customers who can’t directly connect to the internet. Or, where certain workload types must be hosted in-country/region because of law, compliance, or sentiment."
+      explanation: "Incorrect. Azure Stack Hub is an on-premises, cloud-consistent experience for customers who can’t directly connect to the internet. Or, where certain workload types must be hosted in a country/region because of law, compliance, or sentiment."
     - content: "Azure Blueprints."
       isCorrect: true
       explanation: "Correct. Azure Blueprints is a service that helps automate compliance and cybersecurity risk management in cloud environments."
@@ -55,4 +55,4 @@ quiz:
       explanation: "Incorrect. Confidential computing protects data from threats as it's being processed."
     - content: "Azure Stack Hub."
       isCorrect: true
-      explanation: "Correct. Azure Stack Hub is an on-premises, cloud-consistent experience for customers who can’t directly connect to the internet. Or, where certain workload types must be hosted in-country/region because of law, compliance, or sentiment."
+      explanation: "Correct. Azure Stack Hub is an on-premises, cloud-consistent experience for customers who can’t directly connect to the internet. Or, where certain workload types must be hosted in a country/region because of law, compliance, or sentiment."

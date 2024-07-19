@@ -22,7 +22,7 @@ For most of these customers, Microsoft and its partners offer a customer-managed
 - Reducing the need for training data.
 - Accelerated learning.
 - Explaining results so that the outcome is transparent.
-- Deploying locally.
+- Deploying locally, closer to where the data lives.
 
 In the following sections, we expand on areas that can help government agencies with some of these vectors.
 
