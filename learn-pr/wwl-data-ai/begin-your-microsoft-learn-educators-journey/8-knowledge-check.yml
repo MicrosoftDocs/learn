@@ -11,3 +11,39 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Where is the best place for educators to access Microsoft Learn for Educators curriculum and profile update, enter the course they will be teaching, view past courses, request exam and practice exam vouchers, learn about training events, and access the Learning Download Center?"
+    choices:
+    - content: "Microsoft Learn for Educators program page"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. While the Microsoft Learn for Educators (MSLE) program page provides an overview of MSLE, the Microsoft Learn for Educators portal allows educators to update their profile, enter the course they will be teaching, view past courses, request exam and practice exam vouchers, learn about training events, and access the Learning Download Center"
+    - content: "Microsoft Learn for Educators portal"
+      isCorrect: true
+      explanation: "Feedback: Correct. The Microsoft Learn for Educators portal allows educators to update their profile, enter the course they will be teaching, view past courses, request exam and practice exam vouchers, learn about training events, and access the Learning Download Center"
+    - content: "Microsoft Learning Download Center"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. While the Microsoft Learning Download Center provides access to Microsoft Official Content, the Microsoft Learn for Educators portal allows educators to update their profile, enter the course they will be teaching, view past courses, request exam and practice exam vouchers, learn about training events, as well as access the Learning Download Center"
+  - content: "The Microsoft Learning Download Center (LDC) is accessible AFTER educators create their Microsoft Learn for Educators (MSLE) profile. What information is accessible in the LDC?"
+    choices:
+    - content: "Course curriculum slideware, assessment guides, technical specifications for labs, and course learning objectives"
+      isCorrect: true
+      explanation: "Feedback: Correct. The curriculum resources include course curriculum slideware, assessment guides, technical specifications for labs, and course learning objectives"
+    - content: "Assessment guides and technical specifications for labs"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. The curriculum resources include course curriculum slideware, assessment guides, technical specifications for labs, and course learning objectives"
+    - content: "Technical specifications for labs and course learning objectives"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. The curriculum resources include course curriculum slideware, assessment guides, technical specifications for labs, and course learning objectives"
+  - content: "Where do educators go to read the blog posts and get answers to questions from other educators from around the world?"
+    choices:
+    - content: "Microsoft Learn for Educators program page"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. While the Microsoft Learn for Educators (MSLE) program page provides an overview of MSLE, the Microsoft Learn for Educators Teams community allows educators to connect with other faculty members teaching Microsoft Official Course materials and learn about upcoming events, Virtual Educator Prep Sessions, and much more"
+    - content: "Microsoft Learn for Educators portal"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. While the Microsoft Learn for Educators Portal allows educators to update their profile, enter the course they will be teaching, view past courses, request exam and practice exam vouchers, learn about training events, and access the Learning Download Center, the Microsoft Learn for Educators Teams community allows educators to connect with other faculty members teaching Microsoft Official Course materials and learn about upcoming events, Virtual Educator Prep Sessions, and much more"
+    - content: "Microsoft Learn for Educators Teams community"
+      isCorrect: true
+      explanation: "Feedback: Correct. The Microsoft Learn for Educators Teams community allows educators to connect with other faculty members teaching Microsoft Official Course materials and learn about upcoming events, Virtual Educator Prep Sessions, and much more"
