@@ -2,12 +2,14 @@
 uid: learn.wwl.create-speech-enabled-apps
 metadata:
   title: Create speech-enabled apps with Azure AI services
-  description: "Create speech-enabled apps with Azure AI services."
-  ms.date: 08/31/2023
+  description: Create speech-enabled apps with Azure AI services.
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module-standard-task-based
+  ms.date: 08/31/2023
   ms.service: azure-ai-speech
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Create speech-enabled apps with Azure AI services
 summary: The Azure AI Speech service enables you to build speech-enabled applications. This module focuses on using the speech-to-text and text to speech APIs, which enable you to create apps that are capable of speech recognition and speech synthesis.
 abstract: |
