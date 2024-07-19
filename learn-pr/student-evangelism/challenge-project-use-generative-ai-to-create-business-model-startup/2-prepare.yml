@@ -3,12 +3,14 @@ uid: learn.challenge-project-use-generative-ai-to-create-business-model-startup.
 title: Prepare for challenge
 metadata:
   title: Prepare for challenge
-  description: "Prepare for challenge and setup requirements"
-  ms.date: 12/4/2023
+  description: Prepare for challenge and setup requirements
   author: juliamuiruri4
   ms.author: juliamuiruri
-  ms.custom: team=nextgen
+  ms.date: 12/4/2023
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
 durationInMinutes: 3
 content: |
   [!include[](includes/2-prepare.md)]
