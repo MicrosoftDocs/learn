@@ -3,6 +3,7 @@ uid: learn.azure.cna-set-up-apps-use-scale
 metadata:
   title: Authenticate and authorize multi-tenant apps using Microsoft Entra ID
   description: Microsoft Entra ID enables you to improve the functionality of cloud-native apps in multitenant scenarios.
+  manager: mkluck
   ms.date: 08/22/2023
   author: rmcmurray
   ms.author: robmcm

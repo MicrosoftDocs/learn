@@ -4,6 +4,7 @@ metadata:
   moduleType: standard
   title: Access data from Azure Blob Storage by using multiple protocols
   description: You can access your data from Azure Blob Storage by using different protocols such as representational state transfer (REST), Hadoop Distributed File System (HDFS), Network File System (NFS), and Secure File Transfer Protocol (SFTP).
+  manager: mkluck
   ms.date: 11/07/2023
   author: rmcmurray
   ms.author: robmcm

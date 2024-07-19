@@ -3,30 +3,30 @@ uid: learn.wwl.manage-azure-blob-storage-lifecycle
 metadata:
   title: Manage the Azure Blob storage lifecycle
   description: "Learn how to manage data availability throughout the Azure Blob storage lifecycle."
-  ms.date: 03/13/2024
+  ms.date: 07/12/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: azure
+  ms.service: azure-blob-storage
   ai-usage: human-only
 title: Manage the Azure Blob storage lifecycle
 summary: Learn how to manage data availability throughout the Azure Blob storage lifecycle.
 abstract: |
   After completing this module, you will be able to:
 
-  * Describe how each of the access tiers is optimized.
+  -   Describe how each of the access tiers is optimized.
 
-  * Create and implement a lifecycle policy.
+  -   Create and implement a lifecycle policy.
 
-  * Rehydrate blob data stored in an archive tier.
+  -   Rehydrate blob data stored in an archive tier.
 prerequisites: |
-  * You should be familiar with developer concepts and terminology.
+  -   You should be familiar with developer concepts and terminology.
 
-  * Experience working with unstructured data solutions.
+  -   Experience working with unstructured data solutions.
 
-  * An understanding of cloud computing and some experience with the Azure portal.
+  -   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/2-manage-the-azure-blob-storage-lifecycle.svg
 levels:
 - intermediate

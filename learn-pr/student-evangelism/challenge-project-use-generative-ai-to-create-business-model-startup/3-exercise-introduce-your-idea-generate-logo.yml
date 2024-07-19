@@ -9,7 +9,6 @@ metadata:
   ms.author: juliamuiruri
   ms.custom: team=nextgen
   ms.topic: unit
-  ms.service: microsoft-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/3-exercise-introduce-your-idea-generate-logo.md)]

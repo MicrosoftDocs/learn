@@ -4,7 +4,7 @@ This module provided you with:
 - Guidance for doing research on your mentor and their areas of experience.
 - Insights on how to best prepare, meet, and follow up with your mentor.
 
-We worked through a meeting with a new mentor, from identifying topics to discuss through scheduling your next interaction. Now, you also have a variety of topics that may help guide your learning in other areas.
+We worked through a meeting with a new mentor, from identifying topics to discuss through scheduling your next interaction. Now, you also have a variety of topics that might help guide your learning in other areas.
 
 The following is a short list of conclusions you can draw from this module:
 

@@ -10,7 +10,6 @@ metadata:
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: unit
-  ms.service: iot-dps
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

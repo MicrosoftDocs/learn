@@ -1,14 +1,14 @@
-This **unit** focuses on Azure Cosmos DB .NET SDK v3 for API for NoSQL. (**Microsoft.Azure.Cosmos** NuGet package.) If you're familiar with the previous version of the .NET SDK, you may be used to the terms collection and document.
+This **unit** focuses on Azure Cosmos DB .NET SDK v3 for API for NoSQL. (**Microsoft.Azure.Cosmos** NuGet package.) If you're familiar with the previous version of the .NET SDK, you might be familiar with the terms collection and document.
 
 The [azure-cosmos-dotnet-v3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/master/Microsoft.Azure.Cosmos.Samples/Usage) GitHub repository includes the latest .NET sample solutions. You use these solutions to perform CRUD (create, read, update, and delete) and other common operations on Azure Cosmos DB resources.
 
-Because Azure Cosmos DB supports multiple API models, version 3 of the .NET SDK uses the generic terms "container" and "item". A ***container*** can be a collection, graph, or table. An ***item*** can be a document, edge/vertex, or row, and is the content inside a container.
+Because Azure Cosmos DB supports multiple API models, version 3 of the .NET SDK uses the generic terms *container* and *item*. A ***container*** can be a collection, graph, or table. An ***item*** can be a document, edge/vertex, or row, and is the content inside a container.
 
-Below are examples showing some of the key operations you should be familiar with. For more examples, please visit the GitHub link shown earlier. The examples below all use the async version of the methods.
+Following are examples showing some of the key operations you should be familiar with. For more examples, please visit the GitHub link shown earlier. The examples below all use the async version of the methods.
 
 ## CosmosClient
 
-Creates a new `CosmosClient` with a connection string. `CosmosClient` is thread-safe. It's recommended to maintain a single instance of `CosmosClient` per lifetime of the application that enables efficient connection management and performance.
+Creates a new `CosmosClient` with a connection string. `CosmosClient` is thread-safe. The recommendation is to maintain a single instance of `CosmosClient` per lifetime of the application that enables efficient connection management and performance.
 
 ```csharp
 CosmosClient client = new CosmosClient(endpoint, key);
@@ -18,11 +18,22 @@ CosmosClient client = new CosmosClient(endpoint, key);
 
 ### Create a database
 
+The `CosmosClient.CreateDatabaseAsync` method throws an exception if a database with the same name already exists.
+
+```csharp
+// New instance of Database class referencing the server-side database
+Database database1 = await client.CreateDatabaseAsync(
+    id: "adventureworks-1"
+);
+```
+
 The `CosmosClient.CreateDatabaseIfNotExistsAsync` checks if a database exists, and if it doesn't, creates it. Only the database `id` is used to verify if there's an existing database. 
 
 ```csharp
-// An object containing relevant information about the response
-DatabaseResponse databaseResponse = await client.CreateDatabaseIfNotExistsAsync(databaseId, 10000);
+// New instance of Database class referencing the server-side database
+Database database2 = await client.CreateDatabaseIfNotExistsAsync(
+    id: "adventureworks-2"
+);
 ```
 
 ### Read a database by ID

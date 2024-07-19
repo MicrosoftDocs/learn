@@ -2,7 +2,7 @@ In addition to a public-facing web site, the department uses web sites for in-ho
 
 Here, you learn how to assess agent connectivity, and schedule a recurring update.
 
-## Components used by Update Management
+## Components used by Update Manager
 
 The following configurations are used to perform assessment and update deployments:
 

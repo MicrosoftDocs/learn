@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-azure-managed-lustre-file-system.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary for the Azure Managed Lustre module.
+  ms.date: 07/12/2024
+  author: pauljewellmsft
+  ms.author: pauljewell
+  ms.reviewer: blepore
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/summary.md)]
