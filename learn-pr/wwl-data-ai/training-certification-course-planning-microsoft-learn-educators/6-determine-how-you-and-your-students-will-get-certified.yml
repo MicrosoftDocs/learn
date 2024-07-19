@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.training-certification-course-planning-microsoft-learn-educators.determine-how-you-and-your-students-will-get-certified
+title: Determine how you and your students will get certified
+metadata:
+  title: Determine how you and your students will get certified
+  description: "Determine how you and your students will get certified"
+  ms.date: 07/19/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-determine-how-you-and-your-students-will-get-certified.md)]
