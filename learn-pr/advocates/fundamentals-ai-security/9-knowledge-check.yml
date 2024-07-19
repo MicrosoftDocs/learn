@@ -16,13 +16,13 @@ quiz:
       choices:
         - content: "Nondeterministic nature of generative AI systems"
           isCorrect: true
-          explanation: "As AI systems are nondeterministic, this means that you do not always get the same output with the same input. Security controls have traditionally been based on the same input equals the same output every time, so this creates challenges when looking to apply security controls to AI systems."
+          explanation: "As AI systems are nondeterministic, this means that you don't always get the same output with the same input. Security controls often assume that the same input equals the same output every time, so this creates challenges when looking to apply security controls to AI systems."
         - content: "AI is fundamentally insecure"
           isCorrect: false
-          explanation: "AI is not fundamentally insecure, although securing AI systems is a rapidly developing field and new methods to secure it are being developed all the time."
+          explanation: "AI isn't fundamentally insecure, although securing AI systems is a rapidly developing field and new methods to secure it are being developed all the time."
         - content: "AI is too new to secure"
           isCorrect: false
-          explanation: "Whilst AI is a new technology and methods for securing it are developing rapidly, it is not impossible to apply security controls to AI."
+          explanation: "While AI is a new technology and methods for securing it are developing rapidly, it isn't impossible to apply security controls to AI."
     - content: "Which kind of jailbreak attack involves sending an AI model multiple prompts to incrementally break guardrails to enact a jailbreak attack?"
       choices:
         - content: "Spoofing"
@@ -38,10 +38,10 @@ quiz:
       choices:
         - content: "AI Usage Security"
           isCorrect: false
-          explanation: "AI Usage Security layer is the AI architecture layer that deals with how AI capabilities are ultimately used and consumed, this is the layer that is “top” of the stack and closest to human users."
+          explanation: "AI Usage Security layer is the AI architecture layer that deals with how AI capabilities are ultimately used and consumed. This layer is the top of the stack and closest to human users."
         - content: "AI Platform Security"
           isCorrect: false
-          explanation: "AI platform security layer is the AI architecture layer that deals with providing AI capabilities to applications. This is the “bottom” layer of the stack."
+          explanation: "AI platform security layer is the AI architecture layer that deals with providing AI capabilities to applications. This is the bottom layer of the stack."
         - content: "AI Infrastucture Security"
           isCorrect: true
           explanation: "AI application security is the AI architecture layer that deals with how an application accesses the AI capabilities and provides the service or interface that will be consumed by the user. This is the “middle” layer in AI architecture."
