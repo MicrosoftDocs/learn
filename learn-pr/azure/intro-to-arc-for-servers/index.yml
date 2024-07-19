@@ -3,6 +3,7 @@ uid: learn.azure.intro-to-arc-for-servers
 metadata:
   title: Introduction to Azure Arc-enabled servers
   description: This module introduces you to Azure Arc-enabled servers and describes its characteristics, capabilities, and use cases.
+  manager: rayoflores
   ms.date: 11/13/2023
   author: johnmarco
   ms.author: johnmarc

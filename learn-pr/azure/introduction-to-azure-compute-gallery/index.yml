@@ -3,6 +3,7 @@ uid: learn.introduction-to-azure-compute-gallery
 metadata:
   title: Introduction to Azure Compute Gallery
   description: Learn what Azure Compute Gallery is, how it works, and when to use it.
+  manager: akashdubey
   ms.date: 08/16/2023
   author: tomvcassidy
   ms.author: tomcassidy

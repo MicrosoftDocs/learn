@@ -2,12 +2,12 @@
 uid: learn.wwl.configure-container-app-azure-container-apps
 metadata:
   title: Configure a container app in Azure Container Apps
-  description: "This module guides users through creating, configuring, and managing Container Apps and their environments. It also explores ingress options, scaling, instance management, and security considerations with best practices for configuring Azure Container Apps."
+  description: This module guides users through creating, configuring, and managing Container Apps and their environments. It also explores ingress options, scaling, instance management, and security considerations with best practices for configuring Azure Container Apps.
   ms.date: 11/22/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-container-apps
 title: Configure a container app in Azure Container Apps
 summary: |
   This module examines the features and capabilities of Azure Container Apps, and then focuses on how to create, configure, scale, and manage container apps using Azure Container Apps.

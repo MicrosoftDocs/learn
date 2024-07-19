@@ -9,7 +9,6 @@ metadata:
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen
-  ms.service: iot-edge
 durationInMinutes: 8 # dummy number at present
 content: |
   [!include[](includes/2-what-azure-sphere.md)]

@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: module
   ms.custom: team=nextgen
+  ms.service: artificial-intelligence
 title: Analyze images of rocks by using artificial intelligence
 summary: Identify data to add to an artificial intelligence model that classifies space rocks in random photos.
 abstract: |

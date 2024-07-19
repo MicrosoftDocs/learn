@@ -3,6 +3,8 @@ uid: learn.secure-and-isolate-with-nsg-and-service-endpoints
 metadata:
   title: Secure and isolate access to Azure resources by using network security groups and service endpoints
   description: Find out how Azure network security groups and service endpoints help you secure your virtual machines and Azure services from unauthorized network access.
+  ms.service: virtual-network
+  manager: kumud
   ms.date: 10/11/2023
   author: asudbring
   ms.author: allensu
