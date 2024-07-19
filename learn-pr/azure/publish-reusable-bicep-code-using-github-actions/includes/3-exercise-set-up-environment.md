@@ -30,20 +30,21 @@ Run a template that sets up your GitHub repository.
 
 On the GitHub site, follow these steps to create a repository from the template:
 
+1. Sign in to GitHub.
 1. Select **Use this template** > **Create a new repository**.
 
-   :::image type="content" source="../media/3-template.png" alt-text="Screenshot of the GitHub interface that shows the template repo, with the button for using the template highlighted.":::
+   :::image type="content" source="../media/3-template.png" alt-text="Screenshot of the GitHub interface that shows the template repository. The button for using the template is highlighted." lightbox="../media/3-template.png":::
 
-1. For **Owner** select your GitHub account.
+1. For **Owner**, select your GitHub account.
 1. Enter a **Repository name** for your new project, such as _toy-reusable_.
 
 1. Select the **Public** option.
 
-   When you create your own repositories, you might want to make them private. In this module, you'll use features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
+   When you create your own repositories, you might want to make them private. In this module, you'll use features of GitHub that work only in conjunction with public repositories and GitHub Enterprise accounts.
 
-1. Select **Create repository from template**.
+1. Select **Create repository**.
 
-   :::image type="content" source="../media/3-repo-settings.png" alt-text="Screenshot of the GitHub interface that shows the repo creation page.":::
+   :::image type="content" source="../media/3-repo-settings.png" alt-text="Screenshot of the GitHub interface that shows the repository creation page." lightbox="../media/3-repo-settings.png":::
 
 [!INCLUDE [](../../includes/cleanup-steps.md)]
 
@@ -51,18 +52,18 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 Now that you have a copy of the template repository in your own account, you'll clone this repository locally so you can start working in it.
 
-1. Select **Code** and select the copy icon.
+1. Select **Code**, and then select the **Copy url to clipboard** icon.
 
-   :::image type="content" source="../media/3-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface that shows the new repository, with the repository U R L copy button highlighted.":::
+   :::image type="content" source="../media/3-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface that shows the new repository. The repository U R L copy button is highlighted." lightbox="../media/3-github-repository-clipboard.png":::
 
 1. Open Visual Studio Code.
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
-1. In the terminal, go to the directory where you want to clone the GitHub repository on your local computer. For example, to clone the repository to the _toy-reusable_ folder, run the following command:
+1. In the terminal, go to the directory within which you want to clone the GitHub repository on your local computer. For example, to clone the repository within the _repositories_ folder, run the following command:
 
    ```bash
-   cd toy-reusable
+   cd repositories
    ```
 
 1. Type `git clone` and then paste the URL that you copied earlier, which looks something like this:
@@ -74,14 +75,14 @@ Now that you have a copy of the template repository in your own account, you'll 
 1. Reopen Visual Studio Code in the repository folder by running the following command in the Visual Studio Code terminal:
 
    ```bash
-   code -r toy-reusable
+   code --reuse-window toy-reusable
    ```
 
 ## Sign in to Azure
 
 ::: zone pivot="cli"
 
-To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli) tools.
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Make sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli) tools.
 
 [!INCLUDE [](../../includes/azure-exercise-terminal-cli.md)]
 
@@ -99,7 +100,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ::: zone pivot="powershell"
 
-To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps).
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Make sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps) and the [Azure Account extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account).
 
 [!INCLUDE [](../../includes/azure-exercise-terminal-powershell.md)]
 
@@ -123,7 +124,7 @@ Next, create a workload identity in Microsoft Entra ID for your deployment workf
 
 To create the workload identities, the Azure CLI commands use `jq` to parse data from JSON output. If you don't have `jq` installed, you can use Bash in [Azure Cloud Shell](https://shell.azure.com/) to create the workload identity, resource group and role assignment, and prepare the GitHub secrets.
 
-1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
+1. Run the following code to define variables for your GitHub username and your repository name. Make sure that you replace `mygithubuser` with your GitHub username, which you noted previously in this exercise. Also, make sure that you specify the correct GitHub repository name.
 
    ```bash
    githubOrganizationName='mygithubuser'
@@ -146,7 +147,7 @@ To create the workload identities, the Azure CLI commands use `jq` to parse data
 
 ::: zone pivot="powershell"
 
-1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
+1. Run the following code to define variables for your GitHub username and your repository name. Make sure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also, make sure that you specify the correct GitHub repository name.
 
    ```azurepowershell
    $githubOrganizationName = 'mygithubuser'
@@ -169,7 +170,7 @@ To create the workload identities, the Azure CLI commands use `jq` to parse data
 
 ## Create a resource group in Azure and grant the workload identity access
 
-Next, create a resource group for your website. This process also grants the workload identity the Contributor role on the resource group, which allows your workflow to deploy to the resource group.
+Next, create a resource group for your web site. This process also grants the workload identity the Contributor role on the resource group, which allows your workflow to deploy to the resource group.
 
 ::: zone pivot="cli"
 
@@ -234,13 +235,13 @@ Make a note of your application ID value for the _AZURE_CLIENT_ID_. You can use 
 
 You've created a workload identity, and a resource group that it can deploy to. Next, create secrets in GitHub Actions.
 
-1. In your browser, navigate to your GitHub repository.
+1. In your browser, go to your GitHub repository.
 
 1. Select **Settings** > **Secrets and variables** > **Actions**.
 
 1. Select **New repository secret**.
 
-   :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
+   :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page. The 'New repository secret' button is highlighted." lightbox="../../includes/media/github-create-repository-secret.png":::
 
 1. Name the secret _AZURE_CLIENT_ID_.
 
@@ -248,10 +249,10 @@ You've created a workload identity, and a resource group that it can deploy to. 
 
 1. Select **Add secret**.
 
-   :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
+   :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page. The name and value are entered, and the 'Add secret' button is highlighted." lightbox="../../includes/media/github-create-repository-secret-details.png":::
 
 1. Repeat the process to create the secrets for _AZURE_TENANT_ID_ and _AZURE_SUBSCRIPTION_ID_, copying the values from the corresponding fields in the terminal output.
 
 1. Verify that your list of secrets now shows all three secrets.
 
-   :::image type="content" source="../../includes/media/github-create-repository-secrets.png" alt-text="Screenshot of the GitHub interface showing the list of secrets." border="true":::
+   :::image type="content" source="../../includes/media/github-create-repository-secrets.png" alt-text="Screenshot of the GitHub interface showing the list of secrets." source="../../includes/media/github-create-repository-secrets.png":::
