@@ -4,10 +4,12 @@ title: Summary
 metadata:
   title: Summary
   description: In a technology-driven era, the convergence of AI and education yields numerous possibilities. From transforming data to providing tools for growth and improving learners' experiences, AI technology fosters innovation in education.
-  ms.date: 01/24/2024
   author: yoosunee
   ms.author: andreapark
+  ms.date: 01/24/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]
