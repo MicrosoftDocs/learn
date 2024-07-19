@@ -4,11 +4,11 @@ Model manipulation occurs during the model training phase. The two primary vulne
 
 Model poisoning is the ability to poison the trained model by tampering with the model architecture, training code, or hyperparameters. Examples of model poisoning attack techniques include:
 
-**Availability Attacks**: These aim to inject so much bad data into the system that the model's learned boundary becomes useless. This can lead to a significant drop in accuracy, even under strong defenses.
+- **Availability Attacks**: These aim to inject so much bad data into the system that the model's learned boundary becomes useless. This can lead to a significant drop in accuracy, even under strong defenses.
 
-**Integrity (Backdoor) Attacks**: These sophisticated attacks leave the classifier functioning normally but introduce a backdoor. This backdoor allows the attacker to manipulate the model's behavior for specific inputs, potentially leading to private information leakage or system breakdown.
+- **Integrity (Backdoor) Attacks**: These sophisticated attacks leave the classifier functioning normally but introduce a backdoor. This backdoor allows the attacker to manipulate the model's behavior for specific inputs, potentially leading to private information leakage or system breakdown.
 
-**Adversarial Access Levels**: The effectiveness of poisoning attacks depends on the level of adversarial access, ranging from most to least dangerous. Attackers can use strategies like boosting malicious updates or alternating minimization to maintain stealth and improve attack success.
+- **Adversarial Access Levels**: The effectiveness of poisoning attacks depends on the level of adversarial access, ranging from most to least dangerous. Attackers can use strategies like boosting malicious updates or alternating minimization to maintain stealth and improve attack success.
 
 ## Data poisoning
 
