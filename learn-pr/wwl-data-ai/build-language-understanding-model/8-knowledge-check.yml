@@ -3,11 +3,13 @@ uid: learn.wwl.build-language-understanding-model.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 11/07/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 11/07/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
