@@ -17,35 +17,35 @@ quiz:
     choices:
     - content: "To manage internal employee accounts"
       isCorrect: false
-      explanation: "Incorrect. This is not the primary purpose of Microsoft Entra External ID in this context."
+      explanation: "Incorrect. Managing internal employee accounts isn't the primary purpose of Microsoft Entra External ID in this context."
     - content: "To create branded sign-in and sign-up experiences for customers"
       isCorrect: true
-      explanation: "Correct. Microsoft Entra External ID is specifically designed to provide customizable sign-in and sign-up experiences for external users (such as customers). It allows you to brand the flows, customize account creation, secure account, and orchestrate verification."
+      explanation: "Correct. Microsoft Entra External ID is designed to provide customizable sign-in and sign-up experiences for external users (such as customers). It allows you to brand the flows, customize account creation, secure account, and orchestrate verification."
     - content: "To optimize website performance"
       isCorrect: false
-      explanation: "Incorrect. This is not the primary purpose of Microsoft Entra External ID in this context."
+      explanation: "Incorrect. Optimizing website performance isn't the primary purpose of Microsoft Entra External ID in this context."
     - content: "To handle payment processing"
       isCorrect: false
-      explanation: "Incorrect. This is not the primary purpose of Microsoft Entra External ID in this context."
+      explanation: "Incorrect. Handling payment processing isn't the primary purpose of Microsoft Entra External ID in this context."
   - content: "What role does the tenant play in Microsoft Entra External ID?"
     choices:
     - content: "It hosts our website files"
       isCorrect: false
-      explanation: "Incorrect. This is not the primary role that the tenant plays."
+      explanation: "Incorrect. Hosting website files isn't the primary role that the tenant plays."
     - content: "It stores user accounts securely"
       isCorrect: true
       explanation: "Correct. The tenant is where user accounts are securely stored. It’s a foundational step in using Microsoft Entra External ID."
     - content: "It manages payment gateways"
       isCorrect: false
-      explanation: "Incorrect. This is not the primary role that the tenant plays."
+      explanation: "Incorrect. Managing payment gateways isn't the primary role that the tenant plays."
     - content: "It handles DNS configuration"
       isCorrect: false
-      explanation: "Incorrect. This is not the primary role that the tenant plays."
+      explanation: "Incorrect. Handling DNS configuration isn't the primary role that the tenant plays."
   - content: "Which component of Microsoft Entra External ID allows you to customize the sign-in and sign-up experiences for your website?"
     choices:
     - content: "Tenant"
       isCorrect: false
-      explanation: "Incorrect. Your tenant is not the primary component that allows you to customize your sign-up and sign-in experiences."
+      explanation: "Incorrect. Your tenant isn't the primary component that allows you to customize your sign-up and sign-in experiences."
     - content: "App registration"
       isCorrect: false
       explanation: "Incorrect. App registration doesn't allow you to customize your sign-up and sign-in experiences."
@@ -54,4 +54,4 @@ quiz:
       explanation: "Correct. User flows in Microsoft Entra External ID allow you to customize identity providers used and define how attributes should be presented during sign-up."
     - content: "Microsoft Graph API"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Graph API is not the primary component that allows you to customize your sign-up and sign-in experiences."
+      explanation: "Incorrect. Microsoft Graph API isn't the primary component that allows you to customize your sign-up and sign-in experiences."

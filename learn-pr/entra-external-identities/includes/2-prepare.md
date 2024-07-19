@@ -1,6 +1,6 @@
 ## Project overview
 
-Our project aims to launch a new website for our online grocery retailer. The primary goal is to ensure seamless sign-in and account creation experiences for both existing and new customers. The marketing team emphasizes brand representation, while the security team focuses on protecting user accounts. To achieve this, we’ll implement Microsoft Entra External ID, a cloud-hosted identity and access management solution.
+Our project aims to launch a new website for our online grocery retailer. The primary goal is to ensure seamless sign-in and account creation experiences for both existing and new customers. The marketing team emphasizes brand representation, while the security team focuses on protecting user accounts. To achieve our goal, we’ll implement Microsoft Entra External ID, a cloud-hosted identity and access management solution.
 
 ### High-level approach
 
@@ -13,7 +13,7 @@ Our project aims to launch a new website for our online grocery retailer. The pr
 
 ### Configuration options
 
-Throughout the module, you will be able to select your preferred configuration option to follow along.
+Throughout the module, you can select your preferred configuration option to follow along.
 ![alt text](../media/prepare/1.png)
 
 - The **Microsoft Entra admin center** provides an intuitive interface for straightforward configuration tasks.
