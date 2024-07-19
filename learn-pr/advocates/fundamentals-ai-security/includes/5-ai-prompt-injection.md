@@ -1,6 +1,6 @@
  An AI prompt injection attack is a type of vulnerability that affects AI and machine learning models using prompt-based learning mechanisms. In this attack, an adversary crafts malicious inputs disguised as legitimate prompts, tricking the language model (such as ChatGPT) into altering its expected behavior. 
 
-![A flow diagram of a cross prompt injection attack](../media/image6.png)
+![A flow diagram of a cross prompt injection attack](../media/prompt-injection.png)
 
 The image displays the steps of a typical cross prompt injection attack (XPIA):
 

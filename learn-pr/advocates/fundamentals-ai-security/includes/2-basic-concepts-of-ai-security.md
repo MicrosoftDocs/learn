@@ -22,7 +22,7 @@ Responsible Artificial Intelligence (Responsible AI) is an approach to developin
 
 Microsoft's Responsible AI Standard is a framework for building AI systems according to six principles: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. For Microsoft, these principles are the cornerstone of a responsible and trustworthy approach to AI, especially as intelligent technology becomes more prevalent in products and services that people use every day.
 
-![Diagram of the six principles of Microsoft Responsible AI, which encompass fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.](../media/image1.png)
+![Diagram of the six principles of Microsoft Responsible AI, which encompass fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.](../media/responsible-ai.png)
 
 AI harms are issues in cybersecurity that are specific to AI systems. Some of these AI harms would also be considered cybersecurity issues, but some of them go further than this and would also be considered privacy and ethical issues. AI blurs the lines between the traditional split of cybersecurity and ethics. It is important that security professionals understand responsible AI holistically in order to create secure and responsible AI systems.
 

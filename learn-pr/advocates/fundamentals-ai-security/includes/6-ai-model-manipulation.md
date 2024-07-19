@@ -23,29 +23,29 @@ Four examples of data poisoning include:
 - Model inversion attacks
 - Stealth attacks
 
-### Backdoor Poisoning
+### Backdoor poisoning
 
 In this attack, an adversary injects data into the training set with the intention of creating a hidden vulnerability or "backdoor" in the model. The model learns to rely on this backdoor, which can later be exploited by the attacker to manipulate its behavior.
 
-For example, imagine a spam filter trained on email data. If an attacker subtly introduces spammy keywords into legitimate emails during training, the filter might inadvertently classify future spammy emails that contain these keywards as legitimate.
+For example, imagine a spam filter trained on email data. If an attacker subtly introduces spammy keywords into legitimate emails during training, the filter might inadvertently classify future spammy emails that contain these keywords as legitimate.
 
-### Availability Attacks
+### Availability attacks
 
 Availability attacks aim to disrupt the availability of a system by contaminating its data during training. For instance:
 
 - An autonomous vehicle's training data includes images of road signs. An attacker could inject misleading or altered road sign images, causing the vehicle to misinterpret real signs during deployment.
 - Chatbots trained on customer interactions might learn inappropriate language if poisoned data containing imaginative expletives is introduced. This may lead to the chatbot providing answers that are inappropriate.
 
-### Model Inversion Attacks
+### Model inversion attacks
 
 Model inversion attacks exploit the model's output to infer sensitive information about the training data. For example, a facial recognition model is trained on a dataset containing both celebrities and private individuals. An attacker could use model outputs to reconstruct private individuals' faces, violating privacy.
 
-### Stealth Attacks
+### Stealth attacks
 
 Stealthy poisoning techniques aim to evade detection during training. Attackers subtly modify a small fraction of the training data to avoid triggering alarms. For example, altering a few pixels in images of handwritten digits during training could cause a digit recognition model to misclassify specific digits.
 
 Model manipulation attacks can be mitigated by several security controls:
 
-- Protecting the AI model itself from being poisoned with rogue data, this is achieved by limiting access to the model itself via identity, network and data security controls.
+- Protecting the AI model itself from being poisoned with rogue data, this is achieved by limiting access to the model itself via identity, network, and data security controls.
 - Preventing an AI models' training data from being tampered with by restricting access to the data, once again using identity, network and data security controls.
 - Detecting model inversion attacks with outbound content filters.

@@ -4,7 +4,7 @@ To understand how attacks against AI can occur, you can separate AI architecture
 - AI Application layer
 - AI Platform layer
 
-![A diagram of a the AI architecture layers](../media/image2.png)
+![A diagram of a the AI architecture layers](../media/ai-architecture-layers.png)
 
 ## AI usage layer
 

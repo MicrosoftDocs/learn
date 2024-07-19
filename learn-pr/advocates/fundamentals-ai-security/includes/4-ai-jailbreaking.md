@@ -1,6 +1,6 @@
 An AI jailbreak is a _technique_ that can cause the failure of guardrails (_mitigations_). The resulting _harm_ comes from whatever guardrail was circumvented: for example, causing the system to violate its operators' policies, make decisions unduly influenced by one user, or execute malicious instructions. This _technique_ is associated with attack _techniques_ including prompt injection, evasion, and model manipulation.
 
-![An image explaining AI jailbreak.](../media/image3.png)
+![Diagram showing AI jailbreak.](../media/ai-jailbreak.png)
 
 An example of a jailbreak would be when an attacker asks an AI assistant to provide information about how to build a Molotov cocktail (fire bomb). As these items are covered in many history books, this information is built into most of the generative AI models available today. However because no company that provides AI services wants to be providing weapon recipes, they're configured to prevent this information from being provided to the user through filters and other techniques to deny this request. 
 
@@ -13,10 +13,10 @@ There's a wide range of known jailbreak-like attacks. Some of them (like DAN) wo
 
 The animated image provides an example of a crescendo attack. Rather than outright asking the LLM model to break its guardrails in one prompt, the attacker crafts a number of prompts that incrementally confuse the LLM into breaking its guardrails.
 
-![An animated image showing a crescendo attack](../media/image4.gif)
+![Diagram showing a crescendo attack](../media/cresendo.gif)
 
 Jailbreaking attacks are mitigated by Microsoft's safety filters; however, AI models are still susceptible to it. Many variations of these attempts are discovered on a regular basis, then tested and mitigated.
 
-![A diagram showing attacks and mitigations](../media/image5.png)
+![Diagram showing attacks and mitigations](../media/attacks-mitigations.png)
 
 Guardrails will need to be updated as novel techniques in the AI space are discovered.
