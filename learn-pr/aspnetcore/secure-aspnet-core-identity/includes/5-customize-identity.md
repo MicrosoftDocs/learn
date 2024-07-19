@@ -7,15 +7,16 @@ In this section, you're going to create and customize the Identity UI files to b
 1. Add the user registration files to be modified to the project:
 
     ```dotnetcli
-    dotnet aspnet-codegenerator identity --dbContext RazorPagesPizzaAuth --files "Account.Manage.EnableAuthenticator;Account.Manage.Index;Account.Register;Account.ConfirmEmail" --userClass RazorPagesPizzaUser --force
+    dotnet aspnet-codegenerator identity --dbContext RazorPagesPizzaAuth --files "Account.Manage.EnableAuthenticator;Account.Manage.Index;Account.Register;Account.ConfirmEmail"
     ```
 
     In the preceding command:
 
     * The `--dbContext` option provides the tool with knowledge of the existing `DbContext`-derived class named `RazorPagesPizzaAuth`.
     * The `--files` option specifies a semicolon-delimited list of unique files to be added to the *Identity* area.
-    * The `--userClass` option results in the creation of an `IdentityUser`-derived class named `RazorPagesPizzaUser`.
-    * The `--force` option causes existing files in the *Identity* area to be overwritten.
+        * `Account.Manage.Index` is the profile management page. This page is modified later in this unit.
+        * `Account.Register` is the user registration page. This page is also modified in this unit.
+        * `Account.Manage.EnableAuthenticator` and `Account.ConfirmEmail` are scaffolded but not modified in this unit.
 
     > [!TIP]
     > Run the following command from the project root to view valid values for the `--files` option:
@@ -23,8 +24,6 @@ In this section, you're going to create and customize the Identity UI files to b
 
     The following files are added to the *:::no-loc text="Areas/Identity":::* directory:
 
-    * **:::no-loc text="Data/":::**
-        * *:::no-loc text="RazorPagesPizzaUser.cs":::*
     * **:::no-loc text="Pages/":::**
         * *:::no-loc text="_ViewImports.cshtml":::*
         * **:::no-loc text="Account/":::**
@@ -42,30 +41,12 @@ In this section, you're going to create and customize the Identity UI files to b
                 * *:::no-loc text="Index.cshtml.cs":::*
                 * *:::no-loc text="ManageNavPages.cs":::*
 
-    Additionally, the *:::no-loc text="Data/RazorPagesPizzaAuth.cs":::* file, which existed before running the preceding command, was overwritten because the `--force` option was used. The `RazorPagesPizzaAuth` class declaration now references the newly created user type of `RazorPagesPizzaUser`:
+## Extend `IdentityUser`
 
-    ```csharp
-    public class RazorPagesPizzaAuth : IdentityDbContext<RazorPagesPizzaUser>
-    ```
+You've been given a new requirement to store your users' names. Since the default `IdentityUser` class doesn't contain properties for first and last names, you need to extend the `RazorPagesPizzaUser` class.
 
-    The *:::no-loc text="EnableAuthenticator":::* and *:::no-loc text="ConfirmEmail":::* Razor pages were scaffolded, though they aren't modified until later in the module.
+Make the following changes to *:::no-loc text="Areas/Identity/Data/RazorPagesPizzaUser.cs":::*:
 
-1. In *:::no-loc text="Program.cs":::*, the call to `AddDefaultIdentity` needs to be made aware of the new Identity user type. Incorporate the following highlighted changes. (Example reformatted for readability.)
-
-    [!code-csharp[](../code/program-after-customization.cs?range=1-3,7-15&highlight=3,8-9)]
-
-1. Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to incorporate the following highlighted changes at the top. Save your changes.
-
-    [!code-cshtml[](../code/pages/shared/_loginpartial.cshtml?range=1-5,7&highlight=2-4)]
-
-    The preceding changes update the user type passed to both `SignInManager<T>` and `UserManager<T>` in the `@inject` directives. Instead of the default `IdentityUser` type, `RazorPagesPizzaUser` user is now referenced. The `@using` directive was added to resolve the `RazorPagesPizzaUser` references.
-
-    *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* is physically located outside of the *:::no-loc text="Identity":::* area. So the file wasn't updated automatically by the scaffold tool. The appropriate changes must be made manually.
-
-    > [!TIP]
-    > As an alternative to manually editing the *:::no-loc text="_LoginPartial.cshtml":::* file, it can be deleted prior to running the scaffold tool. The *:::no-loc text="_LoginPartial.cshtml":::* file is recreated with references to the new `RazorPagesPizzaUser` class.
-
-1. Update *:::no-loc text="Areas/Identity/Data/RazorPagesPizzaUser.cs":::* to support storage and retrieval of the additional user profile data. Make the following changes:
     1. Add the `FirstName` and `LastName` properties:
 
         [!code-csharp[](../code/areas/identity/data/razorpagespizzauser.cs?highlight=3-5,7-9)]
@@ -140,6 +121,8 @@ Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to display the fi
 
 [!code-cshtml[](../code/pages/shared/_loginpartial.cshtml?name=snippet_razorpagesuser&highlight=4-5,8)]
 
+`UserManager.GetUserAsync(User)` returns a nullable `RazorPagesPizzaUser` object. The null-conditional `?.` operator is used to access the `FirstName` and `LastName` properties only if the `RazorPagesPizzaUser` object is not null.
+
 ## Customize the profile management form
 
 You've added the new fields to the user registration form, but you should also add them to the profile management form so existing users can edit them.
@@ -167,7 +150,7 @@ You've added the new fields to the user registration form, but you should also a
 
 ## Configure the confirmation email sender
 
-In order to send the confirmation email, you need to create an implementation of <xref:Microsoft.AspNetCore.Identity.UI.Services.IEmailSender> and register it in the dependency injection system. To keep things simple, your implementation doesn't actually send email to an SMTP server. It just writes the email content to the console.
+The first time you tested the app, you registered a user and then clicked a link to simulate confirming the user's email address. In order to send an *actual* confirmation email, you need to create an implementation of <xref:Microsoft.AspNetCore.Identity.UI.Services.IEmailSender> and register it in the dependency injection system. To keep things simple, your implementation in this unit won't actually send email to an SMTP server. It will just write the email content to the console.
 
 1. Since you're going to view the email in plain text in the console, you should change the generated message to exclude HTML-encoded text. In *Areas/Identity/Pages/Account/Register.cshtml.cs*, find the following code:
 
@@ -183,7 +166,7 @@ In order to send the confirmation email, you need to create an implementation of
         $"Please confirm your account by visiting the following URL:\r\n\r\n{callbackUrl}");
     ```
 
-1. In the **Explorer** pane, right-click the *Services* folder and create a new file named *EmailSender.cs*. Open the file and add the following code:
+1. In the **Explorer** pane, right-click the *RazorPagesPizza\Services* folder and create a new file named *EmailSender.cs*. Open the file and add the following code:
 
     ```csharp
     using Microsoft.AspNetCore.Identity.UI.Services;
@@ -281,4 +264,4 @@ You should also test the changes you made to the profile management form.
 
 ## Summary
 
-In this unit, you customized Identity to store custom user information. You also customized the confirmation email. In the next unit, you'll learn about implementing multi-factor authentication in Identity.
+In this unit, you customized Identity to store custom user information. You also customized the confirmation email. In the next unit, you'll learn about implementing multifactor authentication in Identity.
