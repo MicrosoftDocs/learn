@@ -3,11 +3,13 @@ uid: learn.get-started-prompt-flow-ai-studio.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check to test your knowledge on Azure AI Studio's prompt flow."
-  ms.date: 01/25/2024
+  description: Knowledge check to test your knowledge on Azure AI Studio's prompt flow.
   author: madiepev
   ms.author: madiepev
+  ms.date: 01/25/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
 quiz:
