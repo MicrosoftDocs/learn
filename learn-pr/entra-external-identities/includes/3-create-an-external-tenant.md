@@ -55,6 +55,7 @@ The following example checks availability of tenant name **woodgrove** using sub
       "name": "woodgrove",
       "countryCode": "US"
     }
+```
 
 ##### 1.1 Check the response
 
