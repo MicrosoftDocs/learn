@@ -2,7 +2,7 @@
 uid: learn.wwl.training-certification-course-planning-microsoft-learn-educators
 metadata:
   title: Training, certification, and course planning for MSLE
-  description: ""
+  description: "The VEPS series covers the MSLE program providing an understanding of all aspects of the program from joining MSLE, preparing to teach a course, closing out a course, and participating in the MSLE Teams-based community."
   ms.date: 07/19/2024
   author: wwlpublish
   ms.author: tsheppard
@@ -10,8 +10,26 @@ metadata:
   ms.service: azure
   ai-usage: human-only
 title: Training, certification, Course planning Microsoft Learn Educators
-summary: ""
-abstract: ""
+summary: |
+  The VEPS series covers the MSLE program providing an understanding of
+
+  all aspects of the program from joining MSLE, preparing to teach a course,
+
+  closing out a course, and participating in the MSLE Teams-based community.&nbsp;
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Register your course in the Microsoft Learn for Educators portal.
+
+  -   Learn how to set up your lab seats and access Azure credits.
+
+  -   Execute learning management system integration.
+
+  -   Access technical training.
+
+  -   Determine how you and your students get certified.
+
+  -   Finalize course preparation.
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
