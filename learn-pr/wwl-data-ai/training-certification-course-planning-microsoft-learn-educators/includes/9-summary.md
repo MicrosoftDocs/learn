@@ -12,6 +12,6 @@ To prepare you for delivering cutting-edge technical instruction in your classes
 - [MSLE lab frequently asked questions](https://aka.ms/MSLELabFAQ)
 - [Microsoft Virtual Training Days](https://events.microsoft.com/allevents)
 - [Pearson VUE Testing Center](https://home.pearsonvue.com/Test-centers.aspx)
-- [PearsonVUE](https://aka.ms/pearsonvue)
+- [Pearson VUE](https://aka.ms/pearsonvue)
 - [Microsoft Volume Licensing Program](https://aka.ms/mslevolumelicensing)
 - [Certiport](https://certiport.pearsonvue.com/Certifications/Microsoft)
