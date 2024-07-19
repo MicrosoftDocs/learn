@@ -29,13 +29,13 @@ quiz:
     choices:
     - content: "Microsoft curriculum and teaching materials"
       isCorrect: true
-      explanation: "Feedback: Correct. Educators receive Microsoft curriculum and teaching materials which includes full course, module content (e.g., lab components), and trainer guide. Additional teaching guides for educator prep and student assessment guides are also included"
+      explanation: "Feedback: Correct. Educators receive Microsoft curriculum and teaching materials which include full course, module content (e.g., lab components), and trainer guide. Additional teaching guides for educator prep and student assessment guides are also included"
     - content: "Microsoft products"
       isCorrect: false
-      explanation: "Feedback: Incorrect. Microsoft products are not offered through the MSLE program"
+      explanation: "Feedback: Incorrect. Microsoft products aren't offered through the MSLE program"
     - content: "Access to email"
       isCorrect: false
-      explanation: "Feedback: Incorrect. Email is not offered through the MSLE program"
+      explanation: "Feedback: Incorrect. Email isn't offered through the MSLE program"
   - content: "What should institutions or individual educators do to sign up for MSLE?"
     choices:
     - content: "Email Microsoft"
