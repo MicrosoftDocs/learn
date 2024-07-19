@@ -3,11 +3,11 @@ uid: learn.wwl.design-model-deployment-solution
 metadata:
   title: Design a model deployment solution
   description: Azure Machine Learning Python SDK v2
-  ms.date: 01/03/2023
+  ms.date: 07/10/2024
   author: wwlpublish
   ms.author: madiepev
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-machine-learning
 title: Design a model deployment solution
 summary: Learn how to design a model deployment solution and how the requirements of the deployed model can affect the way you train a model.
 abstract: |
