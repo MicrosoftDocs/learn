@@ -7,6 +7,7 @@ metadata:
   author: s-polly
   ms.author: scottpolly
   ms.topic: module
+  ms.service: machine-learning
 title: Train and evaluate clustering models
 summary: Clustering is a type of machine learning that is used to group similar items into clusters.
 abstract: |

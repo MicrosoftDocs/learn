@@ -6,7 +6,7 @@ A virtual network in Microsoft Azure is isolated from other networks, while comm
 
 ## Network Security
 
-Network Security covers controls to secure and protect Azure networks, including securing virtual networks, establishing private connections, preventing and mitigating external attacks, and securing DNS. Full description of the controls can be found at [Security Control V3: Network Security on Microsoft Docs](/security/benchmark/azure/security-controls-v3-network-security).
+Network Security covers controls to secure and protect Azure networks, including securing virtual networks, establishing private connections, preventing and mitigating external attacks, and securing DNS. Full description of the controls can be found at [Security Control V3: Network Security on Microsoft Learn](/security/benchmark/azure/security-controls-v3-network-security).
 
 ### NS-1: Establish network segmentation boundaries
 

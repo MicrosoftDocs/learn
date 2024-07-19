@@ -8,7 +8,7 @@ metadata:
   author: EliotSeattle
   ms.author: eliotgra
   ms.topic: module
-  manager: eliotgra
+  manager: jmartens
   ms.service: azure-government
 summary: Governments around the world are in the process of a digital transformation, actively investigating solutions and selecting architectures that will help them transition many of their workloads to the cloud. Begin this transformation by exploring why Azure is the right platform for your agency and the value Azure can bring. See how Azure enables you to engage citizens, empower employees, transform government services, and optimize government operations. 
 abstract: | 

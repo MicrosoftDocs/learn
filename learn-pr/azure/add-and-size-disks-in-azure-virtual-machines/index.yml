@@ -3,6 +3,7 @@ uid: learn.add-and-size-disks-in-azure-virtual-machines
 metadata:
   title: Add and size disks in Azure virtual machines
   description: Learn about your virtual machine storage options and how to choose between standard and premium, managed and unmanaged disks for your Azure virtual machine.
+  manager: akashdubey
   ms.date: 12/29/2023
   author: roygara
   ms.author: rogarana

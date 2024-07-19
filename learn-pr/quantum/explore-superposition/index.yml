@@ -9,6 +9,7 @@ metadata:
   manager: tedhudek
   ms.topic: module
   ms.service: azure-quantum
+  ms.subservice: qdk
 title: Explore quantum superposition with Q#
 summary: Learn one of the fundamental concepts of quantum computing, superposition, how to represent superposition of qubit using the Bloch sphere, and how to create and analyze superposition states with Q#.
 abstract: |

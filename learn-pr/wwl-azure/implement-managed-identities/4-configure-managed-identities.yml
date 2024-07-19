@@ -4,11 +4,12 @@ title: Configure managed identities
 metadata:
   title: Configure managed identities
   description: "Configure managed identities"
-  ms.date: 03/13/2024
+  ms.date: 07/16/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
-  ms.custom: N/A, devx-track-azurecli
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-configure-managed-identities.md)]

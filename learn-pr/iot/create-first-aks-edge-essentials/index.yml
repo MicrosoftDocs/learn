@@ -3,6 +3,7 @@ uid: learn.create-first-aks-edge-essentials
 metadata:
   title: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
   description: Deploy AKS Edge Essentials in a single machine K3S cluster with a Linux and Windows node. 
+  manager: lizross
   ms.date: 01/17/2024
   author: asergaz
   ms.author: sergaz

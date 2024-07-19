@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: buzahid
   ms.topic: learning-path
-  ms.service: dotnet-csharp
 title: Implement Interfaces in C#
 prerequisites: |
   Visual Studio Community installed

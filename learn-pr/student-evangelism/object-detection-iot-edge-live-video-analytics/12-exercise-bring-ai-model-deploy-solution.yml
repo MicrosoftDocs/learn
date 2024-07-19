@@ -9,7 +9,6 @@ metadata:
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen
-  ms.service: iot-edge
 durationInMinutes: 15
 content: |
   [!include[](includes/12-exercise-bring-ai-model-deploy-solution.md)]
