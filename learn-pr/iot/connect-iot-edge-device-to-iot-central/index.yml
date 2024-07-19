@@ -5,7 +5,7 @@ metadata:
   description: Prepare your Azure IoT Central application to connect an IoT Edge device and use Azure Functions to filter data before sending it to the cloud.
   author: dominicbetts
   ms.author: dobett
-  ms.date: 05/24/2023
+  ms.date: 07/19/2024
   ms.reviewer: rangv
   manager: lizross
   ms.custom: engagement-fy23
