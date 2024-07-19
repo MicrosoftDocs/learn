@@ -3,11 +3,13 @@ uid: learn-wwl.security-copilot-getting-started.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Microsoft Copilot for Security knowledge check"
-  ms.date: 10/31/2023
+  description: Microsoft Copilot for Security knowledge check
   author: wwlpublish
   ms.author: ceperezb
+  ms.date: 10/31/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 2
 
 content: |
