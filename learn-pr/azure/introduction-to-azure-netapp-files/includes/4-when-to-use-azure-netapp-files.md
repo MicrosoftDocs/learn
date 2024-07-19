@@ -37,7 +37,7 @@ The following diagram depicts a possible architecture. The components interact a
 
 :::image type="content" source="../media/4-oracle-deployment.png" alt-text="Diagram depicting an Oracle Database deployment on Azure NetApp Files." lightbox="../media/4-oracle-deployment.png":::
 
-### Should an Azure Virtual Desktop team use Azure NetApp Files?
+### Should an Azure Virtual Desktop (AVD) team use Azure NetApp Files?
 
 Azure NetApp Files can provide up to 450,000 IOPS and submillisecond latency, which means it can provide storage for large-scale Azure Virtual Desktop (AVD) deployments. By taking advantage of Azure NetApp Files features, you can quickly and easily optimize the scale of your AVD deployment to control costs. Azure NetApp Files lets you change the throughput and choose a different service tier for your volumes on demand without service disruptions. Also, by creating frequent manual or automatic volume snapshots, you can roll back individual FSLogix user profile containers when needed and even revert entire volumes.
 

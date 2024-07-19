@@ -9,6 +9,7 @@ metadata:
   manager: tedhudek
   ms.topic: module
   ms.service: azure-quantum
+  ms.subservice: qdk
 title: Teleport a qubit using entanglement and the Quantum Development Kit
 summary: Learn how to create entanglement with Q# and the Quantum Development Kit, and help Alice and Bob to teleport a qubit.
 abstract: |

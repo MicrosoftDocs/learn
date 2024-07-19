@@ -5,7 +5,11 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Azure NetApp Files.
+<<<<<<< HEAD
   ms.date: 06/03/2024
+=======
+  ms.date: 06/10/2024
+>>>>>>> cb2de977501e8de57a790a6d66d4118c084df73c
   author: mengruts
   ms.author: anfdocs
   ms.topic: unit
@@ -17,10 +21,10 @@ quiz:
     choices:
     - content: "NFSv4.1"
       isCorrect: false
-      explanation: "Incorrect. Although Linux machines can readily access Azure NetApp Files volumes that use only the NFSv4.1 protocol, mounting NFS volumes in Windows is a complex task."
+      explanation: "Incorrect. Although Linux machines can readily access Azure NetApp Files volumes that use only the NFSv4.1 protocol, mounting Network File System (NFS) volumes in Windows is a complex task."
     - content: "SMB3"
       isCorrect: false
-      explanation: "Incorrect. Although Windows machines can readily access Azure NetApp Files volumes that use only the SMB3 protocol, mounting SMB volumes in Linux is a complex task."
+      explanation: "Incorrect. Although Windows machines can readily access Azure NetApp Files volumes that use only the SMB3 protocol, mounting Server Message Block (SMB) volumes in Linux is a complex task."
     - content: "NFSv3 and SMB3"
       isCorrect: true
       explanation: "Correct. Azure NetApp Files supports creating volumes that use NFSv3 and SMB3 simultaneously."

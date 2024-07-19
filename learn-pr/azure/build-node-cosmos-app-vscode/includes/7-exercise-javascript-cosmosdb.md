@@ -1,4 +1,4 @@
-In this unit, you'll create and run scripts, which use SQL keywords such as LIKE, JOIN, and WHERE to find data with the Cosmos SDK.
+In this unit, you create and run scripts, which use SQL keywords such as LIKE, JOIN, and WHERE to find data with the Cosmos SDK.
 
 ## Create the script to find products in the container
 
@@ -17,7 +17,7 @@ In this unit, you'll create and run scripts, which use SQL keywords such as LIKE
 
     The `bikes` term is wrapped with percent signs, `%`, indicating partial matching. 
 
-    The SQL query in the `executeSqlFind` method for the container uses the **LIKE** keyword and query parameters to find any items with a categoryName which includes `Bikes`.
+    The SQL query in the `executeSqlFind` method for the container uses the **LIKE** keyword and query parameters to find any items with a categoryName that includes `Bikes`.
  
 1. Run another query to find all products with the word `Blue` in the name.  
 
@@ -28,13 +28,13 @@ In this unit, you'll create and run scripts, which use SQL keywords such as LIKE
 1. Run another query to find product inventory for bikes in Seattle.
 
     ```bash
-    node 2-contoso-products-find.js find-inventory categoryName '%Bikes%' Seattle
+    node 2-contoso-products-find.js find-inventory categoryName '%Bikes%' location Seattle
     ```
 
 1. Run another query to find inventory for all products with the word `Blue` in the name in Dallas.  
 
     ```bash
-    node 2-contoso-products-find.js find-inventory name '%Blue%' Dallas
+    node 2-contoso-products-find.js find-inventory name '%Blue%' location Dallas
     ```
 
 ## Create the script to upsert products to a container
@@ -50,19 +50,19 @@ In this unit, you'll create and run scripts, which use SQL keywords such as LIKE
 
     :::code language="json" source="~/../cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/3-contoso-products-upsert-insert.json":::
 
-	Notice this object with ID `123` doesn't have any inventory. 
+    Notice this object with ID `123` doesn't have any inventory. 
 
 1. Create a new file for the product, **3-contoso-products-upsert-update.json**, and paste the following JSON object. 
 
     :::code language="json" source="~/../cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/3-contoso-products-upsert-update.json":::
 
-	Notice this object does have inventory. 
+    Notice this object does have inventory. 
 
-1. In the Visual Studio Code terminal, execute the JavaScript file to upsert the new product. 
+1. In the Visual Studio Code terminal, execute the JavaScript file to upsert the new product.
 
     ```bash
-    3-contoso-products-upsert.js
+    node 3-contoso-products-upsert.js
 	```
 
-	Because the product with the ID doesn't exist, it's inserted. Then the script updates the product with inventory. Both the insert and the update functionality use the same code to upsert. 
+    Because the product with that ID doesn't exist, the product is inserted. Then the script updates the product with inventory. Both the insert and the update functionality use the same code to upsert.
  

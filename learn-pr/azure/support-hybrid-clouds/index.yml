@@ -4,9 +4,11 @@ title: Support data classification with private and hybrid clouds
 metadata:
   title: Support data classification with private and hybrid clouds
   description: Discussion of the private and hybrid cloud solutions for government customers to enforce data sovereignty, meet compliance requirements, and protect sensitive data.
+  ms.service: azure-government
+  manager: jmartens
   ms.date: 02/08/2023
-  author: TerryLanfear
-  ms.author: terrylan
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: module
 summary: For many government customers, enforcing data sovereignty, addressing custom compliance requirements, and applying maximum available protection to highly sensitive data are their top priorities for cloud solutions.  Azure Stack Hub and Azure Stack Edge allow them to process highly sensitive data using a private or hybrid cloud and to benefit from a Microsoft intelligent cloud and intelligent edge approach in their architectures. 
 abstract: | 

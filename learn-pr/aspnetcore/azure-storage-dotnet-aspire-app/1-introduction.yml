@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-storage-dotnet-aspire-app.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this introductory unit, you'll see a business scenario that can be addressed by using an Azure Storage account and the .NET Aspire stack to store information in a cloud-native application.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

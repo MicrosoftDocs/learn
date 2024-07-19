@@ -3,6 +3,7 @@ uid: learn.azure.create-batch-account-using-azure-portal
 metadata:
   title: Create an Azure Batch account by using the Azure portal
   description: Azure Batch is a service that enables you to run large-scale parallel and high-performance computing (HPC) applications efficiently in the cloud. There's no need to manage or configure infrastructure. Just schedule the job, allocate the resources you need, and let Batch take care of the rest.
+  manager: mkluck
   ms.date: 04/01/2024
   author: rmcmurray
   ms.author: robmcm

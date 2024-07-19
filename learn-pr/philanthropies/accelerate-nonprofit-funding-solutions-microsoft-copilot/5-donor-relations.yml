@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.accelerate-nonprofit-funding-solutions-microsoft-copilot.donor-relations
+title: Donor relations
+metadata:
+  title: Donor relations
+  description: This content is a part of the Accelerate nonprofit funding solutions with Microsoft Copilot module.
+  ms.date: 5/30/2024
+  author: CourtneyHMicrosoft
+  ms.author: cohodge
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-donor-relations.md)]

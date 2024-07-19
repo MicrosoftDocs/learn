@@ -7,7 +7,7 @@ Additionally, these benefits play a significant role in datacenter consolidation
 
 ## What is Software-Defined Networking (SDN)?
 
-SDN provides a method to centrally configure and manage networks and network services such as switching, routing, and load balancing in your datacenter. SDN uses network function virtualization to implement *virtualized software functions*. These functions replace functionality that’s traditionally delegated to hardware-based network devices.
+SDN provides a method to centrally configure and manage networks and network services such as switching, routing, and load balancing in your datacenter. SDN uses network function virtualization to implement *virtualized software functions*. These functions replace the functionality traditionally delegated to hardware-based network devices.
 
 ## What is network function virtualization?
 
@@ -16,14 +16,14 @@ In software-defined datacenters, virtual appliances take over the delivery of ne
 Virtual appliances feature several benefits when compared with their physical counterparts, with the most prominent ones being:
 
 - Seamless capacity expansion and workload mobility.
-- Minimized operational complexity.
-- Simplified provisioning and management.
+- A minimized operational complexity.
+- Provisioning and management are simplified.
 - Increased mobility.
 - Support for vertical and horizontal scaling.
 
 ## SDN in Azure Stack HCI
 
-Azure Stack HCI solutions provide built-in virtualization of compute and storage resources. In addition, Azure Stack HCI supports virtualizing its network resources by implementing SDN. This functionality allows for implementing various networking scenarios, ranging from integration with an existing VLAN-based infrastructure to full isolation of Azure Stack HCI workloads.
+Azure Stack hyperconverged infrastructure (HCI) solutions provide built-in virtualization of compute and storage resources. In addition, Azure Stack HCI supports virtualizing its network resources by implementing SDN. This functionality allows for implementing various networking scenarios, ranging from integration with an existing VLAN-based infrastructure to full isolation of Azure Stack HCI workloads.
 
 SDN in Azure Stack HCI helps address challenges associated with traditional network infrastructures by increasing agility, improving security, and optimizing efficiency. It provides the following capabilities:
 
@@ -42,7 +42,7 @@ The network function virtualization-based services include:
     > [!NOTE]
     > The Datacenter Firewall is meant to complement existing physical appliances.
 
-- Quality of Service (QoS) policies, which can be used to prevent one application or workload VM from using up the entire bandwidth of the HCI cluster nodes. These policies can be applied to virtualized networks and traditional VLAN networks.
+- Quality of Service (QoS) policies, which can be used to prevent one application or workload virtual machine (VM) from using up the entire bandwidth of the HCI cluster nodes. These policies can be applied to virtualized networks and traditional VLAN networks.
 - Third-party appliances, where customers can bring their own third-party virtual appliances such as firewalls, intrusion detection devices, and load balancers and attach them to SDN virtual networks for advanced services.
 
 ### Virtual networks and subnets

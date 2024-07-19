@@ -2,7 +2,7 @@ You're a global administrator in Microsoft Entra ID for a marketing organization
 
 ## Learning objectives
 
-At the end of this module, you'll be able to:
+By the end of this module, you'll be able to:
 
 - Add users to Microsoft Entra ID.
 - Manage app and resource access by using Microsoft Entra groups.
@@ -10,4 +10,4 @@ At the end of this module, you'll be able to:
 
 ## Prerequisites
 
-- An Azure account with an active subscription
+- A paid Azure account with an active subscription

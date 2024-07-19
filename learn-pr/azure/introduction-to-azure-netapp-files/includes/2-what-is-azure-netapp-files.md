@@ -20,13 +20,22 @@ Both NFS and SMB present logical drives organized in hierarchical structures on 
 
 Azure NetApp Files is an Azure native, first-party, enterprise-class, high-performance, fully managed NAS file storage service.
 
+<<<<<<< HEAD
 Key attributes of Azure NetApp Files include:
+=======
+Azure NetApp Files is designed for the highest possible performance so that it can manage even the most demanding Windows and Linux workloads. This performance is achieved by running Azure NetApp Files instances on dedicated NetApp hardware running NetApp's proprietary ONTAP operating system, which is optimized for high storage throughput and availability.
+>>>>>>> cb2de977501e8de57a790a6d66d4118c084df73c
 
 - Performance, cost optimization, and scale
 - Simplicity and availability
 - Data management and security
 
+<<<<<<< HEAD
 ## Optimize performance, cost, and scale
+=======
+- Input/output operations per second (IOPS). A storage-performance benchmark that measures the average number of read and write operations a storage device can perform per second. Azure NetApp Files offers up to 320,000 IOPS on its lowest performance tier, and up to 450,000 IOPS on its highest tiers. By comparison, most solid-state drives (SSDs) have throughput measurements between 100,000 IOPS and 400,000 IOPS.
+- Latency. Latency is the time required to access a particular storage location. Azure NetApp Files offers an average latency of less than 1 millisecond (ms). By comparison, regular hard drives have latencies between 1 ms and 10 ms, whereas SSDs have latencies between 0.05 ms and 0.15 ms.
+>>>>>>> cb2de977501e8de57a790a6d66d4118c084df73c
 
 Azure NetApp Files is designed to provide high-performance file storage for enterprise workloads and to provide functionality to provide cost optimization and scale. 
 
@@ -123,4 +132,40 @@ When you delete a volume, its snapshots are deleted, but backups remain.
 
 ### Cross-region and cross-zone replication
 
+<<<<<<< HEAD
 Azure NetApp Files replication functionality provides data protection through cross-region and cross-zone volume replication. This functionality can asynchronously replicate data from an Azure NetApp Files volume (source) in one region or zone to another Azure NetApp Files volume (destination) in another region or zone without any load on your application servers. This capability enables you to fail over your critical applications in case of a region-wide or zone-wide outage or disaster.
+=======
+An Azure NetApp Files snapshot only manipulates block pointers, creating a *frozen*, read-only view of a volume. Actual data blocks aren't copied, which leads to two efficiencies:
+
+- Speed. Creating a snapshot is near-instantaneous. No matter what volume size you're working with, creating a snapshot takes only a few seconds.
+- Space. A snapshot consumes minimal storage space because it doesn't copy the data blocks of the entire volume. Two snapshots taken in sequence differ only by the blocks added or changed in the time interval between the two.
+
+You can create up to 255 snapshots per volume. Creating a snapshot doesn't affect volume performance. You can create and maintain snapshots in two ways:
+
+- Manual. Create on-demand snapshots by using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
+- Automatic. Automate snapshot creation by using snapshot policies or a snapshot tool, such as AzAcSnap. You can set up snapshot policies by using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
+
+### Cross-region Replication
+
+Azure NetApp Files replication functionality provides data protection through cross-region volume replication. You can asynchronously replicate data from an Azure NetApp Files volume (source) in one region to another Azure NetApp Files volume (destination) in another region. This capability enables you to fail over your critical application if there's a region-wide outage or disaster.
+
+### Data recovery
+
+The point of creating volume snapshots is to recover data that is corrupted or accidentally deleted, overwritten, or modified. Azure NetApp Files gives you three ways to recover data by using snapshots:
+
+- Restore one or more files or directories from a snapshot.
+- Create a *Clone* of the volume. Restore a snapshot to a new volume by creating an identical copy of the volume in a new location.
+- *Revert* the volume. Restore a snapshot in-place by returning the volume to the state it was in when you created the snapshot.
+
+## How to give your web development team access to the same data
+
+It's likely that your organization's web development team uses various operating systems. For example:
+
+- Linux. Your backend development team might use computers running the Linux operating system.
+- Windows. Your frontend development team might use PCs running Windows.
+- macOS. Your design team might use Macs running the macOS operating system.
+
+Azure NetApp Files enables enterprise teams that use different operating systems to access the same data. Although each team would usually work on separate aspects of the website, if the website data files reside on the same volume, then you need to configure that volume to allow access from computers running Linux, Windows, and macOS.
+
+You can accomplish this goal in Azure NetApp Files by configuring the volume to simultaneously use both NFS (supported by Linux) and SMB (supported by Windows and macOS).
+>>>>>>> cb2de977501e8de57a790a6d66d4118c084df73c

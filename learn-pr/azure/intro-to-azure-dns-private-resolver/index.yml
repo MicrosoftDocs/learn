@@ -4,6 +4,7 @@ metadata:
   moduleType: introduction        
   title: Intro to Azure DNS Private Resolver
   description: learn about Azure DNS Private Resolver and how to use it to resolve DNS queries from on-premises to cloud.
+  manager: kumud
   ms.date: 01/31/2024
   author: greg-lindsay
   ms.author: greglin  

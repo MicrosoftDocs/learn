@@ -3,11 +3,11 @@ uid: learn.wwl.work-linting-unit-test-github-actions
 metadata:
   title: Work with linting and unit testing in GitHub Actions
   description: machine learning operations, MLOps, linter, linting, unit tests, code check
-  ms.date: 09/26/2022
+  ms.date: 07/10/2024
   author: wwlpublish
   ms.author: madiepev
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-machine-learning
 title: Work with linting and unit testing in GitHub Actions
 summary: Learn how to automate code checks whenever you update code for machine learning workloads.
 abstract: |

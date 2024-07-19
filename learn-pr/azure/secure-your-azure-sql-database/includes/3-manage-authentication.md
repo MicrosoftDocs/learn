@@ -35,7 +35,7 @@ Create a new user that you can use to grant access to.
 1. In Cloud Shell, on your _appServer_ VM, connect to your database again as your `ADMINUSER`.
 
     ```bash
-    sqlcmd -S tcp:serverNNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
+    sqlcmd -S tcp:[server-name].database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
 1. Run the following command to create a new user. This user is a _contained user_ that has only allow access to the _marketplace_ database. Feel free to adjust the password as necessary, but be sure and note it because you need it for a future step.
@@ -73,7 +73,7 @@ Now sign in as that user and take a look at this configuration in action.
 1. Now sign back in to the database, but as the user you created.
 
     ```bash
-    sqlcmd -S tcp:serverNNNNN.database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '[password]' -N -l 30
+    sqlcmd -S tcp:[server-name].database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '[password]' -N -l 30
     ```
 
 1. Run the following query. This query pulls data from a table that the user is authorized to access.

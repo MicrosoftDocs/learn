@@ -3,20 +3,25 @@ uid: learn.azure-introduction-to-azure-search
 metadata:
   title: Fundamentals of Knowledge Mining and Azure AI Search
   description: "Explore Azure AI Search to discover how to create an index, import data, and query the index for better search results."
-  ms.date: 12/07/2023
+  ms.date: 07/17/2024
   author: wwlpublish
   ms.author: sheryang
   ms.topic: module
   ms.service: azure
+  ai-usage: human-only
 title: Fundamentals of Knowledge Mining and Azure AI Search
 summary: Use Azure AI Search to make your data searchable.
 abstract: |
   In this module, you will:
-    - Explore Azure AI Search
-    - Create an Azure AI Search index
-    - Import data to the index
-    - Query the Azure AI Search index
-prerequisites: ""
+
+  -   Explore Azure AI Search
+
+  -   Create an Azure AI Search index
+
+  -   Import data to the index
+
+  -   Query the Azure AI Search index
+prerequisites: ''
 iconUrl: /training/achievements/azure-introduction-to-azure-search.svg
 levels:
 - beginner
@@ -31,10 +36,6 @@ units:
 - learn.azure-introduction-to-azure-search.1-introduction
 - learn.azure-introduction-to-azure-search.2-what-is-azure-search
 - learn.azure-introduction-to-azure-search.process
-- learn.azure-introduction-to-azure-search.ai-skillsets
-- learn.azure-introduction-to-azure-search.understand-index
-- learn.azure-introduction-to-azure-search.use-indexer-to-build-index
-- learn.azure-introduction-to-azure-search.understand-knowledge-store
 - learn.azure-introduction-to-azure-search.2f-start-with-portal
 - learn.azure-introduction-to-azure-search.6-query-data-in-an-azure-search-index
 - learn.azure-introduction-to-azure-search.exercise

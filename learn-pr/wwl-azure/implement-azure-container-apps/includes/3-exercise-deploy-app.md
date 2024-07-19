@@ -1,5 +1,3 @@
-
-
 In this exercise you create a secure Container Apps environment and deploy container app.
 
 ## Prerequisites

@@ -4,11 +4,13 @@ metadata:
   moduleType: standard
   title: Automate Azure infrastructure change reviews by using Bicep and GitHub
   description: Build an automated pull request workflow for Bicep code. Lint code automatically during every pull request, and deploy temporary ephemeral environments by using GitHub and GitHub Actions.
-  ms.date: 03/29/2023
+  ms.date: 07/11/2024
   author: mumian
   ms.author: jgao
   ms.topic: module
   ms.devlang: bicep
+  ms.service: azure-resource-manager
+  manager: jasongroce
 title: Automate Azure infrastructure change reviews by using Bicep and GitHub
 summary: |
   Add checks to pull requests that run automatically during your code reviews. Run the Bicep linter on your code, and deploy the resources to a temporary environment to enable further automated and manual testing.
@@ -19,15 +21,15 @@ abstract: |
     - Create ephemeral environments within pull requests.
 prerequisites: |
   **Required knowledge and skills**:
-    - Bicep, including creating and deploying basic files.
-    - Azure, including the Azure portal, subscriptions, resource groups, and resources.
-    - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
-    - Pull requests in GitHub, including creating, reviewing, and merging pull requests.
-    - Basic GitHub Actions workflows, including triggers and secrets for connecting to your Azure environment.
+    - Bicep, including creating and deploying basic files
+    - Azure, including the Azure portal, subscriptions, resource groups, and resources
+    - Basic Git commands, including cloning, committing files, and pushing changes to GitHub
+    - Pull requests in GitHub, including creating, reviewing, and merging pull requests
+    - Basic GitHub Actions workflows, including triggers and secrets for connecting to your Azure environment
 
   **Account requirements**:
-    - An Azure account, with the ability to create resource groups and Microsoft Entra applications.
-    - A GitHub account.
+    - An Azure account with the ability to create resource groups and Microsoft Entra applications
+    - A GitHub account
 
   **Software requirements**:
     - [Visual Studio Code](https://code.visualstudio.com)

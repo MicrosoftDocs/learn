@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.close-out-microsoft-learn-educators-course.determine-what-you-will-teach-next
+title: Determine what you'll teach next
+metadata:
+  title: Determine what you'll teach next
+  description: "Determine what you'll teach next"
+  ms.date: 07/02/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-determine-what-you-will-teach-next.md)]

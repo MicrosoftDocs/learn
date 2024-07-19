@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: learning-path
-  ms.service: data-share
 title: Share data with Azure Data Share
 prerequisites: |
   -   It's recommended that students have completed Data Fundamentals before starting this learning path.
@@ -22,6 +21,5 @@ products:
 - azure-data-share
 modules:
 - learn.wwl.introduction-to-azure-data-share
-- learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory
 trophy:
   uid: learn.wwl.sharing-data-with-azure-data-share.trophy

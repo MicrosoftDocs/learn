@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.close-out-microsoft-learn-educators-course.review-your-certification-plan
+title: Review your certification plan
+metadata:
+  title: Review your certification plan
+  description: "Review your certification plan"
+  ms.date: 07/02/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-review-your-certification-plan.md)]

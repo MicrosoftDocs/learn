@@ -24,4 +24,4 @@ Module 3 Tips and Tricks
 
 Module 3 Demo
 
-- Click-through demo: [Sales insights](https://edxinteractivepage.blob.core.windows.net/edxpages/mb-910/version2/LP-SALES-M2-INSIGHTS/index.html)
+- Click-through demo: [Sales insights](https://microsoftlearning.github.io/click-throughs/docs/mb-910/version2/LP-SALES-M2-INSIGHTS/index.html)

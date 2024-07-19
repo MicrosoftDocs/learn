@@ -3,10 +3,12 @@ uid: learn.azure.encrypt-sector-data
 metadata:
   title: Encrypt public sector data in Azure
   description: Overview of the options available for managing encryption keys and encrypting data throughout its lifecycle, with special attention to public sector.
-  ms.date: 04/11/2023
+  manager: mkluck
+  ms.date: 05/24/2024
   author: Adriamen
   ms.author: robmcm
   ms.topic: module
+  ms.service: azure-key-vault
 title: Encrypt public sector data in Azure
 summary: Data encryption in the cloud is an important risk mitigation requirement expected by government customers worldwide. Learn how to protect data through its entire lifecycle, whether at rest, in transit, or in use. Control encryption keys in the cloud using comprehensive encryption key management and explore the various encryption options to keep data secure in the public sector.
 abstract: | 

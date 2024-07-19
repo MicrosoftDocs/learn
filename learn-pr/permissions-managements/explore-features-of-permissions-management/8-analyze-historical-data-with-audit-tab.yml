@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.permissions-management.explore-features-of-permissions-management.analyze-historical-data-with-audit-tab
+title: Analyze historical data with the Audit tab
+metadata:
+  title: Analyze historical data with the Audit tab
+  description: The Audit tab in Permissions Management is where to go to query activity log information for your different cloud environments.
+  ms.date: 09/27/2023
+  author: jenniferf-skc
+  ms.author: jfields
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-analyze-historical-data-with-audit-tab.md)]

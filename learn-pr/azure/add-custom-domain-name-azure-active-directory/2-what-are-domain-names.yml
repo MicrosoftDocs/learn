@@ -5,8 +5,8 @@ metadata:
   title: What are domain names in Microsoft Entra ID?
   description: Explore how domain names are used in Microsoft Entra ID and how subdomains are supported.
   ms.date: 09/22/2022
-  author: ajburnle
-  ms.author: ajburnle
+  author: amycolannino
+  ms.author: amycolannino
   ms.topic: unit
 durationInMinutes: 5
 content: |

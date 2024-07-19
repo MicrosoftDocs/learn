@@ -1,6 +1,6 @@
 Implementing an enterprise-class, high-performance workload and application requires enterprise-grade storage performance and high-availability. Most organizations could only achieve this level of performance by using a highly tuned configuration in an on-premises datacenter. Such configurations tend to be inflexible, complex, and expensive. Azure cloud services offer flexibility, simplicity, and cost savings for regular workloads.
 
-:::image type="content" source="../media/1-introduction-before.png" alt-text="Diagram depicting a web server cluster running in an on-premises datacenter and accessing a network access storage device that uses the NFS protocol." lightbox="../media/1-introduction-before.png":::
+:::image type="content" source="../media/1-introduction-before.png" alt-text="Diagram depicting a web server cluster running in an on-premises datacenter and accessing a network access storage device that uses the Network File System (NFS) protocol." lightbox="../media/1-introduction-before.png":::
 
 Azure NetApp Files allows you to deploy new applications to the cloud without having to refactor and rearchitect. This reduces risk, cost, and migration time. It provides datacenter-quality performance, robust security, and high availability with all the advantages of the cloud. 
 

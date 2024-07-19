@@ -3,8 +3,8 @@ uid: learn.intro-to-azure-site-recovery.how-azure-site-recovery-works
 title: How Azure Site Recovery works
 metadata:
   title: How Azure Site Recovery works
-  description: In this unit, you'll learn more about how Azure Site Recovery works.
-  ms.date: 04/13/2023
+  description: In this unit, you learn more about how Azure Site Recovery works.
+  ms.date: 07/08/2024
   author: orin-thomas
   ms.author: orthomas
   ms.topic: unit
