@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.training-certification-course-planning-microsoft-learn-educators.learn-how-set-up-your-lab-seats-access-azure-credits
+title: Learn how to set up your lab seats and access Azure credits
+metadata:
+  title: Learn how to set up your lab seats and access Azure credits
+  description: "Learn how to set up your lab seats and access Azure credits"
+  ms.date: 07/19/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-learn-how-set-up-your-lab-seats-access-azure-credits.md)]
