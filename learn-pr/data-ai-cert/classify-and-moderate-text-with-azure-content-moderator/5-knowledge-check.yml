@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:    
   title: Knowledge check    
   description: Check your knowledge of content moderation for text.  
-  ms.date: 07/10/2024    
   author: wwlpublish    
   ms.author: gmalc    
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 7
 quiz:
   title: Check your knowledge
