@@ -2,12 +2,14 @@
 uid: learn.wwl.finetune-model-copilot-ai-studio
 metadata:
   title: Integrate a fine-tuned language model with your copilot in the Azure AI Studio
-  description: "When you want to maximize the consistency in the responses of your custom copilot, you can fine-tune a language model before integrating the model into your chat application. Learn how to fine-tune a language model and then integrate the model in the Azure AI Studio."
-  ms.date: 6/26/2024
+  description: When you want to maximize the consistency in the responses of your custom copilot, you can fine-tune a language model before integrating the model into your chat application. Learn how to fine-tune a language model and then integrate the model in the Azure AI Studio.
   author: madiepev
   ms.author: madiepev
-  ms.topic: module-standard-task-based 
+  ms.date: 6/26/2024
   ms.service: azure-ai-services
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Integrate a fine-tuned language model with your copilot in the Azure AI Studio
 summary: "Train a base language model on a chat-completion task. The model catalog in the Azure AI Studio offers many open-source models that can be fine-tuned for your specific model behavior needs."
 abstract: |
