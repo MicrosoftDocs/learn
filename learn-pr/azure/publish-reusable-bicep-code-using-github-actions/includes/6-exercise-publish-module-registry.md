@@ -20,18 +20,18 @@ Before you can publish modules, you need to create a registry for your organizat
 
 1. Enter a name for your registry and a location that's close to you.
 
-    > [!IMPORTANT]
-    > The registry name must be unique within Azure and contain 5-50 alphanumeric characters. A check mark next to the registry name indicates that the name you chose is available.
+   > [!IMPORTANT]
+   > The registry name must be unique within Azure and contain 5-50 alphanumeric characters. A check mark next to the registry name indicates that the name you chose is available.
 
-1. For **SKU**, select **Basic**.
+1. For **Pricing plan**, select **Basic**.
 
    Leave the default values for the other configuration settings.
 
 1. Select **Review + create**.
 
-   :::image type="content" source="../media/6-create-registry.png" alt-text="Screenshot of the Azure portal that shows the container registry creation page.":::
+   :::image type="content" source="../media/6-create-registry.png" alt-text="Screenshot of the Azure portal that shows the container registry creation page." lightbox="../media/6-create-registry.png":::
 
-1. Review the settings displays **Validation passed** and then select **Create**.
+1. When the **Validation passed** message appears, select **Create**.
 
    Wait for the deployment to finish, which usually takes 1-2 minutes.
 
@@ -39,9 +39,9 @@ Before you can publish modules, you need to create a registry for your organizat
 
    :::image type="content" source="../media/6-registry-created.png" alt-text="Screenshot of the Azure portal that shows the container registry deployment, with the button for going to a resource highlighted.":::
 
-1. In the container registry's **Overview** area, note the value of the **Login server** setting. The name is like _yourregistryname.azurecr.io_.
+1. In the container registry's **Overview** area, note the value of the **Login server** setting. The name resembles `yourregistryname.azurecr.io`.
 
-   :::image type="content" source="../media/6-registry-login-server.png" alt-text="Screenshot of the Azure portal that shows the container registry's details, with the login server highlighted.":::
+   :::image type="content" source="../media/6-registry-login-server.png" alt-text="Screenshot of the Azure portal that shows the container registry's details, with the login server highlighted." lightbox="../media/6-registry-login-server.png":::
 
    You'll need this value shortly.
 
