@@ -17,7 +17,7 @@ static void Main(string[] args)
 
 ## List CDN profiles and endpoints
 
-The following method lists all the profiles and endpoints in our resource group. If it finds a match for the profile and endpoint names specified in our constants it notes it for later so we don't try to create duplicates.
+The following method lists all the profiles and endpoints in our resource group. If the code finds a match for the profile and endpoint names specified in our constants, it notes it for later so we don't try to create duplicates.
 
 ```csharp
 private static void ListProfilesAndEndpoints(CdnManagementClient cdn)
@@ -112,6 +112,3 @@ private static void PromptPurgeCdnEndpoint(CdnManagementClient cdn)
     }
 }
 ```
-
-
-
