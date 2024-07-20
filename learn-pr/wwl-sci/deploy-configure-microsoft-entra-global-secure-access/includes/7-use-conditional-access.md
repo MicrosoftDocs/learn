@@ -43,7 +43,7 @@ The compliant network Conditional Access policy can be used to protect your Micr
      - Under Include, select Any location.
      - Under Exclude, choose Selected locations.
          - Select the All Compliant Network locations.
- - Choose Select.
+     - Choose Select.
 8. Under Access controls:
      - Grant, select Block Access, and choose Select.
 9. Confirm your settings and set Enable policy to On.
@@ -59,7 +59,7 @@ You can create a Conditional Access policy for your Quick Access or Private Acce
 1. Select Create new policy. The selected app appears in the Target resources details.
 1. Configure the conditions, access controls, and assign users and groups as needed.
 
-   :::image type="content" source="../media/conditional-access-quick-access.png" alt-text="Screenshot of a small portion of the Conditional Access dialog showing the policy is align to Global Secure Access.":::
+   :::image type="content" source="../media/conditional-access-quick-access.png" alt-text="Screenshot of a small portion of the Conditional Access dialog showing the policy is aligned to Global Secure Access.":::
    
 You see the addition of the Quick Access and Private Access selector from Global Secure Access.
 

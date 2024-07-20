@@ -13,6 +13,7 @@ There are five primary steps to configure a Remote Network. In this phase, you'r
 | Setup on-premises router | Use the management console of your on-premises router to enter the Microsoft connectivity setting from previous step. |
 
 ## Configure - Basics
+
 1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
 2. Browse to Global Secure Access > Connect > Remote networks.
 3. Basics tab - Select the Create remote network button and provide the details.

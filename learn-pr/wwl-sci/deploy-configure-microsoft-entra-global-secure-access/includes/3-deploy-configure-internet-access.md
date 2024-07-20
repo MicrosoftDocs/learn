@@ -11,7 +11,7 @@ There are four main steps for getting Microsoft Entra Internet Access deployed w
 
 ## Enable Microsoft traffic forwarding profile
 
-:::image type="content" source="../media/traffic-profile-enabled.png" alt-text="Screenshot of the the Microsoft traffic profile enabled. Enables 3 traffic policies, a conditional access policy, and user - group assignment.":::
+:::image type="content" source="../media/traffic-profile-enabled.png" alt-text="Screenshot of the Microsoft traffic profile enabled. Enables 3 traffic policies, a conditional access policy, and user - group assignment.":::
 
 1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
 1. Browse to Global Secure Access > Connect > Traffic forwarding.
