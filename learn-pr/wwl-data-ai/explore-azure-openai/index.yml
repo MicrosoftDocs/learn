@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-openai
 metadata:
   title: Fundamentals of Azure OpenAI Service          # Do not edit: title must be "Introduction to (product)"
   description: "With Azure OpenAI, you can build solutions against OpenAI artificial intelligence models within Azure."             # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 2/14/2023             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  ms.date: 07/10/2024             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: sherzyang      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: sheryang           # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: module
@@ -15,7 +15,6 @@ title: Fundamentals of Azure OpenAI Service
 summary: "Get to know the connection between artificial intelligence (AI), Responsible AI, and text, code, and image generation. Understand how you can use Azure OpenAI to build solutions against AI models within Azure."
 abstract: |
   In this module you'll learn how to: 
-
   - Describe Azure OpenAI workloads and access the Azure OpenAI Service
   - Understand generative AI models 
   - Understand Azure OpenAI's language, code, and image capabilities
