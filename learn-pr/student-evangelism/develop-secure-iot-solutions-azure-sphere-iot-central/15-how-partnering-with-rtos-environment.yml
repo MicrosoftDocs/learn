@@ -4,7 +4,7 @@ title: How to send Azure RTOS real-time room environment sensor data to IoT Cent
 metadata:
   title: How to send Azure RTOS real-time room environment sensor data to IoT Central
   description: In this section, send Azure RTOS real-time room environment sensor data to IoT Central
-  ms.date: 11/10/2020
+  ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
