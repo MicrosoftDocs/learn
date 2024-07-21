@@ -36,7 +36,7 @@ Once you've established repository visibility, you can configure permissions on 
 - **Maintain** level is recommended for project managers who need to manage the repository without access to sensitive or destructive actions.
 - **Admin** level is recommended for people who need full access to the project, including sensitive and destructive actions like managing security or deleting a repository.
 
-Learn more about [repository access permissions by level](https://help.github.com/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization?azure-portal=true).
+Learn more about [repository access permissions by level](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization?azure-portal=true).
 
 ### Create discoverable repositories
 
