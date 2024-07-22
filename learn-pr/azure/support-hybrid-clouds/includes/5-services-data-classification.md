@@ -4,7 +4,7 @@ For classified workloads, customers can use Azure services to secure target work
 
 - **Confidential**.
 - **Secret**.
-- ***Top secret**.
+- **Top secret**.
 
 Similar data classification schemes exist in many countries/regions.
 
