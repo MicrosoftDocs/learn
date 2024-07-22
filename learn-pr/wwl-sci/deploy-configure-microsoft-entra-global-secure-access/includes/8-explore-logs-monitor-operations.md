@@ -38,7 +38,7 @@ Various filters and export options are available for the traffic logs.
 ## Enriched Office 365 logs (preview)
 The Enriched Office 365 logs provide you with the information you need to gain insights into the performance, experience, and availability of the Microsoft 365 apps your organization uses. You can integrate the logs with a Log Analytics workspace or Security Information and Event Management (SIEM) tool for further analysis. The enriched Microsoft 365 logs provide information about Microsoft 365 workloads, so you can review network diagnostic data, performance data, and security events relevant to Microsoft 365 apps. For example, if access to Microsoft 365 is blocked for a user in your organization, you need visibility into how the user's device is connecting to your network.
 
-#### These logs provide:
+#### These logs provide
 
  - Improved latency
  - Additional information added to original logs
