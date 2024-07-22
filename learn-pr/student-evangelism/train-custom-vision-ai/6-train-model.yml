@@ -3,10 +3,12 @@ uid: learn.student-evangelism.train-custom-vision-ai.6-train-model
 metadata:
   title: Exercise - Train the Custom Vision service
   description: This unit walks you through training the Custom Vision service by tagging the area in various images where the object appears.
-  ms.date: 03/10/2021
   author: softchris
   ms.author: chnoring
+  ms.date: 03/10/2021
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Exercise - Train the Custom Vision service
 durationInMinutes: 3

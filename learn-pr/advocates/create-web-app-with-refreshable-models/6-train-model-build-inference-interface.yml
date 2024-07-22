@@ -4,9 +4,11 @@ metadata:
   title: Exercise - Train your machine learning model and build the web interface to use it
   description: Exercise - Train your machine learning model and build the web interface to use it
   author: GitHubber17
-  ms.date: 12/22/2022
   ms.author: chnoring
+  ms.date: 12/22/2022
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
   azureSandbox: true
 title: Exercise -  Train your machine learning model and build the web interface to use it
