@@ -1,10 +1,10 @@
-Azure Stack Edge supports the storage and processing of highest classification data but also allows customers to upload the resulting information or models directly to Azure. This approach creates a path for information sharing between domains that makes it easier and more secure.
+Azure Stack Edge supports the storage and processing of highest classification data but also enables customers to upload the resulting information or models directly to Azure. This approach creates a path for information sharing between domains that makes it easier and more secure.
 
 ## Azure Stack Edge
 
 :::row:::
 :::column span="2":::
-Azure Stack Edge is an AI-enabled edge computing device with network data transfer capabilities. It allows customers to preprocess data at the edge and move data to Azure efficiently. The size and portability allows customers to run Azure Stack Edge as close to users, apps, and data as needed.
+Azure Stack Edge is an AI-enabled edge computing device with network data transfer capabilities. It enables customers to preprocess data at the edge and move data to Azure efficiently. The size and portability enables customers to run Azure Stack Edge as close to users, apps, and data as needed.
 
 The ability to gather, discern, and distribute mission data is key to making critical decisions. Tools that help process and transfer data directly at the edge make these capabilities possible. For example, Azure Stack Edge, with its light footprint and built-in hardware acceleration for machine learning inferencing, is useful to further the intelligence of forward-operating units with AI solutions designed for the tactical edge. Data transfer from the field, which is traditionally complex and slow, is made seamless with the [Azure Data Box](https://azure.microsoft.com/services/databox/) family of products.
 :::column-end:::

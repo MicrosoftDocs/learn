@@ -42,7 +42,7 @@ quiz:
     - content: "Customer Lockbox."
       isCorrect: false
       explanation: "Incorrect. Customer Lockbox allows customers to approve and deny elevated access requests for customer data in support scenarios."
-  - content: "Which of the following uses is a use case for Azure Stack Edge?"
+  - content: "Which of the following is a use case for Azure Stack Edge?"
     choices:
     - content: "Lock down inbound traffic to Azure VMs by creating network security group (NSG) rules."
       isCorrect: false
