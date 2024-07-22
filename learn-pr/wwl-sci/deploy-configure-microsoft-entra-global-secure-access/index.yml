@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-configure-microsoft-entra-global-secure-access
+metadata:
+  title: Deploy and Configure Microsoft Entra Global Secure Access
+  description: "The modern workforce transitioned from traditional office settings to working from nearly anywhere. This change in working location necessitates an identity-aware, cloud-delivered network perimeter. This identity-aware perimeter is known as Security Service Edge (SSE). The Microsoft SSE solution includes Microsoft Entra Internet Access and Microsoft Entra Private Access, collectively referred to as Global Secure Access. This solution is founded on Zero Trust principles, emphasizing least privilege, explicit verification, and an assumption of breach to ensure security in the cloud era."
+  ms.date: 07/22/2024
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: module
+  ms.service: entra
+  ms.subservice: architecture
+  ai-usage: ai-assisted
+title: Deploy and Configure Microsoft Entra Global Secure Access
+summary: Global Secure Access lets you put identity as the gatekeeper to your network access. Use Zero Trust principles to protect your data and apps.
+abstract: |
+  By the end of this module, you are able to:
+
+  -   Define Global Secure Access and its components.
+
+  -   Explore deployment and configuration of Microsoft Entra Internet Access.
+
+  -   Explore deployment and configuration of Microsoft Entra Private Access.
+
+  -   Use the Global Secure Access Dashboard to monitor your systems.
+
+  -   Configure Remote Networks.
+
+  -   Create Conditional Access policies to protect your networks, data, and applications.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- entra-id
+units:
+- learn.wwl.deploy-configure-microsoft-entra-global-secure-access.introduction
+- learn.wwl.deploy-configure-microsoft-entra-global-secure-access.explore-global-secure-access
+- learn.wwl.deploy-configure-microsoft-entra-global-secure-access.deploy-internet-access
+- learn.wwl.deploy-configure-microsoft-entra-global-secure-access.deploy-private-access
+- learn.wwl.deploy-configure-microsoft-entra-global-secure-access.explore-global-secure-access-dashboard
+- learn.wwl.deploy-configure-microsoft-entra-global-secure-access.create-remote-networks
+- learn.wwl.deploy-configure-microsoft-entra-global-secure-access.use-conditional-access
+- learn.wwl.deploy-configure-microsoft-entra-global-secure-access.explore-logs-monitor-operations
+- learn.wwl.deploy-configure-microsoft-entra-global-secure-access.knowledge-check
+- learn.wwl.deploy-configure-microsoft-entra-global-secure-access.summary-resources
+badge:
+  uid: learn.wwl.deploy-configure-microsoft-entra-global-secure-access.badge
