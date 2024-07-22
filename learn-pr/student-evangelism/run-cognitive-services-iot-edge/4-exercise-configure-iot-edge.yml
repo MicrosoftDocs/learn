@@ -6,7 +6,7 @@ metadata:
   description: In this section, there's an exercise and it guides the learner in how to set up communication between IoT Hub and IoT Edge	
   ms.date: 07/22/2024
   author: PatAltimore
-  ms.author: leestott
+  ms.author: patricka
   ms.topic: unit
   ms.custom: team=nextgen, devx-track-azurecli
 durationInMinutes: 12

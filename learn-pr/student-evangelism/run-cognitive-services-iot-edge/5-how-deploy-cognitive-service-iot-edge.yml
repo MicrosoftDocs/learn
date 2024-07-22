@@ -6,7 +6,7 @@ metadata:
   description: In this section, we explain submitting a new deployment to an IoT Edge device
   ms.date: 07/22/2024
   author: PatAltimore
-  ms.author: leestott
+  ms.author: patricka
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5

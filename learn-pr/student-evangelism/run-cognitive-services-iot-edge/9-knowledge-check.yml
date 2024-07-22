@@ -6,7 +6,7 @@ metadata:
   description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
   ms.date: 07/22/2024
   author: PatAltimore
-  ms.author: leestott
+  ms.author: patricka
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4

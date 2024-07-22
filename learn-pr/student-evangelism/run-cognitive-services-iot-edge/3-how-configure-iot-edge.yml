@@ -6,7 +6,7 @@ metadata:
   description: In this section, you learn how to create an IoT Edge device and set up communication between IoT Edge and IoT Hub
   ms.date: 07/22/2024
   author: PatAltimore
-  ms.author: leestott
+  ms.author: patricka
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 7
