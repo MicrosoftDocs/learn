@@ -1,4 +1,12 @@
 ### YamlMime:Module
+###
+### Contributor instructions:
+### 1. Sample repo: 
+###     https://github.com/MicrosoftDocs/node-essentials/tree/main/nodejs-intro 
+###     https://github.com/MicrosoftDocs/node-essentials/tree/main/nodejs-intro-esm
+### 2. Changes to inline code must also be made in sample repo as PR
+###     @mention diberry for review
+
 uid: learn.azure.intro-to-nodejs
 metadata:
   title: Introduction to Node.js with JavaScript
