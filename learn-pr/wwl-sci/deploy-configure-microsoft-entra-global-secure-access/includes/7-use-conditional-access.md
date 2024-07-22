@@ -29,25 +29,25 @@ For example: Contoso can protect their services like Exchange Online and SharePo
 The compliant network Conditional Access policy can be used to protect your Microsoft and other applications. A typical policy will 'Block' access for all network locations except Compliant Network.
 
 1. Sign in to the Microsoft Entra admin center as at least a Conditional Access Administrator. 
-2. Browse to Protection > Conditional Access.
-3. Select Create new policy.
-4. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
-5. Look in Assignments, select Users or workload identities.
+1. Browse to Protection > Conditional Access.
+1. Select Create new policy.
+1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
+1. Look in Assignments, select Users or workload identities.
      - Under Include, select All users.
      - Under Exclude, select Users and groups and choose your organization's emergency access or break-glass accounts.
-6. Look in Target resources > Include, and choose Select apps.
+1. Look in Target resources > Include, and choose Select apps.
      - Choose Office 365 Exchange Online, and/or Office 365 SharePoint Online, and/or any of your SaaS apps.
      - The specific Office 365 cloud app in the app picker is currently NOT supported, so don't select this cloud app.
-7. Explore Conditions > Location.
+1. Explore Conditions > Location.
      - Set Configure to Yes.
      - Under Include, select Any location.
      - Under Exclude, choose Selected locations.
          - Select the All Compliant Network locations.
      - Choose Select.
-8. Under Access controls:
+1. Under Access controls:
      - Grant, select Block Access, and choose Select.
-9. Confirm your settings and set Enable policy to On.
-10. Select the Create button to create to enable your policy.
+1. Confirm your settings and set Enable policy to On.
+1. Select the Create button to create to enable your policy.
 
 ## Conditional Access for Private Access apps
 You can create a Conditional Access policy for your Quick Access or Private Access apps from Global Secure Access. Starting the process from Global Secure Access automatically adds the selected app as the Target resource for the policy. All you need to do is configure the policy settings.

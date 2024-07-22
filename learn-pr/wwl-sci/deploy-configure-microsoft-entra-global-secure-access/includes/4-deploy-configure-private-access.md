@@ -49,17 +49,17 @@ Allow access to some URLs
 
 On Windows Server:
 1. Select the Windows key and enter services.msc to open the Windows Services Manager.
-2. Check to see if the status for the following services Running.
+1. Check to see if the status for the following services Running.
     - Microsoft Entra private network connector enables connectivity.
     - Microsoft Entra private network connector Updater is an automated update service.
     - The updater checks for new versions of the connector and updates the connector as needed.
-3. If the status for the services isn't Running, right-click to select each service and choose Start.
+1. If the status for the services isn't Running, right-click to select each service and choose Start.
 
 In Microsoft Entra:
 1. Sign in to the Microsoft Entra admin center as a Global Administrator of the directory that uses Application Proxy.
-2. Browse to Global Secure Access > Connect > Connectors.
+1. Browse to Global Secure Access > Connect > Connectors.
     - All of your connectors and connector groups appear on this page.
-3. Verify the details by viewing the connector.
+1. Verify the details by viewing the connector.
     - Expand the connector to view the details.
     - An active green label indicates that your connector can connect to the service. However, even though the label is green, a network issue could still block the connector from receiving messages.
 
@@ -77,20 +77,20 @@ With Global Secure Access, you can define specific fully qualified domain names 
 
 On the Quick Access page, you provide a name for the Quick Access app, select a connector group, and add application segments, which include FQDNs and IP addresses. You can complete all three steps at the same time, or you can add the application segments after the initial setup is complete.
 1. Sign in to the Microsoft Entra admin center with the appropriate roles.
-2. Browse to Global Secure Access > Applications > Quick access.
-3. Enter a name. We recommend using the name Quick Access.
-4. Select a Connector group from the dropdown menu. Existing connector groups appear in the dropdown menu.
+1. Browse to Global Secure Access > Applications > Quick access.
+1. Enter a name. We recommend using the name Quick Access.
+1. Select a Connector group from the dropdown menu. Existing connector groups appear in the dropdown menu.
    - Created in the previous step.
-5. Select the Save button at the bottom of the page to create your "Quick Access" app without FQDNs and IP addresses.
+1. Select the Save button at the bottom of the page to create your "Quick Access" app without FQDNs and IP addresses.
 
 #### Add an application segment
 
 The **Add Quick Access** application segment portion of this process is where you define the FQDNs and IP addresses that you want to include in the traffic for Microsoft Entra Private Access. You can add these resources when you create the Quick Access app or return to add more or edit them later.
 1. Sign in to the Microsoft Entra admin center.
-2. Browse to Global Secure Access > Applications > Quick Access.
-3. Select **Add Quick Access** application segment.
-4. In the **Create application segment** panel, select a Destination type.
-5. Enter the appropriate details for the selected destination type. Depending on what you select, the subsequent fields change accordingly.
+1. Browse to Global Secure Access > Applications > Quick Access.
+1. Select **Add Quick Access** application segment.
+1. In the **Create application segment** panel, select a Destination type.
+1. Enter the appropriate details for the selected destination type. Depending on what you select, the subsequent fields change accordingly.
    - IP address:
      - Internet Protocol version 4 (IPv4) address, such as 192.0.2.1, that identifies a device on the network.
      - Provide the ports that you want to include.
@@ -110,17 +110,18 @@ The **Add Quick Access** application segment portion of this process is where yo
      - Specify port ranges with a hyphen.
      - Spaces between values are removed when you apply the changes.
      - For example, 400-500, 80, 443.
-   The following table provides the most commonly used ports and their associated networking protocols:
+     
+     The following table provides the most commonly used ports and their associated networking protocols:
 
-   | Port | Protocol |
-   | :--- | :--- |
-   | 22 | Secure Shell (SSH) |
-   | 80 | Hypertext Transfer Protocol (HTTP) |
-   | 443 | Hypertext Transfer Protocol Secure (HTTPS) |
-   | 445 | Server Message Block (SMB) file sharing |
-   | 3389 | Remote Desktop Protocol (RDP) |
+     | Port | Protocol |
+     | :--- | :--- |
+     | 22 | Secure Shell (SSH) |
+     | 80 | Hypertext Transfer Protocol (HTTP) |
+     | 443 | Hypertext Transfer Protocol Secure (HTTPS) |
+     | 445 | Server Message Block (SMB) file sharing |
+     | 3389 | Remote Desktop Protocol (RDP) |
 
-6. Select the Save button when finished.
+1. Select the Save button when finished.
 
 #### Assign users and groups for Quick Access
 1. Sign in to the Microsoft Entra admin center.

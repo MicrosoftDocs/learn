@@ -11,7 +11,7 @@ The Microsoft Entra audit log is a valuable source of information when researchi
 1. Sign in to the Microsoft Entra admin center using one of the required roles.
 1. Browse to Global Secure Access > Audit logs. The filters are prepopulated with the categories and activities related to Global Secure Access.
 
-#### From Microsoft Entra monitoring and health:
+#### From Microsoft Entra monitoring and health
 
 1. Sign in to the Microsoft Entra admin center using one of the required roles.
 1. Browse to Identity > Monitoring & health > Audit logs.
