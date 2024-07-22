@@ -2,33 +2,28 @@
 uid: learn.wwl.prepare-to-teach-dp-100-designing-implementing-data-science-solution-azure
 metadata:
   title: 'Prepare to teach DP-100 Designing and Implementing a Data Science Solution on Azure '
-  description: Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Microsoft’s DP-100 Designing and Implementing a Data Science Solution on Azure in an academic program.
-  ms.date: 09/08/2023
+  description: Learn about the Microsoft Learn for Educators program and how to best deliver content to your students. Prepare to deliver Microsoft’s DP-100 Designing and Implementing a Data Science Solution on Azure in an academic program.
+  ms.date: 07/22/2024
   author: wwlpublish
-  ms.author: tsheppard
+  ms.author: WWL
   ms.topic: learning-path
 title: Prepare to teach DP-100 Designing and Implementing a Data Science Solution on Azure
 prerequisites: |
   none
 summary: |
-  Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Microsoft’s DP-100 Designing and Implementing a Data Science Solution on Azure in an academic program.
+  Learn about the Microsoft Learn for Educators program and how to best deliver content to your students. Prepare to deliver Microsoft’s DP-100 Designing and Implementing a Data Science Solution on Azure in an academic program.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
-- beginner
+- advanced
 roles:
 - higher-ed-educator
 products:
 - azure
-subjects:
-- data-management
 modules:
-- learn.wwl.introduction-microsoft-learn-educators-program
-- learn.wwl.onboard-microsoft-learn-educators-program
-- learn.wwl.microsoft-learn-educators-course-preparation
-- learn.wwl.microsoft-learn-educators-course-plan
-- learn.wwl.learn-best-practices-from-microsoft-technical-trainers
+- learn.wwl.microsoft-learn-for-educator-program-open-house
+- learn.wwl.begin-your-microsoft-learn-educators-journey
+- learn.wwl.training-certification-course-planning-microsoft-learn-educators
+- learn.wwl.close-out-microsoft-learn-educators-course
 - learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution
-- learn.wwl.prepare-for-course-delivery
-- learn.wwl.close-out-course
 trophy:
   uid: learn.wwl.prepare-to-teach-dp-100-designing-implementing-data-science-solution-azure.trophy
