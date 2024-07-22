@@ -14,6 +14,8 @@ Here, we cover some concepts you need to understand in advance to work with Azur
 
 **Remediation:** A remediation is a way to handle noncompliant resources. It allows you to create remediation tasks and ensure the desired state for resources.
 
+**Policy versioning (preview)** Built-in policy definitions and initiatives can have multiple versions with the same definition ID. The default is to use the latest major version. You can choose to accept new minor versions or pin to a specific minor version. Patch versions are automatically accepted for security purposes.
+
 ## Resources covered
 
 Azure policy covers all Azure resources, including Arc-enabled resources. For example, you can extend the coverage of your controls over Windows and Linux physical servers, and virtual machines hosted outside of Azure, on your corporate network, or other cloud providers. Using Azure Policy is free for Azure resources, but there's a fee associated for an Arc resource.

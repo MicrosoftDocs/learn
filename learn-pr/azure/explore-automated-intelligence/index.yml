@@ -3,11 +3,13 @@ uid: learn.oxford.explore-automated-intelligence
 metadata:
   title: Explore Automated Intelligence
   description: Learn automated intelligence methods and evaluate when to use it.
-  ms.date: 10/14/2022
+  ms.date: 07/10/2024
   author: softchris
   ms.author: chnoring
   ms.topic: module
   ms.service: artificial-intelligence
+  ms.custom: team=cloud_advocates
+  ms.collection: ce-advocates-ai-copilot        # Oxford University Module - Oxford responsible for ongoing maintenance
 title: Explore Automated Intelligence
 summary: In this module, you learn about several automated methods such as math (control theory), menus (optimization algorithms), and manuals (expert systems and expert rules), which are components of Machine Teaching. In addition, you learn automated intelligence strengths and limitations, when to best use these technologies and when Autonomous Intelligence methods are the best choice.
 abstract: | 

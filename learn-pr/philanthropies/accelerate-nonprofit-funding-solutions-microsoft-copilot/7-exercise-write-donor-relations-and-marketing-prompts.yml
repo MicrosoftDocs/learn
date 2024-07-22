@@ -4,11 +4,13 @@ title: Exercise - Write donor relations and marketing prompts
 metadata:
   title: Exercise - Write donor relations and marketing prompts
   description: This content is a part of the Accelerate nonprofit funding solutions with Microsoft Copilot module.
-  ms.date: 5/30/2024
   author: CourtneyHMicrosoft
   ms.author: cohodge
+  ms.date: 5/30/2024
   ms.topic: unit
   ai-usage: ai-assisted
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/7-exercise-write-donor-relations-and-marketing-prompts.md)]

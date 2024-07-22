@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-openai
 metadata:
   title: Get started with Azure OpenAI Service
   description: Azure OpenAI Service enables engineers to build enterprise-grade generative AI solutions.
-  ms.date: 2/27/2023
+  ms.date: 07/10/2024
   author: sheryang
   ms.author: sheryang
   ms.topic: module-standard-task-based
