@@ -4,10 +4,12 @@ title: Polyglot Notebook features
 metadata:
   title: Polyglot Notebook features
   description: Asides the known features that are part of Jupyter Notebooks, there are a few additional features that Polyglot Notebooks bring to the table. Learn about these features in this unit.
-  ms.date: 04/03/2024
   author: japhletnwamu
   ms.author: japhletnwamu
+  ms.date: 04/03/2024
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=cloud_advocates
 durationInMinutes: 11
 content: |

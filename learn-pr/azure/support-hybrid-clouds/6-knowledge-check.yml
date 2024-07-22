@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: A knowledge check for the Support data classification with private and hybrid clouds module.
-  ms.date: 02/08/2023
+  ms.date: 07/22/2024
   author: EliotSeattle
   ms.author: eliotgra
   ms.topic: unit
@@ -21,7 +21,7 @@ quiz:
       explanation: "Incorrect. Azure Stack Hub enables customers to run workloads using the same architecture and APIs as in Azure while having a physically isolated network for their highest classification data."
     - content: "Azure Stack Edge."
       isCorrect: true
-      explanation: "Correct. Azure Stack Edge allows the storage and processing of the highest classification data but also enables customers to upload resulting information or models directly to Azure.  This approach creates a path for information sharing between domains that makes it easier and more secure."
+      explanation: "Correct. Azure Stack Edge allows the storage and processing of the highest classification data but also enables customers to upload resulting information or models directly to Azure. This approach creates a path for information sharing between domains that makes it easier and more secure."
     - content: "Tactical Azure Stack Hub."
       isCorrect: false
       explanation: "Incorrect. Tactical Azure Stack Hub is also available to address tactical edge deployments for limited or no connectivity, fully mobile requirements, harsh conditions requiring military specification solutions, and so on."
@@ -46,8 +46,8 @@ quiz:
     choices:
     - content: "Lock down inbound traffic to Azure VMs by creating network security group (NSG) rules."
       isCorrect: false
-      explanation: "Incorrect. Just-in-time (JIT) virtual machine (VM) access can be used to lock down inbound traffic to Azure VMs by creating network security group (NSG) rules."
-    - content: "Run initial Machine Learning algorithms and act of them before sending data to the cloud to improve the model."
+      explanation: "Incorrect. Just-in-time virtual machine access can be used to lock down inbound traffic to Azure VMs by creating network security group (NSG) rules."
+    - content: "Run initial Machine Learning algorithms and act on them before sending data to the cloud to improve the model."
       isCorrect: true
       explanation: "Correct. With Azure Stack Edge, customers can run machine learning models to get results quickly and act on them before the data is sent to the cloud."
     - content: "Store encryption keys and other secrets in HSMs deployed on-premises and controlled solely by customers."

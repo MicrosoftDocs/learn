@@ -3,11 +3,13 @@ uid: learn.pytorch.intro-computer-vision
 metadata:
   title: Introduction to Computer Vision with PyTorch
   description: Learn how to perform different computer vision tasks using PyTorch.
-  ms.date: 06/04/2020
   author: shwars
   ms.author: chnoring
-  ms.topic: module
+  ms.date: 06/04/2020
   ms.service: azure-ai-vision
+  ms.topic: module
+  ms.collection:
+    - ce-skilling-ai-copilot
   ms.custom: team=nextgen
 title: Introduction to Computer Vision with PyTorch 
 summary: We'll learn about different computer vision tasks and focus on image classification, learning how to use neural networks to classify handwritten digits, as well as some real-world images, such as photographs of cats and dogs. We'll be using one of the most popular deep learning frameworks, PyTorch!

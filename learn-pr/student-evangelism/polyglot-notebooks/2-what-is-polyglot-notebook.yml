@@ -4,10 +4,12 @@ title: What is Polyglot Notebook?
 metadata:
   title: What is Polyglot Notebook?
   description: TBD
-  ms.date: 04/03/2024
   author: japhletnwamu
   ms.author: japhletnwamu
+  ms.date: 04/03/2024
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=cloud_advocates
 durationInMinutes: 5
 content: |

@@ -4,11 +4,13 @@ uid: learn.philanthropies.training-with-ai-tools
 metadata:
   title: Training with AI tools
   description: In this module, you learn various AI-powered tools and how to effectively use them in your training sessions for an optimized learning experience.
-  ms.date: 03/15/2024
   author: yoosunee
   ms.author: andreapark
-  ms.topic: module
+  ms.date: 03/15/2024
   ms.service: artificial-intelligence
+  ms.topic: module
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Training with AI tools
 summary: This module focuses on using AI tools in designing effective professional development and training sessions. You explore how AI tools are used to create personalized and inclusive learning.
 

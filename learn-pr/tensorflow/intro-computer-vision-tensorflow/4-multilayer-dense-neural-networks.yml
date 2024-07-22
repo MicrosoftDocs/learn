@@ -4,10 +4,12 @@ title: Multi-layer networks
 metadata:
   title: Multi-layer networks
   description: Learn how multi-layer neural networks can be constructed to improve model accuracy
-  ms.date: 07/07/2021
   author: shwars
   ms.author: chnoring
+  ms.date: 07/07/2021
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 durationInMinutes: 10
 sandbox: true

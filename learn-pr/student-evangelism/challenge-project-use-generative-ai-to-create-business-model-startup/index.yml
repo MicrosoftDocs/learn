@@ -2,13 +2,15 @@
 uid: learn.challenge-project-use-generative-ai-to-create-business-model-startup
 metadata:
   title: Challenge Project – Create a Business Model for your startup using Microsoft Copilot.
-  description: "Challenge Project - Use Microsoft Copilot (formally Bing Chat) to Create a Business Model for your Startup or business."
-  ms.date: 12/4/2023
+  description: Challenge Project - Use Microsoft Copilot (formally Bing Chat) to Create a Business Model for your Startup or business.
   author: juliamuiruri4
   ms.author: juliamuiruri
-  ms.custom: team=nextgen
-  ms.topic: module-challenge-project # Please don't edit, used for our analytics
+  ms.date: 12/4/2023
   ms.service: microsoft-copilot
+  ms.topic: module-challenge-project
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
 title: Challenge Project – Create a Business Model for your startup using Microsoft Copilot
 summary: Use Microsoft Copilot, your everyday AI companion, to create a Business Model for your Startup or business.
 abstract: |
