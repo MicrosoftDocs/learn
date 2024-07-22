@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This content is a part of the 'Training with AI tools' module.
-  ms.date: 03/15/2024
   author: yoosunee
   ms.author: andreapark
+  ms.date: 03/15/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/5-knowledge-check.md)]
