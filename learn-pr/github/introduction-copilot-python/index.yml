@@ -2,12 +2,14 @@
 uid: learn.github-copilot-with-python
 metadata:
   title: Using GitHub Copilot with Python
-  description: "Make changes and updates to a Python application by using GitHub Copilot with Visual Studio Code."
-  ms.date: 06/25/2024
+  description: Make changes and updates to a Python application by using GitHub Copilot with Visual Studio Code.
   author: bethanyjep
   ms.author: bethanycheum
-  ms.topic: module-standard-task-based
+  ms.date: 06/25/2024
   ms.service: github-copilot
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Using GitHub Copilot with Python
 summary: "GitHub Copilot is an AI pair programmer that offers autocomplete-style suggestions as you code in Python."
 abstract: |
