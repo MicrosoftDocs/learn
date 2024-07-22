@@ -3,11 +3,11 @@ uid: learn.wwl.build-language-solution-azure-openai
 metadata:
   title: Build natural language solutions with Azure OpenAI Service
   description: "Learn how to integrate language understanding and prompt completions from Azure OpenAI into your app."
-  ms.date: 4/5/2023
+  ms.date: 07/10/2024
   author: ivorb
   ms.author: berryivor
   ms.topic: module-standard-task-based
-  ms.service: azure-ai-services
+  ms.service: azure-ai-openai
 title: Build natural language solutions with Azure OpenAI Service
 summary: This module provides engineers with the skills to begin building apps that integrate with the Azure OpenAI Service.
 abstract: |
