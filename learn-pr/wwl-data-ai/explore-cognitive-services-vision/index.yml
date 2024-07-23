@@ -30,7 +30,6 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn.wwl.explore-cognitive-services-vision.introduction
 - learn.wwl.explore-cognitive-services-vision.train-custom-models
 - learn.wwl.explore-cognitive-services-vision.knowledge-check
 - learn.wwl.explore-cognitive-services-vision.summary
