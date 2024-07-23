@@ -133,7 +133,7 @@ Now, you can add a second job to publish the module to your container registry.
 
 1. Select the latest run in the list.
 
-   :::image type="content" source="../media/6-workflow-runs-list.png" alt-text="Screenshot of GitHub that highlights the latest run of the module's workflow.":::
+   :::image type="content" source="../media/6-workflow-runs-list.png" alt-text="Screenshot of GitHub that highlights the latest run of the module's workflow." lightbox="../media/6-workflow-runs-list.png":::
 
    Wait for the workflow run to finish. The Bicep module is published to your container registry.
 
@@ -147,9 +147,9 @@ You can also view the published module in the Azure portal.
 
 1. Go to the **ToyReusable** resource group.
 
-1. Select the container registry that you created previously.
+1. In **Resources**, select the container registry that you created previously.
 
-1. Select the **Repositories** pane from the menu. Then, select the **modules\storage-account** repository, which represents the module that your workflow published.
+1. Select **Services** > **Repositories** from the menu. Then, select the **modules\storage-account** repository, which represents the module that your workflow published.
 
    :::image type="content" source="../media/6-registry-portal.png" alt-text="Screenshot of the Azure portal that shows a Bicep module in the container registry.":::
 
@@ -167,8 +167,6 @@ In the Visual Studio Code terminal, run the following command:
 az group delete --resource-group ToyReusable --yes --no-wait
 ```
 
-The resource group is deleted in the background.
-
 ::: zone-end
 
 ::: zone pivot="powershell"
@@ -183,18 +181,19 @@ You can also remove the GitHub secrets and repository, and the Azure workload id
 
 - GitHub secrets
   1. From the GitHub repository, go to **Settings** > **Secrets and variables** > **Actions**.
-  1. Select **Remove secret** for each repository secret and follow the prompts.
+  1. For each saved GitHub secret, select the **Delete \<secret-name>** icon and follow the prompts.
 
 - GitHub repository
-  1. Go to **Settings** > **General**
+  1. Go to **Settings** > **General**.
   1. Select **Delete this repository** and follow the prompts.
 
 - Azure App registration's federated credentials and service principal.
-  1. From the portal home page, search for _Azure Active Directory_ and select it from the list of **Services**.
+  1. From the portal home page, search for _Microsoft Entra ID_ and select it from the list of **Services**.
   1. Go to **Manage** > **App registrations**.
-  1. In **Owned applications** select **toy-reusable**.
+  1. In the **Owned applications** tab, select **toy-reusable**.
   1. Select **Delete** and follow the prompts.
-  1. Select **Deleted applications** to permanently delete the app registration.
+  1. Select the **Deleted applications** tab.
+  1. Select **toy-reusable**, select **Delete permanently**, and then select **Yes** to permanently delete the app registration.
 
   > [!IMPORTANT]
-  > It's possible to have duplicate App registration and service principal names. It's recommended to verify the application ID to make sure you're deleting the correct resource.
+  > It's possible to have duplicate app registration and service principal names. We recommend that you verify the application ID to make sure you're deleting the correct resource.
