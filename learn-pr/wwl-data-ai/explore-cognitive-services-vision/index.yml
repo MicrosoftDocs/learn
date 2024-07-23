@@ -30,6 +30,5 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn.wwl.explore-cognitive-services-vision.train-custom-models
 badge:
   uid: learn.wwl.explore-cognitive-services-vision.badge
