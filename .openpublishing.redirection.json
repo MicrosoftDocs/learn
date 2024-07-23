@@ -42439,6 +42439,11 @@
       "source_path": "learn-pr/iot/create-iot-device-dotnet/index.yml",
       "redirect_url": "/dotnet/iot",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/index.md",
+      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
+      "redirect_document_id": false
     }
   ]
 }
