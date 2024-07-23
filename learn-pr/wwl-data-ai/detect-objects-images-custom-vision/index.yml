@@ -29,6 +29,5 @@ subjects:
 - artificial-intelligence
 units:
 - learn.wwl.detect-objects-images-custom-vision.what-is-object-detection
-- learn.wwl.detect-objects-images-custom-vision.summary
 badge:
   uid: learn.wwl.detect-objects-images-custom-vision.badge
