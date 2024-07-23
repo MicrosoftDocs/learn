@@ -3,12 +3,14 @@ uid: learn.challenge-project-use-generative-ai-to-ideate.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Learn more skills with Microsoft Learn"
-  ms.date: 12/7/2023
+  description: Learn more skills with Microsoft Learn
   author: pablonunes
   ms.author: pablolopes
-  ms.custom: team=nextgen
+  ms.date: 12/7/2023
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"

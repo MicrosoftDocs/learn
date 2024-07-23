@@ -4,12 +4,15 @@ title: Understand Custom Vision
 metadata:
   title: Understand Custom Vision
   description: Understand Custom Vision
-  ms.date: 12/22/2022
   author: cassiebreviu
   ms.author: cassieb
+  ms.date: 12/22/2022
   ms.topic: unit
-  ms.custom: team=nextgen, team=cloud_advocates
-  ms.contributors: cassieb-09032021
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom:
+    - team=nextgen
+    - team=cloud_advocates
 durationInMinutes: 2
 content: |
   [!include[](includes/2-machine-learning-process.md)]

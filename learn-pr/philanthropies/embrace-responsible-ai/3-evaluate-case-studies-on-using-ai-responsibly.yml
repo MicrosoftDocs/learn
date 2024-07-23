@@ -3,11 +3,13 @@ uid: learn.philanthropies.embrace-responsible-ai.evaluate-case-studies-on-using-
 title: Exercise - Evaluate case studies on using AI responsibly
 metadata:
   title: Exercise - Evaluate case studies on using AI responsibly
-  description: This content is a part of the 'Guided project - Embrace responsible AI' module. 
-  ms.date: 03/28/2024
+  description: This content is a part of the 'Guided project - Embrace responsible AI' module.
   author: yoosunee
   ms.author: andreapark
+  ms.date: 03/28/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 20
 content: |
   [!include[](includes/3-evaluate-case-studies-on-using-ai-responsibly.md)]
