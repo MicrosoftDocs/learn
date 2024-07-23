@@ -32,7 +32,6 @@ subjects:
 units:
 - learn.wwl.explore-cognitive-services-vision.introduction
 - learn.wwl.explore-cognitive-services-vision.explain-florence-model
-- learn.wwl.explore-cognitive-services-vision.analyze-images
 - learn.wwl.explore-cognitive-services-vision.explore-vision-studio
 - learn.wwl.explore-cognitive-services-vision.exercise-explore-image-analysis
 - learn.wwl.explore-cognitive-services-vision.train-custom-models
