@@ -1,5 +1,5 @@
 
-In this exercise, we create a new repository using the GitHub template for the JavaScript personal portfolio frontend web application.
+In this exercise, we create a new repository using the GitHub template for the Python personal portfolio frontend web application.
 
 ## Sign up for GitHub Copilot
 
