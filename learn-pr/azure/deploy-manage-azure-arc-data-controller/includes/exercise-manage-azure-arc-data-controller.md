@@ -54,7 +54,7 @@ If the desired version isn't specified, the command uses the latest version.
 
 This command allows you to change the configurations around whether to auto-upload logs and metrics and to configure maintenance window configurations.
 
-- Auto-uploading metrics and logs is only available in a directly connected mode. USe the following command to change the auto-upload configuration:
+- Auto-uploading metrics and logs is only available in a directly connected mode. Use the following command to change the auto-upload configuration:
 
     ```PowerShell
     az arcdata dc update --auto-upload-logs true `

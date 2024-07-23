@@ -8,7 +8,7 @@ The most significant disparity between Azure Arc-enabled data services deploymen
 - **Automatic high availability (HA) and disaster recovery (DR)** are your responsibilities due to their dependencies on the resiliency of the underlying hardware and the Kubernetes cluster that you provision and manage.
 - **Compliance certifications** must be validated and obtained by your compliance and legal teams.
 
-The following diagram summazrizes a high-level overview of differences between the traditional on-premises deployments, Azure Arc-enabled data services, and PaaS cloud services.
+The following diagram summarizes a high-level overview of differences between the traditional on-premises deployments, Azure Arc-enabled data services, and PaaS cloud services.
 
 ![Diagram of management capabilities comparison by deployment model.](../media/management-capabilities-by-deployment-model.png)
 

@@ -86,7 +86,7 @@ Choose which of the options you wish to walk through. All provide you with the s
 
 1. For the **Kubernetes configuration template**, choose the appropriate storage class. On the AKS cluster for this exercise, specify `azure-arc-aks-premium-storage`.
 
-    If your Kubernetes cluster is either on-premises or in a public cloud. change the configuration template to a custom template and complete all of the required information. In particular, note your infrastructure location.
+    If your Kubernetes cluster is either on-premises or in a public cloud, change the configuration template to a custom template and complete all of the required information. In particular, note your infrastructure location.
 
     Microsoft provides templates for various environments, such as GKE and OpenShift. If you see an option that matches your environment, Microsoft provides a configuration template for you. Otherwise, specify a custom template.
 
@@ -181,7 +181,7 @@ Create your custom location for your Azure Arc data controller that you deploy o
         --cluster-type connectedclusters
     ```
 
-1. In the ADS terminal window, confirm the cluster status using the following kubectl CLI command. The bootstrapper pod should be in a running state :
+1. In the ADS terminal window, confirm the cluster status using the following kubectl CLI command. The bootstrapper pod should be in a running state:
 
     ```PowerShell
     kubectl get pods --name $Env:MyNamespace
@@ -249,7 +249,7 @@ Create your custom location for your Azure Arc data controller that you deploy o
 
     ![Screenshot of Azure Data Studio Azure Arc data controller Kubernetes config profile.](../media/azure-data-studio-arc-data-controller-kubernetes-config-profile-10.png)
 
-1. In step 11, you connected to your subscription. Confirm the Azure account is correct connected to the correct subscription. Choose the resource group you configured in the prerequisites at the top of this section. Choose the location to which you're deploying your Arc data controller. Select **Next**.
+1. In step 11, you connected to your subscription. Confirm the Azure account is connected to the correct subscription. Choose the resource group you configured in the prerequisites at the top of this section. Choose the location to which you're deploying your Arc data controller. Select **Next**.
 
    ![Screenshot of Azure Data Studio Azure Arc data controller configuration.](../media/azure-data-studio-arc-data-azure-configuration-11.png)
 
@@ -722,7 +722,7 @@ Navigate to your `.kube` directory in the ADS terminal before you run any CLI co
 
     ![Screenshot of Azure Data Studio Azure Arc data controller Kubernetes config profile.](../media/azure-data-studio-arc-data-controller-kubernetes-config-profile-10.png)
 
-1. You connected to your subscription in step 7. Confirm the Azure account is correct, and the subscription is connected to the right subscription. Choose the resource group you previously configured in the prerequisites section at the top of this section. Choose the location to which you are deploying your Arc data controller. Select **Next**.
+1. You connected to your subscription in step 7. Confirm the Azure account is correct, and the subscription is connected to the right subscription. Choose the resource group you previously configured in the prerequisites section at the top of this section. Choose the location to which you're deploying your Arc data controller. Select **Next**.
 
     ![Screenshot of Azure Data Studio Azure Arc data controller configuration.](../media/azure-data-studio-arc-data-azure-configuration-11.png)
 

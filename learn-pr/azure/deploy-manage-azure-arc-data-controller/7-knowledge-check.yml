@@ -29,7 +29,7 @@ quiz:
       explanation: "Incorrect. Regular exports and uploads to Azure are required."
     - content: "Auto upgrade and patching"
       isCorrect: false
-      explanation: "Incorrect. you can pull/push container images to a local registry."
+      explanation: "Incorrect. You can pull/push container images to a local registry."
     - content: "Microsoft Entra authentication"
       isCorrect: true
       explanation: "Correct. Indirectly connected mode supports Kubernetes authentication Active Directory for SQL endpoints."
@@ -54,4 +54,4 @@ quiz:
       explanation: "Incorrect. You can scale the data controller by using the UI and Azure CLI."
     - content: "Application migrations"
       isCorrect: true
-      explanation: "Correct. The data controller does not migrate your applications. You  ms.date: 07/22/2024re responsible for updating connection strings and application code as needed after migrating to an Azure Arc-enabled data controller."
+      explanation: "Correct. The data controller doesn't migrate your applications. You're responsible for updating connection strings and application code as needed after migrating to an Azure Arc-enabled data controller."

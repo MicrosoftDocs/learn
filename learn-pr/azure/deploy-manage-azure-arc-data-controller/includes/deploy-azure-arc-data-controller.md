@@ -21,7 +21,7 @@ Start by deploying an Azure Arc-supported Kubernetes cluster or identifying an e
 > [!NOTE]
 > For comprehensive coverage of client tools, refer to [Install client tools for deploying and managing Azure Arc-enabled data services](/azure/azure-arc/data/install-client-tools).
 
-Another deployment consideration is the choice of a configuration template. Configuration templates, referred to as profiles during data controller provisioning, contain a variety of data controller configuration options, such as container registry and repository settings, storage classes and sizes for data and logs, and the service type. You can choose one of the predefined templates that most closely matches your planned deployment or create a custom one, if needed.
+Another deployment consideration is the choice of a configuration template. Configuration templates, referred to as profiles during data controller provisioning, contain a variety of data controller configuration options such as container registry and repository settings, storage classes and sizes for data and logs, and the service type. You can choose one of the predefined templates that most closely matches your planned deployment or create a custom one, if needed.
 
 After you have all prerequisites in place, you're ready to proceed with the deployment of the data controller.
 
@@ -39,6 +39,6 @@ When you deploy the Azure Arc-enabled data controller, you can enable automatic 
 
 The steps to deploy a data controller in the indirectly connected mode vary significantly depending on the deployment tool you choose. Azure Data Studio simplifies the provisioning process through its Azure Arc Data Controller deployment wizard. The wizard guides you through deployment steps, verifying the prerequisites, ensuring connectivity to the target Kubernetes cluster, prompting for the configuration template, the target Azure region, and the resource group to host the controller-related resources. You can deploy the resulting configuration directly or save it as a notebook to accommodate any additional edits and subsequent runs. Alternatively, you can use the Azure portal to generate a notebook to download and run in Azure Data Studio against your Kubernetes cluster.
 
-When using Azure CLI or PowerShell, the steps to create the data controller depend on the Kubernetes platform. For details, refer to [Create Azure Arc data controller using the CLI](/azure/azure-arc/data/create-data-controller-indirect-cli).
+When you're using Azure CLI or PowerShell, the steps to create the data controller depend on the Kubernetes platform. For details, refer to [Create Azure Arc data controller using the CLI](/azure/azure-arc/data/create-data-controller-indirect-cli).
 
 You can also deploy a data controller in the indirectly connected mode by using Kubernetes tools. At a high level, the process involves creating the target namespace and the bootstrapper service, then provisioning the data controller. The namespace hosts the data controller pods, and the bootstrapper service handles incoming requests for creating, editing, and deleting custom resources such as a data controller. Note that in this case, Azure Arc-associated resources are created in the Azure subscription following an upload of usage data.
