@@ -3748,3 +3748,8 @@ achievements:
   title: Detect objects in images with Azure AI Custom Vision
   summary: Object detection is a form of computer vision in which artificial intelligence (AI) agents can identify and locate specific types of object in an image or camera feed.
   iconUrl: /training/achievements/detect-objects-images-custom-vision.svg
+- uid: learn.wwl.explore-cognitive-services-vision.badge
+  type: badge
+  title: Explore Azure AI services for Vision (preview)
+  summary: Azure AI services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities.
+  iconUrl: /training/achievements/explore-cognitive-services-for-vision-preview.svg
