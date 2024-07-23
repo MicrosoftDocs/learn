@@ -2,8 +2,8 @@
 uid: learn.wwl.implement-authentication-access-management-solution
 metadata:
   title: 'SC-300: Implement an Authentication and Access Management solution'
-  description: Implement and administer your access management using Microsoft Entra ID. Use MFA, Conditional Access, and identity protection to manager your identity solution. Aligned to SC-300 exam.
-  ms.date: 02/03/2023
+  description: Implement and administer your access management using Azure AD. Use MFA, Conditional Access, and identity protection to manager your identity solution. Aligned to SC-300 exam.
+  ms.date: 07/23/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: learning-path
@@ -11,20 +11,16 @@ title: 'SC-300: Implement an Authentication and Access Management solution'
 prerequisites: |
   None
 summary: |
-  Implement and administer your access management using Microsoft Entra ID. Use MFA, Conditional Access, and identity protection to manager your identity solution. Aligned to SC-300 exam.
+  Implement and administer your access management using Azure AD. Use MFA, Conditional Access, and identity protection to manager your identity solution. Aligned to SC-300 exam.
 iconUrl: /training/achievements/implement-an-authentication-and-access-management-solution.svg
 levels:
 - intermediate
 roles:
 - administrator
-- identity-access-admin
 - security-engineer
 products:
 - azure
 - entra-id
-- microsoft-authenticator
-- active-directory
-- entra
 subjects:
 - identity-access
 modules:
@@ -33,5 +29,6 @@ modules:
 - learn.wwl.plan-implement-administer-conditional-access
 - learn.wwl.manage-azure-ad-identity-protection
 - learn.wwl.implement-access-management-for-azure-resources
+- learn.wwl.deploy-configure-microsoft-entra-global-secure-access
 trophy:
   uid: learn.wwl.implement-authentication-access-management-solution.trophy
