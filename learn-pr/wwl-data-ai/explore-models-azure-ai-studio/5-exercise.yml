@@ -1,6 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-models-copilot-ai-studio.exercise
 title: Exercise - Explore, deploy, and chat with language models
+metadata:
   title: Exercise - Explore, deploy, and chat with language models
   description: "Exercise - Explore, deploy, and chat with language models in the Azure AI studio."
   ms.date: 7/2/2024

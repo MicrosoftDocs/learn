@@ -24,8 +24,7 @@ Now that you understand why you want to deploy a model, let's explore the deploy
 
 When you deploy a language model in the Azure AI Studio, you have several types available, which depend on the model you want to deploy:
 
-|   |Azure OpenAI models|Models deployed as Serverless APIs (pay-as-you-go)|Models deployed with user-managed compute|
+|Activity|Azure OpenAI models|Models deployed as Serverless APIs (pay-as-you-go)|Models deployed with user-managed compute|
 |---|---|---|---|
 |Deploy the model|No, you aren't billed for deploying an Azure OpenAI model to your project.|Yes, you're billed minimally per the infrastructure of the endpoint.|Yes, you're billed for the infrastructure hosting the model per minute.|
 |Call the endpoint|Yes, you're billed based on your token usage.|Yes, you're billed based on your token usage.|None.|
-
