@@ -42439,6 +42439,91 @@
       "source_path": "learn-pr/iot/create-iot-device-dotnet/index.yml",
       "redirect_url": "/dotnet/iot",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/index.md",
+      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/3-create-object-detection-solution.md",
+      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/2-object-detection-azure.md",
+      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/1-introduction.md",
+      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/3a-knowledge-check.md",
+      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/4-summary.md",
+      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/1a-what-is-object-detection.md",
+      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/index.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/3-analyze-images.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/5-exercise-explore-image-analysis.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/7-exercise-train-custom-object-detection-model.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/2-explain-florence-model.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/4-explore-vision-studio.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/1-introduction.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/8-knowledge-check.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/9-summary.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/6-train-custom-models.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
     }
   ]
 }
