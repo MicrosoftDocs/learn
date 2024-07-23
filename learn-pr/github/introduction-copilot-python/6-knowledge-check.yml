@@ -3,11 +3,13 @@ uid: learn.github-copilot-with-python.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Review the differences in GitHub Copilot and Prompt engineering"
-  ms.date: 06/25/2024
+  description: Review the differences in GitHub Copilot and Prompt engineering
   author: bethanyjep
   ms.author: bethanycheum
+  ms.date: 06/25/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
   ms.custom: devx-track-python
 durationInMinutes: 5
 content: |
