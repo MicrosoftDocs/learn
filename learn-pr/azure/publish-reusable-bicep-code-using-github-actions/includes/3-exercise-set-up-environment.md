@@ -109,10 +109,10 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 1. In the Visual Studio Code terminal, run the following command to sign in to Azure:
 
    ```azurepowershell
-   Connect-AzAccount
+   Connect-AzAccount -UseDeviceAuthentication
    ```
 
-1. In the browser that opens, sign in to your Azure account.
+1. Follow the command instructions to sign in to your Azure account.
 
 ::: zone-end
 
