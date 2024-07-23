@@ -59,7 +59,7 @@ In the preceding unit, you learned about the importance of having a versioning s
 
    :::code language="json" source="code/6-metadata.json" :::
 
-   Notice that in the metadata file, you separately define the major and minor version numbers. Your workflow combines these numbers with the workflow's run number, into a complete version number, each time the workflow runs.
+   In the metadata file, you separately define the major and minor version numbers. Whenever your workflow runs, the workflow combines these numbers together with the workflow's run number to form a complete version number.
 
 1. Save your changes to the file.
 
@@ -79,7 +79,7 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
    :::code language="yaml" source="code/6-workflow.yml" range="16-20" highlight="3" :::
 
-1. At the bottom of the file, for the **To be added** comment, add the following lint job definition:
+1. At the bottom of the file, for the `# To be added` comment, add the following lint job definition:
 
    :::code language="yaml" source="code/6-workflow.yml" range="22-28" :::
 
@@ -91,19 +91,19 @@ Now, you can add a second job to publish the module to your container registry.
 
    :::code language="yaml" source="code/6-workflow.yml" range="30-40" :::
 
-   The steps check out the code from your repository and sign in to Azure.
+   The initial two steps in this definition are to check out the code from your repository and sign in to Azure.
 
-1. Below the code that you just added, add a step to read the version number from your module's _metadata.json_ file and set it as an environment variable.
+1. Below the code that you just added, add another step that reads the version number from your module's _metadata.json_ file and sets it as an environment variable.
 
    :::code language="yaml" source="code/6-workflow.yml" range="41-45" :::
 
-   The step runs a script that uses the jq command-line application to parse the JSON file.
+   The step runs a script that uses the `jq` command-line application to parse the JSON file.
 
-1. After the step that you created, add a step to publish the module to the registry.
+1. After the step that you created, add a final step to publish the module to the registry.
 
    :::code language="yaml" source="code/6-workflow.yml" range="46-52" :::
 
-   Notice that this step constructs the value of the `--target` argument dynamically. It combines the value of the registry server, the module name, and the version number.
+   This step constructs the value of the `--target` argument dynamically. It combines the value of the registry server, the module name, and the version number.
 
 1. Save your changes to the file.
 
@@ -113,7 +113,7 @@ Now, you can add a second job to publish the module to your container registry.
 
    :::code language="yaml" source="code/6-workflow.yml" highlight="18, 23-52" :::
 
-   If it doesn't, update it to match this example, and then save it.
+   If the file contents are different, update it to match this example, and then save the file.
 
 1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 
