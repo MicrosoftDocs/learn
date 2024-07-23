@@ -4,10 +4,12 @@ title: Summary
 metadata:
   title: Summary
   description: Review what you've learned.
-  ms.date: 12/5/2023
   author: a-a-ron
   ms.author: aastewar
+  ms.date: 12/5/2023
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
