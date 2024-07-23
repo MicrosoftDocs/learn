@@ -1,8 +1,8 @@
 `Az arcdata` is a suite of CLI commands available for us to use to create, delete, and manage your Arc-enabled resources either via the Azure portal Cloud Shell or Azure Data Studio terminal. In the previous exercise, we used some az `arcdata` CLI commands, allowing us to ensure our Arc-enabled environment was ready for us to use.
 
-In this exercise, we'll look at a few additional commands we covered in the previous unit.
+In this exercise, we look at a few other commands we covered in the previous unit.
 
-- Prior to running any of these commands, ensure you have the latest `kube` config file on your system. You can download the latest version with the following commands:
+- Before running any of these commands, ensure you have the latest `kube` config file on your system. You can download the latest version with the following commands:
 
     ```PowerShell
     $Env:MyResourceGroup="<enter resource group name here>"
