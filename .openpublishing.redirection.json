@@ -42474,6 +42474,11 @@
       "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/1a-what-is-object-detection.md",
       "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/index.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
     }
   ]
 }
