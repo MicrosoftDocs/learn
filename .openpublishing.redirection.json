@@ -42459,6 +42459,11 @@
       "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/1-introduction.md",
       "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/3a-knowledge-check.md",
+      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
+      "redirect_document_id": false
     }
   ]
 }
