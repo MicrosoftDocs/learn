@@ -28,7 +28,6 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn.wwl.detect-objects-images-custom-vision.introduction
 - learn.wwl.detect-objects-images-custom-vision.what-is-object-detection
 - learn.wwl.detect-objects-images-custom-vision.knowledge-check
 - learn.wwl.detect-objects-images-custom-vision.summary
