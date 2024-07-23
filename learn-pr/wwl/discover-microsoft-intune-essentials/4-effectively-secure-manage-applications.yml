@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-microsoft-intune-essentials.effectively-secure-manage-applications
+title: Effectively secure and manage applications
+metadata:
+  title: Effectively secure and manage applications
+  description: "Effectively secure and manage applications"
+  ms.date: 06/06/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-effectively-secure-manage-applications.md)]

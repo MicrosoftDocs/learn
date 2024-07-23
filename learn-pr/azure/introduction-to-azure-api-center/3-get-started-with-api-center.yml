@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-api-center.get-started-with-api-center
+title: Get started with API Center
+metadata:
+  title: Get started with API Center
+  description: "Complete exercises to create and manage your organization's APIs using Azure API Center on the Azure portal, via Azure CLI or our VS Code extension."
+  ms.date: 5/3/2024
+  author: juliamuiruri4
+  ms.author: juliamuiruri
+  ms.topic: unit
+  ms.custom: devx-track-azurecli
+  zone_pivot_groups: azure-resource-interaction
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-get-started-with-api-center.md)]

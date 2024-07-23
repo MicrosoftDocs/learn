@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.5-cost-optimization-strategies-hdinsight-clusters
-title: Cost optimization strategies for HDinsight clusters
+title: Cost optimization strategies for HDInsight clusters
 metadata:
-  title: Cost optimization strategies for HDinsight clusters
-  description: "Cost optimization strategies for HDinsight clusters"
-  ms.date: 01/05/2022
+  title: Cost optimization strategies for HDInsight clusters
+  description: "Cost optimization strategies for HDInsight clusters"
+  ms.date: 04/06/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

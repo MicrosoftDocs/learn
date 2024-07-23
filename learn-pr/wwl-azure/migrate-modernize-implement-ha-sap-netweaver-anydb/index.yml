@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-modernize-implement-ha-sap-netweaver-anydb
+metadata:
+  title: Modernize and implement high availability in SAP NetWeaver with AnyDB on Azure Virtual Machines
+  description: 'This module explores the preparation for SAP NetWeaver high availability AnyDB deployment on Azure. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.service: sap-on-azure
+title: Modernize and implement high availability in SAP NetWeaver with AnyDB on Azure Virtual Machines
+summary: SAP professionals need to evaluate deploying SAP solutions on Azure. This module explores the preparation for SAP NetWeaver high availability AnyDB deployment on Azure.
+abstract: |
+  After completing this module, you will be able to:
+  - Examine single-SID 3-tier SAP NetWeaver high availability AnyDB deployment.
+prerequisites: |
+  Before taking this training, you should complete:
+  *   Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam.
+  *   SAP HANA or NetWeaver training.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.migrate-modernize-implement-ha-sap-netweaver-anydb.introduction
+- learn.wwl.migrate-modernize-implement-ha-sap-netweaver-anydb.examine-single-sid-3-tier-sap-netweaver-high-availability-anydb-deployment
+- learn.wwl.migrate-modernize-implement-ha-sap-netweaver-anydb.implement-sap-architecture-on-azure-virtual-machines-run-linux
+- learn.wwl.migrate-modernize-implement-ha-sap-netweaver-anydb.implement-sap-architecture-on-azure-virtual-machines-run-windows
+- learn.wwl.migrate-modernize-implement-ha-sap-netweaver-anydb.knowledge-check
+- learn.wwl.migrate-modernize-implement-ha-sap-netweaver-anydb.summary
+badge:
+  uid: learn.wwl.migrate-modernize-implement-ha-sap-netweaver-anydb.badge

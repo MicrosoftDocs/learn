@@ -4,11 +4,10 @@ title: Understand deep learning concepts
 metadata:
   title: Understand deep learning concepts
   description: "Understand deep learning concepts"
-  ms.date: 03/23/2023
+  ms.date: 07/10/2024
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-databricks
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-deep-learning.md)]

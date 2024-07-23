@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.examine-monitoring-logging-alerting-services
+title: Examine monitoring, logging, and alerting services
+metadata:
+  title: Examine monitoring, logging, and alerting services
+  description: "Examine monitoring, logging, and alerting services"
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-examine-monitoring-logging-alerting-services.md)]

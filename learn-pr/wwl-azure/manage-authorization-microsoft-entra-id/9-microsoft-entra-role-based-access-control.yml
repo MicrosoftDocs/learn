@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-role-based-access-control
+title: Microsoft Entra role-based access control
+metadata:
+  title: Microsoft Entra role-based access control
+  description: "Microsoft Entra role-based access control"
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-microsoft-entra-role-based-access-control.md)]

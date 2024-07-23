@@ -4,12 +4,12 @@ title: Learn how to add routes and use other advanced commands
 metadata:
   title: Learn how to add routes and use other advanced commands
   description: Learn how to add more route handlers to support different HTTP verbs per the RESTful convention.
-  ms.date: 10/26/2021
+  ms.date: 12/22/2022
   author: softchris
   ms.author: chnoring
+  ms.manager: markl
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-advanced-commands.md)]

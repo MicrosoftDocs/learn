@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-devops-aspnet-core.exercise-manually-deploy-cloud-native-application
+metadata:
+  title: Manually deploy your cloud-native app to Azure Kubernetes Service
+  description: Provision Azure resources, download the eShop starter solution, and configure the environment.
+  ms.date: 10/13/2023
+  author: scottaddie
+  ms.author: scaddie
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom: devx-track-azurecli
+title: Manually deploy your cloud-native app to Azure Kubernetes Service
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-exercise-manually-deploy-cloud-native-application.md)]

@@ -5,11 +5,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 6/25/2019
+  ms.date: 10/17/2023
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 5
 content: |
@@ -18,11 +17,11 @@ quiz:
 
   questions:
   
-  - content: "Suppose you work for a company that builds a Massively Multiplayer Online (MMO) game. You decide to move all your services to Azure Kubernetes service. Which of the following components will contribute to your monthly Azure charge?"
+  - content: "Suppose you work for a company that builds a Massively Multiplayer Online (MMO) game. You decide to move all your services to Azure Kubernetes service. Which of the following components contribute to your monthly Azure charge?"
     choices:
-    - content: "The Master node"
+    - content: "The control plane"
       isCorrect: false
-      explanation: "In an AKS cluster, the Master node is free and there's no charge for Cluster Management."
+      explanation: "In an AKS cluster, there's no charge for having a control plane."
     - content: "Per deployed Pod"
       isCorrect: false
       explanation: "Deploying and running Pods on an AKS cluster is free."
@@ -30,9 +29,9 @@ quiz:
       isCorrect: true
       explanation: "You only pay for the virtual machines instances, storage, and networking resources consumed by your Kubernetes cluster."
 
-  - content: "Suppose you work for an event management company. Your events website needs persisted storage. Which feature of AKS will you use?"
+  - content: "Suppose you work for an event management company. Your events website needs persisted storage. Which feature of AKS should you use?"
     choices:
-    - content: "Use Azure Container Registry"
+    - content: "Azure Container Registry"
       isCorrect: false
       explanation: "Azure Container Registry allows you to store images for all types of container deployments."
     - content: "Storage volume support"
@@ -40,7 +39,7 @@ quiz:
       explanation: "AKS supports both static and dynamic storage volumes for containers that need persisted storage."
     - content: "Enable the horizontal pod autoscaler"
       isCorrect: false
-      explanation: "The horizontal pod autoscaler watches the resource demand of pods and will increase pods to match demand."
+      explanation: "The horizontal pod autoscaler watches the resource demand of pods and increases pods to match demand."
 
   - content: "Suppose you work for a company that monitors weather conditions. Your team of developers needs to do end-to-end testing with other components in your AKS cluster. The team wants to do testing without replicating or mocking up dependencies. Which service should they use?"
     choices:

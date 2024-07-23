@@ -3,11 +3,12 @@ uid: learn.azure.resource-manager-template-reuse
 metadata:
   title: "Deploy to multiple Azure environments by using JSON ARM template features"
   description: Manage multiple Azure environment deployments of your JSON Azure Resource Manager templates (ARM templates) by using functions, variables, tags, and parameter files.
-  ms.date: 07/01/2022
+  ms.service: azure-resource-manager
+  manager: mkluck
+  ms.date: 01/30/2024
   author: tfitzmac
   ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: "Deploy to multiple Azure environments by using JSON ARM template features"
 summary: Manage multiple Azure environment deployments of your Azure Resource Manager templates by using functions, variables, tags, and parameter files.
 abstract: |
@@ -22,8 +23,8 @@ prerequisites: |
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true), installed locally.
   - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension, installed locally.
   - One of these tools:
-    - The latest version of the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest) tools, installed locally.
-    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.3.0), installed locally.
+    - The latest version of the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest&preserve-view=true) tools, installed locally.
+    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.3.0&preserve-view=true), installed locally.
 iconUrl: /training/achievements/modify-azure-resource-manager-template-reuse.svg
 ratingEnabled: true
 levels:

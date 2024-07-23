@@ -7,7 +7,7 @@ You've identified the following scenarios for message exchange between the mobil
 
 You've decided to implement a Service Bus queue for the first use case and a Service Bus topic for the second use case.
 
-In this exercise, in the Azure portal, you'll create a Service Bus namespace that contains a queue, a topic, and subscriptions.
+In this exercise, you'll create a Service Bus namespace that contains a queue, a topic, and subscriptions in the Azure portal.
 
 ## Create a Service Bus namespace
 
@@ -28,7 +28,7 @@ Start by creating the namespace. In Azure Service Bus, a namespace is a containe
     | Resource group | <rgn>[Sandbox resource group name]</rgn> | The name of the resource group in which to create your Service Bus namespace. In this exercise, you'll create the namespace in the resource group that was assigned when you activated the sandbox. |
     | **Instance Details** |
     | Namespace name | [Globally unique name] | Enter a name that is unique in Azure.<br />If you want to use the format _salesteamapp_<_Company_><_year_>, your namespace name would look like the example _salesteamappContoso2022_. |
-    | Location | Select from the dropdown | Choose from the free *sandbox regions* listed after this table. |
+    | Location | Select from the dropdown | Choose from the free *sandbox regions* listed following this table. |
     | Pricing tier | Standard | The recommended pricing tier for this exercise. |
 
     [!INCLUDE[Sandbox regions](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
@@ -47,12 +47,13 @@ Next, add a queue for messages about individual sales to your namespace:
 
 1. When deployment is finished, select **Go to resource**.
 
-1. On the **Service Bus Namespace** page, select **Queues** under **Entities** on the left menu. 
-2. Select **+ Queue** on the command bar.
+1. On the **Service Bus Namespace** page, select **Queues** under **Entities** on the left menu.
+
+1. Select **+ Queue** on the command bar.
   
     :::image type="content" source="../media/3-create-queue.png" alt-text="Screenshot of Service Bus namespace and Create queue panes with Queue and Create highlighted.":::
 
-1. In the **Create queue** pane, for **Name**, enter **salesmessages**, and then select **Create**.  
+1. In the **Create queue** pane, for **Name**, enter **salesmessages**, then select **Create**.  
   
 When the message queue has been created, **salesmessages** is listed under **Queues** at the bottom of the Service Bus namespace pane.
 
@@ -62,11 +63,11 @@ You also want to create a topic that will be used for messages that relate to sa
 
 Add a Service Bus topic and subscriptions:
 
-1. On the left menu, select **Topics** under **Entities** in the left menu, and then select **+ Topic** on the command bar.
+1. On the left menu, select **Topics** under **Entities** in the left menu, then select **+ Topic** on the command bar.
 
     :::image type="content" source="../media/3-create-topic.png" alt-text="Screenshot of the Service Bus namespace and Create topic panes with Topic and Create highlighted.":::
 
-1. In the **Create topic** pane, for **Name**, enter *salesperformancemessages*, and then select **Create**.
+1. In the **Create topic** pane, for **Name**, enter *salesperformancemessages*, then select **Create**.
 
    When the topic has been created, **salesperformancemessages** is listed under **Topics** at the bottom of the Service Bus namespace pane.
 
@@ -84,4 +85,4 @@ Add a Service Bus topic and subscriptions:
 
 The **Subscriptions** section of the **salesperformancemessages** Service Bus topic for your sales team app now lists two subscriptions.
   
-You have built the infrastructure to use Service Bus to increase the resilience of your distributed application. You've created a queue for messages about individual sales, and a topic for messages about sales performance. You've added multiple subscriptions to the topic, so topic messages can be delivered to multiple web services around the world.
+You've built the infrastructure to use Service Bus to increase the resilience of your distributed application. You've created a queue for messages about individual sales, and a topic for messages about sales performance. You've added multiple subscriptions to the topic, so topic messages can be delivered to multiple web services around the world.

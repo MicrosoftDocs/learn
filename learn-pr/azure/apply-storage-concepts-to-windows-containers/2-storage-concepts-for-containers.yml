@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.apply-storage-concepts-to-windows-containers.storage-concepts-for-containers
+title: Storage concepts for containers
+metadata:
+  unitType: learning-content
+  title: Storage concepts for containers
+  description: Windows containers by default use ephemeral storage (scratch space) for all input and output. Each container has its own scratch space, where all file creation and file writes are captured so they do not escape to the host. When a container instance is deleted, all changes that occurred in the scratch space are thrown away.
+  ms.date: 02/13/2024
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-storage-concepts-for-containers.md)]

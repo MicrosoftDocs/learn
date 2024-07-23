@@ -47,7 +47,7 @@ Identify the subtasks of Introduction to Azure Sentinel
 
 1. **Introduction**
 
-   You work as a SOC Analyst for a national insurance provider. The business has already started moving some workloads to the public cloud, and you've been tasked with evaluating Security Information and Event Management (SIEM) solutions that can help in both an on premises and multi-cloud environment. You've heard about Azure Sentinel and want to see whether this could potentially be the right SIEM for your business.
+   You work as a SOC Analyst for a national/regional insurance provider. The business has already started moving some workloads to the public cloud, and you've been tasked with evaluating Security Information and Event Management (SIEM) solutions that can help in both an on premises and multi-cloud environment. You've heard about Azure Sentinel and want to see whether this could potentially be the right SIEM for your business.
 
 1. **What is Azure Sentinel?**
 

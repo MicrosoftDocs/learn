@@ -2,25 +2,27 @@
 uid: learn.protect-apis-on-api-management
 metadata:
   title: Protect your APIs on Azure API Management
-  description: Protect your back-end APIs from information exposure and implement throttling to prevent resource exhaustion with policies in Azure API Management.
-  ms.date: 03/07/2023
+  description: Protect your backend APIs from information exposure and implement throttling (rate limiting) to prevent resource exhaustion with policies in Azure API Management.
+  ms.date: 08/10/2023
   author: dlepow
   ms.author: danlep
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: api-management
+  manager: mcleans
 title: Protect your APIs on Azure API Management
-summary: Protect your back-end APIs from information exposure and implement throttling to prevent resource exhaustion with policies in Azure API Management.
+summary: Protect your backend APIs from information exposure and implement throttling (rate limiting) to prevent resource exhaustion with policies in Azure API Management.
 abstract: | 
   In this module, you will:
   - Create an Azure API gateway
   - Import a RESTful API into the gateway
-  - Implement policies to secure and throttle the requests
+  - Implement policies to limit unintended information exposure and throttle the requests
   - Call an API to test the applied policies
 prerequisites: | 
-  - Familiarity with basic concepts of web APIs, such as operations and endpoints
+  - Experience with publishing an API in Azure API Management
+  - Experience with XML syntax
 iconUrl: /training/achievements/protect-apis-on-api-management.svg
 levels:
-- beginner
+- intermediate
 roles:
 - developer
 products:

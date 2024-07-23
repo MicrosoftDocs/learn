@@ -4,11 +4,10 @@ title: Distribute PyTorch training with Horovod
 metadata:
   title: Distribute PyTorch training with Horovod
   description: "Distribute PyTorch training with Horovod"
-  ms.date: 03/23/2023
+  ms.date: 07/10/2024
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-databricks
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-horovod.md)]

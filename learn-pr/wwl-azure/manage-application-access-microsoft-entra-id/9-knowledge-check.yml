@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-application-access-microsoft-entra-id.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/29/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A developer wants to provide permissions-based access to their web API's resources to authorized users and client apps. What is the first step they need to take?"
+    choices:
+    - content: "Register the web API with the Microsoft identity platform"
+      isCorrect: true
+      explanation: "Correct. To provide scoped access to the resources in your web API, you first need to register the API with the Microsoft identity platform."
+    - content: "Configure permissions for the client application to access the API in the app registration"
+      isCorrect: false
+      explanation: "Incorrect. This step comes after registering the API with the Microsoft identity platform."
+    - content: "Create an app role in the app registration"
+      isCorrect: false
+      explanation: "Incorrect. This step comes after assigning an owner to the application."
+  - content: "An organization wants to easily achieve the right access policies for their configured applications. Which Microsoft service can help them achieve this?"
+    choices:
+    - content: "Microsoft Entra ID"
+      isCorrect: true
+      explanation: "Correct. Microsoft Entra ID supports extensive access management for configured applications, enabling organizations to easily achieve the right access policies ranging from automatic, attribute based assignment (ABAC) or RBAC scenarios through delegation and including administrator management. With Microsoft Entra ID, usage and assignment reporting is fully integrated, enabling administrators to easily report on assignment state, assignment errors, and even usage."
+    - content: "Microsoft Excel"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Excel is a spreadsheet software and not a service that helps organizations achieve access policies for their configured applications."
+    - content: "Microsoft Word"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Word is a word processing software and not a service that helps organizations achieve access policies for their configured applications."
+  - content: "A company wants to ensure that their web application is secure and protected from unauthorized access. They want to implement a security mechanism that will allow users to authenticate themselves before accessing the application. What is the first step they need to take?"
+    choices:
+    - content: "Implement an authentication mechanism such as OAuth or OpenID Connect"
+      isCorrect: true
+      explanation: "Correct. Implementing an authentication mechanism such as OAuth or OpenID Connect is the first step in ensuring that users are authenticated before accessing the web application, thereby protecting it from unauthorized access."
+    - content: "Configure permissions for the client application to access the API in the app registration"
+      isCorrect: false
+      explanation: "Incorrect. This step is related to configuring permissions for client applications to access APIs, not for implementing a security mechanism for user authentication."
+    - content: "Register the web API with the Microsoft identity platform"
+      isCorrect: false
+      explanation: "Incorrect. Registering the web API with the Microsoft identity platform is related to providing scoped access to resources in a web API, not for implementing a security mechanism for user authentication."
+  - content: "A developer wants to provide permissions-based access to their web API. What steps should they take to achieve this?"
+    choices:
+    - content: "The developer should register the web API with the Microsoft identity platform, assign an owner, create an app role, and add a scope."
+      isCorrect: true
+      explanation: "Correct. By registering the web API and exposing it through scopes, assigning an owner and app role, the developer can provide permissions-based access to authorized users and client apps that access the API."
+    - content: "The developer should create a new app role for the web API."
+      isCorrect: false
+      explanation: "Incorrect. This step alone doesn't provide permissions-based access to the web API."
+    - content: "The developer should configure permissions for the client application to access the API in the app registration."
+      isCorrect: false
+      explanation: "Incorrect. This step alone doesn't provide permissions-based access to the web API."
+  - content: "A developer needs to securely store secrets in Azure Key Vault and allow services to access them. What is the benefit of using managed identities?"
+    choices:
+    - content: "Managed identities require developers to manage credentials."
+      isCorrect: false
+      explanation: "Incorrect. Managed identities eliminate the need for developers to manage credentials."
+    - content: "Managed identities can only be used to authenticate to Microsoft Entra resources."
+      isCorrect: false
+      explanation: "Incorrect. Managed identities can be used to authenticate to any resource that supports Microsoft Entra authentication, including the developer's own applications."
+    - content: "Managed identities eliminate the need for developers to manage secrets, credentials, certificates, and keys used to secure communication between services."
+      isCorrect: true
+      explanation: "Correct. Managed identities provide an automatically managed identity in Microsoft Entra ID for applications to use when connecting to resources that support Microsoft Entra authentication. Applications can use managed identities to obtain Microsoft Entra tokens without having to manage any credentials."

@@ -4,12 +4,11 @@ title: What is Azure Load Balancer?
 metadata:
   title: What is Azure Load Balancer?
   description: Learn what Azure Load Balancer does and how your organization can use it.
-  ms.date: 02/16/2022
+  ms.date: 01/12/2024
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/2-what-is-azure-load-balancer.md)]

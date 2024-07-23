@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authorization-microsoft-entra-id.access-reviews
+title: Access reviews
+metadata:
+  title: Access reviews
+  description: "Access reviews"
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/18-access-reviews.md)]

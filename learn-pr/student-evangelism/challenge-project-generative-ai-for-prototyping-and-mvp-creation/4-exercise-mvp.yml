@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.exercise-mvp
+title: Exercise - Create your Minimum Viable Product (MVP)
+metadata:
+  title: Exercise - Create your Minimum Viable Product (MVP)
+  description: Exercise - Create your Minimum Viable Product (MVP)
+  author: bethanyjep
+  ms.author: bethanycheum
+  ms.date: 12/04/2023
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-mvp.md)]

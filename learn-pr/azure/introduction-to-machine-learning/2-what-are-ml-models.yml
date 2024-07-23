@@ -4,11 +4,10 @@ title: What are machine learning models?
 metadata:
   title: What are machine learning models?
   description: Conceptual unit introducing what machine learning models are
-  ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/05/2023
+  author: msakande
+  ms.author: mopeakande
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-are-ml-models.md)]

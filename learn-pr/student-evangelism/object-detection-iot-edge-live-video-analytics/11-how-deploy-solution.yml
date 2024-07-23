@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/04/2021
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4 
 content: |

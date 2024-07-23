@@ -4,12 +4,11 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "Check your knowledge for what you've learned about Azure Policy."
-  ms.date: 9/21/2021
-  author: ricmmartins
-  ms.author: ricmart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  description: "Check your knowledge about Azure Policy."
+  ms.date: 07/19/2024
+  author: davidsmatlak
+  ms.author: davidsmatlak
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:
@@ -35,7 +34,7 @@ quiz:
       explanation: "Incorrect. You can extend the coverage of Azure Policy to Azure Arc enabled resources outside Azure."
     - content: "The statement is wrong. If you install the Azure Policy agent, you can work with resources hosted outside Azure."
       isCorrect: false
-      explanation: "Incorrect. There is no Azure Policy agent."
+      explanation: "Incorrect. There's no Azure Policy agent."
   - content: "Azure Policy is capable of:"
     choices:
     - content: "Monitoring the health of your virtual machines."
@@ -43,7 +42,7 @@ quiz:
       explanation: "Incorrect. Azure Policy isn't a monitoring tool."
     - content: "Providing recommendations for your Azure resources."
       isCorrect: false
-      explanation: "Incorrect. Azure Policy won't provide recommendations for your Azure resources. You can use Azure Advisor to get recommendations." 
+      explanation: "Incorrect. Azure Policy doesn't provide recommendations for your Azure resources. You can use Azure Advisor to get recommendations."
     - content: "Adding required configuration at scale."
       isCorrect: true
       explanation: "Correct. As example, you can create a policy to enable Azure Backup for all virtual machines within an Azure subscription."

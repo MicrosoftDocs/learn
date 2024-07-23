@@ -2,12 +2,14 @@
 uid: learn.wwl.train-compute-intensive-models-azure-machine-learning
 metadata:
   title: Train compute-intensive models with Azure Machine Learning
-  description: Train compute-intensive models with Azure Machine Learning
+  description: Learn how to train compute-intensive models with Azure Machine Learning.
   ms.date: 06/02/2022
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Train compute-intensive models with Azure Machine Learning
 prerequisites: |
   Before starting this learning path, you should be familiar with the Azure Machine Learning service and training compute-intensive machine-learning and deep-learning models.

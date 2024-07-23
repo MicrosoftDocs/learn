@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-azure-kubernetes-service-cluster
+metadata:
+  title: Deploy an Azure Kubernetes Service cluster
+  description: This module covers the deployment of a managed Kubernetes cluster in Azure using Azure Kubernetes Service (AKS).
+  ms.date: 03/08/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure-kubernetes-service
+title: Deploy an Azure Kubernetes Service cluster
+summary: In this module,  you learn how to create an Azure Kubernetes Service cluster, configure its components, and connect to it using kubectl commands.
+abstract: |
+  After completing this module, you'll be able to:
+  * Create an Azure Kubernetes Service cluster.
+  * Configure Azure Kubernetes Service Components.
+  * Connect to an Azure Kubernetes Service  cluster.
+  * Configure Azure Active Directory Integration.
+  * Monitor an Azure Kubernetes Service cluster.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.deploy-azure-kubernetes-service-cluster.introduction
+- learn.wwl.deploy-azure-kubernetes-service-cluster.azure-kubernetes-service-cluster-architecture
+- learn.wwl.deploy-azure-kubernetes-service-cluster.network-topology
+- learn.wwl.deploy-azure-kubernetes-service-cluster.spoke-network-kubernetes
+- learn.wwl.deploy-azure-kubernetes-service-cluster.configure-compute-base-cluster
+- learn.wwl.deploy-azure-kubernetes-service-cluster.integrate-azure-active-directory-cluster
+- learn.wwl.deploy-azure-kubernetes-service-cluster.secure-network-flow
+- learn.wwl.deploy-azure-kubernetes-service-cluster.node-pod-scalability
+- learn.wwl.deploy-azure-kubernetes-service-cluster.create-azure-kubernetes-service
+- learn.wwl.deploy-azure-kubernetes-service-cluster.knowledge-check
+- learn.wwl.deploy-azure-kubernetes-service-cluster.summary
+badge:
+  uid: learn.wwl.deploy-azure-kubernetes-service-cluster.badge

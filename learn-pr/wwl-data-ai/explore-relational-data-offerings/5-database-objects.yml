@@ -4,13 +4,12 @@ title: Describe database objects
 metadata:
   title: Describe database objects
   description: "Describe database objects"
-  ms.date: 03/08/2023
+  ms.date: 03/15/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/5-database-objects.md)]

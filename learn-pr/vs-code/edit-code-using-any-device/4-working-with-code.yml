@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.edit-code-using-any-device.working-with-code
+title: Working with code in Visual Studio Code for the Web
+metadata:
+  title: Working with code in Visual Studio Code for the Web
+  description: "Visual Studio Code for the Web enables you to quickly browse remote repositories using a virtual file system, while having an integrated source control experience."
+  ms.date: 01/22/2024
+  author: olguzzar
+  ms.author: olguzzar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-working-with-code.md)]

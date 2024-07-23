@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-use-azure-container-registry
+metadata:
+  title: Deploy and use Azure Container Registry
+  description: Learn how to create a private registry service for building, storing, and managing container images and related artifacts.
+  ms.date: 04/01/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: azure-kubernetes-service
+title: Deploy and use Azure Container Registry
+summary: Learn how to create a private registry service for building, storing, and managing container images and related artifacts.
+abstract: |
+  After completing this module, you'll be able to:
+  -   Create an Azure container registry instance with the Azure portal.
+  -   Sign-in to the registry instance using the Azure CLI on your local machine.
+  -   Push an image to the registry instance.
+  -   Remove the image from your local Docker environment. View the image in your registry.
+  -   Pull and run the container image from your container registry.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.deploy-use-azure-container-registry.introduction
+- learn.wwl.deploy-use-azure-container-registry.create-container-registry
+- learn.wwl.deploy-use-azure-container-registry.log-container-registry
+- learn.wwl.deploy-use-azure-container-registry.push-image-registry
+- learn.wwl.deploy-use-azure-container-registry.view-container-images
+- learn.wwl.deploy-use-azure-container-registry.run-image-from-registry
+- learn.wwl.deploy-use-azure-container-registry.create-virtual-network
+- learn.wwl.deploy-use-azure-container-registry.knowledge-check
+- learn.wwl.deploy-use-azure-container-registry.summary
+badge:
+  uid: learn.wwl.deploy-use-azure-container-registry.badge

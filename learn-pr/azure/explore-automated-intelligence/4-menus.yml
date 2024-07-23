@@ -4,11 +4,10 @@ title: Menus - Searching for the right decision with optimization algorithms
 metadata:
   title: Menus - Searching for the right decision with optimization algorithms
   description: We explain menus when introducing Automated decision methods.
-  ms.date: 10/14/2022
+  ms.date: 07/10/2024
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-menus.md)]

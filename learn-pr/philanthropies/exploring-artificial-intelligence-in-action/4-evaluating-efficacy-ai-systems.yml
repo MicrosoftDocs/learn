@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.exploring-artificial-intelligence-in-action.evaluating-efficacy-ai-systems
+title: Evaluating the efficacy of AI systems
+metadata:
+  title: Evaluating the efficacy of AI systems
+  description: Using an AI system requires understanding of how the system works, what the system's capabilities are, and how to achieve the system's best performance.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 01/25/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-evaluating-efficacy-ai-systems.md)]

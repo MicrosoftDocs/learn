@@ -2,22 +2,30 @@
 uid: learn.wwl.configure-virtual-machines
 metadata:
   title: Configure virtual machines
-  description: "Configure virtual machines"
-  ms.date: 12/22/2022
+  description: You will learn to configure virtual machines including sizing, storage, and connections.
+  ms.date: 11/15/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ai-usage: ai-assisted
+  ms.service: azure-virtual-network
 title: Configure virtual machines
-summary: Learn how to configure virtual machines including sizing, storage, and connections.
+summary: |
+  Learn how to configure virtual machines including sizing, storage, and connections.
 abstract: |
   In this module, you learn how to:
-  - Create a virtual machine planning checklist.
-  - Determine virtual machine locations and pricing models.
-  - Determine the correct virtual machine size.
-  - Configure virtual machine storage.
+  *   Determine the responsibilities of cloud service providers and customers in a cloud computing environment.
+  *   Identify the key considerations and factors involved in planning for virtual machines. Considerations include workload requirements, resource allocation, and secure access.
+  *   Configure virtual machine storage and virtual machine sizing.
+  *   Create a virtual machine in the Azure portal.
+  *   Practice deploying an Azure virtual machine and verify the configuration.
 prerequisites: |
-  None
+  - Cloud computing concepts. Familiarity with Infrastructure as a Service (IaaS), virtualization, and resource provisioning in a cloud environment.
+  - Azure fundamentals. Understanding of basic Azure concepts, including Azure subscriptions, resource groups, and storage accounts.
+  - Networking fundamentals. Knowledge of basic networking concepts, including IP addressing, virtual networks, and subnets.
+  - Azure portal. Ability to create and configure resources in the Azure portal.
 iconUrl: /training/achievements/virtual-machines-configure.svg
 levels:
 - intermediate

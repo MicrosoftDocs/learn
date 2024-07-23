@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.security-public-access-azure-resources
+metadata:
+  title: Plan and implement security for public access to Azure resources
+  description: "Plan and implement security for public access to Azure resources"
+  ms.date: 06/25/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: module-intro-to-product
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Plan and implement security for public access to Azure resources
+summary: This module empowers admins to plan and implement strong security for Azure resources, ensuring app/service confidentiality, integrity, and availability.
+abstract: |
+  -   Develop strategies for secure public access to Azure resources, preventing unauthorized access and breaches.
+
+  -   Implement TLS for Azure App Service and API Management to encrypt data in transit.
+
+  -   Protect network traffic with Azure Firewall and Application Gateway for optimized web application security and delivery.
+
+  -   Enhance web app performance with Azure Front Door and CDN, and deploy WAF and DDoS Protection for robust defense against attacks.
+prerequisites: '-   None'
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure-app-service
+- azure-application-gateway
+- azure-ddos-protection
+- azure-firewall-manager
+- azure-front-door
+- azure-web-application-firewall
+subjects:
+- security
+units:
+- learn.wwl.security-public-access-azure-resources.introduction
+- learn.wwl.security-public-access-azure-resources.plan-implement-transport-layer-security
+- learn.wwl.security-public-access-azure-resources.azure-firewall-azure-firewall-manager-firewall-policies
+- learn.wwl.security-public-access-azure-resources.azure-application-gateway
+- learn.wwl.security-public-access-azure-resources.azure-web-application-firewall
+- learn.wwl.security-public-access-azure-resources.front-door-content-development-network
+- learn.wwl.security-public-access-azure-resources.azure-distributed-denial-of-service-protection
+- learn.wwl.security-public-access-azure-resources.knowledge-check
+- learn.wwl.security-public-access-azure-resources.summary
+badge:
+  uid: learn.wwl.security-public-access-azure-resources.badge

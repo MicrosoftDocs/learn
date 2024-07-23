@@ -3,11 +3,10 @@ uid: learn.control-access-to-azure-storage-with-sas.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 03/06/2020
-  author: tamram
-  ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/13/2023
+  author: normesta
+  ms.author: normesta
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 2
 content: |

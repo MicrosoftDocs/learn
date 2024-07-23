@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-ai.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 04/08/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-summary.md)]

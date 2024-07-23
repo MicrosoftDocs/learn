@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.responsible-ai-dashboard
+title: What is a Responsible AI dashboard? 
+metadata:
+  title: What is a Responsible AI dashboard? 
+  description: "Learn about Responsible AI dashboard"
+  ms.date: 11/03/2023
+  author: lgayhardt
+  ms.author: lagayhar
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-responsible-ai-dashboard.md)]

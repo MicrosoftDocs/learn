@@ -2,12 +2,12 @@
 uid: learn.wwl.implement-business-continuity-disaster-recovery-backup
 metadata:
   title: Implement business continuity, disaster recovery, and backup for SAP HANA on Azure (Large Instances)
-  description: "This module investigates business continuity, disaster recovery, and backup of SAP HANA on Azure (Large Instances). Prepare for Exam AZ-120: Planning and Administering Microsoft Azure for SAP Workloads."
+  description: 'This module investigates business continuity, disaster recovery, and backup of SAP HANA on Azure (Large Instances). Prepare for Exam AZ-120: Planning and Administering Microsoft Azure for SAP Workloads.'
   ms.date: 06/30/2022
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: sap-on-azure
 title: Implement business continuity, disaster recovery, and backup for SAP HANA on Azure (Large Instances)
 summary: Investigate business continuity, disaster recovery, and backup of SAP HANA on Azure (Large Instances).
 abstract: |
@@ -28,7 +28,7 @@ roles:
 products:
 - azure
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.wwl.implement-business-continuity-disaster-recovery-backup.introduction
 - learn.wwl.implement-business-continuity-disaster-recovery-backup.explore-snapshot-strategies

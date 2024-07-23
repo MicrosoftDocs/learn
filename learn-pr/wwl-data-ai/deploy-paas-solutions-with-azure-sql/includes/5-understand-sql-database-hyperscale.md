@@ -35,8 +35,8 @@ Security for Hyperscale service tier shares the same great capabilities as the o
 
 - **Access Management** is provided through the below authentication methods to ensure a user is whom they claim to be:
     - SQL Authentication
-    - Azure Active Directory Authentication
-    - Windows Authentication for Azure AD Principals (Preview)
+    - Microsoft Entra authentication
+    - Windows Authentication for Microsoft Entra Principals (Preview)
 
     Azure SQL Database Hyperscale also supports Row-Level security.  Row-Level Security enables customers to control access to rows in a database table based on the characteristics of the user executing a query (for example, group membership or execution context).
 

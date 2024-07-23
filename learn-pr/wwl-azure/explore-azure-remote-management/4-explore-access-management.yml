@@ -4,11 +4,10 @@ title: Explore access management
 metadata:
   title: Explore access management
   description: "Explore access management"
-  ms.date: 04/21/2023
+  ms.date: 10/17/2023
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/4-explore-access-management.md)]

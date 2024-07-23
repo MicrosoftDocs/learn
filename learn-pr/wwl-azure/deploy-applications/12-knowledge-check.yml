@@ -4,35 +4,48 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/04/2023
+  ms.date: 06/07/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/12-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Northwind Traders is deploying both Win32 apps and LOB apps. During deployment, the company no longer wants to be limited to a single MSI installation file, and it wants to use one tool to deploy both types of apps. Which tool should Northwind Traders use that meets these requirements?"
+  - content: "A team member is trying to update a Microsoft Store Win32 app that was manually installed on their device. They're unsure if Intune will manage the update. What should they expect?"
     choices:
-    - content: "Intune Management Extension"
+    - content: "Intune will uninstall the manually installed app before managing the update."
+      isCorrect: false
+      explanation: "Incorrect. Intune doesn't need to uninstall the app before taking over its management."
+    - content: "Intune will take over the management of the app without needing to reinstall it."
       isCorrect: true
-      explanation: "Correct. With the Intune Management Extension, deployment is no longer limited to a single MSI installation file. When deploying both Win32 apps and LOB apps, consider using the Intune Management Extension exclusively. Deploying both types during an Autopilot enrollment may fail."
-    - content: "Autopilot"
+      explanation: "Correct. When a Microsoft Store Win32 app is already installed, Intune can take over the management of the application."
+    - content: "Intune won't manage the update because the app was manually installed."
       isCorrect: false
-      explanation: "Incorrect. Deploying both Win32 apps and LOB apps during an Autopilot enrollment may fail. Try again."
-    - content: "Configuration Manager"
-      isCorrect: false
-      explanation: "Incorrect. Configuration Manager is limited to a single MSI installation file. Try again."
-  - content: "What are the five phases in the Microsoft Intune application lifecycle?"
+      explanation: "Incorrect. Intune can take over the management of a manually installed Microsoft Store Win32 app."
+  - content: "A company's IT administrator needs to assign an app to a group of users whose devices aren't enrolled with Intune. Which option should the administrator select?"
     choices:
-    - content: "Add, Deploy, Configure, Conditional Access, and Retire"
-      isCorrect: false
-      explanation: "Incorrect. These items aren't the five phases in the Microsoft Intune application lifecycle. Try again."
-    - content: "Add, Deploy, Versioning, Protect, and Retire"
-      isCorrect: false
-      explanation: "Incorrect. These items aren't the five phases in the Microsoft Intune application lifecycle. Try again."
-    - content: "Add, Deploy, Configure, Protect, and Retire"
+    - content: "Available with or without enrollment"
       isCorrect: true
-      explanation: "Correct. The Microsoft Intune app lifecycle begins when an app is added and progresses through additional phases until you retire the app."
+      explanation: "Correct. The 'Available with or without enrollment' option allows the administrator to assign apps to groups of users whose devices aren't enrolled with Intune."
+    - content: "Assign to devices"
+      isCorrect: false
+      explanation: "Incorrect. The 'Assign to devices' option isn't supported for devices not enrolled with Intune."
+    - content: "Required"
+      isCorrect: false
+      explanation: "Incorrect. The 'Required' option isn't supported for devices not enrolled with Intune."
+  - content: "An IT admin wants to manage the client apps that their company's workforce uses. They have identified the apps they want to manage and assign, and added them to Intune. What is the next step in the Microsoft Intune app lifecycle?"
+    choices:
+    - content: "Retire the apps from service."
+      isCorrect: false
+      explanation: "Incorrect. Retiring the apps from service is the final step in the Microsoft Intune app lifecycle, not the next step after adding the apps."
+    - content: "Protect the data in the apps."
+      isCorrect: false
+      explanation: "Incorrect. Protecting the data in the apps is a later step in the Microsoft Intune app lifecycle, not the next step after adding the apps."
+    - content: "Deploy the apps to users and devices."
+      isCorrect: true
+      explanation: "Correct. After adding the apps to Intune, the next step in the Microsoft Intune app lifecycle is to deploy the apps to users and devices."

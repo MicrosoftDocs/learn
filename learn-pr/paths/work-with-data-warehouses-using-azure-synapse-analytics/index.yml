@@ -3,12 +3,10 @@ uid: learn.wwl.work-with-data-warehouses-using-azure-synapse-analytics
 metadata:
   title: Work with Data Warehouses using Azure Synapse Analytics
   description: Learn how to use Azure Synapse Analytics to implement highly scalable data warehouses in the cloud.
-  ms.date: 02/09/2023
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.service: synapse-analytics
+  ms.topic: learning-path
 title: Work with Data Warehouses using Azure Synapse Analytics
 prerequisites: |
   Before starting this learning path, you should be familiar with Azure Synapse Analytics. Consider completing the [Introduction to Azure Synapse Analytics](/training/modules/introduction-azure-synapse-analytics/) module first.
@@ -22,12 +20,11 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
-- data-warehousing
+- data-storage
 modules:
 - learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads
 - learn.wwl.load-data-into-relational-data-warehouse
 - learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics
-- learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics
 - learn.wwl.secure-data-warehouse-azure-synapse-analytics
 trophy:
   uid: learn.wwl.work-with-data-warehouses-using-azure-synapse-analytics.trophy

@@ -3,12 +3,11 @@ uid: learn.startups.pitch-company.deliver-compelling-pitch
 title: Deliver a compelling pitch
 metadata:
   title: Deliver a compelling pitch
-  description: In this unit, you'll learn the attributes of successful pitches, including tips for making PowerPoint presentations.
-  ms.date: 02/11/2022
-  author: ryanmesches
-  ms.author: ryanmesches
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  description: Learn the attributes of successful pitches, including tips for making PowerPoint presentations.
+  ms.date: 04/22/2024
+  author: vhawk85
+  ms.author: vahughes
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/4-deliver-compelling-pitch.md)]

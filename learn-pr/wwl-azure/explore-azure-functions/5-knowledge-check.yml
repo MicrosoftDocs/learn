@@ -4,34 +4,46 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/06/2023
+  ms.date: 07/09/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following Azure Functions hosting plans is best when predictive scaling and costs are required?"
-    choices:
-    - content: "Functions Premium Plan"
-      isCorrect: false
-      explanation: "That's incorrect. The Premium Plan does support scaling, but it isn't predictive."
-    - content: "Dedicated plan"
-      isCorrect: true
-      explanation: "That's correct. Dedicated plans run in App service which supports setting autoscaling rules based on predictive usage."
-    - content: "Consumption plan"
-      isCorrect: false
-      explanation: "That's incorrect. The Consumption plan does support scaling, but it isn't predictive."
   - content: "An organization wants to implement a serverless workflow to solve a business problem. One of the requirements is the solution needs to use a designer-first (declarative) development model. Which of the choices below meets the requirements?"
     choices:
     - content: "Azure Functions"
       isCorrect: false
-      explanation: "That's incorrect. Azure Functions uses a code-first (imperative) development model."
+      explanation: "Incorrect. Azure Functions uses a code-first (imperative) development model."
     - content: "Azure Logic Apps"
       isCorrect: true
-      explanation: "That's correct. Azure Logic Apps enables serverless workloads and uses a designer-first (declarative) development model."
+      explanation: "Correct. Azure Logic Apps enables serverless workloads and uses a designer-first (declarative) development model."
     - content: "WebJobs"
       isCorrect: false
-      explanation: "That's incorrect. WebJobs are a code-first (imperative) development model."
+      explanation: "Incorrect. WebJobs are a code-first (imperative) development model."
+  - content: "What is a key benefit of the Flex Consumption plan in Azure Functions hosting options?"
+    choices:
+    - content: "It provides fully predictable billing and manual scale instances."
+      isCorrect: false
+      explanation: "Incorrect. This is a feature of the Dedicated plan, not the Flex Consumption plan."
+    - content: "It offers high scalability with compute choices, virtual networking, and pay-as-you-go billing."
+      isCorrect: true
+      explanation: "Correct. The Flex Consumption plan provides high scalability, compute choices, virtual networking, and pay-as-you-go billing."
+    - content: "It allows for the packaging of custom libraries with function code."
+      isCorrect: false
+      explanation: "Incorrect. This is a feature of Container Apps, not the Flex Consumption plan."
+  - content: "What is the maximum number of instances for a function app on a Consumption plan in Windows?"
+    choices:
+    - content: "300"
+      isCorrect: false
+      explanation: "Incorrect. This is the maximum number of instances for Container Apps, not a function app on a Consumption plan in Windows."
+    - content: "100"
+      isCorrect: false
+      explanation: "Incorrect. This is the maximum number of instances for a function app on a Consumption plan in Linux, not Windows."
+    - content: "200"
+      isCorrect: true
+      explanation: "Correct. The maximum number of instances for a function app on a Consumption plan in Windows is 200."

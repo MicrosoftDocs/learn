@@ -1,27 +1,27 @@
 ### YamlMime:Module
 uid: learn-pr.azure.manage-azure-stack-hci-storage
 metadata:
-  title: 'Plan and implement Azure Stack HCI storage'
+  title: Plan and implement Azure Stack HCI storage
   description: Microsoft Azure Stack HCI provides highly resilient and performant software-defined storage.
+  manager: femila
   ms.date: 03/30/2022
-  author: mpolicht
-  ms.author: nedelgad
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: 'Plan and implement Azure Stack HCI storage'
-summary: Plan and implement Azure Stack HCI storage.
-abstract:  | 
-  After completing this module, you’ll be able to:
+  author: JasonGerend
+  ms.author: jgerend
+  ms.topic: module
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hci
+title: Plan and implement Azure Stack HCI storage
+summary: Microsoft Azure Stack HCI provides highly resilient and performant software-defined storage. In this module, you'll learn how to plan and implement Azure Stack HCI storage.
+abstract: |
+  After completing this module, you'll be able to:
   - Plan for and implement Azure Stack HCI storage.
   - Manage Azure Stack HCI storage.
-  
 prerequisites: |
   To get the best learning experience from this module, you should have:
   - A good understanding of storage technologies and their implementation on the Windows operating system platform
   - General familiarity with software-defined storage concepts
   - General familiarity with software-defined storage on Azure Stack HCI
   - Experience in implementing Azure Stack HCI
-  
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

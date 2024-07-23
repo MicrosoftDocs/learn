@@ -1,12 +1,21 @@
 
 [MITRE ATT&CK](https://attack.mitre.org/#) is a publicly accessible knowledge base of tactics and techniques that are commonly used by attackers, and is created and maintained by observing real-world observations. Many organizations use the MITRE ATT&CK knowledge base to develop specific threat models and methodologies that are used to verify security status in their environments.
 
+## ATT&CK matrices
+
+[MITRE ATT&CK](https://attack.mitre.org/) includes three matrices in its attack framework. Each matrix is a threat model with multiple tactics or goals along with techniques for achieving those goals in a specific type of environment:
+
+* Enterprise - a threat model that describes what an attacker might do in a corporate network. 
+* Mobile - a threat model that describes what an attacker might do to infiltrate mobile devices.
+* ICS - a threat model that describes potential attacks on an Industrial Control System (ICS).
+
+## MITRE ATT&CK and Microsoft Sentinel
+
 Microsoft Sentinel analyzes ingested data, not only to detect threats and help you investigate, but also to visualize the nature and coverage of your organization's security status.
 
 This article describes how to use the **MITRE** page in Microsoft Sentinel to view the detections already active in your workspace, and those available for you to configure, to understand your organization's security coverage, based on the tactics and techniques from the MITRE ATT&CK® framework.
 
-  
-![Screenshot of the MITRE coverage page with both active and simulated indicators selected.](../media/mitre-coverage.png)
+:::image type="content" source="../media/mitre-coverage.png" alt-text="Screenshot of the MITRE coverage page with both active and simulated indicators selected." lightbox="../media/mitre-coverage.png":::
 
 Microsoft Sentinel is currently aligned to The MITRE ATT&CK framework, version 9.
 

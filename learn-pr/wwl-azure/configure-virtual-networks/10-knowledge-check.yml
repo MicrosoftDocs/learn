@@ -4,47 +4,48 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/12/2023
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "For the Sale department subnet range, which IP address can be dynamically assigned?"
+  - content: "Which of the following statements about Azure virtual networks is correct?"
     choices:
-    - content: "10.3.0.2"
+    - content: "Each virtual network has only one subnet."
       isCorrect: false
-      explanation: "Incorrect. Azure reserves the first four addresses in each subnet address range. These four addresses can't be assigned to resources: 10.3.0.0-10.3.0.3."
-    - content: "10.3.255.255"
-      isCorrect: false
-      explanation: "Incorrect. The subnet broadcast address can't be assigned."
-    - content: "10.3.255.254"
-      isCorrect: true
-      explanation: "Correct. Any address in the range 10.3.0.4 through 10.3.255.254 is available for assignment."
-  - content: "What feature can support the denial of traffic based on the IP address range?"
-    choices:
-    - content: "Statically assigned IP addresses"
-      isCorrect: true
-      explanation: "Correct. In this situation, use statically assigned IP addresses to avoid having to change the firewall rules."
-    - content: "Dynamically assigned IP addresses"
-      isCorrect: false
-      explanation: "Incorrect. Dynamically assigned IP addresses require firewall rules to be changed."
-    - content: "IP addresses in the reserved range"
-      isCorrect: false
-      explanation: "Incorrect. IP addresses in the reserved range can't be used."
-  - content: "Which of the following statements about Azure Virtual Network is correct?"
-    choices:
-    - content: "Outbound communication with the internet must be configured for each resource on the virtual network."
-      isCorrect: false
-      explanation: "Incorrect. All resources in a virtual network can communicate outbound to the internet, by default."
-    - content: "Azure Virtual Network enables communication between Azure resources."
-      isCorrect: true
-      explanation: "Correct. Azure Virtual Network connects Azure resources including virtual machines, the Azure App Service Environment, Azure Kubernetes Service (AKS), and Azure Virtual Machine Scale Sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts."
+      explanation: "Incorrect. Virtual networks can include multiple subnets provided the IP ranges are correct."
     - content: "Azure virtual networks can't be configured to communicate with on-premises resources."
       isCorrect: false
-      explanation: "Incorrect. You can connect your on-premises computers and networks to a virtual network by using a Point-to-site virtual private network (VPN), Site-to-site VPN, or Azure ExpressRoute."
+      explanation: "Incorrect. You can connect your on-premises computers and networks to a virtual network."
+    - content: "Azure virtual networks enable communication between Azure resources."
+      isCorrect: true
+      explanation: "Correct. Virtual Networks can connect Azure resources including virtual machines."
+  - content: "Which situation is appropriate for a public IP address?"
+    choices:
+    - content: "Virtual machines accessed from the Internet."
+      isCorrect: true
+      explanation: "Correct. Public IP addresses enable Azure resources to communicate to Internet and public-facing Azure services."
+    - content: "Virtual machines used as internal load balancers."
+      isCorrect: false
+      explanation: "Incorrect. Public IP addresses shouldn't be assigned to internal virtual machines."
+    - content: "Virtual machines running production workloads."
+      isCorrect: false
+      explanation: "Incorrect. Public IP addresses shouldn't be assigned to private virtual machines."
+  - content: "When does a dynamic IP address change?"
+    choices:
+    - content: "In Azure, when a virtual machine is stopped and then restarted."
+      isCorrect: true
+      explanation: "Correct. The dynamic IP address changes."
+    - content: "In the guest OS, when a virtual machine is rebooted or stopped."
+      isCorrect: false
+      explanation: "Incorrect. The dynamic IP address doesn't change."
+    - content: "Each time the virtual machine is accessed."
+      isCorrect: false
+      explanation: "Incorrect. The dynamic IP address doesn't change."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-container-registry-container-app-deployments.review-azure-container-registry-service
+title: Review the Azure Container Registry service
+metadata:
+  title: Review the Azure Container Registry service
+  description: "Review the Azure Container Registry service"
+  ms.date: 11/22/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-review-azure-container-registry-service.md)]

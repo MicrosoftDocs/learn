@@ -4,13 +4,12 @@ title: Use string variables and methods in Windows PowerShell scripts
 metadata:
   title: Use string variables and methods in Windows PowerShell scripts
   description: "Use string variables and methods in Windows PowerShell scripts"
-  ms.date: 11/10/2022
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-use-string-variables-methods.md)]

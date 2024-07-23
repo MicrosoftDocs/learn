@@ -2,13 +2,13 @@
 uid: learn.quantum.estimate-resources-quantum-algorithms.resource-estimation-in-quantum-computing
 title: Resource estimation in quantum computing
 metadata:
-  title: Resource estimation in quantum computing
+  title: Resource Estimation in Quantum Computing
   description: Learn what resource estimation is and why it is important in quantum computing.
-  ms.date: 02/08/2023
+  ms.date: 06/05/2024
   author: SoniaLopezBravo
   ms.author: sonialopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: tedhudek
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-resource-estimation-in-quantum-computing.md)]

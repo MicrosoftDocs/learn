@@ -1,4 +1,3 @@
-
 Now that you have reviewed this module, you should be able to:
 
 - Define common identity terms and explain how they're used in the Microsoft Cloud
@@ -11,7 +10,7 @@ Now that you have reviewed this module, you should be able to:
 Use these resources to discover more:
 
 - [JSON Web Tokens site?](https://jwt.io/)
-- [Compare Active Directory Domain Service to Azure Active Directory](/azure/active-directory-domain-services/compare-identity-solutions)
-- [What is Identity Lifecycle Management in Azure AD](/azure/active-directory/governance/what-is-identity-lifecycle-management)
+- [Compare Active Directory Domain Service to Microsoft Entra ID](/azure/active-directory-domain-services/compare-identity-solutions)
+- [What is Identity Lifecycle Management in Microsoft Entra ID](/azure/active-directory/governance/what-is-identity-lifecycle-management)
 - [Decentralized Identity - Verifiable Credentials](/azure/active-directory/verifiable-credentials/)
 

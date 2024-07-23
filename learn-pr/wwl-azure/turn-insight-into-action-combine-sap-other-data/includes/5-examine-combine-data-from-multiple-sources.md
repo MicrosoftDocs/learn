@@ -2,14 +2,14 @@ To help your business select vendors, you need quality data and on-time delivery
 
 1. You’ve set up an Azure Synapse Studio workspace.
 2. You’ve created a link to your SAP Business Warehouse to bring in vendor purchase data.
-3. You’ve created a link to your Cosmos DB to bring in vendor quality data. 
-4. Next you’ll ingest and combine that data. This critical step enables you to run historical analysis and predictive analytics on your joined records. 
+3. You’ve created a link to your Cosmos DB to bring in vendor quality data.
+4. Next you’ll ingest and combine that data. This critical step enables you to run historical analysis and predictive analytics on your joined records.
 
 Now it’s time to use the dedicated SQL pool that Azure Synapse Studio workspace created automatically during setup.
 
 ## SQL scripts and pipelines
 
-Because you’re working with a dedicated SQL pool for storing the combined data, you’ll use the SQL scripts capability in Synapse Studio to author SQL queries. The flexible SQL script web interface enables you to develop new scripts, use or modify existing scripts, and select scripts from a gallery of samples. 
+Because you’re working with a dedicated SQL pool for storing the combined data, you’ll use the SQL scripts capability in Synapse Studio to author SQL queries. The flexible SQL script web interface enables you to develop new scripts, use or modify existing scripts, and select scripts from a gallery of samples.
 
 Pipelines in Azure Synapse Analytics perform data integration, similar to the Azure Data Factory service. The pipeline pulls the data into your dedicated SQL pool. The SQL pool serves as your data source for native Transact-SQL (T-SQL) analytics and predictive analytics using the PREDICT function. Transact-SQL (T-SQL) is a proprietary Microsoft extension to SQL that enables interaction with relational databases.
 

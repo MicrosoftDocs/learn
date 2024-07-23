@@ -2,12 +2,13 @@
 uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.8-summary
 metadata:
   title: Summary
-  description: Summary of the lesson about how to build an AI model to predict types of space rocks in images. 
-  ms.date: 05/24/2021
+  description: Summary of the lesson about how to build an AI model to predict types of space rocks in images.
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 05/24/2021
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Summary
 durationInMinutes: 1

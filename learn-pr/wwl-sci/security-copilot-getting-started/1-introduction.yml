@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.security-copilot-getting-started.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Get started with Microsoft Security Copilot, an AI-powered, cloud-based security analysis tool that enables analysts to respond to threats quickly, process signals at machine speed, and assess risk more quickly than may otherwise be possible."
+  ms.date: 10/31/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

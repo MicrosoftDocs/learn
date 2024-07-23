@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-compute-gallery.what-is-azure-compute-gallery
+title: What is Azure Compute Gallery?
+metadata:
+  title: What is Azure Compute Gallery?
+  description: In this unit, you'll learn about what purpose Azure Compute Gallery serves.
+  ms.date: 08/16/2023
+  author: tomvcassidy
+  ms.author: tomcassidy
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-what-is-azure-compute-gallery.md)]

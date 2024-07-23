@@ -4,12 +4,11 @@ title: Lab - Use functions in TypeScript
 metadata:
   title: Lab - Use functions in TypeScript
   description: Apply what you've learned to convert JavaScript functions to TypeScript functions.
-  ms.date: 02/11/2021
+  ms.date: 01/09/2023
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom: team=nextgen, devx-track-js, devx-track-ts
 durationInMinutes: 20
 content: |
   [!include[](includes/7-functions-lab.md)]

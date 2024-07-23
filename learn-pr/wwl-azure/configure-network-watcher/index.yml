@@ -3,18 +3,24 @@ uid: learn.wwl.configure-network-watcher
 metadata:
   title: Configure Network Watcher
   description: "You'll learn how to configure Network Watcher and troubleshoot common networking problems."
-  ms.date: 04/06/2023
+  ms.date: 01/24/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: network-watcher
+  ai-usage: ai-assisted
 title: Configure Network Watcher
-summary: You'll learn how to configure Network Watcher and troubleshoot common networking problems.
+summary: |
+  You learn how to configure Network Watcher and troubleshoot common networking problems.
 abstract: |
   After completing this module, you'll be able to:
-  - Identify the features and usage cases for Azure Network Watcher.
-  - Configure diagnostic capabilities like IP Flow Verify, Next Hop, and Network Topology.
+  *   Identify the features and usage cases for Azure Network Watcher.
+  *   Configure diagnostic capabilities like IP Flow Verify, Next Hop, and Network Topology.
 prerequisites: |
-  None
+  - Knowledge of Azure networking features such as virtual networks and traffic routes.
+  - Familiarity with how to systematically troubleshoot an issue.
 iconUrl: /training/achievements/network-watcher-configure.svg
 levels:
 - intermediate

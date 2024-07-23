@@ -3,17 +3,18 @@ uid: learn.azure.create-batch-account-using-azure-portal
 metadata:
   title: Create an Azure Batch account by using the Azure portal
   description: Azure Batch is a service that enables you to run large-scale parallel and high-performance computing (HPC) applications efficiently in the cloud. There's no need to manage or configure infrastructure. Just schedule the job, allocate the resources you need, and let Batch take care of the rest.
-  ms.date: 12/21/2022
-  author: prkannap
-  ms.author: prkannap
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: mkluck
+  ms.date: 04/01/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: module-standard-task-based
+  ms.service: batch 
 title: Create an Azure Batch account by using the Azure portal
 summary: Azure Batch is a service that enables you to run large-scale parallel and high-performance computing (HPC) applications efficiently in the cloud. There's no need to manage or configure infrastructure. Just schedule the job, allocate the resources you need, and let Batch take care of the rest.
 abstract: | 
   After you complete this module, you'll be able to:
-  - Create an Azure Batch job by using the Azure portal
-  - Run an Azure Batch job by using the Azure portal  
+  - Create an Azure Batch job by using the Azure portal.
+  - Run an Azure Batch job by using the Azure portal.
 prerequisites: | 
   - Working knowledge of Azure and the Azure portal
   - Familiarity with Azure Batch accounts

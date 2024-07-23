@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.data-biases
+title: Expose data biases
+metadata:
+  title: Expose data biases
+  description: "Expose data biases"
+  ms.date: 11/03/2023
+  author: lgayhardt
+  ms.author: lagayhar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-data-biases.md)]

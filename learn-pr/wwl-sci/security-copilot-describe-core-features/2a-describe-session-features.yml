@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-core-features.describe-session-features
+title: Describe the features available in a session of the standalone experience
+metadata:
+  title: Describe the features available in a session of the standalone experience
+  description: "Describe the features available in a session of the standalone experience"
+  ms.date: 03/25/2024
+  author: wwlpublish  
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2a-describe-session-features.md)]

@@ -4,11 +4,11 @@ title: Exercise - View and manage an Azure custom role
 metadata:
   title: Exercise - View and manage an Azure custom role
   description: Learn how to manage an Azure custom role
-  ms.date: 02/10/2020
+  ms.date: 09/23/2022
   author: rolyon
   ms.author: rolyon
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-azurecli
 durationInMinutes: 7
 azureSandbox: false
 content: |

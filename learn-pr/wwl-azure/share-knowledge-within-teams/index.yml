@@ -2,21 +2,21 @@
 uid: learn.wwl.share-knowledge-within-teams
 metadata:
   title: Share knowledge within teams
-  description: "Share knowledge within teams"
-  ms.date: 02/10/2023
+  description: Share knowledge within teams
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ai-usage: human-only
+  ms.service: azure-devops-repos
 title: Share knowledge within teams
 summary: This module describes how to share knowledge within teams, Azure DevOps Wikis, and integration with Azure Boards.
 abstract: |
-  By the end of this module, you'll be able to:
-  *   Share knowledge with development teams
-  *   Work with Azure DevOps Wikis
-  *   Integrate with Azure Boards
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+  -   Share knowledge with development teams
+  -   Work with Azure DevOps Wikis
+  -   Integrate with Azure Boards
+prerequisites: None
 iconUrl: /training/achievements/4-share-knowledge-within-teams.svg
 levels:
 - advanced
@@ -44,9 +44,8 @@ subjects:
 units:
 - learn.wwl.share-knowledge-within-teams.introduction
 - learn.wwl.share-knowledge-within-teams.share-acquired-development-teams
-- learn.wwl.share-knowledge-within-teams.introduction-to-azure-devops-project-wikis
-- learn.wwl.share-knowledge-within-teams.integrate-azure-boards
-- learn.wwl.share-knowledge-within-teams.integrate-azure-devops-teams
+- learn.wwl.share-knowledge-within-teams.introduction-azure-devops-project-wikis
+- learn.wwl.share-knowledge-within-teams.integrate-github-azure-devops-microsoft-teams
 - learn.wwl.share-knowledge-within-teams.share-team-knowledge-azure-project-wiki
 - learn.wwl.share-knowledge-within-teams.knowledge-check
 - learn.wwl.share-knowledge-within-teams.summary

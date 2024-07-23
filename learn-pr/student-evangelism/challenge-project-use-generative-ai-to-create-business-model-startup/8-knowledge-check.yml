@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.challenge-project-use-generative-ai-to-create-business-model-startup.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check with Microsoft Copilot.
+  author: juliamuiruri4
+  ms.author: juliamuiruri
+  ms.date: 12/4/2023
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which is not a conversation style supported by Microsoft Copilot?"
+    choices:
+    - content: "More Creative"
+      isCorrect: false
+      explanation: "Microsoft Copilot can be set to More Creative that encourages it to use more expressive language, use humor or emotion, and generate different types of content"
+    - content: "More Professional"
+      isCorrect: true
+      explanation: "Microsoft Copilot doesn't have a More Professional conversation style. Instead, it can be set to More Precise to focus on clarity and accuracy "
+    - content: "More Balanced"
+      isCorrect: false
+      explanation: "Microsoft Copilot can be set to More Balanced that balances creativity and precision"
+  - content: "How does Microsoft Copilot use natural language understanding to assist users?"
+    choices:
+    - content: "It allows users to ask questions in plain English and get direct answers from Copilot."
+      isCorrect: false
+      explanation: "Microsoft Copilot doesn't directly answer the user’s questions, but rather provides relevant information that can help the user find the answer."
+    - content: "It analyzes the context and intent of the user’s query and provides suggestions and insights from Bing."
+      isCorrect: true
+      explanation: "Microsoft Copilot uses natural language understanding to understand what the user is looking for and what kind of information they need"
+    - content: "It translates the user’s query into different languages and shows results from Bing in those languages."
+      isCorrect: false
+      explanation: "Microsoft Copilot doesn't translate the user’s query, but rather shows results from Bing in the same language as the user’s query"

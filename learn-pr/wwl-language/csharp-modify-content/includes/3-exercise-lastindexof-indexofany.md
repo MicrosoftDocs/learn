@@ -1,6 +1,3 @@
-
-
-
 In this exercise, you use the `IndexOfAny()` method to find the first location of any of the `string` from selected array. You also use `LastIndexOf()` to find the final location of a string within another string.
 
 ### Retrieve the last occurrence of a sub string
@@ -31,7 +28,7 @@ You increase the complexity of the `message` variable by adding many sets of par
 
 ### Retrieve all instances of substrings inside parentheses
 
-This time, you update the `message` to have three sets of parentheses, and you write code to extract any text inside of the parentheses. You're able to reuse portions of the previous work, but need to add a `while` statement to iterate through the string until all sets of parentheses are discovered, extracted, and displayed.
+This time, update the `message` to have three sets of parentheses, and write code to extract any text inside of the parentheses. You're able to reuse portions of the previous work, but you need to add a `while` statement to iterate through the string until all sets of parentheses are discovered, extracted, and displayed.
 
 1. Update your code in the Visual Studio Code Editor as follows:
 
@@ -67,7 +64,7 @@ This time, you update the `message` to have three sets of parentheses, and you w
     message = message.Substring(closingPosition + 1);
     ```
 
-    When you use `Substring()` without specifying a length input parameter, it will return every character after the starting position you specify. Since `message = "(What if) there are (more than) one (set of parentheses)?"` there's advantage to removing the first set of parentheses `(What if)` from the value of `message`. What remains is then processed in the next iteration of the `while` loop.
+    When you use `Substring()` without specifying a length input parameter, it will return every character after the starting position you specify. With the string being processed, `message = "(What if) there are (more than) one (set of parentheses)?"`, there's an advantage to removing the first set of parentheses `(What if)` from the value of `message`. What remains is then processed in the next iteration of the `while` loop.
 
 1. Take a minute to consider what happens during the final iteration of the `while` loop, when only the final `?` character remains.
 
@@ -82,9 +79,9 @@ This time, you update the `message` to have three sets of parentheses, and you w
 
 ### Work with different types of symbol sets
 
-This time, you search for several different symbols, not just a set of parentheses.
+This time, search for several different symbols, not just a set of parentheses.
 
-You update the `message` string, adding different types of symbols like square `[]` brackets and curly braces `{}`. To search for multiple symbols simultaneously, use on `.IndexOfAny()`. You search with `.IndexOfAny()` to return the index of the first symbol from the array `openSymbols` found in the `message` string.
+Update the `message` string, adding different types of symbols like square `[]` brackets and curly braces `{}`. To search for multiple symbols simultaneously, use `.IndexOfAny()`. You search with `.IndexOfAny()` to return the index of the first symbol from the array `openSymbols` found in the `message` string.
 
 1. Update your code in the Visual Studio Code editor as follows:
 
@@ -92,22 +89,22 @@ You update the `message` string, adding different types of symbols like square `
     string message = "Help (find) the {opening symbols}";
     Console.WriteLine($"Searching THIS Message: {message}");
     char[] openSymbols = { '[', '{', '(' };
-    int startPosition = 6;
+    int startPosition = 5;
     int openingPosition = message.IndexOfAny(openSymbols);
     Console.WriteLine($"Found WITHOUT using startPosition: {message.Substring(openingPosition)}");
-    
+
     openingPosition = message.IndexOfAny(openSymbols, startPosition);
-    Console.WriteLine($"Found WITH using startPosition: {message.Substring(openingPosition)}");
+    Console.WriteLine($"Found WITH using startPosition {startPosition}:  {message.Substring(openingPosition)}");
     ```
 
-1. Save your code file, and then use Visual Studio Code to run your code. 
+1. Save your code file, and then use Visual Studio Code to run your code.
 
     You should see the following output:
 
     ```output
     Searching THIS message: Help (find) the {opening symbols}
     Found WITHOUT using startPosition: (find) the {opening symbols}
-    Found WITH using startPosition 6: {opening symbols}
+    Found WITH using startPosition 5:  (find) the {opening symbols}
     ```
 
 1. Take a minute to review the code previously entered.
@@ -171,15 +168,15 @@ You update the `message` string, adding different types of symbols like square `
     }
     ```
 
-1. Take a few minutes examine the previous code and reading the comments that help explain the code.
+1. Take a few minutes to examine the previous code and to read the comments that help explain the code.
 
-1. Continuing examining the code and locate the following line of code using `IndexOf()` to define `closingPosition`:
+1. Continue examining the code and locate the following line of code using `IndexOf()` to define `closingPosition`:
 
     ```csharp
     closingPosition = message.IndexOf(matchingSymbol, openingPosition);
     ```
 
-    The variable `closingPosition` is used in the `Substring()` method, but is also used to find the next `openingPosition` value:
+    The variable `closingPosition` is used to find the length passed into the `Substring()` method, and to find the next `openingPosition` value:
 
     ```csharp
     int openingPosition = message.IndexOfAny(openSymbols, closingPosition);
@@ -198,7 +195,7 @@ You update the `message` string, adding different types of symbols like square `
 
 ## Recap
 
-Here's the most important things to remember:
+Here are two important things to remember:
 
 - `LastIndexOf()` returns the last position of a character or string inside of another string.
 - `IndexOfAny()` returns the first position of an array of `char` that occurs inside of another string.

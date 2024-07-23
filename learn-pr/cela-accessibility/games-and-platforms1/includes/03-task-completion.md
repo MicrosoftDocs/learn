@@ -1,6 +1,6 @@
-"Support through multiple ways" is another important foundational accessibility concept. Providing players with multiple ways to complete a single task can support player success for a host of different game scenarios and experiences. 
+**Support through multiple ways** is another important foundational accessibility concept. Providing players with multiple ways to complete a single task can support player success for a host of different game scenarios and experiences.
 
-In this unit, you'll be introduced to accessibility best practice principles derived from the concept of "multiple ways of task completion."
+In this unit, learn about accessibility best practice principles derived from the concept of **multiple ways of task completion**.
 
 ## Provide multiple ways to navigate menus
 
@@ -32,7 +32,7 @@ Stardew Valley is an example of a game that allows players to complete collectib
 
 ## Provide multiple ways to engage in combat
 
-The complexity and speed of in-game combat situations can introduce inaccessible experiences for players. When games provide multiple ways to defeat enemies, players can approach combat-related tasks in ways that align with their needs and preferences and still be successful.
+The complexity and speed of in-game combat situations can introduce inaccessible experiences for players. When games provide multiple ways to defeat enemies, players can approach combat-related tasks in ways that align with their needs and preferences and still succeed.
 
 ### Long-range weapon options
 
@@ -64,7 +64,7 @@ Game experiences might traditionally rely on input devices that are specific to 
 
 - Mobile games are designed to optimize touch-screen input.
 - Console games are optimized to support game controllers.
-- PC games are generally optimized for a mouse and keyboard.
+- PC games are often optimized for a mouse and keyboard.
 - Virtual reality experiences can be heavily motion based.
 
 Imagine a scenario where a developer only supports keyboard and mouse input for their PC game. A player with a fine-motor disability who can't access keyboard and mouse input would be excluded from playing that game. If this game supported multiple input types, like controllers and game pads, this player could then use their assistive technology inputs through a device like their Xbox Adaptive Controller.

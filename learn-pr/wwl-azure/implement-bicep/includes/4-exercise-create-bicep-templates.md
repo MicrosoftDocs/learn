@@ -36,7 +36,7 @@ The value you assign to the parameters is the default value that makes the param
 
 You can use VS Code to visualize the resources defined in your Bicep file. Click on the visualizer button at the top right-hand corner:
 
-:::image type="content" source="../media/visualize-bicep-resources-2dc4fed3.png" alt-text="Screenshot of V S Code feature to make a representation of Bicep resources.":::
+:::image type="content" source="../media/visualize-bicep-resources-2dc4fed3.png" alt-text="Screenshot of VS Code feature to make a representation of Bicep resources.":::
 
 
 ## Compile the file

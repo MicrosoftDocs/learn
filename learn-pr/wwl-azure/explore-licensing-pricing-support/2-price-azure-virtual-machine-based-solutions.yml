@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-licensing-pricing-support.price-based-solutions
-title: Price Azure virtual machine-based solutions
+uid: learn.wwl.explore-licensing-pricing-support.price-azure-virtual-machine-based-solutions
+title: Price Azure Virtual Machine-based solutions
 metadata:
-  title: Price Azure virtual machine-based solutions
-  description: "Price Azure virtual machine-based solutions"
-  ms.date: 06/30/2022
+  title: Price Azure Virtual Machine-based solutions
+  description: "Price Azure Virtual Machine-based solutions"
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/2-price-azure-virtual-machine-based-solutions.md)]

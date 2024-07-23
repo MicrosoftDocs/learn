@@ -16,10 +16,10 @@ Microsoft Purview can connect to and scan Power BI either in the same tenant or 
 
 Give Microsoft Purview permissions to access your Power BI tenant.
 
-If you're using **Managed Identity** to authenticate to Power BI, you'll need to create a security group in Azure Active Directory, and add your Microsoft Purview managed identity to this security group.
+If you're using **Managed Identity** to authenticate to Power BI, you'll need to create a security group in Microsoft Entra ID, and add your Microsoft Purview managed identity to this security group.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Microsoft Azure Active Directory interface creating Security Group.](../media/purview-security-group.png)
+> ![Screenshot of Microsoft Entra ID interface creating Security Group.](../media/purview-security-group.png)
 
 If a security group containing the Purview managed identity already exists, you can proceed to configuring the Power BI tenant.
 
@@ -37,7 +37,7 @@ Now that you've got access set up in both Microsoft Purview and Power BI, you ca
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Microsoft Purview Data Map interface with pointer over blue register button.](../media/purview-register-power-bi.png)
 
-After registering the Power BI tenant, initiate the scan by selecting **New scan**. Give your scan a name and step through the interface, where you'll be able to to exclude personal workspaces, confirm integration runtime and credentials, and select a connection. Test the connection to ensure authentication is set up properly.
+After registering the Power BI tenant, initiate the scan by selecting **New scan**. Give your scan a name and step through the interface, where you'll be able to to exclude personal workspaces, confirm integration runtime and credentials, and select a collection. Test the connection to ensure authentication is set up properly.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Microsoft Purview Data Map interface with pointer over blue circular scan button.](../media/purview-scan-power-bi.png)

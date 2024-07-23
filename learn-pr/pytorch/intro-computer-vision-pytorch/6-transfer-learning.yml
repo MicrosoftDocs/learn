@@ -5,10 +5,11 @@ metadata:
   title: Use a pre-trained network with transfer learning
   description: Transfer Learning allows you to use a CNN pre-trained on a large standard dataset, and adapt it for your specific task, reaching high accuracy with much lower training efforts and smaller dataset.
   author: shwars
-  ms.author: dmitryso
-  ms.date: 04/14/2020
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.author: chnoring
+  ms.date: 06/04/2020
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
   ms.custom: team=nextgen
 durationInMinutes: 10
 sandbox: true

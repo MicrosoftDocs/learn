@@ -1,0 +1,3 @@
+In this module, we explored data assets that we scanned into our data catalog in Microsoft Purview. We also discussed how we can manage and modify those assets.
+
+Now that your proof of concept includes certified assets and a business glossary, it's easier for other users to explore your data assets to find information they need in your data catalog. You're one step closer to a mature data governance solution that allows you to manage and use data across your entire data estate!

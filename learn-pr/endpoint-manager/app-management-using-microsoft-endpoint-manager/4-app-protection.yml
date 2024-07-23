@@ -4,11 +4,10 @@ title: Understand how to protect apps
 metadata:
   title: Understand how to protect apps
   description: Understand app protection in Microsoft Intune.
-  ms.date: 02/11/2021
+  ms.date: 10/23/2023
   author: Erikre
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/4-app-protection.md)]

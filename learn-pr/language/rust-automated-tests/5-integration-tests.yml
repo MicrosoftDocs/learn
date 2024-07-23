@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/14/2021
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Write integration tests
 durationInMinutes: 5

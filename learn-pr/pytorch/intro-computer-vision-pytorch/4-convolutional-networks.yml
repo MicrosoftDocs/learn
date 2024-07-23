@@ -5,10 +5,11 @@ metadata:
   title: Use a convolutional neural network
   description: This unit is paramount to understanding the whole course. Here we learn about the CNN architecture, and how they can capture patterns in images using trained filters.
   author: shwars
-  ms.author: dmitryso
-  ms.date: 04/14/2020
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.author: chnoring
+  ms.date: 06/04/2020
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
   ms.custom: team=nextgen
 durationInMinutes: 10
 sandbox: true

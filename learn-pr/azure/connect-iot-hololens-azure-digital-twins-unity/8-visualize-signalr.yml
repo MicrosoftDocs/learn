@@ -4,11 +4,10 @@ title: Exercise - Visualize and interact with simulated operations data using Si
 metadata:
   title: Exercise - Visualize and interact with simulated operations data using SignalR
   description: Learn how to leverage SignalR to visualize and interact with simulated operations data.
-  ms.date: 05/12/2021
+  ms.date: 10/10/2023
   author: JBrentJ
   ms.author: jejacks
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/8-visualize-signalr.md)]

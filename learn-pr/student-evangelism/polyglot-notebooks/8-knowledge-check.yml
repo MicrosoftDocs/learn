@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-polyglot-notebooks.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  author: japhletnwamu
+  ms.author: japhletnwamu
+  ms.date: 04/03/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  Choose the best response for each question. Then, select **Check your answers**.
+quiz: 
+  questions: 
+    - content: Why use Polyglot Notebooks?
+      choices:
+      - content: When I want support for multiple languages within a single notebook. 
+        isCorrect: true
+        explanation: Correct. Polyglot Notebook allows for usage of several languages like for example C# and JavaScript and more within a single notebook.
+      - content: I want to build an app.
+        isCorrect: false
+        explanation: Incorrect. While it's possible to use Polyglot Notebook to build an app, you get more out of it if you want to do so in the context of a Notebook.
+      - content: I want to query a database.
+        isCorrect: false
+        explanation: Incorrect. Polyglot Notebook has the capability of being able to query a database but it's primary usage is that you want to run code within the context of a Notebook that may use different languages per cell and want to mix and match calling frontend, backend and data sources.
+    - content: What's the best approach to share values?
+      choices:
+      - content: Use the `#!share` magic command.
+        isCorrect: false
+        explanation: Incorrect. While you can use this command, it's more idiomatically correct to use `#!set`.
+      - content: Use the `#!set` command.
+        isCorrect: true
+        explanation: Correct. The `#!set` is the correct to use if you want to share values.
+      - content: You can't share values.
+        isCorrect: false
+        explanation: Incorrect. You can definitely share values.
+    - content: How can you ask the user for input in the context of magic commands, in a Polyglot Notebook?
+      choices:
+      - content: You can't.
+        isCorrect: false
+        explanation: Incorrect. You can ask for output, you use the `@input` command.
+      - content: You call `Kernel.GetInputAsync("Some prompt text.")`.
+        isCorrect: false
+        explanation: Incorrect. This is the correct way to ask for input in code, but not in the context of magic commands.
+      - content: You call the `@input` command.
+        isCorrect: true
+        explanation: Correct.
+    

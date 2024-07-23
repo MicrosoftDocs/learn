@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-semantic-search-azure-database-postgresql.exercise-generate-vector-embeddings-with-azure-openai
+title: Exercise - Generate vector embeddings with Azure OpenAI
+metadata:
+  title: Exercise - Generate vector embeddings with Azure OpenAI
+  description: "Exercise - Generate vector embeddings with Azure OpenAI"
+  ms.date: 04/29/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-exercise-generate-vector-embeddings-with-azure-openai.md)]

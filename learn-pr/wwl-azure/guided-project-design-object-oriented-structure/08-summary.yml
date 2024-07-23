@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-design-object-oriented-structure.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 03/19/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/08-summary.md)]

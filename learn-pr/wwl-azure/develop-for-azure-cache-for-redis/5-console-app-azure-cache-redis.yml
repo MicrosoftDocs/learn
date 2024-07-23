@@ -4,11 +4,12 @@ title: Exercise - Connect an app to Azure Cache for Redis by using .NET Core
 metadata:
   title: Exercise - Connect an app to Azure Cache for Redis by using .NET Core
   description: "Exercise - Connect an app to Azure Cache for Redis by using .NET Core"
-  ms.date: 04/24/2023
+  ms.date: 07/19/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/5-console-app-azure-cache-redis.md)]

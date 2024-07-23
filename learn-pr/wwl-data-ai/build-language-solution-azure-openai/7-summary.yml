@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: summary
   description: "In this module, you learned how to integrate Azure OpenAI into your application for intelligent natural language processing."
-  ms.date: 4/5/2023
+  ms.date: 07/10/2024
   author: ivorb
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

@@ -4,10 +4,9 @@ metadata:
   title: Infuse your applications with AI
   description: Using Azure services to enrich applications with Machine Learning and AI.
   ms.date: 04/14/2023
-  author: jomore
-  ms.author: jomore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Infuse your applications with AI
 durationInMinutes: 9
 content: |

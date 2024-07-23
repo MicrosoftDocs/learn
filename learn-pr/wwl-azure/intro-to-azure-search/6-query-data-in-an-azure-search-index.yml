@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-introduction-to-azure-search.6-query-data-in-an-azure-search-index
-title: Query data in an Azure Cognitive Search index
+title: Query data in an Azure AI Search index
 metadata:
-  title: Query data in an Azure Cognitive Search index
+  title: Query data in an Azure AI Search index
   description: "Write simple search queries in the Search explorer, then append extra parameters to manipulate those results"
-  ms.date: 09/02/2022
+  ms.date: 07/17/2024
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 08/30/2022
-  author: kendownie
+  ms.date: 11/10/2023
+  author: khdownie
   ms.author: kendownie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -29,7 +28,7 @@ quiz:
     - content: Pay per transaction.
       isCorrect: false
       explanation: "Incorrect: Premium file shares are only available in a provisioned billing model, in which you pay for that storage capacity regardless of whether you use it or not."
-  - content: Azure customers can switch from premium file share to hot, cool, or transaction optimized file shares at any time.
+  - content: Azure customers can switch from premium file shares to hot, cool, or transaction optimized file shares at any time.
     choices:
     - content: True.
       isCorrect: false
@@ -53,15 +52,15 @@ quiz:
     - content: False.
       isCorrect: false
       explanation: "Incorrect: Premium file shares store data on modern, high performance solid-state drives (SSDs), while the standard tier uses traditional hard disk drives (HDDs)."
-  - content: NFS is supported by all tiers of Azure Files.
+  - content: All tiers of Azure Files support NFS.
     choices:
     - content: True.
       isCorrect: false
-      explanation: "Incorrect: NFS is only supported by premium file shares."
+      explanation: "Incorrect: Only premium file shares support NFS."
     - content: False.
       isCorrect: true
-      explanation: "Correct: NFS is only supported by premium file shares."
-  - content: What redundancies are supported by Azure Files premium tier?
+      explanation: "Correct: Only premium file shares support NFS."
+  - content: What redundancies are supported in Azure Files premium tier?
     choices:
     - content: LRS; ZRS.
       isCorrect: true
@@ -91,11 +90,11 @@ quiz:
     - content: False.
       isCorrect: false
       explanation: "Incorrect: Identity-based authentication is the most secure and recommended access mechanism for Azure file shares over SMB."
-  - content: Storage account keys can be used by anyone and are recommended for organization-wide access.
+  - content: Anyone can use storage account keys, they're recommended for organization-wide access.
     choices:
     - content: True.
       isCorrect: false
-      explanation: "Incorrect: Storage account keys should only be used by administrators and are not recommended for organization wide access"
+      explanation: "Incorrect: Only administrators should use Storage account keys. They aren't recommended for organization wide access."
     - content: False.
       isCorrect: true
-      explanation: "Correct: Storage account keys should only be used by administrators and are not recommended for organization wide access."
+      explanation: "Correct: Storage account keys aren't recommended for organization wide access, only administrators should use them."

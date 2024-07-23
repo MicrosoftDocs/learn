@@ -4,34 +4,35 @@ title: Knowledge check
 metadata:    
   title: Knowledge check    
   description: Check your knowledge of content moderation for text.  
-  ms.date: 1/28/2019    
   author: wwlpublish    
   ms.author: gmalc    
-  ms.topic: interactive-tutorial    
-  ms.prod: learning-azure    
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 7
 quiz:
   title: Check your knowledge
   questions: 
-  - content: "Under the classification of the text, what type of value is returned for the category?"
+  - content: "Under Classification in the Text Moderation API response, what type of value is returned for each category?"
     choices:
-    - content: "A percentage indicating which category is most appropriate"
+    - content: "A percentage indicating which category is most appropriate."
       isCorrect: false
       explanation: "Returned results for categories aren't in percentages."
     - content: "A value between 0 and 1"
       isCorrect: true
       explanation: "Correct. The categories are rated with a value between 0 and 1, with values closer to 1 being more positive for the match."
-    - content: "A Boolean value indicating that a human review is necessary"
+    - content: "A Boolean value indicating that a human review is necessary."
       isCorrect: false
       explanation: "Although this Boolean value depends on the scoring values for the categories, it isn't a category score itself."
-  - content: "What is the purpose of the ListId value in a response from the profanity check?"
+  - content: "What is the purpose of the `ListId` value in a response from the profanity check?"
     choices:
     - content: "It's the identifier of the profanity word list that was used for the check."
-      isCorrect: false
-      explanation: "Although you can create a custom list, this ID doesn't represent a specific list that was used."
+      isCorrect: true
+      explanation: "The `ListId` identifies the custom term list that was used for the check."
     - content: "It's the language ID that the list used for testing."
       isCorrect: false
-      explanation: "The ListId isn't used to determine the language."
+      explanation: "The `ListId` isn't used to determine the language."
     - content: "It's the identifier of a term in a custom term list."
-      isCorrect: true
-      explanation: "Correct. The ListId identifies a specific term found in a custom term list, if such lists are available."
+      isCorrect: false
+      explanation: "The `Term` value identifies the specific term. The `ListId` identifies a custom term list if one is used."

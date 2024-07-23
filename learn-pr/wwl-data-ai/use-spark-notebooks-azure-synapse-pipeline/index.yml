@@ -6,9 +6,9 @@ metadata:
   ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
   ms.service: synapse-analytics
+  ms.subservice: pipeline
 title: Use Spark Notebooks in an Azure Synapse Pipeline
 summary: Apache Spark provides data engineers with a scalable, distributed data processing platform, which can be integrated into an Azure Synapse Analytics pipeline.
 abstract: |
@@ -27,7 +27,7 @@ products:
 - azure-synapse-analytics
 subjects:
 - data-engineering
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.use-spark-notebooks-azure-synapse-pipeline.introduction
 - learn.wwl.use-spark-notebooks-azure-synapse-pipeline.understand-notebooks-pipelines

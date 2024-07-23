@@ -2,23 +2,24 @@
 uid: learn.wwl.explore-identity-services
 metadata:
   title: Explore identity services for SAP on Azure
-  description: "This module explores using identity services to design multiple authentication and authorization scenarios Azure facilitates, that includes support for a range of identity providers. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 04/21/2023
+  description: This module explores using identity services to design multiple authentication and authorization scenarios Azure facilitates, that includes support for a range of identity providers. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads.
+  ms.date: 03/05/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ai-usage: human-only
+  ms.service: sap-on-azure
 title: Explore identity services for SAP on Azure
 summary: This module explores using identity services to design multiple authentication and authorization scenarios Azure facilitates, that includes support for a range of identity providers.
 abstract: |
   After completing this module, you will be able to:
-  -  Define Active Directory Domain Services (AD DS)
-  -  Define Azure Active Directory (Azure AD)
-  -  Discuss Azure Active Directory Domain Services (Azure AD DS)
+  -   Define Active Directory Domain Services&nbsp;
+  -   Define Microsoft Entra ID&nbsp;
+  -   Discuss Microsoft Entra&nbsp;Domain Services
 prerequisites: |
   Before taking this training, you should complete:
-  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
-  - SAP HANA or NetWeaver training.
+  -   Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  -   SAP HANA or NetWeaver training.
 iconUrl: /training/achievements/1-explore-identity-services.svg
 levels:
 - advanced

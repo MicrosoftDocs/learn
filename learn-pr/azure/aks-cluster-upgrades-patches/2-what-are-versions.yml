@@ -1,51 +1,51 @@
 ### YamlMime:ModuleUnit
-uid: learn.aks-cluster-upgrades-patches.what-are-versions 
-title: What are versions? 
+uid: learn.aks-cluster-upgrades-patches.what-are-versions
+title: What is versioning? 
 metadata: 
-  title: What are versions?
-  description: Understand the difference between patch, minor and major versions in Kubernetes semantic versioning.
-  ms.date: 07/15/2021
+  title: What is versioning?
+  description: Understand the difference between patch, minor, and major versions in Kubernetes semantic versioning.
+  ms.date: 10/05/2023
   ms.author: mixie 
   author: microsoftmichelle
   ms.product: learning-azure
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/2-what-are-versions.md)]
 
 quiz:
   questions:
-  - content: "Some bugs have been identified by the Kubernetes community that needs to be fixed. When the bug fixes have been made, what should Kubernetes do?"
+  - content: "The Kubernetes community found some bugs in the current release. After Kubernetes makes these bug fixes, what should they do?"
     choices:
-    - content: "Deprecate Kubernetes 1.0.0 and release Kubernetes 2.0.0"
+    - content: "Deprecate Kubernetes 1.0.0 and release Kubernetes 2.0.0."
       isCorrect: false
-      explanation: "Depreciating Kubernetes 1.0.0 to release Kubernetes 2.0.0 is a major version release. Bug fixes within the software do not require such drastic changes."
-    - content: "Make a patch release"
+      explanation: "Depreciating Kubernetes 1.0.0 and then releasing Kubernetes 2.0.0 is a major version release. Bug fixes don't require such drastic changes."
+    - content: "Make a patch release."
       isCorrect: true
-      explanation: "A patch release means a new patch version is available which has identified the bug fixes that need to be made and patched."
-    - content: "Make a feature release"
+      explanation: "A patch release means a new patch version is available that includes fixes to the identified bugs."
+    - content: "Make a feature release."
       isCorrect: false
-      explanation: "A feature release is considered a minor release that should be made when a new feature is being rolled out. Since we are not releasing any new features, we do not need to make any feature or minor version updates."
-  - content: "Kubernetes has just announced they have released a new version, v1.20.0. The last known version of Kubernetes was v1.19.10. Using your knowledge of semantic versioning, what type of changes does v1.20.0 indicate?"
+      explanation: "A feature, or *minor*, release is made when rolling out new features and doesn't include bug fixes."
+  - content: "Kubernetes just announced they have released a new version, v1.20.0. The last known version of Kubernetes was v1.19.10. Using your knowledge of semantic versioning, what type of changes does v1.20.0 indicate?"
     choices:
-    - content: "Major updates"
+    - content: "Major updates."
       isCorrect: false
-      explanation: "According to the rules of Semantic Versioning which follows the format X.Y.Z, when a major version update is made, the X value changes."
+      explanation: "According to the semantic versioning rules, which follow the `X.Y.Z` format, major version updates change the `X` value."
     - content: "Minor updates"
       isCorrect: true
-      explanation: "According to the rules of Semantic Versioning which follows the format X.Y.Z, when a minor version update is made, the Y value changes."
+      explanation: "According to the semantic versioning rules, which follow the `X.Y.Z` format, minor version updates change the `Y` value."
     - content: "Patch updates"
       isCorrect: false
-      explanation: "According to the rules of Semantic Versioning which follows the format X.Y.Z, when a patch version update is made, the Z value changes."
-  - content: "When Kubernetes releases a new version, what is updated?"
+      explanation: "According to the semantic versioning rules, which follow the `X.Y.Z` format, patch version updates change the `Z` value."
+  - content: "When Kubernetes releases a new version, what was updated?"
     choices:
-    - content: "The node image for the control plane"
+    - content: "The node image for the control plane."
       isCorrect: false
-      explanation: "Kubernetes does not take responsibility in upgrading or patching your node images, you must do this as a part of a separate process."
-    - content: "Security patches for the operating system"
+      explanation: "Kubernetes doesn't upgrade or patch your node images. You're responsible for making those updates as part of a separate process."
+    - content: "Security patches for the operating system."
       isCorrect: false
-      explanation: "Kubernetes does not upgrade the operating system of the compute nodes it runs on, you must do that as part of a separate process."
-    - content: "The core components of the Kubernetes runtime"
+      explanation: "Kubernetes doesn't upgrade the operating system of the compute nodes it runs on. You're responsible for making those updates as part of a separate process."
+    - content: "The core components of the Kubernetes runtime."
       isCorrect: true
-      explanation: "The core components of the Kubernetes runtime such as kubelet, kube-controller, kube-proxy, kube-scheduler, and kube-apiserver are updated as part of the new version releases."
+      explanation: "The core components of the Kubernetes runtime (kubelet, kube-controller, kube-proxy, kube-scheduler, and kube-apiserver) are updated as part of new version releases."
  

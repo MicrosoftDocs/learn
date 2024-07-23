@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.create-first-aks-edge-essentials
+metadata:
+  title: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
+  description: Deploy AKS Edge Essentials in a single machine K3S cluster with a Linux and Windows node. 
+  manager: lizross
+  ms.date: 01/17/2024
+  author: asergaz
+  ms.author: sergaz
+  ms.topic: module-build-your-first
+  ms.service: azure-kubernetes-service
+  ms.subservice: aks-edge-essentials
+title: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
+summary: Deploy AKS Edge Essentials in a single machine K3S cluster with a Linux and Windows node. You'll create an Azure virtual machine (VM) with Windows 11 Enterprise, deploy AKS Edge Essentials and run a Linux and Windows sample application on the cluster.
+abstract: |
+  After you complete this module, you'll be able to:
+    - Prepare your machine for AKS Edge Essentials
+    - Deploy AKS Edge Essentials
+    - Run containerized applications on AKS Edge Essentials
+prerequisites: |
+  - Knowledge about [Kubernetes core concepts for AKS](/azure/aks/hybrid/kubernetes-concepts)
+  - Ability to execute scripts with PowerShell 
+iconUrl: /training/achievements/iot/create-first-aks-edge-essentials.svg
+levels:
+- beginner
+roles:
+- administrator
+- business-owner
+- developer
+- solution-architect
+- student
+products:
+- azure
+- aks-edge-essentials
+- windows-iot
+subjects:
+- iot
+- containers
+units:
+- learn.create-first-aks-edge-essentials.introduction
+- learn.create-first-aks-edge-essentials.prepare-machine-for-aks-edge-essentials
+- learn.create-first-aks-edge-essential.exercise-deploy-aks-edge-essentials
+- learn.create-first-aks-edge-essential.deploy-application-aks-edge-essentials
+- learn.create-first-aks-edge-essential.exercise-deploy-application-aks-edge-essentials
+- learn.create-first-aks-edge-essentials.knowledge-check
+- learn.create-first-aks-edge-essentials.summary
+badge:
+  uid: learn.create-first-aks-edge-essentials.badge

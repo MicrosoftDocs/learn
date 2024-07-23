@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.challenge-project-build-speech-translator-app.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction.
+  author: theoyinbooke
+  ms.author: somelezediko
+  ms.date: 12/13/2023
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction.md)]

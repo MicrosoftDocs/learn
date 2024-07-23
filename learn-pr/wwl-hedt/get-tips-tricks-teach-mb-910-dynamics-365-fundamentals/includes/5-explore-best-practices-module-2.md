@@ -22,10 +22,5 @@ Module 2 Tips and Tricks
 
 Module 2 Demos
 
-- Click-through demo: [Customer insights](https://edxinteractivepage.blob.core.windows.net/edxpages/mb-910/version2/LP-MKTING-M2-CI/index.html)
-- Click-through demo: [Event management](https://edxinteractivepage.blob.core.windows.net/edxpages/mb-910/version2/LP-MKTING-M2-EVENTS/index.html) 
-
-Module 2 Labs
-
-- Lab 2.1: [Create a segment](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M02_Lab1_Create_a_Segment.md)
-- Lab 2.2: [Create a simple customer journey](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M02_Lab2_Create_a_simple_Customer_Journey.md)
+- Click-through demo: [Customer insights](https://microsoftlearning.github.io/click-throughs/docs/mb-910/version2/LP-MKTING-M2-CI/index.html)
+- Click-through demo: [Event management](https://microsoftlearning.github.io/click-throughs/docs/mb-910/version2/LP-MKTING-M2-EVENTS/index.html) 

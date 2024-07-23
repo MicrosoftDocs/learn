@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.wwl.deploy-administer-linux-virtual-machines-azure
+metadata:
+  title: Deploy and administer Linux virtual machines on Azure
+  description: Deploy and administer Linux virtual machines on Azure
+  ms.date: 07/16/2024
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: learning-path
+title: Deploy and administer Linux virtual machines on Azure
+prerequisites: |
+  -   Experience using the Azure portal and CLI to create resources.&nbsp;
+  -   Familiarity with identity management and role-based access control.&nbsp;
+  -   Experience creating and configuring Azure virtual machines.
+  -   Working knowledge of administering operating systems based on the Linux kernel.
+summary: |
+  In this learning path, you prepare for the Applied Skill,&nbsp;Deploy and administer Linux virtual machines on Microsoft Azure.&nbsp;
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-virtual-machines
+subjects:
+- virtual-machine
+modules:
+- learn.wwl.configure-virtual-machines
+- learn.add-and-size-disks-in-azure-virtual-machines
+- learn.azure.monitor-azure-vm-using-diagnostic-data
+- learn.protect-virtual-machines-with-azure-backup
+- learn.manage-vms-with-azure-cli
+- learn.wwl.implement-access-management-for-azure-resources
+- learn.wwl.configure-azure-files-file-sync
+- learn.copy-blobs-using-azcopy
+- learn.wwl.guided-project-deploy-administer-linux-virtual-machines-azure
+trophy:
+  uid: learn.wwl.deploy-administer-linux-virtual-machines-azure.trophy

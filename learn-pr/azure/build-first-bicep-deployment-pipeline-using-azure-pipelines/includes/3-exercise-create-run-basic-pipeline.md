@@ -23,14 +23,14 @@ In this exercise, you'll:
 1. In the **Create a project to get started** pane, enter the following details for your new project:
 
     - **Project name**: Use a meaningful but short name. For this exercise, enter _toy-website_.
-    - **Description**: Enter a description of the project's purpose. For this exercise, enter _Toy company website.
+    - **Description**: Enter a description of the project's purpose. For this exercise, enter _Toy company website_.
     - **Visibility**: You can use Azure DevOps to create public and private repositories. In this case, the repository should be private because your company website files should be accessed only by people within your organization. You can grant access to other users later.
 
     Your project configuration should look like this example:
 
     :::image type="content" source="../../includes/media/azure-devops-new-project-details.png" alt-text="Screenshot of Azure DevOps Create a project to get started pane that shows project name and visibility options highlighted.":::
 
-1. Select **Create**.
+1. Select **Create project**.
 
 ## Clone the repository
 
@@ -74,9 +74,9 @@ Now that you've created your organization, project, and repository, you're ready
 
 1. In Visual Studio Code, open the Explorer.
 
-1. In **Explorer**, hover over your **TOY-WEBSITE** project folder, and select **New Folder**. Name that folder _deploy_.
+1. In **Explorer**, hover over your **TOY-WEBSITE** project folder and select the **New Folder** icon. Name that folder _deploy_.
 
-1. Select the _deploy_ folder, and in the **TOY-WEBSITE** project select **New File** icon. Name that file _azure-pipelines.yml_.
+1. Select the _deploy_ folder, and select the **New File** icon in the **TOY-WEBSITE** project. Name that file _azure-pipelines.yml_.
 
     :::image type="content" source="../media/3-visual-studio-code-pipeline-file.png" alt-text="Screenshot of Visual Studio Code Explorer showing the deploy folder and the azure-pipelines dot Y M L file that was just created.":::
 

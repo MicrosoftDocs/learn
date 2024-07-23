@@ -1,8 +1,8 @@
 The **Publish** wizard in the Azure Functions template provides the most straightforward way to deploy Azure Functions, especially for testing purposes.
 
-In the luxury watch online website scenario, you've decided to use Visual Studio 2022 to deploy functions to an Azure Function App in the cloud. First, you'll create an Azure Function App, and then use the Visual Studio **Publish** wizard to deploy the functions you create.
+In the luxury watch online website scenario, you decided to use Visual Studio 2022 to deploy functions to an Azure Function App in the cloud. First, you create an Azure Function App, and then use the Visual Studio **Publish** wizard to deploy the functions you create.
 
-In this exercise, you'll use the Azure portal to create an Azure Function App. Then, you'll deploy the **WatchInfo** function using the Visual Studio project that you created in a previous exercise. Lastly, you'll test the function to verify that it has been deployed correctly.
+Here, you use the Azure portal to create an Azure Function App. Then, you deploy the **WatchInfo** function using the Visual Studio project that you created in a previous exercise. Lastly, you verify that your function is correctly deployed by testing it.
 
 ## Create an Azure Function App using the Azure portal
 
@@ -43,9 +43,9 @@ In this exercise, you'll use the Azure portal to create an Azure Function App. T
     | **Plan** |
     | Plan type | Consumption (Serverless) |
 
-1. Select **Next : Hosting**.
+1. Select **Next : Storage**.
 
-1. On the **Hosting** tab, enter the following values for each setting.
+1. On the **Storage** tab, enter the following values for each setting.
 
     | Setting | Value |
     | ------- | ----- |
@@ -88,7 +88,7 @@ In this exercise, you'll use the Azure portal to create an Azure Function App. T
 
     :::image type="content" source="../media/5-output-window.png" alt-text="Screenshot of the Output window in Visual Studio. The output messages indicate that the functions were published successfully." loc-scope="vs":::
 
-## Verify the functions have been deployed
+## Verify the functions are deployed
 
 1. Return to the Azure portal. The **Function App** pane appears with your function app.
 
@@ -98,7 +98,7 @@ In this exercise, you'll use the Azure portal to create an Azure Function App. T
 
 1. In the **Function App** menu, select **Overview** and check that the **Status** of the Azure Function App is listed as **Running**.
 
-    :::image type="content" source="../media/5-functions-app.png" alt-text="Screenshot of the Azure portal showing Function App pane with Function1 and WatchInfo functions." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/5-functions-app.png" alt-text="Screenshot of the Azure portal Function App pane showing the 'Function1' and 'WatchInfo' functions." loc-scope="other"::: <!-- no-loc -->
 
     > [!NOTE]
     > The functions are marked as *Read Only*. You cannot modify their settings or configuration from the Azure portal because you published them from Visual Studio. If you need to update either of these functions, make the changes in Visual Studio and publish them again.
@@ -107,12 +107,12 @@ In this exercise, you'll use the Azure portal to create an Azure Function App. T
 
     :::image type="content" source="../media/5-functions-app-running.png" alt-text="Screenshot of a web browser showing the function app is running.":::
 
-1. Append the URL of the **WatchInfo** function, `/api/watchinfo`, to the URL in the browser to invoke the **WatchInfo** function without a query string. You'll need to refresh the browser to see the error message *Please provide a watch model in the query string*.
+1. Append the URL of the **WatchInfo** function, `/api/watchinfo`, to the URL in the browser to invoke the **WatchInfo** function without a query string. You might need to refresh the browser to see the error message *Please provide a watch model in the query string*.
 
     :::image type="content" source="../media/5-function-error.png" alt-text="Screenshot of web browser window showing the error message." loc-scope="other"::: <!-- no-loc -->
 
-1. Add the query string `?model=abc`  to the URL and refresh the browser window. This time, you'll see the details of the watch model returned by the function.
+1. Add the query string `?model=abc` to the URL and refresh the browser window. This time, you see the details of the watch model returned by the function.
 
     :::image type="content" source="../media/5-function-success.png" alt-text="Screenshot of web browser showing the details of the watch model." loc-scope="other"::: <!-- no-loc -->
 
-You've now created an Azure Function App in the cloud, and published your functions to this app from Visual Studio.
+In this exercise, you created an Azure Function App in the cloud, and published your functions to this app from Visual Studio.

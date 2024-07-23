@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.run-cognitive-services-iot-edge.exercise-test-cognitive-service
-title: Exercise - Test Cognitive Services on the IoT Edge device
+title: Exercise - Test Azure AI services on the IoT Edge device
 metadata:
-  title: Exercise - Test Cognitive Services on the IoT Edge device
-  description: In this section, we'll test Cognitive Services on the edge device
-  ms.date: 6/12/2020
-  author: leestott
-  ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
+  title: Exercise - Test Azure AI services on the IoT Edge device
+  description: In this section, we'll test Azure AI services on the edge device
+  ms.date: 07/22/2024
+  author: PatAltimore
+  ms.author: patricka
+  ms.topic: unit
   ms.custom: team=nextgen
-durationInMinutes: 7 # dummy number at present
+durationInMinutes: 7
 content: |
   [!include[](includes/7-exercise-test-cognitive-service.md)]
     

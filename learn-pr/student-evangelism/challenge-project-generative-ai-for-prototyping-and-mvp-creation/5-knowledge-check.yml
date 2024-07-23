@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: bethanyjep
+  ms.author: bethanycheum
+  ms.date: 12/04/2023
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Is Microsoft Copilot for personal use free?"
+    choices:
+    - content: "Yes"
+      isCorrect: true
+      explanation: "Correct. Microsoft Copilot is free for personal use, but not for enterprise use."
+    - content: "No"
+      isCorrect: false
+      explanation: "Incorrect! Microsoft Copilot is free for personal use, but not for enterprise use."
+    - content: "Maybe"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Copilot is free for personal use, but not for enterprise use."
+  - content: "How many answers can I get from Microsoft Copilot as a free user?"
+    choices:
+    - content: "If you're signed in, you can get up to 20 chat turns per session and 300 chat turns per day."
+      isCorrect: true
+      explanation: "Correct! There's a limitation of 20 chat turns per session and 300 chat turns per day for Microsoft Copilot free users."
+    - content: "Unlimited."
+      isCorrect: false
+      explanation: "Incorrect. There's a limitation of 20 chat turns per session and 300 chat turns per day for Microsoft Copilot free users."
+  - content: "What factors influence the quality of the output from Microsoft Copilot?"
+    choices:
+    - content: "The time of day you ask the question."
+      isCorrect: false
+      explanation: "Incorrect. The output from Microsoft Copilot primarily depends on how well the prompt is crafted and the AI's understanding and processing of the prompt."
+    - content: "The speed of your internet connection."
+      isCorrect: false
+      explanation: "Incorrect. The output from Microsoft Copilot primarily depends on how well the prompt is crafted and the AI's understanding and processing of the prompt."
+    - content: "How well you crafted your prompt."
+      isCorrect: true
+      explanation: "Correct! The output from Microsoft Copilot primarily depends on how well the prompt is crafted and the AI's understanding and processing of the prompt."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.exploring-artificial-intelligence-in-action.ai-powered-tools-education 
+title: AI-powered tools in education
+metadata:
+  title: AI-powered tools in education
+  description: AI-powered tools can personalize learning by creating individualized plans, providing real-time feedback, and enhancing the engagement and understanding of your learners.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 01/25/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-ai-powered-tools-education.md)]

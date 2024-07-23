@@ -4,11 +4,10 @@ title: Take special care if your bot will support consequential use cases
 metadata:
   title: Take special care if your bot will support consequential use cases
   description: Some applications involve important or consequential actions that need special consideration. This unit describes how you should approach building a conversational AI for a consequential use case.
-  ms.date: 02/20/2020
+  ms.date: 07/10/2024
   author: Adriamen
   ms.author: japerena
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-consequential-use-cases.md)] 

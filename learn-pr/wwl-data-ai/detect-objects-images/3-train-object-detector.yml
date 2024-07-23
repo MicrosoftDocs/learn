@@ -4,11 +4,10 @@ title: Train an object detector
 metadata:
   title: Train an object detector
   description: "Train an object detector"
-  ms.date: 09/17/2021
+  ms.date: 07/10/2024
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.topic: unit
 azureSandbox: false
 sandbox: false
 labModal: false

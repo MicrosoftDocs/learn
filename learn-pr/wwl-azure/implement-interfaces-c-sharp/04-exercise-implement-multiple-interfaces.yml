@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-interfaces-c-sharp.exercise-implement-multiple-interfaces
+title: Exercise - Implement multiple interfaces
+metadata:
+  title: Exercise - Implement multiple interfaces
+  description: "Exercise - Implement multiple interfaces"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/04-exercise-implement-multiple-interfaces.md)]

@@ -4,12 +4,11 @@ title: When to use Azure Virtual Machine Scale Sets
 metadata:
   title: When to use Azure Virtual Machine Scale Sets
   description: Learn when to use Azure Virtual Machine Scale Sets.
-  ms.date: 04/11/2023
+  ms.date: 07/10/2024
   author: Orin-Thomas
   ms.author: orthomas
   ms.reviewer: mimckitt
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-when-to-use-azure-virtual-machine-scale-sets.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-data-analytics-scale.review-tasks-tools-for-data-analysts
+title: Review tasks and tools for data analysts
+metadata:
+  title: Review tasks and tools for data analysts
+  description: "Review tasks and tools for data analysts"
+  ms.date: 06/08/2022
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-review-tasks-tools-for-data-analysts.md)]

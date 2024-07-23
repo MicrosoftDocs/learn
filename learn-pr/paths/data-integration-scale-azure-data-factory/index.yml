@@ -3,20 +3,19 @@ uid: learn.wwl.data-integration-scale-azure-data-factory
 metadata:
   title: Data integration at scale Azure Data Factory
   description: Data integration at scale with Azure Data Factory or Azure Synapse Pipeline
-  ms.date: 01/05/2022
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Data integration at scale with Azure Data Factory or Azure Synapse Pipeline
 prerequisites: |
   The following pre-requisite should be completed:
-  -  Successfully login to the Azure portal
-  -  Understand the Azure storage options
-  - Understand the Azure compute options
+  -   Successfully log in to the Azure portal.
+  -   Understand the Azure storage options.
+  -   Understand the Azure compute options.
 summary: |
-  In this learning path, the students will learn how to create and manage data pipelines in the cloud using Azure Data Factory.
-iconUrl: /training/achievements/data-integration-scale-azure-data-factory.svg
+  In this learning path, the students learn how to create and manage data pipelines in the cloud using Azure Data Factory.
+iconUrl: /learn/achievements/data-integration-scale-azure-data-factory.svg
 levels:
 - intermediate
 roles:

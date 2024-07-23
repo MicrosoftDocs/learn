@@ -3,27 +3,41 @@ uid: learn.wwl.find-commands-get-help-windows-powershell
 metadata:
   title: Find commands and Get-Help in Windows PowerShell
   description: "This module explains how to find Windows PowerShell cmdlets that you can use to perform specific tasks. It also covers how to use Get-Help to retrieve detailed information about a cmdlet and its parameters."
-  ms.date: 10/18/2022
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
+  ai-usage: human-only
 title: Find commands and Get-Help in Windows PowerShell
 summary: This module explains how to find Windows PowerShell cmdlets that you can use to perform specific tasks. It also covers how to use Get-Help to retrieve detailed information about a cmdlet and its parameters.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Describe the relationship between modules and cmdlets.
-  - Identify options for finding cmdlets.
-  - Describe aliases.
-  - Use aliases.
-  - Explain how to use Show-Command.
-  - Explain how to use Get-Help.
-  - Review help.
-  - Explain how to interpret the help file contents.
-  - Explain how to update the local help content.
+
+  -   Describe the relationship between modules and cmdlets.
+
+  -   Identify options for finding cmdlets.
+
+  -   Describe aliases.
+
+  -   Use aliases.
+
+  -   Explain how to use Show-Command.
+
+  -   Explain how to use Get-Help.
+
+  -   Review help.
+
+  -   Explain how to interpret the help file contents.
+
+  -   Explain how to update the local help content.
 prerequisites: |
-  - Familiarity with Windows networking technologies and implementation.
-  - Familiarity with Windows Server administration, maintenance, and troubleshooting.
+  -   Familiarity with Windows networking technologies and implementation.
+
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting.
 iconUrl: /training/achievements/find-commands-get-help-windows-powershell.svg
 levels:
 - intermediate
@@ -31,14 +45,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

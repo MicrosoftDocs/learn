@@ -3,37 +3,38 @@ uid: learn.languages.csharp-convert-cast.exercise-data-type-conversion
 title: Exercise - Explore data type casting and conversion
 metadata:
   title: Exercise - Explore data type casting and conversion
-  description: "Exercise - Explore data type casting and conversion"
-  ms.date: 04/26/2023
+  description: "Explore different techniques that can be used for data type conversion."
+  ms.date: 07/22/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 30
 content: |
   [!include[](includes/2-exercise-data-type-conversion.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which is the best technique to convert a decimal type to an int type in C#?"
+  - content: "Which is the best technique to convert by rounding a decimal type to an int type in C#?"
     choices:
-    - content: "cast"
+    - content: "Convert"
       isCorrect: true
-      explanation: "Correct. `decimal` to `int` is a narrowing conversion so `cast` is the best answer."
-    - content: "narrowing"
+      explanation: "Correct. `decimal` to `int` is a narrowing conversion so to round, `Convert` is the best answer."
+    - content: "Narrowing"
       isCorrect: false
-      explanation: "That’s incorrect. \"Narrowing\" describes the data precision change in a conversion."
-    - content: "implicit conversion"
+      explanation: "Incorrect. \"Narrowing\" describes the data precision change in a conversion."
+    - content: "Implicit conversion"
       isCorrect: false
-      explanation: "That’s incorrect. `decimal` to `int` is a narrowing conversion and implicit conversion can't be used because data loss is possible."
+      explanation: "Incorrect. `decimal` to `int` is a narrowing conversion and implicit conversion can't be used because data loss is possible."
   - content: "Which of the following conversion rounds the value (versus truncate)?"
     choices:
     - content: "`int cost = (int)3.75m;`"
       isCorrect: false
-      explanation: "That’s incorrect. Casting truncates all decimals."
+      explanation: "Incorrect. Casting truncates all decimals."
     - content: "`int cost = Convert.ToInt32(3.75m);`"
       isCorrect: true
-      explanation: "That’s correct. `Convert.ToInt32()` rounds values with fractional precision"
+      explanation: "Correct. `Convert.ToInt32()` rounds values with fractional precision."
     - content: "`uint cost = (uint)3.75m;`"
       isCorrect: false
-      explanation: "That’s incorrect. Casting truncates all decimals."
+      explanation: "Incorrect. Casting truncates all decimals."

@@ -4,12 +4,11 @@ title: Explore your Visual Studio App Project
 metadata:
   title: Explore your Visual Studio App Project
   description: Explore your Visual Studio App Project
-  ms.date: 05/02/2020
+  ms.date: 09/27/2023
   author: mikejo5000
   ms.author: mikejo
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/6-explore-your-visual-studio-app-project.md)]

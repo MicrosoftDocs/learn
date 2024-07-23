@@ -4,12 +4,13 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 01/02/2023
+  ms.date: 02/14/2024
   author: agoncal
   ms.author: antoniomanug
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=devdiv
+  ms.topic: unit
+  ms.custom:
+    - team=devdiv
+    - devx-track-extended-java
   ms.contributors: antoniomanug
 durationInMinutes: 2
 content: |

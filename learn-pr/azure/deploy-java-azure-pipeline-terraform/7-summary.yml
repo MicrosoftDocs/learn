@@ -4,12 +4,14 @@ title: Summary
 metadata:
   title: Summary
   description: This unit summarizes what you've learned in this module.
-  ms.date: 02/01/2021
+  ms.date: 08/02/2023
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
+    - devx-track-terraform
   ms.contributors: ropreddy-03052021
 durationInMinutes: 2
 content: |

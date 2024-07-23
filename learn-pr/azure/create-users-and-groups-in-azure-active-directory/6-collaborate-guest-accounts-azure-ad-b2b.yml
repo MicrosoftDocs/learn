@@ -1,17 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-users-and-groups-in-azure-active-directory.collaborate-guest-accounts-azure-ad-b2b
-title: Collaborate by using guest accounts and Azure Active Directory B2B
+title: Collaborate by using guest accounts and Microsoft Entra B2B
 metadata:
-  title: Collaborate by using guest accounts and Azure Active Directory B2B
-  description: Collaborate by using guest accounts and Azure Active Directory B2B
-  ms.date: 03/21/2023
+  title: Collaborate by using guest accounts and Microsoft Entra B2B
+  description: Collaborate by using guest accounts and Microsoft Entra B2B
+  ms.date: 06/25/2024
   author: shlipsey3
   ms.author: sarahlipsey
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.manager: amycollanino
-  ms.service: active-directory
-  ms.subservice: fundamentals
 durationInMinutes: 5
 content: |
   [!include[](includes/6-collaborate-guest-accounts-azure-ad-b2b.md)]

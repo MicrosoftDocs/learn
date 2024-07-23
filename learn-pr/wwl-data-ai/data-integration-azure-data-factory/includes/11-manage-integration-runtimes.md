@@ -25,8 +25,11 @@ The following table describes the capabilities and network support for each of t
 
 | **IR type** | **Public network** | **Private network** |
 |-|-|-|
-| Azure | Data Flow Data movement Activity dispatch | |
-| Self-hosted | Data movement Activity dispatch | Data movement Activity dispatch |
+| Azure | Data Flow | Data Flow |
+|| Data movement | Data movement |
+|| Activity Dispatch | Activity Dispatch |
+| Self-hosted | Data movement | Data movement |
+|| Activity dispatch | Activity dispatch |
 | Azure-SSIS | SSIS package execution | SSIS package execution |
 
 ## Determining which integration runtime to use

@@ -4,11 +4,10 @@ title: Exercise - Prove microservice resilience in Kubernetes
 metadata:
   title: Exercise - Prove microservice resilience in Kubernetes
   description: Kubernetes makes sure your microservices are running in the face of failure, see that in this exercise.
-  ms.date: 08/25/2021
+  ms.date: 11/06/2023
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
@@ -19,14 +18,14 @@ content: |
 quiz:  
   title: Check your knowledge
   questions: 
-    - content: "Why does Kubernetes automatically restart pods that have failed?"
+    - content: "What is the reason Kubernetes restarts pods when they fail?"
       choices:
-        - content: "Kubernetes will maintain the system state as defined in the configuration files no matter what."
+        - content: "Kubernetes ensures the system state matches what is defined in the configuration files, regardless of the circumstances."
           isCorrect: true
-          explanation: "One of the benefits of Kubernetes is the support for declarative configuration management. What you define in the configuration files will be retained at all costs."
-        - content: "Kubernetes will maintain the current system state as is when a failure occurs."
+          explanation: "One benefit of Kubernetes is its support for declarative configuration management. Whatever you define in the configuration files is maintained consistently."
+        - content: "Kubernetes maintains the current system state as is when a failure occurs."
           isCorrect: false
-          explanation: "Kubernetes will recover to a state defined in the configuration files, not to a state as it was running."
-        - content: "Kubernetes will not automatically recover, rather it needs to be told to."
+          explanation: "Kubernetes recovers to a state defined in the configuration files, not to a state as it was running."
+        - content: "Kubernetes doesn't automatically recover, rather it needs to be told to."
           isCorrect: false
           explanation: "A benefit of Kubernetes is that it automatically maintains system state as defined, it will recover automatically."

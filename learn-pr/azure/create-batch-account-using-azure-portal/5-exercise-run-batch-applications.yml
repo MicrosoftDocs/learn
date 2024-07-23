@@ -4,11 +4,10 @@ title: Exercise - Add a new application package to a Batch account in the Azure 
 metadata:
   title: Exercise - Add a new application package to a Batch account in the Azure portal 
   description: Create an application package and a Batch job.
-  ms.date: 02/01/2021
-  author: prkannap
-  ms.author: prkannap
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/01/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-run-batch-applications.md)]

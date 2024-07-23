@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-vms-from-vhd-templates.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 04/03/2024
+  author: v-tcassi
+  ms.author: tomcassidy
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What is a VHD?"
+    choices:
+    - content: "A virtual hard disk, stored as a virtual file by Azure."
+      isCorrect: true
+      explanation: "This answer is correct."
+    - content: "A volatile hard disk. Its contents are lost unless you back them up."
+      isCorrect: false
+      explanation: "No. A VHD is a virtual hard disk, stored as a virtual file by Azure."
+    - content: "A valuable hard disk. It contains your organization's critical (valuable) data. Azure ensures that its contents can't be accidentally overwritten."
+      isCorrect: false
+      explanation: "No. A VHD is a virtual hard disk, stored as a virtual file by Azure."
+  - content: "Which tool should you use to prepare a Windows Server image for generalization?"
+    choices:
+    - content: "SysConfig"
+      isCorrect: false
+      explanation: "No. Use the Sysprep tool."
+    - content: "WinConfig"
+      isCorrect: false
+      explanation: "No. Use the Sysprep tool."
+    - content: "Sysprep"
+      isCorrect: true
+      explanation: "This answer is correct."
+  - content: "Which command should you use to prepare a Linux image for generalization?"
+    choices:
+    - content: "sysprep"
+      isCorrect: false
+      explanation: "No. Use the waagent command."
+    - content: "waagent"
+      isCorrect: true
+      explanation: "This answer is correct."
+    - content: "linuxprep"
+      isCorrect: false
+      explanation: "No. Use the waagent command."

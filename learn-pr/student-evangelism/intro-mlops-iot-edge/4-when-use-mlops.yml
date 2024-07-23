@@ -4,11 +4,10 @@ title: When to use MLOps for IoT Edge
 metadata:
   title: When to use MLOps for IoT Edge
   description: In this section, we describe the criteria customers should use when deciding whether the product meets their needs.
-  ms.date: 03/17/2023
-  author: leestott
+  ms.date: 11/28/2023
+  author: PatAltimore
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 6 # dummy number at present
 content: |

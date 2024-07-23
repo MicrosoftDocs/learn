@@ -4,11 +4,10 @@ title: Use GitHub Actions for model training
 metadata:
   title: Use GitHub Actions for model training
   description: "Use GitHub Actions for model training"
-  ms.date: 09/26/2022
+  ms.date: 07/10/2024
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

@@ -4,11 +4,13 @@ metadata:
   moduleType: standard
   title: Manage end-to-end deployment scenarios by using Bicep and GitHub Actions
   description: Build a deployment workflow for Bicep infrastructure as code templates. Create a single workflow to deploy infrastructure, applications, and data.
+  ms.service: azure-resource-manager
+  manager: jasongroce
   ms.date: 12/19/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
+  ms.devlang: bicep
 title: Manage end-to-end deployment scenarios by using Bicep and GitHub Actions
 summary: |
   Create a unified workflow to deploy your entire environment. You'll add build jobs to your workflow, and use workflow artifacts and Bicep outputs to publish applications, databases, and blobs.
@@ -28,7 +30,7 @@ prerequisites: |
 
   To work through the exercises in the module, you'll need:
 
-  - An Azure account, with the ability to create resource groups and Azure Active Directory applications.
+  - An Azure account, with the ability to create resource groups and Microsoft Entra applications.
   - A GitHub account.
 
   To work through the exercises, you'll also need the following installed locally:

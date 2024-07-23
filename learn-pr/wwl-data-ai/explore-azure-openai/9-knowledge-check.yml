@@ -4,11 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "This page serves as a knowledge check after a student has completed learning from the module."
-  ms.date: 2/14/2023
+  ms.date: 07/10/2024
   author: sherzyang
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 azureSandbox: false
 labModal: false
 durationInMinutes: 4
@@ -27,7 +29,7 @@ quiz:
       explanation: "Correct."
   - content: "You would like to summarize a paragraph of text. Which generative AI model family would you use to solve for this workload?"
     choices:
-    - content: "GPT-3."
+    - content: "GPT."
       isCorrect: true
       explanation: "Correct."
     - content: "Codex."
@@ -47,6 +49,3 @@ quiz:
     - content: "Allows users to build any application, regardless of harmful effects, to ensure fairness."
       isCorrect: false
       explanation: "Incorrect. Microsoft's Responsible AI principle, fairness, says AI systems shouldn't make decisions that discriminate or bias a group or individual. Harmful use of Azure OpenAI isn't permitted."
-
-
-

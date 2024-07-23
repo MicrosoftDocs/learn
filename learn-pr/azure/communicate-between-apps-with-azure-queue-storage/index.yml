@@ -3,11 +3,12 @@ uid: learn.communicate-between-applications-with-azure-queue-storage
 metadata:
   title: Communicate between applications with Azure Queue storage
   description: Find out to use Azure Queue storage to handle high demand and improve resilience in your distributed applications.
-  ms.date: 04/04/2023
+  manager: akashdubey
+  ms.date: 11/13/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-queue-storage
 title: Communicate between applications with Azure Queue storage
 summary: Implement the publish-subscribe pattern in the cloud using Azure Queue storage.
 abstract:  | 

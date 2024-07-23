@@ -1,6 +1,4 @@
-
-
-In this exercise, you'll work with floating-point data types to learn about the nuanced differences between each data type.
+In this exercise, you work with floating-point data types to learn about the nuanced differences between each data type.
 
 A floating point is a simple value type that represents numbers to the right of the decimal place. Unlike integral numbers, there are other considerations beyond the maximum and minimum values you can store in a given floating-point type.
 
@@ -28,18 +26,17 @@ Console.WriteLine($"double : {double.MinValue} to {double.MaxValue} (with ~15-17
 Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue} (with 28-29 digits of precision)");
 ```
 
-1. On the Visual Studio Code **File** menu, select **Save**.
+3. On the Visual Studio Code **File** menu, select **Save**.
 
     The Program.cs file must be saved before building or running the code.
 
-1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
+4. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
     A Terminal panel should open, and should include a command prompt showing that the Terminal is open to your TestProject folder location.
 
-1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
+5. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
 
-    > [!NOTE]
-    > If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
+    If you see a message saying "Couldn't find a project to run," ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
 
     You should see the following output:
 

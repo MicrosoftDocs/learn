@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.ai-powered-tools-for-teaching.refine-your-presentation-skills-using-speaker-coach
+title: Refine your presentation skills using Speaker Coach
+metadata:
+  title: Refine your presentation skills using Speaker Coach
+  description: AI-powered tools enhance training for both learners and trainers. These tools include online learning platforms, vocabulary apps, quality assurance tools, and content generators.
+  ms.date: 01/29/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 40
+content: |
+  [!include[](includes/2-refine-your-presentation-skills-using-speaker-coach.md)]

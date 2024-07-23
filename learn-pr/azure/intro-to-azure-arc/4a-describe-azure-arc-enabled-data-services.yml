@@ -3,13 +3,12 @@ uid: learn.azure.intro-to-azure-arc.4a-describe-azure-arc-enabled-data-services
 metadata:
   title: Describe Azure Arc-enabled data services
   description: Describe Azure Arc-enabled data services
-  ms.date: 04/10/2023
+  ms.date: 12/07/2023
   author: MikeRayMSFT
   ms.author: mikeray
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Describe Azure Arc-enabled data services
-durationInMinutes: 7
+durationInMinutes: 4
 content: |
   [!include[](includes/4a-describe-azure-arc-enabled-data-services.md)]

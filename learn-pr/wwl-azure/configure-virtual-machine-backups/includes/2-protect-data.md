@@ -1,4 +1,3 @@
-
 You can protect your data by taking backups at regular intervals. Azure provides several backup options for virtual machines to support different scenarios and configuration requirements.
 
 ### Things to know about backup options for virtual machines 

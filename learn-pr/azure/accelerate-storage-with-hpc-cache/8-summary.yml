@@ -5,11 +5,10 @@ metadata:
   unitType: summary  
   title: Summary
   description: Summary of Azure HPC Cache
-  ms.date: 05/06/2021
+  ms.date: 08/15/2023
   author: ronhogue  
   ms.author: rohogue  
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]

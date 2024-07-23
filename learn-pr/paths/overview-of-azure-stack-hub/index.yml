@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/17/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Overview of Azure Stack Hub
 prerequisites: |
   *   Conceptual knowledge of Azure compute solutions.

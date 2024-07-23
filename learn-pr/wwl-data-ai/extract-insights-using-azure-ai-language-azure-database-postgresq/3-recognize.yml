@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.recognize
+title: Recognize entities
+metadata:
+  title: Recognize entities
+  description: "Recognize entities"
+  ms.date: 04/29/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-recognize.md)]

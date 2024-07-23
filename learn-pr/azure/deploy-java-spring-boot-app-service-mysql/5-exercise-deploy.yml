@@ -3,13 +3,14 @@ uid: learn.azure.deploy-java-spring-boot-app-service-mysql.5-exercise-deploy
 title: Exercise - Deploy a Spring Boot application
 metadata:
   title: Exercise - Deploy a Spring Boot application
-  description: In this exercise, follow the steps to deploy a Spring Boot application.
-  ms.date: 11/16/2020
+  description: Follow this exercise to learn how to deploy a Spring Boot application.
+  ms.date: 11/08/2023
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors: ropreddy-11202020
 durationInMinutes: 7
 content: |

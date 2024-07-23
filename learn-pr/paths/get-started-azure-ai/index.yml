@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.wwl.get-started-azure-ai
+metadata:
+  title: Get started with Azure AI Services
+  description: How to get started with Azure AI Services
+  ms.date: 10/10/2023
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: learning-path
+title: Get started with Azure AI Services
+prerequisites: |
+  Before starting this learning path, you should already have:
+  - Familiarity with Azure and the Azure portal.
+  - Experience programming with C# or Python.
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
+summary: |
+  Azure AI Services is a collection of services that are building blocks of AI functionality you can integrate into your applications. In this learning path, you'll learn how to provision, secure, monitor, and deploy Azure AI Services resources and use them to build intelligent solutions.
+iconUrl: /training/achievements/provision-and-manage-azure-cognitive-services.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- ai-services
+subjects:
+- artificial-intelligence
+modules:
+- learn.wwl.prepare-to-develop-ai-solutions-azure
+- learn.wwl.create-manage-ai-services
+- learn.wwl.secure-ai-services
+- learn.wwl.monitor-ai-services
+- learn.wwl.investigate-container-for-use-with-ai-services
+trophy:
+  uid: learn.wwl.get-started-azure-ai.trophy

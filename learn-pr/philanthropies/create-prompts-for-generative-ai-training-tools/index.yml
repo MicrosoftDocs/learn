@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.philanthropies.create-prompts-for-generative-ai-training-tools
+metadata:
+  title: Create effective prompts for generative AI training tools
+  description: Learn how to craft engaging and informative prompts with Microsoft Copilot. This module will teach you the basic concepts of prompt engineering, the elements of an effective prompt, and best practices in prompting.
+  ms.date: 02/27/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: module
+  ms.service: artificial-intelligence
+title: Create effective prompts for generative AI training tools
+summary: This module covers the basic concepts of prompt engineering, the elements of an effective prompt, and best practices in prompting.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Critique the effectiveness of different prompt engineering techniques. 
+  - Assess the clarity and relevance of instructions and context for prompt creation.
+  - Evaluate the benefits of creating content in various formats using generative AI.
+iconUrl: /training/achievements/create-prompts-for-generative-ai-training-tools.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- business-user
+- higher-ed-educator
+- data-engineer
+- school-leader
+products:
+- ai-services
+- azure-machine-learning
+- azure-machine-learning-designer
+- m365-apps
+- azure-translator-text
+- azure-translator-speech
+- ms-copilot
+- language-service
+subjects:
+- artificial-intelligence
+units:
+- learn.philanthropies.create-prompts-for-generative-ai-training-tools.introduction
+- learn.philanthropies.create-prompts-for-generative-ai-training-tools.prompt-based-generative-ai-model
+- learn.philanthropies.create-prompts-for-generative-ai-training-tools.what-is-prompt-engineering
+- learn.philanthropies.create-prompts-for-generative-ai-training-tools.identify-the-types-of-prompt-instructions
+- learn.philanthropies.create-prompts-for-generative-ai-training-tools.create-effective-prompts
+- learn.philanthropies.create-prompts-for-generative-ai-training-tools.knowledge-check
+- learn.philanthropies.create-prompts-for-generative-ai-training-tools.summary
+badge:
+  uid: learn.philanthropies.create-prompts-for-generative-ai-training-tools.badge

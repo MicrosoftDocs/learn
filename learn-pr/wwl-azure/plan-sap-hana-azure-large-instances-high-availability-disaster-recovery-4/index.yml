@@ -2,12 +2,12 @@
 uid: learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery
 metadata:
   title: Plan SAP HANA on Azure (Large Instances) high availability and disaster recovery
-  description: "This module covers considerations to plan for SAP HANA on Azure (Large Instances) high availability and disaster recovery. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  description: This module covers considerations to plan for SAP HANA on Azure (Large Instances) high availability and disaster recovery. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads.
   ms.date: 12/08/2021
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: sap-on-azure
 title: Plan SAP HANA on Azure (Large Instances) high availability and disaster recovery
 summary: Considerations to plan for SAP HANA on Azure (Large Instances) high availability and disaster recovery.
 abstract: |
@@ -28,7 +28,7 @@ roles:
 products:
 - azure
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.introduction
 - learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.explore

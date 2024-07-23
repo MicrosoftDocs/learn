@@ -2,11 +2,12 @@
 uid: learn.wwl.enforce-power-bi-model-security
 metadata:
   title: Enforce Power BI model security
-  description: "Enforce Power BI model security"
-  ms.date: 01/25/2023
+  description: Enforce model security in Power BI using row-level security and object-level security.
+  ms.date: 08/04/2023
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
+  ms.author: anrudduc
+  ms.topic: module
+  ms.service: powerbi
 title: Enforce Power BI model security
 summary: Enforce model security in Power BI using row-level security and object-level security.
 abstract: |
@@ -24,7 +25,6 @@ roles:
 products:
 - power-bi
 subjects:
-- data-ai
 - data-analytics
 - data-visualization
 units:

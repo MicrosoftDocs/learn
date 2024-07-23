@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.analyze-azure-ad-role-permissions
-title: Analyze Azure AD role permissions
+title: Analyze Microsoft Entra role permissions
 metadata:
-  title: Analyze Azure AD role permissions
-  description: "Analyze Azure AD role permissions"
-  ms.date: 02/03/2023
+  title: Analyze Microsoft Entra role permissions
+  description: "Analyze Microsoft Entra role permissions"
+  ms.date: 04/09/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-analyze-azure-ad-role-permissions.md)]

@@ -7,7 +7,7 @@ In this unit, you'll use the Azure CLI to create the Azure resources that will b
 
 ### Authenticate with Azure Resource Manager
 
-Sign in:
+Use the following command in your CLI to sign in:
 
 ```bash
 az login
@@ -15,13 +15,13 @@ az login
 
 ### Select an Azure subscription
 
-Azure subscriptions are logical containers used to provision resources in Azure. You'll need to locate the subscription ID (SubscriptionId) that you plan to use in this module. List your Azure subscriptions:
+Azure subscriptions are logical containers used to provision resources in Azure. You'll need to locate the subscription ID (SubscriptionId) that you plan to use in this module. Use this command to list your Azure subscriptions:
 
 ```bash
 az account list --output table
 ```
 
-Ensure your using an Azure subscription that allows you to create resources for the purposes of this module, substituting your subscription ID (SubscriptionId) of choice:
+Use the following command to ensure you're using an Azure subscription that allows you to create resources for the purposes of this module, substituting your subscription ID (SubscriptionId) of choice:
 
 ```bash
 az account set --subscription "<YOUR_SUBSCRIPTION_ID>"
@@ -32,11 +32,11 @@ az account set --subscription "<YOUR_SUBSCRIPTION_ID>"
 To simplify the commands that we'll execute later, set up the following environment variables:
 
 > [!NOTE]
-> You'll want to replace <YOUR_AZURE_REGION> with your region of choice, for example: eastus  
+> You'll want to replace <YOUR_AZURE_REGION> with your region of choice; for example: *eastus*.  
 >
-> You'll want to replace <YOUR_CONTAINER_REGISTRY> with a unique value, because this is used to generate a unique FQDN (fully qualified domain name) for your Azure Container Registry when it is created; for example: someuniquevaluejavacontainerregistry.
+> You'll want to replace <YOUR_CONTAINER_REGISTRY> with a unique value, because this is used to generate a unique FQDN (fully qualified domain name) for your Azure Container Registry when it is created; for example: `someuniquevaluejavacontainerregistry`.
 >
-> You'll want to replace <YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER> with a unique value as this is used to generate a unique FQDN (fully qualified domain name) for your Azure Kubernetes Cluster when it is created, for example: `someuniquevaluejavacontainerizationdemoaks`.
+> You'll want to replace <YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER> with a unique value, because it's used to generate a unique FQDN (fully qualified domain name) for your Azure Kubernetes Cluster when it is created; for example: `someuniquevaluejavacontainerizationdemoaks`.
 
 ```bash
 AZ_RESOURCE_GROUP=javacontainerizationdemorg
@@ -48,7 +48,7 @@ AZ_KUBERNETES_CLUSTER_DNS_PREFIX=<YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUS
 
 ### Create an Azure Resource Group
 
-Azure resource groups are Azure containers, located within Azure subscriptions, for holding related resources for an Azure solution. Create a Resource group:
+Azure resource groups are Azure containers in Azure subscriptions for holding related resources for an Azure solution. Create a Resource group by using the following command in your CLI:
 
 ```bash
 az group create \
@@ -64,7 +64,7 @@ az group create \
 
 ### Create an Azure Container Registry
 
-Azure Container Registry allows you to build, store, and manage container images, which are ultimately where the container image for the Java app will be stored. Create a Container registry:
+Azure Container Registry allows you to build, store, and manage container images, which are ultimately where the container image for the Java app will be stored. Create a Container registry by using the following command:
 
 ```bash
 az acr create \
@@ -102,4 +102,4 @@ az aks create \
 ```
 
 > [!NOTE]
-> Azure Kubernetes Cluster creation can take up to 10 minutes. Once you run the command above, you can optionally let it continue in your Azure CLI tab and move on to the next unit.
+> Creating an Azure Kubernetes Cluster can take up to 10 minutes. Once you run the command above, you can let it continue in your Azure CLI tab and move on to the next unit.

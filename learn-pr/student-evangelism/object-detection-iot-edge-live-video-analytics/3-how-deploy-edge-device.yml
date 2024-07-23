@@ -4,11 +4,10 @@ title: How to deploy an IoT Edge device
 metadata:
   title: How to deploy an IoT Edge device
   description: In this section, we provide how to deploy an IoT Edge device
-  ms.date: 4/23/2021
+  ms.date: 4/27/2021
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 7
 content: |

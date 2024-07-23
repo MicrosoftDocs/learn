@@ -3,12 +3,13 @@ uid: learn.wwl.explore-azure-compute.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 04/21/2023
+  description: "Summary of the module."
+  ms.date: 06/07/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/12-summary.md)]

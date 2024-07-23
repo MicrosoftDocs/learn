@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.advanced-security-compute.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/10/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/12-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which feature is essential for monitoring the security of Azure Container Instances (ACIs)?"
+    choices:
+    - content: "Azure Monitor"
+      isCorrect: true
+      explanation: "Azure Monitor provides comprehensive monitoring capabilities, allowing for the detection of security issues and performance anomalies in ACIs."
+    - content: "Ignoring all security alerts"
+      isCorrect: false
+      explanation: "Ignoring security alerts can lead to undetected threats and vulnerabilities within containerized applications."
+    - content: "Disabling diagnostic logs"
+      isCorrect: false
+      explanation: "Disabling diagnostic logs reduces visibility into the operational health and security posture of container instances, hindering incident response."
+  - content: "What enables secure remote access to Azure VMs without exposing them to the public internet?"
+    choices:
+    - content: "Unrestricted access through any internet connection"
+      isCorrect: false
+      explanation: "Exposing VMs directly via public IP addresses increases vulnerability to attacks."
+    - content: "Azure Bastion"
+      isCorrect: true
+      explanation: "Azure Bastion provides secure, seamless RDP/SSH access within the Azure portal over SSL, eliminating the need for public IP addresses on VMs."
+    - content: "Direct access using public IP addresses"
+      isCorrect: false
+      explanation: "Unrestricted access poses significant security risks by potentially exposing sensitive systems to malicious actors."
+  - content: "What best practice secures access to Azure Container Registry (ACR)?"
+    choices:
+    - content: "Integration with Microsoft Entra ID and RBAC"
+      isCorrect: true
+      explanation: "Integrating ACR with Microsoft Entra ID and using RBAC ensures that access is securely managed based on user roles and responsibilities."
+    - content: "Using a single, shared administrator account for all users"
+      isCorrect: false
+      explanation: "A single shared administrator account contradicts the principle of least privilege and increases the risk of accidental or malicious misuse."
+    - content: "Public access with no authentication"
+      isCorrect: false
+      explanation: "Public access without authentication would allow anyone to access and potentially compromise stored container images."
+  - content: "What encryption method is recommended for securing data at rest on Azure VMs?"
+    choices:
+    - content: "Using plain text files for sensitive data storage"
+      isCorrect: false
+      explanation: "Storing sensitive data in plain text files significantly increases the risk of data breaches and unauthorized access."
+    - content: "Azure Disk Encryption using BitLocker or dm-crypt"
+      isCorrect: true
+      explanation: "Azure Disk Encryption leverages BitLocker (Windows) and dm-crypt (Linux) to securely encrypt virtual machine disks, protecting data at rest."
+    - content: "Manual encryption methods implemented at the application layer"
+      isCorrect: false
+      explanation: "While application layer encryption can be part of a security strategy, it should not replace disk-level encryption for comprehensive data protection."
+  - content: "How is network isolation achieved in Azure Kubernetes Service (AKS)?"
+    choices:
+    - content: "By disabling network policies"
+      isCorrect: false
+      explanation: "Disabling network policies would remove the mechanisms that restrict and control pod communication, reducing security."
+    - content: "Through unrestricted ingress and egress rules"
+      isCorrect: false
+      explanation: "Unrestricted ingress and egress rules would allow all types of traffic, negating the benefits of network isolation."
+    - content: "Using network policies to control ingress and egress traffic"
+      isCorrect: true
+      explanation: "Network policies in AKS enable administrators to define rules that govern ingress and egress traffic to pods, enhancing security."

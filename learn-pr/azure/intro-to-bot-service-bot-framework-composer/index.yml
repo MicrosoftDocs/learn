@@ -4,15 +4,16 @@ metadata:
   moduleType: introduction
   title: Introduction to Azure Bot Service and Bot Framework Composer
   description: Introduction to Azure Bot Service and Bot Framework Composer
-  ms.date: 04/10/2023
+  manager: mkluck
+  ms.date: 04/24/2024
   author: jasonkellingtonwaypoint
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: bot-service
 title: Introduction to Azure Bot Service and Bot Framework Composer
 summary: Use Azure Bot Service to create custom bots that provide enhanced user experiences and augment applications. Examine bot functionality and design. Explore Azure Bot Service tools, including Bot Framework Composer, and when to use them.
 abstract: |
-  By the end of this module, you'll know more about:
+  By the end of this module, you know more about:
     - The features and functionalities of a bot.
     - Bot design and using Azure Bot Service.
     - Creating a bot by using Bot Framework Composer.
@@ -35,7 +36,7 @@ products:
   - azure-bot-service
 subjects:
 - cloud-computing
-- chatbot
+- chatbots
 - artificial-intelligence
 units:
 - learn.azure.intro-to-bot-service-bot-framework-composer.1-introduction

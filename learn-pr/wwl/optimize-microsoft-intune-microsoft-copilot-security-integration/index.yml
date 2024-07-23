@@ -1,0 +1,62 @@
+### YamlMime:Module
+uid: learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration
+metadata:
+  title: Optimize Microsoft Intune for Microsoft Copilot for Security Integration
+  description: "Learn about Microsoft Security Copilot and Intune for securing corporate IT. Enhance security operations, get contextual responses, and improve incident response. Implement naming conventions and manage devices efficiently."
+  ms.date: 06/21/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: module
+  ms.service: microsoft-copilot
+  ai-usage: ai-assisted
+title: Optimize Microsoft Intune for Microsoft Copilot for Security Integration
+summary: Learn about Microsoft Security Copilot and Intune for securing corporate IT. Enhance security operations, get contextual responses, and improve incident response. Implement naming conventions and manage devices efficiently.
+abstract: |
+  After completing this module, you'll be able to:
+
+  - Use Microsoft Copilot for Security and Intune for Enhanced Endpoint Management and Security.
+
+  - Understand and Implement Effective Device Naming Conventions.
+
+  - Rename Devices in Microsoft Intune.
+
+  - Create and Manage Groups in Microsoft Intune.
+
+  - Understand Authentication and Role Assignment in Microsoft Copilot for Security.
+
+  - Integrate and Use Microsoft Security Copilot with Microsoft Intune.
+
+  - Create and Use Custom Prompts in Microsoft Security Copilot.
+
+  - Create and Use Custom Prompts for Microsoft Intune.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- security-engineer
+- security-operations-analyst
+- solution-architect
+- support-engineer
+products:
+- intune
+- ms-copilot
+subjects:
+- data-analytics
+- it-management-monitoring
+- threat-protection
+units:
+- learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.introduction
+- learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.understand-benefits-microsoft-security-copilot-intune
+- learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.implement-strong-naming-conventions
+- learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.rename-device-microsoft-intune
+- learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.add-groups-organize-users-devices
+- learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.understand-authentication-microsoft-copilot-security
+- learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.integrate-microsoft-security-copilot-microsoft-intune
+- learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.leverage-prompting-features-microsoft-copilot-security
+- learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.sample-prompts-microsoft-intune
+- learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.knowledge-check
+- learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.summary
+badge:
+  uid: learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.build-accessible-sharepoint-sites.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is a part of the "Build accessible SharePoint sites." module.
+  ms.date: 04/12/2024
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

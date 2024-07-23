@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-concurrency-postgresql.understand-isolation-levels
+title: Describe isolation levels
+metadata:
+  title: Describe isolation levels
+  description: "Describe isolation levels."
+  ms.date: 05/09/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-understand-isolation-levels.md)]

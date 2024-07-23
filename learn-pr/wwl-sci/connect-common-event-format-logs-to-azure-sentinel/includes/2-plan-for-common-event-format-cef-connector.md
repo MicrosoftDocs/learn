@@ -20,8 +20,6 @@ Make sure the Linux machine you use as a log forwarder is running one of the fol
 
 - 64-bit
 
-  - CentOS 7 and 8, including minor versions (not 6)
-
   - Amazon Linux 2017.09
 
   - Oracle Linux 7
@@ -35,8 +33,6 @@ Make sure the Linux machine you use as a log forwarder is running one of the fol
   - SUSE Linux Enterprise Server 12, 15
 
 - 32-bit
-
-  - CentOS 7 and 8, including minor versions (not 6)
 
   - Oracle Linux 7
 

@@ -16,7 +16,7 @@ If you're using this as a guide to perform your own web application migration, t
 - Migrating data from an on-premises SQL Server database to an Azure SQL database.
 - Setting up an TLS/SSL certificate.
 - Setting up custom domain names.
-- Setting up permissions in Azure Active Directory.
+- Setting up permissions in Microsoft Entra ID.
 
 If your next step is to migrate your data from an on-premises SQL Server database to an Azure SQL database, you might find the following module useful:
 

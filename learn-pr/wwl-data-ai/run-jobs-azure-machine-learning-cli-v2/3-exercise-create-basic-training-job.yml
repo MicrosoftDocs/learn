@@ -4,11 +4,10 @@ title: 'Exercise: Create a basic training job'
 metadata:
   title: 'Exercise: Create a basic training job'
   description: "Exercise: Create a basic training job"
-  ms.date: 01/06/2022
+  ms.date: 07/10/2024
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

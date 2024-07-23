@@ -1,5 +1,3 @@
-
-
 The easiest way to deploy a model to an online endpoint is to use an **MLflow** model and deploy it to a *managed* online endpoint. Azure Machine Learning will automatically generate the scoring script and environment for MLflow models.
 
 To deploy an MLflow model, you need to have created an endpoint. Then you can deploy the model to the endpoint.

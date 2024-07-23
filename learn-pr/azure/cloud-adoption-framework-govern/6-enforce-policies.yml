@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-govern.enforce-policies
+title: Enforce cloud governance policies
+metadata:
+  title: Enforce cloud governance policies
+  description: Learn how to enforce cloud governance policies and work through an exercise to name and tag resources.
+  ms.date: 07/15/2024
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-enforce-policies.md)]

@@ -4,11 +4,10 @@ title: Exercise - Deploy a high-level application to your Azure Sphere
 metadata:
   title: Exercise - Deploy a high-level application to your Azure Sphere
   description: In this section, we deploy a high-level application to your Azure Sphere
-  ms.date: 11/10/2020
+  ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 10 # dummy number at present
 content: |

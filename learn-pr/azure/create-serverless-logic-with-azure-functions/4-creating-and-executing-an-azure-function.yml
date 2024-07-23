@@ -4,11 +4,13 @@ title: Run your code on-demand with Azure Functions
 metadata:
   title: Run your code on-demand with Azure Functions
   description: Run your code on-demand with Azure Functions
-  ms.date: 04/19/2023
+  ms.date: 10/05/2023
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
+    - devx-track-js
   zone_pivot_groups: dev-lang-javascript-powershell
 durationInMinutes: 10
 content: |

@@ -1,4 +1,4 @@
-In this module, you deployed your first cloud-adoption plan, assessed a digital estate, and updated the cloud adoption plan to track the work required for you to be successful.
+In this module, you deployed your first cloud-adoption plan, assessed a digital estate, and updated the cloud-adoption plan to track the work required for you to be successful.
 
 ## Next steps
 

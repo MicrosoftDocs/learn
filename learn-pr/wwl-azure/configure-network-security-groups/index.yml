@@ -2,22 +2,27 @@
 uid: learn.wwl.configure-network-security-groups
 metadata:
   title: Configure network security groups
-  description: "Learn how to implement network security groups, and ensure network security group rules are correctly applied."
-  ms.date: 02/21/2023
+  description: Learn how to implement network security groups, and ensure network security group rules are correctly applied.
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ai-usage: ai-assisted
+  ms.service: azure-virtual-network
 title: Configure network security groups
 summary: Learn how to implement network security groups, and ensure network security group rules are correctly applied.
 abstract: |
   In this module, you learn how to:
-  - Determine when to use network security groups.
-  - Implement network security group rules.
-  - Evaluate network security group effective rules.
-  - Examine advantages of application security groups.
+  -   Determine when to use network security groups.
+  -   Create network security groups.
+  -   Implement and evaluate network security group rules.
+  -   Describe the function of application security groups.
 prerequisites: |
-  None
+  -   Familiarity with Azure virtual networks and resources such as virtual machines.
+  -   Working knowledge of the Azure portal so you can configure the network security groups.
+  -   Basic understanding of traffic routing and traffic control strategies.
 iconUrl: /training/achievements/network-security-groups.svg
 levels:
 - intermediate

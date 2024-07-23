@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-distribution-hololens-app.analyze-decision-criteria
+title: Analyze decision criteria
+metadata:
+  title: Analyze decision criteria
+  description: "This unit provides questions to ask yourself before choosing a distribution channel."
+  ms.date: 06/11/2024
+  author: aprilspeight
+  ms.author: tholewis
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-analyze-decision-criteria.md)]

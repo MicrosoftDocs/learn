@@ -13,7 +13,7 @@ Each storage account has two unique _access keys_ that are used to secure the st
 
 ## REST API endpoint
 
-In addition to access keys for authentication to storage accounts, your app will need to know the storage service endpoints to issue the REST requests.
+In addition to access keys for authentication to storage accounts, your app needs to know the storage service endpoints to issue the REST requests.
 
 The REST endpoint is a combination of your storage account _name_, the data type, and a known domain. For example:
 
@@ -40,27 +40,27 @@ DefaultEndpointsProtocol=https;AccountName={your-storage};
 
 ## Security
 
-Access keys are critical to providing access to your storage account, and as a result, shouldn't be given to any system or person that you don't want to have access to your storage account. Access keys are the equivalent of a username and password to access your computer.
+Access keys are critical to providing access to your storage account, and as a result, you shouldn't give them to any system or person that you don't want to have access to your storage account. Access keys are the equivalent of a username and password to access your computer.
 
-Typically, storage account connectivity information is stored within an environment variable, database, or configuration file.
+Typically, storage-account connectivity information is stored within an environment variable, database, or configuration file.
 
 > [!IMPORTANT]
-> Storing this information in a configuration file can be dangerous if you include that file in source control and store it in a public repository. This is a common mistake, and means that anyone can browse your source code in the public repository and see your storage account connection information.
+> Storing this information in a configuration file can be dangerous if you include that file in source control and store it in a public repository. This is a common mistake, and means that anyone can browse your source code in the public repository and see your storage-account connection information.
 
-Each storage account has two access keys. The reason for this is to allow keys to be rotated (regenerated) periodically as part of security best practice in keeping your storage account secure. This process can be done from the Azure portal or the Azure CLI/PowerShell command line tool.
+Each storage account has two access keys. This is to allow keys to be rotated (regenerated) periodically as part of security best practice in keeping your storage account secure. You can do this from the Azure portal or the Azure CLI/PowerShell command line tool.
 
-Rotating a key will invalidate the original key value immediately and will revoke access to anyone who obtained the key inappropriately. With support for two keys, you can rotate keys without causing downtime in your applications that use them. Your app can switch to using the alternate access key while the other key is regenerated. If you have multiple apps using this storage account, they should all use the same key to support this technique. Here's the basic idea:
+Rotating a key invalidates the original key value immediately and revokes access to anyone who obtained the key inappropriately. With support for two keys, you can rotate keys without causing downtime in your applications that use them. Your app can switch to using the alternate access key while the other key is regenerated. If you have multiple apps using this storage account, they should all use the same key to support this technique. Here's the basic idea:
 
-1. Update the connection strings in your application code to reference the secondary access key of the storage account.
-2. Regenerate the primary access key for your storage account using the Azure portal or command line tool.
+1. Update the connection strings in your application code to reference the storage account's secondary access key.
+2. Regenerate your storage account's primary access key using the Azure portal or command-line tool.
 3. Update the connection strings in your code to reference the new primary access key.
 4. Regenerate the secondary access key in the same manner.
 
 > [!TIP]
-> It's highly recommended that you periodically rotate your access keys to ensure they remain private, just like changing your passwords. If you are using the key in a server application, you can use an **Azure Key Vault** to store the access key for you. Key Vaults include support to synchronize directly to the Storage Account and automatically rotate the keys periodically. Using a Key Vault provides an additional layer of security, so your app never has to work directly with an access key.
+> We highly recommend that you periodically rotate your access keys to ensure they remain private, just like changing your passwords. If you're using the key in a server application, you can use an **Azure Key Vault** to store the access key for you. Key Vaults include support to synchronize directly to the Storage Account and automatically rotate the keys periodically. Using a Key Vault provides an additional layer of security, so your app never has to work directly with an access key.
 
 ### Shared access signatures (SAS)
 
-Access keys are the easiest approach to authenticating access to a storage account. However they provide full access to anything in the storage account, similar to a root password on a computer.
+Access keys are the easiest approach to authenticating access to a storage account. However, they provide full access to anything in the storage account, similar to a root password on a computer.
 
-Storage accounts offer a separate authentication mechanism called _shared access signatures_ that support expiration and limited permissions for scenarios where you need to grant limited access. You should use this approach when you're allowing other users to read and write data to your storage account. There are links to our documentation on this advanced topic at the end of the module.
+Storage accounts offer a separate authentication mechanism called _shared access signatures_ that support expiration and limited permissions for scenarios where you need to grant limited access. You should use this approach when you're allowing other users to read and write data to your storage account. You'll find links to our documentation on this advanced topic at the end of the module.

@@ -4,11 +4,10 @@ title: Train compute-intensive models with Azure Machine Learning
 metadata:
   title: Train compute-intensive models with Azure Machine Learning
   description: "Train compute-intensive models with Azure Machine Learning"
-  ms.date: 02/03/2023
+  ms.date: 07/10/2024
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

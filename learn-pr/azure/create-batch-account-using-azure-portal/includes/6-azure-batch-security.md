@@ -16,4 +16,4 @@ To restrict access to these nodes and reduce the discoverability of these nodes 
 
 ## Disk encryption
 
-With a Batch pool, you can access and store data on the OS and temporary disks of the compute node. Encrypting the server-side disk with a platform-managed key will safeguard this data with low overhead and convenience.
+With a Batch pool, you can access and store data on the OS and temporary disks of the compute node. Encrypting the server-side disk with a platform-managed key safeguards this data with low overhead and convenience.

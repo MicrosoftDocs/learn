@@ -5,11 +5,13 @@ metadata:
   unitType: Set up
   title: Set up your Azure environment
   description: Set up your Azure environment
-  ms.date: 9/28/2021
+  ms.date: 02/09/2024
   author: chtrembl
   ms.author: chtrembl
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-extended-java
 durationInMinutes: 6
 content: |
   [!include[](includes/2-setup.md)]

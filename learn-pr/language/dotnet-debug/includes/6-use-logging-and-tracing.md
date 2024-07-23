@@ -1,4 +1,4 @@
-Now that the application has started development, it's good to add more diagnostics to the logic to help developers as they add new features. We can use our new learnings on debug diagnostics to do this task.
+Now that the application has started development, it's good to add more diagnostics to the logic to help developers as they add new features. We can use our new knowledge of debug diagnostics to accomplish this task.
 
 ## Write to the debug console
 
@@ -17,7 +17,7 @@ Debug.WriteLine($"Entering {nameof(Fibonacci)} method");
 Debug.WriteLine($"We are looking for the {n}th number");
 ```
 
-At the end of our `for` loop, we could print out every value. Or, we could use a conditional print statement by using `WriteIf` or `WriteLineIf`. Add a print line only when `sum` is 1 at the end of the for loop.
+At the end of our `for` loop, we could print out every value. We could also use a conditional print statement by using `WriteIf` or `WriteLineIf` to add a print line only when `sum` is 1 at the end of the for loop:
 
 ```csharp
 for (int i = 2; i <= n; i++)
@@ -29,7 +29,7 @@ for (int i = 2; i <= n; i++)
 }
 ```
 
-Debug the application, and you should see the following output:
+Debug the application and you should get the following output:
 
 ```output
 Entering Fibonacci method

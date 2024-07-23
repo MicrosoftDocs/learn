@@ -4,25 +4,27 @@ metadata:
   moduleType: standard
   title: Structure your Bicep code for collaboration
   description: Learn how to create modular, reusable, and documented infrastructure as code by using Bicep, and enable team collaboration in the process.
-  ms.date: 08/06/2021
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-resource-manager
+  manager: jasongroce
+  ms.date: 12/19/2023
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
+  ms.devlang: bicep
 title: Structure your Bicep code for collaboration
 summary: |
   Build Bicep files that support collaborative development and follow best practices. Plan your parameters to make your templates easy to deploy. Use a consistent style, clear structure, and comments to make your Bicep code easy to understand, use, and modify.
 abstract: |
   After completing this module, you'll be able to:
-    - Select the appropriate parameters for a Bicep file
-    - Structure your Bicep code and parameters to support team collaboration
-    - Document your Bicep code by using comments and resource tags
+    - Select the appropriate parameters for a Bicep file.
+    - Structure your Bicep code and parameters to support team collaboration.
+    - Document your Bicep code by using comments and resource tags.
 prerequisites: |
     You should be familiar with Bicep structure and syntax, including parameters, loops, conditions, and modules.
 
     To follow along with the exercises in the module, you'll need the following:
-     - [Visual Studio Code](https://code.visualstudio.com), installed locally
-     - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally
+     - [Visual Studio Code](https://code.visualstudio.com) installed locally
+     - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed locally
 iconUrl: /training/achievements/bicep/structure-bicep-code-collaboration.svg
 levels:
   - intermediate
