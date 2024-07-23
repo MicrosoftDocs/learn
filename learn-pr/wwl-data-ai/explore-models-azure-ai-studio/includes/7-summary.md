@@ -1,5 +1,5 @@
 In this module, you learned:
 
-- Understand when to fine-tune a model.
-- Prepare your data to fine-tune a chat completion model.
-- Fine-tune a base model in the Azure AI Studio.
+- Select a language model from the model catalog.
+- Deploy a model to an endpoint.
+- Test a model and improve the performance of the model.

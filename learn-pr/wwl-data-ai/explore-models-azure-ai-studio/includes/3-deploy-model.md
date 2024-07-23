@@ -1,30 +1,31 @@
-When you decide you want to fine-tune a language model, you need to identify the dataset you can use to fine-tune your language model.
+When you develop a custom copilot, you need to integrate language models into your application. To be able to use a language model, you need to deploy the model. Let's explore how to deploy language models in the Azure AI Studio, after first understanding why to deploy a model.
 
-Similar to any machine learning model, the quality of the dataset has a large effect on the quality of your model. Though you need less data than when you would train a language model from scratch, you still might need enough data to maximize the consistency of your desired model's behavior. How much data you need depends on your use case.
+## Understand why to deploy a model
 
-When you fine-tune a language model for chat completion, the data you use to fine-tune a model is a collection of sample conversations. More specifically, the data should contain three components:
+Language models, like traditional machine learning models, are designed to generate output based on some input. To benefit from a model, you want a solution that can send input to a model, which the model processes, and then visualize the output somewhere.
 
-- The system message
-- The user message
-- The assistant's answer
+With custom copilots, you have a chat application that expects input from a user, often in the form of a question. You want the model to process that input, and to generate a response that you can send back, through the chat application, to your user. To integrate a language model that can process input data and generate output data, you need the model to be deployed to an **endpoint**.
 
-The three variables come together in a JSON Lines or JSONL file. For example, one line in such a dataset might look like:
+An endpoint is a specific URL where a deployed model or service can be accessed. It acts as a gateway for users to send their requests to the model and receive the results. Each model deployment typically has its own unique endpoint, which allows different applications to communicate with the model through an **API** (**Application Programming Interface**).
 
-```json
-{"messages": [{"role": "system", "content": "You are an Xbox customer support agent whose primary goal is to help users with issues they are experiencing with their Xbox devices. You are friendly and concise. You only provide factual answers to queries, and do not provide answers that are not related to Xbox."}, {"role": "user", "content": "Is Xbox better than PlayStation?"}, {"role": "assistant", "content": "I apologize, but I cannot provide personal opinions. My primary job is to assist you with any issues related to your Xbox device. Do you have any Xbox-related issues that need addressing?"}]}
-```
+When you deploy a language model from the model catalog with the Azure AI Studio, you get an endpoint, which consists of a **target URI** (Uniform Resource Identifier) and a unique **key**. For example, a target URI for a deployed GPT-3.5 model can be:
 
-The dataset should show the model's ideal behavior. You can create this dataset based on the chat history of a chat application you have. A few things to keep in mind when you use real data is to:
+`https://ai-aihubdevdemo.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2023-03-15-preview`
 
-- Remove any personal or sensitive information.
-- Not only focus on creating a large training dataset, but also ensure your dataset includes a diverse set of examples.
+The URI includes your AI hub name, your deployed model name, and it specifies what you want the model to do. In the example, the GPT-3.5 model is used for chat completion.
 
-You can include multiple turns of a conversation on a single line in the dataset. If you want to fine-tune only on specific assistant messages, you can optionally use the `weight` key-value pair. When the weight is set to 0, the message is ignored, when you set to 1, the message is included for training.
+To protect your deployed models, each deployment comes with a key. You're only authorized to send and receive requests to and from the target URI, if you also provide the key to authenticate.
 
-An example of a multi-turn chat file format with weights:
+To use a deployed model, you typically make an API call. You can make an API call using code like Python or C#, or a tool like Azure AI Studio or [Postman](https://www.postman.com/?azure-portal=true). An API call involves sending a request to the model's endpoint using the API. The request usually includes the input data that you want the model to process. The model then processes the data and sends back a response with the results. This way, you can interact with the deployed model and utilize its capabilities in your applications.
 
-```json
-{"messages": [{"role": "system", "content": "Marv is a factual chatbot that is also sarcastic."}, {"role": "user", "content": "What's the capital of France?"}, {"role": "assistant", "content": "Paris", "weight": 0}, {"role": "user", "content": "Can you be more sarcastic?"}, {"role": "assistant", "content": "Paris, as if everyone doesn't know that already.", "weight": 1}]}
-```
+Now that you understand why you want to deploy a model, let's explore the deployment options in the Azure AI Studio.
 
-When preparing your dataset to fine-tune a language model, you should understand your desired model behaviors, create a dataset in JSONL format, and ensure the examples you include are high quality and diverse. By preparing your dataset, you have a higher chance that the fine-tuned model improves your chat application's performance.
+## Deploy a language model in the Azure AI Studio
+
+When you deploy a language model in the Azure AI Studio, you have several types available, which depend on the model you want to deploy:
+
+|   |Azure OpenAI models|Models deployed as Serverless APIs (pay-as-you-go)|Models deployed with user-managed compute|
+|---|---|---|---|
+|Deploy the model|No, you aren't billed for deploying an Azure OpenAI model to your project.|Yes, you're billed minimally per the infrastructure of the endpoint.|Yes, you're billed for the infrastructure hosting the model per minute.|
+|Call the endpoint|Yes, you're billed based on your token usage.|Yes, you're billed based on your token usage.|None.|
+
