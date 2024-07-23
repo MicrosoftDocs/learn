@@ -42489,6 +42489,11 @@
       "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/5-exercise-explore-image-analysis.md",
       "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/7-exercise-train-custom-object-detection-model.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
     }
   ]
 }
