@@ -3743,3 +3743,8 @@ achievements:
   title: Construct Internet of Things devices using the .NET IoT Libraries
   summary: In this module, you'll learn to read environmental sensors and activate relays using the .NET IoT Libraries.
   iconUrl: /training/achievements/iot/create-iot-device-dotnet.svg
+- uid: learn.wwl.detect-objects-images-custom-vision.badge
+  type: badge
+  title: Detect objects in images with Azure AI Custom Vision
+  summary: Object detection is a form of computer vision in which artificial intelligence (AI) agents can identify and locate specific types of object in an image or camera feed.
+  iconUrl: /training/achievements/detect-objects-images-custom-vision.svg
