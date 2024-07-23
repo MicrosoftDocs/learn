@@ -31,7 +31,6 @@ subjects:
 - artificial-intelligence
 units:
 - learn.wwl.explore-cognitive-services-vision.train-custom-models
-- learn.wwl.explore-cognitive-services-vision.knowledge-check
 - learn.wwl.explore-cognitive-services-vision.summary
 badge:
   uid: learn.wwl.explore-cognitive-services-vision.badge
