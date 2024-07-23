@@ -28,6 +28,5 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn.wwl.detect-objects-images-custom-vision.what-is-object-detection
 badge:
   uid: learn.wwl.detect-objects-images-custom-vision.badge
