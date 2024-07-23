@@ -18,7 +18,7 @@ quiz:
       choices:
         - content: "VPN Proxy support via self-signed certificates"
           isCorrect: true
-          explanation: VPN Proxy support via self-signed certificates is not available with GitHub Copilot for Individuals, but is available with GitHub Copilot for Business.
+          explanation: VPN Proxy support via self-signed certificates isn't available with GitHub Copilot for Individuals, but is available with GitHub Copilot for Business.
         - content: "Offers multi-line function suggestions"
           isCorrect: false
           explanation: Offers multi-line function suggestions is a supported functionality both in GitHub Copilot for Individuals and GitHub Copilot for Business.
@@ -41,7 +41,7 @@ quiz:
           explanation: The percentage of developers that said GitHub Copilot helps them code faster is higher than 65%.
         - content: "90%"
           isCorrect: true
-          explanation: 90% is the correct percentage of developers that said GitHub Copilot helps them code faster.
+          explanation: Ninety percent (90%) is the correct percentage of developers that said GitHub Copilot helps them code faster.
     - content: "After you enforced your GitHub Copilot for Business policy, where do you first navigate to in order to enable Copilot for Business for all current and future users?"
       choices:
         - content: "Policies"
