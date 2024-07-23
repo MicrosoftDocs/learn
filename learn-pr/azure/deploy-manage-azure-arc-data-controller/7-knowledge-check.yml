@@ -5,6 +5,7 @@ metadata:
   title: Knowledge check
   description: Demonstrate your understanding of Azure Arc data controller.
   ms.date: 07/22/2024
+  author: MikeRayMSFT
   ms.author: mikeray
   ms.topic: unit
 durationInMinutes: 3
