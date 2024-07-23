@@ -167,6 +167,8 @@ In the Visual Studio Code terminal, run the following command:
 az group delete --resource-group ToyReusable --yes --no-wait
 ```
 
+The resource group is deleted in the background.
+
 ::: zone-end
 
 ::: zone pivot="powershell"
