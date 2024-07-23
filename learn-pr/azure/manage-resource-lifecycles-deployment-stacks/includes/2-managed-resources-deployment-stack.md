@@ -14,21 +14,17 @@ Deployment stacks can be created at different scopes, such as resource groups, s
 
 What happens to a resource that is no longer managed by the deployment stack? If a resource is no longer defined in a template file and the stack is updated, the resource can become detached or deleted. A detached resource is a resource that is no longer managed by the stack, but the resource continues to exist within Azure. A deleted resource is a resource that is no longer managed by the stack, and is deleted from Azure.
 
-For example, let's consider our Bicep file from the last module.
+Let's consider our Bicep file from the last module. Our file defines an app service plan, a web app, and an Azure SQL server and database.
 
-:::code language="bicep" source="code/1a-template.bicep" range="1-4,18-43":::
+:::code language="bicep" source="code/1a-template.bicep" range="1-63":::
 
-The template file defines an app service plan, a web app, and an Azure SQL server and database. Let's say that we need to remove the existing web app from our application. We edit our Bicep file, removing the highlighted code that references our web app.
+Let's say that we need to remove the existing web app from our application. We edit our Bicep file, removing the highlighted code that references our web app.
 
 :::code language="bicep" source="code/1a-template.bicep" range="1-63" highlight="18-19,35-42":::
 
-We are left with the following code in our file:
-
-:::code language="bicep" source="code/1a-template.bicep" range="1-17,21-34,44-63":::
-
 ::: zone pivot="cli"
 
-To apply the changes, we need to update the deployment stack. To update a deployment stack using Azure CLI, use the `az stack group create` command.
+With the code removed, we need to apply the changes and update the deployment stack. To update a deployment stack using Azure CLI, use the `az stack group create` command.
 
 ```azurecli
 az stack group create \
@@ -50,7 +46,7 @@ After the update operation is complete, the app service plan is the only resourc
 
 ::: zone pivot="powershell"
 
-To apply the changes, we need to update the deployment stack. To update a deployment stack using Azure PowerShell, use the `Set-AzResourceGroupDeploymentStack` command.
+With the code removed, we need to apply the changes and update the deployment stack. To update a deployment stack using Azure PowerShell, use the `Set-AzResourceGroupDeploymentStack` command.
 
 ```azurepowershell
 Set-AzResourceGroupDeploymentStack `

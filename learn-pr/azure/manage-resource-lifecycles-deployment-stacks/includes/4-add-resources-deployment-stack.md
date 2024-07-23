@@ -18,7 +18,7 @@ To add the existing log analytics workspace, we need to add its definition to ou
 
 ::: zone pivot="cli"
 
-With the Bicep file updated, we want to update the deployment stack so that the changes made to the resources in the Bicep file are implemented.
+With the Bicep file modified, we want to update the deployment stack so that the changes made to the resources in the Bicep file are implemented.
 
 To update a deployment stack using Azure CLI, use the `az stack group create` command.
 
@@ -31,16 +31,11 @@ az stack group create \
     --deny-settings-mode none
 ```
 
-> [!NOTE]
-> Azure CLI does not have a dedicated command to update a deployment stack. Use the create command to update the stack.
-
-When performing an update on the stack, you receive a message stating that the stack already exists in the current subscription. If the value of the _action on unmanage_ parameter changes, the warning alerts you of the new values.
-
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-With the Bicep file updated, we want to update the deployment stack so that the changes made to the resources in the Bicep file are implemented.
+With the Bicep file modified, we want to update the deployment stack so that the changes made to the resources in the Bicep file are implemented.
 
 To update a deployment stack using Azure PowerShell, use the `Set-AzResourceGroupDeploymentStack` command.
 
@@ -69,7 +64,7 @@ To add the new application insights instance, we need to add its definition to o
 
 ::: zone pivot="cli"
 
-With the Bicep file updated, we want to update the deployment stack so that the changes made to the resources in the Bicep file are implemented.
+With the Bicep file modified, we want to update the deployment stack so that the changes made to the resources in the Bicep file are implemented.
 
 To update a deployment stack using Azure CLI, use the `az stack group create` command.
 
@@ -91,7 +86,7 @@ When performing an update on the stack, you receive a message stating that the s
 
 ::: zone pivot="powershell"
 
-With the Bicep file updated, we want to update the deployment stack so that the changes made to the resources in the Bicep file are implemented.
+With the Bicep file modified, we want to update the deployment stack so that the changes made to the resources in the Bicep file are implemented.
 
 To update a deployment stack using Azure PowerShell, use the `Set-AzResourceGroupDeploymentStack` command.
 

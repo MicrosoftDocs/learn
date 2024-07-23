@@ -125,7 +125,7 @@ Next, we need to create our deployment stack scoped to our recently created reso
 
 ::: zone-end
 
-## Update the Bicep file to add the existing log analytics workspace and a new application insights instance
+## Modify the Bicep file to add the existing log analytics workspace and a new application insights instance
 
 1. Open the _main.bicep_ file in Visual Studio Code.
 
@@ -139,7 +139,7 @@ Next, we need to create our deployment stack scoped to our recently created reso
 
 1. Save the changes to the file.
 
-## Update the Bicep file to modify the app service plan and app service
+## Modify the Bicep file to modify the app service plan and app service
 
 1. Open the _main.bicep_ file in Visual Studio Code.
 
@@ -157,7 +157,7 @@ Next, we need to create our deployment stack scoped to our recently created reso
 
 ::: zone pivot="cli"
 
-With the Bicep file updated, we want to update the deployment stack so that the changes made to the resources in the Bicep file are implemented.
+With the Bicep file modified, we want to update the deployment stack so that the changes made to the resources in the Bicep file are implemented.
 
 1. To update the deployment stack, run the following command from the terminal in Visual Studio Code.
 
@@ -188,7 +188,7 @@ With the Bicep file updated, we want to update the deployment stack so that the 
 
 ::: zone pivot="powershell"
 
-With the Bicep file updated, we want to update the deployment stack so that the changes made to the app service plan are implemented.
+With the Bicep file modified, we want to update the deployment stack so that the changes made to the app service plan are implemented.
 
 1. To update the deployment stack, run the following command from the terminal in Visual Studio Code.
 

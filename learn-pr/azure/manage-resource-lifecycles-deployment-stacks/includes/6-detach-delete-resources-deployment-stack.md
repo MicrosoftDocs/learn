@@ -58,10 +58,6 @@ The template file defines an app service plan, a web app, an Azure SQL server an
 
 :::code language="bicep" source="code/1b-template.bicep" range="1-100" highlight="22-23,28-29,47-54,79-100":::
 
-We are left with the following code in our file:
-
-:::code language="bicep" source="code/1b-template.bicep" range="1-21,25-26,31-46,55-77":::
-
 ::: zone pivot="cli"
 
 To apply the changes, we need to update the deployment stack. To update a deployment stack using Azure CLI, use the `az stack group create` command.
@@ -74,11 +70,6 @@ az stack group create \
     --action-on-unmanage detachAll \
     --deny-settings-mode none
 ```
-
-> [!NOTE]
-> Azure CLI does not have a dedicated command to update a deployment stack. Use the create command to update the stack.
-
-When performing an update on the stack, you receive a message stating that the stack already exists in the current subscription. If the value of the _action on unmanage_ parameter changes, the warning alerts you of the new values.
 
 After the update operation is complete, the log analytics workspace and application insights instance are no longer managed by the deployment stack. In our command, we used `--action-on-unmanage detachAll` to specify how Azure handles resources that are no longer managed by a deployment stack. In this case, the resources are detached from the deployment stack, but they still exist in the resource group.
 
@@ -147,11 +138,6 @@ az stack group create \
     --action-on-unmanage deleteAll \
     --deny-settings-mode none
 ```
-
-> [!NOTE]
-> Azure CLI does not have a dedicated command to update a deployment stack. Use the create command to update the stack.
-
-When performing an update on the stack, you receive a message stating that the stack already exists in the current subscription. If the value of the _action on unmanage_ parameter changes, the warning alerts you of the new values.
 
 After the update operation is complete, the only resources that remain are the app service plan and web app. In our command, we used `--action-on-unmanage deleteAll` to specify how Azure handles resources that are no longer managed by a deployment stack. In this case, the resources are deleted from the deployment stack and from Azure.
 
