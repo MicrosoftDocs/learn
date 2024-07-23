@@ -42519,6 +42519,11 @@
       "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/9-summary.md",
       "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/6-train-custom-models.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
     }
   ]
 }
