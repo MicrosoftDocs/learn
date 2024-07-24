@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Assessing a logistic regression model
   description: Exercise unit learning to assess a logistic regression model
   ms.date: 04/06/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 10
 sandbox: true

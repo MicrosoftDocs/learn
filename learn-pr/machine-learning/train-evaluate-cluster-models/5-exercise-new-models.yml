@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Train and evaluate advanced clustering models
   description: "Exercise - Train and evaluate advanced clustering models"
   ms.date: 09/07/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 12
 sandbox: true

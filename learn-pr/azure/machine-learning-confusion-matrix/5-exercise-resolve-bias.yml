@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Resolving biases in a classification model
   description: Exercise unit about resolving biases in a classification model
   ms.date: 04/14/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 10
 sandbox: true

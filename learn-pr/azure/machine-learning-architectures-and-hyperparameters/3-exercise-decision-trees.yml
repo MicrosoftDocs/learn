@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Decision trees and model architecture
   description: Learn how to build a simple model.
   ms.date: 04/17/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 8
 sandbox: true

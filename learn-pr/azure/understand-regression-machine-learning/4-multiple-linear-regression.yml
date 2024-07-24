@@ -5,8 +5,8 @@ metadata:
   title: Multiple linear regression and R-squared
   description: Conceptual unit about multiple linear regression and R-squared in machine learning
   ms.date: 04/20/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 4
 content: |

@@ -4,10 +4,12 @@ title: Create a text to speech application using a text file
 metadata:
   title: Create a text to speech application using a text file
   description: Learn how to create a text to speech application using a text file.
-  ms.date: 12/27/2022
   author: rmcmurray
   ms.author: robmcm
+  ms.date: 12/27/2022
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 azureSandbox: false
 durationInMinutes: 5
 content: |
