@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.ai-security-controls
+metadata:
+  ms.author: sayoung
+  author: sarah-yo
+  ms.date: 07/24/2024
+  title: AI Security Controls
+  description: Security controls that you can implement in AI systems to increase the security posture of AI environments
+  ms.topic: module
+  ms.collection: ce-advocates-ai-copilot
+  ms.service: artificial-intelligence
+title: AI security controls
+summary: Overview of the security controls that you can implement in AI systems to increase the security posture of AI environments
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe security controls for AI systems
+  - Understand when these controls should be used
+  - Understand the types of attacks these controls mitigate
+prerequisites:  |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Fundamental security concepts
+  - Fundamental AI concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.ai-security-controls.introduction
+- learn.ai-security-controls.reviewing-ai-open-source-libraries
+- learn.ai-security-controls.content-filters
+- learn.ai-security-controls.implementing-ai-data-security
+- learn.ai-security-controls.creating-metaprompts
+- learn.ai-security-controls.grounding-ai-systems
+- learn.ai-security-controls.implementing-application-security-best-practices-for-ai-enabled-applications
+- learn.ai-security-controls.knowledge-check
+- learn.ai-security-controls.summary
+badge:
+  uid: learn.ai-security-controls-badge

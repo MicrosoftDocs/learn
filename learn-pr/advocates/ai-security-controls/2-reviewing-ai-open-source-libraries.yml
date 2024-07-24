@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.ai-security-controls.reviewing-ai-open-source-libraries
+title: Reviewing AI open-source libraries
+metadata:
+  title: Reviewing AI open-source libraries
+  description: TBD
+  ms.date: 07/24/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-reviewing-ai-open-source-libraries.md)]
