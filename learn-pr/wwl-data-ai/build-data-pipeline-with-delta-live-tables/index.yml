@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.build-data-pipeline-with-delta-live-tables
 metadata:
-  title: "Build data pipeline with Delta Live Tables"
+  title: "Build data pipelines with Delta Live Tables"
   description: "Learn how to build data pipelines with Delta Live Tables in Azure Databricks"
   ms.date: "07/23/2024"
   author: wwlpublish
   ms.author: theresai
   ms.topic: module-standard-task-based
   ms.service: azure-databricks
-title: Build data pipeline with Delta Live Tables
+title: Build data pipelines with Delta Live Tables
 summary: "Building data pipelines with Delta Live Tables enables real-time, scalable, and reliable data processing using Delta Lake's advanced features in Azure Databricks"
 abstract: |
   In this module, you'll learn how to:
