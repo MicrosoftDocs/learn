@@ -3,11 +3,13 @@ uid: learn.wwl.build-copilot-ai-studio.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary of key learning points on building a custom copilot with the Azure AI Studio."
-  ms.date: 02/21/2024
+  description: Summary of key learning points on building a custom copilot with the Azure AI Studio.
   author: madiepev
   ms.author: madiepev
+  ms.date: 02/21/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

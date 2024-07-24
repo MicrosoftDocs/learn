@@ -3,13 +3,13 @@ uid: learn.wwl.generate-documentation-using-github-copilot-tools.examine-explain
 title: Examine the "document" and "explain" features of GitHub Copilot Chat
 metadata:
   title: Examine the "document" and "explain" features of GitHub Copilot Chat
-  description: "Examine the \"document\" and \"explain\" features of GitHub Copilot Chat"
-  ms.date: 05/16/2024
+  description: Examine the document and explain features of GitHub Copilot Chat
   author: wwlpublish
   ms.author: cahowd
+  ms.date: 05/16/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/2-examine-explain-document-features-github-copilot.md)]

@@ -3,10 +3,12 @@ uid: learn.student-evangelism.analyze-rock-images-ai-nasa.2-import-ai-libraries
 metadata:
   title: Exercise - Import Python libraries into Jupyter Notebook
   description: Run code to import the AI libraries to use with your Jupyter Notebook file.
-  ms.date: 04/11/2021
   author: softchris
   ms.author: chnoring
+  ms.date: 04/11/2021
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom:
     - team=nextgen
     - devx-track-python
