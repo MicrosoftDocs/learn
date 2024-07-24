@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-lighthouse.1-introduction
 metadata:
   title: Introduction
   description: Azure Lighthouse enables multitenant management with scalability, higher automation, and enhanced governance across resources. 
-  ms.date: 02/09/2023
+  ms.date: 07/24/2024
   author: JnHs
   ms.author: jenhayes
   ms.topic: unit
