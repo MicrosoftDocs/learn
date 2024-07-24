@@ -5,8 +5,8 @@ metadata:
   title: Confusion matrices
   description: Conceptual unit about confusion matrices in machine learning
   ms.date: 04/14/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 4
 content: |
