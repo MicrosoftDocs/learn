@@ -3,11 +3,13 @@ uid: learn.wwl.finetune-model-copilot-ai-studio.finetune-model
 title: Explore fine-tuning language models in Azure AI Studio
 metadata:
   title: Explore fine-tuning foundation models in Azure AI Studio
-  description: "Explore fine-tuning foundation models from the model catalog in Azure AI Studio"
-  ms.date: 6/26/2024
+  description: Explore fine-tuning foundation models from the model catalog in Azure AI Studio
   author: madiepev
   ms.author: madiepev
+  ms.date: 6/26/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 8
 content: |
   [!include[](includes/4-finetune-model.md)]

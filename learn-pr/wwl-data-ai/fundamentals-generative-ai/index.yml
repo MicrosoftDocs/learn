@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.fundamentals-generative-ai
 metadata:
-  title: Fundamentals of Generative AI          
-  description: "Learn about how large language models form the foundation of generative AI applications and understand how to work with Microsoft Copilot."               # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 5/15/2024               
-  author: sherzyang       
-  ms.author: sheryang            
-  ms.topic: module-intro-to-product # Please don't edit, used for our analytics
+  title: Fundamentals of Generative AI
+  description: Learn about how large language models form the foundation of generative AI applications and understand how to work with Microsoft Copilot.
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 5/15/2024
   ms.service: azure-ai-openai
+  ms.topic: module-intro-to-product
+  ms.collection:
+    - wwl-ai-copilot
 title: Fundamentals of Generative AI
 summary: "In this module, you explore the way in which language models enable AI applications and services to generate original content based on natural language input. You also learn how generative AI enables the creation of copilots that can assist humans in creative tasks."
 abstract: |

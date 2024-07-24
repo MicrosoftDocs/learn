@@ -3,11 +3,13 @@ uid: learn.wwl.finetune-model-copilot-ai-studio.prepare-data
 title: Prepare your data to fine-tune a chat completion model
 metadata:
   title: Prepare your data to fine-tune a chat completion model
-  description: "Prepare your data to fine-tune a chat completion model in the Azure AI studio."
-  ms.date: 6/26/2024
+  description: Prepare your data to fine-tune a chat completion model in the Azure AI studio.
   author: madiepev
   ms.author: madiepev
+  ms.date: 6/26/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/3-prepare-data.md)]

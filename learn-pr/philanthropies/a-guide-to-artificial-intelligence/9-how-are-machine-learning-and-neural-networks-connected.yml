@@ -4,10 +4,12 @@ title: How are machine learning and neural networks connected?
 metadata:
   title: How are machine learning and neural networks connected?
   description: This module explores fundamental concepts in artificial intelligence (AI) and machine learning.
-  ms.date: 01/23/2024
   author: yoosunee
   ms.author: andreapark
+  ms.date: 01/23/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/9-how-are-machine-learning-and-neural-networks-connected.md)]

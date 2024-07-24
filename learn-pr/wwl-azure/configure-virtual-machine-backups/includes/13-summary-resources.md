@@ -4,7 +4,7 @@ In this module, you identified features and usage cases for different Azure back
 
 The main takeaways from this module are:
 
-- Azure Site Recovery enables failover and continued access to applications in the event of an outage. This protection is provided by replicating workloads to a secondary location.
+- Azure Site Recovery enables failover and continued access to applications if an outage occurs. This protection is provided by replicating workloads to a secondary location.
 
 - Azure Backup provides secure backups for virtual machines, allowing for the restoration of entire virtual machines or specific files.
 
