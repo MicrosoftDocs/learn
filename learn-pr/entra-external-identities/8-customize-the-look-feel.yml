@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microsoft-entra-external-identities.eeid-poc.customize-the-look-and-feel-of-your-flows
+uid: learn.microsoft-entra-external-identities.eeid-poc.customize-the-look-feel
 title: Customize the look and feel of your flows
 metadata:
   title: Customize the look and feel of your flows
@@ -12,5 +12,5 @@ metadata:
   ms.service: entra-external-id
 durationInMinutes: 10
 content: |
-  [!include[](includes/8-customize-the-look-and-feel-of-your-flows.md)]
+  [!include[](includes/8-customize-the-look-feel.md)]
   [!include[](includes/linktosurvey.md)]

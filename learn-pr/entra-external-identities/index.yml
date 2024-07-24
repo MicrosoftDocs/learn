@@ -44,7 +44,7 @@ units:
 - learn.microsoft-entra-external-identities.eeid-poc.create-a-sign-up-and-sign-in-user-flow
 - learn.microsoft-entra-external-identities.eeid-poc.add-an-admin-account
 - learn.microsoft-entra-external-identities.eeid-poc.collect-user-attributes-during-sign-up
-- learn.microsoft-entra-external-identities.eeid-poc.customize-the-look-and-feel-of-your-flows
+- learn.microsoft-entra-external-identities.eeid-poc.customize-the-look-feel
 - learn.microsoft-entra-external-identities.eeid-poc.enable-social-identity-provider-sign-in
 - learn.microsoft-entra-external-identities.eeid-poc.validate-attributes-collected-during-sign-up
 - learn.microsoft-entra-external-identities.eeid-poc.enable-multifactor-authentication
