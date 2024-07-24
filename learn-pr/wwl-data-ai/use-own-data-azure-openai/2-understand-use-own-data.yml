@@ -3,11 +3,13 @@ uid: learn.wwl.use-own-data-azure-openai.understand-use-own-data
 title: Understand Retrieval Augmented Generation (RAG) with Azure OpenAI Service
 metadata:
   title: Understand Retrieval Augmented Generation (RAG) with Azure OpenAI Service
-  description: "Learn how to use Retrieval Augmented Generation (RAG) with Azure OpenAI Service."
-  ms.date: 2/21/2024
+  description: Learn how to use Retrieval Augmented Generation (RAG) with Azure OpenAI Service.
   author: ivorb
   ms.author: berryivor
+  ms.date: 2/21/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/2-understand-use-own-data.md)]
