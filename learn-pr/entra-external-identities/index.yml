@@ -37,7 +37,7 @@ products:
 subjects:
   - identity-access
 units:
-- learn.microsoft-entra-external-identities.eeid-poc.introduction
+- learn.microsoft-entra-external-identities.eeid-poc.Introduction
 - learn.microsoft-entra-external-identities.eeid-poc.prepare
 - learn.microsoft-entra-external-identities.eeid-poc.create-an-external-tenant
 - learn.microsoft-entra-external-identities.eeid-poc.register-an-application
