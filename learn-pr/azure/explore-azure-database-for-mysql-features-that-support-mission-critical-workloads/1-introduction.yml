@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-azure-database-for-mysql-features-support-mission-critical-workloads.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "This unit introduces the learning path. The learning path covers security, business continuity, performance. It concludes with a knowledge check and summary."
+  ms.date: 07/08/2024
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

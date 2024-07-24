@@ -3,11 +3,13 @@ uid: learn.github.introduction-to-github-copilot
 metadata:
   title: Introduction to GitHub Copilot
   description: GitHub Copilot is an AI pair programmer that offers autocomplete-style suggestions as you code.
-  ms.date: 12/5/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: module
+  ms.date: 12/5/2023
   ms.service: github-copilot
+  ms.topic: module
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Introduction to GitHub Copilot
 summary: GitHub Copilot uses the OpenAI Codex to suggest code and entire functions in real-time, right from your editor.
 abstract: |
