@@ -3,11 +3,13 @@ uid: learn.wwl.analyze-images.exercise-computer-vision
 title: Exercise - Analyze images with Azure AI Vision
 metadata:
   title: Exercise - Analyze images with Azure AI Vision
-  description: "Exercise - Analyze images with Azure AI Vision"
-  ms.date: 02/05/2024
+  description: Exercise - Analyze images with Azure AI Vision
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 02/05/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labId: 152411
 labModal: true

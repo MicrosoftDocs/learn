@@ -4,7 +4,7 @@ title: Deploy Azure Container Instances with a sidecar container
 metadata:
   title: Deploy Azure Container Instances with a sidecar container
   description: Deploy Azure Container Instances with a sidecar container to enhance application functionality without having to modify the application code.
-  ms.date: 10/12/2023
+  ms.date: 07/24/2024
   author: erjosito
   ms.author: jomore
   ms.topic: unit

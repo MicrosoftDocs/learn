@@ -3,11 +3,13 @@ uid: learn.wwl.prepare-to-develop-ai-solutions-azure.understand-capabilities-of-
 title: Understand capabilities of the Azure OpenAI Service
 metadata:
   title: Understand capabilities of the Azure OpenAI Service
-  description: "Understand capabilities of the Azure OpenAI Service"
-  ms.date: 12/10/2023
+  description: Understand capabilities of the Azure OpenAI Service
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 12/10/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

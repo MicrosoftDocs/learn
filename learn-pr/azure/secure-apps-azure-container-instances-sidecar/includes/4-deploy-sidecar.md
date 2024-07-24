@@ -85,7 +85,7 @@ Complex configurations such as sidecars require using YAML instead of Azure CLI.
 
 1. Create a YAML file that specifies the properties for the sidecar container by combining all the information you stored in variables. Be aware of the following points:
 
-    - The SQL password passes as a secure environment variable, so it's not exposed after creating the container instance.
+    - The SQL password passes as a secure environment variable, so it remains unexposed after creating the container instance.
     - The NGINX container mounts the config volume in the */etc/nginx/* directory, where it expects to find the certificates. The volume contents are specified as secrets, which is why you base64-encoded the variables earlier.
     - The NGINX container exposes port 443, and the application container exposes port 8080. However, the container group only exposes port 443, making the application reachable only via the NGINX sidecar container.
 

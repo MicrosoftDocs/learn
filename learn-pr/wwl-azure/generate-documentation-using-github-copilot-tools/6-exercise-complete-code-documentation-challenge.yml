@@ -8,8 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-complete-code-documentation-challenge.md)]
