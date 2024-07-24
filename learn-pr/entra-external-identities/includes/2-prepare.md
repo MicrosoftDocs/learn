@@ -14,7 +14,7 @@ Our project aims to launch a new website for our online grocery retailer. The pr
 ### Configuration options
 
 Throughout the module, you can select your preferred configuration option to follow along.
-![alt text](../media/prepare/1.png)
+![Screenshot of configuration options](../media/prepare/1.png)
 
 - The **Microsoft Entra admin center** provides an intuitive interface for straightforward configuration tasks.
 - The **Microsoft Graph API** enables customization and automation of tasks.

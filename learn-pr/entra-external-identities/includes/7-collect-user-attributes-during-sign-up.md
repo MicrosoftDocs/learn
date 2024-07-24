@@ -1,21 +1,21 @@
 ## Exercise - Collect user attributes during sign-up
 
-[User attributes](/entra/external-id/customers/how-to-define-custom-attributes) are values collected from the user during self-service sign-up. In the user flow settings, you can select from a set of built-in user attributes you want to collect from customers. You can also create custom user attributes and add them to your user flow during sign-up. On the sign-up page, the user enters the information, and it's stored with their profile in your directory. For the purposes of the online groceries website, we will use a combination of built-in attributes and a custom attribute called **special diet**.
+[User attributes](/entra/external-id/customers/how-to-define-custom-attributes) are values collected from the user during self-service sign-up. In the user flow settings, you can select from a set of built-in user attributes you want to collect from customers. You can also create custom user attributes and add them to your user flow during sign-up. On the sign-up page, the user enters the information, and it's stored with their profile in your directory. For the purposes of the online groceries website, we'll use a combination of built-in attributes and a custom attribute called **special diet**.
 
 ::: zone pivot="microsoft-entra-admin-center"
 
 1. We start by creating the **special diet** custom user attribute. To do so, sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) and browse to **External Identities** > **Overview**. Then, select **Custom user attributes**.
-    ![alt text](../media/collect-user-attributes-during-sign-up/1.png)
+    ![Screenshot of External Identities Overview blade with the left navigation highlighting Custom user attributes.](../media/collect-user-attributes-during-sign-up/1.png)
 1. The list contains all user attributes available in the tenant, including any custom user attributes that have been created. The **Attribute type** column indicates whether an attribute is built-in or custom. Select **Add** to add a new attribute.
-    ![alt text](../media/collect-user-attributes-during-sign-up/2.png)
+    ![Screenshot of External Identities Custom user attributes blade with a button titled Add in the toolbar highlighted.](../media/collect-user-attributes-during-sign-up/2.png)
 1. In the **Add an attribute** pane, enter a **Name** for the custom attribute. For example, *SpecialDiet*. In **Data Type**, choose **String**. In the **Description**, enter a description of the custom attribute for internal use. This description isn't visible to the user.
-    ![alt text](../media/collect-user-attributes-during-sign-up/3.png)
+    ![Screenshot of Add an attribute pane open on the right with fields Name specified as SpecialDiet and Data Type selected as String highlighted.](../media/collect-user-attributes-during-sign-up/3.png)
 1. After you add the custom user attribute to your tenant, proceed to include the custom user attribute in a sign-up flow. Browse to **Identity** > **External Identities** > **User flows**. Then, select a user flow from the list.
-    ![alt text](../media/collect-user-attributes-during-sign-up/4.png)
+    ![Screenshot of left navigation of Microsoft Entra admin center highlighting External Identities and User flows, where in the grid list of user flows, the one named Default is highlighted.](../media/collect-user-attributes-during-sign-up/4.png)
 1. Select **User attributes**. The list includes any custom user attributes you defined as described in the previous section. For example, the new **SpecialDiet** now appears in the list. Choose all the attributes you want to collect from the user during sign-up, and select **Save**.
-    ![alt text](../media/collect-user-attributes-during-sign-up/5.png)
+    ![Screenshot of User attribues blade for the user flow titled Default shows a list of attributes enabled for the user flow. The attribute titled SpecialDiet is highlighted.](../media/collect-user-attributes-during-sign-up/5.png)
 1. As the final step, you will configure the sign-up page layout. In **Page layouts**, you can indicate which attributes are required and arrange the displayed order. You can also edit attribute labels, create radio buttons or checkboxes, and more. For our groceries website, we will add a label to the attribute named **SpecialDiet**. Under **Customize**, select **Page layouts**. The attributes you chose to collect will appear. Edit the label for any attribute by selecting the value in the **Label** column and modifying the text.
-    ![alt text](../media/collect-user-attributes-during-sign-up/6.png)
+    ![Screenshot of Page layouts blade for the user flow titled Default shows the order of attributes presented to users during sign up. The attribute named Special diet is highlighted.](../media/collect-user-attributes-during-sign-up/6.png)
     ***Well done!** You added a custom attribute to your tenant, added the custom attribute to a user flow, then added a label to the attribute.*
 
 ::: zone-end

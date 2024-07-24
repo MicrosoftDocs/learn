@@ -5,25 +5,25 @@ To enable your app to sign in with Microsoft Entra External ID, you need to regi
 ::: zone pivot="microsoft-entra-admin-center"
 
 1. To register your own application, sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) and browse to **Applications** > **App registrations**. Then, select **+ New registration**.
-   ![alt text](../media/register-an-application/1.png)
+   ![Screenshot of App registrations blade with a button titled New registration highlighted.](../media/register-an-application/1.png)
 1. In the **Register an application** page that appears, enter a meaningful application **Name** that is displayed to users of the app, for example, **Woodgrove Groceries**. Under **Supported account types**, select **Accounts in this organizational directory only**. For **Platform**, select the **Web** option and enter your app **Redirect URI**. The redirect URI is the endpoint to which users are redirected by Microsoft Entra External ID after their authentication with Microsoft Entra External ID is completed.
-   ![alt text](../media/register-an-application/2.png)
+   ![Screenshot of Register an application blade with Accounts in this organizational directory only highlighted for Who can use this application or access this API? and redirect URI is highlighted and set to Web as well as the URL for where to redirect the user after successful authentication.](../media/register-an-application/2.png)
 1. The application's **Overview** pane displays upon successful registration. Record the **Application (client) ID** to be used in your application source code.
-   ![alt text](../media/register-an-application/3.png)
+   ![Screenshot of App registrations with Overview in the left navigation highlighted. The application (client) ID is also highlighted under Essentials.](../media/register-an-application/3.png)
 1. To add more **Redirect URIs** or a **Front-channel logout URL**, under **Manage**, select **Authentication**. The **Front-channel logout URL** is where we send a request to have the application clear the user's session data. This is required for single sign-out to work correctly.
-   ![alt text](../media/register-an-application/4.png)
+   ![Screenshot of Authentication blade under App registrations with the URI highlighted under Web Redirect URIs as well as the URL for Front-channel logout URL.](../media/register-an-application/4.png)
 1. For a web application (confidential client) to acquire an access token, it needs a credential to prove its identity to Microsoft Entra ID. You can add certificates, client secrets (a string), or federated identity credentials as credentials to your confidential client app registration. For the groceries website, we will use a certificate. To add a certificate, select **Certificates & secrets** > **Certificates** > **Upload certificate**.
-   ![alt text](../media/register-an-application/5.png)
+   ![Screenshot of Certificates and secrets blade under App registrations where there are zero certificates and highlights a button titled Upload certificate.](../media/register-an-application/5.png)
 1. Select the file you want to upload. It must be one of the following file types: .cer, .pem, .crt. Then select **Add**.
-   ![alt text](../media/register-an-application/6.png)
+   ![Screenshot of Upload certificate pane open to the right with upload icon highlighted to upload certificate.](../media/register-an-application/6.png)
 1. In the following steps, you will add the required permission for the web application. Under **Manage**, select **API permissions**, then select **Add a permission**.
-   ![alt text](../media/register-an-application/7.png)
+   ![Screenshot of API permissions under App registrations with a button titled Add a permission highlighted.](../media/register-an-application/7.png)
 1. In **Request API permissions**, select the **Microsoft APIs** tab, and then select **Microsoft Graph**.
-   ![alt text](../media/register-an-application/8.png)
+   ![Screenshot of Request API permissions pane open to the right with a choice group titled Microsoft Graph highlighted.](../media/register-an-application/8.png)
 1. Select the **Delegated permissions** option. Then, under **Select permissions** section, search for and select both **openid** and **offline_access** permissions. To complete, select **Add permissions**.
-   ![alt text](../media/register-an-application/9.png)
+   ![Screenshot of Request API permissions pane open to the right with a choice group titled Delegated permissions highlighted and permissions for offline_access and openid checked in checkboxes underneath.](../media/register-an-application/9.png)
 1. At this point, you've assigned the permissions correctly. However, since the tenant is an external tenant, the consumer users themselves can't consent to these permissions. You as the admin must consent to these permissions on behalf of all the users in the tenant: Select **Grant admin consent for `<your tenant name>`**, then select **Yes**.
-   ![alt text](../media/register-an-application/10.png)
+   ![Screenshot of a button titled Grant admin consent for Woodgrove Groceries highlighted in the API permissions blade.](../media/register-an-application/10.png)
     ***Well done!** Now your application is ready to use.*
 
 ::: zone-end

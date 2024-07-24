@@ -5,30 +5,30 @@ You'll need to create a tenant with external configuration in the [Microsoft Ent
 ::: zone pivot="microsoft-entra-admin-center"
 
 1. To create a tenant, sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) and browse to **Identity** > **Overview** . Then, select **Manage tenants**.
-   ![alt text](../media/create-an-external-tenant/1.png)
+   ![Screenshot of the Identity Overview page. The toolbar button titled Manage tenants is highlighted.](../media/create-an-external-tenant/1.png)
 1. On the **Manage tenants** page, select **Create**.
-   ![alt text](../media/create-an-external-tenant/2.png)
+   ![Screenshot of the Manage tenants page. The toolbar button titled Create is highlighted.](../media/create-an-external-tenant/2.png)
 1. Select **External**, and then select **Continue**.
-   ![alt text](../media/create-an-external-tenant/3.png)
+   ![Screenshot of Choose a configuration for your tenant. The External choice group is selected.](../media/create-an-external-tenant/3.png)
 1. On the **Basics** tab, in the **Create a tenant** page, enter the following information: Type your desired **Tenant Name** (for example Woodgrove live demo). Type your desired **Domain Name** (for example woodgrovelive). Select your desired **Location**. This selection can't be changed later. Then, select **Next: Add a subscription**.
-   ![alt text](../media/create-an-external-tenant/4.png)
+   ![Screenshot of Create a tenant wizard navigation with first step titled Basics selected. The Tenant Name, Domain Name, and Location are filled out.](../media/create-an-external-tenant/4.png)
 1. On the **Add a subscription** tab, enter the following information: Next to **Subscription**, select your subscription from the menu. Next to **Resource group**, select a resource group from the menu. If there are no available resource groups, select **Create new**, add a name, and then select **OK**. If **Resource group location** appears, select the geographic location of the resource group from the menu. Then, select **Review + Create**.
-   ![alt text](../media/create-an-external-tenant/5.png)
+   ![Screenshot of Create a tenant wizard navigation with second step titled Add a subscription selected. The subscription and resource group are filled out.](../media/create-an-external-tenant/5.png)
 1. If the information that you entered is correct, select **Create**. The tenant creation process can take up to 30 minutes.
-   ![alt text](../media/create-an-external-tenant/6.png)
+   ![Screenshot of Create a tenant wizard navigation with third and final step titled Review and create selected. The green information box confirms that validation passed. The button at the bottom of the wizard titled Create is highlighted.](../media/create-an-external-tenant/6.png)
 1. You can monitor the progress of the tenant creation process in the **Notifications** pane. Once the tenant is created, you can access it in both the Microsoft Entra admin center and the Azure portal.
-   ![alt text](../media/create-an-external-tenant/7.png)
+   ![Screenshot of Notifications pane open on the right with the latest activity log titled Create tenant confirming that tenant creation was successful.](../media/create-an-external-tenant/7.png)
 1. Use the **Settings** icon in the top menu to **Switch** to your customer tenant you created from the **Directories + subscriptions** menu. If the tenant you created doesn't appear in the list, refresh the page (using the web browser refresh button).
-   ![alt text](../media/create-an-external-tenant/8.png)
+   ![Screenshot of Directories and subscriptions page with the switch button for the bottom listed directory highlighted.](../media/create-an-external-tenant/8.png)
 1. Browse to **Home** > **Tenant overview** to start configuring your tenant.
-   ![alt text](../media/create-an-external-tenant/9.png)
+   ![Screenshot of Identity Overview page with Overview highlighted in the sidebar.](../media/create-an-external-tenant/9.png)
     ***Well done!** At this point, the Microsoft Entra External ID tenant is ready to use.*
 ::: zone-end
 
 ::: zone pivot="microsoft-graph-api"
 
 > [!NOTE]
-> Before you start, please note that for creating an external tenant, you will be using **Azure REST API** and not Microsoft Graph. Please check the links to relevant documentation that will allow you to run the REST API directly from your browser without needing to develop and register an application. The following screenshot shows how to run a particular API. ![alt text](../media/create-an-external-tenant/10.png)
+> Before you start, please note that for creating an external tenant, you will be using **Azure REST API** and not Microsoft Graph. Please check the links to relevant documentation that will allow you to run the REST API directly from your browser without needing to develop and register an application. The following screenshot shows how to run a particular API. ![Screenshot of the button titled Try it highlighted in the right side of the HTTP request code header. The HTTP request checks the availability and validity of a domain name for the tenant.](../media/create-an-external-tenant/10.png)
 
 #### 1\. Check domain name availability
 
@@ -85,7 +85,7 @@ To create a new external tenant, you need to have a resource group where the ten
 
 - **{subscriptionId}** with your Azure subscription ID.
 - **{resourceGroupName}** with the name of the resource group to create.
-- **{azure-location}** with the location of the resource group. It cannot be changed after the resource group has been created. It must be one of the supported Azure locations.
+- **{azure-location}** with the location of the resource group. It can't be changed after the resource group has been created. It must be one of the supported Azure locations.
 
 ```json
 PUT https://management.azure.com/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}?api-version=2021-04-01
