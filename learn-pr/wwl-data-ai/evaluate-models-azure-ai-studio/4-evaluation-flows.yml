@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-models-azure-ai-studio.evaluation-flows
+title: Configure evaluation flows
+metadata:
+  title: Configure evaluation flows
+  description: "Learn how to evaluate your custom copilot with an evaluation flow in the Azure AI Studio."
+  ms.date: 07/24/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-evaluation-flows.md)]
