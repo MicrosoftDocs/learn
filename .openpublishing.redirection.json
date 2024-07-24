@@ -14641,7 +14641,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/azure/accelerate-storage-with-hpc-cache/4-create-cache.yml",
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/4-create-cache.yml",
       "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
       "redirect_document_id": false
     },
