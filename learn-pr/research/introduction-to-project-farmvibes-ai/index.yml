@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-intro-to-product
   ms.service: azure-kubernetes-service
 title: Introduction to project FarmVibes.AI
-summary: Explain the fundamental components of Project FarmVibes.AI (for brevity, we will refer to it as FarmVibes.AI) tooling such as soil analysis capabilities, crop health monitoring systems, and advanced data analytics. Characterize the agricultural challenges that FarmVibes.AI is designed to address. Describe how FarmVibes.AI integrates these components to enhance agricultural practices, improve decision-making in farming.
+summary: Explain the fundamental components of Project FarmVibes.AI (for brevity, we'll refer to it as FarmVibes.AI) tooling such as soil analysis capabilities, crop health monitoring systems, and advanced data analytics. Characterize the agricultural challenges that FarmVibes.AI is designed to address. Describe how FarmVibes.AI integrates these components to enhance agricultural practices, improve decision-making in farming.
 abstract: |
   By the end of this module, you'll be able to:
     - Evaluate whether FarmVibes.AI is appropriate for addressing agricultural challenges and improving decision-making in farming practices
