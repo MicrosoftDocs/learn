@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.pitch-your-product-prototype.4-explain-the-how
-title: Explain how your business will work
+title: Explain how your business works
 metadata:
-  title: Explain how your business will work
+  title: Explain how your business works
   description: This unit teaches you how to share your business model.
   author: czhu89
-  ms.date: 04/04/2023
+  ms.date: 07/23/2024
   ms.author: cazh
   ms.topic: unit
 durationInMinutes: 7
@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "Market size, marketing channels and techniques."
       isCorrect: true
-      explanation: "When you explain how to acquire customers you should mention market size, marketing channels and techniques."
+      explanation: "When you explain how to acquire customers, you should mention market size, marketing channels, and techniques."
     - content: "Market size, corporate identity, and industry analysis."
       isCorrect: false
     - content: "Marketing channels, business models, and techniques."
