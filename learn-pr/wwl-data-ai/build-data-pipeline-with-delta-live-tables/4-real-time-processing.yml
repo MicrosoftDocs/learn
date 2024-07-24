@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-pipelines-with-delta-live-tables.real-time-processing
+title: Real time processing
+metadata:
+  title: Real time processing
+  description: "Real time processing"
+  ms.date: 07/23/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-real-time-processing.md)]
