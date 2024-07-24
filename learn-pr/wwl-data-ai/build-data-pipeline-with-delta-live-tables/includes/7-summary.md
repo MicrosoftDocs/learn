@@ -8,6 +8,6 @@ In this module, you learned how to:
 
 Additional reading
 
-- [Delta Live Tables](https://learn.microsoft.com/azure/databricks/delta-live-tables/)
+- [Delta Live Tables](/azure/databricks/delta-live-tables/)
 - [Loading data with Delta Live Tables](https://docs.databricks.com/en/delta-live-tables/load.html)
 - [How to accelerate your ETL pipelines from 18 hours to as fast as 5 minutes with Azure Databricks](https://www.databricks.com/blog/2020/08/18/how-to-accelerate-your-etl-pipelines-from-18-hours-to-as-fast-as-5-minutes-with-azure-databricks.html)
