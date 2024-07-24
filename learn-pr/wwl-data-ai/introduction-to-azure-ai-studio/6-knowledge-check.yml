@@ -3,13 +3,14 @@ uid: learn.wwl.introduction-to-azure-ai-studio.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Test your knowledge of Azure AI Studio."
-  ms.date: 05/08/2024
+  description: Test your knowledge of Azure AI Studio.
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 05/08/2024
   ms.topic: unit
-  ms.custom:
-    - ignite-2023
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: ignite-2023
 durationInMinutes: 3
 content: |
 quiz:
