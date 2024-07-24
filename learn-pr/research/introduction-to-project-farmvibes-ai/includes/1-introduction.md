@@ -6,7 +6,7 @@ After gathering nutrient data, the focus shifts to two main aspects of farm mana
 
 The solution can be deployed using a cloud infrastructure service, such as Azure Kubernetes Service (AKS), to ensure scalability and security. AI models and analysis tools are packaged into containers for easy deployment and management across the cloud. These containers are then deployed to the cloud service, allowing for flexible scaling based on demand. Data integration with various sources like geospatial datasets and weather forecasts provides input for accurate analysis. Monitoring and management tools oversee performance and resource usage, ensuring optimal operation.
 
-![An image of a diagram showing how farmvibes works. At the left, labeled "condition and prep", data fusion models combine farm sensor data with weather data and raw geospatial data. That data flows to the center, labeled, "Label/Train/Teach" over boxes labeled, "Curated GIS data", "Curated satellite imagery", "Curated sensor data", and "Curated process models" Arrows flow out of those boxes to the right, to a box labeled, "Fusion data", and out of that box to one labeled, "Fusion extractor". At the right, a final box labeled, "Fusion analytics with features" is above a bulleted list with terms, "Predictions, Suggestions, Optimizations, and Actuations."](../media/farmvibes.png)
+![A diagram showing how farmvibes works. Data fusion models relevant data. The model creates predictions, suggestions, optimizations, and actuations.](../media/farmvibes.png)
 
 By following this high-level approach, the solution can be efficiently deployed, providing farmers with the advanced tools needed to make informed decisions regarding soil nutrient management and overall farm management. 
 

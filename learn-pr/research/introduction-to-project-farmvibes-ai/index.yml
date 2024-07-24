@@ -29,9 +29,9 @@ subjects:
   - machine-learning
 units:
 - learn.introduction-to-project-farmvibes-ai.introduction
-- learn.introduction-to-project-farmvibes-ai.what-is-farmvibes-ai
+- learn.research.introduction-to-project-farmvibes-a.what-farmvibes-ai
 - learn.introduction-to-project-farmvibes-ai.how-farmvibes-ai-works
-- learn.introduction-to-project-farmvibes-ai.when-to-use-farmvibes-ai
+- learn.research.introduction-to-project-farmvibes-a.when-use-farmvibes-ai
 - learn.introduction-to-project-farmvibes-ai.knowledge-check
 - learn.introduction-to-project-farmvibes-ai.summary
 badge:
