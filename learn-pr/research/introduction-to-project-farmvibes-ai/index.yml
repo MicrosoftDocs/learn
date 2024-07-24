@@ -28,11 +28,11 @@ products:
 subjects:
   - machine-learning
 units:
-- learn.introduction-to-project-farmvibes-ai.introduction
-- learn.research.introduction-to-project-farmvibes-a.what-farmvibes-ai
-- learn.introduction-to-project-farmvibes-ai.how-farmvibes-ai-works
-- learn.research.introduction-to-project-farmvibes-a.when-use-farmvibes-ai
-- learn.introduction-to-project-farmvibes-ai.knowledge-check
-- learn.introduction-to-project-farmvibes-ai.summary
+- learn.research.introduction-to-project-farmvibes-ai.introduction
+- learn.research.introduction-to-project-farmvibes-ai.what-farmvibes-ai
+- learn.research.introduction-to-project-farmvibes-ai.how-farmvibes-ai-works
+- learn.research.introduction-to-project-farmvibes-ai.when-use-farmvibes-ai
+- learn.research.introduction-to-project-farmvibes-ai.knowledge-check
+- learn.research.introduction-to-project-farmvibes-ai.summary
 badge:
-  uid: learn.introduction-to-project-farmvibes-ai.badge
+  uid: learn.research.introduction-to-project-farmvibes-ai.badge
