@@ -40,7 +40,7 @@ units:
 - learn.microsoft-entra-external-identities.eeid-poc.Introduction
 - learn.microsoft-entra-external-identities.eeid-poc.prepare
 - learn.microsoft-entra-external-identities.eeid-poc.create-an-external-tenant
-- learn.microsoft-entra-external-identities.eeid-poc.register-an-application
+- learn.microsoft-entra-external-identities.eeid-poc.register-application
 - learn.microsoft-entra-external-identities.eeid-poc.create-a-sign-up-and-sign-in-user-flow
 - learn.microsoft-entra-external-identities.eeid-poc.add-an-admin-account
 - learn.microsoft-entra-external-identities.eeid-poc.collect-user-attributes-during-sign-up
