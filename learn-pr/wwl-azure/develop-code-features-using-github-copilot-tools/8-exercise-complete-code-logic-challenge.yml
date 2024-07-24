@@ -8,8 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 16
 content: |
   [!include[](includes/8-exercise-complete-code-logic-challenge.md)]

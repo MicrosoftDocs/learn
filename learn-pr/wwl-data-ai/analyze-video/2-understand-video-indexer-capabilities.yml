@@ -3,11 +3,13 @@ uid: learn.wwl.analyze-video.understand-video-indexer-capabilities
 title: Understand Azure Video Indexer capabilities
 metadata:
   title: Understand Azure Video Indexer capabilities
-  description: "Understand Azure Video Indexer capabilities"
-  ms.date: 12/01/2023
+  description: Understand Azure Video Indexer capabilities
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 12/01/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
