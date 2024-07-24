@@ -3,10 +3,10 @@ uid: learn.wwl.develop-code-features-using-github-copilot-tools.exercise-convert
 title: Exercise - Convert code from one programming language to another
 metadata:
   title: Exercise - Convert code from one programming language to another
-  description: Exercise - Convert code from one programming language to another
+  description: "Exercise - Convert code from one programming language to another"
+  ms.date: 07/24/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.date: 05/22/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
