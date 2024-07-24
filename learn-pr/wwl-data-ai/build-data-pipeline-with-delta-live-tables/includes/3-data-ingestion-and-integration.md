@@ -1,4 +1,3 @@
-# Ingesting and integrating data
 Data ingestion and integration form the foundational layer for effective data processing in Delta Live Tables (DLT) within Azure Databricks. This ensures that data from various sources is accurately and efficiently loaded into the system for further analysis and processing. 
 
 DLT facilitates data ingestion and integration through:

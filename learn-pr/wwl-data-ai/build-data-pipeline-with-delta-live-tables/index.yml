@@ -21,7 +21,7 @@ iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
-- data-scientist
+- data-analyst
 products:
 - azure-databricks
 subjects:
