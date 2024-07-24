@@ -54,7 +54,7 @@ Now that you have a copy of the template repository in your own account, you'll 
 
 1. Select **Code**, and then select the **Copy url to clipboard** icon.
 
-   :::image type="content" source="../media/3-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface that shows the new repository. The repository U R L copy button is highlighted." lightbox="../media/3-github-repository-clipboard.png":::
+   :::image type="content" source="../media/3-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface that shows the new repository. The repository URL copy button is highlighted." lightbox="../media/3-github-repository-clipboard.png":::
 
 1. Open Visual Studio Code.
 
@@ -82,7 +82,7 @@ Now that you have a copy of the template repository in your own account, you'll 
 
 ::: zone pivot="cli"
 
-To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Make sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli) tools.
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Make sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli) tools and the [Azure Account extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account).
 
 [!INCLUDE [](../../includes/azure-exercise-terminal-cli.md)]
 

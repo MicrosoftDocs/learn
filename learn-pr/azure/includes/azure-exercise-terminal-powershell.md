@@ -8,7 +8,7 @@ ms.author: jgao
 
    The default shell is typically **pwsh**, as shown on the right side of the terminal window.
 
-    :::image type="content" source="media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, in which p w s h is shown as the shell option.":::
+    :::image type="content" source="media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, in which pwsh is shown as the shell option.":::
 
 1. Select the **Launch Profile** dropdown list, and then select **Azure Cloud Shell (PowerShell)**.
 
