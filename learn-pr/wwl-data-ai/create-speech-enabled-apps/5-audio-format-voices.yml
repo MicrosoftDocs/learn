@@ -3,11 +3,13 @@ uid: learn.wwl.create-speech-enabled-apps.audio-format-voices
 title: Configure audio format and voices
 metadata:
   title: Configure audio format and voices
-  description: "Configure audio format and voices"
-  ms.date: 08/31/2023
+  description: Configure audio format and voices
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 08/31/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
