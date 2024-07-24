@@ -14596,6 +14596,91 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/azure/introduction-azure-hpc-cache/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-azure-hpc-cache/2-what.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-azure-hpc-cache/3-how.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-azure-hpc-cache/4-when.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-azure-hpc-cache/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-azure-hpc-cache/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-azure-hpc-cache/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/accelerate-storage-with-hpc-cache/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/accelerate-storage-with-hpc-cache/3-hpc-cache-prerequisites.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/accelerate-storage-with-hpc-cache/4-create-cache.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/accelerate-storage-with-hpc-cache/5-connect-to-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/accelerate-storage-with-hpc-cache/6-connect-to-cache.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/accelerate-storage-with-hpc-cache/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/accelerate-storage-with-hpc-cache/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/accelerate-storage-with-hpc-cache/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.azure.introduction-azure-hpc-cache.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.accelerate-storage-with-hpc-cache.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/advocates/responsible-bots/2-responsible-conversational-ui.md",
       "redirect_url": "/training/modules/responsible-bots/2-bot-framework-responsible-principles",
       "redirect_document_id": false
@@ -20583,106 +20668,6 @@
     {
       "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/7-summary.md",
       "redirect_url": "/training/modules/explore-query-performance-optimization/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/1-introduction.md",
-      "redirect_url": "/training/modules/explore-query-performance-optimization/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/6-knowledge-check.md",
-      "redirect_url": "/training/modules/explore-query-performance-optimization/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/7-summary.md",
-      "redirect_url": "/training/modules/explore-query-performance-optimization/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/introduction-azure-hpc-cache/1-introduction.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/introduction-azure-hpc-cache/2-what.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/introduction-azure-hpc-cache/3-how.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/introduction-azure-hpc-cache/4-when.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/introduction-azure-hpc-cache/5-knowledge-check.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/introduction-azure-hpc-cache/6-summary.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/introduction-azure-hpc-cache/index.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/accelerate-storage-with-hpc-cache/1-introduction.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/accelerate-storage-with-hpc-cache/3-hpc-cache-prerequisites.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/accelerate-storage-with-hpc-cache/4-create-cache.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/accelerate-storage-with-hpc-cache/5-connect-to-storage.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/accelerate-storage-with-hpc-cache/6-connect-to-cache.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/accelerate-storage-with-hpc-cache/7-knowledge-check.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/accelerate-storage-with-hpc-cache/8-summary.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/accelerate-storage-with-hpc-cache/index.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/achievements/learn.azure.introduction-azure-hpc-cache.badge.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/achievements/learn.accelerate-storage-with-hpc-cache.badge.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
       "redirect_document_id": false
     },
     {
