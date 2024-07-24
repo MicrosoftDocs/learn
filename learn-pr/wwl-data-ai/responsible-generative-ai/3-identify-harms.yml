@@ -3,11 +3,13 @@ uid: learn.wwl.responsible-generative-ai.identify-harms
 title: Identify potential harms
 metadata:
   title: Identify potential harms
-  description: "Identify, prioritize, validate and document potential harms in a responsible AI solution."
-  ms.date: 7/13/2023
+  description: Identify, prioritize, validate and document potential harms in a responsible AI solution.
   author: graememalcolm
   ms.author: gmalc
+  ms.date: 7/13/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/3-identify-harms.md)]
