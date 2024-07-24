@@ -30,7 +30,7 @@ To enable your app to sign in with Microsoft Entra External ID, you need to regi
 
 ::: zone pivot="microsoft-graph-api"
 
-#### 1\. Register an application
+#### 1. Register an application
 
 [To register a web application](/graph/api/application-post-applications?view=graph-rest-1.0&tabs=http), use the Microsoft Graph request below and replace the following values.
 - Value of **displayName** with your app displayed name. For example, *Woodgrove Groceries*.
@@ -88,7 +88,7 @@ From the response, copy the value of the **appId**. For example:
 }      
 ```
 
-#### 2\. Create a service principal for your application
+#### 2. Create a service principal for your application
 
 After you register your application, [create a service principal](/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-1.0&tabs=http). The following Graph call creates a service principal. Replace the **{appId}** with the app **appId** from the previous call (not the object ID).
 
@@ -113,7 +113,7 @@ From the response, copy the value of the **id**. For example:
 }
 ```
 
-#### 3\. Consent to the required permissions
+#### 3. Consent to the required permissions
 
 Since the tenant is an external tenant, the consumer users themselves can't consent to these permissions. You as the admin must [consent to these permissions](/graph/api/oauth2permissiongrant-post?view=graph-rest-1.0&tabs=http) on behalf of all the users in the tenant.
 
@@ -144,7 +144,7 @@ POST https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 }
 ```
 
-#### 4\. (Optional) Add a client secret
+#### 4. (Optional) Add a client secret
 
 Credentials enable confidential applications to identify themselves to the authentication service when receiving tokens. For a higher level of assurance, we recommend using a [certificate](/graph/api/application-addkey?view=graph-rest-1.0&tabs=http) (instead of a client secret) as a credential. To obtain the [client secret](/graph/api/application-addpassword?view=graph-rest-1.0&tabs=http), run the following request. Replace the **{graph-service-principal-id}** with the **appId** with the appId from the first step.
 

@@ -18,7 +18,7 @@ By setting up federation with social identity providers, you can allow customers
 
 ::: zone pivot="microsoft-graph-api"
 
-#### 1\. Register Facebook
+#### 1. Register Facebook
 
 To add Facebook as an identity provider, you first need to [create an application in Facebook](/entra/external-id/customers/how-to-facebook-federation-customers) identity provider. Then, [register the identity provider](/graph/api/identitycontainer-post-identityproviders?view=graph-rest-beta&tabs=http) in your Microsoft Entra External ID tenant with the following Microsoft Graph. Replace the **{Facebook app ID}** with the App ID of the Facebook application that you created earlier. Replace the **{Facebook app secret}** with the App Secret that you recorded.
 
@@ -55,7 +55,7 @@ POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{user-f
 }
 ```
 
-#### 2\. Register Google
+#### 2. Register Google
 To add Google as an identity provider, you first need to [create an application in Google](/entra/external-id/customers/how-to-google-federation-customers) identity provider. Then, [register the identity provider](/graph/api/identitycontainer-post-identityproviders?view=graph-rest-beta&tabs=http) in your Microsoft Entra External ID tenant. Replace the **{Google app ID}** with the App ID of the Google application that you created earlier. Replace the **{Google app secret}** with the App Secret that you recorded.
 
 ```json

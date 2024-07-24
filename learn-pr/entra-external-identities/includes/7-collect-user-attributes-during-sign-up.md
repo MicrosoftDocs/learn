@@ -22,7 +22,7 @@
 
 ::: zone pivot="microsoft-graph-api"
 
-#### 1\. Create a custom attribute
+#### 1. Create a custom attribute
 
 To create a [custom attribute](/graph/api/identityuserflowattribute-post?view=graph-rest-beta&tabs=http), run the following Microsoft Graph request.
 
@@ -50,7 +50,7 @@ From the response, copy the value of the custom attribute **id**. For example:
 }   
 ```
 
-#### 2\. Add attribute to a user flow
+#### 2. Add attribute to a user flow
 
 To [add an attribute to a user flow](/graph/api/onattributecollectionexternalusersselfservicesignup-post-attributes?view=graph-rest-beta&tabs=http), run the Microsoft Graph request below. Replace the **{user-flow-ID}** with your [user flow ID](/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-beta&tabs=http). Replace the **{attribute-ID}** with your [attribute ID](/graph/api/identityuserflowattribute-list?view=graph-rest-beta&tabs=http) from the previous step.
 
@@ -70,7 +70,7 @@ POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{user-f
 }
 ```
 
-#### 3\. (Optional) Update the page layout
+#### 3. (Optional) Update the page layout
 Usually the attribute appears at the bottom of the sign-up page. You can [update the sign-up page layout](/graph/api/authenticationeventsflow-update?view=graph-rest-beta&tabs=http). In Page layouts, you can indicate which attributes are required and arrange the display order. You can also edit attribute labels, create radio buttons or checkboxes, and more.
 
 To do so, you need to update the user flow. In the request body, supply only the values for properties that should be updated. Existing properties that aren't included in the request body maintains their previous values or becomes recalculated based on changes to other property values.

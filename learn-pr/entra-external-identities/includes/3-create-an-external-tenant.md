@@ -30,7 +30,7 @@ You'll need to create a tenant with external configuration in the [Microsoft Ent
 > [!NOTE]
 > Before you start, please note that for creating an external tenant, you will be using **Azure REST API** and not Microsoft Graph. Please check the links to relevant documentation that will allow you to run the REST API directly from your browser without needing to develop and register an application. The following screenshot shows how to run a particular API. ![Screenshot of the button titled Try it highlighted in the right side of the HTTP request code header. The HTTP request checks the availability and validity of a domain name for the tenant.](../media/create-an-external-tenant/10.png)
 
-#### 1\. Check domain name availability
+#### 1. Check domain name availability
 
 Before you create a new tenant, [check the availability and validity of a domain name for the tenant](/rest/api/activedirectory/check-name-availability/check-name-availability?view=rest-activedirectory-2023-05-17-preview&tabs=HTTP). Replace the following values then run the Azure REST API request:
 
@@ -79,7 +79,7 @@ The following example shows an available tenant name:
 }  
 ```
 
-#### 2\. Create a resource group
+#### 2. Create a resource group
 
 To create a new external tenant, you need to have a resource group where the tenant will be created. You can choose an existing one, or [create a Resource Group](/rest/api/resources/resource-groups/create-or-update?view=rest-resources-2021-04-01&tabs=HTTP#code-try-0). In the following Azure REST API, replace the:
 
@@ -105,7 +105,7 @@ PUT https://management.azure.com/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4
 }
 ```
 
-#### 3\. Create an external tenant
+#### 3. Create an external tenant
 
 The following request initiates an async request to [create an external tenant](/rest/api/resources/resource-groups/create-or-update?view=rest-resources-2021-04-01&tabs=HTTP#code-try-0) linked to your subscription and within the resource group you created. In the following Azure REST API request, replace the:
 

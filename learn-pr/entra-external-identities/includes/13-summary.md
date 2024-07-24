@@ -1,4 +1,3 @@
-## Summary ##
 With our online grocery website launching soon, we had to build an identity solution that allows our customers to create an account on the website. Our marketing team needed to make sure our brand was showing through our experiences, and the security team wanted to make sure that our customers’ accounts are protected by security.
 
 Microsoft Entra External ID lets us configure settings mapped to requirements in the Entra Admin portal and through calling Microsoft Graph API. We needed to create a tenant to store user accounts, register our app, and then create and customize the user flow for sign-in and sign-up experiences. These experiences reflected our configuration of branding, the information we collected from users, the types of accounts they could use, information verification, and account security by prompting users to enroll in a multifactor authentication method.

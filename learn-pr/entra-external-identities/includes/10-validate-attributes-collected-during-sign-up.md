@@ -38,11 +38,11 @@ If this is your first custom authentication extension, see how we have configure
 
 ::: zone pivot="microsoft-graph-api"
 
-#### 1\. Register custom authentication extension application
+#### 1. Register custom authentication extension application
 
 If this is your first custom authentication extension, [register the custom authentication extension application](https://woodgrovedemo.com/help/TokenAugmentation#graph).
 
-#### 2\. Register custom authentication extension
+#### 2. Register custom authentication extension
 
 Next, you [register the custom authentication extension](/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-beta&tabs=http). You register the custom authentication extension by associating it with the **Custom authentication extension security app** you created, and to your REST API endpoint. Replace the following values with your own:
     - **{app-ID}** with the app ID from the previous call **Custom authentication extension security app**.

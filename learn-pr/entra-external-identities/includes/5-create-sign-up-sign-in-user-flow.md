@@ -28,7 +28,7 @@ A [user flow](/entra/external-id/customers/how-to-user-flow-sign-up-sign-in-cust
 
 ::: zone pivot="microsoft-graph-api"
 
-#### 1\. Create a user flow
+#### 1. Create a user flow
 
 To create a user flow, you create an [authentication events flow](/graph/api/identitycontainer-post-authenticationeventsflows?view=graph-rest-beta&tabs=http) object that is of the type specified in the request body.
 
@@ -171,7 +171,7 @@ From the response, copy the value of the user flow **id**. For example:
 }      
 ```
 
-#### 2\. Add your application to the user flow
+#### 2. Add your application to the user flow
 To [add or link an application to a user flow](/graph/api/authenticationconditionsapplications-post-includeapplications?view=graph-rest-beta&tabs=http), use the following Microsoft Graph request. Replace the **{user-flow-ID}** with your [user flow ID](/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-beta&tabs=http). Replace the **{app-ID}** with your [application ID](/graph/api/application-list?view=graph-rest-beta&tabs=http).
 
 ```json
