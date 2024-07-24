@@ -5,8 +5,8 @@ metadata:
   title: Random forests and selecting architectures
   description: Conceptual unit about random forests and selecting architectures
   ms.date: 04/17/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 4
 content: |
