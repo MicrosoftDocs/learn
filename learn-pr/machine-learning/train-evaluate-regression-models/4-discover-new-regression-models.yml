@@ -5,8 +5,8 @@ metadata:
   title: Discover new regression models
   description: Review new types of regression models, such as tree-based algorithms
   ms.date: 08/08/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
