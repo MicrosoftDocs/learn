@@ -9,6 +9,6 @@ metadata:
   author: RiyazPishori
   ms.author: riyazp
   ms.topic: unit
-SdurationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/3-how-farmvibes-ai-works.md)]
