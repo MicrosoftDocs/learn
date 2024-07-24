@@ -22,7 +22,7 @@ prerequisites: |
   - If you don’t have any Azure subscriptions, any personal account, Microsoft account (MSA), or GitHub account
   - (Optional) The latest version of Visual Studio Code
   - (Optional) The latest version of PowerShell
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - intermediate
 roles:

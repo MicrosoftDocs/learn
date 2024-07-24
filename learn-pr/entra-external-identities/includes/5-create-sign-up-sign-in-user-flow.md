@@ -1,4 +1,4 @@
-## Exercise - Create a sign-up an sign-in user flow
+## Exercise - Create a sign-up and sign-in user flow
 
 A [user flow](/entra/external-id/customers/how-to-user-flow-sign-up-sign-in-customers) defines the series of sign-up steps customers follow and the sign-in methods they can use (such as email and password, one-time passcodes, or social accounts from Google or Facebook). You can also collect information from customers during sign-up by selecting from a series of built-in user attributes or adding your own custom attributes. You can create multiple user flows if you have multiple applications that you want to offer to customers.
 
