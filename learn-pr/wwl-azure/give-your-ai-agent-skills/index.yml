@@ -2,15 +2,15 @@
 uid: learn.wwl.give-your-ai-agent-skills
 metadata:
   title: Give your AI agent skills
-  description: "Learn how native functions can be combined with prompts to accomplish customized tasks with the semantic kernel SDK."
-  ms.date: 06/11/2024
+  description: Learn how native functions can be combined with prompts to accomplish customized tasks with the semantic kernel SDK.
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: module
-  ms.custom:
-  - N/A
+  ms.date: 06/11/2024
   ms.service: azure-ai-services
   ai-usage: human-only
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Give your AI agent skills
 summary: This module explores native functions in the Semantic Kernel SDK. Learn how native functions can accomplish customized tasks, effectively giving your AI agent a &quot;skill.&quot;
 abstract: |

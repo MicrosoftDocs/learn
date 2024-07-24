@@ -3,11 +3,13 @@ uid: learn.wwl.analyze-video.extract-custom-insights
 title: Extract custom insights
 metadata:
   title: Extract custom insights
-  description: "Extract custom insights"
-  ms.date: 12/01/2023
+  description: Extract custom insights
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 12/01/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
