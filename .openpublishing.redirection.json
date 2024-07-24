@@ -7938,17 +7938,17 @@
     {
       "source_path": "learn-pr/azure/intro-to-azure-lighthouse/5-video-cross-tenant-management.md",
       "redirect_url": "/training/modules/intro-to-azure-lighthouse/1-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-lighthouse/6-video-publish-managed-service.md",
       "redirect_url": "/training/modules/intro-to-azure-lighthouse/1-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-lighthouse/7-summary.md",
       "redirect_url": "/training/modules/intro-to-azure-lighthouse/6-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/language/rust-get-started/3-install-rust.md",
@@ -38651,7 +38651,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/azure/intro-to-azure-lighthouse/4b-exercise-prepare-azure-resource-manager-templates.yml",
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-lighthouse/4b-exercise-deploy-azure-resource-manager-templates.yml",
       "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
       "redirect_document_id": false
     },
