@@ -3,13 +3,13 @@ uid: learn.wwl.develop-code-features-using-github-copilot-tools.exercise-create-
 title: Exercise - Create code by using code line completions
 metadata:
   title: Exercise - Create code by using code line completions
-  description: "Exercise - Create code by using code line completions"
-  ms.date: 05/22/2024
+  description: Exercise - Create code by using code line completions
   author: wwlpublish
   ms.author: cahowd
+  ms.date: 05/22/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 14
 content: |
   [!include[](includes/4-exercise-create-code-copilot-autocompletions.md)]

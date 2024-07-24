@@ -3,13 +3,13 @@ uid: learn.wwl.develop-code-features-using-github-copilot-tools.exercise-complet
 title: Exercise - Complete the "code logic" challenge
 metadata:
   title: Exercise - Complete the "code logic" challenge
-  description: "Exercise - Complete the \"code logic\" challenge"
-  ms.date: 05/22/2024
+  description: Exercise - Complete the code logic challenge
   author: wwlpublish
   ms.author: cahowd
+  ms.date: 05/22/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 16
 content: |
   [!include[](includes/8-exercise-complete-code-logic-challenge.md)]
