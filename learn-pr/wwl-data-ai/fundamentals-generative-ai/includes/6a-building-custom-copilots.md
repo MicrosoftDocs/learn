@@ -8,6 +8,6 @@ If your organization makes the decision to customize Microsoft copilot or develo
 
 ## Azure AI Studio
 
-*Azure AI Studio* is a PasS (platform as a service) development portal for professional software developers that gives you full control over the language model you want to use, including the capability to fine-tune the model with your own data. You can define prompt flows that orchestrate conversation flow and integrate your own data augmentation and prompt engineering logic, and you can deploy the resulting copilot service in the cloud and consume it from custom-developed apps and services. For more information, see https://azure.microsoft.com/products/ai-studio/.
+*Azure AI Studio* is a PaaS (platform as a service) development portal for professional software developers that gives you full control over the language model you want to use, including the capability to fine-tune the model with your own data. You can define prompt flows that orchestrate conversation flow and integrate your own data augmentation and prompt engineering logic, and you can deploy the resulting copilot service in the cloud and consume it from custom-developed apps and services. For more information, see https://azure.microsoft.com/products/ai-studio/.
 
 ![Screenshot of Azure AI Studio](../media/ai-studio.png)

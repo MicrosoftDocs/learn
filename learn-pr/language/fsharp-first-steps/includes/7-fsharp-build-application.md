@@ -36,7 +36,7 @@ There are two files in the *MyFSharpApp* directory:
 The *Program.fs* file contains the following code:
 
 ```fsharp
-// Learn more about F# at http://learn.microsoft.com/dotnet/fsharp
+// Learn more about F# at https://learn.microsoft.com/dotnet/fsharp
 
 open System
 

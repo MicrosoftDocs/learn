@@ -4,10 +4,12 @@ title: Manuals - Expert Rules
 metadata:
   title: Manuals - Expert Rules
   description: We explain manuals when introducing Automated decision methods.
-  ms.date: 10/14/2022
   author: softchris
   ms.author: chnoring
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/5-manuals.md)]

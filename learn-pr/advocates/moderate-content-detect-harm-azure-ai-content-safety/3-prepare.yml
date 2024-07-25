@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.moderate-content-detect-harm-azure-ai-content-safety.prepare
+title: Prepare
+metadata:
+  title: Prepare
+  description: Learn how to prepare for the content moderation process with Azure AI Content Safety.
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.date: 06/24/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-prepare.md)]

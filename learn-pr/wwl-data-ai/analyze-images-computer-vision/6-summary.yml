@@ -3,11 +3,13 @@ uid: learn.wwl.analyze-images-computer-vision.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 02/22/2024
+  description: Summary
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 07/04/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

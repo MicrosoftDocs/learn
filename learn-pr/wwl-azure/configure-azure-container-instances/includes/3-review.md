@@ -1,6 +1,6 @@
-Containers are becoming the preferred way to package, deploy, and manage cloud applications. There are many options for teams to build and deploy cloud native and containerized applications on Azure. In this unit we will review Azure Container Instances (ACI). 
+Containers are becoming the preferred way to package, deploy, and manage cloud applications. There are many options for teams to build and deploy cloud native and containerized applications on Azure. In this unit, we review Azure Container Instances (ACI). 
 
-Azure Container Instances offers the fastest and simplest way to run a container in Azure, without having to manage any virtual machines and without having to adopt a higher-level service. Azure Container Instances is a great solution for any scenario that can operate in isolated containers, including simple applications, task automation, and build jobs because it provides a single pod of Hyper-V isolated containers on demand.
+Azure Container Instances offers the fastest and simplest way to run a container in Azure, without having to manage any virtual machines and without having to adopt a higher-level service. Azure Container Instances is a great solution for any scenario that can operate in isolated containers, including simple applications, task automation, and build jobs, because it provides a single pod of Hyper-V isolated containers on demand.
 
 The following illustration shows a web server container built with Azure Container Instances. The container is running on a virtual machine in a virtual network.
 

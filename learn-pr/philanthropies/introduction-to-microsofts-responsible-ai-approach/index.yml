@@ -4,11 +4,13 @@ uid: learn.philanthropies.introduction-to-microsofts-responsible-ai-approach
 metadata:
   title: Introduction to Microsoft's Responsible AI Approach
   description: This module provides an overview of Microsoft's responsible AI principles, guidelines, and standards.
-  ms.date: 03/22/2024
   author: yoosunee
   ms.author: andreapark
-  ms.topic: module
+  ms.date: 03/22/2024
   ms.service: artificial-intelligence
+  ms.topic: module
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Introduction to Microsoft's Responsible AI Approach
 summary: This module provides an overview of Microsoft's Responsible AI Framework. You will explore the principles, guidelines, and standards that shape Microsoft's commitment to ethical and responsible AI development.
 

@@ -3,11 +3,13 @@ uid: learn.security-copilot-describe-core-features.describe-custom-promptbooks
 title: Describe custom promptbooks
 metadata:
   title: Describe custom promptbooks
-  description: "Learn about custom promptbooks and how you can create them."
-  ms.date: 02/22/2024
+  description: Learn about custom promptbooks and how you can create them.
   author: wwlpublish
   ms.author: ceperezb
+  ms.date: 02/22/2024
   ms.topic: unit
-durationInMinutes: 2
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 7
 content: |
   [!include[](includes/5-describe-custom-promptbooks.md)]

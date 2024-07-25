@@ -5,6 +5,7 @@ metadata:
   title: Apply cluster upgrades and security patches with Azure Kubernetes Service
   description: |
     Apply the latest version upgrades and patches to your Azure Kubernetes Service clusters. 
+  manager: mkluck
   ms.date: 07/19/2023
   author: rayoef 
   ms.author: rayoflores

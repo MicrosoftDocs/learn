@@ -27,7 +27,7 @@ subjects:
 - cloud-security
 - architecture
 modules:
-- learn.azure-security.resolve-threats-with-azure-security-center
+# - learn.azure-security.resolve-threats-with-azure-security-center
 - learn.secure-your-azure-virtual-machine-disks
 - learn.manage-secrets-with-azure-key-vault
 - learn.secure-azure-resources-with-rbac

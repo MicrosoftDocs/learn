@@ -8,8 +8,6 @@ metadata:
   author: adegeo
   ms.author: adegeo
   ms.topic: unit
-  ms.service: dotnet-mobile
-  ms.subservice: dotnet-maui
 durationInMinutes: 2
 content: |
   [!include[](./includes/1-introduction.md)]

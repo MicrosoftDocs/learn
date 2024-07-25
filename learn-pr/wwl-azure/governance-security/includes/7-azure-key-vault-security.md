@@ -4,7 +4,7 @@ Azure Key Vault protects cryptographic keys, certificates (and the private keys 
 
 You can reduce the exposure of your vaults by specifying which IP addresses have access to them. The virtual network service endpoints for Azure Key Vault allow you to restrict access to a specified virtual network. The endpoints also allow you to restrict access to a list of IPv4 (internet protocol version 4) address ranges. Any user connecting to your key vault from outside those sources is denied access.
 
-After firewall rules are in effect, users can only read data from Key Vault when their requests originate from allowed virtual networks or IPv4 address ranges. This also applies to accessing Key Vault from the Azure portal. Although users can browse to a key vault from the Azure portal, they might not be able to list keys, secrets, or certificates if their client machine is not in the allowed list.<br>
+After firewall rules are in effect, users can only read data from Key Vault when their requests originate from allowed virtual networks or IPv4 address ranges. This also applies to accessing Key Vault from the Azure portal. Although users can browse to a key vault from the Azure portal, they might not be able to list keys, secrets, or certificates if their client machine is not in the allowed list.
 
 Azure Private Link Service enables you to access Azure Key Vault and Azure hosted customer/partner services over a Private Endpoint in your virtual network. An Azure Private Endpoint is a network interface that connects you privately and securely to a service powered by Azure Private Link. The private endpoint uses a private IP address from your VNet, effectively bringing the service into your VNet. All traffic to the service can be routed through the private endpoint, so no gateways, Network address translation (NAT) devices, ExpressRoute or VPN connections, or public IP addresses are needed. Traffic between your virtual network and the service traverses over the Microsoft backbone network, eliminating exposure from the public Internet. You can connect to an instance of an Azure resource, giving you the highest level of granularity in access control.
 
@@ -24,7 +24,7 @@ When you create a key vault in an Azure subscription, it's automatically associa
 
 In all types of access, the application authenticates with Microsoft Entra ID. The application uses any supported authentication method based on the application type. The application acquires a token for a resource in the plane to grant access. The resource is an endpoint in the management or data plane, based on the Azure environment. The application uses the token and sends a REST API request to Key Vault.
 
-The model of a single mechanism for authentication to both planes has several benefits:<br>
+The model of a single mechanism for authentication to both planes has several benefits:
 
  -  Organizations can control access centrally to all key vaults in their organization.<br>
  -  If a user leaves, they instantly lose access to all key vaults in the organization.
@@ -34,11 +34,11 @@ The model of a single mechanism for authentication to both planes has several be
 
 Access to a key vault is controlled through two interfaces: the management plane and the data plane. The management plane is where you manage Key Vault itself. Operations in this plane include creating and deleting key vaults, retrieving Key Vault properties, and updating access policies. The data plane is where you work with the data stored in a key vault. You can add, delete, and modify keys, secrets, and certificates.
 
-Both planes use Microsoft Entra ID for authentication. For authorization, the management plane uses Azure role-based access control (Azure RBAC) and the data plane uses a Key Vault access policy and Azure RBAC for Key Vault data plane operations.<br>
+Both planes use Microsoft Entra ID for authentication. For authorization, the management plane uses Azure role-based access control (Azure RBAC) and the data plane uses a Key Vault access policy and Azure RBAC for Key Vault data plane operations.
 
-To access a key vault in either plane, all callers (users or applications) must have proper authentication and authorization. Authentication establishes the identity of the caller. Authorization determines which operations the caller can execute. Authentication with Key Vault works in conjunction with Microsoft Entra ID, which is responsible for authenticating the identity of any given security principal.<br>
+To access a key vault in either plane, all callers (users or applications) must have proper authentication and authorization. Authentication establishes the identity of the caller. Authorization determines which operations the caller can execute. Authentication with Key Vault works in conjunction with Microsoft Entra ID, which is responsible for authenticating the identity of any given security principal.
 
-A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources. Azure assigns a unique object ID to every security principal.<br>
+A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources. Azure assigns a unique object ID to every security principal.
 
  -  A user security principal identifies an individual who has a profile in Microsoft Entra ID.<br>
  -  A group security principal identifies a set of users created in Microsoft Entra ID. Any roles or permissions assigned to the group are granted to all of the users within the group.
@@ -52,7 +52,7 @@ Key Vault provides support for Microsoft Entra Conditional Access policies. By u
 
 Authorization determines which operations the caller can perform. Authorization in Key Vault uses Azure role-based access control (Azure RBAC) on management plane and either Azure RBAC or Azure Key Vault access policies on data plane.
 
-Access to vaults takes place through two interfaces or planes. These planes are the management plane and the data plane.<br>
+Access to vaults takes place through two interfaces or planes. These planes are the management plane and the data plane.
 
  -  The *management plane* is where you manage Key Vault itself and it is the interface used to create and delete vaults. You can also read key vault properties and manage access policies.<br>
  -  The *data plane* allows you to work with the data stored in a key vault. You can add, delete, and modify keys, secrets, and certificates.
@@ -82,9 +82,9 @@ You can control access to Key Vault keys, certificates and secrets using Azure R
 
 Key Vault logging saves information about the activities performed on your vault.
 
-You can integrate Key Vault with Event Grid to be notified when the status of a key, certificate, or secret stored in key vault has changed.<br>
+You can integrate Key Vault with Event Grid to be notified when the status of a key, certificate, or secret stored in key vault has changed.
 
-It is also important to monitor the health of your key vault, to make sure your service operates as intended.<br>
+It is also important to monitor the health of your key vault, to make sure your service operates as intended.
 
 ## Backup and recovery
 

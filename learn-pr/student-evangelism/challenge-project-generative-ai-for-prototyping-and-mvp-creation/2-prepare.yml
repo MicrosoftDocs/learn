@@ -3,13 +3,14 @@ uid: learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.
 title: Prepare for the challenge
 metadata:
   title: Prepare for the challenge
-  description: "Prepare for the challenge"
-  ms.date: 12/04/2023
+  description: Prepare for the challenge
   author: bethanyjep
   ms.author: bethanycheum
-  ms.custom: team=nextgen
+  ms.date: 12/04/2023
   ms.topic: unit
-  ms.service: microsoft-copilot
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
 durationInMinutes: 5
 content: |
   [!include[](includes/2-prepare.md)]

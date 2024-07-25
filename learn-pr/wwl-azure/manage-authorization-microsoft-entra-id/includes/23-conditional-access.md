@@ -1,4 +1,4 @@
-The modern security perimeter extends beyond an organization's network perimeter to include user and device identity. Organizations now use identity-driven signals as part of their access control decisions.<br>
+The modern security perimeter extends beyond an organization's network perimeter to include user and device identity. Organizations now use identity-driven signals as part of their access control decisions.
 
 Microsoft Entra Conditional Access brings signals together, to make decisions, and enforce organizational policies. Conditional Access is Microsoft's Zero Trust policy engine taking signals from various sources into account when enforcing policy decisions.
 
@@ -29,26 +29,44 @@ Conditional Access takes signals from various sources into account when making a
 These signals include:
 
  -  User or group membership
+    
+    
      -  Policies can be targeted to specific users and groups giving administrators fine-grained control over access.
  -  IP Location information
+    
+    
      -  Organizations can create trusted IP address ranges that can be used when making policy decisions.
      -  Administrators can specify entire countries/regions IP ranges to block or allow traffic from.
  -  Device
+    
+    
      -  Users with devices of specific platforms or marked with a specific state can be used when enforcing Conditional Access policies.
      -  Use filters for devices to target policies to specific devices like privileged access workstations.
  -  Application
+    
+    
      -  Users attempting to access specific applications can trigger different Conditional Access policies.
  -  Real-time and calculated risk detection
+    
+    
      -  Signals integration with Microsoft Entra ID Protection allows Conditional Access policies to identify and remediate risky users and sign-in behavior.
  -  Microsoft Defender for Cloud Apps
+    
+    
      -  Enables user application access and sessions to be monitored and controlled in real time. This integration increases visibility and control over access to and activities done within your cloud environment.
 
 ## Common decisions
 
  -  Block access
+    
+    
      -  Most restrictive decision
  -  Grant access
+    
+    
      -  The least restrictive decision can still require one or more of the following options:
+        
+        
          -  Require multifactor authentication
          -  Require the device to be marked as compliant
          -  Require Hybrid Microsoft Entra ID joined device

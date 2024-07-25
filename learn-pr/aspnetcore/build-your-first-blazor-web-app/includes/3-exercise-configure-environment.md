@@ -81,7 +81,7 @@ To create a new Blazor web app using Visual Studio:
 
 1. Start Visual Studio and select **Create a new project**.
 
-1. In **Create a new project** window, type **Blazor** in the search box and hit Enter.
+1. In **Create a new project** window, type **Blazor** in the search box and press **Enter**.
 
 1. Select the **Blazor Web App** template and select **Next**.
 

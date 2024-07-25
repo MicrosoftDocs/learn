@@ -1,78 +1,125 @@
-Suppose you need to choose a tool to administer the Azure resources you'll use to test your Customer Relationship Management (CRM) system. Your tests require you to create resource groups and provision virtual machines (VMs).
+<!-- markdownlint-disable MD041 -->
 
-You want something that's easy for administrators to learn, but powerful enough to automate installing and setting up multiple virtual machines or script a full application environment. There are multiple tools available, and you need to find the best one for your people and tasks.
+Imagine you must select a tool to deploy and manage the Azure resources for your Customer
+Relationship Management (CRM) system. For testing, you need to create resource groups and virtual
+machines (VMs) for each test iteration.
+
+You seek a tool that's easy for administrators to learn, yet powerful enough to automate the
+installation and configuration of multiple virtual machines. With several tools available, your goal
+is to find the best one for your administrators to script the deployment of the entire cloud
+infrastructure efficiently.
 
 ## What tools are available?
 
-Azure provides three administration tools:
+Azure offers three administration tools:
 
-- The Azure portal
-- The Azure CLI
+- Azure portal
 - Azure PowerShell
+- Azure CLI
 
-These tools all offer approximately the same amount of control; any task that you can do with one of the tools, you can likely do with the other two. All three are cross-platform, running on Windows, macOS, and Linux. They differ in syntax, setup requirements, automation support.
+These tools provide the same deployment and configuration capabilities, allowing you to perform any
+task with any of the three. All are available on Windows, Linux, and macOS. However, they differ in
+syntax, setup requirements, and support for automation.
 
-Here, we'll describe each of the three options and provide some guidance on how to decide among them.
+The rest of this unit describes each of these tools and offers guidance on how to choose the best
+one for your needs.
 
-## What is the Azure portal?
+## Azure portal
 
-The Azure portal is a website that lets you create, configure, and alter the resources in your Azure subscription. The portal is a Graphical User Interface (GUI) that makes it convenient to locate the resource you need and execute any required changes. It also guides you through complex administrative tasks by providing wizards and tooltips.
+The Azure portal is a web-based interface that allows you to create, configure, and manage the
+resources in your Azure subscription. As a Graphical User Interface (GUI), it offers a user-friendly
+way to locate and manage resources, with wizards and tooltips to assist you through complex
+management tasks.
 
-The portal doesn't provide any way to automate repetitive tasks. For example, to set up 15 VMs, you'd need to create them one by one, completing the wizard for each VM. This method can be time consuming, and it's error prone for complex tasks.
+However, Azure portal lacks automation capabilities for repetitive tasks. For instance, if you need
+to set up 15 VMs, you must create each one individually, completing the wizard for each VM. This
+approach can be time-consuming and error-prone for more complex tasks.
 
-## What is the Azure CLI?
+## Azure PowerShell
 
-The Azure CLI is a cross-platform command-line program to connect to Azure and execute administrative commands on Azure resources. For example, to create a VM, you could use the following command:
+Azure PowerShell is a collection of modules that provide PowerShell cmdlets for managing Azure
+resources. It requires PowerShell, a command-line shell and scripting language.
+
+For example, Azure PowerShell provides the `New-AzVM` cmdlet to create a virtual machine in your
+Azure subscription. To use it, launch PowerShell and execute the following command:
+
+```azurepowershell
+$azVmParams = @{
+    ResourceGroupName = 'CrmTestingResourceGroup'
+    Name              = 'CrmUnitTestVm'
+    Image             = 'Ubuntu2204'
+}
+New-AzVm @azVmParams
+```
+
+Azure PowerShell is available in two ways: inside a browser via Azure Cloud Shell or through a local
+installation on Windows, Linux, or macOS. You can use PowerShell interactively, running Azure
+PowerShell commands from PowerShell, or you can create and execute scripts that consist of multiple
+commands.
+
+## Azure CLI
+
+The Azure CLI is a cross-platform command-line tool that enables you to manage Azure resources. For
+instance, you can create a virtual machine using the following command (this example uses Bash line
+continuation characters):
 
 ```azurecli
 az vm create \
-  --resource-group CrmTestingResourceGroup \
-  --name CrmUnitTests \
-  --image Ubuntu2204
-  ...
+    --resource-group CrmTestingResourceGroup \
+    --name CrmUnitTestVm \
+    --image Ubuntu2204
 ```
 
-The Azure CLI is available two ways: inside a browser via the Azure Cloud Shell, or with a local installation on Linux, Mac, or Windows. In both cases, you can use it interactively or use it with scripts to automate tasks. For interactive use, you'd first launch a shell (such as `cmd.exe` on Windows or Bash on Linux or macOS) then issue the commands at the shell prompt. To automate repetitive tasks, you'd assemble the commands into a shell script using the script syntax of your chosen shell, then execute the script.
+The Azure CLI is also available in two ways: inside a browser via Azure Cloud Shell or through a
+local installation on Windows, Linux, or macOS. You can use it interactively by launching a shell
+(such as Bash, PowerShell, or `cmd.exe`) and entering commands at the prompt. Alternatively, you can
+automate repetitive tasks by assembling the commands into a shell script using the syntax of your
+chosen shell.
 
-## What is Azure PowerShell?
+## How to choose a management tool
 
-Azure PowerShell is a module you add to PowerShell to let you connect to your Azure subscription and manage resources. Azure PowerShell requires PowerShell to function. PowerShell provides services like the shell window, command parsing, and so on. The Azure Az PowerShell module adds Azure-specific commands.
+With few exceptions, any task you can perform in the Azure portal can also be accomplished using
+Azure PowerShell or the Azure CLI. Here are some factors to consider when choosing the most
+appropriate tool for your needs:
 
-For example, Azure PowerShell provides the **New-AzVM** command, which creates a virtual machine for you in your Azure subscription. To use it, launch the PowerShell application and issue the following command:
+- **Automation**: Do you need to automate complex or repetitive tasks? Azure PowerShell and the
+  Azure CLI support automation, whereas the Azure portal doesn't.
 
-```azurepowershell
-New-AzVm `
-    -ResourceGroupName "CrmTestingResourceGroup" `
-    -Name "CrmUnitTests" `
-    -Image "UbuntuLTS"
-    ...
-```
+- **Learning curve**: Do you need to complete a task quickly without learning new commands or
+  syntax? The Azure portal is user-friendly and doesn't require learning commands or syntax. In
+  contrast, Azure PowerShell and the Azure CLI require an understanding of command shell syntax and
+  the specific requirements for each command.
 
-Azure PowerShell is also available two ways: inside a browser via the Azure Cloud Shell, or with a local installation on Linux, Mac, or Windows. In both cases, you have two modes to choose from. You can use it in interactive mode, in which you manually issue one command at a time; or in scripting mode, where you execute a script that consists of multiple commands.
-
-## How to Choose an administrative tool
-
-There's approximate parity between the portal, the Azure CLI, and Azure PowerShell with respect to the Azure objects they can administer and the configurations they can create. They're also all cross-platform. Typically, you'll consider several other factors when making your choice:
-
-- **Automation**: Do you need to automate a set of complex or repetitive tasks? Azure PowerShell and the Azure CLI support automation, but Azure portal doesn't.
-
-- **Learning curve**: Do you need to complete a task quickly without learning new commands or syntax? The Azure portal doesn't require you to learn syntax or memorize commands. In Azure PowerShell and the Azure CLI, you must know the detailed syntax for each command you use.
-
-- **Team skillset**: Does your team have existing expertise? For example, your team might have used PowerShell to administer Windows. If so, they'll quickly become comfortable using Azure PowerShell.
+- **Team skillset**: Does your team have existing expertise? For instance, if your team is already
+  using PowerShell to manage other products like Windows, Exchange Server, or Microsoft 365, they
+  might find Azure PowerShell to be a more comfortable and efficient choice.
 
 ## Example
 
-Recall that you're choosing an administrative tool to create the test environments for your CRM application. Your administrators have two specific Azure tasks they need to complete:
+Let's revisit the scenario of choosing an administrative tool to deploy and test your CRM
+application. Your administrators have two specific Azure tasks to complete:
 
 1. Create one resource group for each category of testing (unit, integration, and acceptance).
-1. Create multiple VMs in each resource group before every round of testing.
+1. Create multiple VMs in each resource group before each round of testing.
 
-To create the resource groups, the Azure portal is a reasonable choice. These tasks are one-offs, so you don't need scripts to complete them.
+The Azure portal is a reasonable choice for creating resource groups. Since these tasks are one-off,
+you don't need scripts to create them.
 
-Finding the best tool to create the VMs is a more challenging decision. You need to create several VMs, and you need to create them repeatedly, likely several times each week. For these tasks, you'll want automation, so the Azure portal isn't a good choice. In this case, either Azure PowerShell or the Azure CLI will meet your needs. If your team members have some existing PowerShell knowledge, Azure PowerShell is likely the best match. Azure PowerShell is available on the operating systems your admin team uses, it supports automation, and should be quick for your team to learn.
+Most administrators first experience Azure through the Azure portal. The portal provides a
+well-organized graphical interface for managing Azure resources, making it an excellent starting
+point. However, the portal doesn't support automation, which is essential for repetitive tasks like
+creating multiple VMs several times a week.
 
-Most administrators' first experience with Azure is in the Azure portal. It's a great place to start because it provides a clean, well-structured graphical interface, but it provides limited options for automation. When you need automation, Azure gives you two options: Azure PowerShell for admins with PowerShell experience and the Azure CLI for everyone else.
+For automation in Azure, you have two options:
 
-In practice, businesses typically have a mix of one-off and repetitive tasks, so it's common to use both the Azure portal and a scripting solution. In our CRM example, it's appropriate to create the resource groups via the Azure portal and automate the VM creation with PowerShell.
+- Azure PowerShell
+- Azure CLI
 
-The rest of this module focuses on installing and using Azure PowerShell.
+Both tools meet your needs, but Azure PowerShell might be the best choice if your team has existing
+PowerShell knowledge.
+
+In practice, businesses typically perform a mix of one-off and repetitive tasks, often using both
+the Azure portal and a scripting solution. In your CRM example, creating resource groups using the
+Azure portal and automating VM creation with Azure PowerShell is a reasonable approach.
+
+The remainder of this module assumes Azure PowerShell is your choice for an automation tool.

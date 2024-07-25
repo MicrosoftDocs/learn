@@ -4,7 +4,7 @@ Visual Studio Code implements GitHub Copilot using two extensions, GitHub Copilo
 - The GitHub Copilot Chat extension generates code suggestions based on chat interactions or smart actions that act on selected code.
 
 > [!NOTE]
-> This module focuses on using the GitHub Copilot extensions to develop code. Using the GitHub Copilot extensions to create unit tests and improve existing code are covered separately.
+> In this module, you use the GitHub Copilot extensions to develop new features and applications. There are two separate modules that cover using GitHub Copilot to create unit tests and improve existing code.
 
 ## GitHub Copilot tools in Visual Studio Code
 
@@ -16,7 +16,7 @@ Visual Studio Code provides easy access to the following GitHub Copilot and GitH
 - **Quick Chat**: Ask a quick question and get back into what you're doing.
 - **Smart actions**: Run smart actions to complete certain tasks without even having to write a prompt.
 
-The GitHub Copilot extensions accelerate code development and keep you inside the Visual Studio Code environment.
+The GitHub Copilot extensions bring the power of AI into the Visual Studio Code environment.
 
 ## Generate code using code line completions with GitHub Copilot
 
@@ -40,20 +40,22 @@ Developers use code completions to accelerate the development of an initial code
 
 GitHub Copilot Chat helps you create code using chat interfaces and smart actions. For example, if you enter a prompt asking GitHub Copilot Chat to create a new method, GitHub Copilot can provide suggestions for one or more method signatures and implementations. Reviewing, and then accepting or discarding the suggestions helps you create an initial version of your code more quickly and accurately.
 
+> [!NOTE]
+> The GitHub Copilot Chat extension for Visual Studio Code includes a chat interface that processes user input. This training uses the terms *question* and *prompt* when referring to the input you provide during a chat session.
+
 GitHub Copilot Chat is especially helpful when you need to develop code that implements unfamiliar resources, such as a new library, framework, or API. When you submit a prompt that describes your requirement, GitHub Copilot Chat generates suggestions that demonstrate how to achieve your goal. Reviewing the suggestions can also teach you how to implement the new resources.
 
 Providing GitHub Copilot Chat with prompts or questions that include a clear scope and intent improves the generated responses. You can ask questions that provide context and describe your requirements in a conversational style. GitHub Copilot Chat uses the information you provide to generate code suggestions that meet your needs and match your coding style.
 
-> [!NOTE]
-> The GitHub Copilot Chat extension for Visual Studio Code includes a chat interface that processes user input. This training uses the terms *question* and *prompt* when referring to the input you provide during a chat session.
-
-You can use chat participants, slash commands, and chat variables to clarify the context of your prompts. The improved clarity helps GitHub Copilot Chat generate relevant responses.
+You can use chat participants, slash commands, and chat variables to clarify the context of your prompts.
 
 - Chat participants, such as `@workspace` or `@terminal`, help GitHub Copilot Chat understand the context of your question.
 - Slash commands, such as `/explain` or `/new`, help Copilot Chat understand the intent or purpose of your question.
 - Chat variables, such as `#file` or `#editor`, help Copilot Chat focus on something specific when considering the larger context of your question.
 
-By using these specialized descriptors, you can help GitHub Copilot Chat generate more accurate and useful responses. For example, you could scaffold a new C# console application by using the following prompt: `@workspace /new console application in C#`. This prompt includes a chat participant (`@workspace`) and a slash command (`/new`) to help GitHub Copilot Chat understand the intent of the question and generate a relevant response.
+Using these specialized descriptors helps GitHub Copilot Chat generate more accurate and useful responses.
+
+You can combine chat participants with slash commands to perform specific actions. For example, you could scaffold a new C# console application by using the following prompt: `@workspace /new console application in C#`. This prompt includes a chat participant (`@workspace`) and a slash command (`/new`) to help GitHub Copilot Chat perform the intended task.
 
 ![Screenshot showing the Chat used to scaffold a console app.](../media/chat-view-scaffold-new-workspace.png)
 
@@ -67,7 +69,7 @@ The Chat view enables a chat conversation with GitHub Copilot in Visual Studio C
 
 ![Screenshot showing the Chat view "welcome" message in Visual Studio Code.](../media/chat-view-1.png)
 
-If you need access to other Visual Studio Code views while using the Chat interface, you can open Chat in the editor by selecting **Open in Editor** from the Chat view's context menu.
+If you need access to other Visual Studio Code views while using the Chat interface, you can open Chat in the editor by selecting **Open Chat in Editor** from the Chat view's context menu.
 
 ![Screenshot showing the Chat view responding to a question in Visual Studio Code.](../media/chat-view-2.png)
 
@@ -89,7 +91,7 @@ GitHub Copilot maintains a history of your conversation. The history is used to 
 
 Depending on your question, GitHub Copilot Chat may return source code in the response. Source code is displayed as a code block, and you can manage the code in a few different ways.
 
-If you hover the mouse pointer over the code block, options for managing the code block are displayed. Your initial options are **Copy** and **Insert at Cursor (Ctrl+Enter)**.
+If you hover the mouse pointer over the code block, options for managing the code block are displayed. Your initial options are **Copy** and **Apply in Editor (Ctrl+Enter)**.
 
 ![Screenshot showing a code block in the Chat view.](../media/chat-view-4.png)
 

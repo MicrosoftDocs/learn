@@ -4,12 +4,11 @@ title: Monitor your solution
 metadata:
   title: Monitor your solution
   description: In this unit, we monitor the solution on IoT Edge and from Azure IoT Hub
-  ms.date: 06/14/2021
+  ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen
-  ms.service: iot-hub
 durationInMinutes: 3 # dummy number at present
 content: |
    [!include[](includes/7-monitor-solution.md)]

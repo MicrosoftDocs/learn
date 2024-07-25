@@ -1,4 +1,4 @@
-Your initial research of the SDN capabilities of Azure Stack HCI raised your level of confidence in being able to use them to improve the resiliency, agility, security, and manageability of your network infrastructure. However, you realize that a successful SDN deployment requires proper planning, especially if you want to integrate it with your existing environment.
+Your initial research of the software defined networking (SDN) capabilities of Azure Stack HCI raised your level of confidence in being able to use them to improve the resiliency, agility, security, and manageability of your network infrastructure. However, you realize that a successful SDN deployment requires proper planning, especially if you want to integrate it with your existing environment.
 
 ## Plan for SDN deployment
 
@@ -24,7 +24,7 @@ Microsoft provides minimum compute, storage, and software requirements for physi
 
 ### Network Controller
 
-To prepare for the deployment of Network Controller in an Active Directory Domain Services (AD DS) environment, you need to set up Kerberos-based authentication and authorization. This authorization allows Network Controller to manage all relevant aspects of the SDN infrastructure. The required permissions are assigned automatically during Network Controller deployment.
+To prepare for the deployment of Network Controller in an Active Directory (AD) Domain Services (DS) environment, you need to set up Kerberos-based authentication and authorization. This authorization allows Network Controller to manage all relevant aspects of the SDN infrastructure. The required permissions are assigned automatically during Network Controller deployment.
 
 > [!NOTE]
 > In highly available deployments, Network Controller forms a cluster consisting of three or more VMs, each running on a separate Azure Stack HCI cluster node. All Network Controller instances are joined to the same AD DS domain.
@@ -38,9 +38,9 @@ To support the network function virtualization-based services, you need to provi
 
 #### Management and HNV Provider logical networks
 
-All Azure Stack HCI cluster nodes must have access to the Management logical network and the HNV Provider logical network. For IP address planning purposes, each Azure Stack HCI cluster node must have at least one IP address assigned from the Management logical network. For the Management network, you can assign IP addresses statically or through Dynamic Host Configuration Protocol (DHCP). The SDN stack automatically assigns IP addresses for the HNV Provider logical network for the individual Azure Stack HCI cluster nodes. The addresses are provided from an IP address pool, specified through and managed by Network Controller.
+All Azure Stack HCI cluster nodes must have access to the Management logical network and the Hyper-V Network Virtualization (HNV) Provider logical network. For IP address planning purposes, each Azure Stack HCI cluster node must have at least one IP address assigned from the Management logical network. For the Management network, you can assign IP addresses statically or through Dynamic Host Configuration Protocol (DHCP). The SDN stack automatically assigns IP addresses for the HNV Provider logical network for the individual Azure Stack HCI cluster nodes. The addresses are provided from an IP address pool, and are specified through and managed by Network Controller.
 
-The Network Controller REST DNS name must be configured to allow dynamic DNS updates. All Network Controller VMs must be allowed to create and update the DNS record.
+The Network Controller REST Domain Name System (DNS) name must be configured to allow dynamic DNS updates. All Network Controller VMs must be allowed to create and update the DNS record.
 
 > [!NOTE]
 > There are other logical network configuration considerations that depend on the use of such features as VLANs and Switch Embedded Teaming (SET). You can learn more about these considerations in the Microsoft documentation referenced in the Summary unit of this module.
@@ -51,11 +51,11 @@ You need to provision further logical networks to accommodate deployments of the
 
 - Public virtual IP logical network. This network is intended for assignments of virtual IPs that represent front-end IP addresses. These IP addresses are used by external clients to access resources within virtual networks. Such as, for example, public load balancers or the front-end virtual IP of the Site-to-Site VPN gateway. Effectively, its IP address space must be routable outside of the SDN environment. You don’t need to preconfigure this network in your physical switches or routers, or assign it a VLAN.
 - Private virtual IP logical network. This network is intended for the assignment of virtual IPs accessed by Azure Stack HCI tenant workloads, so it doesn't need to be routable outside of the SDN environment. You don’t need to preconfigure this network in your physical switches or routers, or assign it a VLAN.
-- GRE virtual IP logical network. The GRE virtual IP network is used exclusively to define virtual IPs that are assigned to Gateway VMs for Site-to-Site GRE connections. You don’t need to preconfigure this network in your physical switches or routers, or assign it a VLAN.
+- Generic Routing Encapsulation (GRE) virtual IP logical network. The GRE virtual IP network is used exclusively to define virtual IPs that are assigned to Gateway VMs for Site-to-Site GRE connections. You don’t need to preconfigure this network in your physical switches or routers, or assign it a VLAN.
 
 ### Routing configuration
 
-To allow for connectivity between public virtual IP logical networks and external clients, it’s necessary to advertise routing information from the Software Load Balancer Multiplexer or RAS Gateway to an external BGP peer. Effectively, you need to configure a BGP peer on the router used by the SDN infrastructure to receive routes for the virtual IP logical networks advertised by the Software Load Balancer Multiplexers and RAS Gateways.
+To allow for connectivity between public virtual IP logical networks and external clients, it’s necessary to advertise routing information from the Software Load Balancer Multiplexer or RAS Gateway to an external Border Gateway Protocol (BGP) peer. Effectively, you need to configure a BGP peer on the router used by the SDN infrastructure to receive routes for the virtual IP logical networks advertised by the Software Load Balancer Multiplexers and RAS Gateways.
 
 Machines that are configured to connect to multiple networks, such as the Azure Stack HCI cluster nodes and gateway VMs must only have one default gateway configured. This gateway should reside on the management network for Azure Stack HCI cluster nodes, Network Controller VMs, and Software Load Balancer Multiplexer VMs. For the gateway VMs, this gateway should reside on the HNV Provider network.
 

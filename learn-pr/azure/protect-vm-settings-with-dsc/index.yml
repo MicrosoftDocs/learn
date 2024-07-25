@@ -3,6 +3,7 @@ uid: learn.azure.protect-vm-settings-with-dsc
 metadata:
   title: Protect your virtual machine settings with Azure Automation State Configuration
   description: Learn how to protect your virtual machine settings with Azure Automation State Configuration
+  manager: mkluck
   ms.date: 09/22/2023
   author: rmcmurray
   ms.author: robmcm

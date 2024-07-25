@@ -1,4 +1,4 @@
-When you access file data using the [Azure portal](https://portal.azure.com/?azure-portal=true), the portal makes requests to Azure Files behind the scenes. These requests can be authorized using either your Microsoft Entra account or the storage account access key. The portal indicates which method you're using, and enables you to switch between the two if you have the appropriate permissions.<br>
+When you access file data using the [Azure portal](https://portal.azure.com/?azure-portal=true), the portal makes requests to Azure Files behind the scenes. These requests can be authorized using either your Microsoft Entra account or the storage account access key. The portal indicates which method you're using, and enables you to switch between the two if you have the appropriate permissions.
 
 You can also specify how to authorize an individual file share operation in the Azure portal. By default, the portal uses whichever method you're already using to authorize all file shares, but you have the option to change this setting for individual file shares.
 
@@ -49,7 +49,7 @@ You can change the authentication method for individual file shares. By default,
 4.  The Authentication method indicates whether you're currently using the storage account access key or your Microsoft Entra account to authenticate and authorize file share operations. If you're currently authenticating using the storage account access key, you'll see **Access Key** specified as the authentication method, as in the following image. If you're authenticating using your **Microsoft Entra account**, you'll see Microsoft Entra user account specified instead.
     
     :::image type="content" source="../media/authorization-method-access-key-page-2fd78c3c.png" alt-text="Screenshot showing the authentication method access key page.":::
-    <br>
+    
 
 ### Authenticate with your Microsoft Entra account<br>
 
@@ -70,11 +70,9 @@ When you create a new storage account, you can specify that the Azure portal wil
 
 To specify that the portal will use Microsoft Entra authorization by default for data access when you create a storage account, follow these steps:
 
-1. Create a new storage account, following the instructions in [Create a storage account](/azure/storage/common/storage-account-create).
-
-2. On the **Advanced** tab, in the **Security** section, check the box next to **Default to Microsoft Entra authorization in the Azure portal**.
-
-3. Select **Review + create** to run validation and create the storage account.<br>
+1.  Create a new storage account, following the instructions in [Create a storage account](/azure/storage/common/storage-account-create).
+2.  On the **Advanced** tab, in the **Security** section, check the box next to **Default to Microsoft Entra authorization in the Azure portal**.
+3.  Select **Review + create** to run validation and create the storage account.<br>
 
 To update this setting for an existing storage account, follow these steps:
 

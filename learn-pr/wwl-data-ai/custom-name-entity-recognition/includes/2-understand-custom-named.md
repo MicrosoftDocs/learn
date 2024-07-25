@@ -13,7 +13,7 @@ Azure AI Language provides certain built-in entity recognition, to recognize thi
 |Placeholder  |Value  | Example |
 |---------|---------|---------|
 |`<YOUR-ENDPOINT>`     | The endpoint for your API request  | `https://<your-resource>.cognitiveservices.azure.com` |
-|`<AIP-VERSION>`       | The version of the API you are calling  | `2023-05-01` |
+|`<API-VERSION>`       | The version of the API you are calling  | `2023-05-01` |
 
 The body of that call will contain the document(s) the entities are extracted from, and the headers contain your service key.
 

@@ -3,13 +3,14 @@ uid: learn.challenge-project-use-generative-ai-to-ideate.next-step
 title: What's next?
 metadata:
   title: What's next?
-  description: "Learn more skills with Microsoft Learn"
-  ms.date: 12/7/2023
+  description: Learn more skills with Microsoft Learn
   author: pablonunes
   ms.author: pablolopes
-  ms.custom: team=nextgen
+  ms.date: 12/7/2023
   ms.topic: unit
-  ms.service: microsoft-copilot
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
 durationInMinutes: 2
 content: |
   [!include[](includes/5-next-step.md)]

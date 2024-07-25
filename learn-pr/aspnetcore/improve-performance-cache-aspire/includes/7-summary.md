@@ -3,8 +3,8 @@ Caching techniques enable engineers to accelerate responses from their web app a
 Now that you've completed the module, you can:
 
 - Choose a type of Redis caching for a specific performance optimization requirement.
-- Use a Redis distributed cache to increase performance in a .NET Aspire app.
-- Use a Redis output cache to cache complete HTML responses in a .NET Aspire app.
+- Use a Redis distributed cache to increase performance in apps built with .NET Aspire.
+- Use a Redis output cache to cache complete HTML responses in apps built with .NET Aspire.
 
 ## Learn more
 

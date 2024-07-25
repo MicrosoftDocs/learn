@@ -3,11 +3,13 @@ uid: learn.wwl.guided-project-create-ai-travel-agent.exercise-provide-context-cu
 title: Exercise - Provide context cues
 metadata:
   title: Exercise - Provide context cues
-  description: "Exercise - Provide context cues"
-  ms.date: 02/28/2024
+  description: Exercise - Provide context cues
   author: wwlpublish
   ms.author: buzahid
+  ms.date: 06/11/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-provide-context-cues.md)]

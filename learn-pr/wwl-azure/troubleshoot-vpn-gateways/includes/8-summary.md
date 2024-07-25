@@ -17,36 +17,36 @@ Now you’ve completed this module, you should be able to:
 
 Use these resources to discover more about the topics covered.
 
-[Tutorial - Connect an on-premises network and a virtual network: S2S VPN: Azure portal - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/tutorial-site-to-site-portal)
+[Tutorial - Connect an on-premises network and a virtual network: S2S VPN: Azure portal - Azure VPN Gateway | Microsoft Learn](/azure/vpn-gateway/tutorial-site-to-site-portal)
 
-[About ExpressRoute virtual network gateways - Azure | Microsoft Docs](/azure/expressroute/expressroute-about-virtual-network-gateways)
+[About ExpressRoute virtual network gateways - Azure | Microsoft Learn](/azure/expressroute/expressroute-about-virtual-network-gateways)
 
-[Azure VPN Gateway configuration settings | Microsoft Docs](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings)
+[Azure VPN Gateway configuration settings | Microsoft Learn](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings)
 
 [Gateway SKUs by tunnel, connection, and throughput](/azure/vpn-gateway/vpn-gateway-about-vpngateways)
 
-[About BGP with VPN Gateway - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/vpn-gateway-bgp-overview)
+[About BGP with VPN Gateway - Azure VPN Gateway | Microsoft Learn](/azure/vpn-gateway/vpn-gateway-bgp-overview)
 
-[Download VPN device configuration scripts for S2S VPN connections - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/vpn-gateway-download-vpndevicescript)
+[Download VPN device configuration scripts for S2S VPN connections - Azure VPN Gateway | Microsoft Learn](/azure/vpn-gateway/vpn-gateway-download-vpndevicescript)
 
 [Editing a sample VPN device script](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)
 
-[Log Analytics tutorial - Azure Monitor | Microsoft Docs](/azure/azure-monitor/logs/log-analytics-tutorial)
+[Log Analytics tutorial - Azure Monitor | Microsoft Learn](/azure/azure-monitor/logs/log-analytics-tutorial)
 
-[Reset a VPN gateway or connection to reestablish IPsec tunnels - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/reset-gateway)
+[Reset a VPN gateway or connection to reestablish IPsec tunnels - Azure VPN Gateway | Microsoft Learn](/azure/vpn-gateway/reset-gateway)
 
-[Troubleshoot an Azure site-to-site VPN connection that can't connect - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-cannot-connect)
+[Troubleshoot an Azure site-to-site VPN connection that can't connect - Azure VPN Gateway | Microsoft Learn](/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-cannot-connect)
 
-[Connect a computer to a virtual network using Point-to-Site and RADIUS authentication: PowerShell - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/point-to-site-how-to-radius-ps)
+[Connect a computer to a virtual network using Point-to-Site and RADIUS authentication: PowerShell - Azure VPN Gateway | Microsoft Learn](/azure/vpn-gateway/point-to-site-how-to-radius-ps)
 
 [Configuring a RADIUS server](/windows-server/networking/technologies/nps/nps-top)
 
-[Azure VPN Gateway: Create & install VPN client config files - P2S RADIUS connections | Microsoft Docs](/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius)
+[Azure VPN Gateway: Create & install VPN client config files - P2S RADIUS connections | Microsoft Learn](/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius)
 
-[Monitoring Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/monitor-vpn-gateway)
+[Monitoring Azure VPN Gateway | Microsoft Learn](/azure/vpn-gateway/monitor-vpn-gateway)
 
-[Troubleshoot Point-to-Site connections: macOS X clients - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/vpn-gateway-troubleshoot-point-to-site-osx-ikev2)
+[Troubleshoot Point-to-Site connections: macOS X clients - Azure VPN Gateway | Microsoft Learn](/azure/vpn-gateway/vpn-gateway-troubleshoot-point-to-site-osx-ikev2)
 
-[Troubleshoot Point-to-Site VPN clients - Microsoft Entra authentication - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/troubleshoot-ad-vpn-client)
+[Troubleshoot Point-to-Site VPN clients - Microsoft Entra authentication - Azure VPN Gateway | Microsoft Learn](/azure/vpn-gateway/troubleshoot-ad-vpn-client)
 
-[Troubleshoot Azure point-to-site connection problems - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems)
+[Troubleshoot Azure point-to-site connection problems - Azure VPN Gateway | Microsoft Learn](/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems)

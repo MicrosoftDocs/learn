@@ -3,11 +3,13 @@ uid: learn.wwl.analyze-images-computer-vision.exercise
 title: Exercise - Analyze images in Vision Studio
 metadata:
   title: Exercise - Analyze images in Vision Studio
-  description: "Exercise - Analyze images in Vision Studio"
-  ms.date: 02/22/2024
+  description: Exercise - Analyze images in Vision Studio
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 07/04/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 20
 content: |
   [!include[](includes/4-exercise.md)]

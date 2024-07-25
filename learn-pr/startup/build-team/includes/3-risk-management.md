@@ -4,7 +4,9 @@ This unit covers how to manage risk in startup teams. We'll start with managing 
 
 Disagreement among cofounders can lead to a breakdown in working relationships. If this breakdown isn't addressed, it can cause startups to fail.
 
-One simple strategy that can reduce the risk of serious cofounder conflict is to discuss how the cofounders will work together at the outset and reflect what's agreed in a cofounder agreement.
+If you haven't already, download and complete a Founder Alignment Exercise. It can be a useful way to unpack the expectations of each founder and identify any mismatches before they lead to breakdowns in team cohesion.
+
+Another simple strategy that can reduce the risk of serious cofounder conflict is to discuss how the cofounders will work together at the outset and reflect what's agreed in a cofounder agreement.
 
 A cofounder agreement is a simple legal agreement. It sets out how the company will be run, how the cofounders will make decisions, how they'll resolve disagreements, and what happens if an agreement can't be reached.
 

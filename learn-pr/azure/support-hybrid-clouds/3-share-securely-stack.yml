@@ -3,10 +3,10 @@ uid: learn.azure.support-hybrid-clouds.3-share-securely-stack
 title: Share information securely with Azure Stack Edge
 metadata:
   title: Share information securely with Azure Stack Edge
-  description: Discussion of how you can store and process highest classification data, uploading resulting information or models to Azure, with Azure Data Box Edge.
-  ms.date: 02/08/2023
-  author: TerryLanfear
-  ms.author: terrylan
+  description: Discussion of how you can store and process highest classification data, uploading resulting information or models to Azure, with Azure Stack Edge.
+  ms.date: 07/22/2024
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
 durationInMinutes: 4 
 content: |

@@ -3,11 +3,13 @@ uid: learn.wwl.analyze-images-computer-vision.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 02/22/2024
+  description: Knowledge check
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 07/04/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 2
 quiz:
   title: "Check your knowledge"

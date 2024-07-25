@@ -18,7 +18,7 @@ GitHub Copilot Individual is designed for individual developers, freelancers, st
 
 ### GitHub Copilot Individual
 
-GitHub Copilot Individual is available for free to all GitHub users. It includes features like code completions, chat in IDE and mobile, and security vulnerabilities filter. GitHub Copilot Individual is focused on making developers more productive and fulfilled. These features allow developers to code faster and enables them to focus on more satisfying work.
+GitHub Copilot Individual is free for verified students, teachers, and maintainers of popular open source projects on GitHub. It includes features like code completions, chat in IDE and mobile, and security vulnerabilities filter. GitHub Copilot Individual is focused on making developers more productive and fulfilled. These features allow developers to code faster and enables them to focus on more satisfying work. If you don't meet the criteria for a free Copilot Individual subscription, you'll be offered a 30-day free trial, after which a paid subscription is required for continued use.
 
 ### GitHub Copilot Business
 

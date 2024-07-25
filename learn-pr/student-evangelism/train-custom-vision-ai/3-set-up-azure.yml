@@ -3,10 +3,12 @@ uid: learn.student-evangelism.train-custom-vision-ai.3-set-up-azure
 metadata:
   title: Exercise - Set up the Custom Vision service
   description: This unit walks you through setting up a Custom Vision resource in Azure.
-  ms.date: 03/10/2021
   author: softchris
   ms.author: chnoring
+  ms.date: 03/10/2021
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Exercise - Set up the Custom Vision service
 durationInMinutes: 6

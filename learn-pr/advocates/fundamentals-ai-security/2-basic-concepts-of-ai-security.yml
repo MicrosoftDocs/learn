@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.fundamentals-of-ai-security.basic-concepts-of-ai-security
+title: Basic concepts of AI security
+metadata:
+  title: Basic concepts of AI security
+  description: Basic information about AI security
+  ms.date: 07/17/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-basic-concepts-of-ai-security.md)]

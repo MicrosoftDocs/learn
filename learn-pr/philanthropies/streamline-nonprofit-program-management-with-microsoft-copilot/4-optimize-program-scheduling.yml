@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.streamline-nonprofit-program-management-with-microsoft-copilo.optimize-program-scheduling
+title: Optimize program scheduling
+metadata:
+  title: Optimize program scheduling
+  description: This content is a part of the Streamline nonprofit program management with Microsoft Copilot module.
+  author: CourtneyHMicrosoft
+  ms.author: cohodge
+  ms.date: 5/30/2024
+  ms.topic: unit
+  ai-usage: ai-assisted
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-optimize-program-scheduling.md)]

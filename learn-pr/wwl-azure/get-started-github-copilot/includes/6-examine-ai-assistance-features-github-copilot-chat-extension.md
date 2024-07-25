@@ -187,13 +187,13 @@ You can use an inline chat session to suggest a code update as follows:
 1. Ask GitHub Copilot Chat how to complete the update.
 1. Review the suggestions and select the best option.
 
-In this case, you could ask: `how can I update this code to ensure that the list doesn't include duplicate numbers?`
+In this case, you could ask: `How can I update this code to ensure that the list doesn't include duplicate numbers?`
+
+If you like the proposed code updates, you can select **Accept** and continue coding.
 
 ![Screenshot showing suggested update from inline chat in Visual Studio Code.](../media/inline-chat-3.png)
 
-If you like the proposed code updates, you can select **Accept** and continue coding. If you don't like the proposed updates, you can ask Copilot Chat to generate another suggestion by selecting the **Rerun...** icon. The Rerun icon is displayed as a circular arrow that and appears below and to the right of the prompt textbox. Hover the mouse pointer in the area below the prompt textbox to display the Rerun icon:
-
-![Screenshot showing the Rerun icon displayed below prompt textbox during an inline chat session.](../media/inline-chat-4.png)
+If you don't like the proposed updates, you can ask Copilot Chat to generate another suggestion by selecting the **Rerun...** icon. The Rerun icon is displayed as a circular arrow that and appears below the prompt textbox.
 
 If you rerun the prompt and still don't get the results you need, try updating your prompt with additional context. Copilot Chat generates better suggestions when the prompt is clear, succinct, and accurate.
 
@@ -205,6 +205,7 @@ The following smart actions are available:
 
 - **Explain This**: The `Explain This` action generates a natural language description of the selected code. This can be useful for understanding the purpose and functionality of a code snippet. The `Explain This` action is especially useful if you're working with unfamiliar code or need to explain the code to others.
 - **Fix This**: The `Fix This` action suggests a fix for the selected code. This can be helpful if you encounter an error or issue in your code and need guidance on how to resolve it. Copilot Chat can suggest changes to variables, control structures, or function calls that might resolve the issue.
+- **Review This**: The `Review This` action provides a code review of the selected code. This can be useful for identifying potential issues, improving code quality, and ensuring best practices are followed. The `Review This` action can help you identify bugs, performance bottlenecks, and security vulnerabilities in your code.
 - **Generate Docs**: The `Generate Docs` action creates documentation for the selected code. This can be useful for documenting your codebase, especially if you're working on a project with multiple contributors or need to share your code with others.
 - **Generate Tests**: The `Generate Tests` action creates unit tests for the selected code. This can be helpful for ensuring the correctness and reliability of your code, especially if you're working on a project with complex logic or critical functionality.
 
@@ -217,20 +218,58 @@ Once again, let's consider the prime number app.
 In the previous section, the inline chat suggested the following code to ensure that `numbers` doesn't include any duplicates:
 
 ```csharp
-// create a list of 100 unique random numbers between 1 and 1000
+// create a list of 100 random numbers between 1 and 1000
+List<int> numbers = new List<int>();
+Random random = new Random();
+while (numbers.Count < 100)
+{
+    int randomNumber = random.Next(1, 1000);
+    if (!numbers.Contains(randomNumber))
+    {
+        numbers.Add(randomNumber);
+    }
+}
+```
+
+Although this code ensures a collection of unique elements, there could be opportunities for improvement.
+
+You can use the **Review This** smart action to check code selections. To use the **Review This** smart action:
+
+1. Select a code snippet that needs review. In this case, the code that generates the list of random numbers.
+
+1. Select **Review This** from the Copilot context menu.
+
+1. Review the suggested updates and select **Accept** to apply the changes.
+
+For the code snippet that generates random numbers, the **Review This** smart action suggests the following:
+
+- Initializing `List<int> numbers` with a capacity of `100` to avoid multiple resizes during population.
+- Using a `HashSet<int>` rather than a `List<int>` for faster lookups when checking for duplicates.
+
+In this case, the **Review This** smart action leads you to using `HashSet<int>` rather than `List<int>` to improve performance.
+
+```csharp
+// create a list of 100 random numbers between 1 and 1000
 HashSet<int> numbers = new HashSet<int>();
 Random random = new Random();
 while (numbers.Count < 100)
 {
-    numbers.Add(random.Next(1, 1000));
+    int randomNumber = random.Next(1, 1000);
+    if (!numbers.Contains(randomNumber))
+    {
+        numbers.Add(randomNumber);
+    }
 }
+
+int sum = addPrimeNumbersInNumericList(numbers);
+Console.WriteLine(sum);
 ```
 
-Although using a `HashSet` ensures a collection of unique elements, the update creates a new problem. The `addPrimeNumbersInNumericList` function expects a `List<int>` as input, but the updated code creates a `HashSet<int>`. This results in the following compilation error:
+Although using a `HashSet` works efficiently to ensure a collection of unique elements, the update creates a new problem. The `addPrimeNumbersInNumericList` method expects a `List<int>` as input, but the updated code creates a `HashSet<int>`. This results in the following compilation error:
 
-![Screenshot showing an error message in Visual Studio Code.](../media/smart-actions-2.png)
+![Screenshot showing how to access smart actions in Visual Studio Code.](../media/smart-actions-2.png)
 
-Fortunately, you can use the **Fix This** smart action to resolve the issue. To use the **Fix This** smart action:
+Fortunately, you can use the **Fix This** smart action to correct the error. To use the **Fix This** smart action:
 
 1. Right-click on the code snippet that needs to be fixed. In this case, the code underlined in red.
 
@@ -238,11 +277,22 @@ Fortunately, you can use the **Fix This** smart action to resolve the issue. To 
 
 1. Review the suggested fix and select **Accept** to apply the changes.
 
-The **Fix This** smart action generates a code snippet that fixes the error by using the `numbers` collection to create a new `List<int>` named `numberList`.
+The `Fix This` smart action generates one or more suggestions to fix an error. In this case, one of the suggestions uses the `ToList()` method to convert the `HashSet` to a `List` inside the call to `addPrimeNumbersInNumericList`. The resulting code will look similar to the following code snippet:
 
 ```csharp
-List<int> numberList = new List<int>(numbers);
-int sum = addPrimeNumbersInNumericList(numberList);
+// create a list of 100 random numbers between 1 and 1000
+HashSet<int> numbers = new HashSet<int>();
+Random random = new Random();
+while (numbers.Count < 100)
+{
+    int randomNumber = random.Next(1, 1000);
+    if (!numbers.Contains(randomNumber))
+    {
+        numbers.Add(randomNumber);
+    }
+}
+
+int sum = addPrimeNumbersInNumericList(numbers.ToList());
 Console.WriteLine(sum);
 ```
 

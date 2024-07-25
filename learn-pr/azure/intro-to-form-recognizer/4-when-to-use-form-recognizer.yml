@@ -4,10 +4,12 @@ title: When to use Azure AI Document Intelligence
 metadata:
   title: When to user Azure AI Document Intelligence
   description: When to use Azure AI Document Intelligence
-  ms.date: 03/14/2023
   author: laujan
   ms.author: lajanuar
+  ms.date: 03/14/2023
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 5
 content: |
   [!INCLUDE[](includes/4-when-to-use-form-recognizer.md)]

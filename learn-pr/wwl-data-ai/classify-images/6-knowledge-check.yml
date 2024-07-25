@@ -3,15 +3,17 @@ uid: learn.wwl.classify-images.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 08/20/2021
+  description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 durationInMinutes: 3
 quiz:
-  title: "Check your knowledge"
+  title: "Check your knowledge"
   questions:
   - content: "You want to train a model that can categorize an image as \"cat\" or \"dog\" based on its subject. What kind of Azure AI Custom Vision project should you create?"
     choices:

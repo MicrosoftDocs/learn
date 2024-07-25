@@ -41,9 +41,11 @@ In addition to certificate metadata, an addressable key, and an addressable secr
 
 The certificate attributes are mirrored to attributes of the addressable key and secret that are created when the Key Vault certificate is created.
 
-A Key Vault certificate has the following attribute:<br>
+A Key Vault certificate has the following attribute:
 
  -  enabled: This Boolean attribute is optional. Default is true. It can be specified to indicate if the certificate data can be retrieved as a secret or operable as a key.
+    
+    
      -  This attribute is also used with nbf and exp when an operation occurs between nbf and exp, but only if enabled is set to true. Operations outside the nbf and exp window are automatically disallowed.
 
 A response includes these additional read-only attributes:
@@ -54,14 +56,14 @@ A response includes these additional read-only attributes:
  -  nbf: IntDate contains the value of the "not before" date of the X.509 certificate.
 
 > [!NOTE]
-> *If a Key Vault certificate expires it can still be retrieved, but certificate may become inoperable in scenarios like Transport Layer Security protection where expiration of certificate is validated.*<br>
+> *If a Key Vault certificate expires it can still be retrieved, but certificate may become inoperable in scenarios like Transport Layer Security protection where expiration of certificate is validated.*
 
 **Tags**
 
 Tags for certificates are a client-specified dictionary of key/value pairs, much like tags in keys and secrets.
 
 > [!NOTE]
-> *A caller can read tags if they have the list or get permission to that object type (keys, secrets, or certificates).*<br>
+> *A caller can read tags if they have the list or get permission to that object type (keys, secrets, or certificates).*
 
 ## Certificate policy
 
@@ -73,6 +75,8 @@ At a high level, a certificate policy contains the following information:
 
  -  X.509 certificate properties, which include subject name, subject alternate names, and other properties that are used to create an X.509 certificate request.
  -  Key properties, which include key type, key length, exportable, and `ReuseKeyOnRenewal` fields. These fields instruct Key Vault on how to generate a key.
+    
+    
      -  Supported key types are RSA, RSA-HSM, EC, EC-HSM, and octet.
  -  Secret properties, such as the content type of an addressable secret to generate the secret value, for retrieving a certificate as a secret.
  -  Lifetime actions for the Key Vault certificate. Each lifetime action contains:
@@ -108,7 +112,7 @@ Key Vault partners with the following certificate issuer providers for Transport
 | DigiCert          | Supported in all Key Vault service locations in public cloud and Azure Government |
 | GlobalSign        | Supported in all Key Vault service locations in public cloud and Azure Government |
 
-Before a certificate issuer can be created in a key vault, an administrator must take the following prerequisite steps:<br>
+Before a certificate issuer can be created in a key vault, an administrator must take the following prerequisite steps:
 
 1.  Onboard the organization with at least one CA provider.
 2.  Create requester credentials for Key Vault to enroll (and renew) Transport Layer Security/Secure Sockets Layer certificates. This step provides the configuration for creating an issuer object of the provider in the key vault.
@@ -135,7 +139,7 @@ Users can create one or more vaults to hold certificates, to maintain scenario-a
 
 Transport Layer Security certificates can help encrypt communications over the internet and establish the identity of websites. This encryption makes the entry point and mode of communication more secure. Additionally, a chained certificate that's signed by a public CA can help verify that the entities holding the certificates are legitimate.
 
-As an example, here are some use cases of using certificates to secure communication and enable authentication:<br>
+As an example, here are some use cases of using certificates to secure communication and enable authentication:
 
  -  Intranet/internet websites: Protect access to your intranet site and ensure encrypted data transfer over the internet through Transport Layer Security certificates.<br>
  -  IoT and networking devices: Protect and secure your devices by using certificates for authentication and communication.

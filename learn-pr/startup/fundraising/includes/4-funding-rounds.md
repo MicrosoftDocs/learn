@@ -12,19 +12,19 @@ The first step before you contact any investors is to do research and determine 
 
 After you have a list of potential investors, rank them in order of preference. At the top of the list are the investors that you most want to have as shareholders in your company. This ranking might be because of their sector experience, networks, or strong brand. Maybe you've spoken to founders they've backed previously who told you that they're great to work with.
 
-At the bottom of the list are the investors that you would be willing to have as shareholders. They might be less desirable because they have less expertise in your sector, are general partners who don't have experience as founders, or the feedback about them from other founders is less positive.
+At the bottom of the list are the investors that you would be willing to have as shareholders. They might be less desirable because they have shallower expertise in your sector, are general partners who don't have experience as founders, or the feedback about them from other founders is less positive.
 
-Don't contact investors from whom you wouldn't accept an investment since it wastes your time and theirs.
+Don't contact investors from whom you wouldn't accept an investment; this wastes your time and theirs.
 
-There are two approaches on which investors to contact first:
+There are two schools of thought on which investors to approach first:
 
-- If you're confident of your investment proposal and your pitch is polished, start at the top of your list. Pitch the investors you most want to invest in your startup. If they agree to invest, your funding round will close more quickly and you avoid involving less desirable investors.
+- If you're confident of your investment proposal and your pitch is polished, start at the top of your list. Pitch the investors you most want to invest in your startup. If they agree to invest, your funding round will close more quickly and you avoid wasting time with less valuable investors.
 
 - If this is your first time raising a funding round, your pitch is a little shaky, or your company only just meets the investability threshold for your target investors, it might be a good idea to start at the bottom of your list.
 
    By pitching less desirable investors, you gain experience in pitching your startup. You also receive feedback and questions from these investors that you can integrate into subsequent pitches. By the time you make it to the top of your list, your pitch will be more solid and you can anticipate many of the questions you'll receive.
 
-   The disadvantage of the second approach is that it takes longer. It involves more meetings, and if you receive investment offers from your non-preferred investors many founders find it difficult to say no to an investment offer. You also run the risk of saying no and then not receiving offers from any of your preferred investors.
+   The disadvantage of the second approach is that it takes longer. You'll have more meetings, and you might even receive investment offers from your non-preferred investors. Many founders find it difficult to say no to an investment offer, because they run the risk of saying no and then not receiving offers from any of their preferred investors.
   
 ## Make contact with investors
 
@@ -32,7 +32,7 @@ Almost all investors allow startups to send unsolicited pitches, either by cold 
 
 In contrast, most early-stage investments come via referral from someone whose judgment the investor trusts. These pitches are often taken more seriously and receive a more thorough review.
 
-After you decide which investors to contact, get a warm introduction via a mutual connection, or through a founder of one of their existing portfolio companies.
+After you decide which investors to contact, get a warm introduction via a mutual connection if you have one, or through a founder of one of their existing portfolio companies.
 
 Building relationships with investors takes time. Most investors are receptive to having informal discussions with founders well before you begin the process of raising your funding round.
 
@@ -60,11 +60,11 @@ You might also be able to achieve some competitive tension as investors realize 
 
 Most funding rounds involve multiple investors, but in most cases one investor does most of the pre-investment work and is often the first to commit funding. This investor is referred to as the *lead investor*.
 
-Finding a lead investor is important, because their commitment signals to other investors that someone they trust has evaluated your startup as a worthy investment. This phenomenon is noticeable when the lead investor is a top-tier venture capital fund or well-known angel investor. On many occasions, previously undecided investors commit within days of learning that a lead investor commits to a funding round.
+Finding a lead investor is important, because their commitment signals to other investors that someone they trust has evaluated your startup as a worthy investment. This phenomenon is noticeable when the lead investor is a top-tier venture capital fund or well-known angel investor. On many occasions, previously undecided investors commit within days of learning that a lead investor has committed to a funding round.
 
 As a startup founder, one of your objectives is to find true believers who will make an early decision to back your company and help you secure the other investors you need to close your funding round.
 
-Conversely, it's rarely a good idea to try converting potential investors who are on the fence, or who don't show a sense of urgency in making an investment in your company.
+Conversely, it's rarely a good idea to spend time trying to convert potential investors who are on the fence, or who don't show a sense of urgency in making an investment in your company.
 
 ## Understand term sheets
 
@@ -92,7 +92,7 @@ After you sign a term sheet, an investor begins due diligence. In this process, 
 
 The goal of due diligence is to ensure that there are no serious obstacles to your company's chance to succeed.
 
-There's no single due-diligence checklist that all investors use, but there are some common themes in which most investors are interested. The following sections list due diligence review topics that most early-stage investors want to consider.
+There's no single due-diligence checklist that all investors use, but there are some common themes in which most investors are interested. The following sections list due diligence review topics that most early-stage investors want to review.
 
 ||Topics|
 |---|---|

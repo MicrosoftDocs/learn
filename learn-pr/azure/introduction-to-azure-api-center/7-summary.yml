@@ -8,6 +8,8 @@ metadata:
   author: juliamuiruri4
   ms.author: juliamuiruri
   ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
   zone_pivot_groups: azure-resource-interaction
 durationInMinutes: 5
 content: |

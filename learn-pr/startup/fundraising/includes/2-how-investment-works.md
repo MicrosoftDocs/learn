@@ -32,29 +32,29 @@ There are some good reasons why raising money from investors might not be a good
 
 First, you might not need external capital. If you can self-fund your company or generate customer revenue early enough, bootstrapping your startup can be the best path to take.
 
-You also might not want to start a high-growth company and swing for the fences. Taking external capital from an investor brings a set of expectations. As we discuss later, most investors are only interested in backing companies that experience massive growth and generate a large financial return. Growing your company at a more modest pace can have many advantages--for example, by providing founders with an ongoing source of income and allowing them to be in control of their own work-life balance.
+You also might not want to start a high-growth company and swing for the fences. Taking external capital from an investor brings with it a set of expectations. As we'll discuss later, most investors are interested only in backing companies that can experience massive growth and generate a large financial return. It makes sense to want to start a company that grows at a more modest pace. Such companies often provide founders with an ongoing source of income and allow them to be in control of their own work-life balance.
 
 When you raise external capital, you're giving up some control over your company because you're no longer the sole owner. The company goes from being *my company* to *our company*.
 
-One way to think through this decision is to weigh the advantages and disadvantages. On the downside, you have to give up some control. On the upside, you have the capital to increase the odds that the company succeeds and grows and succeeds.
+One way to think through this decision is to weigh the advantages and disadvantages. On the downside, you have to give up some control. On the upside, you have the capital to increase the odds that the company grows and succeeds.
 
-A worksheet like the [Founder Alignment Exercise](https://foundershubcontent.z13.web.core.windows.net/1_EXERCISE1%20-%20Founder%20alignment%20exercise.pdf?azure-portal=true) is a useful input to help you decide which kind of company you and your cofounders want to build.
+A worksheet like the Founder Alignment Exercise is a useful input to help you decide which kind of company you and your cofounders want to build.
 
 ## Control and dilution
 
-When you raise money from an investor, they'll typically want some input on how you run the company. Reasons for this include wanting to protect their investment and ensuring that they're able to contribute positively to the company's growth.
+When you raise money from an investor, they'll want some input on how you run the company. They need this information to protect their investment and ensure that they're able to contribute positively to the company's growth.
 
-Their involvement might take the form of a seat on your board of directors or a board observer position, or it might take place informally through regular meetings with the founders. It can also involve giving the investor voting and veto rights on key strategic decisions. Usually, a separate class of shares is issued to investors with these rights attached.
+Their input might take the form of a seat on your board of directors or a board observer position, or it might take place informally through regular meetings with the founders. It can also involve giving the investor voting and veto rights on key strategic decisions. Usually, a separate class of shares is issued to investors with these rights attached.
 
-A good investor isn't interested in running your company. However, they *will* want to maximize its chance of success. Unless something goes terribly wrong, you and your cofounders should be in charge of your company, making all the day-to-day decisions.
+A good investor isn't interested in running your company, they just want to maximize its chance of success. Unless something goes terribly wrong, you and your cofounders will still be in charge of the company, making all the day-to-day decisions.
 
 Nevertheless, many founders grapple with the question of giving up some control of their company.
 
-It's important to separate the concepts of economic interest and control. As a startup raises more capital, the shares of the founders are diluted by the incoming investors. When startups raise large amounts of money over multiple funding rounds, founders sometimes end up with a minority stake in the company they started.
+It's important to separate the concepts of economic interest and control. As a startup raises more capital, the founders' shares are diluted by the incoming investors. When startups raise large amounts of money over multiple funding rounds, founders sometimes end up with a minority stake in the company they started.
 
 This change doesn't necessarily mean they lose control over the company. An investor can have a significant economic interest in the company while having only a modest degree of control over it, but they still benefit financially when the company is successful.
 
-By way of example, Mark Zuckerberg retains significant control over Meta (previously Facebook). He holds around 58 percent of voting stock, despite having raised billions of dollars from investors and owning [less than 20 percent of the company's total stock](https://www.investopedia.com/articles/insights/082216/top-9-shareholders-facebook-fb.asp?azure-portal=true).
+By way of example, Mark Zuckerberg retains significant control over Meta (previously Facebook). He holds around 58 percent of voting stock, despite having raised billions of dollars from investors and being diluted to a minority shareholding with [less than 20 percent of the company's total stock](https://www.investopedia.com/articles/insights/082216/top-9-shareholders-facebook-fb.asp?azure-portal=true).
 
 ## Funding rounds
 
@@ -88,27 +88,27 @@ The riskier an investment, the higher the rate of return an investor should expe
 
 Generally speaking, at the low end of the risk-return spectrum are investments such as government bonds. Property and listed stocks are in the middle. Startups are at the top.
 
-It's estimated that more than [90 percent of all startups fail](https://www.investopedia.com/articles/personal-finance/040915/how-many-startups-fail-and-why.asp?azure-portal=true), and around [70 percent of seed-funded startups fail](https://www.alleywatch.com/2018/06/tracking-startup-progress-through-matriculation/?azure-portal=true). So a seed-stage investor who invests in 10 startups can only expect three of those startups to succeed.
+It's estimated that more than [90 percent of all startups fail](https://www.investopedia.com/articles/personal-finance/040915/how-many-startups-fail-and-why.asp?azure-portal=true) and around [70 percent of seed-funded startups fail](https://www.alleywatch.com/2018/06/tracking-startup-progress-through-matriculation/?azure-portal=true), so a seed-stage investor who invests in 10 startups can only expect three of those startups to succeed.
 
-Experienced investors accept risk, but only if they see the potential for a large return to compensate them for their investments that fail.
+Experienced investors have no problem with accepting risk, but only if they can see the potential for a large return to compensate them for all the investments that didn't make it.
 
 As a guide, early-stage investors look for at least a 30 percent annual rate of return across a portfolio of startup investments. For reference, the [average annual return to investors in residential real estate is around 10.5 percent](https://www.mashvisor.com/blog/real-estate-return-on-investment-average?azure-portal=true).
 
 ## Investors need liquidity
 
-Investors typically invest in your company not for a dividend or a share of profits, but instead, they want your company to achieve a liquidity event, which is also known as an *exit*.
+Investors typically don't invest in your company for a dividend or a share of profits; instead, they want your company to achieve a liquidity event, which is also known as an *exit*.
 
-An exit occurs when your company is either acquired by a larger company or listed on a stock exchange. Acquisitions are more common than listings. At this point, investors can sell their shares and receive a one-off sum. During an exit, founders, employees, and any other shareholders generally sell at least some of their shares too.
+An exit occurs when your company is either acquired by a larger company or listed on a stock exchange. Acquisitions are more common than listings. At this point, investors can sell their shares and receive a one-off sum. Founders, employees, and any other shareholders generally sell their shares too.
 
-For founders, this means that if you intend to raise money from investors, you're building an acquirable or publicly listable company.
+For founders, this means that if you intend to raise money from investors, you need to be clear from the outset that you're building an acquirable or publicly listable company.
 
-Conversely, you might want to build a company that you hope remains privately owned forever. You won't typically be able to raise money from mainstream investors, such as angels and VC funds, because the opportunity for them to exit their investment are limited.
+For example, you might want to build a lifestyle business or a company that you hope will remain privately owned forever. You won't be able to raise money from most mainstream investors, such as angels and VC funds, because there might not be an opportunity for them to exit their investment.
 
 Finally, it's important to recognize that investors are often themselves successful founders who exited one or more of their own companies. They might want to actively support other founders by reinvesting the wealth they generated. This is especially true in more mature startup ecosystems that have large numbers of successful serial entrepreneurs.
 
 ## What investors look for
 
-When an investor considers your company as an investment prospect, they assess risk versus rate of return. The following indicators of *failure* are a good proxy for risk. The *success* indicators are a good proxy for rate of return. Investors score your company by considering each indicator in the following checklists.
+When an investor considers your company as an investment prospect, they're essentially assessing risk versus rate of return. The following indicators of *failure* are a good proxy for risk. The *success* indicators are a good proxy for rate of return. Investors score your company by considering each indicator in the following checklists.
 
 |Success|Failure|
 |---|---|
@@ -125,7 +125,7 @@ When an investor considers your company as an investment prospect, they assess r
 Some other factors that investors consider when they make investment decisions include:
 
 - **Growth levers**: Actions that translate into growth in customers and revenue, such as paid acquisition, content marketing, or partnerships. Investors want to see that the founders have identified growth levers. When you apply capital to growth levers, you should generate more growth. Investors also want founders to prove that unit economics are positive. That means for every dollar you spend pulling a growth lever, you generate more than a dollar in revenue.
-- **Validation**: Your assumptions with the greatest business risk have been validated. For example, the need for the product you build, the existence of the customers you're building it for, and the desire of those customers to buy it.
+- **Validation**: You've validated your riskiest assumptions. For instance, you've confirmed what product you should build and what customers you're building it for. You also have evidence that those customers see enough value to buy it.
 - **Commitment**: Founders need to be able to demonstrate to an investor that they're 100 percent committed to the company.
 
    Many founders take a stepwise approach to committing time to their startup. This approach is reasonable. But when you're ready to raise funding, investors expect you to be working in your business full time and not as a side hustle.
@@ -178,11 +178,11 @@ Let's look at Melanie's investment portfolio and assume from the outset that hal
 |Company 10|$100,000|Unknown|
 |Total|$1,000,000|$0|
 
-Research also shows that out of every 10 angel investments, on average two make a 1x return, which is better than zero but not a successful outcome. This scenario sometimes occurs because the founders know the company isn't working out. They're able to do an orderly windup and return the investors' capital to them before the company completely fails.
+Research also shows that out of every 10 angel investments, on average two make a one-time return, which is better than zero but not a successful outcome. This scenario sometimes occurs because the founders know the company isn't working out. They're able to do an orderly windup and return the investors' capital to them before the company completely fails.
 
 Similarly, out of every 10 investments, on average two make a small positive return of two times to four times the amount invested. This scenario can occur when the company is *acquired*, meaning a small acquisition coupled with hiring the team that started the company. Again, this return is better than zero, but it's not the outcome that Melanie is seeking.
 
-If we now look at Melanie's investment portfolio, we can populate nine of the 10 investment outcomes. Five failed, which generated zero return. Two generated a 1x return, and two more generated a 2x and a 4x return.
+If we now look at Melanie's investment portfolio, we can populate nine of the 10 investment outcomes. Five failed, which generated zero return. Two generated a one-time return, and two more generated a two-time and a four-time return.
 
 We can see that Melanie's portfolio return from these nine investments is $800,000.
 
@@ -204,7 +204,7 @@ The table tells us that company number 10 must be the one that makes Melanie's i
 
 How well does company number 10 need to do? We can estimate this amount by working backwards from an expected portfolio rate of return. We noted earlier that seed-stage investors look for at least a 30 percent annual rate of return across their startup investment portfolio.
 
-If Melanie invests $1 million and holds these investments for seven years, she needs to realize a $5 million return on her $1 million invested. A simple [internal rate of return (IRR)](https://www.investopedia.com/terms/i/irr.asp?azure-portal=true) calculation confirms this.
+If Melanie invests $1 million and holds these investments for seven years, she needs to realize a $5 million return on her $1 million invested. A simple [internal rate of return (IRR)](https://www.investopedia.com/terms/i/irr.asp?azure-portal=true) calculation confirms this return.
 
 A $5 million return might sound like a phenomenal outcome. That's $4 million more than Melanie invested. But remember that she's investing in risky startups and could've made a much safer return by investing in lower-risk assets.
 
@@ -239,4 +239,4 @@ As a startup founder, if you're aiming to raise money from investors, you need t
 Only if you can achieve this goal will investors see your company as a sound investment prospect.
 
 > [!NOTE]
-> The numbers in this scenario are illustrative. Many variables will influence the outcome, such as the total amount of capital raised and the time from seed round to exit.
+> The numbers in this scenario are illustrative. Many variables influence the outcome, such as the total amount of capital raised and the time from seed round to exit.

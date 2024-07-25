@@ -4,12 +4,11 @@ title: Exercise - Install IoT Edge runtime for Linux
 metadata:
   title: Exercise - Install IoT Edge runtime for Linux
   description: In this section, we help the learner to how to install edge runtime on Linux computer.
-  ms.date: 02/12/2021
+  ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen, linux-related-content
-  ms.service: iot-edge
 durationInMinutes: 15 # dummy number at present
 content: |
   [!include[](includes/3-exercise-install-edge-runtime-linux.md)]

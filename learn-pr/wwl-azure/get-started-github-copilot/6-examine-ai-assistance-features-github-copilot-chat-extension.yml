@@ -3,13 +3,13 @@ uid: learn.wwl.get-started-github-copilot.examine-ai-assistance-features-github-
 title: Examine the AI assistance features of the GitHub Copilot Chat extension
 metadata:
   title: Examine the AI assistance features of the GitHub Copilot Chat extension
-  description: "Examine the AI assistance features of the GitHub Copilot Chat extension"
-  ms.date: 05/16/2024
+  description: Examine the AI assistance features of the GitHub Copilot Chat extension
   author: wwlpublish
   ms.author: cahowd
+  ms.date: 07/24/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 14
 content: |
   [!include[](includes/6-examine-ai-assistance-features-github-copilot-chat-extension.md)]

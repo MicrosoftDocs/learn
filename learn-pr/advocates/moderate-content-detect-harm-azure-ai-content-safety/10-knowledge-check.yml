@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.moderate-content-detect-harm-azure-ai-content-safety.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge of content moderation and harm detection with Azure AI Content Safety.
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.date: 06/24/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: Which Azure AI Content Safety API is responsible for identifying outputs that could potentially violate copyright?
+    choices:
+    - content: Analyze Text
+      isCorrect: false
+      explanation: Analyze Text scans text for sexual content, violence, hate, and self-harm with multi-severity levels.
+    - content: Protected Material Text Detection
+      isCorrect: true
+      explanation: Protected Material Detection scans AI-generated text for known text content (for example, song lyrics, articles, recipes, selected web content).
+    - content: Prompt Shields
+      isCorrect: false
+      explanation: Prompt Shields scans text for the risk of a User input attack on a Large Language Model (LLM).
+    - content: Groundedness Detection
+      isCorrect: false
+      explanation: Groundedness Detection detects whether the text responses of LLMs are grounded in the source materials provided by the users.
+  - content: Which Azure AI Content Safety API could be used to identify violent content in an image posted by a customer?
+    choices:
+    - content: Groundedness Detection
+      isCorrect: false
+      explanation: Groundedness Detection detects whether the text responses of LLMs are grounded in the source materials provided by the users.
+    - content: Protected Material Text Detection
+      isCorrect: false
+      explanation: Protected Material Detection scans AI-generated text for known text content (for example, song lyrics, articles, recipes, selected web content).
+    - content: Prompt Shields
+      isCorrect: false
+      explanation: Prompt Shields scans text for the risk of a User input attack on a Large Language Model (LLM).
+    - content: Analyze Image
+      isCorrect: true
+      explanation: Analyze Image scans images for sexual content, violence, hate, and self-harm with multi-severity levels.
+  - content: Which  Azure AI Content Safety API is responsible for detecting and blocking false responses in model outputs?
+    choices:
+    - content: Analyze Text
+      isCorrect: false
+      explanation: Analyze Text scans text for sexual content, violence, hate, and self-harm with multi-severity levels.
+    - content: Prompt Shields
+      isCorrect: false
+      explanation: Prompt Shields scans text for the risk of a User input attack on a Large Language Model (LLM).
+    - content: Analyze Image
+      isCorrect: false
+      explanation: Analyze Image scans images for sexual content, violence, hate, and self-harm with multi-severity levels.
+    - content: Groundedness Detection
+      isCorrect: true
+      explanation: Groundedness Detection detects whether the text responses of LLMs are grounded in the source materials provided by the users.

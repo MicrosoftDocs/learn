@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-exercises.explore-embedded-purview
+title: Explore the capabilities of Copilot in Microsoft Purview
+metadata:
+  title: Explore the capabilities of Copilot in Microsoft Purview
+  description: Explore the capabilities of Copilot in Microsoft Purview.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 06/06/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 30
+content: |
+  [!include[](includes/9-explore-embedded-purview.md)]

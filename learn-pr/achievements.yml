@@ -3533,3 +3533,233 @@ achievements:
   title: Secure MySQL database and Key Vault using a private endpoint
   summary: You now have an Azure Spring Apps application deployed into a virtual network. In this module, you'll implement a configuration in which only connections that originate from within your virtual network are accepted.
   iconUrl: /training/achievements/5-secure-mysql-database-key-vault-using-private-endpoint.svg
+- uid: learn.azure-admin-prerequisites.trophy
+  type: trophy
+  title: Prerequisites for Azure administrators
+  summary: Learn the basic concepts you'll need to know as an Azure administrator.
+  iconUrl: /training/achievements/azure-administrator-prerequisites.svg
+- uid: learn.azure-admin-manage-identities-governance.trophy
+  type: trophy
+  title: Manage identities and governance for Azure administrators
+  summary: Learn how to manage users, subscriptions, role-based access control (RBAC), and governance in Azure. 
+  iconUrl: /training/achievements/azure-administrator-manage-identities-governance.svg
+- uid: learn.azure-admin-manage-storage.trophy
+  type: trophy
+  title: Implement and manage storage for Azure administrators
+  summary: Learn how to manage storage as an Azure administrator.
+  iconUrl: /training/achievements/azure-administrator-manage-storage.svg
+- uid: learn.azure-admin-manage-compute-resources.trophy
+  type: trophy
+  title: Deploy and manage compute resources for Azure administrators
+  summary: Learn how to deploy and configure Azure compute resources.
+  iconUrl: /training/achievements/azure-administrator-manage-compute-resources.svg
+- uid: learn.azure-admin-manage-virtual-networks.trophy
+  type: trophy
+  title: Configure and manage virtual networks for Azure administrators
+  summary: Learn how to configure and manage key Azure network capabilities.
+  iconUrl: /training/achievements/azure-administrator-manage-virtual-networks.svg
+- uid: learn.azure-admin-monitor-backup-resources.trophy
+  type: trophy
+  title: Monitor and back up resources for Azure administrators
+  summary: Learn how to monitor and back up Azure resources.
+  iconUrl: /training/achievements/azure-administrator-monitor-backup-resources.svg
+- uid: learn.azure.intro-to-immersive-reader.badge
+  type: badge
+  title: Introduction to Immersive Reader
+  summary: Immersive Reader is a tool that embeds reading, math, and text comprehension capabilities into applications. Immersive Reader is an inclusively designed tool that implements proven techniques to improve reading comprehension for new readers, language learners, and people with learning differences such as dyslexia. No knowledge of machine learning is required.
+  iconUrl: /training/achievements/intro-to-immersive-reader.svg
+- uid: learn.azure.intro-to-content-moderator.badge
+  type: badge
+  title: Introduction to Content Moderator
+  summary: Content Moderator checks text, image, and video content for material that is potentially offensive, risky, or otherwise undesirable in content.
+  iconUrl: /training/achievements/intro-to-content-moderator.svg
+- uid: learn-windows.develop-windows-apps.trophy
+  type: trophy
+  title: Develop Windows 10 applications
+  summary: Learn how to develop, test, and deploy Windows 10 applications.
+  iconUrl: /training/achievements/develop-windows10-apps.svg
+- uid: learn.wsl-introduction.badge
+  type: badge
+  title: Introduction to Windows Subsystem for Linux (WSL)
+  summary: This 7-part training provides an introduction to WSL. Learn the basic concepts that combine Windows and Linux operating systems, including how to install one or more Linux distributions on your Windows computer.
+  iconUrl: /learn/achievements/wsl-path.svg
+- uid: learn-windows.writing-windows-10-apps.badge
+  type: badge
+  title: Write your first Windows application
+  summary: Learn how to create apps in some of the most popular Windows development frameworks - UWP, WPF, and Windows Forms.
+  iconUrl: /training/achievements/write-your-first-windows10-app.svg
+- uid: learn-windows.introduction-w10-dev.badge
+  type: badge
+  title: Introduction to Windows 10 development
+  summary: Learn the basics of Windows 10 development, and get your computer ready for writing Windows apps.
+  iconUrl: /training/achievements/introduction-to-windows-10-development.svg
+- uid: learn-windows.windows-10-ui-and-data.badge
+  type: badge
+  title: Implement data binding in your Windows application
+  summary: Learn about the relation between UI and data in Windows apps, and implement data binding in your applications.
+  iconUrl: /training/achievements/windows-10-ui-and-data.svg
+- uid: learn-windows.writing-adaptive-cards.badge
+  type: badge
+  title: Creating Adaptive Cards
+  summary: Learn the full range of capabilities (layout, inputs, and actions) of Adaptive Cards.
+  iconUrl: /training/achievements/writing-adaptive-cards.svg
+- uid: learn.learn-windows-on-arm.badge
+  type: badge
+  title: Introduction to Windows on Arm - Port a .NET application to natively support Arm-based processors
+  summary: This module describes how the Windows operating system supports devices powered by Arm processors. It also describes how to add a build configuration for Arm64 architecture to improve the experience of using your Windows application on Arm-based devices. This training also covers testing, debugging, and troubleshooting the new Arm-based version of your Windows app.
+  iconUrl: /learn/achievements/add-arm-support-to-your-windows-app.svg
+- uid: learn-windows.narrator-and-voice-input.badge
+  type: badge
+  title: Configure your Windows app to use Narrator and speech recognition
+  summary: Learn how to use audio elements to make an inclusive Windows app. Configure your app to work well with Narrator, and add a custom speech recognition system for spoken input.
+  iconUrl: /training/achievements/narrator-and-voice-input.svg
+- uid: learn-windows.making-inclusive-windows-app.badge
+  type: badge
+  title: Add principles of inclusive design to your Windows app
+  summary: Inclusive app design provides support for users with visual or motor skills impairment. This module will show you how to support such users in a Windows app.
+  iconUrl: /training/achievements/making-inclusive-windows-app.svg
+- uid: learn-windows.integrating-app-into-windows-10-timeline.badge
+  type: badge
+  title: Integrate adaptive cards into Windows 10 Timeline
+  summary: Learn how to use an adaptive card as the image in Windows 10 Timeline.
+  iconUrl: /training/achievements/integrating-app-into-windows-10-timeline.svg
+- uid: learn-windows.introducing-visual-studio.badge
+  type: badge
+  title: Getting started with Visual Studio for Windows 10 app development
+  summary: Visual Studio is the development tool used to create, debug, and deploy Windows 10 applications.
+  iconUrl: /training/achievements/introduction-to-visual-studio-for-windows10-dev.svg
+- uid: learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.badge
+  type: badge
+  title: Send and receive data using Azure Data Share and transform data using Azure Data Factory
+  summary: Learn how to ingest data from Azure Data Share into Azure Data Factory pipelines to build automated ingestion pipelines.
+  iconUrl: /training/achievements/receive-data-with-azure-data-share-transform-with-azure-data-factory.svg
+- uid: learn.azure.intro-to-stereokit.badge
+  type: badge
+  title: Build Mixed Reality Apps in Native C# with StereoKit
+  summary: By the end of this module, you'll be able to set up, create, and build an application using StereoKit. You'll understand the features of StereoKit through a sample application called StereoKit ink application. You'll also work across OpenXR platforms like HoloLens 2 and Windows Mixed Reality.
+  iconUrl: /training/achievements/intro-to-stereokit.svg
+- uid: learn.n-tier-architecture
+  type: badge
+  title: Tour the N-tier architecture style for your application
+  summary: Use a Resource Manager template to deploy an application styled in an N-tier architecture, identify key concepts of N-tier architectures, and review best practices for deployments of this style.
+  iconUrl: /training/achievements/n-tier-architecture.svg
+- uid: learn.intro-to-azure-database-for-mariadb.badge
+  type: badge
+  title: Introduction to Azure Database for MariaDB
+  summary: Evaluate whether Azure Database for MariaDB can manage your organization's mission-critical workloads. Describe whether its performance and scalability make it ideal to host your database workloads.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.introduction-to-azure-orbital-ground-station-badge
+  type: badge
+  title: Introduction to Azure Orbital Ground Station
+  summary: Azure Orbital is an express route to space. It extends Azure capabilities and enables organizations to connect to the cloud from anywhere, analyze and disseminate space data, and build and test in the cloud from space. A part of the Azure Space portfolio, Azure Orbital Ground Station is a fully managed end-to-end service that enables satellite operators to communicate, uplink, downlink, and process data from their satellites/spacecrafts on a pay-as-you-go basis. In this module, we’ll look at AO Ground Station's key features and how to perform essential steps in the Azure Orbital portal.
+  iconUrl: /learn/achievements/azure-space-ground-station.svg
+- uid: learn.introduction-to-azure-space-badge
+  type: badge
+  title: Introduction to Azure Space
+  summary: Explore some of the ins and outs of the space industry and how it's quickly changing.
+  iconUrl: /training/achievements/azure-space-intro.svg
+- uid: learn.intro-to-defender-cloud.badge
+  type: badge
+  title: Introduction to Microsoft Defender for Cloud
+  summary: Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP) for all of your Azure, on-premises, and multicloud (Amazon AWS and Google GCP) resources.
+  iconUrl: /training/achievements/intro-to-defender-for-cloud.svg
+- uid: learn.azure-security.resolve-threats-with-azure-security-center.badge
+  type: badge
+  title: Resolve security threats with Microsoft Defender for Cloud
+  summary: In this module, you'll use the alert capabilities of Microsoft Defender for Cloud to watch for and respond to threats.
+  iconUrl: /training/achievements/resolve-threats-with-azure-security-center.svg
+- uid: learn.azure-security.secure-vms-with-security-center.badge
+  type: badge
+  title: Protect your servers and VMs from brute-force and malware attacks with Microsoft Defender for Cloud.
+  summary: In this module, you discover how to protect VMs and servers with Microsoft Defender for Cloud.
+  iconUrl: /training/achievements/secure-vms-with-azure-security-center.svg
+- uid: learn.azure.azure-object-anchors-tutorials.badge
+  type: badge
+  title: Use Azure Object Anchors to detect an object in the physical world
+  summary: This course explores the fundamentals of Azure Object Anchors and how it can be used to detect an object in physical world.
+  iconUrl: /training/achievements/azure-object-anchors-tutorials.svg
+- uid: learn.wwl.build-qna-solution-qna-maker.badge
+  type: badge
+  title: Build a question answering solution
+  summary: The question answering capability of the Language service makes it easy to build applications in which users ask questions using natural language and receive appropriate answers.
+  iconUrl: /training/achievements/qna-maker-solution.svg
+- uid: learn.wwl.custom-name-entity-extraction.badge
+  type: badge
+  title: Create a custom named entity extraction solution
+  summary: Build a custom entity recognition solution to extract entities from unstructured documents
+  iconUrl: /training/achievements/2-custom-name-entity-recognition.svg
+- uid: learn.wwl.extract-insights-text-with-text-analytics-service.badge
+  type: badge
+  title: Extract insights from text with the Azure AI Language service
+  summary: The Azure AI Language service enables you to create intelligent apps and services that extract semantic information from text.
+  iconUrl: /training/achievements/extract-insights-from-text-with-the-text-analytics-service.svg
+- uid: learn.accelerate-storage-with-hpc-cache.badge
+  type: badge
+  title: Accelerate high-performance computing storage by using Azure HPC Cache
+  summary: Create a virtual caching solution for NFS storage. Client machines connect to the cache, read data, and process the data.
+  iconUrl: /training/achievements/accelerate-storage-with-hpc-cache.svg
+- uid: learn.azure.introduction-azure-hpc-cache.badge
+  type: badge
+  title: Introduction to Azure HPC Cache
+  summary: Describe the caching features and configurations of Azure HPC Cache that improve file access speeds. Characterize the types of HPC workloads that Azure HPC Cache can accelerate.
+  iconUrl: /training/achievements/introduction-azure-hpc-cache.svg
+- uid: learn.wwl.transcribe-speech-input-text.badge
+  type: badge
+  title: Create speech-enabled apps with Azure AI services
+  summary: The Azure AI Speech service enables you to build speech-enabled applications. This module focuses on using the speech-to-text and text to speech APIs, which enable you to create apps that are capable of speech recognition and speech synthesis.
+  iconUrl: /training/achievements/transcribe-speech-input-text.svg
+- uid: learn.wwl.develop-decision-support.trophy
+  type: trophy
+  title: Develop decision support solutions with Azure AI Services
+  summary: Decision support helps automate decision making by providing recommendations to users. Azure AI Services includes multiple services that support common decision support scenarios.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.investigate-container-for-use-with-cognitive-services.badge
+  type: badge
+  title: Deploy Azure AI services in containers
+  summary: Learn about Container support in Azure AI Services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
+  iconUrl: /training/achievements/investigate-container-for-use-with-cognitive-services.svg
+- uid: learn.wwl.monitor-cognitive-services.badge
+  type: badge
+  title: Monitor Azure AI Services
+  summary: Azure AI Services enable you to integrate artificial intelligence into your applications and services. It's important to be able to monitor Azure AI Services in order to track utilization, determine trends, and detect and troubleshoot issues.
+  iconUrl: /learn/achievements/monitor-cognitive-services.svg
+- uid: learn.wwl.publish-use-language-understand-app.badge
+  type: badge
+  title: Develop an app with Azure AI Language
+  summary: After creating an Azure AI Language Understanding model, you can publish it and consume it from client applications.
+  iconUrl: /training/achievements/publish-use-language-understand-app.svg
+- uid: learn.wwl.secure-cognitive-services.badge
+  type: badge
+  title: Secure Azure AI Services
+  summary: Securing Azure AI Services can help prevent data loss and privacy violations for user data that may be a part of the solution.
+  iconUrl: /training/achievements/secure-cognitive-services.svg
+- uid: learn.azure.configure-application-kubernetes-arc.badge
+  type: badge
+  title: Implement Azure App Service on Kubernetes with Azure Arc
+  summary: Azure App Service on Kubernetes with Azure Arc enables implementation of Azure application-platform services on customer-managed, Arc-onboarded Kubernetes clusters. Azure App Service is one you can implement.
+  iconUrl: /training/achievements/configure-application-kubernetes-arc.svg
+- uid: learn.azure.publish-azure-web-app-with-azure-toolkit-eclipse.badge
+  type: badge
+  title: Develop Java web app on Azure using Eclipse
+  summary: Create a web app in Eclipse and deploy the app to Azure by using Azure Toolkit for Eclipse with this step by step module.
+  iconUrl: /training/achievements/publish-azure-web-app-with-azure-toolkit-eclipse.svg
+- uid: learn.azure.azure-redis-publish-subscribe-streams.badge
+  type: badge
+  title: Implement Pub/Sub and Streams in Azure Cache for Redis
+  summary: Execute Redis pub/sub commands for event-based messaging at scale in Azure Cache for Redis. Use the Redis console to create, append, and query a Redis stream with time-based ranges.
+  iconUrl: /training/achievements/azure-redis-publish-subscribe-streams.svg
+- uid: learn.create-iot-device-dotnet.badge
+  type: badge
+  title: Construct Internet of Things devices using the .NET IoT Libraries
+  summary: In this module, you'll learn to read environmental sensors and activate relays using the .NET IoT Libraries.
+  iconUrl: /training/achievements/iot/create-iot-device-dotnet.svg
+- uid: learn.wwl.detect-objects-images-custom-vision.badge
+  type: badge
+  title: Detect objects in images with Azure AI Custom Vision
+  summary: Object detection is a form of computer vision in which artificial intelligence (AI) agents can identify and locate specific types of object in an image or camera feed.
+  iconUrl: /training/achievements/detect-objects-images-custom-vision.svg
+- uid: learn.wwl.explore-cognitive-services-vision.badge
+  type: badge
+  title: Explore Azure AI services for Vision (preview)
+  summary: Azure AI services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities.
+  iconUrl: /training/achievements/explore-cognitive-services-for-vision-preview.svg
