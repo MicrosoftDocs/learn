@@ -836,7 +836,7 @@ kubectl config current-context
     kubectl get datacontrollers --namespace $Env:MyNamespace
     ```
 
-   The deployment goes through three states before it'ss finished:
+   The deployment goes through three states before it's finished:
 
    ![Screenshot of kubectl monitor deployment state.](../media/azure-data-studio-arc-data-controller-indirect-deployment-status-6.png)
 
