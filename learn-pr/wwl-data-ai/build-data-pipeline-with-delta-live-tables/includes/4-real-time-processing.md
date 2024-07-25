@@ -11,6 +11,8 @@ Setting up DLT for real time data processing involves:
 ### Create DLT pipelines
 Create Delta Live Tables pipelines in your Azure Databricks workspace. These pipelines allow you to define your data transformations using Python or SQL. You can specify source data, transformation logic, and output targets. Once your pipeline is set up, DLT automatically manages it.
 
+![Screenshot of a Delta Live Tables pipeline in Azure Databricks.](../media/data-pipeline.png)
+
 ### Integrate with data sources
 After creating a DLT pipeline, connect to real-time data sources, such as event hubs or IoT devices. Azure Databricks supports various connectors that facilitate the ingestion of streaming data.
 
