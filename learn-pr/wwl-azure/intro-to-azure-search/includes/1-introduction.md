@@ -1,4 +1,4 @@
-Consider when people need to manually read through multiple pages of a document for information. What are ways they could search for that information more quickly? This module discuses how to improve the speed of  information retrieval and gain novel insights.
+Consider when people need to manually read through multiple pages of a document for information. What are ways they could search for that information more quickly? This module discusses how to improve the speed of  information retrieval and gain novel insights.
 
 Knowledge mining solutions provide automated information extraction from large volumes of often unstructured data. One of these knowledge mining solutions is **Azure AI Search**, a cloud search service that has tools for building and managing indexes. Azure AI Search can index unstructured, typed, image-based, or hand-written media. The indexes can be used for internal only use, or to enable searchable content on public-facing internet assets. 
 
