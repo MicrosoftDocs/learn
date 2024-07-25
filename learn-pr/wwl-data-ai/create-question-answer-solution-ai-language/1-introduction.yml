@@ -3,11 +3,13 @@ uid: learn.wwl.create-question-answer-solution-ai-language.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction"
-  ms.date: 08/31/2023
+  description: Introduction
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 08/31/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
