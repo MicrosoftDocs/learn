@@ -2,13 +2,14 @@
 uid: learn.advanced-github-copilot
 metadata:
   title: Using advanced GitHub Copilot features
-  description: "Use advanced features of GitHub Copilot with Visual Studio Code to make changes and updates to a Python application."
-  ms.date: 5/10/2024
+  description: Use advanced features of GitHub Copilot with Visual Studio Code to make changes and updates to a Python application.
   author: abrilurena
   ms.author: abrilu
-  ms.topic: module
+  ms.date: 5/10/2024
   ms.service: github-copilot
-  ms.collection: 
+  ms.topic: module
+  ms.collection:
+    - ce-advocates-ai-copilot
     - github-ai-copilot
 title: Using advanced GitHub Copilot features
 summary: "Use advanced GitHub Copilot features with a Python application."
