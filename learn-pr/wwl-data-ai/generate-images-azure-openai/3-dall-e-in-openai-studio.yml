@@ -3,7 +3,7 @@ uid: learn.wwl.generate-images-azure-openai.dall-e-in-openai-studio
 title: Explore DALL-E in Azure OpenAI Studio
 metadata:
   title: Explore DALL-E in Azure OpenAI Studio
-  description: Use the playground in Azure OpenAi Studio to explore DALL-E image generation
+  description: Use the playground in Azure OpenAI Studio to explore DALL-E image generation
   author: graememalcolm
   ms.author: gmalc
   ms.date: 6/14/2023
