@@ -2,14 +2,14 @@
 uid: learn.wwl.evaluate-models-azure-ai-studio
 metadata:
   title: Evaluate the performance of your custom copilot in the Azure AI Studio
-  description: Evaluating copilots is essential to ensure they meet user needs, provide accurate responses, and continuously improve over time. Discover how to assess and optimize the performance of your custom copilot using the tools and features available in the Azure AI Studio.
+  description: Evaluating copilots is essential to ensure your custom copilots meet user needs, provide accurate responses, and continuously improve over time. Discover how to assess and optimize the performance of your custom copilot using the tools and features available in the Azure AI Studio.
   ms.date: 07/24/2024
   author: madiepev
   ms.author: madiepev
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: azure-ai-services
 title: Evaluate the performance of your custom copilot in the Azure AI Studio
-summary: Evaluating copilots is essential to ensure they meet user needs, provide accurate responses, and continuously improve over time. Discover how to assess and optimize the performance of your custom copilot using the tools and features available in the Azure AI Studio.
+summary: Evaluating copilots is essential to ensure your custom copilots meet user needs, provide accurate responses, and continuously improve over time. Discover how to assess and optimize the performance of your custom copilot using the tools and features available in the Azure AI Studio.
 abstract: |
   By the end of this module, you'll be able to:
     - Understand model benchmarks.

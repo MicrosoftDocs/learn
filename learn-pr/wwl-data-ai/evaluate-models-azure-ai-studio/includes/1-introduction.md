@@ -1,22 +1,5 @@
-Language models are growing in popularity as they create impressive coherent answers to a user’s questions. Especially when a user interacts with a language model through chat, it provides an intuitive way to get the information they need.
+Evaluating your custom copilots is crucial for several reasons. First and foremost, it ensures quality assurance. By assessing your copilot's performance, you can identify and address any issues, ensuring that it provides accurate and relevant responses. High quality responses lead to improved user satisfaction. When users receive accurate and helpful responses, they're more likely to have a positive experience and continue using your copilot.
 
-One prevalent challenge when implementing language models through chat is the so-called **groundedness**, which refers to whether a response is rooted, connected, or anchored in reality or a specific context. In other words, groundedness refers to whether the response of a language model is based on factual information.
+Evaluation is also essential for continuous improvement. By analyzing the results of your evaluations, you can identify areas for enhancement and iteratively improve your copilot's performance. The ongoing process of evaluation and improvement helps you stay ahead of user needs and expectations, ensuring that your copilot remains effective and valuable.
 
-## Ungrounded prompts and responses
-
-When you use a language model to generate a response to a prompt, the only information that the model has to base the answer on comes from the data on which it was trained - which is often just large amounts of uncontextualized text from the Internet or some other source.
-
-![Diagram of an ungrounded model returning an uncontextualized response.](../media/ungrounded.png)
-
-The result will likely be a grammatically coherent and logical response to the prompt, but because it isn't grounded in relevant, factual data, it's uncontextualized; and may in fact be inaccurate and include "invented" information. For example, the question "Which product should I use to do *X*?" might include details of a fictional product.
-
-## Grounded prompts and responses
-
-In contrast, you can use a data source to *ground* the prompt with some relevant, factual context. The prompt can then be submitted to a language model, including the grounding data, to generate a contextualized, relevant, and accurate response.
-
-![Diagram of a grounded model returning a contextualized response.](../media/grounded.png)
-
-The data source can be any repository of relevant data. For example, you could use data from a product catalog database to ground the prompt "Which product should I use to do *X*?" so that the response includes relevant details of products that exist in the catalog.
-
-In this module, you explore how to create your own chat-based language model application that is grounded, by building a copilot with your own data.
-
+In this module, you learn how to use the Azure AI Studio to evaluate your custom copilots. While you explore some of the features of Azure AI Studio, the focus is on understanding the importance of evaluation and how it can benefit your copilot development process.
