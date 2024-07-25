@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/13-summary.md)]
-  [!include[](includes/linktosurvey.md)]
+  [!include[](includes/link-to-survey.md)]

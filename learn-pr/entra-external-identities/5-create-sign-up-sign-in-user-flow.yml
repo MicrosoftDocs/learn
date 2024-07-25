@@ -13,4 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-create-sign-up-sign-in-user-flow.md)]
-  [!include[](includes/linktosurvey.md)]
+  [!include[](includes/link-to-survey.md)]

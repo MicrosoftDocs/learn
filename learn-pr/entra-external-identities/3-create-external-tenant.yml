@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.microsoft-entra-external-identities.eeid-poc.customize-the-look-feel
-title: Customize the look and feel of your flows
+uid: learn.microsoft-entra-external-identities.eeid-poc.create-external-tenant
+title: Create an external tenant
 metadata:
-  title: Customize the look and feel of your flows
+  title: Create an external tenant
   description: This content is a part of Guided project – Build a sample app to evaluate Microsoft Entra External ID for seamless and secure sign-up and sign-in for consumers and business customers.
-  ms.date: 6/25/2024
+  ms.date: 6/3/2024
   author: linkhp
   ms.author: lipar
   ms.topic: interactive-tutorial
@@ -12,5 +12,5 @@ metadata:
   ms.service: entra-external-id
 durationInMinutes: 10
 content: |
-  [!include[](includes/8-customize-the-look-feel.md)]
-  [!include[](includes/linktosurvey.md)]
+  [!include[](includes/3-create-external-tenant.md)]
+  [!include[](includes/link-to-survey.md)]

@@ -13,4 +13,4 @@ metadata:
 durationInMinutes: 20
 content: |
   [!include[](includes/10-validate-attributes-collected-during-sign-up.md)]
-  [!include[](includes/linktosurvey.md)]
+  [!include[](includes/link-to-survey.md)]

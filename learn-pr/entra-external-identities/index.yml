@@ -39,12 +39,12 @@ subjects:
 units:
 - learn.microsoft-entra-external-identities.eeid-poc.Introduction
 - learn.microsoft-entra-external-identities.eeid-poc.prepare
-- learn.microsoft-entra-external-identities.eeid-poc.create-an-external-tenant
+- learn.microsoft-entra-external-identities.eeid-poc.create-external-tenant
 - learn.microsoft-entra-external-identities.eeid-poc.register-application
 - learn.microsoft-entra-external-identities.eeid-poc.create-sign-up-sign-in-user-flow
-- learn.microsoft-entra-external-identities.eeid-poc.add-an-admin-account
+- learn.microsoft-entra-external-identities.eeid-poc.add-admin-account
 - learn.microsoft-entra-external-identities.eeid-poc.collect-user-attributes-during-sign-up
-- learn.microsoft-entra-external-identities.eeid-poc.customize-the-look-feel
+- learn.microsoft-entra-external-identities.eeid-poc.customize-look-feel
 - learn.microsoft-entra-external-identities.eeid-poc.enable-social-identity-provider-sign-in
 - learn.microsoft-entra-external-identities.eeid-poc.validate-attributes-collected-during-sign-up
 - learn.microsoft-entra-external-identities.eeid-poc.enable-multifactor-authentication

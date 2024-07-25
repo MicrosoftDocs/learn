@@ -13,4 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/11-enable-multifactor-authentication.md)]
-  [!include[](includes/linktosurvey.md)]
+  [!include[](includes/link-to-survey.md)]
