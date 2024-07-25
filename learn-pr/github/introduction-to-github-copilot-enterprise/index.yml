@@ -4,11 +4,13 @@ title: Introduction to GitHub Copilot Enterprise
 metadata:
   title: Introduction to GitHub Copilot Enterprise
   description: GitHub Copilot Enterprise is designed as an intelligent companion for developers, making the vast repository of your organization's institutional knowledge readily accessible. This cutting-edge tool empowers your team to query both public and private codebases directly, facilitating a smoother onboarding process for new codebases, fostering consistency across engineering teams, and ensuring universal access to established standards and previously completed work.
-  ms.date: 02/28/2024
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: module-intro-to-product
+  ms.date: 02/28/2024
   ms.service: github-copilot
+  ms.topic: module-intro-to-product
+  ms.collection:
+    - ce-skilling-ai-copilot
 summary: >
   Learn about the differences between GitHub Copilot for Enterprise, for Business, and for Individuals. Examine specific use cases, including how to enable and use GitHub Copilot Enterprise.
 abstract: |

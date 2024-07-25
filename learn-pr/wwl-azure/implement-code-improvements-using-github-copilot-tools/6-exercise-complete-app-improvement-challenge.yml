@@ -3,13 +3,13 @@ uid: learn.wwl.implement-code-improvements-using-github-copilot-tools.exercise-c
 title: Exercise - Complete the "app improvement" challenge
 metadata:
   title: Exercise - Complete the "app improvement" challenge
-  description: "Exercise - Complete the \"app improvement\" challenge"
-  ms.date: 05/20/2024
+  description: Exercise - Complete the app improvement challenge
   author: wwlpublish
   ms.author: cahowd
+  ms.date: 05/20/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 20
 content: |
   [!include[](includes/6-exercise-complete-app-improvement-challenge.md)]

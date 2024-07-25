@@ -2,15 +2,14 @@
 uid: learn.wwl.use-intelligent-planners
 metadata:
   title: Use intelligent planners
-  description: "Learn about the different ways you can automatically invoke functions using the Semantic Kernel SDK."
-  ms.date: 06/11/2024
+  description: Learn about the different ways you can automatically invoke functions using the Semantic Kernel SDK.
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: module
-  ms.custom:
-  - N/A
+  ms.date: 06/11/2024
   ms.service: azure-ai-services
-  ai-usage: human-only
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Use intelligent planners
 summary: This module introduces different ways to automatically invoke functions using the Semantic Kernel SDK. Learn how planners can generate plans to accomplish tasks and how to fine-tune planners to optimize performance.
 abstract: |

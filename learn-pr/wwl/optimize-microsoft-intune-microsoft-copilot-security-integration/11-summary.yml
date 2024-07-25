@@ -3,11 +3,13 @@ uid: learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 06/21/2024
+  description: Summary
   author: wwlpublish
   ms.author: rstearman
+  ms.date: 06/21/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/11-summary.md)]

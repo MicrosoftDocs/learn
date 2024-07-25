@@ -3,11 +3,13 @@ uid: learn.wwl.translate-speech-speech-service.exercise-translate-speech
 title: Exercise - Translate speech
 metadata:
   title: Exercise - Translate speech
-  description: "Exercise - Translate speech"
-  ms.date: 08/31/2023
+  description: Exercise - Translate speech
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 08/31/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 labId: 152399
 labModal: true
 durationInMinutes: 30

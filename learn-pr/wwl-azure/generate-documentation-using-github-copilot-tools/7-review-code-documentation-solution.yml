@@ -4,12 +4,12 @@ title: Review the "code documentation" solution
 metadata:
   title: Review the "code documentation" solution
   description: "Review the \"code documentation\" solution"
-  ms.date: 05/16/2024
+  ms.date: 07/24/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 8
 content: |
   [!include[](includes/7-review-code-documentation-solution.md)]
