@@ -3,10 +3,12 @@ uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.3-build-neural
 metadata:
   title: Exercise - Build a neural network to classify space rocks
   description: Learn what a neural network is, and then run the code to build a neural network.
-  ms.date: 05/24/2021
   author: softchris
   ms.author: chnoring
+  ms.date: 05/24/2021
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Exercise - Build a neural network to classify space rocks
 durationInMinutes: 10

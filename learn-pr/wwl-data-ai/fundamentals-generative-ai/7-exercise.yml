@@ -3,11 +3,13 @@ uid: learn.wwl.fundamentals-generative-ai.exercise
 title: Exercise - Explore Microsoft Copilot
 metadata:
   title: Exercise - Explore Microsoft Copilot
-  description: "Use this exercise to explore generative AI with Microsoft Copilot."
-  ms.date: 5/15/2024
+  description: Use this exercise to explore generative AI with Microsoft Copilot.
   author: sherzyang
   ms.author: sheryang
+  ms.date: 5/15/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 40
 content: |
   [!include[](includes/7-exercise.md)]

@@ -80,15 +80,16 @@ To view the configuration settings for GitHub Copilot, follow these steps:
 
     The settings for GitHub Copilot Chat include the following options:
 
-    - Enable or disable the **Fix Test Failures** intent. This option is disabled by default.
+    - Specify a **Preferred Account** for GitHub Copilot. This option is left blank by default.
     - Specify a **Locale Override** for Copilot responses. By default, GitHub Copilot responds using Visual Studio Code's configured display language locale.
     - Enable or disable **Scope Selection**. This option is disabled by default. When enabled, the user is prompted for a scope symbol when the user uses `/explain` in Chat without anything selected in the Editor.
     - Specify the **Terminal Chat Location** for queries that originate in Visual Studio Code's Integrated Terminal. The default setting is the Chat View. The other option is the Quick Chat area.
     - Enable or disable **Use Project Templates**. This option is enabled by default so that GitHub Copilot uses relevant GitHub project templates when the user uses `/new` in Chat.
     - Specify when to show a detailed **Welcome Message** for GitHub Copilot Chat. The default setting is **first** use. The other options are **never** and **always**.
     - Enable or disable **Enable Code Actions**. This option is enabled by default so that GitHub Copilot can provide code actions in the Editor.
+    - Enable or disable **Trigger Automatically** for GitHub Copilot. This option, which is enabled by default, controls whether GitHub Copilot suggestions are shown automatically as you type.
 
-    We recommend keeping the default settings for now. This helps to ensure that you have the expected experience when working on the modules in this learning path. When you have completed the training, you can experiment with these settings to customize your experience with GitHub Copilot Chat.
+    We recommend keeping the default settings during this training. This helps to ensure that you have the expected experience when working on the modules in this learning path. When you have completed the training, you can experiment with these settings to customize your experience with GitHub Copilot and Copilot Chat.
 
 ## Configure GitHub Copilot settings on GitHub.com
 

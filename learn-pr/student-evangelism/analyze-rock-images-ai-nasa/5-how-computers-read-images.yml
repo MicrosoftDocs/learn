@@ -3,10 +3,12 @@ uid: learn.student-evangelism.analyze-rock-images-ai-nasa.5-how-computers-read-i
 metadata:
   title: How a computer reads a photo as an image file
   description: Learn how a computer converts a photo to binary form so it can read the data as an image file.
-  ms.date: 04/11/2021
   author: softchris
   ms.author: chnoring
+  ms.date: 04/11/2021
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: How a computer reads a photo as an image file
 durationInMinutes: 3

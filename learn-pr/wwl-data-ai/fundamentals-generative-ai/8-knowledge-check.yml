@@ -3,23 +3,25 @@ uid: learn.wwl.fundamentals-generative-ai.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "This knowledge check is based on content about generative AI, large language models, and copilots."
-  ms.date: 5/15/2024
+  description: This knowledge check is based on content about generative AI, large language models, and copilots.
   author: sherzyang
   ms.author: sheryang
+  ms.date: 5/15/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
 quiz:
   questions:
   - content: "What are Large Language Models?"
     choices:
-    - content: "Models that only work with one language."
+    - content: "Models that detect additional meaning in paragraphs of text."
       isCorrect: false
-      explanation: "Incorrect. Large language models can work with multiple languages."
-    - content: "Models that only work with small amounts of data."
+      explanation: "Incorrect. Azure AI Language services can be used to detect additional insights such as sentiment, key phrases, etc."
+    - content: "Lists of words and code that computers use to generate text.​"
       isCorrect: false
-      explanation: "Incorrect. Large language models work with massive amounts of data."
+      explanation: "Incorrect. Large Language Models consist of layers of neural networks. It is not a list."
     - content: "Models that use deep learning to process and understand natural language on a massive scale."
       isCorrect: true
       explanation: "Correct. Large language models use deep learning to process and understand natural language on a massive scale."

@@ -4,12 +4,11 @@ title: How to configure IoT Edge to IoT Hub
 metadata:
   title: How to configure IoT Edge to IoT Hub
   description: In this section, you learn how to create an IoT Edge device and set up communication between IoT Edge and IoT Hub
-  ms.date: 11/28/2023
+  ms.date: 07/22/2024
   author: PatAltimore
-  ms.author: leestott
+  ms.author: patricka
   ms.topic: unit
   ms.custom: team=nextgen
-  ms.service: iot-hub
-durationInMinutes: 7 # dummy number at present
+durationInMinutes: 7
 content: |
   [!include[](includes/3-how-configure-iot-edge.md)]

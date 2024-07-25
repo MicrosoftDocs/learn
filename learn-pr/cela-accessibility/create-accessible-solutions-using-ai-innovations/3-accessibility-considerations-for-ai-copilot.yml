@@ -4,10 +4,12 @@ title: Accessibility considerations for AI copilots
 metadata:
   title: Accessibility considerations for AI copilots
   description: Learn how to design AI solutions that respect the diversity and preferences of users and ensure the system's accessibility, usability, and quality.
-  ms.date: 03/01/2024
   author: erzelman
   ms.author: erzelman
+  ms.date: 03/01/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 8
 content: |
   [!include[](includes/3-accessibility-considerations-for-ai-copilot.md)]

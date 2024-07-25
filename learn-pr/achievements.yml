@@ -3658,6 +3658,21 @@ achievements:
   title: Introduction to Azure Space
   summary: Explore some of the ins and outs of the space industry and how it's quickly changing.
   iconUrl: /training/achievements/azure-space-intro.svg
+- uid: learn.intro-to-defender-cloud.badge
+  type: badge
+  title: Introduction to Microsoft Defender for Cloud
+  summary: Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP) for all of your Azure, on-premises, and multicloud (Amazon AWS and Google GCP) resources.
+  iconUrl: /training/achievements/intro-to-defender-for-cloud.svg
+- uid: learn.azure-security.resolve-threats-with-azure-security-center.badge
+  type: badge
+  title: Resolve security threats with Microsoft Defender for Cloud
+  summary: In this module, you'll use the alert capabilities of Microsoft Defender for Cloud to watch for and respond to threats.
+  iconUrl: /training/achievements/resolve-threats-with-azure-security-center.svg
+- uid: learn.azure-security.secure-vms-with-security-center.badge
+  type: badge
+  title: Protect your servers and VMs from brute-force and malware attacks with Microsoft Defender for Cloud.
+  summary: In this module, you discover how to protect VMs and servers with Microsoft Defender for Cloud.
+  iconUrl: /training/achievements/secure-vms-with-azure-security-center.svg
 - uid: learn.azure.azure-object-anchors-tutorials.badge
   type: badge
   title: Use Azure Object Anchors to detect an object in the physical world
@@ -3723,3 +3738,18 @@ achievements:
   title: Implement Pub/Sub and Streams in Azure Cache for Redis
   summary: Execute Redis pub/sub commands for event-based messaging at scale in Azure Cache for Redis. Use the Redis console to create, append, and query a Redis stream with time-based ranges.
   iconUrl: /training/achievements/azure-redis-publish-subscribe-streams.svg
+- uid: learn.create-iot-device-dotnet.badge
+  type: badge
+  title: Construct Internet of Things devices using the .NET IoT Libraries
+  summary: In this module, you'll learn to read environmental sensors and activate relays using the .NET IoT Libraries.
+  iconUrl: /training/achievements/iot/create-iot-device-dotnet.svg
+- uid: learn.wwl.detect-objects-images-custom-vision.badge
+  type: badge
+  title: Detect objects in images with Azure AI Custom Vision
+  summary: Object detection is a form of computer vision in which artificial intelligence (AI) agents can identify and locate specific types of object in an image or camera feed.
+  iconUrl: /training/achievements/detect-objects-images-custom-vision.svg
+- uid: learn.wwl.explore-cognitive-services-vision.badge
+  type: badge
+  title: Explore Azure AI services for Vision (preview)
+  summary: Azure AI services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities.
+  iconUrl: /training/achievements/explore-cognitive-services-for-vision-preview.svg

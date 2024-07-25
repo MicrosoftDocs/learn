@@ -31,7 +31,7 @@ varies by operating system and distribution.
 
 ### Windows
 
-On Windows, use the **Windows Package Manager (Winget)** to install the latest stable version of
+On Windows, use the **Windows Package Manager** (`winget`) to install the latest stable version of
 PowerShell 7.
 
 ```powershell
@@ -48,8 +48,8 @@ Microsoft repository, which you must add to your package manager.
 | Debian, Ubuntu                  | `apt-get`                                     |
 | Red Hat Enterprise Linux (RHEL) | `dnf` or `yum` depending on your RHEL version |
 
-To install PowerShell on supported versions of Ubuntu Linux, use the Advanced Packaging Tool (apt)
-and the Bash command line:
+To install PowerShell on supported versions of Ubuntu Linux, use the Advanced Packaging Tool (`apt`)
+and the Bash command line.
 
 ### macOS
 

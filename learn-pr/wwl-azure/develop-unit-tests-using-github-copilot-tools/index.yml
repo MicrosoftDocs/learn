@@ -2,15 +2,15 @@
 uid: learn.wwl.develop-unit-tests-using-github-copilot-tools
 metadata:
   title: Develop unit tests using GitHub Copilot tools
-  description: "This module explores using GitHub Copilot and GitHub Copilot Chat to create unit tests. Exercises provide practical experience creating unit test projects and running unit tests in Visual Studio Code."
-  ms.date: 05/20/2024
+  description: This module explores using GitHub Copilot and GitHub Copilot Chat to create unit tests. Exercises provide practical experience creating unit test projects and running unit tests in Visual Studio Code.
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: module-standard-task-based
-  ms.custom:
-  - N/A
+  ms.date: 05/20/2024
   ms.service: github-copilot
   ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Develop unit tests using GitHub Copilot tools
 summary: This module explores using GitHub Copilot and GitHub Copilot Chat to create unit tests. Exercises provide practical experience creating unit test projects and running unit tests in Visual Studio Code.&nbsp;&nbsp;
 abstract: |
