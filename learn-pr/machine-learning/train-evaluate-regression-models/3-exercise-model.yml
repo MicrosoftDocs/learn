@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Train and evaluate a regression model
   description: "Exercise - Train and evaluate a regression model"
   ms.date: 08/08/2023
-  author: s-polly
-  ms.author: scottpolly
+  author: madiepev
+  ms.author: madiepev
   ms.topic: unit
 durationInMinutes: 8
 sandbox: true
