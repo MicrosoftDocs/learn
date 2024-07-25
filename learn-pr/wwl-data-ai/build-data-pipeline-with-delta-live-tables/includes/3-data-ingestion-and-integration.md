@@ -15,26 +15,26 @@ DLT facilitates data ingestion and integration through:
 To get started ingesting data into Delta Lake, the example below walks through ingesting and integrating data from a sample source into Delta Lake using DLT by:
 
 1. Setting up your Azure Databricks environment.
-1. Creating the Delta tables.
+1. Creating Delta tables.
 1. Ingesting data from CSV and JSON files.
 1. Transforming and integrating data.
-1. Querying the integrated data.
+1. Querying integrated data.
 
 ### Setting up your Azure Databricks environment
 Ensure that your Azure Databricks environment is set up and configured to use Delta Live Tables. The setup involves preparing the appropriate clusters and ensuring that DLT is enabled in your workspace.
 
 ### Creating the Delta Tables
-Create the Delta tables to store the customer and transaction data.
+To create Delta Tables you can use the CREATE TABLE SQL statement, as shown in the following example.
 
 ```sql
--- Create the Delta table for customer data
+-- Create Delta table for customer data
 CREATE TABLE customer_data (
     customer_id INT,
     customer_name STRING,
     email STRING
 );
 
--- Create the Delta table for transaction data
+-- Create Delta table for transaction data
 CREATE TABLE transaction_data (
     transaction_id INT,
     customer_id INT,
@@ -44,7 +44,7 @@ CREATE TABLE transaction_data (
 ```
 
 ### Ingesting data from CSV and JSON files
-You can use Databricks SQL to read data from a CSV file and a JSON file, and then insert it into the Delta tables.
+You can use Databricks SQL to read data from a CSV file and a JSON file, and then insert it into Delta tables.
 
 ```sql
 -- Load customer data from CSV
@@ -66,7 +66,7 @@ SELECT * FROM transaction_data_view;
 ```
 
 ### Transforming and integrating data
-You can perform transformations and join the customer and transaction data to create a unified view.
+You can perform transformations and join data from multiple tables to create a unified view.
 
 ```sql
 -- Create a unified view of customer transactions
@@ -91,8 +91,7 @@ SELECT * FROM customer_transactions;
 ```
 
 ### Querying the integrated data
-
-Now, you can query the integrated data for analysis.
+Then, you can query the integrated data for analysis.
 
 ```sql
 -- Query the integrated data

@@ -5,4 +5,4 @@ Now it's your chance to create a data pipeline with Delta Live Tables.
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2281016)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2281016&azure-portal=true)
