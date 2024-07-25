@@ -4,4 +4,4 @@ Additional Reading:
 1. [Azure Databricks Documentation](https://docs.databricks.com/)
 2. [Delta Lake on Databricks](https://databricks.com/product/delta-lake-on-databricks)
 3. [Spark Structured Streaming Programming Guide](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html)
-4. [Azure Monitor Documentation](https://docs.microsoft.com/en-us/azure/azure-monitor/)# Summary
+4. [Azure Monitor Documentation](https://docs.microsoft.com/azure/azure-monitor/)# Summary
