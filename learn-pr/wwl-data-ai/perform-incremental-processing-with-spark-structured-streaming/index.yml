@@ -12,14 +12,14 @@ title: Perform incremental processing with spark structured streaming.
 summary: You'll explore different features and tools to help you understand and work with incremental processing with spark structured steraming.
 abstract: |
   At the end of this module, you'll be able to:
-  *   Implement compliance controls for sensitive data.
-  *   Monitor database performance in Azure SQL.
-  *   Configure high availability and disaster recovery in Azure SQL.
-  *   Automate database tasks for scalability.
+  *   Understand Spark structured streaming.
+  *   Some techniques to optimize structured streaming.
+  *   How to handle late arriving or out of order events.
+  *   How to setup real-time-sources for incremental processing.
 prerequisites: |
   *   Ability to navigate the Azure portal.
-  *   Understanding of the traditional Database Administration role.
-  *   Experience with T-SQL programming language at a basic level.
+  *   Understanding of the Azure Databricks workspace.
+  *   Experience with Spark languages and Notebooks.
   
 iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
 levels:
@@ -41,4 +41,4 @@ units:
 - learn-wwl.perform-incremental-processing-with-spark-structured-streaming.knowledge-check
 - learn-wwl.perform-incremental-processing-with-spark-structured-streaming.summary
 badge:
-  uid: learn-wwl.prepare-to-maintain-databases-on-azure.badge
+  uid: learn-wwl.perform-incremental-processing-with-spark-structured-streaming.badge
