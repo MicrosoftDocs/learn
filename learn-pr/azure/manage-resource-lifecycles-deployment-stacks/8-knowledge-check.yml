@@ -12,36 +12,36 @@ durationInMinutes: 1
 content: | 
 quiz:
   questions:
-  - content: TBD
+  - content: When using _action on unmanage_ parameter, which option will detach resources, resource groups, and management groups from the deployment stack?
     choices:
-    - content: TBD
+    - content: Delete all
+      isCorrect: false
+      explanation: The delete all option will delete all resources, resource groups, and management groups from the deployment stack.
+    - content: Delete resources
+      isCorrect: false
+      explanation: The delete resources option will delete all resources, but will detach resource groups and management groups.
+    - content: Detach all
       isCorrect: true
-      explanation: TBD
-    - content: TBD
-      isCorrect: false
-      explanation: TBD
-    - content: TBD
-      isCorrect: false
-      explanation: TBD
-  - content: TBD
+      explanation: The detach all option will detach all resources, resource groups, and management groups from the deployment stack.
+  - content: What do we call a resource that is no longer managed by the deployment stack?
     choices:
-    - content: TBD
+    - content: Managed resource
       isCorrect: true
-      explanation: TBD
-    - content: TBD
+      explanation: A managed resource is a resource that is managed by the deployment stack.
+    - content: Detached resource
       isCorrect: false
-      explanation: TBD
-    - content: TBD
+      explanation: A resource that is no longer managed by the deployment stack is known as a detached resource.
+    - content: Deleted resource
       isCorrect: false
-      explanation: TBD
-  - content: TBD
+      explanation: A deleted resoruce is a resource that has been deleted from Azure.
+  - content: When using _action on unmanage_ parameter, which option will delete resources, but detach resource groups and management groups?
     choices:
-    - content: TBD
+    - content: Delete all
+      isCorrect: false
+      explanation: The delete all option will delete all resources, resource groups, and management groups from the deployment stack.
+    - content: Delete resources
       isCorrect: true
-      explanation: TBD
-    - content: TBD
+      explanation: The delete resources option will delete all resources, but will detach resource groups and management groups.
+    - content: Detach all
       isCorrect: false
-      explanation: TBD
-    - content: TBD
-      isCorrect: false
-      explanation: TBD
+      explanation: The detach all option will detach all resources, resource groups, and management groups from the deployment stack.

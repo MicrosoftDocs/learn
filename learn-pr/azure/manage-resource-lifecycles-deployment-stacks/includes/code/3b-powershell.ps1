@@ -12,8 +12,6 @@ Resources                     : /subscriptions/./resourceGroups/rg-depositsAppli
                                 /subscriptions/./resourceGroups/rg-depositsApplication/././servers/sql-brpdm7iotbwjm/databases/sqldb-brpdm7iotbwjm
                                 /subscriptions/./resourceGroups/rg-depositsApplication/././serverfarms/plan-deposits
                                 /subscriptions/./resourceGroups/rg-depositsApplication/././sites/webapp-brpdm7iotbwjm
-                                /subscriptions/./resourceGroups/rg-depositsApplication/././components/appinsights-deposits
-                                /subscriptions/./resourceGroups/rg-depositsApplication/././workspaces/log-deposits
 Parameters                    : 
                                 Name                      Type                       Value
                                 ========================  =========================  ==========

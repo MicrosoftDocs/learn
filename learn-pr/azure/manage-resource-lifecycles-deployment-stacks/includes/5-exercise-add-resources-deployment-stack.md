@@ -249,7 +249,7 @@ With the update complete, we want to validate that the app service plan's sku is
 
 1. Take notice of the resources section of the output. We now see the existing log analytics workspace and the new application insights instance listed as managed resources. The result should appear similar to the following output:
 
-    :::code language="json" source="code/2-json.json" range="43-80" highlight="68-79":::
+    :::code language="json" source="code/2a-json.json" range="43-80" highlight="68-79":::
 
 ::: zone-end
 
@@ -285,6 +285,6 @@ With the update complete, we want to validate that the app service plan's sku is
 
 1. Take notice of the resources section of the output. We now see the existing log analytics workspace and the new application insights instance listed as managed resources. The result should appear similar to the following output:
 
-    :::code language="powershell" source="code/3-powershell.ps1" range="11-16" highlight="15-16":::
+    :::code language="powershell" source="code/3a-powershell.ps1" range="11-16" highlight="5-6":::
 
 ::: zone-end
