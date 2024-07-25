@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-networking-sap-rise.integration-azure-with-sap-rise
+title: Explore responsibilities during Azure integration with SAP RISE managed workloads
+metadata:
+  title: Explore responsibilities during Azure integration with SAP RISE managed workloads
+  description: "Overview of responsibilities for integrating SAP RISE managed virtual network with customer's own Azure environment."
+  ms.date: 07/25/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-integrate-azure-with-sap-rise-overview.md)]

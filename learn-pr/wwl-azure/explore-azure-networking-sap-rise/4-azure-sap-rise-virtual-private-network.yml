@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-networking-sap-rise.azure-sap-rise-virtual-private-network
+title: Explore Azure virtual private network connection to SAP RISE
+metadata:
+  title: Explore Azure virtual private network connection to SAP RISE
+  description: "Learn to establish a connection between Azure and SAP RISE using a Virtual Private Network VNet-to-VNet."
+  ms.date: 07/25/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-azure-sap-rise-virtual-private-network.md)]

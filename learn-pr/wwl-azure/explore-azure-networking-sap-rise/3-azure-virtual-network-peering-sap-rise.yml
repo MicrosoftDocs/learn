@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-networking-sap-rise.azure-virtual-network-peering-sap-rise
+title: Explore Azure virtual network peering with SAP RISE
+metadata:
+  title: Explore Azure virtual network peering with SAP RISE
+  description: "Learn to establish a connection between Azure and SAP RISE virtual network gateways using a virtual network peering connection."
+  ms.date: 07/25/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-azure-virtual-network-peering-sap-rise.md)]

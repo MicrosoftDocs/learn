@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-networking-sap-rise.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to the module."
+  ms.date: 07/25/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
