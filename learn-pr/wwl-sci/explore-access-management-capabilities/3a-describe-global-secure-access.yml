@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-global-secure-access
+title: Describe Global Secure Access in Microsoft Entra
+metadata:
+  title: Describe Global Secure Access in Microsoft Entra
+  description: "Describe Global Secure Access in Microsoft Entra"
+  ms.date: 07/23/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3a-describe-global-secure-access.md)]

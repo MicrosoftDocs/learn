@@ -1,19 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-access-management-capabilities-of-azure-ad
 metadata:
-  title: Describe access management capabilities of Microsoft Entra ID
-  description: "Describe access management capabilities of Microsoft Entra ID"
-  ms.date: 02/07/2023
+  title: Describe access management capabilities of Microsoft Entra
+  description: "Describe access management capabilities of Microsoft Entra"
+  ms.date: 07/23/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module
   ms.service: active-directory
-title: Describe access management capabilities of Microsoft Entra ID
-summary: A key function of Microsoft Entra ID is to manage access.  Learn about the conditional access and how Microsoft Entra roles and role-based access control (RBAC) helps organizations manage and control access.
+title: Describe access management capabilities of Microsoft Entra
+summary: A key function of Microsoft Entra is to manage access.  Learn about Microsoft's Security Service Edge (SSE) solution, conditional access, and how Microsoft Entra roles and role-based access control (RBAC) help organizations manage access.
 abstract: |
   By the end of this module, you'll be able to:
   - Describe Conditional Access in Microsoft Entra ID.
   - Describe Microsoft Entra roles and role-based access control.
+  - Describe Global Secure Access in Microsoft Entra.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -34,6 +35,7 @@ units:
 - learn.wwl.explore-access-management-capabilities-of-azure-ad.introduction
 - learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-conditional-access-its-benefits
 - learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-azure-role-based-access-control-rbac
+- learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-global-secure-access
 - learn.wwl.explore-access-management-capabilities-of-azure-ad.knowledge-check
 - learn.wwl.explore-access-management-capabilities-of-azure-ad.summary-resources
 badge:
