@@ -29,7 +29,7 @@ A database account is a container for managing one or more databases. Before we 
     |---|---|---|
     | **Project Details** |
     | Subscription | Concierge Subscription | The Azure subscription that works with the resources in the sandbox. |
-    | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | The resource group for your sandbox. |
+    | Resource Group | From the drop-down list, select <rgn>[sandbox resource group name]</rgn> | The resource group for your sandbox. |
     | **Instance Details** |
     | Account Name | `globally unique name` | Enter a unique but identifiable name for your Azure Cosmos DB account; `documents.azure.com` is appended to the name that you provide.<br><br>`3 - 50 lowercase characters, numbers, or hyphens (-)`. |
     | Location | `region` | Select the region nearest to you. |
@@ -162,7 +162,7 @@ You can verify our progress so far by testing the new function.
 
 1. In the command bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
-1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon, and select **OK**.
+1. Select **default (function key)** from the drop-down list, then select the *Copy to clipboard* icon, and select **OK**.
 
 1. Paste the function URL you copied into the address bar of a new browser tab. Append the query string value `&name=<your name>` to the end of the URL, replacing `<your  name>` with your name, and then press <kbd>Enter</kbd>. The Azure function should return a personalized response in the browser.
 
@@ -172,13 +172,13 @@ Now that we have our skeletal function working, let's turn our attention to read
 
 To read data from the database, you need to define an input binding. As you see here, you can configure a binding that can talk to your database in just a few steps.
 
-1. In the Azure portal, in the *HttpTrigger2* Function menu on the left, select **Integration**. The **Integration** pane for your Function appears.
+1. In the Azure portal, in the *HttpTrigger2* Function menu along the top, select **Integration**. The **Integration** pane for your Function appears.
 
    You used a template that created an HTTP trigger request with an HTTP output binding. Let's add an Azure Cosmos DB input binding.
 
-1. In the **Inputs** box, select **Add input**. The **Create Input** pane appears.
+1. In the **Trigger and inputs** box, select **Add input**. The **Create Input** pane appears.
 
-1. From the **Binding Type** dropdown list, select **Azure Cosmos DB**.
+1. From the **Binding Type** drop-down list, select **Azure Cosmos DB**.
 
 1. In the **Azure Cosmos DB details** section, under the **Cosmos DB account connection** setting, select the **New** link. The **New Cosmos DB connection** dialog box appears.
 
@@ -201,7 +201,7 @@ To read data from the database, you need to define an input binding. As you see 
 
     To clarify why we're using these settings, we want to look up a bookmark with a specific ID, so we tied the **Document ID** that our function receives in the query string to the input binding. This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Because IDs are unique in our collection, the binding returns either 0 (not found) or 1 (found) documents.
 
-1. To save this input binding configuration, select **ADD**.
+1. To save this input binding configuration, select **Add**.
 
 ## Update the function implementation
 
@@ -260,7 +260,7 @@ Let's examine what this code is doing.
 
 ### Modify your function's JSON implementation code
 
-1. Select **function.json** from the dropdown list in your **`<functionapp> \ HttpTrigger2 \`** path.
+1. Select **function.json** from the drop-down list in your **`<functionapp> \ HttpTrigger2 \`** path.
 
 1. Replace all code in the *function.json* file with the following code. Be sure and replace `your-database` with the name of your Azure Cosmos DB account.
 
@@ -286,7 +286,7 @@ Let's examine what this code is doing.
           "name": "bookmark",
           "direction": "in",
           "type": "cosmosDB",
-          "partitionKey": "{id}"
+          "partitionKey": "{id}",
           "databaseName": "func-io-learn-db",
           "containerName": "Bookmarks",
           "connection": "your-database_DOCUMENTDB",
@@ -342,7 +342,7 @@ Let's examine what this code is doing.
 
 ### Modify your function's JSON implementation code
 
-1. Select **function.json** from the dropdown list in your **`<functionapp> \ HttpTrigger2 \`** path.
+1. Select **function.json** from the drop-down list in your **`<functionapp> \ HttpTrigger2 \`** path.
 
 1. Modify the values for `id` and `partitionKey` so that they accept a parameter of `{id}`. Your **function.json** code should resemble the following example, where `your-database` is replaced with the name of your Cosmos DB database.
 
@@ -388,7 +388,7 @@ Let's examine what this code is doing.
 
 1. In the command bar, select **Get function URL**. The **Get function URL** dialog box appears.
 
-1. From the **Key** dropdown list, select **default** under **Function key**, and then select the *Copy to clipboard* icon at the end of the URL.
+1. From the **Key** drop-down list, select **default** under **Function key**, and then select the *Copy to clipboard* icon at the end of the URL.
 
 1. Paste the function key you copied into the address bar of a new browser tab, and then add the query string value `&id=docs` to the end of the URL. The resulting URL should resemble the following example:
 

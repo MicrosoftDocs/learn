@@ -2,12 +2,14 @@
 uid: learn.wwl.responsible-ai-studio
 metadata:
   title: Responsible generative AI in AI Studio
-  description: "A practical approach to implementing generative AI responsibly, and exploring content filters in AI Studio."
-  ms.date: 5/30/2024
+  description: A practical approach to implementing generative AI responsibly, and exploring content filters in AI Studio.
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.date: 5/30/2024
   ms.service: azure-ai-openai
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Responsible generative AI in AI Studio
 summary: "Generative AI enables amazing creative solutions, but must be implemented responsibly to minimize the risk of harmful content generation."
 abstract: |
