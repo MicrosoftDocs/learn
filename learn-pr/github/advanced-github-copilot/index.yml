@@ -8,6 +8,8 @@ metadata:
   ms.author: abrilu
   ms.topic: module
   ms.service: github-copilot
+  ms.collection: 
+    - github-ai-copilot
 title: Using advanced GitHub Copilot features
 summary: "Use advanced GitHub Copilot features with a Python application."
 abstract: |
