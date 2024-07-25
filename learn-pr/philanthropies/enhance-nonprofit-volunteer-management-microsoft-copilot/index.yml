@@ -2,13 +2,15 @@
 uid: learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot
 metadata:
   title: Enhance nonprofit volunteer management with Microsoft Copilot
-  description: "This module demonstrates how to use Copilot to manage volunteers within your nonprofit organization. Learners review several prompts used for generating volunteer recruitment, training, and recognition materials, and then they practice using and generating their own prompts."
-  ms.date: 6/13/2024
+  description: This module demonstrates how to use Copilot to manage volunteers within your nonprofit organization. Learners review several prompts used for generating volunteer recruitment, training, and recognition materials, and then they practice using and generating their own prompts.
   author: CourtneyHMicrosoft
   ms.author: cohodge
-  ms.topic: module-standard-task-based
+  ms.date: 6/13/2024
   ms.service: artificial-intelligence
   ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Enhance nonprofit volunteer management with Microsoft Copilot
 summary: This module demonstrates how to use Copilot to manage volunteers within your nonprofit organization. 
 abstract: |
