@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: perform-incremental-processing-with-spark-structured-streaming
+metadata:
+  title: perform-incremental-processing-with-spark-structured-streaming
+  description: "Learn about spark structured streaming and ways to optimize and use it to populate destination objects"
+  ms.date: 07/31/2024
+  author: wwlpublish
+  ms.author: jherring
+  ms.topic: module-standard-task-based
+  ms.service: azure
+title: Perform incremental processing with spark structured streaming.
+summary: You'll explore different features and tools to help you understand and work with incremental processing with spark structured steraming.
+abstract: |
+  At the end of this module, you'll be able to:
+  *   Implement compliance controls for sensitive data.
+  *   Monitor database performance in Azure SQL.
+  *   Configure high availability and disaster recovery in Azure SQL.
+  *   Automate database tasks for scalability.
+prerequisites: |
+  *   Ability to navigate the Azure portal.
+  *   Understanding of the traditional Database Administration role.
+  *   Experience with T-SQL programming language at a basic level.
+  
+iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- developer
+- data-scientist
+- data-analyst
+products:
+- azure-databricks
+units:
+- learn-wwl.perform-incremental-processing-with-spark-structured-streaming.introduction
+- learn-wwl.perform-incremental-processing-with-spark-structured-streaming.setup-real-time-sources
+- learn-wwl.perform-incremental-processing-with-spark-structured-streaming.optimize-delta-lake
+- learn-wwl.perform-incremental-processing-with-spark-structured-streaming.handling-lake-data-and-out-of-order-events
+- learn-wwl.perform-incremental-processing-with-spark-structured-streaming.monitor-performance-tuning-strategies
+- learn-wwl.perform-incremental-processing-with-spark-structured-streaming.06-exercise-01-transforming-with-spark-structured-streaming
+- learn-wwl.perform-incremental-processing-with-spark-structured-streaming.knowledge-check
+- learn-wwl.perform-incremental-processing-with-spark-structured-streaming.summary
+badge:
+  uid: learn-wwl.prepare-to-maintain-databases-on-azure.badge
