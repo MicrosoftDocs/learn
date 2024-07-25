@@ -10,6 +10,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.collection:
     - ce-advocates-ai-copilot
+    - github-ai-copilot
   ms.devlang: javascript
 title: Using GitHub Copilot with JavaScript
 summary: "Use GitHub Copilot, an AI pair programmer that offers autocomplete-style suggestions as you code, to work with JavaScript"

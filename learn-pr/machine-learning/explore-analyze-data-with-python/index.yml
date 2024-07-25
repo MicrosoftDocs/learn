@@ -4,8 +4,8 @@ metadata:
   title: Explore and analyze data with Python
   description: "Data exploration and analysis is at the core of data science. Data scientists require skills in programming languages like Python to explore, visualize, and manipulate data."
   ms.date: 08/04/2023
-  author: s-polly
-  ms.author: scottpolly
+  author: madiepev
+  ms.author: madiepev
   ms.topic: module
   ms.custom: py-fresh-zinc
   ms.devlang: python

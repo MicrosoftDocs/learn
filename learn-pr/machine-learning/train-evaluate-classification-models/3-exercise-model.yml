@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Train and evaluate a classification model
   description: "Exercise - Train and evaluate a classification model"
   ms.date: 09/05/2023
-  author: s-polly
-  ms.author: scottpolly
+  author: madiepev
+  ms.author: madiepev
   ms.topic: unit
 durationInMinutes: 8
 sandbox: true

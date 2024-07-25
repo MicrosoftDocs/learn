@@ -5,8 +5,8 @@ metadata:
   title: Create multiclass classification models
   description: Review one vs rest and one vs one classification models
   ms.date: 09/05/2023
-  author: s-polly
-  ms.author: scottpolly
+  author: madiepev
+  ms.author: madiepev
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 4

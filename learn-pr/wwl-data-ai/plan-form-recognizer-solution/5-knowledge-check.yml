@@ -3,11 +3,13 @@ uid: learn.wwl.plan-form-recognizer-solution.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 10/18/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 10/18/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

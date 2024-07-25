@@ -2,14 +2,15 @@
 uid: learn.wwl.get-started-openai.deploy-models
 title: Deploy generative AI models 
 metadata:
-  title: Deploy generative AI models 
+  title: Deploy generative AI models
   description: This unit explains how to deploy a generative AI model. All models need to be deployed before they can be used in applications.
-  ms.date: 07/10/2024
   author: sherzyang
   ms.author: sheryang
+  ms.date: 07/10/2024
   ms.topic: unit
-  ms.custom:
-    - devx-track-azurecli
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: devx-track-azurecli
 durationInMinutes: 2
 content: |
   [!include[](includes/5-deploy-models.md)]

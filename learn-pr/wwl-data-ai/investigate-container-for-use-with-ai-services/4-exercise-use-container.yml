@@ -3,11 +3,13 @@ uid: learn.wwl.investigate-container-for-use-with-ai-services.exercise-use-conta
 title: Exercise - Use a container
 metadata:
   title: Exercise - Use a container
-  description: "Exercise - Use a container"
-  ms.date: 09/11/2023
+  description: Exercise - Use a container
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/11/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 30
 labId: 152412
 labModal: true
