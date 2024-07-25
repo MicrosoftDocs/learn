@@ -2,7 +2,7 @@
 uid: learn.wwl.perform-incremental-processing-with-spark-structured-streaming.exercise-01-transforming-with-spark-structured-streaming
 title: Exercise 01 - Real-time Ingestion and Processing with Delta Live Tables with Azure Databricks
 metadata:
-  title: exercise-01-transforming-with-spark-structured-streaming
+  title: Exercise-01-transforming-with-spark-structured-streaming
   description: "Exercise to show how to transform data with spark structured streaming"
   ms.date: 7/25/2024
   author: wwlpublish

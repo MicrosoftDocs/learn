@@ -2,7 +2,7 @@
 uid: learn.wwl.perform-incremental-processing-with-spark-structured-streaming.monitoring-performance-tuning-strategies
 title: Monitoring and Performance Tuning Strategies for Incremental Processing in Azure Databricks
 metadata:
-  title: monitoring-performance-tuning-strategies
+  title: Monitoring-performance-tuning-strategies
   description: "Learn how to optimize performance with delta lake in Azure Databricks"
   ms.date: 7/25/2024
   author: wwlpublish

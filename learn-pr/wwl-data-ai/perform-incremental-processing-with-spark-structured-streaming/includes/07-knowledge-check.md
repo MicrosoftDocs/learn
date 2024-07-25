@@ -5,9 +5,9 @@ durationInMinutes:  3
 ## quiz title: Check your knowledge
 ## Multiple Choice
 What is the role of Spark Structured Streaming in setting up real-time data sources for incremental processing with Azure Databricks?
-(x) It is used to process real-time data streams using the same DataFrame and Dataset APIs used for batch processing. {{Correct. Spark Structured Streaming allows writing streaming queries using the same DataFrame and Dataset APIs for batch processing.}}
-( ) It is used to store the processed data in Delta tables. {{Incorrect. Spark Structured Streaming does not store data, it processes real-time data streams.}}
-( ) It is used to configure the data sources that provide the real-time data streams. {{Incorrect. Spark Structured Streaming is not used for configuring data sources, but for processing real-time data streams.}}
+(x) It's used to process real-time data streams using the same DataFrame and Dataset APIs used for batch processing. {{Correct. Spark Structured Streaming allows writing streaming queries using the same DataFrame and Dataset APIs for batch processing.}}
+( ) It's used to store the processed data in Delta tables. {{Incorrect. Spark Structured Streaming does not store data, it processes real-time data streams.}}
+( ) It's used to configure the data sources that provide the real-time data streams. {{Incorrect. Spark Structured Streaming is not used for configuring data sources, but for processing real-time data streams.}}
 
 ## Multiple Choice
 What is the purpose of using Z-Order Clustering in optimizing Delta Lake for incremental processing in Azure Databricks?
@@ -18,7 +18,7 @@ What is the purpose of using Z-Order Clustering in optimizing Delta Lake for inc
 ## Multiple Choice
 What is the purpose of watermarking in handling late data and out-of-order events in incremental processing in Azure Databricks?
 ( ) Watermarking is used to duplicate records using unique identifiers or a combination of event attributes. {{Incorrect. This explanation refers to the process of deduplication, not watermarking.}}
-(x) Watermarking sets a threshold for how long the system should wait for late data. Events arriving after the watermark are considered late and can be discarded or considered separately, reducing memory usage and ensuring timely processing. {{Correct. Watermarking in Azure Databricks helps manage late data by setting a threshold for its arrival.}}
+(x) Watermarking sets a threshold for how long the system should wait for late data. Events arriving after the watermark are considered late and can be discarded. It can also be considered separately, reducing memory usage and ensuring timely processing. {{Correct. Watermarking in Azure Databricks helps manage late data by setting a threshold for its arrival.}}
 ( ) Watermarking is used to adjust processing logic based on the observed latency patterns, dynamically modifying how late data is handled to balance accuracy and performance. {{Incorrect. This explanation refers to the process of latency-aware processing, not watermarking.}}
 
 ## Multiple Choice

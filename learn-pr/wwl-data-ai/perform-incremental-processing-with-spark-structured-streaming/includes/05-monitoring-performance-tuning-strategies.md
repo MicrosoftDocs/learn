@@ -7,7 +7,7 @@ The interface is a tool for data engineers to identify and troubleshoot issues, 
 
 -**Data partitioning** is a method where data is divided into smaller, more manageable parts, or 'partitions'. This is similar to dividing a large database into smaller databases to improve performance and efficiency. The partitioning aligns with the nature of the incremental data loads, meaning it takes into account how the data is growing and changing over time.
 
-**Bucketing** is a technique used in database design to group data that is likely to be accessed together, reducing the I/O operations. It’s like creating sub-partitions within your partitions. 
+**Bucketing** is a technique used in database design to group data that is likely to be accessed together, reducing the I/O operations. It’s like creating subpartitions within your partitions. 
 
 The aim of these techniques is to allow for parallel processing of data. In other words, multiple operations can be carried out simultaneously, speeding up the overall processing time. Additionally, these techniques help reduce the amount of data shuffling required. Data shuffling is a resource-intensive process that involves redistributing the data so that it’s grouped differently. By reducing the need for shuffling, you can further improve the efficiency of your data processing pipeline.
 

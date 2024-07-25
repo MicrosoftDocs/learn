@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: perform-incremental-processing-with-spark-structured-streaming
 metadata:
-  title: perform-incremental-processing-with-spark-structured-streaming
+  title: Perform-incremental-processing-with-spark-structured-streaming
   description: "Learn about spark structured streaming and ways to optimize and use it to populate destination objects"
   ms.date: 7/25/2024
   author: wwlpublish
@@ -9,13 +9,13 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: azure
 title: Perform incremental processing with spark structured streaming.
-summary: You'll explore different features and tools to help you understand and work with incremental processing with spark structured steraming.
+summary: You explore different features and tools to help you understand and work with incremental processing with spark structured streaming.
 abstract: |
-  At the end of this module, you'll be able to:
+  At the end of this module, you're able to:
   *   Understand Spark structured streaming.
   *   Some techniques to optimize structured streaming.
   *   How to handle late arriving or out of order events.
-  *   How to setup real-time-sources for incremental processing.
+  *   How to set up real-time-sources for incremental processing.
 prerequisites: |
   *   Ability to navigate the Azure portal.
   *   Understanding of the Azure Databricks workspace.
