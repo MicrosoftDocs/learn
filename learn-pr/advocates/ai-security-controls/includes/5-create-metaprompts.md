@@ -2,6 +2,6 @@ A metaprompt, or system message, is a set of natural language instructions used 
 
 Microsoft's internal research shows that creating effective metaprompts can reduce the risk of defects/security issues.
 
-![Image showing metaprompts and the issues they mitigate](../media/metaprompts.png)
+![Alt text. Image showing metaprompts and the issues they mitigate](../media/metaprompts.png)
 
 Metaprompts enable models to use the grounding data effectively and enforce rules that mitigate harmful content generation or user manipulations like jailbreaks or prompt injections. Microsoft continually updates prompt engineering guidance and metaprompt templates with the latest best practices from the industry and Microsoft research.

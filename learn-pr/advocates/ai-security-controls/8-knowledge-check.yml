@@ -3,7 +3,7 @@ uid: learn.ai-security-controls.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: TBD
+  description: Display your knowledge
   ms.date: 07/24/2024
   author: sarah-yo
   ms.author: sayoung
@@ -14,23 +14,23 @@ quiz:
   questions:
     - content: "What steps can you take to improve the data security of an AI enabled application?"
       choices:
-        - content: "AI systems should only be able to enact existing data security controls and use the access permissions of the user they are acting on behalf of."
+        - content: "AI systems should only be able to enact existing data security controls and use the access permissions of the user they're acting on behalf of."
           isCorrect: true
           explanation: "Access control decisions should never be devolved to an AI system."
         - content: "Keep your AI enabled application isolated from the rest of your IT environment."
           isCorrect: false
-          explanation: "Isolating an AI enabled application will limit usability rather than improve data security."
+          explanation: "Isolating an AI enabled application limits usability rather than improve data security."
         - content: "Run your AI enabled application on premises rather than in the cloud."
           isCorrect: false
-          explanation: "Running an AI enabled application on premises requires you to create your own AI platform which is expensive and requires a large amount of compute, which is not feasible for most organisations. It will also not improve data security."
+          explanation: "Running an AI enabled application on premises requires you to create your own AI platform. This is not feasible for most organizations. It will also not improve data security."
     - content: "What kind AI harms and attacks does a metaprompt help to mitigate?"
       choices:
         - content: "Model poisoning"
           isCorrect: false
-          explanation: "Metaprompts cannot help mitigate model poisoning attacks."
+          explanation: "Metaprompts can't help mitigate model poisoning attacks."
         - content: "AI overreliance"
           isCorrect: false
-          explanation: "Metaprompts cannot help mitigate overreliance on AI."
+          explanation: "Metaprompts can't help mitigate overreliance on AI."
         - content: "Jailbreaks"
           isCorrect: true
           explanation: "A metaprompt is a set of natural language instructions that tell an AI system how to behave or not behave."
@@ -38,7 +38,7 @@ quiz:
       choices:
         - content: "Metaprompts"
           isCorrect: false
-          explanation: "Metaprompts cannot be configured to filter unwanted content."
+          explanation: "Metaprompts can't be configured to filter unwanted content."
         - content: "Content safety filters"
           isCorrect: true
           explanation: "Content safety filters can be configured to prevent an application from returning content of a sexual or hateful nature."

@@ -10,7 +10,7 @@ metadata:
   ms.collection: ce-advocates-ai-copilot
   ms.service: artificial-intelligence
 title: AI security controls
-summary: Overview of the security controls that you can implement in AI systems to increase the security posture of AI environments
+summary: Overview of the security controls that you can implement in AI systems to increase the security posture of AI environments.
 abstract: |
   After completing this module, you'll be able to:
   - Describe security controls for AI systems
@@ -29,11 +29,11 @@ products:
 - azure
 units:
 - learn.ai-security-controls.introduction
-- learn.ai-security-controls.reviewing-ai-open-source-libraries
+- learn.ai-security-controls.review-ai-open-source-libraries
 - learn.ai-security-controls.content-filters
-- learn.ai-security-controls.implementing-ai-data-security
-- learn.ai-security-controls.creating-metaprompts
-- learn.ai-security-controls.grounding-ai-systems
+- learn.ai-security-controls.implement-ai-data-security
+- learn.ai-security-controls.create-metaprompts
+- learn.ai-security-controls.ground-ai-systems
 - learn.ai-security-controls.implementing-application-security-best-practices-for-ai-enabled-applications
 - learn.ai-security-controls.knowledge-check
 - learn.ai-security-controls.summary

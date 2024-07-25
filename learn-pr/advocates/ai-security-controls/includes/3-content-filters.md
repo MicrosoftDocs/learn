@@ -14,4 +14,4 @@ Content Safety Studio offers a suite of features designed to monitor and moderat
 
 Here you can see an example of content filtering working correctly and also failing:
 
-![Image shows guardrail protection and failure modes](../media/content-filtering.png)
+![Alt text. Image shows guardrail protection and failure modes](../media/content-filtering.png)
