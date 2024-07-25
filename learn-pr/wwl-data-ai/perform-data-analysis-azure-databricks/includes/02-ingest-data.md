@@ -1,6 +1,4 @@
-Before you can work with data in Azure Databricks, you need to ingest data into the platform. Once in the platform, the cloud-based compute allows you to process large volumes of data efficiently. Let's explore how you can ingest data into Azure Databricks.
-
-## Explore data ingestion methods
+Before you can work with data in Azure Databricks, you need to ingest data into the platform. Once in the platform, the cloud-based compute allows you to process large volumes of data efficiently.
 
 There are multiple ways to ingest data into Azure Databricks, making it a versatile and powerful tool for data analysis:
 

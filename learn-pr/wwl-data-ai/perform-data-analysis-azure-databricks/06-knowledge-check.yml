@@ -13,36 +13,36 @@ labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "What is the primary programming construct used for data manipulation in Azure Databricks?"
+  - content: "What is the primary purpose of using DataFrame APIs in Azure Databricks?"
     choices:
-    - content: "RDDs (Resilient Distributed Datasets)"
+    - content: "To create visualizations."
       isCorrect: false
-      explanation: "Incorrect. RDDs provide a lower level abstraction over the data to perform complex custom transformations and are suitable when working with unstructured data."
-    - content: "DataFrames"
+      explanation: "Incorrect. DataFrame APIs are primarily used for data manipulation and analysis, not for creating visualizations."
+    - content: "To explore, manipulate, and analyze structured data."
       isCorrect: true
       explanation: "Correct. In Azure Databricks, DataFrames are the primary programming construct used for data manipulation. They provide a higher level of abstraction than RDDs, are optimized for performance, and are easier to work with for data analysis tasks due to their familiar tabular format."
-    - content: "Datasets"
+    - content: "To manage user permissions."
       isCorrect: false
-      explanation: "Incorrect. Datasets are structured collection of data organized and stored together for analysis or processing."
+      explanation: "Incorrect. DataFrame APIs aren't used for managing user permissions; they're used for data analysis and manipulation."
   - content: "Which library in Databricks is used primarily for machine learning tasks?"
     choices:
     - content: "Spark SQL"
       isCorrect: false
       explanation: "Incorrect. Spark SQL is a Spark module for structured data processing and enables efficient querying of databases."
-    - content: "SparkML"
+    - content: "MLlib"
       isCorrect: true
-      explanation: "Correct. SparkML is Spark’s scalable machine learning library and is integral to Azure Databricks for performing a variety of machine learning tasks, including classification, regression, clustering, and collaborative filtering, as well as for underlying optimization primitives. SparkML is designed to work with the Dataframe API."
+      explanation: "Correct. MLlib is Spark’s scalable machine learning library and is integral to Azure Databricks for performing various machine learning tasks, including classification, regression, and clustering."
     - content: "GraphX"
       isCorrect: false
-      explanation: "Incorrect. GraphX allows us to seamlessly work with graphs and collections and efficiently transform and join graphs with RDDs."
+      explanation: "Incorrect. GraphX allows us to work with graphs and collections and efficiently transform and join graphs with Resilient Distributed Datasets (RDDs)."
   - content: "In Databricks, what would you use to run SQL queries and visualize the results directly without needing to convert to a DataFrame?"
     choices:
     - content: "Notebooks"
       isCorrect: false
-      explanation: "Incorrect. Notebooks help data practitioners to load data into DataFrames to tranform and visualize data."
+      explanation: "Incorrect. Notebooks help data practitioners to load data into DataFrames to transform and visualize data."
     - content: "Databricks SQL"
       isCorrect: true
       explanation: "Correct. Databricks SQL allows users to run SQL queries directly on the data stored in Databricks and visualize results without needing to interact directly with Spark DataFrames. It provides a convenient interface for data analysts and scientists to perform complex SQL queries and view results via built-in visualizations."
     - content: "Databricks Dashboard"
       isCorrect: false
-      explanation: "Incorrect. Dashboards are used to publish graphs and visualizations dervied from Notebook output and share them in apresentation with the rest of the users."
+      explanation: "Incorrect. Dashboards are used to publish graphs and visualizations derived from notebook output and share them in presentation with other users."
