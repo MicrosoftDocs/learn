@@ -32,13 +32,13 @@ roles:
 products:
 - azure-databricks
 units:
-- learn-wwl.perform-incremental-processing-with-spark-structured-streaming.introduction
-- learn-wwl.perform-incremental-processing-with-spark-structured-streaming.setup-real-time-sources
-- learn-wwl.perform-incremental-processing-with-spark-structured-streaming.optimize-delta-lake
-- learn-wwl.perform-incremental-processing-with-spark-structured-streaming.handling-lake-data-and-out-of-order-events
-- learn-wwl.perform-incremental-processing-with-spark-structured-streaming.monitor-performance-tuning-strategies
-- learn-wwl.perform-incremental-processing-with-spark-structured-streaming.06-exercise-01-transforming-with-spark-structured-streaming
-- learn-wwl.perform-incremental-processing-with-spark-structured-streaming.knowledge-check
-- learn-wwl.perform-incremental-processing-with-spark-structured-streaming.summary
+- learn.wwl.perform-incremental-processing-with-spark-structured-streaming.introduction
+- learn.wwl.perform-incremental-processing-with-spark-structured-streaming.setup-real-time-sources
+- learn.wwl.perform-incremental-processing-with-spark-structured-streaming.optimize-delta-lake
+- learn.wwl.perform-incremental-processing-with-spark-structured-streaming.handling-lake-data-and-out-of-order-events
+- learn.wwl.perform-incremental-processing-with-spark-structured-streaming.monitor-performance-tuning-strategies
+- learn.wwl.perform-incremental-processing-with-spark-structured-streaming.06-exercise-01-transforming-with-spark-structured-streaming
+- learn.wwl.perform-incremental-processing-with-spark-structured-streaming.knowledge-check
+- learn.wwl.perform-incremental-processing-with-spark-structured-streaming.summary
 badge:
-  uid: learn-wwl.perform-incremental-processing-with-spark-structured-streaming.badge
+  uid: learn.wwl.perform-incremental-processing-with-spark-structured-streaming.badge
