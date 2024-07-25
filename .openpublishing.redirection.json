@@ -14671,16 +14671,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/achievements/learn.azure.introduction-azure-hpc-cache.badge.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/achievements/learn.accelerate-storage-with-hpc-cache.badge.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/advocates/responsible-bots/2-responsible-conversational-ui.md",
       "redirect_url": "/training/modules/responsible-bots/2-bot-framework-responsible-principles",
       "redirect_document_id": false
