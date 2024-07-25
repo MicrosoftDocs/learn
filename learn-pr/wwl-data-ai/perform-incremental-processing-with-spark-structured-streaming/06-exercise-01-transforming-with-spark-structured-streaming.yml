@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-incremental-processing-with-spark-structured-streaming.exercise-01-transforming-with-spark-structured-streaming
-title: Hands-on lab on how to transform data with spark structured streaming in Azure Databricks.
+title: Exercise 01 - Real-time Ingestion and Processing with Delta Live Tables with Azure Databricks
 metadata:
   title: exercise-01-transforming-with-spark-structured-streaming
   description: "Exercise to show how to transform data with spark structured streaming"

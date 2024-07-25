@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-incremental-processing-with-spark-structured-streaming.optimize-delta-lake
-title: Optimize delta lake in Databricks
+title: Optimizing Delta Lake for Incremental Processing in Azure Databricks
 metadata:
   title: optimize-delta-lake
   description: "Optimize delta lake in Databricks"

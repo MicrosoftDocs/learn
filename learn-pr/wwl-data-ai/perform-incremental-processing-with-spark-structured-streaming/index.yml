@@ -3,9 +3,9 @@ uid: perform-incremental-processing-with-spark-structured-streaming
 metadata:
   title: perform-incremental-processing-with-spark-structured-streaming
   description: "Learn about spark structured streaming and ways to optimize and use it to populate destination objects"
-  ms.date: 07/31/2024
+  ms.date: 7/25/2024
   author: wwlpublish
-  ms.author: jherring
+  ms.author: jamesh
   ms.topic: module-standard-task-based
   ms.service: azure
 title: Perform incremental processing with spark structured streaming.

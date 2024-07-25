@@ -1,4 +1,4 @@
-# Exercise 01 - Real-time Ingestion and Processing with Delta Live Tables with Azure Databricks
+
 
 ## Objective
 In this exercise, you learn how to use Azure Databricks to set up a real-time data ingestion pipeline using Delta Live Tables. By the end of this exercise, you're able to:

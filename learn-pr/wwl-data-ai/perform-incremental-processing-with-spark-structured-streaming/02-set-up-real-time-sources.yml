@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-incremental-processing-with-spark-structured-streaming.set-up-real-time-sources
-title: Set up real time sources for Spark structured streaming in Databricks
+title: Set up real-time data sources for Incremental Processing
 metadata:
   title: set-up-real-time-sources
   description: "Establish proper sources for Spark structured streaming"
