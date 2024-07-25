@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-data-analysis-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/25/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is the primary programming construct used for data manipulation in Azure Databricks?"
+    choices:
+    - content: "RDDs (Resilient Distributed Datasets)"
+      isCorrect: false
+      explanation: "Incorrect. RDDs provide a lower level abstraction over the data to perform complex custom transformations and are suitable when working with unstructured data."
+    - content: "DataFrames"
+      isCorrect: true
+      explanation: "Correct. In Azure Databricks, DataFrames are the primary programming construct used for data manipulation. They provide a higher level of abstraction than RDDs, are optimized for performance, and are easier to work with for data analysis tasks due to their familiar tabular format."
+    - content: "Datasets"
+      isCorrect: false
+      explanation: "Incorrect. Datasets are structured collection of data organized and stored together for analysis or processing."
+  - content: "Which library in Databricks is used primarily for machine learning tasks?"
+    choices:
+    - content: "Spark SQL"
+      isCorrect: false
+      explanation: "Incorrect. Spark SQL is a Spark module for structured data processing and enables efficient querying of databases."
+    - content: "SparkML"
+      isCorrect: true
+      explanation: "Correct. SparkML is Spark’s scalable machine learning library and is integral to Azure Databricks for performing a variety of machine learning tasks, including classification, regression, clustering, and collaborative filtering, as well as for underlying optimization primitives. SparkML is designed to work with the Dataframe API."
+    - content: "GraphX"
+      isCorrect: false
+      explanation: "Incorrect. GraphX allows us to seamlessly work with graphs and collections and efficiently transform and join graphs with RDDs."
+  - content: "In Databricks, what would you use to run SQL queries and visualize the results directly without needing to convert to a DataFrame?"
+    choices:
+    - content: "Notebooks"
+      isCorrect: false
+      explanation: "Incorrect. Notebooks help data practitioners to load data into DataFrames to tranform and visualize data."
+    - content: "Databricks SQL"
+      isCorrect: true
+      explanation: "Correct. Databricks SQL allows users to run SQL queries directly on the data stored in Databricks and visualize results without needing to interact directly with Spark DataFrames. It provides a convenient interface for data analysts and scientists to perform complex SQL queries and view results via built-in visualizations."
+    - content: "Databricks Dashboard"
+      isCorrect: false
+      explanation: "Incorrect. Dashboards are used to publish graphs and visualizations dervied from Notebook output and share them in apresentation with the rest of the users."

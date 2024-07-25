@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-data-analysis-azure-databricks.data-analysis
+title: Data analysis using DataFrame APIs
+metadata:
+  title: Data analysis using DataFrame APIs
+  description: "Data analysis using DataFrame APIs"
+  ms.date: 07/25/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/04-data-analysis.md)]
