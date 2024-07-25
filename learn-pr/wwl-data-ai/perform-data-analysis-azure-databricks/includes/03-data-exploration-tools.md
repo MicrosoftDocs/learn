@@ -16,7 +16,7 @@ When you work with data in notebooks, you make use of **Spark DataFrames** that 
 
 Azure Databricks also supports **SQL** by allowing to switch between DataFrame operations and SQL queries to interact with the data in a way that feels most natural.
 
-> [Tip]
+> [!Tip]
 > For more information, learn how to [load and transform data using Apache Spark DataFrames](https://learn.microsoft.com/azure/databricks/getting-started/dataframes?azure-portal=true).
 
 ## Explore data using libraries and APIs
