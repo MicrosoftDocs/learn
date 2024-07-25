@@ -10,6 +10,6 @@ metadata:
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/04-data-analysis.md)]

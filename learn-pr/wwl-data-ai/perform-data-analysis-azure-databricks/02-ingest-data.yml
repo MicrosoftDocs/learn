@@ -10,6 +10,6 @@ metadata:
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/02-ingest-data.md)]
