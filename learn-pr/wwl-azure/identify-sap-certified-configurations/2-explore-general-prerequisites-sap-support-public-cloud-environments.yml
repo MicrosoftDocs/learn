@@ -3,11 +3,13 @@ uid: learn.wwl.identify-sap-certified-configurations.explore-general-prerequisit
 title: Explore general prerequisites for SAP support in public cloud environments
 metadata:
   title: Explore general prerequisites for SAP support in public cloud environments
-  description: "Explore general prerequisites for SAP support in public cloud environments"
-  ms.date: 02/14/2024
+  description: "Explore the general prerequisites for SAP support in public cloud environments."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/2-explore-general-prerequisites-sap-support-public-cloud-environments.md)]
