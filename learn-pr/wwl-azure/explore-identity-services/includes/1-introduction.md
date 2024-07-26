@@ -20,3 +20,7 @@ You need to prepare the specifications to use the identity services component to
 - Explore primary scenarios using Active Directory Domain Services and Azure Virtual Machines.
 - Integrate Linux with Active Directory Domain Services.
 - Discover Microsoft Entra Domain Services.
+
+## Course video training
+
+Enhance your learning experience with additional insights and expert guidance in the [AZ-120 On Demand Instructor-led Training Video series](/shows/on-demand-instructor-led-training-series/?products=azure&terms=az-120). Perfect for those looking for a supplementary resource to reinforce understanding, with the flexibility to cover the course content at your own pace.

@@ -3,11 +3,13 @@ uid: learn.wwl.explore-azure-governance-manageability.examine-role-based-access-
 title: Examine role-based access control (RBAC)
 metadata:
   title: Examine role-based access control (RBAC)
-  description: "Examine role-based access control (RBAC)"
-  ms.date: 11/08/2023
+  description: "Grant appropriate access to Microsoft Entra ID users, groups, and services, with role-based access control (RBAC)."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-examine-role-based-access-control.md)]

@@ -3,11 +3,13 @@ uid: learn.wwl.explore-identity-services.explore-azure-active-directory-azure-ad
 title: Explore Microsoft Entra ID
 metadata:
   title: Explore Microsoft Entra ID
-  description: "Explore Microsoft Entra ID"
-  ms.date: 03/05/2024
+  description: "Explore the secure access and authentication options provided by Microsoft Entra ID."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/3-explore-azure-active-directory-azure-ad.md)]
