@@ -11961,7 +11961,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure-devops/deploy-python/1-introduction.yml",
+      "source_path": "learn-pr/azure-devops/deploy-python/index.yml",
       "redirect_url": "/training/paths/build-applications-with-azure-devops",
       "redirect_document_id": false
     },
