@@ -190,7 +190,7 @@ On the page that appears, you can generate test credentials. For this app, you j
 
 :::image type="content" source="../media/4-generate-button.png" alt-text="Screenshot of the token generation window in which the VOIP option is checked." lightbox="../media/4-generate-button.png":::
 
-You get a single Azure Communication Services identity that's suitable for testing. Make sure to copy the **Identity** and the **User Access token** values to somewhere safe for testing, such as a blank Notepad document.
+You get a single Azure Communication Services identity that's suitable for testing. Make sure to copy the **Identity** and the **User Access token** values to somewhere safe for testing, such as a text document.
 
 :::image type="content" source="../media/4-test-credentials.png" alt-text="Screenshot of the token generation window in which the test credentials are showing." lightbox="../media/4-test-credentials.png":::
 
@@ -198,7 +198,7 @@ If you want to try calling another user, generate an extra set of credentials.
 
 The first set of credentials is used for the calling user, and the second set is used for the receiving user.
 
-In a real world app, you should use our identity systems and client libraries to create and store these credentials. This way, a real-world user doesn't need to manually copy and enter these items. For more info on this concept, check the links at the end of this module.
+In a real world app, you should use the identity systems and client libraries to create and store these credentials. This way, a real-world user doesn't need to manually copy and enter these items. For more info on this concept, open the links at the end of this module.
 
 ### Calling the Echo Bot
 
@@ -206,20 +206,20 @@ Azure Communication Services has an Echo Bot, which you can call to test your mi
 
 1. Open the app in your browser.
 1. Paste a saved token into the user token input element.
-1. Press the "Submit" button.
-1. Enter the Echo Bot's user ID `8:echo123`.
+1. Select the **Submit** button.
+1. Enter the Echo Bot's user ID (`8:echo123`).
 1. Select **Start Call**.
 
 Your browser might prompt you in some microphone permission dialogs, so make sure you accept them. If everything works out correctly, you should be on a call with the Echo Bot. The bot enables you to record a short message, which it then plays back to you.
 
 ### Calling another user
 
-You can also call another user by using this app. You need the second set of credentials, which you generated earlier. Follow these steps:
+You can also call another user by using this app. This action requires a second set of credentials, which you generated earlier. Follow these steps:
 
-1. Open two copies of the app. Multiple tabs or windows should be used to simulate calling another user.
+1. Open two copies of the app. Use multiple tabs or windows to simulate calling another user.
 1. In the first copy, enter the first user token saved from the credential generator, and then select **Submit**.
 1. In the second copy, enter the second user token saved from the credential generator, and then select **Submit**.
-1. From the first copy, enter the second user ID into the "Who would you like to call?" input element.
-1. Again from the first copy, select **Start Call**.
+1. Return to the first copy, and then enter the second user ID into the **Who would you like to call?** input element.
+1. Again in the first copy, select **Start Call**.
 
 If both tabs or windows are on the same device, the call might have echoes, but it does show the process and the calls working between two browser tabs. If you deploy your app to a web server that multiple machines can access, you can have a true voice call without echo.
