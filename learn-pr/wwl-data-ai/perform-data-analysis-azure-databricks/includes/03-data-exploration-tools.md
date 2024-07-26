@@ -12,9 +12,33 @@ You can use the built-in **visualizations** to quickly understand data distribut
 
 ## Work with Spark DataFrames
 
-When you work with data in notebooks, you make use of **Spark DataFrames** that are built on Apache Spark. DataFrames allow you to manipulate large datasets efficiently. They support operations like filtering, aggregation, and joining, which are crucial for data exploration.
+When you work with data in notebooks, you make use of **Spark DataFrames** that are built on Apache Spark. DataFrames allow you to manipulate large datasets efficiently.
+
+To create a simple DataFrame, you can run the following code:
+
+```python
+data = [("Alice", 34), ("Bob", 45), ("Cathy", 29)]
+columns = ["Name", "Age"]
+df = spark.createDataFrame(data, columns)
+```
+
+DataFrames support operations like filtering, aggregation, and joining, which are crucial for data exploration.
+
+For example, you can filter a DataFrame:
+
+```python
+filtered_df = df.filter(df["Age"] > 30)
+```
 
 Azure Databricks also supports **SQL** by allowing to switch between DataFrame operations and SQL queries to interact with the data in a way that feels most natural.
+
+To filter the DataFrame using a SQL query, you first create a temporary view:
+
+```sql
+df.createOrReplaceTempView("people")
+
+sql_df = spark.sql("SELECT Name, Age FROM people WHERE Age > 30")
+```
 
 > [!Tip]
 > For more information, learn how to [load and transform data using Apache Spark DataFrames](https://learn.microsoft.com/azure/databricks/getting-started/dataframes?azure-portal=true).
