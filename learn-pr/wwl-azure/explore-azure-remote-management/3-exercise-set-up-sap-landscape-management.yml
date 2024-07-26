@@ -3,11 +3,13 @@ uid: learn.wwl.explore-azure-remote-management.set-up-azure-connector-for-sap-la
 title: Set up the Azure connector for SAP Landscape Management
 metadata:
   title: Set up the Azure connector for SAP Landscape Management
-  description: "Set up the Azure connector for SAP Landscape Management"
-  ms.date: 10/17/2023
+  description: "Set up the Azure connector for SAP Landscape Management."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-set-up-sap-landscape-management.md)]
