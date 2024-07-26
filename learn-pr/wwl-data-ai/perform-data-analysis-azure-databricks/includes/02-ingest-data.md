@@ -26,6 +26,6 @@ DBFS offers a simpler and more integrated way to work with data in Azure Blob St
 
 Once your data is ingested, you can explore your data to uncover actionable insights. Azure Databricks notebooks provide a collaborative environment where you can perform analysis using PySpark, Scala, R, or SQL. These notebooks aren't just powerful but also user-friendly, making it easy to manipulate and visualize your data.
 
-:::image type="content" source="../media/azure-databricks-notebooks.png" alt-text="Screenshot of Azure Databricks notebooks.":::
+:::image type="content" source="../media/azure-databricks-notebooks.png" alt-text="Screenshot of Azure Databricks notebooks." lightbox="media/article-folder-name/image-file-expanded.png":::
 
 In the next section, you learn the various approaches to data exploration with Azure Databricks.
