@@ -3,11 +3,13 @@ uid: learn.wwl.explore-azure-governance-manageability.policy
 title: Explore Azure Policy
 metadata:
   title: Explore Azure Policy
-  description: "Explore Azure Policy"
-  ms.date: 11/08/2023
+  description: "Create, assign, and manage policies to enforce different rules over your resources."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/7-explore-azure-policy.md)]
