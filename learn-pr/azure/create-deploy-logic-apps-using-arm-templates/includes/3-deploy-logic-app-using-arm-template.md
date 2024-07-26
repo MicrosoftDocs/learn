@@ -6,13 +6,13 @@ Azure Resource Manager is the interface for managing and organizing cloud resour
 
 If you're familiar with Azure resource groups, you know that they let you treat sets of related resources as a single unit. Resource Manager is what organizes the resource groups that let you deploy, manage, and delete all of the resources together in a single action.
 
-Think about the financial models you run for your analysts. To run a model, you might need one or more VMs, a database to store data, and a virtual network to enable connectivity between everything. With Resource Manager, you can deploy these assets into the same resource group and manage and monitor them together. When you're done, you can delete all of the resources in a resource group in one operation.
+Think about the financial models you run for your analysts. To run a model, you might need one or more virtual machines (VMs), a database to store data, and a virtual network to enable connectivity between everything. With Resource Manager, you can deploy these assets into the same resource group and manage and monitor them together. When you're done, you can delete all of the resources in a resource group in one operation.
 
 ### What are Resource Manager templates?
 
 A Resource Manager _template_ precisely defines all the Resource Manager resources in a deployment. You can deploy a Resource Manager template into a resource group as a single operation.
 
-A Resource Manager template is a JSON file, making the template a form of _declarative automation_. Declarative automation means that you define _what_ resources you need but not _how_ to create them. Put another way, you define what you need, but Resource Manager has to make sure that resources are deployed correctly.
+A Resource Manager template is a JSON file, making the template a form of _declarative automation_. Declarative automation means that you define _what_ resources you need, but not _how_ to create them. Put another way, you define what you need, but Resource Manager has to make sure that resources are deployed correctly.
 
 You can think of declarative automation similar to how web browsers display HTML files. The HTML file describes _what_ elements appear on the page, but doesn't describe _how_ to display them. The "how" is the web browser's responsibility.
 
@@ -39,7 +39,7 @@ Here are some other benefits to consider:
 
 * **Templates are code.**
 
-    Templates express your requirements through code. Think of a template as a type of _infrastructure as code_ that can be shared, tested, and versioned like any other piece of software. Also, because templates are code, you can create a "paper trail" that you can follow. The template code documents the deployment. Most users maintain their templates under some kind of revision control, such as Git. When you change the template, its revision history also documents how the template (and your deployment) has evolved over time.
+    Templates express your requirements through code. Think of a template as a type of _infrastructure as code_ that you can share, test, and version like any other piece of software. Also, because templates are code, you can create a "paper trail" that you can follow. The template code documents the deployment. Most users maintain their templates under some kind of version control, such as Git. When you change the template, its revision history also documents how the template (and your deployment) has evolved over time.
 
 * **Templates promote reuse.**
 
@@ -190,8 +190,8 @@ An Azure Logic Apps workflow is a resource in Azure. Therefore, we can deploy it
 
 We can deploy this template using one of the following methods:
 
-* Deploy using the Azure portal
-* Deploy using the PowerShell `Az` module
+* Deploy using the Azure portal.
+* Deploy using the PowerShell `Az` module.
 * Deploy from the Azure Command Line Interface (CLI).
 
 In this module, we'll deploy templates using the Azure CLI and the `az deployment group` commands.
@@ -204,9 +204,9 @@ Here are a few ways you can get a starter template:
 
 * Use the Azure portal to create a template based on the resources in an existing resource group.
 * Start with a template you or your team built that serves a similar purpose.
-* Start with an Azure Quickstart Template. You'll see how in the next part.
+* Start with an Azure Quickstart Template; you'll see how in the next unit.
 
-Whatever your approach, writing a template involves working with a text editor. You can bring your favorite editor, but Visual Studio Code's [Azure Resource Manager Tools extension](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) is specially designed for creating templates. This extension makes it easier to navigate your template code, and provides autocompletion for many common tasks.
+Whatever your approach, writing a template involves working with a text editor. You can use your favorite editor, but Visual Studio Code's [Azure Resource Manager Tools extension](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) is specially designed for creating templates. This extension makes it easier to navigate your template code, and provides autocompletion for many common tasks.
 
 As you explore and write your templates, [review the documentation](/azure/templates?azure-portal=true) to understand the available resource types and how to use them.
 

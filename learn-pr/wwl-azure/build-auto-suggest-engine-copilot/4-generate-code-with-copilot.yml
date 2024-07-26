@@ -3,13 +3,13 @@ uid: learn.wwl.build-auto-suggest-engine-copilot.generate-code-with-copilot
 title: Exercise - Use Copilot to autocomplete code
 metadata:
   title: Exercise - Use Copilot to autocomplete code
-  description: "Exercise - Use Copilot to autocomplete code"
-  ms.date: 03/19/2024
+  description: Exercise - Use Copilot to autocomplete code
   author: wwlpublish
   ms.author: buzahid
+  ms.date: 03/19/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/4-generate-code-with-copilot.md)]

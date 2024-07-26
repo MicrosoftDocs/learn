@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.fundamentals-of-ai-security
+metadata:
+  ms.author: sayoung
+  author: sarah-yo
+  ms.date: 07/17/2024
+  title: Fundamentals of AI security 
+  description: Fundamental concepts of AI security
+  ms.topic: module
+  ms.service: artificial-intelligence
+title: Fundamentals of AI security
+summary: In this module you learn about fundamental concepts of AI security
+abstract: |
+  After completing this module, you'll be able to:
+  -	Understand and describe the basic concepts of AI security
+  -	Describe the three layers of AI architecture 
+  -	Describe new, AI specific attack techniques
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Fundamental security concepts
+  - Fundamental AI concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- security-engineer
+products:
+- azure
+units:
+- learn.fundamentals-of-ai-security.introduction
+- learn.fundamentals-of-ai-security.basic-concepts-of-ai-security
+- learn.fundamentals-of-ai-security.ai-architecture-layers
+- learn.fundamentals-of-ai-security.ai-jailbreaking
+- learn.fundamentals-of-ai-security.ai-prompt-injection
+- learn.fundamentals-of-ai-security.ai-model-manipulation
+- learn.fundamentals-of-ai-security.data-exfiltration
+- learn.fundamentals-of-ai-security.ai-overreliance
+- learn.fundamentals-of-ai-security.knowledge-check
+- learn.fundamentals-of-ai-security.summary
+badge:
+  uid: learn.fundamentals-of-ai-security-badge

@@ -3,11 +3,13 @@ uid: learn.wwl.create-manage-ai-services.exercise-ai-services
 title: Exercise - Use Azure AI services
 metadata:
   title: Exercise - Use Azure AI services
-  description: "Exercise - Use Azure AI services."
-  ms.date: 09/28/2023
+  description: Exercise - Use Azure AI services.
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/28/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 25
 labId: 152386
 labModal: true

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Polynomial regression
   description: Exercise unit learning about polynomial regression in machine learning
   ms.date: 04/20/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 12
 sandbox: true

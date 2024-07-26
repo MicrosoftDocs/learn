@@ -4,11 +4,13 @@ uid: learn.philanthropies.exploring-artificial-intelligence-in-action
 metadata:
   title: Exploring artificial intelligence in action
   description: This module explores various subsets within artificial intelligence (AI) such as natural language processing (NLP), computer vision, and recommendation systems and discuss the integration of AI-powered tools into a learning environment.
-  ms.date: 01/25/2024
   author: yoosunee
   ms.author: andreapark
-  ms.topic: module-standard-task-based
+  ms.date: 01/25/2024
   ms.service: artificial-intelligence
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Exploring artificial intelligence in action
 summary: This module explores various subsets within artificial intelligence (AI) such as natural language processing (NLP), computer vision, and recommendation systems and discuss the integration of AI-powered tools into a learning environment.
 

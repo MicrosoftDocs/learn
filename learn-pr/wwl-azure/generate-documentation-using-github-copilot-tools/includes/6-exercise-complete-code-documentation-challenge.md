@@ -4,11 +4,11 @@ Code challenges reinforce what you've learned and help you gain some confidence 
 
 You've been asked to review an existing app and then create the project and inline documentation.
 
-Some organizations use an existing or customized standard for their documentation. When organizations select a standard, they often hold developers accountable for following that standard. This challenge is not about crafting documentation that achieves a specific standard. Instead, it's about using GitHub Copilot Chat to help you generate inline and project documentation more efficiently.
+This challenge is not about crafting documentation that achieves a specific standard. Instead, it's about using GitHub Copilot Chat to help you generate inline and project documentation more efficiently.
 
 ### Prepare your coding environment
 
-In this challenge, you use Visual Studio Code and the GitHub Copilot extensions to document a sample project. The sample project that you'll be working with is named **APL2007M2Sample2**. The project is included in the **SampleApps** folder that you downloaded when you completed the "Generate code explanations using GitHub Copilot Chat" unit earlier in this module.
+In this challenge, you use Visual Studio Code and the GitHub Copilot extensions to document a sample project. The sample project you work with is named **APL2007M2Sample2**. The project is included in the **SampleApps** folder that you downloaded when you completed the "Generate code explanations using GitHub Copilot Chat" unit earlier in this module.
 
 1. Open the **APL2007M2Sample2** folder in Visual Studio Code.
 
@@ -21,9 +21,9 @@ In this challenge, you use Visual Studio Code and the GitHub Copilot extensions 
 
     The Visual Studio Code EXPLORER view should display a APL2007M2Sample2 code project containing a media folder and the following files:
 
-    - Program.cs
-    - Sample2.csproj
+    - APL2007M2Sample2.csproj
     - APL2007M2Sample2.sln
+    - Program.cs
 
 You're now ready to complete this challenge.
 

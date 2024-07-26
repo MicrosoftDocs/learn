@@ -31,7 +31,7 @@ Let's add another Azure Cosmos DB input binding.
 
 1. In the **HttpTrigger3** Function menu, select **Integration**. The **Integration** pane appears.
 
-1. In the **Inputs** box, select **Add input**. The **Create Input** pane appears.
+1. In the **Trigger and inputs** box, select **Add input**. The **Create Input** pane appears.
 
 1. In the **Binding Type** dropdown list, select **Azure Cosmos DB**.
 
@@ -56,7 +56,7 @@ Let's add another Azure Cosmos DB input binding.
 
     Like the input binding that we created in the previous exercise, we want to look up a bookmark with a specific ID, so we tied the **Document ID** that our function receives in the query string to the binding, which is known as the *binding expression*. The function trigger is an HTTP request that uses a query string to specify the ID to look up. The binding returns either 0 (not found) or 1 (found) documents.
 
-1. Select **ADD** to save the input binding configuration.
+1. Select **Add** to save the input binding configuration.
 
 We now have an Azure Cosmos DB input binding. Let's add an output binding so we can write new entries to our collection.
 
@@ -77,7 +77,7 @@ We now have an Azure Cosmos DB input binding. Let's add an output binding so we 
     | **Collection Name** | `Bookmarks` | The name of the collection from which data is read. This value is the container name that we defined earlier in the lesson. |
     | **Partition key** | `/id` | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. The key entered here (specified in input binding configuration `<key>`) must match the one in the container. |
 
-1. Select **ADD** to save this output binding configuration.
+1. Select **Add** to save this output binding configuration.
 
 Now we have a binding to read from our collection, and a binding to write to it.
 
@@ -114,7 +114,7 @@ Although we could keep the default values, let's change some settings to lend mo
     | **Message parameter name** | outputQueueItem | newmessage | The binding property we use in code. |
     | **Queue name** | outqueue | bookmarks-post-process | The name of the queue where we're placing bookmarks so that another function can process them further. |
 
-1. Select **ADD** to save your output configuration for Azure Queue Storage.
+1. Select **Add** to save your output configuration for Azure Queue Storage.
 
 ## Update function implementation
 
@@ -124,7 +124,7 @@ We now have all our bindings set up. It's time to use them in our function.
 
 1. To open the **index.js** file in the code editor, select your function, **HttpTrigger3**.
 
-1. In the menu, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
+1. In the menu, select **Code + Test**. The **Code + Test** pane appears for your function.
 
 1. Replace all the code in the *index.js* file with the code from the following snippet, and then in the command bar, select **Save**.
 

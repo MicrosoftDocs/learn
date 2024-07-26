@@ -3,11 +3,13 @@ uid: learn.philanthropies.intro-generative-ai-explore-basics
 metadata:
   title: Introduction to generative AI - Exploring the basics
   description: By understanding the basics of generative AI models, you empower yourself to make responsible decisions when using these models. This knowledge allows you to critically evaluate outputs, assess their reliability, and understand potential limitations leading to more informed and effective interactions with generative AI.
-  ms.date: 02/21/2024
   author: yoosunee
   ms.author: andreapark
-  ms.topic: module
+  ms.date: 02/21/2024
   ms.service: artificial-intelligence
+  ms.topic: module
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Introduction to generative AI - Exploring the basics
 summary: This module serves as a guide to understanding the basics of generative AI including its applications. You will be introduced to Microsoft Copilot and the essential skills needed to use Large Language Models (LLMS) efficiently and responsibly.
 abstract: |

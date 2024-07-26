@@ -88,9 +88,9 @@ Here are the steps to add a Project to a repository:
 
 1. On GitHub, navigate to the main page of your repository.
 1. Click Projects.
-1. Next, click **Add project**.
+1. Next, click **Link a project**.
 
-   :::image type="content" source="../media/5-add-project.png" alt-text="screenshot of the green Add project button to add to a repository.":::
+   :::image type="content" source="../media/5-add-project.png" alt-text="screenshot of the green Link a project button to add to a repository.":::
 
 1. In the search bar that appears, search for Projects that are owned by the same user or organization that owns the repository.
 1. Then, click on a Project to list the Project in your repository.

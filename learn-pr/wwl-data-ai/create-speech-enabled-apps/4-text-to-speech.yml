@@ -3,11 +3,13 @@ uid: learn.wwl.create-speech-enabled-apps.text-to-speech
 title: Use the text to speech API
 metadata:
   title: Use the text to speech API
-  description: "Use the text to speech API"
-  ms.date: 08/31/2023
+  description: Use the text to speech API
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 08/31/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads
+metadata:
+  title: "Implement Azure Database for MySQL Flexible Server features that support mission-critical workloads"
+  description: "Implement Azure Database for MySQL Flexible Server features that support mission-critical workloads"
+  ms.date: 07/08/2024
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
+  ms.topic: module-intro-to-product
+  ms.service: mysql
+  ms.subservice: flexible-server
+title: "Implement Azure Database for MySQL Flexible Server features that support mission-critical workloads"
+summary: |
+  Azure Database for MySQL - Flexible Server provides features for security, business continuity, disaster recovery, and performance to support mission critical workloads. In this module, you’ll configure these features. 
+abstract: |
+   By the end of this module, you should be able to: 
+    - "Configure networking and security features in Azure Database for MySQL - Flexible Server."
+    - "Enable business continuity and disaster recovery options in Azure Database for MySQL - Flexible Server." 
+    - "Choose the right scaling options for your Azure Database for MySQL flexible server."
+prerequisites: |
+  - Experience administering MySQL. 
+  - Experience administering Azure. 
+  - Experience using Azure Database for MySQL. 
+  - An understanding of how these database features support mission-critical workloads. 
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - database-administrator
+  - technology-manager
+products:
+  - azure
+  - azure-database-mysql
+subjects:
+- databases
+units:
+- learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.introduction
+- learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.configure-networking-security-features
+- learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.configure-business-continuity-disaster-recovery
+- learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.determine-azure-database-for-mysql-server-scaling-needs
+- learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.knowledge-check
+- learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.summary
+badge:
+  uid: learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.badge

@@ -3,11 +3,11 @@ uid: learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2
 metadata:
   title: Use MLflow with Azure Machine Learning jobs submitted with CLI (v2)
   description: "Use MLflow with Azure Machine Learning jobs submitted with CLI (v2)"
-  ms.date: 11/22/2022
+  ms.date: 07/10/2024
   author: wwlpublish
   ms.author: madiepev
   ms.topic: module-standard-task-based
-  ms.service: machine-learning 
+  ms.service: azure-machine-learning 
 title: Use MLflow with Azure Machine Learning jobs submitted with CLI (v2)
 summary: Use MLflow to track model metrics and artifacts when training and registering models with the Azure Machine Learning CLI (v2).
 abstract: |

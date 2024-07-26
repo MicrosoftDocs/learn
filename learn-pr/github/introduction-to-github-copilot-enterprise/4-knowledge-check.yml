@@ -3,11 +3,13 @@ uid: learn.github.intro-github-copilot-enterprise.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: This content is a part of the "Introduction to GitHub Copilot Enterprise" module.
-  ms.date: 02/28/2024
+  description: This content is a part of the Introduction to GitHub Copilot Enterprise module.
   author: a-a-ron
   ms.author: aastewar
+  ms.date: 02/28/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 4
 quiz:
   title: Check your knowledge

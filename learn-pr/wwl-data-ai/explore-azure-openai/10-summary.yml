@@ -3,11 +3,13 @@ uid: learn.wwl.explore-azure-openai.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Review a short summary of what was covered in the Introduction to Azure OpenAI module and see where to get additional information from the documentation."
-  ms.date: 2/14/2023
+  description: Review a short summary of what was covered in the Introduction to Azure OpenAI module and see where to get additional information from the documentation.
   author: sherzyang
   ms.author: sheryang
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai

@@ -4,10 +4,12 @@ title: Introduction
 metadata:
   title: Introduction
   description: Learn how to moderate content and detect harm with Azure AI Content Safety.
-  ms.date: 06/24/2024
   author: aprilspeight
   ms.author: apspeigh
+  ms.date: 06/24/2024
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

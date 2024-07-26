@@ -3,11 +3,13 @@ uid: learn.wwl.build-copilot-ai-studio.ground-language-model
 title: Understand how to ground your language model
 metadata:
   title: Understand how to ground your language model
-  description: "Learn about the grounding language models to get factually accurate responses."
-  ms.date: 02/21/2024
+  description: Learn about the grounding language models to get factually accurate responses.
   author: madiepev
   ms.author: madiepev
+  ms.date: 02/21/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/2-ground-language-model.md)]

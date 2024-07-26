@@ -3693,6 +3693,16 @@ achievements:
   title: Extract insights from text with the Azure AI Language service
   summary: The Azure AI Language service enables you to create intelligent apps and services that extract semantic information from text.
   iconUrl: /training/achievements/extract-insights-from-text-with-the-text-analytics-service.svg
+- uid: learn.accelerate-storage-with-hpc-cache.badge
+  type: badge
+  title: Accelerate high-performance computing storage by using Azure HPC Cache
+  summary: Create a virtual caching solution for NFS storage. Client machines connect to the cache, read data, and process the data.
+  iconUrl: /training/achievements/accelerate-storage-with-hpc-cache.svg
+- uid: learn.azure.introduction-azure-hpc-cache.badge
+  type: badge
+  title: Introduction to Azure HPC Cache
+  summary: Describe the caching features and configurations of Azure HPC Cache that improve file access speeds. Characterize the types of HPC workloads that Azure HPC Cache can accelerate.
+  iconUrl: /training/achievements/introduction-azure-hpc-cache.svg
 - uid: learn.wwl.transcribe-speech-input-text.badge
   type: badge
   title: Create speech-enabled apps with Azure AI services
@@ -3738,3 +3748,18 @@ achievements:
   title: Implement Pub/Sub and Streams in Azure Cache for Redis
   summary: Execute Redis pub/sub commands for event-based messaging at scale in Azure Cache for Redis. Use the Redis console to create, append, and query a Redis stream with time-based ranges.
   iconUrl: /training/achievements/azure-redis-publish-subscribe-streams.svg
+- uid: learn.create-iot-device-dotnet.badge
+  type: badge
+  title: Construct Internet of Things devices using the .NET IoT Libraries
+  summary: In this module, you'll learn to read environmental sensors and activate relays using the .NET IoT Libraries.
+  iconUrl: /training/achievements/iot/create-iot-device-dotnet.svg
+- uid: learn.wwl.detect-objects-images-custom-vision.badge
+  type: badge
+  title: Detect objects in images with Azure AI Custom Vision
+  summary: Object detection is a form of computer vision in which artificial intelligence (AI) agents can identify and locate specific types of object in an image or camera feed.
+  iconUrl: /training/achievements/detect-objects-images-custom-vision.svg
+- uid: learn.wwl.explore-cognitive-services-vision.badge
+  type: badge
+  title: Explore Azure AI services for Vision (preview)
+  summary: Azure AI services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities.
+  iconUrl: /training/achievements/explore-cognitive-services-for-vision-preview.svg

@@ -3,10 +3,12 @@ uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.2-extract-feat
 metadata:
   title: Extract features from an image for AI processing
   description: Learn the steps to extract features from images to use the images for AI predictions.
-  ms.date: 05/24/2021
   author: softchris
   ms.author: chnoring
+  ms.date: 05/24/2021
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Extract features from an image for AI processing
 durationInMinutes: 2

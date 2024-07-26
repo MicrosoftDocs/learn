@@ -4,7 +4,7 @@ title: Exercise - Deploy an Azure RTOS real-time sensor application to monitor t
 metadata:
   title: Exercise - Deploy an Azure RTOS real-time sensor application to monitor the room environment
   description: In this section, we will deploy an Azure RTOS real-time sensor application to monitor the room environment
-  ms.date: 11/10/2020
+  ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
