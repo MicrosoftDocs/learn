@@ -2,7 +2,7 @@ You discovered the SAP and Microsoft partnership, explored your options with SAP
 
 ## Learn more
 
-- [SAP HANA hardware directory](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas)
+- [SAP HANA hardware directory](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=v:deCertified;iaas;ve:24)
 - [Azure Marketplace search](https://azuremarketplace.microsoft.com/marketplace/apps/?search=sap)
 - [AZ-120 Certification Areas](https://www.microsoft.com/learning/exam-AZ-120.aspx)
 - [Certification skills outline](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE43XOu)

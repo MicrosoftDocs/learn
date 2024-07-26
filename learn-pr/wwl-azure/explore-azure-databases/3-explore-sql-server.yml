@@ -3,11 +3,13 @@ uid: learn.wwl.explore-azure-databases.explore-sql-server
 title: Explore SQL Server
 metadata:
   title: Explore SQL Server
-  description: "Explore SQL Server"
-  ms.date: 03/19/2024
+  description: "Explore using SQL Server with SAP-certified virtual machine types."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/3-explore-sql-server.md)]

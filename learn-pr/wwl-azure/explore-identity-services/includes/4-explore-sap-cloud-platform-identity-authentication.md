@@ -4,7 +4,7 @@ Currently, SAP Cloud Platform Identity Authentication acts as a Proxy Identity P
 
 The following diagram illustrates this relationship:
 
-:::image type="content" source="../media/overview-of-sap-cloud-platform-identity-authentication-028c559c.png" alt-text="Diagram illustrates the relationship between Microsoft Entra ID and S A P Cloud Identity Authentication.":::
+:::image border="false" type="content" source="../media/overview-of-sap-cloud-platform-identity-authentication-028c559c.png" alt-text="Diagram showing the relationship between Microsoft Entra ID and S A P Cloud Identity Authentication.":::
 
 With this setup, your SAP Cloud Platform Identity Authentication tenant is configured as a trusted application in Microsoft Entra ID. All SAP applications and services that you want to protect this way are then configured in the SAP Cloud Platform Identity Authentication management console. Therefore, the authorization for granting access to SAP applications and services needs to take place in SAP Cloud Platform Identity Authentication (as opposed to Microsoft Entra ID). By configuring SAP Cloud Platform Identity Authentication as an application through the Microsoft Entra Marketplace, you don't need to configure individual claims or SAML assertions.
 
