@@ -3,8 +3,8 @@ uid: learn.wwl.examine-sap-s4hana-azure-virtual-machines.explore
 title: Explore SAP S/4HANA on Azure Virtual Machines
 metadata:
   title: Explore SAP S/4HANA on Azure Virtual Machines
-  description: "Explore SAP S/4HANA on Azure Virtual Machines"
-  ms.date: 03/19/2024
+  description: "Explore the reference architecture for running SAP S/4HANA on Azure Virtual Machines."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
