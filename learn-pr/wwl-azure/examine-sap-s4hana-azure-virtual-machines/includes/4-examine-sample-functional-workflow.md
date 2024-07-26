@@ -1,6 +1,6 @@
 This workflow illustrates how a user request flows through an SAP landscape built using high-performance Azure Virtual Machines and in-memory SAP HANA databases running on Azure Virtual Machines for the maximum scalability and performance. This system takes advantage of Linux OS clustering for high availability, premium storage for performance, data replication for high availability via HANA System Replication (HSR), and a full disaster recovery (DR) configuration for guaranteed 99.95 percent system availability with asynchronous HSR.
 
-:::image type="content" source="../media/sap-netweaver-workflow-example-0cfef8e1.gif" alt-text="Diagram of S A P, S 4 HANA on Azure Virtual Machines sample functional workflow.":::
+:::image border="false" type="content" source="../media/sap-netweaver-workflow-example-0cfef8e1.gif" alt-text="Diagram showing S A P, S 4 HANA on Azure Virtual Machines sample functional workflow.":::
 
 1. In this example, an on-premises SAP user executes a sales order request via SAP’s S/4HANA Fiori interface, custom application interface, or others.
 2. **Azure high-speed express route gateway** is used to connect securely from On-premises network to Azure Virtual Machines and other Azure resources.

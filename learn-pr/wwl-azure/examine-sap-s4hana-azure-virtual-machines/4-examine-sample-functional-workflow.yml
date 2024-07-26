@@ -3,8 +3,8 @@ uid: learn.wwl.examine-sap-s4hana-azure-virtual-machines.examine-sample-function
 title: Examine a sample functional workflow
 metadata:
   title: Examine a sample functional workflow
-  description: "Examine a sample functional workflow"
-  ms.date: 03/19/2024
+  description: "Examine a sample functional workflow for SAP S/4HANA on Azure Virtual Machines."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
