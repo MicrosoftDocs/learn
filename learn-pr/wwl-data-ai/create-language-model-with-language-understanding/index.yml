@@ -2,13 +2,15 @@
 uid: learn.wwl.create-language-model-with-luis
 metadata:
   title: Fundamentals of conversational language understanding
-  description: "Create a language model with Azure AI language."
-  ms.date: 11/01/2023
+  description: Create a language model with Azure AI language.
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: module
+  ms.date: 11/01/2023
   ms.service: azure-ai-language
   ms.subservice: azure-ai-luis
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Fundamentals of conversational language understanding
 summary: In this module, we introduce you to conversational language understanding, and show how to create applications that understand language with Azure AI Language.
 abstract: |

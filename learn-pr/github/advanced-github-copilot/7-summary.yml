@@ -2,16 +2,14 @@
 uid: learn.advanced-github-copilot.summary
 title: Summary
 metadata:
-  title: |
-    summary
-
-
-  description: "Review what you learned."
-  ms.date: 5/10/2024
+  title: Summary
+  description: Review what you learned.
   author: abrilurena
   ms.author: abrilu
+  ms.date: 5/10/2024
   ms.topic: unit
-  ms.custom:
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

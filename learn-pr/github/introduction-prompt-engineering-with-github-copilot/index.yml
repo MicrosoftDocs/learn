@@ -11,6 +11,7 @@ metadata:
   ms.topic: module-intro-to-product
   ms.collection:
     - ce-skilling-ai-copilot
+    - github-ai-copilot
 summary: >
   Discover the essentials of creating effective prompts with GitHub Copilot. Uncover techniques to transform your coding comments into precise, actionable code, enhancing your development workflow. 
 abstract: |
