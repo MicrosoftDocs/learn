@@ -11931,6 +11931,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure-devops/deploy-python/1-introduction.yml",
+      "redirect_url": "/training/paths/build-applications-with-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-python/2-azure-support-python.yml",
+      "redirect_url": "/training/paths/build-applications-with-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-python/3-set-up-environment.yml",
+      "redirect_url": "/training/paths/build-applications-with-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-python/4-deploy-python.yml",
+      "redirect_url": "/training/paths/build-applications-with-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-python/5-clean-up-environment.yml",
+      "redirect_url": "/training/paths/build-applications-with-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-python/6-summary.yml",
+      "redirect_url": "/training/paths/build-applications-with-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-python/1-introduction.yml",
+      "redirect_url": "/training/paths/build-applications-with-azure-devops",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/automate-deployments-azure-devops/index.md",
       "redirect_url": "/training/modules/deploy-nodejs",
       "redirect_document_id": false
