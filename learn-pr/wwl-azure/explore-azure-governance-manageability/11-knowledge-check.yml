@@ -3,11 +3,13 @@ uid: learn.wwl.explore-azure-governance-manageability.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 11/08/2023
+  description: "Check what you learn in this module."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/11-knowledge-check.md)]
@@ -38,12 +40,12 @@ quiz:
       explanation: "Incorrect. A resource group is a logical container that simplifies managing multiple resources. Every resource exists in one, and only one, resource group."
   - content: "Which of the following elements in the Azure Resource Manager template scheme is a required element?"
     choices:
-    - content: "resources"
+    - content: "Resources"
       isCorrect: true
       explanation: "Correct. The required \"resources\" parameter declares the resource types that are deployed or updated in a resource group or subscription."
-    - content: "functions"
+    - content: "Functions"
       isCorrect: false
       explanation: "Incorrect. The \"functions\" element isn't a required element."
-    - content: "parameters"
+    - content: "Parameters"
       isCorrect: false
       explanation: "Incorrect. The \"parameters\" element isn't a required element."
