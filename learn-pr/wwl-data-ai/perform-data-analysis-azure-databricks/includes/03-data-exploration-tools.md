@@ -6,7 +6,7 @@ Let's explore the tools you use when working with data in Azure Databricks.
 
 You can use **notebooks** in Azure Databricks to write Python, SQL, Scala, or R code to explore and visualize data. Notebooks support interactive data exploration and can be shared among team members. It also supports data profiling capabilities for data scientists to understand the shape and content of the data.
 
-:::image type="content" source="../media/azure-databricks-notebooks-language.png" alt-text="Screenshot of available languages in Azure Databricks notebooks." lightbox="media/azure-databricks-notebooks-language.png":::
+:::image type="content" source="../media/azure-databricks-notebooks-language.png" alt-text="Screenshot of available languages in Azure Databricks notebooks." lightbox="../media/azure-databricks-notebooks-language.png":::
 
 You can use the built-in **visualizations** to quickly understand data distributions, trends, and patterns. Next to the built-in features, Azure Databricks allows you to integrate with commonly used open-source libraries like Matplotlib, Seaborn, or D3.js for more complex visualizations.
 
