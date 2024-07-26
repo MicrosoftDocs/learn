@@ -3,11 +3,13 @@ uid: learn.wwl.create-language-model-with-luis.describe-language-understanding
 title: Describe conversational language understanding
 metadata:
   title: Describe conversational language understanding
-  description: "Describe conversational language understanding"
-  ms.date: 11/01/2023
+  description: Describe conversational language understanding
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 11/01/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/2-describe-language-understanding.md)]

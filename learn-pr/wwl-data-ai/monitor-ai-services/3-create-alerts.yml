@@ -3,11 +3,13 @@ uid: learn.monitor-ai-services.create-alerts
 title: Create alerts
 metadata:
   title: Create alerts
-  description: "Learn how to create alerts."
-  ms.date: 09/28/2023
+  description: Learn how to create alerts.
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/28/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/3-create-alerts.md)]

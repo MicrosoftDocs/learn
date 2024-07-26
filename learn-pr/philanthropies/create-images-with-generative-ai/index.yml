@@ -3,11 +3,13 @@ uid: learn.philanthropies.create-images-with-generative-ai
 metadata:
   title: Create images with generative AI
   description: Discover AI-powered image generators. Learn about image creation tools like Microsoft Image Creator. Understand their potential applications in the workplace and training settings and discover best practices for optimal results. Enhance your skills and transform your creative process with AI-powered image generators.
-  ms.date: 02/29/2024
   author: yoosunee
   ms.author: andreapark
-  ms.topic: module
+  ms.date: 02/29/2024
   ms.service: artificial-intelligence
+  ms.topic: module
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Create images with generative AI
 summary: This module introduces you to AI-powered image generators, including their potential applications within the workplace and training sessions and best practices to follow.
 abstract: |

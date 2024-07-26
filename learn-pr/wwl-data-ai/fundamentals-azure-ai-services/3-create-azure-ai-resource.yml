@@ -3,11 +3,13 @@ uid: learn.wwl.fundamentals-azure-ai-services.create-azure-ai-resource
 title: Create Azure AI service resources
 metadata:
   title: Create Azure AI service resources
-  description: "Create Azure AI service resources"
-  ms.date: 12/05/2023
+  description: Create Azure AI service resources
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 12/05/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/3-create-azure-ai-resource.md)]

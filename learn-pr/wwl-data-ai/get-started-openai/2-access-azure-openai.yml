@@ -4,12 +4,13 @@ title: Access Azure OpenAI Service
 metadata:
   title: Access Azure OpenAI Service
   description: This unit explains how to apply for access to Azure OpenAI Service and how to create an Azure OpenAI resource. This unit explains the first steps to working with Azure OpenAI Service.
-  ms.date: 2/27/2023
   author: sherzyang
   ms.author: sheryang
+  ms.date: 07/10/2024
   ms.topic: unit
-  ms.custom:
-    - devx-track-azurecli
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: devx-track-azurecli
 durationInMinutes: 2
 content: |
   [!include[](includes/2-access-azure-openai.md)]

@@ -3,11 +3,13 @@ uid: learn.wwl.build-language-solution-azure-openai.integrate-azure-openai-into-
 title: Integrate Azure OpenAI into your app
 metadata:
   title: Integrate Azure OpenAI into your app
-  description: "Understand considerations for integrating Azure OpenAI into your app. Learn how to decide between endpoints, methods for connecting to the service, and information on prompt engineering."
-  ms.date: 4/5/2023
+  description: Understand considerations for integrating Azure OpenAI into your app. Learn how to decide between endpoints, methods for connecting to the service, and information on prompt engineering.
   author: ivorb
   ms.author: berryivor
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/2-integrate-azure-openai-into-app.md)]

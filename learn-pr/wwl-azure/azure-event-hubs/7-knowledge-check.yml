@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/24/2023
+  ms.date: 07/17/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -27,10 +29,10 @@ quiz:
     choices:
     - content: "Checkpointing"
       isCorrect: true
-      explanation: "Correct. Checkpointing is a process by which an event processor marks or commits the position of the last successfully processed event within a partition."
+      explanation: "Correct. Checkpointing is a process when an event processor marks, or commits, the position of the last successfully processed event within a partition."
     - content: "Scale"
       isCorrect: false
       explanation: "Incorrect. Scale covers the number of consumers and taking ownership of reading partitions."
     - content: "Load balance"
       isCorrect: false
-      explanation: "Incorrect. Increase or reduce the consumers dynamically. The pool of consumers can rebalance the number of partitions they own, to share the load with the newly added consumers."
+      explanation: "Incorrect. Load balance increases or reduces the consumers dynamically."

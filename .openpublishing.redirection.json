@@ -14596,6 +14596,81 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/introduction-azure-hpc-cache/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-azure-hpc-cache/2-what.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-azure-hpc-cache/3-how.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-azure-hpc-cache/4-when.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-azure-hpc-cache/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-azure-hpc-cache/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-azure-hpc-cache/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/3-hpc-cache-prerequisites.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/4-create-cache.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/5-connect-to-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/6-connect-to-cache.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/advocates/responsible-bots/2-responsible-conversational-ui.md",
       "redirect_url": "/training/modules/responsible-bots/2-bot-framework-responsible-principles",
       "redirect_document_id": false
@@ -21683,6 +21758,87 @@
     {
       "source_path": "learn-pr/wwl-data-ai/spark-architecture-fundamentals/3-understand-architecture-of-spark-job.md",
       "redirect_url": "/training/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/connect-azure-database-mysql.yml",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/connect-azure-database-mysql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/include/connect-azure-database-mysql.md",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/connect-azure-database-mysql",
+      "redirect_document_id": false
+    },
+
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/deploy-azure-database-mysql.yml",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/deploy-azure-database-mysql.yml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/include/deploy-azure-database-mysql.md",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/deploy-azure-database-mysql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/how-deploy-connect-azure-database-mysql.yml",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/how-deploy-connect-azure-database-mysql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/include/how-deploy-connect-azure-database-mysql.md",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/how-deploy-connect-azure-database-mysql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/index.yml",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/include/index.md",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/introduction.yml",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/include/introduction.md",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/knowledge-check.yml",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/include/knowledge-check.md",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/summary.yml",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/include/summary.md",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/what-azure-database-mysql.yml",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/what-azure-database-mysql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-database-for-mysql/include/what-azure-database-mysql.md",
+      "redirect_url": "/training/modules/deploy-azure-database-for-mysql/what-azure-database-mysql",
       "redirect_document_id": false
     },
     {
@@ -42363,6 +42519,166 @@
     {
       "source_path": "learn-pr/azure/cloud-adoption-framework-govern/9-summary.yml",
       "redirect_url": "/training/modules/cloud-adoption-framework-govern/9-govern-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/2a-process.md",
+      "redirect_url": "/training/modules/intro-to-azure-search/3-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/2b-ai-skillsets.md",
+      "redirect_url": "/training/modules/intro-to-azure-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/2c-understand-index.md",
+      "redirect_url": "/training/modules/intro-to-azure-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/2d-use-indexer-to-build-index.md",
+      "redirect_url": "/training/modules/intro-to-azure-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/2e-understand-knowledge-store.md",
+      "redirect_url": "/training/modules/intro-to-azure-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/2f-start-with-portal.md",
+      "redirect_url": "/training/modules/intro-to-azure-search/5-start-with-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/6a-exercise.md",
+      "redirect_url": "/training/modules/intro-to-azure-search/7-exercise",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-iot-device-dotnet/1-introduction.yml",
+      "redirect_url": "/dotnet/iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-iot-device-dotnet/2-construct-iot-hardware.yml",
+      "redirect_url": "/dotnet/iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-iot-device-dotnet/3-dotnet-iot-libraries.yml",
+      "redirect_url": "/dotnet/iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-iot-device-dotnet/4-use-dotnet-iot-libraries.yml",
+      "redirect_url": "/dotnet/iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-iot-device-dotnet/5-deploy-app-raspberry-pi.yml",
+      "redirect_url": "/dotnet/iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-iot-device-dotnet/6-test-raspberry-pi.yml",
+      "redirect_url": "/dotnet/iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-iot-device-dotnet/7-summary.yml",
+      "redirect_url": "/dotnet/iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-iot-device-dotnet/index.yml",
+      "redirect_url": "/dotnet/iot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/index.md",
+      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/3-create-object-detection-solution.md",
+      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/2-object-detection-azure.md",
+      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/1-introduction.md",
+      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/3a-knowledge-check.md",
+      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/4-summary.md",
+      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-objects-images-custom-vision/1a-what-is-object-detection.md",
+      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/index.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/3-analyze-images.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/5-exercise-explore-image-analysis.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/7-exercise-train-custom-object-detection-model.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/2-explain-florence-model.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/4-explore-vision-studio.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/1-introduction.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/8-knowledge-check.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/9-summary.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-cognitive-services-vision/6-train-custom-models.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
       "redirect_document_id": false
     }
   ]

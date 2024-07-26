@@ -3,11 +3,13 @@ uid: learn.wwl.analyze-text-ai-language.extract-key-phrases
 title: Extract key phrases
 metadata:
   title: Extract key phrases
-  description: "Extract key phrases"
-  ms.date: 08/31/2023
+  description: Extract key phrases
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 08/31/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

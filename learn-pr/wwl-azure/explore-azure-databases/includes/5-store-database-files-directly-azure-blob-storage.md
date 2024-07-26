@@ -9,4 +9,4 @@ SQL Server 2014 and later releases open the possibility to store database files 
 
 For production systems, the recommendation is to avoid this configuration. Instead, choose the placements of SQL Server data and log files in Azure Premium Storage VHDs instead of directly on Azure blobs.
 
-:::image type="content" source="../media/data-files-directly-azure-blob-storage-f905ce9c.png" alt-text="Diagram of storing database files directly on Azure Blob Storage.":::
+:::image border="false" type="content" source="../media/data-files-directly-azure-blob-storage-f905ce9c.png" alt-text="Diagram showing storing database files directly on Azure Blob Storage.":::

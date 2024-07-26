@@ -3,11 +3,13 @@ uid: learn.wwl.detect-objects-images.consider-options-for-labeling-images
 title: Consider options for labeling images
 metadata:
   title: Consider options for labeling images
-  description: "Consider options for labeling images"
-  ms.date: 07/10/2024
+  description: Consider options for labeling images
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 sandbox: false
 labModal: false

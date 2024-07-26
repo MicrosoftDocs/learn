@@ -3,12 +3,14 @@ uid: learn.student-evangelism.challenge-project-build-speech-translator-app.exer
 title: Exercise - Create data model and canvas app
 metadata:
   title: Exercise - Create data model and canvas app
-  description: "Exercise - Create data model and canvas app."
-  ms.date: 12/13/2023
+  description: Exercise - Create data model and canvas app.
   author: theoyinbooke
   ms.author: somelezediko
-  ms.custom: team=nextgen
+  ms.date: 12/13/2023
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
 durationInMinutes: 45
 content: |
   [!include[](includes/3-exercise-create-data-model-and-canvas-app.md)]

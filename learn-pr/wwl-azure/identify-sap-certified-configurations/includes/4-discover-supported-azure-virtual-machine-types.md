@@ -68,7 +68,7 @@ For A- and D- series virtual machines, SAP database files can be stored on Stand
 | D(d)sv5-series | Standard\_D8(d)s\_v5 | 8 vCPU, 32 GiB | 13,621 |
 | D(d)sv5-series | Standard\_D16(d)s\_v5 | 16 vCPU, 64 GiB | 27,242 |
 | D(d)sv5-series | Standard\_D32(d)s\_v5 | 32 vCPU, 128 GiB | 54,483 |
-| D(d)sv5-series | Standard\_D48(d)s\_v5 | 48 vCPU, 196 GiB | 81,725 |
+| D(d)sv5-series | Standard\_D48(d)s\_v5 | 48 vCPU, 192 GiB | 81,725 |
 | D(d)sv5-series | Standard\_D64(d)s\_v5 | 64 vCPU, 256 GiB | 108,967 |
 | D(d)sv5-series | Standard\_D96(d)s\_v5 | 96 vCPU, 384 GiB | 163,450 |
 | Da(d)sv5-series | Standard_D2a(d)_s_v5 | 2 vCPU, 8 GiB | 3,070 |
@@ -76,7 +76,7 @@ For A- and D- series virtual machines, SAP database files can be stored on Stand
 | Da(d)sv5-series | Standard_D8a(d)_s_v5 | 8 vCPU, 32 GiB | 12,281 |
 | Da(d)sv5-series | Standard_D16a(d)_s_v5 | 16 vCPU, 64 GiB | 25,562 |
 | Da(d)sv5-series | Standard_D32a(d)_s_v5 | 32 vCPU, 128 GiB | 49,123 |
-| Da(d)sv5-series | Standard_D48a(d)_s_v5 | 48 vCPU, 196 GiB | 73,685 |
+| Da(d)sv5-series | Standard_D48a(d)_s_v5 | 48 vCPU, 192 GiB | 73,685 |
 | Da(d)sv5-series | Standard_D64a(d)_s_v5 | 64 vCPU, 256 GiB | 98,247 |
 | Da(d)sv5-series | Standard_D96a(d)_s_v5 | 96 vCPU, 384 GiB | 147,370 |
 | Edsv4-series | Standard\_E2ds\_v4 | 2 vCPU, 16 GiB | 3,142 |
@@ -125,6 +125,7 @@ For A- and D- series virtual machines, SAP database files can be stored on Stand
 | Mv2-series | Standard\_M416s\_v2 | 416 vCPU, 5.7 TiB | 488,230 |
 | Mv2-series | Standard\_M416s\_8\_v2 | 416 vCPU, 7.6 TiB | 488,230 |
 | Mv2-series | Standard\_M416ms\_v2 | 416 vCPU, 11.4 TiB | 488,230 |
+| Mv2-series | Standard\_M832ixs | 832 vCPU, 15200 GiB | 793,900 |
 | Msv2-series | Standard\_M32ms\_v2 | 32 vCPU, 875 GiB | 42,711 |
 | Msv2-series | Standard\_M64s\_v2 | 64 vCPU, 1024 GiB | 85,432 |
 | Msv2-series | Standard\_M64ms\_v2 | 64 vCPU, 1792 GiB | 85,432 |
@@ -164,3 +165,4 @@ For A- and D- series virtual machines, SAP database files can be stored on Stand
 - **Msv2-series**, **Msv3-series**, **Mdsv3-series**: Base VHD minimum size supported is 128 GB.
 - **Msv3-series**, **Mdsv3-series**: CPU hyperthreading enabled on the hypervisor layer. Supported OS versions: Windows Server 2019 and 2022; SLES 15 SP4 and higher; Red Hat Enterprise Linux 7.9, 8.6, 8.8, 9.2 and higher; Oracle Linux 7.9, 8.6, 8.7, 9.0, 9.1 and higher.
 - SAP performance is measured by relying on the SAP Application Performance Standard metric (SAPS). SAPS is a hardware-independent unit of measurement that describes the performance of a system configuration in the SAP environment. It's derived from the Sales and Distribution benchmark, where 100 SAPS is defined as 2,000 fully business processed order line items per hour. In the Sales and Distribution Benchmark, fully business-processed means the full business process of an order line item, which includes creating the order, creating a delivery note for the order, displaying the order, changing the delivery, posting a goods issue, listing orders, and creating an invoice. Another way to look at the performance rating is to consider that one SAPS is equal to 24 Sales and Distribution transactions per hour. In general SAPS are used to size CPU and memory of an SAP system.
+

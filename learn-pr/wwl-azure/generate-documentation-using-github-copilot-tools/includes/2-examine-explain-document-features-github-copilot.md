@@ -1,4 +1,4 @@
-GitHub Copilot Chat can be used at various points in the development process to help developers generate documentation. In addition, when a developer is working with unfamiliar or poorly documented code, GitHub Copilot Chat can explain selected code blocks or files. Explanations are also useful for nontechnical stakeholders who need to understand how the code works.
+GitHub Copilot Chat makes it easier for developers to work with a complex or unfamiliar codebase. Developers use GitHub Copilot Chat throughout the development process to understand and document code.
 
 ## Access GitHub Copilot Chat in Visual Studio Code
 
@@ -23,7 +23,7 @@ GitHub Copilot Chat performs better when you use an appropriate combination of c
 
 ## Generate explanations using GitHub Copilot Chat
 
-Explanations are useful when you encounter complex or unfamiliar code and need to understand how it works. Developers often encounter complex algorithms, regular expressions, or other code that's difficult to understand at first glance. GitHub Copilot Chat can generate explanations of selected code blocks, files, or the entire workspace. Explanations help developers understand the purpose and behavior of the code, making it easier to work with and maintain.
+Explanations are useful when you encounter complex or unfamiliar code and need to understand how it works. Developers often encounter complex algorithms, regular expressions, or other code that's difficult to understand at first glance. GitHub Copilot Chat can generate explanations of selected code blocks, files, or the entire workspace. Explanations help developers understand the purpose and behavior of the code, making it easier to work with and maintain. Explanations are also useful for nontechnical stakeholders who need to understand how the code works.
 
 GitHub Copilot Chat helps explain selected code by generating natural language descriptions of the code's functionality and purpose. For example, if you select the method of a class you need to implement, GitHub Copilot Chat can generate an explanation that uses natural language text and code snippets to describe what the method does and how to implement it. The explanation can include the method's input parameters and return values, its dependencies, and the purpose it serves in the larger application.
 

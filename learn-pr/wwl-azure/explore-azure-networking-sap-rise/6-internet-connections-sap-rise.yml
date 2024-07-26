@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-networking-sap-rise.internet-connections-sap-rise
+title: 'Connect SAP RISE with the internet '
+metadata:
+  title: Connect SAP RISE with the internet
+  description: "Learn to connect your SAP RISE instance to the internet."
+  ms.date: 07/26/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-internet-connections-sap-rise.md)]

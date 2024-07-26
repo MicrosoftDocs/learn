@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.fundamentals-of-ai-security.ai-architecture-layers
+title: AI architecture layers
+metadata:
+  title: AI architecture layers
+  description: AI architecture layer information
+  ms.date: 07/17/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-ai-architecture-layers.md)]

@@ -3,11 +3,13 @@ uid: learn.wwl.create-question-answer-solution-ai-language.consume-client-interf
 title: Use a knowledge base
 metadata:
   title: Use a knowledge base
-  description: "Use a knowledge base"
-  ms.date: 08/31/2023
+  description: Use a knowledge base
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 08/31/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/7-consume-client-interfaces.md)]

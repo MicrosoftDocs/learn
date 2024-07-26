@@ -1,6 +1,6 @@
 ## Lab scenario
 
-Your organization has decided to use Azure Backup and Recovery Services. As the Azure Administrator you need to:
+Your organization decided to use Azure Backup and Recovery Services. As the Azure Administrator you need to:
 + Determine how to back up and restore files hosted on Azure virtual machines and on-premises computers. 
 + Identify methods for protecting data stored in the Recovery Services vault.
 

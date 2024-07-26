@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.research.introduction-to-project-farmvibes-ai.what-farmvibes-ai
+title: What is Project FarmVibes.AI?
+metadata:
+  title: What is Project FarmVibes.AI?
+  description: A unit in the Intro to project FarmVibes.AI module. 
+  ms.date: 7/16/2024
+  author: RiyazPishori
+  ms.author: riyazp
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-farmvibes-ai.md)]

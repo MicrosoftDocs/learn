@@ -15,13 +15,13 @@ To generate inline documentation for the properties and methods of the Device cl
 
     Position the cursor on the code line after the class declaration.
 
-1. Right-click, select **Copilot**, and then select **Generate Docs**.
+1. Right-click the selected code, select **Copilot**, and then select **Generate Docs**.
 
-    Wait for the documentation to be generated. It took about 10 seconds to generate the documentation.
+    Wait for the documentation to be generated. It may take about 10 seconds to generate the documentation.
 
 1. Review the suggested changes.
 
-    No issues were found in the generated documentation.
+    Correct any issues that you find in the generated documentation.
 
 1. Select **Accept**.
 

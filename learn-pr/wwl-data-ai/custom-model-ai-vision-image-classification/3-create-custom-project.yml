@@ -3,11 +3,13 @@ uid: learn.wwl.custom-model-ai-vision-image-classification.create-custom-project
 title: Create a custom project
 metadata:
   title: Create a custom project
-  description: "Create a custom project in Azure AI Vision."
-  ms.date: 01/29/2024
+  description: Create a custom project in Azure AI Vision.
   author: ivorb
   ms.author: berryivor
+  ms.date: 01/29/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/3-create-custom-project.md)]

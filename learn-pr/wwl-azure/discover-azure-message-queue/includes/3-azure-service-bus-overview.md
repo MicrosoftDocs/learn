@@ -1,8 +1,4 @@
-
-
-
-
-Microsoft Azure Service Bus is a fully managed enterprise integration message broker. Service Bus can decouple applications and services. Data is transferred between different applications and services using **messages**. A message is a container decorated with metadata, and contains data. The data can be any kind of information, including structured data encoded with the common formats such as the following ones: JSON, XML, Apache Avro, Plain Text.
+Azure Service Bus is a fully managed enterprise message broker with message queues and publish-subscribe topics. Service Bus is used to decouple applications and services. Data is transferred between different applications and services using **messages**. A message is a container decorated with metadata, and contains data. The data can be any kind of information, including structured data encoded with the common formats such as the following ones: JSON, XML, Apache Avro, and Plain Text.
 
 Some common messaging scenarios are:
 
@@ -13,9 +9,9 @@ Some common messaging scenarios are:
 
 ##  Service Bus tiers
 
-Service Bus offers a standard and premium tier. The *premium* tier of Service Bus Messaging addresses common customer requests around scale, performance, and availability for mission-critical applications. The premium tier is recommended for production scenarios. Although the feature sets are nearly identical, these two tiers of Service Bus Messaging are designed to serve different use cases.
+Service Bus offers basic, standard, and premium tiers. The *premium* tier of Service Bus Messaging addresses common customer requests around scale, performance, and availability for mission-critical applications. The premium tier is recommended for production scenarios. Although the feature sets are nearly identical, these two tiers of Service Bus Messaging are designed to serve different use cases. For more information on the available tiers, visit [Service Bus pricing](https://azure.microsoft.com/pricing/details/service-bus/). 
 
-Some high-level differences are highlighted in the following table.
+Some high-level differences between the premium and standard tiers are highlighted in the following table.
 
 | Premium | Standard |
 |--|--|
@@ -36,8 +32,7 @@ Service Bus includes advanced features that enable you to solve more complex mes
 | Autoforwarding | The autoforwarding feature chains a queue or subscription to another queue or topic that is in the same namespace. |
 | Dead-letter queue | Service Bus supports a dead-letter queue (DLQ). A DLQ holds messages that can't be delivered to any receiver. Service Bus lets you remove messages from the DLQ and inspect them. |
 | Scheduled delivery | You can submit messages to a queue or topic for delayed processing. You can schedule a job to become available for processing by a system at a certain time. |
-| Message deferral | A queue or subscription client can defer retrieval of a message until a later time. The message remains in the queue or subscription, but it's set aside. |
-| Batching | Client-side batching enables a queue or topic client to delay sending a message for a certain period of time. |
+| Message deferral | A queue or subscription client can defer retrieval of a message until a later time. The message remains in the queue or subscription, but is set aside. |
 | Transactions | A transaction groups two or more operations together into an *execution scope*. Service Bus supports grouping operations against a single messaging entity within the scope of a single transaction. A message entity can be a queue, topic, or subscription. |
 | Filtering and actions | Subscribers can define which messages they want to receive from a topic. These messages are specified in the form of one or more named subscription rules. |
 | Autodelete on idle | Autodelete on idle enables you to specify an idle interval after which a queue is automatically deleted. The minimum duration is 5 minutes. |

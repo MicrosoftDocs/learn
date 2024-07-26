@@ -3,11 +3,13 @@ uid: learn.github.introduction-to-github-copilot-for-business.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: This content is part of the "Introduction to GitHub Copilot for Business" module.
-  ms.date: 09/13/2023
+  description: This content is part of the Introduction to GitHub Copilot for Business module.
   author: a-a-ron
   ms.author: aastewar
+  ms.date: 09/13/2023
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
@@ -16,7 +18,7 @@ quiz:
       choices:
         - content: "VPN Proxy support via self-signed certificates"
           isCorrect: true
-          explanation: VPN Proxy support via self-signed certificates is not available with GitHub Copilot for Individuals, but is available with GitHub Copilot for Business.
+          explanation: VPN Proxy support via self-signed certificates isn't available with GitHub Copilot for Individuals, but is available with GitHub Copilot for Business.
         - content: "Offers multi-line function suggestions"
           isCorrect: false
           explanation: Offers multi-line function suggestions is a supported functionality both in GitHub Copilot for Individuals and GitHub Copilot for Business.
@@ -26,20 +28,20 @@ quiz:
         - content: "Blocks suggestions matching public code"
           isCorrect: false
           explanation: Blocks suggestions matching public code is a supported functionality both in GitHub Copilot for Individuals and GitHub Copilot for Business.
-    - content: "What percentage of developers have said that GitHub Copilot makes them code faster?"
+    - content: "What percentage of developers said that GitHub Copilot helps them code faster?"
       choices:
         - content: "70%"
           isCorrect: false
-          explanation: The percentage of developers that have said GitHub Copilot is higher than 70%.
+          explanation: The percentage of developers that said GitHub Copilot helps them code faster is higher than 70%.
         - content: "83%"
           isCorrect: false
-          explanation: The percentage of developers that have said GitHub Copilot is higher than 83%.
+          explanation: The percentage of developers that said GitHub Copilot helps them code faster is higher than 83%.
         - content: "65%"
           isCorrect: false
-          explanation: The percentage of developers that have said GitHub Copilot is higher than 65%.
+          explanation: The percentage of developers that said GitHub Copilot helps them code faster is higher than 65%.
         - content: "90%"
           isCorrect: true
-          explanation: 90% is the correct percentage of developers that have said GitHub Copilot helps them code faster.
+          explanation: Ninety percent (90%) is the correct percentage of developers that said GitHub Copilot helps them code faster.
     - content: "After you enforced your GitHub Copilot for Business policy, where do you first navigate to in order to enable Copilot for Business for all current and future users?"
       choices:
         - content: "Policies"

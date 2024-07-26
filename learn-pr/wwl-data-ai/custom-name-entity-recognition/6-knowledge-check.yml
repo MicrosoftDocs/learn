@@ -3,11 +3,13 @@ uid: learn.wwl.custom-name-entity-recognition.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 2/21/2024
+  description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 2/21/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 2
 quiz:
   title: "Check your knowledge"

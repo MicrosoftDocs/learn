@@ -3,13 +3,13 @@ uid: learn.wwl.get-started-github-copilot.examine-github-copilot-benefits
 title: Examine GitHub Copilot tools, benefits, and limitations
 metadata:
   title: Examine GitHub Copilot tools, benefits, and limitations
-  description: "Examine GitHub Copilot tools, benefits, and limitations"
-  ms.date: 06/13/2024
+  description: Examine GitHub Copilot tools, benefits, and limitations
   author: wwlpublish
   ms.author: cahowd
+  ms.date: 07/24/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/3-examine-github-copilot-benefits.md)]
