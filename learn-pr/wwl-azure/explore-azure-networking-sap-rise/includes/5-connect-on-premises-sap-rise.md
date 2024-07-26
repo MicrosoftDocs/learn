@@ -4,7 +4,7 @@ In an existing Azure deployment, the on-premises network is typically connected 
 
 With an existing customer Azure deployment, the on-premises network is already connected through ExpressRoute (ER) or VPN. The same on-premises network path is typically used for SAP RISE/ECS managed workloads. The preferred architecture is to use existing ER/VPN Gateways in the customer’s network for this purpose, with the connected SAP RISE virtual network seen as a spoke network connected to the customer’s virtual network hub.
 
-:::image type="complex" source="../media/sap-rise-on-premises.png" alt-text="Example diagram of S A P RISE / E C S as spoke network peered to customer's virtual network hub and on-premises.":::
+:::image type="complex" source="../media/sap-rise-on-premises.png" alt-text="Diagram of S A P RISE / E C S as spoke network peered to customer's virtual network hub and on-premises.":::
    This diagram shows a typical S A P customer's hub and spoke virtual networks. Connects to on-premises with a connection. Cross tenant virtual network peering connects S A P RISE virtual network to customer's hub network. The virtual network peering has remote gateway transit enabled, enabling S A P RISE virtual network to be accessed from on-premises.
 :::image-end:::
 
