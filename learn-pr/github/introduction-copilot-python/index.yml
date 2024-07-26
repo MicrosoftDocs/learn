@@ -10,6 +10,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.collection:
     - ce-skilling-ai-copilot
+    - github-ai-copilot
 title: Using GitHub Copilot with Python
 summary: "GitHub Copilot is an AI pair programmer that offers autocomplete-style suggestions as you code in Python."
 abstract: |

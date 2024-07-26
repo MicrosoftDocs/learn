@@ -5,8 +5,8 @@ metadata:
   title: Improve models with hyperparameters
   description: Improve regression models with hyperparameters
   ms.date: 08/08/2023
-  author: s-polly
-  ms.author: scottpolly
+  author: madiepev
+  ms.author: madiepev
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5

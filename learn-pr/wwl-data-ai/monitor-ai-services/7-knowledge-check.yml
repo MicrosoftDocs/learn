@@ -3,11 +3,13 @@ uid: learn.monitor-ai-services.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your knowledge."
-  ms.date: 09/28/2023
+  description: Check your knowledge.
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/28/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
   questions:

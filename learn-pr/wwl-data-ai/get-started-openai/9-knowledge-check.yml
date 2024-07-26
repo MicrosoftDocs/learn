@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This unit contains a knowledge check which can help learners reinforce their understanding of the material.
-  ms.date: 07/10/2024
   author: sherzyang
   ms.author: sheryang
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
 quiz:

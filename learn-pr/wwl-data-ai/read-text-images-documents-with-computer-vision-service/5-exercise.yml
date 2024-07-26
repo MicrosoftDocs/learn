@@ -3,11 +3,13 @@ uid: learn.wwl.read-text-images-documents-with-computer-vision-service.exercise
 title: Exercise - Read text in images
 metadata:
   title: Exercise - Read text in images
-  description: "Exercise - Read text in images"
-  ms.date: 02/05/2024
+  description: Exercise - Read text in images
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 02/05/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labId: 152408
 labModal: true

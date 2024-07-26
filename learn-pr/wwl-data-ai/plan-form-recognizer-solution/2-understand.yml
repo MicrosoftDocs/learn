@@ -3,11 +3,13 @@ uid: learn.wwl.plan-form-recognizer-solution.understand
 title: Understand AI Document Intelligence
 metadata:
   title: Understand AI Document Intelligence
-  description: "Understand AI Document Intelligence"
-  ms.date: 10/18/2023
+  description: Understand AI Document Intelligence
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 10/18/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 10
