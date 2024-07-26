@@ -4,9 +4,9 @@ If your organization has several subscriptions, you might need a way to efficien
 - Targeting of policies and budgets across subscriptions and inheritance down the hierarchies.
 - Compliance and cost reporting by organization (business/teams).
 
-:::image type="content" source="../media/management-groups-hierarchy-5e484a98.png" alt-text="Diagram showing how Azure management groups are used to organize subscriptions in a hierarchy of unified policy and access management.":::
+:::image border="false" type="content" source="../media/management-groups-hierarchy-5e484a98.png" alt-text="Diagram showing how Azure management groups are used to organize subscriptions in a hierarchy of unified policy and access management.":::
 
-All subscriptions within a management group automatically inherit the conditions applied to the management group. For example, you can apply policies to a management group that limits the regions available for virtual machine (VM) creation. This policy would be applied to all management groups, subscriptions, and resources under that management group by only allowing VMs to be created in that region.
+All subscriptions within a management group automatically inherit the conditions applied to the management group. For example, you can apply policies to a management group that limits the regions available for virtual machine creation. This policy would be applied to all management groups, subscriptions, and resources under that management group by only allowing virtual machines to be created in that region.
 
 > [!NOTE]
 > Management groups is a relatively new concept in Azure. For more information, see [Organize your resources with Azure management groups](/azure/azure-resource-manager/management-groups-overview).
