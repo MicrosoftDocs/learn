@@ -3,12 +3,13 @@ uid: 'learn.wwl.explore-azure-databases.implement-linux-clustering '
 title: Lab - Implement Linux clustering for SAP on Azure Virtual Machines
 metadata:
   title: Lab - Implement Linux clustering for SAP on Azure Virtual Machines
-  description: "Lab - Implement Linux clustering for SAP on Azure Virtual Machines"
-  ms.date: 03/19/2024
+  description: "Implement Linux clustering for SAP on Azure Virtual Machines."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-  ms.custom: linux-related-content
+  ms.custom:
+  - N/A
 durationInMinutes: 90
 content: |
   [!include[](includes/11-implement-linux-clustering-for-sap-on-azure-virtual-machines.md)]

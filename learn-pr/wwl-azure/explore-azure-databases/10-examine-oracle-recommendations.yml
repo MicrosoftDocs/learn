@@ -3,11 +3,13 @@ uid: learn.wwl.explore-azure-databases.examine-oracle-recommendations
 title: Examine Oracle recommendations
 metadata:
   title: Examine Oracle recommendations
-  description: "Examine Oracle recommendations"
-  ms.date: 03/19/2024
+  description: "Examine Oracle recommendations."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/10-examine-oracle-recommendations.md)]

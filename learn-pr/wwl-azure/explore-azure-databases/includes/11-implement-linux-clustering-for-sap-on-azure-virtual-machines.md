@@ -30,3 +30,4 @@ During this lab ([full instructions on GitHub](https://go.microsoft.com/fwlink/?
 - Exercise 2: Configure operating system of Azure Virtual Machines running Linux to support a highly available SAP HANA installation
 - Exercise 3: Provision Azure network resources necessary to support highly available SAP HANA deployments
 - Exercise 4: Remove lab resources
+

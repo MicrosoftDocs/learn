@@ -3,11 +3,13 @@ uid: learn.wwl.explore-azure-databases.consider-database-compression
 title: Consider database compression
 metadata:
   title: Consider database compression
-  description: "Consider database compression"
-  ms.date: 03/19/2024
+  description: "Consider applying database compression before uploading an existing SAP database to Azure."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-consider-database-compression.md)]
