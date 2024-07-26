@@ -19,9 +19,8 @@ Applications within a customer's own virtual network connect to the Internet dir
 
 Any Azure service with access to the customer virtual network can communicate with the SAP landscape running within the SAP RISE/ECS subscription via the available ports.
 
-:::image type="content" source="../media/sap-rise-open-ports.png" alt-text="Diagram of open ports on an S A P RISE / E C S system.":::
-  R F C connections for BAPI and IDoc, https for OData and Rest/SOAP. O D B C / J D B C for direct database connections to S A P HANA. All connections through the private virtual network peering. Application Gateway with public I P for https as a potential option, managed through S A P.
-:::image-end:::
+:::image type="content" source="../media/sap-rise-open-ports.png" alt-text="Diagram of open ports on an S A P RISE / E C S system. R F C connections for BAPI and IDoc, https for OData and Rest/SOAP. O D B C / J D B C for direct database connections to S A P HANA. All connections through the private virtual network peering. Application Gateway with public I P for https as a potential option, managed through S A P.":::
+
 Your SAP system in SAP RISE can be accessed through the open network ports, as configured and opened by SAP for your use. https, RFC and JDBC/ODBC protocols can be used through private network address ranges. Additionally, applications can access through https on a publicly available IP, exposed by SAP RISE managed Azure application gateway. For details and settings for the application gateway and NSG open ports, contact SAP.
 
 See [Integrating Azure services with SAP RISE](/azure/sap/workloads/rise-integration-services) for more information about how the available connectivity allows you to extend your SAP landscape with Azure services.
