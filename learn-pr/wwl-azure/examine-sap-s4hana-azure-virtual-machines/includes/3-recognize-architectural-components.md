@@ -59,7 +59,7 @@ On the other hand, the Azure Application Gateway offers advanced threat detectio
 
 The Fiori Front-end Server uses a NetWeaver Gateway (which facilitates exposing SAP application data as an OData service). For small deployments, the gateway can be loaded on the Fiori server. For large deployments, a separate server for the NetWeaver Gateway might be deployed in front of the Fiori Front-end Server pool.
 
-:::image type="content" source="../media/reference-architecture-fiori-c4084b0b.png" alt-text="Diagram of reference architecture for S A P Fiori.":::
+:::image border="false" type="content" source="../media/reference-architecture-fiori-c4084b0b.png" alt-text="Diagram showing reference architecture for S A P Fiori.":::
 
 ## SAP Central Services cluster
 
