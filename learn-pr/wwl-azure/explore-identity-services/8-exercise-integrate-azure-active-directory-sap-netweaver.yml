@@ -3,11 +3,13 @@ uid: learn.wwl.explore-identity-services.integrate-azure-active-directory-sap-ne
 title: Integrate Microsoft Entra ID with SAP NetWeaver
 metadata:
   title: Integrate Microsoft Entra ID with SAP NetWeaver
-  description: "Integrate Microsoft Entra ID with SAP NetWeaver"
-  ms.date: 03/05/2024
+  description: "Explore the benefits provided by integrating Microsoft Entra ID with SAP NetWeaver."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 13
 content: |
   [!include[](includes/8-exercise-integrate-azure-active-directory-sap-netweaver.md)]
