@@ -51,10 +51,10 @@ quiz:
       explanation: "Incorrect. Azure Firewall isn't the service which enables users to define, manage, and monitor the global routing for their web traffic."
   - content: "Which of the following methods allows users to establish direct connectivity to an Azure virtual network from a physical computer or virtual machine not hosted in Azure?"
     choices:
-    - content: "virtual network peering"
+    - content: "Virtual network peering"
       isCorrect: false
       explanation: "Incorrect. Virtual network peering is a method for establishing direct connectivity to another Azure virtual network."
-    - content: "virtual network-to-virtual network"
+    - content: "Virtual network-to-Virtual network"
       isCorrect: false
       explanation: "Incorrect. Virtual network-to-virtual network is a method for establishing direct connectivity to another Azure virtual network."
     - content: "Azure ExpressRoute"

@@ -12,4 +12,4 @@ The key to unlocking the advantages of VDC is a centralized hub and spoke networ
 - Azure Front Door
 - Azure Virtual WAN
 
-For more information, see [The virtual datacenter: A network perspective](/azure/architecture/vdc/networking-virtual-datacenter) and .
+For more information, see [The virtual datacenter: A network perspective](/azure/architecture/vdc/networking-virtual-datacenter).
