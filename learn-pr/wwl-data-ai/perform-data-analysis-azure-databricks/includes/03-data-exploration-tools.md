@@ -41,7 +41,7 @@ sql_df = spark.sql("SELECT Name, Age FROM people WHERE Age > 30")
 ```
 
 > [!Tip]
-> For more information, learn how to [load and transform data using Apache Spark DataFrames](https://learn.microsoft.com/azure/databricks/getting-started/dataframes?azure-portal=true).
+> For more information, learn how to [load and transform data using Apache Spark DataFrames](/azure/databricks/getting-started/dataframes?azure-portal=true).
 
 ## Explore data using libraries and APIs
 
@@ -60,7 +60,7 @@ You can train machine learning models to help you explore and process your data.
 Besides built-in chart options, Azure Databricks integrates with external visualization tools like Tableau or Power BI through **data visualization APIs** for enhanced dashboarding capabilities.
 
 > [!Tip]
-> Learn more on how to work with [libraries](https://learn.microsoft.com/azure/databricks/libraries/?azure-portal=true).
+> Learn more on how to work with [libraries](/azure/databricks/libraries/?azure-portal=true).
 
 ## Manage your compute clusters
 
@@ -74,6 +74,6 @@ There are two benefits to managing your compute clusters in Azure Databricks:
 - **Managed clusters:** You can simplify your cluster management as Azure Databricks manages the configuration, setup, and maintenance.
 
 > [!Tip]
-> Learn more about how to [manage compute](https://learn.microsoft.com/azure/databricks/compute/clusters-manage?azure-portal=true)
+> Learn more about how to [manage compute](/azure/databricks/compute/clusters-manage?azure-portal=true)
 
 These tools make Azure Databricks a flexible platform for data exploration, handling everything from basic data cleaning to advanced machine learning projects.
