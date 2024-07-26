@@ -3763,3 +3763,23 @@ achievements:
   title: Explore Azure AI services for Vision (preview)
   summary: Azure AI services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities.
   iconUrl: /training/achievements/explore-cognitive-services-for-vision-preview.svg
+- uid: learn-sqlserver.assess-convert-sql-server-databases-using-dma.badge
+  type: badge
+  title: Assess and convert SQL Server databases using the Data Migration Assistant (DMA)
+  summary: The Data Migration Assistant (DMA) is a standalone application that can find compatibility issues between versions of databases. It also shows you new features that would enhance the performance of your database when upgraded.
+  iconUrl: /training/achievements/sqlserver/assess-and-convert-sql-server-databases-using-dma-social.png
+- uid: learn-sqlserver.introduction-upgrading-sql-server.badge
+  type: badge
+  title: Introduction to upgrading SQL Server
+  summary: Microsoft Assessment and Planning (MAP) tool, Data Migration Assistant (DMA), and Database Experimentation Assistant (DEA) combine to provide full-cover assistance for start to finish SQL Server database upgrades. You can install all three tools on your local machine and connect them to the SQL Servers within your business landscape to discover old databases requiring upgrade, identify compatibility issues before you begin, upgrade a database to a target version, and then verify the performance of business-critical queries. This module shows you how to begin documenting your landscape, plan the most appropriate upgrade path, and test your migrated databases.
+  iconUrl: /training/achievements/sqlserver/introduction-to-upgrading-sql-server-social.png
+- uid: learn-sqlserver.sql-server-discovery-using-map.badge
+  type: badge
+  title: SQL Server Discovery using the Microsoft Assessment and Planning (MAP) toolkit
+  summary: Microsoft Assessment and Planning toolkit is a standalone application that automates the inventory of the Microsoft Platform. You can discover information about your Windows deployments, Microsoft 365 installations, and SQL Server instances. This module shows you how to install MAP on your client machine, and then use it to discover SQL Server instances within your corporate environment.
+  iconUrl: /training/achievements/sqlserver/sql-server-discovery-using-map-social.png
+- uid: learn-sqlserver.test-optimize-sql-server-databases-using-dea.badge
+  type: badge
+  title: Test and optimize SQL Server databases using the Database Experimentation Assistant (DEA)
+  summary: The Database Experimentation Assistant (DEA) is a standalone application that can compare workloads between the current version of your database, and the target.
+  iconUrl: /training/achievements/sqlserver/test-and-optimize-sql-server-databases-using-dea-social.png
