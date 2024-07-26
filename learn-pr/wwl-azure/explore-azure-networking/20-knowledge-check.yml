@@ -3,11 +3,13 @@ uid: learn.wwl.explore-azure-networking.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 10/17/2023
+  description: "Check what you learn in this module."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/20-knowledge-check.md)]
@@ -18,65 +20,65 @@ quiz:
     choices:
     - content: "Basic"
       isCorrect: true
-      explanation: "That’s correct. Standard SKU public IP addresses support  both dynamic and static allocation methods."
+      explanation: "Correct. Standard SKU public IP addresses support  both dynamic and static allocation methods."
     - content: "Standard"
       isCorrect: false
-      explanation: "That’s incorrect. Standard SKU public IP addresses support only the static allocation method."
+      explanation: "Incorrect. Standard SKU public IP addresses support only the static allocation method."
     - content: "Both Basic and Standard"
       isCorrect: false
-      explanation: "That’s incorrect. Standard SKU public IP addresses support only the static allocation method."
+      explanation: "Incorrect. Standard SKU public IP addresses support only the static allocation method."
   - content: "What is the maximum backend pool size of the Standard SKU of Azure load balancer?"
     choices:
     - content: "300 instances"
       isCorrect: false
-      explanation: "That’s incorrect. Basic load balancer has a maximum backend pool size of 300 instances."
+      explanation: "Incorrect. Basic load balancer has a maximum backend pool size of 300 instances."
     - content: "500 instances"
       isCorrect: false
-      explanation: "That’s incorrect. Neither SKU of Azure load balancer has a maximum backend pool size of 500 instances."
-    - content: "1000 instances"
+      explanation: "Incorrect. Neither SKU of Azure load balancer has a maximum backend pool size of 500 instances."
+    - content: "1,000 instances"
       isCorrect: true
-      explanation: "That’s correct. Standard load balancer supports up to 1000 instances. Basic load balancer supports up to 300 instances."
+      explanation: "Correct. Standard load balancer supports up to 1,000 instances. Basic load balancer supports up to 300 instances."
   - content: "Which Azure service allows users to define, manage, and monitor the global routing for their web traffic?"
     choices:
     - content: "Azure Front Door"
       isCorrect: true
-      explanation: "That’s correct. Azure Front Door provides a range of traffic-routing methods and backend health monitoring options to suit different application needs and automatic failover models."
+      explanation: "Correct. Azure Front Door provides a range of traffic-routing methods and backend health monitoring options to suit different application needs and automatic failover models."
     - content: "Azure Traffic Manager"
       isCorrect: false
-      explanation: "That’s incorrect. Azure Traffic Manager isn't the service which enables users to define, manage, and monitor the global routing for their web traffic."
+      explanation: "Incorrect. Azure Traffic Manager isn't the service which enables users to define, manage, and monitor the global routing for their web traffic."
     - content: "Azure Firewall"
       isCorrect: false
-      explanation: "That’s incorrect. Azure Firewall isn't the service which enables users to define, manage, and monitor the global routing for their web traffic."
+      explanation: "Incorrect. Azure Firewall isn't the service which enables users to define, manage, and monitor the global routing for their web traffic."
   - content: "Which of the following methods allows users to establish direct connectivity to an Azure virtual network from a physical computer or virtual machine not hosted in Azure?"
     choices:
-    - content: "VNet peering"
+    - content: "virtual network peering"
       isCorrect: false
-      explanation: "That’s incorrect. VNet peering is a method for establishing direct connectivity to another Azure virtual network."
-    - content: "VNet-to-VNet"
+      explanation: "Incorrect. Virtual network peering is a method for establishing direct connectivity to another Azure virtual network."
+    - content: "virtual network-to-virtual network"
       isCorrect: false
-      explanation: "That’s incorrect. VNet-to-VNet is a method for establishing direct connectivity to another Azure virtual network."
+      explanation: "Incorrect. Virtual network-to-virtual network is a method for establishing direct connectivity to another Azure virtual network."
     - content: "Azure ExpressRoute"
       isCorrect: true
-      explanation: "That’s correct. Azure ExpressRoute connects an Azure virtual network to an on-premises network via a private connection. It's also possible to establish connectivity using point-to-site VPN, site-to-site VPN, and Azure Virtual WAN. VNet peering and VNet-to-VNet are both methods for establishing direct connectivity to another Azure virtual network."
+      explanation: "Correct. Azure ExpressRoute connects an Azure virtual network to an on-premises network via a private connection. It's also possible to establish connectivity using point-to-site VPN, site-to-site VPN, and Azure Virtual WAN. Virtual network peering and virtual network-to-virtual network are both methods for establishing direct connectivity to another Azure virtual network."
   - content: "Which of the following Azure service offerings includes logging, alerting, and telemetry to help provide protection from Distributed Denial-of-Service network attacks?"
     choices:
     - content: "Azure DDoS infrastructure Protection (Basic)"
       isCorrect: false
-      explanation: "That’s incorrect. Azure DDoS Protection has several advantages over the Basic service, including logging, alerting, and telemetry."
+      explanation: "Incorrect. Azure DDoS Protection has several advantages over the Basic service, including logging, alerting, and telemetry."
     - content: "Azure DDoS Protection"
       isCorrect: true
-      explanation: "That’s correct. Azure DDoS Protection has several advantages over the Azure DDoS infrastructure Protection (Basic) service, including logging, alerting, and telemetry."
+      explanation: "Correct. Azure DDoS Protection has several advantages over the Azure DDoS infrastructure Protection (Basic) service, including logging, alerting, and telemetry."
     - content: "Both Azure DDoS infrastructure Protection and Azure DDoS Protection"
       isCorrect: false
-      explanation: "That’s incorrect. Azure DDoS Protection has several advantages over the Azure DDoS infrastructure Protection (Basic) service, including logging, alerting, and telemetry."
+      explanation: "Incorrect. Azure DDoS Protection has several advantages over the Azure DDoS infrastructure Protection (Basic) service, including logging, alerting, and telemetry."
   - content: "In a cross-premises scenario, where a single or multiple Azure IaaS-hosted SAP workloads are integrated into an existing on-premises SAP environment, which of the following deployments is supported?"
     choices:
     - content: "Different layers of SAP applications are run in different deployment methods."
       isCorrect: false
-      explanation: "That’s incorrect. This deployment isn't supported. The reason for this restriction is the requirement for a low latency high-performance network within one SAP system, especially between the application instances and the DBMS layer of an SAP system."
+      explanation: "Incorrect. This deployment isn't supported. The reason for this restriction is the requirement for a low latency high-performance network within one SAP system, especially between the application instances and the DBMS layer of an SAP system."
     - content: "Some components of an SAP layer are run in Azure, and other components are run on-premises."
       isCorrect: false
-      explanation: "That’s incorrect. This deployment isn't supported. The reason for this restriction is the requirement for a low latency high-performance network within one SAP system, especially between the application instances and the DBMS layer of an SAP system."
+      explanation: "Incorrect. This deployment isn't supported. The reason for this restriction is the requirement for a low latency high-performance network within one SAP system, especially between the application instances and the DBMS layer of an SAP system."
     - content: "SAP systems reside entirely in either one of the two environments."
       isCorrect: true
-      explanation: "That’s correct. In cross-premises scenarios between Azure and on-premises customers’ environments, SAP systems must reside entirely in either one of the two environments. The reason for this restriction is the requirement for a low latency high-performance network within one SAP system, especially between the application instances and the DBMS layer of an SAP system."
+      explanation: "Correct. In cross-premises scenarios between Azure and on-premises customers’ environments, SAP systems must reside entirely in either one of the two environments. The reason for this restriction is the requirement for a low latency high-performance network within one SAP system, especially between the application instances and the DBMS layer of an SAP system."
