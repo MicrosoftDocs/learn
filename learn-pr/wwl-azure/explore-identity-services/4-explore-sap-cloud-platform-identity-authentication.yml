@@ -3,11 +3,13 @@ uid: learn.wwl.explore-identity-services.explore-sap-cloud-platform-identity-aut
 title: Explore SAP Cloud Platform Identity authentication
 metadata:
   title: Explore SAP Cloud Platform Identity authentication
-  description: "Explore SAP Cloud Platform Identity authentication"
-  ms.date: 03/05/2024
+  description: "Implement single sign-on with SAP Cloud Platform Identity authentication."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/4-explore-sap-cloud-platform-identity-authentication.md)]

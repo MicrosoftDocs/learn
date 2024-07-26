@@ -9,3 +9,7 @@ You understand and communicate risks, and suggest solutions using Azure to autom
 - Discover the SAP and Microsoft partnership.
 - Explore your options with SAP on Azure.
 - Evaluate Microsoft components and their integration with SAP apps and data.
+
+## Course video training
+
+Enhance your learning experience with additional insights and expert guidance in the [AZ-120 On Demand Instructor-led Training Video series](/shows/on-demand-instructor-led-training-series/?products=azure&terms=az-120). Perfect for those looking for a supplementary resource to reinforce understanding, with the flexibility to cover the course content at your own pace.

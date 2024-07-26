@@ -2,23 +2,31 @@
 uid: learn.wwl.explore-azure-remote-management
 metadata:
   title: Explore remote management for SAP on Azure
-  description: This module explores ways to apply Azure remote management components to design remote management of virtual machines and set up the Azure connector for SAP Landscape Management. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads.
-  ms.date: 10/17/2023
+  description: "This module explores ways to apply Azure remote management components to design remote management of virtual machines and set up the Azure connector for SAP Landscape Management. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Explore remote management for SAP on Azure
 summary: This module explores ways to apply Azure remote management components to design remote management of virtual machines and set up the Azure connector for SAP Landscape Management.
 abstract: |
   After completing this module, you will be able to:
-  - Consider remote management of Azure virtual machines.
-  - Set up the Azure connector for SAP Landscape Management.
-  - Explore access management.
+
+  -   Consider remote management of Azure virtual machines.
+
+  -   Set up the Azure connector for SAP Landscape Management.
+
+  -   Explore access management.
 prerequisites: |
   Before taking this training, you should complete:
-  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
-  - SAP HANA or NetWeaver training.
+
+  -   Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+
+  -   SAP HANA or NetWeaver training.
 iconUrl: /training/achievements/2-explore-azure-remote-management.svg
 levels:
 - advanced
