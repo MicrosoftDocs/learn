@@ -33,7 +33,7 @@ quiz:
       explanation: A resource that is no longer managed by the deployment stack is known as a detached resource.
     - content: Deleted resource
       isCorrect: false
-      explanation: A deleted resoruce is a resource that is deleted from Azure.
+      explanation: A deleted resource is a resource that is deleted from Azure.
   - content: When using _action on unmanage_ parameter, which option deletes resources, but detach resource groups and management groups?
     choices:
     - content: Delete all

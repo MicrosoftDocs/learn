@@ -37,7 +37,7 @@ A detached resource, also known as a managed resource, is a resource that is no 
 - `deleteResources` - deletes resources, but detaches resource groups and management groups
 - `detachAll` - detaches all resources, resource groups, and management groups
 
-Using either `deleteResources` or `detachAll` when creating, modifying, or deleting your deployment stacks offers some additional protection against accidental deletion. Consider our scenario from the last unit. We added an existing log analytics workspace to our deployment stack. The workspace is used by other applications, not just the deposits application. It needs to persist past the life of the application. By using `detachAll` as the _action on unmanage_ parameter, needed resources will continue to exist in Azure.
+Using either `deleteResources` or `detachAll` when creating, modifying, or deleting your deployment stacks offers some additional protection against accidental deletion. Consider our scenario from the last unit. We added an existing log analytics workspace to our deployment stack. The workspace is used by other applications, not just the deposits application. It needs to persist past the life of the application. By using `detachAll` as the _action on unmanage_ parameter, needed resources continue to exist in Azure.
 
 ::: zone-end
 
@@ -46,7 +46,7 @@ Using either `deleteResources` or `detachAll` when creating, modifying, or delet
 - `DeleteResources` - deletes resources, but detaches resource groups and management groups
 - `DetachAll` - detaches all resources, resource groups, and management groups
 
-Using either `DeleteResources` or `DetachAll` when creating, modifying, or deleting your deployment stacks offers some additional protection against accidental deletion. Consider our scenario from the last unit. We added an existing log analytics workspace to our deployment stack. The workspace is used by other applications, not just the deposits application. It needs to persist past the life of the application. By using `DetachAll` as the _action on unmanage_ parameter, needed resources will continue to exist in Azure.
+Using either `DeleteResources` or `DetachAll` when creating, modifying, or deleting your deployment stacks offers some additional protection against accidental deletion. Consider our scenario from the last unit. We added an existing log analytics workspace to our deployment stack. The workspace is used by other applications, not just the deposits application. It needs to persist past the life of the application. By using `DetachAll` as the _action on unmanage_ parameter, needed resources continue to exist in Azure.
 
 ::: zone-end
 

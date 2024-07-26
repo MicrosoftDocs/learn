@@ -1,12 +1,12 @@
 Azure resources managed by a deployment stack are called _managed resources_. The resources are defined in the template file used in the creation of the stack.
 
-As you prepare for the next sprint for the deposits application, you want to know more about how resources are managed by a deployment stack. You're expecting rapid and frequent changes to the application as features are tested in development. Before you add, modify, or delete resources from the application, you need to know how these resources are managed.
+As you prepare for the next sprint for the deposits application, you want to know more about how a deployment stack manages resources. You're expecting rapid and frequent changes to the application as features are tested in development. Before you add, modify, or delete resources from the application, you need to know how these resources are managed.
 
 In this unit, you learn about managed resources and the _action on unmanage_ parameter. This parameter determines how Azure handles resources that the deployment stack no longer manages.
 
 ## Managed resources
 
-Before we get into updating deployment stacks, let's take a look at how a stack manages resources. When you create a deployment stack, the stack becomes responsible for managing the resources described in the template file. These resources are known as managed resources. As long as a resource is defined in a template file, its considered a managed resource. Think of deployment stacks as a series of pointers that groups your application's resources into a single unit.
+Before we get into updating deployment stacks, let's take a look at how a stack manages resources. When you create a deployment stack, the stack becomes responsible for managing the resources described in the template file. These resources are known as managed resources. As long as a resource is defined in a template file, it's considered a managed resource. Think of deployment stacks as a series of pointers that groups your application's resources into a single unit.
 
 Deployment stacks can be created at different scopes, such as resource groups, subscriptions, and management groups. The resources that a deployment stack can manage depends on the scope where the stack is created.
 
@@ -57,7 +57,7 @@ Set-AzResourceGroupDeploymentStack `
     -DenySettingsMode None
 ```
 
-After the update operation is complete, the app service plan is the only resource managed by the stack. In our command, we used `-ActionOnUnmanage DetachAll` to specify how Azure handles resources that are no longer managed by a deployment stack. In this case, the web app is detached from the deployment stack, but it still exists in the resource group.
+After the update operation is complete, the app service plan is the only resource managed by the stack. In our command, we used `-ActionOnUnmanage DetachAll` to specify how Azure handles resources that a deployment stack no longer manages. In this case, the web app is detached from the deployment stack, but it still exists in the resource group.
 
 ::: zone-end
 
