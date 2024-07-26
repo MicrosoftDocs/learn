@@ -1,18 +1,18 @@
 The deposits application continues to evolve throughout development. The team is adding resources and testing features on a daily basis. Observability is being added to the application with an existing log analytics workspace and a new application insights instance. You want to continue to manage the resources as a single atomic unit. You need to learn more about adding both existing and new resources to a deployment stack.
 
-In this unit you learn how to add both existing and new resources to a deployment stack as managed resources.
+In this unit, you learn how to add both existing and new resources to a deployment stack as managed resources.
 
 [!INCLUDE [Note - don't run commands](../../../includes/dont-run-commands.md)]
 
 ## Add an existing resource
 
-The resources that an application uses change over time. How do we update a deployment stack to include an already existing resource in Azure? The process of adding an existing resource to a deployment stack is identical to adding a new resource to the stack. We simply need to define the existing resource in our ARM JSON template, Bicep file, or template spec. In the end, the existing resource is managed by the deployment stack.
+The resources that an application uses change over time. How do we update a deployment stack to include an already existing resource in Azure? The process of adding an existing resource to a deployment stack is identical to adding a new resource to the stack. We simply need to define the existing resource in our ARM JSON template, Bicep file, or template spec. In the end, the deployment stack manages the existing resource.
 
 Let's consider our Bicep file from the last unit. Our file defines an app service plan, a web app, and an Azure SQL server and database. We want to add an existing log analytics workspace to our deployment stack. The workspace is in the same resource group where our managed resources exist.
 
 :::code language="bicep" source="code/1b-template.bicep" range="1-21,25-27,31-46,55-77":::
 
-To add the existing log analytics workspace, we need to add its definition to our Bicep file. Notice that we do not need to include any code that describes the workspace as an existing resource.
+To add the existing log analytics workspace, we need to add its definition to our Bicep file. Notice that we don't need to include any code that describes the workspace as an existing resource.
 
 :::code language="bicep" source="code/1b-template.bicep" range="1-21,25-46,55-89" highlight="25-26,68-78":::
 
@@ -52,7 +52,7 @@ Set-AzResourceGroupDeploymentStack `
 
 ## Add a new managed resource
 
-The process of adding a new resource to a deployment stack is identical to adding an existing resource to the stack. We simply need to define the existing resource in our ARM JSON template, Bicep file, or template spec. In the end, the new resource is managed by the deployment stack.
+The process of adding a new resource to a deployment stack is identical to adding an existing resource to the stack. We simply need to define the existing resource in our ARM JSON template, Bicep file, or template spec. In the end, the deployment stack manages the new resource.
 
 Let's consider our Bicep file from the previous section. Our file now defines an app service plan, app service, an Azure SQL server and database, and a log analytics workspace. We want to add a new application insights instance to our deployment stack and configure the app service to use the instance.
 

@@ -1,6 +1,6 @@
-You are on sprint 3 for the new deposits application. Recently, the deposits team has requested changes to some of the Azure services in use. They have also requested the creation of additional services needed to support the application.
+You are on sprint 3 for the new deposits application. Recently, the deposits team requested changes to some of the Azure services in use. They also requested the creation of other services needed to support the application.
 
-In this exercise, you create a deployment stack scoped to a resource group that references a Bicep file. The file defines an app service plan, an app service, and an Azure SQL databsae. You then modify the SKU of the app service plan and update the deployment stack. Finally, you add an exising log analytics workspace and a new application insights iinstance to support monitoring of the application.
+In this exercise, you create a deployment stack scoped to a resource group that references a Bicep file. The file defines an app service plan, an app service, and an Azure SQL database. You then modify the SKU of the app service plan and update the deployment stack. Finally, you add an existing log analytics workspace and a new application insights instance to support monitoring of the application.
 
 During the process, you'll:
 
@@ -88,11 +88,11 @@ Next, we need to create our deployment stack scoped to our recently created reso
         --deny-settings-mode none
     ```
 
-1. You're prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter.'
+1. It prompts you to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter.'
 
     :::image type="content" source="../media/sql-admin-cli.png" alt-text="A screenshot showing the Azure CLI command line prompting you to enter an SQL server administrator user name.":::
 
-1. You're prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter.'
+1. It prompts you to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter.'
 
     :::image type="content" source="../media/sql-password-cli.png" alt-text="A screenshot showing the Azure CLI command line prompting you to enter an SQL server administrator password.":::
 
@@ -113,11 +113,11 @@ Next, we need to create our deployment stack scoped to our recently created reso
         -DenySettingsMode None
     ```
 
-1. You're prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter.'
+1. It prompts you to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter.'
 
     :::image type="content" source="../media/sql-admin-powershell.png" alt-text="A screenshot showing the Azure PowerShell command line prompting you to enter an SQL server administrator user name.":::
 
-1. You're prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter.'
+1. It prompts you to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter.'
 
     :::image type="content" source="../media/sql-password-powershell.png" alt-text="A screenshot showing the Azure PowerShell command line prompting you to enter an SQL server administrator password.":::
 
@@ -143,11 +143,11 @@ Next, we need to create our deployment stack scoped to our recently created reso
 
 1. Open the _main.bicep_ file in Visual Studio Code.
 
-1. Change the sku name of the app service paln from `F1` to `S1`:
+1. Change the sku name of the app service plan from `F1` to `S1`:
 
     :::code language="bicep" source="code/1b-template.bicep" range="31-39" highlight="6":::
 
-1. Add the highlighted code to wire in the aplication insights instance:
+1. Add the highlighted code to wire in the application insights instance:
 
     :::code language="bicep" source="code/1b-template.bicep" range="41-56" highlight="7-14":::
 
@@ -174,11 +174,11 @@ With the Bicep file modified, we want to update the deployment stack so that the
 
     :::image type="content" source="../media/stack-exists-cli.png" alt-text="A screenshot showing the Azure CLI command line warning that the deployment stack already exists.":::
 
-1. You're prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter.'
+1. It prompts you to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter.'
 
     :::image type="content" source="../media/sql-admin-cli.png" alt-text="A screenshot showing the Azure CLI command line prompting you to enter an SQL server administrator user name.":::
 
-1. You're prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter.'
+1. It prompts you to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter.'
 
     :::image type="content" source="../media/sql-password-cli.png" alt-text="A screenshot showing the Azure CLI command line prompting you to enter an SQL server administrator password.":::
 
@@ -201,11 +201,11 @@ With the Bicep file modified, we want to update the deployment stack so that the
         -DenySettingsMode none
     ```
 
-1. You're prompted to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter.'
+1. It prompts you to enter a value for `sqlServerAdminUserName`. Create a name for the SQL server administrator, followed by 'Enter.'
 
     :::image type="content" source="../media/sql-admin-powershell.png" alt-text="A screenshot showing the Azure PowerShell command line prompting you to enter an SQL server administrator user name.":::
 
-1. You're prompted to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter.'
+1. It prompts you to enter a value for `sqlServerAdminPassword`. Create a complex password for the SQL server administrator, followed by 'Enter.'
 
     :::image type="content" source="../media/sql-password-powershell.png" alt-text="A screenshot showing the Azure PowerShell command line prompting you to enter an SQL server administrator password.":::
 

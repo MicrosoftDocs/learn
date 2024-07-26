@@ -1,14 +1,14 @@
 Azure resources managed by a deployment stack are called _managed resources_. The resources are defined in the template file used in the creation of the stack.
 
-As you prepare for the next sprint for the deposits application, you want to know more about how resources are managed by a deployment stack. You're exptecting rapid and frequent changes to the application as features are tested in development. Before you plan for adding, modifying, and deleting resources to the application, you need to know how these resources are managed.
+As you prepare for the next sprint for the deposits application, you want to know more about how resources are managed by a deployment stack. You're expecting rapid and frequent changes to the application as features are tested in development. Before you add, modify, or delete resources from the application, you need to know how these resources are managed.
 
-In this unit, you learn about managed resources and the _action on unmanage_ parameter. This parameter determines how Azure handles resources that are no longer managed by the stack.
+In this unit, you learn about managed resources and the _action on unmanage_ parameter. This parameter determines how Azure handles resources that the deployment stack no longer manages.
 
 ## Managed resources
 
-Before we get into updating deployment stacks, let's take a look at how resources are managed by a stack. When you create a deployment stack, the stack becomes responsible for managing the resources described in the template file. These resources are known as managed resources. As long as a resource is defined in a template file, it is considered a managed resource. Think of deployment stacks as a series of pointers that groups your application's resources into a single unit.
+Before we get into updating deployment stacks, let's take a look at how a stack manages resources. When you create a deployment stack, the stack becomes responsible for managing the resources described in the template file. These resources are known as managed resources. As long as a resource is defined in a template file, its considered a managed resource. Think of deployment stacks as a series of pointers that groups your application's resources into a single unit.
 
-Deployment stacks can be created at different scopes, such as resource groups, subscriptions, and management groups. The resources that a deploment stack can manage depends on the scope where the stack is created.
+Deployment stacks can be created at different scopes, such as resource groups, subscriptions, and management groups. The resources that a deployment stack can manage depends on the scope where the stack is created.
 
 ![a graphic representing a deployment stack and managed resources](../media/deployment-stacks-scenario-2-and-5.png)
 
@@ -40,7 +40,7 @@ az stack group create \
 
 When performing an update on the stack, you receive a message stating that the stack already exists in the current subscription. If the value of the _action on unmanage_ parameter changes, the warning alerts you of the new values.
 
-After the update operation is complete, the app service plan is the only resource managed by the stack. In our command, we used `--action-on-unmanage detachAll` to specify how Azure handles resources that are no longer managed by a deployment stack. In this case, the web app is detached from the deployment stack, but it still exists in the resource group.
+After the update operation is complete, the app service plan is the only resource managed by the stack. In our command, we used `--action-on-unmanage detachAll` to specify how Azure handles resources that a deployment stack no longer manages. In this case, the web app is detached from the deployment stack, but it still exists in the resource group.
 
 ::: zone-end
 
@@ -69,7 +69,7 @@ All three operations have the ability to set the behavior of the _action on unma
 
 ::: zone pivot="cli"
 
-For example, if a deployment stack is created with the parameter set as `--action-on-unmanage detachAll`, Azure will detach any resources no longer managed by the stack. If a subsequent update operation is run and the parameter is set as `--action-on-unmanage deleteAll`, the behavior will default to `deleteAll`.
+For example, if a deployment stack is created with the parameter set as `--action-on-unmanage detachAll`, Azure detaches any resources no longer managed by the stack. If a subsequent update operation is run and the parameter is set as `--action-on-unmanage deleteAll`, the behavior defaults to `deleteAll`.
 
 There are three possible values for the `--action-on-unmanage` parameter:
 
@@ -78,7 +78,7 @@ There are three possible values for the `--action-on-unmanage` parameter:
 - `detachAll` - detaches all resources, resource groups, and management groups
 
 > [!NOTE]
-> In this module, we are working with resrouce group scoped deployment stacks. In this situation, the resource group is not managed by the stack. > The 'delete all' value for the _action on unmanage_ parameter doesn't detele the resource group where the stack exists. It is necessary to delete the resource group after the stack and its resources are deleted.
+> In this module, we are working with resrouce group scoped deployment stacks. In this situation, the resource group is not managed by the stack. > The 'delete all' value for the _action on unmanage_ parameter doesn't detele the resource group where the stack exists. Its necessary to delete the resource group after the stack and its resources are deleted.
 
 Let's take a look at the json output when using the Azure CLI `az stack group show` command with values set for the `--action-on-unmanage` parameter. Notice the behavior for resources, resource groups, and management groups.
 
@@ -116,7 +116,7 @@ Let's take a look at the json output when using the Azure CLI `az stack group sh
 
 ::: zone pivot="powershell"
 
-For example, if a deployment stack is created with the parameter set as `-ActionOnUnmanage DetachAll`, Azure will detach any resources no longer managed by the stack. If a subsequent update operation is run and the parameter is set as `-ActionOnUnmanage DeleteAll`, the behavior will default to `DeleteAll`.
+For example, if a deployment stack is created with the parameter set as `-ActionOnUnmanage DetachAll`, Azure detaches any resources no longer managed by the stack. If a subsequent update operation is run and the parameter is set as `-ActionOnUnmanage DeleteAll`, the behavior defaults to `DeleteAll`.
 
 There are three possible values for the `-ActionOnUnmanage` parameter:
 
@@ -125,7 +125,7 @@ There are three possible values for the `-ActionOnUnmanage` parameter:
 - `DetachAll` - detaches all resources, resource groups, and management groups
 
 > [!NOTE]
-> In this module, we are working with resrouce group scoped deployment stacks. In this situation, the resource group is not managed by the stack. > The 'delete all' value for the _action on unmanage_ parameter doesn't detele the resource group where the stack exists. It is necessary to delete the resource group after the stack and its resources are deleted.
+> In this module, we are working with resrouce group scoped deployment stacks. In this situation, the resource group is not managed by the stack. > The 'delete all' value for the _action on unmanage_ parameter doesn't detele the resource group where the stack exists. Its necessary to delete the resource group after the stack and its resources are deleted.
 
 Let's take a look at the json output when using the Azure PowerShell `Get-AzResourceGroupDeploymentStack` command with values set for the `-ActionOnUnmanage` parameter. Notice the behavior for resources, resource groups, and management groups.
 
