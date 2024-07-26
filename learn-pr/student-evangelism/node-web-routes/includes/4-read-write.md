@@ -1,4 +1,4 @@
-So far, you've developed routes to read data for the Tailwind Traders products API. However, you need to add products too. 
+So far, you developed routes to read data for the Tailwind Traders products API. However, you need to add products too. 
 
 In this unit, we discuss the different methods we can use to add or update products and show examples of how that code is implemented. In the next unit, you'll actually edit your application code to add new products and update existing ones.
 
@@ -18,12 +18,12 @@ Common HTTP methods are:
 
 ## Understand how to configure your app to receive data
 
-To receive data in your web application, configure Express based on the format of the incoming data such as HTML or JSON format. These are common steps, regardless of the data format.
+To receive data in your web application, you configure Express based on the format of the incoming data such as HTML or JSON format. Converting and configuring data are common steps, regardless of the data format.
 
 > [!NOTE]
 > Data is sent through the body of the request.
 
-1. **Import a body parser**. To convert the incoming data into a format that's readable, import the `body-parser` library that's installed with Express:
+1. **Import a body parser**. To convert the incoming data into a format that's readable, import the `body-parser` library that you installed with Express:
 
    ```javascript
    let bodyParser = require('body-parser');
@@ -51,7 +51,7 @@ app.post('/products', (req, res) => {
 });
 ```
 
-Call this API with a POST request to `/products` with a JSON body to insert a new product. For example:
+To insert a new product, call this API with a POST request to `/products` with a JSON body. For example:
 
 ```json
 {
@@ -78,7 +78,7 @@ app.put('/products/:id', (req, res) => {
 });
 ```
 
-Call this API with a PUT request to `/products/:id` with a JSON body to update a product. For example:
+To update a product, call this API with a PUT request to `/products/:id` with a JSON body. For example:
 
 ```json
 {
@@ -107,7 +107,7 @@ app.patch('/products/:id', (req, res) => {
 });
 ```
 
-Call this API with a PATCH request to `/producs/:id` with a JSON body to update a product. For example:
+To update a specific portion of a product, call this API with a PATCH request to `/products/:id` with a JSON body. For example:
 
 ```json
 {
