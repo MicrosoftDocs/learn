@@ -106,7 +106,7 @@ Details and restrictions for Azure Write Accelerator can be found in the same do
 The following table shows a configuration of virtual machine types that customers also use to host SAP HANA on Azure Virtual Machines. There might be some virtual machine types that might not meet all minimum storage criteria for SAP HANA or aren't officially supported with SAP HANA by SAP. But so far those virtual machines seemed to perform fine for non-production scenarios. The **/hana/data** and **/hana/log** are combined to one volume. As a result the usage of Azure Write Accelerator can become a limitation in terms of IOPS.
 
 - For SAP supported scenarios, check whether a certain virtual machine type is supported for SAP HANA by SAP in the [SAP documentation for IAAS](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=v:deCertified;iaas;ve:24).
-- A change from former recommendations for a cost conscious solution, is to move from [Azure Standard HDD disks](/azure/virtual-machines/windows/disks-types) to better performing and more reliable [Azure Standard SSD disks](/azure/virtual-machines/windows/disks-types).
+- A change from former recommendations for a cost conscious solution is to move from [Azure Standard HDD disks](/azure/virtual-machines/windows/disks-types) to better performing and more reliable [Azure Standard SSD disks](/azure/virtual-machines/windows/disks-types).
 
 | VM SKU | RAM | Max. VM I/O throughput | /hana/data and /hana/log striped with LVM or MDADM | /hana/shared | /root volume | /usr/sap | Comments |
 |-|-|-|-|-|-|-|-|
