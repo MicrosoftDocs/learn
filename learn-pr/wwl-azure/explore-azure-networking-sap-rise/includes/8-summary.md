@@ -1,7 +1,8 @@
-Now you have learned how to:
+You learned the following important lessons about the network integration of SAP RISE with the customer's Azure environment:
 
-- Determine responsibilities for SAP RISE.
-- Connect SAP RISE with Azure.
+- Responsibilities of the SAP RISE team, Azure support, and the customer.
+- Connection to SAP RISE with Azure virtual private network (VPN) peering.
+- Connection to SAP RISE with VNet-to-VNet.
 - Connect SAP RISE with an on-premises network.
 - Connect SAP RISE with the internet.
 

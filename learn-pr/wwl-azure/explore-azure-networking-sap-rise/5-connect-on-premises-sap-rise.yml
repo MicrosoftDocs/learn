@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-networking-sap-rise.connect-on-premises-sap-rise
-title: Connect on-premise to SAP RISE
+title: Connect on-premises to SAP RISE
 metadata:
-  title: Connect on-premise to SAP RISE
+  title: Connect on-premises to SAP RISE
   description: "Learn how to connect SAP RISE to your on-premises network through ExpressRoute or VPN."
-  ms.date: 07/25/2024
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

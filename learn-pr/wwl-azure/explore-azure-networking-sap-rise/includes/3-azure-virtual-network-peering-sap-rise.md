@@ -11,7 +11,9 @@ For SAP RISE/ECS deployments, virtual network peering is the preferred way to es
 
 Virtual network peering can be set up within the same region as your SAP managed environment, but also through [global virtual network peering](/azure/virtual-network/virtual-network-peering-overview) between any two Azure regions. With SAP RISE/ECS available in many [Azure regions](https://azure.microsoft.com/global-infrastructure/geographies/), the region should match with the workload running in the customer's virtual networks, due to latency and peering cost considerations. However, some scenarios (such as central S/4HANA deployment for a globally present company) also require peering networks globally. For globally distributed SAP landscapes, the recommendation is to use multi-region network architecture within your own Azure environment, with SAP RISE peering locally in each geography to your network hubs.
 
-:::image border="false" type="content" source="../media/sap-rise-peering.png" alt-text="Diagram shows a typical S A P customer's hub and spoke virtual networks, for customer peering with S A P RISE / E C S. Cross-tenant virtual network peering connects S A P RISE and customer's hub virtual networks.":::
+:::image type="complex" source="../media/sap-rise-peering.png" alt-text="Diagram of Customer peering with S A P RISE / E C S.":::
+   This diagram shows a typical S A P customer's hub and spoke virtual networks. Cross-tenant virtual network peering connects S A P RISE and customer's hub virtual networks.
+:::image-end:::
 
 Both the SAP and customer virtual networks are protected with network security groups (NSG), permitting communication on SAP and database ports through the peering. Communication between the peered virtual networks is secured through these NSGs, limiting communication to and from customer’s SAP environment.
 

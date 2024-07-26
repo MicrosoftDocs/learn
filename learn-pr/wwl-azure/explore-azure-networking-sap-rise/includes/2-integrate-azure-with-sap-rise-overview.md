@@ -4,7 +4,7 @@ A crucial step towards modernization is integrating SAP managed environments, li
 
 It's important to distinguish SAP and customer responsibilities when enabling certain Azure scenarios. The following diagram illustrates the most common scenarios:
 
-:::image border="false" type="content" source="../media/sap-rise-integration-table.png" alt-text="Diagram showing the breakdown of responsibility between customer and S A P for different aspects of enablement of integration scenarios.":::
+:::image type="content" source="../media/sap-rise-integration-table.png" alt-text="Diagram showing the breakdown of responsibility between customer and S A P for different aspects of enablement of integration scenarios.":::
 
 Although there are circumstances when an initial request needs to be placed with SAP RISE for enablement, most Azure scenarios depend on open network communication to available SAP interfaces and activities entirely within the customer's area of responsibility.
 
@@ -21,7 +21,9 @@ Additionally, Azure services such as Azure Data Factory and others operate withi
 
 Only the resources within your personal Azure subscriptions are eligible for assistance from Azure support. For issues concerning any resources managed in SAP's Azure subscriptions for your SAP RISE workload, you should contact SAP support directly.
 
-:::image border="false" type="content" source="../media/sap-rise-support.png" alt-text="Diagram showing the separation of Azure support between S A P and customer's environments. On one side are all customer subscriptions with customer managed workload. The other side shows an S A P E C S / RISE subscription containing customer's S A P workload, managed by SAP. Each side is responsible themselves for contacting Azure support, with no crossed responsibilities.":::
+:::image type="complex" source="./media/sap-rise-support.png" alt-text="Diagram shows the separation of Azure support between S A P and customer's environments.":::
+   This diagram shows a split of different Azure subscriptions. On one side, are all customers subscriptions with customer managed workload. Other half with S A P E C S / RISE subscription containing customer's S A P workload, managed by S A P. Each side responsible themselves to contact Azure support, with no crossed responsibilities.
+:::image-end:::
 
 As part of your RISE project, document the interfaces and transfer points between your own Azure environment, the SAP workload managed by SAP RISE, and on-premises. The document should include network information such as the address space, firewalls and routing, file shares, Azure services, DNS, and others. Document the ownership of any interface partners and where any resources are running, to ensure that this information can be accessed quickly during troubleshooting. Contact SAP support for services running in SAP's Azure subscriptions.
 

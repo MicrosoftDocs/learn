@@ -4,7 +4,9 @@ A virtual network to virtual network (VNet-to-VNet) connection provides a fast a
 
 As an alternative to virtual network peering, VPN connections can be established between VPN gateways, deployed both in the SAP RISE/ECS Azure subscription and a customer's own Azure subscription. You can establish a [VNet-to-VNet connection](/azure/vpn-gateway/vpn-gateway-howto-vnet-vnet-resource-manager-portal) between these two VPN gateways, enabling fast communication between the two virtual networks. The respective networks and gateways can reside in different Azure regions.
 
-:::image border="false" type="content" source="../media/sap-rise-vpn.png" alt-text="Diagram showing a typical S A P customer's hub and spoke virtual networks, with S A P RISE / E C S V P N connection to customer virtual network. V P N gateway located in S A P RISE virtual network connects through VNet-to-VNet connection into gateway contained in customer's hub virtual network.":::
+:::image type="complex" source="../media/sap-rise-virtual-private-network.png" alt-text="Diagram of S A P RISE / E C S V P N connection to customer virtual network.":::
+   This diagram shows a typical S A P customer's hub and spoke virtual networks. V P N gateway located in S A P RISE virtual network connects through vnet-to-vnet connection into gateway contained in customer's hub virtual network.
+:::image-end:::
 
 While virtual network peering is the typical and recommended deployment model, a VPN VNet-to-VNet can potentially simplify a complex virtual peering between customer and SAP RISE/ECS virtual networks. The VPN Gateway acts as the only point of entry into the customer’s network, with central team management and security. Network throughput is limited by the chosen gateway SKU on both sides. To address resiliency requirements, ensure that [zone-redundant virtual network gateways](/azure/vpn-gateway/about-zone-redundant-vnet-gateways) are used for such connections.
 
