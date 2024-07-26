@@ -20,7 +20,7 @@ Let's explore some techniques an end-user can use to apply prompt engineering:
     :::image type="content" source="../media/clear-instructions.png" alt-text="Screenshot of a question with clear instructions, making the answer more specific to the use case.":::
 - Format your instructions: Use headers and delineators to make your question easier to read.
     :::image type="content" source="../media/format-instructions.png" alt-text="Screenshot of a question formatted to make it clear what the translated text should be.":::
-- Use cues: Define how the model should start its response.
+- Use cues: Provide key words or indicators for how the model should start its response, such as a specific coding language.
     :::image type="content" source="../media/use-cues.png" alt-text="Screenshot of a question with a cue, which then assistant's answer starts with.":::
 
 ### Update the system message
@@ -37,7 +37,7 @@ Some common prompt engineering techniques to apply as a developer by updating th
     :::image type="content" source="../media/use-shots.png" alt-text="Screenshot of a system message with examples.":::
 - Use chain-of-thought: Guide the model to reason step-by-step by instructing it to think through the task.
     :::image type="content" source="../media/chain-of-thought.png" alt-text="Screenshot of chain-of-thought reasoning.":::
-- Add context: Enhance the model's factuality by providing additional context or background information relevant to the task.
+- Add context: Enhance the model's factuality by providing additional context or background information relevant to the task. This can be done through grounding data provided with the user prompt, or by connecting your own data source.
     :::image type="content" source="../media/add-context.png" alt-text="Screenshot of option to add data for context.":::
 
 ## Apply model optimization strategies
