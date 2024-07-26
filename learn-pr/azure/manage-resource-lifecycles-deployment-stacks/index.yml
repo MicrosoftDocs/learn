@@ -30,7 +30,7 @@ prerequisites: |
     > [!TIP]
     > You can use either the Azure CLI or Azure PowerShell to complete this module. If you're not sure which to choose, we recommend you use the [Azure CLI](/cli/azure/install-azure-cli).
 
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /training/achievements/bicep/manage-resource-lifecycles-deployment-stacks.svg
 levels:
   - intermediate
 roles:
