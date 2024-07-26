@@ -18,15 +18,15 @@ quiz:
   questions:
   - content: "What is the role of Spark Structured Streaming in setting up real-time data sources for incremental processing with Azure Databricks?"
     choices:
-    - content: "It is used to process real-time data streams using the same DataFrame and Dataset APIs used for batch processing."
+    - content: "It's used to process real-time data streams using the same DataFrame and Dataset APIs used for batch processing."
       isCorrect: true
       explanation: "Correct. Spark Structured Streaming allows writing streaming queries using the same DataFrame and Dataset APIs for batch processing."
-    - content: "It is used to store the processed data in Delta tables."
+    - content: "It's used to store the processed data in Delta tables."
       isCorrect: false
-      explanation: "Incorrect. Spark Structured Streaming does not store data, it processes real-time data streams."
-    - content: "It is used to configure the data sources that provide the real-time data streams."
+      explanation: "Incorrect. Spark Structured Streaming doesn't store data. It processes real-time data streams."
+    - content: "It's used to configure the data sources that provide the real-time data streams."
       isCorrect: false
-      explanation: "Incorrect. Spark Structured Streaming is not used for configuring data sources, but for processing real-time data streams."
+      explanation: "Incorrect. Spark Structured Streaming isn't used for configuring data sources, but for processing real-time data streams."
   - content: "What is the purpose of using Z-Order Clustering in optimizing Delta Lake for incremental processing in Azure Databricks?"
     choices:
     - content: "To enable data skipping and indexing"
@@ -34,7 +34,7 @@ quiz:
       explanation: "Incorrect. Data skipping and indexing are separate features, not directly related to Z-Order Clustering."
     - content: "To manage metadata efficiently"
       isCorrect: false
-      explanation: "Incorrect. Managing metadata efficiently is not the primary function of Z-Order Clustering."
+      explanation: "Incorrect. Managing metadata efficiently isn't the primary function of Z-Order Clustering."
     - content: "To optimize the storage layout of data files, enhancing query performance"
       isCorrect: true
       explanation: "Correct. Z-Order Clustering optimizes the storage layout of data files, reducing the amount of data read during operations, thus enhancing query performance."
