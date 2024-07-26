@@ -1,13 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-remote-management.consider-of-azure-virtual-machines
-title: Consider remote management of Azure virtual machines
+title: Consider remote management of Azure Virtual Machines
 metadata:
-  title: Consider remote management of Azure virtual machines
-  description: "Consider remote management of Azure virtual machines"
-  ms.date: 10/17/2023
+  title: Consider remote management of Azure Virtual Machines
+  description: "Consider remote management of Azure Virtual Machines."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/2-consider-remote-management-azure-virtual-machines.md)]
