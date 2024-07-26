@@ -2,7 +2,7 @@
 uid: learn.communication-services-voice-calling-webapp.exercise-calling-code
 title: Exercise - Add Voice Calling code
 metadata:
-  title: Exercise - Exercise - Add Voice Calling code
+  title: Exercise - Add Voice Calling code
   description: Adding code to provide voice calling with Azure Communication Services.
   author: rmcmurray
   ms.author: robmcm
