@@ -194,7 +194,7 @@ You get a single Azure Communication Services identity that's suitable for testi
 
 :::image type="content" source="../media/4-test-credentials.png" alt-text="Screenshot of the token generation window in which the test credentials are showing." lightbox="../media/4-test-credentials.png":::
 
-If you want to try calling another user, generate an extra set of credentials.
+If you want to try calling another user, generate an extra set of credentials by selecting **Generate** again. New values are created in the **Identity** and the **User Access token** fields.
 
 The first set of credentials is used for the calling user, and the second set is used for the receiving user.
 
