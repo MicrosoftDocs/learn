@@ -1,4 +1,4 @@
-You can use Azure Communication Services to make calls programmatically. In this unit, you'll create a Communication Services resource to use.
+You can use Azure Communication Services to make calls programmatically. In this unit, you create a Communication Services resource to use.
 
 ## Create a resource
 
