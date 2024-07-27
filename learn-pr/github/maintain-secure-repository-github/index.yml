@@ -18,7 +18,6 @@ abstract: |
   - Automate the detection of vulnerable dependencies with Dependabot.
   - Add a security policy with a `SECURITY.md` file.
   - Remove a commit exposing sensitive data in a pull request.
-  - Keep sensitive files out of your repository by applying the use of a `.gitignore` file.
   - Remove historical commits exposing sensitive data deep in your repository.
 prerequisites: |
   - A GitHub account
