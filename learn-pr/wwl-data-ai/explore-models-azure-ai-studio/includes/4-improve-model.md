@@ -2,7 +2,7 @@ After you deploy a model to an endpoint, you can interact with the model to expl
 
 ## Chat with a model in the playground
 
-You can interact with your model's endpoint by making an API call to the endpoint using your preferred coding language, or by chatting with the model in the playground of the Azure AI Studio. The chat playground is a quick and easy way to experiment and improve your model performance.
+You can use your preferred coding language to make an API call to your model's endpoint, or you can chat with the model directly in the Azure AI Studio playground. The chat playground is a quick and easy way to experiment and improve your model performance.
 
 :::image type="content" source="../media/chat-playground.png" alt-text="Screenshot showing the chat playground in the Azure AI Studio.":::
 
@@ -33,11 +33,11 @@ The shown JSON is the input data to your model endpoint every time you send a ne
 
 Some common prompt engineering techniques to apply as a developer by updating the system message are:
 
-- Use one or few shot(s): Provide one or more examples to help the model identify a desired pattern.
+- Use **one shot** or **few shots**: Provide one or more examples to help the model identify a desired pattern.
     :::image type="content" source="../media/use-shots.png" alt-text="Screenshot of a system message with examples.":::
-- Use chain-of-thought: Guide the model to reason step-by-step by instructing it to think through the task.
+- Use **chain-of-thought**: Guide the model to reason step-by-step by instructing it to think through the task.
     :::image type="content" source="../media/chain-of-thought.png" alt-text="Screenshot of chain-of-thought reasoning.":::
-- Add context: Enhance the model's factuality by providing additional context or background information relevant to the task. This can be done through grounding data provided with the user prompt, or by connecting your own data source.
+- Add **context**: Enhance the model's accuracy by providing context or background information relevant to the task. You can provide context through grounding data provided within the user prompt, or by connecting your own data source.
     :::image type="content" source="../media/add-context.png" alt-text="Screenshot of option to add data for context.":::
 
 ## Apply model optimization strategies
