@@ -3,11 +3,13 @@ uid: learn.wwl.migrate-very-large-databases-vldb-to-azure.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 04/27/2023
+  description: "Check what you learn in this module."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -16,13 +18,13 @@ quiz:
   questions:
   - content: "Approximately how long would the data transfer component of a fully optimized very large database (VLDB) migration to Azure take, if the database size is 30 TB?"
     choices:
-    - content: "3 hours"
+    - content: "3 hours."
       isCorrect: false
       explanation: "Incorrect. A throughput of 10 TB per hour (needed to migrate 30 TB in 3 hours) is unlikely."
-    - content: "15 hours"
+    - content: "15 hours."
       isCorrect: true
       explanation: "Correct. A fully optimized VLDB migration should achieve around 2 TB per hour migration throughput or possibly more. A throughput of 10 TB per hour (needed to migrate 30 TB in 3 hours) is unlikely."
-    - content: "30 hours"
+    - content: "30 hours."
       isCorrect: false
       explanation: "Incorrect. A fully optimized VLDB migration should achieve around 2 TB per hour migration throughput or possibly more."
   - content: "In a very large database migration, commonly four export R3load servers are used. Typically, what is export server 1 dedicated to?"
@@ -40,18 +42,18 @@ quiz:
     choices:
     - content: "UNIX server"
       isCorrect: false
-      explanation: "Incorrect. Don't run R3load on UNIX servers as the performance is poor. Two-socket commodity Intel servers with 128 GB RAM cost little and will save days or weeks of tuning/optimization or consulting time."
+      explanation: "Incorrect. Don't run R3load on UNIX servers as the performance is poor. Two-socket commodity Intel servers with 128 GB RAM cost little and saves days or weeks of tuning/optimization or consulting time."
     - content: "Intel CPU"
       isCorrect: true
-      explanation: "Correct. R3load should run on a fast new Intel CPU. Don't run R3load on UNIX servers as the performance is poor. Two-socket commodity Intel servers with 128 GB RAM cost little and will save days or weeks of tuning/optimization or consulting time."
+      explanation: "Correct. R3load should run on a fast new Intel CPU. Don't run R3load on UNIX servers as the performance is poor. Two-socket commodity Intel servers with 128-GB RAM cost little and saves days or weeks of tuning/optimization or consulting time."
     - content: "Either of the other choices, there's no significant difference in performance."
       isCorrect: false
-      explanation: "Incorrect. R3load should run on a fast new Intel CPU. Don't run R3load on UNIX servers as the performance is poor. Two-socket commodity Intel servers with 128 GB RAM cost little and will save days or weeks of tuning/optimization or consulting time."
+      explanation: "Incorrect. R3load should run on a fast new Intel CPU. Don't run R3load on UNIX servers as the performance is poor. Two-socket commodity Intel servers with 128 GB RAM cost little and saves days or weeks of tuning/optimization or consulting time."
   - content: "When migrating a very large database, what is the benefit of creating multiple clones of the source database and exporting in parallel?"
     choices:
     - content: "Exporting is faster."
       isCorrect: true
-      explanation: "Correct. If the underlying infrastructure including servers, network, and storage are scalable, then this approach tends to be linearly scalable. Exporting from two copies of the same database will be twice as fast, four copies will be four times as fast."
+      explanation: "Correct. If the underlying infrastructure including servers, network, and storage are scalable, then this approach tends to be linearly scalable. Exporting from two copies of the same database completes twice as fast, four copies complete four times as fast."
     - content: "It reduces the chance of data loss or inconsistencies."
       isCorrect: false
       explanation: "Incorrect. Exporting in parallel is unlikely to reduce the chance of data loss or inconsistencies."
@@ -62,10 +64,10 @@ quiz:
     choices:
     - content: "Once, at the end of the import process."
       isCorrect: false
-      explanation: "Incorrect. The monitoring, logging, and diagnostics that are configured during Development, Test and “dry run” migrations are important components of a VLDB migration. It's recommended to execute the SQL statement every few minutes during the runtime of the DB import, and document anything abnormal (such as high wait times)."
+      explanation: "Incorrect. The monitoring, logging, and diagnostics that are configured during Development, Test and dry run migrations are important components of a VLDB migration. It's recommended to execute the SQL statement every few minutes during the runtime of the DB import, and document anything abnormal (such as high wait times)."
     - content: "Every few minutes throughout the import process."
       isCorrect: true
-      explanation: "Correct. The monitoring, logging, and diagnostics that are configured during Development, Test and “dry run” migrations are important components of a VLDB migration. It's recommended to execute the SQL statement every few minutes during the runtime of the DB import, and document anything abnormal (such as high wait times)."
+      explanation: "Correct. The monitoring, logging, and diagnostics that are configured during Development, Test and dry run migrations are important components of a VLDB migration. It's recommended to execute the SQL statement every few minutes during the runtime of the DB import, and document anything abnormal (such as high wait times)."
     - content: "Once at the start of the import process, and once at the end of the import process."
       isCorrect: false
-      explanation: "Incorrect. The monitoring, logging, and diagnostics that are configured during Development, Test and “dry run” migrations are important components of a VLDB migration. It's recommended to execute the SQL statement every few minutes during the runtime of the DB import, and document anything abnormal (such as high wait times)."
+      explanation: "Incorrect. The monitoring, logging, and diagnostics that are configured during Development, Test and dry run migrations are important components of a VLDB migration. It's recommended to execute the SQL statement every few minutes during the runtime of the DB import, and document anything abnormal (such as high wait times)."

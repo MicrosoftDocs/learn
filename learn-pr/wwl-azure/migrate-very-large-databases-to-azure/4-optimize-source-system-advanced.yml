@@ -3,11 +3,13 @@ uid: learn.wwl.migrate-very-large-databases-vldb-to-azure.optimize-source-system
 title: Optimize the source system - advanced
 metadata:
   title: Optimize the source system - advanced
-  description: "Optimize the source system - advanced"
-  ms.date: 04/27/2023
+  description: "Optimize the source system - advanced."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/4-optimize-source-system-advanced.md)]

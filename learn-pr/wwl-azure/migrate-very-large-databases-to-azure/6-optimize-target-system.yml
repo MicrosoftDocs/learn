@@ -3,11 +3,13 @@ uid: learn.wwl.migrate-very-large-databases-vldb-to-azure.optimize-target-system
 title: Optimize the target system
 metadata:
   title: Optimize the target system
-  description: "Optimize the target system"
-  ms.date: 04/27/2023
+  description: "Optimize the target system."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/6-optimize-target-system.md)]
