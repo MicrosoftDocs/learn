@@ -4,10 +4,12 @@ title: Examine general database sizing
 metadata:
   title: Examine general database sizing
   description: "Find the optimal size and configuration for your disk layout."
-  ms.date: 03/26/2024
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/9-examine-general-database-sizing.md)]

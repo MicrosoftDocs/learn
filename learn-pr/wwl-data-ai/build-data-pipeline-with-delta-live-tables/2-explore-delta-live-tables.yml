@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-pipeline-with-delta-live-tables.explore-delta-live-tables
+title: Explore Delta Live Tables
+metadata:
+  title: Explore Delta Live Tables
+  description: "Explore Delta Live Tables"
+  ms.date: 07/23/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-explore-delta-live-tables.md)]
