@@ -4,11 +4,10 @@ title: Exercise - Bring your AI model to deploy a video analytics solution
 metadata:
   title: Exercise - Bring your AI model to deploy a video analytics solution
   description: In this section, we help learner bring YOLO model and deploy the solution.
-  ms.date: 05/04/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 15
 content: |
   [!include[](includes/12-exercise-bring-ai-model-deploy-solution.md)]

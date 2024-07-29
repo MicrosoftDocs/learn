@@ -31,6 +31,5 @@ modules:
 - learn.wwl.develop-code-features-using-github-copilot-tools
 - learn.wwl.develop-unit-tests-using-github-copilot-tools
 - learn.wwl.implement-code-improvements-using-github-copilot-tools
-- learn.advanced-github-copilot
 trophy:
   uid: learn.wwl.accelerate-app-development-using-github-copilot.trophy

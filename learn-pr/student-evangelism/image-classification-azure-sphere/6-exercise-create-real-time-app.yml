@@ -4,11 +4,10 @@ title: Exercise - Create a real-time image classification application
 metadata:
   title: Exercise - Create a real-time image classification application
   description: In this section, we help the learner to create a real-time application to deploy Azure Sphere.
-  ms.date: 06/19/2020
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/6-exercise-create-real-time-app.md)]

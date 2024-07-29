@@ -3,8 +3,8 @@ uid: learn.wwl.deploy-single-instance-implementations-2-tier-3-tier.prepare-azur
 title: Prepare Azure Virtual Machines for a manual installation of SAP HANA
 metadata:
   title: Prepare Azure Virtual Machines for a manual installation of SAP HANA
-  description: "Prepare Azure Virtual Machines for a manual installation of SAP HANA."
-  ms.date: 03/07/2024
+  description: "Learn how to prepare Azure Virtual Machines for a manual installation of SAP HANA."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
