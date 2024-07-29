@@ -6,7 +6,7 @@ Now you have:
 - Explored site recovery.
 - Implemented disaster recovery for SAP deployments across Azure regions with Azure Site Recovery.
 - Set up disaster recovery for a multi-tier SAP NetWeaver app deployment (in Azure).
-- Replicated Azure Virtual Machines running in Proximity Placement Groups to another region.
+- Replicated Azure Virtual Machines running in proximity placement groups to another region.
 - Set up site recovery for virtual machines in proximity placement groups - Azure to Azure.
 - Set up disaster recovery for Active Directory and DNS.
 
