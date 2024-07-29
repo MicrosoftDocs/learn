@@ -13,7 +13,7 @@ In the Azure AI Studio, you can navigate to the model catalog to explore all ava
 > [!Tip]
 > Hugging Face is an open-source community making models available to the public. You can find all models in their [catalog](https://huggingface.co/models?azure-portal=true). Additionally, you can explore the documentation to learn more about how individual models work, like [BERT](https://huggingface.co/docs/transformers/main/model_doc/bert?azure-portal=true).
 
-:::image type="content" source="../media/model-catalog.png" alt-text="Screenshot of the model catalog in the Azure AI Studio.":::
+:::image type="content" source="../media/model-catalog.png" alt-text="Screenshot of the model catalog in the Azure AI Studio." lightbox="../media/model-catalog.png":::
 
 The Azure AI Studio model catalog integrates with models from Hugging Face and other sources. Through the model catalog, you can explore, fine-tune, and deploy models.
 
