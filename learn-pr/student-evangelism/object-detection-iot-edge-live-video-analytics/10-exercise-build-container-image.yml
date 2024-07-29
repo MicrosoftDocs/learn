@@ -4,11 +4,10 @@ title: Exercise - Build a container image with YOLO model and deploy it to IoT E
 metadata:
   title: Exercise - Build a container image with YOLO model and deploy it to IoT Edge
   description: In this section, we help learner build a container image and push it to edge device.
-  ms.date: 05/04/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 15
 content: |
   [!include[](includes/10-exercise-build-container-image.md)]

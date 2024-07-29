@@ -3,11 +3,13 @@ uid: learn.wwl.identify-sap-certified-configurations.identify-deployment-options
 title: Identify deployment options for SAP solutions on Azure
 metadata:
   title: Identify deployment options for SAP solutions on Azure
-  description: "Identify deployment options for SAP solutions on Azure"
-  ms.date: 02/14/2024
+  description: "Identify deployment options customers have when deploying SAP products in Azure."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/3-identify-deployment-options-sap-solutions-on-azure.md)]

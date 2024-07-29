@@ -4,10 +4,12 @@ title: Examine Azure Virtual Machine storage considerations
 metadata:
   title: Examine Azure Virtual Machine storage considerations
   description: "Explore multiple considerations recommended when planning your Azure Virtual Machine storage."
-  ms.date: 03/26/2024
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/10-examine-azure-virtual-machine-storage-considerations.md)]

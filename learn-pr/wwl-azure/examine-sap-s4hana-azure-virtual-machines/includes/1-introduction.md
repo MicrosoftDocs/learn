@@ -7,3 +7,7 @@ You review the architecture options available when deploying SAP S/4HANA on Azur
 - Explore SAP S/4HANA on Azure Virtual Machines.
 - Learn to recognize the architecture's components.
 - Examine a sample functional workflow.
+
+## Course video training
+
+Enhance your learning experience with additional insights and expert guidance in the [AZ-120 On Demand Instructor-led Training Video series](/shows/on-demand-instructor-led-training-series/?products=azure&terms=az-120). Perfect for those looking for a supplementary resource to reinforce understanding, with the flexibility to cover the course content at your own pace.

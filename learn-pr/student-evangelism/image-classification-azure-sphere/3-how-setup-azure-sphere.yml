@@ -4,11 +4,10 @@ title: How to set up Azure Sphere
 metadata:
   title: How to set up Azure Sphere
   description: In this section, we guide the learner in how to set up Azure Sphere.
-  ms.date: 06/19/2020
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/3-how-setup-azure-sphere.md)]

@@ -3,7 +3,7 @@ uid: learn.azure.deploy-manage-azure-arc-data-controller
 metadata:
   title: Deploy and manage Azure Arc data controller
   description: Azure Arc-enabled data controller serves as the basis for deployment of Azure Arc-enabled data services.
-  ms.date: 12/19/2022
+  ms.date: 07/22/2024
   author: MikeRayMSFT
   ms.author: mikeray
   manager: jroth
@@ -18,9 +18,10 @@ abstract: |
     - Deploy an Azure Arc data controller.
     - Manage an Azure Arc data controller.
 prerequisites: |
-  - Experience implementing and managing Platform-as-a-Service (PaaS) services in Microsoft Azure.
-  - Intermediate knowledge of Azure management, including the ability to navigate the Azure portal and run Azure CLI commands.
-  - Intermediate knowledge of containerization and container orchestration by using Kubernetes.
+  - Experience implementing and managing Platform-as-a-Service (PaaS) services in Microsoft Azure
+  - Intermediate knowledge of Azure management, including the ability to navigate the Azure portal and run Azure CLI commands
+  - Intermediate knowledge of containerization and container orchestration by using Kubernetes
+  - An Azure subscription with either the Owner or User Access Administrator role
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate

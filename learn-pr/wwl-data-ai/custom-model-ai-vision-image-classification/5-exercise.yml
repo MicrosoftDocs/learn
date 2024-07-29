@@ -3,11 +3,13 @@ uid: learn.wwl.custom-model-ai-vision-image-classification.exercise
 title: Exercise - Classify images with an Azure AI Vision custom model
 metadata:
   title: Exercise - Classify images with an Azure AI Vision custom model
-  description: "Create an Azure AI Vision custom model to classify images, image classification"
-  ms.date: 01/29/2024
+  description: Create an Azure AI Vision custom model to classify images, image classification
   author: ivorb
   ms.author: berryivor
+  ms.date: 01/29/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 labId: 152410
 labModal: true
 durationInMinutes: 20

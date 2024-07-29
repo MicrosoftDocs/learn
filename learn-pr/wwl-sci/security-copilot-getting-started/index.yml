@@ -2,13 +2,15 @@
 uid: learn-wwl.security-copilot-getting-started
 metadata:
   title: Describe Microsoft Copilot for Security
-  description: "Describe Microsoft Copilot for Security."
-  ms.date: 10/31/2023
+  description: Describe Microsoft Copilot for Security.
   author: ceperezb
   ms.author: ceperezb
-  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.date: 10/31/2023
   ms.service: security-copilot
   ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Describe Microsoft Copilot for Security
 summary: |
   Get acquainted with Microsoft Copilot for Security. You are introduced to some basic terminology, how Microsoft Copilot for Security processes prompts, the elements of an effective prompt, and how to enable the solution.

@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.perform-data-analysis-azure-databricks
+metadata:
+  title: Perform data analysis with Azure Databricks
+  description: Perform data analysis with Azure Databricks
+  ms.date: 07/25/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: module
+  ms.service: azure
+title: Perform data analysis with Azure Databricks
+summary: Learn how to perform data analysis using Azure Databricks. Explore various data ingestion methods and how to integrate data from sources like Azure Data Lake and Azure SQL Database. This module guides you through using collaborative notebooks to perform exploratory data analysis (EDA), so you can visualize, manipulate, and examine data to uncover patterns, anomalies, and correlations.
+abstract: |
+  In this module, you learn how to:
+  - Ingest data using Azure Databricks.
+  - Using the different data exploration tools in Azure Databricks.
+  - Analyze data with DataFrame APIs.
+prerequisites: |
+  Before starting this module, you should have a fundamental knowledge of data analytics concepts. Consider completing [Azure Data Fundamentals certification](/certifications/azure-data-fundamentals?azure-portal=true) before starting this module.
+iconUrl: /learn/achievements/describe-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.perform-data-analysis-azure-databricks.introduction
+- learn.wwl.perform-data-analysis-azure-databricks.ingest-data
+- learn.wwl.perform-data-analysis-azure-databricks.data-exploration-tools
+- learn.wwl.perform-data-analysis-azure-databricks.data-analysis
+- learn.wwl.perform-data-analysis-azure-databricks.exercise
+- learn.wwl.perform-data-analysis-azure-databricks.knowledge-check
+- learn.wwl.perform-data-analysis-azure-databricks.summary
+badge:
+  uid: learn.wwl.perform-data-analysis-azure-databricks.badge

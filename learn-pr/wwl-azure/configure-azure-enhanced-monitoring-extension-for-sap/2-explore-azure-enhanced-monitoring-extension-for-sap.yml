@@ -3,8 +3,8 @@ uid: learn.wwl.configure-azure-enhanced-monitoring-extension-for-sap.explore
 title: Explore the Azure Enhanced Monitoring Extension for SAP
 metadata:
   title: Explore the Azure Enhanced Monitoring Extension for SAP
-  description: "Explore the Azure Enhanced Monitoring Extension for SAP"
-  ms.date: 03/18/2024
+  description: "Explore the Azure Enhanced Monitoring Extension for SAP, a virtual machine extension that needs to be deployed by you to provide some basic data about the Azure infrastructure to the SAP Host Agent."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

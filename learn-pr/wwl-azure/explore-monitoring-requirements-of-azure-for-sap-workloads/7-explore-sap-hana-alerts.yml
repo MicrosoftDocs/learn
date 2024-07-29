@@ -3,8 +3,8 @@ uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.explor
 title: Explore SAP HANA alerts
 metadata:
   title: Explore SAP HANA alerts
-  description: "Explore SAP HANA alerts"
-  ms.date: 03/19/2024
+  description: "Explore SAP HANA alerts, including alerts for the CPU, operating system, memory, network, and storage."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

@@ -3,11 +3,13 @@ uid: learn.wwl.explore-azure-networking.examine-azure-routing-configurations
 title: Examine Azure routing configurations
 metadata:
   title: Examine Azure routing configurations
-  description: "Examine Azure routing configurations"
-  ms.date: 10/17/2023
+  description: "Explore modifying the default Azure routing configuration."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/13-examine-azure-routing-configurations.md)]

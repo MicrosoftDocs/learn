@@ -3,11 +3,13 @@ uid: learn.wwl.build-language-understanding-model.use-pre-built-entity-component
 title: Use pre-built entity components
 metadata:
   title: Use pre-built entity components
-  description: "Use pre-built entity components"
-  ms.date: 11/07/2023
+  description: Use pre-built entity components
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 11/07/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
