@@ -3,12 +3,13 @@ uid: learn.oxford.intro-to-iot-hub
 metadata:
   title: "Introduction to Azure IoT Hub"
   description: "Learn how to assess the characteristics of Azure IoT Hub and determine scenarios when to use IoT Hub."
-  ms.date: 9/29/2019
+  ms.date: 07/20/2024
   author: leestott
   ms.author: chnoring
   ms.topic: module
-  ms.custom: team=nextgen
+  ms.custom: team=cloud-advocates
   ms.service: iot-hub
+  ms.collection: ce-advocates-ai-copilot        # Oxford University Module - Oxford responsible for ongoing maintenance
 title: "Introduction to Azure IoT Hub"
 summary: "Assess the characteristics of Azure IoT Hub and determine scenarios when to use IoT Hub."
 abstract: |
