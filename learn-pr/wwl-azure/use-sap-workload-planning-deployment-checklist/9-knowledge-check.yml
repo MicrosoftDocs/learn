@@ -3,8 +3,8 @@ uid: learn.wwl.use-sap-workload-planning-deployment-checklist.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 04/20/2023
+  description: "Check what you learn in this module."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -14,36 +14,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When initiating a project to deploy an SAP workload to Azure, which of the following is part of the project preparation and planning phase in the SAP workload planning and deployment checklist?"
+  - content: "When initiating a project to deploy an SAP workload to Azure, which of the following tasks is part of the project preparation and planning phase in the SAP workload planning and deployment checklist?"
     choices:
-    - content: "Perform technical validation"
+    - content: "Perform technical validation."
       isCorrect: false
-      explanation: "That’s incorrect. Technical validation takes place during the pilot phase."
+      explanation: "Incorrect. Technical validation takes place during the pilot phase."
     - content: "Data reduction and data migration plan for transferring SAP data into Azure (in migration scenarios)."
       isCorrect: true
-      explanation: "That's correct. The project preparation phase includes data reduction and data migration plan for transferring SAP data into Azure (in migration scenarios)."
+      explanation: "Correct. The project preparation phase includes data reduction and data migration plan for transferring SAP data into Azure (in migration scenarios)."
     - content: "Optimizing price/performance ratio of Azure compute and storage resources."
       isCorrect: false
-      explanation: "That’s incorrect. Optimizing price/performance ratio of Azure compute and storage resources takes place during the post-production phase."
+      explanation: "Incorrect. Optimizing price/performance ratio of Azure compute and storage resources takes place during the post-production phase."
   - content: "The following is a list of some of the steps in the pilot phase of deploying an SAP workload to Azure using the SAP workload planning and deployment checklist. 1. Optimize data transfer into Azure. 2. Test and optimize export and import phases. 3. Perform technical validation. 4. Test performance. Which step is missing?"
     choices:
     - content: "Perform security checks"
       isCorrect: true
-      explanation: "That's correct. Performing security checks is a crucial stage of the pilot phase of the deployment process."
+      explanation: "Correct. Performing security checks is a crucial stage of the pilot phase of the deployment process."
     - content: "Monitor and analyze Azure resource billing"
       isCorrect: false
-      explanation: "That’s incorrect. Monitoring and analyzing Azure resource billing takes place during the post-production phase."
+      explanation: "Incorrect. Monitoring and analyzing Azure resource billing takes place during the post-production phase."
     - content: "Record availability requirements"
       isCorrect: false
-      explanation: "That’s incorrect. Recording availability requirements takes place during the non-production phase."
+      explanation: "Incorrect. Recording availability requirements takes place during the non-production phase."
   - content: "What is the last step that should be carried out when an SAP workload has just reached the Go Live stage of its deployment to Azure, if there are other SAP systems that weren't part of the current Go Live phase, but which communicate with the deployed workload?"
     choices:
     - content: "Perform database backups"
       isCorrect: false
-      explanation: "That’s incorrect. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that were moved into Azure in the current Go Live phase, the user needs to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances that were moved into Azure."
+      explanation: "Incorrect. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that were moved into Azure in the current Go Live phase, the user needs to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances that were moved into Azure."
     - content: "Verify that monitoring is operational"
       isCorrect: false
-      explanation: "That’s incorrect. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that were moved into Azure in the current Go Live phase, the user needs to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances that were moved into Azure."
+      explanation: "Incorrect. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that were moved into Azure in the current Go Live phase, the user needs to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances that were moved into Azure."
     - content: "Reset the host name buffer"
       isCorrect: true
-      explanation: "That's correct. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that were moved into Azure in the current Go Live phase, the user needs to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances that were moved into Azure."
+      explanation: "Correct. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that were moved into Azure in the current Go Live phase, the user needs to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances that were moved into Azure."

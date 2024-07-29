@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-sap-workload-planning-deployment-checklist.explore-non-production-phase
-title: Explore the non-production phase
+title: Explore the nonproduction phase
 metadata:
-  title: Explore the non-production phase
-  description: "Explore the non-production phase"
-  ms.date: 04/20/2023
+  title: Explore the nonproduction phase
+  description: "Explore the nonproduction phase of deploying SAP workloads to Azure."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

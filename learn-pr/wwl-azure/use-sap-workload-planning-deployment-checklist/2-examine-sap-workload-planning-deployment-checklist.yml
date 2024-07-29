@@ -3,8 +3,8 @@ uid: learn.wwl.use-sap-workload-planning-deployment-checklist.examine
 title: Examine the SAP workload planning and deployment checklist
 metadata:
   title: Examine the SAP workload planning and deployment checklist
-  description: "Examine the SAP workload planning and deployment checklist"
-  ms.date: 04/20/2023
+  description: "Examine the SAP workload planning and deployment checklist when initiating a project to deploy SAP workloads to Azure."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

@@ -3,8 +3,8 @@ uid: learn.wwl.use-sap-workload-planning-deployment-checklist.explore-production
 title: Explore the production preparation phase
 metadata:
   title: Explore the production preparation phase
-  description: "Explore the production preparation phase"
-  ms.date: 04/20/2023
+  description: "Explore the production preparation phase of deploying SAP workloads to Azure."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
