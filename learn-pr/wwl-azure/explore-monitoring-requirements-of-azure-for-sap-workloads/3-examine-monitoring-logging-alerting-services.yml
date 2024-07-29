@@ -3,8 +3,8 @@ uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.examin
 title: Examine monitoring, logging, and alerting services
 metadata:
   title: Examine monitoring, logging, and alerting services
-  description: "Examine monitoring, logging, and alerting services"
-  ms.date: 03/19/2024
+  description: "Examine monitoring, logging, and alerting services provided by Microsoft cloud-based monitoring, including Azure Monitor, Azure Advisor, Azure Service Health, and Azure Activity Log."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

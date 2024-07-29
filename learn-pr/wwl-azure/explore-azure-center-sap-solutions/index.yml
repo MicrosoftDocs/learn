@@ -2,26 +2,32 @@
 uid: learn.wwl.explore-azure-center-sap-solutions
 metadata:
   title: Explore Azure Center for SAP solutions
-  description: SAP professionals work to manage SAP workloads efficiently on a secure, scalable, and reliable cloud platform. This module explores how Azure Center for SAP Solutions (ACSS) helps achieve these goals.
-  ms.date: 03/26/2024
+  description: "SAP professionals work to manage SAP workloads efficiently on a secure, scalable, and reliable cloud platform. This module explores how Azure Center for SAP Solutions (ACSS) helps achieve these goals."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
   ms.custom:
   - N/A
-  ai-usage: ai-assisted
   ms.service: sap-on-azure
+  ai-usage: ai-assisted
 title: Explore Azure Center for SAP solutions
 summary: SAP professionals are responsible for managing SAP workloads more efficiently on a secure, scalable, and reliable cloud platform. In this module, we will explore how Azure Center for SAP Solutions (ACSS) can help you achieve these goals.
 abstract: |
   After completing this module, you will be able to:
+
   -   Explain Azure Center for SAP Solutions (ACSS) and its services.
+
   -   Deploy SAP workloads on Azure or register existing SAP workloads with ACSS.
+
   -   Use ACSS to manage new and existing SAP workloads on Azure.
+
   -   Monitor and troubleshoot SAP workloads on Azure.
 prerequisites: |
   Before taking this training, you should complete:
+
   -   Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+
   -   SAP HANA or NetWeaver training.
 iconUrl: /training/achievements/generic-badge.svg
 levels:

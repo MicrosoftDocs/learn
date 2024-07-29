@@ -3,11 +3,13 @@ uid: learn.wwl.implement-ha-sap-netweaver-anydb.implement-highly-available-nfs-s
 title: Implement a highly available NFS share
 metadata:
   title: Implement a highly available NFS share
-  description: "Implement a highly available NFS share"
-  ms.date: 03/19/2024
+  description: "Learn how to implement a highly available NFS share."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/9-implement-highly-available-nfs-share.md)]
