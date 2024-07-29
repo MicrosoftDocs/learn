@@ -1,4 +1,4 @@
-Enterprises use their private mobile networks to attach various UE devices. Each UE uses a SIM or eSIM to identify and authenticate itself to the network.
+Enterprises use their private mobile networks to attach various user equipment (UE) devices. Each UE uses a SIM or eSIM to identify and authenticate itself to the network.
 
 To effectively manage the network traffic between the UEs and the data networks (DNs), Azure Private 5G Core allows you to define SIM policies that are applied to the SIMs. SIM policies ensure that the network requirements of each UE are satisfied and the packet flows from each UE are appropriately controlled.
 
@@ -33,7 +33,7 @@ The following diagram shows an example PDU session:
 
 :::image type="content" source="../media/pdu-qos-example.png" alt-text="An diagram that shows an example PDU session." border="true":::
 
-As shown in the example, IP flow 1 and IP flow 2 are for different services, so they're respectively assigned to SDF 1 and SDF 2. However, SDF 1 and SDF 2 require the same QoS characteristics, so they're bound to the same QoS flow, QoS flow1. QoS profile 1 defines the QoS characteristics of QoS flow 1.
+In the preceding example, **IP flow 1** and **IP flow 2** are assigned to **SDF 1** and **SDF 2** respectively, because they're for different services. However, **SDF 1** and **SDF 2** require the same QoS characteristics, so we bind them to the same QoS flow, **QoS flow 1**. **QoS profile 1** defines the QoS characteristics of **QoS flow 1**.
 
 In 4G networks, the packet core instance helps to establish packet data network (PDN) connections to transport user plane traffic. PDN connections also contain one or more SDFs. The SDFs are bound to Evolved Packet System (EPS) bearers. EPS bearers are also assigned a QoS profile. Each EPS bearer is assigned an EPS bearer ID (EBI), which is used by network elements to map SDFs to EPS bearers.
 
@@ -48,7 +48,7 @@ A service is a representation of a set of QoS characteristics you apply to SDFs 
 Each service includes:
 
 - One or more data flow policy rules identifying the SDFs to which the service should be applied.
-- Optionally, a set of QoS characteristics that should be applied on SDFs matching the service. The packet core instance uses these characteristics to create a QoS flow or EPS bearer to bind to matching SDFs.
+- An optional set of QoS characteristics that should be applied on SDFs matching the service. The packet core instance uses these characteristics to create a QoS flow or EPS bearer to bind to matching SDFs.
 
 A SIM policy defines a set of interoperability settings that can be assigned to one or more SIMs.
 
@@ -57,7 +57,7 @@ Each SIM policy includes:
 - Top-level settings that are applied to every SIM using the SIM policy.
 - A network scope that defines the network slice and DN to which the SIM policy applies.
 
-  You can use the network scope to determine the services offered to SIMs on the DN and the set of QoS characteristics that are used to form the default QoS flow for PDU sessions (or EPS bearer for PDN connections in 4G networks).
+  You can use the network scope to determine the services offered to SIMs on the DN and the set of QoS characteristics. These characteristics are used to form the default QoS flow for PDU sessions, or EPS bearer for PDN connections in 4G networks.
 
 In each SIM policy, you can specify how the network traffic from relevant UEs should be controlled on a per slice and DN basis. The following diagram shows how the network traffic is controlled with different slices and DNs.
 
@@ -86,7 +86,7 @@ For details, see [Policy control](/azure/private-5g-core/policy-control).
 
 ### Configure a service through the Azure portal
 
-Services are representations of a particular set of QoS information that you want to offer to the UEs. For example, you might want to configure a service that provides higher bandwidth limits for particular traffic.
+A service is a representation of a particular set of QoS information that you want to offer to the UE. For example, you might want to configure a service that provides higher bandwidth limits for particular traffic.
 
 To create a new service, take these steps:
 

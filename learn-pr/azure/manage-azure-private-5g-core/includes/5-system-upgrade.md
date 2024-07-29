@@ -1,8 +1,8 @@
 To use the latest features that Azure Private 5G Core offers and to maintain the support you need for your private mobile network, plan to upgrade your packet core to new releases as they're available.
 
-When a new version is available, Azure Private 5G Core displays a message for the relevant **Packet Core Control Plane** resource through the Azure portal, reminding you to upgrade. The network functions of a site won't be available while you upgrade the packet core instance of the site, so [plan your upgrade](#plan-to-upgrade-a-packet-core-instance) carefully before starting the upgrade process.
+When a new version is available, Azure Private 5G Core displays a message for the relevant **Packet Core Control Plane** resource through the Azure portal, reminding you to upgrade. The network functions of a site aren't available while you upgrade the packet core instance of the site, so [plan your upgrade](#plan-to-upgrade-a-packet-core-instance) carefully before starting the upgrade process.
 
-A new version of the packet core may not be compatible with the version of the underlying system that you use. In that case, you'll need to [upgrade the underlying system](#upgrade-the-underlying-system) first. The Azure portal will warn you about the incompatibility between the new version and the underlying ASE system.
+A new version of the packet core might not be compatible with the version of the underlying system that you use. In that case, you need to [upgrade the underlying system](#upgrade-the-underlying-system) first. The Azure portal warns you about the incompatibility between the new version and the underlying ASE system.
 
 > [!TIP]
 > You can check the current version of a packet core instance and list all the available packet core versions with the [Azure Private 5G Core REST API](/rest/api/mobilenetwork/).
@@ -15,26 +15,26 @@ Follow these guidelines while you plan:
 
 - Set aside an upgrade window with sufficient time reserved.
 
-  Based on your network configuration, the upgrade windows can be up to a few hours. The network functions won't be available during the upgrade and possible rollback.
+  Based on your network configuration, the upgrade windows can be up to a few hours. The network functions aren't available during the upgrade and possible rollback.
 
 - Check if you need to [upgrade the underlying system](#upgrade-the-underlying-system) first.
 
 - Back up necessary deployment information.
 
-  Some configuration information will be overwritten during the upgrade. The information you may need to back up includes:
+  Some configuration information is overwritten during the upgrade. The information you might need to back up includes:
 
   - The authentication information for the packet core dashboards and the distributed tracing tool:
     - The Kubernetes Secret Object YAML file if you use the [Microsoft Entra authentication method](/azure/private-5g-core/enable-azure-active-directory).
     - The sign-in credentials if you use the local usernames/passwords authentication method.
   - The customizations you made to the packet core dashboards. See the Grafana documentation for instructions on saving a backed-up copy of your dashboards.
   - The traces you want to retain for the distributed tracing tool.
-  - The recovery steps for any UEs that can't automatically re-register. For details, check relevant UE documentation.
+  - The recovery steps for any user equipment (UE) that can't automatically re-register. For details, check the relevant UE documentation.
 
-- For a private mobile network that has multiple sites, upgrade the packet core instance in one site first.
+- Upgrade cautiously for a private mobile network that has multiple sites, by upgrading the packet core instance in one site first.
 
-  After the upgrade of the site, summarize what you've learned and then proceed to upgrade the packet core instances in other sites accordingly.  
+  After the upgrade of the site, summarize what you learned and then proceed to upgrade the packet core instances in other sites accordingly.  
 
-- Check local alarms, dashboard activities, and test UE devices, to make sure everything works as expected after the upgrade. If UE devices aren't attached, use the local distributed tracing tool or the integrated diagnostic capture tool for further investigation.
+- Ensure that everything works as expected after the upgrade by checking local alarms, dashboard activities, and testing UE devices. If UE devices aren't attached, use the local distributed tracing tool or the integrated diagnostic capture tool for further investigation.
 
   For example, you can check the network statistics through the platform metrics or the packet core dashboards.
 
@@ -65,29 +65,29 @@ If you're familiar with ARM templates, you can also use an ARM template to upgra
 
 If you encounter issues after an upgrade, you can roll back the packet core instance to the previous version.
 
-The rollback process is almost the same as the upgrade process. The only difference is that you'll select a lower version to which to roll back.
+The rollback process is almost the same as the upgrade process. The only difference is that you select a lower version to which to roll back.
 
-Similar to the upgrade process, you'll need to [plan](#plan-to-upgrade-a-packet-core-instance) for the rollback. For example, if you made any configuration changes for the new version of the packet core, you'll need to do necessary backup before the rollback.
+Similar to the upgrade process, you need to [plan](#plan-to-upgrade-a-packet-core-instance) for the rollback. For example, if you made any configuration changes for the new version of the packet core, you need to do necessary backup before the rollback.
 
 For detailed instructions, see [Upgrade the packet core instance in a site](/azure/private-5g-core/upgrade-packet-core-azure-portal).
 
 ## Reinstall a packet core instance
 
-If you're experiencing issues with your deployment, reinstalling the packet core may help return it to a good state.
+If you're experiencing issues with your deployment, reinstalling the packet core might help return it to a good state.
 
 When you reinstall a packet core instance, Azure Private 5G Core first uninstalls the current instance, and then installs a new instance with the existing site configuration.
 
-To reinstall a packet core instance, follow the instructions for [planning](#plan-to-upgrade-a-packet-core-instance) and [performing](#upgrade-a-packet-core-instance) an upgrade. The only difference from the upgrade process is that instead of the **Upgrade version** button, you'll need to select the **Reinstall packet core** button, as shown in the following screenshot:
+To reinstall a packet core instance, follow the instructions for [planning](#plan-to-upgrade-a-packet-core-instance) and [performing](#upgrade-a-packet-core-instance) an upgrade. The only difference from the upgrade process is that instead of the **Upgrade version** button, you need to select the **Reinstall packet core** button, as shown in the following screenshot:
 
 :::image type="content" source="../media/reinstall-packet-core.png" alt-text="A screenshot that shows the Reinstall packet core button." border="true":::
 
 ## Upgrade the underlying system
 
-If the version of the packet core to which you want to upgrade requires a new version of Azure Stack Edge (ASE), you'll need to upgrade the ASE before upgrading the packet core instance. The article [Packet core and ASE compatibility](/azure/private-5g-core/azure-stack-edge-packet-core-compatibility) provides more information about this version dependency.
+If the version of the packet core to which you want to upgrade requires a new version of Azure Stack Edge (ASE), you need to upgrade the ASE before upgrading the packet core instance. The article [Packet core and ASE compatibility](/azure/private-5g-core/azure-stack-edge-packet-core-compatibility) provides more information about this version dependency.
 
-When you upgrade the ASE, the Azure Kubernetes services running on it will be automatically upgraded.
+When you upgrade the ASE, the Azure Kubernetes services running on it are automatically upgraded.
 
 > [!NOTE]
-> Your packet core instance will be affected during the upgrade of its underlying ASE. Plan your service maintenance window as necessary.
+> Your packet core instance is affected during the upgrade of its underlying ASE. Plan your service maintenance window as necessary.
 
 For detailed instructions about upgrading ASE, see [Update your Azure Stack Edge Pro GPU](/azure/databox-online/azure-stack-edge-gpu-install-update).

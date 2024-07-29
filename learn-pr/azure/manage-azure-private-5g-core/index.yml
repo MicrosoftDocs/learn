@@ -11,7 +11,7 @@ metadata:
 title: Manage the Azure Private 5G Core service
 summary: "Describes Azure Private 5G Core routine management tasks, including site management, SIM management, and system upgrading tasks."
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Give examples of routine management tasks for a private mobile network.
     - Manage sites in a private mobile network.
     - Manage SIMs, SIM policies, and services for user equipment in a private mobile network.

@@ -3,7 +3,7 @@ uid: learn.manage-azure-private-5g-core.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Checks that you've successfully learned the routine tasks for managing the Azure Private 5G Core service.
+  description: Checks that you successfully learned the routine tasks for managing the Azure Private 5G Core service.
   ms.date: 11/29/2022
   author: lnyswonger
   ms.author: lnyswonger
@@ -16,21 +16,21 @@ quiz:
     choices:
     - content: "The **Packet Core Control Plane** resource for the packet core instance."
       isCorrect: true
-      explanation: "Correct. To modify a packet core instance through the Azure portal, you'll need to open the relevant **Packet Core Control Plane** resource, and then select **Modify packet core**."
+      explanation: "Correct. To modify a packet core instance through the Azure portal, you need to open the relevant **Packet Core Control Plane** resource, and then select **Modify packet core**."
     - content: "The packet core dashboards."
       isCorrect: false
       explanation: "Try again. The packet core dashboards are for monitoring a packet core instance locally, but they can't be used to modify the packet core instance."
     - content: "The platform metrics."
       isCorrect: false
       explanation: "Try again. The platform metrics are for monitoring a packet core instance through the Azure portal. They can't be used to modify the packet core instance."
-  - content: "How should the network traffic for UEs attached to a private mobile network be controlled?"
+  - content: "How should the network traffic for user equipment (UE) attached to a private mobile network be controlled?"
     choices:
-    - content: "Define traffic control rules in ASE."
+    - content: "Define traffic control rules in Azure Stack Edge (ASE)."
       isCorrect: false
       explanation: "Try again. ASE is the platform that hosts the packet core instance for each site. You can't control the network traffic from UEs in ASE."
     - content: "Reduce the number of UEs attached in the network."
       isCorrect: false
-      explanation: "Try again. The number of UEs is only one factor that affects the network traffic. There are many other factors to consider. For example, some UEs may require high bandwidth and some others may require low latency."
+      explanation: "Try again. The number of UEs is only one factor that affects the network traffic. There are many other factors to consider. For example, some UEs might require high bandwidth and some others might require low latency."
     - content: "Use SIM policies to control the network traffic for different UEs."
       isCorrect: true
       explanation: "Correct. Azure Private 5G Core allows you to define SIM policies and assign them to the SIMs representing UEs. In each policy, you can define network traffic control details."
@@ -47,23 +47,23 @@ quiz:
       explanation: "Try again. SIMs must be provisioned through Azure Private 5G Core. They can't be provisioned through ASE, which is the platform that hosts Azure Private 5G Core."
   - content: "What is the condition for using static IP addresses for SIMs in a private mobile network?"
     choices:
-    - content: "The relevant packet core instance(s) must have been configured with static IP address allocation."
+    - content: "One or more relevant packet core instances must already be configured with static IP address allocation."
       isCorrect: true
-      explanation: "Correct. The static IP addresses of SIMs require static IP address allocation support by the relevant packet core instance(s)."
+      explanation: "Correct. The static IP addresses of SIMs require static IP address allocation support by the relevant packet core instances."
     - content: "The SIMs requiring static IP addresses must be in the same SIM group."
       isCorrect: false
-      explanation: "Try again. SIM groups aren't used for IP address allocation. Instead, the relevant packet core instance(s) will be used."
+      explanation: "Try again. SIM groups aren't used for IP address allocation. Instead, the relevant packet core instances are used."
     - content: "The SIMs must be assigned a SIM policy that has a static IP address."
       isCorrect: false
       explanation: "Try again. SIM policies aren't assigned IP addresses. They're mainly for network traffic control."
   - content: "How should a packet core instance be upgraded?"
     choices:
-    - content: "Upgrade the ASE, which will automatically upgrade the packet core."
+    - content: "Upgrade the ASE, which automatically upgrades the packet core."
       isCorrect: false
-      explanation: "Try again. A new version of the packet core may require the underlying ASE to be upgraded. However, a packet core instance won't be automatically upgraded if its underlying ASE is upgraded."
-    - content: "Upgrade the Azure Kubernetes Service (AKS), which will automatically upgrade both the ASE and the packet core."
+      explanation: "Try again. A new version of the packet core might require the underlying ASE to be upgraded. However, a packet core instance isn't automatically upgraded if its underlying ASE is upgraded."
+    - content: "Upgrade the Azure Kubernetes Service (AKS), which automatically upgrades both the ASE and the packet core."
       isCorrect: false
-      explanation: "Try again. Upgrading the AKS won't automatically upgrade the packet core or the ASE."
+      explanation: "Try again. Upgrading the AKS doesn't automatically upgrade the packet core or the ASE."
     - content: "Upgrade the ASE if necessary, and then upgrade the packet core through the **Packet Core Control Plane** resource."
       isCorrect: true
       explanation: "Correct. You can use the **Packet Core Control Plane** resource to upgrade the relevant packet core instance."
