@@ -3,11 +3,13 @@ uid: learn.wwl.perform-backups-restores.explore-sap-hana-backup
 title: Explore SAP HANA backup
 metadata:
   title: Explore SAP HANA backup
-  description: "Explore SAP HANA backup"
-  ms.date: 10/27/2023
+  description: "Explore two methods for backing up SAP HANA on Azure Virtual Machines."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/6-explore-sap-hana-backup.md)]

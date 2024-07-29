@@ -3,11 +3,13 @@ uid: learn.wwl.perform-backups-restores.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 10/27/2023
+  description: "Check what you learn in this module."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/15-knowledge-check.md)]
@@ -25,28 +27,28 @@ quiz:
     - content: "No users"
       isCorrect: true
       explanation: "Correct. Only the root user should have \"read\" and \"write\" permissions to VMSnapshotScriptPluginConfig.json, and no users should have \"execute\" permissions."
-  - content: "How does implementing application-consistent backup of Azure virtual machines differ between Windows and Linux?"
+  - content: "How does implementing application-consistent backup of Azure Virtual Machines differ between Windows and Linux?"
     choices:
     - content: "There's no difference, the process is handled identically in both cases."
       isCorrect: false
-      explanation: "Incorrect. When taking application-consistent snapshots of Linux VMs, Azure Backup invokes only the pre/post scripts written by the user. If the pre-scripts and post-scripts execute successfully, Azure Backup marks the recovery point as application consistent. However, with custom scripts, the user is ultimately responsible for application consistency."
+      explanation: "Incorrect. When Azure Backup takes application-consistent snapshots of Linux virtual machines, it invokes only the pre/post scripts written by the user. If the pre-scripts and post-scripts execute successfully, Azure Backup marks the recovery point as application consistent. However, with custom scripts, the user is ultimately responsible for application consistency."
     - content: "Linux requires the user to write their own pre-script and post-script framework."
       isCorrect: true
-      explanation: "Correct. When taking application-consistent snapshots of Linux VMs, Azure Backup invokes only the pre/post scripts written by the user. If the pre-scripts and post-scripts execute successfully, Azure Backup marks the recovery point as application consistent. However, with custom scripts, the user is ultimately responsible for application consistency."
+      explanation: "Correct. When Azure Backup takes application-consistent snapshots of Linux virtual machines, it invokes only the pre/post scripts written by the user. If the pre-scripts and post-scripts execute successfully, Azure Backup marks the recovery point as application consistent. However, with custom scripts, the user is ultimately responsible for application consistency."
     - content: "Linux doesn't support application-consistent backup."
       isCorrect: false
-      explanation: "Incorrect. When taking application-consistent snapshots of Linux VMs, Azure Backup invokes only the pre/post scripts written by the user. If the pre-scripts and post-scripts execute successfully, Azure Backup marks the recovery point as application consistent. However, with custom scripts, the user is ultimately responsible for application consistency."
-  - content: "The following steps have been suggested for taking a storage snapshot of a production SAP HANA workload, with an XFS file system spanning four Azure virtual disks. 1. Prepare the HANA snapshot. 2. Create all necessary blob snapshots on Azure. 3. Confirm the HANA snapshot. Can the process be relied upon to provide a consistent snapshot?"
+      explanation: "Incorrect. When Azure Backup takes application-consistent snapshots of Linux virtual machines, it invokes only the pre/post scripts written by the user. If the pre-scripts and post-scripts execute successfully, Azure Backup marks the recovery point as application consistent. However, with custom scripts, the user is ultimately responsible for application consistency."
+  - content: "The following steps are suggested for taking a storage snapshot of a production SAP HANA workload, with an XFS file system spanning four Azure virtual disks. 1. Prepare the HANA snapshot. 2. Create all necessary blob snapshots on Azure. 3. Confirm the HANA snapshot. Can the process be relied upon to provide a consistent snapshot?"
     choices:
     - content: "Yes, the process should result in a consistent snapshot."
       isCorrect: false
-      explanation: "Incorrect. The easiest way to avoid problems would be to shut down SAP HANA, but this isn't an option for a production system. Freezing the XFS file system (with xfs_freeze) ensures consistency of the snapshot."
+      explanation: "Incorrect. The easiest way to avoid problems would be to shut down SAP HANA, but this approach isn't an option for a production system. Freezing the XFS file system (with xfs_freeze) ensures consistency of the snapshot."
     - content: "No, the user must shut down SAP HANA before taking the snapshot, or the snapshot won't be consistent."
       isCorrect: false
-      explanation: "Incorrect. The easiest way to avoid problems would be to shut down SAP HANA, but this isn't an option for a production system. Freezing the XFS file system (with xfs_freeze) ensures consistency of the snapshot."
+      explanation: "Incorrect. The easiest way to avoid problems would be to shut down SAP HANA, but this approach isn't an option for a production system. Freezing the XFS file system (with xfs_freeze) ensures consistency of the snapshot."
     - content: "No, the user should also freeze the file system before creating the blob snapshots on Azure, and unfreeze it afterwards."
       isCorrect: true
-      explanation: "Correct. The easiest way to avoid problems would be to shut down SAP HANA, but this isn't an option for a production system. Freezing the XFS file system (with xfs_freeze) ensures consistency of the snapshot."
+      explanation: "Correct. The easiest way to avoid problems would be to shut down SAP HANA, but this approach isn't an option for a production system. Freezing the XFS file system (with xfs_freeze) ensures consistency of the snapshot."
   - content: "How often does SAP, as a general rule, recommend making a full backup of an SAP HANA system?"
     choices:
     - content: "Daily"
@@ -62,10 +64,10 @@ quiz:
     choices:
     - content: "The backup file can't be stored using premium storage."
       isCorrect: true
-      explanation: "Correct. The backup file itself can't be stored using premium storage. The frequency of backups can be no shorter than 10 minutes, not 30 minutes. The maximum number of snapshots that the user can store is 100, not 1000."
+      explanation: "Correct. The backup file itself can't be stored using premium storage. The frequency of backups can be no shorter than 10 minutes, not 30 minutes. The maximum number of snapshots that the user can store is 100, not 1,000."
     - content: "The frequency of backups can be no shorter than 30 minutes."
       isCorrect: false
       explanation: "Incorrect. The frequency of backups can be no shorter than 10 minutes, not 30 minutes."
-    - content: "The maximum number of snapshots that the user can store is 1000."
+    - content: "The maximum number of snapshots that the user can store is 1,000."
       isCorrect: false
-      explanation: "Incorrect. The maximum number of snapshots that the user can store is 100, not 1000."
+      explanation: "Incorrect. The maximum number of snapshots that the user can store is 100, not 1,000."
