@@ -3,8 +3,8 @@ uid: learn.wwl.deploy-single-instance-implementations-2-tier-3-tier.manually-ins
 title: Manually install single-instance SAP HANA on Azure Virtual Machines
 metadata:
   title: Manually install single-instance SAP HANA on Azure Virtual Machines
-  description: "Manually install single-instance SAP HANA on Azure Virtual Machines."
-  ms.date: 03/07/2024
+  description: "Explore how to manually install single-instance SAP HANA on Azure Virtual Machines."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
