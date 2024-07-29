@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-models-copilot-ai-studio.improve-model
+title: Improve the performance of a language model
+metadata:
+  title: Improve the performance of a language model
+  description: "Explore the various strategies to improve the model's performance"
+  ms.date: 7/2/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-improve-model.md)]
