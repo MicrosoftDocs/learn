@@ -78,7 +78,7 @@ PowerShell has several loop structures, including `For`, `Foreach`, `Do-Until`, 
 set of values in a collection.
 
 ```powershell
-$items = 1..3
+$items = 'web','app','sql'
 foreach ($item in $items) {
     $item
 }
@@ -90,15 +90,15 @@ When you create a PowerShell script, you can add parameters to the script and th
 for these parameters when executing the script. For example:
 
 ```powershell
-.\setupEnvironment.ps1 -VmCount 5 -Location eastus
+.\setupEnvironment.ps1 -Name 'web','app','sql' -Location eastus
 ```
 
 Inside the script, capture the values into variables. In this example, the parameters are
-**VmCount** and **Location**:
+**Name** and **Location**:
 
 ```powershell
 param (
-    [int]$VmCount,
+    [int[]]$Name,
     [string]$Location
 )
 ```
@@ -120,26 +120,22 @@ VMs:
 
 ```azurepowershell
 param (
-    [int]$VmCount = 3,
+    [int[]]$Name = 'web','app','sql',
     [string]$ResourceGroupName,
     [string]$Location = 'eastus'
 )
 
 $adminCredential = Get-Credential
 
-$vms = 'web','app','sql'
-
-foreach ($vm in $vms) {
-    $vmName = "testvm-$vm"
-
+foreach ($vm in $Name) {
     $azVmParams = @{
         ResourceGroupName   = $ResourceGroupName
-        Name                = $vmName
+        Name                = $vm
         Credential          = $adminCredential
         Location            = $Location
         Image               = 'Canonical:0001-com-ubuntu-server-jammy:22_04-lts:latest'
         OpenPorts           = 22
-        PublicIpAddressName = $vmName
+        PublicIpAddressName = $vm
     }
     New-AzVM @azVmParams
 }
