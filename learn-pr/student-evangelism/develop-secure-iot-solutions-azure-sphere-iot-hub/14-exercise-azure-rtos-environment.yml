@@ -3,7 +3,7 @@ uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise
 title: Exercise - Deploy an Azure RTOS real-time sensor application to monitor the room environment
 metadata:
   title: Exercise - Deploy an Azure RTOS real-time sensor application to monitor the room environment
-  description: In this section, we will deploy an Azure RTOS real-time sensor application to monitor the room environment
+  description: In this section, we'll deploy an Azure RTOS real-time sensor application to monitor the room environment
   ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
