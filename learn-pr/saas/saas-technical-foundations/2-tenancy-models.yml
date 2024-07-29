@@ -8,7 +8,6 @@ metadata:
   author: kostinams
   ms.author: irkostin
   ms.topic: unit
-  ms.service: architecture-center
 durationInMinutes: 7
 content: |
   [!include[](includes/2-tenancy-models.md)]

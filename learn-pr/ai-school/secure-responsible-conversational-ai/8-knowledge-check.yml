@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: A knowledge check for the discover Microsoft safety guidelines for responsible conversational AI development module.
-  ms.date: 07/10/2024
   author: Adriamen
   ms.author: japerena
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/8-knowledge-check.md)] 

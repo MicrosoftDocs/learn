@@ -4,12 +4,11 @@ title: How to deploy Azure Functions
 metadata:
   title: How to deploy Azure Functions
   description: In this section, we help the learner to deploy the Azure Functions to the cloud
-  ms.date: 04/07/2020
+  ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen
-  ms.service: iot-edge
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/7-deploy.md)]

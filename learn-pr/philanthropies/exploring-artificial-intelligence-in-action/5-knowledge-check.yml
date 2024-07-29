@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This module explores various subsets within artificial intelligence (AI) such as natural language processing (NLP), computer vision, and recommendation systems and discuss the integration of AI-powered tools into a learning environment.
-  ms.date: 01/25/2024
   author: yoosunee
   ms.author: andreapark
+  ms.date: 01/25/2024
   ms.topic: unit
-  ms.service: artificial-intelligence
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/5-knowledge-check.md)]

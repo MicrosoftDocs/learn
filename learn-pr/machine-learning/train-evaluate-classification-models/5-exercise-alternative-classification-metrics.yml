@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Perform classification with alternative metrics
   description: Review alternative metrics for classification scenarios
   ms.date: 09/05/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 10
 sandbox: true

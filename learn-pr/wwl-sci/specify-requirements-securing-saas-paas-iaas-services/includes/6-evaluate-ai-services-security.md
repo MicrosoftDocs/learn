@@ -4,11 +4,11 @@ For more information, see [Azure Well-Architected Framework perspective on Azure
 
 The purpose of the Security pillar is to provide **confidentiality, integrity, and availability** guarantees to the workload.
 
-The [**Security design principles**](/security/security-principles) provide a high-level design strategy for achieving those goals by applying approaches to the technical design around Azure OpenAI.
+The [**Security design principles**](/azure/well-architected/security/principles) provide a high-level design strategy for achieving those goals by applying approaches to the technical design around Azure OpenAI.
 
 ### Design checklist
 
-Start your design strategy based on the [design review checklist for Security](/security/checklist) and identify vulnerabilities and controls to improve the security posture. Then, review the [Azure security baseline for Azure OpenAI](/security/benchmark/azure/baselines/azure-openai-security-baseline). Finally, extend the strategy to include more approaches as needed.
+Start your design strategy based on the [design review checklist for Security](/azure/security/fundamentals/database-security-checklist) and identify vulnerabilities and controls to improve the security posture. Then, review the [Azure security baseline for Azure OpenAI](/security/benchmark/azure/baselines/azure-openai-security-baseline). Finally, extend the strategy to include more approaches as needed.
 
 > [!div class="checklist"]
 >

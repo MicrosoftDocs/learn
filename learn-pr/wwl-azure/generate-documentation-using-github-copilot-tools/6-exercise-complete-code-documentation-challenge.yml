@@ -4,12 +4,12 @@ title: Exercise – Complete the "code documentation" challenge
 metadata:
   title: Exercise – Complete the "code documentation" challenge
   description: "Exercise – Complete the \"code documentation\" challenge"
-  ms.date: 05/16/2024
+  ms.date: 07/24/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-complete-code-documentation-challenge.md)]

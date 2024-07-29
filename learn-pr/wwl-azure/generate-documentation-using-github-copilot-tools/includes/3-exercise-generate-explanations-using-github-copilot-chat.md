@@ -45,12 +45,12 @@ To prepare for the exercises in this module, complete the following steps:
 
     The Visual Studio Code EXPLORER view should show a APL2007M2Sample1 code project containing the following files:
 
+    - APL2007M2Sample1.csproj
+    - APL2007M2Sample1.sln
     - App.xaml
     - App.xaml.cs
     - MainWindow.xaml
     - MainWindow.xaml.cs
-    - Sample1.csproj
-    - APL2007M2Sample1.sln
 
 You're now ready to use GitHub Copilot Chat to complete this exercise.
 
@@ -58,7 +58,11 @@ You're now ready to use GitHub Copilot Chat to complete this exercise.
 
 GitHub Copilot Chat can help you understand new projects or specific project files. You can use a combination `@workspace`, `/explain`, and `#file` in the Chat view or a Quick Chat window to generate an explanation of your project or specific project files.
 
-1. Open the Chat view in Visual Studio Code.
+Use the following steps to complete this section of the exercise:
+
+1. On the Visual Studio Code activity bar, select **Chat**.
+
+    The Visual Studio Code activity bar is the vertical bar on the far left side of the Visual Studio Code window. Hover the mouse pointer over the activity bar icons to see their names. The Chat icon looks like a speech bubble.
 
 1. Use the following command to ask Copilot Chat to explain the `APL2007M2Sample1` project:
 
@@ -79,9 +83,9 @@ GitHub Copilot Chat can help you understand new projects or specific project fil
 
     ![Screenshot showing a follow-up question in the Chat view.](../media/explain-chat-view-workspace-explain-this-project-follow-up.png)
 
-    As mentioned earlier, the response from the AI model isn't an exact match for the examples shown. Your response may include a different follow-up question. If you don't see a follow-up question, you can skip over the next step.
+    The response you receive may include a different follow-up question.
 
-    Selecting "random" follow-up questions isn't recommended, because GitHub Copilot Chat builds history of your conversation. This history helps GitHub Copilot Chat to understand what you're interested in. As you build a chat history, the AI model learns from your interactions and provides more relevant follow-up questions.
+    GitHub Copilot Chat builds a history of your chat conversation. The history helps GitHub Copilot Chat understand your interests. As you build a chat history, the AI model learns from your interactions and provides more relevant follow-up questions. Exploring "random" follow-up questions isn't recommended.
 
 1. Open the `MainWindow.xaml.cs` file in the editor.
 
@@ -93,9 +97,11 @@ GitHub Copilot Chat can help you understand new projects or specific project fil
 
 1. Take a minute to review the response in the Chat view.
 
+    The response should be similar to the following information:
+
     ![Screenshot showing an explanation of the MainWindow.xaml.cs file in the Chat view.](../media/explain-chat-view-workspace-slash-explain-hash-file.png)
 
-    Notice that GitHub Copilot Chat generates a detailed explanation of the `MainWindow.xaml.cs` file. The explanation includes information about the file's purpose, structure, and key components.
+    Notice that GitHub Copilot Chat generates a detailed explanation of the `MainWindow.xaml.cs` file. The explanation includes information about the file's purpose, structure, and key components. You may also see a section that describes potential issues and improvements.
 
     Once again, GitHub Copilot Chat suggests a follow-up question. Although GitHub Copilot Chat suggests great follow-up questions, we suggest that you continue on to the next section of this exercise.
 
@@ -154,7 +160,7 @@ In this section of the exercise, you use the **Explain This** smart action to ge
 
     ![Screenshot showing the Chat view explaining code that's selected in the editor.](../media/explain-inline-chat-explain-this.png)
 
-1. Notice the level of detailed included in the explanation.
+1. Notice the level of detail included in the explanation.
 
     GitHub Copilot Chat generates detailed explanations that include information about the selected code lines, their purpose, and how they work. Responses include code snippets and natural language descriptions that help you understand the code.
 
@@ -176,11 +182,11 @@ Use the following steps to complete this section of the exercise:
 
     ![Screenshot showing an error message in the editor.](../media/visual-studio-code-error-message.png)
 
-    Error messages don't always help you fix the problem. You can ask Copilot Chat to provide an explanation of the error and suggest ways to fix it.
+    Error messages don't always explain how to fix coding issues. When the solution isn't obvious, you can ask GitHub Copilot Chat to explain an error and suggest ways to fix it.
 
-1. Select the code line, and then press `Ctrl` + `I` to open an inline chat.
+1. Select the code line containing the error, and then press `Ctrl` + `I` to open an inline chat.
 
-1. To have Copilot Chat explain what's causing the error, enter the following prompt:
+1. To generate an explanation for the error, enter the following prompt:
 
     ```plaintext
     /explain why is the selection causing an error
@@ -192,7 +198,7 @@ Use the following steps to complete this section of the exercise:
 
     Notice that the response includes information about the error and suggestions for fixing it. In this case, GitHub Copilot Chat explains that the `Task.WhenAll(downloadTasks)` line is causing an error because it's missing the `await` keyword. The response also provides a code snippet that shows how to fix the error by adding the `await` keyword before the `Task.WhenAll(downloadTasks)` line.
 
-1. You can use the explanations provided by GitHub Copilot Chat to fix the errors in your code.
+1. Use the explanation provided by GitHub Copilot Chat to fix the error in your code.
 
     Add the `await` keyword before the `Task.WhenAll(downloadTasks)` line, as shown in the following code snippet:
 
@@ -208,7 +214,7 @@ Use the following steps to complete this section of the exercise:
 
 GitHub Copilot Chat can explain how to add new features or functionality to your project.
 
-Consider the APL2007M2Sample1 project. Your code downloads web pages and calculates the total size of the downloaded pages. There's currently no exception handling enabled for bad web site URLs. In this section of the exercise, you use GitHub Copilot Chat to explain how to manage exceptions during the download process.
+Consider the APL2007M2Sample1 project. Your code downloads web pages and calculates the total size of the downloaded pages. Suppose you need to add exception handling to the application. In this section of the exercise, you use GitHub Copilot Chat to explain how to manage exceptions during the download process.
 
 Use the following steps to complete this section of the exercise:
 

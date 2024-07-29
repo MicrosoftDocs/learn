@@ -3,11 +3,13 @@ uid: learn.wwl.responsible-generative-ai.exercise-content-filters
 title: Exercise - Explore content filters in Azure OpenAI
 metadata:
   title: Exercise - Explore content filters in Azure OpenAI
-  description: "Hands-on exercise to explore content filters in Azure OpenAI."
-  ms.date: 7/13/2023
+  description: Hands-on exercise to explore content filters in Azure OpenAI.
   author: graememalcolm
   ms.author: gmalc
+  ms.date: 7/13/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 25
 content: |
   [!include[](includes/7-exercise-content-filters.md)]

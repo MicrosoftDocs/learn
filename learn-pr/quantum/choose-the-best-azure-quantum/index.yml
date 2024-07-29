@@ -3,11 +3,13 @@ uid: learn.quantum.choose-the-best-azure-quantum
 metadata:
   title: Choose the best Azure Quantum option for your needs
   description: Learn how to get started with Azure Quantum and choose the best service for your needs.
+  manager: tedhudek
   ms.date: 12/13/2023
   author: SoniaLopezBravo
   ms.author: sonialopez
   ms.topic: module
   ms.service: azure-quantum
+  ms.subservice: core
 title: Choose the best Azure Quantum option for your needs
 summary: Azure Quantum offers different development options. Learn the differences between each option, and how to choose the best way to get started in your quantum journey.
 abstract: |

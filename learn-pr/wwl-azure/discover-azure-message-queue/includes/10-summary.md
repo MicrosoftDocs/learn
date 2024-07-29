@@ -1,7 +1,3 @@
-
-
-
-
 In this module, you learned how to:
 
 * Choose the appropriate queue mechanism for your solution.

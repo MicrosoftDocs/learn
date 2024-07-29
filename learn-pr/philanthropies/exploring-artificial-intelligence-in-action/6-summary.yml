@@ -4,11 +4,12 @@ title: Summary
 metadata:
   title: Summary
   description: AI is a diverse field that includes many subsets such as natural language processing, recommendation systems, and computer vision.
-  ms.date: 01/25/2024
   author: yoosunee
   ms.author: andreapark
+  ms.date: 01/25/2024
   ms.topic: unit
-  ms.service: artificial-intelligence
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

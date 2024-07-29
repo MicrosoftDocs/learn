@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.begin-your-microsoft-learn-educators-journey.become-familiar-with-microsoft-learn-educators-portal
+title: Become familiar with the Microsoft Learn for Educators portal
+metadata:
+  title: Become familiar with the Microsoft Learn for Educators portal
+  description: "Become familiar with the Microsoft Learn for Educators portal"
+  ms.date: 07/19/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-become-familiar-with-microsoft-learn-educators-portal.md)]

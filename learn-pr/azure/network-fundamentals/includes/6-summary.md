@@ -4,4 +4,4 @@ In this module, you explored the principles of networks and gained an understand
 
 ## Learn more
 
-- [The Open Systems Interconnection model (OSI model)](https://en.wikipedia.org/wiki/OSI_model)
+- [The Open Systems Interconnection model](https://en.wikipedia.org/wiki/OSI_model)

@@ -3,12 +3,14 @@ uid: learn.azure.create-your-first-speech-to-text-app
 metadata:
   title: Create your first Azure AI speech to text application
   description: In this module, you'll learn how to use Azure AI services to create a speech to text application.
-  ms.date: 06/19/2023
   author: eric-urban
   ms.author: eur
   manager: nitinme
-  ms.topic: module
+  ms.date: 06/19/2023
   ms.service: azure-ai-speech
+  ms.topic: module
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Create your first Azure AI speech to text application
 summary: Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure's speech to text features. In this module, you'll learn how to use Azure AI services to create a speech to text application that converts a sample WAVE file into text.
 abstract: |

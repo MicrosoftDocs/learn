@@ -5,8 +5,8 @@ metadata:
   title: Analyze classification with receiver operator characteristic curves
   description: Conceptual unit introducing ROC curves in machine learning
   ms.date: 04/17/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 4
 content: |

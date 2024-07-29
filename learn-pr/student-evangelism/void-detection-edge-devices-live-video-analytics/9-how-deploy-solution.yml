@@ -9,7 +9,6 @@ metadata:
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen
-  ms.service: iot-edge
 durationInMinutes: 3 # dummy number at present
 content: |
   [!include[](includes/9-how-deploy-solution.md)]

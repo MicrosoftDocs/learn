@@ -48,6 +48,7 @@ A cloud-native application consisting of multiple microservices and with many fe
 - **Resiliency.** No hosting service can be 100% available. You must ensure that, in rare occasions when a microservice is unavailable, the app handles failures robustly and keeps requests until the service returns.
 - **Distributed data.** Each microservice implements its own data storage layer and may not use the same database server as the others. You must consider how you'll query for data from multiple microservices and how will you implement transactions.
 - **Secrets.** If your app handles any kind of sensitive data, each microservice must authenticate every request it receives before returning a response. Often secrets such as asymmetric and symmetric encryption keys are used to protect data and positively identify calling users and microservices. You must consider how these secrets are stored and exchanged in your cloud-native app.
+- **Developer onboarding.** New developers must be able to understand the app's architecture and how to work with it quickly. You must ensure that new developers can get up to speed without lots of cross-domain knowledge or local setup.
 
 Recently, cloud-native application design has been gaining in popularity but challenges like those in this section discourage some teams from embracing this pattern. .NET, for example, has all the features needed to solve these issues but the solutions may need significant investment in training and custom code.
 

@@ -4,12 +4,11 @@ title: Create the fruit classification model
 metadata:
   title: Create the fruit classification model
   description: In this section, we help the learner to how to create a classification model.
-  ms.date: 02/12/2021
+  ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen
-  ms.service: iot-edge
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/4-create-fruit-classification-model.md)]

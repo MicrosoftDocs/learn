@@ -3,13 +3,14 @@ uid: learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 12/04/2023
+  description: Knowledge check
   author: bethanyjep
   ms.author: bethanycheum
-  ms.custom: team=nextgen
+  ms.date: 12/04/2023
   ms.topic: unit
-  ms.service: microsoft-copilot
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"

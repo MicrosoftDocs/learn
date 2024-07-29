@@ -3,11 +3,13 @@ uid: learn.wwl.classify-images.understand-image-classification
 title: Understand image classification
 metadata:
   title: Understand image classification
-  description: "Understand image classification"
-  ms.date: 08/20/2021
+  description: Understand image classification
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 durationInMinutes: 3
 content: |

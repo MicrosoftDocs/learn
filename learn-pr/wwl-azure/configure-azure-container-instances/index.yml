@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-container-instances
 metadata:
   title: Configure Azure Container Instances
   description: Learn how to configure Azure Container Instances including container groups.
-  ms.date: 05/02/2024
+  ms.date: 07/24/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
