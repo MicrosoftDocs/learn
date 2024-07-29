@@ -3,8 +3,8 @@ uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-sql-s
 title: Explore SQL Server high availability for SAP in Azure
 metadata:
   title: Explore SQL Server high availability for SAP in Azure
-  description: "Explore SQL Server high availability for SAP in Azure"
-  ms.date: 10/17/2023
+  description: "Explore different methods for providing SQL Server high availability for SAP in Azure."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

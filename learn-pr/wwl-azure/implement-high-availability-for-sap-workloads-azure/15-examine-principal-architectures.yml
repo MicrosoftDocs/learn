@@ -3,8 +3,8 @@ uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.examine-princ
 title: Examine principal architectures
 metadata:
   title: Examine principal architectures
-  description: "Examine principal architectures"
-  ms.date: 10/17/2023
+  description: "Examine the principal architectures to deploy SAP NetWeaver or S/4HANA system across Azure availability zones."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

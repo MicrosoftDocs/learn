@@ -3,22 +3,27 @@ uid: learn.wwl.implement-high-availability-for-sap-workloads-azure
 metadata:
   title: Implement high availability for SAP workloads in Azure
   description: "This module explores high availability and disaster recovery support of Azure for SAP workloads, such as SAP application servers, SAP ASCS-SCS instances, DBMS instances, and SAP HANA. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 10/17/2023
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.service: sap-on-azure
+  ms.service: azure
 title: Implement high availability for SAP workloads in Azure
 summary: This module explores high availability and disaster recovery support of Azure for SAP workloads, such as SAP application servers, SAP ASCS-SCS instances, DBMS instances, and SAP HANA.
 abstract: |
   After completing this module, you will be able to:
-  - Explore high availability and disaster recovery support of Azure for SAP workloads.
-  - Examine principal architectures.
-  - Determine latency between Azure virtual machines across Availability Zones.
+
+  -   Explore high availability and disaster recovery support of Azure for SAP workloads.
+
+  -   Examine principal architectures.
+
+  -   Determine latency between Azure virtual machines across Availability Zones.
 prerequisites: |
   Before taking this training, you should complete:
-  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
-  - SAP HANA or NetWeaver training.
+
+  -   Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+
+  -   SAP HANA or NetWeaver training.
 iconUrl: /training/achievements/1-implement-high-availability-for-sap-workloads-in-azure.svg
 levels:
 - advanced

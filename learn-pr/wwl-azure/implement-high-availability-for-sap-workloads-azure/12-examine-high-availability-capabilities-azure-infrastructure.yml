@@ -3,8 +3,8 @@ uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.examine-capab
 title: Examine high availability capabilities of Azure infrastructure
 metadata:
   title: Examine high availability capabilities of Azure infrastructure
-  description: "Examine high availability capabilities of Azure infrastructure"
-  ms.date: 10/17/2023
+  description: "Explore the principles and options behind the high availability capabilities of Azure infrastructure."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

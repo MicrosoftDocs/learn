@@ -3,8 +3,8 @@ uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.examine-failo
 title: Examine failover clustering
 metadata:
   title: Examine failover clustering
-  description: "Examine failover clustering"
-  ms.date: 10/17/2023
+  description: "Examine how failover clustering is used to provide high availability in Windows Server."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
