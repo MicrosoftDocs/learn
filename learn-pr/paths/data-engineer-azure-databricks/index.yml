@@ -23,8 +23,10 @@ subjects:
 - data-engineering
 modules:
 - learn.wwl.explore-azure-databricks
+- learn.wwl.perform-data-analysis-azure-databricks
 - learn.wwl.use-apache-spark-azure-databricks
-- learn.wwl.use-delta-lake-azure-databricks
+- learn.wwl.use-delta-lake-azure-
+- learn.wwl.build-data-pipeline-with-delta-live-tables
 - learn.wwl.use-sql-warehouses-azure-databricks
 - learn.wwl.run-azure-databricks-notebooks-azure-data-factory
 trophy:
