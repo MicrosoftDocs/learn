@@ -2,13 +2,15 @@
 uid: learn.security-copilot-embedded-experiences
 metadata:
   title: Describe the embedded experiences of Microsoft Copilot for Security
-  description: "Microsoft Copilot for Security is accessible directly from some Microsoft security products. This is referred to the embedded experience. Learn about the scenarios supported by the Copilot embedded experience in Microsoft’s security solutions."
-  ms.date: 03/12/2024
+  description: Microsoft Copilot for Security is accessible directly from some Microsoft security products. This is referred to the embedded experience. Learn about the scenarios supported by the Copilot embedded experience in Microsoft’s security solutions.
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: module-standard-task-based
+  ms.date: 03/12/2024
   ms.service: security-copilot
   ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Describe the embedded experiences of Microsoft Copilot for Security
 summary: |
   Microsoft Copilot for Security is accessible directly from some Microsoft security products. This is referred to as the embedded experience. Learn about the scenarios supported by the Copilot embedded experience in Microsoft’s security solutions.

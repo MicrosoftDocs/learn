@@ -4,7 +4,7 @@ title: Implement disaster recovery for SAP deployments across Azure regions with
 metadata:
   title: Implement disaster recovery for SAP deployments across Azure regions with Azure Site Recovery
   description: "Implement disaster recovery for SAP deployments across Azure regions with Azure Site Recovery."
-  ms.date: 05/29/2024
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

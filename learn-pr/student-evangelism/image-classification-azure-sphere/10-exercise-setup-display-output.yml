@@ -4,11 +4,10 @@ title: Exercise - Set up display output
 metadata:
   title: Exercise - Set up display output
   description: In this section, we help the learner to set up a terminal emulator to display output from the app.
-  ms.date: 06/19/2020
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/10-exercise-setup-display-output.md)]

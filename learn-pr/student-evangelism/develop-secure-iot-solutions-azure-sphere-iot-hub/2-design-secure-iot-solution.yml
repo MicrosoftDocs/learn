@@ -4,11 +4,10 @@ title: Designing a secure IoT solution
 metadata:
   title: Designing a secure IoT solution
   description: In this section, we help you design an IoT solution securely by using Azure Sphere.
-  ms.date: 12/11/2020
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/2-design-secure-iot-solution.md)]

@@ -14527,7 +14527,232 @@
     },
     {
       "source_path": "learn-pr/paths/sql-server-2017-upgrades/index.md",
-      "redirect_url": "/training/paths/sql-server-upgrades/",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/sql-server-upgrades/index.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn-sqlserver.sql-server-2019-upgrades.trophy.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn-sqlserver.assess-convert-sql-server-databases-using-dma.badge.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn-sqlserver.introduction-upgrading-sql-server.badge.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn-sqlserver.sql-server-discovery-using-map.badge.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn-sqlserver.test-optimize-sql-server-databases-using-dea.badge.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-upgrading-sql-server/1-introduction.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-upgrading-sql-server/2-decide-upgrade-right-your-task.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-upgrading-sql-server/3-discover-your-database-landscape.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-upgrading-sql-server/4-assess-convert-your-databases.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-upgrading-sql-server/5-test-your-migration.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-upgrading-sql-server/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-upgrading-sql-server/7-tune-queries-post-migration.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-upgrading-sql-server/8-knowledge-check.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-upgrading-sql-server/9-module-summary.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-upgrading-sql-server/index.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/assess-convert-sql-server-databases-using-dma/1-introduction.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/assess-convert-sql-server-databases-using-dma/2-decide-dma-right-your-task.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/assess-convert-sql-server-databases-using-dma/3-install-dma.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/assess-convert-sql-server-databases-using-dma/4-identify-compatibility-issues.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/assess-convert-sql-server-databases-using-dma/5-upgrade-database.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/assess-convert-sql-server-databases-using-dma/5a-create-azure-sql-virtual-machine.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/assess-convert-sql-server-databases-using-dma/6-exercise-install-dma.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/assess-convert-sql-server-databases-using-dma/7-exercise-identify-compatibility-issues.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/assess-convert-sql-server-databases-using-dma/8-exercise-upgrade-database.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/assess-convert-sql-server-databases-using-dma/9-module-summary.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/assess-convert-sql-server-databases-using-dma/index.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/sql-server-discovery-using-map/1-introduction.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/sql-server-discovery-using-map/2-decide-map-right-your-task.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/sql-server-discovery-using-map/3-install-map.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/sql-server-discovery-using-map/4-collect-assess-inventory-data.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/sql-server-discovery-using-map/5-exercise-install-map.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/sql-server-discovery-using-map/6-exercise-collect-assess-inventory-data.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/sql-server-discovery-using-map/7-module-summary.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/sql-server-discovery-using-map/index.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/test-optimize-sql-server-databases-using-dea/1-introduction.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/test-optimize-sql-server-databases-using-dea/2-decide-dea-right-your-task.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/test-optimize-sql-server-databases-using-dea/3-install-dea.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/test-optimize-sql-server-databases-using-dea/4-configure-new-capture.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/test-optimize-sql-server-databases-using-dea/5-review-trace-analysis-report.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/test-optimize-sql-server-databases-using-dea/6-exercise-install-dea.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/test-optimize-sql-server-databases-using-dea/7-exercise-configure-new-capture.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/test-optimize-sql-server-databases-using-dea/8-exercise-review-trace-analysis-report.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/test-optimize-sql-server-databases-using-dea/9-module-summary.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/test-optimize-sql-server-databases-using-dea/index.yml",
+      "redirect_url": "/training/paths/migrate-sql-workloads-azure/",
       "redirect_document_id": false
     },
     {
@@ -14593,6 +14818,81 @@
     {
       "source_path": "learn-pr/iot/introduction-lambda-architecture-iot-solutions/6-summary.md",
       "redirect_url": "/training/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-azure-hpc-cache/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-azure-hpc-cache/2-what.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-azure-hpc-cache/3-how.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-azure-hpc-cache/4-when.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-azure-hpc-cache/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-azure-hpc-cache/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-azure-hpc-cache/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/3-hpc-cache-prerequisites.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/4-create-cache.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/5-connect-to-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/6-connect-to-cache.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/accelerate-storage-with-hpc-cache/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/hpc-cache-overview",
       "redirect_document_id": false
     },
     {

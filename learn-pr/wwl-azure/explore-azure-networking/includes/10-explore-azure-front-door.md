@@ -4,4 +4,4 @@ Depending on your routing method selection in the configuration, you can ensure 
 
 Front Door provides a range of traffic-routing methods and backend health monitoring options to suit different application needs and automatic failover models. Like Traffic Manager, Front Door is resilient to failures, including the failure of an entire Azure region.
 
-:::image type="content" source="../media/multiple-azure-regions-for-high-availability-aa3124ef.png" alt-text="Diagram of reference architecture for a web application with high availability.":::
+:::image border="false" type="content" source="../media/multiple-azure-regions-for-high-availability-aa3124ef.png" alt-text="Diagram showing reference architecture for a web application with high availability.":::

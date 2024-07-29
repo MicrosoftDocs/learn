@@ -3,12 +3,13 @@ uid: learn.oxford.image-classification-azure-sphere
 metadata:
   title: "Image classification using Azure Sphere"
   description: "Learn how to implement image classification on a microcontroller device. Also, learn how Azure Sphere components work."
-  ms.date: 06/19/2020
+  ms.date: 07/20/2024
   author: leestott
   ms.author: chnoring
   ms.topic: module
-  ms.custom: team=nextgen
+  ms.custom: team=cloud_advocates
   ms.service: azure-sphere
+  ms.collection: ce-advocates-ai-copilot        # Oxford University Module - Oxford responsible for ongoing maintenance
 title: "Image classification using Azure Sphere"
 summary: "Implement a neural network model for performing real-time image classification on a secured, internet-connected microcontroller-based device (Azure Sphere). Describe the components and steps for implementing a pre-trained image classification model on Azure Sphere."
 abstract: |
