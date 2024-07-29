@@ -4,9 +4,9 @@ title: Explore security and privacy in the Microsoft Cloud
 metadata:
   title: Explore security and privacy in the Microsoft Cloud
   description: TBD
-  ms.date: 10/01/2022
+  ms.date: 07/17/2024
   author: TBD
-  ms.author: v-jenhor
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 11
 content: |
@@ -24,4 +24,4 @@ quiz:
       explanation: "Incorrect. This statement is true and reflects Microsoft policy."
     - content: "Microsoft support can access user or administrator accounts on customer VMs."
       isCorrect: true
-      explanation: "Correct. This statement is not a Microsoft policy. Microsoft support personnel can't access user or administrator accounts on customer VMs."
+      explanation: "Correct. This statement isn't a Microsoft policy. Microsoft support personnel can't access user or administrator accounts on customer VMs."
