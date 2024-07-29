@@ -1,0 +1,22 @@
+AI enabled applications are still applications, and therefore it is still important to follow secure coding and other application security best practices. When building AI applications, make sure that you consider the following security principles and practices:
+
+- **Secure Software Development Life Cycle (SDLC)**
+  - Integrate security measures at every stage of development.
+  - Conduct regular security reviews and automated testing.
+  - Adopt a DevSecOps approach to balance security and development velocity.
+- **AI plugin security**
+  - Use application security best practices to develop plugins
+  - Plugins must securely request and retrieve data
+  - Sanitize and validate inputs
+- **Adopt the Principle of Least Privilege**
+  - Limit permissions to the minimum necessary for users, applications, and services.
+  - Reduce the impact of compromised accounts and unauthorized data access.
+- **Secure Data Storage and Transmission:**
+  - Encrypt sensitive data both at rest and in transit.
+  - Implement secure protocols for data exchange.
+- **Leverage Monitoring and Observability:**
+  - Monitor application behavior for anomalies and security incidents.
+  - Use logging and auditing to track events and detect threats.
+- **Perform Regular Security Testing and Auditing:**
+  - Conduct vulnerability assessments, penetration testing, and code reviews.
+  - Address vulnerabilities early to minimize post-deployment remediation.

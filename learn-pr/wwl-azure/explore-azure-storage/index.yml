@@ -2,25 +2,34 @@
 uid: learn.wwl.explore-azure-storage
 metadata:
   title: Explore Azure for SAP storage
-  description: This module explores the use of Azure he storage component to design scalable, performant, and resilient SAP deployments in Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads.
-  ms.date: 03/26/2024
+  description: "This module explores the use of Azure he storage component to design scalable, performant, and resilient SAP deployments in Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ai-usage: human-only
+  ms.custom:
+  - N/A
   ms.service: sap-on-azure
+  ai-usage: human-only
 title: Explore Azure for SAP storage
 summary: This module explores the use of Azure he storage component to design scalable, performant, and resilient SAP deployments in Azure.
 abstract: |
   After completing this module, you will be able to:
+
   -   Explore Azure Storage types.
+
   -   Examine general database sizing.
+
   -   Examine SAP HANA Azure virtual machine storage configurations.
+
   -   Explore solutions with Premium Storage and Azure Write Accelerator for Azure M-Series virtual machines.
+
   -   Examine sizing for HANA databases on Azure NetApp Files.
 prerequisites: |
   Before taking this training, you should complete:
+
   -   Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+
   -   SAP HANA or NetWeaver training.
 iconUrl: /training/achievements/3-explore-azure-storage.svg
 levels:
