@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-models-copilot-ai-studio
 metadata:
-  title: Configure model deployment in the Azure AI Studio
+  title: Explore and deploy models from model catalog in Azure AI Studio
   description: "When you want to integrate a language model with an application, you can deploy a model to an endpoint. The Azure AI Studio offers various language models that you can select, deploy, and test."
   ms.date: 7/2/2024
   author: madiepev
   ms.author: madiepev
   ms.topic: module-standard-task-based 
   ms.service: azure-ai-services
-title: Configure model deployment in the Azure AI Studio
+title: Explore and deploy models from model catalog in Azure AI Studio
 summary: "Explore the various language models that are available through the Azure AI Studio. Understand how to select, deploy, and test a model, and to improve its performance."
 abstract: |
   By the end of this module, you'll be able to:
