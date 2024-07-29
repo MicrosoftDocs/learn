@@ -2,24 +2,32 @@
 uid: learn.wwl.implement-ha-sap-netweaver-anydb
 metadata:
   title: Implement high availability in SAP NetWeaver with AnyDB on Azure virtual machines
-  description: SAP professionals need to evaluate deploying SAP solutions on Azure. This module explores the preparation for SAP NetWeaver high availability AnyDB deployment on Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads.
-  ms.date: 03/19/2024
+  description: "SAP professionals need to evaluate deploying SAP solutions on Azure. This module explores the preparation for SAP NetWeaver high availability AnyDB deployment on Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ai-usage: human-only
+  ms.custom:
+  - N/A
   ms.service: sap-on-azure
+  ai-usage: human-only
 title: Implement high availability in SAP NetWeaver with AnyDB on Azure virtual machines
 summary: SAP professionals need to evaluate deploying SAP solutions on Azure. This module explores the preparation for SAP NetWeaver high availability AnyDB deployment on Azure.
 abstract: |
   After completing this module, you'll be able to:
+
   -   Examine single SID 3-tier SAP NetWeaver high availability AnyDB deployment.
+
   -   Examine multi-SID 3-tier SAP NetWeaver high availability AnyDB deployment.
+
   -   Set up a Windows Server failover cluster for an SAP ASCS-SCS instance.
+
   -   Examine Installation of SIOS DataKeeper Cluster Edition for the SAP ASCS-SCS cluster shared disk.
 prerequisites: |
   Before taking this training, you should complete:
+
   -   Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+
   -   SAP HANA or NetWeaver training.
 iconUrl: /training/achievements/implement-ha-sap-netweaver-anydb.svg
 levels:
