@@ -55,7 +55,7 @@ After selecting a task and filtering the available models that are suitable for 
 
 When you're exploring language models, you can also compare the available model **benchmarks** to assess the quality of the models before you deploy and integrate a model. Benchmarks are like report cards for language models. Benchmarks help you understand how well a model performs by comparing it to other models using specific tests or tasks. The model benchmarks in the Azure AI Studio provide a curated list of the best performing models for a given task, based on benchmarking metrics.
 
-:::image type="content" source="../media/model-benchmarks.png" alt-text="Screenshot of model benchmarks in the Azure AI Studio.":::
+:::image type="content" source="../media/model-benchmarks.png" alt-text="Screenshot of model benchmarks in the Azure AI Studio." lightbox="../media/model-benchmarks.png":::
 
 Some commonly used metrics to assess the performance of language models are:
 
