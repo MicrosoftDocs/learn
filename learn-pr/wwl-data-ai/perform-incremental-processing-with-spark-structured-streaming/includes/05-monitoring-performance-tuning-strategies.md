@@ -1,5 +1,5 @@
 
-**Effective monitoring** of incremental processing in Azure Databricks is a strategy for maintaining the reliability and efficiency of data workflows. One method involves using Databricks’ built-in tools such as the Databricks job monitoring interface, which provides insights into job statuses, execution metrics, and error logs.
+Effective monitoring of incremental processing in Azure Databricks is a strategy for maintaining the reliability and efficiency of data workflows. One method involves using Databricks’ built-in tools such as the Databricks job monitoring interface, which provides insights into job statuses, execution metrics, and error logs.
 
 The interface is a tool for data engineers to identify and troubleshoot issues, with the aim of reducing downtime and ensuring that data processing tasks complete. Integration with Azure Monitor can enhance monitoring capabilities by offering centralized logging, custom alerts, and performance dashboards. This integration aids in tracking performance indicators and trends over time, enabling management of resources and resolution of potential bottlenecks. Automated monitoring scripts and notifications for specific job metrics can further streamline the process, aiming to address any anomalies and maintain the performance of the incremental data processing pipeline.
 
