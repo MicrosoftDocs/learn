@@ -16,11 +16,11 @@ When you're chatting with the model in the playground, you can apply several pro
 
 Let's explore some techniques an end-user can use to apply prompt engineering:
 
-- Provide clear instructions: Be specific about the output you want.
+- Provide **clear instructions**: Be specific about the output you want.
     :::image type="content" source="../media/clear-instructions.png" alt-text="Screenshot of a question with clear instructions, making the answer more specific to the use case.":::
-- Format your instructions: Use headers and delineators to make your question easier to read.
+- **Format** your instructions: Use headers and delineators to make your question easier to read.
     :::image type="content" source="../media/format-instructions.png" alt-text="Screenshot of a question formatted to make it clear what the translated text should be.":::
-- Use cues: Provide key words or indicators for how the model should start its response, such as a specific coding language.
+- Use **cues**: Provide key words or indicators for how the model should start its response, such as a specific coding language.
     :::image type="content" source="../media/use-cues.png" alt-text="Screenshot of a question with a cue, which then assistant's answer starts with.":::
 
 ### Update the system message
