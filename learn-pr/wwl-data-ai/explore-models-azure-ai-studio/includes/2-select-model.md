@@ -18,7 +18,7 @@ In the Azure AI Studio, you can navigate to the model catalog to explore all ava
 The Azure AI Studio model catalog integrates with models from Hugging Face and other sources. Through the model catalog, you can explore, fine-tune, and deploy models.
 
 > [!Important]
-> Model availability differs per location, also referred to as region. Your location is specified on the AI hub level. When you create a new AI Hub, you can use the **Location helper** to specify the model you want to deploy to get a list of locations you can deploy it in. You can also explore the [model summary table and region availability](https://learn.microsoft.com/azure/ai-services/openai/concepts/models#model-summary-table-and-region-availability?azure-portal=true) to learn more.
+> Model availability differs per location, also referred to as region. Your location is specified on the AI hub level. When you create a new AI Hub, you can use the **Location helper** to specify the model you want to deploy to get a list of locations you can deploy it in. You can also explore the [model summary table and region availability](/azure/ai-services/openai/concepts/models#model-summary-table-and-region-availability?azure-portal=true) to learn more.
 
 ### Explore language models
 
