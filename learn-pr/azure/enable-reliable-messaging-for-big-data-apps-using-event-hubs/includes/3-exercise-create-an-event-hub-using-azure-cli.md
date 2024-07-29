@@ -7,7 +7,7 @@ Let's create an Event Hubs namespace using Azure CLI and Bash in Azure Cloud She
 1. First, let's assign default values that can be reused so that you don't have to enter these values with every command. In particular, let's set the *resource group* and *location*. Enter the following command in Cloud Shell, and feel free to replace the location value with a region close to you.
   
     ```azurecli
-    az configure --defaults group=<rgn>[sandbox Resource Group]</rgn> location=westus2  
+    az configure --defaults group="<rgn>[sandbox resource group name]</rgn>" location=westus2  
     ```
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
