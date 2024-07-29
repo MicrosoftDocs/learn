@@ -6,7 +6,7 @@ In this exercise, you use the `Path` class and `Directory.GetCurrentDirectory` t
 
 ## Use the current directory and combine paths
 
-In the current Program.cs code, you're passing the static location of the *stores* folder. Now, we change that code to use the `Directory.GetCurrentDirectory` value instead of passing a static folder name.
+In the current Program.cs code, you're passing the static location of the *stores* folder. Now, we'll change that code to use the `Directory.GetCurrentDirectory` value instead of passing a static folder name.
 
 1. In the editor, insert the following code above the first line of `Program.cs` file. This code uses the `Directory.GetCurrentDirectory` method to obtain the path for the current directory and store it in a new variable `currentDirectory`:
 
@@ -14,7 +14,7 @@ In the current Program.cs code, you're passing the static location of the *store
     var currentDirectory = Directory.GetCurrentDirectory();
     ```
 
-1. Insert the following code after the one that you just added. This code uses the `Path.Combine` method to create the full path to the *stores* directory and store it in a new variable `storesDirectory`:
+1. Insert the following code after the line that you just added. This code uses the `Path.Combine` method to create the full path to the *stores* directory and store it in a new variable `storesDirectory`:
 
     ```csharp
     var storesDirectory = Path.Combine(currentDirectory, "stores");

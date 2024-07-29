@@ -12,7 +12,7 @@ In this exercise, you complete the project by reading the .json files, adding up
     dotnet add package Newtonsoft.Json
     ```
 
-## Preparation for sales data
+## Prepare for sales data
 
 1. At the top of `Program.cs`, add `using Newtonsoft.Json`:
 
@@ -85,7 +85,7 @@ In this exercise, you complete the project by reading the .json files, adding up
 
 ## Write the total to the totals.txt file
 
-1. In the `Program.cs` file, modify the `File.WriteAllText` block to write the value of the `salesTotal` variable to the *totals.txt* file. And while you're at it, change the `File.WriteAllText` call to `File.AppendAllText` so nothing in the file gets overwritten.
+1. In the `Program.cs` file, modify the `File.WriteAllText` block to write the value of the `salesTotal` variable to the *totals.txt* file. While you're at it, change the `File.WriteAllText` call to `File.AppendAllText` so nothing in the file gets overwritten.
 
     ```csharp
     var currentDirectory = Directory.GetCurrentDirectory();            
