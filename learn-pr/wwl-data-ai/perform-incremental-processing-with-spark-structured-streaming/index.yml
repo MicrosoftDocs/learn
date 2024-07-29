@@ -41,5 +41,4 @@ units:
 - learn.wwl.perform-incremental-processing-with-spark-structured-streaming.knowledge-check
 - learn.wwl.perform-incremental-processing-with-spark-structured-streaming.summary
 badge:
-  uid: learn.wwl.explore-azure-databricks.badge
-  
+  uid: learn.wwl.perform-incremental-processing-with-spark-structured-streaming.badge
