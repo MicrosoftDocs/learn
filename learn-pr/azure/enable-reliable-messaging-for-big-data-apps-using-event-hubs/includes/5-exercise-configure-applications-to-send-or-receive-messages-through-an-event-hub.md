@@ -108,6 +108,7 @@ In this exercise, you use the built-in Cloud Shell editor to modify the SimpleSe
 
 1. Save the **SimpleSend.java** file, and then close the editor. Select in the upper right corner of the editor, and use the **Save** and **Close Editor** menu items. 
 
+    :::image type="content" source="../media/5-save-and-close-editor.png" alt-text="Screenshot showing menu items to save the file and close the editor.":::
 
 ## Use Maven to build SimpleSend.java
 
