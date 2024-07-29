@@ -20,7 +20,7 @@ The latest breakthrough in **Natural Language Processing** (**NLP**) is owed to 
 
 Transformers were introduced in the [*Attention is all you need* paper by Vaswani, et al. from 2017](https://arxiv.org/abs/1706.03762?azure-portal=true). The Transformer architecture provided two innovations to NLP that resulted in the emergence of foundation models:
 
-- Instead of processing words sequentially, Tranformers process each word independently and in parallel by using **attention**.
+- Instead of processing words sequentially, Transformers process each word independently and in parallel by using **attention**.
 - Next to the semantic similarity between words, Transformers use **positional encoding** to include the information about the position of a word in a sentence.
 
 Foundation models designed for NLP use cases are often referred to as **Large Language Models** (**LLMs**) or language models. In this module, you explore the available language models, how to select a model for your use case, and how to use a language model with the Azure AI Studio. You focus on language models that help you to develop custom copilots that serve as chat applications that do question answering, answering questions to your users.

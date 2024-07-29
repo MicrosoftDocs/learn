@@ -33,7 +33,7 @@ The shown JSON is the input data to your model endpoint every time you send a ne
 
 Some common prompt engineering techniques to apply as a developer by updating the system message are:
 
-- Use **one shot** or **few shots**: Provide one or more examples to help the model identify a desired pattern.
+- Use **one shot** or **few shots**: Provide one or more examples to help the model identify a desired pattern. You can add a section to the system message to add one or more examples.
     :::image type="content" source="../media/use-shots.png" alt-text="Screenshot of a system message with examples.":::
 - Use **chain-of-thought**: Guide the model to reason step-by-step by instructing it to think through the task.
     :::image type="content" source="../media/chain-of-thought.png" alt-text="Screenshot of chain-of-thought reasoning.":::
@@ -51,6 +51,6 @@ As a developer, you can also apply other optimization strategies to improve the 
 
 To optimize for context, you can apply a **Retrieval Augmented Generation** (**RAG**) pattern. With RAG, you *ground* your data by first retrieving context from a data source before generating a response. For example, you want customers to ask questions about hotels that you're offering in your travel booking catalog.
 
-When you want the model to respond in a specific style or format, you can instruct the model to do so by adding guidelines in the system message. When you notice the model's behavior is not consistent, you can further enforce this by **fine-tuning** a model. With fine-tuning you train a base language model on a dataset before integrating it in your application.
+When you want the model to respond in a specific style or format, you can instruct the model to do so by adding guidelines in the system message. When you notice the model's behavior isn't consistent, you can further enforce consistency in behavior by **fine-tuning** a model. With fine-tuning, you train a base language model on a dataset before integrating it in your application.
 
 You can also use a combination of optimization strategies, like RAG *and* a fine-tuned model, to improve your language application.
