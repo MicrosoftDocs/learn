@@ -3,11 +3,13 @@ uid: learn.wwl.implement-ha-sap-netweaver-anydb.set-required-dns-ip-addresses
 title: Set the required DNS IP addresses
 metadata:
   title: Set the required DNS IP addresses
-  description: "Set the required DNS IP addresses"
-  ms.date: 03/19/2024
+  description: "Assign the required DNS static IP addresses to the Azure Virtual Machines."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/5-set-required-dns-ip-addresses.md)]
