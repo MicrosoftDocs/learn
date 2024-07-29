@@ -51,7 +51,7 @@ So let's also add these buttons underneath the inputs from the previous step:
 </button>
 ```
 
-## Testing the HTML
+## Test the HTML
 
 Now that the HTML is entered, you completed most of the code for this app. If you run the app by entering the same command from the previous unit (`npx parcel index.html`) and then open the app, you should see the following app in your browser.
 
@@ -70,7 +70,7 @@ import { AzureCommunicationTokenCredential } from '@azure/communication-common';
 
 The first import is a `CallClient` to be used later to actually make our calls. It handles microphones, audio, and more for you. The second import, `AzureCommunicationTokenCredential`, is used to handle the authentication requirements for Azure Communication Services. Authentication ensures you know who a user is when they place a call.
 
-## Getting references to our HTML
+## Get references to the HTML code
 
 Earlier, you created HTML elements for users to use to control the app. To listen to the user interacting with them, you need to get references to the elements in your JavaScript.
 
@@ -90,7 +90,7 @@ let callAgent;
 let tokenCredential;
 ```
 
-## Handling authentication
+## Handle authentication
 
 Now that you completed some basic setup, you can start creating some functionality. The first thing you need functionally is to handle authentication. Authentication is handled by the user entering a user token into the token input element that you created and then clicking your "submit token." To handle this process within your code, register a click handler to that submit token button, which processes the user token. You can add this code after your variable definitions from the previous section:
 
@@ -120,7 +120,7 @@ This code takes the following actions:
 1. Registers an incoming call handler, which you'll write shortly.
 1. Updates some of our buttons so the user can proceed.
 
-## Making calls
+## Make calls
 
 Now that authentication is out of the way, you can start on some real functionality. Let's start by allowing the user to make a call:
 
@@ -141,7 +141,7 @@ callButton.addEventListener("click", () => {
 
 This code registers a click handler on the **Start Call** button. It retrieves the callee ID from the matching input element and then uses the Call Agent to make a call.
 
-## Hanging up
+## Hang up
 
 After a call is opened, you need to allow the user to hang up:
 
@@ -176,11 +176,11 @@ const incomingCallHandler = async (args) => {
 };
 ```
 
-## Testing
+## Test the completed app
 
 The JavaScript code is also done now. Run the app by using the same command as the previous unit (`npx parcel index.html`) and then open the app in your browser. You now have a functional basic calling app!
 
-### Getting test credentials
+### Get test credentials
 
 To test actually making a call, you need some credentials. You can obtain credentials from the Azure portal. Open your Azure Communication Services resource within the Azure portal, and then select **Settings** > **Identities & User Access Tokens** within the communication service menu:
 
@@ -200,7 +200,7 @@ The first set of credentials is used for the calling user, and the second set is
 
 In a real world app, you should use the identity systems and client libraries to create and store these credentials. This way, a real-world user doesn't need to manually copy and enter these items. For more info on this concept, open the links at the end of this module.
 
-### Calling the Echo Bot
+### Call the Echo Bot
 
 Azure Communication Services has an Echo Bot, which you can call to test your microphone. Echo Bot is compatible with this app. To call the Echo Bot:
 
@@ -212,7 +212,7 @@ Azure Communication Services has an Echo Bot, which you can call to test your mi
 
 Your browser might prompt you in some microphone permission dialogs, so make sure you accept them. If everything works out correctly, you should be on a call with the Echo Bot. The bot enables you to record a short message, which it then plays back to you.
 
-### Calling another user
+### Call another user
 
 You can also call another user by using this app. This action requires a second set of credentials, which you generated earlier. Follow these steps:
 
