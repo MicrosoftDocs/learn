@@ -3,11 +3,13 @@ uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.tran
 title: Translate data in Azure Database for PostgreSQL
 metadata:
   title: Translate data in Azure Database for PostgreSQL
-  description: "Translate data in Azure Database for PostgreSQL"
-  ms.date: 04/26/2024
+  description: Translate data in Azure Database for PostgreSQL
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 04/26/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/3-translate-postgresql-data.md)]

@@ -2,14 +2,14 @@
 uid: learn.wwl.define-microsoft-ai-strategy-retail
 metadata:
   title: Define a Microsoft AI strategy to create business value in retail
-  description: "Discover AI use cases and scenarios for retail. Get familiar with Microsoft AI tools and services for retail. Learn from real success stories."
-  ms.date: 05/22/2024
+  description: Discover AI use cases and scenarios for retail. Get familiar with Microsoft AI tools and services for retail. Learn from real success stories.
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
-  ms.custom:
-  - N/A
+  ms.date: 05/22/2024
   ms.service: microsoft-cloud-retail
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
   ai-usage: human-only
 title: Define a Microsoft AI strategy to create business value in retail
 summary: This module is designed to help retail professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.

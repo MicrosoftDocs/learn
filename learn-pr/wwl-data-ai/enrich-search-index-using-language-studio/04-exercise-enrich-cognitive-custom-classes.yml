@@ -2,13 +2,14 @@
 uid: learn.wwl.enrich-search-index-using-language-studio.exercise-enrich-cognitive-custom-classes
 title: 'Exercise: Enrich a search index in Azure AI Search with custom classes'
 metadata:
-  title: 'Exercise: Enrich a search index in Azure AI Search with custom classes'
+  title: "Exercise: Enrich a search index in Azure AI Search with custom classes"
   description: "Exercise: Enrich a search index in Azure AI Search with custom classes"
-  ms.date: 09/27/2023
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/27/2023
   ms.topic: unit
-  ms.custom:
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 30

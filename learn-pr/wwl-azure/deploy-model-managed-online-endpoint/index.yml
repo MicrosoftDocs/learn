@@ -3,11 +3,13 @@ uid: learn.wwl.deploy-model-managed-online-endpoint
 metadata:
   title: Deploy a model to a managed online endpoint
   description: Learn how to deploy models to a managed online endpoint for real-time inferencing.
-  ms.date: 09/11/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: module
+  ms.date: 09/11/2023
   ms.service: azure
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Deploy a model to a managed online endpoint
 summary: Learn how to deploy models to a managed online endpoint for real-time inferencing.
 abstract: |

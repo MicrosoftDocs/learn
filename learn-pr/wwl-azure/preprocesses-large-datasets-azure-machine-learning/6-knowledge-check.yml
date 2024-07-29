@@ -3,11 +3,13 @@ uid: learn.wwl.preprocessing-large-datasets-azure-machine-learning.knowledge-che
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 07/10/2024
+  description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai

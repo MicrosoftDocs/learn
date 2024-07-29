@@ -3,11 +3,13 @@ uid: learn.wwl.use-prebuilt-form-recognizer-models.use-general-document-read-lay
 title: Use the General Document, Read, and Layout models
 metadata:
   title: Use the General Document, Read, and Layout models
-  description: "Use the General Document, Read, and Layout models"
-  ms.date: 02/06/2024
+  description: Use the General Document, Read, and Layout models
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 02/06/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/3-use-general-document-read-layout-models.md)]

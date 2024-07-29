@@ -3,11 +3,13 @@ uid: learn.wwl.register-mlflow-model-azure-machine-learning.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 01/12/2024
+  description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 01/12/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
   title: ""
