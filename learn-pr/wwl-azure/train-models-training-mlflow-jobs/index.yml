@@ -3,11 +3,13 @@ uid: learn.wwl.train-models-training-mlflow-jobs
 metadata:
   title: Track model training with MLflow in jobs
   description: Learn how to track model training with MLflow in jobs when running scripts.
-  ms.date: 09/25/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: module
+  ms.date: 09/25/2023
   ms.service: azure
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Track model training with MLflow in jobs
 summary: Learn how to track model training with MLflow in jobs when running scripts.
 abstract: |

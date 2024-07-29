@@ -3,11 +3,13 @@ uid: learn.wwl.run-pipelines-azure-machine-learning.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 06/06/2023
+  description: Summary
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 06/06/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

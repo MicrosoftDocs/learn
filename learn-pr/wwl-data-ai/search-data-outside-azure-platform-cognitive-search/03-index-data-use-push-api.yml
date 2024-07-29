@@ -3,11 +3,13 @@ uid: learn.wwl.search-data-outside-azure-platform-cognitive-search.index-any-dat
 title: Index any data using the Azure AI Search push API
 metadata:
   title: Index any data using the Azure AI Search push API
-  description: "Index any data using the Azure AI Search push API"
-  ms.date: 09/27/2023
+  description: Index any data using the Azure AI Search push API
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/27/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 11

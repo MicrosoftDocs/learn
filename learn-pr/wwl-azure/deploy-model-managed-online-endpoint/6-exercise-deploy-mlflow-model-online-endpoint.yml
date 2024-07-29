@@ -3,11 +3,13 @@ uid: learn.wwl.deploy-model-managed-online-endpoint.exercise-deploy-mlflow-model
 title: Exercise - Deploy an MLflow model to an online endpoint
 metadata:
   title: Exercise - Deploy an MLflow model to an online endpoint
-  description: "Exercise - Deploy an MLflow model to an online endpoint"
-  ms.date: 09/11/2023
+  description: Exercise - Deploy an MLflow model to an online endpoint
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 09/11/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-deploy-mlflow-model-online-endpoint.md)]

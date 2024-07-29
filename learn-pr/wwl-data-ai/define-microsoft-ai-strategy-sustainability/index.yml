@@ -2,12 +2,14 @@
 uid: learn.wwl.define-microsoft-ai-strategy-sustainability
 metadata:
   title: Define a Microsoft AI strategy to create business value in sustainability
-  description: "Discover AI use cases and scenarios for sustainability. Get familiar with Microsoft AI tools and services for sustainability. Learn from real success stories."
-  ms.date: 05/22/2024
+  description: Discover AI use cases and scenarios for sustainability. Get familiar with Microsoft AI tools and services for sustainability. Learn from real success stories.
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.date: 05/22/2024
   ms.service: microsoft-cloud-sustainability
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
   ai-usage: human-only
 title: Define a Microsoft AI strategy to create business value in sustainability
 summary: This module is designed to help sustainability professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
