@@ -4,9 +4,9 @@ title: Describe Azure networking
 metadata:
   title: Describe Azure networking
   description: TBD
-  ms.date: 10/01/2022
+  ms.date: 07/17/2024
   author: TBD
-  ms.author: v-jenhor
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 5
 content: |
@@ -22,7 +22,7 @@ quiz:
     - content: "The Microsoft global network spans the United States and Europe."
       isCorrect: false
       explanation: "Incorrect. The Microsoft global network is a global implementation."
-    - content: "The Microsoft global network can be used by Microsoft but not customers."
+    - content: "The Microsoft global network is used by Microsoft but not its customers."
       isCorrect: false
       explanation: "Incorrect. Customers can use a range of services available in the Microsoft global network."
     - content: "The Microsoft global network is used for Azure services, not other Microsoft Cloud services."

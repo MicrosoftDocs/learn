@@ -3,11 +3,13 @@ uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search.improve
 title: Improve search experience by ordering results by distance from a given reference point
 metadata:
   title: Improve search experience by ordering results by distance from a given reference point
-  description: "Improve search experience by ordering results by distance from a given reference point"
-  ms.date: 09/27/2023
+  description: Improve search experience by ordering results by distance from a given reference point
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/27/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

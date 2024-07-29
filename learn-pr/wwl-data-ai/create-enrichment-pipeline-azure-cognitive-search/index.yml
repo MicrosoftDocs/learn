@@ -2,12 +2,14 @@
 uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search
 metadata:
   title: Create a custom skill for Azure AI Search
-  description: "Create a custom skill for Azure AI Search"
-  ms.date: 12/11/2023
+  description: Create a custom skill for Azure AI Search
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module-standard-task-based
+  ms.date: 12/11/2023
   ms.service: cognitive-search
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Create a custom skill for Azure AI Search
 summary: Use the power of artificial intelligence to enrich your data and find new insights.
 abstract: |

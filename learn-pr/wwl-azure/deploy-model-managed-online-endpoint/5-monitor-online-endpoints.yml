@@ -3,11 +3,13 @@ uid: learn.wwl.deploy-model-managed-online-endpoint.monitor-online-endpoints
 title: Test managed online endpoints
 metadata:
   title: Test managed online endpoints
-  description: "Test managed online endpoints"
-  ms.date: 09/11/2023
+  description: Test managed online endpoints
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 09/11/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom: devx-track-python
 durationInMinutes: 5
 content: |

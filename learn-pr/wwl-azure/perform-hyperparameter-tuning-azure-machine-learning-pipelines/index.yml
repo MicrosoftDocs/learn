@@ -2,12 +2,14 @@
 uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines
 metadata:
   title: Perform hyperparameter tuning with Azure Machine Learning
-  description: "Azure Machine Learning Python SDK v2."
-  ms.date: 09/11/2023
+  description: Azure Machine Learning Python SDK v2.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: module-standard-task-based
+  ms.date: 09/11/2023
   ms.service: machine-learning
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Perform hyperparameter tuning with Azure Machine Learning
 summary: Learn how to perform hyperparameter tuning with a sweep job in Azure Machine Learning.
 abstract: |

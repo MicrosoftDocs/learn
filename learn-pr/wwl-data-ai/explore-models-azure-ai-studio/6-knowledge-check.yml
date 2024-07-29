@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-models-copilot-ai-studio.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check about configuring language models."
+  ms.date: 7/2/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "You want to specify the tone, format, and content for each interaction with your model in the playground. What should you use to customize the model response?"
+    choices:
+    - content: "Benchmarks"
+      isCorrect: false
+      explanation: "Incorrect. Benchmarks are used to compare the performance of models, not to customize individual model responses."
+    - content: "Grounding"
+      isCorrect: false
+      explanation: "Incorrect. Grounding is a technique used to provide context or background information to a model, not to customize its responses."
+    - content: "System message"
+      isCorrect: true
+      explanation: "Correct. System messages are used to customize the model's responses by specifying the tone, format, and content for each interaction."
+  - content: "What pattern can you use to ground prompts?"
+    choices:
+    - content: "Metadata Optimized Prompt (MOP)"
+      isCorrect: false
+      explanation: "Incorrect. MOP isn't a recognized pattern for grounding prompts."
+    - content: "Retrieval Augmented Generation (RAG)"
+      isCorrect: true
+      explanation: "Correct. RAG involves using a retrieval-based approach to provide relevant information to the model, which can help ground the prompts in specific knowledge or data."
+    - content: "Data Understanding Support Text (DUST)"
+      isCorrect: false
+      explanation: "Incorrect. DUST isn't a recognized pattern for grounding prompts."
+  - content: "Where can you test a deployed model in the Azure AI Studio?"
+    choices:
+    - content: "Chat playground"
+      isCorrect: true
+      explanation: "Correct. The chat playground is designed for interactive testing and experimentation with deployed models, allowing you to explore how the model responds in real-time."
+    - content: "Sandbox"
+      isCorrect: false
+      explanation: "Incorrect. A sandbox is typically a safe environment for testing code changes, but it isn't designed for testing deployed language models."
+    - content: "Development toolbox"
+      isCorrect: false
+      explanation: "Incorrect. The development toolbox can contain various tools for development purposes, but it isn't the place where you would test a deployed model."
