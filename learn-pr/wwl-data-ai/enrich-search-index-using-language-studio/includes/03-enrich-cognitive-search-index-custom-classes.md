@@ -280,7 +280,7 @@ In the Azure portal, select the skillset and add JSON in this format:
 }
 ```
 
-This `WebApiSill` skill definition specifies that the language and the contents of a document are passed as inputs to the function app. The app will return JSON text named `class`.
+This `WebApiSkill` definition specifies that the language and the contents of a document are passed as inputs to the function app. The app will return JSON text named `class`.
 
 #### Map the output from the function app into the index
 
