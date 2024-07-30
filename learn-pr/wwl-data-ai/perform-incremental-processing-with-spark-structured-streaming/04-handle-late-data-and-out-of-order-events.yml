@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/04-handling-late-data-and-out-of-order-events.md)]
+  [!include[](includes/04-handle-late-data-and-out-of-order-events.md)]

@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/06-exercise-01-transforming-with-spark-structured-streaming.md)]
+  [!include[](includes/06-exercise-01-transform-with-spark-structured-streaming.md)]
