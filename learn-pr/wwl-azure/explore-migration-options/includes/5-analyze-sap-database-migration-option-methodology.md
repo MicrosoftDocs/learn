@@ -44,7 +44,7 @@ Backup must be performed prior to commencing the downtime activities. In the eve
 
 ## DMO with system move
 
-The option “Enable the migration with system move” is available from SUM 1.0 SP21 where the application server driving the migration can be changed as part of the process, that is, SUM started on on-prem application server and switched to an application server running in Azure. SUM is running on the source system and will stop at the execution phase. Subsequently, the complete SUM directory is copied to Azure where the import process continues on the new/target application server
+The option “Enable the migration with system move” is available from SUM 1.0 SP21 where the application server driving the migration can be changed as part of the process, that is, SUM started on on-premises application server and switched to an application server running in Azure. SUM is running on the source system and will stop at the execution phase. Subsequently, the complete SUM directory is copied to Azure where the import process continues on the new/target application server
 
 The following table compares the Classical DMO versus DMO with System Move Option
 

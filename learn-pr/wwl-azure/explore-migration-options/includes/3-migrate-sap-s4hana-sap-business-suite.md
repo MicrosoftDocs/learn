@@ -5,7 +5,7 @@ For many SAP customers, events in their migration of SAP HANA to the cloud are d
 
 As a result, initial migrations of SAP HANA to Microsoft Azure are focused on SAP BW to take advantage of SAP HANA’s in-memory capability for the BW workload. This results in migration of the BW application to utilize SAP HANA at the database layer, and eventually the more involved migration of BW on HANA to BW/4HANA.
 
-:::image border="false" type="content" source="../media/journey-to-azure-for-sap-workloads-0a433e12.png" alt-text="Diagram showing the journey to Azure for S A P workloads.":::
+:::image border="false" type="content" source="../media/journey-azure-sap-workloads-0a433e12.png" alt-text="Diagram showing the journey to Azure for S A P workloads.":::
 
 The SAP Database Migration Option (DMO) with System Move option of Software Update Manager (SUM), used as part of the migration allows the customer to perform the migration in a single step. Moving in a single step from source system on-premises, or to the target system residing in Microsoft Azure, and minimizing overall downtime.
 

@@ -42,7 +42,7 @@ The infrastructure/hardware reduction lever consists of the following:
 ### Microsoft Azure
 
 - **Express Route connectivity** is recommended with the maximum bandwidth available (currently available up to 10 Gbps)
-- use the dmotocloud.sh script (RSYNC) to move files from an on-premise source to an Azure target for the DMO System Move Option with Parallel Transfer.
+- use the dmotocloud.sh script (RSYNC) to move files from an on-premises source to an Azure target for the DMO System Move Option with Parallel Transfer.
 - **Implement storage snapshots** for time-efficient backups during the cutover period.
 
 ## Key considerations for downtime optimization for DMO
