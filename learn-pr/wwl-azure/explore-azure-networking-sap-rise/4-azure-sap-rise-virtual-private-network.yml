@@ -4,10 +4,12 @@ title: Explore Azure virtual private network connection to SAP RISE
 metadata:
   title: Explore Azure virtual private network connection to SAP RISE
   description: "Learn to establish a connection between Azure and SAP RISE using a Virtual Private Network VNet-to-VNet."
-  ms.date: 07/26/2024
+  ms.date: 07/30/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/4-azure-sap-rise-virtual-private-network.md)]
