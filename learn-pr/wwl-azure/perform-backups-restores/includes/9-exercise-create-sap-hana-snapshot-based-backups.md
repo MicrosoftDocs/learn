@@ -8,7 +8,7 @@ The process works as follows:
 
 The snapshot then also appears in the backup catalog in SAP HANA Studio. On disk, the snapshot shows up in the SAP HANA data directory. It's necessary to ensure that the file system consistency is also guaranteed before running the storage snapshot while SAP HANA is in the snapshot preparation mode.
 
-Once the storage snapshot is done, it's critical to confirm the SAP HANA snapshot. There is a corresponding SQL statement to run: BACKUP DATA CLOSE SNAPSHOT (see [BACKUP DATA CLOSE SNAPSHOT Statement (Backup and Recovery)](https://help.sap.com/docs/SAP_HANA_PLATFORM/4fe29514fd584807ac9f2a04f6754767/c39739966f7f4bd5818769ad4ce6a7f8.html)).
+Once the storage snapshot is done, it's critical to confirm the SAP HANA snapshot. There's a corresponding SQL statement to run: BACKUP DATA CLOSE SNAPSHOT (see [BACKUP DATA CLOSE SNAPSHOT Statement (Backup and Recovery)](https://help.sap.com/docs/SAP_HANA_PLATFORM/4fe29514fd584807ac9f2a04f6754767/c39739966f7f4bd5818769ad4ce6a7f8.html)).
 
 > [!IMPORTANT]
 > Make sure to confirm the HANA snapshot. Due to "Copy-on-Write," SAP HANA might require extra disk space in snapshot-prepare mode, and it's not possible to start new backups until the SAP HANA snapshot is confirmed.
@@ -22,7 +22,7 @@ The Azure Backup service offers an option to back up and restore a virtual machi
 - For Linux virtual machines, only file-consistent backups are possible, since Linux doesn't have an equivalent platform to VSS.
 - Applications need to implement their own integrity validation mechanism for the restored data.
 
-Therefore, one has to make sure SAP HANA is in a consistent state on disk when the backup starts. More specifically, it's recommended to confirm or abandon a storage snapshot as soon as possible after it has been created. While the storage snapshot is being prepared or created, the snapshot-relevant data is frozen. While the snapshot-relevant data remains frozen, changes can still be made in the database. Such changes will not cause the frozen snapshot-relevant data to be changed. Instead, the changes are written to positions in the data area that are separate from the storage snapshot. Changes are also written to the log. However, the longer the snapshot-relevant data is kept frozen, the more the data volume can grow.
+Therefore, one has to make sure SAP HANA is in a consistent state on disk when the backup starts. More specifically, it's recommended to confirm or abandon a storage snapshot as soon as possible after it has been created. While the storage snapshot is being prepared or created, the snapshot-relevant data is frozen. While the snapshot-relevant data remains frozen, changes can still be made in the database. Such changes won't cause the frozen snapshot-relevant data to be changed. Instead, the changes are written to positions in the data area that are separate from the storage snapshot. Changes are also written to the log. However, the longer the snapshot-relevant data is kept frozen, the more the data volume can grow.
 
 Azure Backup takes care of the file system consistency via Azure Virtual Machine extensions. These extensions aren't available standalone and work only in combination with Azure Backup service. Nevertheless, it's still a requirement to provide scripts to create and delete an SAP HANA snapshot to guarantee app consistency.
 
@@ -38,7 +38,7 @@ For details on where to copy these scripts and details on how Azure Backup works
 - Plan your virtual machine backup infrastructure in Azure: [An overview of Azure Virtual Machine backup](/azure/backup/backup-azure-vms-introduction)
 - Application-consistent backup of Azure Linux virtual machines: [Application-consistent backup of Azure Linux virtual machines](/azure/backup/backup-azure-linux-app-consistent)
 
-At the time of authoring, Microsoft has not published prepare-scripts and post-snapshot scripts for SAP HANA. You as the customer or system integrator would need to create those scripts and configure the procedure based on the documentation referenced above.
+At the time of authoring, Microsoft hasn't published prepare-scripts and post-snapshot scripts for SAP HANA. You as the customer or system integrator would need to create those scripts and configure the procedure based on the documentation referenced above.
 
 ## Restore from application consistent backup against a virtual machine
 
@@ -83,9 +83,9 @@ As the result of the restore via Azure Backup service, Azure Virtual Machine uni
 Instead of using the Azure Backup service, one could configure an individual backup solution by creating blob snapshots of Azure VHDs manually via PowerShell. This offers more flexibility but doesn't resolve the issues described earlier:
 
 - You still must make sure that SAP HANA is in a consistent state by creating an SAP HANA snapshot.
-- The OS disk cannot be overwritten even if the virtual machine is deallocated because of an error stating that a lease exists. It only works after deleting the virtual machine, which would lead to a new unique VM ID and the need to install a new SAP license.
+- The OS disk can't be overwritten even if the virtual machine is deallocated because of an error stating that a lease exists. It only works after deleting the virtual machine, which would lead to a new unique VM ID and the need to install a new SAP license.
 
-It is possible to restore only the data disks of an Azure Virtual Machine (avoiding the problem of getting a new unique VM ID and, therefore, invalidated the SAP license) by using the following procedure:
+It's possible to restore only the data disks of an Azure Virtual Machine (avoiding the problem of getting a new unique VM ID and, therefore, invalidated the SAP license) by using the following procedure:
 
 1. Verify that SAP HANA was in a consistent state by SAP HANA snapshot feature.
 2. Perform file system freeze.
