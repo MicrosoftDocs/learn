@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-lighthouse.4-when-to-use-azure-lighthouse
+uid: learn.intro-to-azure-lighthouse.when-to-use-azure-lighthouse
 metadata:
   title: When to use Azure Lighthouse
   description: Understand how to use Azure Resource Manager templates to onboard customers to Azure Lighthouse.

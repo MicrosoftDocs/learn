@@ -31,11 +31,11 @@ prerequisites: |
  - Basic understanding of Microsoft Azure subscriptions
  - Basic understanding of Azure resource groups and resources
 units:
-- learn.intro-to-azure-lighthouse.1-introduction
-- learn.intro-to-azure-lighthouse.2-what-is-azure-lighthouse
-- learn.intro-to-azure-lighthouse.3-how-azure-lighthouse-works
-- learn.intro-to-azure-lighthouse.4-when-to-use-azure-lighthouse
-- learn.intro-to-azure-lighthouse.5-knowledge-check
-- learn.intro-to-azure-lighthouse.6-summary
+- learn.intro-to-azure-lighthouse.introduction
+- learn.intro-to-azure-lighthouse.what-is-azure-lighthouse
+- learn.intro-to-azure-lighthouse.how-azure-lighthouse-works
+- learn.intro-to-azure-lighthouse.when-to-use-azure-lighthouse
+- learn.intro-to-azure-lighthouse.knowledge-check
+- learn.intro-to-azure-lighthouse.summary
 badge:
   uid: learn.intro-to-azure-lighthouse.badge
