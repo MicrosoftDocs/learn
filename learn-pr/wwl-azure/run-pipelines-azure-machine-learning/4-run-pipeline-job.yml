@@ -3,11 +3,13 @@ uid: learn.wwl.run-pipelines-azure-machine-learning.run-pipeline-job
 title: Run a pipeline job
 metadata:
   title: Run a pipeline job
-  description: "Run a pipeline job"
-  ms.date: 06/06/2023
+  description: Run a pipeline job
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 06/06/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 9
 content: |
   [!include[](includes/4-run-pipeline-job.md)]

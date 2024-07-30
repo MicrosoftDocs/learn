@@ -3,11 +3,13 @@ uid: learn.wwl.get-started-ai-fundamentals.understand-computer-vision
 title: Understand computer vision
 metadata:
   title: Understand computer vision
-  description: "Understand computer vision"
-  ms.date: 12/05/2023
+  description: Understand computer vision
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 12/05/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/3-understand-computer-vision.md)]

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 04/17/2023
+  ms.date: 07/20/2024
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit
@@ -17,31 +17,31 @@ quiz:
     - content: "TPR is the number of correct responses. FPR is the number of incorrect responses."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "TPR is the proportion of answers that were provided correctly as ‘true’. FPR is the proportion of answers that were provided incorrectly as ‘true’."
+    - content: "TPR is the proportion of answers that were provided correctly as 'true'. FPR is the proportion of answers that were provided incorrectly as 'true'."
       isCorrect: true
       explanation: "Correct."
-    - content: "TPR is the proportion of answers that were provided correctly as ‘true’. FPR is the proportion of answers that were provided incorrectly as ‘false’."
+    - content: "TPR is the proportion of answers that were provided correctly as 'true'. FPR is the proportion of answers that were provided incorrectly as 'false'."
       isCorrect: false
       explanation: "Incorrect."
-  - content: 'What are on the x and y axes in an ROC plot?'
+  - content: 'What are on the X and Y axes in an ROC plot?'
     choices:
-    - content: 'x-axis: FP rate, y-axis: TP rate'
+    - content: 'X-axis: FP rate, Y-axis: TP rate'
       isCorrect: true
       explanation: "Correct."
-    - content: "x-axis: Number of FPs, y-axis: Number of TPs"
+    - content: "X-axis: Number of FPs, Y-axis: Number of TPs"
       isCorrect: false
       explanation: "Incorrect. "
-    - content: "x-axis: Number of TPs, y-axis: Number of FPs"
+    - content: "X-axis: Number of TPs, Y-axis: Number of FPs"
       isCorrect: false
       explanation: "Incorrect."
   - content: 'What does area under the curve for an ROC plot tell us?'
     choices:
     - content: "How well the model works at its optimum decision threshold"
       isCorrect: false
-      explanation: "Incorrect. This might be obtainable from the ROC plot but we can’t get this information from the AUC."
+      explanation: "Incorrect. This information might be obtainable from the ROC plot but we can't get this information from the AUC."
     - content: "Which is the optimum decision threshold?"
       isCorrect: false
-      explanation: "Incorrect. AUC is a summary metric that is too simplified to tell us this."
-    - content: "It gives a summary of how well a model works across a variety of thresholds."
+      explanation: "Incorrect. AUC is a summary metric that is too simplified to provide this information."
+    - content: "It gives a summary of how well a model works across various thresholds."
       isCorrect: true
       explanation: "Correct."

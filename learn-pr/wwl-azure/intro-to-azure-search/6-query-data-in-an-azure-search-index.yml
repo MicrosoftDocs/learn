@@ -3,13 +3,13 @@ uid: learn.azure-introduction-to-azure-search.6-query-data-in-an-azure-search-in
 title: Query data in an Azure AI Search index
 metadata:
   title: Query data in an Azure AI Search index
-  description: "Write simple search queries in the Search explorer, then append extra parameters to manipulate those results"
-  ms.date: 07/25/2024
+  description: Write simple search queries in the Search explorer, then append extra parameters to manipulate those results
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 07/25/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
