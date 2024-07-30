@@ -1,25 +1,20 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-lighthouse
 metadata:
-  title: Use Azure Lighthouse with your managed service business
-  description: Learn about and adopt Azure Lighthouse for your managed service business to manage your customers at scale.
-  ms.date: 04/15/2024
-  author: iankensey
-  ms.author: socuff
+  title: Introduction to Azure Lighthouse
+  description: Learn about Azure Lighthouse and how it can help manage your customers at scale.
+  ms.date: 07/24/2024
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: module
-  ms.custom: team=cloud_advocates
-  ms.contributors: socuff-04232021
   ms.service: lighthouse
-title: Use Azure Lighthouse with your managed service business
-summary: Learn about and adopt Azure Lighthouse for your managed service business to manage your customers at scale.
+title: Introduction to Azure Lighthouse
+summary: Characterize the types of scenarios where Azure Lighthouse can be used by a service provider to access customers' Azure environments. Describe how Azure Lighthouse enables multitenant management with enhanced automation, scalability, and governance across resources and tenants.
 abstract: | 
-  In this module, you will:
-  - Learn about Azure Lighthouse.
-  - Understand the features of Azure Lighthouse.
-  - See how to use Azure Lighthouse for cross-tenant management.
-  - See how to use Azure Resource Manager templates.
-  - Set up Microsoft Defender for Cloud with alerting.
-  - Create a managed service offer on the Azure Marketplace.
+  By the end of this module, you'll be able to:
+  - Evaluate whether Azure Lighthouse is appropriate for a service provider who is managing customer resources.
+  - Describe how the cross-tenant delegation feature of Azure Lighthouse enables customers to grant access for a service provider to manage specific resources. 
+
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
@@ -36,18 +31,11 @@ prerequisites: |
  - Basic understanding of Microsoft Azure subscriptions
  - Basic understanding of Azure resource groups and resources
 units:
-- learn.intro-to-azure-lighthouse.1-introduction
-- learn.intro-to-azure-lighthouse.2-intro-azure-lighthouse
-- learn.intro-to-azure-lighthouse.3-prepare-for-azure-lighthouse
-- learn.intro-to-azure-lighthouse.4-using-templates
-- learn.intro-to-azure-lighthouse.4a-exercise-prepare-azure-resource-manager-templates
-- learn.intro-to-azure-lighthouse.4b-exercise-deploy-azure-resource-manager-templates
-- learn.intro-to-azure-lighthouse.5-video-publish-managed-service
-- learn.intro-to-azure-lighthouse.6-cross-tenant-management
-- learn.intro-to-azure-lighthouse.6a-exercise-managing-a-customer
-- learn.intro-to-azure-lighthouse.7-manage-customer-resources
-- learn.intro-to-azure-lighthouse.8-exercise-manage-customer-resources
-- learn.intro-to-azure-lighthouse.9-knowledge-check
-- learn.intro-to-azure-lighthouse.10-summary
+- learn.intro-to-azure-lighthouse.introduction
+- learn.intro-to-azure-lighthouse.what-is-azure-lighthouse
+- learn.intro-to-azure-lighthouse.how-azure-lighthouse-works
+- learn.intro-to-azure-lighthouse.when-to-use-azure-lighthouse
+- learn.intro-to-azure-lighthouse.knowledge-check
+- learn.intro-to-azure-lighthouse.summary
 badge:
   uid: learn.intro-to-azure-lighthouse.badge

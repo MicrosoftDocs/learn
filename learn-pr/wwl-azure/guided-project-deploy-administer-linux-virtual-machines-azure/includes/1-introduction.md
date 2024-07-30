@@ -1,6 +1,6 @@
 This Guided Project focuses on deploying and administering Azure virtual machines. 
 
-Azure virtual machines (vms) are one of several types of on-demand, scalable computing resources that Azure offers. Typically, you choose a virtual machine when you need more control over the computing environment than the other choices offer. 
+Azure virtual machines (VMs) are one of several types of on-demand, scalable computing resources that Azure offers. Typically, you choose a virtual machine when you need more control over the computing environment than the other choices offer. 
 
 ## Scenario
 
@@ -8,7 +8,7 @@ Your company is an online retailer providing products and services. The company 
 
 The Web tier includes web servers running on Linux virtual machines. The App tier processes user requests such as purchases. The Data tier stores the app data such as inventory levels. 
 
-:::image type="content" source="../media/overarch.png" alt-text="Diagram of the overarching architecture." border="false":::
+:::image type="content" source="../media/overarch.png" alt-text="Diagram of the overarching architecture as described in the exercise." border="true":::
 
 The project has several phases. In the first phase, you as the Cloud Administrator must learn how to deploy and administer the virtual machines in the Web tier. You need to prototype a solution that includes configure, monitor, storage, and back up. 
 
@@ -24,12 +24,27 @@ By the end of this module, you have practical experience with Linux virtual mach
 
 ## Skilling areas
 
-You reviewed the [Azure virtual machine documentation.](/azure/virtual-machines/). In each area, you identified skills that you need to complete.
+You reviewed the [Azure virtual machine documentation](/azure/virtual-machines/). In each area, you identified skills that you need to complete.
 
-| Skilling area | Skilling task |
-| --- | --- | 
-| **Configure a virtual machine** | <ul><li> Create a Linux virtual machine. </li><li> Connect to a Linux virtual machine using SSH.</li><li> Update Linux virtual machine operating systems. </li><li> Install and run a workload dependency, like Nginx. </li></ul> |
-| **Monitor a virtual machine** |<ul><li> Configure VM Insights. </li><li>  Create an alert.</li><li> Identify performance issues. </li><li> Resize a virtual machine. </li></ul> |
-| **Provide access to data storage for a virtual machine** | <ul><li>  Add data disks and configure partitions. </li><li> Assign a managed identity to a virtual machine. </li><li> Mount a file share on a virtual machine. </li><li> Assign Azure roles. </li><li> Use AzCopy to transfer data to and from a virtual machine.  </li></ul>  |
-| **Back up a virtual machine** | <ul><li> Configure Azure Backup. </li></ul> |
+**Configure a virtual machine** 
++ Create a Linux virtual machine. 
++ Connect to a Linux virtual machine using SSH.
++ Update Linux virtual machine operating systems. 
++ Install and run a workload dependency, like Nginx. 
+
+**Monitor a virtual machine** 
++ Configure VM Insights. 
++ Create an alert.
++ Identify performance issues. 
++ Resize a virtual machine.
+
+**Provide access to data storage for a virtual machine** 
++ Add data disks and configure partitions. 
++ Assign a managed identity to a virtual machine. 
++ Mount a file share on a virtual machine.
++ Assign Azure roles. 
++ Use AzCopy to transfer data to and from a virtual machine.  
+
+**Back up a virtual machine** 
++ Configure Azure Backup. 
 

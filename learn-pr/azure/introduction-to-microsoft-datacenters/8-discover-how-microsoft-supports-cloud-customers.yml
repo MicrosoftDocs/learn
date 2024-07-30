@@ -3,9 +3,9 @@ uid: learn.introduction-to-microsoft-datacenters.discover-how-microsoft-supports
 title: Discover how Microsoft supports cloud customers
 metadata:
   title: Discover how Microsoft supports cloud customers
-  description: TBD
+  description: Describes the basics of Microsoft support operations for Azure datacenters.
   ms.date: 07/17/2024
-  author: TBD
+  author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 7

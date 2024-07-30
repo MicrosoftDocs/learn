@@ -38,9 +38,9 @@ Here, you create a new virtual machine to serve as a web server for the local me
 1. Select **Review + create**, then select **Create**.
 1. Wait for the VM to be created. You can select the **Notifications** icon in the upper right corner of the portal to monitor the progress.
 
-## Onboard Update Manager to the VM
+## Onboard Update Management to the VM
 
-Here, you enable Update Manager on the virtual machine you created.
+Here, you enable Update Management on the virtual machine you created.
 
 1. In the left pane, select **Virtual machines**.
 1. Select **MediaWebServer**.
