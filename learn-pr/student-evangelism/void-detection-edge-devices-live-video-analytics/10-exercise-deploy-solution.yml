@@ -4,11 +4,10 @@ title: Exercise - Deploy your solution
 metadata:
   title: Exercise - Deploy your solution
   description: In this section, we help learner to deploy the solution.
-  ms.date: 04/30/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 6 # dummy number at present
 content: |
   [!include[](includes/10-exercise-deploy-solution.md)]

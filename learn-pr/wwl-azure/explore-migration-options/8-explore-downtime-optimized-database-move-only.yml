@@ -3,8 +3,8 @@ uid: learn.wwl.explore-migration-options.explore-downtime-optimized-database-mov
 title: Explore downtime-optimized DMO
 metadata:
   title: Explore downtime-optimized DMO
-  description: "Explore downtime-optimized DMO"
-  ms.date: 04/21/2023
+  description: "Explore the downtime-optimized DMO migration option, where large tables are migrated as part of the uptime phase."
+  ms.date: 07/30/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
