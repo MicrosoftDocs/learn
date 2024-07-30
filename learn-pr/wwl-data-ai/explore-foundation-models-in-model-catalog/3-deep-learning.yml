@@ -3,11 +3,13 @@ uid: learn.explore-foundation-models-in-model-catalog.deep-learning
 title: Understand the deep learning techniques used for natural language processing (NLP)
 metadata:
   title: Understand the deep learning techniques used for natural language processing
-  description: "Learn about some core concepts by exploring the first deep learning techniques used for NLP."
-  ms.date: 7/24/2023
+  description: Learn about some core concepts by exploring the first deep learning techniques used for NLP.
   author: madiepev
   ms.author: madiepev
+  ms.date: 7/24/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/3-deep-learning.md)]

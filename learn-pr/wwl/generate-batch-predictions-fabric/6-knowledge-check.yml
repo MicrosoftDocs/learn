@@ -3,11 +3,13 @@ uid: learn.wwl.generate-batch-predictions-fabric.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 10/25/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 10/25/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai

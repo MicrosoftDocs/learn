@@ -3,11 +3,13 @@ uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow.exercise-track-mode
 title: Exercise - Track model training
 metadata:
   title: Exercise - Track model training
-  description: "Exercise - Track model training"
-  ms.date: 06/06/2023
+  description: Exercise - Track model training
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 06/06/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-track-model-training.md)]

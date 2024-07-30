@@ -3,11 +3,13 @@ uid: learn.wwl.design-machine-learning-operations-solution.design-retraining
 title: Design for retraining
 metadata:
   title: Design for retraining
-  description: "Learn what to think about when designing for retraining a model."
-  ms.date: 09/08/2023
+  description: Learn what to think about when designing for retraining a model.
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 09/08/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/4-design-retraining.md)]
