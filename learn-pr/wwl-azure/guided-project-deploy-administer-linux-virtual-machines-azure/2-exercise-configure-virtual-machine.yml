@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 45
 content: |
-  [!include[](includes/2-exercise-configure-virtual-machines.md)]
+  [!include[](includes/2-exercise-configure-virtual-machine.md)]
