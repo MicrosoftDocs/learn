@@ -4,10 +4,12 @@ title: Connect on-premises to SAP RISE
 metadata:
   title: Connect on-premises to SAP RISE
   description: "Learn how to connect SAP RISE to your on-premises network through ExpressRoute or VPN."
-  ms.date: 07/26/2024
+  ms.date: 07/30/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/5-connect-on-premises-sap-rise.md)]
