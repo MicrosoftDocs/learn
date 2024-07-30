@@ -23,8 +23,10 @@ levels:
 roles: 
   - developer
   - solution-architect
-products: 
+products:
   - dotnet
+  - aspnet-core
+  - dotnet-aspire
   - vs
   - vs-code
 subjects: 
