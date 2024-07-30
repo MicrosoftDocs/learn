@@ -3,13 +3,13 @@ uid: learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.bui
 title: Build an Azure AI Document Intelligence custom skill
 metadata:
   title: Build an Azure AI Document Intelligence custom skill
-  description: "Build an Azure AI Document Intelligence custom skill"
-  ms.date: 03/12/2024
+  description: Build an Azure AI Document Intelligence custom skill
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 03/12/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/3-build-custom-skill.md)]

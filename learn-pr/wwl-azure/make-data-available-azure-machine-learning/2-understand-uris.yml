@@ -3,11 +3,13 @@ uid: learn.wwl.make-data-available-azure-machine-learning.understand-uris
 title: Understand URIs
 metadata:
   title: Understand URIs
-  description: "Understand URIs"
-  ms.date: 07/10/2024
+  description: Understand URIs
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/2-understand-uris.md)]

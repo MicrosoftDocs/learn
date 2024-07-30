@@ -9,7 +9,7 @@ metadata:
   ms.service: azure-ai-content-moderator
   ms.topic: module-standard-task-based
   ms.collection:
-    - ce-skilling-ai-copilot
+    - wwl-ai-copilot
 abstract: | 
   In this module, you'll:
   - Learn what text content moderation is.

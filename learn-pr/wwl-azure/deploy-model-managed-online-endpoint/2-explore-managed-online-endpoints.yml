@@ -3,11 +3,13 @@ uid: learn.wwl.deploy-model-managed-online-endpoint.explore-managed-online-endpo
 title: Explore managed online endpoints
 metadata:
   title: Explore managed online endpoints
-  description: "Explore managed online endpoints"
-  ms.date: 09/11/2023
+  description: Explore managed online endpoints
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 09/11/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 9
 content: |
   [!include[](includes/2-explore-managed-online-endpoints.md)]

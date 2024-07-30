@@ -4,6 +4,9 @@ You're now ready to create a new event hub. After creating it with Azure CLI com
 
 Let's create an Event Hubs namespace using Azure CLI and Bash in Azure Cloud Shell on the right.
 
+1. In the **Azure Cloud Shell** window to the right, select **Settings** on the menubar, and then select **Go to Classic version**. Some of the commands used in this Learn module work only in the Classic mode. 
+
+    :::image type="content" source="../media/3-switch-to-classic-mode.png" alt-text="Screenshot showing the menu item to switch Azure Cloud Shell to the Classic mode.":::
 1. First, let's assign default values that can be reused so that you don't have to enter these values with every command. In particular, let's set the *resource group* and *location*. Enter the following command in Cloud Shell, and feel free to replace the location value with a region close to you.
   
     ```azurecli

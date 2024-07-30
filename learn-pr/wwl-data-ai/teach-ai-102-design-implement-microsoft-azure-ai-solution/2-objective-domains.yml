@@ -3,11 +3,13 @@ uid: learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.objecti
 title: Objective Domains
 metadata:
   title: Objective Domains
-  description: "Objective Domains"
-  ms.date: 03/18/2024
+  description: Objective Domains
   author: wwlpublish
   ms.author: tsheppard
+  ms.date: 03/18/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/2-objective-domains.md)]

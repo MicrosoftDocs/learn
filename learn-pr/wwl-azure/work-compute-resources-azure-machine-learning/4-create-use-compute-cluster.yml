@@ -3,11 +3,13 @@ uid: learn.wwl.work-compute-resources-azure-machine-learning.create-use-compute-
 title: Create and use a compute cluster
 metadata:
   title: Create and use a compute cluster
-  description: "Learn about how to create and use a compute cluster in Azure Machine Learning. A compute cluster is ideal for scalable and parallel machine learning workloads."
-  ms.date: 07/31/2023
+  description: Learn about how to create and use a compute cluster in Azure Machine Learning. A compute cluster is ideal for scalable and parallel machine learning workloads.
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/31/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom: devx-track-python
 durationInMinutes: 8
 content: |

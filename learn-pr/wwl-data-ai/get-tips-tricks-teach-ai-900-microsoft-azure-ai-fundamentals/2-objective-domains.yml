@@ -3,13 +3,13 @@ uid: learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.obje
 title: Objective domains
 metadata:
   title: Objective domains
-  description: "Objective domains"
-  ms.date: 03/22/2024
+  description: Objective domains
   author: wwlpublish
   ms.author: tsheppard
+  ms.date: 03/22/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/2-objective-domains.md)]

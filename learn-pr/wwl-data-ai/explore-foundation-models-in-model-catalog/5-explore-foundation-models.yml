@@ -3,11 +3,13 @@ uid: learn.explore-foundation-models-in-model-catalog.explore-foundation-models
 title: Explore foundation models in the model catalog
 metadata:
   title: Explore foundation models in the model catalog of Azure Machine Learning
-  description: "Learn about foundation models and explore the available open source models in the model catalog of Azure Machine Learning."
-  ms.date: 7/25/2023
+  description: Learn about foundation models and explore the available open source models in the model catalog of Azure Machine Learning.
   author: madiepev
   ms.author: madiepev
+  ms.date: 7/25/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/5-explore-foundation-models.md)]

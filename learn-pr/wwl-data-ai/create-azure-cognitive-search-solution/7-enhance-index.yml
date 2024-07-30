@@ -3,11 +3,13 @@ uid: learn.wwl.create-azure-cognitive-search-solution.enhance-index
 title: Enhance the index
 metadata:
   title: Enhance the index
-  description: "Enhance the index"
-  ms.date: 12/11/2023
+  description: Enhance the index
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 12/11/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
