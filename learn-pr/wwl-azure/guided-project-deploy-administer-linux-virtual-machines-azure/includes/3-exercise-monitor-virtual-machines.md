@@ -4,9 +4,14 @@ You need to monitor and be alerted if there are issues with the virtual machine.
 
 ## Architecture diagram
 
-| Workloads Plan  | Tasks|
-| --- | --- |
-| :::image type="content" source="../media/lab-02.png" alt-text="Diagram for exercise 2." border="true"::: | <ul><li>Configure VM Insights. </li><li>Configure action groups and notifications. </li><li>Create alerts. </li><li>Trigger an alert by resizing the virtual machine.</li><li>Configure an alert processing rule.</li></ul> |
+:::image type="content" source="../media/lab-02.png" alt-text="Diagram of the overarching architecture as described in the exercise 2." border="true"::: 
+
+### Job skills
++ Configure VM Insights. 
++ Configure action groups and notifications.
++ Create alerts.
++ Trigger an alert by resizing the virtual machine.
++ Configure an alert processing rule.
 
 Launch the exercise and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 
