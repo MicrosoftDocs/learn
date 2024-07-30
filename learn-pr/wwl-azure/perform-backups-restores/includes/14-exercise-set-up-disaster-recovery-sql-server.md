@@ -53,7 +53,7 @@ Site Recovery can be integrated with native SQL Server BCDR technologies summari
 Set up Active Directory, in the secondary recovery site, for SQL Server to run properly.
 
 - Small enterprise: With a small number of applications, and a single domain controller for the on-premises site, if you want to fail over the entire site, we recommend you use Site Recovery replication to replicate the domain controller to the secondary datacenter or to Azure.
-- Medium to large enterprise: If you have a large number of applications, an Active Directory forest, and you want to fail over by application or workload, we recommend you set up an additional domain controller in the secondary datacenter or in Azure. If you're using Always On availability groups to recover to a remote site, we recommend you set up another additional domain controller on the secondary site or in Azure, to use for the recovered SQL Server instance.
+- Medium to large enterprise: If you have a large number of applications, an Active Directory forest, and you want to fail over by application or workload, we recommend you set up an extra domain controller in the secondary datacenter or in Azure. If you're using Always On availability groups to recover to a remote site, we recommend you set up another extra domain controller on the secondary site or in Azure, to use for the recovered SQL Server instance.
 
 These instructions presume that a domain controller is available in the secondary location.
 
@@ -67,7 +67,7 @@ Here's what you need to do:
 
 SQL Always On doesn’t natively support test failover. To perform a test failover, use the following procedure:
 
-1. Configure Azure VM Backup on the virtual machine that hosts the availability group replica in Azure.
+1. Configure Azure Virtual Machine Backup on the virtual machine that hosts the availability group replica in Azure.
 2. Before triggering test failover of the recovery plan, recover the virtual machine from the backup taken in the previous step into the test virtual network.
 3. Force a quorum in the virtual machine restored from backup.
 4. Update IP of the listener to an IP available in the test failover network.
