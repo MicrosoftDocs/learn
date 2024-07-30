@@ -3,11 +3,13 @@ uid: learn.wwl.get-started-ai-fundamentals.understand-machine-learn
 title: Understand machine learning
 metadata:
   title: Understand machine learning
-  description: "Understand machine learning"
-  ms.date: 12/05/2023
+  description: Understand machine learning
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 12/05/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/2-understand-machine-learn.md)]

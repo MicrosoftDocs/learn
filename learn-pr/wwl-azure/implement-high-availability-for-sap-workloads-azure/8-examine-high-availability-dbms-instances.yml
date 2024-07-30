@@ -3,8 +3,8 @@ uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.examine-of-db
 title: Examine high availability of DBMS instances
 metadata:
   title: Examine high availability of DBMS instances
-  description: "Examine high availability of DBMS instances"
-  ms.date: 10/17/2023
+  description: "Examine high availability of DBMS instances."
+  ms.date: 07/30/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

@@ -2,12 +2,14 @@
 uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search
 metadata:
   title: Implement advanced search features in Azure AI Search
-  description: "Use more advanced features of Azure AI Search to improve your existing search solutions. Learn how to change the ranking on documents, boost the most important terms to your organization, and allow searching in multiple languages."
-  ms.date: 09/27/2023
+  description: Use more advanced features of Azure AI Search to improve your existing search solutions. Learn how to change the ranking on documents, boost the most important terms to your organization, and allow searching in multiple languages.
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module-standard-task-based
+  ms.date: 09/27/2023
   ms.service: cognitive-search
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Implement advanced search features in Azure AI Search
 summary: Use more advanced features of Azure AI Search to improve your existing search solutions. Learn how to change the ranking on documents, boost terms, and allow searching in multiple languages.
 abstract: |
