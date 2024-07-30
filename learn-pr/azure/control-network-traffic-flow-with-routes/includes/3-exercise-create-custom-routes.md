@@ -15,6 +15,8 @@ The first task is to create a new routing table and then add a custom route for 
 > [!NOTE]
 > You might get an error that reads: *This command is implicitly deprecated*. Please ignore this error for this learning module. We are working on it!
 
+1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+
 1. In Azure Cloud Shell, run the following command to create a route table.
 
 ```azurecli

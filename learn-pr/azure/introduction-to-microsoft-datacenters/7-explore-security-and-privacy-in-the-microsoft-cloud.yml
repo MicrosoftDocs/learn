@@ -3,9 +3,9 @@ uid: learn.introduction-to-microsoft-datacenters.explore-security-and-privacy-in
 title: Explore security and privacy in the Microsoft Cloud
 metadata:
   title: Explore security and privacy in the Microsoft Cloud
-  description: TBD
+  description: Describes the basics of security and privacy in the Microsoft Cloud. Including data privacy and security, confidential computing, and reducing the attack surface. 
   ms.date: 07/17/2024
-  author: TBD
+  author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 11
