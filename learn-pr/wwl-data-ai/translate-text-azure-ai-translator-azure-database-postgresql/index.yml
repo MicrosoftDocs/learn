@@ -2,13 +2,15 @@
 uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql
 metadata:
   title: Translate Text with Azure AI Translator and Azure Database for PostgreSQL
-  description: "Learn how to translate Text with Azure AI Translator and Azure Database for PostgreSQL."
-  ms.date: 04/26/2024
+  description: Learn how to translate Text with Azure AI Translator and Azure Database for PostgreSQL.
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.date: 04/26/2024
   ms.service: postgresql
   ms.subservice: flexible-server
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
   ai-usage: human-only
 title: Translate Text with Azure AI Translator and Azure Database for PostgreSQL
 summary: This module guides you through translating textual data in Azure Database for PostgreSQL - Flexible Server using the Azure AI Translator service. You'll load data into PostgreSQL and translate it into multiple languages.

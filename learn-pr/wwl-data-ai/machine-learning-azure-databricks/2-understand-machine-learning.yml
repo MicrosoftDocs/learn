@@ -3,11 +3,13 @@ uid: learn.wwl.machine-learning-azure-databricks.understand-machine-learning
 title: Understand principles of machine learning
 metadata:
   title: Understand principles of machine learning
-  description: "Understand principles of machine learning"
-  ms.date: 08/29/2023
+  description: Understand principles of machine learning
   author: wwlpublish
   ms.author: gmalc
+  ms.date: 08/29/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/2-understand-machine-learning.md)]

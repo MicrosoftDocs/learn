@@ -2,12 +2,14 @@
 uid: learn.wwl.integrate-machine-learning-within-azure-synapse-analytics
 metadata:
   title: Integrate machine learning within Azure Synapse Analytics
-  description: "Integrate machine learning within Azure Synapse Analytics"
-  ms.date: 07/10/2024
+  description: Integrate machine learning within Azure Synapse Analytics
   author: wwlpublish
   ms.author: chtestao
-  ms.topic: module-standard-task-based
+  ms.date: 07/10/2024
   ms.service: azure-synapse-analytics
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Integrate machine learning within Azure Synapse Analytics
 summary: In this module, you will learn how you can build machine learning modules from within Azure Synapse Analytics.
 abstract: |

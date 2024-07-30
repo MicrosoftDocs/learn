@@ -3,11 +3,13 @@ uid: learn.wwl.train-models-training-mlflow-jobs.view-metrics-evaluate-models
 title: View metrics and evaluate models
 metadata:
   title: View metrics and evaluate models
-  description: "Learn how to retrieve metrics and evaluate models in Azure Machine Learning."
-  ms.date: 09/25/2023
+  description: Learn how to retrieve metrics and evaluate models in Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 09/25/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 8
 content: |
   [!include[](includes/3-view-metrics-evaluate-models.md)]
