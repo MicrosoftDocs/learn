@@ -21,7 +21,7 @@ Care must be taken to ensure that the databases are precisely synchronized, othe
 
 The technique is simple and cheap with standard commodity Intel hardware but is also possible for customers running proprietary UNIX hardware. Substantial hardware resources are free towards the middle of an OS/DB migration project when Sandbox, Development, QAS, Training, and DR systems have already moved to Azure. There's no strict requirement that the “clone” servers have identical hardware resources. With adequate CPU, RAM, disk, and network performance, the addition of each clone increases performance.
 
-If extra export performance is still required open an SAP incident in BC-DB-MSS for extra steps to boost export performance (advanced consultants only).
+If extra export performance is still required open an SAP incident in BC-DB-MSS for extra steps to boost, export performance (advanced consultants only).
 
 The steps to implement a multiple parallel export are as follows:
 

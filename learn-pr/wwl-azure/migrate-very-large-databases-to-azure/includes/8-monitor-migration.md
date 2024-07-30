@@ -19,6 +19,6 @@ where session_id >49 orderby wait_time desc;
 
 During all migration test cycles, a “Flight Plan” showing the number of packages exported and imported (y-axis) should be plotted against time (x-axis). The purpose of this graph is to establish an expected rate of progress during the final production migration cutover. Deviation (either positive or negative) from the expected “Flight Plan” during test or the final production migration is easily detected using this method. Other parameters such as CPU, disk and R3load rows/sec can be overlaid on top of the “Flight Plan”.
 
-:::image border="false" type="content" source="../media/flight-plan-graph-test-migration-30da6c36.png" alt-text="Example Flight Plan graph showing packages imported and exported during a test migration.":::
+:::image border="false" type="content" source="../media/flight-plan-graph-test-migration-30da6c36.png" alt-text="Screenshot of example Flight Plan graph showing packages imported and exported during a test migration.":::
 
 At the conclusion of the export and import, the migration time reports must be collected (export\_time.html and import\_time.html).

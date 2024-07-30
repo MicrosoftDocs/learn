@@ -25,7 +25,7 @@ A block diagram illustrated of a typical VLDB OS/DB migration and move to Azure 
   - Export server 4 – all remaining tables.
 - Export dump files are transferred from the local disk in the Intel based R3load server into Azure using AzCopy via public internet. This is typically faster than via ExpressRoute.
 - Control and sequence of the import is via the signal file (SGN) that's automatically generated when all export packages are completed. This allows for a semi-parallel export/import.
-- Import to SQL Server or Oracle is structured similarly to the export, using four import servers. These servers would be separate dedicated R3load servers with Accelerated Networking. It's recommended that the SAP application servers are not for this task.
+- Import to SQL Server or Oracle is structured similarly to the export, using four import servers. These servers would be separate dedicated R3load servers with Accelerated Networking. It's recommended that the SAP application servers aren't for this task.
 - VLDB databases would typically use E64v3, m64, or m128 virtual machines with Premium Storage. The transaction log can be placed on the local SSD disk to speed up transaction log writes and remove the transaction log IOPS and IO bandwidth from the virtual machine quota. After the migration, the transaction log should be placed on a persisted disk.
 
 :::image border="false" type="content" source="../media/block-typical-vldb-osdb-migration-aa558d98.png" alt-text="Diagram showing a typical V L D B operating system database migration and move to Azure.":::

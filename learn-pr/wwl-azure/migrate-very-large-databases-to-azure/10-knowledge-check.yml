@@ -64,10 +64,10 @@ quiz:
     choices:
     - content: "Once, at the end of the import process."
       isCorrect: false
-      explanation: "Incorrect. The monitoring, logging, and diagnostics that are configured during Development, Test and dry run migrations are important components of a VLDB migration. It's recommended to execute the SQL statement every few minutes during the runtime of the DB import, and document anything abnormal (such as high wait times)."
+      explanation: "Incorrect. The monitoring, logging, and diagnostics that are configured during Development, Test, and dry run migrations are important components of a VLDB migration. It's recommended to execute the SQL statement every few minutes during the runtime of the DB import, and document anything abnormal (such as high wait times)."
     - content: "Every few minutes throughout the import process."
       isCorrect: true
-      explanation: "Correct. The monitoring, logging, and diagnostics that are configured during Development, Test and dry run migrations are important components of a VLDB migration. It's recommended to execute the SQL statement every few minutes during the runtime of the DB import, and document anything abnormal (such as high wait times)."
+      explanation: "Correct. The monitoring, logging, and diagnostics that are configured during Development, Test, and dry run migrations are important components of a VLDB migration. It's recommended to execute the SQL statement every few minutes during the runtime of the DB import, and document anything abnormal (such as high wait times)."
     - content: "Once at the start of the import process, and once at the end of the import process."
       isCorrect: false
-      explanation: "Incorrect. The monitoring, logging, and diagnostics that are configured during Development, Test and dry run migrations are important components of a VLDB migration. It's recommended to execute the SQL statement every few minutes during the runtime of the DB import, and document anything abnormal (such as high wait times)."
+      explanation: "Incorrect. The monitoring, logging, and diagnostics that are configured during Development, Test, and dry run migrations are important components of a VLDB migration. It's recommended to execute the SQL statement every few minutes during the runtime of the DB import, and document anything abnormal (such as high wait times)."
