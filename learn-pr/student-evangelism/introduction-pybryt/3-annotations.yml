@@ -6,7 +6,7 @@ metadata:
   description: How to annotate a solution to allow PyBryt to assess student implementations
   author: chrispyles
   ms.author: leestott
-  ms.date: 05/06/2023
+  ms.date: 07/30/2024
   ms.topic: unit
 durationInMinutes: 10
 content: |
@@ -29,14 +29,14 @@ quiz:
       choices:
         - content: "`pybryt.Value(lst)`"
           isCorrect: false
-          explanation: "Not quite. This call will only work if the list is in the same order as in the reference implementation."
+          explanation: "Not quite. This call only works if the list is in the same order as in the reference implementation."
         - content: "`pybryt.Value(sorted(lst))`"
           isCorrect: false
-          explanation: "Not quite. This call will fail if the list in the memory footprint isn't also sorted."
+          explanation: "Not quite. This call fails if the list in the memory footprint isn't also sorted."
         - content: "`pybryt.Value(lst, equivalence_fn=lambda l1, l2: sorted(l1) == sorted(l2))`"
           isCorrect: true
           explanation: "Correct! This call uses a custom equivalence function to compare the sorted versions of two lists, ignoring the original ordering."
-    - content: "What is the default behavior of the collection annotation regarding enforcing the order of its children?"
+    - content: "What's the default behavior of the collection annotation regarding enforcing the order of its children?"
       choices:
         - content: "Ensure that the satisfying timestamps of its children occur in non-decreasing order"
           isCorrect: false

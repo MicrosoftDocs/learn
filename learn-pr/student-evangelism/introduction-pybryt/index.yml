@@ -3,14 +3,15 @@ uid: learn.intro-to-pybryt
 metadata:
   title: Introduction to PyBryt for Classroom Auto-assessment
   description: Learn how to use PyBryt to create an assignment with auto-assessment.
-  ms.date: 05/06/2023
+  ms.date: 07/30/2024
   author: chrispyles
   ms.author: leestott
   ms.topic: module
+  ms.service: azure-python
 title: Introduction to PyBryt for Classroom Auto-assessment
 summary: Learn how to use PyBryt, an open-source auto-assessment tool, to create assignments with targeted feedback and generalizable grading.
 abstract: |
-  In this module you will:
+  In this module, you will:
   - Understand the concept of annotations in context of reference implementations
   - Combine annotations into reference implementations
   - Explore how combining reference implementations can support different kinds of solutions
