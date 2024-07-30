@@ -1,6 +1,6 @@
 You are on sprint 3 for the new deposits application. Recently, the deposits team requested changes to some of the Azure services in use. They also requested the creation of other services needed to support the application.
 
-In this exercise, you create a deployment stack scoped to a resource group that references a Bicep file. The file defines an app service plan, an app service, and an Azure SQL database. You then modify the SKU of the app service plan and update the deployment stack. Finally, you add an existing log analytics workspace and a new application insights instance to support monitoring of the application.
+In this exercise, you create a deployment stack scoped to a resource group that references a Bicep file. The file defines an app service plan, an app service, and an Azure SQL database. You then modify the SKU of the app service plan and update the deployment stack. Finally, you add an existing Log Analytics workspace and a new Application Insights instance to support monitoring of the application.
 
 During the process, you'll:
 
@@ -9,7 +9,7 @@ During the process, you'll:
 > - Create a Bicep file that defines your initial architecture
 > - Create a deployment stack scoped to a resource group using your Bicep file.
 > - Modify the properties of an existing managed resource
-> - Update the Bicep file to include an existing log analytics workspace and a new application insights instance
+> - Update the Bicep file to include an existing Log Analytics workspace and a new Application Insights instance
 > - Update the deployment stack to deploy the managed resources
 > - Validate the deployment stack's managed resources.
 
@@ -27,7 +27,7 @@ Our first step is to create a Bicep file that defines our resources to use with 
 
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you saved the file. For example, you might want to create a _templates_ folder in which to save the file.
 
-1. Add the following Bicep code into the file. You deploy the template soon. It's a good idea to type the code yourself instead of copying and pasting, so you can see how the tooling helps you to write your Bicep files.
+1. Add the following Bicep code into the file. You deploy the template soon.
 
     :::code language="bicep" source="code/1a-template.bicep" range="1-63":::
 
@@ -125,7 +125,7 @@ Next, we need to create our deployment stack scoped to our recently created reso
 
 ::: zone-end
 
-## Modify the Bicep file to add the existing log analytics workspace and a new application insights instance
+## Modify the Bicep file to add the existing Log Analytics workspace and a new Application Insights instance
 
 1. Open the _main.bicep_ file in Visual Studio Code.
 
@@ -147,7 +147,7 @@ Next, we need to create our deployment stack scoped to our recently created reso
 
     :::code language="bicep" source="code/1b-template.bicep" range="31-39" highlight="6":::
 
-1. Add the highlighted code to wire in the application insights instance:
+1. Add the highlighted code to wire in the Application Insights instance:
 
     :::code language="bicep" source="code/1b-template.bicep" range="41-56" highlight="7-14":::
 
@@ -215,7 +215,7 @@ With the Bicep file modified, we want to update the deployment stack so that the
 
 ## Verify the update to the deployment stack and the managed resources
 
-With the update complete, we want to validate that the app service plan's sku is updated and that the deployment stack is managing the existing log analytics workspace and the new application insights instance.
+With the update complete, we want to validate that the app service plan's sku is updated and that the deployment stack is managing the existing Log Analytics workspace and the new Application Insights instance.
 
 ::: zone pivot="cli"
 
@@ -247,7 +247,7 @@ With the update complete, we want to validate that the app service plan's sku is
         --name stack-deposits
     ```
 
-1. Take notice of the resources section of the output. We now see the existing log analytics workspace and the new application insights instance listed as managed resources. The result should appear similar to the following output:
+1. Take notice of the resources section of the output. We now see the existing Log Analytics workspace and the new Application Insights instance listed as managed resources. The result should appear similar to the following output:
 
     :::code language="json" source="code/2a-json.json" range="43-80" highlight="68-79":::
 
@@ -283,7 +283,7 @@ With the update complete, we want to validate that the app service plan's sku is
         -Name stack-deposits
     ```
 
-1. Take notice of the resources section of the output. We now see the existing log analytics workspace and the new application insights instance listed as managed resources. The result should appear similar to the following output:
+1. Take notice of the resources section of the output. We now see the existing Log Analytics workspace and the new Application Insights instance listed as managed resources. The result should appear similar to the following output:
 
     :::code language="powershell" source="code/3a-powershell.ps1" range="11-16" highlight="5-6":::
 

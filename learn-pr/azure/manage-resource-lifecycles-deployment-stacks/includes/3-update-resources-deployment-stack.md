@@ -8,7 +8,7 @@ In this unit, you learn about what situations call for an update to a deployment
 
 ## Updating a deployment stack
 
-Over time, the resources that make up an application change. Properties of existing resources need to be modified, resources need to be added or deleted, or an application needs to integrate existing resources. A deployment stack can be updated to implement the changes in our applications. What situations require us to update a deployment stack?
+Over time, the resources that make up an application change. Properties of existing resources need to be modified, resources need to be added or deleted, or an application needs to integrate resources that were deployed through other approaches. A deployment stack can be updated to implement the changes in our applications. What situations require us to update a deployment stack?
 
 - Modifying the property of a managed resource
 - Adding an existing resource as a managed resource
@@ -16,17 +16,13 @@ Over time, the resources that make up an application change. Properties of exist
 - Detaching a managed resource
 - Deleting a managed resource
 
-How are these changes implemented? As we discussed in the last module, deployment stacks manage resources that are defined in an ARM JSON template, Bicep file, or template spec. When you create a deployment stack, you reference one of these files to deploy your resources. The same is true for updating a deployment stack. To update resources managed by a deployment stack, update the underlying template file.
+How are these changes implemented? As we discussed in the last module, deployment stacks manage resources that are defined in an Bicep file, ARM JSON template, or template spec. When you create a deployment stack, you reference one of these files to deploy your resources. The same is true for updating a deployment stack. To update resources managed by a deployment stack, update the underlying template file.
 
 ## Updating an existing managed resource
 
 It's common practice to modify your resources deployed in Azure. You may need to change a property value of a resource to incorporate a new feature or enhance its functionality. If you currently use infrastructure as code to define your resources in Azure, you're familiar with how to modify the properties of a resource. With deployment stacks, the process is identical. Make the change to the resource in your Bicep file and run an update operation on the stack.
 
 Let's consider our Bicep file from the last module. Our file defines an app service plan, a web app, and an Azure SQL server and database. We want to modify the SKU of the app service plan from the `F1` SKU to the `S1` SKU.
-
-:::code language="bicep" source="code/1a-template.bicep" range="1-63" highlight="30":::
-
-Let's modify the SKU.
 
 :::code language="bicep" source="code/1b-template.bicep" range="1-21,25-27,31-46,55-77" highlight="30":::
 

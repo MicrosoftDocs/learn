@@ -1,4 +1,4 @@
-Managing the lifecycle of your Azure resources is a challenging task. Deployment stacks enable you to manage the lifecycle of a collection of Azure resources as a single atomic unit, even if they span multiple resource groups or subscriptions.
+Azure resources often have complex lifecycle needs, because they can be spread across multiple places in your subscriptions. Some resources are short-lived or associated with a single application workload, while others are shared and reused throughout your organization. Deployment stacks enable you to manage the lifecycle of a collection of Azure resources as a single atomic unit, even if they span multiple resource groups or subscriptions.
 
 ## Example Scenario
 
@@ -6,7 +6,7 @@ Suppose you work as a DevOps engineer for a community bank that decided to use d
 
 You're told to expect the deposits application's resources to change frequently as development continues. These changes could include resource modifications, additions, and deletions. You want to learn more about how deployment stacks manage resources and how updates impact them.
 
-You decide to continue working with the test version of the deposits application using a command-line interface and a bicep file that defines the application's resources.
+You decide to continue working with the test version of the deposits application using a command-line interface and a Bicep file that defines the application's resources.
 
 ## What will we be doing?
 

@@ -26,10 +26,10 @@ quiz:
   - content: What do we call a resource that is no longer managed by the deployment stack?
     choices:
     - content: Managed resource
-      isCorrect: true
+      isCorrect: false
       explanation: A managed resource is a resource that a deployment stack manages.
     - content: Detached resource
-      isCorrect: false
+      isCorrect: true
       explanation: A resource that is no longer managed by the deployment stack is known as a detached resource.
     - content: Deleted resource
       isCorrect: false

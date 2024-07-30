@@ -2,7 +2,7 @@
 uid: learn.azure.manage-resource-lifecycles-deployment-stacks
 metadata:
   title: Manage resource lifecycles with deployment stacks
-  description: Learn how to manage resource lifecycles with deployment stacks.
+  description: Understand how deployment stacks manage resources on your behalf, and how resources change as stacks are deployed, updated, and removed.
   ms.date: 08/01/2023
   author: joshuawaddell
   ms.author: jowaddel
@@ -53,6 +53,7 @@ units:
 - learn.azure.manage-resource-lifecycles-deployment-stacks.exercise-add-resources-deployment-stack
 - learn.azure.manage-resource-lifecycles-deployment-stacks.detach-delete-resources-deployment-stack
 - learn.azure.manage-resource-lifecycles-deployment-stacks.exercise-detach-delete-resources-deployment-stack
+- learn.azure.manage-resource-lifecycles-deployment-stacks.delete-deployment-stack
 - learn.azure.manage-resource-lifecycles-deployment-stacks.knowledge-check
 - learn.azure.manage-resource-lifecycles-deployment-stacks.summary
 badge:

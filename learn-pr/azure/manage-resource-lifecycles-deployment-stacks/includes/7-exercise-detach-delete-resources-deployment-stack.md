@@ -1,4 +1,4 @@
-Sprint 3 for the new deposits application is coming to an end. The deposits team requested that you detach the log analytics workspace and application insights instance from the deployment stack. Those resources need to continue to exist in Azure. Additionally, they requested that the Azure SQL server and database are deleted from the deployment stack and Azure.
+Sprint 3 for the new deposits application is coming to an end. The deposits team requested that you detach the Log Analytics workspace and Application Insights instance from the deployment stack. Those resources need to continue to exist in Azure. Additionally, they requested that the Azure SQL server and database are deleted from the deployment stack and Azure.
 
 In this exercise, you detach and delete Azure resources from the deployment stack that are no longer needed for the deposits application. You start by detaching resources from the deployment stack that need to continue to exist within Azure. You then delete resources from the deployment stack that are no longer needed. Finally, you delete the deployment stack, its managed resources, and the resource group.
 
@@ -6,7 +6,7 @@ During the process, you'll
 
 > [!div class="checklist"]
 >
-> - Modify the Bicep file to remove the log analytics workspace and the application insights instance
+> - Modify the Bicep file to remove the Log Analytics workspace and the Application Insights instance
 > - Update the deployment stack to detach the managed resources
 > - Validate the deployment stack's managed resources and the detached resources
 > - Modify the Bicep file to remove the Azure SQL server and database
@@ -15,19 +15,19 @@ During the process, you'll
 > - Delete the deployment stack and managed resources.
 > - Validate the deletion of the deployment stack and the managed resources.
 
-## Modify the Bicep file to detach the log analytics workspace and the application insights instance
+## Modify the Bicep file to detach the Log Analytics workspace and the Application Insights instance
 
-The deposits team requested that we detach the log analytics workspace and application insights instance from the deployment stack. They also requested that the resources continue to exist in Azure. We start by modifying the Bicep file.
+The deposits team requested that we detach the Log Analytics workspace and Application Insights instance from the deployment stack. They also requested that the resources continue to exist in Azure. We start by modifying the Bicep file.
 
 1. Open the _main.bicep_ file in Visual Studio Code.
 
 1. Remove the highlighted code from the variables section of your file:
 
-    :::code language="bicep" source="code/1b-template.bicep" range="21-30" highlight="22-23,28-29":::
+    :::code language="bicep" source="code/1b-template.bicep" range="21-30" highlight="2-3,8-9":::
 
 1. Remove the highlighted code from the resources section of the file:
 
-    :::code language="bicep" source="code/1b-template.bicep" range="31-100" highlight="7-14,39-60":::
+    :::code language="bicep" source="code/1b-template.bicep" range="31-100" highlight="17-24,49-70":::
 
 1. Save the changes to the file.
 
@@ -35,14 +35,14 @@ The deposits team requested that we detach the log analytics workspace and appli
 
 ::: zone pivot="cli"
 
-With the Bicep file modified, we want to update the deployment stack so that the log analytics workspace and application insights instance are detached from the stack. We use `--action-on-unmanage detachAll` to accomplish this result.
+With the Bicep file modified, we want to update the deployment stack so that the Log Analytics workspace and Application Insights instance are detached from the stack. We use `--action-on-unmanage detachAll` to accomplish this result.
 
 1. To update the deployment stack, run the following command from the terminal in Visual Studio Code.
 
     ```azurecli
     az stack group create \
         --name stack-deposits \
-        --resource-group rg-depositsApplication \
+        --resource-group 'rg-depositsApplication' \
         --template-file ./main.bicep \
         --action-on-unmanage detachAll \
         --deny-settings-mode none
@@ -58,7 +58,7 @@ Wait for the update operation to complete before moving on to the next task.
 
 ::: zone pivot="powershell"
 
-With the Bicep file modified, we want to update the deployment stack so that the log analytics workspace and application insights instance are detached from the stack. We use `ActionOnUnmanage DetachAll` to accomplish this result.
+With the Bicep file modified, we want to update the deployment stack so that the Log Analytics workspace and Application Insights instance are detached from the stack. We use `ActionOnUnmanage DetachAll` to accomplish this result.
 
 1. To update the deployment stack, run the following command from the terminal in Visual Studio Code.
 
@@ -79,7 +79,7 @@ With the Bicep file modified, we want to update the deployment stack so that the
 
 ::: zone pivot="cli"
 
-With the update complete, we want to validate that the deployment stack is no longer managing the log analytics workspace and application insights instance.
+With the update complete, we want to validate that the deployment stack is no longer managing the Log Analytics workspace and Application Insights instance.
 
 1. To view the configuration of the deployment stack, run the following command from the terminal in Visual Studio Code.
 
@@ -93,7 +93,7 @@ With the update complete, we want to validate that the deployment stack is no lo
 
     :::code language="json" source="code/2b-json.json" range="2-6":::
 
-1. Now look at the resources section of the output. We no longer see the log analytics workspace and application insights instance as managed resources.
+1. Now look at the resources section of the output. We no longer see the Log Analytics workspace and Application Insights instance as managed resources.
 
     :::code language="json" source="code/2b-json.json" range="43-68":::
 
@@ -101,7 +101,7 @@ With the update complete, we want to validate that the deployment stack is no lo
 
 ::: zone pivot="powershell"
 
-With the update complete, we want to validate that the deployment stack is no longer managing the log analytics workspace and application insights instance.
+With the update complete, we want to validate that the deployment stack is no longer managing the Log Analytics workspace and Application Insights instance.
 
 1. To view the configuration of the deployment stack, run the following command from the terminal in Visual Studio Code.
 
@@ -115,7 +115,7 @@ With the update complete, we want to validate that the deployment stack is no lo
 
     :::code language="json" source="code/3b-powershell.ps1" range="4-6":::
 
-1. Now look at the resources section of the output. We no longer see the log analytics workspace and application insights instance as managed resources.
+1. Now look at the resources section of the output. We no longer see the Log Analytics workspace and Application Insights instance as managed resources.
 
     :::code language="json" source="code/3b-powershell.ps1" range="11-14":::
 
@@ -135,7 +135,7 @@ Let's validate our deployment stack in the Azure portal.
 
 1. Select **stack-deposits**.
 
-1. Verify that you have four managed resources and two detached resources (log analytics and application insights).
+1. Verify that you have four managed resources and two detached resources (Log Analytics and Application Insights).
 
     :::image type="content" source="../media/azure-portal-deployment-stacks-resources-1.png" alt-text="A screenshot showing the Azure portal representing a deployment stack and its managed resources and detached resources.":::
 
@@ -159,7 +159,7 @@ The deposits team requested that we detach and delete the Azure SQL server and d
 
 ::: zone pivot="cli"
 
-With the Bicep file modified, we want to update the deployment stack so that the Azure SQL server and database are detached from the stack and deleted from Azure. We use `--action-on-unmanage deleteAll` to accomplish this result. This action also deletes the log analytics workspace and application insights instance we detached in the last section.
+With the Bicep file modified, we want to update the deployment stack so that the Azure SQL server and database are detached from the stack and deleted from Azure. We use `--action-on-unmanage deleteAll` to accomplish this result. This action also deletes the Log Analytics workspace and Application Insights instance we detached in the last section.
 
 1. To update the deployment stack, run the following command from the terminal in Visual Studio Code.
 
@@ -182,7 +182,7 @@ With the Bicep file modified, we want to update the deployment stack so that the
 
 ::: zone pivot="powershell"
 
-With the Bicep file modified, we want to update the deployment stack so that the Azure SQL server and database are detached from the stack and deleted from Azure. We use `-ActionOnUnmanage DeleteAll` to accomplish this. This action also deletes the log analytics workspace and application insights instance we detached in the last section.
+With the Bicep file modified, we want to update the deployment stack so that the Azure SQL server and database are detached from the stack and deleted from Azure. We use `-ActionOnUnmanage DeleteAll` to accomplish this. This action also deletes the Log Analytics workspace and Application Insights instance we detached in the last section.
 
 1. To update the deployment stack, run the following command from the terminal in Visual Studio Code.
 
@@ -203,7 +203,7 @@ With the Bicep file modified, we want to update the deployment stack so that the
 
 ::: zone pivot="cli"
 
-With the update complete, we want to validate that the deployment stack is no longer managing the log analytics workspace, application insights instance, and the Azure SQL server and database. We also want to verify that the resources are deleted from Azure.
+With the update complete, we want to validate that the deployment stack is no longer managing the Log Analytics workspace, Application Insights instance, and the Azure SQL server and database. We also want to verify that the resources are deleted from Azure.
 
 1. To view the configuration of the deployment stack, run the following command from the terminal in Visual Studio Code.
 
@@ -225,7 +225,7 @@ With the update complete, we want to validate that the deployment stack is no lo
 
 ::: zone pivot="powershell"
 
-With the update complete, we want to validate that the deployment stack is no longer managing the log analytics workspace, application insights instance, and the Azure SQL server and database. We also want to verify that the resources are deleted from Azure.
+With the update complete, we want to validate that the deployment stack is no longer managing the Log Analytics workspace, Application Insights instance, and the Azure SQL server and database. We also want to verify that the resources are deleted from Azure.
 
 1. To view the configuration of the deployment stack, run the following command from the terminal in Visual Studio Code.
 

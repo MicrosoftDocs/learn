@@ -30,14 +30,16 @@ There are three possible values for the `-ActionOnUnmanage` parameter:
 
 ## Detach a managed resource
 
-A detached resource, also known as a managed resource, is a resource that is no longer tracked or managed by a deployment stack, but the resource still exists in Azure. There are two values of the _action on unmanage_ parameter that set resources, resource groups, and management groups to detach when the deployment stack no longer manages them.
+A detached resource, also known as an unmanaged resource, is a resource that is no longer tracked or managed by a deployment stack, but the resource still exists in Azure. The default behavior of deployment stacks is to detach resources rather than delete. For example, you might need to keep the resource so that you can use it in another deployment stack in the future, or you might need to manually verify that its data is safe to delete. 
+
+There are two values of the _action on unmanage_ parameter that set resources, resource groups, and management groups to detach when the deployment stack no longer manages them.
 
 ::: zone pivot="cli"
 
 - `deleteResources` - deletes resources, but detaches resource groups and management groups
 - `detachAll` - detaches all resources, resource groups, and management groups
 
-Using either `deleteResources` or `detachAll` when creating, modifying, or deleting your deployment stacks offers some additional protection against accidental deletion. Consider our scenario from the last unit. We added an existing log analytics workspace to our deployment stack. The workspace is used by other applications, not just the deposits application. It needs to persist past the life of the application. By using `detachAll` as the _action on unmanage_ parameter, needed resources continue to exist in Azure.
+Using either `deleteResources` or `detachAll` when creating, modifying, or deleting your deployment stacks offers some additional protection against accidental deletion. Consider our scenario from the last unit. We added an existing Log Analytics workspace to our deployment stack. The workspace is used by other applications, not just the deposits application. It needs to persist past the life of the application. By using `detachAll` as the _action on unmanage_ parameter, needed resources continue to exist in Azure.
 
 ::: zone-end
 
@@ -46,15 +48,11 @@ Using either `deleteResources` or `detachAll` when creating, modifying, or delet
 - `DeleteResources` - deletes resources, but detaches resource groups and management groups
 - `DetachAll` - detaches all resources, resource groups, and management groups
 
-Using either `DeleteResources` or `DetachAll` when creating, modifying, or deleting your deployment stacks offers some additional protection against accidental deletion. Consider our scenario from the last unit. We added an existing log analytics workspace to our deployment stack. The workspace is used by other applications, not just the deposits application. It needs to persist past the life of the application. By using `DetachAll` as the _action on unmanage_ parameter, needed resources continue to exist in Azure.
+Using either `DeleteResources` or `DetachAll` when creating, modifying, or deleting your deployment stacks offers some additional protection against accidental deletion. Consider our scenario from the last unit. We added an existing Log Analytics workspace to our deployment stack. The workspace is used by other applications, not just the deposits application. It needs to persist past the life of the application. By using `DetachAll` as the _action on unmanage_ parameter, needed resources continue to exist in Azure.
 
 ::: zone-end
 
-Let's consider our Bicep file from the last unit.
-
-:::code language="bicep" source="code/1b-template.bicep" range="1-100":::
-
-The template file defines an app service plan, a web app, an Azure SQL server and database, a log analytics workspace, and an application insights instance. Let's say that we need to remove the log analytics workspace and application insights instance we created in the last unit. We edit our Bicep file, removing the highlighted code that references our web app.
+Let's consider our Bicep file from the last unit. The template file defines an app service plan, a web app, an Azure SQL server and database, a Log Analytics workspace, and an Application Insights instance. Let's say that we need to remove the Log Analytics workspace and Application Insights instance we created in the last unit. We edit our Bicep file, removing the highlighted code that references our web app.
 
 :::code language="bicep" source="code/1b-template.bicep" range="1-100" highlight="22-23,28-29,47-54,79-100":::
 
@@ -71,7 +69,7 @@ az stack group create \
     --deny-settings-mode none
 ```
 
-After the update operation is complete, the deployment stack no longer manages the log analytics workspace and application insights instance. In our command, we used `--action-on-unmanage detachAll` to specify how Azure handles resources that a deployment stack no longer manages. In this case, the resources are detached from the deployment stack, but they still exist in the resource group.
+After the update operation is complete, the deployment stack no longer manages the Log Analytics workspace and Application Insights instance. In our command, we used `--action-on-unmanage detachAll` to specify how Azure handles resources that a deployment stack no longer manages. In this case, the resources are detached from the deployment stack, but they still exist in the resource group.
 
 ::: zone-end
 
@@ -88,7 +86,7 @@ Set-AzResourceGroupDeploymentStack `
     -DenySettingsMode None
 ```
 
-After the update operation is complete, the deployment stack no longer manages the log analytics workspace and application insights instance. In our command, we used `-ActionOnUnmanage DetachAll` to specify how Azure handles resources that a deployment stack no longer manages. In this case, the resources are detached from the deployment stack, but they still exist in the resource group.
+After the update operation is complete, the deployment stack no longer manages the Log Analytics workspace and Application Insights instance. In our command, we used `-ActionOnUnmanage DetachAll` to specify how Azure handles resources that a deployment stack no longer manages. In this case, the resources are detached from the deployment stack, but they still exist in the resource group.
 
 ::: zone-end
 
@@ -114,11 +112,7 @@ Consider our deposits application. Let's say that the development team decides t
 
 ::: zone-end
 
-Let's consider our Bicep file from the previous section.
-
-:::code language="bicep" source="code/1a-template.bicep" range="1-77":::
-
-The template file defines an app service plan, a web app, and an Azure SQL server and database. Let's say that we need to remove the Azure SQL server and database. We edit our Bicep file, removing the highlighted code that references our web app.
+Let's consider our Bicep file from the previous section. The template file defines an app service plan, a web app, and an Azure SQL server and database. Let's say that we need to remove the Azure SQL server and database. We edit our Bicep file, removing the highlighted code that references our web app.
 
 :::code language="bicep" source="code/1a-template.bicep" range="1-63" highlight="5-16,44-63":::
 
