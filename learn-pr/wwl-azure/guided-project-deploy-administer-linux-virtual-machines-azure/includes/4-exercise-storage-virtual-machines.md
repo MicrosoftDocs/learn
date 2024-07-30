@@ -4,7 +4,7 @@ You need to provide access to data storage for a virtual machine. Specifically, 
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab-03.png" alt-text="Diagram of the overarching architecture as described in the exercise 3." border="true"::: 
+:::image type="content" source="../media/lab-03.png" alt-text="Diagram of the overarching architecture as described in exercise 3." border="true"::: 
 
 ### Job skills
 

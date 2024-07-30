@@ -4,7 +4,7 @@ Once everything is configured, you need to configure backup policies. Backup pol
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab-04.png" alt-text="Diagram of the overarching architecture as described in the exercise 4." border="true"::: 
+:::image type="content" source="../media/lab-04.png" alt-text="Diagram of the overarching architecture as described in exercise 4." border="true"::: 
 
 ### Job skills
 + Create and configure a Recovery Services vault. 

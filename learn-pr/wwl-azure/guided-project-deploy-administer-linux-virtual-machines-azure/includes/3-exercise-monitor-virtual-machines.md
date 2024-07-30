@@ -4,7 +4,7 @@ You need to monitor and be alerted if there are issues with the virtual machine.
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab-02.png" alt-text="Diagram of the overarching architecture as described in the exercise 2." border="true"::: 
+:::image type="content" source="../media/lab-02.png" alt-text="Diagram of the overarching architecture as described in exercise 2." border="true"::: 
 
 ### Job skills
 + Configure VM Insights. 
