@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: perform-incremental-processing-with-spark-structured-streaming
 metadata:
-  title: Perform-incremental-processing-with-spark-structured-streaming
+  title: Perform incremental processing with spark structured streaming
   description: "Learn about spark structured streaming and ways to optimize and use it to populate destination objects"
   ms.date: 7/25/2024
   author: wwlpublish
