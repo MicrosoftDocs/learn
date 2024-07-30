@@ -11,4 +11,4 @@ metadata:
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 8
 content: | 
-  [!include[](includes/7-exercise-detach-delete-resources-deployment-stack.md)]
+  [!include[](includes/8-exercise-detach-delete-resources-deployment-stack.md)]

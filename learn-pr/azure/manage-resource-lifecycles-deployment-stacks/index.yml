@@ -52,8 +52,8 @@ units:
 - learn.azure.manage-resource-lifecycles-deployment-stacks.add-resources-deployment-stack
 - learn.azure.manage-resource-lifecycles-deployment-stacks.exercise-add-resources-deployment-stack
 - learn.azure.manage-resource-lifecycles-deployment-stacks.detach-delete-resources-deployment-stack
-- learn.azure.manage-resource-lifecycles-deployment-stacks.exercise-detach-delete-resources-deployment-stack
 - learn.azure.manage-resource-lifecycles-deployment-stacks.delete-deployment-stack
+- learn.azure.manage-resource-lifecycles-deployment-stacks.exercise-detach-delete-resources-deployment-stack
 - learn.azure.manage-resource-lifecycles-deployment-stacks.knowledge-check
 - learn.azure.manage-resource-lifecycles-deployment-stacks.summary
 badge:
