@@ -4,9 +4,7 @@ Here, we discuss how Azure NetApp Files works behind the scenes and how differen
 
 One of the most important components of Azure NetApp Files is the storage hierarchy, which determines how much storage is allocated to your workloads and the maximum available throughput. Understanding the storage hierarchy helps you set up and manage Azure NetApp Files.
 
-:::image type="content" source="../media/azure-netapp-files-storage-hierarchy.png" alt-text="Diagram of Azure NetApp Files storage hierarchy.":::
-
-Watch this video to understand the relationship between the Azure subscription, NetApp accounts, capacity pools, and volumes. 
+Watch this video to understand the relationship between the Azure subscription, NetApp accounts, capacity pools, and volumes.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=e9e9e134-33f3-4a83-9d3d-d1fa35d357cd]
 
