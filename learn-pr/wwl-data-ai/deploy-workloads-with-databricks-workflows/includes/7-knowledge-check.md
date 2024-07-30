@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/29/2023
+  ms.date: 07/29/2024
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: theresai
   ms.topic: unit
 azureSandbox: false
 labModal: false
@@ -23,8 +23,8 @@ quiz:
       explanation: "Incorrect. Azure Databricks can automatically manage the creation and termination of clusters for running tasks and are fine-tuned for performance based on the workload."
     - content: "Dependency"
       isCorrect: true
-      explanation: "Correct. Dependency in Azure Databricks Workflows enable the configuration of jobs to run automatically based on certain conditions, such as the success or failure of other jobs. This feature is essential for managing tasks within complex workflows, ensuring they are executed in the correct order."
-  - content: "Which Azure Databricks component is essential for scaling computational resources according to workload demands?"
+      explanation: "Correct. Dependency in Azure Databricks Workflows enables the configuration of jobs to run automatically based on certain conditions, such as the success or failure of other jobs. This feature is essential for managing tasks within complex workflows, ensuring they are executed in the correct order."
+    - content: "Which Azure Databricks component is essential for scaling computational resources according to workload demands?"
     choices:
     - content: "Notebooks"
       isCorrect: false
@@ -35,7 +35,7 @@ quiz:
     - content: "Clusters"
       isCorrect: true
       explanation: "Correct. Clusters in Azure Databricks are groups of virtual machines that provide computational resources for running workflows. They can be configured to auto-scale, which means they automatically adjust the number of nodes in the cluster based on the workload, ensuring efficient use of resources and optimal performance."
-  - content: "What is the primary use of the Databricks REST API in the context of Databricks Workflows?"
+    - content: "What is the primary use of the Databricks REST API in the context of Databricks Workflows?"
     choices:
     - content: "To manually execute SQL queries"
       isCorrect: false

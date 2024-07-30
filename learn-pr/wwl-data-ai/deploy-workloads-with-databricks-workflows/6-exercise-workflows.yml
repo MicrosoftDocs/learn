@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-workloads-with-databricks-workflows.exercise-workflows
+title: Exercise - Create an Azure Databricks Workflow
+metadata:
+  title: Exercise - Create an Azure Databricks Workflow
+  description: "Exercise - Create an Azure Databricks Workflow"
+  ms.date: 07/29/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 40
+content: |
+  [!include[](includes/5-exercise-workflows.md)]
