@@ -1,7 +1,7 @@
 
 In this exercise, you will:
 
-1. Create an API Center resource.
+1. Create an API Center service.
 
 1. Define metadata properties.  
 
@@ -27,7 +27,7 @@ To start managing your APIs through API Center, you need:
 > 4. In the left menu, under Resources, select *Resource providers*.
 > 5. Search for **Microsoft.ApiCenter** in the list of resource providers. If it's not registered, select **Register**.
 
-### Step 1: Create an API Center resource
+### Step 1: Create an API Center service
 
    1. [Sign in](https://portal.azure.com/) to the Azure portal.
    1. Enter *API Centers* in the search bar.
@@ -69,12 +69,12 @@ To start managing your APIs through API Center, you need:
 > az provider register –namespace Microsoft.ApiCenter 
 > ```
 
-### Step 1: Create an API Center resource
+### Step 1: Create an API Center service
 
    Create a resource group by running the following command passing the:
 
-- name of your resource group **--name** Example. *Contoso*
-- location of your resource group **--location** Example. *Eastus*
+- resource group name **--name** Example. *Contoso*
+- location **--location** Example. *Eastus*
 
  ```bash
  az group create –-name contoso –-location eastus  
@@ -87,15 +87,14 @@ To start managing your APIs through API Center, you need:
 
  Create an API Center by running the following command, passing the:
 
-- name of your API center resource **--name** Example. *Contoso-apis*
-- resource group to create the API center in **-r** Example. *Contoso*
-- location of your resource group **--location** Example. *Eastus*
+- API center service name **-n** Example. *contoso-apis*
+- Resource group **-g** Example. *Contoso*
+- location **--l** Example. *Eastus*
 
  ```bash
- az apic service create –name contoso-apis –resource-group contoso –location eastus  
+ az apic create -n contoso-apis -g contoso -l eastus 
  ```
 
-   :::image type="content" source="../media/3-az-apic-service-create.png" alt-text="Screenshot showing successful az apic service create CLI command":::
    > [!NOTE]
    > By default, the API Center will be created under the **Free pricing tier.**
 
@@ -104,7 +103,7 @@ To start managing your APIs through API Center, you need:
 ::: zone pivot="vs-code"
 
 > [!NOTE]
-> Creating an API Center resource is currently not supported on VS Code. Create one using Azure CLI or the Azure portal.
+> Creating an API Center service is currently not supported on VS Code. Create one using Azure CLI or the Azure portal.
 
 ::: zone-end
 
@@ -161,9 +160,8 @@ Create a new metadata schema by running the following command, to set the:
 - **Assignments** as *required* for **APIs** while *optional* for **Environment** and **Deployment**
 
 ```bash
-az apic metadata create --resource-group contoso --service-name contoso-apis --name "api-approver" --schema '{"type":"string", "title":"API Approver"}' --assignments '[{entity:api,required:true,deprecated:false},{entity:environment,required:true,deprecated:false}]'
+az apic metadata create -g contoso -n contoso-apis --metadata-name api-approver --schema '{"type":"string","title":"API-Approver"}' --assignments '[{entity:api,required:true,deprecated:false},{entity:environment,required:true,deprecated:false}]'
 ```
-:::image type="content" source="../media/3-create-metadata-cli.png" alt-text="Screenshot showing steps to create metadata schema using Azure CLI":::
 
 Repeat the same steps for:
  - Metadata **name** as *public-facing*
@@ -173,7 +171,7 @@ Repeat the same steps for:
 By running the following command:
 
 ```bash
-az apic metadata create --resource-group contoso --service-name contoso-apis --name "public-facing" --schema '{"type":"boolean", "title":"Public Facing"}' --assignments '[{entity:api,required:true,deprecated:false},{entity:environment,required:true,deprecated:false}]'
+az apic metadata create -g contoso -n contoso-apis --metadata-name public-facing --schema '{"type":"boolean", "title":"Public Facing"}' --assignments '[{entity:api,required:true,deprecated:false},{entity:environment,required:true,deprecated:false}]'
 ```
 
 Finally, repeat the same steps for:
@@ -184,14 +182,13 @@ Finally, repeat the same steps for:
 By running the following command:
 
 ```bash
-az apic metadata create --resource-group contoso --service-name contoso-apis --name "compliance-review" --schema '{"type":"string","title":"Compliance Review","oneOf":[{"const":"Not Started","description":""},{"const":"In Progress","description":""},{"const":"Completed","description":""}]}' --assignments '[{entity:api
-,required:true,deprecated:false},{entity:environment,required:true,deprecated:false}]'
+az apic metadata create -g contoso -n contoso-apis --metadata-name compliance-review --schema '{"type":"string","title":"Compliance Review", "oneOf":[{"const":"Not Started","description":""},{"const":"In Progress","description":""},{"const":"Completed","description":""}]}' --assignments '[{entity:api,required:true,deprecated:false},{entity:environment,required:true,deprecated:false}]'
 ```
 
 You can run the following command to view a list of all the defined metadata in your API Center.
 
 ```bash
-az apic metadata list -g <resource-group-name> -s <api-center-name> 
+az apic metadata list -g <resource-group-name> -n <api-center-name> 
 ```
 
 > [!NOTE]
@@ -268,55 +265,50 @@ Refresh the API Center extension tab and your newly created API appears in the r
 
 Use the following command to create a new API, passing in the:
 
-- name of your resource group **-g** Example. *Contoso*
-- name of your API center resource **-s** Example. *contoso-api-center*
-- name of the API **--name** Example. *Conference-api*
-- title **--title** Example. *Conference API*
+- Resource group **-g** Example. *Contoso*
+- API center service name **-n** Example. *contoso-api-center*
+- Title **--title** Example. *Conference API*
+- API ID **--api-id** Example. *conference-api*
+- Type **--type** Example. *REST*
+
 
 ```bash
-az apic api create -g <resource-group-name> -s <api-center-name> --name <API-name> --title “API-name” –kind rest
+az apic api create -g contoso -n contoso-apis --title "Conference API" --api-id conference-api --type REST
 ```
-
-:::image type="content" source="../media/3-apic-api-create.png" alt-text="Screenshot showing CLI command to create a new API in API Center":::
 
 Create an API version using the following command, passing in the:
 
-- name of your resource group **-g** Example. *contoso*
-- name of your API center resource **-s** Example. *Contoso-api-center*
-- name of the API **-–api-name** Example. *Conference-api*
-- name of the version **--version** Example. *V1*
-- title **--title** Example. *V1*
+- Resource group **-g** Example. *contoso*
+- API center service name **-n** Example. *contoso-apis*
+- API ID **--api-id** Example. *conference-api*
+- Title **--title** Example. *v1.2.2*
+- Version ID **--version-id** Example. *2024-07-03*
+- Lifecycle stage **--lifecycle-stage** Example. *design*
 
 ```bash
-az apic api version create --r <resource-group-name> -s <api-center-name> --api-name <API-name> --version <api-version> --title "v1-0-0"
+az apic api version create -g contoso -n contoso-apis --api-id conference-api --title v1.2.2 --version-id 2024-07-03 --lifecycle-stage design
 ```
-
-:::image type="content" source="../media/3-create-version-cli.png" alt-text="Screenshot showing CLI command to create a new API version in API Center":::
 
 You would normally want to add an API definition for your API version and API Center support text specification formats including OpenAPI 2, OpenAPI 3 for REST.
 
 To add a Definition, use the following command, passing in:
 
-- name of your resource group **-g** Example. contoso
-- name of your API center resource **-s** Example. Contoso-api-center
-- name of the API **-–api-name** Example. Conference-api
-- name of the version **--version** Example. V1
-- name of the definition **--name** Example Conference-API-definition
-- title **--title** Example. OpenAPI
+- Resource group **-g** Example. *contoso*
+- API center service name **-n** Example. *contoso-apis*
+- API ID **--api-id** Example. *conference-api*
+- Version ID **--version-id** Example. *2024-07-03*
+- Title **--title** Example. *OpenAPI*
+- Definition ID **--definition-id** Example. *openapi*
 
 ```bash
-az apic api definition create --resource-group myResourceGroup --service myAPICenter --api-name petstore-api --version v1-0-0 --name "openapi" --title "OpenAPI"
+az apic api definition create -g contoso -n contoso-apis --api-id conference-api --version-id 2024-07-03 --title OpenAPI --definition-id openapi 
 ```
 
-:::image type="content" source="../media/3-create-definition-cli.png" alt-text="Screenshot showing CLI command to create a new API definition in API Center":::
-
-You then use the **az apic api definition import-specification** command to import an OpenAPI definition file from a publicly accessible url. Example: <https://conferenceapi.azurewebsites.net/?format=json>
+To import an OpenAPI definition file from a url, use the **az apic api definition import-specification** command to import . Example: <https://conferenceapi.azurewebsites.net/?format=json>
 
 ```bash
-az apic api definition import-specification --resource-group myResourceGroup --service myAPICenter --api-name petstore-api --version-name v1-0-0 --definition-name openapi --format "link" --value 'https://petstore3.swagger.io/api/v3/openapi.json' --specification '{"name":"openapi","version":"3.0.2"}'
+az apic api definition import-specification -g contoso -n contoso-apis --api-id conference-api --version-id 2024-07-03 --definition-id openapi --format "link" --value 'https://petstore3.swagger.io/api/v3/openapi.json' --specification '{"name":"openapi","version":"3.0.2"}'
 ```
-
-   :::image type="content" source="../media/3-api-definition-import-cli.png" alt-text="Screenshot showing CLI command to imprt a definition from a url":::
 
 ::: zone-end
 
@@ -346,15 +338,13 @@ To create an environment,
 To create an environment, run the following CLI command
 
 ```bash
-az apic environment create -g contoso -s contoso-apis --title "Contoso Testing" --environment-id "contoso-testing" --type "testing"
+az apic environment create -g contoso -n contoso-apis --title ContosoTesting --environment-id contosotesting --type testing
 ```
-
-:::image type="content" source="../media/3-create-environment-cli.png" alt-text="Screenshot showing CLI command to create a new environment":::
 
 Repeat the same for the production environment
 
 ```bash
-az apic environment create -g contoso -s contoso-apis --title "Contoso Production" --environment-id "contoso-production" --type "production"
+az apic environment create -g contoso -n contoso-apis-new --title ContosoProduction --environment-id contosoproduction --type production
 ```
 
 ::: zone-end
