@@ -38,12 +38,12 @@ quiz:
           explanation: "Correct! This call uses a custom equivalence function to compare the sorted versions of two lists, ignoring the original ordering."
     - content: "What's the default behavior of the collection annotation regarding enforcing the order of its children?"
       choices:
-        - content: "Ensure that the satisfying timestamps of its children occur in non-decreasing order"
+        - content: "Ensure that the satisfying timestamps of its children occur in nondecreasing order"
           isCorrect: false
           explanation: "Not quite"
-        - content: "Ensure that the satisfying timestamps of its children occur in non-increasing order"
+        - content: "Ensure that the satisfying timestamps of its children occur in nonincreasing order"
           isCorrect: false
           explanation: "Not quite"
-        - content: "Do not check the order of its children"
+        - content: "Don't check the order of its children"
           isCorrect: true
-          explanation: "Correct! The default behavior is not to check the order of the collection's children."
+          explanation: "Correct! The default behavior isn't to check the order of the collection's children."
