@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction        
   title: Introduction to Azure NetApp Files         
   description: Evaluate whether Microsoft Azure NetApp Files is appropriate for migrating and running your organization's file-based workloads.       
-  ms.date: 07/19/2024
+  ms.date: 07/30/2024
   author: mengruts  
   ms.author: anfdocs          
   ms.topic: module-intro-to-product

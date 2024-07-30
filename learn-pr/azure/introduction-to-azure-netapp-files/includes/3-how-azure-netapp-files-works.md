@@ -8,7 +8,7 @@ One of the most important components of Azure NetApp Files is the storage hierar
 
 Watch this video to understand the relationship between the Azure subscription, NetApp accounts, capacity pools, and volumes. 
 
-[!VIDEO https://learn-video.azurefd.net/vod/player?id=e9e9e134-33f3-4a83-9d3d-d1fa35d357cd]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e9e9e134-33f3-4a83-9d3d-d1fa35d357cd]
 
 ## Service levels
 
@@ -44,6 +44,8 @@ Before provisioning an Azure NetApp Files volume, you need to create an Azure vi
 
 When you create an Azure NetApp Files volume, you assign the volume to a delegated subnet. A delegated subnet is a subnet that's configured with permissions to create resources that are specific to a service, which in this case is Azure NetApp Files. How network nodes connect to Azure NetApp Files in that subnet depends on where those nodes are located. Azure NetApp Files volumes are securely accessible only within a customer’s VNet context. Azure NetApp Files does not provide a publicly (that is, internet) accessible endpoint.
 
+:::image type="content" source="../media/3-how-azure-netapp-files-works-topology.png" alt-text="Diagram depicting the three types of network connectivity supported by Azure NetApp Files." lightbox="../media/3-how-azure-netapp-files-works-topology.png":::
+
 When planning subnets, there are three main scenarios to consider:
 
 - **Connectivity in the same virtual network.** Any resource running on an Azure virtual machine in the same virtual network that contains the delegated subnet can connect to the file storage provided by Azure NetApp Files. In the diagram that follows this list, both VM 3 and Azure NetApp Files Volume 1 reside in the Hub virtual network, so VM 3 has direct access to Volume 1.
@@ -59,5 +61,3 @@ When planning subnets, there are three main scenarios to consider:
     - A resource in the on-premises network has gateway access to any Azure NetApp Files volume in the gateway's virtual network. For example, VM 2 in the on-premises network can connect to Azure NetApp Files Volume 1. 
 
     - A resource in the on-premises network has gateway access to any Azure NetApp Files volume in a peered virtual network. For example, VM 1 in the on-premises network can connect to Azure NetApp Files Volume 2 (and VM 2 can connect to Azure NetApp Files Volume 3).
-
-:::image type="content" source="../media/3-how-azure-netapp-files-works-topology.png" alt-text="Diagram depicting the three types of network connectivity supported by Azure NetApp Files." lightbox="../media/3-how-azure-netapp-files-works-topology.png":::
