@@ -6,7 +6,7 @@ Here, you learn about some of the constants and utility functions in the `System
 
 ## Determine the current directory
 
-Sometimes, you don't in know which directory or path your program should run. Let's say you want your program to use the current directory, but you don't know the path.
+Sometimes, you don't know in which directory or path your program should run. Let's say you want your program to use the current directory, but you don't know the path.
 
 .NET exposes the full path to the current directory via the `Directory.GetCurrentDirectory` method.
 
