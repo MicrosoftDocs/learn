@@ -98,7 +98,7 @@ Inside the script, capture the values into variables. In this example, the param
 
 ```powershell
 param (
-    [int[]]$Name,
+    [string[]]$Name,
     [string]$Location
 )
 ```
@@ -120,7 +120,7 @@ VMs:
 
 ```azurepowershell
 param (
-    [int[]]$Name = 'web','app','sql',
+    [string[]]$Name = 'web','app','sql',
     [string]$ResourceGroupName,
     [string]$Location = 'eastus'
 )
