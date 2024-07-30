@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-availability-zones
-title: Explore Availability Zones
+title: Explore availability zones
 metadata:
-  title: Explore Availability Zones
-  description: "Explore Availability Zones"
-  ms.date: 10/17/2023
+  title: Explore availability zones
+  description: "Learn the definition of availability zones and how they can be used to provide high availability."
+  ms.date: 07/30/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

@@ -3,12 +3,13 @@ uid: learn.oxford.void-detection-edge-devices-lva
 metadata:
   title: "Void detection on Edge devices with Live Video Analytics using own images and video"
   description: "This module helps learner to deploy void detection solution using Live Video Analytics and Custom Vision"
-  ms.date: 03/01/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: chnoring
   ms.topic: module
-  ms.custom: team=nextgen
-  ms.service: iot-edge
+  ms.custom: team=cloud_advocates
+  ms.service: azure-ai-custom-vision
+  ms.collection: ce-advocates-ai-copilot        # Oxford University Module - Oxford responsible for ongoing maintenance
 title: "Void detection on Edge devices with Live Video Analytics using own images and video"
 summary: "Use a Live Video Analytics module on IoT Edge and deploy a Custom Vision machine learning solution to an IoT Edge device. The solution will identify void spaces in shelves. Check that the solution is successfully deployed and test your solution from a web application."
 abstract: |

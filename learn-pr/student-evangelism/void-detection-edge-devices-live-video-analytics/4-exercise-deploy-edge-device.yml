@@ -4,25 +4,11 @@ title: Exercise - Deploy an IoT Edge device
 metadata:
   title: Deploy an IoT Edge device
   description: In this section, we help learner to configure and deploy an IoT Edge device
-  ms.date: 03/01/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 12 # dummy number at present
 content: |
   [!include[](includes/4-exercise-deploy-edge-device.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: "Which of the following commands are used to monitor the status of an edge deployment?"
-    choices:
-    - content: "az iot edge deployment summary"
-      isCorrect: false
-      explanation: "The command is not available "
-    - content: "az iot edge deployment show"
-      isCorrect: true
-      explanation: "It displays the details of a single deployment"
-    - content: "az iot edge deployment status"
-      isCorrect: false
-      explanation: "The command is not available "
+  
