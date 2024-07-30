@@ -1,14 +1,4 @@
-<<<<<<< HEAD
 Here, we discuss how Azure NetApp Files works behind the scenes and how different elements work together to provide a high-performance cloud NAS service. This knowledge helps you evaluate whether Azure NetApp Files is a good solution for migrating your organization's file-based workloads to the Azure cloud.
-=======
-Here, we discuss how Azure NetApp Files works behind the scenes. You learn about the main pieces of Azure NetApp Files and how they work together to provide a high-performance cloud NAS service. This knowledge helps you evaluate whether Azure NetApp Files is a good solution for migrating your organization's file-based workloads to the Azure cloud.
-
-In this unit, you learn about:
-
-- Azure NetApp Files storage hierarchy.
-- Azure NetApp Files migrations.
-- Connectivity to Azure NetApp Files storage.
->>>>>>> cb2de977501e8de57a790a6d66d4118c084df73c
 
 ## Storage hierarchy
 
@@ -16,24 +6,19 @@ One of the most important components of Azure NetApp Files is the storage hierar
 
 :::image type="content" source="../media/azure-netapp-files-storage-hierarchy.png" alt-text="Diagram of Azure NetApp Files storage hierarchy.":::
 
-Azure NetApp Files requires an Azure subscription. Visit the Microsoft Azure website to set up a subscription and for details about pricing. Before creating a volume in Azure NetApp Files, you must have a NetApp account and set up a pool for provisioned capacity.
+Watch this video to understand the relationship between the Azure subscription, NetApp accounts, capacity pools, and volumes. 
 
-- A **NetApp account** serves as an administrative grouping of the various capacity pools, and it is not the same as your general Azure storage account. A NetApp account is regional in scope. You can have multiple NetApp accounts in a region, but each NetApp account is tied to only a single region. You can have up to 10 NetApp accounts per region; this limit is soft and can be increased by a Microsoft support ticket if needed.
-
-- A **capacity pool** is measured and billed by its provisioned capacity and its service level. The capacity is provisioned by the fixed SKUs that you purchased. A capacity pool can have only one service level. Each capacity pool can belong to only one NetApp account. However, you can have multiple capacity pools within a NetApp account. A capacity pool cannot be moved across NetApp accounts. For example, capacity pool 1 cannot be moved from the South-Central US NetApp account to a West Europe NetApp account.
-
-- A **volume** is measured by logical capacity allocation and is scalable. A volume capacity allocation counts against its pool’s provisioned capacity. Each volume belongs to only one pool, but a pool can contain multiple volumes. A volume can be moved across capacity pools without actual data move or downtime. For example, you can move the volumes from capacity pool 1 to capacity pool 2 only if the capacity pools are in the same region through a service level change.
-
-A capacity pool cannot be deleted until all volumes within the capacity pool have been deleted.  
+[!VIDEO https://learn-video.azurefd.net/vod/player?id=e9e9e134-33f3-4a83-9d3d-d1fa35d357cd]
 
 ## Service levels
 
 Azure NetApp Files volume performance scales with the size of the volume and the service level. Azure NetApp Files offers three service levels for the capacity pools you create:
 
 - **Standard**: Provides up to 16 MiB/s of throughput and 1000 IOPS per 1 TiB of capacity provisioned. An Azure NetApp Files volume can generate approximately 319.000 IOPS with only 1.5 ms of latency for adjacent virtual machines. Use Standard for static web content, file shares, and database backups.
-    - **Storage with cool access**: The throughput experience for this service level is the same as the Standard service level for data that is in the hot tier. It may differ for accessing data that resides in the cool tier.
 - **Premium**: Provides up to 64 MiB/s of throughput and 4,000 IOPS per 1 TiB of capacity provisioned. It can generate a maximum of 450,000 IOPS per volume. Premium is comparable to mainstream SSD performance and is suitable for SAP HANA, databases, enterprise apps, virtual desktop infrastructure (VDI), analytics, technical applications, messaging queues, and big data analytics
 - **Ultra**: Provides up to 128 MiB/s of throughput and 8,000 IOPS per 1 TiB of capacity provisioned. It can generate a maximum of  450,000 IOPS per volume. Use Ultra for the most performance-intensive applications, such as HPC applications.
+
+Azure NetApp Files also offers storage with **cool access**. With cool access, you experience the same throughput for data in the hot tier, however the throughput may differ for data residing in the cool tier. 
 
 ## Quality of service (QoS)
 
