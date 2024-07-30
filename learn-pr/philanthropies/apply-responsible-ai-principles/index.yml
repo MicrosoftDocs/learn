@@ -3,11 +3,13 @@ uid: learn.philanthropies.apply-responsible-ai-principles
 metadata:
   title: Apply responsible AI principles in learning environments
   description: Discover Microsoft's commitment to ethical AI. Learn about the principles of responsible AI - fairness, reliability & safety, privacy & security, transparency, inclusiveness, and accountability specifically for a learning environment. Principles that are designed to guide and shape the future of AI development and usage.
-  ms.date: 03/25/2024
   author: yoosunee
   ms.author: andreapark
-  ms.topic: module
+  ms.date: 03/25/2024
   ms.service: artificial-intelligence
+  ms.topic: module
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Apply responsible AI principles in learning environments
 summary: In this module, you will explore Microsoft's responsible AI principles, which include fairness, reliability & safety, privacy & security, transparency, inclusiveness, and accountability. This module is essential for anyone looking to implement or build an AI system responsibly for a learning environment.
 abstract: |

@@ -4,9 +4,9 @@ title: Exercise - Build a simple logistic regression model
 metadata:
   title: Exercise - Build a simple logistic regression model
   description: Learn how to build a simple logistic regression model.
-  ms.date: 04/06/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  ms.date: 07/20/2024
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 8
 sandbox: true

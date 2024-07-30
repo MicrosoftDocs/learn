@@ -6,11 +6,11 @@ An Azure landing zone architecture is scalable and modular to meet various deplo
 
 An Azure landing zone consists of platform landing zones and application landing zones. It's worth explaining the function of both in more detail.
 
-Platform landing zone: A platform landing zone is a subscription that provides shared services (identity, connectivity, management) to applications in application landing zones. Consolidating these shared services often improves operational efficiency. One or more central teams manage the platform landing zones.<br>
+Platform landing zone: A platform landing zone is a subscription that provides shared services (identity, connectivity, management) to applications in application landing zones. Consolidating these shared services often improves operational efficiency. One or more central teams manage the platform landing zones.
 
-Application landing zone: An application landing zone is a subscription for hosting an application. You pre-provision application landing zones through code and use management groups to assign policy controls to them.<br>
+Application landing zone: An application landing zone is a subscription for hosting an application. You pre-provision application landing zones through code and use management groups to assign policy controls to them.
 
-There are three main approaches to managing application landing zones. You should use a (1) central team, (2) application team, or (3) shared team management approach, depending on your needs (see table).<br>
+There are three main approaches to managing application landing zones. You should use a (1) central team, (2) application team, or (3) shared team management approach, depending on your needs (see table).
 
 | **Application landing zone management approach** | **Description**                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -32,11 +32,11 @@ You should use the Azure landing zone portal accelerator if you plan to manage y
 
 Microsoft offers the Cloud Adoption Framework to provide customers a proven starting point for the cloud journey, including the Secure methodology.
 
-Another critical component of the Cloud Adoption Framework in the Ready methodology is the Azure landing zone, which accelerates cloud adoption by providing automated implementation of complete architectures and operating environments, including security elements. Security best practices are integrated in Azure landing zones. With landing zones, you can quickly and securely migrate your first workloads with baked-in security and governance best practices.<br>
+Another critical component of the Cloud Adoption Framework in the Ready methodology is the Azure landing zone, which accelerates cloud adoption by providing automated implementation of complete architectures and operating environments, including security elements. Security best practices are integrated in Azure landing zones. With landing zones, you can quickly and securely migrate your first workloads with baked-in security and governance best practices.
 
 While you design and implement your organization's landing zone, use the reference architecture below as a target end-state. It captures mature and scaled-out environmental design considerations.
 
-We recommend using Azure landing zones when possible in your cloud adoption plans. Landing zones provide an architectural starting point. Azure landing zones help you follow security and other best practices whether you deploy a new workload, migrate existing workloads, or improve already-deployed workloads. Using landing zones helps you follow best practices whether you implement them all at once or incrementally.<br>
+We recommend using Azure landing zones when possible in your cloud adoption plans. Landing zones provide an architectural starting point. Azure landing zones help you follow security and other best practices whether you deploy a new workload, migrate existing workloads, or improve already-deployed workloads. Using landing zones helps you follow best practices whether you implement them all at once or incrementally.
 
 > [!NOTE]
 > *Your organization can customize the Azure landing zone architecture to meet your unique business requirements.*
@@ -50,7 +50,7 @@ Azure landing zones contain code that makes it easier for your organization's IT
 
 Your organization can adapt Azure landing zones based on Azure Security Benchmark (ASB) best practices and Zero Trust (ZT) principles, which are included in the target architecture. Move toward the best practice-aligned target architecture, implementing other security considerations and Zero Trust principles that incrementally build on and improve your organization's security and governance MVP.
 
-Extend Zero Trust architectural approaches that *never trust and always verify*. Integrate an end-to-end strategy across your digital state that encompasses identities, endpoints, network, data, applications, and infrastructure.<br>
+Extend Zero Trust architectural approaches that *never trust and always verify*. Integrate an end-to-end strategy across your digital state that encompasses identities, endpoints, network, data, applications, and infrastructure.
 
 ## Follow Azure Security Benchmark security recommendations
 

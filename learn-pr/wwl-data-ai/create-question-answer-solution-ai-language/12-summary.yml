@@ -3,11 +3,13 @@ uid: learn.wwl.create-question-answer-solution-ai-language.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 08/31/2023
+  description: Summary
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 08/31/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/12-summary.md)]

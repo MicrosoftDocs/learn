@@ -1,13 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-licensing-pricing-support.explore-licensing-pricing-support-azure-for-sap-workloads
+uid: learn.wwl.explore-azure-virtual-machine-licensing-pricing-support.explore-licensing-pricing-support-azure-for-sap-workloads
 title: Explore licensing, pricing, and support of Azure for SAP workloads
 metadata:
   title: Explore licensing, pricing, and support of Azure for SAP workloads
   description: "Explore licensing, pricing, and support of Azure for SAP workloads"
-  ms.date: 03/19/2024
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/3-explore-licensing-pricing-support-azure-for-sap-workloads.md)]

@@ -3,11 +3,13 @@ uid: learn.azure-introduction-to-azure-search.process
 title: Identify elements of a search solution
 metadata:
   title: Identify elements of a search solution
-  description: "Identify elements of a search solution"
-  ms.date: 07/17/2024
+  description: Identify elements of a search solution
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 07/25/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

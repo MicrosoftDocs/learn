@@ -3,7 +3,7 @@ uid: learn.wwl.implement-disaster-recovery-for-sap-workloads-azure
 metadata:
   title: Implement disaster recovery for SAP workloads in Azure
   description: "This module explores disaster recovery support of Azure for SAP workloads, including deployments within single and multiple Azure regions, multi-tier SAP NetWeaver app deployment in Azure, and Azure services, such as Active Directory and DNS. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 05/29/2024
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module

@@ -3,12 +3,14 @@ uid: learn.student-evangelism.challenge-project-build-speech-translator-app.know
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check."
-  ms.date: 12/13/2023
+  description: Knowledge check.
   author: theoyinbooke
   ms.author: somelezediko
-  ms.custom: team=nextgen
+  ms.date: 12/13/2023
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
 durationInMinutes: 5
 content: |
 quiz:

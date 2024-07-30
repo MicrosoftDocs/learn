@@ -3,12 +3,11 @@ uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-of-sa
 title: Explore high availability of SAP ASCS-SCS instances
 metadata:
   title: Explore high availability of SAP ASCS-SCS instances
-  description: "Explore high availability of SAP ASCS-SCS instances"
-  ms.date: 10/17/2023
+  description: "Explore high availability of SAP ASCS-SCS instances in single-SID and multi-SID configurations."
+  ms.date: 07/30/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-  ms.custom: linux-related-content
 durationInMinutes: 4
 content: |
   [!include[](includes/7-explore-high-availability-sap-ascs-scs-instances.md)]

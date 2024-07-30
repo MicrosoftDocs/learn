@@ -4,10 +4,12 @@ title: Introduction to image data
 metadata:
   title: Introduction to image data
   description: Learn how image data can be represented as tensors for neural network training
-  ms.date: 07/07/2021
   author: shwars
   ms.author: chnoring
+  ms.date: 07/07/2021
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 durationInMinutes: 10
 sandbox: true

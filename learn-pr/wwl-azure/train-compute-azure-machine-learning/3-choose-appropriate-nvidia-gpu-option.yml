@@ -3,11 +3,13 @@ uid: learn.wwl.train-compute-azure-machine-learning.choose-appropriate-nvidia-gp
 title: Choose the appropriate Nvidia GPU option
 metadata:
   title: Choose the appropriate Nvidia GPU option
-  description: "Choose the appropriate Nvidia GPU option"
-  ms.date: 02/03/2023
+  description: Choose the appropriate Nvidia GPU option
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

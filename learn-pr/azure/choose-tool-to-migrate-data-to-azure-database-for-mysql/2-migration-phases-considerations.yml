@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.migration-phases-considerations
+title: Migration phases and considerations
+metadata:
+  title: Migration phases and considerations
+  description: "This unit covers the phases and considerations in database migrations to Azure Database for MySQL flexible servers."
+  ms.date: 07/08/2024
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-migration-phases-considerations.md)]

@@ -3,11 +3,13 @@ uid: learn.wwl.apply-prompt-engineering-azure-openai.write-effective-prompts
 title: Write more effective prompts
 metadata:
   title: Write more effective prompts
-  description: "Write more effective prompts to generate quality responses from Azure OpenAI"
-  ms.date: 5/2/2023
+  description: Write more effective prompts to generate quality responses from Azure OpenAI
   author: ivorb
   ms.author: berryivor
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai

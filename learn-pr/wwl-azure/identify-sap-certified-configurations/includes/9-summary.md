@@ -7,7 +7,7 @@ You explored the general prerequisites for SAP support in public cloud environme
 - [SAP certifications and configurations running on Microsoft Azure](/azure/virtual-machines/workloads/sap/sap-certifications)
 - [Deploy SAP S/4HANA or BW/4HANA on Azure](/azure/virtual-machines/workloads/sap/cal-s4h)
 - [Previous generations of virtual machine sizes](/azure/virtual-machines/sizes-previous-gen)
-- [Certified and Supported SAP HANA Hardware](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas)
+- [Certified and Supported SAP HANA Hardware](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=v:deCertified;iaas;ve:24)
 - [Hybris Documentation](https://help.sap.com/viewer/a74589c3a81a4a95bf51d87258c0ab15/6.7.0.0/en-US/8c71300f866910149b40c88dfc0de431.html)
 - [SAP Note \#1928533](https://me.sap.com/notes/1928533)
 - [SAP Note \#2553235](https://me.sap.com/notes/2553235)

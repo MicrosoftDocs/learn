@@ -3,11 +3,13 @@ uid: learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.exercis
 title: Exercise - Trigger an AutoML experiment using data from a Spark table
 metadata:
   title: Exercise - Trigger an AutoML experiment using data from a Spark table
-  description: "Exercise - Trigger an AutoML experiment using data from a Spark table"
-  ms.date: 07/10/2024
+  description: Exercise - Trigger an AutoML experiment using data from a Spark table
   author: wwlpublish
   ms.author: chtestao
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 durationInMinutes: 9
 content: |

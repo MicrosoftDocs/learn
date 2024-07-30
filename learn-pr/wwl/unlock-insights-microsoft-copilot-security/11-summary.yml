@@ -3,11 +3,13 @@ uid: learn.wwl.unlock-insights-microsoft-copilot-security.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 06/19/2024
+  description: Summary
   author: wwlpublish
   ms.author: rstearman
+  ms.date: 06/19/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/11-summary.md)]

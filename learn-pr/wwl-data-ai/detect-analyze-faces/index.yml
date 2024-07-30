@@ -2,13 +2,15 @@
 uid: learn.wwl.detect-analyze-faces
 metadata:
   title: Fundamentals of Facial Recognition
-  description: "Understand how to use Azure AI Face to detect and analyze faces."
-  ms.date: 10/27/2023
+  description: Understand how to use Azure AI Face to detect and analyze faces.
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: module
+  ms.date: 10/27/2023
   ms.service: azure-ai-vision
   ms.subservice: azure-ai-face
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Fundamentals of Facial Recognition
 summary: Face detection, analysis, and recognition are important capabilities for artificial intelligence (AI) solutions. Azure AI Face service in Azure makes it easy integrate these capabilities into your applications.
 abstract: |

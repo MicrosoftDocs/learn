@@ -3,11 +3,13 @@ uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.exercise-expl
 title: Exercise-Explore the Azure AI extension
 metadata:
   title: Exercise-Explore the Azure AI extension
-  description: "Exercise-Explore the Azure AI extension"
-  ms.date: 04/26/2024
+  description: Exercise-Explore the Azure AI extension
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 04/26/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/7-exercise-explore-azure-ai-extension.md)]

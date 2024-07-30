@@ -1,13 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-licensing-pricing-support.introduction
+uid: learn.wwl.explore-azure-virtual-machine-licensing-pricing-support.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction"
-  ms.date: 03/19/2024
+  description: "Introduction to the module."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

@@ -2,14 +2,14 @@
 uid: learn.wwl.explore-generative-ai-copilot-bing.exercise-brainstorm-destination-features
 title: 'Exercise: Brainstorm destination features'
 metadata:
-  title: 'Exercise: Brainstorm destination features'
+  title: "Exercise: Brainstorm destination features"
   description: "Exercise: Brainstorm destination features"
-  ms.date: 04/01/2024
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 04/01/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/5-exercise-brainstorm-destination-features.md)]

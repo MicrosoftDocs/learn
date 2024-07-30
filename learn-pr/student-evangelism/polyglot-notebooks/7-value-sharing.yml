@@ -4,10 +4,12 @@ title: Exercise – Value sharing
 metadata:
   title: Exercise – value sharing
   description: Value sharing allows you to share variables between kernels in Polyglot Notebook. In this exercise, you'll learn how to do so.
-  ms.date: 04/03/2024
   author: japhletnwamu
   ms.author: japhletnwamu
+  ms.date: 04/03/2024
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=cloud_advocates
 durationInMinutes: 5
 content: |

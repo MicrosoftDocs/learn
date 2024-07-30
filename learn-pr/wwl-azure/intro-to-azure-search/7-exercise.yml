@@ -3,11 +3,13 @@ uid: learn.azure-introduction-to-azure-search.exercise
 title: Exercise - Explore an Azure AI Search index (UI)
 metadata:
   title: Explore an Azure AI Search index (UI)
-  description: "Exercise - Explore an Azure AI Search index (UI)"
-  ms.date: 07/17/2024
+  description: Exercise - Explore an Azure AI Search index (UI)
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 07/25/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 35

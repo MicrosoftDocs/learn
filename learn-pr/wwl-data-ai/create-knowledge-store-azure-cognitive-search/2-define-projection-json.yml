@@ -3,11 +3,13 @@ uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search.define-project
 title: Define projections
 metadata:
   title: Define projections
-  description: "Define projections"
-  ms.date: 12/11/2023
+  description: Define projections
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 12/11/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 durationInMinutes: 5
 content: |

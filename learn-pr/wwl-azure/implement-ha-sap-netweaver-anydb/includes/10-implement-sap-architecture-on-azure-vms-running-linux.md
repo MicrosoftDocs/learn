@@ -30,3 +30,4 @@ During this lab ([full instructions on GitHub](https://go.microsoft.com/fwlink/?
 - Exercise 2: Configure Azure Virtual Machines running Linux to support a highly available SAP NetWeaver deployment
 - Exercise 3: Configure clustering on Azure Virtual Machines running Linux to support a highly available SAP NetWeaver deployment
 - Exercise 4: Remove lab resources
+

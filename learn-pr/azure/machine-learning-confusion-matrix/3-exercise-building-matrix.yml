@@ -4,9 +4,9 @@ title: Exercise – Building a confusion matrix
 metadata:
   title: Exercise – Building a confusion matrix
   description: Exercise unit about building a confusion matrix in machine learning
-  ms.date: 04/14/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  ms.date: 07/20/2024
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 8
 sandbox: true

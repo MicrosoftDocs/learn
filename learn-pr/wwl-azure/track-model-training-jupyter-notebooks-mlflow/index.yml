@@ -3,11 +3,13 @@ uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow
 metadata:
   title: Track model training in Jupyter notebooks with MLflow
   description: Learn how to use MLflow for model tracking when experimenting in notebooks.
-  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: module
+  ms.date: 06/06/2023
   ms.service: azure
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Track model training in Jupyter notebooks with MLflow
 summary: Learn how to use MLflow for model tracking when experimenting in notebooks.
 abstract: |

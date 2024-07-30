@@ -3,11 +3,13 @@ uid: learn.security-copilot-exercises.explore-standalone-experience
 title: Explore the standalone experience
 metadata:
   title: Explore the standalone experience
-  description: "Explore the standalone experience."
-  ms.date: 06/06/2024
+  description: Explore the standalone experience.
   author: wwlpublish
   ms.author: ceperezb
+  ms.date: 06/06/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 15
 content: |
   [!include[](includes/3-explore-standalone-experience.md)]

@@ -3,11 +3,13 @@ uid: learn.wwl.get-started-ai-fundamentals.understand-natural-language-process
 title: Understand natural language processing
 metadata:
   title: Understand natural language processing
-  description: "Understand natural language processing"
-  ms.date: 12/05/2023
+  description: Understand natural language processing
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 12/05/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/4-understand-natural-language-process.md)]

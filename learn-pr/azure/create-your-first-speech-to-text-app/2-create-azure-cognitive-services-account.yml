@@ -4,10 +4,12 @@ title: Create an Azure AI services account
 metadata:
   title: Create an Azure AI services account
   description: Learn how to create an Azure AI services account.
-  ms.date: 06/19/2023
   author: rmcmurray
   ms.author: robmcm
+  ms.date: 06/19/2023
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 azureSandbox: false
 durationInMinutes: 5
 content: |

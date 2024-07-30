@@ -4,10 +4,12 @@ title: Azure AI Content Safety
 metadata:
   title: Azure AI Content Safety
   description: Learn about the Azure AI Content Safety service and how it can help you moderate content.
-  ms.date: 06/24/2024
   author: aprilspeight
   ms.author: apspeigh
+  ms.date: 06/24/2024
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/2-azure-ai-content-safety.md)]

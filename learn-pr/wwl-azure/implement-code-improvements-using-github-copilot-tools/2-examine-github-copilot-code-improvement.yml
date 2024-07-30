@@ -3,13 +3,13 @@ uid: learn.wwl.implement-code-improvements-using-github-copilot-tools.examine-gi
 title: Examine GitHub Copilot support for code improvements
 metadata:
   title: Examine GitHub Copilot support for code improvements
-  description: "Examine GitHub Copilot support for code improvements"
-  ms.date: 05/20/2024
+  description: Examine GitHub Copilot support for code improvements
   author: wwlpublish
   ms.author: cahowd
+  ms.date: 05/20/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/2-examine-github-copilot-code-improvement.md)]

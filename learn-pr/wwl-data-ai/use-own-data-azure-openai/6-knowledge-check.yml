@@ -3,11 +3,13 @@ uid: learn.wwl.use-own-data-azure-openai.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your knowledge of using your own data with Azure OpenAI."
-  ms.date: 2/21/2024
+  description: Check your knowledge of using your own data with Azure OpenAI.
   author: ivorb
   ms.author: berryivor
+  ms.date: 2/21/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 2
 content: |
 quiz:

@@ -4,13 +4,13 @@ There are a few different workflows to choose from to update your Azure environm
 
 However, `azd` also offers more granular commands that map to specific stages of the developer workflow. These commands can also save time by skipping unnecessary checks or steps that you know haven't changed.
 
-* **`azd deploy`** - This command will package and redeploy your application source code to Azure. However, it will not execute any of the infrastructure as code files that apply changes to your Azure resources.
+* **`azd deploy`** - This command packages and redeploys your application source code to Azure. However, it won't execute any of the infrastructure as code files that apply changes to your Azure resources.
 
-* **`azd provision`** - This command will create or update Azure resources based on changes to your infrastructure as code files. For example, `azd provision` will create a new storage account in Azure if you add it to your Bicep or Terraform files. However, this command does not package or redeploy your application source code.
+* **`azd provision`** - This command creates or updates Azure resources based on changes to your infrastructure as code files. For example, `azd provision` creates a new storage account in Azure if you add it to your Bicep or Terraform files. However, this command does not package or redeploy your application source code.
 
 ## Update the app code
 
-Your team is building a ticket management app - not a Todo app, so you want to change the header text accordingly. Complete the following steps to update your application code and redeploy your changes using `azd`:
+Your team is building a ticket-management app, not a Todo app, so you want to change the header text accordingly. Complete the following steps to update your application code and redeploy your changes using `azd`:
 
 1. Locate the `header.tsx` file in the `src/web/src/layout` directory of the template. If you're using Visual Studio Code, you can also use the `ctrl + p` shortcut to search for the `header.tsx` file directly.
 
@@ -37,7 +37,7 @@ Your team is planning to add the ability for users to upload files with their ti
 
 1. In the `infra` folder at the root of your template, open the `main.bicep` file.
 
-1. The template already contains a reusable Bicep module for creating storage accounts, so you can use it to add your own. Paste the following code snippet at the bottom of the `main.bicep` file at line 180 above where the output variables are defined:
+1. The template already contains a reusable Bicep module for creating storage accounts, so you can use it to add your own. Paste the following code snippet at the bottom of the `main.bicep` file around line 180 above where the output variables are defined:
 
     ```bicep
     module storage './core/storage/storage-account.bicep' = {
@@ -57,7 +57,7 @@ Your team is planning to add the ability for users to upload files with their ti
     azd provision
     ```
 
-1. When the command finishes, follow the URL that is printed out in the console to launch the Azure portal in your browser. You should see the resource group that holds all of your originally provisioned resources, including the new storage account.
+1. When the command finishes, follow the URL the console prints to launch the Azure portal in your browser. You should see the resource group that holds all of your originally provisioned resources, including the new storage account.
 
     :::image type="content" source="../media/resources-storage.png" alt-text="A screenshot showing the deployed storage account.":::
 

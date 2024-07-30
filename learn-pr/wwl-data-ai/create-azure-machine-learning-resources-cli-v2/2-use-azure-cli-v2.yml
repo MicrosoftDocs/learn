@@ -3,13 +3,14 @@ uid: learn.wwl.create-azure-machine-learning-resources-cli-v2.use-azure-cli-v2
 title: Use the Azure CLI (v2) with Azure Machine Learning
 metadata:
   title: Use the Azure CLI (v2) with Azure Machine Learning
-  description: "Use the Azure CLI (v2) with Azure Machine Learning"
-  ms.date: 03/02/2023
+  description: Use the Azure CLI (v2) with Azure Machine Learning
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
   ms.topic: unit
-  ms.custom:
-    - devx-track-azurecli
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: devx-track-azurecli
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

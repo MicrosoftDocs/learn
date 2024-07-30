@@ -4,10 +4,12 @@ title: Manage capacity
 metadata:
   title: Manage capacity
   description: Manage capacity
-  ms.date: 12/11/2023
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 12/11/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

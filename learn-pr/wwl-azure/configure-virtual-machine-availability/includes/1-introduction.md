@@ -2,7 +2,7 @@ Managing virtual machines at scale can be challenging, especially when usage pat
 
 Your company website uses virtual machines and manages large workloads. The IT department wants to ensure the virtual machines can dynamically adjust to increases and decreases in workloads. They also want to ensure there's a business continuity plan to provide for highly available machines. You're responsible for deploying highly available virtual machines. You decide to use Azure Virtual Machine Scale Sets and the autoscale feature.
 
-In this module, you learn about scaling virtual machines. You learn about availability zones, availability sets, update and fault domains. You also learn about scale sets and autoscale.
+In this module, you learn about scaling virtual machines. You learn about availability zones, availability sets, update domains, and fault domains. You also learn about scale sets and autoscale.
 
 The goal of this module is to learn how to successfully respond to changing virtual machine workloads. 
 

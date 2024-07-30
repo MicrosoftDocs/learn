@@ -3,11 +3,13 @@ uid: learn.wwl.source-control-for-machine-learning-projects.develop-locally-visu
 title: Develop locally with Visual Studio Code
 metadata:
   title: Develop locally with Visual Studio Code
-  description: "Develop locally with Visual Studio Code"
-  ms.date: 07/20/2023
+  description: Develop locally with Visual Studio Code
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/20/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

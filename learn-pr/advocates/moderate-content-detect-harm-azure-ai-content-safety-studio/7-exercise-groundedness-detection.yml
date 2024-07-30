@@ -4,10 +4,12 @@ title: Exercise – Groundedness detection
 metadata:
   title: Exercise – Groundedness detection
   description: Learn how to detect groundedness in content using the Azure AI Content Safety Studio.
-  ms.date: 05/09/2024
   author: aprilspeight
   ms.author: apspeigh
+  ms.date: 05/09/2024
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/7-exercise-groundedness-detection.md)]
