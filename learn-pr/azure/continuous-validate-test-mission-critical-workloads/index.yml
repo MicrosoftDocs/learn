@@ -3,7 +3,7 @@ uid: learn.continuous-validate-test-mission-critical-workloads
 metadata:
   title: Continuously validate and test mission-critical workloads
   description: Learn how to automate Azure Load Testing and Azure Chaos Studio simultaneously as part of your CI/CD pipelines.
-  ms.date: 12/22/2022
+  ms.date: 07/31/2024
   author: sebader
   ms.author: prwilk
   ms.topic: module
