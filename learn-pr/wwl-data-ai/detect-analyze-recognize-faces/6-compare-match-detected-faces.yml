@@ -3,11 +3,13 @@ uid: learn.wwl.detect-analyze-recognize-faces.compare-match-detected-faces
 title: Compare and match detected faces
 metadata:
   title: Compare and match detected faces
-  description: "Compare and match detected faces"
-  ms.date: 03/11/2024
+  description: Compare and match detected faces
   author: wwlpublish
   ms.author: gmalc
+  ms.date: 03/11/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/6-compare-match-detected-faces.md)]

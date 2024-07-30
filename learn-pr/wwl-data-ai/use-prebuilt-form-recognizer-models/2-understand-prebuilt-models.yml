@@ -3,11 +3,13 @@ uid: learn.wwl.use-prebuilt-form-recognizer-models.understand-prebuilt-models
 title: Understand prebuilt models
 metadata:
   title: Understand prebuilt models
-  description: "Understand prebuilt models"
-  ms.date: 02/06/2024
+  description: Understand prebuilt models
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 02/06/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom: devx-track-python
   zone_pivot_groups: dev-lang-csharp-python
 durationInMinutes: 3

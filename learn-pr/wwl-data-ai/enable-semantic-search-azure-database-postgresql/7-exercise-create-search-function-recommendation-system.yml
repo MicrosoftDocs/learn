@@ -3,11 +3,13 @@ uid: learn.wwl.enable-semantic-search-azure-database-postgresql.exercise-create-
 title: Exercise - Create a search function for a recommendation system
 metadata:
   title: Exercise - Create a search function for a recommendation system
-  description: "Exercise - Create a search function for a recommendation system"
-  ms.date: 04/29/2024
+  description: Exercise - Create a search function for a recommendation system
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 04/29/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/7-exercise-create-search-function-recommendation-system.md)]

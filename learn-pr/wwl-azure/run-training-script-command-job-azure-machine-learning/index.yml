@@ -3,11 +3,13 @@ uid: learn.wwl.run-training-script-command-job-azure-machine-learning
 metadata:
   title: Run a training script as a command job in Azure Machine Learning
   description: Run a command job with the Azure Machine Learning Python SDK v2.
-  ms.date: 10/27/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: module
+  ms.date: 10/27/2023
   ms.service: azure
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Run a training script as a command job in Azure Machine Learning
 summary: Learn how to convert your code to a script and run it as a command job in Azure Machine Learning.
 abstract: |

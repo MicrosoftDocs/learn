@@ -2,12 +2,14 @@
 uid: learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.exercise-train-track-model-mlflow
 title: 'Exercise: Train and track model with MLflow'
 metadata:
-  title: 'Exercise: Train and track model with MLflow'
+  title: "Exercise: Train and track model with MLflow"
   description: "Exercise: Train and track model with MLflow"
-  ms.date: 07/10/2024
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

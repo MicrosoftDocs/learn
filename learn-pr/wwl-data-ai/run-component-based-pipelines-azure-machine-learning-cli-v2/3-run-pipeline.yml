@@ -3,11 +3,13 @@ uid: learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.run-p
 title: Run a pipeline with the CLI (v2)
 metadata:
   title: Run a pipeline with the CLI (v2)
-  description: "Run a pipeline with the CLI (v2)"
-  ms.date: 07/10/2024
+  description: Run a pipeline with the CLI (v2)
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 7
