@@ -7,7 +7,8 @@ metadata:
   author: PatAltimore
   ms.author: chnoring
   ms.topic: module
-  ms.custom: team=nextgen
+  ms.custom: team=cloud_advocates
+  ms.collection: ce-advocates-ai-copilot
   ms.service: iot-edge
 title: "Run Azure AI services on IoT Edge"
 summary: "Implement a cognitive service for performing language detection on an IoT Edge device. Describe the components and steps for implementing a cognitive service on an IoT Edge device."
