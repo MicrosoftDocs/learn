@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-models-copilot-ai-studio.deploy-model
+title: Deploy a model to an endpoint
+metadata:
+  title: Deploy a model to an endpoint
+  description: "Deploy and test a language model in the Azure AI studio."
+  ms.date: 7/2/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-deploy-model.md)]

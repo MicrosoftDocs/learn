@@ -3,11 +3,13 @@ uid: learn.wwl.work-with-form-recognizer.exercise-extract-data-from-custom-forms
 title: Exercise - Extract data from custom forms
 metadata:
   title: Exercise - Extract data from custom forms
-  description: "Exercise - Extract data from custom forms"
-  ms.date: 04/18/2024
+  description: Exercise - Extract data from custom forms
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 04/18/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 labId: 152394
 labModal: true
 durationInMinutes: 25

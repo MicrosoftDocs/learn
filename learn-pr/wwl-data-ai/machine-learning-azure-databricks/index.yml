@@ -2,12 +2,14 @@
 uid: learn.wwl.machine-learning-azure-databricks
 metadata:
   title: Train a machine learning model in Azure Databricks
-  description: "Learn how to train machine learning models using Spark and the MLlib library in Azure Databricks."
-  ms.date: 08/29/2023
+  description: Learn how to train machine learning models using Spark and the MLlib library in Azure Databricks.
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: module-standard-task-based
+  ms.date: 08/29/2023
   ms.service: azure-databricks
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Train a machine learning model in Azure Databricks
 summary: Machine learning involves using data to train a predictive model. Azure Databricks support multiple commonly used machine learning frameworks that you can use to train models.
 abstract: |

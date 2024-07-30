@@ -3,11 +3,13 @@ uid: learn.wwl.train-track-model-fabric.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 09/20/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 09/20/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai

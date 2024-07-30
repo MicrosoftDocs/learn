@@ -3,11 +3,13 @@ uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.exercise-c
 title: Exercise - Implement a custom skill
 metadata:
   title: Exercise - Implement a custom skill
-  description: "Exercise - Implement a custom skill"
-  ms.date: 12/11/2023
+  description: Exercise - Implement a custom skill
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 12/11/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labId: 152397
 labModal: true

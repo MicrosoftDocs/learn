@@ -2,13 +2,15 @@
 uid: learn.wwl.get-started-generative-ai-azure-database-postgresql
 metadata:
   title: Get started with generative AI in Azure Database for PostgreSQL
-  description: "Use generative AI in Azure Database for PostgreSQL."
-  ms.date: 04/26/2024
+  description: Use generative AI in Azure Database for PostgreSQL.
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.date: 04/26/2024
   ms.service: postgresql
   ms.subservice: flexible-server
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
   ai-usage: ai-assisted
 title: Get started with generative AI in Azure Database for PostgreSQL
 summary: This module explores how to effectively use Azure Database for PostgreSQL - Flexible Server and the Azure AI extension to develop powerful Generative AI applications.

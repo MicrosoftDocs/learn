@@ -3,11 +3,13 @@ uid: learn.wwl.get-started-ai-fundamentals.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 12/05/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 12/05/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 2
 quiz:
   title: ""

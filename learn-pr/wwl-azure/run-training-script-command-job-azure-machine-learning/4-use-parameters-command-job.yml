@@ -3,11 +3,13 @@ uid: learn.wwl.run-training-script-command-job-azure-machine-learning.use-parame
 title: Use parameters in a command job
 metadata:
   title: Use parameters in a command job
-  description: "Learn how to use parameters in a command job."
-  ms.date: 10/27/2023
+  description: Learn how to use parameters in a command job.
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 10/27/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/4-use-parameters-command-job.md)]

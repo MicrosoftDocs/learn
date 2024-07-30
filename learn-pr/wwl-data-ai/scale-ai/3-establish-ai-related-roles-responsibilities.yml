@@ -3,13 +3,13 @@ uid: learn.wwl.scale-ai.establish-ai-related-roles-responsibilities
 title: Establish AI-related roles and responsibilities
 metadata:
   title: Establish AI-related roles and responsibilities
-  description: "Establish AI-related roles and responsibilities"
-  ms.date: 04/08/2024
+  description: Establish AI-related roles and responsibilities
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 04/08/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/3-establish-ai-related-roles-responsibilities.md)]
