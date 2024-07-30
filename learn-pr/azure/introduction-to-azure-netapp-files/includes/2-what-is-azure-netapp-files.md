@@ -1,4 +1,4 @@
-Let's begin with an overview of Azure NetApp Files and its core features. This overview should help you decide whether Azure NetApp Files enables you to migrate your on-premises workloads to the cloud.
+Let's begin with an overview of Azure NetApp Files and its core features. This overview should help you decide whether Azure NetApp Files enables you to migrate your on-premises workloads or deploy new workloads to the cloud. 
 
 ## What is shared file storage?
 
@@ -14,7 +14,7 @@ There are two main file system protocols used for most shared file-storage imple
 - **Network File System (NFS)**: most often used with the Linux operating system.
 - **Server Message Block (SMB)**: most often used with the Windows operating system.
 
-Both NFS and SMB present logical drives organized in hierarchical structures on which the OS can store files in directories or folders.
+Both NFS and SMB present logical drives organized in hierarchical structures on which the operating system can store files in directories or folders.
 
 ## Azure NetApp Files defined
 

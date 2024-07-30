@@ -10,9 +10,9 @@ Azure NetApp Files allows you to deploy new applications to the cloud without ha
 
 We examine Azure NetApp Files to help you decide if you can migrate your enterprise workloads to the cloud based on:
 
-- Performance. What latencies, throughput, and Network Attached Storage (NAS) protocols are supported in Azure NetApp Files?
-- Availability: How available are your workloads in Azure NetApp Files?
-- Data management. What tools does Azure NetApp Files offer to manage and protect your data?
+- **Performance:** What latencies, throughput, and Network Attached Storage (NAS) protocols are supported in Azure NetApp Files?
+- **Availability:** How available are your workloads in Azure NetApp Files?
+- **Data management:** What tools does Azure NetApp Files offer to manage and protect your data?
 
 ## What is the main goal?
 
