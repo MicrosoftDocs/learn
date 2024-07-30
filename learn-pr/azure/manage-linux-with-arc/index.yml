@@ -4,7 +4,7 @@ metadata:
   title: Manage Linux with Arc
   description: Learn how to use Azure Arc with Linux systems, including SSH and Ansible.
   manager: rayoflores
-  ms.date: 11/21/2023
+  ms.date: 07/30/2024
   author: johnmarco
   ms.author: johnmarc
   ms.topic: module
