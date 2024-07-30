@@ -3,8 +3,8 @@ uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-sap-h
 title: Explore SAP HANA availability
 metadata:
   title: Explore SAP HANA availability
-  description: "Explore SAP HANA availability"
-  ms.date: 10/17/2023
+  description: "Explore different methods for ensuring SAP HANA availability."
+  ms.date: 07/30/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
