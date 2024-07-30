@@ -2,7 +2,7 @@ In addition to a public-facing web site, the department uses web sites for in-ho
 
 Here, you learn how to assess agent connectivity, and schedule a recurring update.
 
-## Components used by Update Manager
+## Components used by Update Management
 
 The following configurations are used to perform assessment and update deployments:
 
@@ -13,7 +13,7 @@ The following configurations are used to perform assessment and update deploymen
 
 ## Compliance scan
 
-Update Manager performs a scan for update compliance. By default, a compliance scan is performed every 12 hours on a Windows computer and every 3 hours on a Linux computer. In addition to the scan schedule, a compliance scan is initiated within 15 minutes if the MMA is restarted, before update installation, and after update installation. After a computer performs a scan for update compliance, the agent forwards the information in bulk to Azure Log Analytics.
+Update Management performs a scan for update compliance. By default, a compliance scan is performed every 12 hours on a Windows computer and every 3 hours on a Linux computer. In addition to the scan schedule, a compliance scan is initiated within 15 minutes if the MMA is restarted, before update installation, and after update installation. After a computer performs a scan for update compliance, the agent forwards the information in bulk to Azure Log Analytics.
 
 It can take between 30 minutes and 6 hours for the dashboard to display updated data from managed computers.
 
