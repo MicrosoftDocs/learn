@@ -33,10 +33,9 @@ In this module, we work with a Windows Server 2019 virtual machine deployed in A
 
 The following configurations are used to perform assessment and update deployments:
 
-- Microsoft Monitoring Agent (MMA) for Windows or Linux
 - PowerShell Desired State Configuration (DSC) for Linux
 - Automation Hybrid Runbook Worker
-- Microsoft Update or Windows Server Update Services (WSUS) for Windows computers
+
 
 The following diagram shows a conceptual view of the behavior and data flow with how the solution assesses and applies security updates to all connected Windows Server and Linux computers in a workspace.
 
