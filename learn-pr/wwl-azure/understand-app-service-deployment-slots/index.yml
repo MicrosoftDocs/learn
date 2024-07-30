@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: app-service
+  ms.service: azure-app-service
   ms.subservice: web-apps
   ai-usage: human-only
 title: Explore Azure App Service deployment slots
