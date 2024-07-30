@@ -7937,18 +7937,18 @@
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-lighthouse/5-video-cross-tenant-management.md",
-      "redirect_url": "/training/modules/intro-to-azure-lighthouse/6-cross-tenant-management",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/1-introduction",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-lighthouse/6-video-publish-managed-service.md",
-      "redirect_url": "/training/modules/intro-to-azure-lighthouse/5-video-publish-managed-service",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/1-introduction",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-lighthouse/7-summary.md",
-      "redirect_url": "/training/modules/intro-to-azure-lighthouse/10-summary",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/6-summary",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/language/rust-get-started/3-install-rust.md",
@@ -39158,6 +39158,66 @@
     },
     {
       "source_path_from_root": "/learn-pr/azure/govern-monitor-secure-resources-azure-lighthouse/index.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-lighthouse/2-intro-azure-lighthouse.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-lighthouse/3-prepare-for-azure-lighthouse.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-lighthouse/4a-exercise-prepare-azure-resource-manager-templates.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-lighthouse/4b-exercise-deploy-azure-resource-manager-templates.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-lighthouse/4-using-templates.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-lighthouse/5-video-publish-managed-service.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-lighthouse/6a-exercise-managing-a-customer.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-lighthouse/6-cross-tenant-management.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-lighthouse/7-manage-customer-resources.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-lighthouse/8-exercise-manage-customer-resources.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-lighthouse/9-knowledge-check.yml",
+      "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-lighthouse/10-summary.yml",
       "redirect_url": "/training/modules/intro-to-azure-lighthouse/",
       "redirect_document_id": false
     },
