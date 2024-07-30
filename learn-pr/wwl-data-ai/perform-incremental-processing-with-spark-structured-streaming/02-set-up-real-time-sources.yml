@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-incremental-processing-with-spark-structured-streaming.set-up-real-time-sources
-title: Set up real-time data sources for Incremental Processing
+title: Set up real-time data sources for incremental processing
 metadata:
-  title: set-up-real-time-sources
+  title: Set up real-time sources
   description: "Establish proper sources for Spark structured streaming"
   ms.date: 7/25/2024
   author: wwlpublish

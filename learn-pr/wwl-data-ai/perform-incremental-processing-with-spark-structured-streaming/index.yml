@@ -8,7 +8,7 @@ metadata:
   ms.author: jamesh
   ms.topic: module-standard-task-based
   ms.service: azure
-title: Perform incremental processing with spark structured streaming.
+title: Perform incremental processing with spark structured streaming
 summary: You explore different features and tools to help you understand and work with incremental processing with spark structured streaming.
 abstract: |
   At the end of this module, you're able to:

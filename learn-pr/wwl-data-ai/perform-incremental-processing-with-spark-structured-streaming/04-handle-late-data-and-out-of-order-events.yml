@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-incremental-processing-with-spark-structured-streaming.handling-late-data-and-out-of-order-events
-title: Handling late data and out-of-order events in Incremental Processing
+title: Handle late data and out-of-order events in incremental processing
 metadata:
-  title: Handling-late-data-and-out-of-order-events
-  description: "Learn how to handle late arriving data with delta lake in Azure Databricks"
+  title: Handle late data and out-of-order events
+  description: "Learn how to handle late arriving data with Delta Lake in Azure Databricks"
   ms.date: 7/25/2024
   author: wwlpublish
   ms.author: jamesh
