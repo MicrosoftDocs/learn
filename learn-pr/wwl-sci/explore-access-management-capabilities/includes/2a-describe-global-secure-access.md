@@ -1,5 +1,5 @@
 
-The Microsoft Entra admin center now includes a new set of capabilities grouped under the heading Global Secure Access. Global Secure Access is the unifying term used for both Microsoft Entra Internet Access and Microsoft Entra Private Access. 
+Microsoft Entra now provides a new set of products under the heading of Microsoft Global Secure Access. Global Secure Access is the unifying term used for both Microsoft Entra Internet Access and Microsoft Entra Private Access. 
 
 Microsoft Entra Internet Access secures access to Software as a Service (SaaS) applications, including Microsoft Services, and public internet apps while protecting users, devices, and data against internet threats.
 
@@ -19,7 +19,7 @@ VPN solutions are often used as a primary method to control corporate network ac
 
 Microsoft Entra Private Access can be deployed to block lateral attack movement, reduce excessive access, and replace legacy VPNs. The service provides your users - whether in an office or working remotely - secured access to your private, corporate resources.
 
-Conceptually, the way Private Access works is that for a given set of private resources you want to secure, you set up a new enterprise application that serves as a container for those private resources. The new application has a network connector that serves as a broker between the Private Access service and the resource a user wants to access. Now clearly, enterprises will have different requirements for accessing different private resources, so Microsoft Entra Private Access provides two ways in which you can set up the private resources you want to have accessed through the service.
+Conceptually, the way Private Access works is that for a given set of private resources you want to secure, you set up a new enterprise application that serves as a container for those private resources. The new application has a network connector that serves as a broker between the Private Access service and the resource a user wants to access. Now clearly, enterprises have different requirements for accessing different private resources, so Microsoft Entra Private Access provides two ways in which you can set up the private resources you want to have accessed through the service.
 
 - Quick Access - As previously described, Private Access works by creating a new enterprise application that serves as a container for the private resources you want to secure. With Quick Access, you determine which private resources to add to the "container" or enterprise application; which, we'll call the Quick Access application. The private resources you add to the Quick Access Application are defined by the FQDN, IP address, IP or address range, and ports used to access the resource. This information is referred to as a Quick Access application segment. You can add many application segments to the Quick Access application. You can then link conditional access policies to the Quick Access application.
 
