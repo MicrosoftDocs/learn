@@ -14,7 +14,7 @@ In this unit, you learn how Azure SQL Edge:
 
 ## Capture continuous data streams in real time  
 
-Many organizations deal with large data volumes that they need to ingest and analyze in a timely manner, making it vital that any edge-based solution you select can capture continuous real-time streams of increasing amounts of data. It's also important that you can derive valuable insights about it. Azure SQL Edge supports a built-in streaming engine to help address these needs.
+Many organizations deal with large data volumes that they need to ingest and analyze in a timely manner. This makes it vital that any edge-based solution you select can capture continuous real-time streams of increasing amounts of data. It's also important that you can derive valuable insights about it. Azure SQL Edge supports a built-in streaming engine to help address these needs.
 
 ### Time-series and streaming data support
 
@@ -30,19 +30,19 @@ IoT sensors typically transmit time-sequenced measurements, or *time-series data
   > [!NOTE]
   > This engine is built using the same codebase as Azure Stream Analytics.
 
-- A time-series storage engine that allows storage of time-indexed data, that you can aggregate in the cloud for future analysis.
+- A time-series storage engine that allows storage of time-indexed data you can aggregate in the cloud for future analysis.
 
 The following graphic depicts:
 
 - The streaming data engine with native analytics.
 - An SQL database engine that contains built-in machine-learning capabilities.
 
-The graphic indicates that the local SQL database can aggregate the real-time streamed data that the streaming analytics engine ingests.
+The graphic indicates the local SQL database can aggregate the real-time streamed data that the streaming analytics engine ingests.
 
 > [!TIP]
 > You can process data by using standard procedures and functions, as necessary.
 
-:::image type="content" source="../media/streaming.png" alt-text="Depiction of the streaming engine and related Azure SQL Edge components.":::
+:::image type="content" source="../media/streaming.png" alt-text="Diagram of the streaming engine and related Azure SQL Edge components.":::
 
 ## Integrate data
 
@@ -68,10 +68,10 @@ As the following graphic depicts, Azure SQL Edge offers compatibility with other
 
 Edge scenarios must often run on different platforms. Azure SQL Edge provides you with the following options:
 
-- **Architecture.** Device architecture supports architectures based on ARM64 and x64.
-- **Container OS.** Choose either Windows or Linux as your container's host.
-- **Container type.** Choose either Kubernetes or Linux Docker containers to orchestrate your device infrastructure for better efficiency and automation.
-- **Mode.** Online or offline modes support various edge environments.
+- **Architecture:** Device architecture supports architectures based on ARM64 and x64.
+- **Container OS:** Choose either Windows or Linux as your container's host.
+- **Container type:** Choose either Kubernetes or Linux Docker containers to orchestrate your device infrastructure for better efficiency and automation.
+- **Mode:** Online or offline modes support various edge environments.
 
 ## Protect data at the edge
 
