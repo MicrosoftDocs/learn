@@ -1,5 +1,3 @@
-When you
-
 Evaluating your model's performance at different phases is crucial to ensure its effectiveness and reliability. Here are several approaches to consider.
 
 ## Model benchmarks

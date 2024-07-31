@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.evaluate-models-azure-ai-studio.manual-evaluations
-title: Assess the performance of your custom copilot
+title: Manually evaluate the performance of a model
 metadata:
-  title: Assess the performance of your custom copilot
-  description: "Learn how assess the performance of your custom copilot in the Azure AI Studio."
+  title: Manually evaluate the performance of a model
+  description: "Learn how manually evaluate the performance of a model in the Azure AI Studio."
   ms.date: 07/24/2024
   author: madiepev
   ms.author: madiepev
