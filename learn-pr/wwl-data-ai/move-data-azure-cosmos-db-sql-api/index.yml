@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
-  ms.service: cosmos-db
+  ms.service: azure-cosmos-db
   ms.subservice: nosql
 title: Move data into and out of Azure Cosmos DB for NoSQL
 summary: Migrate data into and out of Azure Cosmos DB for NoSQL using Azure services and open-source solutions.

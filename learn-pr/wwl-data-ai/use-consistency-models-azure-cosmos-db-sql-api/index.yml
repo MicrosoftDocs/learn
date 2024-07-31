@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
-  ms.service: cosmos-db
+  ms.service: azure-cosmos-db
   ms.subservice: nosql
 title: Use consistency models in Azure Cosmos DB for NoSQL
 summary: Configure consistency on a sliding scale for Azure Cosmos DB for NoSQL.

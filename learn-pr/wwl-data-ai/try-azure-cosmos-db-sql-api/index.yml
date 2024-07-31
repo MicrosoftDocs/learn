@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
-  ms.service: cosmos-db
+  ms.service: azure-cosmos-db
   ms.subservice: nosql
 title: Try Azure Cosmos DB for NoSQL
 summary: Learn how to use the Azure Cosmos DB for NoSQL to create an account, and then use the account to create Cosmos DB resources.
