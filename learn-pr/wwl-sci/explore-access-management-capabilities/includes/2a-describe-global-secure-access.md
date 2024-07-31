@@ -5,29 +5,13 @@ Microsoft Entra Internet Access secures access to Software as a Service (SaaS) a
 
 Microsoft Entra Private Access provides your users, whether in an office or working remotely, secure access to your private, corporate resources.
 
-Microsoft Entra Internet Access and Microsoft Entra Private Access, coupled with Microsoft Defender for Cloud Apps, our SaaS-security focused Cloud Access Security Broker (CASB), come together as a solution that converges Zero Trust network, identity, and endpoint access controls so that you can secure access to any app or resource, from any location, device, or identity. This type of solution represents a new network security category called Security Service Edge (SSE).
+Microsoft Entra Internet Access and Microsoft Entra Private Access come together as a solution that converges Zero Trust network, identity, and endpoint access controls so that you can secure access to any app or resource, from any location, device, or identity. This type of solution represents a new network security category called Security Service Edge (SSE).
 
 Microsoft's Security Service Edge solution, Global Secure Access, provides advanced protections for your internet-based resources and resources running in your private cloud or on-premises infrastructure.
 
-The solution employs a Global Secure Access client that gives organizations control over network traffic at the end-user computing device. Organizations gain the ability to route specific traffic profiles through Microsoft Entra Internet Access and Microsoft Entra Private Access, without the need for a VPN. Routing traffic in this method allows for more controls enabled by deep integration with conditional access policies and risks assessed in real time, across identity, device, location, and applications to protect any app or resource.
+The solution employs a Global Secure Access client that gives organizations control over network traffic at the end-user computing device. Organizations gain the ability to route specific traffic profiles through Microsoft Entra Internet Access and Microsoft Entra Private Access. Routing traffic in this method allows for more controls enabled by deep integration with conditional access policies and risks assessed in real time, across identity, device, location, and applications to protect any app or resource.
 
 :::image type="content" source="../media/global-secure-access-v3.png" alt-text="Image showing components that make up Global Secure Access.":::
-
-### Microsoft Entra Internet Access
-
-A Secure Web Gateway (SWG) is a cybersecurity solution that protects users from web-based threats by filtering internet traffic and enforcing security policies.
-
-Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications, including Microsoft Services, and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs.
-
-Some of the key features include:
-
-- Protection against user identity or token theft by using Conditional Access policies to perform a compliant network check for access to resources.  
-    - Compliant network enforcement happens at authentication plane and at the data plane. Authentication plane enforcement is performed by Microsoft Entra ID at the time of user authentication. Data plane enforcement works with services that support Continuous Access Evaluation (CAE)
-    - Continuous Access Evaluation (CAE) is a security feature where apps and Microsoft Entra constantly communicate to ensure user access is up-to-date and secure. If something changes, like a user’s location or a security concern arises, the system can quickly adjust or block access in near real-time, ensuring policies are always enforced.
-- Tenant restrictions to prevent data exfiltration to other tenants or personal accounts including anonymous access.
-- Internet Access traffic forwarding profile policies to control which internet sites can be accessed to ensure remote workers connect to the internet in a controlled and secure way.
-- Web content filtering to regulate access to websites based on their content categories and domain names.
-- and many more...
 
 ### Microsoft Entra Private Access
 
@@ -45,6 +29,21 @@ Conceptually, the way Private Access works is that for a given set of private re
 
     :::image type="content" source="../media/per-app-access-diagram.png" lightbox="../media/per-app-access-diagram.png" alt-text="Diagram of Microsoft Entra Private Access with showing the components of Global Secure Access app, also referred to as Per-app Access.":::
 
+### Microsoft Entra Internet Access
+
+A Secure Web Gateway (SWG) is a cybersecurity solution that protects users from web-based threats by filtering internet traffic and enforcing security policies.
+
+Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications, including Microsoft Services, and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs.
+
+Some of the key features include:
+
+- Protection against user identity or token theft by using Conditional Access policies to perform a compliant network check for access to resources.  
+    - Compliant network enforcement happens at authentication plane and at the data plane. Authentication plane enforcement is performed by Microsoft Entra ID at the time of user authentication. Data plane enforcement works with services that support Continuous Access Evaluation (CAE)
+    - Continuous Access Evaluation (CAE) is a security feature where apps and Microsoft Entra constantly communicate to ensure user access is up-to-date and secure. If something changes, like a user’s location or a security concern arises, the system can quickly adjust or block access in near real-time, ensuring policies are always enforced.
+- Tenant restrictions to prevent data exfiltration to other tenants or personal accounts including anonymous access.
+- Internet Access traffic forwarding profile policies to control which internet sites can be accessed to ensure remote workers connect to the internet in a controlled and secure way.
+- Web content filtering to regulate access to websites based on their content categories and domain names.
+- and many more...
 
 ### Global Secure Access Dashboard
 
