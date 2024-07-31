@@ -21,7 +21,7 @@ Care must be taken to ensure that the databases are precisely synchronized, othe
 
 The technique is simple and cheap with standard commodity Intel hardware but is also possible for customers running proprietary UNIX hardware. Substantial hardware resources are free towards the middle of an OS/DB migration project when Sandbox, Development, QAS, Training, and DR systems have already moved to Azure. There's no strict requirement that the “clone” servers have identical hardware resources. With adequate CPU, RAM, disk, and network performance, the addition of each clone increases performance.
 
-If extra export performance is still required open an SAP incident in BC-DB-MSS for extra steps to boost, export performance (advanced consultants only).
+If extra export performance is still required open an SAP incident in BC-DB-MSS for extra steps to boost export performance (advanced consultants only).
 
 The steps to implement a multiple parallel export are as follows:
 
@@ -29,7 +29,7 @@ The steps to implement a multiple parallel export are as follows:
 2. Restore backup onto three servers.
 3. Establish log shipping from the Primary source DB server to three target “clone” servers.
 4. Monitor log shipping for several days and ensure log shipping is working reliably.
-5. At the start of downtime shutdown all SAP application servers except the PAS. Ensure all batch processing is stopped and all RFC traffic is stopped.
+5. At the start of downtime, shut down all SAP application servers except the PAS. Ensure all batch processing is stopped and all RFC traffic is stopped.
 6. In transaction SM02, enter text “Checkpoint PAS Running”. This updates table TEMSG.
 7. Stop the Primary Application Server. SAP is now shut down. No more write activity can occur in the source DB. Ensure that no non-SAP application is connected to the source DB (there never should be, but check for any non-SAP sessions at the DB level).
 8. Run this query on the Primary DB server: `SELECT EMTEXT FROM [schema].TEMSG;`
