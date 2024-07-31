@@ -1,10 +1,10 @@
 Here, you decide whether Azure SQL Edge is a suitable choice for your organization. You need to implement a database at the network edge to support your IoT apps. Your development team wants to focus on creating and deploying IoT apps to your edge network. They don't want to take time learning new skills or working with unfamiliar tools. Meanwhile, your security team wants to ensure protection for any apps exposed at the edge, using powerful security and compliance features. In this unit, you evaluate whether Azure SQL Edge addresses your organization's needs, by using the following criteria:
 
-- Connectivity and broadband limitations.
-- Latency.
-- Data security, privacy, and ownership.
-- Synchronization with, and connectivity to, back-end systems.
-- Familiarity.
+- Connectivity and broadband limitations
+- Latency
+- Data security, privacy, and ownership
+- Synchronization with, and connectivity to, back-end systems
+- Familiarity
 
 ## Decision criteria
 

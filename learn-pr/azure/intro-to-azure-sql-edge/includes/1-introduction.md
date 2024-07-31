@@ -12,9 +12,9 @@ In addition, you'd like to use the data to help with product development. It mus
 
 Last, an important requirement is the ability to develop the app using the SQL Server skills your development team already possesses. You want to examine how you can achieve your company's goals for this app by implementing Azure SQL Edge.
 
-## What will we be doing?
+## What will you learn?
 
-Learning how to evaluate whether Azure SQL Edge can interact correctly with your edge-based apps and IoT devices. Also learning how Azure SQL Edge's familiar engine and toolset enable you to optimize data ingestion and analysis. In this module, you learn that Azure SQL Edge is:
+You'll learn how to evaluate whether Azure SQL Edge can interact correctly with your edge-based apps and IoT devices. You'll also learn how Azure SQL Edge's familiar engine and toolset enable you to optimize data ingestion and analysis. In this module, you'll learn that Azure SQL Edge is:
 
 - Powerful enough to support edge compute.
 - Secure enough to help meet the privacy needs of IoT applications.

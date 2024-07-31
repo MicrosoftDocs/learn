@@ -14,9 +14,9 @@ In this unit, you learn how Azure SQL Edge:
 
 ## Capture continuous data streams in real time  
 
-Many organizations deal with large data volumes they need to ingest and analyze in a timely manner making it vital that any edge-based solution you select can capture continuous real-time streams of increasing amounts of data. It's also important that you can derive valuable insights about it. Azure SQL Edge supports a built-in streaming engine to help address these needs.
+Many organizations deal with large data volumes they need to ingest and analyze in a timely manner, making it vital that any edge-based solution you select can capture continuous real-time streams of increasing amounts of data. It's also important that you can derive valuable insights about it. Azure SQL Edge supports a built-in streaming engine to help address these needs.
 
-### Time-series and streaming data support
+### Time-series and data stream support
 
 IoT sensors typically transmit time-sequenced measurements, or *time-series data*, as a data stream. There are two aspects of the time-series capabilities offered by Azure SQL Edge:
 
@@ -75,7 +75,7 @@ Edge scenarios must often run on different platforms. Azure SQL Edge provides yo
 
 ## Protect data at the edge
 
-Security is a primary concern when deploying IoT apps to the edge. Any device that's accessible over the internet is at risk of being a malicious hacker's target. So, any data stored on that device can be comprised.
+Security is a primary concern when deploying IoT apps to the edge. Any device that's accessible over the internet is at risk of being a malicious hacker's target, so any data stored on that device can be comprised.
 
 SQL Server is the most secure database platform available. Because Azure SQL Edge is based on SQL Server technology, it has the same security features of SQL Server Enterprise. The following table details these built-in security features.
 

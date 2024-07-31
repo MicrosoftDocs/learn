@@ -7,7 +7,7 @@ Let's start with an overview of IoT development challenges and the Azure SQL Edg
 
 ## What are the challenges of IoT development?
 
-IoT systems can be found in many organizations, including in:
+IoT systems can be found in many organizations, including:
 
 - Retail
 - Finance
@@ -35,9 +35,9 @@ The following table identifies common challenges developers experience when work
 | Challenge | Description |
 | --- | --- |
 | IoT apps require a powerful database engine | Many IoT apps require near real-time analytics. Other apps require the ability to gather data when disconnected from back-end systems. In these and other use cases, sending all data to the cloud can be costly and bandwidth-intensive. For these reasons, IoT devices need access to a local database engine that must be lightweight and powerful. |
-| IoT apps require seamless connectivity to the back-end ecosystem | IoT apps can be constrained if they can't easily connect to, and communicate with, back-end systems. Either in an organization's datacenter, their hosted cloud services, or both. It's vital that any system you implement at the edge on IoT devices can communicate with industry-standard database systems. |
+| IoT apps require seamless connectivity to the back-end ecosystem | IoT apps can be constrained if they can't easily connect to and communicate with back-end systems. Either in an organization's datacenter, their hosted cloud services, or both. It's vital that any system you implement at the edge on IoT devices can communicate with industry-standard database systems. |
 | IoT apps can run in insecure environments | Many IoT apps might run in cars, hospitals, and factories, where security and privacy are primary requirements. Therefore, you must select a secure platform to work with data in these environments.  Users and developers must also trust it. |
-| Building solutions on unfamiliar platforms | Many existing IoT platforms rely on solution-specific APIs and databases that developers don't know well. These solutions might also require specific language skills that developers don't yet have. It's important that any apps you deploy to interact with edge-based IoT devices are built using standard components and tools developers are already familiar. |
+| Building solutions on unfamiliar platforms | Many existing IoT platforms rely on solution-specific APIs and databases that developers don't know well. These solutions might also require specific language skills that developers don't yet have. It's important that any apps you deploy to interact with edge-based IoT devices are built using standard components and tools with which developers are already familiar. |
 
 ## Azure SQL Edge definition
 
@@ -65,9 +65,9 @@ Azure SQL Edge helps address IoT development challenges by:
    > [!TIP]
    > Azure SQL Edge supports a large subset of the T-SQL surface area with which developers are familiar.
 
-- Enables AI and analytics at the edge.
-- Includes native support for ingesting time-series data.
-- Delivers excellent security and provides support for regulatory compliance.
+- Enabling AI and analytics at the edge.
+- Including native support for ingesting time-series data.
+- Delivering excellent security and providing support for regulatory compliance.
 
 > [!NOTE]
 > Beyond these compatibilities, you also can use familiar BI tools such as Microsoft Power BI and Tableau software. Your developers also can use tools such as Azure Data Studio, SQL Server Management Studio, and Visual Studio.
