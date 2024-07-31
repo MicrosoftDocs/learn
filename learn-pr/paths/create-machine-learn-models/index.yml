@@ -7,6 +7,7 @@ metadata:
   author: madiepev
   ms.author: madiepev
   ms.topic: learning-path
+  ms.collection: wwl-ai-copilot
 title: Create machine learning models
 prerequisites: |
   This learning path assumes knowledge of basic mathematical concepts. Some experience with Python is also beneficial.
