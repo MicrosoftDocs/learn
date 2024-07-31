@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-administer-linux-virtual-machines-azure
 metadata:
   title: Deploy and administer Linux virtual machines on Azure
   description: Deploy and administer Linux virtual machines on Azure
-  ms.date: 07/16/2024
+  ms.date: 07/31/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: learning-path
@@ -16,7 +16,6 @@ prerequisites: |
 summary: |
   In this learning path, you prepare for the Applied Skill,&nbsp;Deploy and administer Linux virtual machines on Microsoft Azure.&nbsp;
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
 levels:
 - intermediate
 roles:
