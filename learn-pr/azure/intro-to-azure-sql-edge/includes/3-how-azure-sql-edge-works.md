@@ -1,6 +1,6 @@
 In this unit, you learn how Azure SQL Edge works and whether it's suitable for your organization. Let's start by exploring how Azure SQL Edge helps address challenges that developers face when developing IoT apps.
 
-Azure SQL Edge is a containerized Linux application that runs on a process that's based on ARM64 or x64 architecture. The Azure SQL Edge startup memory footprint is less than 500 megabytes (MB). Within this small footprint, you can design and build apps that run on many IoT devices.
+Azure SQL Edge is a containerized Linux application that runs on a process that's based on Arm64 or x64 architecture. The Azure SQL Edge startup memory footprint is less than 500 megabytes (MB). Within this small footprint, you can design and build apps that run on many IoT devices.
 
 > [!TIP]
 > These devices can include battery-powered or solar-powered devices that you deploy in remote areas that have only occasional connectivity.
@@ -68,7 +68,7 @@ As the following graphic depicts, Azure SQL Edge offers compatibility with other
 
 Edge scenarios must often run on different platforms. Azure SQL Edge provides you with the following options:
 
-- **Architecture:** Device architecture supports architectures based on ARM64 and x64.
+- **Architecture:** Device architecture supports architectures based on Arm64 and x64.
 - **Container OS:** Choose either Windows or Linux as your container's host.
 - **Container type:** Orchestrate your device infrastructure for better efficiency and automation by choosing either Kubernetes or Linux Docker containers.
 - **Mode:** Online or offline modes support various edge environments.
