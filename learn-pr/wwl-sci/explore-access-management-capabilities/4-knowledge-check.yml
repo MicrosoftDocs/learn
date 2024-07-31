@@ -20,9 +20,9 @@ quiz:
     - content: "Create policies that enforce organizational rules."
       isCorrect: true
       explanation: "Correct. Conditional Access is implemented using policies that enforce organizational rules."
-    - content: "Check that all users have multi-factor authentication enabled."
+    - content: "Check that all users have multifactor authentication enabled."
       isCorrect: false
-      explanation: "Incorrect. Conditional Access policies may require a user to sign in with multi-factor authentication, but it isn't part of their implementation."
+      explanation: "Incorrect. Conditional Access policies may require a user to sign in with multifactor authentication, but it isn't part of their implementation."
     - content: "Amend your apps to allow Conditional Access."
       isCorrect: false
       explanation: "Incorrect. Conditional Access doesn't require apps to be changed in any way."
@@ -55,7 +55,7 @@ quiz:
     choices:
     - content: "Quick Access"
       isCorrect: false
-      explanation: "That's incorrect. Quick Access does not provide the granularity needed for setting different access policies based on how resources are accessed or for a specific time frame."
+      explanation: "That's incorrect. Quick Access doesn't provide the granularity needed for setting different access policies based on how resources are accessed or for a specific time frame."
     - content: "VPN"
       isCorrect: false
       explanation: "That's incorrect. VPN is a method of network access, not a feature of Microsoft Entra Private Access that allows for granular control of access policies."
