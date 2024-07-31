@@ -12,11 +12,11 @@ summary: You want to be aware of potential problems and be ready to respond so t
 abstract:  | 
   By the end of this module, you'll be able to:
   - Identify user flows and system flows of an application, as the foundation for defining load tests and chaos experiments.
-  - Establish baselines for load tests with expected thresholds for system components, individual user flows, and the overall solution.
+  - Establish baselines for load tests by applying expected thresholds for system components, individual user flows, and the overall solution.
   -	Identify potential failure scenarios for system components as a guide for designing chaos experiments.
   - Design an automated process for continuous validation in your CI/CD pipeline.
 prerequisites: |
-  - You've completed the previous module about health modeling. 
+  - You completed the previous module about health modeling. 
   - You have a good understanding of the design principles and design areas of a mission-critical workload in the Azure Well-Architected Framework.
   -	You have an Azure subscription. 
   -	You have an Azure DevOps organization and project.
