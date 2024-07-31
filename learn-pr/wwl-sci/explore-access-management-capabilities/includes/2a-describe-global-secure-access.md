@@ -3,7 +3,7 @@ The Microsoft Entra admin center now includes a new set of capabilities grouped 
 
 Microsoft Entra Internet Access secures access to Software as a Service (SaaS) applications, including Microsoft Services, and public internet apps while protecting users, devices, and data against internet threats.
 
-Microsoft Entra Private Access provides your users - whether in an office or working remotely - secured access to your private, corporate resources.
+Microsoft Entra Private Access provides your users, whether in an office or working remotely, secure access to your private, corporate resources.
 
 Microsoft Entra Internet Access and Microsoft Entra Private Access, coupled with Microsoft Defender for Cloud Apps, our SaaS-security focused Cloud Access Security Broker (CASB), come together as a solution that converges Zero Trust network, identity, and endpoint access controls so that you can secure access to any app or resource, from any location, device, or identity. This type of solution represents a new network security category called Security Service Edge (SSE).
 
@@ -41,7 +41,7 @@ Conceptually, the way Private Access works is that for a given set of private re
 
     :::image type="content" source="../media/quick-access-diagram.png" lightbox="../media/quick-access-diagram.png" alt-text="Diagram of Microsoft Entra Private Access with showing the components of Quick Access.":::
 
-- Global Secure Access app - Global Secure Access app, also referred to as Per-app Access, provides a more granular approach. With Global Secure Access app, you can create multiple "containers" or enterprise application. For each of these new enterprise apps, you define the properties of the private resource, and you assign users and groups and assign specific conditional access policies. For example, you may have a group of private resource you need to secure, but for which you want to set different access policies  based on how they're accessing the resource or for a specific time frame.
+- Global Secure Access app - Global Secure Access app, also referred to as Per-app Access, provides a more granular approach. With Global Secure Access app, you can create multiple "containers" or enterprise application. For each of these new enterprise apps, you define the properties of the private resource, and you assign users and groups and assign specific conditional access policies. For example, you may have a group of private resources you need to secure, but for which you want to set different access policies  based on how they're accessing the resource or for a specific time frame.
 
     :::image type="content" source="../media/per-app-access-diagram.png" lightbox="../media/per-app-access-diagram.png" alt-text="Diagram of Microsoft Entra Private Access with showing the components of Global Secure Access app, also referred to as Per-app Access.":::
 
