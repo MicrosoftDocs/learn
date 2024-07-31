@@ -3,15 +3,15 @@ uid: learn.monitor-azure-private-5g-core-service
 metadata:
   title: Monitor the Azure Private 5G Core service
   description: Describes the monitoring capabilities of Azure Private 5G Core, the tools for monitoring the service, and the tool for diagnosing network issues.
-  ms.date: 10/27/2022
-  author: lnyswonger
-  ms.author: lnyswonger
+  ms.date: 07/31/2024
+  author: joemarshall
+  ms.author: joemarshall
   ms.topic: module
   ms.service: private-5g-core 
 title: Monitor the Azure Private 5G Core service
-summary: Learn about the network monitoring capabilities of Azure Private 5G Core, the use of relevant monitoring tools, and the techniques to troubleshoot and resolve network issues.
+summary: Learn about the network monitoring capabilities of Azure Private 5G Core. Particularly, the use of relevant monitoring tools and the techniques for troubleshooting and resolving network issues.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Describe the monitoring capabilities of Azure Private 5G Core.
     - Describe the cloud and local monitoring tools that Azure Private 5G Core provides.
     - Describe the tool that you can use to diagnose network issues.

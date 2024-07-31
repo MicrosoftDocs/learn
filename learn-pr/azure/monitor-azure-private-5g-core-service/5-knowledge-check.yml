@@ -3,10 +3,10 @@ uid: learn.monitor-azure-private-5g-core-service.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Checks that you've grasped what is taught about the monitoring capabilities and tools of Azure Private 5G Core.
-  ms.date: 10/27/2022
-  author: lnyswonger
-  ms.author: lnyswonger
+  description: Checks that you grasped what is taught about the monitoring capabilities and tools of Azure Private 5G Core.
+  ms.date: 07/31/2024
+  author: joemarshall
+  ms.author: joemarshall
   ms.topic: unit
 durationInMinutes: 4
 content: |
@@ -42,17 +42,17 @@ quiz:
     - content: "Words in error messages."
       isCorrect: false
       explanation: "Try again. Words in error messages can't be used to search for information about signaling flows and errors. However, the distributed tracing tool supports searching by error types."
-    - content: "The time at which an event occurred."
+    - content: "The time that an event occurred."
       isCorrect: false
       explanation: "Try again. The time can't be used as a search keyword in the distributed tracing tool. However, the tool allows search results to be restricted with a date/time range."
   - content: "Which of the following item is a health and performance metric that you need to monitor for a private mobile network?"
     choices:
-    - content: "The names of the RANs to which Azure Private 5G Core connects."
+    - content: "The names of the Radio Access Networks (RANs) to which Azure Private 5G Core connects."
       isCorrect: false
       explanation: "Try again. RAN names aren't health and performance metrics. They don't often change."
     - content: "The number of SIM policies defined for a site."
       isCorrect: false
-      explanation: "Try again. The number of SIM policies isn't a health and performance metric. It depends on the business needs of the enterprise that uses the UEs."
+      explanation: "Try again. The number of SIM policies isn't a health and performance metric. It depends on the business needs of the enterprise that uses the user equipment (UE)."
     - content: "The numbers of packets sent/received on the N3/N6 interfaces"
       isCorrect: true
-      explanation: "Azure Private 5G Core uses the N3/N6 interfaces to communicate with the data network. For issues related to the data network, checking the numbers of packets sent/received on the N3/N6 interfaces may help."
+      explanation: "Azure Private 5G Core uses the N3/N6 interfaces to communicate with the data network. For issues related to the data network, checking the numbers of packets sent/received on the N3/N6 interfaces might help."

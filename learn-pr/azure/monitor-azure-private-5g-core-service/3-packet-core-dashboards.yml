@@ -4,9 +4,9 @@ title: Packet core dashboards
 metadata:
   title: Packet core dashboards
   description: Azure Private 5G Core provides packet core dashboards for each site in your private mobile network. You can use the boards to monitor your network services.
-  ms.date: 10/27/2022
-  author: lnyswonger
-  ms.author: lnyswonger
+  ms.date: 07/31/2024
+  author: joemarshall
+  ms.author: joemarshall
   ms.topic: unit
 durationInMinutes: 6
 content: |

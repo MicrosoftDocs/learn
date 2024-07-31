@@ -1,4 +1,4 @@
-If you need to monitor a specific site in a private mobile network locally, you can use the packet core dashboards that Azure Private 5G Core provides. The packet core dashboards are powered by [*Grafana*](https://grafana.com/grafana/), an open-source, metric analytics and visualization suite.
+If you need to monitor a specific site in a private mobile network locally, you can use the packet core dashboards that Azure Private 5G Core provides. The packet core dashboards are powered by [*Grafana*](https://grafana.com/grafana/), an open-source, metric analytics, and visualization suite.
 
 The packet core dashboards are available from the Azure Stack Edge (ASE) server on which the packet core instance is deployed. As they run locally on the ASE server, the impact of the network bandwidth and the cloud connectivity is minimized. With the packet core dashboards, you can monitor each site in your private mobile network continuously and in real time.
 
@@ -20,8 +20,8 @@ By default, Azure Private 5G Core provides the following packet core dashboards:
 
 - The **Overview** dashboard: Displays important key performance indicators (KPIs), including the number of connected devices, throughput, and any alerts firing in the system.
 - The **Alert** dashboard: Provides information on the severity and effect of each firing alert.
-- The **Device and Session Statistics** dashboard: Provides information about the device and session procedures being processed by the packet core instance.
-- The **Uplink and Downlink Statistics** dashboard: Provides detailed statistics on the user plane traffic being handled by the packet core instance.
+- The **Device and Session Statistics** dashboard: Provides information about the device and session procedures that the packet core instance processes.
+- The **Uplink and Downlink Statistics** dashboard: Provides detailed statistics on the user plane traffic that the packet core instance handles.
 - The **Debug** dashboards: Show detailed breakdowns of the request and response statistics for the packet core instance's interfaces. The **Debug** dashboards include the **System Statistics** dashboard, the **HTTP stats** dashboard, and the **4G Interfaces** dashboard.
 
 For more information about the packet core dashboards, see [Dashboards](/azure/private-5g-core/packet-core-dashboards). If you want to add new dashboards or customize existing dashboards based on your business needs, refer to the [Grafana documentation](https://grafana.com/docs/grafana/).
@@ -44,13 +44,13 @@ Azure Private 5G Core provides two authentication methods for the packet core da
 
 Whenever possible, use the Microsoft Entra method, as it's more secure. Only use the username and password method when you don't have a stable connection to Azure. You can choose your preferred authentication method when you deploy or modify a site. For detailed instructions on configuring and using these authentication methods, see [Packet core dashboards](/azure/private-5g-core/packet-core-dashboards).
 
-Access to the packet core dashboards is secured by HTTPS. You can use a self-signed certificate or provide your own to authenticate access to the dashboards. The article [Modify the local access configuration in a site](/azure/private-5g-core/modify-local-access-configuration) provides detailed instructions on checking or modifying the access certificate.
+Access to the packet core dashboards is secured with HTTPS. You can use a self-signed certificate or provide your own to authenticate access to the dashboards. The article [Modify the local access configuration in a site](/azure/private-5g-core/modify-local-access-configuration) provides detailed instructions on checking or modifying the access certificate.
 
 ## Adjust the time range
 
-To check specific data, you may need to adjust the time range of the data displayed on a dashboard. For example, to retrieve diagnostics for historical problems, you may need to change the time range to a period in the past.
+To check specific data, you might need to adjust the time range of the data displayed on a dashboard. For example, to retrieve diagnostics for historical problems, you can change the time range to a period in the past.
 
-You can use the **Time picker**, which is in the top right-hand corner of each packet core dashboard, to adjust the time range for which the dashboard will display statistics.
+You can use the **Time picker**, which is in the top right-hand corner of each packet core dashboard, to adjust the time range for which the dashboard displays statistics.
 
 The following screenshot shows the time picker:
 
