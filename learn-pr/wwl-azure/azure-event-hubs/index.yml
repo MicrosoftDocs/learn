@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: event-hubs
+  ms.service: azure-event-hubs
   ai-usage: human-only
 title: Explore Azure Event Hubs
 summary: Learn how Azure Event Hubs captures events and how to scale your processing application.
