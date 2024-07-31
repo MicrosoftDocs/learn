@@ -2,12 +2,14 @@
 uid: learn.azure-introduction-to-azure-search
 metadata:
   title: Fundamentals of Knowledge Mining and Azure AI Search
-  description: "Explore Azure AI Search to discover how to create an index, import data, and query the index for better search results."
-  ms.date: 07/17/2024
+  description: Explore Azure AI Search to discover how to create an index, import data, and query the index for better search results.
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: module
+  ms.date: 07/25/2024
   ms.service: azure
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
   ai-usage: human-only
 title: Fundamentals of Knowledge Mining and Azure AI Search
 summary: Use Azure AI Search to make your data searchable.
@@ -21,7 +23,7 @@ abstract: |
   -   Import data to the index
 
   -   Query the Azure AI Search index
-prerequisites: ''
+prerequisites: None
 iconUrl: /training/achievements/azure-introduction-to-azure-search.svg
 levels:
 - beginner

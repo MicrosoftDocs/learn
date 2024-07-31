@@ -3,11 +3,13 @@ uid: learn.wwl.run-pipelines-azure-machine-learning.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 06/06/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 06/06/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
   questions:

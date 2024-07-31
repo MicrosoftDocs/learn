@@ -2,16 +2,18 @@
 uid: learn-wwl.explore-data-for-data-science-microsoft-fabric
 metadata:
   title: Explore data for data science with notebooks in Microsoft Fabric
-  description: "Discover how to perform data exploration for data science using Microsoft Fabric notebooks."
-  ms.date: 09/19/2023
+  description: Discover how to perform data exploration for data science using Microsoft Fabric notebooks.
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: module-standard-task-based
+  ms.date: 09/19/2023
   ms.service: fabric
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai
-    - build-2023-fabric 
+    - build-2023-fabric
 title: Explore data for data science with notebooks in Microsoft Fabric
 summary: Microsoft Fabric notebooks serve as a comprehensive tool for data exploration, enabling users to uncover hidden patterns and relationships in their datasets.
 abstract: |

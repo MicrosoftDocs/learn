@@ -3,11 +3,13 @@ uid: learn.wwl.create-speech-enabled-apps.create-speech-resource
 title: Provision an Azure resource for speech
 metadata:
   title: Provision an Azure resource for speech
-  description: "Provision an Azure resource for speech"
-  ms.date: 08/31/2023
+  description: Provision an Azure resource for speech
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 08/31/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

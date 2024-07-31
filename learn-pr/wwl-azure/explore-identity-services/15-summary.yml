@@ -3,11 +3,13 @@ uid: learn.wwl.explore-identity-services.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 03/05/2024
+  description: "Summary of the module."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/15-summary.md)]

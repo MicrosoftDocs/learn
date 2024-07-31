@@ -2,12 +2,14 @@
 uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service
 metadata:
   title: Fundamentals of question answering with the Language Service
-  description: "Use Azure AI Language and Azure AI Bot Service together to create a bot that answers custom questions."
-  ms.date: 11/01/2023
+  description: Use Azure AI Language and Azure AI Bot Service together to create a bot that answers custom questions.
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: module
+  ms.date: 11/01/2023
   ms.service: azure-ai-language
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Fundamentals of question answering with the Language Service
 summary: Create a custom question answering knowledge base with Azure AI Language and create a bot with Azure AI Bot Service that answers user questions.
 abstract: |

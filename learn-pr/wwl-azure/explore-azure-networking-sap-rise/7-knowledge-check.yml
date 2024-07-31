@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-networking-sap-rise.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check what you learn in this module."
+  ms.date: 07/30/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How is communication secured between peered virtual networks in SAP RISE/ECS deployments, permitting communication on SAP and database ports through the peering?"
+    choices:
+    - content: "Through network security groups (NSG)."
+      isCorrect: true
+      explanation: "Correct. Communication between the peered virtual networks is secured through network security groups (NSG)."
+    - content: "Through a public address space."
+      isCorrect: false
+      explanation: "Incorrect. Peering traffic remains in a private address space, not a public one."
+    - content: "Through the internet."
+      isCorrect: false
+      explanation: "Incorrect. Communication between peered networks doesn't traverse the internet."
+  - content: "Which of the following is a crucial requirement to address resiliency in a VPN vnet-to-vnet connection?"
+    choices:
+    - content: "Multiple VPN gateways should be used."
+      isCorrect: false
+      explanation: "Incorrect. Multiple VPN gateways aren't necessary for resiliency."
+    - content: "Use of a single subnet."
+      isCorrect: false
+      explanation: "Incorrect. Using a single subnet doesn't address resiliency."
+    - content: "Zone-redundant virtual network gateways should be used."
+      isCorrect: true
+      explanation: "Correct. To address resiliency requirements, ensure zone-redundant virtual network gateways are used for VPN vnet-to-vnet connection."
+  - content: "Which of the following is the main advantage of using a VPN VNet-to-VNet connection over virtual network peering for a customer's Azure to SAP RISE connection?"
+    choices:
+    - content: "Provides higher network throughput."
+      isCorrect: false
+      explanation: "Incorrect. Network throughput is limited by the chosen gateway SKU on both sides."
+    - content: "Simplifies complex virtual peering between customer and SAP RISE/ECS virtual networks."
+      isCorrect: true
+      explanation: "Correct. A VPN VNet-to-VNet connection can potentially simplify a complex virtual peering."
+    - content: "Eliminates the need for one of the Azure Network Security Groups involved in the connection."
+      isCorrect: false
+      explanation: "Incorrect. Network Security Groups are still required in both the customer and SAP virtual networks."
+  - content: "What is the default internet network communication setting for SAP RISE/ECS customers?"
+    choices:
+    - content: "Internet networking uses public IP ranges only."
+      isCorrect: false
+      explanation: "Incorrect. Default networking for SAP RISE/ECS customers uses private IP ranges only."
+    - content: "Network communication to/from the Internet is enabled."
+      isCorrect: false
+      explanation: "Incorrect. By default, network communication to/from the Internet isn't enabled for SAP RISE/ECS customers."
+    - content: "Network communication to/from the Internet isn't enabled."
+      isCorrect: true
+      explanation: "Correct. By default, network communication to/from the Internet isn't enabled for SAP RISE/ECS customers and default networking uses private IP ranges only."

@@ -3,11 +3,13 @@ uid: learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore
 title: Explore the best practices for Solution Learning Path 4
 metadata:
   title: Explore the best practices for Solution Learning Path 4
-  description: "Explore the best practices for Solution Learning Path 4"
-  ms.date: 03/18/2024
+  description: Explore the best practices for Solution Learning Path 4
   author: wwlpublish
   ms.author: tsheppard
+  ms.date: 03/18/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/7-explore-best-practices-for-solution-learning-path-4.md)]

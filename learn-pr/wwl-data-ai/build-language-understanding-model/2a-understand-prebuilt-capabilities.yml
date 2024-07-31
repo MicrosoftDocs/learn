@@ -3,11 +3,13 @@ uid: learn.wwl.build-language-understanding-model.understand-prebuilt-capabiliti
 title: Understand prebuilt capabilities of the Azure AI Language service
 metadata:
   title: Understand prebuilt capabilities of the Azure AI Language service
-  description: "Understand prebuilt capabilities of the Azure AI Language service"
-  ms.date: 11/07/2023
+  description: Understand prebuilt capabilities of the Azure AI Language service
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 11/07/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

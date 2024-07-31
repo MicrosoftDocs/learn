@@ -3,11 +3,13 @@ uid: learn.wwl.build-language-understanding-model.exercise
 title: Exercise - Build an Azure AI services conversational language understanding model
 metadata:
   title: Exercise - Build an Azure AI services conversational language understanding model
-  description: "Exercise - Build an Azure AI services conversational language understanding model"
-  ms.date: 11/07/2023
+  description: Exercise - Build an Azure AI services conversational language understanding model
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 11/07/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 35
 labId: 152404
 labModal: true

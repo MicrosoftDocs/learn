@@ -3,10 +3,10 @@ uid: learn.introduction-to-microsoft-datacenters.discover-how-microsoft-supports
 title: Discover how Microsoft supports cloud customers
 metadata:
   title: Discover how Microsoft supports cloud customers
-  description: TBD
-  ms.date: 10/01/2022
-  author: TBD
-  ms.author: v-jenhor
+  description: Describes the basics of Microsoft support operations for Azure datacenters.
+  ms.date: 07/17/2024
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 7
 content: |
@@ -21,7 +21,7 @@ quiz:
       explanation: "Incorrect. Microsoft provides SLAs on generally available online services."
     - content: "Customers gain free access to guidance around cloud adoption and migration."
       isCorrect: false
-      explanation: "Incorrect. There's significant free information to help customers with cloud adoption, migration, architecture and ongoing operations."
+      explanation: "Incorrect. There's significant free information to help customers with cloud adoption, migration, architecture, and ongoing operations."
     - content: "Basic customer support limits the number of support requests."
       isCorrect: true
       explanation: "Correct. Microsoft doesn't limit the number of support requests a customer can open to resolve issues."

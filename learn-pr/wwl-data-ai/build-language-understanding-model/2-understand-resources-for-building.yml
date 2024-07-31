@@ -3,11 +3,13 @@ uid: learn.wwl.build-language-understanding-model.understand-resources-for-build
 title: Understand resources for building a conversational language understanding model
 metadata:
   title: Understand resources for building a conversational language understanding model
-  description: "Understand resources for building a conversational language understanding model"
-  ms.date: 11/07/2023
+  description: Understand resources for building a conversational language understanding model
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 11/07/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 9

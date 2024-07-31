@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Train and evaluate multiclass classification models
   description: Train and evaluate a multiclass classifier
   ms.date: 09/05/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: madiepev
+  ms.author: madiepev
   ms.topic: unit
 durationInMinutes: 10
 sandbox: true

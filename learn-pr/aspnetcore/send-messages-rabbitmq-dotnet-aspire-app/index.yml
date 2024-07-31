@@ -26,10 +26,11 @@ roles:
 - developer
 - solution-architect
 products:
-- dotnet
-- vs
-- vs-code
-- dotnet-aspire
+  - dotnet
+  - aspnet-core
+  - dotnet-aspire
+  - vs
+  - vs-code
 subjects:
 - custom-app-development
 units:

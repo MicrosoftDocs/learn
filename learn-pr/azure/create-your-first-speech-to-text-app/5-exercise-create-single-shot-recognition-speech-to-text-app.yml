@@ -4,10 +4,12 @@ title: Exercise - Create a single-shot recognition speech to text application
 metadata:
   title: Exercise - Create a single-shot recognition speech to text application
   description: In this exercise, you'll create a single-shot recognition speech to text application.
-  ms.date: 06/19/2023
   author: rmcmurray
   ms.author: robmcm
+  ms.date: 06/19/2023
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 azureSandbox: true
 interactive: bash
 durationInMinutes: 10

@@ -117,3 +117,4 @@ If all readiness check results are positive and all relevant performance counter
 
 > [!NOTE]
 > You can experience some warnings in cases where managed Standard Disks are used. Warnings will be displayed instead of the tests returning **OK**. This is normal and intended in case of that disk type.
+

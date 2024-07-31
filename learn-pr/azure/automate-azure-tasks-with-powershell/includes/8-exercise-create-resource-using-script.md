@@ -59,25 +59,24 @@ machines.
 1. Create a loop to execute three times:
 
    ```powershell
-   $vms = 1..3
+   $vms = 'web','app','sql'
    foreach ($vm in $vms) {
        $vm
    }
    ```
 
-1. In the loop, create a name for each VM and return it:
+1. In the loop, return the name for each VM:
 
    ```powershell
-   $vmName = "ConferenceDemo-$vm"
-   Write-Output "Creating VM: $vmName"
+   Write-Output "Creating VM: $vm"
    ```
 
-1. Create a VM using the `$vmName` variable:
+1. Create a VM using the `$vm` variable:
 
    ```azurepowershell
    $azVmParams = @{
        ResourceGroupName = $ResourceGroupName
-       Name              = $vmName
+       Name              = $vm
        Credential        = $adminCredential
        Image             = 'Canonical:0001-com-ubuntu-server-jammy:22_04-lts:latest'
        OpenPorts         = 22
@@ -105,12 +104,11 @@ $vms = 'web','app','sql'
 
 foreach ($vm in $vms) {
 
-    $vmName = "ConferenceDemo-$vm"
-    Write-Output "Creating VM: $vmName"
+    Write-Output "Creating VM: $vm"
 
     $azVmParams = @{
         ResourceGroupName = $ResourceGroupName
-        Name              = $vmName
+        Name              = $vm
         Credential        = $adminCredential
         Image             = 'Canonical:0001-com-ubuntu-server-jammy:22_04-lts:latest'
         OpenPorts         = 22

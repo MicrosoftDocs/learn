@@ -3,11 +3,13 @@ uid: learn.wwl.explore-azure-networking.examine-load-balancing-considerations
 title: Examine load balancing considerations
 metadata:
   title: Examine load balancing considerations
-  description: "Examine load balancing considerations"
-  ms.date: 10/17/2023
+  description: "Examine load balancing considerations."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/8-examine-load-balancing-considerations.md)]

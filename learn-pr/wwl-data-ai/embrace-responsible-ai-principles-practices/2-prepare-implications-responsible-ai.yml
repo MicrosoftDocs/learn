@@ -3,13 +3,13 @@ uid: learn.wwl.embrace-responsible-ai-principles-practices.prepare-implications-
 title: Prepare for the implications of responsible AI
 metadata:
   title: Prepare for the implications of responsible AI
-  description: "Prepare for the implications of responsible AI"
-  ms.date: 06/25/2024
+  description: Prepare for the implications of responsible AI
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 06/25/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/2-prepare-implications-responsible-ai.md)]
