@@ -14,6 +14,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
+  
   - content: "An organization plans to implement Conditional Access. What do admins need to do?"
     choices:
     - content: "Create policies that enforce organizational rules."
@@ -25,6 +26,7 @@ quiz:
     - content: "Amend your apps to allow Conditional Access."
       isCorrect: false
       explanation: "Incorrect. Conditional Access doesn't require apps to be changed in any way."
+  
   - content: "Sign-in risk is a signal used by Conditional Access policies to decide whether to grant or deny access. What is sign-in risk?"
     choices:
     - content: "The probability that the device is owned by the identity owner."
@@ -36,6 +38,7 @@ quiz:
     - content: "The probability that the user is authorized to view data from a particular application."
       isCorrect: false
       explanation: "Incorrect. Sign-in risk doesn't calculate the probability that a user is authorized to view data."
+  
   - content: "IT admins have been asked to review Microsoft Entra roles assigned to users, to improve organizational security. Which of the following should they implement?"
     choices:
     - content: "Remove all global admin roles assigned to users."
@@ -47,3 +50,16 @@ quiz:
     - content: "Replace global admin roles with specific Microsoft Entra roles."
       isCorrect: true
       explanation: "That's correct. By following the least privilege security model and assigning specific admin roles, such as billing administrator or user administrator, to more users, instead of global admin roles, organizational security is improved."
+  
+  - content: "A network administrator is tasked with securing private resources in their organization. They decide to use Microsoft Entra Private Access and want to set up different access policies based on how resources are accessed or for a specific time frame. Which method should they use?"
+    choices:
+    - content: "Quick Access"
+      isCorrect: false
+      explanation: "That's incorrect. Quick Access does not provide the granularity needed for setting different access policies based on how resources are accessed or for a specific time frame."
+    - content: "VPN"
+      isCorrect: false
+      explanation: "That's incorrect. VPN is a method of network access, not a feature of Microsoft Entra Private Access that allows for granular control of access policies."
+    - content: "Global Secure Access app"
+      isCorrect: true
+      explanation: "That's correct. The Global Secure Access app, also referred to as Per-app Access, provides a more granular approach. The admin can create multiple enterprise apps and for each of these aps, assign users and groups and assign specific conditional access policies."
+           

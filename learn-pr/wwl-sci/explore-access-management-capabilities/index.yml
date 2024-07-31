@@ -34,8 +34,8 @@ subjects:
 units:
 - learn.wwl.explore-access-management-capabilities-of-azure-ad.introduction
 - learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-conditional-access-its-benefits
-- learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-azure-role-based-access-control-rbac
 - learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-global-secure-access
+- learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-azure-role-based-access-control-rbac
 - learn.wwl.explore-access-management-capabilities-of-azure-ad.knowledge-check
 - learn.wwl.explore-access-management-capabilities-of-azure-ad.summary-resources
 badge:
