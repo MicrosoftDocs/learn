@@ -8,6 +8,7 @@ metadata:
   ms.author: madiepev
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: machine-learning
+  ms.collection: wwl-ai-copilot
 title: Get started with prompt flow to develop Large Language Model (LLM) apps
 summary: Learn about how to use prompt flow to develop applications that leverage Large Language Models (LLMs).
 abstract: |
