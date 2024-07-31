@@ -8,7 +8,7 @@ metadata:
   author: johnmarco
   ms.author: johnmarc
   ms.topic: module
-  ms.service: automanage
+  ms.service: azure-automanage
 title: Optimizing IT operations and management with Azure Automanage
 summary: In this module, you discover how to optimize IT operations and management with Azure Automanage. 
 abstract: |
