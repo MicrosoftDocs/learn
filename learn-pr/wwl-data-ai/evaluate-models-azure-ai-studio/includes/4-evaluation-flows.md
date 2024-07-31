@@ -14,19 +14,23 @@ When you test your flow with an individual prompt in the chat window, your flow 
 
 To evaluate a chat flow in bulk, you can run **automated evaluations**. You can either use the built-in automated evaluations, or you can define your **custom** evaluations by creating your own evaluation flow. The built-in or Microsoft-curated metrics help you assess your flow's performance and quality, and risk and safety.
 
+:::image type="content" source="../media/curated-evaluation.png" alt-text="Screenshot of the configuration of curated evaluations." lightbox="../media/curated-evaluation.png":::
+
 To evaluate your chat flow with the built-in automated evaluations, you need to:
 
-- Create a test dataset.
-- Create a new automated evaluation in the Azure AI Studio.
-- Select a flow or a dataset with model generated outputs.
-- Select the metrics you want to evaluate on.
-- Run the evaluation flow.
-- Review the results.
+1. Create a test dataset.
+1. Create a new automated evaluation in the Azure AI Studio.
+1. Select a flow or a dataset with model generated outputs.
+1. Select the metrics you want to evaluate on.
+1. Run the evaluation flow.
+1. Review the results.
 
 > [!Tip]
 > Learn more about [evaluation and monitoring metrics](/azure/ai-studio/concepts/evaluation-metrics-built-in?azure-portal=true)
 
 Alternatively, you can create your own custom evaluation flow, in which you define how your chat flow's output should be evaluated. For example, you can evaluate the output using Python code or by using a Large Language Model (LLM) node to create an AI-assisted metric. After creating an evaluation flow, you can evaluate a chat flow by providing a test dataset and running the evaluation flow.
+
+:::image type="content" source="../media/custom-evaluation-tool.png" alt-text="Screenshot of an evaluation flow in the Azure AI Studio." lightbox="../media/custom-evaluation-tool.png":::
 
 > [!Tip]
 > Learn how to [develop an evaluation flow in the Azure AI Studio.](/azure/ai-studio/how-to/flow-develop-evaluation?azure-portal=true)
