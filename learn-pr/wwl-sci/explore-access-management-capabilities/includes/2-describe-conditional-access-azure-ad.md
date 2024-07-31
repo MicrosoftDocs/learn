@@ -28,7 +28,7 @@ When creating a conditional access policy, admins can determine which signals to
   - **Sign-in risk** and **user risk**. Integration with Microsoft Entra ID Protection allows Conditional Access policies to identify suspicious actions related to user accounts in the directory and trigger a policy.  Sign-in risk is the probability that a given sign-in, or authentication request, isn't authorized by the identity owner. User risk is the probability that a given identity or account is compromised.
   - **Devices platform**. Device platform, which is characterized by the operating system that runs on a device can be used when enforcing Conditional Access policies.
   - **IP location information**. Organizations can define trusted IP address ranges that can be used when making policy decisions. Also, administrators can opt to block or allow traffic from an entire country/region's IP range.
-  - **Client apps**.  Clients apps, the software the user is employing to access the cloud app, including browsers, mobile apps, desktop clients, can also be used in access policy decision.
+  - **Client apps**.  Client apps, the software the user is employing to access the cloud app, including browsers, mobile apps, desktop clients, can also be used in access policy decision.
   - **Filters for devices**.  Organizations can enforce policies based on device properties, by using the filters for devices option.  As an example, this option may be used to target policies to specific devices like privileged access workstations.
 
 In essence, the assignments portion controls the who, what, and where of the Conditional Access policy.
