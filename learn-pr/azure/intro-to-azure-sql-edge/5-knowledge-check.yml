@@ -33,7 +33,7 @@ quiz:
       explanation: "Incorrect. Latency relates to delays between an action and its response."
     - content: "Familiarity."
       isCorrect: true
-      explanation: "Correct. If your developers have worked with SQL Server, that familiarity provides a benefit in the development process."
+      explanation: "Correct. If your developers worked with SQL Server, that familiarity provides a benefit in the development process."
     - content: "Connectivity."
       isCorrect: false
       explanation: "Incorrect. Connectivity relates to how well apps work when connected and disconnected from the internet."
