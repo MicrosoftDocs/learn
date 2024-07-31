@@ -2,23 +2,31 @@
 uid: learn.wwl.migrate-very-large-databases-vldb-to-azure
 metadata:
   title: Migrate very large databases (VLDB) to Azure for SAP
-  description: "This module explores migration of databases over 20 TB, considered very large databases, and the require techniques and procedures to achieve a migration from on-premises to Azure within an acceptable downtime and with minimized risk. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 04/27/2023
+  description: "This module explores migration of databases over 20 TB, considered very large databases, and the required techniques and procedures to achieve a migration from on-premises to Azure within an acceptable downtime and with minimized risk. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 07/31/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: sap-on-azure
+  ai-usage: human-only
 title: Migrate very large databases (VLDB) to Azure for SAP
 summary: This module explores migration of databases over 20 TB, considered very large databases. These databases use extra techniques and procedures to achieve migration from on-premises to Azure within acceptable downtime and with low risk.
 abstract: |
   After completing this module, you'll be able to:
-  *   Explore very large database migration.
-  *   Learn best practices for optimizing the source system, network upload, and the target system.
-  *   Examine very large database migration best practices.
+
+  -   Explore very large database migration.
+
+  -   Learn best practices for optimizing the source system, network upload, and the target system.
+
+  -   Examine very large database migration best practices.
 prerequisites: |
   Before taking this training, you should complete:
-  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
-  - SAP HANA or NetWeaver training.
+
+  -   Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+
+  -   SAP HANA or NetWeaver training.
 iconUrl: /training/achievements/migrate-very-large-databases-vldb-to-azure.svg
 levels:
 - advanced

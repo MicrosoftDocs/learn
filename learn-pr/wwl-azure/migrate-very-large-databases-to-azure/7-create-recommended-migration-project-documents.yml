@@ -3,11 +3,13 @@ uid: learn.wwl.migrate-very-large-databases-vldb-to-azure.create-recommended-mig
 title: Create recommended migration project documents
 metadata:
   title: Create recommended migration project documents
-  description: "Create recommended migration project documents"
-  ms.date: 04/27/2023
+  description: "Create recommended migration project documents."
+  ms.date: 07/31/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/7-create-recommended-migration-project-documents.md)]

@@ -1,5 +1,3 @@
-
-
 Now you have:
 
 - Explored very large database migration.
@@ -13,6 +11,6 @@ Now you have:
 ## Learn more
 
 - [Very Large Database Migration to Azure – Recommendations &amp; Guidance to Partners](https://techcommunity.microsoft.com/t5/running-sap-applications-on-the/very-large-database-migration-to-azure-8211-recommendations/ba-p/368146)
-- [SAP Note \#2388483](https://launchpad.support.sap.com/#/notes/2388483)
-- [SAP Note \#936441](https://launchpad.support.sap.com/#/notes/936441)
-- [SAP Note \#1043380](https://launchpad.support.sap.com/#/notes/1043380)
+- [SAP Note \#2388483](https://me.sap.com/notes/2388483)
+- [SAP Note \#936441](https://me.sap.com/notes/936441)
+- [SAP Note \#1043380](https://me.sap.com/notes/1043380)
