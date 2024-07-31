@@ -8,7 +8,7 @@ metadata:
   author: tomvcassidy
   ms.author: tomcassidy
   ms.topic: module
-  ms.service: virtual-machines
+  ms.service: azure-virtual-machines
   ms.subservice: gallery
 title: Introduction to Azure Compute Gallery
 summary: Learn what Azure Compute Gallery is, how it works, and when to use it.
