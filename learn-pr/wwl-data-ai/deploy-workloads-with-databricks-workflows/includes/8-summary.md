@@ -1,6 +1,6 @@
 ## Summary
 
-Azure Databricks Workflows provide a powerful and scalable platform for deploying and managing data workloads in the cloud. By leveraging this feature, users can orchestrate complex data pipelines with ease, automating data ingestion, transformation, and analysis tasks across multiple clusters.
+Azure Databricks Workflows provide a powerful and scalable platform for deploying and managing data workloads in the cloud. Workflows allow you to orchestrate complex data pipelines with ease, automating data ingestion, transformation, and analysis tasks across multiple clusters.
 
 In this module, you learned:
 
@@ -8,7 +8,7 @@ In this module, you learned:
 - The key components and benefits of Azure Databricks Workflows
 - How to deploy workloads using Azure Databricks Workflows
 
-Additional Reading:
+More Reading:
 
 - [Introduction to Azure Databricks Workflows](/azure/databricks/workflows/)
 - [Basics of Databricks Workflows](https://community.databricks.com/t5/technical-blog/basics-of-databricks-workflows-part-1-creating-your-pipeline/ba-p/54397)

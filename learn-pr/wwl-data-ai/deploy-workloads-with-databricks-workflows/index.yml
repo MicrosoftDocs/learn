@@ -2,16 +2,16 @@
 uid: learn.wwl.deploy-workloads-with-databricks-workflows
 metadata:
   title: "Deploy workloads with Azure Databricks Workflows"
-  description: "Learn how deploy workloads with Azure Databricks Workflows"
+  description: "Learn how to deploy workloads with Azure Databricks Workflows"
   ms.date: "07/29/2024"
   author: wwlpublish
   ms.author: theresai
   ms.topic: module-standard-task-based
   ms.service: azure-databricks
 title: Deploy workloads with Azure Databricks Workflows
-summary: "Deploying workloads with Azure Databricks Workflows involves orchestrating and automating complex data processing pipelines, machine learning workflows, and analytics tasks. In this module, you'll learn how to deploy workloads with Databricks Workflows."
+summary: "Deploying workloads with Azure Databricks Workflows involves orchestrating and automating complex data processing pipelines, machine learning workflows, and analytics tasks. In this module, you learn how to deploy workloads with Databricks Workflows."
 abstract: |
-  In this module, you'll learn:
+  In this module, you learn:
   - What Azure Databricks Workflows are
   - The key components and benefits of Azure Databricks Workflows
   - How to deploy workloads using Azure Databricks Workflows
