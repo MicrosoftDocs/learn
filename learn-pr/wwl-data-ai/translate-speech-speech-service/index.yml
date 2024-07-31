@@ -2,12 +2,14 @@
 uid: learn.wwl.translate-speech-speech-service
 metadata:
   title: Translate speech with the Azure AI Speech service
-  description: "Translate speech with the Azure AI Speech service"
-  ms.date: 08/31/2023
+  description: Translate speech with the Azure AI Speech service
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: module-standard-task-based
+  ms.date: 08/31/2023
   ms.service: azure-ai-speech
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Translate speech with the Azure AI Speech service
 summary: Translation of speech builds on speech recognition by recognizing and transcribing spoken input in a specified language, and returning translations of the transcription in one or more other languages.
 abstract: |

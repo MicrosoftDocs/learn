@@ -4,226 +4,27 @@ Azure load balancer can handle traffic originating from within the same Azure vi
 
 Azure load balancer is available in two SKUs: Basic and Standard.
 
-:::row:::
-  :::column:::
-
-  :::column-end:::
-  :::column:::
-    **Standard load balancer**
-  :::column-end:::
-  :::column:::
-    **Basic load balancer**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Scenario**
-  :::column-end:::
-  :::column:::
-    Equipped for load-balancing network layer traffic when high performance and ultra-low latency is needed. Routes traffic within and across regions, and to availability zones for high resiliency.
-  :::column-end:::
-  :::column:::
-    Equipped for small-scale applications that don't need high availability or redundancy. Not compatible with availability zones.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Backend type**
-  :::column-end:::
-  :::column:::
-    IP based, NIC based
-  :::column-end:::
-  :::column:::
-    NIC based
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Protocol**
-  :::column-end:::
-  :::column:::
-    TCP, UDP
-  :::column-end:::
-  :::column:::
-    TCP, UDP
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Backend pool endpoints**
-  :::column-end:::
-  :::column:::
-    Any virtual machines or virtual machine scale sets in a single virtual network.
-  :::column-end:::
-  :::column:::
-    Virtual machines in a single availability set or virtual machine scale set.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **[Health probes](/azure/load-balancer/load-balancer-custom-probe-overview#types)**
-  :::column-end:::
-  :::column:::
-    TCP, HTTP, HTTPS
-  :::column-end:::
-  :::column:::
-    TCP, HTTP
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **[Health probe down behavior](/azure/load-balancer/load-balancer-custom-probe-overview#probedown)**
-  :::column-end:::
-  :::column:::
-    TCP connections stay alive on an instance probe down **and** on all probes down.
-  :::column-end:::
-  :::column:::
-    TCP connections stay alive on an instance probe down. All TCP connections end when all probes are down.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Availability Zones**
-  :::column-end:::
-  :::column:::
-    Zone-redundant and zonal frontends for inbound and outbound traffic.
-  :::column-end:::
-  :::column:::
-    Not available
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Diagnostics**
-  :::column-end:::
-  :::column:::
-    [Azure Monitor multi-dimensional metrics](/azure/load-balancer/load-balancer-standard-diagnostics)
-  :::column-end:::
-  :::column:::
-    Not supported
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **HA ports**
-  :::column-end:::
-  :::column:::
-    [Available for Internal load balancer](/azure/load-balancer/load-balancer-ha-ports-overview)
-  :::column-end:::
-  :::column:::
-    Not available
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Secure by default**
-  :::column-end:::
-  :::column:::
-    Closed to inbound flows unless allowed by a network security group. Internal traffic from the virtual network to the internal load balancer is allowed.
-  :::column-end:::
-  :::column:::
-    Open by default. Network security group optional.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Outbound rules**
-  :::column-end:::
-  :::column:::
-    [Declarative outbound NAT configuration](/azure/load-balancer/load-balancer-outbound-connections#outboundrules)
-  :::column-end:::
-  :::column:::
-    Not available
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **TCP reset on idle**
-  :::column-end:::
-  :::column:::
-    [Available on any rule](/azure/load-balancer/load-balancer-tcp-reset)
-  :::column-end:::
-  :::column:::
-    Not available
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **[Multiple front ends](/azure/load-balancer/load-balancer-multivip-overview)**
-  :::column-end:::
-  :::column:::
-    Inbound and [outbound](/azure/load-balancer/load-balancer-outbound-connections)
-  :::column-end:::
-  :::column:::
-    Inbound only
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Management operations**
-  :::column-end:::
-  :::column:::
-    Most operations &lt; 30 seconds
-  :::column-end:::
-  :::column:::
-    60-90+ seconds typical
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **SLA**
-  :::column-end:::
-  :::column:::
-    [99.99%](https://azure.microsoft.com/support/legal/sla/load-balancer/v1_0/)
-  :::column-end:::
-  :::column:::
-    Not available
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Global VNet Peering Support**
-  :::column-end:::
-  :::column:::
-    Standard ILB is supported via Global VNet Peering
-  :::column-end:::
-  :::column:::
-    Not supported
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **[NAT Gateway Support](/azure/virtual-network/nat-gateway/nat-overview)**
-  :::column-end:::
-  :::column:::
-    Both Standard ILB and Standard Public LB are supported via Nat Gateway
-  :::column-end:::
-  :::column:::
-    Not supported
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **[Private Link Support](/azure/private-link/private-link-overview)**
-  :::column-end:::
-  :::column:::
-    Standard ILB is supported via Private Link
-  :::column-end:::
-  :::column:::
-    Not supported
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **[Global tier (Preview)](/azure/load-balancer/cross-region-overview)**
-  :::column-end:::
-  :::column:::
-    Standard LB supports the Global tier for Public LBs enabling cross-region load balancing
-  :::column-end:::
-  :::column:::
-    Not supported
-  :::column-end:::
-:::row-end:::
+| Scenario | Standard load balancer | Basic load balancer |
+|---|---|---|
+| | Equipped for load-balancing network layer traffic when high performance and ultra-low latency is needed. Routes traffic within and across regions, and to availability zones for high resiliency. | Equipped for small-scale applications that don't need high availability or redundancy. Not compatible with availability zones. |
+| **Backend type** | IP based, NIC based | NIC based |
+| **Protocol** | TCP, UDP | TCP, UDP |
+| **Backend pool endpoints** | Any virtual machines or virtual machine scale sets in a single virtual network. | Virtual machines in a single availability set or virtual machine scale set. |
+| **[Health probes](/azure/load-balancer/load-balancer-custom-probe-overview#types)** | TCP, HTTP, HTTPS | TCP, HTTP |
+| **[Health probe down behavior](/azure/load-balancer/load-balancer-custom-probe-overview#probedown)** | TCP connections stay alive on an instance probe down **and** on all probes down. | TCP connections stay alive on an instance probe down. All TCP connections end when all probes are down. |
+| **Availability zones** | Zone-redundant and zonal frontends for inbound and outbound traffic. | Not available |
+| **Diagnostics** | [Azure Monitor multidimensional metrics](/azure/load-balancer/load-balancer-standard-diagnostics) | Not supported |
+| **HA ports** | [Available for Internal load balancer](/azure/load-balancer/load-balancer-ha-ports-overview) | Not available |
+| **Secure by default** | Closed to inbound flows unless allowed by a network security group. Internal traffic from the virtual network to the internal load balancer is allowed. | Open by default. Network security group optional. |
+| **Outbound rules** | [Declarative outbound NAT configuration](/azure/load-balancer/load-balancer-outbound-connections#outboundrules) | Not available |
+| **TCP reset on idle** | [Available on any rule](/azure/load-balancer/load-balancer-tcp-reset) | Not available |
+| **[Multiple front ends](/azure/load-balancer/load-balancer-multivip-overview)** | Inbound and [outbound](/azure/load-balancer/load-balancer-outbound-connections) | Inbound only |
+| **Management operations** | Most operations &lt; 30 seconds | 60-90+ seconds typical |
+| **SLA** | [99.99 percent](https://azure.microsoft.com/support/legal/sla/load-balancer/v1_0/) | Not available |
+| **Global virtual network Peering Support** | Standard ILB is supported via Global virtual network Peering | Not supported |
+| **[NAT Gateway Support](/azure/virtual-network/nat-gateway/nat-overview)** | Both Standard ILB and Standard Public LB are supported via Nat Gateway | Not supported |
+| **[Private Link Support](/azure/private-link/private-link-overview)** | Standard ILB is supported via Private Link | Not supported |
+| **[Global tier](/azure/load-balancer/cross-region-overview)** | Standard LB supports the Global tier for Public LBs enabling cross-region load balancing | Not supported |
 
 ## Limitations
 
@@ -232,4 +33,4 @@ Azure load balancer is available in two SKUs: Basic and Standard.
 
 ## Optional demo
 
-- [Demonstration: Explore Network Security Groups (NSGs) and service endpoints](https://github.com/MicrosoftLearning/AZ-120-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads/blob/master/Demos/demo-explore-network-security-groups-service-endpoints.md)
+- [Demonstration: Explore Network Security Groups (NSGs) and service endpoints](https://go.microsoft.com/fwlink/?linkid=2260474&clcid=0x409)

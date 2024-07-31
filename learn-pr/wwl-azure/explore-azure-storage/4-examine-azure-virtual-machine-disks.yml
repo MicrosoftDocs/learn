@@ -4,10 +4,12 @@ title: Examine Azure Virtual Machine disks
 metadata:
   title: Examine Azure Virtual Machine disks
   description: "Examine the three type of Azure Virtual Machine disks - operating system disks, temporary disks, and data disks."
-  ms.date: 03/26/2024
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/4-examine-azure-virtual-machine-disks.md)]

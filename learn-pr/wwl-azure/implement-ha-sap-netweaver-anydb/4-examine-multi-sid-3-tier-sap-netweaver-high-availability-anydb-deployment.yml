@@ -3,11 +3,13 @@ uid: learn.wwl.implement-ha-sap-netweaver-anydb.examine-multi-sid-3-tier-high-av
 title: Examine multi-SID 3-tier SAP NetWeaver high availability AnyDB deployment
 metadata:
   title: Examine multi-SID 3-tier SAP NetWeaver high availability AnyDB deployment
-  description: "Examine multi-SID 3-tier SAP NetWeaver high availability AnyDB deployment"
-  ms.date: 03/19/2024
+  description: "Examine what is created when deploying an Azure Resource Manager template to deploy a multi-SID 3-tier SAP NetWeaver high availability AnyDB."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/4-examine-multi-sid-3-tier-sap-netweaver-high-availability-anydb-deployment.md)]

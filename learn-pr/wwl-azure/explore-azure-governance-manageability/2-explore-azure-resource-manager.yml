@@ -3,12 +3,13 @@ uid: learn.wwl.explore-azure-governance-manageability.resource-manager
 title: Explore Azure Resource Manager
 metadata:
   title: Explore Azure Resource Manager
-  description: "Explore Azure Resource Manager"
-  ms.date: 11/08/2023
+  description: "Create, update, and delete resources in your Azure subscription, with Azure Resource Manager."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-  ms.custom: devx-track-arm-template
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/2-explore-azure-resource-manager.md)]

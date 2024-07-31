@@ -3,11 +3,13 @@ uid: learn.wwl.maintain-azure-cognitive-search-solution.monitor-azure-cognitive-
 title: Monitor an Azure AI Search solution
 metadata:
   title: Monitor an Azure AI Search solution
-  description: "Monitor an Azure AI Search solution"
-  ms.date: 09/27/2023
+  description: Monitor an Azure AI Search solution
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/27/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

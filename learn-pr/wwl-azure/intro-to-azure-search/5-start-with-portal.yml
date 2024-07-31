@@ -3,11 +3,13 @@ uid: learn.azure-introduction-to-azure-search.2f-start-with-portal
 title: Create an index in the Azure portal
 metadata:
   title: Create an index in the Azure portal
-  description: "Create an index in the Azure portal"
-  ms.date: 07/17/2024
+  description: Create an index in the Azure portal
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 07/25/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

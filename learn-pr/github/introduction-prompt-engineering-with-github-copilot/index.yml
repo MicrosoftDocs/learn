@@ -4,11 +4,14 @@ title: Introduction to prompt engineering with GitHub Copilot
 metadata:
   title: Introduction to prompt engineering with GitHub Copilot
   description: This module highlights the basic core principles of prompt engineering and explains the best practices to create prompts quickly and effectively in GitHub Copilot. Learn the strategies that transform comments into precise code, identify the steps within GitHub Copilot's prompt processing flow, and gain an understanding of the important role that Large Language Models (LLMs) play in enhancing suggestion quality.
-  ms.date: 11/10/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: module-intro-to-product
+  ms.date: 11/10/2023
   ms.service: github-copilot
+  ms.topic: module-intro-to-product
+  ms.collection:
+    - ce-skilling-ai-copilot
+    - github-ai-copilot
 summary: >
   Discover the essentials of creating effective prompts with GitHub Copilot. Uncover techniques to transform your coding comments into precise, actionable code, enhancing your development workflow. 
 abstract: |

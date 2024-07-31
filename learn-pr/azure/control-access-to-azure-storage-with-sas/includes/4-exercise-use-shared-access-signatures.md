@@ -8,6 +8,8 @@ In this exercise, you create a storage account and upload some example patient i
 
 ### Create a storage account and upload images
 
+1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+
 1. Using Azure Cloud Shell, enter the following code to create a storage account for patient images. The code generates a storage account name.
 
     ```azurecli

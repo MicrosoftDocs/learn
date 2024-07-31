@@ -3,11 +3,13 @@ uid: learn.get-started-prompt-flow-ai-studio.understand-flows
 title: Understand core components and explore flow types
 metadata:
   title: Understand core components and explore flow types
-  description: "Learn about the core components that make a flow and which types of flows you can create."
-  ms.date: 01/25/2024
+  description: Learn about the core components that make a flow and which types of flows you can create.
   author: madiepev
   ms.author: madiepev
+  ms.date: 01/25/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/3-understand-flows.md)]

@@ -25,6 +25,8 @@ roles:
 - solution-architect
 products:
 - dotnet
+- aspnet-core
+- dotnet-aspire
 - vs
 - vs-code
 subjects:

@@ -1,4 +1,4 @@
-In this exercise, you'll start to build the .NET MAUI app for the grocery-store chain. You'll use the template to generate the default app and run it on Windows and in the Android emulator. You'll modify this app in a later exercise to customize the user interface and add the functionality required by the grocery store chain app.
+In this exercise, you start to build the .NET MAUI app for the grocery-store chain. You use the template to generate the default app and run it on Windows and in the Android emulator. In a later exercise, you modify this app to customize the user interface and add the functionality required by the grocery store chain app.
 
 ## Create a new project
 
@@ -9,11 +9,11 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery-store 
 
 1. Select the **MAUI** project type, select the **.NET MAUI App** template, and select **Next**.
 
-    :::image type="content" source="../media/4-create-maui-app .png" alt-text="A screenshot of the Create a new project dialog box. The user has selected the .NET MAUI App template.":::
+    :::image type="content" source="../media/4-create-maui-app .png" alt-text="A screenshot of the Create a new project dialog box. The .NET MAUI App template is selected.":::
 
 1. On the **Configure your new project** page, name the project **Phoneword**, and save it in a location of your choice. Select **Next**. 
 
-    :::image type="content" source="../media/4-configure-project.png" alt-text="A screenshot of the Configure your new project dialog box. The user has named the project Phoneword and selected a location on their hard drive to store it.":::
+    :::image type="content" source="../media/4-configure-project.png" alt-text="A screenshot of the Configure your new project dialog box. The user names the project Phoneword and selects a location on their hard drive to store it.":::
 
 1. Select **.NET 8.0 (Long Term Support)** in the **Framework** drop-down, then select **Create** to create the app.
 
@@ -39,13 +39,13 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery-store 
 
 ## Build and run the application on Windows
 
-1. In the Visual Studio toolbar, select the **Windows Machine** profile. Select the **.net6.0-windows** framework from the list in the frameworks drop-down list box.
+1. In the Visual Studio toolbar, select the **Windows Machine** profile. Select the **.net8.0-windows** framework from the list in the frameworks drop-down list box.
 
-    :::image type="content" source="../media/4-set-startup-profile.png" alt-text="A screenshot of the target runtime dropdown in Visual Studio. The user has set the Windows.Machine profile as the startup profile for the solution.":::
+    :::image type="content" source="../media/4-set-startup-profile.png" alt-text="A screenshot of the target runtime dropdown in Visual Studio. The user sets the Windows Machine profile as the startup profile for the solution.":::
 
-1. On the **Debug** menu, select **Start Debugging**. This action will build, deploy, and run the app on Windows:
+1. On the **Debug** menu, select **Start Debugging**. This action builds, deploys, and runs the app on Windows:
 
-    :::image type="content" source="../media/4-start-debugging.png" alt-text="A screenshot of the Visual Studio debug menu. The user has started debugging the app using the Windows Machine profile.":::
+    :::image type="content" source="../media/4-start-debugging.png" alt-text="A screenshot of the Visual Studio debug menu. The user is debugging the app using the Windows Machine profile.":::
 
 1. Verify that the Windows version of the app starts up. Select the **Click me** button several times. The button text should update with the count being incremented with each tap.
 
@@ -88,7 +88,7 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery-store 
 
     :::image type="content" source="../media/4-visual-studio-tools-menu.png" alt-text="A screenshot of the Visual Studio tools menu. The user has selected the Android Device Manager option.":::
 
-1. In the **Android Device Manager** window, select **+ New**. In the **New Device** window select the **Pixel 3a (+ Store)** base device, select the **API 30** OS, and select **Create**. Wait while the various libraries are downloaded and the device is configured.
+1. In the **Android Device Manager** window, select **+ New**. In the **New Device** window, select the **Pixel 3a (+ Store)** base device, select the **API 30** OS, and select **Create**. Wait while the various libraries are downloaded and the device is configured.
 
     :::image type="content" source="../media/4-new-device.png" alt-text="A screenshot of the New Device window from the Android SDK. The user is creating a new Pixel 3 device with API 30 selected.":::
 
@@ -98,9 +98,9 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery-store 
 
     :::image type="content" source="../media/4-select-android-emulator.png" alt-text="A screenshot of the Visual Studio toolbar. The user has specified the Pixel 3 with the API 30 profile for the Android emulator to start debugging with.":::
 
-1. Start debugging use the **pixel_3a-api_30** profile. This action will build, deploy, and run the app on the Android device.
+1. Start debugging use the **pixel_3a-api_30** profile. This action builds, deploys, and runs the app on the Android device.
 
-    :::image type="content" source="../media/4-debug-using-emulator.png" alt-text="A screenshot of the Visual Studio toolbar. It shows the pixel 3 a p i 30 profile has been selected and ready to start debugging with as soon as the user presses the play button.":::
+    :::image type="content" source="../media/4-debug-using-emulator.png" alt-text="A screenshot of the Visual Studio toolbar. It shows the pixel 3 a p i 30 profile is selected and ready to start debugging with as soon as the user presses the play button.":::
 
 1. When the app starts running on the emulator (this can take several minutes), select the **Click me** button and check that the app runs in exactly the same way that it did on Windows.
 

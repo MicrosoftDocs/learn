@@ -3,8 +3,8 @@ uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.explor
 title: Explore Azure Monitor and Log Analytics
 metadata:
   title: Explore Azure Monitor and Log Analytics
-  description: "Explore Azure Monitor and Log Analytics"
-  ms.date: 03/19/2024
+  description: "Store and retrieve event and metrics for downstream alert or reporting functionality, with Azure Monitor and Log Analytics."
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

@@ -3,11 +3,13 @@ uid: learn.wwl.maintain-azure-cognitive-search-solution.optimize-performance-of-
 title: Optimize performance of an Azure AI Search solution
 metadata:
   title: Optimize performance of an Azure AI Search solution
-  description: "Optimize performance of an Azure AI Search solution"
-  ms.date: 09/27/2023
+  description: Optimize performance of an Azure AI Search solution
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/27/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

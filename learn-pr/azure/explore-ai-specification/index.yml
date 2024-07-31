@@ -1,15 +1,17 @@
 ### YamlMime:Module
 uid: learn.oxford.explore-ai-specification
 metadata:
-  title: Explore AI Specification document 
+  title: Explore AI Specification document
   description: We explain how to fill out AI Specification document for Autonomous AI use case.
-  ms.date: 07/10/2024
   author: softchris
   ms.author: chnoring
-  ms.topic: module
+  ms.date: 07/10/2024
   ms.service: artificial-intelligence
-  ms.custom: team=cloud_advocates
-  ms.collection: ce-advocates-ai-copilot        # Oxford University Module - Oxford responsible for ongoing maintenance
+  ms.topic: module
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom:
+    - team=cloud_advocates
 title: Explore AI Specification document 
 summary: In this module, you'll learn how to fill out an AI specification document for an Autonomous AI use case.
 abstract: |

@@ -2,12 +2,14 @@
 uid: learn.wwl.investigate-container-for-use-with-ai-services
 metadata:
   title: Deploy Azure AI services in containers
-  description: "Learn to deploy Azure AI services in containers"
-  ms.date: 09/11/2023
+  description: Learn to deploy Azure AI services in containers
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/11/2023
+  ms.service: azure-ai-services
   ms.topic: module-standard-task-based
-  ms.service: azure-ai-services	
+  ms.collection:
+    - wwl-ai-copilot
 title: Deploy Azure AI services in containers
 summary: Learn about Container support in Azure AI services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
 abstract: |

@@ -3,11 +3,13 @@ uid: learn.wwl.machine-learning-azure-databricks.evaluate-model
 title: Evaluate a machine learning model
 metadata:
   title: Evaluate a machine learning model
-  description: "Evaluate a machine learning model"
-  ms.date: 08/29/2023
+  description: Evaluate a machine learning model
   author: wwlpublish
   ms.author: gmalc
+  ms.date: 08/29/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/6-evaluate-model.md)]

@@ -2,13 +2,15 @@
 uid: learn.wwl.create-question-answer-solution-ai-language
 metadata:
   title: Create question answering solutions with Azure AI Language
-  description: "Create question answering solutions with Azure AI Language"
-  ms.date: 08/31/2023
+  description: Create question answering solutions with Azure AI Language
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module-standard-task-based
+  ms.date: 08/31/2023
   ms.service: azure-ai-language
   ms.subservice: azure-ai-question-answering
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Create question answering solutions with Azure AI Language
 summary: The question answering capability of the Azure AI Language service makes it easy to build applications in which users ask questions using natural language and receive appropriate answers.
 abstract: |

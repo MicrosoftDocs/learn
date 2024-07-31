@@ -1,13 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.discover-common-terms-meanings.azure
-title: 'Discover common terms and meanings: Azure'
+title: Discover common terms and meanings - Azure
 metadata:
-  title: 'Discover common terms and meanings: Azure'
-  description: "Discover common terms and meanings: Azure"
-  ms.date: 10/17/2023
+  title: Discover common terms and meanings - Azure
+  description: "Discover common terms and meanings in Azure."
+  ms.date: 07/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/4-discover-common-terms-meanings-azure.md)]

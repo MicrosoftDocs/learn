@@ -3,11 +3,13 @@ uid: learn.wwl.work-with-form-recognizer.form-recognizer-studio
 title: Use the Azure Document Intelligence Studio
 metadata:
   title: Use the Azure Document Intelligence Studio
-  description: "Use the Azure Document Intelligence Studio"
-  ms.date: 04/18/2024
+  description: Use the Azure Document Intelligence Studio
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 04/18/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/9-form-recognizer-studio.md)]

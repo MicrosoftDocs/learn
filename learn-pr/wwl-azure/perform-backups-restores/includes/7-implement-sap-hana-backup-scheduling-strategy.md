@@ -26,7 +26,7 @@ If standard HANA backups are going to a dedicated HANA backup file system, one c
 
 SAP HANA offers encryption of data and log. If SAP HANA data and log aren't encrypted, then the backups are also not encrypted. It's up to the customer to use some form of third-party solution to encrypt the SAP HANA backups.
 
-On Microsoft Azure, a customer could use the IaaS VM encryption feature. For example, one could use dedicated data disks attached to the VM, which are used to store SAP HANA backups, then make copies of these disks. Azure Backup service can handle encrypted VMs/disks. Another option would be to maintain the SAP HANA VM and its disks without encryption and store the SAP HANA backup files in a storage account for which encryption was enabled.
+On Microsoft Azure, a customer could use the IaaS virtual machine encryption feature. For example, one could use dedicated data disks attached to the virtual machine, which are used to store SAP HANA backups, then make copies of these disks. Azure Backup service can handle encrypted virtual machines/disks. Another option would be to maintain the SAP HANA virtual machine and its disks without encryption and store the SAP HANA backup files in a storage account for which encryption was enabled.
 
 ## Test backup size estimation
 

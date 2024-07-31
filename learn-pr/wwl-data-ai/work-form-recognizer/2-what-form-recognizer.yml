@@ -3,11 +3,13 @@ uid: learn.wwl.work-with-form-recognizer.what-form-recognizer
 title: What is Azure Document Intelligence?
 metadata:
   title: What is Azure Document Intelligence?
-  description: "What is Azure Document Intelligence?"
-  ms.date: 04/18/2024
+  description: What is Azure Document Intelligence?
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 04/18/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-form-recognizer.md)]

@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.explore-azure-networking-sap-rise
+metadata:
+  title: Explore Azure networking for SAP RISE
+  description: "Your SAP RISE architecture running in SAP's Azure subscription and tenant is created and managed by SAP. This module shows you how to use your Azure networks to connect to your SAP RISE instance."
+  ms.date: 07/30/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: sap-on-azure
+  ai-usage: human-only
+title: Explore Azure networking for SAP RISE
+summary: This module shows you how to use your Azure networks to connect to your SAP&nbsp;RISE&nbsp;architecture&nbsp;running&nbsp;in&nbsp;SAP's Azure subscription.
+abstract: |
+  After completing this module, you will be able to:
+
+  -   Responsibilities of the SAP RISE team, Azure support, and the customer.
+
+  -   Connection to SAP RISE with Azure virtual private network (VPN) peering.
+
+  -   Connection to SAP RISE with vnet-to-vnet.
+
+  -   Connect SAP RISE with an on-premises network.
+
+  -   Connect SAP RISE with the internet.
+prerequisites: |
+  Before taking this training, you should complete:
+
+  -   Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+
+  -   SAP HANA or NetWeaver training
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+subjects:
+- networking
+units:
+- learn.wwl.explore-azure-networking-sap-rise.introduction
+- learn.wwl.explore-azure-networking-sap-rise.integration-azure-with-sap-rise
+- learn.wwl.explore-azure-networking-sap-rise.azure-virtual-network-peering-sap-rise
+- learn.wwl.explore-azure-networking-sap-rise.azure-sap-rise-virtual-private-network
+- learn.wwl.explore-azure-networking-sap-rise.connect-on-premises-sap-rise
+- learn.wwl.explore-azure-networking-sap-rise.internet-connections-sap-rise
+- learn.wwl.azure-networking-sap-rise.knowledge-check
+- learn.wwl.azure-networking-sap-rise.summary
+badge:
+  uid: learn.wwl.explore-azure-networking-sap-rise.badge
