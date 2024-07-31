@@ -2,7 +2,7 @@ Azure Databricks Workflows are a set of tools and features within the Azure Data
 
 The workflows are deeply integrated with Azure's cloud infrastructure, benefiting from its security, scalability, and compliance features. They support dependencies between tasks, allowing for sophisticated job scheduling and management. Additionally, Azure Databricks provides a user-friendly interface for creating, monitoring, and managing these workflows, which enhances productivity and collaboration among data teams. This setup is ideal for organizations looking to streamline their data operations in a robust and scalable cloud environment.
 
-![Azure Databricks Workflows](../media/azure-databricks-workflows.png)
+![Diagram showing an example of an Azure Databricks Workflow. The diagram shows order and clickstream data going into a Delta Live Tables pipeline, then being prepared and joined and then used to train models.](../media/azure-databricks-workflows.png)
 
 Some components of Azure Databricks Workflows are:
 

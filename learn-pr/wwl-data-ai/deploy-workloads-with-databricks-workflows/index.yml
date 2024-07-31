@@ -29,7 +29,7 @@ units:
 - learn.wwl.deploy-workloads-with-databricks-workflows.what-are-azure-databricks-workflows
 - learn.wwl.deploy-workloads-with-databricks-workflows.key-components-of-azure-databricks-workflows
 - learn.wwl.deploy-workloads-with-databricks-workflows.benefits-of-azure-databricks-workflows
-- learn.wwl.deploy-workloads-with-databricks-workflows.deploying-workloads-using-azure-databricks-workflows
+- learn.wwl.deploy-workloads-with-databricks-workflows.deploy-workloads-using-azure-databricks-workflows
 - learn.wwl.deploy-workloads-with-databricks-workflows.exercise-workflows
 - learn.wwl.deploy-workloads-with-databricks-workflows.knowledge-check
 - learn.wwl.deploy-workloads-with-databricks-workflows.summary
