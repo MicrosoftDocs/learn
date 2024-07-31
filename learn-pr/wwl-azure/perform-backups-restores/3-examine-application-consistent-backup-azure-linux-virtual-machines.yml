@@ -3,12 +3,13 @@ uid: learn.wwl.perform-backups-restores.examine-application-consistent-backup-of
 title: Examine application-consistent backup of Azure Linux virtual machines
 metadata:
   title: Examine application-consistent backup of Azure Linux virtual machines
-  description: "Examine application-consistent backup of Azure Linux virtual machines"
-  ms.date: 10/27/2023
+  description: "Examine application-consistent backup of Azure Linux virtual machines."
+  ms.date: 07/30/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-  ms.custom: linux-related-content
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/3-examine-application-consistent-backup-azure-linux-virtual-machines.md)]

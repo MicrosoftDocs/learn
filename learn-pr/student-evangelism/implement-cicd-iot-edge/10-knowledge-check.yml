@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: In this section, we create interactive questions that validate if the learner understands the learning objectives.
-  ms.date: 06/24/2020
+  ms.date: 07/20/2024
   author: PatAltimore
   ms.author: patricka
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 4
 content: |
 quiz:
