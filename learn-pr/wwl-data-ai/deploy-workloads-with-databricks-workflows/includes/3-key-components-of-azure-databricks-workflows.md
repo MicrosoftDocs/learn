@@ -1,5 +1,3 @@
-## Understanding key components of Azure Databricks Workflows
-
 Azure Databricks Workflows consist of several key components that enable the orchestration and execution of data processing tasks efficiently in the cloud. Here are the main components:
 
 - **Jobs**: Jobs are the primary component in Databricks Workflows. They allow you to define and schedule automated tasks such as running notebooks, scripts, or compiled Java ARchives (JARs). Jobs can be triggered on a schedule or run manually, and they can be set up to handle dependencies and complex workflows.

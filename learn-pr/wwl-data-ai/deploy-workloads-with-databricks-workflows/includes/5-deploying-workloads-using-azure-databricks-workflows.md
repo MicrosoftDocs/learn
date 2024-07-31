@@ -1,5 +1,3 @@
-## Deploying workloads using Azure Databricks Workflows
-
 Deploying workloads using Azure Databricks Workflows involves several steps, from setting up your Databricks environment to orchestrating and monitoring your data pipelines. Here's a step-by-step guide to help you get started:
 
 ### Set Up Your Azure Databricks Environment

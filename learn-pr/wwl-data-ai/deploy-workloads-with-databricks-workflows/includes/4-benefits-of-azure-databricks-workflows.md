@@ -1,5 +1,3 @@
-## Exploring the benefits of Azure Databricks Workflows
-
 Azure Databricks Workflows offer several benefits that make them a powerful tool for managing and automating data processing tasks in the cloud. Here are some of the key advantages:
 
 ### Automation of Data Pipelines
