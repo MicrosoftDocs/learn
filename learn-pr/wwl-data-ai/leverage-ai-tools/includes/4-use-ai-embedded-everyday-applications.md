@@ -1,18 +1,12 @@
 ![A screenshot of Microsoft 365 Copilot in Outlook.](../media/4-outlook-example.png)
 
-To truly realize the potential of AI, it’s essential to bring AI to every employee in ways that are relevant and meaningful to their work. Microsoft makes this possible by embedding AI in the applications people use in their everyday routine. No code or data science expertise is required because AI is delivered as just another feature of a SaaS product. The result is a wide range of intelligent applications for business users.
-
-In this unit, we'll discuss how these intelligent business applications weave relevant AI capabilities into their existing workflows. Dynamics 365 helps workers from specific business lines and functions automate and improve certain tasks. Microsoft 365 does the same by addressing a more general audience. Let’s take a look at some examples of these applications that can help anyone use AI to get more done.
+To truly realize the potential of AI, it’s essential to bring AI to every employee in ways that are relevant and meaningful to their work. Microsoft makes this possible by embedding AI in the applications people use in their everyday routine. No code or data science expertise is required because AI is delivered as just another feature of a SaaS product. The result is a wide range of intelligent applications for business users. Let’s take a look at some examples of these applications that can help anyone use AI to get more done.
 
 ## Business functions
 
-Some AI solutions are specialized in helping solve problems and gain insight in some specific horizontal functions and sectors.
+Some AI solutions are specialized in helping solve problems and gain insight in some specific horizontal functions and sectors. These intelligent business applications weave relevant AI capabilities into their existing workflows. For example, Microsoft Dynamics 365 helps workers from specific business lines and functions automate and improve certain tasks. Microsoft 365 does the same by addressing a more general audience. 
 
-These solutions are often delivered as SaaS AI solutions, which deliver fast and cost-effective results. With powerful intelligence in their existing workflows, business users can be more proactive and effective in their core competencies. 
-
-**Microsoft Dynamics 365** is designed with this goal: improve the performance at certain key business functions and sectors. 
-
-Here are some examples of powerful scenarios where AI is already having proven, beneficial effects:
+These solutions are often delivered as SaaS AI solutions, which deliver fast and cost-effective results. With powerful intelligence in their existing workflows, business users can be more proactive and effective in their core competencies. Here are some examples of powerful scenarios where AI is already having proven, beneficial effects:
 
 |**Business function**|**Example scenario**|
 |-|-|
@@ -73,4 +67,4 @@ AI-powered search experiences like Microsoft Search can help business users wade
 
 Now is the time to empower your employees with the right AI tools to amplify their capabilities and achieve more. 
 
-In the next unit, we'll discuss Power Platform, which also offers AI features for people without data science expertise but does require a basic level of coding.
+In the next unit, we'll discuss Power Platform, which also offers AI features for people without data science expertise but can require a basic level of coding.

@@ -1,8 +1,8 @@
-AI embedded in everyday applications may not be enough to power the business applications an organization needs. In these cases, Power Platform is the next step towards more customizable AI solutions. It provides a simple, low-code way to introduce AI in your business applications without having to create or manage the AI yourself.
+AI embedded in everyday applications may not be enough to power the business applications an organization needs. In these cases, **Power Platform** is the next step towards more customizable AI solutions. It provides a simple, low-code way to introduce AI in your business applications without having to create or manage the AI yourself.
 
 ## What is Microsoft Power Platform?
 
-Microsoft Power Platform is a low-code or no-code set of services designed to simplify the process of building solutions. It provides building blocks that help teams work faster. Even if Power Platform isn't centered on AI, its services are often powered by AI and help you create smart solutions.
+Microsoft Power Platform provides low-code and no-code services designed to simplify the process of building technical solutions. It provides building blocks that help teams work faster. Even if Power Platform isn't centered on AI, its services are often powered by AI and help you create smart solutions.
 
 The Power Platform portfolio includes five different products: Power BI, Power Apps, Power Automate, Copilot Studio, and Power Pages. It also offers three additional tools: AI Builder, Microsoft Dataverse, and Connectors. Let's see what each of them can do for you.
 
@@ -42,7 +42,7 @@ AI Builder empowers developers to incorporate AI capabilities into their applica
 
 Dataverse acts as the storage solution in the Power Platform, enabling seamless integration with all its products. It serves as a central repository for data, allowing for efficient organization and accessibility.
 
-Power Platform is a suite of powerful tools designed to help businesses create apps, analyze data, automate tasks, build chatbots, and manage websites. With Power BI, you can get valuable insights from your data and make better decisions. Power Apps lets you easily build custom apps without coding, and AI Builder adds intelligent features like language analysis and sentiment analysis. Power Automate helps you automate repetitive tasks and save time, and Copilot Studio allows you to create chatbots that understand and respond to users. Plus, Data connectors ensure smooth integration between different components, and Dataverse provides a central place to store and access your data. By using these tools together, you can enhance productivity and make your business more efficient.
+In summary, Power Platform is a suite of powerful tools designed to help businesses create apps, analyze data, automate tasks, build chatbots, and manage websites. With Power BI, you can get valuable insights from your data and make better decisions. Power Apps lets you easily build custom apps without coding, and AI Builder adds intelligent features like language analysis and sentiment analysis. Power Automate helps you automate repetitive tasks and save time, and Copilot Studio allows you to create chatbots that understand and respond to users. Plus, Data connectors ensure smooth integration between different components, and Dataverse provides a central place to store and access your data. By using these tools together, you can enhance productivity and make your business more efficient.
 
 ## What is the business value of Microsoft Power Platform?
 
@@ -55,10 +55,8 @@ The diagram shows how this fusion development approach works.
 
 ![A screenshot of a graph showing the citizen developer creating apps, the professional developer adding custom functionality, and end users giving feedback.](../media/5-discover-how-microsoft-power-platform-2.png)
 
-### Use Microsoft Power Platform to build a smart inventory app
-
-Let's imagine a retail organization needs an app to manage their inventory. Traditionally, professional developers would build this, but that option would take more time. Thanks to Power Platform, the employees in charge of the inventory can become citizen developers and create an app tailored to what they know they need, based on their expertise.
-
-Citizen developers can use Power Apps to build this prototype of the inventory app. They can even explain in natural language their needs and Copilot can translate them to an actual app. Once this prototype is built, professional developers can fill in any potential gaps for further functionalities. Then, professional developers can develop an API to check the inventory in real time and update the data on the app. This data would be stored and managed in Microsoft Dataverse. With the information provided by the API, workflows can be created to automatically detect what's missing and replenish inventory with Power Automate. All these data and operations would be reflected in a Power BI report, so it's easier to understand what's happening with the inventory and take the best data-informed decisions.
-
-Each of the products and services we've covered are prebuilt AI models, so the user doesn't require any data science expertise. If your business requires more ambitious solutions, the next available AI tools require some degree of AI knowledge. To fully benefit from them, let's first learn more about how data science teams work and what's the typical machine learning lifecycle.
+>[!TIP]
+>**Customer story**: An energy provider has enabled over 4,300 Power Platform makers and created over 300 Power Platform solutions that generate almost $75 million in savings annually.
+>In a single example of how Power Platform adoption has benefited the company, IT help desk agents were often burdened with mundane and repetitive requests that led to increased wait times for workers and reduced overall productivity. Today, 25%-40% of help desk demand is now fulfilled by an AI-powered chatbot built using Microsoft Copilot Studio. 
+>The increased efficiency resulting from the chatbot has saved the company more than $1.1 million annually and given help desk agents more time to focus on issues that required human intervention—which has improved the overall service level for their customers. 
+>Read the full customer story here: [https://aka.ms/power-platform-customer-story](https://aka.ms/power-platform-customer-story)
