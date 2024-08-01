@@ -3,7 +3,7 @@ uid: learn.continuous-validate-test-mission-critical-workloads.design-chaos-expe
 title: Design chaos experiments
 metadata:
   title: Design chaos experiments
-  description: Learn how to design chaos experiments with Azure Chaos Studio.
+  description: Learn how to design chaos experiments and conduct failure mode analysis (FMA) by using Azure Chaos Studio.
   ms.date: 07/31/2024
   author: sebader
   ms.author: prwilk
