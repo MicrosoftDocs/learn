@@ -603,11 +603,11 @@
       "redirect_url": "/training/modules/introduction-sql-server-linux"
     },
     {
-      "source_path": "learn-sqlserver/run-sql-server-2017-linux-containers/3-create-custom-images.md",
+      "source_path_from_root": "/learn-sqlserver/run-sql-server-2017-linux-containers/3-create-custom-images.md",
       "redirect_url": "/training/modules/introduction-sql-server-linux"
     },
     {
-      "source_path": "learn-sqlserver/run-sql-server-2017-linux-containers/4-use-docker-compose-deploy-multiple-containers.md",
+      "source_path_from_root": "/learn-sqlserver/run-sql-server-2017-linux-containers/4-use-docker-compose-deploy-multiple-containers.md",
       "redirect_url": "/training/modules/introduction-sql-server-linux"
     },
     {
@@ -643,11 +643,11 @@
       "redirect_url": "/training/modules/introduction-sql-server-linux"
     },
     {
-      "source_path": "learn-sqlserver.automatically-tune-sql-server-linux.3-choose-use-query-store-automatic-tuning.md",
+      "source_path_from_root": "/learn-sqlserver.automatically-tune-sql-server-linux.3-choose-use-query-store-automatic-tuning.md",
       "redirect_url": "/training/modules/introduction-sql-server-linux"
     },
     {
-      "source_path": "learn-sqlserver.automatically-tune-sql-server-linux.4-exercise-monitor-sql-performance-linux.md",
+      "source_path_from_root": "/learn-sqlserver.automatically-tune-sql-server-linux.4-exercise-monitor-sql-performance-linux.md",
       "redirect_url": "/training/modules/introduction-sql-server-linux"
     },
     {
@@ -34985,8 +34985,7 @@
     },
     {
       "source_path_from_root": "/learn-pr/azure/intro-to-azure-database-for-mariadb/index.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/mariadb/whats-happening-to-mariadb",
-      "redirect_document)id": false
+      "redirect_url": "https://learn.microsoft.com/azure/mariadb/whats-happening-to-mariadb"
     },
     {
       "source_path_from_root": "/learn-pr/azure/introduction-to-ground-station/1-introduction.yml",
