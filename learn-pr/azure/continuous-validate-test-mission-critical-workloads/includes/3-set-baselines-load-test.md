@@ -47,35 +47,35 @@ You can specify these test criteria in JSON and use the API to add them to your 
 
 ```json
 [
-    {
-        "passFailMetrics": {
-            "<guid-1>": {
-                "clientmetric": "requests_per_sec",
-                "aggregate": "avg",
-                "condition": "<",
-                "value": 1200.0,
-                "actualValue": 0.0,
-                "result": null,
-                "action": "continue"
-            },
-            "<guid-2>": {
-                "clientmetric": "response_time_ms",
-                "aggregate": "avg",
-                "condition": ">",
-                "value": 75.0,
-                "actualValue": 0.0,
-                "action": "continue"
-            },
-            "<guid-3>": {
-                "clientmetric": "error",
-                "aggregate": "percentage",
-                "condition": ">",
-                "value": 0.0,
-                "actualValue": 0.0,
-                "action": "continue"
-            }
-        }
+  {
+    "passFailMetrics": {
+      "<guid-1>": {
+        "clientmetric": "requests_per_sec",
+        "aggregate": "avg",
+        "condition": "<",
+        "value": 1200.0,
+        "actualValue": 0.0,
+        "result": null,
+        "action": "continue"
+      },
+      "<guid-2>": {
+        "clientmetric": "response_time_ms",
+        "aggregate": "avg",
+        "condition": ">",
+        "value": 75.0,
+        "actualValue": 0.0,
+        "action": "continue"
+      },
+      "<guid-3>": {
+        "clientmetric": "error",
+        "aggregate": "percentage",
+        "condition": ">",
+        "value": 0.0,
+        "actualValue": 0.0,
+        "action": "continue"
+      }
     }
+  }
 ]
 ```
 

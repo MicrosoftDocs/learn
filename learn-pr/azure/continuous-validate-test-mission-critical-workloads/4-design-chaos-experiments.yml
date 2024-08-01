@@ -44,4 +44,4 @@ quiz:
       explanation: "Incorrect. Availability zones aren't a prerequisite to use Azure Chaos Studio."
     - content: "Azure Backup"
       isCorrect: false
-      explanation: "Correct.Azure Backup isn't a prerequisite to use Azure Chaos Studio."
+      explanation: "Correct. Azure Backup isn't a prerequisite to use Azure Chaos Studio."

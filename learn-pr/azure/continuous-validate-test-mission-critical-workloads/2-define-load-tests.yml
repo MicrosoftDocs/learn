@@ -30,7 +30,7 @@ quiz:
       explanation: "Incorrect. Some components might not cause a service degradation when they fail. Examples are flows that aren't user facing, background processes, and batch processing."
     - content: "No. Not all components have the same requirements for availability and performance."
       isCorrect: true
-      explanation: "Correct. For example, an outage of a component that isn't user facing might not result in a service degradation."
+      explanation: "Correct. For example, an outage of a component that isn't user-facing might not result in a service degradation."
   - content: "Can a load test help you evaluate the expected performance of a user flow?"
     choices:
     - content: "Yes. A load test can help identify the performance of a user flow."
