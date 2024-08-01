@@ -8,21 +8,21 @@ All Azure virtual machines have at least two disks: an operating system disk and
 
 #### Operating system disk
 
-Every virtual machine has one attached operating system disk. The OS disk has a pre-installed operating system, which is selected when the virtual machine is created. The OS disk is registered as a SATA drive (Serial Advanced Technology Attachment) and labeled as the `C:` drive by default.
+Every virtual machine has one attached operating system disk. The OS disk has a preinstalled operating system, which is selected when the virtual machine is created. The OS disk is registered as a SATA drive (Serial Advanced Technology Attachment) and labeled as the `C:` drive by default.
 
 #### Temporary disk
 
 Data on a temporary disk might be lost during a maintenance event or when you redeploy a virtual machine. During a standard reboot of the virtual machine, the data on the temporary drive should persist. However, there are cases where the data might not persist, such as moving to a new host. Therefore, any data on the temporary drive shouldn't be data that's critical to the system.
 
 - On Windows virtual machines, the temporary disk is labeled as the `D:` drive by default. This drive is used for storing the **pagefile.sys** file.
-- On Linux virtual machines, the temporary disk is typically `/dev/sdb`. This disk is formatted and mounted to `/mnt` by the Azure Linux Agent.
+- On Linux virtual machines, the temporary disk is typically `/dev/sdb`. Azure Linux Agent formats this disk and mounts it to `/mnt`.
 
 > [!Important]
 > Don't store data on the temporary disk. This disk provides temporary storage for applications and processes and is intended to only store data like page or swap files.
 
 #### Data disks
 
-A data disk is a managed disk that's attached to a virtual machine to store application data, or other data you need to keep. Data disks are registered as SCSI drives and are labeled with a letter you choose. The size of a virtual machine determines how many data disks you can attach and the type of storage you can use to host the data disks.
+A data disk is a managed disk attached to a virtual machine to store application data or other data you need to keep. Data disks are registered as SCSI drives and are labeled with a letter you choose. The size of a virtual machine determines how many data disks you can attach and the type of storage you can use to host the data disks.
 
 ### Things to consider when choosing storage for your virtual machines
 

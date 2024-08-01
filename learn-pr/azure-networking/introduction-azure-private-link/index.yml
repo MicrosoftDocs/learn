@@ -8,7 +8,7 @@ metadata:
   author: asudbring
   ms.author: allensu
   ms.topic: module-intro-to-product
-  ms.service: private-link
+  ms.service: azure-private-link
 title: "Introduction to Azure Private Link"
 summary: Describe how Azure Private Link enables private connectivity to Azure services, including its features, how it works, and its use cases.
 abstract: |
