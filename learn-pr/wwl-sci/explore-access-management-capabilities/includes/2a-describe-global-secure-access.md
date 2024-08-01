@@ -5,9 +5,15 @@ Microsoft Entra Internet Access secures access to Software as a Service (SaaS) a
 
 Microsoft Entra Private Access provides your users, whether in an office or working remotely, secure access to your private, corporate resources.
 
-Microsoft Entra Internet Access and Microsoft Entra Private Access come together as a solution that converges Zero Trust network, identity, and endpoint access controls so that you can secure access to any app or resource, from any location, device, or identity. This type of solution represents a new network security category called Security Service Edge (SSE).
+Microsoft Entra Internet Access and Microsoft Entra Private Access come together as a solution that converges Zero Trust network, identity, and endpoint access controls so that you can secure access to any app or resource, from any location, device, or identity. This type of solution represents a new network security category called Security Service Edge (SSE).  
 
-Microsoft's Security Service Edge solution, Global Secure Access, provides advanced protections for your internet-based resources and resources running in your private cloud or on-premises infrastructure.
+SSE helps address security challenges such as:
+
+- The need to reducing the risk of lateral movement through a compromised VPN tunnel.
+- The need to put a perimeter around internet-based assets.
+- The need to improve service in remote office locations, such branch offices.
+
+Microsoft's Security Service Edge solution, Global Secure Access, provides advanced protections for your internet-based resources and resources running in your private cloud or on-premises infrastructure, to help address security challenges.
 
 The solution employs a Global Secure Access client that gives organizations control over network traffic at the end-user computing device. Organizations gain the ability to route specific traffic profiles through Microsoft Entra Internet Access and Microsoft Entra Private Access. Routing traffic in this method allows for more controls enabled by deep integration with conditional access policies and risks assessed in real time, across identity, device, location, and applications to protect any app or resource.
 
@@ -44,6 +50,8 @@ Some of the key features include:
 - Internet Access traffic forwarding profile policies to control which internet sites can be accessed to ensure remote workers connect to the internet in a controlled and secure way.
 - Web content filtering to regulate access to websites based on their content categories and domain names.
 - and many more...
+
+
 
 ### Global Secure Access Dashboard
 
