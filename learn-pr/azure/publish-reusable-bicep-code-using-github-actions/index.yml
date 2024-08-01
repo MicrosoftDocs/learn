@@ -6,7 +6,7 @@ metadata:
   description: Build GitHub Actions deployment workflows for template specs and Bicep modules. Lint your Bicep code, apply versioning, and publish it to Azure or to a Bicep registry.
   ms.service: azure-resource-manager
   manager: jasongroce
-  ms.date: 06/29/2023
+  ms.date: 07/22/2024
   author: mumian
   ms.author: jgao
   ms.topic: module
@@ -32,13 +32,15 @@ prerequisites: |
 
   To work through the exercises in the module, you'll need:
 
-  - An Azure account that has the ability to create resource groups and Microsoft Entra applications.
+  - An Azure account that has the ability to assign roles and to create resource groups and Microsoft Entra applications.
   - A GitHub account.
 
   You'll also need the following items installed locally:
 
   - [Visual Studio Code](https://code.visualstudio.com)
+  - The [Azure Account extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
+  - The [jq](https://jqlang.github.io/jq/download/) command-line JSON processor
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version
   - [Git](https://git-scm.com/download)
 iconUrl: /training/achievements/bicep/publish-reusable-bicep-code-using-github-actions.svg

@@ -8,6 +8,7 @@ metadata:
   ms.author: scottpolly
   ms.topic: module
   ms.service: machine-learning
+  ms.collection: ce-skilling-ai-copilot
 title: Train and understand regression models in machine learning
 summary: Regression is arguably the most widely used machine learning technique, commonly underlying scientific discoveries, business planning, and stock market analytics. This learning material takes a dive into some common regression analyses, both simple and more complex, and provides some insight on how to assess model performance.
 abstract: | 
