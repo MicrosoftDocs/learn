@@ -2,7 +2,7 @@ RDP Shortpath for managed networks provides a direct UDP-based transport between
 
 QoS in Azure Virtual Desktop allows real-time RDP traffic that's sensitive to network delays to "cut in line" in front of traffic that's less sensitive. Example of such less sensitive traffic would be a downloading a new app, where an extra second to download isn't a large deal. QoS uses Windows Group Policy Objects to identify and mark all packets in real-time streams and help your network to give RDP traffic a dedicated portion of bandwidth.
 
-If you support a large group of users experiencing any of the problems described in this article, you probably need to implement QoS. A small business with few users might not need QoS, but it should be helpful even there.
+If you support a large group of users experiencing any of the problems described in this unit, you probably need to implement QoS. A small business with few users might not need QoS, but it should be helpful even there.
 
 Without some form of QoS, you might see the following issues:
 

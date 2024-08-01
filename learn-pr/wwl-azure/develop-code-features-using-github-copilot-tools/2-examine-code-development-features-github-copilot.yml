@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-code-features-using-github-copilot-tools.examine-code-development-features-github-copilot
+title: Examine the code development features of GitHub Copilot
+metadata:
+  title: Examine the code development features of GitHub Copilot
+  description: Examine the code development features of GitHub Copilot
+  author: wwlpublish
+  ms.author: cahowd
+  ms.date: 07/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-examine-code-development-features-github-copilot.md)]

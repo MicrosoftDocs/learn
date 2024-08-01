@@ -3,22 +3,30 @@ uid: learn.wwl.explore-azure-governance-manageability
 metadata:
   title: Explore governance and manageability for SAP on Azure
   description: "This module explores using the Azure Governance collection of concepts and services that are designed to enable management of Azure resources at scale. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 04/21/2023
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: sap-on-azure
+  ai-usage: human-only
 title: Explore governance and manageability for SAP on Azure
 summary: This module explores using the Azure Governance collection of concepts and services that are designed to enable management of Azure resources at scale
 abstract: |
   After completing this module, you will be able to:
-  - Explore Azure Resource Manager and Azure Resource Manager templates.
-  - Examine role-based access control and Azure Policy.
-  - Explore security and compliance services.
+
+  -   Explore Azure Resource Manager and Azure Resource Manager templates.
+
+  -   Examine role-based access control and Azure Policy.
+
+  -   Explore security and compliance services.
 prerequisites: |
   Before taking this training, you should complete:
-  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
-  - SAP HANA or NetWeaver training.
+
+  -   Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+
+  -   SAP HANA or NetWeaver training.
 iconUrl: /training/achievements/governance-manageability.svg
 levels:
 - advanced

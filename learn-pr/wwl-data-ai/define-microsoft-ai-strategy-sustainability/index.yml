@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.define-microsoft-ai-strategy-sustainability
+metadata:
+  title: Define a Microsoft AI strategy to create business value in sustainability
+  description: Discover AI use cases and scenarios for sustainability. Get familiar with Microsoft AI tools and services for sustainability. Learn from real success stories.
+  author: wwlpublish
+  ms.author: rcaper
+  ms.date: 05/22/2024
+  ms.service: microsoft-cloud-sustainability
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+  ai-usage: human-only
+title: Define a Microsoft AI strategy to create business value in sustainability
+summary: This module is designed to help sustainability professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+abstract: |
+  -   Identify AI use cases in sustainability.
+
+  -   Examine available AI tools and resources for sustainability scenarios.
+
+  -   Discover insights from sustainability-specific AI success stories.
+prerequisites: |
+  -   Basic understanding of AI concepts.
+
+  -   Basic understanding of sustainability concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+products:
+- azure-openai
+units:
+- learn.wwl.define-microsoft-ai-strategy-sustainability.introduction
+- learn.wwl.define-microsoft-ai-strategy-sustainability.explore-ai-goals-challenges-sustainability
+- learn.wwl.define-microsoft-ai-strategy-sustainability.discover-ai-sustainability
+- learn.wwl.define-microsoft-ai-strategy-sustainability.discover-ai-power-global-energy-transition
+- learn.wwl.define-microsoft-ai-strategy-sustainability.discover-ai-protect-natural-resources
+- learn.wwl.define-microsoft-ai-strategy-sustainability.discover-ai-enable-green-mobility
+- learn.wwl.define-microsoft-ai-strategy-sustainability.knowledge-check
+- learn.wwl.define-microsoft-ai-strategy-sustainability.summary
+badge:
+  uid: learn.wwl.define-microsoft-ai-strategy-sustainability.badge

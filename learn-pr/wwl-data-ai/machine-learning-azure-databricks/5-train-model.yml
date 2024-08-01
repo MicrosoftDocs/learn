@@ -3,12 +3,13 @@ uid: learn.wwl.machine-learning-azure-databricks.train-model
 title: Train a machine learning model
 metadata:
   title: Train a machine learning model
-  description: "Train a machine learning model"
-  ms.date: 03/22/2023
+  description: Train a machine learning model
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-databricks
+  ms.date: 08/29/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/5-train-model.md)]

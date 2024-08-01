@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.governance-security.azure-key-vault
+title: Azure Key Vault
+metadata:
+  title: Azure Key Vault
+  description: "Azure Key Vault"
+  ms.date: 07/25/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-azure-key-vault.md)]

@@ -1,8 +1,8 @@
 The Batch client API allows an app to monitor the current status of pools, nodes, jobs, and tasks.
 
-To complete your companies console app to convert videos, you want to have the app monitor and report on the status of the file conversions. You'd also like to reduce the costs your Batch will incur by adding the ability for the app to delete the jobs and pool once the videos are converted. To reduce the file storage costs, you'd also like to remove the uploaded video files.
+To complete your company's console app to convert videos, you want to have the app monitor and report on the status of the file conversions. You'd also like to reduce the costs your Batch will incur by adding the ability for the app to delete the jobs and pool once the videos are converted. To reduce the file storage costs, you'd also like to remove the uploaded video files.
 
-The app will check for an existing pool, and create one if it doesn't exist. The job and tasks will be started, and then monitored. Once the tasks have completed successfully, the app will give the option of deleting the created job and pool. The app will automatically delete the uploaded videos to save on blob storage costs.
+The app checks for an existing pool and creates one if it doesn't exist. The job and tasks are started, then monitored. Once the tasks have completed successfully, the app presents the option to delete the created job and pool. The app automatically deletes the uploaded videos to save on blob storage costs.
 
 ## Add monitoring
 
@@ -11,7 +11,9 @@ The app will check for an existing pool, and create one if it doesn't exist. The
     ```bash
     code Program.cs
     ```
-1. Add the following method, `MonitorTasksAsync()` to **Program.cs** to monitor job tasks. 
+
+1. Add the following method, `MonitorTasksAsync()` to **Program.cs** to monitor job tasks.
+
     ```csharp
     private static async Task<bool> MonitorTasksAsync(BatchClient batchClient, string jobId, TimeSpan timeout)
     {
@@ -69,7 +71,7 @@ The app will check for an existing pool, and create one if it doesn't exist. The
 
     The `TaskStateMonitor` object is called and will return when the state of all the tasks is (`TaskState.Completed`). The app will time out if it has to wait longer than the `timeout` value.
 
-    This method makes use of `batchClient.JobOperations.ListTasks` to get the current state of tasks on the Batch account. These calls can be filtered to only return the information we need by passing a `ODATADetailLevel` parameter. Once all the tasks have completed, the code needs to check that all of them completed successfully. So using a filter of `"executionInfo/result eq 'Failure'"` with the `ListTasks` call will return all the tasks that failed.
+    This method makes use of `batchClient.JobOperations.ListTasks` to get the current state of tasks on the Batch account. We can filter these calls to only return the information we need by passing a `ODATADetailLevel` parameter. Once all the tasks have completed, the code needs to check that all of them completed successfully, so using a filter of `"executionInfo/result eq 'Failure'"` with the `ListTasks` call returns all the tasks that failed.
 
 1. Add a call to the new `MonitorTasksAsync()` method inside the using block in `Main()`, and store the task list returned from the `AddTaskAsync` call.
 
@@ -93,10 +95,9 @@ The app will check for an existing pool, and create one if it doesn't exist. The
     }
     ```
 
-
 ## Clean up
 
-1. Inside the using block, bellow the call to the `MonitorTasks` method call, add this clean up code.
+1. Inside the using block, below the call to the `MonitorTasks` method call, add this cleanup code.
 
     ```csharp
     // Delete input container in storage
@@ -124,9 +125,9 @@ The app will check for an existing pool, and create one if it doesn't exist. The
     }
     ```
 
-    The code above deletes the input container, which contains all the uploaded videos.
+    The preceding code deletes the input container, which contains all the uploaded videos.
 
-    Then the terminal prompts the user to choose to delete the job and pool. The batchClient enables the app to delete these components.
+    Then, the terminal prompts the user to choose to delete the job and pool. The `batchClient` enables the app to delete these components.
 
 ## Test the console app
 
@@ -138,9 +139,9 @@ The app will check for an existing pool, and create one if it doesn't exist. The
     dotnet run
     ```
 
-1. You should see the below messages written to the terminal.
+1. You should get output that resembles the following:
 
-    ```bash
+    ```output
     Creating container [input].
     Creating container [output].
     Uploading file ~\cutifypets\InputFiles\3.mp4 to container [input]...
@@ -163,7 +164,7 @@ The app will check for an existing pool, and create one if it doesn't exist. The
     Sample complete, hit ENTER to exit...
     ```
 
-1. However, the app will fail if the job from the previous run still exists. As the previous app didn't have the job clean up code. You can delete the job in the Azure portal, or in the Cloud Shell with:
+1. However, the app will fail if the job from the previous run still exists, because the previous app didn't have the job clean up code. You can delete the job in the Azure portal, or in the Cloud Shell with:
 
     ```azurecli
     az batch job delete --job-id WinFFmpegJob \
@@ -174,12 +175,12 @@ The app will check for an existing pool, and create one if it doesn't exist. The
     Are you sure you want to perform this operation? (y/n):
     ```
 
-    At the prompt type **y**.
+    At the prompt, type **y**.
 
 1. The console app will run much faster this time as the nodes (three virtual machines running Windows 2012) will be idle and waiting for a job to run.
 
 > [!TIP]
-> There is a fully commented and working version of the app on GitHub at https://github.com/MicrosoftDocs/mslearn-apps-and-batch
+> There's a [fully commented and working version of the app on GitHub](https://github.com/MicrosoftDocs/mslearn-apps-and-batch).
 
 <!-- https://github.com/PhilStollery/learn-pr/tree/NEW-Create-an-application-that-runs-parallel-compute-jobs-with-azure-batch/learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/resources/cutifypets
 Git code repo updated -->

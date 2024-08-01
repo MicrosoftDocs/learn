@@ -5,11 +5,10 @@ metadata:
   unitType: Knowledge_check
   title: Knowledge check
   description: This is a knowledge check unit.
-  ms.date: 12/27/2021
-  author: AnuSridhar-25
-  ms.author: v-anursr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/07/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   questions:
@@ -40,9 +39,9 @@ quiz:
     - content: "SAS"
       isCorrect: false
       explanation: "Incorrect. Blob Storage doesn’t support SAS authentication."
-    - content: "Azure AD authentication"
+    - content: "Microsoft Entra authentication"
       isCorrect: false
-      explanation: "Incorrect. Blob Storage doesn’t support Azure AD authentication."
+      explanation: "Incorrect. Blob Storage doesn’t support Microsoft Entra authentication."
     - content: "Local users with either password or SSH key pairs "
       isCorrect: true
       explanation: "Correct. To grant access to a connecting client, the storage account must have an identity associated with that credential. That identity is called a local user."

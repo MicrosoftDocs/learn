@@ -3,12 +3,13 @@ uid: learn.wwl.explore-azure-governance-manageability.automation
 title: Explore Azure Automation
 metadata:
   title: Explore Azure Automation
-  description: "Explore Azure Automation"
-  ms.date: 04/21/2023
+  description: "Automate frequent, time-consuming, and error-prone cloud management tasks."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/9-explore-azure-automation.md)]

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.maintain-azure-cognitive-search-solution.exercise-debug-search
+title: Exercise - Debug search issues
+metadata:
+  title: Exercise - Debug search issues
+  description: Exercise to debug search issues.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 09/27/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+azureSandbox: false
+labModal: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/08-exercise-debug-search.md)]

@@ -4,56 +4,55 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Demonstrate your understanding of Azure Arc data controller.
-  ms.date: 12/19/2022
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/22/2024
+  author: MikeRayMSFT
+  ms.author: mikeray
+  ms.topic: unit
 durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: 'A company must maintain its data services on-premises due to government regulations and business policies. Its on-premises datacenter does not allow a direct connection to the internet. Which connectivity mode must be used in deploying the Azure Arc data controller?'
+  - content: "A company must maintain its data services on-premises due to government regulations and business policies. Its on-premises datacenter doesn't allow a direct connection to the internet. Which connectivity mode must be used in deploying the Azure Arc data controller?"
     choices:
-    - content: 'Directly connected'
+    - content: "Directly connected"
       isCorrect: false
-      explanation: 'Incorrect. This requires the ability to have a direct connection to the Azure subscription.'
-    - content: 'Indirectly connected'
+      explanation: "Incorrect. This requires the ability to have a direct connection to the Azure subscription."
+    - content: "Indirectly connected"
       isCorrect: true
-      explanation: 'Correct. This allows the ability to configure, manage and maintain the Arc-enabled data services without a direct connection to the Azure subscription.'
-    - content: 'Never connected'
+      explanation: "Correct. This allows the ability to configure, manage, and maintain the Arc-enabled data services without a direct connection to the Azure subscription."
+    - content: "Never connected"
       isCorrect: false
-      explanation: 'Incorrect. Never connected is currently not supported.'
-  - content: 'Which service is not supported in an indirectly connected mode data controller deployment?'
+      explanation: "Incorrect. Never connected is currently not supported."
+  - content: "Which service isn't supported in an indirectly connected mode data controller deployment?"
     choices:
-    - content: 'Billing'
+    - content: "Billing"
       isCorrect: false
-      explanation: 'Incorrect. Regular exports and uploads to Azure are required.'
-    - content: 'Auto upgrade and patching'
+      explanation: "Incorrect. Regular exports and uploads to Azure are required."
+    - content: "Auto upgrade and patching"
       isCorrect: false
-      explanation: 'Incorrect. you can pull/push container images to a local registry.'
-    - content: 'Azure Active Directory Authentication'
+      explanation: "Incorrect. You can pull/push container images to a local registry."
+    - content: "Microsoft Entra authentication"
       isCorrect: true
-      explanation: 'Correct. Indirectly connected mode supports Kubernetes authentication Active Directory for SQL endpoints.'
-  - content: 'Which deployment options can be used for an indirectly connected mode data controller?'
+      explanation: "Correct. Indirectly connected mode supports Kubernetes authentication Active Directory for SQL endpoints."
+  - content: "Which deployment options can you use for an indirectly connected mode data controller?"
     choices:
-    - content: 'Azure portal'
+    - content: "Azure portal"
       isCorrect: false
-      explanation: 'Incorrect. The Azure portal is only supported in directly connected mode deployments.'
-    - content: 'Azure Cloud Shell'
+      explanation: "Incorrect. The Azure portal is only supported in directly connected mode deployments."
+    - content: "Azure Cloud Shell"
       isCorrect: true
-      explanation: 'Correct. Indirectly connected mode deployments only support CLI commands.'
-    - content: 'SQL Server Management Studio'
+      explanation: "Correct. Indirectly connected mode deployments only support CLI commands."
+    - content: "SQL Server Management Studio"
       isCorrect: false
-      explanation: 'Incorrect. Indirectly connected mode deployments support Azure Data Studio, but not SQL Server Management Studio.'
-  - content: 'Which services does the Azure Arc data controller not perform?'
+      explanation: "Incorrect. Indirectly connected mode deployments support Azure Data Studio, but not SQL Server Management Studio."
+  - content: "Which services does the Azure Arc data controller not perform?"
     choices:
-    - content: 'Backup'
+    - content: "Backup"
       isCorrect: false
-      explanation: 'Incorrect. The data controller does perform backups.'
-    - content: 'Scaling'
+      explanation: "Incorrect. The data controller does perform backups."
+    - content: "Scaling"
       isCorrect: false
-      explanation: 'Incorrect. You can scale the data controller by using the UI and Azure CLI.'
-    - content: 'Application migrations'
+      explanation: "Incorrect. You can scale the data controller by using the UI and Azure CLI."
+    - content: "Application migrations"
       isCorrect: true
-      explanation: 'Correct. The data controller does not migrate your applications. You are responsible for updating connection strings and application code as needed after migrating to an Azure Arc-enabled data controller.'
+      explanation: "Correct. The data controller doesn't migrate your applications. You're responsible for updating connection strings and application code as needed after migrating to an Azure Arc-enabled data controller."

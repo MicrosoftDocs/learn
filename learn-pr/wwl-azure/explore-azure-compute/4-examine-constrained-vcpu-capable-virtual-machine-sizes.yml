@@ -3,12 +3,13 @@ uid: learn.wwl.explore-azure-compute.examine-constrained-vcpu-capable-virtual-ma
 title: Examine constrained vCPU capable virtual machine sizes
 metadata:
   title: Examine constrained vCPU capable virtual machine sizes
-  description: "Examine constrained vCPU capable virtual machine sizes"
-  ms.date: 04/21/2023
+  description: "Examine constrained vCPU capable virtual machine sizes."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/4-examine-constrained-vcpu-capable-virtual-machine-sizes.md)]

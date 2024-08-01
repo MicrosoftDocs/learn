@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.close-out-microsoft-learn-educators-course
+metadata:
+  title: Close out a Microsoft Learn for Educators course
+  description: "The Microsoft Learn for Educators program can help you prepare to deliver a class and empower your students with the technical skills and industry recognized credentials needed to prepare them for their future careers."
+  ms.date: 07/02/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: module-intro-to-product
+  ms.service: azure
+  ai-usage: human-only
+title: Close out a Microsoft Learn for Educators course
+summary: The Microsoft Learn for Educators program can help you prepare to deliver a class and empower your students with the technical skills and industry recognized credentials needed to prepare them for their future careers.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Review your certification plan.
+
+  -   Help improve MSLE.
+
+  -   Certify your students and connect them to jobs.
+
+  -   Determine what you teach next.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- higher-ed-educator
+products:
+- azure
+units:
+- learn.wwl.close-out-microsoft-learn-educators-course.introduction
+- learn.wwl.close-out-microsoft-learn-educators-course.review-your-certification-plan
+- learn.wwl.close-out-microsoft-learn-educators-course.help-improve-microsoft-learn-educators
+- learn.wwl.close-out-microsoft-learn-educators-course.certify-your-students-connect-them-jobs
+- learn.wwl.close-out-microsoft-learn-educators-course.determine-what-you-will-teach-next
+- learn.wwl.close-out-microsoft-learn-educators-course.knowledge-check
+- learn.wwl.close-out-microsoft-learn-educators-course.summary
+badge:
+  uid: learn.wwl.close-out-microsoft-learn-educators-course.badge

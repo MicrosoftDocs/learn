@@ -3,12 +3,13 @@ uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets.exercis
 title: Exercise - Explore the workspace
 metadata:
   title: Exercise - Explore the workspace
-  description: "Exercise - Explore the workspace"
-  ms.date: 01/05/2023
+  description: Exercise - Explore the workspace
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/09/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-explore-workspace.md)]

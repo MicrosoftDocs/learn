@@ -3,14 +3,15 @@ uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search.exercise-knowl
 title: Exercise - Create a knowledge store
 metadata:
   title: Exercise - Create a knowledge store
-  description: "Exercise - Create a knowledge store"
-  ms.date: 07/30/2021
+  description: Exercise - Create a knowledge store
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 12/11/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
-labId: 93861
+labId: 152396
 labModal: true
 durationInMinutes: 30
 content: |

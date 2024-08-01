@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authorization-microsoft-entra-id.create-new-custom-roles-microsoft-entra-id
+title: Create and assign a custom role in Microsoft Entra ID
+metadata:
+  title: Create and assign a custom role in Microsoft Entra ID
+  description: "Create and assign a custom role in Microsoft Entra ID"
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/10-create-new-custom-roles-microsoft-entra-id.md)]

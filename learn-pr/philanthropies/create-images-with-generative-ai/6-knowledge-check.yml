@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.create-images-with-generative-ai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the 'Create images with generative AI' module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 02/29/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "What's the role of AI-generated images in training programs?"
+      choices:
+        - content: "They restrict trainers to experiment with different styles and techniques due to their limitations."
+          isCorrect: false
+          explanation: "Incorrect. AI-generated images allow trainers to experiment with many different styles and techniques."
+        - content: "They discourage collaboration as it is an independent activity."
+          isCorrect: false
+          explanation: "Incorrect. The use of AI-generated images increases creativity, innovation, and collaboration."
+        - content: "They can be incorporated into brainstorming sessions."
+          isCorrect: true
+          explanation: "Correct.  AI-generated images can be incorporated into art and design lessons."
+    - content: "What's the impact of the quality of the prompt on the AI-generated image?"
+      choices:
+        - content: "The quality of the prompt determines the style of the AI-generated image."
+          isCorrect: false
+          explanation: "Incorrect. The prompt helps determine style but does not necessarily impact overall quality."
+        - content: "The quality of the prompt determines the quality of the AI-generated image."
+          isCorrect: true
+          explanation: "Correct. The quality of the generated images depends on the quality of the prompt."
+        - content: "The quality of the prompt affects the speed of generating the AI image."
+          isCorrect: false
+          explanation: "Incorrect. The quality of the prompt does not affect the speed of generating the AI image."
+    - content: "What's the recommended action when an AI-generated image doesn't align with your expectations?"
+      choices:
+        - content: "Discard the image and start over with a new prompt."
+          isCorrect: false
+          explanation: "Incorrect. While you can discard the image and start again with a new prompt, the recommended action is to revisit and revise your original prompt."
+        - content: "Revisit and revise your original prompt."
+          isCorrect: true
+          explanation: "Correct. The recommended action is to revisit and revise your original prompt."
+        - content: "Tell the model what it did incorrectly."
+          isCorrect: false
+          explanation: "Incorrect. While providing feedback to the model is mentioned as an option, it doesn't refer to only sharing negative feedback."
+          

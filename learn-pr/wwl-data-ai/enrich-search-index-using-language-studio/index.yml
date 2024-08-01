@@ -1,23 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.enrich-search-index-using-language-studio
 metadata:
-  title: Enrich a search index using Language Studio
-  description: "Azure Cognitive Service for language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions."
-  ms.date: 09/21/2022
+  title: Enrich your data with Azure AI Language
+  description: Azure AI Language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions.
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Enrich a search index using Language Studio
-summary: Azure Cognitive Service for language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions.
+  ms.author: berryivor
+  ms.date: 09/27/2023
+  ms.service: cognitive-search
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+title: Enrich your data with Azure AI Language
+summary: Azure AI Language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions.
 abstract: |
   In this module, you'll learn how to:
-  - Use Language Studio to enrich Azure Cognitive Search indexes
-  - Enrich a cognitive search index with custom classes
+  - Use Azure AI Language to enrich Azure AI Search indexes.
+  - Enrich an AI Search index with custom classes.
 prerequisites: |
   *   Familiarity with Microsoft Azure
   *   Application development experience with C# or Python
-  *   Experience of building a basic search solution with Azure Cognitive Search. If you've not completed the [Create an Azure Cognitive Search](/training/modules/create-azure-cognitive-search-solution) solution module, you should do so before starting this module.
+  *   Experience of building a basic search solution with Azure AI Search. If you've not completed the [Create an Azure AI Search](/training/modules/create-azure-cognitive-search-solution) solution module, you should do so before starting this module.
 iconUrl: /training/achievements/enrich-search-index-using-language-studio.svg
 levels:
 - advanced

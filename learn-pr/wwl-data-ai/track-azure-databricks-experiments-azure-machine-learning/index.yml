@@ -6,8 +6,9 @@ metadata:
   ms.date: 03/22/2023
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: machine-learning 
+  ms.collection: wwl-ai-copilot
 title: Track Azure Databricks experiments in Azure Machine Learning
 summary: Azure Machine Learning is a scalable cloud platform for training, deploying, and managing machine learning solutions.
 abstract: |

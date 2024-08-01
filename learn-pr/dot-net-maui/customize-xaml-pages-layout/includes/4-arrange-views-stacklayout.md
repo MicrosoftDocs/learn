@@ -1,4 +1,4 @@
-Stacking views in a vertical or horizontal list is a common design for user interfaces. Think about some common pages in applications. Examples include sign in, register, and settings pages. All these pages typically contain stacked content. In this unit, you'll learn how to arrange views in a vertical or horizontal list by using `StackLayout` and with the new optimized `VerticalStackLayout` and `HorizontalStackLayout`.
+Stacking views in a vertical or horizontal list is a common design for user interfaces. Think about some common pages in applications. Examples include sign in, register, and settings pages. All these pages typically contain stacked content. In this unit, you learn how to arrange views in a vertical or horizontal list by using `StackLayout` and the optimized StackLayout controls `VerticalStackLayout` and `HorizontalStackLayout`.
 
 ## What is a StackLayout, VerticalStackLayout, and HorizontalStackLayout?
 
@@ -6,9 +6,9 @@ Stacking views in a vertical or horizontal list is a common design for user inte
 
 :::image type="content" source="../media/4-stack-layout.png" alt-text="Illustration showing four blocks stacked vertically from top to bottom of the screen.":::
 
-- `StackLayout` has a list of `Children` that it inherits from its base class `Layout<T>`. The list stores views, which is helpful because most UI elements you'll work with in .NET MAUI derive from `View`. Layout panels also derive from `View`, which means you can nest panels if you need to.
+- `StackLayout` has a list of `Children` that it inherits from its base class `Layout<T>`. The list stores views, which is helpful because most UI elements you work with in .NET MAUI derive from `View`. Layout panels also derive from `View`, which means you can nest panels if you need to.
 
-- `VerticalStackLayout` and `HorizontalStackLayout` are the preferred layouts to use when you know that your orientation won't change as they are optimized for performance.
+- `VerticalStackLayout` and `HorizontalStackLayout` are the preferred layouts to use when you know that your orientation isn't going to change, because they're optimized for performance.
 
 ## How to add views to a StackLayout
 
@@ -37,7 +37,7 @@ public partial class MainPage : ContentPage
 }
 ```
 
-You can add the views to the `Children` collection and `StackLayout` automatically positions the views in a vertical list. Here's what it will look like on an Android device:
+You can add the views to the `Children` collection and `StackLayout` automatically positions the views in a vertical list. Here's what it looks like on an Android device:
 
 :::image type="content" source="../media/4-stack-layout-rendered.png" alt-text="Screenshot showing three boxes stacked vertically at the top of the screen on an Android device.":::
 
@@ -45,15 +45,15 @@ To do the same thing in XAML, nest the children inside the `StackLayout` tags. T
 
 ```xaml
 <StackLayout>
-    <BoxView Color="Silver" />
-    <BoxView Color="Blue" />
-    <BoxView Color="Gray" />
+    <BoxView Color="Silver" HeightRequest="40" />
+    <BoxView Color="Blue" HeightRequest="40" />
+    <BoxView Color="Gray" HeightRequest="40" />
 </StackLayout>
 ```
 
 ## How views are ordered in a StackLayout
 
-The order of the views in the `Children` collection determines their layout order when they're rendered. For views added in XAML, the textual order is used. For children added in code, the layout order is determined by the order in which you called the `Add` method.
+The order of the views in the `Children` collection determines their layout order when they're rendered. For views added in XAML, the textual order is used. For children added in code, the order in which you call the `Add` method determines the layout order.
 
 ## How to change the space between views in a StackLayout
 
@@ -61,9 +61,9 @@ It's common to want some space between the children of a `StackLayout`. `StackLa
 
 ```xaml
 <StackLayout Spacing="30">
-    <BoxView Color="Silver" />
-    <BoxView Color="Blue" />
-    <BoxView Color="Gray" />
+    <BoxView Color="Silver" HeightRequest="40" />
+    <BoxView Color="Blue" HeightRequest="40" />
+    <BoxView Color="Gray" HeightRequest="40" />
 </StackLayout>
 ```
 
@@ -97,27 +97,26 @@ The following screenshot shows how the UI would render on an Android device:
 
 Every view has a `VerticalOptions` and `HorizontalOptions` property. You can use these properties to set the position of the view within the rectangular display area provided by the layout panel.
 
-As noted above, with `StackLayout`, the behavior of the `LayoutOptions` properties depends on the `Orientation` property of the `StackLayout`. `StackLayout` uses the `LayoutOptions` property in the direction opposite to its `Orientation`. By default, an element in a stack layout won't be allocated any extra space in the same direction as the `Orientation` of the stack layout. Assigning a position for that direction in this default case won't change the rendering of the element. There's a change in the rendering, though, when position is combined with expansion.
+As noted previously, with `StackLayout`, the behavior of the `LayoutOptions` properties depends on the `Orientation` property of the `StackLayout`. `StackLayout` uses the `LayoutOptions` property in the direction opposite to its `Orientation`. By default, an element in a stack layout isn't allocated any extra space in the same direction as the `Orientation` of the stack layout. Assigning a position for that direction in this default case doesn't change the rendering of the element. There's a change in the rendering, though, when position is combined with expansion.
 
 ## What about expansion?
 
-Recall from an earlier unit that the `LayoutOptions` struct contains a `bool` property called `Expands`, that is now obsolete in .NET MAUI. You will notice when you set the `VerticalOptions` and `HorizontalOptions` that there are additional `LayoutOptions` of `StartAndExpand`, `CenterAndExpand`, `EndAndExpand`, or `FillAndExpand`. If you set `LayoutOptions` to an option with `AndExpand`, it is ignored and the first part of the `LayoutOptions` is used such as `Start`, `Center`, `End`, or `Fill`. If you are migrating from Xamarin.Forms, you should remove all `AndExpand` from these properties. We will see how to achieve similar funcationality when we learn about `Grid`.
+Recall from an earlier unit that the `LayoutOptions` struct contains a `bool` property called `Expands` that is now obsolete in .NET MAUI. When you set the `VerticalOptions` and `HorizontalOptions`, you might notice the `LayoutOptions` of `StartAndExpand`, `CenterAndExpand`, `EndAndExpand`, and `FillAndExpand`. If you set `LayoutOptions` to one of these `AndExpand` options, the option is ignored and the first part of the `LayoutOptions` is used such as `Start`, `Center`, `End`, or `Fill`. If you're migrating from Xamarin.Forms, you should remove all `AndExpand` from these properties. Later in the module, we see how to achieve similar functionality when we learn about `Grid`.
 
 ## Optimized StackLayouts
 
-As mentioned earlier, the `VerticalStackLayout` and `HorizontalStackLayout` are optimized `StackLayout` controls with pre-defined orientations. It's recommended to use these controls when possible for the best layout performance. These layouts have the functionality of `LayoutOptions` and `Spacing` that the regular `StackLayout` has.
+As mentioned earlier, the `VerticalStackLayout` and `HorizontalStackLayout` are optimized `StackLayout` controls with predefined orientations. We recommended that you use these controls when possible, for the best layout performance. These layouts have the functionality of `LayoutOptions` and `Spacing` that the regular `StackLayout` has.
 
 ```xaml
 <VerticalStackLayout Spacing="30">
-    <BoxView Color="Silver" />
-    <BoxView Color="Blue" />
-    <BoxView Color="Gray" />
+    <BoxView Color="Silver" HeightRequest="40" />
+    <BoxView Color="Blue" HeightRequest="40" />
+    <BoxView Color="Gray" HeightRequest="40"/>
 </VerticalStackLayout>
 
 <HorizontalStackLayout Spacing="30">
-    <BoxView Color="Silver" />
-    <BoxView Color="Blue" />
-    <BoxView Color="Gray" />
+    <BoxView Color="Silver" WidthRequest="40" />
+    <BoxView Color="Blue" WidthRequest="40" />
+    <BoxView Color="Gray" WidthRequest="40" />
 </HorizontalStackLayout>
 ```
-

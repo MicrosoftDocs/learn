@@ -3,12 +3,11 @@ uid: learn.intro-to-azure-routing-preference.summary
 title: Summary
 metadata:
   title: summary
-  description: This unit summarizes the training module and re-emphasizes the topics learned in the previous units.
-  ms.date: 03/21/2023
+  description: Review what you learned in this module about Azure routing preference.
+  ms.date: 04/08/2024
   author: asudbring
   ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

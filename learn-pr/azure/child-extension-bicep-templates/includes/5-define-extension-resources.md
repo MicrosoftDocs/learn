@@ -1,4 +1,4 @@
-Extension resources are always attached to other Azure resources. They _extend_ the behavior of those resources with extra functionality. 
+Extension resources are always attached to other Azure resources. They *extend* the behavior of those resources with extra functionality. 
 
 Some examples of common extension resources are:
 
@@ -16,7 +16,7 @@ For example, consider a lock, which can be used to prevent the deletion or modif
 
 ## How are extension resources defined?
 
-In Bicep, you define an extension resource in mostly the same way as a normal resource. However, you add the `scope` property to tell Bicep that the resource should be attached to another resource that's defined elsewhere in the Bicep file. You use the resource's symbolic name to refer to it. For example, here's the definition of an Azure Cosmos DB account that we've previously created:
+In Bicep, you define an extension resource in mostly the same way as a normal resource. However, you add the `scope` property to tell Bicep that the resource should be attached to another resource defined elsewhere in the Bicep file. You use the resource's symbolic name to refer to it. For example, here's the definition of an Azure Cosmos DB account that we created previously:
 
 ```bicep
 resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2020-04-01' = {
@@ -28,11 +28,11 @@ resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2020-04-01' = {
 }
 ```
 
-Let's add a resource lock, which will prevent anybody from deleting the Azure Cosmos DB account:
+Let's add a resource lock, which prevents anybody from deleting the Azure Cosmos DB account:
 
 :::code language="bicep" source="code/5-scope.bicep" highlight="2":::
 
-Notice that the example uses the `scope` property with the Azure Cosmos DB account's symbolic name. This tells Bicep to deploy the resource lock onto the Azure Cosmos DB account, which means that it can no longer be deleted.
+Notice that the example uses the `scope` property with the Azure Cosmos DB account's symbolic name. This property setting tells Bicep to deploy the resource lock onto the Azure Cosmos DB account, which means that it can no longer be deleted.
 
 ## Extension resource IDs
 
@@ -41,7 +41,7 @@ An extension resource has a slightly different ID than other resources. It consi
 Let's say you deployed the previously mentioned Azure Cosmos DB account, and the account was named `toyrnd`. Here's what the lock's resource ID would look like:
 
 ```
-/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyDevelopment/providers/Microsoft.DocumentDB/databaseAccounts/toyrnd/providers/Microsoft.Authorization/locks/DontDelete
+/subscriptions/A123b4567c-1234-1a2b-2b1a-1234abc12345/resourceGroups/ToyDevelopment/providers/Microsoft.DocumentDB/databaseAccounts/toyrnd/providers/Microsoft.Authorization/locks/DontDelete
 ```
 
 Here's a visual representation:

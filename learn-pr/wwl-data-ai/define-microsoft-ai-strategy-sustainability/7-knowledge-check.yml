@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-sustainability.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: rcaper
+  ms.date: 05/22/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the biggest challenge in AI systems for sustainability and how can organizations deal with it?"
+    choices:
+    - content: "AI systems tend to be pollutant. You should minimize their use in sustainability solutions."
+      isCorrect: false
+      explanation: "Incorrect. While it’s true that AI systems sometimes have a high carbon footprint because of an elevated energy consumption, there are strategies to avoid this risk. On the contrary, AI is a powerful tool to enable scenarios that reduce pollution."
+    - content: "Sustainability scenarios often require highly technical expertise on climate science, ecology, and so on. You should focus on automating less technical tasks."
+      isCorrect: false
+      explanation: "Incorrect. AI can be helpful in all sorts of scenarios, even those requiring technical expertise, such as identifying wildlife species or estimating how much pesticide your crop needs."
+    - content: "AI systems might consume too much energy. They must be optimized to be efficient and fueled by green energy if possible."
+      isCorrect: true
+      explanation: "Correct. A bad design can make an AI sustainability solution waste too much energy. Remember that Microsoft Azure has features to minimize energy consumption with optimal performance."
+  - content: "In the Nearshore Habitat program, which functions do these Microsoft AI products fulfill?"
+    choices:
+    - content: "Azure Machine Learning performs video classification by ingesting short clips of video footage."
+      isCorrect: false
+      explanation: "Incorrect. This isn’t the workflow of the solution. The videos are split into frames, which are analyzed by Azure AI Services image recognition models. Azure Machine Learning serves to store, manage, and deploy these AI models."
+    - content: "Microsoft Power BI cleans the data before feeding it to the AI models."
+      isCorrect: false
+      explanation: "Incorrect. The data, that is, the video footage, needs to be split into frames before getting to the AI models. This task isn’t performed by Microsoft Power BI, whose function is to extract insights of the results obtained by the AI models."
+    - content: "The AI system relies on Azure AI Services to classify and identify seagrass species."
+      isCorrect: true
+      explanation: "Correct. Azure AI Services includes image recognition models that can be taught to identify eelgrass."

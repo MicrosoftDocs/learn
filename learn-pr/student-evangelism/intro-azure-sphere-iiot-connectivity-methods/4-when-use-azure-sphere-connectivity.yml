@@ -3,12 +3,11 @@ uid: learn.oxford.industrial-iot-connectivity.when-use-azure-sphere-connectivity
 title: When to use Azure Sphere connectivity
 metadata:
   title: When to use Azure Sphere connectivity
-  description: In this section, we explain whether Azure Sphere is right choice of your ıoT solution.
+  description: In this section, we explain whether Azure Sphere is right choice of your IoT solution.
   ms.date: 06/16/2021
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 6 # dummy number at present
 content: |

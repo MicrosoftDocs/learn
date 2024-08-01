@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is a part of the Enhance nonprofit volunteer management with Microsoft Copilot module.
+  author: CourtneyHMicrosoft
+  ms.author: cohodge
+  ms.date: 6/14/2024
+  ms.topic: unit
+  ai-usage: ai-assisted
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/24/2023
+  ms.date: 07/24/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -24,3 +25,25 @@ quiz:
     - content: "`az container creates` command"
       isCorrect: false
       explanation: "Incorrect. This command isn't specific to this scenario."
+  - content: "What is the purpose of a restart policy in Azure Container Instances?"
+    choices:
+    - content: "To charge customers more for compute resources used while the container is running."
+      isCorrect: false
+      explanation: "Incorrect. The restart policy is not related to charging customers more for compute resources."
+    - content: "To ensure that containers are never restarted, even if the process fails."
+      isCorrect: false
+      explanation: "Incorrect. The `Never` restart policy ensures that containers are run at most once, but it doesn't allow for restarting on failure."
+    - content: "To specify when and how containers should be restarted, based on the desired behavior."
+      isCorrect: true
+      explanation: "Correct. The restart policy allows you to specify when and how containers should be restarted, based on the desired behavior. This can help optimize resource usage and ensure that tasks are completed successfully."
+  - content: "If you want to mount multiple volumes, what options are at your disposal for deployment?"
+    choices:
+    - content: "YAML file only"
+      isCorrect: false
+      explanation: "While YAML file is a viable option, you can also use Azure Resource Manager templates."
+    - content: "Azure Resource Manager template and YAML file"
+      isCorrect: true
+      explanation: "Correct. To mount multiple volumes in a container instance, you must deploy using an Azure Resource Manager template or a YAML file."
+    - content: "Azure Resource Manager template and PowerShell"
+      isCorrect: false
+      explanation: "While Azure Resource Manager templates are a viable option, you can't use PowerShell commands to directly mount multiple volumes."

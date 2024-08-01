@@ -2,22 +2,23 @@
 uid: learn.azure.cna-build-iot-service
 metadata:
   title: Build an IoT service for your cloud-native apps by using IoT Central
-  description: This module describes how to extend your cloud-native application to provide IoT functionality by integrating its components with Azure IoT services and using Cosmos DB to provide a persistent data store.
-  ms.date: 02/14/2023
-  author: mpolicht
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Extend your cloud-native application to provide IoT functionality by integrating its components with Azure IoT services and by using Cosmos DB to provide a persistent data store.
+  manager: mkluck
+  ms.date: 02/22/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: module-standard-task-based
+  ms.service: iot-central
 title: Build an IoT service for your cloud-native apps by using IoT Central
-summary: This module describes how to extend your cloud-native application to provide IoT functionality by integrating its components with Azure IoT services and using Cosmos DB to provide a persistent data store.
+summary: Extend your cloud-native application to provide IoT functionality by integrating its components with Azure IoT services and by using Cosmos DB to provide a persistent data store.
 abstract: |
-  In this module, you'll:
-  - Describe the architecture and components of IoT services
-  - Describe the characteristics and functionality of Azure Cosmos DB
-  - Integrate Azure data stores with IoT pipelines
-  - Implement Azure Cosmos DB for processing telemetry data
-  - Analyze and manage telemetry data
-  - Configure and manage IoT pipelines
+  In this module, you:
+  - Describe the architecture and components of IoT services.
+  - Describe the characteristics and functionality of Azure Cosmos DB.
+  - Integrate Azure data stores with IoT pipelines.
+  - Implement Azure Cosmos DB for processing telemetry data.
+  - Analyze and manage telemetry data.
+  - Configure and manage IoT pipelines.
 prerequisites: | 
   - Basic understanding of cloud computing
   - Basic familiarity with Azure

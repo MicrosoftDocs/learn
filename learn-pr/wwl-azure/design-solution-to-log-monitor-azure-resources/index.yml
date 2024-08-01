@@ -2,23 +2,26 @@
 uid: learn.wwl.design-solution-to-log-monitor-azure-resources
 metadata:
   title: Design a solution to log and monitor Azure resources
-  description: "Design a solution to log and monitor Azure resources"
-  ms.date: 01/18/2023
+  description: Design a solution to log and monitor Azure resources
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ai-usage: human-only
+  ms.service: azure-monitor
 title: Design a solution to log and monitor Azure resources
 summary: Azure Architects design and recommend logging and monitoring solutions.
 abstract: |
   In this module, you learn how to:
-  - Design for Azure Monitor data sources
-  - Design for Azure Monitor Logs (Log Analytics) workspaces
-  - Design for Azure Workbooks and Azure insights
-  - Design for Azure Data Explorer
+  -   Design for Azure Monitor data sources
+  -   Design for Azure Monitor Logs (Log Analytics) workspaces
+  -   Design for Azure Workbooks and Azure insights
+  -   Design for Azure Data Explorer
 prerequisites: |
-  - Working experience with monitoring and logging cloud environments
-  - Conceptual knowledge of monitoring and logging
+  -   Working experience with monitoring and logging cloud environments
+  -   Conceptual knowledge of monitoring and logging
 iconUrl: /training/achievements/azure-resources-design-solution.svg
 levels:
 - advanced

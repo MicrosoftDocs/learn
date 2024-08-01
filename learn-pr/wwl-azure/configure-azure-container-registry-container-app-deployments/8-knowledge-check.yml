@@ -1,0 +1,91 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-container-registry-container-app-deployments.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/22/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 7
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the role of Azure Container Registry in the context of container app deployments?"
+    choices:
+    - content: "To securely store and manage source code on virtual machines in Azure."
+      isCorrect: false
+      explanation: "Incorrect. Azure Container Registry is used to store and manage container images and related artifacts, not virtual machines."
+    - content: "To provide a platform for web application development."
+      isCorrect: false
+      explanation: "Incorrect. While Azure provides services for web application development, Azure Container Registry is specifically for container image management."
+    - content: "To securely store and manage container images and related artifacts."
+      isCorrect: true
+      explanation: "Correct. Azure Container Registry is a managed registry service based on the open-source Docker Registry 2.0, used to store and manage container images and related artifacts."
+  - content: "What key element must be configured for secure communication between Container Registry and Container Apps?"
+    choices:
+    - content: "An Azure Pipeline."
+      isCorrect: false
+      explanation: "Incorrect. Azure Pipelines do not contribute to secure communication between Container Registry and Container Apps."
+    - content: "An Azure Container Registry image repository."
+      isCorrect: false
+      explanation: "Incorrect. The Azure Container Registry image repository does not contribute to secure communication between Container Registry and Container Apps."
+    - content: "An Azure Virtual Network."
+      isCorrect: true
+      explanation: "Correct. An Azure Virtual Network must be configured for secure communication between Container Registry and Container Apps."
+  - content: "What is Azure Container Registry?"
+    choices:
+    - content: "A private registry service for building, storing, and managing container images and related artifacts."
+      isCorrect: true
+      explanation: "Correct. Azure Container Registry is a private registry service for building, storing, and managing container images and related artifacts."
+    - content: "A tool used to manage virtual machines in Azure."
+      isCorrect: false
+      explanation: "Incorrect. Azure Container Registry is not a tool used to manage virtual machines."
+    - content: "A public registry service for building, storing, and managing container images and related artifacts."
+      isCorrect: false
+      explanation: "Incorrect. Azure Container Registry is a private registry service."
+  - content: "What is the purpose of logging in to the registry using Azure CLI?"
+    choices:
+    - content: "To remove images from your Azure container registry."
+      isCorrect: false
+      explanation: "Incorrect. This is done after pushing and pulling container images."
+    - content: "To create a container registry in your Azure subscription."
+      isCorrect: false
+      explanation: "Incorrect. This is done before logging in to the registry."
+    - content: "To push and pull container images."
+      isCorrect: true
+      explanation: "Correct. Logging in to the registry is necessary before pushing and pulling container images."
+  - content: "What is the benefit of using a managed identity with container registry?"
+    choices:
+    - content: "To authenticate to an Azure container registry from another Azure resource, without needing to provide or manage registry credentials."
+      isCorrect: true
+      explanation: "Correct. Using a managed identity allows for authentication to an Azure container registry from another Azure resource without needing to provide or manage registry credentials."
+    - content: "To authenticate directly using an individual login."
+      isCorrect: false
+      explanation: "Incorrect. This is one of the recommended ways to authenticate with container registry instances, but not the benefit of using a managed identity."
+    - content: "To authenticate using a service principal."
+      isCorrect: false
+      explanation: "Incorrect. This is one of the recommended ways to authenticate with container registry instances, but not the benefit of using a managed identity."
+  - content: "What is the purpose of Azure role-based access control (Azure RBAC)?"
+    choices:
+    - content: "To manage access to Azure resources using built-in roles."
+      isCorrect: true
+      explanation: "Correct. Azure RBAC provides built-in roles to manage access to Azure resources."
+    - content: "To assign specific permissions to users, service principals, or other identities that need to interact with a registry."
+      isCorrect: false
+      explanation: "Incorrect. This is the purpose of Azure RBAC for Azure Container Registry, but not for all Azure resources."
+    - content: "To manage access to Azure resources using custom roles."
+      isCorrect: false
+      explanation: "Incorrect. Azure RBAC provides built-in roles to manage access to Azure resources."
+  - content: "What are the key scenarios that can be accomplished with a virtual network in Azure?"
+    choices:
+    - content: "Filtering of on-premises network traffic."
+      isCorrect: false
+      explanation: "Incorrect. Filtering of network traffic is one of the key scenarios that can be accomplished with a virtual network in Azure, but it is not limited to on-premises network traffic."
+    - content: "Communication of Azure resources with each other, the internet, and on-premises networks; Filtering and routing of network traffic; Integration with Azure services."
+      isCorrect: true
+      explanation: "Correct. A virtual network in Azure enables many types of Azure resources to securely communicate with each other, the internet, and on-premises networks. It also allows for filtering and routing of network traffic, as well as integration with Azure services."
+    - content: "Communication between on-premises resources and the internet."
+      isCorrect: false
+      explanation: "Incorrect. This is only one of the key scenarios that can be accomplished with a virtual network in Azure."

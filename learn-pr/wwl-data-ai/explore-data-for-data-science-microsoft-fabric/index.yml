@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn-wwl.explore-data-for-data-science-microsoft-fabric
+metadata:
+  title: Explore data for data science with notebooks in Microsoft Fabric
+  description: Discover how to perform data exploration for data science using Microsoft Fabric notebooks.
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.date: 09/19/2023
+  ms.service: fabric
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+title: Explore data for data science with notebooks in Microsoft Fabric
+summary: Microsoft Fabric notebooks serve as a comprehensive tool for data exploration, enabling users to uncover hidden patterns and relationships in their datasets.
+abstract: |
+  In this module, you'll:
+  - Load data and perform initial data exploration.
+  - Gain knowledge about different types of data distributions.
+  - Understand the concept of missing data, and strategies to handle missing data effectively.
+  - Visualize data using various data visualization techniques and libraries. 
+prerequisites: |
+  Before starting this module, you should be familiar with the basic principles of machine learning.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+products:
+- fabric
+subjects:
+- data-management
+- machine-learning
+units:
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.introduction
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.explore-notebooks
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.load-data-for-exploration
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.understand-data-distribution
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.check-for-missing-data
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.apply-advanced-data-exploration-techniques
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.visualize-data-with-plots-and-charts
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.exercise-use-notebook-for-data-exploration
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.knowledge-check
+- learn-wwl.explore-data-for-data-science-microsoft-fabric.summary
+badge:
+  uid: learn-wwl.explore-data-for-data-science-microsoft-fabric.badge

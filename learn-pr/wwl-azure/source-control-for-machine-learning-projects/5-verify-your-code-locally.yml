@@ -3,12 +3,13 @@ uid: learn.wwl.source-control-for-machine-learning-projects.verify-your-code-loc
 title: Verify your code locally
 metadata:
   title: Verify your code locally
-  description: "Verify your code locally"
-  ms.date: 08/19/2022
+  description: Verify your code locally
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 9

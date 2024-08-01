@@ -5,10 +5,9 @@ metadata:
   title: Nuances of test sets
   description: Conceptual unit about nuances of test sets in machine learning
   ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: s-polly
+  ms.author: scottpolly
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/6-nuance-tests.md)] 

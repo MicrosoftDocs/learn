@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 10
+content: |
+  [!include[](includes/23-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What benefit does Microsoft Defender for Azure SQL Database offer?"
+    choices:
+    - content: "Enabling faster query performance for all SQL databases."
+      isCorrect: false
+      explanation: "While performance is important, the primary focus of Microsoft Defender for Azure SQL Database is on security threats, not directly on improving query performance."
+    - content: "Automatically reducing the size of databases to save costs."
+      isCorrect: false
+      explanation: "The service's goal is to secure databases against threats, not to optimize storage costs or database sizes."
+    - content: "Providing advanced threat detection and security alerts for databases."
+      isCorrect: true
+      explanation: "This service enhances database security by monitoring suspicious activities and providing actionable security alerts, thereby improving the overall security posture of Azure SQL Databases."
+  - content: "How can security alerts in Microsoft Defender for Cloud be managed?"
+    choices:
+    - content: "Through manual review and response to each alert individually."
+      isCorrect: false
+      explanation: "While manual review is sometimes necessary, relying solely on this method is less efficient than using automation."
+    - content: "Using workflow automation to efficiently respond to and remediate threats."
+      isCorrect: true
+      explanation: "Workflow automation enhances the efficiency and effectiveness of responding to security alerts, allowing for quicker remediation of identified threats."
+    - content: "By ignoring all alerts to focus on performance optimization."
+      isCorrect: false
+      explanation: "Ignoring security alerts compromises the security posture and is not a recommended practice."
+  - content: "How is Microsoft Defender for Servers configured to protect cloud environments?"
+    choices:
+    - content: "By manually patching server vulnerabilities."
+      isCorrect: false
+      explanation: "Defender for Servers offers more than manual patching, including automated security recommendations and integrated threat protection."
+    - content: "Using only external firewall solutions."
+      isCorrect: false
+      explanation: "While external firewalls are important, Defender for Servers provides a comprehensive set of security features beyond firewall protection."
+    - content: "Through automated security recommendations and threat protection features."
+      isCorrect: true
+      explanation: "This approach ensures that servers are protected using the latest security intelligence and automation, enhancing the cloud environment's security."
+  - content: "What is a key feature of enabling workload protection services in Microsoft Defender for Cloud?"
+    choices:
+    - content: "To enhance security across various Azure services like Storage, Databases, and Containers."
+      isCorrect: true
+      explanation: "Enabling workload protection services provides advanced threat protection for a wide range of Azure resources, thereby enhancing the overall security posture."
+    - content: "To decrease the overall cost of Azure services."
+      isCorrect: false
+      explanation: "While cost management is important, the primary focus of enabling workload protection services is on securing resources, not on reducing costs."
+    - content: "To provide unlimited data storage for all workloads."
+      isCorrect: false
+      explanation: "The main goal is to secure Azure resources against threats, not to provide data storage solutions."
+  - content: "What is the purpose of vulnerability scans in Microsoft Defender for Server?"
+    choices:
+    - content: "For advertising and marketing analysis of server usage patterns."
+      isCorrect: false
+      explanation: "For advertising and marketing analysis of server usage patterns."
+    - content: "To improve the graphical interface of applications."
+      isCorrect: false
+      explanation: "The focus of vulnerability scans is on security assessment and mitigation, not on UI design or enhancement."
+    - content: "To identify and evaluate potential security vulnerabilities in servers."
+      isCorrect: true
+      explanation: "These scans are crucial for discovering, assessing, and mitigating security weaknesses, helping to strengthen the security of servers against potential attacks."

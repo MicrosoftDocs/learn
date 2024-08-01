@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-code-features-using-github-copilot-tools.review-code-logic-solution
+title: Review the "code logic" solution
+metadata:
+  title: Review the "code logic" solution
+  description: Review the code logic solution
+  author: wwlpublish
+  ms.author: cahowd
+  ms.date: 07/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/9-review-code-logic-solution.md)]

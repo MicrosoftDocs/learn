@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-embedded-experiences.copilot-for-defender
+title: Describe Microsoft Copilot in Microsoft Defender XDR
+metadata:
+  title: Describe Microsoft Copilot in Microsoft Defender XDR
+  description: Describe Microsoft Copilot in Microsoft Defender XDR.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 02/01/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-copilot-for-defender.md)]

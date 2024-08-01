@@ -3,12 +3,13 @@ uid: learn.wwl.explore-azure-storage.files
 title: Explore Azure Files
 metadata:
   title: Explore Azure Files
-  description: "Explore Azure Files"
-  ms.date: 04/20/2023
+  description: "Use Azure Files to create SMB file shares in Azure, just as you would with an on-premises file server."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/3-explore-azure-files.md)]

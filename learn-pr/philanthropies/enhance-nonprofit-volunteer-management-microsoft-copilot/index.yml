@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot
+metadata:
+  title: Enhance nonprofit volunteer management with Microsoft Copilot
+  description: This module demonstrates how to use Copilot to manage volunteers within your nonprofit organization. Learners review several prompts used for generating volunteer recruitment, training, and recognition materials, and then they practice using and generating their own prompts.
+  author: CourtneyHMicrosoft
+  ms.author: cohodge
+  ms.date: 6/13/2024
+  ms.service: artificial-intelligence
+  ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - ce-skilling-ai-copilot
+title: Enhance nonprofit volunteer management with Microsoft Copilot
+summary: This module demonstrates how to use Copilot to manage volunteers within your nonprofit organization. 
+abstract: |
+  By the end of this module, you'll be able to:
+    - Understand how Copilot can help with various aspects of volunteer management at a nonprofit organization.
+    - Use Copilot to recruit, train, and retain volunteers for your nonprofit programs.
+prerequisites: |
+  - Basic understanding of volunteer management
+  - Basic understanding of Microsoft Copilot
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - beginner
+roles:
+  - functional-consultant
+  - higher-ed-educator
+  - school-leader
+  - k-12-educator
+  - business-user
+  - business-owner
+products:
+  - ai-services
+  - m365-apps
+  - ms-copilot
+subjects:
+  - artificial-intelligence
+  - business-applications
+units:
+- learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.introduction
+- learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.elevate-volunteer-recruitment
+- learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.exercise-volunteer-recruitment
+- learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.simplify-volunteer-training
+- learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.exercise-volunteer-training
+- learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.boost-volunteer-retention
+- learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.exercise-volunteer-retention
+- learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.knowledge-check
+- learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.summary
+badge:
+  uid: learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.badge

@@ -8,7 +8,7 @@ Behavioral blocking and containment capabilities work with multiple components a
 
 - Endpoint detection and response (EDR) receives security signals from across your network, devices, and Operating System (OS) kernel behavior. As threats are detected, alerts are created. Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond.
 
-- Defender for Endpoint has a wide range of optics across identities, email, data, and apps. And the network, endpoint, and kernel behavior signals received through EDR. A component of Microsoft 365 Defender, Defender for Endpoint processes and correlates these signals, raises detection alerts, and connects related alerts in incidents.
+- Defender for Endpoint has a wide range of optics across identities, email, data, and apps. And the network, endpoint, and kernel behavior signals received through EDR. A component of Microsoft Defender XDR, Defender for Endpoint processes and correlates these signals, raises detection alerts, and connects related alerts in incidents.
 
 With these capabilities, more threats can be prevented or blocked, even if they start running. Whenever suspicious behavior is detected, the threat is contained, alerts are created, and threats are stopped in their tracks.
 
@@ -26,7 +26,7 @@ Client behavioral blocking is a component of behavioral blocking and containment
 
 Microsoft Defender Antivirus can detect suspicious behavior, malicious code, fileless and in-memory attacks, and more on a device. When suspicious behaviors are detected, Microsoft Defender Antivirus monitors and sends those suspicious behaviors and their process trees to the cloud protection service. Machine learning differentiates between malicious applications and good behaviors within milliseconds and classifies each artifact. As soon as an artifact is found to be malicious, it's blocked on the device.
 
-Whenever a suspicious behavior is detected, an alert is generated and is visible in the Microsoft 365 Defender portal
+Whenever a suspicious behavior is detected, an alert is generated and is visible in the Microsoft Defender portal
 
 Client behavioral blocking is effective because it not only helps prevent an attack from starting, but it can help stop an attack that has begun executing. With feedback-loop blocking (another capability of behavioral blocking and containment), attacks are prevented on other devices in your organization.
 

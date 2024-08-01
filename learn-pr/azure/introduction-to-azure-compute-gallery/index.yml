@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.introduction-to-azure-compute-gallery
+metadata:
+  title: Introduction to Azure Compute Gallery
+  description: Learn what Azure Compute Gallery is, how it works, and when to use it.
+  manager: akashdubey
+  ms.date: 08/16/2023
+  author: tomvcassidy
+  ms.author: tomcassidy
+  ms.topic: module
+  ms.service: virtual-machines
+  ms.subservice: gallery
+title: Introduction to Azure Compute Gallery
+summary: Learn what Azure Compute Gallery is, how it works, and when to use it.
+abstract: |
+  After completing this module, you'll be able to:
+  - Identify the components and functionality of an Azure Compute Gallery.
+  - Describe the types of resources that can be stored in a gallery.
+  - Differentiate between the options for sharing resources stored in a gallery.
+prerequisites: |
+  - Experience with Azure virtual machines, such as deploying and managing virtual machine resources.
+  - Experience with imaging technologies such as ghost and managed images.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- devops-engineer
+- developer
+- solution-architect
+products:
+- azure
+- azure-virtual-machines
+units:
+- learn.introduction-to-azure-compute-gallery.introduction
+- learn.introduction-to-azure-compute-gallery.what-is-azure-compute-gallery
+- learn.introduction-to-azure-compute-gallery.how-azure-compute-gallery-works
+- learn.introduction-to-azure-compute-gallery.when-to-use-azure-compute-gallery
+- learn.introduction-to-azure-compute-gallery.knowledge-check
+- learn.introduction-to-azure-compute-gallery.summary
+badge:
+  uid: learn.introduction-to-azure-compute-gallery-badge

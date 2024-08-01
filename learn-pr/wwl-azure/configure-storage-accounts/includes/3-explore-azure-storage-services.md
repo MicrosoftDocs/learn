@@ -6,13 +6,13 @@ Azure Storage offers four data services that can be accessed by using an Azure s
 
 - **Azure Queue Storage**: A messaging store for reliable messaging between application components.
 
-- **Azure Table Storage**: A NoSQL store for schemaless storage of structured data or _relational_ data.
+- **Azure Table Storage**: A service that stores nonrelational structured data (also known as structured NoSQL data).
 
 Let's examine the details of these services.
 
 ### Azure Blob Storage (containers)
 
-Azure Blob Storage is Microsoft's object storage solution for the cloud. Blob Storage is optimized for storing massive amounts of unstructured or _non-relational_ data, such as text or binary data. Blob Storage is ideal for:
+Azure Blob Storage is Microsoft's object storage solution for the cloud. Blob Storage is optimized for storing massive amounts of unstructured or _nonrelational_ data, such as text or binary data. Blob Storage is ideal for:
 
 - Serving images or documents directly to a browser.
 - Storing files for distributed access.
@@ -43,10 +43,9 @@ Azure Queue Storage is used to store and retrieve messages. Queue messages can b
 
 Consider a scenario where you want your customers to be able to upload pictures, and you want to create thumbnails for each picture. You could have your customer wait for you to create the thumbnails while uploading the pictures. An alternative is to use a queue. When the customer finishes the upload, you can write a message to the queue. Then you can use an Azure Function to retrieve the message from the queue and create the thumbnails. Each of the processing parts can be scaled separately, which gives you more control when tuning the configuration.
 
-### Azure Table Storage (Azure Cosmos DB)
+### Azure Table Storage
 
-Azure Table Storage is now part of Azure Cosmos DB, which is a fully managed NoSQL database service for modern app development. As a fully managed service, Azure Cosmos DB takes database administration off your hands with automatic management, updates, and patching. It also handles capacity management with cost-effective serverless and automatic scaling options that respond to application needs to match capacity with demand.
-
+Azure Table storage is a service that stores non-relational structured data (also known as structured NoSQL data) in the cloud, providing a key/attribute store with a schemaless design. Because Table storage is schemaless, it's easy to adapt your data as the needs of your application evolve. Access to Table storage data is fast and cost-effective for many types of applications, and is typically lower in cost than traditional SQL for similar volumes of data.
 In addition to the existing Azure Table Storage service, there's a new Azure Cosmos DB Table API offering that provides throughput-optimized tables, global distribution, and automatic secondary indexes. 
 
 ### Things to consider when choosing Azure Storage services
@@ -59,4 +58,4 @@ As you think about your configuration plan for Azure Storage, consider the promi
 
 - **Consider storage for messages**. Use Azure Queue Storage to store large numbers of messages. Queue Storage is commonly used to create a backlog of work to process asynchronously.
 
-- **Consider storage for structured data**. Azure Table Storage is ideal for storing structured, non-relational data. It provides throughput-optimized tables, global distribution, and automatic secondary indexes. Because Azure Table Storage is part of Azure Cosmos DB, you have access to a fully managed NoSQL database service for modern app development. 
+- **Consider storage for structured data**. Azure Table Storage is ideal for storing structured, nonrelational data. 

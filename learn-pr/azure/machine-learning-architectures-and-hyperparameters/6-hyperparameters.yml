@@ -4,11 +4,10 @@ title: Hyperparameters in classification
 metadata:
   title: Hyperparameters in classification
   description: Conceptual unit about hyperparameters in classification
-  ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/17/2023
+  author: s-polly
+  ms.author: scottpolly
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/6-hyperparameters.md)] 

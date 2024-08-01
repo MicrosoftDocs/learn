@@ -4,13 +4,12 @@ title: Review update domains and fault domains
 metadata:
   title: Review update domains and fault domains
   description: "Review update domains and fault domains"
-  ms.date: 02/06/2023
+  ms.date: 07/24/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/4-review-update-fault-domains.md)]

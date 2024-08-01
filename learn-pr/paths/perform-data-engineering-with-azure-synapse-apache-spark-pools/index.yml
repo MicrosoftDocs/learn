@@ -6,9 +6,7 @@ metadata:
   ms.date: 02/09/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.service: synapse-analytics
+  ms.topic: learning-path
 title: Perform data engineering with Azure Synapse Apache Spark Pools
 prerequisites: |
   Before starting this learning path, you should be familiar with Azure Synapse Analytics. Consider completing the [Introduction to Azure Synapse Analytics](/training/modules/introduction-azure-synapse-analytics/) module first.

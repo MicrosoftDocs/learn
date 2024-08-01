@@ -4,11 +4,12 @@ title: Discover Autonomous Intelligence technologies
 metadata:
   title: Discover Autonomous Intelligence technologies
   description: An introduction to the different types of Autonomous Intelligence technologies when designing Autonomous AI.
-  ms.date: 10/17/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/17/2022
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/2-discover-autonomous-intelligence-technologies.md)] 

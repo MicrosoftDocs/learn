@@ -3,12 +3,13 @@ uid: learn.wwl.run-training-script-command-job-azure-machine-learning.exercise-r
 title: Exercise - Run a training script as a command job
 metadata:
   title: Exercise - Run a training script as a command job
-  description: "Explore how to run a script as a command job in Azure Machine Learning through a hands-on exercise."
-  ms.date: 01/25/2023
+  description: Explore how to run a script as a command job in Azure Machine Learning through a hands-on exercise.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/27/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-run-training-script-command-job.md)]

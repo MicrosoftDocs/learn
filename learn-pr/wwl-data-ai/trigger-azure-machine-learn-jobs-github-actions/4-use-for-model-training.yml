@@ -3,12 +3,13 @@ uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions.use-for-model-tra
 title: Use GitHub Actions for model training
 metadata:
   title: Use GitHub Actions for model training
-  description: "Use GitHub Actions for model training"
-  ms.date: 09/26/2022
+  description: Use GitHub Actions for model training
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

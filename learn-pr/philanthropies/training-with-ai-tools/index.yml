@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.philanthropies.training-with-ai-tools
+
+metadata:
+  title: Training with AI tools
+  description: In this module, you learn various AI-powered tools and how to effectively use them in your training sessions for an optimized learning experience.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 03/15/2024
+  ms.service: artificial-intelligence
+  ms.topic: module
+  ms.collection:
+    - ce-skilling-ai-copilot
+title: Training with AI tools
+summary: This module focuses on using AI tools in designing effective professional development and training sessions. You explore how AI tools are used to create personalized and inclusive learning.
+
+abstract: |
+  By the end of this module, you're able to:
+  - Appraise the design quality of training materials created by Microsoft Designer.
+  - Evaluate the effectiveness of Reading Coach for individualized learning.
+  - Assess the impact of Microsoft 365 Copilot in Excel on data analysis. 
+
+iconUrl: /training/achievements/training-with-ai-tools.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- business-user
+- higher-ed-educator
+- data-engineer
+- school-leader
+products:
+- ai-services
+- azure-machine-learning
+- azure-machine-learning-designer
+- m365-apps
+- azure-translator-text
+- azure-translator-speech
+- ms-copilot
+- language-service
+subjects:
+- artificial-intelligence
+units:
+- learn.philanthropies.training-with-ai-tools.introduction
+- learn.philanthropies.training-with-ai-tools.explore-microsoft-ai-powered-tools-for-trainers
+- learn.philanthropies.training-with-ai-tools.build-training-plans-with-microsoft-copilot
+- learn.philanthropies.training-with-ai-tools.poster-design-with-microsoft-designer
+- learn.philanthropies.training-with-ai-tools.knowledge-check
+- learn.philanthropies.training-with-ai-tools.summary
+badge:
+  uid: learn.philanthropies.training-with-ai-tools.badge

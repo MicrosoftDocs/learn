@@ -6,8 +6,8 @@ metadata:
   ms.date: 12/13/2021
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: windows-server
 title: Monitor Windows Server IaaS Virtual Machines and hybrid instances
 summary: You'll be able to implement Azure Monitor for IaaS VMs in Azure, implement Azure Monitor in on-premises environments, and use dependency maps.
 abstract: |
@@ -24,7 +24,7 @@ prerequisites: |
   - Core Microsoft compute, storage, networking, and virtualization technologies.
   - On-premises resiliency Windows Server–based compute and storage technologies.
   - Implementing and managing IaaS services in Azure.
-  - Azure Active Directory (Azure AD).
+  - Microsoft Entra ID.
   - Security-related technologies such as firewalls, encryption, and multi-factor authentication.
   - Windows PowerShell scripting.
   - Automation and monitoring.

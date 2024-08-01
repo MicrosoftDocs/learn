@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.github.intro-github-copilot-enterprise.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the Introduction to GitHub Copilot Enterprise module.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 02/28/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which of these advanced features aren't available in GitHub Copilot Enterprise but were available in GitHub Copilot Business?
+    choices:
+    - content: "Copilot Chat Customized to your Codebase"
+      isCorrect: false
+      explanation: "Incorrect. This feature allows developers to use Copilot chat customized to their codebase, enhancing collaboration and streamlining workflows."
+    - content: "Copilot Pull Request Summaries"
+      isCorrect: false
+      explanation: "Incorrect. This feature enables developers to generate summaries of pull requests based on code changes, enhancing understanding and accelerating review processes."
+    - content: "Copilot Documentation Search and Summaries using Docsets"
+      isCorrect: false
+      explanation: "Incorrect. This feature allows organizations to create and manage custom docsets from their internal code and documentation, tailoring Copilot's suggestions to their specific projects and domains."
+    - content: "None of the above"
+      isCorrect: true
+      explanation: "Correct. While all the listed features are available in GitHub Copilot Enterprise, the question asks for features distinguishing it from the previous Copilot for Business plan."
+  - content: How does Copilot use an organization's codebase and internal knowledge to enhance productivity and collaboration?
+    choices:
+    - content: "By providing code suggestions based on open-source libraries only"
+      isCorrect: false
+      explanation: "Incorrect. Copilot applies internal knowledge to provide contextualized coding assistance, answer questions, explain code intent, and suggest best practices, ultimately boosting productivity and collaboration."
+    - content: "By tailoring coding assistance, answering questions, and suggesting code aligned with the organization's standards and best practices"
+      isCorrect: true
+      explanation: "Correct. Copilot applies internal knowledge to provide contextualized coding assistance, answer questions, explain code intent, and suggest best practices, ultimately boosting productivity and collaboration."
+    - content: "By suggesting code without considering the project context"
+      isCorrect: false
+      explanation: "Incorrect. Copilot applies internal knowledge to provide contextualized coding assistance, answer questions, explain code intent, and suggest best practices, ultimately boosting productivity and collaboration."
+    - content: "By randomly generating code snippets"
+      isCorrect: false
+      explanation: "Incorrect. Copilot applies internal knowledge to provide contextualized coding assistance, answer questions, explain code intent, and suggest best practices, ultimately boosting productivity and collaboration."
+  - content: Describe the purpose and benefits of Copilot's pull request summaries in GitHub Copilot Enterprise.
+    choices:
+    - content: "They aim to provide a detailed history of code changes in pull requests"
+      isCorrect: false
+      explanation: "Incorrect. Copilot's pull request summaries automatically generate concise overviews of pull requests based on code changes, enhancing understanding and accelerating review processes."
+    - content: "They assist in automatically generating concise overviews of pull requests based on code changes, enhancing understanding and accelerating review processes"
+      isCorrect: true
+      explanation: "Correct. Copilot's pull request summaries automatically generate concise overviews of pull requests based on code changes, enhancing understanding and accelerating review processes."
+    - content: "They track developers' activity within a pull request"
+      isCorrect: false
+      explanation: "Incorrect. Copilot's pull request summaries automatically generate concise overviews of pull requests based on code changes, enhancing understanding and accelerating review processes."
+    - content: "None of the above"
+      isCorrect: false
+      explanation: "Incorrect. Copilot's pull request summaries automatically generate concise overviews of pull requests based on code changes, enhancing understanding and accelerating review processes."
+  - content: How can organizations manage and utilize docsets within Copilot Enterprise to tailor code suggestions and improve development workflows?
+    choices:
+    - content: "By using docsets to create custom collections of internal code and documentation"
+      isCorrect: true
+      explanation: "Correct. Docsets allow organizations to create custom collections of internal code and documentation, tailoring Copilot's suggestions to their specific projects and domains."
+    - content: "By using docsets to automatically generate code snippets"
+      isCorrect: false
+      explanation: "Incorrect. Docsets allow organizations to create custom collections of internal code and documentation, tailoring Copilot's suggestions to their specific projects and domains."
+    - content: "By using docsets to track developers' activity within a project"
+      isCorrect: false
+      explanation: "Incorrect. Docsets allow organizations to create custom collections of internal code and documentation, tailoring Copilot's suggestions to their specific projects and domains."
+    - content: "By using docsets to enforce coding standards"
+      isCorrect: false
+      explanation: "Incorrect. Docsets allow organizations to create custom collections of internal code and documentation, tailoring Copilot's suggestions to their specific projects and domains."
+

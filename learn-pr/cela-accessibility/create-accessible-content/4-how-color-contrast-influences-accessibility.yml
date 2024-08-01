@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.create-accessible-content.how-color-contrast-influences-accessibility
+title: How color contrast influences accessibility
+metadata:
+  title: How color contrast influences accessibility
+  description: This content is a part of the "Create accessible content" module.
+  ms.date: 04/12/2024
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-how-color-contrast-influences-accessibility.md)] 

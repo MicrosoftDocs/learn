@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.set-up-microsoft-defender-cloud.mitre-attack-matrix
+title: MITRE Attack matrix
+metadata:
+  title: MITRE Attack matrix
+  description: "MITRE Attack matrix"
+  ms.date: 04/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/15-mitre-attack-matrix.md)]

@@ -3,11 +3,12 @@ uid: learn.student-evangelism.introduction-artificial-intelligence-nasa.1-introd
 metadata:
   title: Introduction
   description: Introduction to artificial intelligence concepts for space rock research.
-  ms.date: 04/11/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/11/2021
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Introduction
 durationInMinutes: 1

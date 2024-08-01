@@ -1,5 +1,3 @@
-
-
 The Azure connector is shipped as of SAP LaMa 3.0 SP05. We recommend always installing the latest support package and patch for SAP LaMa 3.0. The Azure connector uses a Service Principal to authorize against Microsoft Azure.
 
 ## Create a Service Principal for SAP Landscape Management
@@ -7,10 +5,10 @@ The Azure connector is shipped as of SAP LaMa 3.0 SP05. We recommend always inst
 Follow these steps:
 
 1. Sign in to the Azure portal.
-2. Open **Azure Active Directory**.
+2. Open **Microsoft Entra ID**.
 3. Select **App registrations**.
 4. Select **Add**.
-5. Enter a **Name**, select Application Type "**Web app/API**", enter a sign-on URL (for example **<http://localhost>**) and select **Create**. The sign-on URL isn't used and can be any valid URL.
+5. Enter a **Name**, select Application Type "**Web app/API**", enter a sign-on URL (for example ``` <http://localhost> ```) and select **Create**. The sign-on URL isn't used and can be any valid URL.
 6. Select the **new App** and select **Keys** in the **Settings** tab.
 7. Enter a description for a new key, select "**Never expires**" and select **Save**.
 8. Write down the **Value**. It's used as the password for the Service Principal.
@@ -33,10 +31,10 @@ By default, the Service Principal doesn't have permissions to access your Azure 
      - **Label**: Choose a name for the connector instance
      - **User Name**: Service Principal Application ID
      - **Password**: Service Principal key/password
-     - **URL**: Keep default <https://management.azure.com/>
+     - **URL**: Keep default ```<https://management.azure.com/>```
      - **Monitoring Interval (Seconds)**: Should be at least 300
      - **Subscription ID**: Azure subscription ID
-     - **Azure Active Directory Tenant ID**: ID of the Active Directory tenant
+     - **Microsoft Entra Tenant ID**: ID of the Active Directory tenant
      - **Proxy host**: Hostname of the proxy if SAP LaMa needs a proxy to connect to the internet
      - **Proxy port**: TCP port of the proxy
 10. Select **Test Configuration** to validate your input. You should see the message **Connection successful: Connection to Microsoft cloud was successful.**

@@ -3,12 +3,13 @@ uid: learn.wwl.examine-sap-s4hana-azure-virtual-machines.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 04/20/2023
+  description: "Check what you learn in this module."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -19,21 +20,21 @@ quiz:
     choices:
     - content: "SAP Web Dispatcher pool"
       isCorrect: false
-      explanation: "That’s incorrect. The SAP Web Dispatcher pool isn't normally a potential single point of failure when deployed to a single virtual machine."
+      explanation: "Incorrect. The SAP Web Dispatcher pool isn't normally a potential single point of failure when deployed to a single virtual machine."
     - content: "Central Services"
       isCorrect: true
-      explanation: "That’s correct. The Central Services is a potential single point of failure when deployed to a single VM, a typical deployment when high availability isn't a requirement. To implement a high availability solution, deploy multiple Central Services instances and configure them as members of a failover cluster with a shared disk or a file share providing highly available storage accessible by all cluster nodes."
+      explanation: "Correct. The Central Services is a potential single point of failure when deployed to a single virtual machine, a typical deployment when high availability isn't a requirement. To implement a high availability solution, deploy multiple Central Services instances and configure them as members of a failover cluster with a shared disk or a file share providing highly available storage accessible by all cluster nodes."
     - content: "Application servers pool"
       isCorrect: false
-      explanation: "That’s incorrect. The application servers pool isn't normally a potential single point of failure when deployed to a single virtual machine."
+      explanation: "Incorrect. The application servers pool isn't normally a potential single point of failure when deployed to a single virtual machine."
   - content: "Which of the following architectural groups includes the Fiori Front-end Server pool?"
     choices:
     - content: "Application tier"
       isCorrect: true
-      explanation: "That’s correct. The application tier includes the Fiori Front-end Server pool, SAP Web Dispatcher pool, application server pool, and SAP Central Services cluster."
+      explanation: "Correct. The application tier includes the Fiori Front-end Server pool, SAP Web Dispatcher pool, application server pool, and SAP Central Services cluster."
     - content: "NFS cluster"
       isCorrect: false
-      explanation: "That’s incorrect. The application tier includes the Fiori Front-end Server pool, SAP Web Dispatcher pool, application server pool, and SAP Central Services cluster."
+      explanation: "Incorrect. The application tier includes the Fiori Front-end Server pool, SAP Web Dispatcher pool, application server pool, and SAP Central Services cluster."
     - content: "SAP HANA"
       isCorrect: false
-      explanation: "That’s incorrect. The application tier includes the Fiori Front-end Server pool, SAP Web Dispatcher pool, application server pool, and SAP Central Services cluster."
+      explanation: "Incorrect. The application tier includes the Fiori Front-end Server pool, SAP Web Dispatcher pool, application server pool, and SAP Central Services cluster."

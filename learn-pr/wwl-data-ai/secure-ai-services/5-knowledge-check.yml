@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-ai-services.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 09/28/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You need to regenerate the primary subscription key for an Azure AI Services resource that an app uses. What should you do first to minimize service interruption for the app?"
+    choices:
+    - content: "Switch the app to use the secondary key"
+      isCorrect: true
+      explanation: "Correct. The app can use the secondary key to access the resource."
+    - content: "Change the resource endpoint"
+      isCorrect: false
+      explanation: "Incorrect. Changing the endpoint would not minimize service interruption."
+    - content: "Enable a firewall"
+      isCorrect: false
+      explanation: "Incorrect. Enabling a firewall would not minimize service interruption."
+  - content: "You want to store the subscription keys for an Azure AI Services resource securely, so that authorized apps can retrieve them when needed. What kind of Azure resource should you provision."
+    choices:
+    - content: "Azure Storage"
+      isCorrect: false
+      explanation: "Incorrect. You should not store credentials in a Storage account."
+    - content: "Azure Key Vault"
+      isCorrect: true
+      explanation: "Correct. Use Azure Key Vault to store credentials securely."
+    - content: "Azure App Service"
+      isCorrect: false
+      explanation: "Incorrect. Azure App Service is used to host cloud apps, not to store sensitive data."
+  - content: "When running code on your computer that connects to Azure AI Services, you receive an error that access is denied due to Virtual Network/Firewall rules. What configuration do you need to set in the Azure AI Services instance?"
+    choices:
+    - content: "In the Networking properties, configure Selected Networks and Private Endpoints."
+      isCorrect: false
+      explanation: "Incorrect. This is another component of network security that will enable access from other Azure services, not from your computer."
+    - content: "In Networking properties, add your client IP address to the Firewall allowed list."
+      isCorrect: true
+      explanation: "Correct. The public IP address for your computer can be allowed access in the Firewall settings."
+    - content: "In Access control, add your Microsoft Entra ID user account to a role."
+      isCorrect: false
+      explanation: "Incorrect. The Access control sets access for viewing or managing the service, not the network access."

@@ -5,11 +5,10 @@ metadata:
   unitType: introduction
   title: Introduction
   description: "In this introduction to C# null safety, you'll learn how to configure a nullable context. You'll also learn how to apply the null-forgiving, null-coalescing, and null-conditional operators in C#."
-  ms.date: 01/31/2022
-  author: IEvangelist
-  ms.author: dapine
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.date: 07/11/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

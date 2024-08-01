@@ -3,12 +3,13 @@ uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.iden
 title: Identify your data source and format
 metadata:
   title: Identify your data source and format
-  description: "Identify your data source and format"
-  ms.date: 11/11/2022
+  description: Identify your data source and format
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

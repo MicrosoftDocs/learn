@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.exercise-volunteer-training
+title: Exercise - Volunteer training
+metadata:
+  title: Exercise - Volunteer training
+  description: This content is a part of the Enhance nonprofit volunteer management with Microsoft Copilot module.
+  author: CourtneyHMicrosoft
+  ms.author: cohodge
+  ms.date: 6/14/2024
+  ms.topic: unit
+  ai-usage: ai-assisted
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-exercise-volunteer-training.md)]

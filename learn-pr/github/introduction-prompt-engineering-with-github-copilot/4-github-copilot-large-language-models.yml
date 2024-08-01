@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github.introduction-prompt-engineering-with-github-copilot.github-copilot-large-language-models
+title: GitHub Copilot Large Language Models (LLMs)
+metadata:
+  title: GitHub Copilot Large Language Models (LLMs)
+  description: This content is part of the Introduction to prompt engineering with GitHub Copilot module.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 11/10/2023
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-github-copilot-large-language-models.md)]

@@ -4,11 +4,10 @@ title: Create a Log Analytics workspace
 metadata:
   title: Create a Log Analytics workspace
   description: "Create a Log Analytics workspace in the Azure portal."
-  ms.date: 02/28/2023
+  ms.date: 05/19/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 2
+  ms.topic: unit
+durationInMinutes: 8
 content: |
   [!include[](includes/3-create-workspace.md)]

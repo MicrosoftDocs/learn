@@ -1,4 +1,4 @@
-In this unit, you'll use the Azure portal to create a web app.
+In this unit, you use the Azure portal to create a web app.
 
 ## Create a web app
 
@@ -19,17 +19,17 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Setting | Value | Details |
     |---|---|---|
     | **Project Details** |
-    | Subscription | Concierge Subscription | The web app you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you're creating it within the wizard). |
-    | Resource Group | Select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
+    | Subscription | Concierge Subscription | The web app you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or is going to belong, if you're creating it within the wizard). |
+    | Resource Group | Select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app belongs. All Azure resources must belong to a resource group. |
     | **Instance Details** |
-    | Name | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
+    | Name | *Enter a unique name* | The name of your web app. This name becomes part of the app's URL: *appname*.azurewebsites.net. The name you choose must be unique among all Azure web apps. |
     | Publish | Code | The method you want to use to publish your application. When publishing an application as code, you also must configure **Runtime stack** to prepare App Service resources to run your app. |
-    | Runtime stack | .NET 6 (LTS) | The platform on which your application will run. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
-    | Operating System | Linux | The operating system used on the virtual servers that will run your app. |
-    | Region | Central US | The geographical region from which your app will be hosted. |
-    | **App Service Plan** |
-    | Linux Plan | Accept default | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
-    | Sku and size | Free F1 | The pricing tier of the service plan being created. SKU and size determine the performance characteristics of the virtual servers that power your app and the features to which it has access. To select the F1 tier, select **Change size** to open the Spec Picker wizard. Select **Dev / Test**, select **F1**, and then select **Apply**. |
+    | Runtime stack | .NET 8 (LTS) | The platform on which your application is going to run. Your choice might affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
+    | Operating System | Linux | The operating system used on the virtual servers to run your app. |
+    | Region | East US | The geographical region from which your app is hosted. |
+    | **Pricing plans** |
+    | Linux Plan | Accept default | The name of the App Service plan that powers your app. By default, the wizard creates a new plan in the same region as the web app. |
+    | Pricing plan | Free F1 | The pricing tier of the service plan being created. The pricing plan determines the performance characteristics of the virtual servers that power your app and the features to which it has access. Select **Free F1** in the drop-down. |
 
     :::image type="content" source="../media/3-create-web-app-dotnet.png" alt-text="Screenshot showing web app creation details.":::
 
@@ -50,18 +50,18 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Setting | Value | Details |
     |---|---|---|
     | **Project Details** |
-    | Subscription | Concierge Subscription | The web app you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you're creating it within the wizard). |
-    | Resource Group | Select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
+    | Subscription | Concierge Subscription | The web app you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or is going to belong, if you're creating it within the wizard). |
+    | Resource Group | Select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app belongs. All Azure resources must belong to a resource group. |
     | **Instance Details** |
-    | Name | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
+    | Name | *Enter a unique name* | The name of your web app. This name becomes part of the app's URL: *appname*.azurewebsites.net. The name you choose must be unique among all Azure web apps. |
     | Publish | Code | The method you want to use to publish your application. When publishing an application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
-    | Runtime stack | Java 11 | The Java runtime version used by your application.  |
-    | Java web server stack | Apache Tomcat 9.0 | The platform on which you want your application to run. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
-    | Operating System | Linux | The operating system used on the virtual servers that will run your app. |
-    | Region | Central US | The geographical region from which your app will be hosted. |
-    | **App Service Plan** |
-    | Linux Plan | Accept default | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
-    | Sku and size | F1 | The pricing tier of the service plan being created. SKU and size determine the performance characteristics of the virtual servers that power your app, and the features to which it has access. To select the F1 tier, select **Change size** to open the Spec Picker wizard. Select **Dev / Test**, select **F1**, then select **Apply**. |
+    | Runtime stack | Java 21 | The Java runtime version used by your application.  |
+    | Java web server stack | Apache Tomcat 10.1 | The platform on which you want your application to run. Your choice might affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
+    | Operating System | Linux | The operating system used on the virtual servers to run your app. |
+    | Region | East US | The geographical region from which your app is hosted. |
+    | **Pricing plans** |
+    | Linux Plan | Accept default | The name of the App Service plan that powers your app. By default, the wizard creates a new plan in the same region as the web app. |
+    | Pricing plan | Standard S1 | The pricing tier of the service plan being created. The pricing plan determines the performance characteristics of the virtual servers that power your app and the features to which it has access. Select **Standard S1** in the drop-down. |
 
     :::image type="content" source="../media/3-create-web-app-java.png" alt-text="Screenshot showing web app creation details.":::
 
@@ -82,17 +82,17 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Setting | Value | Details |
     |---|---|---|
     | **Project Details** |
-    | Subscription | Concierge Subscription | The web app you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you're creating it within the wizard). |
-    | Resource Group | Select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
+    | Subscription | Concierge Subscription | The web app you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or is going to belong, if you're creating it within the wizard). |
+    | Resource Group | Select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app belongs. All Azure resources must belong to a resource group. |
     | **Instance Details** |
-    | Name | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
+    | Name | *Enter a unique name* | The name of your web app. This name becomes part of the app's URL: *appname*.azurewebsites.net. The name you choose must be unique among all Azure web apps. |
     | Publish | Code | The method you want to use to publish your application. When publishing an application as code, you also must configure **Runtime stack** to prepare App Service resources to run your app. |
-    | Runtime stack | Node 14 LTS | The platform on which your application will run. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
-    | Operating System | Linux | The operating system used on the virtual servers that will run your app. |
-    | Region | Central US | The geographical region from which your app will be hosted. |
-    | **App Service Plan** |
-    | Linux Plan | Accept default | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
-    | Sku and size | F1 | The pricing tier of the service plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features to which it has access. To select the F1 tier, select **Change size** to open the Spec Picker wizard. Select **Dev / Test**, select **F1**, and then select **Apply**. |
+    | Runtime stack | Node 20 LTS | The platform on which you want your application to run. Your choice might affect whether you have a choice of operating system; for some runtime stacks, App Service supports only one operating system. |
+    | Operating System | Linux | The operating system used on the virtual servers to run your app. |
+    | Region | East US | The geographical region from which your app is hosted. |
+    | **Pricing plans** |
+    | Linux Plan | Accept default | The name of the App Service plan that powers your app. By default, the wizard creates a new plan in the same region as the web app. |
+    | Pricing plan | Standard S1 | The pricing tier of the service plan being created. The pricing plan determines the performance characteristics of the virtual servers that power your app and the features to which it has access. Select **Standard S1** in the drop-down. |
 
     :::image type="content" source="../media/3-create-web-app-node.png" alt-text="Screenshot showing web app creation details.":::
 
@@ -113,17 +113,17 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Setting | Value | Details |
     |---|---|---|
     | **Project Details** |
-    | Subscription | Concierge Subscription | The web app you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you're creating it within the wizard). |
-    | Resource Group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
+    | Subscription | Concierge Subscription | The web app you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or is to belong, if you're creating it within the wizard). |
+    | Resource Group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app belongs. All Azure resources must belong to a resource group. |
     | **Instance Details** |
-    | Name | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
+    | Name | *Enter a unique name* | The name of your web app. This name becomes part of the app's URL: *appname*.azurewebsites.net. The name you choose must be unique among all Azure web apps. |
     | Publish | Code | The method you want to use to publish your application. When publishing an application as code, you also must configure **Runtime stack** to prepare App Service resources to run your app. |
-    | Runtime stack | Python 3.8 | The platform on which your application will run. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
-    | Operating System | Linux | The operating system used on the virtual servers that will run your app. |
-    | Region | East US | The geographical region from which your app will be hosted. |
-    | **App Service Plan** |
-    | Linux Plan | Accept default | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
-    | Sku and size | F1 | The pricing tier of the service plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features to which it has access. To select the F1 tier, select **Change size** to open the Spec Picker wizard. Select **Dev / Test**, select **F1**, and then select **Apply**. |
+    | Runtime stack | Python 3.12 | The platform on which you want your application to run. Your choice might affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
+    | Operating System | Linux | The operating system used on the virtual servers to run your app. |
+    | Region | East US | The geographical region from which your app is hosted. |
+    | **Pricing plans** |
+    | Linux Plan | Accept default | The name of the App Service plan that powers your app. By default, the wizard creates a new plan in the same region as the web app. |
+    | Pricing plan | Standard S1 | The pricing tier of the service plan being created. The pricing plan determines the performance characteristics of the virtual servers that power your app and the features to which it has access. Select **Standard S1** in the drop-down. |
 
     :::image type="content" source="../media/3-create-web-app-python.png" alt-text="Screenshot showing web app creation details.":::
 
@@ -166,4 +166,4 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 ::: zone-end
 
-Leave the browser tab with the new app's placeholder page open. You'll come back to it after you've deployed your app.
+Leave the browser tab with the new app's placeholder page open. You'll come back to it after your app is deployed.

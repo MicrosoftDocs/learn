@@ -3,12 +3,13 @@ uid: learn.wwl.train-models-training-mlflow-jobs.track-metrics-mlflow
 title: Track metrics with MLflow
 metadata:
   title: Track metrics with MLflow
-  description: "Learn how to track metrics with MLflow in scripts in Azure Machine Learning."
-  ms.date: 02/14/2023
+  description: Learn how to track metrics with MLflow in scripts in Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/25/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 9
 content: |
   [!include[](includes/2-track-metrics-mlflow.md)]

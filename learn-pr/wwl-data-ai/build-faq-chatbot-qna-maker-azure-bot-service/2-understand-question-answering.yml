@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.understand-question-answering
+title: Understand question answering
+metadata:
+  title: Understand question answering
+  description: Understand question answering
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 11/01/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-understand-question-answering.md)]

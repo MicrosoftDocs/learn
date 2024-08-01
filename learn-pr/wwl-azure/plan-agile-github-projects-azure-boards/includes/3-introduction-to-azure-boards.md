@@ -4,7 +4,7 @@ You have multiple features and configurations to support your teams, such as cal
 
 The Kanban board is one of several tools that allows you to add, update, and filter user stories, bugs, features, and epics.
 
-:::image type="content" source="../media/azure-boards-board-view-78b3f04e.png" alt-text="Screenshot of Kanban boards with work items.":::
+:::image type="content" source="../media/azure-boards-board-view-78b3f04e-b4d3d7b6-4f10c92e.png" alt-text="Screenshot of Kanban boards with work items.":::
 
 
 You can track your work using the default work item types such as user stories, bugs, features, and epics. It's possible to customize these types or create your own. Each work item provides a standard set of system fields and controls, including Discussion for adding and tracking comments, History, Links, and Attachments.
@@ -23,7 +23,7 @@ Queries support the following tasks:
 
 It's possible to create another view with deliverables and track dependencies across several teams in a calendar view using Delivery Plans.
 
-:::image type="content" source="../media/azure-boards-delivery-plan-11462b8e.png" alt-text="Screenshot of Azure Delivery Plan feature.":::
+:::image type="content" source="../media/azure-boards-delivery-plan-11462b8e-545e0ab2-f398d997.png" alt-text="Screenshot of Azure Delivery Plan feature.":::
 
 
 Delivery plans are fully interactive, supporting the following tasks:
@@ -37,6 +37,6 @@ Delivery plans are fully interactive, supporting the following tasks:
 
 For more information about Azure Boards, see:
 
- -  [Azure Boards documentation \| Microsoft Docs](/azure/devops/boards).
- -  [Reasons to start using Azure Boards \| Microsoft Docs](/azure/devops/boards/get-started/why-use-azure-boards).
+ -  [Azure Boards documentation \| Microsoft Learn](/azure/devops/boards).
+ -  [Reasons to start using Azure Boards \| Microsoft Learn](/azure/devops/boards/get-started/why-use-azure-boards).
  -  [GitHub and Azure Boards](/azure/devops/boards/github).

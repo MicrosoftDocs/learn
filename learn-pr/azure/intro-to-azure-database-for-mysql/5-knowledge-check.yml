@@ -5,67 +5,69 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 03/23/2021  
-  author: markingmyname
-  ms.author: maghan
-  manager: jroth
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.date: 07/08/2024
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-  - content: "Which of the following MySQL hosting solutions would be optimal if an administrator wants to implement zone-redundant high availability?"
+  - content: "What is required to manage high availability for MySQL on Azure VMs?"
     choices:
-    - content: "MySQL for Azure VMs"
+    - content: "Azure Portal interface"
       isCorrect: false
-      explanation: "Incorrect. This is not the optimum solution."
-    - content: "Azure Database for MySQL Single Server"
-      isCorrect: false
-      explanation: "Incorrect. Azure Database for MySQL Single Server supports only a single zone for high availability."
-    - content: "Azure Database for MySQL Flexible Server"
+      explanation: "Incorrect. While the Azure Portal is used for management, setting up high availability specifically requires more than just interface manipulation."
+    - content: "Manual configuration of replication and failover"
       isCorrect: true
-      explanation: "Correct. This option is the best solution."
-  - content: "An app developer requires version 5.6 of MySQL. Which of the following options would be an appropriate hosting choice based on this requirement?"
-    choices:
-    - content: "Azure Database for MySQL Flexible Server"
+      explanation: "Correct. High availability for MySQL on Azure VMs requires manual setup of replication and failover mechanisms."
+    - content: "Automatic patching and updates"
       isCorrect: false
-      explanation: "Incorrect. Azure Database for MySQL Flexible Server supports only versions 5.7 and 8.0."
-    - content: "Azure Database for MySQL Single Server"
-      isCorrect: true
-      explanation: "Correct. Azure Database for MySQL Single Server supports version 5.6, though this version is retired. "
-  - content: "Which of the following Azure Database for MySQL SKUs is most appropriate for low-cost development and low-concurrency workloads?"
+      explanation: "Incorrect. Automatic patching and updates help maintain the system but do not establish high availability."
+  - content: "For which scenario is Azure Database for MySQL particularly useful?"
     choices:
+    - content: "Applications requiring frequent manual database upgrades"
+      isCorrect: false
+      explanation: "Incorrect. Azure Database for MySQL - Flexible Server is designed to minimize the need for frequent manual interventions."
+    - content: "Workloads that benefit from automated backup and scaling features"
+      isCorrect: true
+      explanation: "Correct. Azure Database for MySQL - Flexible Server offers automated backups and scaling features that support dynamic workloads efficiently."
+    - content: "Environments where direct server hardware management is required"
+      isCorrect: false
+      explanation: "Incorrect. Azure Database for MySQL - Flexible Server is a managed service, so direct hardware management is not applicable."
+  - content: "Which Azure Database for MySQL - Flexible Server SKU is most appropriate for low-cost development and low concurrency workloads?"
+    choices:
+    - content: "Burstable"
+      isCorrect: true
+      explanation: "Correct. The Burstable SKU is designed for scenarios that require low-cost development and sporadic bursts of performance."
     - content: "General Purpose"
       isCorrect: false
-      explanation: "Incorrect. This SKU is better suited for production workloads requiring high concurrency, scale, and predictable performance."
-    - content: "Memory Optimized"
+      explanation: "Incorrect. The General Purpose SKU is intended for production workloads requiring balanced compute and memory resources."
+    - content: "Business Critical"
       isCorrect: false
-      explanation: "Incorrect. This SKU is better suited for production workloads requiring high concurrency, scale, and predictable performance."
-    - content: "Basic"
-      isCorrect: true
-      explanation: "Correct. This SKU is best-suited for low-cost development and low-concurrency workloads."
-  - content: "For administrative effort, who is responsible for managing high availability of a database hosted using Azure IaaS?"
+      explanation: "Incorrect. The Business Critical SKU is meant for the most demanding database applications, requiring high throughput and low latency."
+  - content: "What feature of Azure Database for MySQL allows for automatic scaling of IOPS based on workload needs?"
     choices:
-    - content: "The database administrator"
+    - content: "Elastic pools"
       isCorrect: false
-      explanation: "Incorrect. It's possible that the database administrator might lack the required skills."
-    - content: "The operating system administrator for the hosting VM"
+      explanation: "Incorrect. Elastic pools are used to manage and scale multiple databases that have varying performance needs, not automatic scaling of IOPS."
+    - content: "Autoscale IOPS"
       isCorrect: true
-      explanation: "In an IaaS environment, your organizational administrator is responsible for many components and features, including high-availability options."
-    - content: "Microsoft"
+      explanation: "Correct. Autoscale IOPS feature dynamically adjusts the I/O throughput based on the current workload, automatically scaling up or down as needed."
+    - content: "Load balancing"
       isCorrect: false
-      explanation: "Incorrect. In an IaaS environment, the hosting vendor doesn't manage high-availability options for your database."
-  - content: "Which of the following is a good reason to consider using MySQL on Azure VMs as a hosting option for your database apps?"
+      explanation: "Incorrect. Load balancing distributes client requests across multiple servers but does not directly influence IOPS scaling."
+  - content: "Which of these considerations is a good reason for using MySQL on Azure VMs as a hosting option for your database apps?"
     choices:
-    - content: "You want to avoid the time and expense of acquiring new on-premises hardware to host your database app."
+    - content: "Avoiding the time and expense of acquiring new on-premises hardware to host your legacy database application."
       isCorrect: true
-      explanation: "Correct. This is a valid consideration."
+      explanation: "Correct. This consideration is valid."
     - content: "Online Storage scaling is required."
       isCorrect: false
-      explanation: "Incorrect. This feature is only available with Azure Database for MySQL."
+      explanation: "Incorrect. The Online Storage scaling feature is only available with Azure Database for MySQL."
     - content: "Automatic backups are required."
       isCorrect: false
-      explanation: "Incorrect. This is a feature of Azure Database for MySQL."
+      explanation: "Incorrect. Automatic backups are a feature of Azure Database for MySQL."
       

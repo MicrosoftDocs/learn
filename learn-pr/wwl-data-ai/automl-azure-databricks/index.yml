@@ -2,12 +2,14 @@
 uid: learn.wwl.automl-azure-databricks
 metadata:
   title: Use AutoML in Azure Databricks
-  description: "Learn how to use AutoML to train optimal machine learning models for your data in Azure Databricks"
-  ms.date: 03/28/2023
+  description: Learn how to use AutoML to train optimal machine learning models for your data in Azure Databricks
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
+  ms.date: 08/29/2023
   ms.service: azure-databricks
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Use AutoML in Azure Databricks
 summary: AutoML in Azure Databricks simplifies the process of building an effective machine learning model for your data.
 abstract: |
@@ -24,8 +26,7 @@ roles:
 products:
 - azure-databricks
 subjects:
-- data-ai
-- data-science
+- data-management
 - machine-learning
 units:
 - learn.wwl.automl-azure-databricks.introduction

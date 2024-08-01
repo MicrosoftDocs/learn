@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.philanthropies.ai-powered-tools-for-teaching
+
+metadata:
+  title: Use AI-powered tools for training
+  description: This module contains sample activities that demonstrate how to integrate AI-powered tools into your learning environment.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 01/29/2024
+  ms.service: artificial-intelligence
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - ce-skilling-ai-copilot
+title: Use AI-powered tools for training
+summary: This module contains sample activities that demonstrate how to integrate AI-powered tools into your learning environment.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Evaluate the effectiveness of Microsoft's AI-powered tools in enhancing teaching and learning outcomes. 
+  - Critique the quality of interactive learning materials created using Microsoft PowerPoint Speaker Coach. 
+  - Compare and contrast different AI-powered features in Microsoft 365 products.
+
+iconUrl: /training/achievements/ai-powered-tools-for-teaching.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- higher-ed-educator
+- business-user
+- data-engineer
+- school-leader
+products:
+- ai-services
+- m365-apps
+- azure-translator-text
+- azure-translator-speech
+- ms-copilot
+- language-service
+subjects:
+- artificial-intelligence
+units:
+- learn.philanthropies.ai-powered-tools-for-teaching.introduction
+- learn.philanthropies.ai-powered-tools-for-teaching.refine-your-presentation-skills-using-speaker-coach 
+- learn.philanthropies.ai-powered-tools-for-teaching.create-an-interactive-article-using-microsoft-sway
+- learn.philanthropies.ai-powered-tools-for-teaching.knowledge-check
+- learn.philanthropies.ai-powered-tools-for-teaching.summary
+badge:
+  uid: learn.philanthropies.ai-powered-tools-for-teaching.badge

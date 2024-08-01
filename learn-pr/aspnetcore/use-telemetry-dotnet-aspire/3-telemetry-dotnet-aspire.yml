@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.use-telemetry-dotnet-aspire.telemetry-dotnet-aspire
+title: Using OpenTelemetry in .NET Aspire
+metadata:
+  title: Using OpenTelemetry in .NET Aspire
+  description: In this unit, you'll learn how to use OpenTelemetry APIs to instrument a microservice in a .NET Aspire cloud-native app.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-telemetry-dotnet-aspire.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.make-recommendations-ai-personalize.create-ai-personalizer-resource
+title: Create Azure AI Personalizer resource
+metadata:
+  title: Create Azure AI Personalizer resource
+  description: Create Azure AI Personalizer resource using the Azure portal, and Azure CLI.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 9/27/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: devx-track-azurecli
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-create-ai-personalizer-resource.md)]

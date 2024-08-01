@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.make-recommendations-ai-personalize.configure-loop
+title: Configure a learning loop
+metadata:
+  title: Configure a learning loop
+  description: Learn how to set up rewards for the feedback loop, configure exploration, and model update frequency.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 9/27/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-configure-loop.md)]

@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-configure-manage-identities.exercise-adding-groups-azure-active-directory
-title: Exercise - add groups in Azure Active Directory
+uid: learn.wwl.create-configure-manage-identities.exercise-add-groups-azure-active-directory
+title: Exercise - add groups in Microsoft Entra ID
 metadata:
-  title: Exercise - add groups in Azure Active Directory
-  description: "Exercise - add groups in Azure Active Directory"
-  ms.date: 02/03/2023
+  title: Exercise - add groups in Microsoft Entra ID
+  description: "Exercise - add groups in Microsoft Entra ID"
+  ms.date: 01/31/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-exercise-add-groups-azure-active-directory.md)]

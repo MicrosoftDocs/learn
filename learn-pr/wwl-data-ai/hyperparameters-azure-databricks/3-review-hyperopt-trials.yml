@@ -3,12 +3,13 @@ uid: learn.wwl.hyperparameters-azure-databricks.review-hyperopt-trials
 title: Review Hyperopt trials
 metadata:
   title: Review Hyperopt trials
-  description: "Review Hyperopt trials"
-  ms.date: 03/22/2023
+  description: Review Hyperopt trials
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-databricks
+  ms.date: 08/29/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/3-review-hyperopt-trials.md)]

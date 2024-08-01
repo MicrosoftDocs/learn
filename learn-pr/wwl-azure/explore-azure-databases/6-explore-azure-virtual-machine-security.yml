@@ -3,12 +3,13 @@ uid: learn.wwl.explore-azure-databases.virtual-machine-security
 title: Explore Azure Virtual Machine security
 metadata:
   title: Explore Azure Virtual Machine security
-  description: "Explore Azure Virtual Machine security"
-  ms.date: 04/23/2023
+  description: "Review important considerations about Azure Virtual Machine security."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/6-explore-azure-virtual-machine-security.md)]

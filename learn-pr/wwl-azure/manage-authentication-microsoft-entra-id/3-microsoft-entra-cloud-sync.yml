@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-cloud-sync
+title: Microsoft Entra Cloud Sync
+metadata:
+  title: Microsoft Entra Cloud Sync
+  description: "Microsoft Entra Cloud Sync"
+  ms.date: 05/29/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-microsoft-entra-cloud-sync.md)]

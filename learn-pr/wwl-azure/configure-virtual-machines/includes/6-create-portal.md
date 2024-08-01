@@ -14,8 +14,12 @@ The Azure portal guides you through the configuration process to create your vir
 
 - The **Networking** tab provides settings to create virtual networks and load balancing.
 
-- On the **Management** tab, you can enable auto-shutdown and specify backup details.
+- On the **Management** tab, you can enable automatic shutdown and specify backup details.
 
 - On the **Advanced** tab, you can configure agents, scripts, or virtual machine extensions.
 
 - Other settings are available on the **Monitoring** and **Tags** tabs.
+
+### Learn how to reduce costs when creating your virtual machine
+
+> [!Video https://www.youtube.com/embed/n9QRCdCNtG0]

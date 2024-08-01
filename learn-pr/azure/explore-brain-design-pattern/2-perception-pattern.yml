@@ -4,11 +4,12 @@ title: Perception Pattern
 metadata:
   title: Perception Pattern
   description: An introduction to the perception pattern.
-  ms.date: 10/18/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/18/2022
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/2-perception-pattern.md)] 

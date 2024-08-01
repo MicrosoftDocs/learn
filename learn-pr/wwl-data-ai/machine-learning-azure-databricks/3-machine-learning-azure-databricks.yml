@@ -3,12 +3,13 @@ uid: learn.wwl.machine-learning-azure-databricks.machine-learning-azure-databric
 title: Machine learning in Azure Databricks
 metadata:
   title: Machine learning in Azure Databricks
-  description: "Machine learning in Azure Databricks"
-  ms.date: 03/22/2023
+  description: Machine learning in Azure Databricks
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-databricks
+  ms.date: 08/29/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/3-machine-learning-azure-databricks.md)]

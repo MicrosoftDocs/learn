@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-iot-hub-monitoring.exercise-configure-an-alert
+title: Exercise - Configure an alert
+metadata:
+  title: Exercise - Configure an alert
+  description: "Configure an alert"
+  ms.date: 11/05/2023
+  author: kgremban
+  ms.author: kgremban
+  ms.custom: engagement-fy23
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-exercise-configure-an-alert.md)]

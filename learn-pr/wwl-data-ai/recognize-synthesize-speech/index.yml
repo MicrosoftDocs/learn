@@ -1,38 +1,37 @@
 ### YamlMime:Module
 uid: learn.wwl.recognize-synthesize-speech
 metadata:
-  title: Recognize and synthesize speech
-  description: "Recognize and synthesize speech"
-  ms.date: 01/27/2023
+  title: Fundamentals of Azure AI Speech
+  description: Learn how to use Azure AI services to recognize and synthesize speech.
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Recognize and synthesize speech
-summary: Learn how to recognize and synthesize speech by using Azure Cognitive Services.
+  ms.date: 12/21/2023
+  ms.service: azure
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+title: Fundamentals of Azure AI Speech
+summary: Learn how to recognize and synthesize speech by using Azure AI Speech.
 abstract: |
   In this module you will:
   - Learn about speech recognition and synthesis
-  - Learn how to use the Speech cognitive service in Azure
+  - Learn how to use Azure AI Speech
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/convert-speech-to-text.svg
+iconUrl: /training/achievements/convert-speech-to-text.svg
 levels:
-- intermediate
+- beginner
 roles:
 - ai-engineer
-- developer
-- solution-architect
 - student
 products:
 - azure
-- azure-cognitive-services
-- azure-sdks
 subjects:
 - artificial-intelligence
 - natural-language-processing
 units:
 - learn.wwl.recognize-synthesize-speech.introduction
+- learn.wwl.recognize-synthesize-speech.understand-speech
 - learn.wwl.recognize-synthesize-speech.get-started-azure
 - learn.wwl.recognize-synthesize-speech.exercise-transcribe-speech-use-azure
 - learn.wwl.recognize-synthesize-speech.knowledge-check

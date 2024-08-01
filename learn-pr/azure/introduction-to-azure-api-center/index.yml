@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.introduction-to-azure-api-center
+metadata:
+  title: Introduction to Azure API Center    
+  description: "Introduction to Azure API Center, a centralized secure inventory of APIs to help you govern, discover, and consume APIs across your organization."              
+  ms.date: 5/3/2024              
+  author: juliamuiruri4       
+  ms.author: juliamuiruri           
+  ms.topic: module-intro-to-product
+  ms.service: azure-api-center
+title: Introduction to Azure API Center
+summary: "This module introduces you to Azure API Center, a centralized secure inventory of APIs to help you govern, discover, and consume APIs across your organization."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Understand what Azure API Center is and the benefits it provides.
+    - Explore in depth how API Center enables your organization with centralized API inventory, governance, discovery, and consumption.
+    - Know how to get started with Azure API Center for your organization.
+    - Explore advanced integrations with developer tools such as Visual Studio Code.
+prerequisites: |
+  - Azure Subscription
+  - Contributor role assignment or equivalent permissions in the Azure subscription.
+  - Basic understanding of APIs and API management.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - developer
+  - risk-practitioner
+  - security-engineer
+products:
+- azure
+subjects:
+  - infrastructure
+  - security  
+units:
+- learn.introduction-to-azure-api-center.introduction
+- learn.introduction-to-azure-api-center.what-is-api-center
+- learn.introduction-to-azure-api-center.get-started-with-api-center
+- learn.introduction-to-azure-api-center.api-governance
+- learn.introduction-to-azure-api-center.api-discovery-consumption
+- learn.introduction-to-azure-api-center.knowledge-check
+- learn.introduction-to-azure-api-center.summary
+badge:
+  uid: learn.introduction-to-azure-api-center.badge

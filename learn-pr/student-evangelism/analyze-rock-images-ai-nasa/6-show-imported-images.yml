@@ -3,11 +3,12 @@ uid: learn.student-evangelism.analyze-rock-images-ai-nasa.6-show-imported-images
 metadata:
   title: Exercise - Display photos in Jupyter Notebook
   description: Run code to classify uploaded photos, and print the photos with the rock classification.
-  ms.date: 04/11/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/11/2021
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Exercise - Display photos in Jupyter Notebook
 durationInMinutes: 4

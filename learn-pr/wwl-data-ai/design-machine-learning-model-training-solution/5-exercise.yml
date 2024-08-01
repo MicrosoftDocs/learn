@@ -2,13 +2,14 @@
 uid: learn.wwl.design-machine-learning-model-training-solution.exercise
 title: 'Exercise: Design a model training strategy'
 metadata:
-  title: 'Exercise: Design a model training strategy'
+  title: "Exercise: Design a model training strategy"
   description: "Exercise: Design a model training strategy"
-  ms.date: 12/06/2022
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

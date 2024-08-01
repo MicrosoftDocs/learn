@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.training-with-ai-tools.explore-microsoft-ai-powered-tools-for-trainers
+title: Explore Microsoft AI-powered tools for trainers
+metadata:
+  title: Explore Microsoft AI-powered tools for trainers
+  description: This content is a part of the 'Training with AI tools' module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 03/15/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-explore-microsoft-ai-powered-tools-for-trainers.md)]

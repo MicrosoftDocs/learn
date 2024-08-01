@@ -3,25 +3,36 @@ uid: learn.wwl.explore-azure-cosmos-db
 metadata:
   title: Explore Azure Cosmos DB
   description: "Learn the core features and functionality of Azure Cosmos DB."
-  ms.date: 04/25/2023
+  ms.date: 07/12/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: cosmos-db
+  ai-usage: human-only
 title: Explore Azure Cosmos DB
 summary: Learn the core features and functionality of Azure Cosmos DB.
 abstract: |
   After completing this module, you'll be able to:
-  * Identify the key benefits provided by Azure Cosmos DB
-  * Describe the elements in an Azure Cosmos DB account and how they are organized
-  * Explain the different consistency levels and choose the correct one for your project
-  * Explore the APIs supported in Azure Cosmos DB and choose the appropriate API for your solution
-  * Describe how request units impact costs
-  * Create Azure Cosmos DB resources by using the Azure portal.
+
+  -   Identify the key benefits provided by Azure Cosmos DB
+
+  -   Describe the elements in an Azure Cosmos DB account and how they are organized
+
+  -   Explain the different consistency levels and choose the correct one for your project
+
+  -   Explore the APIs supported in Azure Cosmos DB and choose the appropriate API for your solution
+
+  -   Describe how request units impact costs
+
+  -   Create Azure Cosmos DB resources by using the Azure portal.
 prerequisites: |
-  * You should be familiar with developer concepts and terminology.
-  * Experience working with data solutions.
-  * An understanding of cloud computing and some experience with the Azure portal.
+  -   You should be familiar with developer concepts and terminology.
+
+  -   Experience working with data solutions.
+
+  -   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/1-explore-azure-cosmos-db.svg
 levels:
 - intermediate
@@ -31,7 +42,7 @@ products:
 - azure
 - azure-cosmos-db
 subjects:
-- database
+- databases
 units:
 - learn.wwl.explore-azure-cosmos-db.introduction
 - learn.wwl.explore-azure-cosmos-db.identify-key-benefits-of

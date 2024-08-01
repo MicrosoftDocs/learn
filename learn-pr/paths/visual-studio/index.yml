@@ -7,8 +7,7 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-visual-studio
+  ms.topic: learning-path
 title: Use Visual Studio for modern development
 prerequisites: None
 summary: |
@@ -25,10 +24,8 @@ products:
 - azure
 - dotnet
 - vs-ide
-subjects:
-- development-tools
 modules:
-- learn.visual-studio.visual-studio-intro
+#- learn.visual-studio.visual-studio-intro
 #- learn.visual-studio-github-push
 - learn.visual-studio-test-concepts
 - learn.visual-studio.visual-studio-test-tools

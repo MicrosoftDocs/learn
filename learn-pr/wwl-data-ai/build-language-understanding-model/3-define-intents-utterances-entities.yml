@@ -3,12 +3,13 @@ uid: learn.wwl.build-language-understanding-model.define-intents-utterances-enti
 title: Define intents, utterances, and entities
 metadata:
   title: Define intents, utterances, and entities
-  description: "Define intents, utterances, and entities"
-  ms.date: 10/12/2022
+  description: Define intents, utterances, and entities
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/07/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

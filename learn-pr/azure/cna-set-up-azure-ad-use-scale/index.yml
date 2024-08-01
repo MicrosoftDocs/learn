@@ -1,24 +1,25 @@
 ### YamlMime:Module
 uid: learn.azure.cna-set-up-apps-use-scale
 metadata:
-  title: Authenticate and authorize multi-tenant apps using Azure Active Directory (Azure AD)
-  description: Azure AD enables you to improve the functionality of cloud-native apps in multitenant scenarios.
-  ms.date: 05/19/2021
-  author: mpolicht
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Authenticate and authorize multi-tenant apps using Azure Active Directory (Azure AD)
-summary: Azure AD enables you to improve the functionality of cloud-native apps in multitenant scenarios.
+  title: Authenticate and authorize multi-tenant apps using Microsoft Entra ID
+  description: Microsoft Entra ID enables you to improve the functionality of cloud-native apps in multitenant scenarios.
+  manager: mkluck
+  ms.date: 08/22/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: module-standard-task-based
+  ms.service: active-directory
+title: Authenticate and authorize multi-tenant apps using Microsoft Entra ID
+summary: Microsoft Entra ID enables you to improve the functionality of cloud-native apps in multitenant scenarios.
 abstract: |
   In this module, you'll:
-  - Describe the characteristics and functionality of Azure Active Directory (Azure AD)
-  - Implement Azure AD authentication for cloud-native applications
+  - Describe the characteristics and functionality of Microsoft Entra ID
+  - Implement Microsoft Entra authentication for cloud-native applications
 prerequisites: | 
   Before working on this module, it's helpful but not required that you have:
   - A basic understanding of cloud computing
   - Basic familiarity with Azure
-  - Basic familiarity with Azure AD
+  - Basic familiarity with Microsoft Entra ID
   - Basic familiarity with programming concepts
 iconUrl: /training/achievements/cna-set-up-azure-ad-use-scale.svg
 levels:
@@ -30,7 +31,7 @@ roles:
 - student
 products:
 - azure
-- azure-active-directory
+- entra-id
 subjects:
 - cloud-computing
 units:

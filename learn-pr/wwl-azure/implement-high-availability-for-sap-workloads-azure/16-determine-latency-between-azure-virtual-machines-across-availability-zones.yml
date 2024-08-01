@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.determine-latency-between-azure-virtual-machines-across-availability-zones
-title: Determine latency between Azure virtual machines across Availability Zones
+title: Determine latency between Azure Virtual Machines across availability zones
 metadata:
-  title: Determine latency between Azure virtual machines across Availability Zones
-  description: "Determine latency between Azure virtual machines across Availability Zones"
-  ms.date: 04/20/2023
+  title: Determine latency between Azure Virtual Machines across availability zones
+  description: "Learn how to measure the latency between Azure Virtual Machines across availability zones."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/16-determine-latency-between-azure-virtual-machines-across-availability-zones.md)]

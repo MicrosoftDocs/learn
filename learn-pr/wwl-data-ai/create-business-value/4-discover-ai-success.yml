@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-business-value.discover-ai-success
+title: Discover the path to AI success
+metadata:
+  title: Discover the path to AI success
+  description: Discover the path to AI success
+  author: wwlpublish
+  ms.author: rcaper
+  ms.date: 04/08/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-discover-ai-success.md)]

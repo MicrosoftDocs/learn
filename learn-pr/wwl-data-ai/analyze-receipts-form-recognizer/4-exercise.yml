@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-receipts-form-recognizer.exercise
+title: Exercise - Extract from data in Document Intelligence Studio
+metadata:
+  title: Exercise - Extract from data in Document Intelligence Studio
+  description: Exercise - Extract from data in Document Intelligence Studio
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 11/02/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-exercise.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-question-answer-solution-ai-language.test-publish-knowledge-base
+title: Test and publish a knowledge base
+metadata:
+  title: Test and publish a knowledge base
+  description: Test and publish a knowledge base
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 08/31/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-test-publish-knowledge-base.md)]

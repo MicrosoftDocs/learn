@@ -1,6 +1,6 @@
-As the administrator for the autonomous vehicle company, you need an easy, secure, and relatively inexpensive way to regularly import the enormous amounts of telemetry data that your vehicles generate every day, but you can't dedicate your entire network bandwidth to the task. You decide to look at the Azure Data Box family, an ensemble of physical and virtual devices that aims to solve this type of problem. Each device is designed to meet the slightly different needs and priorities of customers looking for a solution in this space.
+As the administrator for the autonomous vehicle company, you need an easy, secure, and relatively inexpensive way to regularly import the enormous amounts of telemetry data that your vehicles generate every day. However, you can't dedicate your entire network bandwidth to the task. You decide to look at the Azure Data Box family, an ensemble of physical and virtual devices that aims to solve this type of problem. Each device is designed to meet the slightly different needs and priorities of customers looking for a solution in this space.
 
-In this unit, you'll learn about the products in the Azure Data Box family.
+In this unit, you learn about the products in the Azure Data Box family.
 
 ## Azure Data Box products
 
@@ -12,9 +12,9 @@ The Azure Data Box family can be divided into two groups, for *offline* and *onl
 
 The devices in the offline grouping include:
 
-- **Data Box Disk**: Provides one ~35-TB transfer to Azure. You'll connect and copy data over USB.
-- **Data Box**: Provides one ~80-TB transfer to Azure per order. You'll connect and copy data to the device over standard network-interface protocols like SMB and NFS.
-- **Data Box Heavy**: Provides one ~800-TB transfer to Azure. You'll use high-throughput network interfaces to connect and copy data to the device. This process uses standard network-interface protocols like SMB and NFS. Data Box Heavy is like two Data Boxes, each with an independent node.
+- **Data Box Disk**: Provides one ~35-TB transfer to Azure. You connect and copy data over USB.
+- **Data Box**: Provides one ~80-TB transfer to Azure per order. You connect and copy data to the device over standard network-interface protocols like SMB and NFS.
+- **Data Box Heavy**: Provides one ~800-TB transfer to Azure. You use high-throughput network interfaces to connect and copy data to the device. This process uses standard network-interface protocols like SMB and NFS. Data Box Heavy is like two Data Boxes, each with an independent node.
 
 ### Online data transfer
 

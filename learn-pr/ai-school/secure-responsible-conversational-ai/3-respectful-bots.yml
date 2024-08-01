@@ -4,11 +4,12 @@ title: Design your bot so that it respects relevant cultural norms and guards ag
 metadata:
   title: Design your bot so that it respects relevant cultural norms and guards against misuse
   description: It’s important that your conversational AI is respectful of your users needs as well as offering protection against misuse. In this unit, you will learn how to safeguard your bot to ensure that it respects your users needs and is protected from misuse.
-  ms.date: 02/20/2020
   author: Adriamen
   ms.author: japerena
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/3-respectful-bots.md)] 

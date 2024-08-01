@@ -1,0 +1,59 @@
+### YamlMime:Module
+uid: learn.wwl.manage-security-active-directory
+metadata:
+  title: Manage security in Active Directory
+  description: "This module focuses on maintaining security in an Active Directory environment. It covers things from permissions management to authentication methods to identifying problematic accounts."
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: module
+  ms.service: active-directory
+  ai-usage: ai-assisted
+title: Manage security in Active Directory
+summary: This module focuses on maintaining security in an Active Directory environment. It covers things from permissions management to authentication methods to identifying problematic accounts.
+abstract: |
+  By the end of this module, you'll be able to:
+
+  -   Configure user account rights.
+
+  -   Configure user account rights to restrict access.
+
+  -   Delegate permissions in Active Directory.
+
+  -   Protect User Accounts with the Protected Users group.
+
+  -   Describe Windows Defender Credential Guard.
+
+  -   Block Windows NTLM authentication.
+
+  -   Locate problematic accounts.
+prerequisites: |
+  Knowledge of and experience working with:
+
+  -   Windows Server.
+
+  -   Core networking technologies.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- active-directory
+subjects:
+- architecture
+- device-management
+- infrastructure
+units:
+- learn.wwl.manage-security-active-directory.introduction
+- learn.wwl.manage-security-active-directory.configure-user-account-rights
+- learn.wwl.manage-security-active-directory.configure-user-account-rights-restrict-access
+- learn.wwl.manage-security-active-directory.delegate-permissions
+- learn.wwl.manage-security-active-directory.protect-user-accounts-protected-users-group
+- learn.wwl.manage-security-active-directory.describe-windows-defender-credential-guard
+- learn.wwl.manage-security-active-directory.block-windows-ntlm-authentication
+- learn.wwl.manage-security-active-directory.locate-problematic-accounts
+- learn.wwl.manage-security-active-directory.knowledge-check
+- learn.wwl.manage-security-active-directory.summary
+badge:
+  uid: learn.wwl.manage-security-active-directory.badge

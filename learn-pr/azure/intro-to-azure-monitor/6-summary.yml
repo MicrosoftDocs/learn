@@ -5,11 +5,10 @@ metadata:
   unitType: summary
   title: Summary
   description: Summary of Azure Monitor introduction.
-  ms.prod: learning-azure-monitor
-  ms.date: 4/15/2021
-  author: gerryaobrien
-  ms.author: gerryo
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.date: 08/31/2023
+  author: guywi-ms
+  ms.author: guywild
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

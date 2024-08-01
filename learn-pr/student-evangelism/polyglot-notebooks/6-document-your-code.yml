@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-polyglot-notebooks.document-your-code
+title: Document your code flows with Mermaid
+metadata:
+  title: Document your code flows with Mermaid
+  description: Polyglot notebooks allow you to document your code flows with Mermaid diagrams. Learn how you can do so through in this unit.
+  author: japhletnwamu
+  ms.author: japhletnwamu
+  ms.date: 04/03/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=cloud_advocates
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-document-your-code.md)]

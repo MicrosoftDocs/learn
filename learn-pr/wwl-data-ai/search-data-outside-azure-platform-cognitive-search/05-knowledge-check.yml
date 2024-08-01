@@ -3,17 +3,16 @@ uid: learn.wwl.search-data-outside-azure-platform-cognitive-search.knowledge-che
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 09/21/2022
+  description: Knowledge check
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 09/27/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
-content: |
-  [!include[](includes/05-knowledge-check.md)]
 quiz:
   questions:
   - content: "What is the limitation of using the Azure Search linked service as a sink in a copy data task?"
@@ -37,8 +36,8 @@ quiz:
       explanation: "Incorrect. The indexer is a feature of the search service that pulls data into an index."
     - content: "Skillset."
       isCorrect: false
-      explanation: "Incorrect. A skillset is used to enrich an index using cognitive services."
-  - content: "When implementing a backoff strategy, what return codes should you look for and then retry your request?"
+      explanation: "Incorrect. A skillset is used to enrich an index using Azure AI Services."
+  - content: "Which response code will require you to implement a backoff strategy?"
     choices:
     - content: "200 and 201."
       isCorrect: false
@@ -48,4 +47,4 @@ quiz:
       explanation: "Incorrect. These return codes are general HTTP response errors for when documents can't be found or there's a general error."
     - content: "207 and 503."
       isCorrect: true
-      explanation: "Correct. 503 is the response when a request is throttled. 207 is the response when a single document in a batch fails."
+      explanation: "Correct. 503 is the response means the system is under heavy load and your request can't be processed at this time. 207 means that some documents succeeded, but at least one of them failed."

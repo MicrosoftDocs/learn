@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm
+metadata:
+  moduleType: standard
+  title: Optimize AI training workloads using Azure CycleCloud and Slurm
+  description: In this module, we examine the intersection of cloud computing, HPC, and AI. Then, by utilizing Azure CycleCloud and Slurm, you explore methods to deploy and manage clusters, confirm node health, and optimize performance tailored for AI training tasks.
+  ms.author: padmalathas
+  author: begeorge
+  manager: akashdubey
+  ms.date: 03/13/2024
+  ms.topic: module
+  ms.service: cyclecloud
+title: Optimize AI training workloads using Azure CycleCloud and Slurm
+summary: Azure AI training workloads are crucial for achieving optimal model performance that enables enhance of your AI training workflows.
+abstract: |
+  By the end of this module, you're able to:
+
+  - Be able to deploy a Slurm cluster using Azure CycleCloud.
+  - Learn how to ensure your cluster is healthy through Node Health Checks.
+  - Learn how to optimize your cluster for AI training workloads.
+prerequisites: |
+  - Basic knowledge of HPC.
+  - Understand the concepts of Azure Virtual Machines, subscription, resource groups, and virtual networks.
+  - Ability to deploy VM, mounting shared file systems.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - solution-architect
+  - data-scientist
+  - developer
+  - student
+products:
+  - azure-cyclecloud
+units:
+- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.1-introduction
+- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.2-node-health-checks-using-azure-cyclecloud
+- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.3-cluster-requirements-for-ai-training-workloads
+- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.4-knowledge-check
+- learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.5-summary
+badge:
+  uid: learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.badge

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.governance-security.infrastructure-security-architecture
+title: Deploy secure infrastructures by using a landing zone
+metadata:
+  title: Deploy secure infrastructures by using a landing zone
+  description: "Deploy secure infrastructures by using a landing zone"
+  ms.date: 07/25/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-infrastructure-security-architecture.md)]

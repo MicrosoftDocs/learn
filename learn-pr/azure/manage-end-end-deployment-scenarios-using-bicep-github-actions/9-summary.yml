@@ -5,11 +5,12 @@ metadata:
   unitType: summary
   title: Summary
   description: Summary for managing end-to-end deployment scenarios by using Bicep and GitHub Actions.
-  ms.date: 12/19/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/18/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]

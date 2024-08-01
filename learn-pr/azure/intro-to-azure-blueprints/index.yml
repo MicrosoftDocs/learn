@@ -4,11 +4,12 @@ metadata:
   moduleType: introduction
   title: Introduction to Azure Blueprints
   description: Introduction to Azure Blueprints and how to use to implement governance.
-  ms.date: 05/09/2022
-  author: ricmmartins
-  ms.author: ricmart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: mkluck
+  ms.date: 1/2/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: module-standard-task-based
+  ms.service: blueprints
 title: Intro to Azure blueprints
 summary: "This module introduces you to Azure Blueprints and describes its characteristics, capabilities, and use cases."
 abstract: |
@@ -16,10 +17,10 @@ abstract: |
     - Evaluate the usage of Azure Blueprints in your governance strategy.
     - Describe how features of Azure Blueprints can help to ensure a cloud environment compliant with your business definitions.
 prerequisites: |
-  - Basic knowledge of navigating the Azure portal
+  - Basic knowledge of the Azure portal
   - Basic knowledge of Azure resources
   - Basic knowledge of Azure RBAC
-  - Basic knowledge of Azure Policies
+  - Basic knowledge of Azure Policy
 iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
@@ -31,8 +32,6 @@ roles:
 products:
 - azure
 - azure-blueprints
-subjects:
-- development-tools
 units:
 - learn.intro-to-azure-blueprints.introduction
 - learn.intro-to-azure-blueprints.what-is-azure-blueprints

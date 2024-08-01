@@ -3,13 +3,15 @@ uid: learn.wwl.create-azure-cognitive-search-solution.search-index
 title: Search an index
 metadata:
   title: Search an index
-  description: "Search an index"
-  ms.date: 07/30/2021
+  description: Search an index
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 12/11/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/5-search-index.md)]

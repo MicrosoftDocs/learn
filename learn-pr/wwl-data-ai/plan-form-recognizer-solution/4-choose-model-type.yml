@@ -3,12 +3,13 @@ uid: learn.wwl.plan-form-recognizer-solution.choose-model-type
 title: Choose a model type
 metadata:
   title: Choose a model type
-  description: "Choose a model type"
-  ms.date: 09/16/2022
+  description: Choose a model type
   author: wwlpublish
-  ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 10/18/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

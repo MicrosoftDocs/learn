@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-storage.virtual-machine-smb-storage
-title: Explore Azure virtual machine SMB storage
+title: Explore Azure Virtual Machine SMB storage
 metadata:
-  title: Explore Azure virtual machine SMB storage
-  description: "Explore Azure virtual machine SMB storage"
-  ms.date: 04/20/2023
+  title: Explore Azure Virtual Machine SMB storage
+  description: "Explore Azure Virtual Machine SMB storage."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/14-explore-azure-virtual-machine-smb-storage.md)]

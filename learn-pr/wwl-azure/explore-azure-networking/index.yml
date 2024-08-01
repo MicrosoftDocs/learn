@@ -3,24 +3,34 @@ uid: learn.wwl.explore-azure-networking
 metadata:
   title: Explore Azure for SAP networking
   description: "This module explores the use of Azure network components to design scalable, performant, and resilient SAP deployments in Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 04/21/2023
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: sap-on-azure
+  ai-usage: human-only
 title: Explore Azure for SAP networking
 summary: This module explores the use of Azure network components to design scalable, performant, and resilient SAP deployments in Azure.
 abstract: |
   After completing this module, you will be able to:
-  - Explore Azure virtual networks.
-  - Examine Azure virtual machine networking considerations.
-  - Examine load balancing considerations.
-  - Explore virtual network connectivity.
-  - Explore cross-premises connectivity.
+
+  -   Explore Azure virtual networks.
+
+  -   Examine Azure virtual machine networking considerations.
+
+  -   Examine load balancing considerations.
+
+  -   Explore virtual network connectivity.
+
+  -   Explore cross-premises connectivity.
 prerequisites: |
   Before taking this training, you should complete:
-  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
-  - SAP HANA or NetWeaver training.
+
+  -   Azure Administrator (AZ-104) or Azure Infrastructure Solutions (AZ-305) exam.
+
+  -   SAP HANA or NetWeaver training.
 iconUrl: /training/achievements/2-explore-azure-networking.svg
 levels:
 - advanced

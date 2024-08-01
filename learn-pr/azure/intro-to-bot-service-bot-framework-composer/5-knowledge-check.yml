@@ -5,11 +5,10 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 6/15/2021
+  ms.date: 04/24/2024
   author: jasonkellingtonwaypoint
-  ms.author: v-jaske
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -22,15 +21,15 @@ quiz:
       explanation: "Correct. Bot Framework Composer enables bot creation using a visual designer."
     - content: "Bot Framework SDK"
       isCorrect: false
-      explanation: "Incorrect. Bot Framework SDK provides tools for creating bots using code in a number of different languages."
+      explanation: "Incorrect. Bot Framework SDK provides tools for creating bots using code in many different languages."
     - content: "Bot Framework Emulator"
       isCorrect: false
-      explanation: "Incorrect. Bot Framework Emulator is used to test and debug bots that you've created."
+      explanation: "Incorrect. Bot Framework Emulator is used to test and debug bots that you create."
   - content: "Which of the following built-in extended capabilities provides natural language processing capability in a bot created with Bot Framework Composer?"
     choices:
     - content: "LUIS"
       isCorrect: true
-      explanation: "Correct. LUIS provides language processing capability that can be used in a bot created with Bot Framework Composer."
+      explanation: "Correct. Language Understanding Intelligence Service (LUIS) provides language processing capability that can be used in a bot created with Bot Framework Composer."
     - content: "QnAMaker"
       isCorrect: false
       explanation: "Incorrect. QnAMaker provides question- and answer-based chat bots by first building a knowledge base."

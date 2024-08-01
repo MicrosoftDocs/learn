@@ -3,13 +3,14 @@ uid: learn.azure.provide-disaster-recovery-replicate-storage-data
 metadata:
   title: Provide disaster recovery by replicating storage data across regions and failing over to a secondary location
   description: Learn how to provide disaster recovery by replicating storage data across regions and failing over to a secondary location.
-  ms.date: 09/12/2022
-  author: tamram
-  ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: akashdubey
+  ms.date: 11/03/2023
+  author: normesta
+  ms.author: normesta
+  ms.topic: module
+  ms.service: azure-storage
 title: Provide disaster recovery by replicating storage data across regions and failing over to a secondary location
-summary: Evaluate and choose a redundancy option for Azure Storage. Create a storage account and blob container to demonstrate replication. Initiate storage account failover to the secondary region.
+summary: In this module, you'll learn to evaluate and choose a redundancy option for Azure Storage. You'll create a storage account and blob container to demonstrate replication. You'll also initiate storage account failover to the secondary region.
 abstract: | 
   By the end of this module, you'll be able to:
   - Choose the right Azure Storage redundancy option for your organization.
@@ -25,7 +26,7 @@ roles:
 products:
 - azure-storage
 subjects:
-- data-ai
+- data-management
 units:
 - learn.azure.provide-disaster-recovery-replicate-storage-data.introduction
 - learn.azure.provide-disaster-recovery-replicate-storage-data.evaluate-data-redundancy-options

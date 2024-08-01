@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.advanced-github-copilot.advanced-github-copilot-features
+
+title: Advanced GitHub Copilot features
+metadata:
+  title: Advanced GitHub Copilot features
+  description: GitHub Copilot is an AI-assisted coding tool that helps developers write better code, faster by generating suggestions using code, comments, and interactive chats.
+  author: abrilurena
+  ms.author: abrilu
+  ms.date: 5/10/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-advanced-github-copilot-features.md)]

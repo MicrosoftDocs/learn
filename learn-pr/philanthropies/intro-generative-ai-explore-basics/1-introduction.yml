@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.intro-generative-ai-explore-basics.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is a part of the 'Introduction to generative AI - Exploring the basics' module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 02/21/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

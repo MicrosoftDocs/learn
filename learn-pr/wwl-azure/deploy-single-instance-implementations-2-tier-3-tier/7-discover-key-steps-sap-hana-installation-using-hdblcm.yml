@@ -3,12 +3,13 @@ uid: learn.wwl.deploy-single-instance-implementations-2-tier-3-tier.discover-key
 title: Discover key steps for SAP HANA installation using HDBLCM
 metadata:
   title: Discover key steps for SAP HANA installation using HDBLCM
-  description: "Discover key steps for SAP HANA installation using HDBLCM"
-  ms.date: 04/25/2023
+  description: "Discover key steps for using HDBLCM to perform a distributed SAP NetWeaver 7.5 installation."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/7-discover-key-steps-sap-hana-installation-using-hdblcm.md)]

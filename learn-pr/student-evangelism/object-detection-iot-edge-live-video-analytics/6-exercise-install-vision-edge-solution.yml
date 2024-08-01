@@ -4,12 +4,10 @@ title: Exercise - Install Vision Edge Solution
 metadata:
   title: Exercise - Install Vision Edge Solution
   description: In this section, we help learner to install Vision Edge Solution.
-  ms.date: 05/01/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
-  ms.custom: team=nextgen
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-install-vision-edge-solution.md)]

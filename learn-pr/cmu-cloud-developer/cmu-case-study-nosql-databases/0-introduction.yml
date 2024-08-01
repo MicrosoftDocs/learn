@@ -5,11 +5,10 @@ metadata:
   title: Introduction
   # Revise description because we're combining Module 3 and Module 4
   description: Introduction to case studies about NoSQL databases and cloud object storage.
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 2
 content: |

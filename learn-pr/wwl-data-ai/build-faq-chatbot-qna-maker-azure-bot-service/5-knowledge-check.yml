@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 11/01/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 2
+quiz:
+  title: ""
+  questions:
+  - content: "Your organization has an existing frequently asked questions (FAQ) document. You need to create a knowledge base that includes the questions and answers from the FAQ with the least possible effort. What should you do?"
+    choices:
+    - content: "Create an empty knowledge base, and then manually copy and paste the FAQ entries into it."
+      isCorrect: false
+      explanation: "Incorrect. While you could do it this way, there's an option that requires less effort."
+    - content: "Import the existing FAQ document into a new knowledge base."
+      isCorrect: true
+      explanation: "Correct. You can import question and answer pairs from an existing FAQ document into a question answering knowledge base."
+    - content: "Import a pre-defined chit-chat data source."
+      isCorrect: false
+      explanation: "Incorrect. A pre-defined chit-chat data source is unlikely to include relevant question and answer pairs for your FAQ."
+  - content: "You want to create a knowledge base for your organization’s bot service. Which Azure AI service is best suited to creating a knowledge base?"
+    choices:
+    - content: "Conversational Language Understanding"
+      isCorrect: false
+      explanation: "Incorrect. Conversational language understanding enables user intention to be determined, and information extracted from natural language.  It can't be used to create a knowledge base for bots."
+    - content: "Question Answering"
+      isCorrect: true
+      explanation: "Correct. Question Answering is part of the Azure AI Language service and enables you to create a knowledge base of question and answer pairs"
+    - content: "Optical Character Recognition"
+      isCorrect: false
+      explanation: "Incorrect. Optical Character Recognition (OCR) identifies text in images. It can't be used to create a knowledge base for bots."

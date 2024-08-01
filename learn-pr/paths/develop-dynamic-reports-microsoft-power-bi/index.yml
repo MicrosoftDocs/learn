@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.wwl.develop-dynamic-reports-microsoft-power-bi
+metadata:
+  title: Develop dynamic reports with Microsoft Power BI
+  description: Transform and load data, define semantic model relationships and calculations, create interactive visuals, and distribute reports using Power BI.
+  ms.date: 01/03/2024
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: learning-path
+title: Develop dynamic reports with Microsoft Power BI
+prerequisites: |
+  Completion of the [Get started with Microsoft data analytics](/training/paths/data-analytics-microsoft/) is recommended.
+summary: |
+  Transform and load data, define semantic model relationships and calculations, create interactive visuals, and distribute reports using Power BI.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+products:
+- fabric
+- power-bi
+subjects:
+- data-analytics
+- data-modeling
+- data-visualization
+modules:
+- learn-bizapps.get-data
+- learn-bizapps.clean-data-power-bi
+- learn-bizapps.design-model-power-bi
+- learn-bizapps.dax-power-bi-add-measures
+- learn-bizapps.dax-power-bi-add-calculated-tables
+- learn-bizapps.power-bi-effective-reports
+- learn-bizapps.power-bi-effective-filters
+- learn-bizapps.create-manage-workspaces-power-bi
+- learn-bizapps.manage-datasets-power-bi
+trophy:
+  uid: learn.wwl.develop-dynamic-reports-microsoft-power-bi.trophy

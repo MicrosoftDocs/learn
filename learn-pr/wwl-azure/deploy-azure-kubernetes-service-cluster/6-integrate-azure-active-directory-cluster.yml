@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-azure-kubernetes-service-cluster.integrate-azure-active-directory-cluster
+title: Integrate Microsoft Entra ID for the cluster
+metadata:
+  title: Integrate Microsoft Entra ID for the cluster
+  description: "Integrate Microsoft Entra ID for the cluster"
+  ms.date: 03/08/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-integrate-azure-active-directory-cluster.md)]

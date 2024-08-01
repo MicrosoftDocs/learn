@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-manufacturing.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: rcaper
+  ms.date: 05/22/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which use cases successfully address the most important goals and challenges for implementing AI solutions in manufacturing?"
+    choices:
+    - content: "An AI model to forecast demand allows companies to compensate for an aging frontline workforce."
+      isCorrect: false
+      explanation: "Incorrect. While it’s true that worker shortages are a concern for 46 percent of frontline workers, there are more efficient AI solutions to tackle this problem. For example, a frontline support copilot enables you to close the skills gap and help a reduced staff of younger workers."
+    - content: "An ERP copilot enables decision-makers to get useful, actionable insights."
+      isCorrect: true
+      explanation: "Correct. 83 percent of manufacturing leaders struggle to get the information they need from data and analytics. A copilot approach can deliver the required information in a more intuitive way, so it’s easier to find."
+    - content: "A computer vision model helps companies improve their multi-shoring sourcing strategies."
+      isCorrect: false
+      explanation: "Incorrect. Computer vision technologies are very used in manufacturing, but they’re most helpful in factories for risk prevention and anomaly detection. If your goal is to design a better multi-shoring sourcing strategy, you should implement a generative AI-powered data analytics tool to extract insights from vendor contracts and communication."
+  - content: "How are these Microsoft AI products useful to implement solutions in manufacturing?"
+    choices:
+    - content: "Azure OpenAI Service enables you to implement copilot assistants to support frontline workers or your design and development teams."
+      isCorrect: true
+      explanation: "Correct. The generative AI models included in Azure OpenAI Service, such as ChatGPT, are the basis for virtual assistants that improve the efficiency and productivity of your staff."
+    - content: "Azure AI Services allows your data scientists to automatically train AI models."
+      isCorrect: false
+      explanation: "Incorrect. This feature isn’t covered by Azure AI Services, but by Azure Machine Learning. Instead, Azure AI Services helps you by offering prebuilt AI models and APIs for common AI scenarios, such as computer vision or document intelligence."
+    - content: "Microsoft Fabric helps your factory’s team extract information from complex layouts such as technical datasheets."
+      isCorrect: false
+      explanation: "Incorrect. You need Azure AI Document Intelligence, one of the Azure AI Services, to implement that use case. What Microsoft Fabric offers is a unified data environment for you to build, deploy, and manage AI applications across your entire value chain."
+  - content: "Why are these Microsoft AI products key in the Siemens success story?"
+    choices:
+    - content: "Azure AI Vision helps build a customizable template for all data analysts to use in their AI projects."
+      isCorrect: false
+      explanation: "Incorrect. Siemens uses Azure AI Vision for anomaly detection, detecting damaged devices. It’s Azure Machine Learning that sets the ground for building a standard for the company’s AI projects."
+    - content: "Azure Machine Learning enables data analysts to reuse components across different AI projects."
+      isCorrect: true
+      explanation: "Correct. Azure Machine Learning provides a common environment all stakeholders can access. It allows data analysts to share assets, and therefore to reuse them."
+    - content: "Azure AI services expand the infotainment system in their products."
+      isCorrect: false
+      explanation: "Incorrect. Mercedes-Benz is using Azure AI Services, Azure OpenAI Service particularly, to improve their infotainment system, “Hey Mercedes”. Siemens is using it for other purposes. For example, it uses Azure AI Vision for anomaly detection, detecting damaged devices."

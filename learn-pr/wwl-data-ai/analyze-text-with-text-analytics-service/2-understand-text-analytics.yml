@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-text-with-text-analytics-service.understand-text-analytics
+title: Understand Text Analytics
+metadata:
+  title: Understand Text Analytics
+  description: Understand Text Analytics
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 11/02/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-understand-text-analytics.md)]

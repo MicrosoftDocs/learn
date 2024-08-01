@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-receipts-form-recognizer.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 11/02/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 2
+quiz:
+  title: ""
+  questions:
+  - content: "You plan to use Azure AI Document Intelligence's prebuilt receipt model. Which kind of Azure resource should you create?"
+    choices:
+    - content: "Azure AI Vision resource"
+      isCorrect: false
+      explanation: "Incorrect: The Azure AI Vision resource type does not include Azure AI Document Intelligence."
+    - content: "Azure AI Document Intelligence or Azure AI services resource."
+      isCorrect: true
+      explanation: "Correct: Both the Azure AI Document Intelligence resource and the Azure AI services resource provide access to Azure AI Document Intelligence."
+    - content: "Azure AI Language resource."
+      isCorrect: false
+      explanation: "Incorrect: An Azure AI Language resource does not provide access to Azure AI Document Intelligence."
+  - content: "You are using the Azure AI Document Intelligence service to analyze receipts. Which field types does the service recognize?"
+    choices:
+    - content: "Merchant retail type."
+      isCorrect: false
+      explanation: "Incorrect: The receipt model does not identify the retail type."
+    - content: "Merchant name and address."
+      isCorrect: true
+      explanation: "Correct: The merchant name and address can be identified using the receipt model."
+    - content: "Merchant name and date of incorporation."
+      isCorrect: false
+      explanation: "Incorrect: The receipt model can identify the merchant name, but not the date of incorporation."
+  - content: "What is required to use the receipt analyzer service in Azure AI Document Intelligence?"
+    choices:
+    - content: "Train the model on sample receipts from your organization."
+      isCorrect: false
+      explanation: "Incorrect: The receipt model is pretrained and does not require any further training to be used."
+    - content: "Create an Azure AI Document Intelligence resource."
+      isCorrect: true
+      explanation: "Correct: The receipt analyzer model is available as a service when you create an Azure AI Document Intelligence resource."
+    - content: "Nothing - receipt analyzer is available once you create an Azure subscription."
+      isCorrect: false
+      explanation: "Incorrect: The receipt model is part of Azure AI Document Intelligence. You must create a Document Intelligence resource to use it."

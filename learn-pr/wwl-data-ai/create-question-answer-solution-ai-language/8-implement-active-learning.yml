@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-question-answer-solution-ai-language.implement-active-learning
+title: Improve question answering performance
+metadata:
+  title: Improve question answering performance
+  description: Improve question answering performance
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 08/31/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-implement-active-learning.md)]

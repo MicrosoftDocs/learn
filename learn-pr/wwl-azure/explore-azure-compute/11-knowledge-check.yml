@@ -3,19 +3,20 @@ uid: learn.wwl.explore-azure-compute.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 04/21/2023
+  description: "Check what you learn in this module."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/11-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which category of Azure virtual machine provides the fastest and most powerful CPU?"
+  - content: "Which category of Azure Virtual Machine provides the fastest and most powerful CPU?"
     choices:
     - content: "General purpose"
       isCorrect: false
@@ -25,15 +26,15 @@ quiz:
       explanation: "Incorrect. Compute optimized virtual machines provide high CPU-to-memory ratio, but they aren't the fastest and most powerful CPU available."
     - content: "High performance compute"
       isCorrect: true
-      explanation: "Correct. High performance compute VMs (including the H size) provide the fastest and most powerful CPU Azure VMs with optional high-throughput network interfaces (RDMA)."
-  - content: "Which category of Azure virtual machine is ideal for Big Data, SQL, NoSQL databases, data warehousing, and large transactional databases?"
+      explanation: "Correct. High performance compute virtual machines (including the H size) provide the fastest and most powerful CPU Azure Virtual Machines with optional high-throughput network interfaces (RDMA)."
+  - content: "Which category of Azure Virtual Machine is ideal for Big Data, SQL, NoSQL databases, data warehousing, and large transactional databases?"
     choices:
     - content: "GPU"
       isCorrect: false
       explanation: "Incorrect. GPU virtual machines are targeted for heavy graphic rendering and video editing, as well as model training."
     - content: "Storage optimized"
       isCorrect: true
-      explanation: "Correct. Storage optimized VMs (including Lsv3, Lasv3, and Lsv2-series sizes) provide high disk throughput and IO, ideal for Big Data, SQL, NoSQL databases, data warehousing, and large transactional databases."
+      explanation: "Correct. Storage optimized virtual machines (including Lsv3, Lasv3, and Lsv2-series sizes) provide high disk throughput and IO, ideal for Big Data, SQL, NoSQL databases, data warehousing, and large transactional databases."
     - content: "Memory optimized"
       isCorrect: false
       explanation: "Incorrect. Memory optimized virtual machines provide high memory-to-CPU ratio, great for relational database servers, medium to large caches, and in-memory analytics."
@@ -47,15 +48,15 @@ quiz:
       explanation: "Incorrect. Constrained vCPU virtual machines don't have higher RAM."
     - content: "It has lower licensing fees"
       isCorrect: true
-      explanation: "Correct. The licensing fees charged for SQL Server or Oracle are constrained to the vCPU count, and other products should be charged based on the new vCPU count. A constrained vCPU VM shares the same specs for memory, storage, and I/O bandwidth as the original VM, but with a lower licensing cost."
-  - content: "How many total network data flows does the Azure networking stack support with good performance, for VMs with eight CPU cores or more?"
+      explanation: "Correct. The licensing fees charged for SQL Server or Oracle are constrained to the vCPU count, and other products should be charged based on the new vCPU count. A constrained vCPU virtual machine shares the same specs for memory, storage, and I/O bandwidth as the original virtual machine, but with a lower licensing cost."
+  - content: "How many total network data flows does the Azure networking stack support with good performance, for virtual machines with eight CPU cores or more?"
     choices:
     - content: "100,000"
       isCorrect: false
-      explanation: "Incorrect. The Azure networking stack supports 100-K total flows with good performance for VMs with less than eight CPU cores."
+      explanation: "Incorrect. The Azure networking stack supports 100-K total flows with good performance for virtual machines with less than eight CPU cores."
     - content: "250,000"
       isCorrect: true
-      explanation: "Correct. The Azure networking stack supports 250-K total network flows with good performance for VMs with eight CPU cores or more and 100-K total flows with good performance for VMs with less than eight CPU cores. Past this limit network performance degrades gracefully for additional flows up to a hard limit of 1-M total flows, 500 K inbound and 500-K outbound, after which additional flows are dropped."
+      explanation: "Correct. The Azure networking stack supports 250-K total network flows with good performance for virtual machines with eight CPU cores or more and 100-K total flows with good performance for virtual machines with less than eight CPU cores. Past this limit network performance degrades gracefully for extra flows up to a hard limit of 1-M total flows, 500-K inbound and 500-K outbound, after which extra flows are dropped."
     - content: "1,000,000"
       isCorrect: false
-      explanation: "Incorrect. 1-M total flows (500 K inbound and 500-K outbound) is the hard limit after which flows are dropped."
+      explanation: "Incorrect. Azure networking stack support supports 1-M total flows (500-K inbound and 500-K outbound) after which flows are dropped."

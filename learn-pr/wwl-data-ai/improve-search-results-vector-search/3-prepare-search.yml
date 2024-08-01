@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-search-results-vector-search.prepare-search
+title: Prepare your search
+metadata:
+  title: Prepare your search
+  description: Learn how to prepare your vector search.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 9/29/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-prepare-search.md)]

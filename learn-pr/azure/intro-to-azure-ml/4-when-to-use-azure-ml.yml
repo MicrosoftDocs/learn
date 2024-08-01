@@ -4,11 +4,10 @@ title: When to use Azure Machine Learning
 metadata:
   title: When to user Azure Machine Learning
   description: When to use Azure Machine Learning
-  ms.date: 03/14/2021
-  author: tomreidnz
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  author: sdgilley
+  ms.author: sgilley
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/4-when-to-use-azure-ml.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-authorization-microsoft-entra-id.conditional-access
+title: Implement Conditional Access policies
+metadata:
+  title: Implement Conditional Access policies
+  description: "Implement Conditional Access policies"
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/23-conditional-access.md)]

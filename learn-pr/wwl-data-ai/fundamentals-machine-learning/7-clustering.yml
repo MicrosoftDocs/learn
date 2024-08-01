@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-machine-learning.clustering
+title: Clustering
+metadata:
+  title: Clustering
+  description: Clustering
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 09/24/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-clustering.md)]

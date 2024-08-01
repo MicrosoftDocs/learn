@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.build-accessible-sharepoint-sites.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the "Build accessible SharePoint sites." module.
+  ms.date: 04/12/2024
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "Why should you design your SharePoint site to be accessible for people with disabilities?"
+      choices:
+        - content: "So that it can be used as an intranet, extranet, or public-facing web site."
+          isCorrect: false
+          explanation: "Incorrect. This isn't the purpose of designing an accessible SharePoint site."
+        - content: "For better search results when users try to find the SharePoint site online."
+          isCorrect: false
+          explanation: "Incorrect. Creating an accessible SharePoint site doesn't provide better search results."
+        - content: "So that external users can collaborate, communicate, and manage documents."
+          isCorrect: false
+          explanation: "Incorrect. Creating an accessible SharePoint site doesn't allow for collaboration."
+        - content: "So that no one is excluded from being able to access and operate your web site."
+          isCorrect: true
+          explanation: "Correct. In addition to meeting accessibility standards and guidelines, making your site accessible ensures you're actively including everyone."
+    - content: "How does alt text help people with disabilities understand your content?"
+      choices:
+        - content: "Alt text provides context for users with disabilities to understand your site structure."
+          isCorrect: false
+          explanation: "Incorrect. Alt text isn't used to convey the site structure, but rather the content of specific images. Site structure can be communicated by using headings, lists, and other semantic elements."
+        - content: "Alt text provides context for screen readers to understand video captions."
+          isCorrect: false
+          explanation: "Incorrect. Alt text isn't used for video captions, but for images. Video captions are usually provided by using a separate file or embedded in the video itself."
+        - content: "Alt text provides context for screen readers to understand the content of an image."
+          isCorrect: true
+          explanation: "Correct. Alt text helps them understand what the image is about and how it relates to the surrounding content."
+        - content: "Alt text provides context for people with low vision to understand decorative images."
+          isCorrect: false
+          explanation: "Incorrect. Decorative images should be marked as decorative."
+    - content: "What are some built-in features that can help improve SharePoint accessibility?"
+      choices:
+        - content: "Alt text"
+          isCorrect: false
+          explanation: "Incorrect. Alt text, in addition to other features, help improve SharePoint accessibility."
+        - content: "Headings"
+          isCorrect: false
+          explanation: "Incorrect. Headings, in addition to other features, help improve SharePoint accessibility."
+        - content: "Templates"
+          isCorrect: false
+          explanation: "Incorrect. Templates, in addition to other features, help improve SharePoint accessibility."
+        - content: "All of the above."
+          isCorrect: true
+          explanation: "Correct. Alt text, headings, and templates can all help improve SharePoint accessibility."
+    - content: "What are some best practices for improving SharePoint accessibility and usability?"
+      choices:
+        - content: "Choose a SharePoint site template for content designed with accessibility in mind."
+          isCorrect: false
+          explanation: "Incorrect. Site templates, selecting an accessible color scheme, sharing content plans with your accessibility contacts, and including the disability community are all examples of best practices for improving SharePoint accessibility."
+        - content: "Select a fully accessible, tested theme with color and contrast settings that increase usability."
+          isCorrect: false
+          explanation: "Incorrect. Site templates, selecting an accessible color scheme, sharing content plans with your accessibility contacts, and including the disability community are all examples of best practices for improving SharePoint accessibility."
+        - content: "Share your content plans with your accessibility contact at your organization."
+          isCorrect: false
+          explanation: "Incorrect. Site templates, selecting an accessible color scheme, sharing content plans with your accessibility contacts, and including the disability community are all examples of best practices for improving SharePoint accessibility."
+        - content: "Include people with disabilities in your organization when testing SharePoint sites."
+          isCorrect: false
+          explanation: "Incorrect. Site templates, selecting an accessible color scheme, sharing content plans with your accessibility contacts, and including the disability community are all examples of best practices for improving SharePoint accessibility."
+        - content: "All of the above."
+          isCorrect: true
+          explanation: "Correct. Site templates, selecting an accessible color scheme, sharing content plans with your accessibility contacts, and including the disability community are all examples of best practices for improving SharePoint accessibility."

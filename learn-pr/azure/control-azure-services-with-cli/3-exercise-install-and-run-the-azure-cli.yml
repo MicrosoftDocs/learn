@@ -4,11 +4,11 @@ title: Exercise - Install and run the Azure CLI
 metadata:
   title: Exercise - Install and run the Azure CLI
   description: Install the Azure CLI on various platforms
-  ms.date: 09/24/2018
+  ms.date: 04/02/2024
   author: dbradish-microsoft
   ms.author: dbradish
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-azurecli, linux-related-content
   zone_pivot_groups: platform
 durationInMinutes: 10
 content: |

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-manufacturing.explore-ai-goals-challenges-manufacturing
+title: Explore AI goals and challenges in manufacturing
+metadata:
+  title: Explore AI goals and challenges in manufacturing
+  description: Explore AI goals and challenges in manufacturing
+  author: wwlpublish
+  ms.author: rcaper
+  ms.date: 05/22/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-explore-ai-goals-challenges-manufacturing.md)]

@@ -3,12 +3,17 @@ uid: learn.wwl.build-language-solution-azure-openai.exercise
 title: Exercise - Integrate Azure OpenAI into your app
 metadata:
   title: Exercise - Integrate Azure OpenAI into your app
-  description: "Develop a console app with a hands on lab. This lab walks through using the C# and Python SDK to connect to Azure OpenAI for natural language processing."
-  ms.date: 4/5/2023
+  description: Develop a console app with a hands on lab. This lab walks through using the C# and Python SDK to connect to Azure OpenAI for natural language processing.
   author: ivorb
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: devx-track-python
 durationInMinutes: 30
+azureSandbox: false
+labId: 152392
+labModal: true
 content: |
   [!include[](includes/5-exercise.md)]

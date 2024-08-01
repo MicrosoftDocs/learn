@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-ai-services.exercise-secure-ai-services
+title: Exercise - Manage Azure AI Services Security
+metadata:
+  title: Exercise - Manage Azure AI Services Security
+  description: Exercise - Manage Azure AI Services Security
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 09/28/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 25
+labId: 152414
+labModal: true
+content: |
+  [!include[](includes/4-exercise-secure-ai-services.md)]

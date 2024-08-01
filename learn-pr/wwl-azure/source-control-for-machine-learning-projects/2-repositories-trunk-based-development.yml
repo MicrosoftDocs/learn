@@ -3,12 +3,13 @@ uid: learn.wwl.source-control-for-machine-learning-projects.repositories-trunk-b
 title: Repositories and trunk-based development
 metadata:
   title: Repositories and trunk-based development
-  description: "Repositories and trunk-based development"
-  ms.date: 08/19/2022
+  description: Repositories and trunk-based development
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

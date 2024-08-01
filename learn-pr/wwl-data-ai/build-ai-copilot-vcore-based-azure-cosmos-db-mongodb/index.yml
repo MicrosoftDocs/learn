@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb
+metadata:
+  title: Build your own AI copilot with vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI
+  description: Build your own AI copilot with vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI.
+  author: wwlpublish
+  ms.author: calopez
+  ms.date: 04/13/2024
+  ms.service: cosmos-db
+  ms.subservice: mongodb-vcore
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+  ai-usage: ai-assisted
+title: Build your own AI copilot with vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI
+summary: Learn how to use your own data to build AI copilots using vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI. You'll focus on database setup and vector search integration for easy AI application development.
+abstract: |
+  -   Learn how to build AI copilots with vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI.
+  -   Integrate vector search for advanced data processing in AI applications.
+prerequisites: Before starting this module, you should have experience of building cloud applications with Python, Node.js, or a similar programming language.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+- azure-openai
+subjects:
+- artificial-intelligence
+- databases
+units:
+- learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.introduction
+- learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.explore-azure-openai
+- learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.understand-vector-database-retrieval-augmentation-generation-embeddings
+- learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.implement-retrieval-augmentation-generation-vcore-based-cosmos-db-mongodb
+- learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.exercise-develop-ai-copilot-vcore-based-azure-cosmos-db-mongodb
+- learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.knowledge-check
+- learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.summary
+badge:
+  uid: learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.badge

@@ -3,12 +3,13 @@ uid: learn.build-app-with-scale-sets
 metadata:
   title: Build a scalable application with Virtual Machine Scale Sets
   description: Enable your application to automatically adjust to changes in load while minimizing costs with Virtual Machine Scale Sets.
-  ms.date: 04/11/2023
+  manager: akashdubey
+  ms.date: 04/03/2024
   author: ju-shim
   ms.author: jushiman
   ms.reviewer: mimckitt
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: virtual-machine-scale-sets
 title: Build a scalable application with Virtual Machine Scale Sets
 summary: Enable your application to automatically adjust to changes in load while minimizing costs with Virtual Machine Scale Sets.
 abstract: |
@@ -41,4 +42,5 @@ units:
 - learn.build-app-with-scale-sets.exercise-configure-virtual-machine-scale-set
 - learn.build-app-with-scale-sets.install-update-applications-virtual-machine-scale-sets
 - learn.build-app-with-scale-sets.exercise-update-applications-virtual-machine-scale-sets
+- learn.build-app-with-scale-sets.knowledge-check
 - learn.build-app-with-scale-sets.summary

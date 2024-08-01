@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.github.introduction-to-github-copilot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 12/5/2023
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 5
+###########################################################################
+
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is GitHub Copilot?"
+    choices:
+    - content: "GitHub Copilot is an AI pair programmer that you can use to get code suggestions."
+      isCorrect: true
+      explanation: "GitHub Copilot is an AI pair programmer that you can use to get suggestions for whole lines or entire functions right inside your editor."
+    - content: "GitHub Copilot is OpenAI Codex, a new AI system created by OpenAI."
+      isCorrect: false
+      explanation: "GitHub Copilot is powered by OpenAI Codex, a new AI system created by OpenAI."
+    - content: "GitHub Copilot is a JavaScript public repository and is one of the best supported languages."
+      isCorrect: false
+      explanation: "JavaScript is well represented in public repositories and is one of GitHub Copilot's best supported languages."
+    - content: "GitHub Copilot can write a comment describing logic and you can add your suggested code to implement the solution."
+      isCorrect: false
+      explanation: "You can write a comment describing the logic you want, and GitHub Copilot displays suggested code to implement the solution."
+  - content: "What are the supported integrated development environment extensions for GitHub Copilot?"
+    choices:
+    - content: "Visual Studio Code and Visual Studio"
+      isCorrect: false
+      explanation: "Although these two IDEs are support by GitHub Copilot, the platform supports more than just these two IDEs."
+    - content: "GitHub.com, Visual Studio Code, Visual Studio, Neovim, and JetBrains"
+      isCorrect: false
+      explanation: "Although GitHub.com is supported, it doesn't need an extension."
+    - content: "Visual Studio Code, Visual Studio, Neovim, and JetBrains"
+      isCorrect: true
+      explanation: "Correct! All of the IDEs listed have supported GitHub extensions."
+  - content: "What is the difference between GitHub Copilot Business and GitHub Copilot Enterprise?"
+    choices:
+    - content: "GitHub Copilot Enterprise has code completions, while GitHub Copilot Business does not."
+      isCorrect: false
+      explanation: "GitHub Copilot Business does have code completions feature."
+    - content: "GitHub Copilot Enterprise has chat in IDE and mobile, while GitHub Copilot Business does not."
+      isCorrect: false
+      explanation: "GitHub Copilot Business does have chat in IDE and mobile as features."
+    - content: "GitHub Copilot Enterprise has an extra layer of personalization, with organization utilizing their own codebase to train GitHub Copilot."
+      isCorrect: true
+      explanation: "Correct! GitHub Copilot Enterprise allows organizations to have a smarter more tailored experience by utilizing their own codebase to train GitHub Copilot."
+    - content:  "GitHub Copilot Enterprise has an extra layer of security, with IP indemnity and enterprise-grade security, safety, and privacy."
+      isCorrect: false
+      explanation: "GitHub Copilot Business does have IP indemnity and enterprise-grade security, safety, and privacy."
+

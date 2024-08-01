@@ -3,12 +3,13 @@ uid: learn.wwl.detect-objects-images.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 09/17/2021
+  description: Summary
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 sandbox: false
 labModal: false

@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-identity-services.integrate-azure-active-directory-sap-fiori
-title: Integrate Azure Active Directory with SAP Fiori
+title: Integrate Microsoft Entra ID with SAP Fiori
 metadata:
-  title: Integrate Azure Active Directory with SAP Fiori
-  description: "Integrate Azure Active Directory with SAP Fiori"
-  ms.date: 04/21/2023
+  title: Integrate Microsoft Entra ID with SAP Fiori
+  description: "Explore the benefits provided by integrating Microsoft Entra ID with SAP Fiori."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 11
 content: |
   [!include[](includes/6-exercise-integrate-azure-active-directory-sap-fiori.md)]

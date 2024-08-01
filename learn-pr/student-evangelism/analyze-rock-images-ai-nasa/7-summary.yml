@@ -3,11 +3,12 @@ uid: learn.student-evangelism.analyze-rock-images-ai-nasa.7-summary
 metadata:
   title: Summary
   description: Summary of the lesson about how to analyze images of space rocks with artificial intelligence.
-  ms.date: 04/11/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/11/2021
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Summary
 durationInMinutes: 1

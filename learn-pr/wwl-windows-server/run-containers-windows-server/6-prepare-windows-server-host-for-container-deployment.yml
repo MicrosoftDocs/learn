@@ -4,13 +4,12 @@ title: Prepare a Windows Server 2019 host for container deployment
 metadata:
   title: Prepare a Windows Server 2019 host for container deployment
   description: "Prepare a Windows Server 2019 host for container deployment"
-  ms.date: 01/04/2023
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/6-prepare-windows-server-host-for-container-deployment.md)]

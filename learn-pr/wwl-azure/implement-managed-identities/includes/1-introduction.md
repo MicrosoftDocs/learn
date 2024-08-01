@@ -1,4 +1,3 @@
-
 A common challenge for developers is the management of secrets and credentials used to secure communication between different components making up a solution. Managed identities eliminate the need for developers to manage credentials. 
 
 After completing this module, you'll be able to:

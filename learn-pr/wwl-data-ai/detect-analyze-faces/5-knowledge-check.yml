@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-analyze-faces.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 10/27/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 2
+quiz:
+  title: ""
+  questions:
+  - content: "How does the Face service indicate the location of faces in images?"
+    choices:
+    - content: "A pair of coordinates for each face, indicating the center of the face"
+      isCorrect: false
+      explanation: "Incorrect: The locations of detected faces are indicated by coordinates for a rectangular bounding box"
+    - content: "Two pairs of coordinates for each face, indicating the location of the eyes"
+      isCorrect: false
+      explanation: "Incorrect: The locations of detected faces are indicated by coordinates for a rectangular bounding box"
+    - content: "A set of coordinates for each face, defining a rectangular bounding box around the face"
+      isCorrect: true
+      explanation: "Correct: The locations of detected faces are indicated by coordinates for a rectangular bounding box"
+  - content: "What is one aspect that might impair facial detection?"
+    choices:
+    - content: "Glasses"
+      isCorrect: false
+      explanation: "Incorrect: That attribute isn't listed as an impairment to detection."
+    - content: "Extreme angles"
+      isCorrect: true
+      explanation: "Correct: Best results are obtained when the faces are full-frontal or as near as possible to full-frontal"
+    - content: "Fast shutter speed"
+      isCorrect: false
+      explanation: "Incorrect: Shutter speed applies to video more than images however, faster shutter speeds tend to create a sharper image, which is beneficial to facial detection"
+  - content: "What two actions are required to try out the capabilities of the Face service?"
+    choices:
+    - content: "Create an Azure Cognitive Search resource, and open Vision Studio"
+      isCorrect: false
+      explanation: "Incorrect: Azure Cognitive Search doesn't have face detection capabilities."
+    - content: "Create a Face resource, and open Vision Studio"
+      isCorrect: true
+      explanation: "Correct: The Face resource has face detections capabilities, and can be used in Vision Studio to understand its capabilities."
+    - content: "Create a Face resource, and open Azure OpenAI Studio"
+      isCorrect: false
+      explanation: "Incorrect: Azure OpenAI Studio doesn't include face detection capabilities."

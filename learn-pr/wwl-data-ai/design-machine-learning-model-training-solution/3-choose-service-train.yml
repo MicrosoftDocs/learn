@@ -3,12 +3,13 @@ uid: learn.wwl.design-machine-learning-model-training-solution.choose-service-tr
 title: Choose a service to train a machine learning model
 metadata:
   title: Choose a service to train a machine learning model
-  description: "Choose a service to train a machine learning model"
-  ms.date: 12/06/2022
+  description: Choose a service to train a machine learning model
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

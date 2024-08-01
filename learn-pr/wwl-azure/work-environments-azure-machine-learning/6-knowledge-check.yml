@@ -3,12 +3,13 @@ uid: learn.wwl.work-environments-azure-machine-learning.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Test your knowledge on how and when to use curated and custom environments in Azure Machine Learning."
-  ms.date: 02/28/2023
+  description: Test your knowledge on how and when to use curated and custom environments in Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/08/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
   questions:

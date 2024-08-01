@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-compliance-cloud-native-applications.exercise-generate-compliance-reports-cloud-native-application
+title: Exercise - Generate compliance reports for an annotated cloud-native app
+metadata:
+  title: Exercise - Generate compliance reports for an annotated cloud-native app
+  description: Add code to your cloud-native application to generate compliance reports and then review them.
+  ms.date: 12/13/2023
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: unit
+  ms.contributors:
+  - masoucou-05122021
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-exercise-generate-compliance-reports-cloud-native-application.md)]
+

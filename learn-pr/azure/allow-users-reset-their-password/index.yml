@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.allow-users-to-reset-their-password
 metadata:
-  title: Allow users to reset their password with Azure Active Directory self-service password reset
-  description: Learn how to allow users to reset their password with Azure Active Directory self-service password reset.
-  ms.date: 11/18/2019
+  title: Allow users to reset their password with Microsoft Entra self-service password reset
+  description: Learn how to allow users to reset their password with Microsoft Entra self-service password reset.
+  ms.date: 09/08/2023
   author: Justinha
   ms.author: justinha
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Allow users to reset their password with Azure Active Directory self-service password reset
+  ms.topic: module
+  ms.service: active-directory
+title: Allow users to reset their password with Microsoft Entra self-service password reset
 summary: Evaluate self-service password reset to allow users in your organization to reset their passwords or unlock their accounts. Set up, configure, and test self-service password reset.
 abstract: | 
   In this module, you will:
@@ -16,7 +16,7 @@ abstract: |
   - Implement self-service password reset to meet your requirements.
   - Configure self-service password reset to customize the experience.
 prerequisites: | 
-  - Basic understanding of Azure Active Directory
+  - Basic understanding of Microsoft Entra ID
 iconUrl: /training/achievements/allow-users-reset-their-password.svg
 levels:
 - beginner
@@ -25,7 +25,7 @@ roles:
 - solution-architect
 products:
 - azure
-- azure-active-directory
+- entra-id
 subjects:
 - identity-access
 units:

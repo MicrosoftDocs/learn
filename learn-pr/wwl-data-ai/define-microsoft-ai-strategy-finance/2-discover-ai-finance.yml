@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-finance.discover-ai-finance
+title: Discover Microsoft AI use cases in finance
+metadata:
+  title: Discover Microsoft AI use cases in finance
+  description: Discover Microsoft AI use cases in finance
+  author: wwlpublish
+  ms.author: rcaper
+  ms.date: 05/22/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-discover-ai-finance.md)]

@@ -4,12 +4,10 @@ title: How to create a CI pipeline with Azure DevOps
 metadata:
   title: How to create a CI pipeline with Azure DevOps
   description: In this section, we help the learner with how to create a CI pipeline using Azure DevOps.
-  ms.date: 06/23/2020
-  author: leestott
-  ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
-  ms.custom: team=nextgen
+  ms.date: 07/20/2024
+  author: PatAltimore
+  ms.author: patricka
+  ms.topic: unit
 durationInMinutes: 4 
 content: |
   [!include[](includes/3-how-create-ci-pipeline.md)]

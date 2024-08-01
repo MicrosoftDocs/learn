@@ -7,8 +7,7 @@ metadata:
   ms.date: 12/03/2021
   author: johndowns
   ms.author: jodowns
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Fundamentals of Bicep
 summary: |
   Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code.
@@ -42,8 +41,6 @@ roles:
 products:
 - azure
 - azure-resource-manager
-subjects:
-- development-tools
 modules:
 - learn.azure.introduction-infrastructure-code-using-bicep
 - learn.azure.deploy-azure-resources-bicep

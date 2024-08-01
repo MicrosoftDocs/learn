@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.give-your-ai-agent-skills
+metadata:
+  title: Give your AI agent skills
+  description: Learn how native functions can be combined with prompts to accomplish customized tasks with the semantic kernel SDK.
+  author: wwlpublish
+  ms.author: buzahid
+  ms.date: 06/11/2024
+  ms.service: azure-ai-services
+  ai-usage: human-only
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+title: Give your AI agent skills
+summary: This module explores native functions in the Semantic Kernel SDK. Learn how native functions can accomplish customized tasks, effectively giving your AI agent a &quot;skill.&quot;
+abstract: |
+  -   Understand native functions in the Semantic Kernel SDK.
+
+  -   Learn how to create native function plugins.
+
+  -   Learn how to combine prompts with native functions.
+prerequisites: |
+  -   Experience programming in C#.
+
+  -   Visual Studio Code IDE installed.
+
+  -   Familiarity with Azure and the Azure portal.
+
+  -   Access to Azure OpenAI services.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- dotnet
+- vs-code
+- azure-openai
+units:
+- learn.wwl.give-your-ai-agent-skills.introduction
+- learn.wwl.give-your-ai-agent-skills.understand-native-functions
+- learn.wwl.give-your-ai-agent-skills.exercise-create-native-functions
+- learn.wwl.give-your-ai-agent-skills.knowledge-check
+- learn.wwl.give-your-ai-agent-skills.summary
+badge:
+  uid: learn.wwl.give-your-ai-agent-skills.badge

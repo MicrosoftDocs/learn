@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/25/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Optimize query performance in Azure SQL
 prerequisites: |
   - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based
@@ -28,7 +27,7 @@ products:
 - azure-sql-database
 - sql-server
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.explore-query-performance-optimization
 - learn.wwl.explore-performance-based-design

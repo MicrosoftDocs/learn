@@ -3,31 +3,30 @@ uid: learn.wwl.maintain-azure-cognitive-search-solution.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 09/21/2022
+  description: Knowledge check
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 09/27/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
-content: |
-  [!include[](includes/09-knowledge-check.md)]
 quiz:
   questions:
   - content: "An organization wants to improve the reliability of a search service. It's important that both read and write operations are 99.9% available. Which of these architectures would ensure this reliability?"
     choices:
-    - content: "Create an Azure Cognitive Search service with a Storage Optimized service tier and at least two replicas."
+    - content: "Create an Azure AI Search service with a Storage Optimized service tier and at least two replicas."
       isCorrect: false
       explanation: "Incorrect. The Storage Optimized tier on its own doesn't guarantee 99.9% availability."
-    - content: "Create an Azure Cognitive Search service with any Standard service tier and at least three replicas."
+    - content: "Create an Azure AI Search service with any Standard service tier and at least three replicas."
       isCorrect: true
       explanation: "Correct. The main factor is that the search service has three replicas."
-    - content: "Create an Azure Cognitive Search service with a High-density service tier and one replica."
+    - content: "Create an Azure AI Search service with a High-density service tier and one replica."
       isCorrect: false
       explanation: "Incorrect. The High-density tier on it' own doesn't guarantee 99.9% availability."
-  - content: "After an Azure Cognitive Search service has been created, which three metrics can be viewed in graphs without any other  configuration?"
+  - content: "After an Azure AI Search service has been created, which three metrics can be viewed in graphs without any other  configuration?"
     choices:
     - content: "Search latency, queries per second, and the percentage of throttled queries."
       isCorrect: true

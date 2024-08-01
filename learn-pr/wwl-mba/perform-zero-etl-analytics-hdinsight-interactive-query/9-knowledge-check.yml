@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/05/2022
+  ms.date: 04/08/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -24,24 +23,24 @@ quiz:
       explanation: "Interactive Query offers SQL-like queries, on structured data, with row and column level controls."
     - content: "When you want to use SQL-like queries on high concurrency data for long running-computations."
       isCorrect: false
-      explanation: "Interactive Query clusters are not suited for long-running computations."
+      explanation: "Interactive Query clusters aren't suitable for long-running computations."
   - content: "What file formats are supported with Interactive Query?"
     choices:
     - content: ".xml, .doc, .log"
       isCorrect: false
-      explanation: ".xml, .doc, and .log files are not supported by Interactive Query."
+      explanation: ".xml, .doc, and .log files aren't supported by Interactive Query."
     - content: ".json, .csv, .txt"
       isCorrect: true
       explanation: ".json, .csv, and .txt files are supported by Interactive Query."
-    - content: ".pdf, .dbk, .md"
+    - content: ".PDF, .DBK, .MD"
       isCorrect: false
-      explanation: ".pdf, .dbk, and .md files are not supported by Interactive Query."
+      explanation: ".PDF, DBK, MD files aren't supported by Interactive Query."
   - content: "Which scenario is best for HDInsight Interactive Query?"
     choices:
     - content: "Batch processing"
       isCorrect: false
       explanation: "Batch processing involves reading data from one location, transforming it and writing it to another location. Interactive Query is best for querying data as is, without the need for major transforming it."
-    - content: "Streaming data"
+    - content: "Streaming data."
       isCorrect: false
       explanation: "Streaming data is a hot-path scenario, where data is constantly being updated. Interactive Query is best for a cold-path scenario."
     - content: "Ad hoc queries"
@@ -51,21 +50,21 @@ quiz:
     choices:
     - content: "Hive and Spark are different cluster types."
       isCorrect: false
-      explanation: "Hive is not a cluster type, only Spark is a cluster type."
-    - content: "Hive and Spark have two different metastores, they require a connector to bridge between the two."
+      explanation: "Hive isn't a cluster type, only Spark is a cluster type."
+    - content: "Hive and Spark have two different metastores. They require a connector to bridge between the two."
       isCorrect: true
       explanation: "Hive and Spark do have different metastores, and they require a bridge to connect the two."
     - content: "Hive is for static data and Spark is for streaming data."
       isCorrect: false
-      explanation: "Hive works on static data and Spark works with streaming data, but that is not why the Hive Warehouse Connector is necessary."
+      explanation: "Hive works on static data and Spark works with streaming data, but that isn't why the Hive Warehouse Connector is necessary."
   - content: "Why is using the Hive Warehouse Connector more efficient and scalable than using a standard JDBC connection from Spark to Hive?"
     choices:
     - content: "Because the library loads data from the HiveServer into the spark driver in parallel"
       isCorrect: false
-      explanation: "The library does not load data from the HiveServer into the Spark driver."
-    - content: "Because the Hive Warehouse Connector is optimized for streaming data"
+      explanation: "The library doesn't load data from the HiveServer into the Spark driver."
+    - content: "Because the Hive Warehouse Connector is optimized for streaming data."
       isCorrect: false
-      explanation: "The Hive Warehouse Connector can be used for streaming data, but that is not why it is more efficient and scalable."
+      explanation: "The Hive Warehouse Connector can be used for streaming data, but that isn't why it's more efficient and scalable."
     - content: "Because the library loads data from LLAP daemons into Spark executors in parallel"
       isCorrect: true
       explanation: "The library loads data from LLAP daemons into Spark executors in parallel, which makes the Hive Warehouse Connector efficient and scalable."

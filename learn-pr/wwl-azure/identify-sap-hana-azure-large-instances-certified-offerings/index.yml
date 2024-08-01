@@ -6,8 +6,9 @@ metadata:
   ms.date: 07/07/2022
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: sap-on-azure
+  ms.subservice: sap-large-instances
 title: Identify SAP HANA on Azure (Large Instances) certified offerings
 summary: Examine SAP HANA on Azure (Large Instances) certified offerings and deployment offerings.
 abstract: |

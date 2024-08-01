@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-exercises.enable-custom-plugin
+title: Enable a custom plugin
+metadata:
+  title: Enable a custom plugin
+  description: Enable a custom plugin.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 06/06/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-enable-custom-plugin.md)]

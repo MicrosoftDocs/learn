@@ -2,21 +2,23 @@
 uid: learn.wwl.configure-azure-policy
 metadata:
   title: Configure Azure Policy
-  description: "Learn how to configure Azure Policy to implement compliance requirements."
-  ms.date: 04/06/2023
+  description: Learn how to configure Azure Policy to implement compliance requirements.
+  ms.date: 05/20/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ai-usage: ai-assisted
+  ms.service: azure-policy
 title: Configure Azure Policy
 summary: Learn how to configure Azure Policy to implement compliance requirements.
 abstract: |
   In this module, you learn how to:
-    - Create management groups to target policies and spending budgets.
-    - Implement Azure Policy with policy and initiative definitions.
-    - Scope Azure policies and determine compliance.
-prerequisites: |
-  None
+  -   Create management groups to target policies and spending budgets.
+  -   Implement Azure Policy with policy and initiative definitions.
+  -   Scope Azure policies and determine compliance.
+prerequisites: None
 iconUrl: /training/achievements/azure-policy-configure.svg
 levels:
 - intermediate

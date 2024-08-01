@@ -2,20 +2,23 @@
 uid: learn.wwl.describe-monitoring-tools-azure
 metadata:
   title: Describe monitoring tools in Azure
-  description: "Describe monitoring tools in Azure"
-  ms.date: 10/12/2022
+  description: Describe monitoring tools in Azure
+  ms.date: 04/17/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ai-usage: human-only
+  ms.service: architecture-center
 title: Describe monitoring tools in Azure
 summary: This module covers tools that you can use to monitor your Azure environment.
 abstract: |
-  - Describe the purpose of Azure Advisor
-  - Describe Azure Service Health
-  - Describe Azure Monitor, including Azure Log Analytics, Azure Monitor Alerts, and Application Insights
-prerequisites: |
-  *   Basic familiarity with IT terms and concepts
+  By the end of this module, you'll be able to:
+  -   Describe the purpose of Azure Advisor.
+  -   Describe Azure Service Health.
+  -   Describe Azure Monitor, including Azure Log Analytics, Azure Monitor Alerts, and Application Insights.
+prerequisites: '-   Basic familiarity with IT terms and concepts'
 iconUrl: /training/achievements/describe-monitoring-tools-azure.svg
 levels:
 - beginner

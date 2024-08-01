@@ -5,10 +5,9 @@ metadata:
   title: Introduction
   description: Introduces the routine management tasks of Azure Private 5G Core.
   ms.date: 11/29/2022
-  author: michael-weizhong-shan
-  ms.author: michaelshan
-  ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  author: lnyswonger
+  ms.author: lnyswonger
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]

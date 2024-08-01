@@ -1,6 +1,6 @@
 :::image type="content" source="../media/otm-logo.png" alt-text="Image that shows Over the Moon title art." border="false":::
 
-Passion, determination, creativity, and persistence are the qualities necessary to go beyond what we think is possible. These qualities propelled humans into space. In the new movie [*Over the Moon*](https://www.youtube.com/watch?v=26DIABx44Tw?azure-portal=true) on Netflix, these same qualities drive Fei Fei to design a rocket to reach the Moon. When it comes to Moon missions, whether you're Fei Fei or a NASA engineer, the most critical step is preparation. 
+Passion, determination, creativity, and persistence are the qualities necessary to go beyond what we think is possible. These qualities propelled humans into space. In the new movie [*Over the Moon*](https://www.youtube.com/watch?v=26DIABx44Tw) on Netflix, these same qualities drive Fei Fei to design a rocket to reach the Moon. When it comes to Moon missions, whether you're Fei Fei or a NASA engineer, the most critical step is preparation. 
 
 :::image type="content" source="../media/fei-fei-prep.png" alt-text="Image that shows the main character doing equations to build a rocket." border="false":::
 
@@ -21,17 +21,4 @@ With the help of some of Chang'e's friends, the protagonist was able to land on 
 In this module, you'll take inspiration from both *Over the Moon* and NASA scientists to explore data that's related to the Apollo missions and the rock samples they returned to Earth. You'll learn data cleansing and manipulation techniques that are critical to developing the machine learning models and AI that help us prepare for space exploration.
 
 > [!TIP]
-> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/jyFHnO7-4Gc?azure-portal=true) in a new tab.
-
-## Learning objectives
-
-In this module, you'll begin to develop the skills to: 
-
-- Create a clear representation of data from many sources.
-- Use Python and pandas to explore data. 
-- Use data cleansing techniques to get a clear representation of data.
-- Hypothesize how much rock astronauts can bring back on the Artemis missions.
-
-## Prerequisites
-
-[Visual Studio Code, with the Python extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/jyFHnO7-4Gc) in a new tab.

@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/30/2020
   author: coderandhiker
   ms.author: chrisrt
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Migrate an ASP.NET web application to Azure with Visual Studio
 prerequisites: |
   - Some C# programming experience
@@ -32,11 +31,9 @@ products:
 - azure-sql-database
 - aspnet
 - dotnet
-subjects:
-- development-tools
 modules:
 - learn.azure.aspnet-configurationbuilder
-- learn.azure.aspnet-logging
+# - learn.azure.aspnet-logging
 - learn.azure.aspnet-session
 trophy:
   uid: learn.migrate-aspnet-web-application.trophy

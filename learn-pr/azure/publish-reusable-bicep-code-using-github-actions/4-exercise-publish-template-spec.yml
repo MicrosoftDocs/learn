@@ -5,11 +5,12 @@ metadata:
   unitType: exercise
   title: Exercise - Publish a template spec
   description: Create a GitHub Actions workflow to publish a template spec to Azure.
-  ms.date: 04/05/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/22/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 4
 content: |
   [!include[](includes/4-exercise-publish-template-spec.md)]

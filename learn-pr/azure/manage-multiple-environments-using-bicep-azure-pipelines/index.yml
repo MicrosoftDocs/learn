@@ -4,12 +4,14 @@ metadata:
   moduleType: standard
   title: Manage multiple environments by using Bicep and Azure Pipelines
   description: Build a deployment pipeline for Bicep IaC templates. Deploy to multiple environments by using pipeline template YAML files. Learn how to provide environment-specific parameters from your pipeline.
+  manager: jasongroce
   ms.date: 02/27/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
   ms.custom: engagement-fy23
+  ms.service: azure-devops-pipelines
+  ms.devlang: bicep
 title: Manage multiple environments by using Bicep and Azure Pipelines
 summary: |
   Deploy your Bicep code to multiple environments to improve the quality of your deployments. Use pipeline templates to reduce code duplication, and set parameter values for each environment.
@@ -26,7 +28,7 @@ prerequisites: |
   - YAML pipelines through Azure Pipelines, including multistage pipelines and service connections.
 
   To work through the exercises in the module, you need:
-  - An Azure account that can create resource groups, Azure Active Directory applications, and service principals.
+  - An Azure account that can create resource groups, Microsoft Entra applications, and service principals.
   - An Azure DevOps organization and account.
 
   You also need the following installed locally:

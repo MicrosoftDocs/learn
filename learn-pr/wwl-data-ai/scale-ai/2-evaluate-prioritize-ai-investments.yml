@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-ai.evaluate-prioritize-ai-investments
+title: Evaluate and prioritize AI investments
+metadata:
+  title: Evaluate and prioritize AI investments
+  description: Evaluate and prioritize AI investments
+  author: wwlpublish
+  ms.author: rcaper
+  ms.date: 04/08/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-evaluate-prioritize-ai-investments.md)]

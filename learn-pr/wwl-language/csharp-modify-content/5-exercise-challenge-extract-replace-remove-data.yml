@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-modify-content.challenge
-title: 'Exercise: Complete a challenge to extract, replace, and remove data from an input string'
+title: Exercise - Complete a challenge to extract, replace, and remove data from an input string
 metadata:
-  title: 'Exercise: Complete a challenge to extract, replace, and remove data from an input string'
-  description: "Exercise: Complete a challenge to extract, replace, and remove data from an input string"
-  ms.date: 04/25/2023
+  title: Exercise - Complete a challenge to extract, replace, and remove data from an input string
+  description: "Extract, replace, and remove data from an input string."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-challenge-extract-replace-remove-data.md)]

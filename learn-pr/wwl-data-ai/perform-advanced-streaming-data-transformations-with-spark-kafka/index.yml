@@ -3,26 +3,26 @@ uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka
 metadata:
   title: Perform advanced streaming data transformations with Apache Spark and Kafka in Azure HDInsight
   description: "Perform advanced streaming data transformations with Apache Spark and Kafka in Azure HDInsight"
-  ms.date: 01/05/2022
+  ms.date: 04/07/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: hdinsight
 title: Perform advanced streaming data transformations with Apache Spark and Kafka in Azure HDInsight
-summary: In this module, you will learn how to create real-time streaming data analytics pipelines and applications on the cloud by using Azure HDInsight with Apache Kafka and Apache Spark.
+summary: In this module, you learn how to create real-time streaming data analytics pipelines and applications on the cloud by using Azure HDInsight with Apache Kafka and Apache Spark.
 abstract: |
-  At the end of this module you will understand:
-  - When to use Apache Spark and Kafka with HDInsight
-  - How Spark Structured Streaming works
-  - The architecture of a Kafka and Spark solution
-  - How to provision HDInsight, create a Kafka producer, and stream Kafka data to a Jupyter notebook
-  - How to replicate data to a secondary cluster
+  At the end of this module, you understand:
+  - When to use Apache Spark and Kafka with HDInsight.
+  - Spark Structured Streaming.
+  - The architecture of a Kafka and Spark solution.
+  - How to provision HDInsight, create a Kafka producer, and stream Kafka data to a Jupyter notebook.
+  - How to replicate data to a secondary cluster.
 prerequisites: |
-  The following pre-requisite should be completed:
-  * Successfully login to the Azure portal
-  * Understand the Azure storage options
-  * Understand the Azure compute options
-  * Create and configure a HDInsight Cluster in the Azure portal
+  The following prerequisite should be completed:
+  * Successfully log in to the Azure portal.
+  * Understand the Azure storage options.
+  * Understand the Azure compute options.
+  * Create and configure a HDInsight Cluster in the Azure portal.
 iconUrl: /training/achievements/perform-advanced-streaming-data-transformations.svg
 levels:
 - intermediate

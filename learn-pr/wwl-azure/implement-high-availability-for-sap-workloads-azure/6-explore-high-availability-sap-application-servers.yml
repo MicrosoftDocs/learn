@@ -3,12 +3,13 @@ uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-of-sa
 title: Explore high availability of SAP application servers
 metadata:
   title: Explore high availability of SAP application servers
-  description: "Explore high availability of SAP application servers"
-  ms.date: 04/20/2023
+  description: "Explore high availability of SAP application servers."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/6-explore-high-availability-sap-application-servers.md)]

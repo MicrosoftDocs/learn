@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-aspnet-core-identity.multi-factor-authentication
+uid: learn.secure-aspnet-core-identity.6-multi-factor-authentication
 metadata:
-  title: Multi-factor authentication in ASP.NET Core
-  description: Learn about multi-factor authentication support in ASP.NET Core web apps.
-  ms.date: 03/16/2022
+  title: Multifactor authentication in ASP.NET Core
+  description: Learn about multifactor authentication support in ASP.NET Core web apps.
+  ms.date: 05/19/2023
   author: camsoper
   ms.author: casoper
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
-title: Multi-factor authentication in ASP.NET Core
+  ms.manager: markl
+  ms.topic: unit
+title: Multifactor authentication in ASP.NET Core
 durationInMinutes: 3
 content: |
   [!include[](includes/6-multi-factor-authentication.md)]

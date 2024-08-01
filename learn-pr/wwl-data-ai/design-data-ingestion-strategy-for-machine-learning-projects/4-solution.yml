@@ -3,12 +3,13 @@ uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.solu
 title: Design a data ingestion solution
 metadata:
   title: Design a data ingestion solution
-  description: "Design a data ingestion solution"
-  ms.date: 11/11/2022
+  description: Design a data ingestion solution
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

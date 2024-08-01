@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.use-semantic-search.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 9/29/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "How many results are returned by semantic ranking?"
+    choices:
+    - content: "Up to 50."
+      isCorrect: true
+      explanation: "Correct. Semantic ranking returns 50 results, or as many results as the BM25 ranking function, whichever is lower."
+    - content: "As many results as the BM25 ranking function returns."
+      isCorrect: false
+      explanation: "Incorrect. Semantic ranking might not return as many results as the BM25 ranking function."
+    - content: "Up to 25."
+      isCorrect: false
+      explanation: "Incorrect. Semantic ranking isn't limited to 25 results."
+  - content: "Which services is a prerequisite for semantic ranking?"
+    choices:
+    - content: "Azure AI Search service with a billable tier."
+      isCorrect: true
+      explanation: "Correct. Azure AI Search service with a billable tier is required for semantic ranking."
+    - content: "Azure AI services with a billable tier."
+      isCorrect: false
+      explanation: "Incorrect. Azure AI services isn't required for semantic ranking."
+    - content: "Azure AI Language service."
+      isCorrect: false
+      explanation: "Incorrect. Azure AI language service isn't required for semantic ranking."
+  - content: "What are semantic captions?"
+    choices:
+    - content: "Verbatim summary sentences from the document."
+      isCorrect: true
+      explanation: "Semantic captions extract summary sentences from the document verbatim and highlight the most relevant text in the summary sentences."
+    - content: "A summary of the content from the highest ranked document."
+      isCorrect: false
+      explanation: "Semantic captions don't summarize the content from the highest ranked document."
+    - content: "A summary of the content from all documents."
+      isCorrect: false
+      explanation: "Semantic captions don't include content from all documents."

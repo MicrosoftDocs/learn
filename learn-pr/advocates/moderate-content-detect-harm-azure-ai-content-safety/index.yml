@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.moderate-content-detect-harm-azure-ai-content-safety
+metadata:
+  title: Moderate Content and Detect Harm with Azure AI Content Safety
+  description: Learn how to choose and build a content moderation system with Azure AI Content Safety.
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.date: 06/24/2024
+  ms.service: artificial-intelligence
+  ms.topic: module-guided-project
+  ms.collection:
+    - ce-advocates-ai-copilot
+title: Moderate Content and Detect Harm with Azure AI Content Safety
+summary: Learn how to moderate content and detect harm with Azure AI Content Safety.
+abstract: |
+  By the end of this module, you're able to:
+  - Perform text and image moderation for harmful content 
+  - Detect groundedness in a models output 
+  - Identify and block AI-generated copyrighted content 
+  - Mitigate direct and indirect prompt injections 
+prerequisites: |
+  - An Azure subscription – [Create one for free](https://azure.microsoft.com/free/cognitive-services/)
+  - Familiarity with Azure and the Azure portal
+  - Access to Azure OpenAI Services
+  - Ability to understand Python at a beginner level
+  - Developing in browser:
+    - [GitHub account](https://docs.github.com/get-started/signing-up-for-github)
+  - Developing locally:
+    - [Docker desktop](https://www.docker.com/products/docker-desktop/)
+    - [Visual Studio Code](https://code.visualstudio.com/)
+      - [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.moderate-content-detect-harm-azure-ai-content-safety.introduction
+- learn.moderate-content-detect-harm-azure-ai-content-safety.azure-ai-content-safety
+- learn.moderate-content-detect-harm-azure-ai-content-safety.prepare
+- learn.moderate-content-detect-harm-azure-ai-content-safety.harm-categories-severity-levels
+- learn.moderate-content-detect-harm-azure-ai-content-safety.exercise-text-moderation
+- learn.moderate-content-detect-harm-azure-ai-content-safety.exercise-image-moderation
+- learn.moderate-content-detect-harm-azure-ai-content-safety.exercise-groundedness-detection
+- learn.moderate-content-detect-harm-azure-ai-content-safety.exercise-prompt-shields
+- learn.moderate-content-detect-harm-azure-ai-content-safety.exercise-integrate-contoso-camping-store-platform
+- learn.moderate-content-detect-harm-azure-ai-content-safety.knowledge-check
+- learn.moderate-content-detect-harm-azure-ai-content-safety.summary
+badge:
+  uid: learn.moderate-content-detect-harm-azure-ai-content-safety-badge

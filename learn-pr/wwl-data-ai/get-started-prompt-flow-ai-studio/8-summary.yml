@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-prompt-flow-ai-studio.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary of module on LLM apps and how to get started with Azure AI Studio's prompt flow.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 01/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]

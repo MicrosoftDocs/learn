@@ -6,10 +6,9 @@ metadata:
   title: Knowledge check
   description: "Check your knowledge."
   ms.date: 03/08/2023
-  author: ricmmartins
-  ms.author: ricmart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: aortoll
+  ms.author: anortoll
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:

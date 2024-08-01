@@ -3,14 +3,13 @@ uid: learn.wwl.custom-name-entity-recognition.train-evaluate-your-model
 title: Train and evaluate your model
 metadata:
   title: Train and evaluate your model
-  description: "Train and evaluate your model"
-  ms.date: 09/01/2022
+  description: Train and evaluate your model
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.date: 2/21/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/4-train-evaluate-your-model.md)]

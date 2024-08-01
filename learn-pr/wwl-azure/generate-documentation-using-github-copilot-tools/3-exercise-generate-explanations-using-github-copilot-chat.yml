@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-documentation-using-github-copilot-tools.exercise-generate-explanations-using-github-copilot-chat
+title: Exercise - Generate code explanations using GitHub Copilot Chat
+metadata:
+  title: Exercise - Generate code explanations using GitHub Copilot Chat
+  description: Exercise - Generate code explanations using GitHub Copilot Chat
+  author: wwlpublish
+  ms.author: cahowd
+  ms.date: 07/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 17
+content: |
+  [!include[](includes/3-exercise-generate-explanations-using-github-copilot-chat.md)]

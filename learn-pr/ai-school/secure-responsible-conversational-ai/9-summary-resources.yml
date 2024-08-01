@@ -4,11 +4,12 @@ title: Summary and resources
 metadata:
   title: Summary and resources
   description: An overview of the content covered in the module, and resources for further learning.
-  ms.date: 02/20/2020
   author: Adriamen
   ms.author: japerena
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 2 
 content: |
   [!include[](includes/9-summary-resources.md)] 

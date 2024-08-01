@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.apply-networking-concepts-to-windows-containers.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: In this module, you learned about networking concepts and technologies for deploying Windows containers on Azure Kubernetes Service (AKS). In a networking configuration, Windows containers function like virtual machines.
+  ms.date: 02/12/2024
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary.md)]

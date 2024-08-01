@@ -3,14 +3,13 @@ uid: learn.wwl.create-composed-form-recognizer-model.understand-composed-models
 title: Understand composed models
 metadata:
   title: Understand composed models
-  description: "Understand composed models"
-  ms.date: 09/22/2022
+  description: Understand composed models
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.date: 03/05/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/2-understand-composed-models.md)]

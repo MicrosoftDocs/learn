@@ -3,16 +3,15 @@ uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search.knowledge-chec
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 07/30/2021
+  description: Knowledge check
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 12/11/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 durationInMinutes: 3
-content: |
-  [!include[](includes/9-knowledge-check.md)]
 quiz:
   questions:
   - content: "You want to create a skillset that includes a knowledge store definition. Which type of skill should you use to map the enriched fields extracted by your skillset to the desired structure for the knowledge store data?"
@@ -33,18 +32,18 @@ quiz:
       explanation: "Correct. Object projections are JSON representations of an indexed document."
     - content: "File"
       isCorrect: false
-      explanation: "Incorrect. File projection are not JSON representations of an indexed document."
+      explanation: "Incorrect. File projections aren't JSON representations of an indexed document."
     - content: "Table"
       isCorrect: false
-      explanation: "Incorrect. Table projections are not JSON representations of an indexed document."
+      explanation: "Incorrect. Table projections aren't JSON representations of an indexed document."
   - content: "You want to create a knowledge store that contains a relational schema for your enriched data. What kind of projection should you define?"
     choices:
     - content: "Object"
       isCorrect: false
-      explanation: "Incorrect. Object projections do not define a relational schema of tables for your enriched data."
+      explanation: "Incorrect. Object projections don't define a relational schema of tables for your enriched data."
     - content: "File"
       isCorrect: false
-      explanation: "Incorrect. File projections do not define a relational schema of tables for your enriched data."
+      explanation: "Incorrect. File projections don't define a relational schema of tables for your enriched data."
     - content: "Table"
       isCorrect: true
       explanation: "Correct. Table projections define a relational schema of tables for your enriched data."
@@ -52,10 +51,10 @@ quiz:
     choices:
     - content: "Object"
       isCorrect: false
-      explanation: "Incorrect. Object projections do not contain image data extracted from a document."
+      explanation: "Incorrect. Object projections don't contain image data extracted from a document."
     - content: "File"
       isCorrect: true
-      explanation: "Correct. File projections creates a .jpg file for each image extracted from a document."
+      explanation: "Correct. File projections create a .jpg file for each image extracted from a document."
     - content: "Table"
       isCorrect: false
-      explanation: "Incorrect. Table projections do not contain image data extracted from a document."
+      explanation: "Incorrect. Table projections don't contain image data extracted from a document."

@@ -3,14 +3,13 @@ uid: learn.wwl.get-started-ai-fundamentals.explore-responsible-ai-practice
 title: Challenges and risks with AI
 metadata:
   title: Challenges and risks with AI
-  description: "Challenges and risks with AI"
-  ms.date: 04/03/2023
+  description: Challenges and risks with AI
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: sheryang
+  ms.date: 12/05/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/7-challenges-with-ai.md)]

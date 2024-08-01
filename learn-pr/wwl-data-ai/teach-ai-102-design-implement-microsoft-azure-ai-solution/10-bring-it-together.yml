@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.bring-it-together
+title: Bring it all together
+metadata:
+  title: Bring it all together
+  description: Bring it all together
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.date: 03/18/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-bring-it-together.md)]

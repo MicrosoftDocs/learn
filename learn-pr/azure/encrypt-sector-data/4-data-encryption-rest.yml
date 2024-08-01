@@ -4,11 +4,10 @@ title: Protect data at rest
 metadata:
   title: Protect data at rest
   description: Explanation of the concepts of DEK and KEK and introduction to the options provided by Azure to encrypt data at rest.
-  ms.date: 04/11/2023
+  ms.date: 05/24/2024
   author: Adriamen
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/4-data-encryption-rest.md)] 

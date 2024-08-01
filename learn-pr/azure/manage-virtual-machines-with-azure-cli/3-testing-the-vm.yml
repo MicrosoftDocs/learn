@@ -4,11 +4,12 @@ title: Exercise - Test your new virtual machine
 metadata:
   title: Exercise - Test your new virtual machine
   description: Use SSH to connect to the newly created Azure Virtual Machine
-  ms.date: 09/24/2018
-  author: cynthn
-  ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/08/2023
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 interactive: bash
 azureSandbox: true
 durationInMinutes: 3

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-code-improvements-using-github-copilot-tools.exercise-improve-code-security-github-copilot-chat
+title: Exercise - Improve code security by using GitHub Copilot Chat
+metadata:
+  title: Exercise - Improve code security by using GitHub Copilot Chat
+  description: Exercise - Improve code security by using GitHub Copilot Chat
+  author: wwlpublish
+  ms.author: cahowd
+  ms.date: 05/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-improve-code-security-github-copilot-chat.md)]

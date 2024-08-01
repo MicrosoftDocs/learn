@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-networking.consider-networking-changes-for-azure-virtual-machines
-title: Consider networking changes for Azure virtual machines
+title: Consider networking changes for Azure Virtual Machines
 metadata:
-  title: Consider networking changes for Azure virtual machines
-  description: "Consider networking changes for Azure virtual machines"
-  ms.date: 04/21/2023
+  title: Consider networking changes for Azure Virtual Machines
+  description: "Account for extra network requirements as part of a deployment of Azure Virtual Machines or large instances of SAP HANA on Azure."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/12-consider-networking-changes-azure-virtual-machines.md)]

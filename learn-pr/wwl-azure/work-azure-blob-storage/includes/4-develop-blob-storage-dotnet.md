@@ -1,4 +1,3 @@
-
 This exercise uses the Azure Blob storage client library to show you how to perform the following actions on Azure Blob storage in a console app:
 
 * Create a container
@@ -13,9 +12,11 @@ This exercise uses the Azure Blob storage client library to show you how to perf
 
 * [Visual Studio Code](https://code.visualstudio.com/) on one of the [supported platforms](https://code.visualstudio.com/docs/supporting/requirements#_platforms).
 
-* [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0) is the target framework for the steps below.
+* [.NET 8](https://dotnet.microsoft.com/download/dotnet/8.0) is the target framework for the exercise.
 
 * The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
+
+* [Azure CLI](/cli/azure/install-azure-cli)
 
 ## Setting up
 
@@ -23,7 +24,7 @@ Perform the following actions to prepare Azure, and your local environment, for 
 
 1. Start Visual Studio Code and open a terminal window by selecting **Terminal** from the top application bar, then selecting **New Terminal**.
 
-1. Login to Azure by using the command below. A browser window should open letting you choose which account to login with.
+1. Sign in to Azure by using the following command. A browser window should open letting you choose which account to sign in with.
 
     ```bash
     az login
@@ -35,7 +36,7 @@ Perform the following actions to prepare Azure, and your local environment, for 
     az group create --location <myLocation> --name az204-blob-rg
     ```
 
-1. Create a storage account. We need a storage account created to use in the application. Replace `<myLocation>` with the same region you used for the resource group. Replace `<myStorageAcct>` with a unique name. 
+1. Create a storage account. Create a storage account to use in the application. Replace `<myLocation>` with the same region you used for the resource group. Replace `<myStorageAcct>` with a unique name. 
 
     ```bash
     az storage account create --resource-group az204-blob-rg --name <myStorageAcct> --location <myLocation> --sku Standard_LRS
@@ -48,14 +49,14 @@ Perform the following actions to prepare Azure, and your local environment, for 
     * Navigate to the [Azure portal](https://portal.azure.com/).
     * Locate the storage account created.
     * Select **Access keys** in the **Security + networking** section of the navigation pane. Here, you can view your account access keys and the complete connection string for each key.
-    * Find the **Connection string** value under **key1**, and select the **Copy** button to copy the connection string. You will add the connection string value to the code in the next section.
+    * Find the **Connection string** value under **key1**, and select the **Copy** button to copy the connection string. You'll add the connection string value to the code in the next section.
     * In the **Blob** section of the storage account overview, select **Containers**.  Leave the windows open so you can view changes made to the storage as you progress through the exercise.
  
 ## Prepare the .NET project
 
-In this section we'll create project named *az204-blob* and install the Azure Blob Storage client library. 
+Create project named *az204-blob* and install the Azure Blob Storage client library. 
 
-1. In the VS Code terminal navigate to a directory where you want to store your project. 
+1. In the VS Code terminal, navigate to a directory where you want to store your project. 
 
 1. In the terminal, use the `dotnet new` command to create a new console app. This command creates a simple "Hello World" C# project with a single source file: *Program.cs*.
 
@@ -70,7 +71,7 @@ In this section we'll create project named *az204-blob* and install the Azure Bl
     dotnet build
     ```
 
-1. Inside the *az204-blob* folder, create another folder named *data*. This is where the blob data files will be created and stored.
+1. Inside the *az204-blob* folder, create another folder named *data*. This is where the blob data files are created and stored.
     
     ```bash
     mkdir data
@@ -116,13 +117,13 @@ In this section we'll create project named *az204-blob* and install the Azure Bl
 
 ## Build the full app
 
-For each of the following sections below you'll find a brief description of the action being taken as well as the code snippet you'll add to the project. Each new snippet is appended to the one before it, and we'll build and run the console app at the end.
+Now it's time to build the app. The following sections contain a brief description of the action being taken as well, as the code snippet you add to the project. Each new snippet is appended to the one before it. You build and run the console app at the end.
 
-For each example below copy the code and append it to the previous snippet in the example code section of the *Program.cs* file.
+For each of the following examples, copy the code and append it to the previous snippet in the example code section of the *Program.cs* file.
 
 ### Create a container
 
-To create the container first create an instance of the `BlobServiceClient` class, then call the `CreateBlobContainerAsync` method to create the container in your storage account. A GUID value is appended to the container name to ensure that it is unique. The `CreateBlobContainerAsync` method will fail if the container already exists.
+Creating a container includes creating an instance of the `BlobServiceClient` class, and then calling the `CreateBlobContainerAsync` method to create the container in your storage account. A GUID value is appended to the container name to ensure that it's unique. The `CreateBlobContainerAsync` method fails if the container already exists.
 
 ```csharp
 //Create a unique name for the container
@@ -171,7 +172,7 @@ Console.ReadLine();
 
 ### List the blobs in a container
 
-List the blobs in the container by using the `GetBlobsAsync` method. In this case, only one blob has been added to the container, so the listing operation returns just that one blob. 
+List the blobs in the container by using the `GetBlobsAsync` method. In this case, only one blob was added to the container, so the listing operation returns just that one blob. 
 
 ```csharp
 // List blobs in the container
@@ -241,8 +242,10 @@ There are many prompts in the app to allow you to take the time to see what's ha
 
 ## Clean up other resources
 
-The app deleted the resources it created. You can delete all of the resources created for this exercise by using the command below. You will need to confirm that you want to delete the resources.
+The app deleted the resources it created. You can delete all of the resources created for this exercise by using the following command. You need to confirm that you want to delete the resources.
 
 ```bash
 az group delete --name az204-blob-rg --no-wait
 ```
+
+

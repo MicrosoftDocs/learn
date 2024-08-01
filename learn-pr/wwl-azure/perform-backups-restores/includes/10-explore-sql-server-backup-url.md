@@ -1,5 +1,3 @@
-
-
 Creating an Azure Storage account within your Azure subscription is the first step in this process. SQL Server can either use the Azure storage account name and its access key value to authenticate and write and read blobs to the Microsoft Azure Blob storage service or use a Shared Access Signature token granting read and write permissions to individual containers. The SQL Server Credential stores this authentication information and uses it during the backup or restore operations.
 
 To implement SQL Server Backup to URL, you can use the following methods:
@@ -8,9 +6,9 @@ To implement SQL Server Backup to URL, you can use the following methods:
 - **SQL Server Backup to URL Using Maintenance Plan Wizard**: The Maintenance Plan Wizard in SQL Server Management Studio includes URL as one of the destination options, and other supporting objects required to back up to Azure storage like the SQL Credential.
 - **Transact-SQL, PowerShell, or C\#**: These options must be used to create a striped backup set, a SQL Server file-snapshot backup, or a SQL credential using Shared Access token.
 
-## SQL Server Automated Backup v2 for Azure VMs
+## SQL Server Automated Backup v2 for Azure Virtual Machines
 
-Automated Backup v2 automatically configures Managed Backup to Microsoft Azure for all existing and new databases on an Azure VM running SQL Server 2016/2017 Standard, Enterprise, or Developer editions. This enables you to configure regular database backups that utilize Azure blob storage. Automated Backup v2 depends on the SQL Server IaaS Agent Extension.
+Automated Backup v2 automatically configures Managed Backup to Microsoft Azure for all existing and new databases on an Azure Virtual Machine running SQL Server 2016/2017 Standard, Enterprise, or Developer editions. This enables you to configure regular database backups that utilize Azure blob storage. Automated Backup v2 depends on the SQL Server IaaS Agent Extension.
 
 Automated Backup v2 works with SQL Server 2016 or higher. If you're using SQL Server 2014, you can use Automated Backup v1 to back up your databases.
 
@@ -18,21 +16,21 @@ Automated Backup v2 works with SQL Server 2016 or higher. If you're using SQL Se
 
 - Target databases must use the full recovery model. For more information about the impact of the full recovery model on backups, see Backup Under the Full Recovery Model.
 - System databases don't have to use full recovery model. However, if you require log backups to be taken for Model or MSDB, you must use the full recovery model.
-- Target databases must be on either the default SQL Server instance, or a named instance installed by following the procedure described in [Frequently asked questions for SQL Server on Azure VMs](/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq?view=azuresql).
+- Target databases must be on either the default SQL Server instance, or a named instance installed by following the procedure described in [Frequently asked questions for SQL Server on Azure Virtual Machines](/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq).
 
-You can use the Azure portal or Az PowerShell module to configure Automated Backup v2 during provisioning or existing SQL Server 2016/2017 VMs.
+You can use the Azure portal or Az PowerShell module to configure Automated Backup v2 during provisioning or existing SQL Server 2016/2017 virtual machines.
 
-## SQL Server backup in Azure VMs (to Recovery Services Vault)
+## SQL Server backup in Azure Virtual Machines (to Recovery Services Vault)
 
-SQL Server Backup in Azure VMs can be configured in the Azure portal or PowerShell (there's no support for Azure CLI). The process involves running discovery of SQL Server instances and their databases from an Azure Recovery Services vault, selecting the databases to be backed up in the discovery results, and assigning a backup policy that determines backup settings, such as frequency and retention. You also have the option of enabling Auto-Protection, which automatically backs up all existing and future databases on a SQL Server instance or Always On Availability Group.
+SQL Server Backup in Azure Virtual Machines can be configured in the Azure portal or PowerShell (there's no support for Azure CLI). The process involves running discovery of SQL Server instances and their databases from an Azure Recovery Services vault, selecting the databases to be backed up in the discovery results, and assigning a backup policy that determines backup settings, such as frequency and retention. You also have the option of enabling Auto-Protection, which automatically backs up all existing and future databases on a SQL Server instance or Always On Availability Group.
 
 When you run discovery on a SQL Server, Azure Backup does the following:
 
 - Adds the AzureBackupWindowsWorkload extension.
 - Creates an NT SERVICE\\AzureWLBackupPluginSvc account to discover databases on the virtual machine. This account is used for a backup and restore and requires SQL sysadmin permissions.
-- Discovers databases that are running on a VM, Azure Backup uses the NT AUTHORITY\\SYSTEM account. This account must be a public sign-in on SQL.
+- Discovers databases that are running on a virtual machine, Azure Backup uses the NT AUTHORITY\\SYSTEM account. This account must be a public sign-in on SQL.
 
-If you didn't create the SQL Server VM by using an Azure Marketplace image, you need to assign to the NT SERVICE\\AzureWLBackupPluginSvc account the sysadmin role.
+If you didn't create the SQL Server virtual machine by using an Azure Marketplace image, you need to assign to the NT SERVICE\\AzureWLBackupPluginSvc account the sysadmin role.
 
 ## SQL Server file snapshot-based backups to Azure Storage
 
@@ -44,8 +42,8 @@ Regardless of the choice of the implementation method, the process involves sett
 
 ## File-backup set maintenance
 
-- **Deleting a file-snapshot backup set**: You can't overwrite a file-snapshot backup set using the FORMAT argument. The FORMAT argument isn't permitted to avoid leaving orphaned file-snapshots that were created with the original file-snapshot backup. To delete a file-snapshot backup set, use the sys.sp\_delete\_backup system stored procedure. This stored procedure deletes the backup file and the file-snapshots that comprise the backup set. Using another method to delete a file-snapshot backup set may delete the backup file without deleting the file-snapshots in the backup set.
-- **Deleting orphaned backup file-snapshot**s: You may have orphaned file-snapshots if the backup file was deleted without using the sys.sp\_delete\_backup system stored procedure or if a database or database file was dropped while the blob(s) containing the database or database file had backup file-snapshots associated with them. To identify file-snapshots that may be orphaned, use the sys.fn\_db\_backup\_file\_snapshots system function to list all file-snapshots of the database files. To identify the file-snapshots that are part of a specific file-snapshot backup set, use the RESTORE FILELISTONLY system stored procedure. You can then use the sys.sp\_delete\_backup\_file\_snapshot system stored procedure to delete an individual backup file-snapshot that was orphaned. You can find examples using this system function and these system stored procedures at the bottom of this page.
+- **Deleting a file-snapshot backup set**: You can't overwrite a file-snapshot backup set using the FORMAT argument. The FORMAT argument isn't permitted to avoid leaving orphaned file-snapshots that were created with the original file-snapshot backup. To delete a file-snapshot backup set, use the sys.sp\_delete\_backup system stored procedure. This stored procedure deletes the backup file and the file-snapshots that comprise the backup set. Using another method to delete a file-snapshot backup set might delete the backup file without deleting the file-snapshots in the backup set.
+- **Deleting orphaned backup file-snapshot**s: You might have orphaned file-snapshots if the backup file was deleted without using the sys.sp\_delete\_backup system stored procedure or if a database or database file was dropped while the blob(s) containing the database or database file had backup file-snapshots associated with them. To identify file-snapshots that might be orphaned, use the sys.fn\_db\_backup\_file\_snapshots system function to list all file-snapshots of the database files. To identify the file-snapshots that are part of a specific file-snapshot backup set, use the RESTORE FILELISTONLY system stored procedure. You can then use the sys.sp\_delete\_backup\_file\_snapshot system stored procedure to delete an individual backup file-snapshot that was orphaned. You can find examples using this system function and these system stored procedures at the bottom of this page.
 
 ## Restore using file-snapshot backups
 
@@ -124,7 +122,7 @@ select * from sys.fn_db_backup_file_snapshots ('AdventureWorks2016') ;
 To delete an individual backup file-snapshot of a database base blob, use the sys.sp\_delete\_backup\_file\_snapshot system stored procedure. A primary use case for this system stored procedure is to delete orphaned file-snapshot files that remain after a backup file was deleted using a method other than the sys.sp\_delete\_backup system stored procedure.
 
 > [!WARNING]
-> Deleting an individual file-snapshot that is part of a file-snapshot backup set will invalidate the backup set.
+> Deleting an individual file-snapshot that's part of a file-snapshot backup set will invalidate the backup set.
 
 The following example deletes the specified backup file-snapshot. The URL for the specified backup was obtained using the sys.fn\_db\_backup\_file\_snapshots system function.
 

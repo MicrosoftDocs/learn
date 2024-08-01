@@ -3,12 +3,13 @@ uid: learn.wwl.deploy-single-instance-implementations-2-tier-3-tier.knowledge-ch
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 04/25/2023
+  description: "Check what you learn in this module."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/9-knowledge-check.md)]
@@ -19,21 +20,21 @@ quiz:
     choices:
     - content: "Microsoft Azure PowerShell cmdlets"
       isCorrect: false
-      explanation: "That’s incorrect. Hashicorp Terraform is an open-source tool for provisioning and managing cloud infrastructure. It enables developers to use the same tools and configuration files to manage infrastructure on multiple cloud providers."
+      explanation: "Incorrect. Hashicorp Terraform is an open-source tool for provisioning and managing cloud infrastructure. It enables developers to use the same tools and configuration files to manage infrastructure on multiple cloud providers."
     - content: "Microsoft Azure CLI"
       isCorrect: false
-      explanation: "That’s incorrect. Hashicorp Terraform is an open-source tool for provisioning and managing cloud infrastructure. It enables developers to use the same tools and configuration files to manage infrastructure on multiple cloud providers."
+      explanation: "Incorrect. Hashicorp Terraform is an open-source tool for provisioning and managing cloud infrastructure. It enables developers to use the same tools and configuration files to manage infrastructure on multiple cloud providers."
     - content: "Hashicorp Terraform"
       isCorrect: true
-      explanation: "That's correct. Hashicorp Terraform is an open-source tool for provisioning and managing cloud infrastructure. It enables developers to use the same tools and configuration files to manage infrastructure on multiple cloud providers."
+      explanation: "Correct. Hashicorp Terraform is an open-source tool for provisioning and managing cloud infrastructure. It enables developers to use the same tools and configuration files to manage infrastructure on multiple cloud providers."
   - content: "Which kind of deployment can be carried out using the SAP HANA Database Lifecycle Manager (HDBLCM) tool?"
     choices:
     - content: "HANA-based NetWeaver deployments"
       isCorrect: true
-      explanation: "That's correct. For HANA-based NetWeaver deployments, use the SAP Software Provisioning Manager (SWPM), followed by HANA installation; or use the SAP HANA Database Lifecycle Manager (HDBLCM) tool, and then install NetWeaver. For NetWeaver AnyDB deployments, follow the standard (2-tier) or distributed (3-tier) NetWeaver installation options in SAP Software Provisioning Manager (SWPM)."
+      explanation: "Correct. For HANA-based NetWeaver deployments, use the SAP Software Provisioning Manager (SWPM), followed by HANA installation; or use the SAP HANA Database Lifecycle Manager (HDBLCM) tool, and then install NetWeaver. For NetWeaver AnyDB deployments, follow the standard (2-tier) or distributed (3-tier) NetWeaver installation options in SAP Software Provisioning Manager (SWPM)."
     - content: "NetWeaver AnyDB deployments"
       isCorrect: false
-      explanation: "That’s incorrect. For HANA-based NetWeaver deployments, use the SAP Software Provisioning Manager (SWPM), followed by HANA installation; or use the SAP HANA Database Lifecycle Manager (HDBLCM) tool, and then install NetWeaver. For NetWeaver AnyDB deployments, follow the standard (2-tier) or distributed (3-tier) NetWeaver installation options in SAP Software Provisioning Manager (SWPM)."
+      explanation: "Incorrect. For HANA-based NetWeaver deployments, use the SAP Software Provisioning Manager (SWPM), followed by HANA installation; or use the SAP HANA Database Lifecycle Manager (HDBLCM) tool, and then install NetWeaver. For NetWeaver AnyDB deployments, follow the standard (2-tier) or distributed (3-tier) NetWeaver installation options in SAP Software Provisioning Manager (SWPM)."
     - content: "The HDBLCM tool can carry out both types of deployments"
       isCorrect: false
-      explanation: "That’s incorrect. For HANA-based NetWeaver deployments, use the SAP Software Provisioning Manager (SWPM), followed by HANA installation; or use the SAP HANA Database Lifecycle Manager (HDBLCM) tool, and then install NetWeaver. For NetWeaver AnyDB deployments, follow the standard (2-tier) or distributed (3-tier) NetWeaver installation options in SAP Software Provisioning Manager (SWPM)."
+      explanation: "Incorrect. For HANA-based NetWeaver deployments, use the SAP Software Provisioning Manager (SWPM), followed by HANA installation; or use the SAP HANA Database Lifecycle Manager (HDBLCM) tool, and then install NetWeaver. For NetWeaver AnyDB deployments, follow the standard (2-tier) or distributed (3-tier) NetWeaver installation options in SAP Software Provisioning Manager (SWPM)."

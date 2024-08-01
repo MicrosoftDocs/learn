@@ -1,10 +1,10 @@
 In the next stage of your security implementation, you'll deploy a network virtual appliance (NVA) to secure and monitor traffic between your front-end public servers and internal private servers. 
 
-You'll configure the appliance to forward IP traffic. If IP forwarding isn't enabled, traffic that is routed through your appliance will never be received by its intended destination servers.
+You configure the appliance to forward IP traffic. If IP forwarding isn't enabled, traffic that is routed through your appliance will never be received by its intended destination servers.
 
-In this exercise, you'll deploy the **nva** network appliance to the **dmzsubnet** subnet. Then you'll enable IP forwarding so that traffic from **publicsubnet** and traffic that uses the custom route is sent to the **privatesubnet** subnet.
+In this exercise, you deploy the **nva** network appliance to the **dmzsubnet** subnet. Then you enable IP forwarding so that traffic from **`*`** and traffic that uses the custom route is sent to the **privatesubnet** subnet.
 
-![Network virtual appliance with IP forwarding enabled.](../media/5-nva-ip-forwarding.svg)
+:::image type="content" source="../media/5-nva-ip-forwarding.svg" alt-text="Visualization of a Network virtual appliance with IP forwarding enabled.":::
 
 In the following steps, you'll deploy an NVA. You'll then update the Azure virtual NIC and the network settings within the appliance to enable IP forwarding.
 
@@ -16,11 +16,11 @@ To build the NVA, deploy an Ubuntu LTS instance.
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name nva \
         --vnet-name vnet \
         --subnet dmzsubnet \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --admin-password <password>
     ```
@@ -33,7 +33,7 @@ In the next steps, IP forwarding for the **nva** network appliance is enabled. W
 
     ```azurecli
     NICID=$(az vm nic list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vm-name nva \
         --query "[].{id:id}" --output tsv)
 
@@ -44,7 +44,7 @@ In the next steps, IP forwarding for the **nva** network appliance is enabled. W
 
     ```azurecli
     NICNAME=$(az vm nic show \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vm-name nva \
         --nic $NICID \
         --query "{name:name}" --output tsv)
@@ -56,7 +56,7 @@ In the next steps, IP forwarding for the **nva** network appliance is enabled. W
 
     ```azurecli
     az network nic update --name $NICNAME \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --ip-forwarding true
     ```
 
@@ -66,7 +66,7 @@ In the next steps, IP forwarding for the **nva** network appliance is enabled. W
 
     ```azurecli
     NVAIP="$(az vm list-ip-addresses \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name nva \
         --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
         --output tsv)"

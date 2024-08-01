@@ -3,11 +3,13 @@ uid: learn.student-evangelism.analyze-rock-images-ai-nasa
 metadata:
   title: Analyze images of rocks by using artificial intelligence
   description: Identify data to add to an artificial intelligence model that classifies space rocks in random photos.
-  ms.date: 04/11/2021
   author: drguthals
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/11/2021
+  ms.service: artificial-intelligence
+  ms.topic: module
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Analyze images of rocks by using artificial intelligence
 summary: Identify data to add to an artificial intelligence model that classifies space rocks in random photos.

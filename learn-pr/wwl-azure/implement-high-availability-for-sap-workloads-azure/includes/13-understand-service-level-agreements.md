@@ -1,5 +1,3 @@
-
-
 In Azure, the [Service Level Agreement](https://azure.microsoft.com/support/legal/sla/) describes Microsoft's commitments for uptime and connectivity. If the SLA for a particular service is 99.9%, you should expect the service to be available 99.9% of the time. Different services have different SLAs.
 
 The Azure SLA also provides for obtaining a service credit if the SLA isn't met, along with specific definitions of *availability* for each service. That aspect of the SLA acts as an enforcement policy.
@@ -18,7 +16,7 @@ What is the maximum downtime you would expect for this application? If either se
 
 You can improve the composite SLA by creating independent fallback paths. For example, if SQL Database is unavailable, put transactions into a queue to be processed later.
 
-:::image type="content" source="../media/composite-sla-35720a76.png" alt-text="Diagram illustrating composite service level agreements.":::
+:::image border="false" type="content" source="../media/composite-sla-35720a76.png" alt-text="Diagram showing composite service level agreements.":::
 
 With this design, the application is still available even if it can't connect to the database. However, it fails if the database and the queue both fail at the same time. The expected percentage of time for a simultaneous failure is 0.0001 × 0.001, so the composite SLA for this combined path is:
 

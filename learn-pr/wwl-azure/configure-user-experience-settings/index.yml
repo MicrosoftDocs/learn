@@ -2,12 +2,12 @@
 uid: learn.wwl.configure-user-experience-settings
 metadata:
   title: Configure user experience settings
-  description: "Configure user experience settings"
+  description: Configure user experience settings
   ms.date: 08/05/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Configure user experience settings
 summary: Persistent virtual desktops save the operating system state in between reboots. Virtual desktop provides users easy and seamless access to their assigned VMs, often with a single sign-on solution.
 abstract: |
@@ -18,7 +18,7 @@ abstract: |
   *  Configure device redirections for Azure Virtual Desktop.
   *  Configure Universal Print.
   *  Troubleshoot user profile issues.
-prerequisites: ""
+prerequisites: ''
 iconUrl: /training/achievements/2-configure-user-experience-settings.svg
 levels:
 - intermediate

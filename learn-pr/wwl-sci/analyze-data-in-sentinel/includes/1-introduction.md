@@ -1,11 +1,12 @@
 
+
 Microsoft Sentinel Analytics provides an intelligent solution that you can use to detect potential threats and vulnerabilities in your organizations.
 
 Imagine that you work as Security Operations Center (SOC) analyst in Contoso, Ltd. Contoso is a midsize financial services company in London with a New York branch office. Contoso uses several Microsoft products and services to implement data security and threat protection for its resources. These products are:
 
 - Microsoft 365
-- Azure Active Directory (Azure AD)
-- Azure AD Identity Protection
+- Microsoft Entra ID
+- Microsoft Entra ID Protection
 - Microsoft Defender for Cloud Apps
 - Microsoft Defender for Identity
 - Microsoft Defender for Endpoint
@@ -44,4 +45,3 @@ By the end of this module, you'll be able to set up analytics rules in Microsoft
 
 > [!NOTE]
 > If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost refer to [Microsoft Sentinel Pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/)
-

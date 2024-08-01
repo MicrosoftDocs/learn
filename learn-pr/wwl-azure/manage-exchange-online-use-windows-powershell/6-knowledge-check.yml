@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/24/2022
+  ms.date: 03/20/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -21,7 +22,7 @@ quiz:
     - content: "`Connect-SPOTenant`"
       isCorrect: false
       explanation: "Incorrect. After you install the ExchangeManagement module, you can use `Connect-ExchangeOnline` to connect to Exchange Online and manage mailboxes."
-    - content: "`Connect-MSOnline`"
+    - content: "`Connect-MgGraph`"
       isCorrect: false
       explanation: "Incorrect. After you install the ExchangeManagement module, you can use `Connect-ExchangeOnline` to connect to Exchange Online and manage mailboxes."
     - content: "`Connect-ExchangeOnline`"
@@ -32,7 +33,7 @@ quiz:
     - content: "`Set-CalendarProcessing`"
       isCorrect: true
       explanation: "Correct. After you create a resource mailbox, you can use the `Set-CalendarProcessing` cmdlet to configure the settings that control when meeting requests are automatically accepted."
-    - content: "`Set-AzureADUser`"
+    - content: "`Update-MgUser`"
       isCorrect: false
       explanation: "Incorrect. After you create a resource mailbox, you can use the `Set-CalendarProcessing` cmdlet to configure the settings that control when meeting requests are automatically accepted."
     - content: "`Set-MailboxFolderPermission`"

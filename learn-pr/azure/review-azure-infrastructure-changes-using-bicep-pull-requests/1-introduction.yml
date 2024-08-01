@@ -5,11 +5,12 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Introduction to reviewing your Azure infrastructure changes by using Bicep and pull requests.
-  ms.date: 02/28/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/06/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

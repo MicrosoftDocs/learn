@@ -27,3 +27,4 @@ With its use of objects, PowerShell differs from other command-line shells in wh
 In PowerShell, you instruct the cmdlet to produce the collection of service objects and to then display only the **Name** property. The structure of the objects in memory enables PowerShell to find the information for you. This way, you don't have to worry about the exact form of the command output.
 
 This functionality makes it possible for the **Get | Set** pattern to work. Because the output of a **Get-\*** command is an object, PowerShell can find the properties needed by a **Set-\*** command for it to work, without you having to specify them explicitly.
+

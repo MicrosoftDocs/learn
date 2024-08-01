@@ -1,9 +1,8 @@
 ---
-author: davidsmatlak
-ms.prod: learning-azure
+author: mumian
 ms.topic: include
 ms.date: 06/09/2021
-ms.author: davidsmatlak
+ms.author: jgao
 ---
 ### Sign in to Azure by using Azure CLI
 

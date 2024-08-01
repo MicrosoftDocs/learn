@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.azure.organize-and-inventory-machines-through-arc-enabled-servers
+metadata:
+  moduleType: introduction
+  title: Organize and inventory hybrid and multicloud machines through Arc-enabled servers
+  description: Discover the key products and services that allow you to organize and inventory hybrid and multicloud virtual machines through Azure Arc-enabled servers.
+  ms.service: azure-arc
+  manager: rayoflores
+  ms.date: 12/01/2023
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: module-choose-best-product
+title: Organize and inventory hybrid and multicloud machines through Arc-enabled servers
+summary: Discover the key products and services that allow you to organize and inventory hybrid and multicloud virtual machines through Azure Arc-enabled servers.
+abstract: |
+  After you've completed this module, you'll be able to: 
+    - Describe the abilities of Azure Arc-enabled servers to centrally organize and inventory your servers and virtual machines.
+    - Develop custom queries and reporting on server metadata through Azure Resource Graph.
+    - Utilize Azure Policy to deploy and manage virtual machine extensions.
+prerequisites: |
+  - Basic characteristics of Azure services and Azure Arc
+  - Compute, storage, networking, and virtualization technologies
+  - Basic Windows Server and Linux administration tasks
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - business-analyst
+  - administrator
+products:
+  - azure-portal
+  - azure-arc
+  - azure-resource-graph
+  - azure-policy
+subjects:
+- virtual-machine
+- resource-management
+units:
+  - learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.1-introduction
+  - learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.2-organize-categorize-machines
+  - learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.3-report-on-server-metadata
+  - learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.4-deploy-manage-extensions
+  - learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.5-knowledge-check
+  - learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.6-summary
+badge:
+  uid: learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.badge

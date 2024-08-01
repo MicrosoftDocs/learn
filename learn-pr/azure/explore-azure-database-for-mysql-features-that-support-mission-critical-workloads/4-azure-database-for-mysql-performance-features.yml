@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-azure-database-for-mysql-features-support-mission-critical-workloads.azure-database-for-mysql-performance-features
+title: Azure Database for MySQL - Flexible Server performance features
+metadata:
+  title: Azure Database for MySQL - Flexible Server performance features
+  description: "This unit describes performance features for Azure Database for MySQL - Flexible Server. It discusses compute size (RAM and cores), service tier compute sizes, pre-provisioned IOPS and Autoscale IOPS, and read replicas."
+  ms.date: 07/08/2024
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-azure-database-for-mysql-performance-features.md)]

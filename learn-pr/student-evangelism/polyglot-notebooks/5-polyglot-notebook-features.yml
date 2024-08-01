@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-polyglot-notebooks.polyglot-notebook-features
+title: Polyglot Notebook features
+metadata:
+  title: Polyglot Notebook features
+  description: Asides the known features that are part of Jupyter Notebooks, there are a few additional features that Polyglot Notebooks bring to the table. Learn about these features in this unit.
+  author: japhletnwamu
+  ms.author: japhletnwamu
+  ms.date: 04/03/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=cloud_advocates
+durationInMinutes: 11
+content: |
+  [!include[](includes/5-polyglot-notebook-features.md)]

@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-compute.virtual-machines-vms
-title: Explore Azure virtual machines (VMs)
+title: Explore Azure Virtual Machines
 metadata:
-  title: Explore Azure virtual machines (VMs)
-  description: "Explore Azure virtual machines (VMs)"
-  ms.date: 04/21/2023
+  title: Explore Azure Virtual Machines
+  description: "Explore the control Azure Virtual Machines provide over the configuration of the virtual machine and its operating system."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/3-explore-azure-virtual-machines.md)]

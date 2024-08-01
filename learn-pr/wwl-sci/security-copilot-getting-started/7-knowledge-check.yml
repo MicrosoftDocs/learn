@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.security-copilot-getting-started.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Microsoft Copilot for Security knowledge check
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 10/31/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 2
+
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: What are the steps required to onboard organizations and users to Microsoft Copilot for Security?
+    choices:
+    - content: Enable Copilot plugins, and procure Microsoft Entra Premium 1 licensing.
+      isCorrect: false
+      explanation: Incorrect. To onboard the organization and users, an admin must Provision SCUs, set up the default environment, and assign role permission.  
+    - content: Procure Microsoft Entra Premium 1 licensing.
+      isCorrect: false
+      explanation: Incorrect. Entra Premium 1 licensing isn't required. To onboard the organization and users to Copilot, The admin must provision and allocate security compute units (SCUs), set up the default environment, and assign role permissions to user.
+    - content: Provision SCUs, set up the default environment, and assign role permission.
+      isCorrect: true
+      explanation: Correct. The admin must provision and allocate security compute units (SCUs), set up the default environment, and assign role permissions to user.
+  - content: A security analyst is crafting a prompt to investigate an incident involving the Pearl Sleet actor. Which prompt will likely yield the most comprehensive results?
+    choices:
+    - content: Can you give me information about Pearl Sleet activity, including a list of known indicators of compromise and tools, tactics, and procedures (TTPs)?
+      isCorrect: true
+      explanation: Correct. This prompt is clear, specific, and includes elements such as goal and expectations for a detailed response.
+    - content: Describe Pearl Sleet.
+      isCorrect: false
+      explanation: Incorrect. This prompt lacks specificity in goal, context, and the format of the expected response.
+    - content: List Pearl Sleet activities.
+      isCorrect: false
+      explanation: Incorrect. This prompt is too vague and doesn't provide specific elements like context or expectations.
+  - content: An admin is tasked with setting up Microsoft Copilot for Security and needs to provision capacity. After reviewing the options, which method should the admin choose to provision capacity for their organization?
+    choices:
+    - content: Provision capacity through a third-party vendor
+      isCorrect: false
+      explanation: Incorrect. Microsoft Copilot for Security capacity must be provisioned either within Copilot itself or through Azure, not via third-party vendors.
+    - content: Provision capacity within Copilot for Security
+      isCorrect: true
+      explanation: Correct. Provisioning capacity within Copilot for Security is recommended and guided by a wizard for ease of set up.
+    - content: Provision capacity by directly purchasing SCUs from a software retailer
+      isCorrect: false
+      explanation: Incorrect. SCUs for Microsoft Copilot for Security are provisioned through Azure or within the Copilot service, not through software retailers.

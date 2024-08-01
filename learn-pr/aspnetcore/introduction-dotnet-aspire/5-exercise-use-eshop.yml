@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-dotnet-aspire.exercise-use-eshop
+title: Exercise - Use the .NET Aspire eShop
+metadata:
+  title: Exercise - Use the .NET Aspire eShop
+  description: In this unit, you'll use the eShop reference application to explore the structure and functionality of a cloud-native app with the .NET Aspire stack included.
+  ms.date: 01/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-use-eshop.md)]

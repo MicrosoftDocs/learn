@@ -1,0 +1,58 @@
+### YamlMime:Module
+uid: learn-wwl.security-copilot-getting-started
+metadata:
+  title: Describe Microsoft Copilot for Security
+  description: Describe Microsoft Copilot for Security.
+  author: ceperezb
+  ms.author: ceperezb
+  ms.date: 10/31/2023
+  ms.service: security-copilot
+  ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+title: Describe Microsoft Copilot for Security
+summary: |
+  Get acquainted with Microsoft Copilot for Security. You are introduced to some basic terminology, how Microsoft Copilot for Security processes prompts, the elements of an effective prompt, and how to enable the solution.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe what Microsoft Copilot for Security is.
+    - Describe the terminology of Microsoft Copilot for Security.
+    - Describe how Microsoft Copilot for Security processes prompt requests.
+    - Describe the elements of an effective prompt
+    - Describe how to enable Microsoft Copilot for Security.
+prerequisites: |
+  - Working knowledge of security operations and incident response
+  - Working knowledge of Microsoft security products and services
+iconUrl: /learn/achievements/security-copilot-getting-started.svg
+hidden: false
+levels: # see level taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+  - beginner
+roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - security-engineer
+  - security-operations-analyst
+  - business-owner
+products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - entra
+  - microsoft-purview
+  - microsoft-defender
+  - microsoft-sentinel
+  - defender-xdr
+  - intune
+  - defender-for-threat-intelligence
+  - mdeasm
+  - ms-copilot
+subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - cloud-security
+  - threat-protection
+units:
+- learn-wwl.security-copilot-getting-started.introduction
+- learn-wwl.security-copilot-getting-started.describe-security-copilot
+- learn-wwl.security-copilot-getting-started.describe-terminology
+- learn-wwl.security-copilot-getting-started.describe-how-copilot-processes-prompts
+- learn-wwl.security-copilot-getting-started.create-effective-prompts
+- learn-wwl.security-copilot-getting-started.describe-how-to-enable-security-copilot
+- learn-wwl.security-copilot-getting-started.knowledge-check
+- learn-wwl.security-copilot-getting-started.summary
+badge:
+  uid: learn-wwl.security-copilot-getting-started.badge

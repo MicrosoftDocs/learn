@@ -4,41 +4,40 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Review concepts on startup revenue models. Topics include choosing the right pricing model and determining which customers to focus on initially.
-  ms.date: 02/11/2022
-  author: ryanmesches
-  ms.author: ryanmesches
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  ms.date: 06/18/2024
+  author: vhawk85
+  ms.author: vahughes
+  ms.topic: unit
 durationInMinutes: 4
 quiz:
   questions:
   - content: "If your product is a dashboard for aggregating bank feeds, which pricing model is most likely to be a fit?"
     choices:
-    - content: "Subscription."
+    - content: "Subscription"
       isCorrect: true
       explanation: "Correct. A subscription model is best for software like a banking product that customers use regularly."
-    - content: "Commission."
+    - content: "Commission"
       isCorrect: false
       explanation: "Incorrect. A commission model is best for businesses that connect a buyer with a seller. A different model is best for software like a banking product that customers use regularly."
-    - content: "Licensing."
+    - content: "Licensing"
       isCorrect: false
       explanation: "Incorrect. With a licensing model, you typically charge a fee when you grant another company the right to use your intellectual property. A different model is best for software like a banking product that customers use regularly."
-    - content: "Transactional."
+    - content: "Transactional"
       isCorrect: false
       explanation: "Incorrect. A transactional model is best for physical products that customers purchase online. A different model is best for software like a banking product that customers use regularly."
 
   - content: "If your product is a marketplace that connects dog owners with dog walkers, which pricing model is most likely to be a fit?"
     choices:
-    - content: "Subscription."
+    - content: "Subscription"
       isCorrect: false
       explanation: "Incorrect. A subscription model is best for software products that customer use regularly. A different model is best for marketplace businesses that connect buyers with sellers."
-    - content: "Commission."
+    - content: "Commission"
       isCorrect: true
       explanation: "Correct. A commission model is best for marketplace businesses that connect buyers with sellers."
-    - content: "Advertising."
+    - content: "Advertising"
       isCorrect: false
       explanation: "Incorrect. Advertising models are best for businesses that sell advertising space to other companies. A different model is best for marketplace businesses that connect buyers with sellers."
-    - content: "Channel."
+    - content: "Channel"
       isCorrect: false
       explanation: "Incorrect. Channel models are best for products or services that naturally sit alongside another company's offering as an upsell or specialist product. A different model is best for marketplace businesses that connect buyers with sellers."
 
@@ -56,7 +55,7 @@ quiz:
     - content: "Your cost of acquiring customers will be driven down."
       isCorrect: false
       explanation: "Incorrect. Driving down the cost of acquiring customers is helpful, but it's not the only option."
-    - content: "All of the above."
+    - content: "All of these answers are correct."
       isCorrect: true
       explanation: "Correct. There are many benefits to initially focusing on your ideal first customer. When your product is an extremely good fit for customers, they recommend it to others and give you good reviews and ratings. Your customer lifetime value is high because these customers are likely to keep using your product. Referrals that these customers provide drive down your cost of acquiring new customers."
 

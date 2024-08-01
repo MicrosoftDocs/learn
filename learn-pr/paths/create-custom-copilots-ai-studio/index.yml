@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.create-custom-copilots-ai-studio
+metadata:
+  title: Create custom copilots with Azure AI Studio
+  description: Learn how to create custom copilots with the Azure AI Studio.
+  ms.date: 05/08/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: learning-path
+  ms.collection: wwl-ai-copilot
+title: Create custom copilots with Azure AI Studio
+prerequisites: |
+  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. Consider completing the [Get started with artificial intelligence](/training/paths/get-started-with-artificial-intelligence-on-azure) learning path first.
+summary: |
+  Generative Artificial Intelligence (AI) is becoming more accessible through easy-to-use platforms like Azure AI Studio. Learn how to build generative AI applications like custom copilots that use language models and prompt flow to provide value to your users.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+- ai-engineer
+products:
+- ai-services
+subjects:
+- artificial-intelligence
+- machine-learning
+- natural-language-processing
+modules:
+- learn.wwl.introduction-to-azure-ai-studio
+- learn.get-started-prompt-flow-ai-studio
+- learn.wwl.build-copilot-ai-studio
+- learn.wwl.responsible-ai-studio
+trophy:
+  uid: learn.wwl.create-custom-copilots-ai-studio.trophy

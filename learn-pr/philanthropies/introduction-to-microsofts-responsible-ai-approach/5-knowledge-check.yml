@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.introduction-to-microsofts-responsible-ai-approach.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the Introduction to Microsoft's Responsible AI Approach module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 03/22/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "Why is adaptive learning crucial for AI systems?"
+      choices:
+        - content: "To prevent the AI system from evolving with user needs."
+          isCorrect: false
+          explanation: "Incorrect. Adaptive learning is meant to ensure the AI system evolves with user needs."
+        - content: "To make the AI system autonomous without user input."
+          isCorrect: false
+          explanation: "Incorrect. User feedback is essential for guiding the AI system's learning process."
+        - content: "To allow the AI system to learn from user feedback, and provide customizable experiences."
+          isCorrect: true
+          explanation: "Correct: Adaptive learning enables the AI system to improve and tailor its functionality based on user input."
+    - content: "What is the primary purpose of the Microsoft Responsible AI Standard?"
+      choices:
+        - content: "To limit the capabilities of AI systems."
+          isCorrect: false
+          explanation: "Incorrect. The standard aims to guide AI development, not to limit it."
+        - content: "To provide a practical framework for responsible AI development."
+          isCorrect: true
+          explanation: "Correct. The standard offers clear and actionable guidelines for creating AI systems with ethical considerations at the forefront."
+        - content: "To enforce legal regulations on AI systems."
+          isCorrect: false
+          explanation: "Incorrect. The standard is about ethical guidelines, not legal enforcement."
+    - content: "What is the primary benefit of setting clear expectations for an AI system's capabilities and performance?"
+      choices:
+        - content: "To ensure the AI system operates without user oversight."
+          isCorrect: false
+          explanation: "Incorrect. The purpose isn't to eliminate user oversight but to foster understanding and trust."
+        - content: "To guarantee the AI system's infallibility."
+          isCorrect: false
+          explanation: "Incorrect. The goal is to set realistic expectations, not to promise perfection."
+        - content: "To foster user trust through transparency about the AI system's limitations and expected performance."
+          isCorrect: true
+          explanation: "Correct. Clear expectations help users understand what the AI system can do and how well it can perform, leading to realistic expectations and trust."

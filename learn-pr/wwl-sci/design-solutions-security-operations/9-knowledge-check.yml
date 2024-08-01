@@ -7,12 +7,11 @@ metadata:
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 3
 ###########################################################################
 ###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
 ###  - Questions are complete sentences ending with a question mark
 ###  - No true/false questions
 ###  - 3 answers per question
@@ -57,7 +56,7 @@ quiz:
           isCorrect: false
           explanation: "Azure Monitor is focused on collecting data from Azure resources, logging systems, and other sources, not monitoring social media or web-based threats."
 
-    - content: "What is XDR in Microsoft 365 Defender?"
+    - content: "What is XDR in Microsoft Defender XDR?"
       choices:
         - content: "An AI-powered malware scanner that detects and removes malicious files."
           isCorrect: false

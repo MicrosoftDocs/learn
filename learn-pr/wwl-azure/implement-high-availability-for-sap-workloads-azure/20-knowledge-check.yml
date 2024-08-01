@@ -3,37 +3,38 @@ uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.knowledge-che
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 04/20/2023
+  description: "Check what you learn in this module."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/20-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of these three main high availability scenarios for Azure VMs offers the highest uptime SLA?"
+  - content: "Which of these three main high availability scenarios for Azure Virtual Machines offers the highest uptime SLA?"
     choices:
-    - content: "Single Azure VMs"
+    - content: "Single Azure Virtual Machines"
       isCorrect: false
-      explanation: "Incorrect. Two or more VMs in different Availability Zones in the same Azure region offers a 99.99% uptime SLA."
-    - content: "Two or more VMs in the same Availability Set"
+      explanation: "Incorrect. Two or more virtual machines in different availability zones in the same Azure region offer a 99.99% uptime SLA."
+    - content: "Two or more virtual machines in the same Availability Set"
       isCorrect: false
-      explanation: "Incorrect. Two or more VMs in different Availability Zones in the same Azure region offers a 99.99% uptime SLA."
-    - content: "Two or more VMs in different Availability Zones in the same Azure region"
+      explanation: "Incorrect. Two or more virtual machines in different availability zones in the same Azure region offer a 99.99% uptime SLA."
+    - content: "Two or more virtual machines in different availability zones in the same Azure region"
       isCorrect: true
-      explanation: "Correct. Two or more VMs in different Availability Zones in the same Azure region offers a 99.99% uptime SLA."
-  - content: "Can availability sets be deployed in Azure Availability Zones?"
+      explanation: "Correct. Two or more virtual machines in different availability zones in the same Azure region offer a 99.99% uptime SLA."
+  - content: "Can availability sets be deployed in Azure availability zones?"
     choices:
     - content: "No, they can't."
       isCorrect: true
-      explanation: "Correct. It's not possible to deploy Azure availability sets within an Azure Availability Zone. Choose one or the other as a deployment framework for virtual machines."
+      explanation: "Correct. It isn't possible to deploy Azure availability sets within an Azure availability zone. Choose one or the other as a deployment framework for virtual machines."
     - content: "Yes, they can."
       isCorrect: false
-      explanation: "Incorrect. It's not possible to deploy Azure availability sets within an Azure Availability Zone. Choose one or the other as a deployment framework for virtual machines."
+      explanation: "Incorrect. It isn't possible to deploy Azure availability sets within an Azure availability zone. Choose one or the other as a deployment framework for virtual machines."
     - content: "Yes, they have to be."
       isCorrect: false
-      explanation: "Incorrect. It's not possible to deploy Azure availability sets within an Azure Availability Zone. Choose one or the other as a deployment framework for virtual machines."
+      explanation: "Incorrect. It isn't possible to deploy Azure availability sets within an Azure availability zone. Choose one or the other as a deployment framework for virtual machines."

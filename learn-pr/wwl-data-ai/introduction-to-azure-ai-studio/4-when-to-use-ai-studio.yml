@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-azure-ai-studio.when-to-use-ai-studio
+title: When to use Azure AI Studio
+metadata:
+  title: When to use Azure AI Studio
+  description: Understand when to use Azure AI Studio.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 05/08/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-when-to-use-ai-studio.md)]

@@ -1,5 +1,3 @@
-
-
 Partitioning is an optimization technique that enables spark to maximize performance across the worker nodes. More performance gains can be achieved when filtering data in queries by eliminating unnecessary disk IO.
 
 ## Partition the output file

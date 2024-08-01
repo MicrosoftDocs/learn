@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn how to choose and build a content moderation system in the Azure AI Content Safety Studio.
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.date: 05/09/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

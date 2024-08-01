@@ -16,11 +16,11 @@ Based on these signals, you can then choose to block access. The alternative is 
 -	Perform multifactor authentication
 -	Use a specific device to connect
 
-Given the amount of data that could potentially be stored, Azure Synapse Analytics dedicated SQL pools supports Conditional Access to provide protection for your data. It does require that Azure Synapse Analytics is configured to support Azure Active Directory, and that if you chose multifactor authentication, that the tool you are using support it.
+Given the amount of data that could potentially be stored, Azure Synapse Analytics dedicated SQL pools supports Conditional Access to provide protection for your data. It does require that Azure Synapse Analytics is configured to support Microsoft Entra ID, and that if you chose multifactor authentication, that the tool you are using support it.
 
 To configure Conditional Access, you can perform the following steps:
 
-1. Sign in to the Azure portal, select **Azure Active Directory**, and then select **Conditional Access**.
+1. Sign in to the Azure portal, select **Microsoft Entra ID**, and then select **Conditional Access**.
  
     > [!div class="mx-imgBorder"]
     > ![Accessing Conditional Access in the Azure portal.](../media/conditional-access-azure-portal.png)
@@ -38,9 +38,9 @@ To configure Conditional Access, you can perform the following steps:
     > ![Selecting your service in a Conditional Access policy in the Azure portal.](../media/select-service-conditional-access-azure-portal.png)
 
 1. If you can't find **Azure SQL Database** listed in the following third screenshot, complete the following steps:
-    -	Connect to your database in Azure SQL Database by using SSMS with an Azure AD admin account.
+    -	Connect to your database in Azure SQL Database by using SSMS with a Microsoft Entra admin account.
     -	Execute CREATE USER [user@yourtenant.com] FROM EXTERNAL PROVIDER.
-    -	Sign into Azure AD and verify that Azure SQL Database, SQL Managed Instance, or Azure Synapse are listed in the applications in your Azure AD instance.
+    -	Sign into Microsoft Entra ID and verify that Azure SQL Database, SQL Managed Instance, or Azure Synapse are listed in the applications in your Microsoft Entra instance.
 
 1. Select **Access controls**, select **Grant**, and then check the policy you want to apply. For this example, we select **Require multifactor authentication**.
  

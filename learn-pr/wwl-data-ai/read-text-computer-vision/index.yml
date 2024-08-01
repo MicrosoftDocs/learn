@@ -1,19 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.read-text-computer-vision
 metadata:
-  title: Read text with the Computer Vision service
-  description: "Read text with the Computer Vision service"
-  ms.date: 01/27/2023
+  title: Fundamentals of optical character recognition
+  description: Use optical character recognition (OCR) to read text with Azure AI Vision.
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Read text with the Computer Vision service
+  ms.date: 03/05/2024
+  ms.service: azure
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+  ai-usage: human-only
+title: Fundamentals of optical character recognition
 summary: Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text.
-abstract: |
-  Learn how to read text in images with the Computer Vision service
-prerequisites: |
-  Ability to navigate the Azure portal
+abstract: Learn how to read text in images with Azure AI Vision.
+prerequisites: Ability to navigate the Azure portal
 iconUrl: /training/achievements/read-text-computer-vision.svg
 levels:
 - beginner
@@ -24,12 +25,13 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - natural-language-processing
 units:
 - learn.wwl.read-text-computer-vision.introduction
 - learn.wwl.read-text-computer-vision.get-started
+- learn.wwl.read-text-computer-vision.get-started-vision-studio
 - learn.wwl.read-text-computer-vision.exercise
 - learn.wwl.read-text-computer-vision.knowledge-check
 - learn.wwl.read-text-computer-vision.summary

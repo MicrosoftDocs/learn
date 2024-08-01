@@ -1,4 +1,4 @@
-Azure Files provides the capability to take share snapshots of file shares. File share snapshots capture a point-in-time, read-only copy of your data.
+Azure Files provides the capability to take share [snapshots of file shares](/azure/storage/files/storage-snapshots-files). File share snapshots capture a point-in-time, read-only copy of your data.
 
 :::image type="content" source="../media/file-share-snapshot-cbda2136.png" alt-text="Screenshot of a file share snapshot that shows the snapshot name and date it was created.":::
 
@@ -16,7 +16,7 @@ Let's review some characteristics of file share snapshots.
 
 - You can retrieve a share snapshot for an individual file. This level of support helps with restoring individual files rather than having to restore to the entire file share.
 
-- If you want to delete a share that has share snapshots, you must first delete all of its' snapshots.
+- If you delete a file share that has share snapshots, all of its snapshots will be deleted along with the share.
 
 ### Things to consider when using file share snapshots
 

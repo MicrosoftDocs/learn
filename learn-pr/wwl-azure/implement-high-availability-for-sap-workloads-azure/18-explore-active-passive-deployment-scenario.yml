@@ -3,12 +3,13 @@ uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-activ
 title: Explore the Active/Passive deployment scenario
 metadata:
   title: Explore the Active/Passive deployment scenario
-  description: "Explore the Active/Passive deployment scenario"
-  ms.date: 04/20/2023
+  description: "Explore the Active/Passive deployment scenario."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/18-explore-active-passive-deployment-scenario.md)]

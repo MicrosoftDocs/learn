@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-plan-deployment.identify-azure-on-premises-roles
+title: Identify Azure and on-premises roles to assign to users
+metadata:
+  title: Identify Azure and on-premises roles to assign to users
+  description: Identify Azure and on-premises roles to assign to users
+  ms.date: 11/29/2023
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-identify-azure-on-premises-roles.md)]
+
+quiz:
+
+  questions:
+  
+  - content: "What Azure role should be assigned to a team member reviewing Defender for IoT data in the Azure portal but not making any changes?"
+    choices:
+    - content: "Security Reader"
+      isCorrect: true
+      explanation: "The Security Reader role is the right level of access for a team member who only needs read-access to sensor data."
+    - content: "Security Admin"
+      isCorrect: false 
+      explanation: "Zero Trust least-priviledged access suggests that Security Admin permissions are too high for someone who needs only read access to the sensor data."
+    - content: "Admin"
+      isCorrect: false
+      explanation: "Zero Trust least-priviledged access suggests that Security Admin permissions are too high for someone who needs only read access to the sensor data."
+
+  - content: "Suppose you have a group of Azure users who are onboarding OT sensors. What Azure role should you give this group?"
+    choices:
+    - content: "Security Reader" 
+      isCorrect: false
+      explanation: "A Security Reader user presumably has read-only access to sensor data in Azure, which isn't enough to onboard OT sensors."
+    - content: "Security Admin"
+      isCorrect: true
+      explanation: "A Security Admin user has sensor onboarding permissions but still has permission limits."
+    - content: "Owner"
+      isCorrect: false
+      explanation: "An Owner user presumably has all permissions and can create users. Creating users exceeds the permissions needed by the onboarding users."

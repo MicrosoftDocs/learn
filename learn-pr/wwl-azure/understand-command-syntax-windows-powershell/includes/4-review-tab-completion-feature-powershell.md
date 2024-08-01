@@ -9,3 +9,4 @@ Tab completion enables you to enter commands much faster and makes your code les
 Tab completion also helps you discover cmdlet and parameter names. For example, if you know that you want a **Get** cmdlet that works on an Active Directory resource, you can enter the text **Get-AD** in the console and press the Tab key to review the available options. For parameters, just enter a dash (-) and you can press the Tab key multiple times to review all parameters for a cmdlet.
 
 Tab completion even works with wildcards. If you know you want a cmdlet that operates on services, but aren't sure which one you want, enter the text ***-service** in the console, and then press the Tab key to review all cmdlets that contain the text **-service** in their names.
+

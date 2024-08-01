@@ -3,14 +3,13 @@ uid: learn.wwl.translate-speech-speech-service.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 12/09/2022
+  description: Summary
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.date: 08/31/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/7-summary.md)]

@@ -5,10 +5,9 @@ metadata:
   title: Exercise – Feature scaling
   description: Exercise unit about feature scaling in machine learning
   ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: s-polly
+  ms.author: scottpolly
+  ms.topic: unit
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/5-3-exercise-feature-normalization.ipynb

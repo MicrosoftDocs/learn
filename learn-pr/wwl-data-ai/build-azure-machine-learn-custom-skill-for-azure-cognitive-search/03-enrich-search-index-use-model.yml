@@ -3,12 +3,13 @@ uid: learn.wwl.build-azure-machine-learn-custom-skill-for-azure-cognitive-search
 title: Enrich a search index using an Azure Machine Learning model
 metadata:
   title: Enrich a search index using an Azure Machine Learning model
-  description: "Enrich a search index using an Azure Machine Learning model"
-  ms.date: 11/15/2022
+  description: Enrich a search index using an Azure Machine Learning model.
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 09/27/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

@@ -4,12 +4,11 @@ title: Describe SDN on Azure Stack HCI
 metadata:
   unitType: learning-content
   title: Describe SDN on Azure Stack HCI
-  description: This unit describes SDN on Azure Stack HCI.
-  ms.date: 11/23/2021
-  author: LBN-commits
-  ms.author: v-lanai
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: This unit describes Software Defined Networking (SDN) on Azure Stack HCI.
+  ms.date: 07/12/2024
+  author: JasonGerend
+  ms.author: jgerend
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-describe-sdn-on-azure-stack-hci.md)]

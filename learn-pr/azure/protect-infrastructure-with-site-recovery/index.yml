@@ -3,18 +3,19 @@ uid: learn.protect-infrastructure-with-azure-site-recovery
 metadata:
   title: Protect your Azure infrastructure with Azure Site Recovery
   description: Provide disaster recovery for your Azure infrastructure by customizing replication, failover, and failback of Azure virtual machines with Azure Site Recovery.
-  ms.date: 03/01/2023
+  manager: jsuri
+  ms.date: 12/07/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: site-recovery
 title: Protect your Azure infrastructure with Azure Site Recovery
-summary: Provide disaster recovery for your Azure infrastructure by customizing replication, failover, and failback of Azure virtual machines with Azure Site Recovery.
+summary: In this module, you'll learn to provide disaster recovery for your Azure infrastructure by customizing replication, failover, and failback of Azure virtual machines with Azure Site Recovery.
 abstract: | 
   In this module, you will:
-  - Protect Azure virtual machines with Azure Site Recovery
-  - Run a disaster recovery drill to validate protection
-  - Failover and failback your virtual machines
+  - Protect Azure virtual machines with Azure Site Recovery.
+  - Run a disaster recovery drill to validate protection.
+  - Failover and failback your virtual machines.
 prerequisites: | 
   - Basic understanding of Azure virtual machines
   - Basic understanding of Azure virtual networking

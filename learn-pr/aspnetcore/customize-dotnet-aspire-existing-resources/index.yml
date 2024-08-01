@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.customize-dotnet-aspire-existing-resources
+metadata:
+  title: Customize a .NET Aspire app to use existing Azure resources
+  description: In this module, you'll learn how to move backing services for your Azure-hosted .NET Aspire app from containers into native Azure services.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: module
+  ms.service: dotnet-aspire
+  ms.custom:
+  - team=cloud_advocates
+title: Customize a .NET Aspire app to use existing Azure resources
+summary: Learn how to increase the scalability and manageability of a deployed .NET Aspire application by migrating resources from within containers to Azure services.
+abstract: |
+  By the end of this module, you'll be able to:
+
+  - Migrate database, cache, and other resources from containers to cloud services.
+  - Configure connection strings for deployment by editing .NET Aspire manifest files.
+  - Send telemetry data to Azure Application Insights.
+  - Deploy resources to Azure by creating Bicep files with the Azure Developer CLI.
+ratingEnabled: true
+iconUrl: /training/achievements/dotnet-aspiresvg
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+products:
+- dotnet
+- aspnet-core
+- dotnet-aspire
+- vs
+- vs-code
+subjects:
+- custom-app-development
+units:
+- learn.customize-dotnet-aspire-existing-resources.introduction
+- learn.customize-dotnet-aspire-existing-resources.replace-container-resources
+- learn.customize-dotnet-aspire-existing-resources.customize-connection-strings
+- learn.customize-dotnet-aspire-existing-resources.use-application-insights
+- learn.customize-dotnet-aspire-existing-resources.create-azure-resources-bicep
+- learn.customize-dotnet-aspire-existing-resources.exercise-use-azure-resources
+- learn.customize-dotnet-aspire-existing-resources.knowledge-check
+- learn.customize-dotnet-aspire-existing-resources.summary
+badge:
+  uid: learn.customize-dotnet-aspire-existing-resources.badge

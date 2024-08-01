@@ -6,8 +6,8 @@ metadata:
   ms.date: 08/05/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: synapse-analytics
 title: Optimize data warehouse query performance in Azure Synapse Analytics
 summary: Learn the techniques that you can use to optimize query performance within Azure Synapse Analytics.
 abstract: |
@@ -29,7 +29,7 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.introduction
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.understand-performance-issues-related-to-tables

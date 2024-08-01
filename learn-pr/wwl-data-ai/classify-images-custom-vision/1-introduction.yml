@@ -3,14 +3,13 @@ uid: learn.wwl.classify-images-custom-vision.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction"
-  ms.date: 01/27/2023
-  author: benjiang
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  description: Introduction
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 08/22/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

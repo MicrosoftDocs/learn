@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-openai.exercise-openai
+title: Exercise - Explore Azure OpenAI Service
+metadata:
+  title: Exercise - Explore Azure OpenAI Service
+  description: Hands-on exercise exploring Azure OpenAI Service in the Azure OpenAI Studio.
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+durationInMinutes: 25
+content: |
+  [!include[](includes/8a-exercise-openai.md)]

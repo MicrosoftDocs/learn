@@ -5,11 +5,12 @@ metadata:
   unitType: exercise
   title: Exercise - Seed a storage account and database
   description: Update a Bicep deployment workflow to connect to a database, deploy a DACPAC file and sample data, and upload blobs to a storage account.
-  ms.date: 12/19/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/18/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 14
 content: |

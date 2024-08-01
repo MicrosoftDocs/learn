@@ -6,7 +6,7 @@ To solve this problem, you decide to create an expression by using [ARM template
 
 ARM template functions add flexibility to your ARM template by dynamically getting values during deployment.
 
-To understand functions, you first need to understand expressions. Expressions are values that are evaluated when the template is deployed. They start and end with brackets, [ and ], and can return a string, integer, Boolean, array, or object.
+To understand functions, you first need to understand expressions. Expressions are values that are evaluated when the template is deployed. They start and end with brackets `[]`, and can return a string, integer, Boolean, array, or object.
 
 In the previous module in this learning path, you already worked with expressions in your Resource Manager template. For example, you used:
 
@@ -25,16 +25,16 @@ The *expression* is the value of the ```defaultValue:``` attribute. Notice that 
 
 There are a few rules to follow when you work with functions:
 
-- Use single quotation marks when you pass a string value into a function. Here's an example: ```concat('storage',uniqueString(resourceGroup().id)))```. The function here is ```concat```, and the string you're passing in to the function is ```'storage'```.
+- Use single quotation marks when you pass a string value into a function. Here's an example: `concat('storage',uniqueString(resourceGroup().id))`. The function is `concat`, and the string you're passing in to the function is `'storage'`.
 
 - To work with literal values in template functions, you need *escape characters*. The escape character varies depending on what you're escaping.
 
 - To set a property to null, you can use ```null``` or ```[json('null')]```. The JSON function returns an empty object when you provide null as the parameter.
 
-   ```json
-   "stringValue": null,
-   "objectValue": "[json('null')]"
-   ```
+  ```json
+  "stringValue": null,
+  "objectValue": "[json('null')]"
+  ```
 
 Resource Manager provides several [ARM template functions](/azure/azure-resource-manager/templates/template-functions?azure-portal=true) for you. The functions are listed in groups based on their type:
 
@@ -58,9 +58,9 @@ You can use several template functions together to create your own expressions. 
 
 Let's walk through this expression.
 
-Starting with [concat](/azure/azure-resource-manager/templates/template-functions-string), this function takes any number of arguments, and can accept either strings or arrays for the parameters. Here, you use a literal string `"Storage"` and concatenate it with the result of another function, [uniqueString](/azure/azure-resource-manager/templates/template-functions-string). The `uniqueString` function creates a deterministic hash string based on the parameters. In this expression, you create a hash of the current resource group ID by using another function, [resourceGroup](/azure/azure-resource-manager/templates/template-functions-resource).
+Beginning with [concat](/azure/azure-resource-manager/templates/template-functions-string), this function takes any number of arguments, and can accept either strings or arrays for the parameters. Here, you use a literal string `"Storage"` and concatenate it with the result of another function, [uniqueString](/azure/azure-resource-manager/templates/template-functions-string). The `uniqueString` function creates a deterministic hash string based on the parameters. In this expression, you create a hash of the current resource group ID by using another function, [resourceGroup](/azure/azure-resource-manager/templates/template-functions-resource).
 
-Here's the output from what we've discussed so far:
+Here's the output from what we discussed so far:
 
 :::image type="content" source="../media/2-storage-account-name-function.png" alt-text="Picture of a string created by concatenating the word Storage with a 13-character hash that contains both uppercase and lowercase letters." border="false":::
 
@@ -68,4 +68,4 @@ To comply with the naming conventions, you need this string to be all lowercase.
 
 Here's what the resulting string looks like:
 
-:::image type="content" source="../media/2-storage-account-name-function-lower.png" alt-text="Picture of a string created by concatenating the word Storage with a 13-character hash and then converting all letters to lowercase." border="false":::
+:::image type="content" source="../media/2-storage-account-name-function-lower.png" alt-text="Picture of a string created by concatenating the word Storage with a 13-character hash, and then converting all letters to lowercase." border="false":::

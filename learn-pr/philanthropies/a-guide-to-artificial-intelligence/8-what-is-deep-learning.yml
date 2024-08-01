@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.a-guide-to-artifical-intelligence.what-is-deep-learning
+title: What is deep learning?
+metadata:
+  title: What is deep learning?
+  description: This module explores fundamental concepts in artificial intelligence (AI) and machine learning.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 01/23/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-what-is-deep-learning.md)]

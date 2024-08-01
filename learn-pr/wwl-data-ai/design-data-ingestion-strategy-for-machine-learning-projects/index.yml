@@ -2,12 +2,14 @@
 uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects
 metadata:
   title: Design a data ingestion strategy for machine learning projects
-  description: "Design a data ingestion strategy for machine learning projects"
-  ms.date: 11/11/2022
+  description: Learn how to design a data ingestion solution for training data used in machine learning projects.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  ms.service: azure-machine-learning
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Design a data ingestion strategy for machine learning projects
 summary: Learn how to design a data ingestion solution for training data used in machine learning projects.
 abstract: |
@@ -15,8 +17,9 @@ abstract: |
   - Identify your data source and format
   - Choose how to serve data to machine learning workflows
   - Design a data ingestion solution
-prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+prerequisites: |
+  None
+iconUrl: /training/achievements/design-data-ingestion-strategy-for-machine-learning-projects.svg
 levels:
 - beginner
 roles:

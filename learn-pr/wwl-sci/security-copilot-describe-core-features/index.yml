@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.security-copilot-describe-core-features
+metadata:
+  title: Describe the core features of Microsoft Copilot for Security
+  description: Describe the core features of Microsoft Copilot for Security.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 02/22/2024
+  ms.service: security-copilot
+  ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+title: Describe the core features of Microsoft Copilot for Security
+summary: |
+  Microsoft Copilot for Security has a rich set of features. Learn about available plugins, promptbooks, the ways you can export and share information from Copilot, and much more.
+abstract: |
+  By the end of this module, you're able to:
+  - Describe the features available in the standalone Copilot experience.
+  - Describe the plugins available in Copilot.
+  - Describe custom promptbooks.
+  - Describe knowledge base connections.
+prerequisites: |
+  - Working knowledge of security operations and incident response
+  - Working knowledge of Microsoft security products and services
+iconUrl: /learn/achievements/security-copilot-describe-core-features.svg
+hidden: false
+levels: # see level taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+  - beginner
+roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - security-operations-analyst
+  - security-engineer
+  - business-owner
+products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - defender-for-threat-intelligence
+  - mdeasm
+  - microsoft-sentinel
+  - intune
+  - entra
+  - microsoft-purview
+  - microsoft-defender
+  - ms-copilot
+subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - security
+units:
+- learn.security-copilot-describe-core-features.introduction
+- learn.security-copilot-describe-core-features.describe-standalone-experience
+- learn.security-copilot-describe-core-features.describe-session-features
+- learn.security-copilot-describe-core-features.describe-microsoft-plugins
+- learn.security-copilot-describe-core-features.describe-non-microsoft-plugins
+- learn.security-copilot-describe-core-features.describe-custom-promptbooks
+- learn.security-copilot-describe-core-features.describe-knowledge-base-connections
+- learn.security-copilot-describe-core-features.knowledge-check
+- learn.security-copilot-describe-core-features.summary
+badge:
+  uid: wwl-sci.security-copilot-core-features.badge

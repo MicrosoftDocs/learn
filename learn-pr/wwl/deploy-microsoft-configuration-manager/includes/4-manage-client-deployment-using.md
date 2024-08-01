@@ -1,4 +1,5 @@
 
+
 As we've seen from MDT, you can use Configuration Manager to create and deploy Windows images to devices. While many of the concepts are similar, Configuration Manager uses its own interface to manage the import and creation of boot images and the OS images. The deployment is handled through a combination of task sequences and target collections for which objects reside.
 
 #### Task Sequences
@@ -13,7 +14,7 @@ Configuration Manager task sequences work in a similar way to MDT task sequences
 
 #### Deployment Collections
 
-After you've created the task sequence, you can target it at a deployment collection to enable successful delivery. This is a safety mechanism within Configuration Manager to prevent unintended delivery of an OS. You also have the option of targeting an in-built collection called **unknown computers**, which offers the flexibility of presenting any new device acquired with an ability to launch a created task sequence.
+Once the task sequence has been created, you have the option to direct it towards a deployment collection, ensuring its successful delivery. This serves as a safeguard in Configuration Manager, preventing the unintentional distribution of an operating system (OS) to unintended targets. You also have the option of targeting an in-built collection called **unknown computers**, which offers the flexibility of presenting any new device acquired with an ability to launch a created task sequence.
 
 Collections help you organize resources into manageable units. Configuration Manager has built-in collections for common operations. You can also create custom collections to match your client management needs, and to perform operations on multiple resources at one time. Built-in and custom collections appear in the **User Collections** and **Device Collections** nodes in the **Assets and Compliance** workspace in the Configuration Manager console. Collections that you have recently viewed appear in the **Users** node and in the **Devices** node in the **Assets and Compliance** workspace.
 
@@ -35,7 +36,7 @@ By default, Configuration Manager includes the following built-in collections. T
 
 ### Troubleshooting a Windows Deployment using Configuration Manager
 
-When delivering Windows with Configuration Manager through task sequences, you may be asked to provide either statistical analysis on success rates or require an ability to do some troubleshooting. Given this is such a complex and technical process, it's inevitable something may go wrong. The following sections describe some additional troubleshooting options.
+When delivering Windows with Configuration Manager through task sequences, you may be asked to provide either statistical analysis on success rates or require an ability to do some troubleshooting. Given this is such a complex and technical process, it's inevitable something may go wrong. The following sections describe some other troubleshooting options.
 
 #### Report
 
@@ -43,10 +44,10 @@ With a reporting service point configured in Configuration Manager, you can acce
 
 #### Log Files
 
-Configuration Manager produces numerous log files on both the client and server side to aid with troubleshooting. From a client perspective during the OS deployment phase, these move several times depending on the Windows Phase, but most of the time these will be located at C:\\Windows\\CCM\\Logs. Within this directory are several log files for helping to understand any issues that the client currently has. Some examples include the following:
+Configuration Manager produces numerous log files on both the client and server side to aid with troubleshooting. From a client perspective during the OS deployment phase, these move several times depending on the Windows Phase, but most of the time these will be located at C:\\Windows\\CCM\\Logs. Within this directory, are several log files for helping to understand any issues that the client currently has. Some examples include the following:
 
  -  **Ccmsetup.log**. Responsible for the client setup, upgrade, and removal.
- -  **SMSTS.log**. Responsible for a lot of the initial logging during an OS deployment prior to Windows and the Configuration Manager client being fully installed.
+ -  **SMSTS.log**. Responsible for much of the initial logging during an OS deployment prior to Windows and the Configuration Manager client being fully installed.
  -  **AppEnforce.log**. Responsible for showcasing application installation information.
  -  **Execmgr.log**. Responsible for showcasing package installation information and script execution.
 

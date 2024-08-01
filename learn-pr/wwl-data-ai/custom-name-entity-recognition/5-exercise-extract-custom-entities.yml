@@ -3,14 +3,16 @@ uid: learn.wwl.custom-name-entity-recognition.exercise-extract-custom-entities
 title: Exercise - Extract custom entities
 metadata:
   title: Exercise - Extract custom entities
-  description: "Exercise - Extract custom entities"
-  ms.date: 09/01/2022
+  description: Exercise - Extract custom entities
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 2/21/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
-labModal: false
-durationInMinutes: 45
+labModal: true
+labId: 152402
+durationInMinutes: 35
 content: |
   [!include[](includes/5-exercise-extract-custom-entities.md)]

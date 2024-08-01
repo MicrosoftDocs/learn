@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-modernize-explore-azure-compute
+metadata:
+  title: Modernize and explore Azure for SAP compute
+  description: 'This module explores the design of scalable, performant, and resilient compute components for SAP deployments in Azure. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.service: sap-on-azure
+title: Modernize and explore Azure for SAP compute
+summary: This module explores the planning and design of scalable, performant, and resilient compute components for SAP certified deployments in Microsoft Azure.
+abstract: |
+  After completing this module, you will be able to:
+  - Plan for implementing SAP solutions.
+  - Explore Azure virtual machines.
+  - Examine constrained vCPU capable virtual machine sizes.
+  - Examine Azure virtual machine scaling considerations.
+  - Explore data flows
+prerequisites: |
+  Before taking this training, you should complete:
+  *   Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam.
+  *   SAP HANA or NetWeaver training.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.migrate-modernize-explore-azure-compute.introduction
+- learn.wwl.migrate-modernize-explore-azure-compute.plan-implement-sap-solutions
+- learn.wwl.migrate-modernize-explore-azure-compute.explore-azure-virtual-machines
+- learn.wwl.migrate-modernize-explore-azure-compute.examine-constrained-vcpu-capable-virtual-machine-sizes
+- learn.wwl.migrate-modernize-explore-azure-compute.examine-azure-virtual-machine-scale-considerations
+- learn.wwl.migrate-modernize-explore-azure-compute.explore-data-flows
+- learn.wwl.migrate-modernize-explore-azure-compute.knowledge-check
+- learn.wwl.migrate-modernize-explore-azure-compute.summary
+badge:
+  uid: learn.wwl.migrate-modernize-explore-azure-compute.badge

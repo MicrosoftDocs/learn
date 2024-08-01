@@ -1,4 +1,4 @@
-So far we've considered Delta Lake table instances created from dataframes and modified through the Delta Lake API. You can also define Delta Lake tables as catalog tables in the Hive metastore for your Spark cluster, and work with them using SQL.
+So far we've considered Delta Lake table instances created from dataframes and modified through the Delta Lake API. You can also define Delta Lake tables as catalog tables in the metastore and work with them using SQL.
 
 ## *External* vs *managed* tables
 
@@ -93,5 +93,4 @@ FROM ManagedSalesOrders
 ```
 
 > [!TIP]
-> For more information about working with Delta Lake, see [Table batch reads and writes
-](https://docs.delta.io/latest/delta-batch.html) in the Delta Lake documentation.
+> For more information about working with Delta Lake, see [Table batch reads and writes](https://docs.delta.io/latest/delta-batch.html) in the Delta Lake documentation.

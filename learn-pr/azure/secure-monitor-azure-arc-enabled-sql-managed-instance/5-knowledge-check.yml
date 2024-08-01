@@ -5,19 +5,18 @@ metadata:
   title: Knowledge check
   description: Demonstrate your knowledge of Azure Arc-enabled SQL Managed Instance.
   ms.date: 12/23/2022
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: MikeRayMSFT
+  ms.author: mikeray
+  ms.topic: unit
 durationInMinutes: 3
 content: |
 quiz:
   questions:
   - content: 'Which authentication method does Azure Arc-enabled SQL Managed Instance support?'
     choices:
-    - content: 'Azure Active Directory'
+    - content: 'Microsoft Entra ID'
       isCorrect: false
-      explanation: 'Incorrect. Azure Arc-enabled SQL Managed Instance does not currently support Azure Active Directory.'
+      explanation: 'Incorrect. Azure Arc-enabled SQL Managed Instance does not currently support Microsoft Entra ID.'
     - content: 'Active Directory'
       isCorrect: true
       explanation: 'Correct. Azure Arc-enabled SQL Managed Instance supports using the integrated Active Directory authentication method .'

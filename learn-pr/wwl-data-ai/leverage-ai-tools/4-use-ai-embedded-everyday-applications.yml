@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.leverage-ai-tools.use-ai-embedded-everyday-applications
+title: Use AI embedded in everyday applications
+metadata:
+  title: Use AI embedded in everyday applications
+  description: Use AI embedded in everyday applications
+  author: Adriamen
+  ms.author: rcaper
+  ms.date: 04/08/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-use-ai-embedded-everyday-applications.md)]

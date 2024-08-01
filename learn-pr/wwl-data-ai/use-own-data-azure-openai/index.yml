@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.use-own-data-azure-openai
+metadata:
+  title: Implement Retrieval Augmented Generation (RAG) with Azure OpenAI Service
+  description: Learn how to use your own data with the Azure OpenAI Service.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 2/21/2024
+  ms.service: azure-ai-openai
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+title: Implement Retrieval Augmented Generation (RAG) with Azure OpenAI Service
+summary: "Azure OpenAI on your data allows developers to implement RAG with supported AI chat models to reference specific sources of data to ground the response."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe the capabilities of Azure OpenAI on your data
+    - Configure Azure OpenAI to use your own data
+    - Use Azure OpenAI API to generate responses based on your own data
+prerequisites: |
+  - Familiarity with Azure and the Azure portal.
+  - An understanding of generative AI. You can learn more with [Introduction to Azure OpenAI Service](/training/modules/explore-azure-openai/).
+  - Before starting this module, we recommend you complete the previous modules in the [Develop AI solutions with Azure OpenAI](/training/paths/develop-ai-solutions-azure-openai/) learning path.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products: 
+  - azure-openai
+  - azure
+subjects: 
+  - cloud-computing
+  - artificial-intelligence
+units:
+- learn.wwl.use-own-data-azure-openai.introduction
+- learn.wwl.use-own-data-azure-openai.understand-use-own-data
+- learn.wwl.use-own-data-azure-openai.adding-own-data-source
+- learn.wwl.use-own-data-azure-openai.chat-model-own-data
+- learn.wwl.use-own-data-azure-openai.exercise
+- learn.wwl.use-own-data-azure-openai.knowledge-check
+- learn.wwl.use-own-data-azure-openai.summary
+badge:
+  uid: |
+    learn.wwl.use-own-data-azure-openai.badge

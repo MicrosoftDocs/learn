@@ -3,12 +3,13 @@ uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions.explore-solution-
 title: Explore the solution architecture
 metadata:
   title: Explore the solution architecture
-  description: "Explore the solution architecture"
-  ms.date: 09/26/2022
+  description: Explore the solution architecture
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

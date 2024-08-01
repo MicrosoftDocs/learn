@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-create-ai-travel-agent
+metadata:
+  title: Guided project - Create an AI travel agent
+  description: Develop a proof of concept AI Travel assistant chatbot using the Semantic Kernel SDK.
+  author: wwlpublish
+  ms.author: buzahid
+  ms.date: 06/11/2024
+  ms.service: azure-ai-services
+  ai-usage: human-only
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+title: Guided project - Create an AI travel agent
+summary: This module guides you through the steps required to develop a proof-of-concept AI Travel assistant with the Semantic Kernel SDK. By the end of this module, you complete a small chatbot application.
+abstract: |
+  -   Create plugins for the Semantic Kernel.
+
+  -   Create prompts to elicit the best responses from the large language model (LLM).
+
+  -   Manipulate LLM responses to guide the execution of code.
+
+  -   Automatically invoke the correct plugins to complete tasks.
+prerequisites: |
+  -   Experience programming in C#.
+
+  -   Visual Studio Code IDE installed.
+
+  -   Familiarity with Azure and the Azure portal.
+
+  -   Access to Azure OpenAI services.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- dotnet
+- vs-code
+- azure-openai
+units:
+- learn.wwl.guided-project-create-ai-travel-agent.introduction
+- learn.wwl.guided-project-create-ai-travel-agent.prepare
+- learn.wwl.guided-project-create-ai-travel-agent.exercise-create-currency-converter
+- learn.wwl.guided-project-create-ai-travel-agent.exercise-route-user-intent
+- learn.wwl.guided-project-create-ai-travel-agent.exercise-provide-context-cues
+- learn.wwl.guided-project-create-ai-travel-agent.knowledge-check
+- learn.wwl.guided-project-create-ai-travel-agent.summary
+badge:
+  uid: learn.wwl.guided-project-create-ai-travel-agent.badge

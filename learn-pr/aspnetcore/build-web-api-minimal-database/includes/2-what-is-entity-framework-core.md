@@ -1,4 +1,4 @@
-Most non-trivial web applications will need to reliably run operations on data, such as create, read, update, and delete (CRUD). They'll also need to persist any changes made by these operations between application restarts. Although there are various options for persisting data in .NET applications, Entity Framework (EF) Core is a user-friendly solution and a great fit for many .NET applications.
+Most nontrivial web applications need to reliably run operations on data, such as create, read, update, and delete (CRUD). They also need to persist any changes made by these operations between application restarts. Although there are various options for persisting data in .NET applications, Entity Framework (EF) Core is a user-friendly solution and a great fit for many .NET applications.
 
 ## Understand EF Core
 
@@ -17,7 +17,7 @@ With EF Core, data access is performed by using a model. A model is made up of e
 
 ## The entity class
 
-In this scenario, you're implementing a pizza store management API, so you'll use a `Pizza` entity class. The pizzas in your store will have a name and a description. They'll also need an ID to allow the API and database to identify them. The `Pizza` entity class you'll use in your application identifies pizzas:
+In this scenario, you're implementing a pizza store management API, so you use a `Pizza` entity class. The pizzas in your store have a name and a description. They also need an ID to allow the API and database to identify them. The `Pizza` entity class that you use in your application identifies pizzas:
 
 ```csharp
 namespace PizzaStore.Models 
@@ -33,7 +33,7 @@ namespace PizzaStore.Models
 
 ### The context class
 
-This application has only one entity class, but most applications will have multiple entity classes. The context class is responsible for querying and saving data to your entity classes, and for creating and managing the database connection.
+This application has only one entity class, but most applications have multiple entity classes. The context class is responsible for querying and saving data to your entity classes, and for creating and managing the database connection.
 
 ## Perform CRUD operations with EF Core
 
@@ -75,14 +75,14 @@ Similarly, you can update an existing pizza:
 
 ```csharp
 int id = 1;
-var updatepizza = new Pizza { Name = "Pineapple", Description = "Ummmm?" })
+var updatepizza = new Pizza { Name = "Pineapple", Description = "Ummmm?" };
 var pizza = await db.pizzas.FindAsync(id);
 if (pizza is null)
 {
     //Handle error
 }
-pizza.Item = updatepizza.Item;
-pizza.IsComplete = updatepizza.IsComplete;
+pizza.Desription = updatepizza.Description;
+pizza.Name = updatepizza.Name;
 await db.SaveChangesAsync();
 ```
 

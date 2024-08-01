@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-app-performance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/18/2024
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following availability tests is recommended for authentication tests?"
+    choices:
+    - content: "URL ping"
+      isCorrect: false
+      explanation: "Incorrect. The URL ping test is used to test endpoint availability."
+    - content: "Standard"
+      isCorrect: false
+      explanation: "Incorrect. This single request test is similar to the URL ping test, but it includes additional information."
+    - content: "Custom TrackAvailability"
+      isCorrect: true
+      explanation: "Correct. Custom TrackAvailability test is the long term supported solution for multi request or authentication test scenarios."
+  - content: "Which of the following metric collection types provides near real-time querying and alerting on dimensions of metrics, and more responsive dashboards?"
+    choices:
+    - content: "Log-based"
+      isCorrect: false
+      explanation: "Incorrect. Log-based metrics are aggregated at query time and require more processing to produce results."
+    - content: "Pre-aggregated"
+      isCorrect: true
+      explanation: "Correct. Pre-aggregated metrics are stored as a time series and only with key dimensions, which enable near real-time alerting on dimensions of metrics, more responsive dashboards."
+    - content: "Azure Service Bus"
+      isCorrect: false
+      explanation: "Incorrect. Azure Service Bus is message queueing service."

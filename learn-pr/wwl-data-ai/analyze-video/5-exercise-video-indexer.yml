@@ -3,14 +3,15 @@ uid: learn.wwl.analyze-video.exercise-video-indexer
 title: Exercise - Analyze video
 metadata:
   title: Exercise - Analyze video
-  description: "Exercise - Analyze video"
-  ms.date: 07/14/2022
+  description: Exercise - Analyze video
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 12/01/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
-labId: 100991
+labId: 152407
 labModal: true
 durationInMinutes: 30
 content: |

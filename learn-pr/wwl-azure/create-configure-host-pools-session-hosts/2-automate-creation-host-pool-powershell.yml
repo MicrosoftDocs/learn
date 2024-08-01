@@ -4,13 +4,11 @@ title: Automate creation of an Azure Virtual Desktop host pool using PowerShell
 metadata:
   title: Automate creation of an Azure Virtual Desktop host pool using PowerShell
   description: "Automate creation of an Azure Virtual Desktop host pool using PowerShell"
-  ms.date: 08/01/2022
+  ms.date: 09/25/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom: N/A, devx-track-azurepowershell
 durationInMinutes: 8
 content: |
   [!include[](includes/2-automate-creation-host-pool-powershell.md)]

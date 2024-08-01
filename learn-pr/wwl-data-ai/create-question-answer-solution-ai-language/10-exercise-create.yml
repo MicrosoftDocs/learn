@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-question-answer-solution-ai-language.exercise-create
+title: Exercise - Create a question answering solution
+metadata:
+  title: Exercise - Create a question answering solution
+  description: Exercise - Create a question answering solution
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 08/31/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 20
+labId: 152405
+labModal: true
+content: |
+  [!include[](includes/10-exercise-create.md)]

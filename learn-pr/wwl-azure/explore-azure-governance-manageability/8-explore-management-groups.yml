@@ -3,12 +3,13 @@ uid: learn.wwl.explore-azure-governance-manageability.explore-management-groups
 title: Explore management groups
 metadata:
   title: Explore management groups
-  description: "Explore management groups"
-  ms.date: 04/21/2023
+  description: "Use management groups to efficiently manage access, policies, and compliance for multiple subscriptions."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/8-explore-management-groups.md)]

@@ -1,0 +1,93 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-api-center.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check what you've learned about Azure API Center in this Knowledge Check."
+  ms.date: 5/3/2024
+  author: juliamuiruri4
+  ms.author: juliamuiruri
+  ms.topic: unit
+durationInMinutes: 1
+###########################################################################
+###
+### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+### Question content requirements:
+###  - Write 5 questions
+###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
+###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
+###      Example: "What differentiates an action from a control action in a Logic App?"
+###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
+###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
+###      Example: "A financial company is building a system to let brokers trade financial instruments. The system must monitor market conditions, detect changes, and execute trades. It will need to handle a large volume of transactions quickly. The faster it completes trades, the more of an advantage the company will have over its competitors. Which requirement of this system would be difficult for Azure Logic Apps to satisfy?"
+###
+###########################################################################
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is API Center?"
+    choices:
+    - content: "A service to manage Azure's physical data centers"
+      isCorrect: false
+      explanation: "Incorrect. API Center is an Azure service that focuses on API management and governance"
+    - content: "A new Azure service for cloud security and compliance"
+      isCorrect: false
+      explanation: "Incorrect. API Center is an Azure service that focuses on API management and governance"
+    - content: "A complementary service to Azure API Management for organizing and managing APIs"
+      isCorrect: true
+      explanation: "Azure API Center is a new service on Azure that offers a structured and centralized repository of all your organizational APIs, enabling unified tracking, discovery, reuse, and governance."
+  - content: "How does Azure API Center facilitate the management of APIs across different lifecycle stages?"
+    choices:
+    - content: "By providing a centralized repository for all API versions and related information."
+      isCorrect: true
+      explanation: "Azure API Center helps manage APIs by providing a centralized location where all API versions and related information, such as specification files and metadata, can be stored and accessed, facilitating better organization and governance across different lifecycle stages."
+    - content: "By automating the deployment of APIs to different environments."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "By offering a marketplace for buying and selling APIs."
+      isCorrect: false
+      explanation: "Incorrect"
+  - content: "What feature of Azure API Center ensures that APIs conform to organizational style rules?"
+    choices:
+    - content: "API linting using spectral JSON/YAML linter."
+      isCorrect: true
+      explanation: "API linting in Azure API Center is implemented using the spectral JSON/YAML linter, which helps ensure that registered APIs adhere to the organization's style rules, promoting consistency and compliance."
+    - content: "Automated API testing tools."
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "Built-in API design templates."
+      isCorrect: false
+      explanation: "Incorrect"
+  - content: "A company wants to enable multiple teams to work independently on their APIs while maintaining centralized governance. Which Azure API Center feature would be most appropriate for this use case?"
+    choices:
+    - content: "API versioning and lifecycle management."
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "Integration with external API management solutions."
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "Workspaces with role-based access control."
+      isCorrect: true
+      explanation: "Workspaces with role-based access control in Azure API Center allow multiple teams to work independently while still adhering to centralized governance, making it an appropriate feature for this use case."
+  - content: "In the context of API governance, how does Azure API Center support the tracking of APIs using metadata?"
+    choices:
+    - content: " By providing a detailed API analytics functionality."
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "By simplifying the tracking of APIs using metadata like versions, owners, lifecycle, and compliance reviews."
+      isCorrect: true
+      explanation: "Azure API Center simplifies the tracking of APIs using metadata such as versions, owners, lifecycle, and processes like compliance reviews, thereby supporting effective API governance at scale. 2"
+    - content: "By allowing the association of APIs with specific projects and teams."
+      isCorrect: false
+      explanation: "Incorrect"

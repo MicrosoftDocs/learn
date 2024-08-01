@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.leverage-ai-tools.discover-business-value-applying-devops
+title: Discover the business value of applying DevOps practices to machine learning
+metadata:
+  title: Discover the business value of applying DevOps practices to machine learning
+  description: Discover the business value of applying DevOps practices to machine learning
+  author: Adriamen
+  ms.author: rcaper
+  ms.date: 04/08/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-discover-business-value-applying-devops.md)]

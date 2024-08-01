@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-govern.assess-risks
+title: Assess cloud governance risks
+metadata:
+  title: Assess cloud governance risks
+  description: Learn how to analyze corporate policies and risks to incorporate actionable governance.
+  ms.date: 07/15/2024
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-assess-risks.md)]
+

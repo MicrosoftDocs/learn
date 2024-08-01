@@ -4,13 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/12/2022
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/13-knowledge-check.md)]
@@ -27,7 +24,7 @@ quiz:
       explanation: "Scale sets let you automatically scale and load balance your VMs, but a scale set doesn’t affect updates."
     - content: "Update sets"
       isCorrect: false
-      explanation: "Availability sets stagger VM updates based on their update and fault domains."
+      explanation: "Azure has Availability Sets and Update Domains, but not update sets."
   - content: "Which Azure service allows users to use a cloud hosted version of Windows from any location and connect from most modern browsers?"
     choices:
     - content: "Azure Virtual Desktop"
@@ -35,7 +32,18 @@ quiz:
       explanation: "Azure Virtual Desktop provides access to a cloud-hosted version of Windows, and it works with most modern browsers."
     - content: "Azure Virtual Machines"
       isCorrect: false
-      explanation: "Azure Virtual Machines can provide the ability to configure a Windows environment, but it doesn’t provide access via most modern browsers by default."
+      explanation: "Azure Virtual Machines allows you to configure a Windows environment, but it doesn’t provide access via most modern browsers by default."
     - content: "Azure Container Instances"
       isCorrect: false
       explanation: "Azure Container Instances lets you provision containers in the cloud, but doesn’t provide access to a cloud-hosted version of windows available from most modern browsers."
+  - content: "If you need connections between virtual networks, point-to-site connections, multisite connections, or coexistence with an Azure ExpressRoute gateway, which type of VPN gateway should you use?"
+    choices:
+    - content: "Policy-based VPN gateway"
+      isCorrect: false
+      explanation: "You should use a route-based VPN gateway. They're more resilient to topology changes such as the creation of new subnets."
+    - content: "Point-based VPN gateway"
+      isCorrect: false
+      explanation: "Point-based VPN gateways aren't a type of VPN gateway."
+    - content: "Route-based VPN gateway"
+      isCorrect: true
+      explanation: "You should use a route-based VPN gateway. They're more resilient to topology changes such as the creation of new subnets."

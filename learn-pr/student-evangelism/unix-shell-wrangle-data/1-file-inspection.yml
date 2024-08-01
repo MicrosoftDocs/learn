@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/15/2022
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Perform file inspection in the UNIX shell
 durationInMinutes: 5

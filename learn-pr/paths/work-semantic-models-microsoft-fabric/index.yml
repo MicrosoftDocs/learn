@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.wwl.work-semantic-models-microsoft-fabric
+metadata:
+  title: Work with semantic models in Microsoft Fabric
+  description: Designing reports for enterprise scale requires more than just connecting to data. Understanding semantic models and strategies for scalability and optimization are key to a successful enterprise implementation. This learning path helps you prepare for the Fabric Analytics Engineer Certification.
+  ms.date: 01/03/2024
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: learning-path
+title: Work with semantic models in Microsoft Fabric
+prerequisites: |
+  Familiarity with Microsoft Fabric: [https://learn.microsoft.com/training/paths/get-started-fabric/](/training/paths/get-started-fabric/)
+summary: |
+  Designing reports for enterprise scale requires more than just connecting to data. Understanding semantic models and strategies for scalability and optimization are key to a successful enterprise implementation. This learning path helps you prepare for the [Fabric Analytics Engineer Certification](/credentials/certifications/exams/dp-600/).
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+products:
+- power-bi
+- fabric
+subjects:
+- data-modeling
+modules:
+- learn.wwl.understand-scalability-power-bi
+- learn.wwl.create-power-bi-model-relationships
+- learn.wwl.use-tools-optimize-power-bi-performance
+- learn.wwl.enforce-power-bi-model-security
+trophy:
+  uid: learn.wwl.work-semantic-models-microsoft-fabric.trophy

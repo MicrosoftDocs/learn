@@ -3,22 +3,29 @@ uid: learn.wwl.explore-licensing-pricing-support
 metadata:
   title: Explore licensing, pricing, and support for SAP on Azure virtual machines
   description: "This module explores Azure and SAP licensing requirements and licensing costs, and walks through the support request process for Azure virtual machines. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 06/30/2022
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: sap-on-azure
+  ai-usage: human-only
 title: Explore licensing, pricing, and support for SAP on Azure virtual machines
 summary: This module explores Azure and SAP licensing requirements and licensing costs, and walks through the support request process for Azure virtual machines.
 abstract: |
   After completing this module, you will be able to:
-  *   Learn how to price Azure virtual machine-based solutions.
-  *   Explore licensing, pricing, and support of Azure for SAP workloads.
+
+  -   Learn how to price Azure virtual machine-based solutions.
+
+  -   Explore licensing, pricing, and support of Azure for SAP workloads.
 prerequisites: |
   Before taking this training, you should complete:
-  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
-  - SAP HANA or NetWeaver training.
-iconUrl: /training/achievements/3-explore-azure-virtual-machine-licensing-pricing-and-support.svg
+
+  -   Azure Administrator (AZ-104) or Azure Infrastructure Solutions (AZ-305) exam.
+
+  -   SAP HANA or NetWeaver training.
+iconUrl: /learn/achievements/3-explore-azure-virtual-machine-licensing-pricing-and-support.svg
 levels:
 - advanced
 roles:
@@ -28,10 +35,10 @@ products:
 subjects:
 - virtual-machine
 units:
-- learn.wwl.explore-licensing-pricing-support.introduction
-- learn.wwl.explore-licensing-pricing-support.price-based-solutions
-- learn.wwl.explore-licensing-pricing-support.explore-support-of-azure-for-sap-workloads
-- learn.wwl.explore-licensing-pricing-support.knowledge-check
-- learn.wwl.explore-licensing-pricing-support.summary
+- learn.wwl.explore-azure-virtual-machine-licensing-pricing-support.introduction
+- learn.wwl.explore-azure-virtual-machine-licensing-pricing-support.price-azure-virtual-machine-based-solutions
+- learn.wwl.explore-azure-virtual-machine-licensing-pricing-support.explore-licensing-pricing-support-azure-for-sap-workloads
+- learn.wwl.explore-azure-virtual-machine-licensing-pricing-support.knowledge-check
+- learn.wwl.explore-azure-virtual-machine-licensing-pricing-support.summary
 badge:
   uid: learn.wwl.explore-licensing-pricing-support.badge

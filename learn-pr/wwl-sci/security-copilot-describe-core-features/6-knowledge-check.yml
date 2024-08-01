@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-core-features.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Describe the core features of Microsoft Copilot for Security.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 02/22/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 2
+
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: A security analyst needs to review past sessions created in Microsoft Copilot for Security. After accessing the standalone experience, which option should they select to manage and review these sessions?
+    choices:
+    - content: Select the My sessions option from the home menu.
+      isCorrect: true
+      explanation: Correct. My sessions allows users to manage and review past sessions with options to search, filter, rename, duplicate, or delete.
+    - content: Select the Help icon.
+      isCorrect: false
+      explanation: Incorrect. Help provides assistance and information about using the platform, not past session management.
+    - content: Select settings.
+      isCorrect: false
+      explanation: Incorrect. The settings option is for adjusting preferences and data privacy, not for reviewing past interactions.
+  - content: After enabling the Defender EASM plugin in Copilot, a security analyst wants to assess the organization's exposure to a specific vulnerability; which prompt should they use to obtain this information?
+    choices:
+    - content: Get assets by CVSS score.
+      isCorrect: false
+      explanation: Incorrect. This prompt provides assets based on their CVSS scores, not specific vulnerabilities.
+    - content: Get expired SSL certificates.
+      isCorrect: false
+      explanation: Incorrect. This prompt retrieves information about expired SSL certificates, not vulnerabilities.
+    - content: Is my external attack surface impacted by CVE-2023-21709?
+      isCorrect: true
+      explanation: Correct. This prompt specifically checks for the impact of a given CVE on the organization's external attack surface.
+  - content: A security analyst needs to integrate ServiceNow incident management with Microsoft Copilot for Security. Which authentication method should be configured to enable this integration?
+    choices:
+    - content: Anonymous authentication
+      isCorrect: false
+      explanation: Incorrect. Anonymous authentication is used for website plugins, not for ServiceNow integration.
+    - content: OAuth authorization
+      isCorrect: true
+      explanation: Correct. The ServiceNow plugin offers a Basic sign-in or OAuth authorization for authentication.
+    - content: Copilot uses on-behalf-of authentication so no other authentication is required for ServiceNow integration.
+      isCorrect: false
+      explanation: Incorrect. On-behalf-of authentication is used for integration with Microsoft solutions, not for ServiceNow integration.
+  - content: A security analyst is tasked with automating investigation flows to streamline repetitive steps in Copilot. After selecting relevant prompts from an existing session, the analyst wants to create a promptbook. What should the analyst do next to accomplish this task?
+    choices:
+    - content: Select the 'Create promptbook' icon to open the page where they can name, tag, and further customize the promptbook.
+      isCorrect: true
+      explanation: Correct. Select the 'Create promptbook' icon to open the page where they can name, tag, and further customize the promptbook.
+    - content: Select the 'Export prompts' button to download the selected prompts for manual execution.
+      isCorrect: false
+      explanation: Incorrect. Exporting prompts doesn't create a promptbook; it would only allow for manual use of the prompts outside of Copilot.
+    - content: Choose the 'Save session' option to preserve the current state of the session for later use. 
+      isCorrect: false
+      explanation: Incorrect. Saving the session preserves its state but doesn't result in the creation of a promptbook.
+  - content: After uploading a PDF file to Microsoft Copilot for Security, an analyst wants to ensure the file is included as a source in their current session. What should the analyst do next?
+    choices:
+    - content: Toggle the button on the right-hand side of the file until the toggle is lit up.
+      isCorrect: true
+      explanation: Correct. Toggling the button includes the file as a source in the current session.
+    - content: Delete the file and reupload it to automatically include it as a source.
+      isCorrect: false
+      explanation: Incorrect. Deleting and reuploading the file is unnecessary for including it as a source.
+    - content: Navigate to the Files section and select on the file name to open it.
+      isCorrect: false
+      explanation: Incorrect. Opening the file doesn't include it as a source in the session.

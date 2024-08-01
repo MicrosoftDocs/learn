@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql
+metadata:
+  title: Use Azure Machine Learning for inferencing from Azure Database for PostgreSQL
+  description: Learn how to use Azure Machine Learning for inferencing from Azure Database for PostgreSQL.
+  author: wwlpublish
+  ms.author: rcaper
+  ms.date: 05/02/2024
+  ms.service: postgresql
+  ms.subservice: flexible-server
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+  ai-usage: human-only
+title: Use Azure Machine Learning for inferencing from Azure Database for PostgreSQL
+summary: This module guides you through training and deploying an Azure Machine Learning model using automated machine learning. Then, you'll call the model directly from Azure Database for PostgreSQL - Flexible Server.
+abstract: |
+  -   Learn how to train and deploy an Azure Machine Learning model using automated machine learning.
+
+  -   Learn how to invoke deployed Azure Machine Learning models from Azure Database for PostgreSQL - Flexible Server.
+
+  -   Learn how to generate predictions for each row in an Azure Database for PostgreSQL - Flexible Server table.
+prerequisites: Before starting this module, you should have experience working with the PL/pgSQL language. Some knowledge of machine learning topics and Azure Machine Learning would be beneficial but not mandatory.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-database-postgresql
+- azure-machine-learning
+subjects:
+- artificial-intelligence
+- databases
+units:
+- learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.introduction
+- learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.azure-machine-learning-automated-machine-learning
+- learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.invoke-azure-machine-learning-postgresql
+- learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.exercise-perform-inference-azure-machine-learning
+- learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.knowledge-check
+- learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.summary
+badge:
+  uid: learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.badge

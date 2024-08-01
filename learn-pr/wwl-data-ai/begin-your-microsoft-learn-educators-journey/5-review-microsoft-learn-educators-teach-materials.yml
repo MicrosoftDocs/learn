@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.begin-your-microsoft-learn-educators-journey.review-microsoft-learn-educators-teach-materials
+title: Review the Microsoft Learn for Educators teaching materials
+metadata:
+  title: Review the Microsoft Learn for Educators teaching materials
+  description: "Review the Microsoft Learn for Educators teaching materials"
+  ms.date: 07/19/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-review-microsoft-learn-educators-teach-materials.md)]

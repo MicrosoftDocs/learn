@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-create-ai-travel-agent.exercise-route-user-intent
+title: Exercise - Route user intent
+metadata:
+  title: Exercise - Route user intent
+  description: Exercise - Route user intent
+  author: wwlpublish
+  ms.author: buzahid
+  ms.date: 06/11/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-route-user-intent.md)]

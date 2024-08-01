@@ -3,12 +3,13 @@ uid: learn.wwl.classify-images.train-image-classifier
 title: Train an image classifier
 metadata:
   title: Train an image classifier
-  description: "Train an image classifier"
-  ms.date: 08/20/2021
+  description: Train an image classifier
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 durationInMinutes: 3
 content: |

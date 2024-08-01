@@ -1,4 +1,3 @@
-
 In this module, you learned how to:
 
 * Describe the features benefits of Azure Container Apps 

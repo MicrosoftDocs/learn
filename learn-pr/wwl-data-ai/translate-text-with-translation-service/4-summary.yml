@@ -3,14 +3,13 @@ uid: learn.wwl.translate-text-with-translation-service.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 01/27/2023
+  description: Summary
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: sheryang
+  ms.date: 09/21/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/4-summary.md)]

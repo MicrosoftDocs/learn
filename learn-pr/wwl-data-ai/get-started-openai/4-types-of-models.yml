@@ -4,11 +4,12 @@ title: Explore types of generative AI models
 metadata:
   title: Explore types of generative AI models
   description: This unit explains the different types of generative AI models and their capabilities. Specific capabilities include text, code, and image generation.
-  ms.date: 2/27/2023
   author: sherzyang
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/4-types-of-models.md)]

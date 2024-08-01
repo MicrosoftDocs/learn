@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-message-processing-tasks.exercise-create-message-route-azure-blob-storage
+title: Exercise - Create a message route to Azure Blob Storage
+metadata:
+  title: Exercise - Create a message route to Azure Blob Storage
+  description: "Exercise - Create a message route to Azure Blob Storage"
+  ms.date: 10/25/2023
+  sandbox: true
+  interactive: bash
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-exercise-create-message-route-azure-blob-storage.md)]

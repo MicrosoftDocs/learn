@@ -3,14 +3,13 @@ uid: learn.wwl.translate-text-with-translation-service.exercise-translate-text-u
 title: Exercise - Explore translation
 metadata:
   title: Exercise - Explore translation
-  description: "Exercise - Explore translation"
-  ms.date: 01/27/2023
+  description: Exercise - Explore translation
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: sheryang
+  ms.date: 09/21/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise-translate-text-use-azure.md)]

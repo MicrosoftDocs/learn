@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-manufacturing.identify-ai-use-cases-manufacturing
+title: Identify Microsoft AI use cases in manufacturing
+metadata:
+  title: Identify Microsoft AI use cases in manufacturing
+  description: Identify Microsoft AI use cases in manufacturing
+  author: wwlpublish
+  ms.author: rcaper
+  ms.date: 05/22/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-identify-ai-use-cases-manufacturing.md)]

@@ -2,14 +2,15 @@
 uid: learn.authenticate-apps-with-managed-identities
 metadata:
   title: Authenticate apps to Azure services by using service principals and managed identities for Azure resources
-  description: Securely authenticate apps to Azure to manage and access Azure services. Service principals and managed identities give your app an Azure AD identity.
-  ms.date: 03/11/2020
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Securely authenticate apps to Azure to manage and access Azure services. Service principals and managed identities give your app a Microsoft Entra identity.
+  ms.service: entra-id
+  manager: mkluck
+  ms.date: 12/27/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: module
 title: Authenticate apps to Azure services by using service principals and managed identities for Azure resources
-summary: Securely authenticate applications to Azure to manage and access Azure services. Service principals and managed identities for Azure resources give your app an Azure Active Directory identity.
+summary: Securely authenticate applications to Azure to manage and access Azure services. Service principals and managed identities for Azure resources give your app a Microsoft Entra identity.
 abstract: | 
   In this module, you will:
   - Identify the benefits of and use cases for service principals.
@@ -17,7 +18,7 @@ abstract: |
   - Enable managed identity on an Azure VM.
   - Use managed identity with Azure SDKs in applications.
 prerequisites: | 
-  - Familiarity with Azure Active Directory (Azure AD) concepts
+  - Familiarity with Microsoft Entra concepts
   - Familiarity with general concepts of authorization and authentication
   - Experience developing and deploying IaaS applications
 iconUrl: /training/achievements/authenticate-apps-with-managed-identities.svg

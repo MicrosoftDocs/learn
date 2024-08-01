@@ -1,0 +1,57 @@
+### YamlMime:Module
+uid: learn.develop-on-remote-machine
+metadata:
+  title: Develop on a remote machine using SSH with Visual Studio Code
+  description: "In this module, you'll learn how to seamlessly develop on a remote machine using the Visual Studio Code Remote - SSH extension. We'll explore how to run and debug code located on a remote machine, while locally using Visual Studio Code's full feature set."             
+  ms.date: 01/22/2024           
+  author: olguzzar    
+  ms.author: olguzzar
+  manager: buhollan
+  ms.topic: module
+  ms.service: vs-code
+
+title: Develop on a remote machine using SSH in Visual Studio Code
+
+summary: |
+
+  In this module, you'll learn how to seamlessly develop on a remote machine using the Visual Studio Code Remote - SSH extension. We'll explore how to run and debug code located on a remote machine, while locally using Visual Studio Code's full feature set.
+
+abstract: |
+  By the end of this module, you'll be able to:
+    - Set up an SSH host on a remote machine
+    - Configure a project on a remote machine
+    - Install the Visual Studio Code Remote - SSH extension
+    - Run and debug code while connected over SSH
+
+prerequisites: |
+  - Basic knowledge of software development, such as what it means to run and debug code
+  - Basic familiarity with the Visual Studio Code editor
+
+
+iconUrl: /learn/achievements/introduction-to-visual-studio-code.svg
+
+levels:
+  - beginner
+
+roles:
+  - developer
+
+products:
+ - vs-code
+
+subjects:
+  - app-development
+
+units:
+- learn.develop-on-remote-machine.introduction
+- learn.develop-on-remote-machine.what-is-ssh
+- learn.develop-on-remote-machine.exercise-set-up-ssh-server
+- learn.develop-on-remote-machine.use-remote-ssh-extension
+- learn.develop-on-remote-machine.exercise-connect-using-ssh
+- learn.develop-on-remote-machine.run-and-debug-code
+- learn.develop-on-remote-machine.exercise-run-and-debug-code
+- learn.develop-on-remote-machine.knowledge-check
+- learn.develop-on-remote-machine.summary
+
+badge:
+  uid: learn.develop-on-remote-machine.badge

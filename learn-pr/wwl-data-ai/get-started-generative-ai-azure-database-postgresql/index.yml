@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-generative-ai-azure-database-postgresql
+metadata:
+  title: Get started with generative AI in Azure Database for PostgreSQL
+  description: Use generative AI in Azure Database for PostgreSQL.
+  author: wwlpublish
+  ms.author: rcaper
+  ms.date: 04/26/2024
+  ms.service: postgresql
+  ms.subservice: flexible-server
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+  ai-usage: ai-assisted
+title: Get started with generative AI in Azure Database for PostgreSQL
+summary: This module explores how to effectively use Azure Database for PostgreSQL - Flexible Server and the Azure AI extension to develop powerful Generative AI applications.
+abstract: |
+  -   Examine the concepts of generative AI and large language models and explore how they can be used to build rich AI applications.
+
+  -   Evaluate the capabilities of azure_ai&nbsp;extension for PostgreSQL.
+
+  -   Install and explore the azure_ai&nbsp;extension in an Azure Database for PostgreSQL - Flexible Server database.
+prerequisites: Before starting this module, you should have experience working with PostgreSQL databases, writing SQL queries, and a general understanding of Generative AI concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-database-postgresql
+subjects:
+- artificial-intelligence
+- databases
+units:
+- learn.wwl.get-started-generative-ai-azure-database-postgresql.introduction
+- learn.wwl.get-started-generative-ai-azure-database-postgresql.understand-generative-ai-language-models
+- learn.wwl.get-started-generative-ai-azure-database-postgresql.describe-azure-ai-extension
+- learn.wwl.get-started-generative-ai-azure-database-postgresql.explore-azure-openai-schema
+- learn.wwl.get-started-generative-ai-azure-database-postgresql.review-azure-cognitive-schema
+- learn.wwl.get-started-generative-ai-azure-database-postgresql.examine-azure-machine-learning-schema
+- learn.wwl.get-started-generative-ai-azure-database-postgresql.exercise-explore-azure-ai-extension
+- learn.wwl.get-started-generative-ai-azure-database-postgresql.knowledge-check
+- learn.wwl.get-started-generative-ai-azure-database-postgresql.summary
+badge:
+  uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.badge

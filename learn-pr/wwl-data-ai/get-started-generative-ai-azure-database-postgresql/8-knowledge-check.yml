@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: rcaper
+  ms.date: 04/26/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is Generative AI (GenAI)?"
+    choices:
+    - content: "A class of algorithms capable of learning from existing data and producing new content."
+      isCorrect: true
+      explanation: "Correct. GenAI refers to a class of Artificial Intelligence algorithms that learn from existing multimedia content and generate new content. It can be customized using techniques like prompts and fine-tuning."
+    - content: "A type of database extension for PostgreSQL used for interacting with Azure AI Services."
+      isCorrect: false
+      explanation: "Incorrect. This statement isn't accurate; GenAI isn't an extension for PostgreSQL."
+    - content: "A security feature that prevents unauthorized access to the database."
+      isCorrect: false
+      explanation: "Incorrect. GenAI isn't a security feature; it focuses on content generation."
+  - content: "What is the purpose of the azure_ai extension in Azure Database for PostgreSQL?"
+    choices:
+    - content: "To enhance database security using Azure AI Services."
+      isCorrect: false
+      explanation: "Incorrect. While security is essential, the extension's primary purpose isn't related to enhanced security."
+    - content: "To enable generative AI language models to be integrated directly within the database."
+      isCorrect: true
+      explanation: "Correct. The azure_ai extension allows using generative AI language models and building generative AI applications within the database."
+    - content: "To optimize query performance for complex workloads."
+      isCorrect: false
+      explanation: "Incorrect. Query optimization isn't the focus of this extension."
+  - content: "What are the key characteristics of generative AI language models?"
+    choices:
+    - content: "Immense scale in terms of the number of parameters used."
+      isCorrect: true
+      explanation: "Correct. Generative AI language models have immense scale, containing hundreds of millions to trillions of parameters."
+    - content: "Limited vocabulary and simple architecture."
+      isCorrect: false
+      explanation: "Incorrect. Generative AI language models have a rich vocabulary and complex architectures."
+    - content: "Primarily designed for image recognition."
+      isCorrect: false
+      explanation: "Incorrect. Generative AI language models are primarily focused on natural language understanding and generation, not image recognition."

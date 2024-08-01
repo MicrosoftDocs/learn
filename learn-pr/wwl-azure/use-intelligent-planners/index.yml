@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.use-intelligent-planners
+metadata:
+  title: Use intelligent planners
+  description: Learn about the different ways you can automatically invoke functions using the Semantic Kernel SDK.
+  author: wwlpublish
+  ms.author: buzahid
+  ms.date: 06/11/2024
+  ms.service: azure-ai-services
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+title: Use intelligent planners
+summary: This module introduces different ways to automatically invoke functions using the Semantic Kernel SDK. Learn how planners can generate plans to accomplish tasks and how to fine-tune planners to optimize performance.
+abstract: |
+  -   Understand planners in the Semantic Kernel SDK.
+
+  -   Learn how to use planners to automate function calls.
+
+  -   Learn how to optimize planners.
+
+  -   Learn how to use Semantic Kernel SDK to automatically invoke functions.
+prerequisites: |
+  -   Experience programming in C#.
+
+  -   Visual Studio Code IDE installed.
+
+  -   Familiarity with Azure and the Azure portal.
+
+  -   Access to Azure OpenAI services.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- dotnet
+- vs-code
+- azure-openai
+units:
+- learn.wwl.use-intelligent-planners.introduction
+- learn.wwl.use-intelligent-planners.learn-about-ai-planners
+- learn.wwl.use-intelligent-planners.how-use-planner
+- learn.wwl.use-intelligent-planners.exercise-use-planner
+- learn.wwl.use-intelligent-planners.exercise-use-plan-template
+- learn.wwl.use-intelligent-planners.optimize-your-planners
+- learn.wwl.use-intelligent-planners.automatically-invoke-functions
+- learn.wwl.use-intelligent-planners.exercise-automatically-invoke-functions
+- learn.wwl.use-intelligent-planners.knowledge-check
+- learn.wwl.use-intelligent-planners.summary
+badge:
+  uid: learn.wwl.use-intelligent-planners.badge

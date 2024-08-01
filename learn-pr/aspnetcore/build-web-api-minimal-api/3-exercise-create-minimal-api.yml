@@ -4,12 +4,14 @@ title: Exercise - Create a minimal API
 metadata:
   title: Exercise - Create a minimal API
   description: Build an API by using the minimal API template.
-  ms.date: 10/26/2021
+  ms.date: 12/22/2022
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.manager: markl
+  ms.custom:
+    - team=nextgen
+    - devx-track-dotnet
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/3-exercise-create-minimal-api.md)]

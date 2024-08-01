@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-copilot-ai-studio.exercise
+title: Exercise - Create a custom copilot that uses your own data
+metadata:
+  title: Exercise - Create a custom copilot that uses your own data
+  description: Create a custom copilot that uses your own data with the Azure AI Studio.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 02/21/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise.md)]

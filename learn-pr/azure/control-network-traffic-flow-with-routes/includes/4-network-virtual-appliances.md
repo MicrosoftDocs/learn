@@ -20,7 +20,7 @@ As part of the network-security strategy, you must control the flow of traffic w
 
 Network virtual appliances (NVAs) are virtual machines that control the flow of network traffic by controlling routing. You'll typically use them to manage traffic flowing from a perimeter-network environment to other networks or subnets.
 
-![Visualization of a network architecture with a network virtual appliance.](../media/4-nva.svg)
+:::image type="content" source="../media/4-nva.svg" alt-text="Visualization of a network architecture with a network virtual appliance.":::
 
 You can deploy firewall appliances into a virtual network in different configurations. You can put a firewall appliance in a perimeter-network subnet in the virtual network or if you want more control of security, implement a microsegmentation approach.
 

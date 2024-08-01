@@ -3,12 +3,13 @@ uid: learn.wwl.explore-azure-storage.ultra-disk-storage-configuration-for-sap-ha
 title: Explore Azure Ultra disk storage configuration for SAP HANA
 metadata:
   title: Explore Azure Ultra disk storage configuration for SAP HANA
-  description: "Explore Azure Ultra disk storage configuration for SAP HANA"
-  ms.date: 04/20/2023
+  description: "Explore Azure Ultra disk storage configuration for SAP HANA, where the disk capabilities aren't bound to the disk size."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/17-explore-azure-ultra-disk-storage-configuration-sap-hana.md)]

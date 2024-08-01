@@ -3,14 +3,16 @@ uid: learn.wwl.hyperparameters-azure-databricks.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 03/22/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-databricks
+  ms.date: 08/29/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "Which function should you use to initiate Hyperopt trials?"
     choices:

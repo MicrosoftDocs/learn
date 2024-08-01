@@ -3,11 +3,12 @@ uid: learn.student-evangelism.analyze-rock-images-ai-nasa.4-import-and-clean-dat
 metadata:
   title: Exercise - Import and clean data from photos
   description: Import and clean the data from photos of space rocks to use in an AI model to test classification accuracy.
-  ms.date: 04/11/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/11/2021
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Exercise - Import and clean data from photos
 durationInMinutes: 6

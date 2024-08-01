@@ -1,6 +1,6 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-The design team at your toy company has asked you to update a template that configures a virtual network. In this unit, you'll use what-if to verify the effects of deploying the updated template.
+The design team at your toy company has asked you to update a template that configures a virtual network. In this unit, you use what-if to verify the effects of deploying the updated template.
 
 During the process, you'll:
 
@@ -97,7 +97,7 @@ Run `New-AzResourceGroupDeployment` to deploy the template.
 New-AzResourceGroupDeployment -TemplateFile main.bicep
 ```
 
-You'll see the text **Running...** in the terminal. The deployment will take a minute or two to finish.
+The text **Running...** appears in the terminal. The deployment takes a minute or two to finish.
 
 ::: zone-end
 
@@ -111,7 +111,7 @@ Run `New-AzResourceGroupDeployment` to deploy the template.
 New-AzResourceGroupDeployment -TemplateFile azuredeploy.json
 ```
 
-You'll see the text **Running...** in the terminal. The deployment will take a minute or two to finish.
+The text **Running...** appears in the terminal. The deployment takes a minute or two to finish.
 
 ::: zone-end
 
@@ -125,7 +125,7 @@ Run `az deployment group create` to deploy the template.
 az deployment group create --template-file main.bicep
 ```
 
-The deployment will take a minute or two to finish.
+The deployment takes a minute or two to finish.
 
 ::: zone-end
 
@@ -139,7 +139,7 @@ Run `az deployment group create` to deploy the template.
 az deployment group create --template-file azuredeploy.json
 ```
 
-The deployment will take a minute or two to finish.
+The deployment takes a minute or two to finish.
 
 ::: zone-end
 
@@ -161,13 +161,13 @@ To validate that your deployment has been created and sent to Azure, go to the [
 
       :::image type="content" source="../media/4-portal-deployment-success.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." :::
 
-   2. Select the **main** deployment to see what resources were deployed. In this case, one virtual network (address space 10.0.0.0/16) with two subnets has been deployed.
+   1. Select the **main** deployment to see what resources were deployed. In this case, one virtual network (address space 10.0.0.0/16) with two subnets has been deployed.
 
       :::image type="content" source="../media/4-portal-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with no resources listed." :::
 
       :::image type="content" source="../media/4-portal-deployment-details-2.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one virtual network resource listed." :::
 
-      Leave the page open in your browser. You'll check on deployments again later.
+      Leave the page open in your browser so you can check on deployments again later.
 
 ## Modify the template
 
@@ -269,7 +269,7 @@ The what-if output is similar to the following one:
 
 ::: zone-end
 
-You'll notice that the result is color-coded in addition to having a prefix:
+Notice that the result is color-coded in addition to having a prefix:
 
 - Purple and **~** for any modifications
 - Green and **+** for new resources to be created

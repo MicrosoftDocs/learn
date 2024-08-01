@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-retail.discover-ai-improves-shopping-experiences
+title: Discover how Microsoft AI improves shopping experiences – A Żabka success story
+metadata:
+  title: Discover how Microsoft AI improves shopping experiences – A Żabka success story
+  description: Discover how Microsoft AI improves shopping experiences – A Żabka success story
+  author: wwlpublish
+  ms.author: rcaper
+  ms.date: 05/22/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-discover-ai-improves-shopping-experiences.md)]

@@ -4,11 +4,12 @@ title: Exercise - Test text moderation by using the API testing console
 metadata:
   title: Exercise - Test text moderation by using the API testing console
   description: Learn how to use the API web-based console to run tests of text moderation.
-  ms.date: 1/28/2019
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-use-the-api-console.md)]

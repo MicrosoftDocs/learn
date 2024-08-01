@@ -3,12 +3,11 @@ uid: learn.startups.pitch-company.summary
 title: Summary
 metadata:
   title: Summary
-  description: This unit summarizes what you've learned in this module.
-  ms.date: 02/11/2022
-  author: ryanmesches
-  ms.author: ryanmesches
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  description: Review what you learned in this module.
+  ms.date: 04/22/2024
+  author: vhawk85
+  ms.author: vahughes
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

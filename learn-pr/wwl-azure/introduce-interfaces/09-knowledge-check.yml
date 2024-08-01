@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduce-interfaces.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which option correctly declares an interface in C#?"
+    choices:
+    - content: "`interface MyInterface = new Interface();`"
+      isCorrect: false
+      explanation: "Incorrect. Interfaces can't be created with the `new` keyword."
+    - content: "`interface MyInterface : MyClass { }`"
+      isCorrect: false
+      explanation: "Incorrect. Interfaces can't inherit classes."
+    - content: "`interface MyInterface { void MyMethod(); }`"
+      isCorrect: true
+      explanation: "Correct! Interfaces are created using brackets and including method signatures."
+  - content: "Which statement is true about interfaces?"
+    choices:
+    - content: "An interface defines a contract for a behavior that a class must implement."
+      isCorrect: true
+      explanation: "Correct. An interface specifies what the class should do, but implementation details are left up to the class."
+    - content: "Classes don't need to implement all of the methods defined in an interface"
+      isCorrect: false
+      explanation: "Incorrect. A class implementing an interface must implement all of its methods and properties."
+    - content: "An interface is a substitute for an abstract class."
+      isCorrect: false
+      explanation: "Incorrect. Interfaces define a contract for what an object must *do*, an abstract class provides a structure for what an object *is*."
+  - content: "Which of the following is a system defined interface?"
+    choices:
+    - content: "IConsumable"
+      isCorrect: false
+      explanation: "Incorrect. IConsumable isn't a system defined interface."
+    - content: "IEnumerable"
+      isCorrect: true
+      explanation: "Correct! IEnumerable is a system defined interface that allows for iteration over a collection"
+    - content: "IDeletable"
+      isCorrect: false
+      explanation: "Incorrect. IDeletable isn't a system defined interface."

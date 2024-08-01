@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-code-features-using-github-copilot-tools.review-create-new-code-solution
+title: Review the "create new code" solution
+metadata:
+  title: Review the "create new code" solution
+  description: Review the create new code solution
+  author: wwlpublish
+  ms.author: cahowd
+  ms.date: 07/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-review-create-new-code-solution.md)]

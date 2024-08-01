@@ -5,10 +5,9 @@ metadata:
   title: Knowledge check
   description: Demonstrate how to deploy and manage Azure Arc-enabled SQL Managed Instance.
   ms.date: 12/21/2022
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: MikeRayMSFT
+  ms.author: mikeray
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:
@@ -26,7 +25,7 @@ quiz:
       explanation: 'Correct. Upload of the usage data is required for billing purposes and is not optional.'
   - content: 'Which of the following steps are required in order to upload usage data to an Azure subscription when using an indirectly connected Azure Arc-enabled SQL Managed Instance?'
     choices:
-    - content: 'Create an Azure Active Directory security group'
+    - content: 'Create a Microsoft Entra security group'
       isCorrect: false
       explanation: 'Incorrect. Although you need to create a Service Principal to upload usage and metric data to an Azure subscription in the indirectly connected mode, there is no specific requirement to create a security group as part of the process.'
     - content: 'Run az arcdata dc export'

@@ -4,11 +4,12 @@ title: Restore your virtual machines
 metadata:
   title: Restore your virtual machines
   description: "Restore your virtual machine from a snapshot or recovery point in the Azure portal."
-  ms.date: 03/09/2023
+  ms.date: 07/24/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/6-restore-virtual-machines.md)]

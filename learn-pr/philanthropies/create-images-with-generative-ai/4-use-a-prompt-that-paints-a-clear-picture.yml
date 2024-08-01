@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.create-images-with-generative-ai.use-a-prompt-that-paints-a-clear-picture
+title: Use a prompt that paints a clear picture
+metadata:
+  title: Use a prompt that paints a clear picture
+  description: This content is a part of the 'Create images with generative AI' module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 02/29/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-use-a-prompt-that-paints-a-clear-picture.md)]

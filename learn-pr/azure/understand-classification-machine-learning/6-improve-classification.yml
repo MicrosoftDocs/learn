@@ -4,11 +4,10 @@ title: Improving classification models
 metadata:
   title: Improving classification models
   description: Conceptual unit about improving classification models in machine learning
-  ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  author: s-polly
+  ms.author: scottpolly
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/6-improve-classification.md)] 

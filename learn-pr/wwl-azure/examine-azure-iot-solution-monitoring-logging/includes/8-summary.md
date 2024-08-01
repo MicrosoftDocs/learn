@@ -1,1 +1,0 @@
-Your team needs to configure IoT Hub monitoring and logging for the company's IoT solution. Your understanding of how to configure monitoring for IoT Hub metrics and how to log results enables you to support the company's monitoring requirement.

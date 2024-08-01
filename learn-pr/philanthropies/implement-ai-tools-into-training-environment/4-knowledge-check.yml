@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.implement-ai-tools-into-training-environment.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the 'Implement AI tools into a training environment' module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 03/11/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "Which AI tool is designed to support personalized training approaches and improve learners' reading skills?"
+      choices:
+        - content: "Search Coach"
+          isCorrect: false
+          explanation: "Incorrect. Search Coach is designed to provide relevant information to improve online searches."
+        - content: "Reading Coach"
+          isCorrect: true
+          explanation: "Correct. Reading Coach offers interactive activities and exercises to improve learners' reading skills in an engaging way."
+        - content: "Speaker Coach"
+          isCorrect: false
+          explanation: "Incorrect. Speaker Coach is designed to support learners in improving their presentation abilities."
+    - content: "What is the primary benefit of integrating AI tools into training environments?"
+      choices:
+        - content: "They make the training environment modern."
+          isCorrect: false
+          explanation: "Incorrect. While AI tools may modernize the training environment, this isn't the primary benefit of AI tools."
+        - content: "They enhance creativity, productivity, and skills."
+          isCorrect: true
+          explanation: "Correct. AI tools are designed to enhance creativity, productivity, and skills by promoting learner engagement and deeper cognitive engagement."
+        - content: "They replace the need for other human support, saving resources."
+          isCorrect: false
+          explanation: "Incorrect."
+    - content: "AI tools are meant to augment human trainers, not to replace them. What is one limitation of AI tools?"
+      choices:
+        - content: "They can't operate without human intervention."
+          isCorrect: false
+          explanation: "Incorrect. While AI tools do require some human oversight, they're capable of operating independently in many areas."
+        - content: "At times, they struggle with understanding context."
+          isCorrect: true
+          explanation: "Correct. One of the areas where AI continues to evolve and improve is understanding context, including humor, sarcasm, and irony."
+        - content: "They can't process large amounts of data."
+          isCorrect: false
+          explanation: "Incorrect. AI tools are designed to process and analyze large amounts of data efficiently."

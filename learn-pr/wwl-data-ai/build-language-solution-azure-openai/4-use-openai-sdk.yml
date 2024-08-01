@@ -2,14 +2,16 @@
 uid: learn.wwl.build-language-solution-azure-openai.use-openai-sdk
 title: Use Azure OpenAI SDK
 metadata:
-  zone_pivot_groups: dev-lang-csharp-python
   title: learning-content
-  description: "Understand how to use the C# and Python SDKs to connect to the available endpoints of an Azure OpenAI resource."
-  ms.date: 4/5/2023
+  description: Understand how to use the C# and Python SDKs to connect to the available endpoints of an Azure OpenAI resource.
   author: ivorb
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: devx-track-python
+  zone_pivot_groups: dev-lang-csharp-python
 durationInMinutes: 7
 content: |
   [!include[](includes/4-use-openai-sdk.md)]

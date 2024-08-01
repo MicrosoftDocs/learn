@@ -24,4 +24,4 @@ Boxes are used to represent smaller trust zone changes, like a corporate network
 
 #### Trust boundary labeling example
 
-**Azure IaaS boundary** - boundary box that identifies when data flows from Woodgrove corporate boundary into Azure.
+**Azure IaaS boundary** - Boundary box that identifies when data flows from Woodgrove corporate boundary into Azure.

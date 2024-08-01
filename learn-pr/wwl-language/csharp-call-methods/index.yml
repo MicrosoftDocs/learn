@@ -3,34 +3,46 @@ uid: learn.languages.csharp-call-methods
 metadata:
   title: Call methods from the .NET Class Library using C#
   description: "Use functionality in the .NET Class Library by calling methods that return values, accept input parameters, and more."
-  ms.date: 02/24/2023
+  ms.date: 06/05/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: dotnet-csharp
+  ms.devlang: csharp
+  ai-usage: human-only
 title: Call methods from the .NET Class Library using C#
 summary: Use functionality in the .NET Class Library by calling methods that return values, accept input parameters, and more.
 abstract: |
   In this module, you will:
-  - Write code that calls stateless methods in the .NET Class Library.
-  - Create a new instance of .NET Class Library classes to call methods that maintain state.
-  - Use IntelliSense to learn more about a method, its overloaded versions, its return value data type, and its input parameter data types.
-  - Use Microsoft Learn documentation to research what a method does, its overloaded versions, its return value type, its input parameters and what each parameter represents.
+
+  -   Write code that calls stateless methods in the .NET Class Library.
+
+  -   Create a new instance of .NET Class Library classes to call methods that maintain state.
+
+  -   Use IntelliSense to learn more about a method, its overloaded versions, its return value data type, and its input parameter data types.
+
+  -   Use Microsoft Learn documentation to research what a method does, its overloaded versions, its return value type, its input parameters and what each parameter represents.
 prerequisites: |
-  *   Experience declaring, initializing, and accessing the values of variables in C#.
-  *   Experience using the basic C# data types including int and string.
-  *   Experience using the method Console.WriteLine() in C#.
+  -   Experience declaring, initializing, and accessing the values of variables in C#.
+
+  -   Experience using the basic C# data types including int and string.
+
+  -   Experience using the method Console.WriteLine() in C#.
 iconUrl: /training/achievements/csharp-call-methods.svg
 levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
 - student
 products:
 - dotnet
 - vs-code
 subjects:
-- development-tools
+- app-development
 units:
 - learn.languages.csharp-call-methods.introduction
 - learn.languages.csharp-call-methods.dotnet-class-library

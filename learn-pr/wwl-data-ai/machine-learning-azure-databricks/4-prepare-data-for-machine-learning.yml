@@ -3,12 +3,13 @@ uid: learn.wwl.machine-learning-azure-databricks.prepare-data-for-machine-learni
 title: Prepare data for machine learning
 metadata:
   title: Prepare data for machine learning
-  description: "Prepare data for machine learning"
-  ms.date: 03/22/2023
+  description: Prepare data for machine learning
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-databricks
+  ms.date: 08/29/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/4-prepare-data-for-machine-learning.md)]

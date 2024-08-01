@@ -3,12 +3,13 @@ uid: learn.wwl.explore-azure-networking.examine-networking-support-of-azure-for-
 title: Examine networking support of Azure for SAP workloads
 metadata:
   title: Examine networking support of Azure for SAP workloads
-  description: "Examine networking support of Azure for SAP workloads"
-  ms.date: 04/21/2023
+  description: "Explore network security, network performance, and network reliability considerations for deployment of SAP workloads on Azure."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/19-examine-networking-support-azure-for-sap-workloads.md)]

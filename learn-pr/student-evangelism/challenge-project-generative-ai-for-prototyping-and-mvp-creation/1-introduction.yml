@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: bethanyjep
+  ms.author: bethanycheum
+  ms.date: 12/04/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: team=nextgen
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

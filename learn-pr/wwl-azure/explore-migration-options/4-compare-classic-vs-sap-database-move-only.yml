@@ -3,12 +3,13 @@ uid: learn.wwl.explore-migration-options.compare-classic-vs-sap-database-move-on
 title: Compare classical migration with the SAP database migration option (DMO)
 metadata:
   title: Compare classical migration with the SAP database migration option (DMO)
-  description: "Compare classical migration with the SAP database migration option (DMO)"
-  ms.date: 04/21/2023
+  description: "Compare classical migration with the SAP database migration option (DMO)."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/4-compare-classic-vs-sap-database-move-only.md)]

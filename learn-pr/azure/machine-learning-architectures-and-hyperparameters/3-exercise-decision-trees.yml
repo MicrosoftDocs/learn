@@ -4,11 +4,10 @@ title: Exercise - Decision trees and model architecture
 metadata:
   title: Exercise - Decision trees and model architecture
   description: Learn how to build a simple model.
-  ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/17/2023
+  author: s-polly
+  ms.author: scottpolly
+  ms.topic: unit
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/7-3-exercise-decision-trees.ipynb
