@@ -5,8 +5,8 @@ metadata:
   description: Learn how to use MLflow for model tracking when experimenting in notebooks.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 06/06/2023
-  ms.service: azure
+  ms.date: 07/20/2024
+  ms.service: azure-machine-learning
   ms.topic: module
   ms.collection:
     - wwl-ai-copilot
