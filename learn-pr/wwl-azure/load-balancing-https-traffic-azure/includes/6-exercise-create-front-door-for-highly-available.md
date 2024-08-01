@@ -1,4 +1,3 @@
-
 ## Lab scenario
 
 In this lab, you set up an Azure Front Door configuration that pools two instances of a web application that runs in different Azure regions. This configuration directs traffic to the nearest site that runs the application. Azure Front Door continuously monitors the web application. You demonstrate automatic failover to the next available site when the nearest site is unavailable. 
