@@ -77,7 +77,7 @@ Suppose you change only the _module-2/main.bicep_ file. Only the workflow for mo
 
 ## Environments for reusable Bicep code
 
-When you deploy to Azure by using Bicep, it's common to use multiple environments to help you to validate and test your code before it's published to a production environment. In previous Microsoft Learn training modules, you learned how to work with multiple environments from a deployment workflow.
+When you deploy to Azure by using Bicep, it's common to use multiple environments to help you to validate and test your code before you publish the code to a production environment. In previous Microsoft Learn training modules, you learned how to work with multiple environments from a deployment workflow.
 
 Some organizations apply the same principles to Bicep modules and template specs. For example, you might first publish new versions of your modules to a nonproduction registry so that the users of each module can try out the new versions. Then, after they've signed off, you can publish the modules to your organization's production registry.
 
