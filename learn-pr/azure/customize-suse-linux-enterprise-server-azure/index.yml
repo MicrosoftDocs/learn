@@ -5,6 +5,7 @@ metadata:
   title: Customize a SUSE Linux Enterprise Server virtual machine on Azure
   description: Deploy and customize a SUSE Linux Enterprise Server (SLES) on Azure virtual machine (VM) using YaST admin and zypper package management tools to add RPM packages. Learn how SUSE groups packages and reconciles package dependencies to help ensure you run the latest updates and versions. Practice using YaST and zypper to install a LAMP stack on a SLES Azure VM.    
   ms.date: 08/01/2024
+  ms.service: virtual-machines
   author: yenchiho
   ms.author: yenchiho
   ms.topic: module
