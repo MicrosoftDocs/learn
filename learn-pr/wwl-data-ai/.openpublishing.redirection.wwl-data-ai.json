@@ -1999,72 +1999,36 @@
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-compare-models-azure-machine-learning/"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/1-introduction.md",
-      "redirect_url": "/training/modules/explain-machine-learning-models-with-azure-machine-learning/1-introduction"
-    },
-    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/2-feature-importance.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-compare-models-azure-machine-learning/"
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/2-feature-importance.md",
-      "redirect_url": "/training/modules/explain-machine-learning-models-with-azure-machine-learning/2-feature-importance"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/3-explainers.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-compare-models-azure-machine-learning/"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/3-explainers.md",
-      "redirect_url": "/training/modules/explain-machine-learning-models-with-azure-machine-learning/3-explainers"
-    },
-    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/4-create-explanations.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-compare-models-azure-machine-learning/"
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/4-create-explanations.md",
-      "redirect_url": "/training/modules/explain-machine-learning-models-with-azure-machine-learning/4-create-explanations"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/5-visualize-explanation.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-compare-models-azure-machine-learning/"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/5-visualize-explanation.md",
-      "redirect_url": "/training/modules/explain-machine-learning-models-with-azure-machine-learning/5-visualize-explanation"
-    },
-    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/6-interpret-models.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-compare-models-azure-machine-learning/"
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/6-interpret-models.md",
-      "redirect_url": "/training/modules/explain-machine-learning-models-with-azure-machine-learning/6-interpret-models"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/6a-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-compare-models-azure-machine-learning/"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/6a-knowledge-check.md",
-      "redirect_url": "/training/modules/explain-machine-learning-models-with-azure-machine-learning/6a-knowledge-check"
-    },
-    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/7-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-compare-models-azure-machine-learning/"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/7-summary.md",
-      "redirect_url": "/training/modules/explain-machine-learning-models-with-azure-machine-learning/7-summary"
-    },
-    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-compare-models-azure-machine-learning/"
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/index.md",
-      "redirect_url": "/training/modules/explain-machine-learning-models-with-azure-machine-learning"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-analyze-data-with-python/2-exercise-explore-data.md",
