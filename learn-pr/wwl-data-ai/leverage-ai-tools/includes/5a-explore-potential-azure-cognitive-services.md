@@ -8,8 +8,6 @@ It's better to use the Azure AI Services that offer prebuilt AI services in visi
 
 There are some benefits to using Azure AI Services instead of custom AI models:
 
-* **Empower citizen developers**: AI Services is designed for people with little data science expertise. For example, they usually handle most training decisions and provide basic testing results after training. Business users can use AI Services to adapt it to their business needs, with some guidance and troubleshooting from the data science team.
-
 * **Save costs**: Since AI Services is serverless, they're usually less costly than developing and training the model internally.
 
 * **Deployment flexibility**: You can export AI Services models and run them wherever you need, in the cloud, on-premises, or on the edge.
@@ -24,9 +22,7 @@ There are five large families of AI Services: speech, language, vision, decision
 
 * **Vision**: It includes models that analyze images and videos. Beside more generic models, there are specific ones for extracting text from images (optical character recognition or OCR), for recognizing human faces. Another option is Azure Custom Vision, which lets users build their own AI models to recognize objects or classify images. Keep in mind that face recognition services are highly restricted due to Microsoft responsible AI policies.
 
-* **Decision**: These models provide recommendations on the best decisions to take. They can raise an alert when they detect anomalies in your data, or flag potentially unsafe content. There's also Personalizer, a recommendation model that suggests which content to show to each user based on their behavior.
-
-* **Azure OpenAI Service**: Microsoft offers some of the latest generative AI models developed by OpenAI. The next unit will discuss them in more depth.
+* **Azure OpenAI Service**: Microsoft offers some of the latest generative AI models developed by OpenAI. OpenAI is a successful AI company that has lately developed some of the most famous generative AI models. ChatGPT and DALL-E are some of their creations. These models are available via a public API. As all generative AI, OpenAI models receive prompts or instructions from the user and send back AI-generated content. Azure OpenAI Service is a Microsoft product that enables users to leverage OpenAI models via **Azure AI Services**. In other words, it allows you to access OpenAI models directly from Azure, instead of the public API. Keep in mind that Azure OpenAI Service isn't the only Microsoft product delivering  this kind of models to users. In previous units, we've already discussed generative AI included in Microsoft 365 Copilot and Copilot in Power Platform. These copilot features are powered by GPT, the OpenAI model for text generation.
 
 All Azure AI Services deliver AI models as SaaS. If you need to customize the product and built your own SaaS, **Azure Applied AI Services** enables you to do so without increasing data science complexity. Azure Applied AI Services is built on top of Azure AI Services and focus on key scenarios. For example, Azure Form Recognizer incorporates OCR and text analytics models to extract data from invoices, receipts, and other documents.
 
@@ -34,7 +30,7 @@ All Azure AI Services deliver AI models as SaaS. If you need to customize the pr
 
 Let's imagine how you could improve the sales and after-sales functions of your business just using Azure AI Services.
 
-First, you could increase sales by recommending relevant products to users on your website with Personalizer, based on their behavior data. You might assist them during their shopping experience with a virtual assistant powered by Azure OpenAI Services. This assistant could solve questions in a natural, fluid interaction.
+First, you could increase sales by recommending relevant products to users on your website based on their behavior data. You might assist them during their shopping experience with a virtual assistant powered by Azure OpenAI Services. This assistant could solve questions in a natural, fluid interaction.
 
 Once the sale is done, you may want to analyze the reviews clients are publishing on your products. Language AI Services can analyze feedback and extract insights on what clients think about specific products and your brand. This information is key to improve what you're offering.
 

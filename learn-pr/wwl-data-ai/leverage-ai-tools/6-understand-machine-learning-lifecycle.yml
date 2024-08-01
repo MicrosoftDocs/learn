@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.leverage-ai-tools.understand-machine-learning-lifecycle
-title: Understand the machine learning lifecycle
+title: Create custom AI models with Azure Machine Learning
 metadata:
-  title: Understand the machine learning lifecycle
-  description: Understand the machine learning lifecycle
+  title: Create custom AI models with Azure Machine Learning
+  description: "Create custom AI models with Azure Machine Learning"
+  ms.date: 08/01/2024
   author: Adriamen
   ms.author: rcaper
-  ms.date: 04/08/2024
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/6-understand-machine-learning-lifecycle.md)]

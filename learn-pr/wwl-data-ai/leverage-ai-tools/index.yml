@@ -2,25 +2,47 @@
 uid: learn.wwl.leverage-ai-tools
 metadata:
   title: Leverage AI tools and resources for your business
-  description: Learn the primary concepts and technologies of AI, and how Microsoft is turning the latest AI into tools, products, and services that organizations can use.
+  description: "Learn the primary concepts and technologies of AI, and how Microsoft is turning the latest AI into tools, products, and services that organizations can use."
+  ms.date: 08/01/2024
   author: Adriamen
   ms.author: rcaper
-  ms.date: 04/08/2024
-  ms.service: microsoft-365
   ms.topic: module
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - N/A
+  ms.service: microsoft-365
   ai-usage: human-only
 title: Leverage AI tools and resources for your business
 summary: This module provides a high-level overview of the primary concepts of AI and the technologies behind it. You’ll learn how Microsoft is embedding AI into tools, products, and services that can be used by organizations.
 abstract: |
   In this module, you will:
 
-  -   Get familiar with available AI tools and approaches.
+  -   Understand
 
-  -   Understand basic AI terminology and practices.
+  basic AI terminology and concepts.
 
-  -   Identify AI use cases.
+  -   Articulate
+
+  Microsoft’s approach to AI.
+
+  -   Identify
+
+  scenarios in which copilots can benefit an organization.
+
+  -   Identify
+
+  scenarios in which Power Platform can be used to integrate AI into business
+
+  processes.
+
+  -   Identify
+
+  scenarios where AI Services can be used to build custom AI solutions.
+
+  -   Identify
+
+  scenarios where Azure Machine Learning enables organizations to train and
+
+  manage AI models.
 prerequisites: |
   -   Basic understanding of IT concepts.
 
@@ -41,13 +63,12 @@ subjects:
 units:
 - learn.wwl.leverage-ai-tools.introduction
 - learn.wwl.leverage-ai-tools.identify-basic-ai-technology-concepts
+- learn.wwl.leverage-ai-tools.identify-foundations-of-ai
 - learn.wwl.leverage-ai-tools.learn-microsoft-ai-approach
 - learn.wwl.leverage-ai-tools.use-ai-embedded-everyday-applications
 - learn.wwl.leverage-ai-tools.discover-how-microsoft-power-platform
-- learn.wwl.leverage-ai-tools.understand-machine-learning-lifecycle
-- learn.wwl.leverage-ai-tools.discover-business-value-applying-devops
 - learn.wwl.leverage-ai-tools.explore-potential-azure-cognitive-services
-- learn.wwl.leverage-ai-tools.discover-business-value-azure-open-ai-service
+- learn.wwl.leverage-ai-tools.understand-machine-learning-lifecycle
 - learn.wwl.leverage-ai-tools.knowledge-check
 - learn.wwl.leverage-ai-tools.summary
 badge:

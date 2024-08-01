@@ -1,3 +1,5 @@
+![A screenshot of Microsoft 365 Copilot in Outlook.](../media/4-outlook-example.png)
+
 To truly realize the potential of AI, it’s essential to bring AI to every employee in ways that are relevant and meaningful to their work. Microsoft makes this possible by embedding AI in the applications people use in their everyday routine. No code or data science expertise is required because AI is delivered as just another feature of a SaaS product. The result is a wide range of intelligent applications for business users.
 
 In this unit, we'll discuss how these intelligent business applications weave relevant AI capabilities into their existing workflows. Dynamics 365 helps workers from specific business lines and functions automate and improve certain tasks. Microsoft 365 does the same by addressing a more general audience. Let’s take a look at some examples of these applications that can help anyone use AI to get more done.
@@ -10,18 +12,18 @@ These solutions are often delivered as SaaS AI solutions, which deliver fast and
 
 **Microsoft Dynamics 365** is designed with this goal: improve the performance at certain key business functions and sectors. 
 
-![A screenshot of a graph showing the eight sectors covered by Microsoft Dynamics 365.](../media/4-use-ai-embedded-everyday-applications-1.png)
-
 Here are some examples of powerful scenarios where AI is already having proven, beneficial effects:
 
-* **Sales**: Sellers can sell smarter with embedded AI-powered insights fueled by customer data.
-* **Supply chain**: Business users can use AI for predictive maintenance in factories. AI is also helpful to optimize inventory. 
-* **Human Resources**: Workforce data can be transformed into actionable insights and next-best-action guidance. AI can also be used to automate HR tasks for employees, making procedures more agile.
-* **Finance**: Analysts are provided a range of AI-powered tools for real-time reporting, embedded analytics, and insights. For example, AI can predict when or whether their customers will pay their invoices.
-* **Marketing**: AI-powered customer insights give marketing users a single view of their customers to optimize engagements and discover insights that drive personalized and meaningful experiences.
-* **Commerce**: Commerce users can use AI insights to help them more effectively manage cashflows using payment recommendations, intelligent budget proposals, and cashflow forecasting. They can even use AI to better protect their e-commerce business—and their customers—against fraud.
-* **Customer service**: Customer service users can gain insights to address increasing volumes and manage efficient agent distribution. They can also create virtual agents that identify and resolve customer issues quickly—all without having to write code.
-* **Project management**: Embedded analytics can provide insights based on project sales and financial data. The solution proposes an AI-powered scheduling to anticipate needs. Operations users gain insights into how their customers use their products and services.
+|**Business function**|**Example scenario**|
+|-|-|
+|**Commerce**|Commerce users can use AI insights to help them more effectively manage cashflows using payment recommendations, intelligent budget proposals, and cashflow forecasting. They can even use AI to better protect their e-commerce business—and their customers—against fraud.|
+|**Customer service**|Customer service users can gain insights to address increasing volumes and manage efficient agent distribution. They can also create virtual agents that identify and resolve customer issues quickly—all without having to write code.|
+|**Finance**|Analysts are provided a range of AI-powered tools for real-time reporting, embedded analytics, and insights. For example, AI can predict when or whether their customers will pay their invoices.|
+|**Human Resources**|Workforce data can be transformed into actionable insights and next-best-action guidance. AI can also be used to automate HR tasks for employees, making procedures more agile.|
+|**Marketing**|AI-powered customer insights give marketing users a single view of their customers to optimize engagements and discover insights that drive personalized and meaningful experiences.|
+|**Project management**|Embedded analytics can provide insights based on project sales and financial data. The solution proposes an AI-powered scheduling to anticipate needs. Operations users gain insights into how their customers use their products and services.|
+|**Sales**|Sellers can sell smarter with embedded AI-powered insights fueled by customer data.|
+|**Supply Chain**|Business users can use AI for predictive maintenance in factories. AI is also helpful to optimize inventory.|
 
 With business applications that use AI as a core ingredient, users can bring together relationships, processes, and data across applications to gain increased visibility and control.
 

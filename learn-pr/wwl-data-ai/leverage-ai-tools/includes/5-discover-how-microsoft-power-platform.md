@@ -4,9 +4,7 @@ AI embedded in everyday applications may not be enough to power the business app
 
 Microsoft Power Platform is a low-code or no-code set of services designed to simplify the process of building solutions. It provides building blocks that help teams work faster. Even if Power Platform isn't centered on AI, its services are often powered by AI and help you create smart solutions.
 
-The Power Platform portfolio includes five different products: Power BI, Power Apps, Power Automate, Power Virtual Agents, and Power Pages. It also offers three additional tools: AI Builder, Microsoft Dataverse, and Connectors. Let's see what each of them can do for you.
-
-![A screenshot of a graph showing the products included in Microsoft Power Platform.](../media/5-discover-how-microsoft-power-platform-1.png)
+The Power Platform portfolio includes five different products: Power BI, Power Apps, Power Automate, Copilot Studio, and Power Pages. It also offers three additional tools: AI Builder, Microsoft Dataverse, and Connectors. Let's see what each of them can do for you.
 
 ## What can you do with Microsoft Power Platform?
 
@@ -24,9 +22,9 @@ Power Apps is a low-code development environment that enables businesses to easi
 
 Power Automate is a powerful tool that allows businesses to automate repetitive tasks and streamline workflows without the need for extensive programming. With the integration of AI Builder, users can effortlessly incorporate prebuilt or custom AI models, enabling intelligent decision-making and driving efficiency in business processes.
 
-### Power Virtual Agents
+### Copilot Studio
 
-Power Virtual Agents is a tool for building chatbots. It's built over many AI models, mostly those enabling natural language understanding (NLU), so the bot can understand what is being said. However, its AI can also detect pieces of the bot that can be improved, and even automatically implement the improvements.
+Copilot Studio is a tool for building chatbots. It's built over many AI models, mostly those enabling natural language understanding (NLU), so the bot can understand what is being said. However, its AI can also detect pieces of the bot that can be improved, and even automatically implement the improvements.
 
 ### Power Pages
 
@@ -44,7 +42,7 @@ AI Builder empowers developers to incorporate AI capabilities into their applica
 
 Dataverse acts as the storage solution in the Power Platform, enabling seamless integration with all its products. It serves as a central repository for data, allowing for efficient organization and accessibility.
 
-Power Platform is a suite of powerful tools designed to help businesses create apps, analyze data, automate tasks, build chatbots, and manage websites. With Power BI, you can get valuable insights from your data and make better decisions. Power Apps lets you easily build custom apps without coding, and AI Builder adds intelligent features like language analysis and sentiment analysis. Power Automate helps you automate repetitive tasks and save time, and Power Virtual Agents allows you to create chatbots that understand and respond to users. Plus, Data connectors ensure smooth integration between different components, and Dataverse provides a central place to store and access your data. By using these tools together, you can enhance productivity and make your business more efficient.
+Power Platform is a suite of powerful tools designed to help businesses create apps, analyze data, automate tasks, build chatbots, and manage websites. With Power BI, you can get valuable insights from your data and make better decisions. Power Apps lets you easily build custom apps without coding, and AI Builder adds intelligent features like language analysis and sentiment analysis. Power Automate helps you automate repetitive tasks and save time, and Copilot Studio allows you to create chatbots that understand and respond to users. Plus, Data connectors ensure smooth integration between different components, and Dataverse provides a central place to store and access your data. By using these tools together, you can enhance productivity and make your business more efficient.
 
 ## What is the business value of Microsoft Power Platform?
 

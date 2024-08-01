@@ -4,10 +4,13 @@ This information will prepare you to use AI in your organization, communicate wi
 
 Now that you have reviewed this module, you should:
 
-* Be familiar with available AI tools and approaches.
-* Understand basic AI terminology and practices.
-* Understand How to use prebuilt AI to build intelligent applications.
-* Be able to identify AI use cases.
+* Understand basic AI terminology and concepts
+* Articulate Microsoft’s approach to AI
+* Identify scenarios in which copilots can benefit an organization
+* Identify scenarios in which Power Platform can be used to integrate AI into business processes
+* Identify scenarios where AI Services can be used to build custom AI solutions
+* Identify scenarios where Azure Machine Learning enables organizations to train and manage AI models
+
 
 ## Use these resources to discover more
 

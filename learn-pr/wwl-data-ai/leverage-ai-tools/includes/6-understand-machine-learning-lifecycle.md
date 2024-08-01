@@ -39,4 +39,15 @@ Creating your own model from scratch used to be the default option. However, the
 
 Which of the two approaches is better? It depends on the scenario. Working with premade models has the advantage of requiring less resources and delivering results faster. However, prebuilt models are trained to solve a wide range of use cases, so they may struggle to meet very specific needs. In these cases, a full custom model may be a better idea. A flexible mix of both approaches is often preferable and helps scale. AI teams can save resources using premade models for the easiest use cases, while investing these resources in building custom AI models for the hardest scenarios. Further iterations can improve the prebuilt models by retraining them.
 
-Next, let’s dive deeper into the benefits and business value that machine learning operations can provide.
+## Business value of applying machine learning operations 
+
+Considerations: 
+
+* **Model reproducibility**: 
+* **Model validation**: 
+* **Model deployment**: 
+* **Model retraining**: 
+
+![A screenshot of a graph showing MLOps practices: data scientists and IT work together on model reproducibility, validation, deployment, and retraining.](../media/7-discover-business-value-applying-devops-1.png)
+
+> ![A screenshot of a graph showing a confusion matrix with predicted and true labels. Alignment of true and predicted values indicates high accuracy.](../media/7-discover-business-value-applying-devops-2.png)
