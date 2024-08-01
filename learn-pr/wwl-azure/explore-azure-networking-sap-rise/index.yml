@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-networking-sap-rise
 metadata:
   title: Explore Azure networking for SAP RISE
   description: "Your SAP RISE architecture running in SAP's Azure subscription and tenant is created and managed by SAP. This module shows you how to use your Azure networks to connect to your SAP RISE instance."
-  ms.date: 07/30/2024
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
@@ -16,19 +16,21 @@ summary: This module shows you how to use your Azure networks to connect to your
 abstract: |
   After completing this module, you will be able to:
 
-  -   Responsibilities of the SAP RISE team, Azure support, and the customer.
+  -   Differentiate&nbsp;the&nbsp;responsibilities&nbsp;of&nbsp;the&nbsp;SAP&nbsp;RISE&nbsp;team,&nbsp;Azure&nbsp;support,&nbsp;and&nbsp;the&nbsp;customer.
 
-  -   Connection to SAP RISE with Azure virtual private network (VPN) peering.
+  -   Connect&nbsp;to&nbsp;SAP&nbsp;RISE&nbsp;with&nbsp;Azure&nbsp;virtual&nbsp;private&nbsp;network&nbsp;(VPN)&nbsp;peering.
 
-  -   Connection to SAP RISE with vnet-to-vnet.
+  -   Connect&nbsp;to&nbsp;SAP&nbsp;RISE&nbsp;with&nbsp;VNet-to-VNet.
 
-  -   Connect SAP RISE with an on-premises network.
+  -   Connect&nbsp;SAP&nbsp;RISE&nbsp;with&nbsp;an&nbsp;on-premises&nbsp;network.
 
-  -   Connect SAP RISE with the internet.
+  -   Connect&nbsp;SAP&nbsp;RISE&nbsp;with&nbsp;the&nbsp;internet.
+
+  -
 prerequisites: |
   Before taking this training, you should complete:
 
-  -   Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  -   Azure Administrator (AZ-104) or Azure&nbsp;Infrastructure Solutions&nbsp;(AZ-305) exam.
 
   -   SAP HANA or NetWeaver training
 iconUrl: /training/achievements/generic-badge.svg
