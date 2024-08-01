@@ -3,7 +3,7 @@ uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads
 metadata:
   title: Explore monitoring requirements of Azure for SAP workloads
   description: "This module covers monitoring of data from several Azure systems and tools to support SAP on Azure workloads. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 07/29/2024
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
@@ -24,7 +24,7 @@ abstract: |
 prerequisites: |
   Before taking this training, you should complete:
 
-  -   Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  -   Azure Administrator (AZ-104) or Azure Infrastructure Solutions (AZ-305) exam.
 
   -   SAP HANA or NetWeaver training.
 iconUrl: /training/achievements/1-explore-monitoring-requirements-of-azure-for-sap-workloads.svg

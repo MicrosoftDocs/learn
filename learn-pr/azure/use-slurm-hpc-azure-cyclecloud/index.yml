@@ -8,7 +8,7 @@ metadata:
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module
-  ms.service: cyclecloud
+  ms.service: azure-cyclecloud
 summary: >
   This module helps you understand how to use SLURM to manage HPC jobs running with Azure CycleCloud and how to troubleshoot common issues.
 abstract: |
