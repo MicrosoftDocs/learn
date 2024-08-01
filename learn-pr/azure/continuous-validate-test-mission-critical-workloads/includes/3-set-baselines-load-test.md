@@ -41,13 +41,7 @@ Use [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing
 
 You can use test criteria to implement different baselines. For example:
 
-:::image type="content" source="../media/deployment-testing-test-criteria.png" border="false" alt-text="Azure portal screenshot of a table that shows sample test criteria.":::
-
-| Metric              | Aggregate function | Condition    | Threshold | Actual value | Result              |
-|---------------------|--------------------|--------------|-----------|--------------|---------------------|
-| Requests per second | Average            | Less than    | 1200      | 4840         | &check;&nbsp;Passed |
-| Response time       | Average            | Greater than | 75        | 184.6        | &cross;&nbsp;Failed |
-| Error               | Percentage         | Greater than | 50        | 61.3         | &cross;&nbsp;Failed |
+:::image type="content" source="../media/deployment-testing-test-criteria.png" alt-text="Azure portal screenshot of a table that shows sample test criteria." lightbox="../media/deployment-testing-test-criteria.png":::
 
 You can specify these test criteria in JSON and use the API to add them to your load test. Here's an example:
 
