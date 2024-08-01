@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: network-watcher
+  ms.service: azure-network-watcher
   ai-usage: ai-assisted
 title: Configure Network Watcher
 summary: |
