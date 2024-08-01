@@ -64,19 +64,17 @@ Once you create a policy assignment, shortly afterwards, you will be able to rev
 
 ![Screenshot that depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other.](../media/3-review-policies.png)
 
-## What are the benefits of Azure Automation Update Management in hybrid scenarios?
+## What are the benefits of Azure Update Manager in hybrid scenarios?
 
-Azure Automation is an Azure service that helps you automate maintenance tasks in Azure and in on-premises environments by using custom PowerShell or Python scripts. In addition, Azure Automation supports configuration management by using several built-in solutions that include Update Management.
+Azure Update Manager is a unified service to help manage and govern updates for all your hybrid machines, including hybrid machines. You can monitor Windows and Linux update compliance across your hybrid machines from a single pane of management. You can also use Update Manager to make real-time updates or schedule them within a defined maintenance window.
 
-Azure Automation Update Management is a hybrid solution that facilitates management and monitoring of operating system updates in hybrid scenarios. It provides comprehensive information on the update status and helps remediate any gaps in an automated manner. It supports integration with any of the standard update deployment technologies, including Windows Update Services, Windows Server Update Services (WSUS), and Endpoint Configuration Manager.
+Azure Update Manager allows you to:
 
-Just like Microsoft Defender for Cloud, the Update Management solution relies on data collected from Windows servers by Azure Monitor and stored in the Log Analytics workspace you designate. This, in turn, requires a locally installed Log Analytics agent, which registers managed computers with the Log Analytics workspace and continually uploads into it locally collected data. The Log Analytics engine analyzes collected data to determine the update compliance status of each managed server.
-
-In general, Update Management allows you to:
-
-- **Track the status of updates on your servers**: The service includes the Azure portal-based interface, where you can review update statuses across your managed environment.
-- **Configure dynamic groups of machines to target deployments of updates**: The service supports targeting updates to groups based on Log Analytics queries or groups imported from another source, like WSUS or Endpoint Configuration Manager.
-- **Search Azure Monitor logs**: The service allows you to run queries against logs stored in Log Analytics.
+- Instantly check for updates or deploy security or critical updates to help secure your hybrid machines.
+- Enable periodic assessment to check for the latest updates available for your hybrid machines.
+- Use flexible patching options like customer-defined maintenance schedules and hot patching.
+- Build custom reporting dashboards for reporting update status and configure alerts for certain conditions.
+- Oversee update compliance for all your hybrid machines.
 
 ## What are the benefits of Azure Automation Desired State Configuration (DSC) in hybrid scenarios?
 
