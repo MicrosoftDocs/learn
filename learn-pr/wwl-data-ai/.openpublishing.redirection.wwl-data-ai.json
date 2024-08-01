@@ -61,67 +61,67 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "create-manage-cognitive-services/index.md",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-manage-cognitive-services/index.md",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
     },
     {
-      "source_path": "create-manage-cognitive-services/1-introduction.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-manage-cognitive-services/1-introduction.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
     },
     {
-      "source_path": "create-manage-cognitive-services/2-create-cognitive-service-resource.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-manage-cognitive-services/2-create-cognitive-service-resource.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
     },
     {
-      "source_path": "create-manage-cognitive-services/3-keys.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-manage-cognitive-services/3-keys.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
     },
     {
-      "source_path": "create-manage-cognitive-services/4-use-rest.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-manage-cognitive-services/4-use-rest.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
     },
     {
-      "source_path": "create-manage-cognitive-services/5-use-sdk.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-manage-cognitive-services/5-use-sdk.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
     },
     {
-      "source_path": "create-manage-cognitive-services/5a-exercise-cognitive-services.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-manage-cognitive-services/5a-exercise-cognitive-services.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
     },
     {
-      "source_path": "create-manage-cognitive-services/6-knowledge-check.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-manage-cognitive-services/6-knowledge-check.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
     },
     {
-      "source_path": "create-manage-cognitive-services/7-summary.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-manage-cognitive-services/7-summary.yml",
       "redirect_url": "/training/modules/create-manage-ai-services/",
       "redirect_document_id": false
     },
     {
-      "source_path": "build-ai-copilot-vcore-based-azure-cosmos-db-mongodb-azure-openai/index.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-ai-copilot-vcore-based-azure-cosmos-db-mongodb-azure-openai/index.yml",
       "redirect_url": "/training/paths/build-ai-copilot-vcore-based-azure-cosmos-db-mongodb-azure-openai/",
       "redirect_document_id": true
     },
     {
-      "source_path": "create-manage-scalable-power-bi-dataflows/5-exercise-create-dataflow.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-manage-scalable-power-bi-dataflows/5-exercise-create-dataflow.yml",
       "redirect_url": "/training/modules/create-manage-scalable-power-bi-dataflows/",
       "redirect_document_id": false
     },
     {
-      "source_path": "understand-scalability-power-bi/4a-exercise-create-star-schema-model.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-scalability-power-bi/4a-exercise-create-star-schema-model.yml",
       "redirect_url": "/training/modules/understand-scalability-power-bi/",
       "redirect_document_id": false
     },
     {
-      "source_path": "introduction-to-azure-ai-studio/4-azure-ai-projects.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-to-azure-ai-studio/4-azure-ai-projects.yml",
       "redirect_url": "/training/modules/introduction-to-azure-ai-studio/",
       "redirect_document_id": false
     }
