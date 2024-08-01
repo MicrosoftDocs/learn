@@ -1,55 +1,40 @@
 
 Today’s world is about collaboration, working with people both inside and outside of your organization. That means you'll sometimes need to provide access to your organization’s applications or data to external users.
 
-Microsoft Entra External ID refers to all the ways you can securely interact with users outside of your organization.
+Microsoft Entra External ID combines powerful solutions for working with people outside of your organization. With External ID capabilities, you can allow external identities to securely access your apps and resources. Whether you’re working with external partners, consumers, or business customers, users can bring their own identities. These identities can range from corporate or government-issued accounts to social identity providers like Google or Facebook.
 
-The following capabilities make up External Identities:
+:::image type="content" source="../media/external-identities-overview.png" alt-text="Image showing elements of Microsoft External ID. On the left, it shows Consumers business customers, and guests. On the right, it shows business apps, consumer apps, and on-premises apps. In the center, is a circle showing secure user access, seamless experience, and secure app development.":::
 
-- B2B collaboration
-- B2B direct connect
-- Microsoft Entra External ID for customers (preview)
-- Microsoft Entra multi-tenant organization
+Microsoft Entra External ID addresses the scenarios that are encountered when it comes to working with external users.
 
-### B2B collaboration
+- Collaborate with business guests
+- Secure your apps for consumers and business customers
 
-B2B collaboration enables employees of an organization to collaborate with external users by letting them use their preferred identity to sign in to your Microsoft applications or other enterprise applications. B2B collaboration users are represented in your directory, typically as guest users.
+Also, each of these scenarios suggests a different approach for how an organization configures their Microsoft Entra ID tenant.
 
-There are no credentials associated with B2B collaboration users. Instead, they authenticate with their home organization or identity provider, and then your organization checks the guest user’s eligibility for B2B collaboration.
+There are two ways to configure a tenant, depending on how the organization intends to use the tenant and the resources they want to manage:
 
-There are various ways to add external users to your organization for B2B collaboration:
+- A workforce tenant configuration is for your employees, internal business apps, and other organizational resources. You can invite external business partners and guests to your workforce tenant.
+- An external tenant configuration is used exclusively for External ID scenarios where you want to publish apps to consumers or business customers.
 
-- Invite users to B2B collaboration using their Microsoft Entra accounts, Microsoft accounts, or social identities that you enable. The user signs into the shared resources using a simple redemption process with their work, school, or other email account.
-- Use self-service sign-up user flows to let external users sign up for applications themselves. The experience can be customized to allow sign-up with a work, school, or social identity. You can also collect information about the user during the sign-up process.
-- Use Microsoft Entra entitlement management, an identity governance feature that lets you manage identity and access for external users at scale by automating access request workflows, access assignments, reviews, and expiration.
+:::image type="content" source="../media/external-id-tenant-configurations.png" alt-text="Image showing a representation of the two external ID scenarios and the corresponding tenant type. Collaboration with business guests uses a workforce tenant configuration. External facing apps use an external tenant configuration.":::
 
-A user object is created for the B2B collaboration user in the same directory as your employees. This user object can be managed like other user objects in your directory, added to groups, and so on. You can assign permissions to the user object (for authorization) while letting them use their existing credentials (for authentication).
+### Collaborate with business guests
 
-You can manage B2B collaboration with other Microsoft Entra organizations and across Microsoft Azure clouds by using cross-tenant access settings that give you granular control over how external Microsoft Entra organizations collaborate with you (inbound access) and how your users collaborate with external Microsoft Entra organizations (outbound access). You can also use external collaboration settings to manage B2B collaboration with non-Microsoft Entra external users and organizations.
+If you want to enable your employees to collaborate with business partners and guests, use External ID for B2B collaboration.
 
-### B2B direct connect
+External ID B2B collaboration allows your workforce to collaborate with external business partners.
 
-B2B direct connect is a new way to collaborate with other Microsoft Entra organizations using Microsoft Teams shared channels. With B2B direct connect, you create two-way trust relationships with other Microsoft Entra organizations to allow users to seamlessly sign in to your shared resources and vice versa. B2B direct connect users aren't represented in your Microsoft Entra directory (they aren't added as guests), but they're visible from within the Teams shared channel and can be monitored in Teams admin center reports. When two organizations mutually enable B2B direct connect, users authenticate in their home organization and receive a token from the resource organization for access.
+Using your workforce tenant, you can use B2B collaboration to share your company's applications and services with guests, while maintaining control over your own corporate data. You can invite anyone to sign in to your Microsoft Entra organization using their own credentials so they can access the apps and resources you want to share with them.
 
-B2B direct connect enables the Teams Connect shared channels feature, which lets your users collaborate with external users from multiple organizations with a Teams shared channel for chat, calls, file-sharing, and app-sharing. Once you’ve set up B2B direct connect with an external organization, the following Teams shared channels capabilities become available:
+Use B2B collaboration when you need to let business guests access your Office 365 apps, software-as-a-service (SaaS) apps, and line-of-business applications. There are no credentials associated with business guests. Instead, they authenticate with their home organization or identity provider, and then your organization checks the user’s eligibility for guest collaboration.
 
-- Within Teams, a shared channel owner can search for allowed users from the external organization and add them to the shared channel.
-- External users can access the Teams shared channel without having to switch organizations or sign in with a different account. From within Teams, the external user can access files and apps through the Files tab. The user’s access is determined by the shared channel’s policies.
-You use cross-tenant access settings to manage trust relationships with other Microsoft Entra organizations and define inbound and outbound policies for B2B direct connect.
+:::image type="content" source="../media/b2b-collaboration-overview.png" alt-text="Image showing a representation of B2B collaboration.":::
 
-### Microsoft Entra External ID for customers (Preview)
+### Secure your apps for consumers and business customers
 
-Microsoft Entra External ID for customers is Microsoft’s new customer identity and access management (CIAM) solution. This solution is intended for businesses that want to make applications available to their customers using the Microsoft Entra platform for identity and access.
+If you’re an organization or a developer creating consumer apps, use External ID to quickly add authentication and customer identity and access management (CIAM) to your application.
 
-With Microsoft Entra External ID for customers, you create a distinct tenant that follows the standard Microsoft Entra tenant model but is configured for customer scenarios.  Capabilities include:
+Microsoft Entra External ID includes Microsoft's customer identity and access management (CIAM) solution that includes features like self-service registration, personalized sign-in experiences including single sign-on (SSO) with social and enterprise identities, and customer account management. Because these CIAM capabilities are built into Microsoft Entra ID, you also benefit from platform features like enhanced security, compliance, and scalability.
 
-- **Single sign-on (SSO) with social and enterprise identities**. Customers can choose a social, enterprise, or managed identity to sign in with a username and password, email, or one-time passcode.
-- **Sign-up and sign-in pages to your apps**. Quickly add intuitive, user-friendly sign-up and sign-in experiences for your customer apps.
-- **Add your company branding to the sign-up page**. Customize the look and feel of your sign-up and sign-in experiences. With a single identity, a customer can securely access all the applications you want them to use.
-- **Provide self-service account management**. Customers can register for your online services by themselves, manage their profile, delete their account, enroll in a multifactor authentication (MFA) method, or reset their password with no admin or help desk assistance.
-
-:::image type="content" source="../media/customized-screen.png" alt-text="Screen capture of a consumer sign-in screen that shows options for using a social identity account and is customized with an organization's branding.":::
-
-
-### Multi-tenant organizations
-
-A multi-tenant organization is an organization that has more than one instance of Microsoft Entra ID. There are various reasons for multi-tenancy, like using multiple clouds or having multiple geographical boundaries. Multi-tenant organizations use a one-way synchronization service in Microsoft Entra ID, called cross-tenant synchronization. Cross-tenant synchronization enables seamless collaboration for a multi-tenant organization. It improves user experience and ensures that users can access resources, without receiving an invitation email and having to accept a consent prompt in each tenant.
+:::image type="content" source="../media/overview-ciam.png" alt-text="Image showing a representation of External ID in an external tenant.":::
