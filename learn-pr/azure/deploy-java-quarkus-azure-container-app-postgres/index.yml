@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.custom: team=devdiv
   ms.contributors: antoniomanug
-  ms.service: container-apps
+  ms.service: azure-container-apps
 title: Deploy a Quarkus application to Azure Container Apps
 summary: Create a Quarkus application, connect it to a PostgreSQL database, and then deploy it to Azure Container Apps.
 abstract: |
