@@ -4,10 +4,12 @@ title: Examine the SAP workload planning and deployment checklist
 metadata:
   title: Examine the SAP workload planning and deployment checklist
   description: "Examine the SAP workload planning and deployment checklist when initiating a project to deploy SAP workloads to Azure."
-  ms.date: 07/30/2024
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/2-examine-sap-workload-planning-deployment-checklist.md)]

@@ -9,7 +9,7 @@ metadata:
   author: duongau
   ms.author: duau
   ms.topic: module
-  ms.service: frontdoor
+  ms.service: azure-frontdoor
 title: Load balance your web service traffic with Front Door
 summary: "Accelerate the delivery and maintain high availability of web applications by distributing web traffic across multiple web servers. Secure your web applications from intruders and malicious attacks with managed and unmanaged rules."
 abstract: |
