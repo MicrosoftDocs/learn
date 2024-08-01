@@ -24,7 +24,7 @@ Let's see the outcome of FMA done for the components of the Contoso Shoes checko
 
 |Risk|Impact|Possible mitigation|
 |---|---|---|
-| **Slow (cold) start performance**| Because the Azure Functions Consumption plan is used, new instances don't have performance guarantees. </br> High demand on the service (from "noisy neighbors") might cause the checkout function to experience a long startup duration that affects performance targets. |Upgrade to the Azure Functions Premium plan. |
+| **Slow (cold) start performance**| Because the Azure Functions Consumption plan is used, new instances don't have performance guarantees.</br> High demand on the service (from "noisy neighbors") might cause the checkout function to experience a long startup duration that affects performance targets. |Upgrade to the Azure Functions Premium plan. |
 | **Underlying storage outage**| If the underlying storage account becomes unavailable, the function stops working.|Use [Load balanced compute with regional storage](/azure/azure-functions/durable/durable-functions-disaster-recovery-geo-distribution#scenario-2---load-balanced-compute-with-regional-storage) or [Load balanced compute with GRS shared storage](/azure/azure-functions/durable/durable-functions-disaster-recovery-geo-distribution#scenario-3---load-balanced-compute-with-grs-shared-storage).|
 
 ##### Azure Cosmos DB database
