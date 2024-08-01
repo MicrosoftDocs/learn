@@ -8,7 +8,7 @@ metadata:
   author: baanders
   ms.author: baanders
   ms.topic: module
-  ms.service: digital-twins
+  ms.service: azure-digital-twins
 title: Introduction to Azure Digital Twins
 summary: Azure Digital Twins is an IoT platform for creating a digital twin graph that parallels a real-world IoT environment. Understand what information and data are represented in an Azure Digital Twins solution, and describe how a digital twin graph can be used to gather business insights.
 abstract: | 

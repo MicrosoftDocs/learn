@@ -8,7 +8,7 @@ metadata:
   author: baanders
   ms.author: baanders
   ms.topic: module
-  ms.service: digital-twins
+  ms.service: azure-digital-twins
 title: Synchronize Azure Digital Twins with IoT device data
 summary: Set up an automatic data flow from a simulated IoT Hub device into Azure Digital Twins. Combine this data with business logic to update digital twin properties.
 abstract: | 

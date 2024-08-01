@@ -3,7 +3,7 @@ author: baanders
 ms.author: baanders
 ms.date: 11/10/2023
 ms.topic: include
-ms.service: digital-twins
+ms.service: azure-digital-twins
 ---
 
 ## Set up hands-on session

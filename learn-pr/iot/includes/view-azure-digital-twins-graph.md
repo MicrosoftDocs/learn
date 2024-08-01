@@ -3,7 +3,7 @@ author: baanders
 ms.author: baanders
 ms.date: 11/10/2023
 ms.topic: include
-ms.service: digital-twins
+ms.service: azure-digital-twins
 ---
 
 You can open Azure Digital Twins Explorer yourself to view your digital twin graph. Run the following command in the Cloud Shell to create a direct URL to your Azure Digital Twins instance in Azure Digital Twins Explorer.
