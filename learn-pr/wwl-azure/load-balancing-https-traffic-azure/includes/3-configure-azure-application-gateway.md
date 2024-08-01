@@ -1,4 +1,3 @@
-
 Application Gateway has a series of components that combine to route requests to a pool of web servers and to check the health of these web servers.
 
 :::image type="content" source="../media/app-gateway-config-f068f2b5.png" alt-text="Diagram showing how Azure Application Gateway routes requests to a pool of web servers":::
@@ -139,201 +138,26 @@ For more information on configuring redirection in Application Gateway, see [URL
 
 ## Application Gateway request routing rules
 
-When you create an application gateway using the Azure portal, you create a default rule (rule1). This rule binds the default listener (appGatewayHttpListener) with the default back-end pool (appGatewayBackendPool) and the default back-end HTTP settings (appGatewayBackendHttpSettings). After you create the gateway, you can edit the settings of the default rule or create new rules.
+A request routing rule is a key component of an application gateway because it determines how to route traffic on the listener. The rule binds the listener, the backend server pool, and the backend HTTP settings.
 
-Rule types:
+When a listener accepts a request, the request routing rule forwards the request to the backend or redirects it elsewhere. If the request is forwarded to the backend, the request routing rule defines which backend server pool to forward it to. The request routing rule also determines if the headers in the request are to be rewritten. One listener can be attached to one rule.
 
- -  Basic forwards all requests on the associated listener (for example, blog.contoso.com/\*) to a single back-end pool.
- -  Path-based routes requests from specific URL paths to specific back-end pools.
+There are two types of request routing rules:
 
-### Order of processing rules
+- **Basic:** All requests on the associated listener (for example, blog.contoso.com/*) are forwarded to the associated backend pool by using the associated HTTP setting.
 
-For the v1 and v2 SKU, pattern matching of incoming requests is processed in the order that the paths are listed in the URL path map of the path-based rule. If a request matches the pattern in two or more paths in the path map, the path that's listed first is matched. And the request is forwarded to the back end that's associated with that path.
+- **Path-based:** This routing rule lets you route the requests on the associated listener to a specific backend pool, based on the URL in the request. If the path of the URL in a request matches the path pattern in a path-based rule, the rule routes that request. It applies the path pattern only to the URL path, not to its query parameters. If the URL path on a listener request doesn't match any of the path-based rules, it routes the request to the default backend pool and HTTP settings.
 
-### Associated listener
+## HTTP settings
 
-Associate a listener to the rule so that the request-routing rule that's associated with the listener is evaluated to determine the back-end pool to route the request to.
+An application gateway routes traffic to the backend servers (specified in the request routing rule that include HTTP settings) by using the port number, protocol, and other settings detailed in this component.
 
-### Associated back-end pool
+The port and protocol used in the HTTP settings determine whether the traffic between the application gateway and backend servers is encrypted (providing end-to-end TLS) or unencrypted.
 
-Associate to the rule the back-end pool that contains the back-end targets that serve requests that the listener receives.
+This component is also used to:
 
-For a basic rule, only one back-end pool is allowed. All requests on the associated listener are forwarded to that back-end pool.
+- Determine whether a user session is to be kept on the same server by using the cookie-based session affinity.
 
-For a path-based rule, add multiple back-end pools that correspond to each URL path. The requests that match the URL path that's entered are forwarded to the corresponding back-end pool. Also, add a default back-end pool. Requests that don't match any URL path in the rule are forwarded to that pool.
+- Gracefully remove backend pool members by using connection draining.
 
-### Associated back-end HTTP setting
-
-Add a back-end HTTP setting for each rule. Requests are routed from the application gateway to the back-end targets by using the port number, protocol, and other information that's specified in this setting.
-
-For a basic rule, only one back-end HTTP setting is allowed. All requests on the associated listener are forwarded to the corresponding back-end targets by using this HTTP setting.
-
-For a path-based rule, add multiple back-end HTTP settings that correspond to each URL path. Requests that match the URL path in this setting are forwarded to the corresponding back-end targets by using the HTTP settings that correspond to each URL path. Also, add a default HTTP setting. Requests that don't match any URL path in this rule are forwarded to the default back-end pool by using the default HTTP setting.
-
-### Redirection setting
-
-If redirection is configured for a basic rule, all requests on the associated listener are redirected to the target. This is global redirection. If redirection is configured for a path-based rule, only requests in a specific site area are redirected. An example is a shopping cart area that's denoted by /cart/\*. This is path-based redirection.
-
-**Redirection type**
-
-Choose the type of redirection required: Permanent(301), Temporary(307), Found(302), or See other(303).
-
-**Redirection target**
-
-Choose another listener or an external site as the redirection target.
-
-**Listener**
-
-Choose listener as the redirection target to redirect traffic from one listener to another on the gateway.
-
-**External** **site**
-
-Choose external site when you want to redirect the traffic on the listener that's associated with this rule to an external site. You can choose to include the query string from the original request in the request that's forwarded to the redirection target. You can't forward the path to the external site that was in the original request.
-
-### Rewrite HTTP headers and URL
-
-By using rewrite rules, you can add, remove, or update HTTP(S) request and response headers as well as URL path and query string parameters as the request and response packets move between the client and backend pools via the application gateway.
-
-The headers and URL parameters can be set to static values or to other headers and server variables. This helps with important use cases, such as extracting client IP addresses, removing sensitive information about the backend, adding more security, and so on.
-
-## Configure URL-based routing
-
-URL Path Based Routing allows you to route traffic to back-end server pools based on URL Paths of the request. One use case is to route requests for different content types to different backend server pools.
-
-**For the v1 SKU, rules are processed in the order they are listed in the portal. If a basic listener is listed first and matches an incoming request, it gets processed by that listener. For the v2 SKU, exact matches have higher precedence. However, it is highly recommended to configure multi-site listeners first prior to configuring a basic listener. This ensures that traffic gets routed to the right back end**.
-
-### UrlPathMap configuration element
-
-The urlPathMap element is used to specify Path patterns to back-end server pool mappings. The following code example is the snippet of urlPathMap element from template file.
-
-```JSON
-"urlPathMaps": [{
-
- "name": "{urlpathMapName}",
-
- "id": "/subscriptions/{subscriptionId}/../microsoft.network/applicationGateways/{gatewayName}/urlPathMaps/{urlpathMapName}",
-
- "properties": {
-
- "defaultBackendAddressPool": {
-
- "id": "/subscriptions/{subscriptionId}/../microsoft.network/applicationGateways/{gatewayName}/backendAddressPools/{poolName1}"
-
- },
-
- "defaultBackendHttpSettings": {
-
- "id": "/subscriptions/{subscriptionId}/../microsoft.network/applicationGateways/{gatewayName}/backendHttpSettingsList/{settingname1}"
-
- },
-
- "pathRules": [{
-
- "name": "{pathRuleName}",
-
- "properties": {
-
- "paths": [
-
- "{pathPattern}"
-
- ],
-
- "backendAddressPool": {
-
- "id": "/subscriptions/{subscriptionId}/../microsoft.network/applicationGateways/{gatewayName}/backendAddressPools/{poolName2}"
-
- },
-
- "backendHttpsettings": {
-
- "id": "/subscriptions/{subscriptionId}/../microsoft.network/applicationGateways/{gatewayName}/backendHttpsettingsList/{settingName2}"
-
- }
-
- }
-
- }]
-
- }
-
-}]
-
-```
-
-### PathPattern
-
-PathPattern is a list of path patterns to match. Each must start with / and the only place a "\*" is allowed is at the end following a "/." The string fed to the path matcher does not include any text after the first? or \#, and those chars are not allowed here. Otherwise, any characters allowed in a URL are allowed in PathPattern. The supported patterns depend on whether you deploy Application Gateway v1 or v2.
-
-**PathBasedRouting rule**
-
-RequestRoutingRule of type PathBasedRouting is used to bind a listener to a urlPathMap. All requests that are received for this listener are routed based on policy specified in urlPathMap.
-
-## Configure rewrite policies in Application Gateway
-
-Application Gateway allows you to rewrite selected content of requests and responses. With this feature, you can translate URLs, query string parameters as well as modify request and response headers. It also allows you to add conditions to ensure that the URL or the specified headers are rewritten only when certain conditions are met. These conditions are based on the request and response information.
-
-HTTP header and URL rewrite features are only available for the Application Gateway v2 SKU.
-
-### Supported rewrite types
-
-Application Gateway supports multiple rewrite types.
-
-**Request and response headers**
-
-HTTP headers allow a client and server to pass additional information with a request or response. By rewriting these headers, you can accomplish important tasks, such as adding security-related header fields like HSTS/ X-XSS-Protection, removing response header fields that might reveal sensitive information, and removing port information from X-Forwarded-For headers.
-
-Application Gateway allows you to add, remove, or update HTTP request and response headers while the request and response packets move between the client and back-end pools.
-
-:::image type="content" source="../media/header-rewrite-overview-026d12c8.png" alt-text="HTTP header rewrite":::
-
-
-**URL path and query string**
-
-With URL rewrite capability in Application Gateway, you can:
-
- -  Rewrite the host name, path, and query string of the request URL
- -  Choose to rewrite the URL of all requests on a listener or only those requests which match one or more of the conditions you set. These conditions are based on the request and response properties (request, header, response header and server variables).
- -  Choose to route the request (select the backend pool) based on either the original URL or the rewritten URL. :::image type="content" source="../media/url-rewrite-overview-a5378a09.png" alt-text="Application Gateway URL rewrite":::
-    
-
-### Rewrite actions
-
-You use rewrite actions to specify the URL, request headers or response headers that you want to rewrite and the new value to which you intend to rewrite them to. The value of a URL or a new or existing header can be set to these types of values:
-
- -  Text
- -  Request header. To specify a request header, you need to use the syntax \{http\_req\_headerName\}
- -  Response header. To specify a response header, you need to use the syntax \{http\_resp\_headerName\}
- -  Server variable. To specify a server variable, you need to use the syntax \{var\_serverVariable\}. See the list of supported server variables
-
-A combination of text, a request header, a response header, and a server variable.
-
-### Rewrite conditions
-
-You can use rewrite conditions, an optional configuration, to evaluate the content of HTTP(S) requests and responses and perform a rewrite only when one or more conditions are met. The application gateway uses these types of variables to evaluate the content of requests and responses:
-
- -  HTTP headers in the request
- -  HTTP headers in the response
- -  Application Gateway server variables
-
-You can use a condition to evaluate whether a specified variable is present, whether a specified variable matches a specific value, or whether a specified variable matches a specific pattern.
-
-### Rewrite configuration
-
-To configure a rewrite rule, you need to create a rewrite rule set and add the rewrite rule configuration in it.
-
-A rewrite rule set contains:
-
- -  **Request routing rule association:** The rewrite configuration is associated to the source listener via the routing rule. When you use a basic routing rule, the rewrite configuration is associated with a source listener and is a global header rewrite. When you use a path-based routing rule, the rewrite configuration is defined on the URL path map. In that case, it applies only to the specific path area of a site. You can create multiple rewrite sets and apply each rewrite set to multiple listeners. But you can apply only one rewrite set to a specific listener.
- -  **Rewrite Condition:** It is an optional configuration. Rewrite conditions evaluate the content of the HTTP(S) requests and responses. The rewrite action will occur if the HTTP(S) request or response matches the rewrite condition. If you associate more than one condition with an action, the action occurs only when all the conditions are met. In other words, the operation is a logical AND operation.
- -  **Rewrite type:** There are three types of rewrites available:
-    
-     -  Rewriting request headers
-     -  Rewriting response headers
-     -  Rewriting URL components
-        
-         -  **URL path:** The value to which the path is to be rewritten to.
-         -  **URL Query String:** The value to which the query string is to be rewritten to.
-         -  **Re-evaluate path map:** Used to determine whether the URL path map is to be re-evaluated or not. If kept unchecked, the original URL path will be used to match the path-pattern in the URL path map. If set to true, the URL path map will be re-evaluated to check the match with the rewritten path. Enabling this switch helps in routing the request to a different backend pool post rewrite.
-
-For more information on Configuring rewrites in application Gateway, see [Rewrite HTTP headers and URL with Azure Application Gateway \| Microsoft Learn](/azure/application-gateway/rewrite-http-headers-url).
+- Associate a custom probe to monitor the backend health, set the request timeout interval, override host name and path in the request, and provide one-click ease to specify settings for the App Service backend.
