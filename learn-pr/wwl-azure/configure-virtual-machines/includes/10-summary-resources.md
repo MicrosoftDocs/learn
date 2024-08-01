@@ -4,7 +4,7 @@ In this module, you learned how to configure virtual machine names and locations
 
 The main takeaways from this module are:
 - Azure Virtual Machines is a type of on-demand, scalable computing resource offered by Azure that provides greater control over your computing environment.
-- When configuring virtual machines, it is important to consider factors such as network configuration, virtual machine name, location, size, storage, pricing options, and operating system.
+- When configuring virtual machines, it's important to consider factors such as network configuration, virtual machine name, location, size, storage, pricing options, and operating system.
 - There are multiple ways to connect to your Azure virtual machines. Remote Desktop Protocol (RDP) connects Windows-based virtual machines. Secure Shell (SSH) protocol connects to Linux-based virtual machines. Azure Bastion is a fully managed PaaS service that provides secure RDP/SSH connectivity to virtual machines directly over SSL.
 
 ## Learn more with documentation
