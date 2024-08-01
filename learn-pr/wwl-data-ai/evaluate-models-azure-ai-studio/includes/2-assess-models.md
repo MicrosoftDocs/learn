@@ -8,7 +8,7 @@ An input (1) is provided to a language model (2), and a response is generated as
 
 When you develop a custom copilot, you integrate a language model into a chat flow:
 
-:::image type="content" source="../media/chat-flow-diagram.png" alt-text="Diagram of a chat flow using a language model."  width="50":::
+:::image type="content" source="../media/chat-flow-diagram.png" alt-text="Diagram of a chat flow using a language model.":::
 
 A chat flow allows you to orchestrate executable flows that can combine multiple language models and Python code. The flow expects an input (1), processes it through executing various nodes (2), and generates an output (3). You can evaluate a complete chat flow, and its individual components.
 
