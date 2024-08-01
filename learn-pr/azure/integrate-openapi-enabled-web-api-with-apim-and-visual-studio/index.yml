@@ -12,7 +12,7 @@ metadata:
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: juyoo-01192022
-  ms.service: api-management
+  ms.service: azure-api-management
 abstract: |
   In this module, you will:
   - Add a web API described with an OpenAPI document to Azure API Management through Visual Studio.
