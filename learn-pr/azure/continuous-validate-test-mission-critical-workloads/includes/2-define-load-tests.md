@@ -41,6 +41,6 @@ Based on the answers:
 
    In the checkout process flow example, you could set a threshold for the average page load duration for each step to be less than 500 milliseconds and support up to 100 concurrent users.
 
-Now that all the threshold values are defined, you're now ready to implement load testing. This module uses [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing).
+Now that all the threshold values are defined, you can implement load testing. This module uses [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing).
 
 Although you can configure and deploy Azure Load Testing through the Azure portal, a programmatic approach is highly recommended. Use APIs to deploy, configure, and run the tests in an automated way. That approach is discussed in the next unit.
