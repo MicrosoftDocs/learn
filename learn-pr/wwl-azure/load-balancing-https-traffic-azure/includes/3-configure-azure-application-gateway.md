@@ -1,6 +1,6 @@
 Application Gateway has a series of components that combine to route requests to a pool of web servers and to check the health of these web servers.
 
-:::image type="content" source="../media/app-gateway-config-f068f2b5.png" alt-text="Diagram showing how Azure Application Gateway routes requests to a pool of web servers":::
+:::image type="content" source="../media/app-gateway-config-f068f2b5.png" alt-text="Diagram showing how Azure Application Gateway routes requests to a pool of web servers.":::
 
 
 ### Frontend configuration
@@ -9,7 +9,7 @@ You can configure the application gateway to have a public IP address, a private
 
 ### Backend configuration
 
-The backend pool is used to route requests to the backend servers that serve the request. Backend pools can be composed of NICs, virtual machine scale sets, public IP addresses, internal IP addresses, fully qualified domain names (FQDN), and multi-tenant back-ends like Azure App Service. You can create an empty backend pool with your application gateway and then add backend targets to the backend pool.
+The backend pool is used to route requests to the backend servers that serve the request. Backend pools can be composed of NICs, virtual machine scale sets, public IP addresses, internal IP addresses, fully qualified domain names (FQDN), and multitenant back-ends like Azure App Service. You can create an empty backend pool with your application gateway and then add backend targets to the backend pool.
 
 ## Configure health probes
 
@@ -58,7 +58,7 @@ The following table provides definitions for the properties of a custom health p
 |:-------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |        Name         |                                        Name of the probe. This name is used to identify and refer to the probe in back-end HTTP settings.                                         |
 |      Protocol       |                           Protocol used to send the probe. This property must match with the protocol defined in the back-end HTTP settings it is associated to                   |
-|        Host         | Host name to send the probe with. In v1 SKU, this value is used only for the host header of the probe request. In v2 SKU, it is used both as host header and SNI                  |
+|        Host         | Host name to send the probe with. In v1 SKU, this value is used only for the host header of the probe request. In v2 SKU, it's used both as host header and SNI                  |
 |        Path         |                                                             Relative path of the probe. A valid path starts with '/'                                                              |
 |        Port         |  If defined, this property is used as the destination port. Otherwise, it uses the same port as the HTTP settings that it is associated to. This property is only available in the v2 SKU  |
 |      Interval       |                                             Probe interval in seconds. This value is the time interval between two consecutive probes                                             |
