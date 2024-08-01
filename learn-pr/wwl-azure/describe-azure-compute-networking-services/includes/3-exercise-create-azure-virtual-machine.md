@@ -21,7 +21,7 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
       --generate-ssh-keys    
     ```
     
-    Your VM will take a few moments to come up. You named the VM **my-vm**. You use this name to refer to the VM in later steps.
+    Your VM takes a few moments to come up. You named the VM **my-vm**. You use this name to refer to the VM in later steps.
 2.  Run the following `az vm extension set` command to configure Nginx on your VM:
     
     ```azurecli
@@ -43,4 +43,4 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
 
 ## Continue
 
-That's all for this exercise. The sandbox will keep running, and you'll come back to this point in a few units to update the network configuration so you can get to the website.
+This exercise is complete for now. The sandbox keeps running, and you come back to this point in a few units to update the network configuration so you can get to the website.
