@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Add packages using the YaST admin tool
   description: Learn what packages are and how to use YaST to manage them on a SLES virtual machine.
-  ms.date: 06/15/2021
+  ms.date: 08/01/2024
   author: yenchiho
   ms.author: yenchiho
   ms.topic: unit
