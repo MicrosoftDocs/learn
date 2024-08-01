@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-03112021
-  ms.service: cache
+  ms.service: azure-cache-redis
 title: Accelerate a Spring Boot application with Azure Cache for Redis
 summary: Learn how to use Azure Cache for Redis to cache business data and HTTP session data in a Java Spring Boot application, then publish the application to the cloud.
 abstract: | 
