@@ -1,66 +1,6 @@
 {
   "redirections": [
     {
-      "source_path_from_root": "/learn-pr/paths/build-custom-text-analytics/index.md",
-      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/paths/build-qna-solution/index.md",
-      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/paths/conversational-language-understanding-nc/index.md",
-      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/paths/create-computer-vision-solutions-azure-cognitive-services/index.md",
-      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/paths/create-language-solution-azure-cognitive-services/index.md",
-      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/paths/extract-data-from-forms-use-form-recognizer/index.md",
-      "redirect_url": "/training/paths/extract-data-from-forms-document-intelligence/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/paths/extract-text-from-images-documents/index.md",
-      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/paths/form-recognizer-doc-intelligence-nc/index.md",
-      "redirect_url": "/training/paths/extract-data-from-forms-document-intelligence/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/paths/prepare-for-ai-engineering/index.md",
-      "redirect_url": "/training/paths/get-started-azure-ai/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/paths/process-translate-speech-azure-cognitive-speech-services/index.md",
-      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/paths/process-translate-text-azure-cognitive-services/index.md",
-      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/paths/provision-manage-azure-cognitive-services/index.md",
-      "redirect_url": "/training/paths/get-started-azure-ai/",
-      "redirect_document_id": true
-    },
-    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-ai-copilot-vcore-based-azure-cosmos-db-mongodb-azure-openai/index.yml",
       "redirect_url": "/training/paths/build-ai-copilot-vcore-based-azure-cosmos-db-mongodb-azure-openai/",
       "redirect_document_id": true

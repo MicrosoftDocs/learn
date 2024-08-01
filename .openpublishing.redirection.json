@@ -15861,12 +15861,22 @@
       "redirect_url": "https://learn.microsoft.com/training/paths/explore-azure-machine-learning-workspace/"
     },
     {
+      "source_path_from_root": "/learn-pr/paths/build-custom-text-analytics/index.md",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/paths/build-intelligent-edge-with-azure-iot-edge/index.md",
       "redirect_url": "/training/browse"
     },
     {
       "source_path_from_root": "/learn-pr/paths/build-low-touch-iot-solutions-by-using-azure-iot-central/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/evaluate-iot-scenario-with-iot-central/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/build-qna-solution/index.md",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/paths/build-serverless-full-stack-apps-azure/index.md",
@@ -15885,6 +15895,11 @@
       "redirect_url": "https://learn.microsoft.com/training/paths/configure-security-information-event-management-operations-using-microsoft-sentinel/"
     },
     {
+      "source_path_from_root": "/learn-pr/paths/conversational-language-understanding-nc/index.md",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/paths/create-azure-iot-services-azure-portal/index.md",
       "redirect_url": "/training/browse/?products=azure&terms=iot"
     },
@@ -15893,8 +15908,18 @@
       "redirect_url": "/training/paths/create-conversational-ai-solutions"
     },
     {
+      "source_path_from_root": "/learn-pr/paths/create-computer-vision-solutions-azure-cognitive-services/index.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/paths/create-conversational-ai-solutions/index.md",
       "redirect_url": "/training/paths/work-power-virtual-agents/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/create-language-solution-azure-cognitive-services/index.md",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/paths/create-language-understanding-solution/index.md",
@@ -16017,6 +16042,21 @@
       "redirect_url": "/training/browse/?products=azure&terms=iot"
     },
     {
+      "source_path_from_root": "/learn-pr/paths/extract-data-from-forms-use-form-recognizer/index.md",
+      "redirect_url": "/training/paths/extract-data-from-forms-document-intelligence/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/extract-text-from-images-documents/index.md",
+      "redirect_url": "/training/paths/create-computer-vision-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/form-recognizer-doc-intelligence-nc/index.md",
+      "redirect_url": "/training/paths/extract-data-from-forms-document-intelligence/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/paths/foster-ai-ready-culture/index.md",
       "redirect_url": "https://learn.microsoft.com/ai/"
     },
@@ -16101,12 +16141,32 @@
       "redirect_url": "https://learn.microsoft.com/certifications/exams/az-120#two-ways-to-prepare"
     },
     {
+      "source_path_from_root": "/learn-pr/paths/prepare-for-ai-engineering/index.md",
+      "redirect_url": "/training/paths/get-started-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/paths/process-classify-images-with-azure-cognitive-vision-services/index.md",
       "redirect_url": "/training/paths/create-computer-vision-solutions-azure-cognitive-services"
     },
     {
       "source_path_from_root": "/learn-pr/paths/process-natural-language-azure-cognitive-language-services/index.md",
       "redirect_url": "/training/paths/create-language-understanding-solution"
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/process-translate-speech-azure-cognitive-speech-services/index.md",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/process-translate-text-azure-cognitive-services/index.md",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/provision-manage-azure-cognitive-services/index.md",
+      "redirect_url": "/training/paths/get-started-azure-ai/",
+      "redirect_document_id": true
     },
     {
       "source_path_from_root": "/learn-pr/paths/publish-experiment-with-ml-studio/index.md",
