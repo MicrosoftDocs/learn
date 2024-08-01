@@ -85,7 +85,6 @@ PowerShell DSC is a technology that implements declarative configuration managem
 Azure Automanage machine best practices is a service that eliminates the need to discover, know how to onboard, and how to configure certain services in Azure that would benefit your Arc-enabled server. After onboarding your machines to Azure Automanage, each best practice service is configured to its recommended settings. Azure Automanage also automatically monitors and corrects for drift when detected. Participating services include:
 
 - Machines Insights Monitoring
-- Update Management
 - Change Tracking & Inventory
 - Azure Guest Configuration
 - Azure Automation Account
