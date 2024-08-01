@@ -1,6 +1,6 @@
 Let's take a look at how Azure Backup works to provide the data protection you need. Particularly, how the different aspects of the backup service make it easy to back up various types of data and how it offers security for your backups as well. In this unit, we discover the following aspects of the Azure Backup Service:
 
-- **Workload integration layer - Backup Extension**. Integration with the actual workload, such as Azure virtual machines (VM) or Azure Blobs, happens at this layer.
+- **Workload integration layer - Backup Extension**. Integration with the actual workload, such as Azure virtual machines (VMs) or Azure Blobs, happens at this layer.
 - **Data Plane - Access Tiers**. Three access tiers where the backups could be stored:
   - Snapshot tier
   - Standard tier
