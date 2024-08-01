@@ -4,10 +4,12 @@ title: Explore SAP HANA availability
 metadata:
   title: Explore SAP HANA availability
   description: "Explore different methods for ensuring SAP HANA availability."
-  ms.date: 07/30/2024
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/9-explore-sap-hana-availability.md)]
