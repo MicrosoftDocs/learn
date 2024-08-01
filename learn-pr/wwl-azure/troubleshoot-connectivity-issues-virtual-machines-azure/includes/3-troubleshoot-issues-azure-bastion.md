@@ -41,23 +41,24 @@ If the connection to the VM is working but you can't sign in, check if it's doma
 The AzureBastionSubnet isn't assigned an NSG by default. If your organization needs an NSG, you should ensure its configuration is correct in the Azure portal.
 
 Inbound rules:
+
 | Name | Port | Protocol | Source | Destination | Action |
 | - | - | - | - | - | - |
 | AllowHttpsInbound | 443 | TCP | Internet | Any | Allow |
 | AllowGatewayManagerInbound | 443 | TCP | GatewayManager | Any | Allow |
 | AllowAzureLoadBalancerInbound | 443 | TCP | AzureLoadBalancer | Any | Allow |
-| AllowBastionHostCommunication | 8080, 5701 | Any | VirtualNetwork | VirtualNetwork | Allow
+| AllowBastionHostCommunication | 8080, 5701 | Any | VirtualNetwork | VirtualNetwork | Allow |
 
 :::image type="content" source="../media/inbound.png" alt-text="A screenshot of the preceding inbound rules in the Azure portal." lightbox="../media/inbound.png":::
 
 Outbound rules:
+
 | Name | Port | Protocol | Source | Destination | Action |
 | - | - | - | - | - | - |
 | AllowSshRdpOutbound | 22, 3389 | Any | Any | VirtualNetwork | Allow |
 | AllowAzureCloudOutbound | 443 | TCP | Any | AzureCloud | Allow |
 | AllowBastionCommunication | 8080, 5701 | Any | VirtualNetwork | VirtualNetwork | Allow |
-| AllowGetSessionInformation | 80 | Any | Any | Internet | Allow
-
+| AllowGetSessionInformation | 80 | Any | Any | Internet | Allow |
 
 :::image type="content" source="../media/outbound.png" alt-text="A screenshot of the preceding outbound rules in the Azure portal." lightbox="../media/outbound.png":::
 
