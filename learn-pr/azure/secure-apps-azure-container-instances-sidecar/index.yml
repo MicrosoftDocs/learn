@@ -7,7 +7,7 @@ metadata:
   author: erjosito
   ms.author: jomore
   ms.topic: module
-  ms.service: container-instances
+  ms.service: azure-container-instances
 title: Use Azure Container Instances sidecar containers and private addressing
 summary: Learn to use YAML to define container instances, add functionality with sidecar and initialization containers, and use Azure Private Link for greater security.
 abstract: |
