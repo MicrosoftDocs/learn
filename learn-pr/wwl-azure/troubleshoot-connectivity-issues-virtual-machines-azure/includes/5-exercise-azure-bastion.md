@@ -32,7 +32,8 @@ Bastion isn't supported in the Learn sandbox environment. To view this exercise,
 
 1. If there are any zones listed, check that they don’t end in **azure.com** or **core.windows.net**.
 
-   :::image type="content" source="../media/invalid-private-zone.png" alt-text="Screenshot showing a private DN  zone that causes connection problems for Azure Bastion.":::
+   :::image type="content" source="../media/invalid-private-zone.png" alt-text="Screenshot showing a private DNS zone that causes connection problems for Azure Bastion.":::
+
 ## Check if AzureBastionSubnet is using a Network Security Group correctly
 
 1. In the Azure portal, in the search box, type **Bastions**.
@@ -41,11 +42,11 @@ Bastion isn't supported in the Learn sandbox environment. To view this exercise,
 
 1. Select the Bastion you're troubleshooting.
 
-   :::image type="content" source="../media/azure-bastion-subnet-link.png" alt-text="A screenshot showing the Virtual network/subnet link on the Bastion pane.":::
+   :::image type="content" source="../media/azure-bastion-subnet-link.png" alt-text="A screenshot showing the Virtual network/subnet link on the Bastion pane." lightbox="../media/azure-bastion-subnet-link.png":::
 
 1. In the top right, select the **Virtual network/subnet** link.
 
-   :::image type="content" source="../media/virtual-network-subnets.png" alt-text="A screenshot of the subnets menu highlighted on the virtual network pane, with the AzureBastionSubnet selected.":::
+   :::image type="content" source="../media/virtual-network-subnets.png" alt-text="A screenshot of the subnets menu highlighted on the virtual network pane, with the AzureBastionSubnet selected." lightbox="../media/virtual-network-subnets.png":::
 
 1. Under **Settings**, select **Subnets**, and then choose **AzureBastionSubnet**.
 
@@ -74,7 +75,7 @@ Bastion isn't supported in the Learn sandbox environment. To view this exercise,
 
 :::image type="content" source="../media/connection-troubleshooting-wizard.png" alt-text="A screenshot of the Azure Bastion connection troubleshooting wizard.":::
 
-    If you’ve resolved all the possible connection issues, the connection troubleshoot wizard should return a status of reachable.
+If you’ve resolved all the possible connection issues, the connection troubleshoot wizard should return a status of reachable.
 
 :::image type="content" source="../media/troubleshooot-results.png" alt-text="A screenshot of the connection troubleshoot results, showing the stats as reachable.":::
 
