@@ -39,7 +39,7 @@ When you run the tests, you might have different requirements for special use ca
 
 Use [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing) to evaluate how your system performs against defined thresholds. The service has a built-in [test criteria](/azure/load-testing/how-to-define-test-criteria?tabs=portal) capability. That is, you can specify criteria that a load test needs to pass.
 
-You can use test criteria to implement different baselines. For example:
+You can use test criteria to implement different baselines, as shown in the following example screenshot.
 
 :::image type="content" source="../media/deployment-testing-test-criteria.png" alt-text="Azure portal screenshot of a table that shows sample test criteria." lightbox="../media/deployment-testing-test-criteria.png":::
 

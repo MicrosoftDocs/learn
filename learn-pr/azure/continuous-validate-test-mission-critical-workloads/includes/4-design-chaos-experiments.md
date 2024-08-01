@@ -18,7 +18,7 @@ Let's see the outcome of FMA done for the components of the Contoso Shoes checko
 |---|---|---|
 |**Availability zone outage**| Instances in that zone might become unavailable. </br>Full outage isn't expected because zone redundancy is enabled on the App Service plan.| Allow for the extra load on the remaining instances and provide enough head room for this scenario while still achieving the performance targets.|
 |[**SNAT port exhaustion**](/azure/app-service/troubleshoot-intermittent-outbound-connection-errors)| Outbound connections can't be created. As a result, downstream calls, such as calls to the database, fail.|Use private endpoints for connecting to the downstream components. |
-|**Individual instance becoming unhealthy** | User traffic routed to an unhealthy instance might see poor performance or even fail entirely.|The App Service health check feature causes unhealthy instances to be automatically identified and replaced by new, healthy instances. |
+|**Individual instance becoming unhealthy** | User traffic routed to an unhealthy instance might see poor performance or even fail entirely.|Use the App Service health check feature. This feature causes unhealthy instances to be automatically identified and replaced by new, healthy instances. |
 
 ##### Azure Functions for checkout logic
 

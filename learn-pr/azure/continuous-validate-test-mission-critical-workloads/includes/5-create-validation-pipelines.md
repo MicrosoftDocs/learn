@@ -22,7 +22,7 @@ To create a CI/CD pipeline, you can use Azure Pipelines, GitHub Actions, or the 
 
 1. To properly view the impact of the injected faults, make sure that the load test starts before the faults are injected. Continue to run the test for a while after the chaos experiment is finished.
 
-   :::image type="content" source="../media/deployment-testing-test-criteria.png" border="false" alt-text="Azure portal screenshot that shows a sample test criteria table.":::
+   :::image type="content" source="../media/deployment-testing-test-criteria.png" alt-text="Azure portal screenshot that shows a sample test criteria table." source="../media/deployment-testing-test-criteria.png":::
 
 1. Analyze the failed load tests to see whether the baseline is still accurate or whether it needs to be adjusted.
 
