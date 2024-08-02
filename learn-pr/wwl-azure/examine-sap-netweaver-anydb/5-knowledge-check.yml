@@ -27,7 +27,7 @@ quiz:
     - content: "ExpressRoute"
       isCorrect: true
       explanation: "Correct. A virtual gateway facilitates extending a user's on-premises network to the Azure virtual network. ExpressRoute is the recommended service for cross-premises connectivity of SAP deployments in Azure, but a Site-to-Site VPN or Virtual WAN can serve as alternatives."
-  - content: "Which of the following is a potential single point of failure when deployed to a single virtual machine?"
+  - content: "Which of the following services is a potential single point of failure when deployed to a single virtual machine?"
     choices:
     - content: "SAP Web Dispatcher pool"
       isCorrect: false
