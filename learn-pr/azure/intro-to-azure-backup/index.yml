@@ -9,7 +9,7 @@ metadata:
   author: AbhishekMallick-MS      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: v-abhmallick           # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: module-intro-to-product
-  ms.service: backup
+  ms.service: azure-backup
 ###########################################################################
 ###
 ### Do not edit: title must be "Introduction to <product>"
