@@ -14,7 +14,7 @@ metadata:
 title: Examine SAP NetWeaver with AnyDB on Azure virtual machines
 summary: Examine the architecture options available when deploying SAP AnyDB workloads on Azure VMs.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you're able to:
 
   -   Explore SAP NetWeaver with AnyDB on Azure virtual machines and learn to recognize the architecture's components.
 
