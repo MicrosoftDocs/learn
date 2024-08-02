@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ci-cd-workflows-pipelines-azure-databricks.environments
+title: Managing environment and configuration management
+metadata:
+  title: Managing environment and configuration management
+  description: "Managing environment and configuration management"
+  ms.date: 08/01/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/04-environments.md)]

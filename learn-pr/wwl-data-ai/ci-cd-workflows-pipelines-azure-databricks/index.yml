@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.ci-cd-workflows-pipelines-azure-databricks
+metadata:
+  title: Implement CI/CD workflows with Delta Live Tables pipelines in Azure Databricks
+  description: Implement CI/CD workflows with Delta Live Tables pipelines in Azure Databricks
+  ms.date: 08/01/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: module
+  ms.service: azure
+title: Implement CI/CD workflows with Delta Live Tables pipelines in Azure Databricks
+summary: Learn how to implement CI/CD workflows with Delta Live Tables (DLT) pipelines in Azure Databricks to automate the integration and delivery of code changes. 
+abstract: |
+  In this module, you learn how to:
+  - Implement version control and git integration.
+  - Perform unit testing and integration testing.
+  - Maintain environment and configuration management.
+  - Implement rollback and roll-forward strategies.
+prerequisites: |
+  Before starting this module, you should have a fundamental knowledge of data analytics concepts. Consider completing [Azure Data Fundamentals certification](/certifications/azure-data-fundamentals?azure-portal=true) before starting this module.
+iconUrl: /learn/achievements/describe-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.ci-cd-workflows-pipelines-azure-databricks.introduction
+- learn.wwl.ci-cd-workflows-pipelines-azure-databricks.version-control
+- learn.wwl.ci-cd-workflows-pipelines-azure-databricks.testing
+- learn.wwl.ci-cd-workflows-pipelines-azure-databricks.environments
+- learn.wwl.ci-cd-workflows-pipelines-azure-databricks.rollback-rollforward
+- learn.wwl.ci-cd-workflows-pipelines-azure-databricks.exercise
+- learn.wwl.ci-cd-workflows-pipelines-azure-databricks.knowledge-check
+- learn.wwl.ci-cd-workflows-pipelines-azure-databricks.summary
+badge:
+  uid: learn.wwl.ci-cd-workflows-pipelines-azure-databricks.badge
