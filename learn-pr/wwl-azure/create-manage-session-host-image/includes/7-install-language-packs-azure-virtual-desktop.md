@@ -48,6 +48,9 @@ To run sysprep:
 ```
 C:\Windows\System32\Sysprep\sysprep.exe /oobe /generalize /shutdown
 
+
+
+
 ```
 
 2.  Stop the VM, then capture it in a managed.
@@ -67,6 +70,9 @@ $LanguageList.Add("es-es")
 $LanguageList.Add("fr-fr")
 $LanguageList.Add("zh-cn")
 Set-WinUserLanguageList $LanguageList -force
+
+
+
 
 ```
 

@@ -19,12 +19,14 @@ One managed image supports up to 20 simultaneous deployments. Attempting to crea
 
 ## Use the portal
 
-1.  Go to the [Azure portal](https://portal.azure.com) to find a managed image. Search for and select **Images**.:::image type="content" source="../media/create-images-1-bea4f083.png" alt-text="Image of searching for and selecting of images.":::
+1.  Go to the [Azure portal](https://portal.azure.com) to find a managed image. Search for and select **Images**.
     
-
-2.  Select the image you want to use from the list. The image **Overview** page opens.:::image type="content" source="../media/create-vm-from-image-41027054.png" alt-text="Image of creating virtual machine from image.":::
+    :::image type="content" source="../media/create-images-1-bea4f083-bd73825e-862a8413-80563c6a.png" alt-text="Image of searching for and selecting of images.":::
     
-
+2.  Select the image you want to use from the list. The image **Overview** page opens.
+    
+    :::image type="content" source="../media/create-vm-from-image-41027054-37daa226-cf051723-ff4faa87.png" alt-text="Image of creating virtual machine from image.":::
+    
 3.  Select **Create virtual machine** from the menu.
 4.  Enter the virtual machine information. The user name and password entered here will be used to log in to the virtual machine. When complete, select **OK**. You can create the new virtual machine in an existing resource group, or choose **Create new** to create a new resource group to store the virtual machine.
 5.  Select a size for the virtual machine. To see more sizes, select **View all** or change the **Supported disk type** filter.
@@ -45,6 +47,9 @@ You can also run the following cmdlet in PowerShell to disable checkpoints.
 
 ```powershell
 Set-VM -Name <VMNAME> -CheckpointType Disabled
+
+
+
 ```
 
 ## Fixed disk
@@ -55,6 +60,9 @@ You can also run the following PowerShell cmdlet to change the disk to a fixed d
 
 ```powershell
 Convert-VHD –Path c:\test\MY-VM.vhdx –DestinationPath c:\test\MY-NEW-VM.vhd -VHDType Fixed
+
+
+
 ```
 
 ## Upload master image to a storage account in Azure

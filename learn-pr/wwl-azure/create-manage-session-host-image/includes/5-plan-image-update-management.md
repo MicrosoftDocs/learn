@@ -1,6 +1,6 @@
 An Azure Compute Gallery simplifies custom image sharing across your organization. Custom images are like marketplace images, but you create them yourself. Custom images can be used to bootstrap deployment tasks like preloading applications, application configurations, and other OS configurations.
 
-The Azure Compute Gallery lets you share your custom VM images with others in your organization, within or across regions, within a Microsoft Entra tenant. Choose the images you want to share, the regions you want to make them available in, and who you want to share them with. You can create multiple galleries so that you can logically group shared images.
+The Azure Compute Gallery lets you share your custom VM images with others in your organization, within or across regions, within an Azure Active Directory tenant. Choose the images you want to share, the regions you want to make them available in, and who you want to share them with. You can create multiple galleries so that you can logically group shared images.
 
 The gallery is a top-level resource that provides full Azure role-based access control (RBAC). Images can be versioned, and you can choose to replicate each image version to a different set of Azure regions. The gallery only works with Managed Images.
 
@@ -15,9 +15,9 @@ Azure Compute Gallery is a service that helps you build structure and organizati
 
 Using an Azure Compute Gallery you can share your images to different users, service principals, or AD groups within your organization. Shared images can be replicated to multiple regions, for quicker scaling of your deployments.
 
-Use an Azure Compute Gallery as a repository for images you want to make available within your company.
+Use an Azure Compute Gallery as a repository for images you wan to make available within your company.
 
-The Azure Compute Gallery feature has multiple resource types:<br>
+The Azure Compute Gallery feature has multiple resource types:
 
 | **Resource**     | **Description**                                                                                                                                                                                                                                                                                                           |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,7 +65,7 @@ With Azure Compute Gallery, you can now deploy up to a 1,000 VM instances in a v
 
 We always recommend you to overprovision the number of replicas due to factors like image size, content, and OS type.
 
-:::image type="content" source="../media/scaling-c888ba94.png" alt-text="Graphic showing how you can scale images":::
+:::image type="content" source="../media/scaling-c888ba94-5a81fb01-adbbd92d-357a76db.png" alt-text="Graphic showing how you can scale images":::
 
 
 ## Make your images highly available
@@ -74,7 +74,7 @@ Azure Zone Redundant Storage (ZRS) provides resilience against an Availability Z
 
 You can also choose the account type for each of the target regions. The default storage account type is Standard\_LRS, but you can choose Standard\_ZRS for regions with Availability Zones. Check the regional availability of ZRS here.
 
-:::image type="content" source="../media/azure-zone-redundant-storage-choose-ca00f1b4.png" alt-text="Graphic showing ZRS.":::
+:::image type="content" source="../media/azure-zone-redundant-storage-choose-ca00f1b4-414d4d37-e5cd1279-2392ba6f.png" alt-text="Graphic showing ZRS.":::
 
 
 ## Replication
@@ -83,7 +83,7 @@ Azure Compute Gallery also allows you to replicate your images to other Azure re
 
 The regions an Azure Compute Gallery version is replicated to can be updated after creation time. The time it takes to replicate to different regions depends on the amount of data being copied and the number of regions the version is replicated to. While the replication is happening, you can view the status of replication per region. Once the image replication is complete in a region, you can then deploy a VM or scale-set using that image version in the region.
 
-:::image type="content" source="../media/shared-image-replication-efbf1980.png" alt-text="Graphic showing how you can replicate images.":::
+:::image type="content" source="../media/shared-image-replication-efbf1980-db7fa7b0-bb71211d-d773ef62.png" alt-text="Graphic showing how you can replicate images.":::
 
 
 ## Access

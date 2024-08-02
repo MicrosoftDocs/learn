@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-session-host-image.manage-license-session-hosts-run-windows-client
+title: Manage licensing for session hosts that run Windows client
+metadata:
+  title: Manage licensing for session hosts that run Windows client
+  description: "Manage licensing for session hosts that run Windows client"
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-manage-license-session-hosts-run-windows-client.md)]

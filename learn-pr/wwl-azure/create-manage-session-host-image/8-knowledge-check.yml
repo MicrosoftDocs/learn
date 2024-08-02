@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-session-host-image.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A team is working on automating customizations using Azure VM Image Builder and distributing the image to an Azure Compute Gallery. They are using an Azure Resource Manager template with the VM Image Builder template nested within it. What should they ensure for their PowerShell customizer scripts to avoid the build from stopping?"
+    choices:
+    - content: "Ensure that user prompts are included in the scripts"
+      isCorrect: false
+      explanation: "Incorrect. User prompts can interrupt the automation process and should be avoided."
+    - content: "Ensure that the scripts return a non-zero exit code"
+      isCorrect: false
+      explanation: "Incorrect. Non-zero exit codes will cause the VM Image Builder to fail the customization and stop the build."
+    - content: "Ensure that all scripts return a zero exit code"
+      isCorrect: true
+      explanation: "Correct. VM Image Builder expects all scripts to return a zero exit code. Non-zero exit codes will cause the build to stop."
+  - content: "A team is working on a project that requires frequent creation and teardown of environments. They need a solution that can automate this process while ensuring secure and stable application hosting platforms. What should they use?"
+    choices:
+    - content: "Azure Zone Redundant Storage (ZRS)"
+      isCorrect: false
+      explanation: "Incorrect. Azure ZRS provides resilience against an Availability Zone failure, but it does not automate the creation and teardown of environments."
+    - content: "Azure Compute Gallery"
+      isCorrect: false
+      explanation: "Incorrect. While Azure Compute Gallery allows for image replication and storage, it does not automate the creation and teardown of environments."
+    - content: "Infrastructure as Code (IaC)"
+      isCorrect: true
+      explanation: "Correct. Infrastructure as Code (IaC) enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "A developer needs to create a virtual machine from an existing VHD. They have opened the New Virtual Machine Wizard and selected Generation 1 under Specify Generation. They have also disabled checkpoints. What should they do next to ensure the virtual machine is created with a fixed disk?"
+    choices:
+    - content: "They should run the cmdlet 'Set-VM -Name VMNAME -VHDType Fixed' in PowerShell."
+      isCorrect: false
+      explanation: "Incorrect. This cmdlet does not exist in PowerShell for setting the VHD type."
+    - content: "They should select 'Fixed Disk' under 'Disk Type'."
+      isCorrect: false
+      explanation: "Incorrect. There is no 'Disk Type' option in the New Virtual Machine Wizard."
+    - content: "They should select 'Edit Disk' after creating the virtual machine and change the disk to a fixed disk."
+      isCorrect: true
+      explanation: "Correct. The disk type can be changed to a fixed disk by selecting 'Edit Disk' after the virtual machine has been created."
+  - content: "A system administrator needs to generalize an image using the command C Windows System32 Sysprep sysprep.exe oobe generalize shutdown. After stopping the VM and capturing it in a managed state, what should be the next step to ensure users can select their preferred language in the Settings menu?"
+    choices:
+    - content: "The administrator should restart the VM and let the users choose their preferred language on first login."
+      isCorrect: false
+      explanation: "Incorrect. Simply restarting the VM does not allow users to select their preferred language."
+    - content: "The administrator should manually change the language settings for each user."
+      isCorrect: false
+      explanation: "Incorrect. Manually changing the language settings for each user is not efficient or practical."
+    - content: "The administrator should run a PowerShell cmdlet to add the installed language packs to the Languages menu."
+      isCorrect: true
+      explanation: "Correct. Running a PowerShell cmdlet allows the installed language packs to be added to the Languages menu, enabling users to select their preferred language."

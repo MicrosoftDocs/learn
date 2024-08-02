@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-session-host-image.create-virtual-desktop-image-image-build
+title: Create an Azure Virtual Desktop image by using VM Image Builder and PowerShell
+metadata:
+  title: Create an Azure Virtual Desktop image by using VM Image Builder and PowerShell
+  description: "Create an Azure Virtual Desktop image by using VM Image Builder and PowerShell"
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-create-virtual-desktop-image-image-build.md)]

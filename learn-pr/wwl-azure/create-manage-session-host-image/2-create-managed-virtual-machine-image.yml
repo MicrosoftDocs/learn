@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-manage-session-host-image.create-managed-vm-image
-title: Create a managed virtual machine (VM) image
+uid: learn.wwl.create-manage-session-host-image.create-managed-virtual-machine-image
+title: Create a golden image in Azure
 metadata:
-  title: Create a managed virtual machine (VM) image
-  description: "Create a managed virtual machine (VM) image"
-  ms.date: 08/17/2023
+  title: Create a golden image in Azure
+  description: "Create a golden image in Azure"
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/2-create-managed-virtual-machine-image.md)]
