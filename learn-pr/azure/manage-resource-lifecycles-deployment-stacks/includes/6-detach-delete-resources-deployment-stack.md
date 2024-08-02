@@ -35,7 +35,7 @@ A detached resource, also known as an unmanaged resource, is a resource that is 
 There are two values of the _action on unmanage_ parameter that set resources, resource groups, and management groups to detach when the deployment stack no longer manages them.
 
 ::: zone pivot="cli"
-
+Deployment stacks can't delete Key vault secrets. If you're removing key vault secrets from a template, make sure to also execute the deployment stack update/delete command with detach mode.
 - `deleteResources` - deletes resources, but detaches resource groups and management groups
 - `detachAll` - detaches all resources, resource groups, and management groups
 
