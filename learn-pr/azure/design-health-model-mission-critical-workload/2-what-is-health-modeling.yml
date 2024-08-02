@@ -35,7 +35,7 @@ quiz:
     choices:
     - content: "The health model is multidimensional, the entire system is separated into layers, and you filter only for the layer that's relevant to you."
       isCorrect: false
-      explanation: "Incorrect. While a layered health model is multidimensional and it separates the system into layers, filtering on a single layer isn't the purpose of a health model. A health model provides value when it's analyzed and observed as a whole."
+      explanation: "Incorrect. While a layered health model is multidimensional and it separates the system into layers, filtering on a single layer isn't the purpose of a health model. A health model provides value when analyzed and observed as a whole."
     - content: "The health model is multidimensional, the entire system is separated into layers, and you observe the system as a whole."
       isCorrect: true
-      explanation: "Correct. A layered health model provides value when it's analyzed and observed as whole. Each layer of the health model captures what its healthy and unhealthy states represent. Health status of lower-level dependencies helps to quickly find the cause of service degradation."
+      explanation: "Correct. A layered health model provides value when analyzed and observed as whole. Each layer of the health model captures what its healthy and unhealthy states represent. Health status of lower-level dependencies helps to quickly find the cause of service degradation."

@@ -7,10 +7,11 @@ metadata:
   author: msimecek
   ms.author: prwilk
   ms.topic: module
+  ms.service: azure
 title: Design a health model for your mission-critical workload
 summary: A well-designed application **health model** gives you contextualized observability by using metrics and thresholds, which _you_ consider important for your mission-critical workload.
 abstract:  | 
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
   -	Identify user flows and key application components of an application architecture.
   -	Identify key metrics to use as the foundation of an application health model.
   - Build a layered health model for an application.
