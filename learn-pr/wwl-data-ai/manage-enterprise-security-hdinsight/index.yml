@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: module
-  ms.service: hdinsight
+  ms.service: azure-hdinsight
 title: Manage enterprise security in HDInsight
 summary: Azure HDInsight with other Azure services provide a comprehensive multi-tiered security solution and is a shared responsibility between Microsoft and the customer.
 abstract: |
