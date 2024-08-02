@@ -97,7 +97,7 @@ The app checks for an existing pool and creates one if it doesn't exist. The job
 
 ## Clean up
 
-1. Inside the using block, bellow the call to the `MonitorTasks` method call, add this clean up code.
+1. Inside the using block, below the call to the `MonitorTasks` method call, add this cleanup code.
 
     ```csharp
     // Delete input container in storage

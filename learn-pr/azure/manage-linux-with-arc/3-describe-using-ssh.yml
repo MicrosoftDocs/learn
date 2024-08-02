@@ -4,7 +4,7 @@ title: Describe how to use SSH in Azure Arc to manage Linux
 metadata:
   title: Describe how to use SSH in Azure Arc to manage Linux
   description: Describe how to use SSH with Azure Arc to manage Linux systems
-  ms.date: 11/21/2023
+  ms.date: 07/30/2024
   author: johnmarco
   ms.author: johnmarc
   ms.topic: unit

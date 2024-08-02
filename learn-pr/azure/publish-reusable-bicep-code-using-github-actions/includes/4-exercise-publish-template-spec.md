@@ -21,7 +21,7 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
    The workflow definition includes two triggers. In this exercise, you don't modify the Bicep file for the template spec, so the `push` trigger never fires. To try out your workflow, you manually invoke it by using the `workflow_dispatch` trigger.
 
-1. At the bottom of the file, where you see a comment that says **To be added**, add the following lint job definition:
+1. At the bottom of the file, where you see a comment that says `# To be added`, add the following lint job definition:
 
    :::code language="yaml" source="code/4-workflow.yml" range="22-28" highlight="2-7" :::
 
@@ -75,7 +75,7 @@ Now, you can add a second job to publish the template spec to Azure.
 
    :::image type="content" source="../media/4-actions.png" alt-text="Screenshot of GitHub that shows the Actions tab.":::
 
-   Failed workflow runs are listed already, but you don't need to worry about them. They failed because the workflow definitions weren't yet completed when you created the repository.
+   Failed workflow runs are listed already, but you don't need to worry about them. The runs failed because the workflow definitions weren't yet completed when you created the repository.
 
 1. Select the **template-spec-linux-app-service** workflow, select the **Run workflow** button, and then select **Run workflow**.
 

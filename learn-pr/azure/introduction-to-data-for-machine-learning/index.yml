@@ -8,6 +8,7 @@ metadata:
   author: fbsolo-ms1
   ms.author: franksolomon
   ms.topic: module
+  ms.collection: ce-skilling-ai-copilot
 title: Introduction to data for machine learning
 summary: The power of machine learning models comes from the data that is used to train them. Through content and exercises, we explore how to understand your data, how to encode it so that the computer can interpret it properly, how to clean any errors, and tips that will help you create high performance models.
 abstract: | 

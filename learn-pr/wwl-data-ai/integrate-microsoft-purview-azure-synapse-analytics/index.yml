@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module-standard-task-based
-  ms.service: synapse-analytics
+  ms.service: azure-synapse-analytics
   ms.subservice: purview
 title: Integrate Microsoft Purview and Azure Synapse Analytics
 summary: Learn how to integrate Microsoft Purview with Azure Synapse Analytics to improve data discoverability and lineage tracking.

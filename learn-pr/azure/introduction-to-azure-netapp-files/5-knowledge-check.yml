@@ -5,9 +5,9 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Azure NetApp Files.
-  ms.date: 06/10/2024
+  ms.date: 07/30/2024
   author: mengruts
-  ms.author: mengtsai
+  ms.author: anfdocs
   ms.topic: unit
 durationInMinutes: 5
 content: |
@@ -15,15 +15,15 @@ quiz:
   questions:
   - content: "If both Windows and Linux machines are accessing an Azure NetApp Files volume, which is the best file protocol option to assign to the volume?"
     choices:
-    - content: "NFSv4"
+    - content: "NFSv4.1"
       isCorrect: false
-      explanation: "Incorrect. While Linux machines can readily access Azure NetApp Files volumes that use only the NFSv4 protocol, mounting a Network File System (NFS) volume in Windows is a complex task."
+      explanation: "Incorrect. Although Linux machines can readily access Azure NetApp Files volumes that use only the NFSv4.1 protocol, mounting Network File System (NFS) volumes in Windows is a complex task."
     - content: "SMB3"
       isCorrect: false
-      explanation: "Incorrect. Windows machines can only access Azure NetApp Files volumes that use the SMB3 protocol. However, mounting a Server Message Block (SMB) volume in Linux requires more configuration."
+      explanation: "Incorrect. Although Windows machines can readily access Azure NetApp Files volumes that use only the SMB3 protocol, mounting Server Message Block (SMB) volumes in Linux is a complex task."
     - content: "NFSv3 and SMB3"
       isCorrect: true
-      explanation: "Correct. Azure NetApp Files supports creating volumes that use NFSv3 and SMB3 simultaneously. This capability enables both Linux and Windows machines to mount the volume without extra configuration."
+      explanation: "Correct. Azure NetApp Files supports creating volumes that use NFSv3 and SMB3 simultaneously."
   - content: "An enterprise app requires 128 MiB/s throughput and a 2-TiB volume size. Which Azure NetApp Files service tier should be selected when creating the capacity pool, assuming the pool uses automatic QoS?"
     choices:
     - content: "Premium"
@@ -34,37 +34,16 @@ quiz:
       explanation: "Incorrect. The Ultra tier provides up to 128 MiB/s of throughput per 1 TiB of capacity provisioned. So, provisioning 2 TiB for the volume provides up to 256 MiB/s throughput, which is more than the requirement."
     - content: "Standard"
       isCorrect: false
-      explanation: "Incorrect. The Standard tier provides up to 16 MiB/s of throughput per 1 TiB of capacity provisioned. So, provisioning 2 TiB for the volume provides up to 32 MiB/s throughput, which is less than the requirement."
-  - content: "Suppose a Virtual desktop infrastructure (VDI) administrator who is responsible for thousands of virtual desktops is working on an infrastructure. A key consideration for the infrastructure is the capability to roll back any user profile to an earlier configuration. This capability is useful for troubleshooting. The infrastructure must also have the capability of reverting an entire volume to an earlier state, which can help the company recover from a ransomware attack. Which of the following Azure NetApp Files features provides the required capabilities?"
+      explanation: "Incorrect. The Standard tier provides 16 MiB/s per 1 TiB of capacity provisioned, which in this case would only yield 32 MiB/s throughput."
+  - content: "Which of the following options is a true statement about Azure NetApp Files volumes?"
     choices:
-    - content: "Quality of Service"
+    - content: "The minimum volume size is 50 TiB for regular volumes."
       isCorrect: false
-      explanation: "Incorrect. Quality of Service is a method for assigning throughput to a capacity pool (Auto or Manual). You can't use this setting to revert Azure NetApp Files data to an earlier state."
-    - content: "NetApp Cloud Sync"
+      explanation: "Incorrect. For regular Azure NetApp Files volumes, the minimum volume size is 100 GiB and the maximum size is 100 TiB. Azure NetApp Files supports large volumes up to 500 TiB in size."
+    - content: "Each volume can belong to multiple capacity pools."
       isCorrect: false
-      explanation: "Incorrect. NetApp Cloud Sync is a third-party service for transferring NAS data between on-premises and cloud storage. You can't use this service to revert Azure NetApp Files data to an earlier state."
-    - content: "Snapshots"
+      explanation: "Azure NetApp Files volumes are accessible only within your virtual private network."
+    - content: "Azure NetApp Files volumes are accessible only within your virtual private network."
       isCorrect: true
-      explanation: "Correct. A snapshot is a point-in-time image of a volume that enables you to roll back files and directories to an earlier state and to revert the entire volume to an earlier configuration."
-  - content: "Suppose an IT administrator is asked to research the viability of moving the company's enterprise apps to Azure, and using Azure NetApp Files for the apps' shared storage. The main constraint they face is a minimal budget to perform the actual migration. Because of this constraint, the migration must be performed with little or no modifications to the app code, data, or configuration. Which of the following options best describes this type of migration?"
-    choices:
-    - content: "Low latency"
-      isCorrect: false
-      explanation: "Incorrect. Latency is the time required to access a particular storage location and has nothing to do with migrating workloads to the cloud."
-    - content: "Lift and shift"
-      isCorrect: true
-      explanation: "Correct. A lift-and-shift migration is one where you transition your workload into the cloud without having to change the components, configuration, or code of your application."
-    - content: "Subnet delegation"
-      isCorrect: false
-      explanation: "Incorrect. A delegated subnet is a subnet configured with permissions to create resources that are specific to a service, such as Azure NetApp Files."
-  - content: "Suppose an administrator is evaluating Azure NetApp Files as a shared storage solution. Which of the following options best describes a scenario where they would counsel against using Azure NetApp Files?"
-    choices:
-    - content: "A small-scale, low-performance workload that consists mostly of static content with relatively constant demand"
-      isCorrect: true
-      explanation: "Correct. Azure NetApp Files isn't ideal for small, static workloads. Azure NetApp Files is best used with large-scale, high-performance workloads with elastic content and demand."
-    - content: "A high-performance computing simulation application that requires high input/output operations per second (IOPS) and low latency"
-      isCorrect: false
-      explanation: "Incorrect. Azure NetApp Files supports up to 450,000 IOPS and submillisecond latency, so it's ideal for this type of application."
-    - content: "A massive Microsoft SQL Server deployment"
-      isCorrect: false
-      explanation: "Incorrect. The high throughput and low latency offered by Azure NetApp Files makes it well-suited as a shared storage container for even the largest databases."
+      explanation: "Correct. Azure NetApp Files doesn't provide a publicly (that is, internet) accessible endpoint."
+
