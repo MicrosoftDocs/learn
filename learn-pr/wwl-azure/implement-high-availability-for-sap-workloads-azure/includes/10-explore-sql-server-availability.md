@@ -2,7 +2,7 @@ When using SQL Server in Azure Virtual Machine-based deployments for SAP, you ha
 
 ## SQL Server Clustering using Windows Scale-out File Server
 
-With Windows Server 2016, Microsoft introduced Storage Spaces Direct. Based on Storage Spaces Direct Deployment, SQL Server FCI clustering is supported. The solution requires an Azure load balancer as well to deal with the virtual IP address of the cluster resources. The SQL Server database files are stored in Storage Spaces. Hence, it's a given that you would have to deploy the Windows Storage Spaces based on Azure Premium Storage. Since this solution has been supported for not too long yet, there are no known SAP customers who use this solution in SAP production scenarios.
+With Windows Server 2016, Microsoft introduced Storage Spaces Direct. Based on Storage Spaces Direct Deployment, SQL Server FCI clustering is supported. The solution requires an Azure load balancer as well to deal with the virtual IP address of the cluster resources. The SQL Server database files are stored in Storage Spaces. Hence, it's a given that you would have to deploy the Windows Storage Spaces based on Azure Premium Storage. Because support for this solution is recent, there are no known SAP customers who use this solution in SAP production scenarios.
 
 ## SQL Server Log Shipping
 
@@ -44,7 +44,7 @@ Detailed documentation on deploying Always On with SQL Server in Azure Virtual M
 
 SQL Server Always On is the most commonly used high availability and disaster recovery functionality in Azure for Windows-based SAP deployments. Most customers use Always On for high availability within a single Azure region. If the deployment is restricted to two nodes only, you have two choices for connectivity:
 
-- Using the Availability Group Listener. With the Availability Group Listener, you're required to deploy an Azure load balancer. This is usually the default method of deployment. SAP applications need to be configured to connect to the Availability Group listener rather than to a single node.
+- Using the Availability Group Listener. With the Availability Group Listener, you must deploy an Azure load balancer. This is usually the default method of deployment. SAP applications need to be configured to connect to the Availability Group listener rather than to a single node.
 - Using the connectivity parameters of SQL Server Database Mirroring, you need to configure connectivity of the SAP applications by specifying both node names. Exact details of this mirroring configuration are documented in [SAP Note \#965908](https://me.sap.com/notes/965908). By using this option, you eliminate the need for an Availability Group listener and an Azure load balancer. As a result, the network latency between the SAP application layer and the DBMS layer is lower since the incoming traffic to the SQL Server instance isn't routed through the Azure load balancer. But keep in mind that this option only works if you restrict your Availability Group to span two instances.
 
 Quite a few customers are additionally applying the SQL Server Always On functionality for disaster recovery between Azure regions. Several customers also use the ability to perform backups from a secondary replica.

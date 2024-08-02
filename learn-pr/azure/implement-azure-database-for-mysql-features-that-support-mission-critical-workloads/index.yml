@@ -8,7 +8,7 @@ metadata:
   ms.author: shaithal
   ms.reviewer: maghan
   ms.topic: module-intro-to-product
-  ms.service: mysql
+  ms.service: azure-database-mysql
   ms.subservice: flexible-server
 title: "Implement Azure Database for MySQL Flexible Server features that support mission-critical workloads"
 summary: |

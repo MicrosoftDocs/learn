@@ -10,7 +10,7 @@ metadata:
   ms.custom:
   - N/A
   ai-usage: ai-assisted
-  ms.service: container-instances
+  ms.service: azure-container-instances
 title: Configure Azure Container Instances
 summary: Learn how to configure Azure Container Instances including container groups.
 abstract: |
