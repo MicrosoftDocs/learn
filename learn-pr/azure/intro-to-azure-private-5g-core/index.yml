@@ -7,7 +7,7 @@ metadata:
   author: lnyswonger
   ms.author: joemarshall
   ms.topic: module
-  ms.service: private-5g-core
+  ms.service: azure-private-5g-core
 title: Introduction to Azure Private 5G Core
 summary: "Learn about the capabilities of Azure Private 5G Core and how you can use it to deploy a private mobile network."
 abstract: |
