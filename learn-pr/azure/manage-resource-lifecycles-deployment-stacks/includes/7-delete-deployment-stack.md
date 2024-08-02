@@ -21,7 +21,7 @@ Consider the deposits application. In the last unit, we initially detached resou
 
 ::: zone pivot="cli"
 
-To delete a deployment stack using Azure CLI, use the `az stack group delete` command. The `--action-on-unmanaged` argument determines how Azure handles detached resources, resource groups, and management groups.
+To delete a deployment stack using Azure CLI, use the `az stack group delete` command.
 
 ```azurecli
 az stack group delete \
@@ -34,7 +34,7 @@ az stack group delete \
 
 ::: zone pivot="powershell"
 
-To delete a deployment stack using Azure PowerShell, use the `Remove-AzResourceGroupDeploymentStack` command. The `-ActionOnUnmanage` argument determines how Azure handles detached resources, resource groups, and management groups.
+To delete a deployment stack using Azure PowerShell, use the `Remove-AzResourceGroupDeploymentStack` command.
 
 ```azurepowershell
 Remove-AzResourceGroupDeploymentStack `
