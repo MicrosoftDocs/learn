@@ -4,7 +4,7 @@ High availability of SAP workloads on Azure Virtual Machines can be analyzed in 
 
 ## High availability of SAP workloads
 
-In the case of NetWeaver-based deployments, this solution includes:
+For NetWeaver-based deployments, this solution includes:
 
 - SAP application servers
 - SAP ASCS/SCS instance

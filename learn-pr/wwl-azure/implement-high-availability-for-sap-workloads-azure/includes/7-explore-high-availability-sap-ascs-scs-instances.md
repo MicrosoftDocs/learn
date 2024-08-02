@@ -4,7 +4,7 @@ Azure Virtual Machines require extra provisions to implement operating system-de
 
 You can use a Windows Server Failover Clustering (WSFC) solution to protect the SAP ASCS/SCS instance. The solution has two variants:
 
-- Cluster the SAP ASCS/SCS instance by using clustered shared disks. Such disks can be implemented by using third-party solutions, such as SIOS DataKeeper. For more information regarding this configuration, see [Cluster an SAP ASCS/SCS instance on a Windows failover cluster by using a cluster shared disk in Azure](/azure/virtual-machines/workloads/sap/sap-high-availability-guide-wsfc-shared-disk).
+- Cluster the SAP ASCS/SCS instance by using clustered shared disks. Such disks can be implemented by using non-Microsoft solutions, such as SIOS DataKeeper. For more information regarding this configuration, see [Cluster an SAP ASCS/SCS instance on a Windows failover cluster by using a cluster shared disk in Azure](/azure/virtual-machines/workloads/sap/sap-high-availability-guide-wsfc-shared-disk).
 - Cluster the SAP ASCS/SCS instance by using file share. SAP recently modified the Central Services deployment pattern to access the **/sapmnt** global directories via a UNC path. A highly available UNC **/sapmnt** share can be implemented by using Windows Server Failover Cluster with Scale Out File Server (SOFS) and the Storage Spaces Direct (S2D) feature in Windows Server 2016. For more information regarding this configuration, see [Cluster an SAP ASCS/SCS instance on a Windows failover cluster by using a file share in Azure](/azure/virtual-machines/workloads/sap/sap-high-availability-guide-wsfc-file-share).
 
 ## High-availability architecture for an SAP ASCS/SCS instance on Linux (single-SID configuration)
