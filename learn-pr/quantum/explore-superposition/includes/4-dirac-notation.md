@@ -1,4 +1,7 @@
-How do we write quantum states in a way that's easy to understand and work with? A handy notation to write quantum states is the *Dirac bra-ket* notation.
+How to write quantum states in a way that's easy to understand and work with? A handy notation to write quantum states is the *Dirac bra-ket* notation.
+
+> [!NOTE]
+> If you experience problems with the rendering of the formulas, hit the refresh button on your browser. This will reload the page and the formulas will render correctly.
 
 ## What's Dirac bra-ket notation?
 
@@ -27,8 +30,6 @@ The `X` operator is also called the *Pauli-X gate*. It's a fundamental quantum o
 
 > [!NOTE]
 > Sometimes we talk about *quantum gates* instead of *quantum operations*. The term *quantum gate* is an analogy to classical logic gates. It's rooted in the early days of quantum computing when quantum algorithms were visualized as diagrams similar to circuit diagrams in classical computing.
-
-
 
 You can use an operator to put a qubit in superposition. The Hadamard operator, `H`, puts a qubit that's in the state $|0\rangle$ into superposition of $|0\rangle$ and $|1\rangle$ states. Mathematically, this equation is 
 
