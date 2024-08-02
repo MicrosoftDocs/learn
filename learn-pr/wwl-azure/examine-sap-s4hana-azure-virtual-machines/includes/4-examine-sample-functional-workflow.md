@@ -9,5 +9,5 @@ This workflow illustrates how a user request flows through an SAP landscape buil
 5. **Primary (active) and secondary (standby) running on SAP certified M-series virtual machines with Write Accelerator are clustered** at OS level for 99.95 percent availability, and data replication is handled through HSR in synchronous mode from primary to secondary enabling zero RPO.
 6. In-memory data of SAP HANA is persisted to high-performance **Azure Premium Storage**.
 7. In-memory HANA data is replicated to a DR region virtual machine through an Azure high-speed backbone network and HSR in asynchronous mode. The disaster recovery virtual machine can be smaller than the production virtual machine to save costs.
-8. Virtual machines on the DR region can be used for nonproduction to save costs by mounting both the non-production storage and DR replicated volume (read-only).
+8. Virtual machines on the DR region can be used for nonproduction to save costs by mounting both the nonproduction storage and DR replicated volume (read-only).
 9. SAP App Server with ASCS on the DR side can be in standby shutdown mode and can be started when needed to save costs.
