@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-user-experience-settings.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An IT professional is tasked with managing the desktops and applications made available to them by their admin through Azure Virtual Desktop. They need to ensure that the workspace content updates automatically and regularly. What should they do to achieve this?"
+    choices:
+    - content: "Manually update the workspace content every time they start the client"
+      isCorrect: false
+      explanation: "Incorrect. Manually updating the workspace content is not necessary as it updates automatically."
+    - content: "Unsubscribe and then resubscribe to the workspace"
+      isCorrect: false
+      explanation: "Incorrect. Unsubscribing and resubscribing is not required for automatic updates."
+    - content: "Subscribe to a workspace"
+      isCorrect: true
+      explanation: "Correct. Once subscribed to a workspace, its content will update automatically regularly and each time the client is started."
+  - content: "A system administrator needs to configure device redirection for an Azure Virtual Desktop environment. They need to enable USB device redirection for all supported devices on the client. Which RDP property should they set?"
+    choices:
+    - content: "audiocapturemode i 1"
+      isCorrect: false
+      explanation: "Incorrect. This RDP property enables audio input redirection, not USB device redirection."
+    - content: "redirectclipboard i 1"
+      isCorrect: false
+      explanation: "Incorrect. This RDP property enables clipboard redirection, not USB device redirection."
+    - content: "usbdevicestoredirect s"
+      isCorrect: true
+      explanation: "Correct. The 'usbdevicestoredirect s' RDP property enables USB device redirection for all supported devices on the client."
+  - content: "A user is trying to connect to Azure Virtual Desktop but keeps receiving an error message that says the credentials are incorrect. What should the user check first?"
+    choices:
+    - content: "Check if the Remote Desktop client is updated to the latest version"
+      isCorrect: false
+      explanation: "Incorrect. While it's important to keep the Remote Desktop client updated, the error message indicates a problem with the user's credentials, not the client software."
+    - content: "Check if the user has assigned the Virtual Machine User Login role based access control (RBAC) permission to the virtual machine (VM) or resource group for each user"
+      isCorrect: false
+      explanation: "Incorrect. While this is a necessary step for accessing Azure Virtual Desktop, the error message specifically mentions incorrect credentials, so the user should first verify they are using the correct login information."
+    - content: "Ensure the right credentials are being used"
+      isCorrect: true
+      explanation: "Correct. The error message indicates that the user's credentials are incorrect, so the first step should be to verify that the correct username and password are being used."
+  - content: "A system administrator is tasked with setting up a corporate Microsoft Virtual Desktop Infrastructure (VDI) environment. They have installed a reference image of Windows 10 1607 version 10.0.1393 on a virtual machine. What should be their next step?"
+    choices:
+    - content: "Install the base OS using Express Settings"
+      isCorrect: false
+      explanation: "Incorrect. The method of installing the base OS is not that important as the settings offered during the Customize option are adjustable by using Group Policy."
+    - content: "Enable all background services and tasks"
+      isCorrect: false
+      explanation: "Incorrect. In the VDI environment, many background services and tasks are disabled from the beginning to optimize performance."
+    - content: "Adjust settings during installation in Customize settings"
+      isCorrect: true
+      explanation: "Correct. The system administrator can adjust these settings during installation in Customize settings or after installation with Group Policy Editor."

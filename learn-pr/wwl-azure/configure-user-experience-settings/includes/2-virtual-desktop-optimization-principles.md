@@ -1,27 +1,62 @@
-To optimize Windows 10 in a virtual desktop environment, you should eliminate background activities and processes that don't benefit the virtual desktop environment.
+The Microsoft Remote Desktop client is used to connect to Azure Virtual Desktop to access your desktops and applications. This unit shows you how to connect to Azure Virtual Desktop with the Remote Desktop client for Windows, which only allows you to subscribe to a feed made available to you by your organization administrators.
 
-A secondary goal is to reduce disk space usage in the base image to the bare minimum.
+There are three versions of the Remote Desktop client for Windows, which are all supported for connecting to Azure Virtual Desktop:
 
-## Optimization principles
+ -  Standalone download as an MSI installer.
+ -  Azure Virtual Desktop app from the Microsoft Store. This is a preview version of the Remote Desktop client for Windows.
+ -  Remote Desktop app from the Microsoft Store. This version is no longer being developed.
 
-Some implementations of virtual desktop environments use a "base" operating system image, which becomes the basis for the virtual desktop. There are persistent and non-persistent base images.
+> [!TIP]
+> You can also connect to Azure Virtual Desktop with Windows App, a single app to securely connect you to Windows devices and apps from Azure Virtual Desktop, Windows 365, Microsoft Dev Box, Remote Desktop Services, and remote PCs. For more information, see [What is Windows App?](/windows-app/overview)
 
-The smallest possible base, or "gold" image size, can reduce memory utilization on the host system and reduce network operations for Azure Virtual Desktop.
+You can find a list of all the Remote Desktop clients you can use to connect to Azure Virtual Desktop at [Remote Desktop clients overview](/azure/virtual-desktop/users/remote-desktop-clients-overview).
 
-The persistent base image preserves changes to the virtual desktop operating system from one session to the next. The non-persistent base image does not preserve changes to the virtual desktop operating system from one session to the next.
+If you want to connect to Remote Desktop Services or a remote PC instead of Azure Virtual Desktop, see [Connect to Remote Desktop Services with the Remote Desktop app for Windows](/windows-server/remote/remote-desktop-services/clients/windows).
 
-To the user this desktop is little different than other virtual or physical device, other than it is accessed over a network.
+Before you can access your resources, you'll need to meet the prerequisites.
 
-The optimization settings can be reviewed on a reference machine. A virtual machine (VM) would be an ideal place to build the VM, because state can be saved, checkpoints can be made, backups can be made, and so on. A default OS installation is performed to the base VM. That base VM is then optimized by removing unneeded apps, installing Windows updates, installing other updates, deleting temporary files, applying settings, and so on.
+ -  Internet access.
+ -  A device running one of the following supported versions of Windows:
+    
+    
+     -  Windows 11
+     -  Windows 10
 
-## Virtual Desktop Security
+## Download and install the Azure Virtual Desktop app
 
-For virtual desktops, security is not handled much differently than physical devices. Enterprise customers may choose to utilize the built-in to Windows services of Windows Security, which comprises a suite of services that work well connected or not connected to the Internet.
+The Azure Virtual Desktop app is available from the Microsoft Store. To download and install it, follow these steps:
 
-For those virtual desktop environments not connected to the Internet, security signatures can be downloaded proactively several times per day, because Microsoft may release more than one signature update per day. Those signatures can then be provided to the virtual desktop devices and scheduled to be installed during production, regardless of persistent or non-persistent.
+1.  Go to the [Azure Virtual Desktop Store app in the Microsoft Store](https://aka.ms/AVDStoreClient).
+2.  Select **Install** to start downloading the app and installing it.
+3.  Once the app has finished downloading and installing, select **Open**. The first time the app runs, it will install the *Azure Virtual Desktop (HostApp)* dependency automatically.
 
-## Updates
+> [!IMPORTANT]
+> If you have the Azure Virtual Desktop app from the Microsoft Store and the Remote Desktop client (MSI) installed on the same device, you may see the message that begins **A version of this application called Azure Virtual Desktop was installed from the Microsoft Store**. Both apps are supported, and you have the option to choose **Continue anyway**, however it could be confusing to use the same remote resource across both apps. We recommend using only one version of the app at a time.
 
-Virtual desktop administrators control the process of updating through a process of shutting down VMs based on a "master" or "gold" image, unseal that image, which is read-only, patch the image, then reseal it and bring it back into production. Therefore, there is no need to have virtual desktop devices checking Windows Update.
+## Subscribe to a workspace
 
-The optimization scripts can be found at [https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool](https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool).
+A workspace combines all the desktops and applications that have been made available to you by your admin. To be able to see these in the Azure Virtual Desktop app, you need to subscribe to the workspace by following these steps:
+
+1.  Open the **Azure Virtual Desktop** app on your device.
+2.  The first time you subscribe to a workspace, from the **Let's get started** screen, select **Subscribe** or **Subscribe with URL**. Use the tabs after this for your scenario.
+    
+    
+     -  If you selected **Subscribe**, sign in with your user account when prompted, for example user@contoso.com. After a few seconds, your workspaces should show the desktops and applications that have been made available to you by your admin.
+     -  | **Azure environment**       | **Workspace URL**                                |
+        | --------------------------- | ------------------------------------------------ |
+        | Azure cloud *(most common)* | https://rdweb.wvd.microsoft.com                  |
+        | Azure for US Government     | https://rdweb.wvd.azure.us/api/arm/feeddiscovery |
+        | Azure operated by 21Vianet  | https://rdweb.wvd.azure.cn/api/arm/feeddiscovery |
+
+1.  Select **Next**.
+2.  Sign in with your user account when prompted. After a few seconds, the workspace should show the desktops and applications that have been made available to you by your admin.
+
+Once you've subscribed to a workspace, its content will update automatically regularly and each time you start the client. Resources may be added, changed, or removed based on changes made by your admin.
+
+## Connect to your desktops and applications
+
+Once you've subscribed to a workspace, here's how to connect:
+
+1.  Open the **Azure Virtual Desktop** app on your device.
+2.  Double-click one of the icons to launch a session to Azure Virtual Desktop. You may be prompted to enter the password for your user account again, depending on how your admin has configured Azure Virtual Desktop.
+3.  To pin your desktops and applications to the Start Menu, right-click one of the icons and select **Pin to Start Menu**, then confirm the prompt.

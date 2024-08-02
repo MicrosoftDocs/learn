@@ -4,12 +4,12 @@ title: Implement the Start Virtual Machine on Connect feature
 metadata:
   title: Implement the Start Virtual Machine on Connect feature
   description: "Implement the Start Virtual Machine on Connect feature"
-  ms.date: 08/05/2022
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/9-implement-start-virtual-machine-connect-feature.md)]
+  [!include[](includes/4-implement-start-virtual-machine-connect-feature.md)]

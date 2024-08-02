@@ -4,12 +4,12 @@ title: Configure session timeout properties
 metadata:
   title: Configure session timeout properties
   description: "Configure session timeout properties"
-  ms.date: 08/05/2022
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
-  [!include[](includes/6-configure-session-timeout-properties.md)]
+  [!include[](includes/3-configure-session-timeout-properties.md)]

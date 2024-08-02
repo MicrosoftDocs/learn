@@ -4,12 +4,12 @@ title: Configure device redirections
 metadata:
   title: Configure device redirections
   description: "Configure device redirections"
-  ms.date: 08/05/2022
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
-  [!include[](includes/7-configure-device-redirections.md)]
+  [!include[](includes/6-configure-device-redirections.md)]

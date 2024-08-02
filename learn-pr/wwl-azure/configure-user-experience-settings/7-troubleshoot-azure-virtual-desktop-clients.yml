@@ -4,12 +4,12 @@ title: Troubleshoot Azure Virtual Desktop clients
 metadata:
   title: Troubleshoot Azure Virtual Desktop clients
   description: "Troubleshoot Azure Virtual Desktop clients"
-  ms.date: 08/05/2022
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
-  [!include[](includes/11-troubleshoot-azure-virtual-desktop-clients.md)]
+  [!include[](includes/7-troubleshoot-azure-virtual-desktop-clients.md)]

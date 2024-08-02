@@ -2,23 +2,32 @@
 uid: learn.wwl.configure-user-experience-settings
 metadata:
   title: Configure user experience settings
-  description: Configure user experience settings
-  ms.date: 08/05/2022
+  description: "Configure user experience settings"
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Configure user experience settings
 summary: Persistent virtual desktops save the operating system state in between reboots. Virtual desktop provides users easy and seamless access to their assigned VMs, often with a single sign-on solution.
 abstract: |
   After completing this module, you'll be able to:
-  *  Configure user settings through group policies for Azure Virtual Desktop.
-  *  Configure user settings through Endpoint Manager policies for Azure Virtual Desktop.
-  *  Configure session timeout properties for Azure Virtual Desktop.
-  *  Configure device redirections for Azure Virtual Desktop.
-  *  Configure Universal Print.
-  *  Troubleshoot user profile issues.
-prerequisites: ''
+
+  -   Configure user settings through group policies for Azure Virtual Desktop.
+
+  -   Configure user settings through Endpoint Manager policies for Azure Virtual Desktop.
+
+  -   Configure session timeout properties for Azure Virtual Desktop.
+
+  -   Configure device redirections for Azure Virtual Desktop.
+
+  -   Configure Universal Print.
+
+  -   Troubleshoot user profile issues.
+prerequisites: None
 iconUrl: /training/achievements/2-configure-user-experience-settings.svg
 levels:
 - intermediate
@@ -35,14 +44,10 @@ subjects:
 units:
 - learn.wwl.configure-user-experience-settings.introduction
 - learn.wwl.configure-user-experience-settings.virtual-desktop-optimization-principles
-- learn.wwl.configure-user-experience-settings.persistent-virtual-desktop-environments
-- learn.wwl.configure-user-experience-settings.settings-through-group-policies
-- learn.wwl.configure-user-experience-settings.settings-through-endpoint-manager-policies
 - learn.wwl.configure-user-experience-settings.configure-session-timeout-properties
-- learn.wwl.configure-user-experience-settings.configure-device-redirections
-- learn.wwl.configure-user-experience-settings.configure-universal-print
 - learn.wwl.configure-user-experience-settings.implement-start-virtual-machine-connect-feature
-- learn.wwl.configure-user-experience-settings.troubleshoot-user-profile-issues
+- learn.wwl.configure-user-experience-settings.configure-universal-print
+- learn.wwl.configure-user-experience-settings.configure-device-redirections
 - learn.wwl.configure-user-experience-settings.troubleshoot-azure-virtual-desktop-clients
 - learn.wwl.configure-user-experience-settings.knowledge-check
 - learn.wwl.configure-user-experience-settings.summary

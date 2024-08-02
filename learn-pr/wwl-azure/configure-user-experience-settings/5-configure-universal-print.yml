@@ -4,12 +4,12 @@ title: Configure Universal Print
 metadata:
   title: Configure Universal Print
   description: "Configure Universal Print"
-  ms.date: 08/05/2022
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 10
+  ms.custom:
+  - N/A
+durationInMinutes: 8
 content: |
-  [!include[](includes/8-configure-universal-print.md)]
+  [!include[](includes/5-configure-universal-print.md)]

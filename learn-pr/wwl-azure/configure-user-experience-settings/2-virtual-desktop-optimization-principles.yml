@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-user-experience-settings.virtual-desktop-optimization-principles
-title: Virtual desktop optimization principles
+title: Connect to Azure Virtual Desktop with the Remote Desktop client for Windows
 metadata:
-  title: Virtual desktop optimization principles
-  description: "Virtual desktop optimization principles"
-  ms.date: 08/05/2022
+  title: Connect to Azure Virtual Desktop with the Remote Desktop client for Windows
+  description: "Connect to Azure Virtual Desktop with the Remote Desktop client for Windows"
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/2-virtual-desktop-optimization-principles.md)]
