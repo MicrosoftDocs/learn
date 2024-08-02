@@ -1,6 +1,6 @@
 Azure Architects use various mechanisms to complete post-deployment configuration tasks and automation operations for their Azure virtual machines. When a virtual machine requires software installation or anti-virus protection, or the machine needs to run a script, you can use virtual machine extensions to manage these processes.
 
-In this module, your company has created numerous scripts and processes to ensure their virtual machines are updated. These scripts also run various configuration tasks. You're responsible for automating the update process. You're using virtual machine extensions to avoid configuration drift.
+In this module, your company created numerous scripts and processes to ensure their virtual machines are updated. These scripts also run various configuration tasks. You're responsible for automating the update process. You're using virtual machine extensions to avoid configuration drift.
 
 ## Learning objectives
 
