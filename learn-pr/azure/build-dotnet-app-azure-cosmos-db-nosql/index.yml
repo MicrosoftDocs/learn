@@ -13,7 +13,7 @@ metadata:
   manager: jroth
   ms.topic: module
   ms.date: 04/25/2024
-  ms.service: cosmos-db
+  ms.service: azure-cosmos-db
   ms.subservice: nosql
 title: Guided project - Build a .NET app with Azure Cosmos DB for NoSQL
 summary: |

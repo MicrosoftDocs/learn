@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: cosmos-db
+  ms.service: azure-cosmos-db
   ms.subservice: nosql
   ai-usage: human-only
 title: Implement a non-relational data model
