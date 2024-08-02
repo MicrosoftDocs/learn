@@ -7,7 +7,7 @@ metadata:
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: module-standard-task-based
-  ms.service: static-web-apps
+  ms.service: azure-static-web-apps
   manager: mijacobs
 title: Publish an API to Azure Static Web Apps
 summary: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
