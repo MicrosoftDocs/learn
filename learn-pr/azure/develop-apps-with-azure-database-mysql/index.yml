@@ -9,7 +9,7 @@ metadata:
   ms.author: shaithal
   ms.reviewer: maghan
   ms.topic: module-intro-to-product
-  ms.service: mysql
+  ms.service: azure-database-mysql
   ms.subservice: flexible-server
   ms.custom:
     - build-2023

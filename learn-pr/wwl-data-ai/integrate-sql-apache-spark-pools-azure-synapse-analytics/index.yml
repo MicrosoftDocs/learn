@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: module-standard-task-based
-  ms.service: synapse-analytics
+  ms.service: azure-synapse-analytics
   ms.subservice: spark
   ms.custom:
     - build-2023
