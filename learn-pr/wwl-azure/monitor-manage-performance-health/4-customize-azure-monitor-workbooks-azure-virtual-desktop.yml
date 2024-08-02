@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-manage-performance-health.customize-azure-monitor-workbooks-azure-virtual-desktop
+title: Customize Azure Monitor workbooks for Azure Virtual Desktop Insights
+metadata:
+  title: Customize Azure Monitor workbooks for Azure Virtual Desktop Insights
+  description: "Customize Azure Monitor workbooks for Azure Virtual Desktop Insights"
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-customize-azure-monitor-workbooks-azure-virtual-desktop.md)]

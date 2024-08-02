@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-manage-performance-health.implement-scaling-plans-host-pools
+title: Implement scaling plans in host pools
+metadata:
+  title: Implement scaling plans in host pools
+  description: "Implement scaling plans in host pools"
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-implement-scaling-plans-host-pools.md)]

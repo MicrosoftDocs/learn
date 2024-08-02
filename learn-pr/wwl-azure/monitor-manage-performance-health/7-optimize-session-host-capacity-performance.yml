@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-manage-performance-health.optimize-session-host-capacity-performance
+title: 'Optimize capacity and performance '
+metadata:
+  title: Optimize capacity and performance
+  description: "Optimize capacity and performance"
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-optimize-session-host-capacity-performance.md)]
