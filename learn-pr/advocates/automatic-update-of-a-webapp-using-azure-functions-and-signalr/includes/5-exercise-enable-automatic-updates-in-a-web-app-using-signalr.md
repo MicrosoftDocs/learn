@@ -150,7 +150,7 @@ At this point, your GitHub deployment might generate an error because of a wrong
     git pull origin main
     ```
 
-    This should place a new folder at **.github** with a path to your workflow file: `.github/workflows/main_RESOURCE_NAME.yml where RESOURCE_NAME is the function app name. 
+    This should place a new folder at **.github** with a path to your workflow file: `.github/workflows/main_RESOURCE_NAME.yml` where `RESOURCE_NAME` is the function app name. 
 
 1. Open the workflow file and change the `name` value at the top of the file to `Server`.
    
