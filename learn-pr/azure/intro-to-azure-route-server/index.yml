@@ -9,7 +9,7 @@ metadata:
   author: halkazwini
   ms.author: halkazwini
   ms.topic: module
-  ms.service: route-server
+  ms.service: azure-route-server
 title: Introduction to Azure Route Server
 summary: Describe Microsoft Azure Route Server, discuss scenarios of usage, learn how it works, and explore basic steps for its deployment and configuration.
 abstract: |
