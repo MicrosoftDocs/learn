@@ -171,7 +171,7 @@ In our sample application, your slow query logs are set up to be piped to Azure 
 
 ## UI monitoring
 
-If you add Application Insights to your page script, you get timings of page loads and AJAX calls, counts, and details of browser exceptions and AJAX failures, also users and session counts. You can segment all of these metrics by page, client OS and browser version, geo-location, and other dimensions. You can set alerts on failure counts or slow page loading, and byy inserting trace calls in your JavaScript code, you can track how the different features of your web page application are used.
+If you add Application Insights to your page script, you get timings of page loads and AJAX calls, counts, and details of browser exceptions and AJAX failures, also users and session counts. You can segment all of these metrics by page, client OS and browser version, geo-location, and other dimensions. You can set alerts on failure counts or slow page loading, and by inserting trace calls in your JavaScript code, you can track how the different features of your web page application are used.
 
 You can use Application Insights with any web page; you just add a short piece of JavaScript. If your web service is Java, you can use the server-side SDKs with the client-side JavaScript SDK to get an understanding of your app's performance.
 

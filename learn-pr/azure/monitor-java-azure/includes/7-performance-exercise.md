@@ -15,7 +15,7 @@ Application Map helps you spot performance bottlenecks or failure hot spots acro
 
 The Application map shows applications that are operating correctly (green) and those applications with bottlenecks (red).
 
-In the preceding Application map, each of the names in green boxes are different services of your Azure Spring Apps.
+In the preceding Application map, each name in a green box is a different service of your Azure Spring Apps.
 
 You can easily identify issues in your applications and quickly troubleshoot and fix them. Each node on the map represents a microservice or its dependencies, with health KPI and alerts status. You can select from any component to more detailed diagnostics, such as Application Insights events.
 
@@ -49,7 +49,7 @@ You can easily identify issues in your applications and quickly troubleshoot and
 
    :::image type="content" source="../media/7-petclinic-microservices-failures.jpg" alt-text="Screenshot showing Failures view for your Azure Spring Apps instance." lightbox="../media/7-petclinic-microservices-failures.jpg":::
 
-2. On the right-hand side, select an exception in the **Top 3 exception types** for meaningful insights and actionable stack trace::
+2. On the right-hand side, select an exception in the **Top 3 exception types** for meaningful insights and actionable stack trace:
 
    :::image type="content" source="../media/4-exception.jpg" alt-text="Screenshot showing the exception screen." lightbox="../media/4-exception.jpg":::
 
@@ -77,7 +77,7 @@ To create a standard metric chart, under the **Monitoring** section, open the **
 
 2. Next, under **Metrics**, select **App CPU Usage** and select **Avg** under **Aggregation**:
 
-   :::image type="content" source="../media/4-metrics-cpu-first-add.jpg" alt-text="Screenshot showing adding app cpu metrics". lightbox="../media/4-metrics-cpu-first-add.jpg":::
+   :::image type="content" source="../media/4-metrics-cpu-first-add.jpg" alt-text="Screenshot showing adding app cpu metrics." lightbox="../media/4-metrics-cpu-first-add.jpg":::
 
 3. Save the first metric by selecting the **Tick** icon on the right-hand metric bar.
 
