@@ -130,6 +130,18 @@ Connect your new function app to the GitHub repository to enable continuous depl
 1. Select **Save** at the top of the section to save the settings. This creates a new workflow file in your forked repository.
 1. This deployment configuration creates a GitHub Actions workflow file in the repository. You need to update the workflow file to use the correct package path for the function app.
 
+<!--- Remove this content section after the OIDC subject bug gets fixed by the Functions folks -->
+At this point, your GitHub Actions deployment might generate an error because of wrong configuration in the user-assigned managed identity created in your resource group in Azure. 
+
+## Update the managed identity
+
+1. In your new function app page in the Azure portal, select your resource group in **Overview** > **Essentials**, then select the managed identity under **Resources**. This managed identity was created by Functions when you enabled GitHub Actions for deployment.  
+1. In the **Managed Identity** page, select **Settings** > **Federated credentials** and then select the existing credential.
+1. Locate the **Subject identifier** and select **Edit (optional)**:
+1. Replace the existing value of `:ref:refs/heads/main` at the end of the current value with `:environment:Production`. The subject identifier should now look something like this: `repo:my_fork/mslearn-advocates.azure-functions-and-signalr:environment:Production`.
+1. Select **Update** to update the credential.
+<!--- end removal section -->
+
 ## Edit GitHub deployment workflow
 
 1. In Visual Studio Code terminal, pull down the new workflow file from your fork (origin). 
@@ -142,6 +154,7 @@ Connect your new function app to the GitHub repository to enable continuous depl
 
 1. Open the workflow file. 
 1. Change the `name` value at the top of the file to `Server`.
+1. 
 1. Because the source repository has the Azure Functions app in a subdirectory, the action file needs to change to reflect that. In the **env** section, add a new variable named `PACKAGE_PATH` to use the package path. 
 
     ```YAML
@@ -151,7 +164,7 @@ Connect your new function app to the GitHub repository to enable continuous depl
 
 1. Find the **Resolve Project Dependencies Using Npm** step and replace the contents with the following YAML to also use the package subdirectory path. The critical change is the path in the `pushd` command to include the `env.PACKAGE_PATH` variable.
 
-    :::code language="yaml" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/example-server-workflow.yml" range="29-36":::
+    :::code language="yaml" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/example-server-workflow.yml" range="38-43":::
     
 1. Find the **Zip artifact for deployment** step and replace the contents with the following YAML to also use the package subdirectory path. 
 
@@ -171,7 +184,7 @@ Connect your new function app to the GitHub repository to enable continuous depl
 
 ## Configure the environment variables for the API functions
 
-1. In the Azure portal, select **Settings -> Configuration** then select **New application setting**.
+1. In the Azure portal, locate your function app and select **Settings** > **Configuration** then select **New application setting**.
 1. Enter the settings for the Cosmos DB and SignalR connection strings. You can find the values in the `local.settings.json` in the `start/server` folder. 
 
     | Name | Value |
