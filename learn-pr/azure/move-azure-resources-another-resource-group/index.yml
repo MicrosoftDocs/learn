@@ -8,7 +8,7 @@ metadata:
   author: tfitzmac
   ms.author: tomfitz
   ms.topic: module
-  ms.service: resource-mover
+  ms.service: azure-resource-mover
 title: Move Azure resources to another resource group
 summary: Identify Azure resources that you can move to a different resource group. Use the Azure portal to move resources.
 abstract: | 
