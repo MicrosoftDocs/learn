@@ -8,7 +8,7 @@ metadata:
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: module
-  ms.service: site-recovery
+  ms.service: azure-site-recovery
 title: Design your site recovery solution in Azure
 summary: Help protect your applications and data from disasters with a well-designed site recovery solution.
 abstract: |

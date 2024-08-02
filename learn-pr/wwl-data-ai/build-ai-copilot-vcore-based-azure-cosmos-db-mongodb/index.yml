@@ -6,7 +6,7 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.date: 04/13/2024
-  ms.service: cosmos-db
+  ms.service: azure-cosmos-db
   ms.subservice: mongodb-vcore
   ms.topic: module
   ms.collection:

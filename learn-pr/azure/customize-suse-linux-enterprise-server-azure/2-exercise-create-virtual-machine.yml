@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: "Exercise - Setup: Create a new SUSE SLES virtual machine on Azure"
   description: Create a SUSE SLES virtual machine on Azure, used in the rest of the exercises.
-  ms.date: 06/15/2021
+  ms.date: 08/01/2024
   author: yenchiho
   ms.author: yenchiho
   ms.topic: unit

@@ -14,7 +14,7 @@ metadata:
 title: Examine SAP S/4HANA on Azure virtual machines
 summary: Examine the architecture when deploying SAP S/4HANA workloads and in-memory SAP HANA databases, running on Azure VMs.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you're able to:
 
   -   Explore SAP S/4HANA on Azure virtual machines and learn to recognize the architecture's components.
 
