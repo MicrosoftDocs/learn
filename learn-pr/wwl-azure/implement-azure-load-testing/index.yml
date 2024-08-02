@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: load-testing
+  ms.service: azure-load-testing
   ai-usage: human-only
 title: Implement Azure Load Testing
 summary: Learn how to&nbsp;optimize application performance by simulating real-world loads with Azure Load Testing service. Learn how to&nbsp;automate load testing&nbsp;with GitHub Actions to ensure consistent application performance and scalability.
