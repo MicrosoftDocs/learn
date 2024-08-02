@@ -3,8 +3,8 @@ uid: learn.migrate-cicd-pipelines-to-github-with-github-actions-importer.knowled
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Test your knowledge on GitHub Actions Importer with questions about its commands and supported CI platforms."
-  ms.date: 3/21/2023
+  description: Test your knowledge on GitHub Actions Importer by answering questions about its commands and supported CI platforms.
+  ms.date: 8/5/2024
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit

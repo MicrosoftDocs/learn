@@ -3,8 +3,8 @@ uid: learn.migrate-cicd-pipelines-to-github-with-github-actions-importer.exercis
 title: GitHub Actions Importer Labs
 metadata:
   title: GitHub Actions Importer Labs
-  description: GitHub Actions Importer helps plan, forecast, and automate the migration of Azure DevOps, CircleCI, GitLab, Jenkins, and Travis CI pipelines to GitHub Actions. This repository contains learning paths that teach you how to use GitHub Actions Importer and how to approach migrations to Actions.
-  ms.date: 3/21/2023
+  description: GitHub Actions Importer helps plan, forecast, and automate the migration of Azure DevOps, CircleCI, GitLab, Jenkins, and Travis CI pipelines to GitHub Actions.
+  ms.date: 8/5/2024
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
