@@ -4,37 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/15/2022
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/5-knowledge-check.md)]
-quiz:
-  title: "Check your knowledge"
-  questions:
-  - content: "How should the FSLogix location be configured in the event of a primary location shut down?"
-    choices:
-    - content: "Configure FileStorage storage accounts"
-      isCorrect: false
-      explanation: "That's incorrect. FileStorage storage accounts allow you to deploy Azure file shares on premium/solid-state disk-based (SSD-based) hardware. FileStorage accounts can only be used to store Azure file shares; no other storage resources (blob containers, queues, tables, etc.) can be deployed in a FileStorage account."
-    - content: "Configure the FSLogix agent with a path to the secondary location in the main region"
-      isCorrect: true
-      explanation: "That's correct. Configure the FSLogix agent with a path to the secondary location in the main region. Once the primary location shuts down, the FLogix agent will replicate as part of the VM Azure Site Recovery replication. Once the replicated VMs are ready, the agent will automatically attempt to path to the secondary region."
-    - content: "Configure general purpose version 2 (GPv2) storage accounts"
-      isCorrect: false
-      explanation: "That's incorrect. GPv2 storage accounts allow you to deploy Azure file shares on standard/hard disk-based (HDD-based) hardware. In addition to storing Azure file shares, GPv2 storage accounts can store other storage resources such as blob containers, queues, or tables."
-  - content: "What should be used to replicate Azure Virtual Desktop virtual machines to the secondary location?"
-    choices:
-    - content: "Deploy Azure Site Recovery"
-      isCorrect: true
-      explanation: "That's correct. You can configure all your VMs for both pooled and personal host pools with Azure Site Recovery. With this method, you'll only need to set up one host pool and its related app groups and workspaces."
-    - content: "Deploy Azure Load Balancer"
-      isCorrect: false
-      explanation: "That's incorrect. Azure Load Balancer operates at layer 4 of the Open Systems Interconnection (OSI) model. It's the single point of contact for clients. Load balancer distributes inbound flows that arrive at the load balancer's front end to backend pool instances."
-    - content: "Azure Role-based access control (RBAC)"
-      isCorrect: false
-      explanation: "That's incorrect. Azure role-based access control (Azure RBAC) is the authorization system you use to manage access to Azure resources. To grant access, you assign roles to users, groups, service principals, or managed identities at a particular scope."

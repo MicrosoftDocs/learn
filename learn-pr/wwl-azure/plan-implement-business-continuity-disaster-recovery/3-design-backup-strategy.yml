@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-implement-business-continuity-disaster-recovery.design-backup-strategy
+title: Design and implement a backup strategy for Azure Virtual Desktop
+metadata:
+  title: Design and implement a backup strategy for Azure Virtual Desktop
+  description: "Design and implement a backup strategy for Azure Virtual Desktop"
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-design-backup-strategy.md)]
