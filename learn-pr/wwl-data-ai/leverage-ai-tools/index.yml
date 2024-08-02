@@ -3,7 +3,7 @@ uid: learn.wwl.leverage-ai-tools
 metadata:
   title: Leverage AI tools and resources for your business
   description: "Learn the primary concepts and technologies of AI, and how Microsoft is turning the latest AI into tools, products, and services that organizations can use."
-  ms.date: 08/01/2024
+  ms.date: 08/02/2024
   author: Adriamen
   ms.author: rcaper
   ms.topic: module
@@ -16,33 +16,17 @@ summary: This module provides a high-level overview of the primary concepts of A
 abstract: |
   In this module, you will:
 
-  -   Understand
+  -   Understand basic AI terminology and concepts.
 
-  basic AI terminology and concepts.
+  -   Articulate Microsoft’s approach to AI.
 
-  -   Articulate
+  -   Identify scenarios in which copilots can benefit an organization.
 
-  Microsoft’s approach to AI.
+  -   Identify scenarios in which Power Platform can be used to integrate AI into business processes.
 
-  -   Identify
+  -   Identify scenarios where AI Services can be used to build custom AI solutions.
 
-  scenarios in which copilots can benefit an organization.
-
-  -   Identify
-
-  scenarios in which Power Platform can be used to integrate AI into business
-
-  processes.
-
-  -   Identify
-
-  scenarios where AI Services can be used to build custom AI solutions.
-
-  -   Identify
-
-  scenarios where Azure Machine Learning enables organizations to train and
-
-  manage AI models.
+  -   Identify scenarios where Azure Machine Learning enables organizations to train and manage AI models.
 prerequisites: |
   -   Basic understanding of IT concepts.
 
