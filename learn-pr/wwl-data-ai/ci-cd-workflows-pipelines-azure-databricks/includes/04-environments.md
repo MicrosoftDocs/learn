@@ -1,4 +1,4 @@
-When you work with Azure Databricks, you need to manage and configure your environments that facilitate efficient and reliable data processing and analysis workflows.
+When you work with Azure Databricks, you need to manage and configure your environments to facilitate efficient and reliable data processing and analysis workflows.
 
 To effectively manage environments, it's essential to use Databricks' features such as clusters, notebooks, and workspace configurations.
 

@@ -1,4 +1,4 @@
-Implementing **rollback and roll-forward strategies** in Azure Databricks is crucial for maintaining the integrity and availability of data during **ETL** (**Extract**, **Transform**, **Load**) processes. 
+Implementing **rollback** and **roll-forward strategies** in Azure Databricks is crucial for maintaining the integrity and availability of data during **ETL** (**Extract**, **Transform**, **Load**) processes. 
 
 Rollback and roll-forward strategies help in managing and recovering from failures or errors in data processing workflows:
 
@@ -9,9 +9,9 @@ Let's explore how to implement these strategies in Azure Databricks.
 
 ## Explore rollback strategies
 
-Firstly, to implement rollback strategies in Azure Databricks, it’s essential to **create checkpoints and save intermediate states of your data**. You can create checkpoints by saving versions of your **Delta Lake Tables** at specific points in time.
+Firstly, to implement rollback strategies in Azure Databricks, it’s essential to create **checkpoints** and save intermediate states of your data. You can create checkpoints by saving versions of your **Delta Lake Tables** at specific points in time.
 
-Delta Lake, which is an open-source storage layer that brings **ACID (Atomicity, Consistency, Isolation, Durability)** transactions to Apache Spark, allows you to time travel to previous versions of your data. By using Delta Lake's version feature, you can easily revert to a known good state of your dataset in failures or errors during data processing.
+Delta Lake, which is an open-source storage layer that brings **ACID (Atomicity, Consistency, Isolation, Durability)** transactions to Apache Spark, allows you to time travel to previous versions of your data. By using Delta Lake's versioning feature, you can easily revert to a known good state of your dataset in failures or errors during data processing.
 
 Secondly, **Delta Lake's time travel feature** facilitates efficient rollback. This feature enables you to query snapshots of your data as it was at any given point in time. By using syntax such as `SELECT * FROM table TIMESTAMP AS OF time` or `SELECT * FROM table VERSION AS OF version`, you can access previous states of your data.
 
@@ -133,4 +133,4 @@ apply_pending_changes()
 
 Then, you can schedule these notebooks as jobs in Azure Databricks to run upon detecting a failure or at scheduled intervals.
 
-When you implement rollback and roll-forward strategies in Azure Databricks, you create robust and reliable data processing workflows. By applying **Delta Lake's time travel and transaction log features**, you can efficiently manage data states and recover from failures. Automating these processes further enhances the resilience of your ETL pipelines, ensuring continuous and accurate data processing. With these strategies in place, you can **safeguard your data** against inconsistencies and maintain high availability in your Azure Databricks environment.
+When you implement rollback and roll-forward strategies in Azure Databricks, you create robust and reliable data processing workflows. By applying Delta Lake's time travel and transaction log features, you can efficiently manage data states and recover from failures. Automating these processes further enhances the resilience of your ETL pipelines, ensuring continuous and accurate data processing. With these strategies in place, you can safeguard your data against inconsistencies and maintain high availability in your Azure Databricks environment.

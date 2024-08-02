@@ -12,7 +12,7 @@ title: Implement CI/CD workflows with Delta Live Tables pipelines in Azure Datab
 summary: Learn how to implement CI/CD workflows with Delta Live Tables (DLT) pipelines in Azure Databricks to automate the integration and delivery of code changes. 
 abstract: |
   In this module, you learn how to:
-  - Implement version control and git integration.
+  - Implement version control and Git integration.
   - Perform unit testing and integration testing.
   - Maintain environment and configuration management.
   - Implement rollback and roll-forward strategies.

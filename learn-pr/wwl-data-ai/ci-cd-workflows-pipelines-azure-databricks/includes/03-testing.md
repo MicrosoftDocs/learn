@@ -6,7 +6,7 @@ Azure Databricks provides tools and frameworks for performing unit and integrati
 
 **Integration testing**, on the other hand, verifies the interactions between different modules and services, ensuring they work together seamlessly.
 
-## Implement uit testing
+## Implement unit testing
 
 Unit testing in Azure Databricks is an important practice for ensuring that individual components of your data processing pipelines are working as expected. In Azure Databricks, you can use libraries such as `pytest` and `unittest` for writing unit tests.
 
