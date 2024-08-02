@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-apps-session-host.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A system administrator needs to add an MSIX or Appx image as an app attach package using the Azure portal. What is the correct sequence of steps to accomplish this task?"
+    choices:
+    - content: "Sign in to the Azure portal, search for Azure Virtual Desktop, select App attach, complete the Basics tab, select Next, complete the Image path tab, and finally assign the app attach package to host pools, users and groups."
+      isCorrect: false
+      explanation: "Incorrect. The sequence is almost correct, but it misses the step of selecting the matching service entry to go to the Azure Virtual Desktop overview after searching for Azure Virtual Desktop."
+    - content: "Sign in to the Azure portal, select App attach, complete the Basics tab, select Next, complete the Image path tab, and finally assign the app attach package to host pools, users and groups."
+      isCorrect: false
+      explanation: "Incorrect. The sequence starts with signing in to the Azure portal and searching for Azure Virtual Desktop, not directly selecting App attach."
+    - content: "Sign in to the Azure portal, search for Azure Virtual Desktop, select the matching service entry, select App attach, complete the Basics tab, select Next, complete the Image path tab, and finally assign the app attach package to host pools, users and groups."
+      isCorrect: true
+      explanation: "Correct. This sequence includes all necessary steps to add an MSIX or Appx image as an app attach package using the Azure portal."
+  - content: "A team member is tasked with sharing an application to a different user in the organization using Azure Virtual Desktop. They need to create a RemoteApp application group and assign it to the user. What should they do to verify that the application has been successfully shared?"
+    choices:
+    - content: "Check the Azure portal for a confirmation message"
+      isCorrect: false
+      explanation: "Incorrect. The Azure portal does not provide a confirmation message for successful application sharing."
+    - content: "Ask the user to check their email for a confirmation message"
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual Desktop does not send a confirmation email when an application is shared."
+    - content: "Have the user sign in to the Azure Virtual Desktop web client and check if the application appears in their workspace"
+      isCorrect: true
+      explanation: "Correct. The user should see the shared application in their Azure Virtual Desktop workspace."
+  - content: "A system administrator is tasked with setting up the MSIX app attach file share. What permissions are required for session host VMs to access the file share?"
+    choices:
+    - content: "Full control permissions"
+      isCorrect: false
+      explanation: "Incorrect. Full control permissions are not required for session host VMs, only read and execute, read, and list folder contents permissions are needed."
+    - content: "Write permissions"
+      isCorrect: false
+      explanation: "Incorrect. Write permissions are not necessary for session host VMs to access the file share."
+    - content: "Read and Execute, Read, List folder contents permissions"
+      isCorrect: true
+      explanation: "Correct. Session host VMs require Read and Execute, Read, List folder contents permissions to access the MSIX app attach file share."
+  - content: "A team is assigned to manage an application group in the Azure Virtual Desktop. What is the correct procedure to assign users or user groups to this application group using the Azure portal?"
+    choices:
+    - content: "From the Azure Virtual Desktop overview, select Application groups. Select the user account or user group from the list, then assign them to the application group."
+      isCorrect: false
+      explanation: "Incorrect. The user account or user group is not selected directly from the 'Application groups' list."
+    - content: "From the Azure Virtual Desktop overview, select Users. Search for and select the user account or user group, then assign them to the application group."
+      isCorrect: false
+      explanation: "Incorrect. The process does not start from the 'Users' section in the Azure Virtual Desktop overview."
+    - content: "From the Azure Virtual Desktop overview, select Application groups. Select the application group from the list. From the application group overview, select Assignments. Select Add, then search for and select the user account or user group to assign to this application group. Finish by selecting Select."
+      isCorrect: true
+      explanation: "Correct. This is the proper sequence to assign users or user groups to an application group in the Azure Virtual Desktop."

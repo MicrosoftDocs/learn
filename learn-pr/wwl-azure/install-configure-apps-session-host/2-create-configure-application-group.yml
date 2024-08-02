@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-apps-session-host.create-configure-application-group
+title: Create and configure an application group
+metadata:
+  title: Create and configure an application group
+  description: "Create and configure an application group"
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-create-configure-application-group.md)]

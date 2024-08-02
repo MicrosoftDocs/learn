@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-apps-session-host.create-application-package
+title: Create an application package for app attach or MSIX app attach
+metadata:
+  title: Create an application package for app attach or MSIX app attach
+  description: "Create an application package for app attach or MSIX app attach"
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-create-application-package.md)]

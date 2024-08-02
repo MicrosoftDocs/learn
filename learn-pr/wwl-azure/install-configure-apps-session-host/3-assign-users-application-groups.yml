@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-apps-session-host.assign-users-application-groups
+title: Assign users to application groups
+metadata:
+  title: Assign users to application groups
+  description: "Assign users to application groups"
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-assign-users-application-groups.md)]

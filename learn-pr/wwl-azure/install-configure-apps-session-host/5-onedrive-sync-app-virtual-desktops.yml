@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-apps-session-host.onedrive-sync-app-virtual-desktops
+title: Implement and manage OneDrive, including multisession environments
+metadata:
+  title: Implement and manage OneDrive, including multisession environments
+  description: "Implement and manage OneDrive, including multisession environments"
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+  zone_pivot_groups: azure-interface
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-onedrive-sync-app-virtual-desktops.md)]
+interactive: bash
