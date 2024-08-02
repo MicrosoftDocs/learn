@@ -7,7 +7,7 @@ metadata:
   author: johnpapa
   ms.author: jopapa
   ms.topic: module-standard-task-based
-  ms.service: static-web-apps
+  ms.service: azure-static-web-apps
   manager: mijacobs
 title: Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Static Web Apps
 summary: Automatically deploy and update a static web application from a GitHub repository.
