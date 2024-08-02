@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
-  ms.service: cosmos-db
+  ms.service: azure-cosmos-db
   ms.subservice: nosql
 title: Consume an Azure Cosmos DB for NoSQL change feed using the SDK
 summary: Process change feed events using the change feed processor in the Azure Cosmos DB for NoSQL .NET SDK.
