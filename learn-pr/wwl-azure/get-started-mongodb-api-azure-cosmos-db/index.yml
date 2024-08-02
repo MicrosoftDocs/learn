@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: cosmos-db
+  ms.service: azure-cosmos-db
   ms.subservice: mongodb
   ai-usage: human-only
 title: Get started with the MongoDB API in Azure Cosmos DB
