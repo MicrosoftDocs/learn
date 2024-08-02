@@ -8,7 +8,7 @@ metadata:
   author: v-tcassi
   ms.author: tomcassidy
   ms.topic: module
-  ms.service: container-instances
+  ms.service: azure-container-instances
 title: Run Docker containers with Azure Container Instances
 summary: Learn how to run containerized apps using Docker containers with Azure Container Instances (ACI).
 abstract:  | 
