@@ -5776,6 +5776,34 @@
       "redirect_url": "/azure/azure-sql/migration-guides/database/sql-server-to-sql-database-guide"
     },
     {
+      "source_path_from_root": "/learn-pr/azure/develop-app-that-queries-azure-sql/1-introduction.yml",
+      "redirect_url": "/training/modules/create-foundation-modern-apps"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/develop-app-that-queries-azure-sql/2-create-tables-bulk-import-query-data.yml",
+      "redirect_url": "/training/modules/create-foundation-modern-apps"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/develop-app-that-queries-azure-sql/3-exercise-create-tables-bulk-import-query-data.yml",
+      "redirect_url": "/training/modules/create-foundation-modern-apps"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/develop-app-that-queries-azure-sql/4-connect-aspnet-to-azure-sql.yml",
+      "redirect_url": "/training/modules/create-foundation-modern-apps"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/develop-app-that-queries-azure-sql/5-exercise-connect-aspnet-to-azure-sql.yml",
+      "redirect_url": "/training/modules/create-foundation-modern-apps"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/develop-app-that-queries-azure-sql/6-summary.yml",
+      "redirect_url": "/training/modules/create-foundation-modern-apps"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/develop-app-that-queries-azure-sql/index.yml",
+      "redirect_url": "/training/modules/create-foundation-modern-apps"
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/distribute-data-globally-with-cosmos-db/1-introduction.yml",
       "redirect_url": "/training/modules/work-with-cosmos-db/"
     },

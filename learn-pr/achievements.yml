@@ -3788,3 +3788,9 @@ achievements:
   title: Automate Python deployments with Azure Pipelines
   summary: Implement a CI/CD pipeline for Python.
   iconUrl: /training/achievements/azure-devops/deploy-python.svg
+- uid: learn.develop-app-that-queries-azure-sql.badge
+  type: badge
+  title: Develop and configure an ASP.NET application that queries an Azure SQL database
+  summary: Create a database on Azure SQL Database to store data for an application, and create an ASP.NET application to query data from the database.
+  iconUrl: /training/achievements/develop-app-that-queries-azure-sql.svg
+  
