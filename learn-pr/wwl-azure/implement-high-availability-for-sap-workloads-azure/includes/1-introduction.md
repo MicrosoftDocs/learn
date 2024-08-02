@@ -1,4 +1,4 @@
-You need to prepare for the migration of several of your company's SAP workloads to Azure. You'll implement high availability for all of the SAP workloads in Azure such as:
+You need to prepare for the migration of several of your company's SAP workloads to Azure. You implement high availability for all of the SAP workloads in Azure such as:
 
 - SAP application servers
 - SAP ASCS-SCS instances
@@ -30,4 +30,4 @@ In addition, you must ensure the availability solutions are compatible with the 
 
 ## Course video training
 
-Enhance your learning experience with additional insights and expert guidance in the [AZ-120 On Demand Instructor-led Training Video series](/shows/on-demand-instructor-led-training-series/?products=azure&terms=az-120). Perfect for those looking for a supplementary resource to reinforce understanding, with the flexibility to cover the course content at your own pace.
+Enhance your learning experience with further insights and expert guidance in the [AZ-120 On Demand Instructor-led Training Video series](/shows/on-demand-instructor-led-training-series/?products=azure&terms=az-120). This video series is a perfect supplementary resource to reinforce understanding, with the flexibility to cover the course content at your own pace.
