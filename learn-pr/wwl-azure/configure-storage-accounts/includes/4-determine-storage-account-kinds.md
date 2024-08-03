@@ -16,5 +16,5 @@ Review the following options and think about what storage accounts are required 
 
 ### How to manage your storage account
 
-Learn more about [how to move Azure Storage Blobs between containers](https://www.youtube.com/embed/-j_8clCWYn8). 
+Learn more about [how to manage your storage account](https://www.youtube.com/embed/-j_8clCWYn8). 
 
