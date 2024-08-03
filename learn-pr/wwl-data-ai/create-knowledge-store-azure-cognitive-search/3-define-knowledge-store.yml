@@ -3,11 +3,13 @@ uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search.define-knowled
 title: Define a knowledge store
 metadata:
   title: Define a knowledge store
-  description: "Define a knowledge store"
-  ms.date: 12/11/2023
+  description: Define a knowledge store
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 12/11/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 durationInMinutes: 5
 content: |

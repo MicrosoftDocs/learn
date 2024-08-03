@@ -2,12 +2,14 @@
 uid: learn.wwl.manage-compare-models-azure-machine-learning
 metadata:
   title: Create and explore the Responsible AI dashboard for a model in Azure Machine Learning
-  description: "Create and explore the Responsible AI dashboard for a model in Azure Machine Learning using the Python SDK v2."
-  ms.date: 09/11/2023
+  description: Create and explore the Responsible AI dashboard for a model in Azure Machine Learning using the Python SDK v2.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: module-standard-task-based
+  ms.date: 09/11/2023
   ms.service: machine-learning
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Create and explore the Responsible AI dashboard for a model in Azure Machine Learning
 summary: Explore model explanations, error analysis, counterfactuals, and causal analysis by creating a Responsible AI dashboard. You'll create and run the pipeline in Azure Machine Learning using the Python SDK v2 to generate the dashboard.
 abstract: |

@@ -2,14 +2,14 @@
 uid: learn.wwl.scale-ai
 metadata:
   title: Scale AI in your organization
-  description: "Learn enterprise AI management with our free open online course, including scaling AI."
-  ms.date: 04/08/2024
+  description: Learn enterprise AI management with our free open online course, including scaling AI.
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
-  ms.custom:
-  - N/A
+  ms.date: 04/08/2024
   ms.service: microsoft-365
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
   ai-usage: human-only
 title: Scale AI in your organization
 summary: This module provides insights for a full adoption of AI in your organization. It covers AI strategy, assigning responsibilities, and empowering business users and subject matter experts so they can use AI themselves.

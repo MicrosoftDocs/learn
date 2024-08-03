@@ -10,6 +10,7 @@ metadata:
   ms.custom: py-fresh-zinc
   ms.devlang: python
   ms.service: machine-learning
+  ms.collection: wwl-ai-copilot
 title: Explore and analyze data with Python
 summary: Data exploration and analysis is at the core of data science. Data scientists require skills in programming languages like Python to explore, visualize, and manipulate data.
 abstract: |

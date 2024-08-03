@@ -3,11 +3,13 @@ uid: learn.wwl.enrich-search-index-using-language-studio.explore-available-featu
 title: Explore the available features of Azure AI Language
 metadata:
   title: Explore the available features of Azure AI  Language
-  description: "Explore the available features of Azure AI  Language"
-  ms.date: 09/27/2023
+  description: Explore the available features of Azure AI  Language
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/27/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

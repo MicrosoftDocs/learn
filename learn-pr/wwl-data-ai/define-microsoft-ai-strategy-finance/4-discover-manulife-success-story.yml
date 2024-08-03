@@ -3,13 +3,13 @@ uid: learn.wwl.define-microsoft-ai-strategy-finance.discover-manulife-success-st
 title: Discover the potential of Microsoft AI Services in insurance – A Manulife success story
 metadata:
   title: Discover the potential of Microsoft AI Services in insurance – A Manulife success story
-  description: "Discover the potential of Microsoft AI Services in insurance – A Manulife success story"
-  ms.date: 05/22/2024
+  description: Discover the potential of Microsoft AI Services in insurance – A Manulife success story
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 05/22/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/4-discover-manulife-success-story.md)]

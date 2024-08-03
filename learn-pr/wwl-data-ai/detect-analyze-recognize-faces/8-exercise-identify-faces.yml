@@ -3,11 +3,13 @@ uid: learn.wwl.detect-analyze-recognize-faces.exercise-identify-faces
 title: Exercise - Detect, analyze, and identify faces
 metadata:
   title: Exercise - Detect, analyze, and identify faces
-  description: "Exercise - Detect, analyze, and identify faces"
-  ms.date: 03/11/2024
+  description: Exercise - Detect, analyze, and identify faces
   author: wwlpublish
   ms.author: gmalc
+  ms.date: 03/11/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 labId: 152409
 labModal: true
 durationInMinutes: 30

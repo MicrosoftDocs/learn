@@ -3,11 +3,13 @@ uid: learn.wwl.define-microsoft-ai-strategy-sustainability.discover-ai-sustainab
 title: Discover AI use cases in sustainability
 metadata:
   title: Discover AI use cases in sustainability
-  description: "Discover AI use cases in sustainability"
-  ms.date: 05/22/2024
+  description: Discover AI use cases in sustainability
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 05/22/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/3-discover-ai-sustainability.md)]

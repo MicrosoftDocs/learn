@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: learning-path
+  ms.collection: wwl-ai-copilot
 title: Create custom copilots with Azure AI Studio
 prerequisites: |
   Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. Consider completing the [Get started with artificial intelligence](/training/paths/get-started-with-artificial-intelligence-on-azure) learning path first.

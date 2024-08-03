@@ -3,11 +3,13 @@ uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search.improve
 title: Improve an index with analyzers and tokenized terms
 metadata:
   title: Improve an index with analyzers and tokenized terms
-  description: "Improve an index with analyzers and tokenized terms"
-  ms.date: 09/27/2023
+  description: Improve an index with analyzers and tokenized terms
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/27/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 9

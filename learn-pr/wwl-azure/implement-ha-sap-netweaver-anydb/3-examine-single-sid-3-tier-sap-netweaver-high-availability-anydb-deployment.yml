@@ -4,7 +4,7 @@ title: Examine single SID 3-tier SAP NetWeaver high availability AnyDB deploymen
 metadata:
   title: Examine single SID 3-tier SAP NetWeaver high availability AnyDB deployment
   description: "Examine what is created when deploying an Azure Resource Manager template to deploy a single SID 3-tier SAP NetWeaver high availability AnyDB."
-  ms.date: 07/29/2024
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

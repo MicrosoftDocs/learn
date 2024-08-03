@@ -7,7 +7,7 @@ metadata:
   author: lnyswonger
   ms.author: lnyswonger
   ms.topic: module
-  ms.service: private-5g-core 
+  ms.service: azure-private-5g-core
 title: Manage the Azure Private 5G Core service
 summary: "Describes Azure Private 5G Core routine management tasks, including site management, SIM management, and system upgrading tasks."
 abstract: |

@@ -2,12 +2,14 @@
 uid: learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning
 metadata:
   title: Deploy deep learning workloads to production with Azure Machine Learning
-  description: "Deploy deep learning workloads to production with Azure Machine Learning"
-  ms.date: 07/10/2024
+  description: Deploy deep learning workloads to production with Azure Machine Learning
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
+  ms.service: azure-machine-learning
   ms.topic: module-standard-task-based
-  ms.service: azure-machine-learning 
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai

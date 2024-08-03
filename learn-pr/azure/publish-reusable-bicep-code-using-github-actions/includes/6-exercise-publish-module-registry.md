@@ -20,18 +20,18 @@ Before you can publish modules, you need to create a registry for your organizat
 
 1. Enter a name for your registry and a location that's close to you.
 
-    > [!IMPORTANT]
-    > The registry name must be unique within Azure and contain 5-50 alphanumeric characters. A check mark next to the registry name indicates that the name you chose is available.
+   > [!IMPORTANT]
+   > The registry name must be unique within Azure and contain 5-50 alphanumeric characters. A check mark next to the registry name indicates that the name you chose is available.
 
-1. For **SKU**, select **Basic**.
+1. For **Pricing plan**, select **Basic**.
 
    Leave the default values for the other configuration settings.
 
 1. Select **Review + create**.
 
-   :::image type="content" source="../media/6-create-registry.png" alt-text="Screenshot of the Azure portal that shows the container registry creation page.":::
+   :::image type="content" source="../media/6-create-registry.png" alt-text="Screenshot of the Azure portal that shows the container registry creation page." lightbox="../media/6-create-registry.png":::
 
-1. Review the settings displays **Validation passed** and then select **Create**.
+1. When the **Validation passed** message appears, select **Create**.
 
    Wait for the deployment to finish, which usually takes 1-2 minutes.
 
@@ -39,9 +39,9 @@ Before you can publish modules, you need to create a registry for your organizat
 
    :::image type="content" source="../media/6-registry-created.png" alt-text="Screenshot of the Azure portal that shows the container registry deployment, with the button for going to a resource highlighted.":::
 
-1. In the container registry's **Overview** area, note the value of the **Login server** setting. The name is like _yourregistryname.azurecr.io_.
+1. In the container registry's **Overview** area, note the value of the **Login server** setting. The name resembles `yourregistryname.azurecr.io`.
 
-   :::image type="content" source="../media/6-registry-login-server.png" alt-text="Screenshot of the Azure portal that shows the container registry's details, with the login server highlighted.":::
+   :::image type="content" source="../media/6-registry-login-server.png" alt-text="Screenshot of the Azure portal that shows the container registry's details, with the login server highlighted." lightbox="../media/6-registry-login-server.png":::
 
    You'll need this value shortly.
 
@@ -59,7 +59,7 @@ In the preceding unit, you learned about the importance of having a versioning s
 
    :::code language="json" source="code/6-metadata.json" :::
 
-   Notice that in the metadata file, you separately define the major and minor version numbers. Your workflow combines these numbers with the workflow's run number, into a complete version number, each time the workflow runs.
+   In the metadata file, you separately define the major and minor version numbers. Whenever your workflow runs, the workflow combines these numbers together with the workflow's run number to form a complete version number.
 
 1. Save your changes to the file.
 
@@ -79,7 +79,7 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
    :::code language="yaml" source="code/6-workflow.yml" range="16-20" highlight="3" :::
 
-1. At the bottom of the file, for the **To be added** comment, add the following lint job definition:
+1. At the bottom of the file, for the `# To be added` comment, add the following lint job definition:
 
    :::code language="yaml" source="code/6-workflow.yml" range="22-28" :::
 
@@ -91,19 +91,19 @@ Now, you can add a second job to publish the module to your container registry.
 
    :::code language="yaml" source="code/6-workflow.yml" range="30-40" :::
 
-   The steps check out the code from your repository and sign in to Azure.
+   The initial two steps in this definition are to check out the code from your repository and sign in to Azure.
 
-1. Below the code that you just added, add a step to read the version number from your module's _metadata.json_ file and set it as an environment variable.
+1. Below the code that you just added, add another step that reads the version number from your module's _metadata.json_ file and sets it as an environment variable.
 
    :::code language="yaml" source="code/6-workflow.yml" range="41-45" :::
 
-   The step runs a script that uses the jq command-line application to parse the JSON file.
+   The step runs a script that uses the `jq` command-line application to parse the JSON file.
 
-1. After the step that you created, add a step to publish the module to the registry.
+1. After the step that you created, add a final step to publish the module to the registry.
 
    :::code language="yaml" source="code/6-workflow.yml" range="46-52" :::
 
-   Notice that this step constructs the value of the `--target` argument dynamically. It combines the value of the registry server, the module name, and the version number.
+   This step constructs the value of the `--target` argument dynamically. It combines the value of the registry server, the module name, and the version number.
 
 1. Save your changes to the file.
 
@@ -113,7 +113,7 @@ Now, you can add a second job to publish the module to your container registry.
 
    :::code language="yaml" source="code/6-workflow.yml" highlight="18, 23-52" :::
 
-   If it doesn't, update it to match this example, and then save it.
+   If the file contents are different, update it to match this example, and then save the file.
 
 1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 
@@ -133,7 +133,7 @@ Now, you can add a second job to publish the module to your container registry.
 
 1. Select the latest run in the list.
 
-   :::image type="content" source="../media/6-workflow-runs-list.png" alt-text="Screenshot of GitHub that highlights the latest run of the module's workflow.":::
+   :::image type="content" source="../media/6-workflow-runs-list.png" alt-text="Screenshot of GitHub that highlights the latest run of the module's workflow." lightbox="../media/6-workflow-runs-list.png":::
 
    Wait for the workflow run to finish. The Bicep module is published to your container registry.
 
@@ -147,9 +147,9 @@ You can also view the published module in the Azure portal.
 
 1. Go to the **ToyReusable** resource group.
 
-1. Select the container registry that you created previously.
+1. In **Resources**, select the container registry that you created previously.
 
-1. Select the **Repositories** pane from the menu. Then, select the **modules\storage-account** repository, which represents the module that your workflow published.
+1. Select **Services** > **Repositories** from the menu. Then, select the **modules\storage-account** repository, which represents the module that your workflow published.
 
    :::image type="content" source="../media/6-registry-portal.png" alt-text="Screenshot of the Azure portal that shows a Bicep module in the container registry.":::
 
@@ -183,18 +183,19 @@ You can also remove the GitHub secrets and repository, and the Azure workload id
 
 - GitHub secrets
   1. From the GitHub repository, go to **Settings** > **Secrets and variables** > **Actions**.
-  1. Select **Remove secret** for each repository secret and follow the prompts.
+  1. For each saved GitHub secret, select the **Delete \<secret-name>** icon and follow the prompts.
 
 - GitHub repository
-  1. Go to **Settings** > **General**
+  1. Go to **Settings** > **General**.
   1. Select **Delete this repository** and follow the prompts.
 
 - Azure App registration's federated credentials and service principal.
-  1. From the portal home page, search for _Azure Active Directory_ and select it from the list of **Services**.
+  1. From the portal home page, search for _Microsoft Entra ID_ and select it from the list of **Services**.
   1. Go to **Manage** > **App registrations**.
-  1. In **Owned applications** select **toy-reusable**.
+  1. In the **Owned applications** tab, select **toy-reusable**.
   1. Select **Delete** and follow the prompts.
-  1. Select **Deleted applications** to permanently delete the app registration.
+  1. Select the **Deleted applications** tab.
+  1. Select **toy-reusable**, select **Delete permanently**, and then select **Yes** to permanently delete the app registration.
 
   > [!IMPORTANT]
-  > It's possible to have duplicate App registration and service principal names. It's recommended to verify the application ID to make sure you're deleting the correct resource.
+  > It's possible to have duplicate app registration and service principal names. We recommend that you verify the application ID to make sure you're deleting the correct resource.

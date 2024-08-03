@@ -3,11 +3,13 @@ uid: learn.wwl.define-microsoft-ai-strategy-sustainability.discover-ai-enable-gr
 title: Discover how Microsoft AI enables green mobility – A Stadtwerke München success story
 metadata:
   title: Discover how Microsoft AI enables green mobility – A Stadtwerke München success story
-  description: "Discover how Microsoft AI enables green mobility – A Stadtwerke München success story"
-  ms.date: 05/22/2024
+  description: Discover how Microsoft AI enables green mobility – A Stadtwerke München success story
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 05/22/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/6-discover-ai-enable-green-mobility.md)]

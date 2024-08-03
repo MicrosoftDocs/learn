@@ -3,11 +3,13 @@ uid: learn.wwl.maintain-azure-cognitive-search-solution.debug-search-issues-use-
 title: Debug search issues using the Azure portal
 metadata:
   title: Debug search issues using the Azure portal
-  description: "Debug search issues using the Azure portal"
-  ms.date: 09/27/2023
+  description: Debug search issues using the Azure portal
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/27/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

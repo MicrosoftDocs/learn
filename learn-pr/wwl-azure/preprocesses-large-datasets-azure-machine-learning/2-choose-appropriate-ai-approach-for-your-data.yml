@@ -3,11 +3,13 @@ uid: learn.wwl.preprocessing-large-datasets-azure-machine-learning.choose-approp
 title: Choose the appropriate AI approach for your data
 metadata:
   title: Choose the appropriate AI approach for your data
-  description: "Choose the appropriate AI approach for your data"
-  ms.date: 07/10/2024
+  description: Choose the appropriate AI approach for your data
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai

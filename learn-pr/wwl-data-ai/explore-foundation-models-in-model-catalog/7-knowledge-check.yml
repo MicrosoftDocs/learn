@@ -3,11 +3,13 @@ uid: learn.explore-foundation-models-in-model-catalog.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check to test your knowledge on the history of natural language processing models."
-  ms.date: 7/24/2023
+  description: Knowledge check to test your knowledge on the history of natural language processing models.
   author: madiepev
   ms.author: madiepev
+  ms.date: 7/24/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 ###########################################################################
 ###

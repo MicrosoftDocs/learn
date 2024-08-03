@@ -3,11 +3,13 @@ uid: learn.wwl.source-control-for-machine-learning-projects.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 07/20/2023
+  description: Summary
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/20/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 1

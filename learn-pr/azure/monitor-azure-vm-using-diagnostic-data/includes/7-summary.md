@@ -11,7 +11,7 @@ Now that you understand these tools, you're confident that Azure Monitor can eff
 
 ## Clean up resources
 
-In this module, you created a VM in your Azure subscription. So you don't continue to incur charges for this VM, you can delete it or the resource group that contains it.
+In this module, you created a VM in your Azure subscription. To prevent further charges for this VM, you can delete it or the resource group that contains it.
 
 To delete the resource group that contains the VM and its resources:
 

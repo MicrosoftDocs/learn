@@ -8,7 +8,7 @@ metadata:
   ms.author: estfan
   ms.topic: module-standard-task-based
   ROBOTS: INDEX,FOLLOW
-  ms.service: logic-apps
+  ms.service: azure-logic-apps
   manager: mijacobs
 title: Call an API from an Azure Logic Apps workflow using a custom connector
 summary: Call any Web API from a logic app workflow using the custom connector.

@@ -3,10 +3,10 @@ uid: learn.wwl.generate-documentation-using-github-copilot-tools.review-code-doc
 title: Review the "code documentation" solution
 metadata:
   title: Review the "code documentation" solution
-  description: "Review the \"code documentation\" solution"
-  ms.date: 07/24/2024
+  description: Review the code documentation solution
   author: wwlpublish
   ms.author: cahowd
+  ms.date: 07/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

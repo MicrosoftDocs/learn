@@ -3,11 +3,13 @@ uid: learn.explore-foundation-models-in-model-catalog.exercise
 title: Exercise - Explore foundation models in the model catalog
 metadata:
   title: Exercise - Explore foundation models in the model catalog
-  description: "Exercise on exploring foundation models in the model catalog in the Azure Machine Learning workspace."
-  ms.date: 7/24/2023
+  description: Exercise on exploring foundation models in the model catalog in the Azure Machine Learning workspace.
   author: madiepev
   ms.author: madiepev
+  ms.date: 7/24/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise.md)]

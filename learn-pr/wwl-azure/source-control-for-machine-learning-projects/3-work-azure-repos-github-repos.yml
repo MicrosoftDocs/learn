@@ -3,11 +3,13 @@ uid: learn.wwl.source-control-for-machine-learning-projects.work-azure-repos-git
 title: Work with Azure Repos and GitHub repos
 metadata:
   title: Work with Azure Repos and GitHub repos
-  description: "Work with Azure Repos and GitHub repos"
-  ms.date: 07/20/2023
+  description: Work with Azure Repos and GitHub repos
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/20/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
