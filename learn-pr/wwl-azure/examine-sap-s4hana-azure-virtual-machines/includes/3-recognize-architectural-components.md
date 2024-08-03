@@ -48,7 +48,7 @@ The Web Dispatcher component is used as a load balancer for SAP traffic among th
 Both SAP Web Dispatcher and Azure Application Gateway solutions work as a reverse proxy, and therefore it would be tempting to use only the Application Gateway. The Web Dispatcher, however, contains unique features to understand the SAP landscape and therefore the Web Dispatcher load balancing has advantages over Application Gateway. The SAP Web Dispatcher decides whether the incoming request should be forwarded to an ABAP or Java Server and the SAP Web Dispatcher carries out the following tasks:
 
 - Checks the session ID to pass subsequent requests for stateful sessions to the processing server (Session-Stickiness).
-- Decides whether the request is an ABAP request (e.g. a BSP application) or a Java request (for example, a JSP or a servlet).
+- Decides whether the request is an ABAP request (for example, a BSP application) or a Java request (for example, a JSP or a servlet).
 - Load Balancing
 - HTTPS scheduling or end-to-end SSL
 - URL filtering
@@ -59,11 +59,11 @@ On the other hand, the Azure Application Gateway offers advanced threat detectio
 
 The Fiori Front-end Server uses a NetWeaver Gateway (which facilitates exposing SAP application data as an OData service). For small deployments, the gateway can be loaded on the Fiori server. For large deployments, a separate server for the NetWeaver Gateway might be deployed in front of the Fiori Front-end Server pool.
 
-:::image border="false" type="content" source="../media/reference-architecture-fiori-c4084b0b.png" alt-text="Diagram showing reference architecture for S A P Fiori.":::
+:::image border="false" type="content" source="../media/reference-architecture-fiori-c4084b0b.png" alt-text="Diagram showing reference architecture for SAP Fiori.":::
 
 ## SAP Central Services cluster
 
-The Central Services is a potential single point of failure (SPOF) when deployed to a single virtual machine — a typical deployment when high availability isn't a requirement. To implement a high availability solution, deploy multiple Central Services instances and configure them as members of a failover cluster with a shared disk or a file share providing highly available storage accessible by all cluster nodes. As mentioned earlier, Azure doesn't support natively shared disks, but you can use third-party solutions (such as SIOS DataKeeper Cluster Edition, which replicates synchronously independent disks owned by individual cluster nodes) to implement this functionality on Azure Virtual Machines running Linux or Windows Server. For Linux accessible shares, you can use highly available NFS deployment of Azure Virtual Machines.
+The Central Services is a potential single point of failure (SPOF) when deployed to a single virtual machine—a typical deployment when high availability isn't a requirement. To implement a high availability solution, deploy multiple Central Services instances and configure them as members of a failover cluster with a shared disk or a file share providing highly available storage accessible by all cluster nodes. As mentioned earlier, Azure doesn't support natively shared disks, but you can use non-Microsoft solutions (such as SIOS DataKeeper Cluster Edition, which replicates synchronously independent disks owned by individual cluster nodes) to implement this functionality on Azure Virtual Machines running Linux or Windows Server. For Linux accessible shares, you can use highly available NFS deployment of Azure Virtual Machines.
 
 ## Database servers
 
@@ -71,4 +71,4 @@ The database tier uses two or more Linux virtual machines in a cluster to achiev
 
 ## Application servers pool
 
-To provide high availability of application servers, simply deploy the primary application server and one or more extra application servers. To manage logon groups for ABAP application servers, the SMLG transaction is used. It uses the load balancing function within the message server of the Central Services to distribute workload among SAP application servers pool for SAPGUIs and RFC traffic. The application server connection to the highly available Central Services is through the cluster virtual network name.
+To provide high availability of application servers, deploy the primary application server and one or more extra application servers. To manage sign-in groups for ABAP application servers, the SMLG transaction is used. It uses the load balancing function within the message server of the Central Services to distribute workload among SAP application servers pool for SAPGUIs and RFC traffic. The application server connection to the highly available Central Services is through the cluster virtual network name.
