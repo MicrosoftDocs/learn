@@ -4,7 +4,7 @@ title: 'Exercise: Migrate SQL Server databases to SQL Server on Azure Virtual Ma
 metadata:
   title: 'Exercise: Migrate SQL Server databases to SQL Server on Azure Virtual Machine'
   description: "Learn how to perform an online migration of a SQL Server database to a SQL Server running on an Azure Virtual Machine."
-  ms.date: 07/28/2023
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: unit
