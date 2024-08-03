@@ -17,6 +17,3 @@ Here are some points to consider about configuring service access settings:
 > [!Important]
 > Be sure to test the service endpoint and verify the endpoint limits access as expected.
 
-### How to connect to a storage account using private link
-
-Learn more about [how to connect to a storage account with private link](https://www.youtube.com/vM7yDwHSc_o).
