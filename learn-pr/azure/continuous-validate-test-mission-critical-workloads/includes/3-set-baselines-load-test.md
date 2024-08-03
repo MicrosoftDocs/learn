@@ -37,7 +37,7 @@ When you run the tests, you might have different requirements for special use ca
 - High-load scenarios in which a scale-out operation is expected and required. There might be temporary performance degradation until the operation is completed.
 - Chaos experiments, as part of a continuous validation pipeline. A higher error rate can be expected until resiliency measures start to self-heal the application or fail over to another region.
 
-Use [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing) to evaluate how your system performs against defined thresholds. The service has a built-in [test criteria](/azure/load-testing/how-to-define-test-criteria?tabs=portal) capability. That is, you can specify criteria that a load test needs to pass.
+Use [Azure Load Testing](/azure/load-testing/overview-what-is-azure-load-testing) to evaluate how your system performs against defined thresholds. The service has a built-in [test criteria](/azure/load-testing/how-to-define-test-criteria?tabs=pipelines+github) capability. That is, you can specify criteria that a load test needs to pass.
 
 You can use test criteria to implement different baselines, as shown in the following example screenshot.
 

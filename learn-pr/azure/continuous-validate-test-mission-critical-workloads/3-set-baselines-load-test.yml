@@ -3,7 +3,7 @@ uid: learn.continuous-validate-test-mission-critical-workloads.set-baselines-loa
 title: Set baselines for load tests
 metadata:
   title: Set baselines for load tests
-  description: Learn how to set baselines and evaluate thresholds for load tests of mission-critical workloads in Azure.
+  description: Understand how to set up baselines for load tests, and use Azure Load Testing to evaluate thresholds.
   ms.date: 07/31/2024
   author: sebader
   ms.author: prwilk
