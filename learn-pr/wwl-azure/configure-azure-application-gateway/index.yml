@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: application-gateway
+  ms.service: azure-application-gateway
   ai-usage: human-only
 title: Configure Azure Application Gateway
 summary: Learn how to configure Azure Application Gateway.
