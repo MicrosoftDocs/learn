@@ -5,8 +5,8 @@ metadata:
   description: Learn about the history of natural language processing (NLP), including how the Transformer architecture revolutionized the field and helped us create large language models (LLMs). Work with LLMs in Azure Machine Learning through the foundation models in the model catalog.
   author: madiepev
   ms.author: madiepev
-  ms.date: 7/24/2023
-  ms.service: machine-learning
+  ms.date: 07/25/2024
+  ms.service: azure-machine-learning
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
