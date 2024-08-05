@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop.plan-implement-remote-desktop-protocol-shortpath
+title: Understanding Azure Virtual Desktop network connectivity
+metadata:
+  title: Understanding Azure Virtual Desktop network connectivity
+  description: "Understanding Azure Virtual Desktop network connectivity"
+  ms.date: 08/05/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-plan-implement-remote-desktop-protocol-shortpath.md)]
