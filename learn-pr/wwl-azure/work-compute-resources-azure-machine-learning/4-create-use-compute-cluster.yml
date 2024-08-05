@@ -6,7 +6,7 @@ metadata:
   description: Learn about how to create and use a compute cluster in Azure Machine Learning. A compute cluster is ideal for scalable and parallel machine learning workloads.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/31/2023
+  ms.date: 07/25/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
