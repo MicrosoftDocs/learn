@@ -38,9 +38,5 @@ Azure AI capabilities include: vision, language, speech, document intelligence, 
     - Integration with Azure AI Services for speech, vision, language, document intelligence, and content safety.
 
 >[!TIP]
->**Customer story**: An automotive manufacturer uses Azure AI Services to streamline invoice and credit note processing.
->Azure AI Document Intelligence provides the necessary AI capabilities to extract data from documents in a variety of formats, including emails, digital and scanned PDFs, and written bills.
->Since launch, the company has saved 10,000 manual hours—about 850-plus manual hours per month.
->Employees are positive about the automated solution and value having more time to focus on innovation and tasks related to their specific skill sets.
->Read the full case study here: [https://aka.ms/ai-services-customer-story](https://aka.ms/ai-services-customer-story)
+>**Customer story**: An automotive manufacturer uses Azure AI Services to streamline invoice and credit note processing. Azure AI Document Intelligence provides the necessary AI capabilities to extract data from documents in a variety of formats, including emails, digital and scanned PDFs, and written bills. Since launch, the company has saved 10,000 manual hours—about 850-plus manual hours per month. Employees are positive about the automated solution and value having more time to focus on innovation and tasks related to their specific skill sets. Read the full customer story here: [https://aka.ms/ai-services-customer-story](https://aka.ms/ai-services-customer-story). ![Photo of an business user working with Azure AI services on a tablet.](../media/azure-ai-services-customer-story.jpg)
 

@@ -67,4 +67,4 @@ AI-powered search experiences like Microsoft Search can help business users wade
 
 Now is the time to empower your employees with the right AI tools to amplify their capabilities and achieve more. 
 
-In the next unit, we'll discuss Power Platform, which also offers AI features for people without data science expertise but can require a basic level of coding.
+In the next unit, we'll discuss Power Platform, which also offers AI features for people without data science expertise.
