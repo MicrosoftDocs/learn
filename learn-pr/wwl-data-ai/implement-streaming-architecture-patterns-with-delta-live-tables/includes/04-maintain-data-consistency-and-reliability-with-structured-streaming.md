@@ -5,7 +5,7 @@ Ensuring data consistency is paramount for reliable analytics and informed decis
 
 - **ACID transactions:** Delta Live Tables enforces data consistency by utilizing ACID transactions. These transactions ensure that each operation is processed completely and maintains the data in a consistent state. This approach adheres to the principles of Atomicity, Consistency, Isolation, and Durability.
 
-    :::image type="content" source="../media/acid-principles.png" alt-text="Diagram of the tenets of ACID for transactional systems":::
+    :::image type="content" source="../media/acid-principles.png" alt-text="Diagram of the tenets of ACID for transactional systems.":::
 
 - **Schema enforcement:** DLT enforces schema constraints, ensuring that incoming data conforms to the predefined structure, preventing data corruption and inconsistencies.
 

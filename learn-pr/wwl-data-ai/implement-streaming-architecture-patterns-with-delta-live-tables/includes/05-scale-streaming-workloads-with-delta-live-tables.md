@@ -101,4 +101,4 @@ FROM sensor_data_aggregated;
 3. Save and deploy the pipeline.
 
 ### Monitor and scale
-1. Use the Databricks monitoring tools to track the performance of your streaming pipeline and scale the cluster as needed based on the workload.
+Use the Databricks monitoring tools to track the performance of your streaming pipeline and scale the cluster as needed based on the workload.
