@@ -3,14 +3,14 @@ uid: learn.design-health-model-mission-critical-workload
 metadata:
   title: Design a health model for your mission-critical workload
   description: Improve your observability practices by defining a health model for mission-critical applications. A health model helps you quickly identify and troubleshoot issues that might affect the health of your mission-critical solution.
-  ms.date: 01/12/2022
+  ms.date: 08/05/2024
   author: msimecek
   ms.author: prwilk
   ms.topic: module
   ms.service: azure
 title: Design a health model for your mission-critical workload
-summary: A well-designed application **health model** gives you contextualized observability by using metrics and thresholds, which _you_ consider important for your mission-critical workload.
-abstract:  | 
+summary: A well-designed application health model gives you contextualized observability by using metrics and thresholds, which you consider important for your mission-critical workload.
+abstract: | 
   By the end of this module, you're able to:
   -	Identify user flows and key application components of an application architecture.
   -	Identify key metrics to use as the foundation of an application health model.
@@ -31,7 +31,7 @@ roles:
 -	network-engineer
 -	security-engineer
 products:
-- azure #TBD
+- azure
 subjects:
 -	site-reliability-engineering
 -	architecture

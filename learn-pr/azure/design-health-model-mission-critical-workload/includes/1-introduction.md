@@ -4,7 +4,7 @@ A well-designed application **health model** gives you that capability by using 
 
 ## Example scenario
 
-Two years ago, Contoso Shoes migrated its deployments from an on-premises environment to the cloud. Although the company saw improvements in operations, keeping its availability and uptime within its service-level agreement continued to be a challenge. Some product launches resulted in outages because the system couldn't meet the demands of increased user load.
+Two years ago, after migrating from an on-premises environment to the cloud, Contoso Shoes saw improvements in operations. However, keeping its availability and uptime within its service-level agreement continued to be a challenge for the company. Some product launches resulted in outages because the system couldn't meet the demands of increased user load.
 
 To prevent further avoidable outages, Contoso Shoes successfully applied the [design principles of a mission-critical workload](/azure/architecture/framework/mission-critical/mission-critical-design-principles) in its main customer-facing web application, the store website.
 

@@ -1,5 +1,5 @@
 
-To determine whether your environment is working as expected, it's important to monitor your application's health and the key metrics of the Azure resources it uses. Health modeling is a design exercise that augments raw data logs and metrics with key business requirements. The goal is to quantify application health and drive automated evaluation of the health states.
+To determine whether your environment is working as expected, it's important to monitor the health of your application and the key metrics of its Azure resources. Health modeling is a design exercise that augments raw data logs and metrics with key business requirements. The goal is to quantify application health and drive automated evaluation of the health states.
 
 ## Advantages of health modeling
 
