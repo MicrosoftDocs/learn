@@ -19,16 +19,12 @@ At Microsoft, we’re working to ensure that any user—from accountant to resea
 
 :::row:::
 :::column span="2":::
-We believe AI should be used to enhance human capabilities. AI works best as a copilot, not a replacement. The right AI tools help employees better apply their expertise and complement it with AI-powered insights, making them more innovative and effective.
-
-To accomplish AI for everyone, we’re weaving intelligence into business applications that people use every day.
-
-We also want to make it possible for anyone to add AI capabilities to apps, no matter their technical experience. We’re working to democratize AI development with no-code tools and platforms so business users can create their own AI models. We’re also making prebuilt models for common scenarios accessible to nondevelopers.
+We believe AI should be used to enhance human capabilities. AI works best as a copilot, not a replacement. The right AI tools help employees better apply their expertise and complement it with AI-powered insights, making them more innovative and effective. To accomplish AI for everyone, we’re weaving intelligence into business applications that people use every day.
 :::column-end:::
 :::column span="2":::
 
 > [!div class="mx-imgBorder"]
-> ![Diagram that shows that Microsoft AI is available to business users. It includes everyday AI, business function AI, no-code AI, and AI for reasoning.](../media/4-empower-business-users-ai-1.png)
+> ![Image of two people working in an office who are looking at a computer screen.](../media/empower-business-users.jpg)
 
 :::column-end:::
 :::row-end:::

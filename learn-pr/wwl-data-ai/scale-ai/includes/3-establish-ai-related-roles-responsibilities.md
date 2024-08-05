@@ -26,25 +26,20 @@ As for the other leaders across an organization, there's no single model to foll
 
 ### Line of business leader
 
-:::row:::
-:::column span="2":::
+![Image of a person who is a business leader standing in front of a building.](../media/CEO.jpg)
+
 This person is a business executive responsible for operations of a particular function, line of business, or process within an organization.
 
 * **Source ideas from all employees**: People from every department and level should feel free to contribute ideas, ask questions, and make suggestions related to AI. We've discovered that ideas for our most impactful application of AI have come from our employees within business functions, not from outside or above.
+
 * **Identify new business models**: The real value of AI lies in business transformation: driving new business models, enabling innovative services, creating new revenue streams, and more.
-:::column-end:::
-:::column span="2":::
-
-> [!div class="mx-imgBorder"]
-> ![Diagram that shows AI-related roles: business leader, chief digital officer, human resources, and IT.](../media/3-establish-ai-related-roles-responsibilities-2.png)
-
-:::column-end:::
-:::row-end:::
 
 * **Create optional communities for exchanging ideas**: They provide opportunities for IT and business roles to connect on an ongoing basis. You can implement this measure virtually through tools such as Yammer, or in-person at networking events or lunch-and-learn sessions.
 * **Train business experts to become Agile Product Owners**: A Product Owner is a member of the Agile team responsible for defining the features of the application and streamlining execution. Including this role as part or all of a business expert's responsibilities allow them to dedicate time and effort to AI initiatives.
 
 ### Chief Digital Officer
+
+![Image of a person who is a Chief Digital Officer.](../media/CDO.jpg)
 
 The Chief Digital Officer (CDO) is a change agent who oversees the transformation of traditional operations using digital processes. Their goal is to generate new business opportunities, revenue streams, and customer services.
 
@@ -54,6 +49,8 @@ The Chief Digital Officer (CDO) is a change agent who oversees the transformatio
 * **Roll out an education program on data management best practices**: As more people outside of IT become involved in using or creating AI models, it's important to make sure everyone understands data management best practices. Data needs to be cleaned, consolidated, formatted, and managed so that it's easily consumable by AI and can avoid biases.
 
 ### Human Resources leader
+
+![Image of a person who is a human resources leader.](../media/HR.jpg)
 
 A Human Resources (HR) director makes fundamental contributions to an organization's culture and people development. Their wide-ranging tasks include implementing cultural development, creating internal training programs, and hiring according to the needs of the business.
 
@@ -66,6 +63,8 @@ A Human Resources (HR) director makes fundamental contributions to an organizati
   * On the business side, it's important to train people to adopt new processes when an AI-based system changes their day-to-day workflow. Training includes teaching them how to interpret and act on AI predictions and recommendations using sound human judgment. You should manage that change thoughtfully.
 
 ### IT leader
+
+![Image of a person who is an IT leader.](../media/IT.jpg)
 
 While the Chief Digital Officer is charged with creating and implementing the overall digital strategy, an IT director oversees the day-to-day technology operations.
 

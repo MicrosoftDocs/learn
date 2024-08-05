@@ -4,9 +4,10 @@ This module has provided the framework for a full adoption of AI in your organiz
 
 Now that you have reviewed this module, you should be able to:
 
-* Plan AI projects and investments.
-* Organize your staff for AI responsibilities.
-* Identify how no-code AI tools can help business users and subject matter experts.
+* Plan and prioritize AI projects and investments​
+* Establish organizational roles and responsibilities for AI​
+* Use AI to empower business users across the enterprise​
+* Enable domain experts in your business to expand their impact through AI
 
 ## Use these resources to discover more
 

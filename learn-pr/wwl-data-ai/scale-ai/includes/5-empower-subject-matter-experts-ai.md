@@ -25,7 +25,7 @@ AI for reasoning is exactly that. It's highly valuable for people with business-
 :::column-end:::
 :::column span="2":::
 > [!div class="mx-imgBorder"]
-> ![Diagram that shows AI for researchers and subject matter experts: it empowers experts, enables collaboration, and drives enterprise-wide transformation.](../media/5-empower-subject-matter-experts-ai-1.png)
+> ![Image of two people looking at a tablet screen in an office.](../media/empower-subject-matter-experts.jpg)
 :::column-end:::
 :::row-end:::
 
