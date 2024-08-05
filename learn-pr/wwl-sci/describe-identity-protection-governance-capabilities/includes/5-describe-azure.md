@@ -2,7 +2,7 @@ Microsoft Entra ID Protection helps organizations detect, investigate, and remed
 
 These identity-based risks can be further fed into tools like Conditional Access to make access decisions or fed back to a security information and event management (SIEM) tool for further investigation and correlation.
 
-:::image type="content" source="../media/identity-protection-overview.png" alt-text="Image that shows building blocks of Microsoft Entra ID Protection.  The signals user to detect risk, the types of risks, and steps to investigate and remediate risks." lightbox="../media/identity-protection-overview.png":::
+:::image type="content" source="../media/identity-protection-overview.png" alt-text="Image that shows building blocks of Microsoft Entra ID Protection. The signals user to detect risk, the types of risks, and steps to investigate and remediate risks." lightbox="../media/identity-protection-overview.png":::
 
 ### Detect risks
 
@@ -10,7 +10,7 @@ Microsoft analyses trillions of signals per day to identify potential threats. T
 
 Microsoft Entra ID Protection provides organizations with information of suspicious activity in their tenant and allows them to respond quickly to prevent further risk occurring. Risk detections can include any suspicious or anomalous activity related to a user account in the directory. ID Protection risk detections can be linked to a sign-in event (sign-in risk) or an individual user (user risk).
 
-- **Sign-in risk**. A sign-in represents the probability that a given authentication request isn't authorized by the identity owner. Examples include a sign-in from an anonymous IP address, atypical travel (two sign-ins originating from geographically distant locations), unfamiliar sign-in properties, and more. For a detailed list of sign-in risk detections, see [Risk detections mapped to riskEventType](/entra/id-protection/concept-identity-protection-risks#risk-detections-mapped-to-riskeventtype)/
+- **Sign-in risk**. A sign-in represents the probability that a given authentication request isn't authorized by the identity owner. Examples include a sign-in from an anonymous IP address, atypical travel (two sign-ins originating from geographically distant locations), unfamiliar sign-in properties, and more.
 
 - **User risk**. A user risk represents the probability that a given identity or account is compromised. Examples include leaked credentials, user reported suspicious activity, suspicious sending patterns, and more.
 
@@ -29,6 +29,8 @@ Any risks detected on an identity are tracked with reporting. Identity Protectio
 - Risky users: A Risky user is reported when either or both of the following are true:
   - The user has one or more Risky sign-ins.
   - One or more risk detections are reported.
+
+  For businesses that are onboarded to Microsoft Copilot for Security The risky users' report, embeds the capabilities of Microsoft Copilot for Security to summarize a user's risk level, provide insights relevant to the incident at hand, and provide recommendations for rapid mitigation.
 
 Investigation of events is key to understanding and identifying any weak points in your security strategy.
 

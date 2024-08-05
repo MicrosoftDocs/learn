@@ -17,5 +17,6 @@ For more information about the topics raised in this module, see:
 - [Azure terms of use statements](/azure/active-directory/conditional-access/terms-of-use)
 - [Microsoft Entra Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)
 - [What is Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection)
+- [Microsoft Copilot in Microsoft Entra](/training/modules/security-copilot-embedded-experiences/4-copilot-for-entra)
 - [What's Permissions Management?](/azure/active-directory/cloud-infrastructure-entitlement-management/overview)
 - [Describe the concepts behind Microsoft Entra Verified ID](/training/modules/describe-verified-id-concepts/)
