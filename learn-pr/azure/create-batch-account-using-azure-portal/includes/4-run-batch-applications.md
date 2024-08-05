@@ -33,11 +33,11 @@ Set the `RequiredSlots` property based on how much CPU or memory you expect the 
 
 Within Azure Batch, an *application* refers to a set of versioned binaries that can be automatically downloaded to the compute nodes in your pool. An application contains one or more application packages, which represent different versions of the application.
 
-You can specify application packages at the pool or task level. Pool application packages are appropriate when all the nodes in a pool will run a job's tasks.
+You can specify application packages at the pool or task level. Pool application packages are appropriate when all the nodes in a pool run a job's tasks.
 
 You can specify more than one application package when you create a pool. Applications are deployed when a node joins a pool and when the node is restarted or reimaged. To install a new package to an existing pool, you must restart its nodes.
 
-If you choose to deploy an application package at the task level, it'll be useful in shared-pool environments. In those environments, different jobs run on one pool, and the pool isn't deleted when a job finishes. If your job has fewer tasks than nodes in the pool, task application packages can minimize data transfer, because your application is deployed only to the nodes that run tasks.
+If you choose to deploy an application package at the task level, it's useful in shared-pool environments. In those environments, different jobs run on one pool, and the pool isn't deleted when a job finishes. If your job has fewer tasks than nodes in the pool, task application packages can minimize data transfer, because your application is deployed only to the nodes that run tasks.
 
 You can use the Azure portal or the Batch Management APIs to manage the application packages in your Batch account. To use application packages, you must link an Azure storage account to your Batch account. The Batch service uses the associated storage account to store your application packages. We recommend that you create a storage account specifically for use with your Batch account.
 
@@ -45,7 +45,7 @@ You can use the Azure portal or the Batch Management APIs to manage the applicat
 
 Containers are becoming the preferred way to package, deploy, and manage cloud applications. Azure Container Instances is a great solution for any scenario that can operate in isolated containers, including simple applications, task automation, and build jobs.
 
-Using containers provides an easy way to run Batch tasks without having to manage an environment and dependencies to run applications. Containers deploy applications as lightweight, portable, self-sufficient units that can run in several different environments. Container-based tasks in Batch can also take advantage of features of non-container tasks, including application packages and management of resource files and output files.
+Using containers provides an easy way to run Batch tasks without having to manage an environment and dependencies to run applications. Containers deploy applications as lightweight, portable, self-sufficient units that can run in several different environments. Container-based tasks in Batch can also take advantage of features of noncontainer tasks, including application packages and management of resource files and output files.
 
 You can create a container-enabled pool with or without a prefetched container image. The prefetch process lets you preload container images from either Docker Hub or another container registry (like [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)) on the internet.
 
