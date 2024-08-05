@@ -2,9 +2,10 @@ AI is changing business and how companies operate and drive value. AI adoption i
 
 Now that you have reviewed this module, you should be able to:
 
-* Articulate the components of an AI strategy.
-* Describe the key elements of an AI-ready organizational culture.
-* Understand the stages to AI success.
+- Identify considerations for defining an AI strategy.
+- Describe key characteristic of an AI-ready organizational culture.
+- Identify drivers of AI success.
+- Understand the stages of AI value creation.
 
 ## Use these resources to discover more
 

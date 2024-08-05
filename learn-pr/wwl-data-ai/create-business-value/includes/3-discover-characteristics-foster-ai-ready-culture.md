@@ -24,7 +24,7 @@ For instance, a sales department might not have a complete view of a customer, b
 :::column-end:::
 :::column span="2":::
 
-![Screenshot showing what becoming data-driven implies: sharing data across your organization, and adopting rigorous data practices.](../media/3-discover-characteristics-foster-ai-ready-culture-1.jpg)
+![Image representing sharing data across your organization, and adopting rigorous data practices.](../media/Data.jpg)
 
 :::column-end:::
 :::row-end:::
@@ -39,7 +39,7 @@ Just as quality of data is key to creating next-level experiences for customers,
 
 In summary, becoming data-driven means acquiring a **mindset of data sharing and rigorousness** that drives how you work and relate, and ultimately how you collaborate. This enables you to realize the value of AI and better confront the challenges that AI brings.
 
-## Empowering and inclusive
+## Empowered
 
 :::row:::
 :::column span="2":::
@@ -54,17 +54,19 @@ Fostering an AI-ready culture means **empowering people to be part of the AI tra
 It also means to create an **inclusive environment**, one that is predicated on the willingness and ability of employees to work in cross-functional teams that cut across organizational boundaries.
 :::column-end:::
 :::column span="2":::
-![Screenshot showing what becoming empowering and inclusive means: providing resources, a collaborative culture, and focusing on business needs.](../media/3-discover-characteristics-foster-ai-ready-culture-2.jpg)
+![Image of three construction workers representing empowerment and inclusivity: providing resources, a collaborative culture, and focusing on business needs.](../media/Empowered.jpg)
 :::column-end:::
 :::row-end:::
 
- Furthermore, it means to make those who best understand the business a central piece of your transformation process. Data scientists working in isolation often create models that lack the business knowledge, purpose, or value that would make them an effective AI resource. Similarly, business people working in isolation lack the technical knowledge to understand what can be done from a data science perspective. A multidisciplinary approach is important.
+Furthermore, it means to make those who best understand the business a central piece of your transformation process. Data scientists working in isolation often create models that lack the business knowledge, purpose, or value that would make them an effective AI resource. Similarly, business people working in isolation lack the technical knowledge to understand what can be done from a data science perspective. A multidisciplinary approach is important.
 
 By enabling cross-functional teams that include both data scientists and the business employees closest to the business need, you can create powerful and effective AI solutions. An example of this is our hugely successful compliance predictive analytics tools, which were inspired and developed by employees working on our finance teams. They were successful only because they were created with the insights of those closest to the business need. This example illustrates how powerful it's to create an inclusive, cross-organizational collaborative approach.
 
 ## Responsible
 
 The third key element of an AI-ready culture is fostering a responsible approach to AI. As AI continues to evolve, it has the potential to drive considerable changes to our lives, raising complex and challenging questions about what future we want to see.
+
+![Image person stamping a paper to represent a culture of review and responsible AI.](../media/Empowered.jpg)
 
 Like a Corporate Vice President of Strategic Missions and Technologies at Microsoft says: the question very often is not what AI can do, it's what AI should do. Organizations need to ask themselves: How do we design, build, and use AI systems to create a positive impact on individuals and society? How can we ensure that AI systems treat everyone fairly? How can we best prepare the workforce for the new AI era?
 
