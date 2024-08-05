@@ -12,9 +12,9 @@ First you want to lay the foundation by creating a new Project. Creating is rela
 
 1. In the top right corner of GitHub.com, select your profile photo then **Your organizations**.
 
-:::image type="complex" border="false" source="../media/3-github-profile-drowdown.png" alt-text="Screenshot of the Profile Dropdown Menu.":::
+   :::image type="complex" border="false" source="../media/3-github-profile-drowdown.png" alt-text="Screenshot of the Profile Dropdown Menu.":::
     Screenshot of the Profile Dropdown Menu that includes Your profile, Your repositories, Your codespaces, Your organizations and Your enterprises- with Your Organization option highlighted.
-:::image-end:::
+   :::image-end:::
 
 1. Scroll down to select the organization for your new Project.
 1. Navigate from the Overview tab to the Projects tab.
