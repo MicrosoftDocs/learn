@@ -1,4 +1,4 @@
-You're confident that the software defined networking (SDN) distributed firewall capabilities of Azure Stack HCI can help improve the security of your network infrastructure. In this unit, you evaluate the functionality and usefulness of Datacenter Firewall in Azure Stack HCI by implementing it in your proof-of-concept environment.
+You're confident that the software defined networking (SDN) distributed firewall capabilities of Azure Stack Hyperconverged Infrastructure (HCI) can help improve the security of your network infrastructure. In this unit, you evaluate the functionality and usefulness of Datacenter Firewall in Azure Stack HCI by implementing it in your proof-of-concept environment.
 
 ## Implement Datacenter Firewall
 
@@ -7,7 +7,7 @@ The basic procedure for implementing a Datacenter Firewall policy consists of th
 1. Create an Access Control List (ACL) object.
 1. Within the ACL, define one or more inbound and outbound rules that allow or deny East-West and North-South network traffic based on any of the following criteria:
 
-   - **Protocol** representing the layer 4 protocol and set to **TCP**, **UDP**, or **ALL**. **ALL** includes  Internet Control Message Protocol (ICMP) in addition to TCP and UDP.
+   - **Protocol** representing the layer 4 protocol and set to **TCP**, **UDP**, or **ALL**. **ALL** includes Internet Control Message Protocol (ICMP) in addition to Transmission Control Protocol (TCP) and User Datagram Protocol (UDP).
    - **Source Address Prefix** representing the IP address prefix of the origin of an incoming or outgoing network packet. An asterisk `*` is a wild card denoting all IP addresses.
    - **Source Port Range** representing one or more port numbers from which an incoming or outgoing network packet originates. An asterisk `*` is a wild card denoting all port numbers.
    - **Destination Address Prefix** representing the IP address prefix of the destination of an incoming or outgoing network packet. An asterisk `*` is a wild card denoting all IP address prefixes.
