@@ -7,7 +7,7 @@ metadata:
   author: JnHs
   ms.author: jenhayes
   ms.topic: module
-  ms.service: lighthouse
+  ms.service: azure-lighthouse
 title: Introduction to Azure Lighthouse
 summary: Characterize the types of scenarios where Azure Lighthouse can be used by a service provider to access customers' Azure environments. Describe how Azure Lighthouse enables multitenant management with enhanced automation, scalability, and governance across resources and tenants.
 abstract: | 

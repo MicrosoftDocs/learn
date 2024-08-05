@@ -9,7 +9,7 @@ metadata:
   author: vhorne
   ms.author: victorh
   ms.topic: module-standard-task-based
-  ms.service: firewall
+  ms.service: azure-firewall
 title: Protect your Azure Virtual Desktop deployment by using Azure Firewall
 summary: In this module, you'll learn to deploy Azure Firewall, route all network traffic through Azure Firewall, and configure rules. You'll also route the outbound network traffic from the Azure Virtual Desktop host pool to the service through Azure Firewall.
 abstract: | 
