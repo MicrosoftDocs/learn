@@ -9,7 +9,7 @@ Before you decide how to use availability zones, you need to determine:
 - The difference between virtual machine-to-virtual machine latency within one of the zones, of your choosing, and the network latency across two zones of your choosing.
 - Whether the virtual machine types that you need to deploy are available in the two zones that you selected. With some virtual machines, especially M-Series virtual machines, you might encounter situations in which some SKUs are available in only two of the three zones.
 
-Choosing the correct Azure region for an SAP system accessed by a geographically dispersed user-base has a significant impact on high availability and performance for mission-critical workloads. Use the following evaluation criteria in devising the right strategy:
+Choosing the correct Azure region for an SAP system accessed by a geographically dispersed user-base has a significant effect on high availability and performance for mission-critical workloads. Use the following evaluation criteria in devising the right strategy:
 
 - Data Residency and Security policies
 - Business Continuity requirements

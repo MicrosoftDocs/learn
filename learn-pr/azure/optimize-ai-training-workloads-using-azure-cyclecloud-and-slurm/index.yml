@@ -9,7 +9,7 @@ metadata:
   manager: akashdubey
   ms.date: 03/13/2024
   ms.topic: module
-  ms.service: cyclecloud
+  ms.service: azure-cyclecloud
 title: Optimize AI training workloads using Azure CycleCloud and Slurm
 summary: Azure AI training workloads are crucial for achieving optimal model performance that enables enhance of your AI training workflows.
 abstract: |

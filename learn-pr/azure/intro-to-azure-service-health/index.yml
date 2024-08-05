@@ -9,7 +9,7 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module-standard-task-based
-  ms.service: service-health
+  ms.service: azure-service-health
 
 title: Intro to Azure Service Health
 

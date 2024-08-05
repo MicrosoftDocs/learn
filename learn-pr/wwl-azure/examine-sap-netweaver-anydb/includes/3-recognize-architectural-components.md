@@ -43,28 +43,28 @@ Azure Virtual Machine disks provide persistent storage for SAP workloads.
 
 ## Azure Storage
 
-Azure Storage provides a range of storage services. It's also used by Cloud Witness to implement quorum for Windows Server Failover Clustering.
+Azure Storage provides a range of storage services. Also, Cloud Witness uses Azure Storage to implement quorum for Windows Server Failover Clustering.
 
 ## SAP Web Dispatcher pool
 
 The Web Dispatcher component is used as a load balancer for SAP traffic among the SAP application servers. To achieve high availability for the Web Dispatcher component, Azure load balancer is used to implement the parallel Web Dispatcher setup. The available Web Dispatchers in the load balanced backend pool are accessed in a round-robin configuration for HTTP(S) traffic distribution from the load balancer.
 
-For traffic from SAP GUI clients via DIAG protocol or Remote Function Calls (RFC), the Central Services message server balances the load through SAP application server logon groups, so no other load balancer is needed.
+For traffic from SAP GUI clients via DIAG protocol or Remote Function Calls (RFC), the Central Services message server balances the load through SAP application server sign-in groups, so no other load balancer is needed.
 
 ## SAP Central Services cluster
 
-The Central Services is a potential single point of failure (SPOF) when deployed to a single virtual machine — a typical deployment when high availability isn't a requirement. To implement a high availability solution, deploy multiple Central Services instances and configure them as members of a failover cluster with a shared disk or a file share providing highly available storage accessible by all cluster nodes.
+The Central Services is a potential single point of failure (SPOF) when deployed to a single virtual machine—a typical deployment when high availability isn't a requirement. To implement a high availability solution, deploy multiple Central Services instances and configure them as members of a failover cluster with a shared disk or a file share providing highly available storage accessible by all cluster nodes.
 
-Azure doesn't support natively shared disks, but you can use third-party solutions (such as SIOS DataKeeper Cluster Edition, which replicates synchronously independent disks owned by individual cluster nodes) to implement this functionality on Azure Virtual Machines running Linux or Windows Server.
+Azure doesn't support natively shared disks, but you can use non-Microsoft solutions (such as SIOS DataKeeper Cluster Edition, which replicates synchronously independent disks owned by individual cluster nodes) to implement this functionality on Azure Virtual Machines running Linux or Windows Server.
 
-SAP has recently modified the Central Services deployment process to allow the use of **/sapmnt** global directories via a UNC path. This change removes the requirement for SIOS or other shared disk solutions on the Central Services virtual machines. It's still recommended to ensure that the **/sapmnt** UNC share is highly available. This can be done on the Central Services instance by using Windows Server Failover Cluster with Scale Out File Server (SOFS) and the Storage Spaces Direct (S2D) feature in Windows Server 2016. For Linux accessible shares, you can use highly available NFS deployment of Azure Virtual Machines.
+SAP recently modified the Central Services deployment process to allow the use of **/sapmnt** global directories via a UNC path. This change removes the requirement for SIOS or other shared disk solutions on the Central Services virtual machines. We still recommend you ensure that the **/sapmnt** UNC share is highly available. This can be done on the Central Services instance by using Windows Server Failover Cluster with Scale Out File Server (SOFS) and the Storage Spaces Direct (S2D) feature in Windows Server 2016. For Linux accessible shares, you can use highly available NFS deployment of Azure Virtual Machines.
 
-When using Windows Server Failover Clustering, Cloud Witness is the recommended quorum model.
+When you use Windows Server Failover Clustering, Cloud Witness is the recommended quorum model.
 
 ## Database servers
 
-The database tier is another potential single point of failure (SPOF) when deployed to a single virtual machine — a typical deployment when high availability isn't a requirement. High availability and disaster recovery for database servers might be achieved using built-in SAP load balancers, Azure load balancer, or other mechanisms, depending on the DBMS.
+The database tier is another potential single point of failure (SPOF) when deployed to a single virtual machine—a typical deployment when high availability isn't a requirement. High availability and disaster recovery for database servers might be achieved using built-in SAP load balancers, Azure load balancer, or other mechanisms, depending on the DBMS.
 
 ## Application servers pool
 
-To provide high availability of application servers, deploy the primary application server and one or more other application servers. To manage logon groups for ABAP application servers, the SMLG transaction is used. It uses the load balancing function within the message server of the Central Services to distribute workload among SAP application servers pool for SAPGUIs and RFC traffic. The application server connection to the highly available Central Services is through the cluster virtual network name.
+To provide high availability of application servers, deploy the primary application server and one or more other application servers. To manage sign-in groups for ABAP application servers, the SMLG transaction is used. It uses the load balancing function within the message server of the Central Services to distribute workload among SAP application servers pool for SAPGUIs and RFC traffic. The application server connection to the highly available Central Services is through the cluster virtual network name.
