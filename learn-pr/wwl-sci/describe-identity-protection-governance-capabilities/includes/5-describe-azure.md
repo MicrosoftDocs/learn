@@ -2,6 +2,8 @@ Microsoft Entra ID Protection helps organizations detect, investigate, and remed
 
 These identity-based risks can be further fed into tools like Conditional Access to make access decisions or fed back to a security information and event management (SIEM) tool for further investigation and correlation.
 
+:::image type="content" source="../media/identity-protection-overview.png" alt-text="Image that shows building blocks of Microsoft Entra ID Protection.  The signals user to detect risk, the types of risks, and steps to investigate and remediate risks." lightbox="../media/identity-protection-overview.png":::
+
 ### Detect risks
 
 Microsoft analyses trillions of signals per day to identify potential threats. These signals come from learnings Microsoft has acquired from numerous sources, including Microsoft Entra ID, the consumer space with Microsoft Accounts, and in gaming with Xbox.
