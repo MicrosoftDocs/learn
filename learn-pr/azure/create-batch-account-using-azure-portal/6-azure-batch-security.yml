@@ -5,8 +5,8 @@ metadata:
   title: Consider features for Azure Batch security
   description: Learn about implementing security for Azure Batch applications.
   ms.date: 08/05/2024
-  author: prkannap
-  ms.author: prkannap
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 2
 content: |
