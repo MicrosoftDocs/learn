@@ -3,7 +3,7 @@ author: baanders
 ms.author: baanders
 ms.date: 03/14/2024
 ms.topic: include
-ms.service: digital-twins
+ms.service: azure-digital-twins
 ---
 
 >[!TIP]

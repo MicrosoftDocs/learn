@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
-  ms.service: container-instances
+  ms.service: azure-container-instances
 title: Run container images in Azure Container Instances
 summary: Learn how Azure Container Instances can help you quickly deploy containers, how to set environment variables, and specify container restart policies.
 abstract: |
