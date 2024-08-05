@@ -14,6 +14,8 @@ Microsoft Defender for Cloud is a cloud-native application protection platform (
 
 Microsoft Defender for Cloud, through its DevSecOps, CSPM, and CWPP capabilities, enables organizations to manage the security of their resources and workloads in the cloud and on-premises and improve their overall security posture.
 
+Also, for businesses that are onboarded to Microsoft Copilot for Security, Microsoft Defender for Cloud embeds capabilities of Microsoft Copilot for Security. Specifically, the integration with Copilot allows you to analyze, summarize, remediate, and delegate recommendations using natural language prompts.
+
 When you enable Defender for Cloud, you automatically gain access to Microsoft Defender XDR, an enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks. Information on Microsoft Defender XDR is covered in a subsequent module.
 
 DevSecOps, CSPM, and CWPP are covered in more detail throughout the rest of this module. But first, it's important to start with an understanding of the policies and security initiatives that Microsoft Defender for Cloud applies in the course of making recommendations.
