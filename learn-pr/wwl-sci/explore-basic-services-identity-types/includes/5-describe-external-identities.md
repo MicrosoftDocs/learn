@@ -3,7 +3,7 @@ Today’s world is about collaboration, working with people both inside and outs
 
 Microsoft Entra External ID combines powerful solutions for working with people outside of your organization. With External ID capabilities, you can allow external identities to securely access your apps and resources. Whether you’re working with external partners, consumers, or business customers, users can bring their own identities. These identities can range from corporate or government-issued accounts to social identity providers like Google or Facebook.
 
-:::image type="content" source="../media/external-identities-overview.png" alt-text="Image showing elements of Microsoft External ID. On the left, it shows Consumers business customers, and guests. On the right, it shows business apps, consumer apps, and on-premises apps. In the center, is a circle showing secure user access, seamless experience, and secure app development.":::
+:::image type="content" source="../media/external-identities-overview.png" alt-text="Diagram showing elements of Microsoft External ID. On the left, it shows Consumers business customers, and guests. On the right, it shows business apps, consumer apps, and on-premises apps. In the center, is a circle showing secure user access, seamless experience, and secure app development.":::
 
 Microsoft Entra External ID addresses the scenarios that are encountered when it comes to working with external users.
 
@@ -17,7 +17,7 @@ There are two ways to configure a tenant, depending on how the organization inte
 - A workforce tenant configuration is for your employees, internal business apps, and other organizational resources. You can invite external business partners and guests to your workforce tenant.
 - An external tenant configuration is used exclusively for External ID scenarios where you want to publish apps to consumers or business customers.
 
-:::image type="content" source="../media/external-id-tenant-configurations.png" alt-text="Image showing a representation of the two external ID scenarios and the corresponding tenant type. Collaboration with business guests uses a workforce tenant configuration. External facing apps use an external tenant configuration.":::
+:::image type="content" source="../media/external-id-tenant-configurations.png" alt-text="Diagram showing a representation of the two external ID scenarios and the corresponding tenant type. Collaboration with business guests uses a workforce tenant configuration. External facing apps use an external tenant configuration.":::
 
 ### Collaborate with business guests
 
@@ -29,7 +29,7 @@ Using your workforce tenant, you can use B2B collaboration to share your company
 
 Use B2B collaboration when you need to let business guests access your Office 365 apps, software-as-a-service (SaaS) apps, and line-of-business applications. There are no credentials associated with business guests. Instead, they authenticate with their home organization or identity provider, and then your organization checks the user’s eligibility for guest collaboration.
 
-:::image type="content" source="../media/b2b-collaboration-overview.png" alt-text="Image showing a representation of B2B collaboration.":::
+:::image type="content" source="../media/b2b-collaboration-overview.png" alt-text="Diagram showing a representation of B2B collaboration.":::
 
 ### Secure your apps for consumers and business customers
 
@@ -37,4 +37,4 @@ If you’re an organization or a developer creating consumer apps, use External 
 
 Microsoft Entra External ID includes Microsoft's customer identity and access management (CIAM) solution that includes features like self-service registration, personalized sign-in experiences including single sign-on (SSO) with social and enterprise identities, and customer account management. Because these CIAM capabilities are built into Microsoft Entra ID, you also benefit from platform features like enhanced security, compliance, and scalability.
 
-:::image type="content" source="../media/overview-ciam.png" alt-text="Image showing a representation of External ID in an external tenant.":::
+:::image type="content" source="../media/overview-ciam.png" alt-text="Diagram showing a representation of External ID in an external tenant.":::
