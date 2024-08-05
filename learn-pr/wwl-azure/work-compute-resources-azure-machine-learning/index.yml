@@ -5,8 +5,8 @@ metadata:
   description: Learn how to work with compute targets in Azure Machine Learning. Compute targets allow you to run your machine learning workloads. Explore how and when you can use a compute instance or compute cluster.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/31/2023
-  ms.service: azure
+  ms.date: 07/25/2024
+  ms.service: azure-machine-learning
   ms.topic: module
   ms.collection:
     - wwl-ai-copilot

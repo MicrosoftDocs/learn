@@ -6,7 +6,7 @@ metadata:
   description: Learn about the different available compute targets in Azure Machine Learning, and how to choose when to use which type.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/31/2023
+  ms.date: 07/25/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

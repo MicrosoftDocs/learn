@@ -10,7 +10,7 @@ Examine the following characteristics of virtual machine extensions.
 
 - Virtual machine extensions can be bundled with a new virtual machine deployment or run against any existing system. 
 
-- There are different virtual machine extensions for Windows and Linux machines. You can choose from a large set of first and third-party virtual machine extensions.
+- There are different virtual machine extensions for Windows and Linux machines. You can choose from a large set of Microsoft and non-Microsoft virtual machine extensions.
 
    :::image type="content" source="../media/virtual-machine-extensions-facf0a08.png" alt-text="Screenshot of Windows extensions in the Azure portal showing the Custom Script Extension and PowerShell Desired State Configuration extension.":::
 

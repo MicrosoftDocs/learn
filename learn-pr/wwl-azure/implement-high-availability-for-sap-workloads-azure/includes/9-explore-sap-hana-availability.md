@@ -12,14 +12,14 @@ The next few scenarios use SAP HANA system replication. Scenarios without automa
 
 In this scenario, you use SAP HANA system replication to transfer data synchronously to bring RPO down to 0. On the other hand, you have a long enough RTO that you don't need either failover or data preloading into the SAP HANA instance cache. In such a case, you can realize more benefits by taking the following actions:
 
-- Run another SAP HANA instance in the second Azure Virtual Machine. The SAP HANA instance in the second virtual machine will likely use most of its memory. If there's a failover to the second virtual machine, you need to shut down the running SAP HANA instance that has the data fully loaded in the second virtual machine, so that the replicated data can be loaded into the cache of the targeted SAP HANA instance in the second virtual machine.
+- Run another SAP HANA instance in the second Azure Virtual Machine. The SAP HANA instance in the second virtual machine probably uses most of its memory. If there's a failover to the second virtual machine, you need to shut down the running SAP HANA instance that has the data fully loaded in the second virtual machine, so that the replicated data can be loaded into the cache of the targeted SAP HANA instance in the second virtual machine.
 - Use a smaller virtual machine size on the second virtual machine. If a failover occurs, you have an extra step before the manual failover. In this step, you resize the virtual machine to the size of the source virtual machine.
 
 Even if you don't use data preload in the SAP HANA system replication target, you need at least 64 GB of memory. You also need enough memory in addition to 64 GB to keep the rowstore data in the memory of the target instance.
 
 ### SAP HANA system replication without auto failover and with data preload
 
-In this scenario, data that are replicated to the SAP HANA instance in the second virtual machine is preloaded. This eliminates the two advantages of not preloading data. In this case, you can't run another SAP HANA system on the second virtual machine. You also can't use a smaller virtual machine size. Hence, customers rarely implement this scenario.
+In this scenario, data replicated to the SAP HANA instance in the second virtual machine is preloaded. This eliminates the two advantages of not preloading data. In this case, you can't run another SAP HANA system on the second virtual machine. You also can't use a smaller virtual machine size. Hence, customers rarely implement this scenario.
 
 ## SAP HANA system replication with automatic failover
 
