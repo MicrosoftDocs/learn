@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-host-pools-session-hosts.create-host-pool-azure-portal
+title: Create a host pool using the Azure Portal
+metadata:
+  title: Create a host pool using the Azure Portal
+  description: "Create a host pool using the Azure Portal"
+  ms.date: 08/05/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-create-host-pool-azure-portal.md)]
