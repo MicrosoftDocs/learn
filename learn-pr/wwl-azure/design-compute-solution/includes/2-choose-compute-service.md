@@ -66,6 +66,6 @@ Azure provides a decision [flowchart](/azure/architecture/guide/technology-choic
 > [!NOTE]
 > The following diagram has been edited to show only the Azure services described in this module. 
 
-The output from this decision flowchart is a **starting point** for your planning. You'll need to do a detailed evaluation of the services to determine exactly which solution meets your requirements. As you work through this module, refer to this diagram to become familiar with the considerations and options. 
+The output from this decision flowchart is a **starting point** for your planning. You need to do a detailed evaluation of the services to determine exactly which solution meets your requirements. As you work through this module, refer to this diagram to become familiar with the considerations and options. 
 
 :::image type="content" source="../media/compute-flowchart.png" alt-text="Flowchat that shows considerations and options for Azure compute solutions." border="false":::
