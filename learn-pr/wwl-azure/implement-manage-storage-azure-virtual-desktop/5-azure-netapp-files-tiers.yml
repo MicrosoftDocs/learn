@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-storage-for-azure-virtual-desktop.azure-netapp-files-tiers
+title: Azure NetApp Files tiers
+metadata:
+  title: Azure NetApp Files tiers
+  description: "Azure NetApp Files tiers"
+  ms.date: 08/05/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-azure-netapp-files-tiers.md)]
