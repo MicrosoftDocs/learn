@@ -1,4 +1,4 @@
-﻿In this module you learned about GitHub Projects. GitHub's project management tool connects your planning directly to the work your teams are doing in GitHub, and flexibly adapts to whatever your team needs at any point.
+﻿In this module, you learned about GitHub Projects. GitHub's project management tool connects your planning directly to the work your teams are doing in GitHub, and flexibly adapts to whatever your team needs at any point.
 
 You learned how to:
 
