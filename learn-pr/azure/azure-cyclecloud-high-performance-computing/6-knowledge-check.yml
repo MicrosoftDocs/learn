@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge about what you learned.
-  ms.date: 04/17/2024
+  ms.date: 08/05/2024
   author: anhoward
   ms.author: anhoward
   ms.topic: unit
@@ -24,7 +24,7 @@ quiz:
     - content: "Deploy Azure CycleCloud to your on-premises server and use Active Directory Domain Services-based authentication."
       isCorrect: false
       explanation: "This approach increases management overhead. More importantly, AD DS-based authentication isn't supported in this scenario."
-  - content: "You've installed Azure CycleCloud on an Azure VM and deployed your first cluster by using the web interface. Now you want to automate provisioning of an Azure CycleCloud-managed cluster based on an existing template. What should you do first?"
+  - content: "You installed Azure CycleCloud on an Azure VM and deployed your first cluster by using the web interface. Now, you want to automate provisioning of an Azure CycleCloud-managed cluster based on an existing template. What should you do first?"
     choices:
     - content: "Enable system-assigned managed identity."
       isCorrect: false
@@ -35,7 +35,7 @@ quiz:
     - content: "Install Azure CycleCloud CLI."
       isCorrect: true
       explanation: "Azure CycleCloud CLI facilitates automation and integration of CycleCloud into existing workflows."
-  - content: "You've deployed Azure CycleCloud. You want to provision a cluster based on an Azure CycleCloud template available from GitHub. What should you do?"
+  - content: "You deployed Azure CycleCloud. You want to provision a cluster based on an Azure CycleCloud template available from GitHub. What should you do?"
     choices:
     - content: "Use Azure CycleCloud CLI to import the template."
       isCorrect: true
