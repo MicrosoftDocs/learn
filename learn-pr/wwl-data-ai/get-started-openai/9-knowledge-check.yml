@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This unit contains a knowledge check which can help learners reinforce their understanding of the material.
-  author: sherzyang
-  ms.author: sheryang
-  ms.date: 07/10/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 08/06/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -36,9 +36,9 @@ quiz:
     - content: "Stop sequence"
       isCorrect: false
       explanation: ""
-  - content: "Which Azure OpenAI Studio playground is able to support conversation-in, message-out scenarios?"
+  - content: "Which Azure AI Studio playground is able to support conversation-in, message-out scenarios?"
     choices:
-    - content: "Completions"
+    - content: "Images"
       isCorrect: false
       explanation: ""
     - content: "Chat"
