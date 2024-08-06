@@ -29,7 +29,13 @@ External guests and external members are business-to-business (B2B) collaboratio
 
 ### Workload identities
 
-A workload identity is an identity you assign to a software workload. This enables the software workload to authenticate to and access other services and resources. This helps secure your workload. In Microsoft Entra, workload identities are applications, service principals, and managed identities.
+A workload identity is an identity you assign to a software workload. This enables the software workload to authenticate to and access other services and resources. This helps secure your workload.
+
+Securing your workload identities is important because unlike a human user, a software workload may deal with multiple credentials to access different resources and those credentials need to be stored securely. It’s also hard to track when a workload identity is created or when it should be revoked. Enterprises risk their applications or services being exploited or breached because of difficulties in securing workload identities.
+
+Microsoft Entra Workload ID helps resolve these issues when securing workload identities.
+
+In Microsoft Entra, workload identities are applications, service principals, and managed identities.
 
 #### Applications and service principals
 
