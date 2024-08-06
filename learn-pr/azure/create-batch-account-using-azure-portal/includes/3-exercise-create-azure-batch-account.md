@@ -4,7 +4,7 @@ You can use the Azure portal to create and deploy Azure Batch jobs and create ot
 
 ## Create a resource group
 
-Create a resource group to hold a Batch account that you'll create later. You'll use the resource group to administer related services and applications together. A resource group also makes resource clean up easier when you finish this module.
+Create a resource group to hold a Batch account that you create later. You use the resource group to administer related services and applications together. A resource group also makes resource clean up easier when you finish this module.
 
 To create a resource group in the Azure portal:
 
@@ -20,7 +20,7 @@ To create a resource group in the Azure portal:
 
 1. Name the resource group **BatchResourceGroup**.
 
-1. Choose the region (location) for the resource group. Typically, you'll want a location that's close to you or close to the data you'll work with.
+1. Choose the region (location) for the resource group. Typically, you want a location that's close to you or close to the data you work with.
 
    :::image type="content" source="../media/2-create-resource-group.png" alt-text="Screenshot that shows how to create a resource group in the Azure portal.":::
 
@@ -49,7 +49,7 @@ To create a resource group in the Azure portal:
 
 1. Leave all the other options as their defaults. Select **Review + create**, then select **Create**.
 
-1. Wait for the deployment to finish. You now have a storage account that you'll use in your processing to store input and output files. You'll associate this storage account with your Batch account shortly.
+1. Wait for the deployment to finish. You now have a storage account that you use in your processing to store input and output files. You associate this storage account with your Batch account shortly.
 
 ### Add input data
 
@@ -65,15 +65,15 @@ Here, you'll add input data for a Batch task that you'll use in the next exercis
 
 1. Select **Create**.
 
-1. Download [this video](https://github.com/MicrosoftDocs/mslearn-create-batch-account/raw/main/LowPriVMs-1.mp4). You'll use it as input data for a Batch task shortly.
+1. Download [this video](https://github.com/MicrosoftDocs/mslearn-create-batch-account/raw/main/LowPriVMs-1.mp4). You use it as input data for a Batch task shortly.
 
 1. Select the **input-data** container that you created. Upload the video that you downloaded by selecting the **Upload** button and browsing to where you downloaded the video. It's most likely your local *Downloads* folder.
 
-1. Once you've selected the video, select the **Upload** button.
+1. Once you select the video, select the **Upload** button.
 
 ## Create a Batch account
 
-Next, you'll create the Azure Batch account and pool in a virtual network for your test scenario.
+Next, you create the Azure Batch account and pool in a virtual network for your test scenario.
 
 1. From the Azure portal home, select **Create a resource**.
 
@@ -118,7 +118,7 @@ Your deployment might take a few minutes to finish.
 
 ## Create a virtual network
 
-After you've created a virtual network and assigned a subnet to it, you can create a Batch pool with that virtual network. Follow these steps to create a pool from the Azure portal:
+After you create a virtual network and assigned a subnet to it, you can create a Batch pool with that virtual network. Follow these steps to create a pool from the Azure portal:
 
 1. From the Azure portal home, select **Create a resource**.
 
