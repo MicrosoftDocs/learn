@@ -8,8 +8,8 @@ metadata:
   ms.author: madiepev
   ms.topic: module
   ms.service: azure
-title: Implement CI/CD workflows with Azure Databricks
-summary: Learn how to implement CI/CD workflows with Delta Live Tables (DLT) pipelines in Azure Databricks to automate the integration and delivery of code changes. 
+title: Implement CI/CD workflows in Azure Databricks
+summary: Learn how to implement CI/CD workflows in Azure Databricks to automate the integration and delivery of code changes. 
 abstract: |
   In this module, you learn how to:
   - Implement version control and Git integration.
