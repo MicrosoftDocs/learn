@@ -22,13 +22,13 @@ Let's walk through a checklist of things to consider when using Azure Virtual Ma
 
 #### Network configuration
 
-The first thing to think about isn't your virtual machines at all - it's the network. Spend some time thinking about your network configuration for Tailwind Traders. Network addresses and subnets aren't trivial to change after they're configured. If you have an on-premises network, you'll want to carefully consider the network topology before you create any virtual machines.
+The first thing to think about isn't your virtual machines at all - it's the network. Spend some time thinking about your network configuration for Tailwind Traders. Network addresses and subnets aren't trivial to change after configuration. If you have an on-premises network, you want to carefully consider the network topology before you create any virtual machines.
 
 #### Virtual machine name
 
 Some developers don't give much thought about the name for a virtual machine. However, the **virtual machine name** defines a manageable **Azure resource**, and the value isn't easy to change. Choose machine names that are meaningful and consistent, so you can easily identify what each virtual machine does. 
 
-Consider how to name the first development web server for Tailwind Traders that's hosted in the US South Central location. In this scenario, you might use the machine name `devusc-webvirtual machine01`. `dev` stands for development and `usc` identifies the location. `web` indicates the machine as a web server, and the suffix `01` shows the machine is the first in the configuration.
+Consider how to name the first development web server for Tailwind Traders hosted in the US South Central location. In this scenario, you might use the machine name `devusc-webvirtual machine01`. `dev` stands for development and `usc` identifies the location. `web` indicates the machine as a web server, and the suffix `01` shows the machine is the first in the configuration.
 
 #### Virtual machine location
 
@@ -59,9 +59,9 @@ The best way to determine the appropriate machine size is to consider the type o
 
 A subscription is billed two separate costs for every virtual machine: _compute_ and _storage_. By separating these costs, you can scale them independently and only pay for what you need.
 
-- **Compute costs**: Compute expenses are priced on a per-hour basis but billed on a per-minute basis. If the virtual machine is deployed for 55 minutes, you're charged for only 55 minutes of usage. You're not charged for compute capacity if you stop and deallocate the virtual machine. The [hourly price](https://azure.microsoft.com/pricing/details/virtual-machines/linux/) varies based on the virtual machine size and operating system you select.
+- **Compute costs**: Compute expenses are priced on a per-hour basis but billed on a per-minute basis. If the virtual machine is deployed for 55 minutes, Azure only charges you for 55 minutes of usage. Azure doesn't charge you for compute capacity if you stop and deallocate the virtual machine. The [hourly price](https://azure.microsoft.com/pricing/details/virtual-machines/linux/) varies based on the virtual machine size and operating system you select.
 
-- **Storage costs**: You're charged separately for the Azure Storage the virtual machine uses. The status of the virtual machine has no relation to the Azure Storage charges that are incurred. You're always charged for any Azure Storage used by the disks. 
+- **Storage costs**: Azure charges you separately for the Azure Storage the virtual machine uses. The status of the virtual machine has no relation to the Azure Storage charges that are incurred. Azure always charges you for any Azure Storage used by the disks. 
 
 #### Azure Storage
 
