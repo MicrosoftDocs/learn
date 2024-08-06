@@ -9,7 +9,7 @@ Now that you've completed this module, you should be able to:
 
 - Describe Azure security capabilities for protecting your network.
 - Describe Azure Bastion.
-- Describe Azure Key Vault.  
+- Describe Azure Key Vault. 
 
 ### Learn more
 
