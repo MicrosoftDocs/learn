@@ -13,12 +13,12 @@ summary: Learn about GitHub Actions Importer and how it can help facilitate migr
 abstract: |
   By the end of this module, you'll be able to:
     - Review how to install the GitHub Actions Importer CLI Extension and ensure it's up-to-date
-    - Understand the GitHub Actions Importer commands: audit, forecast, dry-run, and migrate as well as learn what is not automatically migrated
+    - Understand the GitHub Actions Importer commands: audit, forecast, dry-run, and migrate, plus learn what isn't automatically migrated
     - Run through a mock migration lab exercise for a supported CI platform
 prerequisites: |
   - A GitHub account
-  - Prior working knowledge of GitHub Actions
-  - Organizational access to one of the supported CI/CD platforms below
+  - Previous working knowledge of GitHub Actions
+  - Organizational access to one of the supported CI/CD platforms
   - Ability to execute the accompanying labs exercises within Codespaces
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

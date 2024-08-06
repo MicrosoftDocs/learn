@@ -12,7 +12,7 @@ In this module, you:
 ## Prerequisites
 
 - A GitHub account
-- Prior working knowledge of GitHub Actions
+- Previous working knowledge of GitHub Actions
 - Organizational access to one of the supported CI/CD platforms
 - Ability to execute the accompanying labs exercises within Codespaces
 
@@ -30,7 +30,7 @@ It's imperative to review every workflow that the GitHub Actions Importer conver
 
 The goal is to achieve an 80% conversion rate for every workflow. However, like all things, the actual conversion rate depends on your specific makeup of your pipelines.
 
-To set expectations, note that some things aren't automatically migrated when you use GitHub Actions Importer.
+To set expectations, remember that some things aren't automatically migrated when you use GitHub Actions Importer.
 
 ### What *isn't* automatically migrated
 

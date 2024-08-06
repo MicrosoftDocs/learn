@@ -1,4 +1,4 @@
-In the following lab exercises, you're given step-by-step guidelines on how to run all four commands for each of the supported CI/CD platforms. 
+In the following lab exercises, you get step-by-step guidelines on how to run all four commands for each of the supported CI/CD platforms. 
 
 But in the meantime, in this unit, you review the three phases of a GitHub Actions Importer Migration: **planning, testing,** and **migrating** and their associated commands.
 
@@ -119,7 +119,7 @@ Let's touch upon custom transformers in our next section.
 
 ### Custom transformers
 
-A custom transformer contains mapping logic that GitHub Actions Importer can use to transform your plugins, tasks, runner labels, or environment variables to work with GitHub Actions.
+A custom transformer contains mapping logic that GitHub Actions Importer can use to transform items to work with GitHub Actions. These items include your plugins, tasks, runner labels, or environment variables.
 
 You can use custom transformers to:
 
@@ -143,7 +143,7 @@ Any necessary manual tasks are included in the description of the pull request. 
 
 :::image type="content" source="../media/pr-for-migration.png" alt-text="Screenshot of a merged pull request showing completed manual tasks and an approved code review.":::
 
-Now, let’s take a moment to review and dive a bit deeper into what isn't automatically migrated by GitHub Actions Importer.
+Now, let’s take a moment to review and dive into what GitHub Actions Importer doesn't automatically migrate.
 
 ### Understand what isn't migrated automatically
 
