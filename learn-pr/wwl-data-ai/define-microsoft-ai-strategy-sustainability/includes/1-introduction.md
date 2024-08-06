@@ -4,15 +4,4 @@ However, it can sometimes be difficult to find the right tools and partnerships 
 
 It’s not enough to use AI for sustainability projects. AI practices and solutions must be sustainable to comply with the ethical standards of **[responsible AI](https://www.microsoft.com/ai/responsible-ai)**. These requirements include fairness, reliability, privacy, security, inclusivity, transparency, and accountability issues. They’re thoroughly kept during development and maintenance of all Microsoft AI products and services.
 
-## Learning objectives
-In this module, you will:
-
-* Identify AI use cases in sustainability.
-* Examine available AI tools and resources for sustainability scenarios.
-* Discover insights from sustainability-specific AI success stories.
-
-## Prerequisites
-* Basic understanding of AI concepts.
-* Basic understanding of sustainability concepts.
-
-Next, let’s discuss some key ideas and principles that you should consider when planning AI-powered sustainability initiatives.
+Next, let’s lets hear from Melanie Nakagawa, Chief Sustainability Officer at Microsoft.

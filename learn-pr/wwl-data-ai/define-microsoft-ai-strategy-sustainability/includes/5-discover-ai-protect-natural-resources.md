@@ -12,6 +12,8 @@ Within the DNR, the Aquatic Resources Division conducts several programs for ove
 
 This task involves analyzing around 350 hours of video footage, **identifying, classifying, and geolocating eelgrass**. The process required the manual work of two scientists and congested their workloads for three months. This process was a waste of highly specialized, valuable resources.
 
+![Image showing an ocean shoreline.](../media/5-shore.jpg)
+
 ## The solution
 
 The experts of the Nearshore Habitat Program decided to partner with Microsoft to solve this problem with AI. They found that the best approach was **automated video classification**, using AI models to identify eelgrass.
@@ -21,5 +23,7 @@ The technical basis for the use case is **Azure AI Services**’ functionalities
 ## The results
 
 The solution is already saving months of experts’ time and boosting their **productivity**. The process now takes only weeks instead of months, and one person instead of two. In the medium term, the goal is to fully automate the process and replicate it for other monitoring projects.
+
+To learn more, read [Washington State Department of Natural Resources uses Azure AI to automate aquatic resource monitoring, saving months of experts’ time](https://aka.ms/wa-nat-customer-story).
 
 Next, let’s examine a sustainability use case in the mobility sector.

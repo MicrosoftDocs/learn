@@ -2,23 +2,21 @@
 uid: learn.wwl.define-microsoft-ai-strategy-sustainability
 metadata:
   title: Define a Microsoft AI strategy to create business value in sustainability
-  description: Discover AI use cases and scenarios for sustainability. Get familiar with Microsoft AI tools and services for sustainability. Learn from real success stories.
+  description: "Discover AI use cases and scenarios for sustainability. Get familiar with Microsoft AI tools and services for sustainability. Learn from real success stories."
+  ms.date: 08/06/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.date: 05/22/2024
-  ms.service: microsoft-cloud-sustainability
   ms.topic: module
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - N/A
+  ms.service: microsoft-cloud-sustainability
   ai-usage: human-only
 title: Define a Microsoft AI strategy to create business value in sustainability
 summary: This module is designed to help sustainability professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
 abstract: |
-  -   Identify AI use cases in sustainability.
+  -   Identify goals and challenges for sustainability
 
-  -   Examine available AI tools and resources for sustainability scenarios.
-
-  -   Discover insights from sustainability-specific AI success stories.
+  -   Identify opportunities for AI in sustainability
 prerequisites: |
   -   Basic understanding of AI concepts.
 
@@ -33,8 +31,9 @@ products:
 - azure-openai
 units:
 - learn.wwl.define-microsoft-ai-strategy-sustainability.introduction
-- learn.wwl.define-microsoft-ai-strategy-sustainability.explore-ai-goals-challenges-sustainability
-- learn.wwl.define-microsoft-ai-strategy-sustainability.discover-ai-sustainability
+- learn.wwl.define-microsoft-ai-strategy-sustainability.1b-ai-sustainability
+- learn.wwl.define-microsoft-ai-strategy-sustainability.goals-challenges-sustainability
+- learn.wwl.define-microsoft-ai-strategy-sustainability.opportunities-ai-sustainability
 - learn.wwl.define-microsoft-ai-strategy-sustainability.discover-ai-power-global-energy-transition
 - learn.wwl.define-microsoft-ai-strategy-sustainability.discover-ai-protect-natural-resources
 - learn.wwl.define-microsoft-ai-strategy-sustainability.discover-ai-enable-green-mobility

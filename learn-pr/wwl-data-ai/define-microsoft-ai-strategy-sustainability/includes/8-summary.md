@@ -4,9 +4,8 @@ Microsoft offers a wide range of AI products and services to enable these sustai
 
 Now that you have reviewed this module, you should:
 
-* Identify AI use cases in sustainability.
-* Examine available AI tools and resources for sustainability scenarios.
-* Discover insights from sustainability-specific AI success stories.
+* Identify goals and challenges for sustainability
+* Identify opportunities for AI in sustainability
 
 ## Use these resources to discover more
 

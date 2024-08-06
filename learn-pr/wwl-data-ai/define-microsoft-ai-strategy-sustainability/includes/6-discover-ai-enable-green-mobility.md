@@ -12,6 +12,8 @@ Munich is a hectic city with a population of more than one and a half Million in
 
 Besides, any solution must be scalable. SWM manages **vast amounts of data**: each subway train alone sends over 2,000 data points every 10 seconds; geothermal solutions gather five gigabytes of data every hour, as do each of the 30 digitized areas of infrastructure. The organization requires a robust platform capable of operating with such volumes of data, such as Microsoft Azure.
 
+![Image showing a train on a track.](../media/6-train.jpg)
+
 ## The solution
 
 SWM developed a smart connectivity solution to improve the efficiency of the bus charging system. This tool called **INSIGHT** is built upon Microsoft products such as Azure AI Services, Azure Machine Learning, and Azure IoT. Its design ensures transparent, sustainable processes.
@@ -26,5 +28,7 @@ At this point, the system feeds the digital twin data to the AI models built and
 The solution provides real-time insights into the condition of each bus. The impact is clear: employees can fix malfunctions faster and optimize repairs. Furthermore, it enables predictive maintenance, so a potential incident can be dealt with before it happens. These improvements result in **better scheduling** for the bus system, which benefits all its users. A better, friendlier mobility service encourages citizens to use it instead of less sustainable options.
 
 Additionally, the solution improves the **charging load management system**. Since AI predicts how much energy each bus needs for the day, buses are only charged when necessary. This system is more efficient and sustainable.
+
+To learn more, read [SWM relies on Azure IoT, artificial intelligence, and big data analyses](https://aka.ms/stadtwerke-customer-story).
 
 Next, let’s wrap up everything you’ve learned with a knowledge check.
