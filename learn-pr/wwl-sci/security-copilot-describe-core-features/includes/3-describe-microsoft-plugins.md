@@ -151,7 +151,7 @@ Microsoft Defender External Attack Surface Management (Defender EASM) continuous
 
 If you use Defender EASM in the same tenant as Copilot and enable the plugin, Copilot can surface insights from Defender EASM about an organization's attack surface. These insights can help you understand your security posture and mitigate vulnerabilities.
 
-Defender EASM capabilities in Copilot are built-in prompts that you can use, but you can also enter your own prompts based on the capabilities supported
+Defender EASM capabilities in Copilot are built-in prompts that you can use, but you can also enter your own prompts based on the capabilities supported.
 
 :::image type="content" source="../media/defender-skills.png" lightbox="../media/defender-skills.png" alt-text="Screen capture of the EASM system capabilities that can be run in the standalone experience.":::
 
