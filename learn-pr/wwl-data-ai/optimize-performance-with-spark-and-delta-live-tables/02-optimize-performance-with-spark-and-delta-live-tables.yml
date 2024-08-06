@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables
+title: Optimize Performance with Spark and Delta Live Tables
+metadata:
+  title: Optimize Performance with Spark and Delta Live Tables
+  description: "Optimize Performance with Spark and Delta Live Tables."
+  ms.date: 08/06/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/02-optimize-performance-with-spark-and-delta-live-tables.md)]

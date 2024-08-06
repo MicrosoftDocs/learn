@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables
+title: Exercise - Optimize Data Pipelines for Better Performance in Azure Databricks
+metadata:
+  title: Exercise - Optimize Data Pipelines for Better Performance in Azure Databricks
+  description: "Exercise - Optimize Data Pipelines for Better Performance in Azure Databricks."
+  ms.date: 08/06/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/07-exercise.md)]

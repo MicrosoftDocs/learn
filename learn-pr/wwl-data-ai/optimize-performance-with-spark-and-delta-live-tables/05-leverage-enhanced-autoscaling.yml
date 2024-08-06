@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables
+title: Leverage enhanced autoscaling
+metadata:
+  title: Leverage enhanced autoscaling
+  description: "Leverage enhanced autoscaling."
+  ms.date: 08/06/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/05-leverage-enhanced-autoscaling.md)]
