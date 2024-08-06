@@ -14,6 +14,7 @@ The company’s sales greatly depend on reaching leads via **engine search resul
 
 To solve this problem, they decided to summarize customers’ reviews. They resolved to try this approach in 5,000 car pages. At their usual pace, the process would have taken 11 years. CarMax needed to automate the process to improve productivity.
 
+![Image showing a smiling person driving a car.](../media/5-driving.jpg)
 
 ## The solution
 
@@ -28,5 +29,7 @@ CarMax relied on Azure OpenAI Service because of the robustness of the Microsoft
 Incorporating Azure OpenAI Service into the company’s processes has **boosted efficiency**. While the traditional approach meant 11 years of work to summarize customer reviews, the new process summarized customer reviews in just a few months. After some fine tuning, the quality obtained was also satisfactory, as the resulting materials had an 80 percent editorial approval rate. This increase in productivity frees editorial staff to focus on strategic, longer-form pieces.
 
 In parallel, their search engine rankings are peaking thanks to incorporating generative AI into their marketing strategy. As a result, **more traffic** is driven to CarMax’s website.
+
+To learn more, read [CarMax puts customers first with car research tools powered by Azure OpenAI Service](https://aka.ms/carmax-customer-story).
 
 Next, let’s wrap up everything you’ve learned with a knowledge check.

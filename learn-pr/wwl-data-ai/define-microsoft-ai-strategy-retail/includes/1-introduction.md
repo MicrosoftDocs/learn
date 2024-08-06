@@ -4,15 +4,4 @@ The next step for adopting AI is to find the tools that best fit your organizati
 
 Every AI implementation must consider **responsible AI** and practices. Microsoft AI follows very **[high ethical standards](https://www.microsoft.com/ai/responsible-ai)**. According to these principles, AI solutions must comply with fairness, reliability, privacy, security, inclusivity, transparency, and accountability guidelines.
 
-## Learning objectives
-In this module, you will:
-
-* Identify AI use cases in retail.
-* Examine available AI tools and resources for retail scenarios.
-* Discover insights from retail-specific AI success stories.
-
-## Prerequisites
-* Basic understanding of AI concepts.
-* Basic understanding of retail concepts.
-
-Next, let’s address some initial considerations for AI-powered retail projects.
+Next, let’s hear from Shelley Bransten, Corporate Vice President of Retail, Consumer Goods, and Gaming Industries at Microsoft.
