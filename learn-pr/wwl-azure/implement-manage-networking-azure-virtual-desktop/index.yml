@@ -2,8 +2,8 @@
 uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop
 metadata:
   title: Implement and manage networking for Azure Virtual Desktop
-  description: "Implement and manage networking for Azure Virtual Desktop"
-  ms.date: 08/05/2024
+  description: "See how to monitor and repair health of their Azure Virtual Desktop including virtual machines, virtual networks, application gateways, and load balancers."
+  ms.date: 08/06/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
