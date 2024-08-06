@@ -10,8 +10,8 @@ Of course, this is only possible with strong leadership that drives change by bo
 
 ## Data-driven
 
-:::row:::
-:::column span="2":::
+
+![Image representing sharing data across your organization, and adopting rigorous data practices.](../media/Data.jpg)
 
 Any good AI system relies on having the best and most complete data and being able to reason over your entire data estate. In other words, it depends on a matter of integrity and access.
 
@@ -20,14 +20,6 @@ Any good AI system relies on having the best and most complete data and being ab
 Due to data ownership or storage issues, most organizations generate, organize, and use data in a siloed manner. While each department may have a good view of the data coming from their own processes, they may lack other information that could be relevant to their operations.
 
 For instance, a sales department might not have a complete view of a customer, because they're missing pieces of data, like e-commerce activity and payment status, which are controlled by other departments. In this case, a seller may make the mistake of trying to sell a customer an insurance policy that they already purchased through an online channel.
-
-:::column-end:::
-:::column span="2":::
-
-![Image representing sharing data across your organization, and adopting rigorous data practices.](../media/Data.jpg)
-
-:::column-end:::
-:::row-end:::
 
 By sharing data across the organization, the sum becomes greater than the parts. It's no longer each piece of data that matters, but what that data adds up to: a unified view of the customer. With that unified view, you can make better decisions, act more effectively, and provide a better customer experience. Your data estate must be accessible to be useful, whether it's on-premises, in the cloud, or on the edge.
 
@@ -41,8 +33,8 @@ In summary, becoming data-driven means acquiring a **mindset of data sharing and
 
 ## Empowered
 
-:::row:::
-:::column span="2":::
+![Image of three construction workers representing empowerment and inclusivity: providing resources, a collaborative culture, and focusing on business needs.](../media/Empowered.jpg)
+
 Fostering an AI-ready culture means **empowering people to be part of the AI transformation**. Organizations should provide the following opportunities to achieve this goal:
 
 * **Enablement:** Space, resources, guidance, security, and support is needed to improve what people do with AI.
@@ -52,11 +44,6 @@ Fostering an AI-ready culture means **empowering people to be part of the AI tra
 * **Room for experimentation:** During this process, you should encourage new ideas and continuous improvement. This experimentation must allow room for errors, as well as celebration and acknowledgment of success.
 
 It also means to create an **inclusive environment**, one that is predicated on the willingness and ability of employees to work in cross-functional teams that cut across organizational boundaries.
-:::column-end:::
-:::column span="2":::
-![Image of three construction workers representing empowerment and inclusivity: providing resources, a collaborative culture, and focusing on business needs.](../media/Empowered.jpg)
-:::column-end:::
-:::row-end:::
 
 Furthermore, it means to make those who best understand the business a central piece of your transformation process. Data scientists working in isolation often create models that lack the business knowledge, purpose, or value that would make them an effective AI resource. Similarly, business people working in isolation lack the technical knowledge to understand what can be done from a data science perspective. A multidisciplinary approach is important.
 
@@ -64,9 +51,9 @@ By enabling cross-functional teams that include both data scientists and the bus
 
 ## Responsible
 
-The third key element of an AI-ready culture is fostering a responsible approach to AI. As AI continues to evolve, it has the potential to drive considerable changes to our lives, raising complex and challenging questions about what future we want to see.
+![Image person stamping a paper to represent a culture of review and responsible AI.](../media/Stamp.jpg)
 
-![Image person stamping a paper to represent a culture of review and responsible AI.](../media/Empowered.jpg)
+The third key element of an AI-ready culture is fostering a responsible approach to AI. As AI continues to evolve, it has the potential to drive considerable changes to our lives, raising complex and challenging questions about what future we want to see.
 
 Like a Corporate Vice President of Strategic Missions and Technologies at Microsoft says: the question very often is not what AI can do, it's what AI should do. Organizations need to ask themselves: How do we design, build, and use AI systems to create a positive impact on individuals and society? How can we ensure that AI systems treat everyone fairly? How can we best prepare the workforce for the new AI era?
 
