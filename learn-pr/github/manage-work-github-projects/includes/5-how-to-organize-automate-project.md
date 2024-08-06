@@ -58,7 +58,7 @@ Admins of organization-level Projects can manage access for the entire organizat
 
 ### Add a Project to a team
 
-You can add Projects to your team to give them collaborator access to their Projects. After adding, it's listed on the team's Projects page, which makes it easier for members to identify which Project a particular team uses. Teams are granted read permissions on any Project they get added to.
+You can add Projects to your team to give them collaborator access to their Projects. Adding lists them on the team's Projects page, which makes it easier for members to identify which Project a particular team uses. Teams are granted read permissions on any Project they get added to.
 
 Here's how to add Projects to teams:
 
@@ -79,7 +79,7 @@ Here are the steps to add a Project to a repository:
 
    :::image type="content" source="../media/5-add-project.png" alt-text="screenshot of the green Link a project button to add to a repository.":::
 
-1. Search for Projects that are owned by the same user or organization as the repository owner.
+1. Search for Projects owned by the same user or organization as the repository owner.
 1. Select a Project to list the Project in your repository.
 
 ## Close and delete Projects
@@ -98,7 +98,7 @@ Here are steps on how to navigate to them:
 1. In the top-right, select the three dots to open the menu and choose **Settings**.
 1. Scroll down to the **Danger zone** section and either select **Close project** or **Delete project**.
 
-   - If you select **Delete project**, you're prompted to read the warnings, and then type the name of your Project into the text box.
+   - Selecting **Delete project** prompts you to read the warnings, and then type the name of your Project into the text box.
 
    :::image type="content" source="../media/5-danger-zone-options.png" alt-text="Screenshot of the Danger zone section with the option to change visibility, close Project and delete Project with delete Project highlighted.":::
 

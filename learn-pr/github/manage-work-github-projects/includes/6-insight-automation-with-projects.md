@@ -2,7 +2,7 @@
 
 ## Insights with Projects
 
-In this section you learn about:
+In this section, you learn about:
 
 - Insights and how they can be useful.
 - Current charts and historical charts.
@@ -33,7 +33,7 @@ Historical charts are available with GitHub Team and GitHub Enterprise Cloud for
 Follow these steps to create a new chart:
 
 1. Navigate to your Project.
-1. In the top-right, select the line graph button. When you hover over the button, it's labeled as **Insights**.
+1. In the top-right, select the line graph button. When you hover over the button the **Insights** label appears.
 1. In the menu on the left, select **New chart**.
 1. Filter by keyword or field to change the data used to build the chart.
 1. To the right of the filter text box, select **Save**.
