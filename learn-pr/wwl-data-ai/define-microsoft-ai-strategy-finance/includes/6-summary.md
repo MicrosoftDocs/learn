@@ -4,9 +4,9 @@ We have provided an overview of the products and services that Microsoft offers 
 
 Now that you have reviewed this module, you should be able to:
 
-* Identify AI use cases in finance.
-* Examine available AI tools and resources for finance scenarios.
-* Discover insights from finance-specific AI success stories.
+* Consider common goals and challenges in financial services
+* Describe opportunities for AI in financial services organizations
+
 
 ## Use these resources to discover more
 
@@ -25,5 +25,5 @@ Now that you have reviewed this module, you should be able to:
 ## References
 
 1. [McKinsey & Company, "The economic potential of generative AI: The next productivity frontier," June 2023.](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier)
-1. [KPMG, Generative AI: From buzz to business value, May 2023.](https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2023/generative-ai-survey.pdf)
+1. [KPMG, Generative AI: From buzz to business value, May 2023.](https://advisory.kpmg.us/content/dam/advisory/en/pdfs/2023/generative-ai-survey.pdf)
 

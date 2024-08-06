@@ -6,15 +6,6 @@ The goal is to make AI available for everyone in FSI. While some **Microsoft AI*
 
 **Security** is a priority for any financial business, and so it is for Microsoft. Microsoft follows a rigorous approach to [responsible AI](https://www.microsoft.com/ai/responsible-ai). All products are designed to be fair, reliable, safe, private, secure, inclusive, transparent, and enable human accountability. Furthermore, the scenarios discussed in this module prove that AI can become a powerful asset to reinforce security in your organization.
 
-## Learning objectives
-In this module, you will:
+Next, let’s explore how you can power your AI transformation with the Microsoft Cloud and our global network of partners.
 
-* Identify AI use cases in financial services.
-* Examine available AI tools and resources for finance scenarios.
-* Discover insights from finance-specific AI success stories.
 
-## Prerequisites
-* Basic understanding of AI concepts.
-* Basic understanding of finance concepts.
-
-Next, let’s examine the most useful AI use cases in the financial industry.

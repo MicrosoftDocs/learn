@@ -22,8 +22,12 @@ Following this philosophy, Swift developed a first anomaly detection model and s
 
 The key to this distributed architecture is ensuring data confidentiality. The solution uses **Azure Confidential Computing**, **Microsoft Purview**, and a zero-trust-based policy framework that ensures Azure Machine Learning can ingest the distributed datasets without copying or moving data from their secure locations.
 
+![Image showing a worker holding a package out to a customer.](../media/3-transaction.jpg)
+
 ## The results
 
 Swift is succeeding in building the most accurate anomaly detection model for FSI ever created. This AI will help protect payments all around the world. The solution is already reducing costs in fraud remediation and fund recovery.
+
+To learn more, read [Swift innovates with Azure confidential computing to help secure global financial transactions](https://aka.ms/swift-customer-story).
 
 Next, let’s discuss a customer story in insurance.
