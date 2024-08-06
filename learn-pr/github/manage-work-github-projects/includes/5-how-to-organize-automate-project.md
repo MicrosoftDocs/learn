@@ -1,4 +1,4 @@
-﻿Now that you created your Project, added issues and pull requests, and organized it, let's talk about how to:
+﻿You created your Project, added issues and pull requests, and organized it. Now, let's talk about how to:
 
 - Provide visibility and access to your Project.
 - Close and delete your Project.

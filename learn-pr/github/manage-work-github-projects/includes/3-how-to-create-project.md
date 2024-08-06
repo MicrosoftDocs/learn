@@ -30,7 +30,7 @@ You can also create a personal Project by selecting your profile photo and navig
 
 Let's define your Project in a couple of different ways so that your team can easily understand what you're tracking.
 
-1. To edit your Project's name, description and README navigate to your newly created Project.
+1. Navigate to your newly created Project to edit your Project's name, description, and README.
 1. At the top right of the page, select the three dots to open the menu and select **Settings**.
 1. **Project Name** is where you edit the name of the Project.
 1. **Short description** allows you to add a few words about the Project.
@@ -67,7 +67,7 @@ You can search for existing issues or pull requests by adding a new item.
 
 ### Bulk add issues and pull requests
 
-Bulk add issues and pull requests to an existing repository to save time. It allows you to start organizing your team faster.
+You can bulk add issues and pull requests to an existing repository to save time. It allows you to start organizing your team faster.
 
 1. Select **+** in the bottom row of the Project.
 1. Select **Add item from repository**.

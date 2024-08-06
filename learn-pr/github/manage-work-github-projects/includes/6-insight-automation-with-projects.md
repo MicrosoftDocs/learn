@@ -36,12 +36,12 @@ Follow these steps to create a new chart:
 1. In the top-right, select the line graph button. When you hover over the button, it's labeled as **Insights**.
 1. In the menu on the left, select **New chart**.
 1. Filter by keyword or field to change the data used to build the chart.
-1. To the right of the filter text box, click **Save**.
+1. To the right of the filter text box, select **Save**.
 
 Now that you created a new chart, let's customize your new chart to fit your needs.
 
 1. In the menu on the left, select the chart you'd like to configure.
-1. On the right side of the page, click **Configure**, and a panel opens.
+1. On the right side of the page, select **Configure**, and a panel opens.
 1. Select the **Layout** dropdown to change the type of chart you want to use.
 1. Select the **X-axis** dropdown and choose the field you want to use.
 1. Optionally, select **Group by** to group items on your X-axis. Choose the field you want to use or *None* to disable grouping.
@@ -83,8 +83,8 @@ GitHub Actions enables the most customization for your Project's automation. You
 
 An issue creation triggers a workflow that adds a label, leaves a comment, and moves the issue to a project board.
 
-Learn more about automating workflows for your Project in the article "Automating Projects using Actions" at the end of this module.
+Learn more about automating workflows for your Project in the article *Automating Projects using Actions* at the end of this module.
 
 ### GraphQL API
 
-If you're using GraphQL in GitHub, you can utilize an API to help automate your Project. For more information on using GraphQL API, see the article, "Using the API to Manage Projects" at the end of this module.
+If you're using GraphQL in GitHub, you can utilize an API to help automate your Project. For more information on using GraphQL API, see the article, *Using the API to Manage Projects* at the end of this module.
