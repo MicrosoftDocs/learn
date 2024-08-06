@@ -3,7 +3,7 @@ uid: learn.wwl.embrace-responsible-ai-principles-practices
 metadata:
   title: Embrace responsible AI principles and practices
   description: "Explore six principles to guide AI development and use - fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability."
-  ms.date: 08/05/2024
+  ms.date: 08/06/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
@@ -16,29 +16,17 @@ summary: This module is designed to help you adopt responsible AI practices. It 
 abstract: |
   In this module, you will:
 
-  -   Prepare
+  -   Prepare for the implications of responsible AI
 
-  for the implications of responsible AI
+  -   Describe principles of responsible AI
 
-  -   Describe
+  -   Establish a system for AI governance
 
-  principles of responsible AI
+  -   Take actions for AI governance
 
-  -   Establish
+  -   Engage across teams and organizations to implement responsible AI principles
 
-  a system for AI governance
-
-  -   Take
-
-  actions for AI governance
-
-  -   Engage
-
-  across teams and organizations to implement responsible AI principles
-
-  -   Take
-
-  inspiration from how responsible AI is approached at Microsoft
+  -   Take inspiration from how responsible AI is approached at Microsoft
 prerequisites: |
   -   Basic understanding of AI concepts.
 
