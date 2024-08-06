@@ -31180,6 +31180,81 @@
     {
       "source_path_from_root": "/learn-sqlserver/run-sql-server-2017-linux-containers/4-use-docker-compose-deploy-multiple-containers.md",
       "redirect_url": "/training/modules/introduction-sql-server-linux"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/build-chat-app-web-pubsub/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-web-pubsub/tutorial-subprotocol?tabs=csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/build-chat-app-web-pubsub/2-overview-static-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-web-pubsub/tutorial-subprotocol?tabs=csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/build-chat-app-web-pubsub/3-exercise-create-web-pubsub.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-web-pubsub/tutorial-subprotocol?tabs=csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/build-chat-app-web-pubsub/4-exercise-create-configure-static-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-web-pubsub/tutorial-subprotocol?tabs=csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/build-chat-app-web-pubsub/5-configure-continuous-delivery.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-web-pubsub/tutorial-subprotocol?tabs=csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/build-chat-app-web-pubsub/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-web-pubsub/tutorial-subprotocol?tabs=csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/build-chat-app-web-pubsub/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-web-pubsub/tutorial-subprotocol?tabs=csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/build-chat-app-web-pubsub/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-web-pubsub/tutorial-subprotocol?tabs=csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-azure-web-pubsub/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-web-pubsub/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-azure-web-pubsub/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-web-pubsub/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-azure-web-pubsub/2-what-azure-web-pubsub.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-web-pubsub/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-azure-web-pubsub/3-how-azure-web-pubsub-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-web-pubsub/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-azure-web-pubsub/4-when-use-azure-pubsub.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-web-pubsub/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-azure-web-pubsub/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-web-pubsub/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-azure-web-pubsub/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-web-pubsub/",
+      "redirect_document_id": false
     }
   ]
 }
