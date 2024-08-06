@@ -12,6 +12,8 @@ To cope effectively with this complexity, some best practices are required. They
 
 Data scientists can manage and execute machine learning DevOps from **Azure Machine Learning**, a platform by Microsoft to make machine learning *lifecycle management* and *operations* practices easier. Such tools help teams collaborate in a shared, auditable, and safe environment where many processes can be optimized via automation.
 
+![A screenshot of Azure Machine Learning Studio landing page.](../media/auzre-ml-studio.png)
+
 #### Machine learning lifecycle management
 
 Azure Machine Learning supports end-to-end machine learning lifecycle management of pretrained and custom models. The typical lifecycle includes the following steps: data preparation, model training, model packaging, model validation, model deployment, model monitoring and retraining. 
@@ -49,3 +51,7 @@ Azure Machine learning supports the following MLOps practices:
 
 >[!TIP]
 >**Customer story**: A healthcare organization uses Azure Machine Learning to train custom machine learning models that predict the likelihood of complications during surgical procedures. The models are trained on huge volumes of data, including factors such as age, ethnicity, smoking history, body mass index, and blood platelet count. Using these models enables medical professionals to better assess risk and determine options for surgery or lifestyle change recommendations for individual patients. The responsible AI dashboard in Azure Machine Learning helps explain predictive factors and mitigate bias from demographic factors. Ultimately, the predictive modeling solution helps reduce risk and uncertainty, and improve surgical outcomes. Read the full customer story here: [https://aka.ms/azure-ml-customer-story](https://aka.ms/azure-ml-customer-story). ![Photo of an healthcare worker accessing Azure Machine Learning on a tablet.](../media/machine-learning-customer-story.jpg)
+
+> [!TIP]
+> Take a moment to consider how your organization can leverage data science and machine learning expertise to build custom models. 
+> ![Image showing people working and talking around a table.](../media/Discussion.jpg)

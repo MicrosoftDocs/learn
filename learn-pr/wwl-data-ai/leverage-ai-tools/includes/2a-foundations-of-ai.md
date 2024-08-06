@@ -17,4 +17,4 @@ For instance, deep learning can be used to detect cancerous cells in medical ima
 
 Expanding on the primary concepts of AI, where machines show capabilities that are usually associated with human capabilities, you can see how learning patterns, interpreting data, and reasoning with data works. To achieve this, we need to feed the machine a lot of data before it can learn. Additionally, machine learning creates algorithms varying from simple linear functions to extremely complex ones, like an artificial neural network.
 
-Next, let’s explore which tools and frameworks you have available if you want to add AI to your business.
+Next, let’s explore four categories of Microsoft tools you can use to add AI to your business.

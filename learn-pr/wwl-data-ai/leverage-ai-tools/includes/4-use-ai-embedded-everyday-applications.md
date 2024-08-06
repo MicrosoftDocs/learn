@@ -1,12 +1,14 @@
-![A screenshot of Microsoft 365 Copilot in Outlook.](../media/4-outlook-example.png)
+To truly realize the potential of AI, it’s essential to bring AI to every employee in ways that are relevant and meaningful to their work. Microsoft makes this possible by embedding AI in the applications people use in their everyday routine. No code or data science expertise is required because AI is delivered as just another feature of a SaaS product. The result is a wide range of intelligent applications for business users. 
 
-To truly realize the potential of AI, it’s essential to bring AI to every employee in ways that are relevant and meaningful to their work. Microsoft makes this possible by embedding AI in the applications people use in their everyday routine. No code or data science expertise is required because AI is delivered as just another feature of a SaaS product. The result is a wide range of intelligent applications for business users. Let’s take a look at some examples of these applications that can help anyone use AI to get more done.
+*Copilot* refers to AI embedded into applications. Microsoft Copilot provides a transformed experience across business functions and everyday routines. 
+ 
+![A screenshot of Microsoft 365 Copilot in Outlook.](../media/4-outlook-example.png)
 
 ## Business functions
 
 Some AI solutions are specialized in helping solve problems and gain insight in some specific horizontal functions and sectors. These intelligent business applications weave relevant AI capabilities into their existing workflows. For example, Microsoft Dynamics 365 helps workers from specific business lines and functions automate and improve certain tasks. Microsoft 365 does the same by addressing a more general audience. 
 
-These solutions are often delivered as SaaS AI solutions, which deliver fast and cost-effective results. With powerful intelligence in their existing workflows, business users can be more proactive and effective in their core competencies. Here are some examples of powerful scenarios where AI is already having proven, beneficial effects:
+These solutions are often delivered as SaaS AI solutions, which deliver fast and cost-effective results. With powerful intelligence in their existing workflows, business users can be more proactive and effective in their core competencies. Let’s take a look at some examples of these applications that can help anyone use AI to get more done. Here are some examples of powerful scenarios where AI is already having proven, beneficial effects:
 
 |**Business function**|**Example scenario**|
 |-|-|
@@ -66,5 +68,12 @@ AI-powered search experiences like Microsoft Search can help business users wade
 > 62 percent of employees consider they spend too much time struggling to find the information they need.<sup>1</sup>
 
 Now is the time to empower your employees with the right AI tools to amplify their capabilities and achieve more. 
+
+>[!TIP]
+>**Customer story**: A technology services support and consulting company uses Microsoft Copilot for Sales to capture notes in client meetings.​ Copilot for Sales analyzes transcribed text from Teams meetings to generate key discussion highlights tailored for sales roles. It then creates meeting summaries in Outlook from these discussion highlights, which are saved to CRM.​ The result is less time spent writing and collating notes, and the creation of consistent, standardized summaries that simplify the process of creating proposals and contracts.​ Customers benefit from a faster, more relevant response to enquiries and the company benefits from greater efficiency and an increase in revenue. Read the full customer story here: [https://aka.ms/sales-copilot-customer-story](https://aka.ms/sales-copilot-customer-story). ![Photo of a manager in a car using Copilot on a tablet.](../media/everyday-ai-customer-story.jpg)
+
+> [!TIP]
+> Take a moment to reflect on ways your team or organization could benefit from AI capabilities in your existing workflows and business processes.
+> ![Image showing people working and talking around a table.](../media/Discussion.jpg)
 
 In the next unit, we'll discuss Power Platform, which also offers AI features for people without data science expertise.
