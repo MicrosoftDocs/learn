@@ -4,6 +4,8 @@ In this unit, we explore the potential of putting business users at the center o
 
 AI can empower all people to achieve more, not just developers and data scientists. In fact, McKinsey predicts that latest generative AI has the potential to automate as much as 58.5 percent of scenarios requiring to apply expertise. These scenarios were especially hard to automate without this technology.<sup>2</sup> Organizations can achieve most of this automation from business users and subject matter experts working directly with AI and generative AI.
 
+![Image of two people working in an office who are looking at a computer screen.](../media/empower-business-users.jpg)
+
 Let's take some real examples:
 
 * **Pharmaceutical companies**: Workers in this sector deal with a vast amount of biomedical data. With a range of AI models, employees can quickly understand and derive key insights from this information to take on the next wave of challenges in medicine. They can iterate and test new hypotheses faster if they can use AI on their own, without relying on data science teams.
@@ -12,22 +14,11 @@ Let's take some real examples:
 
 Pharmaceutical companies and sales are just two examples. AI provides business users and subject matter experts with limitless opportunities to do things that weren’t possible before. With access to AI, they can uncover hidden insights, find critical information, improve collaboration, and even automate repetitive tasks.
 
-
 ## AI for everyone
 
 At Microsoft, we’re working to ensure that any user—from accountant to researcher—can achieve more with AI. It shouldn’t require a background in data science to benefit from AI experiences.
 
-:::row:::
-:::column span="2":::
 We believe AI should be used to enhance human capabilities. AI works best as a copilot, not a replacement. The right AI tools help employees better apply their expertise and complement it with AI-powered insights, making them more innovative and effective. To accomplish AI for everyone, we’re weaving intelligence into business applications that people use every day.
-:::column-end:::
-:::column span="2":::
-
-> [!div class="mx-imgBorder"]
-> ![Image of two people working in an office who are looking at a computer screen.](../media/empower-business-users.jpg)
-
-:::column-end:::
-:::row-end:::
 
 Finally, we’re committed to advancing the responsible development and use of AI. We believe it’s critical to take a human-centered approach to AI development and governance. This approach should value diverse perspectives and emphasize listening, learning, and responding as technology evolves. Together, we can ensure the next generation of AI is designed, built, and used responsibly.
 
