@@ -23,7 +23,14 @@ If you have [integrated Microsoft Entra logs with Azure Monitor logs](/entra/ide
 
 You can access your sign-in logs by running the following Kusto query:
 
-let UPN = "useru`pn"; AADNonInteractiveUserSignInLogs | where UserPrincipalName == UPN | where AppId == "372140e0-b3b7-4226-8ef9-d57986796201" | project ['Time']=(TimeGenerated), UserPrincipalName, AuthenticationRequirement, ['MFA Result']=ResultDescription, Status, ConditionalAccessPolicies, DeviceDetail, ['Virtual Machine IP']=IPAddress, ['Cloud App']=ResourceDisplayName | order by ['Time'] d`esc
+```powershell
+let UPN = "userupn";
+AADNonInteractiveUserSignInLogs
+| where UserPrincipalName == UPN
+| where AppId == "372140e0-b3b7-4226-8ef9-d57986796201"
+| project ['Time']=(TimeGenerated), UserPrincipalName, AuthenticationRequirement, ['MFA Result']=ResultDescription, Status, ConditionalAccessPolicies, DeviceDetail, ['Virtual Machine IP']=IPAddress, ['Cloud App']=ResourceDisplayName
+| order by ['Time'] desc
+```
 
 ### Retrieve and open client logs
 
