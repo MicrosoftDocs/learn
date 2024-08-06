@@ -12,6 +12,6 @@ Microsoft Entra capabilities in Copilot are built-in prompts that you can use bu
 
 Microsoft Entra integration with Copilot can also be experienced through the embedded experience, referred to as Microsoft Copilot in Microsoft Entra.  
 
-For example, the risky users' report, available from the Microsoft Entra portal under Identity protection, embeds the capabilities of Microsoft Copilot for Security to summarize a user's risk level, provide insights relevant to the incident at hand, and provide recommendations for rapid mitigation.
+For example, the risky users' report, available from the Microsoft Entra admin center under Identity protection, embeds the capabilities of Microsoft Copilot for Security to summarize a user's risk level, provide insights relevant to the incident at hand, and provide recommendations for rapid mitigation.
 
 :::image type="content" source="../media/entra-risky-users-summarize-v2.png" lightbox="../media/entra-risky-users-summarize-v2.png" alt-text="Screen capture showing the Copilot generated summary.":::
