@@ -3,13 +3,13 @@ uid: learn.wwl.define-microsoft-ai-strategy-manufacturing.identify-ai-use-cases-
 title: Identify Microsoft AI use cases in manufacturing
 metadata:
   title: Identify Microsoft AI use cases in manufacturing
-  description: Identify Microsoft AI use cases in manufacturing
+  description: "Identify Microsoft AI use cases in manufacturing"
+  ms.date: 08/06/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.date: 05/22/2024
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/3-identify-ai-use-cases-manufacturing.md)]
