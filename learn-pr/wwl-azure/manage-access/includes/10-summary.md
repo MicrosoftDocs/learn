@@ -1,8 +1,11 @@
 In this module, you learned how to:
 
- -  Describe Azure role-based access controls (RBAC) for Azure Virtual Desktop.
- -  Plan and implement Azure roles and role-based access control (RBAC) for Azure Virtual Desktop.
- -  Describe how to configure Azure Virtual Desktop with Intune.
+ -  Select an identity strategy for Azure Virtual Desktop
+ -  Select an authentication strategy for Azure Virtual Desktop
+ -  Describe Role-based access control (RBAC) for Azure Virtual Desktop
+ -  Plan and implement Azure roles and role-based access control (RBAC) for Azure Virtual Desktop
+ -  Assign RBAC roles to the Azure Virtual Desktop service principals
+ -  Enforce Microsoft Entra multifactor authentication for Azure Virtual Desktop using Conditional Access
 
 ## Learn more
 
