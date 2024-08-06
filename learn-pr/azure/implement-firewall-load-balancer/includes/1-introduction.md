@@ -1,6 +1,6 @@
 Suppose you're a network administrator at a large, US-based, financial-services company. The company develops and hosts highly specialized, proprietary commercial applications for its customers in its own datacenters.
 
-As part of modernizing its technology, your company deployed Azure Stack Hyperconverged Infrastructure (HCI) across its on-premises locations. Azure Stack HCI accelerated datacenter consolidation, enhanced compute workload agility, and helped minimize dependency on expensive, complex storage area networks (SANs).
+As part of modernizing its technology, your company deployed Azure Stack HCI across its on-premises locations. Azure Stack HCI accelerated datacenter consolidation, enhanced compute workload agility, and helped minimize dependency on expensive, complex storage area networks (SANs).
 
 However, your company still struggles to maintain an elaborate network infrastructure, which has many devices from different vendors and hundreds of virtual local area networks (VLANs). It's increasingly difficult to achieve sufficient security and resiliency to satisfy customer needs and regulatory requirements.
 

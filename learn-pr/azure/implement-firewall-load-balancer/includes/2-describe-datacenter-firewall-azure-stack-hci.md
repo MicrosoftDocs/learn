@@ -8,7 +8,7 @@ Traditional firewalls target edge connectivity, filtering traffic between on-pre
 
 To provide meaningful protection in a zero-trust strategy, firewalls must also help protect resources within a datacenter from internal threats. Using physical firewalls to filter on-premises communication, also called *East-West* traffic, is challenging because it requires added hardware investment and operational overhead. Routing all protected traffic via a separate physical device also increases latency, which negatively affects internal workloads.
 
-Within Azure Stack Hyperconverged Infrastructure (HCI), you can define granular software-based filtering of virtualized workloads that's applicable to external and internal traffic. Datacenter Firewall provides this filtering through access control lists (ACLs) in logical and virtual networks.
+Within Azure Stack HCI, you can define granular software-based filtering of virtualized workloads that's applicable to external and internal traffic. Datacenter Firewall provides this filtering through access control lists (ACLs) in logical and virtual networks.
 
 For Azure Stack HCI administrators, Datacenter Firewall provides the following benefits:
 

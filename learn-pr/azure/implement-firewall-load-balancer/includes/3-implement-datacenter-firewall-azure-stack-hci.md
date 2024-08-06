@@ -1,4 +1,4 @@
-You're confident that the software defined networking (SDN) distributed firewall capabilities of Azure Stack Hyperconverged Infrastructure (HCI) can help improve the security of your network infrastructure. In this unit, you evaluate the functionality and usefulness of Datacenter Firewall in Azure Stack HCI by implementing it in your proof-of-concept environment.
+You're confident that the software defined networking (SDN) distributed firewall capabilities of Azure Stack HCI can help improve the security of your network infrastructure. In this unit, you evaluate the functionality and usefulness of Datacenter Firewall in Azure Stack HCI by implementing it in your proof-of-concept environment.
 
 ## Implement Datacenter Firewall
 
