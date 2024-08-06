@@ -3,7 +3,7 @@
 
 ## Exercise 1 - Configuring readable secondaries
 
-In this exercise, you will configure and use readable secondaries to take advantage of the secondary replica for read-only workloads.
+In this exercise, you'll configure and use readable secondaries to take advantage of the secondary replica for read-only workloads.
 
 1. Open Azure Data Studio.
 1. Expand the **Connections** Tab.
@@ -102,7 +102,7 @@ In this exercise, you will configure and use readable secondaries to take advant
 
     ![Screenshot of connection details for the Managed Instance secondary endpoint connection.](../media/exercise1-managed-instance-secondary-endpoint-1.png)
 
-1. Open a new query window for the new secondary endpoint connection and execute the following commands. Your servername should not be the current primary replica:
+1. Open a new query window for the new secondary endpoint connection and execute the following commands. Your servername shouldn't be the current primary replica:
 
     ```sql
     Select @@ServerName;
@@ -326,7 +326,7 @@ For this exercise, you'll simulate the failure or loss of the Kubernetes pod hos
 
 ## Exercise 4 - Point-in-time restores
 
-For this exercise, you will use the automated backups already created for the AdventureWorks2019 database restored to the Arc-enabled SQL Managed Instance environment previously.
+For this exercise, you'll use the automated backups already created for the AdventureWorks2019 database restored to the Arc-enabled SQL Managed Instance environment previously.
 
 1. Open Azure Data Studio.
 1. Expand the **Connections** Tab.
@@ -365,7 +365,7 @@ For this exercise, you will use the automated backups already created for the Ad
 
 ## Exercise 5 - Deploying Arc-enabled SQL Managed Instance Azure failover groups
 
-In this exercise, we'll use use an Arc-enabled SQL Managed Instance Business Critical environment. The environment consists of an Arc-enabled SQL Managed Instance located at our primary site and a duplicate Arc-enabled SQL Managed Instance located at our secondary site.
+In this exercise, we'll use an Arc-enabled SQL Managed Instance Business Critical environment. The environment consists of an Arc-enabled SQL Managed Instance located at our primary site and a duplicate Arc-enabled SQL Managed Instance located at our secondary site.
 
 ### Prerequisites
 
