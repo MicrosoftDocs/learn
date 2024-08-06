@@ -54,4 +54,4 @@ Azure Machine learning supports the following MLOps practices:
 
 > [!TIP]
 > Take a moment to consider how your organization can leverage data science and machine learning expertise to build custom models. 
-> ![Image showing people working and talking around a table.](../media/Discussion.jpg)
+> ![Image showing people working and talking around a table.](../media/2-Reflection.jpg)

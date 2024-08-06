@@ -42,4 +42,4 @@ Azure AI capabilities include: vision, language, speech, document intelligence, 
 
 > [!TIP]
 > Take a moment to consider the kinds of custom AI solutions your organization develop, for internal use or for your customers/partners.
-> ![Image showing people working and talking around a table.](../media/Discussion.jpg)
+> ![Image showing people working and talking around a table.](../media/2-Reflection.jpg)

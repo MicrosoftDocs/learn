@@ -39,4 +39,4 @@ The diagram shows how this fusion development approach works.
 
 > [!TIP]
 > Take a moment to consider if your organization has business process experts who could use low-code tools to integrate AI into workflows.
-> ![Image showing people working and talking around a table.](../media/Discussion.jpg)
+> ![Image showing people working and talking around a table.](../media/2-Reflection.jpg)

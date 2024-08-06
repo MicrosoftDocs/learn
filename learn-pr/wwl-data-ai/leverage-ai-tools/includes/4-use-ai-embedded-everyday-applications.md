@@ -74,6 +74,4 @@ Now is the time to empower your employees with the right AI tools to amplify the
 
 > [!TIP]
 > Take a moment to reflect on ways your team or organization could benefit from AI capabilities in your existing workflows and business processes.
-> ![Image showing people working and talking around a table.](../media/Discussion.jpg)
-
-In the next unit, we'll discuss Power Platform, which also offers AI features for people without data science expertise.
+> ![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
