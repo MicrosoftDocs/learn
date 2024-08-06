@@ -1,4 +1,4 @@
-When you want your data tasks to run efficiently and reliably, you can use schedule and automate jobs in Azure Databricks. Job scheduling and automation in Azure Databricks can help you significantly optimize resource usage and improve the consistency and reliability of data operations.
+When you want your data tasks to run efficiently and reliably, you can use **schedule** and **automate jobs** in Azure Databricks. Job scheduling and automation in Azure Databricks can help you significantly optimize resource usage and improve the consistency and reliability of data operations.
 
 You can use jobs for ETL (Extract, Transform, Load) processes, real-time data processing, machine learning model training and deployment, and batch processing of large datasets. Whether you work in finance, healthcare, retail, or manufacturing, you can benefit from these capabilities to enhance your data analytics, improve decision-making, and drive innovation. By automating routine data tasks, you can focus on higher-value activities and accelerate your data-driven initiatives.
 
@@ -6,13 +6,16 @@ Let's first explore what jobs are in Azure Databricks, and then how you can sche
 
 ## Create and manage jobs
 
-To create a job in Azure Databricks, you need to specify:
+A **job** in Azure Databricks has four main components:
 
-- The tasks you want to run.
-- The cluster on which the task runs.
-- The schedule or conditions for execution.
+:::image type="content" source="../media/job-overview.png" alt-text="Screenshot of job creation in Azure Databricks.":::
 
-You can create a job directly from the Azure Databricks portal, or programmatically using the Databricks REST API.
+- **Tasks**: The code you want to run.
+- **Cluster**: The compute on which the tasks run.
+- **Schedule**: When you want the tasks to run.
+- **Monitor**: Review whether and how the tasks ran.
+
+When you want to create a job, you need to define the tasks, specify the cluster, and define the schedule. You can create a job directly from the Azure Databricks portal, or programmatically using the Databricks REST API.
 
 :::image type="content" source="../media/databricks-jobs.png" alt-text="Screenshot of job creation in Azure Databricks." lightbox="../media/databricks-jobs.png":::
 
