@@ -17,6 +17,3 @@ Here are some points to consider about configuring service access settings:
 > [!Important]
 > Be sure to test the service endpoint and verify the endpoint limits access as expected.
 
-### How to connect to a storage account using private link
-
-<iframe width="854" height="480" src="https://www.youtube.com/embed/vM7yDwHSc_o" title="How to move Azure Storage Blobs between containers" allowfullscreen></iframe>
