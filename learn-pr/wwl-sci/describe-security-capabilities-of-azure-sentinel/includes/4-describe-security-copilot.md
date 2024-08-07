@@ -1,25 +1,49 @@
-The top security challenges organizations face include:
 
-- An increase in the number and sophistication of attacks.
-- A talent shortage that is driving the need for automation, integration, and consolidation of security tools.
-- Visibility into security, privacy, compliance, and governance.
+Microsoft Sentinel integrates with Microsoft Copilot for Security.
 
-Organizations need to act quickly to address all the security challenges they face, but working at human speed, even if there weren't a talent shortage, isn't enough.  Organizations need to work at machine speed.
+For businesses that are onboarded to Microsoft Copilot for Security, the integration is enabled through plugins accessed through the Copilot portal. Sentinel provides two plugins to integrate with Copilot for Security:
 
-Microsoft Security Copilot is the first and only generative AI security product to help defend organizations at machine speed and scale.  It's an AI-powered security analysis tool that enables analysts to respond to threats quickly, process signals at machine speed, and assess risk exposure in minutes.
+- Microsoft Sentinel (Preview)
+- Natural language to KQL for Microsoft Sentinel (Preview)
 
-:::image type="content" source="../media/security-copilot.png" alt-text="Diagram showing key attributes of Microsoft Security Copilot, including hyperscale AI infrastructure, cyber-trained model with security skills, threat intelligence from 65 trillion signals and end-to-end security tooling.":::
+:::image type="content" source="../media/sentinel-plugins.png" alt-text="Screen capture showing the Microsoft Sentinel plugins.":::
 
-The center of Microsoft Security Copilot is the prompt bar that allows security analysts to ask questions in natural language.  You use the prompt bar to tell copilot what insights you want from your security data.
+***Microsoft Sentinel (Preview) plugin***. To utilize the Sentinel plugin, the user would need to be assigned a role permission that grants access to Copilot and a Sentinel specific role like Microsoft Sentinel Reader to access incidents in the workspace.
 
-Three primary use cases are security posture management, incident response, and security reporting.
+The Sentinel plugin requires the user to configure the Sentinel workspace, the subscription name, and the resource group name.
 
-- **Security posture management**. Security Copilot delivers information on anything that might expose an organization to a known threat. It then gives the analyst prescriptive guidance on how to protect against those potential vulnerabilities.
+:::image type="content" source="../media/sentinel-plugin-configuration.png" lightbox="../media/sentinel-plugin-configuration.png" alt-text="Screen capture showing the Microsoft Sentinel plugin configuration parameters.":::
 
-- **Incident response**. Security Copilot can quickly surface an incident.  For a surfaced incident, Security Copilot can enrich it with context from other data sources, assess its scale and impact, and provide information on what the source might be.  Security Copilot can then guide the analyst through the response and remediation steps with guided recommendations. Security Copilot provides single pane of glass visibility by pulling in data from other sources like Defender and Sentinel and then correlating and analyzing that data all together.
+The Sentinel plugin capabilities are focused on incidents and workspaces. The Microsoft Sentinel capabilities in Copilot are built-in prompts that you can use, but you can also enter your own prompts based on the capabilities supported.
 
-- **Security reporting**. Security Copilot can deliver customizable reports that are ready to share and easy to consume, allowing analysts to focus more on high value tasks pertinent for securing the organization.
+:::image type="content" source="../media/sentinel-prompts.png" alt-text="Screen capture showing the Microsoft Sentinel capabilities.":::
 
-The information you give Copilot will only be accessible to your organization. Your data is your data, and it's protected by comprehensive enterprise compliance and security controls.  Your data isn't used to train the foundation AI models.
+Additionally, Copilot includes a promptbook for Microsoft Sentinel incident investigation. This promptbook includes prompts for getting a report about a specific incident, along with related alerts, reputation scores, users, and devices.
 
-Security Copilot, which is currently in preview and not yet generally available, has planned integration with Microsoft Sentinel and Microsoft's other security product families.
+
+The Microsoft Sentinel incident investigation promptbook is not only a great starting point for your investigation, it's also a starting point for creating effective prompts.
+
+:::image type="content" source="../media/sentinel-promptbook.png" alt-text="Screen capture showing the Microsoft Sentinel incident investigation promptbook.":::
+
+***Natural language to Microsoft Sentinel KQL (Preview) plugin***. The natural language to Sentinel KQL (NL2KQLSentinel) plugin converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. This saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst’s needs. The Natural language to KQL for Microsoft Sentinel (Preview) plugin generates and runs KQL hunting queries using Microsoft Sentinel data. This capability is available in the standalone experience and the advanced hunting section of the Microsoft Defender portal.
+
+### Microsoft Sentinel with Copilot in Defender
+
+The integration of Microsoft Sentinel with Copilot can be experienced through both the standalone experience and the embedded experience using the Defender portal.  The embedded experience that is accessed through the Defender portal uses the unified security operations platform with your Microsoft Sentinel data.
+
+***Incidents***
+Microsoft Sentinel incidents are now unified with Defender XDR incidents, so you can use Copilot in Microsoft Defender for incident summary, guided responses and incident reports of Sentinel incidents.
+
+# [Unified incidents](#tab/unified-incidents)
+
+:::image type="content" source="../media/unified-incidents.png" lightbox="../media/unified-incidents.png" alt-text="Screen capture of unified incidents list in the Defender portal.":::
+
+# [Sentinel incident summary](#tab/sentinel-incident-summary)
+
+:::image type="content" source="../media/copilot-incident-summary.png" lightbox="../media/copilot-incident-summary.png" alt-text="Screen capture of the Copilot incident summary for a Sentinel incident, shown in the Defender portal.":::
+
+***Advanced hunting***
+
+With the Natural language to KQL for Microsoft Sentinel (Preview) plugin enabled, you can generate and run KQL hunting queries using, Microsoft Sentinel data, in the advanced hunting section of the Microsoft Defender portal.
+
+:::image type="content" source="../media/advanced-hunting.png" lightbox="../media/advanced-hunting.png" alt-text="Screen capture of Copilot hunting queries in the Defender portal.":::

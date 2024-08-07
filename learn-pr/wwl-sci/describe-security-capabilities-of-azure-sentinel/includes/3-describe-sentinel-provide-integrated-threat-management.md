@@ -77,9 +77,9 @@ The Microsoft Sentinel Content hub is your centralized location to discover and 
 
 ### Microsoft Sentinel in the Microsoft Defender portal
 
-Microsoft Sentinel is a security service that is enabled through the Azure portal. Once the Microsoft Sentinel service is enabled, you can access it through the Azure portal or from within the Microsoft unified security operations platform in the Microsoft Defender portal. 
+Microsoft Sentinel is a security service that is enabled through the Azure portal. Once the Microsoft Sentinel service is enabled, you can access it through the Azure portal or from within the Microsoft unified security operations platform in the Microsoft Defender portal.
 
-The Microsoft unified security operations platform in the Microsoft Defender portal brings together the full capabilities of Microsoft Sentinel, Microsoft Defender XDR, and Microsoft Copilot in Microsoft Defender. 
+The Microsoft unified security operations platform in the Microsoft Defender portal brings together the full capabilities of Microsoft Sentinel, Microsoft Defender XDR, and Microsoft Copilot in Microsoft Defender.
 
 When you onboard Microsoft Sentinel to the Defender portal, you unify capabilities with Microsoft Defender XDR like incident management and advanced hunting. Reduce tool switching and build a more context-focused investigation that expedites incident response and stops breaches faster.
 
