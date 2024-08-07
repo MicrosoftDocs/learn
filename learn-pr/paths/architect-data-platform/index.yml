@@ -29,7 +29,7 @@ modules:
 - learn.provision-azure-sql-db
 - learn.azure-scale-azure-sql-dbs-elastic-pools
 - learn-wwl.migrate-sql-workloads-azure-sql-databases
-- learn.develop-app-that-queries-azure-sql
+# - learn.develop-app-that-queries-azure-sql
 - learn.wwl.explore-azure-cosmos-db
 - learn.wwl.work-with-cosmos-db
 trophy:
