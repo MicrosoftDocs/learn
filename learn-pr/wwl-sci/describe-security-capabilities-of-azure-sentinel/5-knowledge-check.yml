@@ -27,6 +27,7 @@ quiz:
     - content: "Collect, Detect, Investigate, and Repair."
       isCorrect: false
       explanation: "Incorrect. Repair is not one of the four key aspects of a SIEM/SOAR solution."
+  
   - content: "Your estate has many different data sources where data is stored. Which tool should be used with Microsoft Sentinel to quickly gain insights across your data as soon as a data source is connected?"
     choices:
     - content: "Azure Monitor Workbooks."
@@ -38,3 +39,15 @@ quiz:
     - content: "Microsoft Defender XDR."
       isCorrect: false
       explanation: "Incorrect. Microsoft Defender XDR provides protection for email, client endpoints, enterprise IoT, Identity, Apps, and Cloud apps."
+
+  - content: A security analyst is tasked with investigating a specific incident using Microsoft Sentinel. They want to obtain a summary of the incident, related alerts, reputation scores, users, and devices.  What functionality should they use?
+    choices:
+    - content: Microsoft Sentinel KQL (Preview) plugin
+      isCorrect: false
+      explanation: Incorrect. The Microsoft Sentinel KQL (Preview) plugin is used to convert natural-language questions into ready-to-run KQL queries, not for accessing incident-specific information.
+    - content: Microsoft Sentinel incident investigation promptbook
+      isCorrect: true
+      explanation: Correct. The Microsoft Sentinel incident investigation promptbook includes prompts for getting a report about a specific incident, along with related alerts, reputation scores, users, and devices.
+    - content: Jupyter notebooks
+      isCorrect: false
+      explanation: Incorrect. Jupyter notebooks are an open-source web application that allows users to create and share documents containing live code, equations, visualizations, and narrative text.

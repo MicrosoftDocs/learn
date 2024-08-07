@@ -35,8 +35,7 @@ Detect previously undetected threats, and minimize false positives using Microso
 
 - ***Watchlists*** - You can correlate data from a data source you provide, a watchlist, with the events in your Microsoft Sentinel environment. For example, you might create a watchlist with a list of high-value assets, terminated employees, or service accounts in your environment. Use watchlists in your search, detection rules, threat hunting, and response playbooks.
 
-- ***Workbooks*** - You can create interactive visual reports by using workbooks. Microsoft Sentinel comes with built-in workbook templates that allow you to quickly gain insights across your data as soon as you connect a data source. You can also create your own custom workbooks.
-
+- ***Workbooks*** - You can create interactive visual reports by using workbooks. After you connect data sources to Microsoft Sentinel, you can monitor the data using the Microsoft Sentinel integration with Azure Monitor Workbooks. Microsoft Sentinel comes with built-in workbook templates that allow you to quickly gain insights across your data. You can also create your own custom workbooks.
 
 #### Investigate threats
 
