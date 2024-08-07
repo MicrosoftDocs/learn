@@ -32,9 +32,9 @@ In the Azure portal, application packages can be uploaded and managed in more fe
 
     - IDs are case-preserving and case-insensitive.
 
-1. When you've entered all of the information for your application, select **Submit**.
+1. After you enter all of the information for your application, select **Submit**.
 
-After the .zip file has been uploaded to your Azure storage account, the portal displays a notification. Depending on the size of the file that you're uploading and the speed of your network connection, this process might take some time to finish.
+After the .zip file is uploaded to your Azure storage account, the portal displays a notification. Depending on the size of the file that you're uploading and the speed of your network connection, this process might take some time to finish.
 
 To add more application package versions for an existing application, select the application in the **Applications** section of your Batch account, then select **Add**. As you did for the new application, specify the **Version** value for your new package, upload your .zip file in the **Application package** box, and then select **Submit**.
 

@@ -6,7 +6,7 @@ In this module, we explore compute solutions available in Azure. We look at Azur
 
 Tailwind Traders is a fictitious home improvement retailer. The company operates retail hardware stores across the globe and online.
 
-As you work through this lesson, suppose you work for Tailwind Traders. The management team's requested your input on several development projects that need to migrate to the cloud. There are also several new projects that should be optimized for the cloud. The departmental budgets are tight. It's important to select the right compute technology for each project. Ideally, you'd like to create and configure compute resources for each project, and pay only for the resources and services used.
+As you work through this lesson, suppose you work for Tailwind Traders. The management team requested your input on several development projects that need to migrate to the cloud. There are also several new projects that should be optimized for the cloud. The departmental budgets are tight. It's important to select the right compute technology for each project. Ideally, you'd like to create and configure compute resources for each project, and pay only for the resources and services used.
 
 ## Learning objectives
 
