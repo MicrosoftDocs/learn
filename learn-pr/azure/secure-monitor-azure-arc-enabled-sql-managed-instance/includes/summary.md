@@ -5,9 +5,9 @@ You also verified that open-source solutions such as Grafana and Kibana offer in
 ## References
 
 - [Optimize administration of SQL Server instances in on-premises and multi-cloud environments by using Azure Arc](/azure/architecture/hybrid/azure-arc-sql-server)
-- [Arc-enabled SQL Managed Instance AD Authentication](/azure/azure-arc/data/active-directory-prerequisites)
-- [Deploy Active Directory-integrated Azure Arc-enabled SQL Managed Instance](/azure/azure-arc/data/deploy-active-directory-sql-managed-instance?tabs=customer-managed-keytab-mode)
-- [Deploy AD with System Managed Keytab](/azure/azure-arc/data/deploy-system-managed-keytab-active-directory-connector)
-- [Deploy AD with Customer Managed Keytab](/azure/azure-arc/data/deploy-customer-managed-keytab-active-directory-connector)
+- [SQL Server enabled by Azure Arc in Active Directory authentication with system-managed keytab - prerequisites](/azure/azure-arc/data/active-directory-prerequisites)
+- [Deploy Active Directory-integrated SQL Managed Instance enabled by Azure Arc](/azure/azure-arc/data/deploy-active-directory-sql-managed-instance?tabs=customer-managed-keytab-mode)
+- [Tutorial – Deploy Active Directory connector in system-managed keytab mode](/azure/azure-arc/data/deploy-system-managed-keytab-active-directory-connector)
+- [Tutorial – Deploy Active Directory (AD) connector in customer-managed keytab mode](/azure/azure-arc/data/deploy-customer-managed-keytab-active-directory-connector)
 - [Monitoring, log analytics, billing information, Azure portal (SQL Managed Instance)](/azure/azure-arc/data/monitoring-log-analytics-azure-portal-managed-instance)
 - [Automating Indirectly connected mode Log and Metric data uploads](/azure/azure-arc/data/upload-logs?tabs=windows#automating-uploads-optional)
