@@ -7,7 +7,7 @@ metadata:
   ms.author: jejacks
   ms.date: 01/24/2024
   ms.topic: module
-  ms.service: digital-twins
+  ms.service: azure-digital-twins
 title: Set up a mixed reality project for Azure Digital Twins in Unity 
 summary: Learn how to set up a mixed reality project and learn about Azure Digital Twins and Unity.
 abstract: |

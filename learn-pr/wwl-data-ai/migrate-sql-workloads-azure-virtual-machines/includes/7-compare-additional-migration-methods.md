@@ -12,7 +12,7 @@ There are three basic steps required to use this migration:
 1. **Create publication**: A collection of one or more articles from the database being replicated.
 1. **Create subscription**: A request from a *Subscriber* for a *Publication* from a *Publisher*.
 
-Once you complete the test and the database appears on the subscriber instance in the Azure Virtual Machine, you can direct the connections to the subscriber database. Stop and delete the replication once the data has been successfully migrated.
+Once you complete the test and the database appears on the subscriber instance in the Azure Virtual Machine, you can direct the connections to the subscriber database. Stop and delete the replication once the data successfully migrates.
 
 ## Log shipping
 
@@ -36,13 +36,13 @@ Use this method to migrate all system and user databases in an on-premises SQL S
 
 ## Import Export Wizard/BACPAC
 
-You can choose to migrate a SQL Server database to SQL Server on Azure Virtual Machine with a **.bacpac** file for the import process. This **.bacpac** file allows you to import the data from either Azure Blob storage or local storage in an on-premises location. A **.bacpac** file is a compressed file containing the metadata and data from the database.
+You can choose to migrate a SQL Server database to SQL Server on Azure Virtual Machine with a **.bacpac** file for the import process. This file allows you to import the data from either Azure Blob storage or local storage in an on-premises location. A **.bacpac** file is a compressed file containing the metadata and data from the database.
 
-For optimal scale and performance in production environments, it's  recommended to use the [SQLPackage](/sql/tools/sqlpackage/sqlpackage) utility. Running multiple SqlPackage commands in parallel for subsets of tables can significantly accelerate import/export operations.
+For optimal scale and performance in production environments, we recommend you use the [SQLPackage](/sql/tools/sqlpackage/sqlpackage) utility. Running multiple SqlPackage commands in parallel for subsets of tables can significantly accelerate import/export operations.
 
 ## SQL Server data files on Azure Storage
 
-Although this isn't a full migration approach, but rather a hybrid one, storing [SQL Server data files on Azure Storage](/sql/relational-databases/databases/sql-server-data-files-in-microsoft-azure) enables organizations to seamlessly integrate on-premises and cloud services. It can serve as a long-term strategy that allows organizations to balance their business needs and use the benefits of both on-premises and cloud solutions.
+Although this approach isn't a full migration, but rather a hybrid one, storing [SQL Server data files on Azure Storage](/sql/relational-databases/databases/sql-server-data-files-in-microsoft-azure) enables organizations to seamlessly integrate on-premises and cloud services. It can serve as a long-term strategy that allows organizations to balance their business needs and use the benefits of both on-premises and cloud solutions.
 
 Hosting on-premises SQL Server data files on Azure provides several benefits for organizations looking to migrate their data to the cloud. It simplifies the migration process by allowing for an incremental migration without requiring any application changes or new hardware.
 
@@ -54,7 +54,7 @@ Understanding the schema and data types of the table is essential for using the 
 
 ## Azure Data Factory	
 
-You can use [Azure Data Factory](/azure/data-factory/quickstart-get-started) for data migration rather than entire database migration. Azure Data Factory can migrate and transform data from source SQL Server databases. It's commonly used for merging data from multiple sources into Azure SQL Managed Instance, especially for business intelligence workloads. However, it can also be used to move data from or to SQL Server running on Azure Virtual Machine. To achieve this, data movement pipelines are created in Azure Data Factory to transfer data from the source to the destination. 
+You can use [Azure Data Factory](/azure/data-factory/quickstart-get-started) for data migration rather than entire database migration. Azure Data Factory can migrate and transform data from source SQL Server databases. It's commonly used for merging data from multiple sources into Azure SQL Managed Instance, especially for business intelligence workloads. However, it can also be used to move data from or to SQL Server running on Azure Virtual Machine. To do so, data movement pipelines are created in Azure Data Factory to transfer data from the source to the destination. 
 
 ## The Windows Import/Export Service
 

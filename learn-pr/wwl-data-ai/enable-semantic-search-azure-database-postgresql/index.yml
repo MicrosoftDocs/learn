@@ -6,7 +6,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.date: 04/29/2024
-  ms.service: postgresql
+  ms.service: azure-database-postgresql
   ms.subservice: flexible-server
   ms.topic: module
   ms.collection:

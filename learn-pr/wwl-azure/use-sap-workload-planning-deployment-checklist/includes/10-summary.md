@@ -17,7 +17,7 @@ In this module you:
 - [SAP on Azure Deployment Automation Framework](https://github.com/Azure/sap-automation)
 - [SAP OS/DB Migration to SQL Server–FAQ](https://techcommunity.microsoft.com/t5/Running-SAP-Applications-on-the/SAP-OS-DB-Migration-to-SQL-Server-8211-FAQ-v6-2-April-2017/ba-p/368070)
 - [Database Migration Option (DMO) of SUM – Introduction](https://blogs.sap.com/2013/11/29/database-migration-option-dmo-of-sum-introduction/)
-- [SAPS ratings on Azure Virtual Machines – where to look and where you can get confused](https://techcommunity.microsoft.com/t5/Running-SAP-Applications-on-the/SAPS-ratings-on-Azure-virtual machines-8211-where-to-look-and-where-you-can/ba-p/368208)
+- [SAPS ratings on Azure Virtual Machines – where to look and where you can get confused](https://techcommunity.microsoft.com/t5/Running-SAP-Applications-on-the/SAPS-ratings-on-Azure-virtual-machines-8211-where-to-look-and-where-you-can/ba-p/368208)
 - [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes)
 - [SAP HANA infrastructure configurations and operations on Azure](/azure/virtual-machines/workloads/sap/hana-vm-operations)
 - [Use the portal to attach a data disk to a Linux virtual machine](/azure/virtual-machines/linux/attach-disk-portal)

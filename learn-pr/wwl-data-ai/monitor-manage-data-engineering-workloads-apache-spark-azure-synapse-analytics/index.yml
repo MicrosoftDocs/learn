@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: module
-  ms.service: synapse-analytics
+  ms.service: azure-synapse-analytics
   ms.subservice: spark
 title: Monitor and manage data engineering workloads with Apache Spark in Azure Synapse Analytics
 summary: Learn how to monitor and manage  data engineering workloads with Apache Spark in Azure Synapse Analytics.

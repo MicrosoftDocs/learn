@@ -1,6 +1,6 @@
 Reliability & safety in AI tools are crucial because they ensure that the AI tools operate as intended, respond appropriately to unexpected situations, resist malicious manipulation, and provide consistent, trustworthy outcomes. In this video, you will learn about the importance of reliability and safety in AI tools, including the qualities of resiliency and availability.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3f3edc00-d374-4c4e-84c7-d1aef07e247f]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2281703]
 
 To build trust in AI, systems must be reliable and secure, able to handle unexpected situations, and avoid manipulation. As you learned in the video, reliability means the system can recover from issues (resilience) and is always available for users. Safety is critical; without it, there could be consequences for everyone involved. To ensure AI systems are reliable and safe, they should be thoroughly tested and follow best practices. Let's look at some of steps that you can follow to make sure an AI system is reliable and safe.
 

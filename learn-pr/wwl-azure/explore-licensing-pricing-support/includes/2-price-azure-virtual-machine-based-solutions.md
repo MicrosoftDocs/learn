@@ -15,9 +15,9 @@ The options that you can configure in the Pricing calculator vary between produc
 - **Billing options**: Billing options highlight the different ways you can pay for a service. Options can vary based on your customer type and subscription type and can include options to save costs.
 - **Support option**s: These options enable you to select extra support pricing options for certain services.
 - **Programs and offers**: Your customer or subscription type might enable you to choose from specific licensing programs or other offers.
-- **Azure Dev/Test pricing**: This option lists the available prices for development and test workloads. Dev/Test pricing applies when you run resources within an Azure subscription that's based on a Dev/Test offer.
+- **Azure Dev/Test pricing**: This option lists the available prices for development and test workloads. Dev/Test pricing applies when you run resources within an Azure subscription based on a Dev/Test offer.
 
-Keep in mind that the Pricing calculator provides estimates and *not* actual price quotes. Actual prices can vary depending upon the date of purchase, the payment currency you're using, and the type of Azure customer you're.
+Keep in mind that the Pricing calculator provides estimates and *not* actual price quotes. Actual prices can vary depending upon the date of purchase, the payment currency you're using, and the type of Azure customer you are.
 
 ## Azure TCO calculator
 
@@ -25,4 +25,4 @@ The [Azure TCO calculator](https://azure.microsoft.com/pricing/tco/calculator/) 
 
 The term *total cost of ownership* (TCO) is commonly used in finance. It can be hard to see all the hidden costs related to operating a technology capability on-premises. Software licenses and hardware are extra costs.
 
-With the TCO calculator, you enter the details of your on-premises workloads. Then you review the suggested industry average cost (which you can adjust) for related operational costs. These costs include electricity, network maintenance, and IT labor. You're then presented with a side-by-side report. Using the report, you can compare those costs with the same workloads running on Azure.
+With the TCO calculator, you enter the details of your on-premises workloads. Then, you review the suggested industry average cost (which you can adjust) for related operational costs. These costs include electricity, network maintenance, and IT labor. You then see a side-by-side report. Using the report, you can compare those costs with the same workloads running on Azure.

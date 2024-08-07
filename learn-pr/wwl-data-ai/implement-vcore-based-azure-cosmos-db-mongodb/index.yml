@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: module
-  ms.service: cosmos-db
+  ms.service: azure-cosmos-db
   ms.subservice: mongodb-vcore
   ai-usage: human-only
 title: Implement vCore-based Azure Cosmos DB for MongoDB

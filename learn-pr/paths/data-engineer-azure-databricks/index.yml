@@ -27,6 +27,7 @@ modules:
 - learn.wwl.use-apache-spark-azure-databricks
 - learn.wwl.use-delta-lake-azure-databricks
 - learn.wwl.build-data-pipeline-with-delta-live-tables
+- learn.wwl.deploy-workloads-with-databricks-workflows
 - learn.wwl.use-sql-warehouses-azure-databricks
 - learn.wwl.run-azure-databricks-notebooks-azure-data-factory
 trophy:

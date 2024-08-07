@@ -4,7 +4,7 @@ title: Add registry entries on both cluster nodes of the SAP ASCS-SCS instance
 metadata:
   title: Add registry entries on both cluster nodes of the SAP ASCS-SCS instance
   description: "Add registry entries on both cluster nodes of the SAP ASCS-SCS instance, to set idle timeout periods."
-  ms.date: 07/29/2024
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
