@@ -1,6 +1,6 @@
 ## HPC image considerations
 
-The recommended HPC image to use to build and run tightly coupled applications is the CentOS-HPC 7.8+ image, available in Azure Marketplace. This image comes pre-installed with Mellanox Openfabrics Enterprise Distribution (MOFED). The image features higher set limits, message passing (MPI) libraries (such as HPCX, OpenMPI, and Intel MPI), and the AMD-optimized CPU libraries (AOCL). All MPI libraries and numerical libraries are available via environment module files. You can create your own HPC image by using the Azure image builder or HashiCorp Packer, but you'll need to install MOFED to access the InfiniBand network.
+The recommended HPC image to use to build and run tightly coupled applications is the CentOS-HPC 7.8+ image, available in Azure Marketplace. This image comes preinstalled with Mellanox Openfabrics Enterprise Distribution (MOFED). The image features higher set limits, message passing (MPI) libraries (such as HPCX, OpenMPI, and Intel MPI), and the AMD-optimized CPU libraries (AOCL). All MPI libraries and numerical libraries are available via environment module files. You can create your own HPC image by using the Azure image builder or HashiCorp Packer, but you need to install MOFED to access the InfiniBand network.
 
 ## Compiler considerations
 
@@ -8,7 +8,7 @@ All popular compilers should work on all Azure HPC VMs. If an application's buil
 
 ### Specific to HC44
 
-The HC44 VM is a two-socket Intel Skylake processor, so we recommend using an Intel compiler if possible. If the application you're compiling is floating-point bound and you suspect the floating-point operations are dominated by fused multiply-add operations, you can try enabling AVX 512 instructions. To do so, add these compilation flags:
+The HC44 VM is a two-socket Intel Skylake processor, so we recommend using an Intel compiler if possible. If the application you're compiling is floating-point bound and you suspect fused multiply-add operations dominate the floating-point operations, you can try enabling AVX 512 instructions. To do so, add these compilation flags:
 
 ```bash
 -O3 -xHost -xCORE-AVX512
@@ -33,7 +33,7 @@ Several HPC applications have dependencies on Basic Linear Algebra Subprograms (
 
 ### Specific to HC44
 
-The best tuned BLAS, LAPACK and FFTW libraries for Intel processors is contained in the Intel Math Kernel Library (MKL). The MKL environment has scripts to build FFTW wrappers, so you can access the tuned Intel FFT library via the FFTW API.
+The best tuned BLAS, LAPACK, and FFTW libraries for Intel processors is contained in the Intel Math Kernel Library (MKL). The MKL environment has scripts to build FFTW wrappers, so you can access the tuned Intel FFT library via the FFTW API.
 
 ### Specific to HB120_v2 and HB60
 
