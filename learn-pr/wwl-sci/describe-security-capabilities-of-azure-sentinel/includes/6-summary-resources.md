@@ -10,11 +10,10 @@ Now you've completed this module, you should be able to:
 
 To find out more about any of the topics covered in this module, go to:
 
-- [Integrated threat protection with SIEM and XDR](https://www.microsoft.com/security/business/threat-protection)
-- [Microsoft Sentinel and SIEM](https://azure.microsoft.com/services/azure-sentinel/)
+
 - [What is Microsoft Sentinel?](/azure/sentinel/overview)
-- [Microsoft Sentinel pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/)
-- [Discover and manage Microsoft Sentinel out-of-the-box content](/azure/sentinel/sentinel-solutions-deploy)
-- [Microsoft Sentinel GitHub repository](https://github.com/Azure/Azure-Sentinel/tree/master/DataConnectors)
-- [Connect your data source](/azure/sentinel/data-connectors-reference),
-- [Introducing Microsoft Security Copilot](https://www.microsoft.com/security/business/ai-machine-learning/microsoft-security-copilot)
+- [About Microsoft Sentinel content and solutions](/azure/sentinel/sentinel-solutions)
+- [Microsoft Sentinel in the Microsoft Defender portal](/azure/sentinel/microsoft-sentinel-defender-portal)
+- [Connect Microsoft Sentinel to Microsoft Defender XDR](/defender-xdr/microsoft-sentinel-onboard)
+- [Introducing a Unified Security Operations Platform with Microsoft Sentinel and Defender XDR](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/introducing-a-unified-security-operations-platform-with/ba-p/3983341)
+- [Investigate Microsoft Sentinel incidents in Copilot for Security](/azure/sentinel/sentinel-security-copilot)
