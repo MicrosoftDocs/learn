@@ -1,18 +1,36 @@
-# Handling Dependency Management in Azure Databricks
-Dependency management is a critical aspect of developing scalable and maintainable data pipelines and applications in Azure Databricks. It involves managing libraries and packages that your code depends on to function correctly. Efficiently handling dependencies ensures that your Databricks environment remains stable, consistent, and capable of replicating results across different runs and environments.
+**Dependency management** involves managing **libraries** and **packages** that your code depends on to function correctly. Managing dependencies like libraries and packages is crucial to keep your environment stable and consistent, and to ensure you can replicate results across different runs and clusters.
 
-One of the primary methods for managing dependencies in Azure Databricks is through cluster libraries. Databricks allows you to install libraries directly onto clusters, either from the Databricks library UI, using the Databricks REST API, or programmatically within a notebook. Supported libraries include those from PyPI, Maven, and CRAN. This approach ensures that all nodes within a cluster have the necessary libraries pre-installed, providing a consistent runtime environment for your notebooks and jobs.
+## Manage dependencies through cluster libraries
 
-Workspace libraries are another method to manage dependencies in Azure Databricks. These libraries are available to all clusters in a workspace. By uploading libraries to the workspace, you can ensure that these dependencies are readily available for any cluster, providing a more centralized and manageable approach to dependency handling. This is particularly useful for libraries that are frequently used across multiple clusters and projects.
+You can manage dependencies in Azure Databricks primarily through **cluster libraries**. When you use cluster libraries, you ensure that all nodes within a cluster have the necessary libraries preinstalled, providing a consistent runtime environment for your notebooks and jobs.
 
-Databricks supports different modes for library installation, such as "install at cluster start" and "install on-demand." Installing at cluster start ensures that all dependencies are ready before any job or notebook starts running, minimizing the risk of runtime errors due to missing dependencies. On-demand installation, on the other hand, allows for more flexibility and can be useful in scenarios where you need to manage a large number of infrequently used libraries.
+:::image type="content" source="../media/cluster-library.png" alt-text="Screenshot of installing a library on a cluster." lightbox="../media/install-library.png":::
 
-Managing library versions is crucial to avoid conflicts and ensure compatibility between different libraries. In Azure Databricks, you can specify exact library versions to be installed, which helps in maintaining a consistent environment. Moreover, using virtual environments within Databricks can further isolate dependencies and prevent conflicts, ensuring that different projects or notebooks can coexist without interfering with each other’s dependencies.
+> [!Tip]
+> Learn more about cluster libraries and how to [install a library on a cluster](https://learn.microsoft.com/azure/databricks/libraries/cluster-libraries?azure-portal=true)
 
-Databricks Repos, which integrates with Git providers, adds another layer to dependency management. By linking your notebooks to a Git repository, you can version control your code and dependencies together. This integration allows you to track changes to your dependencies over time, collaborate more effectively with your team, and roll back to previous versions if necessary.
+### Secure your libraries
 
-Init scripts provide a powerful way to handle custom dependencies and environment configurations in Azure Databricks. These scripts run on each node at cluster startup and can be used to install libraries, configure environment variables, and set up custom settings required by your applications. Init scripts are especially useful for installing non-standard libraries or performing complex environment setup tasks that are not directly supported by the built-in library management tools.
+Libraries can be installed from various sources, like from an object stored in an Azure Data Lake Storage (ADLS) or the Databricks File System (DBFS). However, any workspace user can modify library files stored in DBFS. Therefore, you should upload all libraries to workspace files or Unity Catalog volumes and installing your dependencies from there.
 
-When managing dependencies in Azure Databricks, it’s important to follow best practices such as regularly reviewing and updating your dependencies, using consistent versioning schemes, and leveraging tools like Databricks Repos and init scripts for more complex dependency scenarios. Additionally, testing your dependency setup in development environments before deploying to production can help identify and resolve potential issues early, ensuring a smooth and reliable workflow.
+You can upload package or requirements.txt files to your workspace and reference your file when installing libraries on your clusters.
 
-By effectively managing dependencies in Azure Databricks, you can create a more robust, maintainable, and scalable data analytics environment, enabling smoother development cycles and more reliable data-driven insights.
+For example, your requirements.txt file that installs libraries necessary for machine learning can include the following list:
+
+```txt
+pandas==1.3.3
+numpy==1.21.2
+scikit-learn==0.24.2
+matplotlib==3.4.3
+```
+
+> [!Tip]
+> Learn more about how to [install libraries from workspace files](https://learn.microsoft.com/azure/databricks/libraries/workspace-files-libraries?azure-portal=true).
+
+### Specify library versions
+
+Managing library versions is crucial to avoid conflicts and ensure compatibility between different libraries. In Azure Databricks, you can specify *exact library versions* to be installed, which helps in maintaining a consistent environment.
+
+For example, when using PyPI to install scikit-learn for machine learning workloads, you can use `scikit-learn==0.19.1` to specify the version.
+
+When you manage your dependencies in Azure Databricks, you're creating robust, maintainable, and scalable data analytics environments, which lead to smoother development cycles and more reliable insights.

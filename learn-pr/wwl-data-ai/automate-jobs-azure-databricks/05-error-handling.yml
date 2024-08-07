@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.automate-jobs-azure-databricks.error-handling
-title: Handle dependency management
+title: Implement error handling and retry mechanisms
 metadata:
-  title: Handle dependency management
-  description: "Handle dependency management"
+  title: Implement error handling and retry mechanisms
+  description: "Implement error handling and retry mechanisms"
   ms.date: 08/05/2024
   author: wwlpublish
   ms.author: madiepev

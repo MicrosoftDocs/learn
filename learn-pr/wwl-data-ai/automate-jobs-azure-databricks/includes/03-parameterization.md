@@ -1,8 +1,8 @@
 When you want to scale your data engineering processes, you can run the same code with varying inputs to optimize your workflows for different datasets, environments, or use cases. To create dynamic and reusable workflows, you can pass different **parameters** to your notebooks or jobs.
 
-## Understand the benefit of using parameters
+## Understand the benefit of parameters
 
-The primary benefit of using parameters is the enhancement of reusability and maintainability of your code. By decoupling the logic from the data or environment-specific values, you can develop more modular and scalable workflows.
+The primary benefit of parameters is the enhancement of reusability and maintainability of your code. By decoupling the logic from the data or environment-specific values, you can develop more modular and scalable workflows.
 
 Parameterization also simplifies testing and debugging, as you can easily switch between different parameter sets to validate your code's behavior under various conditions. Parameterization also supports better collaboration among team members, as they can use the same notebook or job with their own parameter values.
 
