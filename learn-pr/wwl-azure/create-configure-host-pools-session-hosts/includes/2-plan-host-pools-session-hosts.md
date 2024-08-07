@@ -14,9 +14,8 @@ To deploy Azure Virtual Desktop, you need to assign the relevant Azure role-base
 
 Also make sure you've registered the *Microsoft.DesktopVirtualization* resource provider for your subscription. To check the status of the resource provider and register if needed, select the relevant tab for your scenario and follow the steps.
 
-Important
-
-You must have permission to register a resource provider, which requires the \*/register/action operation. This is included if your account is assigned the [contributor or owner role](/azure/role-based-access-control/built-in-roles) on your subscription.
+> [!IMPORTANT]
+> You must have permission to register a resource provider, which requires the \*/register/action operation. This is included if your account is assigned the [contributor or owner role](/azure/role-based-access-control/built-in-roles) on your subscription.
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/).
 2.  Select Subscriptions.
@@ -33,8 +32,6 @@ To access desktops and applications from your session hosts, your users need to 
 ### Session hosts
 
 You need to join session hosts that provide desktops and applications to the same Microsoft Entra tenant as your users, or an Active Directory domain (either AD DS or Microsoft Entra Domain Services).
-
-Note
 
 For Azure Stack HCI, you can only join session hosts to an Active Directory Domain Services domain.
 
