@@ -23,7 +23,7 @@ quiz:
       explanation: "Incorrect. Manually updating the workspace content isn't necessary as it updates automatically."
     - content: "Unsubscribe and then resubscribe to the workspace"
       isCorrect: false
-      explanation: "Incorrect. Unsubscribing and resubscribing isn't required for automatic updates."
+      explanation: "Incorrect. Unsubscribing and resubscribing aren't required for automatic updates."
     - content: "Subscribe to a workspace"
       isCorrect: true
       explanation: "Correct. Once subscribed to a workspace, its content will update automatically regularly and each time the client is started."

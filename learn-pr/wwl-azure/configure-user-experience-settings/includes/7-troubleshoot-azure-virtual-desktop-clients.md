@@ -42,7 +42,7 @@ To retrieve the client logs:
 2.  Open **File Explorer**.
 3.  Navigate to the **%temp%\\DiagOutputDir\\RdClientAutoTrace** folder.
 
-The logs are in the.ETL file format. You can convert to .CSV or .XML to make them easily readable by using the tracerpt command. Find the name of the file you want to convert and make a note of it.
+The logs are in the.ETL file format. You can convert to .CSV or .XML to make them easily readable by using the `tracerpt` command. Find the name of the file you want to convert and make a note of it.
 
 To convert the .ETL file to .CSV, open PowerShell and run the following, replacing the value for `$filename` with the name of the file you want to convert (without the extension) and `$outputFolder` with the directory in which to create the .CSV file.
 
@@ -53,7 +53,7 @@ cd $env:TEMP\DiagOutputDir\RdClientAutoTrace
 tracerpt "$filename.etl" -o "$outputFolder\$filename.csv" -of csv
 ```
 
-To convert the .ETL file to .XML, open Command Prompt or PowerShell and run the following, replacing &lt;filename&gt; with the name of the file you want to convert and $outputFolder with the directory in which to create the .XML file.
+To convert the .ETL file to .XML, open Command Prompt or PowerShell and run the following, replacing `<filename>` with the name of the file you want to convert and $outputFolder with the directory in which to create the .XML file.
 
 ```powershell
 $filename = "<filename>"
