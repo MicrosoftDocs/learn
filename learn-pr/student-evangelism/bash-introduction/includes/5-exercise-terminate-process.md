@@ -1,6 +1,6 @@
 Computers are imperfect. Sooner or later, something *will* go wrong. That's why you have a job as a sysadmin; it's up to you to troubleshoot and fix system problems.
 
-Imagine that a Python application is causing problems. Perhaps it's taking up too much CPU time, or maybe it has stopped responding. In either case, you want to stop the application. To identify a process or application, you can use `ps` and `grep`. Then, to stop it, you can use the `kill` command. Let's practice this in your Linux virtual machine.
+Imagine that a Python application is causing problems. Perhaps it's taking up too much CPU time, or maybe it stopped responding. In either case, you want to stop the application. To identify a process or application, you can use `ps` and `grep`. Then, to stop it, you can use the `kill` command. Let's practice this in your Linux virtual machine.
 
 ## Start a misbehaving process
 

@@ -3793,4 +3793,13 @@ achievements:
   title: Develop and configure an ASP.NET application that queries an Azure SQL database
   summary: Create a database on Azure SQL Database to store data for an application, and create an ASP.NET application to query data from the database.
   iconUrl: /training/achievements/develop-app-that-queries-azure-sql.svg
-  
+- uid: learn.introduction-to-azure-web-pubsub.badge
+  type: badge
+  title: Introduction to Azure Web PubSub
+  summary: Learn about adding real-time messaging and communication functionality to your web application by using Azure Web PubSub. Describe client connections to the service using WebSocket protocol and the publish-subscribe pattern.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.build-chat-app-web-pubsub.badge
+  type: badge
+  title: Build your first real-time chat app by using Azure Web PubSub and Azure Static Web Apps
+  summary: Use Azure Web PubSub and Azure Static Web Apps to build a real-time messaging app!
+  iconUrl: /learn/achievements/generic-badge.svg
