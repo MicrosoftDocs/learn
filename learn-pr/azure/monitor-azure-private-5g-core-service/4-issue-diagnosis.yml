@@ -4,9 +4,9 @@ title: Issue diagnosis
 metadata:
   title: Issue diagnosis
   description: Azure Private 5G Core provides a distributed tracing tool, with which you can analyze network activities of each site and diagnose network issues.
-  ms.date: 10/27/2022
-  author: lnyswonger
-  ms.author: lnyswonger
+  ms.date: 07/31/2024
+  author: joemarshall
+  ms.author: joemarshall
   ms.topic: unit
 durationInMinutes: 11
 content: |
