@@ -28,10 +28,10 @@ products:
 - azure-databricks
 units:
 - learn.wwl.optimize-performance-with-spark-and-delta-live-tables.introduction
-- learn.wwl.optimize-performance-with-spark-and-delta-live-tables.optimize-performance-with-spark-and-delta-live-tables
+- learn.wwl.optimize-performance-with-spark-and-delta-live-tables.use-serverless-compute-and-parallelism-with-delta-live-tables
 - learn.wwl.optimize-performance-with-spark-and-delta-live-tables.perform-cost-based-optimization-and-query-performance
 - learn.wwl.optimize-performance-with-spark-and-delta-live-tables.use-change-data-capture
-- learn.wwl.optimize-performance-with-spark-and-delta-live-tables.leverage-enhanced-autoscaling
+- learn.wwl.optimize-performance-with-spark-and-delta-live-tables.use-enhanced-autoscaling
 - learn.wwl.optimize-performance-with-spark-and-delta-live-tables.implement-observability-and-data-quality-metrics
 - learn.wwl.optimize-performance-with-spark-and-delta-live-tables.exercise
 - learn.wwl.optimize-performance-with-spark-and-delta-live-tables.knowledge-check
