@@ -1,6 +1,6 @@
-In this module, you learned about the security defenses available to protect your company’s digital estate. You also discovered the key security operation areas that Microsoft Sentinel supports and how it integrates with your existing security systems. You get a single solution for alert detection, threat visibility, proactive hunting, and threat response.  You also learned about Microsoft Security Copilot.
+In this module, you learned about the security defenses available to protect your company’s digital estate. You also discovered the key security operation areas that Microsoft Sentinel supports and how it integrates with your existing security systems. You get a single solution for alert detection, threat visibility, proactive hunting, and threat response. You also learned about Microsoft Security Copilot.
 
-Now you've completed this module, you should be able to:
+Now that you've completed this module, you're able to:
 
 - Describe the security concepts for SIEM and SOAR.
 - Describe how Microsoft Sentinel provides threat detection and mitigation.
