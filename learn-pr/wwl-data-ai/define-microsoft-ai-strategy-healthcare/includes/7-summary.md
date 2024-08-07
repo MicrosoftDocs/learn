@@ -4,9 +4,10 @@ To achieve these goals, Microsoft offers a wide range of services. Microsoft Clo
 
 Now that you have reviewed this module, you should be able to:
 
-* Identify AI use cases in healthcare.
-* Examine available AI tools and resources for healthcare scenarios.
-* Discover insights from healthcare-specific AI success stories.
+* Describe goals and challenges in life sciences, pharmacology, and healthcare
+* Identify opportunities for AI in life sciences, pharmacology, and healthcare
+* Describe common use cases in life sciences, pharmacology, and healthcare
+* Explore how Microsoft AI technologies can help health providers
 
 ## Use these resources to discover more
 
