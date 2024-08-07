@@ -6,7 +6,7 @@ Locally at each site, you can use the packet core dashboards to do real-time mon
 
 To diagnose network issues for a site in your network, you can use the distributed tracing tool.
 
-Now you've learned the tools for monitoring a private mobile network and the tool for troubleshooting network issues. You should be able to select an appropriate monitoring or troubleshooting tool based on the business requirements of an enterprise. After determining the tool, you'll need to design the monitoring and troubleshooting strategies for the enterprise.
+Now that you learned the tools for monitoring a private mobile network and the tool for troubleshooting network issues. You should be able to select an appropriate monitoring or troubleshooting tool based on the business requirements of an enterprise. After determining the tool, you need to design the monitoring and troubleshooting strategies for the enterprise.
 
 ## References
 
