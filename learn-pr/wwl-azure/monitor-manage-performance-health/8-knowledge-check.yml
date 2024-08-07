@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/02/2024
+  ms.date: 08/07/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
@@ -20,21 +20,21 @@ quiz:
     choices:
     - content: "They should run the qwinsta command again."
       isCorrect: false
-      explanation: "Incorrect. Running the qwinsta command again will not help in collecting the RemoteFX Graphics performance counters."
+      explanation: "Incorrect. Running the qwinsta command again won't help in collecting the RemoteFX Graphics performance counters."
     - content: "They should restart the remote session."
       isCorrect: false
-      explanation: "Incorrect. Restarting the remote session is not necessary for collecting the RemoteFX Graphics performance counters."
+      explanation: "Incorrect. Restarting the remote session isn't necessary for collecting the RemoteFX Graphics performance counters."
     - content: "They should select Start &gt; Administrative Tools &gt; Performance Monitor, expand Monitoring Tools, select Performance Monitor, and then select Add."
       isCorrect: true
       explanation: "Correct. This sequence of actions will lead them to the Add Counters dialog box where they can select and add the RemoteFX Graphics performance counters."
-  - content: "A system administrator is tasked with setting up diagnostics for an Azure Virtual Desktop workspace. They notice that diagnostics are not enabled and an error message appears. What should the administrator do to enable the supported diagnostics tables?"
+  - content: "A system administrator is tasked with setting up diagnostics for an Azure Virtual Desktop workspace. They notice that diagnostics aren't enabled and an error message appears. What should the administrator do to enable the supported diagnostics tables?"
     choices:
     - content: "They should disable the Azure Virtual Desktop workspace and re-enable it"
       isCorrect: false
-      explanation: "Incorrect. Disabling and re-enabling the workspace will not enable the necessary diagnostics tables."
+      explanation: "Incorrect. Disabling and re-enabling the workspace won't enable the necessary diagnostics tables."
     - content: "They should ignore the error message and proceed with the setup"
       isCorrect: false
-      explanation: "Incorrect. Ignoring the error message will not enable the necessary diagnostics tables."
+      explanation: "Incorrect. Ignoring the error message won't enable the necessary diagnostics tables."
     - content: "They should enable the following supported diagnostics tables: Management Activities Feed, Errors, Checkpoints"
       isCorrect: true
       explanation: "Correct. Enabling these specific diagnostics tables will allow the administrator to properly monitor the Azure Virtual Desktop workspace."
@@ -45,18 +45,18 @@ quiz:
       explanation: "Incorrect. While Azure Monitor can be used to access logs, the scenario specifically mentions accessing Log Analytics workspace."
     - content: "They should wait for a few hours for the data to be available and then directly access the data from the diagnostics setup."
       isCorrect: false
-      explanation: "Incorrect. Although it might take a few hours for the data to be available, they cannot access the data directly from the diagnostics setup."
+      explanation: "Incorrect. Although it might take a few hours for the data to be available, they can't access the data directly from the diagnostics setup."
     - content: "They should sign in to the Azure portal, search for 'Log Analytics workspace', select it under Services, and choose the workspace they configured for their Azure Virtual Desktop object."
       isCorrect: true
       explanation: "Correct. This is the procedure to access the Log Analytics workspace on the Azure portal."
-  - content: "An IT professional is tasked with setting up Azure Virtual Desktop Insights to monitor their Azure Virtual Desktop environments. What is the minimum Azure role based access control (RBAC) roles they need to have assigned?"
+  - content: "An IT professional is tasked with setting up Azure Virtual Desktop Insights to monitor their Azure Virtual Desktop environments. What are the minimum Azure role based access control (RBAC) roles they need to have assigned?"
     choices:
     - content: "Desktop Virtualization Writer and Log Analytics Writer"
       isCorrect: false
-      explanation: "Incorrect. While these roles exist, they are not the minimum required for monitoring Azure Virtual Desktop Insights."
+      explanation: "Incorrect. While these roles exist, they aren't the minimum required for monitoring Azure Virtual Desktop Insights."
     - content: "Desktop Virtualization Reader and Log Analytics Writer"
       isCorrect: false
-      explanation: "Incorrect. The Log Analytics Writer role is not necessary for monitoring Azure Virtual Desktop Insights."
+      explanation: "Incorrect. The Log Analytics Writer role isn't necessary for monitoring Azure Virtual Desktop Insights."
     - content: "Desktop Virtualization Reader and Log Analytics Reader"
       isCorrect: true
       explanation: "Correct. These are the minimum RBAC roles required for monitoring Azure Virtual Desktop Insights."
