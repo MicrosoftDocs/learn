@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: perform-incremental-processing-with-spark-structured-streaming
+uid: learn.wwl.perform-incremental-processing-with-spark-structured-streaming
 metadata:
   title: Perform incremental processing with spark structured streaming
   description: "Learn about spark structured streaming and ways to optimize and use it to populate destination objects"
