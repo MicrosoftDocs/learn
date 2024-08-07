@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/02/2024
+  ms.date: 08/07/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
@@ -13,3 +13,50 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What should be used to replicate Azure Virtual Desktop virtual machines to the secondary location?"
+    choices:
+    - content: "Deploy Azure Site Recovery"
+      isCorrect: true
+      explanation: "That's correct. You can configure all your VMs for both pooled and personal host pools with Azure Site Recovery. With this method, you'll only need to set up one host pool and its related app groups and workspaces."
+    - content: "Deploy Azure Load Balancer"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Load Balancer operates at layer 4 of the Open Systems Interconnection (OSI) model. It's the single point of contact for clients. Load balancer distributes inbound flows that arrive at the load balancer's front end to backend pool instances."
+    - content: "Azure Role-based access control (RBAC)"
+      isCorrect: false
+      explanation: "That's incorrect. Azure role-based access control (Azure RBAC) is the authorization system you use to manage access to Azure resources. To grant access, you assign roles to users, groups, service principals, or managed identities at a particular scope."
+  - content: "A developer is tasked with creating a system that can automatically manage and validate the creation and teardown of environments for application hosting. What technology enables this?"
+    choices:
+    - content: "Identity provider"
+      isCorrect: false
+      explanation: "Incorrect. An Identity provider manages user identities, not environments."
+    - content: "Storage"
+      isCorrect: false
+      explanation: "Incorrect. Storage refers to saving and organizing data, not managing environments."
+    - content: "Backup"
+      isCorrect: true
+      explanation: "Correct. Backup systems can automate and validate the creation and teardown of environments."
+  - content: "A team is planning for disaster recovery for Azure Virtual Desktop. They want to replicate their virtual machines to a secondary location. Which service should they use to manage this replication?"
+    choices:
+    - content: "Azure Cost Management"
+      isCorrect: false
+      explanation: "Incorrect. Azure Cost Management is used for monitoring costs, not for managing VM replication."
+    - content: "Azure Backup"
+      isCorrect: false
+      explanation: "Incorrect. Azure Backup is used for data backup and restore, not for managing VM replication."
+    - content: "Azure Site Recovery"
+      isCorrect: true
+      explanation: "Correct. Azure Site Recovery is used to manage the replication of virtual machines to other Azure locations."
+  - content: "A developer is tasked with creating a system that can automatically manage and validate the creation and teardown of environments for application hosting. What technology enables this?"
+    choices:
+    - content: "Identity provider"
+      isCorrect: false
+      explanation: "Incorrect. An Identity provider manages user identities, not environments."
+    - content: "Storage"
+      isCorrect: false
+      explanation: "Incorrect. Storage refers to saving and organizing data, not managing environments."
+    - content: "Backup"
+      isCorrect: true
+      explanation: "Correct. Backup systems can automate and validate the creation and teardown of environments."

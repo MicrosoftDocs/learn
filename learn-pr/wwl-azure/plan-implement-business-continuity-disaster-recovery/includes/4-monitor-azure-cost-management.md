@@ -6,7 +6,7 @@ Forecast costs are shown in cost analysis areas for area and stacked column view
 
 In the Azure portal, navigate to cost analysis for your scope. For example: C**ost Management + Billing &gt; Cost Management &gt; Cost analysis.**
 
-In the default view, the top chart has the Actual/Amortized cost and forecast cost sections. The solid color of the chart shows your Actual/Amortized cost. The shaded color shows the forecast cost. :::image type="content" source="../media/enrollment-forecast-50ac51d3-46086196-9ed48f0a-7a7cdd58.png" alt-text="Screenshot showing Forecast cost in cost analysis.":::
+In the default view, the top chart has the Actual/Amortized cost and forecast cost sections. The solid color of the chart shows your Actual/Amortized cost. The shaded color shows the forecast cost.:::image type="content" source="../media/enrollment-forecast-50ac51d3-46086196-9ed48f0a-7a7cdd58.png" alt-text="Screenshot showing Forecast cost in cost analysis.":::
 
 
 ## View forecast costs grouped by service
@@ -15,7 +15,7 @@ The default view doesn't show forecast costs group by a service, so you have to 
 
 The view shows your costs grouped for each service. The forecast cost isn't calculated for each service. It's projected for the Total of all your services.
 
-:::image type="content" source="../media/forecast-group-by-service-f04602e6-407bd57b-88dd9d37-5272c41a.png" alt-text="Screenshot showing Grouped and forecast cost.png":::
+:::image type="content" source="../media/forecast-group-by-service-f04602e6-407bd57b-88dd9d37-5272c41a.png" alt-text="Screenshot showing Grouped and forecast cost.":::
 
 
 ## View forecast costs for a service
