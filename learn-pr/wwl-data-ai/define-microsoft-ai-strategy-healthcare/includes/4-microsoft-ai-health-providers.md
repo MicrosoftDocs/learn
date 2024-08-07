@@ -26,7 +26,6 @@ There are many healthcare scenarios that benefit from improved interactions:
 * **Better virtual assistants**: Many available Microsoft tools use AI to help users in a conversational format. For example, Azure OpenAI Services, Azure AI Services, Dynamics 365 Copilot, Power Virtual Agents, or AI in Power Platform. For healthcare professionals, it means a helping hand to process and organize patient records, medical research, and operational data. For patients, it offers them a new chat service, in which they can ask deeper questions about health topics before consulting with physicians. This service would help patients get quicker responses and would liberate doctors by screening consultations.
 * **Onboarding and help desks for doctors**: These applications help doctors find the most pertinent training materials, protocols, and patient information. Azure AI Services, and Azure OpenAI Services in particular, can power these solutions.
 
-
 ## AI amplifies automation
 
 New generation AI, including generative AI, is taking document AI technologies to the next level. This progress allows for further, smarter automation.

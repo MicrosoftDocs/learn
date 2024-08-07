@@ -18,7 +18,7 @@ quiz:
   questions:
   - content: "Which statement is true about using health data in an AI solution?"
     choices:
-    - content: "You don’t need to use health data in an AI system. AI models are pre-trained and do not rely on your organization’s data."
+    - content: "You don’t need to use health data in an AI system. AI models are pretrained and do not rely on your organization’s data."
       isCorrect: false
       explanation: "Incorrect. XXXX."
     - content: "Your solution must take into account the need to protect sensitive data, ensuring that it is stored, exchanged, and used securely."

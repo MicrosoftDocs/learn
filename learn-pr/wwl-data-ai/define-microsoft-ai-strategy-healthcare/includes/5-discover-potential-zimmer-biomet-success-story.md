@@ -8,7 +8,7 @@ Their solutions serve **orthopedic patients** and healthcare professionals treat
 
 ## The challenge
 
-In the last period, the healthcare industry has faced workforce shortages<sup>3</sup> and burnout,<sup>4</sup> increased labor expenses, supply disruptions, the impact of inflation, and overall losses and operating margin decline.<sup>5</sup> This context makes **increasing productivity** and technological efficiency a top priority for businesses in the sector.
+In the last period, the healthcare industry faced workforce shortages<sup>3</sup> and burnout,<sup>4</sup> increased labor expenses, supply disruptions, the impact of inflation, and overall losses and operating margin decline.<sup>5</sup> This context makes **increasing productivity** and technological efficiency a top priority for businesses in the sector.
 
 Besides, there’s a growing demand for **decentralized care**. Orthopedic patients often experience limited mobility, so it’s fundamental to minimize the times they need to move to the hospital or any other healthcare facility.
 
