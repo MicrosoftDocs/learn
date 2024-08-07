@@ -9,6 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
+  adobe-target: true
   ms.service: azure-application-gateway
   ai-usage: human-only
 title: Load balance HTTP(S) traffic in Azure
