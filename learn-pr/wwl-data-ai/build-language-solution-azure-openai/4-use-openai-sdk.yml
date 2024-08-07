@@ -2,7 +2,7 @@
 uid: learn.wwl.build-language-solution-azure-openai.use-openai-sdk
 title: Use Azure OpenAI SDK
 metadata:
-  title: learning-content
+  title: Use Azure OpenAI SDK
   description: Understand how to use the C# and Python SDKs to connect to the available endpoints of an Azure OpenAI resource.
   author: ivorb
   ms.author: berryivor
