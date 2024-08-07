@@ -16,4 +16,4 @@ The topics covered in this module include:
 
 ## Goals
 
-By the end of this module, you are able to confidently secure your Azure Virtual Desktop deployments, ensuring the safety of your users and the integrity of your organization's data.
+By the end of this module, you're able to confidently secure your Azure Virtual Desktop deployments, ensuring the safety of your users and the integrity of your organization's data.
