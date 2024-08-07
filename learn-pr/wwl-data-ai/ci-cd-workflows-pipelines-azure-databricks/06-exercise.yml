@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.ci-cd-workflows-pipelines-azure-databricks.exercise
-title: Exercise - Implement CI/CD pipelines
+title: Exercise - Implement CI/CD workflows
 metadata:
-  title: Exercise - Implement CI/CD pipelines
-  description: "Exercise - Implement CI/CD pipelines"
+  title: Exercise - Implement CI/CD workflows
+  description: "Exercise - Implement CI/CD workflows"
   ms.date: 08/01/2024
   author: wwlpublish
   ms.author: madiepev
