@@ -12,6 +12,6 @@ AI can be a powerful accelerant for the scale and pace of sustainability solutio
 
 > [!TIP]
 > Take a moment to identify the goals and challenges specific to your organization.
-> ![Image showing people working and talking around a table.](../media/2-reflection.jpg)
+> ![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
 
 Next, let’s find out specific scenarios in which Microsoft AI can power your sustainability initiatives.
