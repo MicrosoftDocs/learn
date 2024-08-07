@@ -42,14 +42,9 @@ A workspace combines all the desktops and applications that have been made avail
     
     
      -  If you selected **Subscribe**, sign in with your user account when prompted, for example user@contoso.com. After a few seconds, your workspaces should show the desktops and applications that have been made available to you by your admin.
-     -  | **Azure environment**       | **Workspace URL**                                |
-        | --------------------------- | ------------------------------------------------ |
-        | Azure cloud *(most common)* | https://rdweb.wvd.microsoft.com                  |
-        | Azure for US Government     | https://rdweb.wvd.azure.us/api/arm/feeddiscovery |
-        | Azure operated by 21Vianet  | https://rdweb.wvd.azure.cn/api/arm/feeddiscovery |
 
-1.  Select **Next**.
-2.  Sign in with your user account when prompted. After a few seconds, the workspace should show the desktops and applications that have been made available to you by your admin.
+3.  Select **Next**.
+4.  Sign in with your user account when prompted. After a few seconds, the workspace should show the desktops and applications that have been made available to you by your admin.
 
 Once you've subscribed to a workspace, its content will update automatically regularly and each time you start the client. Resources may be added, changed, or removed based on changes made by your admin.
 

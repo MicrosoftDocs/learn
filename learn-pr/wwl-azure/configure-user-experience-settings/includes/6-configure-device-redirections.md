@@ -21,7 +21,7 @@ Set the following RDP property to configure audio input redirection:
 Set the following RDP property to configure audio output redirection:
 
  -  `audiomode:i:0` enables audio output redirection.
- -  `audiomode:i:1` or audiomode:i:2 disable audio output redirection.
+ -  `audiomode:i:1` or audiomode:i:2 disables audio output redirection.
 
 ### Camera redirection
 
