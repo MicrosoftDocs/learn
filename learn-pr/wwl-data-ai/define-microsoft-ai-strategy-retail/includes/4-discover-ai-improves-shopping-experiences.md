@@ -18,7 +18,7 @@ Grocery stores like Żabka are noticing that customer needs are changing in rece
 
 These new Nano stores incorporate AI features. They use Microsoft AI products for customer vision to track customer behavior and product selection. The result is what they call a **“phygital” experience**, which takes the benefits of digital AI to physical stores in real time.
 
-In these **unstaffed stores**, the technology serves many of the services usually performed by a clerk. For example, check-out is autonomous, and the system automatically communicates with customers via an app. These functionalities help with labor shortages.
+In these **unstaffed stores**, the technology serves many of the services performed by clerks. For example, check-out is autonomous, and the system automatically communicates with customers via an app. These functionalities help with labor shortages.
 
 Żabka implemented a **tracking and fidelity system** for their customers. It sends customized offers to regular customers who haven’t been to the stores in a while for them to come back. The AI solution also rewards those clients who return to the stores daily with free products and discounts.
 
