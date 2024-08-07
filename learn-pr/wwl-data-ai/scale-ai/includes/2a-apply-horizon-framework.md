@@ -49,8 +49,8 @@ As you invest in initiatives, it's important to develop market and financial mod
 
 Moving forward, we advise putting systemic processes in place to manage and evaluate value throughout the project lifecycle. We recommend taking an agile approach that happens in stages—after you invest in an initiative, evaluate the initial results. Then you can determine whether to continue, adjust your approach, or take another path. Continue to evaluate value at major milestones throughout the project.
 
+Next, let’s take a look at the AI-related roles and responsibilities that should be established in every AI organization.
+
 > [!TIP]
 > Take a moment to come up with some potential example investments for each of the 3 horizons.
-> ![Image showing people working and talking around a table.](../media/Discussion.jpg)
-
-Next, let’s take a look at the AI-related roles and responsibilities that should be established in every AI organization.
+> ![Image showing people working and talking around a table.](../media/2-Reflection.jpg)

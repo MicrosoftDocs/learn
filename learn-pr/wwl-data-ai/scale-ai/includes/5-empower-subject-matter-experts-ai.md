@@ -32,8 +32,9 @@ Research-related use cases are numberless and apply in almost every industry. In
 > [!NOTE] 
 > Gartner predicts that, by 2025, large organizations will leverage generative AI to create 30 percent of their outbound marketing messages.<sup>4</sup>
 
+Next, let’s wrap up everything you’ve learned with a knowledge check.
+
 > [!TIP]
 > Take a moment to consider how subject matter experts in your organization use AI to expand their impact.
-> ![Image showing people working and talking around a table.](../media/Discussion.jpg)
+> ![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
 
-Next, let’s wrap up everything you’ve learned with a knowledge check.
