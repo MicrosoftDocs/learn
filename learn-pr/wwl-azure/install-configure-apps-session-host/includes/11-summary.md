@@ -1,7 +1,7 @@
 In this module, you learned how to:
 
  -  Describe MSIX app attach for Azure Virtual Desktop.
- -  Explain How MSIX app attach works.
+ -  Explain how MSIX app attach works.
  -  Set up a file share for MSIX app attach.
  -  Use the OneDrive sync app on Azure Virtual Desktops.
  -  Use Microsoft Teams on Azure Virtual Desktop.
