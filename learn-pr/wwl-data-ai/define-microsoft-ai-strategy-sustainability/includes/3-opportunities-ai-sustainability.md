@@ -16,7 +16,7 @@ A sustainability priority in the energy sector is to integrate new sources of **
 
 Second, another priority is to **reduce emissions of oil and gas** in production sites. AI and Internet of Things (IoT) technologies make this goal viable. For example, Accenture and Microsoft help identify and remedy methane leaks using AI anomaly detection models.<sup>4</sup> In this project, developers used [Microsoft SynapseML](https://microsoft.github.io/SynapseML/) to build a fully scalable, distributed AI system.
 
-Third, **predictive maintenance** is another fruitful strategy to protect the environment in the energy industry. AI can forecast when drills or other machinery will start malfunctioning. This prediction enables us to repair or replace assets before an accident interrupts operations and causes environmental or human damage. For instance, Schneider Electric uses Azure Machine Learning to do predictive maintenance in their pumps and other oil field equipment.<sup>5</sup>
+Third, **predictive maintenance** is another fruitful strategy to protect the environment in the energy industry. AI can forecast when drills or other machinery might start malfunctioning. This prediction enables us to repair or replace assets before an accident interrupts operations and causes environmental or human damage. For instance, Schneider Electric uses Azure Machine Learning to do predictive maintenance in their pumps and other oil field equipment.<sup>5</sup>
 
 ## Industry
 

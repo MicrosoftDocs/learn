@@ -8,15 +8,15 @@ The DNR oversees 5.6 million acres of public lands. Furthermore, it manages a la
 
 ## The challenge
 
-Within the DNR, the Aquatic Resources Division conducts several programs for overseeing 2.6 million acres of submerged aquatic lands. Among them, the **Nearshore Habitat Program** gathers hundreds of hours of underwater video footage a year to monitor marine vegetation. One of the goals is to track the abundance and distribution of native eelgrass, a species of seagrass.
+Within the DNR, the Aquatic Resources Division conducts several programs for overseeing 2.6 million acres of submerged aquatic lands. Among them, the **Nearshore Habitat Program** gathers hundreds of hours of underwater video footage a year to monitor marine vegetation. One of the goals is to track the abundance and distribution of native eel grass, a species of sea grass.
 
-This task involves analyzing around 350 hours of video footage, **identifying, classifying, and geolocating eelgrass**. The process required the manual work of two scientists and congested their workloads for three months. This process was a waste of highly specialized, valuable resources.
+This task involves analyzing around 350 hours of video footage, **identifying, classifying, and geolocating eel grass**. The process required the manual work of two scientists and congested their workloads for three months. This process was a waste of highly specialized, valuable resources.
 
 ![Image showing an ocean shoreline.](../media/5-shore.jpg)
 
 ## The solution
 
-The experts of the Nearshore Habitat Program decided to partner with Microsoft to solve this problem with AI. They found that the best approach was **automated video classification**, using AI models to identify eelgrass.
+The experts of the Nearshore Habitat Program decided to partner with Microsoft to solve this problem with AI. They found that the best approach was **automated video classification**, using AI models to identify eel grass.
 
 The technical basis for the use case is **Azure AI Services**’ functionalities for image recognition. The video is uploaded to Azure, split into frames, and analyzed by the models included in Azure AI Services. The models are managed, built, and deployed in **Azure Machine Learning**, so the task can be done by any scientist instead of data scientists. Finally, the team uses **Microsoft Power BI** to create reports of the results.
 

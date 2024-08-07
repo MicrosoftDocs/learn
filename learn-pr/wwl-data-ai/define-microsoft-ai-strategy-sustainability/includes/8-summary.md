@@ -2,7 +2,7 @@ The world needs sustainability solutions to build a better future. We must rethi
 
 Microsoft offers a wide range of AI products and services to enable these sustainability scenarios. Microsoft Cloud for Sustainability is tailored to the sector’s needs, but you can also use Azure Machine Learning and Azure AI Services, among others. The latest generative AI models are also available via Azure OpenAI Services.
 
-Now that you have reviewed this module, you should:
+Now that you've reviewed this module, you should:
 
 * Identify goals and challenges for sustainability
 * Identify opportunities for AI in sustainability

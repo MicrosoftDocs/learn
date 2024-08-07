@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/06/2024
+  ms.date: 08/07/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -18,7 +18,7 @@ quiz:
   questions:
   - content: "What is the biggest challenge in AI systems for sustainability and how can organizations deal with it?"
     choices:
-    - content: "AI systems are not suited to sustainability scenarios. You should use manual efforts to address sustainability use cases."
+    - content: "AI systems aren't suited to sustainability scenarios. You should use manual efforts to address sustainability use cases."
       isCorrect: false
       explanation: "Incorrect. AI systems can be powerful aids in sustainability scenarios."
     - content: "Sustainability scenarios often require highly technical expertise on climate science, ecology, and so on. You should focus on automating less technical tasks."

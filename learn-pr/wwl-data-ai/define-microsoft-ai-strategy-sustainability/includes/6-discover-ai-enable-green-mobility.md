@@ -8,7 +8,7 @@ SWM is committed to making Munich greener. It generates green electricity to cov
 
 ## The challenge
 
-Munich is a hectic city with a population of more than one and a half Million inhabitants. Operating its bus system is demanding, with 500 buses circulating during peak times. The electric buses must have autonomy to run at least 280 km. on a single charge. Considering that it takes 3-4 hours to charge a bus, charging must take place between closing down and restarting service. So, the whole **bus charging system** is synchronized to a tight schedule, which leaves little place for repairs and unexpected events.
+Munich is a hectic city with a population of more than one and a half Million inhabitants. Operating its bus system is demanding, with 500 buses circulating during peak times. The electric buses must have autonomy to run at least 280 km on a single charge. Considering that it takes 3-4 hours to charge a bus, charging must take place between closing down and restarting service. So, the whole **bus charging system** is synchronized to a tight schedule, which leaves little place for repairs and unexpected events.
 
 Besides, any solution must be scalable. SWM manages **vast amounts of data**: each subway train alone sends over 2,000 data points every 10 seconds; geothermal solutions gather five gigabytes of data every hour, as do each of the 30 digitized areas of infrastructure. The organization requires a robust platform capable of operating with such volumes of data, such as Microsoft Azure.
 
@@ -31,4 +31,4 @@ Additionally, the solution improves the **charging load management system**. Sin
 
 To learn more, read [SWM relies on Azure IoT, artificial intelligence, and big data analyses](https://aka.ms/stadtwerke-customer-story).
 
-Next, let’s wrap up everything you’ve learned with a knowledge check.
+Next, let’s wrap up everything you learned with a knowledge check.
