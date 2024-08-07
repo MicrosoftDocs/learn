@@ -15,6 +15,19 @@ When pairing the ODFC container with third party roaming profile solutions, ensu
     
 5.  **Go** to: HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\FSLogix\\ODFC.
 6.  **Add** these settings:
+    
+    | **Key Name**                 | **Data Type**            | **Value**                                                                                                        | **Description** |
+    | ---------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------- | --------------- |
+    | **Enabled**                  | **DWORD**                | **1**                                                                                                            | **REQUIRED**    |
+    | FlipFlopProfileDirectoryName | DWORD                    | 1                                                                                                                | Recommended     |
+    | IncludeTeams                 | DWORD                    | 1                                                                                                                | Recommended     |
+    | LockedRetryCount             | DWORD                    | 3                                                                                                                | Recommended     |
+    | LockedRetryInterval          | DWORD                    | 15                                                                                                               | Recommended     |
+    | ReAttachIntervalSeconds      | DWORD                    | 15                                                                                                               | Recommended     |
+    | ReAttachRetryCount           | DWORD                    | 3                                                                                                                | Recommended     |
+    | SizeInMBs                    | DWORD                    | 30000                                                                                                            | Default         |
+    | **VHDLocations**             | **MULTI\_SZ or REG\_SZ** | \\\\&lt;storage-account-name&gt;.file.core.windows.net\\&lt;share-name&gt; | **Example**     |
+    | VolumeType                   | REG\_SZ                  | VHDX                                                                                                             | Recommended     |
 
 ### Verify your ODFC container configuration
 

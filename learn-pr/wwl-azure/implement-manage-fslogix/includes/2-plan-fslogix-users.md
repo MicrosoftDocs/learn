@@ -12,7 +12,7 @@ FSLogix provides customers with both ease of configuration and various levels of
 
  -  Identity and Authentication.
  -  Storage design and architecture.
- -  Active Directory, Microosft Entra Id, or Microosft Entra Id Domain Services.
+ -  Active Directory, Microsoft Entra Id, or Microsoft Entra Id Domain Services.
  -  Windows Deployment (Server or Desktop).
  -  Application Compatibility.
  -  FSLogix provides unique integration and advantages when used in an [Azure Virtual Desktop](/azure/virtual-desktop/) environment.
