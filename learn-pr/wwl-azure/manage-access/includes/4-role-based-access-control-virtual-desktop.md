@@ -6,7 +6,7 @@ The built-in roles for Azure Virtual Desktop and the permissions for each one ar
 
 ## Desktop Virtualization Contributor
 
-The Desktop Virtualization Contributor role allows managing all your Azure Virtual Desktop resources. You also need the *User Access Administrator* role to assign application groups to user accounts or user groups. This role doesn't grant users access to compute resources..
+The Desktop Virtualization Contributor role allows managing all your Azure Virtual Desktop resources. You also need the *User Access Administrator* role to assign application groups to user accounts or user groups. This role doesn't grant users access to compute resources.
 
 ## Desktop Virtualization User
 

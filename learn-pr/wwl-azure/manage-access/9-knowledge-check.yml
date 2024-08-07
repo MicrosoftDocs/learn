@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/06/2024
+  ms.date: 08/07/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
@@ -51,9 +51,9 @@ quiz:
       explanation: "Correct. The Desktop Virtualization Host Pool Contributor role allows managing all aspects of a host pool."
   - content: "A system administrator is tasked with setting up authentication for Azure Virtual Desktop. They need to ensure that users can authenticate using a smart card. Which of the following steps should they take?"
     choices:
-    - content: "Configure AD FS for user certificate authentication and enable single sign on"
+    - content: "Configure AD FS for user certificate authentication and enable single sign-on"
       isCorrect: false
-      explanation: "Incorrect. While configuring AD FS for user certificate authentication is correct, enabling single sign on is not necessary for smart card authentication."
+      explanation: "Incorrect. While configuring AD FS for user certificate authentication is correct, enabling single sign-on is not necessary for smart card authentication."
     - content: "Enable passwordless authentication and configure Microsoft Entra certificate based authentication"
       isCorrect: false
       explanation: "Incorrect. Passwordless authentication is not required for smart card authentication. The key step is to configure Microsoft Entra certificate based authentication."
