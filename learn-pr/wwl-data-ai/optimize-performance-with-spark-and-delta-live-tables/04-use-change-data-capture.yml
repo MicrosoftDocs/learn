@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables
+uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables.use-change-data-capture
 title: Use change data capture (CDC)
 metadata:
   title: Use change data capture (CDC)
