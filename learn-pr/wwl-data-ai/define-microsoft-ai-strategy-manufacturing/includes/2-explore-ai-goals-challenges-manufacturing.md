@@ -1,8 +1,6 @@
 Manufacturing processes involve complex and physical tasks that require precision, coordination, and safety. Moreover, manufacturing systems often face dynamic and uncertain environments that demand adaptability and resilience. To address these issues, AI can enable greater integration, less friction, and simplification of processes across the manufacturing value chain. Following and developing this premise, this unit explores the goals and challenges of AI in manufacturing.
 
-In the following video, Kathleen Mitford talks about the impact that artificial intelligence is having across the industrial sector. 
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ca64bdb0-0296-4893-975f-cde308edbf6f]
+![Image of a man in manufacturing holding a tablet.](../media/Manufacturer.jpg)
 
 ## Goals
 
@@ -35,3 +33,8 @@ However, other challenges can arise from the manufacturers’ **relations with c
 * **Rising customer expectations for service and products**: The media has lately created hype around generative AI and similar technologies. It’s true that they’re powerful and can make a difference for your business. However, clients often have unrealistic expectations of what an AI-powered solution can deliver. A pedagogical approach is sometimes required to orient customers towards more realistic AI scenarios.
 
 Next, let’s explore the most common AI-powered manufacturing use cases for your company to achieve these goals. 
+
+> [!TIP]
+> Take a moment to consider other goals or challenges are specific to your organization. 
+> ![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
+

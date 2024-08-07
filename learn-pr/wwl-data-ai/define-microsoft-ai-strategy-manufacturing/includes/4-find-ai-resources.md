@@ -1,6 +1,8 @@
 The next step for manufacturing leaders who want to implement any of these AI use cases is to choose which tools fit best fit their needs. The Microsoft Azure environment includes a wide catalog of products that complement each other to support these AI solutions. Many of them are contained in [Microsoft Cloud for Manufacturing](https://www.microsoft.com/industry/manufacturing/microsoft-cloud-for-manufacturing).
 Let’s discuss some of the tools that might be most useful for manufacturers.
 
+![Image of a woman in sharing a manufacturing report.](../media/Manufacturing-report.jpg)
+
 ## Microsoft Fabric
 
 Microsoft Fabric is a cloud-based platform that enables you to build, deploy, and manage AI applications across your entire value chain. It’s important because it provides a **unified data environment**. It provides data ingestion, integration, processing, and analysis. It connects all your data from different sources. Modern factories are full of sensors and cameras, so a robust data management tool is key to avoiding data silos and taking full advantage of existing data.
@@ -24,3 +26,7 @@ Among the prebuilt models included in Azure AI Services, Azure OpenAI Service st
 These solutions enable you to deliver insights and analytics in a more natural, fluent, conversational way. They can also automatically generate reports, documentation, mail, and so on. Besides, they’re often helpful to streamline the development of traditional AI models. So, you can implement this technology in almost all manufacturing use cases for faster, more efficient results.
 
 Now, let’s see how manufacturing companies are using these products. In the next unit, we’ll examine an initiative to optimize forecasting.
+
+> [!TIP]
+> Take a moment to identify some of the benefits of AI you hope to bring to your manufacturing organization. 
+> ![Image showing people working and talking around a table.](../media/2-Reflection.jpg)

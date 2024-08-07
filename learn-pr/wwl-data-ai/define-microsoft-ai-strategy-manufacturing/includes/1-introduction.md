@@ -4,15 +4,4 @@ Decision-makers often find it challenging to identify the most suitable resource
 
 AI in manufacturing isn't only about increasing efficiency and productivity, but also about ensuring ethical and sustainable practices. Accordingly, Microsoft follows **responsible AI** practices for the development and deployment of AI solutions. This approach ensures that solutions are fair, reliable, safe, private, secure, inclusive, transparent, and accountable. Microsoft products follow these principles and empower manufacturers to innovate with confidence and trust. You can take a deeper look at this framework on our [responsible AI website](https://www.microsoft.com/ai/responsible-ai).
 
-## Learning objectives
-In this module, you will:
-
-* Identify AI use cases in manufacturing.
-* Examine available AI tools and resources for manufacturing scenarios. 
-* Discover insights from manufacturing-specific AI success stories.
-
-## Prerequisites
-* Basic understanding of AI concepts.
-* Basic understanding of manufacturing concepts.
-
 Next, let’s discuss some guiding principles to consider when implementing AI use cases in manufacturing.

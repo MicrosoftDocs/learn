@@ -1,5 +1,7 @@
 Manufacturing isn't a monolithic sector, but a collection of diverse and dynamic industries that produce a wide range of goods, from cars and clothes to electronics and food. AI can help manufacturers optimize their operations, improve their quality, reduce their costs, and enhance their innovation. Let’s explore some of the AI use cases in manufacturing that are transforming the way goods are made and delivered.
 
+![Image of a woman in manufacturing working at a table on a computer.](../media/Manufacturing.jpg)
+
 ## Document intelligence applications
 
 The first group of AI solutions for manufacturing focuses on extracting insights from your data. They usually take the form of data analytics tools or, thanks to generative AI, copilot assistants.
