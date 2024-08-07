@@ -10,7 +10,7 @@ All healthcare professionals share these objectives. As all healthcare practices
 * **Move care closer to homes**: There’s a growing interest in making healthcare more accessible. Taking healthcare out of hospitals and into households is a strategy to reach more people.
 * **Safeguard patient data and maintain regulatory compliance**: Healthcare data is sensitive. It includes personal data that must be kept confidential at all costs. Governments require healthcare data management to follow strict protection measures, so privacy and security concerns should guide data policies to achieve compliance.
 
-![Image showing healthcare worker holding a tablet.](../media/2-Healthcare-Worker.jpg)
+![Image showing healthcare worker holding a tablet.](../media/2-healthcare-Worker.jpg)
 
 ## Challenges
 
