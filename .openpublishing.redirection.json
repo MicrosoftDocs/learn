@@ -31257,12 +31257,12 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "learn-pr/wwl-azure/plan-implement-business-continuity-disaster-recovery/3-virtual-machine-replication.md",
+      "source_path_from_root": "/learn-pr/wwl-azure/plan-implement-business-continuity-disaster-recovery/3-virtual-machine-replication.md",
       "redirect_url": "training/modules/plan-implement-business-continuity-disaster-recovery",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "learn-pr/wwl-azure/plan-implement-business-continuity-disaster-recovery/4-fslogix-configuration.md",
+      "source_path_from_root": "/learn-pr/wwl-azure/plan-implement-business-continuity-disaster-recovery/4-fslogix-configuration.md",
       "redirect_url": "training/modules/plan-implement-business-continuity-disaster-recovery",
       "redirect_document_id": false
     }
