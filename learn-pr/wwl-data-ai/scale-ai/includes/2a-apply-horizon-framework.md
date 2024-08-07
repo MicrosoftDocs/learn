@@ -4,8 +4,6 @@ To classify initiatives into horizons, we first *map company initiatives to a pr
 
 Start with a matrix with four quadrants that organizes planned initiatives by strategic impact on one axis and business model impact on the other. 
 
-![Diagram that shows a blank prioritization grid.](../media/2-blank-prioritization-grid.png)
-
 The matrix's horizontal axis represents a spectrum of "tactical" to "strategic" initiatives. "Tactical" initiatives are confined to a single team or use case. "Strategic" initiatives represent larger investments that might affect the entire organization. The matrix's vertical axis represents a spectrum of business models. Existing business model initiatives address competitive and disruptive threats, improve operations, or empower employees. New business model initiatives create new value propositions and revenue streams. 
 
 As you map initiatives, it's helpful to involve the Chief Financial Officer (CFO) office and other stakeholders to ensure you've made the right assumptions around the opportunity valuation.
