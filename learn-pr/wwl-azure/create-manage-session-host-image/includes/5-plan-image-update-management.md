@@ -65,7 +65,7 @@ With Azure Compute Gallery, you can now deploy up to a 1,000 VM instances in a v
 
 We always recommend you to overprovision the number of replicas due to factors like image size, content, and OS type.
 
-:::image type="content" source="../media/scaling-c888ba94-5a81fb01-adbbd92d-357a76db.png" alt-text="Diagram showing how you can scale images":::
+:::image type="content" source="../media/scaling-c888ba94-5a81fb01-adbbd92d-357a76db.png" alt-text="Diagram showing how you can scale images.":::
 
 
 ## Make your images highly available

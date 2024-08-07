@@ -53,10 +53,10 @@ quiz:
     choices:
     - content: "The administrator should restart the VM and let the users choose their preferred language on first login."
       isCorrect: false
-      explanation: "Incorrect. Simply restarting the VM does not allow users to select their preferred language."
+      explanation: "Incorrect. Simply restarting the VM doesn't allow users to select their preferred language."
     - content: "The administrator should manually change the language settings for each user."
       isCorrect: false
-      explanation: "Incorrect. Manually changing the language settings for each user is not efficient or practical."
+      explanation: "Incorrect. Manually changing the language settings for each user isn't efficient or practical."
     - content: "The administrator should run a PowerShell cmdlet to add the installed language packs to the Languages menu."
       isCorrect: true
       explanation: "Correct. Running a PowerShell cmdlet allows the installed language packs to be added to the Languages menu, enabling users to select their preferred language."
