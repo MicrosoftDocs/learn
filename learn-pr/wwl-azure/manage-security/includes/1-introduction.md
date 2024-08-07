@@ -2,7 +2,7 @@ This module focuses on the security aspects of configuring your Azure Virtual De
 
 ## Scenario
 
-You're an administrator for a large organization that uses Azure Virtual Desktop. Your organization has a diverse user base, including internal employees and external users. You need to ensure that your Azure Virtual Desktop deployments are secure and that you're taking all necessary precautions to keep your users safe. This includes understanding the shared security responsibilities, making informed decisions about security boundaries, and implementing advanced security features such as Reverse Connect and multi-factor authentication.
+You're an administrator for a large organization that uses Azure Virtual Desktop. Your organization has a diverse user base, including internal employees and external users. You need to ensure that your Azure Virtual Desktop deployments are secure and that you're taking all necessary precautions to keep your users safe. This includes understanding the shared security responsibilities, making informed decisions about security boundaries, and implementing advanced security features such as Reverse Connect and multifactor authentication.
 
 ## Learning Objectives
 
@@ -16,4 +16,4 @@ The topics covered in this module include:
 
 ## Goals
 
-By the end of this module, you'll be able to confidently secure your Azure Virtual Desktop deployments, ensuring the safety of your users and the integrity of your organization's data.
+By the end of this module, you are able to confidently secure your Azure Virtual Desktop deployments, ensuring the safety of your users and the integrity of your organization's data.

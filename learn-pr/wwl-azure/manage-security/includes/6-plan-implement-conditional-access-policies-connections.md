@@ -2,7 +2,7 @@ Planning your Conditional Access deployment is critical to achieving your organi
 
 Azure Active Directory (Azure AD) Conditional Access analyses signals such as user, device, and location to automate decisions and enforce organizational access policies for resource. You can use Conditional Access policies to apply access controls like multifactor authentication (MFA). Conditional Access policies allow you to prompt users for MFA when needed for security, and stay out of users’ way when not needed.
 
-:::image type="content" source="../media/planning-conditional-access-1-060d60dd-ef10db3c.png" alt-text="Conditional Access overview":::
+:::image type="content" source="../media/planning-conditional-access-1-060d60dd-ef10db3c.png" alt-text="Screenshot of Conditional Access overview.":::
 
 
 Microsoft provides standard conditional policies called security defaults that ensure a basic level of security. However, your organization may need more flexibility than security defaults offer. You can use Conditional Access to customize security defaults with more granularity and to configure new policies that meet your requirements.
