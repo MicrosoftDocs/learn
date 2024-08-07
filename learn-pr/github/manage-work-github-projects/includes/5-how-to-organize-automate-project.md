@@ -7,11 +7,11 @@
 
 In this portion of the unit, you learn how to:
 
-- Control visibility to your Project
-- Manage access to your Project
-- Invite collaborators and change roles
-- Add a Project to a team
-- Add a Project to a repository
+- Control visibility to your Project.
+- Manage access to your Project.
+- Invite collaborators and change roles.
+- Add a Project to a team.
+- Add a Project to a repository.
 
 ### Control visibility to your Project
 
@@ -21,7 +21,7 @@ To change your Project's visibility:
 
 1. Navigate to your Project.
 1. In the top-right, select the three dots at the top menu and choose **Settings**.
-1. Scroll down to **Danger zone** and under **Visibility** select Private or Public from the drop-down.
+1. Scroll down to **Danger zone**, and under **Visibility** select Private or Public from the drop-down.
 
    :::image type="content" source="../media/5-danger-zone-settings.png" alt-text="Screenshot of the Danger Zone settings with the option to make your Project Public or Private.":::
 
@@ -64,13 +64,13 @@ Here's how to add Projects to teams:
 
 1. In the top right corner of GitHub.com, select your profile photo and choose **Your organizations**.
 1. Select the name of your organization.
-1. Navigate to the **Teams** tab and select the name of the team you want to grant access to.
+1. Navigate to the **Teams** tab and select the name of the team to which you want to grant access.
 1. Select **Projects** and choose **Link a project**.
 1. Start typing the name of the Project you want to add and then select the Project in the list of matches.
 
 ### Add a Project to a repository
 
-You can list relevant Projects in a repository so your team can access information they need to stay up-to-date. However, you can only list Projects if the same user or organization owns both the Projects and the repository. In order for repository members to see a Project listed in a repository, they must have visibility to the Project.
+You can list relevant Projects in a repository so your team can access information they need to stay up to date. However, you can only list Projects if the same user or organization owns both the Projects and the repository. In order for repository members to see a Project listed in a repository, they must have visibility to the Project.
 
 Here are the steps to add a Project to a repository:
 
@@ -102,4 +102,4 @@ Here are steps on how to navigate to them:
 
    :::image type="content" source="../media/5-danger-zone-options.png" alt-text="Screenshot of the Danger zone section with the option to change visibility, close Project and delete Project with delete Project highlighted.":::
 
-Next up, we're reviewing insights and automation in Projects.
+Next up, we'll review insights and automation in Projects.

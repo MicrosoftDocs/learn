@@ -52,11 +52,11 @@ If you want to save this view, select the **Save changes** button on the top-rig
 
 Adding an iteration field to your Project can help you and your team visualize the balance of upcoming work in order to help everyone stay on track. An iteration field enables you to set up phases for your tasks in a tangible timeframe to keep you and your team organized.
 
-1. To add an iteration field, go to the table view of your Project.
+1. To add an iteration field, go to your Project's table view.
 1. In the rightmost field header, select **+**.
 1. Select **New field**.
-1. Add a **Field name** such as *Project Phase* or *Sprint*.
-1. Under **Field Type** select *Iteration*.
+1. Add a **Field name**, such as *Project Phase* or *Sprint*.
+1. Under **Field Type**, select *Iteration*.
 1. Choose a **Starts On** date.
 1. Change the **Duration** of each iteration by typing a new number, and select the drop-down for either **days** or **weeks** as follows.
 
@@ -66,7 +66,7 @@ Adding an iteration field to your Project can help you and your team visualize t
 
 Once you have your iteration field set up, you can now assign what iteration phase you want each of your issues and pull requests to fall under.
 
-Now that you have prioritized and organized your Project, let's take a look at how to view your Project from a board view perspective.
+Now that you've prioritized and organized your Project, let's take a look at how to view your Project from a board view perspective.
 
 ## Create a board view
 
@@ -75,9 +75,9 @@ A board view of your Project enables you to view upcoming tasks in a more visual
 Let's walk through how to get your board view up and running.
 
 1. On the currently open view, select the **down arrow**.
-1. Under **Layout** select **Board**. When you change the layout, your Project displays an indicator to show the view was modified.
+1. Under **Layout**, select **Board**. When you change the layout, your Project displays an indicator to show the view was modified.
 1. Select the **Save** button at the top-right of the board.
-1. You can rename the view by double-clicking on the view's tab, and selecting out of the tab to automatically save.
+1. You can rename the view by double-clicking the view's tab, and selecting out of the tab to automatically save.
 1. Note these steps can also be accomplished by selecting **New View** to the right of your existing views.
 
 Now, you can drag and drop issues and pull requests to the various columns.

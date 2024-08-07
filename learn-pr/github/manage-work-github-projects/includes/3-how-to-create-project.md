@@ -1,4 +1,4 @@
-﻿Imagine you want to organize your team's feature backlog. Projects, GitHub's built-in program management tool, is a perfect way to organize and prioritize your team's work in a single space.
+﻿Imagine you want to organize your team's feature backlog. Projects, GitHub's built-in program-management tool, is a perfect way to organize and prioritize your team's work in a single space.
 
 In this unit, you learn how to:
 
@@ -10,14 +10,14 @@ In this unit, you learn how to:
 
 First, you want to lay the foundation by creating a new Project. Creating is relatively quick and simple.
 
-1. In the top right corner of GitHub.com, select your profile photo then **Your organizations**.
+1. In the top right corner of GitHub.com, select your profile photo, then select **Your organizations**.
 
    :::image type="complex" border="false" source="../media/3-github-profile-drowdown.png" alt-text="Screenshot of the Profile Dropdown Menu.":::
     Screenshot of the Profile Dropdown Menu that includes Your profile, Your repositories, Your Codespaces, Your organizations, and Your enterprises with Your Organization option highlighted.
    :::image-end:::
 
 1. Scroll down to select the organization for your new Project.
-1. Navigate from the Overview tab to the Projects tab.
+1. Navigate from the **Overview** tab to the **Projects** tab.
 1. Select the green button labeled **New Project**.
 1. A pop-up prompts you to select either a template or start from scratch. Let's choose the **Start from scratch** option and select **Table**.
 1. Select the green **Create project** button.
@@ -34,7 +34,7 @@ Let's define your Project in a couple of different ways so that your team can ea
 1. At the top right of the page, select the three dots to open the menu and select **Settings**.
 1. **Project Name** is where you edit the name of the Project.
 1. **Short description** allows you to add a few words about the Project.
-1. **README** let's you add information for your team to understand why you created this Project and what you hope to accomplish with it. Once finished select **Save changes**.
+1. **README** lets you add information for your team to understand why you created this Project and what you hope to accomplish with it. Once finished, select **Save changes**.
 
    :::image type="content" source="../media/3-project-readme-example.png" alt-text="Screenshot of a Project README that is highlighted with example text that describes the user's Project.":::
 
@@ -51,7 +51,7 @@ Let's go through the different ways to add issues and pull requests to your Proj
 
    :::image type="content" source="../media/3-project-list-view-url-sample.png" alt-text="Screenshot of a Project in List view with an example of a URL of an Issue pasted into the Project.":::
 
-1. Press enter and your issue or pull request appears as a task in your Project.
+1. Press **Enter** and your issue or pull request appears as a task in your Project.
 
 ### Search for an existing issue and pull request
 

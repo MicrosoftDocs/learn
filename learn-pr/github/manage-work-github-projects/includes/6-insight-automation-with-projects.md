@@ -10,7 +10,7 @@ In this section, you learn about:
 
 ### Insights and how they can be useful
 
-Insights with Projects enables you to view, create, and customize charts that use items added to your Project as source data. When you create a chart, you set the filters, chart type, and information displayed. The chart is available to anyone that can view the Project. You can generate two types of charts: current charts and historical charts. Let's dive into the differences between the two.
+Insights with Projects enables you to view, create, and customize charts that use items added to your Project as source data. When you create a chart, you set the filters, chart type, and information displayed. The chart is available to anyone who can view the Project. You can generate two types of charts: current charts and historical charts. Let's dive into the differences between the two.
 
 #### Current charts
 
@@ -33,7 +33,7 @@ Historical charts are available with GitHub Team and GitHub Enterprise Cloud for
 Follow these steps to create a new chart:
 
 1. Navigate to your Project.
-1. In the top-right, select the line graph button. When you hover over the button the **Insights** label appears.
+1. In the top-right, select the line graph button. When you hover over the button, the **Insights** label appears.
 1. In the menu on the left, select **New chart**.
 1. Filter by keyword or field to change the data used to build the chart.
 1. To the right of the filter text box, select **Save**.
