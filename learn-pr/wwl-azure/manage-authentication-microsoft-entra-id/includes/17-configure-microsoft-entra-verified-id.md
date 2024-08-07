@@ -15,11 +15,9 @@ As a verifier, you unlock privileges to subjects that possess verified credentia
 
 Now that you've set up your Microsoft Entra Verified ID service, you're going to gather some information about your environment and the verifiable credentials you set. You use these pieces of information when you set up your sample application.
 
-1. From Verified ID, select Organization settings.<br>
-
-2. Copy the Tenant identifier value, and record it for later.
-
-3. Copy the Decentralized identifier value, and record it for later.
+1.  From Verified ID, select Organization settings.<br>
+2.  Copy the Tenant identifier value, and record it for later.
+3.  Copy the Decentralized identifier value, and record it for later.
 
 The following screenshot demonstrates how to copy the required values:
 
@@ -28,40 +26,34 @@ The following screenshot demonstrates how to copy the required values:
 
 ## Download the sample code
 
-The sample application is available in .NET, and the code is maintained in a GitHub repository. Download the sample code from the [GitHub repo](https://github.com/Azure-Samples/active-directory-verifiable-credentials-dotnet), or clone the repository to your local computer:<br>
+The sample application is available in .NET, and the code is maintained in a GitHub repository. Download the sample code from the [GitHub repo](https://github.com/Azure-Samples/active-directory-verifiable-credentials-dotnet), or clone the repository to your local computer:
 
 ## Configure the verifiable credentials app<br>
 
 Create a client secret for the registered application you created. The sample application uses the client secret to prove its identity when it requests tokens.
 
-1. In Microsoft Entra ID, go to **App registrations**.<br>
-
-2. Select the **verifiable-credentials-app** application you created earlier.<br>
-
-3. Select the name to go into the **App registrations details**.<br>
-
-4. Copy the **Application (client) ID** value, and store it for later.
-
+1.  In Microsoft Entra ID, go to **App registrations**.<br>
+2.  Select the **verifiable-credentials-app** application you created earlier.<br>
+3.  Select the name to go into the **App registrations details**.<br>
+4.  Copy the **Application (client) ID** value, and store it for later.
+    
     :::image type="content" source="../media/verifiable-credentials-application-955830fc.png" alt-text="Screenshot showing the verifiable credentials application page.":::
-
-
-5. In **App registration details**, from the main menu, under **Manage**, select **Certificates & secrets**.
-
-6. Select **New client secret**.<br>
+    
+5.  In **App registration details**, from the main menu, under **Manage**, select **Certificates & secrets**.
+6.  Select **New client secret**.<br>
 
  -  In the **Description** box, enter a description for the client secret (for example, vc-sample-secret).<br>
  -  Under **Expires**, select a duration for which the secret is valid (for example, six months). Then select **Add**.<br>
  -  Record the secret's **Value**. This value is needed in a later step. The secret’s value won't be displayed again, and isn't retrievable by **any** other means, so you should record it once it's visible.<br>
 
-At this point, you should have all the required information that you need to set up your sample application.<br>
+At this point, you should have all the required information that you need to set up your sample application.
 
 ## Update the sample application
 
 Now make modifications to the sample app's issuer code to update it with your verifiable credential URL. This step allows you to issue verifiable credentials by using your own tenant.
 
-1. In the active-directory-verifiable-credentials-dotnet-main directory, open Visual Studio Code. Select the project inside the 1. asp-net-core-api-idtokenhint directory.
-
-2. Under the project root folder, open the appsettings.json file. This file contains information about your credentials in Microsoft Entra Verified ID environment. Update the following properties with the information that you collected during earlier steps.
+1.  In the active-directory-verifiable-credentials-dotnet-main directory, open Visual Studio Code. Select the project inside the 1. asp-net-core-api-idtokenhint directory.
+2.  Under the project root folder, open the appsettings.json file. This file contains information about your credentials in Microsoft Entra Verified ID environment. Update the following properties with the information that you collected during earlier steps.
 
  -  **Tenant ID**: Your tenant ID
  -  **Client ID**: Your client ID
@@ -69,7 +61,7 @@ Now make modifications to the sample app's issuer code to update it with your ve
  -  **DidAuthority**: Your decentralized identifier
  -  **CredentialType**: Your credential type. CredentialManifest is only needed for issuance, so if all you want to do is presentation, it strictly isn't needed.
 
-3. Save the *appsettings.json* file.
+3.  Save the *appsettings.json* file.
 
 The following JavaScript Object Notation (JSON) demonstrates a complete *appsettings.json* file:
 
@@ -88,6 +80,17 @@ The following JavaScript Object Notation (JSON) demonstrates a complete *appsett
     "CredentialManifest":  "https://verifiedid.did.msidentity.com/v1.0/12345678-0000-0000-0000-000000000000/verifiableCredentials/contracts/VerifiedCredentialExpert"
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 ```
 
 ## Run and test the sample app
@@ -100,15 +103,37 @@ Now you're ready to present and verify your first verified credential expert car
     cd active-directory-verifiable-credentials-dotnet\1-asp-net-core-api-idtokenhint
     dotnet build "AspNetCoreVerifiableCredentials.csproj" -c Debug -o .\bin\Debug\net6
     dotnet run
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
 2.  In another terminal, run the following command. This command runs the ngrok to set up a URL on 5000 and make it publicly available on the internet.
     
     ```
     ngrok http 5000
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
     
     > [!NOTE]
-    > On some computers, you might need to run the command in this format: `./ngrok http 5000`.<br>
+    > On some computers, you might need to run the command in this format: `./ngrok http 5000`.
 3.  Open the HTTPS URL generated by ngrok.
     
     :::image type="content" source="../media/run-command-7f02363f.png" alt-text="Screenshot showing the terminal run command to run and test the sample application.":::

@@ -10,19 +10,27 @@ You can combine Pass-through Authentication with the Seamless single sign-on fea
 ## Key benefits of using Microsoft Entra pass-through authentication
 
  -  Great user experience
+    
+    
      -  Users use the same passwords to sign into both on-premises and cloud-based applications.
      -  Users spend less time talking to the IT helpdesk resolving password-related issues.
      -  Users can complete self-service password management tasks in the cloud.
  -  Easy to deploy & administer
+    
+    
      -  No need for complex on-premises deployments or network configuration.
      -  Needs just a lightweight agent to be installed on-premises.
      -  No management overhead. The agent automatically receives improvements and bug fixes.
  -  Secure
+    
+    
      -  On-premises passwords are never stored in the cloud in any form.
      -  Protects your user accounts by working seamlessly with Microsoft Entra Conditional Access policies, including multifactor authentication (MFA), blocking legacy authentication and by filtering out brute force password attacks.
      -  The agent only makes outbound connections from within your network. Therefore, there is no requirement to install the agent in a perimeter network, also known as a DMZ.
      -  The communication between an agent and Microsoft Entra ID is secured using certificate-based authentication. These certificates are automatically renewed every few months by Microsoft Entra ID.
  -  Highly available
+    
+    
      -  Additional agents can be installed on multiple on-premises servers to provide high availability of sign-in requests.
 
 ## Feature highlights

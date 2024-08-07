@@ -16,14 +16,14 @@ Microsoft's passwordless authentication methods enable many scenarios. Consider 
 
 The following table lists the passwordless authentication methods by device types.
 
-| **Device types**                                        | **Passwordless authentication method**                    |
-| ------------------------------------------------------- | --------------------------------------------------------- |
-| Dedicated non-windows devices                           | *Microsoft Authenticator*  Security keys                  |
-| Dedicated Windows 10 computers (version 1703 and later) | *Windows Hello for Business*  Security keys               |
-| Dedicated Windows 10 computers (before version 1703)    | *Windows Hello for Business*  Microsoft Authenticator app |
-| Shared devices: tablets, and mobile devices             | *Microsoft Authenticator*  One-time password sign-in      |
-| Kiosks (Legacy)                                         | *Microsoft Authenticator*                                 |
-| Kiosks and shared computers ‎(Windows 10)               | *Security keys*  Microsoft Authenticator app              |
+| **Device types**                                        | **Passwordless authentication method**                   |
+| ------------------------------------------------------- | -------------------------------------------------------- |
+| Dedicated non-windows devices                           | *Microsoft Authenticator* Security keys                  |
+| Dedicated Windows 10 computers (version 1703 and later) | *Windows Hello for Business* Security keys               |
+| Dedicated Windows 10 computers (before version 1703)    | *Windows Hello for Business* Microsoft Authenticator app |
+| Shared devices: tablets, and mobile devices             | *Microsoft Authenticator* One-time password sign-in      |
+| Kiosks (Legacy)                                         | *Microsoft Authenticator*                                |
+| Kiosks and shared computers ‎(Windows 10)               | *Security keys* Microsoft Authenticator app              |
 
 ## Prerequisites
 
@@ -54,13 +54,13 @@ The prerequisites are determined by your selected passwordless authentication me
 | Windows 10 version 1809 or higher using a supported browser like Microsoft Edge or Mozilla Firefox (version 67 or higher). Microsoft recommends version 1903 or higher for native support.                                                      |                             | √                       |
 | Compatible security keys. Ensure that you're using a [Microsoft-tested and verified FIDO2 security key](/entra/identity/authentication/concept-authentication-passwordless), or other compatible FIDO2 security key. |                             | √                       |
 
-|
+\|
 
 ### Windows Hello for Business
 
 The prerequisites and deployment paths for Windows Hello for Business are highly dependent on whether you're deploying in an on-premises, hybrid, or cloud-only configuration. It's also dependent on your device join strategy.
 
-Select Windows Hello for Business and complete the wizard to determine the prerequisites and deployment appropriate for your organization.<br>
+Select Windows Hello for Business and complete the wizard to determine the prerequisites and deployment appropriate for your organization.
 
 :::image type="content" source="../media/passwordless-wizard-select-52e6cad2.png" alt-text="Screenshot showing the Windows Hello for Business configuration page.":::
 
@@ -105,7 +105,7 @@ Microsoft Authenticator turns any iOS or Android phone into a strong, passwordle
 
 Active Directory Federation Services (AD FS) Integration - When a user enables the Authenticator passwordless credential, authentication for that user defaults to sending a notification for approval. Users in a hybrid tenant are prevented from being directed to AD FS for sign-in unless they select "Use your password instead." This process also bypasses any on-premises Conditional Access policies, and pass-through authentication (PTA) flows. However, if a login\_hint is specified, the user is forwarded to AD FS and bypasses the option to use the passwordless credential. For non-Microsoft 365 applications which use AD FS for authentication, Microsoft Entra Conditional Access policies will not be applied and you will need to set up access control policies within AD FS.
 
-MFA server - End users enabled for multifactor authentication through an organization's on-premises MFA server can create and use a single passwordless phone sign-in credential. If the user attempts to upgrade multiple installations (5 or more) of the Authenticator app with the credential, this change may result in an error.<br>
+MFA server - End users enabled for multifactor authentication through an organization's on-premises MFA server can create and use a single passwordless phone sign-in credential. If the user attempts to upgrade multiple installations (5 or more) of the Authenticator app with the credential, this change may result in an error.
 
 Device registration - To use the Authenticator app for passwordless authentication, the device must be registered in the Microsoft Entra tenant and can't be a shared device. A device can only be registered in a single tenant. This limit means that only one work or school account is supported for phone sign-in using the Authenticator app.
 
@@ -176,12 +176,20 @@ There are three types of passwordless sign-in deployments available with securit
 Enabling Windows 10 sign-in using FIDO2 security keys requires you to enable the credential provider functionality in Windows 10. Choose one of the following:
 
  -  Enable credential provider with Microsoft Intune
+    
+    
      -  We recommend Microsoft Intune deployment.
  -  Enable credential provider with a provisioning package
+    
+    
      -  If Microsoft Intune deployment isn't possible, administrators must deploy a package on each machine to enable the credential provider functionality. The package installation can be carried out by one of the following options:
+        
+        
          -  Group Policy or Configuration Manager
          -  Local installation on a Windows 10 machine
  -  Enable credential provider with Group Policy
+    
+    
      -  Only supported for Microsoft Entra hybrid joined devices.
 
 ### Key restrictions policy
@@ -191,12 +199,12 @@ When you deploy the security key, you can optionally restrict the use of FIDO2 k
 :::image type="content" source="../media/security-key-enforce-key-restriction-6dd07803.png" alt-text="Screenshot showing the Authenticator Attestation user interface settings page.":::
 
 
-1. If the security key is restricted, and the user tries to register the FIDO2 security key, they receive the following error:
+1.  If the security key is restricted, and the user tries to register the FIDO2 security key, they receive the following error:
 
 :::image type="content" source="../media/security-key-restricted-error-c11372d7.png" alt-text="Screenshot showing the security key restricted error notification.":::
 
 
-2. If the security key is restricted, and the user tries to register the FIDO2 security key, they receive the following error:
+2.  If the security key is restricted, and the user tries to register the FIDO2 security key, they receive the following error:
 
 :::image type="content" source="../media/security-key-block-user-window-792f70f3.png" alt-text="Screenshot showing the security key block user notification.":::
 
@@ -224,13 +232,13 @@ Here are the sample test cases for passwordless authentication with security key
 
 ### Passwordless FIDO sign-in to Microsoft Entra web apps
 
-| **Scenario**                                                                                                                                               | **Expected results**                                                                                                                                                                                                                                                                                                                 |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| The user can register FIDO2 device at aka.ms/mysecurityinfo using Microsoft Edge                                                                           | Registration should succeed                                                                                                                                                                                                                                                                                                          |
-| The user can register FIDO2 device at aka.ms/mysecurityinfo using Firefox                                                                                  | Registration should succeed                                                                                                                                                                                                                                                                                                          |
-| The user can sign in to OneDrive online using FIDO2 device using Microsoft Edge                                                                            | Sign-in should succeed                                                                                                                                                                                                                                                                                                               |
-| The user can sign in to OneDrive online using FIDO2 device using Firefox                                                                                   | Sign-in should succeed                                                                                                                                                                                                                                                                                                               |
-| Test rolling back FIDO2 device registration by turning off FIDO2 Security Keys within the Authentication method window in the Microsoft Entra admin center | Users will:  be prompted to sign in using their security key  successfully sign in and see an error: "Your company policy requires that you use a different method to sign in".  be able to select a different method and successfully sign in. Close the window and sign in again to verify they do not see the same error message. |
+| **Scenario**                                                                                                                                               | **Expected results**                                                                                                                                                                                                                                                                                                              |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The user can register FIDO2 device at aka.ms/mysecurityinfo using Microsoft Edge                                                                           | Registration should succeed                                                                                                                                                                                                                                                                                                       |
+| The user can register FIDO2 device at aka.ms/mysecurityinfo using Firefox                                                                                  | Registration should succeed                                                                                                                                                                                                                                                                                                       |
+| The user can sign in to OneDrive online using FIDO2 device using Microsoft Edge                                                                            | Sign-in should succeed                                                                                                                                                                                                                                                                                                            |
+| The user can sign in to OneDrive online using FIDO2 device using Firefox                                                                                   | Sign-in should succeed                                                                                                                                                                                                                                                                                                            |
+| Test rolling back FIDO2 device registration by turning off FIDO2 Security Keys within the Authentication method window in the Microsoft Entra admin center | Users will: be prompted to sign in using their security key successfully sign in and see an error: "Your company policy requires that you use a different method to sign in". be able to select a different method and successfully sign in. Close the window and sign in again to verify they do not see the same error message. |
 
 ### Troubleshoot security key sign-in
 

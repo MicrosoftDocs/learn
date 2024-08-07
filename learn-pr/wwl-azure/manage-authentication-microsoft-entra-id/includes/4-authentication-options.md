@@ -39,18 +39,15 @@ The following section helps you decide which authentication method is right for 
 
 Details on decision questions:
 
-1. Microsoft Entra ID can handle sign-in for users without relying on on-premises components to verify passwords.
-
-2. Microsoft Entra ID can hand off user sign-in to a trusted authentication provider such as Microsoft's AD FS.
-
-3. If you need to apply, user-level Active Directory security policies such as account expired, disabled account, password expired, account locked out, and sign-in hours on each user sign-in, Microsoft Entra ID requires some on-premises components.
-
-4. Sign-in features not natively supported by Microsoft Entra ID:
+1.  Microsoft Entra ID can handle sign-in for users without relying on on-premises components to verify passwords.
+2.  Microsoft Entra ID can hand off user sign-in to a trusted authentication provider such as Microsoft's AD FS.
+3.  If you need to apply, user-level Active Directory security policies such as account expired, disabled account, password expired, account locked out, and sign-in hours on each user sign-in, Microsoft Entra ID requires some on-premises components.
+4.  Sign-in features not natively supported by Microsoft Entra ID:
 
  -  Sign-in using third-party authentication solution.
  -  Multi-site on-premises authentication solution.
 
-5. Microsoft Entra ID Protection requires Password Hash Sync regardless of which sign-in method you choose, to provide the Users with leaked credentials report. Organizations can fail over to Password Hash Sync if their primary sign-in method fails and it was configured before the failure event.
+5.  Microsoft Entra ID Protection requires Password Hash Sync regardless of which sign-in method you choose, to provide the Users with leaked credentials report. Organizations can fail over to Password Hash Sync if their primary sign-in method fails and it was configured before the failure event.
 
 > [!NOTE]
 > Microsoft Entra ID Protection require Microsoft Entra ID P2 licenses.
@@ -84,6 +81,8 @@ Organizations that require multifactor authentication with password hash synchro
  -  Effort. A federated authentication system relies on an external trusted system to authenticate users. Some companies want to reuse their existing federated system investment with their Microsoft Entra hybrid identity solution. The maintenance and management of the federated system falls outside the control of Microsoft Entra ID. It's up to the organization by using the federated system to make sure it's deployed securely and can handle the authentication load.
  -  User experience. The user experience of federated authentication depends on the implementation of the features, topology, and configuration of the federation farm. Some organizations need this flexibility to adapt and configure the access to the federation farm to suit their security requirements. For example, it's possible to configure internally connected users and devices to sign in users automatically, without prompting them for credentials. This configuration works because they already signed in to their devices. If necessary, some advanced security features make users' sign-in process more difficult.
  -  Advanced scenarios. A federated authentication solution is required when customers have an authentication requirement that Microsoft Entra ID doesn't support natively. See detailed information to help you choose the right sign-in option. Consider the following common requirements:
+    
+    
      -  Third-party multifactor providers requiring a federated identity provider.
      -  Authentication by using third-party authentication solutions. See the Microsoft Entra federation compatibility list.
      -  Sign in that requires a sAMAccountName, for example DOMAIN\\username, instead of a User Principal Name (UPN), for example, user@domain.com.
@@ -102,9 +101,7 @@ The following diagrams outline the high-level architecture components required f
 Simplicity of a password hash synchronization solution:
 
 :::image type="content" source="../media/password-hash-synchronization-24659bd4.png" alt-text="Diagram showing an example of the password hash synchronization solution.":::
- Agent requirements of pass-through authentication, using two agents for redundancy:
-
-:::image type="content" source="../media/pass-through-authentication-febf09f9.png" alt-text="Diagram showing an example of pass-through authentication, using two agents for redundancy.":::
+ Agent requirements of pass-through authentication, using two agents for redundancy: :::image type="content" source="../media/pass-through-authentication-febf09f9.png" alt-text="Diagram showing an example of pass-through authentication, using two agents for redundancy.":::
 
 
 Components required for federation in your perimeter and internal network of your organization:
@@ -137,6 +134,8 @@ Your identity system ensures your users' access to apps that you migrate and mak
 
  -  High availability and disaster recovery. Pass-through Authentication and federation rely on on-premises infrastructure. For pass-through authentication, the on-premises footprint includes the server hardware and networking the Pass-through Authentication agents require. For federation, the on-premises footprint is even larger. It requires servers in your perimeter network to proxy authentication requests and the internal federation servers. To avoid single points of failure, deploy redundant servers. Then authentication requests will always be serviced if any component fails. Both pass-through authentication and federation also rely on domain controllers to respond to authentication requests, which can also fail. Many of these components need maintenance to stay healthy. Outages are more likely when maintenance isn't planned and implemented correctly.
  -  On-premises outage survival. The consequences of an on-premises outage due to a cyber-attack or disaster can be substantial, ranging from reputational brand damage to a paralyzed organization unable to deal with the attack. Recently, many organizations were victims of malware attacks, including targeted ransomware, which caused their on-premises servers to go down. When Microsoft helps customers deal with these kinds of attacks, it sees two categories of organizations:
+    
+    
      -  Organizations that previously also turned on password hash synchronization on top of federated or pass-through authentication changed their primary authentication method to then use password hash synchronization. They were back online in a matter of hours. By using access to email via Microsoft 365, they worked to resolve issues and access other cloud-based workloads.
      -  Organizations that didn't previously enable password hash synchronization had to resort to untrusted external consumer email systems for communications to resolve issues. In those cases, it took them weeks to restore their on-premises identity infrastructure, before users were able to sign in to cloud-based apps again.
  -  Identity protection. One of the best ways to protect users in the cloud is Microsoft Entra ID Protection with Microsoft Entra ID P2. Microsoft continually scans the Internet for user and password lists that bad actors sell and make available on the dark web. Microsoft Entra ID can use this information to verify if any of the usernames and passwords in your organization are compromised. Therefore, it's critical to enable password hash synchronization no matter which authentication method you use, whether it's federated or pass-through authentication. Leaked credentials are presented as a report. Use this information to block or force users to change their passwords when they try to sign in with leaked passwords.
