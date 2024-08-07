@@ -73,8 +73,8 @@ AI-powered search experiences like Microsoft Search can help business users wade
 
 Now is the time to empower your employees with the right AI tools to amplify their capabilities and achieve more. 
 
-> [!TIP]
-> Take a moment to reflect on ways your team or organization could benefit from AI capabilities in your existing workflows and business processes.
-> ![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
+>[!TIP]
+>Take a moment to reflect on ways your team or organization could benefit from AI capabilities in your existing workflows and business processes.
+>![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
 
 In the next unit, we'll discuss Power Platform, which also offers AI features for people without data science or coding expertise.
