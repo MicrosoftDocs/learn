@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following is a potential single point of failure when deployed to a single virtual machine?"
+  - content: "Which of the following services is a potential single point of failure when deployed to a single virtual machine?"
     choices:
     - content: "SAP Web Dispatcher pool"
       isCorrect: false
