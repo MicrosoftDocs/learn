@@ -1,8 +1,10 @@
 In this module, you learned how to:
 
- -  Plan for disaster recovery for Azure Virtual Desktop
- -  Design and implement a backup strategy for Azure Virtual Desktop
- -  Monitor costs by using Azure Cost Management
+ -  Describe security recommendations for Azure Virtual Desktop
+ -  Connect Azure subscriptions to Microsoft Defender for Cloud
+ -  Plan Microsoft Defender for Endpoint for Azure Virtual Desktop sessions
+ -  Apply Zero Trust principles to an Azure Virtual Desktop deployment
+ -  Describe security posture management and threat protection
 
 ## Learn more
 
