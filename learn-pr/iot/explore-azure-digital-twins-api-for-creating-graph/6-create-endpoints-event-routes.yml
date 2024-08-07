@@ -4,7 +4,7 @@ title: Create endpoints and event routes
 interactive: bash
 metadata:
   title: Create endpoints and event routes
-  description: Use the Azure Digital Twins APIs in Postman to create an endpoint, create an event route, and check their statuses.
+  description: Use the Azure Digital Twins APIs to create an endpoint, create an event route, and check their statuses.
   ms.date: 11/29/2023
   author: baanders
   ms.author: baanders
