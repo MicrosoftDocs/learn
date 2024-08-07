@@ -18,13 +18,13 @@ Manulife is using a wide range of Azure products to boost performance in many pa
 
 More specifically, Manulife is using **Azure Machine Learning and Azure AI Document Intelligence to fight fraud**. These tools find patterns in the data that help identify fraudulent claims. This project has substantial potential, given that insurance companies may lose hundreds of millions a year because of fraud.
 
-Meanwhile, Azure has scaled up how many documents customers could submit online, which has made more data available for Manulife document intelligence models. John Hancock, the Manulife division at the United States, is using **Azure Synapse Analytics** to run AI models on these bigger datasets. This initiative is succeeding in getting more insights, ensuring accuracy, speeding up workflows, and improving customer experiences.
+Meanwhile, Azure scaled up how many documents customers could submit online, which has made more data available for Manulife document intelligence models. John Hancock, the Manulife division at the United States, is using **Azure Synapse Analytics** to run AI models on these bigger datasets. This initiative is succeeding in getting more insights, ensuring accuracy, speeding up workflows, and improving customer experiences.
 
 ![Image showing person working in a spreadsheet.](../media/4-report.jpg)
 
 ## The results
 
-Manulife is already benefiting from the advantages of their Azure-based AI transformation. Their development time is now 30 percent lower, and they’ve reduced data-related costs in a 50 percent. Their performance has boosted, and so they’re running more than 50 percent more services than before.
+Manulife is already benefiting from the advantages of their Azure-based AI transformation. Their development time is now 30 percent lower, and they reduced data-related costs in a 50 percent. Their performance has increased so they’re running more than 50 percent more services than before.
 
 To learn more, read [Manulife supercharges development and reduces costs by 50 percent with Microsoft Azure](https://aka.ms/manulife-customer-story).
 

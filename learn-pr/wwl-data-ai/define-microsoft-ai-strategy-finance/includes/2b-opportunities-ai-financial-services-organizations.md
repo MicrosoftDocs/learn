@@ -47,7 +47,7 @@ These tools are also powerful for analytical tasks.
 Consider that these products belong to a robust Microsoft ecosystem that ensures security and privacy. You can learn more about how to implement them in FSI by checking the [Microsoft Cloud for Financial Services](https://www.microsoft.com/industry/financial-services/microsoft-cloud-for-financial-services) and [Azure for Financial Services](https://azure.microsoft.com/solutions/industries/financial) websites.
 
 > [!TIP]
-> take a moment to consider what opportunities you hope to realize with AI in your organization.
+> Take a moment to consider what opportunities you hope to realize with AI in your organization.
 > ![Image showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let’s explore a real success story in banking: how Swift is using Microsoft AI to improve security in transactions.
