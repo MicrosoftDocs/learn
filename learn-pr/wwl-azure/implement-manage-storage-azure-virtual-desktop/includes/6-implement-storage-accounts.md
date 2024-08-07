@@ -7,7 +7,7 @@ Azure supports multiple types of storage accounts for different storage scenario
 
 To create a storage account via the Azure portal, select **+ Create a resource** from the dashboard. In the resulting Azure Marketplace search window, search for **storage account** and select the resulting search result. This will lead to an overview page for storage accounts; select **Create** to proceed with the storage account creation wizard.
 
-:::image type="content" source="../media/create-storage-account-0-d21cefc5.png" alt-text="A screenshot of the storage account quick create option in a browser":::
+:::image type="content" source="../media/create-storage-account-0-d21cefc5.png" alt-text="A screenshot of the storage account quick create option in a browser.":::
 
 
 ### Basics<br>
