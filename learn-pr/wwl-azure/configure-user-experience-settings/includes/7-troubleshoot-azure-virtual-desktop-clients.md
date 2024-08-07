@@ -53,7 +53,7 @@ cd $env:TEMP\DiagOutputDir\RdClientAutoTrace
 tracerpt "$filename.etl" -o "$outputFolder\$filename.csv" -of csv
 ```
 
-To convert the .ETL file to .XML, open Command Prompt or PowerShell and run the following, replacing `<filename>` with the name of the file you want to convert and $outputFolder with the directory in which to create the .XML file.
+To convert the .ETL file to .XML, open Command Prompt or PowerShell and run the following, replacing `<filename>` with the name of the file you want to convert and `$outputFolder` with the directory in which to create the .XML file.
 
 ```powershell
 $filename = "<filename>"

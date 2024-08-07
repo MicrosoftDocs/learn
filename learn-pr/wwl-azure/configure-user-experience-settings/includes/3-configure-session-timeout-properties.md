@@ -13,7 +13,7 @@ The timeout options for RDP are set on the servers in the Local Group Policy. â€
     
 3.  In the right pane of the Local Group Policy Editor, double-click to configure:
     
-    For example the, **Set time limit for logoff of RemoteApp sessions** is seen.
+    For example, the **Set time limit for logoff of RemoteApp sessions** is seen.
     
     :::image type="content" source="../media/group-policy-timeout-2-258f97f7-ad36021c.png" alt-text="Screenshot of Set time limit for logoff of RemoteApp sessions.":::
     
