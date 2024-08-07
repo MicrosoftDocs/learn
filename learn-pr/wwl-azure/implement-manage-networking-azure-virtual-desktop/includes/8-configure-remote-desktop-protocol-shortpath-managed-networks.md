@@ -43,5 +43,3 @@ When adding Private Link with Azure Virtual Desktop, you have the following supp
 
  -  If you create a private endpoint for initial feed discovery, the workspace used for the global sub-resource governs the shared Fully Qualified Domain Name (FQDN), facilitating the initial discovery of feeds across all workspaces. You should create a separate workspace that is only used for this purpose and doesn't have any application groups registered to it. Deleting this workspace will cause all feed discovery processes to stop working.
  -  You can't control access to the workspace used for the initial feed discovery (global sub-resource). If you configure this workspace to only allow private access, the setting is ignored. This workspace is always accessible from public routes.
-
-Q
