@@ -15,7 +15,7 @@ abstract: |
   - Use serverless compute and parallelism with Delta live tables
   - Perform cost based optimization and query performance
   - Use Change Data Capture (CDC)
-  - Leverage enhanced autoscaling capabilities
+  - Apply enhanced autoscaling capabilities
   - Implement Observability and enhance data quality metrics
 prerequisites: |
   Before starting this module, you should have a fundamental knowledge of data analytics concepts. Consider completing [Azure Data Fundamentals certification](/certifications/azure-data-fundamentals?azure-portal=true) before starting this module.
