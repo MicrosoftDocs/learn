@@ -7,7 +7,7 @@ To redirect calling and meeting functionality to the local device, Azure Virtual
  -  New Teams can use either SlimCore or the WebRTC Redirector Service. SlimCore is available in preview and you need [to opt in to the preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client) to use it. If you use SlimCore, you should also install the WebRTC Redirector Service. This allows a user to fall back to WebRTC, such as if they roam between different devices that don't support the new optimization architecture.
  -  Classic Teams uses the WebRTC Redirector Service.
 
-If you're using the [classic Teams app with Virtual Desktop Infrastructure (VDI) environments](/microsoftteams/teams-for-vdi), such as as Azure Virtual Desktop, end of support is **October 1, 2024** and end of availability is **July 1, 2025**, after which you'll need to use the new Microsoft Teams app.
+If you're using the [classic Teams app with Virtual Desktop Infrastructure (VDI) environments](/microsoftteams/teams-for-vdi), such as Azure Virtual Desktop, end of support is **October 1, 2024** and end of availability is **July 1, 2025**, after which you'll need to use the new Microsoft Teams app.
 
 ## Before you can use Microsoft Teams on Azure Virtual Desktop, you need:<br>
 
@@ -25,7 +25,7 @@ If you're using the [classic Teams app with Virtual Desktop Infrastructure (VDI)
 
 Media optimization for Microsoft Teams is only available for the following clients:
 
- -  [Remote Desktop client for Windows](/azure/virtual-desktop/users/connect-windows) or the [Azure Virtual Desktop app](/azure/virtual-desktop/users/connect-windows-azure-virtual-desktop-app), version 1.2.1026.0 or later, including ARM64-based devices.
+ -  [Remote Desktop client for Windows](/azure/virtual-desktop/users/connect-windows) or the [Azure Virtual Desktop app](/azure/virtual-desktop/users/connect-windows-azure-virtual-desktop-app), version 1.2.1026.0 or later, including Arm64-based devices.
  -  [Remote Desktop client for macOS](/azure/virtual-desktop/users/connect-macos), version 10.7.7 or later.
  -  [Windows App](/windows-app/get-started-connect-devices-desktops-apps).
 
@@ -77,7 +77,7 @@ After installing the WebRTC Redirector Service and the Teams desktop app, follow
 3.  Select your user profile image, then select **About**.
 4.  Select **Version**.
     
-    If media optimizations loaded, the banner shows you **AVD SlimCore Media Optimized** or **AVD Media Optimized**. If the banner shows you **AVD Media not connected**, quit the Teams app and try again.
+    If media optimizations loaded, the banner shows you **AVD SlimCore Media Optimized** or **AVD Media Optimized**. If the banner shows your **AVD Media not connected**, quit the Teams app and try again.
 5.  Select your user profile image, then select **Settings**.
     
     If media optimizations loaded, the audio devices and cameras available locally will be enumerated in the device menu. If the menu shows **Remote audio**, quit the Teams app and try again. If the devices still don't appear in the menu, check the Privacy settings on your local PC. Ensure the under **Settings** &gt; **Privacy** &gt; **App permissions - Microphone** the setting **"Allow apps to access your microphone"** is toggled **On**. Disconnect from the remote session, then reconnect and check the audio and video devices again. To join calls and meetings with video, you must also grant permission for apps to access your camera.
@@ -90,7 +90,7 @@ If you want to use certain optional features for Teams on Azure Virtual Desktop,
 
 ### Enable hardware encode for Teams on Azure Virtual Desktop
 
-Hardware encode lets you increase video quality for the outgoing camera during Teams calls. In order to enable this feature, your client needs to be running version 1.2.3213 or later of the [Windows Desktop client](/azure/virtual-desktop/whats-new-client-windows). You need to repeat the following instructions for every client device.
+Hardware encodes lets you increase video quality for the outgoing camera during Teams calls. In order to enable this feature, your client needs to be running version 1.2.3213 or later of the [Windows Desktop client](/azure/virtual-desktop/whats-new-client-windows). You need to repeat the following instructions for every client device.
 
 To enable hardware encode:
 

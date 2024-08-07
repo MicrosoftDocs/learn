@@ -48,6 +48,6 @@ Here are the basic steps of how to configure RDS to deploy Microsoft 365 Apps on
 2.  Install and configure Windows Server.
 3.  Install and configure RDS.
     
-    For example, [follow these steps to deploy a virtual desktop collection](/windows-server/remote/remote-desktop-services/rds-create-collection) on Windows Server..
+    For example, [follow these steps to deploy a virtual desktop collection](/windows-server/remote/remote-desktop-services/rds-create-collection) on Windows Server.
 
 After you complete all the RDS configuration steps, users can connect to any of the virtual machines and run Microsoft 365 Apps.

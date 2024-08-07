@@ -74,13 +74,13 @@ Applications aren't assigned individually to users unless you're using app attac
 
 ## Publish Microsoft Store applications
 
-Applications in the Microsoft Store are updated frequently and often install automatically. The directory path for an application installed from the Microsoft Store includes the version number, which changes each time an application is updated. If an update happens automatically, the path changes and the application is no longer available to users. You can publish applications using the Windows shell:appsFolder location in the format shell:AppsFolder\\&lt;PackageFamilyName&gt;!&lt;AppId&gt;, which doesn't use the .exe file or the directory path with the version number. This method ensures that the application location is always correct.
+Applications in the Microsoft Store are updated frequently and often install automatically. The directory path for an application installed from the Microsoft Store includes the version number, which changes each time an application is updated. If an update happens automatically, the path changes and the application are no longer available to users. You can publish applications using the Windows shell: appsFolder location in the format shell:AppsFolder\\&lt;PackageFamilyName&gt;!&lt;AppId&gt;, which doesn't use the .exe file or the directory path with the version number. This method ensures that the application location is always correct.
 
-Using shell:appsFolder means the application icon isn't picked up automatically from the application. You should provide an icon file on a local drive on each session host in a path that doesn't change, unlike the application installation directory.
+Using shell: appsFolder means the application icon isn't picked up automatically from the application. You should provide an icon file on a local drive on each session host in a path that doesn't change, unlike the application installation directory.
 
 Here's how to publish a Microsoft Store application using the Windows user interface and the Azure portal:
 
-1.  On your session host, open File Explorer and go to the path shell:appsFolder.
+1.  On your session host, open File Explorer and go to the path shell: appsFolder.
 2.  Find the application in the list, right-click it, then select **Create a shortcut**.
 3.  For the shortcut prompt that appears, select **Yes** to place the shortcut on the desktop.
 4.  View the properties of the shortcut and make a note of the **Target value**. This value is the package family name and application ID you need to publish the application.
