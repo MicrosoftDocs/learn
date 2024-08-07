@@ -1,5 +1,3 @@
-# Implementing Change Data Capture in Delta Live Tables with Azure Databricks
-
 Implementing Change Data Capture (CDC) in Delta Live Tables (DLT) with Azure Databricks involves capturing and processing changes made to the data in real-time. This approach enables efficient data warehousing and analytics by ensuring that the data remains up-to-date. The following steps outline how to implement CDC in Delta Live Tables with Azure Databricks:
 
 1. Setting Up the Environment:

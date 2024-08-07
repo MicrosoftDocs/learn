@@ -1,6 +1,6 @@
 
 
-Now's your chance to try some optimization techniques with Spark and Delta Live tables.
+Now's your chance to try some optimization techniques with Spark and Delta Live Tables.
 
 > [!NOTE]
 > To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
