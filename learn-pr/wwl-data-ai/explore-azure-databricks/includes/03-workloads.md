@@ -4,7 +4,7 @@ Azure Databricks offers capabilities for various workloads including Machine Lea
 
 This workload is designed for data scientists and engineers who need to collaborate on complex data processing tasks. It provides an integrated environment with Apache Spark for big data processing in a data lakehouse, and supports multiple languages including Python, R, Scala, and SQL. The platform facilitates data exploration, visualization, and the development of data pipelines.
 
-:::image type="content" source="../media/03-azure-databricks-data-science-engineering.png" alt-text="Diagram of Databricks data ingestion & data sources screen." lightbox="03-azure-databricks-data-science-engineering.png":::
+:::image type="content" source="../media/03-azure-databricks-data-science-engineering.png" alt-text="Diagram of Databricks data ingestion & data sources screen." lightbox="../media/03-azure-databricks-data-science-engineering.png":::
 
 ## Machine Learning
 
