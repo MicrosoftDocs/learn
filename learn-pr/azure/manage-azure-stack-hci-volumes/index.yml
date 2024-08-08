@@ -1,29 +1,28 @@
 ### YamlMime:Module
 uid: learn-pr.azure.manage-azure-stack-hci-volumes
 metadata:
-  title: 'Manage Azure Stack HCI volumes'
+  title: Manage Azure Stack HCI volumes
   description: Azure Stack HCI provides highly resilient and performant software-defined volumes.
+  manager: femila
   ms.date: 03/30/2022
   author: JasonGerend
   ms.author: jgerend
   ms.topic: module
   ms.service: azure-stack
   ms.subservice: azure-stack-hci
-title: 'Manage Azure Stack HCI volumes'
+title: Manage Azure Stack HCI volumes
 summary: Manage Azure Stack HCI volumes.
-abstract:  | 
+abstract: |
   After completing this module, you’ll be able to:
   - Plan for volumes in Microsoft Azure Stack HCI. 
   - Create and delete volumes in Azure Stack HCI.
   - Maintain volumes in Azure Stack HCI.
-  
 prerequisites: |
   To get the best learning experience from this module, you should have:
   - A good understanding of storage technologies and their implementation on the Windows operating system platform
   - General familiarity with software defined storage concepts
   - General familiarity with software defined storage on Azure Stack HCI
   - Experience in implementing Azure Stack HCI
-  
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

@@ -3,11 +3,13 @@ uid: learn.wwl.use-azure-machine-learn-job-for-automation.create-pipelines
 title: Create Azure Machine Learning jobs
 metadata:
   title: Create Azure Machine Learning jobs
-  description: "Create Azure Machine Learning jobs"
-  ms.date: 07/10/2024
+  description: Create Azure Machine Learning jobs
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

@@ -4,10 +4,12 @@ title: Introduction
 metadata:
   title: Introduction
   description: Introduction to Azure AI Document Intelligence
-  ms.date: 03/14/2023
   author: laujan
   ms.author: lajanuar
+  ms.date: 03/14/2023
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 2
 content: |
   [!INCLUDE[](includes/1-introduction.md)]

@@ -7,8 +7,9 @@ metadata:
   author: PatAltimore
   ms.author: chnoring
   ms.topic: module
-  ms.custom: team=nextgen
+  ms.custom: team=cloud_advocates
   ms.service: iot-edge
+  ms.collection: ce-advocates-ai-copilot
 title: "Deploy a pre-built module to the Edge device"
 summary: "Deploy a pre-built temperature simulator module to an IoT Edge device using a container. Check that the module was successfully created and deployed and view simulated data."
 abstract: |

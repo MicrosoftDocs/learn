@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.fundamentals-of-ai-security.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: TBD
+  ms.date: 07/17/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 3
+content: Choose the best response for each question. Then select **Check your answers**.
+quiz:
+  questions:
+    - content: "What is one of the main challenges of securing AI systems?"
+      choices:
+        - content: "Nondeterministic nature of generative AI systems"
+          isCorrect: true
+          explanation: "As AI systems are nondeterministic, this means that you don't always get the same output with the same input. Security controls often assume that the same input equals the same output every time, so this creates challenges when looking to apply security controls to AI systems."
+        - content: "AI is fundamentally insecure"
+          isCorrect: false
+          explanation: "AI isn't fundamentally insecure, although securing AI systems is a rapidly developing field and new methods to secure it are being developed all the time."
+        - content: "AI is too new to secure"
+          isCorrect: false
+          explanation: "While AI is a new technology and methods for securing it are developing rapidly, it isn't impossible to apply security controls to AI."
+    - content: "Which kind of jailbreak attack involves sending an AI model multiple prompts to incrementally break guardrails to enact a jailbreak attack?"
+      choices:
+        - content: "Spoofing"
+          isCorrect: false
+          explanation: "Spoofing is a type of cybersecurity attack, but not relevant to sending an AI model multiple prompts to break guardrails."
+        - content: "Injection"
+          isCorrect: false
+          explanation: "Injection is a type of cybersecurity attack, but not relevant to sending an AI model multiple prompts to break guardrails."
+        - content: "Crescendo"
+          isCorrect: true
+          explanation: "Crescendo acts over several turns, gradually shifting the conversation to a particular end to enact a jailbreak."
+    - content: "Which is the middle layer of the three AI architecture layers?"
+      choices:
+        - content: "AI Usage Security"
+          isCorrect: false
+          explanation: "AI Usage Security layer is the AI architecture layer that deals with how AI capabilities are ultimately used and consumed. This layer is the top of the stack and closest to human users."
+        - content: "AI Platform Security"
+          isCorrect: false
+          explanation: "AI platform security layer is the AI architecture layer that deals with providing AI capabilities to applications. This is the bottom layer of the stack."
+        - content: "AI Infrastucture Security"
+          isCorrect: true
+          explanation: "AI application security is the AI architecture layer that deals with how an application accesses the AI capabilities and provides the service or interface that will be consumed by the user. This is the “middle” layer in AI architecture."
+ 

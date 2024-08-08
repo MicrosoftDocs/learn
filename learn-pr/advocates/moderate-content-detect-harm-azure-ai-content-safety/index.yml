@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.moderate-content-detect-harm-azure-ai-content-safety
 metadata:
-  ms.author: apspeigh
-  author: aprilspeight
-  ms.date: 06/24/2024
   title: Moderate Content and Detect Harm with Azure AI Content Safety
   description: Learn how to choose and build a content moderation system with Azure AI Content Safety.
-  ms.topic: module-guided-project
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.date: 06/24/2024
   ms.service: artificial-intelligence
+  ms.topic: module-guided-project
+  ms.collection:
+    - ce-advocates-ai-copilot
 title: Moderate Content and Detect Harm with Azure AI Content Safety
 summary: Learn how to moderate content and detect harm with Azure AI Content Safety.
 abstract: |

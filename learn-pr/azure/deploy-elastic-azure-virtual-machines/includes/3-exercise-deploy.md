@@ -1,7 +1,7 @@
 
 Deploying Elastic on Azure VMs provides a high level of flexibility and control of the underlying infrastructure. The Elasticsearch (self-managed) template available in the Azure Marketplace offers a way to get started quickly using best practices.
 
-Recall that the start-up retailer you work for currently uses Elastic on-premises to manage sales transactions. They would like to migrate to Azure VMs to improve data accessibility for remote workers and other departments while reducing the burden of maintaining infrastructure. Here, you'll go through the steps for deploying an Elastic workload on Azure VMs.
+Recall that the start-up retailer you work for currently uses Elastic on-premises to manage sales transactions. They would like to migrate to Azure VMs to improve data accessibility for remote workers and other departments while reducing the burden of maintaining infrastructure. Here, you go through the steps for deploying an Elastic workload on Azure VMs.
 
 1. From the Azure Marketplace, search for and choose the Elasticsearch (self-managed) template.
 
@@ -17,7 +17,7 @@ Recall that the start-up retailer you work for currently uses Elastic on-premise
     1. Choose Password for the authentication type and enter your password
 
 1. Enter the **Cluster Settings**.
-    1. Choose the default Elasticsearch version, which will be the most recent.
+    1. Choose the default Elasticsearch version, which is the most recent one.
     1. Name your cluster es-on-azure
     1. Use the default settings for the virtual network configuration
 

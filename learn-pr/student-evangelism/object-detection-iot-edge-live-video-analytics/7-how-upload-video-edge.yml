@@ -4,11 +4,10 @@ title: How to upload a sample video file to your edge device
 metadata:
   title: How to upload a sample video file to your edge device
   description: The module helps learner upload a sample video to the edge device.
-  ms.date: 05/01/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 5
 content: |
   [!include[](includes/7-how-upload-video-edge.md)]

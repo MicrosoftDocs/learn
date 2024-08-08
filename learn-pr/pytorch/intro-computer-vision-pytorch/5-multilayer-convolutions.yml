@@ -8,6 +8,8 @@ metadata:
   ms.author: chnoring
   ms.date: 06/04/2020
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
   ms.custom: team=nextgen
 durationInMinutes: 10
 sandbox: true

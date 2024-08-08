@@ -29,7 +29,7 @@ Here, you install Node.js. As with MongoDB, the process involves registering the
 1. Register the Node.js repository so the package manager can locate the packages using the following command. This step can take up to 10 mins or more depending on your internet connection. You might see a deprecation warning for this script that causes a short delay, but the installation does complete.
 
     ```bash
-    curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+    curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
     ```
 
 1. Install the Node.js package:

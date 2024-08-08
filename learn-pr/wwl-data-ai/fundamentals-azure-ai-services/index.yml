@@ -2,12 +2,14 @@
 uid: learn.wwl.fundamentals-azure-ai-services
 metadata:
   title: Fundamentals of Azure AI services
-  description: "This module is an introduction to how Azure AI services can be used to build applications."
-  ms.date: 12/05/2023
+  description: This module is an introduction to how Azure AI services can be used to build applications.
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: module
+  ms.date: 12/05/2023
   ms.service: azure-ai-services
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Fundamentals of Azure AI services
 summary: In this module, you learn the fundamentals of how Azure AI services can be used to build applications.
 abstract: |

@@ -3,11 +3,13 @@ uid: learn.wwl.fundamentals-machine-learning.multiclass-classification
 title: Multiclass classification
 metadata:
   title: Multiclass classification
-  description: "Multiclass classification"
-  ms.date: 09/24/2023
+  description: Multiclass classification
   author: wwlpublish
   ms.author: gmalc
+  ms.date: 09/24/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 12
 content: |
   [!include[](includes/6-multiclass-classification.md)]

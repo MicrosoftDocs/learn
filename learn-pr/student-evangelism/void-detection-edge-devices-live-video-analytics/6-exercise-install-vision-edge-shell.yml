@@ -4,11 +4,10 @@ title: Exercise - Install Vision Edge Shell
 metadata:
   title: Exercise - Install Vision on Edge Solution
   description: In this section, we help learner to install Vision Edge Shell.
-  ms.date: 03/01/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 8 # dummy number at present
 content: |
   [!include[](includes/6-exercise-install-vision-edge-shell.md)]
@@ -19,7 +18,7 @@ quiz:
     choices:
     - content: "To detect objects with tags given by the API"
       isCorrect: false
-      explanation: "Custom Vision API won’t provide you tags. You can tag your images"
+      explanation: "Custom Vision API doesn't provide you with tags. You can tag your images"
     - content: "To train a model for your images based on the choice of your machine learning model"
       isCorrect: false
       explanation: "Custom Vision doesn't allow you to use your machine learning model to detect objects"

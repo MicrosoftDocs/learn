@@ -4,10 +4,12 @@ title: How Azure AI Document Intelligence works
 metadata:
   title: How Azure AI Document Intelligence works
   description: How Azure AI Document Intelligence works
-  ms.date: 03/14/2023
   author: laujan
   ms.author: lajanuar
+  ms.date: 03/14/2023
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 5
 content: |
   [!INCLUDE[](includes/3-how-form-recognizer-works.md)]

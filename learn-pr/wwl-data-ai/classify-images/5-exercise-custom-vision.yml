@@ -3,11 +3,13 @@ uid: learn.wwl.classify-images.exercise-custom-vision
 title: Exercise - Classify images with Azure AI Custom Vision
 metadata:
   title: Exercise - Classify images with Azure AI Custom Vision
-  description: "Exercise - Classify images with Azure AI Custom Vision"
-  ms.date: 07/10/2024
+  description: Exercise - Classify images with Azure AI Custom Vision
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labId: 100992
 labModal: true

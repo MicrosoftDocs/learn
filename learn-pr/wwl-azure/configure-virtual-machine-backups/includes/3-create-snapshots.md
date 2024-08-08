@@ -32,9 +32,9 @@ Let's take a closer look at the characteristics of snapshots and recovery points
 
 Here are some important benefits and considerations about using snapshots and recovery points.
 
-- **Consider recovery after Phase 1**. Use the snapshot captured in Phase 1 of the Azure Backup job to restore your virtual machine from the snapshot. Phase 2 transfers the snapshot to the Recovery Services vault, so recovery points can be created. You don't have to wait for Phase 2 to complete before attempting a full restore from the snapshot.
+- **Consider recovery after Phase 1**. To restore your virtual machine from the snapshot, use the snapshot captured in Phase 1 of the Azure Backup job. Phase 2 transfers the snapshot to the Recovery Services vault, so recovery points can be created. You don't have to wait for Phase 2 to complete before attempting a full restore from the snapshot.
 
-- **Consider disk type, sizing, pricing**. Back up Standard SSD disks, Standard HDD disks, and Premium SSD disks. Use disk sizes up to 32 TB. For Premium Azure storage accounts, snapshots taken for instant recovery points count towards the 10-TB limit of allocated space.
+- **Consider disk type, sizing, pricing**. Back up Standard SSD disks, Standard Hard Disk Drive (HDD) disks, and Premium SSD disks. Use disk sizes up to 32 TB. For Premium Azure storage accounts, snapshots taken for instant recovery points count towards the 10-TB limit of allocated space.
 
    > [!Note]
    > Azure Backup doesn't recommend resizing disks.

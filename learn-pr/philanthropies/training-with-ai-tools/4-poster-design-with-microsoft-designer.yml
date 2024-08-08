@@ -4,10 +4,12 @@ title: Exercise - Design a poster using Microsoft Designer
 metadata:
   title: Exercise - Design a poster using Microsoft Designer
   description: This content is a part of the 'Training with AI tools' module.
-  ms.date: 03/15/2024
   author: yoosunee
   ms.author: andreapark
+  ms.date: 03/15/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 45
 content: |
   [!include[](includes/4-poster-design-with-microsoft-designer.md)]

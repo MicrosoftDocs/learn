@@ -4,10 +4,12 @@ title: Add the Azure AI Speech translation component
 metadata:
   title: Add the Azure AI Speech translation component
   description: Description to Add the Azure AI Speech translation component
-  ms.date: 01/17/2024
   author: marlenaklein-msft
   ms.author: marlenaklein
+  ms.date: 01/17/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/6-add-cognitive-services-speech-translation.md)]

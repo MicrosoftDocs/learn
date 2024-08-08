@@ -5,9 +5,11 @@ metadata:
   description: Save time, improve quality, and increase impact in your funding activities. Copilot can also help you learn new skills, discover new opportunities, and enhance your creativity.
   author: CourtneyHMicrosoft
   ms.author: cohodge
-  ms.topic: module-standard-task-based
   ms.service: artificial-intelligence
   ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Accelerate nonprofit funding solutions with Microsoft Copilot
 summary: Save time, improve quality, and increase impact in your funding activities. Copilot can also help you learn new skills, discover new opportunities, and enhance your creativity.
 abstract: |

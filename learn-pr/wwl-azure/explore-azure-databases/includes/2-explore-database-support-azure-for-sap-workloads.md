@@ -51,3 +51,4 @@ For more information, see the following SAP Notes:
   - RDBMS platforms supported on Windows
   - SAP products supported on Linux
   - RDBMS platforms supported on Linux (SLES, RHEL, Oracle Linux)
+

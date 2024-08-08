@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.introduction-to-polyglot-notebooks
 metadata:
-  ms.author: japhletnwamu
-  ms.service: artificial-intelligence
-  author: japhletnwamu
-  ms.date: 04/03/2024
   title: Introduction to Polyglot Notebooks
   description: Use Polyglot Notebooks to create and run code in multiple languages in a single document. This module introduces you to Polyglot Notebooks and shows you how to create and run code in multiple languages.
+  author: japhletnwamu
+  ms.author: japhletnwamu
+  ms.date: 04/03/2024
+  ms.service: artificial-intelligence
   ms.topic: module
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=cloud_advocates
 title: Introduction to Polyglot Notebooks
 summary: Use Polyglot Notebooks to create and run code in multiple languages in a single document. This module introduces you to Polyglot Notebooks and shows you how to create and run code in multiple languages.

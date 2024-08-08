@@ -1,4 +1,4 @@
-Application Insights is an extension of Azure Monitor and provides Application Performance Monitoring (also known as “APM”) features. APM tools are useful to monitor applications from development, through test, and into production in the following ways:
+Application Insights is an extension of Azure Monitor and provides Application Performance Monitoring (APM) features. APM tools are useful to monitor applications from development, through test, and into production in the following ways:
 
 * Proactively understand how an application is performing.
 * Reactively review application execution data to determine the cause of an incident.
@@ -14,7 +14,7 @@ Features include, but not limited to:
 | Feature | Description |
 |:---|:---|
 | Live Metrics | Observe activity from your deployed application in real time with no effect on the host environment. |
-| Availability | Also known as “Synthetic Transaction Monitoring”, probe your applications external endpoint(s) to test the overall availability and responsiveness over time. |
+| Availability | Also known as *Synthetic Transaction Monitoring*, probe your applications external endpoints to test the overall availability and responsiveness over time. |
 | GitHub or Azure DevOps integration | Create GitHub or Azure DevOps work items in context of Application Insights data. |
 | Usage | Understand which features are popular with users and how users interact and use your application |
 | Smart Detection | Automatic failure and anomaly detection through proactive telemetry analysis. |

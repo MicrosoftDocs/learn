@@ -4,7 +4,7 @@ title: Describe concepts around managing Linux with Azure Arc
 metadata:
   title: Describe concepts around managing Linux with Azure Arc
   description: Describe how to manage Linux systems with Azure Arc and the cross-team coordination required to deploy the solution.
-  ms.date: 11/21/2023
+  ms.date: 07/30/2024
   author: johnmarco
   ms.author: johnmarc
   ms.topic: unit

@@ -3,6 +3,7 @@ uid: learn.connect-aks-edge-essentials-azure-arc
 metadata:
   title: Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc 
   description: Deploy applications to Azure Arc-enabled AKS Edge Essentials cluster with GitOps and Flux.
+  manager: lizross
   ms.date: 01/17/2024
   author: asergaz
   ms.author: sergaz

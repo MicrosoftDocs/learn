@@ -2,13 +2,15 @@
 uid: learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation
 metadata:
   title: Challenge project - Microsoft Copilot for Prototyping and MVP Creation
-  description: "In this challenge project, Microsoft Copilot guides you on how to create prototypes/ mock-ups of your solution and on implementing the project."
-  ms.date: 12/04/2023
+  description: In this challenge project, Microsoft Copilot guides you on how to create prototypes/ mock-ups of your solution and on implementing the project.
   author: bethanyjep
   ms.author: bethanycheum
-  ms.custom: team=nextgen
-  ms.topic: module-challenge-project
+  ms.date: 12/04/2023
   ms.service: microsoft-copilot
+  ms.topic: module-challenge-project
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: team=nextgen
 title: Challenge project - Microsoft Copilot for Prototyping and MVP Creation
 summary: In this challenge project, Microsoft Copilot guides you on how to create prototypes/ mock-ups of your solution and on implementing the project.
 abstract: |

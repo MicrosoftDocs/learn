@@ -2,12 +2,14 @@
 uid: learn.wwl.use-own-data-azure-openai
 metadata:
   title: Implement Retrieval Augmented Generation (RAG) with Azure OpenAI Service
-  description: "Learn how to use your own data with the Azure OpenAI Service."
-  ms.date: 2/21/2024
+  description: Learn how to use your own data with the Azure OpenAI Service.
   author: ivorb
   ms.author: berryivor
-  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.date: 2/21/2024
   ms.service: azure-ai-openai
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Implement Retrieval Augmented Generation (RAG) with Azure OpenAI Service
 summary: "Azure OpenAI on your data allows developers to implement RAG with supported AI chat models to reference specific sources of data to ground the response."
 abstract: |

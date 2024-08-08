@@ -3,11 +3,13 @@ uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.exer
 title: Exercise-Translate text
 metadata:
   title: Exercise-Translate text
-  description: "Exercise-Translate text"
-  ms.date: 04/26/2024
+  description: Exercise-Translate text
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 04/26/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/4-exercise-translate-text.md)]

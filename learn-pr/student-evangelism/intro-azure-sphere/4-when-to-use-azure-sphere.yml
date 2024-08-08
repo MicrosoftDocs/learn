@@ -4,11 +4,10 @@ title: When to use Azure Sphere
 metadata:
   title: When to use Azure Sphere
   description: When to use Azure Sphere
-  ms.date: 04/14/2020
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/4-when-to-use-azure-sphere.md)]

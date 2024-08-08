@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/24/2023
+  ms.date: 07/19/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -23,7 +25,7 @@ quiz:
     - content: "Premium"
       isCorrect: false
       explanation: "Incorrect. The premium tier is suitable for production, but it isn't the lowest tier recommended for production."
-  - content: "Which of the following represents the expire time resolution when applying a time to live (TTL) to a key in Redis?"
+  - content: "Which of the following choices represents the expire time resolution when applying a time to live (TTL) to a key in Redis?"
     choices:
     - content: "1-millisecond"
       isCorrect: true

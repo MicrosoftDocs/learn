@@ -7,6 +7,7 @@ metadata:
   author: bandersmsft
   ms.author: banders
   ms.topic: module
+  ms.service: cost-management-billing
 title: Save money with Azure Reserved Instances
 summary: Save money by taking advantage of Azure Reservations. Learn how to analyze and buy reserved instances, optimize against underused resources, and understand the benefits provided through compute purchases. Perform basic reporting on your reservations.
 abstract: | 

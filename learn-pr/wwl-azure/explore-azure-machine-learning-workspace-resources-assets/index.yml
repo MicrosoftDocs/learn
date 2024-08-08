@@ -2,14 +2,14 @@
 uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets
 metadata:
   title: Explore Azure Machine Learning workspace resources and assets
-  description: "As a data scientist, you can use Azure Machine Learning to train and manage your machine learning models. Learn what Azure Machine Learning is, and get familiar with all its resources and assets."
-  ms.date: 10/09/2023
+  description: As a data scientist, you can use Azure Machine Learning to train and manage your machine learning models. Learn what Azure Machine Learning is, and get familiar with all its resources and assets.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: module-standard-task-based
-  ms.custom:
-  - N/A
+  ms.date: 10/09/2023
   ms.service: machine-learning
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Explore Azure Machine Learning workspace resources and assets
 summary: As a data scientist, you can use Azure Machine Learning to train and manage your machine learning models. Learn what Azure Machine Learning is, and get familiar with all its resources and assets.
 abstract: |

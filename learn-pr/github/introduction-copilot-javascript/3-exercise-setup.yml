@@ -3,11 +3,13 @@ uid: learn.github-copilot-with-javascript.exercise-setup
 title: Exercise - Set up GitHub Copilot to work with Visual Studio Code
 metadata:
   title: Exercise - Use Visual Studio Code and GitHub Copilot suggestions to develop with JavaScript
-  description: "Enable the GitHub Copilot service and install the extension in Visual Studio Code"
-  ms.date: 8/23/2023
+  description: Enable the GitHub Copilot service and install the extension in Visual Studio Code
   author: abrilurena
   ms.author: abrilu
+  ms.date: 8/23/2023
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: devx-track-js
 durationInMinutes: 5
 content: |

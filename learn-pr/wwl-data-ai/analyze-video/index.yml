@@ -2,12 +2,14 @@
 uid: learn.wwl.analyze-video
 metadata:
   title: Analyze video
-  description: "Analyze video"
-  ms.service: azure-ai-services
-  ms.date: 12/01/2023
+  description: Analyze video
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 12/01/2023
+  ms.service: azure-ai-services
   ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Analyze video
 summary: Azure Video Indexer is a service to extract insights from video, including face identification, text recognition, object labels, scene segmentations, and more.
 abstract: |

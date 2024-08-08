@@ -1,6 +1,6 @@
 In this video, you delve into an overview of how generative AI can support inclusive and accessible learning. You explore ways in which AI can support your ability to create dynamic and engaging learning environments that are accessible to all learners, regardless of their abilities or needs.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=79f77259-a006-4042-b6d6-152d8aea6efe]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2281616]
 
 In the video, you witnessed firsthand how AI enhanced accessibility for learners. Now, you're about to explore the specific AI tools that are being employed to cater to the diverse needs of learners. These tools aren't just about providing assistance; they're about empowering every person to learn in ways that work best for them.
 

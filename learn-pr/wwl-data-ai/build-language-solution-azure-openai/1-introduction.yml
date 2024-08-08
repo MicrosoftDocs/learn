@@ -3,11 +3,13 @@ uid: learn.wwl.build-language-solution-azure-openai.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Learn how to integrate Azure OpenAI into your application for intelligent natural language processing."
-  ms.date: 4/5/2023
+  description: Learn how to integrate Azure OpenAI into your application for intelligent natural language processing.
   author: ivorb
   ms.author: berryivor
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

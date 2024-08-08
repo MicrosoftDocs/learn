@@ -15,6 +15,8 @@ az group create \
   --location <resource-group-location>
 ```
 
+1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+
 1. From Cloud Shell, run the `az vm create` command to create an Ubuntu VM:
 
     ```azurecli

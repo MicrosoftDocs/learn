@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 03/14/2023
   author: laujan
   ms.author: lajanuar
+  ms.date: 03/14/2023
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 3
 content: |
   [!INCLUDE[](includes/6-knowledge-check.md)]

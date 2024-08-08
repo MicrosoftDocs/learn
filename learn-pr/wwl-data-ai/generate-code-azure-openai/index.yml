@@ -3,11 +3,13 @@ uid: learn.wwl.generate-code-azure-openai
 metadata:
   title: Generate code with Azure OpenAI Service
   description: Learn how to use the Azure OpenAI Service to generate and improve code.
-  ms.date: 6/20/2023
   author: ivorb
   ms.author: berryivor
-  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.date: 6/20/2023
   ms.service: azure-ai-openai
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Generate code with Azure OpenAI Service
 summary: This module shows engineers how to use the Azure OpenAI Service to generate and improve code.
 abstract: |
@@ -42,5 +44,4 @@ units:
 - learn.wwl.generate-code-azure-openai.knowledge-check
 - learn.wwl.generate-code-azure-openai.summary
 badge:
-  uid: |
-    learn.wwl.generate-code-azure-openai.badge
+  uid: learn.wwl.generate-code-azure-openai.badge

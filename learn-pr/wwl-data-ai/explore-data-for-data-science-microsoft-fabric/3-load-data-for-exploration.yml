@@ -3,15 +3,17 @@ uid: learn-wwl.explore-data-for-data-science-microsoft-fabric.load-data-for-expl
 title: Load data for exploration
 metadata:
   title: Load data for exploration
-  description: "Learn how to load data for data exploration purposes in Microsoft Fabric."
-  ms.date: 09/19/2023
+  description: Learn how to load data for data exploration purposes in Microsoft Fabric.
   author: wwlpublish
   ms.author: jupadrao
+  ms.date: 09/19/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai
-    - build-2023-fabric 
+    - build-2023-fabric
 durationInMinutes: 5
 content: |
   [!include[](includes/3-load-data-for-exploration.md)]

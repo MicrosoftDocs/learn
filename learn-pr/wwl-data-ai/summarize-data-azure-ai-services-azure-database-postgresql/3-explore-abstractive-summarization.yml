@@ -3,11 +3,13 @@ uid: learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.explor
 title: Explore abstractive summarization
 metadata:
   title: Explore abstractive summarization
-  description: "Explore abstractive summarization"
-  ms.date: 04/29/2024
+  description: Explore abstractive summarization
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 04/29/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/3-explore-abstractive-summarization.md)]

@@ -4,9 +4,11 @@ metadata:
   title: About Progressive Web Apps
   description: What is a Progressive Web App, or PWA?
   author: GitHubber17
-  ms.date: 12/22/2022
   ms.author: chnoring
+  ms.date: 12/22/2022
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: About Progressive Web Apps
 durationInMinutes: 5

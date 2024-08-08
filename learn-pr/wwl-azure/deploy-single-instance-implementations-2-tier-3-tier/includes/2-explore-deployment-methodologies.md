@@ -32,3 +32,4 @@ The supported scenarios include the full deployment of:
 
   - Single-node HANA instance, two-tier HSR (primary/secondary)
   - Pacemaker high-availability cluster, fully configured with SBD and SAP/Azure resource agents
+

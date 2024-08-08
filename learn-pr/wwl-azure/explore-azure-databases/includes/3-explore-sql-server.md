@@ -8,6 +8,6 @@ In order to make sure that the restore or creation of databases isn't initializi
 
 The following diagram illustrates a virtual machine configuration, which runs SQL Server with an SAP database and where tempdb data and tempdb logfile are placed on the D:\\ drive:
 
-:::image type="content" source="../media/simple-disk-structure-sql-server-6d98b649.png" alt-text="Diagram of simple virtual machine disk configuration for SQL Server.":::
+:::image border="false" type="content" source="../media/simple-disk-structure-sql-server-6d98b649.png" alt-text="Diagram showing simple virtual machine disk configuration for SQL Server.":::
 
 The diagram displays a simple case. As alluded to in the article [Considerations for Azure Virtual Machines DBMS deployment for SAP workload](/azure/virtual-machines/workloads/sap/dbms_guide_general), Azure storage type, number, and size of disks are dependent on different factors.

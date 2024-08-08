@@ -2,12 +2,15 @@
 uid: learn.github-copilot-with-javascript
 metadata:
   title: Using GitHub Copilot with JavaScript
-  description: "Use GitHub Copilot with Visual Studio Code to make changes and updates to a JavaScript application."
-  ms.date: 8/23/2023
+  description: Use GitHub Copilot with Visual Studio Code to make changes and updates to a JavaScript application.
   author: abrilurena
   ms.author: abrilu
-  ms.topic: module-standard-task-based
+  ms.date: 8/23/2023
   ms.service: github-copilot
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - ce-advocates-ai-copilot
+    - github-ai-copilot
   ms.devlang: javascript
 title: Using GitHub Copilot with JavaScript
 summary: "Use GitHub Copilot, an AI pair programmer that offers autocomplete-style suggestions as you code, to work with JavaScript"

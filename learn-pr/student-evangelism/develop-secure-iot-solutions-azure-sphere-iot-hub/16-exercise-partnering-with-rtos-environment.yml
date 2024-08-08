@@ -4,11 +4,10 @@ title: Exercise - Send Azure RTOS real-time room environment sensor data to IoT 
 metadata:
   title: Exercise - Send Azure RTOS real-time room environment sensor data to IoT Hub
   description: In this section, we send Azure RTOS real-time room environment sensor data to IoT Hub
-  ms.date: 12/11/2020
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 10 # dummy number at present
 content: |
   [!include[](includes/16-exercise-partnering-with-rtos-environment.md)]

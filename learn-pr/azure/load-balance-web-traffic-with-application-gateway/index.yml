@@ -8,7 +8,7 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   ms.topic: module
-  ms.service: application-gateway
+  ms.service: azure-application-gateway
 title: Load balance your web service traffic with Application Gateway
 summary: Improve application resilience by distributing load across multiple servers and use path-based routing to direct web traffic.
 abstract: | 

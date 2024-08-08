@@ -6,7 +6,7 @@ metadata:
   description: Build a deployment workflow for Bicep infrastructure as code templates. Create a single workflow to deploy infrastructure, applications, and data.
   ms.service: azure-resource-manager
   manager: jasongroce
-  ms.date: 12/19/2022
+  ms.date: 07/18/2024
   author: mumian
   ms.author: jgao
   ms.topic: module
@@ -16,10 +16,10 @@ summary: |
   Create a unified workflow to deploy your entire environment. You'll add build jobs to your workflow, and use workflow artifacts and Bicep outputs to publish applications, databases, and blobs.
 abstract: |
   After completing this module, you'll be able to:
-    - Deploy Azure infrastructure, applications, database scripts, and storage blobs from a single workflow
-    - Use workflow scripts and workflow actions to perform deployment steps
-    - Use workflow artifacts to publish compiled files for your deployment workflow jobs to use
-    - Pass data from your Bicep files to other deployment steps by using outputs
+    - Deploy Azure infrastructure, applications, database scripts, and storage blobs from a single workflow.
+    - Use workflow scripts and workflow actions to perform deployment steps.
+    - Use workflow artifacts to publish compiled files for your deployment workflow jobs to use.
+    - Pass data from your Bicep files to other deployment steps by using outputs.
 prerequisites: |
   You should be familiar with using:
 
@@ -30,14 +30,14 @@ prerequisites: |
 
   To work through the exercises in the module, you'll need:
 
-  - An Azure account, with the ability to create resource groups and Microsoft Entra applications.
-  - A GitHub account.
+  - An Azure account, with the ability to create resource groups and Microsoft Entra applications
+  - A GitHub account
 
   To work through the exercises, you'll also need the following installed locally:
 
-  - [Visual Studio Code](https://code.visualstudio.com).
-  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
-  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).
+  - [Visual Studio Code](https://code.visualstudio.com)
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps)
 iconUrl: /training/achievements/bicep/manage-end-end-deployment-scenarios-using-bicep-github-actions.svg
 levels:
   - advanced

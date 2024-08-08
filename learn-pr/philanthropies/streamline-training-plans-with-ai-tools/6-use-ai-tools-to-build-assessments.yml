@@ -3,11 +3,13 @@ uid: learn.philanthropies.streamline-training-plans-with-ai-tools.use-ai-tools-t
 title: Using AI tools to help build assessments
 metadata:
   title: Using AI tools to help build assessments
-  description: This content is a part of the "Streamline training plans with AI tools" module.
-  ms.date: 03/07/2024
+  description: This content is a part of the Streamline training plans with AI tools module.
   author: yoosunee
   ms.author: andreapark
+  ms.date: 03/07/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/6-use-ai-tools-to-build-assessments.md)]
