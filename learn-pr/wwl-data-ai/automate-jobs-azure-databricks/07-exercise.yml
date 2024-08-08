@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.perform-data-analysis-azure-databricks.exercise
+uid: learn.wwl.automate-jobs-azure-databricks.exercise
 title: Exercise - Automate data ingestion and processing
 metadata:
   title: Exercise - Automate data ingestion and processing
   description: "Exercise - Automate data ingestion and processing"
-  ms.date: 07/25/2024
+  ms.date: 08/05/2024
   author: wwlpublish
   ms.author: madiepev
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 30
 content: |
-  [!include[](includes/05-exercise.md)]
+  [!include[](includes/07-exercise.md)]

@@ -37,4 +37,4 @@ units:
 - learn.wwl.automate-jobs-azure-databricks.knowledge-check
 - learn.wwl.automate-jobs-azure-databricks.summary
 badge:
-  uid: learn.wwl.perform-data-analysis-azure-databricks.badge
+  uid: learn.wwl.automate-jobs-azure-databricks.badge
