@@ -10,8 +10,8 @@ The main goal for AI projects in sustainability is to build a **better, fairer w
 
 AI can be a powerful accelerant for the scale and pace of sustainability solutions needed to address the climate crisis. Microsoft’s journey to use AI to advance sustainability started in 2017 with the **AI for Earth** grants program. Now, it's increasingly clear that AI is an essential technology for making meaningful climate progress. For example, AI can accelerate sustainability by helping to integrate new sources of renewable energy onto the grid, optimize energy and water consumption, anticipate hazardous weather events, and speed up the discovery of low carbon building materials. Microsoft remains committed to creating a more sustainable future, which starts with our goals to being a carbon negative, water positive, and zero waste company by 2030. We'll keep using AI to better monitor our emissions and accelerate progress, all while increasing our use of clean energy to power datacenters.
 
-> [!TIP]
-> Take a moment to identify the goals and challenges specific to your organization.
-> ![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
+>[!TIP]
+>Take a moment to identify the goals and challenges specific to your organization.
+>![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
 
 Next, let’s find out specific scenarios in which Microsoft AI can power your sustainability initiatives.
