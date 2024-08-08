@@ -24470,16 +24470,6 @@
       "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-fslogix/10-knowledge-check.md",
-      "redirect_url": "/training/modules/implement-manage-fslogix/13-knowledge-check",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-fslogix/11-summary.md",
-      "redirect_url": "/training/modules/implement-manage-fslogix/14-summary",
-      "redirect_document_id": true
-    },
-    {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-fslogix/7-configure-cloud-cache.md",
       "redirect_url": "/training/modules/implement-manage-fslogix/9-configure-cloud-cache",
       "redirect_document_id": true
@@ -31317,6 +31307,66 @@
     {
       "source_path_from_root": "/learn-pr/wwl-azure/manage-security/8-summary.md",
       "redirect_url": "training/modules/manage-security/9-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-fslogix/10-configure-profile-containers.md",
+      "redirect_url": "training/modules/implement-manage-fslogix/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-fslogix/11-create-profile-container-azure-netapp-files.md",
+      "redirect_url": "training/modules/implement-manage-fslogix/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-fslogix/12-manage-rule-sets-application-mask.md",
+      "redirect_url": "training/modules/implement-manage-fslogix/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-fslogix/13-knowledge-check.md",
+      "redirect_url": "training/modules/implement-manage-fslogix/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-fslogix/14-summary.md",
+      "redirect_url": "training/modules/implement-manage-fslogix/11-summary",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-fslogix/2-plan-for-fslogix.md",
+      "redirect_url": "training/modules/implement-manage-fslogix/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-fslogix/4-install-fslogix.md",
+      "redirect_url": "training/modules/implement-manage-fslogix/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-fslogix/5-storage-options-for-fslogix-profile-containers.md",
+      "redirect_url": "training/modules/implement-manage-fslogix/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-fslogix/6-profile-container-versus-office-container.md",
+      "redirect_url": "training/modules/implement-manage-fslogix/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-fslogix/7-configure-office-containers.md",
+      "redirect_url": "training/modules/implement-manage-fslogix/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-fslogix/8-install-microsoft-office-fslogix-application-containers.md",
+      "redirect_url": "training/modules/implement-manage-fslogix/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-fslogix/9-configure-cloud-cache.md",
+      "redirect_url": "training/modules/implement-manage-fslogix/",
       "redirect_document_id": false
     }
   ]
