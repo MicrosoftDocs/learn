@@ -5,7 +5,7 @@ metadata:
   description: Use DALL-E in Azure OpenAI service to generate images
   author: graememalcolm
   ms.author: gmalc
-  ms.date: 6/14/2023
+  ms.date: 07/30/2024
   ms.service: azure-ai-openai
   ms.topic: module-standard-task-based
   ms.collection:
