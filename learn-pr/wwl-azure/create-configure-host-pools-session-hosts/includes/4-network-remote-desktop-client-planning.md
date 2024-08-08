@@ -29,7 +29,7 @@ Consider the following points when managing session hosts:
  -  If you're joining session hosts to a Microsoft Entra Domain Services domain, you can't manage them using [Intune](/mem/intune/fundamentals/what-is-intune).
  -  If you're using Microsoft Entra join with Windows Server for your session hosts, you can't enroll them in Intune as Windows Server isn't supported with Intune. You need to use Microsoft Entra hybrid join and Group Policy from an Active Directory domain, or local Group Policy on each session host.
 
-## Remote Desktop clients<br>
+## Remote Desktop clients
 
 Your users need a [Remote Desktop client](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients) to connect to desktops and applications. The following clients support Azure Virtual Desktop:
 
