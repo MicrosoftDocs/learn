@@ -46,4 +46,4 @@ Azure AI capabilities include: vision, language, speech, document intelligence, 
 >![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
 
 
-Next, let’s dive into the benefits and business value that machine learning operations can provide.
+Next, let’s dive into the benefits and business value that machine learning can provide.
