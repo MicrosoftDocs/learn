@@ -19,8 +19,8 @@ Healthcare faces some specific challenges when implementing AI that you should c
 * **Lack of data/AI infrastructure customized for healthcare**: Too often, data scientists working on healthcare scenarios struggle to find basic tools for their work. For example, it’s hard to find consistency between healthcare AI models. There’s also a lack of AI data ingestion layers customized for the industry. Finally, there aren’t many available models that can be compliant and that are already trained on healthcare data.
 * **Model validation**: AI systems require industry experts to validate the model’s results. This workflow requires a medical involvement that can sometimes become difficult. Moreover, AI models need to avoid overfitting, that is, teaching the algorithm too specific examples that can’t be generalized. Usual AI workflows avoid overfitting models, but this task is hard in healthcare. Each patient is unique and so are many medical situations.
 
-> [!TIP]
-> Consider other goals and challenges that are specific to your organization.
-> ![Image showing people working and talking around a table.](../media/2-reflection.jpg)
+>[!TIP]
+>Consider other goals and challenges that are specific to your organization.
+>![Image showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let’s consider the opportunities in life sciences and pharmaceutical healthcare scenarios.
