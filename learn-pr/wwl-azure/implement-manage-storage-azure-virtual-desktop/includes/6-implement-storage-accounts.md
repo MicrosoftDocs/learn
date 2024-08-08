@@ -10,7 +10,7 @@ To create a storage account via the Azure portal, select **+ Create a resource**
 :::image type="content" source="../media/create-storage-account-0-d21cefc5.png" alt-text="A screenshot of the storage account quick create option in a browser.":::
 
 
-### Basics<br>
+### Basics
 
 The first section to complete to create a storage account is labeled **Basics**. This contains all of the required fields to create a storage account. To create a GPv2 storage account, ensure the **Performance** radio button is set to *Standard* and the **Account kind** drop-down list is selected to *StorageV2 (general purpose v2)*.
 
