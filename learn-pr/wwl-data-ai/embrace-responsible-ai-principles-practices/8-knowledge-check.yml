@@ -20,32 +20,32 @@ quiz:
     choices:
     - content: "Models can be trained using data that is stored securely in cloud data stores."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Data security is an important part of Responsible AI but is a challenge or risk for the Privacy and Security principle."
     - content: "Models can be analyzed to quantify the impact of individual data features on predictions."
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct. the principle of fairness address the challenge or risk bias can affect results."
     - content: "Models can be deployed as containerized services in Microsoft Azure."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. While you can deploy a model as a containerized service in Microsoft Azure, it does not help mitigate bias."
   - content: "How should you establish a responsible AI governance system?"
     choices:
-    - content: "Appoint a chief ethics officer with sole responsibility for devising and enforcing responsible AI principles."
+    - content: "Appoint a Chief Ethics Officer with sole responsibility for devising and enforcing responsible AI principles."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. A Chief Ethics Officer can centralize decision-making but should allow for shared responsibility of AI governance."
     - content: "Allow employees to follow their own instincts and trust them to make ethical decisions."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. It is recommended that a responsible AI governance system utilize a Chief Ethics Officer, Ethics office, or Ethics committee for designing company-wide responsible AI measures."
     - content: "Take an approach that combines centralized and decentralized governance and works best for your organization."
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct. Three common governance approaches include utilizing a Chief Ethics Officer, Ethics office, or Ethics committee. These approaches represent centralized, decentralized, and hybrid approaches to governance."
   - content: "Which action should your responsible AI governance leadership take?"
     choices:
     - content: "Create and share assets to help employees understand and adopt responsible AI principles."
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct. Employees need guidance to learn responsible AI principles and incorporate them into their work."
     - content: "Start by removing all access to IT systems and re-allow access only to employees as they are individually approved by the chief ethics officer."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. An AI governance plan works best when the focus is on developing tools for compliance rather than complete software restriction."
     - content: "Replace all employee smartphones with secure laptop devices that are capable of running the latest AI models."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. A centralized AI inventory of AI models is a better way to optimize resources and prioritize efforts than having each employee manage their own AI models."
