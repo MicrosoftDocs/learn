@@ -1,13 +1,13 @@
-During the monitoring of your private mobile network, you may find network issues. For example, a connection or a network function may not work as expected. In this case, you can use the *distributed tracing* tool, a network issue diagnostic tool that Azure Private 5G Core offers, to diagnose the issues reported.
+During the monitoring of your private mobile network, you might find network issues. For example, a connection or a network function might not work as expected. In this case, you can use the *distributed tracing* tool, a network issue diagnostic tool that Azure Private 5G Core offers, to diagnose the issues reported.
 
 The distributed tracing tool allows you to collect detailed traces for signaling flows involving a packet core instance. Each *trace* represents the results of a distinct occurrence of a network activity. Through a web graphical user interface (GUI), you can use traces to diagnose many common configuration, network, and interoperability problems affecting network services.
 
-The distributed tracing tool is available from the ASE on which the packet core instance runs. As the tool resides within each site in your private mobile network, it doesn't have much reliance on network bandwidth or cloud connectivity. With the tool, you can quickly diagnose network issues and minimize their impact on your network services.
+The distributed tracing tool is available from the application service element (ASE) on which the packet core instance runs. As the tool resides within each site in your private mobile network, it doesn't have much reliance on network bandwidth or cloud connectivity. With the tool, you can quickly diagnose network issues and minimize their impact on your network services.
 
 > [!IMPORTANT]
 > To effectively diagnose issues in your private mobile network, you need to be familiar with the network functions that Azure Private 5G Core provides. For more information about the network functions, see [Packet core architecture](/azure/private-5g-core/private-5g-core-overview#packet-core-architecture).
 
-If you can't find the root cause of an issue with the distributed tracing tool, Azure Private 5G Core allows you to [collect a diagnostics package](#collect-and-share-a-diagnostics-package) from the relevant site. The package can then be used by Azure support engineers to assist you. In addition, Azure Private 5G Core allows you to use the [*UPF Trace (UPFT)* tool](#perform-data-plane-packet-capture) to do data plane packet analysis.
+If you can't find the root cause of an issue with the distributed tracing tool, Azure Private 5G Core allows you to [collect a diagnostics package](#collect-and-share-a-diagnostics-package) from the relevant site. Azure support engineers can then use the package to assist you. In addition, Azure Private 5G Core allows you to use the [*User Plane Function Trace (UPFT)* tool](#perform-data-plane-packet-capture) to do data plane packet analysis.
 
 ## Video: Issue diagnosis
 
@@ -30,7 +30,7 @@ Azure Private 5G Core provides two authentication methods for the distributed tr
 
 Whenever possible, use the Microsoft Entra method, as it's more secure. Only use the username and password method when you don't have a stable connection to Azure. You can choose your preferred authentication method when you deploy or modify a site. For detailed instructions on configuring and using these authentication methods, see [Distributed tracing](/azure/private-5g-core/distributed-tracing).
 
-Access to the distributed tracing tool is secured by HTTPS. You can use a self-signed certificate or provide your own to authenticate access to the tool. The article [Modify the local access configuration in a site](/azure/private-5g-core/modify-local-access-configuration) provides detailed instructions on checking or modifying the access certificate.
+HTTPS secures access to the distributed tracing tool. You can use a self-signed certificate or provide your own to authenticate access to the tool. The article [Modify the local access configuration in a site](/azure/private-5g-core/modify-local-access-configuration) provides detailed instructions on checking or modifying the access certificate.
 
 ## Diagnostics details that you can check
 
@@ -38,11 +38,11 @@ To help you diagnose issues, the distributed tracing tool provides detailed info
 
 - The **Summary** view: The summary of each flow or error.
 - The **Detailed Timeline** view: The sequence of operations and events that occurred during the flow or error.
-- The **Call Flow** view: The sequence of messages flowing between components during the course of the flow or error.
+- The **Call Flow** view: The sequence of messages flowing between components that occurred during the flow or error.
 
 Each entry in the **Detailed Timeline** view represents an event. The entry includes the date and time at which the event occurred and the name of the component on which it occurred. You can check the details about each event. Additionally, you can filter the events by different levels. For example, the detailed events level includes the network protocol messages and more fine-grained detail of events.
 
-The **Call Flow** view uses a diagram to visually indicate the messages flowing between network functions. As shown in the following example view, the vertical lines show the network components involved in the flow. The black lines indicate packet core Network Functions that have logged sending or receiving messages for this flow. The gray lines indicate other components that don't log messages. A horizontal line shows each individual signaling message flowing between two network components. An arrow indicates the direction of flow from the sending component to the receiving component. The messages appear in the diagram in the order in which they occurred.
+The **Call Flow** view uses a diagram to visually indicate the messages flowing between network functions. As shown in the following example view, the vertical lines show the network components involved in the flow. The black lines indicate packet core Network Functions that are logging the sending or receiving of messages for this flow. The gray lines indicate other components that don't log messages. A horizontal line shows each individual signaling message flowing between two network components. An arrow indicates the direction of flow from the sending component to the receiving component. The messages appear in the diagram in the order in which they occurred.
 
 :::image type="content" source="../media/distributed-tracing-call-flow.png" alt-text="A screenshot showing the message flows in an example Call Flow view." border="true":::
 
@@ -61,23 +61,23 @@ For detailed instructions in searching for information in the distributed tracin
 
 ## An example of network issue diagnosis
 
-Suppose a UE is provisioned for a site in your private mobile network. However, the UE can't communicate with the data network successfully.
+Suppose a piece of User Equipment (UE) is provisioned for a site in your private mobile network. However, the UE can't communicate with the data network successfully.
 
 To find the root cause of this communication issue, you can take the following steps to diagnose and resolve the issue:
 
 1. Search for the SUPI of the UE in the distributed tracing tool.
 
-   In the search results page, you may see an event that indicates the authentication request of the UE has been rejected. This tells you that there are some authentication issues with the UE.
+   In the search results page, you might see an event that indicates the authentication request of the UE is rejected. This event tells you that there are some authentication issues with the UE.
 
-1. Select the event to open it.
+1. Open the event by selecting it.
 
-   On the **Summary** view, you may see the following message:
+   On the **Summary** view, you might see the following message:
 
    `The authentication credentials were rejected.`
 
 1. To further check the details of the error, go to the **Call Flow** view.
 
-   As the AUSF network function is responsible for authentication, you can check the messages to and from AUSF. For example, the message displayed in the following screen indicates the authentication failed because the authentication key from the UE doesn't match the authentication key in the provisioned UE.
+   As the authentication server function (AUSF) is responsible for authentication, you can check the messages to and from the AUSF. For example, the message displayed in the following screen indicates the authentication failed because the authentication key from the UE doesn't match the authentication key in the provisioned UE.
 
    :::image type="content" source="../media/authentication-rejected.png" alt-text="A screenshot with a message indicating the reason for authentication failure." border="true":::
 
@@ -85,7 +85,7 @@ To find the root cause of this communication issue, you can take the following s
 
 ## Collect and share information for technical support
 
-If you can't find the root cause of an issue, you may need Microsoft technical support to help you. In this case, you need to collect necessary diagnostics information and share it with Microsoft support personnel.
+If you can't find the root cause of an issue, you might need Microsoft technical support to help you. In this case, you need to collect necessary diagnostics information and share it with Microsoft support personnel.
 
 You can use one of the following methods to collect the diagnostics information:
 
@@ -119,7 +119,7 @@ Azure Private 5G Core allows you to use the Azure portal to collect a diagnostic
 To enable diagnostics package collection, you need to specify the following information:
 
 - A storage account for storing your diagnostics package.
-- A managed identity that has the write access to the storage account.
+- A managed identity that has write access to the storage account.
 
   Azure Private 5G Core uses this identity to upload the collected package to your specified storage account.
 
@@ -136,7 +136,7 @@ UPFT works together with *tcpdump*, a data-network packet analyzer program, for 
 To perform packet capture, take these steps:
 
 1. Enter the UPF-PP troubleshooter pod in the Azure Arc-enabled Kubernetes cluster.
-1. Run `upftdump` to capture the packets. This command runs `tcpdump` automatically.
+1. Capture the packets by running `upftdump`. This command runs `tcpdump` automatically.
 1. Move the generated output file to a location where you want to do packet analysis.
 
 For detailed instructions about packet capturing, see [Perform data plane packet capture for a packet core instance](/azure/private-5g-core/data-plane-packet-capture).
