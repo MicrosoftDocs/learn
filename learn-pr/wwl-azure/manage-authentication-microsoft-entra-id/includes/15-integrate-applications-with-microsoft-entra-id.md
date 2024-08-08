@@ -84,8 +84,14 @@ Follow these steps to enable Microsoft Entra SSO.
     
     
      -  In the **Identifier (Entity ID)** text box, type the URL: `https://slack.com`<br>
-     -  In the **Reply URL** text box, type a URL using one of the following patterns: **Reply URL** https:// &lt;DOMAIN NAME&gt; .slack.com/sso/saml https://&lt;DOMAIN NAME&gt; .enterprise.slack.com/sso/saml
-     -  In the **Sign-on URL** text box, type a URL using one of the following patterns: **Sign-on URL** https:// &lt;DOMAIN&gt;.slack.com https://&lt;DOMAIN&gt;.enterprise.slack.com
+     -  In the **Reply URL** text box, type a URL using one of the following patterns: <br>
+         **Reply URL** <br>
+        `https://<DOMAIN NAME>.slack.com/sso/saml`
+        `https://<DOMAIN NAME>.enterprise.slack.com/sso/saml`
+     -  In the **Sign-on URL** text box, type a URL using one of the following patterns:<br>
+        **Sign-on URL** <br>
+        `https://<DOMAIN>.slack.com`
+      `  https://<DOMAIN>.enterprise.slack.com`
         
         > [!NOTE]
         > These values aren't real. You need to update these values with the actual Sign-on URL and Reply URL. Contact Slack support team to get the value. You can also refer to the patterns shown in the Basic SAML Configuration section.
@@ -184,8 +190,8 @@ The objective of this section is to create a user called B.Simon in Slack. Slack
 
 In this section, you test your Microsoft Entra single sign-on configuration with following options.
 
-Click on **Test this application**, this will redirect to Slack Sign-on URL where you can initiate the login flow.
+- Click on **Test this application**, this will redirect to Slack Sign-on URL where you can initiate the login flow.
 
-Go to Slack Sign-on URL directly and initiate the login flow from there.
+- Go to Slack Sign-on URL directly and initiate the login flow from there.
 
-You can use Microsoft My Apps. When you click the Slack tile in the My Apps, this will redirect to Slack Sign-on URL.
+- You can use Microsoft My Apps. When you click the Slack tile in the My Apps, this will redirect to Slack Sign-on URL.

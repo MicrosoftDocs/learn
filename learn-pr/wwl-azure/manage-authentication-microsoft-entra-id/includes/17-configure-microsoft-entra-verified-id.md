@@ -45,7 +45,8 @@ Create a client secret for the registered application you created. The sample ap
     
      -  In the **Description** box, enter a description for the client secret (for example, vc-sample-secret).<br>
      -  Under **Expires**, select a duration for which the secret is valid (for example, six months). Then select **Add**.<br>
-     -  Record the secret's **Value**. This value is needed in a later step. The secret’s value won't be displayed again, and isn't retrievable by **any** other means, so you should record it once it's visible.<br>At this point, you should have all the required information that you need to set up your sample application.
+     -  Record the secret's **Value**. This value is needed in a later step. The secret’s value won't be displayed again, and isn't retrievable by **any** other means, so you should record it once it's visible.<br>
+         At this point, you should have all the required information that you need to set up your sample application.
 
 ## Update the sample application
 

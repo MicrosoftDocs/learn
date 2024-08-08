@@ -115,7 +115,8 @@ Test this new requirement by signing in to the Microsoft Entra admin center:
     
     :::image type="content" source="../media/microsoft-entra-multifactor-authentication-2b9ff13f.png" alt-text="Screenshot showing the more information required notification.":::
     
-3.  Select **Next** to begin the process. You can choose to configure an authentication phone, an office phone, or a mobile app for authentication. *\*Authentication phone\** supports text messages and phone calls, *\*office phone\** supports calls to numbers that have an extension, and *\*mobile app\** supports using a mobile app to receive notifications for authentication or to generate authentication codes.
+3.  Select **Next** to begin the process.<br> 
+    You can choose to configure an authentication phone, an office phone, or a mobile app for authentication. Authentication phone supports text messages and phone calls, office phone supports calls to numbers that have an extension, and mobile app supports using a mobile app to receive notifications for authentication or to generate authentication codes.
 4.  Complete the instructions on the screen to configure the method of multifactor authentication that you've selected.
 5.  Close the browser window, and sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) again to test the authentication method that you configured. For example, if you configured a mobile app for authentication, you should see a prompt like the following.
     
