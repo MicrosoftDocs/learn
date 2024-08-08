@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-azure-databricks.identify-workloads
+uid: learn.wwl.explore-azure-databricks.workloads
 title: Identify Azure Databricks workloads
 metadata:
   title: Identify Azure Databricks workloads
   description: "Identify Azure Databricks workloads"
-  ms.date: 08/29/2023
+  ms.date: 08/05/2024
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: theresai
   ms.topic: unit
 azureSandbox: false
 labModal: false
