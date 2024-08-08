@@ -1,4 +1,5 @@
-Now it's your chance to explore Delta Lake.  
+Now it's your chance to explore Delta Lake.
+
 > [!NOTE]
 > To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
 

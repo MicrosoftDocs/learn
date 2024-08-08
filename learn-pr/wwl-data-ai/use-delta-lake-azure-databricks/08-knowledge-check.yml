@@ -31,18 +31,18 @@ quiz:
       explanation: "Correct. Delta Lake's Time Travel feature allows users to access previous versions of data using version numbers or timestamps. This feature is useful for data recovery, auditing, and analyzing historical data."
     - content: "Data Rewind"
       isCorrect: false
-      explanation: "Incorrect. Data Rewind is not a Delta Lake feature to view or restore previous versions of data."
+      explanation: "Incorrect. Data Rewind isn't a Delta Lake feature to view or restore previous versions of data."
     - content: "Version Control"
       isCorrect: false
-      explanation: "Incorrect. Version Control just keeps track of multiple versions of data but doesn't allow to restore to previous versions of data"
+      explanation: "Incorrect. Version Control just keeps track of multiple versions of data but doesn't allow you to restore to previous versions of data"
   - content: "Which Delta Lake operation can be used to improve read performance by organizing data into fewer, larger files?"
     choices:
     - content: "VACCUM"
       isCorrect: false
-      explanation: "Incorrect. VACUUM removes all files from the table directory that are not managed by Delta, as well as data files that are no longer in the latest state of the transaction log for the table and are older than a retention threshold."
+      explanation: "Incorrect. VACUUM removes all files from the table directory that aren't managed by Delta, and data files that are no longer in the latest state of the transaction log for the table and are older than a retention threshold."
     - content: "OPTIMIZE"
       isCorrect: true
       explanation: "Correct. The OPTIMIZE command in Delta Lake reorganizes data into fewer, larger files, which can significantly improve the efficiency of read queries. This command also helps manage and reduce the number of small files in a Delta table."
     - content: "MERGE"
       isCorrect: false
-      explanation: "Incorrect. MERGE command in Delta Lake is used to upsert data from a source table, view or DataFrame to a target Delta Lake table."
+      explanation: "Incorrect. MERGE command in Delta Lake is used to upsert data from a source table, view, or DataFrame to a target Delta Lake table."

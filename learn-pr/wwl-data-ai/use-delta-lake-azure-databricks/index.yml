@@ -9,13 +9,13 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: azure-databricks
 title: Manage data with Delta Lake
-summary: Delta Lake is a data management solution in Azure Databricks providing features including ACID transactions, schema enforcement and time travel ensuring data consistency, integrity and versioning capabilities.
+summary: Delta Lake is a data management solution in Azure Databricks providing features including ACID transactions, schema enforcement, and time travel ensuring data consistency, integrity, and versioning capabilities.
 abstract: |
   In this module, you learn:
-- What Delta Lake is
-- How to manage ACID transactions using Delta Lake
-- How to use schema versioning and Time Travel in Delta Lake
-- How to maintain data integrity with Delta Lake
+  - What Delta Lake is
+  - How to manage ACID transactions using Delta Lake
+  - How to use schema versioning and time travel in Delta Lake
+  - How to maintain data integrity with Delta Lake
 prerequisites: |
   Before starting this module, you should know how to use Apache Spark in Azure Databricks. Consider completing the [Use Apache Spark in Azure Databricks](/training/modules/use-apache-spark-azure-databricks) module before this one.
 iconUrl: /training/achievements/work-dataframes-azure-databricks.svg
@@ -35,7 +35,7 @@ units:
 - learn.wwl.use-delta-lake-azure-databricks.data-versioning-and-time-travel
 - learn.wwl.use-delta-lake-azure-databricks.data-integrity-with-delta-lake
 - learn.wwl.use-delta-lake-azure-databricks.exercise
-- learn.wwl.use-delta-lake-azure-databricks.knowledge-check
+- learn.wwl.manage-data-with-delta-lake.knowledge-check
 - learn.wwl.use-delta-lake-azure-databricks.summary
 badge:
   uid: learn.wwl.use-delta-lake-azure-databricks.badge

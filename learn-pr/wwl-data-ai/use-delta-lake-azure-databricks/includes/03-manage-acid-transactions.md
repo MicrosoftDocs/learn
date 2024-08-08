@@ -1,10 +1,12 @@
 Managing ACID transactions in Azure Databricks using Delta Lake is a powerful way to maintain data integrity and consistency across large datasets.
 
-## Enabling Delta Lake
-First, ensure that Delta Lake is enabled in your Databricks workspace. In Azure Databricks, Delta Lake is usually enabled by default for all the clusters.
+### Enabling Delta Lake
 
-## Creating a Delta Table
-To start using ACID transactions, you need to store your data in Delta format. You can create a Delta table either by converting an existing Parquet table or by defining a new table directly in Delta format. Here’s an example of creating a new Delta table:
+Ensure that Delta Lake is enabled in your Databricks workspace. In Azure Databricks, Delta Lake is enabled by default for all clusters.
+
+### Creating a Delta Table
+
+To start using ACID transactions, you need to store your data in Delta format. You can create a Delta table either by converting an existing Parquet table or by defining a new table directly in Delta format. Here’s an example of creating a new Delta table using Python:
 
 ```python
 # Create a Delta table
@@ -12,24 +14,30 @@ data = spark.range(0, 5)
 data.write.format("delta").save("/FileStore/tables/my_delta_table")
 ```
 
-ACID Transactions with Delta Lake
+### ACID Transactions with Delta Lake
+
 Delta Lake automatically handles ACID transactions for you. Every operation that writes data to a Delta table (such as INSERT, UPDATE, DELETE) is automatically wrapped in a transaction. These operations are logged in a transaction log, ensuring that either the entire operation succeeds or fails (atomicity), and the data remains consistent across all views (consistency).
 
-## Reading and Writing Data
-When reading or writing data, you can use standard Spark SQL commands or the DataFrame API. For instance, appending data to a Delta table might look like this:
+### Reading and Writing Data
+
+When reading or writing data, you can use standard Spark SQL commands or the DataFrame API. For instance, appending data to a Delta table might look like this using Python:
 
 ```python
 # Append data to a Delta table using DataFrame API
 new_data = spark.range(5, 10)
 new_data.write.format("delta").mode("append").save("/FileStore/tables/my_delta_table")
 ```
-## Concurrent Writes
+
+### Concurrent Writes
+
 Delta Lake manages concurrent writes by ensuring that only one operation can commit its changes at a time. If multiple writers are trying to write to the same Delta table, Delta Lake uses optimistic concurrency control to handle conflicts, retrying or failing operations as necessary.
 
-## Transaction Log
+### Transaction Log
+
 Delta Lake maintains a detailed transaction log (_delta_log) in the background. This log records all the transactions that have modified the table. This log is crucial for maintaining the integrity of the table and for supporting features like time travel, which allows you to view and revert to earlier versions of the data.
 
-## Optimizing and Maintenance
+### Optimization and Maintenance
+
 Delta Lake provides several utilities to optimize the performance of Delta tables, such as OPTIMIZE for compacting files and VACUUM for removing obsolete files:
 
 ```python
@@ -40,4 +48,4 @@ spark.sql("OPTIMIZE '/FileStore/tables/my_delta_table'")
 spark.sql("VACUUM '/FileStore/tables/my_delta_table' RETAIN 168 HOURS")
 ```
 
-By leveraging these capabilities, you can manage large datasets with complex transactional needs efficiently in Azure Databricks, making use of Delta Lake’s robust framework for handling ACID transactions.
+By applying these capabilities, you can manage large datasets with complex transactional needs efficiently in Azure Databricks, making use of Delta Lake’s framework for handling ACID transactions.
