@@ -2,7 +2,7 @@ This module covers connecting on-premises computers and networks to a virtual ne
 
 This module aligns with the exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop.
 
-## Learning objectives<br>
+## Learning objectives
 
 After completing this module, you'll be able to:
 
