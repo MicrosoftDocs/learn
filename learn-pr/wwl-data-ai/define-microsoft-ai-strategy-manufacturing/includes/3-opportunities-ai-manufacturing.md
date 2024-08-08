@@ -27,7 +27,7 @@ Many AI solutions aim at improving the productivity, efficiency, and safety of f
 Some AI solutions for manufacturing focus on improving the efficiency of the supply chain that keeps factories and services working.
 
 * **Optimize inventory tracing across regions**: AI solutions enable manufacturers to track the movement and availability of raw materials, components, and finished products across different locations and warehouses. So, they’re useful in reducing waste and improving efficiency.
-* **Forecast demand to better manage production**: You can predict customer demand and market trends with an AI solution. This scenario allows manufacturers to adjust their production plans and schedules accordingly, avoiding overstocking or understocking.
+* **Forecast demand to better manage production**: You can predict customer demand and market trends with Azure Machine Learning. This scenario allows manufacturers to adjust their production plans and schedules accordingly, avoiding overstocking or understocking.
 * **Analyze vendor contracts and communication**: Generative AI can help review and negotiate contracts with suppliers and partners, ensuring optimal terms and conditions. AI can also help monitor and improve communication with vendors, resolving issues and enhancing collaboration.
 
 ## Modern customer experience

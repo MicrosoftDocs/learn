@@ -2,7 +2,7 @@ AI is a powerful tool that can transform the manufacturing industry. It can help
 
 If you want to be efficient in implementing these use cases, **Microsoft AI** delivers powerful products and services to make them true. Azure OpenAI Service enables you to build copilot assistants based on generative AI. You can connect all your data and AI projects with Microsoft Fabric and Azure Machine Learning. Instead of building AI solutions from scratch, Azure AI Services offers ready-to-use AI models.
 
-Now that you have reviewed this module, you should:
+After this module, you should:
 
 * Describe common goals and challenges in manufacturing.
 * Identify AI use cases for manufacturing organizations.
@@ -13,7 +13,7 @@ Now that you have reviewed this module, you should:
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
 * To learn more about what Microsoft can do for your manufacturing projects, visit our [Microsoft Cloud for Manufacturing website](https://www.microsoft.com/industry/manufacturing/microsoft-cloud-for-manufacturing).
-* Stay up to date with Microsoft AI, visit our [AI website](https://www.microsoft.com/ai).
+* Stay up to date with Microsoft AI. Visit our [AI website](https://www.microsoft.com/ai).
 * To learn more about Microsoft commitment to responsible AI, visit our [Responsible AI website](https://www.microsoft.com/ai/responsible-ai).
 * To learn more about the models delivered by Azure OpenAI Service, read our [technical documentation on Azure OpenAI Service](/azure/cognitive-services/openai/concepts/models).
 * To learn more about privacy and security in Azure OpenAI Service, read our [legal documentation on Azure OpenAI Service](/legal/cognitive-services/openai/data-privacy).
@@ -23,6 +23,6 @@ Now that you have reviewed this module, you should:
 
 ## References
 
-* [Microsoft WorkLab, “Technology Can Help Unlock a New Future for Frontline Workers,” January 12, 2022.](https://www.microsoft.com/en-us/worklab/work-trend-index/technology-unlocks-a-new-future-for-frontline)
-* [World Economic Forum, “Data Excellence: Transforming manufacturing and supply systems,” January 2021.](https://www3.weforum.org/docs/WEF_Data_Excellence_Transforming_manufacturing_2021.pdf)
-* [World Economic Forum, “The Data-Driven Journey Towards Manufacturing Excellence,” January 2022.](https://www3.weforum.org/docs/WEF_The_Data-Driven_Journey_Towards_Manufacturing_Excellence_2022.pdf)
+* [Microsoft WorkLab, "Technology Can Help Unlock a New Future for Frontline Workers," January 12, 2022.](https://www.microsoft.com/en-us/worklab/work-trend-index/technology-unlocks-a-new-future-for-frontline)
+* [World Economic Forum, "Data Excellence: Transforming manufacturing and supply systems," January 2021.](https://www3.weforum.org/docs/WEF_Data_Excellence_Transforming_manufacturing_2021.pdf)
+* [World Economic Forum, "The Data-Driven Journey Towards Manufacturing Excellence," January 2022.](https://www3.weforum.org/docs/WEF_The_Data-Driven_Journey_Towards_Manufacturing_Excellence_2022.pdf)
