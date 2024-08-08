@@ -1,4 +1,4 @@
-The availability of sophisticated AI models can help organizations reduce significantly the intimidating amount of resources a data science project can require. As more organizations experiment with AI, they find they need to to understand the machine learning lifecycle.
+The availability of sophisticated AI models can help organizations reduce significantly the intimidating amount of resources a data science project can require. Let's see how organizations can tackle machine learning challenges and operations with Azure Machine Learning.
 
 ## Machine learning challenges and need of machine learning operations
 
@@ -22,12 +22,12 @@ Azure Machine Learning supports end-to-end machine learning lifecycle management
 
 The classic approach covers all the usual steps of a data science project. 
 
-1. **Prepare dataset**. AI starts at data. First, data scientists need to prepare data with which to train the model. This is often the biggest time commitment in the lifecycle. This task involves finding or building your own dataset, cleaning it so it's easily readable by machines, ensuring it's a representative sample, discovering which variables are pertinent for your goal, and so on.
+1. **Prepare dataset**. AI starts at data. First, data scientists need to prepare data with which to train the model. Data preparation is often the biggest time commitment in the lifecycle. This task involves finding or building your own dataset and cleaning it so it's easily readable by machines. You want to make sure the data is a representative sample, that your variables are pertinent for your goal, and so on.
 2. **Train and test**.  Next, data scientists apply algorithms to the data to train a machine learning model. Then they test it with new data to see how accurate its predictions are.
-3. **Package**. A model can't be directly put into an app. It needs to be containerized, so it can run with all the tools and frameworks that have been used in its building.
-4. **Validate**. At this point, the team evaluates how model performance compares to their business goals. Testing may have returned good enough metrics, but still the model may not work as expected when used in a real business scenario.
-   * **Repeat steps 1-4**. It can take hundreds of training hours to find a satisfactory model. The development team may train many versions of the model by adjusting training data, tuning algorithm hyperparameters, or trying totally different algorithms. Ideally the model improves with each round of adjustment. Ultimately, it's the development team's role to determine which version of the model best fits the business use case.
-5. **Deploy**. Finally, they deploy the model in the cloud (often through an API), on an on-premises server, or at the edge on devices like cameras, IoT gateways, or machinery.
+3. **Package**. A model can't be directly put into an app. It needs to be containerized, so it can run with all the tools and frameworks its built on.
+4. **Validate**. At this point, the team evaluates how model performance compares to their business goals. Testing may return good enough metrics, but still the model may not work as expected when used in a real business scenario.
+   * **Repeat steps 1-4**. It can take hundreds of training hours to find a satisfactory model. The development team may train many versions of the model by adjusting training data, tuning algorithm hyperparameters, or trying different algorithms. Ideally the model improves with each round of adjustment. Ultimately, it's the development team's role to determine which version of the model best fits the business use case.
+5. **Deploy**. Finally, they deploy the model. Options for deployment include: in the cloud, on an on-premises server, and on devices like cameras, IoT gateways, or machinery.
 6. **Monitor and retrain**. Even if a model works well at first, it needs to be continually monitored and retrained to stay relevant and accurate.
 
 >[!NOTE]
@@ -35,17 +35,17 @@ The classic approach covers all the usual steps of a data science project.
 
 #### Machine learning operations
 
-Machine learning operations (MLOps) applies the methodology of DevOps (development and operations) to manage the machine learning lifecycle more efficiently. It enables a more agile, productive collaboration in AI teams among all stakeholders. These collaborations involve data scientists, AI engineers, app developers, and other IT teams.
+Machine learning operations (MLOps) apply the methodology of DevOps (development and operations) to manage the machine learning lifecycle more efficiently. It enables a more agile, productive collaboration in AI teams among all stakeholders. These collaborations involve data scientists, AI engineers, app developers, and other IT teams.
 
-MLOps processes and tools help those teams collaborate and provide visibility through shared, auditable documentation. MLOps technologies provide the ability to save and track changes to all resources, like data, code, models, and other tools. These technologies can also create efficiencies and accelerate the lifecycle with automation, repeatable workflows, and reusable assets. All these practices make AI projects more agile and efficient.
+MLOps processes and tools help those teams collaborate and provide visibility through shared, auditable documentation. MLOps technologies enable users to save and track changes to all resources, like data, code, models, and other tools. These technologies can also create efficiencies and accelerate the lifecycle with automation, repeatable workflows, and reusable assets. All these practices make AI projects more agile and efficient.
 
 Azure Machine learning supports the following MLOps practices: 
 
-* **Model reproducibility**: means models can easily be run on the same dataset by any team member with same or similar results. Reproducibility is critical for making results of models in production reliable. Azure Machine Learning supports model reproducibility with centrally manage assets like environments, code, datasets, models and machine learning pipelines. 
+* **Model reproducibility**: means different team members can run models on the same dataset and get similar results. Reproducibility is critical for making results of models in production reliable. Azure Machine Learning supports model reproducibility with centrally manage assets like environments, code, datasets, models, and machine learning pipelines. 
 
 * **Model validation**: before a model is deployed, it's critical to validate its performance metrics. You may have several metrics that are used to indicate the "best" model. Validating performance metrics in ways relevant to the business use case is critical. Azure Machine Learning supports model validation with many tools to evaluate model metrics, such as loss functions and confusion matrixes.
 
-* **Model deployment**: when a model is deployed, it is important to have data scientists and AI engineers work together to determine the best deployment option. These options include, cloud, on-premise, and edge devices (cameras, drones, machinery). 
+* **Model deployment**: when a model is deployed, it's important to have data scientists and AI engineers work together to determine the best deployment option. These options include, cloud, on-premise, and edge devices (cameras, drones, machinery). 
 
 * **Model retraining**: models need to be monitored and periodically retrained to correct performance issues and take advantage of newer training data. Azure Machine Learning supports a systematic and iterative process to continually refine and ensure the accuracy of the model.
 
@@ -57,4 +57,4 @@ Azure Machine learning supports the following MLOps practices:
 >Take a moment to consider how your organization can leverage data science and machine learning expertise to build custom models. 
 >![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
 
-Next, let’s wrap up everything you’ve learned with a knowledge check.
+Next, let’s wrap up everything with a knowledge check.

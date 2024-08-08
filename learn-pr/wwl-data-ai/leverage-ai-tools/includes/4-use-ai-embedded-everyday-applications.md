@@ -29,7 +29,7 @@ There are also numerous AI capabilities that are already included in the applica
 
 For years, Microsoft has been putting AI to work in the **[Microsoft 365](https://aka.ms/everydayai)** apps that people use every day—like Microsoft Teams, Outlook, and Office. With these intelligent productivity experiences, employees can collaborate and conduct meetings more effectively, focus their time on value-added work, and uncover timely insights to improve their work.
 
-**Microsoft 365 Copilot** adds another layer of AI. Business users can ask this virtual assistant to perform certain tasks just by using natural language. The assistant uses the latest generative AI technology, OpenAI's GPT models, to understand the request and do what is asked.
+**Microsoft 365 Copilot** adds another layer of AI. Business users can ask this virtual assistant to perform certain tasks just by using natural language. The assistant uses the latest generative AI technology to understand the request and do what is asked.
 
 These solutions can improve your routine by boosting your remote work, your focus, your productivity, and your search power.
 
