@@ -9,9 +9,9 @@ You can manage dependencies in Azure Databricks primarily through **cluster libr
 > [!Tip]
 > Learn more about cluster libraries and how to [install a library on a cluster](/azure/databricks/libraries/cluster-libraries?azure-portal=true)
 
-### Secure your libraries
+### Securely store your libraries
 
-Libraries can be installed from various sources, like from an object stored in an Azure Data Lake Storage (ADLS) or the Databricks File System (DBFS). However, any workspace user can modify library files stored in DBFS. Therefore, you should upload all libraries to workspace files or Unity Catalog volumes and installing your dependencies from there.
+Libraries can be installed from various sources, like from an object stored in an Azure Data Lake Storage (ADLS) or the Databricks File System (DBFS). However, any workspace user can modify library files stored in DBFS. Therefore, you should upload all libraries to **workspace files** or **Unity Catalog** volumes and installing your dependencies from there.
 
 You can upload package or requirements.txt files to your workspace and reference your file when installing libraries on your clusters.
 

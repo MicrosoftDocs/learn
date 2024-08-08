@@ -26,13 +26,13 @@ quiz:
       explanation: "Correct. Azure Databricks allows users to automate the execution of various workflows, including notebooks, JARs, and Python scripts."
   - content: "What is the purpose of environment isolation in Azure Databricks?"
     choices:
-    - content: "To increase the size of the environment"
+    - content: "To increase the size of the environment."
       isCorrect: false
       explanation: "Incorrect. Environment isolation does not increase the size of the environment, but rather it helps to avoid conflicts between different project dependencies."
-    - content: "To decrease the speed of the environment"
+    - content: "To decrease the speed of the environment."
       isCorrect: false
       explanation: "Incorrect. Environment isolation does not decrease the speed of the environment, but rather it helps to maintain clean and isolated environments for projects with complex or conflicting dependencies."
-    - content: "To avoid conflicts between different project dependencies"
+    - content: "To avoid conflicts between different project dependencies."
       isCorrect: true
       explanation: "Correct. Environment isolation in Azure Databricks is used to avoid conflicts between different project dependencies by using Conda environments and Docker containers."
   - content: "What is a key benefit of modularizing code when automating production jobs in Azure Databricks?"

@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: azure
 title: Automate workloads with Azure Databricks Jobs
-summary: Learn how to automate and schedule data workflows with Azure Databricks Jobs. You
+summary: Learn how to orchestrate and schedule data workflows with Azure Databricks Jobs. Define and monitor complex pipelines, integrate with tools like Azure Data Factory and Azure DevOps, and reduce manual intervention, leading to improved efficiency, faster insights, and adaptability to business needs.
 abstract: |
   In this module, you learn how to:
   - Implement job scheduling and automation.
