@@ -19,7 +19,7 @@ abstract: |
   - Implement Observability and enhance data quality metrics
 prerequisites: |
   Before starting this module, you should have a fundamental knowledge of data analytics concepts. Consider completing [Azure Data Fundamentals certification](/certifications/azure-data-fundamentals?azure-portal=true) before starting this module.
-iconUrl: /learn/achievements/describe-azure-databricks.svg
+iconUrl: /learn/achievements/describe-azure-databricks-delta-lake-architecture-social.svg
 levels:
 - intermediate
 roles:
