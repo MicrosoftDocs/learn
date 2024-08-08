@@ -53,7 +53,7 @@ First, create a Conditional Access policy and assign your test group of users as
 
 Now that the Conditional Access policy is created and a test group of users is assigned, define the cloud apps or actions that trigger the policy. These cloud apps or actions are the scenarios that you decide require additional processing, such as prompting for multifactor authentication. For example, you could decide that access to a financial application or use of management tools require an additional prompt for authentication.
 
-### Configure which apps require multifactor authentication<br>
+### Configure which apps require multifactor authentication
 
 For this example, configure the Conditional Access policy to require multifactor authentication when a user signs in.
 
@@ -115,7 +115,7 @@ Test this new requirement by signing in to the Microsoft Entra admin center:
     
     :::image type="content" source="../media/microsoft-entra-multifactor-authentication-2b9ff13f.png" alt-text="Screenshot showing the more information required notification.":::
     
-3.  Select **Next** to begin the process.
+3.  Select **Next** to begin the process. You can choose to configure an authentication phone, an office phone, or a mobile app for authentication. *\*Authentication phone\** supports text messages and phone calls, *\*office phone\** supports calls to numbers that have an extension, and *\*mobile app\** supports using a mobile app to receive notifications for authentication or to generate authentication codes.
 4.  Complete the instructions on the screen to configure the method of multifactor authentication that you've selected.
 5.  Close the browser window, and sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) again to test the authentication method that you configured. For example, if you configured a mobile app for authentication, you should see a prompt like the following.
     
@@ -235,6 +235,8 @@ After you acquire tokens, you need to upload them in a comma-separated values (C
 ```
 upn,serial number,secret key,time interval,manufacturer,model
 Helga@contoso.com,1234567,2234567abcdef2234567abcdef,60,Contoso,HardwareKey
+
+
 
 
 

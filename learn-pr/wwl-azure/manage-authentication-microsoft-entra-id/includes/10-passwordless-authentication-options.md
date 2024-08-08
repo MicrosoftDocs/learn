@@ -143,7 +143,7 @@ When you use PowerShell to create a CSV file with all of the existing keys, care
 
 It is safe to delete any key reported as "Orphaned"="True" in the CSV. An orphaned key is one for a device that is not longer registered in Microsoft Entra ID. If removing all Orphans still doesn't bring the User account below the limit it is necessary to look at the "DeviceId" and "CreationTime" columns to identify which keys to target for deletion. Be careful to remove any row in the CSV for keys you want to keep. Keys for any DeviceID corresponding to devices the user actively uses should be removed from the CSV before the deletion step.
 
-## Choose a passwordless method<br>
+## Choose a passwordless method
 
 The choice between these three passwordless options depends on your company's security, platform, and app requirements.
 
