@@ -26,7 +26,7 @@ EF Core uses a feature called migrations to incrementally update the database sc
 :::image type="content" source="../media/identity-tables.png" alt-text="Diagram of the Identity database schema." lightbox="../media/identity-tables.png":::
 
 > [!NOTE]
-> The above image shows the key(s) and relationships in the database. The key is a one, and the infinity (sideways 8) is many. A database can have one-to-one, one-to-many, and many-to-many relationship types. Keys are unique. The diagram shows how these joins are created, and the relationships.
+> The above image shows the key(s) and relationships in the database. The key is a one, and the infinity (sideways 8) is many. A database can have one-to-one, one-to-many, and many-to-many relationship types. Keys are unique. The diagram shows how these joins are created and the relationships.
 
 ## Summary
 

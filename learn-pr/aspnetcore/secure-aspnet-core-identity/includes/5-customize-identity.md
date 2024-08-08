@@ -47,19 +47,19 @@ You've been given a new requirement to store your users' names. Since the defaul
 
 Make the following changes to *:::no-loc text="Areas/Identity/Data/RazorPagesPizzaUser.cs":::*:
 
-    1. Add the `FirstName` and `LastName` properties:
+1. Add the `FirstName` and `LastName` properties:
 
-        [!code-csharp[](../code/areas/identity/data/razorpagespizzauser.cs?highlight=3-5,7-9)]
+    [!code-csharp[](../code/areas/identity/data/razorpagespizzauser.cs?highlight=3-5,7-9)]
 
-        The properties in the preceding snippet represent additional columns to be created in the underlying `AspNetUsers` table. Both properties are required and are therefore annotated with the `[Required]` attribute. Additionally, the `[MaxLength]` attribute indicates that a maximum length of 100 characters is allowed. The underlying table column's data type is defined accordingly. A default value of `string.Empty` is assigned since nullable context is enabled in this project and the properties are non-nullable strings.
+    The properties in the preceding snippet represent additional columns to be created in the underlying `AspNetUsers` table. Both properties are required and are therefore annotated with the `[Required]` attribute. Additionally, the `[MaxLength]` attribute indicates that a maximum length of 100 characters is allowed. The underlying table column's data type is defined accordingly. A default value of `string.Empty` is assigned since nullable context is enabled in this project and the properties are non-nullable strings.
 
-    1. Add the following `using` statement to the top of the file.
+1. Add the following `using` statement to the top of the file.
 
-        ```csharp
-        using System.ComponentModel.DataAnnotations;
-        ```
+    ```csharp
+    using System.ComponentModel.DataAnnotations;
+    ```
 
-        The preceding code resolves the data annotation attributes applied to the `FirstName` and `LastName` properties.
+    The preceding code resolves the data annotation attributes applied to the `FirstName` and `LastName` properties.
 
 ## Update the database
 
@@ -138,7 +138,7 @@ You've added the new fields to the user registration form, but you should also a
 
     1. Incorporate the highlighted changes in the `LoadAsync` method:
 
-        [!code-csharp[](../code/areas/identity/pages/account/manage/index-snippets.cshtml.cs?name=snippet_loadasync&highlight=10-12)]
+        [!code-csharp[](../code/areas/identity/pages/account/manage/index-snippets.cshtml.cs?name=snippet_loadasync&highlight=11-12)]
 
         The preceding code supports retrieving the first and last names for display in the corresponding text boxes of the profile management form.
 
