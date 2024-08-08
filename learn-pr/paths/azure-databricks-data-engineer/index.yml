@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-databricks-data-engineer
 metadata:
-  title: Implement a data engineering solutions using Azure Databricks
-  description: Implement a data engineering solutions using Azure Databricks
+  title: Implement a data engineering solution using Azure Databricks
+  description: Implement a data engineering solution using Azure Databricks
   ms.date: 07/31/2024
   author: wwlpublish
   ms.author: jamesh
@@ -26,5 +26,6 @@ modules:
 - learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables
 - learn.wwl.optimize-performance-with-spark-and-delta-live-tables
 - learn.wwl.ci-cd-workflows-pipelines-azure-databricks
+##- learn.wwl.automate-jobs-azure-databricks
 trophy:
   uid: learn.wwl.azure-databricks-data-engineer.trophy
