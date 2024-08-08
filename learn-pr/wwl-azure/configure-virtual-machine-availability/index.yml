@@ -10,7 +10,7 @@ metadata:
   ms.custom:
   - N/A
   ai-usage: ai-assisted
-  ms.service: virtual-machines
+  ms.service: azure-virtual-machines
 title: Configure virtual machine availability
 summary: |
   Learn how to configure virtual machine availability including vertical and horizontal scaling.
