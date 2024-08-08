@@ -104,7 +104,7 @@ You can also use Azure Monitor to track logs and get notified if there's an erro
 1. **Configure action groups**: Create an action group to specify who should be notified when the condition is met, and how they should be notified.
 
 > [!Tip]
-> Learn more about [Azure Monitor alerts](https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview?azure-portal=true)
+> Learn more about [Azure Monitor alerts](/azure/azure-monitor/alerts/alerts-overview?azure-portal=true)
 
 ## Use the Azure Databricks Job API
 

@@ -7,7 +7,7 @@ You can manage dependencies in Azure Databricks primarily through **cluster libr
 :::image type="content" source="../media/cluster-library.png" alt-text="Screenshot of installing a library on a cluster." lightbox="../media/install-library.png":::
 
 > [!Tip]
-> Learn more about cluster libraries and how to [install a library on a cluster](https://learn.microsoft.com/azure/databricks/libraries/cluster-libraries?azure-portal=true)
+> Learn more about cluster libraries and how to [install a library on a cluster](/azure/databricks/libraries/cluster-libraries?azure-portal=true)
 
 ### Secure your libraries
 
@@ -25,7 +25,7 @@ matplotlib==3.4.3
 ```
 
 > [!Tip]
-> Learn more about how to [install libraries from workspace files](https://learn.microsoft.com/azure/databricks/libraries/workspace-files-libraries?azure-portal=true).
+> Learn more about how to [install libraries from workspace files](/azure/databricks/libraries/workspace-files-libraries?azure-portal=true).
 
 ### Specify library versions
 
