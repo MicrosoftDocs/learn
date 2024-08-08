@@ -15,7 +15,7 @@ When manufacturing companies implement AI solutions, they expect to solve these 
 * **Design multi-shoring sourcing strategies**: Manufacturers need to diversify their supply chain by working with several suppliers. This task involves considering the trade-offs between cost, quality, speed, and risk. AI solutions can help you deal with this information to make the best decisions.
 * **Comply with environmental regulations**: As environmental regulations get increasingly strict, manufacturers can use AI solutions to avoid fines, enhance their reputation, and contribute to sustainability.
 
-## Challenge
+## Challenges
 
 A first set of challenges for AI solutions in manufacturing involves difficulties in **data curation and management**.
 

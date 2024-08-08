@@ -34,4 +34,4 @@ The [ai:attack] initiative is already yielding positive results. The **drop in t
 
 Likewise, **code maintenance** is now much easier and faster thanks to standardization. Before, maintaining the code of three projects required three data analysts, whereas today a single worker can maintain code for many projects.
 
-
+Next, let’s wrap up everything you learned with a knowledge check.
