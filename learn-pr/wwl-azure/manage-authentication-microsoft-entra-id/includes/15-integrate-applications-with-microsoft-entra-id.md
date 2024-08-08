@@ -86,11 +86,11 @@ Follow these steps to enable Microsoft Entra SSO.
      -  In the **Identifier (Entity ID)** text box, type the URL: `https://slack.com`<br>
      -  In the **Reply URL** text box, type a URL using one of the following patterns: <br>
          **Reply URL** <br>
-        `https://<DOMAIN NAME>.slack.com/sso/saml`
+        `https://<DOMAIN NAME>.slack.com/sso/saml`<br>
         `https://<DOMAIN NAME>.enterprise.slack.com/sso/saml`
      -  In the **Sign-on URL** text box, type a URL using one of the following patterns:<br>
         **Sign-on URL** <br>
-        `https://<DOMAIN>.slack.com`
+        `https://<DOMAIN>.slack.com`<br>
       `  https://<DOMAIN>.enterprise.slack.com`
         
         > [!NOTE]
