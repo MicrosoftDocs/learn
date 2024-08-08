@@ -52,5 +52,4 @@ It’s also possible to achieve **greener city lights management** with AI. Vale
 
 In conclusion, there are many scenarios in which Microsoft AI products and services can support sustainability initiatives. The **Microsoft ecosystem** allows you to easily connect these AI solutions with the many features included in [Microsoft Cloud for Sustainability](https://www.microsoft.com/sustainability/cloud). Among the functionalities covered, sustainability professionals can minimize the environmental impact of facilities, get the data analytics of water consumption, or achieve greener mobility with optimized routes and logistics.
 
-
 Next, let’s see an example of how an energy organization can carry out one of these scenarios.
