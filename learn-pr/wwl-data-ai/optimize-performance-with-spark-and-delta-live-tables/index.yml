@@ -1,25 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables
 metadata:
-  title: Implement CI/CD workflows with Azure Databricks
-  description: Implement CI/CD workflows with Azure Databricks
+  title: Optimize performance with Spark and Delta Live Tables
+  description: Optimize performance with Spark and Delta Live Tables in Azure Databricks.
   ms.date: 08/06/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: module
   ms.service: azure
-title: Implement CI/CD workflows with Azure Databricks
-summary: Learn how to implement CI/CD workflows with Delta Live Tables (DLT) pipelines in Azure Databricks to automate the integration and delivery of code changes. 
+title: Optimize performance with Spark and Delta Live Tables
+summary: Learn how to Optimize performance with Spark and Delta Live Tables in Azure Databricks.
 abstract: |
   In this module, you learn how to:
   - Use serverless compute and parallelism with Delta live tables
   - Perform cost based optimization and query performance
   - Use Change Data Capture (CDC)
-  - Leverage enhanced autoscaling capabilities
+  - Apply enhanced autoscaling capabilities
   - Implement Observability and enhance data quality metrics
 prerequisites: |
   Before starting this module, you should have a fundamental knowledge of data analytics concepts. Consider completing [Azure Data Fundamentals certification](/certifications/azure-data-fundamentals?azure-portal=true) before starting this module.
-iconUrl: /learn/achievements/describe-azure-databricks.svg
+iconUrl: /learn/achievements/describe-azure-databricks-delta-lake-architecture-social.svg
 levels:
 - intermediate
 roles:
