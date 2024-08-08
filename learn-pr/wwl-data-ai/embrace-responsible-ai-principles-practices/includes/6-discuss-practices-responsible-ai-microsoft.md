@@ -63,8 +63,8 @@ We expect every Microsoft employee to:
 * Report and escalate sensitive uses.
 * Contact their Responsible AI Champ when they need guidance on responsible AI.
 
-> [!TIP]
-> Take a moment to identify challenges in establishing a system of responsible AI governance in your organization.
-> ![Image showing people working and talking around a table.](../media/Discussion.jpg)
+>[!TIP]
+>Take a moment to identify challenges in establishing a system of responsible AI governance in your organization.
+>![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
 
 Next, let's see this governance model in action in flagging and addressing sensitive use cases of AI.
