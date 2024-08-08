@@ -34,14 +34,13 @@ To install and run Performance Diagnostics:
     
     [:::image type="content" source="https://learn.microsoft.com/troubleshoot/azure/virtual-machines/windows/media/performance-diagnostics/install-and-run-context-pane.png" alt-text="Screenshot of the Install and run Performance Diagnostics context pane. The Enable continuous diagnostics and Run on-demand diagnostics options are checked.":::
     ](https://learn.microsoft.com/troubleshoot/azure/virtual-machines/windows/media/performance-diagnostics/install-and-run-context-pane.png#lightbox)
-6.  This table describes the available options:Review the legal terms and privacy policy, and select the corresponding checkbox to acknowledge (required).
-
+6.  This table describes the available options. Review the legal terms and privacy policy, and select the corresponding checkbox to acknowledge (required).
+    
     | **Option**                    | **Description**                                                                                                                                                                                                                                                                                                           |
     | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
     | Enable continuous diagnostics | Get continuous, actionable insights into high resource usage with data collected every 5 seconds and updates uploaded every 5 minutes to address performance issues promptly. Store insights in your preferred storage account.                                                                                           |
     | Run on-demand diagnostics     | Get on-demand, actionable insights into high resource usage and various system configurations. Receive a downloadable report with comprehensive diagnostics data to address performance issues. Store insights and reports in your preferred storage account.                                                             |
     | Storage account               | Optionally, if you want to use a single storage account to store the Performance Diagnostics results for multiple VMs, you can select a storage account from the dropdown. If you don't specify a storage account, Performance Diagnostics uses the default diagnostics storage account or creates a new storage account. |
-    
 7.  To install and run **Performance Diagnostics**, you must agree to the legal terms and accept the privacy policy.
 8.  Select **Apply** to apply the selected options and install the tool. A notification is displayed as Performance Diagnostics starts to install. After the installation is completed, you see a notification that indicates that the installation is successful. If the Run on-demand diagnostics option is selected, the selected performance analysis scenario is then run for the specified duration.
 
