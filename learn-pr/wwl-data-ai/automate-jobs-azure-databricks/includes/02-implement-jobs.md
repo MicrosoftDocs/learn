@@ -8,7 +8,7 @@ Let's first explore what jobs are in Azure Databricks, and then how you can sche
 
 A **job** in Azure Databricks has four main components:
 
-:::image type="content" source="../media/job-overview.png" alt-text="Screenshot of job creation in Azure Databricks.":::
+:::image type="content" source="../media/job-overview.png" alt-text="Diagram of main components of Azure Databricks job.":::
 
 - **Tasks**: The code you want to run.
 - **Cluster**: The compute on which the tasks run.
