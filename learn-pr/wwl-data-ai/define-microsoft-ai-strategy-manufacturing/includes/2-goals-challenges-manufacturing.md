@@ -32,9 +32,8 @@ However, other challenges can arise from the manufacturers’ **relations with c
 * **Inflation**: It’s crushing economic margins so much that it can be challenging to find the resources to implement AI systems or convince customers to pay the required investment.
 * **Rising customer expectations for service and products**: The media has lately created hype around generative AI and similar technologies. It’s true that they’re powerful and can make a difference for your business. However, clients often have unrealistic expectations of what an AI-powered solution can deliver. A pedagogical approach is sometimes required to orient customers towards more realistic AI scenarios.
 
+>[!TIP]
+>Take a moment to consider other goals or challenges are specific to your organization. 
+>![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
+
 Next, let’s explore the most common AI-powered manufacturing use cases for your company to achieve these goals. 
-
-> [!TIP]
-> Take a moment to consider other goals or challenges are specific to your organization. 
-> ![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
-

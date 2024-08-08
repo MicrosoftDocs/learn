@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/07/2024
+  ms.date: 08/08/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -20,21 +20,21 @@ quiz:
     choices:
     - content: "The company can replace factory line workers with generative AI-powered chatbots​."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Generative AI needs to be used in conjunction with humans. Smart factories use generative AI-powered chatbots known as copilots to support their front-line workforce."
     - content: "Generative AI copilots can be used to provide contextual guidance and information to factory line workers."
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct. Generative AI copilots can support many common use cases in manufacturing for factory line workers, including closing the skills gap."
     - content: "It can’t. Generative AI is not a suitable technology for developing manufacturing solutions."
       isCorrect: false
-      explanation: "Incorrect."
-  - content: "How might you use Microsoft AI to improve cost-efficiency of a manufacturing organization?​"
+      explanation: "Incorrect. Generative AI plays an important role in modern manufacturing, supporting document intelligence, smart factories, resilient supply chains, and customer experiences."
+  - content: "How might you use Microsoft AI to pursue an AI opportunity in a manufacturing organization?​"
     choices:
     - content: "Use Azure Machine Learning to create a predictive model that forecasts demand levels for products​."
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct. One category of AI opportunities in manufacturing include improving supply chain resiliency. Using Azure Machine Learning to better forecast product demand is one way to build supply chain resiliency."
     - content: "Use Microsoft Copilot in PowerPoint to improve the visual appeal of slides in boardroom presentations."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. While Microsoft Copilot can be used to improve the visual appeal of slides, this is not a main part of the categories of AI opportunities in manufacturing."
     - content: "Use Visual Studio Code to convert the company’s website to HTML 5​."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Converting website markup language to HTML 5 is not an AI opportunity in manufacturing."

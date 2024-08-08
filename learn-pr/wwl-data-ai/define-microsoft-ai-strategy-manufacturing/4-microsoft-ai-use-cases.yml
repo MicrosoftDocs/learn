@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.define-microsoft-ai-strategy-manufacturing.find-ai-resources
+uid: learn.wwl.define-microsoft-ai-strategy-manufacturing.microsoft-ai-use-cases
 title: Microsoft AI technology for manufacturing use cases
 metadata:
   title: Microsoft AI technology for manufacturing use cases
   description: "Microsoft AI technology for manufacturing use cases"
-  ms.date: 08/07/2024
+  ms.date: 08/08/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-find-ai-resources.md)]
+  [!include[](includes/4-microsoft-ai-use-cases.md)]
