@@ -29,12 +29,13 @@ AI for reasoning is exactly that. It's highly valuable for people with business-
 
 Research-related use cases are numberless and apply in almost every industry. In many scenarios, you can use prebuilt AI models such as GPT, which can be embedded in many options, to extract insights from papers, documentation, or research results. However, the same AI can also be used to find new ideas and create content, such as ads or keywords for marketing campaigns.
 
-> [!NOTE] 
-> Gartner predicts that, by 2025, large organizations will leverage generative AI to create 30 percent of their outbound marketing messages.<sup>4</sup>
+>[!NOTE] 
+>Gartner predicts that, by 2025, large organizations will leverage generative AI to create 30 percent of their outbound marketing messages.<sup>4</sup>
+
+>[!TIP]
+>Take a moment to consider how subject matter experts in your organization use AI to expand their impact.
+>![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
 
 Next, let’s wrap up everything you’ve learned with a knowledge check.
 
-> [!TIP]
-> Take a moment to consider how subject matter experts in your organization use AI to expand their impact.
-> ![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
 
