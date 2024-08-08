@@ -59,8 +59,8 @@ Like a Corporate Vice President of Strategic Missions and Technologies at Micros
 
 These questions demand for organizations to think about their AI principles and how to ensure them throughout the company. To ensure responsible AI practices, specific planning is required that should include an AI governance model. In this way, you can deliver transparent, explainable, and ethical AI. The module [Embrace responsible AI principles and practices](/training/modules/embrace-responsible-ai-principles-practices) provides a more detailed discussion of the implications of responsible AI for business.
 
-> [!TIP]
-> Take a moment to think of how you might determine your organization’s readiness for AI.
-> ![Image showing people working and talking around a table.](../media/Discussion.jpg)
+>[!TIP]
+>Take a moment to think of how you might determine your organization’s readiness for AI.
+>![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
 
 Now that you understand the principles that enable organization to embrace AI, let's assess whether your organization is ready and how it should evolve.

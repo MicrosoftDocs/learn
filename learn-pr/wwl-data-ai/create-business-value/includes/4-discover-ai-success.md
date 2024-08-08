@@ -35,8 +35,8 @@ However, we've experienced an enormous AI acceleration during the last few years
 
 * **Mainstream AI:** Generative AI has changed the rules of AI adoption by empowering business users at an unprecedented level. It might be easier than ever to implement AI in business. Many companies are working hard to rank higher in the maturity assessment model.
 
-> [!TIP]
-> Take a moment to reflect on where your organization is on the path to AI success.
-> ![Image showing people working and talking around a table.](../media/Discussion.jpg)
+>[!TIP]
+>Take a moment to reflect on where your organization is on the path to AI success.
+>![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
 
 Now that you’ve considered various aspects of what it means to have an AI-ready culture, how to assess your organization’s AI success, and prepare for change, let’s wrap up everything you’ve learned with a knowledge check.
