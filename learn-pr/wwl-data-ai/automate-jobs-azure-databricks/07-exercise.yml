@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-data-analysis-azure-databricks.exercise
-title: Exercise - Explore data with Azure Databricks
+title: Exercise - Automate data ingestion and processing
 metadata:
-  title: Exercise - Explore data with Azure Databricks
-  description: "Exercise - Explore data with Azure Databricks"
+  title: Exercise - Automate data ingestion and processing
+  description: "Exercise - Automate data ingestion and processing"
   ms.date: 07/25/2024
   author: wwlpublish
   ms.author: madiepev

@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.automate-jobs-azure-databricks.best-practices
-title: Handle dependency management
+title:  Explore best practices and guidelines
 metadata:
-  title: Handle dependency management
-  description: "Handle dependency management"
+  title: Explore best practices and guidelines
+  description: "Explore best practices and guidelines"
   ms.date: 08/05/2024
   author: wwlpublish
   ms.author: madiepev
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 4
+durationInMinutes: 5
 content: |
   [!include[](includes/07-best-practices.md)]
