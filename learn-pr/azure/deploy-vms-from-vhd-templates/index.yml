@@ -8,7 +8,7 @@ metadata:
   author: ju-shim
   ms.author: jushiman
   ms.topic: module
-  ms.service: virtual-machines
+  ms.service: azure-virtual-machines
 title: Deploy Azure virtual machines from VHD templates
 summary: Standardize and automate your virtual machine deployments to minimize manual configuration, variance, and errors.
 abstract: |
