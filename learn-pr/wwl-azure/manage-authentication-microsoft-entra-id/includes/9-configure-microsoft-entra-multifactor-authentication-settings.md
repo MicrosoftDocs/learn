@@ -91,10 +91,9 @@ In this example, configure the access controls to require multifactor authentica
 Conditional Access policies can be set to **Report-only** if you want to see how the configuration would affect users, or **Off** if you don't want to the use policy right now. Because a test group of users is targeted for this tutorial, let's enable the policy, and then test Microsoft Entra multifactor authentication.
 
 1.  Under **Enable policy**, select **On**.
-
-:::image type="content" source="../media/multifactor-enable-policy-control-89c8b9c0.png" alt-text="Screenshot showing an example of how to enable the report only policy.":::
-
-
+    
+    :::image type="content" source="../media/multifactor-enable-policy-control-89c8b9c0.png" alt-text="Screenshot showing an example of how to enable the report only policy.":::
+    
 2.  To apply the Conditional Access policy, select **Create**.
 
 ## Test Microsoft Entra multifactor authentication
@@ -113,20 +112,15 @@ Test this new requirement by signing in to the Microsoft Entra admin center:
 
 1.  Open a new browser window in InPrivate or incognito mode and sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/).
 2.  Sign in with your non-administrator test user, such as *testuser*. Be sure to include @ and the domain name for the user account. You're required to register for and use Microsoft Entra multifactor authentication.
-
-:::image type="content" source="../media/microsoft-entra-multifactor-authentication-2b9ff13f.png" alt-text="Screenshot showing the more information required notification.":::
-
-
+    
+    :::image type="content" source="../media/microsoft-entra-multifactor-authentication-2b9ff13f.png" alt-text="Screenshot showing the more information required notification.":::
+    
 3.  Select **Next** to begin the process.
-
-You can choose to configure an authentication phone, an office phone, or a mobile app for authentication. *Authentication phone* supports text messages and phone calls, *office phone* supports calls to numbers that have an extension, and *mobile app* supports using a mobile app to receive notifications for authentication or to generate authentication codes.
-
 4.  Complete the instructions on the screen to configure the method of multifactor authentication that you've selected.
 5.  Close the browser window, and sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) again to test the authentication method that you configured. For example, if you configured a mobile app for authentication, you should see a prompt like the following.
-
-:::image type="content" source="../media/approve-sign-in-request-ab44e1f6.png" alt-text="Screenshot showing the approve sign in request notification.":::
-
-
+    
+    :::image type="content" source="../media/approve-sign-in-request-ab44e1f6.png" alt-text="Screenshot showing the approve sign in request notification.":::
+    
 6.  Close the browser window.
 
 ## Configure Microsoft Entra multifactor authentication settings
@@ -241,6 +235,12 @@ After you acquire tokens, you need to upload them in a comma-separated values (C
 ```
 upn,serial number,secret key,time interval,manufacturer,model
 Helga@contoso.com,1234567,2234567abcdef2234567abcdef,60,Contoso,HardwareKey
+
+
+
+
+
+
 
 
 

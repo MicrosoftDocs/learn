@@ -91,6 +91,12 @@ The following JavaScript Object Notation (JSON) demonstrates a complete *appsett
 
 
 
+
+
+
+
+
+
 ```
 
 ## Run and test the sample app
@@ -114,11 +120,23 @@ Now you're ready to present and verify your first verified credential expert car
     
     
     
+    
+    
+    
+    
+    
+    
     ```
 2.  In another terminal, run the following command. This command runs the ngrok to set up a URL on 5000 and make it publicly available on the internet.
     
     ```
     ngrok http 5000
+    
+    
+    
+    
+    
+    
     
     
     

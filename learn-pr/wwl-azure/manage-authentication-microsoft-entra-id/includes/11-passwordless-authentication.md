@@ -54,8 +54,6 @@ The prerequisites are determined by your selected passwordless authentication me
 | Windows 10 version 1809 or higher using a supported browser like Microsoft Edge or Mozilla Firefox (version 67 or higher). Microsoft recommends version 1903 or higher for native support.                                                      |                             | √                       |
 | Compatible security keys. Ensure that you're using a [Microsoft-tested and verified FIDO2 security key](/entra/identity/authentication/concept-authentication-passwordless), or other compatible FIDO2 security key. |                             | √                       |
 
-\|
-
 ### Windows Hello for Business
 
 The prerequisites and deployment paths for Windows Hello for Business are highly dependent on whether you're deploying in an on-premises, hybrid, or cloud-only configuration. It's also dependent on your device join strategy.
@@ -194,22 +192,7 @@ Enabling Windows 10 sign-in using FIDO2 security keys requires you to enable the
 
 ### Key restrictions policy
 
-When you deploy the security key, you can optionally restrict the use of FIDO2 keys only to specific manufacturers that have been approved by your organization. Restricting keys requires the Authenticator Attestation GUID (AAGUID). There are two ways to get your AAGUID.
-
-:::image type="content" source="../media/security-key-enforce-key-restriction-6dd07803.png" alt-text="Screenshot showing the Authenticator Attestation user interface settings page.":::
-
-
-1.  If the security key is restricted, and the user tries to register the FIDO2 security key, they receive the following error:
-
-:::image type="content" source="../media/security-key-restricted-error-c11372d7.png" alt-text="Screenshot showing the security key restricted error notification.":::
-
-
-2.  If the security key is restricted, and the user tries to register the FIDO2 security key, they receive the following error:
-
-:::image type="content" source="../media/security-key-block-user-window-792f70f3.png" alt-text="Screenshot showing the security key block user notification.":::
-
-
-\*FIDO2 key blocked by Key Restriction Policy
+When you deploy the security key, you can optionally restrict the use of FIDO2 keys only to specific manufacturers that have been approved by your organization. Restricting keys requires the Authenticator Attestation GUID (AAGUID).
 
 ## Deploy FIDO2 security key sign-in
 
