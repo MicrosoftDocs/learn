@@ -1,6 +1,18 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/05-exercise-explore-databricks.yml",
+      "redirect_url": "/training/modules/explore-azure-databricks/06-exercise-explore-databricks"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/06-knowledge-check.yml",
+      "redirect_url": "/training/modules/explore-azure-databricks/07-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/07-summary.yml",
+      "redirect_url": "/training/modules/explore-azure-databricks/08-summary"
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/add-basic-conversational-intelligence/1-introduce-language-understanding-intelligent-service.md",
       "redirect_url": "/training/modules/create-language-understanding-app"
     },
