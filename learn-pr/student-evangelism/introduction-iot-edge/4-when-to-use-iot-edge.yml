@@ -4,11 +4,11 @@ title: When to use IoT Edge
 metadata:
   title: When to use IoT Edge
   description: When to use IoT Edge
-  ms.date: 09/24/2019
+  ms.date: 07/30/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
+  ms.custom: team=cloud_advocates
 durationInMinutes: 8 # dummy number at present
 content: |
   [!include[](includes/4-when-to-use-iot-edge.md)]
