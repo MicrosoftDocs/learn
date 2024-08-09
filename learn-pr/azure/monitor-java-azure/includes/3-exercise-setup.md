@@ -9,7 +9,7 @@ In this exercise, you'll clone a Git repository and run a script that sets up an
 The PetClinic application is decomposed into four core microservices. All of them are independently deployable applications organized by business domains.
 
 - **Customers service**: Contains general user input logic and validation including pets and owners information (Name, Address, City, Telephone).
-- **Visits service**: Stores and shows visits information for each pets' comments.
+- **Visits service**: Stores and shows visits information for each pet's comments.
 - **Vets service**: Stores and shows Veterinarians' information, including names and specialties.
 - **API Gateway**: A single entry point into the system, used to handle requests and route them to an appropriate service, and aggregate the results.
 
