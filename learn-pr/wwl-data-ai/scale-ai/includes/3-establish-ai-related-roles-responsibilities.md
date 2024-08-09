@@ -47,7 +47,7 @@ The Chief Digital Officer (CDO) is a change agent who oversees the transformatio
 * **Roll out an education program on data management best practices**: As more people outside of IT become involved in using or creating AI models, it's important to make sure everyone understands data management best practices. Data needs to be cleaned, consolidated, formatted, and managed so that it's easily consumable by AI and can avoid biases.
 
 #### Human Resources leader
-![Image of a person who is a human resources leader.](../media/HR.jpg)
+![Image of a person who is a human resources leader.](../media/hr-leader.jpg)
 
 A Human Resources (HR) director makes fundamental contributions to an organization's culture and people development. Their wide-ranging tasks include implementing cultural development, creating internal training programs, and hiring according to the needs of the business.
 
@@ -60,7 +60,7 @@ A Human Resources (HR) director makes fundamental contributions to an organizati
   * On the business side, it's important to train people to adopt new processes when an AI-based system changes their day-to-day workflow. Training includes teaching them how to interpret and act on AI predictions and recommendations using sound human judgment. You should manage that change thoughtfully.
 
 #### IT leader
-![Image of a person who is an IT leader.](../media/IT.jpg)
+![Image of a person who is an IT leader.](../media/IT-leader.jpg)
 
 While the Chief Digital Officer is charged with creating and implementing the overall digital strategy, an IT director oversees the day-to-day technology operations.
 
