@@ -1,7 +1,7 @@
 Fabrikam Residences is interested in automatically applying Azure best practices for their Azure VMs, and for their servers in other clouds and on-premises. In this unit, you learn how Azure Automanage can be used to click, set, and forget servers anywhere.
 
 > [!CAUTION]
-> On 31 August 2024, both Automation Update Management and the Log Analytics agent it uses will be retired. Migrate to Azure Update Manager before that. Refer to guidance on migrating to Azure Update Manager [here](azure/update-manager/guidance-migration-automation-update-management-azure-update-manager?WT.mc_id=Portal-Microsoft_Azure_Automation).
+> On 31 August 2024, both Automation Update Management and the Log Analytics agent it uses will be retired. Migrate to Azure Update Manager before that. Refer to guidance on migrating to Azure Update Manager [here](/azure/update-manager/guidance-migration-automation-update-management-azure-update-manager?WT.mc_id=Portal-Microsoft_Azure_Automation).
 
 ## Overview of Azure Automanage
 
