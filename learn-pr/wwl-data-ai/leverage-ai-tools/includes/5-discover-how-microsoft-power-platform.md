@@ -34,12 +34,12 @@ The diagram shows how this fusion development approach works.
 
 ![A screenshot of a graph showing the citizen developer creating apps, the professional developer adding custom functionality, and end users giving feedback.](../media/5-discover-how-microsoft-power-platform-2.png)
 
->[!TIP]
->![An energy worker using Power Platform on a tablet.](../media/power-platform-customer-story.jpg)
->**Customer story**: An energy provider has enabled over 4,300 Power Platform makers and created over 300 Power Platform solutions that generate almost $75 million in savings annually. In a single example of how Power Platform adoption has benefited the company, IT help desk agents were often burdened with mundane and repetitive requests that led to increased wait times for workers and reduced overall productivity. Today, 25%-40% of help desk demand is now fulfilled by an AI-powered chatbot built using Microsoft Copilot Studio. The increased efficiency resulting from the chatbot has saved the company more than $1.1 million annually and given help desk agents more time to focus on issues that required human intervention—which has improved the overall service level for their customers. Read the full customer story here: [https://aka.ms/power-platform-customer-story](https://aka.ms/power-platform-customer-story). 
+> [!TIP]
+> ![An energy worker using Power Platform on a tablet.](../media/power-platform-customer-story.jpg)
+> **Customer story**: An energy provider has enabled over 4,300 Power Platform makers and created over 300 Power Platform solutions that generate almost $75 million in savings annually. In a single example of how Power Platform adoption has benefited the company, IT help desk agents were often burdened with mundane and repetitive requests that led to increased wait times for workers and reduced overall productivity. Today, 25%-40% of help desk demand is now fulfilled by an AI-powered chatbot built using Microsoft Copilot Studio. The increased efficiency resulting from the chatbot has saved the company more than $1.1 million annually and given help desk agents more time to focus on issues that required human intervention—which has improved the overall service level for their customers. Read the full customer story here: [https://aka.ms/power-platform-customer-story](https://aka.ms/power-platform-customer-story). 
 
->[!TIP]
->Take a moment to consider if your organization has business process experts who could use low-code tools to integrate AI into workflows.
->![People working and talking around a table.](../media/2-reflection.jpg)
+> [!TIP]
+> Take a moment to consider if your organization has business process experts who could use low-code tools to integrate AI into workflows.
+> ![People working and talking around a table.](../media/2-reflection.jpg)
 
 In the next unit, let's discuss the opportunities of Azure AI Services.
