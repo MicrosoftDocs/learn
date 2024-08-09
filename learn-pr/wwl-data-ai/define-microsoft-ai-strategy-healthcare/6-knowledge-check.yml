@@ -34,7 +34,7 @@ quiz:
       explanation: "Correct. Generative AI technologies increase the time medical professions have to spend with patients."
     - content: "Generative AI eliminates the need for patient to consult with a medical professional. Instead, they can use a chatbot to diagnose their condition based on symptoms and advise appropriate treatment."
       isCorrect: false
-      explanation: "Incorrect. Generative AI does not replace consultations with a medical professionals."
+      explanation: "Incorrect. Generative AI does not replace consultations with a medical professional."
     - content: "Generative AI is not a suitable technology for use in healthcare scenarios."
       isCorrect: false
       explanation: "Incorrect. Generative AI is suitable in many healthcare scenarios."
