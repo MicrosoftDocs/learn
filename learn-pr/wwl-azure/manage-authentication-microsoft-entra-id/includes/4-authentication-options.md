@@ -101,7 +101,9 @@ The following diagrams outline the high-level architecture components required f
 Simplicity of a password hash synchronization solution:
 
 :::image type="content" source="../media/password-hash-synchronization-24659bd4-28d8b9e6.png" alt-text="Diagram showing an example of the password hash synchronization solution.":::
- Agent requirements of pass-through authentication, using two agents for redundancy: :::image type="content" source="../media/pass-through-authentication-febf09f9-841e38f9.png" alt-text="Diagram showing an example of pass-through authentication, using two agents for redundancy.":::
+ Agent requirements of pass-through authentication, using two agents for redundancy:
+
+:::image type="content" source="../media/pass-through-authentication-febf09f9-841e38f9.png" alt-text="Diagram showing an example of pass-through authentication, using two agents for redundancy.":::
 
 
 Components required for federation in your perimeter and internal network of your organization:
