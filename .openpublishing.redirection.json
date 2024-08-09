@@ -31371,57 +31371,57 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/configure-user-experience-settings/10-troubleshoot-user-profile-issues.md",
-      "redirect_url": "training/modules/configure-user-experience-settings/",
+      "redirect_url": "/training/modules/configure-user-experience-settings/",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/configure-user-experience-settings/11-troubleshoot-azure-virtual-desktop-clients.md",
-      "redirect_url": "training/modules/configure-user-experience-settings/7-troubleshoot-azure-virtual-desktop-clients",
+      "redirect_url": "/training/modules/configure-user-experience-settings/7-troubleshoot-azure-virtual-desktop-clients",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/configure-user-experience-settings/12-knowledge-check.md",
-      "redirect_url": "training/modules/configure-user-experience-settings/",
+      "redirect_url": "/training/modules/configure-user-experience-settings/",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/configure-user-experience-settings/13-summary.md",
-      "redirect_url": "training/modules/configure-user-experience-settings/9-summary",
+      "redirect_url": "/training/modules/configure-user-experience-settings/9-summary",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/configure-user-experience-settings/3-configure-persistent-non-persistent-desktop-environments.md",
-      "redirect_url": "training/modules/configure-user-experience-settings/",
+      "redirect_url": "/training/modules/configure-user-experience-settings/",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/configure-user-experience-settings/4-configure-user-settings-through-group-policies.md",
-      "redirect_url": "training/modules/configure-user-experience-settings/",
+      "redirect_url": "/training/modules/configure-user-experience-settings/",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/configure-user-experience-settings/5-configure-user-settings-through-endpoint-manager-policies.md",
-      "redirect_url": "training/modules/configure-user-experience-settings/",
+      "redirect_url": "/training/modules/configure-user-experience-settings/",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/configure-user-experience-settings/6-configure-session-timeout-properties.md",
-      "redirect_url": "training/modules/configure-user-experience-settings/3-configure-session-timeout-properties",
+      "redirect_url": "/training/modules/configure-user-experience-settings/3-configure-session-timeout-properties",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/configure-user-experience-settings/7-configure-device-redirections.md",
-      "redirect_url": "training/modules/configure-user-experience-settings/6-configure-device-redirections",
+      "redirect_url": "/training/modules/configure-user-experience-settings/6-configure-device-redirections",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/configure-user-experience-settings/8-configure-universal-print.md",
-      "redirect_url": "training/modules/configure-user-experience-settings/5-configure-universal-print",
+      "redirect_url": "/training/modules/configure-user-experience-settings/5-configure-universal-print",
       "redirect_document_id": false
     },
      {
       "source_path_from_root": "/learn-pr/wwl-azure/configure-user-experience-settings/9-implement-start-virtual-machine-connect-feature.md",
-      "redirect_url": "training/modules/configure-user-experience-settings/4-implement-start-virtual-machine-connect-feature",
+      "redirect_url": "/training/modules/configure-user-experience-settings/4-implement-start-virtual-machine-connect-feature",
       "redirect_document_id": false
     }
   ]
