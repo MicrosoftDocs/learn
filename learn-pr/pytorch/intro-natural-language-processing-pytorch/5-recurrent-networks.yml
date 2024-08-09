@@ -20,13 +20,13 @@ quiz:
       choices:
         - content: "Word-level LSTM"
           isCorrect: false
-          explanation: "Word-level networks operate on pre-defined vocabulary of words, and can't generate new words."
+          explanation: "Word-level networks operate on predefined vocabulary of words, and can't generate new words."
         - content: "Character-level LSTM"
           isCorrect: true
-          explanation: "Correct, character-level LSTM will capture often used syllables and will put those patterns together to generate new words."
+          explanation: "Correct, character-level LSTM locates often used syllables and will put those patterns together to generate new words."
         - content: "Word-level RNN"
           isCorrect: false
-          explanation: "Word-level networks operate on pre-defined vocabulary of words, and cannot generate new words."
+          explanation: "Word-level networks operate on predefined vocabulary of words, and can't generate new words."
         - content: "Character-level perceptron"
           isCorrect: false
           explanation: "Fully connected linear network (perceptron) isn't a good architecture for text modeling, because they can't capture common patterns effectively."
