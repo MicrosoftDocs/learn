@@ -1,9 +1,33 @@
-Azure Databricks is an amalgamation of multiple technologies that enable you to work with data at scale. Before using Azure Databricks, there are some key concepts that you should understand.
+Azure Databricks is a single service platform with multiple technologies that enable working with data at scale. When using Azure Databricks, there are some key concepts to understand.
 
-![A diagram showing the key elements of a Databricks solution.](../media/key-concepts.png)
+## Workspaces
 
-1. **Apache Spark clusters** - Spark is a distributed data processing solution that makes use of *clusters* to scale processing across multiple compute *nodes*. Each Spark cluster has a *driver* node to coordinate processing jobs, and one or more *worker* nodes on which the processing occurs. This distributed model enables each node to operate on a subset of the job in parallel; reducing the overall time for the job to complete. To learn more about clusters in Azure Databricks, see [Clusters](/azure/databricks/clusters/) in the Azure Databricks documentation.
-2. **Data lake storage** - While each cluster node has its own local file system (on which operating system and other node-specific files are stored), the nodes in a cluster also have access to a shared, distributed file system in which they can access and operate on data files. This shared data storage, known as a *data lake*, enables you to mount cloud storage, such as Azure Data Lake Storage or a Microsoft OneLake data store, and use it to work with and persist file-based data in any format.
-3. **Metastore** - Azure Databricks uses a metastore to define a relational schema of tables over file-based data. The tables are based on the *[Delta Lake](/azure/databricks/delta)* format and can be queried using SQL syntax to access the data in the underlying files. The table definitions and details of the file system locations on which they're based are stored in the metastore, abstracting the data objects that you can use for analytics and data processing from the physical storage where the data files are stored. Azure Databricks metastores are managed in *[Unity Catalog](/azure/databricks/connect/unity-catalog)*, which provides centralized data storage, access management, and governance (though depending on how your Azure Databricks workspace is configured, you may also use a legacy *Hive Metastore* with data files stored in a *Databricks File System* (DBFS) data lake).
-4. **Notebooks** - One of the most common ways for data analysts, data scientists, data engineers, and developers to work with Spark is to write code in *notebooks*. Notebooks provide an interactive environment in which you can combine text and graphics in *Markdown* format with cells containing code that you run interactively in the notebook session. To learn more about notebooks, see [Notebooks](/azure/databricks/notebooks/) in the Azure Databricks documentation.
-5. **SQL Warehouses** - *SQL Warehouses* are relational compute resources with endpoints that enable client applications to connect to an Azure Databricks workspace and use SQL to work with data in tables. The results of SQL queries can be used to create data visualizations and dashboards to support business analytics and decision making. SQL Warehouses are only available in *premium* tier Azure Databricks workspaces. To learn more about SQL Warehouses, see [SQL Warehouses](/azure/databricks/sql/admin/sql-endpoints) in the Azure Databricks documentation.
+A [workspace](/azure/databricks/admin/workspace/?azure-portal=true) is an environment for accessing all the Databricks assets. It provides a user interface to manage notebooks, libraries, and experiments. Workspaces can be organized into folders and shared among team members, facilitating collaboration and resource management.
+
+## Notebooks
+
+Databricks [notebooks](/azure/databricks/notebooks/?azure-portal=true) are interactive documents that contain runnable code, visualizations, and narrative text. They support multiple languages, including Python, R, Scala, and SQL, which can be used simultaneously within the same notebook. Notebooks are central to collaborative projects and are ideal for exploratory data analysis, data visualization, and complex data workflows.
+
+## Clusters
+
+[Clusters](/azure/databricks/compute/?azure-portal=true) are the computational engines of Azure Databricks. Users can create and scale clusters according to the computational resources needed. Clusters can be configured manually or set to auto-scale based on workload. They support different types of nodes for various tasks, like driver and worker nodes, ensuring efficient resource utilization.
+
+## Jobs
+
+[Jobs](/azure/databricks/workflows/jobs/create-run-jobs?azure-portal=true) in Azure Databricks are used to schedule and run automated tasks. These tasks can be notebook runs, Spark jobs, or arbitrary code executions. Jobs can be triggered on a schedule or run in response to certain events, making it easy to automate workflows and periodic data processing tasks.
+
+## Databricks Runtime
+
+The [Databricks Runtime](/azure/databricks/release-notes/runtime/?azure-portal=true) is a set of performance-optimized versions of Apache Spark. It includes enhancements for improved performance and additional functionality beyond standard Spark, such as optimizations for machine learning workloads, graph processing, and genomics.
+
+## Delta Lake
+
+[Delta Lake](/azure/databricks/structured-streaming/delta-lake?azure-portal=true) is an open-source storage layer that brings reliability and scalability to data lakes. It provides ACID transactions, scalable metadata handling, and unifies streaming and batch data processing, all crucial for managing large-scale data in a consistent and fault-tolerant manner.
+
+## Databricks SQL
+
+[Databricks SQL](/azure/databricks/sql/get-started/concepts?azure-portal=true) provides a way to perform SQL queries on the data within Azure Databricks. It allows data analysts to run quick ad-hoc queries and create reports directly on big data. It includes an SQL editor, dashboards, and automatic visualization tools, making it user-friendly for those accustomed to SQL environments.
+
+## MLflow
+
+[MLflow](/azure/databricks/machine-learning/?azure-portal=true) is an open-source platform for managing the end-to-end machine learning lifecycle. It includes features for experiment tracking, model management, and deployment, helping practitioners manage and share their ML models and experiments efficiently.
