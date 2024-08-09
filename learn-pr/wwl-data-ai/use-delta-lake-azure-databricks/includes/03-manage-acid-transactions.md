@@ -18,7 +18,7 @@ data.write.format("delta").save("/FileStore/tables/my_delta_table")
 
 Delta Lake automatically handles ACID transactions for you. Every operation that writes data to a Delta table (such as INSERT, UPDATE, DELETE) is automatically wrapped in a transaction. These operations are logged in a transaction log, ensuring that either the entire operation succeeds or fails (atomicity), and the data remains consistent across all views (consistency).
 
-### Reading and Writing Data
+### Read and write data
 
 When reading or writing data, you can use standard Spark SQL commands or the DataFrame API. For instance, appending data to a Delta table might look like this using Python:
 
@@ -28,15 +28,15 @@ new_data = spark.range(5, 10)
 new_data.write.format("delta").mode("append").save("/FileStore/tables/my_delta_table")
 ```
 
-### Concurrent Writes
+### Concurrent writes
 
 Delta Lake manages concurrent writes by ensuring that only one operation can commit its changes at a time. If multiple writers are trying to write to the same Delta table, Delta Lake uses optimistic concurrency control to handle conflicts, retrying or failing operations as necessary.
 
-### Transaction Log
+### Transaction log
 
 Delta Lake maintains a detailed transaction log (_delta_log) in the background. This log records all the transactions that have modified the table. This log is crucial for maintaining the integrity of the table and for supporting features like time travel, which allows you to view and revert to earlier versions of the data.
 
-### Optimization and Maintenance
+### Optimization and maintenance
 
 Delta Lake provides several utilities to optimize the performance of Delta tables, such as OPTIMIZE for compacting files and VACUUM for removing obsolete files:
 

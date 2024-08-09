@@ -1,6 +1,6 @@
 Schema enforcement is one of the key features of Delta Lake, helping you to maintain data integrity and consistency by ensuring that the data written to a Delta table adheres to the expected schema. This feature prevents erroneous data from corrupting the dataset, which can be valuable in production environments where multiple processes or users might be writing to the same dataset. To implement schema enforcement in Delta Lake, follow these steps:
 
-## Creating a Delta Table with a defined schema
+## Create a Delta table with a defined schema
 
 Create a Delta table with a specific schema either programmatically using Spark SQL or by using the DataFrame API. An example of how to create a Delta Table with a defined schema using Spark SQL follows.
 
@@ -24,7 +24,7 @@ VALUES
 
 ```
 
-## Enforcing Schema on Writes
+## Enforce schema on writes
 
 Once a Delta table is set up with a defined schema, Delta Lake automatically enforces this schema on all subsequent write operations. If an incoming DataFrame doesn't match the schema of the Delta table, the write operation fails. An example of how to test enforcing schema on writes follows.
 
@@ -36,7 +36,7 @@ VALUES
 
 ```
 
-## Handling Schema Mismatches
+## Handle schema mismatches
 
 You can use the MERGE statement to handle updates and insertions in a way that accommodates schema changes.
 

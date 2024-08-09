@@ -14,6 +14,6 @@ Delta Lake treats batch and streaming data as the same entity, simplifying the d
 
 ### Integration
 
-Being a part of the Databricks platform, Delta Lake is deeply integrated with other Databricks services. This integration provides the users a seamless experience that allows for the development of sophisticated analytics applications on a unified platform.
+Being a part of the Databricks platform, Delta Lake is deeply integrated with other Databricks services. This integration provides the users an experience that allows for the development of sophisticated analytics applications on a unified platform.
 
 These features make Delta Lake suited for enterprises needing to manage large volumes of data with high reliability and performance within the Azure Databricks ecosystem.
