@@ -45,7 +45,7 @@ quiz:
       explanation: "Incorrect. Training every subject matter expert in AI development would be time-intensive and costly."
     - content: "Retrain business domain experts to perform other tasks - AI will replace them in their current roles."
       isCorrect: false
-      explanation: "Incorrect. Organizations can achieve te most from AI when they utilize the expertise of their business users and subject matter experts."
+      explanation: "Incorrect. Organizations can achieve the most from AI when they utilize the expertise of their business users and subject matter experts."
     - content: "Encourage domain experts to use AI copilots and no-code AI development tools to expand their impact across the enterprise."
       isCorrect: true
       explanation: "Correct. Company-wide transformation takes place when experts can embed their knowledge into AI tools and process automation."

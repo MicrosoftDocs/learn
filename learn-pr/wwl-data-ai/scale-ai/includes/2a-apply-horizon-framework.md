@@ -14,7 +14,7 @@ Scenarios that fall below the middle line help the organization survive more tha
 
 Once you are done classifying your initiatives on the grid, you can map the quadrants to horizons. The quadrant that an initiative fits determines which horizon it belongs to. The initiatives in quadrants one and four belong to Horizon 2. The initiatives in quadrant three belong to Horizon 1. The initiatives in quadrant two belong to Horizon 3.  
 
-![Diagram that shows a filled in prioritization grid.](../media/2-filled-in-prioritization-grid.png)
+![Diagram that shows a filled in prioritization grid.](../media/2-filled-prioritization-grid.png)
 
 ## Prioritize investments based on horizons
 
@@ -32,7 +32,7 @@ Horizon 2 and Horizon 3 initiatives require more sophisticated data science capa
 
 ## Define clear value drivers and KPIs for your AI investments
 
-Once you've chosen AI initiatives, it's important to identify value drivers and key performance indicators (KPIs) for each project. The framework provides a useful way to think about any investment—including AI initiatives.
+Once you've chosen AI initiatives, it's important to identify value drivers and key performance indicators (KPIs) for each project. The framework provides a useful way to think about any investment including AI initiatives.
 
 | **Value** | **Sample category** | **Definition** | **AI example** |
 |---|---|---|---|
@@ -49,6 +49,6 @@ Moving forward, we advise putting systemic processes in place to manage and eval
 
 >[!TIP]
 >Take a moment to come up with some potential example investments for each of the 3 horizons.
->![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
+>![Illustration showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let’s take a look at the AI-related roles and responsibilities that should be established in every AI organization.

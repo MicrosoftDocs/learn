@@ -26,6 +26,6 @@ For example, a manufacturer of electronics might use IoT to collect operational 
 
 Horizon 3 (H3) involves disruptive and innovative new business models. These are revolutionary applications that might cross industry boundaries or even create new customer needs.
 
-For example, the same electronics manufacturer could sell "electronics-as-a-service"—which means they use AI models to predict which electronic devices work best for your current system and needs. Ultimately, the company is selling a personalized service rather than a single product, creating new revenue streams and opportunities.
+For example, the same electronics manufacturer could sell "electronics-as-a-service" which means they use AI models to predict which electronic devices work best for your current system and needs. Ultimately, the company is selling a personalized service rather than a single product, creating new revenue streams and opportunities.
 
 Next, let’s take a look at how to use a prioritization grid to apply a horizon-based framework.

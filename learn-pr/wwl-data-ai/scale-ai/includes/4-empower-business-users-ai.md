@@ -4,7 +4,7 @@ In this unit, we explore the potential of putting business users at the center o
 
 AI can empower all people to achieve more, not just developers and data scientists. In fact, McKinsey predicts that latest generative AI has the potential to automate as much as 58.5 percent of scenarios requiring to apply expertise. These scenarios were especially hard to automate without this technology.<sup>2</sup> Organizations can achieve most of this automation from business users and subject matter experts working directly with AI and generative AI.
 
-![Image of two people working in an office who are looking at a computer screen.](../media/empower-business-users.jpg)
+![Illustration of two people working in an office who are looking at a computer screen.](../media/empower-business-users.jpg)
 
 Let's take some real examples:
 
@@ -16,7 +16,7 @@ Pharmaceutical companies and sales are just two examples. AI provides business u
 
 ## AI for everyone
 
-At Microsoft, we’re working to ensure that any user—from accountant to researcher—can achieve more with AI. It shouldn’t require a background in data science to benefit from AI experiences.
+At Microsoft, we’re working to ensure that any user from accountant to researcher can achieve more with AI. It shouldn’t require a background in data science to benefit from AI experiences.
 
 We believe AI should be used to enhance human capabilities. AI works best as a copilot, not a replacement. The right AI tools help employees better apply their expertise and complement it with AI-powered insights, making them more innovative and effective. To accomplish AI for everyone, we’re weaving intelligence into business applications that people use every day.
 
