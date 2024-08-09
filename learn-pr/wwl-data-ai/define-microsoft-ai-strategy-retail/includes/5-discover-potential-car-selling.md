@@ -14,7 +14,7 @@ The company’s sales greatly depend on reaching leads via **engine search resul
 
 To solve this problem, they decided to summarize customers’ reviews. They resolved to try this approach in 5,000 car pages. At their usual pace, the process would take 11 years. CarMax needed to automate the process to improve productivity.
 
-![Image showing a smiling person driving a car.](../media/5-driving.jpg)
+![A smiling person driving a car.](../media/5-driving.jpg)
 
 ## The solution
 

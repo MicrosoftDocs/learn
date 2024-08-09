@@ -10,7 +10,7 @@ Most purchases take place in offline stores. So, it’s a major retail challenge
 
 Grocery stores like Żabka are noticing that customer needs are changing in recent years. First, people want to spend less time getting groceries. Second, their buying habits are changing dramatically. Third, they need shopping to be easier. In short, they demand **faster, easier shopping experiences**. Żabka must respond to these customers’ needs.
 
-![Image showing a person on their phone while shopping in a grocery store.](../media/4-shopping.jpg)
+![A person on their phone while shopping in a grocery store.](../media/4-shopping.jpg)
 
 ## The solution
 
