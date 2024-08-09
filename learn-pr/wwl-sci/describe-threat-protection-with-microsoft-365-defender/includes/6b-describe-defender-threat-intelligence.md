@@ -6,7 +6,7 @@ From Defender TI’s Threat Intelligence Home Page, analysts can quickly scan ne
 
 The featured article section of the Defender TI Threat Intelligence Home Page shows you the featured Microsoft content.
 
-:::image type="content" source="../media/defender-threat-intelligence-home-page-inline.png" lightbox="../media/defender-threat-intelligence-home-page-expanded.png" alt-text="A screenshot of the home page for Microsoft Defender Threat Intelligence.":::
+:::image type="content" source="../media/defender-threat-intelligence-intel-explorer.png" lightbox="../media/defender-threat-intelligence-intel-explorer.png" alt-text="A screenshot of the home page for Microsoft Defender Threat Intelligence.":::
 
 ### Defender TI articles
 
