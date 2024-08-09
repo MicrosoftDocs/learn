@@ -1,10 +1,10 @@
 Managing ACID transactions in Azure Databricks using Delta Lake is a powerful way to maintain data integrity and consistency across large datasets.
 
-### Enabling Delta Lake
+### Enable Delta Lake
 
 Ensure that Delta Lake is enabled in your Databricks workspace. In Azure Databricks, Delta Lake is enabled by default for all clusters.
 
-### Creating a Delta Table
+### Create a Delta Table
 
 To start using ACID transactions, you need to store your data in Delta format. You can create a Delta table either by converting an existing Parquet table or by defining a new table directly in Delta format. Here’s an example of creating a new Delta table using Python:
 

@@ -2,7 +2,7 @@ Data versioning and time travel are standout features of Delta Lake that allow y
 
 This lesson shows how to implement and use data versioning and time travel with Delta Lake in Azure Databricks.
 
-## Understand Delta Lake time travel
+### Understand Delta Lake time travel
 
 Delta Lake tracks versions of data in a Delta table using a transaction log that records details about every change made to the table. Each transaction has a unique version number, starting from zero. These versions allow you to access the state of the data at a specific point in time.
 
