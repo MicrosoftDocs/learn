@@ -2,7 +2,7 @@ To truly realize the potential of AI, it’s essential to bring AI to every empl
 
 *Copilot* refers to AI embedded into applications. Microsoft Copilot provides a transformed experience across business functions and everyday routines. 
  
-![A screenshot of Microsoft 365 Copilot in Outlook.](../media/4-outlook-example.png)
+![Microsoft 365 Copilot in Outlook.](../media/4-outlook-example.png)
 
 ## Business functions
 
@@ -68,13 +68,13 @@ AI-powered search experiences like Microsoft Search can help business users wade
 > 62 percent of employees consider they spend too much time struggling to find the information they need.<sup>1</sup>
 
 >[!TIP]
->![Photo of a manager in a car using Copilot on a tablet.](../media/everyday-ai-customer-story.jpg)
+>![Manager in a car using Copilot on a tablet.](../media/copilot-customer-story.jpg)
 >**Customer story**: A technology services support and consulting company uses Microsoft Copilot for Sales to capture notes in client meetings.​ Copilot for Sales analyzes transcribed text from Teams meetings to generate key discussion highlights tailored for sales roles. It then creates meeting summaries in Outlook from these discussion highlights, which are saved to CRM.​ The result is less time spent writing and collating notes, and the creation of consistent, standardized summaries that simplify the process of creating proposals and contracts.​ Customers benefit from a faster, more relevant response to enquiries and the company benefits from greater efficiency and an increase in revenue. Read the full customer story here: [https://aka.ms/sales-copilot-customer-story](https://aka.ms/sales-copilot-customer-story). 
 
 Now is the time to empower your employees with the right AI tools to amplify their capabilities and achieve more. 
 
 >[!TIP]
 >Take a moment to reflect on ways your team or organization could benefit from AI capabilities in your existing workflows and business processes.
->![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
+>![People working and talking around a table.](../media/2-reflection.jpg)
 
 In the next unit, we'll discuss Power Platform, which also offers AI features for people without data science or coding expertise.

@@ -1,6 +1,6 @@
 The primary goal of AI is to use machines for capabilities that are usually associated with humans. Let's see data science concepts support the foundation of AI. 
 
-![A screenshot of a graph showing AI methodologies (deep learning, machine learning, and data science).](../media/2-identify-basic-ml-concepts.png)
+![A graph showing AI methodologies (deep learning, machine learning, and data science).](../media/2-machine-learning-concepts.png)
 
 ## What is data science?
 Data science is an **interdisciplinary field** whose aim is to achieve AI. It primarily uses machine learning and statistics techniques. In most cases, data scientists are the experts in charge of solving AI problems.

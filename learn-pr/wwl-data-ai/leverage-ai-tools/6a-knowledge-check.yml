@@ -12,7 +12,7 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/10-knowledge-check.md)]
+  [!include[](includes/6a-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -34,7 +34,7 @@ quiz:
       explanation: "Incorrect. Azure Machine Learning enables data scientists and software developers to build and manage machine learning models."
     - content: "Azure AI services."
       isCorrect: false
-      explanation: "Incorrect. Azure AI services provides the building blocks for custom AI application development."
+      explanation: "Incorrect. Azure AI services provide the building blocks for custom AI application development."
     - content: "Microsoft Power Platform."
       isCorrect: true
       explanation: "Correct. Microsoft Power Platform consists of a suite of applications to enable users to create custom AI software without coding."
@@ -42,7 +42,7 @@ quiz:
     choices:
     - content: "Azure AI services."
       isCorrect: false
-      explanation: "Incorrect. Azure AI services primarily provides pre-built predictive models that can be customized."
+      explanation: "Incorrect. Azure AI services primarily provide pre-built predictive models that can be customized."
     - content: "Azure Machine Learning."
       isCorrect: true
       explanation: "Correct. Azure Machine Learning provides a platform for training and managing custom predictive models from scratch."

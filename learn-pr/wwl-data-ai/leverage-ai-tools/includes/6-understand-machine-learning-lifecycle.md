@@ -6,19 +6,19 @@ Maintaining AI solutions typically requires machine learning lifecycle managemen
 
 To cope effectively with this complexity, some best practices are required. They focus on cross-team collaboration, automating and standardizing processes, and ensuring models can be easily audited, explained, and reused. To get this done, data science teams rely on the **machine learning operations** approach. This methodology is inspired by DevOps (development and operations), the industry standard for managing operations for an application development cycle, since the struggles of developers and data scientists are similar.
 
-![A screenshot of a graph showing MLOps practices: data scientists and IT work together on model reproducibility, validation, deployment, and retraining.](../media/7-discover-business-value-applying-devops-1.png)
+![A graph showing MLOps practices: data scientists and IT work together on model reproducibility, validation, deployment, and retraining.](../media/7-discover-business-value-applying-devops-1.png)
 
 ## Azure Machine Learning
 
 Data scientists can manage and execute machine learning DevOps from **Azure Machine Learning**, a platform by Microsoft to make machine learning *lifecycle management* and *operations* practices easier. Such tools help teams collaborate in a shared, auditable, and safe environment where many processes can be optimized via automation.
 
-![A screenshot of Azure Machine Learning Studio landing page.](../media/auzre-ml-studio.png)
+![Azure Machine Learning Studio landing page.](../media/auzre-machine-learning-studio.png)
 
 #### Machine learning lifecycle management
 
 Azure Machine Learning supports end-to-end machine learning lifecycle management of pretrained and custom models. The typical lifecycle includes the following steps: data preparation, model training, model packaging, model validation, model deployment, model monitoring and retraining. 
 
-![A screenshot of a graph showing the ML lifecycle: prepare data, train model, package model, validate model, deploy mode, monitor model, and retrain model.](../media/6-understand-machine-learning-lifecycle-1.png)
+![A graph showing the ML lifecycle: prepare data, train model, package model, validate model, deploy mode, monitor model, and retrain model.](../media/6-understand-machine-learning-lifecycle-1.png)
 
 The classic approach covers all the usual steps of a data science project. 
 
@@ -39,22 +39,22 @@ Machine learning operations (MLOps) apply the methodology of DevOps (development
 
 MLOps processes and tools help those teams collaborate and provide visibility through shared, auditable documentation. MLOps technologies enable users to save and track changes to all resources, like data, code, models, and other tools. These technologies can also create efficiencies and accelerate the lifecycle with automation, repeatable workflows, and reusable assets. All these practices make AI projects more agile and efficient.
 
-Azure Machine learning supports the following MLOps practices: 
+Azure Machine Learning supports the following MLOps practices: 
 
 * **Model reproducibility**: means different team members can run models on the same dataset and get similar results. Reproducibility is critical for making results of models in production reliable. Azure Machine Learning supports model reproducibility with centrally manage assets like environments, code, datasets, models, and machine learning pipelines. 
 
 * **Model validation**: before a model is deployed, it's critical to validate its performance metrics. You may have several metrics that are used to indicate the "best" model. Validating performance metrics in ways relevant to the business use case is critical. Azure Machine Learning supports model validation with many tools to evaluate model metrics, such as loss functions and confusion matrixes.
 
-* **Model deployment**: when a model is deployed, it's important to have data scientists and AI engineers work together to determine the best deployment option. These options include, cloud, on-premise, and edge devices (cameras, drones, machinery). 
+* **Model deployment**: when a model is deployed, it's important to have data scientists and AI engineers work together to determine the best deployment option. These options include, cloud, on-premises, and edge devices (cameras, drones, machinery). 
 
 * **Model retraining**: models need to be monitored and periodically retrained to correct performance issues and take advantage of newer training data. Azure Machine Learning supports a systematic and iterative process to continually refine and ensure the accuracy of the model.
 
 >[!TIP]
->![Photo of an healthcare worker accessing Azure Machine Learning on a tablet.](../media/machine-learning-customer-story.jpg)
+>![A healthcare worker accessing Azure Machine Learning on a tablet.](../media/machine-learning-customer-story.jpg)
 >**Customer story**: A healthcare organization uses Azure Machine Learning to train custom machine learning models that predict the likelihood of complications during surgical procedures. The models are trained on huge volumes of data, including factors such as age, ethnicity, smoking history, body mass index, and blood platelet count. Using these models enables medical professionals to better assess risk and determine options for surgery or lifestyle change recommendations for individual patients. The responsible AI dashboard in Azure Machine Learning helps explain predictive factors and mitigate bias from demographic factors. Ultimately, the predictive modeling solution helps reduce risk and uncertainty, and improve surgical outcomes. Read the full customer story here: [https://aka.ms/azure-ml-customer-story](https://aka.ms/azure-ml-customer-story).
 
 >[!TIP]
 >Take a moment to consider how your organization can leverage data science and machine learning expertise to build custom models. 
->![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
+>![People working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let’s wrap up everything with a knowledge check.

@@ -1,6 +1,6 @@
 Modern AI is built on a foundation of data science and machine learning.
 
-![A screenshot of a graph showing how generative AI is a subset of AI.](../media/2-identify-basic-ai-concepts.png)
+![A graph showing how generative AI is a subset of AI.](../media/2-artificial-intelligence-concepts.png)
 
 Artificial Intelligence (AI) is the ability of a computer program or machine to **mimic human-like behavior**. For example, to mimic visual senses, speech recognition, decision-making, natural language understanding, and so on. It's not a technology of itself, but rather a goal set by technologists to imitate human intelligence.
 
