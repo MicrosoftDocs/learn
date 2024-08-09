@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
-  ms.service: postgresql
+  ms.service: azure-database-postgresql
   ai-usage: human-only
 title: Tune queries in Azure Database for PostgreSQL
 summary: Database management systems (DBMSs) need systems to understand the data and the queries that are running against this data. It's important to understand how performance tuning works and how you can assess performance metrics.
