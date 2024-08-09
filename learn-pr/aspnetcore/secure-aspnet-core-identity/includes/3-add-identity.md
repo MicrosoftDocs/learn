@@ -6,7 +6,7 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
 
 **To use a local Dev Container**, follow these steps:
 
-1. In a Visual Studio Code window, press <kbd>F1</kbd> key to open the command palette. Search for and select **Remote-Containers: Clone Repository in Container Volume...**.
+1. In a Visual Studio Code window, press <kbd>F1</kbd> key to open the command palette. Search for and select **Dev-Containers: Clone Repository in Container Volume...**.
 
 1. Enter the following repository URL: `https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity`. Select the `main` branch. Visual Studio code will create the Dev Container. Accept any prompts to install recommended extensions.
 
