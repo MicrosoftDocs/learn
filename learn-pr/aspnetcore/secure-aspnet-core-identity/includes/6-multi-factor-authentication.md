@@ -10,7 +10,7 @@ The proof required for authentication is categorized into three types:
 * Something you have, like a hardware token or an app on your phone.
 * Something you are, like a fingerprint or face scan.
 
-Much of the effectiveness of MFA comes from using different *types* of authentication. An adversary might be able to get access to multiple things you know, like your password and your childhood nickname, but it's harder to compromise both something you *know* **and** something you *have* or *are*.
+Much of the effectiveness of MFA comes from using different *types* of authentication. An adversary might be able to get access to multiple things you know, like your password and your childhood nickname. However, it's harder to compromise both something you *know* **and** something you *have* or *are*.
 
 ## Time-based one-time password
 
@@ -18,8 +18,8 @@ Time-based one-time password (TOTP) is a well-known algorithm that generates uni
 
 When registering, the user enters the key into a TOTP-compliant app. Such apps include:
 
-* Microsoft Authenticator
-* Google Authenticator
+* Microsoft Authenticator.
+* Google Authenticator.
 * *Many others!*
 
 Entering the key into the app can be streamlined with a QR code. The app uses the key and current time to generate and display unique codes every 30 seconds. If the code the app generates matches what the server expects, the authentication succeeds. The algorithm is designed to be forgiving of minor differences between the clocks on your device and the server.

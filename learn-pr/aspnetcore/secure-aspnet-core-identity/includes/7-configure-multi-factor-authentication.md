@@ -79,7 +79,7 @@ Now that you can generate QR codes, you can embed a QR code into the **Configure
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml":::*, make the following highlighted changes and save:
 
-    [!code-cshtml[](../code/areas/identity/pages/account/manage/enableauthenticator.cshtml?highlight=3-5)]
+    [!code-cshtml[](../code/areas/identity/pages/account/manage/enableauthenticator.cshtml?highlight=4-6)]
 
     The preceding markup embeds the base-64 encoded image in the page.
 

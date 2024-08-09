@@ -138,7 +138,7 @@ You've added the new fields to the user registration form, but you should also a
 
     1. Incorporate the highlighted changes in the `LoadAsync` method:
 
-        [!code-csharp[](../code/areas/identity/pages/account/manage/index-snippets.cshtml.cs?name=snippet_loadasync&highlight=11-12)]
+        [!code-csharp[](../code/areas/identity/pages/account/manage/index-snippets.cshtml.cs?name=snippet_loadasync&highlight=10-12)]
 
         The preceding code supports retrieving the first and last names for display in the corresponding text boxes of the profile management form.
 
