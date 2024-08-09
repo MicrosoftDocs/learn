@@ -5,7 +5,7 @@ interactive: bash
 metadata:
   title: Create endpoints and event routes
   description: Use the Azure Digital Twins APIs to create an endpoint, create an event route, and check their statuses.
-  ms.date: 11/29/2023
+  ms.date: 08/09/2024
   author: baanders
   ms.author: baanders
   ms.topic: unit

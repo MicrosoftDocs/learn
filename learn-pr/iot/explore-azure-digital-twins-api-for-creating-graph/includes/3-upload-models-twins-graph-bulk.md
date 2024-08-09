@@ -1,6 +1,6 @@
 In this unit, you use the Jobs API to import a sample scenario graph complete with models, twins, and relationships. The Import Jobs API uses a file placed in Azure Blob Storage to import all of these entities into your Azure Digital Twins instance at once. You then use Models and Digitaltwins APIs to verify the graph that was imported.
 
-Follow the steps in this unit to explore and import the sample scenario graph into your Azure Digital Twins instance.
+Follow the steps in this unit to explore the sample scenario graph and import it into your Azure Digital Twins instance.
 
 ## Understand sample scenario and import file
 
@@ -70,44 +70,72 @@ In this section, you send an Import Jobs API request to import the sample file o
 
 Start by reviewing the [Jobs API documentation](/rest/api/digital-twins/dataplane/jobs). The API contains operations for managing long-running jobs, including add, cancel, delete, get by ID, and list for import jobs. In this section, you use **ImportJobs Add** to create an import request, and **ImportJobs GetById** to check the job's status.
 
-:::image type="content" source="../media/3-jobs.png" alt-text="Reference doc screenshot showing the Jobs operations." border="true" lightbox="../media/3-jobs.png":::
+Build the import request by following these steps.
 
-Return to your Postman window.
+1. Open the API documentation page for [ImportJobs Add](/rest/api/digital-twins/dataplane/jobs/import-jobs-add), and copy the HTTP request.
 
-From your Postman collections, expand the folder path _Data plane > jobs > imports > {id}_, and open **PUT Import Jobs Add**. You'll fill in this request template to create a new import job.
+    :::image type="content" source="../media/3-import-jobs-add-copy.png" alt-text="Reference doc screenshot showing the Import Jobs Add operations." border="true" lightbox="../media/3-import-jobs-add-copy.png":::
 
-Make the following changes in the template:
-* In the **Params** tab, set **api-version** to *2023-10-31*. Set the **id** value to *importdistributiongrid* to assign an ID value to the job you're creating.
+1. Return to your Visual Studio project you started in the previous unit, and open *data.http*.
 
-  :::image type="content" source="../media/3-import-jobs-variables.png" alt-text="Postman screenshot showing the variables for the Import Jobs Add request." border="true" lightbox="../media/3-import-jobs-variables.png":::
+1. Paste the PUT request in a new line below the variables.
 
-* In the **Body** tab, replace any contents with the following section of code. Replace the placeholder below with the URL of your Azure storage container created during the previous step. This information tells the request where to look for the file containing import details, and designates a location for any logs/outputted information.
+    :::image type="content" source="../media/3-import-jobs-add-request.png" alt-text="Visual Studio screenshot showing the Import Jobs Add request." border="true" lightbox="../media/3-import-jobs-add-request.png":::
 
-  ```json
-  {
-    "inputBlobUri": "<container-URL>/distributionGridBulkImport.json",
-    "outputBlobUri": "<container-URL>/output.json"
-  }
-  ```
+1. Edit the parameters in the request.
+    * Replace `digitaltwins-hostname` with `{{hostName}}`. This will use the value of the `hostName` variable you created in the previous unit.
+    * Replace `{id}` with `importdistributiongrid`. This will assign an ID value to the job you're creating.
+    * Replace `2023-10-31` with `{{DPversion}}` to use the value of the `DPversion` variable you created in the previous unit. (If the values are the same, this is optional. Using the variable will allow you to easily make changes to all requests in this file at once if the version changes in the future.)
 
-Send the request.
+    :::image type="content" source="../media/3-import-jobs-add-parameters.png" alt-text="Visual Studio screenshot showing the parameters for the Import Jobs Add request." border="true" lightbox="../media/3-import-jobs-add-parameters.png":::
+
+1. On a new line underneath the request, add the following line (exactly as written) to specify authentication with your bearer token variable.
+    ```http
+    Authorization: Bearer {{DPtoken}}
+    ```
+
+    :::image type="content" source="../media/3-import-jobs-add-authorization.png" alt-text="Visual Studio screenshot showing the authorization for the Import Jobs Add request." border="true" lightbox="../media/3-import-jobs-add-authorization.png":::
+
+1. Skip a line, and add the following section of JSON as the body of the request. Replace the placeholder in the code snippet with the URL of your Azure storage container created during the previous step. This information tells the request where to look for the file containing import details, and designates a location for any logs or outputted information.
+
+    ```json
+    {
+        "inputBlobUri": "<your-container-URL>/distributionGridBulkImport.json",
+        "outputBlobUri": "<your-container-URL>/output.json"
+    }
+    ```
+
+    :::image type="content" source="../media/3-import-jobs-add-body.png" alt-text="Visual Studio screenshot showing the body for the Import Jobs Add request." border="true" lightbox="../media/3-import-jobs-add-body.png":::
+
+1. Select **Send request** above the request to send it.
+
+    :::image type="content" source="../media/3-import-jobs-add-send.png" alt-text="Visual Studio screenshot of sending the request for the Import Jobs Add request." border="true" lightbox="../media/3-import-jobs-add-send.png":::
+
+Visual Studio brings up a pane with the details of the response. The response from a successful request looks something like this:
+
+:::image type="content" source="../media/3-import-jobs-add-response.png" alt-text="Visual Studio screenshot showing the results of the Import Jobs Add request." border="true" lightbox="../media/3-import-jobs-add-response.png":::
 
 [!INCLUDE [Reminder for how to get a new data plane bearer token](../../includes/azure-digital-twins-data-plane-token.md)]
 
+This result indicates that the job was created. It has probably started running in the minutes since the response was sent, so check the current status of the job with an [ImportJobs GetById](/rest/api/digital-twins/dataplane/jobs/import-jobs-get-by-id) request.
+
+1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
+
+    :::image type="content" source="../media/3-import-jobs-delimiter.png" alt-text="Visual Studio screenshot showing a new delimiter between requests." border="true" lightbox="../media/3-import-jobs-delimiter.png":::
+
+1. Paste the following GET request on the next line. This is the [ImportJobs GetById](/rest/api/digital-twins/dataplane/jobs/import-jobs-get-by-id) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and the ID value of the job. It also has the authorization line specifying use of your bearer token.
+
+    ```http
+    GET https://{{hostName}}/jobs/imports/importdistributiongrid?api-version={{DPversion}}
+    Authorization: Bearer {{DPtoken}}
+    ```
+    :::image type="content" source="../media/3-import-jobs-get-request.png" alt-text="Visual Studio screenshot showing the Import Jobs Get By Id request." border="true" lightbox="../media/3-import-jobs-get-request.png":::
+
+1. Select **Send request** above the request to send it.
+
 The response from a successful request looks something like this:
 
-:::image type="content" source="../media/3-import-jobs-add.png" alt-text="Postman screenshot showing the results of the Import Jobs Add request." border="true" lightbox="../media/3-import-jobs-add.png":::
-
-This result indicates that the job was created. It has probably started running in the minutes since the response was sent, so check the current status of the job by opening the **GET Import Jobs Get By Id** request template from the collection (also found in the _Data plane > jobs > imports > {id}_ folder).
-
-Make the following changes in the template:
-* In the **Params** tab, set **api-version** to *2023-10-31* and the **id** value to *importdistributiongrid*.
-
-Send the request.
-
-The response from a successful request looks something like this:
-
-:::image type="content" source="../media/3-import-jobs-get-by-id.png" alt-text="Postman screenshot showing the results of the Import Jobs Get By ID request." border="true" lightbox="../media/3-import-jobs-get-by-id.png":::
+:::image type="content" source="../media/3-import-jobs-get-response.png" alt-text="Visual Studio screenshot showing the results of the Import Jobs Get By Id request." border="true" lightbox="../media/3-import-jobs-get-response.png":::
 
 The value of `succeeded` in the output indicates that the import job was successful.
 
@@ -120,58 +148,67 @@ To check that your Azure Digital Twins graph now contains models, twins, and rel
 
 ### Verify models
 
-First, use one of the model APIs to see a list of all the models in your Azure Digital Twins instance.
+First, use the [DigitalTwinModels List](/rest/api/digital-twins/dataplane/models/digital-twin-models-list) API to see a list of all the models in your Azure Digital Twins instance.
 
-From your Postman collections, open the request template at _Data plane > models > **GET Digital Twin Models List**_.
+1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-Make the following changes in the template:
-* In the **Params** tab, set **api-version** to *2023-10-31*. Uncheck the **dependenciesFor** options.
-* In the **Headers** tab, uncheck the **max-items-per-page**, **traceparent**, and **tracestate** options.
+1. Paste the following GET request on the next line. This is the [DigitalTwinModels List](/rest/api/digital-twins/dataplane/models/digital-twin-models-list) request copied from the reference documentation, with parameters filled in for the host name and data plane version. It also has the authorization line specifying use of your bearer token.
 
-Send the request.
+    ```http
+    GET https://{{hostName}}/models?api-version={{DPversion}}
+    Authorization: Bearer {{DPtoken}}
+    ```
+
+1. Select **Send request** above the request to send it.
 
 The response from a successful request looks something like this:
 
-:::image type="content" source="../media/3-digital-twin-models-list.png" alt-text="Postman screenshot showing the results of the Digital Twin Models List request." border="true" lightbox="../media/3-digital-twin-models-list.png":::
+:::image type="content" source="../media/3-models-list-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twin Models List request." border="true" lightbox="../media/3-models-list-response.png":::
 
 The reply body lists all of the models that are present in your Azure Digital Twins instance. Review the results to see that the models from the import file (including consumers, substations, plants, and more) are represented.
 
 ### Verify twins
 
-Next, use the digital twins APIs to see the details of one of the twins that was imported, a power line named *pl_distribute*.
+Next, use the [DigitalTwins GetById](/rest/api/digital-twins/dataplane/twins/digital-twins-get-by-id) API to see the details of one of the twins that was imported, a power line named *pl_distribute*.
 
 >[!TIP]
 >To search for multiple digital twins at once, use the Query API, which is explored in [Unit 5](../5-query-graph.yml) of this module.
 
-From your Postman collections, open the request template at _Data plane > digitaltwins > {id} > **GET Digital Twins Get By Id**_.
+1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-Make the following changes in the template:
-* In the **Params** tab, set **api-version** to *2023-10-31* and the **id** value to *pl_distribute*.
-* In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
+1. Paste the following GET request on the next line. This is the [DigitalTwinModels List](/rest/api/digital-twins/dataplane/models/digital-twin-models-list) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and ID of the *pl_distribute* twin. It also has the authorization line specifying use of your bearer token.
 
-Send the request.
+    ```http
+    GET https://{{hostName}}/models?api-version={{DPversion}}
+    Authorization: Bearer {{DPtoken}}
+    ```
+
+1. Select **Send request** above the request to send it.
 
 The response from a successful request looks something like this:
 
-:::image type="content" source="../media/3-digital-twins-get-by-id.png" alt-text="Postman screenshot showing the results of the Digital Twins Get By ID request." border="true" lightbox="../media/3-digital-twins-get-by-id.png":::
+:::image type="content" source="../media/3-twins-get-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twins Get By ID request." border="true" lightbox="../media/3-twins-get-response.png":::
 
 The reply body gives details of the *pl_distribute* digital twin. This twin is a power line with two properties indicating `Capacity` and `GridType`.
 
 ### Verify relationships
 
-In this section, you use the relationships APIs to see the all of the relationships coming from the *pl_distribute* twin.
+In this section, you use the [DigitalTwins ListRelationships](/rest/api/digital-twins/dataplane/twins/digital-twins-list-relationships) API to see the all of the relationships coming from the *pl_distribute* twin.
 
-From your Postman collections, open the request template at _Data plane > digitaltwins > {id} > relationships > **GET Digital Twins List Relationships**_.
+1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-Make the following changes in the template:
-* In the **Params** tab, set **api-version** to *2023-10-31* and the **id** value to *pl_distribute*. Uncheck the **relationshipName** parameter to avoid specifying any one type of relationship, so you can see them all.
-* In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
+1. Paste the following GET request on the next line. This is the [DigitalTwins ListRelationships](/rest/api/digital-twins/dataplane/twins/digital-twins-list-relationships) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and ID of the *pl_distribute* twin. It also has the authorization line specifying use of your bearer token.
 
-Send the request.
+    ```http
+    GET https://{{hostName}}/digitaltwins/pl_distribute/relationships?api-version={{DPversion}}
+    Authorization: Bearer {{DPtoken}}
+    ```
+
+1. Select **Send request** above the request to send it.
 
 The response from a successful request looks something like this:
 
-:::image type="content" source="../media/3-digital-twins-list-relationships.png" alt-text="Postman screenshot showing the results of the Digital Twins List Relationships request." border="true" lightbox="../media/3-digital-twins-list-relationships.png":::
+:::image type="content" source="../media/3-twins-list-relationships-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twins List Relationships request." border="true" lightbox="../media/3-twins-list-relationships-response.png":::
 
 The reply body lists all the relationships, both incoming and outgoing, of the *pl_distribute* digital twin. Review the results to see what kind of relationships this power line twin has in the graph.
 
