@@ -1,4 +1,4 @@
-The primary goal of AI is to use machines for capabilities that are usually associated with humans. Let's see data science concepts support the foundation of AI. 
+Modern AI is built on a foundation of data science and machine learning. The primary goal of AI is to use machines for capabilities that are usually associated with humans. Let's see data science concepts support the foundation of AI. 
 
 ![A graph showing AI methodologies (deep learning, machine learning, and data science).](../media/2-machine-learning-concepts.png)
 
