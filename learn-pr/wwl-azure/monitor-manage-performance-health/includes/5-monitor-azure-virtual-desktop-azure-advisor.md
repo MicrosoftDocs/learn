@@ -21,7 +21,7 @@ When you open Azure Advisor, you'll see five categories:
  -  Operational Excellence
  -  Performance
     
-    :::image type="content" source="../media/advisor-categories-be7efd53-4bb2e861-5f896dda.png" alt-text="A screenshot of Azure Advisor showing the five menus for each category. The five items displayed in their own boxes are Cost, Security, Reliability, Operational Excellence, and Performance.":::
+    :::image type="content" source="../media/advisor-categories-be7efd53-4bb2e861-5f896dda.png" alt-text="A screenshot of Azure Advisor showing the five menus for each category.":::
     
 
 ## Tips for Azure Advisor
