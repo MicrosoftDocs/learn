@@ -2,7 +2,7 @@ Microsoft Entra pass-through authentication allows your users to sign in to both
 
 This feature is an alternative to Microsoft Entra Password Hash Synchronization, which provides the same benefit of cloud authentication to organizations. However, certain organizations wanting to enforce their on-premises Active Directory security and password policies, can choose to use Pass-through Authentication instead. Review this guide for a comparison of the various Microsoft Entra sign-in methods and how to choose the right sign-in method for your organization.
 
-:::image type="content" source="../media/microsoft-entra-pass-through-authentication-8e54d3b5.png" alt-text="Diagram showing how pass-through authentication allows users to sign in to both on-premises and cloud-based applications.":::
+:::image type="content" source="../media/microsoft-entra-pass-through-authentication-8e54d3b5-f4fd9163.png" alt-text="Diagram showing how pass-through authentication allows users to sign in to both on-premises and cloud-based applications.":::
 <br>
 
 You can combine Pass-through Authentication with the Seamless single sign-on feature. If you have Windows 10 or later machines, use Microsoft Entra hybrid join (AADJ). This way, when your users are accessing applications on their corporate machines inside your corporate network, they don't need to type in their passwords to sign in.

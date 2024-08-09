@@ -11,19 +11,19 @@ Each organization has different needs when it comes to authentication. Microsoft
  -  Passkeys FIDO2 (Fast IDentity Online 2)
  -  Certificate-based authentication
 
-:::image type="content" source="../media/passwordless-convenience-security-3e1c4bb8.png" alt-text="Diagram showing multifactor authentication methods.":::
+:::image type="content" source="../media/passwordless-convenience-security-3e1c4bb8-8c1ef413.png" alt-text="Diagram showing multifactor authentication methods.":::
 
 
 **Windows Hello for Business**
 
 Windows Hello for Business is ideal for information workers that have their own designated Windows PC. The biometric and PIN credentials are directly tied to the user's PC, which prevents access from anyone other than the owner. With public key infrastructure (PKI) integration and built-in support for single sign-on (SSO), Windows Hello for Business provides a convenient method for seamlessly accessing corporate resources on-premises and in the cloud.
 
-:::image type="content" source="../media/windows-welcome-page-0b2cf1b6.png" alt-text="Screenshot showing an example of the Windows welcome page.":::
+:::image type="content" source="../media/windows-welcome-page-0b2cf1b6-809fbe55.png" alt-text="Screenshot showing an example of the Windows welcome page.":::
 
 
 The following steps show how the sign-in process works with Microsoft Entra ID:
 
-:::image type="content" source="../media/windows-hello-flow-b3fcb3d2.png" alt-text="Diagram showing an example of how the sign-in process works with Microsoft Entra ID.":::
+:::image type="content" source="../media/windows-hello-flow-b3fcb3d2-65888fb6.png" alt-text="Diagram showing an example of how the sign-in process works with Microsoft Entra ID.":::
 
 
 1.  A user signs into Windows using biometric or PIN gesture. The gesture unlocks the Windows Hello for Business private key and is sent to the Cloud Authentication security support provider, referred to as the Cloud AP provider.
@@ -38,14 +38,14 @@ The following steps show how the sign-in process works with Microsoft Entra ID:
 
 You can also allow your employee's phone to become a passwordless authentication method. You may already be using the Authenticator app as a convenient multifactor authentication option in addition to a password. You can also use the Authenticator App as a passwordless option.
 
-:::image type="content" source="../media/approve-sign-in-page-2e4b3029.png" alt-text="Screenshot showing an example of the Microsoft authenticator application.":::
+:::image type="content" source="../media/approve-sign-in-page-2e4b3029-6f5b6ee1.png" alt-text="Screenshot showing an example of the Microsoft authenticator application.":::
 
 
 The Authenticator App turns any iOS or Android phone into a strong, passwordless credential. Users can sign in to any platform or browser by getting a notification to their phone, matching a number displayed on the screen to the one on their phone, and then using their biometric (touch or face) or PIN to confirm.
 
 Passwordless authentication using the Authenticator app follows the same basic pattern as Windows Hello for Business. It's a little more complicated as the user needs to be identified so that Microsoft Entra ID can find the Authenticator app version being used:
 
-:::image type="content" source="../media/authenticator-application-flow-adf46d1a.png" alt-text="Diagram showing how a user signs in with a Fast IDentity Online 2 security key.":::
+:::image type="content" source="../media/authenticator-application-flow-adf46d1a-2b8fbd83.png" alt-text="Diagram showing how a user signs in with a Fast IDentity Online 2 security key.":::
 
 
 1.  The user enters their username.
@@ -78,12 +78,12 @@ To get started with FIDO2 security keys, complete the following how-to:
 
 [Enable passwordless sign using FIDO2 security keys](/entra/identity/authentication/howto-authentication-passwordless-security-key)
 
-:::image type="content" source="../media/concept-web-sign-in-security-key-e14a87a7.png" alt-text="Screenshot showing a requirement to sign in with Windows Hello or a security key.":::
+:::image type="content" source="../media/concept-web-sign-in-security-key-e14a87a7-d5f4efbb.png" alt-text="Screenshot showing a requirement to sign in with Windows Hello or a security key.":::
 
 
 The following process is used when a user signs in with a FIDO2 security key:
 
-:::image type="content" source="../media/fast-identity-online-2-security-key-flow-04704017.png" alt-text="Screenshot showing how a user signs in with a Fast IDentity Online 2 security key.":::
+:::image type="content" source="../media/fast-identity-online-2-security-key-flow-04704017-aac9361e.png" alt-text="Screenshot showing how a user signs in with a Fast IDentity Online 2 security key.":::
 
 
 1.  The user plugs the FIDO2 security key into their computer.
@@ -104,7 +104,7 @@ The following providers offer FIDO2 security keys of different form factors that
 
 Microsoft Entra certificate-based authentication (CBA) enables customers to allow or require users to authenticate directly with X.509 certificates against their Microsoft Entra ID for applications and browser sign-in. CBA enables customers to adopt phishing-resistant authentication and sign in with an X.509 certificate against their Public Key Infrastructure (PKI).
 
-:::image type="content" source="../media/cloud-native-certificate-27ad7a44.png" alt-text="Diagram showing an example of certificate-based authentication.":::
+:::image type="content" source="../media/cloud-native-certificate-27ad7a44-1acc5383.png" alt-text="Diagram showing an example of certificate-based authentication.":::
 
 
 ### Key benefits of using Microsoft Entra CBA

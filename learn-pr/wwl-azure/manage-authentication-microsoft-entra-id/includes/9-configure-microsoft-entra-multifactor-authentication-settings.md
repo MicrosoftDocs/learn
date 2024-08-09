@@ -15,7 +15,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 The recommended way to enable and use Microsoft Entra multifactor authentication is with Conditional Access policies. Conditional Access lets you create and define policies that react to sign-in events and that request additional actions before a user is granted access to an application or service.
 
-:::image type="content" source="../media/conditional-access-overview-f9fc328c.png" alt-text="Diagram showing an example of multifactor authentication and conditional access.":::
+:::image type="content" source="../media/conditional-access-overview-f9fc328c-10aba3cd.png" alt-text="Diagram showing an example of multifactor authentication and conditional access.":::
 
 
 In this example, we create a basic Conditional Access policy to prompt for MFA when a user signs in.
@@ -25,17 +25,17 @@ First, create a Conditional Access policy and assign your test group of users as
 1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as at least a [Conditional Access Administrator](/entra/identity/role-based-access-control/permissions-reference#conditional-access-administrator).
 2.  Browse to **Protection** &gt; **Conditional Access**, select **+ New policy**, and then select **Create new policy**.
     
-    :::image type="content" source="../media/conditional-access-policy-configuration-51511a83.png" alt-text="Screenshot showing an example of the conditional access new policy creation page.":::
+    :::image type="content" source="../media/conditional-access-policy-configuration-51511a83-248f1d1d.png" alt-text="Screenshot showing an example of the conditional access new policy creation page.":::
     
 3.  Enter a name for the policy, such as *MFA Pilot*.
 4.  Under **Assignments**, select the current value under **Users or workload identities**.
     
-    :::image type="content" source="../media/conditional-access-assignments-60a93961.png" alt-text="Screenshot showing an example of the conditional access assignments page.":::
+    :::image type="content" source="../media/conditional-access-assignments-60a93961-9466fdc3.png" alt-text="Screenshot showing an example of the conditional access assignments page.":::
     
 5.  Under **What does this policy apply to?**, verify that **Users and groups** is selected.
 6.  Under **Include**, choose **Select users and groups**, and then select **Users and groups**.
     
-    :::image type="content" source="../media/conditional-access-policy-new-assignment-842ad63f.png" alt-text="Screenshot showing an example of how to control access for users and groups.":::
+    :::image type="content" source="../media/conditional-access-policy-new-assignment-842ad63f-b859a348.png" alt-text="Screenshot showing an example of how to control access for users and groups.":::
     
 
 > [!NOTE]
@@ -43,7 +43,7 @@ First, create a Conditional Access policy and assign your test group of users as
 
 7.  Browse for and select your Microsoft Entra group, such as *MFA-Test-Group*, then choose **Select**.
     
-    :::image type="content" source="../media/conditional-access-select-users-groups-2b5dc66a.png" alt-text="Screenshot showing an example of how to apply control access to users or groups.":::
+    :::image type="content" source="../media/conditional-access-select-users-groups-2b5dc66a-3da6a718.png" alt-text="Screenshot showing an example of how to apply control access to users or groups.":::
     
 
 > [!NOTE]
@@ -68,7 +68,7 @@ For this example, configure the Conditional Access policy to require multifactor
 
 3.  Browse the list of available sign-in events that can be used. For this example, select **Windows Azure Service Management API** so that the policy applies to sign-in events. Then choose **Select**.
     
-    :::image type="content" source="../media/multifactor-credentials-e4680656.png" alt-text="Screenshot showing an example of how to configure the conditional access policy to require multifactor authentication.":::
+    :::image type="content" source="../media/multifactor-credentials-e4680656-c6d4dd7e.png" alt-text="Screenshot showing an example of how to configure the conditional access policy to require multifactor authentication.":::
     
 
 ### Configure multifactor authentication for access
@@ -79,11 +79,11 @@ In this example, configure the access controls to require multifactor authentica
 
 1.  Under **Access controls**, select the current value under **Grant**, and then select **Grant access**.
     
-    :::image type="content" source="../media/multifactor-grant-access-95b7f0f3.png" alt-text="Screenshot showing an example of how to block or grant access.":::
+    :::image type="content" source="../media/multifactor-grant-access-95b7f0f3-7ac01f14.png" alt-text="Screenshot showing an example of how to block or grant access.":::
     
 2.  Select **Require multifactor authentication**, and then choose **Select**.
     
-    :::image type="content" source="../media/multifactor-control-access-b8b5eade.png" alt-text="Screenshot showing an example of how to grant access and require multifactor authentication.":::
+    :::image type="content" source="../media/multifactor-control-access-b8b5eade-b05c882c.png" alt-text="Screenshot showing an example of how to grant access and require multifactor authentication.":::
     
 
 ### Activate the policy
@@ -92,7 +92,7 @@ Conditional Access policies can be set to **Report-only** if you want to see how
 
 1.  Under **Enable policy**, select **On**.
     
-    :::image type="content" source="../media/multifactor-enable-policy-control-89c8b9c0.png" alt-text="Screenshot showing an example of how to enable the report only policy.":::
+    :::image type="content" source="../media/multifactor-enable-policy-control-89c8b9c0-dd36ddc8.png" alt-text="Screenshot showing an example of how to enable the report only policy.":::
     
 2.  To apply the Conditional Access policy, select **Create**.
 
@@ -113,14 +113,13 @@ Test this new requirement by signing in to the Microsoft Entra admin center:
 1.  Open a new browser window in InPrivate or incognito mode and sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/).
 2.  Sign in with your non-administrator test user, such as *testuser*. Be sure to include @ and the domain name for the user account. You're required to register for and use Microsoft Entra multifactor authentication.
     
-    :::image type="content" source="../media/microsoft-entra-multifactor-authentication-2b9ff13f.png" alt-text="Screenshot showing the more information required notification.":::
+    :::image type="content" source="../media/microsoft-entra-multifactor-authentication-2b9ff13f-d955a057.png" alt-text="Screenshot showing the more information required notification.":::
     
-3.  Select **Next** to begin the process.<br> 
-    You can choose to configure an authentication phone, an office phone, or a mobile app for authentication. Authentication phone supports text messages and phone calls, office phone supports calls to numbers that have an extension, and mobile app supports using a mobile app to receive notifications for authentication or to generate authentication codes.
+3.  Select **Next** to begin the process.<br>You can choose to configure an authentication phone, an office phone, or a mobile app for authentication. Authentication phone supports text messages and phone calls, office phone supports calls to numbers that have an extension, and mobile app supports using a mobile app to receive notifications for authentication or to generate authentication codes.
 4.  Complete the instructions on the screen to configure the method of multifactor authentication that you've selected.
 5.  Close the browser window, and sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) again to test the authentication method that you configured. For example, if you configured a mobile app for authentication, you should see a prompt like the following.
     
-    :::image type="content" source="../media/approve-sign-in-request-ab44e1f6.png" alt-text="Screenshot showing the approve sign in request notification.":::
+    :::image type="content" source="../media/approve-sign-in-request-ab44e1f6-d774632e.png" alt-text="Screenshot showing the approve sign in request notification.":::
     
 6.  Close the browser window.
 
@@ -218,7 +217,7 @@ If Fraud Alert is enabled with Automatic Blocking and Report Suspicious Activity
 
 You can configure Microsoft Entra ID to send email notifications when users report fraud alerts. These notifications are typically sent to identity administrators because the user's account credentials are likely compromised. The following example shows what a fraud alert notification email looks like:
 
-:::image type="content" source="../media/multifactor-authentication-fraud-alert-email-d6d50c09.png" alt-text="Screenshot showing an example of a Microsoft Entra ID fraud alert email notification.":::
+:::image type="content" source="../media/multifactor-authentication-fraud-alert-email-d6d50c09-a592ae36.png" alt-text="Screenshot showing an example of a Microsoft Entra ID fraud alert email notification.":::
 
 
 ## OATH tokens
@@ -236,6 +235,10 @@ After you acquire tokens, you need to upload them in a comma-separated values (C
 ```
 upn,serial number,secret key,time interval,manufacturer,model
 Helga@contoso.com,1234567,2234567abcdef2234567abcdef,60,Contoso,HardwareKey
+
+
+
+
 
 
 

@@ -12,7 +12,7 @@ Microsoft Entra ID helps to protect a user's identity and simplify their sign-in
 
 Microsoft Entra multifactor authentication lets users choose an additional form of authentication during sign-in, such as a phone call or mobile app notification. This ability reduces the requirement for a single, fixed form of secondary authentication like a hardware token. If the user doesn't currently have one form of additional authentication, they can choose a different method and continue to work.
 
-:::image type="content" source="../media/azure-multifactor-authentication-verification-prompt-f9180449.png" alt-text="Screenshot showing available options in Azure Microsoft Multifactor verify your identity page.":::
+:::image type="content" source="../media/azure-multifactor-authentication-verification-prompt-f9180449-504f969d.png" alt-text="Screenshot showing available options in Azure Microsoft Multifactor verify your identity page.":::
 
 
 Passwordless authentication removes the need for the user to create and remember a secure password at all. Capabilities like Windows Hello for Business or FIDO2 security keys let users sign in to a device or application without a password. This ability can reduce the complexity of managing passwords across different environments.
@@ -35,7 +35,7 @@ Multifactor authentication is a process where a user is prompted during the sign
 
 If you only use a password to authenticate a user, it leaves an insecure vector for attack. If the password is weak or has been exposed elsewhere, is it really the user signing in with the username and password, or is it an attacker? When you require a second form of authentication, security is increased as this additional factor isn't something that's easy for an attacker to obtain or duplicate.
 
-:::image type="content" source="../media/multifactor-authentication-user-verification-methods.jpg" alt-text="Diagram showing an example of multifactor user verification methods.":::
+:::image type="content" source="../media/multifactor-authentication-user-verification-methods-0a0e5d42.jpg" alt-text="Diagram showing an example of multifactor user verification methods.":::
 
 
 Microsoft Entra multifactor authentication works by requiring two or more of the following authentication methods:

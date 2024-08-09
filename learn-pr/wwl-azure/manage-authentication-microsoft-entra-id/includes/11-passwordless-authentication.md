@@ -60,7 +60,7 @@ The prerequisites and deployment paths for Windows Hello for Business are highly
 
 Select Windows Hello for Business and complete the wizard to determine the prerequisites and deployment appropriate for your organization.
 
-:::image type="content" source="../media/passwordless-wizard-select-52e6cad2.png" alt-text="Screenshot showing the Windows Hello for Business configuration page.":::
+:::image type="content" source="../media/passwordless-wizard-select-52e6cad2-b38b6c15.png" alt-text="Screenshot showing the Windows Hello for Business configuration page.":::
 
 
 The wizard will use your inputs to craft a step-by-step plan for you to follow.

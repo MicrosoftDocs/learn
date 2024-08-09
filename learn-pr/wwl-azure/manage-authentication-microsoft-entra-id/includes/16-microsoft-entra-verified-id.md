@@ -34,14 +34,14 @@ In decentralized identity architectures, the issuer, user, and relying party (RP
 
 For example: When VC holders need to access a resource, they must present the VC to that relying party. They do so by using a wallet application to read the RP’s request to present a VC. As a part of reading the request, the wallet application uses the RP’s DID to find the RP’s public keys using the trust system, validating that the request to present the VC hasn't been tampered with. To prove domain ownership, the wallet also checks that the DID is being referenced in a metadata document hosted in the DNS domain of the RP.
 
-:::image type="content" source="../media/dec-how-decentralized-works-3cb92d07.png" alt-text="Diagram showing how decentralized identity systems work.":::
+:::image type="content" source="../media/dec-how-decentralized-works-3cb92d07-6bce550b.png" alt-text="Diagram showing how decentralized identity systems work.":::
 
 
 ### Flow 1: Verifiable credential issuance
 
 In this flow, the credential holder interacts with the issuer to request a verifiable credential as illustrated in the following diagram
 
-:::image type="content" source="../media/dec-issuance-9ccef32c.png" alt-text="Diagram showing an example of a verifiable credential issuance.":::
+:::image type="content" source="../media/dec-issuance-9ccef32c-f56ec5e3.png" alt-text="Diagram showing an example of a verifiable credential issuance.":::
 
 
 1.  The holder starts the flow by using a browser or native application to access the issuer’s web frontend. There, the issuer website drives the user to collect data and executes issuer-specific logic to determine whether the credential can be issued, and its content.)
@@ -64,7 +64,7 @@ In this flow, the credential holder interacts with the issuer to request a verif
 
 ### Flow 2: Verifiable credential presentation
 
-:::image type="content" source="../media/dec-presentation-18a40e72.png" alt-text="Diagram showing an example of a verifiable credential presentation.":::
+:::image type="content" source="../media/dec-presentation-18a40e72-301660c9.png" alt-text="Diagram showing an example of a verifiable credential presentation.":::
 
 
 In this flow, a holder interacts with a relying party (RP) to present a VC as part of its authorization requirements.
