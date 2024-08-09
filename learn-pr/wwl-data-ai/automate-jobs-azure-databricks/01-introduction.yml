@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-azure-databricks.introduction
+uid: learn.wwl.automate-jobs-azure-databricks.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
   ms.date: 08/05/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: madiepev
   ms.topic: unit
 azureSandbox: false
 labModal: false
