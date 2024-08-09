@@ -42,7 +42,8 @@ In this scenario, you install Microsoft 365 Apps as part of a client operating s
 Here are the basic steps of how to configure RDS to deploy Microsoft 365 Apps on a shared virtual machine:
 
 1.  Create the operating system image:
-2.  
+    
+    
      -  Follow the instructions to [Deploy Microsoft 365 Apps as part of an operating system image](/deployoffice/deploy-microsoft-365-apps-operating-system-image). In Step 2 of the instructions, make sure that your *configuration.xml* file also includes the following line to enable shared computer activation:<br>`<Property Name="SharedComputerLicensing" Value="1" />`
 
 2.  Install and configure Windows Server.
