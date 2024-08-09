@@ -11,7 +11,7 @@ Often when we build out projects, we need to continuously ensure our code is fre
 
 Although GitHub Copilot can suggest code as you type, you can also build prompts to create useful suggestions. A prompt, which is our input, is a collection of instructions or guidelines that help generate code. A prompt is useful to generate specific responses from Copilot. The prompt might be a comment or input when using GitHub Copilot Chat that steers Copilot to generate code on your behalf or writing code that Copilot autocompletes.
 
-The quality of output from Copilot is dependent on how well you craft your prompt. Designing an effective prompt is, therefore, crucial in ensuring we achieve our desired outcomes. For example, if you have the following prompt:
+The quality of output from Copilot is dependent on how well you craft your prompt. Creating an effective prompt is essential for achieving desired outcomes. For example, if you have the following prompt:
 
 ```javascript
 // Create an API endpoint
@@ -29,18 +29,19 @@ This last prompt is specific, clear and allows GitHub Copilot to understand the 
 
 Copilot supercharges your productivity but requires some good practices to ensure quality. Some best practices when using Copilot are:
 
-Keep your prompts simple then add more elaborate components as you keep going for example:
+- Keep your prompts simple then add more elaborate components as you keep going for example:
 
-```text
-create an HTML form with a text field and button
-```
-Next, elaborate more on the prompt to get more specific suggestions:
+    ```text
+    create an HTML form with a text field and button
+    ```
 
-```text
-Add an event listen to the button to send a POST request to /generate endpoint and display response in a div with id "result"
-```
+    Next, elaborate more on the prompt to get more specific suggestions:
+    
+    ```text
+    Add an event listen to the button to send a POST request to /generate endpoint and display response in a div with id "result"
+    ```
 
-Cycle between suggestions, you can do this using `Ctrl+Enter` (or `Cmd+Enter` on a Mac). You get various suggestions from Copilot, and you can pick the best output. Optionally, when using GitHub Copilot Chat, you can use the chat input to add your prompt and interact with the output.
+- Cycle between suggestions, you can do this using <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (or <kbd>Cmd</kbd>+<kbd>Enter</kbd> on a Mac). You get various suggestions from Copilot, and you can pick the best output. Optionally, when using GitHub Copilot Chat, you can use the chat input to add your prompt and interact with the output.
 
 If you're stuck or not getting the results you want, then you can reword the prompt or start writing code for Copilot to autocomplete.
 
