@@ -133,11 +133,11 @@ This result indicates that the job was created. It has probably started running 
 
 1. Select **Send request** above the request to send it.
 
-The response from a successful request looks something like this:
+    The response from a successful request looks something like this:
+    
+    :::image type="content" source="../media/3-import-jobs-get-response.png" alt-text="Visual Studio screenshot showing the results of the Import Jobs Get By Id request." border="true" lightbox="../media/3-import-jobs-get-response.png":::
 
-:::image type="content" source="../media/3-import-jobs-get-response.png" alt-text="Visual Studio screenshot showing the results of the Import Jobs Get By Id request." border="true" lightbox="../media/3-import-jobs-get-response.png":::
-
-The value of `succeeded` in the output indicates that the import job was successful.
+    The value of `succeeded` in the output indicates that the import job was successful.
 
 ## Verify imported elements
 
@@ -161,11 +161,11 @@ First, use the [DigitalTwinModels List](/rest/api/digital-twins/dataplane/models
 
 1. Select **Send request** above the request to send it.
 
-The response from a successful request looks something like this:
-
-:::image type="content" source="../media/3-models-list-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twin Models List request." border="true" lightbox="../media/3-models-list-response.png":::
-
-The reply body lists all of the models that are present in your Azure Digital Twins instance. Review the results to see that the models from the import file (including consumers, substations, plants, and more) are represented.
+    The response from a successful request looks something like this:
+    
+    :::image type="content" source="../media/3-models-list-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twin Models List request." border="true" lightbox="../media/3-models-list-response.png":::
+    
+    The reply body lists all of the models that are present in your Azure Digital Twins instance. Review the results to see that the models from the import file (including consumers, substations, plants, and more) are represented.
 
 ### Verify twins
 
@@ -176,20 +176,20 @@ Next, use the [DigitalTwins GetById](/rest/api/digital-twins/dataplane/twins/dig
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following GET request on the next line. This is the [DigitalTwinModels List](/rest/api/digital-twins/dataplane/models/digital-twin-models-list) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and ID of the *pl_distribute* twin. It also has the authorization line specifying use of your bearer token.
+1. Paste the following GET request on the next line. This is the [DigitalTwins GetById](/rest/api/digital-twins/dataplane/twins/digital-twins-get-by-id) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and ID of the *pl_distribute* twin. It also has the authorization line specifying use of your bearer token.
 
     ```http
-    GET https://{{hostName}}/models?api-version={{DPversion}}
+    GET https://{{hostName}}/digitaltwins/pl_distribute?api-version={{DPversion}}
     Authorization: Bearer {{DPtoken}}
     ```
 
 1. Select **Send request** above the request to send it.
 
-The response from a successful request looks something like this:
+    The response from a successful request looks something like this:
+    
+    :::image type="content" source="../media/3-twins-get-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twins Get By ID request." border="true" lightbox="../media/3-twins-get-response.png":::
 
-:::image type="content" source="../media/3-twins-get-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twins Get By ID request." border="true" lightbox="../media/3-twins-get-response.png":::
-
-The reply body gives details of the *pl_distribute* digital twin. This twin is a power line with two properties indicating `Capacity` and `GridType`.
+    The reply body gives details of the *pl_distribute* digital twin. This twin is a power line with two properties indicating `Capacity` and `GridType`.
 
 ### Verify relationships
 
@@ -206,11 +206,11 @@ In this section, you use the [DigitalTwins ListRelationships](/rest/api/digital-
 
 1. Select **Send request** above the request to send it.
 
-The response from a successful request looks something like this:
+    The response from a successful request looks something like this:
+    
+    :::image type="content" source="../media/3-twins-list-relationships-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twins List Relationships request." border="true" lightbox="../media/3-twins-list-relationships-response.png":::
 
-:::image type="content" source="../media/3-twins-list-relationships-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twins List Relationships request." border="true" lightbox="../media/3-twins-list-relationships-response.png":::
-
-The reply body lists all the relationships, both incoming and outgoing, of the *pl_distribute* digital twin. Review the results to see what kind of relationships this power line twin has in the graph.
+    The reply body lists all the relationships, both incoming and outgoing, of the *pl_distribute* digital twin. Review the results to see what kind of relationships this power line twin has in the graph.
 
 ### Further exploration
 
