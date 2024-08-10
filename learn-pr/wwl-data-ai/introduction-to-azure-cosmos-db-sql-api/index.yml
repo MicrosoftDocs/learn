@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: cosmos-db
+  ms.service: azure-cosmos-db
   ai-usage: human-only
 title: Introduction to Azure Cosmos DB for NoSQL
 summary: Learn about the Azure Cosmos DB for NoSQL and determine if it is a good fit for your application.
