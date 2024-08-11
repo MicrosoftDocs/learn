@@ -16,8 +16,8 @@ Additional resources
 
 ## Sample code
 
-- [Sample repo 1](https://github.com/azure-samples/1)
-- [Sample repo 2](https://github.com/azure-samples/2)
+- Sample repo 1
+- Sample repo 2
 
 ## Troubleshooting
 
