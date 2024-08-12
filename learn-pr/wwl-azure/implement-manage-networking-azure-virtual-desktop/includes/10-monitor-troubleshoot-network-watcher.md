@@ -85,4 +85,4 @@ Flow logs allows you to log information about your Azure IP traffic and stores t
 
 Traffic analytics provides rich visualizations of flow logs data. For more information about traffic analytics, see [traffic analytics](/azure/network-watcher/traffic-analytics) and [Manage traffic analytics using Azure Policy](/azure/network-watcher/traffic-analytics-policy-portal).
 
-:::image type="content" source="../media/traffic-analytics-d47a174c.png" alt-text="Screenshot showing Traffic analytics feature of Network Watcher.":::
+:::image type="content" source="../media/traffic-analytics-global-f866e9a5.png" alt-text="Screenshot showing Traffic analytics feature of Network Watcher.":::
