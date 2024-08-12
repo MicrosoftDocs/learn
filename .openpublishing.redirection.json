@@ -31453,6 +31453,41 @@
       "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/8-summary.md",
       "redirect_url": "/training/modules/define-microsoft-ai-strategy-manufacturing/7-summary",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/2-monitor-azure-virtual-desktop-azure-monitor.md",
+      "redirect_url": "training/modules/monitor-manage-performance-health/3-monitor-azure-virtual-desktop-by-using-azure-monitor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/3-log-analytics-workspace-for-azure-monitor.md",
+      "redirect_url": "training/modules/monitor-manage-performance-health",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/4-monitor-azure-virtual-desktop-azure-advisor.md",
+      "redirect_url": "training/modules/monitor-manage-performance-health/5-monitor-azure-virtual-desktop-by-using-azure-advisor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/5-how-to-resolve-azure-advisor-recommendations.md",
+      "redirect_url": "training/modules/monitor-manage-performance-health",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/6-diagnose-graphics-performance-issues.md",
+      "redirect_url": "training/modules/monitor-manage-performance-health",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/7-knowledge-check.md",
+      "redirect_url": "training/modules/monitor-manage-performance-health",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/8-summary.md",
+      "redirect_url": "training/modules/monitor-manage-performance-health/9-summary",
+      "redirect_document_id": false
+      }
   ]
 }
