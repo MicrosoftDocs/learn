@@ -6,8 +6,6 @@ Maintaining AI solutions typically requires machine learning lifecycle managemen
 
 To cope effectively with this complexity, some best practices are required. They focus on cross-team collaboration, automating and standardizing processes, and ensuring models can be easily audited, explained, and reused. To get this done, data science teams rely on the **machine learning operations** approach. This methodology is inspired by DevOps (development and operations), the industry standard for managing operations for an application development cycle, since the struggles of developers and data scientists are similar.
 
-![A graph showing MLOps practices: data scientists and IT work together on model reproducibility, validation, deployment, and retraining.](../media/7-discover-business-value-applying-devops-1.png)
-
 ## Azure Machine Learning
 
 Data scientists can manage and execute machine learning DevOps from **Azure Machine Learning**, a platform by Microsoft to make machine learning *lifecycle management* and *operations* practices easier. Such tools help teams collaborate in a shared, auditable, and safe environment where many processes can be optimized via automation.
