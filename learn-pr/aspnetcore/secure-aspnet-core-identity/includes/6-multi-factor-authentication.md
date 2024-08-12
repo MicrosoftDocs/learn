@@ -16,7 +16,7 @@ Much of the effectiveness of MFA comes from using different *types* of authentic
 
 Time-based one-time password (TOTP) is a well-known algorithm that generates unique numerical codes that expire after 30 seconds. The algorithm takes two inputs, the current time and a unique key.
 
-When registering, the user enters the key into a TOTP-compliant app. Such apps include:
+The user enters the key into a TOTP-compliant app when registering. Such apps include:
 
 * Microsoft Authenticator.
 * Google Authenticator.
@@ -24,7 +24,7 @@ When registering, the user enters the key into a TOTP-compliant app. Such apps i
 
 Entering the key into the app can be streamlined with a QR code. The app uses the key and current time to generate and display unique codes every 30 seconds. If the code the app generates matches what the server expects, the authentication succeeds. The algorithm is designed to be forgiving of minor differences between the clocks on your device and the server.
 
-As a form of MFA, the user is typically prompted for a TOTP code in combination with a password. The password is *something you know*, and the code is proof of *something you have*. This is because the only way to generate the code is with the key stored in the app.
+As a form of MFA, the user is typically prompted for a TOTP code in combination with a password. The password is *something you know*, and the code is proof of *something you have*. This is the only way to generate the code with the key stored in the app.
 
 By default, the ASP.NET Core project templates that use Identity include multifactor authentication support for TOTP authenticator apps. The Razor Pages template's **Configure authenticator app** form displays a 32-character registration key to seed the token value. However, the template doesn't generate a QR code by default.
 
