@@ -1,7 +1,7 @@
 The next step for manufacturing leaders who want to implement any of these AI use cases is to choose which tools fit best fit their needs. The Microsoft Azure environment includes a wide catalog of products that complement each other to support these AI solutions. Many of them are contained in [Microsoft Cloud for Manufacturing](https://www.microsoft.com/industry/manufacturing/microsoft-cloud-for-manufacturing).
 Let’s discuss some of the tools that might be most useful for manufacturers.
 
-![Image of a woman in sharing a manufacturing report.](../media/Manufacturing-report.jpg)
+![Photograph showing woman in sharing a manufacturing report.](../media/manufacturing-report.jpg)
 
 ## Microsoft Fabric
 
@@ -27,6 +27,6 @@ These solutions enable you to deliver insights and analytics in a more natural, 
 
 >[!TIP]
 >Take a moment to identify some of the benefits of AI you hope to bring to your manufacturing organization. 
->![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
+>![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Now, let’s see how manufacturing companies are using these products. In the next unit, we’ll examine an initiative to optimize forecasting.

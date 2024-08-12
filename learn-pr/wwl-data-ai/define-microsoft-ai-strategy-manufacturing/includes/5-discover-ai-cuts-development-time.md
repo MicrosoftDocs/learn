@@ -20,7 +20,7 @@ Siemens realized that they needed to change their AI development process. They n
 
 The solution creates a common data foundation by capturing and contextualizing data from the entire factory to deliver a system-wide view of the end-to-end manufacturing process. The addition of a generative AI copilot, powered by Azure OpenAI, further democratizes industrial data with generative AI, making plant data, analytics, and insights even more accessible and impactful for everyone—from shop floor operators to executives.​
 
-![Image of a worker in a manufacturing plant looking at data.](../media/Manufacturing-data.jpg)
+![Photograph showing worker in a manufacturing plant looking at data.](../media/manufacturing-data.jpg)
 
 To build this shared, scalable AI platform, Siemens relied on the Microsoft Azure infrastructure. The result, known as [ai:attack], is built upon Azure Machine Learning and incorporates other Azure services.
 
