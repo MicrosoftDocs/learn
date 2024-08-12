@@ -6,9 +6,9 @@ metadata:
   ms.date: 03/13/2023
   author: sfoteini
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
-  ms.service: healthbot
+  ms.service: azure-ai-health-bot
 title: Azure Health Bot scenario templates
 summary: Learn how to enrich the capabilities of your bot by using the prebuilt scenario templates.
 abstract: |

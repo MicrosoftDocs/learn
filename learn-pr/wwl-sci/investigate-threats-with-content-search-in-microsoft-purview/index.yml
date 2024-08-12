@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/13/2024
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: purview
 title: Investigate threats with Content search in Microsoft Purview
 summary: This module examines how to search for content in the Microsoft Purview compliance portal using Content Search functionality, including how to view and export the search results, and configure search permissions filtering.

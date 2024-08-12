@@ -30,4 +30,4 @@ Azure AI Studio enables teams to collaborate efficiently and effectively on AI p
 - Extending a generative AI solution with multiple AI capabilities using Azure AI services.
 
 > [!NOTE]
-> Azure AI Studio is currently in preview. Its capabilities may expand or change.
+> Azure AI Studio is currently in active development. Its capabilities may expand or change as new features are released.

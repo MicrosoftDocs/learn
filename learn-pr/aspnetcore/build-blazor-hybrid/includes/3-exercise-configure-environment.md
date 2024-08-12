@@ -13,7 +13,7 @@ To set up a Blazor Hybrid project to work with, we use Visual Studio 2022.
 
 1. In Visual Studio 2022, select **File** > **New Project**, or select **Create a new project** from the launcher.
 
-2. In the search box at the top of the *Create a new project* dialog, enter *.NET MAUI Blazor*, select **.NET MAUI Blazor App**, and select **Next**.
+2. In the search box at the top of the *Create a new project* dialog, enter *.NET MAUI Blazor*, select **.NET MAUI Blazor Hybrid App**, and select **Next**.
 
     ![Screenshot of the Visual Studio 2022 Create New Project screen and the .NET MAUI Blazor App template.](../media/visual-studio-2022-create-new-project.png)
 
@@ -41,7 +41,7 @@ To set up a Blazor Hybrid project to work with, we use Visual Studio Code.
 
     ![Screenshot of the Visual Studio Code Create New Project screen and the .NET MAUI Blazor App template.](../media/visual-studio-code-create-new-project.png)
 
-3. Create a new folder in the pop up names **BlazorHybridApp** and select **Select Folder**.
+3. Create a new folder in the pop-up named **BlazorHybridApp** and select **Select Folder**.
 
 4. Name the project **BlazorHybridApp** and press **Enter** to confirm.
 
@@ -59,15 +59,17 @@ The project is a normal .NET MAUI project with some more Blazor related content.
 
 ### Blazor project files
 
-- **Pages**: This folder contains three Razor components—`Counter.razor`, `FetchData.razor`, and `Index.razor`—that define the three pages that make up the Blazor user interface.
-
-- **Shared**: This folder contains shared Razor components, including the app's main layout and navigation menu.
-
 - **wwwroot**: This folder includes static web assets Blazor uses, including HTML, CSS, JavaScript, and image files.
 
-- `Main.razor`: The root Razor component for the app that sets up the Blazor router to handle page navigation within the web view.
+- **Components**: This folder containers several subfolder and razor components for the app.
 
-- `_Imports.razor`: This file defines namespaces that are imported into each Razor component.
+    - **Layout**: This folder contains shared Razor components, including the app's main layout and navigation menu.
+
+    - **Pages**: This folder contains three Razor components—`Counter.razor`, `Home.razor`, and `Weather.razor`—that define the three pages that make up the Blazor user interface.
+
+    - `_Imports.razor`: This file defines namespaces that are imported into each Razor component.
+
+    - `Routes.razor`: The root Razor component for the app that sets up the Blazor router to handle page navigation within the web view.
 
 ### .NET MAUI project files
 
@@ -75,19 +77,19 @@ The project is a normal .NET MAUI project with some more Blazor related content.
 
 - **App.xaml.cs**: The App.xaml file's code-behind. This file defines the App class. This class represents your application at runtime. The constructor in this class creates an initial window and assigns it to the `MainPage` property; this property determines which page is displayed when the application starts running. Additionally, this class lets you override common platform-neutral application lifecycle event handlers. Events include `OnStart`, `OnResume`, and `OnSleep`.
 
-- **MainPage.xaml**: This file contains the user interface definition. The sample app the .NET MAUI Blazor App template generates comprises a `BlazorWebView` that loads the `Main` component in the specified host HTML page (`wwwroot/index.html`) at a location specified by the CSS selector (`#app`).
+- **MainPage.xaml**: This file contains the user interface definition. The sample app the .NET MAUI Blazor App template generates comprises a `BlazorWebView` that loads the `Components.Routes` component in the specified host HTML page (`wwwroot/index.html`) at a location specified by the CSS selector (`#app`).
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
     <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-        xmlns:local="clr-namespace:BlazorHybridApp"
-        x:Class="BlazorHybridApp.MainPage"
-        BackgroundColor="{DynamicResource PageBackgroundColor}">
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:local="clr-namespace:BlazorHybridApp"
+                x:Class="BlazorHybridApp.MainPage"
+                BackgroundColor="{DynamicResource PageBackgroundColor}">
 
-        <BlazorWebView HostPage="wwwroot/index.html">
+        <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
             <BlazorWebView.RootComponents>
-                <RootComponent Selector="#app" ComponentType="{x:Type local:Main}" />
+                <RootComponent Selector="#app" ComponentType="{x:Type local:Components.Routes}" />
             </BlazorWebView.RootComponents>
         </BlazorWebView>
 
@@ -134,8 +136,6 @@ The project is a normal .NET MAUI project with some more Blazor related content.
             builder.Services.AddBlazorWebViewDeveloperTools();
             builder.Logging.AddDebug();
             #endif
-            
-            builder.Services.AddSingleton<WeatherForecastService>();
 
             return builder.Build();
         }
@@ -146,18 +146,18 @@ The project is a normal .NET MAUI project with some more Blazor related content.
 
 ::: zone pivot="vstudio"
 
-- In Visual Studio, select **Debug** > **Start Debugging**
+In Visual Studio, select **Debug** > **Start Debugging**
 
 ::: zone-end
 
 ::: zone pivot="vscode"
 
-- In Visual Studio Code, select the **Run** > **Start Debugging**. Select the **.NET MAUI** debugger from the dropdown list to start the application.
+In Visual Studio Code, select the **Run** > **Start Debugging**. Select the **.NET MAUI** debugger from the dropdown list to start the application.
 
 :::zone-end
 
-    This builds and starts the app on Windows, and then rebuilds and restarts the app whenever you make code changes. The app should automatically open on Windows. You can also change the deployment target through the debug drop-down menu to deploy to Android or other platforms.
+This builds and starts the app on Windows, and then rebuilds and restarts the app whenever you make code changes. The app should automatically open on Windows. You can also change the deployment target through the debug drop-down menu to deploy to Android or other platforms.
 
-    ![Screenshot of the default Blazor Hybrid app running on Windows and Android.](../media/hello-blazor.png)
+![Screenshot of the default Blazor Hybrid app running on Windows and Android.](../media/hello-blazor.png)
 
 You use this Blazor Hybrid app in the next few exercises.

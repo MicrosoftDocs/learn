@@ -3,11 +3,13 @@ uid: learn.wwl.prepare-to-develop-ai-solutions-azure.understand-ai-related-terms
 title: Understand AI-related terms
 metadata:
   title: Understand AI-related terms
-  description: "Understand AI-related terms"
-  ms.date: 12/10/2023
+  description: Understand AI-related terms
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 12/10/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

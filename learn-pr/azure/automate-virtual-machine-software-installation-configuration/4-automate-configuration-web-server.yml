@@ -4,10 +4,11 @@ title: Automate the configuration of a web server
 metadata:
   title: Automate the configuration of a web server
   description: Learn how to automate the configuration of a web server.
-  ms.date: 05/15/2020
+  ms.date: 04/04/2024
   author: ju-shim
   ms.author: jushiman
   ms.topic: unit
+  ms.custom: linux-related-content
   zone_pivot_groups: platform-cloud
 durationInMinutes: 5
 content: |

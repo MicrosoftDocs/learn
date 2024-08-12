@@ -4,7 +4,7 @@ title: Table constraints
 metadata:
   title: Table constraints
   description: "Use primary keys, foreign keys, and table constraints on relational database tables for identity, default values, and restrict data values"
-  ms.date: 12/29/2022
+  ms.date: 03/05/2024
   author: JetterMcTedder
   ms.author: bspendolini
   ms.topic: unit

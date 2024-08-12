@@ -1,7 +1,4 @@
-
 **Estimated time:** 40 minutes.
-
-**Lab files:** none.
 
 ## Scenario
 
@@ -18,7 +15,7 @@ After completing this lab, you'll be able to:
 
  -  This lab requires **Microsoft Edge** or an [Azure DevOps-supported browser](/azure/devops/server/compatibility).
  -  Identify an existing Azure subscription or create a new one.
- -  Verify that you have a Microsoft or Microsoft Entra account with the Contributor or the Owner role in the Azure subscription. For details, refer to [List Azure role assignments using the Azure portal](/azure/active-directory/roles/manage-roles-portal).
+ -  Verify that you have a Microsoft or Entra account with the Contributor or the Owner role in the Azure subscription. For details, refer to [List Azure role assignments using the Azure portal](/azure/active-directory/roles/manage-roles-portal).
  -  If you don't already have a GitHub account that you can use for this lab, follow the instructions available at [Signing up for a new GitHub account](https://docs.github.com/get-started/signing-up-for-github/signing-up-for-a-new-github-account) to create one.
 
 ## Exercises
@@ -30,4 +27,4 @@ During this lab, you'll complete the following exercises:
  -  Exercise 2: Remove the Azure lab resources.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button, which will take you to the lab.":::
-](https://aka.ms/az-400-implement-github-actions-for-ci-cd)
+](https://go.microsoft.com/fwlink/?linkid=2270303)

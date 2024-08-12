@@ -2,30 +2,25 @@
 uid: learn.wwl.microsoft-graph
 metadata:
   title: Explore Microsoft Graph
-  description: "Explore Microsoft Graph"
+  description: Explore Microsoft Graph
   ms.date: 03/13/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: azure
   ai-usage: human-only
+  ms.service: microsoft-graph
 title: Explore Microsoft Graph
 summary: Learn how Microsoft Graph facilitates the access and flow of data and how to form queries through REST and code.
 abstract: |
   After completing this module, you'll be able to:
-
   -   Explain the benefits of using Microsoft Graph.
-
   -   Perform operations on Microsoft Graph by using REST and SDKs.
-
   -   Apply best practices to help your applications get the most out of Microsoft Graph.
 prerequisites: |
   -   You should be familiar with developer concepts and terminology.
-
   -   Experience working with OAuth.
-
   -   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/microsoft-graph-explore.svg
 levels:

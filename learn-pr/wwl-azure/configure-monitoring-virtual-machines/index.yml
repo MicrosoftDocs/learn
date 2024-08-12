@@ -2,19 +2,19 @@
 uid: learn.wwl.configure-monitoring-virtual-machines
 metadata:
   title: Configure monitoring for virtual machines
-  description: "In this module, you learn how the Azure Monitor Agent can be deployed to IaaS VMs, how VM Insights can be used to monitor IaaS VM performance, and how to enable data collection rules to collect operating system and application logs."
+  description: In this module, you learn how the Azure Monitor Agent can be deployed to IaaS VMs, how VM Insights can be used to monitor IaaS VM performance, and how to enable data collection rules to collect operating system and application logs.
   ms.date: 10/25/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-monitor
 title: Configure monitoring for virtual machines
 summary: Understand how to deploy and configure Azure Monitor Agent on IaaS VMs and how to enable VM Insights and Data Collection Rules to monitor performance and application telemetry.
 abstract: |
   - Describe the Azure Monitor Agent and how it can be deployed to IaaS Virtual Machines
   - Explain VM Insights and how to use it to monitor IaaS VM performance
   - Enable data collection rules to collect operating system and application logs
-prerequisites: ""
+prerequisites: ''
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

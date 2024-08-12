@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.begin-your-microsoft-learn-educators-journey.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 07/19/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

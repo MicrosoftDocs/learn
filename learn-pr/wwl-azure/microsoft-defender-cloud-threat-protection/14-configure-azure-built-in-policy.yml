@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.configure-azure-built-in-policy
+title: Enable configure Azure built-in policy
+metadata:
+  title: Enable configure Azure built-in policy
+  description: "Enable configure Azure built-in policy"
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 3
+content: |
+  [!include[](includes/14-configure-azure-built-in-policy.md)]

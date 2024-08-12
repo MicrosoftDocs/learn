@@ -23,7 +23,7 @@ In this exercise, you'll create a custom connector for the Print Framer API and 
    | **Plan** |
    | Plan type | Consumption |
    | **Zone redundancy** |
-   | Zone redundancy | Leave as default (disables) |
+   | Zone redundancy | Leave as default (disabled) |
    | | |
 
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
@@ -34,15 +34,16 @@ In this exercise, you'll create a custom connector for the Print Framer API and 
 
    The Azure portal shows a gallery with frequently used triggers and workflow patterns.
 
-1. Under **Start with a common trigger**, select the Request trigger named **When an HTTP request is received**.
+1. Select **Logic app designer** in the left menu, then select **Add a trigger**.
+1. Search for and select **When an HTTP request is received**.
 
    The workflow designer now displays the trigger you selected.
 
-1. Open the **Add a new parameter** list, and select **Method**.
+1. Select **Show all** in the **Advanced parameters** section. 
 
-1. From the **Method** list, select **GET**.
+1. Select **GET** in the **Method** drop-down.
 
-1. Open the **Add a new parameter** list again, and select **Relative path**. In the **Relative path** property, enter `{height}/{width}` as a literal string.
+1. Enter `{height}/{width}` as a literal string in the **Relative path** field.
 
    ![Screenshot showing the Request trigger information.](../media/5-configure-http-request.png)
 
@@ -115,7 +116,7 @@ Now, you can use the custom connector in your logic app workflow.
 
 1. In the logic app resource menu, select **Overview**. On the **Overview** pane toolbar, select **Edit**.
 
-1. On the designer, select **New step**.
+1. On the designer, select **New step** > **Add an action**.
 
 1. Under the **Choose an operation** search box, select **Custom**, and then select **PrintFramerConnector**.
 

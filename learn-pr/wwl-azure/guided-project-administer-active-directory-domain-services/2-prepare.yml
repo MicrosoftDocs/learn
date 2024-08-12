@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-administer-active-directory-domain-services.prepare
+title: Prepare
+metadata:
+  title: Prepare
+  description: "Prepare"
+  ms.date: 06/19/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/2-prepare.md)]

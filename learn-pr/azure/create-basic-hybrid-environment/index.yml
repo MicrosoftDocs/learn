@@ -3,18 +3,19 @@ uid: learn.create-basic-hybrid-environment
 metadata:
   moduleType: guided-project
   title: Create a basic hybrid environment
-  description: "This module will demonstrate how to create an Active Directory and Microsoft Entra tenant environment that will be used in subsequent learn modules."
-  ms.date: 5/31/2022
+  description: "Learn how to create an Active Directory and Microsoft Entra tenant environment that you can use in subsequent learn modules."
+  ms.date: 05/28/2024
   author: billmath
   ms.author: billmath
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: active-directory
 title: Create a basic hybrid environment
 summary: |
-  Create an on-premises Active Directory environment and a Microsoft Entra tenant.  This environment will be the basis for more guided projects that will demonstrate how to deploy hybrid environments and use the cloud.
+  Create an on-premises Active Directory environment and a Microsoft Entra tenant.  This environment is the basis for more guided projects that demonstrate how to deploy hybrid environments and use the cloud.
   > [!NOTE]
   > This is a **_Guided Project_** module where you complete an end-to-end project by following step-by-step instructions.
 abstract: |
-   In this module, you'll practice how to:
+   In this module, you practice how to:
     - Install Hyper-V
     - Create a Virtual Machine
     - Deploy Active Directory

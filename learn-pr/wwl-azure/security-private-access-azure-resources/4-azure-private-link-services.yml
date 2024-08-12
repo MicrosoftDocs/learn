@@ -4,10 +4,12 @@ title: Plan and implement Private Link services
 metadata:
   title: Plan and implement Private Link services
   description: "Plan and implement Private Link services"
-  ms.date: 02/19/2024
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/4-azure-private-link-services.md)]

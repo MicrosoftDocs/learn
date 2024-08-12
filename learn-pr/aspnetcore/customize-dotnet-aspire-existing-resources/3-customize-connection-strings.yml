@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.customize-dotnet-aspire-existing-resources.customize-connection-strings
+title: Customize connection strings by using .NET Aspire manifests
+metadata:
+  title: Customize connection strings by using .NET Aspire manifests
+  description: In this unit, you'll learn about the manifest file format that deployment tools use to configure .NET Aspire solutions. You'll use this knowledge to configure values such as connection strings for backing services.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-customize-connection-strings.md)]

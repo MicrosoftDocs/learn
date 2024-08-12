@@ -2,8 +2,8 @@ Data Migration Assistant (DMA) is a standalone application that runs a set of ta
 
 The duration of the DMA assessment depends on the size of the source database. To reduce assessment time for large databases, you can run compatibility and new feature recommendation assessments separately.
 
->[!NOTE]
-> For large migrations and enhanced overall experience, it is recommended you use [Azure SQL migration extension for Azure Data Studio](/sql/azure-data-studio/extensions/azure-sql-migration-extension), which is powered by the latest version of Data Migration Services.
+> [!NOTE]
+> While the Database Migration Assistant is a useful tool available, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience.
 
 ## Install the Microsoft Data Migration Assistant
 

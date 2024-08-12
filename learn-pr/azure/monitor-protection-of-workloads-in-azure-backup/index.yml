@@ -3,11 +3,12 @@ uid: learn.azure.monitor-protection-of-workloads-in-azure-backup
 metadata:
   title: Monitor workload protection in Azure Backup
   description: Learn how to monitor Azure Backup-protected workloads by using Azure Monitor.
+  manager: jsuri
   ms.date: 12/01/2023
   author: AbhishekMallick-MS
   ms.author: v-abhmallick
-  ms.topic: interactive-tutorial
-  ms.service: backup
+  ms.topic: module
+  ms.service: azure-backup
 title: Monitor workload protection in Azure Backup
 summary: Monitor your backup instances and backup jobs, configure alerts for failed operations, and do historical reporting based on log data in Azure Backup.
 abstract: |

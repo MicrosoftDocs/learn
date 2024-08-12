@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: unit
-  ms.service: azure
 durationInMinutes: 8
 content: |
   [!include[](includes/4-implement-compliance-controls.md)]

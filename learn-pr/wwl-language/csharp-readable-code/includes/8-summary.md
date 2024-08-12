@@ -7,3 +7,7 @@ You learned that you write the code once, but read the code many times. Improvin
 ## Get a free verified certification
 
 Microsoft and freeCodeCamp.org offer a training and certification combo on foundational C#. By completing this Learn module, you've already started. Explore freeCodeCamp's Foundational C# with Microsoft certification here: [https://aka.ms/csharp-certification](https://aka.ms/csharp-certification).
+
+## Extra Reading
+
+[C# identifier naming rules and conventions](/dotnet/csharp/fundamentals/coding-style/identifier-names)

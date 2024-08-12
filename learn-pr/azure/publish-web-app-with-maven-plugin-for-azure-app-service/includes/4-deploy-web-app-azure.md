@@ -2,7 +2,7 @@ The `azure-webapp-maven-plugin` has two goals for Java developers: the first is 
 
 In this unit, you'll look at the options for your company to host its apps on Azure App Service, then you'll learn how to add and configure the `azure-webapp-maven-plugin` to your Maven project.
 
-## Introduction to the Azure App Service
+## Introduction to Azure App Service
 
 The Azure App Service allows you to host your company's websites, web apps, REST APIs, and other application code on Azure. Your project code is running in the cloud; you don't have to provision or configure any infrastructure. Running your web app in Azure App Service provides you with all the benefits of running on Azure: your app is globally available, it scales automatically, has security and compliance built-in, and you only pay for the resources you use.
 
@@ -29,14 +29,14 @@ To add the Maven Plugin for Azure App Service to your web app, you'd add the XML
 <plugin>
   <groupId>com.microsoft.azure</groupId>
   <artifactId>azure-webapp-maven-plugin</artifactId>
-  <version>2.2.0</version>
+  <version>2.13.0</version>
 </plugin>
 ```
 
 However, the plugin provides a convenient and interactive way to add configurations to your POM file:
 
 ```bash
-mvn com.microsoft.azure:azure-webapp-maven-plugin:2.2.0:config
+mvn com.microsoft.azure:azure-webapp-maven-plugin:2.13.0:config
 ```
 
 The plugin prompts you for the information required to configure the App Service plan. After you've confirmed your choices, the plugin adds the preceding plugin element and requisite settings to your project's `pom.xml` file that configures your web app to run in Azure App Service.
@@ -54,18 +54,18 @@ The following annotated excerpt from a `pom.xml` file demonstrates some of the r
 <plugin> 
   <groupId>com.microsoft.azure</groupId>  
   <artifactId>azure-webapp-maven-plugin</artifactId>  
-  <version>2.2.0</version>  
+  <version>2.13.0</version>  
   <configuration> 
     <schemaVersion>v2</schemaVersion>  
     <subscriptionId>11111111-1111-1111-1111-111111111111</subscriptionId>  
     <resourceGroup>learn-9c627899-58ae-4ef5-9630-3336ec7bce0c</resourceGroup>  
     <appName>MyWebApp-1610102860270</appName>  
-    <pricingTier>F1</pricingTier>  
+    <pricingTier>S1</pricingTier>  
     <region>westus</region>  
     <runtime> 
       <os>Linux</os>  
-      <javaVersion>Java 8</javaVersion>  
-      <webContainer>Tomcat 8.5</webContainer> 
+      <javaVersion>Java 17</javaVersion>  
+      <webContainer>Tomcat 10.0</webContainer> 
     </runtime>  
     <deployment> 
       <resources> 
@@ -85,8 +85,8 @@ Some of the relevant configuration options are in the following table. For a ful
 
 | Tag | Options |
 |---------|---------|
-| `<javaVersion>` | Linux supports versions 8 and 11<br/>Windows supports version 1.7 up to 11 |
-| `<webContainer>` | Linux supports Tomcat, Wildfly, and Java SE<br/>Windows supports Tomcat and Jetty |
+| `<javaVersion>` | Linux supports versions 8, 11, and 17<br/>Windows supports versions 8, 11, and 17 |
+| `<webContainer>` | Linux supports Tomcat, JBoss EAP 7.2, and Java SE<br/>Windows supports Tomcat and Java SE |
 | `<resource>` | Specifies where the WAR or JAR is located in the project |
 
 ### Deployment options

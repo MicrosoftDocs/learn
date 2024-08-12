@@ -2,33 +2,52 @@
 uid: learn.wwl.implement-hybrid-network-infrastructure
 metadata:
   title: Implement hybrid network infrastructure
-  description: You'll learn to connect your on-premises environment to Azure, implement subnets and routing between your on-premises and cloud environments, and ensure that workloads in the cloud and on-premises perform DNS resolution to locate each other.
-  ms.date: 09/24/2020
+  description: "You learn to connect your on-premises environment to Azure, implement subnets and routing between your on-premises and cloud environments, and ensure that workloads in the cloud and on-premises perform DNS resolution to locate each other."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.custom: e2e-hybrid
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - e2e-hybrid
+  ms.service: windows-server
+  ms.subservice: networking
+  ai-usage: human-only
 title: Implement hybrid network infrastructure
-summary: You'll learn to connect your on-premises environment to Azure, implement subnets and routing between your on-premises and cloud environments, and ensure that workloads in the cloud and on-premises perform DNS resolution to locate each other.
+summary: You learn to connect your on-premises environment to Azure, implement subnets and routing between your on-premises and cloud environments, and ensure that workloads in the cloud and on-premises perform DNS resolution to locate each other.
 abstract: |
-  After completing this module, you will be able to:
-  - Describe Azure network topologies.
-  - Implement an Azure VPN.
-  - Explain how to create a route-based VPN gateway using the Azure portal.
-  - Implement Azure ExpressRoute.
-  - Implement an Azure WAN.
-  - Implement DNS resolution in hybrid environments.
+  After completing this module, you'll be able to:
+
+  -   Describe Azure network topologies.
+
+  -   Implement an Azure VPN.
+
+  -   Explain how to create a route-based VPN gateway using the Azure portal.
+
+  -   Implement Azure ExpressRoute.
+
+  -   Implement an Azure WAN.
+
+  -   Implement DNS resolution in hybrid environments.
 prerequisites: |
   In order to get the best learning experience from this module, it's important that you have knowledge and experience in the following areas:
-  - Managing the Windows Server operating system (OS) and Windows Server workloads in on-premises scenarios, including Active Directory Domain Services (AD DS), Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services
-  - Common Windows Server management tools
-  - Core Microsoft storage, compute, networking, and virtualization technologies
-  - On-premises resiliency Windows Server-based compute and storage technologies
-  - Implementing and managing IaaS services in Azure
-  - Microsoft Entra ID
-  - Security-related technologies (firewalls, encryption, multi-factor authentication)
-  - Windows PowerShell scripting
-  - Automation and monitoring
+
+  -   Managing the Windows Server operating system (OS) and Windows Server workloads in on-premises scenarios, including Active Directory Domain Services (AD DS), Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services
+
+  -   Common Windows Server management tools
+
+  -   Core Microsoft storage, compute, networking, and virtualization technologies
+
+  -   On-premises resiliency Windows Server-based compute and storage technologies
+
+  -   Implementing and managing IaaS services in Azure
+
+  -   Microsoft Entra ID
+
+  -   Security-related technologies (firewalls, encryption, multifactor authentication)
+
+  -   Windows PowerShell scripting
+
+  -   Automation and monitoring
 iconUrl: /training/achievements/implement-hybrid-network-infrastructure.svg
 levels:
 - intermediate

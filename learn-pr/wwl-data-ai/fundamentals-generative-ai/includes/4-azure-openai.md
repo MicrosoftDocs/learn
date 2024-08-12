@@ -1,22 +1,20 @@
-Azure OpenAI Service is Microsoft's cloud solution for deploying, customizing, and hosting large language models. It brings together the best of OpenAI's cutting edge models and APIs with the security and scalability of the Azure cloud platform. Microsoft's partnership with OpenAI enables Azure OpenAI users to access the latest language model innovations.
+Organizations and developers can train their own language models from scratch, but in most cases it’s more practical to use an existing foundation model, and optionally fine-tune it with your own training data. There are many sources of model that you can use.
 
-Azure OpenAI supports many models that can serve different needs. These models include:
+On Microsoft Azure, you can find foundation models in the Azure OpenAI service and in the Model Catalog. The Model Catalog is a curated source of models for data scientists and developers using Azure AI Studio and Azure Machine Learning. This offers the benefit of cutting-edge language models like the generative pre-trained transformer (GPT) collection of models (on which ChatGPT and Microsoft's own generative AI services are based)  as well as the DALL-E model for image generation. Using these models from the Azure OpenAI service means that you also get the benefit of a secure, scalable Azure cloud platform in which the models are hosted.
 
-- **GPT-4 models** are the latest generation of *generative pretrained* (GPT) models that can generate natural language and code completions based on natural language prompts.
-- **GPT 3.5 models** can generate natural language and code completions based on natural language prompts. In particular, **GPT-35-turbo** models are optimized for chat-based interactions and work well in most generative AI scenarios.
-- **Embeddings models** convert text into numeric vectors, and are useful in language analytics scenarios such as comparing text sources for similarities.
-- **DALL-E models** are used to generate images based on natural language prompts. Currently, DALL-E models are in preview. DALL-E models aren't listed in the Azure OpenAI Studio interface and don't need to be explicitly deployed.
+In addition to the Azure OpenAI models, the model catalog includes the latest open-source models from Microsoft and multiple partners, including:
+- OpenAI
+- HuggingFace
+- Mistral
+- Meta and others.
 
-Models differ by speed, cost, and how well they complete specific tasks. You can learn more about the differences and latest models offered in the [Azure OpenAI Service documentation](/azure/ai-services/openai/concepts/models).
+## Large and small language models
+There are many language models available that you can use to power generative AI applications. In general, language models can be considered in two categorize: *Large Language Models* (LLMs) and *Small Language models* (SLMs).
 
-In many cases, models can be used as-is. For example, in Azure OpenAI Service, you can deploy a GPT-4 model and immediately start using it from an application. However, you can also use an existing model as a foundational model - a starting point for further training with your own data. This approach is called fine-tuning, and it enables you to train a custom model that builds on the pre-trained model, but which is tuned to data that is relevant for your particular scenario. For example, a legal firm might fine-tune a model with the text from existing contracts and other proprietary legal documents to train a model that is optimized for generating contractual content.
-
-## Azure OpenAI Studio
-
-Developers can work with these models in Azure OpenAI Studio, a web-based environment where AI professionals can deploy, test, and manage LLMs that support generative AI app development on Azure. 
-
-![Screenshot of Azure OpenAI Studio home page.](../media/studio-portal.png)
-
-Within Azure OpenAI Studio, you can deploy large language models, provide few-shot examples, and test them in Azure OpenAI Studio's Chat playground. 
-
-![Screenshot of Azure OpenAI Studio chat playground.](../media/azure-openai-chat-playground.png)
+|Large Language Models (LLMs)|Small Language Models (SLMs)|
+|-|-|
+|LLMs are trained with vast quantities of text that represents a wide range of general subject matter – typically by sourcing data from the Internet and other generally available publications.| SLMs are trained with smaller, more subject-focused datasets|
+|When trained, LLMs have many billions (even trillions) of parameters (weights that can be applied to vector embeddings to calculate predicted token sequences).|Typically have fewer parameters than LLMs.|
+|Able to exhibit comprehensive language generation capabilities in a wide range of conversational contexts.|This focused vocabulary makes them very effective in specific conversational topics, but less effective at more general language generation.|
+|Their large size can impact their performance and make them difficult to deploy locally on devices and computers.|The smaller size of SLMs can provide more options for deployment, including local deployment to devices and on-premises computers; and makes them faster and easier to fine-tune.|
+|Fine-tuning the model with additional data to customize its subject expertise can be time-consuming, and expensive in terms of the compute power required to perform the additional training.|Fine-tuning can potentially be less time-consuming and expensive.|

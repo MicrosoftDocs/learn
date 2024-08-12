@@ -109,7 +109,7 @@ Follow these steps to create an audit log retention policy in PowerShell:
 Here's another example of creating an audit log retention policy. This policy:
 
 - Retains audit logs for the "User logged in" activity for six months.
-- It does so for the user admin@contoso.onmicrosoft.com.
+- It does so for the user `admin@contoso.onmicrosoft.com`.
 - Assigns a priority of 25 to the policy.
 
 ```powershell

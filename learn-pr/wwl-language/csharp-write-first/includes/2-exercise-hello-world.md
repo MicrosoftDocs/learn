@@ -118,17 +118,33 @@ In this task, you'll comment out the previous line of code, then add new lines o
 1. Press the green Run button again. This time, you should get the following output.
 
     ```Output
-    Congratulations! 
-    
-    You wrote your first lines of code.
+    Congratulations! You wrote your first lines of code.
     ```
 
 ### The difference between Console.Write and Console.WriteLine
 
 The three new lines of code you added demonstrated the difference between the <xref:System.Console.WriteLine?displayProperty=nameWithType> and <xref:System.Console.Write%2A?displayProperty=nameWithType> methods.
 
-To print an entire message to the output console, you used the first technique, `Console.WriteLine()`. At the end of the line, it added a line feed similar to how to create a new line of text by pressing Enter or Return.
+`Console.WriteLine()` prints a message to the output console. At the end of the line, it adds a line feed similar to pressing Enter or Return to create a new line.
 
-To print to the output console, but without adding a line feed at the end, you used the second technique, `Console.Write()`. So, the next call to `Console.Write()` prints another message to the same line.
+To print to the output console, but without adding a line feed at the end, you use the second technique, `Console.Write()`. So, the next call to `Console.Write()` prints another message to the same line.
+
+### Update the message
+
+1. Update your code to match the following code snippet:
+
+    ```csharp
+    Console.WriteLine("Congratulations!");
+    Console.Write("You wrote your first lines of code.");
+    ```
+
+1. Press the green Run button again. This time, you should get the following output.
+
+    ```Output
+    Congratulations!
+    You wrote your first lines of code.
+    ```
+
+This code helps demonstrate the difference between the two methods. A new line is appended by `Console.WriteLine()`, and `Console.Write()` prints the output on the current line.
 
 Congratulations on writing your first lines of code!

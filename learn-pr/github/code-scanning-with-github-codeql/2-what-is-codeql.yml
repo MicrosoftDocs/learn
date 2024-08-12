@@ -5,46 +5,10 @@ metadata:
   unitType: learning-content
   title: "What is CodeQL?" # user input: module title for browser tab and search results
   description: "Learn about the CodeQL static analysis tool." # user input: a description for site search and SEO
-  ms.date: 2/15/2022
-  author: hrasheed-msft
-  ms.author: hrasheed
+  ms.date: 04/11/2024
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 10 # user input: the estimate time to complete the unit
 content: |
     [!include[](includes/2-what-is-codeql.md)]
-quiz:
-  title: What is CodeQL?
-  questions:
-  - content: "In CodeQL, errors like bugs and vulnerabilities are modeled as:"
-    choices:
-    - content: "Data"
-      isCorrect: false
-      explanation: "CodeQL treats *code* like data, but errors in the code are modeled differently."
-    - content: "Queries"
-      isCorrect: true
-      explanation: "Correct!"
-    - content: "Processes"
-      isCorrect: false
-      explanation: "CodeQL is used to perform the *process* of variant analysis."
-  - content: "How many default query suites are there with GitHub code scanning with CodeQL?"
-    choices:
-    - content: "One (1)"
-      isCorrect: false
-      explanation: "Incorrect"
-    - content: "Two (2)"
-      isCorrect: false
-      explanation: "Incorrect"
-    - content: "Three (3)"
-      isCorrect: true
-      explanation: "Correct!"
-  - content: "Which of the following are part of a CodeQL database?"
-    choices:
-    - content: "Query length (.qlg) files"
-      isCorrect: false
-      explanation: "Query length files are not a part of CodeQL. Query library (.qll) files are used in CodeQL, but are not a part of the database."
-    - content: "A representation of the language's abstract syntax tree"
-      isCorrect: true
-      explanation: "Correct! A representation of the language's abstract syntax tree is a part of a CodeQL database."
-    - content: "A logic flow graph"
-      isCorrect: false
-      explanation: "A data flow graph is a part of a CodeQL database. A logic flow graph is not."

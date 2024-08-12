@@ -23,7 +23,7 @@ This VM will run a specific configuration that stresses the CPU and generates th
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name vm1 \
         --location eastUS \
         --image Ubuntu2204 \
@@ -44,7 +44,7 @@ You can use either the Azure portal or the CLI to create a metric alert. In this
 
 1. Open the **+ Create** menu, and select **Alert rule**
 1. On the **Select a resource pane**, set the scope for your alert rule. You can filter by subscription, resource type, or resource location.
-1. In the **Resource type** drop-down,start to type "virtual machines", and select **Virtual machines**.
+1. In the **Resource type** drop-down, start to type "virtual machines", and select **Virtual machines**.
 1. Check the box next to **vm1**, then select **Apply** at the bottom of the pane.
 
     :::image type="content" source="../media/4-select-resource-scope.png" alt-text="Screenshot that shows the 'Select a resource' pane, with `vm1` selected.":::
@@ -97,7 +97,7 @@ Let's create a new metric alert similar to the one you set up in the Azure porta
 
     ```bash
     VMID=$(az vm show \
-            --resource-group <rgn>[sandbox resource group name]</rgn> \
+            --resource-group "<rgn>[sandbox resource group name]</rgn>" \
             --name vm1 \
             --query id \
             --output tsv)
@@ -108,7 +108,7 @@ Let's create a new metric alert similar to the one you set up in the Azure porta
     ```azurecli
     az monitor metrics alert create \
         -n "Cpu80PercentAlert" \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --scopes $VMID \
         --condition "max percentage CPU > 80" \
         --description "Virtual machine is running at or greater than 80% CPU utilization" \

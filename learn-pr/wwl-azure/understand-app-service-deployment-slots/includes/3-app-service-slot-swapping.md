@@ -1,5 +1,4 @@
-
-When you swap two slots (for example, from a staging slot to the production slot), App Service does the following to ensure that the target slot doesn't experience downtime:
+When you swap two slots (for example, from a staging slot to the production slot), App Service completes the following process to ensure that the target slot doesn't experience downtime:
 
 1. Apply the following settings from the target slot (for example, the production slot) to all instances of the source slot:
 
@@ -48,4 +47,3 @@ Features marked with an asterisk (*) are planned to be unswapped.
 > To make settings swappable, add the app setting `WEBSITE_OVERRIDE_PRESERVE_DEFAULT_STICKY_SLOT_SETTINGS` in every slot of the app and set its value to `0` or `false`. These settings are either all swappable or not at all. You can't make just some settings swappable and not the others. Managed identities are never swapped and are not affected by this override app setting.
 
 To configure an app setting or connection string to stick to a specific slot (not swapped), go to the Configuration page for that slot. Add or edit a setting, and then select **Deployment slot setting**. Selecting this check box tells App Service that the setting isn't swappable.
-

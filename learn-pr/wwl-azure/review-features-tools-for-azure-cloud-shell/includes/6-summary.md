@@ -5,7 +5,7 @@ In this module, you learned about Azure Cloud Shell and its features. The follow
 - You can access the Cloud Shell in three ways: 
     - Direct link. Open a browser and refer to https://shell.azure.com.
     - Azure portal. Select the Cloud Shell icon on the Azure portal.
-    - Code snippets. On Microsoft Docs and Microsoft Learn, select the Try It option that displays with the Azure CLI and Azure PowerShell code snippets.
+    - Code snippets. On Microsoft Learn select the Try It option that displays with the Azure CLI and Azure PowerShell code snippets.
 
 - Cloud Shell offers a browser-accessible, preconfigured shell experience for managing Azure resources without the overhead of installing, versioning, and maintaining a machine yourself.
 

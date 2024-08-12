@@ -4,10 +4,12 @@ title: 'Exercise: Measure performance for customer entities'
 metadata:
   title: 'Exercise: Measure performance for customer entities'
   description: "Exercise: Measure performance for customer entities"
-  ms.date: 02/06/2024
+  ms.date: 04/16/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
+  ms.custom:
+  - N/A
 labId: 107586
 labModal: true
 durationInMinutes: 25

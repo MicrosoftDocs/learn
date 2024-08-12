@@ -3,7 +3,7 @@ uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.ex
 metadata:
   title: Exercise - Set up a webhook for a GitHub repository
   description: Exercise - Set up a webhook for a GitHub repository
-  ms.date: 04/30/2019
+  ms.date: 10/27/2022
   author: ggailey777
   ms.author: glenga
   ms.topic: unit

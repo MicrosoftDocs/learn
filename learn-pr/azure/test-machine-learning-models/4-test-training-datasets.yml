@@ -5,8 +5,8 @@ metadata:
   title: Test and training datasets
   description: Conceptual unit about testing and training datasets in machine learning
   ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 4
 content: |

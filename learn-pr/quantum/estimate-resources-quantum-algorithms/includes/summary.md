@@ -18,7 +18,7 @@ Now that you understand resource estimation, you can do experiments to deepen yo
 
 ## Learn more
 
-- Check the [Resource Estimator sample gallery](https://github.com/microsoft/Quantum/tree/main/samples/azure-quantum/resource-estimation) for more resource estimation sample notebooks.
-- [Learn how the Resource Estimator works](/azure/quantum/learn-how-the-resource-estimator-works).
-- [Get the most out of the Azure Quantum Resource Estimator](/azure/quantum/how-to-work-with-re).
-- [Resource estimation with QIR](/azure/quantum/tutorial-resource-estimator-qir).
+- Check the [Resource Estimator sample gallery](https://github.com/microsoft/Quantum/tree/main/samples/azure-quantum/resource-estimation) for more resource estimation sample notebooks
+- [Introduction to the Azure Quantum Resource Estimator](/azure/quantum/intro-to-resource-estimation)
+- [How to run multiple configurations of target parameters with the Resource Estimator](/azure/quantum/resource-estimator-batching).
+- [Tutorial: Submit a QIR program to the Azure Quantum Resource Estimator](/azure/quantum/tutorial-resource-estimator-qir).

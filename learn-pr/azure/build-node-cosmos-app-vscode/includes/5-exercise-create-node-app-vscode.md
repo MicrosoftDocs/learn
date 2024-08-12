@@ -16,13 +16,13 @@ In this unit, use Visual Studio Code to build and run a Node.js application agai
 
 1. On the **Terminal** menu, select **New Terminal**, or use keyboard shortcut, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>.
 
-3. In the **Terminal** window, run the following command to create a new folder named **contoso-retail** for the Node application and change into that folder.
+1. In the **Terminal** window, run the following command to create a new folder named **contoso-retail** for the Node application and change into that folder.
   
     ```bash
     mkdir contoso-retail && cd contoso-retail
     ```
 
-4. Enter the following commands to move to initialize a new Node application.
+1. Enter the following commands to move to initialize a new Node application.
 
     ```bash
     npm init -y
@@ -30,16 +30,15 @@ In this unit, use Visual Studio Code to build and run a Node.js application agai
 
     The **npm init** command creates a **package.json** file and displays its contents. This file contains the initial metadata for the application, containing a default name, description, and entry point.
 
-5. On the **File** menu in Visual Studio Code, select **Open folder**, and then open the **contoso-retail** folder.
+1. On the **File** menu in Visual Studio Code, select **Open folder**, and then open the **contoso-retail** folder.
 
-6. In the **Explorer** window, select the **package.json** file.
+1. In the **Explorer** window, select the **package.json** file.
 
-7. In the editor pane, change the following for the **package.json** file: 
+1. In the editor pane, change the following for the **package.json** file: 
 
     |Property|Value|
     |--|--|
     |**type**|`module` - the module's JavaScript code uses ES6 syntax|
-
 
     The file should look like this. The sample code uses ES6 syntax so you need to set the type of the application to **module**. 
 
@@ -59,7 +58,7 @@ In this unit, use Visual Studio Code to build and run a Node.js application agai
     }
     ```
 
-8. On the **File** menu, select **Save**. 
+1. On the **File** menu, select **Save**.
 
 ## Configure Visual Studio Code to autosave file changes
 
@@ -73,11 +72,10 @@ The **.gitignore** file prevents you from checking in files to source control th
 
 Create a file, <kbd>Ctrl</kbd> + <kbd>N</kbd>, named `.gitignore` and add the following to it.
 
-```
+```text
 node_modules
 .env
 ```
-
 
 ## Create secrets environment file
 
@@ -96,7 +94,7 @@ node_modules
 1. From the Azure explorer, <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>, select your subscription, then the **Azure Cosmos DB** node to see the resources. 
 1. Right-click on your Cosmos DB account and select **Copy connection string**.
 
-    :::image type="content" source="../media/3-copy-connection-string.png" alt-text="Screenshot of the Visual Studio Code with Cosmos D B account name selected and the submenu to Copy Connection String highlighted." loc-scope="vs-code":::
+    :::image type="content" source="../media/3-copy-connection-string.png" alt-text="Screenshot of the Visual Studio Code with Cosmos DB account name selected and the submenu to Copy Connection String highlighted." loc-scope="vs-code":::
 
 1. Paste the connection string into the `.env` file for the **COSMOS_CONNECTION_STRING** variable.
 
@@ -116,11 +114,11 @@ node_modules
 
 ## Product shape
 
-Understanding the document JSON will help you understand the operations, their input and responses.
+Understanding the JSON in the document helps you understand the input for the operations and the responses.
 
 The products in this dataset have the following shape:
 
-```
+```json
 {
       "id": "FEEFEE3B-6CB9-4A75-B896-5182531F661B",
       "categoryId": "AE48F0AA-4F65-4734-A4CF-D48B8F82267F",
@@ -143,9 +141,8 @@ The products in this dataset have the following shape:
 |Property|Description|
 |--|--|
 |id|Cosmos DB uses the custom identifier, **id**, to uniquely identify each item. The ID can be any data type such as number, string, etc. If you don't provide the ID, Cosmos DB creates one for you.|
-|categoryName|This property has been specifically selected for this dataset as the partition key. The product category name provides a somewhat even distribution of the data, which is ideal for the partition key. The categoryName also won't change very often, which is also important for a partition key.|
-|tags and inventory|These represent subproperties that can be used to find and reshape the results of queries using the JOIN keyword.|
- 
+|categoryName|This property is selected specifically for this dataset as the partition key. The product category name provides an even distribution of the data, which is ideal for the partition key. Also, the categoryName doesn't change often, which is important for a partition key.|
+|tags and inventory|These represent subproperties that can be used to find and reshape the results of queries using the `JOIN` keyword.|
 
 ## Create the script to add products to a container
 
@@ -156,10 +153,9 @@ The products in this dataset have the following shape:
 
     :::code language="javascript" source="~/../cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/1-contoso-products-upload-data.js" highlight="11,14,17,29,34,47-51":::
 
+1. Create a new file, named **products.json**, and copy the contents of the sample data file, [products.json](https://raw.githubusercontent.com/Azure-Samples/cosmos-db-sql-api-javascript-samples/main/training/build-node-cosmos-app-vscode/products.json) into it.
 
-1. Create a new file, named **products.json**, and copy the contents of the sample data file, [products.json](https://raw.githubusercontent.com/Azure-Samples/cosmos-db-sql-api-javascript-samples/main/training/build-node-cosmos-app-vscode/products.json) into it. 
-
-    This is an array of JSON objects. 
+    The file contains an array of JSON objects.
 
 1. In the Visual Studio Code terminal, execute the JavaScript file to upload the data into the Cosmos DB container:
 
@@ -171,11 +167,11 @@ The products in this dataset have the following shape:
 
 ## The operation's result object
 
-The result object returned from an operation is documented in the Cosmos DB SQL reference documentation. While the result can have information specific to the operation, each result will have some properties that are always returned and are helpful to determine what happened. 
+The result object returned from an operation is documented in the Cosmos DB SQL reference documentation. While the result can have information specific to the operation, each result has some properties that are always returned and are helpful to determine what happened. 
 
 |Result property|Description|
 |--|--|
-|activityId|The unique event ID associated with the specific operation. If your operation fails and you need to contact support, this ID, along with your resource name and subscription is helpful to quickly find the issue.|
+|activityId|The unique event ID associated with the specific operation. This ID, along with your resource name and subscription, can help identify the issue if your operation fails and you need to contact support.|
 |statusCode|The HTTP status code indicating the success or failure of the operation.|
 |resource|This is a JSON object of the final object, such as a JSON doc in a container.|
 

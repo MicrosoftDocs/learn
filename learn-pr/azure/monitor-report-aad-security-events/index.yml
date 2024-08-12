@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/01/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: active-directory
 title: Monitor and report on security events in Microsoft Entra ID
 summary: Monitor Microsoft Entra security events with built-in reporting and monitoring capabilities to prevent unauthorized access and potential data loss.

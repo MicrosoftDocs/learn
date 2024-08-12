@@ -3,45 +3,47 @@ uid: learn.wwl.build-copilot-ai-studio.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check to test your knowledge on grounding models with RAG."
-  ms.date: 02/21/2024
+  description: Knowledge check to test your knowledge on grounding models with RAG.
   author: madiepev
   ms.author: madiepev
+  ms.date: 02/21/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What does Retrieval Augmented Generation (RAG) refer to in the context of a language model application?"
+  - content: "What does groundedness refer to in the context of generative AI?"
     choices:
-    - content: "RAG helps you fine-tune a language model."
+    - content: "The use of a locally deployed language model."
       isCorrect: false
-      explanation: "Incorrect. RAG doesn't fine-tune a language model."
-    - content: "RAG helps you to integrate a language model in a chat-based application."
-      isCorrect: false
-      explanation: "Incorrect. RAG's purpose isn't to integrate a language model."
-    - content: "RAG helps you ground your language model."
+      explanation: "Incorrect. RGroundedness doesn't refer to the location where the model is deployed."
+    - content: "Using data to contextualize prompts and ensure relevant responses."
       isCorrect: true
-      explanation: "Correct. RAG allows you to retrieve context that helps ground your language model."
-  - content: "Which search method is most likely to yield the most accurate results when integrating it with a copilot?"
+      explanation: Correct. Groundedness involves using a data source to *ground* prompts and ensure accurate, relevant responses."
+    - content: "Using the lowest possible number of tokens in a prompt."
+      isCorrect: false
+      explanation: "Incorrect. Groundedness does not minimize the number of tokens in a prompt."
+  - content: "What pattern can you use to ground prompts?"
     choices:
-    - content: "Keyword search."
+    - content: "Metadata Optimized Prompt (MOP)."
       isCorrect: false
-      explanation: "Incorrect. Keyword search relies solely on predefined terms or phrases, potentially missing relevant information that doesn't match the exact keywords used."
-    - content: "Vector search."
+      explanation: "Incorrect. There is no MOP pattern for grounding prompts."
+    - content: "Data Understanding Support Text (DUST)."
       isCorrect: false
-      explanation: "Incorrect. Vector search uses mathematical representations of documents, which can capture semantic relationships and similarities between documents, but it can still miss context-specific information."
-    - content: "Hybrid search."
+      explanation: "Incorrect. There is no DUST pattern for grounding prompts."
+    - content: "Retrieval Augmented Generation (RAG)."
       isCorrect: true
-      explanation: "Correct. Hybrid search combines the strengths of both keyword and vector search methods, allowing for a more comprehensive and accurate retrieval of relevant information by using both keyword matching and semantic similarity."
-  - content: "When integrating RAG and a language model in a chat flow to build a copilot, what is the purpose of using prompt variants?"
+      explanation: "Correct. The RAG pattern is used to add grounding data to prompts."
+  - content: "Which tool enables you to retrieve grounding data in a prompt flow?"
     choices:
-    - content: "To modify the user's query with historical data."
+    - content: "Query tool."
       isCorrect: false
-      explanation: "Incorrect. Modifying the user's query with historical data is achieved through the Large Language Model (LLM) node, not through prompt variants."
-    - content: "To generate prompt context by retrieving relevant information from the data source."
+      explanation: "Incorrect. There is no Query tool in Promot Flow."
+    - content: "Content Safety tool."
       isCorrect: false
-      explanation: "Incorrect. Generating prompt context is done by parsing the output of the Index Lookup tool, not through prompt variants."
-    - content: "To provide multiple system messages in the prompt."
+      explanation: "Incorrect. The Content Safety tool does not retrieve grounding data."
+    - content: "Index Lookup tool."
       isCorrect: true
-      explanation: "Correct. Prompt variants allow for the inclusion of different system messages in the prompt, exploring which content provides the most groundedness."
+      explanation: "Correct. You can use the Index lookup tool to retrieve grounding data from an index in Prompt Flow."

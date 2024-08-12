@@ -4,17 +4,17 @@ title: Configure public IP services
 metadata:
   title: Configure public IP services
   description: "Configure public IP services"
-  ms.date: 08/16/2023
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/3-configure-public-ip-services.md)]
 quiz:
-  title: ""
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following statements about Azure VNets is correct?"
     choices:

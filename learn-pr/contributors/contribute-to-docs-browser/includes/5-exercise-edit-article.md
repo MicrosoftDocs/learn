@@ -1,9 +1,9 @@
-Let’s practice the contribution workflow. In this exercise, you’ll make a small change to an open-source documentation article on Microsoft Learn. Then, you’ll propose your changes by opening a pull request.  
+Let’s practice the contribution workflow. In this exercise, you make a small change to an open-source documentation article on Microsoft Learn. Then, you propose your changes by opening a pull request.  
 
 ## Edit the article
 
 1. Sign into your GitHub account. 
-1. In a browser tab, navigate to learn.microsoft.com/contribute/content. 
+1. In a browser tab, navigate to [learn.microsoft.com/contribute/content](/contribute/content/). 
 1. At the top of the article, select the **Edit** pencil icon. 
 
     :::image type="content" source="../media/exercise-edit-published.png" alt-text="Screenshot of the Contribute article open and the pencil Edit icon highlighted.":::
@@ -44,4 +44,4 @@ Let’s practice the contribution workflow. In this exercise, you’ll make a sm
 > [!NOTE]
 > Because this is a practice exercise, your changes won’t be merged to the live website.
 
-Congratulations on creating your PR! It’s not submitted yet, but you’ve finished the first major step in contributing. Leave the PR tab open in your browser. You’ll come back to it in the next exercise. 
+Congratulations on creating your PR! It’s not submitted yet, but you’ve finished the first major step in contributing. Leave the PR tab open in your browser. You come back to it in the next exercise. 

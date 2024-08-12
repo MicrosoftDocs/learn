@@ -3,10 +3,10 @@ uid: learn.manage-secrets-in-java-applications-zero-trust.6-exercise-secure-java
 title: Exercise - Secure a Java application from a Java developer perspective
 metadata:
   title: Exercise - Secure a Java application from a Java developer perspective
-  description: In this unit, you'll configure your Java application to use the secrets managed in Azure Key Vault.
+  description: In this unit, you configure your Java application to use the secrets managed in Azure Key Vault.
   author: judubois
   ms.author: judubois
-  ms.date: 02/20/2024
+  ms.date: 05/28/2024
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates

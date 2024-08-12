@@ -4,12 +4,11 @@ title: Summary
 metadata:
   title: Summary
   description: In this section, we restate the scenario and explain how it's solved and the business impact of the new solution.
-  ms.date: 06/29/2020
+  ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen
-  ms.service: iot-central
 durationInMinutes: 1 # dummy number at present
 content: |
   [!include[](includes/17-summary.md)]

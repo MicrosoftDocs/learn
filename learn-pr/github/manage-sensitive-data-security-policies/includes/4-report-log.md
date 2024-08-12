@@ -36,7 +36,7 @@ The Rest API is available for organizations that use GitHub Enterprise Cloud, an
 
 For compliance and record-keeping purposes, you should export your audit logs in a common format. This is a simple process that you can complete by accessing the **Audit log** from the **Settings** sidebar in **Your organizations** and choosing the **Export** drop-down menu.
 
-:::image type="content" source="../media/org-audit-log-export.png" alt-text="Screenshot of the GitHub interface for exporting an organization's audit log, with the Filters field and the Export drop-down.":::
+:::image type="content" source="../media/org-audit-log.png" alt-text="Screenshot of the GitHub interface for exporting an organization's audit log, with the Filters field and the Export drop-down.":::
 
 If you want to export an audit log that focuses on specific events, like those enacted by one user or that happened on a given day, you can filter the audit log results by adding a qualifier and accompanying value to the **Filters** field next to the **Export** drop-down menu.
 

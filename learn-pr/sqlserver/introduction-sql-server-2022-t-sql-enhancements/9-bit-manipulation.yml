@@ -4,7 +4,7 @@ title: New bit manipulation functions
 metadata:
   title: New bit manipulation functions
   description: "With the introduction of new bit manipulation functions, SQL Server 2022 makes it easier to work with binary data."
-  ms.date: 5/5/2023
+  ms.date: 02/27/2024
   author: MScalopez
   ms.author: calopez
   ms.reviewer: vanto

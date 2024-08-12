@@ -6,7 +6,7 @@ Azure SQL is a collective term for a family of Microsoft SQL Server based databa
 - **Azure SQL Edge** - A SQL engine that is optimized for Internet-of-things (IoT) scenarios that need to work with streaming time-series data.
 
 > [!NOTE]
-> Azure SQL Edge is included in this list for completeness. We'll focus on the other options for more general relational database scenarios in this module.
+> Although Azure SQL Edge is included in this list for completeness, we'll focus on the other options for more general relational database scenarios in this module.
 
 ## Compare Azure SQL services
 
@@ -14,7 +14,7 @@ Azure SQL is a collective term for a family of Microsoft SQL Server based databa
 | - | - | - | - |
 | |![SQL Server Azure VM logo](../media/azure-sql-vm.png) | ![Azure SQL Managed Instance logo](../media/azure-sql-managed-instance.png) | ![Azure SQL Database logo](../media/azure-sql-database.png) |
 | Type of cloud service | IaaS | PaaS | PaaS |
-| SQL Server compatibility | Fully compatible with on-premises physical and virtualized installations. Applications and databases can easily be "lift and shift" migrated without change. | Near-100% compatibility with SQL Server. Most on-premises databases can be migrated with minimal code changes by using the [Azure Database Migration service](/azure/dms?azure-portal=true) | Supports most core database-level capabilities of SQL Server. Some features depended on by an on-premises application may not be available. |
+| SQL Server compatibility | Fully compatible with on-premises physical and virtualized installations. Applications and databases can easily be "lift and shift" migrated without change. | Near-100% compatibility with SQL Server. Most on-premises databases can be migrated with minimal code changes by using the [Azure Database Migration service](/azure/dms/dms-overview?azure-portal=true) | Supports most core database-level capabilities of SQL Server. Some features depended on by an on-premises application may not be available. |
 | Architecture | SQL Server instances are installed in a virtual machine. Each instance can support multiple databases. | Each managed instance can support multiple databases. Additionally, *instance pools* can be used to share resources efficiently across smaller instances. | You can provision a *single database* in a dedicated, managed (logical) server; or you can use an *elastic pool* to share resources across multiple databases and take advantage of on-demand scalability. |
 | Availability | 99.99% | 99.99% | 99.995% |
 | Management | You must manage all aspects of the server, including operating system and SQL Server updates, configuration, backups, and other maintenance tasks. | Fully automated updates, backups, and recovery. | Fully automated updates, backups, and recovery. |
@@ -47,7 +47,7 @@ It's not always easy for businesses to switch their DBMS to a fully managed serv
 
 ## Azure SQL Database Managed Instance
 
-Azure SQL Managed instance effectively runs a fully controllable instance of SQL Server in the cloud. You can install multiple databases on the same instance. You have complete control over this instance, much as you would for an on-premises server. SQL Managed Instance automates backups, software patching, database monitoring, and other general tasks, but you have full control over security and resource allocation for your databases. You can find detailed information at [What is Azure SQL Managed Instance?](/azure/sql-database/sql-database-managed-instance).
+Azure SQL Managed instance effectively runs a fully controllable instance of SQL Server in the cloud. You can install multiple databases on the same instance. You have complete control over this instance, much as you would for an on-premises server. SQL Managed Instance automates backups, software patching, database monitoring, and other general tasks, but you have full control over security and resource allocation for your databases. You can find detailed information at [What is Azure SQL Managed Instance?](/azure/sql-database/sql-database-managed-instance?azure-portal=true).
 
 Managed instances depend on other Azure services such as Azure Storage for backups, Azure Event Hubs for telemetry, Microsoft Entra ID for authentication, Azure Key Vault for Transparent Data Encryption (TDE) and a couple of Azure platform services that provide security and supportability features. The managed instances make connections to these services.
 
@@ -57,7 +57,7 @@ All communications are encrypted and signed using certificates. To check the tru
 
 Consider Azure SQL Managed Instance if you want to *lift-and-shift* an on-premises SQL Server instance and all its databases to the cloud, without incurring the management overhead of running SQL Server on a virtual machine.
 
-Azure SQL Managed Instance provides features not available in Azure SQL Database (discussed below). If your system uses features such as linked servers, Service Broker (a message processing system that can be used to distribute work across servers), or Database Mail (which enables your database to send email messages to users), then you should use managed instance. To check compatibility with an existing on-premises system, you can install [Data Migration Assistant (DMA)](https://www.microsoft.com/download/details.aspx?id=53595). This tool analyzes your databases on SQL Server and reports any issues that could block migration to a managed instance.
+Azure SQL Managed Instance provides features not available in Azure SQL Database (discussed below). If your system uses features such as linked servers, Service Broker (a message processing system that can be used to distribute work across servers), or Database Mail (which enables your database to send email messages to users), then you should use managed instance. To check compatibility with an existing on-premises system, we recommend that you use [Azure Database Migration Service](/azure/dms/dms-overview?azure-portal=true), which is available as [Azure SQL Migration extension for Azure Data Studio](/azure-data-studio/extensions/azure-sql-migration-extension?azure-portal=true), or via [Azure Portal](https://aka.ms/dmsazureportal), or through [Azure PowerShell and Azure CLI](/azure/dms/migration-dms-powershell-cli?azure-portal=true). This tool analyzes your databases on SQL Server and reports any issues that could block migration to a managed instance.
 
 ### Business benefits
 
@@ -89,7 +89,7 @@ This option is similar to *Single Database*, except that by default multiple dat
 Azure SQL Database gives you the best option for low cost with minimal administration. It isn't fully compatible with on-premises SQL Server installations. It's often used in new cloud projects where the application design can accommodate any required changes to your applications.
 
 > [!NOTE]
-> You can use the Data Migration Assistant to detect compatibility issues with your databases that can impact database functionality in Azure SQL Database.  For more information, see [Overview of Data Migration Assistant](/sql/dma/dma-overview).
+> You can use the Azure SQL Migration extension for Azure Data Studio to detect compatibility issues with your databases that can impact database functionality in Azure SQL Database. For more information, see [Azure SQL Migration extension for Azure Data Studio](/azure-data-studio/extensions/azure-sql-migration-extension?azure-portal=true).
 
 Azure SQL Database is often used for:
 

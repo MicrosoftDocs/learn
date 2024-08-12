@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Exercise - Change navigation in your Blazor app by using the @page directive
   description: "Change how a Blazor app routes navigation by using the @page directive."
-  ms.date: 8/13/2021
+  ms.date: 8/24/2021
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl

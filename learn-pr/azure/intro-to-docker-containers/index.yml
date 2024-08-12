@@ -3,10 +3,12 @@ uid: learn.intro-to-docker-containers
 metadata:
   title: "Introduction to Docker containers"
   description: "Introduction to Docker containers"
+  ms.service: azure
+  manager: mkluck
   ms.date: 09/16/2023
   author: rayoef
   ms.author: rayoflores
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: "Introduction to Docker containers"
 summary: "Describe the benefits of using Docker containers as a containerization platform. Discuss the infrastructure provided by the Docker platform."
 abstract: | 

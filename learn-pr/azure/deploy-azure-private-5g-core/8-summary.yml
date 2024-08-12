@@ -2,11 +2,11 @@
 uid: learn.deploy-azure-private-5g-core.summary
 title: Summary
 metadata:
-  title: summary
-  description: Summarizes what you have learned about the deployment capabilities of Azure Private 5G Core.
-  ms.date: 01/18/2023
-  author: ArchanaUpadhyaya
-  ms.author: archanau
+  title: Summary
+  description: Summarizes what you learned about the deployment capabilities of Azure Private 5G Core.
+  ms.date: 06/24/2024
+  author: joemarshallmsft
+  ms.author: joemarshall
   ms.topic: unit
 
 durationInMinutes: 1

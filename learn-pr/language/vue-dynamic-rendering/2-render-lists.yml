@@ -3,7 +3,7 @@ uid: learn.language.vue-dynamic-rendering.2-render-lists
 metadata:
   title: Render lists
   description: In this unit, you learn how to use a directive to loop through an array of information.
-  ms.date: 03/01/2021 
+  ms.date: 01/11/2023 
   author: GeekTrainer
   ms.author: chrhar
   ms.topic: unit

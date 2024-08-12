@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.customize-dotnet-aspire-existing-resources.create-azure-resources-bicep
+title: Create Azure resources by building Bicep files
+metadata:
+  title: Create Azure resources by building Bicep files
+  description: In this unit, you'll see how to customize an Azure deployment of a .NET Aspire app by editing Bicep files.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-create-azure-resources-bicep.md)]

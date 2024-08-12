@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-governance-azure-policy.azure-policy-integration-with-aks
-title: Azure Policy and how it integrates with AKS
+title: Azure Policy and how it integrates with Azure Kubernetes Services
 metadata:
   title: Azure Policy and how it integrates with Azure Kubernetes Services
-  description: Introduction to Azure Policy and how Azure Policy integrates with Azure Kubernetes Services
-  ms.date: 01/11/2024
+  description: Introduction to Azure Policy and how Azure Policy integrates with Azure Kubernetes Services.
+  ms.date: 04/22/2024
   author: NillsF
   ms.author: nilfran
   ms.topic: unit
@@ -17,14 +17,14 @@ quiz:
       choices:
         - content: "Assign that policy to the root management group."
           isCorrect: true
-          explanation: "The root management group contains all subscriptions. By assigning a policy to the root management group, this policy applies to all subscriptions."
+          explanation: "The root management group contains all subscriptions. When you assign a policy to the root management group, this policy applies to all subscriptions."
         - content: "Create a policy initiative."
           isCorrect: false
           explanation: "A policy initiative is a way to group multiple policies together. It isn't a way to assign a policy to a scope."
         - content: "Assign the policy to the Entra tenant."
           isCorrect: false
-          explanation: "Azure policies can't be assigned to an Entra tenant. Azure policies can be assigned to management groups, subscriptions and resource groups."
-    - content: "You need to ensure that all pods created in your Kubernetes cluster have requests and limits configured, and deny pods without those from being created. How can you do this in Azure?"
+          explanation: "Azure policies can't be assigned to an Entra tenant. Azure policies can be assigned to management groups, subscriptions, and resource groups."
+    - content: "How can you use Azure to ensure that all pods created in your Kubernetes cluster have requests and limits configured, and deny pods without those configurations from being created?"
       choices:
         - content: "Use helm to create new pods in the cluster."
           isCorrect: false
@@ -32,17 +32,17 @@ quiz:
         - content: "Assign an Azure policy to the resource group of the Kubernetes cluster."
           isCorrect: true
           explanation: "There's a built-in Azure policy to deny pods without requests/limits from being created."
-        - content: "Run an automation job to every hour delete pods without requests and limits."
+        - content: "Run an automation job that deletes pods without requests and limits every hour."
           isCorrect: false
-          explanation: "This doesn't solve the problem, since pods without requests/limits still are able to be created."
-        - content: "Use RBAC in Kubernetes."
+          explanation: "Deleting doesn't solve the problem, since pods without requests/limits are still able to be created."
+        - content: "Use role-based access control (RBAC) in Kubernetes."
           isCorrect: false
-          explanation: "RBAC in Kubernetes defines who can execute certain actions in the cluster. It doesn't inspect the resources being created and does not check policy."
+          explanation: "RBAC in Kubernetes defines who can execute certain actions in the cluster. It doesn't inspect the resources being created and doesn't check policy."
     - content: "You assign the policy 'Kubernetes cluster containers should only use allowed images' to the resource group of your Kubernetes cluster. What happens to existing pods not using allowed images?"
       choices:
         - content: "Azure policy deletes the incompliant pods."
           isCorrect: false
-          explanation: "Azure policy won't delete incompliant resources. It denies new incompliant pods."
-        - content: "The pods will be marked as incompliant in Azure policy."
+          explanation: "Azure policy doesn't delete incompliant resources. It denies new incompliant pods."
+        - content: "The pods are marked as incompliant in Azure policy."
           isCorrect: true
-          explanation: "Azure policy will report incompliant pods and deny new incompliant pods from being created."
+          explanation: "Azure policy reports incompliant pods and denies new incompliant pods from being created."

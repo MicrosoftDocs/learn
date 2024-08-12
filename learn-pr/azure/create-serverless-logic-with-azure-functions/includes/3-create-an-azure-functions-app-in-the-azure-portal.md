@@ -38,7 +38,9 @@ Let's create a function app in the Azure portal. Completing this module incurs a
 
     The **Create a resource** pane appears.
 
-1. In the menu, select **Compute**, and then search for and select **Function App**. Select the **Create** button. The **Create Function App** pane appears.
+1. In the menu, search for and select **Function App**. Select the **Create** button. The **Create Function App** pane appears.
+
+1. Select the **Consumption** radio button, then select the **Select** button.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -48,17 +50,14 @@ Let's create a function app in the Azure portal. Completing this module incurs a
     | Subscription | Your Subscription |
     | Resource Group | Select the **Create new** link and enter a name for your resource group. |
     | **Instance Details** |
-    | Function App name  | Enter a globally unique app name, which becomes part of the base URL of your service. For example, you can name it **escalator-functions-xxx**, where you can replace xxx with your initials and a number. Valid characters are a-z, 0-9 and - |
-    | Do you want to deploy code or container image? | Code |
+    | Function App name  | Enter a globally unique app name, which becomes part of the base URL of your service. For example, you can name it **escalator-functions-xxx**, where you can replace xxx with your initials and a number. Valid characters are a-z, 0-9, and - |
     | Runtime stack | Node.js (which is the language we use to implement the function examples in this exercise). |
     | Version | Accept *default* |
     | Region | Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function. |
     | **Operating system** |
     | Operating System | Accept *default* |
-    | **Hosting** |
-    | Hosting options and plans | Consumption (Serverless) |
 
-1. Select **Next:Storage**. On the **Storage** tab, enter the following values for each setting.
+1. Select **Next : Storage**. On the **Storage** tab, enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |

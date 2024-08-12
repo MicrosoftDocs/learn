@@ -4,10 +4,12 @@ title: Consider uses for ingested data
 metadata:
   title: Consider uses for ingested data
   description: "Consider uses for ingested data"
-  ms.date: 01/31/2024
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-considerations.md)]

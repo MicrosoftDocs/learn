@@ -4,7 +4,7 @@ title: Exercise - Create a quantum random bit generator
 metadata:
   title: Exercise - Create a quantum random bit generator
   description: Write Q# code that generates a single random bit.
-  ms.date: 12/27/2023
+  ms.date: 01/04/2024
   author: SoniaLopezBravo
   ms.author: sonialopez
   manager: tedhudek

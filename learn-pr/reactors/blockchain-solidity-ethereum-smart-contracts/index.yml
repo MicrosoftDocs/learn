@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/24/2022
   author: danmabee
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: Write Ethereum smart contracts by using Solidity
 summary: Learn how to install and use tools that you can use to develop smart contracts.

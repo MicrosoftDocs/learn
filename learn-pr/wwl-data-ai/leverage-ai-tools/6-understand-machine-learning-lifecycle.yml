@@ -3,11 +3,13 @@ uid: learn.wwl.leverage-ai-tools.understand-machine-learning-lifecycle
 title: Understand the machine learning lifecycle
 metadata:
   title: Understand the machine learning lifecycle
-  description: "Understand the machine learning lifecycle"
-  ms.date: 01/09/2024
+  description: Understand the machine learning lifecycle
   author: Adriamen
   ms.author: rcaper
+  ms.date: 04/08/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/6-understand-machine-learning-lifecycle.md)]

@@ -3,18 +3,19 @@ uid: learn.startups.validate-idea
 metadata:
   title: Validate your startup idea with customers
   description: Explore various ways to validate your startup idea with customers. Learn about tools and strategies for testing your startup assumptions.
-  ms.date: 02/11/2022
+  ms.date: 03/19/2024
   author: ryanmesches
   ms.author: ryanmesches
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure
 title: Validate your startup idea with customers
-summary: >
+summary:
   This module shows you how to test and validate your startup idea by interviewing customers and running experiments.
 abstract: | 
   In this module, you'll:
   - Identify the value that your product creates for your customers.
   - Learn about tools that you can use to design a value proposition.
-  - Explore experiments that you can use to test assumptions that you've made about your startup.
+  - Explore experiments that you can use to test the assumptions you made about your startup.
   - See how to interview customers effectively. 
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg

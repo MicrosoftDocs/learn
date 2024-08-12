@@ -3,7 +3,7 @@ uid: learn.modernize-aspnet-framework-to-core.2-why-modernize-to-aspnet-core
 metadata:
   title: Understand the benefits of modernizing to ASP.NET Core
   description: Learn when and why to modernize an existing ASP.NET application running on .NET Framework to ASP.NET Core.
-  ms.date: 01/11/2022
+  ms.date: 06/07/2024
   author: jongalloway
   ms.author: jogallow
   ms.manager: markl
@@ -19,9 +19,9 @@ quiz:
   questions:
     - content: Which is not a reason to modernize an ASP.NET application to ASP.NET Core?
       choices:
-      - content: Run my application on a variety of platforms, including Linux, macOS, and Docker in addition to Windows.
+      - content: Run my application on various platforms, including Linux, macOS, and Docker in addition to Windows.
         isCorrect: false
-        explanation: .NET Core is built to run on a variety of platforms.
+        explanation: .NET Core is built to run on various platforms.
       - content: Faster performance and better scalability.
         isCorrect: false
         explanation: ASP.NET Core is significantly faster than ASP.NET running on .NET Framework.

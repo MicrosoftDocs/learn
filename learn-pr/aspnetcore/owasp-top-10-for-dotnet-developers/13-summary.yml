@@ -2,9 +2,9 @@
 uid: learn.owasp-top-10-for-dotnet-developers.summary
 title: Summary
 metadata:
-  title: summary
+  title: Summary
   description: "OWASP Top 10 for .NET Developers. Summary of what OWASP Top 10 means to .NET developers."
-  ms.date: 06/12/2023
+  ms.date: 05/31/2024
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: unit

@@ -34,14 +34,14 @@ Only one public IP address and one private IP address are supported. You choose 
 
 A frontend IP address is associated to a *listener*, which checks for incoming requests on the frontend IP.
 
-You can create private and public listeners with the same port number. However, be aware of any network security group (NSG) associated with the Application Gateway subnet. Depending on your NSG's configuration, you might need an allow-inbound rule with **Destination IP addresses** as your application gateway's public and private frontend IPs. When you use the same port, your application gateway changes the **Destination** of the inbound flow to the frontend IPs of your gateway.<br>
+You can create private and public listeners with the same port number. However, be aware of any network security group (NSG) associated with the Application Gateway subnet. Depending on your NSG's configuration, you might need an allow-inbound rule with Destination IP addresses as your application gateway's public and private frontend IPs. When you use the same port, your application gateway changes the **Destination** of the inbound flow to the frontend IPs of your gateway.
 
-**Inbound rule**:<br>
+**Inbound rule**:
 
- -  **Source**: According to your requirement<br>
- -  **Destination**: Public and private frontend IPs of your application gateway.
- -  **Destination port**: According to configured listeners
- -  **Protocol**: TCP
+ -  Source: According to your requirement<br>
+ -  Destination: Public and private frontend IPs of your application gateway.
+ -  Destination port: According to configured listeners
+ -  Protocol: TCP
 
 **Outbound rule**: No specific requirement
 
@@ -55,11 +55,11 @@ When you create an application gateway by using the Azure portal, you also creat
 
 A listener is a logical entity that checks for incoming connection requests. A listener accepts a request if the protocol, port, hostname, and IP address associated with the request match the same elements associated with the listener configuration.
 
-Before you use an application gateway, you must add at least one listener. There can be multiple listeners attached to an application gateway, and they can be used for the same protocol.<br>
+Before you use an application gateway, you must add at least one listener. There can be multiple listeners attached to an application gateway, and they can be used for the same protocol.
 
-After a listener detects incoming requests from clients, the application gateway routes these requests to members in the backend pool configured in the rule.<br>
+After a listener detects incoming requests from clients, the application gateway routes these requests to members in the backend pool configured in the rule.
 
-Listeners support the following ports and protocols.<br>
+Listeners support the following ports and protocols.
 
 ## Ports
 
@@ -167,7 +167,7 @@ The only exception to this are requests bound for deregistering instances becaus
 
 Application Gateway supports both HTTP and HTTPS for routing requests to the backend servers. If you choose HTTP, traffic to the backend servers is unencrypted. If unencrypted communication isn't acceptable, choose HTTPS.
 
-This setting combined with HTTPS in the listener supports end-to-end TLS. This allows you to securely transmit sensitive data encrypted to the back end. Each backend server in the backend pool that has end-to-end TLS enabled must be configured with a certificate to allow secure communication.<br>
+This setting combined with HTTPS in the listener supports end-to-end TLS. This allows you to securely transmit sensitive data encrypted to the back end. Each backend server in the backend pool that has end-to-end TLS enabled must be configured with a certificate to allow secure communication.
 
 ## Port
 
@@ -177,7 +177,7 @@ This setting specifies the port where the backend servers listen to traffic from
 
 If you select HTTPS as the backend protocol, the Application Gateway requires a trusted root certificate to trust the backend pool for end-to-end SSL. By default, the Use well known CA certificate option is set to No. If you plan to use a self-signed certificate, or a certificate signed by an internal Certificate Authority, then you must provide the Application Gateway the matching public certificate that the backend pool will be using. This certificate must be uploaded directly to the Application Gateway in .CER format.
 
-If you plan to use a certificate on the backend pool that is signed by a trusted public Certificate Authority, then you can set the Use well known CA certificate option to Yes and skip uploading a public certificate.<br>
+If you plan to use a certificate on the backend pool that is signed by a trusted public Certificate Authority, then you can set the Use well known CA certificate option to Yes and skip uploading a public certificate.
 
 ## Request timeout
 
@@ -217,11 +217,11 @@ This setting associates a custom probe with an HTTP setting. You can associate o
 
 Application Gateway allows for the connection established to the backend to use a *different* hostname than the one used by the client to connect to Application Gateway. While this configuration can be useful in some cases, overriding the hostname to be different between the client and application gateway and application gateway to backend target, should be done with care.
 
-In production, it is recommended to keep the hostname used by the client towards the application gateway as the same hostname used by the application gateway to the backend target. This avoids potential issues with absolute URLs, redirect URLs, and host-bound cookies.<br>
+In production, it is recommended to keep the hostname used by the client towards the application gateway as the same hostname used by the application gateway to the backend target. This avoids potential issues with absolute URLs, redirect URLs, and host-bound cookies.
 
-Before setting up Application Gateway that deviates from this, please review the implications of such configuration as discussed in more detail in Architecture Center: *Preserve the original HTTP host name between a reverse proxy and its backend web application.*<br>
+Before setting up Application Gateway that deviates from this, please review the implications of such configuration as discussed in more detail in Architecture Center: *Preserve the original HTTP host name between a reverse proxy and its backend web application.*
 
-There are two aspects of an HTTP setting that influence the Host HTTP header that is used by Application Gateway to connect to the backend:<br>
+There are two aspects of an HTTP setting that influence the Host HTTP header that is used by Application Gateway to connect to the backend:
 
  -  Pick host name from backend-address<br>
  -  Host name override
@@ -232,7 +232,7 @@ This capability dynamically sets the *host* header in the request to the host na
 
 This feature helps when the domain name of the back end is different from the DNS name of the application gateway, and the back end relies on a specific host header to resolve to the correct endpoint.
 
-An example case is multi-tenant services as the back end. An app service is a multi-tenant service that uses a shared space with a single IP address. So, an app service can only be accessed through the hostnames that are configured in the custom domain settings.
+An example case is multitenant services as the back end. An app service is a multitenant service that uses a shared space with a single IP address. So, an app service can only be accessed through the hostnames that are configured in the custom domain settings.
 
 By default, the custom domain name is *example.azurewebsites.net*. To access your app service by using an application gateway through a hostname that's not explicitly registered in the app service or through the application gateway's FQDN, you can override the hostname in the original request to the app service's hostname. To do this, enable the **pick host name from backend address setting**.
 
@@ -242,7 +242,7 @@ For a custom domain whose existing custom DNS name is mapped to the app service,
 
 This capability replaces the *host* header in the incoming request on the application gateway with the host name that you specify.
 
-For example, if *www.contoso.com* is specified in the **Host name** setting, the original request \*`https://appgw.eastus.cloudapp.azure.com/path1`is changed to \*`https://www.contoso.com/path1` when the request is forwarded to the backend server.<br>
+For example, if *www.contoso.com* is specified in the **Host name** setting, the original request \*`https://appgw.eastus.cloudapp.azure.com/path1`is changed to \*`https://www.contoso.com/path1` when the request is forwarded to the backend server.
 
 ## Backend pool
 
@@ -286,9 +286,9 @@ Moreover, all instances of the application gateway probe the backend servers ind
 
 An application gateway automatically configures a default health probe when you don't set up any custom probe configuration. The monitoring behavior works by making an HTTP GET request to the IP addresses or FQDN configured in the backend pool. For default probes if the backend http settings are configured for HTTPS, the probe uses HTTPS to test health of the backend servers.
 
-For example: You configure your application gateway to use backend servers A, B, and C to receive HTTP network traffic on port 80. The default health monitoring tests the three servers every 30 seconds for a healthy HTTP response with a 30-second-timeout for each request. A healthy HTTP response has a status code between 200 and 399. In this case, the HTTP GET request for the health probe looks like http://127.0.0.1/. Also see HTTP response codes in Application Gateway.<br>
+For example: You configure your application gateway to use backend servers A, B, and C to receive HTTP network traffic on port 80. The default health monitoring tests the three servers every 30 seconds for a healthy HTTP response with a 30-second-timeout for each request. A healthy HTTP response has a status code between 200 and 399. In this case, the HTTP GET request for the health probe looks like http://127.0.0.1/. Also see HTTP response codes in Application Gateway.
 
-If the default probe check fails for server A, the application gateway stops forwarding requests to this server. The default probe still continues to check for server A every 30 seconds. When server A responds successfully to one request from a default health probe, application gateway starts forwarding the requests to the server again.<br>
+If the default probe check fails for server A, the application gateway stops forwarding requests to this server. The default probe still continues to check for server A every 30 seconds. When server A responds successfully to one request from a default health probe, application gateway starts forwarding the requests to the server again.
 
 ## Default health probe settings
 
@@ -324,7 +324,7 @@ The following table provides definitions for the properties of a custom health p
 
 By default, an HTTP(S) response with status code between 200 and 399 is considered healthy. Custom health probes additionally support two matching criteria. Matching criteria can be used to optionally modify the default interpretation of what makes a healthy response.
 
-The following are matching criteria:<br>
+The following are matching criteria:
 
  -  HTTP response status code match - Probe matching criterion for accepting user specified http response code or response code ranges. Individual comma-separated response status codes or a range of status code is supported.<br>
  -  HTTP response body match - Probe matching criterion that looks at HTTP response body and matches with a user specified string. The match only looks for presence of user specified string in response body and isn't a full regular expression match. The specified match must be 4090 characters or less.
@@ -335,9 +335,19 @@ Match criteria can be specified using the `New-AzApplicationGatewayProbeHealthRe
 
 Azure PowerShell
 
-`$match = New-AzApplicationGatewayProbeHealthResponseMatch -StatusCode 200-399`
+```powershell
+$match = New-AzApplicationGatewayProbeHealthResponseMatch -StatusCode 200-399
 
-`$match = New-AzApplicationGatewayProbeHealthResponseMatch -Body "Healthy"`
+
+
+```
+
+```powershell
+$match = New-AzApplicationGatewayProbeHealthResponseMatch -Body "Healthy"
+
+
+
+```
 
 Match criteria can be attached to probe configuration using a `-Match` operator in PowerShell.
 
@@ -350,11 +360,11 @@ Match criteria can be attached to probe configuration using a `-Match` operator 
 
 Fine grain control over the Application Gateway subnet via NSG rules is possible in public preview. More details can be found here.
 
-With current functionality there are some restrictions:<br>
+With current functionality there are some restrictions:
 
-You must allow incoming Internet traffic on TCP ports 65503-65534 for the Application Gateway v1 SKU, and TCP ports 65200-65535 for the v2 SKU with the destination subnet as Any and source as GatewayManager service tag. This port range is required for Azure infrastructure communication.<br>
+You must allow incoming Internet traffic on TCP ports 65503-65534 for the Application Gateway v1 SKU, and TCP ports 65200-65535 for the v2 SKU with the destination subnet as Any and source as GatewayManager service tag. This port range is required for Azure infrastructure communication.
 
-Additionally, outbound Internet connectivity can't be blocked, and inbound traffic coming from the AzureLoadBalancer tag must be allowed.<br>
+Additionally, outbound Internet connectivity can't be blocked, and inbound traffic coming from the AzureLoadBalancer tag must be allowed.
 
 ## How an application gateway works<br>
 
@@ -368,7 +378,7 @@ Additionally, outbound Internet connectivity can't be blocked, and inbound traff
 3.  The application gateway accepts incoming traffic on one or more listeners. A listener is a logical entity that checks for connection requests. It's configured with a frontend IP address, protocol, and port number for connections from clients to the application gateway.<br>
 4.  If a web application firewall (WAF) is in use, the application gateway checks the request headers and the body, if present, against WAF rules. This action determines if the request is valid request or a security threat. If the request is valid, it's routed to the backend. If the request isn't valid and WAF is in Prevention mode, it's blocked as a security threat. If it's in Detection mode, the request is evaluated and logged, but still forwarded to the backend server.<br>
 
-Azure Application Gateway can be used as an internal application load balancer or as an internet-facing application load balancer. An internet-facing application gateway uses public IP addresses. The DNS name of an internet-facing application gateway is publicly resolvable to its public IP address. As a result, internet-facing application gateways can route client requests from the internet.<br>
+Azure Application Gateway can be used as an internal application load balancer or as an internet-facing application load balancer. An internet-facing application gateway uses public IP addresses. The DNS name of an internet-facing application gateway is publicly resolvable to its public IP address. As a result, internet-facing application gateways can route client requests from the internet.
 
 Internal application gateways use only private IP addresses. If you're using a Custom or Private DNS zone, the domain name should be internally resolvable to the private IP address of the Application Gateway. Therefore, internal load-balancers can only route requests from clients with access to a virtual network for the application gateway.
 
@@ -380,7 +390,7 @@ Based on the request routing rule, the application gateway determines whether to
 
 When the application gateway selects the backend pool, it sends the request to one of the healthy backend servers in the pool (y.y.y.y). The health of the server is determined by a health probe. If the backend pool contains multiple servers, the application gateway uses a round-robin algorithm to route the requests between healthy servers. This load balances the requests on the servers.
 
-After the application gateway determines the backend server, it opens a new TCP session with the backend server based on HTTP settings. HTTP settings specify the protocol, port, and other routing-related settings that are required to establish a new session with the backend server.<br>
+After the application gateway determines the backend server, it opens a new TCP session with the backend server based on HTTP settings. HTTP settings specify the protocol, port, and other routing-related settings that are required to establish a new session with the backend server.
 
 The port and protocol used in HTTP settings determine whether the traffic between the application gateway and backend servers is encrypted (thus accomplishing end-to-end TLS) or is unencrypted.
 
@@ -408,8 +418,8 @@ The Application Gateway retains this cached information for the period equivalen
 
 Application gateway inserts six additional headers to all requests before it forwards the requests to the backend. These headers are x-forwarded-for, x-forwarded-port, x-forwarded-proto, x-original-host, x-original-url, and x-appgw-trace-id. The format for x-forwarded-for header is a comma-separated list of IP:**port**.
 
-The valid values for x-forwarded-proto are HTTP or HTTPS. X-forwarded-port specifies the port where the request reached the application gateway. X-original-host header contains the original host header with which the request arrived. This header is useful in Azure website integration, where the incoming host header is modified before traffic is routed to the backend. If session affinity is enabled as an option, then it adds a gateway-managed affinity cookie.<br>
+The valid values for x-forwarded-proto are HTTP or HTTPS. X-forwarded-port specifies the port where the request reached the application gateway. X-original-host header contains the original host header with which the request arrived. This header is useful in Azure website integration, where the incoming host header is modified before traffic is routed to the backend. If session affinity is enabled as an option, then it adds a gateway-managed affinity cookie.
 
-X-appgw-trace-id is a unique guid generated by application gateway for each client request and presented in the forwarded request to the backend pool member. The guid consists of 32 alphanumeric characters presented without dashes (for example: ac882cd65a2712a0fe1289ec2bb6aee7). This guid can be used to correlate a request received by application gateway and initiated to a backend pool member via the transactionId property in Diagnostic Logs.<br>
+X-appgw-trace-id is a unique guid generated by application gateway for each client request and presented in the forwarded request to the backend pool member. The guid consists of 32 alphanumeric characters presented without dashes (for example: ac882cd65a2712a0fe1289ec2bb6aee7). This guid can be used to correlate a request received by application gateway and initiated to a backend pool member via the transactionId property in Diagnostic Logs.
 
 You can configure application gateway to modify request and response headers and URL by using Rewrite HTTP headers and URL or to modify the URI path by using a path-override setting. However, unless configured to do so, all incoming requests are proxied to the backend.

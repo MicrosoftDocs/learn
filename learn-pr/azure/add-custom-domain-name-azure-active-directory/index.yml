@@ -4,8 +4,8 @@ metadata:
   title: Add custom domain name to Microsoft Entra ID
   description: Learn how to add custom domain name to Microsoft Entra ID.
   ms.date: 09/22/2022
-  author: ajburnle
-  ms.author: ajburnle
+  author: amycolannino
+  ms.author: amycolannino
   ms.topic: module
   ms.service: active-directory
 title: Add custom domain name to Microsoft Entra ID

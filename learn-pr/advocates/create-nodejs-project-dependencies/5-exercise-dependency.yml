@@ -4,9 +4,9 @@ title: Exercise - Install packages
 metadata:
   title: Exercise - Install packages
   description: Exercise on how to add and remove packages in your Node.js project.
-  author: GitHubber17
-  ms.author: chnoring
-  ms.date: 05/30/2023
+  author: diberry
+  ms.author: diberry
+  ms.date: 04/19/2024
   ms.topic: unit
   ms.custom:
     - team=nextgen

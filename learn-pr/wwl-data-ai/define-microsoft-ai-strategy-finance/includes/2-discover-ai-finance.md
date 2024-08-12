@@ -2,6 +2,10 @@ A recent survey asked FSI executives about their expectations on generative AI a
 
 However, AI comprises a wide array of techniques, working in data, text, vision, speech, and so on. Accordingly, there are many more AI use cases that you can apply to your FSI business, whether you work in banking, capital markets, or insurance. Despite this complexity, the FSI industry faces some common goals and challenges.
 
+In the following video, Bill Borden shares how we can help you power your AI transformation with the Microsoft Cloud and our global network of partners. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e2aec1cb-83d4-4072-9541-d7f6c2f23480]
+
 ## Goals
 
 Most finance goals derive from the utmost confidentiality of financial data. FSI organizations need to manage data in the most responsible, careful way possible:

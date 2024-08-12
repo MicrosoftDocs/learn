@@ -16,7 +16,7 @@ To build the NVA, deploy an Ubuntu LTS instance.
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name nva \
         --vnet-name vnet \
         --subnet dmzsubnet \
@@ -33,7 +33,7 @@ In the next steps, IP forwarding for the **nva** network appliance is enabled. W
 
     ```azurecli
     NICID=$(az vm nic list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vm-name nva \
         --query "[].{id:id}" --output tsv)
 
@@ -44,7 +44,7 @@ In the next steps, IP forwarding for the **nva** network appliance is enabled. W
 
     ```azurecli
     NICNAME=$(az vm nic show \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vm-name nva \
         --nic $NICID \
         --query "{name:name}" --output tsv)
@@ -56,7 +56,7 @@ In the next steps, IP forwarding for the **nva** network appliance is enabled. W
 
     ```azurecli
     az network nic update --name $NICNAME \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --ip-forwarding true
     ```
 
@@ -66,7 +66,7 @@ In the next steps, IP forwarding for the **nva** network appliance is enabled. W
 
     ```azurecli
     NVAIP="$(az vm list-ip-addresses \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name nva \
         --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
         --output tsv)"

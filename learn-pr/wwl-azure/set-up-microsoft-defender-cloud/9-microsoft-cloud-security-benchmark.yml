@@ -4,10 +4,12 @@ title: Microsoft cloud security benchmark
 metadata:
   title: Microsoft cloud security benchmark
   description: "Microsoft cloud security benchmark"
-  ms.date: 02/23/2024
+  ms.date: 04/24/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/9-microsoft-cloud-security-benchmark.md)]

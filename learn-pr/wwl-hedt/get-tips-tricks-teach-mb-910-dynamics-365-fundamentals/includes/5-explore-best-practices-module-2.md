@@ -22,5 +22,5 @@ Module 2 Tips and Tricks
 
 Module 2 Demos
 
-- Click-through demo: [Customer insights](https://edxinteractivepage.blob.core.windows.net/edxpages/mb-910/version2/LP-MKTING-M2-CI/index.html)
-- Click-through demo: [Event management](https://edxinteractivepage.blob.core.windows.net/edxpages/mb-910/version2/LP-MKTING-M2-EVENTS/index.html) 
+- Click-through demo: [Customer insights](https://microsoftlearning.github.io/click-throughs/docs/mb-910/version2/LP-MKTING-M2-CI/index.html)
+- Click-through demo: [Event management](https://microsoftlearning.github.io/click-throughs/docs/mb-910/version2/LP-MKTING-M2-EVENTS/index.html) 

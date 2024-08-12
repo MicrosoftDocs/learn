@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-github-advanced-security.respond-to-security-alerts
-title: Responding to security alerts
+title: Understand GHAS and its role in the security ecosystem
 metadata:
   unitType: learning-content
-  title: "Responding to security alerts"
+  title: "Understand GHAS and its Role in the Security Ecosystem"
   description: "In this unit, you'll learn the importance of responding to security alerts and what that response should look like. You'll also see GitHub functionality that enables you to quickly react to these alerts." # user input: a description for site search and SEO
-  ms.date: 1/28/2022
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 3/20/2024
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 3
 content: |

@@ -3,13 +3,13 @@ uid: learn.wwl.build-first-html-webpage.knowledge-check
 title: Knowledge Check
 metadata:
   title: Knowledge Check
-  description: "Knowledge Check"
-  ms.date: 03/01/2023
+  description: "Check what you learn in this module."
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "Tag"
       isCorrect: false
-      explanation: "That answer is incorrect. A tag is one part of the overall string."
+      explanation: "Incorrect. A tag is one part of the overall string."
     - content: "Script"
       isCorrect: false
-      explanation: "That answer is incorrect. This is an example of an HTML element, not a script."
+      explanation: "Incorrect. This is an example of an HTML element, not a script."
     - content: "Element"
       isCorrect: true
       explanation: "Correct. Two tags with text in between them is an element."
@@ -31,21 +31,21 @@ quiz:
     choices:
     - content: "Enables a developer to style text"
       isCorrect: false
-      explanation: "That answer is incorrect. The style tag or a stylesheet enables styling in HTML."
+      explanation: "Incorrect. The style tag or a stylesheet enables styling in HTML."
     - content: "Creates a bulleted list"
       isCorrect: false
-      explanation: "That answer is incorrect. Bulleted lists are created by the `<ul>` tag."
+      explanation: "Incorrect. Bulleted lists are created by the `<ul>` tag."
     - content: "Allows a user to navigate to other things"
       isCorrect: true
-      explanation: "Correct. A hyperlink points to other content on your website or the internet."
-  - content: "To make a button that opens a new web page when clicked, which technology should be use?"
+      explanation: "Correct. A hyperlink points to other content on the website or the internet."
+  - content: "Which best describes the correct use of the `<li>` tag?"
     choices:
-    - content: "CSS"
+    - content: "The `<li>` tag is used for ordered list items."
       isCorrect: false
-      explanation: "That answer is incorrect. CSS is used to style content. A script is used to respond to events."
-    - content: "An \"open\" tag"
+      explanation: "Incorrect. The `<li>` is used for both ordered and unordered lists."
+    - content: "The `<li>` tag is used for unordered list items."
       isCorrect: false
-      explanation: "That answer is incorrect. An open tag is used as a part of an element when writing HTML."
-    - content: "JavaScript"
+      explanation: "Incorrect. The `<li>` is used for both ordered and unordered lists."
+    - content: "The `<li>` tag is used for both ordered and unordered list items."
       isCorrect: true
-      explanation: "Correct. JavaScript can be used to respond to events on a web page."
+      explanation: "Correct. The `<li>` is used for both ordered and unordered lists."

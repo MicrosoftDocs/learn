@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/18/2024
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -23,7 +23,7 @@ quiz:
       explanation: "Incorrect. Rules are processed according to the specified priority."
     - content: "The deny rule takes precedence."
       isCorrect: true
-      explanation: "Correct. The deny rule takes precedence. Deny rules are processed first. The rule with priority 150 is processed before the rule with priority 200."
+      explanation: "Correct. The deny rule takes precedence. The deny rule is processed first. The rule with priority 150 is processed before the rule with priority 200."
     - content: "The rule that was created first takes precedence."
       isCorrect: false
       explanation: "Incorrect. Rules are processed according to the specified priority."
@@ -41,10 +41,10 @@ quiz:
   - content: "What happens to network traffic that doesn't match any NSG rules?"
     choices:
     - content: "It's allowed by default."
-      isCorrect: true
+      isCorrect: false
       explanation: "Incorrect. Allowing traffic by default would pose a security risk."
     - content: "It's denied by default."
-      isCorrect: false
+      isCorrect: true
       explanation: "Correct. By default, network traffic that doesn't match any Network Security Group (NSG) rules is denied."
     - content: "It's postponed until the rules change."
       isCorrect: false

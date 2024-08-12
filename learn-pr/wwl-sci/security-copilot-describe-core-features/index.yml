@@ -2,31 +2,36 @@
 uid: learn.security-copilot-describe-core-features
 metadata:
   title: Describe the core features of Microsoft Copilot for Security
-  description: "Describe the core features of Microsoft Copilot for Security."
-  ms.date: 02/22/2024
+  description: Describe the core features of Microsoft Copilot for Security.
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.date: 02/22/2024
   ms.service: security-copilot
   ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Describe the core features of Microsoft Copilot for Security
 summary: |
   Microsoft Copilot for Security has a rich set of features. Learn about available plugins, promptbooks, the ways you can export and share information from Copilot, and much more.
 abstract: |
-  By the end of this module, you'll be able to:
-    - Describe the features available in the standalone experience.
-    - Describe the services to which Microsoft Copilot for Security can integrate.
+  By the end of this module, you're able to:
+  - Describe the features available in the standalone Copilot experience.
+  - Describe the plugins available in Copilot.
+  - Describe custom promptbooks.
+  - Describe knowledge base connections.
 prerequisites: |
-  - None
-iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+  - Working knowledge of security operations and incident response
+  - Working knowledge of Microsoft security products and services
+iconUrl: /learn/achievements/security-copilot-describe-core-features.svg
+hidden: false
+levels: # see level taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - security-operations-analyst
   - security-engineer
   - business-owner
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
   - defender-for-threat-intelligence
   - mdeasm
   - microsoft-sentinel
@@ -35,11 +40,12 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - microsoft-purview
   - microsoft-defender
   - ms-copilot
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - security
 units:
 - learn.security-copilot-describe-core-features.introduction
 - learn.security-copilot-describe-core-features.describe-standalone-experience
+- learn.security-copilot-describe-core-features.describe-session-features
 - learn.security-copilot-describe-core-features.describe-microsoft-plugins
 - learn.security-copilot-describe-core-features.describe-non-microsoft-plugins
 - learn.security-copilot-describe-core-features.describe-custom-promptbooks

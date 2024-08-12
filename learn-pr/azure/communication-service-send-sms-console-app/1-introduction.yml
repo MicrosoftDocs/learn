@@ -6,7 +6,7 @@ metadata:
   description: Create a console application that sends SMS messages using Azure Communication Services.
   author: softchris
   ms.author: chnoring
-  ms.date: 03/03/2021
+  ms.date: 05/30/2023
   ms.topic: unit
 durationInMinutes: 2
 content: |

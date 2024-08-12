@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-lakehouses.work-lakehouse
-title: Work with Microsoft Fabric lakehouses
+title: Work with Microsoft Fabric Lakehouses
 metadata:
-  title: Work with Microsoft Fabric lakehouses
-  description: "Work with Microsoft Fabric lakehouses"
-  ms.date: 03/01/2024
+  title: Work with Microsoft Fabric Lakehouses
+  description: "Work with Microsoft Fabric Lakehouses"
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: unit

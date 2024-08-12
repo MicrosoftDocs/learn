@@ -1,4 +1,3 @@
-
 This module explains Composition Analysis, inspecting and validating code bases for compliance, integration with security tools, and integration with Azure Pipelines.
 
 ## Learning objectives

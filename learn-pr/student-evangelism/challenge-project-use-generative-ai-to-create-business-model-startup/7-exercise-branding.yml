@@ -3,13 +3,14 @@ uid: learn.challenge-project-use-generative-ai-to-create-business-model-startup.
 title: Exercise - Branding
 metadata:
   title: Exercise - Branding
-  description: "Exercise - Branding with Microsoft Copilot"
-  ms.date: 12/4/2023
+  description: Exercise - Branding with Microsoft Copilot
   author: juliamuiruri4
   ms.author: juliamuiruri
-  ms.custom: team=nextgen
+  ms.date: 12/4/2023
   ms.topic: unit
-  ms.service: microsoft-copilot
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
 durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-branding.md)]

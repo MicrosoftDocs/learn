@@ -5,9 +5,9 @@ durationInMinutes: 3
 metadata:
   title: Knowledge check - Create a storage account
   description: Questions about storage account properties and creation.
-  ms.date: 09/24/2018
-  author: tamram
-  ms.author: tamram
+  ms.date: 08/23/2023
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
 quiz:
   title: Check your knowledge

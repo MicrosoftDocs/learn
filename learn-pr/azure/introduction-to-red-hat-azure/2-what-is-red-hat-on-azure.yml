@@ -4,11 +4,12 @@ title: What is Red Hat on Azure?
 metadata:
   unitType: learning-content
   title: What is Red Hat on Azure?
-  description: Discuss Red Hat on Azure, including Red Hat Enterprise Linux (RHEL), Azure Red Hat OpenShift (ARO), and JBoss.
+  description: Discuss Red Hat on Azure, including Red Hat Enterprise Linux (RHEL), Azure Red Hat OpenShift, and JBoss.
   ms.date: 11/07/2023
   author: yenchiho
   ms.author: yenchiho
   ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 8
 content: |
   [!include[](includes/2-what-is-red-hat-on-azure.md)]

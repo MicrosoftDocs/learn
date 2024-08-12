@@ -3,9 +3,9 @@ uid: learn.incident-response-with-alerting-on-azure.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 10/10/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 09/14/2023
+  author: AbbyMSFT
+  ms.author: abbyweisberg
   ms.topic: unit
 title: Introduction
 durationInMinutes: 2

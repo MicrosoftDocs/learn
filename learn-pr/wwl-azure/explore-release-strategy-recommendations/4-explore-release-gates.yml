@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-release-strategy-recommendations.explore-release-gates
+title: Explore release gates
+metadata:
+  title: Explore release gates
+  description: "Explore release gates"
+  ms.date: 05/21/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-explore-release-gates.md)]

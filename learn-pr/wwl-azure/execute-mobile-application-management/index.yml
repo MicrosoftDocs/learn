@@ -6,9 +6,8 @@ metadata:
   ms.date: 07/18/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.service: windows
-  ms.prod: intune
+  ms.topic: module
+  ms.service: configuration-manager
 title: Execute mobile application management
 summary: This module introduces Mobile Application Management (MAM). Students will learn about considerations for implementing MAM and will be introduced to the management of MAM using Intune and Configuration Manager.
 abstract: |

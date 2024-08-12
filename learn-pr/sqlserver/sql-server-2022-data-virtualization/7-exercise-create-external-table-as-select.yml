@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.sql-server-2022-data-virtualization.exercise-create-external-table-as-select
-title: Exercise - CREATE EXTERNAL TABLE as SELECT
+title: Exercise - CREATE EXTERNAL TABLE AS SELECT
 metadata:
-  title: Exercise - CREATE EXTERNAL TABLE as SELECT
-  description: "An exercise on using CREATE EXTERNAL TABLE as SELECT (CETAS)."
-  ms.date: 05/23/2023
+  title: Exercise - CREATE EXTERNAL TABLE AS SELECT
+  description: "An exercise on using CREATE EXTERNAL TABLE AS SELECT (CETAS)."
+  ms.date: 04/28/2024
   author: HugoMSFT
   ms.author: hudequei
   ms.topic: unit

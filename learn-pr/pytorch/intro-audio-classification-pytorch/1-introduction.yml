@@ -6,7 +6,7 @@ metadata:
   description: Learn how to do audio classification with PyTorch. There are multiple ways to build an audio classification model. You can use the waveform, tag sections of a .wav file, or even use computer vision on the spectrogram image.
   author: cassiebreviu
   ms.author: ruyakubu
-  ms.date: 04/14/2020
+  ms.date: 04/12/2021
   ms.topic: unit
   ms.custom:
   - team=nextgen

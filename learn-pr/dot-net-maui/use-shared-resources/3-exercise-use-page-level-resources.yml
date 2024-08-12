@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: "Exercise: Use page-level resources"
   description: "Create page-level resources and use them to replace repeated XAML mark-up"
-  ms.date: 10/13/2023
+  ms.date: 11/08/2023
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl

@@ -2,12 +2,12 @@
 uid: learn.wwl.describe-business-benefits-azure
 metadata:
   title: Describe the business benefits of Azure
-  description: "This module explores various business benefits of Azure, including cost-efficiency, innovation, agility, and security."
+  description: This module explores various business benefits of Azure, including cost-efficiency, innovation, agility, and security.
   ms.date: 11/07/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
-  ms.service: azure
+  ms.service: architecture-center
 title: Describe the business benefits of Azure
 summary: This module explores various business benefits of Azure, including cost-efficiency, innovation, agility, and security.
 abstract: |

@@ -424,3 +424,21 @@ groups:
       title: Microsoft 365 tenant
     - id: devproxy
       title: Simulated (Dev Proxy)
+- id: azure-resource-interaction
+  title: Azure interaction options
+  prompt: Choose how you interact with resources on Azure
+  pivots:
+    - id: azure-portal
+      title: Azure portal
+    - id: azure-cli
+      title: Azure CLI (local)
+    - id: vs-code
+      title: Visual Studio Code
+- id: microsoft-entra-external-identities-configuration-options
+  title: Configuration options
+  prompt: Select a configuration option
+  pivots:
+    - id: microsoft-entra-admin-center
+      title: Microsoft Entra admin center
+    - id: microsoft-graph-api
+      title: Microsoft Graph API

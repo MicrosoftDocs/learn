@@ -4,6 +4,7 @@ metadata:
   moduleType: choose
   title: Choose the best networking plugin for AKS
   description: "Learn how to choose between Azure CNI and kubenet, two networking plugin options for an Azure Kubernetes Service cluster."
+  manager: rayoflores
   ms.date: 03/18/2024
   author: schaffererin
   ms.author: schaffererin

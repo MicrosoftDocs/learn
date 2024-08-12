@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio.exercise-prompt-shields
+title: Exercise – Prompt shields
+metadata:
+  title: Exercise – Prompt shields
+  description: Learn how to use prompt shields to moderate content using the Azure AI Content Safety Studio.
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.date: 05/09/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-exercise-prompt-shields.md)]

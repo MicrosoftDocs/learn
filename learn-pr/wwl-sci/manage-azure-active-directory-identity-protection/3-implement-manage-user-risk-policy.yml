@@ -4,11 +4,12 @@ title: Implement and manage user risk policy
 metadata:
   title: Implement and manage user risk policy
   description: "Implement and manage user risk policy"
-  ms.date: 10/25/2023
+  ms.date: 04/03/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.service: azure
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/3-implement-manage-user-risk-policy.md)]

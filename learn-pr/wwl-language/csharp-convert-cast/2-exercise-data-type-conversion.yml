@@ -3,8 +3,8 @@ uid: learn.languages.csharp-convert-cast.exercise-data-type-conversion
 title: Exercise - Explore data type casting and conversion
 metadata:
   title: Exercise - Explore data type casting and conversion
-  description: "Exercise - Explore data type casting and conversion"
-  ms.date: 03/08/2024
+  description: "Explore different techniques that can be used for data type conversion."
+  ms.date: 07/22/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -16,15 +16,15 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which is the best technique to convert a decimal type to an int type in C#?"
+  - content: "Which is the best technique to convert by rounding a decimal type to an int type in C#?"
     choices:
-    - content: "cast"
+    - content: "Convert"
       isCorrect: true
-      explanation: "Correct. `decimal` to `int` is a narrowing conversion so `cast` is the best answer."
-    - content: "narrowing"
+      explanation: "Correct. `decimal` to `int` is a narrowing conversion so to round, `Convert` is the best answer."
+    - content: "Narrowing"
       isCorrect: false
       explanation: "Incorrect. \"Narrowing\" describes the data precision change in a conversion."
-    - content: "implicit conversion"
+    - content: "Implicit conversion"
       isCorrect: false
       explanation: "Incorrect. `decimal` to `int` is a narrowing conversion and implicit conversion can't be used because data loss is possible."
   - content: "Which of the following conversion rounds the value (versus truncate)?"

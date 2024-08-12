@@ -10,7 +10,7 @@ Microsoft Entra Conditional Access is an advanced feature of Microsoft Entra ID 
     
     :::image type="content" source="../media/conditional-access-new-policy-c60e6317.png" alt-text="Screenshot of the Conditional Access blade with New policy highlighted.":::
     
-6.  In the **Name** box, enter **Test app conditional access**. This is the name being using for this exercise, you might choose another name if you wish.
+6.  In the **Name** box, enter **Test app conditional access**. This is the name being using for this exercise, you can choose another name if you wish.
 7.  Under **Assignments**, select **Users and groups**.
 8.  On the Include tab, select the **Users and groups** check box.
 9.  In the Select pane, select your administrator account and then select **Select**.

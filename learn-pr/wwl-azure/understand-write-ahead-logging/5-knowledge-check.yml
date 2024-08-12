@@ -4,25 +4,27 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/14/2024
+  ms.date: 05/10/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Your company maintains a database system that has only light use but holds mission critical information. You've been asked to ensure that every possible step is taken to ensure business continuity in the event of all known disasters. Which compute tier should you select for your Azure Database for PostgreSQL flexible server?"
+  - content: "Your company maintains a database system that has only light use but holds mission critical information. You're asked to ensure that every possible step is taken to ensure business continuity for all known disasters. Which compute tier should you select for your Azure Database for PostgreSQL flexible server?"
     choices:
-    - content: "General Purpose"
+    - content: "General Purpose."
       isCorrect: true
       explanation: "Correct. The General Purpose computer tier provides zone redundant high availability, and is suitable for light use."
-    - content: "Burstable"
+    - content: "Burstable."
       isCorrect: false
       explanation: "Incorrect. Zone redundant high availability isn't supported with the Burstable compute tier. Zone redundant high availability maintains three copies of the server, in different zones within a region."
-    - content: "Memory optimized"
+    - content: "Memory optimized."
       isCorrect: false
       explanation: "Incorrect. The Memory optimized compute tier supports zone redundant high availability but provides more memory than your light workload requires."
   - content: "Your company maintains a busy shopping application. You want to provide near-time reporting, without affecting performance on the Azure Database for PostgreSQL server. Which option would best suit your needs?"
@@ -35,8 +37,8 @@ quiz:
       explanation: "Incorrect. Zone redundant high availability doesn't allow you to use the replicated copy for anything other than disaster recovery."
     - content: "Create a second Azure Database for PostgreSQL server and configure it as a subscriber. Configure your existing server as a publisher."
       isCorrect: true
-      explanation: "Correct. If you configure your current server as a publisher, and a second server as a subscriber will allow you to create a replica of your database onto the subscriber server. This can then be used for near-time reporting, without affecting performance."
-  - content: "Your company uses Azure Database for PostgreSQL flexible server to maintain its stock system. You want to use the contents of the write-ahead log (WAL) for auditing purposes. What is the best way of doing this?"
+      explanation: "Correct. If you configure your current server as a publisher, and a second server as a subscriber allows you to create a replica of your database onto the subscriber server. This can then be used for near-time reporting, without affecting performance."
+  - content: "Your company uses Azure Database for PostgreSQL flexible server to maintain its stock system. You want to use the contents of the write-ahead log (WAL) for auditing purposes. What is the best way of performing this task?"
     choices:
     - content: "Copy the log from **pg_wal** directory."
       isCorrect: false

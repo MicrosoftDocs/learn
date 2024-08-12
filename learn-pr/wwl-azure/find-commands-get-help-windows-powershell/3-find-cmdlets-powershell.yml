@@ -4,11 +4,12 @@ title: Find cmdlets in PowerShell
 metadata:
   title: Find cmdlets in PowerShell
   description: "Find cmdlets in PowerShell"
-  ms.date: 07/06/2023
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

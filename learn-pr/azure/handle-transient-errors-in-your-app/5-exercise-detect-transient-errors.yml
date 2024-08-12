@@ -4,7 +4,7 @@ title: Exercise - Detect transient errors in code
 metadata:
   title: Exercise - Detect transient errors in code
   description: In this hands-on lab, you'll write code in C#, Java, or Node to add exception handling.
-  ms.date: 04/10/2019
+  ms.date: 08/01/2023
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit

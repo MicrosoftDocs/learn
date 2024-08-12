@@ -3,7 +3,7 @@ uid: learn.aks-deployment-pipeline-github-actions.5-application-images
 metadata:
   title: Understand application images
   description: Understand concepts about containerized application images and tags to deploy a cloud-native application by using GitHub Actions.
-  ms.date: 10/08/2020
+  ms.date: 01/08/2023
   author: nickomang
   ms.author: nickoman
   ms.topic: unit

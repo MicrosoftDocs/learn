@@ -1,4 +1,4 @@
-Connecting hybrid cloud and multicloud environments to Microsoft Defender for Cloud is crucial to maintain a unified security posture across diverse IT landscapes. With Azure Arc enabled servers for non-Azure machines, the Naive Cloud Connector, and the Classic Connector, you can extend the capabilities of Microsoft Defender for Cloud to non-Azure resources. This integration empowers you to monitor, detect, and respond to security threats comprehensively. Here, we provide an informative overview of the process, along with detailed requirements for a successful connection.
+Connecting hybrid cloud and multicloud environments to Microsoft Defender for Cloud is crucial to maintain a unified security posture across diverse IT landscapes. With Azure Arc enabled servers for non-Azure machines, the Native Cloud Connector, and the Classic Connector, you can extend the capabilities of Microsoft Defender for Cloud to non-Azure resources. This integration empowers you to monitor, detect, and respond to security threats comprehensively. Here, we provide an informative overview of the process, along with detailed requirements for a successful connection.
 
 ## Connect your non-Azure machines to Microsoft Defender for Cloud
 
@@ -45,15 +45,15 @@ To complete the procedures in this article, you need:
 
 If you choose the Microsoft Defender for Containers plan, you need:
 
- -  At least one Amazon EKS cluster with permission to access to the EKS Kubernetes API server. If you need to create a new EKS cluster, follow the instructions in Getting started with Amazon EKS – eksctl.
- -  The resource capacity to create a new Amazon SQS queue, Kinesis Data Firehose delivery stream, and Amazon S3 bucket in the cluster's region.
+ -  At least one Amazon EKS cluster with permission to access to the EKS Kubernetes API server.
+ -  The resource capacity to create a new Amazon Simple Queue Service (SQS) queue, Kinesis Data Firehose delivery stream, and Amazon S3 bucket in the cluster's region.
 
 ### Defender for SQL
 
 If you choose the Microsoft Defender for SQL plan, you need:
 
  -  Microsoft Defender for SQL enabled on your subscription. Learn how to protect your databases.
- -  An active AWS account, with EC2 instances running SQL Server or RDS Custom for SQL Server.
+ -  An active AWS account, with EC2 instances running SQL Server or Relational Database Service (RDS) Custom for SQL Server.
  -  Azure Arc for servers installed on your EC2 instances or RDS Custom for SQL Server.
 
 We recommend that you use the auto provisioning process to install Azure Arc on all of your existing and future EC2 instances. To enable the Azure Arc auto provisioning, you need Owner permission on the relevant Azure subscription.
@@ -65,7 +65,7 @@ Ensure that your SSM Agent has the managed policy AmazonSSMManagedInstanceCore. 
 Enable these other extensions on the Azure Arc-connected machines:
 
  -  Microsoft Defender for Endpoint
- -  A vulnerability assessment solution (TVM or Qualys)
+ -  A vulnerability assessment solution (Threat and Vulnerability Management or Qualys)
  -  The Log Analytics agent on Azure Arc-connected machines or the Azure Monitor agent
 
 Make sure the selected Log Analytics workspace has a security solution installed. The Log Analytics agent and the Azure Monitor agent are currently configured at the subscription level. All of your AWS accounts and Google Cloud Platform (GCP) projects under the same subscription inherit the subscription settings for the Log Analytics agent and the Azure Monitor agent.
@@ -92,7 +92,7 @@ If you want to manually install Azure Arc on your existing and future EC2 instan
 Enable these other extensions on the Azure Arc-connected machines:
 
  -  Microsoft Defender for Endpoint
- -  A vulnerability assessment solution (TVM or Qualys)
+ -  A vulnerability assessment solution (Threat and Vulnerability Management or Qualys)
  -  The Log Analytics agent on Azure Arc-connected machines or the Azure Monitor agent
 
 Make sure the selected Log Analytics workspace has a security solution installed. The Log Analytics agent and the Azure Monitor agent are currently configured at the subscription level. All of your AWS accounts and GCP projects under the same subscription inherit the subscription settings for the Log Analytics agent and the Azure Monitor agent.
@@ -101,9 +101,9 @@ Defender for Servers assigns tags to your AWS resources to manage the auto provi
 
 ### Defender CSPM
 
-If you choose the Microsoft Defender CSPM plan, you need:
+If you choose the Microsoft Defender Cloud Security Posture Management plan, you need:
 
- -  a Microsoft Azure subscription. If you don't have an Azure subscription, you can sign up for a free subscription.
+ -  An Azure subscription. If you don't have an Azure subscription, you can sign up for a free subscription.
  -  You must enable Microsoft Defender for Cloud on your Azure subscription.
  -  Connect your non-Azure machines, AWS accounts.
- -  In order to gain access to all of the features available from the CSPM plan, the plan must be enabled by the **Subscription Owner**.
+ -  In order to gain access to all of the features available from the CSPM plan, the plan must be enabled by the Subscription Owner.

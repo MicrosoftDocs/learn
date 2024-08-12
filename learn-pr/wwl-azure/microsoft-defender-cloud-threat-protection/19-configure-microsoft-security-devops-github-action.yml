@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.configure-microsoft-security-devops-github-action
+title: Configure the Microsoft Security DevOps GitHub action
+metadata:
+  title: Configure the Microsoft Security DevOps GitHub action
+  description: "Configure the Microsoft Security DevOps GitHub action"
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 3
+content: |
+  [!include[](includes/19-configure-microsoft-security-devops-github-action.md)]

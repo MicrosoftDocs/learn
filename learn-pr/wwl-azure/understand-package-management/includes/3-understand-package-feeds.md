@@ -1,4 +1,3 @@
-
 Packages should be stored in a centralized place for distribution and consumption to take dependencies on the components it contains.
 
 The centralized storage for packages is commonly called a `package feed`. There are other names in use, such as repository or registry.

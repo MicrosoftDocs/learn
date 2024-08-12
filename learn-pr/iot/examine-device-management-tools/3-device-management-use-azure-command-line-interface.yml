@@ -8,6 +8,7 @@ metadata:
   author: kgremban
   ms.author: kgremban
   ms.topic: unit
+  ms.custom: devx-track-azurecli
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

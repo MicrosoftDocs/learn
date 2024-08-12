@@ -2,16 +2,17 @@
 uid: learn.languages.csharp-convert-cast
 metadata:
   title: Convert data types using casting and conversion techniques in C#
-  description: "Convert data types using casting and conversion techniques in C#"
-  ms.date: 03/08/2024
+  description: "Explore using C# techniques for casts and conversions."
+  ms.date: 07/22/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: azure
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
   ms.devlang: csharp
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Convert data types using casting and conversion techniques in C#
 summary: Take control of the data in your applications, knowing when to apply the correct technique to change data types as needed.
 abstract: |
@@ -21,7 +22,7 @@ abstract: |
 
   -   Guard against the loss of data when performing a cast or conversion operation.
 
-  -   Use the `TryParse()` method to safely convert a string into a numeric data type.
+  -   Use the TryParse() method to safely convert a string into a numeric data type.
 prerequisites: |
   -   Experience using data types like string, int, decimal, float, and so on
 

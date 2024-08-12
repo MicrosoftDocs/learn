@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/09/2023
+  ms.date: 04/23/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
@@ -30,7 +30,7 @@ quiz:
     - content: "Endpoint detection and response capabilities"
       isCorrect: false
       explanation: "Incorrect. This feature provides near real-time actionable advance attack detections, enable security analysts to effectively prioritize alerts, unfold the full scope of a breach and take response actions to remediate the threat. Try again."
-    - content: "the Secure score dashboard"
+    - content: "The Secure score dashboard"
       isCorrect: true
       explanation: "Correct. The Secure score dashboard expands your visibility into the overall security posture of your organization. From this dashboard, can assess the security posture of your organization, see machines that require attention, as well as recommendations for actions to further reduce the attack surface in your organization. From there you can take action based on the recommended configuration baselines."
     - content: "Auto investigation and remediation"

@@ -1,4 +1,3 @@
-
 Azure Pipelines can automatically build and validate every pull request and commit to your Azure Repos Git repository.
 
 Azure Pipelines can be used with Azure DevOps public projects and Azure DevOps private projects.

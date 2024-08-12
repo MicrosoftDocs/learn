@@ -36,15 +36,18 @@ An OpenAPI definition file is a JSON file that lists the API's methods, paramete
 1. Add the following code to the **Configure** method:
 
    ```c#
-   // Enable middleware to serve generated Swagger as a JSON endpoint.
-   app.UseSwagger();
-
-   // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
-   // specifying the Swagger JSON endpoint.
-   app.UseSwaggerUI(c =>
+   if (env.IsDevelopment())
    {
-      c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-   });
+      // Enable middleware to serve generated Swagger as a JSON endpoint.
+      app.UseSwagger();
+
+      // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
+      // specifying the Swagger JSON endpoint.
+      app.UseSwaggerUI(c =>
+      {
+         c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+      });
+   }
    ```
 
    At deployment, this code installs the Swagger UI, which is a web page you can use to test your Web API methods. The code also generates and publishes a JSON file that describes your API and is compliant with the OpenAPI standard. You can download and use the JSON file to create a custom connector in Azure Logic Apps.

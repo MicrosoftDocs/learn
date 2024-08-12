@@ -1,0 +1,126 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-github-copilot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: cahowd
+  ms.date: 07/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is one of the main benefits that developers gain by using GitHub Copilot?"
+    choices:
+    - content: "GitHub Copilot includes organizational license management, policy management, and IP indemnity."
+      isCorrect: false
+      explanation: "Incorrect. These features of the business and enterprise plans benefit organizations rather than individual developers."
+    - content: "GitHub Copilot increases developer productivity and enables them to focus on more satisfying work."
+      isCorrect: true
+      explanation: "Correct. Developers benefit from the increased productivity and satisfaction provided by GitHub Copilot."
+    - content: "GitHub Copilot allows individual developers to control who can use GitHub Copilot in their company."
+      isCorrect: false
+      explanation: "Incorrect. This feature of the GitHub Copilot Business and Enterprise plans is a benefit for administrators rather than developers."
+  - content: "Which of the following items describes the primary function of the GitHub Copilot extension for Visual Studio Code?"
+    choices:
+    - content: "It's a tool for managing GitHub repositories."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot doesn't manage repositories, it provides autocomplete-style suggestions as code is entered."
+    - content: "It's an AI pair programmer that provides autocomplete-style suggestions as code is entered."
+      isCorrect: true
+      explanation: "Correct. GitHub Copilot is an AI pair programmer that provides autocomplete-style suggestions as code and comments are entered."
+    - content: "It's a tool for debugging code."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot doesn't debug code, it provides autocomplete-style suggestions as code is entered."
+  - content: "Which of the following items describes the options for managing the autocomplete suggestions provided by GitHub Copilot?"
+    choices:
+    - content: "There are three options. Developers can accept the suggestion in full, partially accept the suggestion, or cycle through alternative suggestions."
+      isCorrect: true
+      explanation: "Correct. Developers can accept the suggestion in full, partially accept the suggestion, or cycle through alternative suggestions. Developers can reject the suggestion, but there is not user interface option to Discard an autocompletion suggestion."
+    - content: "There are two options. Developers can accept the suggestion in full, or they can discard the suggestion."
+      isCorrect: false
+      explanation: "Incorrect. In addition to accepting or rejecting, developers can also partially accept the suggestion or cycle through alternative suggestions."
+    - content: "There is one option. Developers can accept the suggestion in full."
+      isCorrect: false
+      explanation: "Incorrect. Developers can accept the suggestion in full, partially accept the suggestion, or cycle through alternative suggestions."
+  - content: "What can a developer do if they aren't satisfied with the initial autocomplete suggestions provided by GitHub Copilot?"
+    choices:
+    - content: "They can view multiple other suggestions in a new Code Editor tab."
+      isCorrect: true
+      explanation: "Correct. Developers can view multiple other suggestions in a new Code Editor tab."
+    - content: "They can only accept or reject the initial suggestions."
+      isCorrect: false
+      explanation: "Incorrect. In addition to accepting or rejecting the initial suggestions, developers can also view multiple other suggestions in a new Code Editor tab."
+    - content: "They can only reject the initial suggestions and start typing the code again."
+      isCorrect: false
+      explanation: "Incorrect. In addition to rejecting the initial suggestions and start typing the code again, developers can also view multiple other suggestions in a new Code Editor tab."
+  - content: "What is the purpose of the @workspace chat participant in GitHub Copilot Chat?"
+    choices:
+    - content: "It helps with commands and features in the Visual Studio Code editor itself."
+      isCorrect: false
+      explanation: "Incorrect. The @workspace chat participant doesn't provide assistance with Visual Studio Code commands and features."
+    - content: "It focuses GitHub Copilot on your workspace, helping it to find relevant files and file content."
+      isCorrect: true
+      explanation: "Correct. The @workspace chat participant provides context about the code in your workspace."
+    - content: "It provides information about the integrated terminal shell and its contents."
+      isCorrect: false
+      explanation: "Incorrect. The @workspace chat participant is not responsible for providing information about the terminal shell."
+  - content: "How does GitHub Copilot Chat assist in generating unit test cases?"
+    choices:
+    - content: "It generates test cases based on the user's personal coding style."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot Chat doesn't generate test cases based on the user's personal coding style."
+    - content: "It manually identifies edge cases and boundary conditions for testing."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot Chat doesn't manually identify edge cases and boundary conditions."
+    - content: "It generates code snippets based on the code in the editor or the code selected in the editor."
+      isCorrect: true
+      explanation: "Correct. GitHub Copilot Chat generates code snippets based on the code in the editor or the code selected in the editor."
+  - content: "What is the role of chat variables in GitHub Copilot Chat?"
+    choices:
+    - content: "They're used to add emojis and other visual elements to the chat."
+      isCorrect: false
+      explanation: "Incorrect. Chat variables aren't used for adding emojis or other visual elements to the chat."
+    - content: "They're used to format the chat interface."
+      isCorrect: false
+      explanation: "Incorrect. Chat variables aren't used for formatting the chat interface."
+    - content: "They provide domain-specific context that can be referenced in your chat prompt."
+      isCorrect: true
+      explanation: "Correct. Chat variables provide domain-specific context that can be referenced in your chat prompt."
+  - content: "What does the GitHub Copilot status icon indicate in Visual Studio Code?"
+    choices:
+    - content: "It indicates the number of errors in the code."
+      isCorrect: false
+      explanation: "Incorrect. The GitHub Copilot status icon doesn't show the number of errors in the code."
+    - content: "It shows the current version of GitHub Copilot installed."
+      isCorrect: false
+      explanation: "Incorrect. The GitHub Copilot status icon doesn't display the current version of the extension."
+    - content: "It indicates whether GitHub Copilot is enabled or disabled."
+      isCorrect: true
+      explanation: "Correct. The GitHub Copilot status icon changes color to indicate if the extension is enabled or disabled."
+  - content: "How can developers customize the settings for GitHub Copilot and Copilot Chat in Visual Studio Code?"
+    choices:
+    - content: "By contacting GitHub support to request changes."
+      isCorrect: false
+      explanation: "Incorrect. GitHub support doesn't handle individual customization requests for the extensions."
+    - content: "By modifying the source code of the extensions."
+      isCorrect: false
+      explanation: "Incorrect. Modifying the source code is not a recommended way to customize the settings."
+    - content: "By accessing the settings through Visual Studio Code's `Manage` icon or the GitHub Copilot status icon."
+      isCorrect: true
+      explanation: "Correct. The settings for GitHub Copilot and Copilot Chat can be accessed and customized through Visual Studio Code's `Manage` icon or the GitHub Copilot status icon."
+  - content: "What is the default setting for GitHub Copilot with respect to language support?"
+    choices:
+    - content: "By default, GitHub Copilot is enabled for all languages."
+      isCorrect: true
+      explanation: "Correct. The default setting enables GitHub Copilot for all languages."
+    - content: "GitHub Copilot is disabled for all languages by default."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot is not disabled for all languages by default."
+    - content: "GitHub Copilot only supports JavaScript, Python, and C# by default."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot supports more than just JavaScript, Python, and C# by default."

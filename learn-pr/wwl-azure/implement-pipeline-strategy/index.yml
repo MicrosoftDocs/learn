@@ -1,21 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-pipeline-strategy
 metadata:
-  title: Implement a pipeline strategy
+  title: Design and implement a pipeline strategy
   description: "Implement a pipeline strategy"
-  ms.date: 05/17/2022
+  ms.date: 05/26/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-title: Implement a pipeline strategy
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Design and implement a pipeline strategy
 summary: This module describes pipeline strategies, configuring them, implementing multi-agent builds, and what source controls Azure Pipelines supports.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Define a build strategy
-  - Explain and configure demands
-  - Implement multi-agent builds
-  - Use different source control types available in Azure Pipelines
-prerequisites: ""
+  By the end of this module, you're able to:
+
+  -   Define a build strategy
+
+  -   Explain and configure demands
+
+  -   Implement multi-agent builds
+
+  -   Use different source control types available in Azure Pipelines
+prerequisites: None
 iconUrl: /training/achievements/5-implement-a-pipeline-strategy.svg
 levels:
 - advanced
@@ -41,7 +49,11 @@ products:
 units:
 - learn.wwl.implement-pipeline-strategy.introduction
 - learn.wwl.implement-pipeline-strategy.configure-agent-demands
-- learn.wwl.implement-pipeline-strategy.implement-multi-agent-builds
+- learn.wwl.implement-pipeline-strategy.explore-multi-configuration-multi-agent
+- learn.wwl.implement-pipeline-strategy.integrate-github-repos-azure-pipelines
+- learn.wwl.implement-pipeline-strategy.design-implement-comprehensive-test-strategy
+- learn.wwl.implement-pipeline-strategy.implement-code-coverage-show-pipeline
+- learn.wwl.implement-pipeline-strategy.implement-multi-job-builds
 - learn.wwl.implement-pipeline-strategy.explore-source-control-types-supported-by-azure-pipelines
 - learn.wwl.implement-pipeline-strategy.knowledge-check
 - learn.wwl.implement-pipeline-strategy.summary

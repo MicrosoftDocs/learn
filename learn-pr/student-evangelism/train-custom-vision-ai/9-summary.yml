@@ -3,10 +3,12 @@ uid: learn.student-evangelism.train-custom-vision-ai.9-summary
 metadata:
   title: Summary
   description: This unit wraps up the Custom Vision module for the *Over the Moon* learning path.
-  ms.date: 03/10/2021
   author: softchris
   ms.author: chnoring
+  ms.date: 03/10/2021
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Summary
 durationInMinutes: 2

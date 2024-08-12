@@ -4,10 +4,12 @@ title: Exercise - Plan your code using methods
 metadata:
   title: Exercise - Plan your code using methods
   description: "Exercise - Plan your code using methods"
-  ms.date: 02/16/2024
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/3-exercise-plan-use-methods.md)]

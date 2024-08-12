@@ -11,7 +11,7 @@ In this unit, you set up the resources that you use throughout this module. Envi
     ```bash
     export ADMINLOGIN='[ServerAdmin]'
     export PASSWORD='[password]'
-    export SERVERNAME=server$RANDOM
+    export SERVERNAME=[server-name]
     export RESOURCEGROUP=<rgn>[sandbox resource group name]</rgn>
     export LOCATION=$(az group show --name $RESOURCEGROUP | jq -r '.location')
     ```
@@ -95,13 +95,13 @@ Create the Linux VM that to use through some examples.
 1. Finish things by installing mssql-tools on the Linux VM so you can connect to your database through sqlcmd.
 
     ```bash
-    echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
-    echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
+    echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >> ~/.bash_profile
+    echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >> ~/.bashrc
     source ~/.bashrc
-    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
-    curl https://packages.microsoft.com/config/ubuntu/22.10/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
+    curl https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc
+    curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
     sudo apt-get update
-    sudo ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev
+    sudo ACCEPT_EULA=Y apt-get install -y mssql-tools18 unixodbc-dev
     ```
 
     > [!NOTE]

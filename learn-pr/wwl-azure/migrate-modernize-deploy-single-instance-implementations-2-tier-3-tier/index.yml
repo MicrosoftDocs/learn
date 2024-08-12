@@ -2,12 +2,12 @@
 uid: learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier
 metadata:
   title: Modernize and deploy single-instance implementations of SAP on Azure (2-tier and 3-tier)
-  description: "This module explores the preparation for single-instance SAP HANA deployment on Azure. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
+  description: 'This module explores the preparation for single-instance SAP HANA deployment on Azure. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/09/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.service: azure
+  ms.service: sap-on-azure
 title: Modernize and deploy single-instance implementations of SAP on Azure (2-tier and 3-tier)
 summary: SAP professionals need to evaluate deploying SAP solutions on Azure. This module explores the preparation for single-instance SAP HANA deployment on Azure.
 abstract: |

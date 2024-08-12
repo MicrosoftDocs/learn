@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/14/2022
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: rust
 title: Test conditions with if/else expressions in Rust

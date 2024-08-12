@@ -6,7 +6,7 @@ The main takeaways from this module are:
 - Azure Policy is a powerful service in Azure that enables you to enforce rules and ensure compliance with corporate standards and service level agreements.
 - Management groups provide a way to efficiently manage access, policies, and compliance across multiple subscriptions, allowing for unified policy and access management.
 - Creating policy definitions and initiative definitions allows you to define conventions for resources and control the scope of policies, ensuring resource compliance.
-- The Compliance feature in Azure Policy helps you determine the state of your resources and evaluate whether they're compliant or not.
+- The Compliance feature in Azure Policy helps you determine the compliance state of your resources and evaluate whether they're compliant or compliant.
 
 ## Learn more with Azure documentation
 

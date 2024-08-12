@@ -4,11 +4,13 @@ uid: learn.philanthropies.introduction-to-ai-for-trainers
 metadata:
   title: Tailoring trainings with AI
   description: This module explores the dynamic integration of artificial intelligence (AI) in education.
-  ms.date: 01/24/2024
   author: yoosunee
   ms.author: andreapark
-  ms.topic: module-standard-task-based
+  ms.date: 01/24/2024
   ms.service: artificial-intelligence
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Tailoring trainings with AI
 summary: This module explores the dynamic integration of artificial intelligence (AI) in education.
 
@@ -17,7 +19,7 @@ abstract: |
   - Recognize how AI is being applied in an educational context. 
   - Compare the use of AI-powered software in enhancing learning engagement and determine its impact on the learning process.
 
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/tailoring-trainings-with-ai.svg
 levels:
 - beginner
 roles:

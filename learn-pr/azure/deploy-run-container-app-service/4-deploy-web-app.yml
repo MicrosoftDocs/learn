@@ -4,7 +4,7 @@ title: Deploy a web app by using an image from an Azure Container Registry repos
 metadata:
   title: Deploy a web app by using an image from an Azure Container Registry repository
   description: Learn how to create a web app based on a Docker image that's held in an Azure Container Registry repository.
-  ms.date: 03/28/2019
+  ms.date: 04/27/2023
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: unit

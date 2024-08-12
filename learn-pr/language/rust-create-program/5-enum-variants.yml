@@ -3,7 +3,7 @@ uid: learn.language.rust-create-program.5-enum-variants
 metadata:
   title: Use enum variants for compound data
   description: Explore how to use enum variants to work with compound data in Rust.
-  ms.date: 09/20/2021
+  ms.date: 12/05/2022
   author: GitHubber17
   ms.author: chnoring
   ms.topic: unit

@@ -2,24 +2,28 @@
 uid: learn.wwl.security-monitoring-automation-solutions
 metadata:
   title: Configure and manage security monitoring and automation solutions
-  description: "Configure and manage security monitoring and automation solutions"
-  ms.date: 02/21/2024
+  description: "Learn to set up Azure Monitor and Microsoft Sentinel for automatic security monitoring and response in cloud settings."
+  ms.date: 04/26/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
   ms.custom:
   - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Configure and manage security monitoring and automation solutions
 summary: This module teaches how to set up and manage security tools with Azure Monitor and Microsoft Sentinel. It helps organizations quickly find and deal with security issues in their cloud setup.
 abstract: |
   By the end of this module, participants are able to:
+
   -   Use Azure Monitor for effective security event monitoring in cloud environments.
+
   -   Implement data connectors in Microsoft Sentinel for comprehensive security data collection.
+
   -   Develop customized analytics rules in Microsoft Sentinel for targeted threat detection.
+
   -   Assess and automate responses to security incidents in Microsoft Sentinel to enhance workflow efficiency.
-prerequisites: |
-  None
+prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -36,6 +40,7 @@ units:
 - learn.wwl.security-monitoring-automation-solutions.azure-monitor-activity-log
 - learn.wwl.security-monitoring-automation-solutions.microsoft-sentinel-data-connectors
 - learn.wwl.security-monitoring-automation-solutions.create-custom-analytics-rules-detect-threats
+- learn.wwl.security-monitoring-automation-solutions.evaluate-alerts-and-incidents
 - learn.wwl.security-monitoring-automation-solutions.respond-threats-by-using-playbooks-with-automation-rules-microsoft-sentinel
 - learn.wwl.security-monitoring-automation-solutions.knowledge-check
 - learn.wwl.security-monitoring-automation-solutions.summary

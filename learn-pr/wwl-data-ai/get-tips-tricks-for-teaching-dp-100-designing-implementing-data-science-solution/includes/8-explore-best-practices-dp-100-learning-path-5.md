@@ -1,29 +1,35 @@
 
 
-DP-100: Learning Path 5 Use no-code machine learning with the Azure Machine Learning designer
 
-Learning Path 5 Overview
+DP-100: Learning path 5 Find the best model with Automated Machine Learning
 
-As you begin to teach this learning path, get familiar with what the students will learn during the learning path. In this learning path students will learn about using no-code machine learning, the Azure Machine Learning designer.
+Learning path 5 Overview
 
-This learning path consists of two modules:
+As you begin to teach this learning path, get familiar with what the students will learn during the learning path. In this learning path students will learn about automated machine learning and how to use it to train, evaluate, and deploy machine learning models without writing any code.
 
-- Module 1 – Explore data with the Azure Machine Learning designer
-- Module 2 – Train and compare models with the Azure Machine Learning designer
+This learning path consists of four focus areas:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14vIj]
+- Explore Automate Machine Learning
+- Find the best classification model with Automated Machine Learning
+- Emphasize when to use AutoML 
+- Make learners aware that AutoML supports supervised learning techniques
 
-Learning Path 5 Tips and Tricks
 
-- Describe a story to illustrate the importance of clean data
-- This is a revisit to Azure Machine Learning designer that was explained earlier in learning path 2
-- Explain some of the built-in components
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c8db93c4-5df9-411a-8b92-b1002276a3a9]
 
-Learning Path 5 Demos (optional)
+Learning path 5 Tips and Tricks
 
-- Define a workflow on Azure Machine Learning designer
-- Show the built-in components and custom component capability
+- Use a poll to ask if there are citizen data scientists in the learners group
+- Emphasize the importance and efficiency of AutoML
+- Discuss various supported tasks
+- Review the best model in Azure Machine Learning studio
+
+Learning path 5 Demos (optional)
+
+- Configure and set an AutoML classification task with the Python SDK 
+- Show the various configuration and featurization options
+
 
 Learning Path 5 Lab
 
-- [Lab 5.1: Train a model with the Azure Machine Learning designer](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/05-Designer-train-model.html)  
+- [Lab 5.1: Find the best classification model with Automated Machine Learning](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/06-AutoML-classification-model.html)  

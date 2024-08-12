@@ -3,11 +3,13 @@ uid: learn.wwl.classify-images-custom-vision.exercise
 title: Exercise - Explore image classification
 metadata:
   title: Exercise - Explore image classification
-  description: "Exercise - Explore image classification"
-  ms.date: 08/22/2023
+  description: Exercise - Explore image classification
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 08/22/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 25
 content: |
   [!include[](includes/3-create-image-classifier.md)]

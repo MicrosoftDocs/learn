@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/14/2024
+  ms.date: 08/12/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -16,36 +16,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An expert suggests using a pool of training data that has been gathered from observations of human workers performing tasks and making decisions. What is an unintended consequence that must be anticipated?"
+  - content: "Which if the following capabilities of Azure Machine Learning can help mitigate bias issues related to the principle of fairness?"
     choices:
-    - content: "The transparent nature of AI results in decreased intelligibility concerning performance-based decision making."
+    - content: "Models can be trained using data that is stored securely in cloud data stores."
       isCorrect: false
-      explanation: "Incorrect. One of the established guiding principles for AI is a commitment to transparency, which increases the intelligibility for stakeholders."
-    - content: "AI can replicate human biases and prejudices that result in the unfair treatment of people of a particular race or gender."
+      explanation: "Incorrect. Data security is an important part of Responsible AI but is a challenge or risk for the Privacy and Security principle."
+    - content: "Models can be analyzed to quantify the impact of individual data features on predictions."
       isCorrect: true
-      explanation: "Correct. This is a definite concern as this problem has already been encountered with AI simply replicating the biases exemplified by the human workers it was modeled to learn from."
-    - content: "AI has no level of accountability; thus, poor qualitative decisions can occur without any sense of recourse."
+      explanation: "Correct. Fairness addresses the challenge or risk bias can affect results."
+    - content: "Models can be deployed as containerized services in Microsoft Azure."
       isCorrect: false
-      explanation: "Incorrect. Accountability is one of the six guiding principles set forth by Microsoft to guide AI deployment and use."
-  - content: "Why is explainability such an important aspect of responsible AI in the financial services industry?"
+      explanation: "Incorrect. While you can deploy a model as a containerized service in Microsoft Azure, it doesn't help mitigate bias."
+  - content: "How should you establish a responsible AI governance system?"
     choices:
-    - content: "Explainability increases a customer's product usage."
+    - content: "Appoint a Chief Ethics Officer with sole responsibility for devising and enforcing responsible AI principles."
       isCorrect: false
-      explanation: "Incorrect. While this is true, the goal of explainable AI solutions is to mitigate customer uncertainty, not simply increase engagement with AI systems."
-    - content: "Financial service institutions are more likely to identify mistakes made by AI if they can articulate how it's operating."
+      explanation: "Incorrect. A Chief Ethics Officer can centralize decision-making but should allow for shared responsibility of AI governance."
+    - content: "Allow employees to follow their own instincts and trust them to make ethical decisions."
       isCorrect: false
-      explanation: "Incorrect. While this is true, the goal of explainable AI solutions is to mitigate customer uncertainty, not simply identify mistakes."
-    - content: "Many customers are concerned with the risks of AI or feel that it’s advancing too quickly, and they don’t understand the potential risks."
+      explanation: "Incorrect. It's recommended that a responsible AI governance system utilize a Chief Ethics Officer, Ethics office, or Ethics committee for designing company-wide responsible AI measures."
+    - content: "Take an approach that combines centralized and decentralized governance and works best for your organization."
       isCorrect: true
-      explanation: "Correct. Being able to explain how AI systems function can mitigate customer uncertainty and build trust."
-  - content: "An engineering team wants to develop a new tool that lets users convert their facial expressions into an animated creature. Before they launch their tool, they plan on testing it extensively with users from around the world. Which guiding principle(s) is/are most relevant?"
+      explanation: "Correct. Three common governance approaches include utilizing a Chief Ethics Officer, Ethics office, or Ethics committee. These approaches represent centralized, decentralized, and hybrid approaches to governance."
+  - content: "Which action should your responsible AI governance leadership take?"
     choices:
-    - content: "Fairness and inclusivity."
+    - content: "Create and share assets to help employees understand and adopt responsible AI principles."
       isCorrect: true
-      explanation: "Correct. The guiding principle of fairness dictates that AI systems should behave the same way for everyone. The guiding principle of inclusivity dictates that AI tools do not exclude people."
-    - content: "Reliability and safety."
+      explanation: "Correct. Employees need guidance to learn responsible AI principles and incorporate them into their work."
+    - content: "Remove all access to IT systems and update access only to employees based on the Chief Ethics Officer's individual approval."
       isCorrect: false
-      explanation: "Incorrect. The guiding principles of reliability and safety are more relevant in scenarios where AI systems could cause harm."
-    - content: "Privacy and security."
+      explanation: "Incorrect. An AI governance plan works best when the focus is on developing tools for compliance rather than complete software restriction."
+    - content: "Replace all employee smartphones with secure laptop devices that are capable of running the latest AI models."
       isCorrect: false
-      explanation: "Incorrect. The guiding principles of privacy and security should definitely be considerations in this scenario, but testing the tool on a diverse group of users does not address privacy and security concerns."
+      explanation: "Incorrect. A centralized AI inventory of AI models is a better way to optimize resources and prioritize efforts than having each employee manage their own AI models."

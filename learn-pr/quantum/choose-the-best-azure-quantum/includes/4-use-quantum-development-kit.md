@@ -1,18 +1,20 @@
 The Azure Quantum Development Kit (QDK) extension for Visual Studio Code allows you to create and run your programs in a local development environment. You can also connect to your Azure Quantum workspace and run your programs on the quantum computers and simulators of the providers you selected for your workspace.
 
-## Prerequisites
+## Install the required tools
 
-- Install [Visual Studio Code](https://code.visualstudio.com/) or open [VS Code for the Web](https://vscode.dev/quantum).
-- Install the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) (Modern QDK) VS Code extension.
-- If you want to run your programs on real hardware, you also need:
+1. Install [Visual Studio Code](https://code.visualstudio.com/) or open [VS Code for the Web](https://vscode.dev/quantum).
+2. Install the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) (Modern QDK) VS Code extension.
+3. If you want to run your programs on real hardware, you also need:
 
     - An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=academic-15963-cxa) before you begin.
     - An Azure Quantum workspace.
 
     > [!TIP]
-    > If you have an Azure Quantum workspace, you can benefit from **free $500 USD** in Azure Quantum Credits when you submit your Q# programs to Azure Quantum.
+    > If you have an Azure Quantum workspace, you can benefit from **USD500 free** in Azure Quantum Credits when you submit your Q# programs to Azure Quantum.
 
 ## Create and run a Q# program in Visual Studio Code
+
+The QDK includes a set of Q# samples that you can use to learn more about Q# and quantum computing. To view the samples, open a new Q# file and type `sample`, then select the sample you want to view from the list of options.
 
 1. Open Visual Studio Code and select **File** > **New Text File** to create a new file.
 1. Save the file as `RandomNum.qs`. This file will contain the Q# code for your program.
@@ -41,13 +43,10 @@ The Azure Quantum Development Kit (QDK) extension for Visual Studio Code allows 
     }
     ```
 
-> [!TIP]
-> The Modern QDK includes a set of Q# samples that you can use to learn more about Q# and quantum computing. To view the samples, open a new Q# file and type `sample`, then select the sample you want to view from the list of options.
-
 ### Explore the Q# code
 
-1. Hover over `H` operation to see a short summary of the definition. 
-1. Place your cursor in front of the `H` operation, right-click and select **Go to Definition**.  This opens a read-only view of the standard library code for the function.
+1. Hover over the `H` operation to see a short summary of the definition. 
+1. Place your cursor in front of the `H` operation, right-click, and select **Go to Definition**.  This opens a read-only view of the standard library code for the function.
 
 ### Run the program locally
 
@@ -70,10 +69,10 @@ If you have an Azure Quantum workspace, you can connect to it from VS Code and s
 
 ## Extra - Create an Azure Quantum notebook
 
-The Modern QDK allows you to create Azure Quantum notebooks in VS Code. Azure Quantum notebooks are Jupyter notebooks that allow you to run quantum programs on the quantum computers and simulators of the providers you selected for your Azure Quantum workspace.
+The QDK allows you to create Azure Quantum notebooks in VS Code. Azure Quantum notebooks are Jupyter notebooks that allow you to run quantum programs on the quantum computers and simulators of the providers you selected for your Azure Quantum workspace.
 
 To create an Azure Quantum notebook:
 
-1. In VS Code open the **View** menu, and select **Command Palette**.
+1. In VS Code, open the **View** menu and select **Command Palette**.
 1. Type **Q#: Create an Azure Quantum notebook**.
 1. A Jupyter Notebook opens in a new tab. The notebook includes a code cell that imports the required packages for the sample, connects to the Azure Quantum service, and runs a Q# program.

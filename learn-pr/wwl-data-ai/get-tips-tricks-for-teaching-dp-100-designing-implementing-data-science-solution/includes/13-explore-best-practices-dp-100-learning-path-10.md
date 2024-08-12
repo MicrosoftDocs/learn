@@ -1,28 +1,34 @@
 
 
-DP-100: Learning Path 10 Manage and review models in Azure Machine Learning
 
-Learning Path 10 Overview
+DP-100: Learning path 10 Deploy and consuming models with Azure Machine Learning.
 
-As you begin to teach this learning path, get familiar with what the students will learn during the learning path. In this learning path students will begin managing and learning how to review models in Azure Machine Learning.
+Learning path 10 overview
 
-This learning path consists of two modules:
+As you begin to teach this learning path, get familiar with what the students learn during the learning path. In this learning path student, build on their learning about how models are designed to help decision-making through predictions and learn how to deploy the models both in real time inferencing and batch inferencing.
 
-- Module 1 – Register an MLflow model in Azure Machine Learning
-- Module 2 – Manage and compare models in Azure Machine Learning
+This learning path consists of three focus areas:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14QwY]
+- Deploy a model to a managed online endpoint
+- Deploy a model to a batch endpoint
+- Explain what is new in the concepts of endpoint
 
-Learning Path 10 Tips and Tricks
+ 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cf480106-33f2-4359-a00f-b1d9f5bd268d]
 
-- Combine your discussion with model performance basics
-- Provide a broader talk about Model registries
+Learning path 10 tips and tricks
 
-Learning Path 10 Demo (optional)
+- Highlight examples for each scenario
+- Describe the pros and cons for each approach
+- Explain how the representational state transfer (REST) API works and where students might have seen it previously
 
-- Responsible AI dashboard
+Learning path 10 demos (optional)
 
-Learning Path 10 Labs
+- Inference pipeline
+- Iterative process structure
+- Endpoint Health status
+
+Learning path 10 labs
 
 - [Lab 10.1: Log and register models with MLflow](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/10-Log-mlflow-models.html)
-- [Lab 10.2: Compare and evaluate models](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/10-Compare-models.html)
+- [Lab 10.2: Deploy a model to a batch endpoint](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/11-Deploy-batch-endpoint.html)

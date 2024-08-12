@@ -2,11 +2,12 @@
 uid: learn.wwl.understand-concepts-of-data-analytics
 metadata:
   title: Understand concepts of data analytics
-  description: "Explore key concepts of data analytics, including types of analytics, data, and storage. Explore the analytics process and tools used to discover insights."
+  description: Explore key concepts of data analytics, including types of analytics, data, and storage. Explore the analytics process and tools used to discover insights.
   ms.date: 10/27/2022
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
+  ms.author: anrudduc
+  ms.topic: module
+  ms.service: azure
 title: Understand concepts of data analytics
 summary: Explore key concepts of data analytics, including types of analytics, data, and storage. Explore the analytics process and tools used to discover insights.
 abstract: |

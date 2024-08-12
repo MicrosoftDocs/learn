@@ -1,8 +1,8 @@
-Now that you have a basic understanding of the core SDN concepts, you want to explore the architecture and characteristics of Network Controller. You’re aware of the significance of Network Controller as the foundational component of the Azure Stack HCI SDN control plane. Now, you’re interested in the technologies that form the basis of its resiliency. You also want more information about its management capabilities.
+Now that you have a basic understanding of the core software defined networking (SDN) concepts, you want to explore the architecture and characteristics of Network Controller. You’re aware of the significance of Network Controller as the foundational component of the Azure Stack HCI SDN control plane. Now, you want to know more about the technologies that form the basis of its resiliency. You also want more information about its management capabilities.
 
 ## What is Network Controller?
 
-Network Controller is the core component of the SDN implementation in Azure Stack HCI. It’s included as an optional part of the Azure Stack HCI cluster creation process. You can also install it later. It serves as the primary interface for communication between management applications, such as Windows Admin Center and VMM, and the managed network devices and services. Network Controller is also responsible for policy-based configuration and monitoring, which help ensure that the SDN environment deploys required resources and adjusts their characteristics to adhere to the rules that you define.
+Network Controller is the core component of the SDN implementation in Azure Stack HCI. Included as an optional part of the Azure Stack HCI cluster creation process, you can also install it later. It serves as the primary interface for communication between management applications, such as Windows Admin Center and Virtual Machine Monitor (VMM), and the managed network devices and services. Network Controller is also responsible for policy-based configuration and monitoring, which help ensure that the SDN environment deploys required resources and adjusts their characteristics to adhere to the rules that you define.
 
 ### What is Network Controller architecture?
 
@@ -26,9 +26,9 @@ Network Controller offers the following management features:
 - RAS Gateway management. Deployment, configuration, and management of virtual gateway devices that provide the following functionality:
 
   - Site-to-Site VPN connectivity between remote tenant networks and your datacenter by using encrypted IPsec tunnels.
-  - Site-to-Site VPN connectivity between remote tenant networks and your datacenter by using GRE tunnels.
+  - Site-to-Site VPN connectivity between remote tenant networks and your datacenter by using Generic Routing Encapsulation (GRE) tunnels.
   - Layer 3 forwarding connectivity to the physical network infrastructure in the local datacenter.
-  - Border Gateway Protocol (BGP) route exchange between your tenants' VM networks and their remote sites.
+  - Border Gateway Protocol (BGP) route exchange between your tenants' virtual machine (VM) networks and their remote sites.
 
 - Virtual appliance management. Bring third-party virtual appliances such as firewalls, intrusion detection devices, and load balancers and attach them to SDN virtual networks for advanced services.
 

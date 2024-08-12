@@ -1,7 +1,7 @@
 The Azure CLI is a cross-platform command-line tool for connecting to Azure and
 running administrative commands on Azure resources. You can use it to run commands through a terminal by using interactive command-line prompts or a script.
 
-For interactive use, you first open a shell such as:
+For interactive use, first open a shell, such as:
 
 - PowerShell on Windows, Linux, or macOS.
 - `Cmd.exe` on Windows.

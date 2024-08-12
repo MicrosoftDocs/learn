@@ -5,9 +5,9 @@ metadata:
   unitType: exercise
   title: Exercise - Remove commit history 
   description: Test your knowledge on removing a commit from the git history of a repository. It is automatically graded via a workflow after you complete the instructions.
-  ms.date: 02/02/2024
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 05/03/2024
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 20
 content: |

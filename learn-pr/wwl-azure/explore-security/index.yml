@@ -2,12 +2,12 @@
 uid: learn.wwl.explore-security
 metadata:
   title: Explore security
-  description: "Explore security"
+  description: Explore security
   ms.date: 02/06/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
-  ms.service: azure
+  ms.service: architecture-center
 title: Explore security
 summary: Surveys computer security and how people and computers are identified on computer networks. It surveys historical and modern security features.
 abstract: |

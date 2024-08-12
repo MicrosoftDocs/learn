@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-polyglot-notebooks.what-is-polyglot-notebook
+title: What is Polyglot Notebook?
+metadata:
+  title: What is Polyglot Notebook?
+  description: TBD
+  author: japhletnwamu
+  ms.author: japhletnwamu
+  ms.date: 04/03/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=cloud_advocates
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-what-is-polyglot-notebook.md)]

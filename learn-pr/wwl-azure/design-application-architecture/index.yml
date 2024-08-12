@@ -2,7 +2,7 @@
 uid: learn.wwl.design-application-architecture
 metadata:
   title: Design an application architecture
-  description: "Design an application architecture"
+  description: Design an application architecture
   ms.date: 02/28/2024
   author: wwlpublish
   ms.author: cynthist
@@ -10,6 +10,7 @@ metadata:
   ms.custom:
   - N/A
   ai-usage: human-only
+  ms.service: azure
 title: Design an application architecture
 summary: Azure Architects design and recommend application architectures.
 abstract: |

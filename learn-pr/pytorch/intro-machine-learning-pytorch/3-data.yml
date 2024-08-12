@@ -6,7 +6,7 @@ metadata:
   description: Code for processing data samples can get messy and hard to maintain; we ideally want our dataset code to be decoupled from our model training code for better readability and modularity.
   author: cassiebreviu
   ms.author: ruyakubu
-  ms.date: 04/14/2020
+  ms.date: 08/05/2023
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates

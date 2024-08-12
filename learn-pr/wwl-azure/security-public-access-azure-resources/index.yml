@@ -3,7 +3,7 @@ uid: learn.wwl.security-public-access-azure-resources
 metadata:
   title: Plan and implement security for public access to Azure resources
   description: "Plan and implement security for public access to Azure resources"
-  ms.date: 03/12/2024
+  ms.date: 06/25/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -14,13 +14,13 @@ metadata:
 title: Plan and implement security for public access to Azure resources
 summary: This module empowers admins to plan and implement strong security for Azure resources, ensuring app/service confidentiality, integrity, and availability.
 abstract: |
-  - Develop strategies for secure public access to Azure resources, preventing unauthorized access and breaches.
+  -   Develop strategies for secure public access to Azure resources, preventing unauthorized access and breaches.
 
-  - Implement TLS for Azure App Service and API Management to encrypt data in transit.
+  -   Implement TLS for Azure App Service and API Management to encrypt data in transit.
 
-  - Protect network traffic with Azure Firewall and Application Gateway for optimized web application security and delivery.
+  -   Protect network traffic with Azure Firewall and Application Gateway for optimized web application security and delivery.
 
-  - Enhance web app performance with Azure Front Door and CDN, and deploy WAF and DDoS Protection for robust defense against attacks.
+  -   Enhance web app performance with Azure Front Door and CDN, and deploy WAF and DDoS Protection for robust defense against attacks.
 prerequisites: '-   None'
 iconUrl: /training/achievements/generic-badge.svg
 levels:

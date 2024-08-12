@@ -12,4 +12,3 @@ For more information about Azure Bicep, see [Bicep language for deploying Azure 
 ## Next steps
 
 In the next unit, you'll find out various ways to install Bicep and set up your development environment.
-

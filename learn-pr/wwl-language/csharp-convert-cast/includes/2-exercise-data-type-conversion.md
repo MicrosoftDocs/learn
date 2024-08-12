@@ -229,11 +229,11 @@ If you're unsure whether you lose data in the conversion, write code to perform 
 
 1. Save your code file, and then use Visual Studio Code to run your code.
 
-    You should see the following output:
+    You should see output similar to:
 
     ```Output
     Decimal: 1.23456789
-    Float:   1.234568
+    Float  : 1.2345679
     ```
 
     You can observe from the output that casting a `decimal` into a `float` is a narrowing conversion because you're losing precision.
@@ -350,7 +350,7 @@ The following example demonstrates what happens when you attempt to cast a `deci
 
 ### Casting truncates and converting rounds
 
-When you're casting `int value = (int)1.5m;`, the value of the float is truncated so the result is `1`, meaning the value after the decimal is ignored completely. you could change the literal float to `1.999m` and the result of casting would be the same.
+When you're casting `int value = (int)1.5m;`, the value of the float is truncated so the result is `1`, meaning the value after the decimal is ignored completely. You could change the literal float to `1.999m` and the result of casting would be the same.
 
 When you're converting using `Convert.ToInt32()`, the literal float value is properly rounded up to `2`. If you changed the literal value to `1.499m`, it would be rounded down to `1`.
 

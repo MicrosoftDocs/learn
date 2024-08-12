@@ -4,12 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/25/2022
+  ms.date: 04/01/2024
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/16-knowledge-check.md)]
@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: "Provision student labs individually"
       isCorrect: false
-      explanation: "Incorrect. For labs requiring extra provisioning, instructors can begin with a demonstration of how to set up the lab environment. Then, instructors can move on to discussing principals. This step allows time for the lab provisioning to take place and makes effective use of instructional time."
+      explanation: "Incorrect. For labs requiring more provisioning, instructors can begin with a demonstration of how to set up the lab environment. Then, instructors can move on to discussing principals. This allows time for the lab provisioning to take place and makes effective use of instructional time."
     - content: "Begin with a demonstration of how to set up the lab environment"
       isCorrect: true
-      explanation: "Correct. For labs requiring extra provisioning, instructors can begin with a demonstration of how to set up the lab environment. Then, instructors can move on to discussing principals. This step allows time for the lab provisioning to take place and makes effective use of instructional time."
-    - content: "Provision labs following module instructional time"
+      explanation: "Correct. For labs requiring more provisioning, instructors can begin with a demonstration of how to set up the lab environment. Then, instructors can move on to discussing principals. This allows time for the lab provisioning to take place and makes effective use of instructional time."
+    - content: "Provision labs following learning path instructional time"
       isCorrect: false
-      explanation: "Incorrect. For labs requiring extra provisioning, instructors can begin with a demonstration of how to set up the lab environment. Then, instructors can move on to discussing principals. This step allows time for the lab provisioning to take place and makes effective use of instructional time."
+      explanation: "Incorrect. For labs requiring more provisioning, instructors can begin with a demonstration of how to set up the lab environment. Then, instructors can move on to discussing principals. This allows time for the lab provisioning to take place and makes effective use of instructional time."
   - content: "Which teaching tool is great for giving students a visual representation of topics in the AZ-104: Microsoft Azure Administrator course?"
     choices:
     - content: "The Textbook"
@@ -42,10 +42,10 @@ quiz:
     choices:
     - content: "Accessibility Tools"
       isCorrect: false
-      explanation: "Incorrect. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. By walking students through the labs with the instructor first, students will be able to solidify concepts when completing labs on their own."
+      explanation: "Incorrect. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. By walking through the labs with the instructor first, students are able to solidify concepts when completing labs on their own."
     - content: "Instructor-led lab experiences"
       isCorrect: true
-      explanation: "Correct. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. By walking students through the labs with the instructor first, students will be able to solidify concepts when completing labs on their own."
+      explanation: "Correct. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. By walking through the labs with the instructor first, students are able to solidify concepts when completing labs on their own."
     - content: "Azure Blog"
       isCorrect: false
-      explanation: "Incorrect. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. By walking students through the labs with the instructor first, students will be able to solidify concepts when completing labs on their own."
+      explanation: "Incorrect. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. By walking through the labs with the instructor first, students are able to solidify concepts when completing labs on their own."

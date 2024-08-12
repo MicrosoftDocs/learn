@@ -3,7 +3,7 @@ uid: learn.orleans-build-first-app
 metadata:
   title: Build your first Orleans app with ASP.NET Core 8.0
   description: Learn how to build cloud-native, distributed apps with Orleans.
-  ms.date: 10/11/2023
+  ms.date: 04/05/2024
   author: alexwolfmsft
   ms.author: alexwolf
   ms.topic: module-build-your-first
@@ -12,11 +12,11 @@ metadata:
 title: Build your first Orleans app with ASP.NET Core 8.0
 summary: Learn how to build cloud-native, distributed apps with Orleans.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Create and set up a project to use Orleans
-  - Work with core Orleans components such as grains and silo
-  - Integrate Orleans into web service endpoints
-  - Persist and manage state with Orleans
+  By the end of this module, you're able to:
+  - Use Orleans to create and set up a project.
+  - Work with core Orleans components such as grains and silo.
+  - Integrate Orleans into web service endpoints.
+  - Persist and manage state with Orleans.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner

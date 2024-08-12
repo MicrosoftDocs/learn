@@ -2,7 +2,7 @@
 uid: learn.wwl.guided-project-azure-files-azure-blobs
 metadata:
   title: Guided Project - Azure Files and Azure Blobs
-  description: "Guided Project - Azure Files and Azure Blobs"
+  description: Guided Project - Azure Files and Azure Blobs
   ms.date: 02/28/2024
   author: wwlpublish
   ms.author: cynthist
@@ -10,6 +10,7 @@ metadata:
   ms.custom:
   - N/A
   ai-usage: human-only
+  ms.service: azure
 title: Guided Project - Azure Files and Azure Blobs
 summary: In this module, you practice storing business data securely by using Azure Blob Storage and Azure Files. The lab combines both learning and hands-on practice.
 abstract: |

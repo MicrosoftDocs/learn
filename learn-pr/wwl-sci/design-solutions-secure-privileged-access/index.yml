@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   - Experience with hybrid and cloud implementations.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/design-solutions-secure-privileged-access.svg
 levels:
 - advanced
 roles:
@@ -43,6 +43,8 @@ units:
 - learn.wwl.design-solutions-secure-privileged-access.design-solution-secure-tenant-administration
 - learn.wwl.design-solutions-secure-privileged-access.design-solution-cloud-infrastructure-entitlement-management
 - learn.wwl.design-solutions-secure-privileged-access.design-solution-privileged-access-workstations-bastion-services
+- learn.wwl.design-solutions-secure-privileged-access.evaluate-access-review-management-solution
+- learn.wwl.design-solutions-secure-privileged-acces.evaluate-security-active-directory-domain-services
 - learn.wwl.design-solutions-secure-privileged-access.knowledge-check
 - learn.wwl.design-solutions-secure-privileged-access.summary
 badge:

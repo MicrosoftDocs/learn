@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: unit
-  ms.service: azure
 durationInMinutes: 30
 content: |
   [!include[](includes/8-exercise-configure-geo-replication.md)]

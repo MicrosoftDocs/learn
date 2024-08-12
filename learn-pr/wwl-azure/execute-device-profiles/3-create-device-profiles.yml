@@ -4,10 +4,12 @@ title: Create device profiles
 metadata:
   title: Create device profiles
   description: "This unit covers the process to create device profiles."
-  ms.date: 07/24/2023
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/3-create-device-profiles.md)]

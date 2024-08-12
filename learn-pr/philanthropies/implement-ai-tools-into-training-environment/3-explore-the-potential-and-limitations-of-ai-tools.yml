@@ -4,10 +4,12 @@ title: Explore the potential and limitations of AI tools
 metadata:
   title: Explore the potential and limitations of AI tools
   description: This content is a part of the 'Implement AI tools into a training environment' module.
-  ms.date: 03/11/2024
   author: yoosunee
   ms.author: andreapark
+  ms.date: 03/11/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/3-explore-the-potential-and-limitations-of-ai-tools.md)]

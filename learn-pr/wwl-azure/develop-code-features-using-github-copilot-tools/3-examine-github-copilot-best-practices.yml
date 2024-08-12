@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-code-features-using-github-copilot-tools.examine-github-copilot-best-practices
+title: Examine GitHub Copilot best practices
+metadata:
+  title: Examine GitHub Copilot best practices
+  description: Examine GitHub Copilot best practices
+  author: wwlpublish
+  ms.author: cahowd
+  ms.date: 07/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-examine-github-copilot-best-practices.md)]

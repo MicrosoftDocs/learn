@@ -3,23 +3,32 @@ uid: learn.wwl.introduction-to-azure-app-service
 metadata:
   title: Explore Azure App Service
   description: "Learn about the key components of Azure App Service and how App Service can help you create, maintain, and deploy web apps more efficiently."
-  ms.date: 04/24/2023
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
   ms.service: app-service
+  ai-usage: human-only
 title: Explore Azure App Service
 summary: Learn about the key components of Azure App Service and how App Service can help you create, maintain, and deploy web apps more efficiently.
 abstract: |
   After completing this module, you'll be able to:
-  * Describe Azure App Service key components and value.
-  * Explain how Azure App Service manages authentication and authorization.
-  * Identify methods to control inbound and outbound traffic to your web app.
-  * Deploy an app to App Service using Azure CLI commands.
+
+  -   Describe Azure App Service key components and value.
+
+  -   Explain how Azure App Service manages authentication and authorization.
+
+  -   Identify methods to control inbound and outbound traffic to your web app.
+
+  -   Deploy an app to App Service using Azure CLI commands.
 prerequisites: |
-  * You should be familiar with developer concepts and terminology.
-  * An understanding of cloud computing and some experience with the Azure portal.
-  * To complete the exercise in this module you will need an Azure account with an active subscription. [Create an account for free.](https://azure.microsoft.com/free/dotnet)
+  -   You should be familiar with developer concepts and terminology.
+
+  -   An understanding of cloud computing and some experience with the Azure portal.
+
+  -   To complete the exercise in this module you will need an Azure account with an active subscription. [Create an account for free.](https://azure.microsoft.com/free/dotnet)
 iconUrl: /training/achievements/azure-app-introduction.svg
 levels:
 - intermediate

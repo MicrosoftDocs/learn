@@ -4,10 +4,12 @@ title: Exercise - Complete the challenge to create a reusable method
 metadata:
   title: Exercise - Complete the challenge to create a reusable method
   description: "Exercise - Complete the challenge to create a reusable method"
-  ms.date: 02/16/2024
+  ms.date: 06/24/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-challenge-restructure-code-to-use-methods.md)]

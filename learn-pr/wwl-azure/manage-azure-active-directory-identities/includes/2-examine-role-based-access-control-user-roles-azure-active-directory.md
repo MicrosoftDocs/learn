@@ -1,5 +1,3 @@
-
-
 Microsoft Entra ID has a SaaS operational model and lacks support for computer objects and management capabilities via Group Policy settings. Therefore, the delegation model within Microsoft Entra ID is considerably simpler than the same model in AD DS. There are several built-in roles in all three tiers, including Global Administrator, Billing Administrator, Service Administrator, User Administrator, and Password Administrator. Each role provides different levels of directory-wide permissions to its objects. By default, the Account Administrator of the subscription hosting the Microsoft Entra instance is assigned as the Global Administrator, with full permissions to all objects in their directory instance. The Service Administrator, however, has more limited permissions and isn't the same as the Global Administrator by default.
 
 In Microsoft Entra ID, using the delegation model, you can delegate permissions to applications, allowing them to act on behalf of users and groups. The depth and breadth of these delegation capabilities vary based on the Microsoft Entra edition. With Microsoft Entra ID Free, you can assign applications to both users and groups. The Microsoft Entra ID P1 edition enhances this by offering more advanced assignment capabilities, such as dynamic group membership based on user attributes. The Premium P2 edition builds upon this by introducing features like self-service group management, where users can create and manage their own groups, and Privileged Identity Management (PIM), which is part of the suite of Identity Governance tools, allowing users to elevate their privileges temporarily.
@@ -51,3 +49,4 @@ Within Microsoft Entra ID, you can configure users with the following roles:
  -  **User**. This is a default role that doesn't provide any administrative rights.
 
 These roles are applicable to management tools such as the Microsoft 365 and Intune portals, or the Azure AD module for Windows PowerShell cmdlets. When you’re using Privileged Identity Management, you can also configure the Security reader and Security administrator roles.
+

@@ -3,11 +3,13 @@ uid: learn.wwl.fundamentals-azure-ai-services.exercise
 title: Exercise - Explore Azure AI Services
 metadata:
   title: Exercise - Explore Azure AI Services
-  description: "Exercise - Explore Azure AI Services"
-  ms.date: 12/05/2023
+  description: Exercise - Explore Azure AI Services
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 12/05/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise.md)]

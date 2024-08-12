@@ -4,10 +4,12 @@ title: Understand the delivery cadence and three types of triggers
 metadata:
   title: Understand the delivery cadence and three types of triggers
   description: "Understand the delivery cadence and three types of triggers"
-  ms.date: 06/28/2023
+  ms.date: 05/21/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/2-understand-delivery-cadence-three-types-of-triggers.md)]

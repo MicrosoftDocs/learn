@@ -3,7 +3,7 @@ uid: learn.aks-network-design-azure-container-network-interface.7-exercise-deplo
 metadata:
   title: Exercise - Deploy an Azure Kubernetes Service cluster with Azure CNI
   description: Exercise - Deploy an Azure kubernetes service cluster with Azure CNI
-  ms.date: 10/31/2023
+  ms.date: 02/15/2024
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli

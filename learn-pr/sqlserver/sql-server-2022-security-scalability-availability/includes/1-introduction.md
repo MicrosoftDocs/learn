@@ -12,11 +12,11 @@ SQL Server provides security capabilities to protect your data through authentic
 
 :::image type="content" source="../media/security-enhancements.png" alt-text="Diagram of the SQL Server 2022 security enhancements.":::
 
-In the following units, we'll go over:
+In the following units, we go over:
 
-- How you can attest that your data hasn't been tampered with and use the auditing capabilities of ledger.
-- The Always Encrypted additions to SQL Server 2022 to support confidential queries.
-- The added built-in server roles to provide more granular permissions for specific tasks.
+- How you can use the auditing capabilities of ledger to attest that your data wasn't tampered with.
+- How the Always Encrypted additions to SQL Server 2022 support confidential queries.
+- How the added built-in server roles provide more granular permissions for specific tasks.
 - How you can apply UNMASK permissions at the database, schema, table, or column level to control and limit unauthorized access to data stored in the database.
 
 ## Scalability
@@ -26,7 +26,7 @@ SQL Server has a proven track record to provide scalability without requiring ap
 - Improvements to the performance of buffer pool scan operations on large-memory machines.
 - System page latch concurrency enhancements that apply to all user databases, and especially benefits `tempdb` heavy workloads
 
-This is not an exhaustive list of the scalability enhancements in SQL Server 2022, but we go over some of the key improvements in this area to help you scale your workloads.
+This list of the scalability enhancements in SQL Server 2022 isn't exhaustive, but we go over some of the key improvements in this area to help you scale your workloads.
 
 ## Availability
 
@@ -38,7 +38,7 @@ Ensuring SQL Server is highly available and your data is protected from disaster
 
 ## Learning objectives
 
-At the end of this module, you will be able to:
+At the end of this module, you're able to:
 
 - Describe what ledger for SQL Server is, and use ledger tables to enhance your auditing capabilities.
 - Be familiar with the security feature enhancements, like the added granular fixed server roles, Always Encrypted enhancements, strict connection encryption, and granular UNMASK permissions for dynamic data masking.

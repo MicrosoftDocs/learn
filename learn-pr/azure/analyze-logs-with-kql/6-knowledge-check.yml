@@ -5,14 +5,14 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "Knowledge check for the information presented in this module."
-  ms.date: 08/08/2022
+  ms.date: 02/11/2024
   author: guywi-ms
   ms.author: guywild
   ms.topic: unit
 durationInMinutes: 2
 ###########################################################################
 ###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
 ###  - Questions are complete sentences ending with a question mark
 ###  - No true/false questions
 ###  - 3 answers per question

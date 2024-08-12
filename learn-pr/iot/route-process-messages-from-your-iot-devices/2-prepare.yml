@@ -10,7 +10,6 @@ metadata:
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: unit
-  ms.service: iot-hub
   sandbox: true
   interactive: bash
 durationInMinutes: 12

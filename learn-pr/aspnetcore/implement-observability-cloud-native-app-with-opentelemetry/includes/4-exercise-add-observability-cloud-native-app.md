@@ -8,12 +8,14 @@ To use a codespace, create a preconfigured GitHub codespace with this [Codespace
 
 This step takes several minutes while GitHub creates and configures the codespace. After the process is finished, you see the code files for the exercise. The code used for the rest of this module is in the */dotnet-observability* directory.
 
-To use Visual Studio Code:
+To use **Visual Studio Code**, clone the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your local machine. Then:
 
-1. Make sure Docker is running. In a new Visual Studio Code window, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
-1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
-1. Select your forked repository. Visual Studio Code creates your development container locally.
-
+1. Install any [system requiements](https://code.visualstudio.com/docs/devcontainers/containers) to run Dev Container in Visual Studio Code.
+1. Make sure Docker is running. 
+1. In a new Visual Studio Code window open the folder of the cloned repository
+1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
+1. Search: **>Dev Containers: Rebuild and Reopen in Container**
+1. Select **eShopLite - dotnet-observability** from the drop down. Visual Studio Code creates your development container locally.
 ### Add a diagnostic project to the solution
 
 The first step to adding observability to the **:::no-loc text="eShopLite":::** app is to introduce a new diagnostic project to the solution. This project contains all the OpenTelemetry packages and configurations that you'll use to add observability to the app.

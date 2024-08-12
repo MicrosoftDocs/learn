@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-call-methods.return-values-input-parameters
-title: Exercise - Return values and input parameters of methods
+title: Exercise - Return values and parameters of methods
 metadata:
-  title: Exercise - Return values and input parameters of methods
-  description: "Exercise - Return values and input parameters of methods"
-  ms.date: 02/22/2024
+  title: Exercise - Return values and parameters of methods
+  description: "Exercise - Return values and parameters of methods"
+  ms.date: 06/05/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
@@ -27,15 +27,15 @@ quiz:
     - content: "It's a string value."
       isCorrect: false
       explanation: "Incorrect. A return value could be a string, but it could also be an int32, a float, a custom type, or something else."
-  - content: "What are input parameters?"
+  - content: "What are method parameters?"
     choices:
-    - content: "Value types (or variables) inside a method."
+    - content: "Variables that are used inside a method."
       isCorrect: true
-      explanation: "Correct! This is the correct definition of an input parameter."
+      explanation: "Correct! Method parameters are variables used inside the method. The method definition specifies the names and types of any parameters that are required. When a caller invokes the method, the calling statement provides concrete values, called arguments, for each parameter."
     - content: "Values returned by a method."
       isCorrect: false
-      explanation: "Incorrect. Input values are passed into a method, not returned from a method."
-    - content: "The values passed into a method in the calling statement."
+      explanation: "Incorrect. The term \"return value\" does not refer to one or more method parameters."
+    - content: "Variables that are passed into a method by the calling statement."
       isCorrect: false
       explanation: "Incorrect. The values passed to a method in the calling statement are referred to as arguments."
   - content: "What is an overloaded method?"

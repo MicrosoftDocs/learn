@@ -4,10 +4,10 @@ title: Create Kusto (KQL) queries
 metadata:
   title: Create Kusto (KQL) queries
   description: "Create Kusto (KQL) queries and quickly retrieve and consolidate your monitoring data."
-  ms.date: 02/28/2023
+  ms.date: 05/19/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-durationInMinutes: 9
+durationInMinutes: 6
 content: |
   [!include[](includes/4-visualize-data.md)]

@@ -3,7 +3,7 @@ uid: learn.aks-deployment-pipeline-github-actions.6-exercise-build-staging-image
 metadata:
   title: Exercise - Build the application image
   description: Start your GitHub Actions pipeline by building the application image and automatically deploying the image to Azure Container Registry.
-  ms.date: 10/08/2020
+  ms.date: 01/08/2023
   author: nickomang
   ms.author: nickoman
   ms.topic: unit

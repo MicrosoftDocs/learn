@@ -2,9 +2,9 @@
 uid: learn.azure.troubleshoot-tightly-coupled-hpc-apps.2-hpc-vm-health-checks
 title: Health checks for HPC virtual machines
 metadata:
-  title: Health checks for HPC virtual machines
+  title: Health checks for high-performance computing (HPC) virtual machines
   description: Learn what type of health checks to run, how to run the tests, and how to interpret the results.
-  ms.date: 03/01/2021
+  ms.date: 05/29/2024
   author: garvct
   ms.author: cogarvey
   ms.topic: unit

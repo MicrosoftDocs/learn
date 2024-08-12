@@ -4,7 +4,7 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 04/20/2023
+  ms.date: 05/20/2024
   author: normesta
   ms.author: normesta
   ms.topic: unit
@@ -16,14 +16,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "The .NET Storage Client library ships only as a single package which you can use to interact with all storage services?"
+  - content: "The .NET Storage Client library ships only as a single package, which you can use to interact with all storage services?"
     choices:
     - content: "True"
       isCorrect: false
-      explanation: "No. The .NET Storage Client library is available as individual packages which target specific storage services such as Blob Storage or Queue Storage."
+      explanation: "No. The .NET Storage Client library is available as individual packages, which target specific storage services such as Blob Storage or Queue Storage."
     - content: "False"
       isCorrect: true
-      explanation:  "Correct. The .NET Storage Client library is available as individual packages which target specific storage services such as Blob Storage or Queue Storage."
+      explanation:  "Correct. The .NET Storage Client library is available as individual packages, which target specific storage services such as Blob Storage or Queue Storage."
   - content: "Which object would you create to authorize access, and then perform the greatest number of Blob Storage operations without having to authorize again?"
     choices:
     - content: "BlobClient"
@@ -35,14 +35,14 @@ quiz:
     - content: "BlobContainerClient"
       isCorrect: false
       explanation: "No. While the BlobContainerClient class can accept a connection string, this class is scoped to a specific set of Blob Storage operations."
-  - content: "How can you modify your call to the GetBlobAsync method so that you retrieve only blobs which start with a specific string?"
+  - content: "How can you modify your call to the GetBlobAsync method so that you retrieve only blobs that start with a specific string?"
     choices:
     - content: "Add query syntax as a parameter to the GetBlobAsync method."
       isCorrect: false
-      explanation: "No. There is no such parameter. Instead, use the prefix parameter to return only blobs whose name begins with a specific string."
-    - content: "Use parameters which filter the types of blobs returned."
+      explanation: "No. There's no such parameter. Instead, use the prefix parameter to return only blobs whose name begins with a specific string."
+    - content: "Use parameters that filter the types of blobs returned."
       isCorrect: false
-      explanation: "No. While there are various parameters which can reduce the number of blobs returned, you can limit based on blob name only by using the prefix parameter."
+      explanation: "No. While there are various parameters that can reduce the number of blobs returned, you can limit based on blob name only by using the prefix parameter."
     - content: "Specify a string prefix."
       isCorrect: true
       explanation: "Correct. Use the prefix parameter to return only blobs whose name begins with a specific string."

@@ -3,7 +3,7 @@ uid: learn.wwl.create-business-value
 metadata:
   title: Create business value from AI
   description: "Understand the key elements that make a culture AI-ready and a framework to drive the change needed in your organization for a successful AI strategy."
-  ms.date: 03/14/2024
+  ms.date: 08/12/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
@@ -16,16 +16,18 @@ summary: This module is designed to help you plan your AI strategy and adopt an 
 abstract: |
   In this module, you will:
 
-  -   Articulate the components of an AI strategy.
+  -   Identify considerations for defining an AI strategy.
 
-  -   Describe the key elements of an AI-ready organizational culture.
+  -   Describe key characteristic of an AI-ready organizational culture.
 
-  -   Understand the stages to AI success.
+  -   Identify drivers of AI success.
+
+  -   Understand the stages of AI value creation.
 prerequisites: |
   -   Basic understanding of AI concepts.
 
   -   Basic understanding of business concepts.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/create-business-value.svg
 levels:
 - intermediate
 roles:

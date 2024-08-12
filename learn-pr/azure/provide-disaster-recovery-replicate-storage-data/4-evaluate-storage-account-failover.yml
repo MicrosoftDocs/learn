@@ -4,9 +4,9 @@ title: Evaluate storage account failover
 metadata:
   title: Evaluate storage account failover
   description: Learn about the storage account failover process.
-  ms.date: 10/08/2020
-  author: tamram
-  ms.author: tamram
+  ms.date: 11/03/2023
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
 durationInMinutes: 5
 content: |

@@ -1,4 +1,3 @@
-
 Azure Boards is a customizable tool to manage software projects supporting Agile, Scrum, and Kanban processes by default. Track work, issues, and code defects associated with your project. Also, you can create your custom process templates and use them to create a better and more customized experience for your company.
 
 You have multiple features and configurations to support your teams, such as calendar views, configurable dashboards, and integrated reporting.
@@ -38,6 +37,6 @@ Delivery plans are fully interactive, supporting the following tasks:
 
 For more information about Azure Boards, see:
 
- -  [Azure Boards documentation \| Microsoft Docs](/azure/devops/boards).
- -  [Reasons to start using Azure Boards \| Microsoft Docs](/azure/devops/boards/get-started/why-use-azure-boards).
+ -  [Azure Boards documentation \| Microsoft Learn](/azure/devops/boards).
+ -  [Reasons to start using Azure Boards \| Microsoft Learn](/azure/devops/boards/get-started/why-use-azure-boards).
  -  [GitHub and Azure Boards](/azure/devops/boards/github).

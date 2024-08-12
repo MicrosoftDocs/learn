@@ -4,11 +4,12 @@ title: Define an array in Windows PowerShell scripts
 metadata:
   title: Define an array in Windows PowerShell scripts
   description: "Define an array in Windows PowerShell scripts"
-  ms.date: 05/04/2023
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

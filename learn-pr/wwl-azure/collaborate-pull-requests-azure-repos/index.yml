@@ -3,21 +3,25 @@ uid: learn.wwl.collaborate-pull-requests-azure-repos
 metadata:
   title: Collaborate with pull requests in Azure Repos
   description: "Collaborate with pull requests in Azure Repos"
-  ms.date: 11/01/2022
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: module-standard-task-based
-  ms.service: azure-devops-repos
+  ms.topic: module
+  ms.service: azure
+  ai-usage: human-only
 title: Collaborate with pull requests in Azure Repos
 summary: This module presents pull requests for collaboration and code reviews using Azure DevOps and GitHub mobile for pull request approvals. It helps understanding how pull requests works and how to configure them.
 abstract: |
-  By the end of this module, you'll be able to:
-  * Leverages pull requests for collaboration and code reviews
-  * Give feedback using pull requests
-  * Configure branch policies
-  * Use GitHub mobile for pull requests approvals
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  -   Leverages pull requests for collaboration and code reviews
+
+  -   Give feedback using pull requests
+
+  -   Configure branch policies
+
+  -   Use GitHub mobile for pull requests approvals
+prerequisites: None
 iconUrl: /training/achievements/3-collaborate-with-pull-requests-in-azure-repos.svg
 levels:
 - advanced
@@ -47,7 +51,6 @@ units:
 - learn.wwl.collaborate-pull-requests-azure-repos.introduction
 - learn.wwl.collaborate-pull-requests-azure-repos.collaborate-pull-requests
 - learn.wwl.collaborate-pull-requests-azure-repos.exercise-collaborating-pull-requests
-- learn.wwl.collaborate-pull-requests-azure-repos.examine-github-mobile-for-pull-request-approvals
 - learn.wwl.collaborate-pull-requests-azure-repos.knowledge-check
 - learn.wwl.collaborate-pull-requests-azure-repos.summary
 badge:

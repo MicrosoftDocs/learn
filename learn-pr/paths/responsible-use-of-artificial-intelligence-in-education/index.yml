@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.philanthropies.responsible-use-of-artificial-intelligence-in-education
+title: Responsible use of artificial intelligence in education
+metadata:
+  title: Responsible use of artificial intelligence in education
+  description: In this learning path, you'll embark on an insightful exploration of Microsoft’s Responsible AI framework, learning how to apply ethical principles to the development and use of AI technologies. You start by learning the frameworks that shape Microsoft’s approach to responsible AI, focusing on the commitment to the six responsible AI principles. As you progress, you discover practical ways to integrate these principles into educational environments, ensuring that AI tools not only enhance learning experiences but also uphold values of fairness and privacy.
+   The learning path concludes with hands-on exercises, translating theoretical knowledge into real-world practice. This learning path equips you with the necessary skills to implement responsible AI systems responsibly in any learning environment.
+  ms.date: 03/26/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: learning-path
+summary: This learning path offers a journey through Microsoft’s Responsible AI framework, emphasizing the importance of ethical considerations in AI development and application. You'll gain a foundational understanding of Microsoft’s approach to AI, which prioritizes fairness, reliability & safety, privacy & security, inclusiveness, transparency, accountability, and practical usage.
+prerequisites: None
+iconUrl: /training/achievements/responsible-use-of-artificial-intelligence-in-education.svg
+levels: 
+  - beginner
+roles:
+  - k-12-educator
+  - business-user
+  - higher-ed-educator
+  - data-engineer
+  - school-leader
+products:
+  - ai-services
+  - azure-machine-learning
+  - azure-machine-learning-designer
+  - m365-apps
+  - azure-translator-text
+  - azure-translator-speech
+  - ms-copilot
+  - language-service
+subjects:
+  - artificial-intelligence
+modules:
+  - learn.philanthropies.introduction-to-microsofts-responsible-ai-approach
+  - learn.philanthropies.apply-responsible-ai-principles
+  - learn.philanthropies.embrace-responsible-ai
+trophy:
+  uid: learn.philanthropies.responsible-use-of-artificial-intelligence-in-education.trophy

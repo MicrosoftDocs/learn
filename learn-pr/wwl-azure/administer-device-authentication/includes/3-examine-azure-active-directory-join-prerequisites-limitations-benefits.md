@@ -1,5 +1,3 @@
-
-
 To join a Windows device, the device registration service must be configured to enable you to register devices. In addition to having permission to joining devices in your Microsoft Entra tenant, you must have fewer devices registered than the configured maximum.
 
 In addition, if your tenant is federated, your Identity provider MUST support WS-Fed and WS-Trust username/password endpoint. This can be version 1.3 or 2005. This protocol support is required to both join the device to Microsoft Entra ID and log on to the device with a password.
@@ -21,3 +19,4 @@ For organizations that have on-premises Windows Server Active Directory infrastr
  -  Your users primarily need to access Microsoft 365 or other SaaS apps integrated with Microsoft Entra ID.
  -  You want to manage a group of users in Microsoft Entra ID instead of in Active Directory. This can apply, for example, to seasonal workers, contractors, or students.
  -  You want to provide joining capabilities to workers in remote branch offices with limited on-premises infrastructure.
+

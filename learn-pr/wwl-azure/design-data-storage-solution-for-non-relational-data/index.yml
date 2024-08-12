@@ -2,36 +2,28 @@
 uid: learn.wwl.design-data-storage-solution-for-non-relational-data
 metadata:
   title: Design a data storage solution for non-relational data
-  description: "Azure Architects design and recommend non-relational data storage solutions."
+  description: Azure Architects design and recommend non-relational data storage solutions.
   ms.date: 03/08/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: azure
   ai-usage: human-only
+  ms.service: azure-storage
 title: Design a data storage solution for non-relational data
 summary: Azure Architects design and recommend non-relational data storage solutions.
 abstract: |
   In this module, you learn how to:
-
   -   Design for data storage.
-
   -   Design for Azure storage accounts.
-
   -   Design for Azure blob storage.
-
   -   Design for data redundancy.
-
   -   Design for Azure files.
-
   -   Design an Azure disk solution.
-
   -   Design for storage security.
 prerequisites: |
   -   Conceptual knowledge of storage accounts, blobs, files, disks, and data protection.
-
   -   Working experience with creating and securing storage systems.
 iconUrl: /training/achievements/data-storage-solution-non-relation-data.svg
 levels:

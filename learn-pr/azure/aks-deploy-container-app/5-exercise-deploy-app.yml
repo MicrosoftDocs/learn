@@ -4,7 +4,7 @@ metadata:
   title: Exercise - Deploy an application on your Azure Kubernetes Service cluster
   description: In this exercise, you'll create and push a Kubernetes workload to an Azure Container Registry instance. You'll then deploy the workload from the container registry to an Azure Kubernetes Service cluster by creating a deployment manifest file.
   ms.published: 07/31/2020
-  ms.date: 03/01/2022
+  ms.date: 04/04/2023
   author: nickomang
   ms.author: nickoman
   ms.topic: unit

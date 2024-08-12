@@ -2,7 +2,7 @@
 uid: learn.iot.create-your-first-app-with-azure-maps.create-your-azure-maps-account
 metadata:
   description: Navigate the Azure portal, and create a free Azure Maps account. Then, extract the Primary Key you'll need for the upcoming coding module.
-  ms.date: 6/1/2020
+  ms.date: 9/01/2022
   author: PeterTurcan
   ms.author: cahowd
   ms.topic: unit

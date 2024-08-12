@@ -2,27 +2,22 @@
 uid: learn.wwl.deploy-azure-kubernetes-service-cluster
 metadata:
   title: Deploy an Azure Kubernetes Service cluster
-  description: "This module covers the deployment of a managed Kubernetes cluster in Azure using Azure Kubernetes Service (AKS)."
+  description: This module covers the deployment of a managed Kubernetes cluster in Azure using Azure Kubernetes Service (AKS).
   ms.date: 03/08/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: azure
+  ms.service: azure-kubernetes-service
 title: Deploy an Azure Kubernetes Service cluster
 summary: In this module,  you learn how to create an Azure Kubernetes Service cluster, configure its components, and connect to it using kubectl commands.
 abstract: |
   After completing this module, you'll be able to:
-
   * Create an Azure Kubernetes Service cluster.
-
   * Configure Azure Kubernetes Service Components.
-
   * Connect to an Azure Kubernetes Service  cluster.
-
   * Configure Azure Active Directory Integration.
-
   * Monitor an Azure Kubernetes Service cluster.
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg

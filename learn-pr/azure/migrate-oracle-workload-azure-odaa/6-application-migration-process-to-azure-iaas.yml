@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-oracle-workload-azure-odaa.application-migration-process-to-azure-iaas
+title: Explore the process of migrating applications to Azure
+metadata:
+  title: Explore the process of migrating applications to Azure
+  description: Learn about the process to migrate applications to Azure.
+  ms.date: 05/01/2024
+  author: jjaygbay1
+  ms.author: jacobjaygbay
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-application-migration-process-to-azure-iaas.md)]

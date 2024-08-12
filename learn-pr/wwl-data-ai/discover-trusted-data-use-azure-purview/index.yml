@@ -5,7 +5,7 @@ metadata:
   description: "purview, enterprise data analyst"
   ms.date: 07/22/2022
   author: wwlpublish
-  ms.author: shlindsay
+  ms.author: anrudduc
   ms.topic: module
   ms.service: purview 
 title: Discover trusted data using Microsoft Purview

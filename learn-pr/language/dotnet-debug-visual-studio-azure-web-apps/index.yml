@@ -4,7 +4,7 @@ metadata:
   title: Remotely debug ASP.NET Core apps hosted on Azure App Service using Visual Studio
   description: 'Hands-on training to deploy and remotely debug your ASP.NET Core apps on Azure App Service directly using Visual Studio 2022.'
   ms.custom: engagement-fy23
-  ms.date: 01/20/2023
+  ms.date: 05/29/2024
   author: alexwolfmsft
   ms.author: alexwolf
   manager: jmartens
@@ -13,7 +13,7 @@ metadata:
 title: Remotely debug ASP.NET Core apps hosted on Azure App Service using Visual Studio
 summary: Learn how to remotely debug your ASP.NET Core apps on Azure App Service directly using Visual Studio 2022.
 abstract: |
-  By the end of this module, you will be able to:
+  By the end of this module, you'll be able to:
   - Deploy an ASP.NET Core app to Azure App Service.
   - Configure remote debugging settings.
   - Attach the Visual Studio debugger to apps running in Azure App Service.

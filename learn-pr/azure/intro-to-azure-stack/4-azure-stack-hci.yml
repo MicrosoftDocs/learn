@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-azure-stack.4-azure-stack-hci
 metadata:
   title: What is Azure Stack HCI?
   description: Describe the basic architecture of Azure Stack HCI, core capabilities of Azure Stack HCI, and the primary use cases of Azure Stack HCI.
-  ms.date: 12/09/2020
+  ms.date: 03/28/2023
   author: sethmanheim
   ms.author: sethm
   manager: femila

@@ -3,6 +3,7 @@ uid: learn.azure.optimize-your-cost-azure-blob-storage
 metadata:
   title: 'Optimize your cost with Azure Blob Storage'
   description: Azure Blob Storage helps customers minimize their operational costs.
+  manager: mkluck
   ms.date: 11/07/2023
   author: rmcmurray
   ms.author: robmcm

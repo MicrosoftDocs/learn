@@ -1,10 +1,10 @@
 
-To start exploring the Copilot and coding in Azure Quantum, use one of the samples from the **Quantum Samples** dropdown.
+To start exploring Copilot and coding in Azure Quantum, use one of the samples from the **Quantum Samples** dropdown.
 
 ## Run a quantum program
 
 1. Navigate to the [Code in Azure Quantum](https://quantum.microsoft.com/en-us/experience/quantum-coding).
-1. Select **Quantum Samples** and then select **Random Number Generator**. The following code is copied to the code window.
+1. Select **Quantum Samples**, and then select **Random Number Generator**. The following code is copied to the code window.
 
     ```qsharp
     /// # Sample
@@ -62,19 +62,13 @@ To run your program again using a different simulator:
     - The job status is displayed at the top of the code window.
     - A histogram of the results is displayed below the code window. Results for each shot aren't currently available with the Quantinuum H-Series Emulator.
 
-## Ask the Copilot
+## Ask Copilot
 
-You can prompt the Copilot in Azure Quantum for almost anything quantum related. For example ask the Copilot the following questions and see what happens:
+You can prompt Copilot in Azure Quantum for almost anything quantum related. For example, ask Copilot the following questions and see what happens:
 
 - "Explain the MResetZ operation"
 - "Write Q# code that entangles two qubits"
 - "Explain quantum interference"
 - "What is the difference between a qubit and a classical bit?"
 
-## Open your code sample on VS Code for the Web
 
-To explore the sample code further, you can open the code in [VS Code for the Web](https://vscode.dev) and take advantage of features such as improved error messaging, Q# syntax highlighting, and integrated debugging. If you already have an Azure account set up, you can connect directly to your Azure Quantum workspaces from VS Code.
-
-To open your code in VS Code for the Web, select the VS Code icon on the bottom of the code window.
-  
-:::image type="content" source="../media/launch-vs-code.png" alt-text="Screenshot of the icon to launch VS Code.":::

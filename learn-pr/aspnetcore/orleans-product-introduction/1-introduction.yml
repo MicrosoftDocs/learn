@@ -3,8 +3,8 @@ uid: learn.orleans-product-introduction.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to Orleans
-  ms.date: 7/21/2022
+  description: Learn about Orleans and how you can use it to build cloud native applications, including an example scenario.
+  ms.date: 06/04/2024
   author: alexwolfmsft
   ms.author: alexwolf
   ms.topic: unit

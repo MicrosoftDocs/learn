@@ -71,7 +71,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
 
     ::: zone-end
 
-1. Next we want to deploy the GPT-35-Turble model to the OpenAI resource we created. Call the model deployment **HikingRecommendationTurbo**. Note we're using **HikingConversations-RG** as the resource group name, **HikingConversationsAI** as the OpenAI resource name, if you used different values make sure you substitute those values.
+1. Next we want to deploy the GPT-35-Turbo model to the OpenAI resource we created. Call the model deployment **HikingRecommendationTurbo**. Note we're using **HikingConversations-RG** as the resource group name, **HikingConversationsAI** as the OpenAI resource name, if you used different values make sure you substitute those values.
 
     ::: zone pivot="cli"
 

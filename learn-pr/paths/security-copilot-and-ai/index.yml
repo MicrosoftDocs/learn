@@ -9,11 +9,12 @@ metadata:
   ms.topic: learning-path
 title: 'Get started with Microsoft Copilot for Security'
 prerequisites: |
-  None
+  - Working knowledge of security operations and incident response
+  - Working knowledge of Microsoft security products and services
 summary: |
   Learn about Microsoft Copilot for Security, an AI-powered security analysis tool that enables analysts to process security signals and respond to threats at a machine speed, and the AI concepts upon which it's built.
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
+hidden: false
 levels:
 - beginner
 roles:
@@ -38,5 +39,7 @@ modules:
 - learn.wwl.responsible-generative-ai
 - learn-wwl.security-copilot-getting-started
 - learn.security-copilot-describe-core-features
+- learn.security-copilot-embedded-experiences
+- learn.security-copilot-exercises
 trophy:
   uid: earn.wwl.security-copilot-and-ai.trophy

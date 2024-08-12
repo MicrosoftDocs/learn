@@ -3,8 +3,8 @@ uid: learn.wwl.challenge-project-work-variable-data-c-sharp.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check what you've learned in this module."
-  ms.date: 03/20/2024
+  description: "Check what you learn in this module."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -29,10 +29,10 @@ quiz:
     choices:
     - content: "When the elements have alphabetical sort order."
       isCorrect: false
-      explanation: "Incorrect. You sort elements effectively with either a `foreach` or `for` loop."
-    - content: "When you need to perform a search on each element in the array."
+      explanation: "Incorrect. It is possible to sort elements effectively with either a `foreach` or `for` loop."
+    - content: "To perform a search on each element in the array."
       isCorrect: false
       explanation: "Incorrect. A search of each element using both `foreach` and `for` is appropriate."
-    - content: "When you need to evaluate a specific range of elements."
+    - content: "To evaluate a specific range of elements."
       isCorrect: true
-      explanation: "Correct. A `for` is better when you want index ranges that aren't the *first* to the *last* index."
+      explanation: "Correct. A `for` is better when index ranges that aren't the *first* to the *last* index are required."

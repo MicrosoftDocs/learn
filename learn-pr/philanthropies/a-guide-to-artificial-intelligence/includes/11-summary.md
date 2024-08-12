@@ -1,5 +1,7 @@
 AI is the ability of a computer system to learn from data and perform tasks, such as problem-solving, speech recognition and decision-making. It uses data, models, algorithms, and neural networks as its building blocks, and has many applications in different domains, such as education, healthcare, and entertainment.
 
+View video to [explore the foundational concepts of AI](https://go.microsoft.com/fwlink/?linkid=2271953).
+
 **Bibliography**
 
 1. Microsoft Education. [Video]. YouTube. [https://www.youtube.com/watch?v=IQwhnbFpGkU&t=3s](https://www.youtube.com/watch?v=IQwhnbFpGkU&t=3s). Published June 13, 2023. Accessed August 22, 2023.

@@ -3,7 +3,7 @@ uid: learn.language.rust-create-command-line-program.display-friendly-error-mess
 metadata:
   title: Display friendly error messages
   description: Modify the program to display a friendly error message if the journal file isn't found.
-  ms.date: 01/26/2021
+  ms.date: 01/21/2022
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: unit

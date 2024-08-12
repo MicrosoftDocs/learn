@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-netapp-files-sap-hana.understand-application-volume-groups
-title: Understand application volume groups in Azure NetApp Files
+title: Understand Azure NetApp Files application volume groups
 metadata:
   unitType: learning-content
   title: Understand application volume groups in Azure NetApp Files

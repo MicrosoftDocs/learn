@@ -6,7 +6,7 @@ metadata:
   description: In this unit, you'll run commands to check your installed version of PowerShell.
   author: softchris
   ms.author: chnoring
-  ms.date: 12/7/2020
+  ms.date: 08/25/2023
   ms.topic: unit
   ms.custom: team=nextgen
 azureSandbox: true

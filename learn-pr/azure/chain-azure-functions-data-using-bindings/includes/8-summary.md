@@ -8,9 +8,9 @@ This journey is summarized in the following table, which shows the different bin
 | [Read data with input bindings](../4-read-data-with-input-bindings-portal-lesson.yml) | _HTTP_ | _HTTP_<br/>_Azure Cosmos DB_ | _HTTP_ |
 | [Write data with output bindings](../6-write-data-with-output-bindings-portal-lesson.yml) | _HTTP_ | _HTTP_<br/>_Azure Cosmos DB_ | _HTTP_<br/>_Azure Cosmos DB_<br/>_Azure Queue Storage_ |
 
-You can apply the approaches you've learned here to add and test bindings in your functions. Here are a few interesting ideas to get more practice with bindings and to build on what you have learned here.
+You can apply the approaches you learned here to add and test bindings in your functions. Here are a few interesting ideas to get more practice with bindings and to build on what you learned.
 
-* Create another function to read from Blob storage and other input bindings that we haven't used in this module.
+* Create another function to read from Blob storage and use other input bindings that we didn't use in this module.
 
 * Create another function to write to more destinations by using other supported output binding types.
 
@@ -22,13 +22,13 @@ If you're interested in doing serverless integrations like these with visual wor
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
-## Additional resources
+## Learn more
 
 The following resources are related to the subjects covered in this module that you might find interesting:
 
 * [Azure Functions documentation](/azure/azure-functions/)
 * [Azure Serverless Computing Cookbook](https://azure.microsoft.com/resources/azure-serverless-computing-cookbook/)
-* [How to use Queue storage from Node.js](/azure/storage/queues/storage-nodejs-how-to-use-queues)
+* [Quickstart: Azure Queue Storage client library for JavaScript](/azure/storage/queues/storage-nodejs-how-to-use-queues)
 * [Introduction to Azure Cosmos DB: SQL API](/azure/cosmos-db/sql-api-introduction)
 * [A technical overview of Azure Cosmos DB](https://azure.microsoft.com/blog/a-technical-overview-of-azure-cosmos-db/)
 * [Azure Cosmos DB documentation](/azure/cosmos-db/)

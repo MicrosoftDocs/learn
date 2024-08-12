@@ -2,22 +2,23 @@
 uid: learn.languages.csharp-format-strings
 metadata:
   title: Format alphanumeric data for presentation in C#
-  description: "Format alphanumeric data for presentation in C#"
-  ms.date: 03/07/2024
+  description: "Explore basic methods in C# to format alphanumeric data."
+  ms.date: 05/20/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: azure
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
   ms.devlang: csharp
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Format alphanumeric data for presentation in C#
 summary: Use C# to format strings with white space, special characters, padding, and alignment. Give context to numeric data like currency, percentages, and numbers with decimals.
 abstract: |
   -   Use character escape sequences to add tabs, new lines, and Unicode characters to our strings.
 
-  -   Create verbatim *string literals*, and escape common characters like backslash (`\`) and double-quotes(`&amp;quot;`).
+  -   Create verbatim string literals, and escape common characters like backslash ( \ ) and double-quotes ( &quot;&quot; ).
 
   -   Merge templates with variables using composite formatting and string interpolation.
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-deploy-sensor.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduces you to the Defender for IoT operational technology (OT) deployment process"
+  ms.date: 4/15/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

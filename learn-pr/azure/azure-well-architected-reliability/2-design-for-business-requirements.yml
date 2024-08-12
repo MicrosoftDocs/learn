@@ -14,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following isn’t  an aspect of the workload to define reliability targets for?"
+  - content: "Which of the following isn't  an aspect of the workload to define reliability targets for?"
     choices:
     - content: "The workload's system and user flows."
       isCorrect: false
@@ -25,7 +25,7 @@ quiz:
     - content: "The workload's individual components."
       isCorrect: false
       explanation: "Determining reliability targets for the workload's individual components allow you to identify the reliability measures required to support flows using the components."
-    - content: "The workload has a whole."
+    - content: "The workload as a whole."
       isCorrect: false
       explanation: "The workload as a whole should have reliability targets defined for it, so you can build a holistically reliable design."
   - content: "When decomposing your workload into components, which of the following aspects should you consider for your reliability design?"

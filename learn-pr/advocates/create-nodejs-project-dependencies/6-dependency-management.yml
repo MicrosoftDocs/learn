@@ -4,9 +4,9 @@ title: Manage dependency updates in your Node.js project
 metadata:
   title: Manage dependency updates in your Node.js project
   description: This unit explains how to update the dependencies in your app and how to do so in a predictable way.
-  author: GitHubber17
-  ms.author: chnoring
-  ms.date: 05/30/2023
+  author: diberry
+  ms.author: diberry
+  ms.date: 04/19/2024
   ms.topic: unit
   ms.custom:
     - team=nextgen

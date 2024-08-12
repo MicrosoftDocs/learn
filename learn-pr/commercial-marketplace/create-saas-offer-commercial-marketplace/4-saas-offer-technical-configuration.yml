@@ -3,10 +3,10 @@ uid: learn.create-saas-offer-commercial-marketplace.4-saas-offer-technical-confi
 title: SaaS offer technical configuration
 metadata:
   title: SaaS offer technical configuration
-  description: In this unit, we go over the technical information required to publish a transact SaaS offer
-  ms.date: 01/25/2021
-  author: marleva
-  ms.author: maevan
+  description: In this unit, we go over the technical information required to publish a transact software as a service (SaaS) offer.
+  ms.date: 04/26/2024
+  author: SindhuRaghvan
+  ms.author: siraghav
   ms.topic: unit
 durationInMinutes: 7
 content: |

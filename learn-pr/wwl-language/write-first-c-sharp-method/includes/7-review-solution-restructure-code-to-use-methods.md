@@ -10,8 +10,6 @@ string[] bad = {"fear.", "avoid major decisions.", "may have unexpected outcomes
 string[] neutral = {"appreciate.", "enjoy time with friends.", "should align with your values.", "get in tune with nature."};
 
 TellFortune();
-luck = random.Next(100);
-TellFortune();
 
 void TellFortune() 
 {
@@ -26,7 +24,7 @@ void TellFortune()
 
 This code is just "*one possible solution*" because you might have added line feeds in different spots or you might have formatted the code differently.
 
-Regardless of minor code differences, when you run the code, you should see two of the following output messages:
+Regardless of minor code differences, when you run the code, you should see one of the following output messages:
 
     ```Output A
     A fortune teller whispers the following words:
@@ -42,6 +40,8 @@ Regardless of minor code differences, when you run the code, you should see two 
     A fortune teller whispers the following words:
     You have much to fear. Today is a day to avoid major decisions. Whatever work you do may have unexpected outcomes. This is an ideal time to re-evaluate your life.
     ```
+    
+The output should be dependent on the value of the `luck` variable.
 
 If you completed the challenge, congratulations! Continue on to the knowledge check in the next unit.
 

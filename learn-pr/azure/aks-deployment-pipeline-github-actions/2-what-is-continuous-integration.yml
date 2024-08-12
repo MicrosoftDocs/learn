@@ -3,7 +3,7 @@ uid: learn.aks-deployment-pipeline-github-actions.2-what-is-continuous-integrati
 metadata:
   title: Continuous integration and continuous deployment
   description: Explore continuous integration and continuous deployment (CI/CD) concepts you need to consider when you configure your GitHub Actions pipeline.
-  ms.date: 10/08/2020
+  ms.date: 01/08/2023
   author: nickomang
   ms.author: nickoman
   ms.topic: unit

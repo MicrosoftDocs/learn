@@ -47,7 +47,7 @@ Consider the following guidance for mapping your projects to business units:
 
 ### Organize and secure repositories
 
-You can organize your repositories in Azure Repos by using folders and adding specific groups and permissions to the repository. You can also use branch policies to secure your repositories. Branch policies allow you to:
+You can organize your Git repositories in Azure Repos by adding specific groups and permissions to the repository. You can also use branch policies to secure your repositories. Branch policies allow you to:
 
 - Require a minimum number of reviewers
 - Require a minimum number of approvers
@@ -63,8 +63,6 @@ If your pipeline consumes source code or is defined in Azure Repos, you must ful
 - **Remove sensitive data from a repository**: Project participants should always be on the lookout for commits containing data that shouldn't be included in the repository or its history.
 
 - **Create branch protection rules**: You can create branch protection rules to enforce certain workflows for one or more branches, such as requiring an approving review or passing status checks for all pull requests merged into the protected branch.
-
-- **Add a CODEOWNERS file**: By adding a CODEOWNERS file to your repository, you can assign individual team members or entire teams as code owners to paths in your repository. These code owners are then required for pull-request reviews on any changes to files in a path that they're configured for.
 
 ## Possible project and repository structures
 

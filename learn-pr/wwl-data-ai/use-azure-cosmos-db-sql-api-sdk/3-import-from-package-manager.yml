@@ -4,12 +4,11 @@ title: Import from package manager
 metadata:
   title: Import from package manager
   description: "Import from package manager"
-  ms.date: 05/24/2023
+  ms.date: 03/28/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
-  ms.custom:
-    - devx-track-dotnet
+  ms.custom: devx-track-dotnet
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

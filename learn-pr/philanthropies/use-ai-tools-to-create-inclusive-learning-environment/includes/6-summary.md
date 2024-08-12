@@ -28,6 +28,6 @@ Spataro J. [From breakout rooms in Microsoft Teams to AI in To Do – here's wha
 
 [Unit 7. AI tools for educators and accessibility](/training/modules/empower-educators-explore-potential-artificial-intelligence/ai-tools-educators-accessibility). In: *Empower educators to explore the potential of artificial intelligence*. Microsoft. Publication date unavailable.
 
-[Vision and reading support for students (scroll)](https://sway.office.com/5lWFeNsZFTxGf2pl?ref=Link&loc=mysways). Sway. Publication date unavailable.
+[Vision and reading support for students (scroll)](https://www.office.com/?ref=Link&loc=mysways). Sway. Publication date unavailable.
 
 [Seeing AI in new languages](https://www.microsoft.com/ai/seeing-ai). Microsoft. Publication date unavailable.

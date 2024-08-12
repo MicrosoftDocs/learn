@@ -2,12 +2,12 @@
 uid: learn.wwl.migrate-modernize-explore-azure-center-sap-solutions
 metadata:
   title: Modernize and explore Azure Center for SAP solutions
-  description: "Explore Azure Center for SAP Solutions (ACSS) to deploy and manage SAP workloads more efficiently. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
+  description: 'Explore Azure Center for SAP Solutions (ACSS) to deploy and manage SAP workloads more efficiently. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/09/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.service: azure
+  ms.service: sap-on-azure
 title: Modernize and explore Azure Center for SAP solutions
 summary: Explore how Azure Center for SAP Solutions (ACSS) offers secure, scalable, and reliable deployment and management of SAP workloads on Azure.
 abstract: |

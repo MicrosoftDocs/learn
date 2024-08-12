@@ -7,7 +7,7 @@ metadata:
   ms.date: 02/29/2024
   author: Justinha
   ms.author: Justinha
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure
 title: Improve sign-in security with Microsoft Authenticator
 summary: In this module, you'll learn how to make it easy for users who sign in with less secure methods like voice calls or SMS to set up Microsoft Authenticator. You'll also walk through the user experience and validate that push notifications are their new default sign-in method.

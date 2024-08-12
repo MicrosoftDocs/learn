@@ -3,8 +3,8 @@ uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-
 title: Map your data
 metadata:
   title: Map your data
-  description: "Now that the data has been onboarded into CluedIn in a staging area, we have to map the data from its current form into the new desired state. For this, we'll map the data in the CluedIn Studio."
-  ms.date: 03/28/2023
+  description: "Now that the data is onboarded into CluedIn in a staging area, we have to map the data from its current form into the new desired state. For this task, we map the data in the CluedIn Studio."
+  ms.date: 05/28/2024
   author: whhender
   ms.author: whhender
   ms.topic: unit

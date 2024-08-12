@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 05/25/2021
-  author: tomreidnz
-  ms.author: jasdeb
+  ms.date: 07/21/2024
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 3
 quiz:
@@ -39,7 +39,7 @@ quiz:
     - content: "Polynomial regression is a more popular method than linear regression, but it always needs to be fitted iteratively"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Polynomial regression can explain non-linear relationships, but it often makes extreme predictions when extrapolated"
+    - content: "Polynomial regression can explain nonlinear relationships, but it often makes extreme predictions when extrapolated"
       isCorrect: true
       explanation: "Correct."
     - content: "Polynomial regression can be extrapolated, unlike simple linear regression, but it can take a long time to compute"

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.detect-threats-to-sensitive-data
+title: Detect threats to sensitive data
+metadata:
+  title: Detect threats to sensitive data
+  description: "Detect threats to sensitive data"
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 3
+content: |
+  [!include[](includes/12-detect-threats-to-sensitive-data.md)]

@@ -3,12 +3,14 @@ uid: learn.azure.intro-to-form-recognizer
 metadata:
   title: Introduction to Azure AI Document Intelligence
   description: Azure AI Document Intelligence enables automated data identification and extraction from your documents.
-  ms.date: 03/14/2023
   author: laujan
   ms.author: lajanuar
   manager: nitinme
-  ms.topic: module
+  ms.date: 03/14/2023
   ms.service: azure-ai-document-intelligence
+  ms.topic: module
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Introduction to Azure AI Document Intelligence
 summary: Azure AI Document Intelligence enables automated data identification and extraction from your documents. You can use a programming language SDK or the REST API to easily retrieve and utilize your data.
 abstract: |

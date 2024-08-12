@@ -1,6 +1,4 @@
-## Scenario
-
-You need to prepare for the migration of several of your company's SAP workloads to Azure. You'll implement high availability for all of the SAP workloads in Azure such as:
+You need to prepare for the migration of several of your company's SAP workloads to Azure. You implement high availability for all of the SAP workloads in Azure such as:
 
 - SAP application servers
 - SAP ASCS-SCS instances
@@ -10,8 +8,6 @@ You need to prepare for the migration of several of your company's SAP workloads
 In addition, you must ensure the availability solutions are compatible with the solutions for disaster recovery of the SAP on Azure workloads in your company.
 
 ## Learning objectives
-
-You'll:
 
 - Explore high availability and disaster recovery support of Azure for SAP workloads.
 - Explore high availability of SAP workloads.
@@ -25,9 +21,13 @@ You'll:
 - Explore Oracle high availability for SAP in Azure.
 - Examine high availability capabilities of Azure infrastructure.
 - Understand service-level agreements.
-- Explore Availability Zones.
+- Explore availability zones.
 - Examine principal architectures.
-- Determine latency between Azure virtual machines across Availability Zones.
+- Determine latency between Azure Virtual Machines across availability zones.
 - Explore the Active/Active deployment scenario.
 - Explore the Active/Passive deployment scenario.
 - Configure combined high availability and disaster recovery.
+
+## Course video training
+
+Enhance your learning experience with further insights and expert guidance in the [AZ-120 On Demand Instructor-led Training Video series](/shows/on-demand-instructor-led-training-series/?products=azure&terms=az-120). This video series is a perfect supplementary resource to reinforce understanding, with the flexibility to cover the course content at your own pace.

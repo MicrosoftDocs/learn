@@ -13,7 +13,7 @@ Parameters in a method work similar to variables. A parameter is defined by spec
 	{
 		for (int i = 0; i < max; i++)
 		{
-			Console.Write($"${i}, ");
+			Console.Write($"{i}, ");
 		}
 	}
 ```

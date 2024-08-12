@@ -9,6 +9,8 @@ Microsoft itself has also-embraced open-source software in its software and the 
 :::image type="content" source="../media/open-source-azure-66a7643e.png" alt-text="Screenshot of open-source tools and technologies in Azure.":::
 
 
+    
+
 The .NET platforms, such as the original .NET Framework and even more so .NET Core, use several components created by the open-source community and not Microsoft itself. In [ASP.NET](https://asp.net/) and [ASP.NET](https://asp.net/) Core, many of the frontend development libraries are open-source components, such as jQuery, Angular, and React.
 
 Instead of creating new components themselves, the teams at Microsoft are using the open-source components and taking a dependency on them.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-automation-devops.examine-checkpoint-parallel-processing
+title: Examine checkpoint and parallel processing
+metadata:
+  title: Examine checkpoint and parallel processing
+  description: "Examine checkpoint and parallel processing"
+  ms.date: 05/23/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/11-examine-checkpoint-parallel-processing.md)]

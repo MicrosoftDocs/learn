@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/01/2021
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
@@ -39,7 +40,7 @@ quiz:
     choices:
     - content: "Enable WMI filtering on the GPOs."
       isCorrect: false
-      explanation: "That's incorrect. WMI filtering is not used to control the scope of the application of IPAM GPOs."
+      explanation: "That's incorrect. WMI filtering isn't used to control the scope of the application of IPAM GPOs."
     - content: "Link the GPOs to an OU that contains managed servers."
       isCorrect: false
       explanation: "That's incorrect. The administrator doesn't need to relink GPOs."

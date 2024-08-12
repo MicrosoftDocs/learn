@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Monitor performance of Azure Arc-enabled SQL Managed Instance
   description: Use Grafana to monitor performance of Azure Arc-enabled SQL Managed Instance.
   ms.date: 12/23/2022
-  author: tchristiani
-  ms.author: terrychr
+  author: MikeRayMSFT
+  ms.author: mikeray
   ms.topic: unit
 durationInMinutes: 15
 content: |

@@ -3,7 +3,7 @@ uid: learn.reactors.blockchain-tokens.5-set-up-project
 metadata:
   title: Exercise - Set up a new project and integrate OpenZeppelin
   description: Create a new project with Truffle and integrate the OpenZeppelin contracts library.
-  ms.date: 10/16/2020
+  ms.date: 02/11/2022
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: unit

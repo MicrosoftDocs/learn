@@ -4,7 +4,7 @@ title: Enhance expression comparisons with IS [NOT] DISTINCT FROM
 metadata:
   title: Enhance expression comparisons with IS [NOT] DISTINCT FROM
   description: "Compares the equality of two expressions and guarantees a true or false result, even if one or both operands are NULL."
-  ms.date: 5/5/2023
+  ms.date: 02/27/2024
   author: MScalopez
   ms.author: calopez
   ms.reviewer: vanto

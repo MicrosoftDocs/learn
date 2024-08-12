@@ -12,7 +12,9 @@ Let’s start by creating an Azure Function App in the portal.
 
     The **Create a resource** pane appears.
 
-1. In the **Create a resource** menu, select **Web**, and then select **Function App** from the results. Optionally, you can enter **Function App** in the search bar, and press <kbd>Enter</kbd>. On the **Function App** pane that appears, select **Create**. The **Create Function App** pane appears.
+1. In the **Create a resource** menu, select **Function App**. If you don't have the Function App option, you can enter **Function App** in the search bar and press <kbd>Enter</kbd>. On the **Function App** pane that appears, select **Create**.
+
+1. Select the **Consumption** radio button, then select the **Select** button.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -23,16 +25,13 @@ Let’s start by creating an Azure Function App in the portal.
     | Resource Group | Select the **<rgn>[Sandbox resource group name]</rgn>** resource group from the dropdown list. |
     | **Instance Details** |
     | Function App name | *\<your-webapp-name\>*. Enter a globally unique name for your function app. |
-    | Publish | Code |
     | Runtime stack | Select one of the languages supported for in-portal development: **.NET**, **Node.js**, or **PowerShell Core**.  |
-    | Version | Use the suggested default version of your language runtime. |
+    | Version | For .NET, select **6 (LTS), in-process model**. For Node.js and PowerShell, use the suggested default version of the language runtime. |
     | Region | Select a location close to you. |
     | **Operating system** |
     | Operating System | Windows |
-    | **Plan** |
-    | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload. |
 
-1. Select **Next : Storage**, and enter the following values for each setting.
+1. Select **Next : Storage** and enter the following values for each setting.
 
     | Setting  | Value  |
     |---|---|
@@ -49,11 +48,11 @@ Let's create a timer trigger in your function.
 
 1. In the **Function App** menu, select the **Functions** tab in the center of the screen. 
 
-1. Select the **Create in Azure portal** button. It may take a few moments for your permissions to propagate to use this service. The **Create function** pane appears.
+1. Select the **Create function** button under **Create in Azure portal**. It might take a few moments for your permissions to propagate to use this service. The **Create function** pane appears.
 
-1. Under **Select a template**, select **Timer trigger**.
+1. Under **Select a template**, select **Timer trigger**, then select **Next**.
 
-1. Under **Template details**, enter the following value into the **Schedule** field, and then select **Create**.
+1. Under **Template details**, enter the following value into the **Schedule** field, then select **Create**.
 
     ```log
     */20 * * * * *
@@ -65,7 +64,7 @@ Let's create a timer trigger in your function.
 
 Now that we've configured the timer, it will invoke the function on the interval we defined.
 
-1. On the **TimerTrigger1** pane, in the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears.
+1. On the **TimerTrigger1** pane, in the taskbar at the top of the screen, select **Code + Test**. The **Code + Test** pane appears.
 
     > [!NOTE]
     > Azure automatically provides a default name for a new trigger that you create. **TimerTrigger1** is default value that you can change when you create a new trigger.

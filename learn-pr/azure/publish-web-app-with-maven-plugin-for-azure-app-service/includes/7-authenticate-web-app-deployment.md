@@ -8,7 +8,7 @@ Azure gives you the flexibility to decide how you want to authenticate your app.
 
 - Authenticate using the Azure CLI or use the Cloud Shell on the Azure portal.
 
-- Create an Azure service principal, create a JSON file with your service principal credentials, and modify your project's `pom.xml` file to use the JSON file.
+- Create an Azure service principal, create a JSON file with your service principal credentials, and modify your project's `pom.xml` file.
 
 - Create an Azure service principal, add your service principal credentials to a Maven `settings.xml` file, and modify your project's `pom.xml` file to use the Maven settings.
 
@@ -20,7 +20,7 @@ The easiest way to authenticate Maven is to sign in with the Azure CLI. The Mave
 
 If you're using the Azure Cloud Shell, as you've been when completing the exercises with the Microsoft Learn Sandbox in this module, then you're logged in to Azure by default; you don't need to run any more commands. However, if you're using the Azure CLI from a separate computer, then you'll need to sign in by using the `az login` command.
 
-### Authentication with an authentication file
+### Authentication with a service principal
 
 The second method for authenticating your web app involves creating an Azure service principal and saving your service principal credentials to a file that you'll reference from your project settings.
 
@@ -34,54 +34,22 @@ To create an Azure service principal with the Azure CLI, use the following steps
 
     Where `https://mywebapp-1234567890.azurewebsites.net/` is the URL of your web app.
 
-    This command will return a response with a JSON object that resembles the following example:
+    This command returns a response with a JSON object that resembles the following example:
 
     ```json
-    Creating a role assignment under the scope of "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss"
+    Creating 'Contributor' role assignment under scope '/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss'
+    The output includes credentials that you must protect. Be sure that you do not include these credentials in your code or check the credentials into your source control. For more information, see https://aka.ms/azadsp-cli
 
     {
       "appId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
       "displayName": "mywebapp-1234567890.azurewebsites.net/",
       "name": "https://mywebapp-1234567890.azurewebsites.net/",
-      "password": "pppppppp-pppp-pppp-pppp-pppppppppppp",
+      "password": "...",
       "tenant": "tttttttt-tttt-tttt-tttt-tttttttttttt"
     }
     ```
 
-1. Using the information from the `az ad sp create-for-rbac` response, create an authentication file with your service principal information.
-
-    1. Create a new JSON file with the code editor:
-
-        ```bash
-        cd ~/MyWebApp
-        code auth.json
-        ```
-
-    1. Add the following JSON syntax:
-
-        ```json
-        {
-          "clientId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
-          "clientSecret": "pppppppp-pppp-pppp-pppp-pppppppppppp",
-          "subscriptionId": "ssssssss-ssss-ssss-ssss-ssssssssssss",
-          "tenantId": "tttttttt-tttt-tttt-tttt-tttttttttttt"
-        }
-        ```
-
-        Where:
-
-        | Parameter | Description |
-        |---|---|
-        | `clientId` | Specifies the service principal's `appId` value |
-        | `clientSecret` | Specifies the service principal's `password` value |
-        | `subscriptionId` | Specifies your Azure subscription, which was returned by the `az ad sp create-for-rbac` command  |
-        | `tenantId` | Specifies the service principal's `tenant` value |
-
-    1. Save your changes by typing <kbd>Ctrl</kbd>+<kbd>S</kbd>.
-
-    1. Quit the code editor by typing <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
-
-1. Modify your web app's `pom.xml` file to reference the authentication file.
+1. Modify your web app's `pom.xml` file to use the information in the JSON output.
 
     1. Open your `pom.xml` file with the code editor:
 
@@ -92,49 +60,56 @@ To create an Azure service principal with the Azure CLI, use the following steps
 
     1. Locate the `<configuration>` section for the `azure-webapp-maven-plugin`.
 
-    1. Add the following XML after the line containing the `<region>` element:
+    1. Add the following XML after the line containing the `<region>` element and use the information in the JSON output:
 
         ```xml
-        <authentication>
-          <file>/absolute/path/to/auth.json</file>
-        </authentication>
+        <auth>
+            <type>service_principal</type>
+            <client>value-of-appId</client>
+            <tenant>value-of-tenant</tenant>
+            <key>value-of-password</key>
+            <environment>azure</environment>
+        </auth>
         ```
-
-        Where `/absolute/path/to/auth.json` is the full path to the `auth.json` file that you created earlier.
 
         Your `azure-webapp-maven-plugin` section should now resemble the following example:
 
         ```xml
-        <plugin> 
-          <groupId>com.microsoft.azure</groupId>  
-          <artifactId>azure-webapp-maven-plugin</artifactId>  
-          <version>1.9.0</version>  
-          <configuration> 
-            <schemaVersion>V2</schemaVersion>  
-            <resourceGroup>maven-publish</resourceGroup>  
-            <appName>MyWebApp-1234567890</appName>  
-            <pricingTier>F1</pricingTier>  
-            <region>centralus</region>
-            <authentication>
-              <file>/home/username/MyWebApp/auth.json</file>
-            </authentication>
-            <runtime> 
-              <os>linux</os>  
-              <javaVersion>jre8</javaVersion>  
-              <webContainer>TOMCAT 8.5</webContainer> 
-            </runtime>  
-            <deployment> 
-              <resources> 
-                <resource> 
-                  <directory>${project.basedir}/target</directory>  
-                  <includes> 
-                    <include>*.war</include> 
-                  </includes> 
-                </resource> 
-              </resources> 
-            </deployment> 
-          </configuration> 
-        </plugin> 
+        <plugin>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-webapp-maven-plugin</artifactId>
+            <version>2.13.0</version>
+            <configuration>
+                <schemaVersion>v2</schemaVersion>
+                <resourceGroup>MyWebApp-1714654093047-rg</resourceGroup>
+                <appName>MyWebApp-1714654093047</appName>
+                <pricingTier>S1</pricingTier>
+                <region>centralus</region>
+                <auth>
+                    <type>service_principal</type>
+                    <client>aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa</client>
+                    <tenant>tttttttt-tttt-tttt-tttt-tttttttttttt</tenant>
+                    <key>abcdefghijklmnopqrstuvwxyz1234567890</key>
+                    <environment>azure</environment>
+                </auth>
+                <runtime>
+                    <os>Linux</os>
+                    <javaVersion>Java 17</javaVersion>
+                    <webContainer>Tomcat 10.0</webContainer>
+                </runtime>
+                <deployment>
+                    <resources>
+                        <resource>
+                            <directory>${project.basedir}/target</directory>
+                            <includes>
+                                <include>*.war</include>
+                            </includes>
+                        </resource>
+                    </resources>
+                </deployment>
+            </configuration>
+        </plugin>
+
         ```
 
     1. Save your changes by typing <kbd>Ctrl</kbd>+<kbd>S</kbd>.
@@ -150,31 +125,32 @@ To create an Azure service principal with the Azure CLI, use the following steps
     Maven displays a series of build messages, and the final message should indicate successful deployment to Azure:
 
     ```console
-    [INFO] ------------------------------------------------------------------------
+    [INFO] Scanning for projects...
+    [INFO] 
+    [INFO] -------------------< com.microsoft.example:MyWebApp >-------------------
     [INFO] Building MyWebApp Maven Webapp 1.0-SNAPSHOT
-    [INFO] ------------------------------------------------------------------------
-    [INFO]
-    [INFO] --- azure-webapp-maven-plugin:1.9.0:deploy (default-cli) @ MyWebApp ---
-    [INFO] Authenticate with file: /home/username/MyWebApp/auth.json
-    [INFO] [Correlation ID: 12345678-1234-1234-1234-123456789abc] Instance discovery was successful
-    [INFO] Updating app service plan
-    [INFO] Updating target Web App...
-    [INFO] Successfully updated Web App.
-    [INFO] Using 'UTF-8' encoding to copy filtered resources.
-    [INFO] Copying 1 resource to /home/robert/MyWebApp/target/azure-webapp/MyWebApp-1234567890
-    [INFO] Trying to deploy artifact to MyWebApp-1234567890...
-    [INFO] Deploying the war file MyWebApp.war...
-    [INFO] Successfully deployed the artifact to https://mywebapp-1234567890.azurewebsites.net
+    [INFO] --------------------------------[ war ]---------------------------------
+    [INFO] 
+    [INFO] --- azure-webapp-maven-plugin:2.13.0:deploy (default-cli) @ MyWebApp ---
+    [INFO] Auth type: SERVICE_PRINCIPAL
+    [INFO] Username: 74d82376-184f-400e-a08e-27cd522d7559
+    [INFO] There is only one subscription '...' in your account, will use it automatically.
+    [INFO] Subscription: ...
+    [INFO] Failed to get version of your artifact, skip artifact compatibility test
+    [INFO] Trying to deploy external resources to MyWebApp-1714654093047...
+    [INFO] Successfully deployed the resources to MyWebApp-1714654093047
+    [INFO] Trying to deploy artifact to MyWebApp-1714654093047...
+    [INFO] Deploying (/home/cephas/MyWebApp/target/MyWebApp.war)[war]  ...
+    [INFO] Application url: https://mywebapp-1714654093047.azurewebsites.net                            
     [INFO] ------------------------------------------------------------------------
     [INFO] BUILD SUCCESS
     [INFO] ------------------------------------------------------------------------
-    [INFO] Total time: 28.759 s
-    [INFO] Finished at: 2020-02-12T21:12:00+00:00
-    [INFO] Final Memory: 43M/286M
+    [INFO] Total time:  47.052 s
+    [INFO] Finished at: 2024-05-02T13:10:54Z
     [INFO] ------------------------------------------------------------------------
     ```
 
-    The `Authenticate with file: /home/username/MyWebApp/auth.json` line in the response indicates that your authentication file was used to publish your web app to Azure.
+    The `Auth type: SERVICE_PRINCIPAL` line in the response indicates that the service principal was used to publish your web app to Azure.
 
 ### Authentication with a Maven `settings.xml` file
 
@@ -190,16 +166,17 @@ The steps to create an Azure service principal with the Azure CLI are the same a
 
     Where `https://mywebapp-1234567890.azurewebsites.net/` is the URL of your web app.
 
-    This command will return a response with a JSON object that resembles the following example:
+    This command returns a response with a JSON object that resembles the following example:
 
     ```json
-    Creating a role assignment under the scope of "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss"
+    Creating 'Contributor' role assignment under scope '/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss'
+    The output includes credentials that you must protect. Be sure that you do not include these credentials in your code or check the credentials into your source control. For more information, see https://aka.ms/azadsp-cli
 
     {
       "appId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
       "displayName": "mywebapp-1234567890.azurewebsites.net/",
       "name": "https://mywebapp-1234567890.azurewebsites.net/",
-      "password": "pppppppp-pppp-pppp-pppp-pppppppppppp",
+      "password": "...",
       "tenant": "tttttttt-tttt-tttt-tttt-tttttttttttt"
     }
     ```
@@ -257,9 +234,10 @@ The steps to create an Azure service principal with the Azure CLI are the same a
     1. Add the following XML after the line containing the `<region>` element:
 
         ```xml
-        <authentication>
+        <auth>
+          <type>service_principal</type>
           <serverId>azure-auth</serverId>
-        </authentication>
+        </auth>
         ```
 
         Your `azure-webapp-maven-plugin` section should now resemble the following example:
@@ -268,21 +246,22 @@ The steps to create an Azure service principal with the Azure CLI are the same a
         <plugin> 
           <groupId>com.microsoft.azure</groupId>  
           <artifactId>azure-webapp-maven-plugin</artifactId>  
-          <version>1.9.0</version>  
+          <version>2.13.0</version>  
           <configuration> 
             <schemaVersion>V2</schemaVersion>  
             <resourceGroup>maven-publish</resourceGroup>  
             <appName>MyWebApp-1234567890</appName>  
-            <pricingTier>F1</pricingTier>  
+            <pricingTier>S1</pricingTier>  
             <region>centralus</region>
-            <authentication>
+            <auth>
+              <type>service_principal</type>
               <serverId>azure-auth</serverId>
-            </authentication>
-            <runtime> 
-              <os>linux</os>  
-              <javaVersion>jre8</javaVersion>  
-              <webContainer>TOMCAT 8.5</webContainer> 
-            </runtime>  
+            </auth>
+            <runtime>
+                <os>Linux</os>
+                <javaVersion>Java 17</javaVersion>
+                <webContainer>Tomcat 10.0</webContainer>
+            </runtime>
             <deployment> 
               <resources> 
                 <resource> 
@@ -310,28 +289,27 @@ The steps to create an Azure service principal with the Azure CLI are the same a
     Maven displays a series of build messages, and the final message should indicate successful deployment to Azure:
 
     ```console
-    [INFO] ------------------------------------------------------------------------
+    [INFO] -------------------< com.microsoft.example:MyWebApp >-------------------
     [INFO] Building MyWebApp Maven Webapp 1.0-SNAPSHOT
-    [INFO] ------------------------------------------------------------------------
-    [INFO]
-    [INFO] --- azure-webapp-maven-plugin:1.9.0:deploy (default-cli) @ MyWebApp ---
-    [INFO] Authenticate with ServerId: azure-auth
-    [INFO] [Correlation ID: 12345678-1234-1234-1234-123456789abc] Instance discovery was successful
-    [INFO] Updating app service plan
-    [INFO] Updating target Web App...
-    [INFO] Successfully updated Web App.
-    [INFO] Using 'UTF-8' encoding to copy filtered resources.
-    [INFO] Copying 1 resource to /home/robert/MyWebApp/target/azure-webapp/MyWebApp-1234567890
-    [INFO] Trying to deploy artifact to MyWebApp-1234567890...
-    [INFO] Deploying the war file MyWebApp.war...
-    [INFO] Successfully deployed the artifact to https://mywebapp-1234567890.azurewebsites.net
+    [INFO] --------------------------------[ war ]---------------------------------
+    [INFO] 
+    [INFO] --- azure-webapp-maven-plugin:2.13.0:deploy (default-cli) @ MyWebApp ---
+    [INFO] Auth type: SERVICE_PRINCIPAL
+    [INFO] Username: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa
+    [INFO] There is only one subscription '...' in your account, will use it automatically.
+    [INFO] Subscription: ...
+    [INFO] Failed to get version of your artifact, skip artifact compatibility test
+    [INFO] Trying to deploy external resources to MyWebApp-1714654093047...
+    [INFO] Successfully deployed the resources to MyWebApp-1714654093047
+    [INFO] Trying to deploy artifact to MyWebApp-1714654093047...
+    [INFO] Deploying (/home/cephas/MyWebApp/target/MyWebApp.war)[war]  ...
+    [INFO] Application url: https://mywebapp-1714654093047.azurewebsites.net                            
     [INFO] ------------------------------------------------------------------------
     [INFO] BUILD SUCCESS
     [INFO] ------------------------------------------------------------------------
-    [INFO] Total time: 21.648 s
-    [INFO] Finished at: 2020-02-12T21:12:00+00:00
-    [INFO] Final Memory: 43M/300M
+    [INFO] Total time:  53.611 s
+    [INFO] Finished at: 2024-05-02T13:53:31Z
     [INFO] ------------------------------------------------------------------------
     ```
 
-    The `Authenticate with ServerId: azure-auth` line in the response indicates that your service principal credentials were used to publish your web app to Azure.
+    The `Auth type: SERVICE_PRINCIPAL` line in the response indicates that your service principal credentials were used to publish your web app to Azure.

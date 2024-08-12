@@ -4,11 +4,11 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 08/18/2023
+  ms.date: 04/08/2024
   author: JnHs
   ms.author: jenhayes
   ms.topic: unit
-durationInMinutes: 3  
+durationInMinutes: 2  
 content: |
   [!include[](includes/9-summary.md)]
 quiz:
@@ -22,10 +22,10 @@ quiz:
       explanation: "The **Appearance + startup views** tab of **Settings** lets you apply different themes to the portal."
     - content: "Support + troubleshooting"
       isCorrect: false
-      explanation: "The **Support + troubleshooting** tab of **Settings** lets you create support requests and find helpful info, but not apply different themes."
-    - content: "Directories + subscriptions"
+      explanation: "The **Support + troubleshooting** pane lets you create support requests and find helpful info, but it doesn't let you apply different themes."
+    - content: "Notifications"
       isCorrect: false
-      explanation: "The **Directories + subscriptions** tab of **Settings** lets you switch directories or subscriptions, but not apply different themes."
+      explanation: "The **Notifications** pane lets you view notifications, but it doesn't let you apply different themes."
 
   - content: "Azure Advisor provides advice on which of these topics?"
     choices:
@@ -35,7 +35,7 @@ quiz:
     - content: "Best practices and security for your services"
       isCorrect: true
       explanation: "Azure Advisor is a free service built into Azure that provides recommendations on high availability, security, performance, and cost."
-    - content: "Using the Azure portal effectively"
+    - content: "Using the Azure portal to create resources"
       isCorrect: false
       explanation: "Azure Advisor is accessed from the Azure portal, but doesn't provide guidance on using the portal."
 

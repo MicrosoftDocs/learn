@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure
 title: Implement and monitor the integration of enterprise apps for SSO
 summary: Deploying and monitoring enterprise applications to Azure solutions can ensure security. Explore how to deploy on-premises and cloud based apps to users.

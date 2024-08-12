@@ -2,8 +2,8 @@
 uid: learn.chain-azure-functions-data-using-input-output-bindings.6-write-data-with-output-bindings-portal-lesson
 metadata:
   title: Write data with output bindings
-  description: In this hands-on unit, we'll write data from our Azure function to Azure Cosmos DB with the help of an output binding.
-  ms.date: 09/24/2018
+  description: In this hands-on unit, we write data from our Azure function to Azure Cosmos DB with the help of an output binding.
+  ms.date: 06/06/2024
   author: ggailey777
   ms.author: glenga
   ms.topic: unit

@@ -6,5 +6,4 @@ For additional reading, you can refer to the following resources:
 
 - [Migration overview: SQL Server to Azure SQL Database](/azure/azure-sql/migration-guides/database/sql-server-to-sql-database-overview)
 - [Azure SQL migration extension for Azure Data Studio](/sql/azure-data-studio/extensions/azure-sql-migration-extension)
-- [Data Migration Assistant](/sql/dma/dma-overview)
 - [Transactional Replication with Azure SQL Database](/azure/sql-database/sql-database-managed-instance-transactional-replication)

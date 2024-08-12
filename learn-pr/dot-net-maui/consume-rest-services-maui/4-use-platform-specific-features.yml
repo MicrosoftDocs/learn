@@ -5,7 +5,7 @@ metadata:
   unitType: unit
   title: "Use platform-specific network features"
   description: "Learn about the platform-specific network capabilities available to .NET MAUI apps."
-  ms.date: 10/13/2023
+  ms.date: 10/31/2023
   author: codemillmatt 
   ms.author: masoucou
   ms.manager: markl

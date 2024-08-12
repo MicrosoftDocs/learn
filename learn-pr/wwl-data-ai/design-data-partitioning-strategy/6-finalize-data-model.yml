@@ -4,12 +4,12 @@ title: Finalize the data model
 metadata:
   title: Finalize the data model
   description: "Finalize the data model"
-  ms.date: 10/17/2022
+  ms.date: 04/16/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-finalize-data-model.md)]

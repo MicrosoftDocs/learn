@@ -4,10 +4,12 @@ title: Establish AI-related roles and responsibilities
 metadata:
   title: Establish AI-related roles and responsibilities
   description: "Establish AI-related roles and responsibilities"
-  ms.date: 09/12/2023
+  ms.date: 08/12/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-durationInMinutes: 10
+  ms.custom:
+  - N/A
+durationInMinutes: 7
 content: |
   [!include[](includes/3-establish-ai-related-roles-responsibilities.md)]

@@ -3,7 +3,7 @@ uid: learn.design-a-hybrid-network-architecture.3-expressroute-for-hybrid-networ
 metadata:
   title: Use Azure ExpressRoute for hybrid networks
   description: Explore on-premises hybrid connectivity by using Azure ExpressRoute, get an overview of the components available in ExpressRoute, and walk through a reference architecture that supports this topology.
-  ms.date: 01/14/2020
+  ms.date: 02/16/2024
   author: duongau
   ms.author: duau
   ms.topic: unit

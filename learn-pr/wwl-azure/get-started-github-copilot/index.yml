@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-github-copilot
+metadata:
+  title: Get started with GitHub Copilot
+  description: This module introduces developers to the GitHub Copilot products, the benefits that GitHub Copilot provides to developers, the GitHub Copilot and GitHub Copilot Chat product features, and the GitHub Copilot extensions for Visual Studio Code.
+  author: wwlpublish
+  ms.author: cahowd
+  ms.date: 07/24/2024
+  ms.service: github-copilot
+  ms.topic: module-intro-to-product
+  ms.collection:
+    - wwl-ai-copilot
+  ms.devlang: csharp
+  ai-usage: ai-assisted
+title: Get started with GitHub Copilot
+summary: This module introduces developers to the GitHub Copilot products, the benefits that GitHub Copilot provides to developers, the GitHub Copilot and GitHub Copilot Chat product features, and the GitHub Copilot extensions for Visual Studio Code.
+abstract: |
+  By the end of this module, you'll be able to:
+
+  -   Explain what GitHub Copilot is and the advantages it provides.
+
+  -   Install the GitHub Copilot extensions for Visual Studio Code.
+
+  -   Explain the features of the GitHub Copilot extensions for Visual Studio Code and how to use them.
+
+  -   Configure the GitHub Copilot extensions for Visual Studio Code.
+prerequisites: |
+  -   An active subscription for GitHub Copilot in your personal GitHub account (or associated with a subscription managed by an organization or enterprise) is required.
+
+  -   Awareness of the GitHub Copilot free trial conditions. If you choose the free trial offer for GitHub Copilot, a form of payment is requested at sign-up. Charges aren't applied until the trial is over, unless you cancel before the conclusion of the 30-day period.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- github
+subjects:
+- app-development
+- productivity
+units:
+- learn.wwl.get-started-github-copilot.introduction
+- learn.wwl.get-started-github-copilot.examine-ai-assisted-programming-tools
+- learn.wwl.get-started-github-copilot.examine-github-copilot-benefits
+- learn.wwl.get-started-github-copilot.exercise-install-github-copilot-extensions-visual-studio-code
+- learn.wwl.get-started-github-copilot.examine-autocomplete-features-github-copilot-extension
+- learn.wwl.get-started-github-copilot.examine-ai-assistance-features-github-copilot-chat-extension
+- learn.wwl.get-started-github-copilot.exercise-configure-github-copilot-extensions-visual-studio-code
+- learn.wwl.get-started-github-copilot.knowledge-check
+- learn.wwl.get-started-github-copilot.summary
+badge:
+  uid: learn.wwl.get-started-github-copilot.badge

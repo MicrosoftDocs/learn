@@ -3,11 +3,13 @@ uid: learn.wwl.manage-compare-models-azure-machine-learning.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your knowledge on creating and exploring the Responsible AI dashboard."
-  ms.date: 09/11/2023
+  description: Check your knowledge on creating and exploring the Responsible AI dashboard.
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 09/11/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
   questions:

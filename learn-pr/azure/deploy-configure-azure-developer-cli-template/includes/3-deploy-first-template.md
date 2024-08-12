@@ -6,7 +6,7 @@ When getting started with `azd`, it's often easiest to find an existing template
 azd template list
 ```
 
-For this example, you'll use the existing [todo-nodejs-mongo](https://github.com/Azure-Samples/todo-nodejs-mongo) template built around the Node.js and MongoDB stack. Even if you have never worked with these technologies, you can still complete the steps ahead, since `azd` handles most of the work for you. This template will create a set of resources in Azure that are similar to those outlined in the sample scenario at the beginning of the module.
+For this example, you'll use the existing [todo-nodejs-mongo](https://github.com/Azure-Samples/todo-nodejs-mongo) template built around the Node.js and MongoDB stack. Even if you've never worked with these technologies, you can still complete the steps ahead, because `azd` handles most of the work for you. This template creates a set of resources in Azure that are similar to those outlined in the sample scenario at the beginning of the module.
 
 > [!NOTE]
 > The same `azd` steps described in this module also apply to templates built around other languages or technologies, such as C# or Python.
@@ -31,13 +31,13 @@ The most common starter workflow for `azd` only requires a few commands. You'll 
     azd auth login
     ```
 
-3. Run the `azd up` command to provision and deploy the template resources to Azure. When prompted, select the subscription and location you would like to deploy to.
+1. Run the `azd up` command to provision and deploy the template resources to Azure. When prompted, select the subscription and location you would like to deploy to.
 
     ```azdeveloper
     azd up
     ```
 
-The `azd up` command may take several minutes to run. Each template provisions different Azure resources and configurations, which means different templates require varying amounts of time to complete. You should see updates printed out in the console as the process runs. When it completes, a link to the deployed site will be displayed. You should also see a link to the deployment process in Azure, which you can visit to view additional deployment information.
+The `azd up` command might take several minutes to run. Each template provisions different Azure resources and configurations, which means different templates require varying amounts of time to complete. You should see updates printed out in the console as the process runs. When it completes, a link to the deployed site will be displayed. You should also see a link to the deployment process in Azure, which you can visit to view additional deployment information.
 
 The deployed application should look similar to the following screenshot:
 
@@ -47,7 +47,7 @@ You can also view the resources that were created in Azure by navigating to your
 
 1. In the main Azure portal search bar, search for the resource group `azd` created for you by typing `rg-azdlearn`. By convention, the resource group will be the environment name you specified prefixed with `rg-`.
 
-2. Select the resource group from the results to navigate to the overview page. You should see a list of the different resources that were created for you by `azd`.
+1. Select the resource group from the results to navigate to the overview page. You should see a list of the different resources that were created for you by `azd`.
 
     :::image type="content" source="../media/deployed-resources.png" alt-text="A screenshot showing the deployed resources.":::
 

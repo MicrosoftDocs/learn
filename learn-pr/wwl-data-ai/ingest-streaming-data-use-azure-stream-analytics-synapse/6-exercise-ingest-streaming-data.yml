@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
-  ms.service: stream-analytics
 durationInMinutes: 45
 content: |
   [!include[](includes/6-exercise-ingest-streaming-data.md)]

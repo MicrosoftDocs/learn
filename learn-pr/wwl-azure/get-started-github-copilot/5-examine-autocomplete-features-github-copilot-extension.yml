@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-github-copilot.examine-autocomplete-features-github-copilot-extension
+title: Examine the autocomplete features of the GitHub Copilot extension
+metadata:
+  title: Examine the autocomplete features of the GitHub Copilot extension
+  description: Examine the autocomplete features of the GitHub Copilot extension
+  author: wwlpublish
+  ms.author: cahowd
+  ms.date: 07/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-examine-autocomplete-features-github-copilot-extension.md)]

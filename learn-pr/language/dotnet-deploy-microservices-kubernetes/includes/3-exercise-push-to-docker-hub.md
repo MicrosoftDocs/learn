@@ -11,11 +11,14 @@ To use a **codespace**, create a preconfigured GitHub Codespace with [this Codes
 
 The process takes several minutes while GitHub creates and configures the codespace. Once finished, the code used for the rest of this module is in the **/dotnet-kubernetes** directory.
 
-To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your own GitHub account. Then open the folder in Visual Studio Code:
+To use **Visual Studio Code**, clone the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your local machine. Then:
 
-1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
-1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
-1. Select your forked repository. Visual Studio Code creates your development container locally.
+1. Install any [system requiements](https://code.visualstudio.com/docs/devcontainers/containers) to run Dev Container in Visual Studio Code.
+1. Make sure Docker is running. 
+1. In a new Visual Studio Code window open the folder of the cloned repository
+1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
+1. Search: **>Dev Containers: Rebuild and Reopen in Container**
+1. Select **eShopLite - dotnet-kubernetes** from the drop down. Visual Studio Code creates your development container locally.
 
 ### Verify the Docker images by creating containers in the codespace
 

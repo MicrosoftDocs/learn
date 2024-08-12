@@ -8,8 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.custom: N/A, devx-track-azurecli
 azureSandbox: true
 durationInMinutes: 10
 content: |

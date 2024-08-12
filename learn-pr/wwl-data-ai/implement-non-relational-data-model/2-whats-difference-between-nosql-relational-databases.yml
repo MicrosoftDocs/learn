@@ -4,10 +4,12 @@ title: What's the difference between NoSQL and relational databases?
 metadata:
   title: What's the difference between NoSQL and relational databases?
   description: "What's the difference between NoSQL and relational databases?"
-  ms.date: 02/06/2024
+  ms.date: 04/16/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/2-whats-difference-between-nosql-relational-databases.md)]

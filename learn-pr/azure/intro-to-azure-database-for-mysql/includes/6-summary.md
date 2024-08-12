@@ -1,12 +1,12 @@
-Our goal was to help you determine whether Azure Database for MySQL would be a good choice for your organization. The following criteria were developed to help you with your decision:
+Throughout this module, you explored the capabilities and features of Azure Database for MySQL, emphasizing its role as a fully managed Database as a Service (DBaaS) solution that simplifies the management of mission-critical workloads with predictable performance and dynamic scalability. You also evaluated the features and capabilities of running MySQL on Azure VMs, exploring insights assess which deployment option works best for the needs of your organization.
+The module covered the two primary deployment options for running MySQL workloads on Azure. Each option presents unique benefits and considerations:
 
-- Administrative effort
-- Cost
-- High-availability options
+- **Azure Database for MySQL - Flexible Server**: This DBaaS option is designed for ease of use, offering built-in high availability, automated backups, and support for automatic scaling of compute and storage resources. It's particularly suitable for organizations looking to reduce administrative overhead while ensuring high availability and disaster recovery capabilities.
+- **MySQL on Azure VMs**: This IaaS option provides greater control over the database environment, allowing customization of the operating system and MySQL configurations. It's ideal for scenarios requiring specific MySQL versions not supported by the Flexible Server or when extensive customization is necessary.
 
-You applied these criteria to your organization, where your cloud architects and developers don't want to concern themselves with managing their apps' underlying OS and database. They want to focus on the development of their cloud-designed apps. Our analysis should have helped you decide that by using Azure Database for MySQL, a managed relational DBaaS offering, you can help your developers achieve this focus. Azure Database for MySQL can handle your mission-critical workloads with predictable performance and dynamic scalability.
+The decision criteria outlined in this module—administrative effort, cost, and high availability options—were intended to guide you in assessing which deployment model best aligns with your technical requirements and strategic goals. We examined how each model handles scalability, security, and data management, providing a foundation for informed decision-making.
 
-The criteria should have helped you evaluate whether you can easily connect your existing client apps and database tools to your instance of Azure Database for MySQL. Allowing you to get the benefits of a PaaS environment. You've also analyzed the cost benefits and the use of high-availability options. You should now be able to assess whether Azure Database for MySQL can help you address your organization's database requirements.
+As you consider using MySQL in your organization, it is crucial to weigh the operational advantages against the need for direct control over the database environment. Whether the Azure Database for MySQL's managed service benefits or MySQL's customization capabilities on Azure VMs better support your workload requirements, this decision will significantly impact your operational efficiency and scalability.
 
 ## References
 

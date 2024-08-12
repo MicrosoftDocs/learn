@@ -1,50 +1,69 @@
-Securing an Internet of Things (IoT) infrastructure requires a rigorous security-in-depth strategy. This strategy requires you to secure data in the cloud, protect data integrity while in transit over the public Internet, and securely provision devices. Each layer builds greater security assurance in the overall infrastructure.
+This overview introduces the key concepts around securing a typical Azure IoT solution. The following diagram shows a high-level view of the components in a typical IoT solution. This unit focuses on the security of an IoT solution.
 
-## IoT solution contributors and security
+:::image type="content" source="../media/internet-of-things-security-component-f716fa3b.svg" alt-text="Diagram showing an example of the components in a typical Internet of Things solution.":::
 
-This security-in-depth strategy can be developed and executed with active participation of various players involved with the manufacturing, development, and deployment of IoT devices and infrastructure. Following is a high-level description of these players.
 
- -  IoT hardware manufacturer/integrator: Typically, these players are the manufacturers of IoT hardware being deployed, integrators assembling hardware from various manufacturers, or suppliers providing hardware for an IoT deployment manufactured or integrated by other suppliers.
- -  IoT solution developer: The development of an IoT solution is typically done by a solution developer. This developer may part of an in-house team or a system integrator (SI) specializing in this activity. The IoT solution developer can develop various components of the IoT solution from scratch, integrate various off-the-shelf or open-source components, or adopt solution accelerators with minor adaptation.
- -  IoT solution deployer: After an IoT solution is developed, it needs to be deployed in the field. This process involves deployment of hardware, interconnection of devices, and deployment of solutions in hardware devices or the cloud.
- -  IoT solution operator: After the IoT solution is deployed, it requires long-term operations, monitoring, upgrades, and maintenance. These tasks can be done by an in-house team that comprises information technology specialists, hardware operations and maintenance teams, and domain specialists who monitor the correct behavior of overall IoT infrastructure.
+You can divide security in an IoT solution into the following three areas:
 
-The sections that follow provide best practices for each of these players to help develop, deploy, and operate a secure IoT infrastructure.
+ -  **Device security**: Secure the IoT device while it's deployed in the wild.
+ -  **Connection security**: Ensure all data transmitted between the IoT device and the IoT cloud services is confidential and tamper-proof.
+ -  **Cloud security**: Secure your data while it moves through, and is stored in the cloud.
 
-## IoT hardware manufacturer/integrator
+Implementing the recommendations in this article helps you meet the security obligations described in the [shared responsibility model](/azure/security/fundamentals/shared-responsibility).
 
-The following are the best practices for IoT hardware manufacturers and hardware integrators.
+## Microsoft Defender for IoT
 
- -  Scope hardware to minimum requirements: The hardware design should include the minimum features required for operation of the hardware, and nothing more. An example is to include USB ports only if necessary for the operation of the device. These extra features open the device for unwanted attack vectors that should be avoided.
- -  Make hardware tamper proof: Build in mechanisms to detect physical tampering, such as opening of the device cover or removing a part of the device. These tamper signals may be part of the data stream uploaded to the cloud, which could alert operators of these events.
- -  Build around secure hardware: If COGS permits, build security features such as secure and encrypted storage, or boot functionality based on Trusted Platform Module (TPM). These features make devices more secure and help protect the overall IoT infrastructure.
- -  Make upgrades secure: Firmware upgrades during the lifetime of the device are inevitable. Building devices with secure paths for upgrades and cryptographic assurance of firmware versions will allow the device to be secure during and after upgrades.
+Microsoft Defender for IoT can automatically monitor some of the recommendations included in this article. Microsoft Defender for IoT should be the first line of defense to protect your resources in Azure. Microsoft Defender for IoT periodically analyzes the security state of your Azure resources to identify potential security vulnerabilities. It then provides you with recommendations on how to address them. To learn more, see:
 
-## IoT solution developer
+ -  [Enhance security posture with security recommendations](/azure/defender-for-iot/organizations/recommendations).
+ -  [What is Microsoft Defender for IoT for organizations?](/azure/defender-for-iot/organizations/overview).
+ -  [What is Microsoft Defender for IoT for device builders?](/azure/defender-for-iot/device-builders/overview).
 
-The following are the best practices for IoT solution developers:
+## Device security
 
- -  Follow secure software development methodology: Development of secure software requires ground-up thinking about security, from the inception of the project all the way to its implementation, testing, and deployment. The choices of platforms, languages, and tools are all influenced with this methodology. The Microsoft Security Development Lifecycle provides a step-by-step approach to building secure software.
- -  Choose open-source software with care: Open-source software provides an opportunity to quickly develop solutions. When you're choosing open-source software, consider the activity level of the community for each open-source component. An active community ensures that software is supported and that issues are discovered and addressed. Alternatively, an obscure and inactive open-source software project might not be supported and issues are not likely be discovered.
- -  Integrate with care: Many software security flaws exist at the boundary of libraries and APIs. Functionality that may not be required for the current deployment might still be available via an API layer. To ensure overall security, make sure to check all interfaces of components being integrated for security flaws.
+ -  Scope hardware to minimum requirements: Select your device hardware to include the minimum features required for its operation, and nothing more. For example, only include USB ports if they're necessary for the operation of the device in your solution. Extra features can expose the device to unwanted attack vectors.
+ -  Select tamper proof hardware: Select device hardware with built-in mechanisms to detect physical tampering, such as the opening of the device cover or the removal of a part of the device. These tamper signals can be part of the data stream uploaded to the cloud, which can alert operators to these events.
+ -  Select secure hardware: If possible choose device hardware that includes security features such as secure and encrypted storage and boot functionality based on a Trusted Platform Module. These features make devices more secure and help protect the overall IoT infrastructure.
+ -  Enable secure upgrades: Firmware upgrades during the lifetime of the device are inevitable. Build devices with secure paths for upgrades and cryptographic assurance of firmware versions to secure your devices during and after upgrades.
+ -  Follow a secure software development methodology: The development of secure software requires you to consider security from the inception of the project all the way through implementation, testing, and deployment. The [Microsoft Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/) provides a step-by-step approach to building secure software.
+ -  Use device SDKs whenever possible: Device SDKs implement various security features such as encryption and authentication that help you develop robust and secure device applications. To learn more, see [Azure IoT SDKs](/azure/iot/iot-sdks).
+ -  Choose open-source software with care: Open-source software provides an opportunity to quickly develop solutions. When you're choosing open-source software, consider the activity level of the community for each open-source component. An active community ensures that software is supported and that issues are discovered and addressed. An obscure and inactive open-source software project might not be supported and issues aren't likely be discovered.
+ -  Deploy hardware securely: IoT deployments may require you to deploy hardware in unsecure locations, such as in public spaces or unsupervised locales. In such situations, ensure that hardware deployment is as tamper-proof as possible. For example, if the hardware has USB ports ensure that they're covered securely.
+ -  Keep authentication keys safe: During deployment, each device requires device IDs and associated authentication keys generated by the cloud service. Keep these keys physically safe even after the deployment. A malicious device can use any compromised key to masquerade as an existing device.
+ -  Keep the system up-to-date: Ensure that device operating systems and all device drivers are upgraded to the latest versions. Keeping operating systems up-to-date helps ensure that they're protected against malicious attacks.
+ -  Protect against malicious activity: If the operating system permits, install the latest antivirus and antimalware capabilities on each device operating system.
+ -  Audit frequently: Auditing IoT infrastructure for security-related issues is key when responding to security incidents. Most operating systems provide built-in event logging that you should review frequently to make sure no security breach has occurred. A device can send audit information as a separate telemetry stream to the cloud service where it can be analyzed.
+ -  Follow device manufacturer security and deployment best practices: If the device manufacturer provides security and deployment guidance, follow that guidance in addition to the generic guidance listed in this article.
 
-## IoT solution deployer
+Use a field gateway to provide security services for legacy or constrained devices: Legacy and constrained devices might lack the capability to encrypt data, connect with the Internet, or provide advanced auditing. In these cases, a modern and secure field gateway can aggregate data from legacy devices and provide the security required for connecting these devices over the Internet. Field gateways can provide secure authentication, negotiation of encrypted sessions, receipt of commands from the cloud, and many other security features.
 
-The following are best practices for IoT solution deployers:
+## Connection security<br>
 
- -  Deploy hardware securely: IoT deployments may require hardware to be deployed in unsecure locations, such as in public spaces or unsupervised locales. In such situations, ensure that hardware deployment is tamper-proof to the maximum extent. If USB or other ports are available on the hardware, ensure that they are covered securely. Many attack vectors can use these as entry points.
- -  Keep authentication keys safe: During deployment, each device requires device IDs and associated authentication keys generated by the cloud service. Keep these keys physically safe even after the deployment. Any compromised key can be used by a malicious device to masquerade as an existing device.
+ -  Use X.509 certificates to authenticate your devices to IoT Hub or IoT Central: IoT Hub and IoT Central support both X509 certificate-based authentication and security tokens as methods for a device to authenticate. If possible, use X509-based authentication in production environments as it provides greater security. To learn more, see [Authenticating a device to IoT Hub](/azure/iot-hub/iot-hub-dev-guide-sas#authenticating-a-device-to-iot-hub) and [Device authentication concepts in IoT Central](/azure/iot-central/core/concepts-device-authentication).
+ -  Use Transport Layer Security (TLS) 1.2 to secure connections from devices: IoT Hub and IoT Central use TLS to secure connections from IoT devices and services. Three versions of the TLS protocol are currently supported: 1.0, 1.1, and 1.2. TLS 1.0 and 1.1 are considered legacy. To learn more, see [Authentication and authorization](/azure/iot/iot-overview-device-connectivity#authentication).
+ -  Ensure you have a way to update the TLS root certificate on your devices: TLS root certificates are long-lived, but they still may expire or be revoked. If there's no way of updating the certificate on the device, the device may not be able to connect to IoT Hub, IoT Central, or any other cloud service at a later date.
+ -  Consider using Azure Private Link: Azure Private Link lets you connect your devices to a private endpoint on your VNet, enabling you to block access to your IoT hub's public device-facing endpoints. To learn more, see [Ingress connectivity to IoT Hub using Azure Private Link](/azure/iot-hub/virtual-network-support#ingress-connectivity-to-iot-hub-using-azure-private-link) and [Network security for IoT Central using private endpoints](/azure/iot-central/core/concepts-private-endpoints).
 
-## IoT solution operator
+## Cloud security
 
-The following are the best practices for IoT solution operators:
-
- -  Keep the system up to date: Ensure that device operating systems and all device drivers are upgraded to the latest versions. If you turn on automatic updates in Windows 10 (IoT or other SKUs), Microsoft keeps it up to date, providing a secure operating system for IoT devices. Keeping other operating systems (such as Linux) up-to-date helps ensure that they are also protected against malicious attacks.
- -  Protect against malicious activity: If the operating system permits, install the latest antivirus and antimalware capabilities on each device operating system. This practice can help mitigate most external threats. You can protect most modern operating systems against threats by taking appropriate steps.
- -  Audit frequently: Auditing IoT infrastructure for security-related issues is key when responding to security incidents. Most operating systems provide built-in event logging that should be reviewed frequently to make sure no security breach has occurred. Audit information can be sent as a separate telemetry stream to the cloud service where it can be analyzed.
- -  Physically protect the IoT infrastructure: The worst security attacks against IoT infrastructure are launched using physical access to devices. One important safety practice is to protect against malicious use of USB ports and other physical access. One key to uncovering breaches that might have occurred is logging of physical access, such as USB port use. Again, Windows 10 (IoT and other SKUs) enables detailed logging of these events.
- -  Protect cloud credentials: Cloud authentication credentials used for configuring and operating an IoT deployment are possibly the easiest way to gain access and compromise an IoT system. Protect the credentials by changing the password frequently, and refrain from using these credentials on public machines.
-
-Capabilities of different IoT devices vary. Some devices might be computers running common desktop operating systems, and some devices might be running very light-weight operating systems. The security best practices described previously might be applicable to these devices in varying degrees. If provided, security and deployment best practices from the manufacturers of these devices should be followed.
-
-Some legacy and constrained devices might not have been designed specifically for IoT deployment. These devices might lack the capability to encrypt data, connect with the Internet, or provide advanced auditing. In these cases, a modern and secure field gateway can aggregate data from legacy devices and provide the security required for connecting these devices over the Internet. Field gateways can provide secure authentication, negotiation of encrypted sessions, receipt of commands from the cloud, and many other security features.
+ -  Follow a secure software development methodology: The development of secure software requires you to consider security from the inception of the project all the way through implementation, testing, and deployment. The [Microsoft Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/) provides a step-by-step approach to building secure software.
+ -  Choose open-source software with care: Open-source software provides an opportunity to quickly develop solutions. When you're choosing open-source software, consider the activity level of the community for each open-source component. An active community ensures that software is supported and that issues are discovered and addressed. An obscure and inactive open-source software project might not be supported and issues aren't likely be discovered.
+ -  Integrate with care: Many software security flaws exist at the boundary of libraries and APIs. Functionality that may not be required for the current deployment might still be available by through an API layer. To ensure overall security, make sure to check all interfaces of components being integrated for security flaws.
+ -  Protect cloud credentials: An attacker can use the cloud authentication credentials you use to configure and operate your IoT deployment to gain access to and compromise your IoT system. Protect the credentials by changing the password frequently, and don't use these credentials on public machines.
+ -  Define access controls for your IoT hub: Understand and define the type of access that each component in your IoT Hub solution needs based on the required functionality. There are two ways you can grant permissions for the service APIs to connect to your IoT hub: [Microsoft Entra ID](/azure/iot-hub/iot-hub-dev-guide-azure-ad-rbac) or [Shared Access signatures](/azure/iot-hub/iot-hub-dev-guide-sas).
+ -  Define access controls for your IoT Central application: Understand and define the type of access that you enable for your IoT Central application. To learn more, see:
+    
+    
+     -  [Manage users and roles in your IoT Central application](/azure/iot-central/core/howto-manage-users-roles)
+     -  [Manage IoT Central organizations](/azure/iot-central/core/howto-create-organizations)
+     -  [Use audit logs to track activity in your IoT Central application](/azure/iot-central/core/howto-use-audit-logs)
+     -  [How to authenticate and authorize IoT Central REST API calls](/azure/iot-central/core/howto-authorize-rest-api)
+ -  Define access controls for backend services: Other Azure services can consume the data your IoT hub or IoT Central application ingests from your devices. You can route messages from your devices to other Azure services. Understand and configure appropriate access permissions for IoT Hub or IoT Central to connect to these services. To learn more, see:
+    
+    
+     -  [Read device-to-cloud messages from the IoT Hub built-in endpoint](/azure/iot-hub/iot-hub-devguide-messages-read-builtin)
+     -  [Use IoT Hub message routing to send device-to-cloud messages to different endpoints](/azure/iot-hub/iot-hub-devguide-messages-d2c)
+     -  [Export IoT Central data](/azure/iot-central/core/howto-export-to-blob-storage)
+     -  [Export IoT Central data to a secure destination on an Azure Virtual Network](/azure/iot-central/core/howto-connect-secure-vnet)
+ -  Monitor your IoT solution from the cloud: Monitor the overall health of your IoT solution using the [IoT Hub metrics in Azure Monitor](/azure/iot-hub/monitor-iot-hub) or [Monitor IoT Central application health](/azure/iot-central/core/howto-manage-and-monitor-iot-central#monitor-application-health).
+ -  Set up diagnostics: Monitor your operations by logging events in your solution, and then sending the diagnostic logs to Azure Monitor. To learn more, see [Monitor and diagnose problems in your IoT hub](/azure/iot-hub/monitor-iot-hub).

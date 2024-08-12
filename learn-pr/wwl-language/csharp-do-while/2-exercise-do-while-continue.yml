@@ -4,10 +4,12 @@ title: Exercise - Create do and while iteration loops
 metadata:
   title: Exercise - Create do and while iteration loops
   description: "Exercise - Create do and while iteration loops"
-  ms.date: 02/22/2024
+  ms.date: 06/10/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-do-while-continue.md)]

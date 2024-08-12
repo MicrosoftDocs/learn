@@ -4,12 +4,12 @@ title: Define Windows Server and Hyper-V containers and isolation modes
 metadata:
   title: Define Windows Server and Hyper-V containers and isolation modes
   description: "Define Windows Server and Hyper-V containers and isolation modes"
-  ms.date: 07/04/2023
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/4-define-hyper-v-containers-isolation-modes.md)]

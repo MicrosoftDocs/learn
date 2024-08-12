@@ -4,7 +4,7 @@ title: Create a custom GitHub action
 metadata:
   title: Create a custom GitHub action
   description: Learn about the different types of GitHub actions and the metadata, syntax, and workflow commands to create custom actions.
-  ms.date: 04/14/2021
+  ms.date: 07/24/2023
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit

@@ -4,7 +4,7 @@ title: Exercise - Send messages to Azure Service Bus
 metadata:
   title: Exercise - Send messages to Azure Service Bus
   description: Write a Spring Boot app to send messages to Azure Service Bus.
-  ms.date: 10/06/2022
+  ms.date: 02/07/2024
   author: spelluru
   ms.author: spelluru
   ms.topic: unit

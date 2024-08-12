@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
-  ms.service: azure
 durationInMinutes: 9
 content: |
   [!include[](includes/9-user-accounts-azure-active-directory.md)]

@@ -4,11 +4,12 @@ title: Understand threat modeling
 metadata:
   title: Understand threat modeling
   description: "Understand threat modeling"
-  ms.date: 06/13/2023
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-  zone_pivot_groups: azure-interface
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/7-understand-threat-modeling.md)]

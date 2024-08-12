@@ -7,9 +7,7 @@ metadata:
   ms.date: 11/03/2023
   author: lgayhardt
   ms.author: lagayhar
-  ms.topic: unit
-  ms.service: machine-learning
-  ms.subservice: responsible-ai  
+  ms.topic: unit 
 durationInMinutes: 2
 content: |
   [!include[](includes/4-model-performance-inconsistencies.md)]

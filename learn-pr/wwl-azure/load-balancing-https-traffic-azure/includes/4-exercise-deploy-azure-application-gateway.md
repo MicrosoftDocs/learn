@@ -1,4 +1,3 @@
-
 ## Lab scenario
 
 In this lab, you use the Azure portal to create an application gateway. Then you test it to make sure it works correctly.

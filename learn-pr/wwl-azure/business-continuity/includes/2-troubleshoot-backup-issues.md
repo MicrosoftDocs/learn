@@ -203,7 +203,7 @@ C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.RecoveryServices.VMSnapshot
 
 - Are there entries in the Event Log? The Event Log may show backup failures from products other than Azure Backup. If Azure Backup is failing, find the corresponding error code in [Common Issues](/azure/backup/backup-azure-troubleshoot-vm-backup-fails-snapshot-timeout) to discover the solution.
 
-For an up-to-date list of common error messages, see [Troubleshoot backup errors with Azure VMs - Azure Backup | Microsoft Docs](/azure/backup/backup-azure-vms-troubleshoot).
+For an up-to-date list of common error messages, see [Troubleshoot backup errors with Azure VMs - Azure Backup | Microsoft Learn](/azure/backup/backup-azure-vms-troubleshoot).
 
 ## Troubleshoot Azure Backup Server issues
 
@@ -259,4 +259,4 @@ If you have problems with scheduled backups, try the following:
 
 - If you get a message saying the recovery point is crash-consistent, check whether the VM is switched on. If the VM is not on, it will be backed up as an offline VM and the recovery point will be crash-consistent. This means that Azure gives no guarantee about the consistency of the data on the storage medium.
 
-- [Troubleshoot scheduled backup job failures - Data Protection Manager | Microsoft Docs](/troubleshoot/system-center/dpm/troubleshoot-scheduled-backup-job-failures)
+- [Troubleshoot scheduled backup job failures - Data Protection Manager | Microsoft Learn](/troubleshoot/system-center/dpm/troubleshoot-scheduled-backup-job-failures)

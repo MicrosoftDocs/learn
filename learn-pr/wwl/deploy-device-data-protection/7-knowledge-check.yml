@@ -4,12 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/21/2023
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
-  ms.custom:
-  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -23,10 +21,10 @@ quiz:
       explanation: "Correct. When you implement EFS, the most important task is to properly manage EFS certificates for users. Encryption provided by EFS is based on user certificates, and their public and private keys. Without proper certificate management, you can easily get into a situation where encrypted data isn't accessible."
     - content: "Include a strong password policy and user education to protect EFS-encrypted files"
       isCorrect: false
-      explanation: "Incorrect. This item is a requirement of basic EFS encryption functionality, but it isn't the most important task that Contoso must complete to implement EFS. Try again."
+      explanation: "Incorrect. This item is a requirement of basic EFS encryption functionality, but it isn't the most important task that Contoso must complete implementing EFS. Try again."
     - content: "Configure the network traffic to be encrypted by using Internet Protocol Security (IPSec)"
       isCorrect: false
-      explanation: "Incorrect. This item is a requirement of basic EFS encryption functionality, but it isn't the most important task that Contoso must complete to implement EFS. Try again."
+      explanation: "Incorrect. This item is a requirement of basic EFS encryption functionality, but it isn't the most important task that Contoso must complete implementing EFS. Try again."
   - content: "You want to create a Windows Information Protection (WIP) policy in Intune. In the policy, you defined which applications are protected and the level of protection provided. What's another parameter that must be defined in the WIP policy?"
     choices:
     - content: "Revoke encryption keys on unenroll setting"
@@ -37,4 +35,4 @@ quiz:
       explanation: "Incorrect. This item is an optional WIP policy setting. Try again."
     - content: "Where apps can find organizational data on your network"
       isCorrect: true
-      explanation: "Correct. WIP needs to know where the apps can find and access organizational data on your network, also known as the network boundary. There is no default set of locations or automatic way to define these locations. You must add them to your WIP policies, and you can add as many locations as you require."
+      explanation: "Correct. WIP needs to know where the apps can find and access organizational data on your network, also known as the network boundary. There's no default set of locations or automatic way to define these locations. You must add them to your WIP policies, and you can add as many locations as you require."

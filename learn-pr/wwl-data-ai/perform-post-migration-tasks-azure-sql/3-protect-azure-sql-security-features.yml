@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: unit
-  ms.service: azure
 durationInMinutes: 9
 content: |
   [!include[](includes/3-protect-azure-sql-security-features.md)]

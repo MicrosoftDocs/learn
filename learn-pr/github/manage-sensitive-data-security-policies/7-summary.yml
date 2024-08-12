@@ -5,9 +5,9 @@ metadata:
   unitType: summary
   title: Summary
   description: Summary of managing sensitive data and security policies within GitHub.
-  ms.date: 02/02/2024
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 05/03/2024
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 5
 content: |

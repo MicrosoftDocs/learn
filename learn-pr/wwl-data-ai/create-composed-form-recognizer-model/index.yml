@@ -2,16 +2,15 @@
 uid: learn.wwl.create-composed-form-recognizer-model
 metadata:
   title: Create a composed Azure AI Document Intelligence model
-  description: "Create a composed Form Recognizer model"
-  ms.date: 03/05/2024
+  description: Create a composed Document intelligence model.
   author: wwlpublish
-  ms.author: rcaper
-  ms.topic: module-standard-task-based
-  ms.custom:
-  - N/A
+  ms.author: berryivor
+  ms.date: 03/05/2024
   ms.service: azure-ai-document-intelligence
-  ai-usage: human-only
-title: Create a composed Form Recognizer model
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+title: Create a composed Document intelligence model
 summary: Learn how to assemble custom models into composed solutions that can analyze different types of your own documents.
 abstract: |
   In this module, you'll learn to:

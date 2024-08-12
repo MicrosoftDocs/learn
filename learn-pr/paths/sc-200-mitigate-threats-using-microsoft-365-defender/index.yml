@@ -25,6 +25,7 @@ products:
 - m365
 - defender-endpoint
 - microsoft-defender
+- defender-xdr
 subjects:
 - cloud-security
 - security

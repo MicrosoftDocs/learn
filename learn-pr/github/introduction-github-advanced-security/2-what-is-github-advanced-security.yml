@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-github-advanced-security.what-is-github-advanced-security
-title: What is GitHub Advanced Security?
+title: Define GHAS and the importance of its integral features
 metadata:
   unitType: learning-content
-  title: "What is GitHub Advanced Security" # user input: module title for browser tab and search results
-  description: In this unit, you'll be introduced to GitHub Advanced Security # user input: a description for site search and SEO
-  ms.date: 01/28/2022
-  author: rmcmurray
-  ms.author: robmcm
+  title: "Define GHAS and the Importance of Its Integral Features" # user input: module title for browser tab and search results
+  description: In this unit, you're introduced to GitHub Advanced Security # user input: a description for site search and SEO
+  ms.date: 03/20/2024
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
-durationInMinutes: 5 # user input: the estimate time to complete the unit
+durationInMinutes: 10 # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/2-what-is-github-advanced-security.md)]

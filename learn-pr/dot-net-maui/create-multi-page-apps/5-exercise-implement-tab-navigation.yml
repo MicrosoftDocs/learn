@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: "Exercise: Implement tab navigation"
   description: "Use the TabbedPage class to create a multi-page app"
-  ms.date: 10/13/2023
+  ms.date: 10/26/2023
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl

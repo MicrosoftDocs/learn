@@ -3,7 +3,7 @@ uid: learn.aks-secrets-configure-app.4-concept-configmaps
 metadata:
   title: Understand Kubernetes ConfigMaps
   description: Explore the concepts behind how to decouple application configuration using ConfigMaps.
-  ms.date: 10/09/2023
+  ms.date: 01/26/2024
   author: nickomang
   ms.author: nickoman
   ms.topic: unit

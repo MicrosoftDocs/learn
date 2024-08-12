@@ -4,12 +4,12 @@ title: Choose between Microsoft-hosted versus self-hosted agents
 metadata:
   title: Choose between Microsoft-hosted versus self-hosted agents
   description: "Choose between Microsoft-hosted versus self-hosted agents"
-  ms.date: 07/13/2023
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/2-choose-between-microsoft-hosted-versus-self-hosted-agents.md)]

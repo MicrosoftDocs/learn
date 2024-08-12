@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish  
   ms.author: kelawson
   ms.topic: unit
-  ms.service: microsoft-sentinel
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise.md)]
