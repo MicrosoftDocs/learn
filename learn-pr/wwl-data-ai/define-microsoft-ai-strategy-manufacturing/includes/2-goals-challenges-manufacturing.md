@@ -1,8 +1,6 @@
 Manufacturing processes involve complex and physical tasks that require precision, coordination, and safety. Moreover, manufacturing systems often face dynamic and uncertain environments that demand adaptability and resilience. To address these issues, AI can enable greater integration, less friction, and simplification of processes across the manufacturing value chain. Following and developing this premise, this unit explores the goals and challenges of AI in manufacturing.
 
-In the following video, Kathleen Mitford talks about the impact that artificial intelligence is having across the industrial sector. 
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ca64bdb0-0296-4893-975f-cde308edbf6f]
+![Photograph showing man in manufacturing holding a tablet.](../media/manufacturer.jpg)
 
 ## Goals
 
@@ -17,7 +15,7 @@ When manufacturing companies implement AI solutions, they expect to solve these 
 * **Design multi-shoring sourcing strategies**: Manufacturers need to diversify their supply chain by working with several suppliers. This task involves considering the trade-offs between cost, quality, speed, and risk. AI solutions can help you deal with this information to make the best decisions.
 * **Comply with environmental regulations**: As environmental regulations get increasingly strict, manufacturers can use AI solutions to avoid fines, enhance their reputation, and contribute to sustainability.
 
-## Challenge
+## Challenges
 
 A first set of challenges for AI solutions in manufacturing involves difficulties in **data curation and management**.
 
@@ -33,5 +31,9 @@ However, other challenges can arise from the manufacturers’ **relations with c
 * **Overdependence on small, traditional customers**: Many small, family-owned, independent companies don’t have an IT department and are unsophisticated in their approach to technology. Business-to-business (B2B) manufacturing companies relying too much on these customers might have trouble trying to get valuable data from them.
 * **Inflation**: It’s crushing economic margins so much that it can be challenging to find the resources to implement AI systems or convince customers to pay the required investment.
 * **Rising customer expectations for service and products**: The media has lately created hype around generative AI and similar technologies. It’s true that they’re powerful and can make a difference for your business. However, clients often have unrealistic expectations of what an AI-powered solution can deliver. A pedagogical approach is sometimes required to orient customers towards more realistic AI scenarios.
+
+>[!TIP]
+>Take a moment to consider other goals or challenges are specific to your organization. 
+>![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let’s explore the most common AI-powered manufacturing use cases for your company to achieve these goals. 
