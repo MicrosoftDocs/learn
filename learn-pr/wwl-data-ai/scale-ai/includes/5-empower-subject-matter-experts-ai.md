@@ -6,7 +6,7 @@ In this unit, we discuss what knowledge workers can do with available AI tools t
 
 ## Build AI without code
 
-![Illustration of two people looking at a tablet screen in an office.](../media/empower-subject-matter-experts.jpg)
+![Photograph of two people looking at a tablet screen in an office.](../media/empower-subject-matter-experts.jpg)
 
 Employees don't need to be data scientists to be able to use AI in their everyday work. Microsoft is working hard to deliver business users AI-powered products and services. The latest advances in AI technologies focus on prebuilt models, like GPT models, which everyone can use. You can use these models from a wide range of Microsoft products, such as Bing, Microsoft 365, or Microsoft Dynamics 365.
 
@@ -34,7 +34,7 @@ Research-related use cases are numberless and apply in almost every industry. In
 
 >[!TIP]
 >Take a moment to consider how subject matter experts in your organization use AI to expand their impact.
->![Illustration showing people working and talking around a table.](../media/2-reflection.jpg)
+>![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let’s wrap up everything you’ve learned with a knowledge check.
 

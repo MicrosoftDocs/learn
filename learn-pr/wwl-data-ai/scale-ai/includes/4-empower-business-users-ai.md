@@ -4,7 +4,7 @@ In this unit, we explore the potential of putting business users at the center o
 
 AI can empower all people to achieve more, not just developers and data scientists. In fact, McKinsey predicts that latest generative AI has the potential to automate as much as 58.5 percent of scenarios requiring to apply expertise. These scenarios were especially hard to automate without this technology.<sup>2</sup> Organizations can achieve most of this automation from business users and subject matter experts working directly with AI and generative AI.
 
-![Illustration of two people working in an office who are looking at a computer screen.](../media/empower-business-users.jpg)
+![Photograph of two people working in an office who are looking at a computer screen.](../media/empower-business-users.jpg)
 
 Let's take some real examples:
 

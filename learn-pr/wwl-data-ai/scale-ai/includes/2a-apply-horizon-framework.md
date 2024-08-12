@@ -49,6 +49,6 @@ Moving forward, we advise putting systemic processes in place to manage and eval
 
 >[!TIP]
 >Take a moment to come up with some potential example investments for each of the 3 horizons.
->![Illustration showing people working and talking around a table.](../media/2-reflection.jpg)
+>![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let’s take a look at the AI-related roles and responsibilities that should be established in every AI organization.
