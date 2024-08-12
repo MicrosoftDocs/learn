@@ -4,18 +4,4 @@ Today, innovation means keeping up to date with AI. AI breakthroughs are happeni
 
 In this context, automating two or three of your business processes isn't enough to keep your competitive edge. To stay relevant, organizations need to incorporate AI throughout the company. AI can power up every role and process in your business.
 
-This module prepares you to achieve meaningful AI adoption in sensible, strategical steps.
-
-## Learning objectives
-In this module, you will:
-
-* Plan AI projects and investments.
-* Organize your staff for AI responsibilities.
-* Identify how no-code AI tools can help business users and subject matter experts.
-
-
-## Prerequisites
-* Basic understanding of AI concepts.
-* Basic understanding of business concepts.
-
-Next, let’s look at some key factors that organizations need to consider as they evaluate and prioritize AI investments.
+This module prepares you to achieve meaningful AI adoption in sensible, strategical steps. Next, let’s look at some key factors that organizations need to consider as they evaluate and prioritize AI investments.
