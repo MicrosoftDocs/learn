@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
-  ms.service: postgresql
+  ms.service: azure-database-postgresql
   ai-usage: human-only
 title: Understand PostgreSQL query processing
 summary: The Azure Database for PostgreSQL server receives SQL queries and returns the relevant results. Each SQL query goes through several stages in order to return the correct results as quickly as possible.
