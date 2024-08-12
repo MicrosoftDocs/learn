@@ -113,6 +113,6 @@ Having noticed that the *pl_distribute* power line has a capacity of 0, you migh
 
     The 200 response from a successful request contains six *Delivery Substation* twins. You can see in the twin details that they all also have a *Capacity* value of 0.
     
-    :::image type="content" source="../media/5-query-relationship-response.png" alt-text="Visual Studio screenshot showing the Query by relationship response." border="true" lightbox="../media/5-query-property-response.png." border="true" lightbox="../media/5-query-relationship-response.png":::
+    :::image type="content" source="../media/5-query-relationship-response.png" alt-text="Visual Studio screenshot showing the Query by relationship response." border="true" lightbox="../media/5-query-relationship-response.png":::
 
 You can use queries like this to verify relationships in your graph and understand how different twins impact each other.

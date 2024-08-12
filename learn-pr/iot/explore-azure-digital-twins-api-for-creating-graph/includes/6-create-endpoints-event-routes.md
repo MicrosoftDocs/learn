@@ -52,7 +52,7 @@ Next, create an Event Grid topic in Azure, and record some key values as paramet
     @endpoint=<paste-endpoint>
     ```
 
-    :::image type="content" source="../media/2-variables-control-endpoint.png" alt-text="Visual Studio screenshot showing endpoint variable in control.http." border="true" lightbox="../media/2-variables-control-endpoint.png":::
+    :::image type="content" source="../media/6-variables-control-endpoint.png" alt-text="Visual Studio screenshot showing endpoint variable in control.http." border="true" lightbox="../media/6-variables-control-endpoint.png":::
 
 1. Return to Cloud Shell and run the following command to get the shared access keys of the topic.
 
@@ -130,7 +130,7 @@ In this section, you'll use the Event Routes API to create a new event route tha
 
 Start by reviewing the [Event Routes API documentation](/rest/api/digital-twins/dataplane/event-routes). This is a data plane API that contains operations for adding, deleting, getting, and listing event routes.
 
-:::image type="content" source="../media/7-event-routes.png" alt-text="Reference doc screenshot showing the Event Routes operations." border="true" lightbox="../media/7-event-routes.png":::
+:::image type="content" source="../media/6-event-routes.png" alt-text="Reference doc screenshot showing the Event Routes operations." border="true" lightbox="../media/6-event-routes.png":::
 
 ### Send the event route request
 

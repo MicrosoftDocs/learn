@@ -296,11 +296,11 @@ Start by reviewing the [Twins API documentation](/rest/api/digital-twins/datapla
 
 ### Make the request
 
-Follow these steps to delete the *feeds* relationship from *sub_farmcluster_2* to farm consumer *c_farm_05*, using the [DigitalTwins DeleteRelationship](rest/api/digital-twins/dataplane/twins/digital-twins-delete-relationship) API.
+Follow these steps to delete the *feeds* relationship from *sub_farmcluster_2* to farm consumer *c_farm_05*, using the [DigitalTwins DeleteRelationship](/rest/api/digital-twins/dataplane/twins/digital-twins-delete-relationship) API.
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following DELETE request on the next line. This is the [DigitalTwins DeleteRelationship](rest/api/digital-twins/dataplane/twins/digital-twins-delete-relationship) request copied from the reference documentation, with parameters filled in for the host name, data plane version, ID of the *sub_farmcluster_2* twin, and relationship ID (the value plugged in below was the ID value given for this relationship when the graph was imported, and together with the source twin ID it identifies this specific relationship in the graph). It also has the authorization header specifying use of your bearer token.
+1. Paste the following DELETE request on the next line. This is the [DigitalTwins DeleteRelationship](/rest/api/digital-twins/dataplane/twins/digital-twins-delete-relationship) request copied from the reference documentation, with parameters filled in for the host name, data plane version, ID of the *sub_farmcluster_2* twin, and relationship ID (the value plugged in below was the ID value given for this relationship when the graph was imported, and together with the source twin ID it identifies this specific relationship in the graph). It also has the authorization header specifying use of your bearer token.
 
     ```http
     DELETE https://{{hostName}}/digitaltwins/sub_farmcluster_2/relationships/57becd45-1391-45e8-b127-ff3fdc5d0175?api-version={{DPversion}}
@@ -314,11 +314,11 @@ Follow these steps to delete the *feeds* relationship from *sub_farmcluster_2* t
 
 You can verify the relationship was deleted by listing the relationships from the *sub_farmcluster_2* twin and confirming that the *feeds* relationship to farm consumer *c_farm_05* isn't in the list.
 
-Follow these steps to list the relationships using the [DigitalTwins ListRelationships](rest/api/digital-twins/dataplane/twins/digital-twins-list-relationships) API.
+Follow these steps to list the relationships using the [DigitalTwins ListRelationships](/rest/api/digital-twins/dataplane/twins/digital-twins-list-relationships) API.
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following GET request on the next line. This is the [DigitalTwins ListRelationships](rest/api/digital-twins/dataplane/twins/digital-twins-list-relationships) request copied from the reference documentation, with parameters filled in for the host name, data plane version, ID of the *sub_farmcluster_2* twin, and the relationship name *feeds*. It also has the authorization header specifying use of your bearer token.
+1. Paste the following GET request on the next line. This is the [DigitalTwins ListRelationships](/rest/api/digital-twins/dataplane/twins/digital-twins-list-relationships) request copied from the reference documentation, with parameters filled in for the host name, data plane version, ID of the *sub_farmcluster_2* twin, and the relationship name *feeds*. It also has the authorization header specifying use of your bearer token.
 
     ```http
     GET https://{{hostName}}/digitaltwins/sub_farmcluster_2/relationships?relationshipName=feeds&api-version={{DPversion}}
