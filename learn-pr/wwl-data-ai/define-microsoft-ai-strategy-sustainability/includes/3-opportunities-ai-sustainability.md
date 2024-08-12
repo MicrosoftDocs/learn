@@ -2,7 +2,7 @@ Sustainability initiatives can take many forms, and sustainable projects can tak
 
 ## Agriculture
 
-![Image showing farmers in a field looking at a tablet.](../media/3-ai-farming.jpg)
+![Farmers in a field looking at a tablet.](../media/3-ai-farming.jpg)
 
 Data-based decision making can substantially improve farming productivity and sustainability. This management style is known as **precision farming**. It involves using information such as soil maps, climatic data, and crop data to estimate the treatment the crop needs and at what time. These practices help use the right measure of pesticides or nutrients required, which minimizes waste and eventual pollution. Farmers can combine them with other sustainable AI practices, such as intelligent harvesting or AI-powered pest detection and control.
 
@@ -10,7 +10,7 @@ Microsoft drives **[FarmVibes](https://www.microsoft.com/research/project/projec
 
 ## Energy
 
-![Image showing a workers working on solar panels.](../media/3-green-energy.jpg)
+![People working on solar panels.](../media/3-green-energy.jpg)
 
 A sustainability priority in the energy sector is to integrate new sources of **renewable energy** onto the grid. In this task, AI can also prove helpful. The [Global Renewables Watch](https://www.globalrenewableswatch.org/), built on Microsoft AI, detects solar and wind installations, and tracks the transition towards greener energy.
 
@@ -20,7 +20,7 @@ Third, **predictive maintenance** is another fruitful strategy to protect the en
 
 ## Industry
 
-![Image showing a worker in a hard hat looking at a tablet  while working on solar panels.](../media/3-energy-worker.jpg)
+![A worker in a hard hat looking at a tablet  while working on solar panels.](../media/3-energy-worker.jpg)
 
 AI can help manufacturing and industrial companies optimize their **energy and water consumption**. For instance, Metinvest uses Azure Data Factory and Azure Machine Learning to detect the silicon content in the cast iron, which helps minimize the fuel the process requires.<sup>6</sup>
 
@@ -28,7 +28,7 @@ Another common scenario is using AI to discover **low-carbon building materials*
 
 ## Natural resources
 
-![Image showing four people looking at a haul of fish.](../media/3-fish.png)
+![Four people looking at a haul of fish.](../media/3-fish.png)
 
 There are many ways in which AI can help biodiversity conservation. Usually, the first step for ecologists to protect an ecosystem is to **monitor and map wildlife populations**. This task involves identifying the species that they can record with their cameras and sensors, which is very time consuming.
 
@@ -38,7 +38,7 @@ A complementary approach is to use AI to actively protect natural resources. It 
 
 ## Smart cities
 
-![Image showing buildings in a city.](../media/3-city.jpg)
+![Buildings in a city.](../media/3-city.jpg)
 
 AI technologies can also improve the cities we live in. AI systems can enable better, greener management of cities, including water supply, mobility, waste management, and safety.
 
@@ -48,7 +48,7 @@ It’s also possible to achieve **greener city lights management** with AI. Vale
 
 >[!TIP]
 >Consider other opportunities you hope to realize with AU in your organization.
->![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
+>![People working and talking around a table.](../media/2-reflection.jpg)
 
 In conclusion, there are many scenarios in which Microsoft AI products and services can support sustainability initiatives. The **Microsoft ecosystem** allows you to easily connect these AI solutions with the many features included in [Microsoft Cloud for Sustainability](https://www.microsoft.com/sustainability/cloud). Among the functionalities covered, sustainability professionals can minimize the environmental impact of facilities, get the data analytics of water consumption, or achieve greener mobility with optimized routes and logistics.
 

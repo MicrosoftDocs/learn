@@ -4,7 +4,7 @@ When you adopt AI in a sustainability project, what can you expect? What potenti
 
 The main goal for AI projects in sustainability is to build a **better, fairer world and economy**. As the use cases and success stories in this module show, AI is a powerful tool to achieve greener energy, transportation, industrial production, and so on. AI is especially good at optimizing processes, and so it can help sustainability professionals achieve more with less effort.
 
-![Image showing a rain forest, a field of lavender, a farm, and an ocean.](../media/2-sustainability.jpg)
+![A rain forest, a field of lavender, a farm, and an ocean.](../media/2-sustainability.jpg)
 
 ## Challenges
 
@@ -12,6 +12,6 @@ AI can be a powerful accelerant for the scale and pace of sustainability solutio
 
 >[!TIP]
 >Take a moment to identify the goals and challenges specific to your organization.
->![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
+>![People working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let’s find out specific scenarios in which Microsoft AI can power your sustainability initiatives.
