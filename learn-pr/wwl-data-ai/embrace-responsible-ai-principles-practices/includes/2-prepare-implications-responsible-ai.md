@@ -2,7 +2,7 @@ AI is the defining technology of our time. It's already enabling faster and more
 
 At Microsoft, we believe that the computational intelligence of AI should be used to amplify the innate creativity and ingenuity of humans. Our vision for AI is to empower every developer to innovate, empower organizations to transform industries, and empower people to transform society.
 
-![People sitting around a conference table having a discussion.](../media/table-discussion.jpg)
+![Photograph showing people sitting around a conference table having a discussion.](../media/table-discussion.jpg)
 
 ## Societal implications of AI
 

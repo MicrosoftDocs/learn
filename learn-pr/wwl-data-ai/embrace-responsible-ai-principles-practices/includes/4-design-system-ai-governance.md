@@ -6,7 +6,7 @@ To help your organization get started, we have provided an overview of three com
 
 ## Chief Ethics Officer
 
-![Woman who is a Chief Ethics Officer.](../media/chief-ethics-officer.jpg)
+![Photograph showing woman who is a Chief Ethics Officer.](../media/chief-ethics-officer.jpg)
 
 Often organizations choose to consolidate their ethics initiatives appointing a Chief Ethics Officer. This option has the advantage of centralized decision-making, so it enables organizations to quickly develop policies around ethics while ensuring there's accountability for each decision. Hiring this public-facing role can also be an effective way to showcase a company’s commitment to engage with AI and other technology in a responsible and trustworthy manner.
 
@@ -14,7 +14,7 @@ However, a Chief Ethics Officer alone may struggle to implement measures across 
 
 ## Ethics office
 
-![People holding discussion in a team meeting.](../media/ethics-office.jpg)
+![Photograph showing people holding discussion in a team meeting.](../media/ethics-office.jpg)
 
 The second governance approach focuses on empowering employees across the organization. It involves forming a dedicated ethics team from different levels of the organization that is solely focused on ensuring the ethical principles are being followed by all employees. The ethics office can be independent or part of a broader risk, compliance, or legal team. If it's independent, it can be established without a leading role, but companies often choose a Chief Ethics Officer to head the office.
 
@@ -22,7 +22,7 @@ The key advantage of ethics offices is their ability to implement the policies a
 
 ## Ethics committee
 
-![People in a virtual video meeting in a conference room.](../media/ethics-committee.jpg)
+![Photograph showing people in a virtual video meeting in a conference room.](../media/ethics-committee.jpg)
 
 The last approach brings together a diverse array of outside experts and senior leaders from within the organization to address AI ethics. Ethics committees may even incorporate user groups, ethicists, or psychologists. Generally, they don't have members dedicated solely to ethics.
 

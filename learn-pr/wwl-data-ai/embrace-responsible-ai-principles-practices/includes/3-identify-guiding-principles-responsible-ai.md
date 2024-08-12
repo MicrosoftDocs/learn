@@ -92,6 +92,6 @@ We recognize that every individual, company, and region has their own beliefs an
 
 >[!TIP]
 >Take a moment to brainstorm other examples for each of the responsible AI principles.
->![People working and talking around a table.](../media/2-reflection.jpg)
+>![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 These principles provide a general idea of what we should do when developing and using AI. However, they need to be reflected on a more practical level. Next, let's explore how these principles can be ensured with an AI governance system.

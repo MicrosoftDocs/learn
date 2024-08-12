@@ -23,7 +23,7 @@ quiz:
       explanation: "Incorrect. Data security is an important part of Responsible AI but is a challenge or risk for the Privacy and Security principle."
     - content: "Models can be analyzed to quantify the impact of individual data features on predictions."
       isCorrect: true
-      explanation: "Correct. Fairness address the challenge or risk bias can affect results."
+      explanation: "Correct. Fairness addresses the challenge or risk bias can affect results."
     - content: "Models can be deployed as containerized services in Microsoft Azure."
       isCorrect: false
       explanation: "Incorrect. While you can deploy a model as a containerized service in Microsoft Azure, it doesn't help mitigate bias."
