@@ -2,11 +2,17 @@ In this unit, you use the Model and Digitaltwin APIs to make manual updates to t
 
 ## Update (replace) a model
 
-Start this section on updating models by reviewing the [Models API documentation](/rest/api/digital-twins/dataplane/models). The API contains operations to add new models, delete models, get a model's details by its ID, list all models, and update a model.
+First, make some updates to the models in your graph.
+
+### View Models API documentation
+
+Start by reviewing the [Models API documentation](/rest/api/digital-twins/dataplane/models). The API contains operations to add new models, delete models, get a model's details by its ID, list all models, and update a model.
 
 :::image type="content" source="../media/4-models.png" alt-text="Reference doc screenshot showing the Models operations." border="true" lightbox="../media/4-models.png":::
 
-However, models that are uploaded to an Azure Digital Twins instance are immutable, which means they can't be edited or updated in a traditional sense. Instead, one way to "update" a model in your instance is to delete the old model and reupload an updated definition.
+### Understand model update process
+
+Models that are uploaded to an Azure Digital Twins instance are immutable, which means they can't be edited or updated in a traditional sense. Instead, one way to "update" a model in your instance is to delete the old model and reupload an updated definition.
 
 In the city grid example for this module, say you decide you also want your graph to keep track of who owns and operates each substation. There are three substation-type models in your instance: *Delivery Substation*, *Generator Substation*, and *Base Receiver* (the base model from which the other two inherit). By adding an `Operator` property to the base model, you can make the new property available on all three substation models.
 
@@ -223,9 +229,13 @@ Since your work in the previous section made a new `Operator` property available
 >[!TIP]
 >To get a list of all twins that use a certain model, use the Query APIs covered in [Unit 5](../5-query-graph.yml) of this module.
 
+### View Twins API documentation (twins)
+
 Start by reviewing the [Twins API documentation](/rest/api/digital-twins/dataplane/twins). The API contains operations to add/delete, get, and update digital twins, their components, and their relationships. In this section, you focus on operations dealing with twins themselves.
 
 :::image type="content" source="../media/4-twins.png" alt-text="Reference doc screenshot showing the Twins operations and highlighting the twin-focused ones." border="true" lightbox="../media/4-twins.png":::
+
+### Make the request
 
 Follow these steps to update the *sub_corp* twin using the [DigitalTwins Update](/rest/api/digital-twins/dataplane/twins/digital-twins-update) API.
 
@@ -276,13 +286,17 @@ This response confirms that the twin is updated with the new property. In the sa
 
 ## Update relationships
 
-Start this section on updating relationships by reviewing the [Twins API documentation](/rest/api/digital-twins/dataplane/twins) again, this time looking at the operations that deal with relationships.
+Let's say one of the delivery substations represented in your graph is no longer going to supply power to one of its farm consumers. Currently, the delivery substation twin *sub_farmcluster_2* has a *feeds* relationship to farm consumer *c_farm_05*. Since the substation's going to stop feeding that farm cluster, you need to update the graph to remove the relationship between these two twins.
+
+### View Twins API documentation (relationships)
+
+Start by reviewing the [Twins API documentation](/rest/api/digital-twins/dataplane/twins) again, this time looking at the operations that deal with relationships.
 
 :::image type="content" source="../media/4-relationships.png" alt-text="Reference doc screenshot showing the Twins operations and highlighting the relationship ones." border="true" lightbox="../media/4-relationships.png":::
 
-Let's say one of the delivery substations represented in your graph is no longer going to supply power to one of its farm consumers. Currently, the delivery substation twin *sub_farmcluster_2* has a *feeds* relationship to farm consumer *c_farm_05*. Since the substation's going to stop feeding that farm cluster, you need to update the graph to remove the relationship between these two twins.
+### Make the request
 
-Follow these steps to delete the relationship using the [DigitalTwins DeleteRelationship](rest/api/digital-twins/dataplane/twins/digital-twins-delete-relationship) API.
+Follow these steps to delete the *feeds* relationship from *sub_farmcluster_2* to farm consumer *c_farm_05*, using the [DigitalTwins DeleteRelationship](rest/api/digital-twins/dataplane/twins/digital-twins-delete-relationship) API.
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 

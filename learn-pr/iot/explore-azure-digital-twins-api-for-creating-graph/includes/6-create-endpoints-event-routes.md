@@ -25,6 +25,8 @@ In this unit, you create an endpoint that's capable of using Event Grid to deliv
 
 In this section, you use the Endpoints API to create a new endpoint in your Azure Digital Twins instance.
 
+### View Endpoints API documentation
+
 Start by reviewing the [Endpoints API documentation](/rest/api/digital-twins/controlplane/endpoints). Notice that unlike previous API sets used so far in this module, the Endpoints API is part of the **Control plane** collection, because it's scoped beyond Azure Digital Twins and needs to interact with other Azure resources in your subscription. The API contains operations for creating/updating, deleting, getting, and listing endpoints.
 
 :::image type="content" source="../media/6-endpoints.png" alt-text="Reference doc screenshot showing the Endpoints operations." border="true" lightbox="../media/6-endpoints.png":::

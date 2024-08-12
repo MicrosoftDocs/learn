@@ -64,11 +64,15 @@ az storage blob upload --account-name $STORAGE_ACCOUNT --container-name $CONTAIN
 
 Now you have the import file available in an Azure storage account that your Azure Digital Twins instance can access. In the next section, you'll send an API request that uses this file to create the entities it defines in your Azure Digital Twins instance.
 
-## Make the import request
+## Send an import request
 
 In this section, you send an Import Jobs API request to import the sample file of models, twins, and relationships.
 
+### View Jobs API documentation
+
 Start by reviewing the [Jobs API documentation](/rest/api/digital-twins/dataplane/jobs). The API contains operations for managing long-running jobs, including add, cancel, delete, get by ID, and list for import jobs. In this section, you use **ImportJobs Add** to create an import request, and **ImportJobs GetById** to check the job's status.
+
+### Make the request
 
 Build the import request by following these steps.
 
@@ -212,7 +216,7 @@ In this section, you use the [DigitalTwins ListRelationships](/rest/api/digital-
 
     The reply body lists all the relationships, both incoming and outgoing, of the *pl_distribute* digital twin. Review the results to see what kind of relationships this power line twin has in the graph.
 
-### Further exploration
+## Further exploration
 
 From here, you can experiment with different API requests for viewing additional models, twins, or relationships in your graph. You may also want to view an interactive, visual version of the graph that you've created in this unit.
 
