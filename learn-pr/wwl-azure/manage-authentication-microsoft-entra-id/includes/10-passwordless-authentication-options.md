@@ -38,7 +38,7 @@ The following steps show how the sign-in process works with Microsoft Entra ID:
 
 You can also allow your employee's phone to become a passwordless authentication method. You may already be using the Authenticator app as a convenient multifactor authentication option in addition to a password. You can also use the Authenticator App as a passwordless option.
 
-:::image type="content" source="../media/approve-sign-in-page-2e4b3029-6f5b6ee1.png" alt-text="Screenshot showing an example of the Microsoft authenticator application.":::
+:::image type="content" source="../media/microsoft-authenticator-application-b976eac3.png" alt-text="Screenshot showing an example of the Microsoft authenticator application.":::
 
 
 The Authenticator App turns any iOS or Android phone into a strong, passwordless credential. Users can sign in to any platform or browser by getting a notification to their phone, matching a number displayed on the screen to the one on their phone, and then using their biometric (touch or face) or PIN to confirm.
