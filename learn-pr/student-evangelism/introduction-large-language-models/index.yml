@@ -7,6 +7,8 @@ metadata:
   title: Introduction to large language models
   description: Learn about large language models, their core concepts, the models that are available to use, and when to use them.
   ms.topic: module
+  ms.collection: ce-advocates-ai-copilot
+  ms.service: azure-ai-services
 title: "Introduction to large language models"
 summary: Learn how to use large language models (LLMs), "general purpose" AI models that can analyze text, images, and audio, to improve your workflow.
 abstract: |
