@@ -20,7 +20,7 @@ More specifically, Manulife is using **Azure Machine Learning and Azure AI Docum
 
 Meanwhile, Azure scaled up how many documents customers could submit online, which has made more data available for Manulife document intelligence models. John Hancock, the Manulife division at the United States, is using **Azure Synapse Analytics** to run AI models on these bigger datasets. This initiative is succeeding in getting more insights, ensuring accuracy, speeding up workflows, and improving customer experiences.
 
-![Image showing person working in a spreadsheet.](../media/4-report.jpg)
+![A person working in a spreadsheet.](../media/4-report.jpg)
 
 ## The results
 

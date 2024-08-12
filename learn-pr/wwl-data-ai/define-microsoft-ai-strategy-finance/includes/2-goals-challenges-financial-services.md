@@ -10,7 +10,7 @@ Most finance goals derive from the utmost confidentiality of financial data. FSI
 * **Compliance**: FSI is a highly regulated sector. Actions must follow precise and demanding protocols. AI can help enforce compliance by detecting anomalies and monitoring procedures.
 * **Automation**: FSI organizations must automate as many data processes as possible, including discovery and policy creation.
 
-![Image showing people meeting in a conference room.](../media/2b-board-room.jpg)
+![People meeting in a conference room.](../media/2b-board-room.jpg)
 
 ## Challenges
 
@@ -21,6 +21,6 @@ However, there are specific obstacles for the implementation of AI in finance. W
 
 > [!TIP]
 > Take a few minutes to consider what other goals or challenges are specific to your organization.
-> ![Image showing people working and talking around a table.](../media/2-reflection.jpg)
+> ![People working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let’s explore opportunities for AI in financial services.
