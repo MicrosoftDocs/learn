@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: cosmos-db
+  ms.service: azure-cosmos-db
   ai-usage: human-only
 title: Explore Azure Cosmos DB
 summary: Learn the core features and functionality of Azure Cosmos DB.

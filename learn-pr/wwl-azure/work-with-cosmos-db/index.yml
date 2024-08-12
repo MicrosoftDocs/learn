@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: cosmos-db
+  ms.service: azure-cosmos-db
   ai-usage: human-only
 title: Work with Azure Cosmos DB
 summary: Learn how to develop client and server-side programming solutions on Azure Cosmos DB.
