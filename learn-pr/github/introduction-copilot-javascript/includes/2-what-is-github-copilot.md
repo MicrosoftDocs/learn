@@ -1,5 +1,4 @@
-
-Often, when you write code, you need to consult official documentation, or other web pages, to remember syntax or how to solve a problem. You can also spend hours trying to resolve a problem when the code isn't working. Additionally, you also spend time writing tests and documentation. All these tasks are time consuming and to be more efficient you could use code snippets or rely on tooling in your IDE, integrated development environment, but is there a better way?
+When writing code, you often consult documentation or web pages to remember syntax or solve problems. You might spend hours fixing issues, writing tests, and creating documentation. These tasks are time-consuming. Using code snippets or IDE tools can help, but is there a better way?
 
 ## How does it work?
 
@@ -9,7 +8,7 @@ GitHub Copilot is an AI assistant that you use from within your IDE that’s cap
 // Create a web API using express and JavaScript with routes for products and customers
 ```
 
-Copilot then goes on to generate a response that you can choose to accept or reject. A response to the prompt could look similar to the following:
+Copilot then goes on to generate a response that you can choose to accept or reject. A response to the prompt could look similar to the following code:
 
 ```javascript
 const express = require("express");
@@ -23,7 +22,7 @@ app.listen(3000, () => "app runs");
 
 Copilot can recognize a prompt or instruction if you:
 
-- Type it as a comment in a code file (e.g., `.py`, `.js`).
+- Type it as a comment in a code file (for example, `.py`, `.js`).
 - Type text in a markdown file and wait a few seconds for Copilot to respond.
 
 ## Accepting suggestions
@@ -34,7 +33,7 @@ Copilot might suggest multiple options. To cycle through suggestions, use <kbd>C
 
 ## How to set up GitHub Copilot
 
-To use GitHub Copilot, you need the following:
+To use GitHub Copilot, you need to complete the following steps:
 
 1. **GitHub Account**: 
    - Create a GitHub account. Since Copilot is a GitHub service, you need a GitHub account to use it.

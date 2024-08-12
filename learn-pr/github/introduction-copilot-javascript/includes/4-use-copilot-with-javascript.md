@@ -1,4 +1,3 @@
-
 In previous units, we showed how to set up Copilot and mentioned how it can make you faster as a developer starting to write code.
 
 In this unit, let's discuss how Copilot can help you with existing projects and help you with more complicated tasks.
