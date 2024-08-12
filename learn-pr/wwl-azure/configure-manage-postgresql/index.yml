@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: postgresql
+  ms.service: azure-database-postgresql
   ai-usage: human-only
 title: Configure and manage Azure Database for PostgreSQL
 summary: Azure Database for PostgreSQL employs system catalogs and views to manage metadata efficiently. Understanding these can significantly enhance database performance and streamline the administration of PostgreSQL systems.
