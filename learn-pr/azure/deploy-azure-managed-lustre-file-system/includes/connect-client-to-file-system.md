@@ -35,7 +35,7 @@ Packages and kernel modules are available for the following Linux operating syst
 - [Ubuntu 20.04](/azure/azure-managed-lustre/client-install?pivots=ubuntu-20)
 - [Ubuntu 22.04](/azure/azure-managed-lustre/client-install?pivots=ubuntu-22)
 
-If you need to upgrade an older Lustre client version on your Linux system, see [Upgrade a Lustre client to the current version](/azure/azure-managed-lustre/client-upgrade.md). You must remove old kernel modules and software packages as part of the upgrade.
+If you need to upgrade an older Lustre client version on your Linux system, see [Upgrade a Lustre client to the current version](/azure/azure-managed-lustre/client-upgrade). You must remove old kernel modules and software packages as part of the upgrade.
 
 > [!NOTE]
 > Microsoft will publish new packages within one business day of a new kernel being available. If you experience any issues, please file a support ticket.
