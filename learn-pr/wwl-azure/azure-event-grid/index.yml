@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: event-grid
+  ms.service: azure-event-grid
   ai-usage: human-only
 title: Explore Azure Event Grid
 summary: Learn how to integrate Azure Event Grid in to your solution, implement access control to events, and how to route custom events to web endpoint by using Azure CLI.
