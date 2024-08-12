@@ -27,7 +27,7 @@ This whitepaper includes a model of the **stages of AI success**. This five-tier
 
 5. **Realizing stage:** At this final stage, AI achieves consistent AI value across the organization and in multiple business units.
 
-![Diagram that shows the stages of AI success: exploring, planning, formalizing, scaling, and realizing.](../media/4-discover-apply-ai-maturity-model-assessment-1.png)
+![The stages of AI success: exploring, planning, formalizing, scaling, and realizing.](../media/4-discover-apply-ai-maturity-model-assessment-1.png)
 
 However, enormous AI acceleration took place in the last few years. Great breakthroughs in generative AI and prebuilt models, such as the large language models (LLM) offered by Azure AI Studio, are disrupting the field. This new context has two major implications:
 
@@ -37,6 +37,6 @@ However, enormous AI acceleration took place in the last few years. Great breakt
 
 >[!TIP]
 >Take a moment to reflect on where your organization is on the path to AI success.
->![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
+>![People working and talking around a table.](../media/2-reflection.jpg)
 
 Let’s wrap up with a knowledge check.
