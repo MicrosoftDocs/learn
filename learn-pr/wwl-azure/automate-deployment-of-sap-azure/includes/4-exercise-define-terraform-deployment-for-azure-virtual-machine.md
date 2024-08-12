@@ -429,3 +429,4 @@ When you're ready to apply the execution plan to your cloud infrastructure, run 
 
 >[!NOTE]
 > To avoid unexpected charges, confirm the resource group, `myterraformgroup` is deleted in the Azure Portal.
+

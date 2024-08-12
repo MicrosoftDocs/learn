@@ -4,9 +4,9 @@ title: Exercise -  Get started with Azure OpenAI Service
 metadata:
   title: Exercise -  Get started with Azure OpenAI Service
   description: This unit contains a hands-on exercise. Learners can use the exercise to try out Azure OpenAI Service's text and code generation capabilities in the Studio playground.
-  author: sherzyang
-  ms.author: sheryang
-  ms.date: 07/10/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 08/06/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

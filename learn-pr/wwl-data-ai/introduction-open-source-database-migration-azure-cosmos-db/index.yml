@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: cosmos-db
+  ms.service: azure-cosmos-db
   ai-usage: human-only
 title: Introduction to open source database migration to Azure Cosmos DB
 summary: In this module, you will gain an understanding of Cosmos DB and the main considerations when migrating to Cosmos DB.
