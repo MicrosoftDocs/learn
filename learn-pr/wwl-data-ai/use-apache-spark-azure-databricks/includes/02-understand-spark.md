@@ -44,7 +44,7 @@ Spark includes libraries for tasks ranging from SQL to streaming and machine lea
 - GraphX: For graph processing.
 - Spark Streaming: For real-time data processing.
 
-![Diagram of Spark cluster with tasks.](../media/azure-databricks-apache-spark.png)
+![Diagram of Spark libraries.](../media/azure-databricks-apache-spark.png)
 
 ### Compatibility
 
