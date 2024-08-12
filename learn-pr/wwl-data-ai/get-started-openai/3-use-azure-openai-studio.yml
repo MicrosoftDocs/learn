@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-openai.use-azure-openai-studio
-title: Use Azure OpenAI Studio
+title: Use Azure AI Studio
 metadata:
-  title: Use Azure OpenAI Studio
-  description: This unit explores Azure OpenAI Studio, a user interface designed to help users test out the service in a visual setting.
-  author: sherzyang
-  ms.author: sheryang
-  ms.date: 07/10/2024
+  title: Use Azure AI Studio
+  description: This unit explores Azure AI Studio, a user interface designed to help users test out the service in a visual setting.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 08/06/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

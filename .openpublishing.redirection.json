@@ -31423,6 +31423,36 @@
       "source_path_from_root": "/learn-pr/wwl-azure/configure-user-experience-settings/9-implement-start-virtual-machine-connect-feature.md",
       "redirect_url": "/training/modules/configure-user-experience-settings/4-implement-start-virtual-machine-connect-feature",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/2-explore-ai-goals-challenges-manufacturing.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-manufacturing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/3-identify-ai-use-cases-manufacturing.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-manufacturing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/4-find-ai-resources.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-manufacturing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/6-discover-azure-openai-improve-infotainment-services.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-manufacturing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/7-knowledge-check.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-manufacturing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/8-summary.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-manufacturing/7-summary",
+      "redirect_document_id": false
     }
   ]
 }

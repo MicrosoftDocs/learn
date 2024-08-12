@@ -1,10 +1,10 @@
-You first need to deploy a model to make API calls to receive completions to prompts. When you create a new deployment, you need to indicate which base model to deploy. You can deploy any number of deployments in one or multiple Azure OpenAI resources as long as their TPM adds up to less than 240K total in that region. There are several ways you can deploy your base model. 
+You first need to deploy a model to chat with or make API calls to receive responses to prompts. When you create a new deployment, you need to indicate which base model to deploy. You can deploy any number of deployments in one or multiple Azure OpenAI resources as long as their Tokens Per Minute (TPM) stays within the deployment quota.
 
-## Deploy using Azure OpenAI Studio
+## Deploy using Azure AI Studio
 
-In Azure OpenAI Studio's **Deployments** page, you can create a new deployment by selecting a model name from the menu. The available base models come from the list in the models page.  
+In Azure AI Studio's **Deployments** page, you can create a new deployment by selecting a model name from the menu. The available base models come from the list in the models page.  
 
-![Screenshot of the Azure OpenAI Studio portal's model deployment wizard.](../media/studio-deployment.png)
+![Screenshot of the Azure AI Studio portal's model deployment wizard.](../media/studio-deploy-model.png)
 
 From the *Deployments* page in the Studio, you can also view information about all your deployments including deployment name, model name, model version, status, date created, and more.
 
