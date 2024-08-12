@@ -75,7 +75,7 @@ You'll create a static class to hold the app's font color and background color v
     <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:notes="clr-namespace:Notes"
-             x:Class="Notes.UIPage">
+             x:Class="Notes.MainPage">
 
         <VerticalStackLayout Padding="30,60,30,30">
             <Label Text="Notes"
