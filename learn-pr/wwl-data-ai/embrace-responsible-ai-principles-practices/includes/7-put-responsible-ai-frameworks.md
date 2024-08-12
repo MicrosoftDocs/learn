@@ -31,7 +31,7 @@ In this face recognition case, the Responsible AI Champ worked closely with the 
 The Sensitive Uses Working Group deliberates with a diverse group of experts to provide insight and recommendations for how to address the risks associated with the particular use case. If the situation requires further escalation, cases can rise all the way up to the Aether Committee itself, which directly advises the Senior Leadership Team. Ultimately, the Senior Leadership Team makes decisions on novel, high-impact cases.
 
 >[!NOTE]
-> When reviewing sensitive use cases, we recommend bringing together a diverse group of people with varied backgrounds and expertise. It's also important to create an inclusive space where everyone feels comfortable sharing their ideas and perspectives.
+>When reviewing sensitive use cases, we recommend bringing together a diverse group of people with varied backgrounds and expertise. It's also important to create an inclusive space where everyone feels comfortable sharing their ideas and perspectives.
 
 Once the case has been reviewed, the Responsible AI Champ works with the Office of Responsible AI to provide advice to the project team on mitigation strategies that align to our responsible AI practices and principles. These mitigation strategies could include technical approaches, employee training and governance approaches, or alterations to the scope of the project. At times, our teams have been advised to not proceed with certain projects because we were unable to deliver them in a way that upholds our principles.
 
@@ -40,7 +40,7 @@ In the use case, the Aether Sensitive Uses Working Group took separate decisions
 We explained the issues to the customer, and they decided not to pursue that scenario.
 
 >[!NOTE]
-> **Backed by research**: attempting to identify individuals in uncontrolled environments can infringe on human rights, resulting in improper arrests due to misidentification. Studies have shown that AI is more likely to mistake the identities of women and minorities, which could also lead to those populations being disproportionately detained.<sup>1</sup>
+>**Backed by research**: attempting to identify individuals in uncontrolled environments can infringe on human rights, resulting in improper arrests due to misidentification. Studies have shown that AI is more likely to mistake the identities of women and minorities, which could also lead to those populations being disproportionately detained.<sup>1</sup>
 
 For the in-facility use cases, we decided we could support the design and development of a proof of concept (POC), with safeguards in place to ensure appropriate human control over the solution, and a bi-directional feedback loop between the customer and Microsoft could be established. It was also important that the customer implemented a training program for personnel interacting with the solutions, and that the customer would reengage with Microsoft on deployments beyond these supported scenarios.
 
