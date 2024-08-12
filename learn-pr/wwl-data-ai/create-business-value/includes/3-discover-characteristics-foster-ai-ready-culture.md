@@ -11,7 +11,7 @@ Of course, this is only possible with strong leadership that drives change by bo
 ## Data-driven
 
 
-![Sharing data across your organization and adopting rigorous data practices.](../media/data-photo.jpg)
+![Photograph showing sharing data across your organization and adopting rigorous data practices.](../media/data-photo.jpg)
 
 Any good AI system relies on having the best and most complete data and being able to reason over your entire data estate. In other words, it depends on a matter of integrity and access.
 
@@ -33,7 +33,7 @@ In summary, becoming data-driven means acquiring a **mindset of data sharing and
 
 ## Empowered
 
-![Three construction workers representing empowerment and inclusivity: providing resources, a collaborative culture, and focusing on business needs.](../media/empowered-photo.jpg)
+![Photograph showing three construction workers representing empowerment and inclusivity: providing resources, a collaborative culture, and focusing on business needs.](../media/empowered-photo.jpg)
 
 Fostering an AI-ready culture means **empowering people to be part of the AI transformation**. Organizations should provide the following opportunities to achieve this goal:
 
@@ -51,7 +51,7 @@ By enabling cross-functional teams that include both data scientists and the bus
 
 ## Responsible
 
-![Person stamping a paper to represent a culture of review and responsible AI.](../media/stamp-photo.jpg)
+![Photograph showing person stamping a paper to represent a culture of review and responsible AI.](../media/stamp-photo.jpg)
 
 The third key element of an AI-ready culture is fostering a responsible approach to AI. As AI continues to evolve, it has the potential to drive considerable changes to our lives, raising complex and challenging questions about what future we want to see.
 
@@ -61,6 +61,6 @@ These questions demand for organizations to think about their AI principles and 
 
 >[!TIP]
 >Take a moment to think of how you might determine your organization’s readiness for AI.
->![People working and talking around a table.](../media/2-reflection.jpg)
+>![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Now that you understand the principles that enable organization to embrace AI, let's assess whether your organization is ready and how it should evolve.
