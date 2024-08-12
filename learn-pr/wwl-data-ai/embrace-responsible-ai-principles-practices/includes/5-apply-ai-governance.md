@@ -4,9 +4,9 @@ No matter which governance approach you choose, there are some good practices it
 
 |**Ways to take action for AI governance**|**Description**|
 |-|-|
-|**Make resources available** ![Image of a person sitting at a desk and reading.](../media/make-resources-available.jpg)| Employees need guidance to learn responsible AI principles and incorporate them into their work. A handbook, a manual, or a training session can fulfill that task. |
-|**Create a centralized AI inventory** ![Image of a person working next to a whiteboard in an office.](../media/create-centralized-ai-inventory.jpg)| Having a list of all the AI models and systems operating in your organization is key to prioritize efforts and optimize resources. Besides, it's also helpful to make audits and compliance tests easier.|
-|**Develop tools** ![Image of people looking at data on a computer screen.](../media/develop-tools.jpg)| Checking compliance in every AI system in your organization can be draining. Consider building tools to automate this task: such tools would monitor and validate systems and raise a flag if anything shifts outside of performance metrics.|
+|**Make resources available** ![Person sitting at a desk and reading.](../media/make-resources-available.jpg)| Employees need guidance to learn responsible AI principles and incorporate them into their work. A handbook, a manual, or a training session can fulfill that task. |
+|**Create a centralized AI inventory** ![Person working next to a whiteboard in an office.](../media/create-centralized-ai-inventory.jpg)| Having a list of all the AI models and systems operating in your organization is key to prioritize efforts and optimize resources. Besides, it's also helpful to make audits and compliance tests easier.|
+|**Develop tools** ![People looking at data on a computer screen.](../media/develop-tools.jpg)| Checking compliance in every AI system in your organization can be draining. Consider building tools to automate this task: such tools would monitor and validate systems and raise a flag if anything shifts outside of performance metrics.|
 
 ## AI governance engagement
 

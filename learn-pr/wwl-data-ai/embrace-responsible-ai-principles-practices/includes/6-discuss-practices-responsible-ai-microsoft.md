@@ -65,6 +65,6 @@ We expect every Microsoft employee to:
 
 >[!TIP]
 >Take a moment to identify challenges in establishing a system of responsible AI governance in your organization.
->![Image showing people working and talking around a table.](../media/2-Reflection.jpg)
+>![People working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let's see this governance model in action in flagging and addressing sensitive use cases of AI.
