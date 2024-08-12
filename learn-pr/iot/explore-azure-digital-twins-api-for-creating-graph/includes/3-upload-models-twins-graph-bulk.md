@@ -48,7 +48,7 @@ az role assignment create --role "Storage Blob Data Contributor" --assignee $AZU
 az role assignment create --role "Storage Blob Data Contributor" --assignee $PRINCIPALID --scope "/subscriptions/$AZURE_SUBSCRIPTION/resourceGroups/$RESOURCE_GROUP/providers/Microsoft.Storage/storageAccounts/$STORAGE_ACCOUNT"
 ```
 
-Run this command to get the URL of your new storage container. Save this value, because you'll use it later when you run the Import Jobs API command from Postman.
+Run this command to get the URL of your new storage container. Save this value, because you'll use it later when you run the Import Jobs API command from Visual Studio.
 
 ```azurecli
 echo "https://$STORAGE_ACCOUNT.blob.core.windows.net/$CONTAINER"

@@ -97,7 +97,7 @@ Follow these steps to create an endpoint using the [DigitalTwinsEndpoint CreateO
     :::image type="content" source="../media/6-endpoint-create-response.png" alt-text="Visual Studio screenshot showing the Endpoint Create response." border="true" lightbox="../media/6-endpoint-create-response.png":::
     
     >[!TIP]
-    >If your control plane bearer token from [Unit 2](../2-configure-postman-api-collections.yml) has expired, you'll get a *401 Unauthorized* error. Remember that you can re-run the `az account get-access-token --resource https://management.azure.com/` command to get a new token, and update the value of the `CPtoken` variable at the top of *control.http*.
+    >If your control plane bearer token from [Unit 2](../2-set-up-http-file.yml) has expired, you'll get a *401 Unauthorized* error. Remember that you can re-run the `az account get-access-token --resource https://management.azure.com/` command to get a new token, and update the value of the `CPtoken` variable at the top of *control.http*.
     
     A successful 201 response contains information about the endpoint that has been created. In the screenshot shown above, the `provisioningState` shows a value of *Provisioning*, which indicates that the endpoint is still in the process of being created.
 
