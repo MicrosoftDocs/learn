@@ -12,7 +12,7 @@ In the last period, the healthcare industry faced workforce shortages<sup>3</sup
 
 Besides, there’s a growing demand for **decentralized care**. Orthopedic patients often experience limited mobility, so it’s fundamental to minimize the times they need to move to the hospital or any other healthcare facility.
 
-![Image of a woman  standing holding a walking cane.](../media/5-walking-cane.jpg)
+![Woman  standing holding a walking cane.](../media/5-walking-cane.jpg)
 
 ## The solution
 
