@@ -7,6 +7,8 @@ metadata:
   title: Create a large language model deployment
   description: Lean how to create a large language model deployment. 
   ms.topic: module
+  ms.collection: ce-advocates-ai-copilot
+  ms.service: azure-ai-openai
 title: "Create a large language model deployment"
 summary: "This module provides a step-by-step guide on how to provision an Azure OpenAI cloud resource, create a deployment for a specific large language model (LLM), and experiment with different prompts to explore the capabilities of an LLM in various scenarios."
 abstract: |

@@ -1,10 +1,10 @@
-Now that we have the base project running along with our test file, let's start writing the code that implements the previous unit's features and requirements. We'll come back to a few topics we've discussed, like errors, structures, and methods.
+Now that we have the base project running along with our test file, let's start writing the code that implements the previous unit's features and requirements. Here, we revisit a few subjects we discussed earlier, like errors, structures, and methods.
 
 Open the `$GOPATH/src/bankcore/bank.go` file, remove the `Hello()` function, and let's start writing the core logic of our online bank system.
 
 ## Create structures for customers and accounts
 
-Let's begin by creating a `Customer` structure where we'll have the name, address, and phone number from a person who wants to become a bank customer. Also, we need a structure for the `Account` data. Because a customer can have more than one account, let's embed the customer information into the account object. Basically, let's create what we defined in the `TestAccount` test.
+Let's begin by creating a `Customer` structure where we have the name, address, and phone number from a person who wants to become a bank customer. Also, we need a structure for the `Account` data. Because a customer can have more than one account, let's embed the customer information into the account object. Basically, let's create what we defined in the `TestAccount` test.
 
 The structures that we need might look like the following code example:
 
@@ -35,7 +35,7 @@ PASS
 ok      github.com/msft/bank    0.094s
 ```
 
-This test is passing because we've implemented the structures for `Customer` and `Account`. Now that we have the structures, let's write the methods for adding the features that we need in the initial version of our bank. These features include deposit, withdraw, and transfer money.
+This test is passing because we implemented the structures for `Customer` and `Account`. Now that we have the structures, let's write the methods for adding the features that we need in the initial version of our bank. These features include deposit, withdraw, and transfer money.
 
 ## Implement the deposit method
 
@@ -134,7 +134,7 @@ ok      github.com/msft/bank    0.197s
 
 ## Implement the withdraw method
 
-Before we write the withdraw functionality, let's write the test for it:
+Before we write the `Withdraw` functionality, let's write the test for it:
 
 ```go
 func TestWithdraw(t *testing.T) {
@@ -165,7 +165,7 @@ When you run the `go test -v` command, you should see a failing test in the outp
 FAIL    github.com/msft/bank [build failed]
 ```
 
-Let's implement the logic for the `Withdraw` method, where we'll reduce the balance of the account by the amount that we receive as a parameter. Like we did before, we need to validate that the number we receive is greater than zero and that the balance in the account is enough.
+Let's implement the logic for the `Withdraw` method, where we reduce the balance of the account by the amount that we receive as a parameter. Like we did before, we need to validate that the number we receive is greater than zero and that the balance in the account is enough.
 
 Use the following code for the `Withdraw` method:
 
@@ -177,7 +177,7 @@ func (a *Account) Withdraw(amount float64) error {
     }
 
     if a.Balance < amount {
-        return errors.New("the amount to withdraw should be greater than the account's balance")
+        return errors.New("the amount to withdraw should be less than the account's balance")
     }
 
     a.Balance -= amount
@@ -232,7 +232,7 @@ When you run `go test -v`, you should see a failing test in the output:
 FAIL    github.com/msft/bank [build failed]
 ```
 
-Let's write the `Statement` method, which should return a string. (You'll have to overwrite this method later as a challenge.) Use the following code:
+Let's write the `Statement` method, which should return a string. (You have to overwrite this method later as a challenge.) Use the following code:
 
 ```go
 // Statement ...
@@ -258,4 +258,4 @@ PASS
 ok      github.com/msft/bank    0.328s
 ```
 
-Let's move on to the next section to write the Web API to expose the `Statement` method.
+Let's move on to the next section and write the Web API that exposes the `Statement` method.
