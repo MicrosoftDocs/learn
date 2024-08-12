@@ -37,7 +37,7 @@ The following image shows the app we're going to build.
 
   [![Screenshot showing the complete Azure Maps app.](../media/azure-maps-app.png)](../media/azure-maps-app.png#lightbox)
 
-Notice, far right, that the travel distance, and estimated time, are provided. The map view shows the route. At the scale shown in the previous image, you might wonder how much detail there really is. Look at the following image, it shows an overland route out of San Francisco, on a jaunt to Miami. The car and truck head north, the bicycle however, heads south. Every turn on every block is clear.
+Notice, far right, that the travel distance, and estimated time, are provided. The map view shows the route. At the scale shown in the previous image, you might wonder how much detail there really is. Look at the following image, it shows a route out of San Francisco, on a jaunt to Miami. The car and truck head north, the bicycle however, heads south. Every turn on every block is clear.
 
   [![Screenshot showing the route out of San Francisco.](../media/azure-maps-sf-miami.png)](../media/azure-maps-sf-miami.png#lightbox)
 
