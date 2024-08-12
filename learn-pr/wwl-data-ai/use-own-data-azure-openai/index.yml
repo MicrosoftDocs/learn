@@ -5,7 +5,7 @@ metadata:
   description: Learn how to use your own data with the Azure OpenAI Service.
   author: ivorb
   ms.author: berryivor
-  ms.date: 2/21/2024
+  ms.date: 08/06/2024
   ms.service: azure-ai-openai
   ms.topic: module-standard-task-based
   ms.collection:

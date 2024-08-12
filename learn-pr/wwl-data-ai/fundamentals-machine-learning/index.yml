@@ -6,7 +6,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.date: 09/24/2023
-  ms.service: machine-learning
+  ms.service: azure-machine-learning
   ms.topic: module
   ms.collection:
     - wwl-ai-copilot
