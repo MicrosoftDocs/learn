@@ -3,13 +3,13 @@ uid: learn.wwl.define-microsoft-ai-strategy-manufacturing.discover-ai-cuts-devel
 title: Discover how Azure AI Services cuts development time – A Siemens success story
 metadata:
   title: Discover how Azure AI Services cuts development time – A Siemens success story
-  description: Discover how Azure AI Services cuts development time – A Siemens success story
+  description: "Discover how Azure AI Services cuts development time – A Siemens success story"
+  ms.date: 08/12/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.date: 05/22/2024
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/5-discover-ai-cuts-development-time.md)]

@@ -1,10 +1,10 @@
-In this exercise, we'll continue with the health model structure you created previously. Your task is to quantify health states of individual components for the example application. 
+In this exercise, we continue with the health model structure you created previously. Your task is to quantify health states of individual components for the example application. 
 
 In the health model structure, start by evaluating the layers starting at the top with user flows and proceed to the lower layers.
 
 ## User flow health state
 
-So far, we've identified two user flows: **List catalog items** and **Add comment**. To determine health states for each flow, ask questions such as:
+So far, we identified two user flows: **List catalog items** and **Add comment**. To determine health states for each flow, ask questions such as:
 
 - *When is the user flow considered healthy?*
 - *Can it operate in a degraded state?*
@@ -23,7 +23,7 @@ If any of those components become unhealthy, the user flow is expected to become
 
 ## Application component health state
 
-Determine metrics that contribute to the component's health state. For this step, you'll need to know the functionality of the component. Ask questions like:
+Determine metrics that contribute to the component's health state. For this step, you need to know the functionality of the component. Ask questions like:
 
 - *What processing time in the API is acceptable to maintain a good user experience?*
 - *Are there any expected errors? What's the "normal" error rate?*
@@ -34,21 +34,21 @@ These questions should lead you to specific and measurable thresholds for key me
 
 |Metrics and threshold|Health state|
 |---|---|
-|Response Time < 150 ms</br> Failed request count < 10 | Healthy |
-|Response Time < 300 ms</br> Failed request count < 50 | Degraded|
-|Response Time > 300 ms</br> Failed request count > 50 | Unhealthy|
+|Response Time < 150-ms Failed request count < 10 | Healthy |
+|Response Time < 300-ms Failed request count < 50 | Degraded|
+|Response Time > 300-ms Failed request count > 50 | Unhealthy|
 
 You can get the values from an application monitoring solution, such as Application Insights.
 
 ## Azure resource health state
 
-Azure service health states are based on specific resources. For example, Azure Cosmos DB reports DTU utilization, and Azure App Services provides information about CPU utilization.
+Azure service health states are based on specific resources. For example, Azure Cosmos DB reports database transaction unit (DTU) utilization, and Azure App Services provides information about CPU utilization.
 
 For information about metrics by resource type, see [Supported metrics with Azure Monitor](/azure/azure-monitor/essentials/metrics-supported). 
 
 ## Health states and thresholds
 
-After you've evaluated all layers of the application, you should have a list of components and their health state definitions that look similar to this example.
+After you evaluate all layers of the application, you should have a list of components and their health state definitions that look similar to this example.
 
 | Component | Indicator/metric | Healthy | Degraded | Unhealthy |
 | --------- | ---------------- | ------- | -------- | --------- |
