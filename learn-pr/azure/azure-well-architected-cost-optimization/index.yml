@@ -7,7 +7,7 @@ metadata:
   author: martinekuan
   ms.author: martinek
   ms.topic: module
-  ms.service: waf
+  ms.service: azure-waf
 title: Microsoft Azure Well-Architected Framework - Cost Optimization
 summary: Apply cost optimization guidance in your architecture to sustain and improve your return on investment (ROI).
 abstract: |
