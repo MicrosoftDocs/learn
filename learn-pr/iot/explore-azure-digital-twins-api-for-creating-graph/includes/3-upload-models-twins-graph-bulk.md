@@ -1,4 +1,4 @@
-In this unit, you use the Jobs API to import a sample scenario graph complete with models, twins, and relationships. The Import Jobs API uses a file placed in Azure Blob Storage to import all of these entities into your Azure Digital Twins instance at once. You then use Models and Digitaltwins APIs to verify the graph that was imported.
+In this unit, you use the [Jobs API](/rest/api/digital-twins/dataplane/jobs) to import a sample scenario graph complete with models, twins, and relationships. The Import Jobs API uses a file placed in Azure Blob Storage to import all of these entities into your Azure Digital Twins instance at once. You then use [Models APIs](/rest/api/digital-twins/dataplane/models) and [Twins APIs](/rest/api/digital-twins/dataplane/twins) to verify the graph that was imported.
 
 Follow the steps in this unit to explore the sample scenario graph and import it into your Azure Digital Twins instance.
 
@@ -124,7 +124,7 @@ Visual Studio brings up a pane with the details of the response. The response fr
 This result indicates that the job was created. It has probably started running in the minutes since the response was sent, so check the current status of the job with an [ImportJobs GetById](/rest/api/digital-twins/dataplane/jobs/import-jobs-get-by-id) request.
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
-
+    
     :::image type="content" source="../media/3-import-jobs-delimiter.png" alt-text="Visual Studio screenshot showing a new delimiter between requests." border="true" lightbox="../media/3-import-jobs-delimiter.png":::
 
 1. Paste the following GET request on the next line. This is the [ImportJobs GetById](/rest/api/digital-twins/dataplane/jobs/import-jobs-get-by-id) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and the ID value of the job. It also has the authorization header specifying use of your bearer token.

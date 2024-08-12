@@ -1,4 +1,4 @@
-In this unit, you use the Model and Digitaltwin APIs to make manual updates to the sample graph that you imported in the previous unit.
+In this unit, you use the [Models APIs](/rest/api/digital-twins/dataplane/models) and [Twins APIs](/rest/api/digital-twins/dataplane/twins) to make manual updates to the sample graph that you imported in the previous unit.
 
 ## Update (replace) a model
 
@@ -101,7 +101,9 @@ Follow these steps to add the models using the [DigitalTwinModels Add](/rest/api
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following POST request on the next line. This is the [DigitalTwinModels Add](/rest/api/digital-twins/dataplane/models/digital-twin-models-add) request copied from the reference documentation, with parameters filled in for the host name and data plane version. It also has the authorization header specifying use of your bearer token, and a header specifying the `Content-Type` of the body. The body of the request contains the code for the new *Base Receiver* model definition.
+1. Paste the following POST request on the next line. This is the [DigitalTwinModels Add](/rest/api/digital-twins/dataplane/models/digital-twin-models-add) request copied from the reference documentation, with parameters filled in for the host name and data plane version. It also has the authorization header specifying use of your bearer token, and a header specifying the `Content-Type` of the body.
+
+    The body of the request contains the code for the new *Base Receiver* model definition.
 
     ```http
     POST https://{{hostName}}/models?api-version={{DPversion}}
@@ -131,7 +133,7 @@ Follow these steps to add the models using the [DigitalTwinModels Add](/rest/api
     
     :::image type="content" source="../media/4-models-add-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twin Models Add request." border="true" lightbox="../media/4-models-add-response.png":::
     
-    It's the body of the new *Base Receiver* model. This response indicates that the new model was uploaded to the instance, and replaced the old definition that was deleted.
+    It's information about the new *Base Receiver* model that was added. This response indicates that the new model was uploaded to the instance, and replaced the old definition that was deleted.
 
 1. Signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line. Paste the following POST request on the next line, to add back the *Delivery Substation* model. The model code is unchanged from its original form, copied here from the [DeliverySubStation.json source file](https://github.com/Azure-Samples/azure-digital-twins-getting-started/blob/main/models/energy-grid-example/DeliverySubStation.json) in GitHub.
 
@@ -241,7 +243,9 @@ Follow these steps to update the *sub_corp* twin using the [DigitalTwins Update]
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following PATCH request on the next line. This is the [DigitalTwins Update](/rest/api/digital-twins/dataplane/twins/digital-twins-update) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and ID of the *sub_corp* twin. It also has the authorization header specifying use of your bearer token, and a header specifying the `Content-Type` of the body. The body of the request contains JSON Patch code that adds an `Operator` property to the twin, and sets its value to *Contoso Electric*.
+1. Paste the following PATCH request on the next line. This is the [DigitalTwins Update](/rest/api/digital-twins/dataplane/twins/digital-twins-update) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and ID of the *sub_corp* twin. It also has the authorization header specifying use of your bearer token, and a header specifying the `Content-Type` of the body. 
+
+    The body of the request contains JSON Patch code that adds an `Operator` property to the twin, and sets its value to *Contoso Electric*.
 
     ```http
     PATCH https://{{hostName}}/digitaltwins/sub_corp?api-version={{DPversion}}
@@ -286,7 +290,7 @@ This response confirms that the twin is updated with the new property. In the sa
 
 ## Update relationships
 
-Let's say one of the delivery substations represented in your graph is no longer going to supply power to one of its farm consumers. Currently, the delivery substation twin *sub_farmcluster_2* has a *feeds* relationship to farm consumer *c_farm_05*. Since the substation's going to stop feeding that farm cluster, you need to update the graph to remove the relationship between these two twins.
+Let's say one of the delivery substations represented in your graph is no longer going to supply power to one of its farm consumers. Currently, the delivery substation twin *sub_farmcluster_2* has a *feeds* relationship to farm consumer *c_farm_05*. Since the substation's going to stop feeding that farm, you need to update the graph to remove the relationship between these two twins.
 
 ### View Twins API documentation (relationships)
 
@@ -300,7 +304,7 @@ Follow these steps to delete the *feeds* relationship from *sub_farmcluster_2* t
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following DELETE request on the next line. This is the [DigitalTwins DeleteRelationship](/rest/api/digital-twins/dataplane/twins/digital-twins-delete-relationship) request copied from the reference documentation, with parameters filled in for the host name, data plane version, ID of the *sub_farmcluster_2* twin, and relationship ID (the value plugged in below was the ID value given for this relationship when the graph was imported, and together with the source twin ID it identifies this specific relationship in the graph). It also has the authorization header specifying use of your bearer token.
+1. Paste the following DELETE request on the next line. This is the [DigitalTwins DeleteRelationship](/rest/api/digital-twins/dataplane/twins/digital-twins-delete-relationship) request copied from the reference documentation, with parameters filled in for the host name, data plane version, ID of the *sub_farmcluster_2* twin, and relationship ID (the value plugged in below was the ID value supplied for this relationship by the import file, and together with the source twin ID it identifies this specific relationship in the graph). It also has the authorization header specifying use of your bearer token.
 
     ```http
     DELETE https://{{hostName}}/digitaltwins/sub_farmcluster_2/relationships/57becd45-1391-45e8-b127-ff3fdc5d0175?api-version={{DPversion}}

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.set-up-http-file
-title:  Set up .http file in Visual Studio
+title:  Set up HTTP file in Visual Studio
 interactive: bash
 metadata:
-  title:  Set up .http file in Visual Studio
-  description: Deploy an Azure Digital Twins instance, set up an .http file in Visual Studio that's authorized to send Azure Digital Twins API requests, and learn about the Azure Digital Twin API categories.
+  title:  Set up HTTP file in Visual Studio
+  description: Deploy an Azure Digital Twins instance, set up an HTTP file in Visual Studio for sending API requests, and learn about the Azure Digital Twin API categories.
   ms.date: 08/08/2024
   author: baanders
   ms.author: baanders
@@ -25,7 +25,7 @@ quiz:
 
     - content: "False"
       isCorrect: true
-      explanation: "Correct.  Control plane APIs and data plane APIs each require their own bearer token, granted from a different Azure resource endpoint."
+      explanation: "Correct. Control plane APIs and data plane APIs each require their own bearer token, granted from a different Azure resource endpoint."
 
   - content: "Which of the following options is NOT an API category for Azure Digital Twins?"
     choices:

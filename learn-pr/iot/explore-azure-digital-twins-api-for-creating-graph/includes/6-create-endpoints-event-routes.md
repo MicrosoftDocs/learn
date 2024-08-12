@@ -1,7 +1,7 @@
 
-In this unit, you'll use the Endpoints API to create a new endpoint for your Azure Digital Twins instance. An **endpoint** is a recognized destination outside of Azure Digital Twins that can receive digital twin events.
+In this unit, you'll use the [Endpoints API](/rest/api/digital-twins/controlplane/endpoints) to create a new endpoint for your Azure Digital Twins instance. An *endpoint* is a recognized destination outside of Azure Digital Twins that can receive digital twin events.
 
-Then, you'll use the Event Routes API to create a new **event route** that directs data from Azure Digital Twins to the endpoint. Together, endpoints and event routes form the basis of data movement in Azure Digital Twins. 
+Then, you'll use the [Event Routes API](/rest/api/digital-twins/dataplane/event-routes) to create a new *event route* that directs data from Azure Digital Twins to the endpoint. Together, endpoints and event routes form the basis of data movement in Azure Digital Twins. 
 
 ## Understand event handling in Azure Digital Twins
 
@@ -33,7 +33,7 @@ Start by reviewing the [Endpoints API documentation](/rest/api/digital-twins/con
 
 ### Prepare the endpoint resource
 
-Next, create an Event Grid topic in Azure, and record some key values as parameters in your Visual Studio project. Later, you'll register this Event Grid as an Azure Digital Twins endpoint.
+Next, create an Event Grid topic in Azure, and record some key values for it as parameters in your Visual Studio project. Later, you'll send a request that registers this Event Grid as an Azure Digital Twins endpoint.
 
 1. In a browser tab, navigate to the [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/).
 
@@ -46,7 +46,7 @@ Next, create an Event Grid topic in Azure, and record some key values as paramet
 
 1. Copy the value of `endpoint` in the result.
 
-1. In Visual Studio, open the second `.http` file, *control.http*. Underneath the variables already defined in the file, add the following new variable to hold your endpoint details. Replace the placeholder with the value of `endpoint` that you copied in the previous step.
+1. In Visual Studio, open *control.http*. Underneath the variables already defined in the file, add the following new variable to hold your endpoint details. Replace the placeholder with the value of `endpoint` that you copied in the previous step.
 
     ```http
     @endpoint=<paste-endpoint>
@@ -67,11 +67,15 @@ Next, create an Event Grid topic in Azure, and record some key values as paramet
     @key=<paste-key1>
     ```
 
+    :::image type="content" source="../media/6-variables-control-key.png" alt-text="Visual Studio screenshot showing key variable in control.http." border="true" lightbox="../media/6-variables-control-key.png":::
+
 ### Send the endpoint request
 
 Follow these steps to create an endpoint using the [DigitalTwinsEndpoint CreateOrUpdate](/rest/api/digital-twins/controlplane/endpoints/digital-twins-endpoint-create-or-update) API.
 
-1. In *control.http*, enter a new line below the variable declarations and paste the following PUT request. This is the [DigitalTwinsEndpoint CreateOrUpdate](/rest/api/digital-twins/controlplane/endpoints/digital-twins-endpoint-create-or-update) request copied from the reference documentation, with parameters filled in for your control plane variables: subscription, resource group, Azure Digital Twins instance, and control plane version. It also has a parameter for a name for the endpoint (*trainingtestendpoint*), the authorization header specifying use of your bearer token, and a header specifying the `Content-Type` of the body. The body says that you want to create an Event Grid-type endpoint, and provides your endpoint and key value variables so the request can find and authenticate with your endpoint resource.
+1. In *control.http*, enter a new line below the variable declarations and paste the following PUT request. This is the [DigitalTwinsEndpoint CreateOrUpdate](/rest/api/digital-twins/controlplane/endpoints/digital-twins-endpoint-create-or-update) request copied from the reference documentation, with parameters filled in for your control plane variables: subscription, resource group, Azure Digital Twins instance, and control plane version. It also has a parameter for a name for the endpoint (*trainingtestendpoint*), the authorization header specifying use of your bearer token, and a header specifying the `Content-Type` of the body. 
+
+    The body says that you want to create an Event Grid-type endpoint, and provides your endpoint and key value variables so the request can find and authenticate with your endpoint resource.
 
     ```http
     PUT https://management.azure.com/subscriptions/{{subscription}}/resourceGroups/{{resourceGroup}}/providers/Microsoft.DigitalTwins/digitalTwinsInstances/{{instance}}/endpoints/trainingtestendpoint?api-version={{CPversion}}
@@ -97,7 +101,7 @@ Follow these steps to create an endpoint using the [DigitalTwinsEndpoint CreateO
     :::image type="content" source="../media/6-endpoint-create-response.png" alt-text="Visual Studio screenshot showing the Endpoint Create response." border="true" lightbox="../media/6-endpoint-create-response.png":::
     
     >[!TIP]
-    >If your control plane bearer token from [Unit 2](../2-set-up-http-file.yml) has expired, you'll get a *401 Unauthorized* error. Remember that you can re-run the `az account get-access-token --resource https://management.azure.com/` command to get a new token, and update the value of the `CPtoken` variable at the top of *control.http*.
+    >If your control plane bearer token from [Unit 2](../2-set-up-http-file.yml) has expired, you'll get a *401 Unauthorized* error. Remember that you can re-run the `az account get-access-token --resource https://management.azure.com/` command to get a new token, and update the value of the `CPtoken` variable at the top of *control.http*. Then, resend the request.
     
     A successful 201 response contains information about the endpoint that has been created. In the screenshot shown above, the `provisioningState` shows a value of *Provisioning*, which indicates that the endpoint is still in the process of being created.
 
@@ -120,7 +124,7 @@ In this section, you check the status of the endpoint to verify when it is finis
     
     :::image type="content" source="../media/6-endpoint-get-response.png" alt-text="Visual Studio screenshot showing the Endpoint Get response." border="true" lightbox="../media/6-endpoint-get-response.png":::
 
-    This 200 response contains information about the endpoint. Look for the `provisioningState` field. If the value is *Succeeded*, the endpoint is finished provisioning and you can proceed to the next section. If it still says *Provisioning,* wait a few minutes and repeat this section.
+    This 200 response contains information about the endpoint. Look for the `provisioningState` field. If the value is *Succeeded*, the endpoint is finished provisioning and you can proceed to the next section. If it still says *Provisioning,* wait a few minutes and rerun the request.
 
 ## Create an event route
 
@@ -138,7 +142,9 @@ Follow these steps to check the endpoint using the [Event Routes - Add](/rest/ap
 
 1. In Visual Studio, open *data.http*. Signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following PUT request on the next line. This is the [Event Routes - Add](/rest/api/digital-twins/dataplane/event-routes/add) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and an ID for the event route (*trainingtestroute*). It also has the authorization header specifying use of your bearer token, and a header specifying the `Content-Type` of the body. The body of the request contains information to create an event route that sends twin update events to your endpoint (*trainingtestendpoint*).
+1. Paste the following PUT request on the next line. This is the [Event Routes - Add](/rest/api/digital-twins/dataplane/event-routes/add) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and an ID for the event route (*trainingtestroute*). It also has the authorization header specifying use of your bearer token, and a header specifying the `Content-Type` of the body. 
+
+    The body of the request contains information to create an event route that sends twin update events to your endpoint (*trainingtestendpoint*).
 
     ```http
     PUT https://{{hostName}}/eventroutes/trainingtestroute?api-version={{DPversion}}
@@ -151,18 +157,18 @@ Follow these steps to check the endpoint using the [Event Routes - Add](/rest/ap
     }
     ```
 
-  >[!TIP]
-  >To create an event route that sends all event types, not just update events, you can use `"filter": "true"`. For more filter options, see [Supported route filters](/azure/digital-twins/how-to-create-routes?tabs=portal2%2Cportal3#supported-route-filters) in the Azure Digital Twins documentation.
+    >[!TIP]
+    >To create an event route that sends all event types, not just update events, you can use `"filter": "true"`. For more filter options, see [Supported route filters](/azure/digital-twins/how-to-create-routes?tabs=portal2%2Cportal3#supported-route-filters) in the Azure Digital Twins documentation.
 
 1. Select **Send request** above the request to send it.
 
     The response from a successful request looks something like this:
+
+    :::image type="content" source="../media/6-event-routes-add-response.png" alt-text="Visual Studio screenshot showing the Event Routes Add response." border="true" lightbox="../media/6-event-routes-add-response.png":::
     
     [!INCLUDE [Reminder for how to get a new data plane bearer token](../../includes/azure-digital-twins-data-plane-token.md)]
     
-    :::image type="content" source="../media/6-event-routes-add-response.png" alt-text="Visual Studio screenshot showing the Event Routes Add response." border="true" lightbox="../media/6-event-routes-add-response.png":::
-    
-    This 204 response doesn't show any details about the event route.
+    The 204 response doesn't show any details about the event route.
 
 ### View event route
 
@@ -181,7 +187,7 @@ Follow these steps to check the endpoint using the [Event Routes - Get By Id](/r
 
 1. Select **Send request** above the request to send it.
 
-The response from a successful request looks something like this:
+    The response from a successful request looks something like this:
 
     :::image type="content" source="../media/6-event-routes-get-response.png" alt-text="Visual Studio screenshot showing the Event Routes Get by ID response." border="true" lightbox="../media/6-event-routes-get-response.png":::
     

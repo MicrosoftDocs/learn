@@ -4,9 +4,9 @@ In this unit, you get ready to work with the Azure Digital Twins APIs. You creat
 
 ## Set up .http files for Azure Digital Twins APIs
 
-This module uses **Visual Studio 2022** with the **ASP.NET and web development** workload. 
+*This module requires Visual Studio 2022 with the ASP.NET and web development workload.*
 
-In this section, you set up two `.http` files in Visual Studio. One `.http` file will be for *control plane* requests, and the other will be for *data plane* requests. [Control plane APIs](#control-plane-apis) are ARM APIs used to manage Azure resources related to Azure Digital Twins, so they cover operations like creating/deleting your entire instance and creating/deleting endpoints. [Data plane APIs](#data-plane-apis) are used to manage the elements within your Azure Digital Twins instance, such as models, twins, relationships, and event routes.
+In this section, you set up two `.http` files in Visual Studio. One `.http` file will be for [Control plane API](#control-plane-apis) requests, which are resource manager APIs used to manage Azure resources related to Azure Digital Twins. Control plane APIs cover operations like creating/deleting your entire instance and creating/deleting endpoints. The other file will be for [Data plane API](#data-plane-apis) requests, which manage the elements within your Azure Digital Twins instance, such as models, twins, relationships, and event routes.
 
 ### Create project
 
@@ -14,13 +14,13 @@ Open Visual Studio 2022 on your machine, and create a new project. Use the **ASP
 
 :::image type="content" source="../media/2-new-project.png" alt-text="Screenshot of an ASP.NET Core Empty project template in Visual Studio." border="true" lightbox="../media/2-new-project.png":::
 
-Add a new `.http` file to the project called *control.http* (this file will be used for control plane requests). For instructions, see [Create an .http file](/aspnet/core/test/http-files#create-an-http-file).
+Add a new `.http` file to the project called *control.http* (this file will be used for control plane requests). For detailed instructions on how to create this new file, see [Create an .http file](/aspnet/core/test/http-files#create-an-http-file).
 
 Add a second new `.http` file to the project called *data.http* (this file will be used for data plane requests).
 
 ### Add variables
 
-In *control.http*, create the following variables. They contain placeholders for your resource data. 
+In *control.http*, paste the following code to create variables that can be used in future API requests. The variables contain placeholders for your resource data, so fill those details in.
 
 >[!TIP]
 >If you've run the Cloud Shell commands for this module exactly as provided, you can find these values stored in the `AZURE_SUBSCRIPTION`, `RESOURCE_GROUP`, and `INSTANCE_NAME` variables in your Cloud Shell.
@@ -32,9 +32,11 @@ In *control.http*, create the following variables. They contain placeholders for
 @CPversion=2023-01-31
 ```
 
+Here's what the variables look like at the top of the file: 
+
 :::image type="content" source="../media/2-variables-control.png" alt-text="Visual Studio screenshot showing sample variables in control.http." border="true" lightbox="../media/2-variables-control.png":::
 
-In *data.http*, create the following variables. There's one placeholder for your Azure Digital Twins instance's host name.
+Next, open *data.http* and create the following variables. There's one placeholder for your Azure Digital Twins instance's host name.
 
 >[!TIP]
 > You can find the host name by running `az dt show -n $INSTANCE_NAME --query "hostName" --output tsv` in the Azure CLI.
@@ -73,7 +75,9 @@ Copy the value of `accessToken` from the result, and save it to use in the next 
 
 ### Add tokens to project
 
-In *control.http* in Visual Studio, add the following variable to hold the value of your control plane token. Replace the placeholder with your token value.
+In *control.http* in Visual Studio, add the following variable to hold the value of your control plane token. Replace the placeholder with your copied control plane token value.
+
+Your file now looks something like this:
 
 ```http
 @CPtoken=<paste-control-plane-token>
@@ -81,16 +85,16 @@ In *control.http* in Visual Studio, add the following variable to hold the value
 
 :::image type="content" source="../media/2-variables-control-token.png" alt-text="Visual Studio screenshot showing token variable in control.http." border="true" lightbox="../media/2-variables-control-token.png":::
 
-In *data.http*, add the following variable to hold the value of your data plane token. Replace the placeholder with your token value.
+In *data.http*, add the following variable to hold the value of your data plane token. Replace the placeholder with your copied data plane token value.
 
 ```http
 @DPtoken=<paste-data-plane-token>
 ```
 
+Now your Visual Studio project is set up to run Azure Digital Twins API requests. Leave your project open, as you'll use it to run requests in upcoming units.
+
 >[!IMPORTANT]
 >If the tokens expire while you're still working on this module, generate new tokens and replace the values of these variables with the new token values.
-
-Now your Visual Studio project is set up to run Azure Digital Twins API requests. Leave your project open, as you'll use it to run requests in upcoming units.
 
 ## View and understand the API categories
 
@@ -115,6 +119,6 @@ Data plane APIs are used to manage the elements within your Azure Digital Twins 
 * **Jobs**: These requests are for managing long-running jobs. The *ImportJobs* operations allow you to create and manage a long running, asynchronous action to import models, twins, and relationships in bulk.
 * **Models**: These requests are for managing models in an Azure Digital Twins instance. Models are custom definitions of a type of entity in your environment. Each type of entity, such as a *Generator*, will have one model to describe it.
 * **Query**: These requests are for querying an Azure Digital Twins graph. You can query for digital twins based on their properties, models, and relationships.
-* **Twins**: TThese requests are for managing digital twins in an Azure Digital Twins instance. Digital twins are instances of a model that represent specific entities in your environment. You may have one *Generator* model definition, and several digital twins based on it that represent *Generator A*, *Generator B*, and *Generator C*.
+* **Twins**: These requests are for managing digital twins in an Azure Digital Twins instance. Digital twins are instances of a model that represent specific entities in your environment. You may have one *Generator* model definition, and several digital twins based on it that represent *Generator A*, *Generator B*, and *Generator C*.
 
 To see the details of the data plane API operations, view the [Data plane API documentation](/rest/api/digital-twins/dataplane/operation-groups).
