@@ -4,8 +4,8 @@ The `Result<T, E>` enum is defined as:
 
 ```rust
 enum Result<T, E> {
-    Ok(T):  // A value T was obtained.
-    Err(E): // An error of type E was encountered instead.
+    Ok(T),  // A value T was obtained.
+    Err(E), // An error of type E was encountered instead.
 }
 ```
 
@@ -50,4 +50,4 @@ Err(DivisionByZeroError)
 Ok(0.0)
 ```
 
-The `#[derive(Debug)]` part that precedes the `DivisionByZeroError` struct is a macro that tells the Rust compiler to make the type printable for debugging purposes. We'll cover this concept in depth later, in the Traits module.
+The `#[derive(Debug)]` part that precedes the `DivisionByZeroError` struct is a macro that tells the Rust compiler to make the type printable for debugging purposes. We cover this concept in depth later, in the Traits module.
