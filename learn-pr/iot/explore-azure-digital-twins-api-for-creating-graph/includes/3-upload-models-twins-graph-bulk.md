@@ -127,7 +127,7 @@ This result indicates that the job was created. It has probably started running 
 
     :::image type="content" source="../media/3-import-jobs-delimiter.png" alt-text="Visual Studio screenshot showing a new delimiter between requests." border="true" lightbox="../media/3-import-jobs-delimiter.png":::
 
-1. Paste the following GET request on the next line. This is the [ImportJobs GetById](/rest/api/digital-twins/dataplane/jobs/import-jobs-get-by-id) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and the ID value of the job. It also has the authorization line specifying use of your bearer token.
+1. Paste the following GET request on the next line. This is the [ImportJobs GetById](/rest/api/digital-twins/dataplane/jobs/import-jobs-get-by-id) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and the ID value of the job. It also has the authorization header specifying use of your bearer token.
 
     ```http
     GET https://{{hostName}}/jobs/imports/importdistributiongrid?api-version={{DPversion}}
@@ -156,7 +156,7 @@ First, use the [DigitalTwinModels List](/rest/api/digital-twins/dataplane/models
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following GET request on the next line. This is the [DigitalTwinModels List](/rest/api/digital-twins/dataplane/models/digital-twin-models-list) request copied from the reference documentation, with parameters filled in for the host name and data plane version. It also has the authorization line specifying use of your bearer token.
+1. Paste the following GET request on the next line. This is the [DigitalTwinModels List](/rest/api/digital-twins/dataplane/models/digital-twin-models-list) request copied from the reference documentation, with parameters filled in for the host name and data plane version. It also has the authorization header specifying use of your bearer token.
 
     ```http
     GET https://{{hostName}}/models?api-version={{DPversion}}
@@ -180,7 +180,7 @@ Next, use the [DigitalTwins GetById](/rest/api/digital-twins/dataplane/twins/dig
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following GET request on the next line. This is the [DigitalTwins GetById](/rest/api/digital-twins/dataplane/twins/digital-twins-get-by-id) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and ID of the *pl_distribute* twin. It also has the authorization line specifying use of your bearer token.
+1. Paste the following GET request on the next line. This is the [DigitalTwins GetById](/rest/api/digital-twins/dataplane/twins/digital-twins-get-by-id) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and ID of the *pl_distribute* twin. It also has the authorization header specifying use of your bearer token.
 
     ```http
     GET https://{{hostName}}/digitaltwins/pl_distribute?api-version={{DPversion}}
@@ -201,7 +201,7 @@ In this section, you use the [DigitalTwins ListRelationships](/rest/api/digital-
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following GET request on the next line. This is the [DigitalTwins ListRelationships](/rest/api/digital-twins/dataplane/twins/digital-twins-list-relationships) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and ID of the *pl_distribute* twin. It also has the authorization line specifying use of your bearer token.
+1. Paste the following GET request on the next line. This is the [DigitalTwins ListRelationships](/rest/api/digital-twins/dataplane/twins/digital-twins-list-relationships) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and ID of the *pl_distribute* twin. It also has the authorization header specifying use of your bearer token.
 
     ```http
     GET https://{{hostName}}/digitaltwins/pl_distribute/relationships?api-version={{DPversion}}

@@ -18,7 +18,7 @@ Follow these steps to query by models using the [Query Twins](/rest/api/digital-
 
 1. Signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following POST request on the next line. This is the [Query Twins](/rest/api/digital-twins/dataplane/query) request copied from the reference documentation, with parameters filled in for the host name and data plane version. It also has the authorization line specifying use of your bearer token, and a header specifying the `Content-Type` of the body. The body of the request contains a query that returns all twins with a model of *dtmi:example:grid:transmission:powerLine;1*.
+1. Paste the following POST request on the next line. This is the [Query Twins](/rest/api/digital-twins/dataplane/query) request copied from the reference documentation, with parameters filled in for the host name and data plane version. It also has the authorization header specifying use of your bearer token, and a header specifying the `Content-Type` of the body. The body of the request contains a query that returns all twins with a model of *dtmi:example:grid:transmission:powerLine;1*.
 
     ```http
     POST https://{{hostName}}/query?api-version={{DPversion}}
@@ -40,7 +40,7 @@ Follow these steps to query by models using the [Query Twins](/rest/api/digital-
     
     [!INCLUDE [Reminder for how to get a new data plane bearer token](../../includes/azure-digital-twins-data-plane-token.md)]
 
-    The successful 200 response contains a list of digital twins in JSON format that meet the query criteria. In this case, it's a list of all the power lines in the instance (there are five).
+    A successful 200 response contains a list of digital twins in JSON format that meet the query criteria. In this case, it's a list of all the power lines in the instance (there are five).
 
 ## Query by property
 
@@ -97,7 +97,7 @@ Having noticed that the *pl_distribute* power line has a capacity of 0, you migh
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following POST request on the next line. This is the same [Query Twins](/rest/api/digital-twins/dataplane/query) request with parameters filled in for the host name and data plane version, the authorization line specifying use of your bearer token, and a header specifying the `Content-Type` of the body. The body of the request contains a query that returns any twins that are connected to *pl_distribute* by a *feeds* relationship pointing out from the power line.
+1. Paste the following POST request on the next line. This is the same [Query Twins](/rest/api/digital-twins/dataplane/query) request with parameters filled in for the host name and data plane version, the authorization header specifying use of your bearer token, and a header specifying the `Content-Type` of the body. The body of the request contains a query that returns any twins that are connected to *pl_distribute* by a *feeds* relationship pointing out from the power line.
 
     ```http
     POST https://{{hostName}}/query?api-version={{DPversion}}

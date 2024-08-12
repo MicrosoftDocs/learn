@@ -6,4 +6,4 @@ With the built-in Azure Digital Twins capabilities for creating models, devices,
 
 [!INCLUDE [Instructions to clean up Azure Digital Twins resources](../../includes/clean-up-azure-digital-twins.md)]
 
-You might also want to delete the resources that you downloaded to your machine for this module. This includes the sample graph file that you downloaded in Unit 3 (*distributionGridBulkImport.json*), and might include Visual Studio if you downloaded it specifically for this module and don't want to use it again in the future.
+You might also want to delete the resources that you downloaded or created on your machine for this module. This includes the sample graph file that you downloaded in Unit 3 (*distributionGridBulkImport.json*) and your project in Visual Studio. You might choose to remove the Visual Studio application completely, if you downloaded it specifically for this module and don't want to use it again in the future.

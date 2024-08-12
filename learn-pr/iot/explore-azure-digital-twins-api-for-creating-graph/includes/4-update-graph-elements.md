@@ -57,7 +57,7 @@ Follow these steps to delete the models using the [DigitalTwinModels Delete](/re
 
 1. Signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following DELETE request on the next line. This is the [DigitalTwinModels Delete](/rest/api/digital-twins/dataplane/models/digital-twin-models-delete) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and the DTMI ID of the *Delivery Substation* model. It also has the authorization line specifying use of your bearer token.
+1. Paste the following DELETE request on the next line. This is the [DigitalTwinModels Delete](/rest/api/digital-twins/dataplane/models/digital-twin-models-delete) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and the DTMI ID of the *Delivery Substation* model. It also has the authorization header specifying use of your bearer token.
 
     ```http
     DELETE https://{{hostName}}/models/dtmi:example:grid:transmission:deliverySubStation;1?api-version={{DPversion}}
@@ -101,7 +101,7 @@ Follow these steps to add the models using the [DigitalTwinModels Add](/rest/api
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following POST request on the next line. This is the [DigitalTwinModels Add](/rest/api/digital-twins/dataplane/models/digital-twin-models-add) request copied from the reference documentation, with parameters filled in for the host name and data plane version. It also has the authorization line specifying use of your bearer token, and a header specifying the `Content-Type` of the body. The body of the request contains the code for the new *Base Receiver* model definition.
+1. Paste the following POST request on the next line. This is the [DigitalTwinModels Add](/rest/api/digital-twins/dataplane/models/digital-twin-models-add) request copied from the reference documentation, with parameters filled in for the host name and data plane version. It also has the authorization header specifying use of your bearer token, and a header specifying the `Content-Type` of the body. The body of the request contains the code for the new *Base Receiver* model definition.
 
     ```http
     POST https://{{hostName}}/models?api-version={{DPversion}}
@@ -209,7 +209,7 @@ You can verify the new model property by getting the *Base Receiver* model by it
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following GET request on the next line. This is the [DigitalTwinModels GetById](/rest/api/digital-twins/dataplane/models/digital-twin-models-get-by-id) request copied from the reference documentation, with parameters filled in for the host name, data plane version, the DTMI ID of the *Base Receiver* model, and the specification that the full model definition should be included in the response. It also has the authorization line specifying use of your bearer token.
+1. Paste the following GET request on the next line. This is the [DigitalTwinModels GetById](/rest/api/digital-twins/dataplane/models/digital-twin-models-get-by-id) request copied from the reference documentation, with parameters filled in for the host name, data plane version, the DTMI ID of the *Base Receiver* model, and the specification that the full model definition should be included in the response. It also has the authorization header specifying use of your bearer token.
 
     ```http
     GET https://{{hostName}}/models/dtmi:example:grid:transmission:baseReceiver;1?includeModelDefinition=true&api-version={{DPversion}}
@@ -241,7 +241,7 @@ Follow these steps to update the *sub_corp* twin using the [DigitalTwins Update]
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following PATCH request on the next line. This is the [DigitalTwins Update](/rest/api/digital-twins/dataplane/twins/digital-twins-update) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and ID of the *sub_corp* twin. It also has the authorization line specifying use of your bearer token, and a header specifying the `Content-Type` of the body. The body of the request contains JSON Patch code that adds an `Operator` property to the twin, and sets its value to *Contoso Electric*.
+1. Paste the following PATCH request on the next line. This is the [DigitalTwins Update](/rest/api/digital-twins/dataplane/twins/digital-twins-update) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and ID of the *sub_corp* twin. It also has the authorization header specifying use of your bearer token, and a header specifying the `Content-Type` of the body. The body of the request contains JSON Patch code that adds an `Operator` property to the twin, and sets its value to *Contoso Electric*.
 
     ```http
     PATCH https://{{hostName}}/digitaltwins/sub_corp?api-version={{DPversion}}
@@ -269,7 +269,7 @@ Follow these steps to get the twin using the [DigitalTwins GetById](/rest/api/di
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following GET request on the next line. This is the [DigitalTwins GetById](/rest/api/digital-twins/dataplane/twins/digital-twins-get-by-id) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and ID of the *sub_corp* twin. It also has the authorization line specifying use of your bearer token.
+1. Paste the following GET request on the next line. This is the [DigitalTwins GetById](/rest/api/digital-twins/dataplane/twins/digital-twins-get-by-id) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and ID of the *sub_corp* twin. It also has the authorization header specifying use of your bearer token.
 
     ```http
     GET https://{{hostName}}/digitaltwins/sub_corp?api-version={{DPversion}}
@@ -300,7 +300,7 @@ Follow these steps to delete the *feeds* relationship from *sub_farmcluster_2* t
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following DELETE request on the next line. This is the [DigitalTwins DeleteRelationship](rest/api/digital-twins/dataplane/twins/digital-twins-delete-relationship) request copied from the reference documentation, with parameters filled in for the host name, data plane version, ID of the *sub_farmcluster_2* twin, and relationship ID (the value plugged in below was the ID value given for this relationship when the graph was imported, and together with the source twin ID it identifies this specific relationship in the graph). It also has the authorization line specifying use of your bearer token.
+1. Paste the following DELETE request on the next line. This is the [DigitalTwins DeleteRelationship](rest/api/digital-twins/dataplane/twins/digital-twins-delete-relationship) request copied from the reference documentation, with parameters filled in for the host name, data plane version, ID of the *sub_farmcluster_2* twin, and relationship ID (the value plugged in below was the ID value given for this relationship when the graph was imported, and together with the source twin ID it identifies this specific relationship in the graph). It also has the authorization header specifying use of your bearer token.
 
     ```http
     DELETE https://{{hostName}}/digitaltwins/sub_farmcluster_2/relationships/57becd45-1391-45e8-b127-ff3fdc5d0175?api-version={{DPversion}}
@@ -318,7 +318,7 @@ Follow these steps to list the relationships using the [DigitalTwins ListRelatio
 
 1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-1. Paste the following GET request on the next line. This is the [DigitalTwins ListRelationships](rest/api/digital-twins/dataplane/twins/digital-twins-list-relationships) request copied from the reference documentation, with parameters filled in for the host name, data plane version, ID of the *sub_farmcluster_2* twin, and the relationship name *feeds*. It also has the authorization line specifying use of your bearer token.
+1. Paste the following GET request on the next line. This is the [DigitalTwins ListRelationships](rest/api/digital-twins/dataplane/twins/digital-twins-list-relationships) request copied from the reference documentation, with parameters filled in for the host name, data plane version, ID of the *sub_farmcluster_2* twin, and the relationship name *feeds*. It also has the authorization header specifying use of your bearer token.
 
     ```http
     GET https://{{hostName}}/digitaltwins/sub_farmcluster_2/relationships?relationshipName=feeds&api-version={{DPversion}}
