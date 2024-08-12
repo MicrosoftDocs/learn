@@ -3,7 +3,7 @@ Often, when you write code, you need to consult official documentation, or other
 
 ## How does it work?
 
-GitHub Copilot is an AI assistant that you use from within your IDE that’s capable of generating code and much more. GitHub Copilot uses prompts, natural language, and it provides suggestions based on what you type. A prompt can, for example, can be a comment within your code file:
+GitHub Copilot is an AI assistant that you use from within your IDE that’s capable of generating code and much more. GitHub Copilot uses prompts, natural language, and it provides suggestions based on what you type. A prompt can, for example, look like so:
 
 ```javascript
 // Create a web API using express and JavaScript with routes for products and customers
@@ -12,40 +12,38 @@ GitHub Copilot is an AI assistant that you use from within your IDE that’s cap
 Copilot then goes on to generate a response that you can choose to accept or reject. A response to the prompt could look similar to the following:
 
 ```javascript
-const express = require("express");
+const express = require(“express”);
 
 app = express();
-app.path("/products", () => "products");
-app.listen(3000, () => "app runs");
+app.path(“/products”, () => “products”);
+app.listen(3000, () => “app runs”);
 ```
 
 ## How it recognizes prompts
 
-Copilot can recognize a prompt or instruction if you:
+Copilot can tell that something is a prompt, an instruction if you:
 
-- Type it as a comment in a code file (e.g., `.py`, `.js`).
-- Type text in a markdown file and wait a few seconds for Copilot to respond.
+Type it as a comment in a code file with a file ending like `.py` or `.js` for example.
+
+Type text in a markdown file and wait for Copilot to return a response within a few seconds.
 
 ## Accepting suggestions
 
-What you get from Copilot is a suggestion, which appears as grey text if you use black as your text color. To accept the suggestion, press the <kbd>Tab</kbd> key.
+What’s you’re getting back from Copilot is a suggestion, text that shows itself as grey code, if you use black as your text color. To accept the suggestion, you need to press the “Tab” key.
 
-Copilot might suggest multiple options. To cycle through suggestions, use <kbd>Ctrl</kbd> + <kbd>Enter</kbd> and select the most appropriate one.
+Copilot might suggest more than one thing and it’s possible to cycle between suggestion using “ctrl + enter” key and select the most appropriate one.
+
 
 ## How to set up GitHub Copilot
 
 To use GitHub Copilot, you need the following:
 
-1. **GitHub Account**: 
-   - Create a GitHub account. Since Copilot is a GitHub service, you need a GitHub account to use it.
+Create a GitHub account, as Copilot is a GitHub service, you need a GitHub account to use the service.
 
-2. **Sign Up for Copilot**: 
-   - Sign up for Copilot via its [web page](https://copilot.github.com/).
+Sign up, you need to sign up for Copilot via its web page.
 
-3. **Enable Copilot**:
-   - In GitHub, go to your profile, then head over to **Settings**.
-   - Under **Copilot**, enable access or sign up for a free trial.
+In GitHub select on your profile then head over to settings where under Copilot you can enable access or sign up for a free trial.
 
-4. **Install the Extension**:
-   - Install the GitHub Copilot extension into your IDE.
-   - Extensions are available for major IDEs like Visual Studio and Visual Studio Code.
+To use GitHub Copilot, you need to install it as an extension into your IDE.
+
+Extensions are available for major IDEs like Visual Studio, Visual Studio Code.

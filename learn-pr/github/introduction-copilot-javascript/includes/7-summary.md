@@ -24,4 +24,3 @@ To avoid consuming all your monthly GitHub Codespaces time, it's important to de
 * [Introduction to GitHub Copilot](/training/modules/introduction-to-github-copilot/?WT.mc_id=academic-105774-abrilu)
 * [Code with GitHub Codespaces](/training/modules/code-with-github-codespaces/?WT.mc_id=academic-105774-abrilu)
 * [Get started with React](/training/modules/react-get-started/?WT.mc_id=academic-105774-abrilu)
-* [Visual Studio Code (YouTube)](https://www.youtube.com/@code/playlists)
