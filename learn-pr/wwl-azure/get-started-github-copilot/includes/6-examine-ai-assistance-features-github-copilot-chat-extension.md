@@ -267,7 +267,7 @@ Console.WriteLine(sum);
 
 Although using a `HashSet` works efficiently to ensure a collection of unique elements, the update creates a new problem. The `addPrimeNumbersInNumericList` method expects a `List<int>` as input, but the updated code creates a `HashSet<int>`. This results in the following compilation error:
 
-![Screenshot showing how to access smart actions in Visual Studio Code.](../media/smart-actions-2.png)
+![Screenshot showing a compilation error in Visual Studio Code.](../media/smart-actions-2.png)
 
 Fortunately, you can use the **Fix This** smart action to correct the error. To use the **Fix This** smart action:
 

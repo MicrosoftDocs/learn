@@ -17,7 +17,7 @@ Now that you have reviewed this module, you should be able to:
 ### Terraform
 
 - [Hashicorp Terraform](https://www.terraform.io/)
-- [SAP on Azure Deployment Automation Framework](https://github.com/Azure/sap-hana/blob/beta/documentation/SAP_Automation_on_Azure/table_of_contents.md)
+- [SAP on Azure Deployment Automation Framework](https://github.com/Azure/sap-automation)
 - [Create an Azure service principal with the Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli)
 - [az ad sp create-for-rbac](/cli/azure/ad/sp?#az-ad-sp-create-for-rbac)
 

@@ -2,15 +2,15 @@ Arrays can be used to store multiple values of the same type in a single variabl
 
 Your work in the security department is focused on finding a pattern for fraudulent orders. You want your code to review past customer orders and identify markers associated with fraudulent orders. Your company hopes the markers can be used to identify potential fraudulent purchase orders in the future before they're processed. Since you don't always know in advance how many orders you need to review, you can't create individual variables to hold each Order ID. How can you create a data structure to hold multiple related values?
 
-In this exercise, you use arrays to store and analyze a sequence of Order IDs.
+In this exercise, you use arrays to store and analyze a collection of Order IDs.
 
 ## What is an array?
 
-An array is a sequence of individual data elements accessible through a single variable name. You use a zero-based numeric index to access each element of an array. As you can see, arrays allow you to collect together similar data that shares a common purpose or characteristics in a single data structure for easier processing.
+An array is a collection of individual data elements accessible through a single variable name. You use a zero-based numeric index to access each element of an array. Arrays allow you to create a collection of data values that shares a common purpose or characteristics under a single variable name for easier processing.
 
 ## Declaring arrays and accessing array elements
 
-An array is a special type of variable that can hold multiple values of the same data type. The declaration syntax is slightly different because you have to specify both the data type and the size of the array.
+An array is a special type of variable that can hold multiple values of the same data type. The declaration syntax is slightly different for an array because you have to specify both the data type and the size of the array.
 
 ### Prepare your coding environment
 
@@ -238,17 +238,30 @@ The elements of an array are just like any other variable value. You can assign,
 
 ### Initialize an array
 
-You can initialize an array during declaration just like you would a regular variable. However, to initialize the elements of the array, you use a special syntax featuring curly braces.
+You can initialize an array during declaration just like you would a regular variable.
 
 1. Comment out the lines where you declare the `fraudulentOrderIDs` variable.
 
     You can use a multi-line comment (`/* ... */`) to comment out the declaration of `fraudulentOrderIDs` and the lines used to assign values to the array elements.
 
-1. To declare the array initialize values in a single statement, enter the following code:
+1. To declare the array and initialize values in a single statement, enter the following code:
 
     ```c#
+    string[] fraudulentOrderIDs = [ "A123", "B456", "C789" ];
+    ```
+
+    This example uses the **Collection expression** syntax, which was introduced in C# 12.
+
+    You may also see an older syntax used to initialize an array.
+
+    ```csharp
     string[] fraudulentOrderIDs = { "A123", "B456", "C789" };
     ```
+
+    Notice that this older syntax uses curly braces `{}` to enclose the values of the array. Both syntaxes are valid.
+
+    > [!NOTE]
+    > You may see a combination of the older syntax and the Collection expression syntax used in this training.
 
 1. Ensure that your code matches the following example:
 
@@ -262,7 +275,7 @@ You can initialize an array during declaration just like you would a regular var
     // fraudulentOrderIDs[3] = "D000";
     */
     
-    string[] fraudulentOrderIDs = { "A123", "B456", "C789" };
+    string[] fraudulentOrderIDs = [ "A123", "B456", "C789" ];
     
     Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
     Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
@@ -319,7 +332,7 @@ Depending on how the array is created, you may not know in advance how many elem
     // fraudulentOrderIDs[3] = "D000";
     */
     
-    string[] fraudulentOrderIDs = { "A123", "B456", "C789" };
+    string[] fraudulentOrderIDs = [ "A123", "B456", "C789" ];
     
     Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
     Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
@@ -348,7 +361,7 @@ Depending on how the array is created, you may not know in advance how many elem
 
 Here's the most important things to remember when working with arrays:
 
-- An array is a special variable that holds a sequence of related data elements.
+- An array is a special variable that holds a collection of related data elements.
 - You should memorize the basic format of an array variable declaration.
 - Access each element of an array to set or get its values using a zero-based index inside of square brackets.
 - If you attempt to access an index outside of the boundary of the array, you get a run time exception.

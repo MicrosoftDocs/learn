@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
-  ms.service: synapse-analytics
+  ms.service: azure-synapse-analytics
   ai-usage: human-only
 title: Analyze data in a relational data warehouse
 summary: Relational data warehouses are a core element of most enterprise Business Intelligence (BI) solutions, and are used as the basis for data models, reports, and analysis.
