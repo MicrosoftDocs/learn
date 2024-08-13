@@ -143,7 +143,7 @@ Sometimes there might be issues with the runtime setup. To check the logs of the
 
 ## Image version mismatch
 
-When using Windows containers, you need to pay attention to the Windows version of container image and host. The Windows operating system has four levels of versioning: major, minor, build and revision. For example, version 10.0.14393.103 would have a major version of 10, a minor version of 0, a build number of 14393, and a revision number of 103.
+When using Windows containers, you need to pay attention to the Windows version of container image and host. The Windows OS has four levels of versioning: major, minor, build and revision. For example, version 10.0.14393.103 would have a major version of 10, a minor version of 0, a build number of 14393, and a revision number of 103.
 
 Except for Windows Server 2022 and Windows 11, Windows containers are blocked from starting when the build number between the container host and the container image are different. For example, when the container host is version 10.0.14393.\* (Windows Server 2016) and you attempt to run a container with an image version 10.0.16299.\* (Windows Server version 1709) the OS compute service will return a version incompatibility error.
 

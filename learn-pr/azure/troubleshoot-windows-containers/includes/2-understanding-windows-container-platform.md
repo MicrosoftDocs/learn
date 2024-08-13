@@ -24,7 +24,7 @@ HNS is the management service for container networking. It works similarly to HC
 
 In the preceding image, you can see a diagram of the operation calls from a Kubernetes environment. We'll cover Kubernetes in a later section, but it's important to understand what happens under the hood when a Windows container is created:
 
-- User applies Kubernetes deployment manifest (yaml) with kubectl.
+- User applies Kubernetes deployment manifest (YAML) with kubectl.
 - Kubernetes scheduler assigns the deployment to a node.
 - Kubelet (Kubernetes agent running on all nodes) sees the pending container and calls the runtime to create the container.
 - The runtime will call the lower-level APIs to HCS and HNS to actually create the container and its network. This applies for both Docker and containerd, although the Docker container runtime is deprecated from the Kubernetes platform.
