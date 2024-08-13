@@ -31461,7 +31461,7 @@
    },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/2-monitor-azure-virtual-desktop-azure-monitor.md",
-      "redirect_url": "/training/modules/monitor-manage-performance-health/3-monitor-azure-virtual-desktop-by-using-azure-monitor",
+      "redirect_url": "/training/modules/monitor-manage-performance-health/3-monitor-azure-virtual-desktop-azure-monitor",
       "redirect_document_id": false
    }, 
     {
@@ -31471,7 +31471,7 @@
    },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/4-monitor-azure-virtual-desktop-azure-advisor.md",
-      "redirect_url": "/training/modules/monitor-manage-performance-health/5-monitor-azure-virtual-desktop-by-using-azure-advisor",
+      "redirect_url": "/training/modules/monitor-manage-performance-health/5-monitor-azure-virtual-desktop-azure-advisor",
       "redirect_document_id": false
    },
      {
