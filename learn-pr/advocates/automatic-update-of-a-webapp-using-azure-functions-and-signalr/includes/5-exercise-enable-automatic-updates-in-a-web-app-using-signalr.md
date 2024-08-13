@@ -137,8 +137,7 @@ At this point, your GitHub deployment might generate an error because of a wrong
 
 1. In your new function app page in the Azure portal, select your resource group in **Overview** > **Essentials**, then select the managed identity under **Resources**. This managed identity was created by Functions when you enabled the GitHub deployment.  
 1. In the **Managed Identity** page, select **Settings** > **Federated credentials** and then select the existing credential.
-1. Locate the **Subject identifier** and select **Edit (optional)**:
-1. Replace the existing value of `:ref:refs/heads/main` at the end of the current value with `:environment:Production`. The subject identifier should now look something like this: `repo:my_fork/mslearn-advocates.azure-functions-and-signalr:environment:Production`.
+1. In **Connect your Github account**, change the setting for **Entity** to **Environment** and enter `Production` for **Environment**.  
 1. Select **Update** to update the credential.
 <!--- end removal section -->
 
