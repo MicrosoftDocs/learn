@@ -26,4 +26,4 @@ To view and manage this stored data, admins can use Content search or Microsoft 
 
 ## Regulatory compliance
 
-Microsoft Copilot for Microsoft 365 is integrated into Microsoft 365 and adheres to all existing privacy, security, and compliance commitments to Microsoft 365 commercial customers. For more information, see [Microsoft Compliance](https://learn.microsoft.com/compliance).
+Microsoft Copilot for Microsoft 365 is integrated into Microsoft 365 and adheres to all existing privacy, security, and compliance commitments to Microsoft 365 commercial customers. For more information, see [Microsoft Compliance](/compliance).
