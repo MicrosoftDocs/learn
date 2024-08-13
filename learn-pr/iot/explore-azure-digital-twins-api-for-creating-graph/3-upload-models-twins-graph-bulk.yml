@@ -5,7 +5,7 @@ interactive: bash
 metadata:
   title: Upload models, twins, and graph in bulk
   description: Use the Azure Digital Twins APIs to upload models, twins, and relationships, and check the status of the new graph.
-  ms.date: 10/11/2023
+  ms.date: 08/09/2024
   author: baanders
   ms.author: baanders
   ms.topic: unit
