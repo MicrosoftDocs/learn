@@ -2,7 +2,7 @@ Microsoft Entra pass-through authentication allows your users to sign in to both
 
 This feature is an alternative to Microsoft Entra Password Hash Synchronization, which provides the same benefit of cloud authentication to organizations. However, certain organizations wanting to enforce their on-premises Active Directory security and password policies, can choose to use Pass-through Authentication instead. Review this guide for a comparison of the various Microsoft Entra sign-in methods and how to choose the right sign-in method for your organization.
 
-:::image type="content" source="../media/microsoft-entra-pass-through-authentication-8e54d3b5.png" alt-text="Diagram showing how pass-through authentication allows users to sign in to both on-premises and cloud-based applications.":::
+:::image type="content" source="../media/microsoft-entra-pass-through-authentication-8e54d3b5-f4fd9163.png" alt-text="Diagram showing how pass-through authentication allows users to sign in to both on-premises and cloud-based applications.":::
 <br>
 
 You can combine Pass-through Authentication with the Seamless single sign-on feature. If you have Windows 10 or later machines, use Microsoft Entra hybrid join (AADJ). This way, when your users are accessing applications on their corporate machines inside your corporate network, they don't need to type in their passwords to sign in.
@@ -10,19 +10,27 @@ You can combine Pass-through Authentication with the Seamless single sign-on fea
 ## Key benefits of using Microsoft Entra pass-through authentication
 
  -  Great user experience
+    
+    
      -  Users use the same passwords to sign into both on-premises and cloud-based applications.
      -  Users spend less time talking to the IT helpdesk resolving password-related issues.
      -  Users can complete self-service password management tasks in the cloud.
  -  Easy to deploy & administer
+    
+    
      -  No need for complex on-premises deployments or network configuration.
      -  Needs just a lightweight agent to be installed on-premises.
      -  No management overhead. The agent automatically receives improvements and bug fixes.
  -  Secure
+    
+    
      -  On-premises passwords are never stored in the cloud in any form.
      -  Protects your user accounts by working seamlessly with Microsoft Entra Conditional Access policies, including multifactor authentication (MFA), blocking legacy authentication and by filtering out brute force password attacks.
      -  The agent only makes outbound connections from within your network. Therefore, there is no requirement to install the agent in a perimeter network, also known as a DMZ.
      -  The communication between an agent and Microsoft Entra ID is secured using certificate-based authentication. These certificates are automatically renewed every few months by Microsoft Entra ID.
  -  Highly available
+    
+    
      -  Additional agents can be installed on multiple on-premises servers to provide high availability of sign-in requests.
 
 ## Feature highlights

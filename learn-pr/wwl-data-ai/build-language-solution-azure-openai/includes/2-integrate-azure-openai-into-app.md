@@ -1,7 +1,4 @@
-Azure OpenAI offers both C# and Python SDKs and a REST API that developers can use to add AI functionality to their applications. Generative AI capabilities in Azure OpenAI are provided through *models*. The models available in the Azure OpenAI service belong to different families, each with their own focus. To use one of these models, you need to deploy through the Azure OpenAI Service.
-
-> [!IMPORTANT]
-> Azure OpenAI has been released with limited access to support the responsible use of the service. Users need to [apply for access](/azure/cognitive-services/openai/overview#how-do-i-get-access-to-azure-openai?azure-portal=true) and be approved before they can create an Azure OpenAI resource.
+Azure OpenAI offers both language specific SDKs and a REST API that developers can use to add AI functionality to their applications. Generative AI capabilities in Azure OpenAI are provided through *models*. The models available in the Azure OpenAI service belong to different families, each with their own focus. To use one of these models, you need to deploy through the Azure OpenAI Service.
 
 ## Create an Azure OpenAI resource
 
@@ -11,7 +8,7 @@ An Azure OpenAI resource can be deployed through both the Azure command line int
 1. Search for **Azure OpenAI**, select it, and click **Create**
 1. Enter the appropriate values for the empty fields, and create the resource.
 
-The possible regions for Azure OpenAI are currently limited. Choose the region closest to your physical location.
+The possible regions for Azure OpenAI are currently limited. Choose the region closest to your physical location, or the closest one that has the [availability for the model(s)](/azure/ai-services/openai/concepts/models#model-summary-table-and-region-availability?azure-portal=true) you want to use.
 
 Once the resource has been created, you'll have keys and an endpoint that you can use in your app.
 
@@ -29,7 +26,7 @@ For older models, the model family and capability is indicated in the name of th
 
 More recent models specify which `gpt` generation, and if they are the `turbo` version, such as `gpt-35-turbo` representing the *GPT 3.5 Turbo* model.
 
-To deploy a model for you to use, navigate to the [Azure OpenAI Studio](https://oai.azure.com/?azure-portal=true) and go to the **Deployments** page. The lab later in this module covers exactly how to do that.
+To deploy a model for you to use, navigate to the [Azure AI Studio](https://ai.azure.com/?azure-portal=true) and go to the **Deployments** page. The lab later in this module covers exactly how to do that.
 
 ## Authentication and specification of deployed model
 
@@ -53,7 +50,7 @@ Category:
 
 You'll likely get the "Category:" under headline filled out with "Business".
 
-Several examples similar to this one can be found in the Azure OpenAI Studio Playground, under the **Examples** dropdown. Try to be as specific as possible about what you want in response from the model, and you may be surprised at how insightful it can be!
+Several examples similar to this one can be found in the Azure AI Studio Playground, under the **Prompt samples** dropdown. Try to be as specific as possible about what you want in response from the model, and you may be surprised at how insightful it can be!
 
 > [!NOTE]
 > It is never safe to assume that answers from an AI model are factual or correct. Teams or individuals tasked with developing and deploying AI systems should work to identify, measure, and mitigate harm. It is your responsibility to verify any responses from an AI model, and to use AI responsibly. Check out [Microsoft's Transparency Notes on Azure OpenAI](/legal/cognitive-services/openai/transparency-note?azure-portal=true) for further guidelines on how to use Azure OpenAI models responsibly.
@@ -62,7 +59,7 @@ Further details can be found at the [Prompt engineering](/azure/cognitive-servic
 
 ## Available endpoints
 
-Azure OpenAI can be accessed via a REST API or an SDK currently available for Python and C#. The endpoints available for interacting with a deployed model are used differently, and certain endpoints can only use certain models. The available endpoints are:
+Azure OpenAI can be accessed via a REST API or an SDK available for Python, C#, JavaScript, and more. The endpoints available for interacting with a deployed model are used differently, and certain endpoints can only use certain models. The available endpoints are:
 
 - **Completion** - model takes an input prompt, and generates one or more predicted completions. You'll see this playground in the studio, but won't be covered in depth in this module.
 - **ChatCompletion** - model takes input in the form of a chat conversation (where roles are specified with the message they send), and the next chat completion is generated.
