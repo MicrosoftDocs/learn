@@ -5,7 +5,7 @@ Generative AI is a **subset of AI**. AI can be used to predict outcomes, detect 
 
 For example, you may use generative AI to develop follow-up questions to a meeting, create an image from text, or explain the punch line of a joke, even if the joke is in a video.
 
-![A graph showing how generative AI is a subset of AI.](../media/2-artificial-intelligence-concepts.png)
+![Diagram showing how generative AI is a subset of AI.](../media/2-artificial-intelligence-concepts.png)
 
 >[!NOTE]
 >AI has a great disruptive potential. That is why it should follow the highest ethical standards. **Responsible AI** refers to the **principles and best practices** that ensure AI work is accountable, inclusive, reliable, safe, fair, transparent, secure, and respects privacy. For instance, AI could create a video that shows a real person at an event they didn't attend in real life. Responsible AI involves not using this technology for deceitful purposes, since it would compromise their privacy and have unfair consequences.

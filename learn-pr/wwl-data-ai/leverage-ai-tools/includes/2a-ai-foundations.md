@@ -15,6 +15,6 @@ Deep learning is a **subset of machine learning**. Deep learning is imitating ho
 
 For instance, deep learning can be used to detect cancerous cells in medical images. Deep learning scans every pixel in the image as input to the neural nodes. The nodes analyze each pixel to filter out features that look cancerous. Each layer of nodes pushes findings of potential cancerous cells to the next layer of nodes to repeat the process and eventually aggregate all of the findings to classify the image. For example, the image might be classified as a healthy image or an image with cancerous features.
 
-![A graph showing AI methodologies (deep learning, machine learning, and data science).](../media/2-machine-learning-concepts.png)
+![Diagram showing AI methodologies (deep learning, machine learning, and data science).](../media/2-machine-learning-concepts.png)
 
 Next, let’s explore four categories of Microsoft tools you can use to add AI to your business.

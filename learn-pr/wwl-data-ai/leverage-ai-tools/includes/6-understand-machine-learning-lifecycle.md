@@ -10,13 +10,13 @@ To cope effectively with this complexity, some best practices are required. They
 
 Data scientists can manage and execute machine learning DevOps from **Azure Machine Learning**, a platform by Microsoft to make machine learning *lifecycle management* and *operations* practices easier. Such tools help teams collaborate in a shared, auditable, and safe environment where many processes can be optimized via automation.
 
-![Azure Machine Learning Studio landing page.](../media/auzre-machine-learning-studio.png)
+![Screenshot of azure Machine Learning Studio landing page.](../media/azure-machine-learning-studio.png)
 
 #### Machine learning lifecycle management
 
 Azure Machine Learning supports end-to-end machine learning lifecycle management of pretrained and custom models. The typical lifecycle includes the following steps: data preparation, model training, model packaging, model validation, model deployment, model monitoring and retraining. 
 
-![A graph showing the ML lifecycle: prepare data, train model, package model, validate model, deploy mode, monitor model, and retrain model.](../media/6-understand-machine-learning-lifecycle-1.png)
+![Diagram showing the ML lifecycle: prepare data, train model, package model, validate model, deploy mode, monitor model, and retrain model.](../media/6-understand-machine-learning-lifecycle-1.png)
 
 The classic approach covers all the usual steps of a data science project. 
 
