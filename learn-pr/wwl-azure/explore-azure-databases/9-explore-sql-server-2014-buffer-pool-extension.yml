@@ -4,7 +4,7 @@ title: Explore the SQL Server 2014 Buffer Pool Extension
 metadata:
   title: Explore the SQL Server 2014 Buffer Pool Extension
   description: "Allow a larger working set of data to be kept 'in memory', with the SQL Server 2014 Buffer Pool Extension."
-  ms.date: 07/26/2024
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

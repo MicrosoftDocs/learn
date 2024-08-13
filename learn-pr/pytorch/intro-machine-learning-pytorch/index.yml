@@ -13,7 +13,8 @@ metadata:
     - build-2023-dataai
   ms.contributors:
   - sejuare-04262021
-  ms.service: machine-learning
+  ms.service: azure-machine-learning
+  ms.collection: ce-skilling-ai-copilot
 title: Introduction to PyTorch
 summary: Learn key concepts used to build machine learning models with PyTorch. Train a neural network model that recognizes and classifies images.
 abstract: |

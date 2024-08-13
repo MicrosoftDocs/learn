@@ -4,7 +4,7 @@ title: Set the required DNS IP addresses
 metadata:
   title: Set the required DNS IP addresses
   description: "Assign the required DNS static IP addresses to the Azure Virtual Machines."
-  ms.date: 07/29/2024
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

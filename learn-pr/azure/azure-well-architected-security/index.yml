@@ -7,7 +7,7 @@ metadata:
   author: martinekuan
   ms.author: martinek
   ms.topic: module
-  ms.service: waf
+  ms.service: azure-waf
   ms.subservice: waf-pillar-security
 title: Microsoft Azure Well-Architected Framework - Security
 summary: Learn how to incorporate security into your architecture design, and discover the tools that Azure provides to help you create a secure environment through all the layers of your architecture.

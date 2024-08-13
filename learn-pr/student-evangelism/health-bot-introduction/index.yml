@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: module
   ms.custom: team=nextgen
-  ms.service: healthbot
+  ms.service: azure-ai-health-bot
 title: Introduction to Azure Health Bot
 summary: Azure Health Bot enables users to build a health bot by using built-in scenarios or custom ones. The information that each instance of the Health Bot service handles is privacy protected to HIPAA standards. It also meets Microsoft's high standards for privacy and security.
 abstract: |

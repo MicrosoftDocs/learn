@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - references_regions
-  ms.service: load-balancer
+  ms.service: azure-load-balancer
 title: Load balance non-HTTP(S) traffic in Azure
 summary: You learn the different load balancer options in Azure and how to choose and implement the right Azure solution for non-HTTP(S) traffic.
 abstract: |

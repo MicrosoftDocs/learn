@@ -6,13 +6,13 @@ In the context of SQL Server migration, careful planning is essential to ensure 
 1. The **how** encompasses the selection of appropriate migration tools and the development of a comprehensive migration plan. 
 1. A critical element in this process is to evaluate the amount of downtime that the organization is willing to tolerate. Minimizing downtime during the migration process is crucial to maintaining operational efficiency and continuity.
 
-In this migration project, your team has initiated the process with a kick-off meeting. Your role is to explore the tools for migrating a few SQL Servers and provide insights into the potential impact on future SQL licensing costs. Moreover, you need to reach an agreement on the acceptable level of downtime. The project manager also wants to incorporate a test phase, during which a few servers will be migrated for testing before running the full migration.
+In this migration project, your team initiated the process with a kick-off meeting. Your role is to explore the tools for migrating a few SQL Servers and provide insights into the potential effect on future SQL licensing costs. Moreover, you need to reach an agreement on the acceptable level of downtime. The project manager also wants to incorporate a test phase, during which a few servers migrate for testing before running the full migration.
 
 ## Understand the benefits of migration
 
-You've likely worked with virtual machines on your own infrastructure using either Hyper-V, or other vendors virtual machines. As a result, migrating to this platform shouldn't present you with a steep learning curve.
+You probably work with virtual machines on your own infrastructure using either Hyper-V, or other vendors virtual machines. As a result, migrating to this platform shouldn't present you with a steep learning curve.
 
-Using a virtual machine (VM) allows you to have the full administrative control over the host operating system and the SQL Server instance. You can configure and manage high availability, disaster recovery, and patching for SQL Server easier than you can on your on-premises machines. You can also set up automatic backups and updates that will ease your overall administrative burden. Running SQL Server on Azure Virtual Machine fully supports these SQL Server components:
+Using a virtual machine (VM) allows you to have the full administrative control over the host operating system and the SQL Server instance. You can configure and manage high availability, disaster recovery, and patching for SQL Server easier than you can on your on-premises machines. You can also set up automatic backups and updates to ease your overall administrative burden. Running SQL Server on Azure Virtual Machine fully supports these SQL Server components:
 
 - SQL Server transactional replication
 - Always On availability groups
@@ -103,7 +103,7 @@ These are the main tools and features to support and migrate your SQL Server dat
    Use it to assess if your target server can handle the workload if you have concerns about performance. You can use the analysis metrics to give comparison data to allow you to decide on whether the targeted version would provide a better experience after the migration.
 
 - **[Data Migration Assistant (DMA)](/sql/dma/dma-overview) –**
-   Use it to to migrate database schema, data, users, server roles, SQL Server and Windows logins from an on-premises SQL Server to a SQL Server on Azure Virtual Machine. The tool will first run an assessment that prompts you to address any compatibility issues. You can then use the same tool to migrate the assessed database schema and data to Azure.
+   Use it to migrate database schema, data, users, server roles, SQL Server and Windows logins from an on-premises SQL Server to a SQL Server on Azure Virtual Machine. The tool first runs an assessment that prompts you to address any compatibility issues. You can then use the same tool to migrate the assessed database schema and data to Azure.
 
 > [!NOTE]
 > While the Database Migration Assistant is a useful tool available, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience.
@@ -123,7 +123,7 @@ The method chosen to migrate the database is typically dependent on how much tim
 
 ### Zero downtime migration
 
-Zero downtime migrations are normally required by mission critical workloads. You can use Always On availability groups to replicate data from a SQL Server database to SQL Server on Azure Virtual Machine.
+Mission critical workloads normally require zero downtime migrations. You can use Always On availability groups to replicate data from a SQL Server database to SQL Server on Azure Virtual Machine.
 
 ### Small maintenance window migration
 

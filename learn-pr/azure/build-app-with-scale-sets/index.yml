@@ -9,7 +9,7 @@ metadata:
   ms.author: jushiman
   ms.reviewer: mimckitt
   ms.topic: module
-  ms.service: virtual-machine-scale-sets
+  ms.service: azure-virtual-machine-scale-sets
 title: Build a scalable application with Virtual Machine Scale Sets
 summary: Enable your application to automatically adjust to changes in load while minimizing costs with Virtual Machine Scale Sets.
 abstract: |

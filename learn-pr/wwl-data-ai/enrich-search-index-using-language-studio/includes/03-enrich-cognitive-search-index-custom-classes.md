@@ -81,7 +81,7 @@ Once the resource has been deployed, you can navigate directly to the Language S
 
 ### Train your classification model
 
-As with all AI models, you need to have identified data that you can use to train it. The model needs to see examples of how to map data to a class and have some examples it can use to test the model. You can choose to let the model automatically split your training data, be default it will use 80% of the documents to train the model and 20% to blind test it. If you have some specific documents that you want to test your model with, you can label documents for testing.
+As with all AI models, you need to have identified data that you can use to train it. The model needs to see examples of how to map data to a class and have some examples it can use to test the model. You can choose to let the model automatically split your training data, by default it will use 80% of the documents to train the model and 20% to blind test it. If you have some specific documents that you want to test your model with, you can label documents for testing.
 
 :::image type="content" source="../media/assign-document-testing-small.png" lightbox="../media/assign-document-testing.png"alt-text="A screenshot of Language Studio showing selecting a document to add to the test set.":::
 
@@ -280,7 +280,7 @@ In the Azure portal, select the skillset and add JSON in this format:
 }
 ```
 
-This `WebApiSill` skill definition specifies that the language and the contents of a document are passed as inputs to the function app. The app will return JSON text named `class`.
+This `WebApiSkill` definition specifies that the language and the contents of a document are passed as inputs to the function app. The app will return JSON text named `class`.
 
 #### Map the output from the function app into the index
 

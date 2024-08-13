@@ -9,7 +9,8 @@ metadata:
   ms.topic: module
   ms.custom: nextgen
   ms.devlang: r
-  ms.service: machine-learning
+  ms.service: azure-machine-learning
+  ms.collection: ce-advocates-ai-copilot
 title: Explore and analyze data with R
 summary: In this module, you'll explore, analyze, and visualize data by using the R programming language.
 abstract:  | 

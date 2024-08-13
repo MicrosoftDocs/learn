@@ -4,6 +4,6 @@ Trainers can utilize generative AI-powered image generators in their training pr
 
 Another generative AI image generator tool that trainers can use is the Image Creator by Microsoft Designer, previously known as Bing Image Creator. This tool creates images from text prompts. You can access this tool by visiting [https://www.bing.com/images/create](https://www.bing.com/images/create) or by going to [bing.com/chat](https://www.bing.com/chat) and writing a text-to-image prompt in Microsoft Copilot's 'creative mode.' In this video, you will explore how to utilize Microsoft's Image Creator.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=22894a5f-c221-4029-852b-f7ab5f24ea75]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2281615]
 
 By utilizing Microsoft Image Creator through Microsoft Copilot or Microsoft Designer, trainers can create engaging and imaginative training sessions.

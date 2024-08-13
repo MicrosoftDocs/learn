@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 04/17/2023
+  ms.date: 07/21/2024
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit
@@ -28,7 +28,7 @@ quiz:
     - content: "Picking a model’s parameter values before training"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Deciding how a model will be structured"
+    - content: "Deciding how a model is structured"
       isCorrect: true
       explanation: "Correct."
     - content: "Selecting a 32-bit or 64-bit compilation option"

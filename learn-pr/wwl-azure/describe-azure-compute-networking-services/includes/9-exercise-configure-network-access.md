@@ -1,4 +1,4 @@
-In this exercise, you'll configure the access to the virtual machine (VM) you created earlier in this module.
+In this exercise, you configure the access to the virtual machine (VM) you created earlier in this module.
 
 > [!IMPORTANT]
 > The Microsoft Learn sandbox should still be running. If the sandbox timed out, you'll need to redo the previous exercise (**Exercise - Create an Azure virtual machine**).
@@ -13,7 +13,7 @@ az vm list
 
 If you receive an empty response `[]`, you need to complete the first exercise in this module again. If the result lists your current VM and its settings, you may continue.
 
-Right now, the VM you created and installed Nginx on isn't accessible from the internet. You'll create a network security group that changes that by allowing inbound HTTP access on port 80.
+Right now, the VM you created and installed Nginx on isn't accessible from the internet. You create a network security group that changes that by allowing inbound HTTP access on port 80.
 
 ## Task 1: Access your web server
 
@@ -40,7 +40,7 @@ In this procedure, you get the IP address for your VM and attempt to access your
     curl: (28) Connection timed out after 5001 milliseconds
     ```
     
-    This message means that the VM was not accessible within the timeout period.
+    This message means that the VM wasn't accessible within the timeout period.
 3.  As an optional step, try to access the web server from a browser:
     
     
@@ -52,7 +52,7 @@ In this procedure, you get the IP address for your VM and attempt to access your
         
         You see an IP address, for example, *23.102.42.235*.
     2.  Copy the IP address that you see to the clipboard.
-    3.  Open a new browser tab and go to your web server. After a few moments, you see that the connection isn't happening. If you wait for the browser to time out, you'll see something like this:
+    3.  Open a new browser tab and go to your web server. After a few moments, you see that the connection isn't happening. If you wait for the browser to time out, you see something like this:
         
         :::image type="content" source="../media/browser-request-timeout-d7cc0e02.png" alt-text="Screenshot of a web browser showing an error message that says the connection timed out.":::
         
@@ -71,7 +71,7 @@ Your web server wasn't accessible. To find out why, let's examine your current N
       --output tsv    
     ```
     
-    You see this:
+    You see this output:
     
     ```output
     my-vmNSG
@@ -99,7 +99,7 @@ Your web server wasn't accessible. To find out why, let's examine your current N
       --output table    
     ```
     
-    You see this:
+    You see this output:
     
     ```output
     Name              Priority    Port    Access
@@ -110,7 +110,7 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     
     You see the default rule, *default-allow-ssh*. This rule allows inbound connections over port 22 (SSH). SSH (Secure Shell) is a protocol that's used on Linux to allow administrators to access the system remotely. The priority of this rule is 1000. Rules are processed in priority order, with lower numbers processed before higher numbers.
 
-By default, a Linux VM's NSG allows network access only on port 22. This enables administrators to access the system. You need to also allow inbound connections on port 80, which allows access over HTTP.
+By default, a Linux VM's NSG allows network access only on port 22. This port enables administrators to access the system. You need to also allow inbound connections on port 80, which allows access over HTTP.
 
 ## Task 3: Create the network security rule
 
@@ -140,7 +140,7 @@ Here, you create a network security rule that allows inbound access on port 80 (
       --output table    
     ```
     
-    You see this both the *default-allow-ssh* rule and your new rule, *allow-http*:
+    You see both the *default-allow-ssh* rule and your new rule, *allow-http*:
     
     ```output
     Name              Priority    Port    Access
@@ -151,7 +151,7 @@ Here, you create a network security rule that allows inbound access on port 80 (
 
 ## Task 4: Access your web server again
 
-Now that you've configured network access to port 80, let's try to access the web server a second time.
+Now that you configured network access to port 80, let's try to access the web server a second time.
 
 > [!NOTE]
 > After you update the NSG, it may take a few moments before the updated rules propagate. Retry the next step, with pauses between attempts, until you get the desired results.
@@ -162,12 +162,12 @@ Now that you've configured network access to port 80, let's try to access the we
     curl --connect-timeout 5 http://$IPADDRESS
     ```
     
-    You see this:
+    You see this response:
     
     ```html
     <html><body><h2>Welcome to Azure! My name is my-vm.</h2></body></html>
     ```
-2.  As an optional step, refresh your browser tab that points to your web server. You see this:
+2.  As an optional step, refresh your browser tab that points to your web server. You see the home page:
     
     :::image type="content" source="../media/browser-request-successful-df21c6f1.png" alt-text="A screenshot of a web browser showing the home page from the web server. The home page displays a welcome message.":::
     

@@ -3,9 +3,9 @@ uid: learn.introduction-to-microsoft-datacenters.describe-azure-networking
 title: Describe Azure networking
 metadata:
   title: Describe Azure networking
-  description: TBD
+  description: Describes the major categories of Microsoft Cloud networking that include infrastructure, and services and product offerings.
   ms.date: 07/17/2024
-  author: TBD
+  author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 5

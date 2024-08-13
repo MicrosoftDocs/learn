@@ -4,12 +4,12 @@ title: Monitor your networks using Azure network watcher
 metadata:
   title: Monitor your networks using Azure network watcher
   description: "Monitor your networks using Azure network watcher"
-  ms.date: 04/28/2023
+  ms.date: 08/06/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 20
 content: |
   [!include[](includes/4-monitor-networks-using-azure-network-watcher.md)]
@@ -31,10 +31,10 @@ quiz:
     choices:
     - content: "Backend pool"
       isCorrect: false
-      explanation: "Incorrect. A backend pool is not required for traffic analytics."
+      explanation: "Incorrect. A backend pool isn't required for traffic analytics."
     - content: "Network security group (NSG) flow logs"
       isCorrect: true
       explanation: "Correct. Allow you to view information about ingress and egress IP traffic through a network security group."
     - content: "Availability zones"
       isCorrect: false
-      explanation: "Incorrect. Availability zones are not required for traffic analytics."
+      explanation: "Incorrect. Availability zones aren't required for traffic analytics."
