@@ -2,9 +2,12 @@ Through this module, we discussed the importance of embracing AI in a responsibl
 
 Now that you have reviewed this module, you should be able to:
 
-* Describe the importance of engaging with AI in a responsible manner.
-* Identify six guiding principles to develop and use AI responsibly.
-* Describe successful practices to responsible AI governance.
+* Prepare for the implications of responsible AI
+* Describe principles of responsible AI
+* Establish a system for AI governance
+* Take actions for AI governance
+* Engage across teams and organizations to implement responsible AI principles
+* Take inspiration from how responsible AI is approached at Microsoft
 
 ## Use these resources to discover more
 

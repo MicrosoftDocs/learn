@@ -14079,6 +14079,11 @@
       "redirect_url": "/training/modules/introduction-to-azure-digital-twins/"
     },
     {
+      "source_path_from_root": "/learn-pr/iot/explore-azure-digital-twins-api-for-creating-graph/2-configure-postman-api-collections.md",
+      "redirect_url": "/training/modules/explore-azure-digital-twins-api-for-creating-graph/2-set-up-http-file",
+      "redirect_document_id": true
+    },
+    {
       "source_path_from_root": "/learn-pr/iot/manage-azure-iot-hub-with-metrics-alerts/1-introduction.md",
       "redirect_url": "/training/modules/examine-azure-iot-solution-monitoring-logging/"
     },

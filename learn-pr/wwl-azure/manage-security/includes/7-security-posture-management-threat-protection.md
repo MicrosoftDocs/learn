@@ -19,13 +19,13 @@ The Azure mobile app shows the secure score as a percentage value. Tap it to see
 
 The Security posture page in Defender for Cloud shows the secure score for your environments overall and for each environment separately.
 
-[:::image type="content" source="https://learn.microsoft.com/azure/defender-for-cloud/media/secure-score-security-controls/security-posture-page.png" alt-text="Screenshot of the Defender for Cloud page for security posture.":::
-](https://learn.microsoft.com/azure/defender-for-cloud/media/secure-score-security-controls/security-posture-page.png#lightbox)
+[:::image type="content" source="/azure/defender-for-cloud/media/secure-score-security-controls/security-posture-page.png" alt-text="Screenshot of the Defender for Cloud page for security posture.":::
+](/azure/defender-for-cloud/media/secure-score-security-controls/security-posture-page.png#lightbox)
 
 On this page, you can see the subscriptions, accounts, and projects that affect your overall score, information about unhealthy resources, and relevant recommendations. You can filter by environment, such as Azure, Amazon Web Services (AWS), Google Cloud Platform (GCP), and Azure DevOps. You can then drill down into each Azure subscription, AWS account, and GCP project.
 
-[:::image type="content" source="https://learn.microsoft.com/azure/defender-for-cloud/media/secure-score-security-controls/bottom-half.png" alt-text="Screenshot of the bottom half of the security posture page. The bottom half of the security posture page.":::
-](https://learn.microsoft.com/azure/defender-for-cloud/media/secure-score-security-controls/bottom-half.png#lightbox)
+[:::image type="content" source="/azure/defender-for-cloud/media/secure-score-security-controls/bottom-half.png" alt-text="Screenshot of the bottom half of the security posture page. The bottom half of the security posture page.":::
+](/azure/defender-for-cloud/media/secure-score-security-controls/bottom-half.png#lightbox)
 
 ## Calculation of the secure score
 
