@@ -21,6 +21,7 @@ To start managing your APIs through API Center, you need:
 
 > [!NOTE]
 > If you haven't already, you need to register the **Microsoft.ApiCenter** resource provider in your subscription.
+>
 > 1. [Sign in](https://portal.azure.com/) to the Azure portal.
 > 2. Enter *Subscriptions* in the search bar.
 > 3. Select subscription where you want to create the API Center.
@@ -65,6 +66,7 @@ To start managing your APIs through API Center, you need:
 > If you haven't already, you need to register the **Microsoft.ApiCenter** resource provider in your subscription.
 >
 > Run the following command to register the resource provider  
+>
 > ```bash
 > az provider register –namespace Microsoft.ApiCenter 
 > ```
@@ -155,34 +157,37 @@ This opens a modal on the right with metadata details, which include built-in pr
 ::: zone pivot="azure-cli"
 
 Create a new metadata schema by running the following command, to set the:
+
 - Metadata **name** as *api-approver*
 - **Schema** with property type as *String* and title as *API Approver*
 - **Assignments** as *required* for **APIs** while *optional* for **Environment** and **Deployment**
 
 ```bash
-az apic metadata create -g contoso -n contoso-apis --metadata-name api-approver --schema '{"type":"string","title":"API-Approver"}' --assignments '[{entity:api,required:true,deprecated:false},{entity:environment,required:true,deprecated:false}]'
+az apic metadata create -g contoso -n contoso-apis --metadata-name "api-approver" --schema '{"type":"string","title":"API Approver"}' --assignments '[{entity:api,required:true,deprecated:false},{entity:environment,required:true,deprecated:false}]'
 ```
 
 Repeat the same steps for:
- - Metadata **name** as *public-facing*
+
+- Metadata **name** as *public-facing*
 - **Schema** with property type as *Boolean* and **title** as *Public Facing*
 - **Assignments** as *required* for **APIs** while *optional* for **Environment** and **Deployment**
 
 By running the following command:
 
 ```bash
-az apic metadata create -g contoso -n contoso-apis --metadata-name public-facing --schema '{"type":"boolean", "title":"Public Facing"}' --assignments '[{entity:api,required:true,deprecated:false},{entity:environment,required:true,deprecated:false}]'
+az apic metadata create -g contoso -n contoso-apis --metadata-name "public-facing" --schema '{"type":"boolean", "title":"Public Facing"}' --assignments '[{entity:api,required:true,deprecated:false},{entity:environment,required:true,deprecated:false}]'
 ```
 
 Finally, repeat the same steps for:
- - Metadata **name** as *compliance-review*
+
+- Metadata **name** as *compliance-review*
 - **Schema** with property type as *String* and **title** as *Compliance Review*
 - **Assignments** as *required* for **APIs** while *optional* for **Environment** and **Deployment**
 
 By running the following command:
 
 ```bash
-az apic metadata create -g contoso -n contoso-apis --metadata-name compliance-review --schema '{"type":"string","title":"Compliance Review", "oneOf":[{"const":"Not Started","description":""},{"const":"In Progress","description":""},{"const":"Completed","description":""}]}' --assignments '[{entity:api,required:true,deprecated:false},{entity:environment,required:true,deprecated:false}]'
+az apic metadata create -g contoso -n contoso-apis --metadata-name "compliance-review" --schema '{"type":"string","title":"Compliance Review", "oneOf":[{"const":"Not Started","description":""},{"const":"In Progress","description":""},{"const":"Completed","description":""}]}' --assignments '[{entity:api,required:true,deprecated:false},{entity:environment,required:true,deprecated:false}]'
 ```
 
 You can run the following command to view a list of all the defined metadata in your API Center.
@@ -271,7 +276,6 @@ Use the following command to create a new API, passing in the:
 - API ID **--api-id** Example. *conference-api*
 - Type **--type** Example. *REST*
 
-
 ```bash
 az apic api create -g contoso -n contoso-apis --title "Conference API" --api-id conference-api --type REST
 ```
@@ -289,7 +293,7 @@ Create an API version using the following command, passing in the:
 az apic api version create -g contoso -n contoso-apis --api-id conference-api --title v1.2.2 --version-id 2024-07-03 --lifecycle-stage design
 ```
 
-You would normally want to add an API definition for your API version and API Center support text specification formats including OpenAPI 2, OpenAPI 3 for REST.
+You can also add an API definition for your API version and API Center supports text specification formats including OpenAPI 2, OpenAPI 3 for REST.
 
 To add a Definition, use the following command, passing in:
 
