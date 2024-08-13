@@ -65,6 +65,7 @@ Now make modifications to the sample app's issuer code to update it with your ve
 The following JavaScript Object Notation (JSON) demonstrates a complete *appsettings.json* file:
 
 ```
+{
   "VerifiedID": {
     "Endpoint": "https://verifiedid.did.msidentity.com/v1.0/verifiableCredentials/",
     "VCServiceScope": "3db474b9-6a0c-4840-96ac-1fceb342124f/.default",
@@ -88,13 +89,15 @@ Now you're ready to present and verify your first verified credential expert car
 1.  From Visual Studio Code, run the *Verifiable\_credentials\_DotNet* project. Or from the command shell, run the following commands:
     
     ```
+    cd active-directory-verifiable-credentials-dotnet\1-asp-net-core-api-idtokenhint
     dotnet build "AspNetCoreVerifiableCredentials.csproj" -c Debug -o .\bin\Debug\net6
     dotnet run
     
     ```
 2.  In another terminal, run the following command. This command runs the ngrok to set up a URL on 5000 and make it publicly available on the internet.
     
-    ```ngrok http 5000
+    ```
+    ngrok http 5000
     
     
     ```
