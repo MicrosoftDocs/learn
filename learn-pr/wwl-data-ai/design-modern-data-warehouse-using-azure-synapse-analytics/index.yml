@@ -3,11 +3,12 @@ uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics
 metadata:
   title: Design a Modern Data Warehouse using Azure Synapse Analytics
   description: "Design a Modern Data Warehouse using Azure Synapse Analytics"
-  ms.date: 08/15/2022
+  ms.date: 07/30/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: module-standard-task-based
   ms.service: azure-synapse-analytics
+  ms.collection: wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai
