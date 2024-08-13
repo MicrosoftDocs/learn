@@ -23,7 +23,7 @@ In this scenario, data replicated to the SAP HANA instance in the second virtual
 
 ## SAP HANA system replication with automatic failover
 
-One method for achieving SAP HANA high availability is by configuring host auto failover. To configure host auto failover, you add one or more virtual machines to the SAP HANA system and configure them as standby nodes. When active node fails, a standby node automatically takes over. In the presented configuration with Azure virtual machines, you achieve auto failover by using [NFS on Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction.md).  
+One method for achieving SAP HANA high availability is by configuring host auto failover. To configure host auto failover, you add one or more virtual machines to the SAP HANA system and configure them as standby nodes. When active node fails, a standby node automatically takes over. In the presented configuration with Azure virtual machines, you achieve auto failover by using [NFS on Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction).  
 
 > [!NOTE]
 > The standby node needs access to all database volumes. The SAP HANA volumes must be mounted as NFSv4 volumes. The improved file lease-based locking mechanism in the NFSv4 protocol is used for `I/O` fencing.
