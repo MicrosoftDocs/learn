@@ -12,7 +12,7 @@ Within the DNR, the Aquatic Resources Division conducts several programs for ove
 
 This task involves analyzing around 350 hours of video footage, **identifying, classifying, and geolocating eel grass**. The process required the manual work of two scientists and congested their workloads for three months. This process was a waste of highly specialized, valuable resources.
 
-![Image showing an ocean shoreline.](../media/5-shore.jpg)
+![Photograph showing of an ocean shoreline.](../media/5-shore.jpg)
 
 ## The solution
 

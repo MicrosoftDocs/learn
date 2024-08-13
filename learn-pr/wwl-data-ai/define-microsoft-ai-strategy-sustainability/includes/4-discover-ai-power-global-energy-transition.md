@@ -12,7 +12,7 @@ EDP is working hard to build a decarbonized, less polluted world. Their objectiv
 
 Related to this goal, EDP commits to produce **100 percent renewable energy by 2030** and to become **net zero by 2040**. To keep these impressive promises, they rely on Microsoft AI and IoT to help them with several projects.
 
-![Image showing person working on solar panels holding a tablet.](../media/4-energy.jpg)
+![Photograph showing of person working on solar panels holding a tablet.](../media/4-energy.jpg)
 
 ## The solution
 

@@ -12,7 +12,7 @@ Munich is a hectic city with a population of more than one and a half Million in
 
 Besides, any solution must be scalable. SWM manages **vast amounts of data**: each subway train alone sends over 2,000 data points every 10 seconds; geothermal solutions gather five gigabytes of data every hour, as do each of the 30 digitized areas of infrastructure. The organization requires a robust platform capable of operating with such volumes of data, such as Microsoft Azure.
 
-![Image showing a train on a track.](../media/6-train.jpg)
+![Photograph showing of a train on a track.](../media/6-train.jpg)
 
 ## The solution
 
