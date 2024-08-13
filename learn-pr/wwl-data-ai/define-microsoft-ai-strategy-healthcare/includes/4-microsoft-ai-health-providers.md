@@ -5,14 +5,14 @@ We already discussed how AI can empower healthcare experts and businesses prior 
 Azure Health Data Services enables secure management of patient data. At the core of Microsoft AI solutions for healthcare providers, a robust ecosystem lies designed to facilitate seamless integration with diverse forms of medical data including electronic health records and digital imaging.
 
 #### Electronic Health Records (EHR)
-![Healthcare worker holding a tablet.](../media/4-patient-data.jpg)
+![Photograph showing healthcare worker holding a tablet.](../media/4-patient-data.jpg)
 
 Electronic Health Records (EHR) serve as comprehensive repositories of patient information, encompassing a wide array of critical healthcare data. To ensure interoperability on a local or national/regional scale, these systems adhere to established industry standards such as the HL7 ® Fast Healthcare Interoperability Resources (FHIR) standard. 
 
 Microsoft Azure offers a dedicated Application Programming Interface (API) as part of Azure Health Data Services that implements these industry standards and serves as a bridge connecting the Azure ecosystem with external EHR systems. Azure Health Data Services plays a pivotal role in this ecosystem by serving as the conduit through which healthcare data is seamlessly brought into the Azure ecosystem, enabling the harnessing of advanced AI capabilities. Through Azure Health Data Services, AI-driven predictive analytics can be applied to EHR data to identify patients at high risk of developing chronic conditions. By analyzing historical patient data, AI models can predict potential health issues and enable healthcare providers to intervene proactively with preventive care strategies. This measure reduces hospitalization rates and improves patient outcomes. Additionally, these EHR systems seamlessly interface with Microsoft Teams, using advanced AI capabilities to automate tasks and enhance team efficiency.
 
 #### Digital Imaging and Communications in Medicine (DICOM) images
-![Healthcare worker rushing through a medical room.](../media/4-technician.jpg)
+![Photograph showing healthcare worker rushing through a medical room.](../media/4-technician.jpg)
 
 Modern healthcare heavily relies on medical imaging for precise diagnostics and treatment planning. The DICOM standard plays a pivotal role in enabling the secure and standardized storage and exchange of these critical medical images. Within Azure Health Data Services, seamless integration for DICOM images is provided which is an enabler for facilitating the adoption of AI use cases for enhanced diagnostics and treatment planning. AI algorithms integrated with DICOM image data can automate the detection and classification of anomalies in medical images, such as X-rays or MRI scans. For instance, AI can accurately identify and highlight areas of concern in radiology images. It can aid radiologists in diagnosing conditions like fractures or tumors more efficiently and with higher accuracy, ultimately leading to improved patient care.
 
@@ -41,7 +41,7 @@ New generation AI, including generative AI, is taking document AI technologies t
 * **Generate full-circle medical reports**: With Azure OpenAI Services, Microsoft Power BI, and Azure Synapse Analytics, you can automatically create reports on patient outcomes, treatment efficiency, or operational metrics.
 
 ## Intuitive discovery of critical information
-![Medical professional looking at computer screen.](../media/4-thinking.jpg)
+![Photograph showing medical professional looking at computer screen.](../media/4-thinking.jpg)
 
 Healthcare professionals can use AI to get more insight into already available information. For example:
 
@@ -57,6 +57,6 @@ The priority for healthcare providers is always to deliver the best quality care
 
 >[!TIP]
 >Take a moment to think about which of these (or other) AI use cases are most relevant to your organization.
->![People working and talking around a table.](../media/2-reflection.jpg)
+>![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let’s explore how Zimmer Biomet and Microsoft are collaborating to implement AI solutions that enable better treatment for patients.
