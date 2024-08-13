@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.retrieval-augmented-generation-azure-databricks
+metadata:
+  title: Use AutoML in Azure Databricks
+  description: Learn how to use AutoML to train optimal machine learning models for your data in Azure Databricks
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 08/29/2023
+  ms.service: azure-databricks
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+title: Use AutoML in Azure Databricks
+summary: AutoML in Azure Databricks simplifies the process of building an effective machine learning model for your data.
+abstract: |
+  In this module, you'll learn how to:
+  - Use the AutoML user interface in Azure Databricks
+  - Use the AutoML API in Azure Databricks
+prerequisites: |
+  Before starting this module, you should be familiar with machine learning in Azure Databricks.
+iconUrl: /training/achievements/retrieval-augmented-generation-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+products:
+- azure-databricks
+subjects:
+- data-management
+- machine-learning
+units:
+- learn.wwl.retrieval-augmented-generation-azure-databricks.introduction
+- learn.wwl.retrieval-augmented-generation-azure-databricks.what-automl
+- learn.wwl.retrieval-augmented-generation-azure-databricks.automl-user-interface
+- learn.wwl.retrieval-augmented-generation-azure-databricks.automl-code
+- learn.wwl.retrieval-augmented-generation-azure-databricks.exercise-automl
+- learn.wwl.retrieval-augmented-generation-azure-databricks.knowledge-check
+- learn.wwl.retrieval-augmented-generation-azure-databricks.summary
+badge:
+  uid: learn.wwl.retrieval-augmented-generation-azure-databricks.badge
