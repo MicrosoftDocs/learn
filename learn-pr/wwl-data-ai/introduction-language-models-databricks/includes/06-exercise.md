@@ -5,4 +5,4 @@ Now it's your chance to explore the use of language models with Azure Databricks
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2280885&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2282362&azure-portal=true)
