@@ -11,7 +11,7 @@ metadata:
   ms.topic: module-intro-to-product
   ms.service: azure-redhat-openshift
 title: Introduction to Red Hat on Azure
-summary: This module provides an introduction to using Red Hat solutions in Azure cloud environment. It covers key topics such as Red Hat Enterprise Linux (RHEL), Azure Red Hat OpenShift (ARO), and JBoss, guiding you through the process of migrating and modernizing your Linux workloads.
+summary: This module provides an introduction to using Red Hat solutions in Azure cloud environments. It covers key topics such as Red Hat Enterprise Linux (RHEL), Azure Red Hat OpenShift (ARO), and JBoss, guiding you through the process of migrating and modernizing your Linux workloads.
 abstract: |
   By the end of this module, you'll be able to:
 
