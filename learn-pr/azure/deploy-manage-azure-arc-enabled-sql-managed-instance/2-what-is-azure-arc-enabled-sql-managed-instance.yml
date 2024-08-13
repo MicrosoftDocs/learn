@@ -2,7 +2,7 @@
 uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.what-is-azure-arc-enabled-sql-managed-instance
 title: Describe the features of an Azure Arc-enabled SQL Managed Instance
 metadata:
-  title: learning-content
+  title: Describe the features of Azure Arc-enabled SQL Managed Instance
   description: Describe the features of an Azure Arc-enabled SQL Managed Instance.
   ms.date: 08/06/2024
   author: MikeRayMSFT
