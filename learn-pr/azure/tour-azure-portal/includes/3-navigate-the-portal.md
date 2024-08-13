@@ -24,6 +24,14 @@ You can change your default view to the customizable **Dashboard** in the portal
     :::column-end:::
 :::row-end:::
 
+## Copilot in Azure
+
+Near the top of the screen, you see the **Copilot** button.
+
+:::image type="content" source="../media/3-copilot-in-azure.png" alt-text="Screenshot showing the Copilot for Azure button in the Azure portal.":::
+
+If your organization has made Microsoft Copilot in Azure (preview) available, you can select this button to ask questions, quickly navigate to services and resources, or get help with tasks. For example, Copilot in Azure can help you design, operate, optimize, and troubleshoot your Azure apps and infrastructure. Copilot for Azure can also help you gain new insights about which Azure services can help with your objectives.
+
 ## Azure portal global controls
 
 The Azure portal displays several icons in the status bar at the top-right side of the screen. These icons are global controls that are always available, no matter what service you're working with. Each icon provides quick access to useful functionality, such as configuring settings or viewing notifications about portal activity.
