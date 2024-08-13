@@ -2,6 +2,8 @@
 
 In Microsoft Entra External ID, an external tenant represents your directory of consumer and guest accounts. With an administrator role, work and guest accounts can [manage the tenant](/entra/external-id/customers/quickstart-tenant-setup).
 
+You'll need at least the [User Administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator) directory role to create an admin account. **This role is a privileged role**. [Please read about best practices for working with privileged roles](/entra/identity/role-based-access-control/privileged-roles-permissions?tabs=admin-center#best-practices-for-using-privileged-roles).
+
 ::: zone pivot="microsoft-entra-admin-center"
 
 1. To add an admin account, sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) with at least Privileged Role Administrator permissions and browse to **Identity** > **Users** > **All users**. Then, select **New user** > **Create new user**.
