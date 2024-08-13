@@ -4,7 +4,7 @@ title: Troubleshooting Windows Containers
 metadata: 
   title: Troubleshooting Windows Containers
   description: Learn about the Windows containerization platform and how to troubleshoot it. Learn various troubleshooting techniques, using Docker, Azure, or native Windows tools.
-  ms.date: 05/11/2023
+  ms.date: 08/13/2024
   author: vrapolinario
   ms.author: viniap
   ms.topic: module

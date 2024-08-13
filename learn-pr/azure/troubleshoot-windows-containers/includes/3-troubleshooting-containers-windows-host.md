@@ -2,19 +2,19 @@
 
 ## Application and container logs
 
-When it comes to standards, container and application log is based on Standard Output (STDOUT/STDERR). That isn't the case for some Windows applications and the Windows OS. Traditionally, Windows apps and OS logs go to other places, such as EventLogs, EventTraces, and custom log files. Because of that, tools that look for container and application logs on STDOUT won't be able to see the logs from Windows apps on containers. To solve that, Microsoft created a tool called LogMonitor to bridge this gap and aggregate all logs inside the Windows container to STDOUT.
+When it comes to standards, application and container logs are based on Standard Output (STDOUT/STDERR). That isn't the case for some Windows applications, nor the Windows OS. Traditionally, Windows apps and OS logs go to other places, such as EventLogs, EventTraces, and custom log files. Because of this, tools that look for container and application logs on STDOUT won't be able to see the logs from Windows apps on containers. To resolve, Microsoft created a tool called LogMonitor to bridge this gap and aggregate all logs inside the Windows container to STDOUT.
 
-To use LogMonitor, you need to add it to your container image via the Dockerfile. As you recall, a Dockerfile is the recipe for building a container. In a Dockerfile, there are multiple directives including FROM, ADD, ENTRYPOINT, etc. ENTRYPOINT is PID 1 of the container, and the container will exit when the ENTRYPOINT process terminates. To capture the STDOUT/STDERR of the container, the LogMonitor works as a wrapper around your application, therefore the ENTRYPOINT looks like this:
+To use LogMonitor, you need to add it to your container image via the Dockerfile. Recall that a Dockerfile is the recipe for building a container. In a Dockerfile, there are multiple directives including FROM, ADD, ENTRYPOINT, etc. ENTRYPOINT is PID 1 of the container, and the container will exit when the ENTRYPOINT process terminates. To capture the STDOUT/STDERR of the container, the LogMonitor works as a wrapper around your application. Therefore the ENTRYPOINT looks like this:
 
 ```powershell
 ENTRYPOINT ["C:\\LogMonitor\\LogMonitor.exe", "C:\\MyApp.exe", "myparameter"]
 ```
 
-When using LogMonitor, you can treat Windows Containers just like Linux ones, using the "docker logs" command to fetch the output. Other logging solutions such as Azure Monitor, is also able to catch the logs from the container.
+When using LogMonitor, you can treat Windows Containers just like Linux ones by using the **docker logs** command to fetch the output. Other logging solutions, such as Azure Monitor, are also able to catch the logs from the container.
 
 When running inside your container, LogMonitor also needs a configuration file so that it knows which events/files to aggregate.
 
-Below you can find an example JSON config and a Dockerfile for an IIS instance:
+In the following, you can find an example JSON config and a Dockerfile for an IIS instance:
 
 ```json
     "LogConfig": {
@@ -61,9 +61,9 @@ Below you can find an example JSON config and a Dockerfile for an IIS instance:
   }
 ```
 
-The above JSON example collects the application logs from EventLog that are tagged as Warning or Errors. It also captures the logs from the C:\inetpu\logs folder (which is the default log for IIS). Finally, it also captures the ETW logs coming from the IIS providers.
+This JSON example collects the application logs from EventLog that are tagged as Warning or Errors. It also captures the logs from the `C:\inetpu\logs folder` (which is the default log for IIS). Finally, it captures the ETW logs coming from the IIS providers.
 
-Below is a Dockerfile example to monitor a web application running on IIS:
+Here is a Dockerfile example to monitor a web application running on IIS:
 
 ```powershell
 FROM mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2022
@@ -79,7 +79,7 @@ EXPOSE 80
 ENTRYPOINT ["C:\\LogMonitor\\LogMonitor.exe", "C:\\ServiceMonitor.exe", "w3svc"]
 ```
 
-The above example will create a container image based on the IIS container image, copy the JSON file created in the previous example and download the latest version of LogMonitor. It will then configure IIS and set LogMonitor as the Entrypoint, monitoring the IIS service.
+This example creates a container image based on the IIS container image, copies the JSON file created in the previous example, and downloads the latest version of LogMonitor. It then configures IIS and sets LogMonitor as the Entrypoint, monitoring the IIS service.
 
 Now that the application and IIS logs are going to STDOUT, you can get the logs with:
 
@@ -89,7 +89,7 @@ docker logs <container_name>
 
 ## Connect to Windows container via HCSDiag.exe
 
-Getting a PowerShell session inside the container can be a powerful debugging tool to identify an issue. You can use hcsdiag.exe to interact with the HCS. As you recall, HCS is a low-level API to manage the containers. Hcsdiag.exe (Host Compute Service Diagnostic) is a tool to interact with the API directly. With it you can run commands to list, exec, read, write, open a console, and more.
+Getting a PowerShell session inside the container can be a powerful debugging tool to identify an issue. You can use `hcsdiag.exe` (Host Compute Service Diagnostic) to interact with the HCS. Recall that HCS is a low-level API to manage the containers. `Hcsdiag.exe` is a tool to interact with the API directly. With it you can run commands to list, exec, read, write, open a console, and more.
 
 To get a console inside the container:
 
@@ -124,7 +124,7 @@ Sometimes there might be issues with the runtime setup. To check the logs of the
 
 - **Containerd logs**
 
-   Usually, containerd logs to C:/logs/containerd.log. You can also enable debug level by configuring the service with –log-level debug in sc.exe. Make sure you only add the log level and don't change any other flags. Keep in mind that containerd startup parameters might differ due to active development on the project.
+   Usually, containerd logs to `C:/logs/containerd.log`. You can also enable debug level by configuring the service with `–log-level debug` in `sc.exe`. Make sure you only add the log level and don't change any other flags. Keep in mind that containerd startup parameters might differ due to active development on the project.
 
    ```powershell
    sc.exe config containerd binpath= "C:\containerd\bin\containerd.exe --log-level=debug --log-file=C:/logs/containerd.log"
@@ -151,7 +151,7 @@ For Windows containers running with process isolation, the build number must exa
 
 ## PowerShell debug script
 
-As you can gather from the previous sections, there are many moving pieces when running Windows containers, and everything should be properly configured. You now know how to look into the Windows components when something goes wrong, but to make things even easier, Microsoft created a PowerShell script to try and catch some basic misconfigurations. You can leverage that script with PowerShell:
+As you can gather from the previous sections, there are many moving pieces when running Windows containers requiring proper configuration. You now know how to look into the Windows components when something goes wrong. Microsoft created a PowerShell script to try and catch some basic misconfigurations to make things even easier. You can leverage that script with PowerShell:
 
 ```powershell
 Invoke-WebRequest https://aka.ms/Debug-ContainerHost.ps1 -UseBasicParsing | Invoke-Expression
