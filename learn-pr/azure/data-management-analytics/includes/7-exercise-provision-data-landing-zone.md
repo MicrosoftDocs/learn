@@ -50,9 +50,9 @@ Select the **General Settings** tab in the template and provide the following in
 
 Select the **Connectivity Settings** tab in the template and provide the following information:
 
-- **Virtual Network Configuration**: This is an optional step required only if the default Vnet configuration has to be altered. We don't recommend making any changes to these settings.
+- **Virtual Network Configuration**: This is an optional step required only if the default virtual network configuration has to be altered. We don't recommend making any changes to these settings.
 
-- **Data Management Zone Virtual Network Configuration**: Select your Data Management Zone's Vnet to peer it with your Data Landing Zone.
+- **Data Management Zone Virtual Network Configuration**: Select your Data Management Zone's virtual network to peer it with your Data Landing Zone.
 
 - **Shared Network Infrastructure Configuration**: Select **Azure Firewall** in the **Existing Firewall** drop-down, then select your subscription in the **Azure Firewall Subscription** drop-down. Select your **[XXXX]-dev-firewall** in the **Azure Firewall** drop-down.
 

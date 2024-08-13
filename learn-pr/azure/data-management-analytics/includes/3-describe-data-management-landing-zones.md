@@ -3,7 +3,7 @@ The data-management landing zone is classified as a management function, and it'
 
 ## Significance
 
-The data-management zone allows for centralized data governance and control space for any centralized data estates. It provides placeholders for implementing several common components of enterprise data-centric architecture including Data Catalog, Data Discovery, Data Classification, Data Lineage, Data Quality Management, Data Models Repositories, Master Data Management, API Catalog, Data Sharing contracts, Container Registry. and several more. Lets study a few of them in the following sections.
+The data-management zone allows for centralized data governance and control space for any centralized data estates. It provides placeholders for implementing several common components of enterprise data-centric architecture including Data Catalog, Data Discovery, Data Classification, Data Lineage, Data Quality Management, Data Models Repositories, Master Data Management, API Catalog, Data Sharing contracts, Container Registry, and several more. Lets study a few of them in the following sections.
 
 ### Data Catalog and discovery
 
