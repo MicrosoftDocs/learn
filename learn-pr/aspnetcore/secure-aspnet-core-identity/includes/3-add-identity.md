@@ -144,7 +144,6 @@ The default Identity implementation can be added with `dotnet` command-line tool
         * `.AddDefaultIdentity<IdentityUser>` tells the Identity services to use the default user model.
         * The lambda expression `options => options.SignIn.RequireConfirmedAccount = true` specifies that users must confirm their email accounts.
         * `.AddEntityFrameworkStores<RazorPagesPizzaAuth>()` specifies that Identity uses the default Entity Framework Core store for its database. The `RazorPagesPizzaAuth` `DbContext` class is used.
-    * `app.UseAuthentication();` enables authentication capabilities. More specifically, an instance of the ASP.NET Core authentication middleware is added to the app's HTTP request-handling pipeline.
 
 ## Configure the database connection
 
