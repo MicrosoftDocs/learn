@@ -7,7 +7,8 @@ You can use them with or without modification.
 Also, you can import runbooks from the runbook gallery at Azure Automation Github in the runbooks repository [Azure Automation - Runbooks](https://github.com/azureautomation/runbooks).
 
 > [!NOTE]
-> A new Azure PowerShell module was released in December 2018, called the **Az** PowerShell module. It replaces the **AzureRM** PowerShell module and is now the intended PowerShell module for interacting with Azure. This new **Az** module is currently supported in Azure Automation. For more general details on the new Az PowerShell module, go to [Introducing the new Azure PowerShell Az module](/powershell/azure/new-azureps-module-az).
+> The **AzureRM** PowerShell module has been officially deprecated as of February 29, 2024. Users are advised to migrate from AzureRM to the Az PowerShell module to ensure continued support and updates.
+For more general details on the new Az PowerShell module, go to [Introducing the new Azure PowerShell Az module](/powershell/azure/new-azureps-module-az).
 
 ## Choosing items from the runbook gallery
 
