@@ -11,7 +11,7 @@ Azure includes built-in resiliency services that you can implement to make your 
 - Azure Site Recovery allows you to replicate virtual machines to another Azure region for business continuity and disaster recovery needs.
 - Azure Backup service provides simple, secure, and cost-effective solutions to back up your data and recover it from the Microsoft Azure cloud.
 - Geo Replication for Azure SQL Database allows the application to perform quick disaster recovery of individual databases in case of a regional disaster or large-scale outage.  
-- Locally-redundant storage (LRS) provides object durability by replicating your data to a storage scale unit.
+- Locally redundant storage (LRS) provides object durability by replicating your data to a storage scale unit.
 - Zone-redundant storage (ZRS) replicates your data synchronously across three storage clusters in a single region.  
 - Geo-redundant storage (GRS) is designed to provide durability of objects over a given year by replicating your data to a secondary region that is hundreds of miles away from the primary region.
 
@@ -27,12 +27,12 @@ In the traditional on-premises model, the entire responsibility of managing, fro
 
 You can leverage the following model when designing your applications for resiliency:
 
-1. Define your resiliency requirements based on business needs.
-1. Design the application for resiliency. Start with an architecture that follows proven practices and then identify the possible failure points in that architecture.
-1. Implement strategies to detect and recover from failures.
-1. Test the implementation by simulating faults and triggering forced failovers.
-1. Deploy the application into production using a reliable and repeatable process.
-1. Monitor the application to detect failures. By monitoring the system, you can gauge the health of the application and respond to incidents if necessary.
-1. Respond if there are failure that require manual interventions.
+- Define your resiliency requirements based on business needs.
+- Design the application for resiliency. Start with an architecture that follows proven practices and then identify the possible failure points in that architecture.
+- Implement strategies to detect and recover from failures.
+- Test the implementation by simulating faults and triggering forced failovers.
+- Deploy the application into production using a reliable and repeatable process.
+- Monitor the application to detect failures. By monitoring the system, you can gauge the health of the application and respond to incidents if necessary.
+- Respond if there are failures that require manual intervention.
 
 You'll learn more about parts of this model throughout the rest of this module.

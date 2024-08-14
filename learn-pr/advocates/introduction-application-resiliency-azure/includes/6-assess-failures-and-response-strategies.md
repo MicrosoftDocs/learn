@@ -21,6 +21,6 @@ Load testing is crucial for identifying failures that only happen under load, su
 
 ## Disaster recovery drills
 
-It isn't enough if you have a good disaster recovery plan in place. You need to test it periodically to ensure your recovery plan works fine when it matters. For Azure virtual machines, you can use Azure Site Recoveryto replicate and perform disaster recovery drills without impacting production applications or ongoing replication.
+It isn't enough if you have a good disaster recovery plan in place. You need to test it periodically to ensure your recovery plan works fine when it matters. For Azure virtual machines, you can use Azure Site Recovery to replicate and perform disaster recovery drills without impacting production applications or ongoing replication.
 
 With the cross-region restore feature provided by Azure Backup, you can conduct business continuity and disaster recovery (BCDR) drills for audit or compliance purposes with the secondary region data. This enables you to perform a restore of backed up data in the secondary region.

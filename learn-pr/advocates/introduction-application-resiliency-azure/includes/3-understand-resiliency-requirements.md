@@ -25,7 +25,7 @@ The following table lists some example of different application tiers.
 
 ## Service Level Agreements (SLA)
 
-A Service Level Agreement (SLA) is a commitment between a service provider and a client. It defines the expected level of service, including the availability and performance of the service. A If the SLA for a particular service is 99.9%, it means you should expect the service to be available 99.9% of the time.
+A Service Level Agreement (SLA) is a commitment between a service provider and a client. It defines the expected level of service, including the availability and performance of the service. If the SLA for a particular service is 99.9%, it means you should expect the service to be available 99.9% of the time.
 
 You should define your own target SLAs for each workload in your solution. An SLA makes it possible to evaluate whether the resiliency of the architecture meets the business requirements. 
 

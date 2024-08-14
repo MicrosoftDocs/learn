@@ -25,8 +25,8 @@ To conduct an FMA:
 2. For each component, identify potential failures that could occur. A single component may have more than one failure mode. For example, you should consider read failures and write failures separately, because the impact and possible mitigations will be different.
 3. Rate each failure mode according to its overall risk. Consider these factors:
 
-- What is the likelihood of the failure? You don't need exact numbers; the purpose is to rank the priority.
-- What is the impact on the application, in terms of availability, data loss, monetary cost, and business disruption?
+    - What is the likelihood of the failure? You don't need exact numbers; the purpose is to rank the priority.
+    - What is the impact on the application, in terms of availability, data loss, monetary cost, and business disruption?
 
 4. For each failure mode, determine how the application will detect, respond, and recover.
 5. Consider tradeoffs in cost and application complexity.
