@@ -10,7 +10,7 @@ Network Watcher consists of three major sets of tools and capabilities:
 
 
 > [!NOTE]
-> When you create or update a virtual network in your subscription, Network Watcher is automatically enabled in your virtual network's region. There's no impact on your resources or associated charge for automatically enabling Network Watcher. You must manually enable Network Watcher if you previously chose to opt out of Network Watcher automatic enablement. F
+> When you create or update a virtual network in your subscription, Network Watcher is automatically enabled in your virtual network's region. There's no impact on your resources or associated charge for automatically enabling Network Watcher. You must manually enable Network Watcher if you previously chose to opt out of Network Watcher automatic enablement.
 
 ## Monitoring
 

@@ -4,16 +4,16 @@ By default, the Remote Desktop Protocol (RDP) tries to establish a remote sessio
 
 RDP Shortpath can be used in two ways:
 
-1.  **Managed networks**, where direct connectivity is established between the client and the session host when using a private connection, such as a virtual private network (VPN). A connection using a managed network is established in one of the following ways:
+ -  **Managed networks**, where direct connectivity is established between the client and the session host when using a private connection, such as a virtual private network (VPN). A connection using a managed network is established in one of the following ways:
     
     
-    1.  A *direct* UDP connection between the client device and session host, where you need to enable the RDP Shortpath listener and allow an inbound port on each session host to accept connections.
-    2.  A *direct* UDP connection between the client device and session host, using the Simple Traversal Underneath NAT (STUN) protocol between a client and session host. Inbound ports on the session host aren't required to be allowed.
-2.  **Public networks**, where direct connectivity is established between the client and the session host when using a public connection. There are two connection types when using a public connection, which are listed here in order of preference:
+     -  A *direct* UDP connection between the client device and session host, where you need to enable the RDP Shortpath listener and allow an inbound port on each session host to accept connections.
+     -  A *direct* UDP connection between the client device and session host, using the Simple Traversal Underneath NAT (STUN) protocol between a client and session host. Inbound ports on the session host aren't required to be allowed.
+ -  **Public networks**, where direct connectivity is established between the client and the session host when using a public connection. There are two connection types when using a public connection, which are listed here in order of preference:
     
     
-    1.  A *direct* UDP connection using the Simple Traversal Underneath NAT (STUN) protocol between a client and session host.
-    2.  An *indirect* UDP connection using the Traversal Using Relay NAT (TURN) protocol with a relay between a client and session host. This is in preview.
+     -  A *direct* UDP connection using the Simple Traversal Underneath NAT (STUN) protocol between a client and session host.
+     -  An *indirect* UDP connection using the Traversal Using Relay NAT (TURN) protocol with a relay between a client and session host. This is in preview.
 
 The transport used for RDP Shortpath is based on the [Universal Rate Control Protocol (URCP)](https://www.microsoft.com/research/publication/urcp-universal-rate-control-protocol-for-real-time-communication-applications/). URCP enhances UDP with active monitoring of the network conditions and provides fair and full link utilization. URCP operates at low delay and loss levels as needed.
 
