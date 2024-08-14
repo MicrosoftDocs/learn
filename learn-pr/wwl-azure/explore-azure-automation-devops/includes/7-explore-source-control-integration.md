@@ -22,7 +22,7 @@ You integrate source control with Azure Automation using the following steps:
 
 1.  In the Azure portal, access your Automation account.
 2.  Under Account Settings, select **Source control**, and then choose **+ Add**.
-3.  In the **Source Control Summary** blade, select **GitHub** as source control type and then select **Authenticate**.<br>
+3.  In the **Source Control type**, select **GitHub** as source control type and then select **Authenticate**.<br>
 
     > [!NOTE]
     > Note: You'll require a GitHub account to complete the next step.

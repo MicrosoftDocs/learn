@@ -1,12 +1,13 @@
-The AI revolution isn’t just one of many challenges healthcare organizations must face to keep their competitive edge. It’s an opportunity to empower your employees to discover better ways to offer healthcare services. This module has discussed many scenarios in which AI can be a powerful assistant in all stages of the healthcare journey: from research, drug development, and supply chain to doctors’ consultations. You’ve read real success stories from leading companies in the sector that prove AI generates value in healthcare.
+The AI revolution isn’t just one of many challenges healthcare organizations must face to keep their competitive edge. It’s an opportunity to empower your employees to discover better ways to offer healthcare services. This module discussed many scenarios in which AI can be a powerful assistant in all stages of the healthcare journey: from research, drug development, and supply chain to doctors’ consultations. You’ve read real success stories from leading companies in the sector that prove AI generates value in healthcare.
 
 To achieve these goals, Microsoft offers a wide range of services. Microsoft Cloud for Healthcare incorporates Azure, Microsoft Dynamics 365, and Microsoft 365. These products are customized for healthcare professionals and include embedded AI. There are also specific products for the industry, such as Azure Health Data Services. To implement AI potential at its best, Azure OpenAI Services delivers state-of-the-art generative AI models.
 
-Now that you have reviewed this module, you should be able to:
+Now that you reviewed this module, you should be able to:
 
-* Identify AI use cases in healthcare.
-* Examine available AI tools and resources for healthcare scenarios.
-* Discover insights from healthcare-specific AI success stories.
+* Describe goals and challenges in life sciences, pharmacology, and healthcare
+* Identify opportunities for AI in life sciences, pharmacology, and healthcare
+* Describe common use cases in life sciences, pharmacology, and healthcare
+* Explore how Microsoft AI technologies can help health providers
 
 ## Use these resources to discover more
 
