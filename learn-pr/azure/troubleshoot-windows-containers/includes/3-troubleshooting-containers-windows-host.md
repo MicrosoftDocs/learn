@@ -1,10 +1,10 @@
-﻿To get started, we'll look at tools that are provided by Microsoft to help you troubleshoot Windows containers.
+﻿To get started, we look at tools that are provided by Microsoft to help you troubleshoot Windows containers.
 
 ## Application and container logs
 
-When it comes to standards, application and container logs are based on Standard Output (STDOUT/STDERR). That isn't the case for some Windows applications, nor the Windows OS. Traditionally, Windows apps and OS logs go to other places, such as EventLogs, EventTraces, and custom log files. Because of this, tools that look for container and application logs on STDOUT won't be able to see the logs from Windows apps on containers. To resolve, Microsoft created a tool called LogMonitor to bridge this gap and aggregate all logs inside the Windows container to STDOUT.
+When it comes to standards, application and container logs are based on Standard Output (STDOUT/STDERR). It's not the case for some Windows applications, nor the Windows OS. Traditionally, Windows apps and OS logs go to other places, such as EventLogs, EventTraces, and custom log files. Because of this discrepancy, tools that look for container and application logs on STDOUT aren't able to see the logs from Windows apps on containers. To resolve, Microsoft created a tool called LogMonitor to bridge this gap and aggregate all logs inside the Windows container to STDOUT.
 
-To use LogMonitor, you need to add it to your container image via the Dockerfile. Recall that a Dockerfile is the recipe for building a container. In a Dockerfile, there are multiple directives including FROM, ADD, ENTRYPOINT, etc. ENTRYPOINT is PID 1 of the container, and the container will exit when the ENTRYPOINT process terminates. To capture the STDOUT/STDERR of the container, the LogMonitor works as a wrapper around your application. Therefore the ENTRYPOINT looks like this:
+To use LogMonitor, you need to add it to your container image via the Dockerfile. Recall that a Dockerfile is the recipe for building a container. In a Dockerfile, there are multiple directives including FROM, ADD, ENTRYPOINT, etc. ENTRYPOINT is PID 1 of the container, and the container exits when the ENTRYPOINT process terminates. To capture the STDOUT/STDERR of the container, the LogMonitor works as a wrapper around your application. Therefore the ENTRYPOINT looks like this:
 
 ```powershell
 ENTRYPOINT ["C:\\LogMonitor\\LogMonitor.exe", "C:\\MyApp.exe", "myparameter"]
@@ -12,7 +12,7 @@ ENTRYPOINT ["C:\\LogMonitor\\LogMonitor.exe", "C:\\MyApp.exe", "myparameter"]
 
 When using LogMonitor, you can treat Windows Containers just like Linux ones by using the **docker logs** command to fetch the output. Other logging solutions, such as Azure Monitor, are also able to catch the logs from the container.
 
-When running inside your container, LogMonitor also needs a configuration file so that it knows which events/files to aggregate.
+LogMonitor also needs a configuration file so that it knows which events/files to aggregate when running inside your container.
 
 In the following, you can find an example JSON config and a Dockerfile for an IIS instance:
 
@@ -61,9 +61,9 @@ In the following, you can find an example JSON config and a Dockerfile for an II
   }
 ```
 
-This JSON example collects the application logs from EventLog that are tagged as Warning or Errors. It also captures the logs from the `C:\inetpu\logs folder` (which is the default log for IIS). Finally, it captures the ETW logs coming from the IIS providers.
+This JSON example collects the application logs from EventLog that are tagged as Warning or Errors. It also captures the logs from the `C:\inetpu\logs folder` (which is the default log for IIS). Finally, it captures the ETW (Event Tracing for Windows) logs coming from the IIS providers.
 
-Here is a Dockerfile example to monitor a web application running on IIS:
+Here's a Dockerfile example to monitor a web application running on IIS:
 
 ```powershell
 FROM mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2022
@@ -106,7 +106,7 @@ Sometimes there might be issues with the runtime setup. To check the logs of the
 
 - **Docker Daemon**
 
-   To get the logs from the Docker Daemon, you can check the Event Viewer. You can accomplish this from PowerShell:
+   To get the logs from the Docker Daemon, you can check the Event Viewer. You can accomplish from PowerShell:
 
    ```powershell
    Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-5) | Sort-Object Time
@@ -120,7 +120,7 @@ Sometimes there might be issues with the runtime setup. To check the logs of the
    sc.exe start docker
    ```
 
-   Make sure to remove `-D` flag after you finished debugging as this will pollute the logs.
+   Make sure to remove `-D` flag after you finished debugging as it pollutes the logs.
 
 - **Containerd logs**
 
@@ -143,18 +143,18 @@ Sometimes there might be issues with the runtime setup. To check the logs of the
 
 ## Image version mismatch
 
-When using Windows containers, you need to pay attention to the Windows version of container image and host. The Windows OS has four levels of versioning: major, minor, build and revision. For example, version 10.0.14393.103 would have a major version of 10, a minor version of 0, a build number of 14393, and a revision number of 103.
+When using Windows containers, you need to pay attention to the Windows version of container image and host. The Windows OS has four levels of versioning: major, minor, build, and revision. For example, version 10.0.14393.103 would have a major version of 10, a minor version of 0, a build number of 14393, and a revision number of 103.
 
-Except for Windows Server 2022 and Windows 11, Windows containers are blocked from starting when the build number between the container host and the container image are different. For example, when the container host is version 10.0.14393.\* (Windows Server 2016) and you attempt to run a container with an image version 10.0.16299.\* (Windows Server version 1709) the OS compute service will return a version incompatibility error.
+Except for Windows Server 2022 and Windows 11, Windows containers are blocked from starting when the build number between the container host and the container image are different. For example, when the container host is version 10.0.14393.\* (Windows Server 2016) and you attempt to run a container with an image version 10.0.16299.\* (Windows Server version 1709) the OS compute service returns a version incompatibility error.
 
 For Windows containers running with process isolation, the build number must exactly match the host. For Hyper-V containers, the build number of the container image can be lower than the container host. For example: You can run a Windows Server 2019 container image on a Windows Server 2022 host using Hyper-V isolation.
 
 ## PowerShell debug script
 
-As you can gather from the previous sections, there are many moving pieces when running Windows containers requiring proper configuration. You now know how to look into the Windows components when something goes wrong. Microsoft created a PowerShell script to try and catch some basic misconfigurations to make things even easier. You can leverage that script with PowerShell:
+As you can gather from the previous sections, there are many moving pieces when running Windows containers requiring proper configuration. You now know how to look into the Windows components when something goes wrong. Microsoft created a PowerShell script to try to catch some basic misconfigurations to make things even easier. You can use that script with PowerShell:
 
 ```powershell
 Invoke-WebRequest https://aka.ms/Debug-ContainerHost.ps1 -UseBasicParsing | Invoke-Expression
 ```
 
-The above script runs several tests on the system automatically. Any failures are in red, and there's a pass/fail summary at the end. You can leverage this information to further troubleshoot your system.
+The script runs several tests on the system automatically. Any failures are in red, and there's a pass/fail summary at the end. You can use this information to further troubleshoot your system.

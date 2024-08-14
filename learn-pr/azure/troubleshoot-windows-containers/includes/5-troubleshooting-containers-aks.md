@@ -1,10 +1,10 @@
-﻿Kubernetes is one of the most well-liked tools for managing the deployment, scaling, and operation of containerized applications. It's maintained by the Cloud Native Computing Foundation (CNCF).
+﻿Kubernetes is one of the most well-liked tools for managing the deployment, scaling, and operation of containerized applications. Cloud Native Computing Foundation (CNCF) is responsible for maintenance.
 
-Kubernetes is formed from *control planes* and *workers*. Control planes serve Kubernetes API (Application Programming Interface), scheduling containers, storing cluster state, and controller manager. Workers serve kubelet, kube-proxy, and the runtime. Here is a high-level overview of the Kubernetes architecture.
+Kubernetes is formed from *control planes* and *workers*. Control planes serve Kubernetes API (Application Programming Interface), scheduling containers, storing cluster state, and controller manager. Workers serve kubelet, kube-proxy, and the runtime. Here's a high-level overview of the Kubernetes architecture.
 
 :::image type="content" source="../media/5-kubernetes-cluster.png" alt-text="Diagram that shows the components of the Kubernetes control plane and the worker nodes.":::
 
-Managing Kubernetes can get tricky. Azure Kubernetes Services (AKS) helps you manage the overhead involved, reducing complexity and management tasks like upgrades. In the next sections, we'll explore Kubernetes components and how you can troubleshoot each of them. Keep in mind AKS abstracts a lot of the infrastructure for you, but you're responsible for worker nodes and troubleshooting the applications on top of an AKS cluster.
+Managing Kubernetes can get tricky. Azure Kubernetes Services (AKS) helps you manage the overhead involved. It reduces complexity and management tasks like upgrades. In the next sections, we'll explore Kubernetes components and how you can troubleshoot each of them. Keep in mind AKS abstracts much of the infrastructure for you. However, you're responsible for worker nodes and troubleshooting applications on top of an AKS cluster.
 
 ## Kubelet
 
@@ -53,13 +53,13 @@ You can also get detailed information, including events, of Kubernetes objects b
 kubectl describe pod <pod id> -n <namespace>
 ```
 
-This command returns the extended specification of the specified pod, as well as the latest events associated to it. Finally, the `kubectl describe` command can be used with other objects such as nodes, services, ingress, etc.
+This command returns the extended specification of the specified pod, and the latest events associated to it. Finally, the `kubectl describe` command can be used with other objects such as nodes, services, ingress, etc.
 
 ## Connect to AKS Windows node RDP
 
 As a managed Kubernetes service, you shouldn't have to manually manage Windows nodes on AKS. The node lifecycle is managed for you by Azure. However, you might want to check what's going on with the Windows node to troubleshoot a potential problem. In those cases, you can enable RDP to the Windows nodes running on an AKS cluster.
 
-First, you need to deploy a Windows node to the same subnet as your AKS cluster. This is basically a jump box. Then, add an inbound security rule for 3389 (RDP port) to connect to the jump box. Next, you need the internal IP address of the target node, which you can retrieve using this command:
+First, you need to deploy a Windows node to the same subnet as your AKS cluster. It's basically a jump box. Then, add an inbound security rule for 3389 (RDP port) to connect to the jump box. Next, you need the internal IP address of the target node, which you can retrieve using this command:
 
 ```powershell
 kubectl describe node
@@ -115,17 +115,17 @@ spec:
       app: iissample
 ```
 
-The YAML specification above describes a deployment of an IIS image. To ensure the pod is scheduled on a Windows node, note the NodeSelector information, which specifies the label `Kubernetes.io/os` needs to be set up to Windows.
+The YAML specification describes a deployment of an IIS image. To ensure the pod is scheduled on a Windows node, note the NodeSelector information, which specifies the label `Kubernetes.io/os` needs to be set up to Windows.
 
 ## Registry authentication
 
-By default, Kubernetes clusters don't have the credential to log into private container registries. In these cases, your Kubernetes cluster will be in a fault state as the nodes can't pull the images you'd like to deploy. To avoid, you need to configure registry authentication manually as part of your deployment and cluster configuration. However, if you're using Azure Container Registry (ACR), Microsoft makes the integration easy. You can simply run:
+By default, Kubernetes clusters don't have the credential to log into private container registries. In these cases, your Kubernetes cluster is in a fault state as the nodes can't pull the images you'd like to deploy. To avoid, you need to configure registry authentication manually as part of your deployment and cluster configuration. However, if you're using Azure Container Registry (ACR), Microsoft makes the integration easy. You can run:
 
 ```bash
 az aks update -n myAKSCluster -g myResourceGroup –attach-acr <acr-name>
 ```
 
-This command attaches the private ACR registry to the AKS cluster, and configures the necessary authentication in the background. This works with AKS clusters and ACR registries in the same Azure Resource Group (RG).
+The command attaches the private ACR registry to the AKS cluster, and configures the necessary authentication in the background. It works with AKS clusters and ACR registries in the same Azure Resource Group (RG).
 
 If you use any other registries or an ACR registry on another Azure RG or subscription, you need to create a `regcred` secret. `Regcred` is the standard name, and it needs to exist in the namespace in which you want the deployment. You can create it like this:
 
@@ -164,7 +164,7 @@ When analyzing a pod, you might encounter it in a faulty state. Here are some co
 
 - **CrashLoopBackOff**
 
-   When this message appears it means that the runtime is unable to run the image. Once again, `kubectl describe pod` is the first step to identify potential issues. Reasons for this state vary, but are usually around application failure or a mismatch between container version and host version. To see why the application failed, you can query for the logs. Make sure you use LogMonitor to include all of the logs to STDOUT. Kubectl logs should retrieve the logs and potentially inform of other issues with the application or pod.
+   When this message appears, it means that the runtime is unable to run the image. Once again, `kubectl describe pod` is the first step to identify potential issues. Reasons for this state vary, but are usually around application failure or a mismatch between container version and host version. To see why the application failed, you can query for the logs. Make sure you use LogMonitor to include all of the logs to STDOUT. Kubectl logs should retrieve the logs and potentially inform of other issues with the application or pod.
 
    To retrieve the logs of a container, you can use:
 
@@ -172,7 +172,7 @@ When analyzing a pod, you might encounter it in a faulty state. Here are some co
    kubectl logs <pod name>
    ```
 
-   The above command will show the existing logs for the specified pod. If you need to catch the logs in real time, for a running application, you can use:
+   The command will show the existing logs for the specified pod. If you need to catch the logs in real time, for a running application, you can use:
 
    ```powershell
    kubectl logs -f <pod name>

@@ -44,4 +44,4 @@ quiz:
       explanation: "Correct. (LogMonitor's purpose is to send logs and events from Windows containers to STDOUT.)"
     - content: "Can be used to monitor the state of a background service."
       isCorrect: false
-      explanation: "Incorrect. (While it's possible to use LogMonitor to monitor the state of a background service, LogMonitor won't take any actions on it and the container will exit. LogMonitor's main purpose is to send logs and events from Windows containers to STDOUT.)"
+      explanation: "Incorrect. (While it's possible to use LogMonitor to monitor the state of a background service, LogMonitor doesn't take any actions on it and the container exits. LogMonitor's main purpose is to send logs and events from Windows containers to STDOUT.)"

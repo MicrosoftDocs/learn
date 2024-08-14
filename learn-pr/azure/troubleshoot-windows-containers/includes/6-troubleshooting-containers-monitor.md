@@ -1,12 +1,12 @@
 ﻿Azure Monitor is a cloud-based monitoring and analytics service provided by Microsoft Azure. It helps organizations gain visibility into the performance, availability, and usage of their applications and infrastructure hosted on the Azure platform. With Azure Monitor, users can collect and analyze telemetry data from various sources such as logs, metrics, and traces. Users gain insights into the health of their resources, detect and diagnose issues, and optimize their applications for better performance and efficiency. Azure Monitor also provides tools for creating and configuring alerts, dashboards, and reports to help users quickly identify and respond to issues in real-time.
 
-First, we need to understand what type of logs and metrics AKS generates. These can be structured as layers.
+First, we need to understand what type of logs and metrics AKS generates. They can be structured as layers.
 
 :::image type="complex" border="false" source="../media/6-aks-logs-structure.png" alt-text="Diagram that shows the different levels of components that need to be managed." lightbox="../media/6-aks-logs-structure.png":::
    Diagram that shows the different levels of components that need to be managed, their description, and the monitoring requirements for each one.
 :::image-end:::
 
-Out of the box, AKS offers some basic monitoring (CPU, disk, memory) around nodes. However, it's not very useful to understand possible issues in your cluster or applications. Setting up Container insights is recommended to gain visibility across containerized application, cluster health, audit logs, etc.
+Out of the box, AKS offers some basic monitoring (CPU, disk, memory) around nodes. However, it's not useful to understand possible issues in your cluster or applications. Setting up Container insights is recommended to gain visibility across containerized application, cluster health, audit logs, etc.
 
 Here are some of the components of an Azure Monitor solution that help you troubleshoot your environment.
 
@@ -28,15 +28,15 @@ Make sure you enable LogMonitor for your Windows containers so the Log Analytics
 
 ## Azure Monitoring workspace
 
-Azure Monitoring workspace is a unique environment for Prometheus metrics. This workspace will be used to store your AKS metrics.
+Azure Monitoring workspace is a unique environment for Prometheus metrics. This workspace is used to store your AKS metrics.
 
 ## Azure managed Grafana
 
-This is a managed Grafana instance to visualize the metrics stored in the Azure Monitoring workspace. You can also bring your own Grafana instance.
+A managed Grafana instance to visualize the metrics stored in the Azure Monitoring workspace. You can also bring your own Grafana instance.
 
 ## Use Azure Monitor to debug containers
 
-Azure Monitor can easily identify issues at all levels inside your AKS cluster. We'll go through them next.
+Azure Monitor can easily identify issues at all levels inside your AKS cluster. We go through them next.
 
 The debugging process can be split in two: application/container issues or cluster problems. Let's go over troubleshooting the application/container first:
 
@@ -46,7 +46,7 @@ The debugging process can be split in two: application/container issues or clust
    Webpage of the Azure portal showing the Container Insights pane. The Containers tab, the selected container, and the options on the Live Events tab are highlighted.
 :::image-end:::
 
-One way you can check your running container is going to the **Insights** tab on the left side blade, **Containers** view, and selecting your container. By doing this, you gain quick information over the container, its logs, And events. For example, if you enabled Log Monitor on an IIS instance running on AKS, you can see the IIS events directly on the Azure portal.
+One way you can check your running container is going to the **Insights** tab on the left side blade, **Containers** view, and selecting your container. Navigating here, you gain quick information over the container, its logs, And events. For example, if you enabled Log Monitor on an IIS instance running on AKS, you can see the IIS events directly on the Azure portal.
 
 ## Control plane
 
@@ -54,19 +54,19 @@ To get the logs from the control plane components, you need to enable Diagnostic
 
 :::image type="content" source="../media/6-enable-diagnostic-settings.png" alt-text="Webpage of the Azure portal showing the Diagnostic settings pane. The link to + Add diagnostic setting is highlighted." lightbox="../media/6-enable-diagnostic-settings.png":::
 
-Highlighted below are the most important control plane components. Make sure you select to push to the Log Analytics Workspace and select the desired one.
+Highlighted next are the most important control plane components. Make sure you select to push to the Log Analytics Workspace and select the desired one.
 
 :::image type="complex" border="false" source="../media/6-control-plane-diagnostic-settings.png" alt-text="Screenshot of the Azure portal showing the Diagnostic setting configuration pane." lightbox="../media/6-control-plane-diagnostic-settings.png":::
    Webpage of the Azure portal showing the Diagnostic setting configuration pane. The categories Kubernetes API Server, Kubernetes Controller Manager, and Kubernetes Scheduler are highlighted along with the destination details of Send to Log Analytics workspace, and the workspace name.
 :::image-end:::
 
-After this, you can query the logs in the Logs view:
+After, you can query the logs in the Logs view:
 
 :::image type="content" source="../media/6-container-logs-query.png" alt-text="Screenshot of the Azure portal showing the Logs pane. The query AzureDiagnostics | where Category == 'kube-scheduler' is highlighted." lightbox="../media/6-container-logs-query.png":::
 
 ## Windows Exporter on Azure Kubernetes Service
 
-Another option to monitor your Windows AKS nodes is by using the *windows-exporter*. This is the Windows variant of the Prometheus node-exporter. You can directly apply it in your cluster with a YAML specification. Take note that it will run as Host Process Container, the Windows variant of privileged containers, and because of that it can query host services, metrics, etc.
+Another option to monitor your Windows AKS nodes is by using the *windows-exporter*. It's the Windows variant of the Prometheus node-exporter. You can directly apply it in your cluster with a YAML specification. Take note that it runs as Host Process Container, the Windows variant of privileged containers, and because of that it can query host services, metrics, etc.
 
 Once you have Prometheus configured and windows-exporter enabled, the Windows node related data should be in your Azure Monitor Workspace. You can use a Grafana dashboard to see the relevant metrics you enabled for your Windows node:
 

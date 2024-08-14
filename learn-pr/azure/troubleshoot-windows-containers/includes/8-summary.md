@@ -1,6 +1,6 @@
-﻿Our goal was to help you gain an understanding of how to troubleshoot applications running on Windows containers. We looked at how the Windows containers platform works, and how it differs from Virtual Machines. You saw how native Windows tools can help in the troubleshooting process, as well as Docker and Kubernetes tools.
+﻿Our goal was to help you gain an understanding of how to troubleshoot applications running on Windows containers. We looked at how the Windows containers platform works, and how it differs from Virtual Machines. You saw how native Windows tools can help in the troubleshooting process, alongside Docker and Kubernetes tools.
 
-Finally, you saw how Azure provides services to help streamline the process of gathering and analyzing metrics, logs, and performance for Windows nodes on AKS. While this module provides the foundation for you to get started, there's more to learn. Check out the Learn more section to explore additional information.
+Finally, you saw how Azure provides services to help streamline the process of gathering and analyzing metrics, logs, and performance for Windows nodes on AKS. While this module provides the foundation for you to get started, there's more to learn. Explore additional information in the Learn more section.
 
 ## Learn more
 
