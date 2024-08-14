@@ -21,6 +21,6 @@ However, there are specific obstacles for the implementation of AI in finance. W
 
 > [!TIP]
 > Take a few minutes to consider what other goals or challenges are specific to your organization.
-> ![People working and talking around a table.](../media/2-reflection.jpg)
+> ![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let’s explore opportunities for AI in financial services.
