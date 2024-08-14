@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This unit contains a knowledge check which can help learners reinforce their understanding of the material.
-  author: sherzyang
-  ms.author: sheryang
-  ms.date: 07/10/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 08/06/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -18,32 +18,32 @@ quiz:
     choices:
     - content: "text-davinci-003"
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. Only the gpt-3.5-turbo and later models can be used to access the chat capabilities."
     - content: "gpt-35-turbo"
       isCorrect: true
-      explanation: ""
+      explanation: "Correct. Only the gpt-3.5-turbo and later models can be used to access the chat capabilities."
     - content: "text-embedding-ada-002 (Version 2)"
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. Only the gpt-3.5-turbo and later models can be used to access the chat capabilities."
   - content: "Which parameter could you adjust to change the randomness or creativeness of the completions returned?"
     choices:
     - content: "Temperature"
       isCorrect: true
-      explanation: ""
+      explanation: "Correct. The temperature parameter can be adjusted to change the randomness or creativeness of the completions returned."
     - content: "Frequency penalty"
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. Use the temperature parameter to change the randomness or creativeness of the completions returned."
     - content: "Stop sequence"
       isCorrect: false
-      explanation: ""
-  - content: "Which Azure OpenAI Studio playground is able to support conversation-in, message-out scenarios?"
+      explanation: "Incorrect. Use the temperature parameter to change the randomness or creativeness of the completions returned."
+  - content: "Which Azure AI Studio playground is able to support conversation-in, message-out scenarios?"
     choices:
-    - content: "Completions"
+    - content: "Images"
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. The Chat playground is able to support conversation-in, message-out scenarios."
     - content: "Chat"
       isCorrect: true
-      explanation: ""
+      explanation: "Correct. The Chat playground is able to support conversation-in, message-out scenarios."
     - content: "Bot"
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. The Chat playground is able to support conversation-in, message-out scenarios."

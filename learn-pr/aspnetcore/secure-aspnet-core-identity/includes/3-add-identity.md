@@ -2,13 +2,13 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
 
 ## Open the starter project
 
-**To use the recommended GitHub Codespace**, navigate to [your codespaces for the MicrosoftDocs/mslearn-secure-aspnet-core-identity](https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity/codespaces) repository. Create a new codespace using the `main` branch, and then skip to [Explore the app](#explore-the-app).
+**To use the recommended GitHub Codespace**, navigate to [your Codespaces for the MicrosoftDocs/mslearn-secure-aspnet-core-identity](https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity/codespaces) repository. Create a new Codespace using the `main` branch, and then skip to [Explore the app](#explore-the-app).
 
 **To use a local Dev Container**, follow these steps:
 
-1. In a Visual Studio Code window, press <kbd>F1</kbd> key to open the command palette. Search for and select **Remote-Containers: Clone Repository in Container Volume...**.
+1. In a Visual Studio Code window, press <kbd>F1</kbd> key to open the command palette. Search for and select **Dev-Containers: Clone Repository in Container Volume...**.
 
-1. Enter the following repository URL: `https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity` Visual Studio code will create the Dev Container. Accept any prompts to install recommended extensions.
+1. Enter the following repository URL: `https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity`. Select the `main` branch. Visual Studio Code creates the Dev Container. Accept any prompts to install recommended extensions.
 
 1. Skip to [Explore the app](#explore-the-app).
 
@@ -27,7 +27,7 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
     code .
     ```
 
-    Visual Studio Code opens. Accept any prompts to install recommended extensions, but **DO NOT** select **Reopen in Container** if prompted. Continue with the next steps below.
+    Visual Studio Code opens. Accept any prompts to install recommended extensions, but **DO NOT** select **Reopen in Container** if prompted. Continue with the next steps.
 
 ## Explore the app
 
@@ -66,7 +66,7 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
 
     Notice that you aren't required to authenticate.
 
-1. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal pane to stop the app.
+1. To stop the app, press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal pane.
 
 ## Add ASP.NET Core Identity to the project
 
@@ -114,7 +114,7 @@ The default Identity implementation can be added with `dotnet` command-line tool
     * The generator identified as `identity` is used to add the Identity framework to the project.
     * The `--useDefaultUI` option indicates that a Razor class library (RCL) containing the default UI elements is used. Bootstrap is used to style the components.
     * The `--dbContext` option specifies the name of an EF Core database context class to generate.
-    * The `--userClass` option specifies the name of the user class to generate. The default user class is `IdentityUser`, but since the user class will be extended in a later unit, a custom user class named `RazorPagesPizzaUser` is specified. The `RazorPagesPizzaUser` class is derived from `IdentityUser`.
+    * The `--userClass` option specifies the name of the user class to generate. The default user class is `IdentityUser`, but since the user class is extended in a later unit, a custom user class named `RazorPagesPizzaUser` is specified. The `RazorPagesPizzaUser` class is derived from `IdentityUser`.
 
     The following *:::no-loc text="Areas":::* directory structure appears in the *RazorPagesPizza* directory:
 
@@ -144,7 +144,6 @@ The default Identity implementation can be added with `dotnet` command-line tool
         * `.AddDefaultIdentity<IdentityUser>` tells the Identity services to use the default user model.
         * The lambda expression `options => options.SignIn.RequireConfirmedAccount = true` specifies that users must confirm their email accounts.
         * `.AddEntityFrameworkStores<RazorPagesPizzaAuth>()` specifies that Identity uses the default Entity Framework Core store for its database. The `RazorPagesPizzaAuth` `DbContext` class is used.
-    * `app.UseAuthentication();` enables authentication capabilities. More specifically, an instance of the ASP.NET Core authentication middleware is added to the app's HTTP request-handling pipeline.
 
 ## Configure the database connection
 
@@ -170,7 +169,7 @@ This updates the connection string to connect to the instance of SQL Server insi
 
 ## Update the database
 
-Now that you've verified the connection string, you can generate and run a migration to build the database.
+Now that you verified the connection string, you can generate and run a migration to build the database.
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 1. Install the Entity Framework Core migration tool:
@@ -185,7 +184,7 @@ Now that you've verified the connection string, you can generate and run a migra
     * Executes migrations against an existing database.
     * Is invoked via `dotnet ef` in this module.
 
-1. Create and run an EF Core migration to update the database:
+1. To update the database, create and run an EF Core migration:
 
     ```dotnetcli
     dotnet ef migrations add CreateIdentitySchema
@@ -237,13 +236,13 @@ Navigate back to the **Explorer** pane. In *:::no-loc text="Pages/Shared/_Layout
 <partial name="_LoginPartial" />
 ```
 
-The preceding markup renders the `_LoginPartial` partial view within the header of any page that uses the default layout. `_LoginPartial` was added by the Identity scaffold. This partial view presents the user with **Login** and **Register** links if the user isn't signed in.
+The preceding markup renders the `_LoginPartial` partial view within the header of any page that uses the default layout. The Identity scaffold added `_LoginPartial`. This partial view presents the user with **Login** and **Register** links if the user isn't signed in.
 
 ## Test the Identity functionality
 
 That's everything required to add the default Identity implementation. It's time to test it!
 
-1. Make sure you've saved all your changes.
+1. Make sure you save all your changes.
 1. In the terminal pane, build the project and run the app:
 
     ```dotnetcli
@@ -253,14 +252,14 @@ That's everything required to add the default Identity implementation. It's time
 1. Navigate to the app in your browser as before.
 1. Select the **Register** link in the app's header. Complete the form to create a new account.
 
-    The **Register confirmation** page is displayed. Since the app hasn't yet been configured to send confirmation emails, the confirmation link is provided on this page.
+    The **Register confirmation** page is displayed. Since the app hasn't been configured to send confirmation emails, the confirmation link is provided on this page.
 
 1. Select the confirmation link. A confirmation message is displayed.
 1. Select the **Login** link in the app's header and sign in.
 
     After a successful sign in:
 
-    * You're redirected to the homepage.
+    * You get redirected to the homepage.
     * The app's header displays **Hello [email address]!** and a **Logout** link.
     * A cookie named *:::no-loc text=".AspNetCore.Identity.Application":::* is created. Identity preserves user sessions with cookie-based authentication.
 
@@ -268,7 +267,7 @@ That's everything required to add the default Identity implementation. It's time
 
     After successfully logging out, the *:::no-loc text=".AspNetCore.Identity.Application":::* cookie is deleted to terminate the user session.
 
-1. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal pane to stop the app.
+1. To stop the app, press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal pane.
 
 ## Summary
 

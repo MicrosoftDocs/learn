@@ -7,7 +7,7 @@ metadata:
   author: martinekuan
   ms.author: martinek
   ms.topic: module
-  ms.service: waf
+  ms.service: azure-waf
 title: Microsoft Azure Well-Architected Framework - Operational excellence
 summary: Learn how to design an Azure architecture that uses modern practices and gives you full visibility into what's happening in your environment.
 abstract:  | 

@@ -3,7 +3,7 @@ uid: learn.dotnet-files
 metadata:
   title: Work with files and directories in a .NET app
   description: Learn how to use .NET, C#, and System.IO to work with directories, paths, files, and the file system.
-  ms.date: 08/29/2023
+  ms.date: 07/29/2024
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl
@@ -16,7 +16,7 @@ metadata:
 title: Work with files and directories in a .NET app
 summary: Build an app that manipulates files and directories with C# and .NET.
 abstract: |
-  By the end of this module, you're able to:
+  By the end of this module, you'll be able to:
 
   - Work with directories.
   - Create and delete files.
@@ -25,7 +25,7 @@ abstract: |
   - Parse data in files.
 prerequisites: |
   - Experience writing C# at the beginner level
-  - Familiarity with basic programming constructs, such as loops and "if" statements
+  - Familiarity with basic programming constructs such as loops and "if" statements
   - Local installations of [.NET SDK](https://dotnet.microsoft.com/download)
   - [Visual Studio Code](https://code.visualstudio.com)
   - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
