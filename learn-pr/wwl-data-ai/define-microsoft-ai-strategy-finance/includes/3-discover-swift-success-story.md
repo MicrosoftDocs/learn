@@ -22,7 +22,7 @@ Following this philosophy, Swift developed a first anomaly detection model and s
 
 The key to this distributed architecture is ensuring data confidentiality. The solution uses **Azure Confidential Computing**, **Microsoft Purview**, and a zero-trust-based policy framework that ensures Azure Machine Learning can ingest the distributed datasets without copying or moving data from their secure locations.
 
-![A worker holding a package out to a customer.](../media/3-transaction.jpg)
+![Photograph showing a worker holding a package out to a customer.](../media/3-transaction.jpg)
 
 ## The results
 

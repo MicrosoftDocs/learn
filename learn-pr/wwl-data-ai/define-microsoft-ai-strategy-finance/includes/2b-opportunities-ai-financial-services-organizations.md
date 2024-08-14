@@ -10,7 +10,7 @@ These products embed powerful generative AI models that are skillful in text gen
 * **Financial product documentation**: Advisors often need quick answers to complex questions regarding these highly technical documents. These assistants help them retrieve this information fast.
 * **Communications**: Workers often complain of the time they lose in calls and other communications, especially when collaborating across departments. These solutions can help streamline these tasks by drafting emails, recommending best responses, summarizing meetings, scheduling follow-ups, and creating action plans.
 
-![Person working on a laptop.](../media/2b-copilot-user.jpg)
+![Photograph showing person working on a laptop.](../media/2b-copilot-user.jpg)
 
 ## Contextual interactions
 
@@ -20,7 +20,7 @@ These AI solutions enable customized interactions based on context and on busine
 * **Better virtual assistants**: Many products can help FSI professionals via conversational interfaces. For this purpose, you can use Azure OpenAI Services, Azure AI Services, Dynamics 365 Copilot, Power Virtual Agents, and Power Platform. The resulting virtual assistants provide a more fluid, natural service than earlier generations. You may build these solutions to answer complex questions you’re your customers about financial products and services.
 * **Onboarding and help desks for financial agents**: With Azure AI Services, and especially Azure OpenAI Services, you can offer your workers training on internal processes, regulatory standards, and financial products.
 
-![Person looking at a tablet.](../media/2b-interaction.jpg)
+![Photograph showing person looking at a tablet.](../media/2b-interaction.jpg)
 
 ## Amplified automation
 
@@ -30,7 +30,7 @@ Microsoft AI offers you the tools to automate tasks, so you can spend time on wh
 * **Anticipate customer behavior**: Azure Machine Learning, Power BI, and Azure OpenAI Services can do predictive analytics for you, that is, these solutions use past or current data to predict future trends in customer behavior.
 * **Generate full-circle financial reports**: Several Microsoft products, such as OpenAI Services, Microsoft Power BI, and Azure Synapse Analytics, enable you to automatically create these documents for your analysts. They can also analyze customer trends and draft risk assessments.  
 
-![A smiling person at a desk.](../media/2b-automation.jpg)
+![Photograph showing a smiling person at a desk.](../media/2b-automation.jpg)
 
 ## Intuitive discovery
 
@@ -42,12 +42,12 @@ These tools are also powerful for analytical tasks.
 * **Underwriting**: Azure OpenAI Services  can also summarize underwriting opportunities, help detect fraud, and predict default.
 * **Contact-center analytics**: You can boost your contact center with Azure AI Services and Microsoft Power BI. These products allow you to transcribe and analyze customer service interactions to identify areas for improvement and uncover emerging customer needs. You can improve your analysis with sentiment analysis, which helps gauging customer satisfaction, product perception, and market sentiments. Besides, these solutions can provide real-time coaching for contact-center staff. You can easily update the contact-center knowledge base by feeding new information to the AI, thus improving responses for customers.
 
-![A person looking at a tablet.](../media/2b-data.jpg)
+![Photograph showing a person looking at a tablet.](../media/2b-data.jpg)
 
 Consider that these products belong to a robust Microsoft ecosystem that ensures security and privacy. You can learn more about how to implement them in FSI by checking the [Microsoft Cloud for Financial Services](https://www.microsoft.com/industry/financial-services/microsoft-cloud-for-financial-services) and [Azure for Financial Services](https://azure.microsoft.com/solutions/industries/financial) websites.
 
 > [!TIP]
 > Take a moment to consider what opportunities you hope to realize with AI in your organization.
-> ![People working and talking around a table.](../media/2-reflection.jpg)
+> ![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let’s explore a real success story in banking: how Swift is using Microsoft AI to improve security in transactions.
