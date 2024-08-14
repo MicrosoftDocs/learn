@@ -4,7 +4,7 @@ metadata:
   title: 'Optimize your cost with Azure Blob Storage'
   description: Azure Blob Storage helps customers minimize their operational costs.
   manager: mkluck
-  ms.date: 11/07/2023
+  ms.date: 08/14/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module
@@ -12,7 +12,7 @@ metadata:
 title: 'Optimize your cost with Azure Blob Storage'
 summary: In this module, you'll learn how to optimize your cost with Azure Blob Storage.
 abstract:  | 
-  After completing this module, you'll be able to:
+  After completing this module, you can:
   - Evaluate the cost of Azure Blob Storage.
   - Minimize the cost of Azure Blob Storage.
   
