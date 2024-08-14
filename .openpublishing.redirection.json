@@ -31548,6 +31548,11 @@
       "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-sustainability/3-discover-ai-sustainability.md",
       "redirect_url": "/training/modules/define-microsoft-ai-strategy-sustainability/",
       "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-finance/2-discover-ai-finance.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-finance/",
+      "redirect_document_id": false
     }
   ]
 }
