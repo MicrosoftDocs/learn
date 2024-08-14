@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/03-prepare-data.md)]
+  [!include[](includes/3-prepare-data.md)]

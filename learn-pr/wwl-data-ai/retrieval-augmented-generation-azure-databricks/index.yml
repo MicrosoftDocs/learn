@@ -1,39 +1,37 @@
 ### YamlMime:Module
 uid: learn.wwl.retrieval-augmented-generation-azure-databricks
 metadata:
-  title: Use AutoML in Azure Databricks
-  description: Learn how to use AutoML to train optimal machine learning models for your data in Azure Databricks
+  title: Improve model accuracy with Retrieval Augmented Generation (RAG) in Azure Databricks
+  description: Improve model accuracy with Retrieval Augmented Generation (RAG) in Azure Databricks
+  ms.date: 08/12/2024
   author: wwlpublish
-  ms.author: gmalc
-  ms.date: 08/29/2023
-  ms.service: azure-databricks
-  ms.topic: module-standard-task-based
-  ms.collection:
-    - wwl-ai-copilot
-title: Use AutoML in Azure Databricks
-summary: AutoML in Azure Databricks simplifies the process of building an effective machine learning model for your data.
+  ms.author: madiepev
+  ms.topic: module
+  ms.service: azure
+title: Improve model accuracy with Retrieval Augmented Generation (RAG) in Azure Databricks
+summary: Retrieval Augmented Generation (RAG) is an advanced technique in natural language processing that enhances the capabilities of generative models by integrating external information retrieval mechanisms. When you use both generative models and retrieval systems, RAG dynamically fetches relevant information from external data sources to augment the generation process, leading to more accurate and contextually relevant outputs. 
 abstract: |
-  In this module, you'll learn how to:
-  - Use the AutoML user interface in Azure Databricks
-  - Use the AutoML API in Azure Databricks
+  In this module, you learn how to:
+  - Set up a RAG workflow.
+  - Prepare your data for RAG.
+  - Retrieve relevant documents with vector search.
+  - Improve model accuracy by reranking your search results.
 prerequisites: |
-  Before starting this module, you should be familiar with machine learning in Azure Databricks.
-iconUrl: /training/achievements/retrieval-augmented-generation-azure-databricks.svg
+  Before starting this module, you should be familiar with Azure Databricks. Consider completing [Explore Azure Databricks](/training/modules/explore-azure-databricks?azure-portal=true) before starting this module.
+iconUrl: /learn/achievements/describe-azure-databricks.svg
 levels:
 - intermediate
 roles:
-- data-scientist
+- data-engineer
 products:
 - azure-databricks
-subjects:
-- data-management
-- machine-learning
 units:
 - learn.wwl.retrieval-augmented-generation-azure-databricks.introduction
-- learn.wwl.retrieval-augmented-generation-azure-databricks.what-automl
-- learn.wwl.retrieval-augmented-generation-azure-databricks.automl-user-interface
-- learn.wwl.retrieval-augmented-generation-azure-databricks.automl-code
-- learn.wwl.retrieval-augmented-generation-azure-databricks.exercise-automl
+- learn.wwl.retrieval-augmented-generation-azure-databricks.rag-workflow
+- learn.wwl.retrieval-augmented-generation-azure-databricks.prepare-data
+- learn.wwl.retrieval-augmented-generation-azure-databricks.vector-search
+- learn.wwl.retrieval-augmented-generation-azure-databricks.ranking
+- learn.wwl.retrieval-augmented-generation-azure-databricks.exercise
 - learn.wwl.retrieval-augmented-generation-azure-databricks.knowledge-check
 - learn.wwl.retrieval-augmented-generation-azure-databricks.summary
 badge:

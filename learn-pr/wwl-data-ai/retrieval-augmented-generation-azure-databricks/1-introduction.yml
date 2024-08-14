@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/01-introduction.md)]
+  [!include[](includes/1-introduction.md)]

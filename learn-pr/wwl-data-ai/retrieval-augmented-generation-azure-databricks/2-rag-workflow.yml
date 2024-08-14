@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/02-rag-workflow.md)]
+  [!include[](includes/2-rag-workflow.md)]
