@@ -30,7 +30,7 @@ Microsoft AI offers you the tools to automate tasks, so you can spend time on wh
 * **Anticipate customer behavior**: Azure Machine Learning, Power BI, and Azure OpenAI Services can do predictive analytics for you, that is, these solutions use past or current data to predict future trends in customer behavior.
 * **Generate full-circle financial reports**: Several Microsoft products, such as OpenAI Services, Microsoft Power BI, and Azure Synapse Analytics, enable you to automatically create these documents for your analysts. They can also analyze customer trends and draft risk assessments.  
 
-![Image showing a smiling person at a desk.](../media/2b-automation.jpg)
+![A smiling person at a desk.](../media/2b-automation.jpg)
 
 ## Intuitive discovery
 
