@@ -11,7 +11,7 @@ When retail organizations implement AI solutions, they usually pursue these busi
 * **Empower and serve digital natives**: Audiences are changing, partly because younger generations buy differently and have different expectations when shopping. Incorporating AI into the experience can help attract and retain these customers.
 * **Facilitate returns**: Order returns are an inevitable part of the online shopping experience. However, their logistics are often challenging as you need to reverse the order’s last mile. AI systems enable you to track these orders.
 
-![A customer paying wit a credit card.](../media/2-checkout.jpg)
+![Photograph showing customer paying wit a credit card.](../media/2-checkout.jpg)
 
 ## Challenge
 
@@ -21,6 +21,6 @@ However, cross-channel purchases like ordering online for in-store pickup are ex
 
 > [!TIP]
 > Take a moment to consider other goals and challenges specific to your organization.
-> ![People working and talking around a table.](../media/2-reflection.jpg)
+> ![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let’s explore common scenarios in which AI can help you attain these goals.

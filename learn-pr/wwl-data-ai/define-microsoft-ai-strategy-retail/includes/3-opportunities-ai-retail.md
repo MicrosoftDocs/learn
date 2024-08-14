@@ -2,7 +2,7 @@ Retail business is complex. It involves many different professional profiles, ta
 
 ## Productivity
 
-![A person standing with a tablet.](../media/3-point-of-sale.jpg)
+![Photograph showing person standing with a tablet.](../media/3-point-of-sale.jpg)
 
 Boosting productivity is one of the major priorities of today’s organizations. Products such as Microsoft 365 Copilot and Microsoft Power BI include features to make you more productive.
 
@@ -13,7 +13,7 @@ Boosting productivity is one of the major priorities of today’s organizations.
 
 ## Contextual interactions
 
-![A person shopping on a tablet holding a credit card.](../media/3-online-shopper.jpg)
+![Photograph showing person shopping on a tablet holding a credit card.](../media/3-online-shopper.jpg)
 
 Current shopping experiences generate great amounts of data. AI solutions allow customers and retail professionals to interact with a conversational interface to get more insights out of this data.
 
@@ -24,7 +24,7 @@ Current shopping experiences generate great amounts of data. AI solutions allow 
 
 ## Amplified automation
 
-![A worker holding a tablet in a grocery store.](../media/3-grocery-store.jpg)
+![Photograph showing worker holding a tablet in a grocery store.](../media/3-grocery-store.jpg)
 
 A typical AI strategy to improve productivity is automation, which can be useful in many retail jobs.
 
@@ -34,7 +34,7 @@ A typical AI strategy to improve productivity is automation, which can be useful
 
 ## Intuitive discovery
 
-![A person at a desk in a video call while reviewing reports.](../media/3-store-reports.jpg)
+![Photograph showing person at a desk in a video call while reviewing reports.](../media/3-store-reports.jpg)
 
 There are other ways in which AI enables retail organizations to get more insight from already available information. This task is vital in post-sales to fully understand successful and unsuccessful customer experiences.
 
@@ -44,6 +44,6 @@ There are other ways in which AI enables retail organizations to get more insigh
 
 > [!TIP]
 > Think about what other opportunities you hope to realize with AI in your organization.
-> ![People working and talking around a table.](../media/2-reflection.jpg)
+> ![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Now, let’s see how real companies are implementing these scenarios. The next unit explores initiatives to improve customer experience in physical grocery stores.
