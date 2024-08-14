@@ -1,12 +1,11 @@
-This module has provided the framework for a full adoption of AI in your organization. Everyone in an organization has a role to play to achieve this transformation. At the highest levels, leaders need to prioritize AI use cases strategically and create environments and structures where innovative ideas can flourish. Those ideas come to life and succeed long-term thanks to collaboration across lines of business and technical teams. Finally, business users and subject matter experts can use AI themselves thanks to prebuilt models embedded in everyday applications and AI for reasoning.
+This module described the framework for a full adoption of AI in your organization. Everyone in an organization has a role to play to achieve this transformation. At the highest levels, leaders need to prioritize AI use cases strategically and create environments and structures where innovative ideas can flourish. Those ideas come to life and succeed long-term thanks to collaboration across lines of business and technical teams. Finally, business users and subject matter experts can use AI themselves thanks to prebuilt models embedded in everyday applications and AI for reasoning.
 
+After this module, you should be able to:
 
-
-Now that you have reviewed this module, you should be able to:
-
-* Plan AI projects and investments.
-* Organize your staff for AI responsibilities.
-* Identify how no-code AI tools can help business users and subject matter experts.
+* Plan and prioritize AI projects and investments​
+* Establish organizational roles and responsibilities for AI​
+* Use AI to empower business users across the enterprise​
+* Enable domain experts in your business to expand their impact through AI
 
 ## Use these resources to discover more
 

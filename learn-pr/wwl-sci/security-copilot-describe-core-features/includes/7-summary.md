@@ -11,7 +11,8 @@ Now that you completed this module, you can:
 #### Learn more
 
 - [Microsoft Copilot for Security experiences](/security-copilot/experiences-security-copilot)
-- [Plugins overview Microsoft Copilot for Security](/security-copilot/plugin_overview)
+- [Plugins overview Microsoft Copilot for Security](/copilot/security/plugin-overview)
+- [Create your own custom plugins](/copilot/security/custom-plugins)
 - [Defender EASM Overview](/azure/external-attack-surface-management/)
 - [Microsoft Copilot for Security and Defender EASM](/azure/external-attack-surface-management/easm-copilot)
 - [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)

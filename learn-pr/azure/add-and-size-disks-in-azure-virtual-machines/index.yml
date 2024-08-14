@@ -8,7 +8,7 @@ metadata:
   author: roygara
   ms.author: rogarana
   ms.topic: module
-  ms.service: virtual-machines
+  ms.service: azure-virtual-machines
 title: Add and size disks in Azure virtual machines
 summary: Understand and create the different types of disk storage available to Azure virtual machines (VMs).
 abstract: |

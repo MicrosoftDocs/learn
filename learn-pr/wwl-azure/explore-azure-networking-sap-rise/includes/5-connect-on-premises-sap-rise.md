@@ -13,7 +13,7 @@ With this architecture, central policies and security rules governing network co
 If there's currently no Azure to on-premises connectivity, contact your SAP representative for details of which connections models are possible for the RISE workload. If SAP RISE/ECS establishes on-premises connection within RISE directly, such on-premises connections are available only for reaching the SAP managed virtual network. Such dedicated ExpressRoute or VPN connection within SAP RISE can't be used to access the customer's own Azure virtual networks.
 
 > [!NOTE]
-> A virtual network can [only have one gateway](/azure/virtual-network/virtual-network-peering-overview.#gateways-and-on-premises-connectivity), local or remote. With virtual network peering established between SAP RISE using remote gateway transit, no gateways can be added in the SAP RISE/ECS virtual network. It isn't possible to combine virtual network peering with remote gateway transit together with another virtual network gateway in the SAP RISE/ECS virtual network.
+> A virtual network can [only have one gateway](/azure/virtual-network/virtual-network-peering-overview#gateways-and-on-premises-connectivity), local or remote. With virtual network peering established between SAP RISE using remote gateway transit, no gateways can be added in the SAP RISE/ECS virtual network. It isn't possible to combine virtual network peering with remote gateway transit together with another virtual network gateway in the SAP RISE/ECS virtual network.
 
 ## Azure Virtual WAN with SAP RISE managed workloads
 
