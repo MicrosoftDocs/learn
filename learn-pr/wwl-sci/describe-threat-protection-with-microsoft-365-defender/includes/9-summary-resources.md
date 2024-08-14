@@ -20,5 +20,7 @@ To find out more about any of the topics covered in this module, visit these lin
 - [What is Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management)
 - [Microsoft Defender Threat Intelligence in Microsoft Defender XDR](/microsoft-365/security/defender/defender-threat-intelligence)
 - [What is Microsoft Defender Threat Intelligence (Defender TI)?](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti)
+- [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)
+- [Describe security capabilities of Microsoft Sentinel](/training/modules/describe-security-capabilities-of-azure-sentinel/)
 - [Overview of the Microsoft Defender portal](/microsoft-365/security/mtp/overview-security-center)
 

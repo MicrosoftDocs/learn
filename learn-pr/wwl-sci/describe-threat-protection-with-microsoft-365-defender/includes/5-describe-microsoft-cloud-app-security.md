@@ -2,7 +2,7 @@ Software as a service (SaaS) apps are ubiquitous across hybrid work environments
 
 Microsoft Defender for Cloud Apps delivers full protection for SaaS applications, helping you monitor and protect your cloud app data across the following feature areas:
 
-- Fundamental cloud access security broker (CASB) functionality.  A CASB acts as a gatekeeper to broker real-time access between your enterprise users and the cloud resources they use. CASBs help organizations protect their environment by providing a wide range of capabilities across key functional areas including: discovery into cloud app usage and shadow IT, protection against app-based threats from anywhere in the cloud, information protection, and compliance.
+- Fundamental cloud access security broker (CASB) functionality. A CASB acts as a gatekeeper to broker real-time access between your enterprise users and the cloud resources they use. CASBs help organizations protect their environment by providing a wide range of capabilities across key functional areas including: discovery into cloud app usage and shadow IT, protection against app-based threats from anywhere in the cloud, information protection, and compliance.
 
 - SaaS Security Posture Management (SSPM) features, enabling security teams to improve the organization’s security posture
 
@@ -10,7 +10,7 @@ Microsoft Defender for Cloud Apps delivers full protection for SaaS applications
 
 - App-to-app protection, extending the core threat scenarios to OAuth-enabled apps that have permissions and privileges to critical data and resources.
 
-### Discover SaaS applications
+#### Discover SaaS applications
 
 Defender for Cloud Apps shows the full picture of risks to your environment from SaaS app usage and resources, and gives you control of what’s being used and when.
 
@@ -20,7 +20,7 @@ Defender for Cloud Apps shows the full picture of risks to your environment from
 
 - Manage: Set policies that monitor apps around the clock. For example, if anomalous behavior happens, like unusual spikes in usage, you're automatically alerted and guided to action.
 
-### Information protection
+#### Information protection
 
 Defender for Cloud Apps connects to SaaS apps to scan for files containing sensitive data uncovering which data is stored where and who is accessing it. To protect this data, organizations can implement controls such as:
 
@@ -30,23 +30,45 @@ Defender for Cloud Apps connects to SaaS apps to scan for files containing sensi
 
 The Defender for Cloud Apps integration with Microsoft Purview also enables security teams to leverage out-of-the-box data classification types in their information protection policies and control sensitive information with data loss protection (DLP) features.
 
-### SaaS Security Posture Management (SSPM)
+#### SaaS Security Posture Management (SSPM)
 
 Optimizing an organization's security posture is important, but security teams are challenged by needing to research best practices for each app individually. Defender for Cloud Apps helps by surfacing misconfigurations and recommending specific actions to strengthen the security posture for each connected app. Recommendations are based on industry standards like the Center for Internet Security and follow best practices set by the specific app provider.
 
 Defender for Cloud Apps automatically provides SSPM data in Microsoft Secure Score, for any supported and connected app.
 
-### Advanced threat protection
+#### Advanced threat protection
 
-Cloud apps continue to be a target for adversaries trying to exfiltrate corporate data. Sophisticated attacks often cross modalities. Attacks often start from email as the most common entry point. then move laterally to compromise endpoints and identities, before ultimately gaining access to in-app data.
+Cloud apps continue to be a target for adversaries trying to exfiltrate corporate data. Sophisticated attacks often cross modalities. Attacks often start from email as the most common entry point then move laterally to compromise endpoints and identities, before ultimately gaining access to in-app data.
 
 Defender for Cloud Apps offers built-in adaptive access control (AAC), provides user and entity behavior analysis (UEBA), and helps you mitigate these types of attacks.
 
 Defender for Cloud Apps is also integrated directly into Microsoft Defender XDR, correlating eXtended detection and response (XDR) signals from the Microsoft Defender suite and providing incident-level detection, investigation, and powerful response capabilities. Integrating SaaS security into Microsoft's XDR experience gives SOC teams full kill chain visibility and improves operational efficiency and effectivity.
 
-### App to app protection with app governance
+#### App to app protection with app governance
  OAuth, an open standard for token-based authentication and authorization, enables a user's account information to be used by third-party services, without exposing the user's password. Apps that use OAuth often have extensive permissions to access data in other apps on behalf of a user, making OAuth apps susceptible to a compromise.
 
 Defender for Cloud Apps closes the gap on OAuth app security, helping you protect inter-app data exchange with application governance. With Defender for Cloud Apps, you can watch for unused apps and monitor both current and expired credentials to govern the apps used in your organization and maintain app hygiene.
 
-:::image type="content" source="../media/microsoft-cloud-app-security-v2-inline.png" lightbox="../media/microsoft-cloud-app-security-v2-expanded.png" alt-text="Screenshot of Microsoft Defender for Cloud Apps dashboard.":::
+### Microsoft Defender for Cloud Apps in the Microsoft Defender portal
+
+Microsoft Defender for Cloud Apps is experienced through the Microsoft Defender portal. The Defender portal is the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure, allowing security admins to perform their security tasks, in one location.
+
+Microsoft Defender for Cloud apps functionality can be found under the Cloud apps node on the left navigation panel of the Microsoft Defender portal. The list that follows is a subset of the functionality supported.
+
+- Cloud discovery - Identify cloud app usage in your environment.
+- Cloud app catalog - Reference information about known cloud apps.
+- App governance - Get in-depth visibility and control over OAuth apps integrated with Microsoft Entra ID, Google, and Salesforce.
+- Activity log - View all activities involving connected apps.
+- Governance log - Review actions taken to secure cloud apps.
+- Policies - Configure security policies for cloud apps.
+
+[Cloud discovery](#tab/cloud-discovery)
+:::image type="content" source="../media/cloud-discovery.png" lightbox="../media/cloud-discovery.png" alt-text="A screenshot of the cloud discovery page in the Microsoft Defender portal.":::
+
+[Cloud app catalog](#tab/cloud-app-catalog)
+:::image type="content" source="../media/cloud-app-catalog.png" lightbox="../media/cloud-app-catalog.png" alt-text="A screenshot of the cloud app catalog page in the Microsoft Defender portal.":::
+
+[App governance](#tab/app-governance)
+:::image type="content" source="../media/app-governance.png" lightbox="../media/app-governance.png" alt-text="A screenshot of app governance page in the Microsoft Defender portal.":::
+
+Settings, permissions, incidents and alerts, reports and other features associated with Microsoft Defender workloads, including Defender for Cloud Apps are also available through the Microsoft Defender portal. For more information, refer to the unit, "Describe the Microsoft Defender portal" for more information.
