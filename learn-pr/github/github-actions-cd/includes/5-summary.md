@@ -22,7 +22,7 @@ Here are some links to more information on the topics discussed in this module.
 - [actions/checkout@v1](https://github.com/actions/checkout?azure-portal=true)
 - [actions/upload-artifact](https://github.com/actions/upload-artifact?azure-portal=true)
 - [actions/download-artifact](https://github.com/actions/download-artifact?azure-portal=true)
-- [azure/webapps-container-deploy@v1](https://github.com/Azure/webapps-container-deploy?azure-portal=true)
+- [azure/webapps-deploy@v1](https://github.com/Azure/webapps-deploy?azure-portal=true)
 - [azure/login@v1](https://github.com/Azure/login?azure-portal=true)
 - [azure/docker-login@v1](https://github.com/Azure/docker-login?azure-portal=true)
 - [Artifact and log retention policy](https://docs.github.com/actions/reference/usage-limits-billing-and-administration#artifact-and-log-retention-policy)
