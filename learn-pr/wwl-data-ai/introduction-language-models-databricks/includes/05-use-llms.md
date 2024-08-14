@@ -25,7 +25,7 @@ LLMs, with their advanced understanding of context and language, excel in abstra
 
 You can use summarization in various applications, like generating news briefs, summarizing research papers, and creating concise reports.
 
-:::image type="content" source="../media/03-summarization.png" alt-text="Illustration of a CNN article that is summarized for a phone feed.":::
+:::image type="content" source="../media/03-summarization.png" alt-text="Illustration of a news article that is summarized for a phone feed." lightbox="../media/03-summarization.png":::
 
 ## Perform sentiment analysis
 
