@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-application-resiliency-azure.deploy-using-a-reliable-process
+title: Deploy using a reliable process
+metadata:
+  title: Deploy using a reliable process
+  description: TBD
+  ms.date: 08/14/2024
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-deploy-using-a-reliable-process.md)]

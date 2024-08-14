@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-application-resiliency-azure.monitor-application-to-detect-failures
+title: Monitor application to detect failures
+metadata:
+  title: Monitor application to detect failures
+  description: TBD
+  ms.date: 08/14/2024
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-monitor-application-to-detect-failures.md)]
