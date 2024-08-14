@@ -24,7 +24,7 @@ For Azure Stack HCI tenants, Datacenter Firewall provides network level protecti
 
 ## Datacenter Firewall functionality
 
-Datacenter Firewall is a network-layer, stateful, multitenant firewall that supports filtering by any combination of five parameters: source and destination port numbers, source and destination IP addresses, and a protocol. Datacenter Firewall is implemented as a distributed firewall, with policies that you can apply at the VM network interface, logical network subnet, or virtual network subnet level.
+Datacenter Firewall is a network-layer, stateful, multitenant firewall that supports filtering by any combination of five parameters: source and destination port numbers, source and destination IP addresses, and a protocol. Datacenter Firewall is implemented as a distributed firewall, with policies that you can apply at the virtual machine (VM) network interface, logical network subnet, or virtual network subnet level.
 
 You can restrict traffic between virtualized workloads in both external and internal networks. Network Controller applies the firewall policies to the virtual switch ports of Azure Stack HCI cluster nodes that function as Hyper-V hosts. These policies support Azure Stack HCI workloads that are connected to VLAN-based networks.
 
