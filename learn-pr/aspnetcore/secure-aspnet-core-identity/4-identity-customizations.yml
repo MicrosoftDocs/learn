@@ -4,7 +4,7 @@ title: Identity customizations
 metadata:
   title: Identity customizations
   description: Learn about extending ASP.NET Core Identity with custom functionality.
-  ms.date: 05/19/2023
+  ms.date: 08/07/2024
   author: camsoper
   ms.author: casoper
   ms.manager: markl
