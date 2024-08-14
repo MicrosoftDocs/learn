@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
-  ms.service: app-service
+  ms.service: azure-app-service
   ai-usage: ai-assisted
 title: Configure Azure App Service
 summary: |
