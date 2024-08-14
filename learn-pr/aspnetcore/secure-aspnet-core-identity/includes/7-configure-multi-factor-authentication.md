@@ -79,17 +79,17 @@ Now that you can generate QR codes, you can embed a QR code into the **Configure
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml":::*, make the following highlighted changes and save:
 
-    [!code-cshtml[](../code/areas/identity/pages/account/manage/enableauthenticator.cshtml?highlight=3-5)]
+    [!code-cshtml[](../code/areas/identity/pages/account/manage/enableauthenticator.cshtml?highlight=4-6)]
 
     The preceding markup embeds the base-64 encoded image in the page.
 
 ## Test multifactor authentication
 
-You've made all the changes needed for a QR code on the **Configure authenticator app** form. Now you can easily test the MFA functionality.
+You made all the changes needed for a QR code on the **Configure authenticator app** form. Now you can easily test the MFA functionality.
 
-1. Ensure that you've saved all your changes.
+1. Ensure you saved all your changes.
 1. Build and run the app with `dotnet run`.
-1. Navigate to the site and sign in with either registered user, if you're not already signed in. Select **Hello, [First name] [Last name]!** link to navigate to the profile management page, and then select **Two-factor authentication**.
+1. Navigate to the site and sign in with either registered user, if you aren't already signed in. Select **Hello, [First name] [Last name]!** link to navigate to the profile management page, and then select **Two-factor authentication**.
 1. Select the **Add authenticator app** button.
 1. Follow the on-screen instructions to register and verify your authenticator app for this user.
 
@@ -113,13 +113,13 @@ You've made all the changes needed for a QR code on the **Configure authenticato
     FROM dbo.AspNetUsers
     ```
 
-    For the signed in user, the output shows that the `TwoFactorEnabled` column is equal to `1`. Because multifactor authentication hasn't been enabled for the other registered user, the record's column value is `0`.
+    For the signed in user, the output shows that the `TwoFactorEnabled` column is equal to `1`. Because multifactor authentication isn't enabled for the other registered user, the record's column value is `0`.
 
 1. In the web app, select **Logout**, and then sign in again with the same user.
 1. Enter the verification code from the TOTP authenticator app in the **Authenticator code** text box. Select the **Log in** button.
 1. Select **Hello, [First name] [Last name]!**. Then, select the **Two-factor authentication** tab.
 
-    Because Microsoft Authenticator has been set up, the following buttons appear:
+    Because Microsoft Authenticator is set up, the following buttons appear:
 
     * **Disable 2FA**
     * **Reset recovery codes**
