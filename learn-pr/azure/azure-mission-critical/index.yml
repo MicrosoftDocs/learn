@@ -8,7 +8,7 @@ metadata:
   ms.author: prwilk
   ms.topic: module
   ms.service: azure-waf
-  ms.subservice: Mission-critical
+  ms.subservice: waf-workload-mission-critical
 title: Challenge Project - Design a mission-critical web application
 summary: |
   You're given an example web workload architecture, its current state, tradeoffs, and business requirements for improvements. You want to make it highly available and resilient using Azure's capabilities. 

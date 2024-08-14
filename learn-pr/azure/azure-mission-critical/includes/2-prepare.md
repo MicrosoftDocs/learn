@@ -32,7 +32,7 @@ All of this architecture's components are deployed to a single region.
 
 - [Azure Application Insights](/azure/azure-monitor/) is used for capturing telemetry and logs from the API. Application Insights uses the self-contained mode, not writing to a dedicated log analytics workspace. Production and dev/test don't share a common instance.
 
-- [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) is used for CI/CD that builds, tests, and deploys the workload in preproduction and production environments. The workload team manages the pipelines, which also manages all of the infrastructure in their solution. Bicep is the choice of technology for Infrastructure-as-Code (IaC).
+- [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) is used for CI/CD that builds, tests, and deploys the workload in preproduction and production environments. The workload team manages the pipelines, which also manage all of the infrastructure in their solution. Bicep is the choice of technology for Infrastructure-as-Code (IaC).
 
 ### Design choices
 
