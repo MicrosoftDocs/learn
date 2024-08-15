@@ -25,7 +25,7 @@ With Security Exposure Management you can discover and monitor assets, get rich 
 :::image type="content" source="../media/exposure-management.png" lightbox="../media/exposure-management.png" alt-text="A screenshot of the Exposure Management overview in the Microsoft Defender portal.":::
 
 # [Attack surface](#tab/attack-surface)
-:::image type="content" source="../media/attack-path.png" lightbox="../media/attack-path" alt-text="A screenshot of an attack path under Exposure Management.":::
+:::image type="content" source="../media/attack-path.png" lightbox="../media/attack-path.png" alt-text="A screenshot of an attack path under Exposure Management.":::
 
 # [Insights](#tab/insights)
 :::image type="content" source="../media/initiatives.png" lightbox="../media/initiatives.png" alt-text="A screenshot of the initiatives page in Exposure Management.":::
@@ -78,7 +78,7 @@ Within an incident, you analyze the alerts that affect your network, understand 
 - All the supported evidence and response.
 
 # [Incidents](#tab/incidents)
-:::image type="content" source="../media/incidents.png" lightbox="../media/incidents.0png" alt-text="A screenshot of the Microsoft Defender portal incidents page.":::
+:::image type="content" source="../media/incidents.png" lightbox="../media/incidents.png" alt-text="A screenshot of the Microsoft Defender portal incidents page.":::
 
 # [Incident details page](#tab/incident-details)
 :::image type="content" source="../media/incident-details.png" lightbox="../media/incident-details.png" alt-text="A screenshot of the incident details page for a selected incident in the Microsoft Defender portal.":::
@@ -114,7 +114,7 @@ The Device inventory shows a list of the devices in your network where alerts we
 The identity inventory provides a comprehensive view of all corporate identities, both cloud and on-premises.
 
 # [Devices](#tab/devices)
-:::image type="content" source="../media/assets-devices.png" lightbox="../media/assets-inventory.png" alt-text="A screenshot of the device inventory page in the Microsoft Defender portal.":::
+:::image type="content" source="../media/assets-devices.png" lightbox="../media/assets-devices.png" alt-text="A screenshot of the device inventory page in the Microsoft Defender portal.":::
 
 # [Identities](#tab/identities)
 :::image type="content" source="../media/assets-identities.png" lightbox="../media/assets-identities.png" alt-text="A screenshot of the identities inventory page in the Microsoft Defender portal.":::
@@ -125,7 +125,7 @@ Some Microsoft Sentinel capabilities, like the unified incident queue, are integ
 
 For more information, see the module "Describe the capabilities in Microsoft Sentinel," whose link is included in the summary and resources unit.
 
-:::image type="content" source="../media/sentinel-node.png" lightbox="../media/sentinel-node.png" alt-text="A screenshot of the Microsoft Sentinel node on the left navigation panel of the Microsoft Defender portal.":::
+:::image type="content" source="../media/sentinel-node.png" lightbox="../media/sentinel-node.png" alt-text="A screenshot of the Microsoft Sentinel node on the navigation panel of the Microsoft Defender portal.":::
 
 ### Identities
 
@@ -143,13 +143,13 @@ The Endpoints node on the left navigation panel of the Microsoft Defender portal
 
 The email and collaboration node on the left navigational panel is where you find Microsoft Defender for Office 365 functionality that allows you to track and investigate threats to your users' email, track campaigns, and more. For more information, see the unit "Describe Microsoft Defender for Office 365."
 
-:::image type="content" source="../media/email-collaboration.png" lightbox="../media/email-collaboration.png" alt-text="A screenshot of the incident details page for a selected incident in the Microsoft Defender portal.":::
+:::image type="content" source="../media/email-collaboration.png" lightbox="../media/email-collaboration.png" alt-text="A screenshot of the email and collaboration node on the navigation panel of the Microsoft Defender portal.":::
 
 ### Cloud apps
 
 The Cloud apps node on the left navigational panel is where you find Microsoft Defender for Cloud Apps functionality. For more information, see the unit "Describe Microsoft Defender for Cloud Apps."
 
-:::image type="content" source="../media/cloud-apps-node.png" lightbox="../media/cloud-apps-node.png" alt-text="A screenshot of the incident details page for a selected incident in the Microsoft Defender portal.":::
+:::image type="content" source="../media/cloud-apps-node.png" lightbox="../media/cloud-apps-node.png" alt-text="A screenshot of the cloud apps node on the navigation panel of the Microsoft Defender portal.":::
 
 ### SOC Optimization
 
