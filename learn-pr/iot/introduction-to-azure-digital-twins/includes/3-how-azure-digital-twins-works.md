@@ -52,7 +52,7 @@ Model files can be uploaded to the service using the Azure Digital Twins APIs an
 
 Run the following commands in the Cloud Shell to upload the *RobotArm* model, and another *DistributionCenter* model for the entire distribution center, as inline JSON to the Azure Digital Twins instance you created for this unit.
 
-```azurecli-interactive
+```azurecli
 az dt model create -n $INSTANCE_NAME --models '{"@id":"dtmi:assetGen:RobotArm;1","@type":"Interface","@context":"dtmi:dtdl:context;2","displayName":"RobotArm","contents":[{"@type":"Property","name":"FailedPickupsLastHr","schema":"integer"},{"@type":"Property","name":"PickupFailedAlert","schema":"boolean"},{"@type":"Property","name":"LastPickupFailedBoxID","schema":"string"},{"@type":"Property","name":"HydraulicPressure","schema":"double"}]}' 
 
 az dt model create -n $INSTANCE_NAME --models '{"@id":"dtmi:assetGen:DistributionCenter;1","@type":"Interface","@context":["dtmi:dtdl:context;2"],"displayName":"DistributionCenter","contents":[{"@type":"Property","name":"AvgHydraulicPressure","schema":"double"},{"@type":"Relationship","name":"contains","properties":[{"@type":"Property","name":"targetModel","schema":"string"}],"target":"dtmi:assetGen:RobotArm;1"}]}'
@@ -73,7 +73,7 @@ Twins can be created using the Azure Digital Twins APIs and SDKs, the Azure CLI,
 
 Run the following commands in the Cloud Shell to create six robotic arm twins, all based on the *RobotArm* model from the previous section, and one distribution center twin based on the *DistributionCenter* model. These commands will also instantiate the twin properties with default values.
 
-```azurecli-interactive
+```azurecli
 az dt twin create --dt-name $INSTANCE_NAME --dtmi "dtmi:assetGen:RobotArm;1" --twin-id "Arm1" --properties '{"FailedPickupsLastHr": 0,"PickupFailedAlert": False,"HydraulicPressure": 0}'
 az dt twin create --dt-name $INSTANCE_NAME --dtmi "dtmi:assetGen:RobotArm;1" --twin-id "Arm2" --properties '{"FailedPickupsLastHr": 0,"PickupFailedAlert": False,"HydraulicPressure": 0}'
 az dt twin create --dt-name $INSTANCE_NAME --dtmi "dtmi:assetGen:RobotArm;1" --twin-id "Arm3" --properties '{"FailedPickupsLastHr": 0,"PickupFailedAlert": False,"HydraulicPressure": 0}'
@@ -88,7 +88,7 @@ Once your twins have been created, you can retrieve them from the service as JSO
 
 Run the following command in the Cloud Shell to see the details of the *Arm1* twin returned from the service.
 
-```azurecli-interactive
+```azurecli
 az dt twin show --dt-name $INSTANCE_NAME --twin-id Arm1
 ```
 
@@ -112,7 +112,7 @@ The DTDL model definition that you used for the distribution center included the
 
 Run the following commands in the Cloud Shell to create six *contains* relationships from the distribution center twin, each targeting one of the existing robot arm twins.
 
-```azurecli-interactive
+```azurecli
 az dt twin relationship create --dt-name $INSTANCE_NAME --relationship contains --relationship-id contains1 --source DistCtr --target Arm1
 az dt twin relationship create --dt-name $INSTANCE_NAME --relationship contains --relationship-id contains2 --source DistCtr --target Arm2
 az dt twin relationship create --dt-name $INSTANCE_NAME --relationship contains --relationship-id contains3 --source DistCtr --target Arm3
@@ -141,7 +141,7 @@ In the real factory scenario used as an example in this module, you'd create an 
 
 A complete simulation of live data flow is outside the scope of this introductory module. Instead, you can simulate the results in your Cloud Shell, by running the following commands to update the values of the twin properties manually. These commands update hydraulic pressure values of the twins and the resulting overall hydraulic pressure of the distribution center, and they also set some simulated values that indicate *Arm1*, *Arm5*, and *Arm6* have recently failed some package pickups.
 
-```azurecli-interactive
+```azurecli
 az dt twin update -n $INSTANCE_NAME --twin-id Arm1 --json-patch '[{"op":"replace","path":"/FailedPickupsLastHr","value":1},{"op":"replace","path":"/PickupFailedAlert","value":True},{"op":"add","path":"/LastPickupFailedBoxID","value":"Box507"},{"op":"replace","path":"/HydraulicPressure","value":18.451452874964478}]'
 az dt twin update -n $INSTANCE_NAME --twin-id Arm2 --json-patch '[{"op":"replace","path":"/HydraulicPressure","value":14.384850273058374}]'
 az dt twin update -n $INSTANCE_NAME --twin-id Arm3 --json-patch '[{"op":"replace","path":"/HydraulicPressure","value":16.378455483758937}]'
@@ -168,7 +168,7 @@ Run the following queries in your Cloud Shell to see information about your envi
 
 * Query to see all robotic arms that are contained within the distribution center's graph:
 
-    ```azurecli-interactive
+    ```azurecli
     az dt twin query --dt-name $INSTANCE_NAME --query-command "SELECT centerarms FROM DIGITALTWINS distCenter JOIN centerarms RELATED distCenter.contains WHERE distCenter.\$dtId = 'DistCtr'"
     ```
 
@@ -176,7 +176,7 @@ Run the following queries in your Cloud Shell to see information about your envi
 
 * Query to see the average hydraulic pressure of the distribution center:
 
-    ```azurecli-interactive
+    ```azurecli
     az dt twin query --dt-name $INSTANCE_NAME --query-command "SELECT AvgHydraulicPressure FROM DIGITALTWINS T WHERE T.\$dtId = 'DistCtr'"
     ```
 
@@ -184,7 +184,7 @@ Run the following queries in your Cloud Shell to see information about your envi
 
 * Query to see all robotic arms that currently hold a `PickupFailedAlert` value of *True*:
 
-    ```azurecli-interactive
+    ```azurecli
     az dt twin query --dt-name $INSTANCE_NAME --query-command 'SELECT * FROM DIGITALTWINS T WHERE T.PickupFailedAlert = True'
     ```
 
@@ -192,7 +192,7 @@ Run the following queries in your Cloud Shell to see information about your envi
 
 * Query to see any robotic arms that have failed more than five pickups in the last hour:
 
-    ```azurecli-interactive
+    ```azurecli
     az dt twin query --dt-name $INSTANCE_NAME --query-command 'SELECT * FROM DIGITALTWINS T WHERE T.FailedPickupsLastHr > 5'
     ```
 
