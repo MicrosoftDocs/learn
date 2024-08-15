@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.manage-access-controls
-title: Managing access controls in Azure Databricks
+title: Manage access controls in Azure Databricks
 metadata:
-  title: Managing access controls in Azure Databricks
+  title: Manage access controls in Azure Databricks
   description: "Manage access controls in Azure Databricks with Unity Catalog."
   ms.date: 08/14/2024
   author: wwlpublish
