@@ -1,5 +1,3 @@
-## When to use Azure Image Builder?
-
 Here are some criteria that should be considered for deciding whether the Azure Image Builder (AIB) service can meet your needs:
 
 ### Strengths

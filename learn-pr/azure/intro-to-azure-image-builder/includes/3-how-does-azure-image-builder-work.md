@@ -1,5 +1,3 @@
-## How does Azure Image Builder work?
-
 The Azure Image Builder (AIB) service can be integrated with existing image build pipelines for a click-and-go experience. You can call the AIB service from your pipeline. Azure Image Builder lets you start with Windows or Linux images, either from the Azure Marketplace or from existing custom images. You can then add your own customizations. Also, you can specify how you want your resulting images to be distributed: from Azure Compute Gallery (formerly Shared Image Gallery), as managed images, or as virtual hard disks (VHDs).
 
 ## Azure Image Builder workflow

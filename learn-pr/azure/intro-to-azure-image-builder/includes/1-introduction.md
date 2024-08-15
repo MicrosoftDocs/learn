@@ -1,5 +1,3 @@
-## Scenario
-
 Suppose you work for an IT organization that provides cloud-based services to a wide range of customers. Your organization uses Azure in order to provide these services. One of your key responsibilities is to manage the software and applications used by your customers.
 
 One day, your team receives a request from a customer to deploy a new software application on their Azure-based environment. You know this request requires a significant amount of time and effort to manage for several reasons:
