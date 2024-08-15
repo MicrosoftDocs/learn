@@ -32,7 +32,7 @@ As briefly mentioned earlier, Azure Blob Storage cost also depends on the storag
 
 - You must select the storage account's replication scope at the time of provisioning. Unlike the storage account type, though, you can change it later (with some exceptions). Replication scope determines the account content's resiliency and availability. It supports the following options, which are listed in the order of increasing prices:
 
-  - Locally redundant storage (LRS) synchronously replicates the content of a storage account across three replicas within the same physical location. This is the lowest-priced replication option, but isn’t recommended for workloads that require high availability or durability.
+  - Locally redundant storage (LRS) synchronously replicates the content of a storage account across three replicas within the same physical location. This is the lowest-priced replication option, but it isn’t recommended for workloads that require high availability or durability.
   - Zone-redundant storage (ZRS) provides increased resiliency by replicating the content of a storage account across physical locations (availability zones) in the same Azure region.
   - Geo-redundant storage (GRS) allows you to implement region-level resiliency by enabling asynchronous replication of a storage account's content across two regions. The secondary region automatically includes three additional copies of the storage account, replicated synchronously within that region.
   - Geo-zone-redundant storage (GZRS) further increases resiliency and cost by combining ZRS (in the primary region), GRS (for cross-region replication), and LRS (for replication within the secondary region).
@@ -42,7 +42,7 @@ As briefly mentioned earlier, Azure Blob Storage cost also depends on the storag
 > [!NOTE]
 > Premium block blob storage accounts only support LRS and ZRS replication options.
 
-Another important factor that affects storage cost is the access tier, which is either inherited or explicitly assigned to individual blobs. Your choices include hot, cool, cold, and archive tiers. Access tiers allow you to choose the pricing model that reflects your current and expected storage usage patterns. The hot tier minimizes the retrieval time and the cost of storage operations, whereas the archive tier minimizes per-gigabyte storage cost but imposes a wait time during data retrieval. The cool tier provides the same retrieval time as the hot tier and offers mid-range per-gigabyte pricing in exchange for higher access charges. The cold tier has lower storage costs and higher access costs than the cool tier.
+Another important factor that affects storage cost is the access tier, which is either inherited or explicitly assigned to individual blobs. Your choices include hot, cool, cold, and archive tiers. Access tiers allow you to choose the pricing model that reflects your current and expected storage usage patterns. The hot tier minimizes the retrieval time and the cost of storage operations. The archive tier minimizes per-gigabyte storage cost but imposes a wait time during data retrieval. The cool tier provides the same retrieval time as the hot tier and offers mid-range per-gigabyte pricing in exchange for higher access charges. The cold tier has lower storage costs and higher access costs than the cool tier.
 
 > [!NOTE]
 > Moving blobs between tiers incurs an extra cost.
@@ -87,6 +87,6 @@ As you progress through your estimate, keep in mind the following information:
 
 - Data storage, metadata, and encryption scopes are billed per month. If you anticipate that their usage will be shorter, prorate the charges by calculating their daily cost.
 
-- To identify unit pricing, refer to the Azure Block Storage pricing page. If you enable hierarchical namespaces on the account, make sure that the **File Structure** drop-down list is set to **Hierarchical Namespace (NFS v3.0, SFTP Protocol)**. If you enable hierarchical namespaces on the account and intend use the Data Lake Storage endpoint, refer to the Azure Data Lake Storage Gen2 pricing page. Transaction prices differ between these two pages, but the storage cost is nearly identical.
+- To identify unit pricing, refer to the Azure Block Storage pricing page. If you enable hierarchical namespaces on the account, make sure that the **File Structure** drop-down list is set to **Hierarchical Namespace (NFS v3.0, SFTP Protocol)**. If you enable hierarchical namespaces on the account and intend to use the Data Lake Storage endpoint, refer to the Azure Data Lake Storage Gen2 pricing page. Transaction prices differ between these two pages, but the storage cost is nearly identical.
 
 - Use the redundancy, region, and currency filters to determine the extent to which they affect the final cost.
