@@ -25,10 +25,10 @@ quiz:
       explanation: "Correct. (Windows containers require version compatibility between host and container. Process isolation supports only the same version, while hypervisor isolation allows a newer host version to run earlier container image versions.) "
   - content: "Which of the following commands provides details on the state of a pod and its latest events? "
     choices:
-    - content: "kubectl get pod -n <namespace>"
+    - content: "kubectl get pod -n &lt;namespace&gt;"
       isCorrect: false
       explanation: "Incorrect. (kubectl get pod only lists the pods within the query parameters. While it provides the pod state, it doesn't provide the latest events.)"
-    - content: "kubectl describe pod &lt;pod id&gt; -n &lt;namespace&gt;" 
+    - content: "kubectl describe pod &lt;pod id&gt; -n &lt;namespace&gt;"
       isCorrect: true
       explanation: "Correct. (kubectl describe pod provides the status and latest events of a pod, in addition to any other relevant information about it for troubleshooting purposes.)"
     - content: "kubectl get node -o wide"
