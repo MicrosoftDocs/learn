@@ -12,7 +12,7 @@ metadata:
 title: Introduction to application resiliency in Azure
 summary: An introduction to application resiliency technologies and strategies in Azure.
 abstract: This module provides an introduction to application resiliency technologies and strategies in Azure. You'll learn how to assess and implement resiliency technologies in Azure, and how to design and deploy applications that are resilient to failures.
-prerequisites: An understanding of basic azure infrastructure concepts
+prerequisites: An understanding of basic Azure infrastructure concepts
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
