@@ -25,7 +25,7 @@ The result of this query consists of one or more JSON documents, as shown here:
 }
 ```
 
-## Azure Cosmos DB for MongoDB 
+## Azure Cosmos DB for MongoDB
 
 MongoDB is a popular open source database in which data is stored in Binary JSON (BSON) format. Azure Cosmos DB for MongoDB enables developers to use MongoDB client libraries and code to work with data in Azure Cosmos DB.
 
@@ -45,7 +45,7 @@ The results of this query consist of JSON documents, similar to this:
 }
 ```
 
-## Azure Cosmos DB for PostgreSQL 
+## Azure Cosmos DB for PostgreSQL
 
 Azure Cosmos DB for PostgreSQL is a native PostgreSQL, globally distributed relational database that automatically shards data to help you build highly scalable apps. You can start building apps on a single node server group, the same way you would with PostgreSQL anywhere else. As your app's scalability and performance requirements grow, you can seamlessly scale to multiple nodes by transparently distributing your tables. PostgreSQL is a relational database management system (RDBMS) in which you define relational tables of data, for example you might define a table of products like this:
 
@@ -61,6 +61,7 @@ SELECT ProductName, Price
 FROM Products
 WHERE ProductID = 123;
 ```
+
 The results of this query would contain a row for product 123, like this:
 
 | ProductName | Price |
@@ -71,7 +72,6 @@ The results of this query would contain a row for product 123, like this:
 
 Azure Cosmos DB for Table is used to work with data in key-value tables, similar to Azure Table Storage. It offers greater scalability and performance than Azure Table Storage.
 For example, you might define a table named Customers like this:
-
 
 | PartitionKey | RowKey | Name | Email |
 | --- | --- | --- | --- |
@@ -101,23 +101,23 @@ Cassandra supports a syntax based on SQL, so a client application could retrieve
 SELECT * FROM Employees WHERE ID = 2
 ```
 
-## Azure Cosmos DB for Apache Gremlin 
+## Azure Cosmos DB for Apache Gremlin
 
 Azure Cosmos DB for Apache Gremlin is used with data in a graph structure; in which entities are defined as vertices that form nodes in connected graph. Nodes are connected by edges that represent relationships, like this:
- 
+
  ![A graph showing employees and departments and the connections between them](../media/graph.png)
- 
+
  The example in the image shows two kinds of vertex (employee and department) and edges that connect them (employee "Ben" reports to employee "Sue", and both employees work in the "Hardware" department).
 
  Gremlin syntax includes functions to operate on vertices and edges, enabling you to insert, update, delete, and query data in the graph.  For example, you could use the following code to add a new employee named *Alice* that reports to the employee with ID **1** (*Sue*)
 
-```
+```apache
 g.addV('employee').property('id', '3').property('firstName', 'Alice')
 g.V('3').addE('reports to').to(g.V('1'))
 ```
 
 The following query returns all of the *employee* vertices, in order of ID.
 
- ```
+```apache
  g.V().hasLabel('employee').order().by('id')
  ```
