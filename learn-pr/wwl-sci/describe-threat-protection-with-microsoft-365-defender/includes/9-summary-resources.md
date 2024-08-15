@@ -1,6 +1,6 @@
-In this module, you learned how Microsoft Defender XDR can help protect your organization. You explored each of the different Defender services to understand how they can protect: Identity, Office 365, Endpoint, and cloud apps.  You also explored the capabilities of the Microsoft Defender portal, including Microsoft Secure Score, reports, and incident management.
+In this module, you learned how Microsoft Defender XDR can help protect your organization. You explored each of the different Defender services to understand how they can protect: Identity, Office 365, Endpoint, and cloud apps. You also explored the capabilities of the Microsoft Defender portal, including Microsoft Secure Score, reports, and incident management.
 
-Now you've completed this module, you'll be able to:
+Now you've completed this module, you're able to:
 
 - Describe the Microsoft Defender XDR service.
 - Describe how Microsoft Defender XDR provides integrated protection against sophisticated attacks.
