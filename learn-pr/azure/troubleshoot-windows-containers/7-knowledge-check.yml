@@ -25,15 +25,15 @@ quiz:
       explanation: "Correct. (Windows containers require version compatibility between host and container. Process isolation supports only the same version, while hypervisor isolation allows a newer host version to run earlier container image versions.) "
   - content: "Which of the following commands provides details on the state of a pod and its latest events? "
     choices:
-    - content: "`kubectl get pod -n <namespace>`"
+    - content: '`kubectl get pod -n <namespace>`'
       isCorrect: false
-      explanation: "Incorrect. (kubectl get pod only lists the pods within the query parameters. While it provides the pod state, it doesn't provide the latest events.)"
-    - content: "`kubectl describe pod <pod id>; -n <namespace>`"
+      explanation: "Incorrect. ('`kubectl get pod`' only lists the pods within the query parameters. While it provides the pod state, it doesn't provide the latest events.)"
+    - content: '`kubectl describe pod <pod id>; -n <namespace>`'
       isCorrect: true
-      explanation: "Correct. (`kubectl describe pod` provides the status and latest events of a pod, in addition to any other relevant information about it for troubleshooting purposes.)"
-    - content: "`kubectl get node -o wide`"
+      explanation: "Correct. ('`kubectl describe pod`' provides the status and latest events of a pod, in addition to any other relevant information about it for troubleshooting purposes.)"
+    - content: '`kubectl get node -o wide`'
       isCorrect: false
-      explanation: "Incorrect. (`kubectl get node` provides details on the nodes within the query search and doesn't provide any information on pods.)"
+      explanation: "Incorrect. ('`kubectl get node`' provides details on the nodes within the query search and doesn't provide any information on pods.)"
   - content: "What is the main benefit of LogMonitor?"
     choices:
     - content: "Allows users to set it as the ENTRYPOINT for their container images."
