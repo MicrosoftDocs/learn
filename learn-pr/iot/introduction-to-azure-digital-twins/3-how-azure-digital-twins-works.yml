@@ -1,6 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.introduction-to-azure-digital-twins.how-azure-digital-twins-works
 title: How Azure Digital Twins works
+interactive: bash
 metadata:
   title: How Azure Digital Twins works
   description: Learn how Azure Digital Twins works.
