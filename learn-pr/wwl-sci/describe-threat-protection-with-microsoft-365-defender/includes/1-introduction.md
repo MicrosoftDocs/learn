@@ -1,8 +1,9 @@
-Security threat prevention isn't limited to just network security. It also covers applications, email, collaborations, endpoints, cross SaaS solutions, identity, and more. 
 
-Microsoft Defender XDR is a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
+Extended Detection and Response (XDR) solutions are designed to deliver a holistic, simplified, and efficient approach to protect organizations against advanced attacks.
 
-In this module, you’ll learn how Microsoft Defender XDR can help protect your organization. You’ll explore each of the different Defender services and the capabilities of the Microsoft Defender portal.
+Microsoft Defender XDR is an XDR solution not just in name but also in practice. Microsoft Defender XDR delivers a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
+
+In this module, you’ll learn how Microsoft Defender XDR delivers on the promise of an XDR solution to help protect your organization. You’ll explore each of the different Defender services and the capabilities of the Microsoft Defender portal.
 
 After completing this module, you’ll be able to:
 
