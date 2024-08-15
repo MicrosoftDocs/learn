@@ -62,13 +62,13 @@ Microsoft Defender for Cloud apps functionality can be found under the Cloud app
 - Governance log - Review actions taken to secure cloud apps.
 - Policies - Configure security policies for cloud apps.
 
-[Cloud discovery](#tab/cloud-discovery)
+# [Cloud discovery](#tab/cloud-discovery)
 :::image type="content" source="../media/cloud-discovery.png" lightbox="../media/cloud-discovery.png" alt-text="A screenshot of the cloud discovery page in the Microsoft Defender portal.":::
 
-[Cloud app catalog](#tab/cloud-app-catalog)
+# [Cloud app catalog](#tab/cloud-app-catalog)
 :::image type="content" source="../media/cloud-app-catalog.png" lightbox="../media/cloud-app-catalog.png" alt-text="A screenshot of the cloud app catalog page in the Microsoft Defender portal.":::
 
-[App governance](#tab/app-governance)
+# [App governance](#tab/app-governance)
 :::image type="content" source="../media/app-governance.png" lightbox="../media/app-governance.png" alt-text="A screenshot of app governance page in the Microsoft Defender portal.":::
 
 Settings, permissions, incidents and alerts, reports and other features associated with Microsoft Defender workloads, including Defender for Cloud Apps are also available through the Microsoft Defender portal. For more information, refer to the unit, "Describe the Microsoft Defender portal" for more information.

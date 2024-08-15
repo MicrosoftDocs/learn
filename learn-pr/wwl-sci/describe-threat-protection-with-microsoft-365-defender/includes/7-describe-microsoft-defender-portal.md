@@ -21,19 +21,19 @@ Microsoft Security Exposure Management is a security solution that provides a un
 
 With Security Exposure Management you can discover and monitor assets, get rich security insights, investigate specific risk areas with security initiatives, and track metrics across the organization to improve security posture.
 
-[Overview](#tab/overview)
+# [Overview](#tab/overview)
 :::image type="content" source="../media/exposure-management.png" lightbox="../media/exposure-management.png" alt-text="A screenshot of the Exposure Management overview in the Microsoft Defender portal.":::
 
-[Attack surface](#tab/attack-surface)
+# [Attack surface](#tab/attack-surface)
 :::image type="content" source="../media/attack-path.png" lightbox="../media/attack-path" alt-text="A screenshot of an attack path under Exposure Management.":::
 
-[Insights](#tab/insights)
+# [Insights](#tab/insights)
 :::image type="content" source="../media/initiatives.png" lightbox="../media/initiatives.png" alt-text="A screenshot of the initiatives page in Exposure Management.":::
 
-[Secure score](#tab/secure-score)
+# [Secure score](#tab/secure-score)
 :::image type="content" source="../media/secure-score.png" lightbox="../media/secure-score.png" alt-text="A screenshot of the secure score page in Exposure Management.":::
 
-[Data connectors](#tab/data-connectors)
+# [Data connectors](#tab/data-connectors)
 :::image type="content" source="../media/data-connectors.png" lightbox="../media/data-connectors.png" alt-text="A screenshot of the data-connectors page in Exposure Management.":::
 
 #### Attack surface
@@ -77,10 +77,10 @@ Within an incident, you analyze the alerts that affect your network, understand 
 - All the automated investigations triggered by the alerts in the incident.
 - All the supported evidence and response.
 
-[Incidents](#tab/incidents)
+# [Incidents](#tab/incidents)
 :::image type="content" source="../media/incidents.png" lightbox="../media/incidents.0png" alt-text="A screenshot of the Microsoft Defender portal incidents page.":::
 
-[Incident details page](#tab/incident-details)
+# [Incident details page](#tab/incident-details)
 :::image type="content" source="../media/incident-details.png" lightbox="../media/incident-details.png" alt-text="A screenshot of the incident details page for a selected incident in the Microsoft Defender portal.":::
 
 #### Hunting
@@ -113,10 +113,10 @@ The Device inventory shows a list of the devices in your network where alerts we
 
 The identity inventory provides a comprehensive view of all corporate identities, both cloud and on-premises.
 
-[Devices](#tab/devices)
+# [Devices](#tab/devices)
 :::image type="content" source="../media/assets-devices.png" lightbox="../media/assets-inventory.png" alt-text="A screenshot of the device inventory page in the Microsoft Defender portal.":::
 
-[Identities](#tab/identities)
+# [Identities](#tab/identities)
 :::image type="content" source="../media/assets-identities.png" lightbox="../media/assets-identities.png" alt-text="A screenshot of the identities inventory page in the Microsoft Defender portal.":::
 
 ### Microsoft Sentinel

@@ -50,16 +50,16 @@ The Threat intelligence node on the left navigation panel of the Microsoft Defen
 
 To view a screen capture from each of the categories, select the tab from the image that follows. In each case, the there's a side panel that shows the embedded Microsoft Copilot for Security capability.
 
-[Threat analytics](#tab/threat-analytics)
+# [Threat analytics](#tab/threat-analytics)
 :::image type="content" source="../media/threat-analytics.png" lightbox="../media/threat-analytics.png" alt-text="A screenshot of the threat analytics dashboard.":::
 
-[Intel profiles](#tab/intel-profiles)
+# [Intel profiles](#tab/intel-profiles)
 :::image type="content" source="../media/intel-profiles.png" lightbox="../media/intel-profiles.png" alt-text="A screenshot of the intel profiles page in threat intelligence.":::
 
-[Intel explorer](#tab/intel-explorer)
+# [Intel explorer](#tab/intel-explorer)
 :::image type="content" source="../media/intel-explorer.png" lightbox="../media/intel-explorer.png" alt-text="A screenshot of the intel explorer page in threat intelligence.":::
 
-[Intel explorer](#tab/intel-explorer)
+# [Intel explorer](#tab/intel-explorer)
 :::image type="content" source="../media/projects.png" lightbox="../media/projects.png" alt-text="A screenshot of the projects page in threat intelligence.":::
 
 ### Integration with Microsoft Copilot for Security

@@ -58,13 +58,13 @@ The Identities node on the left navigation panel of the Microsoft Defender porta
 
 - The tools page lists additional information to help manage your Microsoft Defender for Identity environment. Examples include a readiness script that you can run to determine if all the Microsoft Defender for Identity prerequisites are in place, a PowerShell module with a collection of functions designed to help you configure and validate your environment for working Microsoft Defender for Identity, and more.
 
-[Dashboard](#tab/dashboard)
+# [Dashboard](#tab/dashboard)
 :::image type="content" source="../media/identities-dashboard.png" lightbox="../media/identities-dashboard.png" alt-text="A screenshot of the identities dashboard page in the Microsoft Defender portal.":::
 
-[Health issues](#tab/health-issues)
+# [Health issues](#tab/health-issues)
 :::image type="content" source="../media/identity-health-issues.png" lightbox="../media/identity-health-issues.png" alt-text="A screenshot of the identities health issues page in the Microsoft Defender portal.":::
 
-[Tools](#tab/tools)
+# [Tools](#tab/tools)
 :::image type="content" source="../media/identity-tools.png" lightbox="../media/identity-tools.png" alt-text="A screenshot of the identities tools page in the Microsoft Defender portal.":::
 
 Settings, permissions, incidents and alerts, reports and other features associated with Microsoft Defender workloads, including Microsoft Defender for Identity are also available through the Microsoft Defender portal. For more information, refer to the unit, "Describe the Microsoft Defender portal" for more information.
