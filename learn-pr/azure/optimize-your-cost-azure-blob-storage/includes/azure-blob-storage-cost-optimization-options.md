@@ -2,23 +2,23 @@ A general understanding of the Azure Blob Storage pricing model should help you 
 
 ### Describe the Azure Blob Storage cost optimization options
 
-The primary cost-optimization options you’ll consider in this unit include:
+The primary cost-optimization options you consider in this unit include how to:
 
-- Organizing data into access tiers
+- Organize data into access tiers.
 
-- Writing directly to cool and archive tiers
+- Write directly to cool and archive tiers.
 
-- Automatically moving data between access tiers
+- Automatically move data between access tiers.
 
-- Reserving storage capacity
+- Reserve storage capacity.
 
 #### Organize data into access tiers
 
-The purpose of access tiers is to allow companies to choose the pricing model and data retrieval speed that reflect their blob-usage patterns. Your access-tier choice should be based on the frequency with which individual blobs within the storage account will be accessed. For example, to optimize your storage usage and minimize its cost, frequently used blobs should reside in a blob storage account that's configured with the hot access tier. Conversely, blobs that you intend to use only occasionally should reside in a blob storage account that's configured with cool access tier. Blobs that you'll access or modify infrequently should reside in a blob storage account that's configured with cold access tier. Finally, blobs that are retained for archival purposes, without any near-term plans for accessing their content, should be assigned to the archive tier.
+The purpose of access tiers is to allow companies to choose the pricing model and data retrieval speed that reflect their blob-usage patterns. Your access-tier choice should be based on the frequency with which individual blobs within the storage account are accessed. For example, to optimize your storage usage and minimize its cost, frequently used blobs should reside in a blob storage account that's configured with the hot access tier. Conversely, blobs that you intend to use only occasionally should reside in a blob storage account that's configured with cool access tier. Blobs that you access or modify infrequently should reside in a blob storage account that's configured with cold access tier. Finally, blobs that are retained for archival purposes, without any near-term plans for accessing their content, should be assigned to the archive tier.
 
 This recommendation is based on the access tier-specific pricing model that determines two types of charges:
 
-- The charges associated with the maintaining data at rest (per gigabyte)
+- The charges associated with maintaining data at rest (per gigabyte).
 
 - The charges associated with accessing data to perform read, update, and delete operations.
 
@@ -34,7 +34,7 @@ If you have a clear indication that a new blob won’t be accessed in the near t
 
 #### Automatically move data between access tiers
 
-The access tier you assign at the beginning might not reflect longer-term storage trends. A log used for troubleshooting a current issue will likely not have the same significance a few weeks later. Similarly, while it might be important to swiftly restore a recent backup, that degree of urgency will probably not apply a few months from now for the same backup copy. While you could modify the access tier manually, such an approach would introduce a significant maintenance overhead, especially when modifying a large number of blobs, which is common in enterprise scenarios.
+The access tier you assign at the beginning might not reflect longer-term storage trends. A log used for troubleshooting a current issue may not have the same significance a few weeks later. Similarly, while it might be important to swiftly restore a recent backup, that degree of urgency may not apply a few months from now for the same backup copy. While you can modify the access tier manually, such an approach introduces a significant maintenance overhead. Especially true when you modify a large number of blobs, which is common in enterprise scenarios.
 
 Fortunately, this isn’t necessary. Azure Blob Storage supports lifecycle-management policies that move data between tiers based on the criteria you define. For example, you can define a policy rule that transitions blobs to the archive tier if they haven’t been modified in the last 90 days. Similarly, you can create a policy rule to delete blobs in the archive tier if they haven't been accessed in the last 360 days.
 
