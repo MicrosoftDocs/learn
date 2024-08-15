@@ -1,6 +1,5 @@
 Now that you reviewed several cost-optimization options, you can explore Azure Blob Storage access tiers in more depth. You recognize their potential in lowering the storage usage costs, but you also realize that their improper use might actually result in increased storage charges. In this unit, you learn about some general rules governing access-tier behaviors. You also identify some of the caveats that should help you optimize their benefits.
 
-Z
 Azure Blob Storage supports four access tiers:
 
 - **Hot tier**: An online tier that's optimized for storing data that's accessed or modified frequently. This tier has the highest storage costs, but the lowest access costs.
