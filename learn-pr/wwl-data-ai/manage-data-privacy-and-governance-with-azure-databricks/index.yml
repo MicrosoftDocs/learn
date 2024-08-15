@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks
 metadata:
-  title: Implement streaming architecture patterns with Delta Live Tables
-  description: "Learn about structured streaming with Delta Live Tables"
-  ms.date: 08/14/2024/2024
+  title: Manage data privacy and governance with Azure Databricks
+  description: "Manage data privacy and governance with Azure Databricks"
+  ms.date: 08/14/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: module-standard-task-based
   ms.service: azure
-title: Implement streaming architecture patterns with Delta Live Tables
-summary: You explore different features and tools to help you develop architecture patterns with Azure Databricks Delta Live Tables.
+title: Manage data privacy and governance with Azure Databricks
+summary: You explore different features and approaches to help you secure and manage your data within Azure Databricks using tools, such as Unity Catalog.
 abstract: |
   At the end of this module, you're able to:
-  - implement data encryption techniques
-  - manage access controls
-  - implement data masking and anonymization
-  - use compliance frameworks and secure data sharing
-  - use data lineage and metadata management
-  - roll out governance automation
+  - Implement data encryption techniques
+  - Manage access controls
+  - Implement data masking and anonymization
+  - Use compliance frameworks and secure data sharing
+  - Use data lineage and metadata management
+  - Roll out governance automation
 prerequisites: |
   *   Ability to navigate the Azure portal.
   *   Understanding of the Azure Databricks workspace.
@@ -45,4 +45,4 @@ units:
 - learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.knowledge-check
 - learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.summary
 badge:
-  uid: learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.badge
+  uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.badge
