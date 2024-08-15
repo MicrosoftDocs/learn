@@ -63,7 +63,7 @@ Azure Data Factory is used by data engineers to build *extract*, *transform*, an
 - Data governance and management
 - AI-powered insights
 
-Data engineers can use Microsoft Fabric to create a unified data analytics solution that combines data ingestion pipelines, data warehouses, real-time analytics, business intelligence, and AI-powered insights through a single service all centrally stored with OneLake.
+Data engineers can use Microsoft Fabric to create a unified data analytics solution that combines data ingestion pipelines, data warehouses, real-time analytics, business intelligence, and AI-powered insights through a single service all centrally stored with Microsoft OneLake.
 
 ## Azure Databricks
 
