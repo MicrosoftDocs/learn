@@ -9,7 +9,7 @@ Some of the most commonly used cloud services for data are described below.
 
 ![Azure SQL logo.](../media/azure-sql.png) *Azure SQL* is the collective name for a family of relational database solutions based on the Microsoft SQL Server database engine. Specific Azure SQL services include:
 
-- **Azure SQL Database** – a fully managed platform-as-a-service (PaaS) database hosted in Azure
+- **Azure SQL Database** – a fully managed platform-as-a-service (PaaS) database hosted in Azure.
 - **Azure SQL Managed Instance** – a hosted instance of SQL Server with automated maintenance, which allows more flexible configuration than Azure SQL DB but with more administrative responsibility for the owner.
 - **Azure SQL VM** – a virtual machine with an installation of SQL Server, allowing maximum configurability with full management responsibility.
 
@@ -51,18 +51,19 @@ In some organizations, Cosmos DB instances may be provisioned and managed by a d
 
 Azure Data Factory is used by data engineers to build *extract*, *transform*, and *load* (ETL) solutions that populate analytical data stores with data from transactional systems across the organization.
 
-## Azure Synapse Analytics
+## Microsoft Fabric
+![Microsoft Fabric logo.](../media/3-fabric-icon.png) Microsoft Fabric is a unified Software-as-a-Service (SaaS) analytics platform based on an open and governed lakehouse that includes functionality to support:
 
-![Azure Synapse Analytics logo.](../media/azure-synapse.png) Azure Synapse Analytics is a comprehensive, unified Platform-as-a-Service (PaaS) solution for data analytics that provides a single service interface for multiple analytical capabilities, including:
+- Data ingestion and ETL
+- Data lakehouse analytics
+- Data warehouse analytics
+- Data Science and machine learning
+- Realtime analytics
+- Data visualization
+- Data governance and management
+- AI-powered insights
 
-- **Pipelines** - based on the same technology as Azure Data Factory.
-- **SQL** - a highly scalable SQL database engine, optimized for data warehouse workloads.
-- **Apache Spark** - an open-source distributed data processing system that supports multiple programming languages and APIs, including Java, Scala, Python, and SQL.
-- **Azure Synapse Data Explorer** - a high-performance data analytics solution that is optimized for real-time querying of log and telemetry data using Kusto Query Language (KQL).
-
-Data engineers can use Azure Synapse Analytics to create a unified data analytics solution that combines data ingestion pipelines, data warehouse storage, and data lake storage through a single service.
-
-Data analysts can use SQL and Spark pools through interactive notebooks to explore and analyze data, and take advantage of integration with services such as Azure Machine Learning and Microsoft Power BI to create data models and extract insights from the data.
+Data engineers can use Microsoft Fabric to create a unified data analytics solution that combines data ingestion pipelines, data warehouses, real-time analytics, business intelligence, and AI-powered insights through a single service all centrally stored with OneLake.
 
 ## Azure Databricks
 
@@ -72,17 +73,6 @@ Data engineers can use existing Databricks and Spark skills to create analytical
 
 Data Analysts can use the native notebook support in Azure Databricks to query and visualize data in an easy to use web-based interface.
 
-## Azure HDInsight
-
-![Azure HDInsight logo.](../media/hdinsight.png) Azure HDInsight is an Azure service that provides Azure-hosted clusters for popular Apache open-source big data processing technologies, including:
-
-- **Apache Spark** - a distributed data processing system that supports multiple programming languages and APIs, including Java, Scala, Python, and SQL.
-- **Apache Hadoop** - a distributed system that uses *MapReduce* jobs to process large volumes of data efficiently across multiple cluster nodes. MapReduce jobs can be written in Java or abstracted by interfaces such as Apache Hive - a SQL-based API that runs on Hadoop.
-- **Apache HBase** - an open-source system for large-scale NoSQL data storage and querying.
-- **Apache Kafka** - a message broker for data stream processing.
-
-Data engineers can use Azure HDInsight to support big data analytics workloads that depend on multiple open-source technologies.
-
 ## Azure Stream Analytics
 
 ![Azure Stream Analytics logo.](../media/stream-analytics.png) Azure Stream Analytics is a real-time stream processing engine that captures a stream of data from an input, applies a query to extract and manipulate data from the input stream, and writes the results to an output for analysis or further processing.
@@ -91,7 +81,7 @@ Data engineers can incorporate Azure Stream Analytics into data analytics archit
 
 ## Azure Data Explorer
 
-![Azure Data Explorer logo.](../media/azure-data-explorer.png) Azure Data Explorer is a standalone service that offers the same high-performance querying of log and telemetry data as the Azure Synapse Data Explorer runtime in Azure Synapse Analytics.
+![Azure Data Explorer logo.](../media/azure-data-explorer.png) Azure Data Explorer is a fully managed, standalone, big data analytics platform that offers high-performance querying of log and telemetry data.
 
 Data analysts can use Azure Data Explorer to query and analyze data that includes a timestamp attribute, such as is typically found in log files and *Internet-of-things* (IoT) telemetry data.
 
@@ -100,14 +90,3 @@ Data analysts can use Azure Data Explorer to query and analyze data that include
 ![Azure Purview logo.](../media/azure-purview.png) Microsoft Purview provides a solution for enterprise-wide data governance and discoverability. You can use Microsoft Purview to create a map of your data and track data lineage across multiple data sources and systems, enabling you to find trustworthy data for analysis and reporting.
 
 Data engineers can use Microsoft Purview to enforce data governance across the enterprise and ensure the integrity of data used to support analytical workloads.
-
-## Microsoft Fabric
-![Microsoft Fabric logo.](../media/fabric-icon.png) Microsoft Fabric is a unified Software-as-a-Service (SaaS) analytics platform based on open and governed lakehouse that includes functionality to support:
-
-- Data ingestion and ETL
-- Data lakehouse analytics
-- Data warehouse analytics
-- Data Science and machine learning
-- Realtime analytics
-- Data visualization
-- Data governance and management

@@ -3,10 +3,12 @@ uid: learn.wwl.explore-roles-responsibilities-world-of-data
 metadata:
   title: Explore data roles and services
   description: "This content is a part of Explore data roles and services."
-  ms.date: 03/18/2024
+  ms.date: 08/15/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure-education
   ai-usage: human-only
 title: Explore data roles and services
@@ -14,9 +16,13 @@ summary: Data professionals perform distinct roles in building and managing soft
 abstract: |
   In this module you learn how to:
 
-  - Identify common data professional roles.
+  -
 
-  - Identify common cloud services used by data professionals.
+  Identify common data professional roles.
+
+  -
+
+  Identify common cloud services used by data professionals.
 prerequisites: None
 iconUrl: /training/achievements/explore-roles-responsibilities-world-of-data.svg
 levels:
