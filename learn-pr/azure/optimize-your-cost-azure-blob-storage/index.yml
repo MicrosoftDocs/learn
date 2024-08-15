@@ -10,7 +10,7 @@ metadata:
   ms.topic: module
   ms.service: azure-blob-storage
 title: 'Optimize your cost with Azure Blob Storage'
-summary: In this module, you'll learn how to optimize your cost with Azure Blob Storage.
+summary: In this module, you learn how to optimize your cost with Azure Blob Storage.
 abstract:  | 
   After completing this module, you can:
   - Evaluate the cost of Azure Blob Storage.

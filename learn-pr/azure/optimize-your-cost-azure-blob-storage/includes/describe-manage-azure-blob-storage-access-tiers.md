@@ -9,9 +9,9 @@ Azure Blob Storage supports four access tiers:
 
 - **Cold tier**: An online tier that's optimized for storing data that's infrequently accessed or modified. This tier has lower storage costs than the cool tier, but its access costs are higher.
 
-- **Archive tier**: An offline tier that’s optimized for storing data that’s accessed very infrequently or not at all. This tier has the lowest storage costs, but the highest access costs.
+- **Archive tier**: An offline tier that’s optimized for storing data that’s accessed infrequently or not at all. This tier has the lowest storage costs, but the highest access costs.
 
-The term *infrequently* isn't particularly objective. As a general guidance, you should consider using the cool tier if you don't anticipate needing to delete or move the blob to a different tier for at least 30 consecutive days. You can consider the cold tier if you don't anticipate needing to delete or move the blob for at least 90 consecutive days. Consider using the archive tier if that period is at least 180 days. These values result from the pricing model, which imposes an early deletion charge. This charge applies if the blob is either deleted or moved from the cool or archive tier before the tier-specific period has passed. That period is 30 days for the cool tier, 90 days for the cold tier, and 180 days for the archive tier.
+The term *infrequently* isn't objective. As a general guidance, you should consider using the cool tier if you don't anticipate needing to delete or move the blob to a different tier for at least 30 consecutive days. You can consider the cold tier if you don't anticipate needing to delete or move the blob for at least 90 consecutive days. Consider using the archive tier if that period is at least 180 days. These values result from the pricing model, which imposes an early deletion charge. This charge applies if the blob is either deleted or moved from the cool or archive tier before the tier-specific period passes. That period is 30 days for the cool tier, 90 days for the cold tier, and 180 days for the archive tier.
 
 An early deletion charge is prorated according to the number of days remaining in the tier-specific period. For example, if a blob is assigned to the cool tier and then deleted after 20 days, the early deletion charge represents the cost of storing the blob for 10 days (30 minus 20) in the cool tier. Similarly, if a blob is assigned to the archive tier and then moved to the cool or hot tier after 100 days, the early deletion charge represents the cost of storing the blob for 80 days (180 minus 100) in the archive tier.
 
@@ -20,7 +20,7 @@ An early deletion charge is prorated according to the number of days remaining i
 
 ### Describe the access tier management model for blobs
 
-When choosing between hot, cool, cold, and archive access tiers, there are additional factors to consider. It’s also helpful to understand the different access tiers' management models.
+When you choose between hot, cool, cold, and archive access tiers, there are additional factors to consider. It’s also helpful to understand the different access tiers' management models.
 
 In addition to pricing differences, blobs in the archive, cold, and cool tiers have a slightly lower availability Service Level Agreement (SLA) when compared with hot access tier. However, all three tiers offer the same durability, throughput, and storage access latency characteristics. Their retrieval time is in the range of milliseconds. The hot and cool tiers also support all redundancy options.
 
