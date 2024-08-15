@@ -59,7 +59,7 @@ To view a screen capture from each of the categories, select the tab from the im
 # [Intel explorer](#tab/intel-explorer)
 :::image type="content" source="../media/intel-explorer.png" lightbox="../media/intel-explorer.png" alt-text="A screenshot of the intel explorer page in threat intelligence.":::
 
-# [Intel explorer](#tab/intel-explorer)
+# [Projects](#tab/projects)
 :::image type="content" source="../media/projects.png" lightbox="../media/projects.png" alt-text="A screenshot of the projects page in threat intelligence.":::
 
 ### Integration with Microsoft Copilot for Security
