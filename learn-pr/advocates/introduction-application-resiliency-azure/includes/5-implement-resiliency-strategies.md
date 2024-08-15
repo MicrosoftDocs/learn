@@ -8,7 +8,7 @@ This section provides common resiliency strategies that can be implemented for y
 | **Transient failure** | Retry transient failures. |
 | **Heavy load** | Load balance across instances to handle spike in usage. |
 | **Dependency service failure** | Degrade gracefully if a service fails and there's no failover path, providing an acceptable user experience.  |
-| **Accidental data deletion or corruption** | Backup the data so that it can be restored if there's any deletion or corruption. |
+| **Accidental data deletion or corruption** | Back up the data so that it can be restored if there's any deletion or corruption. |
 | **Application deployment failure** | Automate deployments with rollback plan. |
 
 ## Build redundancy
@@ -46,7 +46,7 @@ If a service fails and there's no failover path, the application might be able t
 - Use locally cached data.
 - Show the user an error message. (This option is better than having the application stop responding to requests.)
 
-## Backup the data
+## Back up the data
 
 You should always configure backups for all your data sources. Accidental deletions or data corruptions can happen anytime and it could be days before such issues are noticed. For this reason, it is important to configure longer retention for your backup copies depending on the nature and criticality of the application.
 
