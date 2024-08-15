@@ -2,6 +2,6 @@ Azure Data Lake Store (Gen1) is a separate service for hierarchical data storage
 
 ![An Azure blob storage container with a hierarchical namespace](../media/azure-data-lake.png)
 
-Systems like Hadoop in Azure HDInsight, Azure Databricks, and Azure Synapse Analytics can mount a distributed file system hosted in Azure Data Lake Store Gen2 and use it to process huge volumes of data.
+Systems like Azure Databricks can mount a distributed file system hosted in Azure Data Lake Store Gen2 and use it to process huge volumes of data. Microsoft Fabric tenants automatically provision OneLake, built on top of Azure Data Lake Storage Gen2.
 
 To create an Azure Data Lake Store Gen2 files system, you must enable the **Hierarchical Namespace** option of an Azure Storage account. You can do this when initially creating the storage account, or you can upgrade an existing Azure Storage account to support Data Lake Gen2. Be aware however that upgrading is a one-way process – after upgrading a storage account to support a hierarchical namespace for blob storage, you can’t revert it to a flat namespace.
