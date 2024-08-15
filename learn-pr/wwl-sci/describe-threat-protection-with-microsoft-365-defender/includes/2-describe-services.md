@@ -1,21 +1,15 @@
-Microsoft Defender XDR is an enterprise defense suite that protects against sophisticated cyberattacks. With Microsoft Defender XDR, you can natively coordinate the detection, prevention, investigation, and response to threats across endpoints, identities, email, and applications.
 
-This short three-minute video provides an essential overview of Microsoft Defender XDR.
+Microsoft Defender XDR is an enterprise defense suite of solutions that protects against sophisticated cyberattacks. Microsoft Defender XDR allows admins to assess threat signals from endpoints, applications, email, and identities to determine an attack's scope and impact. It gives greater insight into how the threat occurred, and what systems have been affected. Microsoft Defender XDR can then take automated action to prevent or stop the attack.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww]
-
-Microsoft Defender XDR allows admins to assess threat signals from endpoints, applications, email, and identities to determine an attack's scope and impact. It gives greater insight into how the threat occurred, and what systems have been affected. Microsoft Defender XDR can then take automated action to prevent or stop the attack.
-
-Microsoft Defender XDR suite protects:
+The Microsoft Defender XDR suite protects:
 
 - **Endpoints with Microsoft Defender for Endpoint** - Microsoft Defender for Endpoint is a unified endpoint platform for preventative protection, post-breach detection, automated investigation, and response.
 - **Assets with Defender Vulnerability Management** - Microsoft Defender Vulnerability Management delivers continuous asset visibility, intelligent risk-based assessments, and built-in remediation tools to help your security and IT teams prioritize and address critical vulnerabilities and misconfigurations across your organization.
 - **Email and collaboration with Microsoft Defender for Office 365** - Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools.
 - **Identities with Microsoft Defender for Identity** - Microsoft Defender for Identity uses Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
-- **Applications with Microsoft Defender for Cloud Apps** - Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution that brings deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
+- **Applications with Microsoft Defender for Cloud Apps** - Microsoft Defender for Cloud Apps delivers full protection for software as a service (SaaS) applications. Defender for Cloud apps is a cloud access security broker that brings deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
+- **Cloud workloads and applications with Defender for Cloud** - Microsoft Defender for Cloud combines the capabilities of a development security operations (DevSecOps) solution, a cloud security posture management (CPSM) solution, and a cloud workload protection platform (CWPP) solution. Microsoft Defender for Cloud, through its DevSecOps, CSPM, and CWPP capabilities, enables organizations to manage the security of their resources and workloads and improve their overall security posture, across multicloud environments. Microsoft Defender for Cloud is covered in more detail in the module, [Describe the security management capabilities in Azure](/training/modules/describe-security-management-capabilities-of-azure/).
 
-Also, subscribers to **Microsoft Defender Threat Intelligence** (Defender TI) can now access threat intelligence from inside the Microsoft Defender portal.
+The Microsoft Defender XDR suite also includes **Microsoft Defender Threat Intelligence**. Microsoft Defender TI aggregates and enriches critical threat information to help security analyst triage, incident response, threat hunting, and vulnerability management workflows.
 
-Microsoft Defender TI helps streamline security analyst triage, incident response, threat hunting, and vulnerability management workflows. Defender TI aggregates and enriches critical threat information in an easy-to-use interface.  
-
-Microsoft Defender TI and the other services listed are described in more detail in each of the subsequent units.
+The information and insights surfaced by the Microsoft Defender XDR suite of solutions are centralized in the Microsoft Defender portal, which delivers a unified security operations platform, together with information from other Microsoft security products, including Microsoft Sentinel.
