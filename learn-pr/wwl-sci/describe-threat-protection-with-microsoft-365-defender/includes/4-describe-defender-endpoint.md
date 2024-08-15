@@ -9,7 +9,7 @@ Microsoft Defender for Endpoint is a platform designed to help enterprise networ
 Microsoft Defender for Endpoint includes:
 
 - **Core Defender Vulnerability Management**: Built-in core vulnerability management capabilities use a risk-based approach to the discovery, assessment, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
-- **Attack surface reduction**: The attack surface reduction set of capabilities provides the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, the capabilities resist attacks and exploitation. This set of capabilities also includes network protection and web protection, which regulate access to malicious IP addresses, domains, and URLs.
+- **Attack surface reduction**: The attack surface reduction set of capabilities provides the first layer of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, the capabilities resist attacks and exploitation. This set of capabilities also includes network protection and web protection, which regulate access to malicious IP addresses, domains, and URLs.
 - **Next generation protection**:  Next-generation protection was designed to catch all types of emerging threats. In addition to Microsoft Defender Antivirus, your next-generation protection services include the following capabilities:
   - Behavior-based, heuristic, and real-time antivirus protection.
   - Cloud-delivered protection, which includes near-instant detection and blocking of new and emerging threats.

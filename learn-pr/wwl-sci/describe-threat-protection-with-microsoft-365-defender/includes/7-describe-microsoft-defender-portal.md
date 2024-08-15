@@ -157,7 +157,7 @@ Security operations center (SOC) teams actively look for opportunities to optimi
 
 SOC optimization surfaces ways you can optimize your security controls, gaining more value from Microsoft security services as time goes on.
 
-:::image type="content" source="../media/soc-optimization.png" lightbox="../media/soc-optimization.png" alt-text="A screenshot of the SOC optimization page in the Microsoft Defender portal.":::
+:::image type="content" source="../media/optimization.png" lightbox="../media/optimization.png" alt-text="A screenshot of the SOC optimization page in the Microsoft Defender portal.":::
 
 ### Reports
 

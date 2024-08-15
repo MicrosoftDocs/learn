@@ -48,7 +48,7 @@ The Threat intelligence node on the left navigation panel of the Microsoft Defen
 
 :::image type="content" source="../media/threat-intelligence.png" alt-text="A screenshot of the selectable options for threat intelligence on the left navigation panel of the Microsoft Defender portal.":::
 
-To view a screen capture from each of the categories, select the tab from the image that follows. In each case, the there's a side panel that shows the embedded Microsoft Copilot for Security capability.
+To view a screen capture from each of the categories, select the tab from the image that follows. In each case, there's a side panel that shows the embedded Microsoft Copilot for Security capability.
 
 # [Threat analytics](#tab/threat-analytics)
 :::image type="content" source="../media/threat-analytics.png" lightbox="../media/threat-analytics.png" alt-text="A screenshot of the threat analytics dashboard.":::
