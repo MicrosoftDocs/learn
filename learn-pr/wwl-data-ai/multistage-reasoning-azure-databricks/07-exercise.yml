@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 30
 content: |
-  [!include[](includes/06-exercise.md)]
+  [!include[](includes/07-exercise.md)]
