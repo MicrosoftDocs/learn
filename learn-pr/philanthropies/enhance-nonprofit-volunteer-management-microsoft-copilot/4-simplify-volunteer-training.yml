@@ -4,11 +4,13 @@ title: Simplify volunteer training
 metadata:
   title: Simplify volunteer training
   description: This content is a part of the Enhance nonprofit volunteer management with Microsoft Copilot module.
-  ms.date: 6/14/2024
   author: CourtneyHMicrosoft
   ms.author: cohodge
+  ms.date: 6/14/2024
   ms.topic: unit
   ai-usage: ai-assisted
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/4-simplify-volunteer-training.md)]

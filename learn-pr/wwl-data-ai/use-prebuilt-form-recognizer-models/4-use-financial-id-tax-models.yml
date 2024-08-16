@@ -3,11 +3,13 @@ uid: learn.wwl.use-prebuilt-form-recognizer-models.use-financial-id-tax-models
 title: Use financial, ID, and tax models
 metadata:
   title: Use financial, ID, and tax models
-  description: "Use financial, ID, and tax models"
-  ms.date: 02/06/2024
+  description: Use financial, ID, and tax models
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 02/06/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/4-use-financial-id-tax-models.md)]

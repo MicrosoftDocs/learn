@@ -2,12 +2,14 @@
 uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions
 metadata:
   title: Trigger Azure Machine Learning jobs with GitHub Actions
-  description: "MLOps, machine learning operations"
-  ms.date: 07/10/2024
+  description: MLOps, machine learning operations
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
+  ms.service: azure-machine-learning
   ms.topic: module-standard-task-based
-  ms.service: azure-machine-learning 
+  ms.collection:
+    - wwl-ai-copilot
 title: Trigger Azure Machine Learning jobs with GitHub Actions
 summary: Learn how to automate your machine learning workflows by using GitHub Actions.
 abstract: |

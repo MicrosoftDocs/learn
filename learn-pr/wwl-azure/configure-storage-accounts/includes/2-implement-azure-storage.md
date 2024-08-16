@@ -17,16 +17,16 @@ You can think of Azure Storage as supporting three categories of data: structure
 <iframe width="854" height="480" src="https://www.youtube.com/embed/AhuNgBafmUo" title="How to create a storage account." allowfullscreen></iframe>
 
 
-#### Storage account tiers
+#### Storage account types
 
-General purpose Azure storage accounts have two tiers: Standard and Premium.
+General purpose Azure storage accounts have two types: Standard and Premium.
 
-- **Standard** storage accounts are backed by magnetic hard disk drives (HDD). A standard storage account provides the lowest cost per GB. You can use Standard tier storage for applications that require bulk storage or where data is infrequently accessed.
+- **Standard** storage accounts are backed by magnetic hard disk drives (HDD). A standard storage account provides the lowest cost per GB. You can use Standard storage for applications that require bulk storage or where data is infrequently accessed.
 
-- **Premium** storage accounts are backed by solid-state drives (SSD) and offer consistent low-latency performance. You can use Premium tier storage for Azure virtual machine disks with I/O-intensive applications like databases.
+- **Premium** storage accounts are backed by solid-state drives (SSD) and offer consistent low-latency performance. You can use Premium storage for Azure virtual machine disks with I/O-intensive applications like databases.
 
 > [!NOTE]
-> You can't convert a Standard tier storage account to a Premium tier storage account or vice versa. You must create a new storage account with the desired type and copy data, if applicable, to a new storage account.
+> You can't convert a Standard storage account to a Premium storage account or vice versa. You must create a new storage account with the desired type and copy data, if applicable, to a new storage account.
 
 ### Things to consider when using Azure Storage
 

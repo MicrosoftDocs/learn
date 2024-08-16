@@ -2,13 +2,15 @@
 uid: learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration
 metadata:
   title: Optimize Microsoft Intune for Microsoft Copilot for Security Integration
-  description: "Learn about Microsoft Security Copilot and Intune for securing corporate IT. Enhance security operations, get contextual responses, and improve incident response. Implement naming conventions and manage devices efficiently."
-  ms.date: 06/21/2024
+  description: Learn about Microsoft Security Copilot and Intune for securing corporate IT. Enhance security operations, get contextual responses, and improve incident response. Implement naming conventions and manage devices efficiently.
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: module
+  ms.date: 06/21/2024
   ms.service: microsoft-copilot
   ai-usage: ai-assisted
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Optimize Microsoft Intune for Microsoft Copilot for Security Integration
 summary: Learn about Microsoft Security Copilot and Intune for securing corporate IT. Enhance security operations, get contextual responses, and improve incident response. Implement naming conventions and manage devices efficiently.
 abstract: |

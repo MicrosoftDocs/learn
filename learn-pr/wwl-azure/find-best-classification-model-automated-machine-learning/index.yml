@@ -3,11 +3,13 @@ uid: learn.wwl.find-best-classification-model-automated-machine-learning
 metadata:
   title: Find the best classification model with Automated Machine Learning
   description: Learn how to find the best classification model with automated machine learning (AutoML). You'll use the Python SDK (v2) to configure and run an AutoML job.
-  ms.date: 07/10/2024
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: module
+  ms.date: 07/10/2024
   ms.service: azure-machine-learning
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Find the best classification model with Automated Machine Learning
 summary: Learn how to find the best classification model with automated machine learning (AutoML). You'll use the Python SDK (v2) to configure and run an AutoML job.
 abstract: |

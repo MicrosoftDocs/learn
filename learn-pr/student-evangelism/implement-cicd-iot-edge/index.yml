@@ -4,12 +4,12 @@ metadata:
   title: "Implement CI/CD for IoT Edge"
   description: "This module implements CICD pipeline for edge devices."
   manager: lizross
-  ms.date: 06/19/2020
+  ms.date: 07/20/2024
   author: PatAltimore
   ms.author: patricka
   ms.topic: module
-  ms.custom: team=nextgen
   ms.service: iot-edge
+  ms.collection: ce-skilling-ai-copilot   # Part of AI related learning path
 title: "Implement CI/CD for IoT Edge"
 summary: "Define a solution for smoke testing for virtual Azure IoT Edge devices. Your solution employs a CI/CD (continuous integration/continuous deployment) strategy using Azure DevOps and Azure Pipelines on a Kubernetes cluster."
 abstract: |

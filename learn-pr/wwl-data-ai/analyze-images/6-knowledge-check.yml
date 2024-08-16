@@ -3,11 +3,13 @@ uid: learn.wwl.analyze-images.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 02/05/2024
+  description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 02/05/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

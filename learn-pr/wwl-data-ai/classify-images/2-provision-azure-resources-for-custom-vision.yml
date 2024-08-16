@@ -3,11 +3,13 @@ uid: learn.wwl.classify-images.provision-azure-resources-for-custom-vision
 title: Provision Azure resources for Azure AI Custom Vision
 metadata:
   title: Provision Azure resources for Azure AI Custom Vision
-  description: "Provision Azure resources for Azure AI Custom Vision"
-  ms.date: 07/10/2024
+  description: Provision Azure resources for Azure AI Custom Vision
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 durationInMinutes: 3
 content: |

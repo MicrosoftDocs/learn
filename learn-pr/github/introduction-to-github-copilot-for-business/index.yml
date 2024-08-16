@@ -11,6 +11,7 @@ metadata:
   ms.topic: module
   ms.collection:
     - ce-skilling-ai-copilot
+    - github-ai-copilot
 summary: > 
   Learn about the difference between GitHub Copilot for Business versus GitHub Copilot for Individuals, specific use cases and customer stories for GitHub Copilot for Business, and how to enable it. 
 abstract: |

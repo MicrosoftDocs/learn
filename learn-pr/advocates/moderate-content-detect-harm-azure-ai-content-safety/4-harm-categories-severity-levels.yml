@@ -4,10 +4,12 @@ title: Harm categories and severity levels
 metadata:
   title: Harm categories and severity levels
   description: Learn about the harm categories and severity levels that Azure AI Content Safety can detect.
-  ms.date: 06/24/2024
   author: aprilspeight
   ms.author: apspeigh
+  ms.date: 06/24/2024
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/4-harm-categories-severity-levels.md)]

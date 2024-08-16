@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Test your knowledge of content moderation and harm detection with Azure AI Content Safety.
-  ms.date: 06/24/2024
   author: aprilspeight
   ms.author: apspeigh
+  ms.date: 06/24/2024
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/10-knowledge-check.md)]

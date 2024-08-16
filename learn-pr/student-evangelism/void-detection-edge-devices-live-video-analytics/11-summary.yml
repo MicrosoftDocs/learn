@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: An overview of content covered in this module.
-  ms.date: 04/30/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 2 # dummy number at present
 content: |
   [!include[](includes/11-summary.md)]

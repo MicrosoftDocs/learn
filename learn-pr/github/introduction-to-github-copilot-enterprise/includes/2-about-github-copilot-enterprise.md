@@ -10,7 +10,7 @@ Let's learn about the new features that come with GitHub Copilot Enterprise.
 
 ### Chat customized to your codebase
 
-:::image type="content" source="../media/2-github-copilot-chat-window.png" alt-text="Screenshot of GitHub Copilot chat window.":::
+:::image type="content" source="../media/2-github-copilot-chat-window.png" alt-text="Screenshot of the GitHub Copilot chat window.":::
 
 GitHub Copilot Enterprise allows developers to use GitHub Copilot Chat to create prompts that are customized to your codebase. This feature opens up a world of new possibilities, enabling developers to apply it directly within issues, pull requests, code files within Codespaces, and even directly on repositories.
 
@@ -20,7 +20,7 @@ Whether collaborating within a specific code space, pull request, issue, or repo
 
 ### Pull request summaries
 
-:::image type="content" source="../media/2-generating-pull-request-summary.png" alt-text="Screenshot of generating a pull request summary.":::
+:::image type="content" source="../media/2-generating-pull-request-summary.png" alt-text="Screenshot of the 'Open a pull request' screen with the Summary button highlighted, and a tool tip indicating that it generates a summary of the changes in the pull request.":::
 
 GitHub Copilot Enterprise allows developers to generate summaries of pull requests based on the code changes. This aims to reduce the time and efforts needed to create informative pull request descriptions, enhancing understanding and accelerating review processes allowing the reviewers to quickly grasp what the changes involve and areas requiring attention.
 

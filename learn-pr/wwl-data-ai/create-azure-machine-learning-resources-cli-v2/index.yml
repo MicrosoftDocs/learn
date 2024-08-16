@@ -2,12 +2,14 @@
 uid: learn.wwl.create-azure-machine-learning-resources-cli-v2
 metadata:
   title: Create Azure Machine Learning resources with the CLI (v2)
-  description: "Create Azure Machine Learning resources with the CLI (v2)"
-  ms.date: 07/10/2024
+  description: Create Azure Machine Learning resources with the CLI (v2)
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
+  ms.service: azure-machine-learning
   ms.topic: module-standard-task-based
-  ms.service: azure-machine-learning 
+  ms.collection:
+    - wwl-ai-copilot
 title: Create Azure Machine Learning resources with the CLI (v2)
 summary: Use the Azure Machine Learning CLI (v2) to create and manage workspace resources.
 abstract: |

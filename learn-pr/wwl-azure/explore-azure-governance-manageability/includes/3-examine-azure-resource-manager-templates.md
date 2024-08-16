@@ -6,5 +6,4 @@ Deployment templates are ideal if you need to provision multiple solutions with 
 
 Templates are *idempotent*, which means that you can deploy them multiple times to the same resource group with the same outcome. This is useful when you want to recreate an original deployment or remediate any issues resulting from post-deployment changes.
 
-Templates support VM extensions, which allow you to configure operating systems within Azure VMs as part of their deployment. These extensions include configuration management services, such as PowerShell Desired State Configuration, Chef, or Puppet.
-
+Templates support virtual machine extensions, which allow you to configure operating systems within Azure Virtual Machines as part of their deployment. These extensions include configuration management services, such as PowerShell Desired State Configuration, Chef, or Puppet.

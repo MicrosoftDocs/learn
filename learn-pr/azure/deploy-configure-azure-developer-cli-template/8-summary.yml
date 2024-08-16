@@ -5,7 +5,7 @@ metadata:
   unitType: summary
   title: Summary
   description: Summary unit for the Deploy and Configure Azure Developer CLI templates module
-  ms.date: 07/02/2024
+  ms.date: 07/17/2024
   author: alexwolfmsft
   ms.author: alexwolf
   ms.topic: unit

@@ -4,10 +4,12 @@ title: Design the AI Specification document
 metadata:
   title: Design the AI Specification document
   description: We give an introduction to the AI Specification document for a use case and explain the key components.
-  ms.date: 07/10/2024
   author: softchris
   ms.author: chnoring
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 15
 content: |
   [!include[](includes/2-design-ai-specification-document.md)] 

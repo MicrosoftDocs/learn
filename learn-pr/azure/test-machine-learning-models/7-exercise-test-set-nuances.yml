@@ -5,8 +5,8 @@ metadata:
   title: Exercise – Test set nuances
   description: Exercise unit about test set nuances in machine learning
   ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 12
 sandbox: true

@@ -8,7 +8,7 @@ metadata:
   ms.author: estfan
   ms.topic: module-standard-task-based
   ROBOTS: INDEX,FOLLOW
-  ms.service: logic-apps
+  ms.service: azure-logic-apps
   manager: mijacobs
 title: "Route and process data automatically using Azure Logic Apps"
 summary: "Define a workflow using built-in triggers, actions, and conditional operators. Your workflow will run automatically when data is available, process the data in the cloud, record results in a database, and send email notifications."

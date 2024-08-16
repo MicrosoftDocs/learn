@@ -3,15 +3,17 @@ uid: learn-wwl.explore-data-for-data-science-microsoft-fabric.visualize-data-wit
 title: Visualize charts in notebooks
 metadata:
   title: Visualize data in notebooks
-  description: "Learn how to visualize charts ."
-  ms.date: 09/19/2023
+  description: Learn how to visualize charts .
   author: wwlpublish
   ms.author: jupadrao
+  ms.date: 09/19/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai
-    - build-2023-fabric 
+    - build-2023-fabric
 durationInMinutes: 10
 content: |
   [!include[](includes/7-visualize-data-with-plots-and-charts.md)]

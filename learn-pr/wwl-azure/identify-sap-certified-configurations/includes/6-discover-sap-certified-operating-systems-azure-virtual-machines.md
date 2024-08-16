@@ -1,6 +1,6 @@
 SAP-certified operating systems supported for SAP products on Azure Virtual Machines are listed in [SAP Note \#1928533](https://me.sap.com/notes/1928533) and, at the time of authoring, include:
 
-- Microsoft Windows Server 2008 R2, 2012 (R2), 2016, 2019, and 2022
+- Microsoft Windows Server 2008 R2, 2012 (R2), 2016, 2019, and 2022 (including Azure Edition for Windows Server as of May 2024)
 - SUSE Linux Enterprise Server 12 (SLES12) and higher
 - SUSE SLES for SAP Applications (based on SLES12) and higher
 - Red Hat Enterprise Linux 7 (RHEL7) and higher

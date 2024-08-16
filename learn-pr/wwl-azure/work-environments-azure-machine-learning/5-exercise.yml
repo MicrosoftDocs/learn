@@ -3,11 +3,13 @@ uid: learn.wwl.work-environments-azure-machine-learning.exercise
 title: Exercise - Work with environments
 metadata:
   title: Exercise - Work with environments
-  description: "Exercise - Work with environments"
-  ms.date: 09/08/2023
+  description: Exercise - Work with environments
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 09/08/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise.md)]

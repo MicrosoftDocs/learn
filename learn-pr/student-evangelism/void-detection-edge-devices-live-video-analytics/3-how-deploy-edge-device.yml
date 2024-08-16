@@ -4,11 +4,10 @@ title: How to deploy IoT Edge device
 metadata:
   title: How to deploy IoT Edge device
   description: The module helps learner deploy edge modules to edge device.
-  ms.date: 04/30/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/3-how-deploy-edge-device.md)]

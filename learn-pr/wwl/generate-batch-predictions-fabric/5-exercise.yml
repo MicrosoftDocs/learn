@@ -3,11 +3,13 @@ uid: learn.wwl.generate-batch-predictions-fabric.exercise
 title: Exercise - Generate and save batch predictions
 metadata:
   title: Exercise - Generate and save batch predictions
-  description: "Exercise - Generate and save batch predictions in Microsoft Fabric"
-  ms.date: 10/25/2023
+  description: Exercise - Generate and save batch predictions in Microsoft Fabric
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 10/25/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai

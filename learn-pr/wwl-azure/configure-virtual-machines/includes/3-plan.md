@@ -16,7 +16,7 @@ Let's walk through a checklist of things you need to consider when configuring a
 
 Virtual networks are used in Azure to provide private connectivity between Azure Virtual Machines and other Azure services. Virtual machines and services that are part of the same virtual network can access one another. By default, services outside the virtual network can't connect to services within the virtual network. You can, however, configure the network to allow access to the external service, including your on-premises servers.
 
-Network addresses and subnets aren't trivial to change after they're configured. If you plan to connect your private company network to the Azure services, make sure you consider the topology before you put any virtual machines into place.
+Network addresses and subnets aren't trivial to change after configuration. If you plan to connect your private company network to the Azure services, make sure you consider the topology before you put any virtual machines into place.
 
 #### Virtual machine name
 
@@ -32,7 +32,7 @@ The virtual machine name also defines a manageable Azure resource, and it's not 
 | **Product or service** | `Outlook`, `SQL`, `AzureAD`  | A portion of the name can specify the product, application, or service that the machine supports. |
 | **Role** | `security`, `web`, `messaging` | A portion of the name can specify what role the machine supports within the organization. |
 
-Let's consider how to name the first development web server for your company that's hosted in the US South Central location. In this scenario, you might use the machine name `devusc-webvm01`. `dev` stands for development and `usc` identifies the location. `web` indicates the machine as a web server, and the suffix `01` shows the machine is the first in the configuration.
+Let's consider how to name the first development web server for your company, hosted in the US South Central location. In this scenario, you might use the machine name `devusc-webvm01`. `dev` stands for development and `usc` identifies the location. `web` indicates the machine as a web server, and the suffix `01` shows the machine is the first in the configuration.
 
 #### Virtual machine location
 
@@ -58,13 +58,13 @@ Azure offers different memory and storage options for different [virtual machine
 
 A subscription is billed two separate costs for every virtual machine: _compute_ and _storage_. By separating these costs, you can scale them independently and only pay for what you need.
 
-- **Compute expenses** are priced on a per-hour basis but billed on a per-minute basis. If the virtual machine is deployed for 55 minutes, you're charged for only 55 minutes of usage. You're not charged for compute capacity if you stop and deallocate the virtual machine. The [hourly price](https://azure.microsoft.com/pricing/details/virtual-machines/linux/) varies based on the virtual machine size and operating system you select. For the compute costs, you're able to choose from two payment options:
+- **Compute expenses** are priced on a per-hour basis but billed on a per-minute basis. If the virtual machine is deployed for 55 minutes, Azure charges you for only 55 minutes of usage. Azure doesn't charge for compute capacity if you stop and deallocate the virtual machine. The [hourly price](https://azure.microsoft.com/pricing/details/virtual-machines/linux/) varies based on the virtual machine size and operating system you select. For the compute costs, you're able to choose from two payment options:
 
    - **Consumption-based**: With the consumption-based option, you pay for compute capacity by the second. You're able to increase or decrease compute capacity on demand and start or stop at any time. Use consumption-based pricing if you run applications with short-term or unpredictable workloads that can't be interrupted. An example scenario is if you're doing a quick test or developing an app in a virtual machine.
 
    - **Reserved Virtual Machine Instances**: The Reserved Virtual Machine Instances (RI) option is an advance purchase of a virtual machine for one or three years in a specified region. The commitment is made up front, and in return, you get up to 72% price savings compared to pay-as-you-go pricing. RIs are flexible and can easily be exchanged or returned for an early termination fee. Use this option if the virtual machine has to run continuously, or you need budget predictability, and you can commit to using the virtual machine for at least a year.
 
-- **Storage costs** are charged separately for the Azure Storage used by the virtual machine. The status of the virtual machine has no relation to the Azure Storage charges that are incurred. You're always charged for any Azure Storage used by the disks. 
+- **Storage costs** are charged separately for the Azure Storage used by the virtual machine. The status of the virtual machine has no relation to the Azure Storage charges that are incurred. Azure always charges you for any Azure Storage used by the disks. 
 
 #### Operating system
 

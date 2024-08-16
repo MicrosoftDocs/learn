@@ -8,7 +8,7 @@ metadata:
   author: mbender-ms
   ms.author: mbender
   ms.topic: module
-  ms.service: load-balancer
+  ms.service: azure-load-balancer
 title: Improve application scalability and resiliency by using Azure Load Balancer
 summary: Discuss the different load balancers in Azure and how to choose the right Azure load balancer solution to meet your requirements.
 abstract: | 

@@ -3,11 +3,13 @@ uid: learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.
 title: Understand authentication in Microsoft Copilot for Security
 metadata:
   title: Understand authentication in Microsoft Copilot for Security
-  description: "Understand authentication in Microsoft Copilot for Security"
-  ms.date: 06/21/2024
+  description: Understand authentication in Microsoft Copilot for Security
   author: wwlpublish
   ms.author: rstearman
+  ms.date: 06/21/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 11
 content: |
   [!include[](includes/6-understand-authentication-microsoft-copilot-security.md)]

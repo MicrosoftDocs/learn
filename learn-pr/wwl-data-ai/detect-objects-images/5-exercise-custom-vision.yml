@@ -3,11 +3,13 @@ uid: learn.wwl.detect-objects-images.exercise-custom-vision
 title: Exercise - Detect objects in images with Azure AI Custom Vision
 metadata:
   title: Exercise - Detect objects in images with Azure AI Custom Vision
-  description: "Exercise - Detect objects in images with Azure AI Custom Vision"
-  ms.date: 07/10/2024
+  description: Exercise - Detect objects in images with Azure AI Custom Vision
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 sandbox: false
 labId: 100993

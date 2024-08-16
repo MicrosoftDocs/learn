@@ -2,12 +2,14 @@
 uid: learn.wwl.classify-images
 metadata:
   title: Classify images
-  description: "Classify images"
-  ms.service: azure-ai-vision
-  ms.date: 07/10/2024
+  description: Classify images
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 07/10/2024
+  ms.service: azure-ai-vision
   ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Classify images
 summary: Image classification is used to determine the main subject of an image. You can use the Azure AI Custom Vision services to train a model that classifies images based on your own categorizations.
 abstract: |

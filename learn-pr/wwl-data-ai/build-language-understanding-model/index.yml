@@ -2,13 +2,15 @@
 uid: learn.wwl.build-language-understanding-model
 metadata:
   title: Build a conversational language understanding model
-  description: "The Azure AI conversational language understanding service (CLU) enables you to train an Azure AI Language model that apps can use to extract meaning from natural language."
-  ms.date: 08/31/2023
+  description: The Azure AI conversational language understanding service (CLU) enables you to train an Azure AI Language model that apps can use to extract meaning from natural language.
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module-standard-task-based
+  ms.date: 08/31/2023
   ms.service: azure-ai-language
   ms.subservice: azure-ai-clu
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Build a conversational language understanding model
 summary: The Azure AI Language conversational language understanding service (CLU) enables you to train a model that apps can use to extract meaning from natural language.
 abstract: |

@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit  
 uid: learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.knowledge-check
 title: Knowledge check  
-metadata:    
-  title: Knowledge check    
-  description: Check your knowledge of content moderation for text.  
-  author: wwlpublish    
-  ms.author: gmalc    
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of content moderation for text.
+  author: wwlpublish
+  ms.author: gmalc
   ms.date: 07/10/2024
   ms.topic: unit
   ms.collection:
-    - ce-skilling-ai-copilot
+    - wwl-ai-copilot
 durationInMinutes: 7
 quiz:
   title: Check your knowledge

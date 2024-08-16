@@ -9,7 +9,7 @@ metadata:
   ms.date: 07/10/2024
   ms.topic: unit
   ms.collection:
-    - ce-skilling-ai-copilot
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/3-exercise-create-moderator-service.md)]

@@ -2,12 +2,14 @@
 uid: learn.wwl.create-azure-cognitive-search-solution
 metadata:
   title: Create an Azure AI Search solution
-  description: "Create an Azure AI Search solution"
-  ms.date: 12/11/2023
+  description: Create an Azure AI Search solution
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module-standard-task-based
+  ms.date: 12/11/2023
   ms.service: cognitive-search
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Create an Azure AI Search solution
 summary: Unlock the hidden insights in your data with Azure AI Search.
 abstract: |

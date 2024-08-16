@@ -4,11 +4,10 @@ title: Exercise - Secure an Azure Sphere application
 metadata:
   title: Exercise - Secure an Azure Sphere application
   description: In this section, we secure an Azure Sphere application.
-  ms.date: 12/11/2020
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/8b-exercise-azure-sphere-security.md)]

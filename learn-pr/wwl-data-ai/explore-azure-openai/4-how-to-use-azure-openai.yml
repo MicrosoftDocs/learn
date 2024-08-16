@@ -3,11 +3,13 @@ uid: learn.wwl.explore-azure-openai.how-to-use-azure-openai
 title: How to use Azure OpenAI
 metadata:
   title: How to use Azure OpenAI
-  description: "Understand how to access Azure OpenAI Service and ways of using the Azure OpenAI Studio, including the Playground feature."
-  ms.date: 07/10/2024
+  description: Understand how to access Azure OpenAI Service and ways of using the Azure OpenAI Studio, including the Playground feature.
   author: sherzyang
   ms.author: sheryang
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai

@@ -3,11 +3,13 @@ uid: learn.wwl.deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.de
 title: Deploy your model to a managed endpoint
 metadata:
   title: Deploy your model to a managed endpoint
-  description: "Deploy your model to a managed endpoint"
-  ms.date: 07/10/2024
+  description: Deploy your model to a managed endpoint
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

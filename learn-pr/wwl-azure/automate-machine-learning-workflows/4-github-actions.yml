@@ -3,11 +3,13 @@ uid: learn.wwl.automate-machine-learning-workflows.github-actions
 title: GitHub Actions
 metadata:
   title: GitHub Actions
-  description: "GitHub Actions"
-  ms.date: 07/10/2024
+  description: GitHub Actions
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
