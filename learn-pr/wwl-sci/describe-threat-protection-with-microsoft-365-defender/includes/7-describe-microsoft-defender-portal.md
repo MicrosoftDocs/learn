@@ -121,7 +121,7 @@ The identity inventory provides a comprehensive view of all corporate identities
 
 ### Microsoft Sentinel
 
-Some Microsoft Sentinel capabilities, like the unified incident queue, are integrated with Microsoft Defender XDR in the unified security operations platform. So for example, Sentinel incidents are accessed through the incidents and alerts page of the Defender portal, along with incidents from other Microsoft Defender services. Many other Microsoft Sentinel capabilities are available in the Microsoft Sentinel section of the Defender portal.
+Some Microsoft Sentinel capabilities, like the unified incident queue, are accessed through the incidents and alerts page of the Defender portal, along with incidents from other Microsoft Defender services. Many other Microsoft Sentinel capabilities are available in the Microsoft Sentinel section of the Defender portal.
 
 For more information, see the module "Describe the capabilities in Microsoft Sentinel," whose link is included in the summary and resources unit.
 
@@ -161,7 +161,7 @@ SOC optimization surfaces ways you can optimize your security controls, gaining 
 
 ### Reports
 
-Reports are unified in Microsoft Defender XDR. Admins can start with a general security report, and branch into specific reports about endpoints, email & collaboration, cloud apps, and identities. The links here are dynamically generated based upon workload configuration.
+Reports are unified in the Microsoft Defender portal. Admins can start with a general security report, and branch into specific reports about endpoints, email & collaboration, cloud apps, infrastructure, and identities. The links here are dynamically generated based upon workload configuration.
 
 :::image type="content" source="../media/reports.png" lightbox="../media/reports.png" alt-text="A screenshot of the reports page in the Microsoft Defender portal.":::
 
