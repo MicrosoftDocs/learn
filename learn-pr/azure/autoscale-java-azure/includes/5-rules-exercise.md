@@ -1,4 +1,4 @@
-In this exercise, we'll look at exercises for setting up and triggering autoscaling of your sample application.
+In this exercise, we look at exercises for setting up and triggering autoscaling of your sample application.
 
 ## Rule exercise
 
@@ -9,11 +9,11 @@ The customers-service app scales **out** when the tomcat request count exceeds 1
 ## View Autoscale setup in the Azure portal
 
 1. In a new web browser tab, open the Azure portal.
-2. From the top search box, search for **Azure Spring Apps**.
-3. From the Azure Spring Apps Overview page, select your Azure Spring Apps instance from the results.
-4. Select the **Apps** tab under **Settings** in the menu on the left navigation pane.
-5. Select the customers-service application. You should then see the application's **Overview** page.
-6. Go to the **Scale-out** tab under Settings in the menu on the left side of the page.
+1. From the top search box, search for **Azure Spring Apps**.
+1. From the Azure Spring Apps Overview page, select your Azure Spring Apps instance from the results.
+1. Select the **Apps** tab under **Settings** in the menu on the left navigation pane.
+1. Select the customers-service application. You should then see the application's **Overview** page.
+1. Go to the **Scale-out** tab under Settings in the menu on the left side of the page.
 
 :::image type="content" source="../media/scale-settings-2.png" alt-text="Screenshot of the scale out setting in the Azure portal." lightbox="../media/scale-settings-2.png":::
 
