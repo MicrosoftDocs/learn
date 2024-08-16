@@ -31,7 +31,7 @@ Unity Catalog provides column-level security to restrict access to specific colu
 
 **Dynamic data masking**: Configure data masking rules to obscure sensitive data automatically when queried by unauthorized users.
 
-:::image type="content" source="../media/mask-data.png" alt-text="Image showing a high level overivew of Unity Catalog." lightbox="../media/mask-data.png":::
+:::image type="content" source="../media/mask-data.png" alt-text="Image showing a simple example of data masking." lightbox="../media/mask-data.png":::
 
 
 ## Auditing and Monitoring

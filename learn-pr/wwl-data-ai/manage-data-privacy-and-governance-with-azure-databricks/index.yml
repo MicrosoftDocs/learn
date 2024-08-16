@@ -39,7 +39,7 @@ units:
 - learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.manage-access-controls
 - learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.implement-data-masking-and-anonymization
 - learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.use-compliance-frameworks-and-secure-data-sharing
-- learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.leverage-data-lineage-and-metadata-management
+- learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.use-data-lineage-and-metadata-management
 - learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.implement-governance-automation
 - learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.exercise
 - learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.knowledge-check
