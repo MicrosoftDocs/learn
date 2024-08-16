@@ -18,6 +18,6 @@ Anonymization, another crucial aspect of data protection, involves altering data
 
 The integration of data protection techniques with Unity Catalog on the Azure Databricks platform secures data and simplifies adherence to data protection regulations. Unity Catalog provides a comprehensive audit trail for data access and manipulation, which is vital for regulatory compliance and security monitoring. By logging all access and transformation activities, organizations can provide evidence of compliance and quickly respond to potential data breaches or unauthorized access incidents.
 
-:::image type="content" source="../media/more-masking.png" alt-text="Image showing how a user might view data masking." lightbox="../media/more-masking":::
+:::image type="content" source="../media/more-masking.png" alt-text="Image showing how a user might view data masking." lightbox="../media/more-masking.png":::
 
 To implement data masking and anonymization effectively in Azure Databricks using Unity Catalog, organizations should start by identifying the data that requires protection. This approach involves classifying data based on sensitivity and regulatory requirements. Once classified, data engineers can use Unity Catalog to set up the appropriate data masking and anonymization rules. Continuous monitoring and periodic reviews of these settings are essential to ensure they remain effective as the regulatory landscape and organizational data use evolve.
