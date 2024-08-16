@@ -1,5 +1,3 @@
-
-
 Windows 365 is a cutting-edge cloud-based service that simplifies how you create and manage virtual machines. It automatically generates a new Windows virtual machine called Cloud PCs for your end users. With Windows 365, each Cloud PC is assigned to an individual user, providing them with a dedicated Windows device. By using Windows 365, you can experience the benefits of Microsoft 365, which include increased productivity, enhanced security, and seamless collaboration. With these features, Windows 365 offers a flexible and scalable solution to support your organization's growth and changing needs.
 
 Windows 365 is available in two editions:
