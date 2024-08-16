@@ -6,7 +6,7 @@ Unity Catalog allows for:
 - Unified data and assets
 - Unified existing catalogs
 
-:::image type="content" source="../media/unity-catalog-high-level-overview.png" alt-text="Screenshot of a high-level overview of how data is unified across assets, objects, and platforms." lightbox="../media/unity-catalog-high-level-overview-expanded.png":::
+:::image type="content" source="../media/unity-catalog-high-level-overview-expanded.png" alt-text="Screenshot of a high-level overview of how data is unified across assets, objects, and platforms." lightbox="../media/unity-catalog-high-level-overview-expanded.png":::
 
 
 The Unity Catalog query lifecycle shows a comprehensive cycle for applying a robust security architecture, including:
