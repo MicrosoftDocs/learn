@@ -45,11 +45,11 @@ In this example, UDP is blocked on the direct VPN connection and the ICE/STUN pr
 
 Both RDP Shortpath for public networks and managed networks are configured, however a UDP connection couldn't be established using direct VPN connection. A firewall or NAT device is also blocking a direct UDP connection using the public network (internet), but an indirect UDP connection can be relayed using TURN between the client device and the session host over a public network (internet).
 
-:::image type="content" source="../media/rdp-shortpath-scenario-6-75033899.png" alt-text="Diagram that shows UDP is blocked on the direct VPN connection and a direct connection using a public network also fails. TURN relays the connection over the public network.":::
+:::image type="content" source="../media/rdp-shortpath-scenario-6-75033899.png" alt-text="Diagram that shows UDP is blocked on the direct VPN connection and a direct connection.":::
 
 
 ### Scenario 7
 
 Both RDP Shortpath for public networks and managed networks are configured, however a UDP connection couldn't be established. In this instance, RDP Shortpath will fail and the connection will fall back to TCP-based reverse connect transport.
 
-:::image type="content" source="../media/rdp-shortpath-scenario-7-69d12404.png" alt-text="Diagram that shows a UDP connection couldn't be established. In this instance, RDP Shortpath will fail and the connection will fall back to TCP-based reverse connect transport.":::
+:::image type="content" source="../media/rdp-shortpath-scenario-7-69d12404.png" alt-text="Diagram that shows a UDP connection couldn't be established.":::
