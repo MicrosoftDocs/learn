@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.use-compliance-frameworks-and-secure-data-sharing
-title: Implement data masking and anonymization in Azure Databricks
+title: Use compliance frameworks and secure data sharing in Azure Databricks
 metadata:
-  title: Implement data masking and anonymization in Azure Databricks
-  description: "Learn ways to anonymize data and apply data masking on attributes in Azure Databricks."
+  title: Use compliance frameworks and secure data sharing in Azure Databricks
+  description: "Work with tools that allow for compliance with oversight sources and secure data sharing across systems."
   ms.date: 08/14/2024
   author: wwlpublish
   ms.author: jamesh

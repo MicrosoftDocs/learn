@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.leverage-data-lineage-and-metadata-management
-title: Implement data masking and anonymization in Azure Databricks
+title: Leverage data lineage and metadata management
 metadata:
-  title: Implement data masking and anonymization in Azure Databricks
-  description: "Learn ways to anonymize data and apply data masking on attributes in Azure Databricks."
+  title: Leverage data lineage and metadata management
+  description: "Learn the value of metadata management and data lineage when moving data across systems."
   ms.date: 08/14/2024
   author: wwlpublish
   ms.author: jamesh

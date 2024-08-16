@@ -3,7 +3,7 @@ uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.implemen
 title: Implement governance automation in Azure Databricks
 metadata:
   title: Implement governance automation in Azure Databricks
-  description: "Learn ways to anonymize data and apply data masking on attributes in Azure Databricks."
+  description: "Learn ways to automate governance within Azure Databricks."
   ms.date: 08/14/2024
   author: wwlpublish
   ms.author: jamesh

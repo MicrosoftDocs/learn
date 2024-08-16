@@ -33,9 +33,9 @@ Utilizing Databricks’ auditing and monitoring features ensure compliance and t
 **Integration with monitoring tools**: Integrate with Azure Monitor and other security information and event management (SIEM) tools to continuously monitor data access and usage.
 
 ## Best Practices and Compliance
-Adhere to best practices and regulatory requirements.
+Adhere to best practices and regulatory requirements through regular security assessments and compliance.
 
 **Regular security assessments**: Conduct regular security assessments and reviews to identify and mitigate risks.
-**Compliance standards**: Ensure that your implementation meets relevant compliance standards such as GDPR, HIPAA, or PCI-DSS depending on your industry and location.
+**Compliance standards**: Ensure that your implementation meets relevant compliance standards depending on your industry and location.
 
 By following these steps, you can ensure that your data is secure and managed appropriately within Azure Databricks using Unity Catalog, balancing accessibility with security.

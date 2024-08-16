@@ -29,6 +29,8 @@ Azure Databricks fosters secure collaboration by allowing data scientists and an
 ## Practical implementations
 Azure Databricks and Unity Catalog enable organizations to configure compliance-aligned policies, enforce data sharing agreements, and facilitate regular compliance audits. They also provide continuous monitoring and incident response capabilities, ensuring secure data sharing and compliance with regulatory standards.
 
+:::image type="content" source="../media/unity-catalog.png" alt-text="Image showing roles and systems of record." lightbox="../media/unity-catalog.png":::
+
 **Configuring Unity Catalog for compliance:**
 Implementing Unity Catalog involves configuring policies that align with compliance requirements. This approach includes setting up access controls, defining data classification policies, and ensuring proper audit logging. Organizations can tailor these configurations to meet specific regulatory standards.
 
