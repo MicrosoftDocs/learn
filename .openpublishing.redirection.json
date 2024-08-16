@@ -31548,6 +31548,61 @@
       "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-sustainability/3-discover-ai-sustainability.md",
       "redirect_url": "/training/modules/define-microsoft-ai-strategy-sustainability/",
       "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-finance/2-discover-ai-finance.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-finance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-healthcare/2-explore-ai-goals-challenges-healthcare.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-healthcare/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-healthcare/3-identify-ai-sciences-pharmaceuticals-healthcare-sector.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-healthcare/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-healthcare/4-identify-ai-health-providers.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-healthcare/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-image-builder/2-what-is-azure-image-builder.yml",
+      "redirect_url": "/training/modules/intro-to-azure-image-builder/3-how-does-azure-image-builder-work",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-image-builder/includes/2-what-is-azure-image-builder.md",
+      "redirect_url": "/training/modules/intro-to-azure-image-builder/3-how-does-azure-image-builder-work",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/10-knowledge-check.md",
+      "redirect_url": "/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/11-summary.md",
+      "redirect_url": "/training/modules/leverage-ai-tools/6b-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/7-discover-business-value-applying-devops.md",
+      "redirect_url": "/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/8-explore-potential-azure-cognitive-services.md",
+      "redirect_url": "/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/9-discover-business-value-azure-open-ai-service.md",
+      "redirect_url": "/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
     }
   ]
 }
