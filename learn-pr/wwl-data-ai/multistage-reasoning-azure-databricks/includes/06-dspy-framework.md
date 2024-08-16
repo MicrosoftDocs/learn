@@ -55,7 +55,7 @@ By defining modules, you use a more structured and scalable approach to working 
 > [!Tip]
 > Learn more about [modules](https://dspy-docs.vercel.app/docs/building-blocks/modules?azure-portal=true).
 
-## Optimize your DSPy program
+### Optimize your DSPy program
 
 In DSPy, **optimizers** (formerly known as *teleprompters*) play a role in enhancing the performance of LLMs.
 
