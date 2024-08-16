@@ -1,10 +1,8 @@
 Retail business is complex. It involves many different professional profiles, tasks, and processes. Accordingly, AI solutions can fit into several steps of the business to optimize and expand it.
 
-First, Shelley Bransten shares some key insights on customer cases and opportunities in the following video. Bransten is Corporate Vice President of Retail, Consumer Goods, and Gaming Industries at Microsoft.
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6c7f31a3-ae3d-422b-9506-b0fb496d60f6]
-
 ## Productivity
+
+![Photograph showing person standing with a tablet.](../media/3-point-of-sale.jpg)
 
 Boosting productivity is one of the major priorities of today’s organizations. Products such as Microsoft 365 Copilot and Microsoft Power BI include features to make you more productive.
 
@@ -15,6 +13,8 @@ Boosting productivity is one of the major priorities of today’s organizations.
 
 ## Contextual interactions
 
+![Photograph showing person shopping on a tablet holding a credit card.](../media/3-online-shopper.jpg)
+
 Current shopping experiences generate great amounts of data. AI solutions allow customers and retail professionals to interact with a conversational interface to get more insights out of this data.
 
 * **Offer tailored product recommendations**: Microsoft AI products like Azure AI Services and Dynamics 365 Copilot include features for hyper-personalization. These functionalities enable your teams to suggest products based on browsing history or past purchases.
@@ -24,6 +24,8 @@ Current shopping experiences generate great amounts of data. AI solutions allow 
 
 ## Amplified automation
 
+![Photograph showing worker holding a tablet in a grocery store.](../media/3-grocery-store.jpg)
+
 A typical AI strategy to improve productivity is automation, which can be useful in many retail jobs.
 
 * **Search complex documents**: Products like Azure AI Document Intelligence, Azure OpenAI Services, and Azure AI Search enable you to easily find insights in lengthy, dense documents. Thanks to these tools, retail organizations can process and organize sales data, customer feedback, and inventory details.
@@ -32,10 +34,16 @@ A typical AI strategy to improve productivity is automation, which can be useful
 
 ## Intuitive discovery
 
+![Photograph showing person at a desk in a video call while reviewing reports.](../media/3-store-reports.jpg)
+
 There are other ways in which AI enables retail organizations to get more insight from already available information. This task is vital in post-sales to fully understand successful and unsuccessful customer experiences.
 
 * **Analyze post-sales data**: Customers leave much information for retailers to use, such as customer interactions, product reviews, and online conversations. However, the amount and diversity of information is often challenging. Azure OpenAI Services performs multi-informational search to extract insights from all this data.
 * **Improve contact-center analytics**: Other source of insights in post-sales is the calls received in the contact center. Azure AI Services and Microsoft Power BI include features to help with this task. For example, AI solutions can transcribe and analyze customer service calls for actionable insights. You can also provide real-time coaching for contact-center staff. Finally, the AI systems feed new and updated information into contact-center knowledge bases to improve responses for customers.
 * **Benefit from sentiment analysis**: In post-sales, you need more than abstract data, you must understand how the customer feels about the purchase. Azure AI Services incorporates AI models to detect these nuances. You can use them to gauge customer satisfaction, brand perception, and product opinions.
+
+> [!TIP]
+> Think about what other opportunities you hope to realize with AI in your organization.
+> ![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Now, let’s see how real companies are implementing these scenarios. The next unit explores initiatives to improve customer experience in physical grocery stores.
