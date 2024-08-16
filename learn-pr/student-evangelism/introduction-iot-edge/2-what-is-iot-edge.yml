@@ -4,11 +4,11 @@ title: What is IoT Edge?
 metadata:
   title: What is IoT Edge?
   description: What is IoT Edge?
-  ms.date: 09/22/2019
+  ms.date: 07/30/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
+  ms.custom: team=cloud_advocates
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/2-what-is-iot-edge.md)]

@@ -1,6 +1,6 @@
-In this module, you explored the resiliency capabilities of Azure Arc-enabled SQL Managed Instance. These capabilities made it possible for you to implement high availability and disaster recovery provisions that satisfy the business requirements for SQL Server databases hosted in overseas datacenter and the US government contract-related data. 
+In this module, you explored the resiliency capabilities of Azure Arc-enabled SQL Managed Instance. These capabilities made it possible for you to implement high-availability and disaster-recovery provisions that satisfy the business requirements for SQL Server databases hosted in overseas datacenters and the US government contract-related data. 
 
-With the General Purpose service tier, you leveraged high availability of the underlying Kubernetes platform. For more demanding workloads, you implemented the Business Critical service tier, including readable secondaries and Azure failover groups. Additionally, you verified that Azure Arc-enabled SQL Managed Instance supports automatic backups with point-in-time restore. 
+With the General Purpose service tier, you leveraged the high availability of the underlying Kubernetes platform. For more demanding workloads, you implemented the Business Critical service tier, including readable secondaries and Azure failover groups. Additionally, you verified that Azure Arc-enabled SQL Managed Instance supports automatic backups with point-in-time restore.
 
 ## References
 

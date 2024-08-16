@@ -2,11 +2,11 @@
 uid: learn.wwl.apply-prompt-engineering-azure-openai.introduction
 title: Introduction
 metadata:
-  title: introduction
+  title: Introduction
   description: Introduction to Azure OpenAI prompt engineering.
   author: ivorb
   ms.author: berryivor
-  ms.date: 07/10/2024
+  ms.date: 08/06/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

@@ -3,7 +3,7 @@ uid: learn.secure-aspnet-core-identity.6-multi-factor-authentication
 metadata:
   title: Multifactor authentication in ASP.NET Core
   description: Learn about multifactor authentication support in ASP.NET Core web apps.
-  ms.date: 05/19/2023
+  ms.date: 08/07/2024
   author: camsoper
   ms.author: casoper
   ms.manager: markl
