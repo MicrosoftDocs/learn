@@ -37,7 +37,7 @@ units:
 - learn.wwl.perform-incremental-processing-with-spark-structured-streaming.optimize-delta-lake
 - learn.wwl.perform-incremental-processing-with-spark-structured-streaming.handling-late-data-and-out-of-order-events
 - learn.wwl.perform-incremental-processing-with-spark-structured-streaming.monitoring-performance-tuning-strategies
-- learn.wwl.perform-incremental-processing-with-spark-structured-streaming.exercise-01-transforming-with-spark-structured-streaming
+- learn.wwl.perform-incremental-processing-with-spark-structured-streaming.exercise
 - learn.wwl.perform-incremental-processing-with-spark-structured-streaming.knowledge-check
 - learn.wwl.perform-incremental-processing-with-spark-structured-streaming.summary
 badge:

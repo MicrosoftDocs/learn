@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: module
-  ms.service: synapse-analytics
+  ms.service: azure-synapse-analytics
 title: Load data into a relational data warehouse
 summary: A core responsibility for a data engineer is to implement a data ingestion solution that loads new data into a relational data warehouse.
 abstract: |

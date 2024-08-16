@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-data-factory
 title: Integrate data with Azure Data Factory or Azure Synapse Pipeline
 summary: In this module, you'll examine Azure Data Factory and the core components that enable you to create large scale data ingestion solutions in the cloud
 abstract: |

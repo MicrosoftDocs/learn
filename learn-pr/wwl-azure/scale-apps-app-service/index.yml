@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: app-service
+  ms.service: azure-app-service
   ai-usage: human-only
 title: Scale apps in Azure App Service
 summary: Learn how autoscale operates in App Service and how to identify autoscale factors, enable autoscale, and how to create sound autoscale conditions.
