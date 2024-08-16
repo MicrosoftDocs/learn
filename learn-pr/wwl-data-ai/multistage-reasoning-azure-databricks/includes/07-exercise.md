@@ -1,4 +1,4 @@
-Now it's your chance to explore the use of language models with Azure Databricks.
+Now it's your chance to design multi-stage reasoning systems with Azure Databricks.
 
 > [!NOTE]
 > To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.

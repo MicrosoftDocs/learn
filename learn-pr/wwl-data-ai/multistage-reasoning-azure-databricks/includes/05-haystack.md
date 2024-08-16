@@ -1,14 +1,59 @@
+**Haystack** is an open-source framework designed for multi-stage reasoning systems that include document retrieval, text generation, and summarization.
 
-Haystack is an open-source framework designed for building robust, production-ready systems that integrate natural language processing (NLP) techniques for tasks like question answering, semantic search, and document retrieval. Developed by deepset, Haystack provides a modular and flexible architecture that allows developers to create powerful NLP pipelines tailored to their specific use cases. It leverages state-of-the-art transformer models and offers easy integration with various data sources, making it an ideal choice for enterprises looking to implement scalable and efficient NLP solutions. Let us look at the key components of Haystack.
+Developed by deepset, Haystack provides a modular and flexible architecture that allows you to create pipelines tailored to your specific use case.
 
-## Generators
-Generators in Haystack are components responsible for generating responses based on input queries. These models are typically built using generative pre-trained transformers (GPT) and can produce text outputs by understanding the context and semantics of the query. Generators are especially useful in scenarios where the answer is not directly available in the existing documents, enabling the creation of human-like responses by synthesizing information from multiple sources. They play a crucial role in tasks like question answering, where generating coherent and contextually accurate answers is essential.
+## Explore the main components of Haystack
 
-## Retrievers
-Retrievers in Haystack are designed to identify and extract relevant documents or passages from a large corpus based on a given query. They operate as the first step in the NLP pipeline by narrowing down the search space, allowing more sophisticated models to focus on a smaller, more relevant subset of data. Retrievers can be categorized into two main types: sparse retrievers, which rely on traditional keyword-based methods like TF-IDF, and dense retrievers, which use vector embeddings to capture semantic similarities. Their efficiency and accuracy in filtering out irrelevant information are key to the overall performance of the NLP system.
+When you build a multi-reasoning system with Haystack, you need to be familiar with the main components:
 
-## Document Stores
-Document stores in Haystack serve as the backbone for storing, indexing, and managing the data that the retrievers and generators interact with. These stores can handle various types of data, including text documents, tables, and structured records. Haystack supports multiple document store backends, such as Elasticsearch, SQL databases, and In-Memory stores, allowing for flexibility depending on the scale and requirements of the application. The document store not only holds the raw data but also manages metadata and embeddings, ensuring that the system can efficiently retrieve and process information.
+:::image type="content" source="../media/haystack-overview.png" alt-text="Diagram of the main components of a Haystack architecture." lightbox="../media/haystack-overview.png":::
 
-## Pipelines
-Pipelines in Haystack are the orchestrating layers that connect the different components—retrievers, generators, and document stores—into a coherent workflow. They define how queries are processed and how the results are generated and returned to the user. Pipelines can be simple, involving just a retriever and a reader, or complex, integrating multiple stages with custom logic and multiple components. Haystack allows for easy customization of these pipelines, enabling developers to tailor the system to meet specific performance, accuracy, or latency requirements. This modularity and flexibility make Haystack a powerful tool for creating end-to-end NLP solutions.
+1. **Pipelines**: A directed multigraph of components.
+1. **Generators**: An interface to generate text based on a prompt.
+1. **Retriever**: A component that retrieves relevant documents for a query.
+1. **Document stores**: A database for your documents.
+
+Let's explore each of these components in more detail.
+
+### Build your AI system with pipelines
+
+**Pipelines** in Haystack are the orchestrating layers that connect the different components, like retrievers and generators, into a coherent workflow.
+
+Pipelines define how queries are processed and how the results are generated and returned to the user. Pipelines can be simple, using just a retriever and a Large Language Model (LLM) to generate a response. Alternatively, they can be more complex, integrating multiple components.
+
+> [!Tip]
+> Learn more about [Haystack pipelines](https://docs.haystack.deepset.ai/docs/pipelines?azure-portal=true) and how to define tasks as [components](https://docs.haystack.deepset.ai/docs/components?azure-portal=true).
+
+### Interact with LLMs through generators
+
+**Generators** in Haystack are components responsible for using LLMs to generate responses based on input queries. You can configure generators to interact with both open-source models and privately hosted model, giving you the flexibility and control over how your data is processed.
+
+> [!Tip]
+> Explore the available [generators](https://docs.haystack.deepset.ai/docs/generators?azure-portal=true) and how to [choose the right generator](https://docs.haystack.deepset.ai/docs/choosing-the-right-generator?azure-portal=true).
+
+### Find relevant documents with retrievers
+
+Retrievers in Haystack are designed to identify and extract relevant documents or passages from a large corpus based on a given query.
+
+Retrievers can be categorized into two main types:
+
+- **Sparse** retrievers, which rely on traditional *keyword-based* methods like TF-IDF (Term Frequency-Inverse Document Frequency).
+- **Dense** retrievers, which use *vector embeddings* to capture semantic similarities.
+
+The efficiency and accuracy of retrievers in filtering out irrelevant information are key to the overall performance of your multi-stage reasoning system.
+
+> [!Tip]
+> Learn more about [retrievers](https://docs.haystack.deepset.ai/docs/retrievers?azure-portal=true).
+
+### Store your data in document stores
+
+**Document stores** in Haystack serve as the backbone for storing, indexing, and managing the data that the retrievers and generators interact with.
+
+These stores can handle various types of data, including text documents, tables, and structured records.
+
+The document store not only holds the raw data but also manages metadata and embeddings, ensuring that the system can efficiently retrieve and process information.
+
+Haystack offers different types of document stores, so you can choose the vector database that best fits your needs.
+
+> [!Tip]
+> Learn more about [document stores](https://docs.haystack.deepset.ai/docs/document-store?azure-portal=true) and how to [choose a document store](https://docs.haystack.deepset.ai/docs/choosing-a-document-store?azure-portal=true).

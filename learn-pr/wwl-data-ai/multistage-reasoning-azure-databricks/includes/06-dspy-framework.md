@@ -1,18 +1,69 @@
-# Exploring DSPy Concepts
+**DSPy** is a framework designed to help you optimize the prompt you sent to a Large Language Model (LLM), reducing the need for prompt engineering.
 
-DSPy, or Declarative System Programming in Python, is an emerging framework designed to streamline the development of complex, multi-stage reasoning systems. By leveraging declarative paradigms, DSPy enables developers to define the desired outcomes and relationships between various system components without delving into procedural logic. This abstraction simplifies the construction of intricate systems, allowing for more efficient debugging, maintenance, and scalability. DSPy is particularly valuable in domains requiring sophisticated decision-making processes, such as AI, data science, and dynamic content generation.
+The DSPy framework allows you to program LLMs rather than merely prompting them. This approach shifts the focus from tweaking the LLM itself to designing a robust overarching system. Think of the LLM as a device that executes instructions through an abstraction similar to deep neural networks (DNNs).
 
-## Signatures in DSPy
-In DSPy, signatures serve as a foundational concept that defines the structure and behavior of system components. A signature encapsulates the inputs, outputs, and relationships of a function or module, effectively acting as a blueprint for how the system's elements interact. By specifying signatures, developers can ensure that each component adheres to a consistent interface, facilitating modularity and reusability across the system. This approach not only reduces the complexity of integrating new components but also enhances the system's robustness by making it easier to validate and verify the correctness of the interactions between different modules.
+## Explore the main components of Haystack
 
-Signatures also play a crucial role in enabling DSPy's declarative nature. By abstracting the details of how a task is performed, signatures allow developers to focus on the "what" rather than the "how." This abstraction layer is essential for building complex systems, where understanding and managing intricate dependencies between components can be challenging. With signatures, DSPy can automatically handle these dependencies, ensuring that the system operates as intended without requiring the developer to manage every detail manually.
+In the DPSy framework, hand-written prompts are replaced by **signatures** (1). A signature is handled in a **module** (2), which serves as an abstraction layer over a prompt.
 
-## Teleprompters in DSPy
-Teleprompters in DSPy are specialized components designed to guide the flow of execution within a system. Similar to a traditional teleprompter, which assists speakers in delivering their lines smoothly, DSPy teleprompters help orchestrate the sequence of operations, ensuring that each component executes in the correct order and context. This feature is particularly useful in multi-stage reasoning systems, where the timing and order of operations are critical to achieving the desired outcome.
+:::image type="content" source="../media/dspy-framework.png" alt-text="Diagram of the main components of the DSPy framework." lightbox="../media/dspy-framework.png":::
 
-Teleprompters provide a high level of control over the execution process, allowing developers to define conditional paths, loop through operations, and manage parallel execution of tasks. This flexibility makes it easier to design systems that can adapt to different scenarios and handle complex workflows efficiently. Moreover, by abstracting the control flow logic into teleprompters, DSPy allows developers to focus on defining the relationships between components, further simplifying the development process.
+Modules are the building blocks for the multi-stage reasoning systems, or **DSPy program** (3), you build with the DSPy framework. Finally, you can use **optimizers** to tune the parameters of one or more modules of your DSPy program.
 
-## Automatic Compiler in DSPy
-The automatic compiler in DSPy is a powerful tool that transforms declarative system definitions into executable code. By analyzing the signatures and teleprompters within a DSPy system, the compiler automatically generates the necessary code to perform the specified operations, managing dependencies and optimizing execution paths. This process eliminates the need for manual coding of complex logic, reducing the likelihood of errors and significantly speeding up the development process.
+Let's explore the main concepts in more detail.
 
-One of the key advantages of DSPy's automatic compiler is its ability to optimize system performance. The compiler can analyze the entire system, identify potential bottlenecks, and make adjustments to ensure that the system runs as efficiently as possible. This capability is particularly important in large-scale systems, where performance optimization can be challenging and time-consuming when done manually. By automating this process, DSPy enables developers to build more efficient and scalable systems with less effort.
+### Declare LLM tasks with signatures
+
+In DSPy, **signatures** play a crucial role in interacting with LLMs.
+
+Rather than specifying how to prompt the LLM, signatures describe *what* the LLM should accomplish.
+
+For example, a signature can specify behavior like:
+
+- `"question -> answer"`: Convert a question into an answer.
+- `"document -> summary"`: Summarize a long document.
+- `"context, question -> answer"`: Generate a rational response based on a given context and question.
+
+Signatures are responsible for managing the structured formatting and parsing logic required for these transformations. They can be compiled into self-improving and pipeline-adaptive prompts or fine-tunes, ensuring that the system evolves and adapts over time.
+
+DSPy infers the role of fields within a signature by analyzing their names and traces (input/output examples). This inference capability allows DSPy to automatically understand the purpose of each field and apply the appropriate transformation logic.
+
+> [!Tip]
+> Learn more about [signatures](https://dspy-docs.vercel.app/docs/building-blocks/signatures?azure-portal=true).
+
+### Handle signatures with modules
+
+In the DSPy framework, a **module** is a parameterized *layer* that expresses a signature by abstracting a prompting technique.
+
+A module encapsulates a specific method of interacting with a LLM, and can be reused across different tasks. Modules in DSPy are designed to be as flexible and modular as possible, allowing for easy integration and customization.
+
+For example, DSPy includes modules like:
+
+- `dspy.ChainOfThought`: Used for generating a sequence of thoughts or steps to arrive at an answer.
+- `dspy.ReAct`: Used for generating rational responses based on a given context and question.
+
+These modules represent different prompting techniques that can be applied to the LLM.
+
+A module in DSPy is like a callable function. It takes several parameters, including:
+
+- **The LLM to call**: This specifies which language model to use for the task.
+- **The prompt instructions**: These are the specific instructions or guidelines that the LLM should follow when generating a response.
+- **The demonstrations used as few-shot prompts or fine-tuning data**: These are examples provided to the LLM to help it understand the task better and generate more accurate responses.
+
+By abstracting the prompting technique into a module, DSPy allows for a more structured and scalable approach to working with LLMs. This modularity makes it easier to experiment with different techniques and optimize the performance of the LLM for various tasks.
+
+> [!Tip]
+> Learn more about [modules](https://dspy-docs.vercel.app/docs/building-blocks/modules?azure-portal=true).
+
+## Optimize your DSPy program
+
+In DSPy, **optimizers** (formerly known as *teleprompters*) play a role in enhancing the performance of LLMs.
+
+An optimizer takes the **program**, a **training set**, and a **metric**, and returns a new optimized program. This process ensures that the LLM is fine-tuned to perform specific tasks more effectively.
+
+The optimizer works by analyzing the provided training set and the desired metric, which could be accuracy, efficiency, or any other relevant measure. It then adjusts the program to better align with these goals. This iterative process allows the LM to improve over time, adapting to new data and evolving requirements.
+
+By using optimizers, DSPy can automate the process of prompt engineering, reducing the need for manual adjustments and ensuring that the LLM remains robust and scalable. This approach not only saves time but also enhances the overall performance and reliability of the system.
+
+> [!Tip]
+> Learn more about [optimizers]https://dspy-docs.vercel.app/docs/building-blocks/optimizers?azure-portal=true).

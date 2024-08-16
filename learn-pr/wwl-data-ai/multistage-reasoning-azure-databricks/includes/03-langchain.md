@@ -82,7 +82,9 @@ After configuring the agent and required tools, you can ask questions on your da
 agent.run("What is the longest trip distance and how long did it take?")
 ```
 
-When you run the agent, a new chain is created and you can review the multi-reasoning thought process in the output:
+The output of the notebook cell running the agent in this case is `The longest trip distance was 7.75 miles, and it took 27 minutes.`
+
+When you run the agent, a new chain is created. You can review the multi-reasoning thought process in the output to understand how the final response is generated:
 
 ```
 > Entering new  chain...
@@ -123,8 +125,6 @@ Observation: [(0.77, datetime.datetime(2016, 1, 1, 0, 4, 30), datetime.datetime(
 Thought: I now know the final answer.
 Final Answer: The longest trip distance was 7.75 miles, and it took 27 minutes.
 ```
-
-The output of the notebook cell running the agent in this case is `The longest trip distance was 7.75 miles, and it took 27 minutes.`
 
 > [!Tip]
 > Learn more about using [LangChain on Azure Databricks for LLM development](/azure/databricks/large-language-models/langchain).
