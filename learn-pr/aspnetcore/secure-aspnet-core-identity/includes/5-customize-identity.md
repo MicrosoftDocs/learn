@@ -43,27 +43,27 @@ In this section, you're going to create and customize the Identity UI files to b
 
 ## Extend `IdentityUser`
 
-You've been given a new requirement to store your users' names. Since the default `IdentityUser` class doesn't contain properties for first and last names, you need to extend the `RazorPagesPizzaUser` class.
+You're given a new requirement to store your users' names. Since the default `IdentityUser` class doesn't contain properties for first and last names, you need to extend the `RazorPagesPizzaUser` class.
 
 Make the following changes to *:::no-loc text="Areas/Identity/Data/RazorPagesPizzaUser.cs":::*:
 
-    1. Add the `FirstName` and `LastName` properties:
+1. Add the `FirstName` and `LastName` properties:
 
-        [!code-csharp[](../code/areas/identity/data/razorpagespizzauser.cs?highlight=3-5,7-9)]
+    [!code-csharp[](../code/areas/identity/data/razorpagespizzauser.cs?highlight=3-5,7-15)]
 
-        The properties in the preceding snippet represent additional columns to be created in the underlying `AspNetUsers` table. Both properties are required and are therefore annotated with the `[Required]` attribute. Additionally, the `[MaxLength]` attribute indicates that a maximum length of 100 characters is allowed. The underlying table column's data type is defined accordingly. A default value of `string.Empty` is assigned since nullable context is enabled in this project and the properties are non-nullable strings.
+    The properties in the preceding snippet represent additional columns to be created in the underlying `AspNetUsers` table. Both properties are required and are therefore annotated with the `[Required]` attribute. Additionally, the `[MaxLength]` attribute indicates that a maximum length of 100 characters is allowed. The underlying table column's data type is defined accordingly. A default value of `string.Empty` is assigned since nullable context is enabled in this project and the properties are non-nullable strings.
 
-    1. Add the following `using` statement to the top of the file.
+1. Add the following `using` statement to the top of the file.
 
-        ```csharp
-        using System.ComponentModel.DataAnnotations;
-        ```
+    ```csharp
+    using System.ComponentModel.DataAnnotations;
+    ```
 
-        The preceding code resolves the data annotation attributes applied to the `FirstName` and `LastName` properties.
+    The preceding code resolves the data annotation attributes applied to the `FirstName` and `LastName` properties.
 
 ## Update the database
 
-Now that the model changes have been made, accompanying changes must be made to the database.
+Now that the model changes are made, accompanying changes must be made to the database.
 
 1. Ensure that all your changes are saved.
 1. Create and apply an EF Core migration to update the underlying data store:
@@ -94,7 +94,7 @@ Now that the model changes have been made, accompanying changes must be made to 
 
 ## Customize the user registration form
 
-You've added new columns for `FirstName` and `LastName`. Now you need to edit the UI to display matching fields on the registration form.
+You added new columns for `FirstName` and `LastName`. Now you need to edit the UI to display matching fields on the registration form.
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml":::*, add the following highlighted markup:
 
@@ -121,7 +121,7 @@ Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to display the fi
 
 [!code-cshtml[](../code/pages/shared/_loginpartial.cshtml?name=snippet_razorpagesuser&highlight=4-5,8)]
 
-`UserManager.GetUserAsync(User)` returns a nullable `RazorPagesPizzaUser` object. The null-conditional `?.` operator is used to access the `FirstName` and `LastName` properties only if the `RazorPagesPizzaUser` object is not null.
+`UserManager.GetUserAsync(User)` returns a nullable `RazorPagesPizzaUser` object. The null-conditional `?.` operator is used to access the `FirstName` and `LastName` properties only if the `RazorPagesPizzaUser` object isn't null.
 
 ## Customize the profile management form
 
@@ -138,7 +138,7 @@ You've added the new fields to the user registration form, but you should also a
 
     1. Incorporate the highlighted changes in the `LoadAsync` method:
 
-        [!code-csharp[](../code/areas/identity/pages/account/manage/index-snippets.cshtml.cs?name=snippet_loadasync&highlight=10-12)]
+        [!code-csharp[](../code/areas/identity/pages/account/manage/index-snippets.cshtml.cs?name=snippet_loadasync&highlight=11-12)]
 
         The preceding code supports retrieving the first and last names for display in the corresponding text boxes of the profile management form.
 
@@ -150,7 +150,7 @@ You've added the new fields to the user registration form, but you should also a
 
 ## Configure the confirmation email sender
 
-The first time you tested the app, you registered a user and then clicked a link to simulate confirming the user's email address. In order to send an *actual* confirmation email, you need to create an implementation of <xref:Microsoft.AspNetCore.Identity.UI.Services.IEmailSender> and register it in the dependency injection system. To keep things simple, your implementation in this unit won't actually send email to an SMTP server. It will just write the email content to the console.
+The first time you tested the app, you registered a user and then clicked a link to simulate confirming the user's email address. In order to send an *actual* confirmation email, you need to create an implementation of <xref:Microsoft.AspNetCore.Identity.UI.Services.IEmailSender> and register it in the dependency injection system. To keep things simple, your implementation in this unit doesn't actually send email to a Simple Mail Transfer Protocol (SMTP) server. It just writes the email content to the console.
 
 1. Since you're going to view the email in plain text in the console, you should change the generated message to exclude HTML-encoded text. In *Areas/Identity/Pages/Account/Register.cshtml.cs*, find the following code:
 
@@ -203,15 +203,15 @@ The first time you tested the app, you registered a user and then clicked a link
 
 That's everything! Let's test the changes to the registration form and confirmation email.
 
-1. Make sure you've saved all your changes.
+1. Make sure you saved all your changes.
 1. In the terminal pane, build the project and run the app with `dotnet run`.
-1. In your browser, navigate to the app. Select **Logout** if you're still logged in.
+1. In your browser, navigate to the app. Select **Logout** if you're logged in.
 1. Select **Register** and use the updated form to register a new user.
 
     > [!NOTE]
     > The validation constraints on the **First name** and **Last name** fields reflect the data annotations on the `FirstName` and `LastName` properties of `InputModel`.
 
-1. After registering, you're redirected to the **Register confirmation** screen. In the terminal pane, scroll up to find the console output that resembles the following:
+1. After registering, you get redirected to the **Register confirmation** screen. In the terminal pane, scroll up to find the console output that resembles the following:
 
     ```console
     Email Confirmation Message
@@ -243,7 +243,7 @@ That's everything! Let's test the changes to the registration form and confirmat
     | kai.klein@contoso.com     | kai.klein@contoso.com     |           |          |
     | jana.heinrich@contoso.com | jana.heinrich@contoso.com | Jana      | Heinrich |
 
-    The first user registered prior to adding `FirstName` and `LastName` to the schema. So the associated `AspNetUsers` table record doesn't have data in those columns.
+    The first user registered before adding `FirstName` and `LastName` to the schema. So the associated `AspNetUsers` table record doesn't have data in those columns.
 
 ## Test the changes to the profile management form
 
@@ -260,7 +260,7 @@ You should also test the changes you made to the profile management form.
 
     The app's header updates to **Hello, [First name] [Last name]!**.
 
-1. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal pane in VS Code to stop the app.
+1. To stop the app, press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal pane in VS Code.
 
 ## Summary
 

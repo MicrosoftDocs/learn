@@ -3,13 +3,13 @@ uid: learn.wwl.embrace-responsible-ai-principles-practices.summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary
+  description: "Summary"
+  ms.date: 08/12/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.date: 06/25/2024
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/9-summary.md)]
