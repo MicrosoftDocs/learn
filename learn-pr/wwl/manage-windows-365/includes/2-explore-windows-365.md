@@ -50,7 +50,7 @@ Windows 365 is available in two editions:
 | Capability | Windows 365 Business | Windows 365 Enterprise |
 | --- | --- | --- |
 | Conditional Access | Conditional Access policies can be deployed only by using Microsoft Entra ID with a Microsoft Entra ID P1 license. | Conditional Access policies can be deployed by using the Microsoft Intune admin center or Microsoft Entra ID. |
-| Per-user multi-factor authentication (MFA) | Only MFA using Microsoft Entra Conditional Access is supported. Legacy per-user MFA isn't supported. | Legacy per-user MFA is supported for user connections to Microsoft Entra hybrid joined Cloud PCs. It's not supported for user connections to Microsoft Entra joined Cloud PCs. |
+| Per-user multifactor authentication (MFA) | Only MFA using Microsoft Entra Conditional Access is supported. Legacy per-user MFA isn't supported. | Legacy per-user MFA is supported for user connections to Microsoft Entra hybrid joined Cloud PCs. It's not supported for user connections to Microsoft Entra joined Cloud PCs. |
 | Security baselines | Not supported. | Dedicated Security Baselines can be edited and deployed by using Microsoft Endpoint Manager. |
 | Microsoft Defender for Endpoint | Supported if the customer separately has the requisite E5 license. | Integration with Defender for Endpoint. If the customer has an E5 license, all Cloud PCs respond to Defender for Endpoint policies and show up in MDE dashboards. |
 
