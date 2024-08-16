@@ -11,10 +11,10 @@ Unity Catalog allows for:
 
 The Unity Catalog query lifecycle shows a comprehensive cycle for applying a robust security architecture, including:
 
- - Auditing
- - Use of IAM Roles
- - Leveraging Service principle
- - Policy enforcement
+ - Use Auditing
+ - Use identity and access management (IAM) roles
+ - Use service principle
+ - Use policy enforcement
  
     :::image type="content" source="../media/unity-catalog-query-lifecycle-security.png" alt-text="Image showing a high overview of Unity Catalog security architecture." lightbox="../media/unity-catalog-query-lifecycle-security.png":::
 
