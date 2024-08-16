@@ -3,7 +3,7 @@ Managing access controls within Azure Databricks using the Unity Catalog is an e
 ## Understanding Unity Catalog
 Unity Catalog is a unified governance solution for all data assets in Databricks, providing a central point to manage data access policies. It integrates seamlessly with Databricks workspaces to control access at the table, column, and row level.
 
-:::image type="content" source="../media/unity-catalog-high-level-overview.png" alt-text="Image showing a high level overivew of Unity Catalog." lightbox="../media/unity-catalog-high-level-overview.png":::
+:::image type="content" source="../media/unity-catalog-high-level-overview.png" alt-text="Image showing a high level overivew of Unity Catalog." lightbox="../media/unity-catalog-high-level-overview-expanded.png":::
 
 ## Setting Up Unity Catalog
 Before you can manage access controls, you need to set up Unity Catalog in your Azure Databricks environment.
@@ -31,7 +31,7 @@ Unity Catalog provides column-level security to restrict access to specific colu
 
 **Dynamic data masking**: Configure data masking rules to obscure sensitive data automatically when queried by unauthorized users.
 
-:::image type="content" source="../media/mask-data.png" alt-text="Image showing a simple example of data masking." lightbox="../media/mask-data.png":::
+:::image type="content" source="../media/mask-data.png" alt-text="Image showing a simple example of data masking." lightbox="../media/mask-data-expanded.png":::
 
 
 ## Auditing and Monitoring
