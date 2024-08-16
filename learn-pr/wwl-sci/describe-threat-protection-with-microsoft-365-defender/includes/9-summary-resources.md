@@ -11,7 +11,7 @@ Now you've completed this module, you're able to:
 To find out more about any of the topics covered in this module, visit these links:
 
 - [What is Microsoft Defender XDR?](/microsoft-365/security/defender/microsoft-365-defender)
-- [Microsoft Defender for Office 365 overview](defender-office-365/mdo-about)
+- [Microsoft Defender for Office 365 overview](/defender-office-365/mdo-about)
 - [Microsoft Defender for Identity](/defender-for-identity/what-is)
 - [Compare Microsoft endpoint security plans](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
