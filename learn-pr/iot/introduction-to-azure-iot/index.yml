@@ -3,12 +3,13 @@ uid: learn.introduction-to-azure-iot
 metadata:
   title: Introduction to Azure IoT
   description: "Evaluate whether the Azure IoT services are appropriate to your IoT scenario."
-  ms.date: 8/14/2023
+  ms.date: 08/01/2024
   author: dominicbetts
   ms.author: dobett
   manager: lizross
   ms.topic: module-intro-to-product
   ms.service: iot
+  ms.collection: ce-skilling-ai-copilot
 title: Introduction to Azure IoT
 summary: "Characterize the types of business processes that Azure IoT can add value to. Survey Azure IoT services such as IoT Hub and IoT Central that help you build IoT solutions."
 abstract: |

@@ -31599,9 +31599,44 @@
       "redirect_url": "/training/modules/leverage-ai-tools/",
       "redirect_document_id": false
     },
-      {
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/9-discover-business-value-azure-open-ai-service.md",
       "redirect_url": "/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-retail/2-explore-ai-goals-challenges-retail.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-retail/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-retail/3-discover-ai-use-cases-retail.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-retail/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/2-storage-fslogix-components.md",
+      "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/3-configure-storage-fslogix-components.md",
+      "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/4-configure-storage-accounts.md",
+      "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/5-create-file-shares.md",
+      "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/6-configure-disks.md",
+      "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
       "redirect_document_id": false
     }
   ]
