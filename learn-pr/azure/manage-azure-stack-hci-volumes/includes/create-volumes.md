@@ -1,4 +1,4 @@
-You have completed the planning stage and now are ready to create volumes in your Azure Stack HCI proof-of-concept environment. You’ll use Windows Admin Center for this purpose.
+You have completed the planning stage and now are ready to create volumes in your Azure Stack HCI proof-of-concept environment. You use Windows Admin Center for this purpose.
 
 ## Create a three-way mirror volume
 
