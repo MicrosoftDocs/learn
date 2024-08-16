@@ -19,9 +19,9 @@ abstract: |
   - Use data lineage and metadata management
   - Roll out governance automation
 prerequisites: |
-  *   Ability to navigate the Azure portal.
-  *   Familiarity of the Azure Databricks workspace.
-  *   Knowledge of Spark languages and notebooks.
+  *   Ability to navigate the Azure portal
+  *   Familiarity of the Azure Databricks workspace
+  *   Knowledge of Spark languages and notebooks
   
 iconUrl: /training/achievements/data-engineer-azure-databricks.svg
 levels:

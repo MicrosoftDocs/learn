@@ -3,7 +3,7 @@ Managing access controls within Azure Databricks using the Unity Catalog is an e
 ## Understanding Unity Catalog
 Unity Catalog is a unified governance solution for all data assets in Databricks, providing a central point to manage data access policies. It integrates seamlessly with Databricks workspaces to control access at the table, column, and row level.
 
-:::image type="content" source="../media/unity-catalog-high-level-overview.png" alt-text="Image showing a high level overivew of Unity Catalog." lightbox="../media/unity-catalog-high-level-overview-expanded.png":::
+:::image type="content" source="../media/unity-catalog-high-level-overview-expanded.png" alt-text="Screenshot of a high level overview of Unity Catalog." lightbox="../media/unity-catalog-high-level-overview-expanded.png":::
 
 ## Setting Up Unity Catalog
 Before you can manage access controls, you need to set up Unity Catalog in your Azure Databricks environment.
@@ -31,7 +31,7 @@ Unity Catalog provides column-level security to restrict access to specific colu
 
 **Dynamic data masking**: Configure data masking rules to obscure sensitive data automatically when queried by unauthorized users.
 
-:::image type="content" source="../media/mask-data.png" alt-text="Image showing a simple example of data masking." lightbox="../media/mask-data-expanded.png":::
+:::image type="content" source="../media/mask-data-expanded.png" alt-text="Screenshot of a simple example of data masking." lightbox="../media/mask-data-expanded.png":::
 
 
 ## Auditing and Monitoring
@@ -44,7 +44,7 @@ Unity Catalog maintains detailed audit logs for tracking data access and activit
 **Monitoring tools**: Use Databricks’ built-in monitoring tools to track usage and access patterns, helping you to identify potential security issues.
 
 ## Integrating with External Systems
-Unity Catalog’s integration with SSO simplifies user authentication and streamlines access management, while external catalog sync ensures consistent governance across different platforms.
+Unity Catalog’s integration with single-SSO simplifies user authentication and streamlines access management, while external catalog sync ensures consistent governance across different platforms.
 
 **Single sign-on (SSO)**: Integrate Unity Catalog with your existing identity providers through SSO to simplify user authentication and streamline access management.
 
