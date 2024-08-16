@@ -16,5 +16,5 @@ A completed sample can be found on the `solution` branch. Note the following poi
 ## Learn more
 
 Channel 9 video series:
-- [.NET Core 101](/shows/net-core-101/?wt.mc_id=educationaldotnet-c9-scottha)
-- [ASP.NET Core 101](/shows/aspnet-core-101/?wt.mc_id=educationaspnet-c9-niner)
+- [.NET for Beginners](/shows/dotnet-for-beginners/?wt.mc_id=educationaldotnet-c9-scottha)
+- [Back-end Web Development with .NET for Beginners](/shows/back-end-web-development-with-dotnet-for-beginners/?wt.mc_id=educationaspnet-c9-niner)

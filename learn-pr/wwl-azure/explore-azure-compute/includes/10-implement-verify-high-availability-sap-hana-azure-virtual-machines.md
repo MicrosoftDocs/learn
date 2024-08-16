@@ -418,7 +418,7 @@ Follow the steps in [Setting up Pacemaker on Red Hat Enterprise Linux in Azure](
 
 ## Add an HSR third site to a HANA Pacemaker cluster
 
-SAP HANA supports system replication (HSR) with more than two sites connected. You can add a third site to an existing HSR pair, managed by Pacemaker in a highly available setup. You can [add an HSR third site to a HANA Pacemaker cluster](/sap/workloads/disaster-recovery-sap-hana) in a second Azure region for disaster recovery (DR) purposes. Both SUSE Linux Enterprise Server (SLES) and RedHat Enterprise Linux (RHEL) specifics are covered.
+SAP HANA supports system replication (HSR) with more than two sites connected. You can add a third site to an existing HSR pair, managed by Pacemaker in a highly available setup. You can [add an HSR third site to a HANA Pacemaker cluster](/azure/sap/workloads/sap-hana-high-availability) in a second Azure region for disaster recovery (DR) purposes. Both SUSE Linux Enterprise Server (SLES) and RedHat Enterprise Linux (RHEL) specifics are covered.
 
 Pacemaker and the HANA cluster resource agent manage the first two sites. The Pacemaker cluster doesn't control the third site.
 
@@ -427,7 +427,7 @@ SAP HANA supports a third system replication site in two modes:
 - [Multitarget](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/ba457510958241889a459e606bbcf3d3.html) replicates data changes from primary to more than one target system. The third site is connected to primary replication in a star topology.
 - [Multitier](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/f730f308fede4040bcb5ccea6751e74d.html) is a two-tier replication. A cascading, or chained, set up of three different HANA tiers. The third site connects to the secondary.
 
-For more conceptual details about HANA HSR within one region and across different regions, see [SAP HANA availability across Azure regions](/sap/workloads/sap-hana-availability-across-regions#combine-availability-within-one-region-and-across-regions).
+For more conceptual details about HANA HSR within one region and across different regions, see [SAP HANA availability across Azure regions](/azure/sap/workloads/sap-hana-availability-across-regions#combine-availability-within-one-region-and-across-regions).
 
 ## Test the cluster setup
 
@@ -644,5 +644,5 @@ The Pacemaker resource agent `azure-events-az` monitors for scheduled Azure even
 
 When the cluster health attribute is set for a node, the location constraint triggers and all resources with names that don't start with `health-` are migrated away from the node with the scheduled event. After the affected cluster node is free of running cluster resources, the scheduled event is acknowledged and can execute its action, such as a restart. 
 
-- [SUSE: Configure Pacemaker for Azure scheduled events](/sap/workloads/high-availability-guide-suse-pacemaker?tabs=msi#configure-pacemaker-for-azure-scheduled-events)
-- [RHEL: Configure Pacemaker for Azure scheduled events](/sap/workloads/high-availability-guide-rhel-pacemaker?tabs=msi#configure-pacemaker-for-azure-scheduled-events)
+- [SUSE: Configure Pacemaker for Azure scheduled events](/azure/sap/workloads/high-availability-guide-suse-pacemaker)
+- [RHEL: Configure Pacemaker for Azure scheduled events](/azure/sap/workloads/high-availability-guide-rhel-pacemaker)

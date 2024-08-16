@@ -60,7 +60,7 @@ To find an Action:
 
 Suppose you want to deploy a container-based web app to Azure Web Apps. If you search the GitHub Marketplace, you find these actions:
 
-- [azure/webapps-container-deploy@v1](https://github.com/Azure/webapps-container-deploy?azure-portal=true)
+- [azure/webapps-deploy@v1](https://github.com/Azure/webapps-deploy?azure-portal=true)
 - [azure/login@v1](https://github.com/Azure/login?azure-portal=true) that we saw previously  
 - [azure/docker-login@v1](https://github.com/Azure/docker-login?azure-portal=true)
 
@@ -84,7 +84,7 @@ If you add these actions to the `Deploy-to-Azure` job, your workflow looks like 
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy web app container
-        uses: azure/webapps-container-deploy@v1
+        uses: azure/webapps-deploy@v1
         with:
           app-name: ${{env.AZURE_WEBAPP_NAME}}
           images: ${{env.IMAGE_REGISTRY_URL}}/${{ github.repository }}/${{env.DOCKER_IMAGE_NAME}}:${{ github.sha }}
@@ -100,7 +100,7 @@ The [azure/login@v1](https://github.com/Azure/login?azure-portal=true) action ne
 
 The same is true for the [azure/docker-login@v1](https://github.com/Azure/docker-login?azure-portal=true) action. Since you're deploying a container image, you need to sign in to your private container registry.
 
-The [azure/webapps-container-deploy@v1](https://github.com/Azure/webapps-container-deploy?azure-portal=true) action performs the deployment. It depends on the two preceding actions.
+The [azure/webapps-deploy@v1](https://github.com/Azure/webapps-deploy?azure-portal=true) action performs the deployment. It depends on the two preceding actions.
 
 ## Create and delete Azure resources by using GitHub Actions
 

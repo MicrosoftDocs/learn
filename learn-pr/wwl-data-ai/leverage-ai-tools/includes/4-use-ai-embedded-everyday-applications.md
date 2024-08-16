@@ -1,27 +1,25 @@
-To truly realize the potential of AI, it’s essential to bring AI to every employee in ways that are relevant and meaningful to their work. Microsoft makes this possible by embedding AI in the applications people use in their everyday routine. No code or data science expertise is required because AI is delivered as just another feature of a SaaS product. The result is a wide range of intelligent applications for business users.
+To truly realize the potential of AI, it’s essential to bring AI to every employee in ways that are relevant and meaningful to their work. Microsoft makes this possible by embedding AI in the applications people use in their everyday routine. No code or data science expertise is required because AI is delivered as just another feature of a SaaS product. The result is a wide range of intelligent applications for business users. 
 
-In this unit, we'll discuss how these intelligent business applications weave relevant AI capabilities into their existing workflows. Dynamics 365 helps workers from specific business lines and functions automate and improve certain tasks. Microsoft 365 does the same by addressing a more general audience. Let’s take a look at some examples of these applications that can help anyone use AI to get more done.
+*Copilot* refers to AI embedded into applications. Microsoft Copilot provides a transformed experience across business functions and everyday routines. 
+ 
+![Screenshot of microsoft 365 Copilot in Outlook.](../media/4-outlook-example.png)
 
 ## Business functions
 
-Some AI solutions are specialized in helping solve problems and gain insight in some specific horizontal functions and sectors.
+Some AI solutions are specialized in helping solve problems and gain insight in some specific horizontal functions and sectors. These intelligent business applications weave relevant AI capabilities into their existing workflows. For example, Microsoft Dynamics 365 helps workers from specific business lines and functions automate and improve certain tasks. Microsoft 365 does the same by addressing a more general audience. 
 
-These solutions are often delivered as SaaS AI solutions, which deliver fast and cost-effective results. With powerful intelligence in their existing workflows, business users can be more proactive and effective in their core competencies. 
+These solutions are often delivered as SaaS AI solutions, which deliver fast and cost-effective results. With powerful intelligence in their existing workflows, business users can be more proactive and effective in their core competencies. Let’s take a look at some examples of these applications that can help anyone use AI to get more done. Here are some examples of powerful scenarios where AI is already having proven, beneficial effects:
 
-**Microsoft Dynamics 365** is designed with this goal: improve the performance at certain key business functions and sectors. 
-
-![A screenshot of a graph showing the eight sectors covered by Microsoft Dynamics 365.](../media/4-use-ai-embedded-everyday-applications-1.png)
-
-Here are some examples of powerful scenarios where AI is already having proven, beneficial effects:
-
-* **Sales**: Sellers can sell smarter with embedded AI-powered insights fueled by customer data.
-* **Supply chain**: Business users can use AI for predictive maintenance in factories. AI is also helpful to optimize inventory. 
-* **Human Resources**: Workforce data can be transformed into actionable insights and next-best-action guidance. AI can also be used to automate HR tasks for employees, making procedures more agile.
-* **Finance**: Analysts are provided a range of AI-powered tools for real-time reporting, embedded analytics, and insights. For example, AI can predict when or whether their customers will pay their invoices.
-* **Marketing**: AI-powered customer insights give marketing users a single view of their customers to optimize engagements and discover insights that drive personalized and meaningful experiences.
-* **Commerce**: Commerce users can use AI insights to help them more effectively manage cashflows using payment recommendations, intelligent budget proposals, and cashflow forecasting. They can even use AI to better protect their e-commerce business—and their customers—against fraud.
-* **Customer service**: Customer service users can gain insights to address increasing volumes and manage efficient agent distribution. They can also create virtual agents that identify and resolve customer issues quickly—all without having to write code.
-* **Project management**: Embedded analytics can provide insights based on project sales and financial data. The solution proposes an AI-powered scheduling to anticipate needs. Operations users gain insights into how their customers use their products and services.
+|**Business function**|**Example scenario**|
+|-|-|
+|**Commerce**|Commerce users can use AI insights to help them more effectively manage cashflows using payment recommendations, intelligent budget proposals, and cashflow forecasting. They can even use AI to better protect their e-commerce business—and their customers—against fraud.|
+|**Customer service**|Customer service users can gain insights to address increasing volumes and manage efficient agent distribution. They can also create virtual agents that identify and resolve customer issues quickly—all without having to write code.|
+|**Finance**|Analysts are provided a range of AI-powered tools for real-time reporting, embedded analytics, and insights. For example, AI can predict when or whether their customers will pay their invoices.|
+|**Human Resources**|Workforce data can be transformed into actionable insights and next-best-action guidance. AI can also be used to automate HR tasks for employees, making procedures more agile.|
+|**Marketing**|AI-powered customer insights give marketing users a single view of their customers to optimize engagements and discover insights that drive personalized and meaningful experiences.|
+|**Project management**|Embedded analytics can provide insights based on project sales and financial data. The solution proposes an AI-powered scheduling to anticipate needs. Operations users gain insights into how their customers use their products and services.|
+|**Sales**|Sellers can sell smarter with embedded AI-powered insights fueled by customer data.|
+|**Supply Chain**|Business users can use AI for predictive maintenance in factories. AI is also helpful to optimize inventory.|
 
 With business applications that use AI as a core ingredient, users can bring together relationships, processes, and data across applications to gain increased visibility and control.
 
@@ -31,7 +29,7 @@ There are also numerous AI capabilities that are already included in the applica
 
 For years, Microsoft has been putting AI to work in the **[Microsoft 365](https://aka.ms/everydayai)** apps that people use every day—like Microsoft Teams, Outlook, and Office. With these intelligent productivity experiences, employees can collaborate and conduct meetings more effectively, focus their time on value-added work, and uncover timely insights to improve their work.
 
-**Microsoft 365 Copilot** adds another layer of AI. Business users can ask this virtual assistant to perform certain tasks just by using natural language. The assistant uses the latest generative AI technology, OpenAI's GPT models, to understand the request and do what is asked.
+**Microsoft 365 Copilot** adds another layer of AI. Business users can ask this virtual assistant to perform certain tasks just by using natural language. The assistant uses the latest generative AI technology to understand the request and do what is asked.
 
 These solutions can improve your routine by boosting your remote work, your focus, your productivity, and your search power.
 
@@ -69,6 +67,14 @@ AI-powered search experiences like Microsoft Search can help business users wade
 > [!NOTE] 
 > 62 percent of employees consider they spend too much time struggling to find the information they need.<sup>1</sup>
 
+> [!TIP]
+> ![Photograph showing manager in a car using Copilot on a tablet.](../media/copilot-customer-story.jpg) \
+> **Customer story**: A technology services support and consulting company uses Microsoft Copilot for Sales to capture notes in client meetings.​ Copilot for Sales analyzes transcribed text from Teams meetings to generate key discussion highlights tailored for sales roles. It then creates meeting summaries in Outlook from these discussion highlights, which are saved to CRM.​ The result is less time spent writing and collating notes, and the creation of consistent, standardized summaries that simplify the process of creating proposals and contracts.​ Customers benefit from a faster, more relevant response to enquiries and the company benefits from greater efficiency and an increase in revenue. Read the full customer story here: [https://aka.ms/sales-copilot-customer-story](https://aka.ms/sales-copilot-customer-story). 
+
 Now is the time to empower your employees with the right AI tools to amplify their capabilities and achieve more. 
 
-In the next unit, we'll discuss Power Platform, which also offers AI features for people without data science expertise but does require a basic level of coding.
+> [!TIP]
+> Take a moment to reflect on ways your team or organization could benefit from AI capabilities in your existing workflows and business processes. \
+> ![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
+
+In the next unit, we'll discuss Power Platform, which also offers AI features for people without data science or coding expertise.

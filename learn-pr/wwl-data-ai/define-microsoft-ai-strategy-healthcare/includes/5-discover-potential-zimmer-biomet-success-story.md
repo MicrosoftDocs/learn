@@ -8,9 +8,11 @@ Their solutions serve **orthopedic patients** and healthcare professionals treat
 
 ## The challenge
 
-In the last period, the healthcare industry has faced workforce shortages<sup>3</sup> and burnout,<sup>4</sup> increased labor expenses, supply disruptions, the impact of inflation, and overall losses and operating margin decline.<sup>5</sup> This context makes **increasing productivity** and technological efficiency a top priority for businesses in the sector.
+In the last period, the healthcare industry faced workforce shortages<sup>3</sup> and burnout,<sup>4</sup> increased labor expenses, supply disruptions, the impact of inflation, and overall losses and operating margin decline.<sup>5</sup> This context makes **increasing productivity** and technological efficiency a top priority for businesses in the sector.
 
-Besides, there’s a growing demand for **decentralized care**. Orthopedic patients often experience limited mobility, so it’s fundamental to minimize the times they need to move to the hospital or any other healthcare facility. 
+Besides, there’s a growing demand for **decentralized care**. Orthopedic patients often experience limited mobility, so it’s fundamental to minimize the times they need to move to the hospital or any other healthcare facility.
+
+![Photograph showing woman  standing holding a walking cane.](../media/5-walking-cane.jpg)
 
 ## The solution
 
@@ -31,5 +33,7 @@ The next step was to feed the data gathered by mymobility to an AI system. This 
 Zimmer Biomet’s AI transformation is enabling them to take better care of patients. The combination of mymobility and WalkAI empowers patients to track their process from their homes. WalkAI’s near-real-time predictive model is revolutionary in the orthopedics industry. Now, the patient can take a more active role in their recovery and reassures them when they’re progressing as expected.
 
 Furthermore, they’re better equipped to take the decision whether to consult a clinician when feeling surgery-related inconveniences. So, clinicians have more time to assist the patients that really need medical attention.
+
+To learn more, read [Zimmer Biomet uses novel Azure-based AI model to predict individual patient gait speed recovery outcomes after joint replacement surgery](https://aka.ms/zimmer-biomet-customer-story).
 
 Next, let’s wrap up everything you’ve learned with a knowledge check.

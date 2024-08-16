@@ -17,9 +17,9 @@ If you don't already have a Microsoft Entra organization that you can use for th
 
 There are three settings for the **Self-service password reset enabled** property:
 
-- **Disabled**: No users in the Microsoft Entra organization can use SSPR. This value is the default.
-- **Enabled**: All users in the Microsoft Entra organization can use SSPR.
+- **None**: No users in the Microsoft Entra organization can use SSPR. This value is the default.
 - **Selected**: Only the members of the specified security group can use SSPR. You can use this option to enable SSPR for a targeted group of users who can test it and verify that it works as expected. When you're ready to roll it out broadly, set the property to **Enabled** so that all users have access to SSPR.
+- **All**: All users in the Microsoft Entra organization can use SSPR.
 
 ## Configure SSPR
 

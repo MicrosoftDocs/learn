@@ -1,24 +1,20 @@
 
 
-No matter which governance approach you choose, there are some good practices it should promote:
+No matter which governance approach you choose, there are some good practices it should promote.
 
-* **Make resources available:** Employees need guidance to learn responsible AI principles and incorporate them into their work. A handbook, a manual, or a training session can fulfill that task. 
+|**Ways to take action for AI governance**|**Description**|
+|-|-|
+|**Make resources available** ![Photograph showing person sitting at a desk and reading.](../media/make-resources-available.jpg)| Employees need guidance to learn responsible AI principles and incorporate them into their work. A handbook, a manual, or a training session can fulfill that task. |
+|**Create a centralized AI inventory** ![Photograph showing person working next to a whiteboard in an office.](../media/create-centralized-ai-inventory.jpg)| Having a list of all the AI models and systems operating in your organization is key to prioritize efforts and optimize resources. Besides, it's also helpful to make audits and compliance tests easier.|
+|**Develop tools** ![Photograph showing people looking at data on a computer screen.](../media/develop-tools.jpg)| Checking compliance in every AI system in your organization can be draining. Consider building tools to automate this task: such tools would monitor and validate systems and raise a flag if anything shifts outside of performance metrics.|
 
-* **Create a centralized AI inventory:** Having a list of all the AI models and systems operating in your organization is key to prioritize efforts and optimize resources. Besides, it's also helpful to make audits and compliance tests easier.
-
-* **Develop tools:** Checking compliance in every AI system in your organization can be draining. Consider building tools to automate this task: such tools would monitor and validate systems and raise a flag if anything shifts outside of performance metrics.
+## AI governance engagement
 
 The specific processes and policies for your AI governance system depend on whether your company is using third-party systems or developing AI in-house. Based on this factor, we have provided recommendations to help your company govern your AI engagements.
 
-## Third-party AI systems
+#### Engagement with AI systems developers
 
-If your organization plans to use out-of-the-box third-party AI solutions, we recommend learning about the third party’s commitment to responsible AI design to ensure it aligns with your own principles.
-
-For custom AI solutions, include your principles or standards in your request for proposal. Before deploying any third-party AI solution, create guidelines on how to safely operate and monitor the system. Train employees on these guidelines and ensure they're being followed. Finally, your governance system should ensure the AI system has been rigorously tested.
-
-## First-party AI systems
-
-If your organization also plans to develop AI solutions or integrate AI into your existing products and services, there are some tasks for each team role.
+For **first-party AI systems**, if your organization also plans to develop AI solutions or integrate AI into your existing products and services, there are some tasks for each team role.
 
 Your **ethical governance system** should:
 * Review or provide advice before the release of any new AI system, especially for sensitive use cases.
@@ -35,7 +31,11 @@ Your **developers** should:
 
 * Have guidelines and checklists for specific AI technologies, such as face recognition or generative AI.
 
-## Engage with external stakeholders
+For organizations planning on using out-of-the-box **third-party AI systems**, we recommend learning about the third party’s commitment to responsible AI design to ensure it aligns with your own principles.
+
+For custom AI solutions, include your principles or standards in your request for proposal. Before deploying any third-party AI solution, create guidelines on how to safely operate and monitor the system. Train employees on these guidelines and ensure they're being followed. Finally, your governance system should ensure the AI system has been rigorously tested.
+
+#### Engagement with external stakeholders
 
 As the use of AI becomes more common, we consider it a shared responsibility across the public and private sectors to engage with AI responsibly. Collaboration between enterprises, public organizations, governments, and nonprofits is crucial to ensure best practices while maximizing the potential of AI to deliver broad benefits.
 
