@@ -66,4 +66,4 @@ The optimizer works by analyzing the provided training set and the desired metri
 By using optimizers, DSPy can automate the process of prompt engineering, reducing the need for manual adjustments and ensuring that the LLM remains robust and scalable. This approach not only saves time but also enhances the overall performance and reliability of the system.
 
 > [!Tip]
-> Learn more about [optimizers]https://dspy-docs.vercel.app/docs/building-blocks/optimizers?azure-portal=true).
+> Learn more about [optimizers](https://dspy-docs.vercel.app/docs/building-blocks/optimizers?azure-portal=true).
