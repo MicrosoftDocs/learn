@@ -4,7 +4,7 @@ title: Create an RDP connection to a Windows VM using Azure Bastion
 metadata:
   title: Create an RDP connection to a Windows VM using Azure Bastion
   description: "Create an RDP connection to a Windows VM using Azure Bastion"
-  ms.date: 08/16/2024
+  ms.date: 08/19/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit

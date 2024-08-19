@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop.plan-implement-remote-desktop-protocol-shortpath
-title: Understanding Azure Virtual Desktop network connectivity
+title: Plan implement remote desktop protocol shortpath
 metadata:
-  title: Understanding Azure Virtual Desktop network connectivity
-  description: "Understanding Azure Virtual Desktop network connectivity"
-  ms.date: 08/16/2024
+  title: Plan implement remote desktop protocol shortpath
+  description: "Plan implement remote desktop protocol shortpath"
+  ms.date: 08/19/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit

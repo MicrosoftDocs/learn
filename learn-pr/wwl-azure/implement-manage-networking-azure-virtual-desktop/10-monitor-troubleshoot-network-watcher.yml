@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop.monitor-troubleshoot-network-watcher
-title: Monitor and troubleshoot network connectivity  for Azure Virtual Desktop
+title: Monitor troubleshoot Network Watcher
 metadata:
-  title: Monitor and troubleshoot network connectivity  for Azure Virtual Desktop
-  description: "Monitor and troubleshoot network connectivity  for Azure Virtual Desktop"
-  ms.date: 08/16/2024
+  title: Monitor troubleshoot Network Watcher
+  description: "Monitor troubleshoot Network Watcher"
+  ms.date: 08/19/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
