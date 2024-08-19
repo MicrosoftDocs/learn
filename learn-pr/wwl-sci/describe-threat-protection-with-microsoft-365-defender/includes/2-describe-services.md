@@ -12,7 +12,7 @@ The Microsoft Defender XDR suite protects:
 
 The Microsoft Defender XDR suite also includes **Microsoft Defender Threat Intelligence**. Microsoft Defender TI aggregates and enriches critical threat information to help security analyst triage, incident response, threat hunting, and vulnerability management workflows.
 
-The information and insights surfaced by the Microsoft Defender XDR suite of solutions are centralized in the Microsoft Defender portal, which delivers a unified security operations platform.  As a unified security operations platform, the Microsoft Defender portal now includes information and insights from other Microsoft security products, including Microsoft Sentinel.
+The information and insights surfaced by the Microsoft Defender XDR suite of solutions are centralized in the Microsoft Defender portal, which delivers a unified security operations platform. As a unified security operations platform, the Microsoft Defender portal now includes information and insights from other Microsoft security products, including Microsoft Sentinel.
 
 ### Microsoft Defender XDR Integration with Microsoft Copilot for Security
 
