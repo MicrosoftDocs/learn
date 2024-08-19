@@ -21,7 +21,7 @@ Data masking and encryption are essential for protecting sensitive information. 
 **Data lineage:**
 Understanding data lineage is critical for compliance and secure data sharing. Azure Databricks, coupled with Unity Catalog, provides comprehensive data lineage tracking, enabling organizations to trace data flow from source to destination. This lineage helps in identifying and mitigating data breaches and ensuring data integrity.
 
-:::image type="content" source="../media/unity-catalog-data-lineage-expanded.png" alt-text="Screenshot showing data lineage in Unity Catalog." lightbox="../media/unity-catalog-data-lineage-expanded.png":::
+:::image type="content" source="../media/unity-catalog-data-lineage-small.png" alt-text="Screenshot showing data lineage in Unity Catalog." lightbox="../media/unity-catalog-data-lineage-expanded.png":::
 
 **Secure collaboration:**
 Azure Databricks fosters secure collaboration by allowing data scientists and analysts to work on shared projects while maintaining data security. Unity Catalog's centralized governance ensures that collaboration adheres to compliance policies, preventing unauthorized data access and ensuring consistent data usage policies.
