@@ -20,7 +20,7 @@ Set-RdsHostPool -TenantName <tenantname> -Name <hostpoolname> -CustomRdpProperty
 
 ```
 
-:::image type="content" source="../media/single-custom-remote-desktop-protocol-property-bfa9c82c-c07244f3-8c1181ed.png" alt-text="Image showing adding or editing a single custom property.":::
+:::image type="content" source="../media/single-custom-remote-desktop-protocol-property-bfa9c82c-c07244f3-8c1181ed.png" alt-text="Screenshot of adding or editing a single custom property.":::
 
 
 ## Add or edit multiple custom Remote Desktop Protocol properties
@@ -34,7 +34,7 @@ Set-RdsHostPool -TenantName <tenantname> -Name <hostpoolname> -CustomRdpProperty
 
 ```
 
-:::image type="content" source="../media/multiple-custom-property-c539e1b8-49220670-20726901.png" alt-text="Image showing adding or editing a multiple custom property.":::
+:::image type="content" source="../media/multiple-custom-property-c539e1b8-49220670-20726901.png" alt-text="Screenshot of adding or editing a multiple custom property.":::
 
 
 ## Reset all custom Remote Desktop Protocol properties
