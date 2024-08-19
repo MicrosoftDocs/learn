@@ -16,8 +16,7 @@ Additional resources
 
 ## Sample code
 
-- Sample repo 1
-- Sample repo 2
+- https://github.com/MicrosoftDocs/node-essentials/tree/main/nodejs-route
 
 ## Troubleshooting
 
