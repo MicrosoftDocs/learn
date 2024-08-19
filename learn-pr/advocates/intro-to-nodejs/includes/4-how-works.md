@@ -73,10 +73,11 @@ The most recent versions of Node.js added top-level async/await for ES6 modules.
 }
 ```
 
-Then you can use the `await` keyword at the top level of your code
+Then you can use the `await` keyword at the top level of your code.
 
 :::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro/3-how-nodejs-works/async-await-top-level.js":::
 
+If you get an error that you can't use async/await
 
 ### Callbacks
 
