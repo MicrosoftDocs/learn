@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: unit
-durationInMinutes: 7
+durationInMinutes: 5
 content: |
-  [!include[](includes/4-model-versioning-lifecycle-management.md)]
+  [!include[](includes/5-model-versioning-lifecycle-management.md)]

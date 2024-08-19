@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 9
 content: |
-  [!include[](includes/2-model-development-training.md)]
+  [!include[](includes/3-model-development-training.md)]
