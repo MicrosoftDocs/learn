@@ -1,10 +1,10 @@
 This module explores how to explain and document code using the GitHub Copilot Chat extension for Visual Studio Code. The explain and document features are accessible using the chat view, smart actions, inline chat, and quick chat interfaces.
 
-Imagine you're a developer working for a large tech company. You're assigned to a new project. You discover that the code is complex, poorly documented, and difficult to understand. You need to generate documentation for the project but you're unsure where to start. GitHub Copilot Chat can help you understand the code and generate relevant documentation. Using GitHub Copilot Chat increases your productivity.
+Imagine you're a developer working for a large tech company. You're assigned to take over a project that's fallen behind schedule. You discover that the code is complex, poorly documented, and difficult to understand. You need to generate documentation for the project but you're unsure where to start. GitHub Copilot Chat can help you understand the code and generate relevant documentation. Using GitHub Copilot Chat helps you complete documentation tasks quickly and efficiently.
 
 The topics covered in this module include:
 
-- Reviewing the features of GitHub Copilot Chat that can be used to explain code and generate documentation.
+- Examining the features of GitHub Copilot Chat that can be used to explain code and generate documentation.
 - Using GitHub Copilot Chat to generate explanations for complex or unfamiliar code.
 - Using GitHub Copilot Chat to generate project documentation.
 - Using GitHub Copilot Chat to generate inline code documentation and pull request summaries.

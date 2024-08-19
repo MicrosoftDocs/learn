@@ -3,11 +3,13 @@ uid: learn.wwl.create-question-answer-solution-ai-language.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 08/31/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 08/31/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"

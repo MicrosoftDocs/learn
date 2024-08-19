@@ -3,11 +3,13 @@ uid: learn.wwl.analyze-images.generate-smart-cropped-thumbnail
 title: Generate a smart-cropped thumbnail and remove background
 metadata:
   title: Generate a smart-cropped thumbnail and remove background
-  description: "Generate a smart-cropped thumbnail and remove background of an image using Azure AI Vision."
-  ms.date: 02/05/2024
+  description: Generate a smart-cropped thumbnail and remove background of an image using Azure AI Vision.
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 02/05/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

@@ -17,5 +17,5 @@ Customers who require high levels of assurance that their data is secure can als
 > [!NOTE]
 > It isn't generally recommended to combine both Azure Disk Encryption with DBMS encryption, as this may impact performance.
 
-- Availability Zones introduce increased latency between SAP and DB servers. It's usually negligible, but it will show up in performance numbers. This is the tradeoff for the extra 0.04% uptime. Also, be aware that Availability Zones incur an extra charge for cross-zone network traffic.
+- Availability zones introduce increased latency between SAP and DB servers. It's usually negligible, but it will show up in performance numbers. This is the tradeoff for the extra 0.04% uptime. Also, be aware that availability zones incur an extra charge for cross-zone network traffic.
 - Don't use the HANA data-at-rest encryption with Azure Disk Encryption on the same server. For HANA, use only HANA data encryption.

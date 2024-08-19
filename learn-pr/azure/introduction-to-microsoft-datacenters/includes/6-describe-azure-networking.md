@@ -6,9 +6,9 @@ Next, you want to learn about Microsoft Cloud networking. You find there are two
 
 ## Infrastructure
 
-Microsoft supports one of the largest network backbones in the world, with over 175 thousand miles of fiber optic and subsea cables and more than 190 network access points across the globe. Contoso can use that infrastructure to communicate between cloud datacenters. Your employees, partners, and customers can connect via the global network access points to use cloud services - or even hybrid and on-premises applications - from anywhere in the world. Because Contoso has a large traveling sales force and worldwide partners, you begin to see some surprising benefits. You consider, for example, how to consolidate your network vendors using the Microsoft global network (WAN), while gaining lower latency and better application response time.
+Microsoft supports one of the largest network backbones in the world. The network infrastructure includes over 175 thousand miles of fiber optic and subsea cables and more than 190 network access points across the globe. Contoso can use that infrastructure to communicate between cloud datacenters. Your employees, partners, and customers can connect via the global network access points to use cloud services - or even hybrid and on-premises applications - from anywhere in the world. Because Contoso has a large traveling sales force and worldwide partners, you begin to see some surprising benefits. You consider, for example, how to consolidate your network vendors using the Microsoft global network (WAN), while gaining lower latency and better application response time.
 
-Any traffic between datacenters - within Microsoft Azure or between Microsoft services such as Virtual Machines, Microsoft 365, Xbox, SQL Database, Storage, and virtual networks - are routed within the global network and never over the public internet, to ensure optimal performance and integrity.
+ To ensure optimal performance and integrity, any traffic between datacenters is routed within the global network. Whether its traffic within Microsoft Azure or between Microsoft services such as Virtual Machines, Microsoft 365, Xbox, SQL Database, Storage, and virtual networks, the traffic is never routed over the public internet.
 
 ![Graphic illustration showing datacenters, edges, and networks.](../media/cloud-networking.png)
 
@@ -18,13 +18,13 @@ Microsoft offers an extensive range of networking products and services. Because
 
 Azure networking services and products break into four major categories:
 
-- [Connectivity services](/azure/networking/fundamentals/networking-overview#connect): Enable hybrid solutions and connect Azure resources and on-premises resources by using Azure services, including Azure Virtual Network, Azure Virtual WAN, Azure ExpressRoute, VPN Gateway, and Azure DNS.
+- [Connectivity services](/azure/networking/fundamentals/networking-overview#connect): Enable hybrid solutions and connect Azure resources and on-premises resources. Azure services used for connectivity include Azure Virtual Network, Azure Virtual WAN, Azure ExpressRoute, VPN Gateway, and Azure DNS (Domain Name System).
 
-- [Application protection services](/azure/networking/fundamentals/networking-overview#protect): Protect your applications with services such as Azure Load Balancer, Azure Private Link, Azure DDoS Protection, Azure Firewall, and Azure Web Application Firewall.
+- [Application protection services](/azure/networking/fundamentals/networking-overview#protect): Protect your applications with services. Azure services used for application protection include Azure Load Balancer, Azure Private Link, Azure DDoS Protection, Azure Firewall, and Azure Web Application Firewall.
 
-- [Application delivery services](/azure/networking/fundamentals/networking-overview#deliver): Deliver applications in the Azure network effectively by using Azure services such as Azure Content Delivery Network, Azure Front Door, Azure Traffic Manager, Azure Application Gateway, and Azure Internet Analyzer.
+- [Application delivery services](/azure/networking/fundamentals/networking-overview#deliver): Deliver applications effectively in the Azure network. Azure services used for delivery include Azure Content Delivery Network, Azure Front Door, Azure Traffic Manager, Azure Application Gateway, and Azure Internet Analyzer.
 
-- [Network monitoring](/azure/networking/fundamentals/networking-overview#monitor): Monitor and analyze your network resources and performance by using services such as Azure Network Watcher, Azure ExpressRoute Monitor, Azure Monitor, or Virtual Network terminal access point (TAP).
+- [Network monitoring](/azure/networking/fundamentals/networking-overview#monitor): Monitor and analyze your network resources and performance. Azure services used for monitoring include Azure Network Watcher, Azure ExpressRoute Monitor, Azure Monitor, or Virtual Network terminal access point (TAP).
 
 Organizations typically deploy Azure networking services to help optimize performance and security for PaaS and IaaS models. With SaaS offerings, including Microsoft 365, Microsoft offers guidance and tools to help you implement and optimize a secure and efficient network architecture. 
 

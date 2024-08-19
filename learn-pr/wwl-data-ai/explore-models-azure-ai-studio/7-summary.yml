@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-models-copilot-ai-studio.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary of configuring language models."
+  ms.date: 7/2/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

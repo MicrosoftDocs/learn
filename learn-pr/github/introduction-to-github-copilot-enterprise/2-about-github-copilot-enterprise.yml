@@ -3,11 +3,13 @@ uid: learn.github.intro-github-copilot-enterprise.about-github-copilot-enterpris
 title: About GitHub Copilot Enterprise
 metadata:
   title: About GitHub Copilot Enterprise
-  description: This content is a part of the "Introduction to GitHub Copilot Enterprise" module.
-  ms.date: 02/28/2024
+  description: This content is a part of the Introduction to GitHub Copilot Enterprise module.
   author: a-a-ron
   ms.author: aastewar
+  ms.date: 02/28/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/2-about-github-copilot-enterprise.md)]

@@ -2,10 +2,8 @@ In the last unit, we discussed some of the societal implications of AI. We touch
 
 At Microsoft, we've recognized six principles that we believe should guide AI development and use: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. For us, these principles are the cornerstone of a responsible and trustworthy approach to AI, especially as intelligent technology becomes more prevalent in the products and services we use every day.
 
-> [!div class="mx-imgBorder"]
-> ![Diagram that shows six principles: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.](../media/3-identify-guiding-principles-responsible-ai-1.png)
-
 ## Fairness
+![Icon representing fairness.](../media/fairness-icon.png)
 
 AI systems should treat everyone fairly and avoid affecting similarly situated groups of people in different ways. For example, when AI systems provide guidance on medical treatment, loan applications, or employment, they should make the same recommendations to everyone with similar symptoms, financial circumstances, or professional qualifications.
 
@@ -14,11 +12,12 @@ To ensure fairness in your AI system, you should:
 * **Understand the scope, spirit, and potential uses of the AI system** by asking questions such as, how is the system intended to work? Who is the system designed to work for? Will the system work for everyone equally? How can it harm others?
 * **Attract a diverse pool of talent.** Ensure the design team reflects the world in which we live by including team members that have different backgrounds, experiences, education, and perspectives.
 * **Identify bias in datasets** by evaluating where the data came from, understanding how it was organized, and testing to ensure it's represented. Bias can be introduced at every stage in creation, from collection to modeling to operation. The Responsible AI Dashboard, available at the Resources section, includes a feature to help with this task.
-* **Identify bias in machine learning algorithms** by applying tools and techniques that improve the transparency and intelligibility of models. When using prebuilt models, such as those delivered by Azure OpenAI Service, consider that Microsoft and OpenAI are working to avoid biases. However, users should still be especially cautious with the results provided by the model.
+* **Identify bias in machine learning algorithms** by applying tools and techniques that improve the transparency and intelligibility of models. Users should actively identify and remove bias in machine learning algorithms.
 * **Leverage human review and domain expertise.** Train employees to understand the meaning and implications of AI results, especially when AI is used to inform consequential decisions about people. Decisions that use AI should always be paired with human review. Include relevant subject matter experts in the design process and in deployment decisions. An example would be including a consumer credit subject matter expert for a credit scoring AI system. You should use AI as a copilot, that is, an assisting tool that helps you do your job better and faster but requires some degree of supervising.
 * **Research and employ best practices, analytical techniques, and tools** from other institutions and enterprises to help detect, prevent, and address bias in AI systems.
 
 ## Reliability and safety
+![Icon representing reliability.](../media/reliability-icon.png)
 
 To build trust, it's critical that AI systems operate reliably, safely, and consistently under normal circumstances and in unexpected conditions. These systems should be able to operate as they were originally designed, respond safely to unanticipated conditions, and resist harmful manipulation. It's also important to be able to verify that these systems are behaving as intended under actual operating conditions. How they behave and the variety of conditions they can handle reliably and safely largely reflects the range of situations and circumstances that developers anticipate during design and testing.
 
@@ -33,6 +32,7 @@ To ensure reliability and safety in your AI system, you should:
 * **Develop a robust feedback mechanism** for users to report performance issues so that you can resolve them quickly.
 
 ## Privacy and security
+![Icon representing privacy.](../media/privacy-icon.png)
 
 As AI becomes more prevalent, protecting privacy and securing important personal and business information is becoming more critical and complex. With AI, privacy and data security issues require especially close attention because access to data is essential for AI systems to make accurate and informed predictions and decisions about people.
 
@@ -47,11 +47,14 @@ To ensure privacy and security in your AI system, you should:
 * **Research and implement industry best practices** for tracking relevant information about customer data, accessing and using that data, and auditing access and use.
 
 ## Inclusiveness
+![Icon representing inclusiveness.](../media/inclusiveness-icon.png)
 
 At Microsoft, we firmly believe everyone should benefit from intelligent technology, meaning it must incorporate and address a broad range of human needs and experiences. For the 1 billion people with disabilities around the world, AI technologies can be a game-changer. AI can improve access to education, government services, employment, information, and a wide range of other opportunities. Intelligent solutions such as real-time speech to text transcription, visual recognition services, and predictive text functionality are already empowering people with hearing, visual, and other impairments.
 
-> [!div class="mx-imgBorder"]
-> ![Diagram that shows inclusive design principles: recognize exclusion; solve for one, extend to many, and learn from diversity.](../media/3-identify-guiding-principles-responsible-ai-2.png)
+**Microsoft inclusive design principles**:
+* Recognize exclusion
+* Solve for fun, extend to many
+* Learn from diversity
 
 To ensure inclusiveness in your AI system, you should:
 
@@ -61,6 +64,7 @@ To ensure inclusiveness in your AI system, you should:
 * **Consider commonly used accessibility standards** to help ensure your system is accessible for people of all abilities.
 
 ## Transparency
+![Icon representing transparency.](../media/transparency-icon.png)
 
 Underlying the preceding values are two foundational principles that are essential for ensuring the effectiveness of the rest: transparency and accountability. It's critical that people understand how AI systems come to conclusions when they're used to inform decisions that have an effect on people's lives. For example, a bank might use an AI system to decide whether a person is creditworthy, or a company might use an AI system to determine the most qualified candidates to hire.
 
@@ -73,6 +77,7 @@ To ensure transparency in your AI system, you should:
 * **Train employees on how to interpret AI outputs** and ensure that they remain accountable for making consequential decisions based on the results.
 
 ## Accountability
+![Icon representing accountability.](../media/accountability-icon.png)
 
 The people who design and deploy AI systems must be accountable for how their systems operate. Organizations should draw upon industry standards to develop accountability norms. These norms can ensure that AI systems aren't the final authority on any decision that impacts people's lives and that humans maintain meaningful control over otherwise highly autonomous AI systems.
 
@@ -84,5 +89,9 @@ To ensure accountability in your AI system, you should:
 * **Put in place a clear system of accountability and governance** to conduct remediation or correction activities if models are seen as behaving in an unfair or potentially harmful manner.
 
 We recognize that every individual, company, and region has their own beliefs and standards that should be reflected in their AI journey. We share our perspective with you as you consider developing your own guiding principles.
+
+>[!TIP]
+>Take a moment to brainstorm other examples for each of the responsible AI principles. \
+>![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 These principles provide a general idea of what we should do when developing and using AI. However, they need to be reflected on a more practical level. Next, let's explore how these principles can be ensured with an AI governance system.

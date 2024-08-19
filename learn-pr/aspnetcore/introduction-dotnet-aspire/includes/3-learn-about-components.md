@@ -13,6 +13,10 @@ Each .NET Aspire component is a NuGet package, and you can add it to your projec
 > [!NOTE]
 > You'll see how to use this component tools in the exercise later in this module.
 
+Visual Studio Code with the C# Dev Kit extension also supports adding .NET Aspire components.
+
+:::image type="content" source="../media/code-create-project.png" lightbox="../media/code-create-project.png" alt-text="Screenshot showing the Visual Studio Code command palette listing .NET Aspire project types.":::
+
 Alternatively, the .NET CLI can add .NET components. For example:
 
 ```dotnetcli

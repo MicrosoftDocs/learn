@@ -2,12 +2,14 @@
 uid: learn.wwl.translate-text-with-translation-service
 metadata:
   title: Translate text and speech with Azure AI services
-  description: "Use Azure AI Speech and Azure AI Translator to translate text and speech."
-  ms.date: 09/21/2023
+  description: Use Azure AI Speech and Azure AI Translator to translate text and speech.
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: module-standard-task-based
+  ms.date: 09/21/2023
   ms.service: azure
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Translate text and speech with Azure AI services
 summary: Automated translation capabilities in an AI solution enable closer collaboration by removing language barriers.
 abstract: |

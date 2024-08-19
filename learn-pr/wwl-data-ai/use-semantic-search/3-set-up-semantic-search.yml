@@ -3,11 +3,13 @@ uid: learn.use-semantic-search.set-up-semantic-search
 title: Set up semantic ranking
 metadata:
   title: Set up semantic ranking
-  description: "Learn how to set up semantic ranking."
-  ms.date: 9/29/2023
+  description: Learn how to set up semantic ranking.
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 9/29/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/3-set-up-semantic-search.md)]

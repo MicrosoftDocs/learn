@@ -3,11 +3,13 @@ uid: learn.explore-foundation-models-in-model-catalog.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check to test your knowledge on the history of natural language processing models."
-  ms.date: 7/24/2023
+  description: Knowledge check to test your knowledge on the history of natural language processing models.
   author: madiepev
   ms.author: madiepev
+  ms.date: 07/25/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 ###########################################################################
 ###
@@ -37,17 +39,17 @@ quiz:
     - content: " Word2Vec"
       isCorrect: false
       explanation: "Incorrect. Word2Vec is a technique for generating word embeddings, which are dense vector representations of words that capture semantic relationships between words. "
-  - content: "What type of neural network architecture is widely used for natural language processing tasks and has been instrumental in achieving state-of-the-art results in various language-related tasks?"
+  - content: "What type of neural network architecture is widely used for natural language processing tasks and is instrumental in achieving state-of-the-art results in various language-related tasks?"
     choices:
     - content: "Recurrent Neural Network (RNN)"
       isCorrect: false
-      explanation: "Incorrect. While RNNs have been historically used for sequence data like text, they suffer from issues like vanishing gradients and struggle to capture long-range dependencies in text. However, Transformers have shown to be more efficient at processing large amounts of text compared to RNNs."
+      explanation: "Incorrect. While RNNs are historically used for sequence data like text, they suffer from issues like vanishing gradients and struggle to capture long-range dependencies in text. However, Transformers are more efficient at processing large amounts of text compared to RNNs."
     - content: "Long Short-Term Memory (LSTM)"
       isCorrect: false
-      explanation: "Incorrect. LSTMs are a type of recurrent neural network designed to handle sequences by effectively capturing long-range dependencies. However, Transformers have shown to be more efficient at processing large amounts of text compared to RNNs."
+      explanation: "Incorrect. LSTMs are a type of recurrent neural network designed to handle sequences by effectively capturing long-range dependencies. However, Transformers are more efficient at processing large amounts of text compared to RNNs."
     - content: "Transformer"
       isCorrect: true
-      explanation: "Correct. Transformers are a neural network architecture specifically designed for processing sequential data, like text. The introduction of positional encoding together with attention, instead of using recurrence, has resulted in a massive advancement in NLP."
+      explanation: "Correct. Transformers are a neural network architecture designed for processing sequential data, like text. The introduction of positional encoding together with attention, instead of using recurrence, resulted in a massive advancement in NLP."
   - content: "Which of the following foundation models, available through the model catalog in Azure Machine Learning, is likely most suitable for text classification?"
     choices:
     - content: "BERT"

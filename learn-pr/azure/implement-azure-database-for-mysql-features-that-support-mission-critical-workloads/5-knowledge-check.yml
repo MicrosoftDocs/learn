@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "This unit is a knowledge check for implementing Azure Database for MySQL - Flexible Server features that support mission-critical workloads."
+  ms.date: 07/08/2024
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
+  ms.topic: unit
+durationInMinutes: 1
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "Your application serves mission-critical traffic around the clock every day. Your traffic is generally low with occasional heavy bursts. Which option is most appropriate?"
+    choices:
+    - content: "Burstable Tier with the Autoscale IOPS feature enabled."
+      isCorrect: false
+      explanation: "The Burstable tier is not ideal for mission-critical traffic, and it does not support high availability."
+    - content: "Business Critical Tier with high availability."
+      isCorrect: true
+      explanation: "This is the best solution for mission-critical traffic, able to withstand failures in the primary database node."
+    - content: "General Purpose Tier with a read replica. "
+      isCorrect: false
+      explanation: "A read replica does not provide resilience to the primary database node going down."
+  - content: "You encrypt your database at rest using a custom key. One day, the production key is deleted by mistake. Which option protects against this?"
+    choices:
+    - content: "Soft deletion."
+      isCorrect: true
+      explanation: "Correct, unless/until the key is purged, soft-deleted keys may be recovered."
+    - content: "High availability."
+      isCorrect: false
+      explanation: "High availability protects the database nodes, and the key encrypts both HA instances."
+    - content: "The Business Critical tier."
+      isCorrect: false
+      explanation: "The Business Critical tier is not related to key management."
+  - content: "You want to detect anomalous login attempts. Which option is best?"
+    choices:
+    - content: "Write a cron job to monitor MySQL logs."
+      isCorrect: false
+      explanation: "While this would work, it is introduces manual, error-prone work requiring ongoing maintenance."
+    - content: "Enable Microsoft Defender for Cloud."
+      isCorrect: true
+      explanation: "Defender for Cloud is a simple solution to detect anomalous login attempts and other security issues."
+    - content: "Configure a VPN with Private Access."
+      isCorrect: false
+      explanation: "A VPN controls network connectivity, not login attempts made over that network."
+  - content: "Your production traffic is generally low with occasional heavy bursts. You over-provisioned IOPS capacity to ensure a solid user experience, but you’ve noticed that usage hasn’t surpassed 50%. While you will be launching new products next month, you also want to save costs without affecting the experience. Which option should you consider?"
+    choices:
+    - content: "Adjusting the pre-provisioned IOPS to 55% of the current value."
+      isCorrect: false
+      explanation: "This is less cost-effective as it over-provisions IOPS capacity. It also assumes the traffic will only impact IOPS by 5%."
+    - content: "Enabling the Autoscale IOPS feature."
+      isCorrect: true
+      explanation: "This is an easy and cost-effective way to handle traffic bursts and changes."
+    - content: "Switch to the Burstable tier to handle the bursts."
+      isCorrect: false
+      explanation: "The Burstable tier is not ideal for production workloads, offers fewer maximum IOPS than the other tiers, and besides bursts CPU: not IOPS."
+  - content: "Your application delivers hourly reports that place a heavy load on the database and at peak traffic, causing the user experience to degrade. How can you process reporting queries and manage the application load at the same time?"
+    choices:
+    - content: "Increase compute size."
+      isCorrect: false
+      explanation: "While this would help serve more queries, the increased capacity may become quickly insufficient as application and reporting load increase."
+    - content: "Provision a read replica."
+      isCorrect: true
+      explanation: "This use case is perfect for read replicas, to take load off the primary database."
+    - content: "Add additional IOPS."
+      isCorrect: false
+      explanation: "While IOPS do help scale, they don't help with CPU and RAM usage from queries."

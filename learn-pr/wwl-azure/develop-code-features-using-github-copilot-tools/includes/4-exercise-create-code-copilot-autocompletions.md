@@ -29,10 +29,10 @@ To prepare for the exercises in this module, complete the following steps:
 1. In the Chat view, enter the following prompt:
 
     ```plaintext
-    @workspace /new console application C# NET8 named APL2007M3. Only .cs and .csproj files. Enable ImplicitUsings and Nullable
+    @workspace /new console application named APL2007M3. Use C# LangVersion 12 and NET8.0. Only .cs and .csproj files. Enable ImplicitUsings and Nullable
     ```
 
-    GitHub Copilot uses this prompt to create the workspace for a new console application. The application uses `C#` and `.NET8.0`. The application is named `APL2007M3`, and includes `.cs` and `.csproj` files. The `APL2007M3.csproj` file enables `ImplicitUsings` and `Nullable`.
+    GitHub Copilot uses this prompt to create the workspace for a new console application. The application uses `C#` and `.NET8.0`. The code project is named `APL2007M3`, and includes the `.cs` and `.csproj` files. The `APL2007M3.csproj` file specifies C# `LangVersion 12` and enables `ImplicitUsings` and `Nullable`.
 
 1. In the Chat view, select **Create Workspace**.
 
@@ -122,7 +122,7 @@ Use the following steps to complete this section of the exercise:
     }
     ```
 
-    Making quick adjustments to code completion suggestions helps to ensure that you're building the code you want. It's especially important to make corrections early in your development process when large portions of your codebase still need to be developed.
+    Making quick adjustments to code completion suggestions helps to ensure that you're building the code you want. It's especially important to make corrections early in your development process when large portions of your codebase still need to be developed. Subsequent code completions will be based on the code you've already written, so it's important to ensure that your code is as accurate as possible.
 
 1. Create two empty code lines below the `SalesData` data structure.
 
@@ -185,17 +185,17 @@ Use the following steps to complete this section of the exercise:
 
     The concept is straight forward. You want your code to calculate quarterly sales based on your sales data and then write a report. To do that, your code needs to:
 
-    - iterate through the `salesData` collection.
-    - calculate the value of each sale based on the quantity sold and the unit price.
-    - use the sales date to determine which quarter a sale belongs to.
-    - sum the sales for each quarter.
-    - write a report of the sales by quarter.
+    - Iterate through the `salesData` collection.
+    - Calculate the value of each sale based on the quantity sold and the unit price.
+    - Use the sales date to determine which quarter a sale belongs to.
+    - Sum the sales for each quarter.
+    - Write a report of the sales by quarter.
 
     One option is to begin entering the code for a `foreach` loop and then see what GitHub Copilot suggests.
 
 1. In the `QuarterlySalesReport` method, create a new code line at the top of the code block.
 
-    There should be at least one blank code line between the new code line and the code line containing the comment.
+    There should be at least one blank code line between the new code line and the code line containing `Console.WriteLine()`.
 
 1. To generate a code line completion, type `foreach (` and then wait for GitHub Copilot to suggest code line completion options.
 
@@ -205,7 +205,7 @@ Use the following steps to complete this section of the exercise:
 
     The suggested code completion isn't what you wanted.
 
-    Although GitHub Copilot suggests a `foreach` loop that iterates through the `salesData`, there's no analysis or calculations inside the loop. Both of the suggested options include `Console.WriteLine` statements that you don't want or need.
+    Although GitHub Copilot suggests a `foreach` loop that iterates through the `salesData`, there's no analysis or calculations inside the loop. Each of the suggested options include `Console.WriteLine` statements that you don't want or need.
 
 1. Take a minute to consider why GitHub Copilot is suggesting `Console.WriteLine` statements.
 
@@ -213,7 +213,7 @@ Use the following steps to complete this section of the exercise:
 
     The code that GitHub Copilot does see inside your method is a `Console.WriteLine` statement. With no other context available within the method and no similar methods in your codebase to draw from, GitHub Copilot concludes that you may *want* `Console.WriteLine` statements inside the `foreach` loop.
 
-    GitHub Copilot works best when your code is clean and focused. If you see superfluous code comments or even statements in your code, you may want to remove them before you try using GitHub Copilot code completions.
+    GitHub Copilot works best when your code is clean and focused. If you see superfluous code comments or statements in your code, you may want to remove them before you try using GitHub Copilot code completions.
 
 1. To clean up your code before giving GitHub Copilot another try, complete the following steps:
 
@@ -353,12 +353,6 @@ Use the following steps to complete this section of the exercise:
 1. Take a minute to review the code in your `QuarterlyIncomeReport` class.
 
     ```C#
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    
     namespace ReportGenerator
     {
         class QuarterlyIncomeReport
@@ -485,6 +479,6 @@ Use the following steps to complete this section of the exercise:
 
     ```
 
-    There's still some work required to complete the `QuarterlyIncomeReport` class. In the next unit, you use GitHub Copilot Chat to extend and update your app.
+    There's still work required to complete the `QuarterlyIncomeReport` class. In the next unit, you use GitHub Copilot Chat to extend and update your app.
 
 In this exercise, you used GitHub Copilot to generate code line completions in your Visual Studio Code environment. You used code comments to generate a data structure and a method that generates test data. You also used code line completions to generate the code that processes sales data for a quarterly income report.

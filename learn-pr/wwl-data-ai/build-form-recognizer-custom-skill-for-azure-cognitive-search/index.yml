@@ -2,14 +2,14 @@
 uid: learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search
 metadata:
   title: Build a Document Intelligence custom skill for Azure AI Search
-  description: "Build a Document intelligence custom skill for Azure AI search"
-  ms.date: 03/12/2024
+  description: Build a Document intelligence custom skill for Azure AI search
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module-standard-task-based
-  ms.custom:
-  - N/A
+  ms.date: 03/12/2024
   ms.service: azure
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
   ai-usage: human-only
 title: Build a Document intelligence custom skill for Azure AI search
 summary: Learn how to use an Azure Document Intelligence solution as a custom skill to enrich content in an Azure AI Search pipeline.

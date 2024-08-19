@@ -33,3 +33,4 @@ You aren't necessarily required to clean up your local environment, but you can 
 - [Harm categories in Azure AI Content Safety](/azure/ai-services/content-safety/concepts/harm-categories?tabs=warning)
 - [Prompt Shields](/azure/ai-services/content-safety/concepts/jailbreak-detection)
 - [Groundedness detection](/azure/ai-services/content-safety/concepts/groundedness)
+- [Developer resources for responsible AI innovation](https://aka.ms/operationalize-rai)

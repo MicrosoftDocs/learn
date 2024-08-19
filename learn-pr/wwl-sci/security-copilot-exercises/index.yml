@@ -2,13 +2,15 @@
 uid: learn.security-copilot-exercises
 metadata:
   title: Explore use cases of Microsoft Copilot for Security
-  description: "Explore use cases of Microsoft Copilot for Security."
-  ms.date: 06/06/2024
+  description: Explore use cases of Microsoft Copilot for Security.
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: module-standard-task-based
+  ms.date: 06/06/2024
   ms.service: security-copilot
   ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Explore use cases of Microsoft Copilot for Security
 summary: "Explore use cases of Microsoft Copilot for Security in the standalone and embedded experiences, through lab-like exercises."
 abstract: |

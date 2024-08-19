@@ -2,13 +2,15 @@
 uid: learn.streamline-nonprofit-program-management-with-microsoft-copilot
 metadata:
   title: Streamline nonprofit program management with Microsoft Copilot
-  description: "This module is aligned to program management and administrative task roles. Learn how AI tools such as Copilot can help to manage everyday tasks to increase efficiency, automate time-consuming tasks, and give time back to your team."
-  ms.date: 6/13/2024
+  description: This module is aligned to program management and administrative task roles. Learn how AI tools such as Copilot can help to manage everyday tasks to increase efficiency, automate time-consuming tasks, and give time back to your team.
   author: CourtneyHMicrosoft
   ms.author: cohodge
-  ms.topic: module-standard-task-based
+  ms.date: 6/13/2024
   ms.service: artificial-intelligence
   ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Streamline nonprofit program management with Microsoft Copilot
 summary: This module is aligned to program management and administrative task roles. Learn how AI tools such as Copilot can help to manage everyday tasks to increase efficiency, automate time-consuming tasks, and give time back to your team. 
 abstract: |

@@ -3,11 +3,13 @@ uid: learn.wwl.prepare-to-develop-ai-solutions-azure.understand-capabilities-of-
 title: Understand capabilities of Azure Machine Learning
 metadata:
   title: Understand capabilities of Azure Machine Learning
-  description: "Understand capabilities of Azure Machine Learning"
-  ms.date: 12/10/2023
+  description: Understand capabilities of Azure Machine Learning
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 12/10/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

@@ -3,13 +3,13 @@ uid: learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.lear
 title: Learn learning path best practices
 metadata:
   title: Learn learning path best practices
-  description: "Learn learning path best practices"
-  ms.date: 03/22/2024
+  description: Learn learning path best practices
   author: wwlpublish
   ms.author: tsheppard
+  ms.date: 03/22/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/3-learn-learning-path-best-practices.md)]

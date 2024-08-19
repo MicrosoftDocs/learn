@@ -3,11 +3,13 @@ uid: learn.wwl.fundamentals-machine-learning.clustering
 title: Clustering
 metadata:
   title: Clustering
-  description: "Clustering"
-  ms.date: 09/24/2023
+  description: Clustering
   author: wwlpublish
   ms.author: gmalc
+  ms.date: 09/24/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/7-clustering.md)]

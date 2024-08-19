@@ -3,11 +3,13 @@ uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.examine-azure
 title: Examine the Azure Machine Learning schema
 metadata:
   title: Examine the Azure Machine Learning schema
-  description: "Examine the Azure Machine Learning schema"
-  ms.date: 04/26/2024
+  description: Examine the Azure Machine Learning schema
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 04/26/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/6-examine-azure-machine-learning-schema.md)]

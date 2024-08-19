@@ -38,7 +38,7 @@ The container concept gives us three major benefits:
 
 1. **Startup is fast** - Containers start up in few seconds, unlike VMs, which can take minutes to start.
 
-The above benefits make containers a popular choice for developers and IT operations alike, and why many have switched from VMs.
+These benefits make containers a popular choice for developers and IT operations alike, and why many are switching from VMs.
 
 ## What is container management?
 
@@ -60,7 +60,7 @@ Kubernetes is a portable, extensible open-source platform for automating deploym
 
 Kubernetes allows you to view your data center as one large computer. We don't worry about how and where we deploy our containers, only about deploying and scaling our applications as needed.
 
-Here are some additional aspects to keep in mind about Kubernetes:
+Here are some more aspects to keep in mind about Kubernetes:
 
 - Kubernetes isn't a full PaaS offering. It operates at the container level and offers only a common set of PaaS features.
 
@@ -72,7 +72,7 @@ Here are some additional aspects to keep in mind about Kubernetes:
 
 - Kubernetes doesn't provide middleware, data-processing frameworks, databases, caches, or cluster storage systems. All these items are run as containers or as part of another service offering.
 
-- A Kubernetes deployment is configured as a cluster. A cluster consists of at least one primary machine or control plane,  and one or more worker machines. For production deployments, the preferred configuration is a high availability deployment with three to five replicated control plane machines. These worker machines are also called nodes or agent nodes.
+- A Kubernetes deployment is configured as a cluster. A cluster consists of at least one primary machine or control plane and one or more worker machines. For production deployments, the preferred configuration is a high availability deployment with three to five replicated control plane machines that are referred to as nodes or agent nodes.
 
 With all the benefits you receive with Kubernetes, you're responsible for finding the best solution that fits your needs to address these aspects. Keep in mind that you're responsible for maintaining your Kubernetes cluster. For example, you need to manage OS upgrades and the Kubernetes installation and upgrades. You also manage the hardware configuration of the host machines, such as networking, memory, and storage.
 

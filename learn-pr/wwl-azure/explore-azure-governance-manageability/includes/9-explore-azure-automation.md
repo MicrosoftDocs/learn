@@ -45,10 +45,11 @@ Azure Automation supports management throughout the lifecycle of your infrastruc
 
 - **Write runbooks** \- Author PowerShell, PowerShell Workflow, graphical, Python 2, and DSC runbooks in common languages.
 - **Build and deploy resources** \- Deploy virtual machines across a hybrid environment using runbooks and Azure Resource Manager templates. Integrate into development tools, such as Jenkins and Azure DevOps.
-- **Configure VMs** \- Assess and configure Windows and Linux machines with configurations for the infrastructure and application.
+- **Configure virtual machines** \- Assess and configure Windows and Linux machines with configurations for the infrastructure and application.
 - **Share knowledge** \- Transfer knowledge into the system on how your organization delivers and maintains workloads.
 - **Retrieve inventory** \- Get a complete inventory of deployed resources for targeting, reporting, and compliance.
 - **Find changes** \- Identify changes that can cause misconfiguration and improve operational compliance.
 - **Monitor** \- Isolate machine changes that are causing issues and remediate or escalate them to management systems.
 - **Protect** \- Quarantine machines if security alerts are raised. Set in-guest requirements.
 - **Govern** \- Set up Azure RBAC for teams. Recover unused resources.
+

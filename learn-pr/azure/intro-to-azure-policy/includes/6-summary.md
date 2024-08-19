@@ -7,6 +7,7 @@ In this module, you explored the concepts of Azure Policy and how to use it to:
 To learn more, review the following articles:
 
 - [What is Azure Policy?](/azure/governance/policy/overview)
+- [Policy version (preview)](/azure/governance/policy/concepts/definition-structure-basics#version-preview)
 - [Assign a policy](/azure/governance/policy/assign-policy-portal)
 - [Azure Policy samples](/azure/governance/policy/samples)
 - [Azure Resource Graph sample queries for Azure Policy](/azure/governance/policy/samples/resource-graph-samples)

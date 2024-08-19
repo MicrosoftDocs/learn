@@ -3,12 +3,14 @@ uid: learn.student-evangelism.challenge-project-build-speech-translator-app.summ
 title: Summary
 metadata:
   title: Summary
-  description: "Summary."
-  ms.date: 12/13/2023
+  description: Summary.
   author: theoyinbooke
   ms.author: somelezediko
-  ms.custom: team=nextgen
+  ms.date: 12/13/2023
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
 durationInMinutes: 30
 content: |
   [!include[](includes/7-summary.md)]

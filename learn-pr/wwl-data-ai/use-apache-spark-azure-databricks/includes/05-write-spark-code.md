@@ -202,7 +202,7 @@ GROUP BY Category
 ORDER BY Category
 ```
 
-The SQL code example returns a resultset that is automatically displayed in the notebook as a table, like the one below:
+The SQL code example returns a result set that is automatically displayed in the notebook as a table, like the one below:
 
 | Category | ProductCount |
 |--|--|

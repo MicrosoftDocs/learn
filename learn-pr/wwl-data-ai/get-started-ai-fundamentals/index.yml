@@ -2,12 +2,14 @@
 uid: learn.wwl.get-started-ai-fundamentals
 metadata:
   title: Fundamental AI Concepts
-  description: "This module introduces common AI workloads and their corresponding Azure AI Services. It also introduces Microsoft's Responsible AI policies."
-  ms.date: 12/05/2023
+  description: This module introduces common AI workloads and their corresponding Azure AI Services. It also introduces Microsoft's Responsible AI policies.
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: module
+  ms.date: 12/05/2023
   ms.service: azure
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Fundamental AI Concepts
 summary: With AI, we can build solutions that seemed like science fiction a short time ago; enabling incredible advances in health care, financial management, environmental protection, and other areas to make a better world for everyone.
 abstract: |

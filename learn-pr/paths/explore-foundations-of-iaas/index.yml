@@ -3,7 +3,7 @@ uid: learn.wwl.explore-foundations-of-iaas
 metadata:
   title: Explore the foundations of IaaS for SAP on Azure
   description: Explore the foundations of IaaS for SAP on Azure
-  ms.date: 01/19/2024
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: learning-path
@@ -27,5 +27,6 @@ modules:
 - learn.wwl.explore-azure-networking
 - learn.wwl.explore-azure-storage
 - learn.wwl.explore-azure-databases
+- learn.wwl.explore-azure-networking-sap-rise
 trophy:
   uid: learn.wwl.explore-foundations-of-iaas.trophy

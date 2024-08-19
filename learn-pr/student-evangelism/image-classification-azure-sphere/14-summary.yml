@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: In this section, we help the learner to deploy a real-time image classification to Azure Sphere.
-  ms.date: 06/19/2020
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 3 # dummy number at present
 content: |
   [!include[](includes/14-summary.md)]

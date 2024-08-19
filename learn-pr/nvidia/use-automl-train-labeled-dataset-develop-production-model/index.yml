@@ -8,8 +8,9 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: module
-  ms.service: machine-learning 
+  ms.service: azure-machine-learning
   ms.subservice: automl
+  ms.collection: ce-advocates-ai-copilot
 title: Use AutoML to train a labeled dataset and develop a production model
 summary: Learn how to use AutoML to train a labeled dataset and develop a production object detection model.
 abstract: |

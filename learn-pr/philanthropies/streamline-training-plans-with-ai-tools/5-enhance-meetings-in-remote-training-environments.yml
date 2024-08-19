@@ -3,11 +3,13 @@ uid: learn.philanthropies.streamline-training-plans-with-ai-tools.enhance-meetin
 title: Enhance meetings in remote training environments
 metadata:
   title: Enhance meetings in remote training environments
-  description: This content is a part of the "Streamline training plans with AI tools" module.
-  ms.date: 03/07/2024
+  description: This content is a part of the Streamline training plans with AI tools module.
   author: yoosunee
   ms.author: andreapark
+  ms.date: 03/07/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/5-enhance-meetings-in-remote-training-environments.md)]

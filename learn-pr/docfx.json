@@ -712,6 +712,19 @@
                     "**/design/**",
                     "**/resources/**"
                 ]
+            },
+            {
+                "src": "research",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
             }
         ],
         "resource": [{

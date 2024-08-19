@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.microsoft-entra-external-identities.eeid-poc
+metadata:
+  title: Guided project – Build a sample app to evaluate Microsoft Entra External ID for seamless and secure sign-up and sign-in for consumers and business customers
+  description: Discover how Microsoft Entra External ID can provide secure, seamless sign-in experiences for your consumers and business customers. Explore tenant creation, app registration, flow customization, and account security.
+  ms.date: 6/25/2024
+  author: linkhp
+  ms.author: lipar
+  ms.topic: module-guided-project
+  ms.service: entra-external-id
+title: Guided project – Build a sample app to evaluate Microsoft Entra External ID for seamless and secure sign-up and sign-in for consumers and business customers
+summary: |
+  Discover how Microsoft Entra External ID can provide secure, seamless sign-in experiences for your consumers and business customers. Explore tenant creation, app registration, flow customization, and account security.
+  > [!NOTE]
+  >  This is a **_guided project_** module where you’ll complete an end-to-end project by following step-by-step instructions.
+abstract: |
+   In this module, you'll practice how to:
+    - Build a branded, seamless, and secure sign-up and sign-in experiences for your web application
+    - Assess Microsoft Entra External ID identity provider capabilities against consumer and business customer needs
+prerequisites: |
+  - An Azure subscription and Azure account 
+  - If you don’t have any Azure subscriptions, any personal account, Microsoft account (MSA), or GitHub account
+  - (Optional) The latest version of Visual Studio Code
+  - (Optional) The latest version of PowerShell
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - developer
+  - identity-access-admin
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+products:
+- entra-external-id
+subjects:
+  - identity-access
+units:
+- learn.microsoft-entra-external-identities.eeid-poc.Introduction
+- learn.microsoft-entra-external-identities.eeid-poc.prepare
+- learn.microsoft-entra-external-identities.eeid-poc.create-external-tenant
+- learn.microsoft-entra-external-identities.eeid-poc.register-application
+- learn.microsoft-entra-external-identities.eeid-poc.create-sign-up-sign-in-user-flow
+- learn.microsoft-entra-external-identities.eeid-poc.add-admin-account
+- learn.microsoft-entra-external-identities.eeid-poc.collect-user-attributes-during-sign-up
+- learn.microsoft-entra-external-identities.eeid-poc.customize-look-feel
+- learn.microsoft-entra-external-identities.eeid-poc.enable-social-identity-provider-sign-in
+- learn.microsoft-entra-external-identities.eeid-poc.validate-attributes-collected-during-sign-up
+- learn.microsoft-entra-external-identities.eeid-poc.enable-multifactor-authentication
+- learn.microsoft-entra-external-identities.eeid-poc.knowledge-check
+- learn.microsoft-entra-external-identities.eeid-poc.summary
+badge:
+  uid: learn.microsoft-entra-external-identities.eeid-poc.badge

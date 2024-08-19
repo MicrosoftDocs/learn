@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of the Azure Developer CLI
-  ms.date: 07/02/2024
+  ms.date: 07/17/2024
   author: alexwolfmsft
   ms.author: alexwolf
   ms.topic: unit
@@ -14,7 +14,7 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "You have made changes to your `azd` template, but you only want to redeploy the application code without provisioning any changes made to the infrastructure as code files. Which command should you run?"
+  - content: "You made changes to your `azd` template, but you only want to redeploy the application code without provisioning any changes made to the infrastructure as code files. Which command should you run?"
     choices:
     - content: "`azd provision`"
       isCorrect: false
@@ -28,11 +28,11 @@ quiz:
     - content: "`azd deploy`"
       isCorrect: true
       explanation: "Correct. The `azd deploy` command will only package and deploy the app source code to your Azure services."
-  - content: "Suppose you have configured a CI/CD pipeline for your template through GitHub Actions. How do you provision and deploy `azd` template updates to Azure using the CI/CD pipeline?"
+  - content: "Suppose you configured a CI/CD pipeline for your template through GitHub Actions. How do you provision and deploy `azd` template updates to Azure using the CI/CD pipeline?"
     choices:
     - content: "Run the `azd pipeline` command locally."
       isCorrect: false
-      explanation: "Incorrect. The `azd pipeline`` command is used to initially set up your CI/CD pipeline, but it's not used to deploy ongoing changes to your template."
+      explanation: "Incorrect. The `azd pipeline` command is used to initially set up your CI/CD pipeline, but it's not used to deploy ongoing changes to your template."
     - content: "Run the `azd up` command locally."
       isCorrect: false
       explanation: "Incorrect. Although the `azd up` command can apply updates to your template, it will not use your GitHub Actions CI/CD pipeline when run locally."

@@ -3,11 +3,13 @@ uid: learn.wwl.build-copilot-ai-studio.build-copilot
 title: Build a copilot with prompt flow
 metadata:
   title: Build a copilot with prompt flow
-  description: "Learn about build a copilot with prompt flow."
-  ms.date: 02/21/2024
+  description: Learn about build a copilot with prompt flow.
   author: madiepev
   ms.author: madiepev
+  ms.date: 02/21/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/4-build-copilot.md)]

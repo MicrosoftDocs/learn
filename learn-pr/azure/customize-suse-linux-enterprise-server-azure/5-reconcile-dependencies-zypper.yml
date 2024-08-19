@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Reconcile dependencies with zypper package manager
   description: Learn about how SUSE handles package dependencies with zypper.
-  ms.date: 06/15/2021
+  ms.date: 08/01/2024
   author: yenchiho
   ms.author: yenchiho
   ms.topic: unit

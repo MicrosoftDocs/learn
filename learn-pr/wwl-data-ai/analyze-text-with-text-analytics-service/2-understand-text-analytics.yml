@@ -3,11 +3,13 @@ uid: learn.wwl.analyze-text-with-text-analytics-service.understand-text-analytic
 title: Understand Text Analytics
 metadata:
   title: Understand Text Analytics
-  description: "Understand Text Analytics"
-  ms.date: 11/02/2023
+  description: Understand Text Analytics
   author: wwlpublish
   ms.author: sheryang
+  ms.date: 11/02/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/2-understand-text-analytics.md)]

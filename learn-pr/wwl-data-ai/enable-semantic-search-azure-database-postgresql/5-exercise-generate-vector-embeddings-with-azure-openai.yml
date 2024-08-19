@@ -3,11 +3,13 @@ uid: learn.wwl.enable-semantic-search-azure-database-postgresql.exercise-generat
 title: Exercise - Generate vector embeddings with Azure OpenAI
 metadata:
   title: Exercise - Generate vector embeddings with Azure OpenAI
-  description: "Exercise - Generate vector embeddings with Azure OpenAI"
-  ms.date: 04/29/2024
+  description: Exercise - Generate vector embeddings with Azure OpenAI
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 04/29/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/5-exercise-generate-vector-embeddings-with-azure-openai.md)]

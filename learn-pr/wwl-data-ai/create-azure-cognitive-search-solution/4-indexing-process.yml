@@ -3,11 +3,13 @@ uid: learn.wwl.create-azure-cognitive-search-solution.create-data-source
 title: Understand the indexing process
 metadata:
   title: Understand the indexing process
-  description: "Understand the indexing process"
-  ms.date: 12/11/2023
+  description: Understand the indexing process
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 12/11/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

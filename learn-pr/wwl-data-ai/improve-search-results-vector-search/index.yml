@@ -2,12 +2,14 @@
 uid: learn.improve-search-results-vector-search
 metadata:
   title: Perform vector search and retrieval in Azure AI Search
-  description: "Perform vector search and retrieval in Azure AI Search."
-  ms.date: 9/29/2023
+  description: Perform vector search and retrieval in Azure AI Search.
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module-standard-task-based
+  ms.date: 9/29/2023
   ms.service: cognitive-search
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Perform vector search and retrieval in Azure AI Search
 summary: "Learn how to perform vector search and retrieval in Azure AI Search."
 abstract: |

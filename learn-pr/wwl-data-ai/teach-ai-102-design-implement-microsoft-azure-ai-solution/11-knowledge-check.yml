@@ -3,11 +3,13 @@ uid: learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.knowled
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 03/18/2024
+  description: Knowledge check
   author: wwlpublish
   ms.author: tsheppard
+  ms.date: 03/18/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/11-knowledge-check.md)]

@@ -2,12 +2,14 @@
 uid: learn.wwl.enrich-search-index-using-language-studio
 metadata:
   title: Enrich your data with Azure AI Language
-  description: "Azure AI Language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions."
-  ms.date: 09/27/2023
+  description: Azure AI Language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions.
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module-standard-task-based
+  ms.date: 09/27/2023
   ms.service: cognitive-search
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Enrich your data with Azure AI Language
 summary: Azure AI Language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions.
 abstract: |

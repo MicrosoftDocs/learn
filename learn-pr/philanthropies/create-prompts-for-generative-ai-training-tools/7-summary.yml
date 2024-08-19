@@ -4,10 +4,12 @@ title: Summary
 metadata:
   title: Summary
   description: This content is a part of the 'Create effective prompts for generative AI training tools' module.
-  ms.date: 02/27/2024
   author: yoosunee
   ms.author: andreapark
+  ms.date: 02/27/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

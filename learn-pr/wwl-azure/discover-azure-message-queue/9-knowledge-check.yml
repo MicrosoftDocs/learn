@@ -4,33 +4,57 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/21/2023
+  ms.date: 07/18/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following advanced features of Azure Service Bus creates a first-in, first-out (FIFO) guarantee?"
+  - content: "What is a key consideration when choosing to use Service Bus queues over Storage queues?"
     choices:
-    - content: "Transactions"
-      isCorrect: false
-      explanation: "Incorrect. A transaction groups two or more operations together into an execution scope."
-    - content: "Scheduled delivery"
-      isCorrect: false
-      explanation: "Incorrect. Messages can be submitted to a queue or topic for delayed processing, but that doesn't guarantee a FIFO."
-    - content: "Message sessions"
+    - content: "Your solution requires the queue to provide a guaranteed first-in-first-out (FIFO) ordered delivery."
       isCorrect: true
-      explanation: "Correct. To create a first-in, first-out (FIFO) guarantee in Service Bus, use sessions. Message sessions enable joint and ordered handling of unbounded sequences of related messages."
-  - content: "In Azure Service Bus messages are durably stored which enables a load-leveling benefit. Which of the following correctly describes the load-leveling benefit relative to a consuming application's performance?"
+      explanation: "Correct. Service Bus queues provide a guaranteed first-in-first-out (FIFO) ordered delivery."
+    - content: "Your application must store over 80 gigabytes of messages in a queue."
+      isCorrect: false
+      explanation: "Incorrect. This is a feature of Storage queues, not Service Bus queues."
+    - content: "You require server side logs of all of the transactions executed against your queues."
+      isCorrect: false
+      explanation: "Incorrect. This is also a feature of Storage queues, not Service Bus queues."
+  - content: "What is the main difference between Service Bus queues and topics with subscriptions?"
     choices:
-    - content: "Performance needs to handle peak load"
-      isCorrect: false
-      explanation: "Incorrect. Intermediating message producers and consumers with a queue means that the consuming application only has to be able to handle average load instead of peak load."
-    - content: "Performance needs to handle average load"
+    - content: "Queues allow processing of a message by a single consumer, while topics with subscriptions provide a one-to-many form of communication."
       isCorrect: true
-      explanation: "Correct. Intermediating message producers and consumers with a queue means that the consuming application only has to be able to handle average load instead of peak load."
-    - content: "Performance needs to handle low loads"
+      explanation: "Correct. A queue allows processing of a message by a single consumer. In contrast, topics and subscriptions provide a one-to-many form of communication."
+    - content: "Queues allow processing of a message by multiple consumers, while topics with subscriptions provide a one-to-one form of communication."
       isCorrect: false
-      explanation: "Incorrect. Intermediating message producers and consumers with a queue means that the consuming application only has to be able to handle average load instead of peak load."
+      explanation: "Incorrect. Queues offer First In, First Out (FIFO) message delivery to one or more competing consumers, but only one consumer processes each message."
+    - content: "Topics with subscriptions allow processing of a message by a single consumer, while queues provide a one-to-many form of communication."
+      isCorrect: false
+      explanation: "Incorrect. Topics and subscriptions provide a one-to-many form of communication in a publish and subscribe pattern, scaling to large numbers of recipients."
+  - content: "What is the role of the `ContentType` property in Service Bus message payloads?"
+    choices:
+    - content: "It encrypts the payload for secure transmission."
+      isCorrect: false
+      explanation: "Incorrect. The `ContentType` property doesn't encrypt the payload."
+    - content: "It determines the size of the payload."
+      isCorrect: false
+      explanation: "Incorrect. The `ContentType` property doesn't determine the size of the payload."
+    - content: "It enables applications to describe the payload, with the suggested format for the property values being a MIME content-type description."
+      isCorrect: true
+      explanation: "Correct. The `ContentType` property describes the payload, suggesting a MIME content-type format."
+  - content: "What is the purpose of the 'QueueClient' class in Azure Queue Storage when using .NET?"
+    choices:
+    - content: "It manages the configuration files for client applications."
+      isCorrect: false
+      explanation: "Incorrect. The 'QueueClient' class is not used for managing configuration files, but for interacting with queues in Azure Queue Storage."
+    - content: "It retrieves and manipulates queues stored in Azure Queue Storage."
+      isCorrect: true
+      explanation: "Correct. The 'QueueClient' class is used to interact with queues in Azure Queue Storage, including creating, retrieving, and deleting queues."
+    - content: "It creates and manage messages within a specific queue."
+      isCorrect: false
+      explanation: "Incorrect. While 'QueueClient' does interact with messages, it is primarily used to retrieve and manipulate queues, not individual messages."

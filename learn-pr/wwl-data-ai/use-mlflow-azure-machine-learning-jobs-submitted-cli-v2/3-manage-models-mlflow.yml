@@ -3,11 +3,13 @@ uid: learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.manage-models-mlflow
 title: Manage models with MLflow
 metadata:
   title: Manage models with MLflow
-  description: "Manage models with MLflow"
-  ms.date: 11/22/2022
+  description: Manage models with MLflow
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

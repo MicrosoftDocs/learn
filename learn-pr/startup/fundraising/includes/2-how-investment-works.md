@@ -38,7 +38,7 @@ When you raise external capital, you're giving up some control over your company
 
 One way to think through this decision is to weigh the advantages and disadvantages. On the downside, you have to give up some control. On the upside, you have the capital to increase the odds that the company grows and succeeds.
 
-A worksheet like the [Founder Alignment Exercise](https://foundershubcontent.z13.web.core.windows.net/1_EXERCISE1%20-%20Founder%20alignment%20exercise.pdf?azure-portal=true) is a useful input to help you decide which kind of company you and your cofounders want to build.
+A worksheet like the Founder Alignment Exercise is a useful input to help you decide which kind of company you and your cofounders want to build.
 
 ## Control and dilution
 

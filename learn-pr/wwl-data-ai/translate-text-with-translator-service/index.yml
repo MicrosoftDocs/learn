@@ -2,12 +2,14 @@
 uid: learn.wwl.translate-text-with-translator-service
 metadata:
   title: Translate text with the Translator service
-  description: "Translate text with the Translator service"
-  ms.date: 12/05/2023
+  description: Translate text with the Translator service
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module-standard-task-based
+  ms.date: 12/05/2023
   ms.service: azure-ai-translator
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Translate text with Azure AI Translator service
 summary: The Translator service enables you to create intelligent apps and services that can translate text between languages.
 abstract: |

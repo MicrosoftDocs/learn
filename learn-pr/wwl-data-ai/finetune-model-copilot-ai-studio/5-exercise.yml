@@ -3,11 +3,13 @@ uid: learn.wwl.finetune-model-copilot-ai-studio.exercise
 title: Exercise - Fine-tune a foundation model
 metadata:
   title: Exercise - Fine-tune a foundation model
-  description: "Exercise - Fine-tune a foundation model using the Azure AI studio."
-  ms.date: 6/26/2024
+  description: Exercise - Fine-tune a foundation model using the Azure AI studio.
   author: madiepev
   ms.author: madiepev
+  ms.date: 6/26/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise.md)]

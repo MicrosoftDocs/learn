@@ -3,11 +3,13 @@ uid: learn.wwl.generate-batch-predictions-fabric.generate-predictions
 title: Generate and save predictions to a Delta table
 metadata:
   title: Generate and save predictions to a Delta table
-  description: "Apply a model in Microsoft Fabric to generate predictions. Save the new data to a Delta table for further processing."
-  ms.date: 10/25/2023
+  description: Apply a model in Microsoft Fabric to generate predictions. Save the new data to a Delta table for further processing.
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 10/25/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai

@@ -3,11 +3,13 @@ uid: learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.introdu
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction"
-  ms.date: 07/10/2024
+  description: Introduction
   author: wwlpublish
   ms.author: chtestao
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 durationInMinutes: 3
 content: |

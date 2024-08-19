@@ -10,22 +10,22 @@ The Azure Backup service provides simple, secure, and cost-effective solutions t
 
 Azure Backup is an Azure service that provides cost effective, secure, and zero-infrastructure backup solutions for all Azure-managed data assets.
 
-The centralized management interface makes it easy to define backup policies and protect a wide range of enterprise workloads, including Azure Virtual Machines, Azure Disks, SQL and SAP databases, Azure file shares, and blobs.
+The centralized management interface makes it easy to define backup policies and protect a wide range of enterprise workloads. Including, Azure Virtual Machines, Azure Disks, SQL and SAP databases, Azure file shares, and blobs.
 
-:::image type="content" source="../media/azure-backup-architecture.png" alt-text="Diagram of Azure Backup architecture displaying workloads at the bottom, feeding into the data plane above that, tying into the management plane with backup policies, Azure policies, Azure Monitor, and Azure Lighthouse services listed for management.":::
+:::image type="content" source="../media/azure-backup-architecture.png" alt-text="Diagram of Azure Backup architecture displaying workloads at the bottom, feeding upwards into the data plane, and tying into the management plane. Management contains backup policies, Azure policies, Azure Monitor, and Azure Lighthouse services.":::
 
 ## When to think of Azure Backup?
 
-As the IT admin of your organization, you are responsible for meeting the compliance needs for all the data assets of the firm; backup is a critical aspect of it. There are also various application admins in your company who need to do self-service backup and restore to take care of issues like data corruption or rogue admin scenarios. You are looking for an enterprise-class backup solution to protect all your workloads and manage them from a central place.
+As the IT admin of your organization, you're responsible for meeting the compliance needs for all the data assets of the firm; backup is a critical aspect of it. There are also various application admins in your company who need to do self-service backup and restore to take care of issues like data corruption or rogue admin scenarios. You're looking for an enterprise-class backup solution to protect all your workloads and manage them from a central place.
 
-Azure Backup can provide back up services for the following data assets:
+Azure Backup can provide backup services for the following data assets:
 
 * On-premises files, folders, and system state
 * Azure Virtual Machines (VMs)
 * Azure Managed Disks
 * Azure Files Shares
 * SQL Server in Azure VMs
-* SAP HANA databases in Azure VMs
+* SAP HANA (High-performance Analytic Appliance) databases in Azure VMs
 * Azure Database for PostgreSQL servers
 * Azure Blobs
 * Azure Database for PostSQL - Flexible servers
@@ -40,7 +40,7 @@ Let's look at some key features of Azure Backup.
 
 | Feature | Description | Usage |
 | --- | --- | --- |
-| Zero-infrastructure backup solution | No backup server or infrastructure needed like would be required for conventional backup solutions. Similarly, no backup storage needs to be deployed; it's automatically managed and scaled by Azure Backup. | Zero-infrastructure solution eliminates capital expenses and reduces operational expenses. It increases ease of use by automating storage management. |
+| Zero-infrastructure backup solution | Unlike conventional backup solutions, no backup server or infrastructure is needed. Similarly, no backup storage needs to be deployed, because Azure Backup automatically manages and scales it. | Zero-infrastructure solution eliminates capital expenses and reduces operational expenses. It increases ease of use by automating storage management. |
 | At-scale management | Natively manage your entire backup estate from a central console called Backup Center. Use APIs, PowerShell, and Azure CLI to automate Backup policy and security configurations. | Backup center simplifies data protection management at-scale by enabling you to discover, govern, monitor, operate, and optimize backup management, all from one unified console, helping you to drive operational efficiency with Azure.  |
 | Security | Azure Backup provides built-in security to your backup environment, both when your data is in transit and at rest by using capabilities encryption, private endpoints, alerts, and so on. | Your backups are automatically secured against ransomware, malicious admins, and accidental deletions. |
 
@@ -48,6 +48,8 @@ Let's look at some key features of Azure Backup.
 
 Recovery Time Objective (RTO) is the target time within which a business process must be restored after a disaster occurs to avoid unacceptable consequences. For instance, if a critical application goes down due to a server failure and the business can only tolerate a maximum of four hours of downtime, then the RTO is four hours.
 
+Recovery Point Objective (RPO) is the maximum amount of data loss, measured in time, that your organization can sustain during an event.
+
 The following example scenario describes both the RPO and RTO concepts:
 
-Your organization has an RPO of one hour for your customer database, which means you perform backups every hour. If a data loss incident occurs, you'll lose not more than one hour of data. When you set RTO to three hours, then in the event of a system failure, you aim to restore access to the database within three hours to minimize the impact on operations.
+Your organization has an RPO of one hour for your customer database, which means you perform backups every hour. If a data loss incident occurs, you lose not more than one hour of data. When you set RTO to three hours, then if a system failure occurs, you aim to restore access to the database within three hours to minimize the impact on operations.

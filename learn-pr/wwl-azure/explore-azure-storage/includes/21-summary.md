@@ -42,7 +42,7 @@ Now you have:
 - [Azure Disk Storage](https://azure.microsoft.com/services/managed-disks/)
 - [Managed Disks pricing](https://azure.microsoft.com/pricing/details/managed-disks/)
 - [Memory optimized virtual machine sizes](/azure/virtual-machines/linux/sizes-memory)
-- [SAP documentation for IAAS](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas)
+- [SAP documentation for IAAS](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=v:deCertified;iaas;ve:24)
 - [Virtual network peering](/azure/virtual-network/virtual-network-peering-overview)
 - [Service level for Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-service-levels)
 - [Configure export policy for NFS or dual-protocol volumes](/azure/azure-netapp-files/azure-netapp-files-configure-export-policy)

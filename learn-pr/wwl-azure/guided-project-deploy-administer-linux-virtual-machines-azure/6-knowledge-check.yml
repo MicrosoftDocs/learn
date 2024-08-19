@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/12/2024
+  ms.date: 07/30/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -14,7 +14,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Suppose you want to run a network appliance on a virtual machine. Which virtual machine size family would you choose?"
+  - content: "Suppose an organization needs to run a network appliance on a virtual machine. Which virtual machine size family is best for this scenario?"
     choices:
     - content: "Compute optimized."
       isCorrect: true
@@ -36,7 +36,7 @@ quiz:
     - content: "Resource, condition, actions, alert details."
       isCorrect: true
       explanation: "Correct. These elements make up an alert rule."
-  - content: "Which role provides read, write, and delete on Azure storage containers and blobs."
+  - content: "Which role provides read, write, and delete on Azure storage containers and blobs?"
     choices:
     - content: "Storage Blob Data Reader."
       isCorrect: false

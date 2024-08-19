@@ -4,11 +4,10 @@ title: Exercise - Upload a sample video to your edge device
 metadata:
   title: Exercise - Upload a sample video to your edge device
   description: In this section, we help learner upload a sample video file into the container at the edge.
-  ms.date: 05/01/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 10
 content: |
   [!include[](includes/8-exercise-upload-video-edge-device.md)]

@@ -3,11 +3,13 @@ uid: learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.
 title: 'Understand the benefits of Microsoft Copilot for Security and Intune    '
 metadata:
   title: Understand the benefits of Microsoft Copilot for Security and Intune
-  description: "Understand the benefits of Microsoft Copilot for Security and Intune"
-  ms.date: 06/21/2024
+  description: Understand the benefits of Microsoft Copilot for Security and Intune
   author: wwlpublish
   ms.author: rstearman
+  ms.date: 06/21/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 8
 content: |
   [!include[](includes/2-understand-benefits-microsoft-security-copilot-intune.md)]

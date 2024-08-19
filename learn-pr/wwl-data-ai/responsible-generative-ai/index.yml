@@ -2,12 +2,14 @@
 uid: learn.wwl.responsible-generative-ai
 metadata:
   title: Fundamentals of Responsible Generative AI
-  description: "A practical approach to implementing generative AI responsibly."
-  ms.date: 7/13/2023
+  description: A practical approach to implementing generative AI responsibly.
   author: graememalcolm
   ms.author: gmalc
-  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.date: 7/13/2023
   ms.service: azure-ai-openai
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Fundamentals of Responsible Generative AI
 summary: "Generative AI enables amazing creative solutions, but must be implemented responsibly to minimize the risk of harmful content generation."
 abstract: |

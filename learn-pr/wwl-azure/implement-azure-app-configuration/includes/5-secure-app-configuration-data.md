@@ -1,4 +1,3 @@
-
 In this unit you learn how to secure your apps configuration data by using:
 
 * Customer-managed keys
@@ -24,13 +23,13 @@ Once these resources are configured, two steps remain to allow Azure App Configu
 
 ## Use private endpoints for Azure App Configuration
 
-You can use private endpoints for Azure App Configuration to allow clients on a virtual network (VNet) to securely access data over a private link. The private endpoint uses an IP address from the VNet address space for your App Configuration store. Network traffic between the clients on the VNet and the App Configuration store traverses over the VNet using a private link on the Microsoft backbone network, eliminating exposure to the public internet.
+You can use private endpoints for Azure App Configuration to allow clients on a virtual network to securely access data over a private link. The private endpoint uses an IP address from the virtual network address space for your App Configuration store. Network traffic between the clients on the virtual network and the App Configuration store traverses over the virtual network using a private link on the Microsoft backbone network, eliminating exposure to the public internet.
 
 Using private endpoints for your App Configuration store enables you to:
 
 * Secure your application configuration details by configuring the firewall to block all connections to App Configuration on the public endpoint.
-* Increase security for the virtual network (VNet) ensuring data doesn't escape from the VNet.
-* Securely connect to the App Configuration store from on-premises networks that connect to the VNet using VPN or ExpressRoutes with private-peering.
+* Increase security for the virtual network ensuring data doesn't escape.
+* Securely connect to the App Configuration store from on-premises networks that connect to the virtual network using VPN or ExpressRoutes with private-peering.
 
 ## Managed identities
 

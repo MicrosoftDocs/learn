@@ -2,12 +2,14 @@
 uid: learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.exercise-develop-ai-copilot-vcore-based-azure-cosmos-db-mongodb
 title: 'Exercise: Develop an AI copilot using vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI'
 metadata:
-  title: 'Exercise: Develop an AI copilot using vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI'
+  title: "Exercise: Develop an AI copilot using vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI"
   description: "Exercise: Develop an AI copilot using vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI."
-  ms.date: 04/13/2024
   author: wwlpublish
   ms.author: calopez
+  ms.date: 04/13/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 45
 azureSandbox: false
 labId: 163231

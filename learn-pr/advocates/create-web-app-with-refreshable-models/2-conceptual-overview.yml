@@ -4,9 +4,11 @@ metadata:
   title: Conceptual overview
   description: Building a web app to perform inference against a local machine learning model.
   author: GitHubber17
-  ms.date: 12/22/2022
   ms.author: chnoring
+  ms.date: 12/22/2022
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Conceptual overview
 durationInMinutes: 10

@@ -3,11 +3,13 @@ uid: learn.wwl.create-azure-cognitive-search-solution.resources-for-search
 title: Understand search components
 metadata:
   title: Understand search components
-  description: "Understand search components"
-  ms.date: 12/11/2023
+  description: Understand search components
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 12/11/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

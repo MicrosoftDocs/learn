@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Optimize and save models
   description: Optimize models with hyperparameters and save them
   ms.date: 08/08/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: madiepev
+  ms.author: madiepev
   ms.topic: unit
 durationInMinutes: 10
 sandbox: true

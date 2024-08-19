@@ -3,13 +3,13 @@ uid: learn.wwl.implement-code-improvements-using-github-copilot-tools.exercise-i
 title: Exercise - Improve code reliability and performance by using GitHub Copilot Chat
 metadata:
   title: Exercise - Improve code reliability and performance by using GitHub Copilot Chat
-  description: "Exercise - Improve code reliability and performance by using GitHub Copilot Chat"
-  ms.date: 05/20/2024
+  description: Exercise - Improve code reliability and performance by using GitHub Copilot Chat
   author: wwlpublish
   ms.author: cahowd
+  ms.date: 05/20/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 16
 content: |
   [!include[](includes/4-exercise-improve-reliability-performance-github-copilot-chat.md)]
