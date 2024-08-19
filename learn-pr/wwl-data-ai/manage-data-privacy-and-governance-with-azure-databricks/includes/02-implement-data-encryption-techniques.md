@@ -3,7 +3,7 @@ Implementing data encryption techniques with Azure Databricks using the Unity Ca
 :::image type="content" source="../media/complexity-of-governance-small.png" alt-text="Screenshot of the complexity of data governance." lightbox="../media/complexity-of-governance-expanded.png":::
 
 ## Setting Up Unity Catalog
-Unity Catalog in Azure Databricks provides a unified governance solution for all data assets.
+Unity Catalog in Azure Databricks provides a unified governance solution for all data assets within your data estate.
 
  - **Enable Unity Catalog**: You must enable Unity Catalog in your Azure Databricks workspace. This approach involves configuring the metastore to be used by Unity Catalog.
  - **Configure data permissions**: Set up fine-grained permissions for data access and manipulation, ensuring that only authorized users and applications can access sensitive data.
