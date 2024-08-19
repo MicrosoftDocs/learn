@@ -27,5 +27,6 @@ modules:
 - learn.wwl.optimize-performance-with-spark-and-delta-live-tables
 - learn.wwl.ci-cd-workflows-pipelines-azure-databricks
 - learn.wwl.automate-jobs-azure-databricks
+- learn.wwl.manage-data-privacy-and-governance-with-azure-databricks
 trophy:
   uid: learn.wwl.azure-databricks-data-engineer.trophy
