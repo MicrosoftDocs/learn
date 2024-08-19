@@ -1,6 +1,9 @@
 
 You build out your quantum random number generator in two phases. In this unit, you build out the first phase, which is to generate a single random bit.
 
+> [!NOTE]
+> If you experience problems with the rendering of the formulas, hit the refresh button on your browser. This will reload the page and the formulas will render correctly.
+
 ## Define a random bit generator
 
 You start by allocating qubit. When you allocate a qubit, it's in the $\ket{0}$ state, which isn't very useful for generating random numbers. You need to put the qubit into superposition. You can do this by applying the Hadamard gate, `H`, to the qubit. The Hadamard gate puts the qubit into an equal superposition of $\ket{0}$ and $\ket{1}$. 
