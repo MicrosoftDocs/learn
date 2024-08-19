@@ -9,9 +9,9 @@ You also configure Hyper-V hosts with the software defined networking (SDN)-enab
 You can configure SLB to provide the following functionality:
 
 - Load-balance incoming external traffic to VMs on a virtual network, also called *public virtual IP (VIP) load balancing*.
-- Load-balance incoming traffic from VMs in the same virtual network or a peered private network, also called *private VIP or internal load balancing*.
+- Load-balance incoming traffic from VMs in the same virtual network or a peered private network, also called *private VIP*, or *internal load balancing*.
 - Forward outgoing network traffic from VMs on a virtual network to external destinations by using NAT, also called *outbound NAT*.
-- Forward incoming external traffic to a specific VM, also called *inbound NAT*.
+- Forward incoming external traffic to a specific virtual machine (VM), also called *inbound NAT*.
 
 To implement these scenarios, you can create the following different types of load balancers:
 
@@ -31,7 +31,7 @@ To implement internal load balancing of network traffic across a pool of VMs on 
 
 1. Configure a health probe for the load balancer to use to determine the health state of the VMs in the backend pool. Load balancing rules require the use of a health probe.
 
-   The health probe uses either TCP or HTTP protocol to validate the operational status of the load-balanced workload. HTTP-based probes offer more flexibility, because they allow you to create custom webpages that use arbitrary tests to do the validation. TCP-based probes simply rely on an acknowledgment to confirm that each target VM is reachable. If a backend IP isn't healthy, the load balancer excludes it from distribution of incoming requests.
+   The health probe uses either the Transmission Control Protocol (TCP) or Hypertext Transfer Protocol (HTTP) to validate the operational status of the load-balanced workload. HTTP-based probes offer more flexibility, because they allow you to create custom webpages that use arbitrary tests to do the validation. TCP-based probes simply rely on an acknowledgment to confirm that each target VM is reachable. If a backend IP isn't healthy, the load balancer excludes it from distribution of incoming requests.
 
    > [!NOTE]
    > Ensure that you don't block traffic to or from the first IP in the subnet for any access control lists (ACLs) that you apply to the backend dynamic IPs, because that's the origination point for the probes.

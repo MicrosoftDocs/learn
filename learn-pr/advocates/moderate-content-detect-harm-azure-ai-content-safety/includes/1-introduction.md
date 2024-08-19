@@ -13,7 +13,6 @@ By completing this module, you’ll be able to:
 
 - An Azure subscription – [Create one for free](https://azure.microsoft.com/free/cognitive-services/)
 - Familiarity with Azure and the Azure portal
-- Access to Azure OpenAI Services
 - Ability to understand Python at a beginner level
 - Developing in browser:
   - [GitHub account](https://docs.github.com/get-started/signing-up-for-github)
