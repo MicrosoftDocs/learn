@@ -19,7 +19,7 @@ abstract: |
   - Send telemetry data to Azure Application Insights.
   - Deploy resources to Azure by creating Bicep files with the Azure Developer CLI.
 ratingEnabled: true
-iconUrl: /training/achievements/dotnet-aspiresvg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:

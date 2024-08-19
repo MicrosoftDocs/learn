@@ -10,7 +10,7 @@ uid: learn.advocates.azure-functions-and-signalr
 metadata:
   title: Enable real-time updates in a web application using Azure Functions and SignalR Service
   description: Change a JavaScript web app update mechanism from polling to real-time push-based architecture with SignalR Service, Azure Cosmos DB and Azure Functions. Use Vue.js and JavaScript to use SignalR using Visual Studio Code.
-  ms.date: 03/27/2024
+  ms.date: 08/12/2024
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: module-standard-task-based
