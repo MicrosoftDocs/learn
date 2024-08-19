@@ -74,7 +74,7 @@ To set up Git integration in Azure Databricks:
 1. **Commit and push changes**: After making changes to your notebooks or scripts, use the Git integration to commit and push your changes to the remote repository. Using the Git integrations ensures that your work is versioned and backed up.
 
 > [!Tip]
-> Learn more about [Git integration with Databricks Git folders](azure/databricks/repos/?azure-portal=true).
+> Learn more about [Git integration with Databricks Git folders](/azure/databricks/repos/?azure-portal=true).
 
 ### Implement Continuous Integration and Continuous Deployment (CI/CD)
 

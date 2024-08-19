@@ -48,4 +48,4 @@ Azure Databricks integrates with Azure Machine Learning, enabling you to deploy 
 Both Azure Databricks and Azure Machine Learning work with MLflow to manage models. You can train a model in Azure Databricks, and save it as an MLflow model. You can then register the MLflow model in the Azure Machine Learning workspace, after which you can easily deploy the model to a batch or real-time endpoint.
 
 > [!Tip]
-> Learn more about [Azure Machine Learning endpoints for inference in production](azure/machine-learning/concept-endpoints?azure-portal=true).
+> Learn more about [Azure Machine Learning endpoints for inference in production](/azure/machine-learning/concept-endpoints?azure-portal=true).
