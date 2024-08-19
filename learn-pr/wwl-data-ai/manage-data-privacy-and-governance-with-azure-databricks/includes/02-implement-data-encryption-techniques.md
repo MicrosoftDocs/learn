@@ -1,6 +1,6 @@
 Implementing data encryption techniques with Azure Databricks using the Unity Catalog involves several key steps that ensure both the security of your data and compliance with data governance standards. Let us look at how to implement encryption with these tools.
 
-:::image type="content" source="../media/complexity-of-governance-expanded.png" alt-text="Screenshot of the complexity of data governance." lightbox="../media/complexity-of-governance-expanded.png":::
+:::image type="content" source="../media/complexity-of-governance-small.png" alt-text="Screenshot of the complexity of data governance." lightbox="../media/complexity-of-governance-expanded.png":::
 
 ## Setting Up Unity Catalog
 Unity Catalog in Azure Databricks provides a unified governance solution for all data assets.
