@@ -92,7 +92,7 @@ To set up this system, start with by executing the `azd init` command as you saw
 azd pipeline config
 ```
 
-For for details, see [Tutorial: Deploy a .NET Aspire app using the Azure Developer CLI and GitHub Actions](/aspire/deployment/azure/aca-deployment-github-actions)
+For for details, see [Tutorial: Deploy a .NET Aspire app using the Azure Developer CLI and GitHub Actions](/dotnet/aspire/deployment/azure/aca-deployment-github-actions)
 
 ## Learn more
 

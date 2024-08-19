@@ -43,7 +43,7 @@ There are many interpretations of the concept of *measurement* in
 quantum mechanics, but the details are beyond the scope of this module. For
 quantum computing, you don't have to worry about it.
 
-In this module you understand measurement to be the informal idea of "observing" a qubit, which immediately collapses the quantum superposition to one of the two basis states that correspond to **0** and **1**.
+In this module, you understand measurement to be the informal idea of "observing" a qubit, which immediately collapses the quantum superposition to one of the two basis states that correspond to **0** and **1**.
 
 To learn more about measurement in the context of quantum mechanics and its historical discussion, see the Wikipedia article about the [Measurement problem](https://wikipedia.org/wiki/Measurement_problem).
 
