@@ -27,7 +27,6 @@ abstract: |
 prerequisites: |
   - An Azure subscription - [Create one for free](https://azure.microsoft.com/free/)
   - Familiarity with Azure and the Azure portal
-  - Access to Azure OpenAI Services
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

@@ -1,7 +1,7 @@
 
 Threat intelligence analysts struggle with balancing a breadth of threat intelligence ingestion with the analysis of which threat intelligence poses the biggest threats to their organization and/or industry. Similarly, vulnerability intelligence analysts battle correlating their asset inventory with Common Vulnerabilities and Exposures (CVE) information to prioritize the investigation and remediation of the most critical vulnerabilities associated with their organization.
 
-Microsoft Defender Threat Intelligence addresses these challenges by aggregating and enriching critical data sources and displaying them in an innovative, easy-to-use interface. Analysts can then correlate indicators of compromise (IOCs) with related articles, actor profiles, and vulnerabilities. Defender TI also lets analysts collaborate with fellow Defender TI-licensed users within their tenant on investigations
+Microsoft Defender Threat Intelligence addresses these challenges by aggregating and enriching critical data sources and displaying them in an innovative, easy-to-use interface. Analysts can then correlate indicators of compromise (IOCs) with related articles, actor profiles, and vulnerabilities. Defender TI also lets analysts collaborate with fellow Defender TI-licensed users within their tenant on investigations.
 
 Microsoft Defender Threat Intelligence functionality includes:
 
@@ -36,15 +36,15 @@ Microsoft Defender Threat Intelligence articles are narratives that provide insi
 
 Defender TI offers CVE-ID searches to help users identify critical information about the CVE. CVE-ID searches result in Vulnerability Articles.
 
-#### Projects
+#### Intel Projects
 
-Microsoft Defender Threat Intelligence (Defender TI) lets you develop private personal or team projects to organize indicators of interest and indicators of compromise (IOCs) from an investigation. Projects contain a listing of all associated artifacts and a detailed history that retains the names, descriptions, collaborators, and monitoring profiles.
+Microsoft Defender Threat Intelligence (Defender TI) lets you create projects to organize indicators of interest and indicators of compromise (IOCs) from an investigation. Projects contain a listing of all associated artifacts and a detailed history that retains the names, descriptions, collaborators, and monitoring profiles.
 
 ### Microsoft Defender Threat Intelligence in the Microsoft Defender portal
 
 Microsoft Defender TI is experienced through the Microsoft Defender portal.
 
-The Threat intelligence node on the left navigation panel of the Microsoft Defender portal is where you can find the Microsoft Defender Threat Intelligence functionality.
+The Threat intelligence node on the navigation panel of the Microsoft Defender portal is where you can find the Microsoft Defender Threat Intelligence functionality.
 
 :::image type="content" source="../media/threat-intelligence.png" alt-text="A screenshot of the selectable options for threat intelligence on the left navigation panel of the Microsoft Defender portal.":::
 
@@ -75,7 +75,7 @@ Copilot also includes a builtin promptbook that deliver information from Defende
 - Vulnerability impact assessment - Generates a report summarizing the intelligence for a known vulnerability, including steps on how to address it.
 - Threat actor profile - Generates a report profiling a known activity group, including suggestions to defend against their common tools and tactics.
 
-With the plugin enabled, Copilot integration with Defender TI can also be experienced through the embedded experience. You can experience Copilot for Security's capability to look up threat intelligence in the following pages of the Defender portal:
+With the plugin enabled, Copilot integration with Defender TI can also be experienced through the embedded experience. You can experience Copilot for Security's capability to look up threat intelligence in the following pages of the Microsoft Defender portal:
 
 - Threat analytics
 - Intel profiles

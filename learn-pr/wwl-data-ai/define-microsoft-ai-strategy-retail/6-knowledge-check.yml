@@ -3,49 +3,49 @@ uid: learn.wwl.define-microsoft-ai-strategy-retail.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/16/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.date: 05/22/2024
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What should be your goal when planning and implementing an AI solution for retail?"
+  - content: "What is a common challenge for retail?"
     choices:
-    - content: "Improving KPIs related to your business so you can measure AI success."
+    - content: "Incorporating AI into offline shopping experiences."
       isCorrect: true
-      explanation: "Correct. It’s vital to keep your AI initiative aligned with your business goals and metrics. For example, ROI, cost savings, search engine rankings, or customer satisfaction scores."
-    - content: "Investing in online commerce experiences, which have more AI potential."
+      explanation: "Correct. A major challenge for AI solutions in retail is that most purchased still occur in-store."
+    - content: "Recruiting employees with IT skills to work in store."
       isCorrect: false
-      explanation: "Incorrect. In fact, most purchases occur in physical stores, so it’s fundamental to pay attention to offline shopping experiences. Instead, you should improve KPIs related to your business so you can measure AI success."
-    - content: "Adding generative AI to your shopping experience because it improves quality."
+      explanation: "Incorrect. IT skills aren't a common challenge when recruiting retail employees."
+    - content: "Serving customers who don’t have email accounts."
       isCorrect: false
-      explanation: "Incorrect. While it’s true that generative AI has the potential to improve your services’ quality, your priority should focus on AI initiatives that will help you boost financial or business KPIs. Generative AI is a powerful tool, not a goal itself."
-  - content: "Which services would a retail company need to build an AI solution that recommends products to customers based on their browsing history?"
+      explanation: "Incorrect. Many if not most customers have email accounts, and most purchases still happen in stores."
+  - content: "How might generative AI be used to improve the online shopping experience?"
     choices:
-    - content: "Azure AI Document Intelligence, Azure OpenAI Services, and Azure AI Search."
+    - content: "By storing customer credit card details in an unsecured format for faster data access."
       isCorrect: false
-      explanation: "Incorrect. The products you need are Azure AI Services and Dynamics 365 Copilot. Instead, you could use those products to process and organize sales data, customer feedback, and inventory details."
-    - content: "Azure OpenAI Services, Microsoft Power BI, and Azure Synapse Analytics."
-      isCorrect: false
-      explanation: "Incorrect. You just need Azure AI Services and Dynamics 365 Copilot. With that set of products, you could instead automate the generation of sales reports, customer trends, and financial forecasts."
-    - content: "Azure AI Services and Dynamics 365 Copilot."
+      explanation: "Incorrect. Storing personal information in this way isn't a path to improving any shopping experience."
+    - content: "By enabling natural language product searches and conversational interactions, and summarizing product information."
       isCorrect: true
-      explanation: "Correct. You can use these products for hyper-personalization features. You could also tailor recommendations to past purchases or design customized, targeted marketing campaigns."
-  - content: "Which common AI scenarios did Żabka implement?"
+      explanation: "Correct. Natural language product searches and conversational interactions, and summarizing product information can greatly improve the online shopping experience."
+    - content: "By using higher resolution product images."
+      isCorrect: false
+      explanation: "Incorrect. Storing product images isn't a function of generative AI."
+  - content: "How might machine learning benefit a retail organization?"
     choices:
-    - content: "Content development."
+    - content: "By eliminating the need for an ecommerce website through better mapping of store locations."
       isCorrect: false
-      explanation: "Incorrect. CarMax implemented an AI-powered content development initiative, not Żabka. The Polish grocery store network used AI for inventory management and sales forecasting, sales data analytics, and customized marketing campaigns."
-    - content: "Inventory management and sales forecasting, sales data analytics, and tailored product recommendations."
+      explanation: "Incorrect. Ecommerce websites are typically an important part of retail organizations."
+    - content: "By eliminating the need for physical stores through cloud-enabled apps."
       isCorrect: false
-      explanation: "Incorrect. This answer is only partially correct. Żabka uses Microsoft Cloud for Retail to manage inventory and predict demand. However, they don’t currently use the insights of their sales data analytics for tailored product recommendations, but to offer personalized offers and free products to their regular customers, that is, for customized marketing campaigns. Nonetheless, that AI scenario would fit their existing solution, so it would be a sensible next step."
-    - content: "Inventory management and sales forecasting, sales data analytics, and customized marketing campaigns."
+      explanation: "Incorrect. Machine learning doesn't benefit a retail organization through cloud-enabled apps."
+    - content: "By helping optimize stock management through predictive analytics."
       isCorrect: true
-      explanation: "Correct. They use Microsoft Cloud for Retail to manage inventory and predict demand. Besides, their fidelity program uses customer purchase data to track regular customers and offer them personalized offers and free products."
+      explanation: "Correct. Anticipating inventory and supply chain management  is helpful to anticipate inventory and sales needs."

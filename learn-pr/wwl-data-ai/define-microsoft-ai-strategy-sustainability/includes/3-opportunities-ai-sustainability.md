@@ -47,7 +47,7 @@ For example, the Société du Canal de Provence (France) is using Microsoft AI t
 It’s also possible to achieve **greener city lights management** with AI. Valencia (Spain) improved energy conservation and reduced light pollution by combining Microsoft IoT and AI solutions.<sup>10</sup>
 
 >[!TIP]
->Consider other opportunities you hope to realize with AU in your organization.
+>Consider other opportunities you hope to realize with AI in your organization.
 >![Photograph showing of people working and talking around a table.](../media/2-reflection.jpg)
 
 In conclusion, there are many scenarios in which Microsoft AI products and services can support sustainability initiatives. The **Microsoft ecosystem** allows you to easily connect these AI solutions with the many features included in [Microsoft Cloud for Sustainability](https://www.microsoft.com/sustainability/cloud). Among the functionalities covered, sustainability professionals can minimize the environmental impact of facilities, get the data analytics of water consumption, or achieve greener mobility with optimized routes and logistics.
