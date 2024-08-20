@@ -30,7 +30,7 @@ Use the [guidance in this article](/purview/manage-integration-runtimes) to find
 
 ### Step 4 - General settings
 
-[![Screenshot of the template's General Settings tab.](../media/data-landing-zone-creation-2.png)](../media/data-landing-zone-creation-2.png)
+:::image type="content" source="../media/data-landing-zone-creation-2.png" alt-text="IScreenshot of the template's General Settings tab." lightbox="../media/data-landing-zone-creation-2.png":::
 
 Select the **General Settings** tab in the template and provide the following information:
 
