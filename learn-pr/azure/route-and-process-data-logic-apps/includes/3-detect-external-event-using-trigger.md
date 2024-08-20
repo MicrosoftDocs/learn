@@ -1,4 +1,4 @@
-In Azure Logic Apps, a trigger always starts a workflow as the first step. To correctly run your workflow, you need to find the best trigger, and set up the trigger's properties for your scenario. For our example, we'll use a X trigger that runs our workflow when a tweet with our product name is posted.
+In Azure Logic Apps, a trigger always starts a workflow as the first step. To correctly run your workflow, you need to find the best trigger, and set up the trigger's properties for your scenario. For our example, we'll use an X trigger that runs our workflow when a tweet with our product name is posted.
 
 In this unit, we'll examine trigger types plus the strengths and weaknesses around the most common options. We'll then show how to create a logic app workflow using the Azure portal, and how to add a trigger in the workflow designer.
 
@@ -43,7 +43,7 @@ On the positive side, push triggers don't run when no data or events are availab
 
 :::image type="content" source="../media/push-trigger.png" alt-text="Diagram shows a timeline where a marker indicates when new data becomes available. The push trigger detects the data and immediately responds." border="false":::
 
-Why not use push triggers all the time when they respond faster and cost less than polling triggers? Unfortunately, not every connector offers a push trigger. The external service might not support push triggers, or maybe the connector author didn't choose to implement a push trigger. Generall, a connector offers either push triggers or polling triggers, but not both. In rare cases where a connector offers both options, consider using the push trigger due to better efficiency.
+Why not use push triggers all the time when they respond faster and cost less than polling triggers? Unfortunately, not every connector offers a push trigger. The external service might not support push triggers, or maybe the connector author didn't choose to implement a push trigger. Generally, a connector offers either push triggers or polling triggers, but not both. In rare cases where a connector offers both options, consider using the push trigger due to better efficiency.
 
 In this module, we're going to focus on polling triggers. These triggers are the most common and are perfect for the "route and process data" scenarios that we've discussed.
 
@@ -73,6 +73,6 @@ After you select a template, the workflow designer automatically opens for you.
 
 The workflow designer shows a connector gallery with the triggers and actions that you can use in your workflow. Typically, when you start with a blank workflow, you use the search box to find a connector that interests you. Then, you review any triggers that the connector provides. In our example, we select the X trigger named **When a new tweet is posted**. For X, we also have to create a connection by signing in our X account.
 
-After you add a trigger, and create a connection to the service or system when necessary, the designer shows the trigger properties. For X, we'll set the **Search text**, **Frequency**, and **Interval** parameters. The following screenshot shows the social media monitoring logic app workflow in the designer where the X trigger apppears as the first step.
+After you add a trigger, and create a connection to the service or system when necessary, the designer shows the trigger properties. For X, we'll set the **Search text**, **Frequency**, and **Interval** parameters. The following screenshot shows the social media monitoring logic app workflow in the designer where the X trigger appears as the first step.
 
 :::image type="content" source="../media/social-media-complete-in-the-designer.png" alt-text="Screenshot shows example logic app workflow in the designer. A box for each step represents the trigger and each action. Arrows connect the boxes to show execution through the workflow." border="false":::
