@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/16/2024
+  ms.date: 08/20/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
@@ -38,14 +38,14 @@ quiz:
     - content: "Microsoft Entra integration"
       isCorrect: false
       explanation: "Incorrect - Microsoft Entra integration is available in both Windows 365 Enterprise and Windows 365 Business."
-  - content: "Contoso is interested in deploying Windows as virtual sessions. The company has 150 seats, and it wants a solution that provides ready-to-use Cloud PCs with simple management options. It doesn't want any licensing prerequisites or any dependencies on Active Directory. Given these requirements, which of the following solutions should Contoso use?"
+  - content: "Contoso is interested in deploying Windows as virtual sessions. The company has 150 users, and it wants a solution that provides ready-to-use Cloud PCs with simple management options. It doesn't want any licensing prerequisites or any dependencies on Active Directory. Given these requirements, which of the following solutions should Contoso use?"
     choices:
     - content: "Windows 365 Enterprise"
       isCorrect: false
-      explanation: "Incorrect. This edition is for larger companies who want unlimited seats for creating Cloud PCs. It includes options to create custom Cloud PCs based on device images that you create, more management options, and full integration with Microsoft Endpoint Manager. It leverages Microsoft Entra ID and AD DS domains. Try again."
+      explanation: "Incorrect. This edition is for larger companies who want unlimited users for creating Cloud PCs. It includes options to create custom Cloud PCs based on device images that you create, more management options, and full integration with Microsoft Endpoint Manager. It leverages Microsoft Entra ID and AD DS domains. Try again."
     - content: "Azure Virtual Desktop"
       isCorrect: false
       explanation: "Incorrect. This edition is for larger companies. It requires Azure administration skills and has a complex setup because the customer manages the VMs. Try again."
     - content: "Windows 365 Business"
       isCorrect: true
-      explanation: "Correct. This Windows 365 edition is made specifically for use in smaller companies (up to 300 seats) who want ready-to-use Cloud PCs with simple management options. There are no licensing prerequisites to set up Windows 365 Business. There are no dependencies on Azure or Active Directory. It's purchased through the Microsoft 365 admin center or the Windows 365 product site."
+      explanation: "Correct. This Windows 365 edition is made specifically for use in smaller companies (up to 300 users) who want ready-to-use Cloud PCs with simple management options. There are no licensing prerequisites to set up Windows 365 Business. There are no dependencies on Azure or Active Directory. It's purchased through the Microsoft 365 admin center or the Windows 365 product site."
