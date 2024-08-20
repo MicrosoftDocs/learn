@@ -8,6 +8,8 @@ metadata:
   author: roryp
   ms.author: ropreddy
   ms.topic: module
+  ms.service: azure-cloud-services-classic
+  ms.subservice: autoscale
   ms.contributors: ropreddy-12032021
   ms.custom: team=cloud_advocates
 title: Drive higher utilization of your Java apps - autoscaling
