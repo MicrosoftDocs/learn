@@ -10,7 +10,7 @@ Use the following template to set up your data product.
 
 <a href="https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-product-batch%2Fmain%2Finfra%2Fmain.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-product-batch%2Fmain%2Fdocs%2Freference%2Fportal.dataProduct.json"> ![Deploy Data Product Zone to Azure](../media/deploy-to-azure.svg) </a>
 
-[![Screenshot of the initial step in the template.](../media/data-product-landing-zone-deployment.png)](../media/data-product-landing-zone-deployment.png)
+:::image type="content" source="../media/data-product-landing-zone-deployment.png" alt-text="Screenshot of the initial step in the template." lightbox="../media/data-product-landing-zone-deployment.png":::
 
 Provide the following information in the template:
 
@@ -24,9 +24,9 @@ Provide the following information in the template:
 
 - **Data Product Name**: Enter a prefix that will be added to all the deployed data-product resources to make them unique within the subscription.
 
-## Step 3 - General Settings
+## Step 3 - General settings
 
-[![Screenshot of the template's General Settings tab.](../media/data-product-landing-zone-general-settings.png)](../media/data-product-landing-zone-general-settings.png)
+:::image type="content" source="../media/data-product-landing-zone-general-settings.png" alt-text="Screenshot of the template's General Settings tab." lightbox="../media/data-product-landing-zone-general-settings.png":::
 
 Select the **General Settings** tab in the template and provide the following information:
 
@@ -34,7 +34,7 @@ Select the **General Settings** tab in the template and provide the following in
 
 - **Connect to Purview Account**: Select the Microsoft Purview instance you created when deploying the data-management landing zone from the drop-down.
 
-- **SQL Flavour**: Select **SQL Server** from the drop-down menu.
+- **SQL Flavor**: Select **SQL Server** from the drop-down menu.
 
 - **Password**: Enter a strong password for your Azure SQL Server account and confirm it.
 
@@ -42,9 +42,9 @@ Select the **General Settings** tab in the template and provide the following in
 
 - **Enable role assignments**: This selection is optional, but you should check this option to add required permissions.
 
-## Step 4 - Connectivity Settings
+## Step 4 - Connectivity settings
 
-[![Screenshot of the template's Connectivity Settings tab.](../media/data-product-landing-zone-connectivity-settings.png)](../media/data-product-landing-zone-connectivity-settings.png)
+:::image type="content" source="../media/data-product-landing-zone-connectivity-settings.png" alt-text="Screenshot of the template's Connectivity Settings tab." lightbox="../media/data-product-landing-zone-connectivity-settings.png":::
 
 Select the **Connectivity Settings** tab in the template and provide the following information:
 
@@ -54,9 +54,9 @@ Select the **Connectivity Settings** tab in the template and provide the followi
 
 - **DNS A-Records are deployed through Azure Policy**: Select **No**, then select your subscription and all the other requested DNS Zones.
 
-## Step 5 - Review and Create
+## Step 5 - Review and create
 
-[![Screenshot of the template's Review + create tab.](../media/data-product-deployment-create.png)](../media/data-product-deployment-create.png)
+:::image type="content" source="../media/data-product-deployment-create.png" alt-text="Screenshot of the template's Review + create tab." lightbox="../media/data-product-deployment-create.png":::
 
 Select the **Review + create** tab, then select the **Review + create** button at the bottom of the screen. The deployment will validate and check for errors. When the validation passes, select **Create**.
 
@@ -66,4 +66,4 @@ You can use the details here to validate the deployment.
 
 - **Resource group - XXXX-dev-dp001**: You should have the resource group and resources similar to the following image.
 
-[![Screenshot of the xxxx-dev-dp001 resource group and resources.](../media/dev-data-product-001-validation.png)](../media/dev-data-product-001-validation.png)
+:::image type="content" source="../media/dev-data-product-001-validation.png" alt-text="Screenshot of the xxxx-dev-dp001 resource group and resources." lightbox="../media/dev-data-product-001-validation.png":::

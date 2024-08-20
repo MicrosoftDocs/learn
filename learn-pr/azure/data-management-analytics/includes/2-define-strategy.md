@@ -24,13 +24,13 @@ Here are some common drivers for Data Management and Analytics that are aligned 
 
 The following key themes outline how you can realize these motivations in your strategy. Carefully analyze them and think about how they relate to a coherent data strategy.
 
-[![Diagram of Key Themes.](../media/strategy-key-themes.png)](../media/strategy-key-themes.png)
+:::image type="content" source="../media/strategy-key-themes.png" alt-text="Diagram of Key Themes." lightbox="../media/strategy-key-themes.png":::
 
 ### Develop a data-driven culture
 
 Here, the focus is on how an organization can mature over time by applying a systematic, principled approach.
 
-[![Diagram of data Strategy Maturity](../media/data-strategy-maturity.png)](../media/data-strategy-maturity.png)
+:::image type="content" source="../media/data-strategy-maturity.png" alt-text="Diagram of data strategy maturity." lightbox="../media/data-strategy-maturity.png":::
 
 ### A principled approach to your data strategy
 
@@ -61,7 +61,7 @@ The Data Management and Analytics architecture consists of two core building blo
 
 The following diagram is an overview of a data platform with a central data management landing zone and multiple data landing zones:
 
-[![Diagram of single landing zones](../media/high-level-design-single-data-landing-zone.png)](../media/high-level-design-single-data-landing-zone.png)
+:::image type="content" source="../media/high-level-design-single-data-landing-zone.png" alt-text="Diagram of single landing zones." lightbox="../media/high-level-design-single-data-landing-zone.png":::
 
 In this module, we'll work on provisioning these major components:
 

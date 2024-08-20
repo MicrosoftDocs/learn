@@ -4,7 +4,7 @@ A data product landing zone serves as a design area where all data products coul
 
 At a high level, data products are computed or polyglot persistence services that might be required depending on certain use cases. A data product is anything that drives business value; for example, reports, workbooks, bespoke database, or data API. A data product can use other services and technologies that aren't part of data landing zone core services. Data products fulfill a specific need within a business. Data products manage, organize, and make sense of the data across domains and present the insights gained from the data products.
 
-[![Diagram of a data product landing zone architecture.](../media/data-product-landing-zone-arch.png)](../media/data-product-landing-zone-arch.png)
+:::image type="content" source="../media/data-product-landing-zone-arch.png" alt-text="Diagram of a data product landing zone architecture." lightbox="../media/data-product-landing-zone-arch.png":::
 
 Examples of Data Products include:
 
@@ -20,18 +20,17 @@ Examples of Data Products include:
 
 A data product is a result of data from one or many data integrations and/or other data products.
 
-[![Diagram of a data landing zone product](../media/data-landing-zone-product.png)](../media/data-landing-zone-product.png)
+:::image type="content" source="../media/data-landing-zone-product.png" alt-text="Diagram of a data landing zone product." lightbox="../media/data-landing-zone-product.png":::
 
 Here are some typical data-product components:
 
-[![Diagram of typical data-product components.](../media/data-product-landing-zone-arch-detail.png)](../media/data-product-landing-zone-arch-detail.png)
+:::image type="content" source="../media/data-product-landing-zone-arch-detail.png" alt-text="Diagram of typical data-product components." lightbox="../media/data-product-landing-zone-arch-detail.png":::
 
 ## Cross-product flow
 
 A data product could also use data services from other data products and provide a composite product, as in the following diagram:
 
-[![Diagram of a data product polyglot.](../media/data-product-landing-zone-polyglot.png)](../media/data-product-landing-zone-polyglot.png)
-
+:::image type="content" source="../media/data-product-landing-zone-polyglot.png" alt-text="Diagram of a data product polyglot." lightbox="../media/data-product-landing-zone-polyglot.png":::
 Here's an example of a data product for a banking use case:
 
-[![Diagram of an example banking data product.](../media/banking-industry-example-data-product.png)](../media/banking-industry-example-data-product.png)
+:::image type="content" source="../media/banking-industry-example-data-product.png" alt-text="Diagram of an example banking data product." lightbox="../media/banking-industry-example-data-product.png":::

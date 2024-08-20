@@ -1,12 +1,12 @@
 The data landing zone is classified as a hosting area for data-centric workloads. It's always connected to the data-management landing zone via networking components to allow for centralized governance and monitoring.
 
-[![Diagram of the data landing zone peering.](../media/single-data-landing-zone-peered.png)](../media/single-data-landing-zone-peered.png)
+:::image type="content" source="../media/single-data-landing-zone-peered.png" alt-text="Diagram of the data landing zone peering." lightbox="../media/single-data-landing-zone-peered.png":::
 
 ## Significance
 
 A data landing zone has several layers to enable agility of service data integrations and data products within it.
 
-[![Diagram of the data landing zone core.](../media/data-landing-zone-core.png)](../media/data-landing-zone-core.png)
+:::image type="content" source="../media/data-landing-zone-core.png" alt-text="Diagram of the data landing zone core." lightbox="../media/data-landing-zone-core.png":::
 
 These layers are:
 

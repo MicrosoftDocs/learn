@@ -67,9 +67,9 @@ From a consumer perspective, data quality is:
 
 Here's a typical data management landing zone architecture:
 
-[![Diagram of multiple data landing zones.](../media/high-level-design-multiple-landing-zones.png)](../media/high-level-design-multiple-landing-zones.png)
+:::image type="content" source="../media/high-level-design-multiple-landing-zones.png" alt-text="Diagram of multiple data landing zones." lightbox="../media/high-level-design-multiple-landing-zones.png":::
 
-### Microsoft Purview Context
+### Microsoft Purview context
 
 Microsoft Purview is a unified data-governance service that helps you manage and govern your on-premises, multicloud, and software-as-a-service (SaaS) data. Microsoft Purview helps you create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. It also enables data curators to manage and secure your data estate and empowers data consumers to find valuable, trustworthy data.
 
@@ -77,4 +77,4 @@ Microsoft Purview automates data discovery by providing data scanning and classi
 
 The following diagram is a high-level architecture of Microsoft Purview, showing multicloud and on-premises sources flowing into Microsoft Purview, and Microsoft Purview's apps (Data Catalog, Map, and Insights) allowing data consumers and data curators to view and manage metadata. This metadata is also being ported to external analytics services from Microsoft Purview for more processing.
 
-[![Diagram of a high-level Microsoft Purview Overview.](../media/high-level-overview-purview.png)](../media/high-level-overview-purview.png)
+:::image type="content" source="../media/high-level-overview-purview.png" alt-text="Diagram of a high-level Microsoft Purview Overview." lightbox="../media/high-level-overview-purview.png":::
