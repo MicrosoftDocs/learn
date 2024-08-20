@@ -25,11 +25,11 @@ You can deploy a High Performance Computing (HPC) cluster using Azure CycleCloud
 
    :::image type="content" border="false" source="../media/4-new-cluster-settings.png" alt-text="A screenshot depicting the Required Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." lightbox="../media/4-new-cluster-settings.png":::
 
-1. On the **Network Attached Storage** page, configure whether you'll use the **Builtin** or **External NFS** options for the network attached storage mount. When you select **Builtin**, the scheduler node is configured as a NFS server that functions as the mountpoint for other nodes. If you specify **External NFS**, you can then provide the details of a network attached storage device such as Azure NetApp Files, HPC Cache, or a specially configured VM running an NFS server.
+1. On the **Network Attached Storage** page, configure whether you'll use the **Builtin** or **External NFS** options for the network attached storage mount. When you select **Builtin**, the scheduler node is configured as an NFS server that functions as the mountpoint for other nodes. If you specify **External NFS**, you can then provide the details of a network attached storage device such as Azure NetApp Files, HPC Cache, or a specially configured VM running an NFS server.
 1. On the **Advanced Settings** page, you can specify the following settings:
 
    - **Slurm Version**: Choose the Slurm version to be used with the cluster.
-   - **Job Accounting**: Specify whether you want to enable job accounting and the settings you'll chose to store accounting data.
+   - **Job Accounting**: Specify whether you want to enable job accounting and the settings you'll choose to store accounting data.
    - **Shutdown Policy**: You can choose between terminating the instance or deallocating the instance.
    - **Credentials**: The credentials to connect to the associated Azure subscription.
    - **Scheduler OS**: Choose which Linux operating system is used to host the scheduler. 
@@ -50,7 +50,7 @@ CycleCloud automatically sets the amount of available memory for Slurm to use fo
 
 ## Configuring Slurm partitions
 
-The default template that ships with Azure CycleCloud has two partitions (hpc and htc), and you can define custom node arrays that map directly to Slurm partitions. For example, to create a GPU partition, add the following section to your cluster template:
+The default template that ships with Azure CycleCloud has two partitions (HPC and HTC), and you can define custom node arrays that map directly to Slurm partitions. For example, to create a GPU partition, add the following section to your cluster template:
 
 ```
 [[nodearray gpu]]
@@ -72,16 +72,16 @@ The default template that ships with Azure CycleCloud has two partitions (hpc an
 
 ## Editing existing Slurm clusters
 
-If you modify and apply changes to an existing Slurm cluster, you need to to rebuild the `slurm.conf` file and update the existing nodes in the cluster. You can do this using a script that's present on Slurm clusters deployed in Azure cyclecloud using a special script named `cyclecloud_slurm.sh`. The script is located in the `/opt/cycle/slurm` directory on the Slurm scheduler node. Once you've made any changes to the cluster, run the following script as root with the `apply_changes` parameter. For example, use`/opt/cycle/slurm/cyclecloud_slurm.sh apply_changes` if you make changes that impact nodes that participate in a Message Passing Interface (MPI) partition.
+If you modify and apply changes to an existing Slurm cluster, you need to rebuild the `slurm.conf` file and update the existing nodes in the cluster. You can do this using a script that's present on Slurm clusters deployed in Azure cyclecloud using a special script named `cyclecloud_slurm.sh`. The script is located in the `/opt/cycle/slurm` directory on the Slurm scheduler node. Once you've made any changes to the cluster, run the following script as root with the `apply_changes` parameter. For example, use`/opt/cycle/slurm/cyclecloud_slurm.sh apply_changes` if you make changes that impact nodes that participate in a Message Passing Interface (MPI) partition.
 
 ## Disabling autoscale for nodes or partitions
 
 You can disable autoscale for a running Slurm cluster by editing the `slurm.conf` file directly. You can exclude either individual nodes or entire partitions from being autoscaled.
 
-To exclude a node or multiple nodes from autoscale, add `SuspendExcNodes=&lt;listofnodes&gt;` to the Slurm configuration file. For example, to exclude nodes 1 and 2 from the hpc partition, add the following to /`sched/slurm.conf` and then restart the slurmctld service:
+To exclude a node or multiple nodes from autoscale, add `SuspendExcNodes=&lt;listofnodes&gt;` to the Slurm configuration file. For example, to exclude nodes 1 and 2 from the HPC partition, add the following to /`sched/slurm.conf` and then restart the slurmctld service:
 
 `SuspendExcNodes=hpc-pg0-[1-2]`
 
-To exclude partitions, you also modify the `/sched/slurm.conf` file. For example, to exclude the hpc partition from autoscale, add the following line to `slurm.conf` and restart the `slurmctld` service:
+To exclude partitions, you also modify the `/sched/slurm.conf` file. For example, to exclude the HPC partition from autoscale, add the following line to `slurm.conf` and restart the `slurmctld` service:
 
 `SuspendExcParts=hpc`
