@@ -2,6 +2,9 @@ Quantum computers introduce new concepts to traditional programming methods by u
 
 Let's see how quantum computing differs from classical computing and how to build a quantum computer.
 
+> [!NOTE]
+> If you experience problems with the rendering of the formulas, hit the refresh button on your browser. This will reload the page and the formulas will render correctly.
+
 ## The birth of quantum computing
 
 The idea of a quantum computer was born out of the difficulty of simulating quantum systems on a classical computer. In the 1980s, Richard Feynman and Yuri Manin independently suggested that hardware based on quantum phenomena might be more efficient for the simulation of quantum systems than conventional computers.
