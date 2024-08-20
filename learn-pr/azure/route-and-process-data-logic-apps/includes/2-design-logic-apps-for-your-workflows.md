@@ -12,10 +12,10 @@ The following sections describe each of these five steps in the app development 
 
 The first step to creating a logic app workflow is planning the steps of your business process. In the social media monitoring scenario, the steps are as follows:
 
-- Detect tweets about the product
-- Analyze the sentiment
-- Store a link to positive tweets
-- Email customer service for negative tweets
+- Detect tweets about the product.
+- Analyze the sentiment.
+- Store a link to positive tweets.
+- Email customer service for negative tweets.
 
 Typically, you can use a flowchart to capture the steps of the process. The following diagram shows the flowchart for the social media monitoring app.
 
