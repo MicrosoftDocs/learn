@@ -27,7 +27,7 @@ products:
 - azure-databricks
 units:
 - learn.wwl.retrieval-augmented-generation-azure-databricks.introduction
-- learn.wwl.retrieval-augmented-generation-azure-databricks.rag-workflow
+- learn.wwl.retrieval-augmented-generation-azure-databricks.workflow
 - learn.wwl.retrieval-augmented-generation-azure-databricks.prepare-data
 - learn.wwl.retrieval-augmented-generation-azure-databricks.vector-search
 - learn.wwl.retrieval-augmented-generation-azure-databricks.ranking

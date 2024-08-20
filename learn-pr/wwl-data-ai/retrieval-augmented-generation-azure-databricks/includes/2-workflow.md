@@ -54,7 +54,7 @@ Finally, you send the augmented prompt to a Large Language Model (LLM) to genera
 
 Altogether, a RAG pattern can be visualized with the following sample architecture:
 
-:::image type="content" source="../media/sample-architecture.png" alt-text="Sample architecture of a RAG pattern." lightbox="../media/sample-architecture.png":::
+:::image type="content" source="../media/sample-architecture.png" alt-text="Diagram of a sample architecture of a RAG pattern." lightbox="../media/sample-architecture.png":::
 
 In this architecture, the following happens:
 

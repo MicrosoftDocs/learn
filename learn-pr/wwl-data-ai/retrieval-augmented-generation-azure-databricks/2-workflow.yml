@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.retrieval-augmented-generation-azure-databricks.rag-workflow
+uid: learn.wwl.retrieval-augmented-generation-azure-databricks.workflow
 title: Explore the main concepts of a RAG workflow
 metadata:
   title: Explore the main concepts of a RAG workflow
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-rag-workflow.md)]
+  [!include[](includes/2-workflow.md)]
