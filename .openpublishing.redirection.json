@@ -31638,46 +31638,6 @@
       "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/6-configure-disks.md",
       "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
       "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/10-summary.md",
-      "redirect_url": "/training/modules/create-manage-session-host-image/9-summary/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/3-modify-session-host-image.md",
-      "redirect_url": "/training/modules/create-manage-session-host-image/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/4-plan-for-image-update-management.md",
-      "redirect_url": "/training/modules/create-manage-session-host-image/5-plan-image-update-management/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/5-create-shared-image-gallery-portal.md",
-      "redirect_url": "/training/modules/create-manage-session-host-image/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/6-create-azure-virtual-desktop-image-image-builder.md",
-      "redirect_url": "/training/modules/create-manage-session-host-image/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/7-install-office-master-image.md",
-      "redirect_url": "/training/modules/create-manage-session-host-image/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/8-install-language-packs-azure-virtual-desktop.md",
-      "redirect_url": "/training/modules/create-manage-session-host-image/7-install-language-packs-azure-virtual-desktop/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/9-knowledge-check.md",
-      "redirect_url": "/training/modules/create-manage-session-host-image/",
-      "redirect_document_id": false
     }
   ]
 }
