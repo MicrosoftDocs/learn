@@ -56,7 +56,7 @@ You can use the details here to validate the deployment.
 
 - **Resource group - XXXX-dev-automation**: This resource group is a placeholder for hosting any automation account.
 
-    :::image type="content" source=".../media/data-management-landing-zone-automation-validation.png" alt-text="Screenshot of the Automation resource group." lightbox="../media/data-management-landing-zone-automation-validation.png":::
+    :::image type="content" source="../media/data-management-landing-zone-automation-validation.png" alt-text="Screenshot of the Automation resource group." lightbox="../media/data-management-landing-zone-automation-validation.png":::
 
 - **Resource group - XXXX-dev-consumption**: Azure Synapse Analytics private link hubs are Azure resources, which act as connectors between your secured network and the Synapse Studio web experience.
 
