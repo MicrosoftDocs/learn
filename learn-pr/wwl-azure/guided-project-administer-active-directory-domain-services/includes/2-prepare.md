@@ -19,4 +19,4 @@ The Setup section consists of three main tasks:
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
 [:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
-](https://microsoftlearning.github.io/APL-1008-Administer-Active-Directory-Domain-Services/Instructions/Labs/LAB_01_prepare.html)
+ ](https://microsoftlearning.github.io/AZ-1008-Administer-Active-Directory-Domain-Services/Instructions/Labs/LAB_01_prepare.html)

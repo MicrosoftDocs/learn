@@ -31569,6 +31569,16 @@
       "redirect_url": "/training/modules/define-microsoft-ai-strategy-healthcare/",
       "redirect_document_id": false
     },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-image-builder/2-what-is-azure-image-builder.yml",
+      "redirect_url": "/training/modules/intro-to-azure-image-builder/3-how-does-azure-image-builder-work",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-image-builder/includes/2-what-is-azure-image-builder.md",
+      "redirect_url": "/training/modules/intro-to-azure-image-builder/3-how-does-azure-image-builder-work",
+      "redirect_document_id": false
+    },
      {
       "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/10-knowledge-check.md",
       "redirect_url": "/training/modules/leverage-ai-tools/",
@@ -31589,9 +31599,159 @@
       "redirect_url": "/training/modules/leverage-ai-tools/",
       "redirect_document_id": false
     },
-      {
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/9-discover-business-value-azure-open-ai-service.md",
       "redirect_url": "/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-retail/2-explore-ai-goals-challenges-retail.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-retail/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-retail/3-discover-ai-use-cases-retail.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-retail/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/2-storage-fslogix-components.md",
+      "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/3-configure-storage-fslogix-components.md",
+      "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/4-configure-storage-accounts.md",
+      "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/5-create-file-shares.md",
+      "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/6-configure-disks.md",
+      "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/index.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/1-introduction.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/2-understand-azure-data-ecosystem.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/3-explore-modern-analytics-solution-architecture.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/4-knowledge-check.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/5-summary.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/index.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/1-introduction.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/2-explore-data-team-roles-responsibilities.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/3-review-tasks-tools-for-data-analysts.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/4-scale-analytics-azure-synapse-analytics-power-bi.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/5-scale-analytics-center-excellence.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/6-knowledge-check.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/7-summary.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/implement-manage-analytics-environment/index.md",
+      "redirect_url": "/fabric/admin/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/introduction-data-analytics-azure/index.md",
+      "redirect_url": "/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/model-query-explore-data-for-azure-synapse/index.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+       {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/2-role-based-access-control-for-azure-virtual-desktop.md",
+      "redirect_url": "/training/modules/manage-access/4-role-based-access-control-virtual-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/3-plan-implement-azure-roles-role-based-access-control.md",
+      "redirect_url": "/training/modules/manage-access/5-plan-implement-azure-roles-role-based-access-control",
+      "redirect_document_id": false
+    },
+      {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/4-use-azure-virtual-desktop-with-intune.md",
+      "redirect_url": "/training/modules/manage-access/8-use-azure-virtual-desktop-with-intune",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/5-configure-screen-capture-protection-for-azure-virtual-desktop.md",
+      "redirect_url": "/training/modules/manage-access/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/6-knowledge-check.md",
+      "redirect_url": "/training/modules/manage-access/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/7-summary.md",
+      "redirect_url": "/training/modules/manage-access/10-summary",
       "redirect_document_id": false
     }
   ]

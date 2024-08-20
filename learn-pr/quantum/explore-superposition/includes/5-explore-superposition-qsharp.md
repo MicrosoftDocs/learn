@@ -6,10 +6,13 @@ The `DumpMachine` function dumps information about the current status of the tar
 
 > [!NOTE]
 > The `DumpMachine` function is useful only for simulations. On quantum
-> hardware, `DumpMachine` does nothing because we can't access the
+> hardware, `DumpMachine` does nothing because you can't access the
 > state of the qubit register during execution. Remember that measuring the
 > state of a qubit can change its state. On simulated virtual quantum computers,
-> we can use tools like `DumpMachine` to explore the state of the system.
+> you can use tools like `DumpMachine` to explore the state of the system.
+
+> [!NOTE]
+> If you experience problems with the rendering of the formulas, hit the refresh button on your browser. This will reload the page and the formulas will render correctly.
 
 ## Create a new Q# file
 
@@ -20,7 +23,7 @@ The `DumpMachine` function dumps information about the current status of the tar
 
 ### Get started
 
-Let's start with a simple program that generates a random bit using a qubit in superposition. We'll use the `DumpMachine` function to see the state of the qubit at different points in the program.
+Let's start with a simple program that generates a random bit using a qubit in superposition. You'll use the `DumpMachine` function to see the state of the qubit at different points in the program.
 
 1. Add the following code to the **Superposition.qs** file:
 
@@ -234,7 +237,7 @@ instead of measuring one qubit three times.
     }
     ```
 
-    Here, we introduce three concepts:
+    Here, you see three concepts:
 
     * The `qubits` variable now represents a `Qubit` array that has a length of three.
     * The operations `ApplyToEach` and `ForEach` are useful to measure and act on multiple qubits, and they use less code. Q# libraries offer many kinds of operations and functions that make writing quantum programs more efficient.
