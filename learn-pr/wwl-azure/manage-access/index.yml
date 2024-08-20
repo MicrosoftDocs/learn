@@ -39,7 +39,7 @@ units:
 - learn.wwl.manage-access.introduction
 - learn.wwl.manage-access.rbac-for-azure-virtual-desktop
 - learn.wwl.manage-access.selecting-authentication-strategy-azure-virtual-desktop
-- learn.wwl.manage-access.role-based-access-control-virtual-desktop
+- learn.wwl.manage-access.role-based-access-control-for-azure-virtual-desktop
 - learn.wwl.manage-access.plan-implement-azure-roles-rbac-for-window-virtual-desktop
 - learn.wwl.manage-access.assign-roles-azure-virtual-desktop-service-principals
 - learn.wwl.manage-access.enforce-microsoft-entra-multifactor-authentication
