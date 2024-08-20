@@ -30,7 +30,7 @@ Use the [guidance in this article](/purview/manage-integration-runtimes) to find
 
 ### Step 4 - General settings
 
-:::image type="content" source="../media/data-landing-zone-creation-2.png" alt-text="IScreenshot of the template's General Settings tab." lightbox="../media/data-landing-zone-creation-2.png":::
+:::image type="content" source="../media/data-landing-zone-creation-2.png" alt-text="Screenshot of the template's General Settings tab." lightbox="../media/data-landing-zone-creation-2.png":::
 
 Select the **General Settings** tab in the template and provide the following information:
 
@@ -90,7 +90,7 @@ You can use the details here to validate the deployment.
 
 - **Resource group - XXXX-dev-external-storage**: This resource group is a placeholder for hosting data-product specific external storage.
 
-    :::image type="content" source="../media/data-landing-zone-external-storage-validation.png" alt-text="Screenshot of the DLZ External Storage group.." lightbox="../media/data-landing-zone-external-storage-validation.png":::
+    :::image type="content" source="../media/data-landing-zone-external-storage-validation.png" alt-text="Screenshot of the DLZ External Storage group." lightbox="../media/data-landing-zone-external-storage-validation.png":::
 
 - **Resource group - XXXX-dev-metadata**: This resource group is a placeholder for hosting data-product specific metadata.
 
