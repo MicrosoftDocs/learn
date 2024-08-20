@@ -23,16 +23,16 @@ This feature supports Windows 10 or Windows 11 Enterprise multi-session VMs, whi
  -  Running Windows 10 multi-session, version 1903 or later, or running Windows 11 multi-session.
  -  Set up as remote desktops in pooled host pools that have been deployed through Azure Resource Manager.
  -  Running an Azure Virtual Desktop agent.
- -  Hybrid Azure AD-joined and enrolled in Microsoft Intune using one of the following methods:
+ -  Hybrid Microsoft Entra-joined and enrolled in Microsoft Intune using one of the following methods:
     
     
-     -  Configured with Active Directory group policy, set to use Device credentials, and set to automatically enroll devices that are Hybrid Azure AD-joined.
+     -  Configured with Active Directory group policy, set to use Device credentials, and set to automatically enroll devices that are Hybrid Microsoft Entra-joined.
      -  Configuration Manager co-management.
- -  Azure AD-joined and enrolled in Microsoft Intune by enabling [Enroll the VM with Intune](https://github.com/MicrosoftDocs/memdocs/blob/main/azure/virtual-desktop/deploy-azure-ad-joined-vm#deploy-azure-ad-joined-vms) in the Azure portal.
+ -  Microsoft Entra-joined and enrolled in Microsoft Intune by enabling [Enroll the VM with Intune](https://github.com/MicrosoftDocs/memdocs/blob/main/azure/virtual-desktop/deploy-azure-ad-joined-vm#deploy-azure-ad-joined-vms) in the Azure portal.
  -  Licensing: The appropriate Microsoft Intune license is required if a user or device benefits directly or indirectly from the Microsoft Intune service, including access to the Microsoft Intune service through a Microsoft API. For more information, see Microsoft Intune licensing.
 
 > [!NOTE]
-> If you're joining session hosts to Azure Active Directory Domain Services, you can't manage them using Intune..
+> If you're joining session hosts to Microsoft Entra Domain Services, you can't manage them using Intune..
 
 Windows 10 or Windows 11 Enterprise multi-session VMs are treated as a separate OS edition and some Windows 10 or Windows 11 Enterprise configurations won’t be supported for this edition. Using Microsoft Intune doesn't depend on or interfere with Azure Virtual Desktop management of the same VM.
 
@@ -70,7 +70,7 @@ To configure policies
      -  For each category you pick, select the settings that you want to apply to your new configuration profile.
      -  For each setting, select the value that you want for this configuration profile.
 9.  Select **Next** when you’re done adding settings.
-10. On the **Assignments** page, choose the Azure AD groups containing the devices to which you want this profile assigned &gt; **Next**.
+10. On the **Assignments** page, choose the Microsoft Entra groups containing the devices to which you want this profile assigned &gt; **Next**.
 11. On the **Scope tags** page, optionally add the scope tags you want to apply to this profile &gt; **Next**.
 12. On the **Review + create** page, choose **Create** to create the profile.
 
