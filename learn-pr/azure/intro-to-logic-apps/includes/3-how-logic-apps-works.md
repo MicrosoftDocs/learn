@@ -2,11 +2,11 @@ Now that we know the basics of Azure Logic Apps, let's see how it works behind t
 
 ## What is a connector?
 
-A *connector* is a component that provides an interface to an external service. For example, the Twitter connector allows you to send and retrieve tweets, while the Office 365 Outlook connector lets you manage your email, calendar, and contacts. Azure Logic Apps provides hundreds of prebuilt connectors that you can use to create your apps.
+A *connector* is a component that provides an interface to an external service. For example, the X connector allows you to send and retrieve tweets, while the Office 365 Outlook connector lets you manage your email, calendar, and contacts. Azure Logic Apps provides hundreds of prebuilt connectors that you can use to create your apps.
 
-A connector uses the external service's REST or SOAP API to do its work. When you use a connector in your logic app workflow, the connector calls the service's underlying API for you. The following illustration shows the Twitter connector and its use of the Twitter REST API.
+A connector uses the external service's REST or SOAP API to do its work. When you use a connector in your logic app workflow, the connector calls the service's underlying API for you. The following illustration shows the X connector and its use of the X REST API.
 
-![Diagram shows the Twitter connector calling methods in the Twitter API.](../media/twitter-connector.png)
+![Diagram shows the X connector calling methods in the X API.](../media/x-connector.png)
 
 ## Custom connectors
 
@@ -32,9 +32,9 @@ Let's be more specific about the definitions for trigger and action:
 
 A connector is a container for related triggers and actions. Let's look at a few examples.
 
-The Twitter connector lets your logic app workflow interact with Twitter. The social media monitoring app can use a trigger from the Twitter connector to determine when new relevant tweets are available. The following diagram shows the Twitter connector with its trigger and actions:
+The X connector lets your logic app workflow interact with X. The social media monitoring app can use a trigger from the X connector to determine when new relevant tweets are available. The following diagram shows the X connector with its trigger and actions:
 
-![Diagram shows the Twitter connector with a trigger that notifies you about new tweets and with actions that can send tweets and manage your account.](../media/twitter-connector-details.png)
+![Diagram shows the X connector with a trigger that notifies you about new tweets and with actions that can send tweets and manage your account.](../media/x-connector-details.png)
 
 Next, we have the Dropbox connector. Suppose you're working with a small team on a project that stored shared data in Dropbox. You can build a workflow that detects when someone changes any files and sends a notification to the other team members. The following diagram shows the Dropbox connector with its triggers and actions:
 
@@ -49,12 +49,12 @@ Finally, let's look at the Twilio connector. Most connectors offer both triggers
 You build a workflow by choosing operations, specifically, a trigger and actions. A workflow must start with a trigger. You can then follow the trigger with as many actions as you need to implement your workflow. The following diagram shows the trigger and actions used in the social media monitoring app:
 
 :::image type="complex" source="../media/social-media-connectors.png" alt-text="Diagram shows the trigger and actions in the social media monitoring app. Each operation shows the associated external service.":::
-Diagram shows the trigger and actions in the social media monitoring logic app. The diagram shows the Twitter trigger named "When a new tweet is posted", which launches the logic app workflow. The trigger is followed by three actions: "Detect sentiment" from the Text Analytics service, "Insert row" from SQL Server, and "Send email" from Outlook.com.
+Diagram shows the trigger and actions in the social media monitoring logic app. The diagram shows the X trigger named "When a new tweet is posted", which launches the logic app workflow. The trigger is followed by three actions: "Detect sentiment" from the Text Analytics service, "Insert row" from SQL Server, and "Send email" from Outlook.com.
 :::image-end:::
 
 ## How do triggers and actions work together?
 
-Triggers and actions are essentially function calls to an underlying API operation. Each operation has inputs and outputs. For example, the Twitter trigger named **When a new tweet is posted** takes in a search string and returns the tweets that contain that string. The Text Analytics action named **Detect sentiment** action takes a string as input and returns the sentiment score as a floating-point number. The following diagram shows these two operations:
+Triggers and actions are essentially function calls to an underlying API operation. Each operation has inputs and outputs. For example, the X trigger named **When a new tweet is posted** takes in a search string and returns the tweets that contain that string. The Text Analytics action named **Detect sentiment** action takes a string as input and returns the sentiment score as a floating-point number. The following diagram shows these two operations:
 
 ![Diagram shows the input and output for the "When a new tweet is posted" trigger and the "Detect sentiment" action.](../media/inputs-and-outputs.png)
 
