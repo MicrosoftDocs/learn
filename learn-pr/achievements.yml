@@ -3803,7 +3803,7 @@ achievements:
   title: Build your first real-time chat app by using Azure Web PubSub and Azure Static Web Apps
   summary: Use Azure Web PubSub and Azure Static Web Apps to build a real-time messaging app!
   iconUrl: /learn/achievements/generic-badge.svg
-uid: learn.wwl.explore-azure-data-services-for-modern-analytics.badge
+- uid: learn.wwl.explore-azure-data-services-for-modern-analytics.badge
   type: badge
   title: Explore Azure data services for modern analytics
   summary: Understand analytics solutions in the Azure data ecosystem. Explore the architecture of a scalable analytics solution to meet business needs.
