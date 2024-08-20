@@ -6,7 +6,7 @@ metadata:
   description: Understand considerations for integrating Azure OpenAI into your app. Learn how to decide between endpoints, methods for connecting to the service, and information on prompt engineering.
   author: ivorb
   ms.author: berryivor
-  ms.date: 07/10/2024
+  ms.date: 08/06/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

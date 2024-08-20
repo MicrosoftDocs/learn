@@ -1,6 +1,4 @@
-The first step in building a generative AI solution with Azure OpenAI Service is to provision an Azure OpenAI Service resource in your Azure subscription. Azure OpenAI Service is currently in limited access. Users need to apply for service access at <https://aka.ms/oai/access>.
-
-Once you have access to Azure OpenAI Service, you can get started by creating a Content Safety resource and retrieving the **Subscription Key** and **Endpoint**. The endpoint and key are used to call APIs.
+The first step in moderating content with Azure AI Content Safety is to create a Content Safety resource and retrieve the **Subscription Key** and **Endpoint**. The endpoint and key are used to call APIs.
 
 ## Create Content Safety resource
 

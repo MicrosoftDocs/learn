@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-databricks.exercise
+title: Exercise - Explore Azure Databricks
+metadata:
+  title: Exercise - Explore Azure Databricks
+  description: "Exercise - Explore Azure Databricks"
+  ms.date: 08/05/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/06-exercise-explore-databricks.md)]

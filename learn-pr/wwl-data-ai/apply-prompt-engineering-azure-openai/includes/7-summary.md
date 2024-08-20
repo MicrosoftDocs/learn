@@ -6,4 +6,4 @@ Additional Reading:
 - [Microsoft's AI principles](https://www.microsoft.com/ai/responsible-ai?azure-portal=true)
 - [Transparency note on Azure OpenAI](/legal/cognitive-services/openai/transparency-note?azure-portal=true)
 - [Azure OpenAI documentation on prompt engineering](/azure/cognitive-services/openai/concepts/advanced-prompt-engineering?azure-portal=true)
-- [Azure OpenAI Studio](https://oai.azure.com/portal?azure-portal=true)
+- [Azure AI Studio](https://ai.azure.com/portal?azure-portal=true)

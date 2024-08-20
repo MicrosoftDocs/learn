@@ -1,9 +1,16 @@
 ### YamlMime:Module
+### 
+### Contributor instructions:
+### 1. Sample repo: 
+###     https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr
+### 2. You must fork the repo in order for deployment to work
+### 3. Changes to inline code must also be made in sample repo as PR
+###     @mention diberry, ggailey777 for review
 uid: learn.advocates.azure-functions-and-signalr
 metadata:
   title: Enable real-time updates in a web application using Azure Functions and SignalR Service
   description: Change a JavaScript web app update mechanism from polling to real-time push-based architecture with SignalR Service, Azure Cosmos DB and Azure Functions. Use Vue.js and JavaScript to use SignalR using Visual Studio Code.
-  ms.date: 03/27/2024
+  ms.date: 08/12/2024
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: module-standard-task-based

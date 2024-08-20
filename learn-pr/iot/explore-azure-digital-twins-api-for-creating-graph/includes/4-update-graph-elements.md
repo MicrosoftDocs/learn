@@ -1,12 +1,18 @@
-In this unit, you use the Model and Digitaltwin APIs to make manual updates to the sample graph that you imported in the previous unit.
+In this unit, you use the [Models APIs](/rest/api/digital-twins/dataplane/models) and [Twins APIs](/rest/api/digital-twins/dataplane/twins) to make manual updates to the sample graph that you imported in the previous unit.
 
 ## Update (replace) a model
 
-Start this section on updating models by reviewing the [Models API documentation](/rest/api/digital-twins/dataplane/models). The API contains operations to add new models, delete models, get a model's details by its ID, list all models, and update a model.
+First, make some updates to the models in your graph.
+
+### View Models API documentation
+
+Start by reviewing the [Models API documentation](/rest/api/digital-twins/dataplane/models). The API contains operations to add new models, delete models, get a model's details by its ID, list all models, and update a model.
 
 :::image type="content" source="../media/4-models.png" alt-text="Reference doc screenshot showing the Models operations." border="true" lightbox="../media/4-models.png":::
 
-However, models that are uploaded to an Azure Digital Twins instance are immutable, which means they can't be edited or updated in a traditional sense. Instead, one way to "update" a model in your instance is to delete the old model and reupload an updated definition.
+### Understand model update process
+
+Models that are uploaded to an Azure Digital Twins instance are immutable, which means they can't be edited or updated in a traditional sense. Instead, one way to "update" a model in your instance is to delete the old model and reupload an updated definition.
 
 In the city grid example for this module, say you decide you also want your graph to keep track of who owns and operates each substation. There are three substation-type models in your instance: *Delivery Substation*, *Generator Substation*, and *Base Receiver* (the base model from which the other two inherit). By adding an `Operator` property to the base model, you can make the new property available on all three substation models.
 
@@ -45,134 +51,178 @@ Before uploading the new *Base Receiver* model, you need to delete the old one.
 
 However, the other substation models *Delivery Substation* and *Generator Substation* depend on this model, so *Base Receiver* can't be deleted without removing those models first. So in this section, you remove all three substation models. Then, you reupload the edited *Base Receiver* model, then reupload the dependent *Delivery Substation* and *Generator Substation* models without any changes to them.
 
-From your Postman collections, start by opening the request template at _Data plane > models > {id} > **DEL Digital Twin Models Delete**_.
+Follow these steps to delete the models using the [DigitalTwinModels Delete](/rest/api/digital-twins/dataplane/models/digital-twin-models-delete) API.
 
-Make the following changes in the template:
-* In the **Params** tab, set **api-version** to *2023-10-31* and the **id** value to *dtmi:example:grid:transmission:deliverySubStation;1*. This value is the ID of the *Delivery Substation* model.
-* In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
+1. Return to the *data.http* file in your Visual Studio project for this module. 
 
-Send the request. A 204 response with no error message indicates the delete request was successful.
+1. Signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-:::image type="content" source="../media/4-digital-twin-models-delete.png" alt-text="Postman screenshot showing the results of the Digital Twin Models Delete request." border="true" lightbox="../media/4-digital-twin-models-delete.png":::
+1. Paste the following DELETE request on the next line. This is the [DigitalTwinModels Delete](/rest/api/digital-twins/dataplane/models/digital-twin-models-delete) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and the DTMI ID of the *Delivery Substation* model. It also has the authorization header specifying use of your bearer token.
 
-[!INCLUDE [Reminder for how to get a new data plane bearer token](../../includes/azure-digital-twins-data-plane-token.md)]
+    ```http
+    DELETE https://{{hostName}}/models/dtmi:example:grid:transmission:deliverySubStation;1?api-version={{DPversion}}
+    Authorization: Bearer {{DPtoken}}
+    ```
+    :::image type="content" source="../media/4-models-delete-request.png" alt-text="Visual Studio screenshot showing the Models Delete request." border="true" lightbox="../media/4-models-delete-request.png":::
 
-Return to the **Params** tab and change the **id** value to *dtmi:example:grid:transmission:generatorSubStation;1*. This value is the ID of the *Generator Substation* model. Send the request.
+1. Select **Send request** above the request to send it.
 
-Finally, change the **id** value again to *dtmi:example:grid:transmission:baseReceiver;1*. This value is the ID of the *Base Receiver* model. Send the request.
+    A 204 response with no error message indicates the delete request was successful.
+    
+    :::image type="content" source="../media/4-models-delete-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twin Models Delete request." border="true" lightbox="../media/4-models-delete-response.png":::
+    
+    [!INCLUDE [Reminder for how to get a new data plane bearer token](../../includes/azure-digital-twins-data-plane-token.md)]
+
+1. Signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line. Paste the following DELETE request on the next line, to delete the *Generator Substation* model.
+
+    ```http
+    DELETE https://{{hostName}}/models/dtmi:example:grid:transmission:generatorSubStation;1?api-version={{DPversion}}
+    Authorization: Bearer {{DPtoken}}
+    ```
+
+1. Select **Send request** above the request to send it, and verify the response is a 204.
+
+1. Signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line. Paste the following DELETE request on the next line, to delete the *Base Receiver* model.
+
+    ```http
+    DELETE https://{{hostName}}/models/dtmi:example:grid:transmission:baseReceiver;1?api-version={{DPversion}}
+    Authorization: Bearer {{DPtoken}}
+    ```
+
+1. Select **Send request** above the request to send it, and verify the response is a 204.
 
 After these steps, all substation-type models are deleted from your instance.
 
 ### Upload new models
 
-Now you can reupload the new *Base Receiver* model, and then reupload the two substation models that reference it.
+Now you can reupload the new *Base Receiver* model, and then reupload the two substation models that reference it. 
 
-From your Postman collections, open the request template at _Data plane > models > **POST Digital Twin Models Add**_.
+Follow these steps to add the models using the [DigitalTwinModels Add](/rest/api/digital-twins/dataplane/models/digital-twin-models-add) API.
 
-Make the following changes in the template:
-* In the **Params** tab, set the **api-version** value to *2023-10-31*. 
-* In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
-* In the **Body** tab, replace the contents with the following snippet. This code is the new *Base Receiver* model definition inside a set of square brackets.
+1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-    ```json
+1. Paste the following POST request on the next line. This is the [DigitalTwinModels Add](/rest/api/digital-twins/dataplane/models/digital-twin-models-add) request copied from the reference documentation, with parameters filled in for the host name and data plane version. It also has the authorization header specifying use of your bearer token, and a header specifying the `Content-Type` of the body.
+
+    The body of the request contains the code for the new *Base Receiver* model definition.
+
+    ```http
+    POST https://{{hostName}}/models?api-version={{DPversion}}
+    Authorization: Bearer {{DPtoken}}
+    Content-Type: application/json
+    
     [
-    {
-        "@id": "dtmi:example:grid:transmission:baseReceiver;1",
-        "@context": "dtmi:dtdl:context;3",
-        "@type": "Interface",
-        "displayName": "Base Receiver",
-        "contents":  [
         {
-        "@type": "Property",
-        "name": "Operator",
-        "schema": "string"
+            "@id": "dtmi:example:grid:transmission:baseReceiver;1",
+            "@context": "dtmi:dtdl:context;3",
+            "@type": "Interface",
+            "displayName": "Base Receiver",
+            "contents":  [
+                {
+                "@type": "Property",
+                "name": "Operator",
+                "schema": "string"
+                }
+            ]
         }
-        ]
-    }
     ]
     ```
 
-Send the request.
+1. Select **Send request** above the request to send it.
 
-The response from a successful request looks something like this:
+    The response from a successful request looks something like this:
+    
+    :::image type="content" source="../media/4-models-add-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twin Models Add request." border="true" lightbox="../media/4-models-add-response.png":::
+    
+    It's information about the new *Base Receiver* model that was added. This response indicates that the new model was uploaded to the instance, and replaced the old definition that was deleted.
 
-:::image type="content" source="../media/4-digital-twin-models-add.png" alt-text="Postman screenshot showing the results of the Digital Twin Models Add request." border="true" lightbox="../media/4-digital-twin-models-add.png":::
+1. Signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line. Paste the following POST request on the next line, to add back the *Delivery Substation* model. The model code is unchanged from its original form, copied here from the [DeliverySubStation.json source file](https://github.com/Azure-Samples/azure-digital-twins-getting-started/blob/main/models/energy-grid-example/DeliverySubStation.json) in GitHub.
 
-It's the body of the new *Base Receiver* model. This response indicates that the new model was uploaded to the instance, and replaced the old definition that was deleted.
-
-Next, return to the **Body** tab and replace the contents with the following code. It's the definition of the *Delivery Substation* model, copied from its [GitHub source file](https://github.com/Azure-Samples/azure-digital-twins-getting-started/blob/main/models/energy-grid-example/DeliverySubStation.json) for simplicity.
-
-```json
-[
-{
-    "@id": "dtmi:example:grid:transmission:deliverySubStation;1",
-    "@context": "dtmi:dtdl:context;3",
-    "@type": "Interface",
-    "extends": ["dtmi:example:grid:transmission:baseReceiver;1"],
-    "displayName": "Delivery SubStation",
-    "contents": [
+    ```http
+    POST https://{{hostName}}/models?api-version={{DPversion}}
+    Authorization: Bearer {{DPtoken}}
+    Content-Type: application/json
+    
+    [
         {
-            "@type": "Property",
-            "name": "Capacity",
-            "schema": "double"
-        },
-        {
-            "@type": "Relationship",
-            "name": "feeds",
-            "target": "dtmi:example:grid:consumer:baseConsumer;1"
+            "@id": "dtmi:example:grid:transmission:deliverySubStation;1",
+            "@context": "dtmi:dtdl:context;3",
+            "@type": "Interface",
+            "extends": ["dtmi:example:grid:transmission:baseReceiver;1"],
+            "displayName": "Delivery SubStation",
+            "contents": [
+                {
+                    "@type": "Property",
+                    "name": "Capacity",
+                    "schema": "double"
+                },
+                {
+                    "@type": "Relationship",
+                    "name": "feeds",
+                    "target": "dtmi:example:grid:consumer:baseConsumer;1"
+                }
+            ]
         }
     ]
-}
-]
-```
+    ```
 
-Send the request.
+1. Select **Send request** above the request to send it, and verify the response is a 201.
 
-Next, replace the **Body** contents with the following code. It's the definition of the *Generator Substation* model, copied from its [GitHub source file](https://github.com/Azure-Samples/azure-digital-twins-getting-started/blob/main/models/energy-grid-example/GeneratorSubStation.json) for simplicity.
+1. Signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line. Paste the following POST request on the next line, to add back the *Generator Substation* model. The model code is unchanged from its original form, copied here from the [GeneratorSubStation.json source file](https://github.com/Azure-Samples/azure-digital-twins-getting-started/blob/main/models/energy-grid-example/GeneratorSubStation.json) in GitHub.
 
-```json
-[
-{
-    "@id": "dtmi:example:grid:transmission:generatorSubStation;1",
-    "@context": "dtmi:dtdl:context;3",
-    "@type": "Interface",
-    "extends": ["dtmi:example:grid:transmission:baseReceiver;1"],
-    "displayName": "Generator SubStation",
-    "contents": [
+    ```http
+    POST https://{{hostName}}/models?api-version={{DPversion}}
+    Authorization: Bearer {{DPtoken}}
+    Content-Type: application/json
+    
+    POST https://{{hostName}}/models?api-version={{DPversion}}
+    Authorization: Bearer {{DPtoken}}
+    Content-Type: application/json
+    
+    [
         {
-            "@type": "Property",
-            "name": "Capacity",
-            "schema": "double"
-        },
-        {
-            "@type": "Relationship",
-            "name": "feeds",
-            "target": "dtmi:example:grid:transmission:powerLine;1"
+            "@id": "dtmi:example:grid:transmission:generatorSubStation;1",
+            "@context": "dtmi:dtdl:context;3",
+            "@type": "Interface",
+            "extends": ["dtmi:example:grid:transmission:baseReceiver;1"],
+            "displayName": "Generator SubStation",
+            "contents": [
+                {
+                    "@type": "Property",
+                    "name": "Capacity",
+                    "schema": "double"
+                },
+                {
+                    "@type": "Relationship",
+                    "name": "feeds",
+                    "target": "dtmi:example:grid:transmission:powerLine;1"
+                }
+            ]
         }
     ]
-}
-]
-```
+    ```
 
-Send the request.
+1. Select **Send request** above the request to send it, and verify the response is a 201.
 
 Now all of the substation models are reuploaded to the instance (including the updated *Base receiver* model, and two unchanged inherited models for *Delivery Substation* and *Generator Substation*). The inherited models, and any digital twins referencing the *Base Receiver* model or any of its inherited models, now reference the updated definition and are capable of supporting an `Operator` property.
 
 ### Verify updates
 
-You can verify the new model property by getting the *Base Receiver* model by its ID.
+You can verify the new model property by getting the *Base Receiver* model by its ID, using the [DigitalTwinModels GetById](/rest/api/digital-twins/dataplane/models/digital-twin-models-get-by-id) API.
 
-From your Postman collections, open the request template at _Data plane > models > {id} > **GET Digital Twin Models Get By ID**_.
+1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-Make the following changes in the template:
-* In the **Params** tab, set **includeModelDefinition** to *true*, **api-version** to *2023-10-31*, and **id** to *dtmi:example:grid:transmission:baseReceiver;1*. 
-* In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
+1. Paste the following GET request on the next line. This is the [DigitalTwinModels GetById](/rest/api/digital-twins/dataplane/models/digital-twin-models-get-by-id) request copied from the reference documentation, with parameters filled in for the host name, data plane version, the DTMI ID of the *Base Receiver* model, and the specification that the full model definition should be included in the response. It also has the authorization header specifying use of your bearer token.
 
-Send the request.
+    ```http
+    GET https://{{hostName}}/models/dtmi:example:grid:transmission:baseReceiver;1?includeModelDefinition=true&api-version={{DPversion}}
+    Authorization: Bearer {{DPtoken}}
+    ```
 
-Scrolling through the response should reveal the new `Operator` property as part of the *Base Receiver* model definition.
+1. Select **Send request** above the request to send it.
 
-:::image type="content" source="../media/4-digital-twin-models-get-by-id.png" alt-text="Postman screenshot showing the results of the Digital Twin Models Get By ID request." border="true" lightbox="../media/4-digital-twin-models-get-by-id.png":::
+    Scrolling through the response should reveal the new `Operator` property as part of the *Base Receiver* model definition.
+    
+    :::image type="content" source="../media/4-models-get-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twin Models Get By ID request." border="true" lightbox="../media/4-models-get-response.png":::
 
 ## Update twin properties
 
@@ -181,18 +231,27 @@ Since your work in the previous section made a new `Operator` property available
 >[!TIP]
 >To get a list of all twins that use a certain model, use the Query APIs covered in [Unit 5](../5-query-graph.yml) of this module.
 
+### View Twins API documentation (twins)
+
 Start by reviewing the [Twins API documentation](/rest/api/digital-twins/dataplane/twins). The API contains operations to add/delete, get, and update digital twins, their components, and their relationships. In this section, you focus on operations dealing with twins themselves.
 
 :::image type="content" source="../media/4-twins.png" alt-text="Reference doc screenshot showing the Twins operations and highlighting the twin-focused ones." border="true" lightbox="../media/4-twins.png":::
 
-From your Postman collections, open the request template at _Data plane > digitaltwins > {id} > **PATCH Digital Twins Update**_.
+### Make the request
 
-Make the following changes in the template:
-* In the **Params** tab, set the **api-version** value to *2023-10-31* and the **id** to *sub_corp*. 
-* In the **Headers** tab, uncheck the **If-Match**, **traceparent**, and **tracestate** options.
-* Switch to the **Body** tab, which accepts the update instruction in JSON Patch format. Paste the following patch document into the **Body** field. This patch adds an `Operator` property to the twin and sets its value to *Contoso Electric*.
+Follow these steps to update the *sub_corp* twin using the [DigitalTwins Update](/rest/api/digital-twins/dataplane/twins/digital-twins-update) API.
 
-    ```json
+1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
+
+1. Paste the following PATCH request on the next line. This is the [DigitalTwins Update](/rest/api/digital-twins/dataplane/twins/digital-twins-update) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and ID of the *sub_corp* twin. It also has the authorization header specifying use of your bearer token, and a header specifying the `Content-Type` of the body. 
+
+    The body of the request contains JSON Patch code that adds an `Operator` property to the twin, and sets its value to *Contoso Electric*.
+
+    ```http
+    PATCH https://{{hostName}}/digitaltwins/sub_corp?api-version={{DPversion}}
+    Authorization: Bearer {{DPtoken}}
+    Content-Type: application/json
+    
     [
         {
         "op": "add", 
@@ -202,54 +261,73 @@ Make the following changes in the template:
     ]
     ```
 
-Send the request. A 204 response with no error message indicates the delete request was successful.
+1. Select **Send request** above the request to send it. A 204 response with no error message indicates the update request was successful.
 
-:::image type="content" source="../media/4-digital-twins-update.png" alt-text="Postman screenshot showing the results of the Digital Twins Update request." border="true" lightbox="../media/4-digital-twins-update.png":::
+    :::image type="content" source="../media/4-twins-update-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twins Update request." border="true" lightbox="../media/4-twins-update-response.png":::
 
 ### Verify updates
 
 You can verify the new twin property by getting the *sub_corp* twin by its ID.
 
-From the same Postman collection folder, open the request template for **GET Digital Twins Get By ID**.
+Follow these steps to get the twin using the [DigitalTwins GetById](/rest/api/digital-twins/dataplane/twins/digital-twins-get-by-id) API.
 
-Make the following changes in the template:
-* In the **Params** tab, set the **api-version** value to *2023-10-31* and the **id** to *sub_corp*. 
-* In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
+1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-Send the request. Look for the `Operator` field and its value in the response.
+1. Paste the following GET request on the next line. This is the [DigitalTwins GetById](/rest/api/digital-twins/dataplane/twins/digital-twins-get-by-id) request copied from the reference documentation, with parameters filled in for the host name, data plane version, and ID of the *sub_corp* twin. It also has the authorization header specifying use of your bearer token.
 
-:::image type="content" source="../media/4-digital-twins-get-by-id.png" alt-text="Postman screenshot showing the results of the Digital Twins Get By ID request." border="true" lightbox="../media/4-digital-twins-get-by-id.png":::
+    ```http
+    GET https://{{hostName}}/digitaltwins/sub_corp?api-version={{DPversion}}
+    Authorization: Bearer {{DPtoken}}
+    ```
+
+1. Select **Send request** above the request to send it.
+
+    Look for the `Operator` field and its value in the response.
+    
+    :::image type="content" source="../media/4-twins-get-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twins Get By ID request." border="true" lightbox="../media/4-twins-get-response.png":::
 
 This response confirms that the twin is updated with the new property. In the sample scenario, you might repeat the process with the other substation twins to include this detail throughout your environment.
 
 ## Update relationships
 
-Start this section on updating relationships by reviewing the [Twins API documentation](/rest/api/digital-twins/dataplane/twins) again, this time looking at the operations that deal with relationships.
+Let's say one of the delivery substations represented in your graph is no longer going to supply power to one of its farm consumers. Currently, the delivery substation twin *sub_farmcluster_2* has a *feeds* relationship to farm consumer *c_farm_05*. Since the substation's going to stop feeding that farm, you need to update the graph to remove the relationship between these two twins.
+
+### View Twins API documentation (relationships)
+
+Start by reviewing the [Twins API documentation](/rest/api/digital-twins/dataplane/twins) again, this time looking at the operations that deal with relationships.
 
 :::image type="content" source="../media/4-relationships.png" alt-text="Reference doc screenshot showing the Twins operations and highlighting the relationship ones." border="true" lightbox="../media/4-relationships.png":::
 
-Let's say one of the delivery substations represented in your graph is no longer going to supply power to one of its farm consumers. Currently, the delivery substation twin *sub_farmcluster_2* has a *feeds* relationship to farm consumer *c_farm_05*. Since the substation's going to stop feeding that farm cluster, you need to update the graph to remove the relationship between these two twins.
+### Make the request
 
-From your Postman collections, open the request template at _Data plane > digitaltwins > {id} > relationships > {relationshipId} > **DEL Digital Twins Delete Relationship**_.
+Follow these steps to delete the *feeds* relationship from *sub_farmcluster_2* to farm consumer *c_farm_05*, using the [DigitalTwins DeleteRelationship](/rest/api/digital-twins/dataplane/twins/digital-twins-delete-relationship) API.
 
-Make the following changes in the template:
-* In the **Params** tab, set the **api-version** value to *2023-10-31*, the **id** value to *sub_farmcluster_2*, and the **relationshipId** value to *57becd45-1391-45e8-b127-ff3fdc5d0175*. This value was the ID value given for this relationship when the graph was imported, and together with the source twin ID it identifies this specific relationship in the graph.
-* In the **Headers** tab, uncheck the **If-Match**, **traceparent**, and **tracestate** options.
+1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-Send the request. A 204 response with no error message indicates the delete request was successful.
+1. Paste the following DELETE request on the next line. This is the [DigitalTwins DeleteRelationship](/rest/api/digital-twins/dataplane/twins/digital-twins-delete-relationship) request copied from the reference documentation, with parameters filled in for the host name, data plane version, ID of the *sub_farmcluster_2* twin, and relationship ID (the value plugged in below was the ID value supplied for this relationship by the import file, and together with the source twin ID it identifies this specific relationship in the graph). It also has the authorization header specifying use of your bearer token.
 
-:::image type="content" source="../media/4-digital-twins-delete-relationship.png" alt-text="Postman screenshot showing the results of the Digital Twins Delete Relationship request." border="true" lightbox="../media/4-digital-twins-delete-relationship.png":::
+    ```http
+    DELETE https://{{hostName}}/digitaltwins/sub_farmcluster_2/relationships/57becd45-1391-45e8-b127-ff3fdc5d0175?api-version={{DPversion}}
+    Authorization: Bearer {{DPtoken}}
+    ```
+1. Select **Send request** above the request to send it. A 204 response with no error message indicates the delete request was successful.
+
+    :::image type="content" source="../media/4-twins-delete-relationship-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twins Delete Relationship request." border="true" lightbox="../media/4-twins-delete-relationship-response.png":::
 
 ### Verify deletion
 
-You can verify the relationship was deleted by listing the relationships from the  *sub_farmcluster_2* twin and confirming that the *feeds* relationship to farm consumer *c_farm_05* isn't in the list.
+You can verify the relationship was deleted by listing the relationships from the *sub_farmcluster_2* twin and confirming that the *feeds* relationship to farm consumer *c_farm_05* isn't in the list.
 
-From your Postman collections, open the request template at _Data plane > digitaltwins > {id} > relationships > **GET Digital Twins List Relationships**_.
+Follow these steps to list the relationships using the [DigitalTwins ListRelationships](/rest/api/digital-twins/dataplane/twins/digital-twins-list-relationships) API.
 
-Make the following changes in the template:
-* In the **Params** tab, set the **relationshipName** to *feeds*, the **api-version** to *2023-10-31*, and the **id** value to *sub_farmcluster_2*. This request now looks for *feeds*-type relationships coming out of *sub_farmcluster_2*.
-* In the **Headers** tab, uncheck the **traceparent** and **tracestate** options.
+1. In *data.http*, signify the start of a new request by adding a new blank line, followed by a line with `###`, followed by another blank line.
 
-Send the request. The response should show two relationships to *c_farm_04* and *c_farm_06*, but no relationship to *c_farm_05*. That indicates the delete operation was successful.
+1. Paste the following GET request on the next line. This is the [DigitalTwins ListRelationships](/rest/api/digital-twins/dataplane/twins/digital-twins-list-relationships) request copied from the reference documentation, with parameters filled in for the host name, data plane version, ID of the *sub_farmcluster_2* twin, and the relationship name *feeds*. It also has the authorization header specifying use of your bearer token.
 
-:::image type="content" source="../media/4-digital-twins-list-relationships.png" alt-text="Postman screenshot showing the results of the Digital Twins List Relationships." border="true" lightbox="../media/4-digital-twins-list-relationships.png":::
+    ```http
+    GET https://{{hostName}}/digitaltwins/sub_farmcluster_2/relationships?relationshipName=feeds&api-version={{DPversion}}
+    Authorization: Bearer {{DPtoken}}
+    ```
+1. Select **Send request** above the request to send it. The response should show two relationships to *c_farm_04* and *c_farm_06*, but no relationship to *c_farm_05*. That indicates the delete operation was successful.
+
+    :::image type="content" source="../media/4-twins-list-relationships-response.png" alt-text="Visual Studio screenshot showing the results of the Digital Twins List Relationships." border="true" lightbox="../media/4-twins-list-relationships-response.png":::

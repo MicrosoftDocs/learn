@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
-  ms.service: key-vault
+  ms.service: azure-key-vault
   ai-usage: human-only
 title: Implement Azure Key Vault
 summary: Learn how Azure Key Vault can help you keep your apps more secure, and how to set and retrieve secrets by using the Azure CLI.

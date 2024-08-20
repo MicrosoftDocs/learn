@@ -26,7 +26,8 @@ Azure Arc is a service that allows you to manage resource types hosted outside o
 - Kubernetes clusters.
 - Azure data services such as Azure SQL Managed Instance.
 - SQL Server.
-- Provision, resize, delete and manage virtual machines based on VMware vSphere or Azure Stack HCI and enable VM self-service through role-based access.
+
+You can also provision, resize, delete and manage virtual machines based on VMware vSphere or Azure Stack HCI and enable VM self-service through role-based access.
 
 ## Related services
 

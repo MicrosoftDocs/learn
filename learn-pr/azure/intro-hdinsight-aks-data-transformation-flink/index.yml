@@ -8,7 +8,7 @@ metadata:
   author: sairamyeturi
   ms.author: sairamyeturi
   ms.topic: module-guided-project
-  ms.service: hdinsight-aks
+  ms.service: azure-hdinsight-on-aks
 title: Use Apache Flink on Azure HDInsight on AKS
 summary: |
   This tutorial guides you through the process of performing streaming data transformations using Apache Flink on HDInsight on AKS deployed on Azure Kubernetes Service(AKS). It covers setting up the environment, deploying Apache Flink on HDInsight on AKS, configuring data sources and sinks, and executing streaming data transformations efficiently.
