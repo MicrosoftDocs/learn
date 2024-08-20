@@ -1,5 +1,3 @@
-
-
 The primary setup process for Windows 365 takes place within the Microsoft Intune admin center. Here's a general overview of the fundamental steps required to configure your system for provisioning on-demand Cloud PCs to your users.
 
 ### Assign licenses to users

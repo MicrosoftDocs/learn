@@ -1,6 +1,3 @@
-﻿> [!CAUTION]
-> This article references CentOS, a Linux distribution that's in End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
-
 After completing this unit, you should be able to use Slurm on Azure CycleCloud.
 
 ## Enabling Slurm on CycleCloud
@@ -35,8 +32,8 @@ You can deploy a High Performance Computing (HPC) cluster using Azure CycleCloud
    - **Job Accounting**: Specify whether you want to enable job accounting and the settings you'll chose to store accounting data.
    - **Shutdown Policy**: You can choose between terminating the instance or deallocating the instance.
    - **Credentials**: The credentials to connect to the associated Azure subscription.
-   - **Scheduler OS**: Choose which Linux operating system to use to host the scheduler. The default is CentOS 8, but you can choose a custom image.
-   - **HPC OS**: Specify which Linux operating system to use to host the scheduler. The default is CentOS 8, but you can choose a custom image.
+   - **Scheduler OS**: Choose which Linux operating system is used to host the scheduler. 
+   - **HPC OS**: Specify which Linux operating system is used to host the scheduler. 
    - **Scheduler Cluster Init**: Here, you specify custom instructions to apply to the scheduler VM.
    - **HTC Cluster Init**: Specify custom instructions to apply to HTC nodes.
    - **Advanced Networking**: This option allows you to enable Return Proxy, whether the head node can be accessed from internet addresses, and whether execute nodes can be accessed from the internet.

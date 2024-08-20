@@ -5,7 +5,7 @@ metadata:
   description: A practical approach to implementing generative AI responsibly.
   author: graememalcolm
   ms.author: gmalc
-  ms.date: 7/13/2023
+  ms.date: 08/01/2024
   ms.service: azure-ai-openai
   ms.topic: module-standard-task-based
   ms.collection:

@@ -1,4 +1,4 @@
-In this module, you have learned about organizing APIs into sections for different types of data in an application. By using dedicated URLs, you can easily extend a web app and make data accessible. The content also explains the structure of a URL, including its components such as scheme, authority, path, query, and fragment. Additionally, you have learned about HTTP handlers in Express, which help create routes to handle HTTP requests. The code examples demonstrate how to handle incoming data through route parameters, query parameters, and request bodies. Overall, understanding these concepts and techniques is essential for developing APIs and managing data effectively in web applications.
+In this module, you learned about organizing APIs into sections for different types of data in an application. By using dedicated URLs, you can easily extend a web app and make data accessible. The content also explains the structure of a URL, including its components such as scheme, authority, path, query, and fragment. Additionally, you learned about HTTP handlers in Express, which help create routes to handle HTTP requests. The code examples demonstrate how to handle incoming data through route parameters, query parameters, and request bodies. Overall, understanding these concepts and techniques is essential for developing APIs and managing data effectively in web applications.
 
 The main takeaways from this module are:
 
@@ -16,8 +16,7 @@ Additional resources
 
 ## Sample code
 
-- [Sample repo 1](https://github.com/azure-samples/1)
-- [Sample repo 2](https://github.com/azure-samples/2)
+- https://github.com/MicrosoftDocs/node-essentials/tree/main/nodejs-route
 
 ## Troubleshooting
 
