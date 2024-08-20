@@ -23,10 +23,12 @@ This feature supports Windows 10 or Windows 11 Enterprise multi-session VMs, whi
  -  Running Windows 10 multi-session, version 1903 or later, or running Windows 11 multi-session.
  -  Set up as remote desktops in pooled host pools that have been deployed through Azure Resource Manager.
  -  Running an Azure Virtual Desktop agent.
- -  Microsoft Entra hybrid joined and enrolled in Microsoft Intune using one of the following methods:
-     -  Configured with Active Directory group policy, set to use Device credentials, and set to automatically enroll devices that are Microsoft Entra hybrid joined.
+ -  Hybrid Microsoft Entra-joined and enrolled in Microsoft Intune using one of the following methods:
+    
+    
+     -  Configured with Active Directory group policy, set to use Device credentials, and set to automatically enroll devices that are Hybrid Microsoft Entra-joined.
      -  Configuration Manager co-management.
- -  Microsoft Entra joined and enrolled in Microsoft Intune by enabling Enroll the VM with Intune in the Azure portal.
+ -  Microsoft Entra-joined and enrolled in Microsoft Intune by enabling [Enroll the VM with Intune](https://github.com/MicrosoftDocs/memdocs/blob/main/azure/virtual-desktop/deploy-azure-ad-joined-vm#deploy-azure-ad-joined-vms) in the Azure portal.
  -  Licensing: The appropriate Microsoft Intune license is required if a user or device benefits directly or indirectly from the Microsoft Intune service, including access to the Microsoft Intune service through a Microsoft API. For more information, see Microsoft Intune licensing.
 
 > [!NOTE]
@@ -56,11 +58,15 @@ To configure policies
 5.  On the **Basics** page, provide a **Name** and (optionally) **Description** &gt; **Next**.
 6.  On the **Configuration settings** page, select **Add settings**.
 7.  Under **Settings picker**, select **Add filter** and select the following options:
+    
+    
      -  **Key**: **OS edition**
      -  **Operator**: **==**
      -  **Value**: **Enterprise multi-session**
      -  Select **Apply**. The filtered list now shows all configuration profile categories that support Windows 10 or Windows 11 Enterprise multi-session. The scope for a policy is shown in parentheses. For user scope it shows as (User) and all the rest are policies with device scope.
 8.  From the filtered list, pick the categories that you want.
+    
+    
      -  For each category you pick, select the settings that you want to apply to your new configuration profile.
      -  For each setting, select the value that you want for this configuration profile.
 9.  Select **Next** when you’re done adding settings.

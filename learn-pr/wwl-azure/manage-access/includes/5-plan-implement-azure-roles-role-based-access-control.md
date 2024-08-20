@@ -31,10 +31,12 @@ Run the following cmdlet to add Microsoft Entra users to an app group:
 
 ```powershell
 New-AzRoleAssignment -SignInName <userupn> -RoleDefinitionName "Desktop Virtualization User" -ResourceName <appgroupname> -ResourceGroupName <resourcegroupname> -ResourceType 'Microsoft.DesktopVirtualization/applicationGroups'
+
 ```
 
 Run the following cmdlet to add Microsoft Entra user group to an app group:
 
 ```powershell
 New-AzRoleAssignment -ObjectId <usergroupobjectid> -RoleDefinitionName "Desktop Virtualization User" -ResourceName <appgroupname> -ResourceGroupName <resourcegroupname> -ResourceType 'Microsoft.DesktopVirtualization/applicationGroups'
+
 ```
