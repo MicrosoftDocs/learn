@@ -56,7 +56,7 @@ You use a set of command-line utilities to perform actions on a compute cluster 
 |Command   |Function   |
 |----------|-----------|
 |`sacct`     |This command reports job and job step accounting information about jobs that are active or completed. |
-|`salloc`    |Use this command to allocate resources for a job in real time. Allows you to spawn a shell and enact srun commands as a way of initiating parallel tasks.  |
+|`salloc`    |Use this command to allocate resources for a job in real time. Allows you to spawn a shell and enact `srun` commands as a way of initiating parallel tasks.  |
 |`sattach`   |This command attaches standard input, output, and error-signal capabilities to a currently running job or job step.|
 |`sbatch`    |Use this command to submit a job script for later execution. These scripts generally include one or more `srun` commands to initiate parallel tasks.     |
 |`scancel`   |Use this command to transfer a file on nodes needed.     |
