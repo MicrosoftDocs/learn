@@ -10,13 +10,13 @@ When configuring a job script, you must ensure that the resources requested are 
 
 You can use the Slurm `squeue` command to check the job status.
 
-## What is the location of slurm logs for nodes/schedulers? (Slurm)
+## What is the location of Slurm logs for nodes/schedulers? (Slurm)
 
 In Azure CycleCloud, the location of Slurm logs for nodes and schedulers depends on your Slurm cluster's configuration. By default, the logs are stored in the following locations:
 
 The Slurm controller logs are typically stored in `/var/log/slurm/slurmctld.log` on the controller node. The exact path might vary depending on your configuration. You can find the log file path by checking the `SlurmctldLogFile` parameter in the Slurm configuration file (usually `/etc/slurm/slurm.conf`).
 
-The Slurm compute node logs are typically stored in `/var/log/slurm/slurmd.log` on each compute node. The exact path may might depending on your configuration. You can find the log file path by checking the `SlurmdLogFile` parameter in the Slurm configuration file (usually `/etc/slurm/slurm.conf`).
+The Slurm compute node logs are typically stored in `/var/log/slurm/slurmd.log` on each compute node. The exact path might vary depending on your configuration. You can find the log file path by checking the `SlurmdLogFile` parameter in the Slurm configuration file (usually `/etc/slurm/slurm.conf`).
 
 To access the log files, you can sign in to the controller or compute nodes via SSH and navigate to the appropriate log file paths. If you need to change the log file paths, you can modify the `SlurmctldLogFile` and `SlurmdLogFile` parameters in the Slurm configuration file.
 
