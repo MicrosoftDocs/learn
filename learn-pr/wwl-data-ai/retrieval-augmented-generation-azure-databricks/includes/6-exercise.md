@@ -6,4 +6,4 @@ Now it's your chance to set up Retrieval Augmented Generation (RAG) in Azure Dat
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-databricks-automl?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2283438&azure-portal=true)
