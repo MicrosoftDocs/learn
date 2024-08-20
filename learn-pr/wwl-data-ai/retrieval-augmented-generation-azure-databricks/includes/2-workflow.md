@@ -3,7 +3,7 @@
 
 In a RAG pattern, you receive a query (1), which you use to search (2) your database for any data or documents that are relevant to the question or task. The retrieved context is then added to the prompt (3) that you send to an LLM (4) to improve the generated response.
 
-:::image type="content" source="../media/rag.png" alt-text="Diagram of retrieval augmented generation workflow.":::
+:::image type="content" source="../media/retrieval-augmented-retrieval.png" alt-text="Diagram of retrieval augmented generation workflow.":::
 
 > [!Tip]
 > To learn more about the technique behind RAG, you can read the academic paper from [Lewis et al. (2020)](https://arxiv.org/abs/2005.11401?azure-portal=true) by selecting **View PDF**.
