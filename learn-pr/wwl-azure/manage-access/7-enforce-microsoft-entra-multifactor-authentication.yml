@@ -4,7 +4,7 @@ title: Enforce Microsoft Entra multifactor authentication for Azure Virtual Desk
 metadata:
   title: Enforce Microsoft Entra multifactor authentication for Azure Virtual Desktop using Conditional Access
   description: "Enforce Microsoft Entra multifactor authentication for Azure Virtual Desktop using Conditional Access"
-  ms.date: 08/07/2024
+  ms.date: 08/20/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
