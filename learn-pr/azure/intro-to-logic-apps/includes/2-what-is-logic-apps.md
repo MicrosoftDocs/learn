@@ -23,7 +23,7 @@ The power of Azure Logic Apps comes from the diversity of the prebuilt component
 You build your app from the services you use in your business processes. The components can be connected in any pattern you need. You can add conditional statements and loops to add decision making to your app. The following illustration shows how you would combine external services to implement the social-media monitor workflow.
 
 :::image type="complex" source="../media/service-use.png" alt-text="Diagram showing the mapping of the tweet-analysis business process to a logic app workflow.":::
-Diagram showing a flowchart for a business process and a logic app workflow that implements that process. For each step in the business process, there's a corresponding component used in the logic app workflow to implement it. For example, the process uses the Twitter component to watch for tweets about a new product.
+Diagram showing a flowchart for a business process and a logic app workflow that implements that process. For each step in the business process, there's a corresponding component used in the logic app workflow to implement it. For example, the process uses the X component to watch for tweets about a new product.
 :::image-end:::
 
 The Azure Logic Apps model is extensible. If there isn't a prebuilt component for the service you need, you can create your own. You can also run custom code in an Azure function that you invoke from your app.

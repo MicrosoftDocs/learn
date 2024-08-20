@@ -31,7 +31,7 @@ This action type helps you run operations or process data that you pull into you
 Let's examine an example. If you've used X, you might be familiar with their URL pattern that links to a specific tweet:
 
 ```language-plaintext
-https://twitter.com/<username>/status/<id>
+https://x.com/<username>/status/<id>
 ```
 
 You can use this link type in your social media monitoring app. For example, you might want to store the URL link in a database so that you can access the tweet later. Or, you might want to include the URL link in an email so that your coworkers can review the tweet in the original format.
@@ -39,7 +39,7 @@ You can use this link type in your social media monitoring app. For example, you
 Unfortunately, the data returned by the X trigger doesn't include the complete URL link. However, the data does include the username in the **TweetedBy** property and the ID in the **TweetId** property. So, you can use the **Compose** action to combine these pieces into the URL. Conceptually, the operation has this logical format:
 
 ```language-plaintext
-Compose: "https://twitter.com/" + [TweetedBy] + "/status/" + [TweetId]
+Compose: "https://x.com/" + [TweetedBy] + "/status/" + [TweetId]
 ```
 
 ### Alter control flow
