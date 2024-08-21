@@ -31793,6 +31793,61 @@
       "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/9-knowledge-check.md",
       "redirect_url": "/training/modules/create-manage-session-host-image/",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/2-explore-transient-errors.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/3-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/4-detect-transient-errors.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/5-exercise-detect-transient-errors.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/6-define-appropriate-retry-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/7-exercise-write-a-retry-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/8-log-useful-information.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/9-exercise-add-application-logging.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
     }
   ]
 }
