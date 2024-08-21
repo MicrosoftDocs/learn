@@ -15,7 +15,7 @@ metadata:
   ms.author: cshoe
   ms.topic: module-standard-task-based
   ms.service: azure-functions
-  manager: mijacobs
+  manager: susanpotter
 title: Enable real-time updates in a web application using Azure Functions and SignalR Service
 summary: Change a JavaScript web app update mechanism from polling to push-based architecture with SignalR Service, Azure Cosmos DB and Azure Functions.
 abstract: |
