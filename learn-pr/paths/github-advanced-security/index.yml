@@ -36,7 +36,7 @@ subjects:
 modules:
 - learn.introduction-github-advanced-security
 - learn.configure-dependabot-security-updates-on-github-repo
-- learn.configure-use-secret-scanning-github-repository
+- learn.github.configure-and-use-secret-scanning-in-your-github-repository
 - learn.github.configure-code-scanning
 - learn.codebase-representation-codeql
 - learn.code-scanning-with-github-codeql
