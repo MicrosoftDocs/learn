@@ -4,12 +4,12 @@ title: Plan for image update and management
 metadata:
   title: Plan for image update and management
   description: "Plan for image update and management"
-  ms.date: 08/17/2023
+  ms.date: 08/21/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-plan-for-image-update-management.md)]
+  [!include[](includes/5-plan-image-update-management.md)]
