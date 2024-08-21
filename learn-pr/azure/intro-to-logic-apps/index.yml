@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-intro-to-product
   ROBOTS: INDEX,FOLLOW
   ms.service: azure-logic-apps
-  manager: mijacobs
+  manager: susanpotter
 title: "Introduction to Azure Logic Apps"
 summary: "Characterize the types of business processes that Azure Logic Apps can automate. Describe the function of connectors, triggers, and actions and show how you combine them to create an app."
 abstract: |
