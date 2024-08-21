@@ -36,7 +36,7 @@ You'll need at least the [Application Developer](/entra/identity/role-based-acce
 
 [To register a web application](/graph/api/application-post-applications?view=graph-rest-1.0&tabs=http), use the Microsoft Graph request below and replace the following values.
 - Value of **displayName** with your app displayed name. For example, *Woodgrove Groceries*.
-- Values of the **redirectUris** with the redirect URI of your application. For example, *<https://woodgrovedemo.com/signin-oidc>*
+- Values of the **redirectUris** with the redirect URI of your application. For example, *<https://woodgrovedemo.com/signin-oidc>*. You can also use *https://www.jwt.ms/*.
 
     ```json
     POST https://graph.microsoft.com/v1.0/applications
