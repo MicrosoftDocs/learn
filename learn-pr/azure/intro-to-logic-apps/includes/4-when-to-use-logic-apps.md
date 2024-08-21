@@ -47,6 +47,4 @@ Azure Logic Apps could work for all these tasks, and the online sales process is
 
 The following flowchart summarizes the key questions to ask when you're considering using Azure Logic Apps.
 
-:::image type="complex" source="../media/decide-whether-to-use-logic-apps-flowchart.png" alt-text="Flowchart shows key questions to ask when evaluating Azure Logic Apps for your work.":::
-A flowchart that helps you choose whether Azure Logic Apps is appropriate for your work. The flowchart summarizes the key questions to ask when evaluating Azure Logic Apps for your work. First, does your project involve integrating multiple systems? Second, do you need low latency? Third, does your process include complex logic? Fourth, are there connectors for all the systems you need to access?
-:::image-end:::
+:::image type="complex" source="../media/decide-whether-to-use-logic-apps-flowchart.png" alt-text="Flowchart shows key questions to ask when evaluating Azure Logic Apps for your work." lightbox="../media/decide-whether-to-use-logic-apps-flowchart.png":::

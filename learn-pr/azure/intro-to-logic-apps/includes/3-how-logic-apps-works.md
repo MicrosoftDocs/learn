@@ -4,7 +4,7 @@ Now that we know the basics of Azure Logic Apps, let's see how the service works
 
 A *connector* is a component that provides an interface to a service or system in the form of *operations*. For example, the X connector lets you send and retrieve tweets, while the Office 365 Outlook connector lets you manage your email, calendar, and contacts. Azure Logic Apps provides 1000+ prebuilt connectors that you can use to create your workflows.
 
-A connector uses a service's REST or SOAP API to do the actual work. When you use a connector in your logic app workflow, the connector calls the service's underlying API for you. So, a connectors is basically a wrapper around an API.
+A connector uses a service's REST or SOAP API to do the actual work. When you use a connector in your logic app workflow, the connector calls the service's underlying API for you. So, a connector is basically a wrapper around an API.
 
 The following illustration shows the X connector and the use of the X REST API.
 
@@ -14,7 +14,7 @@ The following illustration shows the X connector and the use of the X REST API.
 
 You can write custom connectors to access services that don't have prebuilt connectors. These services must have a REST or SOAP API, which isn't surprising because a connector is just a wrapper around an API.
 
-To create a custom connector, you first generate an OpenAPI or Postman description for the API. You then use that API description to create a custom connector resource in the Azure portal. You can give your connector a name, an icon, and a description for each operation. The following illustration shows an example of the process. Notice that there's no coding involved.
+To create a custom connector, you first generate an OpenAPI description for the API. You then use that API description to create a custom connector resource in the Azure portal. You can give your connector a name, an icon, and a description for each operation. The following illustration shows an example of the process. Notice that there's no coding involved.
 
 :::image type="content" source="../media/custom-connector.png" alt-text="Diagram shows the steps to create a custom connector for a service that has a REST API." lightbox="../media/custom-connector.png":::
 

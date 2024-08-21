@@ -4,7 +4,7 @@ Let's start with a few definitions and a quick tour around the core features of 
 
 A *business process* is often a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification.
 
-One scenario at our shoe company is monitoring social media for the reactions to a new product. The sequence of tasks are the following:
+One scenario at our shoe company is monitoring social media for the reactions to a new product. This business process includes the following sequence of tasks:
 
 - Detect tweets about the product.
 - Analyze the sentiment.
@@ -17,7 +17,7 @@ These steps happen in a specific order, so you often describe them as a flowchar
 - Processing steps that do most of the work.
 - A conditional operator that makes a decision.
 
-:::image type="content" source="../media/social-media-monitor-workflow.png" alt-text="Diagram shows detailed flowchart for how a fictional shoe company processes tweets written about their product." lightbox="../media/social-media-monitor-workflow.png":::
+:::image type="content" source="../media/social-media-monitor-workflow.png" alt-text="Diagram shows flowchart for how a fictional shoe company processes tweets about their product." lightbox="../media/social-media-monitor-workflow.png":::
 
 ## What is Azure Logic Apps?
 
