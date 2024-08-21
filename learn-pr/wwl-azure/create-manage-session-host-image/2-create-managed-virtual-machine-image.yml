@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-manage-session-host-image.create-managed-vm-image
+uid: learn.wwl.create-manage-session-host-image.create-managed-virtual-machine-image
 title: Create a golden image in Azure
 metadata:
   title: Create a golden image in Azure
