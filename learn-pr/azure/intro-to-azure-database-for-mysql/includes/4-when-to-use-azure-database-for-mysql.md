@@ -20,7 +20,8 @@ For many organizations, the decision to move their MySQL database is about addre
 
 ### Analyze administrative effort
 
-Administrative considerations for each hosting modelm appear in the following table.
+Administrative considerations for each hosting model appear in the following table.
+
 
 | Hosting model | Administrative effort |
 | --- | --- |
