@@ -1,4 +1,4 @@
-As part of your evaluation of Azure Stack HCI volume-related features, you intend to explore the functionality that would provide disaster recovery based on stretched clusters. To accomplish this, you intend to set up a cluster that spans two locations and configure their volumes with synchronous replication. This will provide automatic failover in case of a failure in the primary location. You realize that it’s possible to script this configuration with PowerShell, but to simplify the setup you decided to use Windows Admin Center instead.
+As part of your evaluation of Azure Stack HCI volume-related features, you intend to explore the functionality that would provide disaster recovery based on stretched clusters. To accomplish this, you intend to set up a cluster that spans two locations and configure their volumes with synchronous replication. This will provide automatic failover in case of a failure in the primary location. You realize that it’s possible to script this configuration with PowerShell, but to simplify the setup you decide to use Windows Admin Center instead.
 
 ## Describe considerations for stretched volumes
 
@@ -31,9 +31,9 @@ To create a stretched volume and set up its replication by using Windows Admin C
 1. Enter a name for the volume, and then from the **Resiliency** drop-down list, select the intended resiliency level.
 1. In the **Size on HDD** box, specify the size of the volume (for example, **5 TB**), and then select **Create**.
 
-In the details pane of the Windows Admin Center **Volumes** page you should be able to verify that a data disk and a log disk were created in the primary location, and that corresponding data and log replica disks were created in the secondary location. 
+In the details pane of the Windows Admin Center **Volumes** page you should be able to verify that a data disk and a log disk were created in the primary location. The corresponding data and log replica disks were created in the secondary location.
 
-Another way to verify the resulting functionality is to open the **Storage Replica** pane from the **Tools** menu, and then in the **Partnerships** section, locate the replication partnership corresponding to the stretched volume replication.
+Another way to verify the resulting functionality is to open the **Storage Replica** pane from the **Tools** menu. Then, in the **Partnerships** section, locate the replication partnership corresponding to the stretched volume replication.
 
 > [!NOTE]
 > If you intend to use bidirectional replication, configure two sets of data and volume disks, one per location.
