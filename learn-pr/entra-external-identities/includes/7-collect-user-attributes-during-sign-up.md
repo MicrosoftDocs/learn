@@ -2,7 +2,8 @@
 
 [User attributes](/entra/external-id/customers/how-to-define-custom-attributes) are values collected from the user during self-service sign-up. In the user flow settings, you can select from a set of built-in user attributes you want to collect from customers. You can also create custom user attributes and add them to your user flow during sign-up. On the sign-up page, the user enters the information, and it's stored with their profile in your directory. For the purposes of the online groceries website, we'll use a combination of built-in attributes and a custom attribute called **special diet**.
 
-You'll need at least the [External ID User Flow Attribute Administrator](/entra/identity/role-based-access-control/permissions-reference#external-id-user-flow-attribute-administrator) directory role to configure user attributes to be collected during sign-up.
+> [!NOTE]
+> You'll need at least the [External ID User Flow Attribute Administrator](/entra/identity/role-based-access-control/permissions-reference#external-id-user-flow-attribute-administrator) directory role to configure user attributes to be collected during sign-up.
 
 [Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
 

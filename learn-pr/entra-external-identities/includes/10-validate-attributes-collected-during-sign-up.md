@@ -2,7 +2,8 @@
 
 The custom authentication extension supports the [on attribute collection submit](/entra/identity-platform/custom-extension-attribute-collection?context=%2Fentra%2Fexternal-id%2Fcustomers%2Fcontext%2Fcustomers-context&tabs=start-continue%2Csubmit-continue) event. This event allows you to perform validation on attributes collected from the user during sign-up. For our groceries website, we'll validate the **City** name against a list of **countries** compiled in the custom authentication extension REST API. Also, if the city contains **block**, Microsoft Entra External ID will show a **block page**. If the city contains **modify**, Microsoft Entra External ID will modify some of the attributes (display name and city.)
 
-You'll need at least the [Authentication Extensibility Administrator](/entra/identity/role-based-access-control/permissions-reference#authentication-extensibility-administrator) directory role to configure validation of attributes collected during sign-up. **This role is a privileged role**. [Please read about best practices for working with privileged roles](/entra/identity/role-based-access-control/privileged-roles-permissions?tabs=admin-center#best-practices-for-using-privileged-roles).
+> [!NOTE]
+> You'll need at least the [Authentication Extensibility Administrator](/entra/identity/role-based-access-control/permissions-reference#authentication-extensibility-administrator) directory role to configure validation of attributes collected during sign-up. **This role is a privileged role**. [Please read about best practices for working with privileged roles](/entra/identity/role-based-access-control/privileged-roles-permissions?tabs=admin-center#best-practices-for-using-privileged-roles).
 
 > [!TIP]
 > You can also view an example of a .NET C# Web API that demonstrates how to use Microsoft Entra External ID's custom authentication extension for various events [here](https://github.com/microsoft/woodgrove-auth-api).

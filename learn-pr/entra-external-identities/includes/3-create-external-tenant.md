@@ -5,11 +5,7 @@ You'll need to create a tenant with external configuration in the [Microsoft Ent
 > [!NOTE]
 > You'll need at least the [Tenant Creator](/entra/identity/role-based-access-control/permissions-reference#tenant-creator) directory role to create an external tenant. [Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
 
-[Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
-
 ::: zone pivot="microsoft-entra-admin-center"
-
-
 
 #### If you don't have an Azure subscription
 

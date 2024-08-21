@@ -2,7 +2,8 @@
 
 [Multifactor authentication (MFA)](/entra/external-id/customers/how-to-multifactor-authentication-customers) protects consumer identities by prompting them for a second verification method. Microsoft Entra Conditional Access brings signals together, to make decisions, and enforce security policies. For our groceries website, we'll enforce a Conditional Access policy that prompts for MFA. The Conditional Access policy targets all users without any condition.
 
-You'll need at least the [Authentication Policy Administrator](/entra/identity/role-based-access-control/permissions-reference#authentication-policy-administrator) directory role to enable multifactor authentication.
+> [!NOTE]
+> You'll need at least the [Authentication Policy Administrator](/entra/identity/role-based-access-control/permissions-reference#authentication-policy-administrator) directory role to enable multifactor authentication.
 
 [Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
 

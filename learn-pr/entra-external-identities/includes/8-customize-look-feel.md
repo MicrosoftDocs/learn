@@ -2,7 +2,8 @@
 
 After creating a new external tenant, you can customize the end-user experience. Create a custom look and feel for users signing in to your apps by configuring Company Branding settings for your tenant. With these settings, you can add your own background images, colors, company logos, and text to customize the sign-in experiences across your apps. You can create a personalized [default](/entra/external-id/customers/how-to-customize-branding-customers) sign-in experience for users who sign in. Or create a personalized [per language](/entra/external-id/customers/how-to-customize-languages-customers) sign-in experience, for a specific browser language by customizing the branding elements for that browser language.
 
-You'll need at least the [Organizational Branding Administrator](/entra/identity/role-based-access-control/permissions-reference#organizational-branding-administrator) directory role to configure branding of your flows.
+> [!NOTE]
+> You'll need at least the [Organizational Branding Administrator](/entra/identity/role-based-access-control/permissions-reference#organizational-branding-administrator) directory role to configure branding of your flows.
 
 [Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
 
