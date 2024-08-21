@@ -1,14 +1,13 @@
 ## Exercise - Create an external tenant
 
-You'll need to create a tenant with external configuration in the [Microsoft Entra admin center](https://entra.microsoft.com/) to get started. Once this external tenant is created, you can access it in both the Microsoft Entra admin center and the Azure portal.
+You'll need to create a tenant with external configuration in the [Microsoft Entra admin center](https://entra.microsoft.com/) to get started. Once this external tenant is created, you can access it in both the Microsoft Entra admin center and the Azure portal. There are two sections to this unit: *If you don't have an Azure subscription* and *If you already have an Azure subscription*. Scroll to the unit that best matches your situation.
 
-You'll need at least the [Tenant Creator](/entra/identity/role-based-access-control/permissions-reference#tenant-creator) directory role to create an external tenant.
-
-[Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
+> [!NOTE]
+> You'll need at least the [Tenant Creator](/entra/identity/role-based-access-control/permissions-reference#tenant-creator) directory role to create an external tenant. [Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
 
 ::: zone pivot="microsoft-entra-admin-center"
 
-There are two sections to this unit: *If you don't have an Azure subscription* and *If you already have an Azure subscription*. Scroll to the unit that best matches your situation.
+
 
 #### If you don't have an Azure subscription
 
