@@ -16,9 +16,9 @@ You'll need to create a tenant with external configuration in the [Microsoft Ent
 If you don't have an Azure subscription, you can create a trial tenant for free.
 
 > [!IMPORTANT]
-> At the end of the free trial period, extensions are not offered and your free trial tenant will be disabled and deleted if there is no Azure subscription added. You can always come back and register for another trial using the same link [aka.ms/ciam-free-trial](aka.ms/ciam-free-trial), or, if you're ready to upgrade your tenant before the trial period of 30 days is over, you can [upgrade your free trial tenant](/entra/external-id/customers/quickstart-trial-setup#upgrade-your-free-trial-by-adding-an-azure-subscription).
+> At the end of the free trial period, extensions are not offered and your free trial tenant will be disabled and deleted if there is no Azure subscription added. You can always come back and register for another trial using the same link [aka.ms/ciam-free-trial](https://www.aka.ms/ciam-free-trial), or, if you're ready to upgrade your tenant before the trial period of 30 days is over, you can [upgrade your free trial tenant](/entra/external-id/customers/quickstart-trial-setup#upgrade-your-free-trial-by-adding-an-azure-subscription).
 
-1. To create a trial tenant, navigate to [aka.ms/ciam-free-trial](aka.ms/ciam-free-trial).
+1. To create a trial tenant, navigate to [aka.ms/ciam-free-trial](https://www.aka.ms/ciam-free-trial).
 1. On the **Sign in** page, use the sign-in box (label A) to enter your Outlook or Hotmail email. If you don't have any of those, you can select **Create one!** (label B) to create a new Outlook account. Alternatively, you can also sign in with your GitHub account (label C).
    ![Screenshot of Sign in to continue to Microsoft Entra, labeled with three rectangles and a spoke extending from each rectangle specifying A, B, and C.](../media/create-an-external-tenant/11.png)
 1. Once you're signed in or have created an account, you'll be redirected to Microsoft Entra admin center. This is the start of setting up your free trial tenant. To customize the tenant domain and name, as well as location, select *Change settings*.
