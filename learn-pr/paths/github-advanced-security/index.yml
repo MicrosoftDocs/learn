@@ -10,7 +10,7 @@ metadata:
   ms.topic: learning-path
 title: GitHub Advanced Security
 summary: |
-Learn how to secure your code with advanced security features at every stage of your development lifecycle. GitHub Advanced Security is an add-on to GitHub Enterprise that allows you to use security features, such as secret scanning, code scanning, and dependency management on your private repositories.
+  Learn how to secure your code with advanced security features at every stage of your development lifecycle. GitHub Advanced Security is an add-on to GitHub Enterprise that allows you to use security features, such as secret scanning, code scanning, and dependency management on your private repositories.
 
   In this learning path, you'll:
 
