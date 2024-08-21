@@ -6,7 +6,7 @@ You'll need at least the [Tenant Creator](/entra/identity/role-based-access-cont
 
 ::: zone pivot="microsoft-entra-admin-center"
 
-There are two sections to this unit: *If you don't have an Azure subscription* and *If you already have an Azure subscription*. Please scroll to the unit that best matches your situation.
+There are two sections to this unit: *If you don't have an Azure subscription* and *If you already have an Azure subscription*. Scroll to the unit that best matches your situation.
 
 #### If you don't have an Azure subscription
 
@@ -16,20 +16,20 @@ If you don't have an Azure subscription, you can create a trial tenant for free.
 > At the end of the free trial period, extensions are not offered and your free trial tenant will be disabled and deleted if there is no Azure subscription added. You can always come back and register for another trial using the same link [aka.ms/ciam-free-trial](aka.ms/ciam-free-trial), or, if you're ready to upgrade your tenant before the trial period of 30 days is over, you can [upgrade your free trial tenant](/entra/external-id/customers/quickstart-trial-setup#upgrade-your-free-trial-by-adding-an-azure-subscription).
 
 1. To create a trial tenant, navigate to [aka.ms/ciam-free-trial](aka.ms/ciam-free-trial).
-1. On the **Sign in** page, use the sign-in box (label A) to enter your Outlook or Hotmail email. If you don't have any of those, you can select **Create one!** (label B) to create a new Outlook account. Alternatively, you can also sign in with your Github account (label C).
+1. On the **Sign in** page, use the sign-in box (label A) to enter your Outlook or Hotmail email. If you don't have any of those, you can select **Create one!** (label B) to create a new Outlook account. Alternatively, you can also sign in with your GitHub account (label C).
    ![Screenshot of Sign in to continue to Microsoft Entra, labeled with three rectangles and a spoke extending from each rectangle specifying A, B, and C.](../media/create-an-external-tenant/11.png)
-1. Once you are signed in or have created an account, you will be redirected to Microsoft Entra admin center. This is the start of setting up your free trial tenant. To customize the tenant domain and name, as well as location, select *Change settings*.
+1. Once you're signed in or have created an account, you'll be redirected to Microsoft Entra admin center. This is the start of setting up your free trial tenant. To customize the tenant domain and name, as well as location, select *Change settings*.
    ![Screenshot of "Change settings" highlighted.](../media/create-an-external-tenant/12.png)
-1. You will see the following fields are customizable for your free trial tenant:
+1. You'll see the following fields are customizable for your free trial tenant:
   - **Tenant name:** you can include your company name and the fact that this is a test external tenant. For example, *Woodgrove CIAM Dev*
-  - **Domain name:** for best practices, it is good to include the purpose of the tenant. For example, if your developer team is trying out the product with a possibility to upgrade later, you might want to add *dev* after your company name, like this: *woodgrove-ciam-dev*.
+  - **Domain name:** for best practices, it's good to include the purpose of the tenant. For example, if your developer team is trying out the product with a possibility to upgrade later, you might want to add *dev* after your company name, like this: *woodgrove-ciam-dev*.
   - **Location:** Specify the location for this trial tenant.
   ![Screenshot of "Change settings" showing editable fields tenant name, domain name, and location highlighted.](../media/create-an-external-tenant/13.png)
-1. When you are done, check the checkbox to agree to Microsoft Customer Agreement and Privacy Statement, then select **Continue**. It will take a few minutes for the next step to launch.
+1. When you're done, check the checkbox to agree to Microsoft Customer Agreement and Privacy Statement, then select **Continue**. It will take a few minutes for the next step to launch.
   ![Screenshot of the check box for agreeing to the Microsoft Customer Agreement and Privacy Statement checked, and the Continue button highlighted with red boxes.](../media/create-an-external-tenant/14.png)
 1. You may encounter a dialogue twice that asks if you want to leave the site. Select **Leave** twice. This happens because the Microsoft Entra admin center is trying to leave the free trial setup experience and launch the *get started guide* titled *Sign in your users in 3 easy steps*.
   ![Screenshot of "Leave site?" dialogue open above the loading screen for Microsoft Entra admin center, highlighted. A button in the dialogue labeled "Leave" is also highlighted.](../media/create-an-external-tenant/15.png)
-1. The *Sign in your users in 3 easy steps* guide, also known as *get started guide*, has launched. You can select how you would like your customers to sign in and the branding they will see.
+1. The *Sign in your users in 3 easy steps* guide, also known as *get started guide*, has launched. You can select how you would like your customers to sign in and the branding they'll see.
   ![Screenshot of "Sign in your users in 3 easy steps" guide with fields "How would you like your customers to sign in" and "Select options to customize the look and feel" highlighted.](../media/create-an-external-tenant/16.png)
 1. You can scroll down to view a preview of your sign-in page. When you're done, select **Continue**.
   ![Screenshot of "Preview of your sign-in page" and a button labeled Continue highlighted.](../media/create-an-external-tenant/17.png)
@@ -41,7 +41,7 @@ If you don't have an Azure subscription, you can create a trial tenant for free.
   ![Screenshot of get started guide with a button labeled Continue highlighted.](../media/create-an-external-tenant/20.png)
 1. (This step is optional) Finally, you can add your sign-in experience to a sample app. Select from the options *Single Page Application (SPA)*, *Web application*, *Desktop app*, and *Mobile app*.
   ![Screenshot of Select your app type section highlighted.](../media/create-an-external-tenant/21.png)
-1. (This step is optional) Depending on the app type you selected earlier, you can view languages to choose from. Under *Set up and run the sample app*, you have the option to download your sample app and run the code in your environment. Select **Continue** when you are done downloading the sample code you need.
+1. (This step is optional) Depending on the app type you selected earlier, you can view languages to choose from. Under *Set up and run the sample app*, you have the option to download your sample app and run the code in your environment. Select **Continue** when you're done downloading the sample code you need.
   ![Screenshot of "Select your language" and "Set up and run the sample app" sections highlighted.](../media/create-an-external-tenant/22.png)
 
 #### If you already have an Azure subscription
