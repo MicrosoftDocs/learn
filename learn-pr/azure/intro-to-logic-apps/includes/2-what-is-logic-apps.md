@@ -1,4 +1,4 @@
-Let's start with a few definitions and a quick tour around the core features of the Azure Logic Apps service. This overview should help you see whether Azure Logic Apps might be a good fit for your scenario.
+Let's start with a few definitions and a quick tour around the core features in Azure Logic Apps. This overview helps you determine whether Azure Logic Apps might be a good fit for your business scenario.
 
 ## What is a business process?
 
@@ -11,7 +11,7 @@ One scenario at our shoe company is monitoring social media for the reactions to
 - Store a link to positive tweets.
 - Email customer service for negative tweets.
 
-These steps happen in a specific order, so you often describe them as a flowchart. The following illustration shows a sample flowchart for the social media monitoring process. Notice that three types of operations exist: 
+These steps happen in a specific order, so you can often describe them as a flowchart. The following illustration shows a sample flowchart for the social media monitoring process. Notice that three types of operations exist: 
 
 - An event that starts the flow.
 - Processing steps that do most of the work.
@@ -33,10 +33,8 @@ The power of Azure Logic Apps comes from the diversity of prebuilt components an
 
 You build your workflow from the services that you use in your business process. You can connect the components in any pattern or order that you need. You can add decision making and control components to your workflow by adding conditions and loops. The following illustration shows how you can combine external services to implement the social media monitor workflow.
 
-:::image type="complex" source="../media/service-use.png" alt-text="Diagram shows the mapping of a tweet analysis business process to a logic app workflow." lightbox="../media/service-use.png":::
-Diagram showing a flowchart for a business process and a logic app workflow that implements that process. For each step in the business process, there's a corresponding component used in the logic app workflow to implement it. For example, the process uses the X component to watch for tweets about a new product.
-:::image-end:::
+:::image type="content" source="../media/service-use.png" alt-text="Diagram shows the mapping of a tweet analysis business process to a logic app workflow." lightbox="../media/service-use.png":::
 
 The Azure Logic Apps model is extensible. If no prebuilt component exists for the service you need, you can create your own. You can also run custom code in Azure Functions, which you can call from your workflow.
 
-If we had to use one word to describe the goal of Azure Logic Apps, that word is *integration*. Azure Logic Apps helps you join disparate services to implement a workflow. Your job is to use the workflow designer to arrange the components into the sequence you need. For most logic app, you don't need to write any code, and you can your workflow up and running in minutes.
+If we had to use one word to describe the goal of Azure Logic Apps, that word is *integration*. Azure Logic Apps helps you join disparate services to implement a workflow. Your job is to use the workflow designer to arrange the components into the sequence you need. For most workflows, you don't have to write any code, so you can get a workflow ready and running in minutes.
