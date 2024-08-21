@@ -62,7 +62,7 @@ Suppose a system flow is composed of an application component, Azure App Service
 |API|App Service plan|App Services|Health status|
 |---|---|---|---|
 |Maximum latency < 30ms |CPU % < 70%</br> HTTP Queue Length < 5|Response Time < 200ms</br>HTTP Server Errors < 2| ![Composite healthy state shown as green.](../media/healthy.svg)
-|Maximum latency < 30ms|CPU % < 90%</br> HTTP Queue Length < 5|**Response Time < 500ms**</br>HTTP Server Errors < 2|![Composite degraded state shown as yellow.](../media/degraded.svg)
+|Maximum latency < 30ms|CPU % < 90%</br> HTTP Queue Length < 5|Response Time < 500ms</br>HTTP Server Errors < 2|![Composite degraded state shown as yellow.](../media/degraded.svg)
 | Maximum latency > 30ms |CPU % > 90%</br>  HTTP Queue Length > 5 </br>|Response Time > 500ms</br> HTTP Server Errors > 2 |![Composite unhealthy state shown as red.](../media/unhealthy.svg)
 
 The health score for a user flow should be represented by the lowest score across all mapped components. For system flows, apply appropriate weights based on business criticality. Between the two flows, financially significant or customer-facing user flows should be prioritized.
