@@ -3,13 +3,13 @@ uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure
 metadata:
   title: Explore relational database services in Azure
   description: "This content is a part of Explore relational database services in Azure."
-  ms.date: 03/15/2024
+  ms.date: 08/21/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
-  ms.service: sql-database
+  ms.service: azure-sql-database
   ai-usage: human-only
 title: Explore relational database services in Azure
 summary: Microsoft Azure provides multiple services for relational databases. You can choose the relational database management system that's best for your needs, and host relational data in the cloud.
