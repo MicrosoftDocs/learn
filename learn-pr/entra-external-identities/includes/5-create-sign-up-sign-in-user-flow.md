@@ -22,9 +22,15 @@ You'll need at least the [External ID User Flow Administrator](/entra/identity/r
     ![Screenshot of Applications blade for the user flow titled SignUpSignIn that highlights a button in the toolbar titled Add application.](../media/create-a-sign-up-and-sign-in-user-flow/7.png)
 1. Select the application from the list. Or use the search box to find the application, and then select it. Choose **Select**.
     ![Screenshot of Select application pane that opens to the right and highlights an application selected titled Woodgrove Groceries. The button titled Select at the bottom is highlighted.](../media/create-a-sign-up-and-sign-in-user-flow/8.png)
-1. **Well done!** Your user flow is successfully created and the application is linked to the user flow.
-    ![Screenshot of an application titled Woodgrove Groceries showing up as an application associated with the user flow titled SignUpSignIn.](../media/create-a-sign-up-and-sign-in-user-flow/9.png)
+1. The application is now linked to the user flow. Select **Run user flow** to preview the experience.
+    ![Screenshot of an application titled Woodgrove Groceries showing up as an application associated with the user flow titled SignUpSignIn. A button labeled "Run user flow" is highlighted.](../media/create-a-sign-up-and-sign-in-user-flow/9.png)
+1. In the *Run user flow* pane that opens to the right, make sure that the correct **Application** and **Reply URL** are selected. Then, select **Run user flow**. 
+    ![Screenshot of Run user flow pane that opens to the right, with fields Application and Reply URL highlighted. At the bottom, a button labeled Run user flow is also highlighted.](../media/create-a-sign-up-and-sign-in-user-flow/10.png)
+1. **Well done!** You successfully created a user flow and linked an application! 
+    > [!TIP]
+    > You can always use the **Run user flow** button to preview the sign in experience.
     *When users sign in to the groceries website, they'll come across the sign-in and sign-up experience configured in the user flow.*
+    ![Screenshot of sign in flow preview.](../media/create-a-sign-up-and-sign-in-user-flow/11.png)
 
 ::: zone-end
 
