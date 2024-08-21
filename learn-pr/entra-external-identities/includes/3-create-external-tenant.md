@@ -70,7 +70,7 @@ If you don't have an Azure subscription, you can create a trial tenant for free.
 ::: zone pivot="microsoft-graph-api"
 
 > [!NOTE]
-> Before you start, please note that for creating an external tenant, you will be using **Azure REST API** and not Microsoft Graph. Please check the links to relevant documentation that will allow you to run the REST API directly from your browser without needing to develop and register an application. The following screenshot shows how to run a particular API. ![Screenshot of the button titled Try it highlighted in the right side of the HTTP request code header. The HTTP request checks the availability and validity of a domain name for the tenant.](../media/create-an-external-tenant/10.png)
+> Before you start, please note that for creating an external tenant, you will be using **Azure REST API** and not Microsoft Graph. You can follow [the link to check the availability and validity of a domain name for the tenant](/rest/api/activedirectory/check-name-availability/check-name-availability?view=rest-activedirectory-2023-05-17-preview&tabs=HTTP) to run the REST API directly from your browser. The following screenshot shows where to select after following the link and also demonstrates how to run a particular API. ![Screenshot of the button titled Try it highlighted in the right side of the HTTP request code header. The HTTP request checks the availability and validity of a domain name for the tenant.](../media/create-an-external-tenant/10.png)
 
 #### 1. Check domain name availability
 
