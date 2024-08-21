@@ -50,9 +50,7 @@ Finally, let's look at the Twilio connector. Most connectors offer both triggers
 
 To build a workflow, you choose operations, specifically, a trigger and actions. A workflow must start with a trigger. You can then follow the trigger with as many actions as you need to implement your workflow. The following diagram shows the trigger and actions used in the social media monitoring app:
 
-:::image type="complex" source="../media/social-media-connectors.png" alt-text="Diagram shows the trigger and actions in the social media monitoring app. Each operation shows the associated external service.":::
-Diagram shows the trigger and actions in the social media monitoring logic app. The diagram shows the X trigger named "When a new tweet is posted", which launches the logic app workflow. The trigger is followed by three actions: 'Detect sentiment' from the Text Analytics service, 'Insert row' from SQL Server, and 'Send email' from Outlook.com.
-:::image-end:::
+:::image type="content" source="../media/social-media-connectors.png" alt-text="Diagram shows the trigger and actions in the social media monitoring app. Each operation shows the associated external service.":::
 
 ## How do triggers and actions work together?
 

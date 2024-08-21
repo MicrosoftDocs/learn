@@ -47,4 +47,4 @@ Azure Logic Apps could work for all these tasks, and the online sales process is
 
 The following flowchart summarizes the key questions to ask when you're considering using Azure Logic Apps.
 
-:::image type="complex" source="../media/decide-whether-to-use-logic-apps-flowchart.png" alt-text="Flowchart shows key questions to ask when evaluating Azure Logic Apps for your work." lightbox="../media/decide-whether-to-use-logic-apps-flowchart.png":::
+:::image type="content" source="../media/decide-whether-to-use-logic-apps-flowchart.png" alt-text="Flowchart shows key questions to ask when evaluating Azure Logic Apps for your work." lightbox="../media/decide-whether-to-use-logic-apps-flowchart.png":::
