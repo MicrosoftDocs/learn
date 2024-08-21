@@ -15,7 +15,7 @@ When the build finishes, all resources are deleted, except for the staging resou
 
 For multiple examples, step-by-step guides, configuration templates, and solutions, go to the [VM Image Builder GitHub repository](https://github.com/azure/azvmimagebuilder).
 
-### Security
+## Security
 
 To help keep your images secure, VM Image Builder:
 
@@ -35,8 +35,6 @@ VM Image Builder is designed to work with all Azure Marketplace base operating s
 ## Confidential VM and Trusted Launch Support
 
 VM Image Builder has extended support for TrustedLaunchSupported and ConfidentialVMSupported images, with certain constraints. Below is the list of constraints:
-
-Expand table
 
 | **SecurityType**        | **Support status**                         |
 | ----------------------- | ------------------------------------------ |
