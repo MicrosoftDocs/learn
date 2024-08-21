@@ -31793,6 +31793,46 @@
       "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/9-knowledge-check.md",
       "redirect_url": "/training/modules/create-manage-session-host-image/",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/2-migrate-app-containerization-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/3-exercise-setup-host-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/4-exercise-discover-aspnet-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/5-exercise-build-app-container-image.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/6-deploy-app-container-aks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
     }
   ]
 }
