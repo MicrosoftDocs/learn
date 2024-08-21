@@ -85,4 +85,4 @@ The following diagram shows how to use the *condition* action in the workflow fo
 
 The workflow designer is a graphical tool for creating your workflows. The designer provides a canvas surface where you build a workflow by adding a trigger and actions. For example, the social media monitoring app uses the trigger named **When a new tweet is posted**, a control action known as a *condition*, and actions named **Detect sentiment**, **Insert row**, and **Send an email**. The following screenshot shows the social media monitoring workflow in the designer:
 
-:::image type="complex" source="../media/social-media-complete-designer.png" alt-text="Screenshot shows the social media monitoring app in the workflow designer." lightbox="../media/social-media-complete-designer.png":::
+:::image type="content" source="../media/social-media-complete-designer.png" alt-text="Screenshot shows the social media monitoring app in the workflow designer." lightbox="../media/social-media-complete-designer.png":::
