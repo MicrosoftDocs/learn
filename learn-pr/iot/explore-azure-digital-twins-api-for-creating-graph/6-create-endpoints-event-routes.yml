@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.create-endpoints-and-event-routes
 title: Create endpoints and event routes
-interactive: bash
 metadata:
   title: Create endpoints and event routes
   description: Use the Azure Digital Twins APIs to create an endpoint, create an event route, and check their statuses.

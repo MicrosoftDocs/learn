@@ -6,6 +6,7 @@ metadata:
   ms.date: 2/6/2024
   author: camsoper
   ms.author: casoper
+  manager: coxford
   ms.topic: module
   ms.service: aspnet-core
 title: Create a .NET Aspire project

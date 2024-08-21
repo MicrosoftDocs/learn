@@ -24795,16 +24795,6 @@
       "redirect_url": "https://learn.microsoft.com/training/paths/implement-data-streaming-with-asa/"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/10-knowledge-check.md",
-      "redirect_url": "/training/modules/install-configure-apps-session-host/11-knowledge-check",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/11-summary.md",
-      "redirect_url": "/training/modules/install-configure-apps-session-host/12-summary",
-      "redirect_document_id": true
-    },
-    {
       "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/5-demonstration-configure-apps-for-users.md",
       "redirect_url": "/training/modules/install-configure-apps-session-host/6-demonstration-configure-apps-for-users",
       "redirect_document_id": true
@@ -31457,6 +31447,351 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/8-summary.md",
       "redirect_url": "/training/modules/define-microsoft-ai-strategy-manufacturing/7-summary",
+      "redirect_document_id": false
+   },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/2-monitor-azure-virtual-desktop-azure-monitor.md",
+      "redirect_url": "/training/modules/monitor-manage-performance-health/3-monitor-azure-virtual-desktop-azure-monitor",
+      "redirect_document_id": false
+   }, 
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/3-log-analytics-workspace-for-azure-monitor.md",
+      "redirect_url": "/training/modules/monitor-manage-performance-health/",
+      "redirect_document_id": false
+   },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/4-monitor-azure-virtual-desktop-azure-advisor.md",
+      "redirect_url": "/training/modules/monitor-manage-performance-health/5-monitor-azure-virtual-desktop-azure-advisor",
+      "redirect_document_id": false
+   },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/5-how-to-resolve-azure-advisor-recommendations.md",
+      "redirect_url": "/training/modules/monitor-manage-performance-health/",
+      "redirect_document_id": false
+   },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/6-diagnose-graphics-performance-issues.md",
+      "redirect_url": "/training/modules/monitor-manage-performance-health/",
+      "redirect_document_id": false
+   },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/7-knowledge-check.md",
+      "redirect_url": "/training/modules/monitor-manage-performance-health/",
+      "redirect_document_id": false
+   },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/8-summary.md",
+      "redirect_url": "/training/modules/monitor-manage-performance-health/9-summary",
+      "redirect_document_id": false
+   },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/10-troubleshoot-application-issues-user-input-delay.md",
+      "redirect_url": "/training/modules/install-configure-apps-session-host/",
+      "redirect_document_id": false
+   },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/11-knowledge-check.md",
+      "redirect_url": "/training/modules/install-configure-apps-session-host/",
+      "redirect_document_id": false
+   },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/12-summary.md",
+      "redirect_url": "/training/modules/install-configure-apps-session-host/11-summary",
+      "redirect_document_id": false
+   },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/2-msix-app-attach.md",
+      "redirect_url": "/training/modules/install-configure-apps-session-host/",
+      "redirect_document_id": false
+   },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/3-how-msix-app-attach-works.md",
+      "redirect_url": "/training/modules/install-configure-apps-session-host/",
+      "redirect_document_id": false
+   },
+      {
+      "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/4-setup-file-share-for-msix-app-attach.md",
+      "redirect_url": "/training/modules/install-configure-apps-session-host/",
+      "redirect_document_id": false
+   },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/5-upload-msix-images-azure-netapp-files-azure-virtual-desktop.md",
+      "redirect_url": "/training/modules/install-configure-apps-session-host/",
+      "redirect_document_id": false
+   },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/6-demonstration-configure-apps-for-users.md",
+      "redirect_url": "/training/modules/install-configure-apps-session-host/",
+      "redirect_document_id": false
+   },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/7-onedrive-sync-app-virtual-desktops.md",
+      "redirect_url": "/training/modules/install-configure-apps-session-host/",
+      "redirect_document_id": false
+   },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/8-microsoft-teams-azure-virtual-desktop.md",
+      "redirect_url": "/training/modules/install-configure-apps-session-host/",
+      "redirect_document_id": false
+   },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/9-publish-apps-azure-virtual-desktop.md",
+      "redirect_url": "/training/modules/install-configure-apps-session-host/",
+      "redirect_document_id": false
+   },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-sustainability/2-explore-ai-goals-challenges-sustainability.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-sustainability/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-sustainability/3-discover-ai-sustainability.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-sustainability/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-finance/2-discover-ai-finance.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-finance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-healthcare/2-explore-ai-goals-challenges-healthcare.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-healthcare/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-healthcare/3-identify-ai-sciences-pharmaceuticals-healthcare-sector.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-healthcare/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-healthcare/4-identify-ai-health-providers.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-healthcare/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-image-builder/2-what-is-azure-image-builder.yml",
+      "redirect_url": "/training/modules/intro-to-azure-image-builder/3-how-does-azure-image-builder-work",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-image-builder/includes/2-what-is-azure-image-builder.md",
+      "redirect_url": "/training/modules/intro-to-azure-image-builder/3-how-does-azure-image-builder-work",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/10-knowledge-check.md",
+      "redirect_url": "/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/11-summary.md",
+      "redirect_url": "/training/modules/leverage-ai-tools/6b-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/7-discover-business-value-applying-devops.md",
+      "redirect_url": "/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/8-explore-potential-azure-cognitive-services.md",
+      "redirect_url": "/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/9-discover-business-value-azure-open-ai-service.md",
+      "redirect_url": "/training/modules/leverage-ai-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-retail/2-explore-ai-goals-challenges-retail.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-retail/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-retail/3-discover-ai-use-cases-retail.md",
+      "redirect_url": "/training/modules/define-microsoft-ai-strategy-retail/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/2-storage-fslogix-components.md",
+      "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/3-configure-storage-fslogix-components.md",
+      "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/4-configure-storage-accounts.md",
+      "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/5-create-file-shares.md",
+      "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/6-configure-disks.md",
+      "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/index.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/1-introduction.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/2-understand-azure-data-ecosystem.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/3-explore-modern-analytics-solution-architecture.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/4-knowledge-check.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/5-summary.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/index.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/1-introduction.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/2-explore-data-team-roles-responsibilities.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/3-review-tasks-tools-for-data-analysts.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/4-scale-analytics-azure-synapse-analytics-power-bi.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/5-scale-analytics-center-excellence.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/6-knowledge-check.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/7-summary.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/implement-manage-analytics-environment/index.md",
+      "redirect_url": "/fabric/admin/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/introduction-data-analytics-azure/index.md",
+      "redirect_url": "/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/model-query-explore-data-for-azure-synapse/index.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+       {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/2-role-based-access-control-for-azure-virtual-desktop.md",
+      "redirect_url": "/training/modules/manage-access/4-role-based-access-control-virtual-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/3-plan-implement-azure-roles-role-based-access-control.md",
+      "redirect_url": "/training/modules/manage-access/5-plan-implement-azure-roles-role-based-access-control",
+      "redirect_document_id": false
+    },
+      {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/4-use-azure-virtual-desktop-with-intune.md",
+      "redirect_url": "/training/modules/manage-access/8-use-azure-virtual-desktop-with-intune",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/5-configure-screen-capture-protection-for-azure-virtual-desktop.md",
+      "redirect_url": "/training/modules/manage-access/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/6-knowledge-check.md",
+      "redirect_url": "/training/modules/manage-access/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/7-summary.md",
+      "redirect_url": "/training/modules/manage-access/10-summary",
+      "redirect_document_id": false
+    },
+      {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/10-summary.md",
+      "redirect_url": "/training/modules/create-manage-session-host-image/9-summary",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/3-modify-session-host-image.md",
+      "redirect_url": "/training/modules/create-manage-session-host-image/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/4-plan-for-image-update-management.md",
+      "redirect_url": "/training/modules/create-manage-session-host-image/5-plan-image-update-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/5-create-shared-image-gallery-portal.md",
+      "redirect_url": "/training/modules/create-manage-session-host-image/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/6-create-azure-virtual-desktop-image-image-builder.md",
+      "redirect_url": "/training/modules/create-manage-session-host-image/4-create-virtual-desktop-image-image-builder",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/7-install-office-master-image.md",
+      "redirect_url": "/training/modules/create-manage-session-host-image/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/8-install-language-packs-azure-virtual-desktop.md",
+      "redirect_url": "/training/modules/create-manage-session-host-image/7-install-language-packs-azure-virtual-desktop",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/9-knowledge-check.md",
+      "redirect_url": "/training/modules/create-manage-session-host-image/",
       "redirect_document_id": false
     }
   ]

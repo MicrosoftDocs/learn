@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-healthcare.opportunities-ai-life-sciences-pharmacology-healthcare
+title: Opportunities for AI in life sciences, pharmacology, and healthcare
+metadata:
+  title: Opportunities for AI in life sciences, pharmacology, and healthcare
+  description: "Opportunities for AI in life sciences, pharmacology, and healthcare"
+  ms.date: 08/14/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-opportunities-ai-life-sciences-pharmacology-healthcare.md)]

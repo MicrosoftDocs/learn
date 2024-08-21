@@ -5,6 +5,7 @@ metadata:
   description: In this module, you'll learn how to deploy a .NET Aspire solution to testing, staging, and production environments.
   author: camsoper
   ms.author: casoper
+  manager: coxford
   ms.topic: module
   ms.service: dotnet-aspire
   ms.custom:

@@ -4,7 +4,7 @@ title: Exercise - high availability and disaster recovery - Azure Arc-enabled SQ
 metadata:
   title: Exercise - high availability and disaster recovery - Azure Arc-enabled SQL Managed Instance
   description: Implement high availability and disaster recovery for Azure Arc-enabled SQL Managed Instance.
-  ms.date: 12/26/2022
+  ms.date: 08/06/2024
   author: MikeRayMSFT
   ms.author: mikeray
   ms.topic: unit
