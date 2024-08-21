@@ -6,6 +6,8 @@ You'll need at least the [Authentication Extensibility Administrator](/entra/ide
 
 > [!TIP]
 > You can also view an example of a .NET C# Web API that demonstrates how to use Microsoft Entra External ID's custom authentication extension for various events [here](https://github.com/microsoft/woodgrove-auth-api).
+
+[Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
  
 ::: zone pivot="microsoft-entra-admin-center"
 

@@ -4,6 +4,8 @@
 
 You'll need at least the [External ID User Flow Attribute Administrator](/entra/identity/role-based-access-control/permissions-reference#external-id-user-flow-attribute-administrator) directory role to configure user attributes to be collected during sign-up.
 
+[Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
+
 ::: zone pivot="microsoft-entra-admin-center"
 
 1. We start by creating the **special diet** custom user attribute. To do so, sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) and browse to **External Identities** > **Overview**. Then, select **Custom user attributes**.

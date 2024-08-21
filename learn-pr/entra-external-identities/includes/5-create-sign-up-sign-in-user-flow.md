@@ -4,6 +4,8 @@ A [user flow](/entra/external-id/customers/how-to-user-flow-sign-up-sign-in-cust
 
 You'll need at least the [External ID User Flow Administrator](/entra/identity/role-based-access-control/permissions-reference#external-id-user-flow-administrator) directory role to create user flows.
 
+[Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
+
 ::: zone pivot="microsoft-entra-admin-center"
 
 1. To create a sign-up and sign-in user flow, sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) and browse to **Identity** > **External Identities**.
