@@ -4,7 +4,7 @@ In this module, you'll build on an existing architecture to support a high-avail
 
 Contoso Shoes migrated their on-premises deployments to the cloud two years ago. While they've seen improvements in operations, it's been challenging to keep their availability and uptime within the service level agreement (SLA). There's also an upcoming product launch that's expected to create a spike in traffic. Previous launches led to outages because the system wasn't able to meet the increase in load, which resulted in significant financial loss.
 
-Based on that experience, the organization is now committed to increase the system's overall reliability and observability. They've *updated the availability targets* for the existing application, making it *mission critical*
+Based on that experience, the organization is now committed to increase the system's overall reliability and observability. They've *updated the availability targets* for the existing application, making it *mission critical*.
 
 The organization needs an improved design that can *survive a failure of one or more components* in the architecture and even *withstand a complete regional outage* while providing more system-health insights to their operations. They've explored the possibility of adding another region. Contoso would also like to improve the customer experience by *serving clients faster in a region geographically closer to them*.
 
