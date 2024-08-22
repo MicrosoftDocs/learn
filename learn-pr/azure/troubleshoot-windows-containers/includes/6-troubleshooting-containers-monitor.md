@@ -46,7 +46,7 @@ The debugging process can be split in two: application/container issues or clust
    Webpage of the Azure portal showing the Container Insights pane. The Containers tab, the selected container, and the options on the Live Events tab are highlighted.
 :::image-end:::
 
-One way you can check your running container is going to the **Insights** tab on the left side blade, **Containers** view, and selecting your container. Navigating here, you gain quick information over the container, its logs, And events. For example, if you enabled Log Monitor on an IIS instance running on AKS, you can see the IIS events directly on the Azure portal.
+One way you can check your running container is going to the **Insights** tab on the left side blade, **Containers** view, and selecting your container. Navigating here, you gain quick information over the container, its logs, and events. For example, if you enabled Log Monitor on an IIS instance running on AKS, you can see the IIS events directly on the Azure portal.
 
 ## Control plane
 

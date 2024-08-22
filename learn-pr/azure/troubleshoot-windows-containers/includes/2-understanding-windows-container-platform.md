@@ -10,7 +10,7 @@ However, Windows client can run containers for development and testing only. For
 
 ## Windows container architecture
 
-When troubleshooting a Windows container environment, it's important to keep in mind the different levels of interactions that take place. From when you specify a command (start a container) from the GUI or CLI all the way down to the OS.
+When troubleshooting a Windows container environment, it's important to keep in mind the different levels of interactions that take place, from when you specify a command (start a container) from the GUI or CLI all the way down to the OS.
 
 :::image type="content" source="../media/1-windows-container-architecture.png" alt-text="Diagram that shows the components that are called when the Orchestrator requests an action on the OS.":::
 
