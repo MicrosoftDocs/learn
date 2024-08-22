@@ -3837,6 +3837,11 @@ achievements:
   
     This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/certifications/exams/dp-500).
   iconUrl: /training/achievements/model-query-explore-data-for-azure-synapse.svg
+- uid: learn.azure.handle-transient-errors-in-your-app.badge
+  type: badge
+  title: Handle transient errors in your app
+  summary: Use application logging and retry policies to handle transient errors to make your apps more resilient.
+  iconUrl: /training/achievements/handle-transient-errors-in-your-app.svg
 - uid: learn.azure.migrate-aspnet-app-azure-kubernetes-service.badge
   type: badge
   title: Containerize and migrate ASP.NET applications to Azure Kubernetes Service
