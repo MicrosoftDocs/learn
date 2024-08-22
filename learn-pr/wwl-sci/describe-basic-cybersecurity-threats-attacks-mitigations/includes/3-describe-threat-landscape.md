@@ -2,7 +2,7 @@ You've now learned about cyberattacks, cybercriminals, and cybersecurity. But yo
 
 ### What is the threat landscape?
 
-Whether an organization is big or small, the entirety of the digital landscape with which it interacts represents an entry point for a cyberattack. These can include:
+Whether an organization is large or small, the entirety of the digital landscape with which it interacts represents an entry point for a cyberattack. These can include:
 
 - Email accounts
 - Social media accounts
@@ -34,9 +34,9 @@ Security breaches come in different forms, including the following:
 
 ### Social engineering attacks
 
-It is common to think about security breaches as exploiting some flaw or vulnerability in a technology service or piece of equipment. Likewise, you might believe that security breaches only happen because of vulnerabilities in technology.  But that’s not the case.  Attackers can use social engineering attacks to exploit or manipulate users into granting them unauthorized access to a system.
+It's common to think about security breaches as exploiting some flaw or vulnerability in a technology service or piece of equipment. Likewise, you might believe that security breaches only happen because of vulnerabilities in technology. But that’s not the case. Attackers can use social engineering attacks to exploit or manipulate users into granting them unauthorized access to a system.
 
-In social engineering, impersonation attacks happen when an unauthorized user (the attacker), aims to gain the trust of an authorized user by posing as a person of authority to access a system from some nefarious activity. For example, a cybercriminal might pretend to be a support engineer to trick a user into revealing their password to access an organization’s systems.  
+In social engineering, impersonation attacks happen when an unauthorized user (the attacker), aims to gain the trust of an authorized user by posing as a person of authority to access a system from some nefarious activity. For example, a cybercriminal might pretend to be a support engineer to trick a user into revealing their password to access an organization’s systems. 
 
 ### Browser attacks
 
