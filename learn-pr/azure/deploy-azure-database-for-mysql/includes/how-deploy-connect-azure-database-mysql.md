@@ -1,6 +1,6 @@
 A general understanding of Azure Database for MySQL - Flexible Server capabilities can help you identify the optimal deployment settings for your web-based application's development, testing, and production environments. Key decisions, such as selecting the target Azure region, zone-redundant high availability, and backup redundancy, should be made during the design stage. Other decisions, like allocating compute and storage resources, are driven by usage patterns that change over time.
 
-The previous units of this module should aid in your design and planning phase. Now, let's focus on how to deploy and connect to your Azure Database for MySQL flexible werver when you're ready to implement it as part of your own solution.
+The previous units of this module should aid in your design and planning phase. Now, let's focus on how to deploy and connect to your Azure Database for MySQL flexible server when you're ready to implement it as part of your own solution.
 
 Understanding the dependencies between various configuration settings is key to making the right choices during deployment. Specifically, it's important to note:
 
@@ -45,7 +45,7 @@ You can use several different methods to provision an Azure Database for MySQL f
 
   - Backups. The backup retention period and the backup geo-redundancy option.
 
-    :::image type="content" source="../media/how-deploy-connect-azure-database-mysql/3-deploy-mysql-high-availability-backups.png" alt-text="Screenshot of the High availability and Backups sections of the Compute + Storage Azure portal Flexible Server deployment page.' border.":::
+    :::image type="content" source="../media/how-deploy-connect-azure-database-mysql/3-deploy-mysql-high-availability-backups.png" alt-text="Screenshot of the High availability and Backups sections of the Compute + Storage Azure portal Flexible Server deployment page.":::
 
 - The **Networking** page allows you to specify the connectivity method. Depending on your choice, you can also allow public access from any Azure service, configure firewall rules, set up virtual network integration, or create private endpoints.
 
