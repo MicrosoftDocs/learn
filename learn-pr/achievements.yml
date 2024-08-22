@@ -3837,3 +3837,8 @@ achievements:
   
     This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/certifications/exams/dp-500).
   iconUrl: /training/achievements/model-query-explore-data-for-azure-synapse.svg
+- uid: learn.azure.migrate-aspnet-app-azure-kubernetes-service.badge
+  type: badge
+  title: Containerize and migrate ASP.NET applications to Azure Kubernetes Service
+  summary: In this module, you'll learn to use the Azure Migrate App Containerization tool to containerize and migrate ASP.NET applications to Azure Kubernetes Service.
+  iconUrl: /training/achievements/generic-badge.svg
