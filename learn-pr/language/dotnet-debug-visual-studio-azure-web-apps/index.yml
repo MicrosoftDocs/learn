@@ -7,7 +7,7 @@ metadata:
   ms.date: 05/29/2024
   author: alexwolfmsft
   ms.author: alexwolf
-  manager: jmartens
+  manager: mijacobs
   ms.topic: module
   ms.service: azure-app-service
 title: Remotely debug ASP.NET Core apps hosted on Azure App Service using Visual Studio
