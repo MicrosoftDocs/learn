@@ -31823,6 +31823,66 @@
       "source_path_from_root": "/learn-pr/wwl-azure/create-configure-host-pools-session-hosts/8-summary.md",
       "redirect_url": "/training/modules/create-configure-host-pools-session-hosts/10-summary",
       "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/10-configure-windows-defender-firewall-advanced-security.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/11-plan-implement-quality-service-azure-virtual-desktop.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+         {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/12-knowledge-check.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/13-summary.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/12-summary",
+      "redirect_document_id": false
+    },
+      {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/2-implement-azure-virtual-network-connectivity.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/3-manage-connectivity-internet-premises-networks.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/4-understand-azure-virtual-desktop-network-connectivity.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/5-implement-manage-network-security.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/6-configure-azure-virtual-desktop-session-hosts-using-azure-bastion.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/7-monitor-troubleshoot-network-connectivity.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/8-plan-implement-remote-desktop-protocol-shortpath.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/9-configure-remote-desktop-protocol-shortpath-managed-networks.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
     }
   ]
 }
