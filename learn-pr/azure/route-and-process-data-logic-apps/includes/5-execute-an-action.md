@@ -31,7 +31,7 @@ This action type helps you run operations or process data that you pull into you
 Let's examine an example. If you've used X, you might be familiar with their URL pattern that links to a specific tweet:
 
 ```language-plaintext
-https://twitter.com/<username>/status/<id>
+https://x.com/<username>/status/<id>
 ```
 
 You can use this link type in your social media monitoring app. For example, you might want to store the URL link in a database so that you can access the tweet later. Or, you might want to include the URL link in an email so that your coworkers can review the tweet in the original format.
@@ -39,16 +39,16 @@ You can use this link type in your social media monitoring app. For example, you
 Unfortunately, the data returned by the X trigger doesn't include the complete URL link. However, the data does include the username in the **TweetedBy** property and the ID in the **TweetId** property. So, you can use the **Compose** action to combine these pieces into the URL. Conceptually, the operation has this logical format:
 
 ```language-plaintext
-Compose: "https://twitter.com/" + [TweetedBy] + "/status/" + [TweetId]
+Compose: "https://x.com/" + [TweetedBy] + "/status/" + [TweetId]
 ```
 
 ### Alter control flow
 
-This action type helps you manage the data flow through your logic app by using constructs such as conditional statements and loops. The social media monitoring app will use a control action that creates decision branches, based on whether the tweet sentiment is positive or negative. We'll show how this action type works and discuss all the control actions later in this module.
+This action type helps you manage the data flow through your logic app by using constructs such as conditional statements and loops. The social media monitoring app uses a control action that creates decision branches, based on whether the tweet sentiment is positive or negative. We show how this action type works and discuss all the control actions later in this module.
 
 ## Action parameters and return values
 
-Consider action operations as function calls that have *parameters* and *return values*. Action parameters let you pass values into the operation. Some operations use both required and optional paramters. For example, the Azure AI services action named **Sentiment** has a required parameter called **Text**. This parameter represents the string that you want to analyze. The **Sentiment** action also has an optional parameter named **Language** that lets you provide a hint about the language used for the **Text** parameter.
+Consider action operations as function calls that have *parameters* and *return values*. Action parameters let you pass values into the operation. Some operations use both required and optional parameters. For example, the Azure AI services action named **Sentiment** has a required parameter called **Text**. This parameter represents the string that you want to analyze. The **Sentiment** action also has an optional parameter named **Language** that lets you provide a hint about the language used for the **Text** parameter.
 
 Action return values are the results from the operation. For example, the **Sentiment** action returns a numeric score between `0` and `1`. Scores close to `1` indicate positive sentiment, while scores close to `0` indicate negative sentiment. The following diagram summarizes the data flow for the **Sentiment** action as used by our example social media monitoring app:
 
@@ -74,4 +74,4 @@ While you can manually add static parameter values, the designer has a different
 
 :::image type="content" source="../media/dynamic-content-designer.png" alt-text="Screenshot shows the workflow designer with the dynamic content list. The example shows the dynamic content list with the X trigger outputs, such as the **Created at**, **Description**, and **Location** dynamic parameter values. You can select a dynamic parameter from the list to use in an action for your workflow." border="false":::
 
-The workflow designer makes adding dynamic content so easy, you don't need to remember parameter names and return values, nor do you need to worry about syntax details.
+The workflow designer makes adding dynamic content easy. You don't need to remember parameter names and return values, nor do you need to worry about syntax details.

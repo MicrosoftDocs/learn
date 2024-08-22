@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.custom: engagement-fy23
   ms.service: azure-functions
-  manager: mijacobs
+  manager: susanpotter
 title: Create serverless logic with Azure Functions
 summary: Azure Functions allows developers to host business logic that can be executed without managing or provisioning infrastructure. 
 abstract:  | 
