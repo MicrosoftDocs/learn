@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fine-tune-azure-databricks.how-to-fine-tune
+title: When and how to fine-tune models?
+metadata:
+  title: When and how to fine-tune models?
+  description: "When and how to fine-tune models?"
+  ms.date: 08/20/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-how-to-fine-tune.md)]
