@@ -45,10 +45,10 @@ units:
 - learn.wwl.implement-manage-networking-for-azure-virtual-desktop.remote-desktop-protocol-bandwidth
 - learn.wwl.implement-manage-networking-for-azure-virtual-desktop.remote-desktop-protocol-shortpath-azure-virtual-desktop
 - learn.wwl.implement-manage-networking-for-azure-virtual-desktop.remote-desktop-protocol-shortpath-azure-virtual-desktop-scenarios
-- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.manage-connectivity-internet-premises-networks
+- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.manage-connectivity-to-internet-premises-networks
 - learn.wwl.implement-manage-networking-for-azure-virtual-desktop.configure-remote-desktop-protocol-shortpath-managed-networks
 - learn.wwl.implement-manage-networking-for-azure-virtual-desktop.plan-implement-quality-service-azure-virtual-desktop
-- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.monitor-troubleshoot-network-watcher
+- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.monitor-and-troubleshoot-network-connectivity
 - learn.wwl.implement-manage-networking-for-azure-virtual-desktop.knowledge-check
 - learn.wwl.implement-manage-networking-for-azure-virtual-desktop.summary
 badge:
