@@ -9,6 +9,9 @@ In Microsoft Entra External ID, an external tenant represents your directory of 
 
 ::: zone pivot="microsoft-entra-admin-center"
 
+> [!WARNING]
+> When creating admin accounts, we recommend assigning users the [least privileged role](/entra/identity/role-based-access-control/permissions-reference) necessary, ensuring they have only the permissions needed to complete their tasks.
+
 1. To add an admin account, sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) with at least Privileged Role Administrator permissions and browse to **Identity** > **Users** > **All users**. Then, select **New user** > **Create new user**.
     ![Screenshot of Users blade with a button titled New user highlighted and one of the dropdown menu options Create new user that lets you create a new internal user in your organization highlighted.](../media/add-an-admin-account/1.png)
 1. On the **Create new user** page, enter the following information:
@@ -20,10 +23,14 @@ In Microsoft Entra External ID, an external tenant represents your directory of 
 1. Under **Properties**, you can also enter a **First name** and **Last name** along with some other properties.
     ![Screenshot of Create new user blade where one of the tabs titled "Properties" in the wizard navigation is selected. It shows properties like first name, last name, and other information that can be filled out about the user.](../media/add-an-admin-account/3.png)
 1. To add administrative permissions for the user, add them to one or more of the administrator roles in Microsoft Entra ID. Under **Assignments**, select **Add role**. Then, find the role you want to assign to this user, and choose **Select**.
+    
+    > [!WARNING]
+    > When creating admin accounts, we recommend assigning users the [least privileged role](/entra/identity/role-based-access-control/permissions-reference) necessary, ensuring they have only the permissions needed to complete their tasks.
+
     ![Screenshot of Create new user blade where the next tab in the wizard navigation titled Assignments is selected. It shows a button titled Add role highlighted. In the Directory roles pane open to the right, Security administrator role is highlighted.](../media/add-an-admin-account/4.png)
 1. To create the account, select **Create**.
     ![Screenshot of Create new user blade where the final tab in the wizard navigation titled Review and create is selected. It shows an overview of configured and assigned Basics, Properties, and Assignments for this user.](../media/add-an-admin-account/5.png)
-    ***Well done!** The admin is created and added to your customer tenant. It's preferable to have at least one admin account native to your customer tenant assigned the Global Administrator role. This account can be considered a break-glass account or emergency access account.*
+    ***Well done!** The admin is created and added to your external tenant.*
 
 ::: zone-end
 
