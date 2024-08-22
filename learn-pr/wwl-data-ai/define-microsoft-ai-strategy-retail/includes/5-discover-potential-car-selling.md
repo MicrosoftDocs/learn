@@ -2,7 +2,7 @@ Retail companies are already implementing generative AI solutions to improve the
 
 ## The organization
 
-Founded in 1993, **CarMax** is now the largest used car retailer in the United States, and have sold more than 11 million vehicles. Now, they have more than 45,000 cars available at any time.
+Founded in 1993, **CarMax** is now the largest used car retailer in the United States, and has sold more than 11 million vehicles. Now, they have more than 45,000 cars available at any time.
 
 The CarMax business model focuses on customers’ needs and innovation. It combines online, offline, and blended retail business lines. Their goal is to make the process of buying a car hassle-free and enjoyable.
 
@@ -12,8 +12,9 @@ The company’s sales greatly depend on reaching leads via **engine search resul
 
 **Car reviews** play an increasingly important role when buying a car, because leads want to read the opinion of real buyers. However, the popularity of reviews is paradoxically becoming a hindrance. There are now so many reviews that reading them for useful information is overwhelming.
 
-To solve this problem, they decided to summarize customers’ reviews. They resolved to try this approach in 5,000 car pages. At their usual pace, the process would have taken 11 years. CarMax needed to automate the process to improve productivity.
+To solve this problem, they decided to summarize customers’ reviews. They resolved to try this approach in 5,000 car pages. At their usual pace, the process would take 11 years. CarMax needed to automate the process to improve productivity.
 
+![Photograph showing smiling person driving a car.](../media/5-driving.jpg)
 
 ## The solution
 
@@ -29,4 +30,6 @@ Incorporating Azure OpenAI Service into the company’s processes has **boosted 
 
 In parallel, their search engine rankings are peaking thanks to incorporating generative AI into their marketing strategy. As a result, **more traffic** is driven to CarMax’s website.
 
-Next, let’s wrap up everything you’ve learned with a knowledge check.
+To learn more, read [CarMax puts customers first with car research tools powered by Azure OpenAI Service](https://aka.ms/carmax-customer-story).
+
+Next, let’s wrap up everything you learned with a knowledge check.

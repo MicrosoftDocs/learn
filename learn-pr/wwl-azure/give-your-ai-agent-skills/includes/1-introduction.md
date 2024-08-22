@@ -1,19 +1,18 @@
-The Semantic Kernel SDK empowers developers to interact with Large Language Models (LLMs) through plugins that run natural language prompts. However, you can also create plugins with native code! Whether it's data manipulation, complex calculations, or specialized functionality, the ability to integrate native code with LLMs can help you create versatile, feature-rich applications.
+One of the core features of the Semantic Kernel SDK is that it allows developers to combine native code with the power of large language models (LLMs). Plugins containing native functions can be used to extend the functionality of your artificially intelligent (AI) agent. These native functions can perform a wide range of tasks, from complex calculations to personalized recommendations.
 
-Suppose you want to create an artificially intelligent (AI) disc jockey that can tailor a user's music listening experience. You can use native functions to interact with a music library, add songs to a user's "Recently Played" list, and recommend songs and concerts. With native functions, your music listening service can now act as an AI agent with skills to enhance the user's experience.
+Suppose you want to create a smart music service that can provide a personalized listening experience. You can use native functions to interact with a music library, add songs to a user's "Recently Played" list, and then use a semantic prompt to recommend songs and concerts.
 
-In this module, you learn how native functions work in the Semantic Kernel SDK. You can understand how native functions can accomplish customized tasks, effectively giving your AI agent a "skill." You also practice how to combine prompts with native functions to build intelligent applications.
+In this module, you learn how native functions work in the Semantic Kernel SDK. You can understand how native functions accomplish customized tasks, effectively giving your AI agent a "skill."
 
 ## Learning objectives
 
 - Understand native functions in the Semantic Kernel SDK.
 - Learn how to create native function plugins.
-- Learn how to combine prompts with native functions.
 
 ## Prerequisites
 
 - Experience programming in C#.
 - Visual Studio Code IDE installed.
 - Familiarity with Azure and the Azure portal.
-- Access to Azure Open AI Services.
+- Access to Azure OpenAI Services.
 - Experience using the Semantic Kernel SDK to create prompts.

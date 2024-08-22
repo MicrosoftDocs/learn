@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: learning-path
-  ms.service: data-factory
 title: Data integration at scale with Azure Data Factory or Azure Synapse Pipeline
 prerequisites: |
   The following pre-requisite should be completed:
@@ -35,6 +34,5 @@ modules:
 - learn.wwl.orchestrate-data-movement-transformation-azure-data-factory
 - learn.wwl.execute-existing-ssis-packages-azure-data-factory
 - learn.wwl.operationalize-your-azure-data-factory-pipelines
-- learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory
 trophy:
   uid: learn.wwl.data-integration-scale-azure-data-factory.trophy

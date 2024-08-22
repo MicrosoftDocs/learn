@@ -34,7 +34,7 @@ By default, the Service Principal doesn't have permissions to access your Azure 
      - **URL**: Keep default ```<https://management.azure.com/>```
      - **Monitoring Interval (Seconds)**: Should be at least 300
      - **Subscription ID**: Azure subscription ID
-     - **Microsoft Entra tenant ID**: ID of the Active Directory tenant
+     - **Microsoft Entra Tenant ID**: ID of the Active Directory tenant
      - **Proxy host**: Hostname of the proxy if SAP LaMa needs a proxy to connect to the internet
      - **Proxy port**: TCP port of the proxy
 10. Select **Test Configuration** to validate your input. You should see the message **Connection successful: Connection to Microsoft cloud was successful.**

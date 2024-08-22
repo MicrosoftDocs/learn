@@ -1,8 +1,10 @@
+Applying sensitivity labels in Microsoft 365 is essential for securing sensitive information, enabling organizations to protect critical data like financial details and strategic plans. These labels ensure that only authorized individuals have access, maintaining high data security standards while allowing seamless collaboration.
+
 In our global consultancy firm, the marketing team is preparing to launch a new service that uses data analysis and AI to offer unique insights to our clients. This initiative involves handling sensitive information, including financial details and strategic plans. Sensitivity labels in Microsoft 365 are essential tools at your disposal to ensure this data remains secure.
 
 As part of this effort, you're tasked with deploying sensitivity labels throughout our Microsoft 365 environment for the new service launch. This project requires teamwork from around the world, including remote workers. Your main goals are to keep client information safe and make sure teams can work together smoothly.
 
-This unit guides you on how to:
+Here you learn to:
 
 - **Identify the function of sensitivity labels**: Describe how sensitivity labels secure critical data in Microsoft 365 environments like Teams, Groups, and SharePoint Sites.
 - **Apply sensitivity labels for your organization**: Demonstrate the process to enable and implement sensitivity labels across Microsoft 365 services for data protection.
@@ -64,7 +66,3 @@ After sensitivity labels are enabled for containers, you can then configure prot
 Now that we've covered the basics of using sensitivity labels in our Microsoft 365 tools, it's clear these steps are just the beginning of ensuring our firm's information is well protected and compliant.
 
 Next, we explore how to effectively manage sensitivity labels in Office applications, ensuring documents and emails are protected.
-
-## Knowledge check
-
-Select the best response to the question, then select **Check your answers**.

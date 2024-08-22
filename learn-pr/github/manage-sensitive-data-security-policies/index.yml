@@ -3,6 +3,8 @@ uid: learn.github.manage-sensitive-data-security-policies
 metadata:
   title: Manage sensitive data and security policies within GitHub
   description: Familiarize yourself with GitHub's basic security tools, which prepare repositories for secure development and industry-standard response to threats.
+  ms.service: github
+  manager: mkluck
   ms.date: 02/02/2024
   author: rmcmurray
   ms.author: robmcm

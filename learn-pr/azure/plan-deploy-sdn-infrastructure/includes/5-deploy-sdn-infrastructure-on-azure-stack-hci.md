@@ -1,10 +1,10 @@
-You’ve addressed all of the Azure Stack HCI SDN prerequisites and are eager to proceed with its deployment. As part of your evaluation, you want to identify the optimal deployment methodology that you can test in your proof-of-concept environment.
+You addressed all of the Azure Stack HCI Software Defined Networking (SDN) prerequisites and are eager to proceed with its deployment. As part of your evaluation, you want to identify the optimal deployment methodology that you can test in your proof-of-concept environment.
 
 ## Deploy Azure Stack HCI SDN
 
 There are four primary methods of deploying Azure Stack HCI SDN:
 
-- SDN Express PowerShell module (**SDNExpressModule.psm1**)-based script (**SDNExpress.ps1**). This option provides the most flexibility and you can use it to fully automate your deployment. It supports deployment of the entire SDN fabric including Network Controller, Software Load Balancer Multiplexer, and Gateway VMs. To automate your deployment, you can use an input configuration file that includes the values of deployment parameters. Such as, prefixes of IP logical subnets, VLAN IDs, deployment credentials, target Azure Stack HCI cluster nodes, and BGP peering settings. You can download the module and sample configuration files as per your requirements (**Traditional VLAN networks.psd1**, **Virtualized networks.psd1**, **Software Load Balancer.psd1**, and **SDN Gateways.psd1**) from the SDN Express GitHub repository to a host from which you initiate the deployment. Alternatively, you have the option of running the **SDNExpress.ps1** interactively. This approach offers a graphical interface guiding you through deployment. The script also allows you to save the settings you specified as a configuration file, which you can then use to automate another deployment.
+- SDN Express PowerShell module (**SDNExpressModule.psm1**)-based script (**SDNExpress.ps1**). This option provides the most flexibility and you can use it to fully automate your deployment. It supports deployment of the entire SDN fabric including Network Controller, Software Load Balancer Multiplexer, and Gateway VMs. To automate your deployment, you can use an input configuration file that includes the values of deployment parameters. Such as, prefixes of IP logical subnets, VLAN IDs, deployment credentials, target Azure Stack HCI cluster nodes, and Border Gateway Protocol (BGP) peering settings. You can download the module and sample configuration files as per your requirements (**Traditional VLAN networks.psd1**, **Virtualized networks.psd1**, **Software Load Balancer.psd1**, and **SDN Gateways.psd1**) from the SDN Express GitHub repository to a host from which you initiate the deployment. Alternatively, you have the option of running the **SDNExpress.ps1** interactively. This approach offers a graphical interface guiding you through deployment. The script also allows you to save the settings you specified as a configuration file, which you can then use to automate another deployment.
 
 The following screenshot depicts the **Welcome** page of the SDN Express deployment wizard.
 
@@ -17,7 +17,7 @@ The following screenshot depicts the **Review** page of the SDN Express deployme
 > [!NOTE]
 > You can also use the SDN Express PowerShell module in your own scripts for customized deployments or for scaling out an existing SDN infrastructure.
 
-- VMM. This option simplifies SDN deployments through the VMM graphical interface by using service templates.
+- Virtual Machine Monitor (VMM). This option simplifies SDN deployments through the VMM graphical interface by using service templates.
 - The VMMExpress scripts. This option allows you to customize and automate deployment of the SDN fabric (similar to SDNExpress) by using the VMM PowerShell module. It's dependent on an existing VMM environment, with VMM-managed Azure Stack HCI cluster nodes. It combines the benefits of a scripted deployment with the VMM simplified management experience.
 
     > [!NOTE]

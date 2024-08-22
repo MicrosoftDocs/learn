@@ -2,8 +2,8 @@
 uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin
 metadata:
   title: Build an end to end data governance and master data management stack with Microsoft Purview and CluedIn.
-  description: "This training module will guid you to build a complete master data management and data governance stack end to end with Microsoft Purview and CluedIn. It includes developing golden records, deduplication, data lineage, and data quality strategies."
-  ms.date: 11/29/2023
+  description: "This training module guides you in how to build a complete master data management and data governance stack end to end with Microsoft Purview and CluedIn. It includes developing golden records, deduplication, data lineage, and data quality strategies."
+  ms.date: 05/28/2024
   author: whhender
   ms.author: whhender
   ms.topic: module
@@ -12,12 +12,12 @@ title: Build an end to end data governance and master data management stack with
 summary: |
   Deploy a data technology stack that provides data governance, data quality, data lineage, data enrichment, and data standardization layers to your Azure ecosystem. Combine the power of Microsoft Purview, Azure Data Factory, and CluedIn into a powerhouse of data governance and data quality. This data pipeline takes raw data and surfaces high quality and ready-for-insight data to downstream systems and users.
   >[!NOTE]
-  >This is a **_Guided Project_** module where you complete an end-to-end project by following step-by-step instructions.
+  >This module is a **Guided Project** module where you complete an end-to-end project by following step-by-step instructions.
   >Steps to deploy an environment are included.
 abstract: |
    In this module, you'll:
     - Deploy a complete data governance and master data management environment.
-    - Set up automated scans on Azure Data Lake Store Gen2 (ADLS Gen2) into Microsoft Purview.
+    - Set up automated scans on Azure Data Lake Storage (ADLS) Gen2 into Microsoft Purview.
     - Set up automated data pipelines from Azure Data Factory to CluedIn through assets registered in Microsoft Purview.
     - Stream data from CluedIn to ADLS Gen2.
     - Standardize, clean, deduplicate, and enrich your data in CluedIn.

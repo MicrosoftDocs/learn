@@ -37,6 +37,6 @@ Delivery plans are fully interactive, supporting the following tasks:
 
 For more information about Azure Boards, see:
 
- -  [Azure Boards documentation \| Microsoft Docs](/azure/devops/boards).
- -  [Reasons to start using Azure Boards \| Microsoft Docs](/azure/devops/boards/get-started/why-use-azure-boards).
+ -  [Azure Boards documentation \| Microsoft Learn](/azure/devops/boards).
+ -  [Reasons to start using Azure Boards \| Microsoft Learn](/azure/devops/boards/get-started/why-use-azure-boards).
  -  [GitHub and Azure Boards](/azure/devops/boards/github).

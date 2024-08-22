@@ -17,17 +17,9 @@ To check the rehydration priority while the rehydration operation is underway, c
 
 ## Copy an archived blob to an online tier
 
-You can use either the **Copy Blob** or **Copy Blob from URL** operation to copy the blob. When you copy an archived blob to a new blob in an online tier, the source blob remains unmodified in the archive tier. You must copy the archived blob to a new blob with a different name or to a different container. You can't overwrite the source blob by copying to the same blob.
+The first option for moving a blob from the archive tier to an online tier is to copy the archived blob to a new destination blob that is in either the hot or cool tier. You can use the [Copy Blob](/rest/api/storageservices/copy-blob) operation to copy the blob. When you copy an archived blob to a new blob in an online tier, the source blob remains unmodified in the archive tier. You must copy the archived blob to a new blob with a different name or to a different container. You can't overwrite the source blob by copying to the same blob.
 
-Copying an archived blob to an online destination tier is supported within the same storage account only. You can't copy an archived blob to a destination blob that is also in the archive tier.
-
-The following table shows the behavior of a blob copy operation, depending on the tiers of the source and destination blob.
-
-| Blob copy destination | Hot tier source | Cool tier source | Archive tier source |
-|--|--|--|--|
-| Hot tier  | Supported | Supported | Supported within the same account. Requires blob rehydration. |
-| Cool tier | Supported | Supported | Supported within the same account. Requires blob rehydration. |
-| Archive tier | Supported | Supported | Unsupported |
+Rehydrating an archived blob by copying it to an online destination tier is supported within the same storage account only for service versions earlier than 2021-02-12. Beginning with service version 2021-02-12, you can rehydrate an archived blob by copying it to a different storage account, as long as the destination account is in the same region as the source account. 
 
 ## Change a blob's access tier to an online tier
 

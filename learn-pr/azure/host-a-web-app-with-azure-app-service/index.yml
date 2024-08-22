@@ -7,9 +7,9 @@ metadata:
   author: cephalin
   ms.author: cephalin
   ms.topic: module-standard-task-based
-  ms.service: app-service
+  ms.service: azure-app-service
   ms.subservice: web-apps
-  manager: mijacobs
+  manager: susanpotter
 title: Host a web application with Azure App Service
 summary: Azure App Service enables you to build and host web applications in the programming language of your choice without managing infrastructure. Learn how to create a website through the hosted web app platform in Azure App Service.
 abstract: |

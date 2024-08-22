@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/29/2023
+  ms.date: 08/22/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
@@ -45,7 +45,7 @@ quiz:
       explanation: "Correct. The three principles of Zero Trust are verified explicitly, assume breach, and use least privileged access."
     - content: "Spear-fishing, pretexting, and baiting."
       isCorrect: false
-      explanation: "Incorrect. spear-fishing, pretexting, and baiting are forms of social engineering."
+      explanation: "Incorrect. Spear-fishing, pretexting, and baiting are forms of social engineering."
     - content: "Credential stuffing, key logging, spear-fishing."
       isCorrect: false
       explanation: "Incorrect. Credential stuffing, key logging, and spear-fishing are forms of authentication attack."

@@ -71,7 +71,7 @@ Next, build the modal component in your project with an appropriate CSS file to 
     * **Cancel** and **Confirm** buttons, with labels you can configure and click events you can manage.
     * You can set the inner content of the component through the `ChildContent` parameter.
     * You can control the display state of the dialog with the `Show` parameter.
-    
+
 1. To provide default formatting for the component, add the following CSS to the *Modal.razor.css* file:
 
     ```css
@@ -162,7 +162,7 @@ With the modal component now residing in the *FirstClassLibrary* project, add a 
     dotnet new blazor -o MyBlazorApp -f net8.0
     ```
 
-1. In the *MyBlazorApp* project, add a reference to the *FirstClassLibrary* project either by using the Visual Studio Add Reference feature or by running the following command from the *MyBlazorServer* folder:
+1. In the *MyBlazorApp* project, add a reference to the *FirstClassLibrary* project either by using the Visual Studio Add Reference feature or by running the following command from the *MyBlazorApp* folder:
 
     ```dotnetcli
     dotnet add reference ../FirstClassLibrary

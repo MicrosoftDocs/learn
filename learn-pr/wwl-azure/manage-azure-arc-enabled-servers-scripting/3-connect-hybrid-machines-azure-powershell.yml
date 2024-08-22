@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-arc-enabled-servers-scripting.connect-hybrid-machines-azure-powershell
+title: Connect hybrid machines to Azure by using PowerShell
+metadata:
+  title: Connect hybrid machines to Azure by using PowerShell
+  description: "Connect hybrid machines to Azure by using PowerShell"
+  ms.date: 06/11/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+    - N/A
+    - devx-track-azurepowershell
+durationInMinutes: 18
+content: |
+  [!include[](includes/3-connect-hybrid-machines-azure-powershell.md)]

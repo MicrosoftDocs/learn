@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-security-operations.design-threat-detection-coverage
-title: Design threat detection coverage
+title: Design and evaluate threat detection coverage by using MITRE ATT&CK matrices, including Cloud, Enterprise, Mobile, and ICS
 metadata:
-  title: Design threat detection coverage
-  description: "SC-100 preparatory unit on the topic: design threat detection coverage."
+  title: Design and evaluate threat detection coverage by using MITRE ATT&CK matrices, including Cloud, Enterprise, Mobile, and ICS
+  description: "SC-100 preparatory unit on the topic: Design and evaluate threat detection coverage by using MITRE ATT&CK matrices, including Cloud, Enterprise, Mobile, and ICS."
   ms.date: 3/15/2023
   author: hrasheed-msft
   ms.author: hrasheed

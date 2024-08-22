@@ -1,13 +1,12 @@
-Large Language Models excel at understanding language, classifying text, and performing sentiment analysis. Their contextual understanding enables large language models (LLM) to generate relevant text for various tasks. However, they don't yet have the ability to retrieve information from the internet or external sources. Using native functions, you can run code to perform operations, or retrieve information from external sources and pass it to the LLM to generate text.
-
-For this exercise, you create a native function that simulates adding a song to a user's "Recently Played" list. Let's get started!
+In this exercise, you create a native function that adds a song to a user's "Recently Played" list. Later, you can use the list of recently played songs to provide customized recommendations. Let's get started!
 
 ## Prepare your development environment
 
 For these exercises, a starter project is available for you to use. Use the following steps to set up the starter project:
 
 > [!IMPORTANT]
-> You must have .NET Framework 8.0 installed and a Github account to complete these steps.
+> You must have Visual Studio Code and the .NET Framework 8.0 installed to complete these steps.
+> You may also need to install the Visual Studio Code C# Dev Kit extension.
 
 1. Open Visual Studio Code.
 
@@ -29,7 +28,7 @@ For these exercises, a starter project is available for you to use. Use the foll
 
     You should see a "Program.cs" file.
 
-1. Open the **Program.cs** file and update the following variables with your Azure Open AI Services deployment name, API key, endpoint.
+1. Open the **Program.cs** file and update the following variables with your Azure OpenAI Services deployment name, API key, endpoint.
 
     ```csharp
     string yourDeploymentName = "";
@@ -44,8 +43,6 @@ Now you're ready to begin the exercise. Good luck!
 1. Create a new folder in the 'Project' directory and name it 'Plugins.'
 
 1. In the 'Plugins' folder, create a new file 'MusicLibrary.cs'
-
-    First, create some quick functions to get and add songs to the user's "Recently Played" list.
 
 1. Enter the following code:
 
@@ -62,7 +59,7 @@ Now you're ready to begin the exercise. Good luck!
         public static string GetRecentPlays()
         {
             string dir = Directory.GetCurrentDirectory();
-            string content = File.ReadAllText($"{dir}/recentlyplayed.txt");
+            string content = File.ReadAllText($"{dir}/data/recentlyplayed.txt");
             return content;
         }
     }
@@ -80,7 +77,7 @@ Now you're ready to begin the exercise. Good luck!
         [Description("The song genre")] string genre)
     {
         // Read the existing content from the file
-        string filePath = "recentlyplayed.txt";
+        string filePath = "data/recentlyplayed.txt";
         string jsonContent = File.ReadAllText(filePath);
         var recentlyPlayed = (JsonArray) JsonNode.Parse(jsonContent);
 
@@ -92,9 +89,8 @@ Now you're ready to begin the exercise. Good luck!
         };
 
         recentlyPlayed.Insert(0, newSong);
-        File.WriteAllText(filePath, 
-            JsonSerializer.Serialize(recentlyPlayed,
-                new JsonSerializerOptions { WriteIndented = true }));
+        File.WriteAllText(filePath, JsonSerializer.Serialize(recentlyPlayed,
+            new JsonSerializerOptions { WriteIndented = true }));
 
         return $"Added '{song}' to recently played";
     }
@@ -102,7 +98,9 @@ Now you're ready to begin the exercise. Good luck!
 
     In this code, you create a function accepts the artist, song, and genre as strings. In addition to the `Description` of the function, you also add descriptions of the input variables. This code reads the existing content from the file, parses it, and adds the new song to the list. Afterwards, the updated list is written back to the file. Next you'll create the 'recentlyplayed.txt' file with some sample data.
 
-1. Create a new file 'recentlyplayed.txt' in the 'M03-Project' folder, then paste the following content:
+1. Create a new folder 'data' in the 'M03-Project' folder.
+
+1. Create a new file 'recentlyplayed.txt' in the 'data' folder, then paste the following content:
 
     ```json
     [
@@ -129,7 +127,7 @@ Now you're ready to begin the exercise. Good luck!
     ]
     ```
 
-    For simplicity, this file should be in the same directory as your 'Program.cs' file. Next, let's import and invoke your new plugin!
+    Next, let's modify the list by importing and invoking your new plugin.
 
 1. Update your 'Program.cs' file with the following code:
 
@@ -150,7 +148,7 @@ Now you're ready to begin the exercise. Good luck!
     Console.WriteLine(result);
     ```
 
-    In this code, you import the `MusicLibraryPlugin` to the kernel using `ImportPluginFromType`. Then you call `InvokeAsync` with the plugin name and function name that you want to call. You also pass in the artist, song, and genre as arguments.
+    In this code, you import the `MusicLibraryPlugin` to the kernel using `ImportPluginFromType`. Then you call `InvokeAsync` with the name of the plugin you want to use and the function you want to call. You also pass in the artist, song, and genre as arguments.
 
 1. Run the code by entering `dotnet run` in the terminal.
 
@@ -160,7 +158,4 @@ Now you're ready to begin the exercise. Good luck!
     Added 'Danse' to recently played
     ```
 
-    If you open up 'recentlyplayed.txt,' you should see the new song added to the list.
-
-> [!IMPORTANT]
-> Be sure not to delete any of the code you've written so far, you'll need it for the next exercise.
+    Open up 'recentlyplayed.txt' and you should see the new song added to the list. Great work!

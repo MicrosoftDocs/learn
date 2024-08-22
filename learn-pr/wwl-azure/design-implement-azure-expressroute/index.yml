@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: expressroute
+  ms.service: azure-expressroute
 title: Design and implement Azure ExpressRoute
 summary: You learn how to design and implement Azure ExpressRoute, ExpressRoute Global Reach, ExpressRoute FastPath.
 abstract: |

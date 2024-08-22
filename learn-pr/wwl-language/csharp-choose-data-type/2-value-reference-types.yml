@@ -8,8 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.custom: N/A, devx-track-dotnet
 durationInMinutes: 8
 content: |
   [!include[](includes/2-value-reference-types.md)]

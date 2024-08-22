@@ -2,8 +2,8 @@
 uid: learn.chain-azure-functions-data-using-input-output-bindings.2-explore-input-and-output-binding-types-portal-lesson
 metadata:
   title: Explore input and output binding types
-  description: In this unit, we'll use the Azure portal to explore and understand bindings and the array of supported bindings that are available to us.
-  ms.date: 10/16/2023
+  description: In this unit, we use the Azure portal to explore and understand bindings and the array of supported bindings that are available to us.
+  ms.date: 06/06/2024
   author: ggailey777
   ms.author: glenga
   ms.topic: unit

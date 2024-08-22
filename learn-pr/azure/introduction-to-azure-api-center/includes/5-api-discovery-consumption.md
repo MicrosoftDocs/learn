@@ -1,4 +1,4 @@
-API discovery and consumption is an important part of using APIs throughout an organization.
+API discovery and consumption are an important part of using APIs throughout an organization.
 
 In this unit, you'll see how the API Center VS Code extension allows you to easily discover and consume APIs.
 
@@ -72,10 +72,10 @@ API Center portal is a website for developers and stakeholders to seamlessly dis
 
 :::image type="content" source="../media/4-contoso-apic-portal.png" alt-text="Screenshot showing the landing page of the contoso api center portal or website":::
 
-Contoso admins want a centralized and stand-alone location for all their API Consumers, both internal and external. To get started, you can use the API Center portal starter template using the following steps:
+API Platform engineers want a centralized and stand-alone location for all their API Consumers, both internal and external. To get started, you can use the API Center portal starter template using the following steps:
 
 > [!NOTE]
-> The intructions below are for deploying to Azure Static Web Apps, but you can deploy on your infrastructure of choice.
+> The instructions below are for deploying to Azure Static Web Apps, but you can deploy on your infrastructure of choice.
 
 1. Fork the [API Center reference implementation](https://github.com/Azure/APICenter-Portal-Starter) code.
 1. Create a [Static Web App resource](https://ms.portal.azure.com/#create/Microsoft.StaticApp) on Azure.

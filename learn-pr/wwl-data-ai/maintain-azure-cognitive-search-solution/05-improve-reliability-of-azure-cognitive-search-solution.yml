@@ -3,11 +3,13 @@ uid: learn.wwl.maintain-azure-cognitive-search-solution.improve-reliability-of-a
 title: Improve reliability of an Azure AI Search solution
 metadata:
   title: Improve reliability of an Azure AI Search solution
-  description: "Improve reliability of an Azure AI Search solution"
-  ms.date: 09/27/2023
+  description: Improve reliability of an Azure AI Search solution
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/27/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

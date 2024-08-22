@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Add the storage client library to your app
   description: Exercise - Add the storage client library to your app
   ms.date: 09/19/2023
-  author: tamram
-  ms.author: tamram
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java

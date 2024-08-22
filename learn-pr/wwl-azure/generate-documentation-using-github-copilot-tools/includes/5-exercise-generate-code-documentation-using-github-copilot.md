@@ -1,10 +1,10 @@
-Documenting your code is an important aspect of the software development process. Code comments help developers understand the codebase, its purpose, and how to use it.
+Documenting your code is an important aspect of the software development process. Inline documentation (code comments) help developers understand the codebase, its purpose, and how to use it.
 
-GitHub Copilot Chat can help you document your code by generating inline code comments. To generate inline documentation, you have the following options:
+GitHub Copilot Chat can help you document your code quickly and accurately. You have a few options for generating inline documentation using GitHub Copilot Chat:
 
-- Construct a natural language prompt to generate the desired documentation.
-- Enter the `/doc` command in the inline chat to generate comments that describe the selected code.
-- Use the **Generate Docs** smart action to generate comments that describe the selected code.
+- Construct your own natural language prompt that can be used to generate specific documentation.
+- Use the `/doc` command during an inline chat session to generate comments for selected code.
+- Use the **Generate Docs** smart action to generate comments for selected code.
 
 Properly documenting your code creates a more readable and maintainable codebase that's easier for other developers to understand and work with.
 
@@ -23,12 +23,6 @@ Use the following steps to complete this section of the exercise:
 1. Open the Chat view.
 
 1. To see how GitHub Copilot Chat would document the selected code, enter the following prompt:
-
-    ```output
-    generate inline code documentation for the selected code
-    ```
-
-    Or
 
     ```output
     @workspace #selection generate inline code documentation for the selected code
@@ -131,9 +125,9 @@ Use the following steps to complete this section of the exercise:
     }
     ```
 
-    The response includes suggested code comments and *a portion* of the associated code. You could manually move code comments into the actual code file.
+    The response includes suggested code comments and *a portion* of the associated code. Some of your code may be omitted for brevity. You could manually move code comments into the actual code file.
 
-    Inline chat provides a more direct way to add comments to your code.
+    Inline chat provides a more direct approach for adding comments to your code.
 
 ### Generate inline code documentation using inline chat
 
@@ -158,7 +152,9 @@ Use the following steps to complete this section of the exercise:
     > [!IMPORTANT]
     > Always review the suggested updates to your code before accepting. In the screenshot showing the generated code documentation, the method declaration has been commented out. If you discover an issue in a suggested code update, you can either discard the update or attempt to correct the issue before accepting the suggested code update.
 
-1. If your suggested update comments out the method declaration, use the Backspace key to remove the comment characters.
+1. If your suggested update comments out the method declaration, position the cursor on the code line, and then use the Backspace key to remove the comment characters.
+
+    After you backspace over the comment characters, the method declaration should be restored.
 
     ![Screenshot showing the code documentation generated with the inline chat.](../media/inline-chat-slash-doc-fixed.png)
 
@@ -188,7 +184,7 @@ Use the following steps to complete this section of the exercise:
 
 1. Once your review is complete, select **Discard**.
 
-    Rather than adding inline comments to each method individually, you can generate comments for the entire class at once.
+    Rather than adding inline comments to each method individually, you can generate comments for the entire class.
 
 1. Select all of the methods *inside* the `MainWindow` class.
 

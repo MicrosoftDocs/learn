@@ -1,7 +1,3 @@
-
-
-
-
 In this unit we're covering how to create queues and manage messages in Azure Queue Storage by showing code snippets from a .NET project.
 
 The code examples rely on the following NuGet packages:
@@ -159,3 +155,4 @@ if (queueClient.Exists())
     queueClient.Delete();
 }
 ```
+

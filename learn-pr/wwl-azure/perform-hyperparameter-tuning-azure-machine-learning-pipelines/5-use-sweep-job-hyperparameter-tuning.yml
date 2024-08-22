@@ -3,11 +3,13 @@ uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.us
 title: Use a sweep job for hyperparameter tuning
 metadata:
   title: Use a sweep job for hyperparameter tuning
-  description: "Use a sweep job for hyperparameter tuning"
-  ms.date: 09/11/2023
+  description: Use a sweep job for hyperparameter tuning
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 09/11/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 8
 content: |
   [!include[](includes/5-use-sweep-job-hyperparameter-tuning.md)]

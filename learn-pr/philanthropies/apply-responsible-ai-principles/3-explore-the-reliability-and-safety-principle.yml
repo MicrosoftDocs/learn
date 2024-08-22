@@ -4,10 +4,12 @@ title: Explore the reliability & safety principle
 metadata:
   title: Explore the reliability & safety principle
   description: This content is a part of the 'Apply responsible AI principles in learning environments' module.
-  ms.date: 03/25/2024
   author: yoosunee
   ms.author: andreapark
+  ms.date: 03/25/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/3-explore-the-reliability-and-safety-principle.md)]

@@ -20,7 +20,7 @@ The following diagram shows the topology you deploy in this unit:
 
    :::image type="content" source="../media/2-portal-cloudshell-access.png" alt-text="Screenshot of the Azure portal header with the Cloud Shell icon highlighted.":::
 
-1. Enter the following code in the Cloud Shell to define variables for this unit. You can optionally replace the `location` value with an Azure region nearer you.
+1. In the Cloud Shell, enter the following code, which defines variables for this unit. You can optionally replace the `location` value with an Azure region nearer you.
 
     ```bash
     # Variables

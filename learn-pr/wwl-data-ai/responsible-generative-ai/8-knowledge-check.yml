@@ -3,11 +3,13 @@ uid: learn.wwl.responsible-generative-ai.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your understanding of the content presented in this module."
-  ms.date: 7/13/2023
+  description: Check your understanding of the content presented in this module.
   author: graememalcolm
   ms.author: gmalc
+  ms.date: 08/01/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
 quiz:  
@@ -16,7 +18,7 @@ quiz:
     choices:  
     - content: "To make a legal case that indemnifies you from responsibility for harms caused by the solution"  
       isCorrect: false  
-      explanation: "An AI Impact Assessment does not indemnify you from responsibility for harm"  
+      explanation: "An AI Impact Assessment doesn't indemnify you from responsibility for harm"  
     - content: "To document the purpose, expected use, and potential harms for the solution"  
       isCorrect: true  
       explanation: "An AI Impact Assessment guide documents the expected use of the system and helps identify potential harms."  

@@ -14,7 +14,7 @@ OpenTelemetry consumes all the preceding telemetry, but first your cloud-native 
 |---------|---------|---------|
 |**Core API**     | [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry/README.md)      | The main library that provides the core OpenTelemetry functionality.        |
 |**Core API** | [OpenTelemetry.Extensions.Hosting](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Extensions.Hosting/README.md) | Provides extension methods for automatically starting and stopping OpenTelemetry tracing in ASP.NET Core hosts. |
-|**Instrumentation**     | [OpenTelemetry.Instrumentation.AspNetCore](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Instrumentation.AspNetCore/README.md)       | Instrumentation for ASP.NET Core applications. This package collects a great number of metrics about your app without you having to write any code.        |
+|**Instrumentation**     | OpenTelemetry.Instrumentation.AspNetCore       | Instrumentation for ASP.NET Core applications. This package collects a great number of metrics about your app without you having to write any code.        |
 |**Exporter**     |  [OpenTelemetry.Exporter.Console](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.Console/README.md)       | Exporter for the console allows the app to write out telemetry to the console.  |
 
 Many more instrumentation and exporter packages are available to include in your cloud-native app. For more information, see [.NET observability with OpenTelemetry](/dotnet/core/diagnostics/observability-with-otel). Depending on the type of app you're building, you can add the packages that are most relevant to you.

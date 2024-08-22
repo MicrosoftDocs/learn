@@ -1,6 +1,4 @@
-
-
-In this exercise you'll learn how to perform the following actions in the Azure portal:
+In this exercise you learn how to perform the following actions in the Azure portal:
 
 * Create an Azure Cosmos DB account
 * Add a database and a container
@@ -13,7 +11,7 @@ In this exercise you'll learn how to perform the following actions in the Azure 
 
 ## Create an Azure Cosmos DB account
 
-1. Log in to the [Azure portal](https://portal.azure.com).
+1. Sign-in to the [Azure portal](https://portal.azure.com).
 
 1. From the Azure portal navigation pane, select **+ Create a resource**.
 
@@ -27,6 +25,7 @@ In this exercise you'll learn how to perform the following actions in the Azure 
     * **Resource Group**: Select **Create new**, then enter *az204-cosmos-rg*.
     * **Account Name**: Enter a *unique* name to identify your Azure Cosmos 
     account. The name can only contain lowercase letters, numbers, and the hyphen (-) character. It must be between 3-31 characters in length.
+    * **Availability Zones**: Select **Disable**.
     * **Location**: Use the location that is closest to your users to give them the fastest access to the data.
     * **Capacity mode**: Select **Serverless**.
 

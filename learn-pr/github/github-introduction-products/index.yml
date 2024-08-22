@@ -3,6 +3,8 @@ uid: learn.github.github-introduction-products
 metadata:
   title: Introduction to GitHub's products
   description: Overview of GitHub's products, plans, associated features, and billing. 
+  ms.service: github
+  manager: mkluck
   ms.date: 08/21/2023
   author: rmcmurray
   ms.author: robmcm

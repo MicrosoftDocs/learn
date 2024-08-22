@@ -3,11 +3,13 @@ uid: learn.wwl.build-azure-machine-learn-custom-skill-for-azure-cognitive-search
 title: Understand how to use a custom Azure Machine Learning skillset
 metadata:
   title: Understand how to use a custom Azure Machine Learning skillset
-  description: "Understand how to use a custom Azure Machine Learning skillset."
-  ms.date: 09/27/2023
+  description: Understand how to use a custom Azure Machine Learning skillset.
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/27/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

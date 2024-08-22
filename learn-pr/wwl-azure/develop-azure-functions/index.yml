@@ -3,22 +3,30 @@ uid: learn.wwl.develop-azure-functions
 metadata:
   title: Develop Azure Functions
   description: "Learn how to create and deploy Azure Functions."
-  ms.date: 05/05/2023
+  ms.date: 07/09/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: module-standard-task-based
+  ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure-functions
+  ai-usage: human-only
 title: Develop Azure Functions
 summary: Learn how to create and deploy Azure Functions.
 abstract: |
   After completing this module, you will be able to:
-  * Explain the key components of a function and how they are structured
-  * Create triggers and bindings to control when a function runs and where the output is directed
-  * Connect a function to services in Azure
-  * Create a function by using Visual Studio Code and the Azure Functions Core Tools
+
+  -   Explain the key components of a function and how they are structured
+
+  -   Create triggers and bindings to control when a function runs and where the output is directed
+
+  -   Connect a function to services in Azure
+
+  -   Create a function by using Visual Studio Code and the Azure Functions Core Tools
 prerequisites: |
-  * You should be familiar with developer concepts and terminology.
-  * An understanding of cloud computing and some experience with the Azure portal.
+  -   You should be familiar with developer concepts and terminology.
+
+  -   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/2-develop-azure-functions.svg
 levels:
 - intermediate

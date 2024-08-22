@@ -1,6 +1,6 @@
 Creating and deleting new files and directories programmatically is a common requirement for line-of-business applications.
 
-So far, you've learned how to work with files and directories by using the `Directory` class. You can also use the `Directory` class to create, delete, copy, move, and otherwise manipulate directories on a system programmatically. You can use an analogous class, `File`, to do the same on files.
+So far, you've learned how to work with files and directories by using the `Directory` class. You can also use the `Directory` class to create, delete, copy, move, and otherwise manipulate directories on a system programmatically. You can use an analogous class called `File` to do the same on files.
 
 Here, you learn how to use the `Directory` and `File` classes to create directories and files.
 

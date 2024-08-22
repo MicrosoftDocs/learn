@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.what-is-azure-arc-enabled-sql-managed-instance
-title: Describe the features of Azure Arc-enabled SQL Managed Instance
+title: Describe the features of an Azure Arc-enabled SQL Managed Instance
 metadata:
-  title: learning-content
-  description: Describe the features of Azure Arc-enabled SQL Managed Instance.
-  ms.date: 12/21/2022
-  author: tchristiani
-  ms.author: terrychr
+  title: Describe the features of Azure Arc-enabled SQL Managed Instance
+  description: Describe the features of an Azure Arc-enabled SQL Managed Instance.
+  ms.date: 08/06/2024
+  author: MikeRayMSFT
+  ms.author: mikeray
   ms.topic: unit
 durationInMinutes: 5
 content: |

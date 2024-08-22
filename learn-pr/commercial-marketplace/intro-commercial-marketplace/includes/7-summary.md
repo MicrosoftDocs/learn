@@ -24,7 +24,7 @@ Your initial presentation to the executive team is met with enthusiasm! Followin
 
 - [Get customer leads from your commercial marketplace offer](/partner-center/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads)
 - [Maximize your discoverability with business profile and marketplace](https://partner.microsoft.com/blog/article/how-to-maximize-your-discoverability-with-business-profile-and-marketplace)
-- [Reach 4 million active customers by publishing on Microsoft commercial marketplace](https://www.microsoft.com/americas-partner-blog/2021/12/14/reach-4m-active-customers-by-publishing-on-microsoft-commercial-marketplace/)
+- [Reach 4 million active customers by publishing on Microsoft commercial marketplace](https://www.microsoft.com/en-us/americas-partner-blog/2021/12/14/reach-4m-active-customers-by-publishing-on-microsoft-commercial-marketplace/)
 - [Grow sales and scaling impact with Marketplace Rewards](https://techcommunity.microsoft.com/t5/marketplace-blog/marketplace-rewards-your-key-to-growing-sales-and-scaling-impact/ba-p/4076725)
 - [Learn about the Marketplace Rewards program](https://aka.ms/marketplacerewards)
 - [Market with Azure Marketplace and AppSource](https://partner.microsoft.com/asset/collection/marketing-with-azure-marketplace-and-appsource#/)

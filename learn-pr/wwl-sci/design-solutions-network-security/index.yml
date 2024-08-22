@@ -42,6 +42,8 @@ units:
 - learn.wwl.design-solutions-network-security.design-solutions-traffic-filtering-network-security-groups
 - learn.wwl.design-solutions-network-security.design-solutions-network-posture-management
 - learn.wwl.design-solutions-network-security.design-solutions-network-monitoring
+- learn.wwl.design-solutions-network-security.evaluate-solutions-entra-internet-access
+- learn.wwl.design-solutions-network-security.evaluate-solutions-entra-private-access
 - learn.wwl.design-solutions-network-security.knowledge-check
 - learn.wwl.design-solutions-network-security.summary
 badge:

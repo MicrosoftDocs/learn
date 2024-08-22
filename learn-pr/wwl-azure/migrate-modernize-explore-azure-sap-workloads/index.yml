@@ -2,12 +2,12 @@
 uid: learn.wwl.migrate-modernize-explore-azure-sap-workloads
 metadata:
   title: Modernize and explore Azure for SAP workloads
-  description: "This module explores the partnership between Microsoft and SAP which allows SAP applications to run in Azure across development, test, and production scenarios alongside other Microsoft components. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
+  description: 'This module explores the partnership between Microsoft and SAP which allows SAP applications to run in Azure across development, test, and production scenarios alongside other Microsoft components. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/08/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.service: azure
+  ms.service: sap-on-azure
 title: Modernize and explore Azure for SAP workloads
 summary: Explore the expanded partnership between Microsoft and SAP. This partnership allows you to run fully supported SAP applications across development, test, and production scenarios in Azure alongside other Microsoft components.
 abstract: |

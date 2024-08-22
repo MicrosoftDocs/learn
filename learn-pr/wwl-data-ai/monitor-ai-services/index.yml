@@ -2,12 +2,14 @@
 uid: learn.wwl.monitor-ai-services
 metadata:
   title: Monitor Azure AI services
-  description: "Learn to monitor Azure AI services."
-  ms.date: 09/28/2023
+  description: Learn to monitor Azure AI services.
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module-standard-task-based
+  ms.date: 09/28/2023
   ms.service: azure-ai-services
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Monitor Azure AI services
 summary: Azure AI services enable you to integrate artificial intelligence into your applications and services. It's important to be able to monitor Azure AI Services in order to track utilization, determine trends, and detect and troubleshoot issues.
 abstract: |

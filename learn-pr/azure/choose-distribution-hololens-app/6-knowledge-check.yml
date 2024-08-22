@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "This knowledge check assesses the user's understanding of distribution channels for a HoloLens app."
-  ms.date: 7/13/2023
+  ms.date: 06/11/2024
   author: aprilspeight
-  ms.author: apspeigh
+  ms.author: tholewis
   ms.topic: unit
 durationInMinutes: 3
 content: |
@@ -20,10 +20,10 @@ quiz:
     - content: "Sideloading"
       isCorrect: true
       explanation: "Sideloading is best for apps that are intended for a private audience. Since the doctor wants to directly distribute the application to their colleagues, sideloading is the best option."
-    - content: "Third Party Store"
+    - content: "Third-party store"
       isCorrect: false
       explanation: "The Third Party Store is best for apps that are intended for a niche audience but not necessarily a private audience."
-  - content: "An independent game developer has created an immersive HoloLens 2 game designed to captivate gamers and provide an unparalleled mixed reality gaming experience. However, they’re still in the development phase and would like to capture gameplay feedback from their friends. Which distribution option is best?"
+  - content: "An independent game developer created an immersive HoloLens 2 game designed to captivate gamers and provide an unparalleled mixed reality gaming experience. However, they’re still in the development phase and would like to capture gameplay feedback from their friends. Which distribution option is best?"
     choices:
     - content: "Microsoft Store"
       isCorrect: false
@@ -36,12 +36,12 @@ quiz:
       explanation: "The Third Party Store is best for apps that are intended for a niche audience but not necessarily a private audience."
   - content: "Why should you sign an application package?"
     choices:
-    - content: "Verifies that the application is bug-free."
+    - content: "Signing an application package verifies that the application is bug-free."
       isCorrect: false
       explanation: "An application can be signed and still contain bugs."
-    - content: "Confirms that the application is compatible with various HoloLens configurations."
+    - content: "Signing an application package confirms that the application is compatible with various HoloLens configurations."
       isCorrect: false
       explanation: "An application can be signed and still be incompatible with various HoloLens configurations."
-    - content: "Adds a digital signature to the app package, which serves as a proof of authenticity and integrity."
+    - content: "Signing an application package adds a digital signature to the app package, which serves as a proof of authenticity and integrity."
       isCorrect: true
       explanation: "Signing the app package allows users and devices to verify that the app package hasn't been tampered with and originates from a trusted source."

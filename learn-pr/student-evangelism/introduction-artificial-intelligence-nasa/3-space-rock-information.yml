@@ -3,10 +3,12 @@ uid: learn.student-evangelism.introduction-artificial-intelligence-nasa.3-space-
 metadata:
   title: Space rock types and features
   description: Learn common types of space rocks and their identifying features.
-  ms.date: 04/11/2021
   author: softchris
   ms.author: chnoring
+  ms.date: 04/11/2021
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Space rock types and features
 durationInMinutes: 3

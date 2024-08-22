@@ -6,7 +6,7 @@ metadata:
   description: Exercise on how to configure the package.json to add metadata but also create and run scripts to manage your Node.js throughout its lifetime.
   author: diberry
   ms.author: diberry
-  ms.date: 05/30/2023
+  ms.date: 04/19/2024
   ms.topic: unit
   ms.custom:
     - team=nextgen

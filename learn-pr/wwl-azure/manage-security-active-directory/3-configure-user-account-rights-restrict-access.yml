@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security-active-directory.configure-user-account-rights-restrict-access
+title: Configure user account rights to restrict access
+metadata:
+  title: Configure user account rights to restrict access
+  description: "Configure user account rights to restrict access"
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-configure-user-account-rights-restrict-access.md)]

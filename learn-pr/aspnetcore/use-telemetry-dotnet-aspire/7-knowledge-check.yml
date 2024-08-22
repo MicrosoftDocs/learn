@@ -7,8 +7,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.topic: unit
-  ms.custom:
-  - team=cloud_advocates
+  ms.custom: team=cloud_advocates, devx-track-dotnet
 durationInMinutes: 5
 content: |
 quiz:

@@ -48,5 +48,6 @@ modules:
 - learn.github.intro-github-copilot-enterprise
 - learn.github-copilot-with-javascript
 - learn.github-copilot-with-python
+- learn.advanced-github-copilot
 trophy:
   uid: learn.github.trophy

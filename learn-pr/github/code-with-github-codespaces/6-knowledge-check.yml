@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This content is part of the "Code with GitHub Codespaces" module.
-  ms.date: 07/18/2023
+  ms.date: 07/02/2024
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
@@ -12,7 +12,7 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which directory is the clone placed after creating a Codespace?"
+  - content: "Which directory is the clone placed in after creating a Codespace?"
     choices:
     - content: "/workspaces directory"
       isCorrect: true
@@ -31,10 +31,10 @@ quiz:
     - content: "You can only create two Codespaces."
       isCorrect: false
       explanation: "Incorrect. Two isn't the maximum number of Codespaces you can create. However, there are limits to the number of Codespaces that you can create and run at the same time."
-    - content: "You can create a total of ten Codespaces."
+    - content: "You can create a total of 10 Codespaces."
       isCorrect: false
       explanation: "Incorrect. Ten isn't the maximum number of Codespaces you can create. However, there are limits to the number of Codespaces that you can create and run at the same time."
-    - content: "You can create a total of thirty Codespaces."
+    - content: "You can create a total of 30 Codespaces."
       isCorrect: false
       explanation: "Incorrect. Thirty isn't the maximum number of Codespaces you can create. However, there are limits to the number of Codespaces that you can create and run at the same time."
     - content: "You can create an unlimited number of Codespaces per repository or branch, depending upon available space. When you reach an upper amount of resources, a message displays that an existing Codespace needs to removed/deleted before a new Codespace can be created."
@@ -50,7 +50,7 @@ quiz:
       explanation: "Incorrect. A Codespace requires an internet connection."
     - content: "If you lose internet connection while working on your Codespace, your changes aren't saved."
       isCorrect: false
-      explanation: "Incorrect.  Any uncommitted changes are saved. When reestablished, you can access Codespace in the same state as when the connection was lost."
+      explanation: "Incorrect. Any uncommitted changes are saved. When reestablished, you can access Codespace in the same state as when the connection was lost."
   - content: "What defines the beginning of a Codespace's lifecycle?"
     choices:
     - content: "A Codespace's lifecycle begins when you create a Codespace and ends when you delete it."
@@ -59,7 +59,7 @@ quiz:
     - content: "A Codespace's lifecycle begins immediately when GitHub is opened and ends when the software is closed."
       isCorrect: false
       explanation: "Incorrect. A Codespace's lifecycle begins when you create a Codespace and ends when you delete it."
-    - content: "A Codespace's lifecycle begins when a repository is created and ends when it's deleted."
+    - content: "A Codespace's lifecycle begins when a repository is created and ends when you delete it."
       isCorrect: false
       explanation: "Incorrect. A Codespace's lifecycle begins when you create a Codespace and ends when you delete it."
 

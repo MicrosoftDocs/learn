@@ -3,11 +3,13 @@ uid: learn.philanthropies.streamline-training-plans-with-ai-tools
 metadata:
   title: Streamline training plans with AI tools
   description: AI tools can aid in streamlining training plans. It helps in building learning objectives, streamlining research, creating assessments, providing feedback, and improving writing quality. Collaboration is boosted with tools like Microsoft Copilot.
-  ms.date: 03/07/2024
   author: yoosunee
   ms.author: andreapark
-  ms.topic: module
+  ms.date: 03/07/2024
   ms.service: artificial-intelligence
+  ms.topic: module
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Streamline training plans with AI tools
 summary: This module provides use cases on how AI tools can streamline training tasks and boost efficiency in educational settings.
 abstract: |

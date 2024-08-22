@@ -4,6 +4,8 @@ metadata:
   moduleType: standard
   title: Build your first Bicep deployment workflow by using GitHub Actions
   description: Build a basic deployment workflow for Bicep infrastructure as code templates by using Azure DevOps and GitHub Actions.
+  ms.service: azure-resource-manager
+  manager: jasongroce
   ms.date: 01/17/2023
   author: mumian
   ms.author: jgao

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/19/2024
+  ms.date: 06/14/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -16,7 +16,7 @@ quiz:
     choices:
     - content: "`Console.WriteLine(\"Windows \" + 7 + 4);`"
       isCorrect: false
-      explanation: "Incorrect. This line outputs 'Windows 47'"
+      explanation: "Incorrect. This line outputs 'Windows 74'"
     - content: "`Console.WriteLine($\"Windows {1 + 1}\");`"
       isCorrect: false
       explanation: "Incorrect. This line outputs 'Windows 2'"

@@ -23,12 +23,12 @@ The Semantic Kernel SDK allows you to automatically coordinate functions and pro
 
 1. Enter `dotnet run` in the terminal
 
-    You should see output similar to the following response:
-
+    The generated suggestion should recommend a concert based on the recently played songs and location. The output might be similar to the following response:
+    
     ```output
     Based on your recently played songs and your location in Portland, OR, I would recommend attending the upcoming concert of Lisa Taylor. She will be performing in Portland on April 16, 2024. This concert would be a great opportunity for you to enjoy live music and experience Lisa Taylor' beautiful songs.
     ```
 
-    You can try using different prompts and importing other plugins to see how the output changes!
+    You can try modifying the location to see how the recommendation changes.
 
 In previous exercises, you manually called functions or used the Handlebars planner to chain plugins together. The `AutoInvokeKernelFunctions` setting automatically calls functions and prompts that are referenced in your kernel. This tool can empower you to create dynamic, robust applications using less code.

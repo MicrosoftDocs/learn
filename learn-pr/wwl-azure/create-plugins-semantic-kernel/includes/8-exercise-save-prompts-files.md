@@ -1,10 +1,23 @@
-Suppose you want to suggest travel destinations and activities for a user. For this exercise, you practice creating prompts and saving them to files. You also practice using variables and calling functions inside the prompt templates as well. Let's get started!
+Suppose you want to suggest travel destinations and recommend activities for a user. In this exercise, you practice creating prompts and saving them to files. Let's get started!
 
 1. Open the Visual Studio Code project you created in the previous exercise.
 
-1. Remove the `prompt` and `input` variables you created in the previous exercise.
+1. In the **Program.cs** file, remove the `prompt` and `input` variables you created in the previous exercise so that you are left with the following code:
 
-1. Create the following folders in your project:
+    ```csharp
+    using Microsoft.SemanticKernel;
+    using Microsoft.SemanticKernel.Plugins.Core;
+
+    var builder = Kernel.CreateBuilder();
+    builder.AddAzureOpenAIChatCompletion(
+        "your-deployment-name",
+        "your-endpoint",
+        "your-api-key",
+        "deployment-model");
+    var kernel = builder.Build();
+    ```
+
+1. Verify the following folders exist in your project:
 
     - 'Prompts'
     - 'Prompts/TravelPlugins'
@@ -12,9 +25,9 @@ Suppose you want to suggest travel destinations and activities for a user. For t
     - 'Prompts/TravelPlugins/GetDestination'
     - 'Prompts/TravelPlugins/SuggestActivities'
 
-    First you create a prompt that identifies the destination a user wants to travel to. To create the prompt, you need to create the config.json and the skprompt.txt files. Let's get started!
+    These directories will help organize your prompts. First you create a prompt that identifies the destination a user wants to travel to. To create the prompt, you need to create the config.json and the skprompt.txt files. Let's get started!
 
-1. In the 'GetDestination' folder, create a config.json file and enter the following code:
+1. In the **GetDestination** folder, open the **config.json** file and enter the following code:
 
     ```json
     {
@@ -37,7 +50,9 @@ Suppose you want to suggest travel destinations and activities for a user. For t
     }
     ```
 
-1. Next, create a skprompt.txt file with the following text:
+    This configuration tells the kernel what your prompt does and what input variables to accept. Next, you provide the prompt text in the skprompt.txt file.
+
+1. In **GetDestination** folder, open the **skprompt.txt** file and enter the following text:
 
     ```html
     <message role="system">
@@ -48,36 +63,37 @@ Suppose you want to suggest travel destinations and activities for a user. For t
     </message>
     <message role="assistant">Santorini, Greece</message>
 
-    <message role="user"> {{$input}}</message>
+    <message role="user">{{$input}}</message>
     ```
 
     This prompt helps the large language model (LLM) filter the user's input and retrieve just the destination from the text.
 
-1. In the 'SuggestDestinations' folder, create a config.json file with the following text:
+1. In the **SuggestDestinations** folder, open the **config.json** file and enter the following text:
 
     ```json
     {
-    "schema": 1,
-    "type": "completion",
-    "description": "Recommend travel destinations to the user",
-    "execution_settings": {
-        "default": {
-            "max_tokens": 1200,
-            "temperature": 0.3
-        }
-    },
-    "input_variables": [
-        {
-            "name": "input",
-            "description": "Details about the user's travel plans",
-            "required": true
-        }
-    ]
+        "schema": 1,
+        "type": "completion",
+        "description": "Recommend travel destinations to the user",
+        "execution_settings": {
+            "default": {
+                "max_tokens": 1200,
+                "temperature": 0.3
+            }
+        },
+        "input_variables": [
+            {
+                "name": "input",
+                "description": "Details about the user's travel plans",
+                "required": true
+            }
+        ]
+    }
     ```
 
     In this config, you can raise the temperature a bit to make the output more creative.
 
-1. Next, create a skprompt.txt file with the following text:
+1. In the **SuggestDestinations** folder, open the **skprompt.txt** file and enter the following text:
 
     ```html
     The following is a conversation with an AI travel assistant. 
@@ -94,7 +110,7 @@ Suppose you want to suggest travel destinations and activities for a user. For t
 
     This prompt suggests travel destinations to the user based on their input. Now let's create a plugin to recommend activities at their destination.
 
-1. In the 'SuggestActivities' folder, create a config.json file with the following text:
+1. In the **SuggestActivities** folder, open the **config.json** file and enter the following text:
 
     ```json
     {
@@ -124,33 +140,32 @@ Suppose you want to suggest travel destinations and activities for a user. For t
 
     In this config, you increase the `max_tokens` to allow more text for the history and generated text.
 
-1. Next, create a skprompt.txt file with the following text:
+1. In the **SuggestActivities** folder, open the **skprompt.txt** file and enter the following text:
 
     ```html
     You are a travel assistant. You are helpful, creative, and very friendly.
     Consider your previous conversation with the traveler: 
-    {{ConversationSummaryPlugin.SummarizeConversation $history}}
+    {{$history}}
 
     The traveler would like some activity recommendations, things to do, and points 
-    of interest for their trip. They want to go to {{TravelPlugins.GetDestination $destination}}.
+    of interest for their trip. They want to go to {{$destination}}.
     Please provide them with a list of things they might like to do at their chosen destination.
     ```
 
-    In this prompt, you call other functions using the Semantic Kernel SDK prompt template syntax. `ConversationSummaryPlugin.SummarizeConversation` summarizes the provided conversation history, and the `TravelPlugins.GetDestination` you created earlier retrieves the destination from the user's input.
-
     Now let's import and test your new prompts!
 
-1. Update your Program.cs file with the following code:
+1. Update your **Program.cs** file with the following code:
 
     ```c#
     using Microsoft.SemanticKernel;
     using Microsoft.SemanticKernel.Plugins.Core;
+    using Microsoft.SemanticKernel.ChatCompletion;
 
     var builder = Kernel.CreateBuilder();
-    builder.Services.AddAzureOpenAIChatCompletion(
-        "your-resource-name",
+    builder.AddAzureOpenAIChatCompletion(
+        "your-deployment-name",
         "your-endpoint",
-        "your-resource-key",
+        "your-api-key",
         "deployment-model");
     var kernel = builder.Build();
 
@@ -158,24 +173,20 @@ Suppose you want to suggest travel destinations and activities for a user. For t
     var prompts = kernel.ImportPluginFromPromptDirectory("Prompts/TravelPlugins");
 
     ChatHistory history = [];
-    string input = @"I'm planning an anniversary trip with my 
-        spouse. We like hiking, mountains, and beaches. Our 
-        travel budget is $15000";
+    string input = @"I'm planning an anniversary trip with my spouse. We like hiking, 
+        mountains, and beaches. Our travel budget is $15000";
 
     var result = await kernel.InvokeAsync<string>(prompts["SuggestDestinations"],
-        new() {
-            { "input", input },
-        }
-    );
+        new() {{ "input", input }});
 
     Console.WriteLine(result);
     history.AddUserMessage(input);
     history.AddAssistantMessage(result);
     ```
 
-    In this code, you import the plugins you created, and the built-in plugin you referenced in your `SuggestActivities` prompt. You also use a `ChatHistory` object to store the user's conversation. Finally, you pass some information to the `SuggestDestinations` prompt and record the results. Next, let's ask the user where they want to go so we can recommend some activities to them.
+    In this code, you import the plugins you created. You also use a `ChatHistory` object to store the user's conversation. Finally, you pass some information to the `SuggestDestinations` prompt and record the results. Next, let's ask the user where they want to go so we can recommend some activities to them.
 
-1. Add the following code to your Program.cs file:
+1. Add the following code to your **Program.cs** file:
 
     ```c#
     Console.WriteLine("Where would you like to go?");
@@ -190,7 +201,7 @@ Suppose you want to suggest travel destinations and activities for a user. For t
     Console.WriteLine(result);
     ```
 
-    In this code, you get some input from the user to find out where they want to go. Then you call the `SuggestActivities` prompt with the destination and the conversation history to recommend activities at the destination.
+    In this code, you get some input from the user to find out where they want to go. Then you call the `SuggestActivities` prompt with the destination and the conversation history.
 
 1. To test the code, enter `dotnet run` in the terminal.
 
@@ -207,6 +218,3 @@ Suppose you want to suggest travel destinations and activities for a user. For t
     ```
 
     Now you created the beginnings of an AI travel assistant! Try changing the input to see how the LLM responds.
-
-> [!IMPORTANT]
-> Be sure not to delete any of the code you've written so far, you'll need it for the next module.

@@ -4,6 +4,8 @@ metadata:
   moduleType: standard
   title: Manage changes to your Bicep code by using Git
   description: Learn how to use Git version control with your Bicep files and infrastructure as code.
+  ms.service: azure-resource-manager
+  manager: jasongroce
   ms.date: 01/23/2023
   author: mumian
   ms.author: jgao

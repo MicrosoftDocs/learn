@@ -6,6 +6,5 @@ After learning about the Azure Quantum service and its components, you can see t
 - Access to diverse quantum hardware devices.
 - Free Azure Quantum Credits.
 - A Resource Estimator to help you estimate the resources needed to run your quantum programs.
-- A quantum programming language, Q#, with quantum libraries.
-- Integration of quantum and classical computing.
+- A quantum programming language, Q#.
 - Copilot to help you write your quantum programs.

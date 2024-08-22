@@ -1,4 +1,4 @@
-Recall that in the EDA simulation scenario, after we identify the throughput or IOPS requirements of the application, we can then decide the most optimal and cost-effective Azure NetApp Files service level. In this unit, we use the [Azure NetApp Files Performance Calculator](https://aka.ms/anfcalc) to achieve this goal.
+Recall that in the electronic design automation (EDA) simulation scenario, after we identify the throughput or input/output operations per second (IOPS) requirements of the application, we can then decide the most optimal and cost-effective Azure NetApp Files service level. In this unit, we use the [Azure NetApp Files Performance Calculator](https://aka.ms/anfcalc) to achieve this goal.
 
 ## Performance considerations
 
@@ -16,17 +16,17 @@ Most importantly, we also need to consider the cost structure of different servi
 
 ### Azure NetApp Files Performance Calculator
 
-Use the [Azure NetApp Files Performance Calculator](https://aka.ms/anfcalc) to specify your throughput or IOPS requirements to help you choose the most cost-effective service level.
+Use the [Azure NetApp Files Performance Calculator](https://aka.ms/anfcalc) to assess your throughput or IOPS requirements, and help you choose the most cost-effective service level.
 
 ## Throughput requirement example
 
-An HPC application needs at least 50 TiB of volume storage and needs to ensure 5,000 MiB per second in throughput. An Azure NetApp Files regular volume has a maximum throughput of 4,500 MiB per second using the Ultra service level, which won’t fulfill your requirements, but an Azure NetApp Files large volume can. The question is, what service level do you need?
+A high-performance computing (HPC) application needs at least 50 TiB of volume storage and needs to ensure 5,000 MiB per second in throughput. An Azure NetApp Files regular volume has a maximum throughput of 4,500 MiB per second using the Ultra service level, which doesn't fulfill your requirements, but an Azure NetApp Files large volume can. The question is, what service level do you need?
 
-The Azure NetApp Files Performance Calculator allows you to use volume size and throughput to find the best blend of performance and cost for your volumes. Simply navigate to the tool and enter your volume size and throughput requirements as follows:
+The Azure NetApp Files Performance Calculator allows you to use volume size and throughput to find the best blend of performance and cost for your volumes. Navigate to the tool and enter your volume size and throughput requirements as in the following example:
 
 ![Screenshot of the Azure NetApp Files Performance Calculator when specifying 5,000 MiB/s throughput.](../media/throughput-requirement.png)
 
-The calculator displays your options for this specific configuration and the associated cost. In this case, if we provision a large volume, we can achieve the desired performance using the Premium service level at a lower cost than if we had to use Ultra, giving us the performance needed (with room to grow) at a more desirable price point.
+The calculator displays your options for this specific configuration and the associated cost. In this case, if we provision a large volume, we can achieve the desired performance using the Premium service level at a lower cost than if we used Ultra, giving us the performance needed (with room to grow) at a more desirable price point.
 
 ![Screenshot of the performance calculator output.](../media/03-capacity-pool-output.png)
 
@@ -34,9 +34,9 @@ In this example, the Premium service level is the best choice because it achieve
 
 ## IOPS requirement example
 
-In some cases, throughput may not be as critical as raw IOPS for a workload. These scenarios include situations where there's a mix of small reads and writes across many compute clients. The Azure NetApp Files Performance Calculator can assist with calculating your performance needs.
+In some cases, throughput might not be as critical as raw IOPS for a workload. These scenarios include situations where there's a mix of small reads and writes across many compute clients. The Azure NetApp Files Performance Calculator can assist with calculating your performance needs.
 
-For instance, if another HPC application needs at least a 50-TiB size of volume storage and requires at least 140,000 IOPS on 8 KiB random with 70/30 read/write, how do we choose the best blend of performance and cost? In the previous example, a large volume using the Premium service level made the most sense for a high throughput workload, but a workload with smaller IOPS likely won’t be able to/need to achieve those throughput numbers. The calculator can be used in advanced mode (click advanced at the top of the page next to the Azure NetApp Files Performance Calculator name) to define more specific parameters for your use case.
+Consider another HPC application that needs at least a 50-TiB size of volume storage and requires at least 140,000 IOPS on 8 KiB random with 70/30 read/write. How do we choose the best blend of performance and cost? In the previous example, a large volume using the Premium service level made the most sense for a high throughput workload. However, a workload with smaller IOPS isn't likely to achieve those throughput numbers, or need to. To define more specific parameters for your use case, use the calculator in advanced mode. Set the mode by selecting **advanced** at the top of the page next to the **Azure NetApp Files Performance Calculator** name.
 
 >[!NOTE]
 >Advanced mode does not currently support Azure NetApp Files large volumes, but large volumes are often an excellent choice for high file count/high metadata workloads. Contact your Azure NetApp Files specialist or CSA for more details about large volumes and if they are a fit for your workload. 
@@ -49,4 +49,4 @@ The calculator displays service level options. In this case, we can achieve the 
 
 ![Screenshot of IOPS output.](../media/03-iops-output.png)
 
-If you later find you need more than the 1,093 MiB/s throughput offered by the Standard service level option (for burst workloads or otherwise), Azure NetApp Files allows you to adjust the service level up and down non-disruptively to fit your needs.
+If you later find you need more than the 1,093 MiB/s throughput offered by the Standard service level option (for burst workloads or otherwise), Azure NetApp Files allows you to adjust the service level up and down nondisruptively to fit your needs.

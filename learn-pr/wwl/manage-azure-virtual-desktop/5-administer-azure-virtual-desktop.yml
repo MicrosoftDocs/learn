@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
+  ms.custom: devx-track-azurecli, devx-track-azurepowershell
 durationInMinutes: 3
 content: |
   [!include[](includes/5-administer-azure-virtual-desktop.md)]

@@ -2,6 +2,9 @@ Entanglement is one of the key features of quantum mechanics that distinguishes 
 
 But what *is* entanglement? How does it work? And why is it so important for quantum information? 
 
+> [!NOTE]
+> If you experience problems with the rendering of the formulas, hit the refresh button on your browser. This will reload the page and the formulas will render correctly.
+
 ## Understanding quantum entanglement
 
 Imagine that you have two qubits, $A$ and $B$. The qubits are independent from each other, which means that the information about the state of qubit $A$, whatever it is, belongs only to qubit $A$. Similarly the information about the state of qubit $B$ belongs to qubit $B$. You can describe the state of each qubit. In this case, the qubits are not entangled, because they aren't sharing any information.

@@ -4,10 +4,12 @@ title: Introduction
 metadata:
   title: introduction
   description: Introduction
-  ms.date: 9/27/2023
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 9/27/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

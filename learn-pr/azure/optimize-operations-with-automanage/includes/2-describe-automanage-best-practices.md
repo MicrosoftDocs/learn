@@ -1,5 +1,5 @@
 > [!CAUTION]
-> This content references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
+> This content references CentOS, a Linux distribution that is End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
 
 Azure Automanage machine best practices eliminates the need to discover and know how to onboard and configure certain Azure services to benefit your virtual machines. These Azure services help enhance reliability, security, and management for virtual machines.
 

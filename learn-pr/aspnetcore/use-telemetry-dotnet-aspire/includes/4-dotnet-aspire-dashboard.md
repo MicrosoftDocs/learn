@@ -6,7 +6,7 @@ In this unit, you'll see how the .NET Aspire dashboard displays telemetry data.
 
 ## Telemetry in the .NET Aspire dashboard
 
-When you start a .NET Aspire app on your development computer, and the containers that run each component, .NET starts the .NET Aspire dashboard. This web interface has five sections, four of which display telemetry:
+When you start an app built with .NET Aspire on your development computer, and the containers that run each component, .NET starts the .NET Aspire dashboard. This web interface has five sections, four of which display telemetry:
 
 - **Resources**: Lists the containers, projects, and executables that make up your entire cloud-native app. Use the links in the **Endpoints** column to connect to each microservice.
 - **Console**: Displays the text sent to standard output from the component you specify.

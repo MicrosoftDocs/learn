@@ -8,8 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.custom: N/A, devx-track-azurecli, devx-track-extended-java, devx-track-js, devx-track-python
   zone_pivot_groups: dev-lang-csharp-java-node-python
 azureSandbox: true
 durationInMinutes: 35

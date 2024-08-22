@@ -8,5 +8,5 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Create a project wiki to share information - Azure DevOps \| Microsoft Docs](/azure/devops/project/wiki/wiki-create-repo).
- -  [Overview of extensions for Azure Boards - Azure DevOps \| Microsoft Docs](/azure/devops/boards/extensions/).
+ -  [Create a project wiki to share information - Azure DevOps \| Microsoft Learn](/azure/devops/project/wiki/wiki-create-repo).
+ -  [Overview of extensions for Azure Boards - Azure DevOps \| Microsoft Learn](/azure/devops/boards/extensions/).

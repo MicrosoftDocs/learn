@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
-  ms.service: postgresql
+  ms.service: azure-database-postgresql
   ai-usage: human-only
 title: Explore PostgreSQL architecture
 summary: PostgreSQL is an open-source relational database system that is available as an Azure service. In this module, you learn about the PostgreSQL architecture, and how to manage different aspects of Azure Database for PostgreSQL.

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-azure-database-for-mysql-features-support-mission-critical-workloads.networking-security-features
+title: Describe security features
+metadata:
+  title: Describe security features
+  description: "This unit describes the security features of Azure Database for PostgreSQL - Flexible Server. It covers networking access, Microsoft Defender for Cloud, authentication, and encryption."
+  ms.date: 07/08/2024
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-networking-security-features.md)]

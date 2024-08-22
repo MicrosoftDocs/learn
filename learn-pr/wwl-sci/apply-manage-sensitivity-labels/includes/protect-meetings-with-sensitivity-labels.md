@@ -1,8 +1,10 @@
-As our global consultancy firm moves forward with our AI-powered service launch, securing sensitive virtual meetings becomes crucial. These meetings, involving financial discussions and strategic plans, are important for our worldwide team and diverse client base. Sensitivity labels in Microsoft Purview help us in this security effort, ensuring that our virtual discussions via Outlook and Teams are accessible only to authorized participants.
+Applying sensitivity labels is essential for securing sensitive virtual meetings. These labels ensure that only authorized participants can access important discussions conducted via Outlook and Teams. Sensitivity labels help encrypt meeting invites and enforce strict access controls.
 
 Consider, for example, a key strategy meeting to finalize our service offerings. The organizer uses a _Highly Confidential_ sensitivity label to the Teams invite. This action encrypts the invite and applies strict access controls like preventing forwarding and restricting chats. This careful application of sensitivity labels shows our firm's commitment to protecting sensitive information, allowing secure, global collaboration.
 
-This unit guides you on how to:
+As our global consultancy firm moves forward with our AI-powered service launch, securing sensitive virtual meetings becomes crucial. These meetings, involving financial discussions and strategic plans, are important for our worldwide team and diverse client base. Sensitivity labels in Microsoft Purview help us in this security effort, ensuring that our virtual discussions via Outlook and Teams are accessible only to authorized participants.
+
+Here you learn how to:
 
 - **Ensure secure communication**: Demonstrate how to use sensitivity labels through Outlook or Teams to control meeting access and enforce encryption.
 - **Protect meeting integrity**: Apply sensitivity labels to maintain data protection standards across meeting settings.

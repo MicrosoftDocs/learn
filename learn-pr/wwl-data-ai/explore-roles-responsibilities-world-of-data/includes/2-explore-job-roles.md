@@ -2,7 +2,7 @@ There's a wide variety of roles involved in managing, controlling, and using dat
 
 The three key job roles that deal with data in most organizations are:
 
-- **Database administrators** manage databases, assigning permissions to users, storing backup copies of data and restore data in the event of a failure.
+- **Database administrators** manage databases, assigning permissions to users, storing backup copies of data, and restoring data in the event of a failure.
 - **Data engineers** manage infrastructure and processes for data integration across the organization, applying data cleaning routines, identifying data governance rules, and implementing pipelines to transfer and transform data between systems.
 - **Data analysts** explore and analyze data to create visualizations and charts that enable organizations to make informed decisions.
 

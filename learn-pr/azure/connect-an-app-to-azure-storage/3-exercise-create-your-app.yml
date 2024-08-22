@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a new app to work with Azure storage
   description: Exercise - Create a new app to work with Azure storage
   ms.date: 09/19/2023
-  author: tamram
-  ms.author: tamram
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
   ms.custom:
     - devx-track-dotnet

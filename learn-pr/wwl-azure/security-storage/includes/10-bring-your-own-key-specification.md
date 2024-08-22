@@ -25,13 +25,10 @@ Key Exchange Key (KEK): This is a customer-generated, HSM-backed key within the 
 
 To perform a key transfer:
 
-1. Generate KEK.
-
-2. Retrieve the public key of the KEK.
-
-3. Using HSM vendor provided BYOK tool, import the KEK into the target HSM and exports the Target Key protected by the KEK.
-
-4. Import the protected Target Key to Azure Key Vault.
+1.  Generate KEK.
+2.  Retrieve the public key of the KEK.
+3.  Using HSM vendor provided BYOK tool, import the KEK into the target HSM and exports the Target Key protected by the KEK.
+4.  Import the protected Target Key to Azure Key Vault.
 
 Customers use the BYOK tool and documentation provided by HSM vendor to complete Steps 3. It produces a Key Transfer Blob (a ".byok" file).
 
@@ -54,6 +51,10 @@ Use the **az keyvault key create** command to create KEK with key operations set
 
 ```azurecli
 az keyvault key create --kty RSA-HSM --size 4096 --name KEKforBYOK --ops import --vault-name ContosoKeyVaultHSM
+
+
+
+
 ```
 
 Services support different KEK lengths; Azure SQL, for instance, only supports key lengths of 2048 or 3072 bytes.
@@ -64,6 +65,10 @@ Download the public key portion of the KEK and store it into a PEM file.
 
 ```azurecli
 az keyvault key download --name KEKforBYOK --vault-name ContosoKeyVaultHSM --file KEKforBYOK.publickey.pem
+
+
+
+
 ```
 
 ## Generate key transfer blob using HSM vendor provided BYOK tool<br>

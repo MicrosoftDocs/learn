@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge on how to create accessible solutions by using AI innovations.
-  ms.date: 02/29/2024
   author: erzelman
   ms.author: erzelman
+  ms.date: 02/29/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 5
 quiz:
   title: Check your knowledge

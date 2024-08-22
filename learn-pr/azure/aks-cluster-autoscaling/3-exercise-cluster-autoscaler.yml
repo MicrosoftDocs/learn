@@ -5,7 +5,7 @@ metadata:
   type: exercise
   title: Exercise - Enable the cluster autoscaler on AKS
   description: In this exercise, you enable the cluster autoscaler on an AKS cluster and then test the scalability of your applications against the cluster autoscaler.
-  ms.date: 11/08/2023
+  ms.date: 06/06/2024
   author: nickomang
   ms.author: nickoman
   ms.topic: unit

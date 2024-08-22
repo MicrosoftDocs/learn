@@ -40,5 +40,6 @@ modules:
 - learn-wwl.security-copilot-getting-started
 - learn.security-copilot-describe-core-features
 - learn.security-copilot-embedded-experiences
+- learn.security-copilot-exercises
 trophy:
   uid: earn.wwl.security-copilot-and-ai.trophy

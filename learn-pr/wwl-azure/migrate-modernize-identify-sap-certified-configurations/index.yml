@@ -2,12 +2,12 @@
 uid: learn.wwl.migrate-modernize-identify-sap-certified-configurations
 metadata:
   title: Modernize and identify SAP-certified configurations
-  description: "This module helps to identify prerequisites, deployment options, and SAP-certified configurations that are available to you when deploying SAP products in Microsoft Azure. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
+  description: 'This module helps to identify prerequisites, deployment options, and SAP-certified configurations that are available to you when deploying SAP products in Microsoft Azure. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/09/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.service: azure
+  ms.service: sap-on-azure
 title: Modernize and identify SAP-certified configurations
 summary: Learn to identify prerequisites, deployment options, and SAP-certified configurations that are available to you when deploying SAP products in Microsoft Azure.
 abstract: |

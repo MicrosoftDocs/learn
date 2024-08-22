@@ -2,13 +2,14 @@
 uid: learn.philanthropies.ai-powered-tools-for-teaching.create-an-interactive-article-using-microsoft-sway
 title: Create an interactive article using Microsoft Sway
 metadata:
-  title: Create an interactive article using Microsoft Sway  
+  title: Create an interactive article using Microsoft Sway
   description: AI helps revamp the workplace by automating repetitive tasks and processes. This enhances efficiency and productivity, while maintaining the accuracy and precision of these tasks.
-  ms.date: 01/29/2024
   author: yoosunee
   ms.author: andreapark
+  ms.date: 01/29/2024
   ms.topic: unit
-  ms.service: artificial-intelligence
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 40
 content: |
   [!include[](includes/3-create-an-interactive-article-using-microsoft-sway.md)]

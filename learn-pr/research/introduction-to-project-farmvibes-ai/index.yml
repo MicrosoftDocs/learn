@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.research.introduction-to-project-farmvibes-ai
+metadata:
+  title: Introduction to project FarmVibes.AI
+  description: This module provides an introduction to project FarmVibes.AI, a comprehensive tool for enhancing agricultural practices and decision-making in farming. Explore the fundamental components of FarmVibes.AI, including soil analysis capabilities, crop health monitoring systems, and advanced data analytics. Learn how FarmVibes.AI addresses agricultural challenges and integrates these components to assist in sustainable farming and environmental conservation.
+  ms.date: 7/16/2024
+  author: RiyazPishori
+  ms.author: riyazp
+  ms.topic: module-intro-to-product
+  ms.service: azure-kubernetes-service
+title: Introduction to project FarmVibes.AI
+summary: Explain the fundamental components of Project FarmVibes.AI (for brevity, we'll refer to it as FarmVibes.AI) tooling such as soil analysis capabilities, crop health monitoring systems, and advanced data analytics. Characterize the agricultural challenges that FarmVibes.AI is designed to address. Describe how FarmVibes.AI integrates these components to enhance agricultural practices, improve decision-making in farming.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Evaluate whether FarmVibes.AI is appropriate for addressing agricultural challenges and improving decision-making in farming practices
+    - Describe the features and functionalities of FarmVibes.AI 
+    - Explain how FarmVibes.AI can assist in sustainable farming and environmental conservation 
+prerequisites: |
+  - Basic understanding of agriculture 
+  - Familiarity with data-driven decision-making 
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - data-engineer
+products:
+  - azure-kubernetes-service
+subjects:
+  - machine-learning
+units:
+- learn.research.introduction-to-project-farmvibes-ai.introduction
+- learn.research.introduction-to-project-farmvibes-ai.what-farmvibes-ai
+- learn.research.introduction-to-project-farmvibes-ai.how-farmvibes-ai-works
+- learn.research.introduction-to-project-farmvibes-ai.when-use-farmvibes-ai
+- learn.research.introduction-to-project-farmvibes-ai.knowledge-check
+- learn.research.introduction-to-project-farmvibes-ai.summary
+badge:
+  uid: learn.research.introduction-to-project-farmvibes-ai.badge

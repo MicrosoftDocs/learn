@@ -8,7 +8,7 @@ Let's add the `GameState` class to your project and then make it available to co
 
 1. Copy the [GameState.cs](https://raw.githubusercontent.com/dotnet/intro-to-dotnet-web-dev/main/5-blazor/1-complete/ConnectFour/GameState.cs) file into the root of your project.
 
-1. Open the *Program.cs* file at the root of the project and add this statement to configure `GameState` as a singleton service in your app:
+1. Open the *Program.cs* file at the root of the project and add this statement that configures `GameState` as a singleton service in your app:
 
     ```csharp
     builder.Services.AddSingleton<GameState>();
@@ -16,7 +16,7 @@ Let's add the `GameState` class to your project and then make it available to co
 
     We can now inject an instance of the `GameState` class into our `Board` component.
 
-1. Add the following `@inject` directive at the top of the *Board.razor* file to inject the current state of the game into the component:
+1. Add the following `@inject` directive at the top of the *Board.razor* file. the directive injects the current state of the game into the component:
 
     ```razor
     @inject GameState State
@@ -26,7 +26,7 @@ Let's add the `GameState` class to your project and then make it available to co
 
 ## Reset state
 
-Let's begin by resetting the state of the game when the `Board` component is first painted on screen. We'll add some code to reset the state of the game when the component is initialized.
+Let's begin by resetting the state of the game when the `Board` component is first painted on screen. Add some code to reset the state of the game when the component is initialized.
 
 1. Add an `OnInitialized` method with a call to `ResetBoard`, inside the `@code` block at the bottom of the *Board.razor* file, like so:
 
@@ -45,7 +45,7 @@ Let's begin by resetting the state of the game when the `Board` component is fir
 
 Next, let's allocate the possible 42 game pieces that could be played. We can represent the game pieces as an array referenced by 42 HTML elements on the board. We can move and place those pieces by assigning a set of CSS classes with column and row positions.
 
-1. Define a string array field in the code block to hold our game pieces:
+1. To hold our game pieces, we define a string array field in the code block:
 
     ```razor
     private string[] pieces = new string[42];
@@ -64,14 +64,21 @@ Next, let's allocate the possible 42 game pieces that could be played. We can re
 
     ```razor
     <div>
-        <div class="board">...</div>
+        <div class="board">
+        @for (var i = 0; i < 42; i++)
+        {
+            <span class="container">
+                <span></span>
+            </span>
+        }
+        </div>
         @for (var i = 0; i < 42; i++)
         {
            <span class="@pieces[i]"></span>
         }
     </div>
     @code {
-        private string[] Pieces = new string[42];
+        private string[] pieces = new string[42];
     
         protected override void OnInitialized()
         {
@@ -86,7 +93,7 @@ Next, let's allocate the possible 42 game pieces that could be played. We can re
 
 Let's add a method to handle when a player places a piece in a column. The `GameState` class knows how to assign the correct row for the game piece, and reports back the row that it lands in. We can use this information to assign CSS classes representing the player's color, the final location of the piece, and a CSS drop animation.
 
-We call this method `PlayPiece`, and it accepts an input parameter that specifies the column the player has chosen.
+We call this method `PlayPiece`, and it accepts an input parameter that specifies the column the player chooses.
 
 1. Add this code below the `pieces` array we defined in the previous step.
 
@@ -106,13 +113,13 @@ Here's what the `PlayPiece` code does:
 1. We can then define the three CSS classes to assign to the game piece to identify which player is currently acting, the column the piece was placed in, and the landing row.
 1. The last line of the method assigns these classes to that game piece in the `pieces` array.
 
-If you look in the supplied *Board.razor.css*, you'll find the CSS classes matching column, row, and player turn.
+If you look in the supplied *Board.razor.css*, you find the CSS classes matching column, row, and player turn.
 
 The resultant effect is that the game piece is placed in the column and animated to drop into the bottom-most row when this method is called.
 
 ## Choosing a column
 
-We next need to place some controls that allow players to choose a column and call our new `PlayPiece` method. We'll use the "🔽" character to indicate that you can drop a piece in this column.
+We next need to place some controls that allow players to choose a column and call our new `PlayPiece` method. We use the "🔽" character to indicate that you can drop a piece in this column.
 
 1. Above the starting `<div>` tag, add a row of clickable buttons:
 
@@ -128,13 +135,13 @@ We next need to place some controls that allow players to choose a column and ca
 
     The `@onclick` attribute specifies an event handler for the click event. But to handle UI events, a Blazor component needs to be rendered using an *interactive render mode*. By default, Blazor components are rendered statically from the server. We can apply an interactive render mode to a component using the `@rendermode` attribute.
 
-1. Update the `Board` component on the `Home` page to use the `InteractiveServer` render mode.
+1. Update the `Board` component on the `Home` page so that it uses the `InteractiveServer` render mode.
 
     ```razor
     <Board @rendermode="InteractiveServer" />
     ```
 
-    The `InteractiveServer` render mode will handle UI events for your components from the server over a WebSocket connection with the browser.
+    The `InteractiveServer` render mode handles UI events for your components from the server over a WebSocket connection with the browser.
 
 1. Run the app with these changes. It should look like this now:
 
@@ -148,15 +155,13 @@ Great progress! We can now add pieces to the board. The `GameState` object is sm
 
 ## Winning and error handling
 
-If you play with the game that you've configured at this point, you'll find that it raises errors when you try to put too many pieces in the same column and when one player has won the game.
+If you play the game in its current configuration, you find that it raises errors when you try to put too many pieces in the same column and when one player wins the game.
 
-Let's add some error handling and indicators to our board to make the current state clear. We'll add a status area above the board and below the drop buttons.
+Let's make the current state of our game clear by adding some error handling and indicators to our board. Add a status area above the board and below the drop buttons.
 
 1. Insert the following markup after the `nav` element:
 
-    ```razor
-    <nav>...</nav>
-    
+    ```razor  
     <article>
         @winnerMessage  <button style="@ResetStyle" @onclick="ResetGame">Reset the game</button>
         <br />
@@ -172,7 +177,7 @@ Let's add some error handling and indicators to our board to make the current st
     - Error messages
     - The current player's turn
 
-    Let's fill in some logic to set these values.
+    Now let's fill in some logic that sets these values.
 
 1. Add the following code after the pieces array:
 
@@ -231,7 +236,7 @@ Let's add some error handling and indicators to our board to make the current st
 
     :::image type="content" source="../media/3-board-step-1.png" alt-text="Screenshot displaying game over.":::
 
-    We're still left in a situation where we can't select the reset button. Let's add some logic in the `PlayPiece` method to detect the end of the game.
+    We still have a situation where we can't select the reset button. Let's add some logic in the `PlayPiece` method that detects the end of the game.
 
 1. Let's detect if there's a winner to the game by adding a switch expression after our `try...catch` block in `PlayPiece`.
 
@@ -245,7 +250,7 @@ Let's add some error handling and indicators to our board to make the current st
     };
     ```
 
-    The `CheckForWin` method returns an enum that reports which player, if any has won the game or if the game is a tie. This switch expression will set the `winnerMessage` field appropriately if a game over state has occurred.
+    The `CheckForWin` method returns an enum that reports which player, if any has won the game or if the game is a tie. This switch expression will set the `winnerMessage` field appropriately if a game over state occurs.
 
     Now when we play and reach a game-ending scenario, these indicators appear:
 
@@ -253,7 +258,7 @@ Let's add some error handling and indicators to our board to make the current st
 
 ## Summary
 
-We've learned a lot about Blazor and built a neat little game. Here are some of the skills we learned:
+We learned a lot about Blazor and built a neat little game. Here are some of the skills we learned:
 
 - Created a component
 - Added that component to our home page
@@ -268,7 +273,7 @@ The project we built, is a simple game, and there's so much more you could do wi
 
 Consider the following challenges:
 
-- Remove the default layout and extra pages in the app to make it smaller.
+- To make the app smaller, remove the default layout and extra pages.
 - Improve the parameters to the `Board` component so that you can pass any valid CSS color value.
 - Improve the indicators appearance with some CSS and HTML layout.
 - Introduce sound effects.
@@ -276,4 +281,4 @@ Consider the following challenges:
 - Add networking capabilities so that you can play a friend in their browser.
 - Insert the game into a .NET MAUI with Blazor application and play it on your phone or tablet.
 
-Happy coding and have fun!
+Happy coding, and have fun!

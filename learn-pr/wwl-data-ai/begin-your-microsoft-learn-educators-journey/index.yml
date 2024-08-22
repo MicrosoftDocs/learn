@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.begin-your-microsoft-learn-educators-journey
+metadata:
+  title: Begin your Microsoft Learn for Educators Journey
+  description: "Joining Microsoft Learn for Educators is the start of a journey helping ensure educators feel confident in technical skills related to teaching Microsoft technical content and integrate Microsoft official content into curriculum or syllabus."
+  ms.date: 07/19/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: module-intro-to-product
+  ms.service: azure
+  ai-usage: human-only
+title: Begin your Microsoft Learn for Educators Journey
+summary: Joining Microsoft Learn for Educators is the start of a journey helping ensure educators feel confident in technical skills related to teaching Microsoft technical content and integrate Microsoft official content into curriculum or syllabus.
+abstract: |
+  After completing this module, you will be able to:
+
+  - Understand the Microsoft Learn for Educators program benefits.
+
+  - Explore how to navigate the Microsoft Learn for Educators portal.
+
+  - Learn how to request practice exams and certification exam vouchers as an MSLE Educator.
+
+  - Learn how to access the Microsoft Learning Download Center and download content.
+
+  - Understand the resources available through the Microsoft curriculum and teaching materials.
+
+  - Explore the benefits of joining the Microsoft Learn for Educators community.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- higher-ed-educator
+products:
+- azure
+units:
+- learn.wwl.begin-your-microsoft-learn-educators-journey.introduction
+- learn.wwl.begin-your-microsoft-learn-educators-journey.examine-microsoft-learn-educators-page
+- learn.wwl.begin-your-microsoft-learn-educators-journey.become-familiar-with-microsoft-learn-educators-portal
+- learn.wwl.begin-your-microsoft-learn-educators-journey.explore-learn-download-center
+- learn.wwl.begin-your-microsoft-learn-educators-journey.review-microsoft-learn-educators-teach-materials
+- learn.wwl.begin-your-microsoft-learn-educators-journey.plan-implementation
+- learn.wwl.begin-your-microsoft-learn-educators-journey.identify-ongoing-support
+- learn.wwl.begin-your-microsoft-learn-educators-journey.knowledge-check
+- learn.wwl.begin-your-microsoft-learn-educators-journey.summary
+badge:
+  uid: learn.wwl.begin-your-microsoft-learn-educators-journey.badge

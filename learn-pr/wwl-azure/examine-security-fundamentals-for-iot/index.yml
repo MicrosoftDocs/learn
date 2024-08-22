@@ -2,25 +2,35 @@
 uid: learn.wwl.examine-security-fundamentals-for-iot
 metadata:
   title: Examine security fundamentals for IoT
-  description: This module introduces you to the IoT security infrastructure, security best practices, threat modeling, and the security tasks that are assigned to the various roles that contribute to an IoT solution.
-  ms.date: 10/09/2023
+  description: "This module introduces you to the IoT security infrastructure, security best practices, threat modeling, and the security tasks that are assigned to the various roles that contribute to an IoT solution."
+  ms.date: 05/31/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Examine security fundamentals for IoT
 summary: This module introduces you to the IoT security infrastructure, security best practices, threat modeling, and the security tasks that are assigned to the various roles that contribute to an IoT solution.
 abstract: |
   After you complete this module, you will be able to:
-  - Describe security recommendations.
-  - Describe the IoT security infrastructure and security-in-depth strategy.
-  - Describe threat modeling and mitigation techniques.
+
+  -   Describe security recommendations.
+
+  -   Describe the IoT security infrastructure and security-in-depth strategy.
+
+  -   Describe threat modeling and mitigation techniques.
 prerequisites: |
   Ability to:
-  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
-  - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
-  - Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
-  - Describe the features and capabilities of Azure IoT Edge.
+
+  -   Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+
+  -   Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
+
+  -   Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
+
+  -   Describe the features and capabilities of Azure IoT Edge.
 iconUrl: /learn/achievements/iot-security-fundamentals.svg
 levels:
 - intermediate

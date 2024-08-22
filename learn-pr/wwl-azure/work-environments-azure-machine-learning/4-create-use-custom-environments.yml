@@ -3,11 +3,13 @@ uid: learn.wwl.work-environments-azure-machine-learning.create-use-custom-enviro
 title: Create and use custom environments
 metadata:
   title: Create and use custom environments
-  description: "Learn how to create and use custom environments in Azure Machine Learning."
-  ms.date: 09/08/2023
+  description: Learn how to create and use custom environments in Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 09/08/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 12
 content: |
   [!include[](includes/4-create-use-custom-environments.md)]

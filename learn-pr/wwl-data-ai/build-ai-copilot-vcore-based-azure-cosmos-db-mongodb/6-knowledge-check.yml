@@ -3,11 +3,13 @@ uid: learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.kno
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 04/13/2024
+  description: Knowledge check
   author: wwlpublish
   ms.author: calopez
+  ms.date: 04/13/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 5
 content: |
 quiz:

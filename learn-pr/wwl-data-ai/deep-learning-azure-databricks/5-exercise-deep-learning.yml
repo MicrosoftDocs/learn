@@ -3,11 +3,13 @@ uid: learn.wwl.deep-learning-azure-databricks.exercise-deep-learning
 title: Exercise - Train deep learning models on Azure Databricks
 metadata:
   title: Exercise - Train deep learning models on Azure Databricks
-  description: "Exercise - Train deep learning models on Azure Databricks"
-  ms.date: 03/23/2023
+  description: Exercise - Train deep learning models on Azure Databricks
   author: wwlpublish
   ms.author: gmalc
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 45
 content: |
   [!include[](includes/5-exercise-deep-learning.md)]

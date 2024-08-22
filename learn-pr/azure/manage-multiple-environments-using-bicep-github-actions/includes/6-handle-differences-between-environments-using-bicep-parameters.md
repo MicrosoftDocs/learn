@@ -2,7 +2,7 @@ You've already learned about Bicep parameters. They help you specify values that
 
 Parameters are commonly used to support the differences between your environments. For example, in your non-production environments, you often want to deploy inexpensive SKUs of your Azure resources. In production, you want to deploy SKUs that have better performance. And you might want to use different names for resources in each environment.
 
-When you deploy your Bicep file, you provide values for each parameter. There are several options for how you specify the values for each parameter from your workflow, and how you specify separate values for each environment. In this unit, you learn about the approaches for specifying Bicep parameter values in a deployment workflow.
+When you deploy your Bicep file, you provide values for each parameter. There are several options for how you specify the values for each parameter from your workflow, and how you specify separate values for each environment. In this unit, you'll learn about the approaches for specifying Bicep parameter values in a deployment workflow.
 
 ## Parameter files
 
@@ -51,7 +51,7 @@ Like Bicep parameter files, YAML files aren't suitable for secrets. Instead, you
 
 [!INCLUDE [Best-effort protection for secrets](../../includes/github-actions-secret-best-effort.md)]
 
-When you create a secret, GitHub enables you to choose whether to scope it to your entire Git repository or to a specific environment. Environment-scoped secrets honor the protection rules you configure on your environments. So if you configure a required reviewer rule, a workflow can't access the secrets values until the specified GitHub user has approved your pipeline to deploy to that environment.
+When you create a secret, GitHub enables you to choose whether to scope it to your entire Git repository or to a specific environment. Environment-scoped secrets honor the protection rules you configure on your environments, so if you configure a required reviewer rule, a workflow can't access the secrets values until the specified GitHub user has approved your pipeline to deploy to that environment.
 
 Environment-scoped secrets can be helpful, but they don't easily work with Azure Resource Manager's preflight validation or what-if operations. These operations need to communicate with Azure, which means they need a workload identity. You generally want to provide deployment approval _after_ the preflight validation or what-if operations are completed, so that you but have a high degree of confidence in the changes that you're deploying. So, if you use environment-scoped secrets, the human review process happens too early in your workflow.
 

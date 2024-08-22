@@ -19,6 +19,10 @@ Your organization is exploring Azure virtual networking capabilities. As the Azu
 
 ## Objectives
 
+> [!NOTE]
+> You may find slight differences between the interactive simulation and the Azure environment, but the core concepts and ideas being demonstrated are the same.
+
+
 + **Task 1**: Create and configure a virtual network in Azure. 
     + Create a virtual network, **az104-04-vnet1**.
     + Add two subnets, **Subnet0** and **Subnet1**, to the virtual network.

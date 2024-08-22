@@ -7,7 +7,7 @@ If you're using the scenario of sharing the DR target with a QA system in one vi
 - `delta_datashipping` might require drastically less memory without the preload option than `logreplay` could require.
 - The memory requirement of `logreplay` operation mode without preload isn't deterministic and depends on the columnstore structures loaded. In extreme cases, you might require 50% of the memory of the primary instance. The memory for `logreplay` operation mode is independent of whether you chose to have the data preloaded set or not.
 
-:::image type="content" source="../media/two-vms-over-two-regions-e9400b16.png" alt-text="Diagram showing two virtual machines over two regions.":::
+:::image border="false" type="content" source="../media/two-vms-over-two-regions-e9400b16.png" alt-text="Diagram showing two virtual machines over two regions.":::
 
 In this configuration, you can't provide an RPO = 0 because your HANA system replication mode is asynchronous. If you need to provide an RPO = 0, this configuration isn't the configuration of choice.
 

@@ -3,11 +3,13 @@ uid: learn.wwl.run-training-script-command-job-azure-machine-learning.knowledge-
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 10/27/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 10/27/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
   questions:

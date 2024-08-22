@@ -12,7 +12,6 @@ metadata:
   manager: lizross
   ms.custom: engagement-fy23, devx-track-azurecli
   ms.topic: unit
-  ms.service: iot-dps
 durationInMinutes: 4
 content: |
   [!include[](includes/8-exercise-deprovision-group-enrollment.md)]

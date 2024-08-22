@@ -4,9 +4,9 @@ title: Exercise - Customize a Docker image to run your own web app
 metadata:
   title: Exercise - Customize a Docker image to run your own web app
   description: Create a Dockerfile that contains the instructions for building an image that runs your own application. Build the image and deploy it to the local Docker registry. Run the application by creating a container using this image. View the contents of the registry. Remove the image from the registry.
-  ms.date: 03/21/2022
-  author: MGoedtel
-  ms.author: magoedte
+  ms.date: 06/28/2024
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: unit
 durationInMinutes: 12
 content: |

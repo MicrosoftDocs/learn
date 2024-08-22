@@ -14,12 +14,12 @@ To meet these objectives, you'll:
 
 ## Get the GitHub repository
 
-Here you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files you need to get started for this module.
+Here, you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files you need to get started for this module.
 
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated GitHub template repository.
 
 > [!TIP]
-> Even if you completed the previous module in the learning path, please follow these instructions to create a new repository and ensure that you give it a new name.
+> Even if you completed the previous module in the learning path, follow these instructions to create a new repository and ensure that you give it a new name.
 
 ### Start from the template repository
 
@@ -42,7 +42,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
    When you create your own repositories, you might want to make them private. In this module, you'll work with some features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
 
-1. Select **Create repository from template**.
+1. Select **Create repository**.
 
    :::image type="content" source="../media/4-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page.":::
 
@@ -66,7 +66,7 @@ You now have a copy of the template repository in your own account. You'll now c
    cd toy-website-end-to-end
    ```
 
-1. Type `git clone` and then paste the URL you copied earlier, which looks something like this:
+1. Type `git clone`, then paste the URL you copied earlier. The command should look something like this:
 
    ```bash
    git clone https://github.com/mygithubuser/toy-website-end-to-end.git
@@ -303,7 +303,7 @@ You've created two workload identities, and resource groups that they can deploy
 
 1. In your browser, navigate to your GitHub repository.
 
-1. Select **Settings** > **Secrets** > **Actions**.
+1. Select **Settings** > **Secrets and variables** > **Actions**.
 
 1. Select **New repository secret**.
 

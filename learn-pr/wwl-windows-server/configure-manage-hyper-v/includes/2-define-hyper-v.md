@@ -1,6 +1,3 @@
-> [!CAUTION]
-> This article references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
-
 Hyper-V can subdivide the hardware capacity of a single host computer by allocating the host's hardware resources to multiple VMs. Hyper-V provides an isolated space for each VM to run its own operating system (OS) that's independent of the host's OS and other VMs.
 
 As a new Windows Server administrator for Contoso, you must identify the considerations for installing and configuring Hyper-V on Windows Server to ensure that workloads are optimized and stable.
@@ -35,7 +32,7 @@ The Hyper-V hypervisor takes full control of the hardware virtualization capabil
 An operating system that runs in a VM is referred to as a *guest operating system*. Hyper-V in Windows Server supports the following guest operating systems:
 
 - All supported Windows versions
-- These Linux editions: CentOS, Red Hat Enterprise Linux, Debian, Oracle Linux, SUSE, and Ubuntu
+- These Linux editions: Red Hat Enterprise Linux, Debian, Oracle Linux, SUSE, and Ubuntu
 - FreeBSD
 
 > [!IMPORTANT]

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.manage-sensitive-data-security-policies.scrub-sensitive-data-from-repository
-title: Scrub sensitive data from a repository
+title: Create and manage repository rulesets
 metadata:
   unitType: learning-content
-  title: Scrub sensitive data from a repository
+  title: Create and manage repository rulesets
   description: Learn about tools to help prevent committing sensitive data.
   ms.date: 05/03/2024
   author: a-a-ron

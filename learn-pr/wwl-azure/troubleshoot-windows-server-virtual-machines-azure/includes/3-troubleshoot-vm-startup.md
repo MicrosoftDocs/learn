@@ -10,7 +10,7 @@ It's important to know which of the startup problem you’re facing. You can use
 
 ### Review boot diagnostics
 
-Boot diagnostic screenshots can be very useful in determining the specific cause of a startup problem in your Windows Server VM. When you create a Windows VM in Azure, you can enable boot diagnostics. To verify this setting is enabled, use the following procedure:
+Boot diagnostic screenshots can be useful in determining the specific cause of a startup problem in your Windows Server VM. When you create a Windows VM in Azure, you can enable boot diagnostics. To verify this setting is enabled, use the following procedure:
 
 1. During VM creation, select the **Management** tab.
 
@@ -36,9 +36,9 @@ The following screenshot displays the output from the Serial log recorded from a
 
 ### Use the Azure Serial Console for Windows
 
-It's quite common to be unable to establish a connection to a VM that fails during startup. After all, if the operating system fails to start correctly, you might not be able to connect using more common methods, such as RDP, SSH, or Bastion. In these circumstances, you attempt to use the Azure Serial Console.
+It's common to be unable to establish a connection to a VM that fails during startup. After all, if the operating system fails to start correctly, you might not be able to connect using more common methods, such as RDP, SSH, or Bastion. In these circumstances, you attempt to use the Azure Serial Console.
 
-In order to use the Serial Console, your VM must have been configured to use the option **Enable with custom storage account** for the Boot diagnostics setting.
+In order to use the Serial Console, you must configure your VM to use the option **Enable with custom storage account** for the Boot diagnostics setting.
 
 You can use the Serial Console to connect to a VM via the Azure portal. Use the following procedure:
 
@@ -54,17 +54,17 @@ You can use the Serial Console to connect to a VM via the Azure portal. Use the 
 
    1. Press `<esc><tab>` to switch to the channel running your CMD instance.
 
-   1. When you've selected the correct channel, press **Enter** and then sign in with administrative credentials.
+   1. When you select the correct channel, press **Enter** and then sign in with administrative credentials.
 
    1. At the command prompt, enter `powershell'.
 
-You can now use Windows PowerShell to run cmdlets to investigate and resolve your startup problem. The following screenshot displays the PowerShell prompt in the serial console for a Windows Server VM called Contoso-VM3. The administrator has executed the `Get-Service | Where-Object {$_.Status -eq "Running"}` command to review running services.
+You can now use Windows PowerShell to run cmdlets to investigate and resolve your startup problem. The following screenshot displays the PowerShell prompt in the serial console for a Windows Server VM called Contoso-VM3. The administrator executed the `Get-Service | Where-Object {$_.Status -eq "Running"}` command to review running services.
 
 ![A screenshot displays the PowerShell prompt in the serial console for a Windows Server VM called Contoso-VM3. ](../media/serial-console.png)
 
 ## What are the common boot errors?
 
-Each server computer is different, but there are a number of common boot problems that are more frequently encountered. These include:
+Each server computer is different, but there are many common boot problems that are more frequently encountered. These include:
 
 - BitLocker errors
 
@@ -83,7 +83,7 @@ The following sections discuss the details about these specific startup issues.
 
 BitLocker offers protection for your operating system drive through whole drive encryption. The OS drive is unlocked during the early phase of startup.
 
-When you start up your VM, if it fails to start, review the screenshots in boot diagnostics. You'll be dealing with a BitLocker issue if the screenshots display any of the following messages:
+When you start up your VM, if it fails to start, review the screenshots in boot diagnostics. You're dealing with a BitLocker issue if the screenshots display any of the following messages:
 
 - Plug in the USB driver that has the BitLocker key
 
@@ -130,7 +130,7 @@ If that's unsuccessful, or not relevant, then use the following high-level steps
 
 1. Submit a support ticket to Microsoft and attach the memory dump file to the submission.
 
-If you cannot locate a dump file, you'll need to enable the dump log and Serial Console. On the recovery VM:
+If you can't locate a dump file, you need to enable the dump log and Serial Console. On the recovery VM:
 
 1. Open an elevated command prompt.
 
@@ -146,7 +146,7 @@ If your VM fails to start, check the boot diagnostics for recent screenshots. If
 
 - "Your PC ran into a problem and needs to restart. You can restart. For more information about this issue and possible fixes, visit https://windows.com/stopcode. If you call a support person, give them this info: Stop code: CRITICAL SERVICE FAILED"
 
-- "Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you. If you'd like to know more, you can search online later for this error: CRITICAL_SERVICE_FAILED"
+- "Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we restart for you. If you'd like to know more, you can search online later for this error: CRITICAL_SERVICE_FAILED"
 
 These problems generate a blue screen, and so are caused by the same issues as for other blue screen errors. The resolution is also the same.
 
@@ -154,13 +154,13 @@ These problems generate a blue screen, and so are caused by the same issues as f
 
 If you review the boot diagnostics for recent screenshots for a failed VM, and you notice one of the following errors, you're dealing with a problem related to Windows Update:
 
-- Installing Windows ##% Don't turn off your PC. This will take a while Your PC will restart several times.
+- Installing Windows ##% Don't turn off your PC. This takes a while Your PC restarts several times.
 
 - Keep your PC on until this is done. Installing update # of #...
 
 - We couldn't complete the updates. Undoing changes Don't turn off your computer.
 
-- Failure configuring Windows updates. Reverting changes. Do not turn off your computer.
+- Failure configuring Windows updates. Reverting changes. Don't turn off your computer.
 
 If you suspect that your startup problem relates to a failed update, use the following high-level procedure to attempt recovery:
 

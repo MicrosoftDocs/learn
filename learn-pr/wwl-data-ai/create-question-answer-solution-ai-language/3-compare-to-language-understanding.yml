@@ -3,11 +3,13 @@ uid: learn.wwl.create-question-answer-solution-ai-language.compare-to-language-u
 title: Compare question answering to Azure AI Language understanding
 metadata:
   title: Compare question answering to Azure AI Language understanding
-  description: "Compare question answering to Azure AI Language understanding"
-  ms.date: 08/31/2023
+  description: Compare question answering to Azure AI Language understanding
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 08/31/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/3-compare-to-language-understanding.md)]

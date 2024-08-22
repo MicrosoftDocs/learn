@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.use-databases-dotnet-aspire-app.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "In this unit, answer questions about the knowledge you gained in this module."
+  ms.date: 3/20/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: "Which database components have support for a database management tool?"
+    choices:
+    - content: "SQL Server, MySQL, and PostgreSQL"
+      isCorrect: false
+      explanation: "That's incorrect. Not all of these components support a management tool."
+    - content: "MySQL, PostgreSQL, and MongoDB"
+      isCorrect: true
+      explanation: "That's correct. MySQL supports PhpMyAdmin, PostgreSQL supports pgAdmin, and MongoDB supports Mongo Express."
+    - content: "SQL Server, MySQL, and MongoDB"
+      isCorrect: false
+      explanation: "That's incorrect. Not all of these components support a management tool."
+  - content: "What ways are there to manage the configuration for a MongoDB connection?"
+    choices:
+    - content: "Connection strings in the appsettings.json file and inline code."
+      isCorrect: false
+      explanation: "That's incorrect. These two ways are supported but there are more."
+    - content: "With inline code and using Microsoft.Extensions.Configuration."
+      isCorrect: false
+      explanation: "That's incorrect. These two ways are supported but there are more."
+    - content: "Using Microsoft.Extensions.Configuration, connection strings, and inline code."
+      isCorrect: true
+      explanation: "That's correct. All of these ways are supported."

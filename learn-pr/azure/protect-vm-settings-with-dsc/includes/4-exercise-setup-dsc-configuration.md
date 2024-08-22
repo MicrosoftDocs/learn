@@ -15,7 +15,7 @@ Start by deploying a new VM from a Windows Server 2022 image.
 
     ```azurecli
     az vm create \
-      --resource-group <rgn>[Sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[Sandbox resource group name]</rgn>" \
       --name myVM \
       --image win2019datacenter \
       --admin-username $USERNAME \
@@ -44,7 +44,7 @@ Start by deploying a new VM from a Windows Server 2022 image.
     ```azurecli
     az vm open-port \
       --port 80 \
-      --resource-group <rgn>[Sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[Sandbox resource group name]</rgn>" \
       --name myVM
     ```
 

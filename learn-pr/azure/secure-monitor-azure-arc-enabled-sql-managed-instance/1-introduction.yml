@@ -4,9 +4,9 @@ title: Introduction
 metadata:
   title: Introduction
   description: Discover how to enhance security and implement monitoring of Azure Arc-enabled SQL Managed Instance.
-  ms.date: 12/23/2022
-  author: tchristiani
-  ms.author: terrychr
+  ms.date: 08/07/2024
+  author: MikeRayMSFT
+  ms.author: mikeray
   ms.topic: unit
 durationInMinutes: 3
 content: |

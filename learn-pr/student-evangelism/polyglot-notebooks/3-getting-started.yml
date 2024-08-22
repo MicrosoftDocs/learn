@@ -4,11 +4,15 @@ title: How to use Polyglot Notebooks
 metadata:
   title: How to use Polyglot Notebooks
   description: Learn how to install the Polyglot Notebook extension in Visual Studio Code and create your first notebook. The Polyglot Notebook extension is powered by .NET Interactive.
-  ms.date: 04/03/2024
   author: japhletnwamu
   ms.author: japhletnwamu
+  ms.date: 04/03/2024
   ms.topic: unit
-  ms.custom: team=cloud_advocates
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-dotnet
 durationInMinutes: 7
 content: |
   [!include[](includes/3-getting-started.md)]

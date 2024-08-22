@@ -4,7 +4,7 @@ In this unit, you'll learn how to write efficient code that sends events to stru
 
 ## ILogger objects
 
-A .NET Aspire app sets up the OpenTelemetry API automatically when you create a project based on the templates or add an existing project to .NET Aspire orchestration. When you want to record telemetry, you don't need to create your own logging, metrics, or tracing objects. Instead you can retrieve them by using dependency injection in your microservices.
+The .NET Aspire tooling sets up the OpenTelemetry API automatically when you create a project based on the templates or add an existing project to .NET Aspire orchestration. When you want to record telemetry, you don't need to create your own logging, metrics, or tracing objects. Instead you can retrieve them by using dependency injection in your microservices.
 
 For example, in the following `BasketService` class, an `ILogger` object is included in the class declaration. You can use that logger anywhere in the class to write events:
 

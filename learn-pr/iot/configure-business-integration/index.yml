@@ -3,6 +3,7 @@ uid: learn.wwl.configure-business-integration
 metadata:
   title: Configure business integration in Azure IoT Central
   description: Examine features that support solution management, administration, business integration, and data analytics capabilities built into Azure IoT Central.
+  ms.service: iot-central
   ms.date: 05/11/2023
   author: dominicbetts
   ms.author: dobett

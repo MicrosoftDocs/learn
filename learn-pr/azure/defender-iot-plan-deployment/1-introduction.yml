@@ -8,7 +8,6 @@ metadata:
   author: limwainstein
   ms.author: lwainstein
   ms.topic: unit
-  ms.service: defender-for-iot
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
