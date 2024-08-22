@@ -8,7 +8,7 @@ metadata:
   ms.author: glenga
   ms.topic: module-intro-to-product
   ms.service: azure-functions
-  manager: mijacobs
+  manager: susanpotter
 title: Introduction to Azure Functions
 summary: Learn how Azure Functions helps you to easily integrate serverless compute resources into your cloud-based solutions. An extensive set of bindings makes it easy for you to connect your code to key Azure services, while built-in support for the most used development languages lets you better use your existing skills.  
 abstract: |

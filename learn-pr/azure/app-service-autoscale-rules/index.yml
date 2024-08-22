@@ -8,7 +8,7 @@ metadata:
   ms.author: cephalin
   ms.topic: module
   ms.service: azure-app-service
-  manager: mijacobs
+  manager: susanpotter
 title: Dynamically meet changing web app performance requirements with autoscale rules
 summary: Respond to periods of high activity by incrementally adding resources, and then removing these resources when activity drops, to reduce costs.
 abstract: |

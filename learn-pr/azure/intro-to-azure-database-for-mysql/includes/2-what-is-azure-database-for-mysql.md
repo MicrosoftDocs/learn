@@ -1,4 +1,5 @@
 To help you decide whether your organization can benefit from migrating to Azure Database for MySQL, let's start with a quick overview of DBaaS databases and suitable options for hosting MySQL on Azure and Azure Database for MySQL.
+
 ## What is DBaaS?
 
 With a DBaaS, organizations can set up and access databases in the cloud without the need to manage virtual machines (VMs) and other underlying infrastructure. Azure Database for MySQL, a fully managed service, exemplifies this by enabling the development of database applications on a DBaaS platform, with all configuration and maintenance handled by Microsoft Azure.
@@ -12,18 +13,18 @@ MySQL is an open-source, robust database platform extensively used by both devel
 
 ## How to choose a suitable hosting option
 
-With Azure, your MySQL workloads can run in a hosted virtual machine infrastructure as a service (IaaS) or as a hosted platform as a service (PaaS), also referred to as a relational database as a service (DBaaS). The following represent the two hosting options covered by this module:
+With Azure, your MySQL workloads can run in a hosted VM infrastructure as a service (IaaS) or as a hosted platform as a service (PaaS), also referred to as a relational database as a service (DBaaS). The two hosting options covered by this module include:
 
-- **Azure Database for MySQL flexible server**: Azure Database for MySQL flexible server is a fully managed, relational DBaaS hosted on Azure and is based on the open-source MySQL Community Edition. It provides several availability, maintenance, security and performance capabilities, out-of-the-box, requiring almost no administration, but also allows for granular control and flexibility over database management functions and configuration settings.
+- **Azure Database for MySQL - Flexible Server**: Azure Database for MySQL - Flexible Server is a fully managed, relational DBaaS hosted on Azure and is based on the open-source MySQL Community Edition. It provides several availability, maintenance, security, and performance capabilities out-of-the-box, requiring almost no administration, but also allows for granular control and flexibility over database management functions and configuration settings.
 
 > [!NOTE]  
-> Throughout this module, when you see "Azure Database for MySQL", we are referring to Azure Database for MySQL flexible server.
+> Throughout this module, when you see "Azure Database for MySQL", we are referring to Azure Database for MySQL - Flexible Server.
 
-- **MySQL on Azure VMs**: For those requiring IaaS, this option offers flexibility in managing MySQL Server on Azure's managed VMs, suitable for scenarios not covered by DBaaS benefits.
+- **MySQL on Azure VMs**: For those requiring IaaS, this option offers flexibility in managing MySQL on Azure's managed VMs, suitable for scenarios that do not require DBaaS benefits.
 
 Let's examine these options more closely.
 
-### Azure Database for MySQL flexible server deployment mode
+### Azure Database for MySQL - Flexible Server deployment mode
 
 Azure Database for MySQL is a fully managed, relational DBaaS platform hosted in Azure. The service provides:
 
@@ -31,7 +32,7 @@ Azure Database for MySQL is a fully managed, relational DBaaS platform hosted in
 - Data protection with automatic and on-demand backups and the option for long-term retention (up to 10 years in preview).
 
    > [!NOTE]  
-   > Azure Database for MySQL uses automatic backups and point-in-time restoration for up to 35 days, which you can use independently or in addition to long-term retention.
+   > Azure Database for MySQL uses automatic backups and point-in-time restoration for up to 35 days, which you can use independently of or in addition to long-term retention.
 
 - Automated maintenance, to ensure that the service is the most secure and up to date, of the following components:
 
@@ -48,7 +49,7 @@ Azure Database for MySQL is a fully managed, relational DBaaS platform hosted in
 
 These standard features require little administrative effort to implement and configure.
 
-Azure Database for MySQL supports common tools like MySQL Workbench and integrates with Azure Data Studio through the [MySQL extension](/azure-data-studio/extensions/mysql-extension), maintaining a familiar workflow for developers. It provides you the flexibility to develop applications using your favorite tools, languages, and frameworks, deploy faster by integrating with Azure services like App Services or AKS, and automate CI/CD tasks using GitHub or Azure DevOps.
+Azure Database for MySQL supports common tools like MySQL Workbench, and it integrates with Azure Data Studio through the [MySQL extension](/azure-data-studio/extensions/mysql-extension), maintaining a familiar workflow for developers. The service provides you with the flexibility to develop applications using your favorite tools, languages, and frameworks, to deploy faster by integrating with Azure services like App Services or AKS, and to automate CI/CD tasks using GitHub or Azure DevOps.
 
 Consider this deployment mode to support cloud-native apps and solutions that:
 
@@ -73,12 +74,12 @@ Consider this deployment mode to support cloud-native apps and solutions that:
 
 #### MySQL on Azure VMs
 
-This mode belongs to the industry category of IaaS rather than being a fully managed database service. It allows you to run MySQL Server inside a managed VM on the Azure cloud platform.
+This hosting option is categorized as IaaS rather than being a fully managed database service. It allows you to run MySQL inside a managed VM on the Azure cloud platform.
 
 > [!TIP]  
 > You can install all recent versions and editions of MySQL in your hosted VM.
 
-Consider this mode only when you need to trade the ease of use and other benefits included in a DBaaS platform for greater control provided by IaaS deployments.
+Consider this option only when you need the greater level of control provided by IaaS deployments and can forgo  the ease of use and other benefits included in a DBaaS platform.
 
 ## How are the hosting options different?
 
@@ -91,10 +92,10 @@ You can deploy MySQL on Azure in different ways. The following table identifies 
 
 Here is a closer examination of the differences in features:
 
-- **MySQL Version Support**:
+- **MySQL version support**:
   - Azure Database for MySQL supports MySQL versions 5.7 and 8.0, with automated major and minor version upgrades.
   - MySQL on Azure VMs allows any MySQL version installation, providing flexibility for legacy support.
-- **Compute Scaling**:
+- **Compute scaling**:
   - Both options provide scalable resources to accommodate varying load demands.
 - **Network connectivity**:
   - All options support:

@@ -5,6 +5,7 @@ metadata:
   description: In this module, you'll learn about the components built into .NET Aspire that make it simple to store files, data, and messages in Azure Storage accounts.
   author: camsoper
   ms.author: casoper
+  manager: coxford
   ms.topic: module
   ms.service: dotnet-aspire
   ms.custom:
