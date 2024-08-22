@@ -42,5 +42,5 @@ When a user connects to a Windows VM via RDP, they must have rights on the targe
     
 3.  When you select Connect, the RDP connection to this virtual machine via Bastion will open in your browser (over HTML5) using port 443 and the Bastion service. The following example shows a connection to a Windows 11 virtual machine in a new browser tab. The page you see depends on the VM you're connecting to.
     
-    :::image type="content" source="../media/connection-result-bastion-new-aa3c5083.png":::
+    :::image type="content" source="../media/connection-result-bastion-new-aa3c5083.png" alt-text="Screenshot of connecting to a Windows 11.":::
     When working with the VM, using keyboard shortcut keys may not result in the same behavior as shortcut keys on a local computer. For example, when connected to a Windows VM from a Windows client, CTRL+ALT+END is the keyboard shortcut for CTRL+ALT+Delete on a local computer. To do this from a Mac while connected to a Windows VM, the keyboard shortcut is Fn+CTRL+ALT+Backspace.
