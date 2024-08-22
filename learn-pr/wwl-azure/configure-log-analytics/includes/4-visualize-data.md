@@ -27,5 +27,5 @@ Here are some of the many things you can accomplish with log queries in Log Anal
 
 - Add visualizations for your saved log searches to see graphical views of your environment health.
 
-- Export your data from the repository into tools like Power BI or Excel to analyze your data outside of Log Analytics.
+- Export your data from the repository into analytical tools like Power BI or Excel.
 
