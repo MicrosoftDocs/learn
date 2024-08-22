@@ -4,11 +4,11 @@ Azure Database for MySQL - Flexible Server is a fully managed, scalable service 
 
 Imagine you're a large financial services company developer, using the LAMP (Linux, Apache, MySQL, PHP/Perl/Python) stack to develop a web-based application. Currently, your application's proof-of-concept uses an on-premises MySQL server. As the project moves toward a pilot phase in several branch offices, you foresee that the existing server can't handle the anticipated high transaction volume. You also have concerns about the resilience of your current setup.
 
-To tackle these challenges, you're looking at leveraging cloud solutions and specifically considering deploying your MySQL database on Microsoft Azure. You prefer to focus more on your programming than managing infrastructure, so you're inclined to explore Azure Database for MySQL – Flexible Server, a managed service, rather than managing MySQL on Azure VMs.
+To tackle these challenges, you're looking at using cloud solutions and specifically considering deploying your MySQL database on Microsoft Azure. You prefer to focus more on your programming than managing infrastructure, so you're inclined to explore Azure Database for MySQL – Flexible Server, a managed service, rather than managing MySQL on Azure VMs.
 
 ## What you will do
 
-In this module, you will explore the core functionality of Azure Database for MySQL. Then, you'll use your newly acquired knowledge to set up an instance of Azure Database for MySQL - Flexible Server and connect to it.
+In this module, you explore the core functionality of Azure Database for MySQL. Then, you use your newly acquired knowledge to set up an instance of Azure Database for MySQL - Flexible Server and connect to it.
 
 ## Primary goal
 
