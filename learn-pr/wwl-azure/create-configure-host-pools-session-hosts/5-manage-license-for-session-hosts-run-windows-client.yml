@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-configure-host-pools-session-hosts.manage-licensing-for-that-run-windows-client
-title: Manage licensing for session hosts that run Windows client
+title: 'Create a host pool '
 metadata:
-  title: Manage licensing for session hosts that run Windows client
-  description: "Manage licensing for session hosts that run Windows client"
-  ms.date: 09/25/2023
+  title: Create a host pool
+  description: "Create a host pool"
+  ms.date: 08/22/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
