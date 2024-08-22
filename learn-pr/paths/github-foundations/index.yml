@@ -2,7 +2,7 @@
 uid: learn.github-foundations
 metadata:
   title: GitHub Foundations
-  description: The "GitHub Foundations Learning Path" is a concise and beginner-friendly journey designed to introduce you to the fundamental concepts and products of GitHub.
+  description: The GitHub Foundations Learning Path is a concise and beginner-friendly journey designed to introduce you to the fundamental concepts and products of GitHub.
   brand: github
   ms.date: 08/21/2024
   author: a-a-ron
@@ -10,7 +10,7 @@ metadata:
   ms.topic: learning-path
 title: GitHub Foundations
 summary: |
-   The "GitHub Foundations Learning Path" is a concise and beginner-friendly journey designed to introduce you to the fundamental concepts and products of GitHub. You'll discover the benefits of using GitHub as a collaborative platform and explore its core features, such as repository management, commits, branches, and merging.
+   The GitHub Foundations Learning Path is a concise and beginner-friendly journey designed to introduce you to the fundamental concepts and products of GitHub. You'll discover the benefits of using GitHub as a collaborative platform and explore its core features, such as repository management, commits, branches, and merging.
 
     In this learning path, you'll:
 
