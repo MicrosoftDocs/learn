@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: azure-functions
   ms.subservice: durable
-  manager: mijacobs
+  manager: susanpotter
 title: Create a long-running serverless workflow with Durable Functions
 summary: Learn how to orchestrate a long-running workflow as a set of activities using Durable Functions. 
 abstract: |
