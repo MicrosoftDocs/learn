@@ -14,23 +14,15 @@ metadata:
 title: Explore fundamentals of data visualization
 summary: Learn the fundamental principles of analytical data modeling and data visualization, using Microsoft Power BI as a platform to explore these principles in action.
 abstract: |
-  After completing this module, you'll be able to:
+  After completing this module you'll be able to:
 
-  -
+  -   Describe a high-level process for creating reporting solutions with Microsoft Power BI.
 
-  Describe a high-level process for creating reporting solutions with Microsoft Power BI.
+  -   Describe core principles of analytical data modeling.
 
-  -
+  -   Identify common types of data visualization and their uses.
 
-  Describe core principles of analytical data modeling.
-
-  -
-
-  Identify common types of data visualization and their uses.
-
-  -
-
-  Create an interactive report with Power BI Desktop.
+  -   Create an interactive report with Power BI Desktop.
 prerequisites: '-   None'
 iconUrl: /training/achievements/5-explore-fundamentals-of-data-visualization.svg
 levels:
