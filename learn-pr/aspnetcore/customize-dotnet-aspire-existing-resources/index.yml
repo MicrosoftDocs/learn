@@ -5,6 +5,7 @@ metadata:
   description: In this module, you'll learn how to move backing services for your Azure-hosted .NET Aspire app from containers into native Azure services.
   author: camsoper
   ms.author: casoper
+  manager: coxford
   ms.topic: module
   ms.service: dotnet-aspire
   ms.custom:
