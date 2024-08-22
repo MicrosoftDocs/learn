@@ -15,7 +15,10 @@ title: Explore data roles and services
 summary: Data professionals perform distinct roles in building and managing software solutions, and work with multiple technologies and services to do so.
 abstract: |
   In this module you learn how to:
-   - Identify common data professional roles. - Identify common cloud services used by data professionals.
+
+  -   Identify common data professional roles.
+
+  -   Identify common cloud services used by data professionals.
 prerequisites: None
 iconUrl: /training/achievements/explore-roles-responsibilities-world-of-data.svg
 levels:
