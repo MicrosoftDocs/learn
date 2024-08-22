@@ -34,7 +34,7 @@ Scatter plots are useful when you want to compare two numeric measures and ident
 
 ## Maps
 
-![Screenshot of a map showing comparative revenue by city](../media//map.png)
+![Screenshot of a map showing comparative revenue by city.](../media//map.png)
 
 Maps are a great way to visually compare values for different geographic areas or locations.
 
