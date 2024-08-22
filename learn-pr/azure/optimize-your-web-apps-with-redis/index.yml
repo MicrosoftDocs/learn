@@ -8,7 +8,7 @@ metadata:
   ms.author: franlanglois
   ms.topic: module-standard-task-based
   ms.service: azure-cache-redis
-  manager: mcleans
+  manager: susanpotter
 title: Optimize your web applications by caching read-only data with Redis
 summary: Use Redis caching in Azure to reduce the load on databases. Apply different caching architectures to support larger loads in distributed and high-volume environments.
 abstract:  |
