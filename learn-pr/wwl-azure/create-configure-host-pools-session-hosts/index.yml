@@ -3,7 +3,7 @@ uid: learn.wwl.create-configure-host-pools-session-hosts
 metadata:
   title: Create and configure host pools and session hosts for Azure Virtual Desktop
   description: "Create and configure host pools and session hosts for Azure Virtual Desktop"
-  ms.date: 08/19/2024
+  ms.date: 08/22/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
@@ -41,7 +41,7 @@ units:
 - learn.wwl.create-configure-host-pools-session-hosts.plan-host-pools-session-hosts
 - learn.wwl.create-configure-host-pools-session-hosts.operating-systems-azure-regions
 - learn.wwl.create-configure-host-pools-session-hosts.network-remote-desktop-client-planning
-- learn.wwl.create-configure-host-pools-session-hosts.manage-license-for-session-hosts-run-windows-client
+- learn.wwl.create-configure-host-pools-session-hosts.manage-licensing-for-that-run-windows-client
 - learn.wwl.create-configure-host-pools-session-hosts.create-host-pool-azure-portal
 - learn.wwl.create-configure-host-pools-session-hosts.add-session-hosts-pool
 - learn.wwl.create-configure-host-pools-session-hosts.customize-remote-desktop-properties-host-pool
