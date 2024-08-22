@@ -4,8 +4,7 @@ After creating a new external tenant, you can customize the end-user experience.
 
 > [!NOTE]
 > You'll need at least the [Organizational Branding Administrator](/entra/identity/role-based-access-control/permissions-reference#organizational-branding-administrator) directory role to configure branding of your flows.
-
-[Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
+> Do you have feedback? [Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
 
 ::: zone pivot="microsoft-entra-admin-center"
 

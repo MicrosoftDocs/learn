@@ -4,8 +4,7 @@ A [user flow](/entra/external-id/customers/how-to-user-flow-sign-up-sign-in-cust
 
 > [!NOTE]
 > You'll need at least the [External ID User Flow Administrator](/entra/identity/role-based-access-control/permissions-reference#external-id-user-flow-administrator) directory role to create user flows.
-
-[Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
+> Do you have feedback? [Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
 
 ::: zone pivot="microsoft-entra-admin-center"
 

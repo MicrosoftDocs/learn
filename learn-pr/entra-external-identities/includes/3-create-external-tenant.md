@@ -4,7 +4,7 @@ You'll need to create a tenant with external configuration in the [Microsoft Ent
 
 > [!NOTE]
 > You'll need at least the [Tenant Creator](/entra/identity/role-based-access-control/permissions-reference#tenant-creator) directory role to create an external tenant. 
-> [Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
+> Do you have feedback? [Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
 
 ::: zone pivot="microsoft-entra-admin-center"
 
@@ -13,7 +13,9 @@ You'll need to create a tenant with external configuration in the [Microsoft Ent
 If you don't have an Azure subscription, you can create a trial tenant for free.
 
 > [!IMPORTANT]
-> At the end of the free trial period, extensions are not offered and your free trial tenant will be disabled and deleted if there is no Azure subscription added. You can always come back and register for another trial using the same link [aka.ms/ciam-free-trial](https://www.aka.ms/ciam-free-trial), or, if you're ready to upgrade your tenant before the trial period of 30 days is over, you can [upgrade your free trial tenant](/entra/external-id/customers/quickstart-trial-setup#upgrade-your-free-trial-by-adding-an-azure-subscription).
+> At the end of the 30-day free trial period, extensions are not available. If no Azure subscription is added, your free trial tenant will be disabled and deleted. You have the following options:
+> - **Upgrade your tenant:** If you're ready to upgrade before the trial period ends, you can [upgrade your free trial tenant to a paid subscription](/entra/external-id/customers/quickstart-trial-setup#upgrade-your-free-trial-by-adding-an-azure-subscription).
+> - **Register for another trial:** Use the same link [aka.ms/ciam-free-trial](https://www.aka.ms/ciam-free-trial) to start a new trial.
 
 1. To create a trial tenant, navigate to [aka.ms/ciam-free-trial](https://www.aka.ms/ciam-free-trial).
 1. On the **Sign in** page, use the sign-in box (label A) to enter your Outlook or Hotmail email. If you don't have any of those, you can select **Create one!** (label B) to create a new Outlook account. Alternatively, you can also sign in with your GitHub account (label C).
