@@ -58,7 +58,7 @@ The table below guides estimating of the data used by the different graphic scen
 
 | **Scenario**              | **Default mode** | **H.264/AVC 444 mode** | **Description of the scenario**                                                                                                                                     |
 | ------------------------- | ---------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| dle                       | 0.3 Kbps         | 0.3 Kbps               | User is paused their work and there's no active screen updates                                                                                                      |
+| Idle                      | 0.3 Kbps         | 0.3 Kbps               | User is paused their work and there's no active screen updates                                                                                                      |
 | Microsoft Word            | 100-150 Kbps     | 200-300 Kbps           | User is actively working with Microsoft Word, typing, pasting graphics and switching between documents                                                              |
 | Microsoft Excel           | 150-200 Kbps     | 400-500 Kbps           | User is actively working with Microsoft Excel, multiple cells with formulas and charts are updated simultaneously                                                   |
 | Microsoft PowerPoint      | 4-4.5 Mbps       | 1.6-1.8 Mbps           | User is actively working with Microsoft PowerPoint, typing, pasting. User also modifying rich graphics, and using slide transition effects                          |
