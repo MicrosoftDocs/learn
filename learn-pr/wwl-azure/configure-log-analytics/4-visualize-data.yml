@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-log-analytics.visualize-data
-title: Create Kusto (KQL) queries
+title: Create Kusto queries
 metadata:
-  title: Create Kusto (KQL) queries
-  description: "Create Kusto (KQL) queries and quickly retrieve and consolidate your monitoring data."
+  title: Create Kusto queries
+  description: "Create Kusto queries and quickly retrieve and consolidate your monitoring data."
   ms.date: 08/22/2024
   author: wwlpublish
   ms.author: cynthist
