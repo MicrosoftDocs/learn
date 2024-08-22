@@ -8,7 +8,7 @@ A mitigation strategy is a measure or collection of steps that an organization t
 
 Traditionally, if someone's password or username is compromised, this allows a cybercriminal to gain control of the account. But multifactor authentication was introduced to combat this.
 
-Multifactor authentication works by requiring a user to provide multiple forms of identification to verify that they are who they claim to be. The most common form of identification used to verify or authenticate a user is a password.  This represents something the user knows.  
+Multifactor authentication works by requiring a user to provide multiple forms of identification to verify that they are who they claim to be. The most common form of identification used to verify or authenticate a user is a password. This represents something the user knows. 
 
 Two other authentication methods provide something the user *is*, such as a fingerprint or retinal scan (a biometric form of authentication), or provide something the user *has*, such as a phone, hardware key, or other trusted device. Multifactor authentication employs two or more of these forms of proof to verify a valid user.
 
@@ -30,7 +30,7 @@ Social engineering attacks rely on the vulnerabilities of humans to cause harm. 
 - Identify suspicious elements in a message.
 - Never respond to external requests for personal information.
 - Lock devices when they're not in use.
-- Only store, share and remove data according to the organization's policies.
+- Only store, share, and remove data according to the organization's policies.
 
 ### Threat intelligence
 
