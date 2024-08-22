@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module
+  ai-usage: ai-assisted
   ms:service: security
   ms.service: azure
 title: Describe the security management capabilities in Azure
