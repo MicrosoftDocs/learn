@@ -31,7 +31,7 @@ There are two separate settings that affect public access:
 
 Use the Microsoft Entra option to securely access Azure Storage without storing any credentials in your code. AD authorization takes a two-step approach. First, you authenticate a security principal that returns an OAuth 2.0 token if successful. This token is then passed to Azure Storage to enable authorization to the requested resource.
 
-Use this form of authentication if you're running an app with managed identities or using security principals.
+Use this form of authentication if you're running an app with managed identities or using service principals.
 
 ### Shared key
 

@@ -6,6 +6,7 @@ metadata:
   ms.date: 3/22/2024
   author: camsoper
   ms.author: casoper
+  manager: coxford
   ms.topic: module
   ms.service: dotnet-aspire
 title: Store data in Azure Cosmos DB with .NET Aspire
