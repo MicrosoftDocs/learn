@@ -1,4 +1,4 @@
-To complete your proof of concept, you need to validate the process of encrypting, deduplicating, and compressing volumes. You noticed the options indicating support for these features when you were testing volume creation in Windows Admin Center, but before you try implementing them, you want to identify any considerations regarding their use.
+To complete your proof of concept, you need to validate the process of encrypting, deduplicating, and compressing volumes. You noticed the options indicating support for these features when you were testing volume creation in Windows Admin Center. Before you try implementing them, you want to identify any considerations regarding their use.
 
 ## Describe considerations regarding encrypting, deduplicating, and compressing volumes
 
@@ -44,7 +44,7 @@ Data Deduplication supports the following configuration options:
     - Optimize partial files = No
 
 > [!NOTE]
-> Small files (smaller than 32 kilobytes (KB)), encrypted files (on NTFS volumes), and files with extended attributes (on NTFS volumes) are excluded from deduplication. You also have the option to exclude individual folders or files from deduplication based on their type.
+> Small files (smaller than 32 kilobytes), encrypted files (on NTFS volumes), and files with extended attributes (on NTFS volumes) are excluded from deduplication. You also have the option to exclude individual folders or files from deduplication based on their type.
 
 Windows Admin Center simplifies deduplication and encryption implementation by automatically installing the required operating system components and configuring the usage type you specify.
 
