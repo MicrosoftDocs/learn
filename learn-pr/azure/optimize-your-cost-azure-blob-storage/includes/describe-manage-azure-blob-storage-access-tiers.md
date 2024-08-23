@@ -21,7 +21,7 @@ An early deletion charge is prorated according to the number of days remaining i
 
 When you choose between hot, cool, cold, and archive access tiers, there are additional factors to consider. It’s also helpful to understand the different access tiers' management models.
 
-In addition to pricing differences, blobs in the archive, cold, and cool tiers have a slightly lower availability Service Level Agreement (SLA) when compared with hot access tier. However, all three tiers offer the same durability, throughput, and storage access latency characteristics. Their retrieval time is in the range of milliseconds. The hot and cool tiers also support all redundancy options.
+In addition to pricing differences, blobs have different availability [**Service Level Agreements (SLA)**](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services?). The archive, cold, and cool tiers offer the same durability, throughput, and storage access latency characteristics. Their retrieval time is in the range of milliseconds. The hot and cool tiers also support all redundancy options.
 
 The hot, cool, cold, or archive access tier can be assigned to a blob directly during its upload. Alternatively, hot or cool access tiers (but not archive or cold) can be inferred based on the access tier specified as the default tier on the storage account level. However, any explicit tier assignment takes precedence over the inferred one.
 
