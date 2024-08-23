@@ -6,7 +6,7 @@ You have the option to enable encryption, deduplication, and compression on Azur
 
 ### Describe considerations regarding encrypting volumes
 
-*BitLocker* is a data protection feature that integrates with Azure Stack HCI and provides support for CSVs. Encryption can be enabled when the volume is being created or at any point afterwards. However, if you enable it after it’s created, any volume‑dependent resource should be placed into the maintenance mode.
+*BitLocker* is a data protection feature that integrates with Azure Stack HCI and provides support for Cluster Shared Volumes (CSVs). Encryption can be enabled when the volume is being created or at any point afterwards. However, if you enable it after it’s created, any volume‑dependent resource should be placed into the maintenance mode.
 
 Windows Admin Center simplifies the BitLocker implementation by automatically installing the required operating system feature and configuring an Active Directory Domain Services (AD DS)–based protector for securing clustered volumes.
 
