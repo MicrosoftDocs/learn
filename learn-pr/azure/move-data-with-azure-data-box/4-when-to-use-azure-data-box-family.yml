@@ -5,8 +5,8 @@ metadata:
   title: When to use Azure Data Box family
   description: In this unit, you compare Azure Data Box products to other tools.
   ms.date: 05/01/2023
-  author: alkohli
-  ms.author: alkohli
+  author: stevenmatthew
+  ms.author: shaas
   manager: femila
   ms.topic: unit
 durationInMinutes: 7
