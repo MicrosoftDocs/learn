@@ -34,7 +34,7 @@ products:
 subjects:
 - devops
 modules:
-- learn.github.intro-to-git
+- learn.intro-to-git
 - learn.github.introduction-to-github
 - learn.github.github-introduction-products
 - learn.github.configure-code-scanning
@@ -42,13 +42,13 @@ modules:
 - learn.github.code-with-github-codespaces
 - learn.github.manage-work-github-projects
 - learn.github.communicate-using-markdown
-- learn.github.contribute-open-source
+- learn.contribute-open-source
 - learn.github.manage-innersource-program-github
 - learn.github.maintain-secure-repository-github
 - learn.github.github-introduction-administration
 - learn.github.authenticate-authorize-user-identities-github
 - learn.github.manage-changes-pull-requests-github
 - learn.github.search-organize-repository-history-github
-- learn.github.introduction-copilot-python
+- learn.introduction-copilot-python
 trophy:
   uid: learn.generic-trophy.svg
