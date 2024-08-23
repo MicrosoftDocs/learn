@@ -1,4 +1,4 @@
-You have completed the planning stage and now are ready to create volumes in your Azure Stack HCI proof-of-concept environment. You use Windows Admin Center for this purpose.
+You completed the planning stage and now are ready to create volumes in your Azure Stack HCI proof-of-concept environment. You use Windows Admin Center for this purpose.
 
 ## Create a three-way mirror volume
 
@@ -13,7 +13,7 @@ To create a three-way mirror volume:
 :::image type="content" source="../media/4-create-volume-windows-admin-center.png" alt-text="Screenshot of Volumes page on Windows Admin Center, with a new volume being created." border="true" lightbox="../media/4-create-volume-windows-admin-center.png":::
 
 
-After the volume is created, Windows Admin Center will generate a notification and the new volume will appear in the **Inventory** list.
+After the volume is created, Windows Admin Center will generate a notification, and the new volume will appear in the **Inventory** list.
 
 ## Create a mirror-accelerated parity volume
 

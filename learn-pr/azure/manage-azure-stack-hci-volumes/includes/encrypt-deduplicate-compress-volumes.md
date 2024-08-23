@@ -17,7 +17,7 @@ Windows Admin Center simplifies the BitLocker implementation by automatically in
 
 Data deduplication and compression is an operating system role service that increases the usable capacity of NTFS and ReFS volumes by deduplicating and compressing volume files. When these files are read, the deduplicated and compressed content is automatically assembled.
 
-Data deduplication and compression follows the post-processing approach. This means that it optimizes the files stored on the volume where you enabled both of these features, rather than attempting to optimize them as part of a write operation. This minimizes its potential performance impact. The processing is handled by a scheduled background job whose characteristics depend on the configuration options that you specify.
+Data deduplication and compression follows the post-processing approach. This means that it optimizes the files stored on the volume where you enabled both of these features, rather than attempting to optimize them as part of a write operation. This minimizes its potential performance impact. A scheduled background job, whose characteristics depend on the configuration options that you specify, handles the processing.
 
 Data Deduplication supports the following configuration options:
 
@@ -56,9 +56,9 @@ To configure encryption, deduplication, and compression of Azure Stack HCI volum
 1. In the **Tools** pane, select **Volumes**.
 1. On the **Volumes** page, select the **Inventory** tab, and then select the volume you intend to configure.
 1. In the **Volume details** pane, in the **Optional features** section:
-    1. Turn the **Deduplication and compression** switch on. To do this:
+    1. Turn on the **Deduplication and compression** switch. To do this:
         1. In the **Enable deduplication** pane, select the deduplication mode.
         1. Select the deduplication profile you intend to use, or keep the default, and then select **Enable**.
-    1. Turn the **Encryption (BitLocker)** switch on.
+    1. Turn on the **Encryption (BitLocker)** switch.
 
 You can check the status of each of these features in the overview pane of the corresponding volume.

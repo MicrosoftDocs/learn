@@ -26,7 +26,7 @@ When planning for Storage Spaces Direct volumes, you should consider:
 
 ## Choose the number of volumes
 
-To optimize storage performance, the number of volumes per server should be a multiple of the number of servers per cluster. For example, if you have four servers, you experience more consistent performance with four or eight volumes per server. Configured this way, the cluster can evenly distribute the volume ownership across all cluster nodes.
+To optimize storage performance, the number of volumes per server should be a multiple of the number of servers per cluster. For example, if you have four servers, you experience more consistent performance with four or eight volumes per server. The cluster can evenly distribute the volume ownership across all cluster nodes when configured this way.
 
 > [!NOTE]
 > The total number of volumes per an Azure Stack HCI cluster shouldn't exceed 64.
@@ -71,7 +71,7 @@ The choice of resiliency type should be based on the intended workload. The foll
 | **Resiliency type**       | **Capacity efficiency**        | **Performance**         |**Workloads**                |
 | ------------------------- | -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Mirror                    | Three-way mirror: 33 percent and two-way mirror: 50 percent | Best performance                                             | Virtualized, databases, others with high-performance  demands |
-| Mirror-accelerated parity | Depends on the proportion between mirror  and parity     | Much slower than mirror, but up to twice as  fast as dual-parity. Best for large sequential writes and reads. | Archival and backup, virtualized desktop  infrastructure     |
+| Mirror-accelerated parity | Depends on the proportion between mirror  and parity     | Slower than mirror, but up to twice as  fast as dual-parity. Best for large sequential writes and reads. | Archival and backup, virtualized desktop  infrastructure     |
 | Dual-parity               | 4 servers: 50 percent and 16 servers: up to 80 percent     | Highest input/output (I/O) latency and CPU usage  on writes. Best for large sequential writes and reads. | Archival and backup, virtualized desktop  infrastructure     |
 
 Workloads that have strict latency requirements or that perform large amounts of mixed random I/O operations per second (IOPS) such as Microsoft SQL Server databases or performance-sensitive Microsoft Hyper-V virtual machines (VMs), should be hosted on volumes that use mirroring to maximize performance. Workloads that have less demanding I/O requirements such as file servers or Virtual Desktop Infrastructure (VDI), can use dual-parity to improve capacity efficiency. Workloads that perform large, sequential writes such as backup software are best suited for mirror-accelerated parity. When sizing the mirror and parity portions, consider that the quantity of writes that happen at once such as daily backups should fit in the mirror portion.
@@ -91,7 +91,7 @@ Thin provisioning is recommended when you can't predict the volume growth rate. 
 
 Azure Stack HCI uses two file system technologies: Resilient File System (ReFS), and New Technology File System (NTFS).
 
-ReFS is the newer of the two file systems, but it provides backward compatibility with NTFS. It also inherits a number of NTFS features, including support for:
+ReFS is the newer of the two file systems, but it provides backward compatibility with NTFS. It also inherits many NTFS features, including support for:
 
 - Access control lists (ACLs).
 
@@ -107,7 +107,7 @@ ReFS is the newer of the two file systems, but it provides backward compatibilit
 
 - Volume-level deduplication.
 
-One of the primary strengths of ReFS—as indicated by its name—is its enhanced resiliency to data corruption and the ability to remediate integrity issues online. ReFS is particularly beneficial in Azure Stack HCI because its enhancements that affect virtualized workloads and software-defined storage. These enhancements include:
+One of the primary strengths of ReFS—as indicated by its name—is its enhanced resiliency to data corruption and the ability to remediate integrity issues online. ReFS is beneficial in Azure Stack HCI because its enhancements that affect virtualized workloads and software-defined storage. These enhancements include:
 
 - Block cloning, which accelerates the speed of copy operations, facilitating fast, low-impact VM checkpoint merge operations.
 
@@ -118,7 +118,7 @@ One of the primary strengths of ReFS—as indicated by its name—is its enhance
 > [!NOTE]
 > Mirror-accelerated parity volumes require the use of ReFS.
 
-Consider using ReFS for Storage Spaces Direct volumes. Use NTFS-formatted volumes if your workloads require any of the functionality that’s not supported by ReFS. These include disk quotas, file system compression, file system encryption, or extended attributes.
+Consider using ReFS for Storage Spaces Direct volumes. If your workloads require any functionality not supported by ReFS, use NTFS-formatted volumes instead. These include disk quotas, file system compression, file system encryption, or extended attributes.
 
 > [!NOTE]
 > NTFS and ReFS volumes can coexist in the same cluster.

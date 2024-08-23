@@ -11,7 +11,7 @@ metadata:
   ms.service: azure-stack
   ms.subservice: azure-stack-hci
 title: Manage Azure Stack HCI volumes
-summary: Manage Azure Stack HCI volumes.
+summary: Manage Azure Stack HCI (Hyperconverged infrastructure) volumes.
 abstract: |
   After completing this module, you learn how to:
   - Plan for volumes in Microsoft Azure Stack HCI. 

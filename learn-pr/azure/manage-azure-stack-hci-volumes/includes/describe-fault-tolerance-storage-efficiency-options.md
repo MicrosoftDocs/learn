@@ -8,7 +8,7 @@ With three nodes in a cluster, it becomes possible to implement three-way mirror
 
 ## Describe parity
 
-With three or more servers, it becomes possible to implement parity. Parity provides fault tolerance by using bitwise arithmetic. In somewhat simplified terms, parity involves:
+With three or more servers, it becomes possible to implement parity. Parity provides fault tolerance by using bitwise arithmetic. In simplified terms, parity involves:
 
 1. Performing calculations that generate parity bits by using data being written into one set of drives.
 1. Storing the resulting parity bits on another set of drives.
@@ -31,8 +31,10 @@ Azure Stack HCI Storage Spaces supports two types of parity:
 
 With mirror-accelerated parity, an individual Storage Spaces Direct volume combines mirroring and parity. Writes take place in the mirrored portion of the volume and are moved automatically to the parity portion at a later time and in a gradual manner. This accelerates ingestion and reduces resource utilization when large writes arrive, by allowing the compute-intensive parity encoding to happen over a longer period of time.
 
-Implementing mirror-accelerated parity requires at least four servers. The storage efficiency of mirror-accelerated parity is within the range identified. On one end, by the efficiency provided by three-way mirroring (33 percent), and on the other, the efficiency of double parity. The actual efficiency is determined by the ratio between the mirror to the parity portion, which you specify when creating a volume.
+Implementing mirror-accelerated parity requires at least four servers. The storage efficiency of mirror-accelerated parity is within the range identified. On one end, by the efficiency provided by three-way mirroring (33 percent), and on the other, the efficiency of double parity. The ratio between the mirror to the parity portion, which you specify when creating a volume, determines the actual efficiency.
+
+When creating a volume you specify the ratio between the mirror to the parity portion, which the actual efficiency is determined.
 
 ## Describe nested resiliency
 
-Nested resiliency is an innovative approach only available on two-node clusters. It improves resiliency of two-way mirrors by first applying two-way mirroring across both nodes. It then adds an extra layer of resiliency across different drives within each server by using either two-way mirroring or single parity. This provides drive-level resiliency if one server is restarting or unavailable. When using nested two-way mirroring, the storage efficiency is 25 percent. With nested mirror-accelerated parity, storage efficiency ranges between 35 and 40 percent, depending on the number of capacity drives per node and the mirror-to-parity ratio per volume.
+Nested resiliency is an innovative approach only available on two-node clusters. It improves resiliency of two-way mirrors by first applying two-way mirroring across both nodes. It then adds an extra layer of resiliency across different drives within each server by using either two-way mirroring or single parity. This provides drive-level resiliency if one server is restarting or unavailable. When you use nested two-way mirroring, the storage efficiency is 25 percent. With nested mirror-accelerated parity, storage efficiency ranges between 35 and 40 percent, depending on the number of capacity drives per node and the mirror-to-parity ratio per volume.

@@ -4,7 +4,7 @@ Azure Stack HCI provides highly resilient and performant software-defined volume
 
 Suppose you work at a large financial-services company as a lead systems engineer. Your company develops highly specialized, proprietary commercial applications for its customers, and hosts those applications in its own datacenters.
 
-As part of modernizing its technology, the company started deploying Azure Stack HCI across its on-premises locations. This deployment has significantly accelerated datacenter consolidation and enhanced the agility of compute workloads. It has also helped to minimize the dependency on expensive storage area networks (SANs) that are complex to manage.
+As part of modernizing its technology, the company started deploying Azure Stack HCI across its on-premises locations. This deployment has accelerated datacenter consolidation and enhanced the agility of compute workloads. It has also helped to minimize the dependency on expensive storage area networks (SANs) that are complex to manage.
 
 As the company transitions from the SAN-based storage, it becomes necessary to ensure that the new infrastructure satisfies the performance and resiliency requirements of existing business-critical workloads. To make this transition as seamless as possible, you need to explore ways to maximize the benefits of the software-defined architecture offered by Azure Stack HCI.
 
