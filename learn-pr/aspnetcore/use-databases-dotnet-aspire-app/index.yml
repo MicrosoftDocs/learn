@@ -15,6 +15,11 @@ abstract: |
   - Describe the database systems that .NET Aspire can connect to using built-in components.
   - Use .NET Aspire components to read and write data to PostgreSQL, MySQL, and Microsoft SQL Server databases.
   - Use .NET Aspire components to read and write data to MongoDB databases.
+  - Understand the basics of testing in .NET Aspire. 
+  - Create a test project using xUnit. 
+  - Write and run tests for .NET Aspire projects. 
+  - Utilize the .NET Aspire testing project templates. 
+
 prerequisites: |
   - Experience building web applications using .NET and C#
 iconUrl: /learn/achievements/generic-badge.svg
@@ -36,6 +41,7 @@ units:
 - learn.use-databases-dotnet-aspire-app.store-data-sql-databases
 - learn.use-databases-dotnet-aspire-app.store-data-nosql-databases
 - learn.use-databases-dotnet-aspire-app.exercise-use-databases-persist-data-from-aspire-app
+- learn.use-databases-dotnet-aspire-app.test-aspire-projects
 - learn.use-databases-dotnet-aspire-app.knowledge-check
 - learn.use-databases-dotnet-aspire-app.summary
 badge:
