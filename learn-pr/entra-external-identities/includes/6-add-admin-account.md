@@ -4,7 +4,9 @@ In Microsoft Entra External ID, an external tenant represents your directory of 
 
 > [!NOTE]
 > You'll need at least the [User Administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator) directory role to create an admin account. 
+>
 > **This role is a privileged role**. [Please read about best practices for working with privileged roles](/entra/identity/role-based-access-control/privileged-roles-permissions?tabs=admin-center#best-practices-for-using-privileged-roles).
+>
 > Do you have feedback? [Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
 
 ::: zone pivot="microsoft-entra-admin-center"

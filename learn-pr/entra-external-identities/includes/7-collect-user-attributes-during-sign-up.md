@@ -4,6 +4,7 @@
 
 > [!NOTE]
 > You'll need at least the [External ID User Flow Attribute Administrator](/entra/identity/role-based-access-control/permissions-reference#external-id-user-flow-attribute-administrator) directory role to configure user attributes to be collected during sign-up.
+>
 > Do you have feedback? [Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
 
 ::: zone pivot="microsoft-entra-admin-center"

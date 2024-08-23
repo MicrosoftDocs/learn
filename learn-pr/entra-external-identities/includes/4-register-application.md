@@ -4,7 +4,9 @@ To enable your app to sign in with Microsoft Entra External ID, you need to regi
 
 > [!NOTE]
 > You'll need at least the [Application Developer](/entra/identity/role-based-access-control/permissions-reference#application-developer) directory role to register an application. 
+>
 > **This role is a privileged role**. [Please read about best practices for working with privileged roles](/entra/identity/role-based-access-control/privileged-roles-permissions?tabs=admin-center#best-practices-for-using-privileged-roles).
+>
 > Do you have feedback? [Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
 
 ::: zone pivot="microsoft-entra-admin-center"

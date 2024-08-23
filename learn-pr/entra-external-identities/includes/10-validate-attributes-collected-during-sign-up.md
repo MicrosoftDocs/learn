@@ -4,7 +4,9 @@ The custom authentication extension supports the [on attribute collection submit
 
 > [!NOTE]
 > You'll need at least the [Authentication Extensibility Administrator](/entra/identity/role-based-access-control/permissions-reference#authentication-extensibility-administrator) directory role to configure validation of attributes collected during sign-up. 
+>
 > **This role is a privileged role**. [Please read about best practices for working with privileged roles](/entra/identity/role-based-access-control/privileged-roles-permissions?tabs=admin-center#best-practices-for-using-privileged-roles).
+>
 > Do you have feedback? [Please let us know how your proof of concept project is going. We'd love to hear from you!](https://forms.microsoft.com/r/Um1E3Sexnk)
 
 > [!TIP]
