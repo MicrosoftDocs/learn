@@ -1,4 +1,29 @@
-In this exercise, you use the `IndexOfAny()` method to find the first location of any of the `string` from selected array. You also use `LastIndexOf()` to find the final location of a string within another string.
+In this exercise, we use the methods`IndexOf()` and `LastIndexOf()` to find the location of characters and strings within a given string. 
+
+### `IndexOf()` and `LastIndexOf`
+
+The method `.IndexOf()` returns the index position of the first occurrence of a character or string within a given string. The method `.LastIndexOf()` returns the index position of the last occurrence of a character or string within a given string. Both the `Indexof()` and `LastIndexOf()` methods return **-1** if the character or string is **not found**.
+
+1. Select and delete all code lines in the Visual Studio Code Editor.
+
+1. Update your code in the Visual Studio Code Editor as follows:
+
+    ```csharp
+    string message = "hello there!";
+
+    int first_h = message.IndexOf('h');
+    int last_h = message.LastIndexOf('h');
+    
+    Console.WriteLine($"For the message: '{message}', the first 'h' is at position {first_h} and the last 'h' is at position {last_h}.");
+    ```
+
+1. Save your code file, and then use Visual Studio Code to run your code. You should see the following output:
+
+    ```Output
+    For the message: 'hello there!', the first 'h' is at position 0 and the last 'h' is at position 7.
+    ```
+
+    The output identifies the first and last "**h**" in the string "**h**ello t**h**ere!" at position 0 and position 7.
 
 ### Retrieve the last occurrence of a sub string
 
@@ -24,7 +49,10 @@ You increase the complexity of the `message` variable by adding many sets of par
     set of parentheses
     ```
 
-    The key to this example is the use of `LastIndexOf()`, which you use to get the positions of the last opening and closing parentheses.
+    The key to this example is the use of `LastIndexOf()`, which you use to get the positions of the last opening and closing parentheses. 
+    
+    > [!NOTE]
+    > The previous sample code only runs without error because the `message` string contains properly formatted parenthesis pairs. But the code is fragile and produces erros when no parenthesis pair is present, or when the last parentheses don't form a opening and closing pair.
 
 ### Retrieve all instances of substrings inside parentheses
 
