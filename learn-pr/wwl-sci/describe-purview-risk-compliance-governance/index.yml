@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.describe-purview-risk-compliance-governance
+metadata:
+  title: Describe the risk & compliance and data governance solutions of Microsoft Purview
+  description: "Describe the risk & compliance and data governance solutions of Microsoft Purview."
+  ms.date: 8/23/2024 
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+  ms.service: purview
+
+title: Describe the risk & compliance and data governance solutions of Microsoft Purview
+summary: "Describe the Data Security solutions of Microsoft Purview."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe how Microsoft Purview enables organizations to identify sensitive information.
+    - Describe how Microsoft Purview enables organizations to protect their data.
+    - Describe how Microsoft Purview solutions enable organization to detect risky behavior and prevent data loss.
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 365.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - business-user
+  - student
+products:
+  - microsoft-purview
+subjects:
+  - information-protection-governance
+
+units:
+- learn.describe-purview-risk-compliance-governance.introduction
+- learn.describe-purview-risk-compliance-governance.describe-audit
+- learn.describe-purview-risk-compliance-governance.describe-ediscovery
+- learn.describe-purview-risk-compliance-governance.describe-communication-compliance
+- learn.describe-purview-risk-compliance-governance.describe-data-life-cycle-management
+- learn.describe-purview-risk-compliance-governance.describe-record-management
+- learn.describe-purview-risk-compliance-governance.describe-data-governance-solutions
+- learn.describe-purview-risk-compliance-governance.knowledge-check
+- learn.describe-purview-risk-compliance-governance.summary
+###########################################################################
+###
+### TODO verify your badge
+###
+badge:
+  uid: learn.describe-purview-risk-compliance-governance.badge
